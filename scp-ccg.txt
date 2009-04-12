@@ -144,7 +144,7 @@ Missions represent you making the command desision to take control of an SCP at 
 ++++ Personel
 <insert Example Personel here with arrows pointing out the various different sections of the card. More than likely Dr Coleman>
 
-Complications have the following attributes:
+Personel have the following attributes:
 * Affiliation
 * Card Title
 * Subtitle
@@ -184,7 +184,7 @@ Each player then bids to go first. The player with the highest bid removes that 
 
 ------
 
-++Turn Sequence 
+++ Turn Sequence 
 Each Player's turn consists of the following phases:
 # Manditory Start of Turn Phase
 # Optional Start of Turn Phase (Optional)
@@ -200,7 +200,109 @@ Each Player's turn consists of the following phases:
 # Manditory End of Turn Phase
 # Optional End of Turn Phase (Optional)
 
---I need to finish something up IRL so I shall post up the explinations of everything soon feel free to edit spelling and grammar and discuss what you'd like to see -Moley--
+Each player MUST perform any actions required of them in the phases not marked Optional. Each of these sections takes place in the order presented above and may only take place once in a turn, unless overridden by a card effect.
+
++++ #1: Manditory Start of Turn Phase.
+
+Any effects that state they Must take place at the start of the turn resolve in the order of the controlling players choice. If 2 or more players have effects that resolve in this phase then each player, moving clockwise from the active player, activates an effect in turn.
+
++++ #2: Optional Start of Turn Phase.
+
+Any effects that state they May take place at the start of the turn resolve in the order of the controlling players choice. If 2 or more players have effects that resolve in this phase then each player, moving clockwise from the active player, activates an effect in turn.
+
++++ #3: Draw Phase
+
+The active player may spend Resources from their resource pool to draw cards on a 1 for 1 basis from the top of their deck. //e.g Dave pays 3 Resources and draws 3 cards from the top of his deck.//
+
++++ #4: Resupply Phase
+
+The active Player refills their Resource Pool with 5 Resources and then may remove any number of Finance Tokens from Finance cards they control to add 1 Resource to their Resource Pool per token removed.
+
+The Active Player then untaps all cards they control.
+
++++ #5: Mission Phase (Optional)
+
+If the active Player wishes they may play a Mission during this phase. A Player may only play 1 mission per turn and only during their turn.
+
++++ #6: Assignment Phase
+
+The active Player assigns any Personel the control to one of the following actions:
+
+# Attempt to Secure SCP
+# Attempt to Contain a Secured SCP
+# Attempt to Destroy a Contained SCP
+# Defend a Secured or Contained SCP you control
+# Research an SCP
+
+The active Player may also place up to 5 cards face down into their Build Queue and place Resources on them from their Resource Pool. A player may have no more than 5 cards in their Build Queue at any one time. A face down card in a Build Queue may have more counters placed on it than its cost without effect.
+
++++ #7: Retrieval Phase (Optional)
+
+If the Active Player has assigned any of their Personel to Securing an Unsecured SCP then those Personel are "tapped" and each other player, in turn clockwise from the Active Player, may play a Complication targeting cards controlled by the Active Player.
+
+After each other player has had had a chance to play a Complication the Active Player may play any Events they can from their hand and then compare their Personel's modified Skills and Skill Value. 
+
+If they have the required Skills at a Skill Value of the SCP's Secure Requirement + the number of Escalation Counters on it the SCP is Secured and moved under your control. The Active Player then destroys the cost in cards equal to the number of Escalation Counters on the SCP in Atrittion.
+
+If they do not have the required skills or Skill Value of the SCP's Secure Requirement + the number of Escalation Counters the Active Player destroys the cost in cards equal to the SCP's Escalation Value in Atrittion and then places an Escalation Counter on the SCP.
+
+------
+
+If the Active Player has assigned any of their Personel to Securing an SCP that has been Secured by another player those Personel are "tapped" and each other player, in turn clockwise from the Active Player, may play a Complication targeting cards controlled by either the Attacking or Defending Player.
+
+After each other player has had a chance to play a Complication the Attacking Player may play any Events the can from their hand. Then the Defending Player may play one Complication or Event from their hand targetting cards controlled by the Attacking Player.
+
+If they have the required Skills at the Skill Value of the SCP's Secure Requirement + the number of Escalation Counters on the SCP + it's Containment Requirement if it is currently Contained + the Skill Value of any Personel with the Solider Skill that are Defending that SCP then that SCP is Secured and moved under your control. The Attacking Player then destroys the cost value in cards equal to the number of defending personel plus the number of Escalation Counters on the SCP in attrition. The defending player destroys the cost value in cards equal to the Escalation Value of the SCP plus the number of attacking Personel in attrittion.
+
+If they do not have the required skills or Skill Value of the SCP's Secure Requirement + the number of Escalation Counters on the SCP + it's Containment Requirement if it is currently Contained + the Skill Value of any Personel with the Solider Skill that are Defending that SCP then the Active Player destroys all cards involved in the attack in attrittion and the defending player destroys cards equal to the number of attacking personel in attrittion and the SCP gains an Escalation Counter. If this counter would cause the SCP to become Unsecured or Uncontained it immediately becomes Unsecured or Uncontained.
+
++++ #8: Research Phase (Optional)
+
+If the Active Player has assigned any Personel to Research with the Research Skill that Player may reveal the top card of the SCP deck and put it into play in the center of the table with no Escalation Counters on it.
+
+------
+
+If the Active Player has assigned any Personel to Containing a Secured SCP then each other player, in turn clockwise from the Active Player, may play a Complication targeting cards attempting to Contain the SCP. 
+
+After each other player has had a chance to play a Complication the Attacking Player may play any Events the can from their hand. 
+
+The Active player then compares the modified Skills and Skill Values of the Personel to the modified Contain Requirement of the SCP and if the Personel suceeds then the SCP becomes Contained. Tap the SCP to show that it is Contained.
+
+------
+
+If the Active Player has assigned any Personel to Destroy a Contained SCP the Active Player compares the Skill Value of any personel with the Terminate to the Escalation Value + Skill of the SCP. If the Personel have a greater Skill Value then the SCP is discarded. If the Personel have a lower Skill Value then the SCP gains an Escalation Counter and the Active Player must Wound each personel assigned to Destroy the SCP.
+
++++ #9: Maintanence Phase
+
+The Active Player may remove 1 Escalation Counter from each Secured SCP they control and up to 2 Escalation Counters from each Contained SCP they control.
+
+The Active Player may then place Finance Tokens on any Finance cards they control equal to that card's Production Value.
+
+The Active Player may then reveal a face down card they control in their Build Queue and put it into play if it has Resources equal to or more than it's Cost it comes into play untapped under their control.
+
++++ #10: Escalation Phase
+
+Each Uncontained SCP gains an Escalation Counter and each Unsecured SCP gains 2 Escalation Counters any effects that resolve in the Escalation Phase resolve now.
+
++++ #11: Outcome Phase
+
+If the Active Player attempted a Mission and has met all of its requirements that player may resolve it's Success text and Discard that mission from play. 
+
+If the Active Player attempted a Mission and failed to meet its requirements then that Player must resolve it's Failure text and Discard that Mission from play.
+
+If there are 30 or more Escalation Counters on Unsecured SCPs then all Players immediately Lose.
+
+If an Unsecured SCP has Escalation Counters equal to it's Escalation Value remove all Escalation Counters from that SCP and each player discards cards from the top of their deck equal to that SCPs Skill.
+
++++ #12: Manditory End of Turn Phase
+
+Any effects that state they Must take place at the end of the turn resolve in the order of the controlling players choice. If 2 or more players have effects that resolve in this phase then each player, moving clockwise from the active player, activates an effect in turn.
+
++++ #13: Optional End of Turn Phase (Optional)
+
+Any effects that state they May take place at the end of the turn resolve in the order of the controlling players choice. If 2 or more players have effects that resolve in this phase then each player, moving clockwise from the active player, activates an effect in turn.
+
+The next Player becomes the Active Player and begins their turn from Phase #1.
 
 ------
 
