@@ -460,19 +460,30 @@ Endnote:
 In the bowels of the Foundation's Network, a background program triggered a hidden script.
 
 Login: E_Mann
-Pass: …………………….
+Pass: .........................
+
+> Welcome, Dr. Everett Mann.
+> Site 17 Terminal 137
+> Your session will expire in 30 minutes.
 
 E_Mann@SCP-Site17-T137:~$ sudo -bK -u root '/home/L4/A_Valence/bin/hatbot -d &>/dev/null'
 sudo: User is not in the sudoers file. This incident will be reported.
 E_Mann@SCP-Site17-T137:~$ su A_Valence
-Pass: ……………………………………………………
+Pass: ............................................................
+
+>Welcome, Dr. Adrian Valence.
+>Site 17 Terminal 137
 
 A_Valence@SCP-Site17-T137:~$ su root
-Pass: …………………………………………………………………………………………………………………………..
+Pass: ............................................................................................................................................
+
+> FULL SYSTEM ACCESS GRANTED
+> ALL FURTHER ACTIVITY WILL BE MONITORED
 
 root@SCP-Site17-T137:~# /home/L4/A_Valence/bin/hatbot -d &>/dev/null
 [9] 13873
-[9]+ Loading….. Done
+[9]+ Loading..... Done
 [9]+ Running as Daemon
 
+> He Comes.
 [END OF LOG]
