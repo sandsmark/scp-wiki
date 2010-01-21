@@ -1,0 +1,41 @@
+title:Quikngruvn's Style Sheet
+**Work in progress**
+
+This Style Sheet is to help me develop and compile a standard way of formatting stuff for SCP articles. This is by no means an official document, though I'm going to list formats for official terminology that (I hope) are used consistently among SCP articles.
+
+# **Measurements:** In a measurement, add a space between the number and the unit (e.g., 2 m). Don't add a comma to a compound measurement (e.g., 5 ft 10 in). Decimal values between -1 and 1 should have a zero in the units place (e.g., 0.4 g). _
+__Exceptions__:
+ * Temperature: 20°C
+ * Latitude and longitude: 40°N, 85°W
+ * Percent: 10%
+ * Acidity: pH 3.4
+ * Caliber: Beretta 9mm
+# **Significant digits:** Broadly, in a measurement, all digits 1 through 9 as well as 0s between non-zero digits are significant digits (e.g., 12000 kg has two siginificant digits, while 12007 kg has five). The number of significant digits of a measurement is determined by how precisely the measurement can be taken. The number of significant digits should remain constant when a measurement is converted (e.g., 12000 kg = 26000 lb, but 12007 kg = 26415 lb). See [http://en.wikipedia.org/wiki/Significant_figures Wikipedia] for more information. _
+__Rule of thumb__:
+ * Rough estimates, ballpark figures, and difficult measurements get one or two significant digits.
+ * Standard measurements get three or four digits.
+ * Getting five or six digits requires good equipment, and any more would require exponentially better equipment or special circumstances.
+ * __Exception__: GPSs can give latitude and longitude to six decimal places, meaning GPS readings routinely give eight or nine significant digits. [confirm]
+# **Commas:** Generally, as long as a comma doesn't split a subject from its verb (unless setting off a parenthetical phrase) and doesn't break the flow of a sentence (that is, don't put a comma where you wouldn't pause if the sentence were spoken aloud), go nuts. 
+# **Hyphens:** Use hyphens in words that a dictionary says are hyphenated, and in compound modifiers that would be ambiguous otherwise. Note that Ghost will remove any hyphens he feels are unnecessary.
+# **Apostrophes:** The only plurals that use an apostrophe are single letters (e.g., mind your p's and q's). No other plural takes an apostrophe, including acronyms and numbers (e.g., SCPs or 1980s). I got over it, and so can you.
+# **Semicolons:** Semicolons join sentences in place of a comma plus conjunction, and with abverbs like "however". They are also used to separate items in a list that include commas already.
+# **Capitalization:** The following terms are always capitalized:
+ * SCP Foundation
+ * Classes: Safe, Euclid, and Keter
+
+----
+
+Other concepts that may be useful:
+
+**IQ:** The statistic called [http://en.wikipedia.org/wiki/Intelligence_quotient IQ] is defined as a [http://en.wikipedia.org/wiki/Normal_distribution normal distribution] with mean μ=100 and standard deviation σ=15. The upshot is that you can calculate what percentage of a population should have an IQ above (or below) certain values, especially when Wikipedia [http://en.wikipedia.org/wiki/Normal_distribution#Standard_deviation_and_confidence_intervals provides] these values out to 6σ. Anyway, the percentage of population with greater than a given IQ:
+
+@@>100: 50.00%, 1 out of every 2@@
+@@>115: 15.87%, 1 out of every 6@@
+@@>130: 2.275%, 1 out of every 44@@
+@@>145: 0.1350%, 1 out of every 741@@
+@@>160: 0.003167%, 1 out of every 31,574@@
+@@>175: 0.00002867%, 1 out of every 3,488,557@@
+@@>190: 0.00000009865%, 1 out of every 1,013,684,744@@
+
+So right now, there should be six or seven people in the whole world with an IQ of at least 190. (Conversely, there should also be six or seven people in the world right now with an IQ of less than 10.) How IQ is actually quantified is left as an exercise to the reader.
