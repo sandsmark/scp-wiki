@@ -24,3 +24,10 @@ Tags
 [[module ListPages tags="joke -decommissioned" details="true" order="title" separate="false" perPage="50"]]
 %%linked_title%%, rating: %%rating%%, comments: %%comments%%
 [[/module]]
+
+----
+
+Page name, Page creator, Rating, Comments
+[[module ListPages tags="scp -joke -decommissioned" offset="0" details="true" order="title" separate="false" perPage="250"]]
+%%title_linked%%;%%created_by%%;%%rating%%;%%comments%%
+[[/module]]
