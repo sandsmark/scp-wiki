@@ -28,6 +28,12 @@ Tags
 ----
 
 Page name, Page creator, Rating, Comments
-[[module ListPages tags="scp -joke -decommissioned" offset="0" details="true" order="title" separate="false" perPage="250"]]
+[[module ListPages tags="scp -joke -decommissioned -archived" offset="0" details="true" order="title" separate="false" perPage="250"]]
 %%title_linked%%;%%created_by%%;%%rating%%;%%comments%%
+[[/module]]
+
+----
+
+[[module ListPages tags="-archived -decommissioned" rating="<0" order="rating" separate="false" limit="100" perPage="100"]]
+%%title_linked%% (rating: %%rating%%, comments: %%comments%%)
 [[/module]]
