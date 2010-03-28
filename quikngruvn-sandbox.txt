@@ -8,15 +8,10 @@ Ponderings:
 Locusts
 Capsule (local legend)
 Pipe
-Devious Carnivore
-Sweaters
 Shed (careful)
 Formula (cf sweetener)
-Lunar
 Benthic
 RV
-Weights and Measures
-Tags
 
 ----
 
@@ -27,13 +22,24 @@ Tags
 
 ----
 
+**Lowest Pages, No -D or -ARC**
+[[module ListPages tags="-archived -decommissioned" rating="<0" order="rating" separate="false" limit="100" perPage="100"]]
+%%title_linked%% (rating: %%rating%%, comments: %%comments%%)
+[[/module]]
+
+----
+
+**Highest SCPs**
+[[module ListPages tags="scp -archived -decommissioned" rating=">15" order="rating desc" separate="false" limit="200" perPage="50"]]
+%%title_linked%% (rating: %%rating%%, comments: %%comments%%)
+[[/module]]
+
+----
+
+**All SCPs**
 Page name, Page creator, Rating, Comments
 [[module ListPages tags="scp -joke -decommissioned -archived" offset="0" details="true" order="title" separate="false" perPage="250"]]
 %%title_linked%%;%%created_by%%;%%rating%%;%%comments%%
 [[/module]]
 
 ----
-
-[[module ListPages tags="-archived -decommissioned" rating="<0" order="rating" separate="false" limit="100" perPage="100"]]
-%%title_linked%% (rating: %%rating%%, comments: %%comments%%)
-[[/module]]
