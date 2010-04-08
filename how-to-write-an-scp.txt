@@ -9,8 +9,7 @@ Read The [[[Guide to Newbies]]].  This is your "New Hire Handbook", and you sh
 
 Also, be humble in your first few days.  There are a lot of old, entrenched admins here, and when someone splashes in with an introduction post complete with full back story, over-arching plot, and a vote for what SCP-001 should be, it makes us very... jumpy.  Say hi, comment on the site, maybe mention a favorite SCP, and integrate slowly.  Introduce yourself in the [[[Realtime Chat]]] (and don’t forget to read the [[[Chat Guide]]]).  Once you've proven yourself a bit, you'll gain much more freedom and acceptance.  However, remember that these things have to be earned.  Nothing will touch off a shooting rampage quicker than a sense of entitlement....
 
-
-+ Templating and Format
++ Templates and Formatting
 
 ++ Article Template
 
@@ -38,9 +37,61 @@ You can start writing your SCP by copying the code between the double lines belo
 ----
 ----
 
-Alternatively, you can also download the [http://scp-wiki.wikidot.com/local--files/how-to-write-an-scp/scp-template.rtf RTF file]. After uploading your picture, open the pic into a new window so you can copy and paste the url into the re-edit.
+Alternatively, you can also download the [http://scp-wiki.wikidot.com/local--files/how-to-write-an-scp/scp-template.rtf RTF file].
 
-++ What your SCP should look like:
+++ How do I format text?
+
+There are two ways to add formatting to text. First, you can format text by highlighting it and clicking one of the buttons at the top of the edit box.  This will add the proper syntax that will bold, italicize, underline, etc., text when the page is saved.
+
+Secondly, you can manually type in the characters necessary to add formatting to your article. Formatting syntax is generally pairs of symbols around the text to be formatted. Some of the most common text formats, and how to get them to show up, include:
+
+> @@**bold**@@ -> **bold**
+> @@//italics//@@ -> //italics//
+> @@__underscore__@@ -> __underscore__
+> @@--strikethrough--@@ -> --strikethrough--
+
+A complete list of supported formats and how to get them to show up can be found on the [http://www.wikidot.com/doc:wiki-syntax Wiki Syntax] page.
+
+++ How do I insert a link?
+
+Since links are just a special type of formatting, they can also be added by either the formatting buttons or by typing in the proper format. The format of the link will depend on where the target page is, and what you want the link text to be. Some examples:
+
+> @@[[[SCP-173]]]@@ -> [[[SCP-173]]]
+> @@[[[SCP-173|that creepy statue]]]@@ -> [[[SCP-173|that creepy statue]]]
+> @@[http://en.wikipedia.org/wiki/Cervical_vertebrae neck bones]@@ -> [http://en.wikipedia.org/wiki/Cervical_vertebrae neck bones]
+
+A complete list of link formats can also be found on the [http://www.wikidot.com/doc:wiki-syntax Wiki Syntax] page.
+
+++ How do I add a picture?
+
+At the bottom of the page, click Files, click "Upload a file from your computer", click "Select Files", browse to the folder with the pictures to upload, select your picture, and click Open. You can upload multiple files at once; when all the files to be uploaded have been selected, click Upload Files. When naming your image files, make sure that the filename doesn't have any spaces and that it ends with a valid extension, such as .jpg. Also note that filenames are case sensitive.
+
+Next, copy the image template into your article:
+
+----
+----
+@@[[div style="float:right; margin:0 2em 1em 2em; width:300px; border:0;"]]@@
+@@|||| [[image COPY-AND-PASTE-IMAGE-URL-HERE width="300px"]] ||@@
+@@||||~ ^^TEXT-DESCRIBING-THE-PIC^^ ||@@
+@@[[/div]]@@
+----
+----
+
+Since the picture was uploaded directly to the page, you can replace the words "COPY-AND-PASTE-IMAGE-URL-HERE" with just the filename of the picture. Otherwise, you would need to include the entire URL. Add a caption below the pic by replacing "TEXT-DESCRIBING-THE-PIC" with your own words.
+
+++ How do I add a rating module?
+
+You can allow site members to vote on your page by adding the following module to the very top of your article. Copy and paste:
+
+----
+----
+@@[[>]]@@
+@@[[module Rate]]@@
+@@[[/>]]@@
+----
+----
+
+++ What your SCP should look like
 
 > **Item #:** SCP-XXX
 > 
@@ -53,45 +104,10 @@ Alternatively, you can also download the [http://scp-wiki.wikidot.com/local--fil
 > **Addendum:** [Optional additional paragraphs]
 
 If you would like to add fluff to your article in the form of a log, incident report, or interview, there are templates for those, too.
+
 [http://scp-wiki.wikidot.com/log-xxx Log Template]
 [http://scp-wiki.wikidot.com/incident-xxx Incident Report Template]
 [http://scp-wiki.wikidot.com/interview-xxx Interview Template]
-
-++ How do I bold?
-
-You can easily format text by highlighting it and clicking one of the buttons at the top of the edit box.  This will add the proper syntax that will bold, underline, headline text when the page is saved.
-
-++ How do I add a picture?
-
-First go the the bottom of the page and click the word 'files.'  This will allow you to upload an image to the wiki.  (Note: you can give the pic any name you want, but make sure there are no spaces and it ends with a file type, such as '.jpg').  Once the file is added, you can view the file by clicking the name of it at the bottom of the page.  There you will find the url that hosts the file (you will need this, so save it or just open it in a new window).  Next, begin editing the page, you copy and paste this syntax into the first line when editing the page:
-
-> @@[[div style="float:right; margin:0 2em 1em 2em; width:300px; border:0;"]]@@
-> @@|||| [[image COPY-AND-PASTE-IMAGE-URL-HERE  width="300px"]] ||@@
-> @@||||~ ^^TEXT-DESCRIBING-THE-PIC^^ ||@@
-> @@[[/div]]@@
-
-You will replace the words "COPY-AND-PASTE-IMAGE-URL-HERE" with the URL of the pic (make sure there are two SPACES between the URL and the world "width".  Add text below the pic by replacing "TEXT-DESCRIBING-THE-PIC" with your own words.
-
-++ How do I add rating to my page?
-
-You can allow site members to vote on your page by adding the following module to the very top of your article.  Please make sure to do this.  Copy and paste:
-
-> @@[[>]]@@
-> @@[[module Rate]]@@
-> @@[[/>]]@@
-
-++ How do I embed video into my page?
-
-Copy and paste this code into the edit.
-
-> @@[[=]]@@
-> @@[[embedvideo]]@@
-> video embedding code goes here (youtube or google video)
-> @@[[/embedvideo]]@@
-> @@[[/=]]@@
-
-and replace "video embedding code goes here (youtube or google video)" with the proper code.
-
 
 + Tips for writing SCPs
 
@@ -213,6 +229,22 @@ A few examples from the archives.
 
 * [[[SCP-132]]] works for a different reason: this is an SCP who is contained not for the safety of others, but for its own safety. The horror comes from wondering what it is like to BE it, not fight it.
 
++ How to Post Your SCP
+
+Once you've written your masterpiece and are ready to show it off to the world, follow these steps to add your SCP to the list:
+
+* **Create a page.** In the [[[SCP Series]]] page, find an unused number (one marked [ACCESS DENIED]). Click the link for the nonexistent article, and when prompted that the page does not yet exist, click Create Page.
+* **Fix the title.** By default, the title of a new SCP page is in the format "Scp 999". Capitalize and hyphenate the title to bring it to standard format: "SCP-999".
+* **Paste the contents.** You //did// write it up in an external word processor, didn't you? Either way, enter the contents of the article into the text box.
+* **Preview.** Underneath the comment box (marked "Short description of changes") is the Preview button. Use it often-- this will show how your SCP will really look on the wiki. Check the preview to make sure the SCP looks right, and read through it one last time to check for lingering errors.
+* **Add a comment.** You should add a comment to every change you make to the wiki. New pages are no exception, even if the comment's just "New SCP".
+* **Save.** Once you've looked over your SCP for the umpteenth time, click Save (down next to Preview).
+* **Upload pictures, if necessary.** See "How do I add a picture?" above. Once uploaded, refresh to make sure the pictures show up like you expect.
+* **Add tags.** Click Tags at the bottom of your new page. In the text box, add "scp", the class, and any other descriptors that would be applicable. Check the [[[system:page-tags-list|Tags]]] page for ideas.
+* **Add the new SCP to the Main List**. Edit the [[[SCP Series]]] page to change [ACCESS DENIED] to whatever you want to name your SCP.
+* **Announce your new SCP.** Go to the [http://scp-wiki.wikidot.com/forum/c-51288/announcements Announcements] section of the Forum, click the current New SCP Announcements thread, click New Post (at the very bottom), and announce your creation. Be sure to link to your new SCP by typing, e.g., @@[[[SCP-999]]]@@ to get [[[SCP-999]]]. You can also announce your new SCP in the [[[Realtime Chat]]].
+
+Once it's posted, proceed to the next stage of SCP creation, Feedback and Adjustment. I recommend Kevlar.
 
 + Site Tips
 
