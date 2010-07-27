@@ -1,17 +1,23 @@
-title:Quikngruvn's Sandbox
+title:Quikngruvn's Workbench
 [[div style="float:right; margin:0 2em 1em 2em; width:250px; border:0;"]]
 |||| [[image deathwhistle.jpg width="250px"]] ||
 ||||~ ^^Aztec Death Whistle, just waiting to be an inspiration to someone^^ ||
 [[/div]]
 
 Ponderings:
-Locusts
 Capsule (local legend)
 Pipe
 Shed (careful)
 Formula (cf sweetener)
 Benthic
 RV
+
+----
+
+**Humanoid SCPs, No -J, -D, or -ARC**
+[[module ListPages tags="humanoid -joke -archived -decommissioned" rating=">8" order="rating desc" separate="false" perPage="200" limit="100"]]
+%%linked_title%% (rating: %%rating%%, comments: %%comments%%)
+[[/module]]
 
 ----
 
@@ -22,15 +28,8 @@ RV
 
 ----
 
-**Lowest Pages, No -D or -ARC**
-[[module ListPages tags="-archived -decommissioned" rating="<0" order="rating" separate="false" limit="100" perPage="100"]]
-%%title_linked%% (rating: %%rating%%, comments: %%comments%%)
-[[/module]]
-
-----
-
 **Highest SCPs**
-[[module ListPages tags="scp -archived -decommissioned" rating=">15" order="rating desc" separate="false" limit="200" perPage="50"]]
+[[module ListPages tags="scp -archived -decommissioned" rating=">15" order="rating desc" separate="false" limit="200" perPage="20"]]
 %%title_linked%% (rating: %%rating%%, comments: %%comments%%)
 [[/module]]
 
@@ -38,7 +37,7 @@ RV
 
 **All SCPs**
 Page name, Page creator, Rating, Comments
-[[module ListPages tags="scp -joke -decommissioned -archived" offset="0" details="true" order="title" separate="false" perPage="250"]]
+[[module ListPages tags="scp -joke -decommissioned -archived" offset="0" details="true" order="title" separate="false" perPage="20"]]
 %%title_linked%%;%%created_by%%;%%rating%%;%%comments%%
 [[/module]]
 
