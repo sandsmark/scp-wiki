@@ -15,7 +15,7 @@ RV
 ----
 
 **Humanoid SCPs, No -J, -D, or -ARC**
-[[module ListPages tags="humanoid -joke -archived -decommissioned" rating=">8" order="rating desc" separate="false" perPage="200" limit="100"]]
+[[module ListPages tags="humanoid -joke -archived -decommissioned" rating=">8" order="rating desc" separate="false" perPage="20" limit="100"]]
 %%linked_title%% (rating: %%rating%%, comments: %%comments%%)
 [[/module]]
 
@@ -37,7 +37,7 @@ RV
 
 **All SCPs**
 Page name, Page creator, Rating, Comments
-[[module ListPages tags="scp -joke -decommissioned -archived" offset="0" details="true" order="title" separate="false" perPage="20"]]
+[[module ListPages tags="scp -joke -decommissioned -archived" offset="0" details="true" order="title" separate="false" perPage="250"]]
 %%title_linked%%;%%created_by%%;%%rating%%;%%comments%%
 [[/module]]
 
