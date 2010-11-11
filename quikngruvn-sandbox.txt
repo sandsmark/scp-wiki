@@ -17,13 +17,6 @@ Orphaned Logs
 
 ----
 
-**Humanoid SCPs, No -J, -D, or -ARC**
-[[module ListPages tags="humanoid -joke -archived -decommissioned" rating=">8" order="rating desc" separate="false" perPage="20" limit="100"]]
-%%linked_title%% (rating: %%rating%%, comments: %%comments%%)
-[[/module]]
-
-----
-
 **Joke SCPs**
 [[module ListPages tags="joke -decommissioned" details="true" order="title" separate="false" perPage="50"]]
 %%linked_title%%, rating: %%rating%%, comments: %%comments%%
@@ -32,12 +25,18 @@ Orphaned Logs
 ----
 
 **Highest SCPs**
-[[module ListPages tags="scp -archived -decommissioned" rating=">15" order="rating desc" separate="false" limit="200" perPage="20"]]
+[[module ListPages tags="scp -archived -decommissioned -contest" rating=">15" order="rating desc" separate="false" limit="200" perPage="40"]]
 %%title_linked%% (rating: %%rating%%, comments: %%comments%%)
 [[/module]]
 
 ----
 
+**Lowest SCPs**
+[[module ListPages tags="scp -archived -decommissioned -contest" rating="<15" order="rating" separate="false" limit="200" perPage="40"]]
+%%title_linked%% (rating: %%rating%%, comments: %%comments%%)
+[[/module]]
+
+----
 **All SCPs**
 Page name, Page creator, Rating, Comments
 [[module ListPages tags="scp -joke -decommissioned -archived -contest" offset="0" details="true" order="title" separate="false" perPage="250"]]
