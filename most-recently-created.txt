@@ -1,2 +1,4 @@
 title:Most Recently Created
-[[module Pages order="dateCreatedDesc" limit="100"]]
+[[module ListPages order="created_at desc" limit="100" separate="yes"]]
+%%linked_title%%
+[[/module]]
