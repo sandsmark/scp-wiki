@@ -1,0 +1,62 @@
+title:SCP-603
+[[>]]
+[[module Rate]]
+[[/>]]
+
+**Item #:** SCP-603
+
+**Object Class:** Safe
+
+**Special Containment Procedures:** As of 12/11/20██, SCP-603 is stored on a dedicated computer system in Laboratory 12-A, Observation room 1. The system may be accessed remotely via the SCP intranet. Personnel wishing to access SCP-603 must apply for a temporary password to allow them access to the system. A standard SCP-603 password will expire 24 hours after being issued. If access to SCP-603 for longer than 24 hours is required, please contact Dr. Brown. Physical access to Observation Room 1 without direct authorization from Dr. Brown is prohibited.
+
+SCP-603 should not be left to run unattended. Whenever possible, it is requested that users hit Ctrl-B before terminating an SCP-603 session
+
+**Description:** SCP-603 is a self-replicating computer program capable of reproducing and extending its own source code.
+
+The first version of SCP-603 was written in 199█ by ████ ████████, a graduate of Udmurt State University. ████████'s personal computer was seized by the foundation in 199█ following an investigation into multiple supernatural occurances caused by the program. In a 20██ interview, ████████ claimed that the original source code for SCP-603 consisted of approximately 12000 lines of ANSI/ISO C++. This claim has not been verified.
+
+On startup, SCP-603 begins a separate thread of execution which continuously generates new versions of the program in memory. As well as procedurally modifying the functionality of the program, alterations and additions to the semantics and structure of the language in which the program is written are also made with each iteration. Due to its ever-changing nature, the language has been nicknamed "Morphic".
+
+SCP-603 acts as a compiler for itself. Pressing Ctrl-B at any time while SCP-603 is running compiles the latest iteration of the program to a new executable file named "a.exe" and outputs the source code to a subdirectory named "source".
+
+The source code for the latest iteration of SCP-603 (compiled 01/██/20██) consists of approximately 70 million heavily obfuscated lines of Morphic. 
+
+When left to run uninterrupted, SCP-603 will generate prime numbers increasing from 2 and print them to the environment's standard output. This behaviour, in addition to the CTRL-T behaviour, is consistent throughout all tested versions of SCP-603. If Ctrl-Shift-X is pressed at any time, this process is terminated and a GPU-accelerated window will open. The contents of this window are varying. Restarting the program and pressing Ctrl-Shift-X again may result in a different scene.
+
+Most scenes are accessible for only a single iteration of the program, however some scenes persist through multiple compilations. It is common for persistent scenes to evolve with each version of SCP-603, though some (such as Die) have remained unchanging since their first iteration. The most prominently recurring SCP-603 scenes are documented below.
+
+----
+**Die**
+Die presents itself as a text-based interactive adventure game. When Die starts up, the following passage is printed to the screen:
+
+> Your head pounds ever harder as you struggle through the jagged bramble. \
+You gaze back through the smog at the sillhouette of the old lighthouse to the \
+north, the faintest glimmer of hope extinguished so violently by your foolish \
+exploits. A distant and unattainable fantasy, you know you can never return.\
+
+A prompt appears below the passage, and the player may input commands and submit them by pressing the enter key. Entering the command "look" re-prints the previous passage to the screen. Attempting to "go north" results in the message "You cannot go north." Attempting to travel in any other direction results in a similar message. Attempting to perform most other actions results in the message "You cannot [do x].", where [do x] is the action entered by the user. Attempting to perform actions on objects such as "pick up apple" results in the message "There is no apple here." or similar.
+
+To date, the only command found to progress the game is "die". On entering the command, the player's heart stops and the message "As the world around you fades to blackness, you know that you deserve the consequences of your actions." is printed to the screen. This message remains on the screen until the SCP-603 process is terminated.
+
+The effect of the die command occurs even if the system is being accessed remotely. If two or more people participate in entering the die command, all participants are affected. For example, if one person enters the word "die" and another presses the enter key, the hearts of both players will stop simulataneously.
+
+It is not currently known whether it is possible to "win" Die. If Die ever starts up during an SCP-603 session, it is recommended to simply terminate the SCP-603 process.
+
+----
+**Jacob**
+Jacob is an artificially intelligent being who appears as a multicolored, equilateral triangle on a black background. The left, right and top corners of the triangle are red, green and blue respectively. These colors are interpolated between the points to fill the rest of the triangle. When Jacob is active, the phrase "Hello, world!" appears in the title bar of the window.
+
+As of 02/02/20██, users may converse with Jacob by typing phrases into the input field at the bottom of the window and pressing the enter key. Jacob's response will appear in bold, white text above the triangle and remain on-screen until it is replaced with a newer response. Jacob's response will always appear immediately after the enter key is pressed.
+
+When the SCP-603 process is terminated, Jacob's memory is deleted. Due to the psychological distress this has caused in the past, it is recommended that communication with Jacob is restricted to personnel who posess little or no tendency to anthropomorphise.
+
+Despite being unable to recall past events or dialogue from previous sessions, Jacob appears to exhibit a greater aptitude for language and learning with each iteration of SCP-603 in which he appears.
+
+History of Jacob
+Jacob first began appearing in a version of SCP-603 compiled on 01/05/20██. In these early iterations of SCP-603, it was not possible to interact with Jacob at all. At this time, Jacob was simply known as "the triangle".
+
+On 09/09/20██, Jacob was left running for 12 minutes by Dr. Brown after which the phrase "Please submit your query" appeared above the triangle in bold, white text. Dr. Brown proceeded to type the word "hello". The program display gave no indication that the key-presses were being handled by the program. However, on pressing the enter key, the text above the triangle was replaced with the word "Hi."
+
+A full transcript of the initial exchange between Jacob and Dr. Brown can be found in the Document jacob-001.txt.
+
+In 02/02/20██, a rectangular text-field for the user's input was added to the bottom of the Jacob display. The user's input will appear in this field as they type. When this change was mentioned to Jacob, he responded "I can't see what you're talking about. Do you like oysters?"
