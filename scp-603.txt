@@ -12,7 +12,7 @@ title:SCP-603
 
 **Object Class:** Safe
 
-**Special Containment Procedures:** As of 12/11/20██, SCP-603 is stored on a dedicated computer system in Laboratory 12-A, Observation room 1. The system may be accessed remotely via the SCP intranet. Personnel wishing to access SCP-603 must apply for a temporary password to allow them access to the system. A standard SCP-603 password will expire 24 hours after being issued. If access to SCP-603 for longer than 24 hours is required, please contact Dr. Brown. Physical access to Observation Room 1 without direct authorization from Dr. Brown is prohibited.
+**Special Containment Procedures:** As of 12/11/20██, SCP-603 is stored on a dedicated computer system in Laboratory 12-A, Observation room 1. The system may be accessed remotely via Foundation intranet. Personnel wishing to access SCP-603 must apply for a temporary password to allow them access to the system. A standard SCP-603 password will expire 24 hours after being issued. If access to SCP-603 for longer than 24 hours is required, please contact Dr. Brown. Physical access to Observation Room 1 without direct authorization from Dr. Brown is prohibited.
 
 SCP-603 should not be left to run unattended. Whenever possible, it is requested that users hit Ctrl-B before terminating an SCP-603 session
 
@@ -28,7 +28,7 @@ The source code for the latest iteration of SCP-603 (compiled 01/██/20██
 
 When left to run uninterrupted, SCP-603 will generate prime numbers increasing from 2 and print them to the environment's standard output. This behaviour, in addition to the Ctrl-B behaviour, is consistent throughout all tested versions of SCP-603. If Ctrl-Shift-X is pressed at any time, this process is terminated and a GPU-accelerated window will open. The contents of this window are varying. Restarting the program and pressing Ctrl-Shift-X again may result in a different scene.
 
-Most scenes are accessible for only a single iteration of the program, however some scenes persist through multiple compilations. It is common for persistent scenes to evolve with each version of SCP-603, though some (such as Die) have remained unchanging since their first iteration. The most prominently recurring SCP-603 scenes are documented below.
+Most scenes are accessible for only a single iteration of the program; however, some scenes persist through multiple compilations. It is common for persistent scenes to evolve with each version of SCP-603, though some (such as Die) have remained unchanging since their first iteration. The most prominently recurring SCP-603 scenes are documented below.
 
 Other recorded scenes are documented in the supplementary file [[[603-FT-2012]]].
 
@@ -58,7 +58,7 @@ Attempts to resuscitate users affected by the die command by means of CPR have b
 [[/div]]
 
 **Jacob [SCP-603-20]**
-Jacob is an artificially intelligent being who appears as a multicolored, equilateral triangle on a black background. The left, right and top corners of the triangle are red, green and blue respectively. These colors are interpolated between the points to fill the rest of the triangle. When Jacob is active, the phrase "Hello, world!" appears in the title bar of the window.
+Jacob is an artificially intelligent being who appears as a multicolored, equilateral triangle on a black background. The left, right, and top corners of the triangle are red, green, and blue respectively. These colors are interpolated between the points to fill the rest of the triangle. When Jacob is active, the phrase "Hello, world!" appears in the title bar of the window.
 
 As of 02/02/20██, users may converse with Jacob by typing phrases into the input field at the bottom of the window and pressing the enter key. Jacob's response will appear in bold, white text above the triangle and remain on-screen until it is replaced with a newer response. Jacob's response will always appear immediately after the enter key is pressed.
 
@@ -73,4 +73,4 @@ On 09/09/20██, Jacob was left running for 12 minutes by Dr. Brown after whic
 
 A full transcript of the initial exchange between Jacob and Dr. Brown can be found in the Document [http://scp-wiki.wikidot.com/jacob-001-txt jacob-001.txt].
 
-On 02/02/20██, a rectangular text-field for the user's input was added to the bottom of the Jacob display. The user's input will appear in this field as they type. When this change was mentioned to Jacob, it responded "I can't see what you're talking about. Do you like oysters?"
+On 02/02/20██, a rectangular text-field for the user's input was added to the bottom of the Jacob display. The user's input will appear in this field as they type. When this change was mentioned to Jacob, it responded, "I can't see what you're talking about. Do you like oysters?"
