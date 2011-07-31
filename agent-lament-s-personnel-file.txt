@@ -38,7 +38,7 @@ title:Agent Lament's Personnel File
 **Note**: Agent Lament is not, in spite of his arguments otherwise, the "Site-11 Pie Tester;" has never been, nor will he ever be, the "Lord of the Dance;" and is, under no circumstances, a certified public attorney.  Do not be duped by his clever costumes.
 
 -----
-[[module TagCloud mode="3d" width="900" height="500" maxfontsize="20" minfontsize="8" limit="200" target="system:page-tags"]]
+[[module TagCloud mode="3d" width="900" height="500" maxfontsize="20" minfontsize="8" limit="75" target="system:page-tags"]]
 
 [!--
 
@@ -48,6 +48,6 @@ But if you want to keep the tag functionality working - do not remove these modu
 --]
 -----
 
-[[module ListPages tag="-" order="titleAsc" perPage="200" separate="false" prependLine="||~ page(title) ||~ tags ||"]]
+[[module ListPages tag="-" order="titleAsc" perPage="100" separate="false" prependLine="||~ page(title) ||~ tags ||"]]
 || %%linked_title%% || %%tags%%||
 [[/module]]
