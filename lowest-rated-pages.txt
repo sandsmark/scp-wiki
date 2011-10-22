@@ -1,7 +1,7 @@
 title:Lowest Rated Pages
-Listed here are the lowest rated pages on the entire site. If possible, please do what you can to improve them.
+Listed here are the lowest rated pages on the entire site, not including [[[decommissioned-scp|Decommissioned]]] and [[[Archived SCPs]]]. If possible, please do what you can to improve them.
 
 
-[[module ListPages  separate="no" limit="100" perPage="100" maxRating="-1" tags="-archived, -decommissioned" order="rate-asc"]]
-* %%title_linked%%
+[[module ListPages category="* -decomm" tag="-archived" rating="<0" order="rating" separate="false" limit="200" perPage="40"]]
+%%title_linked%% (rating: %%rating%%, comments: %%comments%%)
 [[/module]]
