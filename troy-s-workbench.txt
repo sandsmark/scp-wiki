@@ -28,3 +28,13 @@ title:Troy's Workbench
 --]
 
 [[iframe http://scp-wiki.wikidot.com/troy-s-workbench/code/1 frameborder="0" scrolling="no" width="350px" height="75px"]]
+
+-----
+
+__Untagged Pages__:
+
+[[module ListPages tag="-" order="titleAsc" perPage="10" separate="false" prependLine="||~ page(title) ||~ author ||~ Updates ||"]]
+|| %%linked_title%% || %%author%%|| %%updated_at%% ||
+[[/module]]
+
+-----
