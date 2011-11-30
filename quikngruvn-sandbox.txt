@@ -19,12 +19,20 @@ Orphaned Logs
 Old page cleanup and/or purging
 Standalone Style Guide
 Author's Notes
+Central Records
 
 ----
 
 **Joke SCPs**
 [[module ListPages tags="joke -decommissioned" details="true" order="title" separate="false" perPage="50"]]
 %%linked_title%%, %%created_by%%, rating: %%rating%%, comments: %%comments%%
+[[/module]]
+
+----
+
+**Highest SCPs**
+[[module ListPages tags="scp -archived -decommissioned -contest" rating=">15" order="rating desc" separate="false" limit="200" perPage="40"]]
+%%title_linked%% (%%rating%%): created on %%created_at%% by %%created_by%%
 [[/module]]
 
 ----
