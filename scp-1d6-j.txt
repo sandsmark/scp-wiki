@@ -44,8 +44,7 @@ var imgs=
 "http://scp-wiki.wikidot.com/local--files/document-19-v-1911854/statue2.jpg",
 "http://scp-wiki.wikidot.com/local--files/document-19-v-1911854/strux.jpg",
 "http://scp-wiki.wikidot.com/local--files/document-19-v-1911854/threehead.jpg",
-"http://scp-wiki.wikidot.com/local--files/document-19-v-1911854/worm.jpg",
-"http://scp-wiki.wikidot.com/local--files/scp-087/plant.jpg"]
+"http://scp-wiki.wikidot.com/local--files/document-19-v-1911854/worm.jpg"]
 var q = imgs.length;
 var which=Math.round(Math.random()*(q-1));
 function show(){document.write("<img src=\""+imgs[which]+"\" alt=\"image\" class=\"image\" width=\"300px\">");}
