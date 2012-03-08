@@ -31,22 +31,15 @@ table.wiki-content-table th{
 <td colspan="2">
 <script language="JavaScript">
 var imgs=
-["http://scp-wiki.wikidot.com/local--files/document-19-v-1911854/bart08.jpg",
-"http://scp-wiki.wikidot.com/local--files/document-19-v-1911854/clockspiders.jpg",
-"http://scp-wiki.wikidot.com/local--files/document-19-v-1911854/eyecreepy.jpg",
-"http://scp-wiki.wikidot.com/local--files/document-19-v-1911854/mantree.jpg",
-"http://scp-wiki.wikidot.com/local--files/document-19-v-1911854/mechworld.jpg",
+[
 "http://scp-wiki.wikidot.com/local--files/document-19-v-1911854/old4d.png",
-"http://scp-wiki.wikidot.com/local--files/document-19-v-1911854/plant3.jpg",
-"http://scp-wiki.wikidot.com/local--files/document-19-v-1911854/robot.jpg",
 "http://scp-wiki.wikidot.com/local--files/document-19-v-1911854/snakehead.jpg",
 "http://scp-wiki.wikidot.com/local--files/document-19-v-1911854/statue1.jpg",
-"http://scp-wiki.wikidot.com/local--files/document-19-v-1911854/statue2.jpg",
-"http://scp-wiki.wikidot.com/local--files/document-19-v-1911854/strux.jpg",
-"http://scp-wiki.wikidot.com/local--files/document-19-v-1911854/threehead.jpg",
-"http://scp-wiki.wikidot.com/local--files/document-19-v-1911854/worm.jpg"]
+"http://scp-wiki.wikidot.com/local--files/document-19-v-1911854/frog.jpg",
+"http://scp-wiki.wikidot.com/local--files/document-19-v-1911854/robot.jpg",
+"http://scp-wiki.wikidot.com/local--files/document-19-v-1911854/clockspiders.jpg"]
 var q = imgs.length;
-var which=Math.round(Math.random()*(q-1));
+var which=Math.round(Math.random()*6);
 function show(){document.write("<img src=\""+imgs[which]+"\" alt=\"image\" class=\"image\" width=\"300px\">");}
 show();
 </script></td>
