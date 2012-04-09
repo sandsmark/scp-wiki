@@ -5,9 +5,10 @@ This is a test page created to experiment with tag filters for Nala's parsing fu
 -----
 **Primary Filter**:
 
-[[module ListPages separate="no" tags="-scp -archived -decommissioned -tale -guide -hub -project -author -orientation -creepypasta -supplement -contest -sandbox -orphaned -scp-fuel -splash -admin -template" perPage="200"]]
+[[module ListPages separate="no" tags="-scp -tale -guide -hub -project -author -orientation -creepypasta -supplement -contest -sandbox -orphaned -scp-fuel -splash -admin -template" perPage="200"]]
 %%title_linked%% - [[user %%created_by%%]] - %%created_at%%
 [[/module]]
+(These pages are in need of tags, as they lack any [[[Tag Guide|main tags]]] other than //orphaned//. Empty is good.)
 
 -----
 **Pages tagged as //orphaned//**:
@@ -15,3 +16,4 @@ This is a test page created to experiment with tag filters for Nala's parsing fu
 [[module ListPages separate="no" tags="orphaned" perPage="100"]]
 %%title_linked%% - [[user %%created_by%%]] - %%created_at%%
 [[/module]]
+(//orphaned// pages are usually pages that were attached to one or more articles that were subsequently deleted, or pages whose parents are locked and I can't change them myself. Very rarely an //orphaned// page can be cleaned up and made into a standalone tale, but usually they just need to be deleted.)
