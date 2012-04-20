@@ -27,17 +27,17 @@ __Documents Filed by Reject__:
 Since nobody likes him, Research Assistant Reject is not permitted to have a workbench. We make him stuff it all on to his desk, between the dentures and pill bottle.
 
 [[collapsible show="Recently Created Table" hide="Hide"]]
-[[module ListPages order="created_at desc" separate="false" limit="50" perPage="10"]]
+[[module ListPages order="created_at desc" separate="false" limit="60" perPage="20"]]
 || %%title_linked%% || Rating: %%rating%% || [[*user %%created_by%%]] || %%comments%% comments ||
 [[/module]]
 [[/collapsible]]
 [[collapsible show="Best SCPs of the Month" hide="Hide"]]
-[[module ListPages order="ratingDesc" separate="false" created_at="last 1 month" perPage="20" tags="+scp"]]
+[[module ListPages order="ratingDesc" separate="false" created_at="last 1 month" perPage="30" limit="90" tags="+scp"]]
 # %%title_linked%% (rating: %%rating%%, comments: %%comments%%), by [[*user %%created_by%%]]
 [[/module]]
 [[/collapsible]]
 [[collapsible show="Best Miscellaneous of the Month" hide="Hide"]]
-[[module ListPages order="ratingDesc" separate="false" created_at="last 1 month" perPage="20" tags="-scp, -supplement"]]
+[[module ListPages order="ratingDesc" separate="false" created_at="last 1 month" perPage="20" tags="-scp, -supplement" perPage="30" rating="<0"]]
 # %%title_linked%% (rating: %%rating%%, comments: %%comments%%), by [[*user %%created_by%%]]
 [[/module]]
 [[/collapsible]]
