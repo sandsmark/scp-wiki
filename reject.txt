@@ -46,6 +46,11 @@ Since nobody likes him, Research Assistant Reject is not permitted to have a wor
 # %%title_linked%% (rating: %%rating%%, comments: %%comments%%)
 [[/module]]
 [[/collapsible]]
+[[collapsible show="Highest Rated Tales" hide="Hide"]]
+[[module ListPages order="ratingDesc" separate="false" perPage="25" limit="50" tags="+tale, -explained, -collaboration"]]
+# %%title_linked%% (+%%rating%%), [[*user %%created_by%%]]
+[[/module]]
+[[/collapsible]]
 [[collapsible show="Bad Article Life" hide="Hide"]]
 [[module ListPages rating="<-4" order="ratingAsc" separate="true" tags="-archived, -contest" perPage="100"]]
 * %%title_linked%%, (%%rating%%), created %%date|%r|agohover%%
