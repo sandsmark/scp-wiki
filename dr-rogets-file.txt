@@ -31,7 +31,7 @@ var imgs=
 "http://scp-wiki.wdfiles.com/local--files/dr-rogets-file/garden-gnome.jpeg",
 "http://scp-wiki.wdfiles.com/local--files/dr-rogets-file/event.jpeg",
 "http://scp-wiki.wdfiles.com/local--files/dr-rogets-file/Kong_Trex.jpg",
-"http://scp-wiki.wdfiles.com/local--files/dr-rogets-file/ROGET.jpeg",]
+"http://scp-wiki.wdfiles.com/local--files/dr-rogets-file/ROGET.jpg",]
 var q = imgs.length;
 var which=Math.round(Math.random()*6);
 function show(){document.write("<img src=\""+imgs[which]+"\" alt=\"image\" class=\"image\" width=\"300px\">");}
