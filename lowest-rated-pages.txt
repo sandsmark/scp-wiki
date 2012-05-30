@@ -3,4 +3,6 @@ Listed here are the lowest rated pages on the entire site. If possible, please d
 
 For reference on SCPs in the single digits, refer to [[[Lowest Rated SCPs]]].
 
-[[module RatedPages order="rate-asc" limit="100" comments="true" maxRating="-1"]]
+[[module ListPages category="* -decomm" tag="-archived" rating="<0" order="rating" separate="false" limit="200" perPage="40"]]
+%%title_linked%% (rating: %%rating%%, comments: %%comments%%)
+[[/module]]
