@@ -145,8 +145,8 @@ function doAction()
     	
 }
 </script>
-<input id="message" type="text" size="100" onClick="doErase();" value="Type your message here..." style="background-color: black; color: lightgreen; font-size: 10pt; font-weight: bold; font-family: courier new;">
+<input id="message" type="text" size="100" onClick="doErase();" value="Type your message here..." style="background-color: black; color: #2FF120; font-size: 10pt; font-weight: bold; font-family: courier new;">
 <input type="button" value="Send" onClick="document.getElementById('response').innerHTML = 'MESSAGE SENT - PROCESSING...'; setTimeout('doAction()',5000);"><br>
 <br>
-<textarea id="response" cols="50" rows="5" style="background-color: black; color: lightgreen; font-size: 10pt; font-weight: bold; font-family: courier new;">Your response will appear here.</textarea>
+<textarea id="response" cols="50" rows="5" style="background-color: black; color: #2FF120; font-size: 10pt; font-weight: bold; font-family: courier new;">Your response will appear here.</textarea>
 [[/html]]
