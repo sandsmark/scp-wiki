@@ -138,6 +138,13 @@ function doAction()
     		returnMessage = "Wasn't there for the actual recovery, but from what I hear the guy up in that cabin was a total survivalist conspiracy nut. Like Jimmy. But don't tell Jimmy, he'll just get riled up.";
     		
     	}
+    	
+    	if (returnMessage == "")
+    	{
+    	
+    		returnMessage = "I have no idea what you're talking about.";
+    		
+    	}
 
     }
     
