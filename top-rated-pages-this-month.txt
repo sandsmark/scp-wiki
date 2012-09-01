@@ -1,12 +1,17 @@
 title:Top Rated Pages This Month
 Here you will find the most favored pages on the site created this month, useful for keeping up with new content on the site.
 
-**August 2012**
-[[module ListPages rating=">5" order="rating desc" separate="false" limit="200" perPage="25" date="2012.08"]]
+**September 2012**
+[[module ListPages rating=">5" order="rating desc" separate="false" limit="200" perPage="25" date="2012.09"]]
 %%title_linked%% (rating: %%rating%%, comments: %%comments%%)
 [[/module]]
 
 + Archive
+[[collapsible show="August 2012" hide="- Click to hide"]]
+[[module ListPages rating=">5" order="rating desc" separate="false" limit="200" perPage="25" date="2012.08"]]
+%%title_linked%% (rating: %%rating%%, comments: %%comments%%)
+[[/module]]
+[[/collapsible]]
 
 [[collapsible show="July 2012" hide="- Click to hide"]]
 [[module ListPages rating=">5" order="rating desc" separate="false" limit="200" perPage="25" date="2012.07"]]
