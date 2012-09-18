@@ -19,6 +19,14 @@ This is a test page created to experiment with tag filters for Nala's parsing fu
 (//orphaned// pages are usually pages that were attached to one or more articles that were subsequently deleted, or pages whose parents are locked and I can't change them myself. Very rarely an //orphaned// page can be cleaned up and made into a standalone tale, but usually they just need to be deleted.)
 
 -----
+**Pages tagged as //supplement// with no parent page**:
+
+[[module ListPages separate="no" tags="supplement" parent="-" perPage="100"]]
+# %%title_linked%% - [[user %%created_by%%]] - %%created_at%%
+[[/module]]
+(//supplement// pages should have their parent page set to the SCP from which they are linked. A missing parent page either indicates that the supplement is orphaned or simply needs to be updated.)
+
+-----
 **Pages tagged as both //safe// and //euclid//**:
 
 [[module ListPages separate="no" tags="+safe +euclid -keter" perPage="100"]]
@@ -46,28 +54,3 @@ This is a test page created to experiment with tag filters for Nala's parsing fu
 [[module ListPages separate="no" tags="+safe +euclid +keter" perPage="100"]]
 # %%title_linked%% - [[user %%created_by%%]] - %%created_at%%
 [[/module]]
-
------
-
-+ Testing
-++ some
-+++ heading
-++++ stuff
-+++++ for
-++++++ Project
-+++++++ Foundation
-
-* More
- * Testing
-  * For
-   * Project
-    * Foundation
-     * Way
-      * Down
-       * In
-        * The
-         * Bottom
-          * Of
-           * The
-            * Rabbit
-             * Hole
