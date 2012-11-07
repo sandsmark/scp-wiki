@@ -21,11 +21,9 @@ title:Dr. Roget's Personnel File
 > //You didn't have to break the coffee machine. A simple "please" would have sufficed.//
 
 
-[[module ListPages order="created_at desc" limit="100" separate="yes" created_by="Roget" tags="scp, joke, tale, scp-fuel, project"]]
-%%linked_title%%
+[[module ListPages created_by="Roget" separate="no" tags="scp, joke, tale, scp-fuel, project" order="title" prependLine="||~ Article ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||"]] 
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% ||
 [[/module]]
-
-
 
 [[collapsible show="+ List of stuff I've done with the number/name and some commentary" hide="- Hide this shit"]]
 
