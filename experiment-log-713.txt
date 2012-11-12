@@ -164,4 +164,5 @@ Project Head: Dr. ███████
 **Procedure:** Simple program written in █ that calls and displays the values returned by the Windows API function "GetCursorPos", which returns the current XY coordinates of the mouse cursor. Program run and cursor moved off screen in the bottom-right direction, and then in the top-left direction.
 **Results:** When cursor was moved off the bottom-right of the screen, program displayed values higher than current screen resolution of ███x███ pixels. When moved off the top-left of the screen, program displayed negative values.
 
-//Note: Again, seems pretty obvious that would have happened. --Dr. ███████
+//Note: I can't help but wonder what would have happened if that function were to return unsigned values. --Dr. ███████
+//I imagine it would wrap around to 4,294,967,295 or whatever. You know what happens when unsigned values underflow in █.
