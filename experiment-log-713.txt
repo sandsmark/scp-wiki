@@ -157,3 +157,11 @@ Project Head: Dr. ███████
 **Results:** Contact lost with Site ██ for 5 hours. Upon reestablishing contact, [DATA EXPUNGED] considerable structural damage [DATA EXPUNGED] of all electronic devices, with all non-electronic artificial devices [DATA EXPUNGED]. SCP-███ and SCP-███ were found to have broken containment and [DATA EXPUNGED]. All personnel on site were lost. Security recordings recovered from external SCP servers suggest that in the process of crashing SCP-713 as instructed, D-713-235 inadvertently induced a stop error (“Blue Screen of Death”). See Incident Report 713-23 for further details. See Incident Reports [DATA EXPUNGED] for details of █ similar incidents.
 
 //Note: All testing regarding effects of SCP-713's computer crashes is hereby suspended. Researchers involved have received posthumous reprimands. --O5-██//
+
+**Test 116**
+**Date:** ██/██/20██
+**Subject:** "GetCursorPos" Windows API function, special program written specifically for this test
+**Procedure:** Simple program written in █ that calls and displays the values returned by the Windows API function "GetCursorPos", which returns the current XY coordinates of the mouse cursor. Program run and cursor moved off screen in the bottom-right direction, and then in the top-left direction.
+**Results:** When cursor was moved off the bottom-right of the screen, program displayed values higher than current screen resolution of ███x███ pixels. When moved off the top-left of the screen, program displayed negative values.
+
+//Note: Again, seems pretty obvious that would have happened. --Dr. ███████
