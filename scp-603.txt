@@ -22,8 +22,6 @@ The first version of SCP-603 was written in 1996 by █████ ████
 
 On startup, SCP-603 begins generating new versions of its source code in a separate thread of execution. SCP-603 does not modify itself in-memory. Instead, it keeps an internal copy of the source code which is modified iteratively. On a clean termination of SCP-603, the entire source code will be output to the working directory in a new directory named "source". In addition to modifications to the internal and external functionality of the program, alterations and additions to the semantics and structure of the language are made which each iteration. Due to its continuously-changing nature, the language has been nicknamed "Morphic".
 
-An extract from build ████ of SCP-603 may be viewed in the supplementary file [[[603-SRC-29615]]]
-
 When passed a list of source files, SCP-603 acts as a compiler and linker. Morphic code is always compilable by the version of SCP-603 by which it is output. However older versions of the program can rarely compile code output by newer versions. On compilation, the program is output to an executable file named "megaprime".
 
 Recent versions of the SCP-603 source code consist of approximately 70 million lines of heavily obfuscated Morphic.
