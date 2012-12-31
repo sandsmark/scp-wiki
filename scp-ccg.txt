@@ -8,11 +8,487 @@ Please note that this game is being created to be marketable to people outside o
 
 This page will also be used as the Rule reference document for the duration of the game's development and life. Please treat it as such and keep edits to a minimum. Also there will be sections that aren't needed to be completed until the game is in a presentable state but they will be added here for sake of completeness.
 
-[[[CCG Section 1]]]: General Rules and Game Setup
-[[[CCG Section 2]]]: The Cards //INCOMPLETE//
-[[[CCG Section 3]]]: Game Rules //INCOMPLETE//
-[[[CCG Section 4]]]: Abilities and Card Text //INCOMPLETE//
-[[[CCG Section 5]]]: Additional Rules //INCOMPLETE//
+[[tabview]]
+
+[[tab Section 1]]
++ Section 1: General Rules and Game Setup
+
+++ Section 1a: Game Overview
+Each player represents an O5 level person who is attempting to secure SCPs as they appear around the world while gaining funding over their opponents. This game is designed to be played with 2-6 players but can support more or even solitare play if needed.
+
+This game has a growing and ongoing storyline and each of the 90 card sets represents the continuation of that storyline. ,,Please note that the CCG will diverge from the wiki metaplot so don't expect things to be the same.,, 
+
+Each 45 card set represents an important event or alternate reality that do not impact on the main storyline. Examples include The Great Prank War and The Complex.
+
+In order to play the SCP-CCG each player will need the following:
+
+* A Deck of 40 cards no more, no less.
+
+* A 5 card Deck of SCPs.
+    
+* Enough tokens to clearly represent various effects. Around 30 of various colors for each player is considered to be sufficient.    
+     
+Your goal is to have the largest number of SCPs Contained when the game ends. You do this by playing Personnel, Gear, Resources and Finances before attempting to secure the unsecured SCPs that are in play and containing them. You can also attempt to sabotage your opponents attempts to secure and contain SCPs through the use of various Complications and Missions.
+
+++ Section 1b: Starting the Game
+
+Each player puts their SCP deck into a pile with all the other player's SCP decks and shuffles them together in a pile in the center of the table. Each player then shuffles their deck and places it to their left and takes 5 tokens and places them in their resource pool. (see the layout example if not sure)
+
+Each player draws their starting hand of 6 cards and looks at it then bids to go first. Bidding works by each player naming a number and another player may name a higher number to be the winning bidder this continues until no player names a higher number. The winning bidder removes that many cards from the top of their deck from the game and will be the first Active Player. If 2 or more players name the same number then bidding continues if they both would be the winning bidder.
+
+++ Section 1c: Winning and Losing the Game
+
+There are currently 2 ways for a Player to win the game and 2 ways for a Player to lose the game.
+
+Win Condition #1:
+When all SCPs in the SCP deck have been either Secured, Contained or Destroyed then the Player with the highest total Skill in SCPs either Secured, Contained or Destroyed is the winner.
+
+Win Condition #2:
+If a Player manages to reach the requirements of an alternate win condition then that Player immediately wins the game.
+
+Lose Condition #1:
+If there are ever 30 or more Escalation Counters on Unsecured SCPs then all Players lose the game.
+
+Lose Condition #2:
+If a Player ever has no cards left in their Deck that Player immediately loses the game.
+
+++ Section 1d: The Golden Rules
+
+The SCP-CCG has some rules that should be abided by above all others and they are:
+
+#1: If the text on a card contradicts the rules in any way the card takes precedence.
+#2: The SCP-CCG can become very complex during play. If a Player asks you to explain a card or an action you have taken you must explain that card or action before continuing.
+#3: Don't be a dick. Games are for fun.
+
+++ Section 1e: Deck Building
+
+A Players deck MUST contain the following to be legal for play:
+
+* Exactly 40 cards. No more, no less.
+
+* At least 1 Personnel Card.
+
+* No more than 3 copies of any non-Unique Card.
+
+* No more than 1 copy of any Unique Card.
+
+* No more than 1 copy of any Personnel Card by Subtitle. //e.g. Dr.Gears - Research Fellow and Dr.Gears - Steampunk Wunderkin count are allowed in the same deck but 2 copies of Dr.Gears- Research Fellow are not.//
+
+* No more than 1 card with the Rare Keyword.
+
+A Players SCP deck MUST contain the following to be legal for play:
+
+* Exactly 5 SCP. No more, No less.
+
+* No more than 1 copy of any SCP.
+
+* No more than 1 Skill 10 or higher SCP.
+[[/tab]]
+
+[[tab Section 2]]
++ Section 2: The Cards
+
+++ Section 2a: General Card Overview
+Card Types
+
+There are currently 6 types of card in the SCP-CCG. Each of these cards represents the various assets and situations that an O5 level person will have at their disposal.
+
+These cards are one or more of the following types: Complication, Event, Gear, Personnel, Resource and SCP. The following sections explains the different types of cards in greater detail.
+
+Some Keywords and abilities may be shared by cards of multiple types and others may be type specific. //e.g Human may apply to SCPs and Personnel.//
+
+Some cards have a Cost and others do not. If a card does not have a Cost it's Cost is considered to be 0 for the purposes of card effects and targeting.
+
+++ Section 2b: SCP Cards
+
+<insert Example SCP here with arrows pointing out the various different sections of the card. More than likely SCP-682 or 914>
+
+SCPs have the following attributes:
+
+* SCP Type
+* Card Title
+* Subtype
+* Skill
+* Secure Requirement
+* Contain Requirement
+* Rules Text
+* Escalation Value
+
+SCPs are objects or creatures of interest to the Foundation which need to be secured, contained and protected.
+Each player has a deck of exactly 10 SCPs which are kept apart from all other decks and played separately. After an SCP comes into play it remains in play until Destroyed.
+
+There are currently 3 types of SCP; Safe <insert icon>, Euclid <insert icon> and Keter <insert icon>.
+
+Each SCP has a subtype or subtypes that may be referenced or affected by other cards.
+
+The Skill of an SCP represents it's overall danger to the world and those around it. A Skill 1 SCP may only be an inconvenience but a Skill 15 SCP could represent something capable of an XK scenario if left unchecked.
+
+The Secure Requirement represents how hard said SCP is to Secure for what ever reason be it that it is immobile or actively hostile towards being Secured. This is generally a number between 3 and 20
+
+The Contain Requirement is a measure of how hard the SCP is to Contain without it being able to escape or otherwise adversely effect the world. This is generally a number between 2 and 12
+
+The Rules Textbox contains all the game pertinent information for the SCP including it's Keywords and a list of Skill and/or Icons needed to Secure and Contain it. Not all SCPs may have Abilities but most will.
+
+An SCPs Escalation Value shows how long it is likely to be before the SCP becomes known or interacts with the world in a manner detrimental to the Foundation. This value is usually between 2, for actively hostile SCPs, to 15, for immobile or unremarkable SCPs. An SCP may never have more Escalation Counters on it than its Escalation Value.
+
+++ Section 2c: Complication Cards
+
+<insert Example Complication here with arrows pointing out the various different sections of the card. More than likely False Positive>
+
+Complications have the following attributes:
+
+* Complication Type
+* Card Title
+* Subtype
+* Rules Text
+* Escalation Value
+
+Complications are the day to day things that crop up in a foundation dedicated to protecting the world from extra-dimensional and horrific things. Complications start the game in the players deck and can only be played during another players turn from your hand or face down in your build queue. After a Complication has resolved it is discarded to its controllers discard pile.
+
+There are currently 4 types of Complications in the SCP CCG and each of them represents an aspect of the Foundation's problems and what particular problem has arisen.
+
+* Mundane <insert icon> Complications can be something as simple as an empty pen preventing paperwork from being signed to a traffic jam. Mundane Complications are usually easy to defeat but have very few restrictions in how they are played.
+
+* Lethal <insert icon> Complications carry a fatal penalty for failing to defeat but can only be played when the correct circumstances are met.
+
+* Containment <insert icon> Complications deal with the containment of a Secure SCP. These are often more subtle than other Complications and so often have more esoteric Skill requirements to defeat.
+
+* Security <insert icon> Complications are a common byproduct of an organization which needs to keep itself secret about all else. Security Complications often have far reaching consequences that may cause problems for you in the long run if not dealt with immediately.
+
+Complications may have a Subtype for the purposes of card interaction or targeting.
+
+The Rules Text Box of a Complication will contain any and all restrictions on playing that Complication. All keywords and Effects of that Complication will also be contained here.
+
+Whenever a Complication targets an SCP that SCP gains Escalation Counters equal to the Escalation Value of the Complication. If an SCP would ever gain Escalation Counters from a Complication that would take it above its Escalation Value then that Complication is Negated without effect.
+
+++ Section 2d: Equipment Cards
+
+<insert Example Equipment here with arrows pointing out the various different sections of the card. More than likely Level 5 NBC Suit>
+
+Equipment has the following attributes:
+
+* Equipment Icon
+* Card Title
+* Cost
+* Subtype
+* Rules Text
+
+An Equipment card represents a physical object that isn't an SCP but is useful for the procurement and containment of SCPs. Equipment cards are usually played on Personnel but some of them are separate entities in their own right and they remain in play until destroyed. Equipment cards come into play from your Build Queue.
+
+All Equipment has a cost. Typically between 1 and 5 which is paid from your Resource Pool before the Equipment can be put into play.
+
+Like almost every card Equipment can have Subtypes. Once again this can be targeted and referenced by other cards.
+
+99% of Equipment will either enhance the abilities of your personnel or give them entirely new abilities. All the relevant information will be in the Equipment Card's Rules Text Box.
+
+++ Section 2e: Event Cards
+
+<insert Example Event here with arrows pointing out the various different sections of the card. More than likely Lock-down>
+
+Events have the following attributes:
+
+* Event Icon
+* Cost
+* Card Title
+* Subtype
+* Rules Text
+
+Events represent the events that shape the course of the SCP Foundation. Unless otherwise stated Events are discarded after they resolve. Events can be played whenever their restrictions are met. Events can be played from your Build Queue or from your hand.
+
+Events have a Cost, it is paid from your Resource Pool, it is normally between 1 and 4.
+
+As expected they have a subtype.
+
+And shock horror they have rules text which contains their effects. Unless otherwise stated these effects are until the end of the turn.
+
+++ Section 2f: Personnel Cards
+
+<insert Example Personnel here with arrows pointing out the various different sections of the card. More than likely Dr Coleman>
+
+Personnel have the following attributes:
+
+* Affiliation
+* Card Title
+* Subtitle
+* Cost
+* Subtype
+* Skill Value
+* Skills
+* Icons
+* Rules Text
+
+Personnel are the people that ensure that SCPs are secured, contained and protected they are the backbone of the Foundation and allow you to perform most of the tasks in the game be sure to protect them.
+
+Personnel have an Affiliation. Currently only Freelance and Foundation Staff are in the game but more will be added later. If you wish to play a Personnel who does not either have the Freelance Keyword or is affiliated with all the other Personnel you control you must pay 3 Extra for each different affiliation you control. //e.g Dave wishes to play Dr.Coleman - Vivisectionist, who has The Complex affiliation, he currently controls Dr.Gears - Steampunk Wunderkin, who has The Foundation affiliation. Dr.Coleman - Vivisectionist will cost 3 more resources to play because Dave controls 1 other affiliation. Cards with the Loyal trait cannot be played if you control any cards that do not share an affiliation with it.
+
+A Personnel's Title and Subtitle are important each Subtitle is a different version of that Personnel and so you may have multiple versions of the same Personnel in your deck so long as they have different Subtitles. If you currently control a Personnel and wish to put another version of it into play you have 2 choices, you can either put the new personnel into play for it's normal cost and discard the older version from play or you can pay the difference between Cost+Skill of the two versions of the personnel and put it into play over the previous version. The Personnel gains any Skills and Icons the new version has and any abilities or keywords that version may have. The Skill of the Personnel becomes that of the newest copy +1 for each copy of the Personnel underneath it.
+
+A Personnel card has a cost that must be met before it can be brought into play like many other cards. Personnel typically cost between 5 and 12 with some costing more and some costing less.
+
+Personnel have a subtype. Like most cards.
+
+A Personnel has a Skill Value and a list of Skills which are used to overcome SCPs and Complications. Typically a personnel's Skill Value will be between 3 and 9 but some exceptional personnel have Skill Values in the 20s. If a personnel has a Skill and gains it again they add 1 to their Skill Value when interacting with a card that targets that skill. If a Personnel's Skill has a number after it that is the number of times that personnel has that skill. //e.g Abel has a Skill Value of 5 with Combat 7 as a Skill. If Abel is involved in a Complication involving the Combat Skill he has a Skill Value of 13 for that Complication.//
+
+A personal's Icons may help you to decide how to use and play the personnel. Icons include: Command <insert icon>, Researcher <insert icon>, Solider <insert icon>, Non-Human <insert icon> and Site Number <insert icon>. Icons are used for Resources and some other cards may reference an Icon. If a Personnel would gain an Icon they already have they do not gain an extra Icon.
+
+Personnel have a Rules Text box. It may not contain Rules but it might.
+
+++ Section 2g: Resource Cards
+
+<insert Example Resource here with arrows pointing out the various different sections of the card. More than likely Enhanced Containment Procedures>
+
+Resources have the following attributes:
+
+* Resource Icon
+* Card Title
+* Subtype
+* Required Icons
+* Rules Text
+
+A Resource represents anything that is an asset to your chances of winning, be it security personnel, heavy duty blast doors or a spangly coffee machine. A Resource may not be played if you do not have all the required Icons in play under your control. Resources remain in play until destroyed.
+
+Resources have a subtype which gives you a general idea as to what the Resource helps with, Security, Personnel, Emergency, etc are all Subtypes of Resources you could control.
+
+Each Resource has a set of Required Icons which you have to be able to spot to put this Resource into play. Icons are usually found on Personnel but some other cards may have or add Icons. If you cannot spot all the required icons you cannot put this card into play. If you cannot spot the required Icons for a Resource then that Resources Abilities may not be used.
+
+Once again Resources have Rules Text. This has stuff and things in it.
+[[/tab]]
+
+
+[[tab Section 3]]
++ Section 3: Game Rules
+
+++ Section 3a: General Overview
+
+Each Player's turn consists of the following phases:
+
+   1. Start of Turn Phase
+   2. Draw Phase
+   3. Resupply Phase
+   4. Assignment Phase
+   5. Retrieval Phase (Optional)
+   6. Research Phase (Optional)
+   7. Maintanence Phase
+   8. Escalation Phase
+   9. Outcome Phase
+ 10. End of Turn Phase
+
+Each player MUST perform any actions required of them in the phases not marked Optional. Each of these sections takes place in the order presented above and may only take place once in a turn, unless overridden by a card effect.
+
+++ Section 3a: Start of Turn Phase
+
+Any effects that state they Must take place at the start of the turn resolve in the order of the controlling players choice. If 2 or more players have effects that resolve in this phase then each player, moving clockwise from the active player, activates an effect in turn. Then any effects that state the May take place at the start of the turn resolve in a similar manner.
+
+++ Section 3b: Draw Phase
+
+The active player may spend Resources from their resource pool to draw cards on a 1 for 1 basis from the top of their deck. //e.g Dave pays 3 Resources and draws 3 cards from the top of his deck.// A Player may draw any number of cards in this way.
+
+++ Section 3c: Resupply Phase
+
+The active Player refills their Resource Pool with 5 Resources and then may remove any number of Finance Tokens from Finance cards they control to add 1 Resource to their Resource Pool per token removed.
+
+The Active Player then untaps all cards they control.
+
+++ Section 3d: Assignment Phase
+
+The active Player assigns any Personel the control to one of the following actions:
+
+   1. Attempt to Secure SCP
+   2. Attempt to Contain a Secured SCP
+   3. Attempt to Destroy a Contained SCP
+   4. Defend a Secured or Contained SCP you control
+   5. Research an SCP
+
+The active Player may also place up to 5 cards face down into their Build Queue and place Resources on them from their Resource Pool. A player may have no more than 5 cards in their Build Queue at any one time. A face down card in a Build Queue may have more counters placed on it than its cost without effect.
+
+++ Section 3e: Retrieval Phase (Optional)
+
+If the Active Player has assigned any of their Personel to Securing an Unsecured SCP then those Personel are "tapped" and each other player, in turn clockwise from the Active Player, may play a Complication targeting cards controlled by the Active Player.
+
+After each other player has had had a chance to play a Complication the Active Player may play any Events they can from their hand and then compare their Personel's modified Skills and Skill Value.
+
+If they have the required Skills at a Skill Value of the SCP's Secure Requirement + the number of Escalation Counters on it the SCP is Secured and moved under your control. The Active Player then destroys the cost in cards equal to the number of Escalation Counters on the SCP in Atrittion.
+
+If they do not have the required skills or Skill Value of the SCP's Secure Requirement + the number of Escalation Counters the Active Player destroys the cost in cards equal to the SCP's Escalation Value in Atrittion and then places an Escalation Counter on the SCP.
+
+------
+
+If the Active Player has assigned any of their Personel to Securing an SCP that has been Secured by another player those Personel are "tapped" and each other player, in turn clockwise from the Active Player, may play a Complication targeting cards controlled by either the Attacking or Defending Player.
+
+After each other player has had a chance to play a Complication the Attacking Player may play any Events they can from their hand. Then the Defending Player may play one Complication or Event from their hand targetting cards controlled by the Attacking Player.
+
+If they have the required Skills at the Skill Value of the SCP's Secure Requirement + the number of Escalation Counters on the SCP + it's Containment Requirement if it is currently Contained + the Skill Value of any Personel with the Solider Skill that are Defending that SCP then that SCP is Secured and moved under your control. 
+
+The Attacking Player then destroys the cost value in cards equal to the number of defending personel plus the number of Escalation Counters on the SCP in attrition. The defending player destroys the cost value in cards equal to the Escalation Value of the SCP plus the number of attacking Personel in attrittion.
+
+If they do not have the required skills or Skill Value of the SCP's Secure Requirement + the number of Escalation Counters on the SCP + it's Containment Requirement if it is currently Contained + the Skill Value of any Personel with the Solider Skill that are Defending that SCP then the Active Player destroys all cards involved in the attack in attrittion and the defending player destroys cards equal to the number of attacking personel in attrittion and the SCP gains an Escalation Counter. 
+
+If this counter would cause the SCP to become Unsecured or Uncontained it immediately becomes Unsecured or Uncontained.
+
+++ Section 3f: Research Phase (Optional)
+
+If the Active Player has assigned any Personel to Research with the Research Skill that Player may reveal the top card of the SCP deck and put it into play in the center of the table with no Escalation Counters on it.
+
+------
+
+If the Active Player has assigned any Personel to Containing a Secured SCP then each other player, in turn clockwise from the Active Player, may play a Complication targeting cards attempting to Contain the SCP.
+
+After each other player has had a chance to play a Complication the Attacking Player may play any Events they can from their hand.
+
+The Active player then compares the modified Skills and Skill Values of the Personel to the modified Contain Requirement of the SCP and if the Personel suceeds then the SCP becomes Contained. Tap the SCP to show that it is Contained.
+
+------
+
+If the Active Player has assigned any Personel to Destroy a Contained SCP the Active Player compares the Skill Value of any personel with the Terminate to the Escalation Value + Skill of the SCP. If the Personel have a greater Skill Value then the SCP is discarded. 
+
+If the Personel have a lower Skill Value then the SCP gains an Escalation Counter and the Active Player must Wound each personel assigned to Destroy the SCP.
+
+++ Section 3g: Maintanence Phase
+
+The Active Player may remove 1 Escalation Counter from each Secured SCP they control and up to 2 Escalation Counters from each Contained SCP they control.
+
+The Active Player may then reveal any number of face down cards they control in their Build Queue and put them into play if it has Resources equal to or more than it's Cost. These cards come into play untapped under the Active Player's control control.
+
+++ Section 3h: Escalation Phase
+
+Each Uncontained SCP gains an Escalation Counter and each Unsecured SCP gains 2 Escalation Counters any effects that resolve in the Escalation Phase resolve now.
+
+++ Section 3i: Outcome Phase
+
+If there are 30 or more Escalation Counters on Unsecured SCPs then all Players immediately Lose.
+
+If an Unsecured SCP has Escalation Counters equal to it's Escalation Value remove all Escalation Counters from that SCP and each player discards cards from the top of their deck equal to that SCPs Skill.
+
+++ Section 3j: End of Turn Phase
+
+Any effects that state they Must take place at the end of the turn resolve in the order of the controlling players choice. If 2 or more players have effects that resolve in this phase then each player, moving clockwise from the active player, activates an effect in turn. Then any effects that state they May take place at the end of the turn resolve in a similar manner.
+
+++ Section 3k: Clean Up Phase
+
+The Active Player checks to see if all cards in play under their control are still legal to be in play and then passes the turn to the next player going clockwise. That Player then becomes the Active Player and moves to Phase #1.
+[[/tab]]
+
+
+[[tab Section 4]]
++ Section 4: Abilities and Card Text
+
+++ Section 4a: General Overview
+Almost every card within the SCP-CCG has some sort of Rules text or at the very least a type and subtype. Using the various effects on cards and their interaction is the basis of how the SCP-CCG works and how you will win the game.
+
+There are 2 major ways to interact with other cards Abilities and Effects. Abilities are created by cards that are currently in play and Effects are created by cards that you play from your hand. The distinction between the two is important as somethings can be immune or resistant to abilities but not effects.
+
+++ Section 4b: Static Abilities
+A Static Ability is an Ability that is always generated by a card in play without changing unless it is affected in some way. //e.g All Personnel you Control have +1 Skill.//
+
+++ Section 4c: Dynamic Abilities
+A Dynamic Ability is an Ability that is generated by a card that changes when the game state changes. //e.g All Personnel you Control have +1 Skill and gain an additional +1 Skill if you have Secured a Mechanical SCP this turn.//
+
+++ Section 4d: Triggered Abilities
+A Triggered Ability is an Ability that is only activated when its restrictions are met and after resolving does not trigger again. //e.g When a Mechanical SCP comes into play Dr.Gears makes happy in his pants til the end of turn.//
+
+++ Section 4e: Negating Abilities
+If an Ability is Negated by a card that Ability ceases to effect the game and does not resolve. That ability cannot be used until the start of your next turn. //e.g If the Ability "All Personnel you Control have +1 Skill" was negated your Personnel would not benefit from it's effects until the start of your next turn.//
+
+++ Section 4f: Effects
+An Effect resolves as part of coming into play and then is discarded to it's controller's discard pile as part of its Resolution. //e.g "All Personnel you Control have +1 Skill." as an Effect would only add the +1 Skill once the card had Resolved not as it's played.//
+
+++ Section 4g: Negating Effects
+If an effect is negated it is discarded to its Controller's Discard pile without resolving or effecting the game state apart from counting as having be played from your hand for the purposes of card interaction.
+
+++ Section 4h: Infinite Loops
+If one or more cards would create an Infinite Loop then all of those cards are removed from the game and the game continued as normal. If removing those cards would create irreparable damage to the game state then the player that initiated the Infinite Loop immediately loses and all other players are considered to have drawn.
+
+++ Section 4i: Costs
+All costs for a Card or an Ability on a Card must be paid before that card can resolve. If one or more parts of the cost are negated while the card is Resolving the card is negated without effect and discarded. Costs can be paid in any order but all parts must be paid and no cost can be reduced to less than 0. All Costs are listed on the left side of the colon and the effect of that cost is listed on the right of the colon. //e.g Destroy 5 cards you control <- Cost : Destroy 1 card Target Player controls. <- Effect.//
+
+++ Section 4j: Attrition
+Attrition represents the inherent risk of dealing with horriffic and otherworldly items on a daily basis. When a player is required to destroy cards because of Attrition they may only destroy cards which meet the following criteria:
+
+#1: They are not Immune to Attrition. Cards which are Immune to Attrition may not be destroyed from Attrition effects.
+
+#2: They are not Indestructable. Indestructable cards cannot be destroyed so Attrition may not effect them.
+
+#3: If a card's cost is greater than the amount of Attrition that card is destroyed and any cost over the Attrition value is lost.
+
+#4: While a card with cards attached to it may be destroyed to satisfy Attrition the cards attached to it will also be Destroyed and will not count towards Attrition.
+
+#5: Attrition is a Targeted Triggered Effect which may not be redirected.
+
+++ Section 4k: Damage and Healing
+Cards with the Living Subtype have the following states. Fine: This card can act normally in every way. Damaged: This card can still act normally but may be more adversely affected by some cards. Dying: If this card is targeted or performs an action that would not heal it then this card is discarded from play. Dead: This card is discarded from play. Use tokens or some other method to mark what level of injury the card has suffered, one method suggested is turning the card 180 degrees when it is Dying and using a token to mark Damaged.
+
+Non-Living cards have the following states. Fine: This card acts normally. Damaged: This card can still act normally but may be more adversely affected by some cards. Destroyed: This card is discarded from play. Use tokens or some other method to make what level of injury the card has suffered.
+
+If a Living Card would be Healed it has its level of injury reduced by 1 (//e.g Dying->Damaged->Fine) and if it would be fully Healed it's state is reset to Fine.
+
+If a Non-Living Card would be Repaired it has its level of injury reduced by 1 (//e.g Damaged->Fine) and if it would be filly healed it's state is reset to Fine.
+
+A Living Card cannot be Repaired and a Non-Living Card cannot be Healed.
+
+A card with the Invulnerable Keyword cannot be Wounded or Damaged. A card with the Regenerate Keyword has its current injury level increased by 1 at the start of its controllers turn. A Card with the Fragile Keyword increases it's injury level every time it is targeted or used.
+[[/tab]]
+
+[[tab Section 5]]
++ Section 5: Additional Rules and other such things.
+
+++ Section 5a: General Overview
+This section will include any additional rules, erratas, rule explanations and anything else required.
+
+++ Section 5b: Keywords
+Keywords are words in bold print in a card's text box. Any templated keywords will be explained below once they have been finalised.
+
+++ Section 5c: Copying Objects
+If an object is copied it is considered to be the same as that object in every way unless otherwise noted.
+
+++ Section 5d: Face Down Cards
+Cards which are face down have no type, can be targetted and are discarded if they are revealed and the cost to bring them into play cannot be met.
+
+++ Section 5e: Contradictions
+If 2 cards contradict each other then the card controlled by the active player takes precidence, if both cards are controlled by the active player then Can't overrides Must. 
+
+++ Section 5f: Card Memory
+
+[[/tab]]
+
+[[tab Section 6]]
++ Section 6: Alternate Play Formats
+
+++ Section 6a: General Overview
+The SCP CCG has been designed with other formats in mind than the one presented in the main rules. These formats may not be supported as well as the standard method of play but they are still perfectly possible to play and enjoy.
+
+++ Section 6b: Multiplayer Varients
+//This section will be added to later. Team games and the like.//
+
+++ Section 6c: Solitare Varient
+//This section will be added to later. You have 10 turns to contain, secure and destroy as many SCP as possible from the SCP deck. You can make the game as hard or as easy as you want with deck construction.//
+
+++ Section 6d: The Great Prank War Varient
+//This section will be added to later. SCP 050 begins in play at the start of the game and each player has to use Prank type cards to gain control of 050. After 20 turns the player who controls 050 wins the game.//
+
+++ Section 6e: Collapsed Realities Varient
+//This section will be added to later. But essensially everyone is only allowed to play non-Foundation aligned Personel of the same alternate reality.//
+[[/tab]]
+
+[[tab Section 7]]
+[[/tab]]
+
+
+
+[[tab Section 8]]
+
+[[module TagCloud mode="3d" width="900" height="500" maxfontsize="500%" minfontsize="50%" minColor=
+"0, 102, 255" maxColor="102, 204, 0" limit="50" target="system:page-tags"]]
+
+[!--
+
+You can edit parameters of the TagCloud module as described in http://www.wikidot.com/doc:tagcloud-module 
+But if you want to keep the tag functionality working - do not remove these modules.
+
+--]
+
+[[/tab]]
+
+[[/tabview]]
 
 ------
 Current Status:
