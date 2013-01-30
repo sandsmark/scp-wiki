@@ -125,3 +125,8 @@ AWARD WINNING: Implemented by staff.
 * %%title_linked%%, (%%rating%%), created %%date|%r|agohover%%
 [[/module]]
 [[/collapsible]]
+[[collapsible show="Highest Rated Contest Tales" hide="Hide"]]
+[[module ListPages order="ratingDesc" separate="false" tags="+nyc2013" perPage="150"]]
+%%title_linked%%, %%rating%% ([[*user %%created_by%%]])
+[[/module]]
+[[/collapsible]]
