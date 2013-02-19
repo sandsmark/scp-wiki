@@ -221,13 +221,26 @@ ANYTHING BELOW THIS LINE MUST BE PRODUCTIVE BEHAVIOR
 [[/tab]]
 [[/tabview]]
 ­
-­
-­
-­
-­
-­­­
-­­
-­
+­[[collapsible show="Comparison by date" hide="Original character pls don't steal"]]
+
+[[div style="float:left; width: 45%; padding: 0 2%"]]
+
+Jekeled:
+[[module ListPages created_by="Jekeled" separate="false" tags="-author -hub" perPage="30"]]
+||Rating: %%rating%% || %%created_at%% ||
+[[/module]]
+
+[[/div]]
+
+[[div style="float:right; width: 45%; padding: 0 2%"]]
+
+Scantron:
+[[module ListPages created_by="Scantron" separate="false" tags="-author -hub" perPage="30"]]
+|| Rating: %%rating%% || %%created_at%% ||
+[[/module]]
+
+[[/div]]
+[[/collapsible]]
 ­
 ­
 ­
