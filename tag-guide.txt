@@ -119,7 +119,7 @@ The following tags are SCP Article attribute tags, and should **only** be used o
 
 +++ B-C
 
-**[/system:page-tags/tag/bacteria bacteria]** - SCP is, resembles, or exhibits traits of a bacterial life-form.
+**[/system:page-tags/tag/bacteria bacteria]** - SCP is, resembles, or exhibits traits of a bacterial life-form. Supersedes //contagion// if appropriate.
 **[/system:page-tags/tag/biohazard biohazard]** - SCP poses a hazard to humans or the environment as a result of biological function, or is a biological hazard.
 **[/system:page-tags/tag/biological biological]** - SCP exhibits biological traits. Please see the FAQ (below) for more details.
 **[/system:page-tags/tag/bovine bovine]** - SCP is or exhibits traits of bovine, or cattle-like animals. Use in conjunction with //animal// if appropriate.
@@ -134,8 +134,8 @@ The following tags are SCP Article attribute tags, and should **only** be used o
 **[/system:page-tags/tag/clothing clothing]** - SCP is an artifact primarily intended to be worn for protection or comfort, including armor and protective helmets. Supersedes //artifact//, mutually exclusive with //jewelry//.
 **[/system:page-tags/tag/cognitohazard cognitohazard]** - SCP is hazardous to subjects when observed. Should be used in conjunction with //auditory//, //gustatory//, //olfactory//, or //visual//.
 **[/system:page-tags/tag/compulsion compulsion]** - SCP causes compulsive behavior in subjects, or otherwise causes subjects to do things they normally would not. See Tag FAQ for extended clarifications.
-**[/system:page-tags/tag/computer computer]** - SCP is a computational device. Should be used in conjunction with //electronic// or //mechanical// as appropriate. Supersedes //artifact// and //appliance//.
-**[/system:page-tags/tag/contagion contagion]** - SCP is a contagious agent, or exhibits contagious spread. Use in conjunction with //bacteria// or //virus// if appropriate. Mutually exclusive with //memetic//.
+**[/system:page-tags/tag/computer computer]** - SCP is a computational device or affects computational devices. Should be used in conjunction with //electronic// or //mechanical// as appropriate. Supersedes //artifact// and //appliance//.
+**[/system:page-tags/tag/contagion contagion]** - SCP is a contagious agent, or exhibits contagious spread. Superseded by //bacteria//, //memetic//, or //virus//.
 **[/system:page-tags/tag/container container]** - SCP is meant to hold or otherwise contain other material or objects, including decorative vases and other similar objects. Supersedes //artifact//.
 **[/system:page-tags/tag/corrosive corrosive]** - SCP exhibits corrosive properties.
 **[/system:page-tags/tag/crystalline crystalline]** - SCP is or exhibits traits of crystals.
@@ -201,7 +201,7 @@ The following tags are SCP Article attribute tags, and should **only** be used o
 **[/system:page-tags/tag/mechanical mechanical]** - SCP operates primarily in a mechanical manner, or is a mechanical device. Superseded by //clockwork//.
 **[/system:page-tags/tag/media media]** - SCP is, or is contained on, one or more items of fixed or removable analog or digital media, such as a tape, record, disc, or drive. Supersedes //artifact//.
 **[/system:page-tags/tag/medical medical]** - SCP is used or intended for use as a medical device, or otherwise has medical significance outside of pathology.
-**[/system:page-tags/tag/memetic memetic]** - SCP is a memetic agent, or exhibits traits of [[[Understanding Memetics|memetic propagation]]]. See Tag FAQ for extended clarifications.
+**[/system:page-tags/tag/memetic memetic]** - SCP is a memetic agent, or exhibits traits of [[[Understanding Memetics|memetic propagation]]]. Supersedes //contagion// and used in conjunction with //cognitohazard//. See Tag FAQ for extended clarifications.
 **[/system:page-tags/tag/memory-affecting memory-affecting]** - SCP imparts memories, changes memories, or removes memories in sentient beings, such as human subjects. Compare with //mind-affecting//.
 **[/system:page-tags/tag/meta meta]** - SCP affects or is affected by its documentation, or requires containment procedures regarding the way it is documented. See Tag FAQ for extended clarifications.
 **[/system:page-tags/tag/metallic metallic]** - SCP is a metal, or is completely or significantly composed of metal or metallic substances.
@@ -292,7 +292,7 @@ The following tags are SCP Article attribute tags, and should **only** be used o
 **[/system:page-tags/tag/vehicle vehicle]** - SCP is or is intended to be used as a vehicle. Supersedes //artifact//.
 **[/system:page-tags/tag/vermian vermian]** - SCP is or exhibits traits of vermian, or worm-like animals. Should be used in conjunction with //animal//.
 **[/system:page-tags/tag/vibration vibration]** - SCP generates anomalous vibrations or other repetitive movement. Compare with //acoustic//.
-**[/system:page-tags/tag/virus virus]** - SCP exhibits traits of viral life-forms.
+**[/system:page-tags/tag/virus virus]** - SCP exhibits traits of viral agents. Use in conjunction with //biological// or //computer//. Supersedes //contagion//.
 **[/system:page-tags/tag/visual visual]** - SCP is triggered by, activated by, or affects the sense of sight. Often used in conjunction with //cognitohazard// or //sensory//.
 **[/system:page-tags/tag/vulpine vulpine]** - SCP is or exhibits traits of vulpine, or fox-like animals. Use in conjunction with //animal// if appropriate.
 **[/system:page-tags/tag/weapon weapon]** - SCP is or is intended to be used as a weapon. Supersedes //artifact//.
