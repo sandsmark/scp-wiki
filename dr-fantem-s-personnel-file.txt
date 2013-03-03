@@ -67,13 +67,15 @@ table.wiki-content-table th{
 var imgs=
 [
 "http://www.scp-wiki.net/local--files/dr-fantem-s-personnel-file/.banjo.gif",
+"http://scp-wiki.wdfiles.com/local--files/dr-fantem-s-personnel-file/.WhyIDontWantToGetMarried.gif",
+"http://www.scp-wiki.net/local--files/dr-fantem-s-personnel-file/.Capone.gif",
 "http://www.scp-wiki.net/local--files/dr-fantem-s-personnel-file/.Iamexcited.gif",
 "http://www.scp-wiki.net/local--files/dr-fantem-s-personnel-file/.no-regrets.gif",
 "http://www.scp-wiki.net/local--files/dr-fantem-s-personnel-file/.Rabid.gif",
 "http://www.scp-wiki.net/local--files/dr-fantem-s-personnel-file/.read.gif",
 "http://www.scp-wiki.net/local--files/dr-fantem-s-personnel-file/.vengeance.gif"]
 var q = imgs.length;
-var which=Math.round(Math.random()*6);
+var which=Math.round(Math.random()*8);
 function show(){document.write("<img src=\""+imgs[which]+"\" alt=\"image\" class=\"image\" width=\"300px\">");}
 show();
 </script></td>
@@ -104,6 +106,12 @@ show();
 [[[SCP-091]]]
 [[html]]
 <iframe width="420" height="315" src="http://www.youtube.com/embed/Fy_JRGjc1To?rel=0" frameborder="0" allowfullscreen></iframe>
+[[/html]]
+[[/collapsible]]
+[[collapsible show="[+] SCP-106" hide="[-] SCP-106"]]
+[[[SCP-106]]]
+[[html]]
+<iframe width="560" height="315" src="http://www.youtube.com/embed/JHydK-GyXU4?rel=0" frameborder="0" allowfullscreen></iframe>
 [[/html]]
 [[/collapsible]]
 [[collapsible show="[+] SCP-173" hide="[-] SCP-173"]]
@@ -152,6 +160,13 @@ show();
 [[[SCP-1713]]]
 [[html]]
 <iframe width="420" height="315" src="http://www.youtube.com/embed/iySJykzz7Dk?rel=0" frameborder="0" allowfullscreen></iframe>
+[[/html]]
+[[/collapsible]]
+----
+[[collapsible show="[+] SCP-50-AE-J" hide="[-] SCP-50-AE-J"]]
+[[[SCP-50-AE-J]]]
+[[html]]
+<iframe width="560" height="315" src="http://www.youtube.com/embed/eheESgRNJKc?rel=0" frameborder="0" allowfullscreen></iframe>
 [[/html]]
 [[/collapsible]]
 [[/tab]]
