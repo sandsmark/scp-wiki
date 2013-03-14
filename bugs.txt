@@ -1,0 +1,24 @@
+title:Bugs
+[[>]]
+[[module Rate]]
+[[/>]]
+Given a continuous vector field on the surface of a sphere, there must be at least one point on the field where the vector is equal to zero. 
+
+Put another way, if you have a sphere which is covered in hair, it is impossible to comb all of it flat. There will always be those points where the hair converges and stands up. It happens a lot in computing. You know when you’re playing a game, and you look really closely near the edges of one of the models, or in some place the developer tried to tuck away where you wouldn’t notice it, and you see the texture kind of shrinks down to a point? It’s more or less the same principle. 
+
+
+It doesn’t just happen in graphics either. Sometimes, when you try to implement a physics system, sometimes all of the numbers converge on the edge of the area you’re coding for. In version 1, that was at the poles of the sphere. I assumed no one would notice because there’s nothing of value at the poles (I did that on purpose) and they’re cold and desolate besides.
+
+They decided to check the poles anyway. It caused a big system crash, and not only did I have to reset everything, I spent weeks untangling the physics system to try and get rid of it.
+
+Failing that, I did the next best thing in version 2. I moved it. Tweaked it a little bit too, slapped a few repeating grass textures outside, and sewed the edges around it together so that there’s no way to get to it from the outside.
+
+Not that I didn’t have a little fun with it. I took a few things and played with them for a while, tried to see how the glitch affected them. I made a little glitch town, populated it with little glitch people, so see how they would cope.
+
+They didn’t.
+
+Over time, the glitch became a little testing ground. Sometimes, before implementing something new, I drop it in there, see how well it holds up under the extreme physical conditions. Some of them don’t make it, but it’s a fairly hostile environment. I don’t blame them. I’ll just put them out somewhere else, and see how they react under normal circumstances. Just a few weird things. Some gears. A moving statue. A giant lizard monster. 
+
+I have a lot of fun with these guys, too. Sometimes they’ll wreck a few things I’d set up earlier, but the program seems pretty good at repairing itself. I usually have to override a few functions, but it’s definitely worth it, just to see how the rest reacts, having been thrown something it doesn’t understand.
+
+I don’t think anyone will notice.
