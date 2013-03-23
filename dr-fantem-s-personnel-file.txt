@@ -86,6 +86,11 @@ table.wiki-content-table th{
 <script language="JavaScript">
 var imgs=
 [
+"http://scp-wiki.wdfiles.com/local--files/dr-fantem-s-personnel-file/.999.gif",
+"http://scp-wiki.wdfiles.com/local--files/dr-fantem-s-personnel-file/.lookhowmanyigive.gif",
+"http://scp-wiki.wdfiles.com/local--files/dr-fantem-s-personnel-file/.myfavoritepony.gif",
+"http://scp-wiki.wdfiles.com/local--files/dr-fantem-s-personnel-file/.slenderman.gif",
+"http://scp-wiki.wdfiles.com/local--files/dr-fantem-s-personnel-file/.wallmart.gif",
 "http://www.scp-wiki.net/local--files/dr-fantem-s-personnel-file/.banjo.gif",
 "http://scp-wiki.wdfiles.com/local--files/dr-fantem-s-personnel-file/.WhyIDontWantToGetMarried.gif",
 "http://www.scp-wiki.net/local--files/dr-fantem-s-personnel-file/.Capone.gif",
@@ -98,7 +103,7 @@ var imgs=
 "http://www.scp-wiki.net/local--files/dr-fantem-s-personnel-file/.read.gif",
 "http://www.scp-wiki.net/local--files/dr-fantem-s-personnel-file/.vengeance.gif"]
 var q = imgs.length;
-var which=Math.round(Math.random()*11);
+var which=Math.round(Math.random()*16);
 function show(){document.write("<img src=\""+imgs[which]+"\" alt=\"image\" class=\"image\" width=\"300px\">");}
 show();
 </script></td>
