@@ -32,12 +32,12 @@ table.wiki-content-table th{
 <script language="JavaScript">
 var imgs=
 [
-"http://scp-wiki.wikidot.com/local--files/document-19-v-1911854/old4d.png",
-"http://scp-wiki.wikidot.com/local--files/document-19-v-1911854/snakehead.jpg",
-"http://scp-wiki.wikidot.com/local--files/document-19-v-1911854/statue1.jpg",
-"http://scp-wiki.wikidot.com/local--files/document-19-v-1911854/plant.jpg",
-"http://scp-wiki.wikidot.com/local--files/document-19-v-1911854/robot.jpg",
-"http://scp-wiki.wikidot.com/local--files/document-19-v-1911854/clockspiders.jpg"]
+"http://scp-wiki.wdfiles.com/local--files/scp-1-d6-j/old4d.png",
+"http://scp-wiki.wdfiles.com/local--files/scp-1-d6-j/snakehead.jpg",
+"http://scp-wiki.wdfiles.com/local--files/scp-1-d6-j/statue1.jpg",
+"http://scp-wiki.wdfiles.com/local--files/scp-1-d6-j/plant.jpg",
+"http://scp-wiki.wdfiles.com/local--files/scp-1-d6-j/robot.jpg",
+"http://scp-wiki.wdfiles.com/local--files/scp-1-d6-j/clockspiders.jpg"]
 var q = imgs.length;
 var which=Math.round(Math.random()*6);
 function show(){document.write("<img src=\""+imgs[which]+"\" alt=\"image\" class=\"image\" width=\"300px\">");}
