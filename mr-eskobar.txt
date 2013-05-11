@@ -164,4 +164,22 @@ module ListPages category="*" tags="featured"  order="created_by" separate="fa
 %%title_linked%% - [[user %%created_by%%]] - %%created_at%%
 [[/module]]
 
+[[module ListPages category="*" tags="safe" created_by="=" order="created_at" separate="false" perPage="50"]]
+
+||%%title_linked%% || Safe || rating: %%rating%%||
+
+[[/module]]
+
+[[module ListPages category="*" tags="euclid" created_by="=" order="created_at" separate="false" perPage="50"]]
+
+||%%title_linked%% || Euclid || rating: %%rating%%||
+
+[[/module]]
+
+[[module ListPages category="*" tags="keter" created_by="=" order="created_at" separate="false" perPage="50"]]
+
+||%%title_linked%% || Keter || rating: %%rating%%||
+
+[[/module]]
+
 [[/collapsible]]
