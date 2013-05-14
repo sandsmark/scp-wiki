@@ -11,6 +11,14 @@ This is a test page created to experiment with tag filters for Nala's parsing fu
 (These pages are in need of tags, as they lack any [[[Tag Guide|main tags]]] other than //orphaned//. Empty is good.)
 
 -----
+**Improperly deleted pages**:
+
+[[module ListPages separate="no" category="deleted" perPage="100"]]
+# %%title_linked%% - [[user %%created_by%%]] - %%created_at%%
+[[/module]]
+(Pages in the //deleted// category are ones that were "soft-deleted" by renaming them rather than being completely deleted. As this is contrary to site policy, these pages need to be properly deleted.)
+
+-----
 **Pages tagged as //orphaned//**:
 
 [[module ListPages separate="no" tags="orphaned" perPage="100"]]
