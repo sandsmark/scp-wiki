@@ -47,16 +47,6 @@ AWARD WINNING: Implemented by staff.
 # %%title_linked%% (rating: %%rating%%, comments: %%comments%%), by [[*user %%created_by%%]]
 [[/module]]
 [[/collapsible]]
-[[collapsible show="Highest Rated Numbered" hide="Hide"]]
-[[module ListPages rating=">15" order="ratingDesc" separate="false" limit="600" perPage="100"]]
-# %%title_linked%% (rating: %%rating%%, comments: %%comments%%)
-[[/module]]
-[[/collapsible]]
-[[collapsible show="Highest Rated Tales" hide="Hide"]]
-[[module ListPages order="ratingDesc" separate="false" perPage="30" limit="52" tags="+tale, -explained, -collaboration"]]
-# %%title_linked%% (+%%rating%%), [[*user %%created_by%%]]
-[[/module]]
-[[/collapsible]]
 [[collapsible show="SCPs Over X" hide="Hide"]]
 [[module CountPages rating=">100" tags="+scp"]]
 %%total%% SCPs over +100
@@ -123,37 +113,5 @@ AWARD WINNING: Implemented by staff.
 [[/div]]
 [[module ListPages rating="<-9" order="ratingAsc" separate="true" tags="-archived, -contest" perPage="100"]]
 * %%title_linked%%, (%%rating%%), created %%date|%r|agohover%%
-[[/module]]
-[[/collapsible]]
-[[collapsible show="Highest Rated Contest Tales" hide="Hide"]]
-++ The Antarctic Exchange
-[[*user Djoric]], [[*user Dmatix]], [[*user Azzleflux]], [[*user Zyn]]
-++ Broken Masquerade
-[[*user DrEverettMann]], [[*user murphy slaw]], [[*user Arlecchino]], [[*user Silberescher]]
-++ Children of the Sun
-[[*user Technician Downs]], [[*user Holbenilord]], [[*user Andaho]]
-++ Competitive Eschatology
-[[*user thedeadlymoose]], [[*user Dexanote]], [[*user Sophia Light]], [[*user Skara Brae]]
-++ The Man Who Wasn't There
-[[*user Drewbear]], [[*user DrBright]], [[*user tretter]], [[*user Cryogenchaos]]
-++ Only Game In Town
-[[*user Gaffney]], [[*user Pixeltasim]], [[*user Vivax]], [[*user Rumetzen]]
-++ Rat's Nest
-[[*user Faminepulse]], [[*user SoullessSingularity]], [[*user Freudian]], [[*user Rioghail]]
-++ Old Man in the Sea
-[[*user Mr Wilt]], [[*user Roget]], [[*user Snowshoe]], [[*user Wogglebug]]
-++ Doctors of the Church
-[[*user Smapti]], [[*user Anaxagoras]], [[*user Jekeled]], [[*user Reject]]
-++ Brass Hearts, Steel Dreams
-[[*user Sad Xiao]], [[*user Professor Sunshine]], [[*user Mr Orange]]
-++ The Coldest War
-[[*user vezaz]], [[*user Kalinin]], [[*user Scantron]], [[*user Salman Corbette]]
-++ Codename: Green King
-[[*user Eskobar]], [[*user Rain42]], [[*user Giant Enemy Spycrab]], [[*user JanitorialSnail]]
-++ Unfounded
-[[*user DrClef]], [[*user Fantem]], [[*user Photosynthetic]], [[*user Pig_Catapult]]
-----------
-[[module ListPages order="ratingDesc" separate="false" tags="+nyc2013, -hub" perPage="150"]]
-%%title_linked%%, %%rating%% ([[*user %%created_by%%]])
 [[/module]]
 [[/collapsible]]
