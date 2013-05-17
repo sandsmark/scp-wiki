@@ -75,44 +75,63 @@ Empty is good.
 [[/module]]
 [[/tab]]
 
-[[tab Location & City]]
-Empty is good.
-[[module ListPages category="." separate="no" tags="+location +city" perPage="100" order="name"]]
+[[tab Possible Tale Tags]]
+Already exist:
+**[/system:page-tags/tag/creepypasta creepypasta]**
+**[/system:page-tags/tag/tale tale]**
+----
+**[/system:page-tags/tag/action action]** - A significant portion of the Tale consists of "action scenes" like fights, car chases, etc. If you could envision the scene as part of a summer blockbuster action movie, it probably needs this tag.
+[[module ListPages category="." separate="no" tags="-" perPage="100" order="name" tags="action"]]
 # %%title_linked%% - [[user %%created_by%%]] - %%created_at%%
 [[/module]]
-[[/tab]]
-
-[[tab Location & Building]]
-Empty is good.
-[[module ListPages category="." separate="no" tags="+location +building" perPage="100" order="name"]]
+----
+**[/system:page-tags/tag/comedy comedy]** - Tale includes significant comedic elements. Someone cracking a single joke doesn't count.
+[[module ListPages category="." separate="no" tags="-" perPage="100" order="name" tags="comedy"]]
 # %%title_linked%% - [[user %%created_by%%]] - %%created_at%%
 [[/module]]
-[[/tab]]
-
-[[tab Location & Structure]]
-Empty is good.
-[[module ListPages category="." separate="no" tags="+location +structure" perPage="100" order="name"]]
+----
+**[/system:page-tags/tag/epistolary epistolary]** - Tale is primarily structured as a series of separate documents (letters, emails, memos, official reports, blog posts, etc.). Supercedes **report**.
+[[module ListPages category="." separate="no" tags="-" perPage="100" order="name" tags="epistolary"]]
 # %%title_linked%% - [[user %%created_by%%]] - %%created_at%%
 [[/module]]
-[[/tab]]
-
-[[tab Building & City]]
-Empty is good.
-[[module ListPages category="." separate="no" tags="+building +city" perPage="100" order="name"]]
+----
+**[/system:page-tags/tag/conversation conversation]** - Tale is or primarily consists of a conversation between at least 2 characters. Little to no action or plot involved. Contrast with **monologue**.
+[[module ListPages category="." separate="no" tags="-" perPage="100" order="name" tags="conversation"]]
 # %%title_linked%% - [[user %%created_by%%]] - %%created_at%%
 [[/module]]
-[[/tab]]
-
-[[tab Building & Structure]]
-Empty is good.
-[[module ListPages category="." separate="no" tags="+building +structure" perPage="100" order="name"]]
+----
+**[/system:page-tags/tag/fable fable]** - Tale is structured in the format of a myth, fable, fairy tale, or "old wives tale". Supercedes **snippet** and **story**.
+[[module ListPages category="." separate="no" tags="-" perPage="100" order="name" tags="fable"]]
 # %%title_linked%% - [[user %%created_by%%]] - %%created_at%%
 [[/module]]
-[[/tab]]
-
-[[tab City & Structure]]
-Empty is good.
-[[module ListPages category="." separate="no" tags="+city +structure" perPage="100" order="name"]]
+----
+**[/system:page-tags/tag/monologue monologue]** - Tale is primarily structured as a first-person monologue in which the narrator is telling the Tale to an audience. Contrast with **conversation**.
+[[module ListPages category="." separate="no" tags="-" perPage="100" order="name" tags="monologue"]]
+# %%title_linked%% - [[user %%created_by%%]] - %%created_at%%
+[[/module]]
+----
+**[/system:page-tags/tag/poem poem]** - Tale is or significantly includes a poem or poetry as part of the Tale.
+[[module ListPages category="." separate="no" tags="-" perPage="100" order="name" tags="poem"]]
+# %%title_linked%% - [[user %%created_by%%]] - %%created_at%%
+[[/module]]
+----
+**[/system:page-tags/tag/report report]** - a significant portion of the Tale consists of an official scientific, journalistic, governmental or military report, document or transcript. Generally consists of only a single document, report, transcript or letter. Do not use the SCP tags **document** or **interview**. Superceded by **epistolary**.
+[[module ListPages category="." separate="no" tags="-" perPage="100" order="name" tags="report"]]
+# %%title_linked%% - [[user %%created_by%%]] - %%created_at%%
+[[/module]]
+----
+**[/system:page-tags/tag/romance romance]** - A significant portion of the Tale is centered around a romantic relationship. Mentioning that one of the characters is going on a date doesn't count, unless that date or romantic partner is significantly involved or described in the story.
+[[module ListPages category="." separate="no" tags="-" perPage="100" order="name" tags="romance"]]
+# %%title_linked%% - [[user %%created_by%%]] - %%created_at%%
+[[/module]]
+----
+**[/system:page-tags/tag/snippet snippet]** - The Tale is a (usually) short narrative work involving a limited or absent plot, a limited or absent setting, and a small number of active characters, if any. Not to be used with **story**.
+[[module ListPages category="." separate="no" tags="-" perPage="100" order="name" tags="snippet"]]
+# %%title_linked%% - [[user %%created_by%%]] - %%created_at%%
+[[/module]]
+----
+**[/system:page-tags/tag/story story]** - Tale is a complete story involving a [http://en.wikipedia.org/wiki/Plot_(narrative) plot], a well-established [http://en.wikipedia.org/wiki/Setting_(narrative) setting], at least one participating [http://en.wikipedia.org/wiki/Character_(arts) character], and usually some sort of [http://en.wikipedia.org/wiki/Conflict_(narrative) conflict] (resolution of the conflict is not necessarily part of the story). Not to be used with **snippet**.
+[[module ListPages category="." separate="no" tags="-" perPage="100" order="name" tags="story"]]
 # %%title_linked%% - [[user %%created_by%%]] - %%created_at%%
 [[/module]]
 [[/tab]]
