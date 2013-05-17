@@ -80,17 +80,17 @@ Already exist:
 **[/system:page-tags/tag/creepypasta creepypasta]**
 **[/system:page-tags/tag/tale tale]**
 ----
-**[/system:page-tags/tag/action action]** - A significant portion of the Tale consists of "action scenes" like fights, car chases, etc. If you could envision the scene as part of a summer blockbuster action movie, it probably needs this tag.
+--**[/system:page-tags/tag/action action]** - A significant portion of the Tale consists of "action scenes" like fights, car chases, etc. If you could envision the scene as part of a summer blockbuster action movie, it probably needs this tag.-- //Genre tagging would be too subjective.//
 [[module ListPages category="." separate="no" tags="-" perPage="100" order="name" tags="action"]]
-# %%title_linked%% - [[user %%created_by%%]] - %%created_at%%
+--# %%title_linked%% - [[user %%created_by%%]] - %%created_at%%--
 [[/module]]
 ----
-**[/system:page-tags/tag/comedy comedy]** - Tale includes significant comedic elements. Someone cracking a single joke doesn't count.
+--**[/system:page-tags/tag/comedy comedy]** - Tale includes significant comedic elements. Someone cracking a single joke doesn't count.-- //Genre tagging would be too subjective.//
 [[module ListPages category="." separate="no" tags="-" perPage="100" order="name" tags="comedy"]]
-# %%title_linked%% - [[user %%created_by%%]] - %%created_at%%
+--# %%title_linked%% - [[user %%created_by%%]] - %%created_at%%--
 [[/module]]
 ----
-**[/system:page-tags/tag/epistolary epistolary]** - Tale is primarily structured as a series of separate documents (letters, emails, memos, official reports, blog posts, etc.). Supercedes **report**.
+**[/system:page-tags/tag/epistolary epistolary]** - Tale is primarily structured as a series of separate documents (letters, emails, memos, official reports, blog posts, etc.). --Supercedes **report**.-- //Eliminating **report** tag.//
 [[module ListPages category="." separate="no" tags="-" perPage="100" order="name" tags="epistolary"]]
 # %%title_linked%% - [[user %%created_by%%]] - %%created_at%%
 [[/module]]
@@ -100,7 +100,7 @@ Already exist:
 # %%title_linked%% - [[user %%created_by%%]] - %%created_at%%
 [[/module]]
 ----
-**[/system:page-tags/tag/fable fable]** - Tale is structured in the format of a myth, fable, fairy tale, or "old wives tale". Supercedes **snippet** and **story**.
+**[/system:page-tags/tag/fable fable]** - Tale is structured in the format of a myth, fable, fairy tale, or "old wives tale". Supercedes --**snippet** and-- **story**. //Eliminating **snippet** tag.//
 [[module ListPages category="." separate="no" tags="-" perPage="100" order="name" tags="fable"]]
 # %%title_linked%% - [[user %%created_by%%]] - %%created_at%%
 [[/module]]
@@ -115,22 +115,22 @@ Already exist:
 # %%title_linked%% - [[user %%created_by%%]] - %%created_at%%
 [[/module]]
 ----
-**[/system:page-tags/tag/report report]** - a significant portion of the Tale consists of an official scientific, journalistic, governmental or military report, document or transcript. Generally consists of only a single document, report, transcript or letter. Do not use the SCP tags **document** or **interview**. Superceded by **epistolary**.
+--**[/system:page-tags/tag/report report]** - a significant portion of the Tale consists of an official scientific, journalistic, governmental or military report, document or transcript. Generally consists of only a single document, report, transcript or letter. Do not use the SCP tags **document** or **interview**. Superceded by **epistolary**.-- //Doesn't make sense to have a difference between a single document and multiple documents.//
 [[module ListPages category="." separate="no" tags="-" perPage="100" order="name" tags="report"]]
-# %%title_linked%% - [[user %%created_by%%]] - %%created_at%%
+--# %%title_linked%% - [[user %%created_by%%]] - %%created_at%%--
 [[/module]]
 ----
-**[/system:page-tags/tag/romance romance]** - A significant portion of the Tale is centered around a romantic relationship. Mentioning that one of the characters is going on a date doesn't count, unless that date or romantic partner is significantly involved or described in the story.
+--**[/system:page-tags/tag/romance romance]** - A significant portion of the Tale is centered around a romantic relationship. Mentioning that one of the characters is going on a date doesn't count, unless that date or romantic partner is significantly involved or described in the story.-- //Genre tagging would be too subjective.//
 [[module ListPages category="." separate="no" tags="-" perPage="100" order="name" tags="romance"]]
-# %%title_linked%% - [[user %%created_by%%]] - %%created_at%%
+--# %%title_linked%% - [[user %%created_by%%]] - %%created_at%%--
 [[/module]]
 ----
-**[/system:page-tags/tag/snippet snippet]** - The Tale is a (usually) short narrative work involving a limited or absent plot, a limited or absent setting, and a small number of active characters, if any. Not to be used with **story**.
+--**[/system:page-tags/tag/snippet snippet]** - The Tale is a (usually) short narrative work involving a limited or absent plot, a limited or absent setting, and a small number of active characters, if any. Not to be used with **story**.-- //Too confusing and subjective to differentiate from **story**.//
 [[module ListPages category="." separate="no" tags="-" perPage="100" order="name" tags="snippet"]]
-# %%title_linked%% - [[user %%created_by%%]] - %%created_at%%
+--# %%title_linked%% - [[user %%created_by%%]] - %%created_at%%--
 [[/module]]
 ----
-**[/system:page-tags/tag/story story]** - Tale is a complete story involving a [http://en.wikipedia.org/wiki/Plot_(narrative) plot], a well-established [http://en.wikipedia.org/wiki/Setting_(narrative) setting], at least one participating [http://en.wikipedia.org/wiki/Character_(arts) character], and usually some sort of [http://en.wikipedia.org/wiki/Conflict_(narrative) conflict] (resolution of the conflict is not necessarily part of the story). Not to be used with **snippet**.
+**[/system:page-tags/tag/story story]** - Tale is a complete story involving a [http://en.wikipedia.org/wiki/Plot_(narrative) plot], a well-established [http://en.wikipedia.org/wiki/Setting_(narrative) setting], at least one participating [http://en.wikipedia.org/wiki/Character_(arts) character], and usually some sort of [http://en.wikipedia.org/wiki/Conflict_(narrative) conflict] (resolution of the conflict is not necessarily part of the story). --Not to be used with **snippet**.-- Compare to **poem** and **monologue**. //Eliminating **snippet** tag.//
 [[module ListPages category="." separate="no" tags="-" perPage="100" order="name" tags="story"]]
 # %%title_linked%% - [[user %%created_by%%]] - %%created_at%%
 [[/module]]
