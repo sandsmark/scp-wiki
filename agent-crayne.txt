@@ -53,7 +53,7 @@ Subject does not work well with others due to a severe case of being a total bas
     [[cell]]What A Dummy[[/cell]]
     [[cell]]
     	[[collapsible show="+ Level 4 Security Clearance required" hide="- Level 4 Security Clearance required"]]
-    	My first article for the wiki. I'm not sure how I came by the concept, but the visual I was working from was that of an engineer looking on from a control room as the latest model from car manufacturer X was tested in a frontal crash scenario. As the car hit the mark and the dummy inside was crushed by the steering column, he felt his legs twist, snap, break and crush beneath him. As [[user bbaztek]] later commented, the dummy would be a torturer's wet dream.
+    	My first article for the wiki. I'm not sure how I came by the concept, but the visual I was working from was that of an engineer looking on from a control room as the latest model from car manufacturer X was tested in a frontal crash scenario. As the car hit the mark and the dummy inside was crushed by the steering column, he felt his legs twist en snap, break and crush beneath him. As [[user bbaztek]] later commented, the dummy would be a torturer's wet dream.
     	[[/collapsible]]
     [[/cell]]	
 [[/row]]
@@ -120,6 +120,35 @@ Subject does not work well with others due to a severe case of being a total bas
 
 [[/table]]
 
+**Objects and entities recovered by Agent Crayne - DECOMMISSIONED:**
+
+[[table]]
+
+[[row]]
+    [[cell style="width: 100px;"]]**Former designation**[[/cell]]
+    [[cell]]**Title**[[/cell]]
+    [[cell style="width: 600px;"]]**Notes**[[/cell]]
+[[/row]]
+
+[[row style="vertical-align: top"]]
+    [[cell]][[[SCP-1354]]][[/cell]]
+    [[cell]]The Ghostwriter Delusion[[/cell]]
+    [[cell]]
+        	[[collapsible show="+ Level 4 Security Clearance required" hide="- Level 4 Security Clearance required"]]
+    	Where to begin? After a year off from the site due to my wife's problematic pregnancy and other real-world concerns, I decided to try my hand at another article. Shouldn't have done that. Or at least, shouldn't have done that in the way I did it. To wit:
+# write it up in a day
+# post it at the end of said day because I wanted it out there
+# work on the basis of a compulsion
+# flaunt my blatant ineptitude at expungement
+# use a concept already done better by another SCP
+
+    	Kind of a recipe for getting your shit tanked. Anyway, it was inevitable I'd earn my first casualty sooner or later. This was it.
+    	[[/collapsible]]
+    [[/cell]]		
+[[/row]]
+
+[[/table]]
+
 **Entries for the Foundation Employee Creative Writing Pool:**
 
 [[table]]
@@ -130,7 +159,7 @@ Subject does not work well with others due to a severe case of being a total bas
 
 [[row style="vertical-align: top"]]
     [[cell]] [[[the-longest-ride|The Longest Ride]]][[/cell]]
-    [[cell]]A story about what happens when you absolutely, positively need to have a package delivered first thing in the morning. Especially if it has to be delivered to a certain party with a three-letter abbreviation.[[/cell]]
+    [[cell]]A story about what happens when you absolute, positively need to have a package delivered first thing in the morning. Especially if it has to be delivered to a certain party with a three-letter abbreviation.[[/cell]]
 [[/row]]
 
 [!--
@@ -251,6 +280,13 @@ function doAction()
      {
     
      returnMessage = "Wasn't there for the actual recovery, but from what I hear the guy up in that cabin was a total survivalist conspiracy nut. Like Jimmy. But don't tell Jimmy, he'll just get riled up.";
+    
+     }
+
+     if (keyword == "SCP-1354" || keyword == "1354")
+     {
+    
+     returnMessage = "We found this in some Russian guy's closet. He kept yelling at us in that weird language of theirs. No idea what he was saying though. He didn't seem to like me typing out 'All work and no play makes Jack a dull boy' over and over again.";
     
      }
     
