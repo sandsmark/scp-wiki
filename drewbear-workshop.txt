@@ -136,27 +136,19 @@ Already exist:
 [[/module]]
 [[/tab]]
 
-[[tab Tale stuff]]
+[[tab Low-Rated Tales]]
 Lowest Rated
 [[module ListPages order="ratingAsc" limit="100" tags="tale" rating="<1" separate="no" perPage="100"]]
 %%title_linked%% ##777|(Rating: %%rating%%, Comments: %%comments%%)##
 [[/module]]
-----
-Total Mainlist entries
-[[module Countpages tags="+scp -archived -joke -explained -decommissioned" rating=">-1"]]
-%%total%%
-[[/module]]
-[[/tab]]
-
-[[tab Orphaned & Wanted]]
-Orphaned Pages
-[[module OrphanedPages]]
-----
-Dead Links
-[[module WantedPages]]
 [[/tab]]
 
 [[/tabview]]
+----
+Total non-negative Mainlist entries 
+[[module Countpages tags="+scp -archived -joke -explained -decommissioned" rating=">-1"]]
+%%total%%
+[[/module]]
 ----
 [[collapsible show="A New Challenger Appears!" hide="K.O.!!!!"]]
 List of challenge threads that I've seen (alphabetical):
