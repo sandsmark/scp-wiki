@@ -137,8 +137,8 @@ Already exist:
 [[/tab]]
 
 [[tab Low-Rated Tales]]
-Lowest Rated
-[[module ListPages order="ratingAsc" limit="100" tags="tale" rating="<1" separate="no" perPage="100"]]
+Lowest Rated (under +5)
+[[module ListPages order="ratingAsc" limit="100" tags="tale -archived" rating="<5" separate="no" perPage="100"]]
 %%title_linked%% ##777|(Rating: %%rating%%, Comments: %%comments%%)##
 [[/module]]
 [[/tab]]
