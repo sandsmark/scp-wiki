@@ -46,6 +46,16 @@ Subject does not work well with others due to a severe case of being a total bas
     [[/cell]]
 [[/row]]
 
+[[row style="vertical-align: top"]]
+    [[cell]][[[SCP-366]]][[/cell]]
+    [[cell]]Carriage Grubs[[/cell]]
+    [[cell]]
+    	[[collapsible show="+ Level 4 Security Clearance required" hide="- Level 4 Security Clearance required"]]
+    	Another rewrite. I struggled with finding a hook for this one. The original article was plausible though only remotely so, and lacked any real anomalous content so I had to come up with something. In the end I got this idea about an alien species using earth and the human race as its womb. It "ejaculates" fertilized eggs down to earth, which incubate in both male and female human beings until they are mature and then get birthed
+    	[[/collapsible]]
+    [[/cell]]		
+[[/row]]
+
 [[row]][[cell]][[/cell]][[cell]][[/cell]][[/row]]
 
 [[row style="vertical-align: top"]]
@@ -283,10 +293,17 @@ function doAction()
     
      }
 
+     if (keyword == "SCP-366" || keyword == "366")
+     {
+    
+     returnMessage = "I assisted on this one when we first got wind of these things. Trust me, you do not want to see some poor kid's nutsack explode in a shower of fucking oversized maggots. I don't think I managed to keep anything down for a couple of days...";
+    
+     }
+
      if (keyword == "SCP-1354" || keyword == "1354")
      {
     
-     returnMessage = "We found this in some Russian guy's closet. He kept yelling at us in that weird language of theirs. No idea what he was saying though. He didn't seem to like me typing out 'All work and no play makes Jack a dull boy' over and over again.";
+     returnMessage = "We found this in some Russian guy's closet. He kept yelling at us in that weird language of theirs. No idea what he was saying though. He didn't seem to like me typing out 'All work and no play makes Jack a dull boy' over and over again .";
     
      }
     
