@@ -451,6 +451,18 @@ This is mainly to draw attention to those non-SCP articles whose ratings are in 
 [[/module]]
 [[/tab]]
 
+[[tab Below 20]]
+[[module ListPages order="ratingAsc" limit="100" tags="-scp" rating="<20" separate="no" perPage="100"]]
+%%title_linked%% ##777|(Rating: %%rating%%, Comments: %%comments%%)##
+[[/module]]
+[[/tab]]
+
+[[tab Below 30]]
+[[module ListPages order="ratingAsc" limit="100" tags="-scp" rating="<30" separate="no" perPage="100"]]
+%%title_linked%% ##777|(Rating: %%rating%%, Comments: %%comments%%)##
+[[/module]]
+[[/tab]]
+
 [[tab All non-SCPs]]
 [[module ListPages category="-scp -nav -decomm -system -forum -migration -admin -random -search" tags="-scp -author -contest -sandbox -hub -project -guide -splash -scp-fuel -admin -archived" rating="<10" order="rating" separate="false" perPage="50"]]
 || %%title_linked%% || Rating: %%rating%% || Comments: %%comments%% || Created %%created_at%% || 
