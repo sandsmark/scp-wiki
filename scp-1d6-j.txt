@@ -39,7 +39,7 @@ var imgs=
 "http://scp-wiki.wdfiles.com/local--files/scp-1d6-j/robot.jpg",
 "http://scp-wiki.wdfiles.com/local--files/scp-1d6-j/clockspiders.jpg"]
 var q = imgs.length;
-var which=Math.round(Math.random()*6);
+var which=Math.round(Math.random()*5);
 function show(){document.write("<img src=\""+imgs[which]+"\" alt=\"image\" class=\"image\" width=\"300px\">");}
 show();
 </script></td>
