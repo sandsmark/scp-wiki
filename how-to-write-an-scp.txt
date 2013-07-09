@@ -172,9 +172,7 @@ These are some of the most common formatting styles used:  
 > @@[http://en.wikipedia.org/wiki/Main_Page External links]@@ -> [http://en.wikipedia.org/wiki/Main_Page External links]
 > ██████ or (U+2588, FULL BLOCK) -> Black boxes for hiding blanking information (copy and paste); alternatively, use [ALT]+219 to get the same character. 
 
-
 A complete list of supported formats and how to get them to show up can be found on the [http://www.wikidot.com/doc:wiki-syntax Wiki Syntax] page. You can also find many commands available in buttons above the editting module.
-
 
 ++ Rating Modules
 Place a rating module on every page you create. The individual code for one is shown here:
@@ -243,6 +241,14 @@ Use this code:
 [[/collapsible]]
 [[/code]]
 
+++ Footnotes
+Footnotes can be used to put additional information into an article without breaking the flow of the text. To get an effect like this:
+
+Text.[[footnote]][Your text][[/footnote]]
+
+[[code]]
+[[footnote]][Your text][[/footnote]]
+[[/code]]
 [[/tab]]
 
 [[tab Templates]]
