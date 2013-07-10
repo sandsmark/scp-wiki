@@ -1,0 +1,119 @@
+title:Roget's Workbench
+Since mod type people are allowed to have a workbench, I can finally move this crap off my author page. YAY MODULES
+
+
+[[tabview]]
+[[tab Lowest Rated Stuff's]]
+[[module ListPages order="ratingAsc" limit="100" tags="-scp" rating="<-0" separate="no" perPage="100"]]
+%%title_linked%% ##777|(Rating: %%rating%%, Comments: %%comments%%)##
+[[/module]]
+[[/tab]]
+
+[[tab Single Digit SCP's]]
+[[module ListPages category="*" tags="scp -archived -decommissioned -contest" rating="<10" order="rating" separate="false" perPage="50"]]
+%%title_linked%% (rating: %%rating%%, comments: %%comments%%, created: %%created_at%%)
+[[/module]]
+[[/tab]]
+
+
+[[tab More stuff]]
+[[module ListPages order="ratingAsc" limit="400" tags="-scp" rating="<30" separate="no" perPage="100"]]
+%%title_linked%% ##777|(Rating: %%rating%%, Comments: %%comments%%)##
+[[/module]]
+[[/tab]]
+
+[[tab All non-SCPs]]
+[[module ListPages category="-scp -nav -decomm -system -forum -migration -admin -random -search" tags="-scp -author -contest -sandbox -hub -project -guide -splash -scp-fuel -admin -archived" rating="<10" order="rating" separate="false" perPage="50"]]
+|| %%title_linked%% || Rating: %%rating%% || Comments: %%comments%% || Created %%created_at%% || 
+[[/module]]
+[[/tab]]
+
+[[tab Tales Only]]
+[[module ListPages category="-nav -decomm -system -forum -migration -admin -random -search" tags="-scp -author -contest -sandbox -hub -project -guide -splash -scp-fuel -admin -archived tale" rating="<10" order="rating" separate="false" perPage="50"]]
+|| %%title_linked%% || Rating: %%rating%% || Comments: %%comments%% || Created %%created_at%% || 
+[[/module]]
+[[/tab]]
+
+[[tab Supplements only]]
+[[module ListPages category="-nav -decomm -system -forum -migration -admin -random -search" tags="-scp -author -contest -sandbox -hub -project -guide -splash -scp-fuel -admin -archived supplement" rating="<10" order="rating" separate="false" perPage="50"]]
+|| %%title_linked%% || Rating: %%rating%% || Comments: %%comments%% || Created %%created_at%% || 
+[[/module]]
+[[/tab]]
+
+[[tab Other]]
+[[module ListPages category="-nav -decomm -system -forum -migration -admin -random -search" tags="-scp -author -contest -sandbox -hub -project -guide -splash -scp-fuel -admin -archived -tale -supplement" rating="<10" order="rating" separate="false" perPage="50"]]
+|| %%title_linked%% || Rating: %%rating%% || Comments: %%comments%% || Created %%created_at%% || 
+[[/module]]
+[[/tab]]
+[[tab listpages]]
+[[Module ListPages order = "DESC Rating" separate = "Yes"]] 
+%%title_linked%%
+[[/module]]
+[[/tab]]
+[[tab Some stuff]]
+Recently Created Table
+[[module ListPages order="created_at desc" separate="false" limit="60" perPage="20"]]
+|| %%title_linked%% || Rating: %%rating%% || [[*user %%created_by%%]] || %%comments%% comments ||
+[[/module]]
+
+----------------
+
+Top rated this month
+[[module ListPages order="ratingDesc" separate="false" created_at="last 1 month" perPage="30" limit="90" tags="+scp" "+author" "+tale" "+collaboration" "+guide" "+hub" "+essay" rating=">0"]]
+# %%title_linked%% (rating: %%rating%%, comments: %%comments%%), by [[*user %%created_by%%]]
+[[/module]]
+
+----------------
+
+Entries Over X
+[[module CountPages rating=">100" tags="+scp"]]
+%%total%% entries over +10
+[[/module]]
+[[module CountPages rating=">90" tags="+scp"]]
+%%total%% entries over +9
+[[/module]]
+[[module CountPages rating=">80" tags="+scp"]]
+%%total%% entries over +80
+[[/module]]
+[[module CountPages rating=">70" tags="+scp"]]
+%%total%% entries over +70
+[[/module]]
+[[module CountPages rating=">60" tags="+scp"]]
+%%total%% entries over +60
+[[/module]]
+[[module CountPages rating=">50" tags="+scp"]]
+%%total%% entries over +50
+[[/module]]
+[[module CountPages rating=">40" tags="+scp"]]
+%%total%% entries over +40
+[[/module]]
+[[module CountPages rating=">30" tags="+scp"]]
+%%total%% entries over +30
+[[/module]]
+[[module CountPages rating=">30" tags="+scp"]]
+%%total%% entries over +20
+[[/module]]
+[[module CountPages rating=">10" tags="+scp"]]
+%%total%% entries over +10
+[[/module]]
+[[/module]]
+
+---------------
+
+[[div style="float:left; width:30%; padding:1%;"]]
++++ Recent topics
+[[module MiniRecentThreads limit="5"]]
+[[/div]]
+
+[[div style="float:left; width:30%; padding:1%;"]]
++++ Most active topics (last week)
+[[module MiniActiveThreads limit="5"]]
+[[/div]]
+
+[[div style="float:left; width:30%; padding:1%;"]]
++++ Recent posts ([[[forum:recent-posts|+more]]])
+[[module MiniRecentPosts limit="2"]]
+[[/div]]
+[[/tab]]
+[[/tabview]]
+[[/collapsible]]
