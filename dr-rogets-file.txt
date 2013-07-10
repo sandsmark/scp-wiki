@@ -17,7 +17,7 @@ title:Dr. Roget's Personnel File
 
 **Current Location:** {{Site-77}}
 
-**History:** {{Dr. Roget has been working in clerical positions within the Foundation for 17 years now. You think one day he would get a real project, or something with at least //marginal// importance. But nooooo, he gets to keep doing clerical work because he's "so darn good at it." He asks for basic, simple promotions and they say "Yeah, sure thing." Then they force him to make the schedule. Pity poor Roget. He does all the work around this place, but not one person from Site 77 respects his amazing talent. Those bums.}}
+**History:** {{Dr. Roget has been working in [[[Roget-s-workbench| clerical]]] positions within the Foundation for 17 years now. You think one day he would get a real project, or something with at least //marginal// importance. But nooooo, he gets to keep doing clerical work because he's "so darn good at it." He asks for basic, simple promotions and they say "Yeah, sure thing." Then they force him to make the schedule. Pity poor Roget. He does all the work around this place, but not one person from Site 77 respects his amazing talent. Those bums.}}
 
 //**//NOTE//**//
 //Doctor, this is both very immature and the wrong way to format your personnel file. Please redo it so I can submit it to the network properly.//
@@ -437,56 +437,3 @@ Well, when I was a kid, I had a very active imagination, and would make little c
 
 [[/tab]]
 [[/tabview]]
-
-[[collapsible show="Workbench" hide="( ͡° ͜ʖ ͡°)"]]
-This is mainly to draw attention to those non-SCP articles whose ratings are in the single digits, since the ones below zero are already in the [[[Lowest Rated Pages]]].
-[[tabview]]
-[[tab Lowest Rated Stuff's]]
-[[module ListPages order="ratingAsc" limit="100" tags="-scp" rating="<-0" separate="no" perPage="100"]]
-%%title_linked%% ##777|(Rating: %%rating%%, Comments: %%comments%%)##
-[[/module]]
-[[/tab]]
-
-[[tab Single Digit SCP's]]
-[[module ListPages category="*" tags="scp -archived -decommissioned -contest" rating="<10" order="rating" separate="false" perPage="50"]]
-%%title_linked%% (rating: %%rating%%, comments: %%comments%%, created: %%created_at%%)
-[[/module]]
-[[/tab]]
-
-
-[[tab Lookit these for review ideas]]
-[[module ListPages order="ratingAsc" limit="400" tags="-scp" rating="<30" separate="no" perPage="100"]]
-%%title_linked%% ##777|(Rating: %%rating%%, Comments: %%comments%%)##
-[[/module]]
-[[/tab]]
-
-[[tab All non-SCPs]]
-[[module ListPages category="-scp -nav -decomm -system -forum -migration -admin -random -search" tags="-scp -author -contest -sandbox -hub -project -guide -splash -scp-fuel -admin -archived" rating="<10" order="rating" separate="false" perPage="50"]]
-|| %%title_linked%% || Rating: %%rating%% || Comments: %%comments%% || Created %%created_at%% || 
-[[/module]]
-[[/tab]]
-
-[[tab Tales Only]]
-[[module ListPages category="-nav -decomm -system -forum -migration -admin -random -search" tags="-scp -author -contest -sandbox -hub -project -guide -splash -scp-fuel -admin -archived tale" rating="<10" order="rating" separate="false" perPage="50"]]
-|| %%title_linked%% || Rating: %%rating%% || Comments: %%comments%% || Created %%created_at%% || 
-[[/module]]
-[[/tab]]
-
-[[tab Supplements only]]
-[[module ListPages category="-nav -decomm -system -forum -migration -admin -random -search" tags="-scp -author -contest -sandbox -hub -project -guide -splash -scp-fuel -admin -archived supplement" rating="<10" order="rating" separate="false" perPage="50"]]
-|| %%title_linked%% || Rating: %%rating%% || Comments: %%comments%% || Created %%created_at%% || 
-[[/module]]
-[[/tab]]
-
-[[tab Other]]
-[[module ListPages category="-nav -decomm -system -forum -migration -admin -random -search" tags="-scp -author -contest -sandbox -hub -project -guide -splash -scp-fuel -admin -archived -tale -supplement" rating="<10" order="rating" separate="false" perPage="50"]]
-|| %%title_linked%% || Rating: %%rating%% || Comments: %%comments%% || Created %%created_at%% || 
-[[/module]]
-[[/tab]]
-[[tab listpages]]
-[[Module ListPages order = "DESC Rating" separate = "Yes"]] 
-%%title_linked%%
-[[/module]]
-[[/tab]]
-[[/tabview]]
-[[/collapsible]]
