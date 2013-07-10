@@ -116,8 +116,8 @@ Entries Over X
 [[/div]]
 [[/tab]]
 [[tab Page Calender]]
-[[module PageCalendar category="scp"]]
-[[module ListPages category="scp" perPage="100" date="@URL" separate="false" prependLine="||~ Page||~ Date created||~ Created by ||"]]
+[[module PageCalendar category="_default"]]
+[[module ListPages category="_default"tags="+scp" "+tale" perPage="100" date="@URL" separate="false" prependLine="||~ Page||~ Date created||~ Created by ||"]]
 || %%linked_title%% || %%date%% || %%author%% ||
 [[/module]]
 [[/tab]]
