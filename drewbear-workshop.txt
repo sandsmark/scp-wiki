@@ -145,9 +145,14 @@ Lowest Rated (under +5)
 
 [[/tabview]]
 ----
-Total non-negative Mainlist entries 
+[[module Countpages tags="+scp -archived -joke -explained -decommissioned"]]
+Total Mainlist entries: %%total%%
+[[/module]]
 [[module Countpages tags="+scp -archived -joke -explained -decommissioned" rating=">-1"]]
-%%total%%
+Total non-negative Mainlist entries: %%total%%
+[[/module]]
+[[module Countpages tags="+scp -archived -joke -explained -decommissioned" rating=">0"]]
+Total positive Mainlist entries: %%total%%
 [[/module]]
 ----
 [[collapsible show="A New Challenger Appears!" hide="K.O.!!!!"]]
