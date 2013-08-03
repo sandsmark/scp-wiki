@@ -1,5 +1,4 @@
 title:Lowest Rated Articles
-parent:lowest-rated-pages
 This is mainly to draw attention to those non-SCP articles whose ratings are in the single digits, since the ones below zero are already in the [[[Lowest Rated Pages]]].
 
 [[tabview]]
@@ -9,7 +8,7 @@ This is mainly to draw attention to those non-SCP articles whose ratings are in 
 [[/module]]
 [[/tab]]
 [[tab Tales only]]
-[[module ListPages category="-nav -decomm -system -forum -migration -admin -random -search -chat" tags="-scp -author -contest -sandbox -hub -project -guide -splash -scp-fuel -admin -archived tale" rating="<10" order="rating" separate="false" perPage="50" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Creation date ||"]]
+[[module ListPages category="-nav -decomm -system -forum -migration -admin -random -search -chat" tags="-scp -author -contest -tc2013 -sandbox -hub -project -guide -splash -scp-fuel -admin -archived tale" rating="<10" order="rating" separate="false" perPage="50" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Creation date ||"]]
 || %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || 
 [[/module]]
 [[/tab]]
@@ -24,7 +23,7 @@ This is mainly to draw attention to those non-SCP articles whose ratings are in 
 [[/module]]
 [[/tab]]
 [[tab Tales (chronological)]]
-[[module ListPages category="-nav -decomm -system -forum -migration -admin -random -search -chat" tags="-scp -author -contest -sandbox -hub -project -guide -splash -scp-fuel -admin -archived tale" rating="<10" order="created_at desc" separate="false" perPage="50" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Creation date ||"]]
+[[module ListPages category="-nav -decomm -system -forum -migration -admin -random -search -chat" tags="-scp -author -contest -sandbox -hub -project -guide -splash -scp-fuel -admin -archived -tc2013 tale" rating="<10" order="created_at desc" separate="false" perPage="50" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Creation date ||"]]
 || %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || 
 [[/module]]
 [[/tab]]
