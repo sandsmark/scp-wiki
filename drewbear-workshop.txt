@@ -145,14 +145,14 @@ Lowest Rated (under +5)
 
 [[/tabview]]
 ----
-[[module Countpages tags="+scp -archived -joke -explained -decommissioned"]]
-Total Mainlist entries: %%total%%
+[[module Countpages parent="-" tags="+scp -archived -joke -explained -decommissioned"]]
+Total Mainlist entries (excluding 001 proposals): %%total%%
 [[/module]]
-[[module Countpages tags="+scp -archived -joke -explained -decommissioned" rating=">-1"]]
-Total non-negative Mainlist entries: %%total%%
+[[module Countpages parent="-" tags="+scp -archived -joke -explained -decommissioned" rating=">-1"]]
+Total non-negative Mainlist entries (excluding 001 proposals): %%total%%
 [[/module]]
-[[module Countpages tags="+scp -archived -joke -explained -decommissioned" rating=">0"]]
-Total positive Mainlist entries: %%total%%
+[[module Countpages parent="-" tags="+scp -archived -joke -explained -decommissioned" rating=">0"]]
+Total positive Mainlist entries (excluding 001 proposals): %%total%%
 [[/module]]
 ----
 [[collapsible show="A New Challenger Appears!" hide="K.O.!!!!"]]
