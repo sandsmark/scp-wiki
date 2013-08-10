@@ -442,7 +442,21 @@ Please say you shed a tear
 [[/tab]]
 [[/tabview]]
 
-Pages at +100:
+Pages at +100 (go congratulate them!):
 [[module ListPages rating="100" separate="no"]]
 %%title_linked%%
 [[/module]]
+
+----
+
+[[collapsible show="Pages above +100 and created in 2008 or 2009:" hide="Click to hide."]]
+[[module ListPages tags="scp" rating=">100" created_at="<2010" separate="false" perPage="100" prependLine="||~ Title ||~ Rating ||~ Creation date ||"]]
+|| %%title_linked%% || %%rating%% || %%created_at%% || 
+[[/module]]
+[[/collapsible]]
+
+[[collapsible show="Pages above median rating and created in 2008 or 2009:" hide="Click to hide."]]
+[[module ListPages tags="scp" rating=">53" created_at="<2010" order="rating" separate="false" perPage="100" prependLine="||~ Title ||~ Rating ||~ Creation date ||"]]
+|| %%title_linked%% || %%rating%% || %%created_at%% || 
+[[/module]]
+[[/collapsible]]
