@@ -460,3 +460,11 @@ Pages at +100 (go congratulate them!):
 || %%title_linked%% || %%rating%% || %%created_at%% || 
 [[/module]]
 [[/collapsible]]
+
+----
+
+[[collapsible show="Rated -10 or below" hide="Click to hide."]]
+[[module ListPages tags="-archived -author -tc2013" rating="<-9" order="rating" separate="false" perPage="100" prependLine="||~ Title ||~ Rating ||~ Creation date ||"]]
+|| %%title_linked%% || %%rating%% || %%created_at%% || 
+[[/module]]
+[[/collapsible]]
