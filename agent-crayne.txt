@@ -49,6 +49,18 @@ Subject does not work well with others due to a severe case of being a total bas
 [[row]][[cell]][[/cell]][[cell]][[/cell]][[/row]]
 
 [[row style="vertical-align: top"]]
+    [[cell]][[[SCP-1118]]][[/cell]]
+    [[cell]]Os Sumum[[/cell]]
+    [[cell]]
+    	[[collapsible show="+ Level 4 Security Clearance required" hide="- Level 4 Security Clearance required"]]
+    	This one evolved from the erstwhile SCP-1354 (The Ghostwriter Delusion - see DECOMMISSIONED below). It dumps all the stupid compulsion and time-altering bullshit and adds better writing, more subtlety, Nazis, the Cold War, and President Truman talking utter nonsense. Maybe. Anyway, I'm pretty happy how this turned out. Did I mention I really like GRU, Division "P"?
+    	[[/collapsible]]
+    [[/cell]]	
+[[/row]]
+
+[[row]][[cell]][[/cell]][[cell]][[/cell]][[/row]]
+
+[[row style="vertical-align: top"]]
     [[cell]][[[SCP-1119]]][[/cell]]
     [[cell]]Father Goose[[/cell]]
     [[cell]]
@@ -258,6 +270,13 @@ function doAction()
      {
     
      returnMessage = "The first skip I brought in. You should have seen the guy it affected. His face had basically caved in on itself, right there in the monitoring room. I'm not sure what was worse, the sight of Mr. Ground Beef or the smell of his colleagues' vomit.";
+    
+     }
+
+      if (keyword == "SCP-1118" || keyword == "1118")
+     {
+    
+     returnMessage = "Just when you think you've seen it all, this turns up. I get called in and there's this little mousy looking guy, sweating in one of our most uncomfortable plastic chairs. He's been grilled by several people before me and now it's my turn. So I turn to him and offer him a smoke. He takes it, gladly, and lights it with the zippo I give him. He's shaking like a leaf. I really don't like doing this to people, but it's my trade. A few hours later he's told everything he knows about his buddies back in Russia, and he'll never see daylight again.";
     
      }
 
