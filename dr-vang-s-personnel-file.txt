@@ -447,8 +447,17 @@ Pages at +100 (go congratulate them!):
 %%title_linked%%
 [[/module]]
 
-----
+Pages at +200 (go congratulate/fellate them!):
+[[module ListPages rating="200" separate="no"]]
+%%title_linked%%
+[[/module]]
 
+Pages at +300 (go congratulate/fellate/WORSHIP them!):
+[[module ListPages rating="300" separate="no"]]
+%%title_linked%%
+[[/module]]
+
+----
 [[collapsible show="Pages above +100 and created in 2008 or 2009:" hide="Click to hide."]]
 [[module ListPages tags="scp" rating=">100" created_at="<2010" separate="false" perPage="100" order="name" prependLine="||~ Title ||~ Rating ||~ Creation date ||"]]
 || %%title_linked%% || %%rating%% || %%created_at%% || 
