@@ -24,7 +24,7 @@ Type the following: /msg NickServ register [password] [email]
 
 Substitute the stuff in brackets with your desired password and email. (And remember to //not// leave in the brackets!) Once this is done, you should get a confirmation email. Follow the directions in the email. Once that's all taken care of, to identify, you simply type "/msg nickserv identify [password]" without the quotes. Alternatively, "/ns identify [password]" works as well on some clients. (Again, no brackets.)
 
-Congratulations, you have now registered and identified and can join the channel. Some chat clients can ID automatically once you've registered. It is highly recommended that if you don't ID automatically, you don't type out the command in a public channel. If you screw up and, say, forget the / or type a space in front of it, you just announced your password to everyone.
+Congratulations, you have now registered and identified and can join the channel. Some chat clients can ID automatically once you've registered. It is highly recommended that if you don't ID automatically, you don't type out the command in a public channel. If you screw up and, say, forget the / or type a space in front of it, you just announced your password to everyone. In addition, you'll want to type "/ns set secure on" once you get in the channel, so nobody else can use your nick when you aren't around.
 
 ++ Connecting
 
