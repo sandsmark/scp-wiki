@@ -57,30 +57,8 @@ Recently Created Table
 [[/module]]
 
 [[HTML]]
-<div id="unitInfo"></div>
-<script type="text/javascript">
-var pre = ["Research", "Storage", "Containment", "Mobile", "Biological", "Armed", "Dimensional", "Reliquary"];
-var types = ["Command", "Site", "Sector", "Area", "Unit", "Task Force"];
-var greek = ["Alpha", "Beta", "Gamma", "Delta", "Epsilon", "Zeta", "Eta", "Theta", "Iota", "Kappa", "Lambda", "Mu", "Nu", "Xi", "Omicron", "Pi", "Rho", "Sigma", "Tau", "Upsilon", "Phi", "Chi", "Psi", "Omega"];
-var update = ["online", "offline", "classified", "under repair", "experiencing containment breach", "under attack", "[CONNECTION SEVERED]", "[DATA EXPUNGED]", "terminated", "rogue", "secure", "secure", "secure", "secure", "secure", "secure", "secure", "secure", "secure", "secure", "secure", "secure", "secure", "secure", "secure", "secure", "secure", "secure", "secure", "secure", "secure", "secure", "secure", "secure", "secure", "secure", "secure", "secure", "secure", "secure", "secure", "secure", "secure", "secure", "secure", "secure"];
-             
-var info = types[Math.floor(Math.random() * types.length)];
-
-if ( info == "Task Force" )
-{
-    info = pre[Math.floor(Math.random() * pre.length)] + " " + info;
-    info += " " + greek[Math.floor(Math.random() * greek.length)];
-    info += "-" + ( 1 + Math.floor(Math.random() * 50) );
-    info += " is " + update[Math.floor(Math.random() * update.length)];
-}
-else
-{
-    info = pre[Math.floor(Math.random() * pre.length)] + " " + info;
-    info += "-" + ( 1 + Math.floor(Math.random() * 50) );
-    info += " is " + update[Math.floor(Math.random() * update.length)];
-}
-document.getElementById("unitInfo").innerHTML = info;
-</script>
+<iframe src="http://isleoftashin.dx.am/scp3.html">
+</iframe>
 [[/HTML]]
 
 
