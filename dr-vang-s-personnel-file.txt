@@ -472,3 +472,10 @@ Pages at +300 (go congratulate/fellate/WORSHIP them!):
 %%title_linked%%
 [[/module]]
 [[/collapsible]]
+
+----
+[[collapsible show="Potentially deletable, with date." hide="Click to hide."]]
+[[module ListPages rating="<-9" created_at="-last day" tags="-archived, -author" separate="false" prependLine="||~ Title ||~ Creation date ||~ Rating||"]]
+|| %%title_linked%% || %%created_at%% || %%rating%% ||
+[[/module]]
+[[/collapsible]]
