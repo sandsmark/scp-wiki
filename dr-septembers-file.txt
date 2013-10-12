@@ -41,7 +41,7 @@ var imgs=
 "http://scp-wiki.wdfiles.com/local--files/dr-septembers-file/FLCL.png",
 "http://scp-wiki.wdfiles.com/local--files/dr-septembers-file/Planetes.png"]
 var q = imgs.length;
-var which=Math.round(Math.random()*12);
+var which=Math.round(Math.random()*11);
 function show(){document.write("<img src=\""+imgs[which]+"\" alt=\"image\" class=\"image\" width=\"300px\">");}
 show();
 </script></td>
