@@ -467,9 +467,9 @@ Pages at +300 (go congratulate/fellate/WORSHIP them!):
 [[/module]]
 [[/collapsible]]
 
-[[collapsible show="My Humanoids" hide="Click to hide."]]
-[[module ListPages created_by="Scantron" tags="humanoid"]]
-%%title_linked%%
+[[collapsible show="My Articles" hide="Click to hide."]]
+[[module ListPages created_by="Scantron" tags="-hub, -author" order="rating desc" separate="false" perPage="100"]]
+|| %%title_linked%% || %%rating%% || %%created_at%% ||
 [[/module]]
 [[/collapsible]]
 
