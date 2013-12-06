@@ -51,8 +51,8 @@ And that one where I didn't do a clean slate and am still paying for it:
 
 [[tab Don't mind this]]
 
-[[module ListPages tags="+2000" separate="no" order="rating desc"]]
-|| %%title_linked%% || %%rating%% || [[*user  %%created_by%%]]) ||
+[[module ListPages tags="+2000" separate="no" order="rating desc" limit="100"]]
+# %%title_linked%% - %%rating%% - [[*user  %%created_by%%]])
 [[/module]]
 
 [[/tab]]
