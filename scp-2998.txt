@@ -4,7 +4,7 @@ title:SCP-2998
   display: none;
 }
 
-#meta-title {
+.meta-title {
   border-bottom: solid 1px #bbbbbb;
   color: #990011;
   font-weight: normal;
@@ -13,7 +13,7 @@ title:SCP-2998
   font-size: 200%;
 }
 
-#meta-title p {
+.meta-title p {
   margin: 0;
 }
 [[/module]]
@@ -23,7 +23,7 @@ title:SCP-2998
 [[/>]]
 
 [[module ListPages parent="." limit="1" order="created_at" offset="@URL|0"]]
-[[div id="meta-title"]]
+[[div class="meta-title"]]
 %%title%%
 [[/div]]
 
