@@ -472,14 +472,8 @@ Pages at +300 (go congratulate/fellate/WORSHIP them!):
 |||| [[image blackeyes width="500px"]] ||
 [[/div]]
 
-[[collapsible show="2000 contest by rating" hide="Click to hide."]]
-[[module ListPages separate="false" tags="2000" preprendLine="||~ Title ||~ Creation Date ||~ Author ||~ Rating||" order="rating desc" perPage="50"]]
-|| %%title_linked%% || %%created_at%% || %%author%% || %%rating%% ||
-[[/module]]
-[[/collapsible]]
-
-[[collapsible show="2000 contest by creation date" hide="Click to hide."]]
-[[module ListPages separate="false" tags="2000" preprendLine="||~ Title ||~ Creation Date ||~ Author ||~ Rating||" perPage="50"]]
-|| %%title_linked%% || %%created_at%% || %%author%% || %%rating%% ||
+[[collapsible show="Sapient humanoids by age" hide="Click to hide."]]
+[[module ListPages separate="false" tags="humanoid, +sapient" preprendLine="||~ Title ||~ Creation Date ||~ Rating||" order="created_at" perPage="50"]]
+|| %%title_linked%% || %%created_at%% || %%rating%% ||
 [[/module]]
 [[/collapsible]]
