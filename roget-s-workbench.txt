@@ -179,16 +179,23 @@ Entries Over X
 %%title_linked%% (rating: %%rating%%, comments: %%comments%%, by //%%created_by%%//)
 [[/module]]
 [[/collapsible]]
+
 [[collapsible show="March" hide="hide"]]
 [[module ListPages rating=">0" order="rating desc" separate="false" limit="200" perPage="25" date="2010.03"]]
 %%title_linked%% (rating: %%rating%%, comments: %%comments%%, by //%%created_by%%//)
 [[/module]]
+[[/collapsible]]
+
 [[collapsible show="February" hide="hide"]]
 [[module ListPages rating=">0" order="rating desc" separate="false" limit="200" perPage="25" date="2010.02"]]
 %%title_linked%% (rating: %%rating%%, comments: %%comments%%, by //%%created_by%%//)
-[[/module]][[collapsible show="January" hide="hide"]]
+[[/module]]
+[[/collapsible]]
+
+[[collapsible show="January" hide="hide"]]
 [[module ListPages rating=">0" order="rating desc" separate="false" limit="200" perPage="25" date="2010.01"]]
 %%title_linked%% (rating: %%rating%%, comments: %%comments%%, by //%%created_by%%//)
 [[/module]]
+[[/collapsible]]
 [[/tab]]
 [[/tabview]]
