@@ -1,6 +1,4 @@
-title:Agent Crayne's Personnel File
-+++ __The author__
-
+title:Field Agent Crayne's Personnel File
 [[tabview]]
 
 [[tab Original articles]]
@@ -14,6 +12,7 @@ title:Agent Crayne's Personnel File
 || [[[SCP-1130]]] || A Handy Shortcut ||
 || [[[SCP-1142]]] || A Cry for Help ||
 || [[[SCP-1946]]] || Diner Mimics ||
+|| [[[SCP-2002]]] || A Dead Future ||
 
 [[/tab]]
 
@@ -35,245 +34,16 @@ title:Agent Crayne's Personnel File
 
 [[/tab]]
 
-[[tab Nothing to see here]]
 
-[[module ListPages created_by="=" separate="no" order="rating desc"]]
-|| %%title_linked%% || %%rating%% || %%commented_at%% (by [[*user %%commented_by%%]]) || %%updated_by_linked%% ||
+[[tab Tally-ho]]
+
+[[module ListPages created_by="=" separate="no" order="rating desc" perPage="50"]]
+|| %%title_linked%% || %%rating%% || %%commented_at%% (by %%commented_by%%) || %%updated_by%% ||
 [[/module]]
 
-And that one where I didn't do a clean slate and am still paying for it:
-
-[[module ListPages created_by="yellowdrakex" tags="+alive +euclid +extraterrestrial +invertebrate +parasitic +portal +reproductive +scp +species" separate="no" order="rating desc"]]
-|| %%title_linked%% || %%rating%% || %%commented_at%% (by [[*user %%commented_by%%]]) || %%updated_by_linked%% ||
+[[module ListPages created_by="yellowdrakex" tags="+alive +euclid +extraterrestrial +invertebrate +parasitic +portal +reproductive +scp +species" separate="no" order="rating desc" perPage="50"]]
+|| %%title_linked%% || %%rating%% || %%commented_at%% (by %%commented_by%%) || %%updated_by%% ||
 [[/module]]
-
-[[/tab]]
-
-[[tab Don't mind this]]
-
-[[module ListPages tags="+2000" separate="no" order="rating desc" limit="100"]]
-# %%title_linked%% - %%rating%% - [[*user  %%created_by%%]]
-[[/module]]
-
-[[/tab]]
-
-[[/tabview]]
-
-++++ __The author avatar__
-
-[[tabview]]
-
-[[tab Personnel File]]
-
-[[include component:image-block name=Agent_Crayne.jpg|caption=Agent Crayne perusing the mission brief for the retrieval of SCP-████|width=200px]]
-
-**Name:** Agent Crayne
-**Security Clearance:** Level 3
-**Current Assignment:** Mobile Task Force Sigma-10 ("//Buttonmashers//")
-**Position:** AEDS (Anomalous Effects Deduction Specialist) i.e. the guy who gets to touch/prod/examine/lick it/him/her.
-
-**Psychological profile:** Subject is fairly intelligent (IQ measured as being squarely between plankton and toaster), as shown by his ability to correctly identify his left hand as such. Subject does not work well with others due to a severe case of being a total bastard (see incident report Prs-I.658/L. All victims eventually recovered, but the pool table was a total write-off.) Subject is able to type up reports in time to avoid a reprimand from subject's handler, but often fills out pages with lorem ipsum copy-pastes and doodles of yams. Yes, yams. Subject's hobbies include writing profiles for social networking sites using the words 'garden gnome', 'mustache', 'pirates' and 'impedance values'. God knows why. Subject filled out the Foundation intranet blurb about himself with:
-
-"//I'm fed two live squirrels each day, one wearing a small sombrero custom-made out of spun sugar, the other slathered in Crisco. I usually use Superglue to get the hat to stay on. Tried bubblegum, spackle, tacks, nails and welding, but those met with disastrous, though sometimes tasty results.//"
-
-Pending further psychological evaluation, Agent Crayne is not to be let near small rodents.
-
-**Addendum 20130913-A:** Or nailguns.
-
-**Addendum 20130913-B:** Or belt sanders, ceramic tile cutters, chainsaws or any form of drill. For fuck's sake!
-
-[[/tab]]
-
-[[tab Employment history]]
-
-||~ From ||~ Till ||~ Assignment ||~ Position ||~ CL ||~ Notes ||
-|| 2000 || 2002 || Site-17 Base Security || Generic Uniformed Minion || 3 || Promotion after the ██████ incident and the resulting containment breach of SCP-████||
-|| 2002 || 2007 || MTF Beta-13 ("//Sons of Eugene//") || Junior Recovery Agent || 3 || Transferred after Agent ████████ filed a formal complaint against Agent Crayne for abuse of Foundation-issued equipment. Apparently, that is NOT where a Taser should go.||
-|| 2008 || 2011 || MTF Mu-7 ("//Raiders of the Lost Carpark//") || Senior Recovery Agent || 3 || Asked for transfer after bringing in SCP-████||
-|| 2011 || - || MTF Sigma-10 ("//It does what?!?//") || Anomalous Effects Deduction Specialist || 3 || ||
-
-[[/tab]]
-
-[[tab Foundation Agent Communication App]]
-
-**Send Agent Crayne a message:**
-
-[[html]]
-<script type="text/javascript">
-
-function doErase()
-{
-
-    document.getElementById("message").value = "";
-    
-}
-
-function doAction()
-{
-
-    var message = document.getElementById("message");
-    var rawMessage = message.value;
-    rawMessage = rawMessage.replace(/[^\w\s]/gi, "");
-
-    var response = document.getElementById("response");
-    var items = rawMessage.split(" ");
-    var returnMessage = "";
-    
-    message.value = "Type your message here...";
-
-    for (x = 0; x < items.length; x++)
-    {
-    
-     keyword = items[x].toLowerCase();
-
-     if (keyword == "bastard")
-     {
-    
-     returnMessage = "Yeah, I know. It says so right on the page.";
-    
-     }
-    
-     if (keyword == "sombrero")
-     {
-    
-     returnMessage = "I tried having him wear a bowler hat made from edible underwear, but that was just icky.";
-    
-     }
-    
-     if (keyword == "crisco")
-     {
-    
-     returnMessage = "I have no idea why I like that stuff so much";
-    
-     }
-    
-     if (keyword == "pool" || keyword == "Prs-I.658/L")
-     {
-
-     returnMessage = "I told them not to do it, but would they listen? Ask the pool table, it'll tell you.";
-    
-     }
-    
-     if (keyword == "squirrel")
-     {
-
-     returnMessage = "They're so cute. Especially the ones with the foaming mouths.";
-    
-     }
-    
-     if (keyword == "SCP-1114" || keyword == "1114")
-     {
-    
-     returnMessage = "The first skip I brought in. You should have seen the guy it affected. His face had basically caved in on itself, right there in the monitoring room. I'm not sure what was worse, the sight of Mr. Ground Beef or the smell of his colleagues' vomit.";
-    
-     }
-
-      if (keyword == "SCP-1118" || keyword == "1118")
-     {
-    
-     returnMessage = "Just when you think you've seen it all, this turns up. I get called in and there's this little mousy looking guy, sweating in one of our most uncomfortable plastic chairs. He's been grilled by several people before me and now it's my turn. So I turn to him and offer him a smoke. He takes it, gladly, and lights it with the zippo I give him. He's shaking like a leaf. I really don't like doing this to people, but it's my trade. A few hours later he's told everything he knows about his buddies back in Russia, and he'll never see daylight again.";
-    
-     }
-
-     if (keyword == "SCP-1119" || keyword == "1119")
-     {
-    
-     returnMessage = "Oh, that guy. Yeah, sucks to be him. Can you imagine never having been kissed? Or even smacked by your dad? Hell, it surprised me it took him so long to try and take his own life.";
-    
-     }
-
-     if (keyword == "SCP-1121" || keyword == "1121")
-     {
-    
-     returnMessage = "Let me just say I have been stepping on every damn insect I see ever since dealing with that shit.";
-    
-     }
-
-     if (keyword == "SCP-1125" || keyword == "1125")
-     {
-    
-     returnMessage = "I'm indecisive enough in my personal life without those things fucking everything up, thanks.";
-    
-     }
-
-     if (keyword == "SCP-1130" || keyword == "1130")
-     {
-    
-     returnMessage = "Yeah, Google Maps from hell. It's amazing we didn't lose more civilians to that nightmare.";
-    
-     }
-    
-     if (keyword == "SCP-1142" || keyword == "1142")
-     {
-    
-     returnMessage = "And there I was, back in Germany. We get there and this thing is just bumping into the wall time and time again. The farmer that owned the barn was yelling at us in German, the bomb squad guys were yelling at us in broken English, such fun.";
-    
-     }
-
-     if (keyword == "SCP-281" || keyword == "281")
-     {
-    
-     returnMessage = "Wasn't there for the actual recovery, but from what I hear the guy up in that cabin was a total survivalist conspiracy nut. Like Jimmy. But don't tell Jimmy, he'll just get riled up.";
-    
-     }
-
-     if (keyword == "SCP-366" || keyword == "366")
-     {
-    
-     returnMessage = "I assisted on this one when we first got wind of these things. Trust me, you do not want to see some poor kid's nutsack explode in a shower of fucking oversized maggots. I don't think I managed to keep anything down for a couple of days...";
-    
-     }
-
-     if (keyword == "SCP-1344" || keyword == "1344")
-     {
-    
-     returnMessage = "So we get there and there's this guys slumped over in the corner. His colleagues are already being processed for amnestics administration by a rapid response team we had in the neighborhood, but we get to deal with the live one. He looks up at me, with those stupid goggles on his face and I can see he's crying. 'My eyes!' he keeps screaming, trying to rip the goggles off. Sometimes, my job sucks.";
-     
-     }
-
-     if (keyword == "SCP-1946" || keyword == "SCP-1946")
-     {
-    
-     returnMessage = "I swear, I can never, ever forget the site of that elderly waitress trying to eat a bunch of forks. There are just some things you should not have to see.";
-    
-     }	 
-
-     if (returnMessage == "")
-     {
-    
-     returnMessage = "I have no idea what you're talking about.";
-    
-     }
-
-    }
-    
-    response.innerHTML = returnMessage;
-    
-}
-</script>
-<input id="message" type="text" size="52" onClick="doErase();" value="Type your message here..." style="background-color: black; color: #2FF120; font-size: 10pt; font-family: courier new;">
-<input type="button" value="Send" onClick="document.getElementById('response').innerHTML = 'MESSAGE SENT - PROCESSING...'; setTimeout('doAction()',5000);"><br>
-<br>
-<textarea id="response" cols="50" rows="5" style="background-color: black; color: #2FF120; font-size: 10pt; font-family: courier new;">Your response will appear here.</textarea>
-[[/html]] 
-[[/tab]]
-
-[[tab Supplemental documentation]]
-
-> {{[[size 90%]]"Goddammit, I had six beautiful specially bred lab rats. Where the fuck are they, Crayne?"
-> - Dr. Aeslinger[[/size]]}}
-
-> {{[[size 90%]]"Your use of the word 'beautiful' here disturbs me, Doc. I feel it's best not to disclose their whereabouts at this time."
-> - Agent Crayne[[/size]]}}
-
-> {{[[size 90%]]"I didn't mean it like that. You'll return them ASAP or I'm going to speak to your superior about this."
-> - Dr. Aeslinger[[/size]]}}
-
-> {{[[size 90%]]"I'll see if I can find some superglue and a thunderstorm. Let me get back to you on that."
-> - Crayne[[/size]]}}
-
-> {{[[size 90%]]"..."
-> - Dr. Aeslinger[[/size]]}}
 
 [[/tab]]
 
