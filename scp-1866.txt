@@ -70,7 +70,7 @@ Objects in/on which only a single number is present (example: "03" representing 
 
 Zeroes count only in the presence of multiple non-zero integers: therefore, 10:00 AM is unchanged, but 10:00:05 AM would be. 
 
-"AM" and "PM" designations are ignored; times are always changed to AM. (Thus, both 10:15 AM and 10:15 PM would become 2:03 AM) Time zone designations are likewise ignored. 
+"AM" and "PM" designations are ignored; times are always changed to AM. (Thus, both 10:15 AM and 10:15 PM would become 2:03 AM.) Time zone designations are likewise ignored. 
 
 Times written in military or 24-hour notation ("1734 hours") are treated as a single four-digit integer, not as two two-digit ones, unless the hours and minutes are separated by punctuation or are stored as separate integers. (E.g. "16:02") 
 
