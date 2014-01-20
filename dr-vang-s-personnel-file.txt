@@ -417,6 +417,8 @@ Please say you shed a tear
 [[/tab]]
 [[/tabview]]
 
+[[module NewPage size="15" button="new page"]]
+
 Pages at +100 (go congratulate them!):
 [[module ListPages rating="100" separate="no"]]
 %%title_linked%%
@@ -435,7 +437,13 @@ Pages at +300 (go congratulate/fellate/WORSHIP them!):
 ----
 
 [[collapsible show="Potentially deletable, with date." hide="Click to hide."]]
-[[module ListPages rating="<-9" created_at="-last day" tags="-archived, -author" separate="false" prependLine="||~ Title ||~ Creation date ||~ Rating||"]]
+[[module ListPages rating="<-9" tags="-archived, -author" separate="false" prependLine="||~ Title ||~ Creation date ||~ Rating||"]]
+|| %%title_linked%% || %%created_at%% || %%rating%% ||
+[[/module]]
+[[/collapsible]]
+
+[[collapsible show="Successful recent articles." hide="Click to hide."]]
+[[module ListPages rating=">9" created_at="last 5 days" separate="false" prepend_line="||~ Title ||~ Creation date ||~ Rating||"]]
 || %%title_linked%% || %%created_at%% || %%rating%% ||
 [[/module]]
 [[/collapsible]]
@@ -444,10 +452,3 @@ Pages at +300 (go congratulate/fellate/WORSHIP them!):
 ||||~ ^^☐☐☐☐☐☐☐☐ ¡CORRUPTED! ¡CORRUPTED! ¡CORRUPTED! ¡CORRUPTED! ☐☐☐☐☐☐☐☐^^ ||
 |||| [[image blackeyes width="500px"]] ||
 [[/div]]
-
-++++++ .
-[[collapsible show="Sapient humanoids by age" hide="Click to hide."]]
-[[module ListPages separate="false" tags="humanoid, +sapient" preprendLine="||~ Title ||~ Creation Date ||~ Rating||" order="created_at" perPage="50"]]
-|| %%title_linked%% || %%created_at%% || %%rating%% ||
-[[/module]]
-[[/collapsible]]
