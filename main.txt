@@ -1,91 +1,318 @@
-[[=]]
-[[size 300%]]The SCP Foundation [[/size]]
-[[/=]]
+[[module css]]
+#page-title { display: none; }
+.feature-block {
+    height: 200px;
+}
+.feature-block .panel-body {
+    height: 130px;
+    overflow-y: hidden;
+}
+.feature-block .feature-title {
+    font-size: 120%;
+    font-weight: bold;
+}
+.feature-block .feature-subtitle {
+    font-size: 90%;
+}
 
-[[=]]
-[[size 130%]]Classified Material Beyond This Point\
+.feature-block .feature-title > p,
+.feature-block .feature-subtitle > p {
+    margin: 0;
+}
 
-Unauthorized access will be monitored, located and dealt with\
+.news-block .panel-body {
+    padding: 0;
+}
+.news-block .panel-body .alternate {
+    padding: 5px 10px;
+}
+.news-block .news-title {
+    font-weight: bold;
+    font-size: 110%;
+    margin-bottom: 5px;
+    color: #633;
+}
+.news-block .news-content {
+    margin: 5px 0;
+}
+.news-block .news-title > p,
+.news-block .news-content > p {
+    margin: 0;
+}
 
-This is your sole warning [[/size]]
-[[/=]]
-[[div style="border:solid 1px #999999; background:#f2f2c2; padding:5px; margin-bottom: 10px;"]]
-**Featured Article**:
+.international-block .panel-body {
+    padding: 0;
+}
+.international-entry {
+    padding: 5px 10px;
+}
+.international-entry:nth-child(even),
+.alternate:nth-child(even) {
+    background-color: rgba(255,255,255,.9);
+    border-top: solid 1px #eeeee0;
+    border-bottom: solid 1px #eeeee0;
+}
+.international-entry div > p {
+    margin: 0;
+}
+.international-entry .international-title {
+    font-weight: bold;
+    font-size: 110%;
+}
+.international-entry .international-title img {
+    width: 16px;
+    height: 11px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+.international-entry .international-description {
+    font-size: 90%;
+    font-style: italic;
+    margin: 5px 20px;
+}
+.international-entry .international-footer {
+    font-size: #333;
+    font-size: 80%;
+    margin: 5px 0;
+}
 
-**[[[SCP-1591]]]: Fallen Star**
+[[/module]]
+
+[[div style="text-align: center; color: #600;"]]
+[[div class="unmargined"]]
+WARNING: THE FOUNDATION DATABASE IS
+[[/div]]
+[[div class="unmargined" style="font-size: 400%; font-weight: bold; margin: 2px 0 5px;"]]
+CLASSIFIED
+[[/div]]
+[[div class="unmargined"]]
+ACCESS BY UNAUTHORIZED PERSONNEL IS STRICTLY PROHIBITED
+PERPETRATORS WILL BE TRACKED, LOCATED, AND DETAINED
+[[/div]]
+[[/div]]
+----
+[!--
+* This is commented out until it's needed. *
+[[div class="content-panel centered standalone"]]
+[[size 120%]]Important News Goes Here[[/size]]
+[[/div]]
+--]
+
+[[div class="feature-block"]]
+[[div class="content-panel left-column"]]
+[[div class="panel-heading"]]
+Featured SCP
+[[/div]]
+[[div class="panel-body"]]
+[[div class="feature-title"]]
+[[[SCP-1591]]]: Fallen Star
+[[/div]]
+[[div class="feature-subtitle"]]
+by [[user Roget]]
+[[/div]]
 
 //The stars have started to come out. I can see them through the cracks in the ceiling. Used to be that on nights like this, I'd be up in the eastern tower, watching them.//
+[[/div]]
+[[div class="panel-footer"]]
+[[[Featured SCP Archive]]]
+[[/div]]
+[[/div]]
 
-**Featured Tale**:
-
-**[[[Post Finem]]]**
+[[div class="content-panel right-column"]]
+[[div class="panel-heading"]]
+Featured Tale
+[[/div]]
+[[div class="panel-body"]]
+[[div class="feature-title"]]
+[[[Post Finem]]]
+[[/div]]
+[[div class="feature-subtitle"]]
+by [[user DrEverettMann]]
+[[/div]]
 
 //The world ended yesterday, and none of us noticed until this morning.//
-
-,,[[[Featured SCP Archive]]],, ,,*,,  ,,[[[Featured Tale Archive]]],,
-
+[[/div]]
+[[div class="panel-footer"]]
+[[[Featured Tale Archive]]]
+[[/div]]
+[[/div]]
 [[/div]]
 
-[[div style="display: inline-block; border:solid 1px #999999; background:#f2f2c2; padding:5px; float: left; margin-bottom: 10px; width: 260px; min-height: 380px;"]]
-**Content**
-
-* **SCP Series** - The Main List.
- * [[[scp-series|001-999]]]
- * [[[scp-series-2|1000-1999]]]
- * [[[scp-series-3|2000-2999]]]
-
-* **[[[About the SCP Foundation]]]** - Find out what SCP is about.
-
-* [[[Members' Pages]]] - A list of work by prominent members. 
-
-* [[[forum:start |SCP Forum]]] - Voicing concerns
-
-* [[[Site Rules]]] - Information on how we do things.
-
-* [[[Licensing Guide]]] - How Creative Commons Works
-
-* [[[Chat Guide]]] - Join the site chat!
- 
-* [[[Links]]] - Stuff we like.
-
+[[div class="news-block content-panel"]]
+[[div class="panel-heading"]]
+News
 [[/div]]
-[[div style="border: solid 1px #999999; background:#f2f2c2; padding: 5px; margin: 0 0 10px 280px; min-height: 380px;"]]
-**News**
+[[div class="panel-body"]]
 
-* **01/16/14** - We have a new SCP Forum Roleplaying Site, http://scp-rp.wikidot.com/. Run by Bright and a bunch of other cool people. All members (and characters) are welcome!
+[!-- PLEASE LIMIT THE PAGE TO FIVE NEWS ARTICLES --]
 
-* **01/12/14** - We now have our very own official **[https://www.facebook.com/scpfoundation Facebook Page]**! Check it out if you want to be updated on the various goings-on the site has!
-
-* **01/01/14** - Happy New Year, Foundation personnel!
-
-* **12/30/13** - Roget has a new SCP RP, called Origins, all about the Foundation in the days before they were the biggest players in the room, way back in 1954(Soon to be 1955.) It can be found **[http://scp-foundation-origins.wikidot.com/ here]**, with a link to the out-of-character chatroom being **[http://scp-foundation-origins.wikidot.com/system:real-time-chat here]**. The game is run by Roget, and the GM team of Scantron, Vivax, and Flameshirt, with occasional assistance from Wogglebug.
-
-* **12/20/13** - The 2000 Contest is over! Congratulations to FortuneFavorsBold, author of [[[SCP-2000]]]! Congratulations to all the other entrants with surviving entries as well -- the race was very close, with many great articles. Read them all at the [[[scp2000contesthub|contest hub.]]]
-
-* **12/20/13** - The [[[heritage-collection|SCP Foundation Heritage Collection]]] is going live! Check it out!
-
-* //[[[Archived News]]]//
-
+[[div class="alternate unmargined"]]
+[[div class="news-title"]]
+January 16, 2014
+[[/div]]
+[[div class="news-content"]]
+We have a new SCP Forum Roleplaying Site, http://scp-rp.wikidot.com/. Run by Bright and a bunch of other cool people. All members (and characters) are welcome!
+[[/div]]
 [[/div]]
 
-[[div style="border:solid 1px #999999; background:#f2f2c2; padding:5px; margin-bottom: 10px;"]]
+[[div class="alternate unmargined"]]
+[[div class="news-title"]]
+January 12, 2014
+[[/div]]
+[[div class="news-content"]]
+We now have our very own official **[https://www.facebook.com/scpfoundation Facebook Page]**! Check it out if you want to be updated on the various goings-on the site has!
+[[/div]]
+[[/div]]
 
-**Translation Sites**
-* **[http://scp-ru.wikidot.com/ SCP-RU]** - Russian Counterpart! Translation available **[http://translate.google.ca/translate?hl=en&sl=ru&tl=en&u=http%3A%2F%2Fscp-ru.wikidot.com%2F here]**. The Russian site is the oldest of the translation sites active on the web. It is maintained by Gene R, Osobist, and Resure.
+[[div class="alternate unmargined"]]
+[[div class="news-title"]]
+January 1, 2014
+[[/div]]
+[[div class="news-content"]]
+Happy New Year, Foundation personnel!
+[[/div]]
+[[/div]]
 
-* **[http://scp-kr.wikidot.com/ SCP-KO]** - Our Korean Colleagues!  Translation available **[http://translate.google.com/translate?sl=ko&tl=en&js=n&prev=_t&hl=en&ie=UTF-8&layout=2&eotf=1&u=http%3A%2F%2Fscpkoreahq.wikidot.com%2F here]**. The Korean site is maintained by QAZ135, scpfskhq, and shfoakdls.
+[[div class="alternate unmargined"]]
+[[div class="news-title"]]
+December 30, 2013
+[[/div]]
+[[div class="news-content"]]
+Roget has a new SCP RP, called Origins, all about the Foundation in the days before they were the biggest players in the room, way back in 1954(Soon to be 1955.) It can be found **[http://scp-foundation-origins.wikidot.com/ here]**, with a link to the out-of-character chatroom being **[http://scp-foundation-origins.wikidot.com/system:real-time-chat here]**. The game is run by Roget, and the GM team of Scantron, Vivax, and Flameshirt, with occasional assistance from Wogglebug.
+[[/div]]
+[[/div]]
 
-* **[http://www.scp-wiki-cn.org/ SCP-CN]**  - Our Chinese Branch! Translation available **[http://translate.google.com/translate?hl=en&sl=zh-CN&tl=en&prev=_dd&u=http%3A%2F%2Fwww.scp-wiki-cn.org%2F here]**. The Chinese Branch of the SCP Foundation is currently helmed by areyoucrazytom, and SunnyParallax.
-
-* **[http://fondationscp.wikidot.com/ SCP-FR]** - The French have joined! Translation available  **[http://translate.google.com/translate?sl=auto&tl=en&js=n&prev=_t&hl=en&ie=UTF-8&eotf=1&u=http%3A%2F%2Ffondationscp.wikidot.com%2F&act=url here]**. The French translation of the SCP Foundation is maintained by DrMarcus. 
-
-* **[http://www.scp-wiki.pl/Strona_g%C5%82%C3%B3wna SCP-PL]** - The Polish Branch of the site! Translation available **[http://translate.google.com/translate?hl=en&sl=pl&tl=en&u=http%3A%2F%2Fwww.scp-wiki.pl%2FStrona_g%C5%82%C3%B3wna here]**!
-
-* **[http://lafundacionscp.wikidot.com/ SCP-ES]** - The Spanish Branch! Translation available **[http://translate.google.com/translate?hl=en&sl=fr&tl=en&u=http%3A%2F%2Flafundacionscp.wikidot.com%2F&sandbox=1 here]**! The SCP Spanish Branch is maintained by Vlank, Mulnero, DrManticore, and Chagecha.
-
-* **[http://scp-th.wikidot.com/ SCP-TH]** - The Thai fighters!(I'm sorry, I had to). Translation available **[http://translate.google.com/translate?hl=en&sl=th&tl=en&u=http%3A%2F%2Fscp-th.wikidot.com%2F&sandbox=1 here]**! The Thai site is run by DrSSS and his team.
-
-* **[http://scp-jp.wikidot.com/ SCP-JP]** - The Japanese branch! Translation available **[http://translate.google.ca/translate?hl=en&sl=ja&tl=en&u=http%3A%2F%2Fscp-jp.wikidot.com%2F&sandbox=1 here!]** The Japanese site is run by CheshireCheese, Kwana, and m0ch12uk1.
+[[div class="alternate unmargined"]]
+[[div class="news-title"]]
+December 20, 2013
+[[/div]]
+[[div class="news-content"]]
+The 2000 Contest is over! Congratulations to FortuneFavorsBold, author of [[[SCP-2000]]]! Congratulations to all the other entrants with surviving entries as well -- the race was very close, with many great articles. Read them all at the [[[scp2000contesthub|contest hub.]]]
+[[/div]]
+[[/div]]
 
 [[/div]]
-~~~~
+[[div class="panel-footer"]]
+[[[Archived News]]]
+[[/div]]
+[[/div]]
+
+----
+
+[[div class="international-block content-panel"]]
+[[div class="panel-heading"]]
+International Sites
+[[/div]]
+[[div class="panel-body"]]
+
+[[div class="international-entry"]]
+[[div class="international-title"]]
+[[image ru.png]] [http://scp-ru.wikidot.com/ SCP-RU] -- SCP Foundation (Russian Branch)
+[[/div]]
+[[div class="international-description"]]
+Russian Counterpart! Translation available **[http://translate.google.ca/translate?hl=en&sl=ru&tl=en&u=http%3A%2F%2Fscp-ru.wikidot.com%2F here]**.
+The Russian site is the oldest of the translation sites active on the web.
+[[/div]]
+[[div class="international-footer"]]
+Admins: [[user Gene R]] -- [[user Osobist]] -- [[user Resure]]
+[[/div]]
+[[/div]]
+
+[[div class="international-entry"]]
+[[div class="international-title"]]
+[[image kr.png]] [http://scp-kr.wikidot.com/ SCP-KR] -- SCP 재단
+[[/div]]
+[[div class="international-description"]]
+Our Korean Colleagues!  Translation available **[http://translate.google.com/translate?sl=ko&tl=en&js=n&prev=_t&hl=en&ie=UTF-8&layout=2&eotf=1&u=http%3A%2F%2Fscpkoreahq.wikidot.com%2F here]**.
+[[/div]]
+[[div class="international-footer"]]
+Admins: [[user QAZ135]] -- [[user scpfskhq]] -- [[user shfoakdls]]
+[[/div]]
+[[/div]]
+
+[[div class="international-entry"]]
+[[div class="international-title"]]
+[[image cn.png]] [http://www.scp-wiki-cn.org/ SCP-CN] -- SCP基金会
+[[/div]]
+[[div class="international-description"]]
+Our Chinese Branch! Translation available **[http://translate.google.com/translate?hl=en&sl=zh-CN&tl=en&prev=_dd&u=http%3A%2F%2Fwww.scp-wiki-cn.org%2F here]**.
+[[/div]]
+[[div class="international-footer"]]
+Admins: [[user areyoucrazytom]] -- [[user SunnyParallax]]
+[[/div]]
+[[/div]]
+
+[[div class="international-entry"]]
+[[div class="international-title"]]
+[[image fr.png]] [http://fondationscp.wikidot.com/ SCP-FR] -- Fondation SCP
+[[/div]]
+[[div class="international-description"]]
+The French have joined! Translation available  **[http://translate.google.com/translate?sl=auto&tl=en&js=n&prev=_t&hl=en&ie=UTF-8&eotf=1&u=http%3A%2F%2Ffondationscp.wikidot.com%2F&act=url here]**.
+[[/div]]
+[[div class="international-footer"]]
+Admins: [[user DrMarcus]]
+[[/div]]
+[[/div]]
+
+[[div class="international-entry"]]
+[[div class="international-title"]]
+[[image pl.png]] [http://www.scp-wiki.pl/Strona_g%C5%82%C3%B3wna SCP-PL] -- SCP Polska Filia
+[[/div]]
+[[div class="international-description"]]
+The Polish Branch of the site! Translation available **[http://translate.google.com/translate?hl=en&sl=pl&tl=en&u=http%3A%2F%2Fwww.scp-wiki.pl%2FStrona_g%C5%82%C3%B3wna here]**!
+[[/div]]
+[[div class="international-footer"]]
+Admins:
+[[/div]]
+[[/div]]
+
+[[div class="international-entry"]]
+[[div class="international-title"]]
+[[image es.png]] [http://lafundacionscp.wikidot.com/ SCP-ES] -- La Fundación SCP
+[[/div]]
+[[div class="international-description"]]
+The Spanish Branch! Translation available **[http://translate.google.com/translate?hl=en&sl=fr&tl=en&u=http%3A%2F%2Flafundacionscp.wikidot.com%2F&sandbox=1 here]**!
+[[/div]]
+[[div class="international-footer"]]
+Admins: [[user Vlank]] -- [[user Mulnero]] -- [[user DrManticore]] -- [[user Chagecha]]
+[[/div]]
+[[/div]]
+
+[[div class="international-entry"]]
+[[div class="international-title"]]
+[[image th.png]] [http://scp-th.wikidot.com/ SCP-TH] -- สถาบัน SCP
+[[/div]]
+[[div class="international-description"]]
+The Thai fighters! (I'm sorry, I had to). Translation available **[http://translate.google.com/translate?hl=en&sl=th&tl=en&u=http%3A%2F%2Fscp-th.wikidot.com%2F&sandbox=1 here]**!
+[[/div]]
+[[div class="international-footer"]]
+Admins: [[user DrSSS]]
+[[/div]]
+[[/div]]
+
+[[div class="international-entry"]]
+[[div class="international-title"]]
+[[image jp.png]] [http://scp-jp.wikidot.com/ SCP-JP] -- SCP財団
+[[/div]]
+[[div class="international-description"]]
+The Japanese branch! Translation available **[http://translate.google.ca/translate?hl=en&sl=ja&tl=en&u=http%3A%2F%2Fscp-jp.wikidot.com%2F&sandbox=1 here]**!
+[[/div]]
+[[div class="international-footer"]]
+Admins: [[user CheshireCheese]] -- [[user Kwana]] -- [[user m0ch12uk1]]
+[[/div]]
+[[/div]]
+
+[[/div]]
+[[div class="panel-footer"]]
+--
+[[/div]]
+[[/div]]
+
+----
+
++ Please Disregard
+
+++ Pages
+
+[[module ListPages category="*" pagetype="*" separate="no"]]
+%%linked_title%% ([%%link%%/edit/true Edit])
+[[/module]]
