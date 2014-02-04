@@ -79,6 +79,7 @@ Empty is good.
 Already exist:
 **[/system:page-tags/tag/creepypasta creepypasta]**
 **[/system:page-tags/tag/tale tale]**
+**[/system:page-tags/tag/poetry poetry]** 
 ----
 **[/system:page-tags/tag/epistolary epistolary]** - Tale is primarily structured as a series of separate documents (letters, emails, memos, official reports, blog posts, etc.).
 [[module ListPages category="." separate="no" tags="-" perPage="100" order="name" tags="epistolary"]]
@@ -100,11 +101,7 @@ Already exist:
 # %%title_linked%% - [[user %%created_by%%]] - %%created_at%%
 [[/module]]
 ----
-**[/system:page-tags/tag/poem poem]** - Tale is or significantly includes a poem or poetry as part of the Tale.
-[[module ListPages category="." separate="no" tags="-" perPage="100" order="name" tags="poem"]]
-# %%title_linked%% - [[user %%created_by%%]] - %%created_at%%
-[[/module]]
-----
+--**poem**: Tale is or significantly includes a poem or poetry as part of the Tale.-- implemented as **[/system:page-tags/tag/poetry poetry]** tag
 [[/tab]]
 
 [[tab Low-Rated Tales]]
