@@ -200,10 +200,7 @@ To place an image, you must upload your image onto the website. To do this, go t
 Once you are done, the uploaded images will appear as links at the bottom of the page. Open a link to get the URL. Then, go back to your file, and copy and paste the following onto the page under the rating module.
 
 [[code]]
-[[div style="float:right; margin:0 2em 1em 2em; width:300px; border:0;"]]
-|||| [[image COPY-AND-PASTE-IMAGE-URL-HERE width="300px"]] ||
-||||~ ^^ Description of the picture ^^ ||
-[[/div]]
+[[include component:image-block name=IMAGE NAME HERE|caption=WRITE CAPTION HERE]]
 [[/code]]
 
 Replace the appropriate text with the URL, and add a description of the picture (in the context of your article) in the labelled area. You can also scale the size of the picture by adjusting both "width" numbers.
