@@ -16,12 +16,17 @@ title:How to Contribute
 }
 .content-panel .content-type-description {
   padding: 0 20px;
+  text-align: justify;
 }
 .content-panel.content-row-1 .content-type-description {
   height: 380px;
 }
 .content-panel.content-row-2 .content-type-description {
   height: 240px;
+}
+.content-panel .content-type-description ul {
+  padding-left: 2em;
+  margin-left: 0;
 }
 .new-page-box input[type="text"] {
   padding: 2px;
@@ -75,6 +80,7 @@ You can create a tale by using the New Tale form below, then linking it from Fou
 * **[[[Foundation Tales]]]**
 
 ----
+[[span style="font-size: 90%; font-style: italic; color: #c60;"]]**Notice:** Pages created using this form will automatically be tagged as a //tale//. For non-//tale// pages, use the generic page form at the bottom of this page.[[/span]]
 [[module NewPage size="20" tags="tale" button="Create Tale"]]
 [[/div]]
 [[/div]]
