@@ -88,19 +88,19 @@ title:SCUTTLE
 
 ------
 
-> ++++++ IR#20██011300███-10, Status: //Reply from submitter.// User: //lrhode02// (**IP:** 10.101.25.███) Timestamp: //20██/01/13 13:09//
+> ++++++ IR#20██011300███-11, Status: //Reply from submitter.// User: //lrhode02// (**IP:** 10.101.25.███) Timestamp: //20██/01/13 13:09//
 >
 > I don't want to be alarmist or anything, but should I be making plans? I've never heard of SCUTTLE acting up. LR
 
 ------
 
-> ++++++ IR#20██011300███-11, Status: //Replied.// User: //tthomp03// (**IP:** 10.101.147.███) Timestamp: //20██/01/13 13:20//
+> ++++++ IR#20██011300███-12, Status: //Replied.// User: //tthomp03// (**IP:** 10.101.147.███) Timestamp: //20██/01/13 13:20//
 >
 > Hi Larry. That's a bit premature, SCUTTLE is resilient and it won't do anything bad without several weeks with no check-ins. If it was working last week we have until Valentine's Day at the earliest. We'll get it taken care of. Brandon, the snapshots look fine as far as I can see, you're set to try a reversion at 1700. Be prepared for a long evening, those can take a while if you haven't done one on a system that old. I can't force a current snapshot so get a system image before you do anything on the ground. Terry.
 
 ------
 
-> ++++++ IR#20██011300███-12, Status: //Replied.// User: //byarbr01// (**IP:** 10.101.147.███) Timestamp: //20██/01/13 13:42//
+> ++++++ IR#20██011300███-13, Status: //Replied.// User: //byarbr01// (**IP:** 10.101.147.███) Timestamp: //20██/01/13 13:42//
 >
 > Sounds good, I'll check in with you this evening. BY
 
@@ -149,13 +149,13 @@ Maria, see Incident 20██011300███ at your earliest convenience and giv
 
 ------
 
-> ++++++ IR#20██011300███-13, Status: //Reply by submitter.// User: //lrhode02// (**IP:** 10.101.25.███) Timestamp: //20██/01/14 11:10//
+> ++++++ IR#20██011300███-14, Status: //Reply by submitter.// User: //lrhode02// (**IP:** 10.101.25.███) Timestamp: //20██/01/14 11:10//
 >
 > Good morning gentlemen. I'm seeing a black screen on SCUTTLE I've never seen before. What is the status of this? LR
 
 ------
 
-> ++++++ IR#20██011300███-14, Status: //Replied.// User: //tthomp03// (**IP:** 10.101.147.███) Timestamp: //20██/01/14 11:42//
+> ++++++ IR#20██011300███-15, Status: //Replied.// User: //tthomp03// (**IP:** 10.101.147.███) Timestamp: //20██/01/14 11:42//
 >
 > Larry: We have run into some complications. I'm bringing in higher-ups to help work through the issue. We will let you know when we've found a resolution. Terry.
 
@@ -189,32 +189,32 @@ Director, Recordkeeping And Information Security Administration
 
 ------
 
-> ++++++ IR#20██011300███-15, Status: //Replied.// User: //wjacks02// (**IP:** 10.101.121.███) Timestamp: //20██/01/15 10:14//
+> ++++++ IR#20██011300███-16, Status: //Replied.// User: //wjacks02// (**IP:** 10.101.121.███) Timestamp: //20██/01/15 10:14//
 >
 > These snapshots look perfect to me. Everything inside is readable and editable when I mount them. I'm aware of the error code but I shouldn't be able to access anything on the image if it were a corrupt filesystem. I'm going to start getting into the deeper code with the team, go through the assembly. We've only got one employee that can make heads or tails of ML and she's currently on vacation. Did you guys really never test your backup scheme? The structure of this file is absolutely wild.
 > Wayne Jackson, Senior Programmer, RAISA
 
 ------
 
-> ++++++ IR#20██011300███-16, Status: //Replied.// User: //tthomp03// (**IP:** 10.101.147.███) Timestamp: //20██/01/15 11:33//
+> ++++++ IR#20██011300███-17, Status: //Replied.// User: //tthomp03// (**IP:** 10.101.147.███) Timestamp: //20██/01/15 11:33//
 >
 > Wayne: Good to hear re: image integrity but I don't know what to take away from that as far as a solution. They do not work when we reimage the machine. Regarding testing of backups, I will be honest. SCUTTLE is a very old system and one we have been hesitant to modify due to the ramifications of any extended downtime. The backups we did implement are not analogous to newer systems like XACT or BOUNCE, as you've already seen, there's low-level emulation going on that we've been shoehorned into using for quite a long time, and it doesn't permit much deviation from a set way of doing things. You guys did quite a job even getting us backups on a hot system that old and arcane, but that was implemented quite a while ago and I don't believe anyone involved is still available. See if your employee can be contacted and if she can VPN in or cut her vacation short. TT
 
 ------
 
-> ++++++ IR#20██011300███-17, Status: //Replied.// User: //wjacks02// (**IP:** 10.101.121.███) Timestamp: //20██/01/16 11:03//
+> ++++++ IR#20██011300███-18, Status: //Replied.// User: //wjacks02// (**IP:** 10.101.121.███) Timestamp: //20██/01/16 11:03//
 >
 > I got a hold of Valerie, she's making arrangements to fly back. Can you get an FSET report off the SCUTTLE computer in the meantime? Wayne
 
 ------
 
-> ++++++ IR#20██011300███-18, Status: //Replied.// User: //byarbr01// (**IP:** 10.101.147.███) Timestamp: //20██/01/16 14:14//
+> ++++++ IR#20██011300███-19, Status: //Replied.// User: //byarbr01// (**IP:** 10.101.147.███) Timestamp: //20██/01/16 14:14//
 >
 > I'm on it. BY
 
 ------
 
-> ++++++ IR#20██011300███-19, Status: //Replied.// User: //byarbr01// (**IP:** 10.101.147.███) Timestamp: //20██/01/16 17:22//
+> ++++++ IR#20██011300███-20, Status: //Replied.// User: //byarbr01// (**IP:** 10.101.147.███) Timestamp: //20██/01/16 17:22//
 >
 > See attached. BY
 >
@@ -222,79 +222,79 @@ Director, Recordkeeping And Information Security Administration
 
 ------
 
-> ++++++ IR#20██011300███-20, Status: //Replied.// User: //vsheld01// (**IP:** 10.101.121.███) Timestamp: //20██/01/20 09:43//
+> ++++++ IR#20██011300███-21, Status: //Replied.// User: //vsheld01// (**IP:** 10.101.121.███) Timestamp: //20██/01/20 09:43//
 >
 > Good morning. I've been brought up to speed on the situation and will begin going over the diagnostics sent and the images provided. Thanks, Valerie Sheldon.
 
 ------
 
-> ++++++ IR#20██011300███-21, Status: //Replied.// User: //tthomp03// (**IP:** 10.101.147.███) Timestamp: //20██/01/20 10:06//
+> ++++++ IR#20██011300███-22, Status: //Replied.// User: //tthomp03// (**IP:** 10.101.147.███) Timestamp: //20██/01/20 10:06//
 >
 > Thanks, let me know if I can assist. Sorry we had to pull you from your family gathering. I know you understand the seriousness of the situation. Terry
 
 ------
 
-> ++++++ IR#20██011300███-22, Status: //Replied.// User: //vsheld01// (**IP:** 10.101.121.███) Timestamp: //20██/01/22 11:14//
+> ++++++ IR#20██011300███-23, Status: //Replied.// User: //vsheld01// (**IP:** 10.101.121.███) Timestamp: //20██/01/22 11:14//
 >
 > I think we've found something. The way these backups try to restore, it's loading an incompatible RAID driver before the correct one, and the system is erroring out before the rest of the drivers load. That could definitely cause a filesystem error, if it can't see the virtual disk. Your FSET report confirms a different RAID controller was installed about six years ago. I didn't even know they did RAID that far back, I was still in college when this thing was rolled out. I think we have a potential solution here, I'm going to be working with the team and try and replace all the properties of the old driver with the new one. I'll get back to you when we've got something for you to try.
 
 ------
 
-> ++++++ IR#20██011300███-23, Status: //Replied.// User: //tthomp03// (**IP:** 10.101.147.███) Timestamp: //20██/01/22 13:08//
+> ++++++ IR#20██011300███-24, Status: //Replied.// User: //tthomp03// (**IP:** 10.101.147.███) Timestamp: //20██/01/22 13:08//
 >
 > Valerie, that's great news. Let me know when you've got something for us to try to spin up. I can't even get a proper VM set up for SCUTTLE (HW mismatches which coincides with what you're saying) so we'll be trying it on the live machine. Terry
 
 ------
 
-> ++++++ IR#20██011300███-24, Status: //Replied.// User: //tthomp03// (**IP:** 10.101.147.███) Timestamp: //20██/01/25 07:46//
+> ++++++ IR#20██011300███-25, Status: //Replied.// User: //tthomp03// (**IP:** 10.101.147.███) Timestamp: //20██/01/25 07:46//
 >
 > Valerie: What is the status on this? We're already further into the calendar than I'm comfortable with. TT
 
 ------
 
-> ++++++ IR#20██011300███-25, Status: //Replied.// User: //vsheld01// (**IP:** 10.101.121.███) Timestamp: //20██/01/25 16:47//
+> ++++++ IR#20██011300███-26, Status: //Replied.// User: //vsheld01// (**IP:** 10.101.121.███) Timestamp: //20██/01/25 16:47//
 >
 > Hi Terry, I think this should work. Check fs01-006 under SCUTTLE_IMG_3. This thing is a pain in the butt to put back together. Let's talk about overhauling this system when we're not under the gun, nobody on my team wants to sort through this mess again. VS
 
 ------
 
-> ++++++ IR#20██011300███-26, Status: //Replied.// User: //tthomp03// (**IP:** 10.101.147.███) Timestamp: //20██/01/26 08:00//
+> ++++++ IR#20██011300███-27, Status: //Replied.// User: //tthomp03// (**IP:** 10.101.147.███) Timestamp: //20██/01/26 08:00//
 >
 > Valerie, any idea how to reconcile this snapshot to the base? Nothing I'm trying is working.
 
 ------
 
-> ++++++ IR#20██011300███-27, Status: //Replied.// User: //tthomp03// (**IP:** 10.101.147.███) Timestamp: //20██/01/26 08:12//
+> ++++++ IR#20██011300███-28, Status: //Replied.// User: //tthomp03// (**IP:** 10.101.147.███) Timestamp: //20██/01/26 08:12//
 >
 > Disregard, I stuck it right in line after the base image and it took. We're gonna build this up and try it shortly.
 
 ------
 
-> ++++++ IR#20██011300███-28, Status: //Replied.// User: //byarbr01// (**IP:** 10.101.254.███) Timestamp: //20██/01/26 14:44//
+> ++++++ IR#20██011300███-29, Status: //Replied.// User: //byarbr01// (**IP:** 10.101.254.███) Timestamp: //20██/01/26 14:44//
 >
 > No dice. Gets much further along but errors out E0x45 HSHFAIL. Is that hash checking? Brandon.
 
 ------
 
-> ++++++ IR#20██011300███-29, Status: //Replied.// User: //vsheld01// (**IP:** 10.101.121.███) Timestamp: //20██/01/26 16:02//
+> ++++++ IR#20██011300███-30, Status: //Replied.// User: //vsheld01// (**IP:** 10.101.121.███) Timestamp: //20██/01/26 16:02//
 >
 > Let me look into it and get back to you. I'm going to have to work backwards from that message, may take a bit.
 
 ------
 
-> ++++++ IR#20██011300███-30, Status: //Replied.// User: //vsheld01// (**IP:** 10.101.121.███) Timestamp: //20██/01/28 08:08//
+> ++++++ IR#20██011300███-31, Status: //Replied.// User: //vsheld01// (**IP:** 10.101.121.███) Timestamp: //20██/01/28 08:08//
 >
 > We've found what's going on with the message, it is related to hash checking, but whoever implemented it should get taken out back and shot. Rather than use a standard they've done some mess of their own, and I don't have a good system here to check the math. I don't know a faster way to work through it than to send you a couple of images and have you try them one by one. I'll email you and Brandon directly when I've got some options to try. VS
 
 ------
 
-> ++++++ IR#20██011300███-31, Status: //Reply by submitter.// User: //lrhode02// (**IP:** 10.101.25.███) Timestamp: //20██/01/28 13:10//
+> ++++++ IR#20██011300███-32, Status: //Reply by submitter.// User: //lrhode02// (**IP:** 10.101.25.███) Timestamp: //20██/01/28 13:10//
 >
 > All, I've been following this and I'm concerned. It's been over two weeks and we're no closer to a resolution? It sounds like this is a guess on Valerie's part to me. LR
 
 ------
 
-> ++++++ IR#20██011300███-32, Status: //Replied.// User: //mjones06// (**IP:** 10.5.100.█) Timestamp: //20██/01/28 15:52//
+> ++++++ IR#20██011300███-33, Status: //Replied.// User: //mjones06// (**IP:** 10.5.100.█) Timestamp: //20██/01/28 15:52//
 >
 > I will not doubt my own people, but we are indeed starting to run low on time. I am declaring this a SCRAMBLE situation. Terry, please relocate to the RAISA programming office. I will get some correspondence out to my staff today and general staff tomorrow.
 
