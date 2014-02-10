@@ -1,0 +1,345 @@
+title:SCUTTLE
+[[>]]
+[[module Rate]]
+[[/>]]
++++ PROVISIONAL ENTRY -- SCRAMBLE ORDER INITIATED, ALL TECHNICAL ADVISORS AND RAISA STAFF TO SITE-01 -- PROVISIONAL ENTRY
+
+++++ This is an automatically generated entry documenting breaking events. Situation type: {{SCRAMBLE.}} Affected systems: {{SCUTTLE.}} Affected personnel: {{RAISA, TECHNICAL.}} This entry was generated on {{20██/01/28 15:42}} by {{Maria Jones [mjones06]}}
+
+**Incident #:** {{20██011300███}}
+
+**Severity:** {{Critical}}
+
+**Possibility of Foundation Casualties:** {{High}}
+
+**Risk of Public Dissemination:** {{High}}
+
+**Incident Status:** {{In-Progress}}
+
+**Affected Sites:** {{Site-01, Site-06, Site-15, Site-17, Site-19, Site-23, Site-28, Site-36, Site-62, Site-66, Site-73, Site-76, Site-77, Site-103, Site-104}}
+
+[[collapsible show="Access to Ticket History restricted to Technical staff." hide="Close Ticket History."]]
+
+++++ Ticket History
+
+------
+
+> ++++++ IR#20██011300███-01, Status: //Created.// User: //lrhode02// (**IP:** 10.101.25.███) Timestamp: //20██/01/13 07:38//
+>
+> We're currently unable to interact with the SCUTTLE computer, system appears totally unresponsive at three-factor auth screen. Are you guys doing anything to it? LR
+
+------
+
+> ++++++ IR#20██011300███-02, Status: //Replied.// User: //rsmith04// (**IP:** 10.101.137.███) Timestamp: //20██/01/13 08:14//
+>
+> Good morning Larry. Not to my knowledge. Let me get in and I'll get back to you. Rob.
+
+------
+
+> ++++++ IR#20██011300███-03, Status: //Reply from submitter.// User: //lrhode02// (**IP:** 10.101.25.███) Timestamp: //20██/01/13 08:18//
+>
+> Thanks.
+
+------
+
+> ++++++ IR#20██011300███-04, Status: //Replied.// User: //mdavis01// (**IP:** 10.119.155.███) Timestamp: //20██/01/13 08:37//
+>
+> Thought I'd add that 19's link to SCUTTLE is down. We'd all appreciate this taken care of as quickly as possible. Mike Davis
+
+------
+
+> ++++++ IR#20██011300███-05, Status: //Replied.// User: //rsmith04// (**IP:** 10.101.137.███) Timestamp: //20██/01/13 08:44//
+>
+> I'm unable to get in remotely. Escalating this, stand by.
+
+**User rsmith04 has set severity to {{Medium}}.**
+
+------
+
+> ++++++ IR#20██011300███-06, Status: //Replied.// User: //tthomp03// (**IP:** 10.101.147.███) Timestamp: //20██/01/13 09:03//
+>
+> Good morning. None of our tools are facilitating remote access, dispatching a technician to look at SCUTTLE.
+> Terry Thompson, Sr. Network Engineer
+
+------
+
+> ++++++ IR#20██011300███-07, Status: //Replied.// User: //byarbr01// (**IP:** 10.101.254.███) Timestamp: //20██/01/13 10:39//
+>
+> Confirming initial report is as described. Are any of the sites checking in with SCUTTLE right now? If not, I'm going to powercycle this thing. Brandon
+> //Sent at light-speed from a shiny mobile device.//
+
+------
+
+> ++++++ IR#20██011300███-08, Status: //Replied.// User: //tthomp03// (**IP:** 10.101.147.███) Timestamp: //20██/01/13 10:42//
+>
+> I'm not seeing any heartbeat from any of the sites, go ahead when you're ready. And please find me when you get back so I can show you how to turn that stupid signature off. Terry.
+
+------
+
+> ++++++ IR#20██011300███-09, Status: //Replied.// User: //byarbr01// (**IP:** 10.101.254.███) Timestamp: //20██/01/13 12:10//
+>
+> Tried multiple powercycles, no luck. Brought an extra set of peripherals, no difference. How are snapshots looking? They said it was working for sure last Friday. Do we even snapshot SCUTTLE? Also I found where you turn it off, sorry. :)
+
+------
+
+> ++++++ IR#20██011300███-10, Status: //Replied.// User: //tthomp03// (**IP:** 10.101.254.███) Timestamp: //20██/01/13 12:27//
+>
+> I grabbed lunch, I'll check snapshots when I get back to my desk. We do weekly snapshots of SCUTTLE and they should be fine, let's plan on reverting at 1700. Get lunch and come back. Be prepared to do this via cold storage to physical media, that thing sounds like it's dead as a doorknob.
+
+------
+
+> ++++++ IR#20██011300███-10, Status: //Reply from submitter.// User: //lrhode02// (**IP:** 10.101.25.███) Timestamp: //20██/01/13 13:09//
+>
+> I don't want to be alarmist or anything, but should I be making plans? I've never heard of SCUTTLE acting up. LR
+
+------
+
+> ++++++ IR#20██011300███-11, Status: //Replied.// User: //tthomp03// (**IP:** 10.101.147.███) Timestamp: //20██/01/13 13:20//
+>
+> Hi Larry. That's a bit premature, SCUTTLE is resilient and it won't do anything bad without several weeks with no check-ins. If it was working last week we have until Valentine's Day at the earliest. We'll get it taken care of. Brandon, the snapshots look fine as far as I can see, you're set to try a reversion at 1700. Be prepared for a long evening, those can take a while if you haven't done one on a system that old. I can't force a current snapshot so get a system image before you do anything on the ground. Terry.
+
+------
+
+> ++++++ IR#20██011300███-12, Status: //Replied.// User: //byarbr01// (**IP:** 10.101.147.███) Timestamp: //20██/01/13 13:42//
+>
+> Sounds good, I'll check in with you this evening. BY
+
+------
+
+From: Brandon Yarbrough [byarbr01]
+To: Terry Thompson [tthomp03]
+Sent: 20██/01/13 21:22
+Subject: SCUTTLE - Still Broken
+
+Terry,
+
+I did get the old image off the SAN and onto SCUTTLE. Now it just clears the POST before throwing an E0x18 CORR_FS. Are you sure those snapshots were okay?
+
+Brandon
+
+------
+
+From: Terry Thompson [tthomp03]
+To: Brandon Yarbrough [byarbr01]
+Sent: 20██/01/14 07:44
+Subject: RE: SCUTTLE - Still Broken
+
+That's no good. I'll try and spin up a mini-SCUTTLE on a dead VLAN with these old snapshots. Plan on getting back out there first thing and put that system state you took back on it.
+
+------
+
+From: Brandon Yarbrough [byarbr01]
+To: Terry Thompson [tthomp03]
+Sent: 20██/01/14 09:58
+Subject: RE: SCUTTLE - Still Broken
+
+What system state? You can't take an image off this RE.
+
+------
+
+From: Terry Thompson [tthomp03]
+To: Brandon Yarbrough [byarbr01]
+Cc: Maria Jones [mjones06]
+Sent: 20██/01/14 10:44
+Subject: FW: SCUTTLE - Still Broken
+
+I'm trying very hard not to lose my temper, but you absolutely can, and should have, as I asked you to. Where you did Image->Disk, you pick Disk->Image instead. It's literally two options down. How did you not know this?
+
+Maria, see Incident 20██011300███ at your earliest convenience and give me your thoughts on a COA. You know SCUTTLE better than I do, and what exactly the ramifications are of going more than four weeks back.
+
+------
+
+> ++++++ IR#20██011300███-13, Status: //Reply by submitter.// User: //lrhode02// (**IP:** 10.101.25.███) Timestamp: //20██/01/14 11:10//
+>
+> Good morning gentlemen. I'm seeing a black screen on SCUTTLE I've never seen before. What is the status of this? LR
+
+------
+
+> ++++++ IR#20██011300███-14, Status: //Replied.// User: //tthomp03// (**IP:** 10.101.147.███) Timestamp: //20██/01/14 11:42//
+>
+> Larry: We have run into some complications. I'm bringing in higher-ups to help work through the issue. We will let you know when we've found a resolution. Terry.
+
+**User tthomp03 has set severity to {{High}}.**
+
+------
+
+From: Maria Jones [mjones06]
+To: Terry Thompson [tthomp03]; Brandon Yarbrough [byarbr01]
+Cc: O5-1 [o5comm01]; O5-6 [o5comm06]; O5-11 [o5comm11]
+Subject: SCUTTLE Outage
+Importance: High
+Sent: 20██/01/14 14:12
+
+All,
+
+I've looked at the incident so far, and worked with Terry via a remote session and looked at the integrity of our SCUTTLE backups. We might be in trouble.
+
+I've sent the last three weekly snapshots (which are, in a nutshell, one big file that contains everything about what was loaded on a computer) to our programmers, but we may be suffering from a corrupted base image. Basically, we start with one large inventory of everything on the system, and then every week we track the changes made and designate it as a new snapshot. This is known as an incremental image, and allows for a much longer history of revisions for the storage. SCUTTLE is a bulky enough system that taking a brand new image of everything on the computer once a week was deemed untenable as the system collects a lot of data and the possibility of data corruption is very high.
+
+I believe everyone is up-to-speed on what the system is and does, but if you need a refresher, please see the RAISA Portal, KB10235, "System to Contain Unsupportable Threats To Life and Existence", and KB10236, "SCUTTLE Dead Man's Switch Protocol."
+
+The base image was checked for consistency when it was created, so I'm not yet sure why we're having these issues. However, the question was raised on what happens if the last good image is from a time further than four weeks back. Theoretically, based on the order in which things are checked and synchronized, there should be no trouble at all. However, this is the first SCUTTLE outage directly attributable to the server itself in the many years that we've used it, and I'm simply not willing to take the risk until we can do more testing.
+
+At this point I am exercising administrative rights to pull Terry Thompson from all other incidents until this issue has been resolved.
+
+Regards,
+
+Maria Jones
+Director, Recordkeeping And Information Security Administration
+
+------
+
+> ++++++ IR#20██011300███-15, Status: //Replied.// User: //wjacks02// (**IP:** 10.101.121.███) Timestamp: //20██/01/15 10:14//
+>
+> These snapshots look perfect to me. Everything inside is readable and editable when I mount them. I'm aware of the error code but I shouldn't be able to access anything on the image if it were a corrupt filesystem. I'm going to start getting into the deeper code with the team, go through the assembly. We've only got one employee that can make heads or tails of ML and she's currently on vacation. Did you guys really never test your backup scheme? The structure of this file is absolutely wild.
+> Wayne Jackson, Senior Programmer, RAISA
+
+------
+
+> ++++++ IR#20██011300███-16, Status: //Replied.// User: //tthomp03// (**IP:** 10.101.147.███) Timestamp: //20██/01/15 11:33//
+>
+> Wayne: Good to hear re: image integrity but I don't know what to take away from that as far as a solution. They do not work when we reimage the machine. Regarding testing of backups, I will be honest. SCUTTLE is a very old system and one we have been hesitant to modify due to the ramifications of any extended downtime. The backups we did implement are not analogous to newer systems like XACT or BOUNCE, as you've already seen, there's low-level emulation going on that we've been shoehorned into using for quite a long time, and it doesn't permit much deviation from a set way of doing things. You guys did quite a job even getting us backups on a hot system that old and arcane, but that was implemented quite a while ago and I don't believe anyone involved is still available. See if your employee can be contacted and if she can VPN in or cut her vacation short. TT
+
+------
+
+> ++++++ IR#20██011300███-17, Status: //Replied.// User: //wjacks02// (**IP:** 10.101.121.███) Timestamp: //20██/01/16 11:03//
+>
+> I got a hold of Valerie, she's making arrangements to fly back. Can you get an FSET report off the SCUTTLE computer in the meantime? Wayne
+
+------
+
+> ++++++ IR#20██011300███-18, Status: //Replied.// User: //byarbr01// (**IP:** 10.101.147.███) Timestamp: //20██/01/16 14:14//
+>
+> I'm on it. BY
+
+------
+
+> ++++++ IR#20██011300███-19, Status: //Replied.// User: //byarbr01// (**IP:** 10.101.147.███) Timestamp: //20██/01/16 17:22//
+>
+> See attached. BY
+>
+> //Attachment:// FSET.log [4096 KB]
+
+------
+
+> ++++++ IR#20██011300███-20, Status: //Replied.// User: //vsheld01// (**IP:** 10.101.121.███) Timestamp: //20██/01/20 09:43//
+>
+> Good morning. I've been brought up to speed on the situation and will begin going over the diagnostics sent and the images provided. Thanks, Valerie Sheldon.
+
+------
+
+> ++++++ IR#20██011300███-21, Status: //Replied.// User: //tthomp03// (**IP:** 10.101.147.███) Timestamp: //20██/01/20 10:06//
+>
+> Thanks, let me know if I can assist. Sorry we had to pull you from your family gathering. I know you understand the seriousness of the situation. Terry
+
+------
+
+> ++++++ IR#20██011300███-22, Status: //Replied.// User: //vsheld01// (**IP:** 10.101.121.███) Timestamp: //20██/01/22 11:14//
+>
+> I think we've found something. The way these backups try to restore, it's loading an incompatible RAID driver before the correct one, and the system is erroring out before the rest of the drivers load. That could definitely cause a filesystem error, if it can't see the virtual disk. Your FSET report confirms a different RAID controller was installed about six years ago. I didn't even know they did RAID that far back, I was still in college when this thing was rolled out. I think we have a potential solution here, I'm going to be working with the team and try and replace all the properties of the old driver with the new one. I'll get back to you when we've got something for you to try.
+
+------
+
+> ++++++ IR#20██011300███-23, Status: //Replied.// User: //tthomp03// (**IP:** 10.101.147.███) Timestamp: //20██/01/22 13:08//
+>
+> Valerie, that's great news. Let me know when you've got something for us to try to spin up. I can't even get a proper VM set up for SCUTTLE (HW mismatches which coincides with what you're saying) so we'll be trying it on the live machine. Terry
+
+------
+
+> ++++++ IR#20██011300███-24, Status: //Replied.// User: //tthomp03// (**IP:** 10.101.147.███) Timestamp: //20██/01/25 07:46//
+>
+> Valerie: What is the status on this? We're already further into the calendar than I'm comfortable with. TT
+
+------
+
+> ++++++ IR#20██011300███-25, Status: //Replied.// User: //vsheld01// (**IP:** 10.101.121.███) Timestamp: //20██/01/25 16:47//
+>
+> Hi Terry, I think this should work. Check fs01-006 under SCUTTLE_IMG_3. This thing is a pain in the butt to put back together. Let's talk about overhauling this system when we're not under the gun, nobody on my team wants to sort through this mess again. VS
+
+------
+
+> ++++++ IR#20██011300███-26, Status: //Replied.// User: //tthomp03// (**IP:** 10.101.147.███) Timestamp: //20██/01/26 08:00//
+>
+> Valerie, any idea how to reconcile this snapshot to the base? Nothing I'm trying is working.
+
+------
+
+> ++++++ IR#20██011300███-27, Status: //Replied.// User: //tthomp03// (**IP:** 10.101.147.███) Timestamp: //20██/01/26 08:12//
+>
+> Disregard, I stuck it right in line after the base image and it took. We're gonna build this up and try it shortly.
+
+------
+
+> ++++++ IR#20██011300███-28, Status: //Replied.// User: //byarbr01// (**IP:** 10.101.254.███) Timestamp: //20██/01/26 14:44//
+>
+> No dice. Gets much further along but errors out E0x45 HSHFAIL. Is that hash checking? Brandon.
+
+------
+
+> ++++++ IR#20██011300███-29, Status: //Replied.// User: //vsheld01// (**IP:** 10.101.121.███) Timestamp: //20██/01/26 16:02//
+>
+> Let me look into it and get back to you. I'm going to have to work backwards from that message, may take a bit.
+
+------
+
+> ++++++ IR#20██011300███-30, Status: //Replied.// User: //vsheld01// (**IP:** 10.101.121.███) Timestamp: //20██/01/28 08:08//
+>
+> We've found what's going on with the message, it is related to hash checking, but whoever implemented it should get taken out back and shot. Rather than use a standard they've done some mess of their own, and I don't have a good system here to check the math. I don't know a faster way to work through it than to send you a couple of images and have you try them one by one. I'll email you and Brandon directly when I've got some options to try. VS
+
+------
+
+> ++++++ IR#20██011300███-31, Status: //Reply by submitter.// User: //lrhode02// (**IP:** 10.101.25.███) Timestamp: //20██/01/28 13:10//
+>
+> All, I've been following this and I'm concerned. It's been over two weeks and we're no closer to a resolution? It sounds like this is a guess on Valerie's part to me. LR
+
+------
+
+> ++++++ IR#20██011300███-32, Status: //Replied.// User: //mjones06// (**IP:** 10.5.100.█) Timestamp: //20██/01/28 15:52//
+>
+> I will not doubt my own people, but we are indeed starting to run low on time. I am declaring this a SCRAMBLE situation. Terry, please relocate to the RAISA programming office. I will get some correspondence out to my staff today and general staff tomorrow.
+
+**User mjones06 has set severity to {{Critical}}.**
+**User mjones06 has added situation {{SCRAMBLE}}.**
+[[/collapsible]]
+
+[[collapsible show="Email to RAISA and Technical Staff" hide="Hide Email"]]From: Maria Jones [mjones06]
+To: RAISA Staff [raisa]; Technical Staff [techstaff]
+Subject: SCRAMBLE ORDER -- Site-01
+Importance: High
+Sent: 20██/01/28 16:56
+
+Staff,
+
+Due to the extended SCUTTLE outage, I am declaring a SCRAMBLE order to Site-01. Transport liaisons have been informed and will make arrangements for your flight. If you've never been, don't worry when you see it. The site's much bigger than it looks and you will have sufficient space to set up shop for a couple of weeks. We will be working on the SCUTTLE issue around the clock from now until February 12th at 2300. If no solution has been found, we will evacuate the site and all personnel. Please read the attachments, which include the ticket history of the incident, an FSET log for the SCUTTLE server, and some documentation on the ScuttleOS architecture. The system is totally dead right now so there are no silly ideas. We will have teams trying to salvage the old system, a team working on preparing all Foundation data for relocation, and a team trying to build up something that can send heartbeats to all offline sites. Unfortunately for the latter, SCUTTLE was designed before some of you were even born and it's not as simple as it should be.
+
+If you have questions please contact your supervisor and/or your transport liaison.
+
+We may have made this mess, but let's do what we can to save the Foundation.
+
+Maria Jones
+Director, RAISA
+[[/collapsible]]
+
+[[collapsible show="Email to all staff from Maria Jones" hide="Hide Email"]]From: Maria Jones [mjones06]
+To: SCP Foundation Staff [allusers]
+Subject: SCUTTLE Emergency
+Importance: High
+Sent: 20██/01/29 11:11
+
+Good morning (or evening, wherever you are),
+
+My name is Maria Jones and I'm head of the Recordkeeping And Information Security Administration. Some of you are familiar with RAISA, but I'd wager most of you are not. We are a combination of IT, Programmers, Security Auditors and Engineers that keep the Foundation's network secure and intact. We have been dealing with an issue over the last two weeks that affects all currently-staffed Foundation sites.
+
+As most of you know, Site-01 is a green zone, we house no anomalies and instead focus on research, data collection, and administration. We also house a machine called SCUTTLE that is our last resort in the event of an incursion by either hostile forces or an unforeseen anomaly. SCUTTLE is what's known as a "dead man's switch," whereby if your Site doesn't hear from SCUTTLE (and thus Site-01) for a long period of time, that Site's on-site nuclear warhead is detonated, which is provisioned to be powerful enough to vaporize your particular site.
+
+You might know where I'm going with this. SCUTTLE is broken.
+
+I want to be clear that you're not in imminent danger of being vaporized; we know exactly when to move you to safety if we cannot resolve the current issue. As such, please continue with your job as usual until February 10th at 2300 UTC. If you have not received an email from me between now and then, you will receive one automatically indicating the plan of evacuation for your particular site. These plans will be very similar to evacuation drills you've already done numerous times.
+
+Foundation administration is actively working on a suppression campaign to protect our secrecy should the worst occur, but in all honesty there aren't very many credible cover stories for fifteen nukes detonating simultaneously around the world. That team is accepting emails with suggestions at [misinfo].
+
+The Foundation will survive, because it must. We all appreciate your cooperation during this situation.
+
+Maria Jones
+Director, Recordkeeping And Information Security Administration
+[[/collapsible]]
