@@ -1,0 +1,128 @@
+title:SCP Wiki Userscripts
++ What this is
+
+This page hosts several userscripts to alter and hopefully improve your site experience. If it's hosted here it's been tested on Firefox and Chrome, and //should// work without any problems. If they don't, report any bugs to [http://www.wikidot.com/account/messages#/new/1346995 Crayne] know and he'll work on a fix.
+
+They //might// work on Opera and Safari, but they haven't been tested for it. See 'How to install the userscripts' below for a link to instructions on getting userscripts to run in those browsers.
+
++ What this isn't
+
+An attempt to screw with your browser, your computer, or your life. Nor is it a vast conspiracy to steal those pics of you at the beach wearing nothing but a small guinea pig and assorted fruits. Seriously, these don't do anything other than modify your user experience on the SCP wiki.
+
++ How to install Greasemonkey (Firefox) or Tampermonkey (Chrome)
+
+If you're a Firefox user, go [https://addons.mozilla.org/en-us/firefox/addon/greasemonkey here] and click the button labeled '+ Add to Firefox'.
+
+If you're a Chrome user, go [https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo here] and click the button labeled '+ Free'. 
+
+If you're Safari user, go [http://www.simplehelp.net/2007/11/14/how-to-run-greasemonkey-scripts-in-safari here] to find instructions on how to enable your browser to run userscripts.
+
+That will install the base you need to be able to run the scripts linked here.
+
++ How to install the userscripts
+
+**Firefox:** click on the link below and let Greasemonkey install it for you.
+
+**Chrome:** click on the link below and download the script to you computer. Then click on the "Customize Google Chrome Button" to the right of the address bar and go to Tools > Extensions. Drag the downloaded script onto the Extensions page and then customize and install the script.
+
+**Opera:** [http://my.opera.com/Contrid/blog/2007/02/11/how-to-greasemonkey-in-opera This page] tells you how to install userscripts for your browser.
+
+**Safari:** [http://www.simplehelp.net/2007/11/14/how-to-run-greasemonkey-scripts-in-safari This page] tells you how to install userscripts for your browser.
+
++ The userscripts
+
+[[div class="content-panel standalone series"]]
+++ The Jumpbox
+
+**Link:** [[file scpwiki-jumpbox.user.js|Click here to download/install]]
+
+**Screenshot:**
+
+[[image Jumpbox-screenshot.png]]
+
+**Description:** Inserts a small textbox and button next to your account information at the top right of the screen. Jumpbox allows you to instantly jump to any article you want. Typing in only numbers will shoot you off to the relevant scip. Typing in a mix of letters and numbers, or only letters, will get you that page. So 'chat guide' will get the chat guide. Note that Wikidot takes care of the spaces in there, converting them to dashes.
+
+Both an ENTER keypress and a click on the button work to submit.
+
+**Note:** it doesn't check whether or not the page exists and it doesn't provide anything in the way of spelling correction. 
+
+[[collapsible show="[+] Detailed instructions for usage" hide="[-] Detailed instructions for usage"]]
+
+Preface a title with **[modifier]|** to get a specific type of article. When you want the tale '827' by A Fat Ghost and not SCP-827, typing **t|827** will get you exactly what you want, whereas just the number, or **SCP-827** will get you the scp. 
+
+* **j:** for Joke articles (includes a special fix for SCP-J)
+* **x:** for -EX articles
+* **a:** for -ARC articles
+* **d:** for -D articles
+* **h:** for hub pages (i.e. typing in **h|unfounded** should get you the Unfounded Canon hub page.
+* **t:** for tales
+
+If you use any other modifier, it ignores it and acts like you only requested the page you specified after the pipe. I.e. typing **o|chat guide** will get you the chat guide, ignoring the unknown modifier.
+
+[[/collapsible]]
+
+**Verified working on:** [[image FF_icon.png]] [[image Chrome_icon.png]]
+
+[[/div]]
+
+[[div class="content-panel standalone series"]]
+++ Previous/Next Buttons for SCPs
+
+**Link:** [[file scpwiki-prev-next.user.js|Click here to download/install]]
+
+**Screenshot:**
+
+[[collapsible show="[+] Screenshot" hide="[-] Screenshot"]]
+[[image PrevNext-screenshot.png]]
+[[/collapsible]]
+
+**Description:** This provides "<< Previous" and "Next >>" links at the top of any mainlist SCP article. Works fairly fast, but does get slower when there's a lot of [ACCESS DENIED]s between the current page and the next eligible article. This is really only a factor in Series 3 at this moment.
+
+**Verified working on:** [[image FF_icon.png]] [[image Chrome_icon.png]]
+
+[[/div]]
+
+[[div class="content-panel standalone series"]]
+++ PM shortcut
+
+**Link:** [[file scpwiki-pm-shortcut.user.js|Click here to download/install]]
+
+**Screenshot:**
+
+[[image PMShortcut-screenshot.png]]
+
+**Description:** Adds a small envelope image to the right of usernames produced with the Wikidot @@[[user XXXX]]@@ and @@[[*user XXXX]]@@ syntax. Click on the envelope to go directly to a new Wikidot PM addressed to that user.
+
+**Verified working on:** [[image FF_icon.png]] [[image Chrome_icon.png]]
+
+[[/div]]
+
+[[div class="content-panel standalone series"]]
+++ Author Karma
+
+**Link:** [[file scpwiki-author-karma.user.js|Click here to download/install]]
+
+**Screenshot:**
+
+[[image AuthorKarma-screenshot.png]]
+
+**Description:** Replaces the Wikidot karmabar with one that signifies how many succesful scips and tales a user has written for the wiki. Also adds a textual representation after the username.
+
+**Verified working on:** [[image FF_icon.png]]
+
+[[/div]]
+
+[[div class="content-panel standalone series"]]
+++ Staff Identification
+
+**Link:** [[file scpwiki-staff-ids.user.js|Click here to download/install]]
+
+**Screenshot:**
+
+[[image Staff-identification-screenshot.png]]
+
+**Description:** Adds a title below the username to signify if a user is staff and what position they hold.
+
+**Verified working on:** [[image FF_icon.png]]
+
+[[/div]]
