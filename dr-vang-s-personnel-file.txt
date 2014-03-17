@@ -441,46 +441,8 @@ Pages at +300 (go congratulate/fellate/WORSHIP them!):
 || %%title_linked%% || %%created_at%% || %%rating%% ||
 [[/module]]
 [[/collapsible]]
-++++++ .
 [[collapsible show="Successful recent articles." hide="Click to hide."]]
 [[module ListPages rating=">9" created_at="last 5 days" separate="false" prepend_line="||~ Title ||~ Creation date ||~ Rating||"]]
 || %%title_linked%% || %%created_at%% || %%rating%% ||
 [[/module]]
 [[/collapsible]]
-
-Some code:
-[[code]]
-[[collapsible show="SCPs at +40 or less." hide="Click to hide."]]
-[[div style="float:left; width: 21%; padding: 0 2%"]]
-[[module ListPages rating="<41" tags="-archived, scp" separate="false"  prepend_line="||~ Title ||~ Rating||" order="rating" limit="145" perPage="145"]]
-||%%title_linked%% || %%rating%% ||
-[[/module]]
-[[/div]]
-
-[[div style="float:left; width: 21%; padding: 0 2%"]]
-[[module ListPages rating="<41" tags="-archived, scp" separate="false"  prepend_line="||~ Title ||~ Rating||" order="rating" offset="145" limit="145" perPage="145"]]
-||%%title_linked%% || %%rating%% ||
-[[/module]]
-[[/div]]
-
-[[div style="float:left; width: 21%; padding: 0 2%"]]
-[[module ListPages rating="<41" tags="-archived, scp" separate="false"  prepend_line="||~ Title ||~ Rating||" order="rating" offset="290" limit="145" perPage="145"]]
-||%%title_linked%% || %%rating%% ||
-[[/module]]
-[[/div]]
-
-[[div style="float:left; width: 21%; padding: 0 2%"]]
-[[module ListPages rating="<41" tags="-archived, scp" separate="false"  prepend_line="||~ Title ||~ Rating||" order="rating" offset="435" limit="145" perPage="145"]]
-||%%title_linked%% || %%rating%% ||
-[[/module]]
-[[/collapsible]]
-[[/code]]
-[[div style="margin:0 2em 1em 2em; width:500px; border:0;"]]
-||||~ ^^☐☐☐☐☐☐☐☐ ¡CORRUPTED! ¡CORRUPTED! ¡CORRUPTED! ¡CORRUPTED! ☐☐☐☐☐☐☐☐^^ ||
-|||| [[image blackeyes width="500px"]] ||
-[[/div]]
-
-+ yo
-[[module countpages tags="scp, -archived" rating="<41"]]
-%%total%%
-[[/module]]
