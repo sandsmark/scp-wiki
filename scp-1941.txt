@@ -35,3 +35,48 @@ It is not known if the difficulty posed by such a mathematical problem is meant 
 What follows is the expression for the number in question: 
 
 > [[size larger ]] [[$ 2^{2^{79}} + 3^{2^{83}} + 5^{2^{89}} + 7^{2^{97}} $]] [[/size]]
+
+**Recent Developments**: In March of 2014, a secondary message was deciphered from what was thought to be noise in the primary message. Using the established mathematical vocabulary, the secondary message appears to suggest that the transmission of the aforementioned prime factors would signal the lunar phenomenon to halt. It has been conjectured that SCP-1941 was conscientiously designed to be shutdown by a neighboring civilization of sufficient sophistication that might find its activities objectionable.
+
+Given this development, interest has been renewed in attempting to factor the mathematical expression in the primary message. Investigations into leveraging the processing power of SCP-155 were made (SCP-155 being a computer cable of an asymptotic number of computations in finite amounts of time), as well as investigations into the attendant risks of doing so (see __[[[SCP-155|documentation for SCP-155]]]__). 
+
+
+Projections have been formulated on the amount of energy that would be released by SCP-155 during this attempt, and whether or not provisions should be made to relocate it off the Earth should it prove necessary to safeguard against a PK-class event, or the sterilization of all life on the planet.
+
+The lower-bound placed on the amount of energy released is 4.2 x 10^^18^^ and is deemed acceptable (roughly equivalent to a gigaton nuclear explosion). The upper-bound, however, has been placed at 3.1 x 10^^41^^ Joules, or roughly the amount of energy released by the average supernova. Research is currently underway to refine these bounds.
+
+
+**Mathematical Supplement:** The secondary message is as follows:
+
+
+
+
+[[math q]]
+
+\forall n \exists f(): f(n) = {p_1}^{a_1}{p_2}^{a_2} \dotsb {p_k}^{a_k} = \prod_{i=1}^{k} {p_i}^{a_i} , \forall p  \neg \exists p=ab,  a>1,  b>1
+[[/math]]
+
+
+
+[[math label1]]
+\Omega = 2^{2^{79}} + 3^{2^{83}} + 5^{2^{89}} + 7^{2^{97}}
+[[/math]]
+
+
+
+[[math label2]]
+
+
+f(n) \Rightarrow \left\{ \begin{array}{rl}
+e &\mbox{ , n=∅} \\
+0 &\mbox{ , n=Ω}
+\end{array} \right.
+[[/math]]
+
+
+
+Which has been interpreted to mean the following:
+
+> **(1)**:   Definition of the function **f()** which yields the prime factors of an integer.
+> **(2)**:   Definition of omega **Ω** which is the intractably large number.
+> **(3)**:   The condition, where the prime factors of the empty set **f(∅)** yields the base of the natural logarithm **e**, interpreted to mean continued exponential growth, while the prime factors of the intractable number **f(Ω)** yields **0,** interpreted to mean the cessation of growth.
