@@ -1,27 +1,18 @@
 [[module css]]
 #page-title { display: none; }
 .feature-block {
-    height: 400px;
+    height: 200px;
 }
 .feature-block .panel-body {
-    height: 330px;
+    height: 130px;
     overflow-y: hidden;
-    font-family: Comic Sans MS, sans-serif;
 }
 .feature-block .feature-title {
     font-size: 120%;
     font-weight: bold;
 }
-.feature-block .feature-title img {
-    display: block;
-    width: 300px;
-    border: solid 1px #666;
-    margin: 5px auto 0;
-    border-radius: 10px;
-}
 .feature-block .feature-subtitle {
     font-size: 90%;
-    text-align: center;
 }
 
 .feature-block .feature-title > p,
@@ -39,7 +30,7 @@
     font-weight: bold;
     font-size: 110%;
     margin-bottom: 5px;
-    color: #363;
+    color: #633;
 }
 .news-block .news-content {
     margin: 5px 0;
@@ -58,8 +49,8 @@
 .international-entry:nth-child(even),
 .alternate:nth-child(even) {
     background-color: rgba(255,255,255,.9);
-    border-top: solid 1px #e0eee0;
-    border-bottom: solid 1px #e0eee0;
+    border-top: solid 1px #eeeee0;
+    border-bottom: solid 1px #eeeee0;
 }
 .international-entry div > p {
     margin: 0;
@@ -86,16 +77,16 @@
 
 [[/module]]
 
-[[div style="text-align: center; color: #606; font-family: Comic Sans MS, sans-serif;"]]
+[[div style="text-align: center; color: #600;"]]
 [[div class="unmargined"]]
 WARNING: THE FOUNDATION DATABASE IS
 [[/div]]
 [[div class="unmargined" style="font-size: 400%; font-weight: bold; margin: 2px 0 5px;"]]
-ADORABLE
+CLASSIFIED
 [[/div]]
 [[div class="unmargined"]]
 ACCESS BY UNAUTHORIZED PERSONNEL IS STRICTLY PROHIBITED
-PERPETRATORS WILL BE GLOMPED, DOGPILED, AND SNUGGLED
+PERPETRATORS WILL BE TRACKED, LOCATED, AND DETAINED
 [[/div]]
 [[/div]]
 ----
@@ -109,39 +100,39 @@ PERPETRATORS WILL BE GLOMPED, DOGPILED, AND SNUGGLED
 [[div class="feature-block"]]
 [[div class="content-panel left-column"]]
 [[div class="panel-heading"]]
-SCP-173
+Featured SCP
 [[/div]]
 [[div class="panel-body"]]
 [[div class="feature-title"]]
-[[image scp-af-maya.png]]
+[[[SCP-830]]]: Inky Quicksand
 [[/div]]
 [[div class="feature-subtitle"]]
-[[[SCP-173]]], all tuckered out after vigorously hugging the necks of six Class D personnel.
+by [[user Heiden]]
 [[/div]]
 
-SCP-173 is animate and extremely adorable.
+//They marched her out into the grey twilight, heading for the simple black pool in the sand. The world was curiously silent. She thought, "Better to reign in hell..."//
+
 [[/div]]
 [[div class="panel-footer"]]
--
+[[[Featured SCP Archive]]]
 [[/div]]
 [[/div]]
 
 [[div class="content-panel right-column"]]
 [[div class="panel-heading"]]
-SCP-096
+Featured Tale
 [[/div]]
 [[div class="panel-body"]]
 [[div class="feature-title"]]
-[[image scp-af-face.png]]
+[[[Recovered Document 4761 CotBG-82|Recovered Document 4761]]]
 [[/div]]
 [[div class="feature-subtitle"]]
-[[[SCP-096]]], hiding its face from researchers.
+by [[user Joreth]]
 [[/div]]
-
-When someone views SCP-096's face, it will enter a stage of considerable squee-inspiring distress.
+//"I just find it to be abhorrent. Using cars for rituals -- it’s out of the question. I don’t understand young people today and what motivates them."//
 [[/div]]
 [[div class="panel-footer"]]
--
+[[[Featured Tale Archive]]]
 [[/div]]
 [[/div]]
 [[/div]]
@@ -153,15 +144,8 @@ News
 [[div class="panel-body"]]
 
 [!-- PLEASE LIMIT THE PAGE TO FIVE NEWS ARTICLES --]
+[!-- Pretty sure the five-page limit was specifically for the old template. -Quik --]
 
-[[div class="alternate unmargined"]]
-[[div class="news-title"]]
-April 1, 2014
-[[/div]]
-[[div class="news-content"]]
-Welcome to the new SCP Foundation website! From now on, we are all about the cutest and most loveable pets on the face of the planet!
-[[/div]]
-[[/div]]
 
 [[div class="alternate unmargined"]]
 [[div class="news-title"]]
@@ -187,7 +171,7 @@ The Image Team have begun the [http://www.scp-wiki.net/forum/t-813086/image-cred
 March 13, 2014
 [[/div]]
 [[div class="news-content"]]
-Some spiffy [http://www.scp-wiki.net/userscripts/comments/show SCP Wiki Userscripts] have been introduced, to alter and hopefully improve your site experience. Check them out!
+Some spiffy **[http://www.scp-wiki.net/userscripts/comments/show SCP Wiki Userscripts]** have been introduced, to alter and hopefully improve your site experience. Check them out!
 [[/div]]
 [[/div]]
 
@@ -197,6 +181,24 @@ March 06, 2014
 [[/div]]
 [[div class="news-content"]]
 [[[under-appreciated-contest|The Under-Appreciated SCPs Contest]]] has begun! Do you know some underrated SCPs that could use some love and attention in the form of a Tale? If so, this is the place to be!
+[[/div]]
+[[/div]]
+
+[[div class="alternate unmargined"]]
+[[div class="news-title"]]
+February 05, 2014
+[[/div]]
+[[div class="news-content"]]
+[[[scp-series-3|Series III]]] is open!  Have at it, ladies, gentlemen, and distinguished guests.
+[[/div]]
+[[/div]]
+
+[[div class="alternate unmargined"]]
+[[div class="news-title"]]
+January 22, 2014
+[[/div]]
+[[div class="news-content"]]
+After many a long year, the Site Theme has been updated, with many many thanks to Aelanna for creating the new theme. Check [[[new-site-theme|this page]]] for information about what's been changed and to post any problems, questions, or comments.
 [[/div]]
 [[/div]]
 
@@ -229,13 +231,13 @@ Admins: [[user Gene R]] -- [[user Osobist]] -- [[user Resure]]
 
 [[div class="international-entry"]]
 [[div class="international-title"]]
-[[image kr.png]] [http://scp-kr.wikidot.com/ SCP-KR] -- SCP 재단
+[[image kr.png]] [http://scp-kr.wikidot.com/ SCP-KO] -- SCP 재단
 [[/div]]
 [[div class="international-description"]]
 Our Korean Colleagues!  Translation available **[http://translate.google.com/translate?sl=ko&tl=en&js=n&prev=_t&hl=en&ie=UTF-8&layout=2&eotf=1&u=http%3A%2F%2Fscpkoreahq.wikidot.com%2F here]**.
 [[/div]]
 [[div class="international-footer"]]
-Admins: [[user QAZ135]] -- [[user scpfskhq]] -- [[user shfoakdls]]
+Admins: [[user QAZ135]] -- [[user shfoakdls]]
 [[/div]]
 [[/div]]
 
@@ -280,7 +282,7 @@ Admins:
 [[image es.png]] [http://lafundacionscp.wikidot.com/ SCP-ES] -- La Fundación SCP
 [[/div]]
 [[div class="international-description"]]
-The Spanish Branch! Translation available **[http://translate.google.com/translate?hl=en&sl=fr&tl=en&u=http%3A%2F%2Flafundacionscp.wikidot.com%2F&sandbox=1 here]**!
+The Spanish Branch! Translation available **[http://translate.google.com/translate?hl=en&sl=es&tl=en&u=http%3A%2F%2Flafundacionscp.wikidot.com%2F&sandbox=1 here]**!
 [[/div]]
 [[div class="international-footer"]]
 Admins: [[user Vlank]] -- [[user Mulnero]] -- [[user DrManticore]] -- [[user Chagecha]]
