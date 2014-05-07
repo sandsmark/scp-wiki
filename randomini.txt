@@ -204,3 +204,15 @@ You idiots.
 > 
 > [[[cavalcade-hub|Cavalcade.7z]]]: Unzipping Contents...
 > >> >> [[[CAV-001|CAV-001-A-Defection.cav]]]
+
+[[collapsible show="> dir */AuthList -ratingdescending" hide="Retrieving... Retrieved!"]]
+[[module ListPages created_by="Randomini" separate="no" order="rating desc"]] 
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
+[[/module]]
+[[/collapsible]]
+
+[[collapsible show="> dir */AuthList -recentcomments -kindabroken" hide="Retrieving... Retrieved!"]]
+[[module ListPages created_by="Randomini" separate="no" order="commented_at"]] 
+|| %%title_linked%% || %%rating%% || %%comments%% || %%commented_at%% ||
+[[/module]]
+[[/collapsible]]
