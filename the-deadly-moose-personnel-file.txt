@@ -123,7 +123,7 @@ And so in the matter of the envoys of the princes of Babylon, who had been sent 
 [[/tab]]
 [[/tabview]]
 
-[[module ListPages order="ratingDesc" limit="1000" tags="-archived, -admin, -author, -sandbox, -scp, -supplement" rating="<50" perPage="1000"]]
-%%title_linked%% ##777|(Rating: %%rating%%, Comments: %%comments%%)##
+[[module ListPages order="created_at desc" tags="-archived, -admin, -author, -sandbox, -supplement" perPage="1000"]]
+%%title_linked%% ##777|(Date: %%date%%, Comments: %%comments%%)##
 [[/module]]
 [[/collapsible]]
