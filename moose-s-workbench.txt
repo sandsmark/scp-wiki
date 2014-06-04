@@ -1,11 +1,11 @@
 title:Moose's Workbench
+//Incorrectly tagged items may show up on either list.//
+
 -------------
 
-**All Tales In Descending Order Of Creation** 
+**All Tales In Descending Order Of Creation** ( + Essays )
 
-//Incorrectly tagged SCPs may show up on the first page.//
-
-[[module ListPages order="created_at desc" tags="-archived, -admin, -author, -sandbox, -supplement, -scp" perPage="25"]]
+[[module ListPages order="created_at desc" tags="-archived, -admin, -author, -sandbox, -scp, -supplement" perPage="25"]]
 %%title_linked%% ##777|(created %%created_at%% by %%created_by%%)##
 [[/module]]
 
@@ -14,6 +14,6 @@ title:Moose's Workbench
 
 **SCPs In Descending Order Of Creation**
 
-[[module ListPages order="created_at desc" tags="-archived, -admin, -author, -sandbox, -supplement" -"tale" perPage="25"]]
+[[module ListPages order="created_at desc" tags="-archived, -admin, -author, -essay, -hub, -sandbox, -supplement, -tale" perPage="25"]]
 %%title_linked%% ##777|(created %%created_at%% by %%created_by%%)##
 [[/module]]
