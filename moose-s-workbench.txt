@@ -1,14 +1,17 @@
 title:Moose's Workbench
-**Tales and SCPs In Descending Order Of Creation**
+-------------
 
-[[module ListPages order="created_at desc" tags="-archived, -admin, -author, -sandbox, -supplement" perPage="25"]]
-%%title_linked%% ##777|(Date: %%date%%, Comments: %%comments%%)##
+**All Tales In Descending Order Of Creation**
+
+[[module ListPages order="created_at desc" tags="-archived, -admin, -author, -sandbox, -supplement, -scp" perPage="25"]]
+%%title_linked%% ##777|(created %%date%% by %%author%%)##
 [[/module]]
+
 
 -------------
 
-**Tales In Descending Order Of Creation**
+**Tales and SCPs In Descending Order Of Creation**
 
-[[module ListPages order="created_at desc" tags="-archived, -admin, -author, -sandbox, -supplement, -scp" perPage="25"]]
-%%title_linked%% ##777|(Date: %%date%%, Comments: %%comments%%)##
+[[module ListPages order="created_at desc" tags="-archived, -admin, -author, -sandbox, -supplement" perPage="25"]]
+%%title_linked%% ##777|(created %%date%% by %%author%%)##
 [[/module]]
