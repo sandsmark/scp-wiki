@@ -1,0 +1,93 @@
+title:Herman Fuller Hub
+[[tabview]]
+
+[[tab Overview]]
+
+[[div style="background-image: url(http://www.scp-wiki.net/local--files/component:hf-poster/Herman-Fuller-background.png); background-size: 650px; background-repeat: no-repeat; padding: 25px; padding-top: 200px; font-size: 1.3em; color: #fff; text-shadow: 2px 2px #000;"]]
+
+[[=]]
+[[span style="font-size: 3em;"]]**ROLL UP!**
+@@ @@
+@@ @@
+**ROLL UP!**[[/span]]
+@@ @@
+@@ @@
+**Welcome, ladies and gentlemen, to the greatest show on earth! Welcome to Herman Fuller's Circus of the Disquieting!**
+@@ @@
+
+The Circus is, first and foremost, a show, //THE// show. Those in its employment live to perform, to regale the audiences with their talents. When the circus comes to town, no one quite understands where they came from, or how they managed to put up that tent without anyone seeing it. Officials are baffled by the sudden existence of a bigtop and the associated caravans, trailers and wagons, but strangely enough the paperwork always seems to be in order.
+
+And of course, once they attend the show, they lose any misgivings they might have. Because, after all, it **is** the greatest show on earth.
+
+The circus treats its performers. be they tightrope walkers consisting only of legs, freaks that gibber and squeal, or clowns with the light of dead stars in their eyes, as valuable assets. The circus is a family, a home, and it does not tolerate attempts to break up that family.
+
+Some come watch the show, come feel the magic! After all, what do you have to lose? 
+[[/=]]
+
+[[/div]]
+
+[[/tab]]
+
+[[tab Collected Data]]
+**Anomalies:**
+
+* [[[burning-man|The Man With the Burning Face]]]
+* [[[fishman|The Fishman of Manasquan]]]
+* [[[slugman|The Amazing Slugman]]]
+
+**Tales:**
+* [[[A Face full of Flames]]]
+* [[[Runaway Circus Romance]]]
+
+[[/tab]]
+
+[[tab Further Research]]
+[[module ListPages order="ratingAsc" limit="100" tags="-archived -admin -author -sandbox scp herman-fuller" rating="<-0" separate="no" perPage="100"]]
+* %%title_linked%%
+[[/module]]
+[[/tab]]
+
+[[tab Documented Accounts]]
+[[module ListPages order="ratingAsc" limit="100" tags="-archived -admin -author -sandbox -scp herman-fuller" rating="<-0" separate="no" perPage="100"]]
+* %%title_linked%%
+[[/module]]
+[[/tab]]
+
+[[tab Information]]
+
+++ On the format
+
+We've chosen a format that feels natural to a Group of Interest like Herman Fuller's Circus of the Disquieting: circus posters. Now, that presents us with some challenges. We need to tell a story in very few words, we need artwork or photographs that won't look too much out of place on a circus poster, and we need to try and emulate a circus atmosphere. We hope we've succeeded in doing that.
+
+++ How to create your own Herman Fuller posters
+
+We've created a component for you that you can use to create a poster of your own with minimal coding. Simply create a page and copy-paste the following code:
+
+> @@[[include component:hf-poster title=[1]|textLeft=[2]|image=[3]|textRight=[4]|textBottom=[5]|textFooter=[6]]]@@
+
+As you can see, the component takes 6 parameters:
+
+# The title for the poster. Usually the freak's stagename.
+# The text you want left of the image. Use this and the corresponding textRight parameter for short credos intended to attract the attention.
+# The image you want to use. You do **need** an image for this format to work. Old photographs might work, but original artwork would probably be better.
+# The text you want right of the image. 
+# The text you want below the image. Use this to expand on the anomaly in narrative.
+# The footer for the poster. You could note things about where the circus is going to be, what the price of admission is, when the show's going to be performed etc.
+
+Replace the bracketed numbers with the values you want to give them. There's a few things to keep in mind:
+
+* You can and should use linebreaks (hit the enter key) in the text you want on the poster; it won't break the component.
+* Your picture needs to be 300 x 425 pixels to fit inside the frame without it being too big or too small.
+* When filling the image parameter, use **the full path to the image** (i.e. start with //@@http://@@//. You can find out the path to your image by clicking 'Files' and then 'Info'
+* You don't need a rating module, the component includes that for you.
+
+For all your drafting needs this template has also been added to both sandboxes. Be sure to see how the text looks before you create the page on the main wiki.
+
++++ Resources used
+
+[http://www.epicwallpapers.net/colour-splash-wallpapers/vintage-circus-wallpaper-1280x800-633.html Background-image]
+[http://www.fontsquirrel.com/fonts/EastMarket EastMarket font, free from Font Squirrel], used for the text.
+[http://www.dafont.com/romantiques.font Romantiques font, free from Dafont.com], used in the header.
+[[/tab]]
+
+[[/tabview]]
