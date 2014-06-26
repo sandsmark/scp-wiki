@@ -62,11 +62,7 @@ We've chosen a format that feels natural to a Group of Interest like Herman Full
 
 We've created a component for you that you can use to create a poster of your own with minimal coding. Simply create a page and copy-paste the following code:
 
-[[code]]
-
-[[include component:hf-poster title=[1]|textLeft=[2]|image=[3]|textRight=[4]|textBottom=[5]|textFooter=[6]]]
-
-[[/code]]
+> @@[[include component:hf-poster title=[1]|textLeft=[2]|image=[3]|textRight=[4]|textBottom=[5]|textFooter=[6]]]@@
 
 As you can see, the component takes 6 parameters:
 
@@ -90,19 +86,11 @@ For all your drafting needs this template has also been added to both sandboxes.
 
 You can choose from a left and a right page, with the following codes:
 
-[[code]]
-
-[[include component:hf-book-left chapter=[1]|content=[2]|pagenumber=[3]]]
-
-[[/code]]
+> @@[[include component:hf-book-left chapter=[1]|content=[2]|pagenumber=[3]]]@@
 
 or 
 
-[[code]]
-
-[[include component:hf-book-right chapter=[1]|content=[2]|pagenumber=[3]]]
-
-[[/code]]
+> @@[[include component:hf-book-right chapter=[1]|content=[2]|pagenumber=[3]]]@@
 
 These two components take 3 parameters:
 
