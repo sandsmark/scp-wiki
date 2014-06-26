@@ -5,7 +5,7 @@ title:Herman Fuller Hub
 
 [[tabview]]
 
-[[tab Overview]]
+[[tab The Circus is in Town!]]
 
 [[div style="background-image: url(http://www.scp-wiki.net/local--files/component:hf-poster/Herman-Fuller-background.png); background-size: 650px; background-repeat: no-repeat; padding: 25px; padding-top: 150px; font-size: 1.3em; color: #fff; text-shadow: 2px 2px #000;"]]
 
@@ -32,7 +32,7 @@ Some come watch the show, come feel the magic! After all, what do you have to lo
 
 [[/tab]]
 
-[[tab Collected Data]]
+[[tab Our line-up]]
 
 [[module ListPages parent="." separate="no" order="title asc"]]
 * %%title_linked%%
@@ -40,13 +40,13 @@ Some come watch the show, come feel the magic! After all, what do you have to lo
 
 [[/tab]]
 
-[[tab Further Research]]
+[[tab Little Acts Lost]]
 [[module ListPages order="ratingAsc" limit="100" tags="-goi2014 +scp +herman-fuller" separate="no" perPage="100"]]
 * %%title_linked%%
 [[/module]]
 [[/tab]]
 
-[[tab Documented Accounts]]
+[[tab Tales of the Circus]]
 [[module ListPages order="ratingAsc" limit="100" tags="-hub -archived -admin -author -sandbox -goi2014 -scp +herman-fuller" separate="no" perPage="100"]]
 * %%title_linked%%
 [[/module]]
@@ -56,13 +56,17 @@ Some come watch the show, come feel the magic! After all, what do you have to lo
 
 ++ On the format
 
-We've chosen a format that feels natural to a Group of Interest like Herman Fuller's Circus of the Disquieting: circus posters. Now, that presents us with some challenges. We need to tell a story in very few words, we need artwork or photographs that won't look too much out of place on a circus poster, and we need to try and emulate a circus atmosphere. We hope we've succeeded in doing that.
+We've chosen a format that feels natural to a Group of Interest like Herman Fuller's Circus of the Disquieting: circus posters. In addition to those, we've provided you with a template to add pages torn from a fictional book, "//To the Circus Born: Herman Fuller's Menagerie of Freaks//" to your article. These pages were and are still being found in libraries all across the world, inserted into circus-themed books of all kinds. These templates will give you a chance to back the visual of the poster with more narrative, and provide substance to the article.
 
 ++ How to create your own Herman Fuller posters
 
 We've created a component for you that you can use to create a poster of your own with minimal coding. Simply create a page and copy-paste the following code:
 
-> @@[[include component:hf-poster title=[1]|textLeft=[2]|image=[3]|textRight=[4]|textBottom=[5]|textFooter=[6]]]@@
+[[code]]
+
+[[include component:hf-poster title=[1]|textLeft=[2]|image=[3]|textRight=[4]|textBottom=[5]|textFooter=[6]]]
+
+[[/code]]
 
 As you can see, the component takes 6 parameters:
 
@@ -82,7 +86,31 @@ Replace the bracketed numbers with the values you want to give them. There's a f
 
 For all your drafting needs this template has also been added to both sandboxes. Be sure to see how the text looks before you create the page on the main wiki.
 
-+++ Resources used
+++ How to create the torn pages:
+
+You can choose from a left and a right page, with the following codes:
+
+[[code]]
+
+[[include component:hf-book-left chapter=[1]|content=[2]|pagenumber=[3]]]
+
+[[/code]]
+
+or 
+
+[[code]]
+
+[[include component:hf-book-right chapter=[1]|content=[2]|pagenumber=[3]]]
+
+[[/code]]
+
+These two components take 3 parameters:
+
+# The chapter title. You'll want to use the freak you're providing more information on.
+# The text for the page. You have about 800 words to use. Preview your work to make sure the page looks good.
+# The number for the page. This is to make sure not every page is number 15 or something. Go wild. Who knows how many pages've been found by now, or how many the book originally had.
+
+++ Resources used
 
 [http://www.epicwallpapers.net/colour-splash-wallpapers/vintage-circus-wallpaper-1280x800-633.html Background-image]
 [http://www.fontsquirrel.com/fonts/EastMarket EastMarket font, free from Font Squirrel], used for the text.
