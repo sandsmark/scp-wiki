@@ -1,0 +1,205 @@
+title:Iris Dark
+[[module CSS]]
+@import url(/component:MCD-theme/code/1);
+[[/module]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+Iris Dark was warm, comfortable, and filled with a vague sense of accomplishment. She sipped her hot cocoa and stared at the dully glowing screen. The rain poured down outside, the sun barely peeking through the dreary clouds. It had been expensive - //very// expensive - to buy an apartment in the City of London, but with algorithmic trading systems, millisecond fluctuations in the market could be the difference between making a hundred dollars and making a thousand. A small latency time was the most critical part of the system. London's exchange, specifically, used the Millennium Exchange platform, so market-side transactions could resolve in the sub-millisecond range; with her physical proximity to the servers, the software could buy and sell stocks almost instantaneously.
+
+If it worked (and Iris could think of no reason why it shouldn't), the system would notice progressive trends over incredibly small time frames, then capitalised on this by buying stocks //en masse// and re-selling almost immediately. The system Iris had built had a few advantages over previous ones: it broke down the market into connected subsets; for example, a small increase in the stock of one electronics company tended to slightly decrease others in the same field. By mapping these correlations rather than the individual stock progressions, the system was substantially more robust than those before. It didn't model any of the instantaneous values of individual stocks, nor even their derivatives; the system was more interested in the changes of short-term intra-market trending, and exploiting that to drive a profit.
+
+Iris wasn't a 'people person', but then, the investors into her project had liked that degree of naive transparency. Her pitch packet was composed of three unpublished but peer-reviewed academic papers on market tracking, 50 pages worth of system output and plots from a scaled-down tracker, and a page at the end with nothing on it but "Thanks for your consideration."
+
+While none of the investors had really understood the mechanics and mathematics of the methodology, they had very much liked the shiny graphs which showed the amount of money going up. 
+
+Iris pressed the control and F7 keys, and the software started building the C code into an FPGA programmable format. She stood from her seat and walked over to the cardboard box in the corner of the room. Iris pulled a box cutter from her pocket, slicing open the tape and pulling off the packaging. Inside, the box was filled with Altera Stratix V development boards; not separately packed, but rubbing against one another. Iris felt her eye involuntarily twitch at the carelessness of the packer, but was willing to disregard it. Stratix boards were thousands of pounds apiece; wholesale, this single box would have cost ten times what she had paid for the apartment. Yet, a small reseller on Amazon was charging under a hundred apiece when bought in bulk. For the parallel processing that her system ran on, bulk was what Iris wanted, and she was glad to take the deal.
+
+The computer beeped, having finished the software build. Iris pulled a random board from the box, taking it to her computer and plugging it into a USB cable. The lights of the board turned on, glowing green and red. While clearly the board was being powered, her computer wasn't recognising the connection. She searched the net to find suitable drivers, downloading and installing them from the company website. A small beep, and the board was visible to the system. Iris moved through the setup prompts, configuring the software to flash to the board. She clicked the final confirmation box, and was greeted by:
+
+> Invalid board connection. (Code: 59277402)
+
+"Shit."
+
+Iris searched the net again, this time looking up the error code; predictably, the support was utterly useless. It could have been a mistake in the cable; Iris tried a different one. Again, she ran through the long and arduous task of establishing the connection, until again:
+
+> Invalid board connection. (Code: 59277402)
+
+"Shit!"
+
+Frustrated, Iris moved over to the box, picking out another three boards and placing them at her computer. She permuted through them all to no avail; she reinstalled the drivers again and again. The only reasonable conclusion was that she had been sent a box of duds. Iris stood from her seat, rummaging through the box for some kind of return address or support phone number. She felt some rough paper against her hand, and removed it from the box. It was plain and simple, a small slip of blue with smudged black ink printed across its surface.
+
+> //Praying for better hardware?//
+> **YOU HAVE BEEN PRAYING TO THE WRONG GOD.**
+> //FallenZealot's Broken Tech Shack//
+> 27b Loughton Lane, Islington, London
+> 020 8287 8118
+
+Broken was right.
+
+---------
+
+The phone number had rung through to an answering machine, with a brusque cockney voice spouting operating hours and to call again later. Which was odd, considering that it was still well within said operating hours, and the store should have been open anyway. Iris had pulled out an umbrella and ventured into the rain, with three of the boards tucked away into her pockets to illustrate their uselessness to the vendor. It was a short trip from her new apartment; she only needed to transfer buses once, and then it was only a few blocks from the stop. She shivered slightly as she approached the building. "FallenZealot's Broken Tech Shack", it seemed, had a double meaning: while it sold broken tech, the shack itself was broken too. The wooden front had been painted with bright colours, but didn't seem to have been sealed; even now, the rain dripping from the shop pooled into bright orange and yellow puddles.
+
+Iris placed her hand on the handle and opened the door.
+
+The first thing that hit her was the strange smell of the place. She couldn't place it: it seemed to be an odd combination of lavender, roasting peanuts, coffee and cheese. Iris had to take a moment to parse that combination of odd scents into sense.
+
+The second thing that hit her was the décor. While the outside had left her expecting a dilapidated interior, it was instead filled with blue and green neon lighting, with brushed steel lining the roof and floor. The walls were covered in trays filled with electronic gadgetry of every kind, with a bargain bin near the door filled with Raspberry Pi and small Arduino boards. This was the kind of store that Iris would love to shop at, if only the hardware worked.
+
+The final thing that she noticed was the rotund man sitting behind the counter, presumably the eponymous FallenZealot. He had dark black hair and a long beard to match, plaited together with strips of flickering red and yellow LEDs. The result was that his face appeared perpetually be illuminated from underneath by fire. This could have also been because of the lit pipe he was holding, which he quickly hid underneath the bench as Iris walked in. The suddenness of the intrusion sent him into a coughing fit. Also he had a robotic right hand. That was pretty interesting too.
+
+Iris, after having processed these things, approached the counter and commenced conversation.
+
+"I bought a bunch of FPGA boards from you. They don't work."
+
+FallenZealot looked up at the girl, having recovered from his coughing.
+
+"Buncha wot boards?"
+
+Iris grimaced at the accent.
+
+"FPGA."
+
+"Wot?"
+
+"Field programmable gate arrays."
+
+"Don't sell Gatorade, girly."
+
+"Gate. Arrays. These ones."
+
+Iris punctuated each period by placing one of the faulty boards onto the bench.
+
+"I purchased these from you. One hundred Stratix V boards. They are not functioning. Give me some working ones or give me my money back."
+
+"Jeez, alright, don't get yer panties in a twist, just a joke, innit? Lemme take a look, ey?"
+
+Iris crossed her arms, watching as the man picked up one of the boards. He inspected it carefully, staring at it with intense focus.
+
+"No physical damage, innit."
+
+"They don't work."
+
+"The boards themselves are probably fine, buy a new cable, I've got some for sale here, inni-"
+
+"It was not the connection. They don't work."
+
+"Look, I don't have enough cash on me for a refund, and I don't have any more 'a these in stock. All honesty, wasn't expectin' someone to walk in and demand a refund."
+
+"Yet here I am."
+
+"Yet here you are, innit. Tell you wot, I've got a buncha boards in 'ere, somethin' should work for what you need. What did you need 'em for?"
+
+"Parallel processing, and lots of it."
+
+"Ah, great, I've got something that aughta be a good replacement. I'll just give you a Boner."
+
+Exactly 4.87 seconds of silence passed.
+
+"Are you propositioning me?"
+
+"Nah, girly, let me show ya what I mean."
+
+"Listen, I //really// don't want to see your boner-"
+
+FallenZealot grabbed something from underneath the table, placing it onto the table with a solid thud.
+
+"//This// is a Boner."
+
+The aforementioned Boner was, in fact, not a euphemism, but a literal cube of bone. There were various pins and ports inset into the sides; a dull array of lights below the surface slowly pulsated in and out. Iris picked up the Boner in her hands, observing it from every angle. It was lighter than she had expected, but there seemed to be some weight to it, an almost gyroscopic bias towards remaining still. She started talking while continuing to examine the object.
+
+"Oh. Uh, okay. This equipment... doesn't exactly look standardised."
+
+"Oh, don't you start on me. I ain't a heretic. Bone's programmable too, dig it? Just like they said, right: turn on, tune in, drop out, toke up, jack off, you know? Can't do the last two without a bit of flesh on ya."
+
+"You are... really, really badly misappropriating the words of Tim Leary, there."
+
+"No, no, it's in the bible."
+
+"It doesn't matter. The... Boner. Give me specs. Clock speed, memory, everything."
+
+"I dunno, a couple terahertz or somethin', maybe a few hundred gig of RAM."
+
+Iris looked up from the box with a sceptical stare.
+
+"You're kidding."
+
+"No, no, see, because bone ain't a metal, we don't get inductive effects or anything, right? Can bump up the clock speed high as ya need. And then it's got heart cells on the inside for storage, innit. Muscle memory."
+
+Iris stared blankly. FallenZealot scratched his chin, jostling his LED-laden beard.
+
+"That okay, girly?"
+
+"Everything that you just said was complete nonsense."
+
+---------
+
+As it turned out, of course, it was not complete nonsense. Iris Dark had somehow stumbled across some of the most capable hardware on the planet. She almost felt guilty about putting it to work on a purely profit-purposed enterprise. Almost.
+
+Iris had bought as many of the miraculous boxes as FallenZealot had in stock, which turned out to have been four. She worked for days restructuring her code for the new platform: with the enormous increase in clock speed, each of the boxes could handle what would have taken thousands of Stratix boards in parallel to accomplish. They seemed to be perfect; even their power draw was comparable to that of a toaster.
+
+And so, she spent the next week working on redesigning the system from inside her new apartment. The program had been built for distributed nets, and the changes were substantial. The project became all-encompassing, and with her refrigerator fully stocked, she had no reason to leave the room.
+
+As such, even on the 25th of June, she had read none of the following letters.
+
+---------------------
+
+> to the recipient of Iris Dark the;
+> you have been stated Claimwise presently at the hence to forthwith of many am to. via the forthwith, Hence into plain and direct of the subject topic. some rational Inheritance of the company
+> **MARSHALL, CARTER AND DARKE LTD.**
+> is am wish to many. Consumption from the. collection at 
+> **JUNE 26**
+> from the place of Residents.
+> forthcoming For incomprehensible, henceways, separate message from Incipient.
+> from **PERCIVAL DARKE** of state no
+> graceless Corpuscule;
+> The A-78xD United Eidolonic Collective
+> (deepness for incomprehensible)
+
+> to the recipient of Iris Dark the;
+> please am Manytime to refer to firsT letter.
+> unknit from the. collection at 
+> **JUNE 26**
+> involuntary Consumption yes from the place of Residents.
+> please READ and thank you
+> graceless Corpuscule;
+> The A-78xD United Eidolonic Collective
+> (deepness for incomprehensible)
+
+> to the recipient of Iris Dark the;
+> is THIRD letter please am Manytime transparallel quadrature
+> neutral //Allegory//. collection at 
+> **JUNE 26**
+> understood Consumption yes from the place of Residents.
+> IMPORTance is compulsory
+> IMPORTance is compulsory
+> **IMPORTance is compulsory**
+> graceless Corpuscule;
+> The A-78xD United Eidolonic Collective
+> (deepness for incomprehensible)
+
+> to the recipient of Iris Dark the;
+> will **Imminence of collect** due to negligence
+> extant june.
+> graceless Corpuscule;
+> The A-78xD United Eidolonic Collective
+> (deepness for incomprehensible)
+
+---------------------
+
+Iris heard a knocking at the door.
+
+She blinked twice, then wiped the weariness from her eyes. She certainly wasn't expecting visitors, but then, she'd been holed up in her room for days. Probably just a neighbor or something. Iris ignored the knocking.
+
+The knocking didn't stop.
+
+Iris was uncomfortable after the first minute, confused after the fifth, and understandably disturbed after the knocking persisted for an hour. Sighing, she started her code building and walked over to the door. She looked through the small glass eyehole, seeing the faceless almost-human on the other side, still knocking against the door with an unnervingly uniform beat. Iris felt her heart beat faster. The business suit, the faceless head. She'd heard of this before. She moved backwards, trying to keep her breath under control.
+
+//IT WAS THE MOTHERFUCKING SLENDERMAN.//
+
+[[=]]
+**<< [[[Robert Carter]]] | [[[wills-and-ways-hub| Hub]]] |  [[[Some Rational Inheritance]]] >>**
+[[/=]]
