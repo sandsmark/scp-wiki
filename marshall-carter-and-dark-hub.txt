@@ -81,6 +81,15 @@ MC&D humanoids are typically not kept in cells, as is often done in the Foundati
 
 MC&D objects are **always referred to as 'items'** in documentation; pronouns such as 'object' or 'subject' are not to be used.
 
++ Theme
+To use the MC&D custom theme, put the following at the top of your page:
+
+[[code]]
+[[module CSS]]
+@import url(/component:MCD-theme/code/1);
+[[/module]]
+[[/code]]
+
 + Header
 
 ||||~ XXXXX/XXXXX/XXXXX||
