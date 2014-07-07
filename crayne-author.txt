@@ -1,4 +1,66 @@
 title:Crayne's Personnel File
+[[html]]
+
+<script type="text/javascript">
+hours = 16;
+minutes = 28;
+seconds = 59;
+
+String.prototype.lpad = function(padding, length) {
+
+    str = this;
+    
+    while (str.length < length)
+    {
+    
+        str = padding + str;
+        
+    }
+    
+    return str;
+
+}
+
+function tick()
+{
+
+    seconds -= 1;
+    
+    if (seconds == -1)
+    {
+    	seconds = 59
+    	minutes -= 1;
+    	
+    	if (minutes == -1)
+    	{
+    		minutes = 0;
+    		hours -= 1;
+    		
+    		if (hours == -1)
+    		{
+    			hours = 0;
+    		}
+    	}
+    }
+
+    hoursStr = hours.toString();
+    minutesStr = minutes.toString();
+    secondsStr = seconds.toString();
+    
+    document.getElementById('countdown').innerHTML = hoursStr.lpad("0",2) + " h " + minutesStr.lpad("0",2) + " m " + secondsStr.lpad("0",2) + " s";
+    
+}
+
+var timer = setInterval(tick, 500);
+
+</script>
+
+<div style="border: 2px inset #000; width: 300px; height: 40px; overflow-y: scroll; font-family: verdana; font-size: 10pt;">
+    <div style="color: red;">This timer expires in:</div>
+    <div id="countdown" style="font-size: 12pt; font-weight: bold;"></div>
+</div>
+[[/html]]
+
 Hi there. This is where I keep a list of stuff I've written for the wiki. That's it.
 
 I know, boring as fuck.
