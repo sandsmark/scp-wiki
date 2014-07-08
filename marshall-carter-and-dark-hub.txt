@@ -96,7 +96,7 @@ To use the MC&D custom theme, put the following at the top of your page:
 + Header
 
 ||||~ XXXXX/XXXXX/XXXXX||
-||~ Status||In Reserve/Selling/Sold/Renting/Acquirable/Not Acquirable/Destroyed/Unknown||
+||~ Status||In Reserve/Selling/Sold/Renting/Acquirable/Unacquirable/Destroyed/Unknown||
 ||~ Demand||High/Medium/Low/None||
 ||~ Value||(Price Range in USD and GBP)/Not for Sale||
 ||~ Availability||None/Unique/Current Inventory (Numerical Value), Estimated (Numerical Value) Worldwide/Established Supply Chain||
@@ -111,12 +111,12 @@ The above header should be used at the top of all objects. The following is a de
 **Status:** This refers to the **current status** of the item. The different classes mean, as follows:
 In Reserve: The item is owned by MC&D, but currently not for rent or sale.
 Selling: The item is owned by MC&D, and is currently for sale.
-Sold: The item is no longer owned by MC&D, and has been sold. This category should also include a subcategory of Acquirable, Not Acquirable, Destroyed, or Unknown, parsed as Sold (Acquirable), Sold (Not Acquirable) and so on.
+Sold: The item is no longer owned by MC&D, and has been sold. This category should also include a subcategory of Acquirable, Unacquirable, Destroyed, or Unknown, parsed as Sold (Acquirable), Sold (Unacquirable) and so on.
 Renting: The item is owned by MC&D, and is currently available for rent or being rented.
 Acquirable: The item is either owned by MC&D but not in its posession, as may be the case of items currently undergoing analysis by external contractors, or not owned by MC&D but trivially capable of being requisitioned from its current owner.
-Not Acquirable: The item is not currently owned by MC&D, and acquiring it would require sizeable effort.
+Unacquirable: The item is not currently owned by MC&D, and acquiring it would require sizeable effort.
 Destroyed: The item has been destroyed.
-Unknown: The current status of the item is unknown, and is thus either Not Acquirable or Destroyed.
+Unknown: The current status of the item is unknown, and is thus either Unacquirable or Destroyed.
 
 **Demand:** This is an **approximation of the demand for the item**. If an item can be easily sold at any time, it is rated High; if it is likely to find a buyer at auction, it is rated Medium; Low items are unlikely to sell at auction and may have a very specific market. The None category is when the item has no demand whatsoever. Demand categories can be combined as High/Medium or Medium/Low for approximations that span these ranges.
 
