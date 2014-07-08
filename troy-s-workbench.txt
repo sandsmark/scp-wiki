@@ -1,24 +1,8 @@
 title:Troy's Workbench
-__Unimportant List__:
+__Contest Whatnot__:
 
-[[module ListPages tag="scp,-proposal,-featured,-joke,-tale,-archived" order="titleAsc" perPage="30" separate="false" rating="<50" date="<=2011" prependLine="||~ Title ||~ Author ||~ Rating ||~ Created||"]]
-|| %%linked_title%% || %%author%%|| %%rating%% || %%created_at%% ||
-[[/module]]
-
------
-
-__Unimportant List 2__:
-
-[[module ListPages tag="-collaboration,tale,-proposal,-featured,-joke,-scp,-archived,-collector_tale,-olympia,-thaumiel" order="titleAsc" perPage="15" separate="false" rating="<30" date="<=2011" prependLine="||~ Title ||~ Author ||~ Rating ||~ Created||"]]
-|| %%linked_title%% || %%author%%|| %%rating%% || %%created_at%% ||
-[[/module]]
-
------
-
-__Untagged Pages__:
-
-[[module ListPages tag="-" order="titleAsc" perPage="50" separate="false" prependLine="||~ page(title) ||~ author ||~ Updates ||"]]
-|| %%linked_title%% || %%author%%|| %%updated_at%% ||
+[[module ListPages order="title" limit="100" tags="+goi2014 -hub" separate="no" perPage="500"]]
+|| **%%title_linked%%** || %%created_by%% || %%tags%%  || %%rating%% ||
 [[/module]]
 
 -----
