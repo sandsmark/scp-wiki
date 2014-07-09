@@ -77,10 +77,11 @@ I know, boring as fuck.
 
 [[/collapsible]]
 
-All pages in the negatives:
+[[collapsible show="+ Show pages < 0 excl. archived and decomm" hide="- Hide pages < 0 excl. archived and decomm"]]
 [[module ListPages rating="<0" tags="-archived -decommissioned" separate="no" order="rating" perPage="50"]]
 %%rating%% - %%title_linked%%
 [[/module]]
+[[/collapsible]]
 
 [[/tab]] 
 
