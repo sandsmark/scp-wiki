@@ -58,6 +58,8 @@ That one show totally stole that line from us.
 
 **Workbench:**
 
+[[collapsible show="+ It's not terribly interesting" hide="- Told you"]]
+
 SCP ratings (author set to Crayne):  
 
 [[module ListPages created_by="=" tags="+scp" separate="no" order="rating desc" perPage="50" prependLine="||~ Title||~ Rating||"]]
@@ -83,3 +85,5 @@ Pages in danger of deletion:
 [[module ListPages rating="<-9" tags="-archived -decommissioned -author" order="rating desc" perPage="50" separate="no" prependLine="||~ Title||~ Rating||~ Created||"]]
 ||%%title_linked%%||%%rating%%||%%created_at%% ||
 [[/module]]
+
+[[/collapsible]]
