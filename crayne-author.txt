@@ -58,19 +58,28 @@ That one show totally stole that line from us.
 
 **Workbench:**
 
-Article ratings: [[collapsible show="+ Show ratings" hide="- Hide ratings"]]
+SCP ratings (author set to Crayne):  
 
-[[module ListPages created_by="=" separate="no" order="rating desc" perPage="50"]]
-%%title_linked%% - %%rating%%
-[[/module]]
-[[module ListPages created_by="yellowdrakex" tags="+alive +euclid +extraterrestrial +invertebrate +parasitic +portal +reproductive +scp +species" separate="no"]]
-%%title_linked%% - %%rating%%
+[[module ListPages created_by="=" tags="+scp" separate="no" order="rating desc" perPage="50" prependLine="||~ Title||~ Rating||"]]
+||%%title_linked%% || %%rating%% ||
 [[/module]]
 
-[[/collapsible]]
-
-[[collapsible show="+ Just for Dexanote" hide="- Just for Dexanote"]]
-[[module ListPages rating=">30" tags="+scp" order="created_at desc" perPage="50" separate="no"]]
-%%rating%% - %%created_at%% - %%title_linked%%
+SCP ratings (rewrite - original author preserved):
+[[module ListPages created_by="yellowdrakex" tags="+alive +euclid +extraterrestrial +invertebrate +parasitic +portal +reproductive +scp +species" separate="no"  prependLine="||~ Title||~ Rating||"]]
+||%%title_linked%%||%%rating%%||
 [[/module]]
-[[/collapsible]]
+
+Tale rating:
+[[module ListPages created_by="=" tags="+tale" separate="no" order="rating desc" perPage="50" prependLine="||~ Title||~ Rating||"]]
+||%%title_linked%%||%%rating%%||
+[[/module]]
+
+Other:
+[[module ListPages created_by="=" tags="-scp -tale" separate="no" order="rating desc" perPage="50" prependLine="||~ Title||~ Rating||"]]
+||%%title_linked%%||%%rating%%||
+[[/module]]
+
+Pages in danger of deletion:
+[[module ListPages rating="<-9" tags="-archived -decommissioned -author" order="rating desc" perPage="50" separate="no" prependLine="||~ Title||~ Rating||~ Created||"]]
+||%%title_linked%%||%%rating%%||%%created_at%% ||
+[[/module]]
