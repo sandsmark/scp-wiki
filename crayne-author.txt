@@ -55,31 +55,3 @@ That one show totally stole that line from us.
 
 * [[[cavalcade-hub|Cavalcade]]]
  * [[[CAV-006|Stuck]]] - A tale of three Seattles for the price of one
-
-**Workbench:**
-
-SCP ratings (author set to Crayne):  
-
-[[module ListPages created_by="=" tags="+scp" separate="no" order="rating desc" perPage="50" prependLine="||~ Title||~ Rating||"]]
-||%%title_linked%% || %%rating%% ||
-[[/module]]
-
-SCP ratings (rewrite - original author preserved):
-[[module ListPages created_by="yellowdrakex" tags="+alive +euclid +extraterrestrial +invertebrate +parasitic +portal +reproductive +scp +species" separate="no"  prependLine="||~ Title||~ Rating||"]]
-||%%title_linked%%||%%rating%%||
-[[/module]]
-
-Tale rating:
-[[module ListPages created_by="=" tags="+tale" separate="no" order="rating desc" perPage="50" prependLine="||~ Title||~ Rating||"]]
-||%%title_linked%%||%%rating%%||
-[[/module]]
-
-Other:
-[[module ListPages created_by="=" tags="-scp -tale" separate="no" order="rating desc" perPage="50" prependLine="||~ Title||~ Rating||"]]
-||%%title_linked%%||%%rating%%||
-[[/module]]
-
-Pages in danger of deletion:
-[[module ListPages rating="<-9" tags="-archived -decommissioned -author" order="rating desc" perPage="50" separate="no" prependLine="||~ Title||~ Rating||~ Created||"]]
-||%%title_linked%%||%%rating%%||%%created_at%% ||
-[[/module]]
