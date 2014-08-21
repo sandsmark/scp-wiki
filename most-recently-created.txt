@@ -1,4 +1,4 @@
 title:Most Recently Created
-[[module ListPages order="created_at desc" limit="100" separate="yes" rss="Most Recently Created"]]
-%%linked_title%%
+[[module ListPages order="created_at desc" separate="yes" perPage="30" prependLine="||~ Page ||~ Number of Comments ||~ Created ||~ Last Comment ||~ Last update ||" separate="false"]]
+|| %%title_linked%% || %%comments%% ||%%created_at%% || %%commented_at%% || %%updated_at%% ||
 [[/module]]
