@@ -341,19 +341,25 @@ Entries Over X
   height: 400px;
   overflow: auto;
 }
+.content-panel.content-row .content-type-description-2 {
+  padding: 0 20px;
+  text-align: justify; 
+}
 [[/module]]
-
 
 [[div class="content-panel standalone content-row"]]
 [[div class="content-type-title"]]
 Recent Articles
 [[/div]]
-[[div class="content-type-description"]]
+
+[[div class="content-type-description-2"]]
 +++ __Article (Rating, Comment) Date Created__
 [[/div]]
+
 [[div class="content-type-description"]]
 [[module ListPages order="created_at desc" separate="yes" perPage="30" separate="false" prependLine=" " rss="Most Recently Created"]]
 %%title_linked%% (rating: %%rating%%, comments: %%comments%%) %%created_at%%
 [[/module]]
+
 [[/div]]
 [[/div]]
