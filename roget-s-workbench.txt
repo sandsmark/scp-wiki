@@ -319,9 +319,10 @@ Entries Over X
 # WE DON'T TALK ABOUT THE "NO ROGETS" CLUB!
 
 
-[[div style="height: 325px; width: 650px; background-color:#E6E6E6; padding: 8px 8px; border-radius: 15px; overflow:auto"]]
+[[div style="height: 325px; width: 650px; background-color:#E6E6E6; background: linear-gradient(to bottom right, #E6E6E6,#8A8A8A); padding: 8px 8px; border-radius: 15px; overflow:auto"]]
 
-[[module ListPages order="created_at desc" separate="yes" perPage="100" separate="false"  rss="Most Recently Created"]]
+[[module ListPages order="created_at desc" separate="yes" perPage="30" prependLine="**PAGE (RATING, COMMENTS) DATE CREATED**" separate="false"  rss="Most Recently Created"]]
+----
 %%title_linked%%  (rating: %%rating%%, comments: %%comments%%)  %%created_at%%
 [[/module]]
 
