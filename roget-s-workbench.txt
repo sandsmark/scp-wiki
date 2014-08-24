@@ -310,3 +310,19 @@ Entries Over X
 [[module ListPages tag="-archived -contest -sandbox +goi2014" rating=">0" order="rating desc" separate="false" limit="700" perPage="100"]]
 %%title_linked%% (rating: %%rating%%, comments: %%comments%%)
 [[/module]]
+
+----
+
++ THE "NO ROGETS" CLUB
+# No Rogets allowed... evar.
+# We don't talk about The "No Rogets" Club
+# WE DON'T TALK ABOUT THE "NO ROGETS" CLUB!
+
+
+[[div style="height: 325px; width: 650px; background-color:#E6E6E6; padding: 8px 8px; border-radius: 15px; overflow:auto"]]
+
+[[module ListPages order="created_at desc" separate="yes" perPage="100" separate="false"  rss="Most Recently Created"]]
+%%title_linked%%  (rating: %%rating%%, comments: %%comments%%)  %%created_at%%
+[[/module]]
+
+[[/div]]
