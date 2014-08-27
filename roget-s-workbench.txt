@@ -372,9 +372,7 @@ Date Created
 
 [[div class="content-type-description"]]
 
-[[table style="width: 100%;"]]
-
-[[module ListPages order="created_at desc" prependLine=" " perPage="30" appendLine="[[/table]]" separate="false" rss="Most Recently Created"]]
+[[module ListPages order="created_at desc" prependLine="[[include component:listpages-table]]" perPage="30" appendLine="[[/table]]" separate="false" rss="Most Recently Created"]]
 [[row]]
 [[cell style="vertical-align: top;"]]
 %%title_linked%%
