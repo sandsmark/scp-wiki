@@ -342,7 +342,7 @@ Entries Over X
   overflow: auto;
 }
 .content-panel.content-row .content-type-description-2 {
-  padding: 0 35px;
+  padding: 0 20px;
   text-align: justify; 
 }
 [[/module]]
@@ -371,10 +371,13 @@ Date Created
 [[/div]]
 
 [[div class="content-type-description"]]
-[[module ListPages order="created_at desc" perPage="30" prependLine="[[include component:listpages-table]]" appendLine="[[/table]]" separate="false" rss="Most Recently Created"]]
+[[table style="width: 100%;"]]
+
+[[module ListPages order="created_at desc" perPage="30" separate="false" rss="Most Recently Created"]]
 [[row]][[cell style="vertical-align: top;"]]%%title_linked%%[[/cell]][[cell style="vertical-align: top; text-align: center;"]]%%rating%%[[/cell]][[cell style="vertical-align: top; text-align: right;"]]%%created_at%%[[/cell]][[/row]]
 [[/module]]
 
+[[/table]]
 [[/div]]
 [[/div]]
 
