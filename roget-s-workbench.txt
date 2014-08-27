@@ -373,3 +373,9 @@ Most Recently Created Pages
 
 [[/tab]]
 [[/tabview]]
+
+[[module ListPages order="created_at desc" perPage="40" prependLine="[[include component:listpages-table]]" appendLine="[[/table]]" separate="false" rss="Most Recently Created"]]
+
+[[row]][[cell style="vertical-align: top;"]]**%%title_linked%%**[[/cell]][[cell style="vertical-align: top; text-align: center;"]]%%rating%%[[/cell]][[cell style="vertical-align: top; text-align: right;"]]%%created_at%%[[/cell]][[/row]]
+
+[[/module]]
