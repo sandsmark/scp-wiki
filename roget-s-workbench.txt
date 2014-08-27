@@ -357,8 +357,8 @@ Most Recently Created Pages
 [[/div]]
 
 [[div class="content-type-description"]]
-[[module ListPages order="created_at desc" perPage="40" separate="false" prependLine="||~ Page||~ Rating||~ Coments||~ Date Created|| " rss="Most Recently Created"]]
-|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
+[[module ListPages order="created_at desc" separate="yes" perPage="40" separate="false" prependLine=" " rss="Most Recently Created"]]
+%%title_linked%% (rating: %%rating%%, comments: %%comments%%) %%created_at%%
 [[/module]]
 
 [[/div]]
