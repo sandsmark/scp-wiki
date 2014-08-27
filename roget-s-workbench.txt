@@ -371,10 +371,19 @@ Date Created
 [[/div]]
 
 [[div class="content-type-description"]]
-[[table style="width: 100%;"]]
 
-[[module ListPages order="created_at desc" perPage="30" separate="false" rss="Most Recently Created"]]
-[[row]][[cell style="vertical-align: top;"]]%%title_linked%%[[/cell]][[cell style="vertical-align: top; text-align: center;"]]%%rating%%[[/cell]][[cell style="vertical-align: top; text-align: right;"]]%%created_at%%[[/cell]][[/row]]
+[[module ListPages order="created_at desc" prependLine="[[table]]" perPage="30" appendLine="[[/table]]" separate="false" rss="Most Recently Created"]]
+[[row]]
+[[cell style="vertical-align: top;"]]
+%%title_linked%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%rating%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: right;"]]
+%%created_at%%
+[[/cell]]
+[[/row]]
 [[/module]]
 
 [[/table]]
