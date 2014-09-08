@@ -34,7 +34,7 @@ text-align: justify;
 
 [[div class="content-panel standalone content-row"]]
 [[div class="content-type-title"]]
-Top Rated Created Pages 
+Top Rated Pages 
 [[/div]]
 
 [[div class="content-type-description-2"]]
@@ -57,7 +57,7 @@ Comments
 
 [[div class="content-type-description"]]
 
-[[module ListPages order="rating desc" prependLine="[[include component:listpages-table]]" perPage="30" appendLine="[[/table]]" separate="false" rss="Most Recently Created"]]
+[[module ListPages order="rating desc" prependLine="[[include component:listpages-table]]" perPage="30" appendLine="[[/table]]" separate="false" date="2014.09" rss="Top Rated Pages"]]
 [[row]]
 [[cell style="vertical-align: top;"]]
 %%title_linked%%
@@ -74,6 +74,49 @@ Comments
 [[/div]]
 [[/div]]
 
+----
+
+[[div class="content-panel standalone content-row"]]
+[[div class="content-type-title"]]
+Top Rated Pages This Month (Sep 2014)
+[[/div]]
+
+[[div class="content-type-description-2"]]
+
+[[table style="width: 100%;"]]
+[[row style="font-weight: bold; color: #fff; background-color: #666;"]]
+[[cell style="padding: 0 2px; width: 50%;"]]
+Page
+[[/cell]]
+[[cell style="padding: 0 2px; width: 25%; text-align: center;"]]
+Rating
+[[/cell]]
+[[cell style="padding: 0 2px; text-align: center;"]]
+Comments
+[[/cell]]
+[[/row]]
+[[/table]]
+
+[[/div]]
+
+[[div class="content-type-description"]]
+
+[[module ListPages rating=">5" order="rating desc" prependLine="[[include component:listpages-table]]" perPage="15" appendLine="[[/table]]" separate="false" rss="Most Recently Created"]]
+[[row]]
+[[cell style="vertical-align: top;"]]
+%%title_linked%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%rating%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%comments%%
+[[/cell]]
+[[/row]]
+[[/module]]
+
+[[/div]]
+[[/div]]
 ----
 
 [[div class="content-panel standalone content-row"]]
