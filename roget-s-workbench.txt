@@ -34,6 +34,50 @@ text-align: justify;
 
 [[div class="content-panel standalone content-row"]]
 [[div class="content-type-title"]]
+Top Rated Created Pages 
+[[/div]]
+
+[[div class="content-type-description-2"]]
+
+[[table style="width: 100%;"]]
+[[row style="font-weight: bold; color: #fff; background-color: #666;"]]
+[[cell style="padding: 0 2px; width: 50%;"]]
+Page
+[[/cell]]
+[[cell style="padding: 0 2px; width: 25%; text-align: center;"]]
+Rating
+[[/cell]]
+[[cell style="padding: 0 2px; text-align: center;"]]
+Comments
+[[/cell]]
+[[/row]]
+[[/table]]
+
+[[/div]]
+
+[[div class="content-type-description"]]
+
+[[module ListPages order="created_at desc" prependLine="[[include component:listpages-table]]" perPage="25" appendLine="[[/table]]" separate="false" rss="Most Recently Created"]]
+[[row]]
+[[cell style="vertical-align: top;"]]
+%%rating%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%commented_at%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%comments%%
+[[/cell]]
+[[/row]]
+[[/module]]
+
+[[/div]]
+[[/div]]
+
+----
+
+[[div class="content-panel standalone content-row"]]
+[[div class="content-type-title"]]
 Most Recently Created Pages 
 [[/div]]
 
