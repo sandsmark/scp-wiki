@@ -180,7 +180,7 @@ Page
 Rating
 [[/cell]]
 [[cell style="padding: 0 2px; text-align: center;"]]
-Comments
+Created
 [[/cell]]
 [[/row]]
 [[/table]]
@@ -198,7 +198,7 @@ Comments
 %%rating%%
 [[/cell]]
 [[cell style="vertical-align: top; text-align: center;"]]
-%%comments%%
+%%created_at%%
 [[/cell]]
 [[/row]]
 [[/module]]
@@ -210,7 +210,7 @@ Comments
 
 [[div class="content-panel standalone content-row"]]
 [[div class="content-type-title"]]
-Most Recently Edited Pages 
+Lowest Rated SCPs
 [[/div]]
 
 [[div class="content-type-description-2"]]
@@ -221,10 +221,10 @@ Most Recently Edited Pages
 Page
 [[/cell]]
 [[cell style="padding: 0 2px; width: 25%; text-align: center;"]]
-Last Update
+Rating
 [[/cell]]
 [[cell style="padding: 0 2px; text-align: center;"]]
-Updated By
+Created
 [[/cell]]
 [[/row]]
 [[/table]]
@@ -233,16 +233,16 @@ Updated By
 
 [[div class="content-type-description"]]
 
-[[module ListPages order="updated_at desc" prependLine="[[include component:listpages-table]]" perPage="30" appendLine="[[/table]]" separate="false" rss="Most Recently Edited"]]
+[[module ListPages order="rating" tags="scp -archived -decommissioned -contest" rating="<10" prependLine="[[include component:listpages-table]]" perPage="30" appendLine="[[/table]]" separate="false" rss="Lowest Rated SCPs"]]
 [[row]]
 [[cell style="vertical-align: top;"]]
 %%title_linked%%
 [[/cell]]
 [[cell style="vertical-align: top; text-align: center;"]]
-%%updated_at%%
+%%rating%%
 [[/cell]]
 [[cell style="vertical-align: top; text-align: left;"]]
-%%updated_by_linked%%
+%%created_at%%
 [[/cell]]
 [[/row]]
 [[/module]]
