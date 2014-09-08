@@ -15,15 +15,15 @@ title:Most Recently Created
     inset 0 15px 10px rgba(255,255,255,.2);
 }
 .content-panel .content-type-description {
-  padding: 0 20px;
-  text-align: justify;
+padding: 0 20px;
+text-align: justify;
 }
 .content-panel.content-row .content-type-description {
-  height: 590px;
+padding: 5px 20px;
 }
 .content-panel.content-row .content-type-description-2 {
-  padding: 0 20px;
-  text-align: justify; 
+padding: 0 20px;
+text-align: justify; 
 }
 [[/module]]
 
@@ -43,7 +43,7 @@ Page
 Last Comment
 [[/cell]]
 [[cell style="padding: 0 2px; text-align: center;"]]
-Last Update
+Comments
 [[/cell]]
 [[/row]]
 [[/table]]
@@ -57,11 +57,11 @@ Last Update
 [[cell style="vertical-align: top;"]]
 %%title_linked%%
 [[/cell]]
-[[cell style="vertical-align: top; text-align: right;"]]
+[[cell style="vertical-align: top; text-align: center;"]]
 %%commented_at%%
 [[/cell]]
-[[cell style="vertical-align: top; text-align: right;"]]
-%%updated_at%%
+[[cell style="vertical-align: top; text-align: center;"]]
+%%comments%%
 [[/cell]]
 [[/row]]
 [[/module]]
