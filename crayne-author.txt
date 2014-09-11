@@ -87,7 +87,7 @@ That one show totally stole that line from us.
 [[image scp_2250_by_sunnyparallax.jpg]]
 [[/collapsible]]
 
-+++ **Workbench:**
++++ **Recordkeeping:**
 
 [[collapsible show="+ It's not terribly interesting" hide="- Told you"]]
 
@@ -110,11 +110,6 @@ Tale rating:
 Other:
 [[module ListPages created_by="=" tags="-scp -tale" separate="no" order="rating desc" perPage="50" prependLine="||~ Title||~ Rating||"]]
 ||%%title_linked%%||%%rating%%||
-[[/module]]
-
-Pages in danger of deletion:
-[[module ListPages rating="<-9" tags="-archived -decommissioned -author" order="rating desc" perPage="50" separate="no" prependLine="||~ Title||~ Rating||~ Created||"]]
-||%%title_linked%%||%%rating%%||%%created_at%% ||
 [[/module]]
 
 [[/collapsible]]
