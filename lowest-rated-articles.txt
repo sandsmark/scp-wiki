@@ -1,30 +1,164 @@
 title:Lowest Rated Articles
-This is mainly to draw attention to those non-SCP articles whose ratings are in the single digits, since the ones below zero are already in the [[[Lowest Rated Pages]]].
-
 [[tabview]]
+
 [[tab All non-SCPs]]
-[[module ListPages category="-nav -component -decomm -system -template -scp-1496 -scp-2000-eskobar -forum -migration -jekeledssecret-this-is-a-secret-page -jekeledssecret-this-is-the-second-secret-page -admin -random -css -search -chat" tags="-scp -author -contest -sandbox -hub -project -guide -splash -scp-fuel -admin -archived -template -tc2013 -2000 -3000" rating="<10" order="rating" separate="false" perPage="200" prependLine="||~ Title ||~ Rating ||~ Tags ||~ Comments ||~ Creation date ||"]]
-|| %%title_linked%% || %%rating%% || %%tags%% || %%comments%% || %%created_at%% || 
+
+[[table style="width: 100%;"]]
+[[row style="font-weight: bold; color: #fff; background-color: #666;"]]
+[[cell style="padding: 0 2px; width: 50%;"]]
+Article
+[[/cell]]
+[[cell style="padding: 0 2px; width: 25%; text-align: center;"]]
+Date Created
+[[/cell]]
+[[cell style="padding: 0 2px; text-align: center;"]]
+Rating
+[[/cell]]
+[[/row]]
+[[/table]]
+
+[[module ListPages category="-nav -component -decomm -system -template -scp-1496 -scp-2000-eskobar -forum -migration -jekeledssecret-this-is-a-secret-page -jekeledssecret-this-is-the-second-secret-page -admin -random -css -search -chat" tags="-scp -author -contest -sandbox -hub -project -guide -splash -scp-fuel -admin -archived -template -tc2013 -2000 -3000" rating="<10" order="rating" separate="false" perPage="30" prependLine="[[include component:listpages-table]]"  appendLine="[[/table]]" rss="Lowest Rated Articles"]]
+[[row]]
+[[cell style="vertical-align: top;"]]
+%%title_linked%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%created_at%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%rating%%
+[[/cell]]
+[[/row]]
 [[/module]]
+
 [[/tab]]
+
 [[tab Tales only]]
-[[module ListPages category="-nav -decomm -system -forum -scp-1496 -scp-2000-eskobar -migration -admin -random -search -chat" tags="-scp -author -contest -tc2013 -sandbox -hub -project -guide -splash -scp-fuel -admin -archived -2000 -3000 tale" rating="<10" order="rating" separate="false" perPage="200" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Creation date ||"]]
-|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || 
+
+[[table style="width: 100%;"]]
+[[row style="font-weight: bold; color: #fff; background-color: #666;"]]
+[[cell style="padding: 0 2px; width: 50%;"]]
+Article
+[[/cell]]
+[[cell style="padding: 0 2px; width: 25%; text-align: center;"]]
+Date Created
+[[/cell]]
+[[cell style="padding: 0 2px; text-align: center;"]]
+Rating
+[[/cell]]
+[[/row]]
+[[/table]]
+
+[[module ListPages category="-nav -decomm -system -forum -scp-1496 -scp-2000-eskobar -migration -admin -random -search -chat" tags="-scp -author -contest -tc2013 -sandbox -hub -project -guide -splash -scp-fuel -admin -archived -2000 -3000 tale" rating="<10" order="rating" separate="false" perPage="30" prependLine="[[include component:listpages-table]]"  appendLine="[[/table]]" rss="Lowest Rated Articles"]]
+[[row]]
+[[cell style="vertical-align: top;"]]
+%%title_linked%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%created_at%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%rating%%
+[[/cell]]
+[[/row]]
 [[/module]]
+
 [[/tab]]
+
 [[tab Supplements only]]
-[[module ListPages category="-nav -decomm -scp-1496 -scp-2000-eskobar -system -forum -migration -admin -random -search -chat" tags="-scp -author -2000 -contest -sandbox -hub -project -guide -splash -scp-fuel -admin -3000 -archived supplement" rating="<10" order="rating" separate="false" perPage="200" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Creation date ||"]]
-|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || 
+
+[[table style="width: 100%;"]]
+[[row style="font-weight: bold; color: #fff; background-color: #666;"]]
+[[cell style="padding: 0 2px; width: 50%;"]]
+Article
+[[/cell]]
+[[cell style="padding: 0 2px; width: 25%; text-align: center;"]]
+Date Created
+[[/cell]]
+[[cell style="padding: 0 2px; text-align: center;"]]
+Rating
+[[/cell]]
+[[/row]]
+[[/table]]
+
+[[module ListPages category="-nav -decomm -scp-1496 -scp-2000-eskobar -system -forum -migration -admin -random -search -chat" tags="-scp -author -2000 -contest -sandbox -hub -project -guide -splash -scp-fuel -admin -3000 -archived supplement" rating="<10" order="rating" separate="false" perPage="30" prependLine="[[include component:listpages-table]]"  appendLine="[[/table]]" rss="Lowest Rated Articles"]]
+[[row]]
+[[cell style="vertical-align: top;"]]
+%%title_linked%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%created_at%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%rating%%
+[[/cell]]
+[[/row]]
 [[/module]]
+
 [[/tab]]
+
 [[tab Other]]
-[[module ListPages category="-nav -decomm -system -scp-1496 -scp-2000-eskobar -forum -migration -admin -random -search -chat" tags="-scp -author -2000 -contest -sandbox -hub -project -guide -splash -scp-fuel -admin -archived -tale -3000 -supplement" rating="<10" order="rating" separate="false" perPage="200" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Creation date ||"]]
-|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || 
+
+[[table style="width: 100%;"]]
+[[row style="font-weight: bold; color: #fff; background-color: #666;"]]
+[[cell style="padding: 0 2px; width: 50%;"]]
+Article
+[[/cell]]
+[[cell style="padding: 0 2px; width: 25%; text-align: center;"]]
+Date Created
+[[/cell]]
+[[cell style="padding: 0 2px; text-align: center;"]]
+Rating
+[[/cell]]
+[[/row]]
+[[/table]]
+
+[[module ListPages category="-nav -decomm -system -scp-1496 -scp-2000-eskobar -forum -migration -admin -random -search -chat" tags="-scp -author -2000 -contest -sandbox -hub -project -guide -splash -scp-fuel -admin -archived -tale -3000 -supplement" rating="<10" order="rating" separate="false" perPage="30" prependLine="[[include component:listpages-table]]"  appendLine="[[/table]]" rss="Lowest Rated Articles"]]
+[[row]]
+[[cell style="vertical-align: top;"]]
+%%title_linked%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%created_at%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%rating%%
+[[/cell]]
+[[/row]]
 [[/module]]
+
 [[/tab]]
+
 [[tab Tales (chronological)]]
-[[module ListPages category="-nav -decomm -scp-1496 -scp-2000-eskobar -system -forum -migration -admin -random -search -chat" tags="-scp -author -contest -sandbox -hub -project -guide -splash -scp-fuel -admin -2000 -3000 -archived -tc2013 tale" rating="<10" order="created_at desc" separate="false" perPage="200" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Creation date ||"]]
-|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || 
+
+[[table style="width: 100%;"]]
+[[row style="font-weight: bold; color: #fff; background-color: #666;"]]
+[[cell style="padding: 0 2px; width: 50%;"]]
+Article
+[[/cell]]
+[[cell style="padding: 0 2px; width: 25%; text-align: center;"]]
+Date Created
+[[/cell]]
+[[cell style="padding: 0 2px; text-align: center;"]]
+Rating
+[[/cell]]
+[[/row]]
+[[/table]]
+
+[[module ListPages category="-nav -decomm -scp-1496 -scp-2000-eskobar -system -forum -migration -admin -random -search -chat" tags="-scp -author -contest -sandbox -hub -project -guide -splash -scp-fuel -admin -2000 -3000 -archived -tc2013 tale" rating="<10" order="created_at desc" separate="false" perPage="30" prependLine="[[include component:listpages-table]]"  appendLine="[[/table]]" rss="Lowest Rated Articles"]]
+[[row]]
+[[cell style="vertical-align: top;"]]
+%%title_linked%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%created_at%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%rating%%
+[[/cell]]
+[[/row]]
 [[/module]]
+
 [[/tab]]
+
 [[/tabview]]
