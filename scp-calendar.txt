@@ -7,14 +7,6 @@ parent:history-of-the-universe-hub
 > Hello! This is a list of all SCP articles, by year and month of creation! Hopefully, this incredible and exciting list can help you discover how the SCP Series has evolved over time! -- Roget
 
 [[module PageCalendar category="_default"]]
-[[module ListPages category="_default"tags="+scp" perPage="100" date="@URL" separate="false" prependLine="||~ Page||~ Date created||~ Created by ||"]]
-|| %%linked_title%% || %%date%% || %%author%% ||
-[[/module]]
-
-> Also tales -- Rgt
-
-
-[[module PageCalendar category="_default"]]
-[[module ListPages category="_default"tags="+tale" perPage="100" date="@URL" separate="false" prependLine="||~ Page||~ Date created||~ Created by ||"]]
+[[module ListPages category="_default"tags="+scp" "-tale"perPage="100" date="@URL" separate="false" prependLine="||~ Page||~ Date created||~ Created by ||"]]
 || %%linked_title%% || %%date%% || %%author%% ||
 [[/module]]
