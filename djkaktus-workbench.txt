@@ -224,3 +224,32 @@ parent:djkaktus-personnel-file
 || %%title_linked%% || %%Created_By%% || %%created_at%% ||
 [[/module]]
 [[/=]]
+
+[[module css]]
+table.wiki-content-table
+{
+    margin: 0;
+    width: 100%;
+}
+
+table.wiki-content-table td
+{
+    vertical-align: top;
+    width: 200px;
+}
+
+table.wiki-content-table td:first-child
+{
+    width: 150px;
+}
+
+table.wiki-content-table td:last-child
+{
+    width: 100px;
+}
+
+#toc-action-bar
+{
+    display: none;
+}
+[[/module]]
