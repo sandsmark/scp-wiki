@@ -12,8 +12,8 @@ parent:djkaktus-personnel-file
 
 + -A-
 
-[[module ListPages limit="200" separate="no" tags="tale" name="a*" order="title" prependLine="||~ Title ||~ Authored By||~ Date of Publication ||"]] 
-|| %%title_linked%% || %%Created_By%% || %%created_at%% ||
+[[module ListPages limit="200" separate="no" tags="tale" name="a*" order="title" prependLine="||~ Title ||~ Authored By||~ Date of Publication || Preview ||"]] 
+|| %%title_linked%% || %%Created_By%% || %%created_at%% || %%preview(50)%% ||
 [[/module]]
 
 [[# B]]
