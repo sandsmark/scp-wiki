@@ -12,7 +12,7 @@ parent:djkaktus-personnel-file
 
 + -A-
 
-[[module ListPages limit="no" separate="no" tags="tale" name="a*" order="title" prependLine="||~ Title ||~ Authored By||~ Date of Publication ||"]] 
+[[module ListPages limit="200" separate="no" tags="tale" name="a*" order="title" prependLine="||~ Title ||~ Authored By||~ Date of Publication ||"]] 
 || %%title_linked%% || %%Created_By%% || %%created_at%% ||
 [[/module]]
 
@@ -220,7 +220,7 @@ parent:djkaktus-personnel-file
 
 + -123-
 
-[[module ListPages separate="no" tags="tale" name="1*, 2*, 3*, 4*, 5*, 6*, 7*, 8*, 9*, 0*" order="title" prependLine="||~ Title ||~ Authored By||~ Date of Publication ||"]] 
+[[module ListPages separate="no" tags="tale" name="1*" order="title" prependLine="||~ Title ||~ Authored By||~ Date of Publication ||"]] 
 || %%title_linked%% || %%Created_By%% || %%created_at%% ||
 [[/module]]
 [[/=]]
