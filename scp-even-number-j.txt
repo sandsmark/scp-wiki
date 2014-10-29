@@ -6,35 +6,43 @@ title:SCP-[even number]-J
 [[html]]
 <html>
 <head>
+<style type="text/css">
+table, td {
+    border: none;
+    font-family: verdana,arial,helvetica,sans-serif;
+    font-size: 0.8em;
+    color: #333;
+}
 
+table {
+    margin: 0 auto;
+}
 
-<HEAD>
+td {
+    word-break: normal;
+    width: 20%
+}
 
+body, input, p
+{
+    font-family: verdana,arial,helvetica,sans-serif; 
+    color: #333;
+}
 
+h2
+{
+    font-family: verdana,arial,helvetica,sans-serif; 
+    color: #333;
+}
+</style>
 
-<!-- STEP ONE: Copy this code into the HEAD of your HTML document  -->
-
-
-
-<HEAD>
-
-
-
-
-
-<SCRIPT LANGUAGE = "JavaScript">
-
-
-
-
-
-<!-- Begin 
+<script type="text/JavaScript">
 
 function create(form) {        
 
 if (confirm("Warning: Unauthorized personnel will be terminated. Are you sure you want to proceed?")) {        
 
-storyWin = window.open("","StoryWin","toolbar=no,width=800,height=800,directories=no,status=yes,scrollbars=yes,resize=no,menubar=no");                
+storyWin = window.open("","StoryWin","toolbar=no,width=800,600,directories=no,status=yes,scrollbars=yes,resize=no,menubar=no");                
 
 if(form.input1.value == null || form.input1.value =="")
 {
@@ -213,21 +221,21 @@ if(form.input34.value == null || form.input34.value =="")
 
 with (storyWin.document) {       
 
-writeln ("<CENTER><H2>CLASSIFIED BY ORDER OF O5-█</H2></CENTER>");             
+writeln ("<h2 style='text-align:center;'>CLASSIFIED BY ORDER OF O5-█</h2>");             
 
-writeln ("<font face= 'verdana'> <P><b>Item #:</b> SCP-" + form.input2.value + "-J<P><b>Object Class: " + form.input15.value + "</b><P><b>Special Containment Procedures:</b> SCP-" + form.input2.value + "-J is to be kept in a " + form.input4.value + "-lined containment chamber located in " + form.input22.value + ", where it is to be guarded at all times by no less than " + form.input16.value + " " + form.input14.value + " armed with " + form.input10.value + ".<P> In the event that SCP-" + form.input2.value + "-J ever begins " + form.input25.value + " its " + form.input34.value + ", " + form.input17.value + " is to " + form.input33.value + " SCP-" + form.input2.value + "-J until it ceases its behavior. In the event of a containment breach, Mobile Task Force " + form.input5.value + "-7 (''" + form.input6.value + "'') is to be dispatched to SCP-" + form.input2.value + "-J's last known location.");              
+writeln ("<p><b>Item #:</b> SCP-" + form.input2.value + "-J</p><p><b>Object Class: " + form.input15.value + "</b></p><p><b>Special Containment Procedures:</b> SCP-" + form.input2.value + "-J is to be kept in a " + form.input4.value + "-lined containment chamber located in " + form.input22.value + ", where it is to be guarded at all times by no less than " + form.input16.value + " " + form.input14.value + " armed with " + form.input10.value + ".</p><p> In the event that SCP-" + form.input2.value + "-J ever begins " + form.input25.value + " its " + form.input34.value + ", " + form.input17.value + " is to " + form.input33.value + " SCP-" + form.input2.value + "-J until it ceases its behavior. In the event of a containment breach, Mobile Task Force " + form.input5.value + "-7 (''" + form.input6.value + "'') is to be dispatched to SCP-" + form.input2.value + "-J's last known location.</p>");              
 
-writeln ("<P><b>Description:</b> SCP-" + form.input2.value + "-J is a " + form.input7.value +" "+ form.input8.value +". Like most members of its species, it is able to " + form.input19.value + ", and regularly eats twice its own weight in " + form.input4.value+" each day." 
-+"<P>SCP-" + form.input2.value + "-J's unusual properties manifest whenever it comes in contact with " + form.input26.value + ", which causes it to turn into "+ form.input30.value + ". Whenever this happens, all " + form.input31.value + " within a " + form.input9.value + " kilometer radius will begin to " + form.input32.value +" uncontrollably, usually leading to civilian casualties. <P> In addition, many researchers feel it has an uncanny resemblance to " + form.input20.value + ". Whether or not this is at all related to SCP-" + form.input2.value + "-J's anomalous properties is unknown at this time.");
+writeln ("<p><b>Description:</b> SCP-" + form.input2.value + "-J is a " + form.input7.value +" "+ form.input8.value +". Like most members of its species, it is able to " + form.input19.value + ", and regularly eats twice its own weight in " + form.input4.value+" each day." 
++"</p><p>SCP-" + form.input2.value + "-J's unusual properties manifest whenever it comes in contact with " + form.input26.value + ", which causes it to turn into "+ form.input30.value + ". Whenever this happens, all " + form.input31.value + " within a " + form.input9.value + " kilometer radius will begin to " + form.input32.value +" uncontrollably, usually leading to civilian casualties. </p><p> In addition, many researchers feel it has an uncanny resemblance to " + form.input20.value + ". Whether or not this is at all related to SCP-" + form.input2.value + "-J's anomalous properties is unknown at this time.</p>");
 
-writeln ("<P><b>Recovery Log:</b> SCP-" + form.input2.value + "-J was first located in " + form.input24.value + " where the " + form.input18.value + " were using it in order to " + form.input29.value + ". Thankfully, Mobile Task Force " + form.input5.value + "-7 (''" + form.input6.value + "'') was able to recover the object with only " + form.input21.value + " civilian casualties.")
+writeln ("<p><b>Recovery Log:</b> SCP-" + form.input2.value + "-J was first located in " + form.input24.value + " where the " + form.input18.value + " were using it in order to " + form.input29.value + ". Thankfully, Mobile Task Force " + form.input5.value + "-7 (''" + form.input6.value + "'') was able to recover the object with only " + form.input21.value + " civilian casualties.</p>")
 
-writeln ("<P><b>Addendum:</b> Test Log " + form.input2.value +"-1"
-+ "<P><blockquote><b>Dr. "+ form.input12.value +":</b> Ello? Ello? Is zhis thing on? Ach, good. Zhis is Docktorr "+ form.input12.value +", and I am about to test SCP-" + form.input2.value +"'s reaction to " + form.input3.value + ". Are you ready to proceed, Docktorr "+ form.input1.value +"?"+  "<P><b>Dr. "+ form.input1.value +":</b> Yes sir, ready to begin test." + "<P><b>Dr. "+ form.input12.value +":</b> Excellent! I am now introducing the "+ form.input3.value + " to " + form.input2.value + "... hmm, zhe subject seems to have already figured out zhe test material." + "<P><b>Dr. "+ form.input1.value +":</b> Making a note; 'subject shows high capacity for learning'.<P><b>" + form.input12.value +":</b> Now zhe subject is lookink right at me, almost as if it... MEIN GOTT! MEIN " + form.input11.value + "! IT'S GOT MEIN " + form.input11.value + "! OH ZHE AGONY! ZHE AGONEEEEEEEEEEEEY!"
-+ "<P><b>END LOG</b></blockquote>" + 
-"<i>In light of incident " + form.input2.value +"-J-1, testing has been suspended indefinitely.</i> - O5-█");
+writeln ("<p><b>Addendum:</b> Test Log " + form.input2.value +"-1"
++ "</p><p><blockquote><b>Dr. "+ form.input12.value +":</b> Ello? Ello? Is zhis thing on? Ach, good. Zhis is Docktorr "+ form.input12.value +", and I am about to test SCP-" + form.input2.value +"'s reaction to " + form.input3.value + ". Are you ready to proceed, Docktorr "+ form.input1.value +"?"+  "</p><p><b>Dr. "+ form.input1.value +":</b> Yes sir, ready to begin test." + "</p><p><b>Dr. "+ form.input12.value +":</b> Excellent! I am now introducing the "+ form.input3.value + " to " + form.input2.value + "... hmm, zhe subject seems to have already figured out zhe test material." + "</p><p><b>Dr. "+ form.input1.value +":</b> Making a note; 'subject shows high capacity for learning'.</p><p><b>" + form.input12.value +":</b> Now zhe subject is lookink right at me, almost as if it... MEIN GOTT! MEIN " + form.input11.value + "! IT'S GOT MEIN " + form.input11.value + "! OH ZHE AGONY! ZHE AGONEEEEEEEEEEEEY!"
++ "</p><p><b>END LOG</b></blockquote>" + 
+"<i>In light of incident " + form.input2.value +"-J-1, testing has been suspended indefinitely.</i> - O5-█</p>");
 
-writeln ("<BR></CENTER>");   
+writeln ("<br>");   
 
       }        
 
@@ -235,261 +243,134 @@ writeln ("<BR></CENTER>");   
 
 }
 
-// End -->
-
-</SCRIPT>
+</script>
 
 </head>
 
-
-
 <body>
 
+<h2 style="text-align:center;"> <strong>Warning: SCP-XXX-J is highly confidential. Please fill out Form-███████-28-J before proceeding.</strong></h2>
+<form>
+
+<table>
+
+<tr>
+ <td>Your Last Name:</td>
+ <td><input type="text" name="input1" style="width:95%;"><br></td>
+ <td>Your Clearance Level:</td>
+ <td><input type="text" name="input13" style="width:95%;" ></td>
+</tr>
+<tr>
+ <td>An Odd Number:</td>
+ <td><input type="text" name="input2" style="width:95%;" ><br></td>
+ <td>A Profession (Plural):</td>
+ <td><input type="text" name="input14" style="width:95%;" ></td>
+</tr>
+<tr>
+ <td>A Noun:</td>
+ <td><input type="text" name="input3" style="width:95%;" ><br></td>
+ <td>Object Class:</td>
+ <td><input type="text" name="input15" style="width:95%;" ></td>
+</tr>
+<tr>
+  <td>A Type of Food:</td>
+  <td><input type="text" name="input4" style="width:95%;" ><br></td>
+  <td>Small Number Greater than 1:</td>
+  <td><input type="text" name="input16" style="width:95%;" ></td>
+</tr>
+<tr>
+  <td>A Greek Letter:</td>
+  <td><input type="text" name="input5" style="width:95%;" ><br></td>
+  <td>A Senior Staff Member:</td>
+  <td><input type="text" name="input17" style="width:95%;" ></td>
+</tr>
+<tr>
+  <td>Your Favorite TV Show:</td>
+  <td><input type="text" name="input6" style="width:95%;" ><br></td>
+  <td>American Football Team</td>
+  <td><input type="text" name="input18" style="width:95%;" ></td>
+</tr>
+<tr>
+  <td>An Adjective:</td>
+  <td><input type="text" name="input7" style="width:95%;" ><br></td>
+  <td>A Verb and a Noun:</td>
+  <td><input type="text" name="input19" style="width:95%;" ></td>
+</tr>
+<tr>
+  <td>An Animal:</td>
+  <td><input type="text" name="input8" style="width:95%;" ><br></td>
+  <td>A Famous Person:</td>
+  <td><input type="text" name="input20" style="width:95%;" ></td>
+</tr>
+<tr>
+  <td>An Even Number:</td>
+  <td><input type="text" name="input9" style="width:95%;" ><br></td>
+  <td>A Large Number:</td>
+  <td><input type="text" name="input21" style="width:95%;" ></td>
+</tr>
+<tr>
+  <td>Something Cheap (Plural):</td>
+  <td><input type="text" name="input10" style="width:95%;" ><br></td>
+  <td>Somewhere Heavily Guarded:</td>
+  <td><input type="text" name="input22" style="width:95%;" ></td>
+</tr>
+<tr>
+  <td>A Body Part:</td>
+  <td><input type="text" name="input11" style="width:95%;" ><br></td>
+  <td>Another Adjective</td>
+  <td><input type="text" name="input23" style="width:95%;" ></td>
+</tr>
+<tr>
+  <td>A German Last Name:</td>
+  <td><input type="text" name="input12" style="width:95%;" ><br></td>
+  <td>A Made-Up Town:</td>
+  <td><input type="text" name="input24" style="width:95%;" ></td>
+</tr>
+<tr>
+  <td>An &quot;-ing&quot; Verb</td>
+  <td><input type="text" name="input25" style="width:95%;" ></td>
+  <td>Another &quot;-ing&quot; verb</td>
+  <td><input type="text" name="input27" style="width:95%;" ></td>
+</tr>
+<tr>
+  <td>Non-Proper Noun (Plural)</td>
+  <td><input type="text" name="input26" style="width:95%;" ></td>
+  <td>A Noun</td>
+  <td><input type="text" name="input28" style="width:95%;" ></td>
+</tr>
+<tr>
+  <td>Cartoonish Supervillain Goal<br>(i.e. &quot;take over the world&quot;)</td>
+  <td><input type="text" name="input29" style="width:95%;" ></td>
+  <td>Another Noun</td>
+  <td><input type="text" name="input30" style="width:95%;" ></td>
+</tr>
+<tr>
+  <td>Another Verb</td>
+  <td><input type="text" name="input33" style="width:95%;" ></td>
+  <td>Another Body Part</td>
+  <td><input type="text" name="input34" style="width:95%;" ></td>
+</tr>
+<tr>
+  <td>Yet Another Verb</td>
+  <td><input type="text" name="input32" style="width:95%;" ></td>
+  <td>Yet Another Noun (plural)</td>
+  <td><input type="text" name="input31" style="width:95%;" ></td>
+</tr>
+</table>
 
+<br>
 
-<!-- STEP TWO: Put this code into the BODY of your HTML document  -->
+<table style="border: none;">
 
+<tr>
 
-<!--<FONT FACE="COMIC SANS MS" SIZE="2"> -->
+    <td style="border:none;"><input type="reset" value="Clear (Start Over)"></td>
+    <td style="text-align:right; border: none;"><input type = "button" value="Submit" onClick = "create(this.form)"></td>
 
-<CENTER>
+</tr>
 
-<font face= 'verdana'>
-<H2> <strong>Warning: SCP-XXX-J is highly confidential. Please fill out Form-███████-28-J before proceeding.</strong></H2>
-<FORM>
-
-<TABLE BORDER = 1 CELLPADDING = 0>
-
-<TR><TD>
-
-Your Last Name:
-
-<TD><INPUT TYPE="text" NAME="input1" size=45><BR>
-  
-</TD>
-<TD>Your Clearance Level:</TD>
-<TD><INPUT TYPE="text" NAME="input13" size=45 ></TD>
-</TR>
-<TR><TD>
-
-An Odd Number:
-
-</TD><TD>
-  
-  <INPUT TYPE="text" NAME="input2" size=45 ><BR>
-  
-</TD>
-<TD>A Profession (Plural):</TD>
-<TD><INPUT TYPE="text" NAME="input14" size=45 ></TD>
-</TR>
-<TR><TD>
-
-A Noun:
-
-</TD><TD>
-
-<INPUT TYPE="text" NAME="input3" size=45 ><BR>
-
-</TD>
-<TD>Object Class:</TD>
-<TD><INPUT TYPE="text" NAME="input15" size=45 ></TD>
-</TR>
-<TR>
-  <TD>
-
-A Type of Food:
-
-</TD>
-  <TD>
-
-<INPUT TYPE="text" NAME="input4" size=45 ><BR>
-
-</TD>
-  <TD>Small Number Greater than 1:</TD>
-  <TD><INPUT TYPE="text" NAME="input16" size=45 ></TD>
-</TR>
-<TR>
-  <TD>
-
-A Greek Letter:
-
-</TD>
-  <TD>
-
-<INPUT TYPE="text" NAME="input5" size=45 ><BR>
-
-</TD>
-  <TD>A Senior Staff Member:</TD>
-  <TD><INPUT TYPE="text" NAME="input17" size=45 ></TD>
-</TR>
-<TR>
-  <TD>
-
-Your Favorite TV Show:
-
-</TD>
-  <TD>
-
-<INPUT TYPE="text" NAME="input6" size=45 ><BR>
-
-</TD>
-  <TD>American Football Team</TD>
-  <TD><INPUT TYPE="text" NAME="input18" size=45 ></TD>
-</TR>
-<TR>
-  <TD>
-
-An Adjective:
-
-</TD>
-  <TD>
-
-<INPUT TYPE="text" NAME="input7" size=45 ><BR>
-
-</TD>
-  <TD>A Verb and a Noun:</TD>
-  <TD><INPUT TYPE="text" NAME="input19" size=45 ></TD>
-</TR>
-<TR>
-  <TD>
-
-An Animal:
-
-</TD>
-  <TD>
-
-<INPUT TYPE="text" NAME="input8" size=45 ><BR>
-
-</TD>
-  <TD>A Famous Person:</TD>
-  <TD><INPUT TYPE="text" NAME="input20" size=45 ></TD>
-</TR>
-<TR>
-  <TD>
-
-An Even Number:
-
-</TD>
-  <TD>
-
-<INPUT TYPE="text" NAME="input9" size=45 ><BR>
-
-</TD>
-  <TD>A Large Number:</TD>
-  <TD><INPUT TYPE="text" NAME="input21" size=45 ></TD>
-</TR>
-<TR>
-  <TD>
-
-Something Cheap (Plural):
-
-</TD>
-  <TD>
-
-<INPUT TYPE="text" NAME="input10" size=45 ><BR>
-
-</TD>
-  <TD>Somewhere Heavily Guarded:</TD>
-  <TD><INPUT TYPE="text" NAME="input22" size=45 ></TD>
-</TR>
-<TR>
-  <TD>
-
-A Body Part:
-
-</TD>
-  <TD>
-
-<INPUT TYPE="text" NAME="input11" size=45 ><BR>
-
-</TD>
-  <TD>Another Adjective</TD>
-  <TD><INPUT TYPE="text" NAME="input23" size=45 ></TD>
-</TR>
-<TR>
-  <TD>
-A German Last Name:
-
-</TD>
-  <TD>
-
-<INPUT TYPE="text" NAME="input12" size=45 ><BR>
-
-</TD>
-  <TD>A Made-Up Town:</TD>
-  <TD><INPUT TYPE="text" NAME="input24" size=45 ></TD>
-</TR>
-<TR>
-  <TD>An &quot;-ing&quot; Verb</TD>
-  <TD><INPUT TYPE="text" NAME="input25" size=45 ></TD>
-  <TD>Another &quot;-ing&quot; verb</TD>
-  <TD><INPUT TYPE="text" NAME="input27" size=45 ></TD>
-</TR>
-<TR>
-  <TD>Non-Proper Noun (Plural)</TD>
-  <TD><INPUT TYPE="text" NAME="input26" size=45 ></TD>
-  <TD>A Noun</TD>
-  <TD><INPUT TYPE="text" NAME="input28" size=45 ></TD>
-</TR>
-<TR>
-  <TD><p>Cartoonish Supervillain Goal </p>
-    <p>(i.e. &quot;take over the world&quot;)</p></TD>
-  <TD><INPUT TYPE="text" NAME="input29" size=45 ></TD>
-  <TD>Another Noun</TD>
-  <TD><INPUT TYPE="text" NAME="input30" size=45 ></TD>
-</TR>
-<TR>
-  <TD>Another Verb</TD>
-  <TD><INPUT TYPE="text" NAME="input33" size=45 ></TD>
-  <TD>Another Body Part</TD>
-  <TD><INPUT TYPE="text" NAME="input34" size=45 ></TD>
-</TR>
-<TR>
-  <TD>Yet Another Verb</TD>
-  <TD><INPUT TYPE="text" NAME="input32" size=45 ></TD>
-  <TD>Yet Another Noun (plural)</TD>
-  <TD><INPUT TYPE="text" NAME="input31" size=45 ></TD>
-</TR>
-
-<TR>
-
-  
-</TR>
-
-</TABLE>
-
-<BR></B>
-
-<P><TABLE WIDTH="400">
-
-<TR>
-
-    <TD><input type="reset" value="Clear (Start Over)"></TD>
-
-    <TD ALIGN="right"><INPUT TYPE = "button" VALUE="Submit" onClick = "create(this.form)"></TD>
-
-</TR>
-
-</TABLE>
-<FONT SIZE="+1" FACE="COMIC SANS MS">
-</FONT>
-</FORM>
-</CENTER>
-<FONT SIZE="+1" FACE="COMIC SANS MS">
-<p>
-<p>
-
-
-
-<!-- Script Size:  3.09 KB  -->
-
-
-
-
-
-</FONT>
-
+</table>
+</form>
 </body>
-
 </html>
 [[/html]]
