@@ -129,22 +129,69 @@ Site-16 Staff Psychiatrist
 
 //Researcher's Note: No subsequent entries are present. Diary was recovered from a locked drawer in Mr. Everett's desk at his construction firm during establishment of containment.//
 
-[[collapsible show="NOTICE: You have (1) new messages" hide="- Return to SCP-2888 file access"]]
+[[html]]
 
-**Foundation Network Inter-Site Comm Service v.3.155**
+<script type="text/javascript">
+    
+function blink()
+{
+    var blinking = document.getElementById("blinking");
 
-**===MESSAGE FROM SITE-16 RECEIVED - AUTHORIZATION LEVEL 4 CONFIRMED===**
+    if (blinking.style.visibility == "visible")
+    {
+    	blinking.style.visibility = "hidden";
+    }
+    else
+    {
+    	blinking.style.visibility = "visible";
+    }
+}
 
-hey, you've got the file open, can you add something in quickly please?
+function openHide()
+{
+    if (timer)
+    {
+    	clearInterval(timer);
+    }
+    
+    var message = document.getElementById("message");
+    var blinking =  document.getElementById("blinking");
+    
+    if (message.style.display == "block")
+    {
+    	message.style.display = "none";
+    }
+    else
+    {
+    	message.style.display = "block";
+    }
 
-SIGINT reports they've got a hit on SCP-2888. narendra says she's got a match for an infant born a few weeks ago in elk grove somewhere that's pinging the casefile genetic data. i'll send the info attachment in a sec. 
+        blinking.innerHTML = "NOTICE: You have no new messages";
 
-weird thing is, it's a match for everett, not reckart. mother's no one on our watchlists, and the hospital lists someone named "dr. anne juda" as taking custody. can't find anyone by that name, or the baby. we're working on it still, but usually that stuff comes up in the first couple hours, tops.
+    if (blinking.style.visibility == "hidden")
+    {
+    	blinking.style.visibility = "visible";
+    }
+}
+    
+var timer = setInterval(blink, 1000);
 
-anyway, you've got the template at your workstation. can you note this as an emerging incident in the file and give dr. orrison a call? he'll want to hear about this one.
-
--wilson
-
-**===MESSAGE ENDS===**
-
-[[/collapsible]]
+</script>
+    
+<div id="blinking" style="font-family: verdana,arial,helvetica,sans-serif; font-size: 0.8em; color: #b01" onClick="openHide();">NOTICE: You have (1) new message(s)</div>
+<div id="message" style="display: none; font-family: verdana,arial,helvetica,sans-serif; font-size: 0.8em; color: #333"><strong>Foundation Network Inter-Site Comm Service v.3.155</strong><br>
+<br>
+<strong>===MESSAGE FROM SITE-16 RECEIVED - AUTHORIZATION LEVEL 4 CONFIRMED===</strong><br>
+<br>
+hey, you've got the file open, can you add something in quickly please?<br>
+<br>
+SIGINT reports they've got a hit on SCP-2888. narendra says she's got a match for an infant born a few weeks ago in elk grove somewhere that's pinging the casefile genetic data. i'll send the info attachment in a sec.<br>
+<br>
+weird thing is, it's a match for everett, not reckart. mother's no one on our watchlists, and the hospital lists someone named "dr. anne juda" as taking custody. can't find anyone by that name, or the baby. we're working on it still, but usually that stuff comes up in the first couple hours, tops.<br>
+<br>
+anyway, you've got the template at your workstation. can you note this as an emerging incident in the file and give dr. orrison a call? he'll want to hear about this one.<br>
+<br>
+-wilson<br>
+<br>
+<strong>===MESSAGE ENDS===</strong></div>
+[[/html]]
