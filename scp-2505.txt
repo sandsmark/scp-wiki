@@ -1,0 +1,162 @@
+title:SCP-2505
+[[>]]
+[[module Rate]]
+[[/>]]
+
++ Entry Creation Wizard
+++ For technical support, contact David Rosen, or as I'd rather prefer, don't.
+
+//Note: Stop calling and telling me that the Wizard doesn't work on Android or your browser of choice. You shouldn't be accessing the database on anything other than a thoroughly scrubbed system through the standard browser, anyway.//
+
+[[html]]
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maxium-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+
+<style type="text/css">
+td {
+word-break: normal;
+width: 20%
+}
+</style>
+
+<!-- STEP ONE: Copy this code into the HEAD of your HTML document  -->
+
+<SCRIPT LANGUAGE = "JavaScript">
+
+<!-- Begin
+
+var cnum1 = 0;
+var cnum2 = 0;
+var dnum1 = 0;
+var dnum2 = 0;
+var cstring = "SCP-2505 is only to be referred to as SCP-2505. No pronouns are to be used to refer to SCP-2505. No static documentation is to exist for SCP-2505; nor indeed can it ever last for long. All personnel designated to SCP-2505 are to memorise relevant experimental results."
+var dstring = "SCP-2505 is a small metallic ball bearing which is affected by an anomalous informational phenomenon. Any information recorded in a static manner about SCP-2505 will consistently delete or destroy itself approximately 7.4 seconds after its creation. This method of removal is dependent on the method of writing. For text entered into a computer one character at a time, the information is deleted character at a time 7.4 seconds after each character is typed. For digital audio recordings about SCP-2505, files will be edited in real time 7.4 seconds after recording to white noise. Both of these methods cause no lasting damage to the electronics that they are being recorded on. For non-computerised formats, the removal of information can be more destructive. For example, with vinyl audio recordings, the sections of recorded sound on the vinyl will superheat 7.4 seconds after recording, melting the record and destroying the data. For information written by typewriter or pen, the ink will typically dissipate into airborne particulate. Information carved into surfaces typically results in the catastrophic destruction of the surface. When a non-human sapient mind is introduced to information about SCP-2505, it will typically forget that information after 7.4 seconds. The only known long-term method of recording information on SCP-2505 is storage within a human mind; that is, remembering the information. Besides this effect, SCP-2505 exhibits no other anomalous properties; SCP-2505's shape is, however, exceptionally close to a perfect sphere."
+
+function containment()
+{
+if(cnum2<cstring.length){
+cnum2++;
+window.setTimeout(cdel,7392);
+}
+window.setTimeout(cwait,1);
+}
+
+function cwait(){
+document.getElementById("cbox").value= cstring.substring(cnum1, cnum2);
+}
+
+function cdel(){
+cnum1++;
+if(cnum1==cnum2){
+cnum1=0;
+cnum2=0;
+}
+document.getElementById("cbox").value= cstring.substring(cnum1, cnum2);
+}
+
+function description()
+{
+if(dnum2<dstring.length){
+dnum2++;
+window.setTimeout(ddel,7392);
+}
+window.setTimeout(dwait,1);
+}
+
+function dwait(){
+document.getElementById("dbox").value= dstring.substring(dnum1, dnum2);
+}
+
+function ddel(){
+dnum1++;
+if(dnum1==dnum2){
+dnum1=0;
+dnum2=0;
+}
+document.getElementById("dbox").value= dstring.substring(dnum1, dnum2);
+}
+
+function create(form) {        
+
+if (confirm("Warning: Creation of fraudulent articles will result in disciplinary action. I wish this warning didn't need to be here. Seriously guys, the whole 'J' classification thing is getting old.")) {        
+
+window.alert("Error Code: 35720. Please contact Tech Support, because anything you do by yourself will probably make it worse.");
+
+}
+}
+
+// End -->
+
+</SCRIPT>
+
+</head>
+
+
+
+<body>
+
+
+
+<!-- STEP TWO: Put this code into the BODY of your HTML document  -->
+
+
+<FONT FACE="Verdana" size=2>
+
+<FORM>
+<p>
+<b>Authorisation Code:</b> <input type="password" name="pwd" value="plznolookthx~ruiz">
+</p><p>
+<b>Item #:</b> SCP-2505
+</p><p>
+<b>Object Class:</b>
+<select>
+  <option value="safe">Safe</option>
+  <option value="euclid">Euclid</option>
+  <option value="keter">Keter</option>
+  <option value="neutralised">Neutralised</option>
+  <option value="other">Other</option>
+</select> 
+</p><p>
+<b>Special Containment Procedures:</b>
+
+<textarea rows="8" style="width:95%;" id="cbox" onkeypress="containment()" wrap="hard">
+
+</textarea>
+</p><p>
+<b>Description:</b>
+
+<textarea rows="16" style="width:95%;" id="dbox" onkeypress="description()" wrap="hard">
+
+</textarea>
+
+</p>
+</B>
+
+<P>
+<center>
+<INPUT TYPE = "button" VALUE="Submit" onClick = "create(this.form)"></TD>
+</center>
+
+
+</FORM>
+</font>
+<p>
+<p>
+
+
+
+<!-- Script Size:  3.09 KB  -->
+
+
+
+
+
+</FONT>
+
+</body>
+
+</html>
+[[/html]]
