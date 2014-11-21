@@ -40,9 +40,168 @@ Here are some questions for you to keep in mind as you write.
 
 * If you have any other questions, PM me ([[*user Reject]]) with them. If they're good, I'll post them here for everyone's benefit.
 
-Posting begins on Friday, November **21st** at 11:59 PM EST.
-Posting ends on Friday, November **30th** at 11:59 PM EST
-The winner will be decided on December **7th** at 11:59 PM EST.
+[[html]]
+<html>
+<head>
+<style type="text/css">
+@import url(http://d3g0gp89917ko0.cloudfront.net/v--50456838fc8c/common--theme/base/css/style.css);
+@import url(http://www.scp-wiki.net/component:theme/code/1);
+
+#times
+{
+    margin-top: 10px;
+}
+</style>
+<script type="text/javascript">
+
+function showTimes(postBegin,postEnd,end)
+{
+    var times = document.getElementById('times');
+    postBegin = new Date(postBegin*1000);
+    postEnd = new Date(postEnd*1000);
+    end = new Date(end*1000);
+    postBegin = formatDate(postBegin);
+    postEnd = formatDate(postEnd);
+    end = formatDate(end);
+    html = "Posting begins on " + postBegin + ".<br>";
+    html += "Posting ends on " + postEnd + ".<br>";
+    html += "The winner will be decided on " + end + ".";
+    times.innerHTML = html;
+}
+    
+function getWeekDay(num)
+{
+    var day;
+    
+    switch (num)
+    {
+    	case 1:
+    		day = "Monday";
+    	break;
+    	case 2:
+    		day = "Tuesday";
+    	break;
+    	case 3:
+    		day = "Wednesday";
+    	break;
+    	case 4:
+    		day = "Thursday";
+    	break;		
+    	case 5:
+    		day = "Friday";
+    	break;
+    	case 6:
+    		day = "Saturday";
+    	break;
+    	default:
+    		day = "Sunday";
+    }
+    
+    return day;
+}
+
+function getMonthVerbose(num)
+{
+    var month;
+    
+    switch (num)
+    {
+    	case 1:
+    		month = "February";
+    	break;
+    	case 2:
+    		month = "March";
+    	break;
+    	case 3:
+    		month = "April";
+    	break;
+    	case 4:
+    		month = "May";
+    	break;
+    	case 5:
+    		month = "June";
+    	break;
+    	case 6:
+    		month = "July";
+    	break;
+    	case 7:
+    		month = "August";
+    	break;
+    	case 8:
+    		month = "September";
+    	break;
+    	case 9:
+    		month = "October";
+    	break;
+    	case 10:
+    		month = "November";
+    	break;
+    	case 11:
+    		month = "December";
+    	break;
+    	default:
+    		month = "January";
+    }
+    
+    return month;
+}
+
+function formatDate(d)
+{
+    var dateFormatted = getWeekDay(d.getDay()) + ", " + getMonthVerbose(d.getMonth()) + " <strong>";
+    var dayOfMonth = d.getDate();
+    var suffix;
+    
+    switch (dayOfMonth)
+    {
+    	case 1:
+    	case 21:
+    	case 31:
+    		suffix = "st";
+    	break;
+    	case 2:
+    	case 22:
+    		suffix = "nd";
+    	break;
+    	case 3:
+    	case 23:
+    		suffix = "rd";
+    	break;
+    	default:
+    		suffix = "th";
+    }
+
+    dateFormatted += dayOfMonth + suffix + "</strong> at ";
+
+    var hours = d.getHours();
+    var minutes = d.getMinutes();
+    var timeString = "";
+    
+    if (hours > 12 || (hours == 12 && minutes > 0))
+    {
+    	timeString = (hours - 12) + ":" + minutes + " PM";
+    }
+    else
+    {
+    	timeString = hours + ":" + minutes + " AM";
+    }
+
+    dateFormatted += timeString;
+    
+    return dateFormatted;
+}
+
+</script>
+</head>
+<body onLoad="showTimes(1416632340,1417409940,1418014740);">
+
+<div><strong>Note: the times below are local for you:</strong></div>
+
+<div id="times"></div>
+
+</body>
+</html>
+[[/html]]
 
 ++ Peanut Gallery Hall of Fame
 **//Is there a suggestion/limit for length?//**
