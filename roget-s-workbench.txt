@@ -332,7 +332,7 @@ Also, if the story contains themes of an adult nature, put a warning on the fron
 [[/tabview]]
 
 ----
-+ Author Hubs
++ Hubs
 
 [[module CSS]]
 .content-panel .content-type-title > p {
@@ -364,20 +364,17 @@ text-align: justify;
 
 [[div class="content-panel standalone content-row"]]
 [[div class="content-type-title"]]
-Author Hubs Sorted Alphabetically
+Hubs Sorted Alphabetically
 [[/div]]
 
 [[div class="content-type-description-2"]]
 
 [[table style="width: 100%;"]]
 [[row style="font-weight: bold; color: #fff; background-color: #666;"]]
-[[cell style="padding: 0 2px; width: 25%;"]]
-Author
+[[cell style="padding: 0 2px; width: 40%;"]]
+Hub Title
 [[/cell]]
-[[cell style="padding: 0 2px; width: 25%; text-align: center;"]]
-Title
-[[/cell]]
-[[cell style="padding: 0 2px; width: 50%; text-align: center;"]]
+[[cell style="padding: 0 2px; width: 60%; text-align: center;"]]
 Sample
 [[/cell]]
 [[/row]]
@@ -387,11 +384,8 @@ Sample
 
 [[div class="content-type-description"]]
 
-[[module ListPages order=created_by" prependLine="[[include component:listpages-tales]]" perPage="30" appendLine="[[/table]]" separate="false" tags="tale, +hub"]]
+[[module ListPages order="name" prependLine="[[include component:listpages-tales]]" perPage="30" appendLine="[[/table]]" separate="false" tags="tale, +hub"]]
 [[row]]
-[[cell style="vertical-align: top;"]]
-%%author%%
-[[/cell]]
 [[cell style="vertical-align: top; text-align: right;"]]
 %%title_linked%%
 [[/cell]]
