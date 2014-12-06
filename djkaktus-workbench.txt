@@ -17,7 +17,7 @@ parent:djkaktus-personnel-file
 [/djkaktus-workbench#A A]|[/djkaktus-workbench#B B]|[/djkaktus-workbench#C C]|[/djkaktus-workbench#D D]|[/djkaktus-workbench#E E]|[/djkaktus-workbench#F F]|[/djkaktus-workbench#G G]|[/djkaktus-workbench#H H]|[/djkaktus-workbench#I I]|[/djkaktus-workbench#J J]|[/djkaktus-workbench#K K]|[/djkaktus-workbench#L L]|[/djkaktus-workbench#M M]|[/djkaktus-workbench#N N]|[/djkaktus-workbench#O O]|[/djkaktus-workbench#P P]|[/djkaktus-workbench#Q Q]|[/djkaktus-workbench#R R]|[/djkaktus-workbench#S S]|[/djkaktus-workbench#T T]|[/djkaktus-workbench#U U]|[/djkaktus-workbench#V V]|[/djkaktus-workbench#W W]|[/djkaktus-workbench#X X]|[/djkaktus-workbench#Y Y]|[/djkaktus-workbench#Z Z]
 [[/div]]
 -----
-
+[[=]]
 [[# A]]
 
 + -A-
@@ -32,4 +32,33 @@ parent:djkaktus-personnel-file
 
 [[module ListPages created_at="2009" name="B%" separate="no" tags="tale" perPage="250" order="created_at" prependLine="||~ Title ||~ Author ||~ Created ||~ Length ||"]] 
 || %%title_linked%% || %%created_by%% || %%created_at%% || %%size%% ||
+[[/module]]
+[[/=]]
+[[module css]]
+table.wiki-content-table
+{
+    margin: 0;
+    width: 100%;
+}
+
+table.wiki-content-table td
+{
+    vertical-align: top;
+    width: 200px;
+}
+
+table.wiki-content-table td:first-child
+{
+    width: 150px;
+}
+
+table.wiki-content-table td:last-child
+{
+    width: 100px;
+}
+
+#toc-action-bar
+{
+    display: none;
+}
 [[/module]]
