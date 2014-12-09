@@ -115,7 +115,7 @@ To date, SCP-1264-1 has engaged ██ civilian and military vessels and has sun
 {{-initiating automatic protocol override.}}
 {{-generating temporary password...}}
 
-{{-your temporary password: **azure.cesium.salmon21**}}
+{{-your temporary password: **azure.cesium.salmon.21**}}
 {{-password is valid for: 00h:20m:00s.}}
 
 [[/module]]
@@ -126,11 +126,11 @@ To date, SCP-1264-1 has engaged ██ civilian and military vessels and has sun
 
 function LogIn(){
 loggedin=false;
-password="azure.cesium.salmon21";
+password="azure.cesium.salmon.21";
 password=prompt("PASSWORD:","");
 password=password.toLowerCase();
 
-if (password=="azure.cesium.salmon21") {
+if (password=="azure.cesium.salmon.21") {
 loggedin=true;
 window.open('http://scp-wiki.wikidot.com/incident-log-1264-d-2');
 }
