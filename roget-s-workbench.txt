@@ -39,10 +39,10 @@ A
 [[cell style="padding: 0 2px; width: 10%;"]]
 Author
 [[/cell]]
-[[cell style="padding: 0 2px; width: 30%; text-align: left;"]]
+[[cell style="padding: 0 2px; width: 30%; text-align: center;"]]
 Title
 [[/cell]]
-[[cell style="padding: 0 2px; width: 60%; text-align: left;"]]
+[[cell style="padding: 0 2px; text-align: center;"]]
 Excerpt
 [[/cell]]
 [[/row]]
@@ -52,22 +52,19 @@ Excerpt
 
 [[div class="content-type-description"]]
 
-[[module ListPages order="created_by" prependLine="[[include component:listpages-tales]]" perPage="30" appendLine="[[/table]]" separate="false" tags="tale, -hub"]]
+[[module ListPages order="created_by" prependLine="[[include component:listpages-tales]]" perPage="30" appendLine="[[/table]]" separate="false"]]
 [[row]]
+[[cell style="vertical-align: top;"]]
+%%created_by%%
 [[/cell]]
-[[cell style="vertical-align: top; text-align: left;"]]
-//%%created_by%%//
-[[/cell]]
-[[cell style="vertical-align: top; text-align: left;"]]
+[[cell style="vertical-align: top; text-align: center;"]]
 %%title_linked%%
 [[/cell]]
 [[cell style="vertical-align: top; text-align: left;"]]
-//%%preview(50)%%//
+%%preview(50)%%
 [[/cell]]
 [[/row]]
 [[/module]]
 
 [[/div]]
 [[/div]]
-
-----
