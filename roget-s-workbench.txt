@@ -29,21 +29,21 @@ text-align: justify;
 
 [[div class="content-panel standalone content-row"]]
 [[div class="content-type-title"]]
-A
+Most Recently Created Pages 
 [[/div]]
 
 [[div class="content-type-description-2"]]
 
 [[table style="width: 100%;"]]
 [[row style="font-weight: bold; color: #fff; background-color: #666;"]]
-[[cell style="padding: 0 2px; width: 25%;"]]
-Author
+[[cell style="padding: 0 2px; width: 50%;"]]
+Page
 [[/cell]]
 [[cell style="padding: 0 2px; width: 25%; text-align: center;"]]
-Title
+Date Created
 [[/cell]]
-[[cell style="padding: 0 2px; width: 50% text-align: center;"]]
-Excerpt
+[[cell style="padding: 0 2px; text-align: center;"]]
+Comments
 [[/cell]]
 [[/row]]
 [[/table]]
@@ -52,16 +52,16 @@ Excerpt
 
 [[div class="content-type-description"]]
 
-[[module ListPages order="created_by" prependLine="[[include component:listpages-tales]]" perPage="30" appendLine="[[/table]]" separate="false" tags="tale, -hub"]]
+[[module ListPages order="created_at desc" prependLine="[[include component:listpages-table]]" perPage="30" appendLine="[[/table]]" separate="false" rss="Most Recently Created"]]
 [[row]]
-[[cell style="vertical-align: top; text-align: left;"]]
-%%created_by%%
-[[/cell]]
-[[cell style="vertical-align: top; text-align: center;"]]
+[[cell style="vertical-align: top;"]]
 %%title_linked%%
 [[/cell]]
-[[cell style="vertical-align: top; text-align: left;"]]
-%%preview(50)%%
+[[cell style="vertical-align: top; text-align: center;"]]
+%%created_at%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%comments%%
 [[/cell]]
 [[/row]]
 [[/module]]
