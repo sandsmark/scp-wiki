@@ -68,21 +68,3 @@ Excerpt
 
 [[/div]]
 [[/div]]
-
-[[=]]
-[[size 300%]] OR [[/size]]
-[[/=]]
-
-[[module ListPages order="created_by" prependLine="[[include component:listpages-tales2]]" perPage="30" appendLine="[[/table]]" separate="false" tags="tale, -hub"]]
-[[row]]
-[[cell style="vertical-align: top;"]]
-%%created_by%%
-[[/cell]]
-[[cell style="vertical-align: top; text-align: left;"]]
-%%title_linked%%
-[[/cell]]
-[[cell style="vertical-align: top; text-align: left;"]]
-%%preview(52)%%
-[[/cell]]
-[[/row]]
-[[/module]]
