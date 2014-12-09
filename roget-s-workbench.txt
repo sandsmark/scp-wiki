@@ -68,3 +68,21 @@ Excerpt
 
 [[/div]]
 [[/div]]
+
+[[=]]
++ OR
+[[/=]]
+
+[[module ListPages order="created_by" prependLine="[[include component:listpages-tales]]" perPage="30" appendLine="[[/table]]" separate="false" tags="tale, -hub"]]
+[[row]]
+[[cell style="vertical-align: top;"]]
+%%created_by%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: left;"]]
+%%title_linked%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: left;"]]
+%%preview(43)%%
+[[/cell]]
+[[/row]]
+[[/module]]
