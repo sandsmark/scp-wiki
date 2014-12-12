@@ -25,6 +25,16 @@ padding: 5px 20px;
 padding: 0 20px;
 text-align: justify; 
 }
+.content-panel-table, .content-panel-table-row, .content-panel-table-cell
+{
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+.content-panel-table-cell
+{
+    vertical-align: top;
+    padding: 0 2px; 
+}
 [[/module]]
 
 [[=]]
@@ -45,12 +55,15 @@ Hubs Sorted Alphabetically
 
 [[div class="content-type-description-2"]]
 
-[[table style="width: 100%;"]]
-[[row style="font-weight: bold; color: #fff; background-color: #666;"]]
-[[cell style="padding: 0 2px; width: 40%;"]]
+[[table style="width: 100%;" class="content-panel-table"]]
+[[row style="font-weight: bold; color: #fff; background-color: #666;" class="content-panel-table-row"]]
+[[cell class="content-panel-table-cell" style="width: 40%"]]
 Hub Title
 [[/cell]]
-[[cell style="padding: 0 2px; width: 60%; text-align: center;"]]
+[[cell class="content-panel-table-cell" style="width: 25%"]]
+Author
+[[/cell]]
+[[cell class="content-panel-table-cell" style="width: 35%"]]
 Excerpt
 [[/cell]]
 [[/row]]
@@ -60,15 +73,15 @@ Excerpt
 
 [[div class="content-type-description"]]
 
-[[module ListPages order="name" prependLine="[[include component:listpages-tales]]" perPage="30" appendLine="[[/table]]" separate="false" tags="tale, +hub"]]
+[[module ListPages order="name" prependLine="[[table class="content-panel-table"]]" perPage="30" appendLine="[[/table]]" separate="false" tags="tale, +hub"]]
 [[row]]
-[[cell style="vertical-align: top; text-align: left;"]]
+[[cell style="vertical-align: top; text-align: left; width: 40%" class="content-panel-table-cell"]]
 %%title_linked%%
 [[/cell]]
-[[cell style="vertical-align: top; text-align: left;"]]
+[[cell style="vertical-align: top; text-align: left; width: 25%" class="content-panel-table-cell"]]
 %%created_by%%
 [[/cell]]
-[[cell style="vertical-align: top; text-align: left;"]]
+[[cell style="vertical-align: top; text-align: left; width: 35%" class="content-panel-table-cell"]]
 //%%preview(50)%%//
 [[/cell]]
 [[/row]]
