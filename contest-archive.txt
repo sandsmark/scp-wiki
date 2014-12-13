@@ -49,6 +49,95 @@ text-align: justify;
 
 > **System Administrator's Note:** Within this archive are stored the records of previous Foundation contests. More information concerning the contests in question may be located on the respective main pages.
 -----
+[[module CSS]]
+.content-panel .content-type-title > p {
+  margin: 0;
+}
+.content-panel .content-type-title {
+  font-size: 150%;
+  font-weight: bold;
+  padding: 5px 20px;
+  background-color: #666;
+  color: #fff;
+  border-radius: 8px 8px 0 0;
+  box-shadow: inset 0 1px 1px rgba(255,255,255,.8),
+    inset 0 15px 1px rgba(255,255,255,.2),
+    inset 0 15px 10px rgba(255,255,255,.2);
+}
+.content-panel .content-type-description {
+padding: 0 20px;
+text-align: justify;
+}
+.content-panel.content-row .content-type-description {
+padding: 5px 2px;
+}
+.content-panel.content-row .content-type-description-2 {
+padding: 0 2px;
+text-align: justify; 
+}
+[[/module]]
+
+[[div class="content-panel standalone content-row"]]
+[[div class="content-type-title"]]
+Contest Archive
+[[/div]]
+
+[[div class="content-type-description-2"]]
+
+[[table style="width: 100%;"]]
+[[row style="font-weight: bold; color: #fff; background-color: #666;"]]
+[[cell style="padding: 0 2px; width: 30%;"]]
+Contest Name
+[[/cell]]
+[[cell style="padding: 0 2px; width: 20%; text-align: center;"]]
+Host
+[[/cell]]
+[[cell style="padding: 0 2px; width: 30%; text-align: center;"]]
+Winning Entry
+[[/cell]]
+[[cell style="padding: 0 2px; text-align: center;"]]
+Winning Author
+[[/cell]]
+[[/row]]
+[[/table]]
+
+[[/div]]
+
+[[div class="content-type-description"]]
+
+[[include component:listpages-tales]]
+[[row]]
+[[cell style="vertical-align: top; text-align: center;"]]
+[[[contest-entries|Dr. Gears' Birthday Contest '09]]]
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+Dr. Rights
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+Varied
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+Varied
+[[/cell]]
+[[/row]]
+
+
+
+
+[[/table]]
+[[/div]]
+[[/div]]
+
+
+
+
+
+
+
+
+
+
+
 [[div class="content-panel standalone content-row"]]
 [[div class="content-type-title"]]
 Contest Archive 
