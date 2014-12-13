@@ -86,10 +86,10 @@ Hubs Sorted Alphabetically
 
 [[table style="width: 100%;"]]
 [[row style="font-weight: bold; color: #fff; background-color: #666;"]]
-[[cell style="padding: 0 2px; width: 18%;"]]
+[[cell style="padding: 0 2px; width: 25%;"]]
 Hub
 [[/cell]]
-[[cell style="padding: 0 2px; width: 25%; text-align: center;"]]
+[[cell style="padding: 0 2px; width: 18%; text-align: center;"]]
 Author
 [[/cell]]
 [[cell style="padding: 0 2px; text-align: center;"]]
@@ -102,7 +102,7 @@ Excerpt
 
 [[div class="content-type-description"]]
 
-[[module ListPages order="title" prependLine="[[include component:listpages-tales]]" perPage="60" appendLine="[[/table]]" separate="false" tags="tale, +hub"]]
+[[module ListPages order="title" prependLine="[[include component:listpages-hubs]]" perPage="60" appendLine="[[/table]]" separate="false" tags="tale, +hub"]]
 [[row]]
 [[cell style="vertical-align: top;"]]
 %%title_linked%%
