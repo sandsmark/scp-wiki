@@ -49,6 +49,34 @@ text-align: justify;
 [[/=]]
 -----
 
+[[module CSS]]
+.content-panel .content-type-title > p {
+  margin: 0;
+}
+.content-panel .content-type-title {
+  font-size: 150%;
+  font-weight: bold;
+  padding: 5px 20px;
+  background-color: #666;
+  color: #fff;
+  border-radius: 8px 8px 0 0;
+  box-shadow: inset 0 1px 1px rgba(255,255,255,.8),
+    inset 0 15px 1px rgba(255,255,255,.2),
+    inset 0 15px 10px rgba(255,255,255,.2);
+}
+.content-panel .content-type-description {
+padding: 0 20px;
+text-align: justify;
+}
+.content-panel.content-row .content-type-description {
+padding: 5px 2px;
+}
+.content-panel.content-row .content-type-description-2 {
+padding: 0 2px;
+text-align: justify; 
+}
+[[/module]]
+
 [[div class="content-panel standalone content-row"]]
 [[div class="content-type-title"]]
 Hubs Sorted Alphabetically
@@ -56,15 +84,15 @@ Hubs Sorted Alphabetically
 
 [[div class="content-type-description-2"]]
 
-[[table style="width: 100%;" class="content-panel-table"]]
-[[row style="font-weight: bold; color: #fff; background-color: #666;" class="content-panel-table-row"]]
-[[cell class="content-panel-table-cell" style="width: 40%"]]
-Hub Title
+[[table style="width: 100%;"]]
+[[row style="font-weight: bold; color: #fff; background-color: #666;"]]
+[[cell style="padding: 0 2px; width: 18%;"]]
+Hub
 [[/cell]]
-[[cell class="content-panel-table-cell" style="width: 25%"]]
+[[cell style="padding: 0 2px; width: 25%; text-align: center;"]]
 Author
 [[/cell]]
-[[cell class="content-panel-table-cell" style="width: 35%"]]
+[[cell style="padding: 0 2px; text-align: center;"]]
 Excerpt
 [[/cell]]
 [[/row]]
@@ -74,16 +102,16 @@ Excerpt
 
 [[div class="content-type-description"]]
 
-[[module ListPages order="name" prependLine="[[table class="content-panel-table"]]" perPage="30" appendLine="[[/table]]" separate="false" tags="tale, +hub"]]
+[[module ListPages order="created_by" prependLine="[[include component:listpages-tales]]" perPage="60" appendLine="[[/table]]" separate="false" tags="tale, +hub"]]
 [[row]]
-[[cell style="vertical-align: top; text-align: left; width: 40%" class="content-panel-table-cell"]]
-%%title_linked%%
-[[/cell]]
-[[cell style="vertical-align: top; text-align: left; width: 25%" class="content-panel-table-cell"]]
+[[cell style="vertical-align: top;"]]
 %%created_by%%
 [[/cell]]
-[[cell style="vertical-align: top; text-align: left; width: 35%" class="content-panel-table-cell"]]
-//%%preview(50)%%//
+[[cell style="vertical-align: top; text-align: left;"]]
+%%title_linked%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: left;"]]
+%%preview(53)%%
 [[/cell]]
 [[/row]]
 [[/module]]
