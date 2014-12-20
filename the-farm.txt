@@ -1,0 +1,61 @@
+title:The Farm
+[[>]]
+[[module Rate]]
+[[/>]]
+"You mean to tell me, there are four billion virtual machines active on one server?" Jason Ortega pointed a bony finger at the server rack, face drawn into a frown.
+
+"Not active all at the same time, no. The CPUs wouldn't be able to handle that, but there's a lot going on under the hood to give it that appearance, and it's not just one server. I'll be talking about it more in a few minutes, though." Terry Thompson replied, waving Ortega towards him as they proceeded through the farm.
+
+//The farm.// That was all it had become to Terry. Enough 60 hour weeks deploying a project will make the most amazing seem mundane. The fact of the matter, though, was the Site 11 Anomalous Computing Center contained what was probably the most sophisticated network on the planet, and stood to be for quite a long time. It had a lot of work to accomplish, and that made today's "ribbon-cutting" ceremony seem like an interminable waste of time. Terry quietly hoped for no more promotions.
+
+Terry left Ortega to stand in front of the assembled crowd, some 30 or 40 researchers, division heads, and his own technicians.
+
+"Alright, can everyone hear me? You guys in the back?"
+
+Nods from all around.
+
+"Good, let's get started. For those of you that don't know me, I'm Terry Thompson, Director of Engineering for the RAISA. Over the last few years, we've been doing more active research into anomalous AI and viruses than ever. It had also become apparent that we were under-equipped to properly research and understand their nature at times. Thanks to a significant budget increase, we've been able to build an ideal research and containment center. It's been a long road, and a lot of work. I can't call it a labor of love, but rather it's been a labor of necessity. The better we understand the anomalous nature of these objects, the better-equipped we are to protect ourselves as well as the rest of the world."
+
+Polite applause came from the crowd. Brandon caught his eye and gave him a thumbs up; Brandon knew how much Terry hated public speaking. Terry smiled in spite of himself.
+
+"Now, I understand there's a tour to be taken. We'll be walking the floor of the facility, we'll have some Q&A, my technicians and I will be available for two hours for any other questions, and then we're going to get to work. So, if you all will follow me."
+
+A veritable herd of nerds walked up the ramp to the raised data center floor.
+
+"The most obvious difference between the far-- the Anomalous Computing Center and the rest of the Foundation's infrastructure is nearly everything here is standards-compliant, off the shelf, or both. We've observed that some anomalies can't or won't run on Foundation-made hardware, or on FoundationOS. A lot of you will remember the early days of so-called anomalous viruses, or anomalous AI, that were usually just smart programming ahead of their time. It's grown more difficult to determine the difference every year, and using standard hardware and software gives us another set of eyes, if you will, into how the anomaly in question works, and also protects the secret nature of our architecture from god-knows-what."
+
+Terry led the group to a set of six server racks, loaded to the gills with blade servers and fiber-optic cabling.
+
+"Here we have the Internet Emulation Cluster, which we've been calling ElevenNet. This was the most time-consuming piece of the Center to deploy, but we think the time will be well worth it. Any anomalous machine gets connected to a local area network, which routes external traffic to ElevenNet. ElevenNet has the ability to send and receive traffic to and from any of the four billion or so public IP addresses available on IPv4, and can also enable a virtual machine to listen at a requested IP in under three-tenths of a second. Additionally, using data acquired from public and private sources, each IP and port responds as its equivalent counterpart on the Internet. We have several thousand virtual machine base images, which cover 99.97 percent of the listening devices observed on the Internet. When an IP is requested, the corresponding server or network device VM is spun up and accepts the communication. This gives us total transparency as to the nature of the traffic being sent, which is logged and left in the clear for us to review. Data is appropriately routed through the appropriate virtual routers via BGP tables, latency is properly emulated, outages occur at a rate proportional to the real internet. The global DNS system has been fully emulated, bad records and all. Many websites and internet services work well enough for our purposes. Dummy data is sent back and forth across the network to give the appearance of activity. ICMP traffic takes up an appropriate percentage of traffic, SMTP takes up an appropriate percentage, and so on. We've essentially created a fully functioning internet, totally separate from the real one, and with a fraction of the resources."
+
+Some audible //wow//s were heard from the crowd. Some blank stares were also plainly visible. //Talk human to them, Terry,// he thought to himself. He beckoned the crowd along.
+
+The next stop was a set of waist-high tables with various computers hooked up, with what appeared to be a camera on a tripod in front of each one.
+
+"Here's what we've got for anomalous, or potentially anomalous, artificial intelligence." Terry grabbed a spare camera apparatus and held it over his head to show the crowd.
+
+"At the top is a standard high-definition webcam, which is aimed at the screen. We have this cable, here, that plugs into the computer with USB, or alternately DB-25 or DB-9 and PS/2." Terry winced inwardly. //You're not talking human to them, Terry.//
+
+"This long cable connects to our AI Cluster, Alexandra. Alexandra has a number of pre-programmed personalities available, from Rogerian Therapist to Child to Movie Star to Cat. When we set the AI personality to use, the AI reads the screen with a combination of optical character recognition and heuristic behavior analysis and sends back suitable responses via the USB cable. Alexandra can also 'forget' an anomaly after the session ends, restoring the AI to a like-new condition with each test if necessary, or can remember them if that is more advantageous to our research, or to the well-being of the anomaly. We predict this will help some of the clinically depressed AI we've seen, as well as help us weed out false positives and give our human researchers an advance look at the AI thanks to logs and recorded video feeds."
+
+The clapping was a bit more scattered than what ElevenNet garnered. Terry shrugged and nodded in the direction of the next attraction, which looked out of place in its normalcy compared to the technological wonderland around them. He waved a bit wearily at the small cubicle farm. Taped to the side facing the farm was a crudely hung banner reading "**BATTLESTATIONS - GET FUCKED SKIPPY**".
+
+"This is where we will be working on remote containment, which sounds like a contradiction. We have some off-the-shelf and custom designed tools for hacking, denial of service, and generally keeping hostile anomalies from further propagating as best we can. Currently, between our own abilities and compliant Tier 1 carriers, we can sustain a distributed denial of service in excess of 161 Terabits per second indefinitely. This can, in a worst-case scenario, temporarily take the entire internet down if needed, by knocking out all Tier 1 and 2 carriers which will segregate the internet into thousands of smaller networks. No magic here, just raw brute force if the situation calls for it. We can, of course, also attempt to communicate with the anomaly directly through various programs as well." 
+
+"Down here, we have our wireless KVM. What this allows for, is that any field agent that has an anomalous computer on their hands that can take standard connections, can plug this cable into the appropriate ports, and it allows for a link to the monitor, keyboard and mouse right here. This lets our trained technicians and researchers work with the device as if they were on-site, and we can deploy a maximum of two hundred of these at one time."
+
+"Now, if you'll follow me, we have some facilities set up for cross-testing of anomalous computers..."
+
+The tour, it seemed, took all day. The farm was thoroughly ready and the heads were thoroughly impressed. The mood lightened notably during Q&A, and open discussion with the technicians resulted in enough work assignments to keep the farm team working for a month. The dog and pony show was over at last.
+
+Terry Thompson sighed a bone-deep sigh of relief and sat at what would be his workstation for the next two months while the technicians trained and bugs were wrangled. Brandon tapped him on the shoulder and gave him another thumbs-up. Terry laughed and gave one back.
+
+"Hey Terry, you never did tell me how we got the budget for this all of a sudden. We've been getting scraps for years. What changed?"
+
+Terry shot him a quizzical look.
+
+"I'm going to pretend you didn't just ask me that. You of all people should know why we got a budget."
+
+"...Right. You mean..?"
+
+"Yes. When the floors are always clean, why pay the janitors? But one [[[SCUTTLE]]] outage that damn-near wipes the Foundation off the map and they start to listen."
