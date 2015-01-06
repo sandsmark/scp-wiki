@@ -24,4 +24,21 @@ parent:scp-2413
 <audio autoplay>
   <source src="http://www.scp-wiki.net/local--files/decontamination-document-0094/backandforth.mp3" type="audio/mpeg">
 </audio>
+
+<html>
+<head>
+<script type="text/javascript">
+
+function checkRedirect()
+{
+    if (parseInt(sessionStorage.read) != 1)
+    {
+        window.top.location = "http://scpsandbox2.wikidot.com/doctor-cimmerian";
+    }
+}
+</script>
+</head>
+<body onLoad="checkRedirect();">
+</body>
+</html>
 [[/html]]
