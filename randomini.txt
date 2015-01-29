@@ -364,3 +364,9 @@ You idiots.
 || %%title_linked%% || %%rating%% || %%comments%% || %%commented_at%% ||
 [[/module]]
 [[/collapsible]]
+
+[[collapsible show="> dir */AuthList -complete -byEdited" hide="Retrieving... Retrieved!"]]
+[[module ListPages created_by="Randomini" separate="no" order="updated_at desc" limit="250" perPage="250"]] 
+|| %%title_linked%% || %%rating%% || %%comments%% || %%updated_at%% ||
+[[/module]]
+[[/collapsible]]
