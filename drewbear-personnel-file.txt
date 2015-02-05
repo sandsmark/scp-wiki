@@ -42,9 +42,19 @@ var imgs=
 "http://scp-wiki.wdfiles.com/local--files/drewbear-personnel-file/sv7.jpg",
 "http://scp-wiki.wdfiles.com/local--files/drewbear-personnel-file/sv8.jpeg",
 "http://scp-wiki.wdfiles.com/local--files/drewbear-personnel-file/sv9.jpg",
-"http://scp-wiki.wdfiles.com/local--files/drewbear-personnel-file/sv10.jpg"]
+"http://scp-wiki.wdfiles.com/local--files/drewbear-personnel-file/sv10.jpg",
+"http://scp-wiki.wdfiles.com/local--files/drewbear-personnel-file/sv11.jpg",
+"http://scp-wiki.wdfiles.com/local--files/drewbear-personnel-file/sv12.jpg",
+"http://scp-wiki.wdfiles.com/local--files/drewbear-personnel-file/sv13.jpg",
+"http://scp-wiki.wdfiles.com/local--files/drewbear-personnel-file/sv14.jpg",
+"http://scp-wiki.wdfiles.com/local--files/drewbear-personnel-file/sv15.jpg",
+"http://scp-wiki.wdfiles.com/local--files/drewbear-personnel-file/sv16.jpg",
+"http://scp-wiki.wdfiles.com/local--files/drewbear-personnel-file/sv17.jpg",
+"http://scp-wiki.wdfiles.com/local--files/drewbear-personnel-file/sv18.jpg",
+"http://scp-wiki.wdfiles.com/local--files/drewbear-personnel-file/sv19.jpg",
+"http://scp-wiki.wdfiles.com/local--files/drewbear-personnel-file/sv20.jpg"]
 var q = imgs.length;
-var which=Math.round(Math.random()*9);
+var which=Math.round(Math.random()*19);
 function show(){document.write("<img src=\""+imgs[which]+"\" alt=\"image\" class=\"image\" width=\"300px\">");}
 show();
 </script></td>
