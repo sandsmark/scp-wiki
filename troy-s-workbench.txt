@@ -1,10 +1,10 @@
 title:Troy's Workbench
-__SCPs by Date Created__:
+__Mid-Range Skips__:
 
-[[module PageCalendar tags="+scp -tale -joke -archived"]]
-[[module ListPages limit="150" date="@url" separate="no" perPage="50" prependLine="||~ Page||~ Date created||~ Created by ||"]]
-|| **%%title_linked%%** || %%created_by%% || %%rating%% ||
+[[module ListPages order="ratingDesc" limit="500" tags="-archived, -admin, -author, -sandbox, -tale, -supplement, -essay, -guide, -hub, -joke, -goi-format, -project, -proposal" rating="<=50" separate="no" perPage="500"]]
+||%%title_linked%% ||##777|(Rating: %%rating%% Created: %%created_at%%)##||
 [[/module]]
+
 
 -----
 Improperly Deleted Pages:
