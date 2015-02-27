@@ -202,3 +202,13 @@ module ListPages category="*" tags="featured"  order="created_by" separate="fa
 
 [[/module]]
 [[/collapsible]]
+
+[[collapsible show="." hide="Hide"]]
+
+[[module ListPages category="*" tags="scp"  order="title" separate="false" perPage="1000"]]
+
+||%%title_linked%% || written by %%created_by_linked%%|| rating: %%rating%%||
+
+[[/module]]
+
+[[/collapsible]]
