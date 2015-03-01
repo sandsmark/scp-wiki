@@ -5,3 +5,8 @@ parent:top-rated-pages-this-month
 %%title_linked%% (rating: %%rating%%, comments: %%comments%%)
 [[/module]]
 [[/collapsible]]
+[[collapsible show="February 2015" hide="- Click to hide"]]
+[[module ListPages rating=">5" order="rating desc" separate="false" limit="200" perPage="25" date="2015.02"]]
+%%title_linked%% (rating: %%rating%%, comments: %%comments%%)
+[[/module]]
+[[/collapsible]]
