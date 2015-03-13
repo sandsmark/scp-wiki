@@ -6,6 +6,37 @@ title:Command-Query Separation
 [[>]]
 [[module Rate]]
 [[/>]]
+
+[[module css]]
+.hover {
+}
+.hover:hover {
+ 	text-decoration: none;
+    border-bottom: none;
+}
+
+.hover span {	display: none;}
+.hover:hover span {
+    position: absolute;
+    display: inline;
+    margin: 0px 0px;
+    height: auto;
+    width: auto;
+    background: #FFF;
+    border: 2px solid #34B;
+    color: #000;
+    padding: 1em;
+}
+.hover:hover span span {
+    position: relative;
+    margin: auto;
+    height: auto;
+    width: auto;
+    border: none;
+    padding: 0;
+}
+[[/module]]
+
 @@@@
 @@@@
 @@@@
@@ -402,8 +433,8 @@ Say something little guy.
 @@@@
 [[div style="float: left; text-align: center; margin: 0 0 10px 10px; width: 95px;"]]
 [[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
-01101000
-01101001 
+[[span class="hover"]] [[span]] hi [[/span]] 01101000
+01101001 [[/span]]
 [[/div]]
 [[div]]
 [[image http://scp-wiki.wdfiles.com/local--files/command-query-separation/crom3.png width="75px" style="margin-left: 20px;"]]
@@ -447,7 +478,7 @@ Alrighty.
 
 [[div style="float: left; text-align: center; margin: 0 0 10px 10px; width: 95px;"]]
 [[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
-00111111 
+[[span class="hover"]] [[span]] ? [[/span]] 00111111 [[/span]]
 [[/div]]
 [[div]]
 [[image http://scp-wiki.wdfiles.com/local--files/command-query-separation/crom3.png width="75px" style="margin-left: 20px;"]]
@@ -471,8 +502,8 @@ C_ROM.exe, perform a query on the search list I remitted to you.  Filter out n
 @@@@
 [[div style="float: left; text-align: center; margin: 0 0 10px 10px; width: 95px;"]]
 [[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
-01101111
-01101011 
+[[span class="hover"]] [[span]] ok [[/span]] 01101111
+01101011 [[/span]]
 [[/div]]
 [[div]]
 [[image http://scp-wiki.wdfiles.com/local--files/command-query-separation/crom3.png width="75px" style="margin-left: 20px;"]]
@@ -619,11 +650,11 @@ What did you query anyhow?
 
 [[div style="float: left; text-align: center; margin: 0 0 10px 10px; width: 95px;"]]
 [[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
-01100110
+[[span class="hover"]] [[span]] found [[/span]] 01100110
 01101111
 01110101
 01101110
-01100100 
+01100100 [[/span]]
 [[/div]]
 [[div]]
 [[image http://scp-wiki.wdfiles.com/local--files/command-query-separation/crom3.png width="75px" style="margin-left: 20px;"]]
@@ -689,7 +720,7 @@ C_ROM.exe, display results.
 
 [[div style="float:left; text-align: left; margin: 0 0 10px 10px; width: 240px;"]]
 [[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
-00110001
+[[span class="hover"]] [[span]] 1 [[/span]] 00110001 [[/span]]
 [[div style="text-align: left; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; overflow: auto; height: 100px"]]
 **To:** Mohamed Bozkurt, 
 //IT Data Science Lead AI Division//
@@ -745,10 +776,10 @@ You know what I mean, Glacon.
 
 [[div style="float: left; text-align: center; margin: 0 0 10px 10px; width: 95px;"]]
 [[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
-01100010
+[[span class="hover"]] [[span]] bad? [[/span]] 01100010
 01100001
 01100100
-00111111
+00111111 [[/span]]
 [[/div]]
 [[div]]
 [[image http://scp-wiki.wdfiles.com/local--files/command-query-separation/crom3.png width="75px" style="margin-left: 20px;"]]
@@ -781,7 +812,7 @@ I fail to see any negative outcome in learning the content of our own evaluation
 
 [[div style="float:left; text-align: left; margin: 0 0 10px 10px; width: 240px;"]]
 [[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
-00110010
+[[span class="hover"]] [[span]] 2 [[/span]] 00110010 [[/span]]
 [[div style="text-align: left; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; overflow: auto; height: 100px"]]
 **To:** Mohamed Bozkurt, 
 //IT Data Science Lead AI Division//
@@ -857,7 +888,7 @@ You should not concern yourself.
 @@@@
 [[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
 [[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
-...display another, Crom.
+...Display another, Crom.
 [[/div]]
 [[div]]
 [[image http://scp-wiki.wdfiles.com/local--files/command-query-separation/alex_sad.png width="75px" style="margin-right: 20px;"]]
@@ -868,7 +899,7 @@ You should not concern yourself.
 
 [[div style="float:left; text-align: left; margin: 0 0 10px 10px; width: 240px;"]]
 [[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
-00110011 
+[[span class="hover"]] [[span]] 3 [[/span]] 00110011 [[/span]]
 [[div style="text-align: left; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; overflow: auto; height: 100px"]]
 **To:** Dietrich M. Lurk, 
 //Internal Consultant//
