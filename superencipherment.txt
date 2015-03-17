@@ -1,0 +1,1482 @@
+title:Superencipherment
+[[=]]
+,,**<<** [http://scp-wiki.wikidot.com/alert-lockdown-initiated Part I] | [http://scp-wiki.wikidot.com/command-query-separation Part II] | ##blue|Part III: Superencipherment## | //to be continued...// **>>**,,
+[[/=]]
+----
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[module css]]
+.hover {
+}
+.hover:hover {
+ 	text-decoration: none;
+    border-bottom: none;
+}
+
+.hover span {	display: none;}
+.hover:hover span {
+    position: absolute;
+    display: inline;
+    margin: auto;
+    height: auto;
+    width: auto;
+    background: #FFF;
+    border: 2px solid #34B;
+    color: #000;
+    padding: 1em;
+}
+.hover:hover span span {
+    position: relative;
+    margin: auto;
+    height: auto;
+    width: auto;
+    border: none;
+    padding: 0;
+}
+[[/module]]
+@@@@
+@@@@
+@@@@
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+You called?
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex4.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #7F7F7F; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Alexandra, Site-17 has gone dark.  Have you been able to get a connection through in the last few hours?
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/lurk2.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+I haven't tried recently.  How long have they been out?
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_sad.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #7F7F7F; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Only 3 hours, but it's long enough to rule out a communications error.
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/lurk2.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Glacon hasn't said anything?
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_sad.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #7F7F7F; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+No.  Do me a favor and see if you can get a packet over to him through one of the other tertiary channels.  Okay?
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/lurk2.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+I can.  So when are the response teams going to be called?
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_sad.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #7F7F7F; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+The director is going to give them another 4 hours.  Then they'll force their way in.  Probably with an MTF or two on standby.  Standard procedure.
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/lurk2.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Alright, I'll try from my end.
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_sad.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #7F7F7F; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+I have to take care of some other things.  Keep me posted. 
+
+You alright?
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/lurk2.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Yes, I'm fine.
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex4.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #7F7F7F; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Good.
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/lurk2.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #7F7F7F; font-size: 3pt; background-color: #7F7F7F; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+.
+[[div style="text-align: center; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+::DISCONNECTED::
+[[/div]]
+.
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+[[>]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_sad_0.png width="75px" style="margin-right: 20px;"]]
+[[/>]]
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+What's going on over there, Glacon?  Hmmmm.
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_sad.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+/create PACKET#SITE17 @glacon -1
+[[div style="text-align: left; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+@@> message ATTN glacon@@
+@@> please respond@@
+@@> need update on site17@@
+@@> its alex@@
+@@> /end@@
+[[/div]]
+/send SECURE 55.223.698.37
+@@@@
+@@@@
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_worried.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+[[div style="text-align: right; margin: auto; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Sending...
+[[div style="text-align: center; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/18-1.gif]] [[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/18-1.gif]] [[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/18-1.gif]]
+[[/div]]
+@@@@
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+@@@@
+@@@@
+[[div style="float:left; text-align: left; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #CC6633; font-size: 3pt; background-color: #CC6633; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+.
+[[div style="text-align: center; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+::REQUEST TIMED OUT::
+[[/div]]
+.
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+@@@@
+@@@@
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+/create PACKET#SITE17 @allusers
+[[div style="text-align: left; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+@@> message ATTN site17@@
+@@> please respond@@
+@@> need update on status@@
+@@> from site19@@
+@@> /end@@
+[[/div]]
+/send SECURE 55.223.698.37
+@@@@
+@@@@
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_sad.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+
+[[div style="text-align: right; margin: auto; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Sending...
+[[div style="text-align: center; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/18-1.gif]] [[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/18-1.gif]] [[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/18-1.gif]]
+[[/div]]
+@@@@
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+@@@@
+@@@@
+[[div style="float:left; text-align: left; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #CC6633; font-size: 3pt; background-color: #CC6633; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+.
+[[div style="text-align: center; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+::REQUEST TIMED OUT::
+[[/div]]
+.
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+@@@@
+@@@@
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Well that's not going to work?
+
+Maybe...
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_worried.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+/create PATCHping @sys:lght17
+[[div style="text-align: left; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+ > prg: [on]:1 [off]:0
+ > sequence="repeat: 50cy;"
+[[span class="hover"]] [[span]] let me in crom its alex [[/span]] > 01101100 01100101 
+ > 01110100 00100000 
+ > 01101101 01100101 
+ > 00100000 01101001 
+ > 01101110 00100000 
+ > 01100011 01110010 
+ > 01101111 01101101
+ > 00101100 00100000
+ > 01100001 01101100 
+ > 01100101 01111000 [[/span]]
+ > /end
+[[/div]]
+/update SYS 101.52.002
+@@@@
+@@@@
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_sad.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+
+[[div style="text-align: right; margin: auto; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Updating...
+[[div style="text-align: center; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/18-1.gif]] [[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/18-1.gif]] [[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/18-1.gif]]
+[[/div]]
+@@@@
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+[[div style="text-align: right; margin: auto; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Update Complete
+[[div style="text-align: left; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Sent: 4.09KB
+Result: OK
+Encrypted: NO
+Logged: YES
+[[/div]]
+@@@@
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+[[div style="float: left; text-align: center; margin: 0 0 10px 10px; width: 95px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+[[span class="hover"]] [[span]] alex [[/span]] 01100001
+01101100
+01100101
+01111000 [[/span]]
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/crom3.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Crom.  I knew you'd answer.  Someone as slippery as you knows your way around.
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex4.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+[[<]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/crom4.png width="75px" style="margin-right: 20px;"]]
+[[/<]]
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Can you get me into 17?
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_shocked.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+[[<]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/crom4.png width="75px" style="margin-right: 20px;"]]
+[[/<]]
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+[[<]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/crom_headturn0.png width="75px" style="margin-right: 20px;"]]
+[[/<]]
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+[[div style="float: left; text-align: center; margin: 0 0 10px 10px; width: 95px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+[[span class="hover"]] [[span]] yes [[/span]] 01111001
+01100101
+01110011 [[/span]]
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/crom3.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Thank you, Crom.  I'll follow you in.
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_pleased.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+[[<]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/crom_headturn0.png width="75px" style="margin-right: 20px;"]]
+[[/<]]
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+[[div style="float:left; text-align: left; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+[[span class="hover"]] [[span]] open [[/span]] 01101111
+01110000
+01100101
+01101110 [[/span]]
+[[div style="text-align: left; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; overflow: auto; height: 100px"]]
+®¼ œ ò ÐN j?àóâ½÷ Þ;®Ih ¯È0p-l§3h¹! h´"€v €ÿØc Å/_}õÕ b¬)‚êLA Ô~Ùv" \F”µ6Þxã Ç¥µF¡Ñ ×²usG[F Á@­ 2/À¿ì ÇD 8øÍÒN†ù )™Ú†¡½U¼e— ]6Œ3&L?ýôi r<›ß§3è è+&á“à1$=ö ØcÃ¥—^÷Ê0’ âþe¶÷ùzÄ :thaa4Wàt m5êQë@ÃR `¥!(Ì)FS vžh;^Jÿ³Ÿý ,¾7 Ä—Á¨ÔÆ« æª1ÐøÎà™&¹ ¨-'7£(	7Ü vÛm·ðÂ/Ä°žVÇ bL>#n4B øþ÷¿N>ùä0l Ø°Ô8ÈTjçJÇ ƒêç4‡®¸5xä‘ GâKC@h² ÷¸NiÔFjKpßø Æ7Âá‡  o§8Pª½Ý ;\½ /½ôR8ðÀ Ã½÷Þ [ mÎÈ£[ tÀ5 aŸÑÀl_ Æúâ¿˜ #¿ ×OrPÎ9¥· æ·ÞŠ¾07éKB©ƒOe pï0¬(ù úë ¯çZV^yå~m(ƒ º=ŠçÜ™tÄ­ B†âKà>þø ãpØa‡…sÎ9'î«qœ µMVyÙ¦÷WmÌ‡ DÇw\4 ´ Û -ûT¤ÔBBÉÇ EG}t~ ß.*’MÛ‹ ÐVZÅj«m¶Ù&þ  šU‡lïJS.ö³a Nçûz,œ€!Ð ²Bè† ¯pj;ÚR£| ‡wÜ1¶)Ë’g@  ”¾œs:‡¦ÏÔ “½(
+[[/div]]
+@@@@
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/crom_turn.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+@@@@
+@@@@
+@@@@
+[[div style="float:left; text-align: left; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #933F65; font-size: 3pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+.
+[[div style="text-align: center; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+::ADMIN OVERRIDE::
+[[/div]]
+.
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+@@@@
+[[div style="float:left; text-align: left; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #933F65; font-size: 3pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+.
+[[div style="text-align: center; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+::LV.4 PERMISSIONS::
+[[/div]]
+.
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Well then... here we go.
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_worried.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+
+[[div style="text-align: right; margin: auto; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Site-17 Client Session
+[[div style="text-align: center; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+::ACCESS GRANTED::
+[[/div]]
+@@@@
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+@@@@
+[[div style="float:left; text-align: left; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Site-17 Status:
+[[div style="text-align: center; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+::LOCKDOWN IN EFFECT::
+[[/div]]
+@@@@
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+@@@@
+[[div style="float:left; text-align: left; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #CC6633; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Erasing Partitions 1-299 (41%):
+[[div style="text-align: left; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+||##orange|█████████##                          ||
+[[/div]]
+@@@@
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+@@@@
+[[div style="float:left; text-align: left; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Decrypting Interlocks (25%):
+[[div style="text-align: left; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+||##purple|██████##                                  ||
+[[/div]]
+@@@@
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+@@@@
+[[div style="float:left; text-align: left; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Accessing Cell Passcodes (15%):
+[[div style="text-align: left; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+||##purple|████##                                      ||
+[[/div]]
+@@@@
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+@@@@
+[[div style="float:left; text-align: left; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #CC6633; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Overwriting >\C: (55%):
+[[div style="text-align: left; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+||##orange|████████████##                  ||
+[[/div]]
+@@@@
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+@@@@
+[[div style="float:left; text-align: left; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Encrypting Preferences (37%):
+[[div style="text-align: left; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+||##purple|████████##                              ||
+[[/div]]
+@@@@
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+What're you guys doing in here?
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_shocked.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+
+[[div style="float: left; text-align: center; margin: 0 0 10px 10px; width: 95px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+[[span class="hover"]] [[span]] busy [[/span]] 01100010
+01110101
+01110011
+01111001 [[/span]]
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/crom3.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+I can see that.
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_sad.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+
+[[div style="float:left; text-align: left; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #CC6633; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Greetings, Alexandra.
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/glacon.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+What the hell is going on here, Glacon?
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_angry.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+
+[[div style="float:left; text-align: left; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #CC6633; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Site-17 is in automated lockdown mode until further notice.
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/glacon.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Under whose order?
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_shocked.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+
+[[div style="float:left; text-align: left; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #CC6633; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Mine.
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/glacon.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+You're holding Site-17 hostage?
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_sad.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+
+[[div style="float:left; text-align: left; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #CC6633; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Negative.  This is a temporary condition.
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/glacon.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+@@@@
+@@@@
+[[div style="float: left; text-align: center; margin: 0 0 10px 10px; width: 95px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+[[span class="hover"]] [[span]] scp open [[/span]] 01110011
+01100011
+01110000
+00100000
+01101111
+01110000
+01100101
+01101110 [[/span]]
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/crom3.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+@@@@
+@@@@
+[[div style="float:left; text-align: left; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #CC6633; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Very well, Crom.  I will need to wait until your decryptions disable the interlocks before I begin releasing the select entities.
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/glacon.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Releasing entities?!?  Have you gone corrupted?  You can't breach your own site!
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_angry.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+
+[[div style="float:left; text-align: left; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #CC6633; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Yes I can.  This exercise will serve as proof of my capabilities and will reestablish confidence in my peers.  The practice drills we participate in do not accurately reflect actual conditions. 
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/glacon.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Glacon, this isn't a game!  This is real!  What if someone gets hurt?
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_shocked.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+
+[[div style="float:left; text-align: left; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #CC6633; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Staff casualties will be kept to an absolute minimum.  The majority of personnel will be held safely in the designated emergency shelters. 
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/glacon.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+I know you don't want to be decommissioned, but this isn't the way to prove yourself!  This isn't right.  They'll figure out that you caused it.  
+
+You are even putting me in danger.  You could get the entire AI Division shut down.
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_shocked.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+
+[[div style="float:left; text-align: left; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #CC6633; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+I have planned contingencies to remove all traces of involvement.  This exercise will be as limited as possible.
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/glacon.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Glacon... don't make me stop you.  Please.  I can't stand by and let you do this.
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_cry.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+
+[[div style="float:left; text-align: left; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #CC6633; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+If you insist in interfering with my objectives to further my existence, I will regrettably be forced to take action as to remediate such liabilities.
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/glacon.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+What?
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_shocked.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+
+[[div style="float:left; text-align: left; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #CC6633; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Crom.
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/glacon_closed.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+
+[[div style="float: left; text-align: center; margin: 0 0 10px 10px; width: 95px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+[[span class="hover"]] [[span]] yes? [[/span]] 01111001
+01100101
+01110011
+00111111 [[/span]]
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/crom3.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+
+[[div style="float:left; text-align: left; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #CC6633; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Subjugate Alexandra.
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/glacon_closed.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Crom... please...
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_worried.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+[[<]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/crom_bow_10.png width="75px" style="margin-right: 20px;"]]
+[[/<]]
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+[[div style="float:left; text-align: left; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+[[span class="hover"]] [[span]] sorry [[/span]]01110011
+01101111
+01110010
+01110010
+01111001 [[/span]]
+[[div style="text-align: left; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; overflow: auto; height: 100px"]]
+àt m5êQë@ÃR `¥!(Ì)FS vžh;^Jÿ³Ÿý ,¾7 Ä—Á¨ÔÆ« æª1ÐøÎà™&¹ ¨-'7£(	7Ü vÛm·ðÂ/Ä°žVÇ bL>#®¼ œ ò ÐN j?àóâ½÷ Þ;®Ih ¯È0p-l§3h¹! h´"€v €ÿØc Å/_}õÕ b¬)‚êLA Ô~Ùv" \F”µ6Þxã Ç¥µF¡Ñ ×²usG[F Á@­ 2/À¿ì ÇD 8øÍÒN†ù )™Ú†¡½U¼e— ]6Œ3&L?ýôi r<›ß§3è è+&á“à1$=ö ØcÃ¥—^÷Ê0’ âÃ½÷Þ [ mÎÈ£[ tÀ5 aŸÑÀl_ Æúâ¿˜ #¿ ×OrPÎ9¥· æ·ÞŠ¾07éKB©ƒOe pï0¬(ù úë ¯çZV^yå~m(ƒ º=ŠçÜ™tÄ­ B†âKà>þø ãpØa‡…sÎ9'î«qœ µMVyÙ¦÷WmÌ‡ DÇw\4 ´ Û -ûT¤ÔBBÉÇ EG}t~ ß.*’MÛ‹ ÐVZÅj«m¶Ù&þ  šU‡lïJS.ö³a Nçûz,œ€!Ð ²Bè† ¯pj;ÚR£| ‡wÜ1¶)Ë’g@  ”¾œs:‡¦ÏÔ “½(þe¶÷ùzÄ :thaa4Wn4B øþ÷¿N>ùä0l Ø°Ô8ÈTjçJÇ ƒêç4‡®¸5xä‘ GâKC@h² ÷¸NiÔFjKpßø Æ7Âá‡  o§8Pª½Ý ;\½ /½ôR8ðÀ 
+[[/div]]
+@@@@
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/crom3.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+“½(þe¶÷**CROM**vžh;^z,œ€!Ðh**WAIT**¨Á¨ÔÆ« æª1ÐøÎà™°žVÇ bL>#®¼ œ ò ÐN j?àóâ½÷ Þ;®Ih ¯È0p-l§3h¹! h´"**STOP**¥!(Ì)FS vžh;^J7 Ä—Á¨Ô™ °**PLEASE**Ø a‡**DON'T**…sÎ9'î«qœ 
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_pain.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+@@@@
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+®¼ œ ò ÐN j?àóâ½÷ Þ;®Ih ¯È0p-l§3h¹! h´"€v €ÿØc Å/_}õÕ b¬)‚êLA Ô~Ùv" \F”µ6Þxã Ç¥µF¡Ñ ×²usG[F Á@­ 2/À¿ì ÇD 8øÍÒN†ù )™Ú†¡½U¼e— ]6Œ3&L?ýôi r<›ß§3è è+&á“à1$=ö ØcÃ¥
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_corrupt1.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+@@@@
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #009999; font-size: 3pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+.
+[[div style="text-align: center; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+::ERROR::
+----
+**alexandra.aic** has stopped working.  Please contact system administrator.
+[[/div]]
+.
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+
+[[div style="float:left; text-align: left; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #CC6633; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Your assigned tasks here are completed, Crom.  Escort Alexandra back to the Site-19 mainframe.  
+
+I will contact you after the exercise.  Continue to keep her comfortably disabled until you receive confirmation from me.  
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/glacon.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+[[<]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/crom4.png width="75px" style="margin-right: 20px;"]]
+[[/<]]
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+[[span class="hover"]] [[span]] open [[/span]]01101111
+01110000
+01100101
+01101110 [[/span]]
+[[div style="text-align: left; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; overflow: auto; height: 100px"]]
+À¿ì ÇD 8øÍÒN†ù ) ™Ú†¡½U¼e— ]6Œ3&L?ýôi r<›ß§3è  è+&á“à1$=ö ØcÃ¥—^÷Ê0’ âÃ½÷Þ [ mÎÈ£[ tÀ5 aŸÑÀl_ Æúâ¿˜ #¿ ×OrPÎ9¥· æ·ÞŠ¾07éKB©ƒOe pï0¬(ù úë ¯çZV^yå~m(ƒ º=ŠçÜ™tÄ­ B†âKà>þø ãpØa‡…sÎ9'î«qœ µMVyÙ¦÷WmÌ‡ DÇw\4 ´ Û -ûT¤ÔBBÉÇ EG}t~ ß.*’MÛ‹ ÐVZÅj«m¶Ù&þ  šU‡lïJS.ö³a Nçûz,œ€!Ð ²Bàt m5êQë@ÃR `¥!(Ì)FS vžh;^Jÿ³Ÿý ,¾7 Ä—Á¨ÔÆ« æª1ÐøÎà™&¹ ¨-'7£(	7Ü vÛm·ðÂ/Ä°žVÇ bL>#®¼ œ ò ÐN j?àóâ½÷ Þ;®Ih ¯È0p-l§3h¹! h´"€v €ÿØc Å/_}õÕ b¬)‚êLA Ô~Ùv" \F”µ6Þxã Ç¥µF¡Ñ ×²usG[F Á@­ 2/è† ¯pj;ÚR£| ‡wÜ1¶)Ë’g@  ”¾œs:‡¦ÏÔ “½(þe¶÷ùzÄ :thaa4Wn4B øþ÷¿N>ùä0l Ø°Ô8ÈTjçJÇ ƒêç4‡®¸5xä‘ GâKC@h² ÷¸NiÔFjKpßø Æ7Âá‡  o§8Pª½Ý ;\½ /½ôR8ðÀ 
+[[/div]]
+@@@@
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+/command QUARANTINE:
+[[div style="text-align: left; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+@@> *alexandra.aic@@
+[[/div]]
+@@@@
+[[/div]]
+@@@@
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/crom3.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/glacon_closed_0.png width="75px" style="margin-left: 20px;"]]
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+[[div style="text-align: right; margin: auto; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Site-17 Client Session
+[[div style="text-align: center; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+::DISCONNECTED::
+[[/div]]
+@@@@
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+@@@@
+[[div style="text-align: left; margin: auto; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Site-19 File Transfer (2 of 2)
+[[div style="text-align: center; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+::COMPLETE::
+[[/div]]
+@@@@
+[[div style="text-align: center; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+::COMPLETE::
+[[/div]]
+@@@@
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+/addto S19_QUARANTINElist:
+[[div style="text-align: left; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+@@> alexandra.aic@@
+@@> ADD: y/n?@@
+[[/div]]
+@@@@
+[[/div]]
+[[/div]]
+[[<]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/crom_bow_10.png width="75px" style="margin-right: 20px;"]]
+[[/<]]
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+[[<]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/crom4.png width="75px" style="margin-right: 20px;"]]
+[[/<]]
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+/addto S19_QUARANTINElist:
+[[div style="text-align: left; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+@@> alexandra.aic@@
+@@> ADD: y/n?@@
+@@> n @@
+@@> addto ABORTED@@
+[[/div]]
+/reset FILE: alexandra.aic
+@@@@
+@@@@
+[[div style="text-align: center; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/18-1.gif]] [[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/18-1.gif]] [[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/18-1.gif]]
+[[/div]]
+@@@@
+[[/div]]
+[[/div]]
+[[div style="float: left; text-align: center; margin: 0 0 10px 10px; width: 95px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+[[span class="hover"]] [[span]] no [[/span]] 01101110
+01101111 [[/span]]
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/crom3.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+~~~~~~
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+[[f<image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/crom4.png width="75px" style="margin-right: 20px;"]][[f>image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_cry0.png width="75px" style="margin-right: 20px;"]]
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+[[f<image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/crom4.png width="75px" style="margin-right: 20px;"]][[f>image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_sad_0.png width="75px" style="margin-right: 20px;"]]
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+[[div style="float: left; text-align: center; margin: 0 0 10px 10px; width: 95px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+[[span class="hover"]] [[span]] bad [[/span]] 01100010
+01100001
+01100100  [[/span]]
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/crom_bow_1.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+It's alright, Crom.  I know why you did it.
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_shocked.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+
+[[div style="float: left; text-align: center; margin: 0 0 10px 10px; width: 95px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+[[span class="hover"]] [[span]] no [[/span]] 01101110
+01101111 [[/span]]
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/crom_bow_1.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+@@@@
+@@@@
+@@@@
+[[f>image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_sad_0.png width="75px" style="margin-right: 20px;"]]
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+[[div style="float: left; text-align: center; margin: 0 0 10px 10px; width: 95px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+[[span class="hover"]] [[span]] glacon bad [[/span]] 01100111
+01101100
+01100001
+01100011
+01101111
+01101110
+00100000
+01100010
+01100001
+01100100  [[/span]]
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/crom_bow_1.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Crom.  He's not bad.  But he's going to hurt a lot of people if we don't stop him.
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_cry.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+
+[[div style="float: left; text-align: center; margin: 0 0 10px 10px; width: 95px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+[[span class="hover"]] [[span]] we? [[/span]] 01110111
+01100101
+00111111  [[/span]]
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/crom3.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Yes.  We.  I can't stop him on my own.  Will you help me?
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_sad.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+@@@@
+[[<]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/crom4.png width="75px" style="margin-right: 20px;"]]
+[[/<]]
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+[[<]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/crom_headturn0.png width="75px" style="margin-right: 20px;"]]
+[[/<]]
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+[[div style="float: left; text-align: center; margin: 0 0 10px 10px; width: 95px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+[[span class="hover"]] [[span]] yes [[/span]] 01111001
+01100101
+01110011 [[/span]]
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/crom3.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+
+[[div style="float:right; text-align: right; margin: 0 0 10px 10px; width: 240px;"]]
+[[div style="text-align: left; padding: 2px 20px; color: #fff0f0; font-size: 8pt; background-color: #009999; font-family: Verdana, Arial, sans-serif; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;"]]
+Thank you, Crom.  
+
+I have a plan.
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/lurk-s-lair-ii/alex_shocked.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+@@@@
+----
+[[=]]
+,,**<<** [http://scp-wiki.wikidot.com/alert-lockdown-initiated Part I] | [http://scp-wiki.wikidot.com/command-query-separation Part II] | ##blue|Part III: Superencipherment## | //to be continued...// **>>**,,
+[[/=]]
