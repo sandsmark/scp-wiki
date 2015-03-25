@@ -416,7 +416,7 @@ text-align: justify;
 
 [[div class="content-panel standalone content-row"]]
 [[div class="content-type-title"]]
-A
+Member Pages
 [[/div]]
 
 [[div class="content-type-description-2"]]
@@ -424,13 +424,13 @@ A
 [[table style="width: 100%;"]]
 [[row style="font-weight: bold; color: #fff; background-color: #666;"]]
 [[cell style="padding: 0 2px; width: 18%;"]]
-Author
+Member
 [[/cell]]
 [[cell style="padding: 0 2px; width: 25%; text-align: center;"]]
-Title
+Profile
 [[/cell]]
 [[cell style="padding: 0 2px; text-align: center;"]]
-Excerpt
+Information
 [[/cell]]
 [[/row]]
 [[/table]]
@@ -439,7 +439,7 @@ Excerpt
 
 [[div class="content-type-description"]]
 
-[[module ListPages order="created_by" prependLine="[[include component:listpages-tales]]"  appendLine="[[/table]]" separate="false" tags="author"]]
+[[module ListPages order="created_by" prependLine="[[include component:listpages-tales]]"  perpage="250" appendLine="[[/table]]" separate="false" tags="author"]]
 [[row]]
 [[cell style="vertical-align: top;"]]
 %%created_by%%
