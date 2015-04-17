@@ -9,11 +9,11 @@ title:SCP-1769
 
 **Object Class:** Keter
 
-**Special Containment Procedures:** Due to the nature of SCP-1769, full containment is not possible at this time. As such, Foundation efforts are to be focused at neutralizing individual outbreaks as they occur.  Containment procedures for SCP-1769 and SCP-1769-A are to be carried out at separate sites.  Site-59 is to house personnel and equipment for detecting and neutralizing SCP-1769.  Site-56 is to be kept at an undisclosed location, and will house infected subjects of SCP-1769-A.
+**Special Containment Procedures:** Due to the nature of SCP-1769, full containment is not possible at this time. As such, Foundation efforts are to be focused at neutralizing individual outbreaks as they occur.  Containment procedures for SCP-1769 and SCP-1769-A are to be carried out at separate sites.  Site-59 is to house personnel and equipment for detecting and neutralizing SCP-1769.  Area-56 is to be kept at an undisclosed location, and will house infected subjects of SCP-1769-A.
 
 A continuous search algorithm targeting the script responsible for the phenomenon has been implemented to detect outbreaks, and personnel are required to directly monitor the most commonly-accessed vulnerable (see below) websites to minimize the rate of infection.  Any website that is infected with SCP-1769 will have its host servers seized by Foundation personnel, then the lines of text responsible will be copied (in case of variation[[footnote]] Thus far all variations have demonstrated some similar characteristics, allowing for them to be detected by a generalized algorithm.  However, a generalized search takes considerably longer than the specific versions used to find established variations. [[/footnote]]) and deleted. All variations of the text are to be kept in a single text file on a flash-drive at Site-59. Access to the file is limited to personnel involved in containment and is only permitted for the addition of new variations or updating the search algorithm.
 
-Any instances of SCP-1769-A are to be quarantined at Site-56.  The site has been modified to operate without internet connection, and is reliant on telegraphy to communicate with other sites.  Each individual subject is to be kept in a modified humanoid containment cell equipped with a Faraday Cage.  A secondary layer Faraday Cage is to be maintained around the containment sector, and a tertiary layer is to be maintained around the entire site.  Under no circumstances are any computers, phones, or other devices capable of internet connection to be allowed on site.  The walls around each cell and the containment sector are to be sound-proofed, and at no time are personnel to enter the sector without ear protection.  Lethal force is not to be used against subjects.  Site-56 is to immediately notify Site-59 when an infected individual dies.
+Any instances of SCP-1769-A are to be quarantined at Area-56.  The facility has been modified to operate without internet connection, and is reliant on telegraphy to communicate with other sites.  Each individual subject is to be kept in a modified humanoid containment cell equipped with a Faraday Cage.  A secondary layer Faraday Cage is to be maintained around the containment sector, and a tertiary layer is to be maintained around the entire facility.  Under no circumstances are any computers, phones, or other devices capable of internet connection to be allowed on-site.  The walls around each cell and the containment sector are to be sound-proofed, and at no time are personnel to enter the sector without ear protection.  Lethal force is not to be used against subjects.  Area-56 is to immediately notify Site-59 when an infected individual dies.
 
 **Description:** SCP-1769 is a 14-line section of non-functional script capable of infecting certain websites, specifically those with free user accounts and free communication between users.  This occurs by the apparent self-introduction of the text into the website's page source, though the exact mechanism of this process is unknown.  Any person with an active account that is currently logged in is considered to be exposed to the phenomenon. After accumulating approximately 225 minutes of total exposure, subjects will become infected. The human version of the infection is hereafter referred to as SCP-1769-A.
 
@@ -38,9 +38,3 @@ On ██/██/20██ at 7:35 AM, the Foundation server at Site-117 was infe
 
 ,,Oh queen, my queen, we'll bring them all to you,,
 ,,So close your eyes, and open those within,,
-
-[[module ListUsers users="."]]
-
-,,%%TITLE%%.,,
-
-[[/module]]
