@@ -5,110 +5,82 @@ title:Lurk Work
 [[module Rate]]
 [[/>]]
 
+[[module CSS]]
+.content-panel .content-type-title > p {
+  margin: 0;
+}
+.content-panel .content-type-title {
+  font-size: 120%;
+  font-weight: bold;
+  padding: 5px 20px;
+  background-color: #666;
+  color: #fff;
+  border-radius: 8px 8px 0 0;
+  box-shadow: inset 0 1px 1px rgba(255,255,255,.8),
+    inset 0 15px 1px rgba(255,255,255,.2),
+    inset 0 15px 10px rgba(255,255,255,.2);
+}
+.content-panel .content-type-description {
+padding: 0 20px;
+text-align: justify;
+}
+.content-panel.content-row .content-type-description {
+padding: 5px 20px;
+}
+.content-panel.content-row .content-type-description-2 {
+padding: 0 20px;
+text-align: justify; 
+}
+[[/module]]
+
+[[div class="content-panel standalone series" style="float: left; border-radius: 15px; border: solid 1px #003; padding: 10px;"]]
 [[=]]
-"Do you remember..."
-
-[[div style="display: inline-block; border-radius: 10px; border:dashed 1px #444444; background:#F5F5F5; float:top; width:96.5%; padding:10px"]]
-[[=]]
-[!-- EDIT THE SECTION BELOW --]
-
-
+,,"Do you remember...",,
+[[/=]]
 
 [[=image http://scp-wiki.wdfiles.com/local--files/resurrection/resurrection(3).png width="600px"]]
-+++ Before the "Iris Incident."
-
-**[[[IQuit|"I Quit"]]]**
-by [[user TheDuckman]]
-//"I want to be able to sleep, not thinking about whether the decision I made that day…"//
-
-
-**[[[snakes-and-ladders|Snakes and Ladders]]]**  **##DeepSkyBlue|[New Story]##**
-by [[user Zyn]]
-//She drew a butterfly in her poetry notebook, labeled it "408", and added in parentheses, "someday".//
------
-+++ The "Iris Incident," (And What Came After).
-
-**[[[Immediate Actions]]]**
-by [[user DrEverettMann]]
-//"105. Get up. We need to move you."//
-
-**[[[The Seed of an Idea]]]**
-by [[user thedeadlymoose]]
-//"This is an absurdly horrible idea and you all know it," Hat said.//
-
-**[[[maria-jones-this-is-your-life|Like We Were Ever Kindergarten Teachers to Start With]]]**
-by [[user Eskobar]]
-//"We're the Foundation. We are eternal, like the Catholic Church, or NBC."//
-
-**[[[Contingency]]]**
-by [[user DrClef]]
-//". . . if I'm going to do the job you're asking me to do, I need Adams."//
-
-**[[[Deals with the Devil]]]**
-by [[user Sophia Light]]
-//"Did that woman really look me in the eyes and say 'we're re-opening Pandora's Box'?" Light groaned. "I don't know how they take themselves seriously."//
-
-**[[[What's in a Name?]]]**
-by [[user DrClef]]
-//A cold fury descended upon her and settled just below her heart.//
-
-**[[[Just A Formality]]]**
-by [[user Crayne]]
-//"My name is Dr. Manwell Cutler and I'm a member of the Foundation's Ethics Committee. Perhaps you've heard of us?"//
-
-**[[[Integrity Project]]]**
-by [[user djkaktus]]
-//"This is an old debt, Jean. It is one you knew would come due in time."//
-
-**[[[Boss of Me]]]**
-by [[user Roget]]
-//"Director Gillespie, I presume?"//
-
-**[[[New Tricks]]]**
-by [[user DrClef]] and [[user thedeadlymoose]]
-//In an unnamed garage in a facility that didn't exist, a dog was trying to repair a hydraulic servo.//
-
-**[[[The Wolves at the Door]]]**
-by [[user DrEverettMann]]
-//"No," Iris said, horrified and appalled. "You can't be serious."//
-
-**[[[Light-Dependent Reactions]]]**
-by [[user Photosynthetic]]
-//"It was either get curious or break down entirely."//
-
-**Girls' Night Out**
-[[[Dressing Up]]] | [[[Getting Drunk]]] | [[[Raising Hell]]]
-by [[user DrClef]]
-//"Aren't you supposed to be protecting me?" Iris groaned.//
-//"From bullets, not bad decisions," Adams said.//
-
-**[[[Museum of Idiots]]]**
-by [[user Roget]]
-//Mister Collector missed his friends terribly.//
-
-**[[[Additional Resources]]]**
-by [[user lurkd]] and [[user djkaktus]]
-//"Just help me keep it together fer another week then I'll put in the transfer..."//
-
-**[[[Job Opportunities]]]**
-by [[user L0rdDeath]]
-//The young girl suddenly looked very down-trodden. "Not all of my vegetables. I didn't like the broccoli."//
-
-**[[[Pythia's Wing]]]** **##DeepSkyBlue|[New Story]##**
-by [[user thedeadlymoose]]
-//The oracle's laughter vibrated in the air, personable yet inhuman.//
-
-**[[[Number One With a Bullet]]]** **##DeepSkyBlue|[New Story]##**
-by [[user DrClef]]
-//. . . Then a grand piano fell on her.//
-
------
-+++ Alpha-Niner is Go!
-(No tales yet)
-
+[[=]]
+[[module ListPages separate="no" tags="resurrection, -hub" order="created_atdsc" limit="3"]] 
+%%title_linked%% **##DeepSkyBlue|[New Story]##**
+[[/module]]
 [[/=]]
+----
+[[div class="content-type-description-2"]]
+
+[[table style="width: 100%;"]]
+[[row style="font-weight: bold; color: #fff; background-color: #666;"]]
+[[cell style="padding: 0 2px; width: 50%;"]]
+Tale
+[[/cell]]
+[[cell style="padding: 0 2px; width: 25%; text-align: center;"]]
+Last Update
+[[/cell]]
+[[cell style="padding: 0 2px; text-align: center;"]]
+Written By
+[[/cell]]
+[[/row]]
+[[/table]]
+
 [[/div]]
-[[/=]]
+
+[[div class="content-type-description"]]
+
+[[module ListPages separate="no" tags="resurrection, -hub" order="created_at" prependLine="[[include component:listpages-table]]" perPage="100" appendLine="[[/table]]"]] 
+[[row]]
+[[cell style="vertical-align: top;"]]
+%%title_linked%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%updated_at%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: left;"]]
+%%updated_by_linked%%
+[[/cell]]
+[[/row]]
+[[/module]]
+
+[[/div]]
+[[/div]]
 ------------------
 
 [[tabview]]
