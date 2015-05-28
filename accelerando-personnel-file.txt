@@ -233,7 +233,8 @@ black and white.
 [[module ListPages tag="-" order="titleAsc" perPage="50" separate="false" prependLine="||~ Page(title) ||~ Author ||~ Rating ||~ Comments ||~ Date Created||~ Recent Updates||"]]
 || %%linked_title%% || %%author%%|| %%rating%%|| %%comments%%|| %%date|%r|agohover%% || %%updated_at%% ||
 [[/module]] 
-[[size 0.3em]][[collapsible show=" As a matter of fact, Mr. Ron Doe, we have your files right here..." hide="- WARNING COGNITOHAZARD ACTIVATED"]]
+[[module TagCloud mode="3d" width="660" height="1000" maxFontSize="4em" minfontsize="50%" limit="200" maxColor="18,105,3" minColor="40,170,176"]]
+[[size 0.4em]][[collapsible show=" As a matter of fact, Mr. Ron Doe, we have your files right here..." hide="- WARNING COGNITOHAZARD ACTIVATED"]]
 [[div style="float:center; margin:0 2em 1em 2em; border:0;"]]
 |||| [[image NotCreepyAtAll.gif]] ||
 ||||~ ^^Agent Bertke jamming to some tunes^^ ||
