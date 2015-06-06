@@ -1,4 +1,35 @@
 title:Project Crossover
+[[module CSS]]
+.content-panel .content-type-title > p {
+  margin: 0;
+}
+.content-panel .content-type-title {
+  font-size: 120%;
+  font-weight: bold;
+  padding: 5px 20px;
+  background-color: #666;
+  color: #fff;
+  border-radius: 8px 8px 0 0;
+  box-shadow: inset 0 1px 1px rgba(255,255,255,.8),
+    inset 0 15px 1px rgba(255,255,255,.2),
+    inset 0 15px 10px rgba(255,255,255,.2);
+}
+.content-panel .content-type-description {
+padding: 0 20px;
+text-align: justify;
+}
+.content-panel.content-row .content-type-description {
+padding: 5px 20px;
+}
+.content-panel.content-row .content-type-description-2 {
+padding: 0 20px;
+text-align: justify; 
+}
+[[/module]]
+
+[[div class="content-panel standalone content-row"]]
+[[div style="padding: 5px 15px;"]]
+[[=]]
 //So, the SCP Foundation is quickly becoming, if it is not already, a "thing" on the internets. However, there is one more step we must take before we become a full-out "thing."//
 
 //Terrible crossover fanfiction.//
@@ -6,118 +37,43 @@ title:Project Crossover
 //This is your challenge: write a crossover fanfiction between the SCP Foundation and any other fictional universe of your choice. It can be hilarious, tongue-in-cheek, or deadly serious, just as long as it is well-written. Extra points scored for "crackiest" crossover. Post links below.//
 
 //That is all.//
+//~Clef//
+[[/=]]
+[[/div]]
+[[div class="content-type-description-2"]]
 
-//—Clef//
+[[table style="width: 100%;"]]
+[[row style="font-weight: bold; color: #fff; background-color: #666;"]]
+[[cell style="padding: 0 2px; width: 50%;"]]
+Page
+[[/cell]]
+[[cell style="padding: 0 2px; width: 25%; text-align: center;"]]
+Date Created
+[[/cell]]
+[[cell style="padding: 0 2px; text-align: center;"]]
+Author
+[[/cell]]
+[[/row]]
+[[/table]]
 
-[[div style="border:solid 1px #999999;width:90%;background:#F0FFF0;padding:5px;float:left;margin-bottom:4px"]]
+[[/div]]
 
-++++ Anaxagoras
-[[[On the O5's Secret Service]]]
+[[div class="content-type-description"]]
 
-++++ Bennings
-[[[Peace. I would settle for that.]]] 
-[[[And Then There Were None]]]
+[[module ListPages order="created_at desc" tags="project-crossover" prependLine="[[include component:listpages-table]]" perPage="300" appendLine="[[/table]]" separate="false"]]
+[[row]]
+[[cell style="vertical-align: top;"]]
+%%title_linked%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%created_at%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: left;"]]
+%%created_by_linked%%
+[[/cell]]
+[[/row]]
+[[/module]]
 
-++++ Bryx
-[[[Skip Jam Part One]]]
-
-++++ Candlebeam
-[[[Incident Report KAF-09]]]
-
-++++ Chazz K
-[[[onceandfutureemperor|The Once And Future Emperor]]]
-
-++++ ChrisAKAPiefish
-[[[the-foundation-never-changes | The Foundation never changes]]]
-
-++++ Daveyoufool
-[[[The Lingering Lark of Leviathan Square]]]
-
-++++ Dexanote
-[[[i-wanna-be-the-very-best|SCPokemon]]]
-
-++++ Djoric
-[[[This is Always a Horrible Idea]]] 
-[[[Smooth as Silk]]] 
-[[[Letter of the Day]]]
-[[[Occurrence of Oddness]]]
-[[[Kunststoff Strand]]]
-[[[Belation In the Evening]]] 
-
-++++ Doktori
-[[[Whatcha Doing?]]]
-
-++++ Drewbear
-[[[now-the-we-expunged|And Now, The We(EXPUNGED)]]]
-
-++++ Edrobot
-[[[Dr. Ikari, I presume]]]
-[[[scp-foundation-the-movie-2|SCP Foundation The Movie 2: Electric Boogaloo]]]
-
-++++ Eric_H
-[[[SCP-1926-R]]]
-
-++++ Eskobar
-[[[Hephaestus]]]
-
-++++ Faminepulse
-[[[Inertiatic SCP]]]
-
-++++ FortuneFavorsBold
-[[[Mint Condition]]]
-
-++++ Gargus
-[[[Piercing the Night Vale]]]
-[[[scp-mlp-dnc|SCP+MLP=DNC]]]
-
-++++ Ghostchibi
-[*http://breachquest.wikidot.com/forum/c-663484/quest-threads BreachQuest]
-
-++++ Heiden
-[[[Zolder]]]
-
-++++ Ihpkmn
-[[[Issue 100]]]
-[[[Stupendous Containment Procedures]]]
-
-++++ Loiterer
-[[[dial-s-for-scp|Dial S For SCP]]]
-
-++++ MisterBibs
-[[[dreams|Despair Rage Envy Aye Mak Sicur]]]
-[[[containingcreation|Containing Creation]]]
-
-++++ NyehCat
-[[[batman-s-newest-threat|Gotham's Strangest Criminal]]]
-
-++++ Randomini
-[[[Cart can, Can cart]]]
-
-++++ Roget
-
-[[[Agent Brown and the Case of The Missing Amulet]]]
-[[[vibeo-james|Painted Lips, Unblinking Eyes]]]
-
-++++ Smapti
-[[[Saturday Night SCP Showdown]]]
-
-++++ Tanhony
-[[[The Case of the Missing Hand]]]
-
-++++ TheDuckman
-[[[theselfinsert|The Self Insert]]]
-[[[timeandrelativedimensionsincontainmentprotocols|Time And Relative Dimensions In Containment Protocols]]]
-
-++++ Tom Serveaux
-[[[Still In Business]]]
-
-++++ TwistedGears
-[[[Solvin Center of Problems|Solvin' Center of Problems]]]
-
-++++ VAElynx
-[[[Holder of The Foundation]]]
-
-++++ Zaratustra
-[[[Knee-Deep In The Keter]]]
-
+[[/div]]
+@@@@
 [[/div]]
