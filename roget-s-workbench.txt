@@ -1,6 +1,36 @@
 title:Project Crossover
 [!--This is a project page made by Lurkd.  Please do not post, rate, or edit anything here unless you are staff or have express permission to do so.  In all other regards... disregard this article and move on.--]
 
+[[module css]]
+.hover {
+}
+.hover:hover {
+ 	text-decoration: none;
+    border-bottom: none;
+}
+
+.hover span {	display: none;}
+.hover:hover span {
+    position: absolute;
+    display: inline;
+    margin: auto;
+    height: auto;
+    width: auto;
+    background: #FFF;
+    border: 2px solid #34B;
+    color: #000;
+    padding: 1em;
+}
+.hover:hover span span {
+    position: relative;
+    margin: auto;
+    height: auto;
+    width: auto;
+    border: none;
+    padding: 0;
+}
+[[/module]]
+
 [[=image http://scp-wiki.wdfiles.com/local--files/resurrection/resurrection(3).png]]
 
 [[=]]
@@ -16,7 +46,8 @@ title:Project Crossover
 = **Glimpses Into The Past**
 ----
 [http://scp-wiki.wikidot.com/iquit I Quit]
-[[[Snakes and Ladders]]]
+[[span class="hover"]] [[span]] by Zyn, 
+//She drew a butterfly in her poetry notebook, labeled it "408", and added in parentheses, "someday".// [[/span]] [[[Snakes and Ladders]]] [[/span]]
 [[[Factotum]]]
 [[/div]]
 [[div class="content-panel standalone content-row" style="border-radius: 0px 0px 15px 15px; padding: 5px;"]]
@@ -88,17 +119,11 @@ title:Project Crossover
 
 [[div style="float: left; width: 225px; padding: 0px 10px 0px 0px;"]]
 
-[[div class="content-panel standalone content-row" style="border-radius: 15px 15px 0px 0px;  padding: 0px 10px; margin: 60px 0px 15px 0px"]]
-= **Lurk, Bridge, & Foxx**
+[[div class="content-panel standalone content-row" style="border-radius: 15px;  padding: 0px 10px; margin: 60px 0px 15px 0px"]]
+= **Marshall, Carter, and Dark**
 ----
-[[[Tasers & Thermite]]]
-[[[Tinker, Tailor, Soldier, Huntsman]]]
-[[[Are We There Yet?]]]
-[[/div]]
-[[div class="content-panel standalone content-row" style="border-radius: 0px 0px 15px 15px; padding: 5px;"]]
-= **Director Aktus**
-----
-[[[Folly]]]
+[[[Back Alley Deals]]]
+[[[We Got A Good Thing Here]]]
 [[/div]]
 
 [[/div]]
@@ -113,12 +138,12 @@ title:Project Crossover
 [[[No Joke]]]
 [[/div]]
 
-[[div class="content-panel standalone content-row" style="border-radius: 0px; padding: 5px;"]]
-
-[[/div]]
-
 [[div class="content-panel standalone content-row" style="border-radius: 0px 0px 15px 15px; padding: 5px;"]]
-
+= **Lurk, Bridge, & Foxx**
+----
+[[[Tasers & Thermite]]]
+[[[Tinker, Tailor, Soldier, Huntsman]]]
+[[[Are We There Yet?]]]
 [[/div]]
 
 [[/div]]
@@ -126,10 +151,9 @@ title:Project Crossover
 [[div style="float: left; width: 225px; padding: 0px 0px 0px 10px;"]]
 
 [[div class="content-panel standalone content-row" style="border-radius: 15px 15px 0px 0px; padding: 0px 10px; margin: 60px 0px 15px 0px"]]
-= **Marshall, Carter, and Dark**
+= **Director Aktus**
 ----
-[[[Back Alley Deals]]]
-[[[We Got A Good Thing Here]]]
+[[[Folly]]]
 [[/div]]
 
 [[div class="content-panel standalone content-row" style="border-radius: 0px 0px 15px 15px; padding: 5px;"]]
