@@ -12,14 +12,19 @@ title:Project Crossover
 .hover span {	display: none;}
 .hover:hover span {
     position: absolute;
-    display: inline;
+    display: table;
     margin: auto;
+top: 0;
     height: auto;
     width: auto;
     background: #FFF;
     border: 2px solid #34B;
     color: #000;
     padding: 1em;
+ -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
 }
 .hover:hover span span {
     position: absolute;
