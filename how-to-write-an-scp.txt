@@ -279,17 +279,17 @@ To place an image on your article, you must upload your image onto the page. //P
 At this point, the image has been uploaded to your page. To insert the image into the article with the proper styling, all you have to do is include the following snippet of code in the appropriate place (Below the rating module and above the "Item #:" line for your first image, wherever you choose for extra images.)
 
 > @@[[include component:image-block@@
-> @@	name={THE NAME OF YOUR IMAGE FILE}|@@
-> @@	caption={THE TEXT YOU WANT SHOWN UNDERNEATH YOUR IMAGE}@@
+> @@	name=THE NAME OF YOUR IMAGE FILE|@@
+> @@	caption=THE TEXT YOU WANT SHOWN UNDERNEATH YOUR IMAGE@@
 > @@]]@@
 
-Note that you can place all of this on one line. We broke it up here to avoid getting a horrible horizontal scrollbar. Be sure to replace the curly braces (**{** and **}**), and everything between them with what's relevant to your article. It won't work if you mindlessly copy-paste the above.
+Note that you can place all of this on one line. We broke it up here to avoid getting a horrible horizontal scrollbar. Be sure to replace everything after the equals ("=") sign with what's relevant to your article. **It won't work if you mindlessly copy-paste the above**.
 
 Note that by default, the standard image block is set to 300px width. If you need it to be a different size (such as if the native size of the image is less than 300px), then you can optionally add a width attribute to the image block as shown here:
 
 > @@[[include component:image-block@@
-> @@	name={THE NAME OF YOUR IMAGE FILE}|@@
-> @@	caption={THE TEXT YOU WANT SHOWN UNDERNEATH YOUR IMAGE}|@@
+> @@	name=THE NAME OF YOUR IMAGE FILE|@@
+> @@	caption=THE TEXT YOU WANT SHOWN UNDERNEATH YOUR IMAGE|@@
 > @@	width=300px@@
 > @@]]@@
 
