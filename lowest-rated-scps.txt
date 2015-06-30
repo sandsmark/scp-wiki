@@ -52,7 +52,7 @@ Rating
 
 [[div class="content-type-description"]]
 
-[[module ListPages order="rating" prependLine="[[include component:listpages-table]]" perPage="30" rating="<10" tags="scp -archived -decommissioned -contest" appendLine="[[/table]]" separate="false" rss="Lowest Rated SCPs"]]
+[[module ListPages order="rating" prependLine="[[include component:listpages-table]]" perPage="30" rating="<10" rating=">=0"tags="scp -archived -decommissioned -contest" appendLine="[[/table]]" separate="false" rss="Lowest Rated SCPs"]]
 [[row]]
 [[cell style="vertical-align: top;"]]
 %%title_linked%%
