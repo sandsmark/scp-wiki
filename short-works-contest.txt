@@ -1,0 +1,240 @@
+title:Short Works Contest
++ Short Works Contest
+> //One day, I will find the right words, and they will be simple.// -Jack Kerouac
+
+[[[SCP-895]]] did it in 490 words.
+[[[SCP-1057]]] did it in 423.
+[[[SCP-902]]] did it in 337.
+[[[SCP-1959]]] did it in 321.
+[[[SCP-173]]] did it in 237.
+
+What can you do?
+
+That's right, motherfuckers. It's contest time. Your task is to write a **main-list SCP under 500 words.**
+
+++ How to Enter
+# Write an article and check your word count using the methods below.
+# Post into an open slot.
+# Posting is open for **three days only**. The purpose of this is to allow all articles an equal amount of exposure on the site. 
+# In the open posting period, post an entry into an open slot in the main list. Tag it as "sc2015" (Short Contest 2015).
+# At the end of the posting period, the entry is considered "final". Do not make major edits after this point.
+
+[[html]]
+<html>
+<head>
+<style type="text/css">
+@import url(http://d3g0gp89917ko0.cloudfront.net/v--50456838fc8c/common--theme/base/css/style.css);
+@import url(http://www.scp-wiki.net/component:theme/code/1);
+
+#times
+{
+margin-top: 10px;
+}
+</style>
+<script type="text/javascript">
+
+function showTimes(postBegin,postEnd,end)
+{
+var times = document.getElementById('times');
+postBegin = new Date(postBegin*1000);
+postEnd = new Date(postEnd*1000);
+end = new Date(end*1000);
+postBegin = formatDate(postBegin);
+postEnd = formatDate(postEnd);
+end = formatDate(end);
+html = "Posting begins on " + postBegin + ".<br>";
+html += "Posting ends on " + postEnd + ".<br>";
+html += "The winner will be decided on " + end + ".";
+times.innerHTML = html;
+}
+
+function getWeekDay(num)
+{
+var day;
+
+switch (num)
+{
+case 1:
+day = "Monday";
+break;
+case 2:
+day = "Tuesday";
+break;
+case 3:
+day = "Wednesday";
+break;
+case 4:
+day = "Thursday";
+break;
+case 5:
+day = "Friday";
+break;
+case 6:
+day = "Saturday";
+break;
+default:
+day = "Sunday";
+}
+
+return day;
+}
+
+function getMonthVerbose(num)
+{
+var month;
+
+switch (num)
+{
+case 1:
+month = "February";
+break;
+case 2:
+month = "March";
+break;
+case 3:
+month = "April";
+break;
+case 4:
+month = "May";
+break;
+case 5:
+month = "June";
+break;
+case 6:
+month = "July";
+break;
+case 7:
+month = "August";
+break;
+case 8:
+month = "September";
+break;
+case 9:
+month = "October";
+break;
+case 10:
+month = "November";
+break;
+case 11:
+month = "December";
+break;
+default:
+month = "January";
+}
+
+return month;
+}
+
+function formatDate(d)
+{
+var dateFormatted = getWeekDay(d.getDay()) + ", " + getMonthVerbose(d.getMonth()) + " <strong>";
+var dayOfMonth = d.getDate();
+var suffix;
+
+switch (dayOfMonth)
+{
+case 1:
+case 21:
+case 31:
+suffix = "st";
+break;
+case 2:
+case 22:
+suffix = "nd";
+break;
+case 3:
+case 23:
+suffix = "rd";
+break;
+default:
+suffix = "th";
+}
+
+dateFormatted += dayOfMonth + suffix + "</strong> at ";
+
+var hours = d.getHours();
+var minutes = d.getMinutes();
+var timeString = "";
+if (minutes == 0)
+{
+minutes = "00";
+}
+if (hours > 12 || (hours == 12 && minutes > 0))
+{
+timeString = (hours - 12) + ":" + minutes + " PM";
+}
+else
+{
+timeString = hours + ":" + minutes + " AM";
+}
+
+dateFormatted += timeString;
+
+return dateFormatted;
+}
+
+</script>
+</head>
+<body onLoad="showTimes(1437696000,1437984000,1438675200);">
+
+<div><strong>The times below are local for you:</strong></div>
+
+<div id="times"></div>
+
+</body>
+</html>
+[[/html]]
+
+[[collapsible show=" + If you may not be around in the submission period" hide=" - If you won't be around in the submission period"]]
+* Make a blank page titled "shortcontest-USERNAME." Tag it as "sc2015" and do not put anything on it.
+* Prior to the submission period, PM [[user Sophia Light]], [[user Decibelles]], [[user Doctor Cimmerian]], or [[user Snorlison]] and send them a link to the full text of the article and its desired title on the mainlist, as well as any files attached to the page. **Make sure they confirm that they received it.**
+* During the submission period, the staff member will edit your entry onto the page, rename the page as an open number, and add it onto the main list for you.
+Feel free to ask for this even if you're not //sure// you'll be around. If plans change, just let your staff member know.
+[[/collapsible]] 
+
+++ Word Count
+
+Different programs measure word count slightly differently. We are going to be avoiding this issue by using the same word count program, [http://www.wordcounter.net/ Word Counter.net]. Check your word count as it appears on the finished page (not including code), making sure to include any image captions. After the posting deadline, staff will check the word count of all entries, and disqualify any that are over 500 words.
+
+Multimedia entries: Any spoken or written (in video, etc) words will be counted by staff and added to the total. Check with a staff member if you have questions.
+
+[[collapsible show="+ Wait, what do I include?" hide="- Everything highlighted here."]]
+[[image http://scpsandbox2.wdfiles.com/local--files/light-s-prism/shadow%20person.png]]
+[[/collapsible]]
+
+++ Winning
+Entries under 237 words will get a 10-vote "bonus" when the entries are tallied. After the submission period, the entry with the highest vote (including the bonus) wins.
+
+Winners will be featured on the main page, and receive the respect of their community.
+
+
+++ The Nitty Gritty
+* No format screws or hidden text that are clearly in place to get around the word count rule. Entries determined to be doing this will be disqualified. (Ask a contest staffer beforehand if you have questions.)
+* One entry per author. Collaborations are fine, but neither author can submit another entry.
+* Your entire entry needs to be on one page and only 500 words long- no off-page supplements, experiment logs, etc.
+* Do not post outside of the submission period.
+* After the posting deadline, no edits are allowed above minor grammar or spelling fixes. (If you wouldn't do it to someone else's entry, don't do it here.)
+* Captions on images are included in the word count. Rating modules do not.
+* Entries must be under 500 words and tagged with "sc2015" in order to qualify.
+
+++ Writing Tips
+* Anyone can enter. Keep in mind that writing a //good// short article is very difficult- get feedback before posting.
+* Images are allowed and encouraged. The captions on an image are included in your total word count.
+* If your writing might be considered a format screw (nonstandard format), check with staff before posting. 
+* [[[SCP-J]]] already exists.
+* Articles **under 237 words** will get 10 points added to their total for the purpose of the contest, giving them an extra edge.
+
+++ Questions and Answers
+**Q:** Can I enter a tale, a joke SCP, or something else wacky?
+**A:** No. Mainlist SCPs only.
+
+**Q:** What parts of the article count toward the 500 words?
+**A:** See "Word Count", above.
+
+**Q:** What if my article's at exactly 500 words?
+**A:** Sure, that counts. ##white|Dick.##
+
+**Q:** Why the bonus for being under 237 words?
+**A:** It's the length of 173 (minus the copyright notice).
+
+More questions? Comment on this page, or ask one of following users via site PM or chat: [[user Sophia Light]] //(Short Contest Grand Poobah)//, [[user Decibelles]], [[user Doctor Cimmerian]], or [[user Snorlison]].
