@@ -32,12 +32,12 @@ table.wiki-content-table th{
 <script language="JavaScript">
 var imgs=
 [
-"http://scpsandbox2.wdfiles.com/local--files/scantron-s-showroom/00000a.png",
-"http://scpsandbox2.wdfiles.com/local--files/scantron-s-showroom/00000b.png",
-"http://scpsandbox2.wdfiles.com/local--files/scantron-s-showroom/00000c.png",
-"http://scpsandbox2.wdfiles.com/local--files/scantron-s-showroom/00000d.png",
-"http://scpsandbox2.wdfiles.com/local--files/scantron-s-showroom/00000e.png",
-"http://scpsandbox2.wdfiles.com/local--files/scantron-s-showroom/beauty.png"]
+"http://scp-wiki.wdfiles.com/local--files/scp-2808/beauty1.png",
+"http://scp-wiki.wdfiles.com/local--files/scp-2808/beauty2.png",
+"http://scp-wiki.wdfiles.com/local--files/scp-2808/beauty3.png",
+"http://scp-wiki.wdfiles.com/local--files/scp-2808/beauty4.png",
+"http://scp-wiki.wdfiles.com/local--files/scp-2808/beauty5.png",
+"http://scp-wiki.wdfiles.com/local--files/scp-2808/beauty6.png",]
 var q = imgs.length;
 var which=Math.round(Math.random()*5);
 function show(){document.write("<img src=\""+imgs[which]+"\" alt=\"image\" class=\"image\" width=\"300px\">");}
