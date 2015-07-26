@@ -1,5 +1,5 @@
 title:Moose's Workbench
-<div id="accordian">
+<div id="accordion">
     <ul>
     	<li>
     		<h3><span class="icon-dashboard"></span>Dashboard</h3>
@@ -69,7 +69,7 @@ body {
     background: #4EB889;
     font-family: Nunito, arial, verdana;
 }
-#accordian {
+#accordion {
     background: #004050;
     width: 250px;
     margin: 100px auto 0 auto;
@@ -80,7 +80,7 @@ body {
     	0 0 200px 1px rgba(255, 255, 255, 0.5);
 }
 /*heading styles*/
-#accordian h3 {
+#accordion h3 {
     font-size: 12px;
     line-height: 34px;
     padding: 0 10px;
@@ -90,20 +90,20 @@ body {
     background: linear-gradient(#003040, #002535);
 }
 /*heading hover effect*/
-#accordian h3:hover {
+#accordion h3:hover {
     text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
 }
 /*iconfont styles*/
-#accordian h3 span {
+#accordion h3 span {
     font-size: 16px;
     margin-right: 10px;
 }
 /*list items*/
-#accordian li {
+#accordion li {
     list-style-type: none;
 }
 /*links*/
-#accordian ul ul li a {
+#accordion ul ul li a {
     color: white;
     text-decoration: none;
     font-size: 11px;
@@ -114,15 +114,15 @@ body {
     transition: all 0.15s;
 }
 /*hover effect on links*/
-#accordian ul ul li a:hover {
+#accordion ul ul li a:hover {
     background: #003545;
     border-left: 5px solid lightgreen;
 }
 /*Lets hide the non active LIs by default*/
-#accordian ul ul {
+#accordion ul ul {
     display: none;
 }
-#accordian li.active ul {
+#accordion li.active ul {
     display: block;
 }
 
@@ -132,9 +132,9 @@ body {
 
 /*jQuery time*/
 $(document).ready(function(){
-    $("#accordian h3").click(function(){
+    $("#accordion h3").click(function(){
     	//slide up all the link lists
-    	$("#accordian ul ul").slideUp();
+    	$("#accordion ul ul").slideUp();
     	//slide down the link list below the h3 clicked - only if its closed
     	if(!$(this).next().is(":visible"))
     	{
