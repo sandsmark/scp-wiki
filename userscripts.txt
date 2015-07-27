@@ -1,4 +1,11 @@
 title:SCP Wiki Userscripts
+[[module css]]
+.content-panel standalone series
+{
+    padding-bottom: 15px;
+}
+[[/module]]
+
 + What this is
 
 This page hosts several userscripts to alter and hopefully improve your site experience. If it's hosted here it //should// work without any problems on Firefox and, depending on the specific script, on Chrome. If they don't, report any bugs to [http://www.wikidot.com/account/messages#/new/1346995 Crayne] and he'll work on a fix.
@@ -123,7 +130,23 @@ If you use any other modifier, it ignores it and acts like you only requested th
 
 [[image Staff-identification-screenshot.png]]
 
-**Description:** Adds a title below the username to signify if a user is staff and what position they hold. May help you keep track of all these new faces.
+**Description:** Adds a title below the username to signify if a user is staff and what position they hold. May help you keep track of the shitload of staff we have to employ around here. ;)
+
+**Verified working on:** [[image FF_icon.png]]
+
+[[/div]]
+
+
+[[div class="content-panel standalone series"]]
+++ Staff Identification
+
+**Link:** [[file SCP-deadlinks_SCP_Series.user.js|Click here to download/install]]
+
+**Screenshot:**
+
+[[image Series-dead-links-screenshot.png]]
+
+**Description:** Tells you whether or not there's still a title on the Series pages for articles that have been deleted. Inserts a div at the top of the page telling you that either there are no dead links, or the slots that still have a title, but no corresponding page. 
 
 **Verified working on:** [[image FF_icon.png]]
 
