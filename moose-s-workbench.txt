@@ -2,7 +2,6 @@ title:Moose's Workbench
 [[module CSS]]
 #side-bar { 
 
-    @import url ('/local--files/moose-s-workbench/theme.css');
     /*visibility: hidden;
     width: 0*/
 }
@@ -16,7 +15,8 @@ title:Moose's Workbench
 
 <head>
 <title>Resurrection</title>
-<link href=/local--files/moose-s-workbench/menu.css rel="stylesheet" type="text/css">
+<link href="/local--files/moose-s-workbench/theme.css" rel="stylesheet" type="text/css">
+<link href="/local--files/moose-s-workbench/menu.css" rel="stylesheet" type="text/css">
 <!--Resurrection Fonts-->
 <link href="/local--files/component:theme/font-bauhaus.css" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet" type="text/css">
