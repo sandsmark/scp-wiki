@@ -53,8 +53,58 @@ From the [http://www.scp-wiki.net/log-of-extranormal-events Log of Extranormal E
 **Follow-up actions taken:** Fallopia, Agent [REDACTED]'s Basenji, taken for post-anomaly testing. No anomalous activity noted since.
 
 
+[[html]]
 
-**I Need Your Help:** (aka Sandbox stuff, please critique if you get the chance)
+<script type="text/javascript">
+    
+function blink()
+{
+    var blinking = document.getElementById("blinking");
+
+    if (blinking.style.visibility == "visible")
+    {
+    	blinking.style.visibility = "hidden";
+    }
+    else
+    {
+    	blinking.style.visibility = "visible";
+    }
+}
+
+function openHide()
+{
+    if (timer)
+    {
+    	clearInterval(timer);
+    }
+    
+    var message = document.getElementById("message");
+    var blinking =  document.getElementById("blinking");
+    
+    if (message.style.display == "block")
+    {
+    	message.style.display = "none";
+    }
+    else
+    {
+    	message.style.display = "block";
+    }
+
+        blinking.innerHTML = "I NEED YOUR HELP: PLEASE CRITIQUE!!";
+
+    if (blinking.style.visibility == "hidden")
+    {
+    	blinking.style.visibility = "visible";
+    }
+}
+    
+var timer = setInterval(blink, 1000);
+
+</script>
+    
+<div id="blinking" style="font-family: verdana,arial,helvetica,sans-serif; font-size: 0.8em; color: #b01" onClick="openHide();">I NEED YOUR HELP: PLEASE CRITIQUE!!</div>
+[[/html]]
+(aka Sandbox stuff, please critique if you get the chance)
 [http://www.scp-wiki.net/forum/t-1315149/new-scip-please-do-the-usual Kindertransport (needs feedback)]
 
 
