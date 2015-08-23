@@ -123,15 +123,15 @@ var timer = setInterval(blink, 1000);
 
 
 
-++ SCP Articles (not showing articles pending tagging)
+++ SCP Articles and Tales (not showing anything pending tagging) by Rating
 
-[[module ListPages created_by="Wils" order="rating desc" separate="no" tags="scp, joke, sc2015" perPage="250" prependLine="||~ SCP ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||"]] 
+[[module ListPages created_by="Wils" order="rating desc" separate="no" tags="scp, joke, sc2015, tale" perPage="250" prependLine="||~ SCP ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||"]] 
 || %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% ||
 [[/module]]
 
-++ Tales
+++ SCP Articles and Tales (not showing anything pending tagging) by Last Comment Date
 
-[[module ListPages created_by="Wils" order="rating desc" separate="no" tags="tale" perPage="250" prependLine="||~ Tale ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||"]] 
+[[module ListPages created_by="Wils" order="Last Comment" separate="no" tags="scp, joke, sc2015, tale" perPage="250" prependLine="||~ Tale ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||"]] 
 || %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% ||
 [[/module]]
 
