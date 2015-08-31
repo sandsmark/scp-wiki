@@ -1,0 +1,262 @@
+title:2212 Archival Image
+**INTERACTIVE IMAGE REDACTER** [[footnote]]Left click to redact. Right click to mark as confirmed safe.[[/footnote]]
+[[html]]
+  <script src="http://scpsandbox2.wikidot.com/local--files/anaxagoras/jquery.js"></script>
+
+<style>
+td, tr, table{
+    border-collapse: collapse;
+}
+
+.nonogram {
+    height: 50px;
+    width: 50px;
+    border: 1px black solid;
+    background-color: white;
+    color: red;
+}
+
+.clicked{
+    border: 1px white solid;
+    background-color: black;
+}
+
+.rightClicked{
+    background-color: green;
+}
+
+</style>
+
+<div id="nonogram_table"></div>
+<br />
+<input type=button id=button value="Validate" />
+
+<script>
+var grid = [
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+];
+
+var target = [
+    [2, 2, 0, 1, 0, 0, 0, 1, 1, 0],
+    [1, 1, 0, 0, 0, 0, 1, 1, 0, 0],
+    [2, 2, 0, 0, 0, 0, 1, 0, 2, 2],
+    [0, 0, 0, 1, 0, 1, 1, 1, 1, 1],
+    [1, 1, 0, 1, 1, 0, 0, 0, 1, 1],
+    [1, 1, 0, 1, 1, 1, 1, 1, 1, 1],
+    [1, 1, 0, 1, 1, 0, 1, 0, 1, 1],
+    [0, 0, 0, 1, 0, 1, 0, 0, 2, 2],
+    [1, 1, 0, 0, 1, 0, 2, 2, 0, 0],
+    [1, 1, 0, 0, 1, 0, 2, 2, 0, 0]
+];
+
+var correctMessage = "Yay!";
+var incorrectMessage = "Incorrect!";
+var assumptionMessage = "Unjustified assumptions detected.";
+
+var table = $("<table></table>");
+for(i=0; i<grid.length; i++){
+    var row = $("<tr></tr>");
+    for(j=0; j<grid[i].length; j++){
+        var column = $("<td></td>");
+        if(grid[i][j] == 1){
+            column.addClass("clicked");
+        }
+        column.addClass("nonogram");
+        row.append(column);
+    }
+    table.append(row);
+}
+
+$('#nonogram_table').append(table);
+
+$("#button").click(function (){
+    var correctSquares = true;
+
+    $(".nonogram").each(function (index) {    
+        var i = Math.floor(index / grid.length);
+        var j = index % grid[i].length;
+        if(!squareIsGood(i,j)){
+            correctSquares = false;
+        }
+    });
+    if(!allAmbiguitiesValid())
+        correctSquares = false;
+    
+    if(correctSquares){
+        if(allAmbiguitiesCorrect()){
+            alert(correctMessage);
+        }else{
+            alert(assumptionMessage);
+        }
+    } else {
+        alert(incorrectMessage);
+    }
+});
+
+function squareIsGood(i, j){
+    if(target[i][j] == 2){
+        return true;//(grid[i][j] == 0);
+    } else if(target[i][j] == 1){
+        return (grid[i][j] == 1);
+    } else {
+        return (grid[i][j] <= 0);
+    }
+}
+
+function allAmbiguitiesValid(){
+    return ambiguitiesMarkedValidly(grid[0][0], grid[0][1], grid[2][0], grid[2][1])
+        && ambiguitiesMarkedValidly(grid[2][8], grid[2][9], grid[7][8], grid[7][9])
+        && ambiguitiesMarkedValidly(grid[8][6], grid[8][7], grid[9][6], grid[9][7]);
+}
+
+function allAmbiguitiesCorrect(){
+    return ambiguitiesMarkedCorrectly(grid[0][0], grid[0][1], grid[2][0], grid[2][1])
+        && ambiguitiesMarkedCorrectly(grid[2][8], grid[2][9], grid[7][8], grid[7][9])
+        && ambiguitiesMarkedCorrectly(grid[8][6], grid[8][7], grid[9][6], grid[9][7]);
+}
+
+//Give points row-by-row.
+function ambiguitiesMarkedValidly(p1, p2, p3, p4){
+    return (p1 == 1 && p2 != 1 && p3 != 1 && p4 == 1) || (p1 != 1 && p2 == 1 && p3 == 1 && p4 != 1) || (p1 == 0 && p2 == 0 && p3 == 0 && p4 == 0);
+}
+
+function ambiguitiesMarkedCorrectly(p1, p2, p3, p4){
+    return (p1 == 0 && p2 == 0 && p3 == 0 && p4 == 0);
+}
+
+$(".nonogram").click(function () {    
+    var index = $(".nonogram").index( this );
+    var i = Math.floor(index / grid.length);
+    var j = index % grid[i].length;
+    
+    if(grid[i][j] == 1){
+        $(this).removeClass("clicked");
+        grid[i][j] = 0;
+    } else {
+        $(this).removeClass("rightClicked");
+        $(this).addClass("clicked");
+        grid[i][j] = 1;
+    }
+});
+
+$(".nonogram").bind("contextmenu",function(){
+    var index = $(".nonogram").index( this );
+    var i = Math.floor(index / grid.length);
+    var j = index % grid[i].length;
+    
+    if(grid[i][j] == -1){
+        $(this).removeClass("rightClicked");
+        grid[i][j] = 0;
+    } else {
+        $(this).removeClass("clicked");
+        $(this).addClass("rightClicked");
+        grid[i][j] = -1;
+    }
+    return false;
+});
+</script>
+
+[[/html]]
+> FROM: dempsc@foundationNet
+> TO: anathap@foundationNet
+> SUBJECT: re: Image is impossible
+> TIMESTAMP: 12:07 AM, August 17, 2016
+> 
+> Simcha (by rows, top to bottom):
+> [1, 1, 2]
+> [2, 2]
+> [1, 1, 1]
+> [1, 5]
+> [2, 2, 2]
+> [2, 7]
+> [2, 2, 1, 2]
+> [1, 1, 1]
+> [2, 1, 1]
+> [2, 1, 1]
+> 
+> Barbara (by columns, left to right):
+> [2, 3, 2]
+> [2, 3, 2]
+> [0]
+> [1, 5]
+> [3, 2]
+> [1, 1, 1]
+> [3, 2, 1]
+> [2, 1, 1, 1]
+> [1, 5]
+> [5]
+>
+> Here's the data the juniors gave me. So for Simcha's first row, the top row of the image, all I have is [1, 1, 2]. That means that, going left to right, there were possibly good superpixels, then one superpixel that had bad effects, then at least one good superpixel, then another bad one, then at least one good one, then a block of two bad ones in a row, and if there's any left in the row at that point, they're all good. We need to censor out the bad ones.
+> 
+> Let me know if you find anything, particularly some way to get some meaning out of what their data failed to tell us. I added a validation tool to the image edit thing that should check your censoring with their data.
+> 
+> See you tomorrow.
+
+
+> FROM: dempsc@foundationNet
+> TO: anathap@foundationNet
+> SUBJECT: Image is impossible
+> TIMESTAMP: 11:50 PM, August 16, 2016
+> 
+> Pirak,
+> 
+> Okay, I cannot get an image for this document. All our photos of 2212 made the Class Ds go crazy or something. I don't even know. Why is Dr. Ricardo even insisting on having a picture anyhow? Not like they try to have one for 96.
+> 
+> Anyhow, I picked the safest seeming image and had the juniors find out which bits did the insanifying. To save on subjects, they showed them increasing blocks of the picture until the delirium started up. Figure chopping it up into a 10x10 grid should be high enough resolution expunging.
+> 
+> Simcha went row-by-row, showing the subjects one more column with each step, until he reached the end of the row, then he went onto the next. Barbara did the same thing, but went column-by-column, adding more rows with each step. Seems reasonable? Sure, but they forgot to record where their blocks started and ended. //Both of them!// Where do we find these idiots?
+> 
+> Even so, I ought to have been able to piece together the good and bad chunks. Not so. Their measurements are ambiguous. I found maybe a dozen superpixels I can't tell if they're safe or not. And we don't have the funding to delve further (thanks, Luis). I'll send you their data. Maybe you can find something with it. If not, well, I have an adequately expunged image for the SCP that should be the answer to these damn ambiguities.
+> 
+> -- Charlie
+
+**IMAGE ATTACHMENT:**
+[[html]]
+
+  <script src="http://scpsandbox2.wikidot.com/local--files/anaxagoras/jquery.js"></script>
+
+<style>
+td, tr, table{
+    border-collapse: collapse;
+}
+
+.jokemessage{
+    text-align: center;
+    color: white;
+    height: 30px;
+    width: 30px;
+    border: 1px white solid;
+    background-color: black;
+}
+</style>
+
+<div id="joke_table"></div>
+
+<script>
+var message = "DATAEXPUNGEDREDACTEDYDOWEHAVREALLYFUCKINGOPCOGNITOHAZARDSNEXTONEWILLPROBAMNESIAMYBRAINLIFESOKYPOKEIT";
+
+var table = $("<table></table>");
+for(i=0; i<10; i++){
+    var row = $("<tr></tr>");
+    for(j=0; j<10; j++){
+        var column = $("<td></td>");
+        column.text(message.charAt(i*10 + j));
+        column.addClass("jokemessage");
+        row.append(column);
+    }
+    table.append(row);
+}
+
+$('#joke_table').append(table);
+</script>
+
+[[/html]]
