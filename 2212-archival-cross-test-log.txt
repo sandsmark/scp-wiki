@@ -1,0 +1,135 @@
+title:2212 Archival Cross-Test Log
+**Objects cleared for use in Cross-Test Chamber 17-3:**
+[[div style="float:left;width:33%;"]]
+SCP-##00C896|████##
+[*http://www.scp-wiki.net/scp-017 SCP-017]
+[*http://www.scp-wiki.net/scp-515 SCP-515]
+[*http://www.scp-wiki.net/scp-753 SCP-753]
+[*http://www.scp-wiki.net/scp-1074 SCP-1074]
+[*http://www.scp-wiki.net/scp-1131 SCP-1131]
+[*http://www.scp-wiki.net/scp-1137 SCP-1137]
+[[/div]]
+
+[[div style="float:left;width:33%;"]]
+[*http://www.scp-wiki.net/scp-1284 SCP-1284]
+[*http://www.scp-wiki.net/scp-1291 SCP-1291]
+[*http://www.scp-wiki.net/scp-1441 SCP-1441]
+[*http://www.scp-wiki.net/scp-1675 SCP-1675]
+[*http://www.scp-wiki.net/scp-1949 SCP-1949]
+[*http://www.scp-wiki.net/scp-1978 SCP-1978]
+[*http://www.scp-wiki.net/scp-2071 SCP-2071]
+[[/div]]
+
+[[div style="float:left;width:33%;"]]
+[*http://www.scp-wiki.net/scp-2203 SCP-2203]
+SCP-##0096C8|2212##
+[*http://www.scp-wiki.net/scp-2273 SCP-2273]
+[*http://www.scp-wiki.net/scp-2274 SCP-2274]
+[*http://www.scp-wiki.net/scp-2800 SCP-2800]
+[*http://www.scp-wiki.net/scp-2907 SCP-2907]
+[*http://www.scp-wiki.net/scp-2980 SCP-2980]
+[[/div]]
+
+**Cross-Test Chamber 17-3 Interactive Map:**
+[[html]]
+<script src="http://scpsandbox2.wikidot.com/local--files/anaxagoras/jquery.js"></script>
+
+<style>
+td, tr, table{
+    border-collapse: collapse;
+}
+
+.gridSquare {  
+    border: 1px black solid;
+    background-color: white;
+    color: black;
+}
+
+.digit {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+</style>
+
+<div id="crosstest_table"></div>
+
+<script>
+var scpnum = [2, 2, 1, 2];
+
+var table = $("<table></table>");
+for(i = 0; i < 5; i++){
+    var row = $("<tr></tr>");
+    for(j = 0; j < 5; j++){
+        var column = $("<td></td>");
+        var input = $('<input type="text">');
+        input.addClass("digit");
+        if(i == 1 && j != 4){
+            input.css('background-color', 'rgb(0, 150, 200)');
+            if(i == 1 && j == 1)
+                input.css('background-color', 'rgb(0, 200, 200)');
+            input.val(scpnum[j]);
+            input.prop('readonly', true);
+        }
+        else if(j == 1 && i != 4)
+            input.css('background-color', 'rgb(0, 200, 150)');
+        column.addClass("gridSquare");
+        column.append(input);
+        row.append(column);
+    }
+    table.append(row);
+}
+
+$('#crosstest_table').append(table);
+
+var a = [];
+for (i = 48; i < 58; i++)
+    a.push(i);
+
+$('input').keypress(function(e) {
+    
+    var k = e.which;
+    if(k===8)
+        return;
+    if (!(a.indexOf(k)>=0) || ($(this).val().length != 0))
+        e.preventDefault();
+});
+</script>
+[[/html]]
+
+**Use Log for Cross-Test Chamber 17-3:**
+> **Experiment ████-████:**
+> **Date:** August 1, 2016
+> **Head Researcher:** Dr. John Louef
+> **Purpose:** It is suspected that the root cause of SCP-████'s psychological difficulties may be guilt over some incident in which it harmed an innocent, either in a misguided attempt to protect them or through careless use of its powers. SCP-████ may allow it to be restored to a healthier mental state, which is anticipated to be helpful for SCP-████'s future well-being.
+> **Procedure:** After obtaining approval and remotely backing up all relevant records, SCP-████ was brought into Cross-Test Chamber 17-3 and connected to the site water supply. SCP-████ entered the chamber and was instructed to use SCP-████. After assurances by research staff that SCP-████ was therapeutic in nature, SCP-████ complied.
+> After completing using SCP-████, SCP-████ reported feeling as though "a spine in my head has finally come free." Though it is unknown what incident SCP-████ erased, as it was not contained in the remote records, psychological testing shows SCP-████ to be significantly happier and more at peace with the world. Interestingly, SCP-████'s anomalous capabilities also seem to have increased, with SCP-████ no longer needing to drink at all, and now being able to grow protrusions up to 20 cm in length of far greater durability than before.
+
+> **Experiment ███-████:**
+> **Date:** August 12, 2016
+> **Head Researcher:** Dr. Joanna Hsiao
+> **Purpose:** So long as SCP-███ remains in its present state of consciousness, it poses an existential threat to all life on Earth. All mundane efforts to wake it have so far failed. But SCP-████ offers a way to alter that state, critically while leaving SCP-███ physically comatose. This opportunity cannot be ignored.
+> **Procedure:** SCP-███ is relocated to the cross-test chamber and monitored by polysomnography (PSG) apparatus. SCP-████ is then brought in and placed before SCP-███. SCP-███'s eyes are forced open, the test chamber evacuated of all personnel, and then the cover on SCP-████ is remotely removed. SCP-███ looks at it for 7 minutes to ensure total exposure, then SCP-████ is covered again and extracted.
+> PSG readings of SCP-███ do not show any change in its state of consciousness. Microphones on SCP-███ hear it muttering "That is all of us there. That a painting could show... But o my navigator, how soft your face. I am here, you are here. You are here." That last statement is repeated several more times, into unintelligibility. SCP-███ is permitted to move an arm some distance before being restrained again. Telescopes soon report substantial motion of SCP-███-1, but not towards Earth, confirming the value of the experiment. Instead SCP-███-1 is moving in place, in a complex pattern visually reminiscent of dancing.
+
+> **Experiment ████-████:**
+> **Date:** August 25, 2016
+> **Head Researcher:** Dr. Ivan Cooper
+> **Purpose:** As hormonal treatment for the current SCP-████-1 is showing signs of reduced effectiveness, suggesting a survival period of no more than 6 months, cross-testing with SCP-████ was authorized despite the high likelihood of death or otherwise causing a new, uncontained SCP-████-1 to be designated. SCP-████ may offer an efficient and controllable way of saving SCP-████-1s, and though it would result in a total loss of the original personality, this may be considered preferable to physical death.
+> **Procedure:** SCP-████-1 was placed in Cross-Test Chamber 17-3 with one female specimen of SCP-████, which soon bit her on the hand, and was then destroyed for safety reasons. As expected, SCP-████-1 rapidly lost consciousness and tissue transformation was observed radiating out from the location of the bite.
+> Approximately 20 hours after being bitten, both legs and the unbitten arm of SCP-████ detach from their sockets and form instances of SCP-████-2, despite it not being the full moon, SCP-████-1 remaining comatose and showing no signs of stress, and there being no means for moonlight to have entered the chamber. SCP-████-2 instances show unexpected hostility towards SCP-████-1, and attack her, focusing particularly on the transformed portions of her body. SCP-████-1 expires from blood loss shortly after SCP-████-2 instances are neutralized via daylight-spectrum lights. Experiment terminated.
+> //Of course. September 6, 1968 was a full moon. New body, new lunar clock. And there was enough of the old one left for the damn rabbits to still be produced.//
+> //~Dr. Cooper//
+
+> **Experiment ████-████:**
+> **Date:** September 2, 2016
+> **Head Researchers:** Dr. Andrew Califano and Dr. Alice Randall
+> **Purpose:** Even though SCP-████-1 is apparently Satan, he at least seems to mean well. As the Prince of Darkness who would not kneel, one would reasonably expect him to be pretty isolated, so perhaps his Foul Majesty just wants someone to appreciate him. It would seem illuminating to have him use SCP-████ to find out who his soul (?) mate is, and perhaps it would give him further motivation to better himself.
+> **Procedure:** We brought SCP-████ into C-T Cham. 17-3 and plugged it in. At 10:00 that night, we plugged SCP-████ into another socket and settled down to wait. When SCP-████-1 showed up at 10:30, Dr. Califano approached him and told him about SCP-████. SCP-████-1 asked to try the tester. SCP-████'s lightboxed whirled through the upper part of the scale, before settling on "Naughty but Nice." After a few seconds, the backlights behind the "but Nice" part went out.
+> The name on the calling card dispensed by SCP-████ gave off brilliant light, rendering it unreadable. Covering it up, the rest of it could be made out to say "Everywhere" for the address, and "He is waiting to welcome you back" for the advice. SCP-████-1 seemed greatly affected by this, and started weeping molten sulfur despite our attempts to comfort him. SCP-████-1 refused to dematerialize until he could tell us a bedtime story. This one wasn't from a book, and he called it "The Lonely Scion".
+
+> **Experiment ##0096C8|2212##-##00C896|████##:**
+> **Date:** September 5, 2016
+> **Head Researchers:** Dr. Luis Ricardo
+> [DATA EXPUNGED]
