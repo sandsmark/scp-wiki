@@ -145,7 +145,7 @@ function adjustOverview(){
     $("#Instructions").html(solStrings[numSolved]);
 }
 
-var imagePuzzleUnsolved = '<table style="table-layout:fixed; width: 300px; height:300px; border-width: 1px; border-color: rgb(117, 117, 117); border-style: solid; border-collapse: collapse;"><tr style="height: 300px"><td colspan="2" style="background-color: rgb(100,0,0);"></td></tr><tr><th colspan="2" style="border-width: 1px; border-color: rgb(117, 117, 117); border-style: solid; background-color: rgb(234,234,234);"><sup><a href="http://www.google.com" target="_blank">[MASSIVE DATABASE CORRUPTION]</a></sup></th></tr></table>';
+var imagePuzzleUnsolved = '<table style="table-layout:fixed; width: 300px; height:300px; border-width: 1px; border-color: rgb(117, 117, 117); border-style: solid; border-collapse: collapse;"><tr style="height: 300px"><td colspan="2" style="background-color: rgb(100,0,0);"></td></tr><tr><th colspan="2" style="border-width: 1px; border-color: rgb(117, 117, 117); border-style: solid; background-color: rgb(234,234,234);"><sup><a href="http://www.scp-wiki.net/2212-archival-image" target="_blank">[MASSIVE DATABASE CORRUPTION]</a></sup></th></tr></table>';
 var imagePuzzleSolved = '<table style="border-width: 1px; border-color: rgb(117, 117, 117); border-style: solid; border-collapse: collapse;"><tr><td colspan="2"><img src="http://scp-wiki.wdfiles.com/local--files/scp-2212/2212.png" width="300px" alt="SCP-2212.png" class="image" /></td></tr><tr><th colspan="2" style="border-width: 1px; border-color: rgb(117, 117, 117); border-style: solid; background-color: rgb(234,234,234);"><sup>Attempted reconstruction of image of SCP-2212, in containment</sup></th></tr></table>';
 function handleImagePuzzle(){
     if(docCookies.getItem("image") == "solved"){
@@ -155,7 +155,7 @@ function handleImagePuzzle(){
     }
 }
 
-var classPuzzleUnsolved = '<p><b>Object Class:</b> <a href="http://www.google.com" target="_blank">[MASSIVE DATABASE CORRUPTION]</a></p>'
+var classPuzzleUnsolved = '<p><b>Object Class:</b> <a href="http://www.scp-wiki.net/2212-archival-class" target="_blank">[MASSIVE DATABASE CORRUPTION]</a></p>'
 var classPuzzleSolved = "<p><b>Object Class:</b> Euclid</p>"
 function handleClassPuzzle(){
     if(docCookies.getItem("class") == "solved"){
