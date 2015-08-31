@@ -258,6 +258,8 @@ $("#submit").click(function(){
         } else {
             alert("Already solved!");   
         }
+    } else {
+        alert("Incorrect password");
     }
     updateText();
 });
