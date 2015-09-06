@@ -31,13 +31,13 @@ color: #808080;
 /* ------------------------------------------------------------- */
 
 #top-bar a {
-color: #808080;
+color: #191919;
 background: transparent;
 }
 #top-bar ul li.sfhover a,
 #top-bar ul li:hover a {
 background: #191919;
-color: #800000;
+color: #808080;
 }
 #top-bar ul li.sfhover ul li a,
 #top-bar ul li:hover ul li a {
@@ -48,7 +48,7 @@ border-top: 1px solid #191919;
 background: #191919;
 }
 #top-bar ul li ul a, #top-bar a:hover {
-color: #800000;
+color: #808080;
 }
 
 /* ------------------------------------------------------------- */
@@ -134,6 +134,14 @@ background-color: #191919;
 color: #808080;
 }
 
+/* ------------------------------------------------------------- */
+
+#image-block .scp-image-caption {
+color: #000000;
+}
+
+/* ------------------------------------------------------------- */
+
 [[/module]]
 
 + NIGHT MODE TEST
@@ -165,6 +173,8 @@ NIGHT MODE TEST, tab 2
 
 [[/tabview]]
 
+█████ ████ ████
+
 [[collapsible show="► OPEN" hide="▼ CLOSE"]]
 
 NIGHT MODE TEST
@@ -176,18 +186,39 @@ NIGHT MODE TEST
 [[module Rate]]
 [[/>]]
 
-[[include component:image-block name=http://scp-wiki.wdfiles.com/local--files/scp-017/SCP-017.jpg|caption=File footage of SCP-017]]
+[[include component:image-block name=http://scp-wiki.wdfiles.com/local--files/scp-1503/SCP-1503.jpg|caption=Photograph of SCP-1503 in its current upright position]]
 
-**Item #:** SCP-017
+**Item #:** SCP-1503
 
-**Object Class:** Keter
+**Object Class:** Safe
 
-**Special Containment Procedures:** SCP-017 is contained in an acrylic glass cage, 100 cm by 50 cm by 50 cm, centrally suspended in a concrete room measuring 6 m by 6 m by 4 m. Attached to the walls, ceiling, and floor of the room are high-intensity arc lamp spotlights pointed directly at the acrylic cage, to ensure that SCP-017 is constantly exposed to light from every angle. Personnel assigned to the SCP-017 control room are to monitor the functionality of the spotlights and the emergency generator system and call for maintenance immediately upon knowledge of a burnt-out lamp or an issue with the generator.
+**Special Containment Procedures:** The area surrounding SCP-1503 within a 100m radius is known as Site-75.  Site-75 is to have a chain link fence with razor wire installed around the perimeter.  The area inside Site-75 is to be monitored using motion detectors and security cameras.  Any signs of public intrusion or vandalism is to be reported immediately.  Should SCP-1503 approach the fence within a proximity of 10m, the entirety of Site-75 will be reestablished and centered around SCP-1503 again.  
 
-The only circumstance under which personnel are allowed entrance is to replace lamps. Personnel entering the room are required to wear the designated full-body reflective suits, and must be cautioned not to step in front of functional spotlights.
+**Description:** SCP-1503 is a sapient entity made entirely out of stone located on the southern face of Mount Ungaran in Central Java, Indonesia.  SCP-1503's appearance is vaguely humanoid in form and shows signs of weathering and moss/lichen growth on its surface.  Upon further inspection, SCP-1503's left index finger is significantly worn down when compared to its right index finger.  Using time-lapse photography, it is determined that SCP-1503 is capable of moving at a maximum rate of 1m/yr.
 
-**Description:** SCP-017 is a humanoid figure approximately 80 centimeters in height, anatomically similar to a small child, but with no discernible identifying features. SCP-017 seems composed of a shadowy, smoke-like shroud. No attempt to find any object beneath the shroud has been successful, but the possibility has not been ruled out.
+Based on SCP-1503's movement and direction, it is estimated to have moved a total of 656m from its original location.  SCP-1503's original starting point can be traced to a cave of higher elevation.  Inside the cave's interior, inscriptions written in ancient Brāhmī script are carved into the walls.  Based on patterns of erosion within the interior, there is an estimated 200 to 300 years between each instance of writing.  Most of the writing is illegible, but the five inscriptions that are decipherable are believed to be the most recent, dating between 100 BC and 1200 AD.  
 
-SCP-017's reaction to shadows cast upon it is immediate and swift. SCP-017 leaps at the object casting the shadow and completely encloses it in its shroud, whereupon it returns to its normal size, leaving no trace of the object behind.
+> +++ Archival Document,,R-1503-2,,
+> 
+> //Note: Inscriptions are listed in order of approximate date.//
+> 
+> ++++ 1^^st^^ Translated Inscription
+> {{Today when I was walking I [saw/sensed] a [land/rock] rise from the blue [sea/water].  Its [song/birth] was beautiful to [__illegible__] from home.  [But] I had to return because my [skin/surface] started to [?burn?].  I am [glad/satisfied] to be home.}}
+> 
+> ++++ 2^^nd^^ Translated Inscription
+> {{I [tripped/fell] while walking in the [?forest?].  As I lay, trees [assaulted/trapped] me.  Only for a moment this [?occurred?] until they [let me go].  They hurt me and left a deep [scar/wound].  [__illegible__] will remain inside my [shelter/room] and refrain from walking [?for a long time?].}}  
+> 
+> ++++ 3^^rd^^ Translated Inscription
+> {{Today I [stay in] my home.  My wound [stings/pains] me to [?burden?] such [__indecipherable__].  It will be [difficult/troubling] to sleep.  But my spirit is [?bright?].}}
+> 
+> ++++ 4^^th^^ Translated Inscription
+> {{[Last night] I had a [worse/terrible] worry of fire and [?blackness?].  I may be in danger, [?the mountain told me?].  I will [need/must] to [?think?] on this more.  I am [fear/scared] that she might be [accurate].}}
+> 
+> ++++ 5^^th^^ Translated Inscription
+> {{[That may be/This will be] my last message.  I am convinced now.  Danger [?so great?] is coming very soon.  I am [?forced?] to [quickly/rapidly] leave.  There is little time [to escape].}}
+> 
 
-**Additional Notes:** Personnel with BETA clearance or higher should see also document #017-1.
+**Addendum-1503-001:** It is theorized that SCP-1503 might be referencing a volcanic event.  A geological evaluation of Mount Ungaran was conducted and concluded that it is a dormant volcano that has shown no significant signs of seismic activity within the last 60 years.  Mount Ungaran's last eruption has been estimated to be around 1400 AD.  Additional seismic monitoring on Mount Ungaran will be required.  A 6^^th^^ inscription was also discovered on the underside of a recently unearthed outcropping within Site-75 itself and is believed to postdate all other inscriptions, dated 1700 AD.  The translation is as follows:
+
+> ++++ 6^^th^^ Translated Inscription
+> {{I am afraid of [outside/the world].  [Is it] safe to return?}}
