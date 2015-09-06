@@ -2,11 +2,11 @@ title:Lurk's Work Page
 [[module CSS]]
 
 #page-title {
-color: #8F0000;
+color: #800000;
 background-color: #191919;
 }
 a{
-color: #8F0000;
+color: #800000;
 }
 body {
 background-color: #191919;
@@ -25,6 +25,29 @@ color: #808080;
 #search-top-box-input:hover,
 #search-top-box-input:focus {
 background-color: #191919;
+color: #808080;
+}
+
+/* ------------------------------------------------------------- */
+
+#top-bar a {
+color: #191919;
+background: transparent;
+}
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+background: #191919;
+color: #808080;
+}
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+border-top: 1px solid #191919;
+}
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+background: #191919;
+}
+#top-bar ul li ul a, #top-bar a:hover {
 color: #808080;
 }
 
@@ -82,30 +105,28 @@ color: #808080;
 
 /* ------------------------------------------------------------- */
 
-
 #side-bar .side-block {
-    padding: 10px;
-    border: 1px solid #808080;
-    border-radius: 10px;
-    margin-bottom: 15px;
+padding: 10px;
+border: 1px solid #808080;
+border-radius: 10px;
+margin-bottom: 15px;
 background-color: #191919;
 color: #808080;
 }
 #side-bar .heading {
-    border-bottom: solid 1px #808080;
+border-bottom: solid 1px #808080;
 background-color: #191919;
 color: #808080;
 }
-
 #side-bar .collapsible-block-unfolded-link {
-    border-bottom: solid 1px #808080;
+border-bottom: solid 1px #808080;
 background-color: #191919;
 color: #808080;
 }
 #side-bar .collapsible-block-unfolded-link .collapsible-block-link {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    color: #808080;
+margin-top: 10px;
+margin-bottom: 5px;
+color: #808080;
 background-color: #191919;
 }
 #side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
