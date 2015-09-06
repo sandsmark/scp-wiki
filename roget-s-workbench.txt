@@ -20,7 +20,14 @@ background: url(/local--files/roget-s-workbench/body_bg.png) top left repeat-x;
 }
 
 #search-top-box-input {
-background-color: #191919;;
+background-color: #191919;
+color: #808080;
+}
+
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+background-color: #191919;
+color: #808080;
 }
 
 [[/module]]
