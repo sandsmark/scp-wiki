@@ -5,30 +5,30 @@ title:Lurk's Work Page
 color: #8F0000;
 background-color: #191919;
 }
-
 a{
 color: #8F0000;
 }
-
 body {
 background-color: #191919;
 color: #808080;
 }
-
 div#container-wrap {
 background: url(http://scp-wiki.wdfiles.com/local--files/roget-s-workbench/body_bg.png) top left repeat-x;
 }
+
+/* ------------------------------------------------------------- */
 
 #search-top-box-input {
 background-color: #191919;
 color: #808080;
 }
-
 #search-top-box-input:hover,
 #search-top-box-input:focus {
 background-color: #191919;
 color: #808080;
 }
+
+/* ------------------------------------------------------------- */
 
 .page-rate-widget-box {
 display: inline-block;
@@ -80,14 +80,45 @@ background: #191919;
 color: #808080;
 }
 
+/* ------------------------------------------------------------- */
+
+
+#side-bar .side-block {
+    padding: 10px;
+    border: 1px solid #808080;
+    border-radius: 10px;
+    margin-bottom: 15px;
+background-color: #191919;
+color: #808080;
+}
+#side-bar .heading {
+    border-bottom: solid 1px #808080;
+background-color: #191919;
+color: #808080;
+}
+
+#side-bar .collapsible-block-unfolded-link {
+    border-bottom: solid 1px #808080;
+background-color: #191919;
+color: #808080;
+}
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #808080;
+background-color: #191919;
+}
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+background-color: #191919;
+color: #808080;
+}
+
 [[/module]]
 
 + NIGHT MODE TEST
 ++ NIGHT MODE TEST
 +++ NIGHT MODE TEST
 ++++ NIGHT MODE TEST
-
-NIGHT MODE TEST[[footnote]] NIGHT MODE TEST [[/footnote]]
 
 > NIGHT MODE TEST
 
@@ -100,8 +131,6 @@ NIGHT MODE TEST[[footnote]] NIGHT MODE TEST [[/footnote]]
 //NIGHT MODE TEST//
 
 {{NIGHT MODE TEST}}
-
-,,NIGHT MODE TEST,,
 
 [[tabview]]
 
