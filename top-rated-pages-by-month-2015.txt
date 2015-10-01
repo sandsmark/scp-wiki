@@ -1,5 +1,9 @@
 title:Top Rated Pages By Month 2015
-parent:top-rated-pages-this-month
+[[collapsible show="September 2015" hide="- Click to hide"]]
+[[module ListPages rating=">5" order="rating desc" separate="false" limit="200" perPage="25" date="2015.09"]]
+%%title_linked%% (rating: %%rating%%, comments: %%comments%%)
+[[/module]]
+[[/collapsible]]
 [[collapsible show="August 2015" hide="- Click to hide"]]
 [[module ListPages rating=">5" order="rating desc" separate="false" limit="200" perPage="25" date="2015.08"]]
 %%title_linked%% (rating: %%rating%%, comments: %%comments%%)
