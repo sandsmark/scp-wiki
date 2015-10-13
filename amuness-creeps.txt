@@ -268,4 +268,67 @@ Don't ask me why I put these here. I thought they would hold a purpose or someth
 
 //Интересно, на кого вся эта банда работала.// --Petit Noir
 [[/tab]]
+[[tab TOP SECRET!!]]
+[[div style="background: url(http://scp-wiki.wdfiles.com/local--files/amuness-creeps/O5.jpg) center no-repeat ; float: center; border: solid 2px #000000; width: 570px; padding: 1px 15px; margin: 10px 10px 10px 40px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]] 
+[[=]]
++ __WARNING: O5 approval Required__
+[[/=]]
++++ The file you are attempting to access is available to personnel with Level 4 clearance only. This clearance is not included in general Level 4 clearance protocol. If you have entered this file by mistake, please exit [http://www.scp-wiki.net here] and call your nearest supervisor immediately to administer Class-Ж amnestics to you.
+[[module ListUsers users="."]]
+THAT MEANS **YOU** %%title%%!
+[[/module]]
+[[/div]]
+[[html]]
+<style>
+body{
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 0.80em;
+    line-height: 141%;
+}
+
+blockquote{
+    background-color: rgb(241,241,241);
+    border-width: 1px;
+    border-color: rgb(135,135,135);
+    border-style: dashed;
+    padding: 3px 10px 10px;
+}
+</style>
+<html>
+<head>
+<script type="text/javascript">
+ 
+function showMore()
+{
+    content = document.getElementById('content');
+    login = document.getElementById('login');
+    error = document.getElementById('error');
+    passwordEntered =  document.getElementById('pass').value;
+ 
+    if (passwordEntered == "nothing:something")
+    {
+        login.style.display = "none";
+        content.style.display = "block";
+    }
+    else
+    {
+        error.style.display = "block";
+        error.innerHTML = "<h4>INCORRECT PASSCODE! UNAUTHORIZED ACCESS DETECTED! RESPONSE TEAM ACTIVATED!<h4>";
+    }
+}
+</script>
+</head>
+<body>
+<div id="login">
+<input type="password" size="25" id="pass"> <input type="button" value="Enter passcode" onClick="showMore();">
+<div id="error" style="display: none;"></div>
+</div>
+ 
+<div id="content" style="display: none;">
+Projects in current production: The Miner's Escape (collab with Thekillerax) and The Nightmare Light (collab with MrWrong and rewrite of FritzWillie's "The Blacklight")
+</div>
+</body>
+</html>
+[[/html]]
+[[/tab]]
 [[/tabview]]
