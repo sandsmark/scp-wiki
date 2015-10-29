@@ -67,3 +67,46 @@ The drone is sent in as Agent Saggio holds open the door. The camera feed shows 
 
 {{--Susan}}
 [[/div]]
+[[html]]
+
+<html>
+
+<head>
+
+<script type="text/javascript">
+
+function setVar()
+
+{
+
+    if (sessionStorage.read != 1)
+
+    {
+
+        sessionStorage.setItem('read', 1);
+
+    }
+
+}
+
+</script>
+
+</head>
+
+<body onLoad="setVar();">
+
+</body>
+
+</html>
+
+
+
+<audio autoplay>
+
+  <source src="http://scpsandbox2.wikidot.com/local--files/amuness-creeps-ii/ITISCOMING.mp3" type="audio/mpeg">
+
+</audio>
+
+
+
+[[/html]]
