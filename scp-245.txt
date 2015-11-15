@@ -47,3 +47,21 @@ alert("INVALID PASSWORD");
 <form><input type=button value="Access SCP-245-1-A?" onClick="LogIn()"></form>
 </body>
 [[/html]]
+
+[[html]]
+<html>
+<head>
+<script type="text/javascript">
+function setVar()
+{
+    if (sessionStorage.read != 1)
+    {
+        sessionStorage.setItem('read', 1);
+    }
+}
+</script>
+</head>
+<body onLoad="setVar();">
+</body>
+</html>
+[[/html]]
