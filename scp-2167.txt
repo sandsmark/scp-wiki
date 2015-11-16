@@ -1,1 +1,108 @@
 title:SCP-2167
+Note that a [[[ajmansfield-demon-gate-amp-simple|simplified up-goer-five-compliant version]]] of this document is available for those who find this document difficult to understand and don't wish to reading things they don't completely understand.
+
+~~~~
+
+[[include component:image-block name=https://upload.wikimedia.org/wikipedia/commons/b/bb/Gauchito-78_%28Ariel_Minimal_Drive_Master_Signature%29_%282013-05-18_16.48.51_by_Andr%C3%A9s_Galeotti%29.jpg|width=250px|caption=SCP-XXXX
+[[collapsible show="+ attribution" hide="- attribution"]]By Andrés Galeotti from Ciudad Autónoma de Buenos Aires, Argentina [CC BY 2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons[[/collapsible]]]]
+
+**Item #:** XXXX
+
+**Object Class:** Euclid
+
+**Special Containment Procedures:** SCP-XXXX is to be stored in a soundproofed containment locker, connected to a CD player, four 5W speakers measuring at minimum 4 on the infinite grade impairment scale[[footnote]]See http://soundexpert.org/documents/10179/11017/se_igis.pdf for information regarding the methodology to determine this.[[/footnote]] (hereafter IGIS), and a 12VDC 5A uninterruptible power supply with at least 300 amp-hours of capacity. The speakers are to be positioned around SCP-XXXX at 90±5° angles at a maximum distance of 0.5 m. The locker is also to contain a small number of music CDs and vinyl records containing non-sensitive material alongside SCP-XXXX.
+
+All adjustment knobs on SCP-XXXX are to be kept at the minimum possible value. The CD player is to be configured to continuously play classical or easy-listening music at a very low volume.
+
+No other speakers or audio devices are to be brought within 10 m of the containment area at any time, or used in areas directly above or below containment. All sound recordings are to be stored securely and deleted once no longer needed.
+
+SCP-XXXX is to be internally inspected at least once per month for any signs of wear or potential failure of any of its components. Any components showing signs of wear are to be replaced. All electrolytic capacitors are to be tested, and any capacitor showing values outside its nominal tolerance is to be replaced with an equivalent part.
+
+All testing is to be conducted in a soundproofed room measuring 4.8 m wide, 7.8 m long, and 3 m high[[footnote]]These dimensions are those of a golden cuboid; this geometry provides excellent sound damping. A smaller room may be used instead, but the ratio of side lengths need to remain the same.[[/footnote]]. Except per specific testing protocol, SCP-XXXX is to remain connected to the CD player and UPS at all times. During standard testing it is to be connected to a pair of 25W speakers scoring at minimum 5 on the infinite grade impairment scale. The speakers and a chair are to be positioned in a golden cuboid arrangement as per document XXXX-F.
+
+**Description:** SCP-XXXX is a "Gauchito-78" audio amplifier measuring 100mm wide, 190mm long, and 60mm thick. The amplifier case is made of unpainted cast aluminum-zinc. The front face of the device has three adjustment knobs, with the labels "gain", "volume", and "tone" etched into the case, as well as a script logo giving the device name and an unknown graphic icon. It possesses two 1/4" audio jacks located on either side of the device, and a 12VDC barrel jack located in the top edge.
+
+When connected to a set of speakers, a power supply, and an audio source via the jacks on its sides, SCP-XXXX will function as a signal amplifier, amplifying the signal voltage according to the position of the "gain" knob, and performing high-frequency filtering according to the position of the "tone" knob.
+
+Computer measurements of the audio output indicate that the physical intensity of sound emitted from a speaker driven by SCP-XXXX is typical for a hobby audio amplifier. However, any subject who listens to SCP-XXXX's output will perceive it as being much louder than would be expected for non-anomalous sound with the same physical intensity. The perceived loudness corresponds to the position of the "volume" knob.
+
+The psychoacoustic loudness [[$S_{out}$]] is characterized by Equation ([[eref loud]]), where [[$S_{in}$]] is the expected loudness as determined from physical measurement, [[$k_v$]] is the position of the "volume" dial in the range 0-10, and [[$ㅐ(m,n)$]] is the real extension of the Ackermann–Péter function.
+
+[[math loud]]
+S_{out} = ㅐ(k_v, c_1 S_{in} ) 
+[[/math]]
+
+c,,1,, has been experimentally determined to be approximately 0.93.
+
+Experiments with volume settings higher than around 4.5 have not been able to determine if this trend continues, as the intense pain interferes with the subject's ability to accurately gauge the loudness.
+
+Chronic exposure to SCP-XXXX does result in permanent hearing damage as would be expected from non-anomalous sounds played at the perceived volume, but does not lead to total hearing loss. Acute exposure over a short period does not result in permanent hearing loss.
+
+High-quality recordings and subsequent reproductions of SCP-XXXX's output are able to produce the same effects on listeners as SCP-XXXX itself. This also extends to sufficiently high-quality digital recordings. The effect does not manifest if the combined processing yields an IGIS of under 4.7.
+
+When disconnected from a set of speakers, SCP-XXXX will cause nearby sets of speakers to vibrate on their own, producing audio output as if connected to SCP-XXXX. Additionally, when not provided with an audio source, SCP-XXXX will instead output the contents of random audio recordings nearby. This may include potentially sensitive or infohazardous recordings, and may compromise security or result in other containment failures. SCP-XXXX also manifests both of these effects when disconnected from a power supply.
+
+The area of effect relative to SCP-XXXX can be modeled by the inequality [[$I(\vec x) > 0$]], where [[$I(\vec x)$]] is described by Equation ([[eref intensity]]).
+
+[[math intensity]]
+I(\vec x) = 1 - \int_0^1 p(t\,\vec x)\, H\left(\frac{\partial p(t\,\vec x)}{\partial t}\right)\; dt
+[[/math]]
+
+[[math permeability]]
+p(\vec x) = c_2 \sum_i \log(q_i + 1) \exp( -c_3\left\| \vec x - \vec v_i \right\| ^2)
+[[/math]]
+
+In these equations, [[$ \vec v_i $]] and [[$q_i$]] represent the location relative to SCP-XXXX and the IGIS of all audio devices, [[$H(x)$]] is the Heaviside step function, and c,,2,, and c,,3,, are constants whose values have experimentally been determined to be:
+
+c,,2,, = 6.152
+c,,3,, = 0.468 m^^-2^^
+
+In the case of the second effect, [[$I(\vec v_i)$]] represents the (non-normalized) probability that a given recording will be played.
+
+------
+
+Disassembly and examination of SCP-XXXX reveals a fairly advanced construction for the supposed date of manufacture based on its outer appearance.
+
+The amplifier circutry consists of a green double-sided fiberglass printed circuit board with white silkscreen printing on one side, measuring 80mm by 150mm and containing all through-hole components. The external controls, audio jacks, and power are connected to the board via 16-gauge insulated lead wires.
+
+Analysis of circuitry indicates an operating principle much different from conventional audio amplifiers.
+
+Of particular note about this board is its unusual component arrangement. The board features a silkscreened seal of Solomon occupying the main portion of the board, and its various components are arranged to correspond with the glyphs of the seal, and the traces are arranged to follow the seal's pattern.
+
+Also of note is the unusual integrated circuit featured in the center of the board. The IC is packaged as a 15-pin TO-3 metal can package, measuring 8mm high and 22mm in diameter. The IC is marked as a "PL LM21D67", with a date code "7616" indicating it was manufactured in the 16th week of 1976.
+
+There are no IC manufacturers that have been known to use the manufacturer code "PL", and a "LM21D67" chip is not known to have been produced at any time by any manufacturer.
+
+Scanning electron microscopy imaging has revealed unusual structures on the silicon IC die inconsistent with any known theory of operation.
+
+[[collapsible show="+ show SEM imagery" hide="- hide SEM imagery"]]
+[[=]]
+[[include component:image-block name=http://i.imgur.com/EEInM5g.jpg|width=600px|caption=SEM image showing SCP-XXXX's amplifier IC. ([http://i.imgur.com/EEInM5g.jpg bigger version]) ]]
+[[/=]]
+[[/collapsible]]
+
+Currently the most credible theory regarding its operation is that SCP-XXXX takes advantage of the so-called "demon effect", using the interactions of its eponymous demon particle with electrical currents, to create high-linearity demon gate junctions capable of amplifying a signal with very low loss of fidelity. It is still incompletely understood how this enables SCP-XXXX to manifest its anomalous properties, but research is ongoing.
+
+------
+
+**Addendum-01: Device Documentation:** The following documentation was recovered from the residence of █████ W██████ following the seizure of SCP-XXXX from his possession on ████-██-██.
+
+> **Gauchito 78 Mini Amplifier**
+> The Gauchito 78 is a innovative, cutting edge amplifier, which combines solid performance with the new Prometheus Labs patented Overamp feature to create the perfect compact amplifier. It is advantageously small, and it packs a big punch with its massive output volume and clean, crisp sound.
+> 
+> **Gauchito 78 Overview:**
+> * 20 watt compact mini amp
+> * Patented Overamp feature allows you to //really// crank it up
+> * Uses new Demon Gate Amplifier technology. Solid-state demonics allows for unprecedented reliability and sound quality
+> * DC or independently powered
+> * Revolutionary sonic performance
+>
+> **Features Overview:**
+> Independently Powered:
+> The Gauchito 78 can be operated independently of any external power supply, for when you need to rock it out on the go. Or, connect it up for even higher-quality sound and superior performance.
+> 
+> Demon Gate Amplifier circuitry:
+> The Gauchito 78 uses the new DGJT demon gate junction transistor, the latest in solid-state demonics, making it a new standard for audio amplifiers with its superior sound quality. 
+> 
+> Patented Overamp Technology:
+> No longer be limited by your other equipment! The Gauchito 78's patented Overamp feature allow you to turn up the volume 'to infinity and beyond'.
