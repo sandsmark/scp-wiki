@@ -1,0 +1,53 @@
+title:AJMansfield's Author Page
+[[module css]]
+.article-title{
+     font-size: 100%;
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.article-body {
+    font-style: italic;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.article {
+    border: solid 1px #888880 !important;
+    border-radius: 10px;
+    overflow-y: hidden;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 6px #bbb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.1);
+     background: #fff9f0;
+}
+[[/module]]
+
+[[div class="article-list"]]
+
+[[div class="article"]]
+[[div class="article-title"]]
+[[[SCP-2167]]]: Demon Gate Amplifier
+[[/div]]
+[[/div]]
+
+[[div class="article"]]
+[[div class="article-title"]]
+[[[a-brief-explanation-on-demonics|A Brief Explanation of Demonics]]]
+[[/div]]
+[[/div]]
+
+[[div class="article"]]
+[[div class="article-title"]]
+[[[grant-request-for-the-development-of-tools-for-mapping-local|
+GRANT REQUEST FOR THE DEVELOPMENT OF TOOLS FOR MAPPING LOCALES WITH INCONSISTENT SPACETIME]]]
+[[/div]]
+[[/div]]
+
+[[/div]]
+
+[[collapsible show="+ show top rated" hide="- don't show"]]
+[[module ListPages created_by="AJMansfield" separate="no" order="rating desc"]]
+* %%title_linked%% (%%rating%%)
+[[/module]]
+[[/collapsible]]
