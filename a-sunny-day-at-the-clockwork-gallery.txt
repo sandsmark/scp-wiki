@@ -50,6 +50,90 @@ this.src = firstUrl;
 [[/div]]
 
 [[div style="float:left; width: 25%; height: 240px; padding: 0 2%"]]
+
+[[html]]
+<img id="pic" src="http://scp-wiki.wdfiles.com/local--files/a-sunny-day-at-the-clockwork-gallery/B%26D%2001.jpg" width="150px" alt="" class="image" />
+<script type="text/javascript">
+var firstUrl = "http://scp-wiki.wdfiles.com/local--files/a-sunny-day-at-the-clockwork-gallery/B%26D%2001.jpg";
+var secondUrl = "http://scp-wiki.wdfiles.com/local--files/a-sunny-day-at-the-clockwork-gallery/B%26D%2002.jpg";
+
+new Image().src = firstUrl;
+
+new Image().src = secondUrl;
+
+window.onload = function(){
+
+var org = window.document.getElementById('pic');
+org.src = firstUrl;
+org.onmouseover = function(ev){
+this.src = secondUrl;
+}
+org.onmouseout = function(ev){
+this.src = firstUrl;
+}
+
+ org.addEventListener('touchstart',org.onmouseover,false);
+ org.addEventListener('touchend',org.onmouseout,false); 
+}
+</script>
+[[/html]]
+[[/div]]
+
+[[div style="float:right; width: 65%; height: 240px; padding: 0 2%"]]
+
+> [[size 150%]][[[He Was Blind and Deaf on a Sunny Day]]][[/size]]
+> 
+> **Description:**
+> 
+> Ever ended up in a place, and your memory escaped you? Ever feel overwhelming pain and unceasing hunger? Come and find out what had really happened.
+> 
+> **Features:** Cold, hungry, painful.
+
+[[/div]]
+
+[[div style="float:left; width: 25%; height: 240px; padding: 0 2%"]]
+
+[[html]]
+<img id="pic" src="http://scp-wiki.wdfiles.com/local--files/a-sunny-day-at-the-clockwork-gallery/D%26S%2001.jpg" width="150px" alt="" class="image" />
+<script type="text/javascript">
+var firstUrl = "http://scp-wiki.wdfiles.com/local--files/a-sunny-day-at-the-clockwork-gallery/D%26S%2001.jpg";
+var secondUrl = "http://scp-wiki.wdfiles.com/local--files/a-sunny-day-at-the-clockwork-gallery/D%26S%2002.jpg";
+
+new Image().src = firstUrl;
+
+new Image().src = secondUrl;
+
+window.onload = function(){
+
+var org = window.document.getElementById('pic');
+org.src = firstUrl;
+org.onmouseover = function(ev){
+this.src = secondUrl;
+}
+org.onmouseout = function(ev){
+this.src = firstUrl;
+}
+
+ org.addEventListener('touchstart',org.onmouseover,false);
+ org.addEventListener('touchend',org.onmouseout,false); 
+}
+</script>
+[[/html]]
+[[/div]]
+
+[[div style="float:right; width: 65%; height: 240px; padding: 0 2%"]]
+
+> [[size 150%]][[[Of Dragons and Serpents]]][[/size]]
+> 
+> **Description:**
+> 
+> Worship the dragon. Worship two dragons. Worship a pair of dragons. Find out what great beasts our parents are.
+> 
+> **Features:** Divine, poetic, broken, trapped.
+
+[[/div]]
+
+[[div style="float:left; width: 25%; height: 240px; padding: 0 2%"]]
 [[html]]
 <img id="pic" src="http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/F%2001.jpg" width="150px" alt="" class="image" />
 <script type="text/javascript">
