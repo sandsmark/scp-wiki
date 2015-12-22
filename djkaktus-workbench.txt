@@ -6,3 +6,7 @@ title:djkaktus' Workbench
 [[module CountPages tags="tale"]]
 %%total%% active pages.
 [[/module]]
+
+[[module ListPages separate="no" order="rating desc" tags="joke" perPage="250" prependLine="||~ SCP ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||~ Length ||"]] 
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% || %%size%% ||
+[[/module]]
