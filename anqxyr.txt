@@ -13,7 +13,7 @@ title:anqxyr
 
 .article-title {
     display: inline-block;
-    width: 100%;
+    float: left;
     padding-left: 15px;
     margin-top: -8px;
     margin-bottom: -8px;
@@ -29,7 +29,12 @@ title:anqxyr
 .rating {
     display: inline-block;
     float: right;
-    color: #fff;
+    padding-right: 15px;
+    margin-top: -8px;
+    margin-bottom: -8px;
+    font-weight: bold;
+    font-size: 90%;
+    color: #cc0;
 }
 
 .article-body {
@@ -80,11 +85,11 @@ title:anqxyr
 [[div class="article col-left"]]
 [[div class="article-title"]]
 [[[SCP-964|SCP-964 - Indescribable Polymorph]]]
+[[/div]]
 [[div class="rating"]]
 [[module ListPages fullname="scp-964"]]
 %%rating%%
 [[/module]]
-[[/div]]
 [[/div]]
 [[div class="article-body"]]
 
