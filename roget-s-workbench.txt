@@ -23,6 +23,14 @@ Modules brought to you by Trixie "Decibelle" Shimmer!
 
 ------
 
+[[collapsible show="+ Top Commented SCPs!" hide="- Top Commented SCPs!" hideLocation="both"]]
+[[module ListPages tag="scp" order="comments desc" separate="false" limit="50" perPage="25"]]
+%%title_linked%% (comments: %%comments%%, rating: %%rating%%, date: %%date%%)
+[[/module]]
+[[/collapsible]]
+
+------
+
 [[collapsible show="+ Tales for Review!" hide="- Tales for Review!" hideLocation="both"]]
 [[module ListPages tag="tale" rating="<20" order="rating desc" separate="false" limit="100" perPage="25"]]
 %%title_linked%% (rating: %%rating%%, comments: %%comments%%)
