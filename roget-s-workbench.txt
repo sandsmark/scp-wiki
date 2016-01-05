@@ -3,12 +3,16 @@ Modules brought to you by Trixie "Decibelle" Shimmer!
 
 (Note: URL says Roget's Workbench, --title is Lurk's Work Page--[[footnote]]WAY TO RUIN THE FUN ROGET[[/footnote]], content is Decibelle's. How curious.)
 
+* (tag="v, [w]") or (tag="+x, -y") - Only display certain articles in modules by tag. Can have as little as one and as many as you need to be specific. To exclude, "-y" where y = tag, although I've found that you need to do "+x" where x = tag in order to have them work in tandem.
+* (rating="[>/<]x") - Display certain articles above or below a certain rating.
+* (created_at="[>/<]xxxx.xx") - Display certain articles before/after a certain date.
+
 [[collapsible show="+ Top Rated SCPs & Tales of 2016!" hide="- Top Rated SCPs & Tales of 2016!" hideLocation="both"]]
-[[module ListPages tag="scp" rating=">74" order="rating desc" separate="false" limit="50" perPage="25" created_at=">2015.12"]]
+[[module ListPages tag="scp" order="rating desc" separate="false" limit="50" perPage="25" created_at=">2015.12"]]
 %%title_linked%% (rating: %%rating%%, comments: %%comments%%)
 [[/module]]
 
-[[module ListPages tag="tale" rating=">74" order="rating desc" separate="false" limit="50" perPage="25" created_at=">2015.12"]]
+[[module ListPages tag="tale" order="rating desc" separate="false" limit="50" perPage="25" created_at=">2015.12"]]
 %%title_linked%% (rating: %%rating%%, comments: %%comments%%)
 [[/module]]
 [[/collapsible]]
