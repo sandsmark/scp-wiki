@@ -111,7 +111,7 @@ date1 = formatDate(date1);
 date2 = formatDate(date2);
 date3 = formatDate(date3);
 date4 = formatDate(date4);
-html = "All teams should be formed by " + date1 + ".<br>";
+html = "All teams should be roughly formed by " + date1 + ". This is more of a suggestion deadline to encourage prompt forming and planning.<br>";
 html += "No entries should be posted to the site before " + date2 + ". This is to give teams time to think, plan, and begin writing. <strong>After this deadline, teams will be finalized.</strong><br>";
 html += "No entries will be accepted after " + date3 + ".<br>";
 html += "The winners will be determined on " + date4 + ". This is the point at which the point totals will be counted. Winners will be announced within a few days of this date.<br>";
@@ -245,7 +245,7 @@ return dateFormatted;
  
 </script>
 </head>
-<body onLoad="showTimes(1454572799,1455177599,1456732799,1457423999);">
+<body onLoad="showTimes(1454399999,1455091199,1456732799,1457423999);">
  
 <div><strong>Note: the times below are local for you:</strong></div>
  
