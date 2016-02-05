@@ -1,0 +1,72 @@
+title:Tales By Title
+[[module css]]
+.section {
+    background: linear-gradient(to bottom, #eee 0%, #eee 50%, #fff 50%, #fff 100%);
+    border: 1px solid #888;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;}
+.section > p {
+    display: none;}
+.section h3 {
+    display: inline-block;
+    float: left;
+    padding-left: 0.7em;
+    margin-top: none;
+    margin-bottom: none;
+    font-size: 1.4em;
+    font-weight: bolder;
+    color: #901;}
+.section table {
+    width: 100%;}
+.section table * {
+    text-align: right;}
+.section table td, .section table th {
+    border: none;}
+.section table *:first-child {
+    text-align: left;
+    width: 100%;}
+.section table td:nth-child(2), .section table th:nth-child(2) {
+    min-width: 200px;}
+.section table td:nth-child(2), .section table th:nth-child(2) {
+    min-width: 80px;}
+.section table tr:nth-child(even) td:first-child {
+    font-weight: bold;}
+.section table tr{
+    background: #fff;}
+.section table tr:nth-child(odd){
+    border-bottom: 1px dashed #888;}
+.section table tr:first-child{
+    border-bottom: 1px solid #888;}
+.section table tr:last-child {
+    border-bottom: none;}
+.section .printuser img{
+    width: 16px !important;}
+[[/module]]
+
+
+[[=]]
++ Welcome to the SCP Foundation
+[[size 125%]]
++ Tales by Title Archive
+[[/size]]
+
+++ The contents of this page are currently [unclassified].
+
+**Personnel are reminded that certain files within this section may be subject to various classifications, and that verified credentials may be necessary to access those files.**
+-----
+> **System Administrator Note:** This archive is designed to be a comprehensive list of all SCP Foundation tales written on this wiki. Please use the navigation tools below to properly locate the tale of your choice. If you discover that a tale is absent, please contact either the tale author, or [[user djkaktus]] for assistance.
+-----
+**-Page Navigation-**
+[[/=]]
+
+[[div style="text-align: center; width: 100%; font-size:1.25em; font-weight: bold;"]]
+[#A A]|[#B B]|[#C C]|[#D D]|[#E E]|[#F F]|[#G G]|[#H H]|[#I I]|[#J J]|[#K K]|[#L L]|[#M M]|[#N N]|[#O O]|[#P P]|[#Q Q]|[#R R]|[#S S]|[#T T]|[#U U]|[#V V]|[#W W]|[#X X]|[#Y Y]|[#Z Z]|[#misc misc]
+[[/div]]
+----
+[[=]]
+[[include component:tales-by-title-1]]
+[[include component:tales-by-title-2]]
+[[include component:tales-by-title-3]]
+[[include component:tales-by-title-4]]
+[[/=]]
