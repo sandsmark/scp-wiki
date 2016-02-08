@@ -18,6 +18,12 @@ parent:foundation-tales
     font-size: 1.4em;
     font-weight: bolder;
     color: #901;}
+.section > a {
+    float: right;
+    font-size: 1.4em;
+    font-weight: bolder;
+    padding-right: 0.7em;
+    margin-top: 0.5em;}
 .section table {
     width: 100%;}
 .section table * {
@@ -29,6 +35,8 @@ parent:foundation-tales
     width: 100%;}
 .section table td:nth-child(2), .section table th:nth-child(2) {
     min-width: 200px;}
+.section table td:nth-child(3), .section table th:nth-child(3) {
+    min-width: 80px;}
 .section table tr:nth-child(even) td:first-child {
     font-weight: bold;}
 .section table tr{
