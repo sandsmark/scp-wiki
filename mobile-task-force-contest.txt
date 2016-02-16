@@ -104,9 +104,174 @@ So if you want to write the format with a different approach, or even in a diffe
 
 Feel free to go ahead and form your teams right now! Here are the following deadlines to keep in mind, however.
 
-**Note: the times below are local for you.**
-
-[[iframe http://localhost/wikidot/generateMilestones.php?m=W1sxNDU0Mzk5OTQwMDAwLCAnQWxsIHRlYW1zIHNob3VsZCBiZSByb3VnaGx5IGZvcm1lZCBieSB0aGlzIGRhdGUuIFRoaXMgaXMgbW9yZSBvZiBhIHN1Z2dlc3Rpb24gZGVhZGxpbmUgdG8gZW5jb3VyYWdlIHByb21wdCBmb3JtaW5nIGFuZCBwbGFubmluZy4nXSwgWzE0NTUwOTExNDAwMDAsICdObyBlbnRyaWVzIHNob3VsZCBiZSBwb3N0ZWQgdG8gdGhlIHNpdGUgYmVmb3JlIHRoaXMgZGF0ZS4gVGhpcyBpcyB0byBnaXZlIHRlYW1zIHRpbWUgdG8gdGhpbmssIHBsYW4sIGFuZCBiZWdpbiB3cml0aW5nLiAqKkFmdGVyIHRoaXMgZGVhZGxpbmUsIHRlYW1zIHdpbGwgYmUgZmluYWxpemVkLioqJ10sIFsxNDU2OTA1NTQwMDAwLCAnTm8gZW50cmllcyB3aWxsIGJlIGFjY2VwdGVkIGFmdGVyIHRoaXMgZGF0ZS4nXSwgWzE0NTc1OTY3NDAwMDAsICdUaGUgd2lubmVycyB3aWxsIGJlIGRldGVybWluZWQgb24gdGhpcyBkYXRlLiBUaGlzIGlzIHRoZSBwb2ludCBhdCB3aGljaCB0aGUgcG9pbnQgdG90YWxzIHdpbGwgYmUgY291bnRlZC4gV2lubmVycyB3aWxsIGJlIGFubm91bmNlZCB3aXRoaW4gYSBmZXcgZGF5cyBvZiB0aGlzIGRhdGUuJ11d width="600" height="110" style="border: 0;"]]
+[[html]]
+<html>
+<head>
+<style type="text/css">
+@import url(http://d3g0gp89917ko0.cloudfront.net/v--50456838fc8c/common--theme/base/css/style.css);
+@import url(http://www.scp-wiki.net/component:theme/code/1);
+ 
+#times
+{
+margin-top: 10px;
+}
+</style>
+<script type="text/javascript">
+ 
+function showTimes(date1,date2,date3,date4)
+{
+var times = document.getElementById('times');
+date1 = new Date(date1*1000);
+date2 = new Date(date2*1000);
+date3 = new Date(date3*1000);
+date4 = new Date(date4*1000);
+date1 = formatDate(date1);
+date2 = formatDate(date2);
+date3 = formatDate(date3);
+date4 = formatDate(date4);
+html = "All teams should be roughly formed by " + date1 + ". This is more of a suggestion deadline to encourage prompt forming and planning.<br>";
+html += "No entries should be posted to the site before " + date2 + ". This is to give teams time to think, plan, and begin writing. <strong>After this deadline, teams will be finalized.</strong><br>";
+html += "No entries will be accepted after " + date3 + ".<br>";
+html += "The winners will be determined on " + date4 + ". This is the point at which the point totals will be counted. Winners will be announced within a few days of this date.<br>";
+times.innerHTML = html;
+}
+ 
+function getWeekDay(num)
+{
+var day;
+ 
+switch (num)
+{
+case 1:
+day = "Monday";
+break;
+case 2:
+day = "Tuesday";
+break;
+case 3:
+day = "Wednesday";
+break;
+case 4:
+day = "Thursday";
+break;
+case 5:
+day = "Friday";
+break;
+case 6:
+day = "Saturday";
+break;
+default:
+day = "Sunday";
+}
+ 
+return day;
+}
+ 
+function getMonthVerbose(num)
+{
+var month;
+ 
+switch (num)
+{
+case 1:
+month = "February";
+break;
+case 2:
+month = "March";
+break;
+case 3:
+month = "April";
+break;
+case 4:
+month = "May";
+break;
+case 5:
+month = "June";
+break;
+case 6:
+month = "July";
+break;
+case 7:
+month = "August";
+break;
+case 8:
+month = "September";
+break;
+case 9:
+month = "October";
+break;
+case 10:
+month = "November";
+break;
+case 11:
+month = "December";
+break;
+default:
+month = "January";
+}
+ 
+return month;
+}
+ 
+function formatDate(d)
+{
+var dateFormatted = getWeekDay(d.getDay()) + ", " + getMonthVerbose(d.getMonth()) + " <strong>";
+var dayOfMonth = d.getDate();
+var suffix;
+ 
+switch (dayOfMonth)
+{
+case 1:
+case 21:
+case 31:
+suffix = "st";
+break;
+case 2:
+case 22:
+suffix = "nd";
+break;
+case 3:
+case 23:
+suffix = "rd";
+break;
+default:
+suffix = "th";
+}
+ 
+dateFormatted += dayOfMonth + suffix + "</strong> at ";
+ 
+var hours = d.getHours();
+var minutes = d.getMinutes();
+var timeString = "";
+if (minutes == 0)
+{
+minutes = "00";
+}
+if (hours > 12 || (hours == 12 && minutes > 0))
+{
+timeString = (hours - 12) + ":" + minutes + " PM";
+}
+else
+{
+timeString = hours + ":" + minutes + " AM";
+}
+ 
+dateFormatted += timeString;
+ 
+return dateFormatted;
+}
+ 
+</script>
+</head>
+<body onLoad="showTimes(1454399999,1455091199,1456732799,1457423999);">
+ 
+<div><strong>Note: the times below are local for you:</strong></div>
+ 
+<div id="times"></div>
+ 
+</body>
+</html>
+[[/html]]
 
 After posting your entries, tag them "MTF2016" and link them to your team's hub at the bottom of this page. The winners will have their work featured on the frontpage and possibly other prizes. Runner-ups (2nd & 3rd place) will be rewarded by having an article of theirs (their choice) featured on the front page.
 
