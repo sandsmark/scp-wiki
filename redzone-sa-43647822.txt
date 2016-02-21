@@ -3,74 +3,20 @@ title:Redzone Security Advisory
 [[module Rate]]
 [[/>]]
 
-[[module CSS]]
-#u-info div.name {
-  clear: left;
-  width: 11em;
-  font-weight: bold;
-}
-#u-info div {
-  float: left;
-  margin-bottom: 0.5em;
-}
-.letterhead {
-  height: 50px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-}
-h1, h2, .title, #page-title {
-  color: #B22;
-}
-h2 {
-  font-weight: bold;
-}
-[[/module]]
-
-[[image redzone3.png class="letterhead"]]
-
-----
-
-+ Redzone RedDB Archive Asynchronous Copy Vulnerability
-~~~~
-[[div style="float:right;width:33%;"]]
-CVE-2015-7687
-CWE-362
+[[include component:redzone-advisory
+|title=Redzone RedDB Archive Asynchronous Copy Vulnerability
+|id=redzone-sa-43647822-async-copy
+|updated=2015-7-13
+|published=2015-7-10
+|version=1.1
+|impact=10.0
+|worknd=true
+|bugs=RZux59834
+RZux59902
+|cve=CVE-2015-2804
+|cwe=CWE-362
 CWE-689
-[[/div]]
-[[div id="info"]]
-[[div_ class="name"]]
-Advisory ID:[[/div]][[div_ class="value"]]
-redzone-sa-43647822-async-copy[[/div]]
-
-[[div_ class="name"]]
-Last Updated:[[/div]][[div_ class="value"]]
-2015-07-13[[/div]]
-
-[[div_ class="name"]]
-Published:[[/div]][[div_ class="value"]]
-2015-07-10[[/div]]
-
-[[div_ class="name"]]
-Version 1.1:[[/div]][[div_ class="value"]]
-Final[[/div]]
-
-[[div_ class="name"]]
-Impact Score:[[/div]][[div_ class="value"]]
-Base - 10.0[[/div]]
-
-[[div_ class="name"]]
-Workarounds:[[/div]][[div_ class="value"]]
-Yes[[/div]]
-
-[[div_ class="name"]]
-Redzone Bug IDs:[[/div]][[div_ class="value"]]
-RZux59834
-RZux59902[[/div]]
-[[/div]]
-
-~~~~
+]]
 
 ++ Summary
 A vulnerability in the asynchronous copy routine used by the Redzone[[footnote]]Redzone Security is a database security company formed in 2001 from part of the former Prometheus Labs.[[/footnote]] RedDB ASA-5500 Series Archival Storage Appliance allows certain malicious archive contents to cause arbitrary data to be loaded into protected memory segments and executed as program code when the archive media is read.
