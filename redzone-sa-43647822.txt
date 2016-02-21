@@ -1,0 +1,114 @@
+title:Redzone Security Advisory
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[module CSS]]
+#u-info div.name {
+  clear: left;
+  width: 11em;
+  font-weight: bold;
+}
+#u-info div {
+  float: left;
+  margin-bottom: 0.5em;
+}
+.letterhead {
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1, h2, #page-title {
+  color: #B22;
+}
+h2 {
+  font-weight: bold;
+}
+[[/module]]
+
+[[image redzone3.png class="letterhead"]]
+
+----
+
++ Redzone RedDB Archive Asynchronous Copy Vulnerability
+~~~~
+[[div style="float:right;width:33%;"]]
+CVE-2015-2804
+CWE-362
+CWE-689
+[[/div]]
+[[div id="info"]]
+[[div_ class="name"]]
+Advisory ID:[[/div]][[div_ class="value"]]
+redzone-sa-43647822-async-copy[[/div]]
+
+[[div_ class="name"]]
+Last Updated:[[/div]][[div_ class="value"]]
+2015-07-13[[/div]]
+
+[[div_ class="name"]]
+Published:[[/div]][[div_ class="value"]]
+2015-07-10[[/div]]
+
+[[div_ class="name"]]
+Version 1.1:[[/div]][[div_ class="value"]]
+Final[[/div]]
+
+[[div_ class="name"]]
+Impact Score:[[/div]][[div_ class="value"]]
+Base - 10.0[[/div]]
+
+[[div_ class="name"]]
+Workarounds:[[/div]][[div_ class="value"]]
+Yes[[/div]]
+
+[[div_ class="name"]]
+Redzone Bug IDs:[[/div]][[div_ class="value"]]
+RZux59834
+RZux59902[[/div]]
+[[/div]]
+
+~~~~
+
+++ Summary
+A vulnerability in the asynchronous copy routine used by the Redzone[[footnote]]Redzone Security is a database security company formed in 2001 from part of the former Prometheus Labs.[[/footnote]] RedDB ASA-5500 Series Archival Storage Appliance allows certain malicious archive contents to cause arbitrary data to be loaded into protected memory segments and executed as program code when the archive media is read.
+
+This vulnerability is due to incomplete sanitization of archive contents, allowing thaumatic contagion between the archive data and the operating system routines used to mark regions of memory as in use.
+
+A remote attacker could exploit this vulnerability by inserting a specially-crafted self-modifying infohazard into an affected archive database, which could then mutate into a form that triggers this vulnerability.
+
+++ Affected Products
+Affected Redzone RedDB Software running on the following products may be affected by this vulnerability:
+
+||~ Vulnerable Product ||~ Fixed In: ||
+|| Redzone RedDB ASA-5500 Series Archival Storage Appliance || 4.3.30 ||
+|| Redzone RedDB ASA-5500-P Series Physical Document Storage Appliance || 4.3.31 ||
+|| Redzone Infohazard Content Management System (ICMS) || 2.14.10 ||
+|| Redzone Distributed Nonlocal Database System (DND) || 1.19.11 ||
+
+++ Indicators of Compromise
+This vulnerability is known to be exploited by the Adament [sic] adware virus[[footnote]]SCP-████[[/footnote]]. The presence of this exploit is a strong indicator that your system is compromised, and can be detected from these symptoms:
+
+* Appearance of unwanted banner ads attached to items retrieved from compromised equipment.
+* Appearance of animated advertisements on paper archive media.
+* Appearance of targeted advertisements referencing confidential personnel history.
+* Networked printers printing coupons containing anomalous memetic elements.
+
+++ Workarounds
+The following measures may be taken to reduce the potential for adverse consequences resulting from this vulnerability:
+* Ensure the network is equipped with an up-to-date active infohazard detection system.
+* Install Adblock software on any computer used to interact with affected systems.
+* Install memetic filter firewalls on all networked printers.
+* Train users of affected systems to recognise and report computer security issues.
+
+++ Fixed Software
+When considering software upgrades, customers are advised to consult the Redzone Security Advisories and Responses archive and review subsequent advisories to determine exposure and a complete upgrade solution. 
+
+In all cases, customers should ensure that the devices to upgrade contain sufficient memory and confirm that current hardware and software configurations will continue to be supported properly by the new release. If the information is not clear, customers are advised to contact the Redzone Technical Assistance Center (TAC) or their contracted maintenance providers.
+
+++ Exploitation and Public Announcements
+The Redzone Security Incident Team (RSIT) is aware that this vulnerability has been exploited in the Adament [sic] adware virus. RSIT is not aware of any prior public disclosure of this vulnerability.
+
+++ Source
+**2015-07-07:** Gloria McDuffie and Walter Sotomayor of SCP Foundation MTF Rho-9 reported this vulnerability to Redzone.
