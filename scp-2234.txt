@@ -1,0 +1,67 @@
+title:SCP-2234
+[[module CSS]]
+.blockquote {
+    margin: 0.5em;
+
+    border: 1px dashed #999;
+    padding: 1em 1em;
+    background-color: #f4f4f4;
+
+    display: block;
+}
+[[/module]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+**Item #:** SCP-2234
+
+**Object Class:** Euclid
+
+**Special Containment Procedures:** All Foundation computer equipment is to be kept up-to-date with the most recent security patches. MTF-Rho-9 is to monitor all Foundation networks for SCP-2234 and manage distribution of technical information regarding SCP-2234 to ISPs and network security companies to allow them to detect and thwart the spread of SCP-2234. In particular, any findings regarding SCP-2234 should be reported to antivirus software companies so they can add measures to prevent it to their software.
+
+Refer to individual instance documentation for specific containment procedures regarding each instance.
+
+**Description:** SCP-2234 is a class of anomalous computer viruses that are able to take advantage of a class of injection attacks in which an instance of SCP-2234 will modify its own contents while in storage, bypassing normal sanitization routines.
+
+SCP-2234 first came to the Foundation's attention on 2015-07-01, when a computer connected to the Foundation network became compromised by SCP-2234-001 and started flooding the network with packets containing SCP-2234-001, infecting several dozen other machines. Since then over 800 distinct instances of SCP-2234 have been discovered.
+
+||~ Designation ||~ Status ||~ Effect ||
+||~ SCP‑2234‑250 || Neutralized || Causes certain advertisements to be returned with html database responses from compromised equipment. Patched in RedDB 4.3.31. ||
+||~ SCP‑2234‑567 || Uncontained || Causes certain animated advertisements to appear on print jobs sent to networked printers. See document SCP-2234-567 for details.||
+||~ SCP‑2234‑642 || Neutralized || Causes certain cognitohazardous symbols to be added to network print jobs. Fixed by reflashing printer firmware. Largely rendered ineffective due to interaction with SCP-2234-567. ||
+||~ SCP‑2234‑658 || Neutralized || Causes networked printers to spontaneously print certain anomalous coupons. ||
+||~ SCP‑2234‑727 || Uncontained || Causes an affected user's social media contacts to send them targeted advertisements based on confidential personnel history. See document SCP-2234-727 for details. ||
+
+----
+
+**Addendum: Selected Instance Documentation**
+[[div_ class="blockquote"]]
+~~~~
+[[include component:image-block name=http://i.imgur.com/lEhGMaD.gif | caption=An example of SCP-2234-567]]
+**Item #:** SCP-2234-567
+
+**Object Class:** Euclid
+
+**Special Containment Procedures:** Any document bearing an instance of SCP-2234-567-A must be incinerated. Documents should not be handled more than necessary -- in particular, care must be taken to ensure that any pointing devices (including but not limited to writing devices, styli, or a subject's fingertips) do not make physical contact with SCP-2234-567-A. Any documents printed from printers potentially affected by SCP-2234-567 must be checked to verify the absence of SCP-2234-A; pages containing SCP-2234-A must be reprinted.
+
+**Description:** SCP-2234-567 is an anomalous computer virus that can be used to attach animated graphical advertisements (designated SCP-2234-567-A) to network print jobs, often in a way that obscures or obstructs the original document. When a subject makes tactile contact or otherwise touches an instance of SCP-2234-567-A with any type of pointing device, they frequently report experiencing vivid hallucinations and may contract serious memetic infection or receive bodily harm.
+
+~~~~
+[[/div]]
+
+----
+
+[[div_ class="blockquote"]]
+**Item #:** SCP-2234-727
+
+**Object Class:** Euclid
+
+**Special Containment Procedures:** All affected devices are to be securely destroyed after analysis per standard procedure. Individuals involved should be questioned if practical but otherwise no action regarding them needs to be taken.
+
+**Description:** SCP-2234-727 is an anomalous computer virus that causes an infected user's social media contacts to spontaneously send the infected user targeted advertisements. These include unusual references to particular brand names, recommendations that a user purchase a specific product or service, or links to product websites (often disguised using link-shorteners).
+
+These advertisements are frequently targeted based on confidential information that the sender would not have any way of knowing; a notable past occurrence included a Foundation researcher researching SCP-993 being targeted with advertisements for a Laugh Is Fun seasons 1-7 boxed set from an individual outside the Foundation with no knowledge of either of SCP-993, SCP-2030, or the researcher's assignment. Other incidents of similar spam have included Portuguese timeshare listings sent to researchers with history working with SCP-002, and researchers working on SCP-2234 receiving expired discount codes for Norton Anti-Virus 1999. These incidents tend to occur via private messages on social media websites. 
+
+SCP-2234-727 was originally believed to manipulate the user's client applications in order to display these advertisements, but further investigation has shown that it actually affects the infected users' social media contacts. The affected contacts consciously send the links to the affected users. Upon inquiry, contacts profess no knowledge of the mentioned products prior to the moments before sending the message, but insist that in the moment they felt that the user would have genuine interest in the advertised content.
+[[/div]]
