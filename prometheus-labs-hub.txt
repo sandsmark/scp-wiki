@@ -118,5 +118,144 @@ There is only one thing that needs to be kept in mind when using this format: th
 (Prometheus Labs builds things they think are useful but have horrific consequences)
 [[/collapsible]]
 [[/tab]]
+[[tab Redzone Security Advisory Bulletins]]
+[[module CSS]]
+#u-info div.name {
+  clear: left;
+  width: 11em;
+  font-weight: bold;
+}
+#u-info div {
+  float: left;
+  margin-bottom: 0.5em;
+}
+#u-info {
+  float: left;
+}
+#u-enum {
+  float: right;
+}
+.letterhead {
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1, h2, .title, #page-title {
+  color: #B22;
+}
+h2 {
+  font-weight: bold;
+}
+[[/module]]
 
+[[image /ajmansfield-security-advisory/redzone3.png class="letterhead"]]
+----
++ Overall Structure
+
+The basic template for a Redzone Security Advisory is as follows. Each of the sections is explained later in the appropriate section.
+
+[[code]]
+[Header Block]
+----
+++ Summary
+
+++ Affected Products
+
+++ Indicators of Compromise
+
+++ Workarounds
+
+++ Fixed Software
+
+++ Exploitation and Public Disclosure
+
+++ Source
+[[/code]]
+
+++ The Header Block
+To create the header block for a Redzone Security Advisory, include the [[[component:redzone-advisory]]] component, with the following parameters:
+: **title** (optional) : The title given to the vulnerability, for ease of referencing it. This should be the same as the page title.
+: **id** (required) : The vulnerability ID number. This always takes the following form: {{redzone-sa-//12345678//-//2-to-3-word-summary//}}. This should also normally correspond to the page URL, which should take this form: {{www.scp-wiki.net/redzone-sa-//12345678//}}.
+: **updated** (optional) : The date when this advisory was last updated. Omit this parameter if it is the same as the publication date.
+: **published** (optional) : The date on which the first version of this advisory was published.
+: **version** (optional) : The advisory version number indicating the number of times this advisory has been updated. Use two-position version numbers starting from 1.2 for the second version. If this is the first version, omit this parameter.
+: **final** (optional) : Whether or not this is considered the 'final' version of the document; defaults to {{true}}. If you are describing a vulnerability for which there is not yet a fix, or for some other reason is not 'final', set this to {{false}}.
+: **impact** (required) : The Basic CVSS score for this vulnerability, a number ranging from 0.0 for not a vulnerability, to 10.0 for an extremely bad vulnerability. You can calculate this by entering its details into [https://nvd.nist.gov/CVSS/v2-calculator this CVSS calculator tool], or you can just guess.
+: **worknd** (optional) : Whether or not there are workarounds for this vulnerability, short of updating to a fixed version. Defaults to {{false}}. If there are workarounds, make sure to set this parameter to {{true}}.
+: **bugs** (required) : The internal bug ID numbers of the bugs that resulted in this vulnerability. ID numbers should be of the form {{RZux//12345//}}. Separate multiple numbers with a newline.
+: **cve** (optional) : The Common Vulnerabilities and Exposures (CVE) number(s) that refer to this vulnerability. CVE numbers have the form {{CVE-//year//-//digits//}}, where digits is four or five digits long. (Technically they can be longer, but that is unusual.) Make sure to search the [https://cve.mitre.org/cve/cve.html CVE database] first to make sure that the number(s) you pick are not in use. Note that numbers from the current year may still be assigned, however. Separate multiple numbers with a newline.
+: **cwe** (optional) : The Common Weakness Enumeration number(s) that that are involved in the vulnerability. CWE numbers have the form {{CWE-//123//}}. Make sure that any CWE numbers you list actually correspond to the appropriate weaknesses. You can kinda-sorta use [https://cwe.mitre.org/index.html this site] to look up the correct CWE numbers, but the site is mostly unusable and the CWE system is even more complicated than the SCP Foundation tag system. If you want help finding the right CWE numbers, send a wikidot PM to [[*user AJMansfield]] and he will help you find the right CWE numbers. Separate multiple numbers with a newline.
+
+Here is an example of a fully-parameterized instance of the [[[component:redzone-advisory]]] component:
+[[code]] 
+​[[include component:redzone-advisory
+|title=Redzone Thingamajig Server Cromulator Vulnerability
+|id=redzone-sa-12345678-thingamajig-cromulator
+|updated=2005-01-01
+|published=2004-01-01
+|version=1.9
+|final=false
+|impact=7.0
+|worknd=false
+|bugs=RZux12345
+RZux23456
+|cve=CVE-1234-5678
+CVE-1234-6789
+|cwe=CWE-123
+CWE-234
+]]
+[[/code]]
+
+If you want to make a security advisory from some //other// company, that is also possible, using the ​[[[component:redzone-advisory-base]]] component instead of the [[[component:redzone-advisory]]] component. This allows you to specify two additional parameters:
+: **logo** (required) : Specify the path for another image to use, instead of the Redzone Security logo at the top.
+: **color** (required) : The color code to use for all colored highlights. In most cases you should set this to the dominant color of the logo, but you should make sure that it has enough contrast with the page background first. You can do that using [http://contrastchecker.com/ this WCAG Contrast Checker tool] - Ideally all 6 circles should turn green when you input your color in the "fg" box, although 5 out of 6 is usually good enough.
+Additionally, all previously optional parameters need to be specified when using [[[component:redzone-advisory-base]]]; in order to omit a piece put {{false}} as the parameter value.
+
+++ Summary
+This section is intended to give a technical summary of the vulnerability. This can contain a number of different things, such as:
+* How the vulnerability works.
+* What causes the vulnerability.
+* How someone might try to exploit the vulnerability.
+* Anything else that doesn't fit somewhere else.
+
+Think of this as analogous to the description of an SCP article, except don't directly state what anomalous effects it has - that goes later, in the Indicators of Compromise section.
+
+++ Affected Products (optional)
+This section details exactly which of Redzone's products are affected by this vulnerability. In most cases, this is most easily done using a table, like this:
+
+||~ Vulnerable Product ||~ Fixed In: ||
+|| Redzone Cromulator 3000 Series || 1.2.3 ||
+|| Redzone Thingamajig Server || 2.3.4 ||
+
+To do that, use this code:
+[[code]]
+||~ Vulnerable Product ||~ Fixed In: ||
+|| Redzone Cromulator 3000 Series || 1.2.3 ||
+|| Redzone Thingamajig Server || 2.3.4 ||
+[[/code]]
+
+Keep this section short, though - this is only here for verisimilitude, and going on for pages and pages about what products are affected is probably more verisimilitude than readers will be willing to read. In some cases it may be appropriate to omit this section entirely.
+
+++ Indicators of Compromise
+This is probably the most important section for the article, in that it describes what sort of anomalous effects the vulnerability might cause. Think of this as analogous to the part of the description in an SCP article where you do the big reveal about the anomaly.
+
+++ Workarounds (optional)
+State any measures that a redzone customer might take to mitigate the risk or otherwise contain the vulnerability. Think of this as analogous to the containment procedures of an SCP article.
+
+If no workarounds exist, this section may be omitted.
+
+++ Fixed Software (optional)
+If there is any reason that the Foundation might not be able to fix this problem by upgrading to a newer version, state these reasons here.
+
+This section may be omitted or replaced with standard boilerplate as needed, for example: "When considering software upgrades, customers are advised to consult the Redzone Security Advisories and Responses archive and review subsequent advisories to determine exposure and a complete upgrade solution."
+
+++ Exploitation and Public Disclosure (optional)
+This is the part where you can describe what effect this bug actually had on --the Foundation-- Redzone's clients. If it caused everything to go to hell, say so. Also describe how widely-known the vulnerability was before this document was published.
+
+This section may be omitted or replaced with standard boilerplate as needed, for example: "The Redzone Security Incident Team (RSIT) is not aware of any public announcements or malicious use of the vulnerability that is described in this advisory."
+
+++ Source (optional)
+Here you can give a background or timeline of how this vulnerability was discovered. This section may be omitted or replaced with standard boilerplate as needed, for example: "This vulnerability was discovered by Redzone during internal security testing."
+[[/tab]]
 [[/tabview]]
