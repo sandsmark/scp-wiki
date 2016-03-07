@@ -119,20 +119,35 @@ There is only one thing that needs to be kept in mind when using this format: th
 [[/collapsible]]
 [[/tab]]
 [[tab Redzone Security Advisory Bulletins]]
-[[include component:redzone-advisory
-|title=Redzone RedDB Archive Asynchronous Copy Vulnerability
-|id=redzone-sa-43647822-async-copy
-|updated=2015-7-13
-|published=2015-7-10
-|version=1.1
-|impact=10.0
-|worknd=true
-|bugs=RZux59834
-RZux59902
-|cve=CVE-2015-2804
-|cwe=CWE-362
-CWE-689
-]]
+[[module CSS]]
+#u-info div.name {
+  clear: left;
+  width: 11em;
+  font-weight: bold;
+}
+#u-info div {
+  float: left;
+  margin-bottom: 0.5em;
+}
+#u-info {
+  float: left;
+}
+#u-enum {
+  float: right;
+}
+.letterhead {
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1, h2, .title, #page-title {
+  color: #B22;
+}
+h2 {
+  font-weight: bold;
+}
+[[/module]]
 
 [[image /ajmansfield-security-advisory/redzone3.png class="letterhead"]]
 ----
