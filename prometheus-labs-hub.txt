@@ -119,37 +119,21 @@ There is only one thing that needs to be kept in mind when using this format: th
 [[/collapsible]]
 [[/tab]]
 [[tab Redzone Security Advisory Bulletins]]
-[[module CSS]]
-#u-info div.name {
-  clear: left;
-  width: 11em;
-  font-weight: bold;
-}
-#u-info div {
-  float: left;
-  margin-bottom: 0.5em;
-}
-#u-info {
-  float: left;
-}
-#u-enum {
-  float: right;
-}
-.letterhead {
-  height: 50px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-h1, h2, .title, #page-title {
-  color: #B22;
-}
-h2 {
-  font-weight: bold;
-}
-[[/module]]
-
-[[image /ajmansfield-security-advisory/redzone3.png class="letterhead"]]
+[[include component:redzone-advisory-base
+|color=#B22
+|logo=/component:redzone-advisory/redzone3.png
+|title={$title}|title=false
+|id={$id}
+|updated={$updated}|updated=false
+|published={$published}|published=false
+|version={$version}|version=false
+|final={$final}|final=true
+|impact={$impact}
+|worknd={$worknd}|worknd=false
+|bugs={$bugs}
+|cwe={$cwe}|cwe=false
+|cve={$cve}|cve=false
+]]
 ----
 + Overall Structure
 
