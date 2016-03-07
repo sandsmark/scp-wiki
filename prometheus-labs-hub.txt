@@ -119,21 +119,17 @@ There is only one thing that needs to be kept in mind when using this format: th
 [[/collapsible]]
 [[/tab]]
 [[tab Redzone Security Advisory Bulletins]]
-[[include component:redzone-advisory-base
-|color=#B22
-|logo=/component:redzone-advisory/redzone3.png
-|title={$title}|title=false
-|id={$id}
-|updated={$updated}|updated=false
-|published={$published}|published=false
-|version={$version}|version=false
-|final={$final}|final=true
-|impact={$impact}
-|worknd={$worknd}|worknd=false
-|bugs={$bugs}
-|cwe={$cwe}|cwe=false
-|cve={$cve}|cve=false
-]]
+[[module CSS]]
+.letterhead {
+  max-width: 80%;
+  max-height: 50px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+[[/module]]
+[[image /component:redzone-advisory/redzone3.png class="letterhead"]]
 ----
 + Overall Structure
 
