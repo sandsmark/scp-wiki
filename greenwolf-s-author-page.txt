@@ -131,8 +131,26 @@ To be written.
 [[/module]]
 [[/tab]]
 [[tab I Politely Request You Ignore This Tab]]
-Ha! You thought there was something here. This is actually just a filler tab to make all the tabs line up nicely without too much trailing whitespace.
+For Decibelle: Example list pages modules. Code can be copy/pasted and dumped into one of the handul of sandbox pages on the mainsite.
 
-It may also be a mini-sandbox for testing formatting on things that can't be done in the sandbox, but I refuse to confirm or deny those allegations. 
+++ SCP Articles Sorted by Date
+[[module ListPages tags="scp" created_at="last 1 month" separate="no" order="created_at desc" prependLine="||~ GOI SCP ||~ Author ||~ Created ||"]] 
+|| %%title_linked%% || %%created_by%% || %%created_at%% ||
+[[/module]]
+
+++ Tales Sorted by Date
+[[module ListPages tags="tale" created_at="last 1 month" separate="no" order="created_at desc" prependLine="||~ Tale ||~ Author ||~ Created ||"]] 
+|| %%title_linked%% || %%created_by%% || %%created_at%% ||
+[[/module]]
+
+++ GOI Format Articles Sorted by Date
+[[module ListPages tags="goi-format" created_at="last 1 month" separate="no" order="created_at desc" prependLine="||~ GOI Format ||~ Author ||~ Created ||"]] 
+|| %%title_linked%% || %%created_by%% || %%created_at%% ||
+[[/module]]
+
+++ Author Pages Sorted by Date
+[[module ListPages tags="author" created_at="last 1 month" separate="no" order="created_at desc" prependLine="||~ Page ||~ Author ||~ Created ||"]] 
+|| %%title_linked%% || %%created_by%% || %%created_at%% ||
+[[/module]]
 [[/tab]]
 [[/tabview]]
