@@ -8,6 +8,93 @@ Welcome to the Clockwork Gallery! Two sections of narrative and visual experienc
 + Section 1: Narrative
 
 [[div style="float:left; width: 25%; height: 240px; padding: 0 2%"]]
+[[html]]
+<img id="pic" src="http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/F%2001.jpg" width="150px" alt="" class="image" />
+<script type="text/javascript">
+var firstUrl = "http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/F%2001.jpg";
+var secondUrl = "http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/F%2002.jpg";
+
+new Image().src = firstUrl;
+
+new Image().src = secondUrl;
+
+window.onload = function(){
+
+var org = window.document.getElementById('pic');
+org.src = firstUrl;
+org.onmouseover = function(ev){
+this.src = secondUrl;
+}
+org.onmouseout = function(ev){
+this.src = firstUrl;
+}
+
+ org.addEventListener('touchstart',org.onmouseover,false);
+ org.addEventListener('touchend',org.onmouseout,false); 
+}
+</script>
+[[/html]]
+
+[[/div]]
+
+[[div style="float:right; width: 65%; height: 240px; padding: 0 2%"]]
+
+> [[size 150%]][[[Flow]]][[/size]]
+> 
+> **Description:**
+> 
+> Enjoy your stay at the river. This is your chance to meet the Flow and become anartist yourself!
+> 
+> ##white|Try not to drown.##
+> 
+> **Features:** Creative, fluid.
+ 
+
+[[/div]]
+
+[[div style="float:left; width: 25%; height: 240px; padding: 0 2%"]]
+[[html]]
+<img id="pic" src="http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/DtSR%2001.jpg" width="150px" alt="" class="image" />
+<script type="text/javascript">
+var firstUrl = "http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/DtSR%2001.jpg";
+var secondUrl = "http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/DtSR%2002.jpg";
+
+new Image().src = firstUrl;
+
+new Image().src = secondUrl;
+
+window.onload = function(){
+
+var org = window.document.getElementById('pic');
+org.src = firstUrl;
+org.onmouseover = function(ev){
+this.src = secondUrl;
+}
+org.onmouseout = function(ev){
+this.src = firstUrl;
+}
+
+ org.addEventListener('touchstart',org.onmouseover,false);
+ org.addEventListener('touchend',org.onmouseout,false); 
+}
+</script>
+[[/html]]
+
+[[/div]]
+
+[[div style="float:right; width: 65%; height: 240px; padding: 0 2%"]]
+
+> [[size 150%]][[[Down the Silver River]]][[/size]]
+> 
+> **Description:**
+> 
+> Meet a god and be artistic about It! Learn to build an idol yourself!
+> 
+> **Features:** Metallic, divine, creative. ##white|Dead.##
+
+[[/div]]
+
+[[div style="float:left; width: 25%; height: 240px; padding: 0 2%"]]
 
 [[html]]
 <img id="pic" src="http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/IWaT%2001.jpg" width="150px" alt="" class="image" />
@@ -134,11 +221,12 @@ this.src = firstUrl;
 [[/div]]
 
 [[div style="float:left; width: 25%; height: 240px; padding: 0 2%"]]
+
 [[html]]
-<img id="pic" src="http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/F%2001.jpg" width="150px" alt="" class="image" />
+<img id="pic" src="http://scp-wiki.wdfiles.com/local--files/a-sunny-day-at-the-clockwork-gallery/D%26S%2001.jpg" width="150px" alt="" class="image" />
 <script type="text/javascript">
-var firstUrl = "http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/F%2001.jpg";
-var secondUrl = "http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/F%2002.jpg";
+var firstUrl = "http://scp-wiki.wdfiles.com/local--files/a-sunny-day-at-the-clockwork-gallery/TIW%2001.jpg";
+var secondUrl = "http://scp-wiki.wdfiles.com/local--files/a-sunny-day-at-the-clockwork-gallery/TIW%2002.jpg";
 
 new Image().src = firstUrl;
 
@@ -160,63 +248,17 @@ this.src = firstUrl;
 }
 </script>
 [[/html]]
-
 [[/div]]
 
 [[div style="float:right; width: 65%; height: 240px; padding: 0 2%"]]
 
-> [[size 150%]][[[Flow]]][[/size]]
+> [[size 150%]][[[The Iron Wolf]]][[/size]]
 > 
 > **Description:**
 > 
-> Enjoy your stay at the river. This is your chance to meet the Flow and become anartist yourself!
+> "//The Iron Wolf lurks in the dark, its teeth pale and sharp. To the Flock of Flesh it watches, catching Lambs of Meat by its claws.//"
 > 
-> ##white|Try not to drown.##
-> 
-> **Features:** Creative, fluid.
- 
-
-[[/div]]
-
-[[div style="float:left; width: 25%; height: 240px; padding: 0 2%"]]
-[[html]]
-<img id="pic" src="http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/DtSR%2001.jpg" width="150px" alt="" class="image" />
-<script type="text/javascript">
-var firstUrl = "http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/DtSR%2001.jpg";
-var secondUrl = "http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/DtSR%2002.jpg";
-
-new Image().src = firstUrl;
-
-new Image().src = secondUrl;
-
-window.onload = function(){
-
-var org = window.document.getElementById('pic');
-org.src = firstUrl;
-org.onmouseover = function(ev){
-this.src = secondUrl;
-}
-org.onmouseout = function(ev){
-this.src = firstUrl;
-}
-
- org.addEventListener('touchstart',org.onmouseover,false);
- org.addEventListener('touchend',org.onmouseout,false); 
-}
-</script>
-[[/html]]
-
-[[/div]]
-
-[[div style="float:right; width: 65%; height: 240px; padding: 0 2%"]]
-
-> [[size 150%]][[[Down the Silver River]]][[/size]]
-> 
-> **Description:**
-> 
-> Meet a god and be artistic about It! Learn to build an idol yourself!
-> 
-> **Features:** Metallic, divine, creative. ##white|Dead.##
+> **Features:** Metallic, wild, altered.
 
 [[/div]]
 
