@@ -1,20 +1,4 @@
 title:Chat Guide
-[[include component:image-block name=site19.jpg|caption=[DATA CORRUPT]. See end of page.]]
-
-Welcome to the SCP Foundation Chat Guide!
-
-This guide outlines what is and isn't allowed in chat, what to expect, and some basic instructions on joining.
-
-All of our chatrooms are IRC channels on the SynIRC IRC network. If you don't know anything about IRC, [http://www.ircbeginner.com/ircinfo/ircc-commands.html this link (click!)] is a good place to start.
-
-This guide covers #Site19, the general chat channel for the SCP Foundation. For #Site17, the Help channel, click [http://05command.wikidot.com/chat here].
-@@@@
-@@@@
-@@@@
-@@@@
-@@@@
-[[span fontsize="small" style="color:white;"]]Dog Fact: You are not alone.[[/span]]
-
 [[tabview]]
 
 [[tab Introduction]]
@@ -25,225 +9,135 @@ This guide covers #Site19, the general chat channel for the SCP Foundation. For 
 
 * Talking about SCPs.
 * Getting advice about your article draft.
-* Socializing with members of the site from around the world, including site veterans and other new members.
+* Socializing with site members from around the world, both new people and site veterans.
 * Shenanigans.
 
 Chat is open to anyone. You don't have to be a site member to join.
-
-To join our chat, you must read and understand our rules and guidelines. To find these, go to the tab titled, "Guidelines".
 
 [[/tab]]
 
 
 [[tab Connecting]]
-++ Registering
+++ Chat Connection
 
-We highly recommend that you register your nickname upon joining chat. For those unfamiliar with registering a nick, here's how to do it:
+Our chat rooms are IRC channels on the SynIRC IRC network. If you don't know anything about IRC, [http://www.ircbeginner.com/ircinfo/ircc-commands.html this link (click!)] is a good place to start.
+
+Our general chat channel is #site19. Our help channel is [http://05command.wikidot.com/chat #site17].
+
+++ Registration
+
+We require you to register your nickname before joining chat. Here's how:
+
+# Type the following: /msg NickServ register [password] [email]. Substitute the stuff in brackets with your desired password and email. (And remember to //not// leave in the brackets!) 
+# Once this is done, you should get a confirmation email. Follow the directions in the email. Once that's all taken care of, you simply type "/msg nickserv identify [password]" (without the quotes) in your client. You have now registered!
+
+[!--  FOR WHEN +R IS DOWN:
+
+We highly recommend that you register your nickname upon joining chat. Here's how to do that.
 
 Type the following: /msg NickServ register [password] [email]
 
 Substitute the stuff in brackets with your desired password and email. (And remember to //not// leave in the brackets!) 
 
-Once this is done, you should get a confirmation email. Follow the directions in the email. Once that's all taken care of, to identify, you simply type "/msg nickserv identify [password]" without the quotes. Alternatively, "/ns identify [password]" works as well on some clients. (Again, no brackets.)
+Once this is done, you should get a confirmation email. Follow the directions in the email. Once that's all taken care of, you simply type "/msg nickserv identify [password]" (without the quotes) in your client. You have now registered!
 
-Congratulations, you have now registered and identified and can join the channel. Some chat clients can ID automatically once you've registered. It is highly recommended that if you don't ID automatically, you don't type out the command in a public channel. If you screw up and, say, forget the / or type a space in front of it, you just announced your password to everyone. 
+Sometimes (for instance, when dealing with trolls), we put +R on the chat. This means only people with registered nicks join. Register your nick now, so you won't be left out in the cold if that happens!
 
-In addition, you'll want to type "/ns set secure on" once you get in the channel, so nobody else can use your nick when you aren't around.
-
-Please note that sometimes (for instance, when dealing with trolls), we put +R on the chat. This means only people with registered nicks join. Making sure your nick is registered means you won't be left out in the cold if that happens!
+--]
 
 ++ Connecting
 
 Here are some common free IRC clients:
 
-* Xchat -  Windows: http://www.silverex.org/download/ , Linux: http://xchat.org/
-* Chatzilla (Firefox) - http://chatzilla.hacksrus.com/
-* mIRC (Windows) - http://www.mirc.com/
-* Mibbit (Web) - http://www.mibbit.com/
-* Pidgin (Multiplatform IM) - http://www.pidgin.im/
+|| **Mibbit**  || Web || http://www.mibbit.com/ ||
+|| **KiwiIRC** || Web || https://kiwiirc.com/ ||
+|| **Chatzilla** || Firefox Addon || http://chatzilla.hacksrus.com/ ||
+|| **HexChat**  ||  Windows || http://hexchat.github.io/ ||
+|| **mIRC**  ||Windows || http://www.mirc.com/ ||
+|| **Pidgin** || Multiplatform || http://www.pidgin.im/ ||
 
-__You may also use the Mibbit chat client located below!__
+If you're unsure how to use IRC, there are instructions on how to use some of the simpler web clients below. For starting users, Mibbit and Chatzilla are suggested, or you can simply use the chat tool at the bottom of this page.
 
-__**Instructions for mIRC**__
-# Set up mIRC for your computer.
-# Copy paste this (without quotations) "irc://irc.synirc.net" into your browser and hit enter.
-# Type "/join #site19"
++++ Mibbit Instructions
 
-__**Instructions for Chatzilla**__
-# Set up Chatzilla for your computer.
-# Copy this into the text bar: /attach irc.synirc.net (or just click here: irc://irc.synirc.net/site19)
-# Type /join #site19
+You will need to identify yourself before joining #Site19. Make sure you follow the instructions above to do so.
 
-__**Instructions For XChat**__
-# Set up XChat for your computer.
-# Go to the Network List and set your name.
-# Click the "Add" button in that window and give "New Network" a name.
-# With that network highlighted, click "Edit..." and in that new window rename where it says newserver/6667 to irc.synirc.net
-# Close this window and click "Connect" in the previous window.
-# After you are connected to synirc, in the area next to your name type /msg NickServ register [your password here] [your email here]
-# Go to your email and follow those instructions to confirm your registration.
-# Now that you are registered, type /join #site19
-# Yippee! You're done!
-
-If you want to use a browser-based client:
-
-__**Instructions For Mibbit**__
-(If you're not using the app below)
 # Go to http://www.mibbit.com/chat
 # Select "SynIRC webirc" from the drop down menu.
-# Pick an appropriate handle and click "Connect"
-# Identify your nick as listed above, then type "/join #site19" and press enter.
-# Enjoy your pie.
+# Type your username into the box and click [Connect].
+# Identify yourself using the instructions above under 'Registration'.
+# Type "/join #site19" and press enter.
+
++++ Chatzilla Instructions
+
+You will need to identify yourself before joining #Site19. Make sure you follow the instructions above to do so.
+
+# Set up the Chatzilla addon for your computer. This requires an up-to-date Firefox browser.
+# Copy this into the text bar: /attach irc.synirc.net (or just click here: irc://irc.synirc.net/site19)
+# Identify yourself using the instructions above under 'Registration'.
+# Type /join #site19
+
 [[/tab]]
 
 [[tab Guidelines]]
 
 + Chat Guidelines
 
-++ Mission Statement
+* **Age:** You must be 15 years of age or older. If you act the same as an underaged person, you may be banned.
+* **Topics:** Discussion about SCP ideas and drafts take priority. Any NSFW (Not Safe For Work) links must be tagged as NSFW (check below for examples). No illegal activity is permitted, period. 
+* **Reporting:** If you need a chat operator, you can often get our attention by saying "ops" or sending an operator a private message.
 
-The SCP IRC Chat is an online medium for mature, polite, and intelligent discussion of the SCP Wiki.
+++ Behavior 
 
-++ Guidelines
+It is the responsibility of each chat user to know what is or is not acceptable behavior.
 
-* **Age:** As with the SCP Foundation wiki, our chat rooms may contain content inappropriate for those under the age of 15. If you're under 15, do not join.
-* **Topics:** No illegal activity is permitted, period. Discussion about SCP ideas and drafts take priority. Any NSFW (Not Safe For Work) links must be tagged as NSFW.
-* **Ops:** Channel operators (ops) and their orders are to be obeyed at all times (so long as they are acting in their capacity as operator).
-* **Behavior:** All participants are expected to be mature and respectful. Harassment, creepiness, and offensive or disruptive behaviors are not tolerated and will be subject to disciplinary action. For more on this, see the next tab, "Chat Behavior."
-* **Reporting:** If you need a chat operator, you can often get our attention by saying "ops" or saying a specific op's name while in #Site19. Or you can send an operator a private message.
- * __Please feel free to report if someone is harassing you or being creepy, even if they are doing so in private messages.__
+The following are some specific things to avoid. This doesn't include every possible offense.
 
-++ Disciplinary Action / Banning
+* **Trolling**: Acting deliberately inflammatory. If you're doing it, you know you're doing it. If ops believe you're trolling and you don't think so, then you need to rethink your behavior. This includes targeting people or a group of people based on their gender, sexuality, race, etc.
+* **Harassment**: Asking for pictures, pressuring discussion of sex lives, etc. PMing or repeatedly talking to a user who has asked you to stop talking to them.
+* **Creepiness**: Making others uncomfortable by behaving in a way that would be socially inappropriate if done in public.
+* **Almost anything involving rape.**
+* **Spamming.**
+* **Brigades**: Do not use #Site19 as a base for bothering people on other sites. No one cares. Do not use #Site19 to get an SCP you hate downvoted. You'll be banned.
+* **Being Annoying/Disruptive:** If an OP says you're being annoying, //listen// and try to improve. Being annoying isn't entirely against the rules, //but you can still be banned for it// if it gets bad enough. This could be derailing chat, over-proselytizing your opinions, being incoherent, antagonizing others, roleplaying, backseat modding, etc.
 
-Channel operators (ops) have the authority to dictate the course of conversation. Operator orders are to be followed at all times.
+++ NSFW
 
-Operators have the authority to warn and ban users. Here's how that usually works:
+Tag all these kinds of images.
 
-* Warning. This may include simply being asked to stop (in an official manner), a kick from the chat room, and/or a ban of between 1 hour and 2 days.
-* Week Ban.
-* Month Ban.
-* Year Ban.
-* Permanent Ban.
+# **Porn, nudity, and other sexual images.** Tag "NSFW".
+# **Extreme violence and gore.** Tag "NSFW".
+# **Jump scares, screamers, flashing lights.** For these, **you must always identify what they are when you link them**. This is because we have members with epilepsy, and this can trigger seizures.
 
-Minor or accidental offenses may result in multiple warnings, or several shorter bans. Especially bad offenses may result in a ban of any length.
+++ Discipline & Banning
 
-Respect chat operator decisions, even if you disagree with them. If you feel that a warning or ban was in error, you may protest the action in the Help Channel, [http://05command.wikidot.com/chat #Site17], or you may privately message any chat operator. 
+Channel operators (ops) have the authority to dictate the course of conversation. Operator orders are to be followed at all times. 
 
-Generally, you should discuss the situation with a different chat operator, especially if you were the one warned or banned.
+Operators have the authority to warn and ban users. Minor or accidental offenses may result in multiple warnings or several shorter bans. Especially bad offenses may result in a ban of any length.
+
+Respect chat operator decisions, even if you disagree with them. If you feel that a decision was in error, you may protest the action in the Help Channel, [http://05command.wikidot.com/chat #Site17] or in a private message to chat operator. Generally, you should discuss the situation with a different chat operator, especially if you were the one warned or banned.
 
 The final authorities on disciplinary matters or rule disputes are the Chat Administrators and the Chat Owner (listed in the "Chat OPs") tab. Please report any serious misuses of authority to them.
 
 [[/tab]]
 
-[[tab Behavior]]
-
-+ Chat Behavior
-
-It is the responsibility of each chat participant to know what is or is not acceptable behavior; if you are not sure whether any particular action or topic of discussion is appropriate for #site19, it is your responsibility to ask the ops.
-
-Not all inappropriate behavior is specifically covered here.  When in doubt, apply Wheaton's Law: "Don't be a dick." Phrased differently: Don't be that much of an asshole, and don't be disruptive.
-
-If you always try to be cool to fellow chat members, you'll almost certainly be fine.
-
-++ Inappropriate Behavior
-
-Here are some specific behaviors which will almost always result in disciplinary action. This isn't intended to include every possible offense.
-
-* **Harassment.** Such things as: 
- * Sexual harassment (asking for pictures, pressuring others to discuss their sex lives, etc. This usually leads to an instant permanent ban).
- * PMing or repeatedly talking to a user who has asked you to stop talking to them.
- * Targeting people based on their gender, sexuality, race, etc.
-* **Creepiness.** Making others uncomfortable by behaving in a way that would be socially inappropriate if done in public.
- * If you find yourself being unintentionally creepy, then please observe chat to see what people consider appropriate. Feel free to ask an operator for help.
- * **Almost anything involving rape** is probably inappropriate (such as rape jokes).
-* **Trolling:** Behaving in a way that is deliberately inflammatory. If you're doing it, you know you're doing it. If ops are accusing you of trolling and you think you're not, then you need to rethink your behavior.
-* **Backseat Moderation:** This means telling others what to do in an authoritative manner when the person doesn't have the authority to do so. This is annoying, and can confuse other users to see non-ops giving orders and directing conversation. Anyone may bring an issue to the operators' attention, and anyone may point out rules violations, but don't start doing operators' jobs for them. 
- * If an OP is warning or banning someone, please don't make sarcastic comments or attack the user.
-* **Roleplaying.** SCPs are not real, the Foundation is not real, and pretending they are will not endear anyone to us. #Site19 is out-of-character only. Users can direct you to roleplaying channels. Or you can try the #SCProleplay room.
-* **Spamming.** Don't do it. 
-* **Offsite Brigades.** Do not use #Site19 as a base for bothering people on other sites. Don't encourage others to do so either. 
-
-Please note that having a mental condition, or being non-neurotypical (autism, ADHD, etc), is not an excuse for creepy or disruptive behavior. If you're having trouble, please talk to chat operators.
-
-++ NSFW (Not Safe For Work) Links
-
-Images and other links that are not safe for workplace environments or for other users must be tagged appropriately. Failing to tag an image will lead to disciplinary action.
-
-Specific types of images that must be tagged are as follows: 
-
-# **Porn, nudity, and other sexual images.** Tag "NSFW".
-# **Extreme violence and gore.** Tag "NSFW".
-# **Jump scares, screamers, flashing lights.** For these, __you must identify what they are when you link them.__ Deliberately trying to surprise someone with a jump scare/screamer will almost always result in a ban. This is because we have members with epilepsy, and this can trigger seizures.
-
-
-++ Culture (What We're Like)
-
-* **Harshness:** Being harsh is an accepted part of our community culture. It doesn't necessarily make a person an asshole if they're being harsh, especially with critique.
-* **Critique:** 
- * Critique from all members is welcome. However, if you're new, please defer to the critique of experienced users. Repeatedly giving poor or inaccurate critique is not welcome.
- * You're not obligated to listen to the critique you get, but: Continual refusal to accept feedback on your writing is not going to go over well. 
-* **Xenophobia:** Try to avoid dumping on other sites with SCP fans for no reason, or claiming that fans from another offsite fan-base are all inferior.
-* **Gossip:** It's considered rude to talk badly about people behind their backs. If they're current members of the site, it's more polite to wait til they're actually around to respond to criticism. You can mention complaints about users who are not around, but be polite and do so in moderation.
-* **Being Annoying:** If people tell you you're being annoying, //listen//. And try to improve, if reasonable. Being annoying isn't against the rules, //but you can still be banned for it// if it gets bad enough. Here are some annoying behaviors to avoid:
- * Constantly talking about certain SCPs when other members are clearly sick of hearing about it.
- * Constantly derailing chat to make the conversation center on you.
- * Excessively trying to convert people to your opinions.
- * Repeated linking to stupid nonsense / offensive material apropos of nothing.
- * Bringing up shitty old memes like 'The Game'.
- * Zalgo text.
- * Sockpuppeting.
- * Being hostile to requested feedback.
- * Being incoherent.
- * Blaming a friend or family member for something done on your account.
-* **#Site19 is not your blog:** It's fine to talk about your personal life in 19 in general, but if you dominate conversations too often by talking about it to the exclusion of almost anything else, you should find a better outlet for venting.
-* **Being Mature:** You need to act mature. If you act the same as an underaged user, we may ban you for that reason alone. 
-* **Site Password:** We have a secret password that you need to join the site. To find this, you have to read the [[[Guide for Newbies]]]. You can tell people this if you like. But if you tell them //what that password currently is//, you will be kicked or banned.
-
-... and finally ...
-
-__Please avoid antagonizing other users__, even if the other user is in the wrong, because this is disruptive. Please complain to an operator instead. Antagonizing other users may result in a warning or ban.
-
-[[/tab]]
-
 [[tab Chatbot]]
 
-+ Chatbot Etiquette
++ Alexandra
 
-**Do Not Abuse Or Over-Use The Bot. The Bot Is Being Worked On.**
+Alexandra is #site19's primary bot. Alexandra is maintained by [[*user Pixeltasim]].
 
-The current bot is Alexandra. Alexandra is maintained by [[*user Pixeltasim]] (working with [[*user Crayne]] and the rest of the technical team) and is currently our primary bot. 
+When in #site19, you may use Alexandra as a reference and general tool for a variety of purposes. Some commands can be found [http://www.scp-wiki.net/forum/t-902355/site19-chat-announcement#post-2060523 here]. 
 
-When in #site19, you may use Alexandra as a reference and general tool for a variety of purposes. Some commands can be found [http://www.scp-wiki.net/forum/t-902355/site19-chat-announcement#post-2060523 at this post].
+If you want to check multiple pages at once, always use a PM to Alexandra. Do not flood the bot, even in PMs, as this can cause crashing.
 
-**Do not bring any of your own bots into this chat without permission** 
-If you want to bring in a bot, ask permission from chat operators first. Make sure a Chat Administrator or the Owner approves.
-
-Presently the only chatbots approved to be in #Site19 alongside Alexandra are Lumberjack, a bot that logs conversation, and Elementbot, a bot that generates an IRC statistics page (view with the chat command ".stats" or at [http://fiestasheep.openshells.org/SCPStats.html this link].) Former chatbots included: Magic-8_Ball, Grapewhistle, Hatbot, and Nala (RIP).
-
-**Do not invite the bot into your own channel**
-Alexandra has limited resources dedicated to #Site19, and Pixeltasim and Crayne will know if you do. It's good courtesy not to invite her without permission.
+**Do not bring any of your own bots into this chat without permission. Do not invite our bot into your own channel without permission.**
 
 [[/tab]]
 
 [[tab Chat OPs]]
 
 + Chat Operators (OPs)
-
-Chat OPs are the people we trust to run the channel and keep order. They have the following powers:
-
-* **Redirecting.** This means ending a discussion or calling for a change of topic, or telling one user or group of users to stop talking. If an OP tells you to drop a subject, drop it immediately: don't get in the last word, don't say one more thing, just stop and move on.
-
-* **Kicking.** This just removes you from the chat until you rejoin. If you're kicked, feel free to re-enter unless told otherwise. If you were kicked, it's for a reason, so pay attention to the reason.
-
-* **Banning.** Prevents the user from speaking or joining the chat; often accompanied by a kick. Usually preceded by a warning (except for egregious offenses). Bans can be temporary or permanent. If you get permabanned, wait a year or so, and if you can show that you've improved, you might be let back in.
- * If you are banned, you may always ask why and how long, in [http://05command.wikidot.com/chat #Site17] (unless you troll in #Site17). 
- * You may also appeal your ban in #Site17. Appeal to another operator besides the one that banned you.
-
-* **Setting Channel Modes.** The only one of these you really have to worry about is +m, which prevents anyone who doesn't have OP or Voice from talking. If an OP sets the channel to +m to talk, **listen up**, and don't change your name to comment on the situation.
- 
-* If you think a chat OP is abusing their power, tell someone. Start with a different OP first. The final authorities in chat are the Chat Administrators, then the Chat Owner: report any serious misuses of authority to one of them.
-
-There's lots of overlap between wiki staff and chat staff, but they are not the same. We usually have Chat OPs who are not Wiki Staff and should not be treated as such. Many Wiki Staff have no power in Chat.
 
 ||~ **Name** ||~ **Chat Status** ||~ **Wiki Status** ||
 || [[*user thedeadlymoose]] || Chat Owner || Wiki Admin ||
@@ -252,7 +146,7 @@ There's lots of overlap between wiki staff and chat staff, but they are not the 
 || [[*user DrKens]] || Chat Admin || Wiki User ||
 || [[*user Pig_catapult]] || Chat Admin || Wiki Moderator ||
 || [[*user Sophia Light]] / Light || Chat Admin || Wiki Moderator ||
-|| [[*user TroyL]] || Chat Admin || Wiki Admin ||
+|| [[*user TroyL]] || Chat Admin || Best Admin ||
 || [[*user Athena Grey]] / Athenodora / Dora || Chat Operator || Wiki User ||
 || [[*user Bouncl]] / Imants || Chat Operator || Wiki Staff ||
 || [[*user pxdnbluesoul]] / bluesoul || Chat Operator || Wiki Staff ||
@@ -276,101 +170,14 @@ There's lots of overlap between wiki staff and chat staff, but they are not the 
 || [[*user Waxx]] || Chat Operator || Wiki Admin ||
 || [[*user Wogglebug]] || Chat Operator || Wiki Staff ||
 
-* **If you are being harassed or creeped on (including in side chats or private messages), please message an op who is also a member of the site's harassment team.**
-
-[[collapsible show="Click here to display a list of chat operators who are members of the site's harassment team." hideLocation="both"]]
-||~ **Name** ||~ **Chat Status** ||~ **Harassment Team Status** ||
-|| [[*user SoullessSingularity]] / Soulless || Chat Operator || Team Leader||
-|| [[*user Pig_catapult]] || Chat Admin || Team Member ||
-|| [[*user Sophia Light]] / Light || Chat Admin || Team Member ||
-|| [[*user Dexanote]] || Chat Operator || Team Member ||
-|| [[*user thedeadlymoose]] || Chat Owner || Assigned Admin ||
-|| [[*user TroyL]] || Chat Admin || Assigned Admin ||
-|| [[*user theduckman]] / Bright || Chat Operator || Assigned Admin ||
-|| [[*user Photosynthetic]] || Chat Operator || Assigned Admin ||
-[[/collapsible]]
-If you prefer to contact another operator who you personally know, please feel free.
-[[/tab]]
-
-[[tab Side Chats]]
-+ Secondary Chat Rooms
-
-The following chat rooms are associated with the SCP Foundation Wiki and #site19. These channels don't follow #site19 rules, except where noted. Typically, they have their own rules and are run by individual community members. Consult with one of their OPs if you have any questions.
-
-**Help & Questions:**
-* **#Site17** is an official chat room for chatting with the staff of the SCP Foundation. Ask us questions, bring up issues. Rules are the same as #site19 (but we will be lenient if you're new). Run by all Foundation staff. 
-
-You may appeal bans or other operator actions, or make complaints, in #site17.
-
-May be joined easily from http://05command.wikidot.com/chat.
-
-If you're not staff, don't interfere with conversations in which staff are responding to member questions, especially if it's disciplinary. 
-
-If you're not staff, please don't answer newbie inquiries yourself, even if you are sure that no staff are online. Either get staff's attention, or politely let them know to wait or come back later.
-
-General chat that doesn't involve staff does not belong in #site17 -- unless it's critique of someone's draft. You can also take critique from 19 to 17 if general chat is getting to be too much.
-
-**Roleplaying:** 
-* **[http://scp-foundation-origins.wikidot.com/system:real-time-chat Origins (#origins-ooc)]** - Origins' out-of-character chat. Currently run by Roget and his GM team. Origins is a game based on the early days of the Foundation and how the Foundation grew into what it is today. The game takes places at Site-19, with characters going on missions to retrieve, destroy, or otherwise interact with SCP objects.
-
-* **#SCProleplay** - The official SCP general RP chat. A perfect place for shenanigans and SCP-based roleplaying fun. Chat rules are [[[http://scp.so/rpchatguide |here]]].
-
-**Extracurricular:**
-* **#ethicscommittee** - A channel for discussion of sensitive topics. A semi-safe space. Social justice issues welcome. Owned by Soulless.
-
-* **#WanderersLibrary** - The official chat for the [http://wanderers-library.wikidot.com/ Wanderer's Library], listed here due to the connection to this site. Owned by DrMann; staffed by Library staff.
-
-If you would like a chat room to be added to this list, please contact chat operators and we will decide whether to approve its addition. Any chat room added here must either be run partly or completely by Foundation staff or already be established in the community.
-
 [[/tab]]
 
 [[/tabview]]
 
-If, after reading this guide, you have more questions, please feel free to ask chat operators for assistance.
+If you have more questions, please feel free to ask chat operators for assistance.
 
 Remember, to join chat, you must have read and understood the guide!
+-----
 
-----------------
-
-Type /nick to change your Nick name, /help, /cs help, /ns help, or /ms help for available commands.
-
-Please do not use a name that has "SCP" or "D-" or "O5" in it, or that is actually the name of a popular character or person.
-
-+ By joining this chat, you agree that you are 15 years of age or older, and that you can act like an adult.
-
-Our channel currently **does** require you to undergo **REGISTRATION** for your nick, and it makes sure other people can't use your nick. To register, type this, in the place where you type things to chat: 
-
-> **/msg nickserv Register YourPassword Your@Email**
-
-* Type the above on its own line by itself.
-* Make sure you don't have a space in front of "/msg".
-* Replace YourPassword and YourEmail with... your password and email.
-
-Once you follow the instructions that appear (you'll need to confirm your email), you can type this:
-
-> **/msg nickserv Identify YourPassword**
-
-Then type this:
-
-> **/join #site19**
-
-...and that should let you into #site19. If you are having problems with your password and need to reset it, type this:
-
-> **/msg nickserv sendpass name**
-
-You can then reset your password and re-identify.
-
-If you have further problems, please [http://05command.wikidot.com/chat go to this link] to ask for help.
-
-[[iframe http://embed.mibbit.com/?server=irc.synirc.net&channel=%23site19&nick= width="100%" height="600" scrolling="no" frameborder="0"
- ]]
-
-If this app does not connect you to #site19, click [http://05command.wikidot.com/chat here] to ask why. (Link goes to the help channel, #Site17, which should always be open.)
-
---------------
-
-**__Image Licensing Information__**: [[collapsible show="Display" hide="Hide"]] ^^The image used in the SCP-173 article is a [http://www.scaithebathhouse.com/en/exhibitions/2005/04/izumi_kato/ photograph by Keisuke Yamamoto] of the sculpture "Untitled 2004" by [http://izumikato.com/#Untitled-2004 Izumi Kato].^^
-  
-^^A note of caution: SCP-173 is a secondary use of the image of Kato's "Untitled 2004". The concept of SCP-173 does not have any relationship with the artist's original concept of "Untitled 2004".^^
-
-^^The sculpture, its likeness, and the photograph have not been released under any Creative Commons license. Only the text of this article is released under Creative Commons. **This sculpture and its likeness may not be used for commercial purposes under any circumstances. Izumi Kato has graciously chosen to allow the use of the image of "Untitled 2004" by the SCP Foundation and its fanbase for non-commercial purposes only.**^^ [[/collapsible]]
+++ KiwiIRC Client[[footnote]]Many thanks to FiestaSheep for setting this up for us.[[/footnote]]
+[[iframe https://kiwiirc.com/client/avarice.wa.us.synirc.net/?nick=Guest|?#site19 style="border:1; width:100%; height:500px;" ]]
