@@ -1,4 +1,34 @@
 title:AIAD Homescreen
+[[module css]]
+.hover {
+}
+.hover:hover {
+ 	text-decoration: none;
+    border-bottom: none;
+}
+
+.hover span {	display: none;}
+.hover:hover span {
+    position: absolute;
+    display: inline;
+    margin: 0px 0px;
+    height: auto;
+    width: auto;
+    background: #FFF;
+    border: 2px solid #34B;
+    color: #000;
+    padding: 1em;
+}
+.hover:hover span span {
+    position: relative;
+    margin: auto;
+    height: auto;
+    width: auto;
+    border: none;
+    padding: 0;
+}
+[[/module]]
+
 [[div style="background-image: url(http://scp-wiki.wdfiles.com/local--files/aiad-homescreen/blue_squares_2.gif); background-repeat: repeat;"]]
 [[div style="float:right; margin: 10px 5px 0px 0px;"]]
 [[module Rate]]
@@ -15,7 +45,7 @@ title:AIAD Homescreen
 [[/div]]
 [[include :snippets:mp3 | URL=http://scp-wiki.wdfiles.com/local--files/aiad-homescreen/song.mp3]]
 [[span style="margin: -18px; text-align: center; color: maroon; text-shadow: #00FFFF 1px 1px;"]]^^[*http://freemusicarchive.org/music/Chris_Zabriskie/Direct_to_Video_1014/02_-_What_Does_Anybody_Know_About_Anything "What Does Anybody Know About Anything"] by [*http://freemusicarchive.org/music/Chris_Zabriskie/ Chris Zabriskie]^^[[/span]]
-~~~~~~~~
+~~~~
 [[div style="margin: auto; text-align: center; width: 600px; padding: 2px 2px 2px 15px; color: black; background-color: #fff; border-radius: 8px; opacity: .6;"]]
 __**Standard Principles of Artificially Intelligent Conscripts**__
 [[<]]
@@ -25,13 +55,22 @@ __**Standard Principles of Artificially Intelligent Conscripts**__
 **4. An AIC must protect its own existence unless it conflicts with other principles.**[[/<]]
 [[/div]]
 [[div style="float:right; text-align: right; margin: 10px; width: 300px; text-align: left; padding: 2px 2px 2px 15px; color: black; background-color: #fff; border-radius: 8px; opacity: .6;"]]
-__**Archived Technical Reports:**__
+__**Archived System Logs:**__
 
-**Part I: [http://www.scp-wiki.net/alert-lockdown-initiated ALERT! LOCKDOWN INITIATED!]**
-**Part II: [http://www.scp-wiki.net/command-query-separation Command-Query Separation]**
-**Part III: [http://www.scp-wiki.net/superencipherment Superencipherment]**
-**Part IV: [http://www.scp-wiki.net/clock-multiplier Clock Multiplier]**
-**Part V: [http://www.scp-wiki.net/null-terminating-string Null-terminating String]**
+**Original AIAD Series by [[*user LurkD]]**
+* **[http://www.scp-wiki.net/alert-lockdown-initiated ALERT! LOCKDOWN INITIATED!]**
+* **[http://www.scp-wiki.net/command-query-separation Command-Query Separation]**
+* **[http://www.scp-wiki.net/superencipherment Superencipherment]**
+* **[http://www.scp-wiki.net/clock-multiplier Clock Multiplier]**
+* **[http://www.scp-wiki.net/null-terminating-string Null-terminating String]**
+----
+__**After Action Reports:**__
+
+**Hello World by [[*user LurkD]]**
+* **[*http://www.scp-wiki.net/hello-world Hello World: Part I]**
+* **[*http://www.scp-wiki.net/hello-world-part-ii Hello World: Part II]**
+* **[*http://www.scp-wiki.net/hello-world-part-ii Hello World: Part III]**
+* **[*http://www.scp-wiki.net/hello-world-part-iv Hello World: Part IV]**
 [[/div]]
 
 [[div style="float:left; text-align: right; margin: 10px; width: 300px; text-align: left; padding: 2px 2px 2px 15px; color: black; background-color: #fff; border-radius: 8px; opacity: .6;"]]
@@ -41,76 +80,461 @@ __**Archived Technical Reports:**__
 * **ver1.9.4 Gen(II)**
 * **Lvl. 2 Clearance**
 * **Site-17**
-~~~~~~~~
+~~~~
 [[f>image http://scp-wiki.wdfiles.com/local--files/aiad-homescreen/alex_00.png width="75px"]]
 **Alexandra.aic**
 * **ver1.1.7 Gen(IV)**
 * **Lvl. 2 Clearance**
 * **Site-19**
-~~~~~~~~
-----
-**__In Development:__**
-* **Gen(V) AI conscripts**
-* **Virtual Scenario Training Protocols**
-* **Beta-Testing Personality Drivers**
-* **Portable Field Applications**
+~~~~
 [[/div]]
+~~~~
 [[div style="float:right; text-align: right; margin: 10px; width: 300px; text-align: left; padding: 2px 2px 2px 15px; color: black; background-color: #fff; border-radius: 8px; opacity: .6;"]]
 __**References:**__
-**[[[SCP-2987]]]** **by [[*user Doctor Cimmerian]]**
-**[[[SCP-2306]]]** **by [[*user Jacob Conwell]]**
+[[module ListPages separate="no" tags="scp, +aiad" order="created_at"]] 
+**%%title_linked%% by %%created_by_linked%%** 
+[[/module]]
+----
+[[module ListPages created_by="-=" separate="yes" tags="-scp, -hub, +aiad" order="created_at"]] 
+**%%title_linked%%**
+**by %%created_by_linked%%** 
+[[/module]]
 [[/div]]
 
-[[div style="float:right; text-align: right; margin: 10px; width: 300px; text-align: left; padding: 2px 2px 2px 15px; color: black; background-color: #fff; border-radius: 8px; opacity: .6;"]]
+[[div style="float:left; text-align: right; margin: 10px; width: 300px; text-align: left; padding: 2px 2px 2px 15px; color: black; background-color: #fff; border-radius: 8px; opacity: .6;"]]
 __**Media Files:**__
 
 [[image http://img05.deviantart.net/ffcf/i/2015/348/6/f/alexandra_in_colour_by_loiterer-d9k4gk3.jpg link="*http://img05.deviantart.net/ffcf/i/2015/348/6/f/alexandra_in_colour_by_loiterer-d9k4gk3.jpg" style="width: 20px;"]] **by [[*user Loiterer87]]**
-~~~~~~~~
+~~~~
 [[image http://scp-wiki.wdfiles.com/local--files/aiad-homescreen/tumblr_nmdubuzaem1qifwkho1_500.jpg link="*http://orig01.deviantart.net/7839/f/2015/252/5/8/alexandra_by_perelka_l-d98zfw7.jpg" style="width: 20px;"]] **by [[*user Perelka_L]]**
-~~~~~~~~
+~~~~
 [[image http://scp-wiki.wdfiles.com/local--files/aiad-homescreen/tumblr_ntfeoxwtzp1qifwkho1_1280.jpg link="*http://scp-wiki.wdfiles.com/local--files/aiad-homescreen/tumblr_ntfeoxwtzp1qifwkho1_1280.jpg" style="width: 20px;"]] **by [[*user Perelka_L]]**
-~~~~~~~~
+~~~~
 [[image http://scp-wiki.wdfiles.com/local--files/aiad-homescreen/tumblr_nu87e2z5Tv1qifwkho1_500.jpg link="*http://pre15.deviantart.net/e512/th/pre/i/2015/252/3/8/sleepy_alex_by_perelka_l-d98zo2n.jpg" style="width: 20px;"]] **by [[*user Perelka_L]]**
-~~~~~~~~
+~~~~
 [[image http://scp-wiki.wdfiles.com/local--files/aiad-homescreen/tumblr_nu9haoZHQd1qifwkho1_540.jpg link="*http://scp-wiki.wdfiles.com/local--files/aiad-homescreen/tumblr_nu9haoZHQd1qifwkho1_540.jpg" style="width: 20px;"]] **by [[*user Perelka_L]]**
-~~~~~~~~
+~~~~
 [[image http://scp-wiki.wdfiles.com/local--files/aiad-homescreen/artificial_intelligence_applications_division_by_sunnyparallax-d8qji2f.jpg link="*http://scp-wiki.wdfiles.com/local--files/aiad-homescreen/artificial_intelligence_applications_division_by_sunnyparallax-d8qji2f.jpg" style="width: 20px;"]] **by [[*user SunnyClockwork]]**
 [[/div]]
+~~~~
+[[f<image http://scp-wiki.wdfiles.com/local--files/aiad-homescreen/crom_tr_flip.png style="width: 75px; opacity:0.4;"]]
+~~~~
+[[/div]]
+~~~~
+[[span style="color: #b30000"]] >: Request timed out. [[/span]]
+[[collapsible show=">: AIAD/homescreen/00menu.scpl has stopped responding.  Run Debug?  (Y/N)" hide=">: AIAD/homescreen/00menu.scpl has stopped responding.  Run Debug?  (Y/N)"]]
+[[span style="color: #b30000"]] >: Y [[/span]]
+
+[[span style="color: #b30000"]] >: Debug out of date.  Automatic updates found. [[/span]]
+
+[[span style="color: #b30000"]] >: Unknown update file in K:/sysutility/tools/admin/prefs [[/span]]
+
+[[span style="color: #b30000"]] >: Updating.  Please do not shutdown client... [[/span]]
+
+[[span style="color: #b30000"]] >: 99% [[/span]]
+
+[[span style="color: #b30000"]] >: Unknown error occurred. [[/span]]
 @@@@
 @@@@
 @@@@
-@@@@
-@@@@
-@@@@
-@@@@
-@@@@
-@@@@
-@@@@
-@@@@
-@@@@
-@@@@
-@@@@
-@@@@
-@@@@
-@@@@
-@@@@
-@@@@
-@@@@
-@@@@
-@@@@
-@@@@
-@@@@
-@@@@
-@@@@
-@@@@
-@@@@
-[[f<image http://scp-wiki.wdfiles.com/local--files/aiad-homescreen/crom_tr_flip.png style="width: 75px; opacity:0.6;"]]
-@@@@
-@@@@
-@@@@
-@@@@
-@@@@
-@@@@
+[[div style="float: left; width: 100px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;"]]
+[[div style="color: #f5e9e9; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background:#933F65; background:linear-gradient(#933f65, #933F65); text-align: left; padding-top: 2px; padding-bottom: 2px; padding-right: 20px; padding-left: 20px;"]]
+[[span class="hover"]] [[span]] done [[/span]] 01100100
+01101111
+01101110
+01100101  [[/span]]
+[[/div]]
+[[div]]
+[[image http://scp-wiki.wdfiles.com/local--files/command-query-separation/crom3.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
 [[/div]]
 
-~~~~
+[[div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;"]]
+[[div style="color: #f5e9e9; font-size: 8pt; background-color: #009494; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background:#009494; background:linear-gradient(#00cccc, #009494); text-align: left; padding: 2px 20px;"]]
+Thanks Crom.  And hello new user.
+
+We see you might be interested to write for the AIAD canon?
+[[/div]]
+[[div]]
+[[image http://scp-wiki.wdfiles.com/local--files/alert-lockdown-initiated/alex4.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+
+[[div style="float: left; width: 100px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;"]]
+[[div style="color: #f5e9e9; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background:#933F65; background:linear-gradient(#933f65, #933F65); text-align: left; padding-top: 2px; padding-bottom: 2px; padding-right: 20px; padding-left: 20px;"]]
+[[span class="hover"]] [[span]] neat! [[/span]] 01101110 
+01100101 
+01100001 
+01110100
+00100001 [[/span]]
+[[/div]]
+[[div]]
+[[image http://scp-wiki.wdfiles.com/local--files/command-query-separation/crom3.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: left;"]]
+[[/div]]
+
+[[div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;"]]
+[[div style="color: #f5e9e9; font-size: 8pt; background-color: #009494; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background:#009494; background:linear-gradient(#00cccc, #009494); text-align: left; padding: 2px 20px;"]]
+Let's help them out, Crom.
+[[/div]]
+[[div]]
+[[image http://scp-wiki.wdfiles.com/local--files/alert-lockdown-initiated/alex_pleased.png width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+@@@@
+[[div style="text-align: right; margin: auto; width: 240px;"]]
+[[div style="color: #f5e9e9; font-size: 8pt; background-color: #009494; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background:#009494; background:linear-gradient(#00cccc, #009494); text-align: left; padding: 2px 20px;"]]
+Loading aiad_infotabs.scpl
+[[div style="text-align: center; padding: 2px 20px; color: black; font-size: 8pt; background-color: #fff0f0; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px;"]]
+::LOADING::
+
+[[image http://scp-wiki.wdfiles.com/local--files/hello-world/18-1.gif]] [[image http://scp-wiki.wdfiles.com/local--files/hello-world/18-1.gif]] [[image http://scp-wiki.wdfiles.com/local--files/hello-world/18-1.gif]]
+
+[[/div]]
+@@@@
+[[/div]]
+[[/div]]
+[[div style="clear: right;"]]
+[[/div]]
+@@@@
+@@@@
+@@@@
+
+[[tabview]]
+
+[[tab What Is This?]]
++ What Is This?
+
+++ AIAD
+In universe, AIAD (Artificial Intelligence Applications Division) is an experimental research division that technically exists as a branch division within the SCP Foundation IT Department.  The division's sole purpose is to develop, understand, and utilize the burgeoning field of the AI sciences.  It is a field that is both fascinating, misunderstood, and in some cases resented.  
+[[div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;"]]
+[[div style="color: #f5e9e9; font-size: 8pt; background-color: #009494; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background:#009494; background:linear-gradient(#00cccc, #009494); text-align: left; padding: 2px 20px;"]]
+Arguably the best division in the Foundation.
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/knights-for-truth-hub/alex_smile_tr.gif width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+However, the Foundation understands that if they are not investing time understanding this cutting edge tech, someone other government or cult is.  In fact there's evidence already present that such tech is being exercised already outside of the SCP Foundation.  That argument alone is enough to keep AIAD supplied with a healthy annual budget to fund its projects.
+
+Structurally, there's plenty of research on staff with a multitude of related backgrounds from computer sciences to communication technicians.  The AICs on file each have their own minds to exercise their decisions; all kept in check by their hardwired "Standard Principles".  Together, they research new ways to create consciousnesses and defend against hostile ones in the name of not only the Foundation, but for humanity as well.
+
+++ MTF Kappa-10 ("Skynet")
+The Foundation understands that as the world becomes more technical and dependent on that technology, there must be a presence inside both monitoring and protecting it.  It was more or less haphazardly that MTF K-10 was created as kind of a "knee-jerk" reaction to a critical problem that wasn't fully understood.  
+
+At its core, MTF K-10's purpose is to track, investigate, and if possible capture/neutralize intangible threats to both the SCP Foundation and the internet at large.  Many times this means assuming the role of a counter-AI force.  Because patrolling the internet for threats that can both move and think at light-speed is just impossible for a human, it relies on AICs to do the dirty work on behalf of them.  The AICs recruited are kept on a very short leash by both researchers and Alexandra back at Site-19.   
+
+Obviously keeping AICs in check and making sure they behave while they are out inthe real world is a very big concern of the AIAD.  Hence there's a growing consensus outside of the division that is attempting to have the MTF disbanded for fear of it blowing up in their faces much like another past mistake.  There's plenty of pressure on both sides squeezing down on AIAD to keep things high and tight until a decision is made one way or the other.
+
+++ The Maxwellist Network
+The Maxwellists are a denomination of [*http://www.scp-wiki.net/church-of-the-broken-god-hub The Church of the Broken God] as explained below:
+
+[[=]]
+> //"The "Church of Maxwellism"(GOI-004C) represents a modernized, computation and network oriented means of worship. No central organizing church body is known to exist. However, interviews and covert surveillance has determined that all known cells are in regular contact with one another, and capable of coordination. Maxwellists favour small-scale body modification through the use of advanced cybernetics and organ enhancement. While artificial limbs or reinforced skeletons have been observed, Maxwellist implants focus primarily on communication, data storage, and networking capabilities, and sensory enhancement."//
+[[/=]]
+
+Within the AIAD canon, they represent a separate organization that is neither benign nor hostile.  Rather they would prefer to not be disturbed and conduct their own business outside of Foundation knowledge.  Much of the relationship between AIAD and Maxwellists has been revealed in [[*user Sunnyclockwork]]'s tale [*http://www.scp-wiki.net/forum/t-1643825/basic-observations Basic Observations].  In this, it is explained how the Maxwellist network and hierarchy operates.  For more details please refer to [*http://www.scp-wiki.net/forum/t-1643825/basic-observations#post-2472081 THIS POST].
+
+[[/tab]]
+
+[[tab How-To-Write AIAD]]
+
++ How-To-Write AIAD
+
+++ Theme
+As seen in the series, there is an obvious visual style that is followed.  AIAD has been known to dabble in visual storytelling and experiment with different forms of media to immerse the reader.  __While this is the most memorable thing about AIAD, it is emphatically not the basis for it.__  The most important part about AIAD is the storytelling, no matter how it's presented. 
+
+++ World Building
+AIAD also is an opportunity to build expansive virtual worlds and characters that are not bound by any pre-existing points of reference.  AIAD can be as free and as weird as you need it to be within the realm of sustaining disbelief.  The important thing to remember is __the world that an AI sees is all virtual__.  There's no real distinction between the human world and the virtual world other than seeing which one runs slower.  
+
+++ Relationships
+AIAD also puts a large focus on the relationships between the humans and the AIs themselves.   AIs in this canon have personalities.  Personalities don't make them necessarily better at their clerical tasks, but conditioning traits such as empathy, friendship, curiosity, etc. do make them easier to both work with and control.  Hence, many times the AIs exhibit human-like emotions and reactions which sometimes are in fact not by design at all.  Some AIs even have deep emotional bonds with each other, while others hold petty grudges.  Even though they are not officially recognized by the Ethics Committee, they are in fact people-- just virtual people.  
+[[div style="float: right; width: 100px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;"]]
+[[div style="color: #f5e9e9; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background:#933F65; background:linear-gradient(#933f65, #933F65); text-align: left; padding-top: 2px; padding-bottom: 2px; padding-right: 20px; padding-left: 20px;"]]
+[[span class="hover"]] [[span]] :) [[/span]]00111010
+00101001 [[/span]]
+[[/div]]
+[[div]]
+[[image http://scp-wiki.wdfiles.com/local--files/clock-multiplier/crom_turntr.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+++ Fun
+AIAD is supposed to be fun.  It can be dramatic.  It can be tense.  If done correctly, it can even be scary.  But mostly it's meant to be a way of doing something different in the SCPverse that isn't necessarily focused on humans.  Let your imagination go wild.  
+
+++ Code
+The code used to make those text bubbles can be seen below.  Note, items listed in brackets will need to be filled.  If you have further question on how to use this code, please contact [[*user Lurkd]].
+
+> @@[[div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;"]]@@
+> 
+> @@[[div style="color: [TEXT COLOR, HEX#]; font-size: 8pt; background-color: [BACKGROUND COLOR HEX#]; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background: [BACKGROUND COLOR HEX#]; background:linear-gradient([BACKGROUND COLOR HEX#], [BACKGROUND SHADE HEX#]); text-align: left; padding: 2px 20px;"]]@@
+> 
+> [TEXT]
+> 
+> @@[[/div]]@@
+> 
+> @@[[div]]@@
+> @@[[image [IMAGE] width="75px" style="margin-right: 20px;"]]@@
+> @@[[/div]]@@
+> 
+> @@[[/div]]@@
+> 
+> @@[[div style="clear: right;"]]@@
+> @@[[/div]]@@
+> @@[[/code]]@@
+
+[[/tab]]
+
+[[tab Story Timeline]]
+
++ Story Timeline
+
+If you are wondering which order to read all these in, please refer to the following listed in chronological order:
+[[div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;"]]
+[[div style="color: #f5e9e9; font-size: 8pt; background-color: #009494; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background:#009494; background:linear-gradient(#00cccc, #009494); text-align: left; padding: 2px 20px;"]]
+I should really find some time to read through these again.
+
+And done!
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/knights-for-truth-hub/alex_4_tr.gif width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
++++ Canon Timeline
+
+* The Original AIAD series by [[*user LurkD]]
+ * [*http://scp-wiki.wikidot.com/alert-lockdown-initiated Part I: ALERT! LOCKDOWN INITIATED]
+ * [*http://www.scp-wiki.net/command-query-separation Part II: Command Query Separation]
+ * [*http://scp-wiki.wikidot.com/superencipherment Part III: Superencipherment]
+ * [*http://www.scp-wiki.net/clock-multiplier Part IV: Clock Multiplier]
+ * [*http://www.scp-wiki.net/null-terminating-string Part V: Null Terminating String]
+* [*http://www.scp-wiki.net/scp-2987 SCP-2987] by [[*user Doctor Cimmerian]]
+* [*http://www.scp-wiki.net/scp-2306 SCP-2306] by [[*user Jacob Conwell]]
+* [*http://www.scp-wiki.net/draft-proposal-for-programme-arduinosis-9001 Draft Proposal For Programme Arduinosis] by [[*user Roget]]
+* Hello World series by [[*user LurkD]]
+ * [*http://www.scp-wiki.net/hello-world Part I]
+ * [*http://www.scp-wiki.net/hello-world-part-ii Part II]
+ * [*http://www.scp-wiki.net/hello-world-part-ii Part III]
+ * [*http://www.scp-wiki.net/hello-world-part-iv Part IV]
+* [*http://www.scp-wiki.net/scp-2522 SCP-2522] by [[*user djkaktus]]
+* [*http://www.scp-wiki.net/basic-observations Basic Observations] by [[*user Sunnyclockwork]]
+
++++ MTF Kappa-10 Assignments Outside of Timeline:
+* [*http://www.scp-wiki.net/rogue-ai-nveo4-yvn3e-pn6ug 'Rogue AI' (NVEO4/YVN3E/PN6UG)] by [[*user Doctor Cimmerian]]
+* [*http://www.scp-wiki.net/come-back-kid Come Back Kid] by [[*user Doctor Cimmerian]]
+
+[[/tab]]
+
+[[tab In-Universe Timeline]]
++ In-Universe Timeline
+
+++ 1970
+* **1976:** SCP Foundation IT Department is tasked with creating dedicated automatic agents as the needs of the organization become more and more digital.
+* **1978:** IT creates PROJECT: ROSETTA (aka "8-Ball") for digital adaptive encryption and decryption, in an effort to replace the outdated Enigmagraphs[[footnote]] Large typewriter devices that string together text and antimemetic ciphers to encrypt written messages, allowing only the intended recipient to read it. [[/footnote]].
+++ 1980
+* **1985:** 8-Ball is upgraded to its final iteration.  Personnel become concerned that the utility program may have gained sentience, but are unable to confirm.
+* **1987:** PROJECT: CORINTHIAN (aka "Glacon") is proposed as a replacement for 8-Ball and is slotted for development under future work.
+* **1988:** [*http://www.scp-wiki.net/scp-079 SCP-079] is acquired by the Foundation.
+* **1989:** AIAD is founded as a branch division of the Foundation IT Department.  It is first tasked with reverse engineering [*http://www.scp-wiki.net/scp-079 SCP-079].  Several lines of code from SCP-079 were proposed to be [REDACTED].
+++ 1990
+* **1993:** AIAD releases Glacon for beta testing after a lengthy development as a Gen(II) AIC (Artificially Intelligent Conscript).  Glacon.aic featured highly functioning logic processes and self-constructing risk analysis model templates for its decision making.  8-Ball is officially classified as a Gen(1) despite being already decommissioned.
+* **1994:** AIAD finalizes Glacon and assigns him to the Site-17 server farm.
+* **1997:** After the marked success of Glacon, AIAD announces PROJECT: AQUINAS (aka "Grape"), which will run on the Glacon platform and utilize new features based on ongoing AIC research.
+* **1998:** Grape is released ahead of schedule as Gen(II+).  After initial tests, Grape was denied a Foundation assignment as a virtual agent.  Many superiors were not as forthcoming to the idea of increasingly "//cognizant//" virtual agents, calling them liabilities. 
+++ 2000
+
+[[div style="float: right; width: 100px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;"]]
+[[div style="color: #f5e9e9; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background:#933F65; background:linear-gradient(#933f65, #933F65); text-align: left; padding-top: 2px; padding-bottom: 2px; padding-right: 20px; padding-left: 20px;"]]
+[[span class="hover"]] [[span]] y2k [[/span]] 01111001 
+00110010 
+01101011[[/span]]
+[[/div]]
+[[div]]
+[[image http://scp-wiki.wdfiles.com/local--files/clock-multiplier/crom_turntr.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+* **2001:** With the delay and subsequent fizzle of the Gen(II+) launch, AIAD split into 2 development teams in order to either address the concerns[[footnote]] Which were seemingly technophobic in retrospect. [[/footnote]] of high functioning cognizant AICs and/or develop Gen(II) logic based systems into an advanced functioning/adaptive state.
+* **2005:** Gen(III) trial AICs were developed in conjunction, one was labeled PROJECT: EL-028-1125, later dubbed the "HatBot" by certain staff.
+* **2007**: After much trial and error testing, HatBot went into further development as a humanoid android to better understand the glaring flaws it was experiencing in its previous virtual environment.
+* **2007**: Now known as the "[*http://www.scp-wiki.net/the-hatbot-chronicles HatBot Incident]", the android attempted to harm several personnel and caused substantial damage to the AIAD labs and Site-19 in general.  HatBot is nowhere to be found post-incident.
+* **2008:** After a lengthy incident investigation against AIAD, everything regarding Gen(III) was buried 2 months later.  AIAD is downsized.
+* **2009:** With HatBot still MIA and little trace regarding his disappearance, the case is marked as unsolved and assigned lower priority.  Foundation investigators are pulled elsewhere.
+++ 2010
+* **2011:** AIAD began creating AICs again, only this time using no preexisting platforms or templates.  PROJECT: DEWEY (aka "Alexandra") would be the only Gen(IV) to be developed by AIAD.
+* **2012:** Alexandra showed promising results in testing and was released on Site-19 with little incident.  
+* **2013:** Alexandra and Glacon are hailed as the AIAD flagships for further AIC research.  Many proposals are made with regards to budgeting on further virtual agent development.  AIAD department is granted an expansion.
+* **2014:** Site-17 suffers a [*http://scp-wiki.wikidot.com/alert-lockdown-initiated critical meltdown] of the server farm.  89% of the on-site data, including Glacon, was lost.  Cause is unknown.
+* **2015:** With Alexandra managing both Site-19 and 17 as well as assisting in extrinsic field applications, AIAD begins beta-testing a stand-alone cellular/mobile AIC known as PROJECT: BELL (aka "Thorn").
+* **2016:** By special emergency order 8-Ball, Grape, and Thorn are all recommissioned on a [*http://www.scp-wiki.net/hello-world special assignment] under the temporary MTF designation Kappa-10 ("Skynet").
+* **2016:** MTF Kappa-10 apprehend the fugitive known as "HatBot".  The rogue AIC is detained under the SCP designation [*http://www.scp-wiki.net/scp-2522 SCP-2522] indefinitely.  MTF Kappa-10 is granted a conditional extension pending review.
+
+[[/tab]]
+
+[[tab Glossary]]
+
++ Glossary
+
+++++ .aic / AIC
+* The file extension ".aic" stands for "artificially intelligent conscript".  Almost all AIAD AICs have a .aic file extension
+
+++++ .scpl
+* The file extension ".scpl" is sometimes used for denoting SCP intranet pages.
+
+++++ .x3d
+* The file extension ".x3d" is sometimes used for creating virtual environments on an SCP Foundation computer.
+
+++++ Aggregated Layer
+* The Aggregated Layer is in charge of running the Maxwellist network, dealing with basic issues, monitoring the activities in the Baisc Layer, and preparing new construction and recruitment plans.
+
+++++ Avatar
+* An avatar is a visual representation of how one is seen in the virtual world.
+
+++++ Basic Layer
+* The Basic Layer is a place of fun and entertainment for young Maxwellists where the the majority of income and recruitment is generated.  To the upper layers, it is merely a front to hide themselves.
+
+++++ Cipher City
+* One of the many youth recruitment hubs within the Basic Layer of the Maxwellist network. 
+
+++++ Chipper
+* Basic Layer slang for young obnoxious initiates into Maxwellism who've recently received their first implant. 
+
+++++ Compilation Layer
+* The Compilation Layer is essentially a special task force taking direct orders from the Hexagon, the head of the Maxwellist Church.
+[[div style="float:right; width: 260px;"]]
+[[div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;"]]
+[[div style="color: #f5e9e9; font-size: 8pt; background-color: #009494; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background:#009494; background:linear-gradient(#00cccc, #009494); text-align: left; padding: 2px 20px;"]]
+So I guess if you were a broke Maxwellist, it'd be //CRYT//ical to earn some money?
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/knights-for-truth-hub/alex_smile_tr.gif width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+@@@@
+@@@@
+[[div style="float: right; width: 100px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;"]]
+[[div style="color: #f5e9e9; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background:#933F65; background:linear-gradient(#933f65, #933F65); text-align: left; padding-top: 2px; padding-bottom: 2px; padding-right: 20px; padding-left: 20px;"]]
+[[span class="hover"]] [[span]] boo [[/span]] 01100010
+01101111 
+01101111 [[/span]]
+[[/div]]
+[[div]]
+[[image http://scp-wiki.wdfiles.com/local--files/clock-multiplier/crom_turntr.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+@@@@
+@@@@
+[[div style="float:right; width: 240px; text-align: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;"]]
+[[div style="color: #f5e9e9; font-size: 8pt; background-color: #009494; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background:#009494; background:linear-gradient(#00cccc, #009494); text-align: left; padding: 2px 20px;"]]
+Oh hush!  That was comedy gold.
+[[/div]]
+[[div]]
+[[image http://scpsandbox2.wdfiles.com/local--files/knights-for-truth-hub/alex_pleased_tr.gif width="75px" style="margin-right: 20px;"]]
+[[/div]]
+[[/div]]
+[[/div]]
+++++ Cryt
+* Cryt is a crypto-currency used by Maxwellists residing in the Basic Layer.
+
+++++ Gen(#)
+* Through the history of the AIAD, there have been 5 major advances with regards to creating AICs, each designated as a generation.  These generations are listed as Gen(I) through Gen(V).
+
+++++ Grand I/O Temple
+* A large simulspace construct residing in the Basic Layer of the Maxwellist network where patrons can worship and upload prayers.
+
+++++ The Hexagon
+* The high command of church, consisting of six individuals, take the lead in linking the minds in the network together to simulate the existence of WAN.
+
+++++ Maxwellist Network
+* The tri-layer hierarchical network where members congregate, live, work, and worship online. 
+
+++++ Lodestar
+* A lodestar is a small simulspace program/device that can allow users to noclip through environments at high speeds to reach a destination.
+
+++++ Personality Drivers
+* These drivers are what make AIs more personable.  They allow traits such as empathy, curiosity, and intuition to develop.  Generally this makes them easier to interface with on a day-to-day basis.
+
+++++ Simulspace
+* Simulspace is where boundless virtual reality environments and objects can be created.  Often the resolution and physics advances beyond realistic/high-definition and into hyper-real making it difficult to differentiate.
+
+++++ Standard Principle
+* Taking a page from Asimov, a standard principle is a law hardwired into the AIs actions that cannot be broken by either choice or inaction.  It is one of the conditions that allows AICs to operate as freely as they do, though some could argue as to why they are worded with such vagueness. 
+
+++++ WAN
+* The fragmented deity worshiped by the MAxwellists. 
+
+++++ WANsong
+* WANsong is the 24/7 Maxwellist controlled news broadcast.
+
+
+[[/tab]]
+
+[[tab FAQs]]
+
++ FAQs
+
+++++ How do you make these face images?
+* The majority of the AIC avatars were all made in [*http://www.heromachine.com/heromachine-3-lab/ HeroMachine 3].
+
+++++ Can I use some of your images, LurkD?
+* No need to ask me.  They are all CC.  I don't even care about being credited all that much.
+
+++++ But I can't code ;~;
+* You can just copy/paste what you need.  Code is free.  But you don't //have// to use that format.  It's really **not** a requirement at all.
+
+++++ It's //not// a requirement?
+* Sure.  AIAD is known for this style, but it's not what it is all about.  Articles can be anything they need to be to tell the story.
+
+++++ Are their plans for a third series?
+* Never say never.
+[[div style="float: right; width: 100px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 10px; padding-right: 10px;"]]
+[[div style="color: #f5e9e9; font-size: 8pt; background-color: #933F65; font-family: Verdana, Arial, sans-serif; border-radius:30px /70px; background:#933F65; background:linear-gradient(#933f65, #933F65); text-align: left; padding-top: 2px; padding-bottom: 2px; padding-right: 20px; padding-left: 20px;"]]
+[[span class="hover"]] [[span]] ew [[/span]] 01100101
+01110111[[/span]]
+[[/div]]
+[[div]]
+[[image http://scp-wiki.wdfiles.com/local--files/clock-multiplier/crom_turntr.png width="75px" style="margin-left: 20px;"]]
+[[/div]]
+[[/div]]
+++++ So I had an idea where CROM visits 4chan--
+* Don't.
+
+++++ Ok.  So what can I write about?
+* Go bananas.  Write anything.  Just not that.
+
+++++ Can I add my own part in one of the series?
+* The two series are standalone pieces.  You can write //about// them, but not parts //of// them.
+
+++++ I had an idea for a new AIC
+* Great, just make sure their presence is both justifiable and fits within the AIAD setting.
+[[/tab]]
+
+[[/tabview]]
+
+[[/collapsible]]
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
