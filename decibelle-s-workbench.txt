@@ -1,81 +1,151 @@
 title:Decibelle's Workbench
-Modules brought to you by Trixie "Decibelle" Shimmer![[footnote]]Except for everything before the first line seperator. GreenWolf did those for me! I'm just modifying them somewhat.[[/footnote]]
-
-[[collapsible show="+ Explain some module formatting." hide="- Explain some module formatting." hideLocation="both"]]
-* (tag="v, [w]") or (tag="+x, -y") - Only display certain articles in modules by tag. Can have as little as one and as many as you need to be specific. To exclude, "-y" where y = tag, although I've found that you need to do "+x" where x = tag in order to have them work in tandem.
-* (rating="[>/<]x") - Display certain articles above or below a certain rating.
-* (created_at="[>/<]xxxx.xx") - Display certain articles before/after a certain date.
-[[/collapsible]]
-
-++ SCP Articles Sorted by Date
-[[module ListPages tags="scp, -mtf2016" created_at="2016.03" perPage="30" separate="no" order="created_at desc desc" prependLine="||~ GOI SCP ||~ Author ||~ Created ||"]]
-|| %%title_linked%% || %%created_by%% || %%created_at%% ||
+[[module CSS]]
+.content-panel .content-type-title > h3 {
+  margin: 0;
+}
+.content-panel .content-type-title h3 {
+  font-size: 120%;
+  font-weight: bold;
+  padding: 5px 20px;
+  background-color: #666;
+  color: #fff;
+  border-radius: 8px 8px 0 0;
+  box-shadow: inset 0 1px 1px rgba(255,255,255,.8),
+    inset 0 15px 1px rgba(255,255,255,.2),
+    inset 0 15px 10px rgba(255,255,255,.2);
+}
+.content-panel .content-type-options{
+  padding: 0 20px;
+}
+.content-panel .content-type-options ul {
+  padding-left: 2em;
+  margin-left: 0;
+}
 [[/module]]
 
-++ Tales Sorted by Date
-[[module ListPages tags="tale, -mtf2016" created_at="2016.03" perPage="30" separate="no" order="created_at desc desc" prependLine="||~ Tale ||~ Author ||~ Created ||"]]
-|| %%title_linked%% || %%created_by%% || %%created_at%% ||
-[[/module]]
+[[div class="content-panel standalone series"]]
+이 페이지는 다른 SCP 공식 위키를 번역하거나 관련 사항을 올리는 곳입니다. 자신있는 언어가 있다면 많은 추가 부탁드립니다!
+[[/div]]
 
-++ GOI Format Articles Sorted by Date
-[[module ListPages tags="goi-format, -mtf2016" created_at="2016.03" separate="no" order="created_at desc desc" prependLine="||~ GOI Format ||~ Author ||~ Created ||"]]
-|| %%title_linked%% || %%created_by%% || %%created_at%% ||
-[[/module]]
+[[div class="content-panel left-column standalone"]]
+[[div class="content-type-title"]]
++++ SCP-EN :: The Foundation [[image United-Kingdom.png  height="10px"]] [[image USA.png height="10px"]]
+[[/div]]
+[[div class="content-type-options"]]
+[[=image CC-by-sa.png width="150px"]]
+* [http://www.scp-wiki.net/scp-series SCP Series 1] · [http://www.scp-wiki.net/scp-series-2 Series 2] · [http://www.scp-wiki.net/scp-series-3 Series 3]
+* [http://www.scp-wiki.net/foundation-tales Foundation Tales]
+* [http://www.scp-wiki.net/canon-hub Canon Hub]
+* [http://www.scp-wiki.net/groups-of-interest Groups of Interest]
+* [[[copyright:credits-en|Copyright Notice + Credits]]]
+[[/div]]
+[[/div]]
 
-++ Author Pages Sorted by Date
-[[module ListPages tags="author" created_at="2016.03" separate="no" order="created_at desc desc" prependLine="||~ Page ||~ Author ||~ Created ||"]]
-|| %%title_linked%% || %%created_by%% || %%created_at%% ||
-[[/module]]
+[[div class="content-panel right-column standalone"]]
+[[div class="content-type-title"]]
++++ SCP-KO :: 재단
+[[/div]]
+[[div class="content-type-options"]]
+[[=image CC-by-sa.png width="150px"]]
+* [[[scp-series-ko|SCP-KO Series]]]
+* [[[foundation-tales-ko|KO Foundation Tales]]]
+* [[[canon-hub-ko|KO Canons]]]
+* [[[groups-of-interest-ko|KO Groups of Interest]]]
+* -
+[[/div]]
+[[/div]]
+~~~~
+[[div class="content-panel left-column standalone"]]
+[[div class="content-type-title"]]
++++ SCP-RU :: Фонда [[image Russia.png height="10px"]]
+[[/div]]
+[[div class="content-type-options"]]
+[[=image CC-by-nc-sa.png width="150px"]]
+* [[[scp-series-ru|SCP-RU Series]]]
+* [[[foundation-tales-ru|RU Foundation Tales]]]
+* [[[copyright:credits-ru|RU Copyright Notice + Credits]]]
+[[/div]]
+[[/div]]
 
-++ Hubs Sorted by Date
-[[module ListPages tags="hub" created_at="2016.03" separate="no" order="created_at desc desc" prependLine="||~ Page ||~ Author ||~ Created ||"]]
-|| %%title_linked%% || %%created_by%% || %%created_at%% ||
-[[/module]]
+[[div class="content-panel right-column standalone"]]
+[[div class="content-type-title"]]
++++ SCP-CN :: 基金会 [[image PRoC.png height="10px"]] [[image RoC.png height="10px"]] [[image Hongkong.png height="10px"]]
+[[/div]]
+[[div class="content-type-options"]]
+[[=image CC-by-nc-sa.png width="150px"]]
+* [[[scp-series-cn|SCP-CN Series]]]
+* [[[foundation-tales-cn|CN Foundation Tales]]]
+* [[[copyright:credits-cn|CN Copyright Notice + Credits]]]
+[[/div]]
+[[/div]]
+~~~~
+[[div class="content-panel left-column standalone"]]
+[[div class="content-type-title"]]
++++ SCP-FR :: La Fondation [[image France.png height="10px"]] [[image Quebec.png height="10px"]] [[image Francophonie.png height="10px"]]
+[[/div]]
+[[div class="content-type-options"]]
+[[=image CC-by-sa.png width="150px"]]
+* [[[scp-series-fr|SCP-FR Series]]]
+* [[[foundation-tales-fr|FR Foundation Tales]]]
+* [[[copyright:credits-fr|FR Copyright Notice + Credits]]]
+[[/div]]
+[[/div]]
 
-------
-------
+[[div class="content-panel right-column standalone"]]
+[[div class="content-type-title"]]
++++ SCP-PL :: Fundacji [[image Indonesia.png height="10px"]]
+[[/div]]
+[[div class="content-type-options"]]
+[[=image CC-by-sa.png width="150px"]]
+* [[[scp-series-pl|SCP-PL Series]]]
+* [[[foundation-tales-pl|PL Foundation Tales]]]
+* [[[copyright:credits-pl|FR Copyright Notice + Credits]]]
+[[/div]]
+[[/div]]
+~~~~
+[[div class="content-panel left-column standalone"]]
+[[div class="content-type-title"]]
++++ SCP-ES :: La Fundación [[image España.png height="10px"]] [[image Mexico.png height="10px"]] [[image Argentina.png height="10px"]]
+[[/div]]
+[[div class="content-type-options"]]
+[[=image CC-by-sa.png width="150px"]]
+* [[[scp-series-es|SCP-ES Series]]]
+* [[[foundation-tales-es|ES Foundation Tales]]]
+* [[[copyright:credits-es|ES Copyright Notice + Credits]]]
+[[/div]]
+[[/div]]
 
-@@@@
-@@@@
+[[div class="content-panel right-column standalone"]]
+[[div class="content-type-title"]]
++++ SCP-TH :: สถาบัน [[image Thailand.png height="10px"]]
+[[/div]]
+[[div class="content-type-options"]]
+[[=image CC-by-sa.png width="150px"]]
+* [[[scp-series-th|SCP-TH Series]]]
+* [[[foundation-tales-th|TH Foundation Tales]]]
+* [[[copyright:credits-th|TH Copyright Notice + Credits]]]
+[[/div]]
+[[/div]]
+~~~~
+[[div class="content-panel left-column standalone"]]
+[[div class="content-type-title"]]
++++ SCP-JP :: 財団 [[image Japan.png height="10px"]]
+[[/div]]
+[[div class="content-type-options"]]
+[[=image CC-by-sa.png width="150px"]]
+* [[[scp-series-jp|SCP-JP Series]]]
+* [[[foundation-tales-jp|JP Foundation Tales]]]
+* [[[groups-of-interest-jp|JP Groups of Interest]]]
+* [[[copyright:credits-jp|JP Copyright Notice + Credits]]]
+[[/div]]
+[[/div]]
 
-[[collapsible show="+ Top Rated SCPs & Tales of 2016!" hide="- Top Rated SCPs & Tales of 2016!" hideLocation="both"]]
-[[module ListPages tag="scp" order="rating desc" separate="false" limit="50" perPage="25" created_at=">2015.12"]]
-%%title_linked%% (rating: %%rating%%, comments: %%comments%%)
-[[/module]]
-
-[[module ListPages tag="tale" order="rating desc" separate="false" limit="50" perPage="25" created_at=">2015.12"]]
-%%title_linked%% (rating: %%rating%%, comments: %%comments%%)
-[[/module]]
-[[/collapsible]]
-
-------
-
-[[collapsible show="+ Top Rated Series 3 SCPs!" hide="- Top Rated Series 3 SCPs!" hideLocation="both"]]
-[[module ListPages tag="-joke, +scp" rating=">74" order="rating desc" separate="false" limit="100" perPage="25" name="SCP-2*" created_at=">2013.09"]]
-%%title_linked%% (rating: %%rating%%, comments: %%comments%%)
-[[/module]]
-[[/collapsible]]
-
-------
-
-[[collapsible show="+ Top Commented SCPs!" hide="- Top Commented SCPs!" hideLocation="both"]]
-[[module ListPages tag="scp" order="comments desc" separate="false" limit="50" perPage="25"]]
-%%title_linked%% (comments: %%comments%%, rating: %%rating%%, date: %%date%%)
-[[/module]]
-[[/collapsible]]
-
-------
-
-[[collapsible show="+ Top Articles with Revisions!" hide="- Top Articles with Revisions!" hideLocation="both"]]
-[[module ListPages tag="scp, tale, -hub" order="revisions desc" separate="false" limit="50" perPage="25"]]
-%%title_linked%% (revisions: %%revisions%%, rating: %%rating%%, date: %%date%%)
-[[/module]]
-[[/collapsible]]
-
-------
-
-[[collapsible show="+ Tales for Review!" hide="- Tales for Review!" hideLocation="both"]]
-[[module ListPages tag="tale" rating="<20" order="rating desc" separate="false" limit="200" perPage="25"]]
-%%title_linked%% (rating: %%rating%%, comments: %%comments%%)
-[[/module]]
-[[/collapsible]]
+~~~~
+[[div class="content-panel standalone"]]
+[[div class="content-type-title"]]
++++ 부록
+[[/div]]
+[[div class="content-type-options"]]
+* [[[copyright:international|국제 저작권]]]
+[[/div]]
+[[/div]]
