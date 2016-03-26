@@ -1,29 +1,149 @@
 title:Decibelle's Workbench
 parent:decibelle
-[[tabview]]
-[[tab Articles and Tales]]
-[[=]]
-[[image scps.png height="50px"]]
-[[/=]]
-[[module ListPages created_by="djkaktus" separate="no" tags="scp, joke" order="name desc desc" perPage="250" prependLine="||~ SCP ||"]]
-|| %%title_linked%% ||
+[[module CSS]]
+.content-panel .content-type-title > h3 {
+  margin: 0;
+}
+.content-panel .content-type-title h3 {
+  font-size: 120%;
+  font-weight: bold;
+  padding: 5px 20px;
+  background-color: #666;
+  color: #fff;
+  border-radius: 8px 8px 0 0;
+  box-shadow: inset 0 1px 1px rgba(255,255,255,.8),
+    inset 0 15px 1px rgba(255,255,255,.2),
+    inset 0 15px 10px rgba(255,255,255,.2);
+}
+.content-panel .content-type-options{
+  padding: 0 20px;
+}
+.content-panel .content-type-options ul {
+  padding-left: 2em;
+  margin-left: 0;
+}
 [[/module]]
-[[=]]
-[[image tales.png height="50px"]]
-[[/=]]
-[[module ListPages created_by="djkaktus" separate="no" tags="tale, -hub" order=" created_at" prependLine="||~ Tale ||"]]
-|| %%title_linked%% ||
-[[/module]]
-[[=]]
-[[image goi.png height="50px"]]
-[[/=]]
-[[module ListPages created_by="djkaktus" separate="no" tags="goi-format" order=" created_at" prependLine="||~ Tale ||"]]
-|| %%title_linked%% ||
-[[/module]]
-[[=]]
-[[image guides.png height="50px"]]
-[[/=]]
-[[module ListPages created_by="djkaktus" separate="no" tags="guide" order="rating desc" prependLine="||~ Tale ||"]]
-|| %%title_linked%% ||
-[[/module]]
-[[/tab]]
+
+[[div class="content-panel standalone series"]]
+The SCP International hub contains lists to all SCP articles and tales from all the different branches. If you've translated something from your site, feel free to add it onto your hub!
+[[/div]]
+
+[[div class="content-panel left-column standalone"]]
+[[div class="content-type-title"]]
++++ SCP-EN :: The Foundation [[image United-Kingdom.png  height="10px"]] [[image USA.png height="10px"]] [[image Auzi.png height="10px"]]
+[[/div]]
+[[div class="content-type-options"]]
+[[=image CC-by-sa.png width="150px"]]
+* [[[scp-series|SCP Series 1]]] · [[[scp-series-2|Series 2]]] · [[[scp-series-3|Series 3]]]
+* [[[Foundation Tales]]]
+* [[[Canon Hub]]]
+* [[[Groups of Interest]]]
+* [http://scpsandbox2.wikidot.com/decibelle-v#en Copyright Notice + Credits][[footnote]][[[copyright:credits-en|Copyright Notice + Credits]]][[/footnote]]
+[[/div]]
+[[/div]]
+
+[[div class="content-panel right-column standalone"]]
+[[div class="content-type-title"]]
++++ SCP-RU :: Фонд [[image Russia.png height="10px"]]
+[[/div]]
+[[div class="content-type-options"]]
+[[=image CC-by-nc-sa.png width="150px"]]
+* [[[scp-series-ru|SCP-RU Series]]]
+* [[[foundation-tales-ru|RU Foundation Tales]]]
+* [http://scpsandbox2.wikidot.com/decibelle-v#ru Copyright Notice + Credits][[footnote]][[[copyright:credits-ru|Copyright Notice + Credits]]][[/footnote]]
+[[/div]]
+[[/div]]
+~~~~
+[[div class="content-panel left-column standalone"]]
+[[div class="content-type-title"]]
++++ SCP-KO :: 재단
+[[/div]]
+[[div class="content-type-options"]]
+[[=image CC-by-sa.png width="150px"]]
+* [[[scp-series-ko|SCP-KO Series]]]
+* [[[foundation-tales-ko|KO Foundation Tales]]]
+* [http://scpsandbox2.wikidot.com/decibelle-v#ko Copyright Notice + Credits][[footnote]][[[copyright:credits-ko|Copyright Notice + Credits]]][[/footnote]]
+[[/div]]
+[[/div]]
+
+[[div class="content-panel right-column standalone"]]
+[[div class="content-type-title"]]
++++ SCP-CN :: 基金会 [[image PRoC.png height="10px"]] [[image RoC.png height="10px"]] [[image Hongkong.png height="10px"]]
+[[/div]]
+[[div class="content-type-options"]]
+[[=image CC-by-sa.png width="150px"]]
+* [[[scp-series-cn|SCP-CN Series]]]
+* [[[foundation-tales-cn|CN Foundation Tales]]]
+* [[[copyright:credits-cn|CN Copyright Notice + Credits]]]
+[[/div]]
+[[/div]]
+~~~~
+[[div class="content-panel left-column standalone"]]
+[[div class="content-type-title"]]
++++ SCP-FR :: La Fondation [[image France.png height="10px"]] [[image Quebec.png height="10px"]] [[image Francophonie.png height="10px"]]
+[[/div]]
+[[div class="content-type-options"]]
+[[=image CC-by-sa.png width="150px"]]
+* [[[scp-series-fr|SCP-FR Series]]]
+* [[[foundation-tales-fr|FR Foundation Tales]]]
+* [[[copyright:credits-fr|FR Copyright Notice + Credits]]]
+[[/div]]
+[[/div]]
+
+[[div class="content-panel right-column standalone"]]
+[[div class="content-type-title"]]
++++ SCP-PL :: Fundacji [[image Indonesia.png height="10px"]]
+[[/div]]
+[[div class="content-type-options"]]
+[[=image CC-by-sa.png width="150px"]]
+* [[[scp-series-pl|SCP-PL Series]]]
+* [[[foundation-tales-pl|PL Foundation Tales]]]
+* [[[copyright:credits-pl|FR Copyright Notice + Credits]]]
+[[/div]]
+[[/div]]
+~~~~
+[[div class="content-panel left-column standalone"]]
+[[div class="content-type-title"]]
++++ SCP-ES :: La Fundación [[image España.png height="10px"]] [[image Mexico.png height="10px"]] [[image Argentina.png height="10px"]]
+[[/div]]
+[[div class="content-type-options"]]
+[[=image CC-by-sa.png width="150px"]]
+* [[[scp-series-es|SCP-ES Series]]]
+* [[[foundation-tales-es|ES Foundation Tales]]]
+* [[[copyright:credits-es|ES Copyright Notice + Credits]]]
+[[/div]]
+[[/div]]
+
+[[div class="content-panel right-column standalone"]]
+[[div class="content-type-title"]]
++++ SCP-TH :: สถาบัน [[image Thailand.png height="10px"]]
+[[/div]]
+[[div class="content-type-options"]]
+[[=image CC-by-sa.png width="150px"]]
+* [[[scp-series-th|SCP-TH Series]]]
+* [[[foundation-tales-th|TH Foundation Tales]]]
+* [[[copyright:credits-th|TH Copyright Notice + Credits]]]
+[[/div]]
+[[/div]]
+~~~~
+[[div class="content-panel left-column standalone"]]
+[[div class="content-type-title"]]
++++ SCP-JP :: 財団 [[image Japan.png height="10px"]]
+[[/div]]
+[[div class="content-type-options"]]
+[[=image CC-by-sa.png width="150px"]]
+* [[[scp-series-jp|SCP-JP Series]]]
+* [[[foundation-tales-jp|JP Foundation Tales]]]
+* [[[copyright:credits-jp|JP Copyright Notice + Credits]]]
+[[/div]]
+[[/div]]
+
+~~~~
+[[div class="content-panel standalone"]]
+[[div class="content-type-title"]]
++++ Addendum
+[[/div]]
+[[div class="content-type-options"]]
+* [[[copyright:international|Copyrights]]]
+[[/div]]
+[[/div]]
