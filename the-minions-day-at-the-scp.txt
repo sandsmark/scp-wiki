@@ -1,0 +1,368 @@
+title:The Minions© day at the scp
+[[>]]
+[[module Rate]]
+[[/>]]
+[[html]]
+
+<!--TUTORIAL: Hi, and welcome to the official SCP CYOA code tutorial! To find out how to modify the code to suit your Choose Your Own Adventure story, look for any lines that say TUTORIAL at the beginning in this source code.-->
+
+<!--WARNING: Don't edit anything unless you're told to, or the code might break.-->
+<html lang="en"> <head> <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maxium-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+<style type="text/css">
+@import url("http://scpsandbox2.wikidot.com/local--files/adventure/adventure.css")
+</style>
+<audio autoplay loop id="bgm">
+
+<!--TUTORIAL: Change the file location BELOW to change the starting Background Music.-->
+<!--If you want to start with BGM off, or no BGM, replace the web address with a space; in other words, just put " ".-->
+<source src="http://scpsandbox2.wdfiles.com/local--files/minions/minions.mp3" type="audio/mpeg">
+
+
+</audio>
+
+<audio autoplay id="effect">
+<source src=" " type="audio/mpeg">
+</audio>
+
+
+<!--TUTORIAL: If you have no background music, all the text between here...-->
+
+<div align="right">
+<button onclick="enableMute()" type="button">Mute</button>
+</div>
+
+<!--TUTORIAL: ...and here can be removed to get rid of the Mute button.-->
+
+<SCRIPT LANGUAGE = "JavaScript">
+
+var BGM2 = document.getElementById("bgm");
+var effect2 = document.getElementById("effect");
+function enableMute() { 
+    BGM2.muted = !BGM2.muted;
+    effect2.muted = BGM2.muted;
+}
+
+// TUTORIAL: PAGES is the variable that's going to hold your story!
+// Each Page of the story is separated by brackets.
+// As you create more pages, you should number them to keep track of what you're doing.
+// This is the first page of the story, Page 0.
+var PAGES = [{ //Page 0
+
+// TUTORIAL: The image below is the one that will be loaded at the top of Page 0.
+    'pageimage': 'http://i.imgur.com/2A9pXVC.png',
+
+// TUTORIAL: The text below is the text that will appear on Page 0.
+// Note that whenever we want a ' symbol to appear, we have to type \' instead.
+// If you want to go to the next line, add the symbol <br>.
+// If you don't want to worry about getting the formatting right, then type up each page (and choice) in an external word processor, then run that text through the following web tool:
+// http://www.htmlescape.net/htmlescape_tool.html
+// Then, the output of that should be run through:
+// http://www.htmlescape.net/stringescape_tool.html
+// After this, paste that output between the ' quotes and you're set to go!
+
+    'text': 'hi and weclom 2 The Minions© day at the scp, my name is Randomini and i wrot it. in this story, YOU r a minion!!! <i>hepl ur minion frends 2 get thru the day w/out dyin!!!</i> u get points if all ur minions live :D .</b> so to start please enter ur name <br> <br> <div align="center"> wat do??? </div>',
+
+// TUTORIAL: Here are the choices for Page 0.
+        'choices': [{
+
+// TUTORIAL: There are two things we need for each choice; the text and the target.
+// The text is what it says on that option.
+// The target is the page we will go to when it is clicked.
+// For this option, the text says 'Walk.'
+// When this option is chosen, we will move to Page 1.
+        'text': '/join #site19',
+            'target': 1
+    }, {
+
+// TUTORIAL: For this option, the text says 'Drive.'
+// When this option is chosen, we will move to Page 2.
+        'text': '/join #site17',
+            'target': 2
+    }]
+
+
+// TUTORIAL: This is the beginning of Page 1. Note the format is much the same as above, but we only have the one choice, which returns us to Page 0 as the player has died.
+}, { //Page 1
+    'pageimage': 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmawZXAItTXZZC2kS0fUrrQi4bfqWUOALwB5_5nNFLZfpvlFkq',
+    'text': 'site19 holds the msot DAGNEROUSSS SPCs so if u make mistake, u will be DED!!! but u r not just dead yet, this img is only a sneek peek ;D <b>\x3Cb\x3E LIFES COUNT: ALIVE \x3Cb\x3E<b>',
+        'choices': [{
+        'text': 'keep goign!!!',
+            'target': 3
+    }]
+
+// TUTORIAL: This is the beginning of Page 2. As the player has lived, they will go to Page 5, which takes them to Site 19.
+}, { //Page 2
+    'pageimage': 'http://pixel.nymag.com/imgs/daily/vulture/2015/07/10/10-minions-meme-011.w529.h352.jpg',
+    'text': 'nah u go to site19',
+        'choices': [{
+        'text': 'i do not want to writ 2 stories so u go to site19 okay',
+            'target': 3
+    }]
+
+
+// TUTORIAL: This is the beginning of Page 3. Again, the character died, so they return to Page 0.
+}, { //Page 3
+    'pageimage': 'https://i.imgur.com/LW5JLI6.jpg',
+    'text': 'you get to site19!!! which of your many The Minions© day at the scp friends do u tlak 2 first???',
+
+        'choices': [{
+        'text': 'tlak 2 clef',
+            'target': 4
+    }, {
+        'text': 'tlak 2 SCP-173',
+            'target': 5
+    }, {
+        'text': 'tlak 2 SCP-682',
+            'target': 6
+    }, {
+        'text': 'tlak 2 rumetzen',
+            'target': 7
+    }, {
+        'text': 'tlak 2 ursefl',
+            'target': 8
+    }
+]
+
+
+// TUTORIAL: This is the beginning of Page 4. Again, the player has lived, so they will go to Page 5.
+}, { //Page 4
+    'pageimage': 'http://i.imgur.com/a7L9KIl.png',
+    'text': 'u seduce dr. clef ;D <b>\x3Cb\x3E NUMBER OF SEXY TIMES COUNT: CLEF \x3Cb\x3E<b>',
+        'choices': [{
+        'text': 'undo???',
+            'target': 3
+    }]
+
+// TUTORIAL: This is the beginning of Page 5. The player has made the right choice, and safely arrived at Site 19. Let's give them an applause when they get here.
+}, { //Page 5
+    'pageimage': 'http://scp-wiki.wdfiles.com/local--files/scp-173/SCP-173.jpg',
+
+// If you want a page to play a sound effect when you arrive on a page, put the address to that effect the same way as below.
+    'effect': 'http://scpsandbox2.wdfiles.com/local--files/adventure/applause.mp3',
+
+    'text': 'uhhhhh 173 is the msot deafly SCP in the wrold u FUKCIGN MORON!!! u die!!! \n  Creator Information\n\nThe image used in the SCP-173 article is the art piece Untitled 2004 by Izumi Kato. The photograph was taken by Keisuke Yamamoto. All rights are reserved by the artists.\n\nA note of caution: SCP-173 is a secondary use of the image of the art piece Untitled 2004, which was created by Izumi Kato. The concept of SCP-173 does not have any relationship with the artists original concept of Untitled 2004.\n\nThe sculpture, its likeness, and the photograph have not been released under any Creative Commons license. Only the text of this article is released under Creative Commons. This sculpture and its likeness may not be used for commercial purposes under any circumstances. Izumi Kato has graciously chosen to allow the use of the image of Untitled 2004 by the SCP Foundation and its fanbase for non-commercial purposes only.',
+        'choices': [{
+        'text': 'retstart.',
+            'target': 0
+    }]
+
+// TUTORIAL: This is the beginning of Page 6. Again, the player chose poorly.
+}, { //Page 6
+    'pageimage': 'http://i.imgur.com/ppaDnz5.png',
+    'text': 'scp-682 likes minions and plays with u for a bit!!! thgen he tlels u his secrit past...',
+        'choices': [{
+        'text': 'his secrit past???',
+            'target': 9
+    }]
+
+// TUTORIAL: This is the beginning of Page 7; this is simply a large block of nonsense text.
+// When you have this much text on one page, you should run it through the webtools as discussed above.
+}, { //Page 7
+    'pageimage': 'https://s-media-cache-ak0.pinimg.com/736x/d0/d2/b0/d0d2b06dd0c1cfae303c3bb1ea9bd944.jpg',
+    'text': 'wowwee whatta huge nerd!',
+    'choices': [{
+        'text': 'this is an in joke if you do not find if funny plz do not dwonvot :L',
+        'target': 3
+    }]
+
+// TUTORIAL: This is the beginning of Page 8. The player wants to change the background music.
+}, { //Page 8
+    'pageimage': 'http://media.indiatimes.in/media/photogallery/2015/Jun/1868974_1437685552.jpg',
+    'text': 'hey there is no need to tlak to ursefl buddi, u have friedns n we r here 4 u. please tlak to us or a medical professsional, we are just wanting u to get out of this okay ;_; thnak u',
+    'choices': [{
+        'text': 'https:\x2F\x2Fwww.beyondblue.org.au\x2Fthe-facts\x2Fsuicide',
+        'target': 3
+    }]
+
+// TUTORIAL: This is the beginning of Page 9. Again, we change the BGM.
+}, { //Page 9
+    'pageimage': 'http://quotesnhumor.com/wp-content/uploads/2014/12/Top-30-Best-Funny-Minions-Quotes-and-Memes.jpg',
+    'text': 'scp-682 strats 2 tell u a story about like the wadnerers library but it sounds really fucking dumb and unpobular.',
+    'choices': [{
+        'text': 'wow that was bporing but ok lets keep goign!!!',
+        'target': 10
+    }]
+
+// TUTORIAL: This is the beginning of Page 10. The player wanted to remove the BGM.
+// To do this, we simply assign an empty value to the BGM.
+}, { //Page 10
+    'pageimage': 'http://s1.dmcdn.net/Gjnnj/280x157-OI1.jpg',
+    'text': 'uh oh spc-682 is agnry u dindt give a fcuck about the wadnerers library!!! looks like ur gonna have 2 run away...',
+    'choices': [{
+        'text': '...at least 4 NOW...',
+        'target': 11
+    }]
+
+}, { //Page 11
+    'pageimage': 'http://i.ytimg.com/vi/cCSz4ssUvcU/hqdefault.jpg',
+    'text': 'WAIT!!! when u stop runnign away, u realise... u DROPT YOUR BANANAB! it was your FAVOURITE bananab in the WROLD, and now it is in the grippy-grips of the most antiheroic SCP in the wrold!!! looks like u might need to aks for some... HEPL...',
+
+    'choices': [{
+        'text': 'aks clef for some... HEPL...',
+            'target': 12
+    }, {
+        'text': 'aks 173 for some... HEPL...',
+            'target': 5
+    }, {
+        'text': 'aks able for some... HEPL...',
+            'target': 13
+    }, {
+        'text': 'aks the O5s for some... HEPL...',
+            'target': 14
+    }, {
+        'text': 'well, YHWH hepls those who hepl themsefls...',
+            'target': 15
+    }
+]
+
+}, { //Page 12 - clef
+    'pageimage': 'http://i.imgur.com/qb9AIHK.png',
+    'text': 'clef is exhausted from all the sex you did before unless you didnt do that option before in which case he is nowhere to be found for SUM reason...',
+    'choices': [{
+        'text': 'clef is only aroudn 4 sexy times... TYpical MAN!!!',
+        'target': 11
+    }]
+
+}, { //Page 13 - able
+    'pageimage': 'http://pre13.deviantart.net/ae87/th/pre/i/2014/031/3/d/scp_076__able__by_traicere-d74hode.png',
+    'text': 'able does not like minions, able only likes SCPs... if only there was some way to turn into a recognised SCP of your very own... who would u have to speak to??? (hint: zero five) also image is from http:\x2F\x2Ftraicere.deviantart.com\x2Fart\x2FSCP-076-Able-430806434 if u give a shit',
+    'choices': [{
+        'text': 'come back when u r an scp!',
+        'target': 11
+    }]
+
+}, { //Page 14 - o5s
+    'pageimage': 'http://weknowmemes.com/wp-content/uploads/2013/07/minions-in-black.jpg',
+    'text': 'the o5s are minions fans and let you into the Foundation as your own SCPs! now that u have an SCP classification (SCP-MINION) u might have a CHANCE...',
+    'choices': [{
+        'text': 'but frist u must make other SCP friedns!!!',
+        'target': 16
+    }]
+
+}, { //Page 15 - YHWH
+    'pageimage': 'http://i3.kym-cdn.com/photos/images/original/000/991/616/f3a.png',
+    'text': 'u pray to YHWH and jehovah but neither listens... maybe u should try and do a different thign because god isnt real nubmnuts!!! also sorry if you picked this the second time you will get sent back to the first time because its hard to do this sorry',
+    'choices': [{
+        'text': 'go read the god delusion and learn the trueth, u illiterate moran!',
+        'target': 11
+    }]
+
+}, { //Page 16 - friends
+    'pageimage': 'http://i.imgur.com/HSe9K0Y.png',
+    'text': 'u are an SCP now, so u can aks some other SCPs to hepl u!!! (picture from http://thefoggygolem.tumblr.com/post/123252018004/july-4th-2015-freedom-rings-again-as-the-war-on)',
+    'choices': [{
+        'text': 'aks 173 for some... HEPL...',
+            'target': 5
+    }, {
+        'text': 'aks able for some... HEPL...',
+            'target': 17
+    }, {
+        'text': 'aks 055 for some... HEPL...',
+            'target': 18
+    }, {
+        'text': 'aks The hanged King for some... HEPL...',
+            'target': 19
+    }, {
+        'text': 'aks mr redd for some... HEPL...',
+            'target': 20
+    }, {
+        'text': 'aks SCP-____-J for some... HEPL...',
+            'target': 21
+    }, {
+        'text': 'well, 343 hepls those who hepl themsefls...',
+            'target': 15
+    }
+]
+
+}, { //Page 17 - able
+    'pageimage': 'http://i.imgur.com/P7i4RV4.png',
+    'text': 'you aks able if he will hepl u kill SCP682 once and for all!!! able says \" I would be happy to try and kill such a respectable oponent as SCP-682: Hard To Kill Lizard. come up here and sit on my shoudler, were friedns now :)\" so you sit on ables shoudler as he marches bravely up to SCP-682... ADN ur missign bananab!!!',
+    'choices': [{
+        'text': 'cotninue...',
+        'target': 22
+    }]
+
+}, { //Page 18 - 055
+    'pageimage': 'https://s-media-cache-ak0.pinimg.com/736x/4f/10/d4/4f10d4adc3d78e52a2bd7240c5532f18.jpg',
+    'text': 'i have never heard of that SCP!!!',
+    'choices': [{
+        'text': 'just kidding, go read SCP-055 if you do not understadn the joke :)',
+        'target': 16
+    }]
+
+}, { //Page 19 - hanged king
+    'pageimage': 'http://www.officialpsds.com/images/thumbs/Pyramid-Head-psd45879.png',
+    'text': 'u aks the hanged king for hepl against 682, and he says yes! the hanged king goes and slices at 682 but it does not do anything. the hanged king is just not quite strong enough to kill 682, so you will need to pick an scp to help you that is strong enough to kill 682, if you watn to finish this game... but which scp is strogner than 682??? (Tips And Tricks Section: do not pick 173 he will always kill you)',
+    'choices': [{
+        'text': 'go back and aks someone esle!',
+        'target': 16
+    }]
+
+}, { //Page 20 - mr redd
+    'pageimage': 'https://pbs.twimg.com/profile_images/437130581542187008/LeNIlDqU_400x400.jpeg',
+    'text': 'u are only a SCP not a Mister Collector - though if you watned u coulkld probably be a MINION collector ;D either way wrong choice',
+    'choices': [{
+        'text': 'hes prettty cool though, nice choice even if it was worng ;D',
+        'target': 16
+    }]
+
+}, { //Page 21 - SCP-____-J
+    'pageimage': 'http://www.minion143.com/wp-content/uploads/2015/05/8f9cf3bf0783a614887aef5ee0662716.jpg',
+    'text': 'ill fill this in later (not really though, its a joke ;D)',
+    'choices': [{
+        'text': 'if u havent done it go read SCP-____-J its one of the best!',
+        'target': 16
+    }]
+
+
+}, { //Page 22 - able fights 682
+    'pageimage': 'http://i.imgur.com/qJKIesk.png',
+    'text': 'able walks up to 682 and raises his swrod but then 682 sayas \" wait what have i done???\" adn able says \"well SCP-MINION is saying yous tole his bananab!\" then 682 says \"well i only did it because i had no bananbs of my OWN to eat...\"',
+    'choices': [{
+        'text': 'u start to feel a little guitly...',
+        'target': 23
+    }]
+
+}, { //Page 23 - bananabs regrets
+    'pageimage': 'http://i.imgur.com/obi6URJ.png',
+    'text': 'mute this page go to https://www.youtube.com/watch?v=HDCUnLM6UUc play that then come back and unmute when this page is done \n \u201cThere are people in the world so hungry, that God cannot appear to them except in the form of bread.\u201d\n~ Mahatma Gandhi (Religious guy)\n\n\"It is said that desire is a product of the will, but the converse is in fact true: will is a product of desire.\"\n~ Denis Diderot (1713-1784) French philosopher. \n\n\"It belongs to the imperfection of everything human that man can only attain his desire by passing through its opposite.\"\n~ Soren Kierkegaard (1813-1855) Danish philosopher and writer. \n\nu see that ur thirst 4 bananabs was fuelign you... desire leads to hunger... hunger leads to fear... fear leads to suffering, of your gfrinds... and you did all this for just ONE bananab??? maybe u were on the wrong side of... HISTORY this time...\n\n\"The fewer our wants the more we resemble the Gods.\"\n~ Socrates (BC 469-BC 399) Greek philosopher of Athens ',
+    'choices': [{
+        'text': 'I am become death, destroyer of worlds. None come to the father except through me.',
+        'target': 24
+    }]
+
+}, { //Page 24 - happy end
+    'pageimage': 'http://i.imgur.com/vVM0TKd.png',
+    'text': 'so instead you share your bananabs with your friends!!! HAPPY END',
+    'choices': [{
+        'text': 'retstart.',
+        'target': 0
+    }]
+
+// TUTORIAL: That's our last page. If you want to add more pages, simply copy the code for one of the pages above, paste it here, and change the comment to remember which page it is.
+
+// TUTORIAL: And that's it! Just tweak and combine the above code to make whatever stories you want to create.
+
+
+// WARNING: Don't edit anything below here!
+}];
+var imported = document.createElement('script');
+imported.src = 'http://scpsandbox2.wikidot.com/local--files/adventure/adventure.js';
+document.head.appendChild(imported);
+</SCRIPT>
+</head>
+
+<body>
+<FONT FACE="Verdana" size=2>
+<div id="page" class="blockCenter">
+    <div id="page_image"></div>
+    <div id="page_text"></div>
+    <div id="response">
+        </ul>
+    </div>
+</FONT>
+</body>
+
+</html>
+[[/html]]
