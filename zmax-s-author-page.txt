@@ -39,8 +39,8 @@ I don’t believe that the Lambda-5 series is done. Someday, maybe.
 
 ++ All my ding dang tales
 
-[[module ListPages created_by="Zmax15" separate="no" tags="tale" perPage="10" order="created_at" prependLine="||~ Tale ||~ Created ||~ Rating ||~ Comments ||~ Length ||"]]
-|| %%title_linked%% || %%created_at%% || %%rating%% || %%comments%%  || %%size%% ||
+[[module ListPages created_by="Zmax15" separate="no" tags="tale" perPage="10" order="created_at" prependLine="||~ Tale ||~ Author ||~ Rating ||~ Comments ||~ Length ||"]]
+|| %%title_linked%% || %%created_by%% || %%rating%% || %%comments%%  || %%size%% ||
 [[/module]]
 
 [[collapsible show="Every Other Day" hide="SCP-507 Tale"]]
@@ -55,4 +55,10 @@ Remember what I said about the diligence and time put into 2446? Yeah, this was 
 
 [[module ListPages tags="+scp -archived -joke -explained" order="random" limit="1" rating="<=35"]]
 ++++ %%title_linked%%
+[[/module]]
+
+++ Crack Fiction Contest Rating Tracker
+
+[[module ListPages tags="af2016" order="rating desc" separate="no" perPage="10" prependLine="||~ Tale ||~ Created ||~ Rating ||~ Comments ||"]]
+|| %%title_linked%% || %%created_at%% || %%rating%% || %%comments%%  ||
 [[/module]]
