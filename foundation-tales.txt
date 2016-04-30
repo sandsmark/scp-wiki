@@ -15,16 +15,15 @@ title:Tales Hub
 
 This archive is designed to organize the Foundation tales by author name, and as such is organized alphabetically. If you discover that a tale is absent, please contact either the tale author, or someone from technical team for assistance.
 
-The following pages have been utilized to display excerpts, the first string of 53 characters, from the pages pulled by modules.  To customize your own tale excerpt, please place the following code on your page:
+The following pages have been utilized to display excerpts, the first string of 200 characters, from the pages pulled by modules.  To customize your own tale excerpt, please place the following code on your page:
 
-[[collapsible show=" + Custom Excerpt Code" hide="- Close"]]
-> @@[[size 0%]]Text goes here, character limit is 53.                                                                                                                                [[/size]]@@
+[[code]]
+ [[include component:preview text=YOUR TEXT GOES HERE]]
+[[/code]]
 
-This code should be placed between the rating module and the actual text of the tale.  Be sure to include the spaces in the code as well as they are a combination of soft and hard spaces; do not modify them.  This is to ensure that __only__ your custom excerpt is displayed.  Contact technical team for further questions.
+This code should be placed at the beginning of the page. between the rating module and the actual text of the tale.   Contact technical team for further questions.
 
-[[/collapsible]]
 
-Also, be aware that tales going forward will be tagged with hidden tags that correspond with the first character of the author's name ('_a' is for author who's name begins with 'A').
 [[/=]]
 [[/div]]
 
