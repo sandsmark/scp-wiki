@@ -76,6 +76,22 @@ parent:foundation-tales
     border-radius: 0 0 0 10px;}
 .nav table tr:last-child td:last-child {
     border-radius: 0 0 10px 0;}
+
+.error-inline {
+    font-size: 0px;
+    visibility:collapse;
+    border: none;
+    color: #666;
+    text-align: right;
+}
+
+.error-inline em {
+    font-size: 0.8rem !important;
+    visibility:visible;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+}
 [[/module]]
 
 
