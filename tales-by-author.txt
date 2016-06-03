@@ -49,6 +49,22 @@ parent:foundation-tales
     border-bottom: none;}
 .section .printuser img{
     width: 16px !important;}
+
+.error-inline {
+    font-size: 0px;
+    visibility:collapse;
+    border: none;
+    color: #666;
+    text-align: right;
+}
+
+.error-inline em {
+    font-size: 0.8rem !important;
+    visibility:visible;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+}
 [[/module]]
 
 
