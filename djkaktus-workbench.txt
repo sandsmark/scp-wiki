@@ -1,18 +1,22 @@
 title:djkaktus' Workbench
-[[module CountPages tags="SCP, -joke, -tale, -archived, -explained, -decommissioned"]]
-%%total%% SCPs (-14 001 proposals).
-[[/module]]
-
-[[module CountPages tags="tale"]]
-%%total%% Tales.
-[[/module]]
-
------
-
-[[module ListPages separate="no" tags="scp, joke, -tale" perPage="25" order="pageLengthDesc" prependLine="||~ SCP ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||~ Length ||"]] 
+[[module ListPages created_by="djkaktus" separate="no" tags="scp, joke" perPage="250" prependLine="||~ SCP ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||~ Length ||"]] 
 || %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% || %%size%% ||
 [[/module]]
-
-[[module ListPages separate="no" tags="tale" perPage="25" order="pageLengthDesc" prependLine="||~ SCP ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||~ Length ||"]] 
+[[=]]
+[[image tales.png height="50px"]]
+[[/=]]
+[[module ListPages created_by="djkaktus" separate="no" tags="tale, -hub" prependLine="||~ Tale ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||~ Length ||"]] 
 || %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% || %%size%% ||
+[[/module]]
+[[=]]
+[[image goi.png height="50px"]]
+[[/=]]
+[[module ListPages created_by="djkaktus" separate="no" tags="goi-format" order="rating desc" prependLine="||~ Tale ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||"]] 
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% ||
+[[/module]]
+[[=]]
+[[image guides.png height="50px"]]
+[[/=]]
+[[module ListPages created_by="djkaktus" separate="no" tags="guide" order="rating desc" prependLine="||~ Tale ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||"]] 
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% ||
 [[/module]]
