@@ -1,0 +1,185 @@
+title:Search Results for "Jack Ike's Author Page"
+[[module CSS]]
+#header h2 span {
+    display: block;
+    margin: 0;
+    padding: 19px 0;
+    line-height: 0px;
+    max-height: 0px;
+    font-weight: bold;
+    color: transparent;
+    text-shadow: 0px 0px 0px;
+
+}
+#header h2 span::before {
+    content: "Secure, Contain, Procrastinate";
+    color: #f0f0c0;
+    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+}
+
+#page-title {
+  display: none;
+}
+
+.meta-title {
+  border-bottom: solid 1px #bbbbbb;
+  color: #990011;
+  font-weight: normal;
+  margin: 0 0 0.6em;
+  padding: 0 0 0.25em;
+  font-size: 200%;
+}
+
+.meta-title p {
+  margin: 0;
+}
+[[/module]]
+[[module ListUsers users="."]]
+[[div class="meta-title"]]
+Not %%title%%'s Author Page Either
+[[/div]]
+[[/module]]
+[[html]]
+<style>
+body{
+font-family: sans-serif;
+font-size: 90%;
+}
+</style>
+<center>
+<table style="width:100%; text-align: center;">
+<tr>
+<td>
+<div>
+<input class="text" type="text" size="30" name="query" value="Jack Ike's Author Page" id="searchstring"/>
+<input type="button" value="Search" onClick="LogIn()"/>
+</div>
+<div id="mode-radio-container">
+    <input id="selectp" type="radio" name="area" value="p" onclick="pfselect('p');" />pages only
+    <input id="selectpf" type="radio" name="area" value="pf" checked="checked" onclick="pfselect('pf');" />pages and forum
+    <input  id="selectf" type="radio" name="area" value="f"  onclick="pfselect('f');" />forum only
+</div>
+</td>
+<td style="text-align: right;">
+<div id="filter-container">
+<b>Additional Filters:</b><br />
+<div id="container-title">
+    Title contains...
+<input class="text" type="text" size="20" name="title" value="Jack Ike" id="titlestring"/>
+</div>
+<div id="container-author">
+    Author contains...
+<input class="text" type="text" size="20" name="author" value="Jack Ike" id="authorstring"/>
+</div>
+</div>
+</td>
+</tr>
+</table>
+<hr />
+
+</center>
+</html>
+[[/html]]
+[[html]]
+<head> 
+    <style type="text/css" id="internal-style">
+        /* modules */
+@import url(http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--modules/css/search/SearchModule.css);      
+        /* theme */
+                    @import url(http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--theme/base/css/style.css);
+                    @import url(http://www.scp-wiki.net/component:theme/code/1);
+            </style>
+</head>
+<div class="pager"><span class="pager-no">page ∞ of 78</span><a>&laquo; previous</a><a>1</a><a>2</a><span class="dots">...</span><a>∞</a><a>∞</a><span class="current">∞</span></div>
+<div class="search-results">
+<div class="item">
+<div class="title">
+<a target="_blank" href="http://www.scp-wiki.net/scp-2394">SCP-2394</a>
+</div>
+<div class="preview">
+&quot;Solitude&quot; Author: <strong>Jack Ike</strong> The story of a little frog with amazing powers, and how he was tortured for their use.
+</div> 
+<div class="url">
+http://www.scp-wiki.net/forum/t-1411360/scp-2394
+</div>
+</div>
+<div class="item">
+<div class="title">
+<a target="_blank" href="http://www.scp-wiki.net/scp-2493">SCP-2493</a>
+</div>
+<div class="preview">
+&quot;One Man's Garbage&quot; Author: <strong>Jack Ike</strong> Trade an endless supply of rubbish for advanced technology? Yes please. Contain a man made of antimatter safely on the moon? Sure. Destroy your entire universe because you couldn't be bothered recycling? Preferably not.
+</div> 
+<div class="url">
+http://www.scp-wiki.net/scp-2493
+</div>
+</div>
+<div class="item">
+<div class="title">
+<a target="_blank" href="http://www.scp-wiki.net/scp-2392">SCP-2392</a>
+</div>
+<div class="preview">
+&quot;Barrel of Monkeys&quot; Author: <strong>Jack Ike</strong> There's something a bit spooky about this patch of land… something's got to be underneath it all. - <i>rumetzen</i>
+</div> 
+<div class="url">
+http://www.scp-wiki.net/scp-2392
+</div>
+</div>
+<div class="item">
+<div class="title">
+<a target="_blank" href="http://www.scp-wiki.net/1">1</a>
+</div>
+<div class="preview">
+Author: <strong>Jack Ike</strong> Only one person is left in the universe, as it reflected back on everything that made the universe this way. - <i>Decibelle</i>
+</div> 
+<div class="url">
+http://www.scp-wiki.net/1
+</div>
+</div>
+<div class="item">
+<div class="title">
+<a target="_blank" href="http://www.scp-wiki.net/code-name-the-truth">CODE NAME: ████ ███ - The Truth</a>
+</div>
+<div class="preview">Author: <strong>Jack Ike</strong> Is this all that there is out here? Just endless copies of home, each more messed up than the previous?
+</div> 
+<div class="url">
+http://www.scp-wiki.net/code-name-the-truth
+</div>
+</div>
+<div class="item">
+<div class="title">
+<a target="_blank" href="http://www.scp-wiki.net/charon-part-1-nekyia">Charon (Part 1: Nekyia)</a>
+</div>
+<div class="preview"> Author: <strong>Jack Ike</strong> What the fuck could be more ‘questionable’ than trying to open the object that contains the entire known universe?
+</div> 
+<div class="url">
+http://www.scp-wiki.net/charon-part-1-nekyia
+</div>
+</div>
+<div class="item">
+<div class="title">
+<a target="_blank" href="http://www.scp-wiki.net/jack-ike"><strong>Jack Ike</strong>'s Author Page</a>
+</div>
+<div class="preview">
+Your looking at it, dummy.
+</div> 
+<div class="url">
+http://www.scp-wiki.net/john-cena
+</div>
+</div>
+<div class="item">
+<div class="title">
+<a target="_blank" href="http://scpsandbox2.wikidot.com/jack-ike"><strong>Jack Ike</strong>'s Sandbox</a>
+</div>
+<div class="preview">Touch my shit without permission and my foot will evolve into my foot with your arse wrapped around it.</div> 
+<div class="url">
+http://scpsandbox2.wikidot.com/jack-ike
+</div>
+</div>
+</div>
+<div class="pager"><span class="pager-no">page ∞ of 78</span><a>&laquo; previous</a><a>1</a><a>2</a><span class="dots">...</span><a>∞</a><a>∞</a><span class="current">∞</span></div>
+
+</body>
+</html>
+[[/html]]
