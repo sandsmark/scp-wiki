@@ -40,20 +40,189 @@ title:Search Results for "Jack Ike's Author Page"
 Not %%title%%'s Author Page Either
 [[/div]]
 [[/module]]
-[[html]]
+[[html]]<html id="html-block-html" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-type" content="text/html; charset=utf-8"/><link rel="stylesheet" href="/common--theme/base/css/html-block.css"/></head><body>
 <style>
 body{
 font-family: sans-serif;
 font-size: 90%;
 }
+/* No additional CSS */
 </style>
+<script type="text/javascript">
+/****************** Define some variables */
+pageselect="pf";
+enforceSearch = "[!--";
+enforceMode = "[!--";
+miniMode = "false";
+hideFilters = "false";
+
+defaultTitle = "null";
+defaultCategory = "null";
+defaultAuthor = "null";
+
+defaultMode = "pf";
+
+showTitle = "block";
+showAuthor = "block";
+showCategory = "none";
+
+/****************** Ensure that "null" default value is nulled */
+if(defaultTitle=="null"){ defaultTitle= ""; }
+if(defaultCategory=="null"){ defaultCategory = ""; }
+if(defaultAuthor=="null"){ defaultAuthor = ""; }
+
+/****************** Trim Prototype */
+String.prototype.trim = function () {
+    return this.replace(/^\s*/, "").replace(/\s*$/, "");
+}
+
+/****************** getElementById Shortcut */
+function gEl(a){
+return document.getElementById(a);
+}
+
+/****************** onLoad function */
+window.onload = function(){
+
+/*** BEGIN "ANY QUERY" ACTION */
+if(miniMode=="true"){
+gEl("mode-radio-container").style.display = "none";
+}
+if(hideFilters=="true"){
+gEl("filter-container").style.display = "none";
+}
+
+pluralCheck = 0;
+
+if(showTitle.match(/^(none|false|no)$/i)){
+gEl("container-title").style.display = "none";
+}else{
+gEl("container-title").style.display = "block";
+pluralCheck++;
+}
+
+if(showAuthor.match(/^(none|false|no)$/i)){
+gEl("container-author").style.display = "none";
+}else{
+gEl("container-author").style.display = "block";
+pluralCheck++;
+}
+
+if(pluralCheck==1){
+gEl("filter-container").innerHTML=gEl("filter-container").innerHTML.replace("Filters:</b>","Filter:</b>");
+}
+/*** END "ANY QUERY" ACTION */
+
+if(unescape(document.referrer).match(/\/q\/(.*?)$/)){
+/*** BEGIN QUERY CHECK */
+
+gEl("titlestring").value = defaultTitle;
+gEl("authorstring").value = defaultAuthor;
+
+recallSearch = false; //recalls search if default values are not met; define as false, will be set true if needed
+
+/****************** match the query string */
+searchstring = decodeURIComponent(document.referrer).match(/\/q\/(.*?)(\/)?([a-zA-Z]\/[0-9]+)?$/)[1];
+
+/****************** add a space after the search query (for matching later)*/
+searchstring += " ";
+
+/*** [START] MATCH TITLE FILTER */
+titlematch=searchstring.match(/title:(.*?) /);
+
+/*** Start TITLE enforceSearch */
+if((enforceSearch=="true")&&(titlematch)){
+  if((titlematch[1]!=defaultTitle)){
+   if(defaultTitle!=""){ recallSearch = true; }
+  }
+}else{  if((defaultTitle!="")&&(enforceSearch=="true")){recallSearch = true;} }
+/*** End TITLE enforceSearch */
+
+if(titlematch){
+ gEl("titlestring").value = titlematch[1];
+ searchstring = searchstring.replace(/title:(.*?) /,"");
+}
+/*** [END] MATCH TITLE FILTER */
+
+authormatch=searchstring.match(/user:(.*?) /);
+
+/*** Start AUTHOR enforceSearch */
+if((enforceSearch=="true")&&(authormatch)){
+  if((authormatch[1]!=defaultAuthor)){
+   if(defaultAuthor!=""){ recallSearch = true; }
+  }
+}else{  if((defaultAuthor!="")&&(enforceSearch=="true")){recallSearch = true;} }
+/*** End AUTHOR enforceSearch */
+
+if(authormatch){
+gEl("authorstring").value = authormatch[1];
+searchstring = searchstring.replace(/user:(.*?) /,"");
+}
+
+categorymatch=searchstring.match(/category:(.*?) /);
+
+/*** Start CATEGORY enforceSearch */
+if((enforceSearch=="true")&&(categorymatch)){
+  if((categorymatch[1]!=defaultCategory)){
+   if(defaultCategory!=""){ recallSearch = true; }
+  }
+}else{ if((defaultCategory!="")&&(enforceSearch=="true")){recallSearch = true;} }
+/*** End CATEGORY enforceSearch */
+
+if(unescape(document.referrer).match(/\/a\/(.*?)\//)){
+ pageselect = unescape(document.referrer).match(/\/a\/(.*?)\//)[1];
+ document.getElementById("select"+pageselect).checked="checked";
+ if((pageselect!=defaultMode)&&(enforceMode=="true")){
+//console.log("DEBUG: defaultMode="+defaultMode);
+  pfselect(defaultMode);
+  //document.getElementById("select"+defaultMode).checked="checked";
+  recallSearch = true;
+ }
+}
+
+document.getElementById("searchstring").value = searchstring.trim();
+
+if(recallSearch){
+if((defaultTitle!="")&&(enforceSearch=="true")){gEl("titlestring").value=defaultTitle;}
+if((defaultAuthor!="")&&(enforceSearch=="true")){gEl("authorstring").value=defaultAuthor;}
+callSearch();
+}
+
+/*** END CHECK QUERY */
+}else{
+/*** BEGIN NO QUERY ACTION */
+/*** END NO QUERY ACTION */
+}
+/*** BEGIN "ANY QUERY" ACTION */
+
+/*** END "ANY QUERY" ACTION */
+
+}
+
+function pfselect(a){
+pageselect = a;
+}
+function callSearch(){
+theLocation = "/search:site/a/"+pageselect+"/q/"+document.getElementById("searchstring").value;
+if(gEl("titlestring").value!=""){
+theLocation += " title:"+gEl("titlestring").value;
+}
+if(gEl("authorstring").value!=""){
+theLocation += " user:"+gEl("authorstring").value.replace(" ","-");
+}
+window.top.location.href=theLocation;
+window.parent.location.href=theLocation;
+window.top.location.replace(theLocation);
+}
+</script>
 <center>
+<form action="javascript:;" onsubmit="callSearch();">
 <table style="width:100%; text-align: center;">
 <tr>
 <td>
 <div>
-<input class="text" type="text" size="30" name="query" value="Jack Ike's Author Page" id="searchstring"/>
-<input type="button" value="Search" onClick="LogIn()"/>
+    <input class="text" type="text" size="30" name="query" value="Jack Ike's Author Page" id="searchstring"/>
+    <input class="button" type="submit" value="Search" onClick="callSearch();"/>
 </div>
 <div id="mode-radio-container">
     <input id="selectp" type="radio" name="area" value="p" onclick="pfselect('p');" />pages only
@@ -78,6 +247,7 @@ font-size: 90%;
 </table>
 <hr />
 
+</form>
 </center>
 </html>
 [[/html]]
@@ -91,7 +261,7 @@ font-size: 90%;
                     @import url(http://www.scp-wiki.net/component:theme/code/1);
             </style>
 </head>
-<div class="pager"><span class="pager-no">page ∞ of 78</span><a>&laquo; previous</a><a>1</a><a>2</a><span class="dots">...</span><a>∞</a><a>∞</a><span class="current">∞</span></div>
+<div class="pager"><span class="pager-no">page ∞ of 78</span><a target="_blank" href="http://www.scp-wiki.net/john-cena">&laquo; previous</a><a target="_blank" href="http://scp-wiki.wikidot.com/search:site/a/pf/q/Jack%20Ike's%20Author%20Page%20title:Jack%20Ike%20user:Jack-Ike">1</a><a target="_blank" href="http://scp-wiki.wikidot.com/search:site/a/pf/q/Jack+Ike%27s+Author+Page+title%3AJack+Ike+user%3AJack-Ike/p/2">2</a><span class="dots">...</span><a target="_blank" href="http://www.scp-wiki.net/john-cena">∞</a><a target="_blank" href="http://www.scp-wiki.net/john-cena">∞</a><span class="current">∞</span></div>
 <div class="search-results">
 <div class="item">
 <div class="title">
@@ -178,7 +348,7 @@ http://scpsandbox2.wikidot.com/jack-ike
 </div>
 </div>
 </div>
-<div class="pager"><span class="pager-no">page ∞ of 78</span><a>&laquo; previous</a><a>1</a><a>2</a><span class="dots">...</span><a>∞</a><a>∞</a><span class="current">∞</span></div>
+<div class="pager"><span class="pager-no">page ∞ of 78</span><a target="_blank" href="http://www.scp-wiki.net/john-cena">&laquo; previous</a><a target="_blank" href="http://scp-wiki.wikidot.com/search:site/a/pf/q/Jack%20Ike's%20Author%20Page%20title:Jack%20Ike%20user:Jack-Ike">1</a><a target="_blank" href="http://scp-wiki.wikidot.com/search:site/a/pf/q/Jack+Ike%27s+Author+Page+title%3AJack+Ike+user%3AJack-Ike/p/2">2</a><span class="dots">...</span><a target="_blank" href="http://www.scp-wiki.net/john-cena">∞</a><a target="_blank" href="http://www.scp-wiki.net/john-cena">∞</a><span class="current">∞</span></div>
 
 </body>
 </html>
