@@ -14,6 +14,14 @@ This automated lists are meant to keep track of pages and categories that might 
 Some tabs may be pretty slow and take some time to load.
 [[/tab]]
 
+[[tab Changes in categories]]
+Recently changed pages in the categories component, forum, nav, random, search and system.
+
+[[module ListPages category="* -_default" separate="no" order="updated_at desc" pagetype="*" perPage="40"]]
+|| %%title_linked%% || %%updated_at%% || %%updated_by_linked%%||
+[[/module]]
+[[/tab]]
+
 [[tab Categories]]
 [[module Categories includehidden="true"]]
 [[/tab]]
