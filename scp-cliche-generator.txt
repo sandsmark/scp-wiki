@@ -50,7 +50,11 @@ var that = ["makes you immortal", "is made out of antimatter", "listens to Metal
     var obj = noun[rand(0,101)];		
     var th = that[rand(0,56)];
 
+
+
     document.getElementById('text').innerHTML = "''Oh! I got an idea for something we could write about. How about " + adj + " " + obj +  " that " + th + "?''";
+
+
     console.log("Output: " + + adj + obj + "that" + th);
 
 //stuff below here is on hold for now
