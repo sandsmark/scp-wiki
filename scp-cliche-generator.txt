@@ -44,22 +44,22 @@ var adjective = ["a disgusting", "a cute", "a demonic", "a fluffy", "a low-poly"
 
 var noun = ["ball of antimatter", "computer", "CD", "slime", "liquid", "lion", "deer", "unicorn", "super villain", "superhero", "cryptid", "eldritch abomination", "statue", "meme", "doge", "dog", "kaiju", "squid", "octopus", "professor", "cork", "computer virus", "demigod", "wolf", "dolphin", "lemon", "plant", "monster", "werewolf", "vampire", "self-insert", "Mary Sue", "gun", "fox", "horse", "otter", "wolf", "can", "zebra", "robot", "artificial intelligence", "hive mind", "zombie", "reptile", "cricket", "bee", "eagle", "bushtit", "grebe", "dog", "cat", "portal", "laser cannon", "cliche", "painting", "cartoon", "movie", "drawing", "spacecraft", "shapeshifter", "psychic", "teenage girl", "teenage boy", "bird", "apple", "bracelet", "necklace", "ring", "snake", "dinosaur", "cow", "rabbit", "dragon", "lemur", "ostrich", "emu", "llama", "alpaca", "jar of pickles", "French Horn", "alien", "dragon", "demon", "porn star", "albatross", "whale", "skeleton", "boot", "balafon", "xylophone", "teenager", "monkey", "porcupine", "doll", "tree", "sponge", "bell", "house", "baseball bat", "swimming pool", "cave", "isosceles triangle"]; // 102
 
-var that = ["makes you immortal", "is made out of antimatter", "listens to Metallica", "will save the world", "makes a mess", "freezes time", "makes you physically attracted to sheep", "makes you fall in a ditch of fire", "annoys everyone", "isn't actually anomalous", "steals things", "is actually an alien", "is actually the grim reaper in disguise", "causes death", "causes diabetes", "causes depression", "shoots lazers", "teleports", "gives people weird dreams", "gives people strokes", "makes people", "makes people do things", "transforms", "breathes fire", "eats metal", "makes gold", "gets whatever it wants", "everyone loves", "alters reality", "makes people's eyes bleed", "destroys something", "burns your house down", "destroys humanity", "destroys the world", "destroys reality", "kills people", "eats everyone", "hates everyone", "knows everything", "kills you", "makes you insane", "makes you kill people", "stalks you", "stares at you for an uncomfortably long time", "stalks you at night"]; // 45
+var that = ["makes you immortal", "is made out of antimatter", "listens to Metallica", "will save the world", "makes a mess", "freezes time", "makes you physically attracted to sheep", "makes you fall in a ditch of fire", "annoys everyone", "isn't actually anomalous", "steals things", "is actually an alien", "is actually the grim reaper in disguise", "causes death", "causes diabetes", "causes depression", "shoots lazers", "teleports", "gives people weird dreams", "gives people strokes", "makes people", "makes people do things", "transforms", "breathes fire", "eats metal", "makes gold", "gets whatever it wants", "everyone loves", "alters reality", "makes people's eyes bleed", "destroys something", "burns your house down", "destroys humanity", "destroys the world", "destroys reality", "kills people", "eats everyone", "hates everyone", "knows everything", "kills you", "makes you insane", "has glowing eyes", "scares people", "is secretly a detective", "is from another dimension", "makes black holes", "freezes time", "can read minds", "can predict the future", "used to be a doctor", "used to be a starship captain", "is secretly an assasin", "strokes people", "makes you kill people", "stalks you", "stares at you for an uncomfortably long time", "stalks you at night"]; // 57
     
     var adj = adjective[rand(0,86)];
     var obj = noun[rand(0,101)];		
-    var th = that[rand(0,44)];
+    var th = that[rand(0,56)];
 
     document.getElementById('text').innerHTML = "''Oh! I got an idea for something we could write about. How about " + adj + " " + obj +  " that " + th + "?''";
     console.log("Output: " + + adj + obj + "that" + th);
 
 //stuff below here is on hold for now
 
-//adjectives: "placid", "obedient", clean, fluorescent, glowy, enchanted, young, bubbly, exotic, gross, alcoholic
+//adjectives: "a placid", "an obedient", "a clean", "a fluorescent", "a glowy, an enchanted, a young, a bubbly, an exotic, a gross, an alcoholic, a bohemian,
 
-//nouns: bear, pair of glasses, pear, beer can, alcoholic, cedar waxwing,
+//nouns: "bear", "pair of glasses", "pear", "beer can", "dancer", "alcoholic", "cedar waxwing",
 
-//thats: "has glowing eyes", "scares people", "is secretly a detective", "is from another dimension", "makes black holes", "freezes time", "can read minds", "can predict the future", "used to be a doctor", "used to be a starship captain", "is secretly an assasin", "strokes people",
+//that: 
 
 }
 
