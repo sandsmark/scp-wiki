@@ -44,15 +44,17 @@ var adjective = ["a disgusting", "a cute", "a demonic", "a fluffy", "a low-poly"
 
 var noun = ["ball of antimatter", "computer", "CD", "slime", "liquid", "lion", "deer", "unicorn", "super villain", "superhero", "cryptid", "eldritch abomination", "statue", "meme", "doge", "dog", "kaiju", "squid", "octopus", "professor", "cork", "computer virus", "demigod", "wolf", "dolphin", "lemon", "plant", "monster", "werewolf", "vampire", "self-insert", "Mary Sue", "gun", "fox", "horse", "otter", "wolf", "can", "zebra", "robot", "artificial intelligence", "hive mind", "zombie", "reptile", "cricket", "bee", "eagle", "bushtit", "grebe", "dog", "cat", "portal", "laser cannon", "cliche", "painting", "cartoon", "movie", "drawing", "spacecraft", "shapeshifter", "psychic", "teenage girl", "teenage boy", "bird", "apple", "bracelet", "necklace", "ring", "snake", "dinosaur", "cow", "rabbit", "dragon", "lemur", "ostrich", "emu", "llama", "alpaca", "jar of pickles", "French Horn", "alien", "dragon", "demon", "porn star", "albatross", "whale", "skeleton", "boot", "balafon", "xylophone", "teenager", "monkey", "porcupine", "doll", "tree", "sponge", "bell", "house", "baseball bat", "swimming pool", "cave", "isosceles triangle"]; // 102
 
-var that = ["makes you immortal", "is made out of antimatter", "listens to Metallica", "will save the world", "makes a mess", "freezes time", "makes you physically attracted to sheep", "makes you fall in a ditch of fire", "annoys everyone", "isn't actually anomalous", "steals things", "is actually an alien", "is actually the grim reaper in disguise", "causes death", "causes diabetes", "causes depression", "shoots lazers", "teleports", "gives people weird dreams", "gives people strokes", "makes people", "makes people do things", "transforms", "breathes fire", "eats metal", "makes gold", "gets whatever it wants", "everyone loves", "alters reality", "makes people's eyes bleed", "destroys something", "burns your house down", "destroys humanity", "destroys the world", "destroys reality", "kills people", "eats everyone", "hates everyone", "knows everything", "kills you", "makes you insane", "has glowing eyes", "scares people", "is secretly a detective", "is from another dimension", "makes black holes", "freezes time", "can read minds", "can predict the future", "used to be a doctor", "used to be a starship captain", "is secretly an assasin", "strokes people", "makes you kill people", "stalks you", "stares at you for an uncomfortably long time", "stalks you at night"]; // 57
+var that = ["makes you immortal", "is made out of antimatter", "listens to Metallica", "will save the world", "makes a mess", "freezes time", "makes you physically attracted to sheep", "makes you fall in a ditch of fire", "annoys everyone", "isn't actually anomalous", "steals things", "is actually an alien", "is actually the grim reaper in disguise", "causes death", "causes diabetes", "causes depression", "shoots lazers", "teleports", "gives people weird dreams", "gives people strokes", "makes people", "makes people do things", "transforms", "breathes fire", "eats metal", "makes gold", "gets whatever it wants", "everyone loves", "alters reality", "makes people's eyes bleed", "destroys something", "burns your house down", "destroys humanity", "destroys the world", "destroys reality", "kills people", "eats everyone", "hates everyone", "knows everything", "kills you", "makes you insane", "has glowing eyes", "scares people", "is secretly a detective", "is from another dimension", "makes black holes", "freezes time", "can read minds", "can predict the future", "used to be a doctor", "used to be a starship captain", "is secretly an assassin", "strokes people", "makes you kill people", "stalks you", "stares at you for an uncomfortably long time", "stalks you at night"]; // 57
+
+var also = ["it really just wants to go home", "it wants to be normal", "it was created by a researcher on accident", "it used to be a researcher", "it wants to be a Foundation member", "everyone totally thinks it's there, but, like, it's not. It doesn't even exist", "it's really a soviet spy. Does that work? Maybe not that, I'll think of something", "it doesn't remember anything. Or, maybe the people around it don't remember. It erases memories, or something", "it thinks humans are the best thing ever", "it's in love. With one of these scientists running experiments on it. I don't know why really, but, I'll think of something", "it was a dinosaur in a past life", "it was a scientist in a past life", "it's a god from a long-lost civilization", "it accidentally killed everyone it loved", "there's the soul of a little girl trapped inside", "someone just made it up", "it was just a dream, that, see, this little kid had, that became real somehow", "it was made by an anartist", "it really, really hates containment.."]; // 19
     
     var adj = adjective[rand(0,86)];
     var obj = noun[rand(0,101)];		
     var th = that[rand(0,56)];
+    var also = also[rand(0,18)];
 
-
-
-    document.getElementById('text').innerHTML = "''Oh! I got an idea for something we could write about. How about " + adj + " " + obj +  " that " + th + "?''";
+        document.getElementById('text').style.font = "verdana";
+    document.getElementById('text').innerHTML = "''Oh! I got an idea for something we could write about. How about " + adj + " " + obj +  " that " + th + "? Cliche, right? But, see, the twist is that " + also + ". Does that make sense?";
 
 
     console.log("Output: " + + adj + obj + "that" + th);
@@ -74,7 +76,6 @@ var that = ["makes you immortal", "is made out of antimatter", "listens to Metal
 [[/html]]
 
 [[[scp-cliche-generator|Maybe something else?]]]
-
 [[collapsible show="That idea could work." hide="I mean, it could probably work, right?"]]
  
 You nod and write a note to yourself to work on this later. It could end up being a really good story. Probably, anyway...
