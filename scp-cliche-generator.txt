@@ -54,20 +54,20 @@ var also = ["it really just wants to go home", "it wants to be normal", "it was 
     var also = also[rand(0,32)];
 
         document.getElementById('text').style.font = "verdana";
-    document.getElementById('text').innerHTML = "''Oh! I got an idea for something we could write about. How about " + adj + " " + obj +  " that " + th + "? Cliche, right? But, see, the twist is that " + also + ". Does that make sense?";
+    document.getElementById('text').innerHTML = "''Oh! I got an idea for something we could write about. How about " + adj + " " + obj +  " that " + th + "? Cliche, right? But, see, the twist is that " + also + ". Does that make sense?''";
 
 
     console.log("Output: " + + adj + obj + "that" + th);
 
 //stuff below here is on hold for now
 
-//adjectives: "a placid", "an obedient", "a clean", "a fluorescent", "a glowy, an enchanted, a young, a bubbly, an exotic, a gross, an alcoholic, a bohemian,
+//adjectives: "a placid", "an obedient", "a clean", "a fluorescent", "a glowy", "an enchanted", "a young", "a bubbly", "an exotic", "a gross", "an alcoholic", "a bohemian", "a loud", "a rebellious",
 
-//nouns: "bear", "pair of glasses", "pear", "beer can", "dancer", "alcoholic", "cedar waxwing",
+//nouns: "bear", "pair of glasses", "pear", "beer can", "dancer", "alcoholic", "cedar waxwing", "sea slug", "corn crake", "monarch",
 
-//that: 
+//that: "really likes candy", "speaks garbled nonsense", "enjoys making terrible puns", "wants to make everyone miserable",
 
-//twist: 
+//twist: "it's really, really hurting on the inside", "it feels guilty for what it's done", "it wants to be free",
 
 }
 
