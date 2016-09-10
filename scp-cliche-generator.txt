@@ -50,7 +50,7 @@ var also = ["it really just wants to go home", "it's friends with ████",
 
 var add = ["But, see", "But it's not because, see", "Wait, guys, so the twist", "Wait, though", "But guys", "Now", "Now, see", "But now", "And the twist", "Oh, but here's another idea. See", "Now guys"]; // 11
 
-var end = ["Does that make sense", "Right", "You guys got that", "Something like that", "It makes sense, right"]; // 5
+var end = ["Does that make sense", "But like, I'm just gonna run with it, got it guys", "Right", "You guys got that", "Something like that", "It makes sense, right"]; // 6
 
     var adj = adjective[rand(0,119)];
     var obj = noun[rand(0,148)];		
@@ -58,7 +58,7 @@ var end = ["Does that make sense", "Right", "You guys got that", "Something like
     var also = also[rand(0,61)];
     
     var add = add[rand(0,10)];
-    var end = end[rand(0,4)];
+    var end = end[rand(0,5)];
 
         document.getElementById('text').style.font = "verdana";
     document.getElementById('text').innerHTML = "''Oh! I got an idea for something we could write about. How about " + adj + " " + obj +  " that " + th + "? Cliche, right? " + add + ", the twist is that " + also + ". " + end + "?''";
