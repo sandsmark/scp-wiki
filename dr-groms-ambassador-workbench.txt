@@ -14,6 +14,11 @@ This automated lists are meant to keep track of pages and categories that might 
 Some tabs may be pretty slow and take some time to load.
 [[/tab]]
 
+[[tab Tag-cloud]]
+This tag-cloud shows every used tag, including hidden tags.
+[[module TagCloud limit="1000" target="system:page-tags" showHidden="yes"]]
+[[/tab]]
+
 [[tab Changes in categories]]
 Recently changed pages in the categories component, forum, nav, random, search and system.
 
