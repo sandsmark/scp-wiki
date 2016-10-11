@@ -46,8 +46,7 @@ var noun = ["ball of antimatter", "computer", "banana", "barn", "pony", "horse",
 
 var that = ["makes you immortal", "causes earthquakes", "causes tsunamis", "committed genocide against the elves", "eats fairies", "is a cannibal", "is resistant to antibiotics", "is unusually big", "killed the dinosaurs", "can shrink stuff", "can make stuff bigger", "writes really horrible fanfiction", "ships everyone together", "thinks The Bee Movie is an amazing example of cinematography", "thinks anime is real", "is a firm believer in solipsism", "is a communist", "is a capitalist", "is a socialist", "is an anarchist", "crucified Satan", "is the antichrist", "is the ██th reincarnation of the ██████", "eats memories", "came back after almost being erased from existence", "it is a firm believer in Jesus Christ", "raises the dead", "raises the dead without permission", "can only eat bone marrow", "is made out of antimatter", "listens to Metallica", "will save the world", "makes a mess", "freezes time", "makes you physically attracted to sheep", "is terrified of itself", "shoots lasers from its eyes", "turns lead into gold", "excretes soap", "creates fire in the presence of an attractive raccoon", "is a pyromancer", "is a thaumaturge", "is a necromancer", "performs vivisections on itself", "performs vivisections on others", "suffers from an incurable case of hiccups", "complains about everything", "criticizes your hair", "someone dipped in glow-in-the-dark paint for some reason", "swore revenge on some cats", "swore revenge on a family of random animals", "can survive large explosions", "makes you fall in a ditch of fire", "really likes candy", "speaks garbled nonsense", "enjoys making terrible puns", "wants to make everyone miserable", "grants wishes", "is made out of an unknown material", "is made out of unicorn's blood", "used to be fictional", "is maaaagic", "tells really bad jokes", "lies to everyone", "annoys everyone", "isn't actually anomalous", "steals things", "is actually an alien", "is actually the grim reaper in disguise", "causes death", "causes diabetes", "causes depression", "shoots lazers", "teleports", "gives people weird dreams", "gives people strokes", "makes people", "makes people do things", "transforms", "breathes fire", "eats metal", "makes gold", "gets whatever it wants", "everyone loves", "alters reality", "makes people's eyes bleed", "destroys something", "burns your house down", "destroys humanity", "destroys the world", "destroys reality", "kills people", "eats everyone", "hates everyone", "knows everything", "kills you", "makes you insane", "has glowing eyes", "scares people", "is secretly a detective", "makes people paranoid", "makes people technophobic", "is from another dimension", "makes black holes", "freezes time", "can read minds", "can predict the future", "used to be a doctor", "used to be a starship captain", "is secretly an assassin", "strokes people", "makes you kill people", "stalks you", "stares at you for an uncomfortably long time", "stalks you at night"]; // 98
 
-var also = ["it really just wants to go home", "it's friends with ████", "it's friends with SCP-682", "it's friends with SCP-173", "it's friends with Able", "it's Iris' BFF", "it was created from experimenting with SCP-914", "it created other anomalies", "it was created by other anomalies,", "Dr. Wondertainment made it", "it's probably part of the Broken God", "it's a pilgrim on a sacred quest", "it's biding its time before...uh, something happens. Not sure what", "it really wants to end suffering", "it wants to abolish death", "it wants to rewrite the past", "it's trapped in an irreversible time-loop", "it's the leader of a secret organization", "it can rewrite the past", "it has a mysterious past", "it wants to be normal", "it was created by a researcher on accident", "it used to be a researcher", "it wants to be a Foundation member", "everyone totally thinks it's there, but, like, it's not. It doesn't even exist", "it's really a soviet spy. Does that work? Maybe not that, I'll think of something", "it's a member of the Illuminati", "it makes it big on Wall Street", "it caused 9/11", "it ends up winning the lottery", "it falls in love with a janitor", "it's a refugee from a fictional universe someone thought was a bad idea", "it fails at anything it tries to do", "it's obsessed with lab safety procedures", "it's germaphobic", "it know's it's just a fictional thing someone wrote about", "it was Abraham Lincoln in a past life",
- "it doesn't remember anything. Or, maybe the people around it don't remember. It erases memories, or something", "it thinks humans are the best thing ever", "it's in love. With one of these scientists running experiments on it. I don't know why really, but, I'll think of something", "it was a dinosaur in a past life", "it was a scientist in a past life", "it's a god from a long-lost civilization", "it accidentally killed everyone it loved", "there's the soul of a little girl trapped inside", "someone just made it up", "it was just a dream, that, see, this little kid had, that became real somehow", "it was made by an anartist", "it's fighting against the forces of evil", "it's just pretending to be contained", "it's really just a hologram", "it's actually a long-lost sibling of a researcher", "it's Satan's long-lost nephew", "it thinks it's a goat", "it thinks it's a person", "it thinks it's a scientist", "it's really, really hurting on the inside", "it feels guilty for what it's done", "it wants to be free", "it just wants to be loved", "it just wants company", "it just wants someone to talk to", "it just wants some pudding", "it will kill anyone who makes fun of it", "it breaks all its promises", "it is really REALLY yandere", "it wants to be a real boy", "it escaped from its dimension before it was destroyed", "it escaped from its homeworld before it was destroyed", "all its friends are dead", "its whole family is dead", "it used to be a little boy", "it used to be a little girl", "it really, really hates containment.."]; // 62
+var also = ["it really just wants to go home", "it's friends with ████", "it's friends with SCP-682", "it's friends with SCP-173", "it's friends with Able", "it's Iris' BFF", "it was created from experimenting with SCP-914", "it created other anomalies", "it was created by other anomalies,", "Dr. Wondertainment made it", "it's probably part of the Broken God", "it's a pilgrim on a sacred quest", "it's biding its time before...uh, something happens. Not sure what", "it really wants to end suffering", "it wants to abolish death", "it wants to rewrite the past", "it's trapped in an irreversible time-loop", "it's the leader of a secret organization", "it can rewrite the past", "it has a mysterious past", "it wants to be normal", "it was created by a researcher on accident", "it used to be a researcher", "it wants to be a Foundation member", "everyone totally thinks it's there, but, like, it's not. It doesn't even exist", "it's really a soviet spy. Does that work? Maybe not that, I'll think of something", "it's a member of the Illuminati", "it makes it big on Wall Street", "it caused 9/11", "it ends up winning the lottery", "it falls in love with a janitor", "it's a refugee from a fictional universe someone thought was a bad idea", "it fails at anything it tries to do", "it's obsessed with lab safety procedures", "it's germaphobic", "it know's it's just a fictional thing someone wrote about", "there is no twist", "it is actually controlling those around it", "it's the reincarnation of King Tut's long-lost nephew", "it was Abraham Lincoln in a past life", "it doesn't remember anything. Or, maybe the people around it don't remember. It erases memories, or something", "it thinks humans are the best thing ever", "it's in love. With one of these scientists running experiments on it. I don't know why really, but, I'll think of something", "it was a dinosaur in a past life", "it was a scientist in a past life", "it's a god from a long-lost civilization", "it accidentally killed everyone it loved", "there's the soul of a little girl trapped inside", "someone just made it up", "it was just a dream, that, see, this little kid had, that became real somehow", "it was made by an anartist", "it's fighting against the forces of evil", "it's just pretending to be contained", "it's really just a hologram", "it's actually a long-lost sibling of a researcher", "it's Satan's long-lost nephew", "it thinks it's a goat", "it thinks it's a person", "it thinks it's a scientist", "it's really, really hurting on the inside", "it feels guilty for what it's done", "it wants to be free", "it just wants to be loved", "it just wants company", "it just wants someone to talk to", "it just wants some pudding", "it will kill anyone who makes fun of it", "it breaks all its promises", "it is really REALLY yandere", "it wants to be a real boy", "it escaped from its dimension before it was destroyed", "it escaped from its homeworld before it was destroyed", "all its friends are dead", "its whole family is dead", "it used to be a little boy", "it used to be a little girl", "it really, really hates containment.."]; // 62
 
 var add = ["But, see", "But it's not because, see", "But here", "But like", "And maybe, like", "It probably needs a twist. So maybe, like", "Hm, I think this needs a twist, so, so", "Wait, guys, so the twist", "Wait, though", "But guys", "Now", "Now, see", "But now", "And the twist", "Oh, but here's another idea. See", "Now guys"]; // 16
 
@@ -56,7 +55,7 @@ var end = ["Does that make sense", "Spooky, right", "It's interesting, right", "
     var adj = adjective[rand(0,128)];
     var obj = noun[rand(0,157)];		
     var th = that[rand(0,86)];
-    var also = also[rand(0,72)];
+    var also = also[rand(0,75)];
     
     var add = add[rand(0,14)];
     var end = end[rand(0,9)];
@@ -69,13 +68,13 @@ var end = ["Does that make sense", "Spooky, right", "It's interesting, right", "
 
 //stuff below here is on hold for now
 
-//adjectives: "a talkative", "a one-eyed", "a massive", "a grotesque",
+//adjectives: "a talkative", "a one-eyed", "a massive", "a grotesque", "a hairy", "an animatronic", "a screaming",
 
-//nouns: "loaf of bread", "piano", "guitar", "totem pole", "owl-thing", "brick", "flower", "fork",
+//nouns: "loaf of bread", "piano", "guitar", "totem pole", "owl-thing", "brick", "flower", "fork", "tumor", "hobo",
 
 //that: "can levitate", "makes people try to eat batteries", "makes people try to eat books", "gives people severe hiccups", "screams for a very long time", "thinks humans are delicious", "falls on you", "eats your face", "turns lead into gold", "is made out of diamonds", "is made out of gold", "is made out of titanium",
 
-//twist: "there is no twist",
+//twist: 
 }
 
 
@@ -99,11 +98,10 @@ var end = ["Does that make sense", "Spooky, right", "It's interesting, right", "
 <p id="text"></p>
 
 <script type="text/javascript">
-// [But of course, they need something to put it in.] [How about] a ____ ____ [made out of] ______?
 //Beg: 
 //Dim: 
-//for: 
-//Mat: wood, alkaline metal, sharp objects, lasers, ice, iron, peanut brittle, wooden stuff, fire, plasma, non-newtonian fluids 
+//for:  
+//Mat: 
 //Int: 
 //Mad:
 generator();
@@ -119,20 +117,20 @@ var beg = ["''Well, I guess they need to put it in something.", "''But of course
 
 var int = ["What about a", "How about a", "I'm thinking maybe a", "What if they put it in a"]; //4
 
-var dim = ["1x1", "20cm x 20cm", "10cm x 10cm x 10cm", "100 x 100 mile", "20m x 20m x20m x20m", "tiny", "big", "gigantic"]; // 8
+var dim = ["1x1", "6 x 6 x 6 m", "planet-sized", "pea-shaped", "rectangular", "transparent", "crate-shaped", "reflective", "20cm x 20cm", "10cm x 10cm x 10cm", "100 x 100 mile", "20m x 20m x20m x20m", "tiny", "big", "gigantic"]; // 15
 
-var frm = ["box", "cell", "containment chamber", "tube", "crate", "locker", "room", "cube", "sphere"];  // 9
+var frm = ["box", "cell", "containment chamber", "yurt", "bowl", "statue", "cave", "lake", "pond", "tube", "crate", "locker", "room", "cube", "sphere"];  // 15
 
 var mad = ["made out of", "constructed from", "moulded out of", "formed from", "constructed out of", "formed out of", "built out of", "built from"]; // 8
 
-var mat = ["pure titanium", "solid gold", "admantium", "strontium", "strongtium", "solid platinum", "diamonds", "fairy dust", "bone", "flesh", "dark matter", "demon's blood", "antimatter", "ice", "lava", "100 karat gold", "steel", "frozen blood"]; // 18
+var mat = ["pure titanium", "solid gold", "admantium", "wood", "alkaline metal", "sharp objects", "lasers", "ice", "iron", "peanut brittle", "wooden stuff", "fire", "plasma", "non-newtonian fluids", "magic crystals", "strontium", "strongtium", "solid platinum", "diamonds", "fairy dust", "bone", "flesh", "dark matter", "demon's blood", "antimatter", "ice", "lava", "100 karat gold", "steel", "frozen blood"]; // 30
 
     var beg = beg[rand(0,2)];
     var int = int[rand(0,3)];
-    var dim = dim[rand(0,7)];
-    var frm = frm[rand(0,8)];
+    var dim = dim[rand(0,14)];
+    var frm = frm[rand(0,14)];
     var mad = mad[rand(0,7)];
-    var mat = mat[rand(0,17)]; 
+    var mat = mat[rand(0,29)]; 
 
         document.getElementById('text').style ="font:10pt Verdana;"
     document.getElementById('text').innerHTML = " " + beg + " " + int + " " + dim + " " + frm + " " + mad + " " + mat + "?''";
