@@ -99,7 +99,13 @@ var end = ["Does that make sense", "Spooky, right", "It's interesting, right", "
 <p id="text"></p>
 
 <script type="text/javascript">
-
+// [But of course, they need something to put it in.] [How about] a ____ ____ [made out of] ______?
+//Beg: ,
+//Dim: ,
+//for: ,
+//Mat: ,
+//Int: 
+//Mad:
 generator();
     
 function rand(min, max) {	return Math.floor(Math.random() * (max - min + 1)) + min; };
@@ -130,16 +136,7 @@ var mat = ["pure titanium", "solid gold", "admantium", "strontium", "strongtium"
 
         document.getElementById('text').style.font = "verdana";
     document.getElementById('text').innerHTML = " " + beg + " " + int + " " + dim + " " + frm + " " + mad + " " + mat + "?''";
-
-    console.log("Output: " + frm + beg + int + "that" + dim);
-    
-// [But of course, they need something to put it in.] [How about] a ____ ____ [made out of] ______?
-//Beg: ,
-//Dim: ,
-//for: ,
-//Mat: ,
-//Int: 
-//Mad:
+    console.log("Output: " + frm + beg + int + "that" + dim);	
 }
 
 </script>
