@@ -121,47 +121,32 @@ var mad = ["made out of", "constructed from", "moulded out of", "formed from", "
 
 var mat = ["pure titanium", "solid gold", "admantium", "strontium", "strongtium", "solid platinum", "diamonds", "fairy dust", "bone", "flesh", "dark matter", "demon's blood", "antimatter", "ice", "lava", "100 karat gold", "steel", "frozen blood"]; // 18
 
-    var beg = beg[rand(0,3)];
-    var int = int[rand(0,4)];
-    var dim = dim[rand(0,8)];
-    var frm = frm[rand(0,9)];
-    var mad = mad[rand(0,8)];
-    var mat = mat[rand(0,18)]; 
+    var beg = beg[rand(0,2)];
+    var int = int[rand(0,3)];
+    var dim = dim[rand(0,7)];
+    var frm = frm[rand(0,8)];
+    var mad = mad[rand(0,7)];
+    var mat = mat[rand(0,17)]; 
   
 
         document.getElementById('text').style.font = "verdana";
     document.getElementById('text').innerHTML = " " + beg + " " + int + " " + dim + " " + frm + " " + mad + " " + mat + "?''";
 
-    //document.getElementById('text').innerHTML = "''Oh! I got an idea for something we could write about. How about " + adj + " " + obj +  " that " + th + "? Cliche, right? " + add + ", the twist is that " + also + ". " + end + "?''";
-
     console.log("Output: " + frm + beg + int + "that" + dim);
     
 // [But of course, they need something to put it in.] [How about] a ____ ____ [made out of] ______?
-
 //Beg: ,
-
 //Dim: ,
-
 //for: ,
-
 //Mat: ,
-
 //Int: 
-
 //Mad:
-
 }
-
 
 </script>
 </body>
 </html>
 [[/html]]
-
-
-
-
-
  
 You nod and write a note to yourself to work on this later. It could end up being a really good story. Probably, anyway...
 
