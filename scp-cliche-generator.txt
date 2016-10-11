@@ -113,7 +113,7 @@ var beg = ["''Well, I guess they need to put it in something.", "''But of course
 
 var int = ["What about a", "How about a", "I'm thinking maybe a", "What if they put it in a"]; //4
 
-var dim = ["1x1", "20cm x 20cm", "10cm x 10cm x 10cm", "100 miles x 100 miles", "20m x 20m x20m x20m", "tiny", "big", "gigantic"]; // 8
+var dim = ["1x1", "20cm x 20cm", "10cm x 10cm x 10cm", "100 x 100 mile", "20m x 20m x20m x20m", "tiny", "big", "gigantic"]; // 8
 
 var frm = ["box", "cell", "containment chamber", "tube", "crate", "locker", "room", "cube", "sphere"];  // 9
 
@@ -127,7 +127,6 @@ var mat = ["pure titanium", "solid gold", "admantium", "strontium", "strongtium"
     var frm = frm[rand(0,8)];
     var mad = mad[rand(0,7)];
     var mat = mat[rand(0,17)]; 
-  
 
         document.getElementById('text').style.font = "verdana";
     document.getElementById('text').innerHTML = " " + beg + " " + int + " " + dim + " " + frm + " " + mad + " " + mat + "?''";
