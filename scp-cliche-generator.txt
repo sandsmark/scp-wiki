@@ -115,7 +115,7 @@ var int = ["What about a", "How about a", "I'm thinking maybe a", "What if they 
 
 var dim = ["1x1", "20cm x 20cm", "10cm x 10cm x 10cm", "100 miles x 100 miles", "20m x 20m x20m x20m", "tiny", "big", "gigantic"]; // 8
 
-var for = ["box", "cell", "containment chamber", "tube", "crate", "locker", "room", "cube", "sphere"]; //9
+var frm = ["box", "cell", "containment chamber", "tube", "crate", "locker", "room", "cube", "sphere"];  // 9
 
 var mad = ["made out of", "constructed from", "moulded out of", "formed from", "constructed out of", "formed out of", "built out of", "built from"]; // 8
 
@@ -124,13 +124,13 @@ var mat = ["pure titanium", "solid gold", "admantium", "strontium", "strongtium"
     var beg = beg[rand(0,3)];
     var int = int[rand(0,4)];
     var dim = dim[rand(0,8)];
-    var for = for[rand(0,9)];
+    var frm = for[rand(0,9)];
     var mad = mad[rand(0,8)];
     var mat = mat[rand(0,18)]; 
   
 
         document.getElementById('text').style.font = "verdana";
-    document.getElementById('text').innerHTML = " " + beg + " " + int + " " + dim + " " + for + " " + mad + " " + mat + "?''";
+    document.getElementById('text').innerHTML = " " + beg + " " + int + " " + dim + " " + frm + " " + mad + " " + mat + "?''";
 
     //document.getElementById('text').innerHTML = "''Oh! I got an idea for something we could write about. How about " + adj + " " + obj +  " that " + th + "? Cliche, right? " + add + ", the twist is that " + also + ". " + end + "?''";
 
