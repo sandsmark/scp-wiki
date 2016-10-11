@@ -61,7 +61,7 @@ var end = ["Does that make sense", "Spooky, right", "It's interesting, right", "
     var add = add[rand(0,14)];
     var end = end[rand(0,9)];
 
-        document.getElementById('text').style.font = "verdana";
+        document.getElementById('text').style = "font:10pt Verdana;"
     document.getElementById('text').innerHTML = "''Oh! I got an idea for something we could write about. How about " + adj + " " + obj +  " that " + th + "? Cliche, right? " + add + ", the twist is that " + also + ". " + end + "?''";
 
 
@@ -115,7 +115,7 @@ function generator() {
 
 
 
-var beg = ["''Well, I guess they need to put it in something.", "''But of course, they need something to put it in.", "''they should probably put it in something too."]; //3
+var beg = ["''Well, I guess they need to put it in something.", "''But of course, they need something to put it in.", "''They should probably put it in something too."]; //3
 
 var int = ["What about a", "How about a", "I'm thinking maybe a", "What if they put it in a"]; //4
 
@@ -134,13 +134,17 @@ var mat = ["pure titanium", "solid gold", "admantium", "strontium", "strongtium"
     var mad = mad[rand(0,7)];
     var mat = mat[rand(0,17)]; 
 
-        document.getElementById('text').style.font = "verdana";
+        document.getElementById('text').style ="font:10pt Verdana;"
     document.getElementById('text').innerHTML = " " + beg + " " + int + " " + dim + " " + frm + " " + mad + " " + mat + "?''";
     console.log("Output: " + frm + beg + int + "that" + dim);	
 }
 
 </script>
-You nod and write a note to yourself to work on this later. It could end up being a really good story. Probably, anyway...
+   </span>
+<span style="font:10pt Verdana;">
+
+ You nod and write a note to yourself to work on this later. It could end up being a really good story. Probably, anyway...
+       </span>
 
 </body>
 </html>
