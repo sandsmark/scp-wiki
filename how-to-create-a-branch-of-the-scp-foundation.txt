@@ -1,0 +1,308 @@
+title:How to create a branch of the SCP-Foundation
++ Introduction
+[[f>toc]]
+Hi, I'm [[*user Dr_Grom]], Master Administrator of the [http://scp-wiki-de.wikidot.com/ German branch]. In this article I'd like to share my experience on how to set up a branch of the SCP-Foundation and how to get acknowledged as an official branch.
+
+++ Prerequisites
+* Do not think you can do this alone. This doesn't work as a one-man-show.
+* Do not think this will take low effort or go fast.
+* You should be at least three people for staff, of which at least two are to have admin rights, so if one becomes inactive, the other one can take over.
+* The Master Admin should tell the rest of the staff an email-address through he/she is definitely contactable (in case he/she is getting inactive and something important happens).
+* Read [http://www.scp-wiki.net/extra-community-scp-sites-guide this].
+* There already is an unofficial branch in your language but it is inactive and rather dead? All attempts to make it more active again failed? Create a new one. And don't repeat what lead to the inactivity of the older branch. And copy all usable pages.
+* You are a staff member of an existing branch that doesn't make progress? Follow every step not completed yet that you have the administrative rights to.
+
++ 1. Setting up the wiki
+++ 1.1 Preparations
+Before you start copying the template and stuff you should prepare watching the important pages on the main wiki, to monitor changes and apply them to your wiki.
+* Usually the [https://www.wikidot.com/account/activity Activity Page] is quickly flooded with news if you are watching the EN-Wiki or another very active branch, and therefore very slow. By default you are watching every wiki you are joining, so you should clean up.
+
+* In the activity-tab go to [https://www.wikidot.com/account/activity#/watching Settings] and there to the "Sites" tab.
+
+* Unwatch everything you don't really want to monitor as a whole.
+
+* Whenever you are copying an administrative or mayor page, click "Start watching [...] this page" on the bottom right of the page, above "+ Options". Or watch the whole category. I suggest watching the categories "component", "nav" and "system" of the EN-Wiki. You should not watch "_default" and "forum".
+
+* Later you should also watch your branch, sandbox and O5-Wiki, [http://scp-international.wikidot.com/ SCP-International] and maybe [http://05command.wikidot.com/ O5 Command] (at least the [http://05command.wikidot.com/ambassador-main Ambassadors Hub]), and every page from side- or top-bar and every hub you translate.
+
+++ 1.2 Creating a new wiki
+The person who is going to be the Master Administrator is to go to "[https://www.wikidot.com/account/sites Sites]" in their control panel, press "+ Create a site" and fill in the forms. With a free account you can have up to 5 wikis.
+* For the URL use the syntax {{scp-XX.wikidot.com}} where XX stands for the [https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes ISO-639-1] code of your language. [[footnote]]Some say the [https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 ISO 3166-1 alpha-2] codes should be used, but this is about language, not nationality, also both codes are the same in many cases.[[/footnote]]
+
+* Use the "blank template". You are going to use a custom theme and the other templates contain unnecessary pages.
+
+++ 1.3 Copying important and system-pages 
+Before you start making settings in your Admin Panel, copy and translate **the following pages and all their attached files** to your wiki (as some settings require this pages to exist)
+Use the same URLs as the English wiki for compatibility. So the page {{scp-wiki.com/object-classes}} should be {{scp-XX.wikidot.com/object-classes}} etc.
+**You should lock all of these pages!** (+ Options -> Lock Page)
+> You will encounter lots of locked pages. To see the source-code of a page, locked or not, do not click "Edit" (as the page is reserved for you then), instead click "History" and there click the [S] at the topmost entry or "Page Source" in "+ Options".
+> 
+> This step is the most difficult, especially when making changes while being unfamiliar with the Wikidot Syntax. If you are having questions feel free to PM me (or ask Staff).
+* http://www.scp-wiki.net/component:theme -- follow the instructions 1. to 4. and 7. to 10., but make sure to copy the source code of said page, not the displayed code.
+ * 5. needs a workaround as staff has decided to hide the bottom options bar for the "nav"-category because [redacted]. Use the following links which lead directly to the history at each page:
+ * http://www.scp-wiki.net/nav:top#_history
+ * http://www.scp-wiki.net/nav:side#_history @@ @@[[footnote]]In addition to translation, make adjustments to the sidebar as you feel necessary. You are not obliged to just copy the English site. Anyway for both pages translate only each articles display-name, not the URL-name (like {{@@[[[groups-of-interest|Interessengruppen]]]@@}})[[/footnote]]
+ * http://www.scp-wiki.net/main @@ @@[[footnote]]You will probably want to change the layout a bit. As for the start the two boxes of featured articles are unnecessary as you probably have nothing to feature. You also may wish to create a welcome-box.[[/footnote]]
+
+* http://www.scp-wiki.net/_404 @@ @@[[footnote]]By existing this template is displayed whenever somebody opens a page that doesn't exist yet.[[/footnote]]
+
+* The pages in the category [[footnote]]A category is everything before the first ":" in the URL.[[/footnote]] {{component:}} are templates that are to be included into other pages by using the {{@@[[@@[http://www.wikidot.com/doc-wiki-syntax:include include]@@]]@@}} function. Do not translate expressions like {$bla}.
+ * http://www.scp-wiki.net/component:_template @@ @@[[footnote]]By existing this template is displayed on top of every page in the category {{component:}}[[/footnote]]
+ * http://www.scp-wiki.net/component:area
+ * http://www.scp-wiki.net/component:listpages-hubs
+ * http://www.scp-wiki.net/component:listpages-table
+ * http://www.scp-wiki.net/component:listpages-table-alt
+ * http://www.scp-wiki.net/component:listpages-tales
+ * http://www.scp-wiki.net/component:heritage-rating
+ * http://www.scp-wiki.net/component:image-block
+ * http://www.scp-wiki.net/component:image-block-base
+ * http://www.scp-wiki.net/component:image-block-left
+ * http://www.scp-wiki.net/component:image-block-left-base
+ * http://www.scp-wiki.net/component:image-block-quoted
+ * http://www.scp-wiki.net/component:image-block-quoted-base
+ * http://www.scp-wiki.net/component:mtf
+ * http://www.scp-wiki.net/component:preview
+ * http://www.scp-wiki.net/component:site
+* The pages in the category {{forum:}} should just be copied and only the title translated. The code must remain untouched!
+ * http://www.scp-wiki.net/forum:start
+ * http://www.scp-wiki.net/forum:category
+ * http://www.scp-wiki.net/forum:new-thread
+ * http://www.scp-wiki.net/forum:recent-posts
+ * http://www.scp-wiki.net/forum:recent-threads
+ * http://www.scp-wiki.net/forum:thread
+ 
+* Create {{random:random-scp}} and fill in the following [[footnote]]This page will automatically redirect to a random article tagged with "scp". To access this page later without redirecting, add {{/noredirect/true}} to the url, like {{scp-XX.wikidot.com/random:random-scp/noredirect/true}}[[/footnote]]:
+> @@[[module ListPages category="*" order="random" limit="1" tag="scp"]]@@
+> @@[[include :snippets:redirect url=%%link%%]]@@
+> @@[[/module]]@@ 
+
+++ 1.4 Settings in the Admin panel
+Make the settings you want in your Admin Panel ({{scp-XX.wikidot.com/_admin}}).
+
+* Use the Creative Commons Attribution-ShareAlike 3.0 License. A non-commercial license only scares monetizing YouTubers away.
+
+* You should use [http://scp-wiki-de.wikidot.com/local--favicon/favicon.gif this favicon].
+
+* You should hide the Wikidot Toolbars.
+
+* Enable voting, at least for the category _default. The Foundation branches use anonymous +/- type for site members.
+
+* Set up your forums.
+ * I suggest a depth of 3.
+ * As for the structure I suggest a group for general SCP-related talk, one for critics and help, one for wiki-related issues, one page-related and the hidden group for obsolete threads. Don't forget to create at least one category in each group. Do not forget to save your changes.
+ * Activate page-related discussion at least for the _default category. I suggest activating this for all categories but "forum", "random", "search" and "system".
+ * I suggest deactivating new threads in page-related discussion. Threads are added automatically when a user posts in the discussions of a page. There should be no user created threads.
+
+If you are staff of an existing branch, your forums and/or voting are disabled and the is admin inactive and unresponsive, your branch is actually dead, no matter how active your users are. Create a new branch.
+ 
+Congratulations, you've just created the //foundation// of your new branch :)
+
+++ 1.5 Meta tags
+Wikidot supports adding meta tags to every page. These are tags containing additional information for the browser, search engines and the like.
+There are several more or less useful possible meta tags. You probably already have set the "viewport" meta tag to enable mobile view. If you haven't, i strongly recommend to do it now, for all of your wikis using the Sigma-9 theme.
+
+I recommend the meta tag "keywords" with which you can provide keywords describing your page to search engines like "scp,scp-foundation" and the like, comma-separated. The most important come first.
+
+The EN-Wiki also uses the meta tag "description" containing "Front Page" on their front page. Nobody knows why, as the admin who set this meta tag has left. I think it is because the Front Page has no title and no unix-name.
+
+++ 1.6 Sandbox
+Trust me, you want this. A Sandbox-Wiki is a playground where nothing is true and everything is allowed. Ok, almost everything. Here your users can create drafts of articles and get feedback before they post them on the main page and they can try out code without breaking existing articles.
+
+Just repeat step 1.2 to 1.4 with just little difference:
+* For reference: [http://scpsandbox2.wikidot.com/ Sandbox of SCP-EN], [http://scpsandboxde.wikidot.com/ Sandbox of SCP-DE].
+* http://scpsandbox2.wikidot.com/component:theme -- Theme of the Sandbox
+* You only need the {{forum:}}-Pages if you activate the Forum here which is not necessary. All {{component:}}-pages are required.
+* Activating voting in the sandbox is not recommended. 
+* Editing articles in the Sandbox should not require membership there. Though uninvited edits on other user’s articles should be prohibited.
+
+++ 1.7 O5-Wiki
+This is where staff discusses things without interruption of non-staff members.
+Setup is a little different than above.
+* For reference: [http://05command.wikidot.com/ O5 of SCP-EN], [http://05zentrale.wikidot.com/ O5 of SCP-DE]
+* Some O5 Wikis use the Wikidot-theme "Shiny". The French uses the normal SCP-Theme, Sigma-9, we are using Sigma-9 [http://05zentrale.wikidot.com/component:theme with a background] resembling the Shiny-theme. Some are using totally different themes. Do as you like.
+* Access policy is to be set to closed. Invite your fellow staff to the wiki or set up an application page. Usually the O5-Wiki is to be reserved for staff only.
+* You can hide pages from users who are not members of your O5-Page by using a category (e.g. {{hidden:}}) and only granting the view-right to site-members in the Admin-Panel. Anyway you should keep things visible to the public.
+
++ 2. Getting your branch going
+++ 2.1 Rules
+Before any content you need rules:
+* Behavior (like "Don't be a dick" and whatever you think is necessary) 
+* Rules for writing and tagging that aren't covered by your translation-rules.
+* Rules for translating, including tagging rules for translations and a glossary with translations of the following words and expressions (and those I forgot):
+ * Item #:
+ * Object class:
+ * Special Containment Procedures:
+ * Description:
+ * Addendum:
+ * Safe
+ * Neutralized
+ * [Data expunged]
+ * [Redacted]
+ * Site
+ * Containment
+ * Containment Chamber
+ * Containment Breach
+ * Amnestic
+* **Unedited Google-translations should be highly forbidden and reason for deletion or even ban!**
+* Rules for tagging. Tagging is very important to keep the wiki clean and professional. Your users should be required to use the tags of the page they are translating where applicable.
+ * You should create a glossary of translated [http://05command.wikidot.com/tag-guide Tags from the EN-Wiki] in both directions.
+ * You should have a tag for translations and for original content.
+* I highly recommend requiring users to get permission from a staff member or another trustworthy member to post the original content they wrote, after getting feedback in your forums. This way you can prevent low quality coldposts and force your users including staff and yourself to get feedback which benefits everybody.
+* Users should not be allowed to create new categories (":" in URLs) which would mess up automated Lists.
+
+++ 2.2 Public relations
+Your branch is worth nothing if you have no members and nobody knows about you. Once you have set up everything it is time for some PR.
+* Inform [[*user Blaroth]], captain of the [http://05command.wikidot.com/internet-outreach-main Internet Outreach] team about your branch. She is going to be your main contact and is probably the one who decides when you are ready to become an official branch.
+ * Do not announce your branch on the EN-Wikis Forums without her permission!
+ * Ask for allowance to join http://scp-international.wikidot.com/ and announce your branch there to receive feedback from staff members of other branches.
+* Create an account at the social media most popular among your target group.
+ * Once you have the capacity you may wish to also create more like a Facebook-page, a YouTube-Channel, a Twitter account and other social media.
+* Get in contact with other creepypasta sites in your language. Maybe you can get into a link-exchange (like we are with the german creepypasta-wikia) and maybe you can copy translations and get users from there.
+If your want to create icons etc. you can use [http://05zentrale.wikidot.com/grafiksammlung our templates].
+ 
+++ 2.3 Roadmap
+A roadmap is an important tool to planning how to get to a certain goal, and to keep track of completed and incomplete steps. In my opinion every branch including EN should have one. See the [http://scp-wiki-de.wikidot.com/about-the-foundation-in-germany roadmap on our Information-page] for inspiration.
+
+For an unofficial branch I suggest the following roadmap to begin with:
+> # Milestone: Framework
+>  * Create all system-pages
+>  * Create all articles in the sidebar
+>  * Create all articles in the topbar
+>  * Create the necessary guides [[footnote]]You don't need to translate every guide here, also some only apply to the EN-wiki[[/footnote]]
+>  * Organize QA
+>  * Create background concept
+>   * What are we?
+>   * How do we deal with controversy topics like nukes, D-class and Thaumiel-SCPs?
+>   * Do we imply a primary background if no other is used?
+> # Milestone: Contents
+>  * Translate most important English articles (Priority B)
+>  * Translate most important articles of other branches if possible (Priority B) [[footnote]]If you are translating from other branches which I personally recommend.[[/footnote]]
+>  * Import usable translations from other sites [like CP-Wikias]
+>  * Have 100 SCPs in your language
+> # Milestone: 100+ Members
+>  * Organize PR
+>   * Most important media among your target group
+>   * Other social media of importance for your target group
+>  * Improve our Google ranking
+>   * Google Analytics [see 2.5]
+>   * Connect to Google Search Console
+>   * Get link-partnerships
+
+++ 2.4 Prioritizing Translations
+I suggest creating a Priority-list for translations [http://scp-wiki-de.wikidot.com/uebersetzungsprioritaeten like this]. Not only for new branches but for all of them. With this you and your users can easily keep track on which article to translate next or from which pool of articles to choose. I recommend copying revision 25 of our priority list (which is the most complete) and adding the articles you have not yet translated. Once a translation is done, remove the article from the list.
+
+I recommend the following priority-levels:
+> * A: Superultramega important like hubs, informational or help-pages and everything in the top- and sidebar
+> * B: Extremely important like Heritage-SCPs and articles in the Top-10 of the EN-Wiki and the Top-2 of other branches
+> * C: Very important like articles in the Top-50 of the EN-Wiki and the Top-10 of other branches
+> * D: Important like articles linked in an A-article
+> * E: Less important like articles linked in a B-article or an SCP somebody is working on, without a higher priority
+
+++ 2.5 Google Analytics
+You can connect your wiki to Google Analytics. Though understanding GA and to draw the right conclusions isn't easy. You should have somebody who knows what to do with the information from GA, otherwise it's unnecessary to connect. You can also connect to Google Search Console. Use the Metatag-Verification.
+
+++ 2.6 Becoming an official branch
+There are no quantitative requirements to becoming an official branch, so the following are just things I think may be important (I found the insecurity in this step very unpleasant, so maybe someone from Internet Outreach could leave some comments regarding if this is correct or not or how the following should be extended).
+
+I think the main requirements are basic content and continuous activity:
+> * Complete the framework (Priority A)
+> * Have the Heritage-Collection translated (Priority B)
+> * Have other SCPs translated, important or not
+> * Have own SCPs (like 20 or so)
+> * Have like 10 active members
+> * Have active social media accounts
+> * Follow the steps in your roadmap and keep your roadmap and priorities actualized
+
+++ 2.7 License
+It is highly recommended and probably required for acknowledgement to use the [https://creativecommons.org/licenses/by-sa/3.0/ Creative Commons Attribution-ShareAlike License] (CC BY-SA 3.0) for all your sites. Yes, the Russian branch uses the CC BY-NC-SA license which forbids commercial use of its contents. Though a non-commercial license has more cons than pros. There is probably nobody who's gonna get rich with your translations or something. And monetizing YouTubers couldn't vocalize your articles.
+Also while the Russian branch can use this license as an exception this doesn't mean you can too.
+While I'm not a license-expert, as far as I know all content in the SCP-Universe is CC BY-SA 3.0, because everything based on that idea is a derivative and therefore has the same license, no matter what. Ask the [http://05command.wikidot.com/license-experts-main licensing team] for more information.
+
+With the CC BY-SA license you are required to do the following (these are //musts// not //mays//!):
+* **Attribute:** Post all original authors, including authors of rewrites and all translators in the comments of the translated page. Since the EN-Wiki has migrated to Wikidot from Editthis, older pages are not necessarily authored from their real author but from the user who imported them from Editthis. See [http://www.scp-wiki.net/attribution-metadata this document] for the real author.
+* **Share alike:** Every copy or derivative (the translated page) //must// have the same license as the original! 
+
+This also means that you have to check the images your users are using for obvious violations. Images though do not necessarily have to be under the same license as the wiki. Make sure to abide to all rules of the images license. When in doubt ask the creator/license holder. 
+
+If your are translating original content from the Russian branch, you may copy [http://scp-wiki-de.wikidot.com/component:cc-by-nc-sa-3-0 this component] to your page and insert it into such translations with {{@@[[include component:cc-by-nc-sa-3-0]]@@}} or whatever name you give the component.
+
+For questions regarding licensing ask the [http://05command.wikidot.com/license-experts-main License Experts].
+
+++ 2.8 Mobile Version
+Compare the look of your branch on a mobile device with the EN-wiki. If it doesn't look like it should, there are three mistakes you may have made that come to my mind:
+* You have forgotten to or made a mistake when setting the metadata in step 1.3. Make sure you didn't copy the ". 
+* You didn't set the metatag for all pages.
+* You didn't copy the code snippets in {{nav:side}} and {{nav:top}} correctly. Everything below {{[[div class="mobile-top-bar"]]}} in {{nav:top}} is the top-bar of the mobile version. There shouldn't be more than three categories.
+
+++ 2.9 Once you are official
+Keep things going. Not much more to say. Maybe now you want to define the next milestones to keep an idea where your branch is headed.
+
+You are now probably shown on http://scpper.com/ and supported by the Chrome-extension. If you want some customizations ask [[*user FiftyNine]].
+
+++ 2.10 Information Page
+This is not a requirement but I wish every branch would do this: Create an informational page in English, like [http://scp-wiki-de.wikidot.com/about-the-foundation-in-germany this]. I found it very difficult to find out anything about the other branches as no one has an information page, neither in English nor in their language. So I ask you (and all existing branches) to create a page where you tell who you are, your primary canon (if you have one) and where you are heading.
+
++ 3. Daily issues
+++ 3.1 Coding
+The wikidot-syntax is highly flexible and allows lots of magical things. Make yourself familiar with the [http://www.wikidot.com/doc-wiki-syntax:start Syntax], [http://www.wikidot.com/doc-modules:start Modules] and [http://snippets.wikidot.com/ Code Snippets]. If you have questions ask me or EN-staff.
+
+Pages and tags starting with "_" are hidden and not displayed in automated lists unless these are configured to show hidden pages. You should only use hidden pages for wikidot-magic.
+You can use hidden tags to better configure lists sorted by tags. E.g. the tag {{_sys}} is used to hide hubs in automated lists where they would otherwise be displayed, like the [[[Series Archive]]] would list itself, wasn't it tagged with {{_sys}}.
+
+++ 3.2 Quality Assurance
+Of course you will encounter really bad translations and original content. But not only those, also articles which look correct on the first glance need to be reviewed. In short: You need a system to organize review of all pages in your wiki.
+
+If your userbase isn't full of grammar Nazis, or big enough to review itself without staff taking action, you will never be able to correct everything. Deal with it. Though you and your staff have to make sure that at least obvious mistakes are being corrected.
+
+We are having the "Seal of Review", which means that every page which was reviewed by a staff member gets the tag "⦿", while every page that is yet to be reviewed gets the tag "o". This system is still imperfect but it works to the point that articles are not unnecessarily reviewed twice. Though this only guarantees that the reviewed pages are formally correct and obvious misspelling is corrected.
+
+Also in addition to step 1.1 keep track of all pages you translate to apply changes, and make your users do the same.
+
+++ 3.3 Maintenance
+There will always be users who don't follow the rules. While formatting errors are obvious and errors in content and spelling can only be found by reviewing the page, you can very easily find errors in tagging by using automated lists.
+
+With the ListPages-Module you can create lists of pages with or without certain tags or tag-combinations. I recommend creating a workbench on your main wiki, like [http://www.scp-wiki.net/drewbear-workshop Drewbear's Workshop] (which i think is the most clearly workbench of the EN-staff). You will probably need some different lists so I suggest adding own lists (see [http://www.wikidot.com/doc-modules:listpages-module ListPages Module Documentation]).
+
+I recommend the following lists:
+> * Pages without tags
+> * No class-tag (safe, euclid, keter, ...)
+> * No category-tag(scp, tale, supplement, ...)
+> * Only "scp" and class
+> * Class without "scp"
+> * Without translated- or original-content-tag 
+> * Without review-tag (if you are using such)
+> * Supplements without parents
+> * Orphaned pages ({{@@[[module OrphanedPages]]@@}})
+> * Wanted pages ({{@@[[module WantedPages]]@@}})
+> * Categories including hidden ({{@@[[module Categories includehidden="true"]]@@}}, good to find pages with ":" in their URL) 
+> * Hidden pages
+> * Pages with tags you may wish to use like "unfinished", "supplements-missing", "in-progess", "needs-correction" etc.
+You can find the code for this lists in [http://scp-wiki-de.wikidot.com/groms-listen my workbench].
+
+++ 3.4 Being Staff
+As staff member and especially as very active admin you will not be seen as normal user. Some will look up to you; some will look down on you. Everything you say might be seen not just as ordinary comment but as word from the administrator. Be it the power you have or the competence that is implied or whatever, people will always give your words more weight than they actually have, even other staff members. As if you where a better person because you set up this thing or something. Welcome to the world of politics.
+
+You now have two options how to deal with that. All other options you may see are probably Don'ts.
+# Deal with it and fulfill the role
+# Create another account for your role as normal user which you use for everything that isn't administrators duty [[footnote]]Tell at least your fellow staff about your authors-account[[/footnote]]
+
+Whatever you chose, stick to this rules:
+* Do not be an asshole!
+ * Do not ban users because you can!
+ * Do not delete articles if it isn't absolutely necessary!
+ * Do not stick your nose into everything unasked!
+* Treat everybody with the same respect you want to be treated with by an Administrator!
+* Do not make decisions without asking your staff! 
+ * Maintain democracy! 
+ * Also ask your users! Not only do you know nothing, they may have ideas you and your staff would never come up with.
+* Keep bureaucracy low!
+* Be trustworthy! Keep private things private, do not publish PMs if not necessary!
+* Be reliable! If you're not willing to come by every other day and answer questions, don't become Staff!
+* You sometimes will have to deal with peoples bullshit and solve their problems. Always remain neutral and listen to both sides. Be fair.
+* Don't be a wise ass! You may be an expert in some fields, like SCP-Canon or chemistry (I for one am an engineer) but you don't know everything, even if some people think you do.
+* Encourage criticism of your work as admin and as author!
+* Always remember: You are just another stupid person without anything special. You just happen to have chosen to maintain a Wiki.
+Unlike the EN-Staff you don't have thousands of users to manage. Probably just a dozen including staff, so appropriate behavior is more important than ever. You can still be an ass all you want, once you reach a few thousand members.
+
++ 4. Profit
+So I guess that's everything to say. If you are having questions, comments or recommendations for this guide or on specific topics I forgot, just leave a comment in the discussion here. If you need help with setting up your branch or something doesn't work like you think it should, feel free to comment, PM me or ask EN-Staff.
