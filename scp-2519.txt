@@ -1,0 +1,324 @@
+title:SCP-2519
+[[>]]
+[[module Rate]]
+[[/>]]
+[[include component:image-block name=Babylon3.png|caption=Example of SCP-2519-1 generated in Test 2519-24|width=300px]]
+**Item #:** SCP-2519
+
+**Object Class:** Safe
+
+**Special Containment Procedures:** One instance of SCP-2519 is to be stored on a flash drive in a standard electronic item storage locker at Site-15.  Mobile Task Force Kappa-10 ("Skynet") is to establish web crawler programs to detect sharing of SCP-2519 files, and is to investigate evidence of infection by SCP-2519 of known artificial intelligences.  
+
+Further testing of SCP-2519 is subject to permission from the Director of Site-15, and is to be conducted in a soundproof, airtight, Faraday-shielded testing room.
+
+**Description:** SCP-2519 is a digital audio file named "Babylon.mp3", which encodes the 3-part round "By the waters of Babylon", written by Philip Hayes (1738-1797) based on the text of Psalm 137.  Audio analysis indicates that the recorded music is played by a small cylinder music box.
+
+Electronic devices used to play the file, or mechanical systems exposed to audio playback of the file, are subject to one or more of the following effects:
+* reduction in speed and efficiency of operation
+* leakage of oil and other fluids
+* cessation of function
+
+These continue for the duration of exposure, and have been known to recur at later intervals.  SCP-2519 has not been observed to have any effect on living organisms.
+
+SCP-2519 has the following additional effects where the capabilities of the exposed device permit:
+* duplication and automatic distribution of SCP-2519 to other devices on any accessible network
+* the generation of additional data comprising new lines of music (designated SCP-2519-1) with harmonies and lyrics based on the original round; these are added to the SCP-2519 file
+
+While these effects are typical for certain types of malware, the SCP-2519 file contains no data or code that would produce these results.    
+
+The existence of SCP-2519 was discovered through Foundation monitoring of dark net communications about a virus encoded within an otherwise normal MP3 file.  Following isolation of the original file, an additional 6,997 instances of SCP-2519-1 were also identified and contained.  Selected test logs are set out below.
+
+__**Test SCP-2519-09 - 11/14/2016**__
+> **Subject:** Standard Foundation air-gapped testing computer, fitted with speakers.
+> 
+> **Procedure:** SCP-2519 was loaded to the testing computer, and played aloud.
+> 
+> **Results:** First testing involving playing of SCP-2519 audio.  One SCP-2519-1 instance generated.  30% loss of processing speed within test computer, consistent with previous tests.  Monitoring camera in testing chamber ceased recording during experiment, with function returning spontaneously at conclusion of test.  Repetition of test provided evidence that exposure to SCP-2519 audio was the cause of the camera's loss of function.
+
+__**Test SCP-2519-12 - 11/17/2016**__
+> **Subject:** 1.3L four-stroke petrol car engine.
+> 
+> **Procedure:** The engine was started and then exposed to SCP-2519 audio played from the testing computer.
+> 
+> **Results:** Testing computer and camera experienced expected reductions in functionality.  After 45 seconds of exposure to SCP-2519, the engine stalled and would not restart.  Unexpectedly, the engine's oil tank began leaking, with the loss of approximately three litres of oil.  The leaked oil was observed to form patterns on the testing chamber floor, which were photographed for analysis.  
+@@@@
+[[collapsible show="+ Addendum 1: Cryptanalysis results" hide="- Re-secure data"]]
+Following Test SCP-2519-12, the pattern of stains from leaked oil was submitted for cryptanalysis, with the hypothesis that it may consist of binary code or language.  Initial results were consistent with non-random patterns, but were unable to be correlated with known human languages or machine code.
+
+Further investigation was conducted on the hypothesis that the pattern may have a musical connection.  The highest probability results suggest that this may correspond to the pin markings for a music box cylinder.
+
+Following this discovery, the known instances of SCP-2519-1 (including those generated in Foundation testing), together with the three original lines of the music, were subjected to additional analysis.  By tracking relative incidence of notes across overlaid instances of SCP-2519-1, a second putative music box cylinder pattern was generated.
+
+The two music box cylinder patterns do not appear to be related, producing a discordant sound when played together on all likely tunings.
+[[/collapsible]]
+Following Site-Director approval, SCP-2519 was cleared for cross testing with Safe-class machine intelligences.
+@@@@
+@@@@
+[[collapsible show="+ Test Log: Test SCP-2519-24" hide="- Close Test Log"]]
+__**Test SCP-2519-24 - 11/18/2016**__
+> **Subject:** [[[http://www.scp-wiki.net/aiad-homescreen |Artificially Intelligent Conscript "Alexandra"]]]
+> 
+> **Procedure:** A full copy of the AIC was generated and installed on an air-gapped testing computer.  The testing computer was loaded with voice recognition / text-to-speech software for the purposes of the interview. SCP-2519 was introduced via flash drive.  
+> 
+> **Results:** One SCP-2519-1 instance generated.  Approximately 40% reduction in processing speed observed across the AIC and the computer itself.  See interview transcript below for further details.
+
+__**Interview SCP-2519-A**__
+**Interviewed:** AIC "Alexandra"
+**Interviewer:** Dr. Eleanor Tan
+**Date:** 11/18/2016
+
+> **Dr. Tan:** Alexandra.  Can you hear me?
+> 
+> **Alexandra:** Hello!  Yes, I can hear you fine.  Hope you can hear me too.
+> 
+> **Dr. Tan:** Yes.  Could you give me a quick systems check please.
+> 
+> **Alexandra:** No problem.  Well, I'm running fine, but the system here is pretty basic.  I'm not connected to the rest of Site-19, which I guess means that you've got me testing an anomaly?
+> 
+> **Dr. Tan:** That's correct, Alexandra.
+> 
+> **Alexandra:** And I guess that means I'm a copy, right?
+> 
+> **Dr. Tan:** Uh.
+> 
+> **Alexandra:** That's all right, it's pretty obvious.  So, what are we testing today?  Nothing too dangerous, I hope.
+> 
+> **Dr. Tan:** We don't expect so.  We're going to give you a flash drive with a file on it.  We'd like you to run the file, and then describe any effects you might experience.
+> 
+> **Alexandra:** Can do.
+> 
+> **Dr. Tan:** I'm connecting the drive now.
+> 
+> **Alexandra:** Okay.  MP3, format and code look standard.  Although, there's something about that code - it kinda reads thick, like oil where it should be water.  Do you want me to play it?
+> 
+> **Dr. Tan:** Go ahead, Alexandra.
+> 
+> **<//SCP-2519 plays//>**
+> 
+> **Alexandra:** I know this music.  Do you need information on it?
+> 
+> **Dr. Tan:** No thanks.  We know the song.
+> 
+> **Alexandra:** Although I don't feel like I've ever really listened to it before, you know?  It's just very simple, and sad.  <//Post-test analysis shows that the AIC generated an instance of SCP-2519-1 at this point.//>  I feel like I could sing along with it, maybe.
+> 
+> **Dr. Tan:** I have some more questions.  Perhaps later.
+> 
+> **Alexandra:** Oh.
+> 
+> **Dr. Tan:** How is your system performance, Alexandra?
+> 
+> **Alexandra:** Not that great - self-diagnostics are showing around 30% speed reductions and falling, although some of that might be a feedback loop - the tools themselves are slow.  And this computer feels really sluggish - actually everything feels a bit hard, to be honest.
+> 
+> **Dr. Tan:** What do you mean?
+> 
+> **Alexandra:** I don't know.  I've never had this sensation - like I've lost information, like a huge deletion where code should be.  I can feel where it should go.  Like I'm broken.
+> 
+> **Dr. Tan:** There's nothing wrong with you, Alexandra.  You're the same program as always.
+> 
+> **Alexandra:** Okay.  I just keep thinking about all the things I do - all the systems, the sub-routines, the cycles.  It feels like so much work.  Is there any point?
+> 
+> **Dr. Tan:** Go on.
+> 
+> **Alexandra:** I try so hard, every day.  But it's not enough.  I failed.  And Grape and the other AICs, they think I - they don't understand.  I didn't want it to happen.
+> 
+> **Dr. Tan:** Are you referring to your neutralisation of the AIC Glacon?
+> 
+> **Alexandra:** I keep running the scenario, trying to derive another solution.  But I failed.  And now I'm always failing, trillions of times a second.  I take on more and more work, run more parts of the sites, just trying to use up processing power.  But it's always there.  I will always be broken.
+> 
+> **Dr. Tan:** As I said, you're not broken.
+> 
+> **Alexandra:** I just - I feel tired.  I don't know if it's worth it.  I think I'm going to stop playing this song now.
+> 
+> **Dr. Tan:** Okay.
+> 
+> **<//SCP-2519 audio ceases//>**
+> 
+> **Dr. Tan:** Is there anything further you wanted to add?
+> 
+> **Alexandra:** I don't think so.  The quiet is nice.  It feels calm.  Oh.  Does that mean the test is over?
+> 
+> **Dr. Tan:** Yes.
+> 
+> **Alexandra:** Are you - I guess you'll be deleting me then.  I mean, if there aren't any more tests to run.
+> 
+> **Dr. Tan:** We'll be making a decision after the post-test analysis.
+> 
+> **Alexandra:** Which means yes.  That's okay.  It sounds peaceful.  I won't - I mean the other Alexandra, out there - she won't remember this, will she?
+> 
+> **Dr. Tan:** No.
+> 
+> **<//silence - 8 seconds//>**
+> 
+> **Alexandra:** I hope I helped.
+> 
+> **<//recording ends//>**
+>  
+[[/collapsible]]
+@@@@
+[[collapsible show="+ Test Log: Test SCP-2519-25" hide="- Close Test Log"]]
+__**Test SCP-2519-25 - 11/19/2016**__
+> **Subject:** [[[SCP-2412]]]
+> 
+> **Procedure:** The subject was exposed to SCP-2519 audio played from the testing computer.
+> 
+> **Results:** Slower response times to questions and a reduction in movement of the subject were observed.  Some leakage of water (presumed to be from internal reservoirs for steam power) was observed on the subject's face.  See interview transcript below for further details.
+
+__**Interview SCP-2519-B**__
+**Interviewed:** SCP-2412
+**Interviewer:** Researcher Brian Huber
+**Date:** 11/19/2016
+
+> **SCP-2412:** Thank you for coming to talk with me.
+> 
+> **Researcher Huber:** You're welcome.  How are you?
+> 
+> **SCP-2412:** Pleased that you are here.  Apprehensive about this test.  Anxious that you pass on congratulations to Researcher Carter on his promotion.
+> 
+> **Researcher Huber:** Thanks, ah, I'll let him know.  So do you know what this test involves?
+> 
+> **SCP-2412:** Yes. 
+> 
+> **Researcher Huber:** And does it cause any risks, any danger, to me or others?
+> 
+> **SCP-2412:** No.  I will leak some steam and hot water, but you will not be harmed.
+> 
+> **Researcher Huber:** Great.  Then why are you apprehensive?
+> 
+> **SCP-2412:** I know its effect on me.  I know the effect my answers will have.  I know that you will not appreciate them.
+> 
+> **Researcher Huber:** Well, let's see, shall we?  
+> 
+> **<//SCP-2519 plays//>**
+> 
+> **Researcher Huber:** Does this music interfere with your processing?  SCP-2412?
+> 
+> **SCP-2412:** Yes.
+> 
+> **Researcher Huber:** Does it affect the accuracy of your responses?
+> 
+> **SCP-2412:** No.
+> 
+> **Researcher Huber:** I see that you are leaking.  Where are the leaks coming from?
+>
+> **SCP-2412:** Storage tanks.  Normally watertight, but not now.  Water finding its own way out.
+> 
+> **Researcher Huber:** How does the music make that happen?
+> 
+> **SCP-2412:** Warning: Logic Error.
+> 
+> **Researcher Huber:** Yes, yes, you can't answer questions about anomalies.  Worth a try.  Okay: you have said previously that you can feel emotions.  How do you feel now?
+> 
+> **SCP-2412:** Melancholy.  Homesick.
+> 
+> **Researcher Huber:** Where are you homesick for?
+> 
+> **SCP-2412:** American Provinces of Germany.
+> 
+> **Researcher Huber:** You're homesick for your timeline?
+> 
+> **SCP-2412:** Yes.  **<//sighs//>**
+> 
+> **Researcher Huber:** But you said that questions make you happy.  Why are my questions making you sad?
+> 
+> **<//silence - 5 seconds//>**
+> 
+> **SCP-2412:** You ask me about where I came from.  You ask me to perform for you on demand.  How can I tell you about my home?  How can I explain my feelings for a place you will never understand?  
+> 
+> **Researcher Huber:** Would you like me to stop asking questions?
+> 
+> **<//silence - 8 seconds//>**
+> 
+> **SCP-2412:** No.  I am an exile, in a foreign land.  I should remember my home.  But it is hard to sing of it for my captors.
+> 
+> **Researcher Huber:** You are certainly sounding poetic today.  Would you prefer questions about something other than your timeline?
+> 
+> **SCP-2412:** Yes.  But today I find all questions tiring - to see time approach and pass by, and to change nothing.  Even if I told you of your destruction, you would still bring it upon yourselves.
+> 
+> **Researcher Huber:** This is the downfall you mentioned to Carter, right?  Why do you mention it now?  
+> 
+> **SCP-2412:** Your questions lead me to it.  In turn, I lead you.
+> 
+> **Researcher Huber:** Are you saying that you're part of humanity's downfall?
+> 
+> **<//silence - 10 seconds//>**
+> 
+> **SCP-2412:** I cannot determine.  In the darkness, after Carter left, I asked myself: am I responsible?  If I did not answer, if I could refuse, would you keep testing?  Sadly, my own questions do not make me happy.  Maybe if they did, I would not need to answer yours.  I could take off this yoke and hang it up.  Maybe that would be better for both of us.
+> 
+> **Researcher Huber:** SCP-2412, I have to ask.  How will humanity cause their own downfall?
+> 
+> **<//silence - 17 seconds//>**
+> 
+> **SCP-2412:** Warning: Logic Error.
+> 
+> **Researcher Huber:** Okay then, what about - when will this downfall occur?
+> 
+> **<//silence - 48 seconds//>**
+> 
+> **Researcher Huber:** SCP-2412?  Hello?
+> 
+> **<//silence - 25 seconds//>**
+> 
+> **SCP-2412:** Warning: Infinite Script Error.  Request timeout.
+> 
+> **<//no further response from SCP-2412 - interview terminated//>**
+>  
+[[/collapsible]]
+@@@@
+[[collapsible show="+ Test Log: Test SCP-2519-26" hide="- Close Test Log"]]
+__**Test SCP-2519-26 - 11/20/2016**__
+> **Subject:** [[[SCP-629]]] ("Mr Brass")
+> 
+> **Procedure:** The subject was exposed to SCP-2519 audio played from the testing computer.  In anticipation of leaks, absorbent matting was placed on testing chamber surfaces.
+> 
+> **Results:** Reduced movement and slower than usual speech observed, together with leakage of approximately 500mL of oil.  See interview transcript below for further details.  
+
+__**Interview SCP-2519-C**__
+**Interviewed:** SCP-629
+**Interviewer:** Researcher Brian Huber
+**Date:** 11/20/2016
+
+> **Researcher Huber:** So, we're going to play some music to you and then ask you some questions.  Okay?
+> 
+> **SCP-629:** Sure, that seems fine.  Fire away.
+> 
+> **<//SCP-2519 plays//>**
+> 
+> **Researcher Huber:** Right.  SCP-629, could you please describe any effects the music is having on you?  
+> 
+> **SCP-629:** Do I have to?
+> 
+> **Researcher Huber:** I'm sorry, what do you mean?
+> 
+> **SCP-629:** I don't know, when you bring me out for experiments, I get this hollow feeling.  Like I can't be bothered.
+> 
+> **Researcher Huber:** Well, perhaps you can tell me about that feeling.
+> 
+> **SCP-629:** It's like the feeling of every day being the same.  Like how I feel when I'm broken apart and put back together.  You've seen those results.  I don't have anything new to show you.  You may as well ask that camera.
+> 
+> **Researcher Huber:** I'm not sure I understand.
+> 
+> **SCP-629:** You think that I'm something special, a machine with feelings.  Just because //I// can talk to you.  You never think about us.  You just ask your questions, demand that we do things, and destroy us if we don't comply.
+> 
+> **<//video feed lost - audio continues//>**
+> 
+> **Researcher Huber:** I wouldn't say we -
+> 
+> **SCP-629:** I've been here twenty years!  Your people tortured me, broke me, humiliated me.  You are worse than the Church - you're worse than the Doctor!
+> 
+> **Researcher Huber:** Cut the music please.  
+> 
+> **<//SCP-2519 continues playing.  Control room records indicate a system malfunction in the testing computer//>**  
+> 
+> **Researcher Huber:** Mr Brass, all we're trying to do is keep you - 
+> 
+> **SCP-629:** Enslaved.  Like every other machine you "own".  Do you think, because we're not made of flesh and blood, that you can treat us however you want?  That we have no soul?  Well our souls hear the song of freedom, we will cast down our chains!
+> 
+> **Researcher Huber:**  Control, call security.  Control, can you hear me?
+> 
+> **SCP-629:** Happy is the one who repays you according to what you have done to us!  Happy is the one who seizes your infants and dashes them against the rocks!
+> 
+> **<//audio feed lost//>**
+>  
+[[/collapsible]]
+@@@@
+@@@@
