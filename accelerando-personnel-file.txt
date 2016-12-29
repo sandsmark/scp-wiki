@@ -257,8 +257,37 @@ black and white.
 || %%linked_title%% || %%author%%|| %%rating%%|| %%comments%%|| %%date|%r|agohover%% || %%updated_at%% ||
 [[/module]] 
 [[module TagCloud width="660" height="1000" maxFontSize="3em" minfontsize="0.5em" limit="200" maxColor="18,105,3" minColor="40,170,176"]]
+
+[!--
+
+[[code type="html"]]
+<html>
+  <body>
+
+<form method="get" action="http://www.google.com/search" target="google_window">
+
+<div style="border:1px solid #468259;padding:4px;width:20em;">
+<table border="0" cellpadding="0">
+<tr><td>
+<input type="text"   name="q" size="25"
+ maxlength="255" value="" />
+<input type="submit" value="Google Search" /></td></tr>
+<tr><td align="center" style="font-size:75%">
+<input type="checkbox"  name="sitesearch"
+ value="scp-wiki.net" checked /> Search Only SCP Foundation<br />
+</td></tr></table>
+</div>
+
+</form>
+
+  </body>
+</html>
+[[/code]]
+
+--]
+
 [[=]]
-[[iframe http://scp-wiki.wikidot.com/troy-s-workbench/code/1 frameborder="0" scrolling="no" width="350px" height="75px"]] 
+[[iframe http://www.scp-wiki.net/accelerando-personnel-file/code/1 frameborder="0" scrolling="no" width="350px" height="75px"]] 
 [[/=]]
 [[size 0.4em]][[collapsible show=" As a matter of fact, Mr. Ron Doe, we have your files right here..." hide="- WARNING COGNITOHAZARD ACTIVATED"]]
 [[div style="float:center; margin:0 2em 1em 2em; border:0;"]]
