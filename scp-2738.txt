@@ -1,0 +1,202 @@
+title:SCP-2738
+[[>]]
+[[module Rate]]
+[[/>]]
+
+**Item #:** SCP-2738
+
+**Object Class:** Euclid
+
+**Special Containment Procedures:** The Site-12-based MTF Lambda-13 (“Inventory Control”) is tasked with detecting and containing SCP-2738 instances as they manifest. As tests have shown that SCP-2738 is potentially spread between registers and between retailers through the use of items anomalously transacted using the SCP-2738 program, such as prepaid cards or gift cards, a cover story of SCP-2738 being a credit theft program has been fully developed and spread to the upper management of all major US retailers.
+
+When SCP-2738 is found on a register system, the store's district manager is to contact Site-12 personnel and by extension MTF Lambda-13 personnel for containment operations. All retail employees, including high-level managers, are to be kept under the guise that Lambda-13 personnel and any involved Foundation research personnel are FBI agents investigating credit theft.
+
+As investigations carried out by Foundation statisticians have shown that SCP-2738's spread rate is increasing, research efforts toward safe removal of SCP-2738 from register systems are ongoing.
+
+**Description:** SCP-2738 is an unlicensed software of no determinable origin which anomalously manifests in the computer systems of American retailers, first discovered on March 14, 2014. SCP-2738 functions by running alongside each respective retailer’s default POS (Point of Sale) program at checkout registers. Unless the default POS program's window is minimized to allow access to Task Manager or someone is observing a register computer while it boots[[footnote]] SCP-2738's title is visible for a period of 1-2 seconds at startup, on occasion. [[/footnote]], SCP-2738 is undetectable.
+
+Upon direct, intentional launch on Microsoft Windows[[footnote]]SCP-2738 has not yet been found to function whatsoever on any other operating system. This may be due to its incompatibility with non-register computer systems.[[/footnote]],the register will display the title “M.L. Initiative POS Systems,” the associated logo, and the current software version and year. When fully loaded, SCP-2738’s main screen appears the same as the default software used by the computer on which the program is launched; if SCP-2738 is launched on a computer without register software installed, it will display an error screen with the text “PLEASE RECONNECT ME” in the center and become unresponsive.
+
+[[include component:image-block
+    name=bootup.PNG|
+    caption=A screenshot of what is displayed when SCP-2738 is intentionally launched. Screenshot taken on a ████ █████ register during Test A.|
+    width=300px
+]]
+
+If numbers are entered into the space used for ringing up product SKUs/UPCs[[footnote]]Stock-Keeping Unit and Universal Product Code, respectively.[[/footnote]], SCP-2738 will in response display the transaction of seemingly random products from the store in which it is being used, despite the product SKU/UPC not matching the numbers entered; if the sale is completed, the store’s digital inventory will change as if the transaction was processed normally. No history of abnormal input will be apparent, despite the products never having been present at the register.
+
+Of note is the fact that products transacted by these means will not require any monetary exchange to complete the sale; the system will instead automatically print a receipt with the total tender plus sales tax that would have been transacted normally immediately after the order is totaled. The receipt and products ‘sold’ are non-anomalous with the exception of the payment method displayed on the receipt, which will in all cases read “Visa MasterCard ending in -XXXX.” The presence of two conflicting card companies is thus far the only way to successfully detect an SCP-2738-affected transaction.
+
+Items rung up in response to numerical input are done so in no observable order, and appear to be selected arbitrarily from store inventory. However, after several tests involving the input of English translated into numbers via a basic substitution cipher[[footnote]]A = 1, B = 2, Z= 26, etc.[[/footnote]] were completed, it was hypothesized that SCP-2738 program instances are sentient [[footnote]] It has been theorized that SCP-2738 instances may be individually sentient or SCP-2738 may be sentient and functioning as a large network of individual instances; however, the latter cannot be confirmed by tests. [[/footnote]] and appears to respond to alphanumeric input by selecting products intentionally.
+
+When SCP-2738 is communicated with through means of alphanumeric input, items transacted will be removed from both digital store inventory (as normal) as well as their physical locations on the sales floor. This process is instantaneous, and can be easily observed on CCTV surveillance, albeit with no clear visual signs shown of what happens to objects when they are removed. This process occurs with no temperature changes, Hume level spikes, radiation level spikes, or electrical/electromagnetic discharge present.
+
+**History and Recovery:**
+
+[[collapsible show="▼ show August 12, 2014 test log" hide="▲ collapse"]]
+
+> __**Test A: August 12, 2014**__
+> 
+> //On August 10, 2014, ████ █████ store managers were informed of SCP-2738 presence in their register systems, with the cover story in use that the program is a suspected credit card theft malware and Lambda-13 personnel are Federal Bureau of Investigation officers. Agents Fredericks, Shaw, and Jameson of MTF Lambda-13 posed as ████ █████ employees repairing a register on a low-traffic end of the store in order to test SCP-2738.//
+> 
+> //Note: Agent Fredericks' messages are keyed in using the aforementioned alphanumeric method as if he is inputting product SKUs into the register. SCP-2738’s responses are displayed as line items rung up as if present at checkout, with the SKUs matching those actually used in the store for each respective item. In later observance of CCTV footage, it is seen that all items transacted disappear from the sales floor in the manner outlined previously.//
+> 
+> **Agent Fredericks (typing):** 8-5-12-12-15 [[footnote]]HELLO[[/footnote]]
+> 
+> **SCP-2738:** 3X5 GREETING CARD <S> | 1001-342-301 | 2.97
+>  
+> **Agent Fredericks (typing):** 4-15 25-15-21 19-16-5-1-11 [[footnote]]DO YOU SPEAK[[/footnote]]
+> 
+> **SCP-2738:** 3X5 GREETING CARD <S> | 1001-342-301 | 2.97
+>  
+> //Agent Fredericks pauses.//
+> 
+> **Agent Fredericks (typing):** 8-21-14-7-18-25 [[footnote]]HUNGRY[[/footnote]]
+> 
+> **SCP-2738:** CANDY <S> | 1000-002-345 | 1.98
+>  
+> **Agent Fredericks (typing):** 14-5-5-4 8-5-12-16 [[footnote]]NEED HELP[[/footnote]]
+> 
+> **SCP-2738:** VISA PREPAID <S> | 0000-011-233 | 100.00
+> **SCP-2738:** GIFT CARD ACTIVATION FEE | 2.45
+>  
+> **Agent Fredericks (typing):** 4-1-14-7-5-18 [[footnote]]DANGER[[/footnote]]
+> 
+> **SCP-2738:** PNEU. NAILGUN <S> | 1001-938-412 | 179.99
+>  **SCP-2738:** DEWALT KNIFE <S> | 0000-453-572 | 12.95
+> 
+> //Agent Fredericks is instructed to void the transaction, which, after confirmation, returns the register to its default checkout screen. However, items transacted do not return to their pre-transaction locations on the sales floor, and are not present in the store (see below).//
+
+ [[/collapsible]]
+
+On October 05, 2014, Agent Fredericks reported to his supervisors that a prepaid card for 100 USD had appeared in his wallet behind his other cards, and that he was not certain when it had appeared. As Agent Fredericks confirmed that he did not purchase nor receive a prepaid card at any point in the past several months, it was suspected that the card originated from the test transaction he carried out on August 12, 2014. Agent Fredericks was permitted to use the card at a Foundation front company, West End Used Books, located several kilometers from the site, and it was confirmed that the card had indeed been activated for its full 100-dollar value regardless of the fact that Agent Fredericks had cancelled the transaction in question before it was completed and the card was not present at the register.
+
+On October 07, 2014, cashiers at West End Used Books contacted Site-12 personnel with complaints of "M.L. Initiative POS Systems" being displayed briefly upon powering on their registers in the morning. MTF Lambda-13 members were sent to investigate, and were found to confirm SCP-2738 presence in register software; tests similar to that of August 12, 2014 were conducted, with similar results.
+
+[[collapsible show="▼ show October 07, 2014 test log" hide="▲ collapse"]]
+
+> __**Test B: October 07, 2014**__
+> 
+> //In this test, further communication with SCP-2738 was attempted. Agent Shaw was instructed to initiate conversation with SCP-2738 regarding its means of transmission and origin, and then to insinuate that he will uninstall SCP-2738 from the register as a means of testing potential sapient response to threats. West End Used Books is a functioning used book store and resale shop located ██ kilometers from Site-12. Register systems use 64-bit Windows 7 Professional. This test was carried out after store hours, with the full cooperation of in-store employees.//
+> 
+> Agent Shaw (typing): 8-15-23 19-16-18-5-1-4[[footnote]] HOW SPREAD [[/footnote]]
+> 
+> **SCP-2738:** M. CRICHTON ANDROM. STR. [U] | 00375 | 7.95
+> 
+> Agent Shaw (typing): 16-21-18-16-15-19-5[[footnote]] PURPOSE [[/footnote]]
+> 
+> **SCP-2738:** ERROR: ITEM NOT FOUND IN INVENTORY
+> 
+> Agent Shaw (typing): 14-1-13-5[[footnote]] NAME [[/footnote]]
+> 
+> **SCP-2738:** ERROR: ITEM NOT FOUND IN INVENTORY
+> 
+> Agent Shaw (typing): 15-23-14-5-18[[footnote]] OWNER [[/footnote]]
+> 
+> **SCP-2738:** ERROR: ITEM NOT FOUND IN INVENTORY
+> 
+> Agent Shaw (typing): 1-18-18-9-22-1-12 13-5-20-8-15-4[[footnote]] ARRIVAL METHOD [[/footnote]]
+> 
+> **SCP-2738:** TERI SHORS UNDRST. VIRUSES EDT. 3 [U] | 00233 | 75.00
+> 
+> Agent Shaw (typing): 23-8-15 13-1-4-5 25-15-21
+[[footnote]] WHO MADE YOU [[/footnote]]
+> 
+> **SCP-2738:** ERROR: ITEM NOT FOUND IN INVENTORY
+> 
+> Agent Shaw (typing): 21-14-9-14-19-20-1-12-12
+[[footnote]] UNINSTALL [[/footnote]]
+> 
+> **SCP-2738:** ERROR: ITEM NOT FOUND IN INVENTORY
+> 
+> Agent Shaw (typing): 21-14-9-14-19-20-1-12-12 16-18-15-7-18-1-13[[footnote]] UNINSTALL PROGRAM [[/footnote]]
+> 
+> //SCP-2738 is unresponsive for a period of thirty seconds.//
+> 
+> Agent Shaw (typing): 21-14-9-14-19-20-1-12-12 16-18-15-7-18-1-13[[footnote]] UNINSTALL PROGRAM [[/footnote]]
+> 
+> **SCP-2738:** KIP TINDELL UNCONTAINABLE [N] | 00349 | 14.99
+> 
+> //Agent Shaw voids the transaction. Thus far, only one out of four registers at this location are affected. After checking Agent Fredericks' receipt from October 05, it was confirmed that the register on which SCP-2738 is installed is the same register that processed his transaction using the prepaid card.//
+
+[[/collapsible]]
+
+Following knowledge inferred from recent tests, it is apparent that items transacted when communicating with SCP-2738 are anomalously transferred to the possession of whoever carried out the transaction. Agent Fredericks has thus far found the following items in his possession without memory of purchasing them:
+
+* One prepaid card with a value of 100 USD, found in his wallet (10.05.14)
+* Two greeting cards, found in his right desk drawer within his office in Site-12 (10.09.14)
+* One candy bar, found in his kitchen cabinet in his personnel quarters (10.20.14)
+* One pneumatic nailgun, found in the bed of his truck (10.25.14)
+* One pocket knife, found in his pants (11.02.14)
+
+Similarly, Agent Shaw later found //The Andromeda Strain// by Michael Crichton, //Understanding Viruses: Edition 3//, a biology textbook by Teri Shors, and //Uncontainable// by Kip Tindell on his bookshelf in his quarters. Shaw reports that he did not previously possess any of the books before November 2014, though he is not certain of when exactly the books appeared.
+
+[[collapsible show="▼ show November 30, 2014 interview log" hide="▲ collapse"]]
+
+> //On November 29, 2014, an employee at West End Used Books contacted MTF Lambda-13 personnel with complaints of SCP-2738 activity on the store's affected register, despite having had said register powered down since shortly after the test carried out on October 07.//
+> 
+> **Interviewer:** Agent Fredericks
+> **Interviewed:** Meg Saunders, West End Used Books cashier and former Foundation secretary at Site-12
+> 
+> **Agent Fredericks:** Alright, let's begin. Yesterday, you called your site contact to discuss SCP-2738's presence on your bookstore's register. This is the same register used in the tests carried out on October seventh, yes?
+> 
+> **Ms. Saunders:** That's correct.
+> 
+> **Agent Fredericks:** Alright, and can you describe the activity your store has seen since then?
+> 
+> **Ms. Saunders:** Yes. It only started up again the day before yesterday, near closing time, which is why we reached out to you immediately in the morning.
+> 
+> **Agent Fredericks:** Alright.
+> 
+> **Ms. Saunders:** I was ringing up a customer on another register when I saw an inventory notification in the corner of the screen. We get those when the truck comes and we have new stuff added into the store's computer inventory, but the truck only comes on Tuesdays, and the day before yesterday was a Friday, so I thought that was weird. When I was done with the customer, I read through the inventory and we'd have a bunch of stuff added that we'd either sold out of completely or never carried.
+> 
+> **Agent Fredericks:** Okay. Can you provide our personnel with a printout of that screen?
+> 
+> **Ms. Saunders:** Oh, of course. I don't know why I didn't think to do that, sorry.
+> 
+> **Agent Fredericks:** It's alright. Do you recall any of the titles?
+> 
+> **Ms. Saunders:** Oh yeah, yeah. We had one that we'd sold out of months ago - //Anthem// by Ayn Rand. That one stood out to me because I distinctly remembered our distributor telling me personally a few weeks back that we wouldn't be getting any copies unless a customer came in and sold one to us, but here we were with the inventory showing three new copies of it.
+> 
+> **Agent Fredericks:** Alright, and what else?
+> 
+> **Ms. Saunders:** Several books on viruses.
+> 
+> **Agent Fredericks:** Computer viruses or biological viruses?
+> 
+> **Ms. Saunders:** Both. We'd had a textbook on biological viruses once, but that was it, so it was odd to get so many other ones in at once. At least a dozen virus books, all nonfiction.
+> 
+> **Agent Fredericks:** Anything else?
+> 
+> **Ms. Saunders:** Yes, uh, //The Communist Manifesto,// the one and only. Five copies of it. I knew we didn't carry that - hell, do they even print and sell copies anymore?
+> 
+> **Agent Fredericks:** Were these products visible on the store shelves, or simply present in digital inventory?
+> 
+> **Ms. Saunders:** I had my coworkers and I look for them, but we couldn't find them in the usual sections. We could ask the truck driver, but I figured we should ask you guys before talking to anyone about it. Not sure if the driver is Foundation and all that.
+> 
+> **Agent Fredericks:** They should be, yes. But thank you for your caution.
+> 
+> **Ms. Saunders:** No problem, no problem. I used to work in this site.
+> 
+> **Agent Fredericks:** So you couldn't find these inventory additions on the shelves?
+> 
+> **Ms. Saunders:** Like I said, not that I'm aware of. But they're cluttered in the bargain bin and some of the back areas of the store; they very well could be hiding in there, but none of us could find them. We only called you guys because of those tests you all were running back in October - figured this might have something to do with that.
+> 
+> **Agent Fredericks:** It certainly sounds like that, yes. If you find copies of the false inventory additions, please refrain from selling them until we figure out the situation.
+> 
+> **Ms. Saunders:** No problem. You're not going to amnesticize me, are you?
+> 
+> **Agent Fredericks:** No, you're a useful asset in that location, and your employment history with this site makes you more than qualified. Please fully cooperate with Lambda-13 personnel when we come to investigate.
+> 
+> **Ms. Saunders:** Of course, of course. Thanks, agent.
+> 
+> **Agent Fredericks:** Thank you.
+> 
+> //Meg Saunders has been instructed to avoid the use of the SCP-2738-affected register in the store, as well as to monitor digital inventory for any further anomalies. West End Used Books' delivery driver was contacted and briefly interviewed, but did not report delivery of any of the products discussed by Ms. Saunders.//
+
+[[/collapsible]]
+
+
+[[include component:image-block name=graphtest.png|caption=Projected pattern of SCP-2738 growth. Click to enlarge.|width=300px|link="*http://scpsandbox2.wdfiles.com/local--files/cyantreuse/graphtest.png"]]
+
+**Addendum:** Due to these occurrences and their implications should SCP-2738's communicative ability be discovered by civilian cashiers, SCP-2738 has been considered a Level 2 Anomalous Economic Threat by Foundation researchers with the input of MTF Lambda-13 personnel. Due to SCP-2738's rapid spread and potential to destabilize American economy, it is pending upgrade to Keter. As of July 2015, MTF-Lambda-13 personnel are working with MTF Mu-4 ("Debuggers") personnel to develop a non-destructive and functional method of removing SCP-2738 from register systems. Thus far, SCP-2738's original creator has not been identified.
