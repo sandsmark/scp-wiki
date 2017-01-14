@@ -14,7 +14,7 @@ h1, #page-title {
 }
 
 a {
-    color: #008888 !important;
+    color: #088 !important;
 }
 
 body {
@@ -45,12 +45,29 @@ div#container-wrap {
     background-color: #0aa !important;
 }
 
-#header h2 span {
-    color: #ceff00 !important;
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover,
+.page-rate-widget-box .cancel a:hover {
+    background: #077 !important;
 }
 
-#header h2 span:after {
-    content: ', Penetrate';
+#header h2 span {
+    display: block;
+    margin: 0;
+    padding: 19px 0;
+    line-height: 0px;
+    max-height: 0px;
+    font-weight: bold;
+    color: transparent;
+    text-shadow: 0px 0px 0px;
+
+}
+
+#header h2 span::before {
+    content: "Secure, Contain, Penetrate";
+    color: #ceff00;
+    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
 }
 
 .yui-content {
