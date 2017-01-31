@@ -1,0 +1,142 @@
+title:Photoshoping Your Scp
+This is a fast and dirty tutorial for people completely unfamiliar with what goes in to Photoshoping an image, or someone who does not want to get invested in this area just to create an image for an SCP article. If you're skilled in graphic manipulation, feel free to move on. 
+
+The Image team gets numerous requests for image creation every day, and while most of the time they are happy to help, there are only so many of them, and they only have so much time. More people familiar with basic image editing means more contributors creating their own, original images for SCP articles.
+
+This tutorial will consist of a short project to get you acclimated with a few basic photo manipulation tools I've used over the last decade to create found-footage, grainy, creepypasta style SCP images.
+
+[[collapsible show="I created these images using only these simple methods." hide="Hide"]]
+[[div]]
+[[div style="background: url(/local--files/experimental-2-no-tocar/archivelogobackground.png) center top no-repeat ; float: left; background-color: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]] 
+[[image http://scp-wiki.wdfiles.com/local--files/scp-323/uhhDc.png width="300px" height="250px"]]
+[[image http://scp-wiki.wdfiles.com/local--files/scp-252/humbo.jpg width="300px" height="250px"]]
+[[image http://scp-wiki.wdfiles.com/local--files/scp-1582/1582.png width="300px" height="250px"]]
+[[/div]]
+
+[[div float: right; background-color: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]] 
+[[image http://scp-wiki.wdfiles.com/local--files/scp-1124/ILYENA.jpg width="300px" height="250px"]]
+[[image http://scp-wiki.wdfiles.com/local--files/scp-1286/1286.png width="300px" height="250px"]]
+[[image http://scp-wiki.wdfiles.com/local--files/xiupania/Xiupania.png width="300px" height="250px"]]
+[[/div]]
+[[/div]]
+[[/collapsible]]
+
++ The Tutorial
+
+**Tools**
+
+# Any computer that was released in the last decade. You don't need anything fancy.
+# Adobe Photoshop CS2
+ # We are using Adobe CS2 for this tutorial because **it is absolutely free to use**. If you don't feel comfortable with Adobe for any reason, there are other desktop programs like [https://www.gimp.org/ GIMP], and even web browser based programs you can use like [https://pixlr.com/editor/ PIXLR]. A lot of the features in the programs are almost identical, and it may be possible to follow along anyway with a little savvy.
+
+++ 1, Clone Stamp, Healing Brush
+
+[[collapsible show="Open" hide="Close"]]
+
+What we're going to do is Photoshop and elephant onto the surface of the moon.
+
+Open this image in Photoshop.
+
+[[image http://scpsandbox2.wdfiles.com/local--files/famine7/Moon.jpg width="300px"]]
+
+There are already a number of problems with this image. The first being that there is a moon lander in the photo, and lots of footprints. We need to get rid of these. For this you're going to use the healing brush tool and the clone stamp tool.
+
+Lets focus on the footprints first.
+
+Select the **Clone Stamp** tool. Right click on the image to select a soft brush (any fuzzy looking brush), and increase the diameter of the brush to your choosing. 
+
+**Alt**+**Click** on a section of sand that doesn't have footprints on it. Now, click on a section of sand that does have footprints on it. Play around sampling different sections of sand to cover up the footprints.
+
+[[image http://scpsandbox2.wdfiles.com/local--files/famine7/Moon-1.png width="300px"]]
+
+If the lighting around the area looks uneven, use the **Healing Brush** tool in the same way you used the **Clone Stamp** tool. It works well for evening out areas. Try using the **Healing Brush** tool to get rid of the crosses in the sky. 
+
+I removed the moon lander using only the **Clone Stamp** tool.
+
+[[image http://scpsandbox2.wdfiles.com/local--files/famine7/Moon-1.5.png width="300px"]]
+
+When you're done the area should look something like this. Don't pay too much attention to small details. When this is all said and done, your image is only going to be 300-350 pixels wide.
+
+[[image http://scpsandbox2.wdfiles.com/local--files/famine7/Moon-2.png width="300px"]]
+
+[[/collapsible]]
+
+++ 2, Selections
+
+[[collapsible show="Open" hide="Close"]]
+
+Open this image in Photoshop.
+
+[[image http://scpsandbox2.wdfiles.com/local--files/famine7/Elephant.png width="300px"]]
+
+Select the **magnetic lasso** tool. Drag the tool along the edges of the elephant. When you reach where you started, click on the starting point. There should be a tiny circle indicating that you can close the loop.
+
+[[image http://scpsandbox2.wdfiles.com/local--files/famine7/Elephant-2.png width="300px"]]
+
+You should now have the elephant selected. Right click on the selection and click **Layer Via Cut**. This will move the elephant to its own layer so that you can begin refining the selection, making sure there are no jagged bumps or clipping.
+
+In the **Layers** panel on the bottom right of your screen, click on the eye next to the background layer, or, drag the background layer to the trash icon.
+
+[[image http://scpsandbox2.wdfiles.com/local--files/famine7/Elephant-1.png width="300px"]]
+
+You can also make selections of areas you want to delete. After you've made a selection of an area you want to delete, hit Delete on the keyboard.
+
+[[image http://scpsandbox2.wdfiles.com/local--files/famine7/Elephant-3.png width="300px"]]
+
+Save the elephant image as a PSD. File>Save As
+
+[[/collapsible]]
+
+++ 3, Placement
+
+[[collapsible show="Open" hide="Close"]]
+
+Open the moon image. Use **File**>**Place** to place the elephant into the moon image. You could have also done this by dragging the elephant to the moon project if you had both windows open, or by copy pasting. The elephant should be on its own layer in the project now.
+
+Right click on the Elephant's layer and click **Group Into New Smart Object**. [[footnote]] Graphics lose data when they scale, causing them to look blurry. The elephant graphic is very large for this reason. When it is a **smart object**, the program will retain this data so it can be re-scaled to the same size without any image quality loss. [[/footnote]] 
+
+[[image http://scpsandbox2.wdfiles.com/local--files/famine7/Polish-1.png width="300px"]]
+
+Scale the elephant down by selecting the layer and pressing CNTRL+T and dragging the bounding box. Hold down SHIFT while dragging to constrain its proportions.
+
+[[image http://scpsandbox2.wdfiles.com/local--files/famine7/Polish-2.png width="300px"]]
+
+The image should look something like this when you're done.
+
+[[image http://scpsandbox2.wdfiles.com/local--files/famine7/Polish-3.png width="300px"]]
+
+Right click the elephant's layer and click **Rasterize Layer**. [[footnote]] This converts the image back into a raster object, allowing you to edit it again. If you mess up, go to the history panel and find a place to revert to. [[/footnote]]
+
+[[/collapsible]]
+
+++ 4, Filters
+
+[[collapsible show="Open" hide="Close"]]
+
+The elephant is in color while the rest of the moon's surface is not. To fix this, go to **Image**>**Adjustments**>**Desaturate**.
+
+[[image http://scpsandbox2.wdfiles.com/local--files/famine7/Polish-4.png width="300px"]]
+
+The elephant still doesn't look like it exists in the photo.
+
+If the elephant isn't as sharp as the area behind it, use **Filter**>**Sharpen**, and explore the different options.
+
+Select the **Color Burn** tool. Select the moon layer. Shade the areas underneath the elephant's feet. Take into account the lighting of the area. The brush options work just like the **Clone Stamp** and **Healing Brush** tools do.
+
+[[image http://scpsandbox2.wdfiles.com/local--files/famine7/Polish-5.png width="300px"]]
+
+Still not satisfied? Did a bad job? Don't worry. Add a noise filter. First, right click the Layer's panel and select flatten image. This will make it so the noise effects not just the elephant or the moon, but the entire image. Now, select **Filter**>**Noise**>**Add Noise**.
+
+[[image http://scpsandbox2.wdfiles.com/local--files/famine7/Polish-6.png width="300px"]]
+
+Want this to look like a painting? Go to Filter>Filter Gallery, and explore the options there. This was made by making two copies of the finished image, on two separate layers, adding a filter to the top layer, changing the layer's mode from "Normal" to "Multiply", and setting the Opacity in the layer to 50%.
+
+The ant image in the examples collapsible was made by taking a photo of an eyeball, placing it over an image honeydew ant, changing the layer mode, and setting the opacity to 50%.
+
+[[image http://scpsandbox2.wdfiles.com/local--files/famine7/Polish-7.png width="300px"]]
+
+[[/collapsible]]
+
+++ Other Notes
+
+Please refer to the [http://www.scp-wiki.net/image-use-policy Image Use Policy] for general tips regarding finding image parts. Most of the time you can find parts of open-source images that are suitable for what you need on [https://commons.wikimedia.org/wiki/Main_Page Wikipedia Commons], [http://visual-records.wikidot.com/ SCP Visual Records], or using Google's [https://www.google.com/search?q=google+images&source=lnms&tbm=isch&sa=X&ved=0ahUKEwi08fTerOvRAhUJy2MKHb8PASgQ_AUICCgB&biw=1366&bih=676#tbs=sur:fc&tbm=isch&q=SCP+Foundation Open Source Images]. It is generally not good practice to take parts from copyrighted images, even if you modified them to the point where someone couldn't recognize the original. If an image is marked as [https://tldrlegal.com/license/creative-commons-attribution-noderivs-(cc-nd) CCNAD], you cannot modify it at all.
