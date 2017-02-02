@@ -20,19 +20,26 @@ Here's my sandbox, so you can see what might be coming up next: [http://scpsandb
 **Works**
 
 So here's what I've done on the site so far:
+
+[[collapsible show="+ All the SCPs" hide="- No more SCPs"]]
  
 [[module ListPages created_by="psul" order="rating desc" separate="no" tags="scp" perPage="250" prependLine="||~ SCP Number ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||"]] 
 || %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% ||
 [[/module]]
 
+[[/collapsible]]
+@@@@
+[[collapsible show="+ All the Tales" hide="- No more Tales"]]
 [[module ListPages created_by="psul" order="rating desc" separate="no" tags="tale" perPage="250" prependLine="||~ Tale Title ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||"]] 
 || %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% ||
 [[/module]]
-
+[[/collapsible]]
+@@@@
+[[collapsible show="+ All the GoI Formats" hide="- No more GoI Formats"]]
 [[module ListPages created_by="psul" order="rating desc" separate="no" tags="goi-format" perPage="250" prependLine="||~ GoI Format Title||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||"]] 
 || %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% ||
 [[/module]]
-
+[[/collapsible]]
 
 I have also contributed a few poems (on 9/9/2015 and 24/12/2015) to the [[[http://www.scp-wiki.net/scp-2673-containment-maintenance-log |collaborative log]]] for [[[SCP-2673]]].
 
