@@ -254,6 +254,11 @@ In the event that I disappear, custody of my drafts and articles falls to [[user
 || %%title_linked%% || %%rating%% || %%created_by%% || %%created_at%% ||
 [[/module]]
 
+++ Third Law Articles Sorted by Rating
+[[module ListPages tags="third-law" separate="no" order="rating desc" prependLine="||~ Name||~ Rating ||~ Author ||~ Created ||"]] 
+|| %%title_linked%% || %%rating%% || %%created_by%% || %%created_at%% ||
+[[/module]]
+
 ++ Deletions Sorted by Edit Time
 [[module ListPages tags="in-deletion" separate="no" order="updated_at" prependLine="||~ Name ||~ Created ||~ Edited ||"]] 
 || %%title_linked%% || %%created_at%% || %%updated_at%% ||
