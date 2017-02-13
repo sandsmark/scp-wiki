@@ -1,29 +1,182 @@
-title:Composite Sketches, Illustrations and Photographs
+title:SCP Artwork Hub
+@@@@
+@@@@
+@@@@
+@@@@
+
+[[=]]
+[[image blank]]
+[[/=]]
+
+----
+
++ Artwork Master List
+
+[[module CSS]]
+.content-panel .content-type-title > p {
+  margin: 0;
+}
+.content-panel .content-type-title {
+  font-size: 120%;
+  font-weight: bold;
+  padding: 5px 20px;
+  background-color: #666;
+  color: #fff;
+  border-radius: 8px 8px 0 0;
+  box-shadow: inset 0 1px 1px rgba(255,255,255,.8),
+    inset 0 15px 1px rgba(255,255,255,.2),
+    inset 0 15px 10px rgba(255,255,255,.2);
+}
+.content-panel .content-type-description {
+padding: 0 20px;
+text-align: justify;
+}
+.content-panel.content-row .content-type-description {
+padding: 5px 20px;
+}
+.content-panel.content-row .content-type-description-2 {
+padding: 0 20px;
+text-align: justify; 
+}
+[[/module]]
+
+[[div class="content-panel standalone content-row"]]
+[[div class="content-type-title"]]
+Artwork Pages
+[[/div]]
+
+[[div class="content-type-description-2"]]
+
+[[table style="width: 100%;"]]
+[[row style="font-weight: bold; color: #fff; background-color: #666;"]]
+[[cell style="padding: 0 2px; width: 50%;"]]
+Page
+[[/cell]]
+[[cell style="padding: 0 2px; width: 25%; text-align: center;"]]
+Last Update
+[[/cell]]
+[[cell style="padding: 0 2px; text-align: center;"]]
+Created By
+[[/cell]]
+[[/row]]
+[[/table]]
+
+[[/div]]
+
+[[div class="content-type-description"]]
+
+[[module ListPages order="updated_at desc" tag="artwork" prependLine="[[include component:listpages-table]]" perPage="30" appendLine="[[/table]]" separate="false"]]
+[[row]]
+[[cell style="vertical-align: top;"]]
+%%title_linked%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%updated_at%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: left;"]]
+%%created_by_linked%%
+[[/cell]]
+[[/row]]
+[[/module]]
+
+[[/div]]
+[[/div]]
+
+----
++ Artist Showcase
+
+[[include component:image-block name=http://68.media.tumblr.com/bc3ead9738163d6dc734373dfc246efa/tumblr_nyp3xcFYuh1uc7jxqo5_1280.png|caption=Example from Broken Masquerade legal firm advertisements. Click image to enlarge.|link="http://68.media.tumblr.com/bc3ead9738163d6dc734373dfc246efa/tumblr_nyp3xcFYuh1uc7jxqo5_1280.png"]]
+
+[[div style="background-color: #2e4050; background: linear-gradient(to right, #666,#fff,#fff); padding: 0px 8px;"]]
+++ [[span style="text-shadow: #003 2px 2px; color: #fff;"]]Cyantreuse[[/span]]
+[[/div]]
+
+"This image is one of many from my series of Broken Masquerade legal firm ads. The way I see it, with the Foundation being public in [[[broken-masquerade-hub|Broken Masquerade's setting,]]] organizations dedicated to forming legally stable grounds for arguments against the Foundation's morals and methods and/or helping human and sapient anomalies get back on their feet (if/when released from containment) are going to have a presence.
+
+For Leeward & Warner Legal Solutions, they've got a sensitive backstory that I haven't bothered to write yet, but Leeward is Adam Leeward of the [[[SCP-2708]]] mini-canon, and Warner is... well, maybe you can figure it out from the [[[too-old-to-lie-too-cold-to-love|preexisting context,]]] but I haven't bothered to elaborate on that in writing yet, so you'll just have to wait.
+
+I use Adobe Photoshop through Creative Cloud, because I'm one of those suckers who likes accessibility and rip-off subscriptions. For this specific work, my own photography was used, though I sometimes use images 'licensed for reuse' through Google Image Search if I need to combine a bunch of different images."
+
+~~~~
+
+[[div style="float:left;"]]
+[[include component:image-block name=http://68.media.tumblr.com/5cb267c24af3f307e30ef84830a7c251/tumblr_inline_ogt4lrJXk11t7jb9w_500.png|caption=682 in his natural habitat. Click image to enlarge.|link="http://68.media.tumblr.com/5cb267c24af3f307e30ef84830a7c251/tumblr_inline_ogt4lrJXk11t7jb9w_500.png"]]
+[[/div]]
+
+[[div style="background-color: #2e4050; background: linear-gradient(to left, #666,#fff,#fff); padding: 0px 8px;"]]
+[[>]]
+++ [[span style="text-shadow: #003 2px 2px; color: #fff;"]]Maal[[/span]]
+[[/>]]
+[[/div]]
+
+"This is the drawing that gets stolen the most so I'm putting it here.
+
+I created and co-run an SCP art blog called [http://securecontainplsno.tumblr.com/ securecontainplsno] but I usually draw more serious art. I tend to use bright colors, thick lines and cartoony proportions, because straight lines are terrible things."
+
+~~~~
+
+[[include component:image-block name=http://i.imgur.com/FJaLYzR.jpg|caption=SCP-2217. Click image to enlarge.|link="http://i.imgur.com/FJaLYzR.jpg"]]
+
+[[div style="background-color: #2e4050; background: linear-gradient(to right, #666,#fff,#fff); padding: 0px 8px;"]]
+++ [[span style="text-shadow: #003 2px 2px; color: #fff;"]]Zhange[[/span]]
+[[/div]]
+
+"This piece represents some of the aspects of the Foundation that fascinate me: the complexity, the bizarreness, and the epic scale. Also, I have a trend throughout all my watercolours- the images are in grey-scale, with a specific colour highlighting the SCP's main feature or anomalous properties."
+
+~~~~
+
+[[div style="float:left;"]]
+[[include component:image-block name=http://i.imgur.com/FsI0gsD.png|caption=Text. Click image to enlarge.|link="http://i.imgur.com/FsI0gsD.png"]]
+[[/div]]
+
+[[div style="background-color: #2e4050; background: linear-gradient(to left, #666,#fff,#fff); padding: 0px 8px;"]]
+[[>]]
+++ [[span style="text-shadow: #003 2px 2px; color: #fff;"]]DrKens[[/span]]
+[[/>]]
+[[/div]]
+
+"I've always liked graphics design and minimalism, so it was only natural to try and adapt that to the SCP wiki as well. What had started as a minimalist image of SCP-173 became the first among a long list of minimalist SCPs and movie posters, then fictionalized magazine covers to tie in with the Broken Masquerade canon and recruitment posters. I've got an ever-growing list of requests and ideas, but never enough time to make them all. I'm hoping to one day involve some of my film photography into one of these posters, but that hasn't happened just yet. (Soon…) Style-wise, I'm a fan of minimalism, but also of photomanipulation - especially for my posters and covers that are tied in with the Broken Masquerade canon. It's always fun - and a little unnerving - to try and imagine what these images would look like if the Foundation were real and active. Naturally, with my photography background, I use Adobe Photoshop CS6 for all of my works even though I know Illustrator's better for vector images. Take that, artistic norms!"
+
+~~~~
+
+[[include component:image-block name=http://scp-wiki.wdfiles.com/local--files/sunday-funnies/1.png|caption=Anomalously high readings of dilbert and the family circus, sir! Click image to enlarge.|link="http://scp-wiki.wdfiles.com/local--files/sunday-funnies/1.png"]]
+
+[[div style="background-color: #2e4050; background: linear-gradient(to right, #666,#fff,#fff); padding: 0px 8px;"]]
+++ [[span style="text-shadow: #003 2px 2px; color: #fff;"]]Randomini[[/span]]
+[[/div]]
+
+"oh god what is this how do i art"
+
+~~~~
+
+[[div style="float:left;"]]
+[[include component:image-block name=http://orig00.deviantart.net/414b/f/2016/143/a/d/scp_1000___the_day_of_flowers_by_sunnyclockwork-da3h0aq.jpg|caption=The Day of Flowers: The glory of man and the fall of SCP-1000. Click image to enlarge.|link="http://orig00.deviantart.net/414b/f/2016/143/a/d/scp_1000___the_day_of_flowers_by_sunnyclockwork-da3h0aq.jpg"]]
+[[/div]]
+
+[[div style="background-color: #2e4050; background: linear-gradient(to left, #666,#fff,#fff); padding: 0px 8px;"]]
+[[>]]
+++ [[span style="text-shadow: #003 2px 2px; color: #fff;"]]SunnyClockwork[[/span]]
+[[/>]]
+[[/div]]
+
+"This piece is, of course, a black and white depiction of [[[SCP-1000]]]. Human and SCP-1000's situation present a sharp contrast, as humans bathe in the sunlight while the bigfoots retreat into the darkness. The upside-down structure and the opposite colors serve to strengthen the idea.
+
+I always love drawing skips concerning the 'grander' themes, and prefer more symbolic depictions over the literal ones. My work has gone from focusing on details to providing more organized and smooth images, but this has not changed. I want to make sure to not only present what a skip looks like, but also its features. It is true that drawing in monochrome is sometimes limiting, but the style is also unique in simplifying things and giving them an artistic touch.
+
+Aside from SCP entries, I draw tales and characters, and among other things, logo designs. (I probably drew more CotBG & Sarkicism and Pitch Haven stuff than I should have.) I also made a set of SCP Tarot Cards, which I'm rather proud of. [[[GOI Ball Comics]]] is another thing I do, taking a break from the black and white style."
+
+~~~~
+
+----
 [[div class="content-panel standalone series"]]
 [[=]]
++ Looking for something else?
 + The SCP Foundation Visual Records is now off-site!
 ----
 If you want to participate in the visual records process, or simply need SCP Fuel, feel free to click on the link below and join.
 
 ++ [http://visual-records.wikidot.com » SCP Foundation Visual Records «]
+
 [[/=]]
+
 [[/div]]
-
-[[collapsible show="Links to former SCP Visual Records pages" hide="hide"]]
-+ Unconfirmed SCPs
-* [[[Document 8668206-DG]]]: Log of SCP items under investigation, compiled by Dr. Gears
-* [[[Files Q441.7B - A818.86]]]: Source documents for as-yet unsought leads, organized by Mr. Noaqiyeum
-* [[[Document 19-V-1911854]]]: Log of SCP items awaiting declassification, compiled by Professor Hobelhouse.
-* [[[Document 12-H-1943687]]]: Log of SCP items under independent Foundation investigation
-* [[[document-09-e-3417845|Document-09-E-3417845]]]: Visual record of items catalogued by [[[http://www.scp-wiki.net/dr-rogets-file|Dr. Roget]]]
-* [[[Document-09-E-3417845 Addendum]]]: Addendum to [[[http://www.scp-wiki.net/dr-rogets-file|Dr. Roget]]]'s visual record file.
-* [[[From the desk of Archivist Jensen]]]
-* [[[document-12-e-5022a | Visual Archive 12-5022A-JHP]]]: A compendium of images requiring addition documentation. Declassified at the request of Dr. P██████ G████.
-[[/collapsible]]
-
-
-+ Sketches and Illustrations
-* [[[Personnel Sketches]]]
-* [[[Kens' Artistic Side]]]
-* [[[sunny-s-black-and-white-art|SunnyClockwork's Black and White Art]]]
-* [[[Dwagon's Anomalous Art Den]]]
