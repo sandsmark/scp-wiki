@@ -109,7 +109,22 @@ There are several more or less useful possible meta tags. You probably already h
 
 I recommend the meta tag "keywords" with which you can provide keywords describing your page to search engines like "scp,scp-foundation" and the like, comma-separated. The most important come first.
 
-The EN-Wiki also uses the meta tag "description" containing "Front Page" on their front page. Nobody knows why, as the admin who set this meta tag has left. I think it is because the Front Page has no title and no unix-name.
+You also should set meta-tags with which you can control how links to your Wiki are shown in Social Media, Google and the like, with [http://ogp.me/ Open Graph] meta-tags. I suggest the following meta-tags for your front-page:
+* property="{{og:url}}" content="{{exact_url}}" 
+ * Set the exact url to your site
+* property="{{og:title}}" content="{{the_big_text_in_your_header}}" 
+ * Like "International Translation Archive"
+* property="{{og:description}}" content="{{the_small_text_in_your_header}}" 
+ * Like "of the SCP Foundation" or whatever text you want to display there
+* property="{{og:image}}" content="{{your_image_url}}" 
+ * Set the image that is to display. I suggest an image of the size of 250x250 px. The minimum size for FB is 200x200 px. I suggest this to be the same image in the code of the front page. You can upload another one than the standard-logo, if you like.
+
+If someone links to an article, not the front-page, Facebook for example seems to search for the first image in the code of the body (excluding the header), which for articles without images would be the little red house icon of your sidebar. To prevent this, add the following code to the very top of your sidebar: {{@@[[image url_of_you_preview_image width="0" height="0"]]@@}}, where the preview image usually is the file {{@@http://scp-XX.wdfiles.com/local--files/start/250_logo.png@@}} (the logo uploaded to the front page). You can upload another logo to the sidebar though.
+
+Once you are done, you have to make sure Facebook and other social media and search engines are able to read the correct information, and that Facebook has cached the correct data:
+* Go to the [https://developers.facebook.com/tools/debug/og/object/ Facebook debugger], or if you don't have a Facebook account ask somebody who has one, enter your branches address and force FB to update its cached information. It sometimes takes some time for this tool to really update its information. Wait like 30 seconds between each update-attempt.
+ * Other social media like VK etc. probably also have a function like this.
+* Go to the [https://search.google.com/structured-data/testing-tool Google testing tool] and see if it displays any errors for your site.
 
 ++ 1.6 Sandbox
 Trust me, you want this. A Sandbox-Wiki is a playground where nothing is true and everything is permitted. Ok, almost everything. Here your users can create drafts of articles and get feedback before they post them on the main page and they can try out code without breaking existing articles.
