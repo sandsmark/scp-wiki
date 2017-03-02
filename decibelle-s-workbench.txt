@@ -1,5 +1,5 @@
 title:Decibelle's Workbench
-Modules brought to you by Trixie "Decibelle" Shimmer![[footnote]]Except for everything before the first line seperator. GreenWolf did those for me! I'm just modifying them somewhat.[[/footnote]]
+Modules brought to you by Trixie "Decibelle" Shimmer![[footnote]]Except for everything before the first line seperator. GreenWolf did those for me! I'm just modifying them somewhat. And the last one, done by djkaktus. I just modified it a tiny bit.[[/footnote]]
 
 [[collapsible show="+ Explain some module formatting." hide="- Explain some module formatting." hideLocation="both"]]
 * (tag="v, [w]") or (tag="+x, -y") - Only display certain articles in modules by tag. Can have as little as one and as many as you need to be specific. To exclude, "-y" where y = tag, although I've found that you need to do "+x" where x = tag in order to have them work in tandem.
@@ -78,4 +78,12 @@ Modules brought to you by Trixie "Decibelle" Shimmer![[footnote]]Except for ever
 [[module ListPages tag="tale" rating="<20" order="rating desc" separate="false" limit="200" perPage="25"]]
 %%title_linked%% (rating: %%rating%%, comments: %%comments%%)
 [[/module]]
+[[/collapsible]]
+
+------
+
+[[collapsible show="+ Longest Tales! (SCP Version on Kaktus's Workbench)" hide="- Longest Tales! (SCP Version on Kaktus's Workbench)" hideLocation="both"]]
+[[module ListPages separate="no" limit="200" tags="tale" order="size desc" prependLine="||~ Tale ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||~ Length ||"]]
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% || %%size%% ||
+[[/module]] 
 [[/collapsible]]
