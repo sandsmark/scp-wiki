@@ -543,6 +543,11 @@ In reading order:
 [[module ListPages created_by="psul" order="created_at" separate="no" perPage="250" prependLine="||~ Title||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||"]] 
 || %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% ||
 [[/module]]
+[[/tab]]
+[[tab Another tab]]
+[[module ListPages tags="+3000 -hub" order="rating desc" separate="no" perPage="250" prependLine="||~ Title||~ Rating ||~ Author ||~ Comments||~ Last Comment ||"]] 
+|| %%title_linked%% || %%rating%% || %%created_by%% || %%comments%% || %%commented_at%% ||
+[[/module]]
 
 [[/tab]]
 [[/tabview]]
