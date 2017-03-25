@@ -26,3 +26,7 @@ title:djkaktus' Workbench
 [[module ListPages separate="no" tags="scp" order="size desc" prependLine="||~ Tale ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||~ Length ||"]] 
 || %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% || %%size%% ||
 [[/module]]
+
+[[module ListPages separate="no" tags="3000" order="rating desc" prependLine="||~ Entry ||~ Rating ||~ Author ||"]] 
+|| %%title_linked%% || %%rating%% || %%created_by%% ||
+[[/module]]
