@@ -1,0 +1,125 @@
+title:Chapter 2: Time Loops
+[[module CSS]]
+.page-rate-widget-box {
+    float: right;
+    margin: 5px;
+    text-align: left;
+    font-family: verdana,arial,helvetica,sans-serif;
+    margin-left: 15px;
+}
+.book-text {
+    text-align: justify;
+    font-family: Georgia, serif;
+    font-size: 110%;
+    text-indent: 0.3em;
+}
+h2 {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+.inset {
+    float: right;
+    width: 25%;
+    margin: 0px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: gray;
+    padding: 10px;	
+    margin-left: 10px;
+    background: lightgoldenrodyellow;
+}
+.inset > p {
+    margin: 0;
+}
+{ counter-reset: sec; }                 
+h2 {counter-increment: sec; } 
+h2:before {content:"2."counter(sec)" "; }
+h4:after {content:" for 2."counter(sec); }
+[[/module]]
+
+[[div class="book-text"]]
+
+[[module Rate]]
+
+In the first chap­ter, we dis­cussed time travel in mostly in­for­mal terms, to help in­tro­duce the sub­ject and give a feel for time travel. This chap­ter con­tin­ues this, with ad­di­tional in­for­mal tech­niques for an­a­lyz­ing time loops. In the next chap­ter we will in­tro­duce a more for­mal ap­proach, but for the time be­ing it is more im­por­tant that the reader gain a more prac­ti­cal un­der­stand­ing first.
+
+
+++ The Boot­strap Para­dox
+
+In or­der to un­der­stand how time loops work, it is nec­es­sary to in­tro­duce a no­tion of the 'con­nect­ed­ness' be­tween world lines. While presently, every known world line is, one way or an­other, reach­able from every other known world line, it is the­o­rized that in the pri­mor­dial uni­verse, there may have been ad­di­tional world lines lead­ing to the cur­rent set, but with­out any way back. These ex­tra the­o­ret­i­cal world lines, while un­ob­serv­able, are very im­por­tant for ex­plain­ing the boot­strap para­dox, and in pre­dict­ing what types of time loops are likely to have formed.
+
+As an ex­am­ple, con­sider this loop:
+[[html]]
+<div class="mxgraph" style="max-width:100%;border:1px solid transparent;display:block;margin:auto;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;zoom&quot;:1.5,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile userAgent=\&quot;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36\&quot; version=\&quot;6.4.2\&quot; editor=\&quot;www.draw.io\&quot; type=\&quot;browser\&quot;&gt;&lt;diagram name=\&quot;Page-2\&quot;&gt;7Vhdc6I8FP41zuxevB0gQvGy+FXrx+Jq6+pdhIhRJGwIIv76N0BQqba1te50dtYLSZ6cJIdznvOhJVBdbZoU+vMusZFbUiR7UwK1kqIAtcK/EyDOALVymwEOxXYGyXtggLdIyAkwxDYKCnKMEJdhvwhaxPOQxQoYpJRERbEZcYuX+tBBR8DAgu4xOsI2m2eorkp7/B5hZ57fLEtiZQqtpUNJ6In7SgqYpZ9seQXzs8QNwRzaJMqg9AhQL4EqJYRlo9WmitzEsrnVsnsaL6zu9KbIY+dsULINa+iGKNc41YvFuS24in4yDBjyLOx+8yc9o0ZaUb3+ZEqa4k+H+K7/pGh6v19bsBbpDJZPlRkcDYnkwGo/SC5XGvoErEqK4XUfvJHxNGwZLaRFLNqEo0m117x7mhj2uqpWSPvhXl/3TRq3Y7s3QvrvcZe2Gz+0fpvh5gIYA1ttdTyvbwVmGdPHyWTb6S3sMaKtOETS0qvEm76yHv2+/bHouCM00nrVQRO44JGEdbVqYqficzX0DtjS8UO3qy/MByUMObSoQTruKJWW6TQmaBX9sqYAr2s/dSr5caVta9MFeFTG/FWk0Wwx4c/ukG8b2yYfLqf327E2qm+itbIZ+kt7oVsIalAxTR8Yk/ua70W0WU8dDWrfS8CYs5XLhzIfQhc7Hh9b3GeIcmCNKMOcjB04Ra5JAswwSQSmhDGyOhC4EzsZ8Tlqw2COEr9KyQRTHhjZPo/QhHbGjHhMhJrMmWYck0XwJzkfbQ4gQZ4mIivEaMxF8tWKIH4e52Ia7aNGFtD8IGA0gUERp87u4D1X+UDQ9TR11bepi2we1WLqEY8/jDQ2UyvJRS9wG9D4V2K9GzWfjg/XTEQxVzLxUGrhgEHK7pJksz89xRo40XkvI0yupQfZz3Zw5ECezw6kF4ixWMxhyAiHEk8Sh3icHCRxeqre2X7l2jiIFSI/MdGrjqbIhQyvi4nxlN/EVpNgfuuOIEAtEkR/5vmAhNRCYtMz5++0OIsPMngfIZA7JVF9D7xMjXM8/ZZnz/VlwChZ7orOu7x7bVcq5aIrZVUtHpHR68iXRweV5TcO+kRSlN9Hir1PPo0Zr+QAy4VBgK0CWeQPpwErpOudkrti8HdS6HlakVXtLApxy8P4QMxPBILz05csys5Leh29YFGeDzINPspn5VSS4xwvd7PHEbl5HWdFzlIU4C2cpgIJP4UJuLRqlNTaaw1J3m+ssG2ngeEmHYqx63mrxCU0vTfveovck05zL4/R513Hrr8X2hZ65FPdiHQjlWUR4B9lai5CZrMAXZx+3tmknE4/hcB+MRcVIv7CxER85P3p5uTqnYh2tdxzXvm6OPeA13PP0QuCz809svavln4hPl+tlp7Zol9MZ0l6Va2j9yvKX15K8x+7f1MpzUP04lL6n3Qjq/LtV6qlt/9q6VfJPVerpbp0o0gHnz9UWeV3Vlb5osrKp/t/eDPx/Z/ooP4/&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+<script type="text/javascript" src="https://www.draw.io/embed2.js?s=er&"></script>
+[[/html]]
+The up­per line here is the spu­ri­ous line that boos­t­raps the time loop. Al­though it does not re­cieve a mes­sage, it spon­ta­neously de­cides to trans­mit mes­sage [[$M$]] to the past. The past re­cieves this mes­sage, and then also trans­mits the same mes­sage [[$M$]] to the past, form­ing a time loop.
+
+In some cases there may be more than one po­ten­tial spu­ri­ous world line that could have lead to a given loop. For ex­am­ple, take this sec­ond-or­der loop:
+
+[[html]]
+<div class="mxgraph" style="max-width:100%;border:1px solid transparent;display:block;margin:auto;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;zoom&quot;:1.5,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile userAgent=\&quot;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36\&quot; version=\&quot;6.4.2\&quot; editor=\&quot;www.draw.io\&quot; type=\&quot;browser\&quot;&gt;&lt;diagram name=\&quot;Page-3\&quot;&gt;7Vpdd7I4EP41nt29aA8EQb0saq2t9sXth6/eRYgYRUJD8OvXb4CAora1St9T99iLkkwmkyEzzyQzWFCq00WDQm/UJhZyCkCyFgWlVgBAUSv8f0hYxgS1UooJNsVWTJLXhCe8QoJPEANsIT/DxwhxGPayRJO4LjJZhgYpJfMs25A42UU9aKMdwpMJnV1qF1tsFFPLqrSm3yFsj5KVZUmMDKA5sSkJXLFeASjD6C8ensJElljBH0GLzGNSJEKpF5QqJYTFremiipxwZ5Ndi9e5fWc01Zsilx0yAcQTZtAJUKJxpBdbJnvBVfTCps+Qa2Lnb6//qNdIc16vvxqSBrzBM77pvAKt3OnUxqxJWk+T18oQdp+JZMNqxw8XB7flvjItAN1t37td/fW5qTeRNmfzRdDtVx8bN6993ZpV1Qp5uL8rzzoGXT4srccuKr/12vTh9pfWeWC4MVb0J0tttly3Y/pGEdOXfn/VehxbPUSbywBJE7eyXHTArPtW+jVuOV3U1R6rTw3FUV5IUFerBrYrHlej3FJWtHffbpfHxj0IAk4a1yDttUCladi3fTSd/zYHCp7V/i1TyVtWHixtMFZeQI+/itQdjvv82X7m03qWwZuTwd2qp3Xri/kMLJ69iTUumwhqEBiGp+j9u5rnzmmjHhlaqf1TUPQRmzq8KfMmdLDt8rbJbYYoJ8wQZZg7YwsOkGMQHzNMQoYBYYxMNxhuxExGPE61oD9CoV2lsIMpB0Y8zyU0dDt9SFwmoCZzT9N3nUX4TygfLTZIwnkaiEwRo0vOkoxWhOMLnJdEd75GjSxIow3AaIIGBU7tVPDaV3lDuOt+1y1+7rrI4qgWXZe4/KFH2Ix2Sc5age8BXf4Od+9aTbq9zTEDUcyVDC0U7bDPIGU3YbBZS49otzjUec0jtlyLBFlbMzhlg5/3NrjHiLGl6MOAEU4KLUls4nLnIKHRI/UOtivXxkYsg/xwiz40NEUOZHiWDYz77CamGgTzVVMHUdSsg6SRMhHhk4CaSMzasn6qxkEOsdcjOK14Ez923IP7OMs6AUU+XsFBxBDawwvVihRV9YJa+wisCRan2LLC+boToldPz4MqcQiN1k1OhKzhpL2GS15pG5Dp0SeUzRwf+4AqXQO5VI6nHmvShIUMhz461Vrq1+CLnAGZ19eE94F8CC4/w+GhyPMZJZP0ivAlLH438EBxC3jFLeDFwWAHeDuCitongnJE8L7rSAhd/XwRnPj58QgW+w6009C7yIoRUq+Sfq7g1r4G7jW2ckP4Byev6UDfx2YG9PLRh68Z0FmqZHoF+9GhAGyfwYeGgp3D/MBQwHceLjfYBCgPvzSUpQ/12ol1WX7eiDU41p1L74Sl9l/nG5cSiOZws5CKMsglNl3JW1NyCUaVSzD6wcHo6HvJsZnFycFou6Ty2QuCfINRkk9n/FlzmDByxrG1t4AkA1d+ZH6eDEmy5C3Wg7xlx88opiUhLRbJtYmlJjznF+kS/J8c6a6ka1mVSz841CVx+JJV/fSr1HZWtSMox6xKeef6op/x9SX19NPzKjUXQCdivjWvkveZcst4l3r9pV5/cL0+vU38gYK9fKnYn1SxT8D/p0v24BsLfvuqwFHJ/pyPphyL9kVFPbHsl+/588Wq/SWXPs9c+tDb6Mm5tPbFXFrLOZfeV6jOZMFnGH5O/+KQf2Wv+B2X4Uth7ycHo9y+Mhx6/zg1GO38VuqzF8y5sAf2FfbO/TOD/P+tvvHu+od6Mfv6t5BK/T8=&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+<script type="text/javascript" src="https://www.draw.io/embed2.js?s=er&"></script>
+[[/html]]
+(Note that re­ac­tion dis­place­ments have been omit­ted from this di­a­gram in or­der to sim­plify it.)
+
+In this case, the main world lines [[$B$]] and [[$B'$]] each trans­mit mu­tu­ally ex­clu­sive mes­sages [[$M$]] and [[$M'$]], each prompt­ing the other to send its mes­sage. In this case, the sit­u­a­tion could have been boot­strapped by ei­ther [[$A$]] or [[$A'$]].
+
+This can eas­ily be gen­er­al­ized to an ar­bi­trary num­ber of cases:
+
+[[html]]
+<div class="mxgraph" style="max-width:100%;border:1px solid transparent;display:block;margin:auto;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;zoom&quot;:1.5,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile userAgent=\&quot;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36\&quot; version=\&quot;6.4.2\&quot; editor=\&quot;www.draw.io\&quot; type=\&quot;browser\&quot;&gt;&lt;diagram name=\&quot;Page-4\&quot;&gt;7Vpdc6IwFP01PLYDRNR9LNbuPmxnd7YP+9iJECFrIE6IVvvrN0AChI9tVXS6RafTISfJTbj3nsMNaoBZtPvK4Dp8pD4ihm36OwPcG7btOGPxPwX2OQAUEDDs55BVAk/4FcmJEtxgHyXaOE4p4Xitgx6NY+RxDYOM0Rd92JISfdE1DFADePIgaaK/sc/DHJ06Zol/QzgI1cqWKXsW0FsFjG5iuZ5hg2X2ybsjqGzJFZIQ+vQlhzITYG6AGaOU51fRboZI6lnltXydh47eYt8Mxfw9E6S/t5BskNpxti++V75AvnCNbCKyoC/zEnCzW0WpMUu0Qh4ReZlwyPhdGgoBxDRGCnvAJB1jijaK/doIgVT6/yDO9zI34IZTAVHGQxrQGJLvlK6LtRhdFYFKkSWNuZxoCZ+6+U2ld9LpJ6vwvshpRCPE2V4MYYhAjrf6PCjTKyjGFVN/Uiws2qYkgj2SibGvtZUJ4ZIAcTmrGqiaIcd8w1BCN8xDDUPionI/JZTlQXtOjFtyYiT+3Oc4v2ikCEc7roefoQS/wkU2IA3lOt1XtlPHNZx7gUCCg1gAnogAYgLYIsaxoOCd7Iiw72c5RuACEbcg1owSyrJ1FbX0eJtFvFOLaNcmGHJnBT20THDaM0E5Xrrn1MQYa+G8UW1lgS6XCTo1kja40vui9LamPdG7Yag/eiv+tvB7NQh+56z4HAS/Pr8vTHC7L4LXDfVI8O4HuDUMgn+iJ/jkMIKX/OqN5Vlbxmass37+K4Kx/6OF+qJVmfJeIfA2bFts04dJWDQ+jCCAkaPz2DlSEEZvKUuHIAjfw31lmCRm54Yb6zhmLSdzi0dn6LRDbR6HojaT9kSTlm7MW8uxJr1Izo0q6HvVGHDgKeEUjakqxgFC4xGYJNjTZMb6zDIj6o5bq/rROTxt7T1UggBol4a+JahRRPUsQaDrRPP4bEzclTG5H4QQgY5zzTmEqDajHx068DBzrXXOXes4tXeO1vG1zvFqdqY6SN1MbyLUdeqSImS71mCEqOP89f9URBc8dV0roj4qoo7ewysi/XTXULwzVUS9i1H3oUyIUTwYIbrg0ewsFdGXj1wRDVGC9MLl2JfBjVrknV/mnlzzjM1/7gucOF79DKJrfMOBZr+yp8wP9l1ULhgXEbxaKOuvDo7RP9Esf/mSDy9/XATmfwE=&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+<script type="text/javascript" src="https://www.draw.io/embed2.js?s=er&"></script>
+[[/html]]
+
+Each world line [[$B_k$]] trans­mits a dis­tinct mes­sage [[$M_{k+1}$]] that then prompts [[$B_{k+1}$]] to send its own [[$$M_{k+2}$]], up to [[$B_n$]], which trans­mits [[$M_1$]] again, caus­ing the cy­cle to re­peat. In this case, the en­try point could have been any of these, de­pend­ing on what mes­sage [[$A$]] trans­mit­ted ini­tially.
+
+++++ Ex­cer­cises
+# Draw a com­plete time­line di­a­gram for a ba­sic fourth-or­der pe­ri­odic time loop.
+# //Ad­vanced// In some cases, a given world line may be part of a time loop more than once. Draw a time­line di­a­gram for a loop in which world line [[$C$]] sends and re­ceives mes­sages from both [[$B_1$]] and [[$B_2$]], with­out any di­rect com­mu­ni­ca­tion be­tween [[$B_1$]] and [[$B_2$]].
+----
+++ Es­ti­mat­ing Loop Struc­ture
+
+In many cases, it may only be pos­si­ble to ob­serve some por­tions of a time loop. But even in these cases, it may still be pos­si­ble to in­fer part or all of the loop's struc­ture from the por­tion you can ob­serve, by treat­ing the po­ten­tial struc­ture as if it were a Markov chain and solv­ing the cor­re­spond­ing sto­chas­tic ma­trix.
+
+For ex­am­ple, take a case where each world line is send­ing and re­ceiv­ing a mes­sage that is ei­ther [[$M_1$]], [[$M_2$]], or [[$M_3$]]. Be­fore re­ceiv­ing their mes­sage, they flip a coin. If heads, they will add 1 to the mes­sage and send it, un­less it's [[$M_3$]], in which case they will just send [[$M_3$]]. If it's tails, how­ever, they throw the mes­sage away just send [[$M_1$]]. What is the prob­a­bil­ity of re­ceiv­ing each of these mes­sages [[$M_3$]]?
+
+[[html]]
+<div class="mxgraph" style="max-width:100%;border:1px solid transparent;display:block;margin:auto;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;zoom&quot;:1.5,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile userAgent=\&quot;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36\&quot; version=\&quot;6.4.2\&quot; editor=\&quot;www.draw.io\&quot; type=\&quot;browser\&quot;&gt;&lt;diagram name=\&quot;Page-5\&quot;&gt;7VtbV+o6EP41rHXOg642aUt5tICKghu2Fza8nBXaUIqlqWm4+etPeoViQcAqbMXFkmSSTJLJN1+mAxRgeTS7osgdNIiB7QIQjFkBVgoASIrM//uCeSgAJTUUmNQyQpG4ENxbrzgURsPMsWVgL9WPEWIzy00LdeI4WGcpGaKUTNPd+sROT+oiE78R3OvIfittWwYbhFJVFhbya2yZg3hmUYhaekh/NikZO9F8BQD7wV/YPEKxrmgGb4AMMg1FgQpYLcAyJYSFpdGsjG3fsrHVwnku17Qm66bYYdsMiOw9QfYYxysO1sXmsS2wwU0TVbHdI9PqQqAFW8W+MpHXBmxkR0WPIcou/KPgAoc4OJZdWrbfR+B17BgrPbhkqX2IGZtH2EBjRriIUDYgJnGQXSfETeai5Dk5KF/SJw6LBorcplq4KX8na+0kJtbnmMZkhBmd8y4U24hZk/Q4FMHLTPolQ5vE4hqBEDkCkCJgRH4gRueRqOAmMTGLRi0f1IoiqL6jyCNjquM3inhhaT8LUYCDNZgQM0Ch2CyyawodysuYxA1nXmDxC95BFNzZopGXzPBd4i/tPzEsxEr5ekK9ca8VADI8Y2lwUcynQr2ggw8U1991YAdZK8gVLkG2ZTpcoPPzxZQLJpgyizv4RdQwsgwjQLCNetjWErctE5vQYN7YcVNokpMF+grxLIuNooUlvpeCmZwNs0jRmXAuCGIxddKSFFY/iERZTmk9i9XGGki/7+GPQkfMgs6JTz6RT5S8+GRVUY58Atbyieci5+N8At7wSaj3J/CJuAZnGwhFhp9CKLHaXAkl3vKJUL6IUICQE6G8UZQjoWRFrXkGKPAHByhLjyFbE4qSD6EoK4SifAahFHPiDzyz2B//eM/lqNZZamliavFV+ScbAOB42EbYgW24mQKnjUy3Jnb9KAMJaeJQtyOgfXhDyeAN39EvYn8/YsdeOrh9Pbu40bOFcwDj2zV2QTEXx47VrGjN16+3yGR4A+T6RY9hR7fsf9zunVYhtWm1+tQUFOD2HqyL1hNQ1FarMmQ1Ur9/fir1UfuBCCYqtzx/feBS7cJRAWhO48Zpa08PNa2GlSmbzsbtbvnu6uKpqxmTslwitzfX6qTVpPPbuXHXxupLp0FvL38prVtmXQ2hdm/ItbrjtHSvKVn0sdt9rd8NjQ6mtfkYC89OaT5rgUn7pfhrWLfbuK3cle+voA0fybgql5uWWXL5MtQ6fKWdm0ZDHTZvwHjMRcMKop06KNWa5mUXj6Z/9B60JpXfKhXceenWUHpD+Ag6fCtCuz/s8vfGAx/WMZq8+Ny7fu0o7epsOgGzB/fZGKo6RgoCzaYLte51xXWm9KoapKxg5d+0d6zFft2HepN4FrOI36FHGCOjDOdgPotpBvIGAef6mDcsypEdjnN8wlsbPmX4xRYBVDxgJRCKc33TRf5PjESDpdTf6mPTsjek4LwJu+puQe6C9XOLdIN6ZFElfRfpNvI8S09dR2JYWxqw7eWkj+kkWWRyzkcdEu+ds3vvZlsTEXPDo/lSt+iO2foCjZPRa5e1ur90f14IV7AvFcMsOPv3a2OR+fveF636zkULRZDPxfoZETKUTmx0zGy0b8bvUGwk7chGUs5sVFrLRuBHsFHozxvYSC4WVwL0nNhJFDLV5stWxRNbHTFb7Z1OPBRbqTuylZovW8XqM9gK/gy2ei9JoQrxJ5dJOiEnulI/n62kHT8fPbHV3/GkB0V5s6Kc6OrNPAd+1JPgCc/fEs9wBWdbfjtgZzyvznNoPJ+efb8nnuV3wtK88CxvxOfX4znrE68Tno8Gz3t/e+tQ8caBkznS6Wn/mPG8/5eHDhVvHPpxPys5ecLzAfF8LooKKJYEpVRUihJIn36pdB63SKKqCMW/LBr5WrTz6uKHLGH3xW+FYPV/&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+<script type="text/javascript" src="https://www.draw.io/embed2.js?s=er&"></script>
+[[/html]]
+
+If we di­a­gram out all pos­si­ble tran­si­tions on our time­line, we get the di­a­gram above. This can be then writ­ten out as a sto­chas­tic ma­trix:
+
+[[math]]
+B = \begin{bmatrix}B_1&B_2&B_3\end{bmatrix} = B\;\begin{bmatrix}0.5 & 0.5 & 0 \\ 0.5 & 0 & 0.5 \\ 0.5 & 0 & 0.5\end{bmatrix}
+[[/math]]
+This could be solved al­ge­braically, but in this case it is eas­ier to just sim­u­late it - in this case it con­verges af­ter only two it­er­a­tions. The re­sult­ing as­ymp­totic prob­a­bil­i­ties are 0.5 for [[$M_1$]], and 0.25 for [[$M_2$]] and [[$M_3$]].
+
+++++ Ex­cer­cises
+# Gen­er­al­ize the ex­am­ple prob­lem to five mes­sages. Draw out the com­plete time­line di­a­gram and com­pute the prob­a­bil­ity of re­ceiv­ing each mes­sage.
+# //Ad­vanced// Solve the time loop in 2.1 ex­cer­cise 2. Be­cause of the way world line [[$C$]] par­tic­i­pates in the loop mul­ti­ple times, this should af­fect its prob­a­bil­ity dif­fer­ently than in a sim­ple loop.
+----
+++ The Lot­tery Prob­lem
+
+We are now equipped to un­der­stand the lot­tery prob­lem pre­sented at the be­gin­ning of Chap­ter 1, and un­der­stand why, as we as­serted, you are only slightly more likely to win than by ran­dom guess­ing.
+
+> You re­cieve a win­ning lot­tery num­ber from the fu­ture. What is the prob­a­bil­ity of win­ning the lot­tery us­ing that num­ber?
+
+First off, some ba­sic in­for­ma­tion about lot­ter­ies:
+The se­lec­tion meth­ods used by mod­ern lot­ter­ies are ex­tremely sen­si­tive to even very small changes. The act of trans­mit­ting the mes­sage to the past is al­most cer­tainly enough to change which num­ber gets picked. The in­ter­me­di­ate value the­o­rem from cal­cu­lus guar­an­tees that at there is at least one num­ber that, if trans­mit­ted, would end up be­ing cor­rect, but there is no way this num­ber can be de­ter­mined be­fore­hand.
+
+The best strat­egy that the spu­ri­ous lines can take to en­sure they con­verge to a win, is brute force, where each pos­si­ble num­ber is tried in turn un­til it works. Then once we have the work­ing num­ber, just keep send­ing that num­ber to the past.
+
+How­ever, each time, there is also a nonzero prob­a­bil­ity that you might //fail// to trans­mit the next num­ber cor­rectly, be it a tran­scrip­tion er­ror, ran­dom soft­ware glitch, or any­thing else. Be­cause the num­ber of steps you will likely have to take in or­der to ar­rive at the cor­rect lot­tery num­ber, this prob­a­bil­ity of fail­ure builds up and com­pounds on it­self, since you only need to fail once to pre­vent ever reach­ing the cor­rect num­ber. And since the chance of mak­ing no mis­takes over the bil­lions or tril­lions of it­er­a­tions re­quired to con­verge to the right num­ber, us­ing the num­ber re­ceived from the fu­ture only gives you a very slight edge over ran­domly guess­ing.
+
+++++ Ex­cer­cises
+# As­sum­ing 100 steps, and a 1% chance of mak­ing an er­ror that re­sets to step 1, com­pute the ex­pected value for the length of the loop, and find the prob­a­bil­ity of reach­ing step 100.
+# //Ad­vanced// De­rive  the gen­eral equa­tion de­scrib­ing the prob­a­bil­ity of reach­ing step [[$n$]] given a uni­form fail­ure prob­a­bil­ity [[$p$]] at each step.
+
+[[/div]]
+----
+[[=]]
+**[[[time-travel-ch1|Chapter 1: Introduction to Time Travel]]] | Chapter 3: The Divergence Metric (coming soon!)**
+[[/=]]
