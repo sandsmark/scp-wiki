@@ -55,7 +55,7 @@ As an ex­am­ple, con­sider this loop:
 <div class="mxgraph" style="max-width:100%;border:1px solid transparent;display:block;margin:auto;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;zoom&quot;:1.5,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile userAgent=\&quot;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/56.0.2924.76 Chrome/56.0.2924.76 Safari/537.36\&quot; version=\&quot;6.4.2\&quot; editor=\&quot;www.draw.io\&quot; type=\&quot;browser\&quot;&gt;&lt;diagram name=\&quot;Page-2\&quot;&gt;7Vhdc6I8FP41zuxevB0gQvGy+FXrx+Jq6+pdhIhRJGwIIv76N0BQqba1te50dtYLSZ6cJIdznvOhJVBdbZoU+vMusZFbUiR7UwK1kqIAtcK/EyDOALVymwEOxXYGyXtggLdIyAkwxDYKCnKMEJdhvwhaxPOQxQoYpJRERbEZcYuX+tBBR8DAgu4xOsI2m2eorkp7/B5hZ57fLEtiZQqtpUNJ6In7SgqYpZ9seQXzs8QNwRzaJMqg9AhQL4EqJYRlo9WmitzEsrnVsnsaL6zu9KbIY+dsULINa+iGKNc41YvFuS24in4yDBjyLOx+8yc9o0ZaUb3+ZEqa4k+H+K7/pGh6v19bsBbpDJZPlRkcDYnkwGo/SC5XGvoErEqK4XUfvJHxNGwZLaRFLNqEo0m117x7mhj2uqpWSPvhXl/3TRq3Y7s3QvrvcZe2Gz+0fpvh5gIYA1ttdTyvbwVmGdPHyWTb6S3sMaKtOETS0qvEm76yHv2+/bHouCM00nrVQRO44JGEdbVqYqficzX0DtjS8UO3qy/MByUMObSoQTruKJWW6TQmaBX9sqYAr2s/dSr5caVta9MFeFTG/FWk0Wwx4c/ukG8b2yYfLqf327E2qm+itbIZ+kt7oVsIalAxTR8Yk/ua70W0WU8dDWrfS8CYs5XLhzIfQhc7Hh9b3GeIcmCNKMOcjB04Ra5JAswwSQSmhDGyOhC4EzsZ8Tlqw2COEr9KyQRTHhjZPo/QhHbGjHhMhJrMmWYck0XwJzkfbQ4gQZ4mIivEaMxF8tWKIH4e52Ia7aNGFtD8IGA0gUERp87u4D1X+UDQ9TR11bepi2we1WLqEY8/jDQ2UyvJRS9wG9D4V2K9GzWfjg/XTEQxVzLxUGrhgEHK7pJksz89xRo40XkvI0yupQfZz3Zw5ECezw6kF4ixWMxhyAiHEk8Sh3icHCRxeqre2X7l2jiIFSI/MdGrjqbIhQyvi4nxlN/EVpNgfuuOIEAtEkR/5vmAhNRCYtMz5++0OIsPMngfIZA7JVF9D7xMjXM8/ZZnz/VlwChZ7orOu7x7bVcq5aIrZVUtHpHR68iXRweV5TcO+kRSlN9Hir1PPo0Zr+QAy4VBgK0CWeQPpwErpOudkrti8HdS6HlakVXtLApxy8P4QMxPBILz05csys5Leh29YFGeDzINPspn5VSS4xwvd7PHEbl5HWdFzlIU4C2cpgIJP4UJuLRqlNTaaw1J3m+ssG2ngeEmHYqx63mrxCU0vTfveovck05zL4/R513Hrr8X2hZ65FPdiHQjlWUR4B9lai5CZrMAXZx+3tmknE4/hcB+MRcVIv7CxER85P3p5uTqnYh2tdxzXvm6OPeA13PP0QuCz809svavln4hPl+tlp7Zol9MZ0l6Va2j9yvKX15K8x+7f1MpzUP04lL6n3Qjq/LtV6qlt/9q6VfJPVerpbp0o0gHnz9UWeV3Vlb5osrKp/t/eDPx/Z/ooP4/&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
 <script type="text/javascript" src="https://www.draw.io/embed2.js?s=er&"></script>
 [[/html]]
-The up­per line here is the spu­ri­ous line that boos­t­raps the time loop. Al­though it does not re­cieve a mes­sage, it spon­ta­neously de­cides to trans­mit mes­sage [[$M$]] to the past. The past re­cieves this mes­sage, and then also trans­mits the same mes­sage [[$M$]] to the past, form­ing a time loop.
+The up­per line here is the spu­ri­ous line that bootstraps the time loop. Al­though it does not receive a mes­sage, it spon­ta­neously de­cides to trans­mit mes­sage [[$M$]] to the past. The past receives this mes­sage, and then also trans­mits the same mes­sage [[$M$]] to the past, form­ing a time loop.
 
 In some cases there may be more than one po­ten­tial spu­ri­ous world line that could have lead to a given loop. For ex­am­ple, take this sec­ond-or­der loop:
 
@@ -76,7 +76,7 @@ This can eas­ily be gen­er­al­ized to an ar­bi­trary num­ber of cases:
 
 Each world line [[$B_k$]] trans­mits a dis­tinct mes­sage [[$M_{k+1}$]] that then prompts [[$B_{k+1}$]] to send its own [[$M_{k+2}$]], up to [[$B_n$]], which trans­mits [[$M_1$]] again, caus­ing the cy­cle to re­peat. In this case, the en­try point could have been any of these, de­pend­ing on what mes­sage [[$A$]] trans­mit­ted ini­tially.
 
-++++ Ex­cer­cises
+++++ Exercises
 # Draw a com­plete time­line di­a­gram for a ba­sic fourth-or­der pe­ri­odic time loop.
 # //Ad­vanced// In some cases, a given world line may be part of a time loop more than once. Draw a time­line di­a­gram for a loop in which world line [[$C$]] sends and re­ceives mes­sages from both [[$B_1$]] and [[$B_2$]], with­out any di­rect com­mu­ni­ca­tion be­tween [[$B_1$]] and [[$B_2$]].
 ----
@@ -98,15 +98,15 @@ B = \begin{bmatrix}B_1&B_2&B_3\end{bmatrix} = B\;\begin{bmatrix}0.5 & 0.5 & 0 \\
 [[/math]]
 This could be solved al­ge­braically, but in this case it is eas­ier to just sim­u­late it - in this case it con­verges af­ter only two it­er­a­tions. The re­sult­ing as­ymp­totic prob­a­bil­i­ties are 0.5 for [[$M_1$]], and 0.25 for [[$M_2$]] and [[$M_3$]].
 
-++++ Ex­cer­cises
+++++ Exercises
 # Gen­er­al­ize the ex­am­ple prob­lem to five mes­sages. Draw out the com­plete time­line di­a­gram and com­pute the prob­a­bil­ity of re­ceiv­ing each mes­sage.
-# //Ad­vanced// Solve the time loop in 2.1 ex­cer­cise 2. Be­cause of the way world line [[$C$]] par­tic­i­pates in the loop mul­ti­ple times, this should af­fect its prob­a­bil­ity dif­fer­ently than in a sim­ple loop.
+# //Ad­vanced// Solve the time loop in 2.1 exercise 2. Be­cause of the way world line [[$C$]] par­tic­i­pates in the loop mul­ti­ple times, this should af­fect its prob­a­bil­ity dif­fer­ently than in a sim­ple loop.
 ----
 ++ The Lot­tery Prob­lem
 
 We are now equipped to un­der­stand the lot­tery prob­lem pre­sented at the be­gin­ning of Chap­ter 1, and un­der­stand why, as we as­serted, you are only slightly more likely to win than by ran­dom guess­ing.
 
-> You re­cieve a win­ning lot­tery num­ber from the fu­ture. What is the prob­a­bil­ity of win­ning the lot­tery us­ing that num­ber?
+> You receive a win­ning lot­tery num­ber from the fu­ture. What is the prob­a­bil­ity of win­ning the lot­tery us­ing that num­ber?
 
 First off, some ba­sic in­for­ma­tion about lot­ter­ies:
 The se­lec­tion meth­ods used by mod­ern lot­ter­ies are ex­tremely sen­si­tive to even very small changes. The act of trans­mit­ting the mes­sage to the past is al­most cer­tainly enough to change which num­ber gets picked. The in­ter­me­di­ate value the­o­rem from cal­cu­lus guar­an­tees that at there is at least one num­ber that, if trans­mit­ted, would end up be­ing cor­rect, but there is no way this num­ber can be de­ter­mined be­fore­hand.
@@ -115,9 +115,9 @@ The best strat­egy that the spu­ri­ous lines can take to en­sure they con­v
 
 How­ever, each time, there is also a nonzero prob­a­bil­ity that you might //fail// to trans­mit the next num­ber cor­rectly, be it a tran­scrip­tion er­ror, ran­dom soft­ware glitch, or any­thing else. Be­cause the num­ber of steps you will likely have to take in or­der to ar­rive at the cor­rect lot­tery num­ber, this prob­a­bil­ity of fail­ure builds up and com­pounds on it­self, since you only need to fail once to pre­vent ever reach­ing the cor­rect num­ber. And since the chance of mak­ing no mis­takes over the bil­lions or tril­lions of it­er­a­tions re­quired to con­verge to the right num­ber, us­ing the num­ber re­ceived from the fu­ture only gives you a very slight edge over ran­domly guess­ing.
 
-++++ Ex­cer­cises
+++++ Ex­er­cises
 # As­sum­ing 100 steps, and a 1% chance of mak­ing an er­ror that re­sets to step 1, com­pute the ex­pected value for the length of the loop, and find the prob­a­bil­ity of reach­ing step 100.
-# //Ad­vanced// De­rive  the gen­eral equa­tion de­scrib­ing the prob­a­bil­ity of reach­ing step [[$n$]] given a uni­form fail­ure prob­a­bil­ity [[$p$]] at each step.
+# //Ad­vanced// De­rive the gen­eral equa­tion de­scrib­ing the prob­a­bil­ity of reach­ing step [[$n$]] given a uni­form fail­ure prob­a­bil­ity [[$p$]] at each step.
 
 [[/div]]
 ----
