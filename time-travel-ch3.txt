@@ -1,0 +1,175 @@
+title:Chapter 3: Threads
+[[module CSS]]
+.page-rate-widget-box {
+    float: right;
+    margin: 5px;
+    text-align: left;
+    font-family: verdana,arial,helvetica,sans-serif;
+    margin-left: 15px;
+}
+.book-text {
+    text-align: justify;
+    font-family: Georgia, serif;
+    font-size: 110%;
+    text-indent: 0.3em;
+}
+h2 {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+.inset {
+    float: right;
+    width: 25%;
+    margin: 0px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: gray;
+    padding: 5px;	
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: lightgoldenrodyellow;
+    font-size: 90%;
+}
+.inset > p {
+    margin: 0;
+}
+.blockquote {
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: gray;
+    background: lightcyan;
+
+    padding: 5px;
+    width: 90%;
+}
+.blockquote > p {
+    margin: 0px;
+}
+{ counter-reset: sec; }                 
+h2 {counter-increment: sec; } 
+h2:before {content:"3."counter(sec)" "; }
+h4:after {content:" for 3."counter(sec); }
+[[/module]]
+
+[[div class="book-text"]]
+
+[[module Rate]]
+
+++ Thread Space
+
+In ear­lier chap­ters, we dis­cussed time travel in terms of tran­si­tions be­tween world lines, and shown how it can be used to pre­dict the be­hav­ior of sim­ple time loops. How­ever, in or­der to un­der­stand more com­plex phe­nom­ena, it is nec­es­sary to gen­er­al­ize this.
+
+**Thread space** refers to the space of all pos­si­ble com­bi­na­tions of things that could ever oc­cur, down to the tini­est de­tail of even in­trin­si­cally ran­dom events (like nu­clear de­cay or quan­tum in­ter­ac­tions). A sin­gle in­stance of such a com­bi­na­tion is re­ferred to as a **thread**. Note that in rel­a­tivis­tic con­texts it's nec­es­sary to con­sider each ref­er­ence frame hav­ing its own threads, but that will not be cov­ered in this text.
+
+It's also use­ful to con­sider off­set threads; that is, given a space­time vec­tor [[$\vec x$]], then [[$A + \vec x$]] is also a thread. We can usu­ally con­sider all the off­set threads of a given thread to­gether with the first thread, but it be­comes im­por­tant when dis­cussing thread dis­tance and tele­por­ta­tion.
+
+++++ No Ex­er­cises
+------
+++ The Rzewski Field
+
+[[div class="inset"]]
+The Rzewski field was named for Dr. Car­los Rzewski, who won the Dirac medal of the FTPI for this dis­cov­ery in 1975.
+[[/div]] [!-- credit <AbsentmindedNihilist> for info about physics prizes --]
+
+In or­der to prop­erly un­der­stand the re­la­tion­ships be­tween in­di­vid­ual threads, we also need to in­tro­duce the **Rzewski field**, one of the fun­da­men­tal fields in the uni­verse. (Note that in some con­texts it may also be re­ferred to as the //sub­space field//.) ​The Rzewski field de­fines a unique value as­so­ci­ated with each point in space­time across every thread. It is the­o­rized to be the un­der­ly­ing rea­son that that there are points in space­time that are dis­tinct from one an­other, as op­posed to hav­ing a uni­verse con­tain­ing only a sin­gle point. This is also what makes dif­fer­ent threads dis­tinct from each other, and, most im­por­tantly for prac­ti­cal pur­poses, can be mea­sured to di­rectly de­ter­mine how sim­i­lar two threads are to each other.
+
+There are a num­ber of dif­fer­ent ways this can be mea­sured, but one of the most com­mon and use­ful is **thread dis­tance**, mea­sured in humes. In your other course­work you may have al­ready en­coun­tered humes, when mea­sur­ing how ``anom­alous'' some­thing is with a Kant counter or sim­i­lar de­vice. In time travel, we use a dif­fer­ent tool, the //di­ver­gence me­ter//. ​In­stead of com­par­ing to a set of fixed pocket di­men­sions, a di­ver­gence me­ter al­lows mea­sur­ing thread dis­tance di­rectly rel­a­tive to other threads, and is gen­er­ally much more sen­si­tive.
+
+Note that thread dis­tance does not di­rectly tell us //what// is dif­fer­ent be­tween two threads, but it does tell us how dif­fer­ent the threads are, and it can be used to help find where ma­jor changes may have oc­curred.
+
+++++ No Ex­er­cises
+------
+++ Al­ge­braic Prop­er­ties of Thread Dis­tance
+
+Thread dis­tance, no­tated [[$d(A,B)$]] for any given threads A, B, al­lows us to de­fine a //met­ric space// and in­duces a topol­ogy that al­lows us to rea­son about thread space. While the pre­cise de­tails of Rizewskian man­i­folds are very im­por­tant for the­o­ret­i­cal ca­su­al­ity, for prac­ti­cal pur­poses we need not con­cern our­selves with it, ex­cept for a few ba­sic con­cepts.
+
+Since thread dis­tance is a met­ric, we have the fol­low­ing prop­er­ties:
+
+* [[$d(A,B)\in\Bbb R\;$]] -- Thread dis­tance is a real num­ber.
+* [[$d(A,B)\ge0\;$]] -- Thread dis­tance is non-neg­a­tive.
+* [[$d(A,A)=0\;$]] -- Thread dis­tance from a thread to it­self is zero.
+* [[$d(A,B)=d(B,A)\;\;$]] -- Thread dis­tance is re­flex­ive; it's the same mea­sured in ei­ther di­rec­tion.
+* [[$d(A,B)\le d(A,C) + d(B,C)\;\;\;$]] -- Thread dis­tance obeys the tri­an­gle in­equal­ity; the sum of dis­tances to some third thread will be at least as large as the di­rect dis­tance be­tween two threads. (i.e. There are no `short­cuts'.)
+
+These prop­er­ties are im­por­tant be­cause it al­lows us to use an­a­lyt­i­cal tools to rea­son about thread space, and in par­tic­u­lar it al­lows us to de­fine the con­cept of //thread po­ten­tial//, ​dis­cussed in sec­tion 3.5.
+
+++++ Ex­er­cises 
+# Given that [[$d(K, Q) = 1.5 \mathrm{Hm}\;$]] and that [[$d(T, Q) = 7.0 \mathrm{Hm}\;$]], what is the max­i­mum pos­si­ble value for [[$d(K, T)\;$]]?
+# //Ad­vanced// Let [[$f(\vec x) = d(E+\vec x, E)\;$]]. Prove that [[$\nabla\times\nabla f(\vec x)=0\;$]].
+------
+++ Thread Con­ver­gence and Time Loops
+
+[[div class="inset" style="width:30%;"]]
+[[image http://i.imgur.com/FWHSjH9.png style="width:100%;display:block;"]]
+
+An ex­am­ple of a thread se­quence pro­jected into 2D con­verg­ing to a world line.
+[[/div]]
+
+In chap­ter 2, we dis­cussed time loops in terms of world lines, as if each it­er­a­tion of the loop was ex­actly iden­ti­cal to the pre­vi­ous. In prac­tice, each it­er­a­tion of a world line will in­evitably have at least some small dif­fer­ence, stem­ming from Bel­l's the­o­rem and the fact that it's im­pos­si­ble to ob­serve any­thing with­out chang­ing its state. As a re­sult, it makes more sense to talk about world lines as the lim­its of loop it­er­a­tion.
+
+Given a time loop with a thread se­quence [[$A^{(1)}, B^{(1)}, A^{(2)}, B^{(2)} ...$]], then if we can split this se­quence up into only fi­nitely many con­ver­gent Cauchy se­quences, it is pos­si­ble to de­fine our world lines as the lim­its of those se­quences. In our ex­am­ple, if [[$A^{(1)}, A^{(2)} ...$]] and [[$B^{(1)}, B^{(2)} ...$]] are both Cauchy se­quences, then we can re­fer to [[$A = \lim_{n\to\infty} A^{(n)}$]] and [[$B = \lim_{n\to\infty} B^{(n)}$]] as world lines. In other terms, if af­ter an ar­bi­trary num­ber of times around the loop, it be­comes ar­bi­trar­ily hard to dis­tin­guish be­tween each [[$A^{(n)}$]] and [[$A^{(n+1)}$]], then it still makes sense to con­sider them as world lines.
+
+How­ever, in some cases it is not pos­si­ble to split up a thread se­quence in this way, and any such se­quence will in­stead con­verge to a set of closed curves or higher-or­der man­i­folds in thread space. These //world man­i­folds// can some­times still be con­sid­ered in a sim­i­lar way to world lines, but sys­tems con­tain­ing world man­i­folds are not in gen­eral solv­able us­ing al­ge­braic tech­niques. Some meth­ods for solv­ing these more dif­fi­cult sys­tems are pre­sented in chap­ter 4.
+
+++++ No Ex­er­cises
+
+------
+
+++ Thread Po­ten­tial
+
+One other im­por­tant prop­erty of thread dis­tance is the way it varies over time and space. In par­tic­u­lar, it is con­tin­u­ously dif­fer­en­tiable, and `at in­fin­i­ty' it is iden­ti­cally zero. That is: 
+[[math]]
+\lim_{|\vec x|\to\infty} d(A+\vec x,B+\vec x)=0
+[[/math]]
+
+[[div class="inset" style="width:30%;"]]
+[[iframe https://www.desmos.com/calculator/unw2n9yt0h?embed style="width: 100%; border: 1px solid #ccc" frameborder=0]]
+
+The thread po­ten­tial for the event rep­re­sented by the up­per (blue) curve is 5 times the lower (red) one, mean­ing that it is only 1/​5th as likely.
+[[/div]]
+
+Mea­sur­ing thread dis­tances be­tween sep­a­rate threads is use­ful for de­ter­min­ing how sim­i­lar they are, and rea­son­ing about con­ver­gence. How­ever, and in some ways even more im­por­tantly, we can also mea­sure thread dis­tance be­tween points that are only sep­a­rated by space and time. Do­ing this makes it pos­si­ble to de­fine a po­ten­tial field based on thread dis­tance `to in­fin­i­ty', called **thread po­ten­tial** and no­tated [[$\nabla^2 d(E)$]], with some ex­tremely use­ful prop­er­ties.
+
+[[math]]
+\;\;\nabla^2 d(E) = \nabla \cdot \nabla d(E+\vec x, \infty)
+[[/math]]
+
+This quan­tity turns out to be enor­mously im­por­tant in later chap­ters, be­cause, as it turns out, it al­lows us to di­rectly re­late the prob­a­bil­i­ties of dif­fer­ent events to each other:
+
+[[math]]
+\nabla^2 d(E_1)\; P(E_1) = \nabla^2 d(E_2)\; P(E_2)
+[[/math]]
+
+The ra­tio of the prob­a­bil­i­ties of two events, is also one of the main de­ter­min­ing fac­tors when es­ti­mat­ing how easy or dif­fi­cult it would be to change those events via time travel. It also en­ables us to lo­cate and map out nearby events that will be sus­cep­ti­ble to mod­i­fi­ca­tion, by fol­low­ing the gra­di­ent of the thread po­ten­tial to its peak.
+
+[[div class="blockquote"]]
++++ Example 1
+We mea­sure the thread po­ten­tial of some event [[$E$]] to be:
+[[math]]
+\nabla^2d(E)=1
+[[/math]]
+
+Af­ter mod­i­fy­ing the past so that [[$E'$]] oc­curs in­stead, we wish to in­stead re­vert the change to [[$E$]]. Un­for­tu­nately, when we mea­sure the thread po­ten­tial:
+
+[[math]]
+\nabla^2d(E')=0.1
+[[/math]]
+
+Com­put­ing the rel­a­tive prob­a­bil­i­ties:
+[[math]]
+\frac{P(E)}{P(E')} = \frac{\nabla^2d(E')}{\nabla^2d(E)} = \frac{0.1}{1} = 0.1
+[[/math]]
+
+Since [[$E'$]] is only 1/​10th as likely as [[$E'$]], it will be much more dif­fi­cult to re­turn to [[$E$]] than it was orig­i­nally to get to [[$E'$]].
+[[/div]]
+ 
+++++ No Ex­er­cises
+
+[[/div]]
+----
+[[=]]
+**[[[time-travel-ch2|Chapter 2: Time Loops]]] | Chapter 4: Aperiodic Loops and Chaos (Coming Soon!)**
+[[/=]]
