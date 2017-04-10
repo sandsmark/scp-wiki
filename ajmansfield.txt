@@ -179,11 +179,9 @@ This is a textbook for an introductory time travel course taught at SCPU.
 [[/module]]
 [[/collapsible]]
 
-
-[[collapsible show="+ LC" hide="- NOOOOO don't show me the votes!"]]
-(I put this here so I could see a list of the most recent articles and their vote totals, since the bot gods saw fit to remove the votes from the IRC list.)
-[[module ListPages separate="no" category="*"]]
-* %%title_linked%%, by %%created_by_linked%% (%%rating%%)
+[[collapsible show="+ utility page list" hide="- custom listpages for searching misc things"]]
+[[module ListPages separate="no" category="*" tags="alexylva" order="created_at desc"]]
+|| %%title_linked%% || %%created_at%% || %%created_by_linked%% ||
 [[/module]]
 [[/collapsible]]
 
