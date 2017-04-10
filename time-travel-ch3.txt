@@ -1,5 +1,8 @@
 title:Chapter 3: Threads
 [[module CSS]]
+.MathJax {
+    font-size: 90%;
+}
 .page-rate-widget-box {
     float: right;
     margin: 5px;
@@ -84,21 +87,21 @@ Note that thread dis­tance does not di­rectly tell us //what// is dif­fer­en
 ------
 ++ Al­ge­braic Prop­er­ties of Thread Dis­tance
 
-Thread dis­tance, no­tated [[$d(A,B)$]] for any given threads A, B, al­lows us to de­fine a //met­ric space// and in­duces a topol­ogy that al­lows us to rea­son about thread space. While the pre­cise de­tails of Rizewskian man­i­folds are very im­por­tant for the­o­ret­i­cal ca­su­al­ity, for prac­ti­cal pur­poses we need not con­cern our­selves with it, ex­cept for a few ba­sic con­cepts.
+Thread dis­tance, no­tated [[$d(A,B)$]] for any given threads A, B, al­lows us to de­fine a //met­ric space// and in­duces a topol­ogy that al­lows us to rea­son about thread space. While the pre­cise de­tails of the Rizewski field are very im­por­tant for the­o­ret­i­cal ca­su­al­ity, for prac­ti­cal pur­poses we need not con­cern our­selves with it, ex­cept for a few ba­sic con­cepts.
 
 Since thread dis­tance is a met­ric, we have the fol­low­ing prop­er­ties:
 
-* [[$d(A,B)\in\Bbb R\;$]] -- Thread dis­tance is a real num­ber.
-* [[$d(A,B)\ge0\;$]] -- Thread dis­tance is non-neg­a­tive.
-* [[$d(A,A)=0\;$]] -- Thread dis­tance from a thread to it­self is zero.
-* [[$d(A,B)=d(B,A)\;\;$]] -- Thread dis­tance is re­flex­ive; it's the same mea­sured in ei­ther di­rec­tion.
-* [[$d(A,B)\le d(A,C) + d(B,C)\;\;\;$]] -- Thread dis­tance obeys the tri­an­gle in­equal­ity; the sum of dis­tances to some third thread will be at least as large as the di­rect dis­tance be­tween two threads. (i.e. There are no `short­cuts'.)
+* [[$d(A,B)\in\Bbb R$]] -- Thread dis­tance is a real num­ber.
+* [[$d(A,B)\ge0$]] -- Thread dis­tance is non-neg­a­tive.
+* [[$d(A,A)=0$]] -- Thread dis­tance from a thread to it­self is zero.
+* [[$d(A,B)=d(B,A)$]] -- Thread dis­tance is re­flex­ive; it's the same mea­sured in ei­ther di­rec­tion.
+* [[$d(A,B)\le d(A,C) + d(B,C)$]] -- Thread dis­tance obeys the tri­an­gle in­equal­ity; the sum of dis­tances to some third thread will be at least as large as the di­rect dis­tance be­tween two threads. (i.e. There are no `short­cuts'.)
 
 These prop­er­ties are im­por­tant be­cause it al­lows us to use an­a­lyt­i­cal tools to rea­son about thread space, and in par­tic­u­lar it al­lows us to de­fine the con­cept of //thread po­ten­tial//, ​dis­cussed in sec­tion 3.5.
 
 ++++ Ex­er­cises 
-# Given that [[$d(K, Q) = 1.5 \mathrm{Hm}\;$]] and that [[$d(T, Q) = 7.0 \mathrm{Hm}\;$]], what is the max­i­mum pos­si­ble value for [[$d(K, T)\;$]]?
-# //Ad­vanced// Let [[$f(\vec x) = d(E+\vec x, E)\;$]]. Prove that [[$\nabla\times\nabla f(\vec x)=0\;$]].
+# Given that [[$d(K, Q) = 1.5\,\mathrm{Hm}$]] and that [[$d(T, Q) = 7.0\,\mathrm{Hm}$]], what is the max­i­mum pos­si­ble value for [[$d(K, T)$]]?
+# //Ad­vanced// Let [[$f(\vec x) = d(E+\vec x, E)$]]. Prove that [[$\nabla\times\nabla f(\vec x)=0$]].
 ------
 ++ Thread Con­ver­gence and Time Loops
 
@@ -134,13 +137,13 @@ The thread po­ten­tial for the event rep­re­sented by the up­per (blue) cur
 Mea­sur­ing thread dis­tances be­tween sep­a­rate threads is use­ful for de­ter­min­ing how sim­i­lar they are, and rea­son­ing about con­ver­gence. How­ever, and in some ways even more im­por­tantly, we can also mea­sure thread dis­tance be­tween points that are only sep­a­rated by space and time. Do­ing this makes it pos­si­ble to de­fine a po­ten­tial field based on thread dis­tance `to in­fin­i­ty', called **thread po­ten­tial** and no­tated [[$\nabla^2 d(E)$]], with some ex­tremely use­ful prop­er­ties.
 
 [[math]]
-\;\;\nabla^2 d(E) = \nabla \cdot \nabla d(E+\vec x, \infty)
+\nabla^2 d(E) = \nabla \cdot \nabla d(E+\vec x, \infty)
 [[/math]]
 
 This quan­tity turns out to be enor­mously im­por­tant in later chap­ters, be­cause, as it turns out, it al­lows us to di­rectly re­late the prob­a­bil­i­ties of dif­fer­ent events to each other:
 
 [[math]]
-\nabla^2 d(E_1)\; P(E_1) = \nabla^2 d(E_2)\; P(E_2)
+\nabla^2 d(E_1)\, P(E_1) = \nabla^2 d(E_2)\, P(E_2)
 [[/math]]
 
 The ra­tio of the prob­a­bil­i­ties of two events, is also one of the main de­ter­min­ing fac­tors when es­ti­mat­ing how easy or dif­fi­cult it would be to change those events via time travel. It also en­ables us to lo­cate and map out nearby events that will be sus­cep­ti­ble to mod­i­fi­ca­tion, by fol­low­ing the gra­di­ent of the thread po­ten­tial to its peak.
