@@ -1,10 +1,94 @@
 title:Top Rated Pages This Month
+[[span style="border: solid 2px #003; border-radius: 15px; padding: 4px 8px; text-align: center; background-color: #990; background: linear-gradient(to right, #ffff00,#000,#ffff00,#000,#ffff00,#000); color: #fff;"]] [[span style="text-shadow: #000 1px 1px;"]]**PAGE IS UNDER CONSTRUCTION ~Tech Team**[[/span]][[/span]]
+
+[!-- This page is currently being revamped.  Please talk to lurkd or Roget for details.  Do not revert or make changes till work is completed thank you. --]
+
 Here you will find the most favored pages on the site created this month. Useful for keeping up with new content on the site.
 
-**April 2017**
-[[module ListPages rating=">5" order="rating desc" separate="false" limit="200" perPage="25" date="2017.04"]]
-%%title_linked%% (rating: %%rating%%, comments: %%comments%%)
++ April 2017
+
+[!-- SCP Block --]
+
+[[div class="feature-block"]]
+
+[[div class="content-panel left-column"]]
+[[div class="panel-heading"]]
+Top Rated SCPs This Month
+[[/div]]
+[[div class="panel-body"]]
+
+[[module ListPages rating=">10" tags="scp" order="rating desc" separate="false" limit="200" perPage="25" date="2017.04"]]
+%%title_linked%% (+%%rating%%)
 [[/module]]
+
+[[/div]]
+[[div class="panel-footer"]]
+placeholder
+[[/div]]
+[[/div]]
+[[/div]]
+
+[!-- Tale Block --]
+
+[[div class="content-panel right-column"]]
+[[div class="panel-heading"]]
+Top Rated Tales This Month
+[[/div]]
+[[div class="panel-body"]]
+
+[[module ListPages rating=">10" tags="tale" order="rating desc" separate="false" limit="200" perPage="25" date="2017.04"]]
+%%title_linked%% (+%%rating%%)
+[[/module]]
+
+[[/div]]
+[[div class="panel-footer"]]
+placeholder
+[[/div]]
+[[/div]]
+
+[!-- GOI Block --]
+
+[[div class="feature-block"]]
+
+[[div class="content-panel left-column"]]
+[[div class="panel-heading"]]
+Top Rated GOI-Formats This Month
+[[/div]]
+[[div class="panel-body"]]
+
+[[module ListPages rating=">10" tags="goi-format" order="rating desc" separate="false" limit="200" perPage="25" date="2017.04"]]
+%%title_linked%% (+%%rating%%)
+[[/module]]
+
+[[/div]]
+[[div class="panel-footer"]]
+placeholder
+[[/div]]
+[[/div]]
+[[/div]]
+
+~~~~
+
+[!-- GOI Block --]
+
+[[div class="content-panel right-column"]]
+[[div class="panel-heading"]]
+Other Top Rated Pages This Month
+[[/div]]
+[[div class="panel-body"]]
+
+[[module ListPages rating=">10" tags="-scp,-tale,-goi-format" order="rating desc" separate="false" limit="200" perPage="25" date="2017.04"]]
+%%title_linked%% (+%%rating%%)
+[[/module]]
+
+[[/div]]
+[[div class="panel-footer"]]
+placeholder
+[[/div]]
+[[/div]]
+
+~~~~
+----
 
 + Archive
 Here you will find the top rated pages of each month for years past. Please note that these pages may take a long time to load.
