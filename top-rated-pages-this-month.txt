@@ -13,7 +13,7 @@ title:Top Rated Pages This Month
 [[div class="panel-heading"]]
 Top Rated SCPs This Month
 [[/div]]
-[[div class="panel-body"]]
+[[div class="panel-body" style="height: 400px;"]]
 
 [[module ListPages rating=">10" tags="scp" order="rating desc" separate="false" limit="200" perPage="25" date="2017.04"]]
 %%title_linked%% (+%%rating%%)
@@ -32,7 +32,7 @@ placeholder
 [[div class="panel-heading"]]
 Top Rated Tales This Month
 [[/div]]
-[[div class="panel-body"]]
+[[div class="panel-body" style="height: 400px;"]]
 
 [[module ListPages rating=">10" tags="tale" order="rating desc" separate="false" limit="200" perPage="25" date="2017.04"]]
 %%title_linked%% (+%%rating%%)
@@ -52,7 +52,7 @@ placeholder
 [[div class="panel-heading"]]
 Top Rated GOI-Formats This Month
 [[/div]]
-[[div class="panel-body"]]
+[[div class="panel-body" style="height: 400px;"]]
 
 [[module ListPages rating=">10" tags="goi-format" order="rating desc" separate="false" limit="200" perPage="25" date="2017.04"]]
 %%title_linked%% (+%%rating%%)
@@ -65,15 +65,13 @@ placeholder
 [[/div]]
 [[/div]]
 
-~~~~
-
 [!-- GOI Block --]
 
 [[div class="content-panel right-column"]]
 [[div class="panel-heading"]]
 Other Top Rated Pages This Month
 [[/div]]
-[[div class="panel-body"]]
+[[div class="panel-body" style="height: 400px;"]]
 
 [[module ListPages rating=">10" tags="-scp,-tale,-goi-format" order="rating desc" separate="false" limit="200" perPage="25" date="2017.04"]]
 %%title_linked%% (+%%rating%%)
