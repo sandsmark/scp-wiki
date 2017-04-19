@@ -290,7 +290,12 @@ ITYDA was two things: my effort to contribute to the explosively controversial R
  by DolphinSlugchugger
 [[/tab]]
 [[tab Statistics]]
-[[module ListPages order="rating desc" separate="false" limit="600" perPage="100" tag=" +scp     -tale"created_by="A Random Day" prependLine="||~ SCP ||~ Rating ||~ Comments ||"]]
+
+[[module ListPages name="/3000contestdjkarethday" separate="false" prependLine="||~ SCP ||~ Rating ||~ Comments ||" ]]
+|| %%title_linked%% || %%rating%% || %%comments%% ||
+[[/module]]
+
+[[module ListPages order="rating desc" separate="false" limit="600" perPage="100" tag=" +scp     -tale" created_by="A Random Day" prependLine="||~ SCP ||~ Rating ||~ Comments ||"]]
 || %%title_linked%% || %%rating%% || %%comments%% ||
 [[/module]]
 
