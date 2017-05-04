@@ -1,11 +1,99 @@
 title:A Sunny Day at the Clockwork Gallery
-Welcome to the Clockwork Gallery! Two sections of narrative and visual experience are now available, please enjoy your stay. Any ideas for our future exhibits can be suggested [http://www.scp-wiki.net/forum/t-861433/taking-art-requests here].
+Welcome to the Clockwork Gallery! Three sections are now available, please enjoy your stay. Any ideas for future exhibits can be suggested [http://www.scp-wiki.net/forum/t-861433/taking-art-requests here].
 
 [[toc]]
 
 ------
 
-+ Section 1: Narrative
++ Section 1: Contained
+
+[[div style="float:left; width: 25%; height: 240px; padding: 0 2%"]]
+[[html]]
+<img id="pic" src="http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/2481%2001.jpg" width="150px" alt="" class="image" />
+<script type="text/javascript">
+var firstUrl = "http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/2481%2001.jpg";
+var secondUrl = "http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/2481%2002.jpg";
+
+new Image().src = firstUrl;
+
+new Image().src = secondUrl;
+
+window.onload = function(){
+
+var org = window.document.getElementById('pic');
+org.src = firstUrl;
+org.onmouseover = function(ev){
+this.src = secondUrl;
+}
+org.onmouseout = function(ev){
+this.src = firstUrl;
+}
+
+ org.addEventListener('touchstart',org.onmouseover,false);
+ org.addEventListener('touchend',org.onmouseout,false); 
+}
+</script>
+[[/html]]
+
+[[/div]]
+
+[[div style="float:right; width: 65%; height: 240px; padding: 0 2%"]]
+
+> [[size 150%]][[[SCP-2481]]] - Kill the Suns[[/size]]
+> 
+> **Description:**
+> 
+> This ancient kingdom aspire to slay gods. Hear the story from its lone surivior.
+> 
+> **Features:** Historical, tragic, forgotten.
+[[/div]]
+
+
+[[div style="float:left; width: 25%; height: 240px; padding: 0 2%"]]
+[[html]]
+<img id="pic" src="http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/2711%2001.jpg" width="150px" alt="" class="image" />
+<script type="text/javascript">
+var firstUrl = "http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/2711%2001.jpg";
+var secondUrl = "http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/2711%2002.jpg";
+
+new Image().src = firstUrl;
+
+new Image().src = secondUrl;
+
+window.onload = function(){
+
+var org = window.document.getElementById('pic');
+org.src = firstUrl;
+org.onmouseover = function(ev){
+this.src = secondUrl;
+}
+org.onmouseout = function(ev){
+this.src = firstUrl;
+}
+
+ org.addEventListener('touchstart',org.onmouseover,false);
+ org.addEventListener('touchend',org.onmouseout,false); 
+}
+</script>
+[[/html]]
+
+[[/div]]
+
+[[div style="float:right; width: 65%; height: 240px; padding: 0 2%"]]
+
+> [[size 150%]][[[SCP-2711]]] - --定海神针-- 如意金箍棒[[/size]]
+> 
+> **Description:**
+> 
+> A legendary artifact discovered in a lake. What mysteries lie beneath?
+> 
+> **Features:** Mythical, metallic, enlightened.
+[[/div]]
+
+
+------
+
++ Section 2: Narrative
 
 [[div style="float:left; width: 25%; height: 240px; padding: 0 2%"]]
 [[html]]
@@ -392,7 +480,7 @@ this.src = firstUrl;
 
 ------
 
-+ Section 2: Visual
++ Section 3: Visual
 
 [[=image SCP-Logo.png]]
 
