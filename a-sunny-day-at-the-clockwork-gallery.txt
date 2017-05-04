@@ -90,6 +90,64 @@ this.src = firstUrl;
 > **Features:** Mythical, metallic, enlightened.
 [[/div]]
 
+[[div style="float:left; width: 25%; height: 240px; padding: 0 2%"]]
+[[html]]
+<img id="pic" src="http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/2732%2001.jpg" width="150px" alt="" class="image" />
+<script type="text/javascript">
+var firstUrl = "http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/2732%2001.jpg";
+var secondUrl = "http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/2732%2002.jpg";
+
+new Image().src = firstUrl;
+
+new Image().src = secondUrl;
+
+window.onload = function(){
+
+var org = window.document.getElementById('pic');
+org.src = firstUrl;
+org.onmouseover = function(ev){
+this.src = secondUrl;
+}
+org.onmouseout = function(ev){
+this.src = firstUrl;
+}
+
+ org.addEventListener('touchstart',org.onmouseover,false);
+ org.addEventListener('touchend',org.onmouseout,false); 
+}
+</script>
+[[/html]]
+
+[[/div]]
+
+[[div style="float:right; width: 65%; height: 240px; padding: 0 2%"]]
+
+> [[size 150%]][[[SCP-2732]]] - 《缢王本纪》[[/size]]
+> 
+> **Description:**
+> 
+> Uncovered the lost history of a king through this eccentric play. But be wary.
+> 
+> **Features:** Historical, artistic, eldritch.
+[[/div]]
+
+[[div style="float:left; width: 25%; height: 240px; padding: 0 2%"]]
+[[html]]
+<img id="pic" src="http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/2847.jpg" width="150px" alt="" class="image" />
+[[/html]]
+
+[[/div]]
+
+[[div style="float:right; width: 65%; height: 240px; padding: 0 2%"]]
+
+> [[size 150%]][[[SCP-2847]]] - Yu the Great, and the Immortal[[/size]]
+> 
+> **Description:**
+> 
+> What pityful souls reside on this great abyss of iron? Is the cause already lost?
+> 
+> **Features:** Metallic, heroic, corrupted.
+[[/div]]
 
 ------
 
