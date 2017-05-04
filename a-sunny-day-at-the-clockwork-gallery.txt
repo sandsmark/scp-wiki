@@ -327,7 +327,7 @@ this.src = firstUrl;
 [[div style="float:left; width: 25%; height: 240px; padding: 0 2%"]]
 
 [[html]]
-<img id="pic" src="http://scp-wiki.wdfiles.com/local--files/a-sunny-day-at-the-clockwork-gallery/D%26S%2001.jpg" width="150px" alt="" class="image" />
+<img id="pic" src="http://scp-wiki.wdfiles.com/local--files/a-sunny-day-at-the-clockwork-gallery/TIW%2001.jpg" width="150px" alt="" class="image" />
 <script type="text/javascript">
 var firstUrl = "http://scp-wiki.wdfiles.com/local--files/a-sunny-day-at-the-clockwork-gallery/TIW%2001.jpg";
 var secondUrl = "http://scp-wiki.wdfiles.com/local--files/a-sunny-day-at-the-clockwork-gallery/TIW%2002.jpg";
@@ -363,6 +363,132 @@ this.src = firstUrl;
 > "//The Iron Wolf lurks in the dark, its teeth pale and sharp. To the Flock of Flesh it watches, catching Lambs of Meat by its claws.//"
 > 
 > **Features:** Metallic, wild, altered.
+
+[[/div]]
+
+[[div style="float:left; width: 25%; height: 240px; padding: 0 2%"]]
+
+[[html]]
+<img id="pic" src="http://scp-wiki.wdfiles.com/local--files/a-sunny-day-at-the-clockwork-gallery/TDotD%2001.jpg" width="150px" alt="" class="image" />
+<script type="text/javascript">
+var firstUrl = "http://scp-wiki.wdfiles.com/local--files/a-sunny-day-at-the-clockwork-gallery/TDotD%2001.jpg";
+var secondUrl = "http://scp-wiki.wdfiles.com/local--files/a-sunny-day-at-the-clockwork-gallery/TDotD%2002.jpg";
+
+new Image().src = firstUrl;
+
+new Image().src = secondUrl;
+
+window.onload = function(){
+
+var org = window.document.getElementById('pic');
+org.src = firstUrl;
+org.onmouseover = function(ev){
+this.src = secondUrl;
+}
+org.onmouseout = function(ev){
+this.src = firstUrl;
+}
+
+ org.addEventListener('touchstart',org.onmouseover,false);
+ org.addEventListener('touchend',org.onmouseout,false); 
+}
+</script>
+[[/html]]
+[[/div]]
+
+[[div style="float:right; width: 65%; height: 240px; padding: 0 2%"]]
+
+> [[size 150%]][[[The Day of the Dragon]]][[/size]]
+> 
+> **Description:**
+> 
+> In an alternative timeline, things may be very different. As the dragon descends, what are the last thoughts of the Karcist?
+> 
+> **Features:** Alternative, contradictory, divine.
+
+[[/div]]
+
+[[div style="float:left; width: 25%; height: 240px; padding: 0 2%"]]
+
+[[html]]
+<img id="pic" src="http://scp-wiki.wdfiles.com/local--files/a-sunny-day-at-the-clockwork-gallery/TMatB%2001.jpg" width="150px" alt="" class="image" />
+<script type="text/javascript">
+var firstUrl = "http://scp-wiki.wdfiles.com/local--files/a-sunny-day-at-the-clockwork-gallery/TMatB%2001.jpg";
+var secondUrl = "http://scp-wiki.wdfiles.com/local--files/a-sunny-day-at-the-clockwork-gallery/TMatB%2002.jpg";
+
+new Image().src = firstUrl;
+
+new Image().src = secondUrl;
+
+window.onload = function(){
+
+var org = window.document.getElementById('pic');
+org.src = firstUrl;
+org.onmouseover = function(ev){
+this.src = secondUrl;
+}
+org.onmouseout = function(ev){
+this.src = firstUrl;
+}
+
+ org.addEventListener('touchstart',org.onmouseover,false);
+ org.addEventListener('touchend',org.onmouseout,false); 
+}
+</script>
+[[/html]]
+[[/div]]
+
+[[div style="float:right; width: 65%; height: 240px; padding: 0 2%"]]
+
+> [[size 150%]][[[The Maker and the Beast]]][[/size]]
+> 
+> **Description:**
+> 
+> Upon the Great Abyss, the Maker of Machines and the God Eater met. Fascinating.
+> 
+> **Features:** Divine, ancient, broken.
+
+[[/div]]
+
+[[div style="float:left; width: 25%; height: 190px; padding: 0 2%"]]
+
+[[html]]
+<img id="pic" src="http://scp-wiki.wdfiles.com/local--files/a-sunny-day-at-the-clockwork-gallery/Men1.png" width="150px" alt="" class="image" />
+<script type="text/javascript">
+var firstUrl = "http://scp-wiki.wdfiles.com/local--files/a-sunny-day-at-the-clockwork-gallery/Men1.png";
+var secondUrl = "http://scp-wiki.wdfiles.com/local--files/a-sunny-day-at-the-clockwork-gallery/Men2.png";
+
+new Image().src = firstUrl;
+
+new Image().src = secondUrl;
+
+window.onload = function(){
+
+var org = window.document.getElementById('pic');
+org.src = firstUrl;
+org.onmouseover = function(ev){
+this.src = secondUrl;
+}
+org.onmouseout = function(ev){
+this.src = firstUrl;
+}
+
+ org.addEventListener('touchstart',org.onmouseover,false);
+ org.addEventListener('touchend',org.onmouseout,false); 
+}
+</script>
+[[/html]]
+[[/div]]
+
+[[div style="float:right; width: 65%; height: 190px; padding: 0 2%"]]
+
+> [[size 150%]][[[About the Serpent]]][[/size]]
+> 
+> **Description:**
+> 
+> Strange tales from a remnant of the past. What are the truth, and what are mere stories?
+> 
+> **Features:** Mythical, historical, ancient.
 
 [[/div]]
 
