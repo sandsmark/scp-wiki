@@ -539,6 +539,91 @@ this.src = firstUrl;
 
 [[div style="float:left; width: 25%; height: 240px; padding: 0 2%"]]
 [[html]]
+<img id="pic" src="http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/WIFAoS%2001.jpg" width="150px" alt="" class="image" />
+<script type="text/javascript">
+var firstUrl = "http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/WIFAoS%2001.jpg";
+var secondUrl = "http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/WIFAoS%2002.jpg";
+
+new Image().src = firstUrl;
+
+new Image().src = secondUrl;
+
+window.onload = function(){
+
+var org = window.document.getElementById('pic');
+org.src = firstUrl;
+org.onmouseover = function(ev){
+this.src = secondUrl;
+}
+org.onmouseout = function(ev){
+this.src = firstUrl;
+}
+
+ org.addEventListener('touchstart',org.onmouseover,false);
+ org.addEventListener('touchend',org.onmouseout,false); 
+}
+</script>
+[[/html]]
+
+[[/div]]
+
+[[div style="float:right; width:65%; height: 240px; padding: 0 2%"]]
+
+> [[size 150%]][[[Why is Five afraid of Seven?]]][[/size]]
+> 
+> **Description:**
+> 
+> Dark clouds gather at the sky; a circle of void appear under the ocean. And then, there was none.
+> 
+> **Features:** Dark, empty, void.
+
+[[/div]]
+
+[[div style="float:left; width: 25%; height: 240px; padding: 0 2%"]]
+[[html]]
+<img id="pic" src="http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/PoG%2001.jpg" width="150px" alt="" class="image" />
+<script type="text/javascript">
+var firstUrl = "http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/PoG%2001.jpg";
+var secondUrl = "http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/PoG%2002.jpg";
+
+new Image().src = firstUrl;
+
+new Image().src = secondUrl;
+
+window.onload = function(){
+
+var org = window.document.getElementById('pic');
+org.src = firstUrl;
+org.onmouseover = function(ev){
+this.src = secondUrl;
+}
+org.onmouseout = function(ev){
+this.src = firstUrl;
+}
+
+ org.addEventListener('touchstart',org.onmouseover,false);
+ org.addEventListener('touchend',org.onmouseout,false); 
+}
+</script>
+[[/html]]
+
+[[/div]]
+
+[[div style="float:right; width:65%; height: 240px; padding: 0 2%"]]
+
+> [[size 150%]][[[Party of Gods]]][[/size]]
+> 
+> **Description:**
+> 
+> Gods throwing a party. Yep, they do this all the time.
+> 
+> **Features:** Divine, hilarious, joyful.
+
+[[/div]]
+
+
+[[div style="float:left; width: 25%; height: 240px; padding: 0 2%"]]
+[[html]]
 <img id="pic" src="http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/AstCL%2001.jpg" width="150px" alt="" class="image" />
 <script type="text/javascript">
 var firstUrl = "http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/AstCL%2001.jpg";
@@ -695,3 +780,9 @@ this.src = firstUrl;
 > **Description:** Have some fun! The comics are not as memetic or hazardous as the other exhibits.
 > 
 > **Features:** Fun, fun, fun.
+
+[[div style="clear:both"]]
+[[/div]]
+
+@@@@
+@@@@
