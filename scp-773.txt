@@ -1,12 +1,26 @@
 title:SCP-773
 [[footnoteblock]]
 [[module css]]
-.page-rate-widget-box {
-    display: inline-block;
-    border-radius: 5px;
-    box-shadow: 1px 1px 3px rgba(0,0,0,.5);
-    margin-bottom: 10px;
-    margin-right: 0em;
+.page-rate-widget-box .cancel {
+    background-color: #633;
+    border: solid 1px #633;
+    border-left: 0;
+    border-radius: 0 5px 5px 0;
+    font-size: 0.75em;
+}
+.page-rate-widget-box .rate-points {
+    background-color: #633 !important;
+    border: solid 1px #633;
+    border-right: 0;
+    border-radius: 5px 0 0 5px;
+font-size: 0.75em;
+}
+.page-rate-widget-box .rateup, .page-rate-widget-box .ratedown {
+    background-color: #fff6f0;
+    border-top: solid 1px #633;
+    border-bottom: solid 1px #633;
+    font-weight: bold;
+    font-size: 0.75em;
 }
 [[/module]]
 [[div style="border-bottom: 2px black solid; margin-bottom: 2px"]]
