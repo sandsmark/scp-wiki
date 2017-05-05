@@ -53,6 +53,8 @@ font-size: 0.75em;
     display: inline-block;
     border-radius: 5px;
     box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+    margin-bottom: 10px;
+    margin-right: 0em;
 }
 .page-tags {
     clear: both;
@@ -60,21 +62,13 @@ font-size: 0.75em;
     margin: 10px 0 0 0;
     padding: 0 2px;
 }
-.heritage-rating-module {
-    display: inline-block;
-    background-color: #633;
-    border: solid 1px #ccc066;
-    border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0,0,0,.25);
-    margin-right: 0em;
-}
 [[/module]]
 [[div style="border-top: 2px black solid; margin-bottom: 2px"]]
 [[=]]
 [[div style="display: inline-block; float=left;"]]
 << [[[SCP-988]]] |
 [[/div]]
-[[include component:heritage-rating]]
+[[module Rate]]
 [[div style="display: inline-block;"]]
 | [[[SCP-990]]] >>
 [[/div]]
