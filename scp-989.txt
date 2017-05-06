@@ -30,29 +30,44 @@ Misters Marshall, Carter, and Dark//
 [[module css]]
 .page-rate-widget-box .cancel {
     background-color: #633;
-    border: solid 1px #633;
+    border: solid 0px #633; 
+    border-right: solid 1px #633;
     border-left: 0;
-    border-radius: 0 5px 5px 0;
-    font-size: 0.75em;
+    border-radius: 0 0px 0px 0;
+    /* font-size: 0.75em; */
 }
-.page-rate-widget-box .rate-points {
-    background-color: #633 !important;
-    border: solid 1px #633;
-    border-right: 0;
-    border-radius: 5px 0 0 5px;
-font-size: 0.75em;
+.page-rate-widget-box .ratedown {
+    background-color: #fff6f0;
+    border: solid 0px #633; 
+    border-top: solid 1px #633;
+    border-bottom: solid 1px #633;
+    border-right: solid 1px #633;
+    font-weight: bold;
+    /* font-size: 0.75em; */
+    float: right;
 }
-.page-rate-widget-box .rateup, .page-rate-widget-box .ratedown {
+.page-rate-widget-box .rateup {
     background-color: #fff6f0;
     border-top: solid 1px #633;
     border-bottom: solid 1px #633;
+    border-left: solid 1px #633;
+    border: solid 1px;
     font-weight: bold;
-    font-size: 0.75em;
+    /* font-size: 0.75em; */
+    float: left;
+}
+.page-rate-widget-box .rate-points {
+    background-color: #633 !important;
+    border: solid 0px #633;
+    border-right: 0;
+     border-radius: 0 0 0 0; 
+    /* font-size: 0.75em; */
 }
 .page-rate-widget-box {
+    background-color: #633 !important;
     display: inline-block;
     border-radius: 5px;
-    box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+    box-shadow: 0 0 0 0; 
     margin-bottom: 10px;
     margin-right: 0em;
 }
@@ -62,27 +77,13 @@ font-size: 0.75em;
     margin: 10px 0 0 0;
     padding: 0 2px;
 }
-.heritage-rating-module {
-    display: inline-block;
-    background-color: #633;
-    padding: 2px 8px 2px 5px;
-    border: solid 1px #ccc066;
-    border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0,0,0,.25);
-    margin-right: 0em;
-    margin-bottom: 10px;
-}
 [[/module]]
 [[div style="border-top: 2px black solid; margin-bottom: 2px"]]
 [[=]]
 [[div style="display: inline-block; float=left;"]]
 << [[[SCP-988]]] |
 [[/div]]
-[[div class="heritage-rating-module"]]
 [[module Rate]]
-[[div class="heritage-emblem"]]
-[[image /component:heritage-rating/scp-heritage-v3.png link="heritage-collection"]]
-[[/div]]
 [[/div]]
 [[div style="display: inline-block;"]]
 | [[[SCP-990]]] >>
