@@ -3,14 +3,14 @@ title:Rogetbox
 ~~~~
 ----
 
-[[collapsible show="► 3000 Contest Rankings" hide="▼ 3000 Contest Rankings"]]
+[[collapsible show="► Author Page Rankings" hide="▼ Ranked By Rating"]]
 
 [[=]]
 [[div class="content-panel standalone series"]]
-__3000 Ranks__:
+__Author Page Ranks__:
 [[/div]]
 [[/=]]
-[[module ListPages  separate="no" tags="3000" order="rating desc" prependLine="||~ Tale ||~ Rating ||~ Changed Last ||~ Created ||~ Last Comment ||~ Author ||"]] 
+[[module ListPages  separate="no" tags="author" order="rating desc" prependLine="||~ Page ||~ Rating ||~ Changed Last ||~ Created ||~ Last Comment ||~ Author ||"]] 
 || %%title_linked%% || %%rating%% || %%updated_at%% || %%created_at%% || %%commented_at%% || %%author%% ||
 [[/module]]
 
