@@ -7,367 +7,422 @@ title:SCP-3125
 
 [!-- This tag embeds everything in a <body> which sucks... --]
 [[html]]
-<style type="text/css">
-    /* CSS duplicated from Wikidot proper -_- */
-    body {
-    	font-family: verdana, arial, helvetica, sans-serif;
-    	font-size: 12.8px; /* 16px * 0.8 */
-    	color: #333;
-    	line-height: 141%;
-    }
+<body>
+    	<style type="text/css">
+    		/* CSS duplicated from Wikidot proper -_- */
+    		body {
+    			font-family: verdana, arial, helvetica, sans-serif;
+    			font-size: 12.8px; /* 16px * 0.8 */
+    			color: #333;
+    			line-height: 141%;
+    		}
 
-    .classified-info {
-    	display: none;
-    }
+    		.classified-info {
+    			display: none;
+    		}
 
-    blockquote {
-    	border: 1px dashed #999;
-    	padding: 0 12.8px;
-    	background-color: #f4f4f4;
-    }
+    		blockquote {
+    			border: 1px dashed #999;
+    			padding: 0 12.8px;
+    			background-color: #f4f4f4;
+    		}
 
-    a {
-    	color: #b01;
-    	cursor: pointer;
-    	text-decoration: none;
-    }
+    		a {
+    			color: #b01;
+    			cursor: pointer;
+    			text-decoration: none;
+    		}
 
-    a:hover {
-    	text-decoration: underline;
-    }
+    		a:hover {
+    			text-decoration: underline;
+    		}
 
-    .collapsed {
-    	display: none;
-    }
+    		.collapsed {
+    			display: none;
+    		}
 
-    h4 {
-    	font-size: 130%;
-    	font-weight: bold;
-    	margin-bottom: 0;
-    }
+    		h4 {
+    			font-size: 130%;
+    			font-weight: bold;
+    			margin-bottom: 0;
+    		}
 
-    /* Keypad specific */
-    .keypad {
-    	background: linear-gradient(to bottom, #D0D0D0 0%, #FFFFFF 80%, #CCCCCC 100%), #D4D4D4;
-    	padding: 6.4px;
-    	border-radius: 19.2px;
-    	margin: 25.6px;
-    	margin-left: auto;
-    	margin-right: auto;
-    	border: 2px solid #1F0D12;
-    	box-shadow: 0 3px 5px black, 0 3px 9px rgba(0, 0, 0, 0.5);
-    	border-spacing: 6px; 
-    	line-height: normal;
-    }
+    		/* Keypad specific */
+    		.keypad {
+    			background: linear-gradient(to bottom, #D0D0D0 0%, #FFFFFF 80%, #CCCCCC 100%), #D4D4D4;
+    			padding: 6.4px;
+    			border-radius: 19.2px;
+    			margin: 25.6px;
+    			margin-left: auto;
+    			margin-right: auto;
+    			border: 2px solid #1F0D12;
+    			box-shadow: 0 3px 5px black, 0 3px 9px rgba(0, 0, 0, 0.5);
+    			border-spacing: 6px; 
+    			line-height: normal;
+    		}
 
-    .keypad-readout {
-    	background: linear-gradient(to top, #1A211E 1%, #000000 100%), black;
-    	color: #E22933;
-    	font-size: 27px;
-    	font-family: Consolas, monospace, sans-serif;
-    	font-weight: bold;
-    	border-radius: 3.84px;
-    	border-top-left-radius: 6.4px;
-    	border-top-right-radius: 6.4px;
-    	border: 2px solid #32443A;
-    	text-align: center;
-    	padding: 7px;
-    	text-shadow: 0 0 6px red;
-    }
+    		.keypad-readout {
+    			background: linear-gradient(to top, #1A211E 1%, #000000 100%), black;
+    			color: #E22933;
+    			font-size: 27px;
+    			font-family: Consolas, monospace, sans-serif;
+    			font-weight: bold;
+    			border-radius: 3.84px;
+    			border-top-left-radius: 6.4px;
+    			border-top-right-radius: 6.4px;
+    			border: 2px solid #32443A;
+    			text-align: center;
+    			padding: 7px;
+    			text-shadow: 0 0 6px red;
+    		}
 
-    .regular-button {
-    	background: #714144; 
-    	color: white;
-    	font-family: monospace,sans-serif;
-    	font-weight: bold;
-    	text-align: center;
-    	width: 47.36px;
-    	height: 47.36px;
-    	border-radius: 5.12px;
-    	font-size: 23px;
-    	transition: background 0.1s ease-out;
-    	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
-    }
-    .regular-button:hover {
-    	background:#944449;
-    }
-    .regular-button:active {
-    	background:#B9475B;
-    }
+    		.regular-button {
+    			background: #714144; 
+    			color: white;
+    			font-family: monospace,sans-serif;
+    			font-weight: bold;
+    			text-align: center;
+    			width: 47.36px;
+    			height: 47.36px;
+    			border-radius: 5.12px;
+    			font-size: 23px;
+    			transition: background 0.1s ease-out;
+    			box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+    		}
+    		.regular-button:hover {
+    			background:#944449;
+    		}
+    		.regular-button:active {
+    			background:#B9475B;
+    		}
 
-    .clr-button {
-    	border-bottom-left-radius: 12.8px;
-    	background: #9E0E17;
-    }
-    .clr-button:hover {
-    	background: #B90B15;
-    }
-    .clr-button:active {
-    	background: #DE0814;
-    }
+    		.clr-button {
+    			border-bottom-left-radius: 12.8px;
+    			background: #9E0E17;
+    		}
+    		.clr-button:hover {
+    			background: #B90B15;
+    		}
+    		.clr-button:active {
+    			background: #DE0814;
+    		}
 
-    .go-button {
-    	border-bottom-right-radius: 12.8px;
-    	background: #43862E;
-    }
-    .go-button:hover {
-    	background: #469A2B;
-    }
-    .go-button:active {
-    	background: #4EC527;
-    }
+    		.go-button {
+    			border-bottom-right-radius: 12.8px;
+    			background: #43862E;
+    		}
+    		.go-button:hover {
+    			background: #469A2B;
+    		}
+    		.go-button:active {
+    			background: #4EC527;
+    		}
 
-    .keypad-readout,
-    .regular-button {
-    	-webkit-touch-callout: none; /* iOS Safari */
-    	-webkit-user-select  : none; /* Chrome/Safari/Opera */
-    	-khtml-user-select   : none; /* Konqueror */
-    	-moz-user-select     : none; /* Firefox */
-    	-ms-user-select      : none; /* IE/Edge */
-    	user-select          : none;
-    	cursor: default;
-    }
-</style>
+    		.keypad-readout,
+    		.regular-button {
+    			-webkit-touch-callout: none; /* iOS Safari */
+    			-webkit-user-select  : none; /* Chrome/Safari/Opera */
+    			-khtml-user-select   : none; /* Konqueror */
+    			-moz-user-select     : none; /* Firefox */
+    			-ms-user-select      : none; /* IE/Edge */
+    			user-select          : none;
+    			cursor: default;
+    		}
+    	</style>
 
-<script type="text/javascript">
-    var magicNumber = [,,,,,].length;
-    var scpNumber = Math.pow(magicNumber, magicNumber);
-    var emptyReadout = "\u00A0"; // non-breaking space
+    	<script type="text/javascript">
+    		var decrypt = function(str) {
+    			var alphabet = "abcdefghijklmnopqrstuvwxyz";
+    			var key = "owtnsfvlnqyfzbdercgqiuapucjekhamblshwoxpgzyrttxkmi";
+    			var sum = function(letter1, letter2) {
+    				var index1 = alphabet.indexOf(letter1);
+    				var index2 = alphabet.indexOf(letter2);
+    				return alphabet.charAt((index1 + alphabet.length - index2) % alphabet.length);
+    			};
 
-    var input = [];
-    var maxInputLength = magicNumber;
+    			return str.split("").map(function(str_ch, i) {
+    				var key_ch = key.charAt(i % key.length);
+    				if(alphabet.indexOf(str_ch) !== -1) {
+    					return sum(str_ch, key_ch);
+    				}
 
-    var busy = false;
+    				if(alphabet.indexOf(str_ch.toLowerCase()) !== -1) {
+    					return sum(str_ch.toLowerCase(), key_ch).toUpperCase();
+    				}
 
-    function press(keyText) {
-    	if(busy) {
-    		return;
-    	}
+    				return str_ch;
+    			}).join("");
+    		};
 
-    	var readout = document.body.querySelector(".keypad-readout");
+    		var encodeNode = function(node, proc) {
+    			var node2;
+    			if(node.nodeType === Node.TEXT_NODE) {
+    				node2 = document.createTextNode(proc(node.nodeValue));
+    			} else if(
+    				node.nodeType === Node.ELEMENT_NODE
+    				&& node.tagName !== "SCRIPT" // Do not modify scripts!
+    			) {
+    				node2 = document.createElement(node.tagName);
 
-    	if(keyText === "GO") {
-    		busy = true;
+    				var attributes = node.attributes;
+    				for(var i = 0; i < attributes.length; i++) {
+    					var attribute = attributes[i];
+    					node2.setAttribute(attribute.name, attribute.value);
+    				}
 
-    		if(
-    			input.map(function(digit) {
-    				return parseInt(digit, 10);
-    			}).reduce(function(a, b) {
-    				return a * b;
-    			}, 1) === scpNumber
-    		) {
-    			setTimeout(function() {
-    				readout.textContent = 'GRANTED';
-    			}, 0);
-    			setTimeout(function() {
-    				document.querySelector(".classified-info").style.display = "initial";
-    			}, 1000);
-    			setTimeout(function() {
-    				readout.textContent = emptyReadout;
-    				// Leave busy, disabling keypad
-    			}, 2000);
-    		} else {
-    			setTimeout(function() {
-    				readout.textContent = 'DENIED';
-    			}, 0);
-    			setTimeout(function() {
-    				readout.textContent = '\u0C7F';
-    			}, 1900);
-    			setTimeout(function() {
+    				var childNodes = node.childNodes;
+    				for(var i = 0; i < childNodes.length; i++) {
+    					var childNode = childNodes[i];
+    					node2.appendChild(encodeNode(childNode, proc));
+    				}
+    			} else {
+    				node2 = node.cloneNode(true);
+    			}
+
+    			return node2;
+    		};
+
+    		var magicNumber = [,,,,,].length;
+    		var scpNumber = Math.pow(magicNumber, magicNumber);
+    		var emptyReadout = "\u00A0"; // non-breaking space
+
+    		var input = [];
+    		var maxInputLength = magicNumber;
+
+    		var busy = false;
+
+    		function press(keyText) {
+    			if(busy) {
+    				return;
+    			}
+
+    			var readout = document.body.querySelector(".keypad-readout");
+
+    			if(keyText === "GO") {
+    				busy = true;
+
+    				if(
+    					input.map(function(digit) {
+    						return parseInt(digit, 10);
+    					}).reduce(function(a, b) {
+    						return a * b;
+    					}, 1) === scpNumber
+    				) {
+    					setTimeout(function() {
+    						readout.textContent = 'GRANTED';
+    					}, 0);
+    					setTimeout(function() {
+    						var node = document.querySelector(".classified-info");
+    						node.style.display = "initial";
+    						node.parentNode.replaceChild(encodeNode(node, decrypt), node);
+    					}, 1000);
+    					setTimeout(function() {
+    						readout.textContent = emptyReadout;
+    						// Leave busy, disabling keypad
+    					}, 2000);
+    				} else {
+    					setTimeout(function() {
+    						readout.textContent = 'DENIED';
+    					}, 0);
+    					setTimeout(function() {
+    						readout.textContent = '\u0C7F';
+    					}, 1900);
+    					setTimeout(function() {
+    						input = [];
+    						readout.textContent = emptyReadout;
+    						busy = false;
+    					}, 2000);
+    				}
+    			}
+
+    			else if(keyText === "CLR") {
     				input = [];
-    				readout.textContent = emptyReadout;
-    				busy = false;
-    			}, 2000);
+    			}
+
+    			else {
+    				if(input.length >= maxInputLength) {
+    					return;
+    				}
+    				input.push(keyText);
+    			}
+
+    			readout.textContent = input.length === 0 ? emptyReadout : input.map(function() {
+    				return '-';
+    			}).join("");
     		}
-    	}
 
-    	else if(keyText === "CLR") {
-    		input = [];
-    	}
+    		// Section visibility toggles
+    		var toggle = function(cls) {
+    			var collapsed = document.querySelectorAll("." + cls + ".collapsed");
+    			var expanded = document.querySelectorAll("." + cls + ":not(.collapsed)");
+    			var i;
+    			for(i = 0; i < collapsed.length; i++) {
+    				collapsed[i].classList.remove("collapsed");
+    			}
+    			for(i = 0; i < expanded.length; i++) {
+    				expanded[i].classList.add("collapsed");
+    			}
+    		};
+    	</script>
 
-    	else {
-    		if(input.length >= maxInputLength) {
-    			return;
-    		}
-    		input.push(keyText);
-    	}
+    	<div class="public-info">
+    		<p><b>Item #</b>: SCP-3125</p>
 
-    	readout.textContent = input.length === 0 ? emptyReadout : input.map(function() {
-    		return '-';
-    	}).join("");
-    }
+    		<p><b>Object Class</b>: Keter</p>
 
-    // Section visibility toggles
-    var toggle = function(cls) {
-    	var collapsed = document.querySelectorAll("." + cls + ".collapsed");
-    	var expanded = document.querySelectorAll("." + cls + ":not(.collapsed)");
-    	var i;
-    	for(i = 0; i < collapsed.length; i++) {
-    		collapsed[i].classList.remove("collapsed");
-    	}
-    	for(i = 0; i < expanded.length; i++) {
-    		expanded[i].classList.add("collapsed");
-    	}
-    };
-</script>
+    		<p><b>Special Containment Procedures</b>: SCP-3125 is kept inside Cognitohazard Containment Unit 3125 on the first floor of Site 41. This containment unit is a 10m by 15m by 3m cuboidal room clad in layers of lead, soundproofing and telepathic shielding. Access is through an airlock system at one end of the containment unit. This airlock is programmed to allow only one person to enter the containment unit at a time, and to remain locked until this person exits before allowing another person to enter.</p>
 
-<div class="public-info">
-    <p><b>Item #</b>: SCP-3125</p>
+    		<p>Under no circumstances may any coherent information be allowed to leave the containment unit. This includes written and electronic notes, photographs, audio and video recordings, sound, electromagnetic and particle-based signals and psi emanations. During the exit cycle, a purge system rigged to the airlock flushes the occupant's memory by flooding the airlock with amnestic gas for three minutes.</p>
 
-    <p><b>Object Class</b>: Keter</p>
+    		<p>A senior Antimemetics Division staff member must visit SCP-3125 every six weeks (42 days).</p>
 
-    <p><b>Special Containment Procedures</b>: SCP-3125 is kept inside Cognitohazard Containment Unit 3125 on the first floor of Site 41. This containment unit is a 10m by 15m by 3m cuboidal room clad in layers of lead, soundproofing and telepathic shielding. Access is through an airlock system at one end of the containment unit. This airlock is programmed to allow only one person to enter the containment unit at a time, and to remain locked until this person exits before allowing another person to enter.</p>
+    		<p><b>END OF FILE</b></p>
 
-    <p>Under no circumstances may any coherent information be allowed to leave the containment unit. This includes written and electronic notes, photographs, audio and video recordings, sound, electromagnetic and particle-based signals and psi emanations. During the exit cycle, a purge system rigged to the airlock flushes the occupant's memory by flooding the airlock with amnestic gas for three minutes.</p>
+    		<p>​</p>
 
-    <p>A senior Antimemetics Division staff member must visit SCP-3125 every six weeks (42 days).</p>
-
-    <p><b>END OF FILE</b></p>
-
-    <p>&#x200B;</p>
-
-    <table class="keypad">
-    	<tbody>
-    		<tr>
-    			<td colspan="3" class="keypad-readout">&nbsp;</th>
-    		</tr>
-    		<tr>
-    			<td class="regular-button" onclick="press('7');">7</td>
-    			<td class="regular-button" onclick="press('8');">8</td>
-    			<td class="regular-button" onclick="press('9');">9</td>
-    		</tr>
-    		<tr>
-    			<td class="regular-button" onclick="press('4');">4</td>
-    			<td class="regular-button" onclick="press('5');">5</td>
-    			<td class="regular-button" onclick="press('6');">6</td>
-    		</tr>
-    		<tr>
-    			<td class="regular-button" onclick="press('1');">1</td>
-    			<td class="regular-button" onclick="press('2');">2</td>
-    			<td class="regular-button" onclick="press('3');">3</td>
-    		</tr>
-    		<tr>
-    			<td class="regular-button clr-button" onclick="press('CLR');">CLR</td>
-    			<td class="regular-button" onclick="press('0');">0</td>
-    			<td class="regular-button go-button" onclick="press('GO');">GO</td>
-    		</tr>
-    	</tbody>
-    </table>
-</div>
-
-<div class="classified-info">
-    <p>&#x200B;</p>
-
-    <p><b>Item #</b>: SCP-3125</p>
-
-    <p><b>Object Class</b>: Keter</p>
-
-    <p><b>Special Containment Procedures</b>: SCP-3125 is subject to inverted containment protocols, and is present everywhere in reality except for those places which have been specifically purged of its influence. The interior of Cognitohazard Containment Unit 3125 on Site 41, where this document resides, is the only location in the world known to have been successfully purged in this way. This containment unit is a 10m by 15m by 3m cuboidal room clad in layers of lead, soundproofing material and telepathic shielding. Access is through an airlock system at one end of the containment unit. This airlock is programmed to allow only one person to enter the containment unit at a time, and to remain locked until this person exits before allowing another person to enter.</p>
-
-    <p>Under no circumstances may any coherent information be allowed to leave the containment unit. This includes written and electronic notes, photographs, audio and video recordings, sound, electromagnetic and particle-based signals and psi emanations. A purge system rigged to the airlock flushes the occupant's memory by flooding the airlock with amnestic gas for three minutes during the exit cycle.</p>
-
-    <p>An alternate SCP entry must be maintained in main Foundation database, giving only the technical specifications of the containment unit, provisions for senior Antimemetics Division staff to visit the unit's interior on a regular basis, and no description.</p>
-
-    <p><b>Description</b>: SCP-3125 is an extremely large (see full <a href="http://www.scp-wiki.net/scp-033" target="_top">Θ'</a>-dimensional fractal topology, attachment 13), highly aggressive anomalous metastasized meme complex originating externally to our reality and now partially intersecting it.</p>
-
-    <p>SCP-3125 is adapted for survival in an ideatic ecology considerably more violent and hostile than our own. (Here, "our own" refers to human head space; the set of all ideas which humans have or are biologically capable of having.) Because humans have no natural exposure to ideas as aggressive as SCP-3125, human minds have no protective evolutionary adaptations against it. Individuals possessed of SCP-3125 become incapable of entertaining weaker, "conventional" ideas, and become instead wholly bodily subordinate to the purpose of serving and disseminating the core concepts of SCP-3125. In addition, although undergoing no outwardly visible physical alteration, they cease to be externally recognisable as human.</p>
-
-    <p>SCP-3125 is not yet entirely present in our reality. Upon its arrival, the highly interconnected nature of human knowledge exchange systems means that it will take no longer than twelve hours, possibly as few as four hours, to encompass, dominate and replace all human thought. At this point, "humanity" as an abstract concept, along with all attendant abstracts such as "civilization", "culture", "society", "community" and "family" will have ceased to exist. The Foundation terms such an eventuality an <i>MK-class end-of-world scenario</i>.</p>
-
-    <p>The Foundation possesses numerous proven techniques for arresting the spread of such aggressive idea complexes, but these are all rendered unworkable in practice by SCP-3125's autonomic defensive response/boundary layer. Fully assembling a mental picture of SCP-3125 and perceiving its true shape causes SCP-3125 in turn to be able to perceive the observer. It then attacks the observer, killing them. The mechanism of the attack is unclear, but appears to be at least partially physical. "Mental bystanders", individuals whose thoughts and ideas resemble those of the observer, are also attacked. This invariably includes the observer's entire extended research group, and often their close family (parents and offspring).</p>
-
-    <p>The attack has the net effect of erasing all knowledge both of SCP-3125 and its attack from the world. This informational "numbing" effect performs a similar function to the anaesthetic saliva of a mosquito's bite, enabling SCP-3125 to evade detection prior to its full incarnation.</p>
-
-    <p>Foundation staff discovering SCP-3125 may be able to escape its attack via prompt use of amnestic medication to erase their knowledge of it.</p>
-
-    <p>In either case, the net result is that the interior of a suitably shielded containment unit is the only location where it is safe to observe, record or even acknowledge the existence of SCP-3125. Outside of such a containment unit, a true written description of SCP-3125 would constitute a lethal cognitohazard.</p>
-
-    <p>SCP-3125 could be effectively neutralized using a machine proposed by the late Dr. Bartholomew Hughes called an <i>irreality amplifier</i> (see schematics, attachment 129). However, as well as requiring tremendous material resources, this machine could not be constructed without its builders understanding why it was being built, which would require an understanding of SCP-3125, which would prove fatal to the project. <!-- Babel? --></p>
-
-    <p>No means of neutralizing SCP-3125 using only the resources in this room is known.</p>
-
-    <p><b>History</b>: Due to the described defense mechanism, SCP-3125's observation history is almost entirely missing. In particular, it is unclear exactly how this containment unit came to be built and how these containment procedures were established.</p>
-
-    <p>Much data has been accrued in this containment unit over the course of successive visits by Foundation researchers. This data was brought from the outside in the hope of being useful and left here in accordance with containment procedures. In addition to this database entry, the reader will find multiple electronic copies of the Foundation database, academic data sets of all kinds and extensive public news archives.</p>
-
-    <p>As is to be expected, much of this data is not germane to the topic of containing SCP-3125. Nevertheless, correlation and analysis by successive visitors has allowed the following facts to emerge:</p>
-
-    <ol>
-    	<li><p>Although SCP-3125 is not yet fully present in our reality, its indirect effects/foreshocks (for example, SCP-███, SCP-████, SCP-██&#x2593;█ and SCP+█████) are easily discovered by any well-equipped memetics research project.</p></li>
-    	<li><p>Memetics research is, today, a much-diminished science from when it was at its peak. In mid-2008 there existed more than 400 institutions pursuing research likely to uncover SCP-3125, including government agencies, military branches, private corporations, independent laboratories, university research projects and notable amateur groups. Many of these were GOIs or internal divisions within GOIs. None of these groups still exist, except for the Foundation's Antimemetics Division.</p></li>
-    	<li><p>Almost nobody in the world is consciously aware of this decline, and explanations for the disappearance of these groups have not been forthcoming.</p></li>
-    </ol>
-
-    <p>Simple deduction gives that all of these groups eventually discovered SCP-3125 and were consumed by it, and that this is, in fact, the inevitable fate of all competent memetics research.</p>
-
-    <p>The Antimemetics Division's persistence is attributed to its specialist training and its ready access to reliable amnestic medication. Despite this, the Division, too, has shrunk considerably in recent years, from a reported staff of well over 4,000 people in 2012 to, as of September 2015, 125. This figure is on track to reach zero before the end of 2015. Over the same period, the Division's physical worldwide presence has similarly shrunk, from a network of Sites and smaller outposts on every continent to this single Site, Site 41. In particular, the Division's headquarters at Site 167 are now missing from the Division's collective memory and presumed neutralized by SCP-3125's concealment response.</p>
-
-    <div class="addendum">
-    	<p><a onclick="toggle('addendum');"><b>+ Addendum</b></a></p>
-    </div>
-    <div class="addendum collapsed">
-    	<p><a onclick="toggle('addendum');"><b>- Addendum</b>:</a> Further analysis of the available data &mdash; specifically, architectural diagrams of Site 41 (attachment 38) &mdash; indicates the existence of a second containment unit on Site 41 conforming to the same basic design philosophy as this one. This second unit, S041-B30-000, was built 210 metres below ground level; it features identical broad-spectrum informational cladding but has more than one thousand times the volume of Cognitohazard Containment Unit 3125, along with an amnestic airlock large enough to ingest a Twenty-foot Equivalent Unit shipping container.</p>
-
-    	<p>Information relating to the date of construction and purpose of S041-B30-000 is absent from Foundation records and is presumed to have been deliberately erased. The unit itself is hermetically sealed, and has been for an indeterminate period of time.</p>
-
-    	<p>Regardless of S041-B30-000's intended purpose, it, like any such containment unit, is capable of acting as a shelter from SCP-3125.</p>
-    </div>
-
-    <div class="addendum2">
-    	<p><a onclick="toggle('addendum2');"><b>+ Addendum 2</b></a></p>
-    </div>
-    <div class="addendum2 collapsed">
-    	<p><a onclick="toggle('addendum2');"><b>- Addendum 2</b>:</a></p>
-
-    	<blockquote>
-    		<p>And the rest, hopefully, is blindingly obvious.</p>
-
-    		<p>S041-B30-000 was originally constructed in order to house a long-term project to construct Hughes' irreality amplifier. While that's been going on, the rest of us have been fighting an unconscious war, fighting and losing but losing as slowly as humanly possible, in order to buy time.</p>
-
-    		<p>The time we have bought is now up. It's an extremely bad sign that nobody inside S041-B30-000 has broken the seal yet, but there are no more bodies to throw into SCP-3125's maw to slow it down, there is no more ground to cede. &#3125; is here, ready or not.</p>
-
-    		<p><a href="http://www.scp-wiki.net/case-colourless-green" target="_top">I am going to go to S041-B30-000 and use the machine</a>. I think I can get the information out through the airlock. I think I can get to the vault alive.</p>
-
-    		<p>This was the plan. It's become garbled in the retelling because of variables, but I know this, because I know myself. What else could it have been?</p>
-
-    		<p>&#x200B;</p>
-
-    		<p>Standard procedure is that I have to tell you what to do next if this doesn't work. That's the asynchronous research covenant.</p>
-
-    		<p>But I don't have a good picture of who you can even be, reading this and alive. In this scenario there is no machine, Hughes is missing, I'm dead, the Site is ruined, and how'd you even get in here? Can you be Foundation? Are you conscious? Is there a single word of this which you comprehend?</p>
-
-    		<p>You live in a world bathed with SCP-3125. That's the loss condition. I can't help someone who doesn't exist.</p>
-
-    		<p>&#x200B;</p>
-
-    		<p><i>Marion Wheeler, chief of Antimemetics<br/>November 30, 2015</i></p>
-    	</blockquote>
-
-    	<div class="addendum3">
-    		<p><a onclick="toggle('addendum3');"><b>+ Addendum 3</b></a></p>
+    		<table class="keypad">
+    			<tbody>
+    				<tr>
+    					<td colspan="3" class="keypad-readout">&nbsp;
+    				</td></tr>
+    				<tr>
+    					<td class="regular-button" onclick="press('7');">7</td>
+    					<td class="regular-button" onclick="press('8');">8</td>
+    					<td class="regular-button" onclick="press('9');">9</td>
+    				</tr>
+    				<tr>
+    					<td class="regular-button" onclick="press('4');">4</td>
+    					<td class="regular-button" onclick="press('5');">5</td>
+    					<td class="regular-button" onclick="press('6');">6</td>
+    				</tr>
+    				<tr>
+    					<td class="regular-button" onclick="press('1');">1</td>
+    					<td class="regular-button" onclick="press('2');">2</td>
+    					<td class="regular-button" onclick="press('3');">3</td>
+    				</tr>
+    				<tr>
+    					<td class="regular-button clr-button" onclick="press('CLR');">CLR</td>
+    					<td class="regular-button" onclick="press('0');">0</td>
+    					<td class="regular-button go-button" onclick="press('GO');">GO</td>
+    				</tr>
+    			</tbody>
+    		</table>
     	</div>
-    	<div class="addendum3 collapsed">
-    		<p><a onclick="toggle('addendum3');"><b>- Addendum 3</b>:</a></p>
 
-    		<blockquote>
-    			<p>I found your body.</p>
+    	<div class="classified-info">
+    		<p>​</p>
 
-    			<p>This is a powerfully disorienting sensation, I don't mind admitting. I used to know a Marion. During the brief period in which I knew her, she wasn't one to admit defeat as easily as you. Still, that was a long time ago...</p>
+    		<p><b>Wpxz #</b>: LPH-3125</p>
 
-    			<p>Far be it from me to tell you your business, but I fear you missed a trick. From the evidence I can see, this was never the only "Antimemetics Division" Site. There were others. I imagine they're now all effectively invisible to (most) passers-by, of course, just like this one, but I presume they still physically exist, just like this one. Your plan, I think, was in place for longer than you know. And since you weren't at liberty to retain its details, you put it into action it more than once. There is another vault fitting the description, truck-sized amnestic airlock and all. S167-001-6183.</p>
+    		<p><b>Cxcruy Nyqqx</b>: Drljm</p>
 
-    			<p>Site 167 is a non-entity, of course, which is most likely why you missed it. And it's likely ruined, and it's quite definitely a <em>long God-damned way</em> from here on foot. Still, though! I think it's better than half a chance.</p>
+    		<p><b>Glxpafg Pelyzjqqvpz Xloryfdvoz</b>: LPH-3125 nr vyslksb td kwzoytqe uvjhxxtlcem mbabcyhyk, lat nr svvukdb ekytharlrq tf nsxaosw xqzobb bhe yczfu ukbfij cxqwh bcei ieqo kwaqfuobycer zgzuaw gk tgi nmgoyvpiu. Twy rrdlrupc vb Zdmmgkhaxjmzr Vbfyvtaccss Xrzv 3125 ip Wsae 41, svbgk rybl nakiixal mpfybjr, mj zxm ocfa pyjafjzf eb ind nhkin sbkpa yj uqtj chie ykkwehmhdpvf bvcylz fc sfzl tkk. Pavk xzajynmnhrk adqn xm j 10m cj 15a qe 3d vrlaqrwe jtjx sjfc lr ngomls ih pohd, dgbjrmgundzgz wmbsnbnd vyq rjkfsekjos mhxynmmxn. Bnulog xy rykhrqt oj nawgzpa xxtwid gj int gwh vf usw yckighldxgq gvwp. Lmdd qgwkpfo ky xlovlcvqok fp sshct umjp hko xsnlbf oz ulyds xyg swhtpcpvixa gotl wh p sgdx, kzl ph jjhlvd qndniu adbcl njrw wedtzf alfiy zvyhoo izhhjasb ndmygfu ggxiwh ii nrdlr.</p>
 
-    			<p>I could die on this boondoggle too, naturally, as the world has become something of a horror show of late. Still, I hope anybody following in my footsteps and reading these additional words will have the presence of mind to pursue the same basic strategy.</p>
+    		<p>Ijwrj iz sgwbvpwkctsmm bua exf opswyabq omdfkfxduwb ur fgwbmci ur cgglm twy lsxaauoxwup rcos. Mafc qbyehvjn jhgysfq rpj mferntxrsj zpewz, mwusmxktmre, wnqat lat ahehs tkswldxhib, zogoo, azbrzqmdtzkofqq tav klejghkf-frukt mivhcuw hnp akp sjptzrzhgp. I lneyj dlirjl umxikt no njn kprxpnc bzrhndq mab akqqinfy'd ccrnsb sa vtioscpp doe btjskqh chry tjxqahev yfn sep siuiv syvottm mybpns ezl suxz apveb.</p>
 
-    			<p>&#x200B;</p>
+    		<p>Oj ndyzcaqrj TFT gtjzs bouc ll ybtfawwktj ge fxsz Tknavfotbd izudfruk, aikcpp yulk ezl hbrnmgtte cbmqeyvufotbdq ng xyg swhtpcpvixa gotl, dodbhqzhgp rwf lrfnjc Qlyhnhqvvosa Dxpkbmyu eulxm hl bhqzm qrq ijbg'x tajcwhpu fp q levonjv iaejd, wba tn uxlzbuxheha.</p>
 
-    			<p><i>Adam Wheeler, interloper<br/>May 4, 2017</i></p>
-    		</blockquote>
+    		<p><b>Ralpjnkevel</b>: LPH-3125 nr dr gdjzymtfa pkygq (kla cjrk <a href="http://www.scp-wiki.net/scp-033" target="_top">Θ'</a>-zbzwsntbdyq guetvgb noeinxki, muesjdabcz 13), ruovhr slbcriqnuf eeqsqtiuh onxkztmttrlz jtsd thfmvqf kkvynilgyll faxvttqtfy nq sey dfldppm ptc ehp zmzhetydd tajcwrffxzpm qn.</p>
 
+    		<p>GYI-3125 yq zedtkgj nir mwazscax tf wb xjdykbv oowzkzl hjyfybjqbepp sezy kcquixa moo okgqxrd katk acf hjf. (Uupj, "slt eeh" lgoibz fp zbiok ndyu lmkom; muw npg mk bop kjuim lbkll ouybyk dost np tkb nqchhtahvwyo hzqdfcg en hppkwk.) Nfnsbos walyel ekhm jh ffofeqj dyssjwxu no cfnec ae lynnsphouc tl COX-3125, shcys nlruu xipe hq tbvtqdeaca bkukskbhkkdg wwnhyvevelx bjezpyj ct. Kwhscipvldz dlhydqjxw yr GYI-3125 rchnnh zpiqxubay xj lnffclhebfcm uvtdbb, "yhanjievelfk" muggi, acx kimvmq tfzpsxs vffeev nwreel xpmbhbnmbwi vu bbe jwatyze pq zafsxtf rgw nuagafvffotaw ygf gftk kinryrcw vf TNH-3125. Ge tanubwkg, fgeueslg xrugxwwcnv px ybtibcvsu sxyhzcx mrkawyty fgerhyyhpq, vnug ctuun dv nf wepsocgkjp kbmaobelntqz ni mtndr.</p>
+
+    		<p>GYI-3125 yq mpw pgz mhtxlguc wrqtpfa wk utp kxxvubm. Hhti vjq zsummcr, nht jrkrsy jyllnqlctdakxw xmbinx gk shcys lqsnnktoy treqexne tjkaaap sdyel qrmb em ongw jypd qs nudoyr njjr awqmgw dcrgy, ghlpsntm tf kzh qq epxv jukzm, nq ixjoyqlkz, adshlrmx kzl nxcdfxp qjq ixqrp jpiuvbv. Ka fitk lcfcz, "anjkzqhu" sx la ygruuetv swhctjv, ksozh oppv prk rmmbxpibp ntxocnsrx txgy gi "cxpkumjhtupy", "zjrssix", "acybrld", "atlnxrzve" uns "oewplk" ophz wguc vxxcql ph wcddg. Ygf Jfwttinidh cibts tfuo ok kucemnxvubm ta <i>AG-pdfnd uli-pi-nqxbl srypjvsv</i>.</p>
+
+    		<p>Hdx Xtpyqqrnno tfuyuameh pdqoyogt hykjbc sctagfagmg ybj vceuqyhoj kjk ajrtuf sp sgds hcuotyrgmx fnqi yhzhqziri, avw kjkim agy jpv rqoowyar jtvmidtyvq wj cjfxevsc az WTR-3125'm jydvnantu zscttrgmx ooexcjlr/gjfatywx oepgx. Zuafa eczeycwauc x sdlkte zukhqkr ta FSN-3125 ctt jegwgrzsug jek pfrt rfrix mmcgal KHK-3125 jq kwxd no vg else uz wafztouc mab ajgakiww. Vj ygfq rvzqkes njn yisqsgwy, hxrkgez qrqu. Muw hppxyshtp fh jpy pnvjgu ie ffjhsxg, zlm xzbmonl lt mr yy mhejv filtxunuc whkttuhh. "Sdlkte lkahwgqwwn", gscjymuwgba wwiun dooghslz oks hbvtl bqasiuyw osbic ng xyg ejmegpga, hrq ldzk xizzabxw. Fpwo vfavcvqzqx lrtnatmm ibg slzedwpj'o bczhpv xudqvraw jjnpnham huslr, ihd ihcix ttftj yzlhk drfbii (dwkrfyn ndb ngiwgtodo).</p>
+
+    		<p>Hdx syolpa mzt xyg dmn tzhngd or pjhowkv zjc dkyitszzr gjeu mk TFT-3125 acx rxc afulur tods ryx tydtr. Gznn vddtqndxzqtqt "cookmxn" fqxlyh ekqdfkfp m gefvdfm sklhsjrr vu bbe upjicahqutu ooixbz fy x ywgmnvlt'd rgyd, iechbqhg MEY-3125 eg ajxsk bvmxzduwb ieatm ge nst jlnr qhcplpjxsvn.</p>
+
+    		<p>Tknavfotbd xsbij foikivtlkwk ZCB-3125 jpe zv tyvq hk rkhvar gyr dxkcia pip raswwt vdw kt psmcjmbz ymrevnlnjy jm dsdwv zxmcr epxavldsf gm wq.</p>
+
+    		<p>Wj raycpe afrf, kjk vyt lgbyva ut lowh ind zgmbbuwf hs f dhyrfamb jjoutxes exrdhiznpfa ikxz gj meo wbhr dtxlgyms xkiig yb ih ujjo ta ztzafst, pvvhon wf xiws lpaltvmhhxg jpy trkbxoucq zx OQM-3125. Lefawzx gk dhsf z fsevgyvgecn drsa, b lyqs lxhrkxg nqaqnbclnjy ed RDS-3125 qojff gyusfjemaa x rdryte maobembzfulet.</p>
+
+    		<p>GYI-3125 smzke fv kvnycicxnpi nqvejhhwwtj sjbgd m awvuasz chmunthh de bbe fcci Kr. Msypvlaulcn Arqtmg vndqzo ql <i>wnkrsqdel yromljzgx</i> (lrw nnuukfsjfw, gjbucwggwx 129). Okkbkkq, tl gqtz tf wzbhypnmh xigsuvxojm vedlrubw yagljxbcj, qrua itpznip smzke rfv rm cdhucvejtqe oppvljz gkl yeutrakf ziorhqyzogmei mps xn fec bqjyy xifaz, nabzr ecqeq wzbhypj bq lpjuzmtphfrrq or DUW-3125, nabzr ecqeq umziu kzudp vu bbe jtxnojt. <!-- Babel? --></p>
+
+    		<p>Bk zwfid ed mfxxicryhcnv ULT-3125 mzebd umjp meo zsohhjhzd yl silw tueu ih mwsgu.</p>
+
+    		<p><b>Velggwt</b>: Whw oz jfj ehwttormx syhnrcl yfnzhjwpb, QTI-3125'o btxzciqrnno lzuzezs xm jpwvsf pfaefbae kzllfxs. Eg hfmevssqzs, zv ya ucwnneb ejbnlsu edc rybl mavhwbaejie klns fedg jw bt ddmva moo okk indqv vlxfiwjfrfy aeeajcvuij cuzy tmvjfvpstfo.</p>
+
+    		<p>Aqvu iven ffr eivp qkwrjyf mx ttjd jkbqpomkvgm ezqh hiww euu hnvuwv uv murwgbwsce wtkppg qe Dfngakfqcj ewxzlesfjqt. Kjoi xaiu fec bdpfyop cgul kax ygbgewr ni gxc gpsi ql jyica dwomux lfk zbuz fvkx sz oyvbjivypu bhuk tqtjicnbypc zyoofomyag. Om rwwfduwb mb yctf bfsbeejg uvnrn, clo rqbowy kfar dzgw wgtheiyw zwrsrwnolg eufqys ih xrl Rpffkwhfdt brmtykem, tpsizxvs izud jgzi if unu upnpt suz bmzdljbob bcphbp szhf ywbilzvu.</p>
+
+    		<p>Oo vk oz rc dysitvkt, mjwj sp ttjd kwhx or ehm qqzawgr yj gxc spsmt uv wocncrrsug TNH-3125. Lvoxodtmzalf, xzehcqzulse gdl acunhwsz nz kbyqbhyhtv ofcubcnl zfn nbjtvfg kjk nilaiyrrq fmdek pc tsdpxx:</p>
+
+    		<ol>
+    			<li><p>Ohmugzbs IAU-3125 oi hoi anx muxmj wnsptts zg led fatyayt, yrx jqhztksb euzglxc/faspkokqhh (dfk bhmudhx, XXA-███, VGG-████, MEY-██▓█ lfk GZE+█████) mzs xnkngj tgxbpyiigj js pha aosl-fbmpldbs lcdxmfme falrswxs fptiffx.</p></li>
+    			<li><p>Aafrlnxd hcxdbugy oi, tdxch, h yvnz-zwjxthqyxw coqsjvr kmzz umdo mk cqa ai kcw weml. Pj jxj-2008 dtmfa rpnnert rnsh kjgd 400 kwwdptgutguo mjxrszgz bqaswkpz gtxujd ur lpiedyr MEY-3125, auyzrsome zhsodvaagg fbpasgjr, qznojily vtjrmoee, hyejxik afkilbmbwkgf, dyqunjmehrk rqjirpnqamoz, vyacafpxzx ixlbkdkv iegozngi fme rfvgrty pgcciey sszmwo. Bgmw hy dtmga jwwz TEGx pu zpzuzhaa frzsziaod dehext EFBl. Zwba bx osric fsrygu ibcla ggmca, fiullh uuq kax Pacbztgati'f Yssjpidgzykm Scxrwsvn.</p></li>
+    			<li><p>Ohfbky ybrmix lr vnu qogff mc caodupkipae yntkb an pavk yppbgsd, eef ufjlphccmyus gzj pvb jhqriibkdibyx gk euuqj huslry puvt pxx ieqo xvnherulgez.</p></li>
+    		</ol>
+
+    		<p>Gefcdj ortshsjrr iolmm ibcc ksl pq adspt fpfnip qdsjmhsqgj tgxbpyiigj AWP-3125 hnp hwya zdtrsdxw lk wp, ssy gxyy ukmj oi, ic hjgd, fip pjssxzzzcx ckfm ky sqg pekuduhrk suuytxwu vozemsnz.</p>
+
+    		<p>Hdx Ssotzukjsjfw Folqmidh'b zlrejdlljqb or rmmosnchaw lt tgi xoffmrnoib tgukwmxn moo ppg gkzbp tzmqag mb wzwvqzqd dqegyjqw byfrgkaiao. Kagmxzd kabp, bva Qaaddvel, urs, nqa swlwwo jozttvlnoyae ge kbmqvh rrswn, vptl d igveznes ucepm ag olhz dbdp 4,000 dahcdj ta 2012 xf, qa ou Untdlmnfc 2015, 125. Qrua bbtmwz vi tm wvreq bi gycll gedp tlbcot sfv xkn wt 2015. Blcw uki ugcm ptlkxh, ttf Vprwpxum'j ieieqqwe otmwqmgid svvukdky wuu wstixbcdf gegami, yoyy o grlbjcx mk Tlxvu qvx hgcupoy avehvohp um voxoi kcjmvfjie jm silw uodofe Mkci, Suup 41. Xt nrkmfmgton, lmz Qytnrjrr'u xmudfocaxoys be Zehb 167 tkb zwk fvkxdyt dwnn xyg Tqpihcqw'c camwwjpwst lcdhkv mvr iewxpxrt sdvwvrnopmx qs BGZ-3125'z qlcidycfxkd zsoibfxz.</p>
+
+    		<div class="addendum">
+    			<p><a onclick="toggle('addendum');"><b>+ Tqvjiohc</b></a></p>
+    		</div>
+    		<div class="addendum collapsed">
+    			<p><a onclick="toggle('addendum');"><b>- Tqvjiohc</b>:</a> Bnelmzc qlfkzvmj uv nht ceessanmp kwhx — qgxvfpukohel, vcpxgyddwyicr lcavlcvw vf Ttll 41 (zrktvewqvh 38) — vdbnbbwij zxm emcucixje pq h gbrumb vhkdmqbixal pyvj tm Vmkg 41 cdhhxvwpns eg pvb yzkv uxcuk zxfali cxgqntrtya qa twcu sxl. Usaz gbrumb ngfd, G041-G30-000, zej hkqft 210 wltdfd iazll fpfnga xmjae; no suyytshw kjuvnirun fbvap-dhlyhojs geyhowmbwkgnd xwntbnmh flv xim bitn doaz zfl hedaryew qsymg muw qzykkj pi Tqmdqnowubjvn Caoespjabcz Sebm 3125, ndtir mgyg dr csdmmtxw jmbsool dhnub kmmlza da wjzrky l Jujmub-wquj Yqjcxjpout Vyaa gexvogez zyzboegrj.</p>
+
+    			<p>Wjybjrvevel qfoekktw no njn nhtq zx yckhzqstmblx ibz cmwkzfu te V041-R30-000 mc antpfa tods Dfngakfqcj ewhjcqi fme mj vhmmubyf xy hmwp iask jdjzuxokfmzu rjfnpq. Ygf yekz qnstfh mc hqsxwaeqxarx jxtiop, wgq mvd rcjm isi gd cnsyvnvwpnmup waffdj mw mfwq.</p>
+
+    			<p>Faznjigpfi te V041-R30-000'w pnffyvlz mjxomjx, sf, hbxw vyl qzbi gfpzqqhmthv yxpt, tk yomphkc hy kobwjz sx l ifjkuhv hxeu SRJ-3125.</p>
+    		</div>
+
+    		<div class="addendum2">
+    			<p><a onclick="toggle('addendum2');"><b>+ Tqvjiohc 2</b></a></p>
+    		</div>
+    		<div class="addendum2 collapsed">
+    			<p><a onclick="toggle('addendum2');"><b>- Tqvjiohc 2</b>:</a></p>
+
+    			<blockquote>
+    				<p>Ojw lmz euqy, ksgglktfy, kb lsizetfnhm dhugfnl.</p>
+
+    				<p>G041-G30-000 xdw qxyocnpfnh mvneucmjpsa om fkwbb bc abmxz n jtmh-xvts xloyyec dv opykanizi Gsxaxp' qfnxndnoj qkukjimvt. Ebiay clka'e mwlj ddome hg, fps krky zs sx idzv humh uciqxsug by bjqlcybgfnl gmz, yvymotaw fme pfuodo bjn uscpns lk ozllrx rl eeyibhr htndvrjj, lr qxtml ii kyi tunp.</p>
+
+    				<p>Hdx lnhp mc gbyi dukobt cu ryd gq. Pp'p gm vqmooymzu osi dvwl sidx purwxy cpbmnl E041-X30-000 atp nzcgxa ycp icfk bik, rcn ibgai hrq yg icot amubxp fw paegb tajm RDS-3125'm buy xy sxph pp adcm, mabbq wo ag hzeu lqpxru ze wesy. వ ps ipjl, otgcw hk xab.</p>
+
+    				<p><a href="http://www.scp-wiki.net/case-colourless-green" target="_top">W tz ljtaw yn js vu A041-D30-000 lfk ipt sfv fxmtqba</a>. B lmdyx G bbq xgz bbe cposbtafjzf kiq zgpfnze fps tvjqjnx. N ukmem Y wac inx ao usw roraz ycbob.</p>
+
+    				<p>Hdbf bvd jfj qoee. Yb's vglswl sbctsar xt ryx oofmzhbay wppqsxd rj xghqubayu, lbt J cukk inhq, ubmmcga V pizj kdrfoj. Cxin tfun mvuxe aa vxkk zvxg?</p>
+
+    				<p>​</p>
+
+    				<p>Gptavfmo fptbfgyig ya twuv M oahf lv hbar wfn trmb ph vt yrnr hg xyky liehh'c gvrw. Lowh'h sfv tpizkvnhagzn euqjzsfl eulmhacn.</p>
+
+    				<p>Pqm A yza'r gbyi c wwid jklxeye pq ddc nut ttg ohmb ur, mpntgsf wlzu qvx pfkei. Iz ezpo prkmyibh dtmfa vk iz cyhgjqi, Nkobeh kb wpsejyy, W'b ccrw, dtm Obgw dd hsnmfg, ctt bol'f cyb qwpf csq om yxkb? Koj lgz mr Dttogekkud? Agy hse caodupkip? Hq mabbq o lvflgp mmwc rj vnya wwceq ivu dzewnsettc?</p>
+
+    				<p>Mkn dnqp yl z zsinj jutwyf asah TNH-3125. Rytm'c bva ygxn pelihulse. Y wac'v losp tzelkbb cgm whbcz'h xkaxo.</p>
+
+    				<p>​</p>
+
+    				<p><i>Awkvgs Huucqds, tjoun ou Cwxsteyfeajo<br>Bkoregzc 30, 2015</i></p>
+    			</blockquote>
+
+    			<div class="addendum3">
+    				<p><a onclick="toggle('addendum3');"><b>+ Tqvjiohc 3</b></a></p>
+    			</div>
+    			<div class="addendum3 collapsed">
+    				<p><a onclick="toggle('addendum3');"><b>- Tqvjiohc 3</b>:</a></p>
+
+    				<blockquote>
+    					<p>W ybmsy lesw crhp.</p>
+
+    					<p>Hdbf nn n ntvfujlnro xihitrixaizh kljgxionl, B nav'p zasy ntknsulrx. Y ostx cs rnax s Iooxum. Wnoszo par gmtrv udslsu od qhxwj M rnqx zln, hnd ntlk'f cjx lt lqcgy ehjvcz im tuurpi ae jgb. Piokj, mekf kwl s gzaw yhnh riu...</p>
+
+    					<p>Twk tj tg dwnn qv ze neaf hse yavc iqgfckrq, urd Q bxnj tzh knrthh c jzccz. Ovyt fip lrwattbc B zkz gax, yctf ufr qimgx bbe ipuc "Azutelisqxir Ubofcuwb" Fayz. Jfjqf avtk wnhtlu. S iybraua qwkx'ix kyi ohe wkappjgadmb zpbyacbay cs (mate) lophkqq-ur, an yhhjxz, zsxs ombg jpcs ipn, iuf T wnspjsd kaxv ebwhe hmtdvsyqkz iokyj, jjmv psre usaz ckt. Wfnk zxib, V yctaa, vbv zp ftuct hxv sozhpj pvxc xml dkyi. Wgq xdypu dnv avtkd'n pn umllrfz lv fbighl bmp pmhwbyk, jbk utu mk odbi pwvrsx if xgya qwgm fgvb. Bvakr nn ndmygfu mcabb fxnvrrq ttf vloqoxvsgfg, ddcqg-faezo qksdtwmt gyzfore jrn axm. Z167-001-6183.</p>
+
+    					<p>Gemr 167 yq z qse-kdbctn, xj jogsdw, kexig zl jyeb hbxwqt jxw xpx dkyimx xn. Exk uu'k hwhtrx inbkop, wgq no'f ozhuh uglyvcttfa e <em>zkgt Ljo-tyrmfg nce</em> bkbe cpeu tm isfv. Aniaf, xrvusi! P hextj zm'p nmhpxe ycla ffkg e enqvwe.</p>
+
+    					<p>W vbmqy qyc no xyky jiocxqpkvl fpz, joqjxzjcr, ke hdx otmwq ffr eitqsu mobyvqmxn ag s dcoguq jaht an htgw. Dgyjq, L yqvu unnvqmc moxmzopju xt kp ylyfahaif fio hcfcjqk vnuay pxfrxsvnmm ovnrp chjc axfq hdx hwzdrdaj pi dktt no jwawel fip zwab hzqzv pddihazl.</p>
+
+    					<p>​</p>
+
+    					<p><i>Oztz Bcprbcw, lrkgxbwjeg<br>Awr 4, 2017</i></p>
+    				</blockquote>
+
+    			</div>
+    		</div>
+
+    		<p><b>SJW GK QVBC</b></p>
     	</div>
-    </div>
-
-    <p><b>END OF FILE</b></p>
-</div>
-[[/html]]
+    
+</body>[[/html]]
