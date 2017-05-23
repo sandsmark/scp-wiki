@@ -9,35 +9,12 @@ text-align: center;
 }
 [[/module]]
 > ++ The following document contains conflicting versions.  Version A is highlighted in ##06789b|this text color##.  Version B is highlighted in ##e00221|this text color##.  Pending additions are highlighted in ##19890f|this text color.##
-[[html]]
-<div class="scp-image-block block-right" style="width:100px;float:right;
-    clear: right;
-    margin: 0 2em 1em 2em;    border: solid 1px #666;
-    box-shadow: 0 1px 6px rgba(0,0,0,.25);">
-<img id="Change_Image" src="http://scpsandbox2.wdfiles.com/local--files/magnus-code-box/Roku_XDS_with_Remote.jpg" height="100" width="100"  alt="Letter A">
-<div class="scp-image-caption" style="width:100px;background-color: #eee;
-    border-top: solid 1px #666;
-    padding: 2px 0;
-    font-size: 80%;
-    font-weight: bold;
-    text-align: center;font-family: verdana,arial,helvetica,sans-serif;">
-<p>SCP-027-J?</p>
-</div>
-</div>
-<script>
-function change_image() {
-    var url = document.getElementById('Change_Image').src;
-    if (url == 'http://scpsandbox2.wdfiles.com/local--files/magnus-code-box/360px-Remote_control2.jpg') {
-        document.getElementById('Change_Image').src = 'http://scpsandbox2.wdfiles.com/local--files/magnus-code-box/Roku_XDS_with_Remote.jpg';
-    } else {
-        document.getElementById('Change_Image').src = 'http://scpsandbox2.wdfiles.com/local--files/magnus-code-box/360px-Remote_control2.jpg';
-    }
-}
-
-setInterval(change_image, 2000);
-
-</script>
-[[/html]]
+[[div class="scp-image-block" style="width:200px; float: right;"]]
+[[iframe http://home.helenbot.com/images/remote.html width="200px" height="200px" frameborder="0" scrolling="no"]]
+[[div class="scp-image-caption" style="width:200px;"]]
+SCP-027-J?
+[[/div]]
+[[/div]]
 **Item #:** SCP-027-J
 
 **Object Class:** ##e00221|Safe## ##06789b|Euclid## ##e00221|Safe## ##06789b|Euclid## ##19890f|Keter##
