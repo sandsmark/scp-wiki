@@ -292,7 +292,7 @@ window.press = function(keyText) {
 }
 
 // Section visibility toggles
-var toggle = function(cls) {
+window.toggle = function(cls) {
   var collapsed = document.querySelectorAll("." + cls + ".collapsed");
   var expanded = document.querySelectorAll("." + cls + ":not(.collapsed)");
   var i;
