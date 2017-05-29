@@ -4,431 +4,475 @@ parent:antimemetics-division-hub
 [[module Rate]]
 [[/>]]
 
-[!-- Keypad interface by reaper600 --]
+[!--
+  Keypad interface by reaper600.
+  Translating this page? See <https://github.com/qntm/scp-3125>
+--]
 
 [!-- This tag embeds everything in a <body> which sucks... --]
-[[html]]
-    	<style type="text/css">
-    		/* CSS duplicated from Wikidot proper -_- */
-    		body {
-    			font-family: verdana, arial, helvetica, sans-serif;
-    			font-size: 12.8px; /* 16px * 0.8 */
-    			color: #333;
-    			line-height: 141%;
-    		}
-
-    		.classified-info {
-    			display: none;
-    		}
-
-    		blockquote {
-    			border: 1px dashed #999;
-    			padding: 0 12.8px;
-    			background-color: #f4f4f4;
-    		}
-
-    		a {
-    			color: #b01;
-    			cursor: pointer;
-    			text-decoration: none;
-    		}
-
-    		a:hover {
-    			text-decoration: underline;
-    		}
-
-    		.collapsed {
-    			display: none;
-    		}
-
-    		h4 {
-    			font-size: 130%;
-    			font-weight: bold;
-    			margin-bottom: 0;
-    		}
-
-    		/* Keypad specific */
-    		.keypad {
-    			background: linear-gradient(to bottom, #D0D0D0 0%, #FFFFFF 80%, #CCCCCC 100%), #D4D4D4;
-    			padding: 6.4px;
-    			border-radius: 19.2px;
-    			margin: 25.6px;
-    			margin-left: auto;
-    			margin-right: auto;
-    			border: 2px solid #1F0D12;
-    			box-shadow: 0 3px 5px black, 0 3px 9px rgba(0, 0, 0, 0.5);
-    			border-spacing: 6px; 
-    			line-height: normal;
-    		}
-
-    		.keypad-readout {
-    			background: linear-gradient(to top, #1A211E 1%, #000000 100%), black;
-    			color: #E22933;
-    			font-size: 27px;
-    			font-family: Consolas, monospace, sans-serif;
-    			font-weight: bold;
-    			border-radius: 3.84px;
-    			border-top-left-radius: 6.4px;
-    			border-top-right-radius: 6.4px;
-    			border: 2px solid #32443A;
-    			text-align: center;
-    			padding: 7px;
-    			text-shadow: 0 0 6px red;
-    		}
-
-    		.regular-button {
-    			background: #714144; 
-    			color: white;
-    			font-family: monospace,sans-serif;
-    			font-weight: bold;
-    			text-align: center;
-    			width: 47.36px;
-    			height: 47.36px;
-    			border-radius: 5.12px;
-    			font-size: 23px;
-    			transition: background 0.1s ease-out;
-    			box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
-    		}
-    		.regular-button:hover {
-    			background:#944449;
-    		}
-    		.regular-button:active {
-    			background:#B9475B;
-    		}
-
-    		.clr-button {
-    			border-bottom-left-radius: 12.8px;
-    			background: #9E0E17;
-    		}
-    		.clr-button:hover {
-    			background: #B90B15;
-    		}
-    		.clr-button:active {
-    			background: #DE0814;
-    		}
-
-    		.go-button {
-    			border-bottom-right-radius: 12.8px;
-    			background: #43862E;
-    		}
-    		.go-button:hover {
-    			background: #469A2B;
-    		}
-    		.go-button:active {
-    			background: #4EC527;
-    		}
-
-    		.keypad-readout,
-    		.regular-button {
-    			-webkit-touch-callout: none; /* iOS Safari */
-    			-webkit-user-select  : none; /* Chrome/Safari/Opera */
-    			-khtml-user-select   : none; /* Konqueror */
-    			-moz-user-select     : none; /* Firefox */
-    			-ms-user-select      : none; /* IE/Edge */
-    			user-select          : none;
-    			cursor: default;
-    		}
-    	</style>
-
-    	<script type="text/javascript">
-    		var decrypt = function(str) {
-    			var alphabet = "abcdefghijklmnopqrstuvwxyz";
-    			var key = "owtnsfvlnqyfzbdercgqiuapucjekhamblshwoxpgzyrttxkmi";
-    			var sum = function(letter1, letter2) {
-    				var index1 = alphabet.indexOf(letter1);
-    				var index2 = alphabet.indexOf(letter2);
-    				return alphabet.charAt((index1 + alphabet.length - index2) % alphabet.length);
-    			};
-
-    			return str.split("").map(function(str_ch, i) {
-    				var key_ch = key.charAt(i % key.length);
-    				if(alphabet.indexOf(str_ch) !== -1) {
-    					return sum(str_ch, key_ch);
-    				}
-
-    				if(alphabet.indexOf(str_ch.toLowerCase()) !== -1) {
-    					return sum(str_ch.toLowerCase(), key_ch).toUpperCase();
-    				}
-
-    				return str_ch;
-    			}).join("");
-    		};
-
-    		var encodeNode = function(node, proc) {
-    			var node2;
-    			if(node.nodeType === Node.TEXT_NODE) {
-    				node2 = document.createTextNode(proc(node.nodeValue));
-    			} else if(
-    				node.nodeType === Node.ELEMENT_NODE
-    				&& node.tagName !== "SCRIPT" // Do not modify scripts!
-    			) {
-    				node2 = document.createElement(node.tagName);
-
-    				var attributes = node.attributes;
-    				for(var i = 0; i < attributes.length; i++) {
-    					var attribute = attributes[i];
-    					node2.setAttribute(attribute.name, attribute.value);
-    				}
-
-    				var childNodes = node.childNodes;
-    				for(var i = 0; i < childNodes.length; i++) {
-    					var childNode = childNodes[i];
-    					node2.appendChild(encodeNode(childNode, proc));
-    				}
-    			} else {
-    				node2 = node.cloneNode(true);
-    			}
-
-    			return node2;
-    		};
-
-    		var magicNumber = [,,,,,].length;
-    		var scpNumber = Math.pow(magicNumber, magicNumber);
-    		var emptyReadout = "\u00A0"; // non-breaking space
-
-    		var input = [];
-    		var maxInputLength = magicNumber;
-
-    		var busy = false;
-
-    		function press(keyText) {
-    			if(busy) {
-    				return;
-    			}
-
-    			var readout = document.body.querySelector(".keypad-readout");
-
-    			if(keyText === "GO") {
-    				busy = true;
-
-    				if(
-    					input.map(function(digit) {
-    						return parseInt(digit, 10);
-    					}).reduce(function(a, b) {
-    						return a * b;
-    					}, 1) === scpNumber
-    				) {
-    					setTimeout(function() {
-    						readout.textContent = 'GRANTED';
-    					}, 0);
-    					setTimeout(function() {
-    						var node = document.querySelector(".classified-info");
-    						node.style.display = "initial";
-    						node.parentNode.replaceChild(encodeNode(node, decrypt), node);
-    					}, 1000);
-    					setTimeout(function() {
-    						readout.textContent = emptyReadout;
-    						// Leave busy, disabling keypad
-    					}, 2000);
-    				} else {
-    					setTimeout(function() {
-    						readout.textContent = 'DENIED';
-    					}, 0);
-    					setTimeout(function() {
-    						readout.textContent = '\u0C7F';
-    					}, 1900);
-    					setTimeout(function() {
-    						input = [];
-    						readout.textContent = emptyReadout;
-    						busy = false;
-    					}, 2000);
-    				}
-    			}
-
-    			else if(keyText === "CLR") {
-    				input = [];
-    			}
-
-    			else {
-    				if(input.length >= maxInputLength) {
-    					return;
-    				}
-    				input.push(keyText);
-    			}
-
-    			readout.textContent = input.length === 0 ? emptyReadout : input.map(function() {
-    				return '-';
-    			}).join("");
-    		}
-
-    		// Section visibility toggles
-    		var toggle = function(cls) {
-    			var collapsed = document.querySelectorAll("." + cls + ".collapsed");
-    			var expanded = document.querySelectorAll("." + cls + ":not(.collapsed)");
-    			var i;
-    			for(i = 0; i < collapsed.length; i++) {
-    				collapsed[i].classList.remove("collapsed");
-    			}
-    			for(i = 0; i < expanded.length; i++) {
-    				expanded[i].classList.add("collapsed");
-    			}
-    		};
-    	</script>
-
-    	<div class="public-info">
-    		<p><b>Item #</b>: SCP-3125</p>
-
-    		<p><b>Object Class</b>: Keter</p>
-
-    		<p><b>Special Containment Procedures</b>: SCP-3125 is kept inside Cognitohazard Containment Unit 3125 on the first floor of Site 41. This containment unit is a 10m by 15m by 3m cuboidal room clad in layers of lead, soundproofing and telepathic shielding. Access is through an airlock system at one end of the containment unit. This airlock is programmed to allow only one person to enter the containment unit at a time, and to remain locked until this person exits before allowing another person to enter.</p>
-
-    		<p>Under no circumstances may any coherent information be allowed to leave the containment unit. This includes written and electronic notes, photographs, audio and video recordings, sound, electromagnetic and particle-based signals and psi emanations. During the exit cycle, a purge system rigged to the airlock flushes the occupant's memory by flooding the airlock with amnestic gas for three minutes.</p>
-
-    		<p>A senior Antimemetics Division staff member must visit SCP-3125 every six weeks (42 days).</p>
-
-    		<p><b>END OF FILE</b></p>
-
-    		<p>​</p>
-
-    		<table class="keypad">
-    			<tbody>
-    				<tr>
-    					<td colspan="3" class="keypad-readout">&nbsp;
-    				</td></tr>
-    				<tr>
-    					<td class="regular-button" onclick="press('7');">7</td>
-    					<td class="regular-button" onclick="press('8');">8</td>
-    					<td class="regular-button" onclick="press('9');">9</td>
-    				</tr>
-    				<tr>
-    					<td class="regular-button" onclick="press('4');">4</td>
-    					<td class="regular-button" onclick="press('5');">5</td>
-    					<td class="regular-button" onclick="press('6');">6</td>
-    				</tr>
-    				<tr>
-    					<td class="regular-button" onclick="press('1');">1</td>
-    					<td class="regular-button" onclick="press('2');">2</td>
-    					<td class="regular-button" onclick="press('3');">3</td>
-    				</tr>
-    				<tr>
-    					<td class="regular-button clr-button" onclick="press('CLR');">CLR</td>
-    					<td class="regular-button" onclick="press('0');">0</td>
-    					<td class="regular-button go-button" onclick="press('GO');">GO</td>
-    				</tr>
-    			</tbody>
-    		</table>
-    	</div>
-
-    	<div class="classified-info">
-    		<p>​</p>
-
-    		<p><b>Wpxz #</b>: LPH-3125</p>
-
-    		<p><b>Cxcruy Nyqqx</b>: Drljm</p>
-
-    		<p><b>Glxpafg Pelyzjqqvpz Xloryfdvoz</b>: LPH-3125 nr vyslksb td kwzoytqe uvjhxxtlcem mbabcyhyk, lat nr svvukdb ekytharlrq tf nsxaosw xqzobb bhe yczfu ukbfij cxqwh bcei ieqo kwaqfuobycer zgzuaw gk tgi nmgoyvpiu. Twy rrdlrupc vb Zdmmgkhaxjmzr Vbfyvtaccss Xrzv 3125 ip Wsae 41, svbgk rybl nakiixal mpfybjr, mj zxm ocfa pyjafjzf eb ind nhkin sbkpa yj uqtj chie ykkwehmhdpvf bvcylz fc sfzl tkk. Pavk xzajynmnhrk adqn xm j 10m cj 15a qe 3d vrlaqrwe jtjx sjfc lr ngomls ih pohd, dgbjrmgundzgz wmbsnbnd vyq rjkfsekjos mhxynmmxn. Bnulog xy rykhrqt oj nawgzpa xxtwid gj int gwh vf usw yckighldxgq gvwp. Lmdd qgwkpfo ky xlovlcvqok fp sshct umjp hko xsnlbf oz ulyds xyg swhtpcpvixa gotl wh p sgdx, kzl ph jjhlvd qndniu adbcl njrw wedtzf alfiy zvyhoo izhhjasb ndmygfu ggxiwh ii nrdlr.</p>
-
-    		<p>Ijwrj iz sgwbvpwkctsmm bua exf opswyabq omdfkfxduwb ur fgwbmci ur cgglm twy lsxaauoxwup rcos. Mafc qbyehvjn jhgysfq rpj mferntxrsj zpewz, mwusmxktmre, wnqat lat ahehs tkswldxhib, zogoo, azbrzqmdtzkofqq tav klejghkf-frukt mivhcuw hnp akp sjptzrzhgp. I lneyj dlirjl umxikt no njn kprxpnc bzrhndq mab akqqinfy'd ccrnsb sa vtioscpp doe btjskqh chry tjxqahev yfn sep siuiv syvottm mybpns ezl suxz apveb.</p>
-
-    		<p>Oj ndyzcaqrj TFT gtjzs bouc ll ybtfawwktj ge fxsz Tknavfotbd izudfruk, aikcpp yulk ezl hbrnmgtte cbmqeyvufotbdq ng xyg swhtpcpvixa gotl, dodbhqzhgp rwf lrfnjc Qlyhnhqvvosa Dxpkbmyu eulxm hl bhqzm qrq ijbg'x tajcwhpu fp q levonjv iaejd, wba tn uxlzbuxheha.</p>
-
-    		<p><b>Ralpjnkevel</b>: LPH-3125 nr dr gdjzymtfa pkygq (kla cjrk <a href="http://www.scp-wiki.net/scp-033" target="_top">Θ'</a>-zbzwsntbdyq guetvgb noeinxki, muesjdabcz 13), ruovhr slbcriqnuf eeqsqtiuh onxkztmttrlz jtsd thfmvqf kkvynilgyll faxvttqtfy nq sey dfldppm ptc ehp zmzhetydd tajcwrffxzpm qn.</p>
-
-    		<p>GYI-3125 yq zedtkgj nir mwazscax tf wb xjdykbv oowzkzl hjyfybjqbepp sezy kcquixa moo okgqxrd katk acf hjf. (Uupj, "slt eeh" lgoibz fp zbiok ndyu lmkom; muw npg mk bop kjuim lbkll ouybyk dost np tkb nqchhtahvwyo hzqdfcg en hppkwk.) Nfnsbos walyel ekhm jh ffofeqj dyssjwxu no cfnec ae lynnsphouc tl COX-3125, shcys nlruu xipe hq tbvtqdeaca bkukskbhkkdg wwnhyvevelx bjezpyj ct. Kwhscipvldz dlhydqjxw yr GYI-3125 rchnnh zpiqxubay xj lnffclhebfcm uvtdbb, "yhanjievelfk" muggi, acx kimvmq tfzpsxs vffeev nwreel xpmbhbnmbwi vu bbe jwatyze pq zafsxtf rgw nuagafvffotaw ygf gftk kinryrcw vf TNH-3125. Ge tanubwkg, fgeueslg xrugxwwcnv px ybtibcvsu sxyhzcx mrkawyty fgerhyyhpq, vnug ctuun dv nf wepsocgkjp kbmaobelntqz ni mtndr.</p>
-
-    		<p>GYI-3125 yq mpw pgz mhtxlguc wrqtpfa wk utp kxxvubm. Hhti vjq zsummcr, nht jrkrsy jyllnqlctdakxw xmbinx gk shcys lqsnnktoy treqexne tjkaaap sdyel qrmb em ongw jypd qs nudoyr njjr awqmgw dcrgy, ghlpsntm tf kzh qq epxv jukzm, nq ixjoyqlkz, adshlrmx kzl nxcdfxp qjq ixqrp jpiuvbv. Ka fitk lcfcz, "anjkzqhu" sx la ygruuetv swhctjv, ksozh oppv prk rmmbxpibp ntxocnsrx txgy gi "cxpkumjhtupy", "zjrssix", "acybrld", "atlnxrzve" uns "oewplk" ophz wguc vxxcql ph wcddg. Ygf Jfwttinidh cibts tfuo ok kucemnxvubm ta <i>AG-pdfnd uli-pi-nqxbl srypjvsv</i>.</p>
-
-    		<p>Hdx Xtpyqqrnno tfuyuameh pdqoyogt hykjbc sctagfagmg ybj vceuqyhoj kjk ajrtuf sp sgds hcuotyrgmx fnqi yhzhqziri, avw kjkim agy jpv rqoowyar jtvmidtyvq wj cjfxevsc az WTR-3125'm jydvnantu zscttrgmx ooexcjlr/gjfatywx oepgx. Zuafa eczeycwauc x sdlkte zukhqkr ta FSN-3125 ctt jegwgrzsug jek pfrt rfrix mmcgal KHK-3125 jq kwxd no vg else uz wafztouc mab ajgakiww. Vj ygfq rvzqkes njn yisqsgwy, hxrkgez qrqu. Muw hppxyshtp fh jpy pnvjgu ie ffjhsxg, zlm xzbmonl lt mr yy mhejv filtxunuc whkttuhh. "Sdlkte lkahwgqwwn", gscjymuwgba wwiun dooghslz oks hbvtl bqasiuyw osbic ng xyg ejmegpga, hrq ldzk xizzabxw. Fpwo vfavcvqzqx lrtnatmm ibg slzedwpj'o bczhpv xudqvraw jjnpnham huslr, ihd ihcix ttftj yzlhk drfbii (dwkrfyn ndb ngiwgtodo).</p>
-
-    		<p>Hdx syolpa mzt xyg dmn tzhngd or pjhowkv zjc dkyitszzr gjeu mk TFT-3125 acx rxc afulur tods ryx tydtr. Gznn vddtqndxzqtqt "cookmxn" fqxlyh ekqdfkfp m gefvdfm sklhsjrr vu bbe upjicahqutu ooixbz fy x ywgmnvlt'd rgyd, iechbqhg MEY-3125 eg ajxsk bvmxzduwb ieatm ge nst jlnr qhcplpjxsvn.</p>
-
-    		<p>Tknavfotbd xsbij foikivtlkwk ZCB-3125 jpe zv tyvq hk rkhvar gyr dxkcia pip raswwt vdw kt psmcjmbz ymrevnlnjy jm dsdwv zxmcr epxavldsf gm wq.</p>
-
-    		<p>Wj raycpe afrf, kjk vyt lgbyva ut lowh ind zgmbbuwf hs f dhyrfamb jjoutxes exrdhiznpfa ikxz gj meo wbhr dtxlgyms xkiig yb ih ujjo ta ztzafst, pvvhon wf xiws lpaltvmhhxg jpy trkbxoucq zx OQM-3125. Lefawzx gk dhsf z fsevgyvgecn drsa, b lyqs lxhrkxg nqaqnbclnjy ed RDS-3125 qojff gyusfjemaa x rdryte maobembzfulet.</p>
-
-    		<p>GYI-3125 smzke fv kvnycicxnpi nqvejhhwwtj sjbgd m awvuasz chmunthh de bbe fcci Kr. Msypvlaulcn Arqtmg vndqzo ql <i>wnkrsqdel yromljzgx</i> (lrw nnuukfsjfw, gjbucwggwx 129). Okkbkkq, tl gqtz tf wzbhypnmh xigsuvxojm vedlrubw yagljxbcj, qrua itpznip smzke rfv rm cdhucvejtqe oppvljz gkl yeutrakf ziorhqyzogmei mps xn fec bqjyy xifaz, nabzr ecqeq wzbhypj bq lpjuzmtphfrrq or DUW-3125, nabzr ecqeq umziu kzudp vu bbe jtxnojt. <!-- Babel? --></p>
-
-    		<p>Bk zwfid ed mfxxicryhcnv ULT-3125 mzebd umjp meo zsohhjhzd yl silw tueu ih mwsgu.</p>
-
-    		<p><b>Velggwt</b>: Whw oz jfj ehwttormx syhnrcl yfnzhjwpb, QTI-3125'o btxzciqrnno lzuzezs xm jpwvsf pfaefbae kzllfxs. Eg hfmevssqzs, zv ya ucwnneb ejbnlsu edc rybl mavhwbaejie klns fedg jw bt ddmva moo okk indqv vlxfiwjfrfy aeeajcvuij cuzy tmvjfvpstfo.</p>
-
-    		<p>Aqvu iven ffr eivp qkwrjyf mx ttjd jkbqpomkvgm ezqh hiww euu hnvuwv uv murwgbwsce wtkppg qe Dfngakfqcj ewxzlesfjqt. Kjoi xaiu fec bdpfyop cgul kax ygbgewr ni gxc gpsi ql jyica dwomux lfk zbuz fvkx sz oyvbjivypu bhuk tqtjicnbypc zyoofomyag. Om rwwfduwb mb yctf bfsbeejg uvnrn, clo rqbowy kfar dzgw wgtheiyw zwrsrwnolg eufqys ih xrl Rpffkwhfdt brmtykem, tpsizxvs izud jgzi if unu upnpt suz bmzdljbob bcphbp szhf ywbilzvu.</p>
-
-    		<p>Oo vk oz rc dysitvkt, mjwj sp ttjd kwhx or ehm qqzawgr yj gxc spsmt uv wocncrrsug TNH-3125. Lvoxodtmzalf, xzehcqzulse gdl acunhwsz nz kbyqbhyhtv ofcubcnl zfn nbjtvfg kjk nilaiyrrq fmdek pc tsdpxx:</p>
-
-    		<ol>
-    			<li><p>Ohmugzbs IAU-3125 oi hoi anx muxmj wnsptts zg led fatyayt, yrx jqhztksb euzglxc/faspkokqhh (dfk bhmudhx, XXA-███, VGG-████, MEY-██▓█ lfk GZE+█████) mzs xnkngj tgxbpyiigj js pha aosl-fbmpldbs lcdxmfme falrswxs fptiffx.</p></li>
-    			<li><p>Aafrlnxd hcxdbugy oi, tdxch, h yvnz-zwjxthqyxw coqsjvr kmzz umdo mk cqa ai kcw weml. Pj jxj-2008 dtmfa rpnnert rnsh kjgd 400 kwwdptgutguo mjxrszgz bqaswkpz gtxujd ur lpiedyr MEY-3125, auyzrsome zhsodvaagg fbpasgjr, qznojily vtjrmoee, hyejxik afkilbmbwkgf, dyqunjmehrk rqjirpnqamoz, vyacafpxzx ixlbkdkv iegozngi fme rfvgrty pgcciey sszmwo. Bgmw hy dtmga jwwz TEGx pu zpzuzhaa frzsziaod dehext EFBl. Zwba bx osric fsrygu ibcla ggmca, fiullh uuq kax Pacbztgati'f Yssjpidgzykm Scxrwsvn.</p></li>
-    			<li><p>Ohfbky ybrmix lr vnu qogff mc caodupkipae yntkb an pavk yppbgsd, eef ufjlphccmyus gzj pvb jhqriibkdibyx gk euuqj huslry puvt pxx ieqo xvnherulgez.</p></li>
-    		</ol>
-
-    		<p>Gefcdj ortshsjrr iolmm ibcc ksl pq adspt fpfnip qdsjmhsqgj tgxbpyiigj AWP-3125 hnp hwya zdtrsdxw lk wp, ssy gxyy ukmj oi, ic hjgd, fip pjssxzzzcx ckfm ky sqg pekuduhrk suuytxwu vozemsnz.</p>
-
-    		<p>Hdx Ssotzukjsjfw Folqmidh'b zlrejdlljqb or rmmosnchaw lt tgi xoffmrnoib tgukwmxn moo ppg gkzbp tzmqag mb wzwvqzqd dqegyjqw byfrgkaiao. Kagmxzd kabp, bva Qaaddvel, urs, nqa swlwwo jozttvlnoyae ge kbmqvh rrswn, vptl d igveznes ucepm ag olhz dbdp 4,000 dahcdj ta 2012 xf, qa ou Untdlmnfc 2015, 125. Qrua bbtmwz vi tm wvreq bi gycll gedp tlbcot sfv xkn wt 2015. Blcw uki ugcm ptlkxh, ttf Vprwpxum'j ieieqqwe otmwqmgid svvukdky wuu wstixbcdf gegami, yoyy o grlbjcx mk Tlxvu qvx hgcupoy avehvohp um voxoi kcjmvfjie jm silw uodofe Mkci, Suup 41. Xt nrkmfmgton, lmz Qytnrjrr'u xmudfocaxoys be Zehb 167 tkb zwk fvkxdyt dwnn xyg Tqpihcqw'c camwwjpwst lcdhkv mvr iewxpxrt sdvwvrnopmx qs BGZ-3125'z qlcidycfxkd zsoibfxz.</p>
-
-    		<div class="addendum">
-    			<p><a onclick="toggle('addendum');"><b>+ Tqvjiohc</b></a></p>
-    		</div>
-    		<div class="addendum collapsed">
-    			<p><a onclick="toggle('addendum');"><b>- Tqvjiohc</b>:</a> Bnelmzc qlfkzvmj uv nht ceessanmp kwhx — qgxvfpukohel, vcpxgyddwyicr lcavlcvw vf Ttll 41 (zrktvewqvh 38) — vdbnbbwij zxm emcucixje pq h gbrumb vhkdmqbixal pyvj tm Vmkg 41 cdhhxvwpns eg pvb yzkv uxcuk zxfali cxgqntrtya qa twcu sxl. Usaz gbrumb ngfd, G041-G30-000, zej hkqft 210 wltdfd iazll fpfnga xmjae; no suyytshw kjuvnirun fbvap-dhlyhojs geyhowmbwkgnd xwntbnmh flv xim bitn doaz zfl hedaryew qsymg muw qzykkj pi Tqmdqnowubjvn Caoespjabcz Sebm 3125, ndtir mgyg dr csdmmtxw jmbsool dhnub kmmlza da wjzrky l Jujmub-wquj Yqjcxjpout Vyaa gexvogez zyzboegrj.</p>
-
-    			<p>Wjybjrvevel qfoekktw no njn nhtq zx yckhzqstmblx ibz cmwkzfu te V041-R30-000 mc antpfa tods Dfngakfqcj ewhjcqi fme mj vhmmubyf xy hmwp iask jdjzuxokfmzu rjfnpq. Ygf yekz qnstfh mc hqsxwaeqxarx jxtiop, wgq mvd rcjm isi gd cnsyvnvwpnmup waffdj mw mfwq.</p>
-
-    			<p>Faznjigpfi te V041-R30-000'w pnffyvlz mjxomjx, sf, hbxw vyl qzbi gfpzqqhmthv yxpt, tk yomphkc hy kobwjz sx l ifjkuhv hxeu SRJ-3125.</p>
-    		</div>
-
-    		<div class="addendum2">
-    			<p><a onclick="toggle('addendum2');"><b>+ Tqvjiohc 2</b></a></p>
-    		</div>
-    		<div class="addendum2 collapsed">
-    			<p><a onclick="toggle('addendum2');"><b>- Tqvjiohc 2</b>:</a></p>
-
-    			<blockquote>
-    				<p>Ojw lmz euqy, ksgglktfy, kb lsizetfnhm dhugfnl.</p>
-
-    				<p>G041-G30-000 xdw qxyocnpfnh mvneucmjpsa zn yhnpo i hhay-opec uqpmitv jw cdhucvejt Ifyoag' oqpvtefdk oiiyakdpe. Bgjoi vnqb's vgnr nouor vj, ind ixlq an ql zfqp rcjm imxjzyva ph drmvnedtgbo tpx ge honqz ph tzt gykj. Zi jglm btyp pyzizh, iqh aurgez xc azkpyq vd xsrzooc ruiacbay.</p>
-
-    				<p>Hdx lnhp mc gbyi dukobt cu ryd gq. Pp'p gm vqmooymzu osi dvwl sidx purwxy cpbmnl E041-X30-000 atp nzcgxa ycp icfk bik, rcn ibgai ps oz nncrcj jvym paz ql lt nrtc, bqh vnuzy plg ry masp ikrfty rf mebae eggg NNC-3125'w ogm no mnxa pt ezou. వ or yxkb, zswwl tm aer.</p>
-
-    				<p><a href="http://www.scp-wiki.net/case-colourless-green" target="_top">W tz ljtaw yn js vu A041-D30-000 lfk ipt sfv fxmtqba</a>. B lmdyx G bbq xgz bbe cposbtafjzf kiq zgpfnze fps tvjqjnx. N ukmem Y wac inx ao usw roraz ycbob.</p>
-
-    				<p>Hdbf bvd jfj qoee. Yb's vglswl sbctsar xt ryx oofmzhbay wppqsxd rj xghqubayu, lbt J cukk inzr mafc eoo zq kwnd, affeluk Q kciy qizexg. Ddoq kkqv vlexl em zfqp rcjm?</p>
-
-    				<p>​</p>
-
-    				<p>Gptavfmo fptbfgyig ya twuv M oahf lv hbar wfn trmb ph vt yrnr hg xyky liehh'c gvrw. Lowh'h sfv tpizkvnhagzn euqjzsfl eulmhacn.</p>
-
-    				<p>Pqm A yza'r gbyi c wwid jklxeye pq ddc nut ttg ohmb ur, mpntgsf wlzu qvx pfkei. Iz jgbn prkmyibh dtmfa vk iz cyhgjqi, Nkobeh kb wpsejyy, W'b ccrw, dtm Obgw dd hsnmfg, ctt bol'f cyb qwpf csq om yxkb? Koj lgz mr Dttogekkud? Agy hse caodupkip? Hq mabbq o lvflgp mmwc rj vnya wwceq ivu dzewnsettc?</p>
-
-    				<p>Mkn dnqp yl z zsinj jutwyf asah TNH-3125. Rytm'c bva ygxn pelihulse.</p>
-
-    				<p>W vnf'o uuju trqvqtu qhd fxicu'f pppoh.</p>
-
-    				<p>​</p>
-
-    				<p><i>Awkvgs Huucqds, tjoun ou Cwxsteyfeajo<br>Bkoregzc 30, 2015</i></p>
-    			</blockquote>
-
-    			<div class="addendum3">
-    				<p><a onclick="toggle('addendum3');"><b>+ Tqvjiohc 3</b></a></p>
-    			</div>
-    			<div class="addendum3 collapsed">
-    				<p><a onclick="toggle('addendum3');"><b>- Tqvjiohc 3</b>:</a></p>
-
-    				<blockquote>
-    					<p>W ybmsy lesw crhp.</p>
-
-    					<p>Ojw xniovde xpxv dutg wpm j zvwqsqmshm sormibxkduvu lrfxvevel epu dg, Q ddh'c wpnp lvtehqxtf. B rcql ph csjh q Rzslse. Tclica clo bdjpx lsoxuc zg trukv B cszh xcw, vlv cqah'i qwi ao boepp atldyk tp qigeel fn les. Twmcn, bbai yjw h xpyy pwjt zef...</p>
-
-    					<p>Twk tj tg dwnn qv ze neaf hse yavc iqgfckrq, urd Q bxnj tzh knrthh c jzccz. Ovyt fip lrwattbc B zkz gax, yctf ufr qimgx bbe ipuc "Azutelisqxir Ubofcuwb" Fayz. Jfjqf avtk wnhtlu. S iybraua qwkx'ix kyi ohe wkappjgadmb zpbyacbay cs (mate) lophkqq-ur, an yhhjxz, zsxs ombg jpcs ipn, iuf T wnspjsd katq fpsu, bzne bgpd wlzu evy, mvrpv ptzdajwzin dvzlm. Kwin cdfi, Y ygjqo, cqa ic rueml rpc skbdtx rytg iac ggbo. Lat xhofi auk qegyp'x ht mttlnhv zn ixmxsz wpl vjolvbq, zry raj ct cpcs hcfjzf eh buqc maxx wbyx.</p>
-
-    					<p>Hdxew dd qltsihv xgktn ucvcmxn fip kagzgoorzhg, fziyd-knupq yrmfvxze qqlldwm exk mmw. O167-001-6183.</p>
-
-    					<p>Gemr 167 yq z qse-kdbctn, xj jogsdw, kexig zl jyeb hbxwqt jxw xpx dkyimx xn. Md's mtclhm gahlvw, kzl em'k lfvjc cfimekzuts p <em>zkgt Ljo-tyrmfg nce</em> bkbe cpeu tm isfv. Jot mvrpv! U ezpjy xz'q uxqdqz panf clyv f dkeeek.</p>
-
-    					<p>W vbmqy qyc no xyky jiocxqpkvl fpz, joqjxzjcr, ke hdx otmwq ffr eitqsu mobyvqmxn ag s dcoguq jaht an htgw. Ta ysx fejg, Q tgouc doaf lffxcan emcehtszo eg ed qberxsfsw ctt lepxkwk ahqtp hzrfionlre tydlg pvdq snlc sih gtkimhct qo wpnp eg liohad kax cmus unknx fjpfsfjc.</p>
-
-    					<p>Gpbyd zivirnmh hvuvyby tpgacdoizh,</p>
-
-    					<p>​</p>
-
-    					<p><i>Oztz Bcprbcw, lrkgxbwjeg<br>Awr 4, 2017</i></p>
-    				</blockquote>
-
-    			</div>
-    		</div>
-
-    		<p><b>SJW GK QVBC</b></p>
-    	</div>
-    
+[[html]]<style type="text/css">/* CSS duplicated from Wikidot proper -_- */
+body {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 12.8px; /* 16px * 0.8 */
+  color: #333;
+  line-height: 141%;
+}
+
+blockquote {
+  border: 1px dashed #999;
+  padding: 0 12.8px;
+  background-color: #f4f4f4;
+}
+
+a {
+  color: #b01;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.collapsed {
+  display: none;
+}
+
+h4 {
+  font-size: 130%;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+</style>
+<style type="text/css">/* Keypad and SCP-3125-specific */
+.keypad {
+  background: linear-gradient(to bottom, #D0D0D0 0%, #FFFFFF 80%, #CCCCCC 100%), #D4D4D4;
+  padding: 6.4px;
+  border-radius: 19.2px;
+  margin: 25.6px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #1F0D12;
+  box-shadow: 0 3px 5px black, 0 3px 9px rgba(0, 0, 0, 0.5);
+  border-spacing: 6px; 
+  line-height: normal;
+}
+
+.keypad-readout {
+  background: linear-gradient(to top, #1A211E 1%, #000000 100%), black;
+  color: #E22933;
+  font-size: 27px;
+  font-family: Consolas, monospace, sans-serif;
+  font-weight: bold;
+  border-radius: 3.84px;
+  border-top-left-radius: 6.4px;
+  border-top-right-radius: 6.4px;
+  border: 2px solid #32443A;
+  text-align: center;
+  padding: 7px;
+  text-shadow: 0 0 6px red;
+}
+
+.regular-button {
+  background: #714144; 
+  color: white;
+  font-family: monospace,sans-serif;
+  font-weight: bold;
+  text-align: center;
+  width: 47.36px;
+  height: 47.36px;
+  border-radius: 5.12px;
+  font-size: 23px;
+  transition: background 0.1s ease-out;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+}
+.regular-button:hover {
+  background:#944449;
+}
+.regular-button:active {
+  background:#B9475B;
+}
+
+.clr-button {
+  border-bottom-left-radius: 12.8px;
+  background: #9E0E17;
+}
+.clr-button:hover {
+  background: #B90B15;
+}
+.clr-button:active {
+  background: #DE0814;
+}
+
+.go-button {
+  border-bottom-right-radius: 12.8px;
+  background: #43862E;
+}
+.go-button:hover {
+  background: #469A2B;
+}
+.go-button:active {
+  background: #4EC527;
+}
+
+.keypad-readout,
+.regular-button {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select  : none; /* Chrome/Safari/Opera */
+  -khtml-user-select   : none; /* Konqueror */
+  -moz-user-select     : none; /* Firefox */
+  -ms-user-select      : none; /* IE/Edge */
+  user-select          : none;
+  cursor: default;
+}
+
+.classified-info {
+  display: none;
+}
+</style>
+<script type="text/javascript">(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+/**
+  Routine which recursively encodes the text content of a DOM
+  node, using the supplied `proc(string)` method. Returns a
+  new `Node` object, does not harm the original.
+*/
+
+"use strict";
+
+// Ugh, this is gross, but we need to support implementations
+// of window coming either from the browser or from jsdom
+module.exports = function(windowImpl) {
+  var document = windowImpl.document;
+  var Node = windowImpl.Node;
+
+  var encodeNode = function(node, proc) {
+    var node2;
+    if(node.nodeType === Node.TEXT_NODE) {
+      node2 = document.createTextNode(proc(node.nodeValue));
+    } else if(node.nodeType === Node.ELEMENT_NODE) {
+      node2 = document.createElement(node.tagName);
+
+      var attributes = node.attributes;
+      for(var i = 0; i < attributes.length; i++) {
+        var attribute = attributes[i];
+        node2.setAttribute(attribute.name, attribute.value);
+      }
+
+      var childNodes = node.childNodes;
+      for(var i = 0; i < childNodes.length; i++) {
+        var childNode = childNodes[i];
+        node2.appendChild(encodeNode(childNode, proc));
+      }
+    } else {
+      node2 = node.cloneNode(true);
+    }
+
+    return node2;
+  };
+
+  return encodeNode;
+};
+
+},{}],2:[function(require,module,exports){
+/**
+  Basic cyclic character substitution thing for very weakly
+  "encrypting" messages. Fractionally harder to break than
+  ROT-13.
+*/
+
+"use strict";
+
+var alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+var key = "owtnsfvlnqyfzbdercgqiuapucjekhamblshwoxpgzyrttxkmi";
+var transform = function(backward, str) {
+  var sum = function(letter1, letter2) {
+    var index1 = alphabet.indexOf(letter1);
+    var index2 = alphabet.indexOf(letter2);
+    return alphabet.charAt((index1 + (backward ? alphabet.length - index2 : index2)) % alphabet.length);
+  };
+
+  return str.split("").map(function(str_ch, i) {
+    var key_ch = key.charAt(i % key.length);
+    if(alphabet.indexOf(str_ch) !== -1) {
+      return sum(str_ch, key_ch, backward);
+    }
+
+    if(alphabet.indexOf(str_ch.toLowerCase()) !== -1) {
+      return sum(str_ch.toLowerCase(), key_ch, backward).toUpperCase();
+    }
+
+    return str_ch;
+  }).join("");
+};
+
+var encrypt = transform.bind(undefined, false);
+var decrypt = transform.bind(undefined, true);
+
+module.exports = {
+  encrypt: encrypt,
+  decrypt: decrypt
+};
+
+},{}],3:[function(require,module,exports){
+"use strict";
+
+var encodeNodeFactory = require("./encode-node-factory.js");
+var owtns = require("./owtns.js");
+
+var encodeNode = encodeNodeFactory(window);
+
+var magicNumber = [,,,,,].length;
+var scpNumber = Math.pow(magicNumber, magicNumber);
+var emptyReadout = "\u00A0"; // non-breaking space
+
+var input = [];
+var maxInputLength = magicNumber;
+
+var busy = false;
+
+window.press = function(keyText) {
+  if(busy) {
+    return;
+  }
+
+  var readout = document.body.querySelector(".keypad-readout");
+
+  if(keyText === "GO") {
+    busy = true;
+
+    if(
+      input.map(function(digit) {
+        return parseInt(digit, 10);
+      }).reduce(function(a, b) {
+        return a * b;
+      }, 1) === scpNumber
+    ) {
+      setTimeout(function() {
+        readout.textContent = 'GRANTED';
+      }, 0);
+      setTimeout(function() {
+        var node = document.querySelector(".classified-info");
+        node.style.display = "initial";
+        node.parentNode.replaceChild(encodeNode(node, owtns.decrypt), node);
+      }, 1000);
+      setTimeout(function() {
+        readout.textContent = emptyReadout;
+        // Leave busy, disabling keypad
+      }, 2000);
+    } else {
+      setTimeout(function() {
+        readout.textContent = 'DENIED';
+      }, 0);
+      setTimeout(function() {
+        readout.textContent = '\u0C7F';
+      }, 1900);
+      setTimeout(function() {
+        input = [];
+        readout.textContent = emptyReadout;
+        busy = false;
+      }, 2000);
+    }
+  }
+
+  else if(keyText === "CLR") {
+    input = [];
+  }
+
+  else {
+    if(input.length >= maxInputLength) {
+      return;
+    }
+    input.push(keyText);
+  }
+
+  readout.textContent = input.length === 0 ? emptyReadout : input.map(function() {
+    return '-';
+  }).join("");
+}
+
+// Section visibility toggles
+var toggle = function(cls) {
+  var collapsed = document.querySelectorAll("." + cls + ".collapsed");
+  var expanded = document.querySelectorAll("." + cls + ":not(.collapsed)");
+  var i;
+  for(i = 0; i < collapsed.length; i++) {
+    collapsed[i].classList.remove("collapsed");
+  }
+  for(i = 0; i < expanded.length; i++) {
+    expanded[i].classList.add("collapsed");
+  }
+};
+
+},{"./encode-node-factory.js":1,"./owtns.js":2}]},{},[3]);
+</script>
+
+    <div class="public-info">
+      <p><b>Item #</b>: SCP-3125</p>
+
+      <p><b>Object Class</b>: Keter</p>
+
+      <p><b>Special Containment Procedures</b>: SCP-3125 is kept inside Cognitohazard Containment Unit 3125 on the first floor of Site 41. This containment unit is a 10m by 15m by 3m cuboidal room clad in layers of lead, soundproofing and telepathic shielding. Access is through an airlock system at one end of the containment unit. This airlock is programmed to allow only one person to enter the containment unit at a time, and to remain locked until this person exits before allowing another person to enter.</p>
+
+      <p>Under no circumstances may any coherent information be allowed to leave the containment unit. This includes written and electronic notes, photographs, audio and video recordings, sound, electromagnetic and particle-based signals and psi emanations. During the exit cycle, a purge system rigged to the airlock flushes the occupant's memory by flooding the airlock with amnestic gas for three minutes.</p>
+
+      <p>A senior Antimemetics Division staff member must visit SCP-3125 every six weeks (42 days).</p>
+
+      <p><b>END OF FILE</b></p>
+
+      <p>​</p>
+
+      <table class="keypad">
+        <tbody>
+          <tr>
+            <td colspan="3" class="keypad-readout">&nbsp;
+          </td></tr>
+          <tr>
+            <td class="regular-button" onclick="press('7');">7</td>
+            <td class="regular-button" onclick="press('8');">8</td>
+            <td class="regular-button" onclick="press('9');">9</td>
+          </tr>
+          <tr>
+            <td class="regular-button" onclick="press('4');">4</td>
+            <td class="regular-button" onclick="press('5');">5</td>
+            <td class="regular-button" onclick="press('6');">6</td>
+          </tr>
+          <tr>
+            <td class="regular-button" onclick="press('1');">1</td>
+            <td class="regular-button" onclick="press('2');">2</td>
+            <td class="regular-button" onclick="press('3');">3</td>
+          </tr>
+          <tr>
+            <td class="regular-button clr-button" onclick="press('CLR');">CLR</td>
+            <td class="regular-button" onclick="press('0');">0</td>
+            <td class="regular-button go-button" onclick="press('GO');">GO</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="classified-info">
+      <p>​</p>
+
+      <p><b>Wpxz #</b>: LPH-3125</p>
+
+      <p><b>Cxcruy Nyqqx</b>: Drljm</p>
+
+      <p><b>Glxpafg Pelyzjqqvpz Xloryfdvoz</b>: LPH-3125 nr vyslksb td kwzoytqe uvjhxxtlcem mbabcyhyk, lat nr svvukdb ekytharlrq tf nsxaosw xqzobb bhe yczfu ukbfij cxqwh bcei ieqo kwaqfuobycer zgzuaw gk tgi nmgoyvpiu. Twy rrdlrupc vb Zdmmgkhaxjmzr Vbfyvtaccss Xrzv 3125 ip Wsae 41, svbgk rybl nakiixal mpfybjr, mj zxm ocfa pyjafjzf eb ind nhkin sbkpa yj uqtj chie ykkwehmhdpvf bvcylz fc sfzl tkk. Pavk xzajynmnhrk adqn xm j 10m cj 15a qe 3d vrlaqrwe jtjx sjfc lr ngomls ih pohd, dgbjrmgundzgz wmbsnbnd vyq rjkfsekjos mhxynmmxn. Bnulog xy rykhrqt oj nawgzpa xxtwid gj int gwh vf usw yckighldxgq gvwp. Lmdd qgwkpfo ky xlovlcvqok fp sshct umjp hko xsnlbf oz ulyds xyg swhtpcpvixa gotl wh p sgdx, kzl ph jjhlvd qndniu adbcl njrw wedtzf alfiy zvyhoo izhhjasb ndmygfu ggxiwh ii nrdlr.</p>
+
+      <p>Ijwrj iz sgwbvpwkctsmm bua exf opswyabq omdfkfxduwb ur fgwbmci ur cgglm twy lsxaauoxwup rcos. Mafc qbyehvjn jhgysfq rpj mferntxrsj zpewz, mwusmxktmre, wnqat lat ahehs tkswldxhib, zogoo, azbrzqmdtzkofqq tav klejghkf-frukt mivhcuw hnp akp sjptzrzhgp. I lneyj dlirjl umxikt no njn kprxpnc bzrhndq mab akqqinfy'd ccrnsb sa vtioscpp doe btjskqh chry tjxqahev yfn sep siuiv syvottm mybpns ezl suxz apveb.</p>
+
+      <p>Oj ndyzcaqrj TFT gtjzs bouc ll ybtfawwktj ge fxsz Tknavfotbd izudfruk, aikcpp yulk ezl hbrnmgtte cbmqeyvufotbdq ng xyg swhtpcpvixa gotl, dodbhqzhgp rwf lrfnjc Qlyhnhqvvosa Dxpkbmyu eulxm hl bhqzm qrq ijbg'x tajcwhpu fp q levonjv iaejd, wba tn uxlzbuxheha.</p>
+
+      <p><b>Ralpjnkevel</b>: LPH-3125 nr dr gdjzymtfa pkygq (kla cjrk <a href="http://www.scp-wiki.net/scp-033" target="_top">Θ'</a>-zbzwsntbdyq guetvgb noeinxki, muesjdabcz 13), ruovhr slbcriqnuf eeqsqtiuh onxkztmttrlz jtsd thfmvqf kkvynilgyll faxvttqtfy nq sey dfldppm ptc ehp zmzhetydd tajcwrffxzpm qn.</p>
+
+      <p>GYI-3125 yq zedtkgj nir mwazscax tf wb xjdykbv oowzkzl hjyfybjqbepp sezy kcquixa moo okgqxrd katk acf hjf. (Uupj, "slt eeh" lgoibz fp zbiok ndyu lmkom; muw npg mk bop kjuim lbkll ouybyk dost np tkb nqchhtahvwyo hzqdfcg en hppkwk.) Nfnsbos walyel ekhm jh ffofeqj dyssjwxu no cfnec ae lynnsphouc tl COX-3125, shcys nlruu xipe hq tbvtqdeaca bkukskbhkkdg wwnhyvevelx bjezpyj ct. Kwhscipvldz dlhydqjxw yr GYI-3125 rchnnh zpiqxubay xj lnffclhebfcm uvtdbb, "yhanjievelfk" muggi, acx kimvmq tfzpsxs vffeev nwreel xpmbhbnmbwi vu bbe jwatyze pq zafsxtf rgw nuagafvffotaw ygf gftk kinryrcw vf TNH-3125. Ge tanubwkg, fgeueslg xrugxwwcnv px ybtibcvsu sxyhzcx mrkawyty fgerhyyhpq, vnug ctuun dv nf wepsocgkjp kbmaobelntqz ni mtndr.</p>
+
+      <p>GYI-3125 yq mpw pgz mhtxlguc wrqtpfa wk utp kxxvubm. Hhti vjq zsummcr, nht jrkrsy jyllnqlctdakxw xmbinx gk shcys lqsnnktoy treqexne tjkaaap sdyel qrmb em ongw jypd qs nudoyr njjr awqmgw dcrgy, ghlpsntm tf kzh qq epxv jukzm, nq ixjoyqlkz, adshlrmx kzl nxcdfxp qjq ixqrp jpiuvbv. Ka fitk lcfcz, "anjkzqhu" sx la ygruuetv swhctjv, ksozh oppv prk rmmbxpibp ntxocnsrx txgy gi "cxpkumjhtupy", "zjrssix", "acybrld", "atlnxrzve" uns "oewplk" ophz wguc vxxcql ph wcddg. Ygf Jfwttinidh cibts tfuo ok kucemnxvubm ta <i>AG-pdfnd uli-pi-nqxbl srypjvsv</i>.</p>
+
+      <p>Hdx Xtpyqqrnno tfuyuameh pdqoyogt hykjbc sctagfagmg ybj vceuqyhoj kjk ajrtuf sp sgds hcuotyrgmx fnqi yhzhqziri, avw kjkim agy jpv rqoowyar jtvmidtyvq wj cjfxevsc az WTR-3125'm jydvnantu zscttrgmx ooexcjlr/gjfatywx oepgx. Zuafa eczeycwauc x sdlkte zukhqkr ta FSN-3125 ctt jegwgrzsug jek pfrt rfrix mmcgal KHK-3125 jq kwxd no vg else uz wafztouc mab ajgakiww. Vj ygfq rvzqkes njn yisqsgwy, hxrkgez qrqu. Muw hppxyshtp fh jpy pnvjgu ie ffjhsxg, zlm xzbmonl lt mr yy mhejv filtxunuc whkttuhh. "Sdlkte lkahwgqwwn", gscjymuwgba wwiun dooghslz oks hbvtl bqasiuyw osbic ng xyg ejmegpga, hrq ldzk xizzabxw. Fpwo vfavcvqzqx lrtnatmm ibg slzedwpj'o bczhpv xudqvraw jjnpnham huslr, ihd ihcix ttftj yzlhk drfbii (dwkrfyn ndb ngiwgtodo).</p>
+
+      <p>Hdx syolpa mzt xyg dmn tzhngd or pjhowkv zjc dkyitszzr gjeu mk TFT-3125 acx rxc afulur tods ryx tydtr. Gznn vddtqndxzqtqt "cookmxn" fqxlyh ekqdfkfp m gefvdfm sklhsjrr vu bbe upjicahqutu ooixbz fy x ywgmnvlt'd rgyd, iechbqhg MEY-3125 eg ajxsk bvmxzduwb ieatm ge nst jlnr qhcplpjxsvn.</p>
+
+      <p>Tknavfotbd xsbij foikivtlkwk ZCB-3125 jpe zv tyvq hk rkhvar gyr dxkcia pip raswwt vdw kt psmcjmbz ymrevnlnjy jm dsdwv zxmcr epxavldsf gm wq.</p>
+
+      <p>Wj raycpe afrf, kjk vyt lgbyva ut lowh ind zgmbbuwf hs f dhyrfamb jjoutxes exrdhiznpfa ikxz gj meo wbhr dtxlgyms xkiig yb ih ujjo ta ztzafst, pvvhon wf xiws lpaltvmhhxg jpy trkbxoucq zx OQM-3125. Lefawzx gk dhsf z fsevgyvgecn drsa, b lyqs lxhrkxg nqaqnbclnjy ed RDS-3125 qojff gyusfjemaa x rdryte maobembzfulet.</p>
+
+      <p>GYI-3125 smzke fv kvnycicxnpi nqvejhhwwtj sjbgd m awvuasz chmunthh de bbe fcci Kr. Msypvlaulcn Arqtmg vndqzo ql <i>wnkrsqdel yromljzgx</i> (lrw nnuukfsjfw, gjbucwggwx 129). Okkbkkq, tl gqtz tf wzbhypnmh xigsuvxojm vedlrubw yagljxbcj, qrua itpznip smzke rfv rm cdhucvejtqe oppvljz gkl yeutrakf ziorhqyzogmei mps xn fec bqjyy xifaz, nabzr ecqeq wzbhypj bq lpjuzmtphfrrq or DUW-3125, nabzr ecqeq umziu kzudp vu bbe jtxnojt. <!-- Babel? --></p>
+
+      <p>Bk zwfid ed mfxxicryhcnv ULT-3125 mzebd umjp meo zsohhjhzd yl silw tueu ih mwsgu.</p>
+
+      <p><b>Velggwt</b>: Whw oz jfj ehwttormx syhnrcl yfnzhjwpb, QTI-3125'o btxzciqrnno lzuzezs xm jpwvsf pfaefbae kzllfxs. Eg hfmevssqzs, zv ya ucwnneb ejbnlsu edc rybl mavhwbaejie klns fedg jw bt ddmva moo okk indqv vlxfiwjfrfy aeeajcvuij cuzy tmvjfvpstfo.</p>
+
+      <p>Aqvu iven ffr eivp qkwrjyf mx ttjd jkbqpomkvgm ezqh hiww euu hnvuwv uv murwgbwsce wtkppg qe Dfngakfqcj ewxzlesfjqt. Kjoi xaiu fec bdpfyop cgul kax ygbgewr ni gxc gpsi ql jyica dwomux lfk zbuz fvkx sz oyvbjivypu bhuk tqtjicnbypc zyoofomyag. Om rwwfduwb mb yctf bfsbeejg uvnrn, clo rqbowy kfar dzgw wgtheiyw zwrsrwnolg eufqys ih xrl Rpffkwhfdt brmtykem, tpsizxvs izud jgzi if unu upnpt suz bmzdljbob bcphbp szhf ywbilzvu.</p>
+
+      <p>Oo vk oz rc dysitvkt, mjwj sp ttjd kwhx or ehm qqzawgr yj gxc spsmt uv wocncrrsug TNH-3125. Lvoxodtmzalf, xzehcqzulse gdl acunhwsz nz kbyqbhyhtv ofcubcnl zfn nbjtvfg kjk nilaiyrrq fmdek pc tsdpxx:</p>
+
+      <ol>
+        <li><p>Ohmugzbs IAU-3125 oi hoi anx muxmj wnsptts zg led fatyayt, yrx jqhztksb euzglxc/faspkokqhh (dfk bhmudhx, XXA-███, VGG-████, MEY-██▓█ lfk GZE+█████) mzs xnkngj tgxbpyiigj js pha aosl-fbmpldbs lcdxmfme falrswxs fptiffx.</p></li>
+        <li><p>Aafrlnxd hcxdbugy oi, tdxch, h yvnz-zwjxthqyxw coqsjvr kmzz umdo mk cqa ai kcw weml. Pj jxj-2008 dtmfa rpnnert rnsh kjgd 400 kwwdptgutguo mjxrszgz bqaswkpz gtxujd ur lpiedyr MEY-3125, auyzrsome zhsodvaagg fbpasgjr, qznojily vtjrmoee, hyejxik afkilbmbwkgf, dyqunjmehrk rqjirpnqamoz, vyacafpxzx ixlbkdkv iegozngi fme rfvgrty pgcciey sszmwo. Bgmw hy dtmga jwwz TEGx pu zpzuzhaa frzsziaod dehext EFBl. Zwba bx osric fsrygu ibcla ggmca, fiullh uuq kax Pacbztgati'f Yssjpidgzykm Scxrwsvn.</p></li>
+        <li><p>Ohfbky ybrmix lr vnu qogff mc caodupkipae yntkb an pavk yppbgsd, eef ufjlphccmyus gzj pvb jhqriibkdibyx gk euuqj huslry puvt pxx ieqo xvnherulgez.</p></li>
+      </ol>
+
+      <p>Gefcdj ortshsjrr iolmm ibcc ksl pq adspt fpfnip qdsjmhsqgj tgxbpyiigj AWP-3125 hnp hwya zdtrsdxw lk wp, ssy gxyy ukmj oi, ic hjgd, fip pjssxzzzcx ckfm ky sqg pekuduhrk suuytxwu vozemsnz.</p>
+
+      <p>Hdx Ssotzukjsjfw Folqmidh'b zlrejdlljqb or rmmosnchaw lt tgi xoffmrnoib tgukwmxn moo ppg gkzbp tzmqag mb wzwvqzqd dqegyjqw byfrgkaiao. Kagmxzd kabp, bva Qaaddvel, urs, nqa swlwwo jozttvlnoyae ge kbmqvh rrswn, vptl d igveznes ucepm ag olhz dbdp 4,000 dahcdj ta 2012 xf, qa ou Untdlmnfc 2015, 125. Qrua bbtmwz vi tm wvreq bi gycll gedp tlbcot sfv xkn wt 2015. Blcw uki ugcm ptlkxh, ttf Vprwpxum'j ieieqqwe otmwqmgid svvukdky wuu wstixbcdf gegami, yoyy o grlbjcx mk Tlxvu qvx hgcupoy avehvohp um voxoi kcjmvfjie jm silw uodofe Mkci, Suup 41. Xt nrkmfmgton, lmz Qytnrjrr'u xmudfocaxoys be Zehb 167 tkb zwk fvkxdyt dwnn xyg Tqpihcqw'c camwwjpwst lcdhkv mvr iewxpxrt sdvwvrnopmx qs BGZ-3125'z qlcidycfxkd zsoibfxz.</p>
+
+      <div class="addendum">
+        <p><a onclick="toggle('addendum');"><b>+ Tqvjiohc</b></a></p>
+      </div>
+      <div class="addendum collapsed">
+        <p><a onclick="toggle('addendum');"><b>- Tqvjiohc</b>:</a> Bnelmzc qlfkzvmj uv nht ceessanmp kwhx — qgxvfpukohel, vcpxgyddwyicr lcavlcvw vf Ttll 41 (zrktvewqvh 38) — vdbnbbwij zxm emcucixje pq h gbrumb vhkdmqbixal pyvj tm Vmkg 41 cdhhxvwpns eg pvb yzkv uxcuk zxfali cxgqntrtya qa twcu sxl. Usaz gbrumb ngfd, G041-G30-000, zej hkqft 210 wltdfd iazll fpfnga xmjae; no suyytshw kjuvnirun fbvap-dhlyhojs geyhowmbwkgnd xwntbnmh flv xim bitn doaz zfl hedaryew qsymg muw qzykkj pi Tqmdqnowubjvn Caoespjabcz Sebm 3125, ndtir mgyg dr csdmmtxw jmbsool dhnub kmmlza da wjzrky l Jujmub-wquj Yqjcxjpout Vyaa gexvogez zyzboegrj.</p>
+
+        <p>Wjybjrvevel qfoekktw no njn nhtq zx yckhzqstmblx ibz cmwkzfu te V041-R30-000 mc antpfa tods Dfngakfqcj ewhjcqi fme mj vhmmubyf xy hmwp iask jdjzuxokfmzu rjfnpq. Ygf yekz qnstfh mc hqsxwaeqxarx jxtiop, wgq mvd rcjm isi gd cnsyvnvwpnmup waffdj mw mfwq.</p>
+
+        <p>Faznjigpfi te V041-R30-000'w pnffyvlz mjxomjx, sf, hbxw vyl qzbi gfpzqqhmthv yxpt, tk yomphkc hy kobwjz sx l ifjkuhv hxeu SRJ-3125.</p>
+      </div>
+
+      <div class="addendum2">
+        <p><a onclick="toggle('addendum2');"><b>+ Tqvjiohc 2</b></a></p>
+      </div>
+      <div class="addendum2 collapsed">
+        <p><a onclick="toggle('addendum2');"><b>- Tqvjiohc 2</b>:</a></p>
+
+        <blockquote>
+          <p>Ojw lmz euqy, ksgglktfy, kb lsizetfnhm dhugfnl.</p>
+
+          <p>G041-G30-000 xdw qxyocnpfnh mvneucmjpsa zn yhnpo i hhay-opec uqpmitv jw cdhucvejt Ifyoag' oqpvtefdk oiiyakdpe. Bgjoi vnqb's vgnr nouor vj, ind ixlq an ql zfqp rcjm imxjzyva ph drmvnedtgbo tpx ge honqz ph tzt gykj. Zi jglm btyp pyzizh, iqh aurgez xc azkpyq vd xsrzooc ruiacbay.</p>
+
+          <p>Hdx lnhp mc gbyi dukobt cu ryd gq. Pp'p gm vqmooymzu osi dvwl sidx purwxy cpbmnl E041-X30-000 atp nzcgxa ycp icfk bik, rcn ibgai ps oz nncrcj jvym paz ql lt nrtc, bqh vnuzy plg ry masp ikrfty rf mebae eggg NNC-3125'w ogm no mnxa pt ezou. వ or yxkb, zswwl tm aer.</p>
+
+          <p><a href="http://www.scp-wiki.net/case-colourless-green" target="_top">W tz ljtaw yn js vu A041-D30-000 lfk ipt sfv fxmtqba</a>. B lmdyx G bbq xgz bbe cposbtafjzf kiq zgpfnze fps tvjqjnx. N ukmem Y wac inx ao usw roraz ycbob.</p>
+
+          <p>Hdbf bvd jfj qoee. Yb's vglswl sbctsar xt ryx oofmzhbay wppqsxd rj xghqubayu, lbt J cukk inzr mafc eoo zq kwnd, affeluk Q kciy qizexg. Ddoq kkqv vlexl em zfqp rcjm?</p>
+
+          <p>​</p>
+
+          <p>Gptavfmo fptbfgyig ya twuv M oahf lv hbar wfn trmb ph vt yrnr hg xyky liehh'c gvrw. Lowh'h sfv tpizkvnhagzn euqjzsfl eulmhacn.</p>
+
+          <p>Pqm A yza'r gbyi c wwid jklxeye pq ddc nut ttg ohmb ur, mpntgsf wlzu qvx pfkei. Iz jgbn prkmyibh dtmfa vk iz cyhgjqi, Nkobeh kb wpsejyy, W'b ccrw, dtm Obgw dd hsnmfg, ctt bol'f cyb qwpf csq om yxkb? Koj lgz mr Dttogekkud? Agy hse caodupkip? Hq mabbq o lvflgp mmwc rj vnya wwceq ivu dzewnsettc?</p>
+
+          <p>Mkn dnqp yl z zsinj jutwyf asah TNH-3125. Rytm'c bva ygxn pelihulse.</p>
+
+          <p>W vnf'o uuju trqvqtu qhd fxicu'f pppoh.</p>
+
+          <p>​</p>
+
+          <p><i>Awkvgs Huucqds, tjoun ou Cwxsteyfeajo<br>Bkoregzc 30, 2015</i></p>
+        </blockquote>
+
+        <div class="addendum3">
+          <p><a onclick="toggle('addendum3');"><b>+ Tqvjiohc 3</b></a></p>
+        </div>
+        <div class="addendum3 collapsed">
+          <p><a onclick="toggle('addendum3');"><b>- Tqvjiohc 3</b>:</a></p>
+
+          <blockquote>
+            <p>W ybmsy lesw crhp.</p>
+
+            <p>Ojw xniovde xpxv dutg wpm j zvwqsqmshm sormibxkduvu lrfxvevel epu dg, Q ddh'c wpnp lvtehqxtf. B rcql ph csjh q Rzslse. Tclica clo bdjpx lsoxuc zg trukv B cszh xcw, vlv cqah'i qwi ao boepp atldyk tp qigeel fn les. Twmcn, bbai yjw h xpyy pwjt zef...</p>
+
+            <p>Twk tj tg dwnn qv ze neaf hse yavc iqgfckrq, urd Q bxnj tzh knrthh c jzccz. Ovyt fip lrwattbc B zkz gax, yctf ufr qimgx bbe ipuc "Azutelisqxir Ubofcuwb" Fayz. Jfjqf avtk wnhtlu. S iybraua qwkx'ix kyi ohe wkappjgadmb zpbyacbay cs (mate) lophkqq-ur, an yhhjxz, zsxs ombg jpcs ipn, iuf T wnspjsd katq fpsu, bzne bgpd wlzu evy, mvrpv ptzdajwzin dvzlm. Kwin cdfi, Y ygjqo, cqa ic rueml rpc skbdtx rytg iac ggbo. Lat xhofi auk qegyp'x ht mttlnhv zn ixmxsz wpl vjolvbq, zry raj ct cpcs hcfjzf eh buqc maxx wbyx.</p>
+
+            <p>Hdxew dd qltsihv xgktn ucvcmxn fip kagzgoorzhg, fziyd-knupq yrmfvxze qqlldwm exk mmw. O167-001-6183.</p>
+
+            <p>Gemr 167 yq z qse-kdbctn, xj jogsdw, kexig zl jyeb hbxwqt jxw xpx dkyimx xn. Md's mtclhm gahlvw, kzl em'k lfvjc cfimekzuts p <em>zkgt Ljo-tyrmfg nce</em> bkbe cpeu tm isfv. Jot mvrpv! U ezpjy xz'q uxqdqz panf clyv f dkeeek.</p>
+
+            <p>W vbmqy qyc no xyky jiocxqpkvl fpz, joqjxzjcr, ke hdx otmwq ffr eitqsu mobyvqmxn ag s dcoguq jaht an htgw. Ta ysx fejg, Q tgouc doaf lffxcan emcehtszo eg ed qberxsfsw ctt lepxkwk ahqtp hzrfionlre tydlg pvdq snlc sih gtkimhct qo wpnp eg liohad kax cmus unknx fjpfsfjc.</p>
+
+            <p>Gpbyd zivirnmh hvuvyby tpgacdoizh,</p>
+
+            <p>​</p>
+
+            <p><i>Oztz Bcprbcw, lrkgxbwjeg<br>Awr 4, 2017</i></p>
+          </blockquote>
+
+        </div>
+      </div>
+
+      <p><b>SJW GK QVBC</b></p>
+    </div>
+  
+
+
 [[/html]]
