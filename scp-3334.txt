@@ -1,0 +1,193 @@
+title:SCP-3334
+[[>]]
+[[module Rate]]
+[[/>]]
+
+**Item #:** SCP-3334
+
+**Object Class:** Thaumiel
+
+**Special Containment Procedures:** The primary instance of SCP-3334-1 is to be stored on several hundred server disks in Site-15’s datacenter, with secondary remote replicas at Site-19 and Site-64. 
+
+The only approved uses for SCP-3334-1 in encrypted form are the training and validation of machine learning models developed in Project MEDUSA. Any other access request regarding SCP-3334-1 requires approval from the HMCL Supervisor for SCP-3334 or, in containment breach and MEDUSA failure events, the team lead for MTF Mu-4 (“Debuggers”). Direct access to unencrypted SCP-3334-1 by personnel is prohibited
+
+Servers containing SCP-3334-1 are cordoned off, connected only to the local Site datacenter network. Every two weeks, the primary copy at Site-15 will be synchronized with its secondary replicas at Site-19 and Site-64 via physical delivery of storage media. 
+
+SCP-3334-2 copies are to be stored on server disks at Sites 15, 19, 49, 64, 77, 81. They are to be similarly physically synchronized once a week. Although Project MEDUSA is used throughout the Foundation in many of its tools, routines, and operations, SCP-3334-2 itself is only accessed locally due to Project MEDUSA’s Software as a Service (SaaS) centralized distribution model[[footnote]]In this context, SaaS refers to having users remotely interact with a centrally hosted program rather than distributing individual copies to each.[[/footnote]]. This means internal Foundation clients send requests to MEDUSA, which it then processes locally using SCP-3334-2 at one of the above Sites’ datacenters, preserving containment.
+
+Direct access to SCP-3334-2 is prohibited except for authorized personnel in the SCP-3334 containment team, Project MEDUSA staff, and approved project collaborators at the discretion of the SCP-3334 HMCL Supervisor. Temporary copies of SCP-3334-2 are allowed on local desktop computers for development in Project MEDUSA so long as standard protocols for working with visual memetic and cognitohazards (VMC hazards) are observed. Visualization of any element of SCP-3334-2 is prohibited. 
+
+//Foundation Scalable File System (FSFS) and scipDB:// 
+
+[[collapsible show="+ Brief Overview of Technical Aspects of SCP-3334 Containment" hide="- Welcome, Foundation CS/IT Specialist"]]
+Instances of SCP-3334-1 and SCP-3334-2 are saved on software tables in the scipDB system in order to ensure the security, integrity, and availability of SCP-3334-1. The scipDB system is a distributed noSQL multidimensional data map software intended to run across thousands of servers, developed in-house to store large amounts of sensitive or hazardous internal Foundation data[[footnote]]Miyamizu, M., Vogel, S., Hsiao, C., et al. (2007). scipDB: A highly-available secure NoSQL database for sensitive Foundation data and MCI-hazards. //Terminal: An SCP Foundation Journal//, 10(34), 42-56. Retrieved from //SCP Foundation Research Database//. (Accession No. 2335245)[[/footnote]]. It is a highly available, failure-tolerant, and scalable structured data storage system, achieving this with data replication across multiple servers to guard against data loss and increase throughput, gossip protocols to detect failures, and anti-entropy Merkle trees to recover from failures[[footnote]]Containment specialists should refer to //scipDB Documentation// for further details[[/footnote]]. The special containment procedures for SCP-3334-1 prioritize security over availability and integrity, with some tolerance of SCP-3334-1 data loss or corruption to reduce possibility of unauthorized access - thus scipDB tables storing SCP-3334-1 are configured with a lower-than-default replication factor of 2 and some scipDB consistency features disabled. SCP-3334-2, the accuracy and availability of which is critical to Foundation operations, is stored with the standard replication factor and all consistency features enabled. 
+
+The scipDB tables are built on top of files in the Foundation Scalable File System (FSFS), a distributed and decentralized file system optimized for data reads and appending writes[[footnote]]Hellian, F., Miyamizu, M., Vogel, S., et al. (2005). The Foundation Scalable File System: Organizing the Foundation’s cloud. //Terminal: an SCP Foundation Journal//, 8(24), 34-50. Retrieved from //SCP Foundation Research Database//. (Accession No. 3654253)[[/footnote]] that suit Project MEDUSA’s typical workloads. The latter offers file-level 256-bit AES encryption, an option activated for all stored instances of SCP-3334 for prevention of unauthorized access[[footnote]]Containment specialists should refer to //FSFS Documentation// for further details[[/footnote]].
+[[/collapsible]]
+
+//Protocol 3334-10-Kempelen://
+
+[[collapsible show="+ Brief Overview of Protocol 3334-10-Kempelen" hide="- Welcome, Foundation Containment Specialist"]]
+Fifty D-class personnel are assigned to SCP-3334, with regular replacements as needed, to conduct Protocol 10-Kempelen. Functional eyesight, consciousness, and reasonable exposure to and knowledge of human culture and society are the only personnel requirements. The SCP-3334 containment team requests personnel that minimally satisfy these requirements that might otherwise not be useful in other Foundation projects, particularly subjects of previous accidents and testing, in the interests of efficiency. 
+
+Protocol 10-Kempelen exposes human subjects under fMRI scanners to prospective visual memetic and cognitohazards to definitively verify their anomalous nature. Prospective VMC hazards can be flagged by Project MEDUSA or submitted by Foundation field teams. Verified anomalous VMC hazards are designated under SCP-3334-1 and used in Project MEDUSA. D-class personnel are administered amnestics after each 10-Kempelen session. 
+
+Attempts to dissolve Protocol 10-Kempelen and the use of D-class for these purposes by automating addition of training and validation data to SCP-3334-1 led to MEDUSA failure events, notably Incident 3334-1. Conversely, the scale of the Foundation's operations renders using D-class as a primary means of detecting VMC hazards impractical. Thus the protocol was preserved in its current ancillary purpose of manually verifying potential training and validation data for use in Project MEDUSA. 
+[[/collapsible]]
+
+//Project MEDUSA:// 
+[[collapsible show="+ Brief Overview of Project MEDUSA" hide="- Welcome, Foundation Containment Specialist"]]
+Project MEDUSA is an internal Foundation effort by the Department of Analytics to build an automated system to detect visual memetic and cognitohazards (VMC hazards) using non-anomalous, understood machine learning techniques. 
+
+Project MEDUSA is currently used across many Foundation tools, routines, and operations that require the detection of VMC hazards. These include the command-line memescan utility, the Anansi, Shelob, and Aragog Foundation web-crawlers, the Giulianna image analysis software, SCRAMBLE goggles, [REDACTED], and in the containment of numerous SCP anomalies. 
+
+Project MEDUSA uses advanced machine learning algorithms (currently, an ensemble of recurrent deep-Q neural networks). At a high level, the algorithm learns by taking in labelled training examples, in this case, of VMC hazards from SCP-3334-1 and normal pictures, and modifying itself to be able to distinguish between them. After training, it can take in new examples and then predict whether they are VMC hazards or not. In this sense, it is a “weak AI”, able to improve itself at a specific task without any notion of a conscious. Project MEDUSA does not employ or develop sentient AIs, known as “strong AI” - such research falls outside the purview of the project. 
+[[/collapsible]]
+[[collapsible show="+ Brief Overview of Technical Aspects of Project MEDUSA" hide="- Welcome, Foundation Math/CS Specialist"]]
+[[include component:image-block name=SCP-3334-nn.png|caption=Generated diagram of a single neural network in the MEDUSA ensemble.
+Legend: Red (Convolution), Orange (Pooling), Blue (ReLu/Softmax), Purple (Fully Connected), Green (LSTM)|width=650px]]
+Initial efforts to identify cognitohazards with artificial intelligence techniques focused largely on support vector machines[[footnote]]Goldberg, S., Recht, P. (1961). Feature engineering for soft-margin hyperplanes to safely identify cognitohazards. //Terminal: an SCP Foundation Journal//, 2(12), 10-23. Retrieved from //SCP Foundation Research Database//. (Accession No. 7453535)[[/footnote]], until convolutional neural networks[[footnote]]Neural networks are inspired by firing neurons in the brain, and consist of many units that activate depending on inputs and numerical parameters learned and adjusted from training examples. Convolutional nets are a specific type of neural net that slide learned filters over images and are well-suited for visual applications.[[/footnote]] vastly improved classification accuracy[[footnote]]Reddy, S. (1983). ReddyNet-7: Use of neocognitrons in detecting visual cognitohazards. //Terminal: an SCP Foundation Journal//, 4(34), 1-22. Retrieved from //SCP Foundation Research Database//. (Accession No. 8547364)[[/footnote]]. Addition of long-short term memory (LSTM) layers to make the networks recurrent allowed for analysis of video and non-static visual cognitohazards[[footnote]]Reddy, S., Balasubramanian, R., (2015). Containment of SCP-████ using backpropagation through time. //Terminal: an SCP Foundation Journal//, 18(56), 46-61. Retrieved from //SCP Foundation Research Database//. (Accession No. 6356765)[[/footnote]]. 
+
+Detection of memetic hazards proved more difficult, since it required the algorithms to not just identify, but also understand the content of images and their conceptual relationships. Combined with past research, however, deep reinforcement learning[[footnote]]Reinforcement learning essentially rewards and penalizes an algorithm for taking good or bad actions.[[/footnote]] eventually achieved this[[footnote]]Reddy, S., Hafizyar, A., Wang, M., et al. (2011). Detection of visual memetic hazards using semantic segmentation in a deep-Q network. //Terminal: an SCP Foundation Journal//, 15(73), 20-47. Retrieved from //SCP Foundation Research Database//. (Accession No. 4632532)[[/footnote]]. The theoretical flexibility of deep reinforcement learning enabled the combination of detecting both visual memetic and cognitohazards under a single deep neural network, rather than in two separate narrow programs - this development led to the formation of Project CASSANDRA, which eventually became Project MEDUSA (see Addendum 3334-1). 
+
+MEDUSA currently uses an ensemble of recurrent deep-Q neural networks, since ensembles reduce variance and expected generalization error and thus improve real world performance. Each network in the ensemble branches into two sub-networks as indicated in the diagram: a policy network and a value network. The policy network has 40 layers while the value network has 30, with dropout used as regularization. The networks are trained using an [[$\epsilon$]]-greedy training strategy with exploration and exploitation phases as [[$\epsilon$]] anneals, while weights are updated using stochastic gradient descent and backpropagation. Further hyperparameter specifications are available on a need-to-know basis. 
+
+As a result of Incident 3334-1, inputs are preprocessed using principal components analysis and a cascade classifier to determine and remove adversarial examples and prevent malicious manipulation or deterioration of the MEDUSA model. 
+[[/collapsible]]
+[[collapsible show="+ Brief Overview of Project MEDUSA Procedures" hide="- Welcome, Foundation Containment Specialist"]]
+Any proposed minor modifications to arbitrary MEDUSA model hyperparameters, including but not limited to: learning rate, loss function, activation functions, learning rate decay/momentum parameter, weight initialization, dropout regularization, or neural net structure, should be proposed to the Project MEDUSA Tuning Team for review and approval. The Tuning Team currently uses auto-tuning algorithms to determine most of these hyperparameters. 
+
+Any major suggested changes to the underlying MEDUSA model algorithm should be submitted in a formal written proposal to the Project MEDUSA director. Such amendments will be reviewed by all major Project MEDUSA team leads and will require formal mathematical verification with provable confidence bounds on generalization error, full regression testing, and a 10-folds cross-validation accuracy check using data from SCP-3334-1 before entering the official implementation.
+
+Every two weeks, the current MEDUSA machine learning model is retrained on new training data from SCP-3334-1 in order to keep it up to date with the latest VMC hazards. Further, the Project MEDUSA team will perform full regression testing on the model, including running it on a validation dataset taken from SCP-3334-1 with a required 99.9% correct classification accuracy required to pass. If the new model passes, then SCP-3334-2 will be updated and backed up appropriately, while the last known functional commit will be tagged as such on the Foundation’s internal codebase version control system. Any additional revalidation of the model beyond this biweekly basis is subject to Project MEDUSA director approval to prevent overfitting of the model and deteriorated real-world performance. 
+
+The performance of the active MEDUSA model is monitored for real-world accuracy. Preferable operational accuracy would be maintained at 99.9%. If accuracy dips below 90%, a MEDUSA failure event is declared. In this case, the model’s parameters are reverted to the last known functional version of SCP-3334-2 and the codebase is reverted to the last tagged commit. If the issue is not immediately resolved, the Project MEDUSA team should request MTF Mu-4 (“Debuggers”). In the event of a prolonged outage, the SCP-3334 containment team can request a ramp-up of Protocol 10-Kempelen of up to 1000 D-class personnel as a temporary replacement for Project MEDUSA. However, given the volume and time-sensitivity of VMC hazard detection needs across Foundation operations, as well as the near ubiquity and speed of the internet in public life, Project MEDUSA is a critical infrastructure component and the potential consequences of its indefinite interruption are unknown. The loss or inadequacy of Foundation automatic VMC hazard detection capabilities could potentially lead to an LV-0 Lifted Veil scenario, or even one of various K-class end-of-the-world scenarios in the event of a major breach or outbreak of anomalous VMC hazards. 
+[[/collapsible]]
+
+**Description:** SCP-3334 is a designation for various anomalous data necessary to implement Project MEDUSA. 
+[[module CountPages]]
+SCP-3334-1 is a collection of 156428%%total%% gathered anomalous visual memetic and cognitohazards (VMC hazards), collected through Protocol 10-Kempelen. This dataset is also artificially enlarged using data augmentation techniques, including transformations and translations of the original VMC hazards. Approximately 90% of SCP-3334-1 is designated as training data, used as examples to train machine learning models in Project MEDUSA. The remaining 10% is reserved as validation data, used to anticipate real-world accuracy during testing. Individual images are identified as SCP-3334-1-# as appropriate. 
+[[/module]]
+SCP-3334-2 is the numerical internal weights used by the neural network models in Project MEDUSA. These weights determine how the neural nets classify given input images as hazardous or not, and are modified by the neural net during training and learning. Recent results in machine learning research indicate the learning of hierarchical representations within intermediate layers of convolutional neural networks[[footnote]]Simonyan, K., Vedaldi, A., Zisserman, A. (2013). Deep inside convolutional networks: Visualizing image classification models and saliency maps. //arXiv preprint arXiv:1312.6034//[[/footnote]], justifying the designation and containment of SCP-3334-2 as potential visual memetic/cognitohazards.
+
+[[collapsible show="+ Addendum 3334-1" hide="- Hide tab"]]
+**Addendum 3334-1:** As of ██/██/20██, in light of recent literature regarding new techniques in deep reinforcement learning and their ability to unify multiple kinds of visual hazard classification[[footnote]]Vuković, V., Reddy, S. (2011). Detecting multiple types of visual hazards using deep reinforcement learning and an [[$\epsilon$]]-greedy approach. //Terminal: an SCP Foundation Journal//, 15(74), 35-67. Retrieved from //SCP Foundation Research Database//. (Accession No. 3755432)[[/footnote]], the Director of the Department of Analytics has ordered the unification of Projects CIRCE and ODIN into a single Project CASSANDRA that will develop an automatic detection system for both visual memetic and cognitohazards. Their substantial collections of VMC hazards, formerly scattered throughout the SCP main database or anomalous object lists, were combined into a single set and granted the shared designation SCP-3334. 
+[[/collapsible]]
+[[collapsible show="+ Addendum 3334-2" hide="- Hide tab"]]
+**Addendum 3334-2:** On ██/██/20██, a major containment breach involving SCP-████ at Site-15 resulted in ██ researcher deaths or incapacitations, of whom ██ were assigned or otherwise attached to Project CASSANDRA or SCP-3334 containment. Project CASSANDRA Testing Team lead Dr. Tourres was unaccounted for. The drastic loss in qualified personnel resulted in an unprecedented Foundation recruiting drive from external companies and universities to recover the lost human capital and technical talent. 
+
+The Project CASSANDRA director rejected an initial proposal to migrate the entire CASSANDRA codebase to the open-source Theano machine learning platform to facilitate onboarding the large number of new hires. Nonetheless, after discussions with Foundation HR, a compromise was reached where a new Foundation-proprietary machine library similar to an existing open-source platform was created for the project. Other unrelated Foundation projects took a different approach, and to prevent confusion with the open-source Apache Cassandra noSQL database being integrated into some of them at the time, Project CASSANDRA was renamed to Project MEDUSA. 
+[[/collapsible]]
+[[collapsible show="+ Addendum 3334-3" hide="- Hide tab"]]
+**Addendum 3334-3:** With Project MEDUSA having repeatedly achieved 99.99% validation accuracy, on the recommendation of the team leads, project director Dr. Vuković decided to retire Protocol 10-Kempelen. Instead, the MEDUSA network would add the VMC hazards it flags directly into its own training and validation data pool, SCP-3334-1 - the project stakeholders rationalized that the network was accurate and robust enough to tolerate the tiny amount of label noise that would subsequently be introduced. 
+[[/collapsible]]
+[[collapsible show="+ Incident 3334-1" hide="- Hide tab"]]
+**Incident 3334-1:** During the week of ██/██/20██, the monitored real-world accuracy of the MEDUSA model decreased at an alarming pace for several days, with a roughly corresponding increase in the number of containment breaches and new VMC hazard outbreaks. On ██/██/20██, the real-world accuracy dipped to 87% and a MEDUSA failure event was declared. Both SCP-3334-2 and the codebase were reverted to the last checkpoint. Nonetheless, even after this reversion, real world performance still lagged. 
+
+The Project MEDUSA Testing Team, initially suspecting the automation of SCP-3334-1 element collection, reinstated Protocol 10-Kempelen to manually review every new VMC hazard added to SCP-3334-1 since the automation policy was put in place. The review uncovered approximately 15000 images of Yuno Gasai, the main character of the Japanese animation //Mirai Nikki//, in various forms incorporated into SCP-3334-1. Nearly all possessed anomalously memetic, albeit for the most part extremely minor, effects. The Implementation Team attempted to modify the neural net to recognize this common feature for special inspection, but found the network unable to identify these instances. Two days into the MEDUSA failure event, in the face of a mounting and non-trivial number of VMC containment breaches and outbreaks, the Director of the Department of Analytics demanded a status report. At this point Mobile Task Force Mu-4 (“Debuggers”) was brought in. 
+
+Ensembling the neural networks improved the classification accuracy to around 88% as a temporary measure. Eventually, MTF Mu-4 proposed using principal components analysis and a prior cascade classifier placed before the main MEDUSA classifier to detect and remove malicious adversarial examples. This development removed the adversarial examples poisoning the MEDUSA network, restoring normal function. Protocol 10-Kempelen to vet potential training and validation examples of VMCs was restored. 
+
+The MEDUSA failure event resulted in ██ containment breaches and the outbreaks, of various sizes, of ████ new VMC hazards. The incident required approximately ██ thousand amnesticizations and caused ████ casualties, including ███ Foundation personnel. In total, the failure event cost the Foundation $███ million dollars in damages, containment costs, and lost productivity. In its annual review, the O5 Council asked the Department of Analytics to submit a plan detailing steps taken by Project MEDUSA to avoid a similar disruption. 
+
+Despite strong suspicions, to this day the Foundation has been unable to definitively assign blame for Incident 3334-1 on any particular GoI. 
+[[/collapsible]]
+[[collapsible show="+ Email Communications Regarding Incident 3334-1" hide="- Hide tab"]]
+> From: Vladimir Vuković [vvuk@analytics.scp]
+> To: Dean Ackermann [dackermann@mtf.mu4.scp]
+> Subject: Fixing MEDUSA
+> 
+> Dr. Ackermann,
+> 
+> Would you mind having Mu-4 take a look at MEDUSA for a bit? It's quite urgent. We can't make heads or tails of the current issue - we're used to dealing with anomalies, of course, but the recent 15k 3334-1 instances with the cartoon girl have been perplexing my Implementation Team - the network will correctly identify them as visual memetic anomalies, but it can't otherwise find the obvious commonality between them. It's a very minor memetic effect, to be sure, but I'm sure it's a symptom of the larger problem. 
+> 
+> Somebody on the Theory Team said you worked on containing a similar anomaly in the past, so maybe we'll have some luck here again. 
+> 
+> Regards, 
+> Dr. Vuković
+> Project MEDUSA Director
+
+> From: Dean Ackermann [dackermann@mtf.mu4.scp]
+> To: Vladimir Vuković [vvuk@analytics.scp]
+> Cc: Mary Wang [mwang@mtf.mu4.scp]
+> Subject: re: Fixing MEDUSA
+> 
+> Hey Dr. Vuković,
+> 
+> No prob on priority, all the other project and containment teams have been submitting tickets about MEDUSA being broken anyway.  
+> 
+> Very interesting. I think your Theory guy was probably talking about [http://www.scp-wiki.net/scp-2223 SCP-2223]. I can see the similarities between those two problems, in fact I'd guess they're both Celeramis's work (we pinned the Mirai IoT malware on them last year in fact, seems they have a thing for anime). However, I mainly do traditional algorithms not all this hot deep learning stuff. I'll cc Mary to take a look, she worked at Google DeepMind so she should know a thing or 2. She also worked on 2223 with me if that's relevant. 
+> 
+> Best,
+>  
+> Dean
+> MTF Mu-4 Debugger
+
+> From: Mary Wang [mwang@mtf.mu4.scp]
+> To: Vladimir Vuković [vvuk@analytics.scp]
+> Cc: Dean Ackermann [dackermann@mtf.mu4.scp], Samhita Reddy [shreddy@mtf.mu4.scp], Achmed Hafizyar [hafiz@mtf.mu4.scp], Kelly Fitzgerald [fitz@analytics.scp]
+> Subject: re: Fixing MEDUSA
+> 
+> To all,
+> 
+> Jeez, what a mess. As a deep learning researcher myself I would have never imagined the Foundation would entrust so many critical operations to such a fickle machine learning algorithm like MEDUSA. 
+> 
+> I partly disagree with Dean, beyond the superficial similarities these are two totally different technical problems. 2223 was totally anomalous through and through, even pixel-by-pixel and normal stuff like SIFT didn't work on it. On the other hand "state of the art" deep learning AI is stupid and easily fooled. Maybe your 15k images are like 2223, idk, but I doubt it, anomalous engineering like that takes real work and across that many images?
+> 
+> There's actually a totally scientific, non-anomalous explanation for your issue, it's called adversarial images (just to be clear, the images you're talking about just happen to be anomalous memes). Let me attach a pic from the Szegedy paper[[footnote]]Szegedy, C., Wojciech, Z., Sutskever, S., et al. (2013). Intriguing properties of neural networks. arXiv preprint arXiv:1312.6199[[/footnote]]. You and a typical convolutional neural net will agree the left is a schoolbus, as it should be. But add some strategic noise, as indicated in the middle, on top and you get the right image. It's still a schoolbus, but most neural nets will now think it's an ostrich. Cheap non-anom trick to screw up dumb-as-rocks deep neural nets. 
+> 
+> Long story short somebody (agree with Dean here, it's probably Celeramis) is deliberately feeding in garbage to throw off MEDUSA's predictions. You'll notice that the anomalous memetic effects of the 15k weird images are extremely weak. These things are basically "barely memes" designed to deform our decision boundary and confuse the network trying to tell VMCs apart from normal pics. Put in less technical terms for you, imagine painting a bunch of apples orange and then teaching a little kid they were oranges. 
+> 
+> Let me think up a more permanent solution. cc'ing Achmed and Samhita for that. In the meantime just copy/paste the net a bunch of times and make an ensemble, sounds too good to be true but that'll reduce the variance and help a bit with the error. We're at what, 85% right now? That might be enough to get us out or close enough this failure event. cc'ing Dr. Fitzgerald from your Implementation Team for that. 
+>  
+> Dr. Wang
+> MTF Mu-4 "Debuggers" Operative, AI Division
+> 
+> Attachment: [[image SCP-3334-adv.png]]
+
+> From: Vladimir Vuković [vvuk@analytics.scp]
+> To: Mary Wang [mwang@mtf.mu4.scp]
+> Cc: Dean Ackermann [dackermann@mtf.mu4.scp], Samhita Reddy [shreddy@mtf.mu4.scp], Achmed Hafizyar [hafiz@mtf.mu4.scp], Kelly Fitzgerald [fitz@analytics.scp]
+> Subject: re: Fixing MEDUSA
+> 
+> Dr. Wang,
+> 
+> Thank you so much Dr. Wang. I think Implementation found that explanation very helpful, I'll tell Dr. Fitzgerald to get on what you suggested. 
+> 
+> I do have to agree that MEDUSA's stability leaves much to be desired, but I'm afraid we don't really have an alternative option right now. There's just so much to review on the internet and so many requests from within the Foundation that we really can't go back to the days when we just threw D-class at these VMCs. 
+> 
+> Regards, 
+> Dr. Vuković
+> Project MEDUSA Director
+[[/collapsible]]
+[[collapsible show="+ Incident 3334-2 (Ongoing)" hide="- Hide tab"]]
+**Incident 3334-2 (Ongoing):** Since ██/██/20██, the real-world accuracy of Project MEDUSA has behaved erratically, often dipping below the optimal 99.9% with an average around 95%. On 04/██/20██ in particular, the accuracy fell below the 90% threshold to a staggeringly low 71% accuracy, triggering a MEDUSA failure event as well as ██ containment breaches and ███ VMC hazard outbreaks, although it recovered the next day and has continued to stay above 90% since. Standard SCP-3334-2 and codebase reversions had no effect, or even worsened it. A slightly higher incidence of containment breaches and VMC hazard outbreaks has been associated with this deteriorated performance. The cause of this performance drop is as-yet unknown, despite active research by the Testing Team and MTF Mu-4. 
+[[/collapsible]]
+[[collapsible show="+ Email Communications Regarding Incident 3334-2" hide="- Hide tab"]]
+> From: Vladimir Vuković [vvuk@analytics.scp]
+> To: Mary Wang [mwang@mtf.mu4.scp]
+> Subject: re: MEDUSA again
+> 
+> Dr. Wang,
+> 
+> Sorry to bother you about this again, has your team made any progress? The Department of Analytics higher-ups want to know what's going on. 
+> 
+> Regards, 
+> Dr. Vuković
+> Project MEDUSA Director
+
+> From: Mary Wang [mwang@mtf.mu4.scp]
+> To: Vladimir Vuković [vvuk@analytics.scp]
+> Subject: re: MEDUSA again
+> 
+> To Dr. Vuković,
+> 
+> Sorry for the delay, it's just Mu-4 is attached to a lot of different SCPs, but we always have at least one guy looking into this rn. We really can't figure it out. It could be the types of VMCs out in the wild have drastically changed, or something is just ever so slightly jacked in some of the millions of weights of MEDUSA, or there's a hyperparameter among dozens that could be fine-tuned just a bit more. You guys are using auto-tuning for those hyperparams right? I think somebody in Analytics is developing something like that but for an entire neural net, whenever it's ready you could start over and try that and see if it gets rid of whatever kink is hidden in your model. I'll let you know if we make any progress on our end too. 
+> 
+> The only thing I'm worried about is one of the first things you learn in machine learning is the bias-variance tradeoff. Essentially you can either make an AI that performs really well in the lab, or not that much worse in the real world, but not both. Generally the more complicated you make a model, the more you reduce bias at the cost of increasing variance - the more detailed the model, the more it loses sight of the bigger picture. 
+> 
+> Every time we've had an issue with MEDUSA or we want to improve it our reaction has always been to slather more complicated math on top of whatever we have already to fix it. Then it'll keep chugging along until it starts to randomly, unpredictably fail in the real world with all those real scips and real people relying on it like it did on 04/██/20██. And it'll do that more often the more "state of the art" algorithms we slap onto it. 
+> 
+> Dr. Wang
+> MTF Mu-4 "Debuggers" Operative, AI Division
+[[/collapsible]]
