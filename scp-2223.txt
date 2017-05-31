@@ -13,7 +13,8 @@ title:SCP-2223
 
 Protocol 56-Ackermann is the only currently known method for suppressing new versions of SCP-2223. A simplified overview of the theoretical framework behind Protocol 56-Ackermann is provided below – specialized personnel assigned to SCP-2223 with extensive background in mathematics and computer science should refer to Document 2223-56-Ackermann for further technical details on implementation and sensitive information on proprietary search algorithms. 
 
-//Protocol 56-Ackermann:// 
+//Protocol 56-Ackermann://
+
 [[collapsible show="+ Excerpt from Document 2223-56-Ackermann, Section II: Detection of SCP-2223" hide="- Welcome, Foundation Mathematics/CS Specialist"]]
 Protocol 56-Ackermann requires a modification to the PageRank algorithm used by internet search engines. Under the assumption of a random-surfer model with a damping factor [[$ d $]] and [[$ N $]] pages or images, one can consider a PageRank metric [[$ PR $]], a critical factor in ranking search results:
 [[math]]
@@ -40,6 +41,7 @@ The matrix [[$ \mathbf{A} $]] is guaranteed a spectral gap greater than or equal
 
 For each entry corresponding to [[$ p_j $]] in the second eigenvector [[$ \vec{v_{\lambda_2}} $]], [[$ p_j $]] is an element of an irreducible closed subset if [[$ \left( \vec{v_{\lambda_2}} \right)_j $]] is non-zero. In accordance with Protocol 56-Ackermann, images with this property are removed and thus SCP-2223 instances are filtered from image search results[[footnote]]Ackermann, D., & Vogel, S. (2011). Possible method for machine identification of SCP-2223 instances. //Terminal: An SCP Foundation Journal//, 15(72), 12-56. Retrieved from //SCP Foundation Research Database//. (Accession No. 32542432) [[/footnote]]. 
 [[/collapsible]]
+
 Protocol 56-Ackermann modifies the PageRank algorithm used in search engines affected by SCP-2223 to rank relevance of search results. PageRank formulates a system of linear equations modeling a network of connected pages and images, which can then be expressed in the general form [[$ A\vec{x} = \vec{b} $]] for matrix A and vectors x and b. Protocol 56-Ackermann finds the eigenvector[[footnote]]An eigenvector is a vector that returns a multiple of itself after being multiplied with a linear transformation matrix, while an eigenvalue is the multiplying factor.[[/footnote]] for the second-largest eigenvalue of the matrix A (PageRank retrieves page importance data from the dominant eigenvector associated with the largest eigenvalue). Using data from the second-most dominant eigenvector, Protocol 56-Ackermann determines whether an image satisfies the property of being in an irreducible closed subset indicative of a possible SCP-2223 version. If the image satisfies this property, it is excluded from search results and thus new versions of SCP-2223 are suppressed.
 
 In the event of a failure of Protocol 56-Ackermann, the Foundation will request a takedown of the new SCP-2223 instance from its host website through a front company for visual copyright violation. Foundation network security experts will forcibly remove the instance if the host website does not do so within one hour. 
