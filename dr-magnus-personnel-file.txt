@@ -10,6 +10,23 @@ background-color: #ffebb5;
 padding: 5px;
 margin: 5px;
 }
+.boxType{
+display:inline-block;width:100%;
+}
+.boxText{
+display:inline-block;float:left;
+}
+.boxValue{
+display: inline-block;
+    /* text-decoration: underline; */
+    border: black solid 1px;
+    /* height: 10px; */
+    background: white;
+    width: 500px;
+    height: 30px;
+    margin-top: 10px; float:right;
+}
+
 .collapsible-block-content p {
     padding-left: 5px;
     padding-right: 5px;
@@ -49,65 +66,37 @@ color: black;
 [[=image http://scp-ru.wdfiles.com/local--files/list-of-foundation-s-internal-departments/sd.png width="50px" height="50px"]]
 ++ Prepared by the Department of Science - SpacioTemporal Anomalous Division
 [[/div]]
-[[div class="boxType" style="display:inline-block;width:100%;"]]
-[[div class="boxText" style="display:inline-block;float:left;"]]
+[[div class="boxType"]]
+[[div class="boxText"]]
 **Name:** 
 [[/div]]
-[[div style="    display: inline-block;
-    /* text-decoration: underline; */
-    border: black solid 1px;
-    /* height: 10px; */
-    background: white;
-    width: 500px;
-    height: 30px;
-    margin-top: 10px; float:right;"]]
+[[div class="boxValue"]]
 Doctor Michael Magnus
 [[/div]]
 [[/div]]
 
-[[div style="display:inline-block;width:100%;"]]
-[[div style="display:inline-block;float:left;"]]
+[[div class="boxType"]]
+[[div class="boxText"]]
 **Position:**
 [[/div]]
-[[div style="    display: inline-block;
-    /* text-decoration: underline; */
-    border: black solid 1px;
-    /* height: 10px; */
-    background: white;
-    width: 500px;
-    height: 30px;
-    margin-top: 10px;float:right;"]]
+[[div class="boxValue"]]
 Researcher in anomalous Software Objects
 [[/div]]
 [[/div]]
 
-[[div style="display:inline-block;width:100%;"]]
-[[div style="display:inline-block;float:left;"]]
+[[div class="boxType"]]
+[[div class="boxText"]]
 **Security Clearance:**
 [[/div]]
-[[div style="    display: inline-block;
-    /* text-decoration: underline; */
-    border: black solid 1px;
-    /* height: 10px; */
-    background: white;
-    width: 500px;
-    height: 30px;
-    margin-top: 10px;float:right;"]]
+[[div class="boxValue"]]
 Provisional Level 2
 [[/div]]
 [[/div]]
-[[div style="display:inline-block;width:100%;"]]
-[[div style="display:inline-block;float:left;"]]
+[[div class="boxType"]]
+[[div class="boxText"]]
 **Status:**
 [[/div]]
-[[div style="    display: inline-block;
-    /* text-decoration: underline; */
-    border: black solid 1px;
-    /* height: 10px; */
-    background: white;
-    width: 500px;
-    height: 30px;
-    margin-top: 10px;float:right;"]]
+[[div class="boxValue"]]
 --Deceased-- Assigned to Site-19 temporarily
 [[/div]]
 [[/div]]
