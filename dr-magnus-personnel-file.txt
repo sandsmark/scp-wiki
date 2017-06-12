@@ -16,6 +16,11 @@ margin: 5px;
     padding-bottom: 5px;
     padding-top: 5px;
 }
+#containerDiv{
+    display: inline-block;
+    width: 100%;
+    margin-left: 2px;
+}
 .collapsible-block-content{
 text-align: left;
 }
@@ -66,7 +71,16 @@ Site Director [REDACTED] has placed Dr. Magnus under level 2 observation at all 
 [[/=]]
 [[/collapsible]]
 [[div id="containerDiv" style="display: inline-block;"]]
-[[div style="padding: 5px; border: double black 1px; background-color: #e8e8e8; margin: 5px; display: inline-block; float:left; text-align:center;"]]
+[[div style="    padding: 5px;
+    box-sizing: border-box;
+    border: double black 1px;
+    background-color: #e8e8e8;
+    margin: 3px;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    width: 32%;
+    height: 152px;"]]
 **SCP Projects**
 [[[SCP-773]]]
 [[[SCP-989]]]
@@ -75,7 +89,16 @@ Site Director [REDACTED] has placed Dr. Magnus under level 2 observation at all 
 [[[SCP-3621]]]
 [[[SCP-3872]]]
 [[/div]]
-[[div style="padding: 5px; border: double black 1px; background-color: #e8e8e8; margin: 5px; display:inline-block; text-align:center;"]]
+[[div style="    padding: 5px;
+    border: double black 1px;
+    box-sizing: border-box;
+    background-color: #e8e8e8;
+    margin: 3px;
+    display: inline-block;
+    text-align: center;
+    float: left;
+    width: 33%;
+    height: 152px;"]]
 **Published Articles**
 [[[Shuffle Tick Tick | Scratches ]]]
 [[[Lamb in a Lions Den]]]
@@ -83,7 +106,17 @@ Site Director [REDACTED] has placed Dr. Magnus under level 2 observation at all 
 [[[The Interview]]]
 [[[Busy Office Bees | Busy Office Bees]]]
 [[/div]]
-[[div style="padding: 5px; border: double black 1px; background-color: #e8e8e8; margin: 5px;display:inline-block; text-align:center;"]]
+[[div style=" padding: 5px;
+    border: double black 1px;
+    background-color: #e8e8e8;
+    box-sizing: border-box;
+    margin: 3px;
+    display: inline-block;
+    text-align: center;
+    width: 32%;
+    height: 152px;
+    float: left;
+"]]
 **Recent Projects**
 [[[SCP-1224-J]]]
 [[[SCP-026-J]]]
