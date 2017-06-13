@@ -16,6 +16,13 @@ display:inline-block;width:100%;
 .boxText{
 display:inline-block;float:left;
 }
+
+.boxText p{
+    -webkit-margin-after: 5px;
+    -webkit-margin-before: 5px;
+    -webkit-margin-end: 5px;
+    -webkit-margin-start: 5px;
+}
 .boxValue{
     padding-bottom: 5px;
     padding-left: 5px;
