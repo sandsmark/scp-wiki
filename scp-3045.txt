@@ -12,12 +12,12 @@ title:SCP-3045
 
 Under no circumstances should SCP-3045 be used on any media file that directly references bees.
 
-**Description:** SCP-3045 is an anomalous application ('bzzip.exe') that reduces the size of certain types of media (*.txt, *.mp3, *.mp5, and *.rtf). It accomplishes this by producing a new file with trimmed, 'simplified' content. This file can then be reduced further; however, after a certain number of iterations, the result will be a file that contains little to no data. Additional attempts at reduction will only reproduce this final file.
+**Description:** SCP-3045 is an anomalous application ('bzzip.exe') that reduces the size of certain types of media (plain text, rich text, MLV, AVI, and MP4). It accomplishes this by producing a new file with trimmed, 'simplified' content. This file can then be reduced further; however, after a certain number of iterations, the result will be a file that contains little to no data. Additional attempts at reduction will only reproduce this final file.
 
 **Addendum 3045.1:** Test Logs
 
-[[collapsible show="► ACCESS:: S:/3045/files/test1.log" hide="▼ Close File"]]
-> **DESCRIPTION:** An *.rtf file containing Shakespeare's //Hamlet//.
+[[collapsible show="► ACCESS:: SCP/3045/files/test1.log" hide="▼ Close File"]]
+> **DESCRIPTION:** A rich text file containing Shakespeare's //Hamlet//.
 > 
 > **FOREWORD:** To save space, only Act 1 is provided during the first 3 iterations. The entire play is provided at the 4th iteration and every iteration thereafter. 
 [[tabview]]
@@ -357,8 +357,8 @@ Under no circumstances should SCP-3045 be used on any media file that directly r
 [[/tabview]]
 [[/collapsible]]
 
-[[collapsible show="► ACCESS:: S:/3045/files/test2.log" hide="▼ Close File"]]
-> **DESCRIPTION:** An *.mp5 file containing the entirety of __Indiana Jones and the Last Crusade__ (the original theatrical release).
+[[collapsible show="► ACCESS:: SCP/3045/files/test2.log" hide="▼ Close File"]]
+> **DESCRIPTION:** An MP4 file containing the entirety of __Indiana Jones and the Last Crusade__ (the original theatrical release).
 > 
 > **FOREWORD:**  Researcher Rogers was tasked to watch each iteration and provide a summary of notable differences.
 
@@ -441,8 +441,8 @@ Under no circumstances should SCP-3045 be used on any media file that directly r
 [[/tabview]]
 [[/collapsible]]
 
-[[collapsible show="► ACCESS:: S:/3045/files/test3.log" hide="▼ Close File"]]
-> **DESCRIPTION:** A text-file containing the entirety of Samuel Becket's tragicomedy, //Waiting for Godot//.
+[[collapsible show="► ACCESS:: SCP/3045/files/test3.log" hide="▼ Close File"]]
+> **DESCRIPTION:** A plain text file containing the entirety of Samuel Becket's tragicomedy, //Waiting for Godot//.
 
 [[tabview]]
 [[tab Iteration 1]]
@@ -465,8 +465,8 @@ Under no circumstances should SCP-3045 be used on any media file that directly r
 
 [[/collapsible]]
 
-[[collapsible show="► ACCESS:: S:/3045/files/test4.log" hide="▼ Close File"]]
-> **DESCRIPTION:** An *.mp5 file containing the entirety of __Bee Movie__, an animated film by DreamWorks Animation.
+[[collapsible show="► ACCESS:: SCP/3045/files/test4.log" hide="▼ Close File"]]
+> **DESCRIPTION:** A MOV file containing the entirety of __Bee Movie__, an animated film by DreamWorks Animation.
 > 
 > **FOREWORD:** Researcher Xiao-jin was tasked to watch each iteration and provide a summary of notable differences.
 [[tabview]]
@@ -531,7 +531,7 @@ Under no circumstances should SCP-3045 be used on any media file that directly r
 
 On 16-02-2010, a Foundation-operated web-analysis bot (I/O-SAURON) flagged several large-scale online purchases made by a California startup company ("HiveFind") as suspicious. The company's website claimed it provided "next generation algorithms, client-centric solutions, and cutting edge compression software". 
 
-Three days later, MTF Rho-9 ("Technical Support") performed a raid on the offices of HiveFind. Although the building had been recently abandoned, they found several pieces of equipment: 14 large-scale QR scanners, 15 desktop computers (connected via a bus network), and over 900 gallons of honey (stored in several refrigeration units). After detailed analysis, Rho-9 determined that each QR scanner had been wired to provide control over one computer. SCP-3045 was found on one of the computer's hard-drives.
+Three days later, MTF Rho-9 ("Technical Support") performed a raid on the offices of HiveFind. Although the building had been recently abandoned, they found several pieces of equipment: 14 large-scale QR scanners, 15 desktop computers, and over 900 gallons of honey (stored in several refrigeration units). After detailed analysis, Rho-9 determined that each QR scanner had been wired to provide control over one computer. SCP-3045 was found on one of the computer's hard-drives.
 
 A later search uncovered over 50 dead (non-anomalous) instances of //apis mellifera// (American honey-bee) spread throughout the office. 
 
