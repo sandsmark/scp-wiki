@@ -260,8 +260,8 @@ You need to place a rating module on every tale or SCP you create, using the fol
 [[/>]]
 [[/code]]
 
-++ Placing an Image
-Pictures are optional but generally improve an article, so long as they are appropriate for the subject, don't break realism, and //follow all of the site rules//. If in doubt, consult the site's [http://www.scp-wiki.net/image-use-policy Image Use Policy].
+++ Placing an Image or Media File
+Media is optional but generally improve an article, so long as they are appropriate for the subject, don't break realism, and //follow all of the site rules//. If in doubt, consult the site's [http://www.scp-wiki.net/image-use-policy Image Use Policy].
 
 Do not use a picture if:
 * It is an illustration and realistically a photograph would be used instead
@@ -294,6 +294,15 @@ Note that by default, the standard image block is set to 300px width. If you nee
 > @@]]@@
 
 The height of the image will automatically adjust to the width. Please do not exceed 300px, as blocks larger than that disrupt the normal flow of the document. If you have any problems or questions about using images on articles, please contact a member of the Image or Technical Staff Teams.
+
+To place a media file on your article, you must upload it onto the page in exactly the same manner as uploading an image, as explained previously.  To insert the file in the article so that it is played with an HTML5 player, please use the following syntax while referencing the file as was done in the example for placing an image:
+
+> @@[[include :snippets:html5player@@
+> @@	|type=audio@@
+> @@	|url=THE URL OF YOUR FILE@@
+> @@]]@@
+
+If using a video, simply switch the 'type' from 'audio' to 'video'.
 
 ++ Test Logs and Records
 
