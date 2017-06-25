@@ -6,7 +6,6 @@ title:AIAD Homescreen
  	text-decoration: none;
     border-bottom: none;
 }
-
 .hover span {	display: none;}
 .hover:hover span {
     position: absolute;
@@ -27,6 +26,10 @@ title:AIAD Homescreen
     border: none;
     padding: 0;
 }
+.audioCenter {
+    margin: 10px auto; 
+    width: 320px;
+}
 [[/module]]
 
 [[div style="background-image: url(http://scp-wiki.wdfiles.com/local--files/aiad-homescreen/blue_squares_2.gif); background-repeat: repeat;"]]
@@ -43,9 +46,28 @@ title:AIAD Homescreen
 {{SCP Foundation | IT Dept.}}
 {{AIAD <Artificial Intelligence Applications Division>}}
 [[/div]]
-[[include :snippets:mp3 | URL=http://scp-wiki.wdfiles.com/local--files/aiad-homescreen/song.mp3]]
+
+[[html]]
+<div align="center" id="player">
+<audio controls>
+<source src="name.mp3" type="audio/mpeg">
+Unsupported browser!
+</audio>
+</div>
+[[/html]]
+
+[[include :snippets:html5player
+    |type=audio
+    |url=http://scp-wiki.wdfiles.com/local--files/aiad-homescreen/song.mp3
+    |text-align="center"
+]]
+
+[[=]]
 [[span style="margin: -18px; text-align: center; color: maroon; text-shadow: #00FFFF 1px 1px;"]]^^[*http://freemusicarchive.org/music/Chris_Zabriskie/Direct_to_Video_1014/02_-_What_Does_Anybody_Know_About_Anything "What Does Anybody Know About Anything"] by [*http://freemusicarchive.org/music/Chris_Zabriskie/ Chris Zabriskie]^^[[/span]]
+[[/=]]
+
 ~~~~
+
 [[div style="margin: auto; text-align: center; width: 600px; padding: 2px 2px 2px 15px; color: black; background-color: #fff; border-radius: 8px; opacity: .6;"]]
 __**Standard Principles of Artificially Intelligent Conscripts**__
 [[<]]
