@@ -320,6 +320,169 @@ Try modifying the "background: blue;" property to a different color.  This onl
 ------
 
 [[=]]
++++ __**Section 5: Listpages**__
+[[/=]]
+
+Alright, this one feels kinda like the great grand-daddy.  Listpages is a module that wikidot provides, which allows you to search the wiki for criteria, and display results.  The easiest application of this is:
+
+[[div style="padding: 5px; border: double black 1px; background-color: #e8e8e8; margin: 5px;"]]
+**Code:**
+@@[[module ListPages created_by="DrMagnus" limit="5" separate="no"]]@@
+@@%%title_linked%% - %%rating%%@@
+@@[[/module]]@@
+**Result:**
+[[module ListPages created_by="DrMagnus" limit="5" separate="no"]]
+%%title_linked%%: %%rating%% Created On: %%created_at%%
+[[/module]]
+[[/div]]
+
+This is a simple select for pages by me, DrMagnus, limit to 5 of them, don't add a line break.  In the "body" of the module, you provide what you want to show.  Here, I'm showing the title, rating, and creation date.  
+
+Listpages will significantly slow down your page, if you have a lot of them, and more than one is really really not recommended per page.
+
+Below is a small number of your criteria and selectable stuff:
+
+[[collapsible show="Criteria" hide="Hide"]]
+[[div style="border: black 1px solid;     margin-left: 10%;
+    margin-right: 10%; background:lightgray;"]]
+* pagetype
+ * "normal": non hidden pages
+ * "hidden": Hidden Pages
+ * "*": Both 
+[[/div]]
+[[div style="border: black 1px solid;     margin-left: 10%;
+    margin-right: 10%; background:lightgray;"]]
+* category	
+ * "." means current category (default)
+ * "*" means all categories
+ * else, a list of space/comma delimited categories
+ * categories are by default additive (category OR category OR category)
+ * "-category" means exclude pages in this category (AND NOT)
+ * "%%category%%" means the same category as the current page ( if used on a _template page)
+[[/div]]
+[[div style="border: black 1px solid;     margin-left: 10%;
+    margin-right: 10%; background:lightgray;"]]
+* Tags 
+ * "-" means pages with no tags, visible or invisible
+ * "=" means pages with any of the same visible tags as this page
+ * "==" means pages with the exact same visible tags as this page
+ * else, a list of space/comma delimited tags
+ * tags are by default additive (tag OR tag OR tag)
+ * "-tag" means pages without the tag (AND NOT)
+ * "+tag" means pages with the tag (AND)
+[[/div]]
+[[div style="border: black 1px solid;     margin-left: 10%;
+    margin-right: 10%; background:lightgray;"]]
+* Parent page selector: 
+ * "-" means pages with no parent page
+ * "=" means siblings of current page (same parent)
+ * "-=" means with different parent than current page
+ * "." means children of current page (parent is this page)
+ * else specifies a single full page name
+[[/div]]
+[[div style="border: black 1px solid;     margin-left: 10%;
+    margin-right: 10%; background:lightgray;"]]
+* Outgoing links selector: 
+ * enter a single full name of an existing page to select pages that link to that page
+ * while "." means pages that link to current page
+[[/div]]
+[[div style="border: black 1px solid;     margin-left: 10%;
+    margin-right: 10%; background:lightgray;"]]
+* Creation date selector: 
+ * "=" means created on same day as current page
+ * "yyyy" means specified year
+ * "yyyy.mm" means specified year and month
+ * optionally prefixed by ">", "<", "=", "<=", ">=", "<>" (default is "=")
+ * dates are not site-local but currently all UTC (GMT)
+ * "last n unit" or "older than n unit" where 'n' is a count (defaults to 1) and unit is "hours", "day", "week", or "month"
+[[/div]]
+[[div style="border: black 1px solid;     margin-left: 10%;
+    margin-right: 10%; background:lightgray;"]]
+* Update date selector: 
+ * dates are not site-local but currently all UTC (GMT)
+ * "last n unit" or "older than n unit" where 'n' is a count (defaults to 1) and unit is "hours", "day", "week", or "month"
+[[/div]]
+[[div style="border: black 1px solid;     margin-left: 10%;
+    margin-right: 10%; background:lightgray;"]]
+* Author selector:
+ * "=" means by created by author of current page
+ * "-=" means by not created by author of current page
+ * else, a single user name 
+[[/div]]
+[[div style="border: black 1px solid;     margin-left: 10%;
+    margin-right: 10%; background:lightgray;"]]
+* Rating selector:
+ * "n" means pages with rating equal to n
+ * "=" means pages with same rating as current page
+ * optionally prefixed by ">", "<", "=", "<=", ">=", "<>" (default is "=")
+[[/div]]
+[[/collapsible]]
+[[collapsible show="Linkables" hide="Hide"]]
+[[div style="margin-left:10%;margin-right:10%;background: lightgray"]]
+||~ Linkable||~ Displays||
+||%%created_at%%	||Date page was created||
+||%%created_by%%	||User who created page||
+||%%created_by_unix%%	||"Unixified" name of user who created page — to be used for constructing URLs||
+||%%created_by_id%%	||"ID" number of user who created page — to be used for constructing URLs||
+||%%created_by_linked%%	||Icon and link to user who created page||
+||%%updated_at%%	||Date page was updated (edited, tagged, parented)||
+||%%updated_by%%	||User who updated page||
+||%%updated_by_unix%%	||"Unixified" name of user who updated page — to be used for constructing URLs||
+||%%updated_by_id%%	||"ID" number of user who updated page — to be used for constructing URLs||
+||%%updated_by_linked%%	||Icon and link to user who updated page||
+||%%commented_at%%	||Date of last comment||
+||%%commented_by%%	||User who made last comment||
+||%%commented_by_unix%%	||"Unixified" name of user who made last comment — to be used for constructing URLs||
+||%%commented_by_id%%	||"ID" number of user who made last comment — to be used for constructing URLs||
+||%%commented_by_linked%%	||Icon and link to user who made last comment||
+||%%name%%	||Page name without category||
+||%%category%%	||Page category if any||
+||%%fullname%%	||Page name with category if any||
+||%%title%%	||Page title||
+||%%title_linked%%	||Link to page showing title as text||
+||%%parent_name%%	||Parent page name without category||
+||%%parent_category%%	||Parent page category if any||
+||%%parent_fullname%%	||Parent page name with category if any||
+||%%parent_title%%	||Parent page title||
+||%%parent_title_linked%%	||Link to Parent page showing title as text||
+||%%link%%	||URL pointing to page||
+||%%content%%	||Page content||
+||%%content{n}%%	||Numbered content section||
+||%%preview%%	||First 200 characters of the page||
+||%%preview(n)%%	||First n characters of the page||
+||%%summary%%	||Summary of content||
+||%%first_paragraph%%	||The first paragraph of the page||
+||%%tags%%	||Page visible tags (not starting with underscore)||
+||%%tags_linked%%	||Page visible tags linked to system:page-tags/tag/{tag}||
+||%%tags_linked|link_prefix%%	||Page visible tags linked to link_prefix{tag}||
+||%%_tags%%	||Page hidden tags (starting with underscore)||
+||%%_tags_linked%%	||Page hidden tags linked to system:page-tags/tag/{tag}||
+||%%_tags_linked|link_prefix%%	||Page hidden tags linked to link_prefix{tag}||
+||%%form_data{name}%%	||Field value from page data form if any||
+||%%form_raw{name}%%	||For select fields, the internal value saved in the page form data, if any||
+||%%form_label{name}%%	||The label of the field as defined in the data form if any||
+||%%form_hint{name}%%	||The hint of the field as defined in the data form if any||
+||%%children%%	||Number of child pages||
+||%%comments%%	||Number of comments on page||
+||%%size%%	||Number of characters in page||
+||%%rating%%	||Page rating value (number or stars depending on Rating settings in Site Manager||
+||%%rating_votes%%	||Number of votes||
+||%%rating_percent%%	||Percent value of 5-star rating only||
+||%%revisions%%	||Number of revisions to page||
+||%%index%%	||Page index in ListPages output + offset (1 to %%total%%)||
+||%%total%%	||Total number of pages ignoring limit (may be higher than %%limit%%)||
+||%%limit%%	||Limit passed to ListPages (empty if not passed)||
+||%%site_title%%	||Title of current site||
+||%%site_name%%	||Wikidot Unix name for site||
+||%%site_domain%%	||Active domain name of current site||
+
+[[/div]]
+[[/collapsible]]
+
+
+------
+
+[[=]]
 +++ __**Conclusion**__
 [[/=]]
 
