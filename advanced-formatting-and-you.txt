@@ -483,6 +483,88 @@ Below is a small number of your criteria and selectable stuff:
 ------
 
 [[=]]
++++ __**Section 5: The Good Stuff**__
+[[/=]]
+
+Do you know web development?  Flaunt it.  
+[[div style="padding: 5px; border: double black 1px; background-color: #e8e8e8; margin: 5px;"]]
+**Code:**
+[[code]]
+[[html]]
+<div style="display:inline-block; width = 100%">
+<div id="findbalance" class="titlebox" style="float:left">
+Left side!
+  <Button type="button" class="inputfield" id="submit">Submit</Button><br/>
+</div>
+<div id="wise" style="display:none;float:right" class="titlebox" >
+Strong side!
+  <Button type="button" class="inputfield" id="wiseSubmit">Submit</Button>
+</div>
+</div>
+<script>
+document.getElementById("submit").onclick= function(){
+document.getElementById("findbalance").style.display = "none";
+document.getElementById("wise").style.display="";
+}
+document.getElementById("wiseSubmit").onclick= function(){
+document.getElementById("wise").style.display = "none";
+document.getElementById("findbalance").style.display = "";
+};
+</script>
+<style>
+.titlebox{
+  border: black 1px solid;
+  padding: 10px;
+  width: 40%;
+}
+.inputfield {
+padding: 2px;
+margin: 2px;
+}
+</style>
+[[/html]]
+[[/code]]
+
+**Result:**
+[[html]]
+<div style="display:inline-block; width=100%">
+<div id="findbalance" class="titlebox" style="float:left">
+Left side!
+  <Button type="button" class="inputfield" id="submit">Switch!</Button><br/>
+</div>
+<div id="wise" style="display:none;float:right" class="titlebox" >
+Strong side!
+  <Button type="button" class="inputfield" id="wiseSubmit">Switch!</Button>
+</div>
+</div>
+<script>
+document.getElementById("submit").onclick= function(){
+document.getElementById("findbalance").style.display = "none";
+document.getElementById("wise").style.display="";
+}
+document.getElementById("wiseSubmit").onclick= function(){
+document.getElementById("wise").style.display = "none";
+document.getElementById("findbalance").style.display = "";
+};
+</script>
+<style>
+.titlebox{
+  border: black 1px solid;
+  padding: 10px;
+  width: 40%;
+  background: beige;
+}
+.inputfield {
+padding: 2px;
+margin: 2px;
+}
+</style>
+[[/html]]
+
+[[/div]]
+------
+
+[[=]]
 +++ __**Conclusion**__
 [[/=]]
 
