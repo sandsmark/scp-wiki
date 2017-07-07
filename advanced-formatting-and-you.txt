@@ -1,0 +1,326 @@
+title:Advanced Formatting and You
+[[module css]]
+#page-content .collapsible-block {  
+  max-width: 100%;
+    /* text-align: center; */
+text-color: black;
+background-color: #afe0ff;
+    border-color: #b01;
+    border: solid 1px #b01;
+padding: 5px;
+margin: 5px;
+}
+.collapsible-block-content p {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.collapsible-block-content{
+text-align: left;
+}
+
+.collapsible-block-folded, .collapsible-block-unfolded{
+text-align: center;
+color: black;
+}
+[[/module]]
+[[>]]
+[[module rate]]
+[[/>]]
+
+
+++ Advanced Formatting and You
+
+Greetings and salutations.  If you're reading this page, you're probably here to learn how to do fancy things with wikidot coding!
+
+This essay is intended for anyone who wants to move beyond basic bolding, italics, and collapsibles.  I'll be going over those as well, however, most of this guide is intended to be used for //advanced// design for articles.
+
+Some examples of what you can accomplish with the things covered in this guide are located in several of my SCPs, such as [[[scp-3872 | SCP-3872]]] and [[[scp-027-j | SCP-027-J]]].
+
+If you have any questions about sections of this guide, please send me a wikidot PM!
+
+------
+
+
+[[=]]
++++ __**Section 1: Basic Wikidot Formatting Tricks**__
+[[/=]]
+Some of the basic wikidot code itself is kind of tricky, and isn't necessarily explained perfectly. These are the two peices I get the most questions on: 
+[[=]]
+++++ **Quoteblocks**
+[[/=]]
+[[collapsible show="Show Quoteblock Code" hide="Hide Quoteblock Code"]]
+To use a quote block, you place a "> " character at the start of a line.  Notice the space after the > .
+[[div style="padding: 5px; border: double black 1px; background-color: #e8e8e8; margin: 5px;"]]
+**Code:**
+@@> This is an example of the code that will produce a quoteblock.@@
+@@> @@
+@@> And here I have a linebreak.  Notice the space after the >  for a blank line in the quote block.@@
+**Result:**
+> This is an example of the code that will produce a quoteblock.
+> 
+> And here I have a linebreak.  Notice the space after the >  for a blank newline in the quote block.
+[[/div]]
+[[/collapsible]]
+[[=]]
+++++ **Tabs**
+[[/=]]
+
+[[collapsible show="Show Tabview Code" hide="Hide Tabview Code"]]
+Tabviews allow you to organize information in an easily browseable way, and save space.
+[[div style="padding: 5px; border: double black 1px; background-color: #e8e8e8; margin: 5px;"]]
+**Code:**
+@@[[tabview]]@@
+@@[[tab Name of Tab 1]]@@
+@@Your text/article goes here@@
+@@[[/tab]]@@
+@@[[tab Name of Tab 2]]@@
+@@Your text/article 2 goes here@@
+@@[[/tab]]@@
+@@[[/tabview]]@@
+**Result:**
+[[tabview]]
+[[tab Name of Tab 1]]
+Your text/article goes here
+[[/tab]]
+[[tab Name of Tab 2]]
+Your text/article 2 goes here
+[[/tab]]
+[[/tabview]]
+[[/div]]
+[[/collapsible]]
+
+> Hey, hey Magnus, this page over here has this really awesome bit of formatting and I wanna use it.  teach me how!
+
+Well, random citizen, it's easier than you think.  In the lower right-hand corner of every page on the mainsite, it says "Options".  Click it.  A little list thingy opens.  Click "View Page Source" and it'll show you the Wikidot code that generated that page.  Every single bit of it.
+
+This'll let you see whatever you wanna find on the wiki, if you don't know how to do something.
+
+------
+
+
+[[=]]
++++ __**Section 2: Using non-wikidot code**__
+[[/=]]
+This is where it starts getting interesting.  Wikidot has support for all kinds of objects.  They don't just have their own markup language, you can also include custom divs.
+[[div style="padding: 5px; border: double black 1px; background-color: #e8e8e8; margin: 5px;"]]
+**Code:**
+@@[[div id="myDiv" style="background-color: green; text-color:white;"]]@@
+@@This is a div!@@
+@@[[/div]]@@
+**Result:**
+[[div id="myDiv" style="background-color: green; color:white;"]]
+This is a div!
+[[/div]]
+[[/div]]
+
+Div's are standard web containers that define a thing that holds other things.  Those things can be text, other divs, spans, and other web objects.  You can style them literally however you want, using properties. 
+
+Generally this is done through what's called CSS, or cascading style sheets.  These will override standard wikidot formatting, which is how my collapsible above look slightly different than the ones you probably are used to.
+
+Using Divs allows you to create boxes and various other shapes to fit the needs of your article.  
+
+For instance, if you want something to look like a text message conversation:
+[[div style="padding: 5px; border: double black 1px; background-color: #e8e8e8; margin: 5px;"]]
+**Code:**
+@@[[div id="myTextMessageConvoHolder" style="display:inline-block; width:100%;"]]@@
+@@[[div id="myTextMessageConvoDiv" style="color:white; border-radius: 25px; background: #73AD21;padding: 15px;width: 150px; height: 100px;float:left;"]]@@
+@@I like big butts, and I cannot lie.@@
+@@[[/div]]@@
+@@[[html]]@@
+<br/>
+@@[[/html]]@@
+@@[[div id="myTextMessageConvoDivReply" style="color:white; border-radius: 25px; background: #blue;padding: 15px;width: 150px; height: 100px;float:right;display: inline-block"]]@@
+@@Mine other brethren cannot deny.@@
+@@[[/div]]@@
+@@[[/div]]@@
+**Result:**
+[[div id="myTextMessageConvoHolder" style="display:inline-block; width:100%;"]]
+[[div id="myTextMessageConvoDiv" style="color:white; border-radius: 25px; background: #73AD21;padding: 15px;width: 150px; height: 100px;display: inline-block"]]
+I like big butts, and I cannot lie.
+[[/div]]
+[[html]]
+<br/>
+[[/html]]
+[[div id="myTextMessageConvoDivReply" style="color:white; border-radius: 25px; background: blue; padding: 15px;width: 150px; height: 100px;float:right; display: inline-block"]]
+Mine other brethren cannot deny.
+[[/div]]
+[[/div]]
+[[/div]]
+As you can see, there's a lot of things you can use this for. You can also see, I have another non-standard wikidot code section: an HTML block.
+
+If you know how to write HTML, you can include it in a @@[[html]] [[/html]]@@ block, and include whatever you want, including HTML and javascript inside of <script> tags.
+
+This lets you introduce some really awesome components. One of the components I get asked frequently about is how to do double collapsibles. 
+
+These aren't too hard to make.  The important part is to notice, that each level has one more space before the asterisk than the previous level.
+[[div style="padding: 5px; border: double black 1px; background-color: #e8e8e8; margin: 5px;"]]
+**Code:**
+@@[[div class="foldable-list-container"]]@@
+@@* Lol collapsible@@
+@@ * second@@
+@@* Moar@@
+@@ * even moar @@
+@@  * Test @@
+@@[[/div]]@@
+**Result:**
+[[div class="foldable-list-container"]]
+* Lol collapsible
+ * second
+* Moar
+ * even moar 
+  * Test 
+[[/div]]
+
+[[/div]]
+
+You can also style the foldable-list-container div, but changing your module css to include elements within the div.  See sections 3 and 4 to understand how to do this.
+
+The last peice of non-wikidot code that is included in some of the more administrative pages, are iframes.
+
+I frames are used to include the fulltext of another website in to the current page.  An example is below:
+[[div style="padding: 5px; border: double black 1px; background-color: #e8e8e8; margin: 5px;"]]
+**Code:**
+@@[[iframe http://home.helenbot.com/tools/randomButton.php style="border: 1px black solid;" width="100%" height="25" scrolling="no"]]@@
+**Result:**
+[[iframe http://home.helenbot.com/tools/randomButton.php style="border: 0;" width="100%" height="25" scrolling="no"]]
+[[/div]]
+This is a page from my website, where I host a lot of technical projects, which is a random button for an SCP.  This takes the literal webpage, fetches it, then displays it in a smaller div here on the current page.  This is how a lot of the more "Advanced" images are created for articles such as [[[scp-895 | SCP-895]]] and [[[scp-027-j | SCP-027-J]]]
+
+The image block for SCP-027-J for example is generated with the following:
+[[div style="padding: 5px; border: double black 1px; background-color: #e8e8e8; margin: 5px; display: inline-block"]]
+**Code:**
+@@[[div class="scp-image-block" style="width:200px; float: right;"]]@@
+@@[[iframe http://home.helenbot.com/images/remote.html width="200px" height="200px" frameborder="0" scrolling="no"]]@@
+@@[[div class="scp-image-caption" style="width:200px;"]]@@
+@@SCP-027-J?@@
+@@[[/div]]@@
+@@[[/div]]@@
+**Result:**
+[[div class="scp-image-block" style="width:200px; float: right;"]]
+[[iframe http://home.helenbot.com/images/remote.html width="200px" height="200px" frameborder="0" scrolling="no"]]
+[[div class="scp-image-caption" style="width:200px;"]]
+SCP-027-J?
+[[/div]]
+[[/div]]
+[[/div]]
+------
+
+
+[[=]]
++++ __**Section 3: Divs and how to style them**__
+[[/=]]
+
+So you've seen divs, and some bits where it says "Style."  These are hard-coded CSS settings, which you can define on a per-object basis if you want.  Or you can include your own custom CSS settings.
+
+This is the CSS module for the page you're looking at right now:
+[[div style="padding: 5px; border: double black 1px; background-color: #e8e8e8; margin: 5px;"]]
+@@[[module css]]@@
+@@#page-content .collapsible-block {  @@
+@@  max-width: 100%;@@
+@@background-color: #afe0ff;@@
+@@text-color: black;@@
+@@   border-color: #b01;@@
+@@    border: solid 1px #b01;@@
+@@padding: 5px;@@
+@@}@@
+@@.collapsible-block-content p {@@
+    @@padding-left: 5px;@@
+    @@padding-right: 5px;@@
+    @@padding-bottom: 5px;@@
+    @@padding-top: 5px;@@
+@@}@@
+@@.collapsible-block-content{@@
+@@text-align: left;@@
+@@}@@
+@@@@
+@@.collapsible-block-folded, .collapsible-block-unfolded{@@
+@@text-align: center;@@
+@@text-color: black;@@
+@@}@@
+@@[[/module]]@@
+[[/div]]
+What this specifically does, is override the CSS settings for the collapsible blocks, as you can see above in the collapsible sections.
+
+CSS Modules allow you to do just about anything with a page.  You can even change the colors of the parent containers.  You can change the color of the pages themselves, which is used extensively in GoI hubs, such as the [[[third-law-hub | Third Law Canon Hub]]].  You can also store your CSS in another page, and import it, as you can see in the canon hub.
+
+**It's important to note, any attribute applied to a "parent" container also applies to its children unless overridden by a child attribute.  If you center the text of a div, all text contained in any div inside of that div will be centered, unless you override it inside of the "child" div**
+
+This isn't intended to be a CSS tutorial, but the basic concepts are:
+[[collapsible show="Div Id's" hide="close"]]
+A # character indicates an id.  When you give a div an id="myId" this would be referred to as #myId { /*properties go here */ } in your CSS module.  id's refer to a SINGLE element on a page.
+> **Example:**
+> This would make all the text contained inside the element called myId red.
+> 
+> @@#myId{@@
+>   @@color: red;  @@
+> @@}@@
+[[/collapsible]]
+[[collapsible show="Div Classes" hide="close"]]
+A . character indicates a class. Classes are like ID's but the effects of a class css is applied to all elements with that class.  all div class="myClass" would get the values of the CSS for .myClass { /*properties go here*/}
+> **Example:**
+> This would cause any .myClass objects to have a 1 pixel wide solid black border.
+> 
+> @@ .myClass {@@
+>   @@border: solid black 1px;@@
+> @@}@@
+[[/collapsible]]
+[[collapsible show="Nesting Ids and Classes" hide="close"]]
+You can also "nest" these constructs.  .myClass .myClass2 { /*properties*/} would be "For all .myClass2 divs within .myClass divs".  All .myClass2 div's that are NOT inside of .myClass divs are unaffected.  
+> **Example:**
+> This would cause any .myClass objects inside of the #myId1 element to use helvetica as its font.
+> 
+> @@#myId1 .myClass {@@
+> @@font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;@@
+> @@}@@
+[[/collapsible]]
+
+[[collapsible show="Applying the same styling to multiple ids and/or classes" hide="close"]]
+You can also use , to apply the same formatting to multiple classes or ids.  #myId1, #myId2 { /*properties*/} would apply all those properties to the element #myId1 and #myId2.  The same goes for classes, it would apply those effects to both classes.
+
+> **Example:**
+> This would cause all .myClass elements, and the specific element called myId1 to have centered text
+> 
+> @@#myId1, .myClass {@@
+> @@text-align: center;@@
+> @@}@@
+[[/collapsible]]
+
+
+------
+
+[[=]]
++++ __**Section 4: Manipulating a page for fun and profit**__
+[[/=]]
+
+The last section is the big question: If you have something you want to fix, how the hell do I actually know what to change?
+
+This isn't supposed to be a tutorial in web development, so this is going to be a bit sparse, but I'll give you a crash course in how to chage element properties.
+
+If you hover your mouse over a thing (literally, any part of a webpage) and right click.  There should be an option that says "Inspect Element".  This will open a view, that kinda looks like a giant control panel. 
+
+If you hover over the blue "text message" in section 2 above, and inspect element, you get the following properties:
+
+> element.style {
+>    color: white;
+>    border-radius: 25px;
+>    background: blue;
+>    padding: 15px;
+>    width: 150px;
+>    height: 100px;
+>    float: right;
+>    display: inline-block;
+> }
+
+You can click on the right hand side of these properties, and modify any of the attributes, or click below or above them, and add an attribute.  The best way to figure it out is just to experiment.  If all else fails, google the attribute you want, or a general description of the thing you want to do, followed by "CSS".
+
+Try modifying the "background: blue;" property to a different color.  This only affects how YOU see the page, and will not affect anyone elses view of the page.
+
+------
+
+[[=]]
++++ __**Conclusion**__
+[[/=]]
+
+I hope this has provided at least a look in to how to make some of the more advanced applications of wikidot code work.  If you have any questions feel free to PM me.
