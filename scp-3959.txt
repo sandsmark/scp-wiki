@@ -2,62 +2,50 @@ title:SCP-3959
 [[>]]
 [[module Rate]]
 [[/>]]
-
-
-
-
 [[html]]
+
+<!-----THIS CODE WAS MADE EXCLUSIVELY BY THEBILLITH. QUESTIONS? CONCERNS? Leave it in the discussion section. Hopefully I will find time to revamp this with responsive resizing canvas for mobile.---->
   
 <html>
-      <head>
-            <body>
-                 <style type="text/css" id="internal-style">
+<head>
+<body>
+<style type="text/css" id="internal-style">
                     @import url(http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--
                      theme/base/css/style.css);
                     @import url(http://www.scp-wiki.net/component:theme/code/1);
-                </style>
-
-                <form method="post" name="hiddenstuff" onsubmit="show(); return false;">
-                <div style=
-                   
-                     "margin:0px;padding:0px;position:absolute;width:800;height:400;borderstyle:solid;">
+</style>
+<form method="post" name="hiddenstuff" onsubmit="show(); return false;">
+<div style=
+             "margin:0px;padding:0px;position:absolute;width:800;height:400;borderstyle:solid;">
                      
-                      <canvas style="width:800px;height:400px;"></canvas>
-
-                      <input id="password" input type="text" 
+<canvas style="width:800px;height:400px;"></canvas>
+<input id="password" input type="text" 
                        style="position:absolute;width:200;height:100;color:lawngreen;background-color: #000000;border;none;"/>
-<input value="" name="submit" style="position:absolute;top:300px;left:560px;background:none;border:none;" type="submit">
-         
-               </div>
+<input value="" name="submit" 
+                       style="position:absolute;top:300px;left:560px;background:none;border:none;" type="submit">
+</div>
 
-              
+<canvas id="myCanvas" width="800" height="400">>Your browser does not support the canvas tag :((((</canvas>
 
-
-                       <canvas id="myCanvas" width="800" height="400">>Your browser does not support the canvas tag! </canvas>
-
-                       <script>
+<script>
 function show(){
 debugger
   var curr=document.getElementById("menu_element");
   var passcode = document.getElementById('password').value
-    if(passcode == "saraswati3959"){ alert("PLEASE WAIT....");
-window.open("http://www.scp-wiki.net/scp-3959-restricted");    }
-    else { alert("INVALID INPUT. PLEASE TRY AGAIN."); }
+   if(passcode == "saraswati3959"){ alert("PLEASE WAIT....");
+   window.open("http://www.scp-wiki.net/scp-3959-restricted");    }
+   else { alert("INVALID INPUT. PLEASE TRY AGAIN."); }
     }
 
-
-
-
-                             var canvas = document.getElementById('myCanvas');
-                             var ctx = canvas.getContext('2d');
-                             var cursorOn=1,cursX=10, cursY=30;
-                             var textColor ="lawngreen";
-                             var toggleCursor;
-                             var words;
-                             var readyTog = 0;
-
-
-      function displayTerm(){
+ var canvas = document.getElementById('myCanvas');
+ var ctx = canvas.getContext('2d');
+ var cursorOn=1,cursX=10, cursY=30;
+ var textColor ="lawngreen";
+ var toggleCursor;
+ var words;
+ var readyTog = 0;
+ 
+ function display(){
  
             ctx.fillStyle  = "black"; 
             ctx.fillRect(0,0,1200,600); 
@@ -76,7 +64,6 @@ window.open("http://www.scp-wiki.net/scp-3959-restricted");    }
 }
 
 
-
 function startUp1() { type("   FOUNDATION MODIFIED BIOS PLATFORM v8.00");  newline(2); }
 function startUp2() { type("   Press F12 to Enter Setup"); newline(4); }
 function startUp3() { type("   Please wait  ... "); }
@@ -87,12 +74,11 @@ function startUp7() { type("   strictly prohibited. All information contained
 function startUp8() { type("   site director if you are missing proper security clearance."); newline(6); }
 function startUp9() { type("   PLEASE SUBMIT SECURITY CREDENTIALS (LEVEL 5):"); toggleCursor = 1; readyTog = 1;}
 
-
-
 function newline(n){cursX=10; cursY+=15*n;}
+
 function type(string){ctx.fillText(string,cursX,cursY);cursX+=string.length*8;}
 
-function flashCursor(){
+function flash(){
    if(toggleCursor == 1) {
    if(cursorOn==1) {ctx.fillStyle = textColor; ctx.fillRect(cursX,cursY-11,7,14);}
    else {cursorOff();}
@@ -103,16 +89,14 @@ function flashCursor(){
 function cursorOff(){ctx.fillStyle = "black"; ctx.fillRect(cursX,cursY-11,7,14);}
 
 
-displayTerm();
-setInterval('flashCursor()',500);
+display();
+setInterval('flash()',500);
 
 </script>
-
 </form>
-                </body>
-          </head>
-
-     </html>
+</body>
+</head>
+</html>
 
 [[/html]]
 
