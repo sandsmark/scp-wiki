@@ -1,0 +1,177 @@
+title:Wiki Syntax
+> Note: The majority of the contents of this page are translated and originally from the [http://ja.scp-wiki.net/wiki-syntax Wiki Syntax] page on the SCP-JP wiki.
+
+> This page references [http://www.wikidot.com/doc:wiki-syntax Wikidot's syntax documentation].
+
+This is a reference for Wikidot syntax used often (or not) in writing SCPs.
+
+[[toc title="Table of Contents"]]
+
++ Text
+
+||~ Style||~ Example ||
+|| @@**Bold**@@ || **Bold** ||
+|| @@//Italics//@@ || //Italics// ||
+|| @@__Underline__@@ || __Underline__ ||
+|| @@--Strikethrough--@@ || --Strikethrough-- ||
+|| @@{{Teletype (Monospaced)}}@@ || {{Teletype (Monospaced)}} ||
+|| @@Text^^Superscript^^@@ || Text^^Superscript^^ ||
+|| @@Text,,Subscript,,@@ || Text,,Subscript,, ||
+|| @@[[span style="color:red"]]//span// Inline Element[[/span]]@@ || [[span style="color:red"]]//span// Inline Element[[/span]] ||
+|| @@##blue|Predefined## Or ##44FF88|Hex Color Code##@@ || ##blue|Predefined## or ##44FF88|Hex Color Code## ||
+
++ Text Size
+
+Changing size based on current text size:
+
+||~ Style||~ Example ||
+||@@[[size smaller]]Smaller Text[[/size]]@@||[[size smaller]]Smaller Text[[/size]] ||
+||@@[[size larger]]Larger Text[[/size]] @@||[[size larger]]Larger Text[[/size]] ||
+||@@[[size 80%]]80% Of Current Size[[/size]]@@||[[size 80%]]80% of Of Current Size[[/size]] ||
+||@@[[size 100%]]100% Of Current Size[[/size]]@@||[[size 100%]]100% Of Current Size[[/size]] ||
+||@@[[size 150%]]150% Of Current Size[[/size]]@@||[[size 150%]]150% Of Current Size[[/size]]||
+||@@[[size 0.8em]]80% Of Current Size[[/size]]@@||[[size 0.8em]]80% Of Current Size[[/size]]||
+||@@[[size 1em]]100% Of Current Size[[/size]]@@||[[size 1em]]100% Of Current Size[[/size]]||
+||@@[[size 1.5em]]150% Of Current Size[[/size]]@@||[[size 1.5em]]150% Of Current Size[[/size]]||
+
+Setting the size directly:
+
+||~ Style||~ Example ||
+||@@[[size xx-small]]Extra-Extra-Small Text[[/size]]@@||[[size xx-small]]Extra-Extra-Small Text[[/size]] ||
+||@@[[size x-small]]Extra-Small Text[[/size]]@@||[[size x-small]]Extra-Small Text[[/size]]||
+||@@[[size small]]Small Text[[/size]]@@||[[size small]]Small Text[[/size]]||
+||@@[[size large]]Large Text[[/size]]@@||[[size large]]Large Text[[/size]]||
+||@@[[size x-large]]Extra-Large Text[[/size]]@@||[[size x-large]]Extra-Large Text[[/size]]||
+||@@[[size xx-large]]Extra-Extra Large Text[[/size]]@@||[[size xx-large]]Extra-Extra Large Text[[/size]]||
+||@@[[size 7px]]Text Size 7 Pixels[[/size]]@@||[[size 7px]]Text Size 7 Pixels[[/size]]||
+||@@[[size 18.75px]]Text Size 18.75 Pixels[[/size]]@@||[[size 18.75px]]Text Size 18.75 Pixels[[/size]]||
+
++ Links
+
+URLs will automatically become links:
+
+> @@http://www.scp-wiki.net@@ - http://www.scp-wiki.net
+
+To link specific words or phrases, use the following:
+
+> @@[http://www.scp-wiki.net SCP Foundation]@@ - [http://www.scp-wiki.net SCP Foundation]
+> @@[[[http://www.scp-wiki.net | SCP Foundation]]]@@ - [[[http://www.scp-wiki.net | SCP Foundation]]]
+
+Adding an asterisk (*) at the beginning opens the link in a new window:
+
+> @@*http://www.scp-wiki.net@@ - *http://www.scp-wiki.net
+> @@[*http://www.scp-wiki.net SCP Foundation]@@ - [*http://www.scp-wiki.net SCP Foundation]
+> @@[[[*http://www.scp-wiki.net | SCP Foundation]]]@@ - [[[*http://www.scp-wiki.net | SCP Foundation]]]
+
++ Collapsibles
+
+Collapsibles are for hiding long blocks of text to prevent the page from getting too long. The hidden text appears once you click on the collapsible link:
+
+> @@[[collapsible show="+ Open" hide="- Close"]]@@
+> @@Collapsed text here@@
+> @@[[/collapsible]]@@
+
+[[collapsible show="+ Open" hide="- Close"]]
+Collapsed text here
+[[/collapsible]]
+
+The collapsible show/hide text is "+ show block" and "- hide block" by default, if no show/hide is specified.
+
+For long text blocks, use "hideLocation="both"" to show the hide link at the bottom of the block as well:
+
+> @@[[collapsible hideLocation="both" show="+ Open" hide="- Close"]]@@
+> @@Longer@@
+> @@Collapsed@@
+> @@Text@@
+> @@Here@@
+> @@[[/collapsible]]@@
+
+[[collapsible hideLocation="both" show="+ Open" hide="- Close"]]
+Longer
+Collapsed
+Text
+Here
+[[/collapsible]]
+
++ Footnotes
+
+Footnotes are good for inserting more information into text without cluttering the text:
+
+> @@Content[[footnote]]Footnote content[[/footnote]]. More content[[footnote]]More footnote content[[/footnote]].@@
+
+Inserting @@[[footnoteblock]]@@ determines the position of the footnotes. Otherwise, footnotes will appear at the bottom of the page:
+
+> Content[[footnote]]Footnote content[[/footnote]]. More content[[footnote]]More footnote content[[/footnote]].
+
+[[footnoteblock]]
+
++ Images
+
+Use this code, including the right alignment, width, and border attributes, to insert images. The attributes in the code are standard for use in articles, although changing them for reasonable usage is allowed:
+
+> @@[[div style="float:right; margin:0 2em 1em 2em; width:300px; border:0;"]]@@
+> @@|||| [[image URL-goes-here width="300px"]] ||@@
+> @@||||~ ^^Caption^^ ||@@
+> @@[[/div]]@@
+
++ Audio and Video
+
+Use the HTML5 media player to add audio and video. Change the type to either "audio" or "video" to fit what you're inserting:
+
+> @@[[include :snippets:html5player@@
+> @@|type=audio@@
+> @@|URL=URL-goes-here]]@@
+
++ Tabs
+
+Tab sections can be placed within tabs, but be warned that Wikidot may start acting up if you do so:
+
+> @@[[tabview]]@@
+> @@[[tab Tab 1]]@@
+> @@Contents of tab 1@@
+> @@[[/tab]]@@
+> @@[[tab Tab 2]]@@
+> @@Contents of Tab 2@@
+> @@[[/tab]]@@
+> @@[[tab Tab 3]]@@
+> @@Contents of Tab 3@@
+> @@[[/tab]]@@
+> @@[[/tabview]]@@
+
+[[tabview]]
+[[tab Tab 1]]
+Contents of tab 1
+[[/tab]]
+[[tab Tab 2]]
+Contents of tab 2
+[[/tab]]
+[[tab Tab 3]]
+Contents of tab 3
+[[/tab]]
+[[/tabview]]
+
++ Tables
+
+Tables can be useful for experiment logs, or SCPs with a large number of component entities:
+
+> @@||~ TITLE-FORMATTED CELL ||~ TITLE-FORMATTED CELL ||~ TITLE-FORMATTED CELL ||@@
+> @@|| Non-formatted cell || Non-formatted cell || Non-formatted cell ||@@
+> @@||< Left-aligned cell ||< Left-aligned cell ||< Left-aligned cell ||@@
+> @@||> Right-aligned cell ||> Right-aligned cell ||> Right-aligned cell ||@@
+> @@||= Justified cell ||= Justified cell ||= Justified cell||@@
+
+||~ TITLE-FORMATTED CELL ||~ TITLE-FORMATTED CELL ||~ TITLE-FORMATTED CELL ||
+|| Non-formatted cell || Non-formatted cell || Non-formatted cell ||
+||< Left-aligned cell ||< Left-aligned cell ||< Left-aligned cell ||
+||> Right-aligned cell ||> Right-aligned cell ||> Right-aligned cell ||
+||= Center-aligned cell ||= Center-aligned cell ||= Center-aligned cell||
+
+Adding more cell separators (||) before the cell's text will make the cell span multiple columns based on how many cell separators you used:
+
+> @@||~ Cell title ||~ Cell title ||~ Cell title ||@@
+> @@|| Cell spanning one column |||| Cell spanning two columns ||@@
+> @@|||||| Cell spanning three columns||@@
+
+||~ Cell title ||~ Cell title ||~ Cell title ||
+|| Cell spanning one column |||| Cell spanning two columns ||
+|||||| Cell spanning three columns||
