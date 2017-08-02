@@ -304,6 +304,12 @@ Grand crosslinking project:
 [[module ListPages tags="-admin" order="created_at desc" prependLine="||~Page||~Created at||~rating||~author||~comments||" perPage="30" separate="false" rating=">=-5"]]
 ||%%title_linked%%||%%created_at|%%||%%rating%%||%%created_by%%||%%comments%%||
 [[/module]]
+
+My SCPs, rated <=+50 after 6 months, excluding Joke articles.
+[[module listPages separate="no" created_by="communism will win" tags="scp, -joke, -explained, -archived, -001, -decommissioned" rating="<=50" created_at="older than 6 month"]]
+%%title_linked%%: +%%rating%%, posted %%created_at|%%
+[[/module]]
+
 [[/tab]]
 [[/tabview]]
 [[/==]]
