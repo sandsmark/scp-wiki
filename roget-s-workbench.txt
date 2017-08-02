@@ -1,5 +1,10 @@
 title:Rogetbox
-[[iframe http://home.helenbot.com/tools/tagSearch.php style="border: 0;" width="100%" height="800"]]
++++ SCPs Up For Review (Older than 6 months)
+[[module ListPages separate="no" tags="scp, -archived, -in_rewrite" created_at="older than 180 days" order="rating" rating="<=10"]] 
+* %%title_linked%% [+%%rating%%]
+[[/module]]
+
+
 ~~~~
 ----
 
@@ -15,89 +20,3 @@ __Author Page Ranks__:
 [[/module]]
 
 [[/collapsible]]
-
-----
-
-[[collapsible show="This is a test. Please ignore." hide="This is a test. Please ignore."]]
-[!-- SCP Block --]
-
-[[div class="feature-block"]]
-
-[[div class="content-panel left-column"]]
-[[div class="panel-heading"]]
-Top Rated SCPs of All Time
-[[/div]]
-[[div class="panel-body"]]
-
-[[module ListPages rating=">10" tags="scp" order="rating desc" separate="false" date="2017.05.28"]]
-%%title_linked%% (+%%rating%%)
-[[/module]]
-
-[[/div]]
-[[div class="panel-footer"]]
-  [!-- Placeholder --]
-[[/div]]
-[[/div]]
-[[/div]]
-
-[!-- Tale Block --]
-
-[[div class="content-panel right-column"]]
-[[div class="panel-heading"]]
-Top Rated Tales of All Time
-[[/div]]
-[[div class="panel-body"]]
-
-[[module ListPages rating=">10" tags="tale" order="rating desc" separate="false" date="2017.05.28"]]
-%%title_linked%% (+%%rating%%)
-[[/module]]
-
-[[/div]]
-[[div class="panel-footer"]]
-  [!-- Placeholder --]
-[[/div]]
-[[/div]]
-
-~~~~
-
-[!-- GOI Block --]
-
-[[div class="feature-block"]]
-
-[[div class="content-panel left-column"]]
-[[div class="panel-heading"]]
-Top Rated GOI-Formats of All Time
-[[/div]]
-[[div class="panel-body"]]
-
-[[module ListPages rating=">10" tags="goi-format" order="rating desc" separate="false" date="2017.05.28"]]
-%%title_linked%% (+%%rating%%)
-[[/module]]
-
-[[/div]]
-[[div class="panel-footer"]]
-  [!-- Placeholder --]
-[[/div]]
-[[/div]]
-[[/div]]
-
-[!-- GOI Block --]
-
-[[div class="content-panel right-column"]]
-[[div class="panel-heading"]]
-Other Top Rated Pages of All Time
-[[/div]]
-[[div class="panel-body"]]
-
-[[module ListPages rating=">10" tags="-scp,-tale,-goi-format" order="rating desc" separate="false" date="2017.05.28"]]
-%%title_linked%% (+%%rating%%)
-[[/module]]
-
-[[/div]]
-[[div class="panel-footer"]]
-  [!-- Placeholder --]
-[[/div]]
-[[/div]]
-[[/collapsible]]
-~~~~
-----
