@@ -1,0 +1,500 @@
+title:SCP-3747
+[[>]]
+[[module Rate]]
+[[/>]]
+[[html]]
+<body>
+<style type="text/css">
+body
+{
+   font-family:verdana,arial,helvetica,sans-serif;
+   font-size:12.8px;
+   color:#333;
+   line-height:141%
+}
+blockquote
+{
+  border:1px dashed #999;
+  padding: 0 12.8px;
+  background-color:#f4f4f4
+}
+a {
+    color: #b01;
+    text-decoration: none;
+    background: transparent;
+}
+a.newpage {
+    color: #d61;
+    text-decoration: none;
+    background: transparent;
+}
+a:hover {
+    text-decoration: underline;
+    background-color: transparent;
+}
+.collapsed {
+  display: none;
+}
+.vanished {
+  display: none;
+}
+.warning-cont {
+  color: red;
+  text-align: center;
+}
+#warning-header {
+  size: 25.6px;
+}
+#warning {
+  size: 20px;
+}
+.retrofont {
+font-family: 'Geo', cursive;
+font-weight: bold;
+}
+.cblwarning {
+  color: red;
+}
+.green {
+  color: green;
+}
+</style>
+<script type="text/javascript">
+function addEvent(element, eventName, callback) {
+    if (element.addEventListener) {
+        element.addEventListener(eventName, callback, false);
+    } else if (element.attachEvent) {
+        element.attachEvent("on" + eventName, callback);
+    } else {
+        element["on" + eventName] = callback;
+    }
+}
+
+window.toggle = function(cls) {
+  var collapsed = document.querySelectorAll("." + cls + ".collapsed");
+  var expanded = document.querySelectorAll("." + cls + ":not(.collapsed)");
+  var i;
+  for(i = 0; i < collapsed.length; i++) {
+    collapsed[i].classList.remove("collapsed");
+  }
+  for(i = 0; i < expanded.length; i++) {
+    expanded[i].classList.add("collapsed");
+  }
+};
+
+// typewriter code
+function Typewriter(el, str, delay) {
+  if (!(this instanceof Typewriter)) return new Typewriter(el, str, delay);
+
+  this.el = el;
+  this.str = str || el.innerHTML || el.value;
+  this.delay = delay || 100;
+  this.i = 0;
+}
+
+Typewriter.prototype.type = function() {
+  var i = this.i,
+    char = this.str.charAt(i);
+
+  if (!char) {
+    clearInterval(this.intervalID);
+    return this;
+  }
+
+  if (char === '<') this.isTag = true;
+  if (char === '>') this.isTag = false;
+
+  this.el.innerHTML += char;
+  return this.i++;
+};
+
+Typewriter.prototype.start = function() {
+  var self = this;
+  if (this.i < 0) this.i = 0;
+  if (this.el.innerHTML === this.str) this.clear();
+
+  // this.emit('start');
+  (function loop() {
+    self.type();
+    if (self.isTag) return loop();
+    self.intervalID = setTimeout(loop, self.delay);
+  }());
+
+  return this;
+};
+
+Typewriter.prototype.stop = function() {
+  this.i = -1;
+  return this;
+};
+
+Typewriter.prototype.restart = function() {
+  this.clear();
+  this.i = 0;
+  return this.start();
+};
+
+Typewriter.prototype.clear = function() {
+  this.el.innerHTML = '';
+  return this;
+};
+
+var junkChars = ['ó','ò','ñ','ç','¿','ß','à','è','ì','ù','Œ','þ','█','%','+','=','.','«','»','£','$','€','½','¾','À','È','Ì','Ò','Ù','Â','Ê','â','ê','Ä','Ë','ä','ë','ÿ','ü','•'];
+
+var randomIntFromInterval = function(min,max)
+{
+  return Math.floor(Math.random()*(max-min+1)+min);
+};
+
+var getJunkChars = function(length) {
+  var res = '';
+  var i;
+  for (i = 0; i < length; i++) {
+    res += junkChars[randomIntFromInterval(0,junkChars.length - 1)];
+  }
+  return res;
+};
+
+var selTabs = [];
+
+window.onload = function() { 
+
+selTabs = [
+  document.getElementsByClassName('selTab1')[0],
+  document.getElementsByClassName('selTab2')[0],
+  document.getElementsByClassName('selTab3')[0],
+  document.getElementsByClassName('selTab4')[0],
+  document.getElementsByClassName('selTab5')[0]
+];
+
+var msg1 = '= SECURITY CLEARANCE REQUIRED =';
+var msg2 = 'This file is under RESTRICTED ACCESS, and requires Level 1 credentials at a minimum to proceed. Please input your Personal Identification Number supplied by the Foundation, and SCiPNET will determine your level of security clearance. Impersonating another member of Foundation personnel via PIN will result in result in the offender being disciplined appropriately, regardless of clearance level.';
+
+var delay1 = 50;
+var delay2 = 25;
+
+var toD1 = delay1 * (msg1.length);
+var toD2 = delay2 * (msg2.length);
+
+var stopEarly = function(){
+  document.querySelectorAll("." + "article" + ":not(.collapsed)")[0].classList.remove("vanished");
+};
+
+var typ1 =Typewriter(document.querySelectorAll('#warning-header')[0],msg1,delay1)
+var typ2 = Typewriter(document.querySelectorAll('#warning')[0],msg2,delay2);
+
+addEvent(document.querySelectorAll('#warning-header')[0],"click",stopEarly);
+addEvent(document.querySelectorAll('#warning')[0],"click",stopEarly);
+
+typ1.start();
+setTimeout(function() { typ2.start(); }, toD1 + 500);
+setTimeout(function () { document.querySelectorAll("." + "article" + ":not(.collapsed)")[0].classList.remove("vanished"); }, toD2 + toD1 + 500 + 750);
+
+addEvent(document.querySelectorAll('.verpercle')[0],"click",function(){
+  document.getElementsByClassName('selector')[0].classList.remove('vanished');
+});
+};
+
+var toggled = 0;
+window.afterfirstclick = function() {
+  toggle('article');
+  if (toggled === 0) {
+  setTimeout(function() { 
+    var para = document.querySelectorAll('.verpercle')[0];
+    para.innerHTML += '.';},1000);
+  setTimeout(function() { 
+    var para = document.querySelectorAll('.verpercle')[0];
+    para.innerHTML += '.';},2000);
+  setTimeout(function() { 
+    var para = document.querySelectorAll('.verpercle')[0];
+    para.innerHTML += '.';},3000);
+    toggled = 1;
+  setTimeout(function() {
+    document.querySelectorAll("." + "selector")[0].classList.remove("vanished");},4000);
+  }
+};
+
+var encrypting = 0;
+var lastSelTabOpened = 0;
+var freakingOut = 0;
+
+var unencrypt = function(element,num) {
+/*
+  encrypting = 1;
+  var encryptableElems = getTextNodes(element);
+  var cbl = element.getElementsByClassName('cblwarning')[0];
+  if (encryptableElems.length !== 0) {
+  var buckets = [];
+  var i = 0;
+  for (i = 0; i < encryptableElems.length; i++) {
+    buckets[i] = encryptionBucket(encryptableElems[i],cbl);
+  }
+  for (i = 0; i < encryptableElems.length; i++) {
+    buckets[i].enc(num);
+  }
+  }
+  setTimeout(function(){encrypting = 0;},3000);
+*/
+};
+
+window.showSelTab = function(num) {
+  if (encrypting === 0 && lastSelTabOpened === 0) {
+  var selTab = selTabs[num];
+  for (i = 0; i < selTabs.length; i++) {
+    var st = selTabs[i];
+    if (!(st.classList.contains('vanished')))
+      st.classList.add('vanished');
+  }
+  unencrypt(selTab,num);
+  selTab.classList.remove('vanished');
+}};
+</script>
+<div class="part1">
+<div class="warning-cont">
+<h2 id="warning-header"> 
+  
+</p>
+<h3 id="warning">  
+ 
+</p>
+</div>
+
+<div class="article vanished">
+<p><center><a onclick="afterfirstclick();">[ INPUT PERSONAL IDENTIFICATION NUMBER ]</a></center></p>
+</div>
+<div class="article collapsed">
+ <p><center><a onclick="toggle('article');">[ PERSONAL IDENTIFICATION NUMBER VERIFIED ]</a></center></p>
+<hr />
+<p><sub><tt><sub class="verpercle">VERIFYING PERSONNEL CLEARANCE</tt></sub></p>
+<div class="selector vanished">
+<p style="color: red;"><b>Multiple relevant levels of security clearance have been identified. Please select the desired clearance level to use to view this file:</b></p>
+<p><a onclick="showSelTab(0)">Level 1/GENERAL Clearance</a></p>
+<p><a onclick="showSelTab(1)">Level 2/RESEARCHER Clearance</a></p>
+<p><a onclick="showSelTab(2)">Level 3/3747 Clearance</a></p>
+<p><a onclick="showSelTab(3)">Level 4/PHYSICS Clearance</a></p>
+<p><a onclick="showSelTab(4)">Level 5/HCML Clearance</a></p>
+</div>
+<div class="selTab1 vanished">
+<hr />
+<p><b >Item #:</b> SCP-3747</p>
+<p><b>Object Class:</b> Safe</p>
+<p><b>Special Containment Procedures:</b> SCP-3747 is to be kept in a standard standard low-value object containment vault with an accessible power outlet. SCP-3747 is to be powered on at all times. The display of SCP-3747 is to be monitored at all times, and footage stored on File Server 3747-Alpha. Footage is available to any researcher on request.</p>
+<p><b>Description:</b> SCP-3747 is a Dell Inspiron PP12L Laptop manufactured by Dell Technologies in 2004. SCP-3747 runs the Windows XP SP2 operating system, and its hard drive's contents include several documents, pictures, and games. Full technical specifications can be found in Document 3747-23.</p>
+<p>On the desktop of SCP-3747 is an executable named "connect.exe". Running the executable will show a command prompt window with two lines of text. The first line will always read "CONNECT v1.0". The second line is a brief status report describing SCP-3747-A. These "reports" describe the current state of SCP-3747-A, as well as its current location in intergalactic spacetime. A list of known reports can be found in Document 3747-34.</p>
+<p>"connect.exe" will not run on any other machine besides SCP-3747. Decompiling of "connect.exe" has yet to reveal any method of its connection, nevertheless it is able to connect to SCP-3747-A even in the absence of internet. It is unknown how SCP-3747 connects to SCP-3747-A, though anomalous means are suggested.</p>
+<p><b>Addendum 3747-1:</b> History</p>
+<p>SCP-3747 was recovered from the house of David Rholdmann, a known associate of GoI-102 ("Gamers Against Weed"). It was determined by David Rholdmann's diary that he was attempting to connect to the Foundation's database, however, he instead connected to SCP-3747-A. The reason for this is unknown.</p>
+</div>
+<div class="selTab2 vanished">
+<hr />
+<p><b >Item #:</b> SCP-3747</p>
+<p><b>Object Class:</b> Safe</p>
+<p><b>Special Containment Procedures:</b> SCP-3747 is to be kept in a standard standard low-value object containment vault with an accessible power outlet. SCP-3747 is to be powered on at all times. The display of SCP-3747 is to be monitored at all times, and footage stored on File Server 3747-Alpha. Footage <span style="color: blue;">before 02/14/2015</span> is available to any researcher on request. <span style="color: blue;">Any footage from after 02/14/2015 can only be viewed with permission from the on-duty HCML supervisor.</span></p>
+<p><b>Description:</b> SCP-3747 is a Dell Inspiron PP12L Laptop manufactured by Dell Technologies in 2004. SCP-3747 runs the Windows XP SP2 operating system, and its hard drive's contents include several documents, pictures, and games. Full technical specifications can be found in Document 3747-23.</p>
+<p>On the desktop of SCP-3747 is an executable named "connect.exe". Running the executable will show a command prompt window with two lines of text. The first line will always read "CONNECT v1.0". The second line is a brief status report describing SCP-3747-A. These "reports" describe the current state of SCP-3747-A, as well as its current location in intergalactic spacetime. A list of known reports can be found in Document 3747-34.</p>
+<p>"connect.exe" will not run on any other machine besides SCP-3747. Decompiling of "connect.exe" has yet to reveal any method of its connection, nevertheless it is able to connect to SCP-3747-A, even in the absence of internet. It is unknown how SCP-3747 connects to SCP-3747-A, though anomalous means are suggested.</p>
+<p><b>Addendum 3747-1:</b> History</p>
+<p>SCP-3747 was recovered from the house of David Rholdmann, a known associate of GoI-102 ("Gamers Against Weed"). It was determined by David Rholdmann's diary that he was attempting to connect to the Foundation's database, however, he instead connected to SCP-3747-A. The reason for this is unknown.</p>
+<span style="color: blue;">
+<p><b>Addendum 3747-2:</b> Document 3747-34</p>
+<blockquote><b><p>Report:</p><p>Notes:</p></b></blockquote>
+<blockquote>
+<p><b>Report:</b> <tt>IN REST AT ███.███-██████</tt></p>
+<p><b>Notes:</b> The numbers appear to be coordinates, though the system used has yet to be deciphered.</p>
+</blockquote>
+<blockquote>
+<p><b>Report:</b> <tt>QRTTV SEEN AT ███.███-██████</tt></p>
+<p><b>Notes:</b> The numbers shown are variable.</p>
+</blockquote>
+<blockquote>
+<p><b>Report:</b> <tt>MOBILIZING TO ███.███-██████, AT ███.███-██████</tt></p>
+<p><b>Notes:</b> The first set of numbers are identical to the ones shown in the previous report, though the second set constantly changes.</p>
+</blockquote>
+<blockquote>
+<p><b>Report:</b> <tt>DEFUSE COMMENCING</tt></p>
+<p><b>Notes:</b> This report always occurs after the previously shown report.</p>
+</blockquote>
+<blockquote>
+<p><b>Report:</b> <tt>SUCCESS, RETURNING TO ███.███-██████, AT ███.███-██████</tt></p>
+<p><b>Notes:</b> This report always occurs after the previously shown report. The first set of numbers are identical to the ones in the "resting" message, though the second set constantly changes.</p>
+</blockquote>
+<blockquote>
+<p><b>Report:</b> <tt>[DATA EXPUNGED]</tt></p>
+<p><b>Notes:</b> This report has been shown since 02/14/2015. Though this implies an error in the connection of SCP-3747, it is also theorized that <tt>[DATA EXPUNGED]</tt>.</p>
+</blockquote>
+</span>
+</div>
+<div class="selTab3 vanished">
+<hr />
+<p><b >Item #:</b> SCP-3747</p>
+<p><b>Object Class:</b> <span style="color: blue;">Keter</span></p>
+<p><b>Special Containment Procedures:</b> SCP-3747 is to be kept in a standard standard low-value object containment vault with an accessible power outlet. SCP-3747 is to be powered on at all times. The display of SCP-3747 is to be monitored at all times, and footage stored on File Server 3747-Alpha. Footage before 02/14/2015 is available to any researcher on request. Any footage from after 02/14/2015 can only be viewed with permission from the on-duty HCML supervisor.</p>
+<p style="color: blue;">SCP-3747-A is to be monitored using the Atmos-Frank Telescope at Site-20. Any movements made by SCP-3747-A not reported by SCP-3747 are to be reported to the on-duty HCML supervisor. Should information regarding SCP-3747-A be released in any form of press, false information is to be disseminated that the aforementioned release is a hoax.</p>
+<p><b>Description:</b> SCP-3747 is a Dell Inspiron PP12L Laptop manufactured by Dell Technologies in 2004. SCP-3747 runs the Windows XP SP2 operating system, and its hard drive's contents include several documents, pictures, and games. Full technical specifications can be found in Document 3747-23.</p>
+<p>On the desktop of SCP-3747 is an executable named "connect.exe". Running the executable will show a command prompt window with two lines of text. The first line will always read "CONNECT v1.0". The second line is a brief status report describing SCP-3747-A. These "reports" describe the current state of SCP-3747-A, as well as its current location in intergalactic spacetime. A list of known reports can be found in Document 3747-34.</p>
+<p style="color: blue;">SCP-3747-A is the designation for six objects generally located near the Saturn Hexagon.
+ All instances of SCP-3747-A are identical, and are red crescent-shaped vehicles that are at least 1.3 kilometers in height. Instances of SCP-3747-A are extremely durable, as they regularly inhabit levels of Saturn's atmosphere where pressure is at ██ megapascals. Instances of SCP-3747-A are capable of faster-than-light travel, and can navigate interstellar space successfully. SCP-3747-A is always in a ring formation of at least 20 kilometers in diameter. Instances of SCP-3747-A are equipped with various appendages used for an unknown function.</p>
+<p style="color: blue;">SCP-3747-A follows a cycle with two main phases:</p>
+<ul style="color: blue;">
+<li><b>Inactive Phase:</b> SCP-3747-A is at rest. During this phase, it can be found within the Saturn Hexagon at a depth of █ kilometers. During this time, SCP-3747-A is stationary.</li>
+<li><b>Active Phase:</b> SCP-3747-A leaves the Saturn Hexagon at a speed of █████c. It is unknown how SCP-3747-A attains ultrarelativistic speeds. At this point, the tracking of SCP-3747 becomes impossible. However, using SCP-███ to observe SCP-3747-A, it has been proven that, during Active Phases, <tt>[DATA REDACTED]</tt>
+</ul>
+<p><b>Addendum 3747-1:</b> History</p>
+<p>SCP-3747 was recovered from the house of David Rholdmann, a known associate of GoI-102 ("Gamers Against Weed"). It was determined by David Rholdmann's diary that he was attempting to connect to the Foundation's database, however, he instead connected to SCP-3747-A. The reason for this is unknown.</p>
+<p style="color: blue;">SCP-3747-A was discovered following attempts to trace SCP-3747's signals. Inscription on SCP-3747-A instances match that of GoI-100 (<tt>[DATA REDACTED]</tt>) and imply that SCP-3747-A was <tt>[DATA REDACTED]</tt></p>
+<p><b>Addendum 3747-2:</b> Document 3747-34</p>
+<blockquote><b><p>Report:</p><p>Notes:</p></b></blockquote>
+<blockquote>
+<p><b>Report:</b> <tt>IN REST AT ███.███-██████</tt></p>
+<p><b>Notes:</b> The numbers appear to be coordinates, though the system used has yet to be deciphered. <span style="color: blue;">This corresponds with SCP-3747-A's inactive phase.</span></p>
+</blockquote>
+<blockquote>
+<p><b>Report:</b> <tt>QRTTV SEEN AT ███.███-██████</tt></p>
+<p><b>Notes:</b> The numbers shown are variable.</p>
+</blockquote>
+<blockquote>
+<p><b>Report:</b> <tt>MOBILIZING TO ███.███-██████, AT ███.███-██████</tt></p>
+<p><b>Notes:</b> The first set of numbers are identical to the ones shown in the previous report, though the second set constantly changes. <span style="color: blue;">This corresponds with SCP-3747-A's active phases.</span></p>
+</blockquote>
+<blockquote>
+<p><b>Report:</b> <tt>DEFUSE COMMENCING</tt></p>
+<p><b>Notes:</b> This report always occurs after the previously shown report.</p>
+</blockquote>
+<blockquote>
+<p><b>Report:</b> <tt>SUCCESS, RETURNING TO ███.███-██████, AT ███.███-██████</tt></p>
+<p><b>Notes:</b> This report always occurs after the previously shown report. The first set of numbers are identical to the ones in the "resting" message, though the second set constantly changes. <span style="color: blue;">At the conclusion of this report, SCP-3747-A will have returned to the Saturn Hexagon.</span></p>
+</blockquote>
+<blockquote>
+<p><b>Report:</b> <tt>[DATA EXPUNGED]</tt></p>
+<p><b>Notes:</b> This report has been shown since 02/14/2015. Though this implies an error in the connection of SCP-3747, it is also theorized that <tt>[DATA EXPUNGED]</tt>.</p>
+</blockquote>
+</div>
+<div class="selTab4 vanished">
+<hr />
+<p><b >Item #:</b> SCP-3747</p>
+<p><b>Object Class:</b> Keter</p>
+<p><b>Special Containment Procedures:</b> SCP-3747 is to be kept in a standard standard low-value object containment vault with an accessible power outlet. SCP-3747 is to be powered on at all times. The display of SCP-3747 is to be monitored at all times, and footage stored on File Server 3747-Alpha. Footage before 02/14/2015 is available to any researcher on request. Any footage from after 02/14/2015 can only be viewed with permission from the on-duty HCML supervisor.</p>
+<p>SCP-3747-A is to be monitored using the Atmos-Frank Telescope at Site-20. Any movements made by SCP-3747-A not reported by SCP-3747 are to be reported to the on-duty HCML supervisor. Should information regarding SCP-3747-A be released in any form of press, false information is to be disseminated that the aforementioned release is a hoax.</p>
+<p style="color: blue;">Instances of SCP-3747-B are contained by SCP-3747-A, and require no physical containment of their own. No disinformation protocols are necessary, as SCP-3747-B instances are outside the physical range of telescopes. Civilians are allowed to know of the nature of SCP-3747-B, however, they should not be allowed to discover SCP-3747-B instances.</p>
+<p><b>Description:</b> SCP-3747 is a Dell Inspiron PP12L Laptop manufactured by Dell Technologies in 2004. SCP-3747 runs the Windows XP SP2 operating system, and its hard drive's contents include several documents, pictures, and games. Full technical specifications can be found in Document 3747-23.</p>
+<p>On the desktop of SCP-3747 is an executable named "connect.exe". Running the executable will show a command prompt window with two lines of text. The first line will always read "CONNECT v1.0". The second line is a brief status report describing SCP-3747-A. hese "reports" describe the current state of SCP-3747-A, as well as its current location in intergalactic spacetime. A list of known reports can be found in Document 3747-34.</p>
+<p>SCP-3747-A is the designation for six objects generally located near the Saturn Hexagon.
+ All instances of SCP-3747-A are identical, and are red crescent-shaped vehicles that are at least 1.3 kilometers in height. Instances of SCP-3747-A are durable, as they regularly inhabit levels of Saturn's atmosphere where pressure is at ██ megapascals. Instances of SCP-3747-A are capable of faster-than-light travel, and can navigate interstellar space successfully. SCP-3747-A is always in a ring formation of at least 20 kilometers in diameter. Instances of SCP-3747-A are equipped with various appendages used for <span style="color: blue;">the neutralization of SCP-3747-B instances.</span></p>
+<p>SCP-3747-A follows a cycle with <span style="color: blue;">three</span> main phases:</p>
+<ul>
+<li><b>Inactive Phase:</b> SCP-3747-A is at rest. During this phase, it can be found within the Saturn Hexagon at a depth of █ kilometers. During this time, SCP-3747-A is stationary.</li>
+<li><b>Active Phase:</b> SCP-3747-A leaves the Saturn Hexagon at a speed of █████c. It is unknown how SCP-3747-A attains ultrarelativistic speeds. At this point, the tracking of SCP-3747 becomes impossible. However, using SCP-███ to observe SCP-3747-A, it has been proven that, during Active Phases, <span style="color: blue;">SCP-3747-A will accelerate towards an instance of SCP-3747-B within <tt>[DATA EXPUNGED]</tt> lightyears of the Solar System. It is unknown how SCP-3747-A can detect SCP-3747-B at this distance.</span></li>
+<li style="color: blue;"><b>Neutralization Phase:</b> This phase occurs when SCP-3747-A arrives at an appropriate SCP-3747-B instance. SCP-3747-A will form an expanding ring around SCP-3747-B, and use their appendages to neutralize the SCP-3747-B instance. It is unknown how SCP-3747-A neutralizes SCP-3747-B, though it is currently suspected that the Higgs field is agitated to a point where it resumes a high-energy state.</li>
+</ul>
+<p style="color: blue;">SCP-3747-B is the designation given to a recurring phenomenon that occurs in deep space. SCP-3747-B instances manifest in an unknown pattern. SCP-3747-B appears to be a black sphere that expands at the speed of light, though this is because of the method of how SCP-3747-B alters light. SCP-3747-A was apparently created as a way of neutralizing instances of SCP-3747-B.</p>
+<p style="color: blue;">SCP-3747-B's main threat is its interactions with matter. The known laws of physics do not exist inside of SCP-3747-B instances. The properties inside of SCP-3747-B instances are unknown, but have been speculated on (<i>See Addendum 3747-3</i>). Since SCP-3747-B expands at the speed of light, it is impossible for standard matter to escape SCP-3747-B.</p>
+<P style="color: blue;">SCP-3747-B and <a href="http://www.scp-wiki.net/scp-2821">SCP-2821</a> are theorized to be related anomalies.</p>
+<p><b>Addendum 3747-1:</b> History</p>
+<p>SCP-3747 was recovered from the house of David Rholdmann, a known associate of GoI-102 ("Gamers Against Weed"). It was determined by David Rholdmann's diary that he was attempting to connect to the Foundation's database, however, he instead connected to SCP-3747-A. The reason for this is unknown.</p>
+<p >SCP-3747-A was discovered following attempts to trace SCP-3747's signals. Inscription on SCP-3747-A instances match that of GoI-100 (<span style="color: blue;">"Xia Anomalous Culture Group"</span>) and imply that SCP-3747-A was <span style="color: blue;">constructed following their discovery of SCP-3747-B. Using information received from <a href="http://www.scp-wiki.net/scp-1726">SCP-1726</a> and <a href="http://www.scp-wiki.net/scp-2481">SCP-2481-3</a>, it has been determined that the GoI-100 falsely assumed that SCP-3747-B were <a href="http://www.scp-wiki.net/scp-2440">the manifestations of divine beings</a>, and created SCP-3747-A to neutralize them.</span></p>
+<p><b>Addendum 3747-2:</b> Document 3747-34</p>
+<blockquote><b><p>Report:</p><p>Notes:</p></b></blockquote>
+<blockquote>
+<p><b>Report:</b> <tt>IN REST AT ███.███-██████</tt></p>
+<p><b>Notes:</b> The numbers appear to be coordinates, though the system used has yet to be deciphered. This corresponds with SCP-3747-A's inactive phase.</p>
+</blockquote>
+<blockquote>
+<p><b>Report:</b> <tt>QRTTV SEEN AT ███.███-██████</tt></p>
+<p><b>Notes:</b> The numbers shown are variable.</p>
+</blockquote>
+<blockquote>
+<p><b>Report:</b> <tt>MOBILIZING TO ███.███-██████, AT ███.███-██████</tt></p>
+<p><b>Notes:</b> The first set of numbers are identical to the ones shown in the previous report, though the second set constantly changes. This corresponds with SCP-3747-A's active phases.</p>
+</blockquote>
+<blockquote>
+<p><b>Report:</b> <tt>DEFUSE COMMENCING</tt></p>
+<p><b>Notes:</b> This report always occurs after the previously shown report. <span "color: blue;">This corresponds with SCP-3747-A's neutralization phase.</span></p>
+</blockquote>
+<blockquote>
+<p><b>Report:</b> <tt>SUCCESS, RETURNING TO ███.███-██████, AT ███.███-██████</tt></p>
+<p><b>Notes:</b> This report always occurs after the previously shown report. The first set of numbers are identical to the ones in the "resting" message, though the second set constantly changes. At the conclusion of this report, SCP-3747-A will have returned to the Saturn Hexagon.</p>
+</blockquote>
+<blockquote>
+<p><b>Report:</b> <tt><span style="color: blue;">COMMUNICATIONS INTERRUPTED, POTENTIAL FATAL ERROR</span></tt></p>
+<p><b>Notes:</b> This report has been shown since 02/14/2015. Though this implies an error in the connection of SCP-3747, it is also theorized that <tt>[DATA EXPUNGED]</tt>.</p>
+</blockquote>
+<span style="color: blue;">
+<p><b>Addendum 3747-3:</b> Analysis of SCP-3747-B</p>
+<blockquote>
+<p>In order to understand the anomaly designated SCP-3747-B, you must understand the standard model. You have four categories. The first are quarks, which are what makes up protons and neutrons. The second are the leptons, which contains the electrons we use to make atoms. The third are the bosons, which are the driving force that allows atoms to move, stop, and move again. The fourth, and arguable the most important, is the Higgs Boson, which has a category all to itself. The Higgs Boson, or, more specifically, the Higgs Field, is what gives things mass. Mass is important in the realm of physics, as it determines, more or less, the results of the reactions that make up our universe.</p>
+<p>All particles naturally progress towards a vacuum state, or when a particle has no energy. A particle in this state is referred to as being within a "true vacuum". However, the Higgs field does not follow this rule. With our current understanding of quantum physics, it is possible that the Higgs Field is "metastable", which means that it exists in a resting state, but it has not yet reached its ground state. This "resting state" is known as a "false vacuum". Picture the false vacuum as a coat hook, the true vacuum as the floor, and a Higgs Boson as a coat. The coat hangs on the coat hook, at rest. However, all it takes is a small amount of momentum, and the coat tumbles to the floor.</p>
+<p>So, let's say that the Higgs Boson suddenly stops being metastable, and starts moving towards a true vacuum. First of all, as the Higgs Boson in this state would have a large amount of potential energy, an equal amount of energy would be released from this process. This would cause other Higgs Bosons to exit the state of  metastability, therefore causing a chain reaction in the entire Higgs Field. Secondly, the result of all of these Higgs Bosons collapsing into their true vacuum state would cause the very definition of "mass" to change, and with it, the entirety of the rules of physics. The sheer energy released from this reaction would most likely destroy everything that it comes in contact with. The remaining particles, however, would act in completely different ways, in ways that would most likely be unable to sustain life as we know it.</p>
+<p>There are actually several methods to knock the Higgs Boson from this metaphorical coat hanger. The most mundane is through quantum tunneling, however, <a href="http://www.scp-wiki.net/scp-319">several anomalies</a> could also cause this reaction. So, why haven't we seen an expanding death sphere yet? Because of the anomaly we classify as SCP-3747-A. We actually don't know how SCP-3747-A stops this reaction, but the working theory is that it manually moves the Higgs Field back to the false vacuum state through anomalous means.</p>
+<p>In conclusion, I  submit my proposal that the anomaly we term SCP-3747-B is the result of this chain reaction; the Higgs Field beginning to collapse.</p>
+<p><i>- Senior Researcher Graham</i></p>
+</blockquote>
+</span>
+</div>
+<div class="selTab5 vanished">
+<hr />
+<p><b >Item #:</b> SCP-3747</p>
+<p><b>Object Class:</b> <span style="color: blue;">Euclid</p>
+<p><b>Special Containment Procedures:</b> <span style="color: blue;">SCP-3747 and all related anomalous phenomena have ceased activity. The current state of SCP-3747, as well as Incident 3747-Gamma, is classified to Level 5 personnel. Should SCP-3747-B resume activity, research is to be directed into the neutralization of SCP-3747-B instances. Disinformation measures are in effect for SCP-3747-A.</span></p>
+<p>SCP-3747-A is to be monitored using the Atmos-Frank Telescope at Site-20. Any movements made by SCP-3747-A <strike>not reported by SCP-3747</strike> are to be reported to the on-duty HCML supervisor. Should information regarding SCP-3747-A be released in any form of press, false information is to be disseminated that the aforementioned release is a hoax.</p>
+<p style="color: blue;">If possible, PA-4851 is to be terminated.</p>
+<p><b>Description:</b></p>
+<div class="collapsed1">
+<p><a onclick="toggle('collapsed1');">+ No new information detected. Segment collapsed.</a></p>
+</div>
+<div class="collapsed1 collapsed">
+<p><a onclick="toggle('collapsed1');">- Collapse segment</a></p>
+<p>SCP-3747 is a Dell Inspiron PP12L Laptop manufactured by Dell Technologies in 2004. SCP-3747 runs the Windows XP SP2 operating system, and its hard drive's contents include several documents, pictures, and games. Full technical specifications can be found in Document 3747-23.</p>
+<p>On the desktop of SCP-3747 is an executable named "connect.exe". Running the executable will show a command prompt window with two lines of text. The first line will always read "CONNECT v1.0". The second line is a brief status report describing SCP-3747-A. These "reports" describe the current state of SCP-3747-A, as well as its current location in intergalactic spacetime. A list of known reports can be found in Document 3747-34.</p>
+<p>SCP-3747-A is the designation for six objects generally located near the Saturn Hexagon.
+ All instances of SCP-3747-A are identical, and are red crescent-shaped vehicles that are at least 1.3 kilometers in height. Instances of SCP-3747-A are durable, as they regularly inhabit levels of Saturn's atmosphere where pressure is at ██ megapascals. Instances of SCP-3747-A are capable of faster-than-light travel, and can navigate interstellar space successfully. SCP-3747-A is always in a ring formation of at least 20 kilometers in diameter. Instances of SCP-3747-A are equipped with various appendages used for the neutralization of SCP-3747-B instances.</p>
+<p>SCP-3747-A follows a cycle with three main phases:</p>
+<ul>
+<li><b>Inactive Phase:</b> SCP-3747-A is at rest. During this phase, it can be found within the Saturn Hexagon at a depth of █ kilometers. During this time, SCP-3747-A is stationary.</li>
+<li><b>Active Phase:</b> SCP-3747-A leaves the Saturn Hexagon at a speed of █████c. It is unknown how SCP-3747-A attains ultrarelativistic speeds. At this point, the tracking of SCP-3747 becomes impossible. However, using SCP-███ to observe SCP-3747-A, it has been proven that, during Active Phases, SCP-3747-A will accelerate towards an instance of SCP-3747-B within <tt>[DATA EXPUNGED]</tt> lightyears of the Solar System. It is unknown how SCP-3747-A can detect SCP-3747-B at this distance.</li>
+<li><b>Neutralization Phase:</b> This phase occurs when SCP-3747-A arrives at an appropriate SCP-3747-B instance. SCP-3747-A will form an expanding ring around SCP-3747-B, and use their appendages to neutralize the SCP-3747-B instance. It is unknown how SCP-3747-A neutralizes SCP-3747-B, though it is currently suspected that the Higgs field is agitated to a point where it resumes a high-energy state.</li>
+</ul>
+<p>SCP-3747-B is the designation given to a recurring phenomenon that occurs in deep space. SCP-3747-B instances manifest in an unknown pattern. SCP-3747-B appears to be a black sphere that expands at the speed of light, though this is because of the method of how SCP-3747-B alters light. SCP-3747-A was apparently created as a way of neutralizing instances of SCP-3747-B.</p>
+<p>SCP-3747-B's main threat is its interactions with matter. The known laws of physics do not exist inside of SCP-3747-B instances. The properties inside of SCP-3747-B instances are unknown, but have been speculated on. Since SCP-3747-B expands at the speed of light, it is impossible for standard matter to escape SCP-3747-B.</p>
+</div>
+<p><b>Addendum 3747-1:</b> Incident 3747-Gamma</p>
+<blockquote>
+<p><b>Foreword:</b> On 02/14/2015, SCP-3747 unexpectedly shut down. During a manual reboot of SCP-3747, an unidentified video chat client opened. The video feed contained what appeared to be Senior Researcher Graham, who demanded to speak with Senior Researcher Graham. For ease of reading, this universe's Senior Researcher Graham will be referred to as Graham 1, while the one speaking from SCP-3747 will be referred to as Graham 2.</p>
+<p><b>[ BEGIN LOG ]</b></p>
+<p><b>Graham 1:</b> Who are you?</p>
+<p><b>Graham 2:</b> You. Foundation Senior Researcher Harold John Graham, clearance level 4. Theoretical Physics Department, responsible for anomalies such as SCP-3747, SCP-2821, and <a href="http://www.scp-wiki.net/scp-094">SCP-094</a>.</p>
+<p><b>Graham 1:</b> How do I know you're not some body-snatcher or shapeshifter that's impersonating me?</p>
+<p><b>Graham 2:</b> Your wife's name is Anabel Franklin Graham, maiden name Smith. You have one child, Harold John Jr.</p>
+<p><b>Graham 1:</b> Anybody with general access to the database would know that. Hell, anyone who knew me well enough outside of the Foundation would know that.</p>
+<p><b>Graham 2:</b> Fine. When you were twelve years old, you were playing on your Super Nintendo Entertainment System with your best friend, Peter Farley. You were playing Mario Kart, and you were in the lead. You had bet twenty dollars on yourself in the game, and Peter had done the same for himself. You were in the lead. Suddenly, Peter spills his soda on the system, causing it to break. You manage to fix it, which leads you to a hobby in technology, which culminates in a career in theoretical physics. That incident is what led to your career at the Foundation, and that's why you're talking to me, and why I'm talking to you.</p>
+<p><i>No conversation for twelve seconds.</i></p>
+<p><b>Graham 2:</b> Listen, I don't have all day. I've got something to relay to you.</p>
+<p><b>Graham 1:</b> I still think you might be some kind of mind reader, but shoot.</p>
+<p><b>Graham 2:</b> If this thing is working properly, this is streaming through SCP-3747. I want you to destroy it. Just smash it with whatever you have available.</p>
+<p><b>Graham 1:</b> What? Why? I could get into trouble for that. And I'm still not sold that you're actually me.</p>
+<p><b>Graham 2:</b> Okay. Your understanding of the Higgs Field is wrong. Yes, a collapse to true vacuum could happen, but it wouldn't happen randomly. If that was the case, you'd make half a dozen by walking. There needs to be some kind of force behind it. Look, this may sound a bit crazy, but SCP-3747 is responsible for the phenomenom known as SCP-3747-B.</p>
+<p><b>Graham 1:</b> I'm not buying that.</p>
+<p><b>Graham 2:</b> You see, let's say that, once apon a time, there was an entity. We still don't know what it is, nor where it came from. However, it's malevolent, and creates SCP-3747-B to eat up the universe. However, Xia sees this and creates SCP-3747-A as a countermeasure. As SCP-3747-A starts getting about, the entity gets mad, and tries to fight the dynasty head-on. But they were expecting that, and the entity falls into a trap. The thing is fully contained, and everything is well.</p>
+<p><b>Graham 2:</b> Fast forward to the present day. The entity manages to escape and sneak into the Foundation databanks. I don't know how because it's hard to preform forensics like that on your own database, let alone one in another universe. I personally think that somebody let an artifact a bit too close to a server. But now, the entity is trapped in the Foundation servers, which have enough layers of security to make them watertight. Still can't do anything.</p>
+<p><b>Graham 2:</b> Enter Gamers Against Weed. One of 'em tries to break into the database, probably to stick a meme in there. But he provides the perfect oppertunity for the entity to escape. So the thing gets in there, and starts creating SCP-3747-B instances again. But SCP-3747-A is still active. So the entity tries to hack them in order to destroy them. But the SCP Foundation busts in, arrests the guy, and puts the computer in a vault.</p>
+<p><b>Graham 1:</b> So why are you telling me all of this?</p>
+<p><b>Graham 2:</b> SCP-3747-B affects us as well. You see, our universes are very different. We exist in a true vacuum, rather than a false vacuum. Whenever SCP-3747-B instance spawns in your universe, an identical SCP-3747-B instance appears in our universe, except that instead of an ever-expanding bubble of true vacuum, it's an ever-expanding bubble of false vacuum. The kicker is, while we had SCP-3747-A, it was destroyed in Incident ████<sup><a title="This number is assigned to a Safe-class entity determined to be of little threat. It is believed that this number is assigned to a different object in Graham 2's universe.">1</a></sup>-Alpha. We have about thirty years before SCP-3747-B-K is big enough to swallow the solar system. That's why I care. Our entire universe is at stake here.</p>
+<p><i>No conversation for 5 seconds.</i></p>
+<p><b>Graham 1:</b> I'm still not entirely convinced. How do I know that SCP-3747 isn't preventing an SCP-3747-B instance from appearing in the middle of Earth's core, or something like that? How do I know that you're not lying to me?</p>
+<p><b>Graham 2:</b> Okay then. A while back, you broadcasted a radio transmission into an instance of SCP-3747-B, located within the Tadpole Galaxy. We picked up that transmission. Give me a second.</p>
+<p><i>Graham 2 goes off of the left of the screen, then returns holding an audio recording device, hereafter referred to as "the device". The device is a handheld plastic case with an embedded audio speaker, three buttons, and a Foundation logo near the top of the device. Graham 2 presses the top button, and the following audio then plays:</i></p>
+<p><b>Device:</b> <i>My name is Dr. Henry Raddigan, and I am speaking on behalf of the SCP Foundation, an organization dedicated to the containment of anomalous activity and paranormal threats. We hope that this message has reached sapient lifeforms. If so, we encourage you to contact us with another transmission. Thank you for your time.</i></p>
+<p><i>The device replays the message in Spanish, French, German, Italian, Dutch, Russian, Latin, Chinese, and Polish. This message matches Document Beta-Tango-17, which was transmitted into SCP-3747-B-503 on 11/18/2014 in an attempt to determine if SCP-3747-B instances could house sapient life.</i></p>
+<p><i>No conversation for 35 seconds.</i></p>
+<p><b>Graham 1:</b> Does the black moon howl?</p>
+<p><b>Graham 2:</b> Only to wake the void.</p>
+<p><b>Graham 1:</b> That's all I needed to hear.</p>
+<p><i>Graham 1 uses a nearby maintenance wrench to smash SCP-3747's keyboard. Before security personnel escort Graham out of the chamber, he manages to do significant damage to SCP-3747's hard drive and central processor.</i></p>
+<p><b>[ END LOG ]</b></p>
+<p><b>Closing Statement:</b> Senior Researcher Graham's Level 4 clearance was revoked as a disciplinary measure following this incident. See Addendum 3747-2 for more information.</p>
+<p><b>Addendum:</b> Analysis of Incident 3747-Gamma has revealed that an incorporeal humanoid entity is visible for two frames while Senior Researcher Graham was destroying SCP-3747. In the first frame, the entity is taking a kneeling posture while one foot is lodged within SCP-3747. In the second frame, the entity is lying stomach-down on the floor to the right of SCP-3747. This entity has been classified as Potential Anomaly 4851 (PA-4851).</p>
+</blockquote>
+<p><b>Addendum 3747-2:</b></p>
+<p>SCP-3747 was repaired and data was restored to its pre-Incident 3747-Gamma state. However, apon loading connect.exe, SCP-3747 now only displays "COMMUNICATIONS INTERRUPTED, POTENTIAL FATAL ERROR". No SCP-3747-B activity has been reported following Incident 3747-Gamma, and SCP-3747-A has remained in its resting position in the Saturn Hexagon. SCP-3747 has been reclassified as Euclid.</p>
+</div>
+</body>
+[[/html]]
