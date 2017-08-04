@@ -625,11 +625,16 @@ In reading order:
 || %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% ||
 [[/module]]
 [[/tab]]
-[[tab Another tab]]
-[[module ListPages tags="scp, -joke, -explained, -archived, -001, -decommissioned" rating="<=30" created_at="last 12 months" separate="no" order="rating asc" perPage="50" prependLine="||~ Title||~ Rating ||~ Comments ||~ Created ||"]] 
+[[/tabview]]
+@@@@
+@@@@
+@@@@
+**"Young and under 30" Project**
+[[tabview]]
+[[tab List of potential pages]]
+[[module ListPages tags="scp, -joke, -explained, -archived, -001, -decommissioned" rating="<=30" created_at="last 12 months" separate="no" order="rating" perPage="50" prependLine="||~ Title||~ Rating ||~ Comments ||~ Created ||"]] 
 || %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || 
 [[/module]]
-
 [[/tab]]
 [[/tabview]]
 @@@@
