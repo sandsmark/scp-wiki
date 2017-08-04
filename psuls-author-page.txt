@@ -626,8 +626,8 @@ In reading order:
 [[/module]]
 [[/tab]]
 [[tab Another tab]]
-[[module ListPages tags="+3000 -hub" order="rating desc" separate="no" perPage="250" prependLine="||~ Title||~ Rating ||~ Author ||~ Comments||~ Last Comment ||"]] 
-|| %%title_linked%% || %%rating%% || %%created_by%% || %%comments%% || %%commented_at%% ||
+[[module ListPages tags="scp, -joke, -explained, -archived, -001, -decommissioned" rating="<=30" created_at="newer than 12 month" separate="no" order="rating asc" perPage="50" prependLine="||~ Title||~ Rating ||~ Comments ||~ Created ||"]] 
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || 
 [[/module]]
 
 [[/tab]]
