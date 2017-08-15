@@ -1,0 +1,195 @@
+title:Researcher Calvin's Personnel File
+[[html]]
+<body>
+<style type="text/css">
+body
+{
+   font-family:verdana,arial,helvetica,sans-serif;
+   font-size:12.8px;
+   color:#333;
+   line-height:141%
+}
+blockquote
+{
+  border:1px dashed #999;
+  padding: 0 12.8px;
+  background-color:#f4f4f4
+}
+a {
+    color: #b01;
+    text-decoration: none;
+    background: transparent;
+}
+a.newpage {
+    color: #d61;
+    text-decoration: none;
+    background: transparent;
+}
+a:hover {
+    text-decoration: underline;
+    background-color: transparent;
+}
+.collapsed {
+  display: none;
+}
+.vanished {
+  display: none;
+}
+.image-cap {
+    background-color: #eee;
+    border-top: solid 1px #666;
+    padding: 2px 0;
+    font-size: 80%;
+    font-weight: bold;
+    text-align: center;
+}
+.green {
+  color: green;
+}
+.content-panel {
+    border: solid 1px #888880;
+    border-radius: 10px;
+    background: #fcfdfb;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    margin: 10px 0 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.1);
+}
+</style>
+<script type="text/javascript">
+function addEvent(element, eventName, callback) {
+    if (element.addEventListener) {
+        element.addEventListener(eventName, callback, false);
+    } else if (element.attachEvent) {
+        element.attachEvent("on" + eventName, callback);
+    } else {
+        element["on" + eventName] = callback;
+    }
+}
+window.toggle = function(cls) {
+  var collapsed = document.querySelectorAll("." + cls + ".collapsed");
+  var expanded = document.querySelectorAll("." + cls + ":not(.collapsed)");
+  var i;
+  for(i = 0; i < collapsed.length; i++) {
+    collapsed[i].classList.remove("collapsed");
+  }
+  for(i = 0; i < expanded.length; i++) {
+    expanded[i].classList.add("collapsed");
+  }
+};
+var loopTimeout = function(toDo,initDelay,timesToDo,delayAddition) {
+  var i;
+  var currentDelay = initDelay;
+  for (i = 0; i < timesToDo; i++) {
+    setTimeout(toDo,currentDelay);
+    currentDelay += delayAddition;
+  }
+};
+var randomIntFromInterval = function(min,max)
+{
+  return Math.floor(Math.random()*(max-min+1)+min);
+};
+var selTabs = [];
+var loadingSymbols = ['|','\\','/','-'];
+var showing1 = 0;
+window.showPart1 = function() {
+if (showing1 === 0) {
+  showing1 = 1;
+  var warning1 = document.getElementById("loadfile");
+  warning1.innerHTML = "Loading file |";
+  loopTimeout(function(){warning1.innerHTML = warning1.innerHTML.substring(0,warning1.innerHTML.length - 1); var mySymbol = loadingSymbols[randomIntFromInterval(0,loadingSymbols.length - 1)]; warning1.innerHTML += mySymbol;},10,99,20);
+  setTimeout(function() {
+    warning1.innerHTML = warning1.innerHTML.substring(0,warning1.innerHTML.length - 1);
+    var baseNode = document.createElement('span');
+    baseNode.appendChild(document.createTextNode('[ '));
+    var greenNode = document.createElement('span');
+    greenNode.classList.add('green');
+    greenNode.appendChild(document.createTextNode('OK'));
+    baseNode.appendChild(greenNode);
+    baseNode.appendChild(document.createTextNode(' ]'));
+    warning1.appendChild(baseNode);
+    setTimeout(function(){document.getElementById('raisamsg').classList.remove('vanished');},1000);
+  },2000);
+}
+};
+
+window.showSelTab = function(num) {
+  var selTab = selTabs[num];
+  for (i = 0; i < selTabs.length; i++) {
+    var st = selTabs[i];
+    if (!(st.classList.contains('vanished')))
+      st.classList.add('vanished');
+  }
+  selTab.classList.remove('vanished');
+};
+
+window.onload = function() { showPart1(); 
+selTabs = [
+  document.getElementsByClassName('selTab1')[0],
+  document.getElementsByClassName('selTab2')[0],
+  document.getElementsByClassName('selTab3')[0]
+];
+};
+</script>
+<blockquote>
+<center>
+<h2 id="loadfile"></h2>
+<div id="raisamsg" class="vanished">
+<p><b>Due to database corruption, three iterations of this personnel file exist. This incident has been automatically reported to RAISA.</b></p>
+<div align="left">
+<p><a onclick="showSelTab(0);">Show Iteration 1</a></p>
+<p><a onclick="showSelTab(1);">Show Iteration 2</a></p>
+<p><a onclick="showSelTab(2);">Show Iteration 3</a></p>
+<div class="selTab1 vanished">
+<hr />
+<p><b>Legal Name:</b> Craig N█████ Calvin</p>
+<p><b>Position:</b> Researcher</p>
+<p><b>Clearance Level:</b> 3</p>
+<p><b>Clearance Sublevels:</b> 4/2785, 4/3095, <tt>[DATA REDACTED]</tt></p>
+<p><b>History:</b> Researcher Calvin was hired after his graduation from ██████ ██ University with honors in Computer Science and Theoretical Physics. Originally a Level 2 Junior Researcher, Researcher Calvin has proved his worth to the Foundation by thoroughly investigating anomalous phenomena, formulating several explanations for these phenomena, and acting as an on-hand interview associate for several SCP artifacts.</p>
+<p>Researcher Calvin has recently been promoted to the supervisor of <a href="http://www.scp-wiki.net/scp-3095">Project Talanos</a>, though he still acts as a consultant for interviews and research.</p>
+</div>
+<div class="selTab2 vanished">
+<hr />
+<p><b>Legal Name:</b> Craig B█████ Calvin</p>
+<p><b>Position:</b> Researcher</p>
+<p><b>Clearance Level:</b> 3</p>
+<p><b>Clearance Sublevels:</b> 4/3747, 4/PHYSICS, <tt>[DATA REDACTED]</tt></p>
+<p><b>History:</b> Originally D-9093 due to an escalated parking ticket incident, Researcher Calvin was promoted to a Level 0 Janitor after demonstrating his usefulness in Incident ████-████-Omega. After seeing the world of the anomalous, Researcher Calvin went back to school, graduating from ████ University with a bachelor's degree in Theoretical Physics. He was then promoted to the title of Researcher.</p>
+<p>Researcher Calvin has proved his worth <strike>by being a complete bada</strike> through several feats of scientific and physical note.</p>
+</div>
+<div class="selTab3 vanished">
+<hr />
+<p><b>Legal Name:</b> Craig S██████ Calvin</p>
+<p><b>Position</b> <strike>Seagull</strike> Researcher</p>
+<p><b>Clearance Level:</b> 3</p>
+<p><b>Clearance Sublevels:</b> 4/3095, <strike>4/SEAGULL</strike>, <tt>[DATA REDACTED]</tt></p>
+<p><b>History:</b> Hired after an incident involving Prometheus Labs where <strike>he turned into a seagull</strike> <tt>[DATA EXPUNGED]</tt>. Given Level Three clearance after he proved his worth in studying anomalous phenomena. Researcher Calvin is not a seagull. Anybody who says that Researcher Calvin is a seagull will be fired, demoted to D-Class, subject to Procedure 110-Montauk, and then terminated, because they are wrong, because Researcher Calvin is <strike>definitely</strike> <b>NOT</b> a seagull.</p>
+</div>
+<hr />
+<div class="scpsdone">
+<p><a onclick="toggle('scpsdone');">▼ View SCP Projects this person has been involved with ▼</a></p>
+</div>
+<div class="scpsdone collapsed">
+<p><a onclick="toggle('scpsdone');">▲ Collapse segment ▲</a></p>
+<ul>
+<li><a href="http://www.scp-wiki.net/scp-2785">SCP-2785</a></li>
+<li><a href="http://www.scp-wiki.net/scp-3747">SCP-3747</a></li>
+<li><a href="http://www.scp-wiki.net/scp-3095">SCP-3095</a></li>
+</ul>
+</div>
+<hr />
+<div class="talesdone">
+<p><a onclick="toggle('talesdone');">▼ View Incident Reports this person has filed ▼</a></p>
+</div>
+<div class="talesdone collapsed">
+<p><a onclick="toggle('scpsdone');">▲ Collapse segment ▲</a></p>
+<ul>
+<li><a href="http://www.scp-wiki.net/the-little-robot-that-could">The Little Robot that Could</a></li>
+</ul>
+</div>
+</div>
+</div>
+</blockquote>
+</body>
+[[/html]]
