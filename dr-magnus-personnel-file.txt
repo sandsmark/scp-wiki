@@ -85,6 +85,21 @@ text-align: left;
     height: 190px;
     float:left;
 }
+.report-box {
+    border: 1px solid black;
+    border-style: double;
+    width: 100%;
+    background-color: white;
+    display: inline-block;
+   width: 100%;
+}
+.addenda-box{
+ padding: 5px;
+ border: double black 1px;
+ background-color: #e8e8e8;
+ margin: 5px;
+ text-align:center;
+}
 
 .collapsible-block-folded, .collapsible-block-unfolded{
 text-align: center;
@@ -92,12 +107,7 @@ color: black;
 }
 [[/module]]
 [[div id="magnusPage"]]
-[[div style="border: 1px solid black;
-    border-style: double;
-    width: 100%;
-    background-color: white;
-    display: inline-block;
-   width: 100%;"]]
+[[div class="report-box"]]
 [[=image http://scp-ru.wdfiles.com/local--files/list-of-foundation-s-internal-departments/admin.png width="50px" height="50px"]]
 [[=]]
 ++ Prepared by the Administrative Department - Human Resources
@@ -231,7 +241,7 @@ Site Director [REDACTED] has placed Dr. Magnus under level 2 observation at all 
 ------
 
 [[collapsible show="SEALED BY O5 ORDER, ENTER CREDENTIALS" hide="Credentials Accepted.  Welcome, O5-2"]]
-[[div style="padding: 5px; border: double black 1px; background-color: #e8e8e8; margin: 5px; text-align:center;"]]
+[[div class="addenda-box"]]
 +++ Beginning Playback of files related to Directive: Legends
 [[[The Most Dangerous Game]]]
 [[[Happy Birthday From Nobody]]]
@@ -244,7 +254,7 @@ Site Director [REDACTED] has placed Dr. Magnus under level 2 observation at all 
 ------
 
 [[collapsible show="ENTER CREDENTIALS" hide="Welcome, Administrator."]]
-[[div style="padding: 5px; border: double black 1px; background-color: #e8e8e8; margin: 5px; text-align:center;"]]
+[[div class="addenda-box"]]
 +++ Beginning Playback of files related to [REDACTED]
 [[[finding-balance | Finding Balance]]]
 [[[Channeling Flows]]]
