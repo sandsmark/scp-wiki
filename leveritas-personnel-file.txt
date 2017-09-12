@@ -1,6 +1,8 @@
 title:Leveritas' Personnel File
 [[tabview]]
 
+
+
 [[tab Personnel File]]
 
 /> Welcome to the SCP Foundation personnel database. Please enter access credentials.
@@ -71,3 +73,62 @@ Identity confirmed. Welcome,
 [[/tab]]
 
 [[/tabview]]
+
+[[module css]]
+.computed {
+border: 1px black solid;
+width: 50%;
+display: inline-block;
+text-align: left;
+padding: 3px;
+}
+.computed:before {
+content:"Computed Code";
+font-weight: bold;
+border-bottom: solid 1px black;
+width: 100%;
+}
+.rawcode {
+border: black solid 1px;
+width: 50%;
+display: inline-block;
+text-align: left;
+padding: 3px;
+}
+.rawcode:before{
+content:"Raw Code";
+text-align: center;
+font-weight: bold;
+border-bottom: solid 1px black;
+width: 100%;
+}
+.codebox {
+display: inline-block;
+width: 100%;
+text-align: center;
+}
+.yui-navset .yui-nav .selected a em, .yui-navset .yui-nav a em{
+padding: 0.25em .75em;
+top: 0px;
+margin-bottom: 0px;
+}
+.yui-navset .yui-nav .selected a {
+background: gray;
+}
+.yui-navset .yui-nav .selected {
+margin: 0px;
+}
+.yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a:focus, .yui-navset .yui-nav .selected a:hover, .yui-navset .yui-nav .selected a {
+background: gray;
+}
+.yui-navset .yui-nav a, .yui-navset .yui-navset-top .yui-nav a {
+background-color: none;
+background-image: none;
+}
+.yui-navset .yui-nav a {
+background: none;
+}
+.yui-navset .yui-nav li{
+margin: 0px;
+}
+[[/module]]
