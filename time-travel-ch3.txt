@@ -109,6 +109,12 @@ These prop­er­ties are im­por­tant be­cause it al­lows us to use an­a­ly
 ------
 ++ Thread Con­ver­gence and Time Loops
 
+[[div class="inset" style="width:30%;"]]
+[[image http://i.imgur.com/FWHSjH9.png style="width:100%;display:block;"]]
+
+An ex­am­ple of a thread se­quence pro­jected into 2D con­verg­ing to a world line.
+[[/div]]
+
 In chap­ter 2, we dis­cussed time loops in terms of world lines, as if each it­er­a­tion of the loop was ex­actly iden­ti­cal to the pre­vi­ous. In prac­tice, each it­er­a­tion of a world line will in­evitably have at least some small dif­fer­ence, stem­ming from Bel­l's the­o­rem and the fact that it's im­pos­si­ble to ob­serve any­thing with­out chang­ing its state. As a re­sult, it makes more sense to talk about world lines as the lim­its of loop it­er­a­tion.
 
 Given a time loop with a thread se­quence [[$A^{(1)}, B^{(1)}, A^{(2)}, B^{(2)} ...$]], then if we can split this se­quence up into only fi­nitely many con­ver­gent Cauchy se­quences, it is pos­si­ble to de­fine our world lines as the lim­its of those se­quences. In our ex­am­ple, if [[$A^{(1)}, A^{(2)} ...$]] and [[$B^{(1)}, B^{(2)} ...$]] are both Cauchy se­quences, then we can re­fer to [[$A = \lim_{n\to\infty} A^{(n)}$]] and [[$B = \lim_{n\to\infty} B^{(n)}$]] as world lines. In other terms, if af­ter an ar­bi­trary num­ber of times around the loop, it be­comes ar­bi­trar­ily hard to dis­tin­guish be­tween each [[$A^{(n)}$]] and [[$A^{(n+1)}$]], then it still makes sense to con­sider them as world lines.
@@ -125,6 +131,12 @@ One other im­por­tant prop­erty of thread dis­tance is the way it varies ove
 [[math]]
 \lim_{|\vec x|\to\infty} d(A+\vec x,B+\vec x)=0
 [[/math]]
+
+[[div class="inset" style="width:30%;"]]
+[[iframe https://www.desmos.com/calculator/unw2n9yt0h?embed style="width: 100%; border: 1px solid #ccc" frameborder=0]]
+
+The thread po­ten­tial for the event rep­re­sented by the up­per (blue) curve is 5 times the lower (red) one, mean­ing that it is only 1/​5th as likely.
+[[/div]]
 
 Mea­sur­ing thread dis­tances be­tween sep­a­rate threads is use­ful for de­ter­min­ing how sim­i­lar they are, and rea­son­ing about con­ver­gence. How­ever, and in some ways even more im­por­tantly, we can also mea­sure thread dis­tance be­tween points that are only sep­a­rated by space and time. Do­ing this makes it pos­si­ble to de­fine a po­ten­tial field based on thread dis­tance `to in­fin­i­ty', called **thread po­ten­tial** and no­tated [[$\nabla^2 d(E)$]], with some ex­tremely use­ful prop­er­ties.
 
