@@ -40,6 +40,9 @@ function rand(min, max) {	return Math.floor(Math.random() * (max - min + 1)) + m
 
 function generator() {
 
+
+
+
 var adjective = ["a disgusting", 
 "an incredible", 
 "an astounding", 
@@ -63,7 +66,14 @@ var adjective = ["a disgusting",
 "a cute", 
 "a demonic", 
 "a fluffy", 
-"a low-poly", 
+"a low-poly",
+"a talkative",
+"a one-eyed",
+"a massive",
+"a grotesque",
+"a hairy",
+"an animatronic",
+"a screaming",
 "an evil", 
 "a fancy", 
 "a glass", 
@@ -167,7 +177,15 @@ var adjective = ["a disgusting",
 "a legendary", 
 "an explosive", 
 "a narcissistic", 
-"a gigantic"]; // 128
+"a gigantic"];
+
+
+
+
+
+
+
+
 
 var noun = ["ball of antimatter", 
 "computer", 
@@ -186,7 +204,20 @@ var noun = ["ball of antimatter",
 "box of cookies", 
 "sword", 
 "rifle", 
-"chunk of asphalt", 
+"chunk of asphalt",
+"loaf of bread",
+"piano",
+"guitar",
+"totem pole",
+"owl-thing",
+"brick",
+"flower",
+"fork",
+"tumor",
+"hobo",
+"can of tuna",
+"tablet",
+"comb",
 "meteor", 
 "letter", 
 "griffin", 
@@ -329,7 +360,18 @@ var noun = ["ball of antimatter",
 "monarch", 
 "coffee cup", 
 "mailbox", 
-"isosceles triangle"]; // 161
+"isosceles triangle"];
+
+
+
+
+
+
+
+
+
+
+
 
 var that = ["makes you immortal", 
 "causes earthquakes", 
@@ -337,7 +379,19 @@ var that = ["makes you immortal",
 "committed genocide against the elves", 
 "eats fairies", 
 "is a cannibal", 
-"is resistant to antibiotics", 
+"is resistant to antibiotics",
+"can levitate",
+"makes people try to eat batteries",
+"makes people try to eat books",
+"gives people severe hiccups",
+"screams for a very long time",
+"thinks humans are delicious",
+"falls on you",
+"eats your face",
+"turns lead into gold",
+"is made out of diamonds",
+"is made out of gold",
+"is made out of titanium",
 "is unusually big", 
 "killed the dinosaurs", 
 "can shrink stuff", 
@@ -451,7 +505,21 @@ var that = ["makes you immortal",
 "makes you kill people", 
 "stalks you", 
 "stares at you for an uncomfortably long time", 
-"stalks you at night"]; // 121
+"stalks you at night"];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 var also = ["it really just wants to go home", 
 "it's friends with ████", 
@@ -531,7 +599,15 @@ var also = ["it really just wants to go home",
 "its whole family is dead", 
 "it used to be a little boy", 
 "it used to be a little girl", 
-"it really, really hates containment.."]; // 79
+"it really, really hates containment.."];
+
+
+
+
+
+
+
+
 
 var add = ["But, see", 
 "But it's not because, see", 
@@ -548,7 +624,17 @@ var add = ["But, see",
 "But now", 
 "And the twist", 
 "Oh, but here's another idea. See", 
-"Now guys"]; // 16
+"Now, guys",
+"Now guys"];
+
+
+
+
+
+
+
+
+
 
 var end = ["Does that make sense", 
 "Spooky, right", 
@@ -559,7 +645,7 @@ var end = ["Does that make sense",
 "Right", 
 "You guys got that", 
 "Something like that", 
-"It makes sense, right"]; // 10
+"It makes sense, right"];
 
     var adj = adjective[rand(0,(adjective.length - 1))];
     var obj = noun[rand(0,(noun.length - 1))];		
@@ -584,13 +670,11 @@ var end = ["Does that make sense",
 
 //stuff below here is on hold for now
 
-//adjectives: "a talkative", "a one-eyed", "a massive", "a grotesque", "a hairy", "an animatronic", "a screaming",
-
-//nouns: "loaf of bread", "piano", "guitar", "totem pole", "owl-thing", "brick", "flower", "fork", "tumor", "hobo", "can of tuna", "tablet", "comb",
-
-//that: "can levitate", "makes people try to eat batteries", "makes people try to eat books", "gives people severe hiccups", "screams for a very long time", "thinks humans are delicious", "falls on you", "eats your face", "turns lead into gold", "is made out of diamonds", "is made out of gold", "is made out of titanium",
-
+//adjectives:
+//nouns:
+//that: 
 //twist: 
+
 }
 
 
@@ -629,24 +713,24 @@ function generator() {
 
 
 
-var beg = ["''Well, I guess they need to put it in something.", "''But of course, they need something to put it in.", "''They should probably put it in something too."]; //3
+var beg = ["''Well, I guess they need to put it in something.", "''But of course, they need something to put it in.", "''They should probably put it in something too."];
 
-var int = ["What about a", "How about a", "I'm thinking maybe a", "What if they put it in a"]; //4
+var int = ["What about a", "How about a", "I'm thinking maybe a", "What if they put it in a"];
 
-var dim = ["1x1", "6 x 6 x 6 m", "planet-sized", "pea-shaped", "rectangular", "transparent", "crate-shaped", "reflective", "20cm x 20cm", "10cm x 10cm x 10cm", "100 x 100 mile", "20m x 20m x20m x20m", "tiny", "big", "gigantic"]; // 15
+var dim = ["1x1", "6 x 6 x 6 m", "planet-sized", "pea-shaped", "ball-shaped", "rectangular", "transparent", "crate-shaped", "small", "reflective", "20cm x 20cm", "10cm x 10cm x 10cm", "100 x 100 mile", "20m x 20m x20m x20m", "tiny", "big", "virtual", "gigantic"];
 
-var frm = ["box", "cell", "containment chamber", "yurt", "bowl", "statue", "cave", "lake", "pond", "tube", "crate", "locker", "room", "cube", "sphere"];  // 15
+var frm = ["box", "cell", "containment chamber", "yurt", "bowl", "statue", "cave", "lake", "pond", "pool", "tube", "crate", "locker", "room", "cube", "storage compactor", "chest", "server", "sphere"];
 
-var mad = ["made out of", "constructed from", "moulded out of", "formed from", "constructed out of", "formed out of", "built out of", "built from"]; // 8
+var mad = ["made out of", "constructed from", "moulded out of", "formed from", "constructed out of", "formed out of", "built out of", "built from"];
 
-var mat = ["pure titanium", "solid gold", "admantium", "wood", "alkaline metal", "sharp objects", "lasers", "ice", "iron", "peanut brittle", "wooden stuff", "fire", "plasma", "non-newtonian fluids", "magic crystals", "strontium", "strongtium", "solid platinum", "diamonds", "fairy dust", "bone", "flesh", "dark matter", "demon's blood", "antimatter", "ice", "lava", "100 karat gold", "steel", "frozen blood"]; // 30
+var mat = ["pure titanium", "solid gold", "admantium", "wood", "alkaline metal", "sharp objects", "lasers", "ice", "iron", "peanut brittle", "wooden stuff", "fire", "plasma", "non-newtonian fluids", "magic crystals", "strontium", "strongtium", "solid platinum", "diamonds", "fairy dust", "bone", "flesh", "dark matter", "demon's blood", "antimatter", "ice", "lava", "100 karat gold", "steel", "frozen blood"];
 
-    var beg = beg[rand(0,2)];
-    var int = int[rand(0,3)];
-    var dim = dim[rand(0,14)];
-    var frm = frm[rand(0,14)];
-    var mad = mad[rand(0,7)];
-    var mat = mat[rand(0,29)]; 
+    var beg = beg[rand(0,(beg.length - 1))];
+    var int = int[rand(0,(int.length - 1))];
+    var dim = dim[rand(0,(dim.length - 1))];
+    var frm = frm[rand(0,(frm.length - 1))];
+    var mad = mad[rand(0,(mad.length - 1))];
+    var mat = mat[rand(0,(mat.length - 1))]; 
 
         document.getElementById('text').style ="font:10pt Verdana;"
     document.getElementById('text').innerHTML = " " + beg + " " + int + " " + dim + " " + frm + " " + mad + " " + mat + "?''";
