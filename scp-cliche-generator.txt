@@ -573,8 +573,8 @@ var end = ["Does that make sense",
     document.getElementById('text').innerHTML = "''Oh! I got an idea for something we could write about. How about " + adj + " " + obj +  " that " + th + "? Cliche, right? " + add + ", the twist is that " + also + ". " + end + "?''";
 
 
-    console.log("Output: " + + adj + obj + "that" + th);
-    console.log(adjective.length);
+    console.log("Output: " + adj + obj + "that" + th);
+    console.log("Adjective array length: " + adjective.length);
 
 //stuff below here is on hold for now
 
