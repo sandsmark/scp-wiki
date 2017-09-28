@@ -574,10 +574,13 @@ var end = ["Does that make sense",
 
 
     console.log("Output: " + adj + obj + "that" + th);
+    console.log("Object arrays:");
     console.log("Adjective array length: " + adjective.length);
     console.log("Noun array length: " + noun.length);
     console.log("That array length: " + that.length);
     console.log("Also array length: " + also.length);
+    console.log("Add array length: " + add.length);
+    console.log("End array length: " + end.length);
 
 //stuff below here is on hold for now
 
@@ -648,6 +651,13 @@ var mat = ["pure titanium", "solid gold", "admantium", "wood", "alkaline metal",
         document.getElementById('text').style ="font:10pt Verdana;"
     document.getElementById('text').innerHTML = " " + beg + " " + int + " " + dim + " " + frm + " " + mad + " " + mat + "?''";
     //console.log("Output: " + frm + beg + int + dim);	
+    console.log("Containment arrays:");
+    console.log("Beg array length: " + beg.length);
+    console.log("Int array length: " + int.length);
+    console.log("Dim array length: " + dim.length);
+    console.log("Frm array length: " + frm.length);
+    console.log("Mad array length: " + mad.length);
+    console.log("Mat array length: " + mat.length);
 }
 
 </script>
