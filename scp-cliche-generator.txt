@@ -566,8 +566,8 @@ var end = ["Does that make sense",
     var th = that[rand(0,(that.length - 1))];
     var also = also[rand(0,(also.length - 1))];
     
-    var add = add[rand(0,14)];
-    var end = end[rand(0,9)];
+    var add = add[rand(0,(add.length - 1))];
+    var end = end[rand(0,(end.length - 1))];
 
         document.getElementById('text').style = "font:10pt Verdana;"
     document.getElementById('text').innerHTML = "''Oh! I got an idea for something we could write about. How about " + adj + " " + obj +  " that " + th + "? Cliche, right? " + add + ", the twist is that " + also + ". " + end + "?''";
@@ -575,6 +575,9 @@ var end = ["Does that make sense",
 
     console.log("Output: " + adj + obj + "that" + th);
     console.log("Adjective array length: " + adjective.length);
+    console.log("Noun array length: " + noun.length);
+    console.log("That array length: " + that.length);
+    console.log("Also array length: " + also.length);
 
 //stuff below here is on hold for now
 
