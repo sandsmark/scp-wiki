@@ -562,9 +562,9 @@ var end = ["Does that make sense",
 "It makes sense, right"]; // 10
 
     var adj = adjective[rand(0,(adjective.length - 1))];
-    var obj = noun[rand(0,160)];		
-    var th = that[rand(0,120)];
-    var also = also[rand(0,78)];
+    var obj = noun[rand(0,(noun.length - 1))];		
+    var th = that[rand(0,(that.length - 1))];
+    var also = also[rand(0,(also.length - 1))];
     
     var add = add[rand(0,14)];
     var end = end[rand(0,9)];
