@@ -561,7 +561,7 @@ var end = ["Does that make sense",
 "Something like that", 
 "It makes sense, right"]; // 10
 
-    var adj = adjective[rand(0,127)];
+    var adj = adjective[rand(0,(adjective.length - 1))];
     var obj = noun[rand(0,160)];		
     var th = that[rand(0,120)];
     var also = also[rand(0,78)];
@@ -644,7 +644,7 @@ var mat = ["pure titanium", "solid gold", "admantium", "wood", "alkaline metal",
 
         document.getElementById('text').style ="font:10pt Verdana;"
     document.getElementById('text').innerHTML = " " + beg + " " + int + " " + dim + " " + frm + " " + mad + " " + mat + "?''";
-    console.log("Output: " + frm + beg + int + "that" + dim);	
+    //console.log("Output: " + frm + beg + int + dim);	
 }
 
 </script>
