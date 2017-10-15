@@ -806,6 +806,12 @@ Grand crosslinking project:
 [[/module]]
 [[/collapsible]]
 
+[[collapsible show="+25 only" hidelocation="both"]]
+[[module ListPages tags="-admin" order="created_at desc" prependLine="||~ Page||~ Created at||~ rating||~ author||~ comments||" rating=">=25" perPage="30" separate="false"]]
+||%%title_linked%%||%%created_at|%%||%%rating%%||%%created_by%%||%%comments%%||
+[[/module]]
+[[/collapsible]]
+
 [[/tab]]
 [[/tabview]]
 [[/==]]
