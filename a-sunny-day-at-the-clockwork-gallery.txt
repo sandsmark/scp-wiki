@@ -157,93 +157,6 @@ this.src = firstUrl;
 + Section 2: Narrative
 
 [[div style="float:left; width: 25%; height: 240px; padding: 0 2%"]]
-[[html]]
-<img id="pic" src="http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/F%2001.jpg" width="150px" alt="" class="image" />
-<script type="text/javascript">
-var firstUrl = "http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/F%2001.jpg";
-var secondUrl = "http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/F%2002.jpg";
-
-new Image().src = firstUrl;
-
-new Image().src = secondUrl;
-
-window.onload = function(){
-
-var org = window.document.getElementById('pic');
-org.src = firstUrl;
-org.onmouseover = function(ev){
-this.src = secondUrl;
-}
-org.onmouseout = function(ev){
-this.src = firstUrl;
-}
-
- org.addEventListener('touchstart',org.onmouseover,false);
- org.addEventListener('touchend',org.onmouseout,false); 
-}
-</script>
-[[/html]]
-
-[[/div]]
-
-[[div style="float:right; width: 65%; height: 240px; padding: 0 2%"]]
-
-> [[size 150%]][[[Flow]]][[/size]]
-> 
-> **Description:**
-> 
-> Enjoy your stay at the river. This is your chance to meet the Flow and become an anartist.
-> 
-> ##white|Try not to drown.##
-> 
-> **Features:** Creative, fluid.
- 
-
-[[/div]]
-
-[[div style="float:left; width: 25%; height: 240px; padding: 0 2%"]]
-[[html]]
-<img id="pic" src="http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/DtSR%2001.jpg" width="150px" alt="" class="image" />
-<script type="text/javascript">
-var firstUrl = "http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/DtSR%2001.jpg";
-var secondUrl = "http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/DtSR%2002.jpg";
-
-new Image().src = firstUrl;
-
-new Image().src = secondUrl;
-
-window.onload = function(){
-
-var org = window.document.getElementById('pic');
-org.src = firstUrl;
-org.onmouseover = function(ev){
-this.src = secondUrl;
-}
-org.onmouseout = function(ev){
-this.src = firstUrl;
-}
-
- org.addEventListener('touchstart',org.onmouseover,false);
- org.addEventListener('touchend',org.onmouseout,false); 
-}
-</script>
-[[/html]]
-
-[[/div]]
-
-[[div style="float:right; width: 65%; height: 240px; padding: 0 2%"]]
-
-> [[size 150%]][[[Down the Silver River]]][[/size]]
-> 
-> **Description:**
-> 
-> Meet a god and be artistic about It! Learn to build an idol yourself!
-> 
-> **Features:** Metallic, divine, creative. ##white|Dead.##
-
-[[/div]]
-
-[[div style="float:left; width: 25%; height: 240px; padding: 0 2%"]]
 
 [[html]]
 <img id="pic" src="http://www.scp-wiki.net/local--files/a-sunny-day-at-the-clockwork-gallery/IWaT%2001.jpg" width="150px" alt="" class="image" />
@@ -749,6 +662,22 @@ this.src = firstUrl;
 [[div style="clear:both"]]
 [[/div]]
 
+[[=image http://scp-wiki.wdfiles.com/local--files/flow-hub/FlowDesign.png width="150px"]]
+
+> [[size 150%]][[[Flow Hub]]][[/size]]
+> 
+> **Description:** Gallery within a gallery. Art about anart.
+> 
+> * [[[Flow]]]
+> * [[[Professors of Anart]]]
+> * [[[Anart Lecture]]]
+> * [[[Foundation Mandated Interlude]]]
+> * [[[Extracurricular Practice]]]
+> 
+> * [[[Down the Silver River]]]
+> * [[[What Dragons We Shall Be]]]
+> 
+> **Features:** Artistic, creative, fluid.
 
 ------
 
