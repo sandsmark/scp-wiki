@@ -1,4 +1,7 @@
 title:Researcher Calvin's Personnel File
+[[>]]
+[[module Rate]]
+[[/>]]
 [[html]]
 <body>
 <style type="text/css">
@@ -43,19 +46,8 @@ a:hover {
     font-weight: bold;
     text-align: center;
 }
-.green {
-  color: green;
-}
-.content-panel {
-    border: solid 1px #888880;
-    border-radius: 10px;
-    background: #fcfdfb;
-    padding: 0 20px;
-    margin-bottom: 20px;
-    margin: 10px 0 15px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.1);
-}
 </style>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script type="text/javascript">
 function addEvent(element, eventName, callback) {
     if (element.addEventListener) {
@@ -77,124 +69,96 @@ window.toggle = function(cls) {
     expanded[i].classList.add("collapsed");
   }
 };
-var loopTimeout = function(toDo,initDelay,timesToDo,delayAddition) {
-  var i;
-  var currentDelay = initDelay;
-  for (i = 0; i < timesToDo; i++) {
-    setTimeout(toDo,currentDelay);
-    currentDelay += delayAddition;
-  }
-};
-var randomIntFromInterval = function(min,max)
+
+var randomInt = function(min,max)
 {
   return Math.floor(Math.random()*(max-min+1)+min);
 };
-var selTabs = [];
-var loadingSymbols = ['|','\\','/','-'];
-var showing1 = 0;
-window.showPart1 = function() {
-if (showing1 === 0) {
-  showing1 = 1;
-  var warning1 = document.getElementById("loadfile");
-  warning1.innerHTML = "Loading file |";
-  loopTimeout(function(){warning1.innerHTML = warning1.innerHTML.substring(0,warning1.innerHTML.length - 1); var mySymbol = loadingSymbols[randomIntFromInterval(0,loadingSymbols.length - 1)]; warning1.innerHTML += mySymbol;},10,99,20);
-  setTimeout(function() {
-    warning1.innerHTML = warning1.innerHTML.substring(0,warning1.innerHTML.length - 1);
-    var baseNode = document.createElement('span');
-    baseNode.appendChild(document.createTextNode('[ '));
-    var greenNode = document.createElement('span');
-    greenNode.classList.add('green');
-    greenNode.appendChild(document.createTextNode('OK'));
-    baseNode.appendChild(greenNode);
-    baseNode.appendChild(document.createTextNode(' ]'));
-    warning1.appendChild(baseNode);
-    setTimeout(function(){document.getElementById('raisamsg').classList.remove('vanished');},1000);
-  },2000);
-}
-};
 
-window.showSelTab = function(num) {
-  var selTab = selTabs[num];
-  for (i = 0; i < selTabs.length; i++) {
-    var st = selTabs[i];
-    if (!(st.classList.contains('vanished')))
-      st.classList.add('vanished');
+var expandNumber = function(num,digit) {
+  if (digit === 1 || digit === 0) return num.toString();
+  var txt = num.toString();
+  while (txt.length < digit) {
+    txt = "0" + txt;
   }
-  selTab.classList.remove('vanished');
+  return txt;
 };
 
-window.onload = function() { showPart1(); 
-selTabs = [
-  document.getElementsByClassName('selTab1')[0],
-  document.getElementsByClassName('selTab2')[0],
-  document.getElementsByClassName('selTab3')[0]
-];
+var randomText = function(array) {
+  return array[randomInt(0,array.length - 1)];
+};
+
+window.onload = function() {
+
+$('.num1').text(expandNumber(randomInt(1,99),2));
+$('.num2').text(expandNumber(randomInt(0,99),2));
+$('.randomSCP').each(function() { $(this).text(expandNumber(randomInt(1,3999),3)); });
+
+$('.t1').text(randomText(['in San Francisco, California','in New York, New York','in Boston, Massachusetts','in Springfield, Oregon','on the sun','in some random IKEA','in Detroit']));
+$('.t2').text(randomText(['summer','winter','fall','spring']));
+$('.t3').text(randomText(['studying','playing video games','doing science experiments in his backyard','kicking puppies','eating glue','inhaling cocaine']));
+$('.t4').text(randomText(['programming','playing soccer','researching philosophy','establishing a communist regime','browsing dank memes','throwing eggs at important political figures','screaming in public restrooms']));
+$('.t5').text(randomText(['Stanford University','Harvard University','Yale University','the local dry cleaner\'s','his mom\'s basement','watching Rick & Morty']));
+$('.t6').text(randomText(['Biology','Computer Science','Theoretical Physics','Mechanical Engineering','Family Guy References','Huffing Paint','knowing if tomatoes are fruits or vegetables','being an asshat']));
+
+$('.t7').text(randomText(['Marshall, Carter & Dark','Prometheus Labs','a factory owned by Dr. Wondertainment','a Target on the moon','Dr. Clef\'s stripper shop','McDonalds']));
+$('.t8').text(randomText(['n anomalous phenomena researcher',' research assistant',' testing supervisor',' computer system administrator',' janitor',' meme expert',' professional hobo']));
+$('.t9').text(randomText(['he','Dr. Bright','Dr. Clef','O5-1','SCP-682','SCP-999-J','the entirety of Site-19']));
+$('.t10').text(randomText(['prevented a containment breach','successfully contained SCP-682','rode a unicycle','stole the Declaration of Independence','purposely let out SCP-3002 to "see what would happen"']));
+
 };
 </script>
-<blockquote>
 <center>
-<h2 id="loadfile"></h2>
-<div id="raisamsg" class="vanished">
-<p><b>Due to database corruption, three iterations of this personnel file exist. This incident has been automatically reported to RAISA.</b></p>
-<div align="left">
-<p><a onclick="showSelTab(0);">Show Iteration 1</a></p>
-<p><a onclick="showSelTab(1);">Show Iteration 2</a></p>
-<p><a onclick="showSelTab(2);">Show Iteration 3</a></p>
-<div class="selTab1 vanished">
-<hr />
-<p><b>Legal Name:</b> Craig N█████ Calvin</p>
-<p><b>Position:</b> Researcher</p>
-<p><b>Clearance Level:</b> 3</p>
-<p><b>Clearance Sublevels:</b> 4/2785, 4/3095, <tt>[DATA REDACTED]</tt></p>
-<p><b>History:</b> Researcher Calvin was hired after his graduation from ██████ ██ University with honors in Computer Science and Theoretical Physics. Originally a Level 2 Junior Researcher, Researcher Calvin has proved his worth to the Foundation by thoroughly investigating anomalous phenomena, formulating several explanations for these phenomena, and acting as an on-hand interview associate for several SCP artifacts.</p>
-<p>Researcher Calvin has recently been promoted to the supervisor of <a href="http://www.scp-wiki.net/scp-3095" target="_top">Project Talanos</a>, though he still acts as a consultant for interviews and research.</p>
-</div>
-<div class="selTab2 vanished">
-<hr />
-<p><b>Legal Name:</b> Craig B█████ Calvin</p>
-<p><b>Position:</b> Researcher</p>
-<p><b>Clearance Level:</b> 3</p>
-<p><b>Clearance Sublevels:</b> 4/3747, 4/PHYSICS, <tt>[DATA REDACTED]</tt></p>
-<p><b>History:</b> Originally D-9093 due to an escalated parking ticket incident, Researcher Calvin was promoted to a Level 0 Janitor after demonstrating his usefulness in Incident ████-████-Omega. After seeing the world of the anomalous, Researcher Calvin went back to school, graduating from ████ University with a bachelor's degree in Theoretical Physics. He was then promoted to the title of Researcher.</p>
-<p>Researcher Calvin has proved his worth <strike>by being a complete bada</strike> through several feats of scientific and physical note.</p>
-</div>
-<div class="selTab3 vanished">
-<hr />
-<p><b>Legal Name:</b> Craig S██████ Calvin</p>
-<p><b>Position</b> <strike>Seagull</strike> Researcher</p>
-<p><b>Clearance Level:</b> 3</p>
-<p><b>Clearance Sublevels:</b> 4/3095, <strike>4/SEAGULL</strike>, <tt>[DATA REDACTED]</tt></p>
-<p><b>History:</b> Hired after an incident involving Prometheus Labs where <strike>he turned into a seagull</strike> <tt>[DATA EXPUNGED]</tt>. Given Level Three clearance after he proved his worth in studying anomalous phenomena. Researcher Calvin is not a seagull. Anybody who says that Researcher Calvin is a seagull will be fired, demoted to D-Class, subject to Procedure 110-Montauk, and then terminated, because they are wrong, because Researcher Calvin is <strike>definitely</strike> <b>NOT</b> a seagull.</p>
-</div>
-<hr />
-<div class="scpsdone">
-<p><a onclick="toggle('scpsdone');">▼ View SCP Projects this person has been involved with ▼</a></p>
-</div>
-<div class="scpsdone collapsed">
-<p><a onclick="toggle('scpsdone');">▲ Collapse segment ▲</a></p>
-<ul>
-<li><a target="_top" href="http://www.scp-wiki.net/scp-2785">SCP-2785</a></li>
-<li><a target="_top" href="http://www.scp-wiki.net/scp-3747">SCP-3747</a></li>
-<li><a target="_top" href="http://www.scp-wiki.net/scp-3095">SCP-3095</a></li>
-<li><a target="_top" href="http://www.scp-wiki.net/scp-3085">SCP-3085</a></li>
-<li><a target="_top" href="http://www.scp-wiki.net/scp-3339">SCP-3339</a> <b>(Replaced position of Agent the_Bruno)</b></li>
-<li><a target="_top" href="http://www.scp-wiki.net/scp-3733">SCP-3733</a></li>
-<li><a target="_top" href="http://www.scp-wiki.net/scp-579-j">SCP-579-J</a></li>
-</ul>
-</div>
-<hr />
-<div class="talesdone">
-<p><a onclick="toggle('talesdone');">▼ View Incident Reports this person has filed ▼</a></p>
-</div>
-<div class="talesdone collapsed">
-<p><a onclick="toggle('talesdone');">▲ Collapse segment ▲</a></p>
-<ul>
-<li><a target="_top" href="http://www.scp-wiki.net/the-little-robot-that-could">The Little Robot that Could</a></li>
-<li><a target="_top" href="http://www.scp-wiki.net/excerpts-from-the-personal-journal-of-sergeant-a-gregor">Excerpts from the personal journal of Sergeant A. Gregor</a></li>
-</ul>
-</div>
-</div>
-</div>
+<blockquote>
+<h2>RAISA WARNING #4523</h2>
+<p>This file is corrupted by a rogue memetic agent. This agent is unable to do any damage, but they may make this file look absurd, ridiculous, and downright silly. Refreshing the page is known to "reset" this agent.</p>
 </blockquote>
+</center>
+<p><b>Legal Name:</b> Researcher Craig S█████ Calvin</p>
+<p><b>Position:</b> Researcher, Site-<span class="num1"></span></p>
+<p><b>Clearance Level:</b> 3</p>
+<p><b>Clearance Sublevels:</b> 4/3095, 4/3339, 4/<span class="randomSCP"></span>, 4/<span class="randomSCP"></span>, 4/<span class="randomSCP"></span></p>
+<p><b>Known History:</b> Researcher Calvin was born <span class="t1"></span> in the <span class="t2"></span> of 19<span class="num2"></span>. Growing up, Researcher Calvin's favorite hobbies were <span class="t3"></span> and <span class="t4"></span>. Researcher Calvin graduated from <span class="t5"></span> with a Bachelor's degree in <span class="t6"></span>.</p>
+<p>Researcher Calvin was employed at <span class="t7"></span> as a<span class="t8"></span> at the time of Incident ████-████, where <span class="t9"></span> <span class="t10"></span>. After proving his worth during Incident ████-████, Researcher Calvin was employed by the Foundation.</p>
 </body>
 [[/html]]
+**ADDENDUM:** SCP Files
+
+The following is a list of SCP files that Researcher Calvin has written:
+
+[[module ListPages name="SCP-2785"]]
+**[[[http://www.scp-wiki.net/scp-2785|SCP-2785]]] - Self Replicating Automaton - Rating: +%%rating%%##**
+ //Wait! You have yet to see the magic of long division!//
+
+[[module ListPages name="SCP-3747"]]
+**[[[http://www.scp-wiki.net/scp-3747|SCP-3747]]] - Death by Vacuum - Rating: +%%rating%%##**
+ //That's all I needed to hear.//
+
+[[module ListPages name="SCP-3095"]]
+**[[[http://www.scp-wiki.net/scp-3095|SCP-3095]]] - Bird is the Word - Rating: +%%rating%%##**
+ //SCP-3095-1 were first discovered in New York City, after an organized group made up of pigeons attempted to claim the Statue of Liberty for themselves.//
+
+[[module ListPages name="SCP-3085"]]
+**[[[http://www.scp-wiki.net/scp-3085|SCP-3085]]] - Omega Messier - Rating: +%%rating%%##**
+ //As far as I know, I am the sole survivor of this apocalypse.//
+
+The following is a list of SCP files Researcher Calvin has proofread:
+
+[[module ListPages name="SCP-3339"]]
+**[[[http://www.scp-wiki.net/scp-3339|SCP-3339]]] - Randall the Clown's Wacky Broadway Theatre - Rating: +%%rating%%##**
+**Originally created by Agent [[*user the_Bruno]]**
+ //This place used to attract kids by the hundreds. Every time I performed, I could count on an entire crowd cheering on my handiwork here, appreciating the show.//
+
+The following is a list of SCP files Researcher Calvin wrote while drunk on turnip juice:
+
+[[module ListPages name="SCP-379-J"]]
+**[[[http://www.scp-wiki.net/scp-579-j|SCP-579-J]]] - Microtransactions - Rating: +%%rating%%##**
+ //[UNLOCK DESCRIPTION USING 1000 TELEKILL, OR PAY $15.99 TO ACQUIRE DESCRIPTION AND ADDENDUM DLC]//
+
+**ADDENDUM 02 - ELECTRIC BOOGALOO:**
+
+The following is a list of classified incident reports Researcher Calvin attempted to publish to fanfiction.net:
+
+[[module ListPages name="the little robot that could"]]
+**[[[http://www.scp-wiki.net/the-little-robot-that-could|The Little Robot that Could]]] - Rating: +%%rating%%##**
+ //If SCP-2785 could have, he would have passed out from exhilaration.//
