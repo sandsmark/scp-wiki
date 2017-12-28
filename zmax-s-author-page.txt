@@ -66,8 +66,8 @@ Dec. 2017: I completely forgot that’s I released this. I don’t know if it’
 @@ @@_
 
 [[collapsible show="I’m workin’ here." hideLocation="both"]]
-[[module ListPages tags="+SCP + humanoid +sentient -archived -joke -explained" perPage="10" order="rating"]]
-|| %%title_linked%% || %%rating%% ||
+[[module ListPages separate="no" tags="+scp +sentient +humanoid -joke -explained -archived +spacetime ontokinetic ectoentropic" perPage="10" order="votes desc" prependLine="||~ Scip ||~ Created ||~ Rating ||~ Comments ||~ Length ||"]]
+|| %%title_linked%% || %%created_at%% || %%rating%% || %%comments%%  || %%size%% ||
 [[/module]]
 [[/collapsible]]
 
