@@ -76,7 +76,6 @@ text-align: left;
 }
 .article-box {
     padding: 1%;
-    box-sizing: border-box;
     border: double black 1px;
     background-color: #e8e8e8;
     margin: .5%;
@@ -84,7 +83,6 @@ text-align: left;
     text-align: center;
     width: 32%;
     height: 15em;
-    float:left;
 }
 .report-box {
     border: 1px solid black;
@@ -195,7 +193,7 @@ Dr. Magnus finally admitted that he is unwilling to be referred to as "Researche
 Site Director [REDACTED] has placed Dr. Magnus under level 2 observation at all times.  Any sign of unusual activity should be met with intense scrutiny. 
 [[/div]]
 [[/collapsible]]
-[[div id="containerDiv" style="display: inline-block; "]]
+
 [[=]]
 **FOUNDATION PROJECTS**
 [[/=]]
@@ -207,7 +205,7 @@ Site Director [REDACTED] has placed Dr. Magnus under level 2 observation at all 
 [[/collapsible]]
 
 ------
-
+[[div id="containerDiv" style="display: inline-block; "]]
 [[div class="article-box" style="
     float: left;"]]
 **__SCP Projects__**
@@ -240,6 +238,8 @@ Site Director [REDACTED] has placed Dr. Magnus under level 2 observation at all 
 [[[SCP-029-J]]]
 [[[Unicorn Crackfic Procedures]]]
 [[/div]]
+[[/div]]
+[[div id="containerDiv" style="display: inline-block; "]]
 [[div class="article-box"]]
 **__Alchemy Reports__**
 [[[finding-balance | Finding Balance]]]
