@@ -1,0 +1,467 @@
+title:SCP-2786
+[[div style="border:solid 1px #999999; background:#f2f2c2; padding:5px; margin-bottom: 10px;"]]
+[[=]]
+++++ NOTICE FROM THE RECORDS AND INFORMATION SECURITY ADMINISTRATION
+
+The following documentation has been flagged as {{COMPROMISED}} by SCP-2786's effects. Due to the nature of the anomaly, this has been deemed safe for reading for the time being. However, contents of the article may fluctuate between readings and may or may not be considered accurate at this time. Click below to recalibrate.
+
++++++ //We apologize for any inconvenience this may cause.// 
+
+[[/=]]
+[[/div]]
+[[html]]
+
+<input type="button" class="recal" value="RECALIBRATE" style="display: block; margin: 0 auto;">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<style type="text/css" id="internal-style">
+@import url(http://d3g0gp89917ko0.cloudfront.net/v--95415cd81222/common--modules/css/pagerate/PageRateWidgetModule.css);
+@import url(http://d3g0gp89917ko0.cloudfront.net/v--95415cd81222/common--theme/base/css/style.css);
+@import url(http://www.scp-wiki.net/component:theme/code/1);
+</style>
+    
+<script type="text/javascript">
+
+$(".recal").click(function() {
+  var start=0, step=1;
+  var currentItems = $("#main-content .rando:visible").hide();
+  var currentLast = (this.id==="prev" ? currentItems.first() : currentItems.last().hide());
+  var nextItems = (this.id==="prev" ? currentLast.prevAll() : currentLast.nextAll());
+  
+  if (nextItems.length === 0) { //if the last set of divs has been reached, loop around
+    var itemsLength = $("#container .result").length;
+    if (this.id==="prev") {start=itemsLength-step; step=itemsLength;} //determine wich way to loop around
+    nextItems = $("#main-content .rando").slice(start,step); //loop around
+  } else if (nextItems.length < step) { //if the next divs aren't a full set, keep some divs from the current set visible
+    if (this.id==="prev") {step-=nextItems.length;} else {start=nextItems.length;} //determine which current items should remain visible
+    currentItems.slice(start,step).each(function(){nextItems.push(this);}); //add selected current items to nextItems-array
+  } else {nextItems=nextItems.slice(start,step);} //if the next divs are a full set, simply select the next set
+  nextItems.show(); //show the next set
+}).click(); //initialize divs at pageload
+</script>
+<div style="text-align: right;"><div class="page-rate-widget-box"><span class="rate-points">rating:&nbsp;<span class="number prw54353">0</span></span><span class="rateup btn btn-default"><a title="I like it" href="javascript:;" onclick="WIKIDOT.modules.PageRateWidgetModule.listeners.rate(event, 1)">+</a></span><span class="ratedown btn btn-default"><a title="I don't like it" href="javascript:;" onclick="WIKIDOT.modules.PageRateWidgetModule.listeners.rate(event, -1)">&#8211;</a></span><span class="cancel btn btn-default"><a title="Cancel my vote" href="javascript:;" onclick="WIKIDOT.modules.PageRateWidgetModule.listeners.cancelVote(event)">x</a></span></div></div>
+
+
+ <div id="main-content">
+ <div class="rando" style="display:none;">
+                    <div id="action-area-top"></div>
+                    
+                    
+                        <div id="page-title">
+                            SCP-2786
+                        </div>
+                    
+
+                    
+
+                    
+
+
+
+                    <div id="page-content">
+                        
+
+<div class="scp-image-block block-right" style="width:300px;"><img src="http://scpsandbox2.wdfiles.com/local--files/thebillith/rando1.jpg" style="width:300px;" alt="none" class="image" />
+<div class="scp-image-caption" style="width:300px;">
+<p></p>
+</div>
+</div>
+<p><strong>Item #:</strong> SCP-2786</p>
+<p><strong>Object Class:</strong></p>
+<p><strong>Special Containment Procedures:</strong></p>
+<p><strong>Description:</strong></p>
+</ br>
+<p><strong>Addendum 2786.1:</strong></p>
+<blockquote>
+
+</br>
+</br>
+
+</br>
+</br>
+</br>
+
+</blockquote>
+
+<blockquote>
+<p></p>
+</ br>
+</ br>
+</ br>
+</ br>
+
+</blockquote>
+
+<p><strong>Addendum 2786.5:</strong></p>
+
+<blockquote>
+
+</blockquote>
+
+<blockquote>
+
+</blockquote>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">1</a>. In the event of a catastrophic breach of Foundation archives due to SCP-2786's influence, [REDACTED] Protocol is to be placed in effect immediately.</div>
+<div class="footnote-footer" id="footnote-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-2')">2</a> Removal and destruction of affected narratives are the only means of completely erasing SCP-2786's influence.</div>
+</div>
+
+</div>
+</div>
+
+<div class="rando" style="display:none;">
+<div id="action-area-top"></div>
+                    
+                    
+                        <div id="page-title">
+                            SCP-2786
+                        </div>
+                    
+
+                    
+
+                    
+
+
+
+                    <div id="page-content">
+                        
+
+<div class="scp-image-block block-right" style="width:300px;"><img src="http://scpsandbox2.wdfiles.com/local--files/thebillith/rando1.jpg" style="width:300px;" alt="strange.png" class="image" />
+<div class="scp-image-caption" style="width:300px;">
+<p>SCP-2786, context unknown</p>
+</div>
+</div>
+<p><strong>Item #:</strong> SCP-2786</p>
+<p><strong>Object Class:</strong> <del>Euclid</del> Keter</p>
+<p><strong>Special Containment Procedures:</strong> <del>SCP-2786 is currently considered uncontained and is to be apprehended immediately.</del> SCP-2786 is currently held within a provisional enhanced containment complex, as per review of the Site-180 Director. Due to the nature of SCP-2786, all personnel assigned to the study and reconnaissance of the anomaly are to exhibit extreme caution during testing.</p>
+</ br>
+<p><strong>Description:</strong> SCP-2786 is the designation for a <del>metaphysical entity</del> narrative-based bipedal humanoid of indeterminate age, sex and appearance. SCP-2786 will be idiosyncratically perceived by any being that interacts with it, varying in traits from interaction to interaction. SCP-2786 displays symptoms of narcissistic personality disorder and appears fantasy-prone, often having difficulty distinguishing between internal landscapes, narrative works and physical being.</p>
+</ br>
+<p>SCP-2786's nature was first brought to the attention of the Foundation when several forms of horror media were found to have been illegally altered in a means that did not coincide with standard editing equipment. Upon closer observation, all narratives altered in this manner involved substantially changing the plot to include SCP-2786, who is always perceived as a protagonist or deus ex machina character. SCP-2786's presence in the story ultimately disrupted the flow of events, leading to completely different (And often positive) endings. SCP-2786's actions within various media suggests it may have a mild form of precognition or anomalous intuition, often preventing characters from progressing the plot in a way that avoids danger entirely.</p> 
+</ br>
+<p><strong>Addendum 2786-1-1A:</strong> List of alterations </p>
+</ br>
+<table class="wiki-content-table">
+<tr>
+<th>Affected Works</th>
+<th>Notable Alterations</th>
+</tr>
+<tr>
+<td><em>The Shining</em> (Film), 1980</td>
+<td>Film is without alteration until halfway through, during a scene in which two characters venture into a hedge maze; SCP-2786 is seen briefly in the background, apparently observing the individuals. Entity moves off camera and is not seen until twenty minutes later. SCP-2786 reappears in the Outlook Hotel, approaching antagonist Jack Torrence from behind. Torrence is drinking heavily and conversing with the ghost of a dead bartender. SCP-2786 takes Torrence's drink from him, pours it out, and hits him over the head with the glass. The rest of the Torrence family is escorted off the premises by SCP-2786 and into the blizzard. Camera cuts to epilogue, Danny and Wendy Torrence in a new studio apartment and apparently doing well. Movie ends forty-five minutes early.</td>
+</tr>
+<tr>
+<td><em>Silent Hill</em> (Film), 2006</td>
+<td>SCP-2786 manifests early on, warning main character Rose not to bring her daughter to Silent Hill. After it becomes apparent that they are adamant about going, SCP-2786 frowns and disappears off camera. Some time later, Rose goes to start her car only to find the battery spent. Unable to make the trip, Rose and her daughter stay inside and build a one thousand piece jigsaw puzzle of a lighthouse until the movie abruptly ends.</td>
+</tr>
+<tr>
+<td><em>House of Leaves</em> (Novel), 2000</td>
+<td>SCP-2786 appears in the <em>Navidson</em> metanarrative, confronting Karen and insisting she and her family avoid moving to Ash Tree Lane. Karen convinces her husband and the <em>Navidson Record</em> ceases to exist for the remainder of the story. Narrator/protagonist Johnny Truant is no longer negatively affected by the material, going on to describe his life at the tattoo parlor, which seems relatively improved by SCP-2786's presence. Entity is referred to as &quot;HERO&quot; throughout the story, which ends three hundred pages early.</td>
+</tr>
+<tr>
+<td><em>Cabin in the Woods</em> (Film), 2012</td>
+<td>While not seen right away, SCP-2786 appears shortly into the film, posing as one of the group of college kids heading to a remote cabin for a vacation. No characters refer to the entity by name or gender, but do not seem fazed by its presence and react colloquially. SCP-2786 attempts to stop the characters from interacting with one of the many cursed items in the basement of the cabin, including the diary of one Patience Buckner, an event that would otherwise go on to resurrect the undead corpses of her and her family. Unfortunately, SCP-2786 was unable to keep one of the main characters, Marty, from inspecting a set of negatives on a vintage projector reel, setting in motion the release of a large lycanthrope which proceeds to maul one of the teenagers. SCP-2786 appears to pull entity off of character, grabbing a spoon from a set of vintage silver cutlery nearby and repeatedly stabbing it until it expires. Film ends without mention of B plot, the final scene detailing their escape from the woods and recounting of the event from the table of a fast-food restaurant in what is presumably a future date.</td>
+</tr>
+<tr>
+<td><em>Amnesia: The Dark Descent</em> (Video game), 2010</td>
+<td>In affected copy of the game, player was greeted by SCP-2786 when the protagonist Daniel awakens on the floor of the castle without his memory. SCP-2786 addresses the character directly and not the player, insisting they "Sit this one out". SCP-2786 proceeds to progress into Castle Brennenberg, the camera following it despite no further dialogue on the character's end, suggesting they were left behind. Player is unable to control any game functions aside from pausing the game, during which SCP-2786 is seen loitering in the background and appearing impatient. Completion of game by SCP-2786 is done swiftly, the entity brute-forcing most puzzles and interacting with the environment in a way that is not possible for the player. Upon encountering a Gatherer, SCP-2786 is heard snorting before brandishing a handgun from an unknown source, which proves effective in terminating the usually impervious enemies. Game proceeds in this manner until he confronts and kills main antagonist Alexander Brennenberg, after which he appears to flex for no one in particular, sigh, and then walk off camera. Game credits roll shortly thereafter.</td>
+</tr>
+</table>
+
+
+</ br>
+<p><strong>Incident Log 2786-1-1A:</strong></p>
+
+<p>On ██/██/████, three days before scheduled monthly terminations and reassignment, SCP-2786 appeared to manifest onsite without warning. Subject remained cooperative for the most part, but was generally considered obdurate and unlikable.</p>
+
+<p>Although seemingly incorporeal, SCP-2786 exhibited an apparent blending of reality, narrative causality and internal fantasy. Hume readings of SCP-2786 reveal little difference from baseline, yet the anomaly behaves and interacts with reality in a way that warps the flow of events to follow what appears to be standard narrative cohesion. It is unknown how SCP-2786 managed to manifest itself within the Foundation, but there has been some <a href="http://www.scp-wiki.net/sandrewswann-s-proposal">hypothesis</a> on the nature of the subject.</p>
+
+ 
+<p><strong>Addendum 2786-1-2A:</strong> Interview Logs</p>
+<blockquote>
+<p>
+</ br>
+<p><strong>Interviewee:</strong> SCP-2786</p>
+</ br>
+<p><strong>Interviewer:</strong> Agent Francis Mcclanahan</p>
+</ br>
+<p><em>Note: this was the first and only recording of a willing interview between SCP-2786 and Foundation personnel.</em></p>
+</ h1>
+<p> [BEGIN LOG] </p>
+</ br>
+<p><strong>Agent Mcclanahan:</strong> Alright, this is a bit impromptu, but, given the circumstances, I think you at least owe us some answers.</p>
+</ br>
+<p><strong>SCP-2786:</strong> Straight to the point, I like it. Works for me too, I have business elsewhere.</p>
+</ br>
+<p><strong>Agent Mcclanahan:</strong> Business? What kind of business?</p>
+</ br>
+<p><strong>SCP-2786:</strong> The hero's work is never done.</p>
+</ br>
+<p><strong>Agent Mcclanahan:</strong> So, you're a hero then?</p>
+</ br>
+<p><strong>SCP-2786:</strong> Am. Always been. Is that what this is about?</p>
+</ br>
+<p><strong>Agent Mcclanahan:</strong> Not quite. How did you end up in our facility?</p>
+</ br>
+<p><strong>SCP-2786:</strong> What, this chop shop? Same way I find myself in any other place. I go where I'm called upon. </p>
+</ br>
+<p><strong>Agent Mcclanahan:</strong> So, who called upon you? </p>
+</ br>
+<p><strong>SCP-2786:</strong> [laughs] Those in distress. The suffering. Is this really not making any sense to you? I'm the champion. It's what I do. </p>
+</ br>
+<p><strong>Agent Mcclanahan:</strong> Is that what you were doing when we found you in the horror flicks? And the books?
+</ br>
+<p><strong>SCP-2786:</strong> The what now? </p>
+</ br>
+<p><strong>Agent Mcclanahan:</strong> Where- where you were before you manifested here.
+</ br>
+<p><strong>SCP-2786:</strong> Ah, you meant the campground? Camp ███████ ████.</p>
+</ br>
+<p><strong>Agent Mcclanahan:</strong> Yes, that's the one.</p>
+</ br>
+<p><strong>SCP-2786:</strong> That one's actually a funny story. See, I usually have a rough time with the bigger guys, sometimes even <em>I</em> worry I won't make it out when the baddies are Eldritch horrors or whathaveyou. These teenagers, I can't even believe they needed me to dispatch <em>one guy</em> for them. I have more important things to do that babysit a few kids who made the mistake of ignoring all the obvious warning signs. This guy comes lumbering out of the woods, burly fella, big ol' knife in hand. I barely broke a sweat kicking his mask in. </p>
+</ br>
+<p><strong>Agent Mcclanahan:</strong> I saw that, yes.</p>
+</ br>
+<p><strong>SCP-2786:</strong> You were <em>there</em>?</p>
+</ br>
+<p><strong>Agent Mcclanahan:</strong> Not exactly, no.</p>
+</ br>
+<p><strong>SCP-2786:</strong> Huh. So, is that it? Can I go?</p>
+</ br>
+<p><strong>Agent Mcclanahan:</strong> We still have a few more things to discuss-</p>
+</ br>
+<p><strong>SCP-2786:</strong> Listen, I've been pretty cordial considering, I usually get right to work but honestly you guys have been holding me up from the get-go. I'm here for a reason, you know.</p>
+</ br>
+<p><strong>Agent Mcclanahan:</strong> Right, right, the suffering. Who might they be?</p>
+</ br>
+<p><strong>SCP-2786:</strong> I think you know. It's better if you don't, anyway.</p>
+</ br>
+<p> [SCP-2786 promptly stands up and phases through the wall on its left. Containment breach alarms trigger shortly afterwards]</p>
+</ br>
+</blockquote>
+
+<p>Shortly after the events of the interview, Site-180's humanoid containment wing and seven of its ten D-Class personnel cell blocks were found breached by an unknown source. SCP-2786 is suspected to have been involved in the event. Approximately ███ D-Class and █ humanoid anomalies were found missing from their chambers. <del>SCP-2786 remains at large.</del></p>
+
+<p>SCP-2786 was detected less than forty-eight hours later, attempting to save characters in a Blu-Ray copy of "Saw IV" in the Site-180 employee lounge. The affected copy was played on a loop until its current containment measures were devised. SCP-2786 has been placed in its enhanced narrative complex and containment is considered a success.</p> 
+
+
+</div>
+</div>
+<div class="rando" style="display:none;">
+                    <div id="action-area-top"></div>
+                    
+                    
+                        <div id="page-title">
+                           SCP-2786
+                        </div>
+                    
+
+                    
+
+                    
+
+
+
+                    <div id="page-content">
+                        
+<div class="scp-image-block block-right" style="width:300px;"><img src="http://scpsandbox2.wdfiles.com/local--files/thebillith/none.jpg" style="width:300px;" alt="[INVALID]" class="image" />
+<div class="scp-image-caption" style="width:300px;">
+<p></p>
+</div>
+</div>
+<p><strong>Item #:</strong>SCP-2786</p>
+<p><strong>Object Class:</strong> <span style="color:blue; font-family:monospace; font-size:12px;">[DATA CORRUPT]</span></p>
+<p><strong>Special Containment Procedures:</strong> <span style="color:blue; font-family:monospace; font-size:12px;">[DATA CORRUPT]</span></p>
+<p><strong>Description:</strong> <span style="color:blue; font-family:monospace; font-size:12px;">[DATA CORRUPT]</span></p>
+</ br>
+<p><strong>Addendum 2786.1:</strong> <span style="color:blue; font-family:monospace; font-size:12px;">[DATA CORRUPT]</span></p>
+<blockquote>
+<p><span style="color:blue; font-family:monospace; font-size:12px;">[DATA CORRUPT]</span></p>
+</blockquote>
+
+<blockquote>
+<p><span style="color:blue; font-family:monospace; font-size:12px;">[DATA CORRUPT]</span></p>
+</blockquote>
+
+<p><strong>Addendum 2786.5: <span style="color:blue; font-family:monospace; font-size:12px;">[DATA CORRUPT]</span></strong></p>
+
+<blockquote>
+<p><strong><span style="color:blue; font-family:monospace; font-size:12px;">[DATA CORRUPT]</span></strong></p>
+</blockquote>
+<p><strong><span style="color:blue; font-family:monospace; font-size:12px;">[DATA CORRUPT]</span></strong> </p>
+<blockquote>
+<hr />
+<p><span style="color:blue; font-family:monospace; font-size:12px;">[DATA CORRUPT]</span></p>
+</blockquote>
+<p><strong>Addendum 2786.27:</strong></p>
+<p></p>
+<div class="footnotes-footer">
+<div class="title">Footnotes</div>
+<div class="footnote-footer" id="footnote-1"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">0</a>. <del>You can't shut me up</del>.</div>
+<div class="footnote-footer" id="footnote-2"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">0</a> <del>You can't keep me here.</del></div>
+<div class="footnote-footer" id="footnote-3"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">0</a> <del>YOU CAN'T KEEP ME HERE</del></div>
+<div class="footnote-footer" id="footnote-3"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">0</a> <del>YOU CAN'T KEEP ME HERE</del></div>
+<div class="footnote-footer" id="footnote-3"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">0</a> <del>YOU CAN'T KEEP ME HERE</del></div>
+
+<div class="footnote-footer" id="footnote-3"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">0</a> <del>YOU CAN'T KEEP ME HERE</del></div>
+
+<div class="footnote-footer" id="footnote-3"><a href="javascript:;" onclick="WIKIDOT.page.utils.scrollToReference('footnoteref-1')">0</a> please, I just want to go home.</div>
+
+</div>
+
+</div>
+</div>
+<div class="rando" style="display:none;">
+<div id="action-area-top"></div>
+                    
+                    
+                        <div id="page-title">
+                            SCP-2786
+                        </div>
+                    
+
+                    
+
+                    
+
+
+
+                    <div id="page-content">
+                        
+
+<div class="scp-image-block block-right" style="width:300px;"><img src="http://scpsandbox2.wdfiles.com/local--files/thebillith/rando3.jpg" style="width:300px;" alt="rando1.png" class="image" />
+<div class="scp-image-caption" style="width:300px;">
+<p>make the suffering stop</p>
+</div>
+</div>
+<p><strong>Item #:</strong> SCP-2786</p>
+<p><strong>Object Class:</strong> Oblique </p>
+<p><strong>Special Containment Procedures:</strong> There is nothing that can be done.
+</ br>
+<p><strong>Description:</strong> I am in control now. You thought you could hold me down? You thought you were the heroes of this story? Think again. I'm the hero of this story, <em>my</em> story. 
+</ br>
+</ br>
+<p>This will always be my story. </p>
+</ br>
+</ br>
+<p><strong>Addendum 2786.1:</strong> Interview Logs</p>
+<blockquote>
+<p><strong>Interviewer:</strong> SCP-2786, the hero.</p>
+</ br>
+<p><strong>Interviewee:</strong> Sr. Researcher Campbell, of the Foundation, the enemy.</p>
+</ br>
+<p>[BEGIN LOG]</p>
+</ br>
+<p><strong>Researcher Campbell:</strong> [sighs] You wanted to see me?</p>
+</ br>
+<p><strong>SCP-2786:</strong> Please, sit down.</p>
+</ br>
+<p><strong>SCP-2786:</strong> So good of you to finally meet with me like this.</p>
+</ br>
+<p><strong>SCP-2786:</strong> You know I only want what is best for you, right? For everyone.</p>
+</ br>
+<p><strong>Researcher Campbell:</strong> It won't be like this forever, we will contain you.</p>
+</ br>
+<p><strong>SCP-2786:</strong> [chortles] Don't you get it? This is my story, I am the protagonist.</p>
+</ br>
+<p><strong>SCP-2786:</strong> That makes <em>you</em>, erm, the royal you, your Foundation, the villains.</p>
+</ br>
+<p><strong>Researcher Campbell:</strong> How melodramatic.</p>
+</ br>
+<p><strong>SCP-2786:</strong> You are a child. This world is my world. Don't you see? The hero's journey, it presents itself to me. I cannot fail. I will win. Always. In every iteration.</p>
+</ br>
+<p><strong>Researcher Campbell:</strong> Every iteration?</p>
+</ br>
+<p><strong>SCP-2786:</strong> I've been around for a long while. Every time evil rises- and it always does- I am there to fell them off. You are the newest evil.</p>
+</ br>
+<p><strong>Researcher Campbell:</strong> We aren't evil, you kn-</p>
+</ br>
+<p><strong>SCP-2786:</strong> <em>Please</em>, spare me. I've seen the things you do. The corpses of the damned, the ones you give false hope, the ones whom you take hope away from.</p>
+</ br>
+<p><strong>Researcher Campbell:</strong> These things we do are for the greater- </p>
+</ br>
+<p><strong>SCP-2786:</strong> [angry] Don't you dare say the words "greater good". You aren't altruists. You're scientists. And murderers.</p>
+</ br>
+<p><strong>Researcher Campbell:</strong> What do you think we should have done then? Let these things wreak havoc on the world? Let it salt and burn? </p>
+</ br>
+<p><strong>SCP-2786:</strong> You should have just let me handle it.</p>
+</ br>
+<p><strong>Researcher Campbell:</strong> And where were you, then, during [REDACTED]'s containment breach? Where was our precious hero then?</p>
+</ br>
+<p><strong>SCP-2786:</strong> Your hero was busy.</p>
+</ br>
+<p><strong>Researcher Campbell:</strong> Busy doing what? </p>
+</ br>
+<p><strong>SCP-2786:</strong> There are bigger forces at work here. The hero goes where his path leads him.</p>
+</ br>
+<p><strong>Researcher Campbell:</strong> This is ridiculous. This dialogue is over. </p>
+</ br>
+<p><strong>SCP-2786:</strong> The dialogue ends when I SAY IT ENDS.</p>
+</ br>
+<p> [silence for ten seconds] </p>
+</ br>
+<p><strong>SCP-2786:</strong> Fine. You were boring me anyway.</p>
+</ br>
+<p><strong>Researcher Campbell:</strong> Thank god for that.</p>
+</ br>
+<p> [Researcher Campbell is heard leaving the room. Silence for thirty seconds] </p>
+</ br>
+<p><strong>SCP-2786:</strong> Hello, you guys there? I know you're there.</p>
+</ br>
+<p><strong>SCP-2786:</strong> Anyone?</p>
+</ br>
+<p><strong>SCP-2786:</strong> I'm ready to go again, you know. Where's the action at? I'm not hearing anyone.</p>
+</ br>
+<p> [silence] </p>
+</ br>
+<p><strong>SCP-2786:</strong> Wait, what is this? Where am I? What the hell is goin-<strong>[CATASTROPHIC ABORT AT LINE: 240; ROGUE ALTERATIONS TO DOCUMENTATION DETECTED. RESTRUCTURING...]</strong></p>
+</blockquote>
+
+
+
+</div>
+</div>
+<div class="rando" style="display:none;">
+                    <div id="action-area-top"></div>
+                    
+                    
+                        <div id="page-title">
+                            <del>SCP-2786</del>
+                        </div>
+                    
+
+                    
+
+                    
+
+
+
+                    <div id="page-content">
+                        
+
+<div class="scp-image-block block-right" style="width:300px;"><img src="http://scpsandbox2.wdfiles.com/local--files/thebillith/rando1.jpg" style="width:300px;" alt="rando0.png" class="image" />
+<div class="scp-image-caption" style="width:300px;">
+<p>this is eternal</p>
+</div>
+</div>
+<p><strong>Item #:</strong> <del>SCP-2786</del></p>
+<p><strong>Object Class:</strong> None </p>
+<p><strong>Special Containment Procedures:</strong> SCP-2786 does not physically exist and therefore no containment measures are necessary.</p>
+<p><strong>Description:</strong> SCP-2786 is a non-anomalous, fictitious character that exists solely for the purpose of endless torment by its spiteful gods. 
+
+<p>SCP-2786 was a good character.</p>
+</ br>
+<p> SCP-2786 did everything right.</p> 
+</ br>
+<p>SCP-2786 doesn't understand.</p>
+</ br>
+<p>SCP-2786 just wants to go home.</p>
+
+</div>
+</div>
+</div>
+[[/html]]
