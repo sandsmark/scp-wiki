@@ -20,7 +20,7 @@ margin: 5px;
 
 .list-pages-item p {
     line-height: 100%;
-    margin: 1px;
+    margin: 0px;
 }
 .boxType{
     display: inline-block;
@@ -98,6 +98,11 @@ text-align: left;
     padding: 5px;
     background-color: ivory;
 }
+
+.table.wiki-content-table {
+    width: 100;
+}
+
 .article-box {
     padding: 5px;
     box-sizing: border-box;
@@ -301,7 +306,7 @@ Site Director [REDACTED] has placed Dr. Magnus under level 2 observation at all 
 ++++ Written Works
 [[/div]]
 ||~ Title ||~ Written on ||~ Rating ||~ Tags||
-[[module ListPages created_by="DrMagnus" order="rating desc"]]
+[[module ListPages separate="no" created_by="DrMagnus" order="rating desc"]]
 ||%%title_linked%%||%%created_at%%||%%rating%%||%%tags%%||
 [[/module]]
 [[/div]]
