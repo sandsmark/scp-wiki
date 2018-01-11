@@ -4,14 +4,27 @@ title:Dr. Magnus' Personnel File
 @import url(http://www.scp-wiki.net/local--files/dr-magnus-personnel-file/magnus-theme.css)
 
 #page-content .collapsible-block {  
-  max-width: 100%;
-    /* text-align: center; */
-text-color: black;
-background-color: #ffebb5;
-    border-color: #b01;
+    max-width: 100%
+    text-color: black;
     border: solid 1px #b01;
-padding: 5px;
-margin: 5px;
+    padding: 5px; 
+    margin: 5px;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+
+}
+
+.collapsible-block-unfolded{
+    color: black;
+    
+}
+
+.collapsible-block-folded {
+    text-align: center;
+}
+
+.collapsible-block-link {
+    font-weight: bold;
+    color: #b01;
 }
 .newBlock{
     border-style: groove;
@@ -212,6 +225,7 @@ Site Director [REDACTED] has placed Dr. Magnus under level 2 observation at all 
 ++++ Written Works
 [[/div]]
 [[div class="addendumbox"]]
+[[collapsible show="SCP Articles" hide="close"]]
 [[div class="addendumtitle"]]
 ++++ SCP Articles
 [[/div]]
@@ -219,15 +233,19 @@ Site Director [REDACTED] has placed Dr. Magnus under level 2 observation at all 
 ||%%title_linked%%||%%created_at%%||%%rating%%||%%tags%%||
 [[/module]]
 [[/div]]
+[[/collapsible]]
 [[div class="addendumbox"]]
+[[collapsible show="Tale Articles" hide="Close"]]
 [[div class="addendumtitle"]]
-++++ Tale Articles
+++++ SCP Articles
 [[/div]]
 [[module ListPages separate="no" created_by="DrMagnus" tags="tale" order="rating desc" prependLine="||~ Title ||~ Written on ||~ Rating ||~ Tags||"]]
 ||%%title_linked%%||%%created_at%%||%%rating%%||%%tags%%||
 [[/module]]
+[[/collapsible]]
 [[/div]]
 [[div class="addendumbox"]]
+[[collapsible show="All Others" hide="Close"]]
 [[div class="addendumtitle"]]
 ++++ All Others
 [[/div]]
@@ -235,6 +253,7 @@ Site Director [REDACTED] has placed Dr. Magnus under level 2 observation at all 
 ||%%title_linked%%||%%created_at%%||%%rating%%||%%tags%%||
 [[/module]]
 [[/div]]
+[[/collapsible]]
 [[/div]]
 
 ------
