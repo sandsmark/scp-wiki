@@ -211,9 +211,30 @@ Site Director [REDACTED] has placed Dr. Magnus under level 2 observation at all 
 [[div class="addendumtitle"]]
 ++++ Written Works
 [[/div]]
-[[module ListPages separate="no" created_by="DrMagnus" order="rating desc" prependLine="||~ Title ||~ Written on ||~ Rating ||~ Tags||"]]
+[[div class="addendumbox"]]
+[[div class="addendumtitle"]]
+++++ SCP Articles
+[[/div]]
+[[module ListPages separate="no" created_by="DrMagnus" tags"scp" order="rating desc" prependLine="||~ Title ||~ Written on ||~ Rating ||~ Tags||"]]
 ||%%title_linked%%||%%created_at%%||%%rating%%||%%tags%%||
 [[/module]]
+[[/div]]
+[[div class="addendumbox"]]
+[[div class="addendumtitle"]]
+++++ Tale Articles
+[[/div]]
+[[module ListPages separate="no" created_by="DrMagnus" tags"tale" order="rating desc" prependLine="||~ Title ||~ Written on ||~ Rating ||~ Tags||"]]
+||%%title_linked%%||%%created_at%%||%%rating%%||%%tags%%||
+[[/module]]
+[[/div]]
+[[div class="addendumbox"]]
+[[div class="addendumtitle"]]
+++++ All Others
+[[/div]]
+[[module ListPages separate="no" created_by="DrMagnus" tags"-tale -scp" order="rating desc" prependLine="||~ Title ||~ Written on ||~ Rating ||~ Tags||"]]
+||%%title_linked%%||%%created_at%%||%%rating%%||%%tags%%||
+[[/module]]
+[[/div]]
 [[/div]]
 
 ------
