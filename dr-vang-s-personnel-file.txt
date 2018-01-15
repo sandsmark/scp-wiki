@@ -846,6 +846,12 @@ Writing for the wiki is its own reward, but if you want to show your appreciatio
 
 and that's all i wrote.
 
-[[module listPages order="size desc" separate="no" perPage="5000" limit="5000" tags="scp"]]
-|| %%title_linked%% || %%size%% || +%%rating%% || %%created_by%% ||
+[[code]]
+[[module listPages created_by="" tags="scp" separate="no" perPage="300"]]
+|| %%size%% || %%rating%% ||
 [[/module]]
+
+[[module listPages created_by="" tags="scp" separate="no" order="created_at" perPage="300"]]
+# %%created_at%%
+[[/module]]
+[[/code]]
