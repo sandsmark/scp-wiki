@@ -19,7 +19,7 @@ Second, "consensus reality" is simply consensus of the Council.
 
 **Object Class:** Non-Anomalous
 
-**Special Containment Procedures:** SCP-001 is kept on a dedicated server or library located in a place of the O5 Council's choosing. The normal prohibition of O5 members from contacting SCP-designated objects does not apply in the case of SCP-001 as it is not anomalous. Since SCP-001 is Non-Anomalous no tests are required.
+**Special Containment Procedures:** SCP-001 is kept on a dedicated server or library located in a place of the O5 Council's choosing. The normal prohibition of O5 members from contacting SCP-designated objects does not apply in the case of SCP-001 as it is not anomalous.
 
 Any additions, deletions, or updates to SCP-001 requires the consensus decision of the O5 Council. Access to SCP-001 is limited to the O5 Council. Access by other Foundation members or non-Foundation entities constitutes a containment breach that may result in a Broken Masquerade scenario. General amnestic release is authorized to be used in the case of a containment breach, up to and including global Class A amnesticization, as required.
 
@@ -135,10 +135,9 @@ All activities and objects outside the parameters of SCP-001 are to be tracked, 
 <script language="javascript">
 
 function LogIn(){
-var passcode = document.getElementById('password').value
 loggedin=false;
-passcode="start";
-passcode=prompt("Does the black moon howl?");
+password="start";
+password=prompt("Does the black moon howl?");
 password=password.toLowerCase();
 
 loggedin=true;
