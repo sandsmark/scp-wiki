@@ -1,0 +1,610 @@
+title:SCP Style Guide
+[[module css]]
+.footnoteref{
+color: #FF5555;
+}
+.danke{
+padding: 5px 5px 5px 15px;
+margin-bottom:10px;
+width: 100%;
+font-family: monospace;
+font-size: 1.1em; }
+
+.agent{
+background-color:#002200;
+border: 3px solid #55AA55;
+color: #77CC77;
+}
+
+.site{
+background-color:#222200;
+border: 3px solid #AAAA55;
+color: #DDDD77;
+}
+[[/module]]
+
+Hello and welcome!
+
+This is meant to be an ease-of-access, quick 'copy-paste' resource for alternative logs and formats for SCP files, in the same vein as Group-of-Interest Style guides for their individual formats. If you're looking for basic Wikidot formatting, go check out [[[Wiki Syntax]]]. For more advanced coding, check out the [[[advanced-formatting-and-you|Advanced Formatting]]] guide.
+
+For the purposes of accruing multiple format bits, this will remain open for collaboration. Be sure to follow the presentation format here.
+
+@@ @@
+[[toc]]
+
+@@ @@
+[[# basic]]
+
+++ Basic Article Template
+
+[[code]]
+[[>]]
+[[module Rate]]
+[[/>]]
+
+**Item #:** SCP-XXXX
+
+**Object Class:** Safe/Euclid/Keter (indicate which class)
+ 
+**Special Containment Procedures:** [Paragraphs explaining the procedures]
+
+**Description:** [Paragraphs explaining the description]
+
+**Addendum:** [Optional additional paragraphs]
+[[/code]]
+
+++ Interview Template
+
+[[code]]
+> **Interviewed:** [The person, persons, or SCP being interviewed]
+> 
+> **Interviewer:** [Interviewer, can be blocked out using █]
+> 
+> **Foreword:** [Small passage describing the interview]
+> 
+> **<Begin Log, [optional time info]>**
+> 
+> **Interviewer:** [speech]
+> 
+> **Person:** [speech]
+> 
+> [Repeat as necessary]
+> 
+> **<End Log, [optional time info]>**
+> 
+> **Closing Statement:** [Small summary and passage on what transpired afterward]
+[[/code]]
+
+**Note:** When inserting block quotes with the > symbol, make sure you add a space after each > you use-- otherwise your text won't show up as a block quote.
+
+[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[/div]]
+[[div style="border-bottom:1px solid #777;"]]
+[[/div]]
+
+[[# tables]]
+
++++ Test Log formats:
+
+**__Option 1__**[[footnote]]As seen in [[[SCP-2682]]][[/footnote]]
+
+**What it looks like:**
+
+[[table  style="border-collapse:collapse; width: 600px;"]]
+[[row]]
+[[cell style="font-weight:bold;padding: .3em .7em; text-align: center; border: 1px solid black; background-color: silver; width: 20%;"]]
+TEST TITLE STUFF
+[[/cell]]
+[[cell style="font-weight:bold; padding: .3em .7em; text-align: center; border: 1px solid black; background-color: silver;"]]
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="text-align: center; padding: .3em .7em; border: 1px solid black"]]
+Subject
+[[/cell]]
+[[cell style="border: 1px solid black; padding: .3em .7em;"]]
+DATA HERE
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="text-align: center; padding: .3em .7em; border: 1px solid black"]]
+Protocol
+[[/cell]]
+[[cell style="border: 1px solid black; padding: .3em .7em;"]]
+DATA HERE
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="text-align: center; border: 1px solid black"]]
+Results
+[[/cell]]
+[[cell style="border: 1px solid black; padding: .3em .7em;"]]
+DATA HERE
+[[/cell]]
+[[/row]]
+[[/table]]
+
+**What to copy:**
+
+[[collapsible]]
+[[code]]
+[[table  style="border-collapse:collapse; width: 600px;"]]
+[[row]]
+[[cell style="font-weight:bold;padding: .3em .7em; text-align: center; border: 1px solid black; background-color: silver; width: 20%;"]]
+TEST TITLE STUFF
+[[/cell]]
+[[cell style="font-weight:bold; padding: .3em .7em; text-align: center; border: 1px solid black; background-color: silver;"]]
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="text-align: center; padding: .3em .7em; border: 1px solid black"]]
+Subject
+[[/cell]]
+[[cell style="border: 1px solid black; padding: .3em .7em;"]]
+DATA HERE
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="text-align: center; padding: .3em .7em; border: 1px solid black"]]
+Protocol
+[[/cell]]
+[[cell style="border: 1px solid black; padding: .3em .7em;"]]
+DATA HERE
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="text-align: center; border: 1px solid black"]]
+Results
+[[/cell]]
+[[cell style="border: 1px solid black; padding: .3em .7em;"]]
+DATA HERE
+[[/cell]]
+[[/row]]
+[[/table]]
+[[/code]]
+[[/collapsible]]
+
+-----
+
+**__Option 2__**[[footnote]]As seen in [[[SCP-2832]]].[[/footnote]]
+
+**What it looks like:**
+
+[[table style="border: 1px solid silver"]]
+[[row]]
+[[hcell style="border: 1px solid silver"]]
+Date
+[[/hcell]]
+[[hcell style="border: 1px solid silver"]]
+DATA
+[[/hcell]]
+[[hcell style="border: 1px solid silver"]]
+Effects
+[[/hcell]]
+[[hcell style="border: 1px solid silver"]]
+Notes
+[[/hcell]]
+[[/row]]
+[[row]]
+[[cell style="border: 1px solid silver"]]
+DATE
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+[[=]]
+DATA
+[[/=]]
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+EFFECTS
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+NOTES
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="border: 1px solid silver"]]
+DATE
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+[[=]]
+DATA
+[[/=]]
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+EFFECTS
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+NOTES
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="border: 1px solid silver"]]
+DATE
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+[[=]]
+DATA
+[[/=]]
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+EFFECTS
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+NOTES
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="border: 1px solid silver"]]
+DATE
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+[[=]]
+DATA
+[[/=]]
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+EFFECTS
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+NOTES
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="border: 1px solid silver"]]
+DATE
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+[[=]]
+DATA
+[[/=]]
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+EFFECTS
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+NOTES
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="border: 1px solid silver"]]
+DATE
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+[[=]]
+DATA
+[[/=]]
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+EFFECTS
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+NOTES
+[[/cell]]
+[[/row]]
+[[/table]]
+
+**What to copy:**
+
+[[collapsible]]
+[[code]]
+
+[[table style="border: 1px solid silver"]]
+[[row]]
+[[hcell style="border: 1px solid silver"]]
+Date
+[[/hcell]]
+[[hcell style="border: 1px solid silver"]]
+DATA
+[[/hcell]]
+[[hcell style="border: 1px solid silver"]]
+Effects
+[[/hcell]]
+[[hcell style="border: 1px solid silver"]]
+Notes
+[[/hcell]]
+[[/row]]
+[[row]]
+[[cell style="border: 1px solid silver"]]
+DATE
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+[[=]]
+DATA
+[[/=]]
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+EFFECTS
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+NOTES
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="border: 1px solid silver"]]
+DATE
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+[[=]]
+DATA
+[[/=]]
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+EFFECTS
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+NOTES
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="border: 1px solid silver"]]
+DATE
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+[[=]]
+DATA
+[[/=]]
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+EFFECTS
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+NOTES
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="border: 1px solid silver"]]
+DATE
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+[[=]]
+DATA
+[[/=]]
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+EFFECTS
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+NOTES
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="border: 1px solid silver"]]
+DATE
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+[[=]]
+DATA
+[[/=]]
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+EFFECTS
+[[/cell]]
+[[cell style="border: 1px solid silver"]]
+NOTES
+[[/cell]]
+[[/row]]
+[[/table]]
+[[/code]]
+[[/collapsible]]
+
+[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[/div]]
+[[div style="border-bottom:1px solid #777;"]]
+[[/div]]
+
+[[# logs]]
+
++++ Audio/Video Log Formats:
+
+**__Option 1__**[[footnote]]As seen in [[[SCP-1730]]][[/footnote]]
+
+**What it looks like:**
+
+
+[[div style="display: inline-block; border-radius: 10px; border:dashed 1px #444444; background:#F5F5F5; float:top; width:96.5%; padding:10px"]]
+**Exploration Video Log Transcript**
+
+**Date:** OPTIONAL
+
+**Exploration Team:** TEAM NAME - OPTIONAL
+
+**Subject:** AREA/ANOMALY - OPTIONAL
+
+**Team Lead:** OPTIONAL
+
+**Team Members:** OPTIONAL
+-----
+
+[BEGIN LOG]
+
+**Person A:** Dialogue
+
+**Person B:** Dialogue
+
+//STUFF HAPPENS//
+
+**Person A:** Dialogue
+
+
+[END LOG]
+
+[[/div]]
+
+**What to copy:**
+
+[[collapsible]]
+[[code]]
+[[div style="display: inline-block; border-radius: 10px; border:dashed 1px #444444; background:#F5F5F5; float:top; width:96.5%; padding:10px"]]
+**Exploration Video Log Transcript**
+
+**Date:** OPTIONAL
+
+**Exploration Team:** TEAM NAME - OPTIONAL
+
+**Subject:** AREA/ANOMALY - OPTIONAL
+
+**Team Lead:** OPTIONAL
+
+**Team Members:** OPTIONAL
+-----
+
+[BEGIN LOG]
+
+**Person A:** Dialogue
+
+**Person B:** Dialogue
+
+//STUFF HAPPENS//
+
+**Person A:** Dialogue
+
+
+[END LOG]
+
+[[/div]]
+[[/code]]
+
+[[/collapsible]]
+
+-----
+
+**__Option 2__**[[footnote]]As seen in [[[SCP-2571]]][[/footnote]]
+
+**What it looks like:**
+
+[[div style="display: inline-block; border:dashed 1px #999999; background:#F5F5F5; float:center; width:84%; padding:1px 15px; margin: 10px 10px 10px 40px"]]
+= **VIDEO LOG**
+----
+**DATE:** 
+
+**NOTE:** 
+----
+
+[BEGIN LOG]
+
+
+**TIME:** EVENT
+
+**TIME:** EVENT
+
+**TIME:** EVENT
+
+-----
+
+[END LOG]
+[[/div]]
+
+**Tip!** This style mimics the regular quoteboxes you see around the site (basic wiki formatting are lines beginning in "> "), but with the added benefit of working better with images.
+
+**What to copy:**
+
+[[collapsible]]
+
+[[code]]
+
+[[div style="display: inline-block; border:dashed 1px #999999; background:#F5F5F5; float:center; width:84%; padding:1px 15px; margin: 10px 10px 10px 40px"]]
+= **VIDEO LOG**
+----
+**DATE:** 
+
+**NOTE:** 
+----
+
+[BEGIN LOG]
+
+
+**TIME:** EVENT
+
+**TIME:** EVENT
+
+**TIME:** EVENT
+
+-----
+
+[END LOG]
+
+[[/div]]
+[[/code]]
+[[/collapsible]]
+
+-----
+
+**__Option 3__**[[footnote]]As seen in [[[SCP-2409]]][[/footnote]]
+
+For a computer-y look.
+
+**What it looks like:**
+
+[[div class="danke agent"]]
+| DETAILS
+| DETAILS
+| DETAILS
+| DETAILS
+| DETAILS
+
+TEXT TEXT TEXT
+MORE TEXT
+
+MORE
+
+AND MORE
+
+AND YET EVEN MORE TEXT TO JOT DOWN
+[[/div]]
+
+**What to copy:**
+
+[[collapsible]]
+**IMPORTANT** This part gets placed at the top of the page.
+
+[[code]]
+[[module css]]
+.footnoteref{
+color: #FF5555;
+}
+.danke{
+padding: 5px 5px 5px 15px;
+margin-bottom:10px;
+width: 100%;
+font-family: monospace;
+font-size: 1.1em; }
+
+.agent{
+background-color:#002200;
+border: 3px solid #55AA55;
+color: #77CC77;
+}
+
+.site{
+background-color:#222200;
+border: 3px solid #AAAA55;
+color: #DDDD77;
+}
+[[/module]]
+
+[[/code]]
+
+**IMPORTANT**: This gets placed wherever you want the box to appear.
+
+[[code]]
+[[div class="danke agent"]]
+| DETAILS
+| DETAILS
+| DETAILS
+| DETAILS
+| DETAILS
+
+TEXT TEXT TEXT
+MORE TEXT
+
+MORE
+
+AND MORE
+
+AND YET EVEN MORE TEXT TO JOT DOWN
+[[/div]]
+
+[[/code]]
+
+**Tips!** Change 'danke agent' to 'danke site' for a different color scheme (yellow).
+[[/collapsible]]
