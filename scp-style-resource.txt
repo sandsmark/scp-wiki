@@ -614,3 +614,74 @@ AND YET EVEN MORE TEXT TO JOT DOWN
 
 **Tips!** Change 'danke agent' to 'danke site' for a different color scheme (yellow).
 [[/collapsible]]
+@@ @@
+@@ @@
+[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[/div]]
+[[div style="border-bottom:1px solid #777;"]]
+[[/div]]
+
++++ Warning/Notice formats:
+
+**__Option 1__**[[footnote]]As seen in [[[SCP-835]]][[/footnote]]
+
+**What it looks like:**
+
+[[div style="border:solid 1px #999999; background:#f2f2c2; padding:5px; margin-bottom: 10px;"]]
+[[=]]
+[[size larger]] **NOTICE FROM THE FOUNDATION RECORDS AND INFORMATION SECURITY ADMINISTRATION** [[/size]]
+
+Notification text goes here.
+
+-- Maria Jones, Director, RAISA
+[[/=]]
+[[/div]]
+
+**What to copy:**
+
+[[collapsible]]
+[[code]]
+
+[[div style="border:solid 1px #999999; background:#f2f2c2; padding:5px; margin-bottom: 10px;"]]
+[[=]]
+++++ NOTICE FROM THE FOUNDATION RECORDS AND INFORMATION SECURITY ADMINISTRATION 
+
+Notification text goes here.
+
+-- Maria Jones, Director, RAISA
+[[/=]]
+[[/div]]
+
+[[/code]]
+[[/collapsible]]
+
+**__Option 2__**[[footnote]]As seen in [[[SCP-3143]]][[/footnote]]
+
+**What it looks like:**
+
+[[=]]
+[[div style="background: url(http://scpsandbox2.wdfiles.com/local--files/djkaktusii/amber.png) center no-repeat ; float: center; border: solid 2px #000000; padding: 1px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]] 
+##ff5c48|[[size 150%]] **WARNING: THE FOLLOWING FILE IS LEVEL #/XXXX CLASSIFIED** [[/size]]##
+----
+[[size larger]] **ANY ATTEMPT TO ACCESS THIS FILE WITHOUT LEVEL 4/XXXX AUTHORIZATION WILL BE LOGGED AND WILL LEAD TO IMMEDIATE DISCIPLINARY ACTION.**[[/size]]
+[[/div]]
+[[/=]]
+
+**What to copy:**
+
+[[collapsible]]
+[[code]]
+
+[[=]]
+[[div style="background: url(http://scpsandbox2.wdfiles.com/local--files/djkaktusii/amber.png) center no-repeat ; float: center; border: solid 2px #000000; padding: 1px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]] 
++ WARNING: THE FOLLOWING FILE IS LEVEL #/XXXX CLASSIFIED
+----
++++ ANY ATTEMPT TO ACCESS THIS FILE WITHOUT LEVEL 4/XXXX AUTHORIZATION WILL BE LOGGED AND WILL LEAD TO IMMEDIATE DISCIPLINARY ACTION.
+[[/div]]
+[[/=]]
+
+[[/code]]
+
+**Note:** This code includes a link to include a background image, which was deleted at some point. If you want to leave this warning message with a white background you can keep the code the way it, but if you want to include the intended image you can replace in the link in the code with the link [http://scp-wiki.wdfiles.com/local--files/djkaktus-s-proposal/amber.png here].
+
+[[/collapsible]]
