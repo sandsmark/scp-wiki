@@ -15,14 +15,21 @@ Anyway, those are the two main aspects of my writing process. I may go into more
 
 [[/tab]]
 [[/tabview]]
-
------
-
+@@@@
+[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[/div]]
+[[div style="border-bottom:1px solid #777;"]]
+[[/div]]
+@@@@
 [[/collapsible]]
 [[collapsible show="A                 " hide="AUTHOR COMMENTARY!"]]
  
 [[tabview]]
+[[tab COVER]]
 
+The "SCIPS" section was getting too long to reasonably fit on the page, so this is a cover tab for it. There's no useful information here, so feel free to disregard it and move on to the pages containing //actual// information.
+
+[[/tab]]
 [[tab SCIPS]]
 
 [[module ListPages name="SCP-2668"]]
@@ -126,33 +133,43 @@ Coming soon to an author page near you! (Spoiler: it's this one)
 [[/tab]]
 
 [[/tabview]]
-
-
------
-
+@@@@
+[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[/div]]
+[[div style="border-bottom:1px solid #777;"]]
+[[/div]]
+@@@@
 [[/collapsible]]
 [[collapsible show="L                 " hide="LISTS OF THINGS!"]]
 
 This table format was stolen directly from Tufto, who stole it from Mortos. The circle of life, ladies and gentlemen.
+
+------
 
 +++ SCIPS:
 
 [[module ListPages created_by="MaliceAforethought" order="created_at" separate="no" tags="scp" perPage="250" prependLine="||~ Item # ||~ Rating ||~ Comments ||~ Created ||"]]
 || %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
 [[/module]]
- 
+
+------
+
 +++ TALES:
 
 [[module ListPages created_by="MaliceAforethought" order="created_at" separate="no" tags="tale" perPage="250" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Created ||"]]
 || %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
 [[/module]]
- 
+
+------
+
 +++ OTHER STUFF:
 
 [[module ListPages created_by="MaliceAforethought" order="created_at" separate="no" tags=" -tale -scp -author" perPage="250" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Created ||"]]
 || %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
 [[/module]]
- 
+
+------
+
 +++ OBJECT CLASSES:
 
 * **Safe: {{[3]}}**
@@ -171,9 +188,12 @@ This table format was stolen directly from Tufto, who stole it from Mortos. The 
 * **Apollyon: {{[0]}}**
 * **Other: {{[1]}}**
  * --Euclid-- Neutralised: **{{[1]}}**
-
------
-
+@@@@
+[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[/div]]
+[[div style="border-bottom:1px solid #777;"]]
+[[/div]]
+@@@@
 [[/collapsible]]
 [[collapsible show="I                 " hide="IRC CHAT!"]]
 
@@ -182,9 +202,12 @@ I can often be found on #site19 under the nickname "MaliceAforethought", "Malice
 If you spot me online, feel free to say hi: I generally consider myself a nice person and I'm always happy to chat/talk/shitpost. Just don't be a dick, and I'm sure we'll get along like a house on fire.
 
 One final note: do not start a pun war you cannot finish. My current record is 23 minutes of god-awful hilarity. 
-
------
-
+ 
+[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[/div]]
+[[div style="border-bottom:1px solid #777;"]]
+[[/div]]
+ 
 [[/collapsible]]
 [[collapsible show="C                 " hide="CREATIVE SHIZZLE!"]]
  
@@ -226,10 +249,12 @@ Four amazing drawings of SCP-3317, by [[*user Mendelssohn]], [[*user Flawed]], [
  
 [[/tab]]
 [[/tabview]]
-
-
------
-
+ 
+[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[/div]]
+[[div style="border-bottom:1px solid #777;"]]
+[[/div]]
+ 
 [[/collapsible]]
 [[collapsible show="E                 " hide="EXTRA STUFF!"]]
 
@@ -245,7 +270,7 @@ I [http://www.scp-wiki.net/task-forces-complete-list really like] Mobile Task Fo
 || MTF-Nu-4 ("Box Cutters") || An entirely weaponless task force, whose sole responsibility is to track down SCP-3663 and wrangle it into a 'mobile pipe network' -- essentially a large truck with a small maze on the back. Armed with fire-retardant foam and de-humidifiers, and a sense of indignation that they don't carry guns. Very skilled at amnestic distribution. || [[[SCP-3663]]] ||
 || MTF-Xi-Kai ("Curators") || Plain-clothes, at least for the most part. Infiltrate museums and landmarks involved in suspected anomalous activity, and aim to stop it without damaging anything. Less 'all guns blazing', more stealth and precision. Imagine a cross between University lecturers and skilled assassins -- that's Xi-Kai. Very knowledgeable about history in general, with topics distributed fairly evenly across the group. Originally created in response to SCP-2668, but now moving on to other things. || [[[SCP-2668]]] ||
 || MTF-Phi-Eolh ("Bag & Taggers") || Specially trained agents, armed with amnestics and tasked with covertly retrieving civilians from the general populace. || [[[SCP-3617]]] ||
-|| Todo || Todo || Todo ||
+|| MTF-Eta-Then ("Cause and Effective"), ("Time Consumers"), and ("Bootstrappers") || Todo || [[[SCP-3176]]] ||
 
 [[/tab]]
 [[tab Personnel/Characters]]
@@ -253,7 +278,10 @@ I [http://www.scp-wiki.net/task-forces-complete-list really like] Mobile Task Fo
 ||~ Name ||~ Description ||~ Works they're mentioned in||
 || Samuel Lloyd || Foundation researcher acting as an antimemetic specialist for those portions of the Foundation unaware of the Antimemetic and Counterceptual Divisions. Killed along with the rest of humanity when 055 breaches containment, but lasting a little longer due to his stockpile of mnestics. Incredibly cynical, reasonably intelligent, and unforgivably British. || [[[The World Forgetting, By the World Forgot]]], cameo in [[[SCP-2668]]] ||
 || Senior Researcher Micheal S. Forth || An ectoentropologist[[footnote]] An esoteric field studying the increase or decrease of entropy via the creation or annihilation of matter. [[/footnote]] formerly stationed at Site-898 to study SCP-2794. Currently trapped in a cycle of life and death within SCP-2668, though he escaped for a period between 2003 and 2042. Considered a legend among Foundation staff, and has a Foundation Star on hold for when/if he dies for the final time. Labelled as Permanently MIA on all official records.|| [[[SCP-2668]]] ||
-|| Researcher Doyle || Generic Researcher stationed at Site-54. Conducts interviews on occasion. || [[[SCP-3617]]], [[[SCP-3663]]] ||
+|| Researcher Doyle || Generic Researcher stationed at Site-54. Generally dry and slightly dull, Doyle specialises in abnormal intelligences. Conducts interviews on occasion. || [[[SCP-3617]]], [[[SCP-3663]]] ||
+|| Dr. Alice Forth || Head of the Department of Recurrence (specialising in temporal anomalies), project lead for MTF-Eta-Then ("Cause and Effective"), and one half of the duo who devised Forth-Xyank Concatenators -- devices built to counter Split Timeline scenarios. Died at some point between 2029 and 2056, but still shows up every now and then. Daughter of Micheal Forth. || [[[SCP-3176]]] ||
+|| Agent Miguel || Leader of MTF-Rho-5, and later member of MTF-η-⊃. Born 17/03/2026, some years after Rho-5's creation. || [[[SCP-3176]]] ||
+|| Todo || Todo || Todo ||
 
 [[/tab]]
 [[tab Foundation Sites]]
@@ -266,9 +294,12 @@ I [http://www.scp-wiki.net/task-forces-complete-list really like] Mobile Task Fo
 
 [[/tab]]
 [[/tabview]]
-
------
-
+@@@@
+[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[/div]]
+[[div style="border-bottom:1px solid #777;"]]
+[[/div]]
+@@@@
 [[/collapsible]]
 [[collapsible show=" " hide=" "]]
 [[footnoteblock]]
