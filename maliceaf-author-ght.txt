@@ -325,6 +325,17 @@ I [http://www.scp-wiki.net/task-forces-complete-list really like] Mobile Task Fo
 [[/div]]
 @@@@
 [[/collapsible]]
+[[collapsible show="                  " hide=" "]]
+
+[[module ListPages order="rating" separate="no" tags="jam-con2018 +scp -hub" perPage="250" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Created ||"]]
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
+[[/module]]
+
+[[module ListPages order="rating" separate="no" tags="jam-con2018 +tale -hub" perPage="250" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Created ||"]]
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
+[[/module]]
+
+[[/collapsible]]
 [[collapsible show=" " hide=" "]]
 [[footnoteblock]]
 [[/collapsible]]
