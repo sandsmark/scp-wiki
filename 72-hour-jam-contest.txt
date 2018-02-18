@@ -43,6 +43,30 @@ Winners will be chosen through total upvotes. At the conclusion of the contest, 
 
 [[iframe http://home.helenbot.com/tools/timer.html?time=1518930000000&type=POSTING%20FOR%20FIRST%20THEME%20ENDS%20IN style="width: 500px; height: 250px; border: 0;"]]
 
+ [[collapsible show="+ Show entries" hide="- Hide entries" hideLocation="both"]] 
+
+[[module css]]
+.contest-block .contest-entry {
+    font-weight: bold;
+    font-size: 110%;
+    margin-bottom: 5px;
+    color: #633;
+}
+[[/module]]
+
+[[div class="contest-block content-panel"]]
+[[div class="panel-heading"]]
+Entries
+[[/div]]
+[[div class="panel-body"]]
+
+[[module ListPages separate="no" tags="+jam-con2018 +_murder-mystery -hub" perPage="100" order="random" date="2018.02.17"]]
+* [[size 120%]]**%%title_linked%%**[[/size]] [[size 105%]]//by// **%%created_by%%**[[/size]]
+[[/module]]
+[[/div]]
+[[/div]]
+[[/collapsible]]
+
 +++ **Dawn of the Second Day:**
 
 +++ **Dawn of the Third Day:**
