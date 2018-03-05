@@ -3,11 +3,49 @@ title:SCP-3306
 [[module Rate]]
 [[/>]]
 
-[[div style="border:solid 1px #999999;width:95%;background:#F0F19F;padding:5px;float:center;margin-bottom:4px"]]
-[[=]]
-This article has been flagged for potential data corruption. If you experience any technical difficulties, reload the page after sixty seconds. If issues persist, please contact your site's database technician. 
-[[/=]]
+[[module css]]
+.warning-box {
+    display: block;
+    width: 90%;
+    height: auto;
+    text-align:center;
+    overflow: visible;
+    margin: 0px 5% 10px 5%;
+}
+
+.warning-img {
+    width: 14%;
+    height: auto;
+    padding: 5px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.warning-text {
+    max-width: 80%;
+    width: 80%;
+    display: table-cell;
+    padding: 5px;
+}
+
+.warning-text p {
+    display: inline-block;
+    padding: 5px;
+}
+[[/module]]
+
+[[div class="warning-box"]]
+    [[div class="warning-img"]]
+[[image http://kaktuskontainer.wdfiles.com/local--files/peppermill-upat/warning2.png]]
+    [[/div]]
+    [[div class="warning-text"]]
+[[size 105%]]##firebrick|**This document has been flagged for extratemporal data corruption**.##[[/size]]
+If you experience any technical difficulties, reload the page after sixty seconds.
+If issues persist, please contact your site's database technician.
+    [[/div]]
+
 [[/div]]
+
 **Item #:** SCP-3306
 
 **Object Class:** Euclid
@@ -17,6 +55,12 @@ This article has been flagged for potential data corruption. If you experience a
 A secondary motorized platform has been built around the immediate circumference of SCP-3306 to ensure that researchers may comfortably communicate with 3306-POI subjects. Televisions and other forms of entertainment may be situated on the secondary platform to promote good behavior. Any recreational material presented to 3306-POI must approved by a Level-3 researcher. Material that could potentially provoke emotional distress should be avoided. 
 
 Personnel are to refrain from influencing subjects' decisions during Illions Events.
+
+------
+
+[[include component:image-block name=http://kaktuskontainer.wdfiles.com/local--files/peppermill-upat/CarouselNewOne.jpg|width=675px|caption=SCP-3306 and its secondary platform in Site-3306.|align=center]]
+
+------
 
 **Description:** SCP-3306 is a carousel amusement ride located in the Continental Ranges of the Canadian Rockies. It is powered by anomalous means and remains in constant motion. Painted wooden panels around SCP-3306's central hub appear to depict scenes from Dante Alighieri's //Divine Comedy//. As of this writing, there are 44 fiberglass horses attached to SCP-3306's sweeps. Each horse bears a stylized resemblance to a previous 3306-POI subject.
 
