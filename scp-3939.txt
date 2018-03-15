@@ -10,7 +10,7 @@ title:SCP-3939
   clear: both;
 }
 .choices a {
-  height: 30px; border: 1px solid #b01; border-right: 1px solid transparent; line-height: 30px; position: relative; background: white; z-index: 8; margin-bottom: 0.5em; float: left; clear: both; padding-left: 7px; margin-left: 20px;
+  height: 30px; border: 1px solid #b01; border-right: 1px solid transparent; line-height: 30px; position: relative; background: white; z-index: 8; margin-bottom: 0.5em; float: left; clear: both; padding-left: 7px; margin-left: 20px; margin-right: 20px
 }
 .choices a::before {
   content: ""; position: absolute; border: 16px solid transparent; border-left: 16px solid #b01; right: -33px; top: -1px; z-index: 6;
@@ -29,8 +29,7 @@ span, a {
 }
 @media (max-width: 580px) {
   .choices a {
-    line-height: initial !important;
-    margin-left: 5px !important;
+    line-height: initial !important; margin-left: 10px !important; margin-right: 20px;
   }
 }
 [[/module]]
