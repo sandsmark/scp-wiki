@@ -12,3 +12,11 @@ title:SCP-3939
  - [[*user Croquembouche]]
 
 EDIT: //It's taking a little longer than expected. Please allow half an hour from the time of this edit. Thank you!//
+
+EDIT: //The thing below is a test - not done quite yet! Sorry!//
+
+[[module ListPages parent="." limit="1" order="created_at" offset="@URL|0"]]
+%%content%%
+
+REFERENCE: %%index%%
+[[/module]]
