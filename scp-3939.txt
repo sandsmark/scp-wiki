@@ -1,7 +1,10 @@
 title:SCP-3939
 [[module CSS]]
 .story {
-  clear: both; border: 3px black solid; padding: calc(20px - 1em) 20px 20px 20px;
+  clear: both; border: 3px black solid; padding: calc(20px - 1em) 0 20px 0;
+}
+.story p {
+  margin-left: 20px; margin-right: 20px; 
 }
 .choices {
   clear: both;
