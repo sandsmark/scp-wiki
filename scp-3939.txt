@@ -28,8 +28,9 @@ span, a {
   word-break: normal !important;
 }
 @media (max-width: 580px) {
-  span, a {
+  .choices a {
     line-height: initial !important;
+    margin-left: 5px !important;
   }
 }
 [[/module]]
