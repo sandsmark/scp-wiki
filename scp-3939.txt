@@ -21,6 +21,14 @@ title:SCP-3939
 #page-content {
   margin-bottom: 50px;
 }
+span, a {
+  word-break: normal !important;
+}
+@media (max-width: 580px) {
+  span, a {
+    line-height: initial !important;
+  }
+}
 [[/module]]
 
 [[>]]
