@@ -254,18 +254,21 @@ An illegal attempt to militarize parathreat technology by the United States Gove
 A cult based around **KTE-9927-Black** ("The Goddess") attempts to complete an illegal magical working. Following a timeline restructuring, GOC Covert Operative "Ukelele" successfully liquidates **KTE-9927-Black** but suffers severe injuries as a result. Marks the only time in GOC history that Procedure Pizzicato has been implemented (albeit unsuccessfully).
 [[/tab]]
 [[tab Threat Entity Reports]]
-[[module listPages tags="+ goi-format _global-occult-coalition" separate="no" prependLine="**Coalition Reports:**"]]
+
+[[module ListPages order="ratingAsc" limit="100" tags="-archived -admin -author -sandbox -tale +goi-format +_global-occult-coalition" separate="no" perPage="100"]]
+* %%title_linked%%
+[[/module]]
 
 To create further reports, please use [http://scpsandbox2.wikidot.com/goc-format-template this style template].
 [[/tab]]
 [[tab GOC Tales]]
-[[module listPages tags="+ tale global-occult-coalition" separate="no" prependLine="**Coalition Memoirs:**"]]
-%%title_linked%%
+[[module ListPages order="ratingAsc" limit="100" tags="-archived -admin -author -sandbox -scp +tale +global-occult-coalition" separate="no" perPage="100"]]
+* %%title_linked%%
 [[/module]]
 [[/tab]]
 [[tab Foundation Interactions]]
 
-[[module ListPages order="ratingAsc" limit="100" tags="-archived -admin -author -sandbox -tale -goi2014 +scp +global-occult-coalition" separate="no" perPage="100"]]
+[[module ListPages order="ratingAsc" limit="100" tags="-archived -admin -author -sandbox -tale +scp +global-occult-coalition" separate="no" perPage="100"]]
 * %%title_linked%%
 [[/module]]
 
