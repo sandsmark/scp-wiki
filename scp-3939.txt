@@ -21,8 +21,8 @@ title:SCP-3939
 .choices p {
   clear: both; height: 30px; margin: 0 0 0 0;
 }
-#page-content {
-  margin-bottom: 50px;
+.footer-wikiwalk-nav {
+  margin-top: 50px;
 }
 span, a {
   word-break: normal !important;
@@ -41,3 +41,9 @@ span, a {
 [[module ListPages category="fragment" parent="." limit="1" order="created_at" offset="@URL|0"]]
 %%content%%
 [[/module]]
+
+[[div class="footer-wikiwalk-nav"]]
+[[=]]
+<<   [[[SCP-3938]]] | SCP-3939 | [[[SCP-3940]]] >>
+[[/=]]
+[[/div]]
