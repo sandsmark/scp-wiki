@@ -12,8 +12,17 @@ width: 90%;
 }
 
 div#page-content{
-background-color: #9C6014; 
-color: #110B08; 
+background-color: #110B08; 
+color: #9C6014; 
+border: solid 3px #3A1713;
+padding: 10px 30px; 
+font-weight:normal; 
+font-family:Monospace;
+font-size:  11pt;
+}
+div#page-content.collapsible-block-content{
+background-color: #110B08; 
+color: #9C6014; 
 border: solid 3px #3A1713;
 padding: 10px 30px; 
 font-weight:normal; 
@@ -27,6 +36,10 @@ background-color: #9C6014;
 color: #110B08; 
 font-family: verdana,arial,helvetica,sans-serif;
 font-weight: bold; 
+}
+div#page-content a.collapsible-block-unfolded-link {
+    background-color: #110B08; 
+    color: #9C6014;
 }
 div#page-content a {
 color: #AA9612;
