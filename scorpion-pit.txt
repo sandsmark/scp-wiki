@@ -1,5 +1,6 @@
 title:Scorpion Pit
 [[module CSS]]
+
 .amberscreen {
 background-color: #110B08; 
 color: #9C6014; 
@@ -20,7 +21,7 @@ font-weight:normal;
 font-family:Monospace;
 font-size:  11pt;
 }
-div#page-content .amberscreen.collapsible-block-unfolded{
+.collapsible-block-unfolded{
     border: solid 3px #9C6014;
     border-radius: 2pt;
     background-color: #2C1607;
@@ -28,15 +29,15 @@ div#page-content .amberscreen.collapsible-block-unfolded{
     border: 3px double #9C6014;
     color: #8B3B0A;
 }
-div#page-content .amberscreen.collapsible-block-folded {
+.collapsible-block-folded {
+    text-align: center;
     border-radius: 2pt;
     background-color: #2C1607;
     padding: 3pt;
     border: 3px double #9C6014;
     color: #8B3B0A;
 }
-div#page-content .amberscreen.collapsible-block-content{
-background-color: #110B08; 
+.collapsible-block-content{ 
 color: #9C6014; 
 padding: 10px 30px; 
 font-weight:normal; 
@@ -44,10 +45,9 @@ font-family:Monospace;
 font-size:  11pt;
 }
 div#page-content a.collapsible-block-link{ 
-font-size: 11pt;
+font-size: 10pt;
 text-align: center;
-background-color: #9C6014; 
-color: #110B08; 
+color: #9C6014; 
 font-family: verdana,arial,helvetica,sans-serif;
 font-weight: bold; 
 }
@@ -63,25 +63,25 @@ background: #B1A413 !important;
 color: #110B08; 
 }
 
-
 .page-rate-widget-box .rate-points {
 font-family: verdana,arial,helvetica,sans-serif;
-font-size:  	12.8px;  
+font-size:      12.8px;  
 color: #B36D12;
 
 }
 
 .page-rate-widget-box .cancel {
 font-family: verdana,arial,helvetica,sans-serif;
-font-size:  	12.8px;  
+font-size:      12.8px;  
 }
 .page-rate-widget-box .rateup a:hover,
 .page-rate-widget-box .ratedown a:hover,
 .page-rate-widget-box .cancel a:hover {
 font-family: verdana,arial,helvetica,sans-serif;  
-font-size:  	12.8px;  
+font-size:      12.8px;  
 background-color: #B36D12  !important;
 }
+
 
 [[/module]]
 
