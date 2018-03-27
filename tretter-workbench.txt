@@ -2,72 +2,221 @@ title:tretter's Tech Workbench
 This is a workbench which I will be using for  various projects for the Technical team, and the Community Outreach team. Please do not edit anything on this page. 
 
 Jamcon Tag list
+[[module css]]
+#page-content .collapsible-block { 
+    position: relative;
+    padding: 0.5em;
+    margin: 0.5em;
+    box-shadow: 2px 1.5px 1px rgba(176,16,0,0.7), 0 0 0px 1px lightgrey;
+}
 
-[[collapsible]]
+.collapsible-block-unfolded{
+    color: black;
+    
+}
 
-[[module ListPages separate="no" tags="+scp -safe -keter -euclid -neutralized -thaumiel -esoteric-class -explained" perPage="50" order="created_at desc"]]
-* **%%title_linked%%** //on// **%%created_at%%** 
+.collapsible-block-unfolded-link {
+    text-align:center;
+}
+
+.collapsible-block-folded {
+    text-align: center;
+    color: dimgrey;
+}
+
+.collapsible-block-link {
+    font-weight: bold;
+    color: dimgrey;
+    text-align: center;
+}
+
+.addendumbox {
+    padding: .01em 16px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    padding-bottom: 1em;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.material-box {
+    padding: .01em 16px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    padding-bottom: 1em;
+    border: 1px lightgrey solid;
+    box-shadow: 1px 2px 2px 0 rgba(0,0,0,0.16);
+}
+
+.material-box blockquote {
+    border: 1px double #999;
+}
+
+.wiki-content-table {
+    width: 100%;
+}
+
+.addendumbox blockquote {
+    border: 1px double #999;
+}
+
+.addendumtitle {
+   opacity: 0.8;
+   margin-bottom: 10px;
+   color: #b01;
+}
+
+.maintitle {
+   margin-bottom: 10px;
+   color: black;
+}
+
+.scp-header {
+    text-align: center;
+    font-size:x-large;
+    color:#b01;
+}
+
+.addenda-header {
+    width: 100%;
+    border-bottom: 2px black solid;
+    color: black;
+}
+
+.scp-info {
+    display:flex;
+    justify-content:space-between;
+    font-size:large;
+}
+
+.scp-info-box {
+    display:flex; 
+    justify-content:space-between;
+}
+
+.object-info {
+    color:black;
+    align-self: flex-end;
+    font-size: large;
+}
+
+.title-style {
+    opacity: 0.8;
+    margin-bottom: 10px;
+    color: #b01;
+    font-size: large;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.update-div-empty {
+    text-align: right;
+    font-size: x-small;
+    color: lightgrey;
+}
+
+.update-div {
+    text-align: right;
+    font-size: x-small;
+}
 [[/module]]
 
-[[/collapsible]]
+[[div class="material-box"]]
+[[=image http://scp-ru.wdfiles.com/local--files/list-of-foundation-s-internal-departments/admin.png width="75px" height="75px"]]
+[[=]]
+++ Prepared by the Administrative Department - Human Resources
+[[/=]]
+[[/div]]
+
 ------
-Site news generation 
 
+[[div class="material-box"]]
+[[div class="title-style"]]
+++++ **__Personnel Details__**
+[[/div]]
+||~ **Name** || Doctor Michael Magnus ||
+||~ **Position**|| Researcher in anomalous Software Objects||
+||~ **Security Clearance** || Provisional Level 2 ||
+||~ **Status** || ##red|Assigned to Dimensional Site-04## ||
+[[/div]]
+------
+[[div class="material-box"]]
+[[div class="title-style"]]
+++++ __**History**__
+[[/div]]
+Doctor Magnus was acquired by the Foundation after having applied for a research position in the Soap From Corpses Products corporation; having passed the standard battery of tests for research level staff.
 
-[[collapsible show="SCPs" hide="Close"]]
-[[module ListPages separate="no" tags="+scp" created_at="2018.02" perPage="150" order="created_at desc desc"]]
+The date of birth on record was inconsistent with Doctor Magnus' appearance, and medical examinations.  Doctor Magnus was by all accounts a normal 27-year-old male. This came under speculation early within his employment, but he maintained the fact to be 78 years of age at the time of acquisition.
 
-||@@* http://www.scp-wiki.net/@@%%name%% @@[[[@@%%name%%@@|@@ %%title%%@@]]]@@ @@[[*user @@%%created_by%%@@]]@@||
-[[/module]]
-[[/collapsible]]
+Posthumous record analysis revealed that Doctor Magnus was a pathological liar, many of his claimed research topics having been physically impossible. His age was confirmed upon his death at 27 years, six months. Speculation as to the nature of his work was also disproved as sleight of hand, and classical showmanship techniques. Hiring procedures, as well as the hiring staff that acquired Doctor Magnus were reviewed, and an official reprimand was issued.
 
+Doctor Magnus claimed to have a degree in "Metaphysics" from the University of [REDACTED]. How this didn't come up in his interview is unknown. After contacting the University, it was later discovered that Michael Magnus graduated with a bachelor's degree in Psychology. No security breaches have been discovered to date as a result of Doctor Magnus' employment, but investigations are still underway.
+
+Doctor Magnus was KIA during a Chaos Insurgency raid on [REDACTED] after sustaining multiple stab wounds. Doctor Magnus had not had any formalized combat training, and attempted to engage in hand-to-hand combat with a trained Chaos Insurgency operative. He is currently buried in [REDACTED], Delaware, in accordance with his will.
+[[/div]]
 ------
 
-[[collapsible show="Tales" hide="Close"]]
-[[module ListPages separate="no" tags="+tale" created_at="2018.02" perPage="150" order="created_at desc desc"]]
-
-||@@* http://www.scp-wiki.net/@@%%name%% @@[[[@@%%name%%@@|@@ %%title%%@@]]]@@ @@[[*user @@%%created_by%%@@]]@@||
-[[/module]]
+[[div class="addenda-header"]]
++++ Addenda
+[[/div]]
+[[div class="material-box"]]
+[[div class="title-style"]]
+++++ **Suplemental Staff Records** 
+[[/div]]
+An updated staff photo of Dr. Magnus has been provided by Researcher Kensington:
+[[collapsible show="Access Staff Records" hide="Close Staff Records"]]
+[[image Magnus%20Salt]]
 [[/collapsible]]
-
+[[/div]]
 ------
+[[div class="material-box"]]
+[[div class="title-style"]]
+++++ **__Reappearance of Dr. Magnus__**
+[[/div]]
+Inexplicably, Dr. Magnus has re-appeared at Site 19, with significant changes to his physical appearance, and his demeanor.  Dr. Magnus insisted that he was indeed Dr. Michael Magnus, and was quote "going through a phase" before his death.
 
-[[collapsible show="GOI" hide="Close"]]
-[[module ListPages separate="no" tags="+goi-format" created_at="2018.02" perPage="150" order="created_at desc desc"]]
+A significant investigation occurred, and concluded that Dr. Magnus was indeed Doctor Michael Viktor Magnus.  When questioned about his death, Dr. Magnus claimed "Legends never die" until he was pressed, upon which he claimed that he doesn't remember.  So far, class-B veritants have proven this true.  
 
-||@@* http://www.scp-wiki.net/@@%%name%% @@[[[@@%%name%%@@|@@ %%title%%@@]]]@@ @@[[*user @@%%created_by%%@@]]@@|| %%created_at%%||
-[[/module]]
-[[/collapsible]]
+Dr. Magnus has been given temporary rights to begin work related to computer based SCP objects, as he has produced an accredited degree in Computer Science, from [REDACTED] Institute of Technology.  His title was to be changed to researcher to reflect his education level, however, Dr. Magnus still claims to have his PhD in Metaphysics, admitting it to not be a real field of study, but insisting that his PhD is in fact, legitimate. 
 
-------
+Dr. Magnus finally admitted that he is unwilling to be referred to as "Researcher Magnus" as long as Researcher Kensington is situated at Site 19.  
 
-[[collapsible show="Hub" hide="Close"]]
-[[module ListPages separate="no" tags="+hub" created_at="2018.02" perPage="150" order="created_at desc desc"]]
-
-||@@* http://www.scp-wiki.net/@@%%name%% @@[[[@@%%name%%@@|@@ %%title%%@@]]]@@ @@[[*user @@%%created_by%%@@]]@@|| %%created_at%%||
-[[/module]]
-[[/collapsible]]
-
-------
-
-[[collapsible show="Authors" hide="Close"]]
-[[module ListPages separate="no" tags="+author" created_at="2018.02" perPage="150" order="created_at desc desc"]]
-
-||@@* http://www.scp-wiki.net/@@%%name%% @@[[[@@%%name%%@@|@@ %%title%%@@]]]@@ @@[[*user @@%%created_by%%@@]]@@|| %%created_at%%||
-[[/module]]
-[[/collapsible]]
-
+Site Director [REDACTED] has placed Dr. Magnus under level 2 observation at all times.  Any sign of unusual activity should be met with intense scrutiny. 
+[[/div]]
 -----
-
-[[collapsible show="Other" hide="Close"]]
-[[module ListPages separate="no" tags="-" created_at="2018.02" perPage="150" order="created_at desc desc"]]
-
-||@@* http://www.scp-wiki.net/@@%%name%% @@[[[@@%%name%%@@|@@ %%title%%@@]]]@@ @@[[*user @@%%created_by%%@@]]@@|| %%created_at%%||
+[[div class="material-box"]]
+[[div class="title-style"]]
+++++ Written Works
+[[/div]]
+[[collapsible show="► SCP Articles" hide="Close"]]
+[[div class="title-style"]]
+++++ SCP Articles
+[[/div]]
+[[module ListPages separate="no" created_by="DrMagnus" tags="scp" order="rating desc" prependLine="||~ Title ||~ Written on ||~ Rating ||~ Tags||"]]
+||%%title_linked%%||%%created_at%%||%%rating%%||%%tags%%||
 [[/module]]
+[[/collapsible]]
+[[collapsible show="► Tale Articles" hide="Close"]]
+[[div class="title-style"]]
+++++ Tales
+[[/div]]
+[[module ListPages separate="no" created_by="DrMagnus" tags="tale" order="rating desc" prependLine="||~ Title ||~ Written on ||~ Rating ||~ Tags||"]]
+||%%title_linked%%||%%created_at%%||%%rating%%||%%tags%%||
+[[/module]]
+[[/collapsible]]
+[[collapsible show="► All Others" hide="Close"]]
+[[div class="title-style"]]
+Other Written Works
+[[/div]]
+[[module ListPages separate="no" created_by="DrMagnus" tags="-tale -scp" order="rating desc" prependLine="||~ Title ||~ Written on ||~ Rating ||~ Tags||"]]
+||%%title_linked%%||%%created_at%%||%%rating%%||%%tags%%||
+[[/module]]
+[[/div]]
 [[/collapsible]]
 
 ------
-
-[[module ListPages separate="no" tags="-hub -project -splash -archived -scp -goi-format -tale -guide -essay -supplement -in-rewrite -in-deletion -incident -poetry -exploration -interview -experiment -author -artwork -sandbox -workbench -contest -admin -news -jam-con2018" perPage="25" order="created_at desc desc"]]
-* **%%title_linked%%**//by// **%%created_by%%**
-[[/module]]
+[[div class="material-box" style="padding-bottom: 1em;"]]
+[[div class="title-style"]]
+Site Director [REDACTED]'s note:
+[[/div]]
+Due to the obviously farcical nature of these entries, we should probably find something real for Dr. Magnus to work on, lest he clutter the database more.  Or Researcher Kensington give him a heart attack.
+[[/div]]
