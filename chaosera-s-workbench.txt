@@ -30,7 +30,7 @@ padding: 0 20px;
 text-align: justify; 
 }
 .content-panel.content-row .content-type-description-3 {
-padding: 5px 80px 0px 20px;
+padding: 5px 20px;
 text-align: justify; 
 [[/module]]
 
@@ -119,19 +119,19 @@ Last Edit
 
 [[module ListPages order="ratingAsc" limit="100" tags="in-deletion" perPage="100" prependLine="[[include component:listpages-table-alt]]" appendLine="[[/table]]" separate="false"]]
 [[row]]
-[[cell style="vertical-align: top;"]]
+[[cell style="vertical-align: top; width: 30%;"]]
 %%title_linked%%
 [[/cell]]
-[[cell style="vertical-align: top; text-align: center;"]]
+[[cell style="vertical-align: top; text-align: center; width: 15%;"]]
 %%rating%%
 [[/cell]]
-[[cell style="vertical-align: top; text-align: center;"]]
+[[cell style="vertical-align: top; text-align: center; width: 15%;"]]
 %%comments%%
 [[/cell]]
-[[cell style="vertical-align: top; text-align: center;"]]
+[[cell style="vertical-align: top; text-align: center; width: 20%;"]]
 %%created_at%%
 [[/cell]]
-[[cell style="vertical-align: top; text-align: center;"]]
+[[cell style="vertical-align: top; text-align: center; width: 20%;"]]
 %%updated_at%%
 [[/cell]]
 [[/row]]
