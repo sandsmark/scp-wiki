@@ -117,7 +117,7 @@ Last Edit
 
 [[div class="content-type-description-3"]]
 
-[[module ListPages order="ratingAsc" limit="100" tags="in-deletion" perPage="100" appendLine="[[/table]]" separate="false"]]
+[[module ListPages order="ratingAsc" limit="100" tags="in-deletion" perPage="100" prependLine="[[include component:listpages-table-alt-2]]" appendLine="[[/table]]" separate="false"]]
 [[row]]
 [[cell style="vertical-align: top;"]]
 %%title_linked%%
