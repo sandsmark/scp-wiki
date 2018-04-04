@@ -1,0 +1,235 @@
+title:ChaoSera's Workbench
+[[module CSS]]
+.content-panel .content-type-title > p {
+  margin: 0;
+}
+.content-panel .content-type-title {
+  font-size: 120%;
+  font-weight: bold;
+  padding: 5px 20px;
+  background-color: #666;
+  color: #fff;
+  border-radius: 8px 8px 0 0;
+  box-shadow: inset 0 1px 1px rgba(255,255,255,.8),
+    inset 0 15px 1px rgba(255,255,255,.2),
+    inset 0 15px 10px rgba(255,255,255,.2);
+}
+.content-panel .content-type-description {
+padding: 0 20px;
+text-align: justify;
+}
+.content-panel.content-row .content-type-description {
+padding: 5px 20px;
+}
+.content-panel.content-row .content-type-description-2 {
+padding: 0 20px;
+text-align: justify; 
+}
+[[/module]]
+
+Listed here are the lowest rated active pages on the entire site. Please read them and leave ideas or thoughts on how to improve them in the discussion threads.
+
+For reference on SCPs in the single digits, refer to [[[Lowest Rated SCPs]]]. For references on other articles in the single digits, refer to [[[Lowest Rated Articles]]].
+
+[[div class="content-panel standalone content-row"]]
+[[div class="content-type-title"]]
+Lowest Rated Pages 
+[[/div]]
+
+[[div class="content-type-description-2"]]
+
+[[table style="width: 100%;"]]
+[[row style="font-weight: bold; color: #fff; background-color: #666;"]]
+[[cell style="padding: 0 2px; width: 40%;"]]
+Page
+[[/cell]]
+[[cell style="padding: 0 2px; width: 15%; text-align: center;"]]
+Rating
+[[/cell]]
+[[cell style="padding: 0 2px; width: 15%; text-align: center;"]]
+Comments
+[[/cell]]
+[[cell style="padding: 0 2px; width: 30%; text-align: center;"]]
+Date Created
+[[/cell]]
+[[/row]]
+[[/table]]
+
+[[/div]]
+
+[[div class="content-type-description"]]
+
+[[module ListPages order="ratingAsc" limit="100" tags="-archived, -admin, -author, -sandbox, -in-deletion, -in-rewrite" rating="<-0" perPage="100" prependLine="[[include component:listpages-table-alt]]" appendLine="[[/table]]" separate="false"]]
+[[row]]
+[[cell style="vertical-align: top;"]]
+%%title_linked%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%rating%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%comments%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%created_at%%
+[[/cell]]
+[[/row]]
+[[/module]]
+[[/div]]
+[[/div]]
+~~~~~~~~
+----
+ [[div class="content-panel standalone content-row"]]
+[[div class="content-type-title"]]
+Pages In Deletion
+[[/div]]
+
+[[div class="content-type-description-2"]]
+
+[[table style="width: 100%;"]]
+[[row style="font-weight: bold; color: #fff; background-color: #666;"]]
+[[cell style="padding: 0 2px; width: 30%;"]]
+Page
+[[/cell]]
+[[cell style="padding: 0 2px; width: 15%; text-align: center;"]]
+Rating
+[[/cell]]
+[[cell style="padding: 0 2px; width: 15%; text-align: center;"]]
+Comments
+[[/cell]]
+[[cell style="padding: 0 2px; width: 20%; text-align: center;"]]
+Date Created
+[[/cell]]
+[[cell style="padding: 0 2px; width: 20%; text-align: center;"]]
+Last Edit
+[[/cell]]
+[[/row]]
+[[/table]]
+
+[[/div]]
+
+[[div class="content-type-description"]]
+
+[[module ListPages order="ratingAsc" limit="100" tags="in-deletion" perPage="100" prependLine="[[include component:listpages-table-alt]]" appendLine="[[/table]]" separate="false"]]
+[[row]]
+[[cell style="vertical-align: top;"]]
+%%title_linked%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%rating%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%comments%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%created_at%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%updated_at%%
+[[/cell]]
+[[/row]]
+[[/module]]
+
+[[/div]]
+[[/div]]
+~~~~~~~~
+----
+[[div class="content-panel standalone content-row"]]
+[[div class="content-type-title"]]
+Pages In Rewrite
+[[/div]]
+
+[[div class="content-type-description-2"]]
+
+[[table style="width: 100%;"]]
+[[row style="font-weight: bold; color: #fff; background-color: #666;"]]
+[[cell style="padding: 0 2px; width: 40%;"]]
+Page
+[[/cell]]
+[[cell style="padding: 0 2px; width: 15%; text-align: center;"]]
+Rating
+[[/cell]]
+[[cell style="padding: 0 2px; width: 15%; text-align: center;"]]
+Comments
+[[/cell]]
+[[cell style="padding: 0 2px; width: 30%; text-align: center;"]]
+Date Created
+[[/cell]]
+[[/row]]
+[[/table]]
+
+[[/div]]
+
+[[div class="content-type-description"]]
+
+[[module ListPages order="created_atDsc" limit="100" tags="in-rewrite" perPage="100" prependLine="[[include component:listpages-table-alt]]" appendLine="[[/table]]" separate="false"]]
+[[row]]
+[[cell style="vertical-align: top;"]]
+%%title_linked%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%rating%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%comments%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%created_at%%
+[[/cell]]
+[[/row]]
+[[/module]]
+
+[[/div]]
+[[/div]]
+
+~~~~~~~~
+----
+[[div class="content-panel standalone content-row"]]
+[[div class="content-type-title"]]
+Untagged Pages
+[[/div]]
+
+[[div class="content-type-description-2"]]
+
+[[table style="width: 100%;"]]
+[[row style="font-weight: bold; color: #fff; background-color: #666;"]]
+[[cell style="padding: 0 2px; width: 40%;"]]
+Page
+[[/cell]]
+[[cell style="padding: 0 2px; width: 15%; text-align: center;"]]
+Rating
+[[/cell]]
+[[cell style="padding: 0 2px; width: 15%; text-align: center;"]]
+Comments
+[[/cell]]
+[[cell style="padding: 0 2px; width: 30%; text-align: center;"]]
+Date Created
+[[/cell]]
+[[/row]]
+[[/table]]
+
+[[/div]]
+
+[[div class="content-type-description"]]
+
+[[module ListPages order="created_atDsc" limit="100" tags="-" perPage="100" prependLine="[[include component:listpages-table-alt]]" appendLine="[[/table]]" separate="false"]]
+[[row]]
+[[cell style="vertical-align: top;"]]
+%%title_linked%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%rating%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%comments%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%created_at%%
+[[/cell]]
+[[/row]]
+[[/module]]
+
+[[/div]]
+[[/div]]
+
+~~~~~~~~
