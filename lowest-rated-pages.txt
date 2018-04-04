@@ -88,7 +88,7 @@ Pages In Deletion
 
 [[table style="width: 100%;"]]
 [[row style="font-weight: bold; color: #fff; background-color: #666;"]]
-[[cell style="padding: 0 2px; width: 40%;"]]
+[[cell style="padding: 0 2px; width: 30%;"]]
 Page
 [[/cell]]
 [[cell style="padding: 0 2px; width: 15%; text-align: center;"]]
@@ -97,8 +97,11 @@ Rating
 [[cell style="padding: 0 2px; width: 15%; text-align: center;"]]
 Comments
 [[/cell]]
-[[cell style="padding: 0 2px; width: 30%; text-align: center;"]]
+[[cell style="padding: 0 2px; width: 20%; text-align: center;"]]
 Date Created
+[[/cell]]
+[[cell style="padding: 0 2px; width: 20%; text-align: center;"]]
+Last Edit
 [[/cell]]
 [[/row]]
 [[/table]]
@@ -107,7 +110,7 @@ Date Created
 
 [[div class="content-type-description"]]
 
-[[module ListPages order="ratingAsc" limit="100" tags="in-deletion" perPage="100" prependLine="[[include component:listpages-table-alt]]" appendLine="[[/table]]" separate="false"]]
+[[module ListPages order="ratingAsc" limit="100" tags="in-deletion" perPage="100" prependLine="[[include component:listpages-table-alt-2]]" appendLine="[[/table]]" separate="false"]]
 [[row]]
 [[cell style="vertical-align: top;"]]
 %%title_linked%%
@@ -120,6 +123,9 @@ Date Created
 [[/cell]]
 [[cell style="vertical-align: top; text-align: center;"]]
 %%created_at%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%updated_at%%
 [[/cell]]
 [[/row]]
 [[/module]]
