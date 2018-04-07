@@ -245,9 +245,9 @@ Her workers are abandoned after they submit to the Barons, and are left to be to
 [[/tab]]
 [[tab MINUTES]]
 ++ EVENT DOCUMENTS
-[!--Please organize the GOI formats in order of latest-to-oldest, with the latest at the top. The module includes GOI formats that merely mention the Factory, not just the factory GOI formats.--]
-* [[[corporate-sabotage-14919]]]
-* [[[recruitment-drive-28126]]]
+[[module ListPages order="created_at Asc" limit="100" tags="-archived -admin -author -sandbox -scp  +goi-format +_factory +factory" separate="no" perPage="100"]]
+* %%title_linked%%
+[[/module]]
 ++ REPORTS
 [[module ListPages order="created_at Asc" limit="100" tags="-archived -admin -author -sandbox -scp  +tale +factory" separate="no" perPage="100"]]
 * %%title_linked%%
