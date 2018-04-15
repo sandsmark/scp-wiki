@@ -300,6 +300,11 @@ blockquote.timer {
 p.timer {
  font-size: 2em;
 }
+@media (max-width: 580px) {
+ .warning-message {
+  padding: 80px 20px 1em 20px;
+ }
+}
 
 /* Fancy buttons from SCP-3939 */
 .choices a {
@@ -322,10 +327,7 @@ p.timer {
  <p><button type="button" class="anomalySelector">0</button>
  <button type="button" class="anomalySelector">1</button>
  <button type="button" class="anomalySelector">2</button>
- <button type="button" class="anomalySelector">3</button>
- <button type="button" class="anomalySelector">4</button>
- <button type="button" class="anomalySelector">5</button>
- <button type="button" class="anomalySelector">6</button><span id="anomalyCookie">Current:</span></p>
+ <button type="button" class="anomalySelector">3</button><span id="anomalyCookie">Current:</span></p>
  <p><b>Modify cookies</b></p>
  <p><button type="button" id="reset">Hard reset</button>
  <button type="button" id="ignoreSeen">Forget seen</button>
