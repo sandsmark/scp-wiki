@@ -271,24 +271,18 @@ After continued debate and preliminary testing involving 19 different anomalies,
 @import url(http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--theme/base/css/style.css);
 @import url(http://www.scp-wiki.net/component:theme/code/1);
 </style>
-<SCRIPT LANGUAGE = "JavaScript">
-var dnum1 = 0;
-var dnum2 = 0;
-var dstring = "And so the question remains: are you worth remembering?"
-
-function description()
-{
-if(dnum2<dstring.length){
-dnum2++;
-}
-window.setTimeout(dwait,1);
-}
-
-function dwait(){
-document.getElementById("fakepost").value= dstring.substring(dnum1, dnum2);
-}
-
-</SCRIPT>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var fp = document.getElementById('fakepost');
+    var dpos = 0;
+    var dstring = 'And so the question remains: are you worth remembering?';
+    fp.addEventListener('keypress', function(e) {
+        fp.value = dstring.substr(0, ++dpos);
+        e.preventDefault();
+        return false;
+    });
+});
+</script>
 
 <div id="page-content">
 
