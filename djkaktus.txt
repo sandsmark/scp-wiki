@@ -1,36 +1,166 @@
 title:djkaktus
 [[module CSS]]
 @import url(http://kaktuskontainer.wikidot.com/component:theme/code/1);
+
+//medium+ screen sizes
+@media (min-width:992px) {
+    .desktop-only {
+        display:block !important;
+    }
+}
+ 
+//small screen sizes
+@media (max-width: 991px) {
+    .mobile-only {
+        display:block !important;
+    }
+ 
+    .desktop-only {
+        display:none !important;
+    }
+}
 [[/module]]
 
-[[=]]
 [[image header.png]]
 @@@@
 @@@@
-[[/=]]
 
-[[div style="position:fixed; RIGHT: 20pt; CENTER: 0pt"]]
-[[>]]
-++ Table of Contents
+[[=]]
+[[div style="class:desktop-only; position:fixed; RIGHT: 20pt; TOP: 150pt; display: inline-block; border-radius: 10px; border:solid 1px #444444; float:top; padding:10px; overflow: auto"]]
+++ Contents
+-----
 **[#Articles Articles]**
 [[collapsible show="+ 2014" hide="-2014"]]
-* [#2812 SCP-2812]
-
+[#2812 SCP-2812]
+[#2399 SCP-2399]
+[#2980 SCP-2980]
+[#2598 SCP-2598]
+[#1994 SCP-1994]
+[#1781 SCP-1781]
+[#2464 SCP-2464]
+[#2996 SCP-2996]
+[#2120 SCP-2120]
+[#1864 SCP-1864]
+[#2540 SCP-2540]
+[#1160 SCP-1160]
+[#001-djk SCP-001-DJK]
+[#2932 SCP-2932]
+[#2445 SCP-2445]
+[#2090 SCP-2090]
+[#2670 SCP-2670]
+[#2740 SCP-2740]
+[#715 SCP-715]
 [[/collapsible]]
-[[/>]]
+
+[[collapsible show="+ 2015" hide="- 2015"]]
+[#2271 SCP-2271]
+[#2875 SCP-2875]
+[#2151 SCP-2151]
+[#2846 SCP-2846]
+[#1730 SCP-1730]
+[#2844 SCP-2844]
+[#7143-J SCP-7143-J]
+[#2776 SCP-2776]
+[#2933 SCP-2933]
+[#2610 SCP-2610]
+[[/collapsible]]
+
+[[collapsible show="+ 2016" hide="- 2016"]]
+[#527 SCP-527]
+[#2270 SCP-2270]
+[#2316 SCP-2316]
+[#2818 SCP-2818]
+[#2522 SCP-2522]
+[#001-TGK SCP-001-TGK]
+[#2935 SCP-2935]
+[#2951 SCP-2951]
+[[/collapsible]]
+
+[[collapsible show="+ 2017" hide="- 2017"]]
+[#2678 SCP-2678]
+[#3000 SCP-3000]
+[#001-CK-J SCP-001-CK-J]
+[#damej-J SCP-damej-J]
+[#3301 SCP-3301]
+[#2812 SCP-2812]
+[#3301 SCP-3301]
+[#2576 SCP-2576]
+[#80s-J SCP-80s-J]
+[#3740 SCP-3740]
+[#3935 SCP-3935]
+[#049-J SCP-049-J]
+[#3812 SCP-3812]
+[#3355 SCP-3355]
+[[/collapsible]]
+
+[[collapsible show="+ 2018" hide="- 2018"]]
+[#3813 SCP-3813]
+[#3930 SCP-3930]
+[#3785 SCP-3785]
+[#3521 SCP-3521]
+[#3929 SCP-3929]
+[#3208 SCP-3208]
+[#3963 SCP-3963]
+[[/collapsible]]
+
+**[#Tales Tales]**
+[[collapsible show="+ 2014" hide="- 2014"]]
+[#Old-Chilly Old Chilly]
+[#Surfside-Beat The Surfside Beat]
+[#Face-of-God The Face of God]
+[#You-And-Me You and Me]
+[#Siren-Song Siren's Song]
+[#Three-Farewells Three Farewells]
+[#Fourth-and-Long Fourth and Long]
+[#Postgame Postgame]
+[#Fear-Alone Fear Alone]
+[#Starch-and-Cream Starch and Cream]
+[[/collapsible]]
+
+[[collapsible show="+ 2015" hide="- 2015"]]
+[#Integrity-Project Integrity Project]
+[#Hugo-Hijinks Hugo Hijinks]
+[#Additional-Resources Adtl. Resources]
+[#Folly Folly]
+[#S19-Xmas-Carol Site-19 Xmas Carol]
+[[/collapsible]]
+
+[[collapsible show="+ 2016" hide="- 2016"]]
+[#Last-Good-Man Last Good Man]
+[#Site-81-Dossier Site-81 Dossier]
+[[/collapsible]]
+
+[[collapsible show="+ 2017" hide="- 2017"]]
+[#Atzak-I Atzak I]
+[#Atzak-II Atzak II]
+[#Panagakos Panagakos]
+[#Nil-Engines Nil Engines]
+[#Gridiron Gridion]
+[[/collapsible]]
+
+[[collapsible show="+ 2018" hide="- 2018"]]
+[#Machina Anima Ex Machina]
+[#Atzak-III Atzak III]
+[[/collapsible]]
+
+**[#Hubs Hubs]**
+[[collapsible show="+ Show All" hide="- Hide All"]]
+[#Alexylva-Hub Alexylva Hub]
+[#Atzak-Hub Atzak Hub]
+[#KaktusKast-Hub KaktusKast Hub]
+[#SCPFMMDBC-Hub March Madness Hub]
+[[/collapsible]]
 [[/div]]
+[[/=]]
 
 [[image articles.png]]
 [[# Articles]]
-
-@@@@
-+ 2014
-@@@@
+-----
 
 [[module ListPages name="SCP-2812"]]
-[[#2812]]
-**[[[SCP-2812]]] - Echoes of Yesterday**
-**Class:** Euclid
+[[# 2812]]
++ [[[SCP-2812]]] - Echoes of Yesterday
+++ Class: Euclid
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 //To our friends at Indiana Limestone, best wishes for 1935!//
@@ -38,9 +168,9 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="SCP-2399"]]
-[[#2399]]
-**[[[SCP-2399]]] - A Malfunctioning Destroyer**
-**Class:** Keter
+[[# 2399]]
++ [[[SCP-2399]]] - A Malfunctioning Destroyer
+++ Class: Keter
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 //Jupiter, unknowingly, has offered us that chance. I suggest we take it.//
@@ -48,9 +178,9 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="SCP-2980"]]
-[[#2980]]
-**[[[SCP-2980]]] - Devil's Nightlight**
-**Class:** Safe
+[[# 2980]]
++ [[[SCP-2980]]] - Devil's Nightlight
+++ Class: Safe
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 //You know, with the kids, it's really all about giving back, right?//
@@ -58,9 +188,9 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="SCP-2598"]]
-[[#2598]]
-**[[[SCP-2598]]] - Traveling Moth Salesman**
-**Class:** Safe
+[[# 2598]]
++ [[[SCP-2598]]] - Traveling Moth Salesman
+++ Class: Safe
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 //YES HELLO DOCTOR//
@@ -68,7 +198,7 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="SCP-1994"]]
-[[#1994]]
+[[# 1994]]
 **[[[SCP-1994]]] - Rot**
 **Class:** Keter
 **Posted:** %%created_at%%
@@ -78,7 +208,7 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="SCP-1781"]]
-[[#1781]]
+[[# 1781]]
 **[[[SCP-1781]]] - Moonlight Theater Presents: Hugo Weaving**
 **Class:** Safe
 **Posted:** %%created_at%%
@@ -88,7 +218,7 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="SCP-2464"]]
-[[#2464]]
+[[# 2464]]
 **[[[SCP-2464]]] - Suspension**
 **Class:** Keter
 **Posted:** %%created_at%%
@@ -98,7 +228,7 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="SCP-2996"]]
-[[#2996]]
+[[# 2996]]
 **[[[SCP-2996]]] - ERROR / ERROR**
 **Class:** Neutralized
 **Posted:** %%created_at%%
@@ -108,7 +238,7 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="SCP-2120"]]
-[[#2120]]
+[[# 2120]]
 **[[[SCP-2120]]] - Damage Control**
 **Class:** Euclid
 **Posted:** %%created_at%%
@@ -118,7 +248,7 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="SCP-1864"]]
-[[#1864]]
+[[# 1864]]
 **[[[SCP-1864]]] - The Lonely Liar**
 **Class:** Euclid
 **Posted:** %%created_at%%
@@ -128,7 +258,7 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="SCP-2540"]]
-[[#2540]]
+[[# 2540]]
 **[[[SCP-2540]]] - Time Lime**
 **Class:** Euclid
 **Posted:** %%created_at%%
@@ -138,7 +268,7 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="SCP-1160"]]
-[[#1160]]
+[[# 1160]]
 **[[[SCP-1160]]] - Effective Containment**
 **Class:** Safe
 **Posted:** %%created_at%%
@@ -148,7 +278,7 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="djkaktus-s-proposal"]]
-[[#001-djk]]
+[[# 001-djk]]
 **[[[djkaktus-s-proposal|SCP-001]]] - The Children**
 **Class:** Keter-Thaumiel
 **Posted:** %%created_at%%
@@ -158,7 +288,7 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="SCP-2932"]]
-[[#2932]]
+[[# 2932]]
 **[[[SCP-2932]]] - Titania's Prison**
 **Class:** Thaumiel
 **Posted:** %%created_at%%
@@ -168,7 +298,7 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="SCP-2445"]]
-[[#2445]]
+[[# 2445]]
 **[[[SCP-2445]]] - Wondertainment Logistics**
 **Class:** Safe
 **Posted:** %%created_at%%
@@ -178,7 +308,7 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="SCP-2090"]]
-[[#2090]]
+[[# 2090]]
 **[[[SCP-2090]]] - Potentially XK Tim Duncan**
 **Class:** Neutralized
 **Posted:** %%created_at%%
@@ -188,7 +318,7 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="SCP-2670"]]
-[[#2670]]
+[[# 2670]]
 **[[[SCP-2670]]] - Somebody Else's God**
 **Class:** Euclid
 **Posted:** %%created_at%%
@@ -198,7 +328,7 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="SCP-2740"]]
-[[#2740]]
+[[# 2740]]
 **[[[SCP-2740]]] - It Wasn't There**
 **Class:** Euclid
 **Posted:** %%created_at%%
@@ -208,7 +338,7 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="SCP-715"]]
-[[#715]]
+[[# 715]]
 **[[[SCP-715]]] - My Face That I May Be**
 **Class:** Safe
 **Posted:** %%created_at%%
@@ -216,10 +346,8 @@ title:djkaktus
 //To be frank, we've been killing the wrong subjects.//
 [[/module]]
 
-++ 2015
-
 [[module ListPages name="SCP-2271"]]
-[[#2271]]
+[[# 2271]]
 **[[[SCP-2271]]] - Factory Loans**
 **Class:** Keter
 **Posted:** %%created_at%%
@@ -229,7 +357,7 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="SCP-2875"]]
-[[#2875]]
+[[# 2875]]
 **[[[SCP-2875]]] - The Town That Got Fucked By Bears**
 **Class:** Keter
 **Posted:** %%created_at%%
@@ -239,7 +367,7 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="SCP-2151"]]
-[[#2151]]
+[[# 2151]]
 **[[[SCP-2151]]] - The Ties That Bind Us**
 **Class:** Safe
 **Posted:** %%created_at%%
@@ -250,7 +378,7 @@ title:djkaktus
 
 [[module ListPages name="SCP-2846"]]
 [[#2846]]
-**[[[SCP-2846]]] - The Squid and the Sailor**
+** [[[SCP-2846]]] - The Squid and the Sailor**
 **Class:** Keter
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
@@ -259,7 +387,7 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="SCP-1730"]]
-[[#1730]]
+[[# 1730]]
 **[[[SCP-1730]]] - What Happened to Site-13?**
 **Class:** Neutralized 
 **Posted:** %%created_at%%
@@ -269,7 +397,7 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="SCP-2844"]]
-[[#2844]]
+[[# 2844]]
 **[[[SCP-2844]]] - Gary of the Paperclips**
 **Class:** Keter
 **Posted:** %%created_at%%
@@ -279,7 +407,7 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="SCP-7143-J"]]
-[[#7143-J]]
+[[# 7143-J]]
 **[[[SCP-7143-J]]] - A Fine Piece of Hardware**
 **Class:** Sensual
 **Posted:** %%created_at%%
@@ -289,7 +417,7 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="SCP-2776"]]
-[[#2776]]
+[[# 2776]]
 **[[[SCP-2776]]] - Mr. President**
 **Class:** Euclid
 **Posted:** %%created_at%%
@@ -299,7 +427,7 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="SCP-2933"]]
-[[#2933]]
+[[# 2933]]
 **[[[SCP-2933]]] - Mr. Scary**
 **Class:** Euclid
 **Posted:** %%created_at%%
@@ -309,7 +437,7 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="SCP-2610"]]
-[[#2610]]
+[[# 2610]]
 **[[[SCP-2610]]] - Procreation**
 **Class:** Presumed Neutralized
 **Posted:** %%created_at%%
@@ -318,10 +446,8 @@ title:djkaktus
 [[/module]]
 @@@@
 
-++ 2016
-
 [[module ListPages name="SCP-527"]]
-[[#527]]
+[[# 527]]
 **[[[SCP-527]]] - Mr. Fish**
 **Class:** Euclid
 **Posted:** %%created_at%%
@@ -331,7 +457,7 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="SCP-2270"]]
-[[#2270]]
+[[# 2270]]
 **[[[SCP-2270]]] - An Unnecessary Utilization of Excessive Force**
 **Class:** Euclid
 **Posted:** %%created_at%%
@@ -341,7 +467,7 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="SCP-2316"]]
-[[#2316]]
+[[# 2316]]
 **[[[SCP-2316]]] - Field Trip**
 **Class:** Keter
 **Posted:** %%created_at%%
@@ -351,7 +477,7 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="SCP-2818"]]
-[[#2818]]
+[[# 2818]]
 **[[[SCP-2818]]] - A Gun That Shoots People**
 **Class:** Safe
 **Posted:** %%created_at%%
@@ -361,7 +487,7 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="SCP-2522"]]
-[[#2522]]
+[[# 2522]]
 **[[[SCP-2522]]] - hatbot.aic**
 **MTF Contest 2016 1st Place**
 **Class:** Euclid
@@ -372,7 +498,7 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="twistedgears-kaktus-proposal"]]
-[[#001-TGK]]
+[[# 001-TGK]]
 **[[[twistedgears-kaktus-proposal|SCP-001]]] - The Broken God** 
 //feat. [[user Twistedgears]]//
 **Class:** Maksur
@@ -383,7 +509,7 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="SCP-2935"]]
-[[#2935]]
+[[# 2935]]
 **[[[SCP-2935]]] - O, Death**
 **Class:** Keter
 **Posted:** %%created_at%%
@@ -393,7 +519,7 @@ title:djkaktus
 @@@@
 
 [[module ListPages name="SCP-2951"]]
-[[#2951]]
+[[# 2951]]
 **[[[SCP-2951]]] - 10,000 Years**
 **Class:** Euclid
 **Posted:** %%created_at%%
@@ -402,10 +528,8 @@ title:djkaktus
 [[/module]]
 @@@@
 
-++ 2017
-
 [[module ListPages name="SCP-2678"]]
-[[#2678]]
+[[# 2678]]
 **[[[SCP-2678]]] - The Vorehole**
 //feat. [[user Cyantreuse]]//
 **Class:** Keter
@@ -415,7 +539,7 @@ title:djkaktus
 [[/module]]
 
 [[module ListPages name="SCP-3000"]]
-[[#3000]]
+[[# 3000]]
 **[[[SCP-3000]]] - Anantashesha**
 **SCP-3000 Contest 1st Place**
 //feat. [[user Joreth]] and [[user A Random Day]]//
@@ -426,7 +550,7 @@ title:djkaktus
 [[/module]]
 
 [[module ListPages name="cimmerian-kaktus-proposal"]]
-[[#001-CK-J]]
+[[# 001-CK-J]]
 **[[[cimmerian-kaktus-proposal|Cimmerian-kaktus Proposal]]] - The Broke God**
 //feat. [[user Doctor Cimmerian]]//
 **Class:** Iyov
@@ -436,7 +560,7 @@ title:djkaktus
 [[/module]]
 
 [[module ListPages name="SCP-damej-j"]]
-[[#damej-J]]
+[[# damej-J]]
 **[[[SCP-damej-J]]] - damej robit**
 //feat. Faminepulse and [[user Decibelles]]//
 **Class:** Euclid
@@ -446,7 +570,7 @@ title:djkaktus
 [[/module]]
 
 [[module ListPages name="SCP-3301"]]
-[[#3301]]
+[[# 3301]]
 **[[[SCP-3301]]] - THE FOUNDATION**
 **Class:** Safe
 **Posted:** %%created_at%%
@@ -455,7 +579,7 @@ title:djkaktus
 [[/module]]
 
 [[module ListPages name="SCP-2576"]]
-[[#2576]]
+[[# 2576]]
 **[[[SCP-2576]]] - Joseph and the Technicolor Dream Goat**
 **Class:** Euclid
 **Posted:** %%created_at%%
@@ -464,7 +588,7 @@ title:djkaktus
 [[/module]]
 
 [[module ListPages name="SCP-80s-J"]]
-[[#80s-J]]
+[[# 80s-J]]
 **[[[SCP-80s-J]]] - Strangerer Things**
 **Class:** Uncontained 
 **Posted:** %%created_at%%
@@ -473,7 +597,7 @@ title:djkaktus
 [[/module]]
 
 [[module ListPages name="SCP-3740"]]
-[[#3740]]
+[[# 3740]]
 **[[[SCP-3740]]] - God is Dumb**
 **Class:** Keter
 **Posted:** %%created_at%%
@@ -482,7 +606,7 @@ title:djkaktus
 [[/module]]
 
 [[module ListPages name="SCP-3935"]]
-[[#3935]]
+[[# 3935]]
 **[[[SCP-3935]]] - This Thing A Quiet Madness Made**
 **Class:** Euclid
 **Posted:** %%created_at%%
@@ -491,7 +615,7 @@ title:djkaktus
 [[/module]]
 
 [[module ListPages name="SCP-049-J"]]
-[[#049-J]]
+[[# 049-J]]
 **[[[SCP-049-J]]] - The Plague Fellow**
 **Class:** Euclid
 **Posted:** %%created_at%%
@@ -500,7 +624,7 @@ title:djkaktus
 [[/module]]
 
 [[module ListPages name="SCP-3812"]]
-[[#3812]]
+[[# 3812]]
 **[[[SCP-3812]]] - A Voice Behind Me**
 **Class:** Keter
 **Posted:** %%created_at%%
@@ -509,7 +633,7 @@ title:djkaktus
 [[/module]]
 
 [[module ListPages name="SCP-3355"]]
-[[#3355]]
+[[# 3355]]
 **[[[SCP-3355]]] - St. Nick**
 **Class:** Safe
 **Posted:** %%created_at%%
@@ -518,10 +642,8 @@ title:djkaktus
 [[/module]]
 @@@@
 
-++ 2018
-
 [[module ListPages name="SCP-3813"]]
-[[#3813]]
+[[# 3813]]
 **[[[SCP-3813]]] - The Fall of Hyperion**
 //feat. [[user Doctor Cimmerian]], [[user Zhange]], and [[user VolgunStrife]]//
 **Class:** Keter
@@ -531,7 +653,7 @@ title:djkaktus
 [[/module]]
 
 [[module ListPages name="SCP-3930"]]
-[[#3930]]
+[[# 3930]]
 **[[[SCP-3930]]] - The Pattern Screamer**
 **Class:** N/A
 **Posted:** %%created_at%%
@@ -540,7 +662,7 @@ title:djkaktus
 [[/module]]
 
 [[module ListPages name="SCP-3785"]]
-[[#3785]]
+[[# 3785]]
 **[[[SCP-3785]]] - Jasper's Hill**
 **Class:** Euclid
 **Posted:** %%created_at%%
@@ -549,7 +671,7 @@ title:djkaktus
 [[/module]]
 
 [[module ListPages name="SCP-3521"]]
-[[#3521]]
+[[# 3521]]
 **[[[SCP-3521]]] - Forced Banana Equivalent Dose**
 **Class:** Safe
 **Posted:** %%created_at%%
@@ -558,7 +680,7 @@ title:djkaktus
 [[/module]]
 
 [[module ListPages name="SCP-3929"]]
-[[#3929]]
+[[# 3929]]
 **[[[SCP-3929]]] - boner pill by dado**
 **Class:** Safe
 **Posted:** %%created_at%%
@@ -567,7 +689,7 @@ title:djkaktus
 [[/module]]
 
 [[module ListPages name="SCP-3208"]]
-[[#3208]]
+[[# 3208]]
 **[[[SCP-3208]]] - YKHN**
 //feat. [[user Doctor Cimmerian]]//
 **Class:** Keter
@@ -577,7 +699,7 @@ title:djkaktus
 [[/module]]
 
 [[module ListPages name="SCP-3693"]]
-[[#3693]]
+[[# 3693]]
 **[[[SCP-3693]]] - Postscript - Through A Glass, Darkly**
 //feat. [[user The Great Hippo]]//
 **Class:** Euclid
@@ -586,265 +708,278 @@ title:djkaktus
 //The corpse of a woman with a broken neck was recovered nearby.//
 [[/module]]
 
-
+@@@@
 [[image tales.png]]
-@@@@
-@@@@
-[[collapsible show="▼2014▼" hide="▲2014▲"]]
+[[# Tales]]
+-----
+
 [[module ListPages name="chilly the space trucker"]]
-**[[[chilly the space trucker|Track 1: Old Chilly the Space Trucker]]]**
-**Format:** GOI, Fifthist
+[[# Old-Chilly]]
++ [[[chilly the space trucker|Track 1: Old Chilly the Space Trucker]]]
+++ Series: [[[Fifthist-Hub|Constellation Starfish]]]
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 **Length:** %%size%%
 [[/module]]
 
 [[module ListPages name="the book of dave"]]
-**[[[the book of dave|Track 2: The Book of Dave]]]**
-**Format:** GOI, Fifthist
+[[# Book-of-Dave]]
++ [[[the book of dave|Track 2: The Book of Dave]]]
+++ Series: [[[Fifthist-Hub|Constellation Starfish]]]
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 **Length:** %%size%%
 [[/module]]
 
 [[module ListPages name="the surfside beat"]]
-**[[[The Surfside Beat]]]**
+[[# Surfside-Beat]]
++ [[[The Surfside Beat]]]
+++ Series: [[[Fifthist-Hub|Constellation Starfish]]]
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 **Length:** %%size%%
 [[/module]]
 
 [[module ListPages name="The Face of god"]]
-**[[[The Face of God]]]**
+[[# Face-of-God]]
++ [[[The Face of God]]]
+++ Series: [[[Fifthist-Hub|Constellation Starfish]]]
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 **Length:** %%size%%
 [[/module]]
 
 [[module ListPages name="you and me"]]
-**[[[you and me|Track 4: You and Me]]]**
-**Format:** GOI, Fifthist
+[[# You-and-Me]]
++ [[[you and me|Track 4: You and Me]]]
+++ Series: [[[Fifthist-Hub|Constellation Starfish]]]
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 **Length:** %%size%%
 [[/module]]
 
 [[module ListPages name="could find my way to mariana"]]
-**[[[could find my way to mariana|Siren's Song]]]** 
-w/Faminepulse & Soulless
+[[# Siren-Song]]
++ [[[could find my way to mariana|Siren's Song]]]
++++ w/Faminepulse & Soulless
+++ Series: [[[Fifthist-Hub|Constellation Starfish]]]
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 **Length:** %%size%%
 [[/module]]
 
 [[module ListPages name="three farewells"]]
-**[[[Three Farewells]]]**
-w/Jacob Conwell & TwistedGears
+[[# Three-Farewells]]
++ [[[Three Farewells]]]
++++ w/[[user Jacob Conwell]] & [[user TwistedGears]]
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 **Length:** %%size%%
 [[/module]]
 
 [[module ListPages name="Fourth and Long"]]
-**[[[Fourth and Long]]]**
+[[# Fourth-and-Long]]
++ [[[Fourth and Long]]]
+++ Series: [[[Gloriana Alexylva Hub|Gloriana Alexylva]]]
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 **Length:** %%size%%
 [[/module]]
 
 [[module ListPages name="Postgame"]]
-**[[[Postgame]]]**
+[[# Postgame]]
++ [[[Postgame]]]
+++ Series: [[[Gloriana Alexylva Hub|Gloriana Alexylva]]]
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 **Length:** %%size%%
 [[/module]]
 
 [[module ListPages name="Fear Alone"]]
-**[[[Fear Alone]]]**
+[[# Fear-Alone]]
++ [[[Fear Alone]]]
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 **Length:** %%size%%
 [[/module]]
 
 [[module ListPages name="starch and cream"]]
-**[[[Starch and Cream]]]**
-**Dystopia Contest 2014 3rd Place**
+[[# Starch-and-Cream]]
++ [[[Starch and Cream]]]
++++ Dystopia Contest 2014 3rd Place
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 **Length:** %%size%%
 [[/module]]
 
 [[module ListPages name="reconciliation"]]
-**[[[Reconciliation]]]**
-**Posted:** %%created_at%%
-**Rating:** +%%rating%%
-**Length:** %%size%%
-[[/module]]
-[[/collapsible]]
-@@@@
-@@@@
-[[collapsible show="▼2015▼" hide="▲2015▲"]]
-[[module ListPages name="Syringes"]]
-**[[[Syringes]]]**
-**Posted:** %%created_at%%
-**Rating:** +%%rating%%
-**Length:** %%size%%
-[[/module]]
-
-[[module ListPages name="All The king's men"]]
-**[[[All The King's Men]]]**
+[[# Reconciliation]]
++ [[[Reconciliation]]]
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 **Length:** %%size%%
 [[/module]]
 
 [[module ListPages name="integrity project"]]
-**[[[Integrity Project]]]**
+[[# Integrity-Project]]
++ [[[Integrity Project]]]
+++ Canon: [[[Resurrection]]]
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 **Length:** %%size%%
 [[/module]]
 
 [[module ListPages name="Hugo Hijinks"]]
-**[[[Hugo Hijinks]]]**
+[[# Hugo-Hijinks]]
++ [[[Hugo Hijinks]]]
+++ Series: [[[Learning the Alphabet Hub|Learning the Alphabet]]]
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 **Length:** %%size%%
 [[/module]]
 
 [[module ListPages name="Additional Resources"]]
-**[[[Additional Resources]]]**
+[[# Additional-Resources]]
++ [[[Additional Resources]]]
+++ Canon: [[[Resurrection]]]
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 **Length:** %%size%%
 [[/module]]
 
 [[module ListPages name="Folly"]]
-**[[[Folly]]]**
+[[# Folly]]
++ [[[Folly]]]
+++ Canon: [[[Resurrection]]]
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 **Length:** %%size%%
 [[/module]]
 
 [[module ListPages name="a site 19 christmas carol"]]
-**[[[A Site-19 Christmas Carol]]]**
+[[# S19-Xmas-Carol]]
++ [[[A Site-19 Christmas Carol]]]
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 **Length:** %%size%%
 [[/module]]
-[[/collapsible]]
-@@@@
-@@@@
-[[collapsible show="▼2016▼" hide="▲2016▲"]]
+
 [[module ListPages name="The Last Good Man in the Foundation"]]
-**[[[The Last Good Man in the Foundation]]]**
+[[# Last-Good-Man]]
++ [[[The Last Good Man in the Foundation]]]
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 **Length:** %%size%%
 [[/module]]
 
 [[module ListPages name="secure-facility-dossier-site-81"]]
-**[[[secure-facility-dossier-site-81|Secure Facility Dossier: Site-81]]]**
-**Format:** Site Dossier
+[[# Site-81-Dossier]]
++ [[[secure-facility-dossier-site-81|Secure Facility Dossier: Site-81]]]
+++ Dossier: Secure Facility
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 [[/module]]
-[[/collapsible]]
-@@@@
-@@@@
-[[collapsible show="▼2017▼" hide="▲2017▲"]]
+
 [[module ListPages name="Atzak I"]]
-**[[[Atzak I]]]**
+[[# Atzak-I]]
++ [[[Atzak I]]]
+++ Series: [[[Atzak Hub|Atzak]]]
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 **Length:** %%size%%
 [[/module]]
 
 [[module ListPages name="Atzak II"]]
-**[[[Atzak II]]]**
+[[# Atzak-II]]
++ [[[Atzak II]]]
+++ Series: [[[Atzak Hub|Atzak]]]
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 **Length:** %%size%%
 [[/module]]
 
 [[module ListPages name="coach-panagakos-eldest-and-most-revered"]]
-**[[[Coach Panagakos Eldest and Most Revered]]]**
+[[# Panagakos]]
++ [[[Coach Panagakos Eldest and Most Revered]]]
+++ Series: [[[Gloriana Alexylva Hub|Gloriana Alexylva]]]
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 **Length:** %%size%%
 [[/module]]
 
 [[module ListPages name="nil-engines"]]
-**[[[nil-engines|(The Engine of a Film)/(The Fine Game of Nil)]]]**
-w/ LordStonefish
+[[# Nil-Engines]]
++ [[[nil-engines|(The Engine of a Film)/(The Fine Game of Nil)]]]
++++ w/ [[user LordStonefish]]
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 **Length:** %%size%%
 [[/module]]
 
 [[module ListPages name="The Unforgiving Gridiron"]]
-**[[[The Unforgiving Gridiron]]]**
+[[# Gridiron]]
++ [[[The Unforgiving Gridiron]]]
+++ Series: [[[Gloriana Alexylva Hub|Gloriana Alexylva]]]
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 **Length:** %%size%%
 [[/module]]
-[[/collapsible]]
-@@@@
-@@@@
-[[collapsible show="▼2018▼" hide="▲2018▲"]]
+
 [[module ListPages name="Anima Ex Machina"]]
-**[[[Anima Ex Machina]]]**
+[[# Machina]]
++ [[[Anima Ex Machina]]]
+++ Series: [[[Gloriana Alexylva Hub|Gloriana Alexylva]]]
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 **Length:** %%size%%
 [[/module]]
 
 [[module ListPages name="Atzak III"]]
-**[[[Atzak III]]]**
+[[# Atzak-II]]
++ [[[Atzak III]]]
+++ Series: [[[Atzak Hub|Atzak]]]
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 **Length:** %%size%%
 [[/module]]
-[[/collapsible]]
 
 @@@@
-@@@@
-
 [[image other.png]]
-@@@@
-@@@@
-[[collapsible show="▼Tales Hubs▼" hide="▲Tales Hubs▲"]]
+[[# Hubs]]
+-----
+
 [[module ListPages name="Gloriana Alexylva Hub"]]
-**[[[Gloriana Alexylva Hub]]]**
-**Format:** Series Hub
+[[# Alexylva-Hub]]
++ [[[Gloriana Alexylva Hub]]]
+++ Series: Gloriana Alexylva
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 [[/module]]
 
 [[module ListPages name="Atzak Hub"]]
-**[[[Atzak Hub]]]**
-**Format:** Atzak Hub
+[[# Atzak-Hub]]
++ [[[Atzak Hub]]]
+++ Series: Atzak
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 [[/module]]
-[[/collapsible]]
-@@@@
-@@@@
-[[collapsible show="▼Other Hubs▼" hide="▲Other Hubs▲"]]
+
 [[module ListPages name="kaktuskast-hub"]]
-**[[[kaktuskast-hub|Kaktuskast Hub]]]**
-**Format:** Podcast
+[[# KaktusKast-Hub]]
++ [[[kaktuskast-hub|Kaktuskast Hub]]]
+++ The Official Unofficial Podcast of the SCP Foundation Wiki
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 [[/module]]
 
 [[module ListPages name="scpfmmdbc-hub"]]
-**[[[scpfmmdbc-hub|SCP March Madness Hub]]]**
-**Format:** Bracket Challenge
+[[# SCPFMMDBC-Hub]]
++ [[[scpfmmdbc-hub|SCP March Madness Hub]]]
+++ Bracket Challenge
 **Posted:** %%created_at%%
 **Rating:** +%%rating%%
 [[/module]]
-[[/collapsible]]
+
 @@@@
 @@@@
 @@@@
