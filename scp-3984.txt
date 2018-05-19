@@ -1,0 +1,348 @@
+title:SCP-3984
+[[module CSS]]
+/* Hide the collapsible link once it's been expanded */
+.collapsible-block-unfolded-link .collapsible-block-link {
+  display: none;
+}
+
+/* Make superscripts not fuck with the line spacing */
+sup {
+  vertical-align: top;
+  position: relative;
+  top: -0.5em;
+}
+
+/* Haha blue boi */
+.outside {
+  margin: 2em -6em;
+  padding: 1em 10em;
+  --narration-color: rgba(214, 234, 248,1);
+  background: var(--narration-color);
+  padding-right: 10em;
+  padding-left: 10em;
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, var(--narration-color) 20%, var(--narration-color) 80%, rgba(255,255,255,0) 100%);
+  z-index: -2;
+}
+
+/* Make the blue bois that are within the document have smaller margins so they break flow less*/
+.outside.inline {
+  margin: 1em -6em;
+  padding: 1px 10em;
+}
+
+/* Force the side bar to render on top of the blue bois */
+#side-bar {
+  z-index: 2;
+}
+
+/* Hide the original page title */
+#page-title {
+  display: none;
+}
+
+/* Make my fake page title look like the original (thanks SCP-2998) */
+.page-title {
+  border-bottom: solid 1px #bbbbbb;
+  color: #990011;
+  font-weight: normal;
+  margin: 0 0 0.6em;
+  padding: 0 0 0.25em;
+  font-size: 200%;
+}
+.page-title p {
+  margin: 0;
+}
+[[/module]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[div class="outside"]]
+The library is warm and dark. Outside, it is a summer night — warmth and humidity lingers in the air from earlier in the day. A storm is predicted for the week ahead, but the sky is clear for now. The library has been closed for several hours, and there shouldn’t be anyone around until morning.
+
+You shut the front door quietly behind you and make your way out of the foyer. The floor is a carpet, soft and thick, muffling each of your footsteps for you. Security cameras, their gaze trained upon the door through which you just entered, are blind. You cut their power half an hour ago. You can never be too safe.
+
+A wooden door leads from the foyer into the library proper. You know that it won’t creak when you open it because one of the maintenance workers oiled it a week ago. That maintenance worker was you. You don’t work here. The door swings open smoothly without so much as a groan.
+
+The carpet continues into the library’s main room, blue in most places, but a yellow path weaving its way between shelves of books towards the librarians’ desk. You start to follow it.
+
+A stray book lies on the floor, shrouded in the darkness. Your foot hits it. You trip — not enough to fall, but enough to throw you off your balance. You reach out and grab a bookshelf. Your hand, searching for a place to grasp, hits another book and sends it falling to the floor where it hits the carpet with a //thud// that echoes all around the room.
+
+You freeze. The echo fades. The library returns to silence. If someone were here, they definitely would have noticed that. Hopefully, they would have come out to say hello. You decide that you are alone, and continue walking.
+
+You arrive at the librarians’ desk and, somewhat awkwardly, climb over the counter. Behind, you take a seat at one of the two computers and boot it up. The fans of the machine turn on, blowing their cacophony into the silent room. After twenty seconds — this is outdated technology, after all — you are presented with a login screen. You withdraw a notebook from your pocket and enter the details on the first page. The login is successful.
+
+The next page of the notebook is a list of instructions written weeks ago. Combinations of buttons to press, commands to enter. You open two different terminals, enter a series of commands, watch lines of text you don’t understand flicker past your eyes. Eventually, when prompted by your instructions, you take a USB drive from your pocket and gently push it into the slot in the machine.
+
+The screen goes black as the computer thinks about what it needs to do. A long, tense moment passes.
+
+The file for SCP-EODS lights up the room as the page loads, dark red header contrasting against the bright white background, burning your eyes that have grown used to the darkness. You wince, and blink, and wait for your eyes to adjust.
+
+You breathe a sigh of relief, relief that the instructions you were given worked, but it’s a feeling that you cut short. You’re here to solve a mystery that you’ve lived with your entire life, a mystery that no-one else seems to want to solve or even acknowledge, a mystery that’s been around for thirty years. And you hope — you have to hope — that this file will hold at least some answers. It’s the only place left to look.
+
+The file begins with a note from one of the researchers. Reading from the top seems like a good way to start.
+
+You don’t need to rush. You have all the time in the world.
+[[/div]]
+
+> **Notice to all personnel**
+> 
+> ΩK is a thing. It’s happened. We all have to live with it now.
+> 
+> Despite speculation — no matter how prevalent said speculation is — we do not know for sure whether or not we caused ΩK, whether any of our SCPs caused it, or whether any of them can fix it. We do not know whether it is related to the Foundation at all.
+> 
+> What we do know is that it now defines our lives.
+> 
+> The SCP Foundation does not destroy anomalies, it contains them. That is our purpose. ΩK is an anomaly and we will contain it. We will not end it, we will not "put things back" as certain individuals are asking. That is not our purpose, this is not our battle. However, we will contain it, or at least try to.
+> 
+> So if any of you are expecting my research team to come up with some magical solution to end ΩK, stop expecting that. We will treat the symptoms, but not cure the disease.
+> 
+> ΩK is here and it’s not going away, so grow up and move on. You are professionals — act like it. It’s not like this is going to kill you.
+> 
+> — Dr. Emily Young
+
+[[div class="outside"]]
+Dr. Emily Young. A name you know //very// well, a name you've been trying to avoid for the past thirty years, a name that you completely expected to see.
+
+And here, it's a name who's telling her researchers not to look into the origin of the crisis. Instead, she wants to focus on the symptoms?
+
+You met Young last year, and suffice it to say that she is of very little use for research purposes. You'll get no benefit from talking to her. This document really is the last place you can look.
+[[/div]]
+
+[[div class="page-title" style="display: block;"]]
+SCP-EODS
+[[/div]]
+
+[[div style="margin: -1em 0 1em; font-weight: 85%; display: none;"]]
+[[[End of Death Hub]]] » SCP-EODS
+[[/div]]
+
+**Item #:** SCP-EODS
+
+**Object Class:** Keter
+
+**Special Containment Procedures:** Containment of SCP-EODS revolves around inducing death in affected animals. As this is not currently possible, SCP-EODS can be considered uncontained. Research efforts must be directed into the development of alternative methods of simulating death.
+
+Research into reversing the effects of ΩK, or its origin, is prohibited.
+
+[[div class="outside inline"]]
+Prohibited? That doesn’t make sense. Why would the Foundation want to actively restrict research?
+
+It must have been Young who enforced this rule. But why?
+[[/div]]
+
+**Description**: SCP-EODS refers to a phenomenon in which any living organisms in the kingdom //Animalia// under Cavalier-Smith taxonomy[[footnote]]The kingdom //Animalia// under Cavalier-Smith taxonomy includes all animals but not bacteria, fungi, algae or plants.[[/footnote]], including humans, are unable to die.
+
+Currently, all known lifeforms in the kingdom //Animalia// are under the effects of SCP-EODS. This satisfies the criterion for an ΩK "End of Death" scenario.
+
+The source or origin of the prevalence of SCP-EODS as such is referred to as "ΩK". The exact nature of ΩK is currently under debate. This document pertains only to SCP-EODS and its effects, not its origin.
+
+ΩK occurred on 2020-09-12 at approximately 14:02 GMT, a time which has been derived from the last globally recorded human death. Since that time, SCP-EODS has been present in every living creature thus tested in the. As a result, mortality rates have dropped to zero.
+
+SCP-EODS appears to only extend to the ability to die. SCP-EODS does not grant a healing effect, does not prevent aging, does not prevent conception or pregnancy, and does not prevent subjects from sustaining injury.
+
+In the long term, SCP-EODS presents a major threat to societal structure as the population is expected to expand exponentially. Current models estimate that overpopulation would begin to lead to excessive scarcity to the point of widespread starvation in the early 2040s. Additionally, while population growth is a considerable concern for humans in the long term, a much larger short-term concern is presented by animals with r-selected evolutionary strategies[[footnote]]Animals living in unstable environments are generally characterised by an r-selected evolutionary strategy, which consists of producing many cheap offspring of which few are expected to survive. Compare to K-selected evolutionary strategy, which consists of producing a single more expensive offspring which is expected to survive for the maximum lifespan of its species.[[/footnote]]. 
+
+Worldwide efforts should be focused on generating sufficient resources for the planet to be able to cope with the increased population. Talks with governments around the world to determine strategies for managing population growth, for both humans and animals, is underway. Foundation efforts should be focused on the development of alternative and/or artificial solutions to replace death.
+
+The extent to which SCP-EODS constitutes 'conventional' immortality[[footnote]]For example, does it prevent aging and injury, is there a healing factor, does it simply remove an assailant's ability to kill?[[/footnote]] is the subject of ongoing research, which is led by Dr. Young as per request. Experimental logs and a theory on the mechanism of SCP-EODS is presented below.
+
+> **Experiment Log 01**
+> 
+> **Date:** 2020-09-14
+> **Experimenter:** Dr. Emily Young
+> **Subject:** D-1190
+> 
+> **Procedure:** D-1190 was asphyxiated by manual strangulation from D-9981.
+> 
+> **Results:** D-1190 struggled initially but stopped resisting after several minutes of strangulation. D-9981 was told to maintain grip for a further ten minutes. D-1190 recovered shortly afterwards with no lasting damage.
+
+> **Experiment Log 02**
+> 
+> **Date:** 2020-09-14
+> **Experimenter:** Dr. Emily Young
+> **Subject:** D-6812
+> 
+> **Procedure:** D-6812 was asphyxiated by D-9981 tying a belt around his neck.
+> 
+> **Results:** D-6812 initially resisted asphyxiation despite instructions otherwise, but stopped after several minutes of strangulation. D-9981 was told to keep the belt in position for a further ten minutes. D-6812 recovered with mild but permanent damage to several muscular ligaments in his neck.
+> 
+> D-6812 was admitted to the Site-06 medical ward but did not make any further recovery.
+
+> **Experiment Log 03**
+> 
+> **Date:** 2020-09-15
+> **Experimenter:** Dr. Emily Young
+> **Subject:** D-1190
+> 
+> **Procedure:** D-1190 was placed in a vacuum-sealed chamber from which the air was ventilated.
+> 
+> **Results:** D-1190 began to asphyxiate several minutes into the test, visibly struggling for air, and collapsed against the wall of the chamber after less than a minute, remaining conscious. Subject was left overnight, after which air was released back into the chamber. D-1190 was admitted to the Site-06 medical ward with acute cerebral hypoxia and burst blood vessels in the eyes. Subject physically recovered within three days but remained in a vegetative state for several weeks. Upon awakening, D-1190 displayed symptoms of permanently-impaired motor and speech skills as well as widespread paralysis. 
+> 
+> **2020-11-02:** One month after waking up, D-1190 has not shown any signs of further recovery. It appears that the anomalous nature of the healing effect extends only to fatal injuries or ailments. D-1190 remains effectively useless as D-Class. Under usual circumstances, I’d recommend termination. - Dr. Emily Young
+
+> **Experiment Log 04**
+> 
+> **Date:** 2020-09-17
+> **Experimenter:** Dr. Emily Young
+> **Subject:** D-8833
+> 
+> **Procedure:** D-8833 had cuts made on her wrists and ankles and over the course of 6 hours was drained of an estimated 80% of her blood. Removed blood was retained and re-introduced to the body the following day via intravenous drip.
+> 
+> **Results:** In much the same manner as the previous experiment, D-8833 was successfully 'resurrected' but has suffered injuries consistent with prolonged loss of oxygen to the brain. In this instance, symptoms included loss of sensation in the left half of the body and loss of understanding of any subject more complex than naming animals. Note that D-8833 remained conscious despite not having a significant volume of blood.
+
+[[div class="outside inline"]]
+The logs continue in much the same fashion, with some unfortunate D-Class being exposed to something that would normally kill them. Poison, starvation, explosion, whatever. You scroll down, looking for one in particular. The old scrollwheel clicks loudly, twenty times with each movement of your finger, a series of loud clicks that echo through the silence of the library. You stop at Experiment 10.
+[[/div]]
+
+> **Experiment Log 10**
+> 
+> **Date:** 2020-10-11
+> **Experimenter:** Dr. Emily Young
+> **Subject:** D-11424
+> 
+> **Procedure:** D-11424 was decapitated with a steel-bladed guillotine.
+> 
+> **Results:** Head was cleanly removed. D-11424 remained conscious during and after the operation. Efforts were made to breathe, which failed, and D-11424 began to show signs of suffocation and significant blood loss. Although D-11424 was admitted to the Site-06 medical ward, the injury was deemed "irreparable". Both head and body were placed into cold storage.
+
+[[div class="outside inline"]]
+You smile, lifting your hand to touch the raised scar that forms a ring around your neck and the tiny bumps from age-old stitches. Irreparable.
+
+You keep scrolling.
+[[/div]]
+
+> **Experiment Log 20**
+> 
+> **Date:** 2025-11-05
+> **Experimenter:** Dr. Emily Young
+> **Subject:** D-10273
+> 
+> **Procedure:** One round from a standard-issue security handgun was fired into the forehead of D-10273 by Dr. Young.
+> 
+> **Results:** Subject sustained major head injury was admitted to Site-06 medical ward with severe brain damage and blood loss.
+> 
+> **2025-12-28:** After almost two months under medical care, D-10273 has made a full recovery, albeit with major memory loss of both recent and earlier history. Subject remembers basic skills such as how to eat and speak but does not recall any personal details.
+
+> **Experiment Log 21**
+> 
+> **Date:** 2025-12-31
+> **Experimenter:** Dr. Emily Young (stand-in: Dr. Joyce Michaels)
+> **Subject:** Dr. Emily Young
+> 
+> **Procedure:** Dr. Young self-administered a single bullet to the head from a security handgun in much the same manner as the previous test.
+> 
+> **Results:** Subject sustained major head injury and was admitted to Site-06 medical ward. Bullet had pierced the temporal lobe, frontal lobe and brainstem, the latter of which appears to have disconnected Dr. Young's brain from her body. She is unable to communicate or perform any motor functions.
+> 
+> **Note:** As Dr. Young is incapable of performing further research, she has been removed from the SCP-EODS research team. She will undergo psychological pending on her recovery. In the meantime, I will be assuming control of research. //- Dr. Joyce Michaels//
+
+//**Note:** Dr. Young has neglected to maintain a log of specific research intentions for each experiment. Despite this, we have been able to narrow down the source of the immortality to the brain. Subsequent experiments should focus on this — we can consider the rest of the body to be mortal. - Dr. Michaels//
+
+[[div class="outside inline"]]
+Michaels isn't wrong. You’ve seen someone in a car crash, their body mangled beyond recognition, limbs in places they shouldn’t be and blood everywhere that they should, but that should-be corpse still found the energy to call for help, to scream in pain. You don’t imagine they ever stopped.
+
+You remember meeting Young last year. She hasn't changed much since this experiment. You couldn't tell whether or not she was happy to see you.
+[[/div]]
+
+> **Experiment Log 22**
+> 
+> **Date:** 2026-02-02
+> **Experimenter:** Dr. Joyce Michaels
+> **Subject:** D-373A, a male //Macaca mulatta// or Rhesus macaque
+> 
+> **Purpose:** To confirm or deny the above assumption.
+> 
+> **Procedure:** D-373A was given a standard lethal injection dose, i.e. was injected with the following substances with 3-minute gaps between injections:
+> # 5g sodium thiopental (to induce unconsciousness)
+> # 100mg pancuronium bromide (to stop breathing)
+> # 3.9g potassium chloride (to stop the heart)
+>
+> **Results:** Primary injection was unable to cause D-373A to become unconscious; however a slowness of speech and panic-like symptoms were noted. Secondary injection saw widespread muscular relaxation and induced breathing difficulty. Tertiary injection quickly induced cardiac arrest, through which D-373A remained conscious and visibly panicked throughout despite severe muscular relaxation.
+> 
+> After 12 hours, when the administered drugs were deemed dispersed enough to longer pose a significant effect, D-373A was admitted to the Site-06 medical ward with acute cerebral hypoxia from the lack of blood flow. Note that D-373A remained conscious throughout the experiment.
+> 
+> **2026-02-25:** With medical attention from Site-06, D-373A has made a full recovery with no permanent side effects.
+> 
+> **Note:** It is interesting to observe that sedation was unable to induce unconsciousness in the subject. It might be not that the brain is immortal, but that it is impossible to cause one to become unconscious. //- Dr. Joyce Michaels//
+
+> **Experiment Log 23**
+> 
+> **Date:** 2026-02-07
+> **Experimenter:** Dr. Joyce Michaels
+> **Subject:** D-374A, a female //Macaca mulatta// or Rhesus macaque
+> 
+> **Purpose:** To confirm or deny the above assumption: that it is not possible to cause the brain to become unconscious.
+> 
+> **Procedure:** Over the course of 5 days, D-374A was injected with:
+> * A mild sedative
+> * A strong sedative
+> * A mild local anaesthetic
+> * A mild general anaesthetic
+> * Class C amnestics
+> 
+> **Results:** D-374A responded positively to the mild sedative (dosage was insufficient to cause sleep), local and general anaesthetic and amnestics. D-374A had no response to the strong sedative — in fact no effect of the sedative was observed, despite the weak sedative showing a positive drowsiness response.
+> 
+> **Note:** Sedation, at least to the point of unconsciousness, is not an option for future experiments. This supports the above assumption. //- Dr. Joyce Michaels//
+
+> **Experiment Log 24**
+> 
+> **Date:** 2026-02-19
+> **Experimenter:** Dr. Joyce Michaels
+> **Subject:** D-390A, a female //Macaca mulatta// or Rhesus macaque
+> 
+> **Purpose:** To establish if the effects of SCP-EODS hold even when the brain no longer conventionally exists.
+> 
+> **Procedure:** After being restrained, the skull of D-390A was surgically opened from the top down to the neck. Connection to the spinal column was severed and the brain was removed. As damage to neurons and other brain cells are not at risk, the brain was separated into individual cells through a combination of chemical disaggregation and mechanical trituration (with a blender). Individual brain cells were then suspended in a saline solution.
+> 
+> The resulting mixture, referred to as Solution-EODS-24, was placed through a series of tests to determine its electrical activity.
+> 
+> **Results:** Electrical signals persisted throughout the brain cells suspended in solution as would be expected for a healthy human brain, leading to the conclusion that D-390A affects the individual cells of the brain itself. Despite this, it was not possible to determine whether or not D-390A remained "conscious", as an MRI scan was inconclusive on account of the not-brain-shaped nature of the solution and randomisation of cell locations. Samples of Solution-EODS-24 are available upon request.
+
+[[div class="outside inline"]]
+You've seen enough test logs. None of them contain the information you're looking for. You know that at some point there'll be one where they reconnect D-11424's severed head, but beyond that, none of them interest you.
+
+You scroll right down to the bottom of the page.
+[[/div]]
+
+**Summary of research:** Through research orchestrated by Dr. Young and Dr. Michaels, overall, SCP-EODS can be characterised by an inability for the brain to become unconscious. The current theory proposes that SCP-EODS does not represent immortality as such, but rather an inability for the brain to lose function. The amount of function is not retained so long as the brain itself remains operable (see Experiment 03).
+
+[[collapsible show="+ LEVEL 5/EODS RESTRICTED" hide="+ clever you, you shouldn't be able to see this"]]
+[[div class="outside"]]
+Just as you were thinking that this document clearly isn't going to get into whatever caused ΩK, and just as you were about the take out the USB and shut down this whole operation, you spot that little notch in the file. That little breadcrumb of encryption. Something that needs Level 5 access in order to be seen.
+
+There's more to this document. You knew it right from the start. So you'd been looking in the right place all along. It's a link to some other document, called Project Dammerung, and it needs Level 5 access.
+
+If it explains why Young was the lead researcher for this, why she spent so long testing on humans without rhyme or reason, why research into ΩK is forbidden... then you need to know about it. That will be where the answers are.
+
+You don't have Level 5 access, though. You're not sure what level access your hack is giving you. All you know is that it cost you dearly.
+
+Still, you do what you can. You flip through your reams of instructions, trying line after line, trying to work out how to make the database think you have Level 5 access.
+
+Of course, you can't. It was hard enough to hack into the Foundation database alone — to do that, //and// pretend to be an O5? Impossible.
+
+You did your research: the closest Site to this library is Site-61, and it's a six-hour drive away. But not all of the Sites are found out about so easily. Site-03-M is twenty minutes away. This library seemed like the perfect place to break into their systems. It was actually one of the worst.
+
+You're suddenly aware of a light. Is it daytime? You look to the windows. No, it's pitch black outside. The moon? No, not tonight.
+
+The computer screen illuminates your face and you're suddenly keenly, acutely aware that you are the most visible object in the room. You hear something stirring in the darkness.
+
+You take the USB drive out of its slot and the document disappears, taking an instant longer for its brightness to fade from your eyes. In response, your terminals execute commands you programmed earlier, firing a volley of signals in a futile attempt to mask your location and then shutting down the system altogether. But none of that matters. They're already here.
+
+No longer blinded by your screen the rest of the library is more visible. There are shapes all around you. Soldiers. Clad in black. Guns raised. Pointed at you. Six of them — eight, no, twelve — more than you can count. Slowly advancing.
+
+You drop down and crouch behind the librarian's desk, under the computer monitor, with your back pressed against the front wooden panel. A single shot rings out, tearing through the silence. You're aware of splinters of wood flying as the bullet tears through the desk. Something shoots out of your chest, right in the middle. It leaves a gaping red hole behind it.
+
+The black figures come around the back of the librarian's desk from both sides. You can see the whites of their Foundation badges, but the whites of their eyes are hidden behind black visors. They encroach, closer and closer.
+
+With them swarming around you, it's now that you wish you could die.
+[[/div]]
+[[/collapsible]]
+
+@@ @@
+
+[[include component:earthworm
+  first=false | last=false | hub=no |
+  previous-url=/captainkirby-end-of-death | previous-title=In the Clutches of Life |
+  next-url=/ | next-title=Coming soon... |
+  hub-url=/collab:i-dont-wanna-die | hub-title=End of Death |
+]]
