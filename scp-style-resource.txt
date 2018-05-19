@@ -693,6 +693,8 @@ Notification text goes here.
 [[/div]]
 +++ Alternative Header Format
 
+__**Option 1:**__
+
 **What it looks like:**[[footnote]]Image stolen from [[*user djkaktus]]'s [[[SCP-3935]]].[[/footnote]]
 
 [[table style="border: none; width: 100%;"]]
@@ -744,4 +746,55 @@ Notification text goes here.
 ----
 [[/code]]
 **Note:** Replace 'image.jpg' with the name/url of the image you're using. Remember that this type of image-box will widen the image to occupy 100% of the article's width.
+[[/collapsible]]
+
+__**Option 2:**__[[footnote]] As seen in [[[SCP-2983]]] and others to come. [[/footnote]]
+
+**What it looks like:**
+
+[[collapsible]]
+
+**Level 1:**
+
+[[image header1.png]]
+
+------
+
+**Level 2:**
+
+[[image header2.png]]
+
+------
+
+**Level 3:**
+
+[[image header3.png]]
+
+------
+
+**Level 4:**
+
+[[image header4.png]]
+
+------
+
+**Level 5:**
+
+[[image header5.png]]
+
+------
+
+[[/collapsible]]
+
+**What to copy:**
+
+[[collapsible]]
+
+> {{@@[[image header1/2/3/4/5.png]]@@ (Specify Image)}}
+> 
+> @@------@@
+> 
+
+**Note:** This code does not include the image file. Either upload it into the article or copy the image's address from here.
+
 [[/collapsible]]
