@@ -18,8 +18,6 @@ sup {
   padding: 1em 10em;
   --narration-color: rgba(214, 234, 248,1);
   background: var(--narration-color);
-  padding-right: 10em;
-  padding-left: 10em;
   background: linear-gradient(90deg, rgba(255,255,255,0) 0%, var(--narration-color) 20%, var(--narration-color) 80%, rgba(255,255,255,0) 100%);
   z-index: -2;
 }
@@ -51,6 +49,15 @@ sup {
 }
 .page-title p {
   margin: 0;
+}
+
+@media only screen and (max-width: 1040px) {
+  .outside {
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 }
 [[/module]]
 
