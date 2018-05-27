@@ -1,0 +1,178 @@
+title:End of Death Hub
+[[div class="attribution"]]
+Artwork by [[user Zhange]]
+[[/div]]
+
+[[module CSS]]
+.attribution {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8em;
+  position: absolute;
+  top: -20px;
+  z-index: 10;
+  text-align: right;
+  right: -200px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.attribution p {
+  margin: 0;
+}
+#main-content::before {
+  height: 600px;
+  width: 1400px;
+  content: "";
+  background-image: url(http://scp-sandbox-3.wdfiles.com/local--files/collab%3Ai-dont-wanna-die/smol.png);
+  background-size: contain;
+  position: relative;
+  display: block;
+  background-position: center;
+  margin-left: calc(-180px - 22em - 1em);
+  margin-top: calc(-600px - 1em);
+  z-index: 1;
+}
+#content-wrap::before {
+  height: 600px;
+  width: 1400px;
+  content: "";
+  background-image: url(https://orig00.deviantart.net/900d/f/2018/135/c/a/banner__death_by_zhange000-dcbm5q6.png);
+  background-size: auto;
+  position: relative;
+  display: block;
+  background-position: center;
+  margin-left: -180px;
+  z-index: 2;
+  animation: 2s ease-in-out 0s 1 fadeIn;
+}
+#content-wrap::after {
+  height: 600px;
+  width: 1400px;
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 450px, rgba(255,255,255,0.5) 550px, rgba(255,255,255,1) 600px, rgba(255,255,255,1) 1200px);
+  margin-left: -180px;
+  animation: 2s ease-out 0s 1 swipeDown;
+  background-position: 0 0;
+  background-size: 1200px 1400px;
+  transition-timing-function: cubic-bezier(0,0.7,0.31,0.96);
+  z-index: 3;
+}
+@keyframes swipeDown {
+  0% {
+    background-position: 0 -300px;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0.01;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#content-wrap {
+  position: relative;
+  margin-top: 0;
+}
+#side-bar {
+  margin-top: 600px;
+}
+@media only screen and (max-width: 1400px) {
+  #content-wrap::before {
+    width: 100%;
+    margin-left: 0;
+  }
+  #main-content::before {
+    width: 100%;
+    margin-left: 0;
+  }
+  .attribution {
+    right: -2em;
+  }
+}
+@media only screen and (max-width: 1040px) {
+#content-wrap::before {
+  height: 300px;
+  width: 100%;
+  background-image: url(https://media.discordapp.net/attachments/437375490295332876/446060040978432010/big.png);
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  animation: none;
+}
+#main-content::before {
+  display: none;
+}
+#content-wrap::after {
+  height: 300px;
+  width: 100%;
+  top: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 225px, rgba(255,255,255,0.5) 275px, rgba(255,255,255,1) 300px, rgba(255,255,255,1) 600px);
+  margin-left: auto;
+  margin-right: auto;
+  background-position: 0 0;
+  background-size: 600px 700px;
+}
+#side-bar {
+  margin-top: 300px;
+}
+.attribution {
+  right: calc(50vw - 350px - 2em)
+}
+}
+[[/module]]
+
+> [[=]]
+> **EXCERPT FROM THE FOUNDATION DATABASE OF K-CLASS CONTINGENCIES**
+> [[/=]]
+> 
+> -----
+> 
+> **Scenario Designation:** ΩK-Class
+> 
+> **Likelihood:** Near Impossible
+> 
+> **Severity:** Survivable, but requires moderate restructuring of human civilization
+> 
+> **Description:** An ΩK-Class ("End-of-Death") Scenario refers to a situation wherein immortality is forced upon all life, without any other biological change (for exampl,e the halting of ageing or forced sterilization). All protocols regarding this scenario assume steps are taken to avoid any Broken Masquerade situation. This scenario also assumes that the Foundation has maintained its current structure and subdivisions. 
+> 
+> **Priorities:**
+> 
+> 1. //Population Control:// Due to insect population birth and death rate, this must be addressed within twenty-four hours of scenario onset before the insect population overtakes WK-Class Scenario thresholds. After this juncture, it will be imperative that a long-term solution is devised for other organisms.
+> 
+> 2. //Veil Control:// While the entire human population will become exposed to anomalies at this time, it is important that no other anomalies come to their attention. Normalcy will be redefined to account for the effects of the ΩK-Class Scenario, and containment must be continued. A misinformation campaign is to disseminate a cover story that explains the newfound immortality in terms of fabricated research. 
+> 
+> 3. //Research Terminal State Replacement:// If true death is not achievable, an alternative must be engineered for ethical reasons. It has been deemed unacceptable to let mankind suffer indefinitely due to decaying biological components.
+
+**LEAD RESEARCHER:**
+* [[*user Captain Kirby]]
+
+**ASSISTANTS:**
+* [[*user Croquembouche]]
+* [[*user OthellotheCat]]
+* [[*user Veiedhimaedhr]]
+
+-----
+
+**DR. JOYCE MICHAELS' RESEARCH**
+# **[[[In The Clutches Of Life]]]** by //Captain Kirby//
+# **[[[SCP-3984]]] - Poking Death with a Stick** by //Croquembouche//
+# Coming soon
+# Coming soon
+# Coming soon
+# Coming soon
+
+**RELATED DOCUMENTATION**
+* **[[[SCP-3287]]] - Anti-Baby Gas** by //OthellotheCat//
+* **[[[Population Control(led)]]]** by //OthellotheCat//
+* **[[[SCP-3866]]] - Youth in Asia by dado** by //Captain Kirby//
+* Coming soon
+* Coming soon
+* Coming soon
+* Coming soon
