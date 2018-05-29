@@ -1,6 +1,24 @@
 title:djkaktus
 [[module CSS]]
-@import url(http://kaktuskontainer.wikidot.com/component:darkbodytheme/code/1);
+@import url(http://kaktuskontainer.wikidot.com/component:theme/code/1);
+
+//medium+ screen sizes
+@media (min-width:992px) {
+    .desktop-only {
+        display:block !important;
+    }
+}
+ 
+//small screen sizes
+@media (max-width: 991px) {
+    .mobile-only {
+        display:block !important;
+    }
+ 
+    .desktop-only {
+        display:none !important;
+    }
+}
 [[/module]]
 
 [[image header.png]]
