@@ -27,6 +27,29 @@ title:Search Results for "Jack Ike's Author Page"
 
 }
 
+#header h1 a::before {
+    content: "SCP Poundation";
+    display: block;
+    margin: 0;
+    padding: 80px 0 25px;
+    line-height: 0px;
+    max-height: 0px;
+    color: #eee;
+    background: transparent;
+    font-family: BauhausLTDemi, 'Nanum Gothic', Arial, sans-serif;
+    font-size: 180%;
+    text-decoration: none;
+    text-shadow: 3px 3px 5px #000;
+    letter-spacing: 0.9px;
+} 
+
+#header h2 span::before {
+    content: "█ecure, Contain, Protect.";
+    color: #f0f0c0;
+    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+} 
+
 #page-title {
   display: none;
 }
