@@ -368,7 +368,64 @@ The Disinformation Bureau's campaign explains that SCP-2640-1 is caused by the d
  _
 [[/<]]
 
-[[=]]
-[[[http://scp-wiki.wdfiles.com/local--files/scp-2640/gurdonlight2.jpg| Recovered image file ]]]
-[[/=]]
+[[html]]
+<style type="text/css">
+    .collapsed {
+        display: none;
+    }
+</style>
+<script type="text/javascript">
+
+var collapsibleLink = function(className) {
+    var collapsed = document.querySelectorAll("." + className + ".collapsed");
+    var expanded = document.querySelectorAll("." + className + ":not(.collapsed)");
+    var i;
+    for(i = 0; i < collapsed.length; i++) {
+        collapsed[i].classList.remove("collapsed");
+    }
+    for(i = 0; i < expanded.length; i++) {
+        expanded[i].classList.add("collapsed");
+    }
+}
+
+var hideBlock = function(blockName) {
+    var expanded = document.querySelectorAll("." + blockName + ":not(.collapsed)");
+    var i;
+    for(i = 0; i < expanded.length; i++) {
+        expanded[i].classList.add("collapsed");
+    }
+}
+
+var showBlock = function(blockName) {
+    var collapsed = document.querySelectorAll("." + blockName + ".collapsed");
+    var i;
+    for(i = 0; i < collapsed.length; i++) {
+        collapsed[i].classList.remove("collapsed");
+    }
+}
+</script>
+<div style="text-align: center;">
+<div class="block1">
+<p><a onclick="collapsibleLink('block1');">● Recovered Image File ●</a></p>
+</div>
+
+<div class="block1 collapsed">
+
+<p><a onclick="collapsibleLink('block1');">◎ Recovered Image File ◎</a></p>
+<div class="scp-image-block block-center" style="width:300px;"><a href="http://scp-wiki.wdfiles.com/local--files/scp-2640/gurdonlight2.jpg" target="_blank"><img src="http://scp-wiki.wdfiles.com/local--files/scp-2640/gurdonlight2.jpg" style="width:500px;" alt="gurdonlight2.jpg" class="image" /></a>
+<div class="scp-image-caption" style="width:300px;">
+<p>Image recovered from Mr. Butler's camera.<br>[click to enlarge]</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+    <style type="text/css" id="internal-style">       
+        /* theme */
+                    @import url(http://d3g0gp89917ko0.cloudfront.net/v--2f62f70fa3c2/common--theme/base/css/style.css);
+                    @import url(http://www.scp-wiki.net/component:theme/code/1);
+            </style>
+[[/html]]
+
 [[/collapsible]]
