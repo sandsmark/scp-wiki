@@ -164,17 +164,10 @@ table.wiki-content-table { margin: -1px auto 0 auto; width: 90%; }
 [[/module]]
 [[/collapsible]]
 
-**Author pages ranked by rating**
-[[collapsible]]
-[[module ListPages tags="author" separate="no" order="rating desc" perPage="250"]]
-* %%title_linked%% by %%created_by%% (+%%rating%%)
-[[/module]]
-[[/collapsible]]
-
 **All untagged pages**
 [[collapsible]]
 [[module ListPages tags="-" separate="no"]]
-* %%title_linked%% by %%created_by%%
+* %%title_linked%% by %%created_by%% (%%created_at%%)
 [[/module]]
 [[/collapsible]]
 
