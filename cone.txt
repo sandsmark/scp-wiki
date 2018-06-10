@@ -14,9 +14,15 @@ table.wiki-content-table { margin: -1px auto 0 auto; width: 90%; }
 
 .table-scp th { background-color: #ddd !important; }
 .table-scp td { background-color: #eee; }
-.table-tale {}
-.table-component {}
-.table-author {}
+
+.table-tale th { background-color: #ddd !important; }
+.table-tale td { background-color: #eee; }
+
+.table-component th { background-color: #ffd !important; }
+.table-component td { background-color: #ffe; }
+
+.table-author th { background-color: #dff !important; }
+.table-author td { background-color: #eff; }
 [[/module]]
 
 [[module ListPages name="cone%" order="random" limit="1" category="fragment"]]
