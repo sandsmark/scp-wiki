@@ -172,4 +172,394 @@ table.wiki-content-table { margin: -1px auto 0 auto; width: 90%; }
 [[/collapsible]]
 
 [[/tab]]
+[[tab Title Fetching Tool]]
+
+[[html]]
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <style type="text/css">
+      .log p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .error {
+        color: red;
+      }
+      textarea {
+        white-space: nowrap;
+      }
+    </style>
+    <script type="text/javascript">
+      
+      "use strict";
+      
+      String.prototype.toCamelCase = function() {return this.toLowerCase().replace(/[^\w\s\-]/g, '').replace(/[^a-z0-9]/g, ' ').replace(/^\s+|\s+$/g, '').replace(/\s(.)/g, function(match,group) {return group.toUpperCase()})};
+      
+      var list = {
+        original: "",
+        lines: [],
+        scps: [],
+        scpTypes: [],
+        placeholder: [],
+      };
+      
+      var one = 0, two = 0, three = 0, four = 0, joke = 0, five = 0, explained = 0, archived = 0, mystery = 0;
+      
+      var vlog = function(data, error) {
+        if(typeof error === "undefined") {
+          $("div.log").append("<p>" + data + "</p>");
+          console.log(data);
+        } else {
+          $("div.log").append("<p class='error'>" + data + "</p>");
+        };
+      };
+      
+      var pagesToFetch = [];
+      var pageData = {
+        scpSeries: [],
+        scpSeries2: [],
+        scpSeries3: [],
+        scpSeries4: [],
+        scpSeries5: [],
+        scpEx: [],
+        archivedScps: [],
+        jokeScps: [],
+      };
+      
+      var fetch = function(index) {
+        // This function is called towards the end of #pull, handles grabbing and presenting the data.
+        // must return array of objects {url: title:} for the complete series
+        
+        //possible pagenames: 1,2,3,4,5,ex,arc,joke
+        //urls: scp-series, append -x, scp-ex, joke-scps, archived-scps
+        //only archived-scps has a nonstandard format
+        vlog("Fetching " + pagesToFetch[index] + "...");
+        $.ajax({
+          type: "GET",
+          url: "http://allorigins.me/get?url=" + encodeURIComponent("http://www.scp-wiki.net/" + pagesToFetch[index]),
+          dataType: "json",
+          success: function(response) {
+            
+            //code for manipulating mainlist goes here
+            var mainlist = $(response.contents).find("#page-content .content-panel:first ul li");
+            console.log(mainlist);
+            
+            for(let i = 0; i < mainlist.length; i++) {
+              var splits = [];
+              splits = mainlist[i].innerHTML.split(" - ");
+              switch(splits.length) {
+                case 0:
+                  throw new Error("No splits - " + pagesToFetch[index] + " at index " + i);
+                  break;
+                case 1:
+                  // Ignore this entry
+                  splits = ["Invalid","Invalid"];
+                  break;
+                case 2:
+                  // This is the intended value
+                  break;
+                default:
+                  // At negative values(?) + 3 and above
+                  // Keep first value, concatenate the rest
+                  splits = [splits[0], splits.slice(1).join(" - ")];
+              };
+              
+              // replace HTML with wikicode and format the URL into a title
+              splits[0] = splits[0].replace(/<a href="\/(scp-\S+)">SCP-\S+<\/a>/,"$1".toUpperCase());
+              splits[1] = splits[1].replace("<strong>","**").replace("</strong>","**").replace("<em>","//").replace("</em>","//");
+              
+              // Log these splits to the thing
+              pageData[pagesToFetch[index].toCamelCase()].push({url: splits[0], title: splits[1]});
+              
+              // Now we check all of OUR SCPs against the mainlist
+              // list.scpTypes has a list of the urls our SCPs need, in the right order.
+              for(let j = 0; j < list.scpTypes.length; j++) {
+                if(list.scpTypes[j] == pagesToFetch[index]) {
+                  // the SCP we're evaluating is of the correct type
+                  if(list.scps[j].toUpperCase() == splits[0].toUpperCase()) {
+                    vlog("Found a match for " + list.scps[j] + " (" + splits[1] + ")");
+                    // Yay we did it! Now we need to replace %%actual-title%%
+                    list.lines[j] = list.lines[j].replace("%%actual-title%%",splits[1]);
+                  };
+                };
+              };
+            };
+            
+            if(++index < pagesToFetch.length) {
+              fetch(index);
+            } else {
+              // now that all the lines have been replaced, substitute this into the textarea
+              vlog("Replacing title placeholders...");
+              $("#input").val(list.lines.join("\n"));
+              vlog("Done.");
+              vlog("Please check for any unreplaced title placeholders");
+            };
+          },
+        });
+      }
+      
+      $(document).ready(function() {
+        
+        $("#clear").on("click", function() {
+          $("div.log").empty();
+        });
+        
+        $("#fetch").on("click", function() {
+          
+          list = {
+            original: "",
+            lines: [],
+            scps: [],
+            scpTypes: [],
+            placeholder: [],
+          };
+          one = 0, two = 0, three = 0, four = 0, joke = 0, five = 0, explained = 0, archived = 0, mystery = 0;
+          
+          try {
+            vlog("Evaluating input...");
+            // Step one: take the original text and save it to the variable
+            list.original = $("#input").val();
+            // Save this to the savebox
+            $("#savebox").val(list.original);
+            
+            // Step two: split the list up into lines
+            list.lines = list.original.split("\n");
+            
+            if(list.lines.length === 1 && list.lines[0] == "") {
+              throw new Error("Input is empty");
+            };
+            
+            // Step three: search for SCPs
+            // Go through each line and find the matching SCPs
+            // list.scps is currently an empty array
+            
+            //fist, check if there are ANY scps or title placeholders
+            if(list.original.search(/%%actual-title%%/) == -1) {
+              throw new Error("No title placeholders present");
+            };
+            if(list.original.search(/[scp]{3}-/i) == -1) {
+              throw new Error("No SCPs detected");
+            };
+            
+            var missingPlaceholders = [];
+            var missingScps = [];
+            
+            for(let line = 0; line < list.lines.length; line++) {
+              // Iterating through each line
+              // First, we need to check what lines are missing a title placeholder
+              list.placeholder[line] = list.lines[line].search(/%%actual-title%%/);
+              if(list.placeholder[line] == -1) {
+                missingPlaceholders.push(line + 1);
+              };
+              
+              // Next, check which lines are missing SCP
+              list.scps[line] = list.lines[line].search(/[scp]{3}-/i);
+              if(list.scps[line] == -1) {
+                missingScps.push(line + 1);
+              };
+              
+            }
+            
+            if(missingPlaceholders.length) {
+              vlog("Warning: no title placeholders detected on line(s) " + missingPlaceholders.join(", "), true);
+            }
+            if(missingScps.length) {
+              vlog("Warning: no SCPs detected on line(s) " + missingScps.join(", "), true);
+            }
+            
+            for(let line = 0; line < list.lines.length; line++) {
+              // still iterating through lines, but this time we know which ones to avoid
+              if(missingPlaceholders.includes(line + 1) || missingScps.includes(line + 1)) {
+                //do nothing, skip
+              } else {
+                // work out what scp we need to fetch
+                if(list.lines[line].match(/([scp]{3}-\S+-j)\D/i)) {
+                  
+                  // match Joke SCPs
+                  list.scps[line] = list.lines[line].match(/([scp]{3}-\S+-j)\D/i)[1];
+                  list.scpTypes[line] = "joke-scps";
+                  
+                } else if(list.lines[line].match(/(scp-\d{3})\D/i)) {
+                  
+                  // match series 1 SCPs
+                  list.scps[line] = list.lines[line].match(/(scp-\d{3})\D/i)[1];
+                  list.scpTypes[line] = "scp-series";
+                  
+                } else if(list.lines[line].match(/(scp-1\d{3})\D/i)) {
+                  
+                  // match series 1 SCPs
+                  list.scps[line] = list.lines[line].match(/(scp-1\d{3})\D/i)[1];
+                  list.scpTypes[line] = "scp-series-2";
+                  
+                } else if(list.lines[line].match(/(scp-2\d{3})\D/i)) {
+                  
+                  // match series 1 SCPs
+                  list.scps[line] = list.lines[line].match(/(scp-2\d{3})\D/i)[1];
+                  list.scpTypes[line] = "scp-series-3";
+                  
+                } else if(list.lines[line].match(/(scp-3\d{3})\D/i)) {
+                  
+                  // match series 1 SCPs
+                  list.scps[line] = list.lines[line].match(/(scp-3\d{3})\D/i)[1];
+                  list.scpTypes[line] = "scp-series-4";
+                  
+                } else if(list.lines[line].match(/(scp-4\d{3})\D/i)) {
+                  
+                  // match series 1 SCPs
+                  list.scps[line] = list.lines[line].match(/(scp-4\d{3})\D/i)[1];
+                  list.scpTypes[line] = "scp-series-5";
+                  
+                  // TODO: add detectors for -EX and -ARC
+                  
+                } else {
+                  vlog("Unsure whether or not there is an SCP on line " + (line + 1));
+                };
+                
+              };
+              
+              // squeeze this in while we're still looping
+              if(list.scps[line] == -1) {
+                list.scps[line] = "unknown";
+              };
+            };
+            
+            
+            vlog("Found " + list.scps.length + " entries: " + list.scps.join(", ").toUpperCase());
+            
+            // count up total numbers of jokes and series Xs
+            for(let i = 0; i < list.scpTypes.length; i++) {
+              switch(list.scpTypes[i]) {
+                case "scp-series":
+                  one++;
+                  break;
+                case "scp-series-2":
+                  two++;
+                  break;
+                case "scp-series-3":
+                  three++;
+                  break;
+                case "scp-series-4":
+                  four++;
+                  break;
+                case "scp-series-5":
+                  five++;
+                  break;
+                case "joke-scps":
+                  joke++;
+                  break;
+                case "scp-ex":
+                  explained++;
+                  break;
+                case "archived-scps":
+                  archived++;
+                  break;
+                default:
+                  mystery++;
+              };
+            };
+            vlog("Found a total of " + one + " series 1s, " + two + " series 2s, " + three + " series 3s, " + four + " series 4s, " + five + " series 5s, " + explained + " -EXs, " + archived + " -ARCs, " + (mystery ? ", " : " and ") + joke + " jokes" + (mystery ? " and " + mystery + " complete mysteries." : "."));
+            if(mystery) {
+              vlog(mystery + " unknown article(s) - review these manually after fetching", true);
+            };
+            
+            if(!(one || two || three || four || five || joke || explained || archived)) {
+              throw new Error("Not fetching any pages");
+            }
+              
+            vlog("Ready to fetch, Captain.");
+            
+            $("#pull").prop("disabled", false);
+          }
+          catch(error) {
+            vlog(error + ", terminating", true);
+          }
+        });
+        
+        
+        // PULL
+        
+        
+        $("#pull").on("click", function() {
+          
+          $("#pull").prop("disabled", true);
+          $("#fetch").prop("disabled", true);
+          vlog("Fetching...");
+          
+          try {
+            
+            // so what we're going to do here is define a new function that works out which pages we need to fetch.
+            // then, using promises, we grab each one in order.
+            
+            pagesToFetch = []; // list of all pages to fetch
+            if(one) {
+              pagesToFetch.push("scp-series");
+            };
+            if(two) {
+              pagesToFetch.push("scp-series-2");
+            };
+            if(three) {
+              pagesToFetch.push("scp-series-3");
+            };
+            if(four) {
+              pagesToFetch.push("scp-series-4");
+            };
+            if(five) {
+              pagesToFetch.push("scp-series-5");
+            };
+            if(explained) {
+              pagesToFetch.push("scp-ex");
+            };
+            if(archived) {
+              pagesToFetch.push("archived-scps");
+            };
+            if(joke) {
+              pagesToFetch.push("joke-scps");
+            };
+            
+            // the functions that fetch this MUST return a single ARRAY of objects {url: "scp-XXX", title: string"}
+            console.log(pagesToFetch);
+            fetch(0);
+            // the fetch function will handle the remainder of the operation.
+            
+            //series 2, 3, 4, joke
+            
+            $("#pull").prop("disabled", false);
+            $("#fetch").prop("disabled", false);
+          }
+          catch(error) {
+            vlog(error + ", terminating", true);
+          }
+        });
+      });
+      
+    </script>
+  </head>
+  <body>
+    <h1>SCP title-fetching tool</h1>
+    <p>Made by Croquembouche for the SCP wiki news. This tool uses <a href="https://github.com/gnuns/allorigins">All Origins</a>.</p>
+    <p>For each line, %%actual-title%% will be replaced with the title of the <b>first</b> correctly-formatted SCP mentioned on that line.</p>
+    <p>Use SCP URLs insteadof names - i.e., "scp-botnik-j" as opposed to "SCP-\̅\̅\̅\̅-J"</p>
+    <p>Currently supports Series 1 through 4 and Joke SCPs. Does not support tales, 001 proposals, or nonstandard SCPs that are not Jokes (such as SCP-S). Does not support Explained or Archived SCPs, and may in fact fetch the wrong titles for these.</p>
+    <p>Usage: Paste your list into the box, ideally from shaggy's author page. Evaluate the list and review the log underneath to see if there are any errors. If there aren't, or you just don't care, hit Fetch.</p>
+    <p>If the list is changed after evaluating it, make sure to re-evaluate before fetching again.</p>
+    <div id="wrapper">
+      <p>
+        <textarea rows="20" cols="80" id="input"></textarea>
+      </p>
+      <p>
+        <textarea rows="2" cols="80" id="savebox">Original text will be preserved here after evaluating</textarea>
+      </p>
+      <p>
+        <button type="button" id="fetch">Evaluate list</button>
+        <button type="button" id="clear">Clear log</button>
+        <button type="button" id="pull" disabled>Fetch titles</button>
+      </p>
+      <div class="log">
+        <p>Waiting for input...</p>
+      </div>
+    </div>
+  </body>
+[[/html]]
+
+[[/tab]]
 [[/tabview]]
