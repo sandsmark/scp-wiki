@@ -1,0 +1,212 @@
+title:Bug Report: VM727BNYUSE
+[[module css]]
+.realityos{
+background-color:#f0f1c6;
+font-family: Consolas;
+}
+.block{
+border-color:#0f99ff;
+border-width: 2px;
+border-style: solid;
+}
+.code{
+background-color:#000000;
+font-family: Consolas;
+color: #2aff0a;
+border-width: 5px;
+border-color: #2aff0a;
+border-style: solid;
+}
+.chat{
+background-color:#ffffff;
+}
+.login{
+color: #88e188;
+}
+[[/module]]
+[[tabview ]]
+[[tab Bug Report: VM727BNYUSE]]
+[[div class="realityos"]]
+[[div class="block"]]
+**Bug Report**: Vending Machine is deleting concept of value of individual dollars
+
+------
+
+**Issue**: A vending machine on Earth is removing concept of value from money inserted into it.
+
+------
+
+**Location**: Brooklyn, New York, United States of America, Earth, Sol System, Milky Way Galaxy, Universe #727
+
+-----------------------------------------------------------------------------------------------
+
+**Expected Result**: Machine accepts money, and then ejects it if it does not register as money.
+
+-----------------------------------------------------------------------------------------------
+
+**Actual Result**: Machine accepts money, removes the concept of value from money, and then ejects a piece of paper.
+
+-----------------------------------------------------------------------------------------------
+
+**Steps to Reproduce**: Create a vending machine with the current code for the vending machine at the specified location.
+
+[[/div]]
+[[/div]]
+[[/tab]]
+[[tab Relevant Code]]
+[[div class="code"]]
+if (dollar.value = null || dollar.wrinkled)
+{
+return dollar;
+}
+else
+{
+currentvalue += dollar.value;
+return null;
+}
+
+[[/div]]
+[[/tab]]
+[[tab #genchat ]]
+[[div class="chat block"]]
+[[div class="login"]]
+phoebtheweeb logged in
+[[/div]]
+**<phoebtheweeb>** hey guys, i just saw the report on the value deleting vending machine, and I can’t for the life of me find the issue. Can somebody help with this real fast?
+
+------
+
+**<billybobjoe>** so i found this crazy thing right? One of the groups on the Earth somehow made half a million physics engine breaking concepts and put it on one notecard. ONE!
+
+------
+
+**<arealpainintheash>** phoebtheweeb ill take a look, it can’t be that hard to find.
+
+------
+
+**<phoebtheweeb>** thx, I feel like its really simple but I just can’t find it
+
+------
+
+**<lovelyfuckery>** so how is the sim still running lmao
+
+------
+
+**<arealpainintheash>** this bug has been around for 4 years? Jeez i cant believe noones dealt with this.
+
+------
+
+**<phoebtheweeb>** wait i think i found it, in the comparison in the value check. that needs to be 2 equal signs.
+
+------
+
+**<arealpainintheash>** goddammit the easiest one. This is WHY i advocate yoda comparisons
+
+------
+
+**<billybobjoe>** well, they made the notecard so that the activation took 5 years. So what I did, is i made a concept-deleting machine in plain view of the public so that the scip guys will find it and use it to delete the concepts on the notecard. It was gonna be terrible, all sorts of shit, like changing water properties and removing gravity and changing how light travels
+------
+
+**<billybobjoe>** and everything interacting to collectively break physics woulda just made it so much worse
+
+------
+
+**<lovelyfuckery>** yeah that sounds p bad. Are you sure you couldnt have just fixed the bugs?
+
+------
+
+**<phoebtheweeb>** no FUCK yoda comparisons. I dont see any proof that they CHANGE jackshit
+
+------
+
+**<arealpainintheash>** YODA COMPARISONS ARE ONE OF THE BEST HABITS ANY PROGRAMMER CAN ADOPT BECAUSE IT FORCES THEM TO THINK
+
+------
+
+**<billybobjoe>** heck no, there were so many potential bugs the debugging run couldnt simulate it for more than 10 years are you kidding me?
+
+------
+
+**<lovelyfuckery>** ouch, yeah i dont really wanna deal with that
+
+------
+
+**<phoebtheweeb>** NO THEY DONT THEY JUST LOOK STUPID
+
+------
+
+**<lovelyfuckery>** what machine did you make into a concept deleter anyhow?
+
+------
+
+**<billybobjoe>** a vending machine in brooklyn. That way, they would have HAD to take it in, too exposed to the public. and by my calculations, their leadership should vote to use the machine on the paper aaaaany second now.
+
+------
+
+**<billybobjoe>** it was easy too, just had to change a comparison in an if statement
+
+------
+
+**<arealpainintheash>** wait
+
+------
+
+**<phoebtheweeb>** ?
+
+------
+
+**<arealpainintheash>** was it the vending machine referenced in report VM727BNYUSE?
+
+------
+
+**<billybobjoe>** uhhhhhhhhhh yes? I thought we deleted that report, it was contained by the skip guys
+
+------
+
+**<phoebtheweeb>** shit
+
+------
+
+**<arealpainintheash>** did you see our chat at all?
+
+------
+
+**<lovelyfuckery>** yoda comparisons? I personally think they’re p good
+
+------
+
+**<billybobjoe>** you fixed the vending machine didnt you
+
+------
+
+**<phoebtheweeb>** how many issues was that going to cause?
+
+------
+
+**<billybobjoe>** seeing as it takes effect right about now, check the main build on your screen
+
+------
+
+**<arealpainintheash>** my god
+
+------
+
+**<lovelyfuckery>** its over 9000
+
+------
+
+**<phoebtheweeb>** this isnt the time for memes
+
+------
+
+**<billybobjoe>** it IS time to get to work
+
+------
+
+[[div class="login"]]
+phoebtheweeb logged out
+[[/div]]
+[[/div]]
+[[/tab]]
+
+[[/tabview]]
