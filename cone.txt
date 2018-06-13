@@ -135,6 +135,19 @@ table.wiki-content-table { margin: -1px auto 0 auto; width: 90%; }
 [[/module]]
 [[/div]]
 
+[[div class="table-component"]]
+[[module ListPages name="site-news-title-fetcher" limit="1" category="fragment"]]
+||~ Title || [[[fragment:site-news-title-fetcher|Site News Title Fetcher]]] ||~ Page type || "component" ||
+||~ Rating || +%%rating%% ||~Written in  || Javascript ||
+||~ Published || June 2018 ||~ Format screw? || No ||
+
+||~ Summary |||||| A tool to automagically fetch SCP titles to make it easier to update the Site News. ||
+||~ Quote |||||| //if(list.scps[j].toUpperCase() == splits[0].toUpperCase()) { vlog("Found a match for " + list.scps[j] + " (" + splits[1] + ")"); list.lines[j] = list.lines[j].replace("%%actual-title%%",splits[1]); };// ||
+
+||~ Last comment || #%%comments%% from %%commented_by_linked%% on %%commented_at%% ||
+[[/module]]
+[[/div]]
+
 [[collapsible show="+ Other things the cone has done"]]
 * Suggested the [[[http://www.scp-wiki.net/system:page-tags/tag/interactive|interactive]]] tag
 * Created [[[http://www.scp-wiki.net/forum/t-6086502#post-3829009|the site logo]]] for Pride Month 2018
