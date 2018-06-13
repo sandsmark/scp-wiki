@@ -535,10 +535,10 @@ table.wiki-content-table { margin: -1px auto 0 auto; width: 90%; }
     </script>
   </head>
   <body>
-    <h1>SCP title-fetching tool</h1>
+    <h1>SCP title-fetching tool v1.0</h1>
     <p>Made by Croquembouche for the SCP wiki news. This tool uses <a href="https://github.com/gnuns/allorigins">All Origins</a>.</p>
     <p>For each line, %%actual-title%% will be replaced with the title of the <b>first</b> correctly-formatted SCP mentioned on that line.</p>
-    <p>Use SCP URLs insteadof names - i.e., "scp-botnik-j" as opposed to "SCP-\̅\̅\̅\̅-J"</p>
+    <p>Use SCP URLs instead of names - i.e., "scp-botnik-j" as opposed to "SCP-\̅\̅\̅\̅-J"</p>
     <p>Currently supports Series 1 through 4 and Joke SCPs. Does not support tales, 001 proposals, or nonstandard SCPs that are not Jokes (such as SCP-S). Does not support Explained or Archived SCPs, and may in fact fetch the wrong titles for these.</p>
     <p>Usage: Paste your list into the box, ideally from shaggy's author page. Evaluate the list and review the log underneath to see if there are any errors. If there aren't, or you just don't care, hit Fetch.</p>
     <p>If the list is changed after evaluating it, make sure to re-evaluate before fetching again.</p>
