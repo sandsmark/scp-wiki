@@ -11,15 +11,12 @@ parent:k-o-failure-scenario-hub
 }
 
 .pictures4mobile {
-
-    visibility: hidden;
-
+    height: 0px;
+    overflow: hidden;
 }
 
 .pictures4desk {
-
-    visibility: visible;
-
+    height: auto;
 }
 
 @media only screen and (max-width: 600px) {
@@ -29,11 +26,12 @@ parent:k-o-failure-scenario-hub
     }
 
     .pictures4mobile {
-        visibility: visible;
+        height: auto;
     }
 
     .pictures4desk {
-        visibility: hidden;
+        height: 0px;
+        overflow: hidden;
     }
 
 }
@@ -45,6 +43,7 @@ parent:k-o-failure-scenario-hub
 [[include component:image-block name=http://kaktuskontainer.wikidot.com/local--files/peppermill-upat/NeckShark.jpg|align=right|width=250px|caption={{Fig 1.2.}} Advanced SCP-3760 growth.]]
 [[include component:image-block name=http://kaktuskontainer.wikidot.com/local--files/peppermill-upat/EyeScream.jpg|align=right|width=250px|caption={{Fig 1.3.}} Subject's ocular cavity in early stages of conversion into jaw (prior to eye's consumption).]]
 [[/div]]
+
 [[div class="pictures4mobile"]]
 [[include component:image-block name=http://kaktuskontainer.wikidot.com/local--files/peppermill-upat/FishHand4.jpg|align=center|width=200px|caption={{Fig 1.1.}} SCP-3760 mutation 10 days after inciting injury (hangnail).]]
 [[include component:image-block name=http://kaktuskontainer.wikidot.com/local--files/peppermill-upat/NeckShark.jpg|align=center|width=250px|caption={{Fig 1.2.}} Advanced SCP-3760 growth.]]
@@ -104,7 +103,7 @@ I told Riggs and the others that his foot had gotten infected. Had to scrap the 
 [[/div]]
 @@@@
 @@@@
-[[div class="synopsis"]]
+[[div class="journal-logs"]]
 //August 8th 1922//  
 
 They brought the kid with the black eye in again today. His right eyelid was swollen shut; blood trickled from it like a leaky faucet. I had to use pincers to peel the lid back. Wasn't just the swelling that kept it shut. It was those little teeth again. They'd grown into the back of the lid and bit in.
@@ -115,7 +114,7 @@ Speaking of eyes, my vision has gotten worse. The dark spot's moved to the cente
 [[/div]]
 @@@@
 @@@@
-[[div class="synopsis"]]
+[[div class="journal-logs"]]
 //August 9th 1922//  
 
 I had three more men in today. No teeth this time, though.
@@ -130,7 +129,7 @@ The dark spot on my vision keeps getting bigger. It's not even a spot anymore. I
 [[/div]]
 @@@@
 @@@@
-[[div class="synopsis"]]
+[[div class="journal-logs"]]
 //August 11th 1922//  
 
 I told the higher-ups. They thought I was crazy. I wouldn't shut up about it, though, so they locked me away.
@@ -139,7 +138,7 @@ Rigg's leg tore a man's throat out today. So they let me go.
 [[/div]]
 @@@@
 @@@@
-[[div class="synopsis"]]
+[[div class="journal-logs"]]
 //August 18th 1922//  
 
 I have a little plate in front of me with bits of meat on it. Every few minutes I hold a piece up to my left ring finger. The nail slides up and it bears its teeth. I push the meat in and get back to taking care of the men. This is how things are now.
@@ -150,7 +149,7 @@ I followed orders. But I also mentioned that if they felt like jumping, come see
 [[/div]]
 @@@@
 @@@@
-[[div class="synopsis"]]
+[[div class="journal-logs"]]
 //August 22nd 1922//  
 
 Ronnie Gaines died this morning. There's a hole full of teeth where his face should be. He'd been complaining of migraines for days. I figured he had something going on inside. I just didn't think it would bite.
@@ -159,21 +158,21 @@ The curious part is that the teeth are still gnashing. Guess it makes sense. Rig
 [[/div]]
 @@@@
 @@@@
-[[div class="synopsis"]]
+[[div class="journal-logs"]]
 //August 23rd 1922//  
 
 Riggs died 
 [[/div]]
 @@@@
 @@@@
-[[div class="synopsis"]]
+[[div class="journal-logs"]]
 //August 29th 1922//  
 
 There's nothing more to write. I don't understand it. I can't heal it. I've already described it. No point in writing now. I have mouths to feed
 [[/div]]
 @@@@
 @@@@
-[[div class="synopsis"]]
+[[div class="journal-logs"]]
 //September 5th 1922//  
 
 I can see it clearly now. I can't quite make out its features, even though it's all I can see. It looks like a person.
