@@ -103,7 +103,9 @@ Artwork by [[[zhange-artwork|Zhange]]]
   }
   #main-content::before {
     width: 100%;
-    margin-left: 0;
+    margin-left: calc(-22em - 1em);
+    padding-right: 26em;
+    background-size: cover;
   }
   .attribution {
     right: -2em;
