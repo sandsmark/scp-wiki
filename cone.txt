@@ -274,8 +274,8 @@ Top Rated SCPs This Week
 [[/div]]
 [[div class="panel-body"]]
 
-[[module ListPages rating=">10" tags="scp" order="rating desc" separate="false" created_at="last 1 week"]]
-%%title_linked%% (+%%rating%%)
+[[module ListPages rating="<30" tags="scp" order="rating desc" separate="false" perPage="250" created_at="older than 60 month"]]
+%%title_linked%% (+%%rating%%) %%comments%% %%created_at%%
 [[/module]]
 
 [[/div]]
@@ -334,7 +334,7 @@ Other Top Rated Pages This Week
 [[/div]]
 [[div class="panel-body"]]
 
-[[module ListPages rating=">10" tags="-scp,-tale,-goi-format" order="rating desc" separate="false" created_at="last 1 week"]]
+[[module ListPages rating="<20" tags="-scp,-tale,-goi-format" order="rating desc" separate="false" created_at=""]]
 %%title_linked%% (+%%rating%%)
 [[/module]]
 
