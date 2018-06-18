@@ -1,25 +1,22 @@
 title:cone
 Noting that the collection of these articles should be possible to automate with ListPages:
 0
-[[code]]
+
 [[module ListPages order="rating desc" rating="<=0" created_at="older than 1 week"]]
 %%title_linked%% (+%%rating%%)
 [[/module]]
 [[/code]]
 10
-[[code]]
 [[module ListPages order="rating desc" rating="<=10" created_at="older than 1 month"]]
 %%title_linked%% (+%%rating%%)
 [[/module]]
 [[/code]]
 30
-[[code]]
 [[module ListPages order="rating desc" rating="<=30" created_at="older than 6 month"]]
 %%title_linked%% (+%%rating%%)
 [[/module]]
 [[/code]]
 50
-[[code]]
 [[module ListPages order="rating desc" rating="<=50" created_at="older than 12 month"]]
 %%title_linked%% (+%%rating%%)
 [[/module]]
