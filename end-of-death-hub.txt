@@ -56,27 +56,7 @@ Artwork by [[[zhange-artwork|Zhange]]]
   position: absolute;
   display: block;
   top: 0;
-  background: linear-gradient(
-    to bottom,
-    hsla(0, 0%, 100%, 0) 0,
-    hsla(0, 0%, 100%, 0) 450px,
-    hsla(0, 0%, 100%, 0.013) 462px,
-    hsla(0, 0%, 100%, 0.049) 473px,
-    hsla(0, 0%, 100%, 0.104) 484px,
-    hsla(0, 0%, 100%, 0.175) 494px,
-    hsla(0, 0%, 100%, 0.259) 503px,
-    hsla(0, 0%, 100%, 0.352) 512px,
-    hsla(0, 0%, 100%, 0.45) 521px,
-    hsla(0, 0%, 100%, 0.55) 529px,
-    hsla(0, 0%, 100%, 0.648) 538px,
-    hsla(0, 0%, 100%, 0.741) 547px,
-    hsla(0, 0%, 100%, 0.825) 557px,
-    hsla(0, 0%, 100%, 0.896) 566px,
-    hsla(0, 0%, 100%, 0.951) 577px,
-    hsla(0, 0%, 100%, 0.987) 588px,
-    hsla(0, 0%, 100%, 1) 600px,
-    hsla(0, 0%, 100%, 1) 1200px
-  );
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 450px, rgba(255,255,255,0.5) 550px, rgba(255,255,255,1) 600px, rgba(255,255,255,1) 1200px);
   margin-left: -180px;
   animation: 2s ease-out 0s 1 swipeDown;
   background-position: 0 0;
