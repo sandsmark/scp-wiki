@@ -234,4 +234,68 @@ PM me if you'd like critique on an idea involving them, or need a line-by-line. 
 [[/div]]
 [[/collapsible]][[/size]]
 [[/tab]]
+[[tab Cleanup Duty]]
+
+
+[[module CSS]]
+.content-panel .content-type-title > p {
+  margin: 0;
+}
+.content-panel .content-type-title {
+
+}
+.content-panel .content-type-description {
+padding: 0 20px;
+text-align: justify;
+}
+.content-panel.content-row .content-type-description {
+padding: 5px 20px;
+}
+.content-panel.content-row .content-type-description-2 {
+padding: 0 20px;
+text-align: justify; 
+}
+[[/module]]
+
+[[div class="content-panel standalone content-row"]]
+
+[[div class="content-type-description-2"]]
+
+[[table style="width: 100%;"]]
+[[row style="font-weight: bold; color: #fff; background-color: #666;"]]
+[[cell style="padding: 0 2px; width: 50%;"]]
+Page
+[[/cell]]
+[[cell style="padding: 0 2px; width: 25%; text-align: center;"]]
+Date Created
+[[/cell]]
+[[cell style="padding: 0 2px; text-align: center;"]]
+Rating
+[[/cell]]
+[[/row]]
+[[/table]]
+
+[[/div]]
+
+[[div class="content-type-description"]]
+
+[[module ListPages order="rating" prependLine="[[include component:listpages-table]]" perPage="50" rating="<20" tags="scp -archived -decommissioned -contest" appendLine="[[/table]]" separate="false"]]
+[[row]]
+[[cell style="vertical-align: top;"]]
+%%title_linked%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%created_at%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%rating%%
+[[/cell]]
+[[/row]]
+[[/module]]
+
+[[/div]]
+[[/div]]
+
+
+[[/tab]]
 [[/tabview]]
