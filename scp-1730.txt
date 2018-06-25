@@ -1,8 +1,40 @@
 title:SCP-1730
+[[module css]]
+sup { 
+
+vertical-align: top; position: relative; top: -0.5em; 
+}
+@media (max-width: 1650px) {
+   .desktop-only{ display: none; visibility:hidden }
+}
+[[/module]]
+[[div class="desktop-only" style="height: auto; width: auto; overflow-y:auto; background:#ffffff ; position: fixed; RIGHT: 15%; TOP: 20%; display: inline-block; border-radius: 10px; border:solid 1px #444444; float:top; padding:10px; box-shadow: 1px 2px 3px 0px #23334c;"]]
+[[=]]
+[[size 120%]]**SCP-1730**[[/size]]
+[[size 75%]]**File Nav**[[/size]]
+-----
+[[/=]]
+➤ **Main Article**
+* [#Class Classification]
+* [#SCP Containment]
+* [#Description Description]
+
+➤ **Addenda**
+* [#Add1 Rec. Log]
+* [#Add2 Rec. Message]
+* [#Add3 Explo. Logs #1]
+* [#Add4 Rec. Data]
+* [#Add5 Data Logs]
+* [#Add6 Audio Trans.]
+* [#Add7 Memorandum]
+* [#Add8 Explo. Logs #2]
+* [#Add9 Ext. Logs]
+* [#Add10 Debriefing]
+[[/div]]
 [[>]]
 [[module Rate]]
 [[/>]]
-
+[[# Class]]
 [[=]]
 [[image 1730warning.png]]
 @@@@
@@ -15,6 +47,7 @@ title:SCP-1730
 
 -----
 
+[[# SCP]]
 **Special Containment Procedures:** A circular perimeter has been established 2km from SCP-1730, and a quarantine zone has been established 1km from SCP-1730. Personnel who are to enter SCP-1730 must first undergo Class VII Hazardous Contact preparation measures, including the application of a modified "Maxwell-Harden" hazardous material reinforced airtight suit. The application of these protective measures may only take place at the Provisional Site-23 quarantine main gate. 
 
 Individuals attempting to exit the quarantined area must first submit to thorough decontamination protocols as administered by the quarantine security staff. Individuals failing to meet the quarantine extraction parameters are to be held for further decontamination or, in the event decontamination becomes unfeasible, termination.
@@ -31,6 +64,7 @@ Individuals attempting to exit the quarantined area must first submit to thoroug
 
 **FILESERV NOTICE:** THE FOLLOWING IS THE SCP-1730 DATA FILE AS IT APPEARED BEFORE ITS RECLASSIFICATION AS NEUTRALIZED. SOME ERRORS MAY PERSIST.
 
+[[# Description]]
 **Description:** SCP-1730 is a large complex of structures 15km northwest of the US/Mexico border within Big Bend Ranch State Park that was discovered on June 5th, ████. Due to the isolated nature of the complex, and the low survival rate of individuals who come in contact with it, it is possible that SCP-1730 had been previously discovered but unreported. 
 
 SCP-1730 bears identifying markings and contains documents to support the claim that SCP-1730 was at one point Foundation Site-13, originally located near Nome, Alaska. This conflicts with current records, which show that Site-13 was a project that, while intended to be constructed in Nome, was scrapped for the larger and more advanced Site-19 and never completed. Flora located on-site have been traced back to those native to the Alaskan region. How SCP-1730 came to be at its current location is unknown.
@@ -47,6 +81,7 @@ It is believed that a contingent of human survivors exists somewhere deep in the
 
 Several logs of data have been collected by the remaining functional site terminals, the relevant data of which is contained in the addendums below. Worth noting is that inconsistencies exist between the logs and what has been determined through exploration, including site layout, staff makeup, and contained anomalies.
 
+[[# Add1]]
 **Addendum 1730.1:** Recovered Log
 
 [[collapsible show="+ Access fileserv:/S:/1730/files/cylog1.log" hide="- Close File"]]
@@ -72,6 +107,7 @@ Several logs of data have been collected by the remaining functional site termin
 > Oh well. 
 [[/collapsible]]
 
+[[# Add2]]
 **Addendum 1730.2:** Recovered Automated Message
 
 [[collapsible show="+ Access fileserv:/S:/1730/files/recmes.log" hide="- Close File"]]
@@ -103,6 +139,7 @@ Several logs of data have been collected by the remaining functional site termin
 > **Keter Class Containment Status:** Compromised ##red|●##
 [[/collapsible]]
 
+[[# Add3]]
 **Addendum 1730.3:** Exploration Log Transcripts
 
 [[collapsible show="+ Access fileserv:/S:/1730/exploration/log1.log" hide="- Close File"]]
@@ -807,6 +844,7 @@ Several logs of data have been collected by the remaining functional site termin
 [[/div]]
 [[/collapsible]] 
 
+[[# Add4]]
 **Addendum 1730.4:** Recovered Data from Power Station Terminal
 
 [[collapsible show="+ Access fileserv:/S:/1730/files/thresher.log" hide="- Close File"]]
@@ -838,6 +876,7 @@ Engineer 242
 [[/div]]
 [[/collapsible]]
 
+[[# Add5]]
 **Addendum 1730.5:** Collected Data Logs
 
 [[collapsible show="+ Access fileserv:/S:/1730/files/commlog1.log" hide="- Close File"]]
@@ -968,6 +1007,7 @@ Oh yeah, and if you decide you want to talk this out, I'll be down in the baseme
 [[/div]]
 [[/collapsible]]
 
+[[# Add6]]
 **Addendum 1730.6:** Received Audio Transmission
 
 The following audio transmission was picked up on monitoring equipment on the morning of February 1st, 2016. The transmission, both speech and an encrypted signal that followed, has been repeating on a continuous loop since it was first detected. The contents of the transmission are accessible below.
@@ -1006,10 +1046,12 @@ Please help us. Thank you.
 
 [[include component:image-block name=explo.jpg|caption=SCP-1730 research area access.]]
 
+[[# Add7]]
 **Addendum 1730.7:** Updated Exploration Memorandum 
 
 In light of recent information gathered by [[[http://www.scp-wiki.net/scp-2664|Foundation surveillance teams]]], it has been deemed pertinent to once again send exploration and recovery teams into Site-13. By order of Overwatch Command, SCP-1730's containment procedures have been updated. [[[http://www.scp-wiki.net/avatara|Mobile Task Force Tau-5 ("Samsara")]]] is currently under consideration for deployment. Details to follow.
 
+[[# Add8]]
 **Addendum 1730.8:** Exploration and Recovery Log Transcripts
 
 [[collapsible show="+ Access fileserv:/S:/1730/exploration/log1.log" hide="Close File"]]
@@ -1825,6 +1867,7 @@ Team Members: T-5 Munru, T-5 Onru, T-5 Nanku
 [[/div]]
 [[/collapsible]]
 
+[[# Add9]]
 **Addendum 1730.9:** Extraction Log Transcripts
 
 [[collapsible show="+ Access fileserv:/S:/1730/recovery/extlog1.log" hide="Close File"]]
@@ -2273,6 +2316,7 @@ Team Members: T-5 Munru, T-5 Onru, T-5 Nanku
 //Note: In the wake of the events detailed in this log, SCP-1730 has been reclassified as NEUTRALIZED. Further investigation is ongoing. Debriefing reports will become available as soon as they are declassified.//
 [[/collapsible]]
 
+[[# Add10]]
 **Addendum 1730.10:** Extraction Mission Debriefing Report
 
 [[collapsible show="+ Access fileserv:/S:/1730/recovery/extDEBRIEFINTERVIEW1.log" hide="Close File"]]
