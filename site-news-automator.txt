@@ -1,0 +1,196 @@
+title:Site News Automator
+Ahoy! Welcome to the Site News Automator! Below is a series of templates and tools designed to take some of the strain off setting up the monthly news.
+
++ Step 1: News Skeleton (doot doot)
+
+Copy this template and paste it in your sandbox. The dates will have to be changed monthly.
+
+[[code]]
+[[=]]
+**« [[[news-12-2017|December 2017]]] | __[[[news-1-2018|January 2018]]]__ | [[[news-02-2018|February 2018]]] »**
+[[/=]]
+
+Welcome to this installment of site news, where we look forward to another year of SCPs!
+
+This is a series showing off news from the site, articles from the past month[[footnote]] with a rating above 0 [[/footnote]], and fan-content for you to check out and discover! Be sure to leave a comment with your thoughts!
+
+++++ Featured Articles
+
+* The featured articles for January were
+
+++++ Editor's Choice Articles
+
+++++ Event Featured Articles
+
+The theme for the month of January was
+
++++ Week of January 1st:
+
+(comment)
+
+++++ SCPs
+
+
+
+++++ Tales
+
+
+
+++++ Misc
+
+
+
++++ Week of January 8th:
+
+(comment)
+
+++++ SCPs
+
+
+
+++++ Tales
+
+
+
+++++ Misc
+
+
+
++++ Week of January 15th:
+
+(comment)
+
+++++ SCPs
+
+
+++++ Tales
+
+
+
+++++ GOI Formats
+
+
+
+++++ Misc
+
+
+
++++ Week of January 22nd:
+
+(comment)
+
+++++ SCPs
+
+
+
+++++ Tales
+
+
+
+++++ GOI Formats
+
+
+
+++++ Misc
+
+
+
+-----
+
+++++ Fandom Stuff
+
+
+++++ Fanart
+
+
+[[=]]
+**« [[[news-12-2017|December 2017]]] | __[[[news-1-2018|January 2018]]]__ | [[[news-02-2018|February 2018]]] »**
+[[/=]]
+[[/code]]
+@@ @@
+@@ @@
+[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[/div]]
+[[div style="border-bottom:1px solid #777;"]]
+[[/div]]
+[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[/div]]
+[[div style="border-bottom:1px solid #777;"]]
+[[/div]]
+@@ @@
++ Step 2:
+
+These modules will display all the articles in a given month in raw text beside the author. Simply edit the dates in these modules to show the proper month's output prior to copying them to your sandbox.
+
+The first section is not meant for copying. It is merely a reference point for post dates so the lists can be broken up by week.
+
+You'll notice that SCPs do not include titles in the module's output. They will need to be ran through the Title Fetcher, below, before being ported into your sandbox.
+
+[[collapsible show="All articles, dated." hide="Close"]]
+[[module ListPages separate="no" created_at="2018.01" perPage="150" order="created_at desc desc"]]
+
+||@@* [[[@@%%name%%@@|@@ %%title%%@@]]]@@ ("%%actual-title%%") -   Written by @@[[*user @@%%created_by%%@@]]@@.||%%created_at%%||
+[[/module]]
+[[/collapsible]]
+
+-----
+
+[[collapsible show="SCPs" hide="Close"]]
+[[module ListPages separate="no" tags="+scp" created_at="2018.01" perPage="150" order="created_at desc desc"]]
+
+||@@* [[[@@%%name%%@@|@@ %%title%%@@]]]@@ ("%%actual-title%%") -   Written by @@[[*user @@%%created_by%%@@]]@@.||
+[[/module]]
+[[/collapsible]]
+
+------
+
+[[collapsible show="Tales" hide="Close"]]
+[[module ListPages separate="no" tags="+tale" created_at="2018.01" perPage="500" order="created_at desc desc"]]
+
+||@@* [[[@@%%name%%@@|@@ %%title%%@@]]]@@ - Written by @@[[*user @@%%created_by%%@@]]@@.||
+[[/module]]
+[[/collapsible]]
+
+------
+
+[[collapsible show="GOI" hide="Close"]]
+[[module ListPages separate="no" tags="+goi-format" created_at="2018.01" perPage="150" order="created_at desc desc"]]
+
+||@@* [[[@@%%name%%@@|@@ %%title%%@@]]]@@ - Written by @@[[*user @@%%created_by%%@@]]@@.||
+[[/module]]
+[[/collapsible]]
+
+------
+
+[[collapsible show="Hub" hide="Close"]]
+[[module ListPages separate="no" tags="+hub" created_at="2018.01" perPage="150" order="created_at desc desc"]]
+
+||@@* [[[@@%%name%%@@|@@ %%title%%@@]]]@@ - Written by @@[[*user @@%%created_by%%@@]]@@.||
+[[/module]]
+[[/collapsible]]
+
+------
+
+[[collapsible show="Authors" hide="Close"]]
+[[module ListPages separate="no" tags="+author" created_at="2018.01" perPage="150" order="created_at desc desc"]]
+
+||@@* [[[@@%%name%%@@|@@ %%title%%@@]]]@@ It's @@[[*user @@%%created_by%%@@]]@@'s Author Page!||
+[[/module]]
+[[/collapsible]]
+
+-----
+
+[[collapsible show="Other" hide="Close"]]
+[[module ListPages separate="no" tags="-" created_at="2018.01" perPage="150" order="created_at desc desc"]]
+
+||@@* [[[@@%%name%%@@|@@ %%title%%@@]]]@@ - Written by @@[[*user @@%%created_by%%@@]]@@.||
+[[/module]]
+[[/collapsible]]
+
++ SCP Title-Fetching tool:
+
+[[include fragment:site-news-title-fetcher]]
+
++ Step 4:
+
+The rest is on you! Blurbs, Featured Articles, and Fandom stuff will need to be entered manually.
