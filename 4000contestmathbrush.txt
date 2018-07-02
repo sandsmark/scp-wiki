@@ -1,0 +1,372 @@
+title:4000contestmathbrush
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[html]]
+<style type="text/css">
+    body {
+    	font-family:  verdana, arial, helvetica, sans-serif;
+    	font-size: 12.8px; /* 16px * 0.8 */
+    	color: #333;
+    	line-height: 141%;
+    }
+    #classified-info, #meme-agent {
+    	display: none;
+    }
+
+    blockquote {
+    	border: 1px dashed #999;
+    	padding: 0 12.8px;
+    	background-color: #f4f4f4;
+    }
+    a {
+    	color: blue;
+    	cursor: pointer;
+    	text-decoration: none;
+        font-size: 12.8 px;
+    }
+    .collapsed {
+    	display: none;
+    }
+    h3 {
+    	font-size: 150%;
+    	font-weight: bold;
+    	margin-bottom: 0;
+    }
+    h4 {
+    	font-size: 130%;
+    	font-weight: bold;
+    	margin-bottom: 0;
+    }
+    .image-container.floatright {
+        padding-right: 0;
+        float: right;
+    }
+    tt{
+        font-family: 'Andale Mono', 'Courier New', Courier, monospace; 
+        font-size: 98%;
+    }
+    .collapsed {
+    	display: none;
+    }
+</style>
+<h3 style="text-align:center">Persons of the Dialogue</h3>
+<hr>
+[[/html]]
+
+* The Narrator
+* The Reader
+[[module ListUsers users="."]] 
+    
+The Role of the Reader is to be assumed by the Scholar %%title%%.
+[[/module]]
+
+The scene is laid in the Containment Protocol Archives; and the whole dialogue is narrated by the Narrator to the Reader.
+
+[[html]]
+<style type="text/css">
+    body {
+    	font-family: verdana, arial, helvetica, sans-serif;
+    	font-size: 12.8px; /* 16px * 0.8 */
+    	color: #333;
+    	line-height: 141%;
+    }
+    #classified-info, #meme-agent {
+    	display: none;
+    }
+
+    blockquote {
+    	border: 1px dashed #999;
+    	padding: 0 12.8px;
+    	background-color: #f4f4f4;
+    }
+    a {
+    	color: blue;
+    	cursor: pointer;
+    	text-decoration: none;
+        font-size: 12.8 px;
+    }
+    .collapsed {
+    	display: none;
+    }
+    h3 {
+    	font-size: 150%;
+    	font-weight: bold;
+    	margin-bottom: 0;
+    }
+    h4 {
+    	font-size: 130%;
+    	font-weight: bold;
+    	margin-bottom: 0;
+    }
+    .image-container.floatright {
+        padding-right: 0;
+        float: right;
+    }
+    tt{
+        font-family: 'Andale Mono', 'Courier New', Courier, monospace; 
+        font-size: 98%;
+    }
+    .collapsed {
+    	display: none;
+    }
+</style>
+<script type="text/javascript">
+
+var collapsibleLink = function(className) {
+    var collapsed = document.querySelectorAll("." + className + ".collapsed");
+    var expanded = document.querySelectorAll("." + className + ":not(.collapsed)");
+    var i;
+    for(i = 0; i < collapsed.length; i++) {
+        collapsed[i].classList.remove("collapsed");
+    }
+    for(i = 0; i < expanded.length; i++) {
+        expanded[i].classList.add("collapsed");
+    }
+}
+
+var hideBlock = function(blockName) {
+    var expanded = document.querySelectorAll("." + blockName + ":not(.collapsed)");
+    var i;
+    for(i = 0; i < expanded.length; i++) {
+        expanded[i].classList.add("collapsed");
+    }
+}
+
+var showBlock = function(blockName) {
+    var collapsed = document.querySelectorAll("." + blockName + ".collapsed");
+    var i;
+    for(i = 0; i < collapsed.length; i++) {
+        collapsed[i].classList.remove("collapsed");
+    }
+}
+</script>
+
+<h3 style="text-align:center">Book I: Item Number</h3>
+<hr>
+
+<div class="block1">
+<p><a onclick="collapsibleLink('block1');">Reader: What is the designated number of the item in question?</a></p>
+</div>
+
+<div class="block1 collapsed">
+
+<p><a onclick="collapsibleLink('block1');">Reader: What is the designated number of the item in question?</a></p>
+<p>Narrator: The designated number of the item in question is 4000.
+</p>
+
+<h3 style="text-align:center">Book II: Safety Class</h3>
+<hr>
+<div class="block2">
+<p><a onclick="collapsibleLink('block2');">Reader: What is the safety class of the item in question?
+</a></p>
+</div>
+
+<div class="block2 collapsed">
+<p><a onclick="collapsibleLink('block2');">Reader: What is the safety class of the item in question?</a></p>
+<p>Narrator: The safety class of the item in question is Euclid.<p>
+
+<h3 style="text-align:center">Book III: Special Containment Procedures</h3>
+<hr>
+<div class="block3">
+<p><a onclick="collapsibleLink('block3');">Reader: What are the special containment procedures of the item in question?
+</a></p>
+</div>
+
+<div class="block3 collapsed">
+<p><a onclick="collapsibleLink('block3');">Reader: What are the special containment procedures of the item in question?</a></p>
+<p>Narrator: As SCP-4000 is accessed by philosophical contemplation, knowledge of SCP-4000 is to be restricted to Level 4 Researcher and above, as well as members of MTF 31-Pi "Platonic Solids". All public media describing SCP-4000 are to be destroyed immediately, and Class-D amnestics are to be administered to any civilians found to possess knowledge of SCP-4000.
+<p>
+<p>Due to its anomalous effect, all documentation concerning SCP-4000 is to be contained in the form of a Socratic dialogue. To ensure stability, the containment procedures for SCP-4000 are to be recited in group dialogue, accompanied by contemplation of SCP-4000-1.
+<p>
+<div class="blockB">
+<p><a onclick="collapsibleLink('blockB');">Reader: And how shall the item in question be studied?
+</a></p>
+</div>
+<div class="blockB collapsed">
+<p><a onclick="collapsibleLink('blockB');">Reader: And how shall the item in question be studied?</a></p>
+<p>Narrator: Philosophical expeditions into SCP-4000 are conducted weekly by MTF 31-Pi "Platonic Solids" in the secondary library of Site 28. 
+<p>
+<p>All researchers interested in visiting SCP-4000 must score 80% or higher on the Level 4 CPB (Classical Philosophical Battery) and pass screening for memetic hazards. First-time eidonauts are asked to provide coffee and biscuits.
+<p>
+<p>New instances of SCP-4000-A are to be transcribed by at least three (3) members of MTF 31-Pi and the transcripts compared and edited until all three are in agreement.
+
+<h3 style="text-align:center">Book IV: Description</h3>
+<hr>
+<div class="block4">
+<p><a onclick="collapsibleLink('block4');">Reader: What is the description of the item in question?
+</a></p>
+</div>
+
+<div class="block4 collapsed">
+<p><a onclick="collapsibleLink('block4');">Reader: What is the description of the item in question?</a></p>
+<p>Narrator: SCP-4000 is a Platonic ideal. In particular, it is the abstractification of the exact concept  █████████ ███████████ █████ (known as SCP-4000-1). Unlike most ideal concepts, SCP-4000 can be physically interacted with through philosophical thought. Group contemplation of SCP-4000-1, facilitated by Socratic Dialogue, allows travel to SCP-4000.
+<p>
+<p>Mental travel to SCP-4000 is possible through contemplation of the ideal qualities inherent to SCP-4000, and is facilitated by group discussion and debate.
+<p>
+<div class="blockA">
+<p><a onclick="collapsibleLink('blockA');">Reader: But what is seen during such travel?
+</a></p>
+</div>
+
+<div class="blockA collapsed">
+<p><a onclick="collapsibleLink('blockA');">Reader: But what is seen during such travel?</a></p>
+<p>Narrator: As far as it has been explored, SCP-4000 consists of idealizations of the concept of 'room'. Each room is of variable volume and construction, with materials used including stone, lead, and bronze. It is believed that this is used to distinguish rooms, as 'room' has only one Platonic ideal, while 'large bronze room' and 'small lead room' have distinct Platonic ideals.
+<p>
+<p>Each room explored to date displays a single instance of SCP-XXXX-A. Each instance of SCP-4000-A is an ideal dialogue between individuals. Every observer experiences this dialogue in their pref	erred language. 
+
+<div class="blockC">
+<p><a onclick="collapsibleLink('blockC');">Reader: Now speak, and tell me, what is the purpose of the item in question?</a></p>
+</div>
+
+<div class="blockC collapsed">
+<p><a onclick="collapsibleLink('blockC');">Reader: Now speak, and tell me, what is the purpose of the item in question?</a></p>
+
+<p>Narrator: Transcripts of SCP-4000-A instances suggest that the facility was once in the material realm (near Athens, Greece) and served a purpose similar to that of the modern-day Foundation. The exact method by which it was translated to the ideal realm is unknown, although several of the transcribed SCP-4000-A instances make allusions to the process (see Example 4 below).
+<p>
+<p>None of the anomalies described in instances SCP-4000-A have been discovered during expeditions, despite dialogue implying their presence. Reclassification of SCP-4000 to Safe is in process, awaiting the complete mapping of the interior.
+<h3 style="text-align:center">Book V: Discovery</h3>
+<hr>
+<div class="block5">
+<p><a onclick="collapsibleLink('block5');">Reader: How was the item in question discovered?
+</a></p>
+</div>
+
+<div class="block5 collapsed">	
+<p><a onclick="collapsibleLink('block5');">Reader: How was the item in question discovered?
+</a></p>
+
+<p>Narrator: The item in question was discovered on ██/██/19██ during a spirited debate between ██████ █████ █████████ and ████████ ███████ concerning the philosophical underpinnings of their seminal work █████████ ███████████. During the debate, the two philosophers apparently conceived of SCP-4000-1 organically and discussed its existence, at which point they entered SCP-4000.
+
+The two discussed their findings in a college-wide seminar a week later. A Foundation operative planted in the mathematics department of  ███████ College was able to document this seminar. Class-A amnestics were administered to all civilians involved.
+
+<h3 style="text-align:center">Book VI: Examples of SCP-4000-A</h3>
+<hr>
+<div class="block6">
+<p><a onclick="collapsibleLink('block6');">Reader: Can you provide me with examples of SCP-4000-A?
+</a></p>
+</div>
+
+<div class="block6 collapsed">
+<p><a onclick="collapsibleLink('block6');">Reader: Can you provide me with examples of SCP-4000-A?
+</a></p>
+<h4>Example 1:</h4>
+<hr>
+<blockquote><p> Q. What is the designation?
+<p> 
+<p> A. The designation is Pi Alpha Nu.
+<p> 
+<p> Q. And what threat does it represent?
+<p> 
+<p> A. The threat of Iron.
+<p> 
+<p> Q. And what is the method of constraint?
+<p> 
+<p> A. Pi Alpha Nu shall be sealed in lead. No less than two freedmen shall attend Pi Alpha Nu at all times. A scholar of level Gamma or higher must be consulted before any experimentation with Pi Alpha Nu.
+<p> 
+<p> Under no circumstances will Scholar Pandora be allowed access to Pi Alpha Nu again.
+<p> 
+<p> Q. And what is the description of Pi Alpha Nu?
+<p> 
+<p> A. Pi Alpha Nu is a ceramic jar that was once painted with depictions of several Silver-threat aberrations, corresponding directly to known aberrations ___, ___, ___ as well as three unknown entities assumed to be aberrations.
+<p>
+<p>Scholar Epimetheus discovered Pi Alpha Nu on _____, ____. Experimentation revealed that Pi Alpha Nu is capable of storing living entities in a state of stasis. The painted depictions on the jar change to represent the contents.
+<p> 
+<p> Under routine testing by Scholar Pandora, the constraint of Pi Alpha Nu was broken and several Silver-threat aberrations were released. At this day, only one (the entity ___) has been reconstrained in Pi Alpha Nu.</blockquote>
+
+<h4>Example 2:</h4>
+<hr>
+<blockquote><p> Q. What is the designation?
+<p> 
+<p> A. The designation is Pi Upsilon Theta.
+<p> 
+<p> Q. And what threat does it represent?
+<p> 
+<p> A. The threat of Silver.
+<p> 
+<p> Q. And what is the method of constraint?
+<p> 
+<p> A. All scholars not in the Second Academy that display knowledge of Pi Upsilon Theta are to be drowned at sea. Any scrolls describing Pi Upsilon Theta are to be burnt and the ashes dispersed. All pottery depicting Pi Upsilon Theta is to be destroyed and ground to a size not exceeding that of a mustard seed.
+<p> 
+<p> Q. And what is the description of Pi Upsilon Theta?
+<p> 
+<p> A. Pi Upsilon Theta is the knowledge of numbers not in perfect fraction. This knowledge was first discovered by Scholar Pythagoras when calculating the length of an isoceles right triangle's hypotenuse. Knowledge of Pi Upsilon Theta is an Emanatory Ideal, capable of oral and written transmission.
+<p> 
+<p> Pi Upsilon Theta causes severe distress during initial exposure.</blockquote>
+
+<h4>Example 3:</h4>
+<hr>
+<blockquote><p> Q. What is the designation?
+<p> 
+<p> A. The designation is Omega Omega Omega.
+<p> 
+<p> Q. And what threat does it represent?
+<p> 
+<p> A. The threat of Gold.
+<p> 
+<p> Q. And what is the method of constraint?
+<p> 
+<p> A. Omega Omega Omega is to be cast into the pit known as Tartarus-Beta, to a depth of no less than twenty stadions.
+<p> 
+<p> All seismic motions shall be reported to Scholar Zeus, who will hurl no less than three thunderbolts of type Omega down Tartarus-Beta. If seismic motions continue, Scholar Zeus is instructed to engage Omega Omega Omega directly.
+<p> Q. And what is the description of Omega Omega Omega?
+<p> 
+<p> A. Omega Omega Omega is human in body but wears a hundred serpent's heads on his shoulders. The being emits both flame and thunder from every head. The being is highly virile and has produced numerous Abominations, including Kappa Epsilon Rho, Upsilon Delta Rho, and Omicron Rho Theta. 
+<p> 
+<p> Escape of Omega Omega Omega could result in a new Earth and new Kosmos. Constraint of Omega Omega Omega is our greatest ideal.</blockquote>
+
+<h4>Example 4:</h4>
+<hr>
+<blockquote><p> Q. What is the designation?
+<p> 
+<p> A. The designation is Pi Lambda Alpha.
+<p> 
+<p> Q. And what threat does it represent?
+<p> 
+<p> A. No threat. Its substance is that of Heroes.
+<p> 
+<p> Q. And what is the method of constraint?
+<p> 
+<p> A. Pi Lambda Alpha shall be held at ready at all times by no fewer than three scholars of the highest circle.
+<p> 
+<p> If all constraints shall fail, and an alteration of the Earth and Kosmos is imminent, a scholar of the highest circle possessing knowledge of Pi Lambda Alpha shall enact it.
+<p> 
+<p> Q. And what is the description of Pi Lambda Alpha?
+<p> 
+<p> A. Pi Lambda Alpha is the breaking of the chains. Pi Lambda Alpha is the burning of puppets and the dousing of fire. Pi Lambda Alpha is walking out of the cave and into the light. 
+<p> 
+<p> Pi Lambda Alpha is not to be used until all other resources are exhausted.</blockquote>
+
+<h4>Example 5:</h4>
+<hr>
+This room was distinct from the others, including an idealization of 'small straw bed'.
+<blockquote>Q. Whose is this abode?
+<p> 
+<p>A. This is the abode of Scholar Herakles.
+<p> 
+<p>Q. And where is Scholar Herakles?
+<p>
+<p>A. After the death of Scholar Megara, Scholar Herakles has been assigned to the duty of Gold level beings as punishment for his recklessness until further notice.</blockquote>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+[[/html]]
