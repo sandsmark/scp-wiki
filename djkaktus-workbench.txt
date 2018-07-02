@@ -3,6 +3,12 @@ title:djkaktus' Workbench
 @import url(http://kaktuskontainer.wikidot.com/component:theme/code/1);
 [[/module]]
 
+[[collapsible]]
+[[module ListPages order="rating desc" separate="no" tags="scp, 4000" perPage="250" prependLine="||~ SCP ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||~ Length ||"]] 
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% || %%size%% ||
+[[/module]]
+[[/collapsible]]
+
 + SCPs
 
 [[module ListPages created_by="djkaktus" order="rating desc" separate="no" tags="scp, joke" perPage="250" prependLine="||~ SCP ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||~ Length ||"]] 
