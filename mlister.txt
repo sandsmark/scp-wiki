@@ -240,7 +240,84 @@ What do you mean Scantron already did this joke?
 
 [[collapsible show="                              " hide="HIDDENHIDDENHIDDENHIDDENHIDDEN"]]
 
-TESTING
+[[tabview]]
+[[tab Untagged]]
+Empty is good.
+[[module ListPages category="." separate="no" tags="-" perPage="100" order="name"]]
+|| %%title_linked%% || **%%Rating%%** || [[user %%created_by%%]] || %%created_at%% ||
+[[/module]]
+[[/tab]]
+
+[[tab No Class tag]]
+Empty is good.
+[[module ListPages category="." separate="no" tags="+scp -safe -euclid -keter -neutralized -explained -joke -esoteric-class -thaumiel" perPage="100" order="name"]]
+|| %%title_linked%% || [[user %%created_by%%]] || %%created_at%% ||
+[[/module]]
+[[/tab]]
+
+[[tab "SCP" & Class only]]
+Empty is good.
+[[module ListPages separate="no" parent="-" tags="+scp -antimemetic -acoustic -adaptive -addictive -airborne -alive -amorphous -animal -appliance -aquatic -arachnid -arboreal -arthropod -artistic -artifact -auditory -automaton -autonomous -avian -bacteria -biohazard -biological -bovine -building -cadaver -canine -carnivorous -cetacean -chemical -city -clay -clockwork -clothing -cognitohazard -compulsion -computer -concept -contagion -container -corrosive -crystalline -cube -document -ectoentropic -electrical -electromagnetic -electronic -empathic -engraved -entropic -equine -extradimensional -extraterrestrial -feline -fire -food -fungus -furniture -future -game -gaseous -genetic -glass -gravity -gustatory -hallucination -historical -hive-mind -hostile -humanoid -indestructible -infohazard -inscription -insect -instrument -intangible -invertebrate -jewelry -key -knowledge -language -leporine -light -liquid -location -loop -magnetic -map -mathematical -mechanical -media -medical -memetic -memory-affecting -meta -metallic -metamorphic -meteorological -microscopic -mind-affecting -miniature -mister -mobile -murine -musical -narrative -neurological -nocturnal -observational -ocular -olfactory -omnivorous -ophidian -organic -ovine -paradox -parasitic -performance -physics -piscine -plant -planet -polyhedral -portal -predatory -predictive -probability -radioactive -ranine -reanimation -recording -religious -reproductive -reptilian -ritual -sapient -satellite -sculpture -self-repairing -self-replicating -sensory -sentient -shadow -simian -skeletal -sleep -spacetime -species -sphere -statue -stone -structure -sun -swarm -tactile -telekinetic -telepathic -teleportation -temporal -thermal -thermodynamic -tool -toxic -toy -transfiguration -transmission -uncontained -ursine -vehicle -vermian -vibration -virus -visual -vulpine -weapon -wooden -xk -joke -archived -decommissioned" perPage="100" order="name"]]
+|| %%title_linked%% || [[user %%created_by%%]] || %%created_at%% ||
+[[/module]]
+[[/tab]]
+
+[[tab Class w/o "scp"]]
+Empty is good.
+[[module ListPages category="*" parent="-" separate="no" tags="safe euclid keter neutralized explained decommissioned joke -scp -essay" perPage="100" order="name"]]
+|| %%title_linked%% || [[user %%created_by%%]] || %%created_at%% ||
+[[/module]]
+[[/tab]]
+
+[[tab Multiple Classes]]
+
++ Safe and Euclid
+
+[[module ListPages category="." parent="-" separate="no" tags="+safe +euclid -keter -archived -joke" perPage="100" order="name"]]
+|| %%title_linked%% || [[user %%created_by%%]] || %%created_at%% ||
+[[/module]]
+
++ Euclid and Keter
+
+[[module ListPages category="." parent="-" separate="no" tags="-safe +euclid +keter -archived -joke" perPage="100" order="name"]]
+|| %%title_linked%% || [[user %%created_by%%]] || %%created_at%% ||
+[[/module]]
+
++ Safe & Keter
+
+[[module ListPages category="." parent="-" separate="no" tags="+safe -euclid +keter -archived -joke" perPage="100" order="name"]]
+|| %%title_linked%% || [[user %%created_by%%]] || %%created_at%% ||
+[[/module]]
+
++ Safe Euclid and Keter
+
+[[module ListPages category="." parent="-" separate="no" tags="+safe +euclid +keter -archived -joke" perPage="100" order="name"]]
+|| %%title_linked%% || [[user %%created_by%%]] || %%created_at%% ||
+[[/module]]
+[[/tab]]
+
+[[tab Supplements w/o parents]]
+Empty is good.
+[[module ListPages category="." separate="no" parent="-" tags="supplement interview experiment incident exploration -tale" perPage="100" order="name"]]
+|| %%title_linked%% || [[user %%created_by%%]] || %%created_at%% ||
+[[/module]]
+[[/tab]]
+
+[[tab Deleted wrong]]
+Empty is good.
+[[module ListPages category="deleted" separate="no" perPage="100" order="name"]]
+|| %%title_linked%% || [[user %%created_by%%]] || %%created_at%% ||
+[[/module]]
+[[/tab]]
+
+[[tab In Deletion]]
+Empty is good.
+[[module ListPages category="." separate="no" tags="in-deletion" perPage="100" order="name"]]
+|| %%title_linked%% || **%%Rating%%** || [[user %%created_by%%]] || %%created_at%% ||
+[[/module]]
+[[/tab]]
+
+[[/tabview]]
 
 [[/collapsible]]
 
