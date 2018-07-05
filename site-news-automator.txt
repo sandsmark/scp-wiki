@@ -7,7 +7,7 @@ Copy this template and paste it in your sandbox. The dates will have to be chang
 
 [[code]]
 [[=]]
-**« [[[news-05-2018|May 2018]]] | __[[[news-06-2018|June 2018]]]__ | [[[news-07-2018|July 2018]]] »**
+**« [[[news-01-2018|January 2018]]] | __[[[news-02-2018|February 2018]]]__ | [[[news-03-2018|March 2018]]] »**
 [[/=]]
 
 Welcome to this installment of site news, where we look forward to another year of SCPs!
@@ -24,7 +24,7 @@ This is a series showing off news from the site, articles from the past month[[f
 
 The theme for the month of February was
 
-+++ Week of June 1st:
++++ Week of February 1st:
 
 (comment)
 
@@ -40,7 +40,7 @@ The theme for the month of February was
 
 
 
-+++ Week of June 8th:
++++ Week of February 8th:
 
 (comment)
 
@@ -56,7 +56,7 @@ The theme for the month of February was
 
 
 
-+++ Week of June 15th:
++++ Week of February 15th:
 
 (comment)
 
@@ -75,7 +75,7 @@ The theme for the month of February was
 
 
 
-+++ Week of June 22nd:
++++ Week of February 22nd:
 
 (comment)
 
@@ -102,23 +102,10 @@ The theme for the month of February was
 
 ++++ Fanart
 
-+++ Week of June 29th:
 
-(comment)
-
-++++ SCPs
-
-
-
-++++ Tales
-
-
-
-++++ Misc
 [[=]]
-**« [[[news-05-2018|May 2018]]] | __[[[news-06-2018|June 2018]]]__ | [[[news-07-2018|July 2018]]] »**
+**« [[[news-01-2018|January 2018]]] | __[[[news-02-2018|February 2018]]]__ | [[[news-03-2018|March 2018]]] »**
 [[/=]]
-
 [[/code]]
 @@ @@
 @@ @@
@@ -140,7 +127,7 @@ The first section is not meant for copying. It is merely a reference point for p
 You'll notice that SCPs do not include titles in the module's output. They will need to be ran through the Title Fetcher, below, before being ported into your sandbox.
 
 [[collapsible show="All articles, dated." hide="Close"]]
-[[module ListPages separate="no" created_at="2018.06" perPage="150" order="created_at desc desc"]]
+[[module ListPages separate="no" created_at="2018.02" perPage="150" order="created_at desc desc"]]
 
 ||@@* [[[@@%%name%%@@|@@ %%title%%@@]]]@@ ("%%actual-title%%") -   Written by @@[[*user @@%%created_by%%@@]]@@.||%%created_at%%||
 [[/module]]
@@ -149,7 +136,7 @@ You'll notice that SCPs do not include titles in the module's output. They will 
 -----
 
 [[collapsible show="SCPs" hide="Close"]]
-[[module ListPages separate="no" tags="+scp" created_at="2018.06" perPage="150" order="created_at desc desc"]]
+[[module ListPages separate="no" tags="+scp" created_at="2018.02" perPage="150" order="created_at desc desc"]]
 
 ||@@* [[[@@%%name%%@@|@@ %%title%%@@]]]@@ ("%%actual-title%%") -  "//blurb//" Written by @@[[*user @@%%created_by%%@@]]@@.||
 [[/module]]
@@ -158,7 +145,7 @@ You'll notice that SCPs do not include titles in the module's output. They will 
 ------
 
 [[collapsible show="Tales" hide="Close"]]
-[[module ListPages separate="no" tags="+tale" created_at="2018.06" perPage="500" order="created_at desc desc"]]
+[[module ListPages separate="no" tags="+tale" created_at="2018.02" perPage="500" order="created_at desc desc"]]
 
 ||@@* [[[@@%%name%%@@|@@ %%title%%@@]]]@@ - "//blurb//" Written by @@[[*user @@%%created_by%%@@]]@@.||
 [[/module]]
@@ -167,7 +154,7 @@ You'll notice that SCPs do not include titles in the module's output. They will 
 ------
 
 [[collapsible show="GOI" hide="Close"]]
-[[module ListPages separate="no" tags="+goi-format" created_at="2018.06" perPage="150" order="created_at desc desc"]]
+[[module ListPages separate="no" tags="+goi-format" created_at="2018.02" perPage="150" order="created_at desc desc"]]
 
 ||@@* [[[@@%%name%%@@|@@ %%title%%@@]]]@@ - //[GOIname]// "//blurb//" Written by @@[[*user @@%%created_by%%@@]]@@.||
 [[/module]]
@@ -176,7 +163,7 @@ You'll notice that SCPs do not include titles in the module's output. They will 
 ------
 
 [[collapsible show="Hub" hide="Close"]]
-[[module ListPages separate="no" tags="+hub" created_at="2018.06" perPage="150" order="created_at desc desc"]]
+[[module ListPages separate="no" tags="+hub" created_at="2018.02" perPage="150" order="created_at desc desc"]]
 
 ||@@* [[[@@%%name%%@@|@@ %%title%%@@]]]@@ - "//blurb//" Written by @@[[*user @@%%created_by%%@@]]@@.||
 [[/module]]
@@ -185,7 +172,7 @@ You'll notice that SCPs do not include titles in the module's output. They will 
 ------
 
 [[collapsible show="Authors" hide="Close"]]
-[[module ListPages separate="no" tags="+author" created_at="2018.06" perPage="150" order="created_at desc desc"]]
+[[module ListPages separate="no" tags="+author" created_at="2018.02" perPage="150" order="created_at desc desc"]]
 
 ||@@* [[[@@%%name%%@@|@@ %%title%%@@]]]@@ It's @@[[*user @@%%created_by%%@@]]@@'s Author Page!||
 [[/module]]
@@ -194,7 +181,7 @@ You'll notice that SCPs do not include titles in the module's output. They will 
 -----
 
 [[collapsible show="Supplement" hide="Close"]]
-[[module ListPages separate="no" tags="supplement" created_at="2018.06" perPage="150" order="created_at desc desc"]]
+[[module ListPages separate="no" tags="supplement" created_at="2018.02" perPage="150" order="created_at desc desc"]]
 
 ||@@* [[[@@%%name%%@@|@@ %%title%%@@]]]@@ - Written by @@[[*user @@%%created_by%%@@]]@@.||
 [[/module]]
@@ -203,7 +190,7 @@ You'll notice that SCPs do not include titles in the module's output. They will 
 -----
 
 [[collapsible show="Other" hide="Close"]]
-[[module ListPages separate="no" tags="-" created_at="2018.06" perPage="150" order="created_at desc desc"]]
+[[module ListPages separate="no" tags="-" created_at="2018.02" perPage="150" order="created_at desc desc"]]
 
 ||@@* [[[@@%%name%%@@|@@ %%title%%@@]]]@@ - Written by @@[[*user @@%%created_by%%@@]]@@.||
 [[/module]]
