@@ -139,6 +139,10 @@ The first section is not meant for copying. It is merely a reference point for p
 
 You'll notice that SCPs do not include titles in the module's output. They will need to be ran through the Title Fetcher, below, before being ported into your sandbox.
 
+**Contests**
+
+For months which include contests, one must remember to exclude the appropriate contest's tag in the first set of modules, and to change the "Contest" modules to include the excluded tag. This is to easily isolate contest entries so they do not need to be sorted out manually.
+
 [[collapsible show="All articles, dated." hide="Close"]]
 [[module ListPages separate="no" created_at="2018.06" perPage="150" order="created_at desc desc"]]
 
@@ -222,7 +226,7 @@ You'll notice that SCPs do not include titles in the module's output. They will 
 
 
 [[collapsible show="Contest" hide="Close"]]
-[[module ListPages separate="no" tags="doomsday2018 -scp" perPage="150" order="created_at desc desc"]]
+[[module ListPages separate="no" tags="doomsday2018" perPage="150" order="created_at desc desc"]]
 
 ||@@* [[[@@%%name%%@@|@@ %%title%%@@]]]@@ - Written by @@[[*user @@%%created_by%%@@]]@@.||
 [[/module]]
