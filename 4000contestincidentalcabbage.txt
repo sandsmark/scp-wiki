@@ -1,0 +1,23 @@
+title:SCP-4000: History is Written by the Victors
+[[module css]]
+div.vcomms{
+    background-color: #b0f0a5;
+    padding-left: 2px;
+    font-family: monospace
+}
+
+div.swarning{
+    border: 1px solid gray;
+    margin: 1em 0 1em 0;
+    padding: 0 1em 0 1em;
+    color: black;
+    background-color: #e0e0e0;
+}
+[[/module]]
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[module ListPages category="fragment" parent="." limit="1" order="created_at" offset="@URL|0"]]
+%%content%%
+[[/module]]
