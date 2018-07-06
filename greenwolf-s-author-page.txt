@@ -265,17 +265,11 @@ In the event that I disappear, custody of my drafts and articles falls to [[user
 || %%title_linked%% ||
 [[/module]]
 
-++ Third Law Articles (Most Recent 3) [Mockup for Hub]
+++ Third Law Articles [Translation Listing Mockup]
 
-[[div style="border: solid 5px #999999; padding: 0px; margin-bottom: 10px; margin-left: 15%; margin-right: 15%;"]]
-[[=]]
-+ Latest Entries
-[[/=]]
-[[module ListPages tags="third-law -hub" separate="no" order="created_at desc" limit="3"]] 
-[[span style="margin-left: 20%"]]**%%index%%. %%title_linked%%** by //%%created_by%%//[[/span]]
+[[module ListPages tags="third-law" separate="no" order="title" perPage="100" prependLine="||~ Original Article||~ RU Article||"]] 
+||%%title_linked%% || [http://scpfoundation.ru/%%name%% %%title%%] in **Russian** ||
 [[/module]]
-
-[[/div]]
 
 ++ GOI Format Articles w/out Format Tags
 
