@@ -1,6 +1,18 @@
 title:djkaktus' Workbench
 [[module CSS]]
 @import url(http://kaktuskontainer.wikidot.com/component:theme/code/1);
+#header h1 a::before {
+    content: "djkaktus";
+    color: #cc5800;
+    text-shadow: 3px 3px 5px #000000;
+}
+ 
+#header h2 span::before {
+    content: 'Workbench';
+    color: #000000;
+    text-shadow: 1px 1px 1px #000000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);}
+}
 [[/module]]
 
 [[collapsible]]
