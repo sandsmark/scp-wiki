@@ -8,6 +8,18 @@ vertical-align: top; position: relative; top: -0.5em;
 @media (max-width: 1600px) {
    .desktop-only{ display: none; visibility:hidden }
 }
+#header h1 a::before {
+    content: "djkaktus";
+    color: #cc5800;
+    text-shadow: 3px 3px 5px #000000;
+}
+ 
+#header h2 span::before {
+    content: 'The Based God';
+    color: #000000;
+    text-shadow: 1px 1px 1px #000000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);}
+}
 [[/module]]
 
 [[image header.png]]
