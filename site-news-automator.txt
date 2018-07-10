@@ -7,7 +7,7 @@ Copy this template and paste it in your sandbox. The dates will have to be chang
 
 [[code]]
 [[=]]
-**« [[[news-05-2018|May 2018]]] | __[[[news-06-2018|June 2018]]]__ | [[[news-07-2018|July 2018]]] »**
+**« [[[news-02-2018|February 2018]]] | __[[[news-03-2018|March 2018]]]__ | [[[news-04-2018|April 2018]]] »**
 [[/=]]
 
 Welcome to this installment of site news, where we look forward to another year of SCPs!
@@ -16,31 +16,15 @@ This is a series showing off news from the site, articles from the past month[[f
 
 ++++ Featured Articles
 
-* The featured articles for February were
+* The featured articles for March were
 
 ++++ Editor's Choice Articles
 
 ++++ Event Featured Articles
 
-The theme for the month of February was
+The theme for the month of March was
 
-+++ Week of June 1st:
-
-(comment)
-
-++++ SCPs
-
-
-
-++++ Tales
-
-
-
-++++ Misc
-
-
-
-+++ Week of June 8th:
++++ Week of March 1st:
 
 (comment)
 
@@ -56,7 +40,23 @@ The theme for the month of February was
 
 
 
-+++ Week of June 15th:
++++ Week of March 8th:
+
+(comment)
+
+++++ SCPs
+
+
+
+++++ Tales
+
+
+
+++++ Misc
+
+
+
++++ Week of March 15th:
 
 (comment)
 
@@ -75,7 +75,7 @@ The theme for the month of February was
 
 
 
-+++ Week of June 22nd:
++++ Week of March 22nd:
 
 (comment)
 
@@ -102,21 +102,8 @@ The theme for the month of February was
 
 ++++ Fanart
 
-+++ Week of June 29th:
-
-(comment)
-
-++++ SCPs
-
-
-
-++++ Tales
-
-
-
-++++ Misc
 [[=]]
-**« [[[news-05-2018|May 2018]]] | __[[[news-06-2018|June 2018]]]__ | [[[news-07-2018|July 2018]]] »**
+**« [[[news-02-2018|February 2018]]] | __[[[news-03-2018|March 2018]]]__ | [[[news-04-2018|April 2018]]] »**
 [[/=]]
 
 [[/code]]
@@ -155,7 +142,7 @@ You'll notice that SCPs do not include titles in the module's output. They will 
 For months which include contests, one must remember to exclude the appropriate contest's tag in the first set of modules, and to change the "Contest" modules to include the excluded tag. This is to easily isolate contest entries so they do not need to be sorted out manually.
 
 [[collapsible show="All articles, dated." hide="Close"]]
-[[module ListPages separate="no" created_at="2018.06" perPage="150" order="created_at desc desc"]]
+[[module ListPages separate="no" created_at="2018.03" perPage="150" order="created_at desc desc"]]
 
 ||@@* [[[@@%%name%%@@|@@ %%title%%@@]]]@@ ("%%actual-title%%") -   Written by @@[[*user @@%%created_by%%@@]]@@.||%%created_at%%||
 [[/module]]
@@ -164,7 +151,7 @@ For months which include contests, one must remember to exclude the appropriate 
 -----
 
 [[collapsible show="SCPs" hide="Close"]]
-[[module ListPages separate="no" tags="+scp -doomsday2018" created_at="2018.06" perPage="150" order="created_at desc desc"]]
+[[module ListPages separate="no" tags="+scp" created_at="2018.03" perPage="150" order="created_at desc desc"]]
 
 ||@@* [[[@@%%name%%@@|@@ %%title%%@@]]]@@ ("%%actual-title%%") -  "//blurb//" Written by @@[[*user @@%%created_by%%@@]]@@.||
 [[/module]]
@@ -173,7 +160,7 @@ For months which include contests, one must remember to exclude the appropriate 
 ------
 
 [[collapsible show="Tales" hide="Close"]]
-[[module ListPages separate="no" tags="+tale -doomsday2018" created_at="2018.06" perPage="500" order="created_at desc desc"]]
+[[module ListPages separate="no" tags="+tale" created_at="2018.03" perPage="500" order="created_at desc desc"]]
 
 ||@@* [[[@@%%name%%@@|@@ %%title%%@@]]]@@ - "//blurb//" Written by @@[[*user @@%%created_by%%@@]]@@.||
 [[/module]]
@@ -182,7 +169,7 @@ For months which include contests, one must remember to exclude the appropriate 
 ------
 
 [[collapsible show="GOI" hide="Close"]]
-[[module ListPages separate="no" tags="+goi-format -doomsday2018" created_at="2018.06" perPage="150" order="created_at desc desc"]]
+[[module ListPages separate="no" tags="+goi-format" created_at="2018.03" perPage="150" order="created_at desc desc"]]
 
 ||@@* [[[@@%%name%%@@|@@ %%title%%@@]]]@@ - //[GOIname]// "//blurb//" Written by @@[[*user @@%%created_by%%@@]]@@.||
 [[/module]]
@@ -191,7 +178,7 @@ For months which include contests, one must remember to exclude the appropriate 
 ------
 
 [[collapsible show="Hub" hide="Close"]]
-[[module ListPages separate="no" tags="+hub -doomsday2018" created_at="2018.06" perPage="150" order="created_at desc desc"]]
+[[module ListPages separate="no" tags="+hub" created_at="2018.03" perPage="150" order="created_at desc desc"]]
 
 ||@@* [[[@@%%name%%@@|@@ %%title%%@@]]]@@ - "//blurb//" Written by @@[[*user @@%%created_by%%@@]]@@.||
 [[/module]]
@@ -200,7 +187,7 @@ For months which include contests, one must remember to exclude the appropriate 
 ------
 
 [[collapsible show="Authors" hide="Close"]]
-[[module ListPages separate="no" tags="+author -doomsday2018" created_at="2018.06" perPage="150" order="created_at desc desc"]]
+[[module ListPages separate="no" tags="+author" created_at="2018.03" perPage="150" order="created_at desc desc"]]
 
 ||@@* [[[@@%%name%%@@|@@ %%title%%@@]]]@@ It's @@[[*user @@%%created_by%%@@]]@@'s Author Page!||
 [[/module]]
@@ -209,7 +196,7 @@ For months which include contests, one must remember to exclude the appropriate 
 -----
 
 [[collapsible show="Supplement" hide="Close"]]
-[[module ListPages separate="no" tags="supplement -doomsday2018" created_at="2018.06" perPage="150" order="created_at desc desc"]]
+[[module ListPages separate="no" tags="supplement" created_at="2018.03" perPage="150" order="created_at desc desc"]]
 
 ||@@* [[[@@%%name%%@@|@@ %%title%%@@]]]@@ - Written by @@[[*user @@%%created_by%%@@]]@@.||
 [[/module]]
@@ -218,7 +205,7 @@ For months which include contests, one must remember to exclude the appropriate 
 -----
 
 [[collapsible show="Other" hide="Close"]]
-[[module ListPages separate="no" tags="-" created_at="2018.06" perPage="150" order="created_at desc desc"]]
+[[module ListPages separate="no" tags="-" created_at="2018.03" perPage="150" order="created_at desc desc"]]
 
 ||@@* [[[@@%%name%%@@|@@ %%title%%@@]]]@@ - Written by @@[[*user @@%%created_by%%@@]]@@.||
 [[/module]]
