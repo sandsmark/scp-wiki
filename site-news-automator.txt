@@ -212,6 +212,13 @@ For months which include contests, one must remember to exclude the appropriate 
 [[/collapsible]]
 
 -----
+++++ This module will display coauthored works. Look these up individually for proper attribution.
+[[collapsible show="Co-authored" hide="Close"]]
+[[module ListPages separate="no" tags="co-authored" created_at="2018.03" perPage="150" order="created_at desc desc"]]
+
+||@@* [[[@@%%name%%@@|@@ %%title%%@@]]]@@ - Written by @@[[*user @@%%created_by%%@@]]@@.||
+[[/module]]
+[[/collapsible]]
 
 +++ Contest modules 
 
@@ -232,6 +239,8 @@ For months which include contests, one must remember to exclude the appropriate 
 
 
 + SCP Title-Fetching tool:
+
+++++ Note: -EX SCPs ran through this will not display the proper name if the numerical designation exists on the mainlist (ie: SCP-2700-EX will show the title of SCP-2700).
 
 [[include fragment:site-news-title-fetcher]]
 
