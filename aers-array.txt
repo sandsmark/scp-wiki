@@ -48,8 +48,6 @@ html {
 }
 
 div.terminal{
-        width: @display-width;
-        height: @display-height;
     border: 1px solid black;
     border: solid 3px #BBBBBB;
     border-radius: 16px;
@@ -65,7 +63,7 @@ div.terminal{
   	overflow:hidden;
 }
 div.scanline{
-    margin-top: -20%;
+    margin-top: -40%;
     width: @display-width;
     height: 60px;
     position: relative;
