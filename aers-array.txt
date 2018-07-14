@@ -3,51 +3,10 @@ title:An Array Accommodating Aers' Anomalous Artifacts
 [[module Rate]]
 [[/>]]
 [[module CSS]]
-hr.style-one{
-color: #131
-}
-
-blockquote {
-    background-color: black;
-    border: double 3px #80FF80
-}
-
-a {
-    padding: 1px;
-    color: #90EE90;
-    text-decoration: none;
-    background: transparent;
-}
-a.newpage {
-    color: #90EE90;
-    text-decoration: none;
-    background: transparent;
-}
-a:hover {
-    color: #131;
-    text-decoration: underline;
-    background-color: #80FF80;
-}
-
-#side-bar div.menu-item a {
-    font-weight: bold;
-    color: #b01;
-}
-
-#side-bar div.menu-item a:hover {
-    background-color: transparent;
-}
-.page-options-bottom a {
-    color: #b01;
-    padding: 0 4px;
-}
-.page-options-bottom a:hover {
-    background-color: transparent;
-}
-html {
-}
 
 div.terminal{
+        width: @display-width;
+        height: @display-height;
     border: 1px solid black;
     border: solid 3px #BBBBBB;
     border-radius: 16px;
@@ -85,6 +44,26 @@ font-size: 1.2em;
 @-webkit-keyframes scan{
     from{ transform: translateY(-10%);}
     to{  transform: translateY(2000%);}
+}
+
+
+div.text a {
+    color: #90EE90;
+    text-decoration: none;
+    background: transparent;
+}
+div.text a.newpage {
+    color: #90EE90;
+    text-decoration: none;
+    background: transparent;
+}
+div.text a:hover {
+    color: #131;
+    text-decoration: underline;
+    background-color: #80FF80;
+    padding: 1px;
+}
+
 [[/module]]
 [[div class="terminal"]]
 [[div class="scanline"]]
