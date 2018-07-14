@@ -2,7 +2,103 @@ title:An Array Accommodating Aers' Anomalous Artifacts
 [[>]]
 [[module Rate]]
 [[/>]]
-[[collapsible show="[+] A" hide="[–] Aers' Asinine Articles"]]
+[[module CSS]]
+a {
+    padding: 1px;
+    color: #90EE90;
+    text-decoration: none;
+    background: transparent;
+}
+a.newpage {
+    color: #90EE90;
+    text-decoration: none;
+    background: transparent;
+}
+a:hover {
+    color: #131;
+    text-decoration: underline;
+    background-color: #80FF80;
+}
+
+#side-bar div.menu-item a {
+    font-weight: bold;
+    color: #b01;
+}
+
+#side-bar div.menu-item a:hover {
+    background-color: transparent;
+}
+.page-options-bottom a {
+    color: #b01;
+    padding: 0 4px;
+}
+.page-options-bottom a:hover {
+    background-color: transparent;
+}
+html {
+  background-color: black;
+  padding: 1em;
+}
+
+div.terminal{
+        width: @display-width;
+        height: @display-height;
+    border: 1px solid black;
+    border: solid 3px #BBBBBB;
+    border-radius: 16px;
+    background-color: #131;
+/* black shadow at the top of the terminal */
+  	background-image: 
+    	radial-gradient(ellipse 1000% 100% at 50% 90%, transparent, #121);
+  	background-position: center;
+  	display: block;
+/* shadow around the terminal */
+  	box-shadow: inset 0 0 10em 1em rgba(0,0,0,0.5);
+/* prevents scanline from forming a scrollwheel */
+  	overflow:hidden;
+}
+div.scanline{
+    margin-top: -40%;
+    width: @display-width;
+    height: 60px;
+    position: relative;
+    pointer-events: none;
+    -webkit-animation: scan 5s linear 0s infinite;; /* Safari 4.0 - 8.0 */
+    animation: scan 5s linear 0s infinite;
+    background: linear-gradient(to bottom, rgba(56, 112, 82,0), rgba(56, 112, 82,0.1)) !important;
+}
+
+div.text{
+    color: rgba(128,255,128,0.8);
+    padding-left: 2em;
+    padding-top: 40%;
+font-family: monospace;
+font-size: 1.2em;
+    }
+    
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes scan{
+    from{ transform: translateY(-10%);}
+    to{  transform: translateY(2000%);}
+[[/module]]
+[[div class="terminal"]]
+[[div class="scanline"]]
+[[/div]]
+[[div class="text"]]
+[[=]]
+[[size 150%]] __An Array Accommodating Aers' Anomalous Artifacts__[[/size]]
+@@ @@
+@@ @@
+@@------@@
+Coder Considers Converting Computers to CRTs, Can't Confirm Conclusion.
+@@------@@
+[[/=]]
+@@ @@
+@@ @@
+@@ @@
+Aers' Accumulated Articles:
+@@ @@
+[[collapsible show="[+] SCP-3340" hide="[–] Auxiliary Accessories Accessed"]]
 [[module ListPages name="SCP-3340"]]
 > [[=]]
 > ------
@@ -17,7 +113,8 @@ title:An Array Accommodating Aers' Anomalous Artifacts
 > //This page is undergoing deletion. Current progress: 0%. Please refresh.//
 > [[/=]]
 [[/module]]
-@@ @@
+[[/collapsible]]
+[[collapsible show="[+] SCP-3441" hide="[–] Auxiliary Accessories Accessed"]]
 [[module ListPages name="SCP-3441"]]
 > [[=]]
 > ------
@@ -32,7 +129,8 @@ title:An Array Accommodating Aers' Anomalous Artifacts
 > //Substance PR-O11 is a relatively chemically inert substance which, when ingested, induces a localized reality-bending effect in the subject.//
 > [[/=]]
 [[/module]]
-@@ @@
+[[/collapsible]]
+[[collapsible show="[+] SCP-3881" hide="[–] Auxiliary Accessories Accessed"]]
 [[module ListPages name="SCP-3881"]]
 > [[=]]
 > ------
@@ -47,7 +145,8 @@ title:An Array Accommodating Aers' Anomalous Artifacts
 > //SCP-3881 was discovered within a pawn shop, being pawned by a Miss Pamela Smith.//
 > [[/=]]
 [[/module]]
-@@ @@
+[[/collapsible]]
+[[collapsible show="[+] SCP-3662" hide="[–] Auxiliary Accessories Accessed"]]
 [[module ListPages name="SCP-3662"]]
 > [[=]]
 > ------
@@ -62,7 +161,16 @@ title:An Array Accommodating Aers' Anomalous Artifacts
 > //The current SCP-3662-2 subject should be changed on a weekly basis as to not expose any individual to the Noosphere for an extended period of time.//
 > [[/=]]
 [[/module]]
+[[/collapsible]]
 @@ @@
+@@ @@
+Broken, but Bizarrely Brazen:
+[http://scpsandbox2.wikidot.com/dr-aers Sandbox Link]
+@@ @@
+@@ @@
+Collaborated Chronicles:
+@@ @@
+[[collapsible show="[+] The Sacred Djehuti" hide="[–] Auxiliary Accessories Accessed"]]
 [[module ListPages name="The-Sacred-Djehuti"]]
 > [[=]]
 > ------
@@ -78,7 +186,8 @@ title:An Array Accommodating Aers' Anomalous Artifacts
 > //Brothers and sisters from far and wide are welcome to taste the sweetness of the Sacred One's wisdom!//
 > [[/=]]
 [[/module]]
-@@ @@
+[[/collapsible]]
+[[collapsible show="[+] Avian Anthology I" hide="[–] Auxiliary Accessories Accessed"]]
 [[module ListPages name="avian-anthology-i"]]
 > [[=]]
 > ------
@@ -94,7 +203,8 @@ title:An Array Accommodating Aers' Anomalous Artifacts
 > //As the sun descended, two silhouettes stood abreast, punctuated by the nearly lifeless husk of a massive whale.//
 > [[/=]]
 [[/module]]
-@@ @@
+[[/collapsible]]
+[[collapsible show="[+] Avian Anthology II" hide="[–] Auxiliary Accessories Accessed"]]
 [[module ListPages name="avian-anthology-ii"]]
 > [[=]]
 > ------
@@ -111,44 +221,28 @@ title:An Array Accommodating Aers' Anomalous Artifacts
 > [[/=]]
 [[/module]]
 [[/collapsible]]
-
-[[collapsible show="[+] B" hide="[–] 🅱️ehind 🅱️he 🅱️cenes"]]
-Hi, everyone! I'm Aers. I've written a few things.
 @@ @@
-I'm British, I'm studying Biomedical Science and I like playing video games. I think that's about everything, to be honest. Oh, wait, I like making puns too.
-@@ @@ 
-__What do you like in SCPs?__
-That's a good question. I'm a huge fan of short SCPs, which is why I write them. I don't think I'd have the energy to write a long one, either. I like to develop my ideas through various proof-of-concept drafts and then picking the best one and expanding on it: it works really well with short SCPs. Not sure it'd work with a longer one, though.
-
-I also adore concepts that are deep but not complex. Something that a reader can understand on their first reading, completely understand, and then the author explores the implications. Take Death Note, as an example. It's a notebook that kills people. You don't need a PhD in Memology to understand it, but the way the story unfolds shows that a simple thing can have serious effects.
-
-I tend not to like horror mostly because I'm desensitized to it. I'm fairly sure most people are, at this point. I mainly stick to emotional skips, rather than the horrific ones.
 @@ @@
-__You're... British?__
-Yep. I tend to use Americanisms in chat and in my SCPs just because I know my audience is largely American. I also have trouble sleeping sometimes, so when it's late for you it's probably //really late// for me.
+[[collapsible show=" " hide="Crit Template"]]
+
+@@Hi [[*user Username]]! You summoned me here by PLATFORM.@@
+@@[[collapsible show="[+] Line-by-Line" hide="[–] Line-by-Line"]]@@
+@@|| **Disclaimer:** I'm not going to find every mistake. I will only point out certain mistakes once.||@@
+@@> Quote text@@
+@@Comment@@
+@@> Quote text@@
+@@Comment@@
+@@[[/collapsible]]@@
 @@ @@
-__Videogames?__
-I'm a filthy casual, I'm afraid. Mostly League of Legends and Hearthstone and I'm bad at both. 
+@@[[collapsible show="[+] Overview" hide="[–] Overview"]]@@
+@@Thoughts on structure@@
+@@Thoughts on concept@@
+@@Additional thoughts@@
+@@Summary@@
+@@[[/collapsible]]@@
+@@Feedback over. Good luck!@@
+
+
 [[/collapsible]]
-[[collapsible show="[+] C" hide="[–] Creator Commentary"]]
-__3340__
-This went through a lot of changes. It started out as a Thaumiel skip that you could its documentation once - after that, you get the skip's stream of consciousness. The skip was Thaumiel because the information transfer is instantaneous and uninterruptable - kind of like a memetic, human radio station. The story was the skip abusing this to get itself out of containment.
-
-I got crit on this idea and it turns out I'm really bad at delivering that idea. I deleted the whole thing and then an idea struck me //what if deletion was an SCP?// After that, it pretty much wrote itself.
-
-Am I happy with 3340? I'm happy with how well it did, yes. After thinking about it a little more, though, I think I constrained myself with it a little too much. Each iteration only uses words from the previous, which was completely unnecessary. The article relies far too heavily on "wow!" than anything else.
-
-__3441__
-I had this idea way longer ago than 3340. The first iteration was //just// lucky leaf juice with no narrative. It was really uncompelling, but I had an idea of "what if the Foundation had to rely on luck to deal with an SCP?" as an associated tale - the two would be posted together, of course.
-
-I then decided that my skip should stand by itself and that it should, at the very least, contain some story to make the reader want to read the tale. I cobbled an origin for the skip that was the tea plant IS PEOPLE?! Which was immediately shot down by critters. I rewrote the story to be more emotional in nature.
-
-In an ironic turn of events, I scrapped the tale. Now the skip stands on its own! However, I've kept the special format for the tale (for anyone that saw it) and now I'm working on using it for something else.
-
-__3881__
-I came up with this skip's idea in a day, I just shuffled around information and added a little more characterisation for each iteration. A lot of people are calling it a love story, but that's not true, it's a tragedy.
-
-Spoilers, for those who haven't read it.
-
-Wedding rings come in pairs, and this is no exception. Howard, who was on the run, gave a ring to Pamela which would teleport them together in a pocket dimension. He wrote the letter ambiguously and, out of sorrow, Pamela couldn't bring herself to put on the ring. She never knew that her lover was at arm's reach. [[*user Golden506]] made a really good SCPExplained [http://scpexplained.wikidot.com/scp-3881 here.]
-[[/collapsible]]
+[[/div]]
+[[/div]]
