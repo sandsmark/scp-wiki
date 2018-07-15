@@ -37,7 +37,6 @@ Goldsheiner's [http://scpsandboxwiki.wikidot.com/reject-s-sandbox old] [http://s
 [[/module]]
 [[/collapsible]]
 
-[[/collapsible]]
 [[collapsible show="SCPs Over X" hide="Hide"]]
 [[module CountPages rating=">300" tags="+scp"]]
 %%total%% tales over +300
@@ -55,8 +54,6 @@ Goldsheiner's [http://scpsandboxwiki.wikidot.com/reject-s-sandbox old] [http://s
 %%total%% tales over +50
 [[/collapsible]]
 
-
-[[/collapsible]]
 [[collapsible show="Tales Over X" hide="Hide"]]
 [[module CountPages rating=">300" tags="+tale"]]
 %%total%% tales over +300
@@ -82,10 +79,10 @@ Goldsheiner's [http://scpsandboxwiki.wikidot.com/reject-s-sandbox old] [http://s
 [[/module]]
 [[/collapsible]]
 
-[[collapsible show="4000 Contest" hide="Hide"]]
+[[collapsible show="Contest" hide="Hide"]]
 [[div style="float:right"]]
 [[/div]]
-[[module ListPages rating="<-9" order="ratingAsc" separate="true" tags="+contest, +4000" perPage="100"]]
+[[module ListPages order="ratingAsc" separate="true" tags="+contest, +4000" perPage="100"]]
 * %%title_linked%% (%%rating%%) by [[*user %%created_by%%]], created %%date|%r|agohover%%
 [[/module]]
 [[/collapsible]]
