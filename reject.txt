@@ -30,94 +30,62 @@ __Obamas Thanked__:
 Goldsheiner's [http://scpsandboxwiki.wikidot.com/reject-s-sandbox old] [http://scpsandbox2.wikidot.com/reject desk] has yet to be cleaned because something smells like toothpaste in there.
 -------
 "That damn new-fangled computery thingum stuff."
-[!--
-HONORABLE MENTION: Enjoyed immensely by myself, found useful by staff.
-AWARD WINNING: Implemented by staff.
---]
 
 [[collapsible show="Recently Created Table" hide="Hide"]]
 [[module ListPages order="created_at desc" separate="false" limit="60" perPage="20"]]
 || %%title_linked%% || Rating: %%rating%% || [[*user %%created_by%%]] || %%comments%% comments ||
 [[/module]]
 [[/collapsible]]
-[[collapsible show="Best SCPs of the Month" hide="Hide"]]
-[[div style="float:right"]]
-**HONORABLE MENTION**
-[[/div]]
-[[module ListPages order="ratingDesc" separate="false" created_at="last 1 month" perPage="30" limit="90" tags="+scp" rating=">0"]]
-# %%title_linked%% (rating: %%rating%%, comments: %%comments%%), by [[*user %%created_by%%]]
-[[/module]]
-[[/collapsible]]
-[[collapsible show="Best Miscellaneous of the Month" hide="Hide"]]
-[[module ListPages order="ratingDesc" separate="false" created_at="last 1 month" perPage="20" tags="-scp, -supplement" perPage="30" rating=">0"]]
-# %%title_linked%% (rating: %%rating%%, comments: %%comments%%), by [[*user %%created_by%%]]
-[[/module]]
+
 [[/collapsible]]
 [[collapsible show="SCPs Over X" hide="Hide"]]
+[[module CountPages rating=">300" tags="+scp"]]
+%%total%% tales over +300
+[[/module]]
+[[module CountPages rating=">200" tags="+scp"]]
+%%total%% tales over +200
+[[/module]]
 [[module CountPages rating=">100" tags="+scp"]]
-%%total%% SCPs over +100
+%%total%% tales over +100
 [[/module]]
-[[module CountPages rating=">90" tags="+scp"]]
-%%total%% SCPs over +90
-[[/module]]
-[[module CountPages rating=">80" tags="+scp"]]
-%%total%% SCPs over +80
-[[/module]]
-[[module CountPages rating=">70" tags="+scp"]]
-%%total%% SCPs over +70
-[[/module]]
-[[module CountPages rating=">60" tags="+scp"]]
-%%total%% SCPs over +60
+[[module CountPages rating=">75" tags="+scp"]]
+%%total%% tales over +75
 [[/module]]
 [[module CountPages rating=">50" tags="+scp"]]
-%%total%% SCPs over +50
-[[/module]]
-[[module CountPages rating=">40" tags="+scp"]]
-%%total%% SCPs over +40
-[[/module]]
-[[module CountPages rating=">30" tags="+scp"]]
-%%total%% SCPs over +30
-[[/module]]
+%%total%% tales over +50
+[[/collapsible]]
+
+
 [[/collapsible]]
 [[collapsible show="Tales Over X" hide="Hide"]]
+[[module CountPages rating=">300" tags="+tale"]]
+%%total%% tales over +300
+[[/module]]
+[[module CountPages rating=">200" tags="+tale"]]
+%%total%% tales over +200
+[[/module]]
 [[module CountPages rating=">100" tags="+tale"]]
 %%total%% tales over +100
 [[/module]]
-[[module CountPages rating=">90" tags="+tale"]]
-%%total%% tales over +90
-[[/module]]
-[[module CountPages rating=">80" tags="+tale"]]
-%%total%% tales over +80
-[[/module]]
-[[module CountPages rating=">70" tags="+tale"]]
-%%total%% tales over +70
-[[/module]]
-[[module CountPages rating=">60" tags="+tale"]]
-%%total%% tales over +60
+[[module CountPages rating=">75" tags="+tale"]]
+%%total%% tales over +75
 [[/module]]
 [[module CountPages rating=">50" tags="+tale"]]
 %%total%% tales over +50
-[[/module]]
-[[module CountPages rating=">40" tags="+tale"]]
-%%total%% tales over +40
-[[/module]]
-[[module CountPages rating=">30" tags="+tale"]]
-%%total%% tales over +30
-[[/module]]
 [[/collapsible]]
-[[collapsible show="Lowest Rated" hide="Hide"]]
-[[div style="float:right"]]
-**AWARD WINNING**
-[[/div]]
-[[module ListPages order="ratingAsc" limit="100" tags="-archived" rating="<-0" separate="no" perPage="100"]]
-%%title_linked%% ##777|(Rating: %%rating%%, Comments: %%comments%%)##
-[[/module]] 
-[[/collapsible]]
+
 [[collapsible show="Bad Article Life" hide="Hide"]]
 [[div style="float:right"]]
-**HONORABLE MENTION**
 [[/div]]
 [[module ListPages rating="<-9" order="ratingAsc" separate="true" tags="-archived, -contest" perPage="100"]]
 * %%title_linked%%, (%%rating%%), created %%date|%r|agohover%%
+[[/module]]
+[[/collapsible]]
+
+[[collapsible show="4000 Contest" hide="Hide"]]
+[[div style="float:right"]]
+[[/div]]
+[[module ListPages rating="<-9" order="ratingAsc" separate="true" tags="+contest, +4000" perPage="100"]]
+* %%title_linked%% (%%rating%%) by [[*user %%created_by%%]], created %%date|%r|agohover%%
 [[/module]]
 [[/collapsible]]
