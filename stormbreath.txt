@@ -1,22 +1,4 @@
 title:Stormbreath's Author Page
-[[module css]]
-
-div#container-wrap {
-    background: url(http://kaktuskontainer.wdfiles.com/local--files/stormbreath-hub-page/body_bg.png) top left repeat-x;}
-
-#page-content .collapsible-block {  
-  max-width: 100%;
-text-color: black;
-    border-color: #000000;
-    border: solid 1px #000000;
-    background-color: #f7f7f7;
-}
-.collapsible-block-content p {
-    text-align: left;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-[[/module]]
 [[>]]
 [[module Rate]]
 [[/>]]
@@ -344,64 +326,5 @@ __**Author Stuff:**__
 [[/tab]]
 [[/tabview]]
 [[module CSS]]
-.yui-navset .yui-nav,
-.yui-navset .yui-navset-top .yui-nav {
-    border-color:#ffffff; /* color between tab list and content */
-}
- 
-.yui-navset .yui-nav a,
-.yui-navset .yui-navset-top .yui-nav a {
-    background-color:#ffffff ! important; /* tab background */
-    border-color:#ffffff;
-    color:#000000;
-    transition: 0.125s;
-}
- 
-.yui-navset .yui-nav a em {
-background-color: #ffffff;
-box-shadow: 0px 1px 2px rgba(0,0,0,0.7);
-border-color: #ffffff;
-}
- 
-.yui-navset .yui-nav .selected a,
-.yui-navset .yui-nav .selected a:focus,
-.yui-navset .yui-nav .selected a:hover {
-    background-image: none;
-    background-color: #ffffff; /* selected tab background */
-    color:black;
-}
- 
-.yui-navset .yui-nav .selected a,
-.yui-navset .yui-nav .selected a em {
-    border-color: transparent;
-    box-shadow: 0px 1px 2px rgba(0,0,0,0.5);
- background-color: #ffffff; 
-}
- 
-.yui-navset .yui-content {
-    background-color: #ffffff; /* content background color */
-}
- 
-.yui-navset .yui-content,
-.yui-navset .yui-navset-top .yui-content {
-    border-color: #ffffff; /* content border */
-    border-top-color:#ffffff; /* different border color */
-}
- 
-.yui-navset-left .yui-content {
-    border-left-color: #b7a9a9; /* different border color */
-}
- 
-blockquote {
-  border-style: dashed;
-  border-color: #a7a7a7;
-  border-width: 1pt;
-  background-color: #f7f7f7;
-  box-shadow: 0px 1px 2px rgba(0,0,0,0.1); }
- 
-div.image-block {
- float:right;
- margin:0 2em 1em 2em;
- width:300px;
-}
+@import url(http://kaktuskontainer.wikidot.com/component:MCD-new/code/1);
 [[/module]]
