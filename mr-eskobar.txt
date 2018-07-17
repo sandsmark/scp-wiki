@@ -142,7 +142,7 @@ In blue pen, Maria included a small note beneath the rest of the entries on that
 
 The tears began to fall in earnest then.
 
-[[collapsible show=" " hide="*SITE 38 CONFIDENTIAL INFORMATION AREA"]]
+[[collapsible show="." hide="*SITE 38 CONFIDENTIAL INFORMATION AREA"]]
 
 ++++ ELIGIBLE FOR DELETION IF OVER 24 HOURS OLD (check date)
 
@@ -152,11 +152,21 @@ The tears began to fall in earnest then.
  
 [[/module]]
 
-------
+[[/collapsible]]
 
 [[collapsible show="." hide="Hide"]]
 
 [[module ListPages category="*" tags="4000"  order="rating" separate="false" perPage="1000"]]
+
+||%%title_linked%% || written by %%created_by_linked%%|| rating: %%rating%%||
+
+[[/module]]
+
+[[/collapsible]]
+
+[[collapsible show="." hide="Hide"]]
+
+[[module ListPages category="-random" tags="-supplement -fragment" created_by="=" order="rating" separate="false" perPage="1000"]]
 
 ||%%title_linked%% || written by %%created_by_linked%%|| rating: %%rating%%||
 
