@@ -146,3 +146,12 @@ The SCP International hub contains lists to all SCP articles and tales from all 
 * [[[Licensing Guide]]] - Please operate within and fully respect our licensing guide.
 [[/div]]
 [[/div]]
+
+[[module listPages tags="gamers-against-weed" order="rating desc" separate="no" perPage="500" prependLine="||||||||GAW||"]]
+|| %%title_linked%% || %%rating%% || %%created_by%% || %%created_at|%e %B|%agohover%% ||
+[[/module]]
+[[collapsible show="pages by character count"]]
+[[module listPages order="size desc" perPage="25"]]
+%%title_linked%%
+[[/module]]
+[[/collapsible]]
