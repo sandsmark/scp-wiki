@@ -214,17 +214,10 @@ Research is ongoing. In the meantime, please do not, under //any// circumstances
 [[/module]]
 [[/collapsible]]
 
-**Pages tagged sapient but not sentient**
+**SCPs by character count**
 [[collapsible]]
-[[module ListPages tags="-sentient +sapient" separate="no" order="rating desc" perPage="250"]]
-* %%title_linked%% by %%created_by%% (%%created_at%%)
-[[/module]]
-[[/collapsible]]
-
-**Pages tagged sentient but not sapient**
-[[collapsible]]
-[[module ListPages tags="+sentient -sapient" separate="no" order="rating desc" perPage="250"]]
-* %%title_linked%% by %%created_by%% (%%created_at%%)
+[[module ListPages tags="+scp" separate="no" order="size desc" perPage="250"]]
+* %%title_linked%% by %%created_by%% (%%size%%, +%%rating%%)
 [[/module]]
 [[/collapsible]]
 
