@@ -1,9 +1,27 @@
 title:Rogetbox
-+++ SCPs Up For Review (Older than 6 months)
-[[module ListPages separate="no" tags="scp, -archived, -in_rewrite" created_at="older than 180 days" order="rating" rating="<=10"]] 
++++ SCPs Up For Review (Older than 6 months, Under +10)
+[[module ListPages separate="no" tags="scp, -archived, -in_rewrite" created_at="older than 180 days" order="random" rating="<=10"]] 
 * %%title_linked%% [+%%rating%%]
 [[/module]]
 
++++ Young and Under 30
+
+[[module ListPages separate="no" tags="scp, -archived, -in_rewrite" created_at="younger than 180 days" order="random" rating="<=30"]] 
+* %%title_linked%% [+%%rating%%]
+[[/module]]
+
++++ Old and Under 30
+
+[[module ListPages separate="no" tags="scp, -archived, -in_rewrite" created_at="older than 180 days" order="random" rating="<=30"]] 
+* %%title_linked%% [+%%rating%%]
+[[/module]]
+
++++ Tales
+
+
+[[module ListPages separate="no" tags="tale, -archived, -in_rewrite" created_at="older than 180 days" order="rating" rating="<=30"]] 
+* %%title_linked%% [+%%rating%%]
+[[/module]]
 
 ~~~~
 ----
@@ -15,7 +33,7 @@ title:Rogetbox
 __Author Page Ranks__:
 [[/div]]
 [[/=]]
-[[module ListPages  separate="no" tags="author" order="rating desc" prependLine="||~ Page ||~ Rating ||~ Changed Last ||~ Created ||~ Last Comment ||~ Author ||"]] 
+[[module ListPages  separate="no" tags="author" order="random" prependLine="||~ Page ||~ Rating ||~ Changed Last ||~ Created ||~ Last Comment ||~ Author ||"]] 
 || %%title_linked%% || %%rating%% || %%updated_at%% || %%created_at%% || %%commented_at%% || %%author%% ||
 [[/module]]
 
