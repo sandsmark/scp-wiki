@@ -1,5 +1,6 @@
 title:djkaktus' Workbench
 [[module CSS]]
+@import url(http://kaktuskontainer.wikidot.com/component:theme/code/1);
 #header h1 a::before {
     content: "djkaktus";
     color: #cc5800;
@@ -13,21 +14,47 @@ title:djkaktus' Workbench
     text-shadow: 1px 1px 1px rgba(0,0,0,.8);}
 }
 [[/module]]
-[[module ListPages name="SCP-527"]]
 
-> Hello and welcome to the feature page by djkaktus.
-> This is a page about 527. It was written on %%created_at%%. I know that you like it because it is good.
-> %%created_by%% wrote that. Coincidentally, he is also me. 
-> One time somebody said Mr. Fish was not good. They were wrong.
-> It is has %%comments%% comments.
-> Thank you for listening. Please like and subscribe to see more original content. Smash that bell.
+[[collapsible]]
+[[module ListPages order="rating desc" separate="no" tags="4000, -hub" perPage="250" prependLine="||~ SCP ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||~ Length ||"]] 
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% || %%size%% ||
+[[/module]]
+[[/collapsible]]
 
------
++ SCPs
 
-+ %%title_linked%% - Mr. Fish
-++ By %%created_by%% 
-[[>]]
-**RATING IS %%rating%%**[[footnote]]I would disable rating module on feature pages until I figure out how to remove the rating module from the article content[[/footnote]]
-[[/>]]
-%%content%%
+[[module ListPages created_by="djkaktus" order="rating desc" separate="no" tags="scp, joke" perPage="250" prependLine="||~ SCP ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||~ Length ||"]] 
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% || %%size%% ||
+[[/module]]
+
++ Collaborations Posted by Other Authors
+
+[[module ListPages name="scp-049" perPage="2" prependLine="||~ SCP ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||~ Length ||"]] 
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% || %%size%% ||
+[[/module]]
+
+[[module ListPages name="twistedgears-kaktus-proposal" perPage="1" prependLine="||~ SCP ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||~ Length ||"]] 
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% || %%size%% ||
+[[/module]]
+
+[[module ListPages name="cimmerian-kaktus-proposal" perPage="1" prependLine="||~ SCP ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||~ Length ||"]] 
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% || %%size%% ||
+[[/module]]
+
+[[module ListPages name="scp-2678" perPage="1" prependLine="||~ SCP ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||~ Length ||"]] 
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% || %%size%% ||
+[[/module]]
+
+[[module ListPages name="scp-damej-j" perPage="1" prependLine="||~ SCP ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||~ Length ||"]] 
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% || %%size%% ||
+[[/module]]
+
+[[module ListPages name="scp-3208" perPage="1" prependLine="||~ SCP ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||~ Length ||"]] 
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% || %%size%% ||
+[[/module]]
+
++ Tales
+
+[[module ListPages created_by="djkaktus" order="rating desc" separate="no" tags="tale, -hub" perPage="250" prependLine="||~ Tale ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||~ Length ||"]] 
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% || %%size%% ||
 [[/module]]
