@@ -1,7 +1,7 @@
 title:SCP Wiki Usertools
 + What this is
 
-This page hosts several userscripts to alter and hopefully improve your site experience. If it's hosted here it //should// work without any problems on Firefox and, depending on the specific script, on Chrome. If they don't, report any bugs to [http://www.wikidot.com/account/messages#/new/1346995 Crayne] and he'll work on a fix.
+This page hosts tools and scripts to alter and hopefully improve your site experience. If it's hosted here it //should// work without any problems on Firefox and, depending on the specific script, on Chrome. If they don't, report any bugs to [http://05command.wikidot.com/technical-staff-main Tech Staff] and they'll work on a fix.
 
 They //might// work on Opera and Safari, but they haven't been tested for it. See 'How to install the userscripts' below for a link to instructions on getting userscripts to run in those browsers.
 
@@ -29,6 +29,33 @@ That will install the base you need to be able to run the scripts linked here.
 
 **Safari:** [http://www.simplehelp.net/2007/11/14/how-to-run-greasemonkey-scripts-in-safari This page] tells you how to install userscripts for your browser.
 
++ Extensions
+
+[[div class="content-panel standalone series"]]
+++ S-CSS-P
+
+**Screenshot:**
+
+[[image s-css-p.png]
+
+**Description:** A modular stylesheet picker that lets you independently adjust the layout, color scheme, logo, fonts, and rating module visibility.  Includes sync capability so your preferences carry across browsers so long as you're sign in to Chrome or Firefox.
+
+[[collapsible show="[+] Detailed instructions for install" hide="[-] Detailed instructions for install"]]
+# Install S-CSS-P as an add-on to your default browser.
+ * For Mozilla users: [https://addons.mozilla.org/en-US/firefox/addon/s-css-p/ LINK]
+ * For Chrome users: [https://chrome.google.com/webstore/detail/s-css-p/lcficnblkhejenkbmiloebohoclaebdj LINK]
+ * For Opera users: Use the [https://addons.opera.com/en/extensions/details/install-chrome-extensions/ Install Chrome Extensions] add-on and use the Chrome Link.
+ * For Edge users: Coming soon.
+[[/collapsible]]
+
+For bugs, tips or comments, contact [[user pxdnbluesoul]].
+
+[https://github.com/scpwiki/S-CSS-P GitHub]
+
+**Verified working on:** [[image FF_icon.png]] [[image Chrome_icon.png]] [[image Opera_icon.png]]
+@@ @@
+[[/div]]
+
 + User Styles
 
 [[div class="content-panel standalone series"]]
@@ -36,7 +63,7 @@ That will install the base you need to be able to run the scripts linked here.
 
 **Screenshot:**
 
-[[image 118617_after.png?r=1442750741]]
+[[image night-mode]]
 
 **Description:** Overwrites the default theme of the wiki and swaps it for a darker color scheme.  This is only an aesthetic change and does not effect functionality.  For further details on it's development, please follow the [http://www.scp-wiki.net/forum/t-1353913/help-wanted debug thread] on the wiki which shows what it is and is not capable of.
 
