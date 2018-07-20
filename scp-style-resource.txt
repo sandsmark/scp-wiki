@@ -27,6 +27,37 @@ color: #DDDD77;
 }
 [[/module]]
 
+[[module css]]
+.page {
+    display: block;
+    overflow: hidden;
+    font-family: "Monotype Corsiva", "Bradley Hand ITC", sans-serif;
+    font-style: normal;
+
+   
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: linear-gradient(to top ,rgb(202, 219, 228) 0%, rgb(231, 233, 220) 8%);
+    background-origin: padding-box;
+    background-position: 0px 8px;
+    background-repeat: repeat;
+    background-size: 100% 20px;
+    
+
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2)
+    }
+.page p {
+    line-height: 20px;
+    margin: 0;
+}
+[[/module]]
+
 Hello and welcome!
 
 This is meant to be an ease-of-access, quick 'copy-paste' resource for alternative logs and formats for SCP files, in the same vein as Group-of-Interest Style guides for their individual formats. If you're looking for basic Wikidot formatting, go check out [[[Wiki Syntax]]]. For more advanced coding, check out the [[[advanced-formatting-and-you|Advanced Formatting]]] guide.
@@ -800,4 +831,87 @@ __**Option 2:**__[[footnote]] As seen in [[[SCP-2983]]] and others to come. [[/f
 
 **Note:** This code does not include the image file. Either upload it into the article or copy the image's address from here.
 
+[[/collapsible]]
+@@ @@
+@@ @@
+[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[/div]]
+[[div style="border-bottom:1px solid #777;"]]
+[[/div]]
+
++++ "Paper/Note" formats
+
+**__Option 1__**
+
+**What it looks like:**
+
+[[div class="page"]]
+
+Document body here. You will need to use "@@ @@" on new lines to properly space text.
+@@ @@
+Like so.
+@@ @@
+You can use [[<]], [[=]], and [[>]] to align different lines/paragraphs to give proper feel. 
+@@ @@
+[[>]]
+Enjoy.
+[[/>]]
+[[/div]]
+
+
+**What to copy:**
+
+[[collapsible]]
+
+**IMPORTANT** This goes at the top of your page:
+
+[[code]]
+[[module css]]
+.page {
+    display: block;
+    overflow: hidden;
+    font-family: "Monotype Corsiva", "Bradley Hand ITC", sans-serif;
+    font-style: normal;
+
+   
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: linear-gradient(to top ,rgb(202, 219, 228) 0%, rgb(231, 233, 220) 8%);
+    background-origin: padding-box;
+    background-position: 0px 8px;
+    background-repeat: repeat;
+    background-size: 100% 20px;
+    
+
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2)
+    }
+.page p {
+    line-height: 20px;
+    margin: 0;
+}
+[[/module]]
+[[/code]]
+
+**IMPORTANT** This goes where you want the box to appear:
+
+[[code]]
+[[div class="page"]]
+
+Document body here. You will need to use "@@ @@" on new lines to properly space text.
+@@ @@
+Like so.
+@@ @@
+You can use [[<]], [[=]], and [[>]] to align different lines/paragraphs to give proper feel. 
+@@ @@
+[[>]]
+Enjoy.
+[[/>]]
+[[/div]]
+[[/code]]
 [[/collapsible]]
