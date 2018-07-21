@@ -8,10 +8,10 @@ title:cone
 * { transform: rotate(1deg); animation: rotateroni 10s infinite ease-in-out; }
 @keyframes rotateroni {
   0%,100% {
-    transform: rotate(1deg) skew(0.05deg,0.05deg);
+    transform: rotate(0.05deg) skew(0.05deg,0.05deg);
   }
   50% {
-    transform: rotate(-1deg) skew(-0.05deg,-0.05deg);
+    transform: rotate(-0.05deg) skew(-0.05deg,-0.05deg);
   }
 }
 #page-title { display: none; }
