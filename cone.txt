@@ -7,11 +7,11 @@ title:cone
 /*@import url(http://scp-sandbox-3.wikidot.com/component:raisatheme/code/1);*/
 * { transform: rotate(1deg); animation: rotateroni 10s infinite ease-in-out; }
 @keyframes rotateroni {
-  0% {
-    transform: rotate(1deg), skew(5deg,5deg);
+  0%,100% {
+    transform: rotate(1deg), skew(0.05deg,0.05deg);
   }
   50% {
-    transform: rotate(-1deg), skew(-5deg,-5deg);
+    transform: rotate(-1deg), skew(-0.05deg,-0.05deg);
   }
 }
 #page-title { display: none; }
