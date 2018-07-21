@@ -120,8 +120,22 @@ These things are used as subdivisions or subtitles under the bigger title. For e
 
 This is what creates that nice minty color that you are reading over //right now//! Crazy, right? These are used for all the meaty actual ready (read as "read-y") bits. Not much else to say about them, you now know all the divs and what they do! Congratulations!
 
-Now, there //are// some formatting things to expect in the future. As was said, we're hoping that at some point we may stumble upon a graphic designer to help us make some clean revisions to the divs, so they aren't so clearly just divs, but ah well. They look nice at the moment anyways. Maybe some borders, on the right and the left? May or may not happen.
+Now, the last thing here would be what you might have //also// noticed on this page... the Wilson's Wildlife CSS theme! It makes things so minty, aah, so fresh, aah, so pleasant, ooo, and it makes our above divs real easy to use!
 
-What definitely //will// happen is, drum roll please... //A CSS theme//! Something nice to put over our Independent Projects (geo-eye formats, pure and simple) and our recorded Anecdotes From the Guys (stories we liked enough to bother recording for new recruits to read and / or retell around a campfire). Expect that in the future! Will it be the near future? The far future? Who knows! But the future it will be.
+If you want to put it in your article, you just gotta copy this handy dandy code right here:
+
+> [[module CSS]]
+> @import url(/component:wilsons-theme/code/1)
+> [[/module]]
+
+And put it at the tippy top of your article. Bing! Any WWS story instantly made homier, and classier, and themier! But wait, not //only// is it eye pleasing, it's useful! Do you think the code for those divs up there is clunky and large and unsightly while writing? So does our CSS theme. In the same order listed up there, those divs can be shortened to:
+
+> @@[[div class="wilson-border"]]@@
+> @@[[div class="wilson-header"]]@@
+> @@[[div class="wilson-subtitle"]]@@
+> and
+> @@[[div class="wilson-body"]]@@
+
+As long as you are using the CSS theme. So neat! So nifty! Thank you so so much to our wonderful Mr. S. Breath who made the majority of this theme! And with that, we're all done here. Adios!
 [[/div]]
 [[/div]]
