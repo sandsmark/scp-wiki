@@ -34,18 +34,56 @@ color: #DDDD77;
 +++ DUE TO THE NATURE OF THE CONTAINMENT PROCEDURES OF SCP-4000, DETAILED KNOWLEDGE OF ANYONE WITHOUT 4/4000 CLEARANCE ATTEMPTING TO VIEW BEYOND THIS POINT HAS BEEN MADE AVAILABLE TO O5 COMMAND.
 [[/div]]
 [[/=]]
+[[html]]
+<head>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/deadsurgeon42/scp-sources/6cf60652/scp-4000-samualism/termynal.css" />
+</head>
+<body>
 
-[[div class="danke agent"]]
-| LOGIN REQUEST SENT
-| AUTHORIZING...
-| IF YOU'RE SO SURE YOU'RE SUPPOSED TO BE HERE, THEN I'M SURE YOU MUST KNOW,
-| DOES THE BLACK MOON HOWL?
+<style>
+:root {
+    --color-bg: #002200;
+    --color-text: #77CC77;
+    --color-text-subtle: #55AA55;
+}
 
-If he feels like it, I guess.
+[data-termynal] {
+    padding: 16px;
+    border-radius: 0;
 
-| DON'T DO ANYTHING STUPID.
-| PLEASE ENTER YOUR CREDENTIALS BELOW, GABRIEL JADE.
-[[/div]]
+    background-color: #002200;
+    border: 3px solid #55AA55;
+    color: #77CC77;
+
+    height: 260px;
+    width: 100%;
+    font-size: 12px;
+}
+
+[data-termynal]:before {
+    display: none;
+}
+
+</style>
+
+<div id="termynal" data-termynal data-ty-typeDelay="110">
+  <span data-ty data-ty-prompt="|">LOGIN REQUEST SENT</span>
+  <span data-ty-prompt="|">AUTHORIZING...</span>
+  <span data-ty="progress"></span>
+  <span data-ty></span>
+  <span data-ty data-ty-prompt="|">IF YOU'RE SO SURE YOU'RE SUPPOSED TO BE HERE, THEN I'M SURE YOU MUST KNOW,</span>
+  <span data-ty data-ty-prompt="|">DOES THE BLACK MOON HOWL?</span>
+  <span data-ty="input" data-ty-prompt=">">If he feels like it, I guess.</span>
+  <span data-ty data-ty-prompt="|">DON'T DO ANYTHING STUPID.</span>
+  <span data-ty data-ty-prompt="|">PLEASE ENTER YOUR CREDENTIALS BELOW, GABRIEL JADE.</span>
+</div>
+
+<!-- include and initialise termynal.js -->
+<script src="https://cdn.rawgit.com/deadsurgeon42/scp-sources/6cf60652/scp-4000-samualism/termynal.js" data-termynal-container="#termynal"></script>
+
+</body>
+[[/html]]
+
 
 [[size large]]Further access is restricted to level 4 personnel.[[/size]]
 
@@ -103,6 +141,8 @@ The narrative shifts to a new human at the beginning of each new line following 
 
 [[/collapsible]]
 
+@@@@
+@@@@
 @@@@
 @@@@
 @@@@
