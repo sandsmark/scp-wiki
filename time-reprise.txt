@@ -1118,13 +1118,13 @@ This terminal has been inactive for 160 seconds. REMINDER: Your session will be 
 @@...@@
 
 TRACEBACK (RECENT CALL LAST):
-@@  @@File "/myrmid/files/_data.py", line 72, in signal
+@@  @@File "/mgk/files/_data.py", line 72, in signal
 @@     @@server.client != False
-@@  @@File "/myrmid/files/_console.py", line 19, in __call__
+@@  @@File "/mgk/files/_console.py", line 19, in __call__
 @@     @@return self.console(*self.args)
-@@  @@File "/myrmid/files/_console.py", line 3, in index
+@@  @@File "/mgk/files/_console.py", line 3, in index
 @@     @@raise NotImplementedError(value)
-NotImplementedError: Segoe Script Bold
+NotImplementedError: mgk
 
 @@...@@
 
@@ -1156,7 +1156,8 @@ NotImplementedError: Segoe Script Bold
 
 @@ @@
 
- >> [[=image magic.png]]
+ >> [[=image magic1.gif]]
+ [[=image magic2.gif]]
 
  >> 😎
 [[/div]]
