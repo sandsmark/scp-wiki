@@ -3,6 +3,12 @@ parent:scp-2641
 [[module css]]
 a.collapsible-block-link { font-weight: bold; }
 [[/module]]
+[[module css]]
+@import url(https://fonts.googleapis.com/css?family=Architects+Daughter);
+
+.letter {
+    font-family: 'Architects Daughter';font-size: 16px;font-weight: 500;}
+[[/module]]
 [[>]]
 [[module Rate]]
 [[/>]]
@@ -14,7 +20,7 @@ a.collapsible-block-link { font-weight: bold; }
 
 Upon formal contact, the tribe was designated Isolados do Rio Branquinho, and referred to themselves as the //Emparelhada//. The tribe was noted to be particularly defensive of their territory but was otherwise not overly violent for a tribe of its size. As the tribe exhibited no anomalous activity, Foundation personnel were not made aware of its existence.
 
-In 2003, Foundation sleeper agents within FUNAI discovered an anomaly associated with the //Emparelhada// tribe. After an investigation, the anomaly was designated [[[SCP-2641]]], while the tribe was designated GoI-2641.
+In 2003, Foundation sleeper agents within FUNAI discovered an anomaly associated with the //Emparelhada// tribe. After an investigation, the anomaly was designated SCP-2641, while the tribe was designated GoI-2641.
 
 The following information further pertains to the discovery of GoI-2641:
 
@@ -22,14 +28,16 @@ The following information further pertains to the discovery of GoI-2641:
 * FUNAI census data confirmed that the group was composed of approximately 1,500 individuals upon discovery. Current estimates place the tribe's size at 2,000 individuals. No other group in the region has maintained a population in that size range.
 * The group routinely participates in the ritual impalement of undesirable individuals[[footnote]]Members that commit conduct that goes against the nature of the tribe.[[/footnote]], which is adequate in ensuring population control.
 
-Prior to Foundation intervention, the latest documented study of GoI-2641 was done under Researcher [DATA LOST][[footnote]]"[DATA LOST]" remains the designated placeholder for the identity of the person in question. As his whereabouts currently remain unknown, the placeholder will remain until both his existence and identity are confirmed.[[/footnote]], a FUNAI operative. The study of the tribe was detailed in his personal journal. No other documents related to [DATA LOST] or his studies have been found at this time.
+Prior to Foundation intervention, the latest documented study of GoI-2641 was done under FUNAI operative [DATA LOST][[footnote]]"[DATA LOST]" remains the designated placeholder for the identity of the person in question. As his whereabouts currently remain unknown, the placeholder will remain until both his existence and identity are confirmed.[[/footnote]]. The study of the tribe was detailed in his personal journal. No other documents related to [DATA LOST] or his studies have been located.
 
-**Journal Logs:** The following two accounts are excerpts from the transcribed version of [DATA LOST]'s personal journal. They have been translated from Portuguese. Extraneous journal entries have been omitted.  
+The following are excerpts from the transcribed version of [DATA LOST]'s personal journal, translated from Portuguese. Extraneous journal entries have been omitted.  
 
-[[collapsible show="► Journal Log 1" hide="▲ Close" hideLocation="bottom"]]
+[[collapsible show="► Access: Journal Log 1" hide="▲ Close" hideLocation="bottom"]]
 Journal Log 1 was recorded in a nondescript spiral notebook. No identification markings related to the owner of the notebook were present. The original is presumed lost, and no records regarding the means by which the data was collected have been found. Reports of a fire are being investigated by members of the Foundation within FUNAI research storage. FUNAI operatives are not aware of any ongoing investigation into the matter.
 
-[[div style="background:#f2f2f2; padding:3px; margin-bottom: 3px; margin-top: 3px; margin-right: 50px; margin-left: 50px; width: 80%; float:none; padding-left: 20px; padding-right: 20px;"]]
+[[div class="letter"]]
+[[div style="padding-top:15px;padding-bottom:15px;"]]
+[[div style="display:block;margin:auto;width:90%;padding:30px;border:solid 1px #112211;background:#f2f2f2;"]]
 **24/04/2003:** 48 hours ago, a flyby of the region discovered a maloca about four clicks north of HQ. The navigator aboard the helicopter suggests that it must be the //Emparelhada// tribe: the design is similar to previously documented buildings belonging to the tribe. Now, we're not at liberty to make guesses here. But based on the picture taken by in-flight surveillance, I'm inclined to believe it. 
 
 There is one thing to keep in mind: We've been out of contact with the tribe in question for more than twelve years. I'm not about to put the blame on anyone within this organization. It's just that the group appeared to drop off the face of the Earth without warning. Their village was abandoned, and neighbouring tribes seemed just as confused as we were.
@@ -37,6 +45,8 @@ There is one thing to keep in mind: We've been out of contact with the tribe in 
 To be out of contact with a tribe for that long? If the Brazilian government found out that FUNAI had gotten so negligent, our already run-dry budget would be sliced in half. Of course, I'm overreacting, but the strange nature of this situation is not something to take lightly. We need to keep tabs on the indigenous populations in this region, not just for information gathering. Or anthropological study. But because they rely on us for protection. And if we aren't around, then what's stopping outside forces from making a mess of our work? Of their livelihood?
 
 It's too soon to determine what the reason for their movement was (as I'm not about to actually consider that they did vanish from the face of the planet). It's too soon to even assume it's them. The only way to find out is to make contact, and I've assembled four men to assist me with getting to the bottom of this. We should be leaving tomorrow morning.
+[[/div]]
+[[/div]]
 [[/div]]
 
 [[include component:image-block name=javari-valley-maloca.png	|caption=A picture of the maloca, taken during a routine flyby of the area on 24/04/2003.]]
@@ -50,23 +60,37 @@ It's too soon to determine what the reason for their movement was (as I'm not ab
 
 Of the aforementioned personnel, none were documented to have had any previous contact with the tribe, and are not believed to have been involved in any anthropological studies regarding the tribesmen.
 
-[[div style="background:#f2f2f2; padding:3px; margin-bottom: 3px; margin-top: 3px; margin-right: 50px; margin-left: 50px; width: 80%; float:none; padding-left: 20px; padding-right: 20px;"]]
+[[div class="letter"]]
+[[div style="padding-top:15px;padding-bottom:15px;"]]
+[[div style="display:block;margin:auto;width:90%;padding:30px;border:solid 1px #112211;background:#f2f2f2;"]]
 **25/04/2003:** We decided to set up camp for the night next to a river. I believe this river actually intersects with three different indigenous populations if one were to travel downstream. I reckon it should still be another couple of days to the north before we come upon their general area. And that's when the situation gets sticky. Nobody wants to get themselves into trouble in the heart of the Amazon.
 
 I suppose it doesn't hurt to ruminate on the tribe. I'm more connected to this particular group of Indians than any in the region. I was actually a part of the initial discovery party when I first joined FUNAI! It's been 30 long years since, hasn't it? Fabian keeps floating over my shoulder, joking about how old I am every once in a while. And only Joaquin laughs, but am I truly surprised? 
 
 Speaking of Joaquin. We had a nearly hour-long discussion about the most horrible things. Basic drinking night talk. I entertained the horrifying idea of [[[SCP-2003|Amazonian wandering spiders taking over the world]]]. Joaquin entertained the idea that I managed to remain married to my wife after all these years. I can admit that even I laughed at that. If only a little bit.
 [[/div]]
+[[/div]]
+[[/div]]
 
-[[div style="background:#f2f2f2; padding:3px; margin-bottom: 3px; margin-top: 3px; margin-right: 50px; margin-left: 50px; width: 80%; float:none; padding-left: 20px; padding-right: 20px;"]]
+[[div class="letter"]]
+[[div style="padding-top:15px;padding-bottom:15px;"]]
+[[div style="display:block;margin:auto;width:90%;padding:30px;border:solid 1px #112211;background:#f2f2f2;"]]
 **27/04/2003:** I went for a walk last night. It was too dark to be particularly safe, and I suppose I should have been more careful. But maybe it's time I lightened up, like Fabian and Joaquin. I used to be like them when I first joined. I spent a while last night gazing up at the stars through the foliage, just to let my imagination flow. About everything. I don't get the opportunity to do that too often these days. It makes me wonder what I've missed all these years. My family. My dear Cátia.
 [[/div]]
-
-[[div style="background:#f2f2f2; padding:3px; margin-bottom: 3px; margin-top: 3px; margin-right: 50px; margin-left: 50px; width: 80%; float:none; padding-left: 20px; padding-right: 20px;"]]
-**28/04/2003:** In the early evening, we happened upon an outpost, which I believe was the one spotted during the initial flyby last week. Nothing too extravagant: a one-room maloca, dilapidated and abandoned for who knows how long. It certainly doesn't deviate from the way they plan their settlements if this truly is the mark of their tribe. A discovery such as this is great news, and it means we must be close to their settlement. 
+[[/div]]
 [[/div]]
 
-[[div style="background:#f2f2f2; padding:3px; margin-bottom: 3px; margin-top: 3px; margin-right: 50px; margin-left: 50px; width: 80%; float:none; padding-left: 20px; padding-right: 20px;"]]
+[[div class="letter"]]
+[[div style="padding-top:15px;padding-bottom:15px;"]]
+[[div style="display:block;margin:auto;width:90%;padding:30px;border:solid 1px #112211;background:#f2f2f2;"]]
+**28/04/2003:** In the early evening, we happened upon an outpost, which I believe was the one spotted during the initial flyby last week. Nothing too extravagant: a one-room maloca, dilapidated and abandoned for who knows how long. It certainly doesn't deviate from the way they plan their settlements if this truly is the mark of their tribe. A discovery such as this is great news, and it means we must be close to their settlement. 
+[[/div]]
+[[/div]]
+[[/div]]
+
+[[div class="letter"]]
+[[div style="padding-top:15px;padding-bottom:15px;"]]
+[[div style="display:block;margin:auto;width:90%;padding:30px;border:solid 1px #112211;background:#f2f2f2;"]]
 **30/04/2003:** It took us until mid-day yesterday to come to the village. It wasn't long until someone found us. Three boys, couldn't have been much older than ten, twelve. Based on the patterns painted on their foreheads, they were definitely members of the //Emparelhada// tribe. They flanked us. They had spears. I made sure to be wary about my distance and mannerisms. But there was no preventing what happened.
 
 When they approached us, Joaquin flashed a gesture of peace typically used by the Indians in the region, and a word of greeting in their dialect. What he received was a spear to the thigh. And if that wasn't bad enough, well, I don't know what in God's name was in that spear, but I've never seen that kind of damage. At the point of contact, his flesh exploded in every direction[[footnote]]The spear in question has been determined to be an instance of SCP-2641-1. The spear appears to have been subverted to the extent that the applied force exits the spearhead in all directions, rather than in a single direction.[[/footnote]]. Gutted his leg. It defied logic. He fell to the ground at once. Fabian vomited. As bad as it was, I couldn't take my eyes off it. 
@@ -75,20 +99,28 @@ The damage was done. Joaquin couldn't be moved without causing incredible pain, 
 
 We ran. Luckily, the boys didn't follow us. But I think their plan was to scare us off. It's as if they were protecting the village from us, or protecting us from the village. Our fallback plan was the maloca. From there, we could call for a medical evacuation, and get him home safe. I was going to call for reinforcements. I had to. Anything to ensure the safety of the FUNAI agents that serve under me, and the safety of the tribe. 
 [[/div]]
+[[/div]]
+[[/div]]
 
-[[div style="background:#f2f2f2; padding:3px; margin-bottom: 3px; margin-top: 3px; margin-right: 50px; margin-left: 50px; width: 80%; float:none; padding-left: 20px; padding-right: 20px;"]]
+[[div class="letter"]]
+[[div style="padding-top:15px;padding-bottom:15px;"]]
+[[div style="display:block;margin:auto;width:90%;padding:30px;border:solid 1px #112211;background:#f2f2f2;"]]
 **1/05/2003:** Vincent, our physician, was the most concerned for Joaquin. The spear ruptured his femoral artery, and the impact crushed his pelvis. We had his thigh bound up, administered some morphine. But Vincent claimed he wouldn't last long in his condition. That he needed evac //hours ago//.
 
 I called HQ, and our flare was visible in the early morning. Joaquin was airlifted. We've been told he'll be hospitalized in the Immediate Care ward of HQ for quite some time, and in the Lord's name, I pray he'll be alright. They're sending reinforcements tomorrow. I told them that I won't allow anyone to be armed, but despite the situation, HQ insists that we aren't to approach that village without protection.
 
 I don't want any lives to be lost because of this endeavour. I don't want to lose you, Cátia. But we have to get to that village. As far as I'm concerned, it's our duty.
 [[/div]]
+[[/div]]
+[[/div]]
 [[/collapsible]]
 
-[[collapsible show="► Journal Log 2" hide="▲ Close" hideLocation="bottom"]]
-Journal Log 2 is independent of the first log and was recorded on a page of non-ruled paper. The page was seemingly ripped from the personal journal, as its material and specifications align with that of the journal. It was located in a FUNAI base camp at the south-east border of the Javari Valley. The account is framed in the same structure as the first account, confirming the connection between the two. The account is addressed to one Cátia Ferreira. However, the address appears as though it was subsequently appended to the top of the page.
+[[collapsible show="► Access: Journal Log 2" hide="▲ Close" hideLocation="bottom"]]
+Journal Log 2, independent of the first log, was located in a FUNAI base camp at the south-east border of the Javari Valley. The account is framed in the same structure as the first account, confirming the connection between the two. This particular account is addressed to one Cátia Ferreira. However, the address appears as though it was subsequently appended to the top of the page.
 
-[[div style="background:#f2f2f2; padding:3px; margin-bottom: 3px; margin-top: 3px; margin-right: 50px; margin-left: 50px; width: 80%; float:none; padding-left: 20px; padding-right: 20px;"]]
+[[div class="letter"]]
+[[div style="padding-top:15px;padding-bottom:15px;"]]
+[[div style="display:block;margin:auto;width:90%;padding:30px;border:solid 1px #112211;background:#f2f2f2;"]]
 My dear Cátia. I may never see you again. The damage has been done. I hope they manage to retrieve this letter so that you might understand. So that you might forgive me. Never forget me. I love you.
 
 **11/05/2003:** They dispatched Team 04-D a few days ago. The team was composed of four soldiers, all armed with M16s, and wearing Kevlar vests. They made sure to outfit us with the vests as well. --As if Kevlar could do anything to prevent against exploding spears.-- We entered the village from the south but weren't met with opposition. The village seemed vacant. We sat in the bush for an hour waiting for someone, something. Nothing.
@@ -134,5 +166,7 @@ But the paintings showed darker truths. Our struggles. You were alone. And then 
 And then it showed more recent events. The outpost. What they did there. How was I so blind to it? They sacrificed their own people to that thing! I don't even think they knew what they were doing. But it must have worked to appease it. And now I know, that there must be another way to stop it. I knew, and I don't want to know. I wept, and even now, I weep. They built that place to keep it at bay. To keep it from growing. They were trying to save us all. But we interfered. We did not see. But I do. Their only survival, my survival, lies in its destruction. 'Eljor shall cease to be. And I fear, so shall I.
 
 Cátia, I want you to see. You already know. But now you must see. And maybe then we can be together. For our sake.
+[[/div]]
+[[/div]]
 [[/div]]
 [[/collapsible]]
