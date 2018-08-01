@@ -1,0 +1,363 @@
+title:SCP-4000: Big Brozart is Watching You
+[[module CSS]]
+/* Hide the collapsible link once it's been expanded */
+.collapsible-block-unfolded-link .collapsible-block-link, #breadcrumbs {
+  display: none;
+}
+
+/* Make superscripts not fuk with the line spacing */
+sup {
+  vertical-align: top;
+  position: relative;
+  top: -0.5em;
+}
+
+/* Haha blue boi, or peach boi, courtesy of Croquembouche */
+.outside {
+  margin: 2em -6em;
+  padding: 1em 10em;
+  --narration-color: rgba(255, 204, 204,1);
+  background: var(--narration-color);
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, var(--narration-color) 20%, var(--narration-color) 80%, rgba(255,255,255,0) 100%);
+  z-index: -2;
+}
+
+/* Make the peach bois that are within the document have smaller margins so they break flow less*/
+.outside.inline {
+  margin: 1em -6em;
+  padding: 1px 10em;
+}
+
+/* Force the side bar to render on top of the blue bois */
+#side-bar {
+  z-index: 2;
+}
+
+/* Hide the original page title */
+#page-title {
+  display: none;
+}
+
+/* Make my fake page title look like the original (thanks SCP-2998) */
+.page-title {
+  border-bottom: solid 1px #bbbbbb;
+  color: #990011;
+  font-weight: normal;
+  margin: 0 0 0.6em;
+  padding: 0 0 0.25em;
+  font-size: 200%;
+}
+.page-title p {
+  margin: 0;
+}
+
+@media only screen and (max-width: 1040px) {
+  .outside {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding-left: 3em !important;
+    padding-right: 3em !important;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+[[/module]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[div class="outside"]]
+It's been two whole days. 
+
+You've climbed up God knows how many floors of this building, bypassed God knows how many beeping gateways and laser beams, and snuck past God knows how many security staff. You've braved Vivaldi's //Four Seasons//, dodged Tchaikovsky's //1812 Overture// cannons, sailed across Strauss's //Blue Danube.// You've traversed through Grieg's //Hall of the Mountain King//, shrugged off Chopin's //Raindrops//, and made it past Wagner's //Ring// of fire. You've braved Beethoven's storms and weaved through Bach's harmonies. And now you are here. On the top floor of the Ministry of Music. Alive, for some reason. A bit soaked though.
+
+You survey your surroundings. Right before you is a single long hallway, minimally furnished. At the end of that hallway is a single door. That door should be it. That door's hidden behind thick layers of security and perilous musical barriers. There's no way there aren't important things behind that door. Top-secret confidential documents. The answers to all your questions. That's why you crawled all the way here. 
+
+//Answers, dammit. I just wanna know why things ended up like this.//
+
+You wring the seawater and rainwater out of your sweater into a potted plant and head towards the door. 
+
+You give the fingerprint sensor knob a twist. Door's not locked. Might be because the last person to leave forgot to lock the door. Might also be because the security measures earlier negated any need for locks on doors. Might also be because you are simply too insignificant to deserve any form of acknowledgement whatsoever.
+[[/div]]
+
+[[div class="outside"]]
+The door opens to a small room gratuitously stacked full of Mozartkugeln boxes, Mozart scorebooks, Mozart figurines, Mozart posters, Mozart souvenirs, Mozart biographies, Mozart plushes, Mozart sex toys (??), Mozart blow-up dolls (????), Mozart everything. This place looks like it could be a fanatic's dungeon, the sheer concentration of Mozart oppressive to the point of being ridiculous. 
+
+This was not at all helped by the gigantic poster of Mozart on the opposite wall. 
+[[/div]]
+
+[[=image brozart.jpg]]
+
+
+[[div class="outside"]]
+//Snort.// "Big Brozart is Watching You." God, how edgy is this kid gonna get? This is just about the dumbest, cheesiest thing you've seen in your entire life. What's he thinking of with this? The slogan's just too silly to be intimidating. Does Mozart like to imagine himself being observed by Mozart while he's getting off to Mozart?
+
+//Okay, maybe let's not think about that...//
+
+You notice a rectangular shape just barely poking out of the sea of Mozart paraphernalia. Upon closer inspection, it's a small laptop on a table. The laptop is open. The film of dust on the screen suggests that the last person who used it forgot to turn it off a long time ago. 
+
+You sit on a pile of Mozartkügel boxes and check out the laptop. There are some fifteen Internet tabs open and it looks like all of them are about Mozart. You're not surprised. This kid's really got a problem. You think about sending him to a therapist. Even though you know you can't because you know you aren't going to be taken seriously anyhow.
+
+One tab however stands out and catches your attention. It's not some Mozart stuff, but has the acronym "SCP" on it. 
+
+You remember hearing about the SCP Foundation on the gramophone. Recently they've been broadcasting something about signing a treaty of alliance with the SCP Foundation or something like that. This SCP Foundation is apparently some kind of powerful outside world organization that manages the relations between the human and supernatural world and conducts research on unusual phenomena. The broadcasts didn't say much else about it, other than that the alliance with the organization shouldn't be something to worry about.
+
+You wonder what this alliance is about, if the SCP Foundation can do anything to help you. To help all those who are being oppressed because of Mozart. To help all the composers and musicians of the past, the present, and future.
+[[/div]] 
+
+@@@@
+@@@@
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+@@@@
+@@@@
+@@@@
+
+[[div class="page-title" style="display: block;" id="#page-title"]]
+SCP-4000
+[[/div]] 
+
+[[include component:image-block name=mozartstreet.jpg|caption=Street photograph taken in SCP-4000]]
+
+**Item #:** SCP-4000
+
+**Object Class:** Safe
+
+**Special Containment Procedures:** The caste system exercised by the population of SCP-4000-A is to be perpetually maintained. The Foundation-Mozart Alliance Protocol is to be constantly upheld to ensure social order within the bounds of SCP-4000. Details of the Foundation-Mozart Alliance Protocol are accessible to personnel with Level 3/4000 Clearance and up. SCP-4000 is otherwise self-contained and requires minimal containment procedures.
+
+**Description:** SCP-4000 is an extradimensional totalitarian city-state covering an area of approximately 900 km², located in the Austro-German region. SCP-4000 is architecturally similar to the city of Prague, consisting of buildings in a variety of styles ranging from Renaissance to Victorian. SCP-4000 is normally inaccessible to human beings unless an interdimensional aperture is created.
+
+SCP-4000 is populated by humanoid entities designated SCP-4000-A. Instances of SCP-4000-A physically resemble //Homo sapiens//, but are roughly 60% comprised of anomalous longitudinal waves and do not require physical sustenance nor biologically age. A distinctive characteristic of SCP-4000-A is that each individual instance corresponds to a well-known classical composer and/or musician who is currently deceased (i.e. Wolfgang Amadeus Mozart, Franz Schubert, Richard Wagner). The conception of SCP-4000-A instances is a poorly understood process at the time of writing, although it is theorized that instances spontaneously manifest upon the expiry of their human counterparts. 
+
+[[div class="outside"]]
+You think of all the famous composers you've seen popping into existence. Bach, Haydn, Liszt, all of those guys. You remember how they'd say they felt like they've come home to the blessed land where music is born, or something to that effect. You remember welcoming them into this musicians' heaven. Suddenly you realize how old you are. 
+
+You pause your reading. You dwell on that realization for a moment. Memories start flooding back into your head. 
+
+Memories of a happier time when heaven was not swamped in Mozart. A happier time when heaven was a much better place. 
+
+Your memories of the past have dulled over time, but still they remained despite all the propaganda that's been pumped into your ears over the past several decades. You close your eyes and think about the past. 
+
+For a moment, you feel at peace. This land was free and democratic. Composers and musicians had equal rights, equal say, and the guys who got to be in the main musical canon - that is, in charge - they were always updating their styles and aspirations to best suit the current artistic climate. There were often passionate debates over certain musical styles, but none of them came close to damaging the musical canon as it was. Life was fair and good, and at the end of the day, everyone was a classical musician, and a mutual passion for music and art kept everyone tightly together.
+
+Things are different now. You have no clue how it happened and you're still befuddled. Now practically everything is Mozart. You don't even know when it happened. You estimate it started after the Great War, but it could have started two years ago, or even five, ten, twenty, fifty. Everywhere you're hearing the name "Mozart". How he was a prodigy. //This man had written his first concerto at the age of four; his first symphony at seven; a full-scale opera at twelve.// How he was prolific and wrote lots. //Over his short lifetime of thirty-five years, Mozart wrote six hundred and twenty-six known pieces, each and every one objectively a masterpiece.// How listening to his music makes people more intelligent or something. How he had some sort of God-given genius no other composer ever had. How he was the greatest composer in all of classical music history. And it just goes on and on without end. Mozart on every musical program. Mozart playing from every radio and speaker. Mozart in movies, plays, art, literature. Mozart and Mozart and more Mozart. You can't hide from Mozart. 
+
+//Big Brozart is Watching You.//
+
+Guess that slogan is fitting.
+
+Curious for more information, you continue reading the document.
+[[/div]]
+
+Most instances of SCP-4000-A are capable of voluntary emission of reality-altering longitudinal waves, the intensity of which is directly proportional to each composer/musician's mass appeal. The effects of reality alteration may vary according to each individual's personal preferences and creative endeavors. 
+
+The SCP-4000-A population maintains a caste system in which individuals are divided into different social groups based on the relative real-world popularity of their respective composer/musician. For instance, the highest-ranking SCP-4000-A instances correspond to the most well-regarded composers, and reshuffling of the instances' relative status positions is held twice a year. Instances' lifestyles are determined by status: higher-ranking instances are allowed free access to high-quality meals and alcohol and see high involvement in projects relating to infrastructure, governance, and art, while lower-ranking ones are only permitted access to mediocre resources and tend to have menial jobs such as housekeeping.
+
+[[div class="outside"]]
+You remember when you used to be a well-respected composer. A highly-regarded one, even. You were Johann Pachelbel, intrepid organist, brilliant composer, and an all-round exemplary figure. The great Johann Sebastian Bach even told people he couldn't have gotten anywhere if he hadn't known and studied your work. Maybe you weren't a star, but you were acknowledged and respected. Treated with basic human decency, like any artist should be treated.
+
+Now you're Johann Pachelbel, a nobody, a trivial detail lost in in a sea of dazzling brilliant minds. A third-rate, unmemorable mediocrity whose only noteworthy contribution to the history of Western music in its entirety is a piece of overplayed hackwork known as the Canon in D Major. Currently, besides being the "Canon in D guy", your only noteworthy characteristics are that you are a janitor and you seem to be invisible sometimes. Not even the shuffling of societal positions has changed your social standing. You were always stuck at the lowest level of the caste. At the very least, the thought that you can't get any lower than you already are is a bit reassuring.
+
+You muse over this caste system which you and your people have been shoehorned into. It lines up with how the musical canon has changed since a long time ago. What used to be a fluid musical canon has now mutated into one that's had three specific people consistently at the top: Beethoven, Bach, and that guy known as Mozart. You could see why Beethoven and Bach were seen as the most important in establishing what classical music is. Beethoven's new and unusual outlook on composing music revolutionized classical music and turned it from a craft to an art. Bach's tuning method, keyboard exercises, and technical proficiency has earned him high regard, especially after a composer named Mendelssohn did much to promote Bach's works around the world. 
+
+But Mozart? What did he do that was so significant as to earn him such a high position? Why is he even so high up there in the first place?
+
+Your first suspect is Mendelssohn. You've heard a few things about this person. From what you heard, he'd done a lot to establish the importance of studying and preserving music history, and he laid the groundwork for the musical canon. Mozart's praised him profusely for that - he's even said that we only exist because of Mendelssohn.
+
+But the thing is, you've never even seen Mendelssohn, nor have you heard him speak on the broadcasts. You don't even know if he actually exists. For all you know he could very well be a fictional composer Mozart fabricated as propaganda. After all, the facts line up. The broadcasts speak of Mendelssohn as a legendary prodigy of Mozartean precocity, who wrote masterpieces as a teenager and died tragically young like Mozart did. //The Mozart of the Nineteenth Century.// Totally not Mozart's self-insert at all, right?
+
+You think about how ludicrous Mozart's propaganda is. Coincidentally, the next paragraph of the document mentions the technology that Mozart uses to feed propaganda to every composer in the city. You read on.
+[[/div]] 
+
+High-ranking instances within the population of SCP-4000-A have devised anomalous technology which sees widespread use within SCP-4000. Examples of such technology produced by SCP-4000-A include ambient Hume stabilizers, memory-space libraries and musical instruments that can be collapsed into coin-sized tablets to facilitate transport. One widespread use of anomalous technology in SCP-4000 is the installation of a radio-like device known as a 'gramophone' embedded in the inner ear. Said device is capable of picking up anomalous longitudinal wave transmissions as well as telepathically transmitting the thoughts of one individual to numerous others with the same device. This device usually plays broadcasts of classical music and the news. Broadcasting is conducted through mass transmission of the thoughts of one instance connected to a Cerebral Sound Receptor Device (CSRD). Research on SCP-4000 anomalous technology for purposes of furthering Foundation technology and containment implements has been approved and is currently underway.
+
+[[div class="outside"]]
+The gramophone. You don't know what it looks like, or exactly when it first got into your ears, but you've had a strong understanding of what it does. The document is right in that for the most part the gramophone just plays classical music and the news. But it also plays people what other people say and think about them. That was the worst part. Most composers got feedback that was more positive, but for your case it was nearly all personal attacks and faint praise. //Worthless. Cellist hater. One-hit wonder.// You can practically recite all these slights by memory, that's how often you heard them. By this point you've more or less grown numb to the insults, but you can't help still feeling the faintest pang of heartbreak when they come at you. At the very least you could turn the volume down.
+
+Usually it's the muffled tenor voice of a composer named Schubert you'd be hearing on these broadcasts. Schubert is a kind-looking composer with round glasses who idolizes Mozart and likes to sing. Schubert, you feel, is also a little bit //off//. He presents himself as bubbly and cutesy, but something about the way he talks makes him come off as affected and robotic. It also sounds like all his speech is scripted. 
+
+You dwell on the topic of Schubert a bit more. That man was like a computer. It seemed like he had no autonomy and was just a machine automatically performing a function 24 hours a day, 7 days a week, taking next to no breaks and showing no sign of displeasure. It was creepy how Schubert never seemed to falter, get tired, or feel unhappy. Also, aren't those his //thoughts// you're hearing? Why are his thoughts so rigid and lifeless? How much external information exactly is going through his head? Is he capable of thinking for himself at all?
+
+//"Schubert is neurologically enhanced with a lab-grown strain of Treponema pallidum that makes him capable of processing and transmitting up to ten thousand trains of thought at once! Schubert is the most reliable news anchor, feedback messenger and DJ and is always up-to-date! Come connect with Schubert on your gramophone today!"//
+
+Speak of the devil. One of Schubert's scripted lines sounded over the gramophone at that moment. You dismiss it as coincidence, but it's still creeping you out.
+
+It could have been worse, you think. At least it's not as disturbing as the Five Minute Cacophony. The Five Minute Cacophony is something you wince a little when you think about, but everyone is forced to listen to it at full volume when it happens. It's five long minutes of loud warnings against "dissent", and how there were some people in the past who had committed grave offences that hurt Mozart. Usually the offences were attempted sabotage due to envy and hatred, and the evidence for that was usually some form of criticism of Mozart or the administration. The culprits were always publicly shamed and denounced with a burning vitriol that knotted your insides like a French horn. You knew the Cacophony was never about you, but when it happened, terror and shame caught up with you anyway.
+
+The criminal most often shamed during the Cacophony is a composer named Salieri. He's said to be the first and most dastardly of the envious conspirators seeking to dethrone Mozart for once and for all. Salieri was described as a cruel, manipulative, unempathetic, even narcissistic man who didn't have any genuine passion for music and only desired attention. You were glad Salieri was caught and sent to prison. He seemed like a really nasty guy and you sure as hell didn't want to bump into anyone who was like that. 
+
+However, part of you didn't quite buy what was being said during the Five Minute Cacophony. You vaguely remember meeting Salieri a long time ago. As far as you can recall, he was decent and didn't do anything suspect. Even if people can change over time, you can't help but feel like he was being unfairly demonized for propaganda purposes, and that he did nothing to merit his current treatment. After all, you've never even heard him confess to anything or share his side of the issue - it was just purely what the authorities said about him that was broadcasted to the public. You're willing to entertain the possibility that he was wrongfully accused. Or even that he was being exploited.
+
+Your train of thought of leads you to further pondering about how the changes in society have changed the people. It honestly really does seem like every composer has become like Salieri and Schubert - manipulated, taken advantage of and stripped of all autonomy. These musically gifted people used to be independent and individual - now they meekly submit and cater to the whims of one man. They used to be bold and confident - now they act as if they are nothing compared to that one man. You wince. This is ridiculous. This is //wrong//. Yet nobody has ever done anything about it. It's because they've been forced to adopt inferiority complexes, you're certain of that. You feel like no one dares to do anything of note because Mozart is just too powerful and too good for them. You feel your blood boil.
+
+//Stay calm, Johann. You mustn't get angry or you'll end up saying or doing something you shouldn't. And if you make a mistake, that's the end of you. You have to stay incognito.//
+
+You take a deep breath to drown your rage. There's a long blank space underneath the last paragraph. You're going to have to scroll for a bit.
+[[/div]]
+
+@@@@
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+@@@@
+@@@@
+@@@@
+
+> **NOTICE:** This file is an abridged version of the official SCP-4000 documentation, intended for purposes of mass distribution. Access to the full document, along with the Foundation-Mozart Alliance Protocol, is restricted to Level 3/4000 personnel and above. Any further enquiries regarding SCP-4000 are to be submitted to Project Head Dr. Frances Seward via email.
+
+@@@@
+@@@@
+@@@@
+
+[[div class="outside"]]
+That's it? That's all there is to this file? An abridged copy you are probably going to receive in the mail sometime later? You feel duped. This is unfair. But then again you can't expect the bigwigs to treat you fairly since you're worth about as much as a speck of dust to them. You scour the webpage. The email address of Dr. Frances Seward, presumably a Foundation personnel with some degree of authority, is in small print at the bottom of the page. You need to contact them. Those guys don't have a clue what they've gotten themselves into. You think of sending a message to them telling them to stop this totalitarian madness and save everyone. You have no choice. Tell them that the Mozart they have signed an agreement with is really a horrible ruthless dictator. Tell them that Mozart forces people into horrible living conditions. Tell them that Mozart forces everyone to believe they will never be-
+
+//"It's a wonderful day today! Clear skies, all systems in check, beautiful music all 'round! How are you feeling? It's fine even if you're feeling a little down, because things will surely get better and you will be happier!"//
+
+Your train of thought is conveniently interrupted by Schubert in his usual smiley voice. He's said that exact same thing at least five times today. And when is he going to shut up? If he kept his mouth zipped at least he won't risk interrupting anyone's train of thought.
+
+You force yourself to ignore him. Any distraction that can slow your pace may lead you to your demise.
+
+//"Ah, sorry about sidetracking - next up I'll be playing Mozart's Don Giovanni overture. Did you know that the composer put off writing this piece until the night before its premiere? Despite this, it's still a masterpiece for the ages, and it's proof that you can rush your projects last-minute and have them still be outstanding if you work hard and make good use of your natural gifts!"//
+
+//"Ooh, no...I can't play that right now. My signals are getting interrupted! Uhhh...it's uh, hang on a moment, let me find out where it is...oh! I'm hearing a pattern of eight notes! And it's in D Major key. Mmhm, sounds a lot like Pachelbel's Canon, doesn't it? Uh, actually, no, it's not! I think I might be picking up sound waves from a human radio station! I apologize for this mistake. Schubert will take better care of himself next time! In the meantime, you can expect to connect with Schubert sometime again after about a half hour! Ciao!"//
+
+You freeze. Something feels wrong. Then it hits you. 
+
+He's found you. 
+
+Run.
+
+[[/div]]
+
+[[div class="outside"]]
+You want to run, but the sound of boots thumping outside the room stop you from moving. 
+
+You're trapped now. Nowhere to run. They've come to get you. 
+
+The door swings open. In walks Wolfgang Amadeus Mozart in full dress uniform, cape billowing, the spitting image of the poster. He holds a sword out as if he's prepared to dismember someone. And he's looking right at you. Straight in your eyes.
+
+Might as well accept your fate then. Better to die on your feet than live on your knees.
+[[/div]]
+
+[[div class="outside"]]
+Mozart drops his sword on the floor and bursts out laughing.
+
+//"Oh man, I can't believe this! Look what walked right into my trap! You should've seen the look on your face. Oh God, that was amazing...still can't get over how the Mozart sex toys got a rise out of you. Well, man, you gotta thank my buddy Richard Wagner for that. That was his idea. Richard you evil genius...oh yeah! He did that poster too! He made that lovely thing for me, so you gotta credit him for that, 'kay?"//
+
+Further laughing. It isn't reassuring at all.
+
+//"Man...it's a real real pity that I'm gonna have to drag you off to the shitter 'cause you were a really funny special guest on today's broadcast. Quite probably the best ever, in fact. Seriously! You were gut-bustingly hilarious..."//
+
+//"Hey Richard? Can you, like, do the thing? I'm laughing too damn hard to move my ass."//
+
+Richard? Wagner is with him too?
+
+Before you can think of anything else, you hear the sound of every musical instrument in the orchestra playing at once. And then you hear nothing.
+[[/div]]
+
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+.
+@@@@
+@@@@
+@@@@
+
+[[div class="outside"]]
+It's been some two, three, four days? 
+
+You just don't have the faintest clue anymore. You're back in your apartment, but other than that, you're hardly sure of anything else. It all feels like a bad dream. Discordant noises of whistling and screeching ring and echo in your ears. Fissures on the wall contort and dance. You feel around with your hands, but you can barely feel the floor beneath. Your body feels like it's not here and everywhere at the same time. Tired, lost, utterly confused. 
+
+You have no idea how you managed to drag yourself onto the couch. You try to lie down and sleep, but a stinging pain rips through your spine from the bottom up. You attempt to grab the couch as support, but pain stabs through your arm muscles. Your wrists hurt. Finger joints hurt. Ears hurt. Head. Everything hurts. Oh God, please make it stop.
+
+The pain fades slightly. You relax a little even though your backbone is burning and your eyes and ears feel like they're full of glue. 
+
+You're lucky that Mozart let you return to your home and your job. Other dissenters usually ended up stuck in prison forever, hauled from place to place and beaten for eternity. After all, they deserve that, right? They deserve that for being jealous, envious, scheming conspirators aiming to take Mozart down. For being unwilling to improve and change. You know you're better than them because you at least have the basic human decency to self-reflect. Once your senses stop going haywire and your body stops hurting you will go out there and prove that you're a better person now. You swear on that.
+
+A faint memory of Salieri flashes in your mind's eye. Sweep it aside. That man is good at pretending to be pitiful. He's just fishing for sympathy because he's envious of Mozart's talent and he can't bother to work hard enough to achieve anything noteworthy. You can't believe you thought there was a chance Salieri was innocent.
+
+Memories start trickling back into your head, piece by piece. //Man, was I a fool.// You can't believe you had doubts about the administration. You can't believe you had doubts about Mozart. You can't believe you had doubts about anything.
+
+Of course Mozart needed to get rid of his enemies. He's endured so much struggle and pain in his life and he's been beaten up ever since he was a young musician. Life hasn't been good to him at all. So he deserves to be loved. And he is talented so he deserves to be praised for it. He worked really hard for all these achievements. Mozart is of course deserving of such high esteem. And he's oppressing absolutely no one, he achieved more than everyone, and indeed he deserves this honor more than anyone else. 
+[[/div]]
