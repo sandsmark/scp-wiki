@@ -857,7 +857,13 @@ Recording Lost and Foundation is its own reward, but some financial support woul
 [[/collapsible]]
 
 [[collapsible show="SCPs by size" hide="hide"]]
-[[module ListPages tags="scp" order="size desc" perPage="10000" separate="false"]]
+[[module ListPages tags="scp -joke -001-proposal -ex" order="size desc" perPage="10000" separate="false"]]
+# %%title_linked%% by %%created_by%% with %%size%% characters
+[[/module]]
+[[/collapsible]]
+
+[[collapsible show="3000 entries by size" hide="hide"]]
+[[module ListPages tags="3000" order="size desc" perPage="10000" separate="false"]]
 # %%title_linked%% by %%created_by%% with %%size%% characters
 [[/module]]
 [[/collapsible]]
