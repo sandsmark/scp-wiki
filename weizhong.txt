@@ -233,3 +233,28 @@ Names that I have been called in Chat:
 [[/tabview]]
 
 [[/=]]
+
+[[collapsible show="Other stuff" hide="sekrit"]]
+
+[!-- SCP Block --]
+
+[[div class="feature-block"]]
+
+[[div class="content-panel left-column"]]
+[[div class="panel-heading"]]
+Top Rated SCPs This Month
+[[/div]]
+[[div class="panel-body"]]
+
+[[module ListPages rating=">10" tags="scp" order="rating desc" separate="false" date="2018.08"]]
+%%title_linked%% (+%%rating%%)
+[[/module]]
+
+[[/div]]
+[[div class="panel-footer"]]
+  [!-- Placeholder --]
+[[/div]]
+[[/div]]
+[[/div]]
+
+[[/collapsible
