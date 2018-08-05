@@ -21,11 +21,14 @@ title:cone
 }
 
 .preview{
-color:grey;
+ color:grey;
+ display: inline-block;
 }
 
 .preview .span { 
- display: none;
+ opacity: 0;
+ pointer-events: none;
+ transition: opacity 0.3s ease-in-out;
  overflow:hidden;
  text-overflow:ellipsis;
  position:fixed;
@@ -35,14 +38,14 @@ color:grey;
  height:200px;
  float:top; 
  padding:10px;
-  color:grey;
-  text-size:0.9em;
-  font-family:Segoe UI Light;
+ color:grey;
+ text-size:0.9em;
+ font-family:Segoe UI Light,Verdana,sans-serif;
 }
 
 .preview:hover .span { 
- display: initial;
-   background-color:#ffffff;
+ opacity: 1;
+ background-color:#ffffff;
 }
 
 @media screen and (min-width:992px) {
