@@ -54,6 +54,7 @@ color:grey;
 
 [[/module]]
 
+
 [[div class="infobox"]]
 @@@@
 @@@@
@@ -67,4 +68,20 @@ color:grey;
 [[/module]]
 [[/div]]
 
-[[include :scp-wiki-cn:component:author-page-tool-base tag={$tag}|tag=-author|color={$color}|color=grey|order=created_at|category=-fragment -component|default=0|note=[[span class="preview"]]♡ **{{%%rating%%}}**@@      @@^^...^^ **{{%%comments%%}}**@@      @@[[size 0.9em]]@ {{**%%commented_by%%**}}[[/size]][[span class="span" ]][[span class="div1"]]%%preview(200)%%[[/span]]@@                   @@//Tags：//%%tags%%[[/span]][[/span]]]]
+
+
+[[module listpages created_by="=" category="-fragment -component" order="created_at"]]
+**%%title_linked%%**
+[[div class="preview"]]
++**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**@@   @@//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D%%}}**,   //last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D%%}}**
+[[div class="span" ]]
+[[div class="div1"]]
+%%preview%%
+[[/div]]
+[[div class="div2"]]
+##000000|//tags://## %%tags%%
+[[/div]]
+[[/div]]
+[[/div]]
+
+[[/module]]
