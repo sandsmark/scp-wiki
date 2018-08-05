@@ -30,6 +30,7 @@ color:grey;
  height:200px;
  float:top; 
  padding:10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color:grey;
   text-size:0.9em;
   font-family:Segoe UI Light;
@@ -55,21 +56,6 @@ color:grey;
 [[/module]]
 
 
-[[div class="infobox"]]
-@@@@
-@@@@
-[[module Listpages created_by="=" tag="-author" category="-fragment -component" limit="1" order="random"]]
-= **[[[*%%link%%|Random Work!]]]**
-
-= {{**%%created_by_linked%%**}}
-[[/module]]
-[[module Countpages created_by="=" created_by="=" tag="-author" category="-fragment -component"]]
-= %%total%% Pages
-[[/module]]
-[[/div]]
-
-
-
 [[module listpages created_by="=" category="-fragment -component" order="created_at"]]
 [[div class="preview"]]
 **%%title_linked%%**
@@ -87,3 +73,20 @@ color:grey;
 [[/div]]
 
 [[/module]]
+
+-----
+
+[[collapsible show="[Show Side Block]" hide="[Hide Side Block]" folded="no"]]
+[[div class="infobox"]]
+@@@@
+@@@@
+[[module Listpages created_by="=" tag="-author" category="-fragment -component" limit="1" order="random"]]
+= **[[[*%%link%%|Random Work!]]]**
+
+= {{**%%created_by_linked%%**}}
+[[/module]]
+[[module Countpages created_by="=" created_by="=" tag="-author" category="-fragment -component"]]
+= %%total%% Pages
+[[/module]]
+[[/div]]
+[[/collapsible]]
