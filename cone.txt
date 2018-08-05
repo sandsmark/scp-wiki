@@ -73,7 +73,9 @@ color:grey;
 [[module listpages created_by="=" category="-fragment -component" order="created_at"]]
 [[div class="preview"]]
 **%%title_linked%%**
-+**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**@@   @@//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D%%}}**,   //last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D%%}}**
+ +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
+//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
+//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
 [[div class="span" ]]
 [[div class="div1"]]
 %%preview%%
