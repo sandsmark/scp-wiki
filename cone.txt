@@ -67,20 +67,4 @@ color:grey;
 [[/module]]
 [[/div]]
 
-
-[[module listpages created_by="="]]
-[[div class="preview"]]
- +**{{%%rating%%}}**@@      @@^^...^^ **{{%%comments%%}}**
-[[div class="span" ]]
-[[div class="div1"]]
-%%preview%%
-[[/div]]
-[[div class="div2"]]
-##000000|//tags://## %%tags%%
-[[/div]]
-[[/div]]
-[[/div]]
-
-[[/module]]
-
-[[include :scp-wiki-cn:component:author-page-tool-base tag={$tag}|tag=-author|color={$color}|color=grey|order=created_at|category=-fragment -component|default=0|note=[[span class="preview"]]♡ **{{%%rating%%}}**@@      @@^^...^^ **{{%%comments%%}}**@@      @@[[size 0.9em]]@ {{**%%commented_by%%**}}[[/size]][[span class="span" ]][[span class="div1"]]%%preview(200)%%[[/span]]@@                   @@//标签：//%%tags%%[[/span]][[/span]]]]
+[[include :scp-wiki-cn:component:author-page-tool-base tag={$tag}|tag=-author|color={$color}|color=grey|order=created_at|category=-fragment -component|default=0|note=[[span class="preview"]]♡ **{{%%rating%%}}**@@      @@^^...^^ **{{%%comments%%}}**@@      @@[[size 0.9em]]@ {{**%%commented_by%%**}}[[/size]][[span class="span" ]][[span class="div1"]]%%preview(200)%%[[/span]]@@                   @@//Tags：//%%tags%%[[/span]][[/span]]]]
