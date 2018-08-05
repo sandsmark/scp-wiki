@@ -55,6 +55,20 @@ color:grey;
 
 [[/module]]
 
+[[collapsible show="[Show Side Block]" hide="[Hide Side Block]" folded="no"]]
+[[div class="infobox"]]
+@@@@
+@@@@
+[[module Listpages created_by="=" tag="-author" category="-fragment -component" limit="1" order="random"]]
+= **[[[*%%link%%|Random Work!]]]**
+
+= {{**%%created_by_linked%%**}}
+[[/module]]
+[[module Countpages created_by="=" created_by="=" tag="-author" category="-fragment -component"]]
+= %%total%% Pages
+[[/module]]
+[[/div]]
+[[/collapsible]]
 
 [[module listpages created_by="=" category="-fragment -component" order="created_at"]]
 [[div class="preview"]]
@@ -73,20 +87,3 @@ color:grey;
 [[/div]]
 
 [[/module]]
-
------
-
-[[collapsible show="[Show Side Block]" hide="[Hide Side Block]"]]
-[[div class="infobox"]]
-@@@@
-@@@@
-[[module Listpages created_by="=" tag="-author" category="-fragment -component" limit="1" order="random"]]
-= **[[[*%%link%%|Random Work!]]]**
-
-= {{**%%created_by_linked%%**}}
-[[/module]]
-[[module Countpages created_by="=" created_by="=" tag="-author" category="-fragment -component"]]
-= %%total%% Pages
-[[/module]]
-[[/div]]
-[[/collapsible]]
