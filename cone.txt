@@ -32,7 +32,7 @@ color:grey;
  padding:10px;
   color:grey;
   text-size:0.9em;
-  font-family:微软细黑;
+  font-family:Segoe UI Light;
 }
 
 .preview:hover .span { 
@@ -71,8 +71,8 @@ color:grey;
 
 
 [[module listpages created_by="=" category="-fragment -component" order="created_at"]]
-**%%title_linked%%**
 [[div class="preview"]]
+**%%title_linked%%**
 +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**@@   @@//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D%%}}**,   //last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D%%}}**
 [[div class="span" ]]
 [[div class="div1"]]
