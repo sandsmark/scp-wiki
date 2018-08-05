@@ -1,237 +1,84 @@
 title:cone
-[[>]]
-[[module Rate]]
-[[/>]]
+[[module css]]
 
-[[module CSS]]
-/*@import url(http://scp-sandbox-3.wikidot.com/component:raisatheme/code/1);*/
-#page-title { display: none; }
-.page-title { border-bottom: solid 1px #bbbbbb; color: #990011; font-weight: normal; margin: 0 0 0.6em; padding: 0 0 0.25em; font-size: 200%; }
-.page-title p { margin: 0; line-height: normal; }
-table.wiki-content-table { margin: -1px auto 0 auto; width: 90%; }
-.yui-navset .yui-content{ background-color: initial; border: none; padding: 0; }
-.list-pages-box { margin-bottom: 2em; }
-.page-tags a { display: inline !important; }
-.page-tags a::after { white-space: normal; word-break: normal; }
-.page-tags a:nth-of-type(1)::after { content: " are-we-cool-yet best-author-page";  }
-.page-tags a:nth-of-type(2)::after { content: " goi-format global-occult-coalition maria-cones marshall-carter-and-dark meta pataphysical? possibly-pataphysical prometheus scp wilsons-wildlife _are-we-cool-yet _global-occult-coalition _marshall-carter-and-dark _prometheus _scp-foundation _wilsons-wildlife tagged-correctly"; }
+.infobox {
+ display:inline-box;
+ overflow:hidden;
+ position:fixed;
+ right: 5%;
+ bottom: 100px;
+ width:20%;
+ height:200px;
+ float:top; 
+ padding:10px;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ background-color:#ffffff;
+}
 
-.table-scp th { background-color: #e7e7e7 !important; }
-.table-scp td { background-color: #f7f7f7; }
+.preview{
+color:grey;
+}
 
-.table-tale th { background-color: #fedfc9 !important; border-color: #844e2a !important; }
-.table-tale td { background-color: #feefe4; border-color: #844e2a !important; }
+.preview .span { 
+ display: none;
+ overflow:hidden;
+ text-overflow:ellipsis;
+ position:fixed;
+ right: 5%;
+ bottom: 100px;
+ width:20%;
+ height:200px;
+ float:top; 
+ padding:10px;
+  color:grey;
+  text-size:0.9em;
+  font-family:微软细黑;
+}
 
-.table-component th { background-color: #cce8ff !important; border-color: #0886cc !important; }
-.table-component td { background-color: #e7f7ff; border-color: #0886cc !important; }
+.preview:hover .span { 
+ display: initial;
+   background-color:#ffffff;
+}
 
-.table-author th { background-color: #edd !important; border-color: #b44 !important; }
-.table-author td { background-color: #fee; border-color: #b44 !important; }
+@media screen and (min-width:992px) {
+    .preview .div1{
+        display:initial;
+    }
+}
+ 
+@media screen and (max-width: 991px) {
+    .preview .div1{
+        display:none;
+    }
+}
 
-.table-guide th { background-color: #c8a2c8 !important; border-color: #6c4279 !important; }
-.table-guide td { background-color: #c8a2c8; border-color: #6c4279 !important; }
 [[/module]]
 
-[[div style="border:solid 1px #999999; background:#f2f2c2; padding:5px; margin-bottom: 10px;"]]
-[[=]]
-++++ NOTICE FROM THE FOUNDATION RECORDS AND INFORMATION SECURITY ADMINISTRATION 
+[[div class="infobox"]]
+@@@@
+@@@@
+[[module Listpages created_by="=" tag="-author" category="-fragment -component" limit="1" order="random"]]
+= **[[[*%%link%%|Random Work!]]]**
 
-The following file is harbour to an extraordinarily virulent cognitohazard, which hijacks the reader's brain and forces it to produce shitty documentation about cones.
-
-Research is ongoing. In the meantime, please do not, under //any// circumstances, read this page's author comment and contribute your own cone-based fuckery.
-
--- Maria Cones, Director, RAISA
-
-[[/=]]
-[[/div]]
-
-[[div class="normie"]]
-[[module ListPages name="cone%"
-                             order="random"
-                             limit="1"
-                             category="fragment"
-                             offset="@URL|0"]]
-[[div class="page-title"]]
-%%title_linked%%
-[[/div]]
-%%content%%
+= {{**%%created_by_linked%%**}}
 [[/module]]
-[[/div]]
-
-[[div]]
-+ SCPs
-
-[[div class="table-scp"]]
-[[module ListPages name="scp-3939" limit="1"]]
-||~ Number || [[[SCP-3939|3939]]] ||~ Title || [NUMBER RESERVED; AWAITING RESEARCHER] ||
-||~ Rating || +%%rating%% ||~ Notes || March 2018 #2; most Offset pages (65) ||
-||~ Published || March 2018 ||~ Format screw? || Oh yeah ||
-
-||~ Summary || A multiple choice story in which you, ████ ████████, a disgraced researcher, must discover what SCP-3939 really is. ||
-||~ Quote || //"I quit." he tells you. "I fucking quit. I'm done here. I'm done with you. I'm done with 3939. I'm done with the Foundation. I'm done with fuckers like you getting to Class 4. You'll make a great O5 someday, you know that? Fuck you. Fuck you, ████."// ||
-
-||~ Last comment || #%%comments%% from %%commented_by_linked%% on %%commented_at%% ||
-[[/module]]
-
-[[module ListPages name="scp-3211" limit="1"]]
-||~ Number || [[[SCP-3211|3211]]] ||~ Title || There Is No Canon ||
-||~ Rating || +%%rating%% ||~ Notes || Possibly most coded article (except 2212?); [[[https://www.reddit.com/r/SCPDeclassified/comments/8ek9j7/scp3211_there_is_no_canon/?ref=share&ref_source=link|4th highest rated Declassified]]]||
-||~ Published || April 2018 ||~ Format screw? || Technically ||
-
-||~ Summary || "It's basically SCP-055, rebooted to fit the current site standards." - [https://www.reddit.com/r/SCPDeclassified/comments/8ek9j7/scp3211_there_is_no_canon/dxwzu9t/ /u/JPS_TEAM_B_6905] ||
-||~ Quote || //By proceeding to read this document you acknowledge and accept that you are about to be exposed to an anomalous effect.// ||
-
-||~ Last comment || #%%comments%% from %%commented_by_linked%% on %%commented_at%% ||
-[[/module]]
-
-[[module ListPages name="scp-3984" limit="1"]]
-||~ Number || [[[SCP-3984|3984]]] ||~ Title || Poking Death with a Stick ||
-||~ Rating || +%%rating%% ||~ Notes || [[[end-of-death-hub|End of Death]]] ||
-||~ Published || May 2018 ||~ Format screw? || Indeed ||
-
-||~ Summary || When death breaks... poke it with a stick.  ||
-||~ Quote || //One round from a standard-issue security handgun was fired into the forehead of D-10273 by Dr. Young.// ||
-
-||~ Last comment || #%%comments%% from %%commented_by_linked%% on %%commented_at%% ||
-[[/module]]
-
-[[module ListPages name="scp-3790" limit="1"]]
-||~ Number || [[[SCP-3790|3790]]] ||~ Title || Department of Abnormalities ||
-||~ Rating || +%%rating%% ||~ Notes || Co-authored with [[*user djkaktus]] ||
-||~ Published || June 2018 ||~ Format screw? || No, for once! ||
-
-||~ Summary || At the end of a corridor, an elevator takes you to you a quiet, dark place. ||
-||~ Quote || //A pedestal rests in the middle of the chamber. Four parallel lines in the dust, consistent with finger marks, imply that whatever was upon it has recently been removed.// ||
-
-||~ Last comment || #%%comments%% from %%commented_by_linked%% on %%commented_at%% ||
+[[module Countpages created_by="=" created_by="=" tag="-author" category="-fragment -component"]]
+= %%total%% Pages
 [[/module]]
 [[/div]]
 
-+ Tales
 
-[[div class="table-tale"]]
-[[module ListPages fullname="omega-k" limit="1"]]
-||~ Title || [[[omega-k|ΩK]]] ||~ Length || 4688 words ||
-||~ Rating || +%%rating%% ||~ Notes || [[[end-of-death-hub|End of Death]]] ||
-||~ Published || May 2018 ||~ Format screw? || Is it possible for a tale? ||
-
-||~ Summary || It's the end of the world, but nobody is panicking. ||
-||~ Quote || //"I just find it funny how this is a K-class scenario and all, but the mundane day-to-day stuff just carries on."// ||
-
-||~ Last comment || #%%comments%% from %%commented_by_linked%% on %%commented_at%% ||
-[[/module]]
-
-
-[[module ListPages fullname="the-foundation-wants-a-robot-army" limit="1"]]
-||~ Title || [[[the-foundation-wants-a-robot-army|5 Reasons The Foundation Wants A Robot Army]]] ||~ Co-authored with || [[*user Captain Kirby]], [[*user OthellotheCat]] and [[*user Veiedhimaedhr]] ||
-||~ Rating || +%%rating%% ||~ Notes || [[[end-of-death-hub|End of Death]]] ||
-||~ Published || June 2018 ||~ Format screw? || Is it possible for a tale? ||
-
-||~ Summary || Three GoIs come together to discuss a long-term solution. Performed as a real chat and transcripted with only minor edits. ||
-||~ Quote || //**Young:** Even I have to admit that we do have to retain some humanity for this to be marketable.// ||
-
-||~ Last comment || #%%comments%% from %%commented_by_linked%% on %%commented_at%% ||
-[[/module]]
+[[module listpages created_by="="]]
+[[div class="preview"]]
+ +**{{%%rating%%}}**@@      @@^^...^^ **{{%%comments%%}}**
+[[div class="span" ]]
+[[div class="div1"]]
+%%preview%%
+[[/div]]
+[[div class="div2"]]
+##000000|//tags://## %%tags%%
+[[/div]]
+[[/div]]
 [[/div]]
 
-+ Other
-
-[[div class="table-component"]]
-[[module ListPages name="earthworm" limit="1" category="component"]]
-||~ Title || [[[component:earthworm|Earthworm Series Navigator]]] ||~ Page type || component ||
-||~ Rating || +%%rating%% ||~ Appearance || Sick as hell ||
-||~ Published || May 2018 ||~ Format screw? || No? ||
-
-||~ Summary |||||| A more decorative series navigator to replace cheap plaintext ones. Instructions for use are in the author comment. ||
-||~ Quote |||||| //.earthworm div:nth-child(2).no a, .earthworm a[href="/"] { color: #333; text-decoration: none; cursor: text; pointer-events: none; }// ||
-
-||~ Last comment || #%%comments%% from %%commented_by_linked%% on %%commented_at%% ||
 [[/module]]
-[[/div]]
-
-[[div class="table-author"]]
-[[module ListPages name="cone" limit="1"]]
-||~ Title || [[[cone]]] ||~ Page type || Author ||
-||~ Rating || +%%rating%% ||~ Please rate || //Please// ||
-||~ Published || June 2018 ||~ Format screw? || Unsure ||
-
-||~ Summary || A collection of articles written by [[*user Croquembouche]]. ||
-||~ Quote || //A collection of articles written by [[*user Croquembouche]].// ||
-
-||~ Last comment || #%%comments%% from %%commented_by_linked%% on %%commented_at%% ||
-[[/module]]
-[[/div]]
-
-[[div class="table-component"]]
-[[module ListPages name="site-news-title-fetcher" limit="1" category="fragment"]]
-||~ Title || [[[fragment:site-news-title-fetcher|Site News Title Fetcher]]] ||~ Page type || "component" ||
-||~ Rating || +%%rating%% ||~ Written in  || Javascript ||
-||~ Published || June 2018 ||~ Format screw? || No ||
-
-||~ Summary |||||| A tool to automagically fetch SCP titles to make it easier to update the Site News. ||
-||~ Quote |||||| //if(list.scps[j].toUpperCase() == splits[0].toUpperCase()) { vlog("Found a match for " + list.scps[j] + " (" + splits[1] + ")"); list.lines[j] = list.lines[j].replace("%%actual-title%%",splits[1]); };// ||
-
-||~ Last comment || #%%comments%% from %%commented_by_linked%% on %%commented_at%% ||
-[[/module]]
-[[/div]]
-
-[[div class="table-guide"]]
-[[module ListPages name="listpages-magic-and-you" limit="1"]]
-||~ Title || [[[ListPages Magic and You]]] ||~ Page type || Guide ||
-||~ Rating || +%%rating%% ||~ Written in  || English ||
-||~ Published || August 2018 ||~ Format screw? || No ||
-
-||~ Summary |||||| A guide to using ListPages both for Listing Pages and doing LPT. ||
-||~ Quote |||||| //Don't have a clue what any of that means? That's fine — that's what this guide is for.// ||
-
-||~ Last comment || #%%comments%% from %%commented_by_linked%% on %%commented_at%% ||
-[[/module]]
-[[/div]]
-
-[[collapsible show="+ Other things the cone has done"]]
-* Suggested the [[[http://www.scp-wiki.net/system:page-tags/tag/interactive|interactive]]] tag
-* Created [[[http://www.scp-wiki.net/forum/t-6086502#post-3829009|the site logo]]] for Pride Month 2018
-* JS Technical Staff (25th June 2018 -- current)
-* Made the banner for the [[[GRU "P" Hub]]]
-* Suggested the [[[http://www.scp-wiki.net/system:page-tags/tag/theme|theme]]] tag
-
-[[=]]
-[[image sandbox.jpg width="200" link="http://scp-sandbox-3.wikidot.com/cone"]]
-[[/=]]
-[[/collapsible]]
-
-@@ @@
-
-[[tabview]]
-[[tab Workbench]]
-[[/tab]]
-
-[[tab Tag Stuff]]
-
-**Pages tagged "4000"**
-//If you see this and the tag isn't the current contest, please feel free to correct it//
-[[collapsible]]
-[[module ListPages tags="+4000" separate="no" order="rating desc" perPage="250"]]
-* %%title_linked%% by %%created_by%% (%%rating%%)
-[[/module]]
-[[/collapsible]]
-
-**Pages tagged "4000" but are otherwise untagged**
-//If you see this and the tag isn't the current contest, please feel free to correct it//
-[[collapsible]]
-[[module ListPages tags="+4000 -scp -tale -goi-format -hub" separate="no" perPage="250"]]
-* %%title_linked%% by %%created_by%% (%%rating%%)
-[[/module]]
-[[/collapsible]]
-
-**List of pages that can appear on this author page**
-//Check the author comment if you want to contribute//
-[[collapsible]]
-[[module ListPages name="cone%" separate="no" category="fragment" perPage="250"]]
-* %%title_linked%% by %%created_by%%
-[[/module]]
-[[/collapsible]]
-
-[[/tab]]
-[[/tabview]]
-[[/div]]
