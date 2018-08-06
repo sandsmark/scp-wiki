@@ -6,9 +6,9 @@ title:cone
 [[module CSS]]
 /*@import url(http://scp-sandbox-3.wikidot.com/component:raisatheme/code/1);*/
 
-#page-title { display: none; }
+/*#page-title { display: none; }
 .page-title { border-bottom: solid 1px #bbbbbb; color: #990011; font-weight: normal; margin: 0 0 0.6em; padding: 0 0 0.25em; font-size: 200%; }
-.page-title p { margin: 0; line-height: normal; }
+.page-title p { margin: 0; line-height: normal; }*/
 
 table.wiki-content-table { margin: -1px auto 0 auto; width: 90%; }
 .yui-navset .yui-content{ background-color: initial; border: none; padding: 0; }
@@ -21,6 +21,7 @@ table.wiki-content-table { margin: -1px auto 0 auto; width: 90%; }
 [[/module]]
 
 [[div]]
+
 + SCPs
 
 [[include :scp-sandbox-3:component:page-info-slider
@@ -101,7 +102,7 @@ table.wiki-content-table { margin: -1px auto 0 auto; width: 90%; }
 
 [[include :scp-sandbox-3:component:page-info-slider
   fullname=component:earthworm |
-  truncate=no |
+  truncate=yes |
   title-length=medium |
   shade=blue |
   title-1=Page type | text-1=component |
