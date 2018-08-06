@@ -5,31 +5,19 @@ title:cone
 
 [[module CSS]]
 /*@import url(http://scp-sandbox-3.wikidot.com/component:raisatheme/code/1);*/
+
 #page-title { display: none; }
 .page-title { border-bottom: solid 1px #bbbbbb; color: #990011; font-weight: normal; margin: 0 0 0.6em; padding: 0 0 0.25em; font-size: 200%; }
 .page-title p { margin: 0; line-height: normal; }
+
 table.wiki-content-table { margin: -1px auto 0 auto; width: 90%; }
 .yui-navset .yui-content{ background-color: initial; border: none; padding: 0; }
 .list-pages-box { margin-bottom: 2em; }
+
 .page-tags a { display: inline !important; }
 .page-tags a::after { white-space: normal; word-break: normal; }
 .page-tags a:nth-of-type(1)::after { content: " are-we-cool-yet best-author-page";  }
 .page-tags a:nth-of-type(2)::after { content: " goi-format global-occult-coalition maria-cones marshall-carter-and-dark meta pataphysical? possibly-pataphysical prometheus scp wilsons-wildlife _are-we-cool-yet _global-occult-coalition _marshall-carter-and-dark _prometheus _scp-foundation _wilsons-wildlife tagged-correctly"; }
-
-.table-scp th { background-color: #e7e7e7 !important; }
-.table-scp td { background-color: #f7f7f7; }
-
-.table-tale th { background-color: #fedfc9 !important; border-color: #844e2a !important; }
-.table-tale td { background-color: #feefe4; border-color: #844e2a !important; }
-
-.table-component th { background-color: #cce8ff !important; border-color: #0886cc !important; }
-.table-component td { background-color: #e7f7ff; border-color: #0886cc !important; }
-
-.table-author th { background-color: #edd !important; border-color: #b44 !important; }
-.table-author td { background-color: #fee; border-color: #b44 !important; }
-
-.table-guide th { background-color: #c8a2c8 !important; border-color: #6c4279 !important; }
-.table-guide td { background-color: #c8a2c8; border-color: #6c4279 !important; }
 [[/module]]
 
 [[div style="border:solid 1px #999999; background:#f2f2c2; padding:5px; margin-bottom: 10px;"]]
@@ -46,11 +34,7 @@ Research is ongoing. In the meantime, please do not, under //any// circumstances
 [[/div]]
 
 [[div class="normie"]]
-[[module ListPages name="cone%"
-                             order="random"
-                             limit="1"
-                             category="fragment"
-                             offset="@URL|0"]]
+[[module ListPages name="cone%" order="random" limit="1" category="fragment" offset="@URL|0"]]
 [[div class="page-title"]]
 %%title_linked%%
 [[/div]]
@@ -61,132 +45,129 @@ Research is ongoing. In the meantime, please do not, under //any// circumstances
 [[div]]
 + SCPs
 
-[[div class="table-scp"]]
-[[module ListPages name="scp-3939" limit="1"]]
-||~ Number || [[[SCP-3939|3939]]] ||~ Title || [NUMBER RESERVED; AWAITING RESEARCHER] ||
-||~ Rating || +%%rating%% ||~ Notes || March 2018 #2; most Offset pages (65) ||
-||~ Published || March 2018 ||~ Format screw? || Oh yeah ||
+[[include :scp-sandbox-3:component:page-info-slider
+  fullname=scp-3939 |
+  truncate=yes |
+  title-length=short |
+  shade=black |
+  title-1=Title | text-1=[NUMBER RESERVED; AWAITING RESEARCHER] |
+  title-2=Notes | text-2=March 2018 #2; most Offset pages (65) |
+  title-3=Format screw? | text-3=Oh yeah |
+  summary=A multiple choice story in which you, ████ ████████, a disgraced researcher, must discover what SCP-3939 really is. |
+  quote="I quit." he tells you. "I fucking quit. I'm done here. I'm done with you. I'm done with 3939. I'm done with the Foundation. I'm done with fuckers like you getting to Class 4. You'll make a great O5 someday, you know that? Fuck you. Fuck you, ████."
+]]
 
-||~ Summary || A multiple choice story in which you, ████ ████████, a disgraced researcher, must discover what SCP-3939 really is. ||
-||~ Quote || //"I quit." he tells you. "I fucking quit. I'm done here. I'm done with you. I'm done with 3939. I'm done with the Foundation. I'm done with fuckers like you getting to Class 4. You'll make a great O5 someday, you know that? Fuck you. Fuck you, ████."// ||
+[[include :scp-sandbox-3:component:page-info-slider
+  fullname=scp-3211 |
+  truncate=yes |
+  title-length=short |
+  shade=black |
+  title-1=Title | text-1=There Is No Canon |
+  title-2=Notes | text-2=2nd longest article (char count); [[[https://www.reddit.com/r/SCPDeclassified/comments/8ek9j7/scp3211_there_is_no_canon/?ref=share&ref_source=link|4th highest rated Declassified]]] |
+  title-3=Format screw? | text-3=Hella |
+  summary="It's basically SCP-055, rebooted to fit the current site standards." - [https://www.reddit.com/r/SCPDeclassified/comments/8ek9j7/scp3211_there_is_no_canon/dxwzu9t/ /u/JPS_TEAM_B_6905] |
+  quote=By proceeding to read this document you acknowledge and accept that you are about to be exposed to an anomalous effect.
+]]
 
-||~ Last comment || #%%comments%% from %%commented_by_linked%% on %%commented_at%% ||
-[[/module]]
+[[include :scp-sandbox-3:component:page-info-slider
+  fullname=scp-3984 |
+  truncate=yes |
+  title-length=short |
+  shade=black |
+  title-1=Title | text-1=Poking Death with a Stick |
+  title-2=Written for | text-2=[[[end-of-death-hub|End of Death]]] |
+  title-3=Format screw? | text-3=Yeah |
+  summary=When death breaks... poke it with a stick. |
+  quote=One round from a standard-issue security handgun was fired into the forehead of D-10273 by Dr. Young.
+]]
 
-[[module ListPages name="scp-3211" limit="1"]]
-||~ Number || [[[SCP-3211|3211]]] ||~ Title || There Is No Canon ||
-||~ Rating || +%%rating%% ||~ Notes || Possibly most coded article (except 2212?); [[[https://www.reddit.com/r/SCPDeclassified/comments/8ek9j7/scp3211_there_is_no_canon/?ref=share&ref_source=link|4th highest rated Declassified]]]||
-||~ Published || April 2018 ||~ Format screw? || Technically ||
-
-||~ Summary || "It's basically SCP-055, rebooted to fit the current site standards." - [https://www.reddit.com/r/SCPDeclassified/comments/8ek9j7/scp3211_there_is_no_canon/dxwzu9t/ /u/JPS_TEAM_B_6905] ||
-||~ Quote || //By proceeding to read this document you acknowledge and accept that you are about to be exposed to an anomalous effect.// ||
-
-||~ Last comment || #%%comments%% from %%commented_by_linked%% on %%commented_at%% ||
-[[/module]]
-
-[[module ListPages name="scp-3984" limit="1"]]
-||~ Number || [[[SCP-3984|3984]]] ||~ Title || Poking Death with a Stick ||
-||~ Rating || +%%rating%% ||~ Notes || [[[end-of-death-hub|End of Death]]] ||
-||~ Published || May 2018 ||~ Format screw? || Indeed ||
-
-||~ Summary || When death breaks... poke it with a stick.  ||
-||~ Quote || //One round from a standard-issue security handgun was fired into the forehead of D-10273 by Dr. Young.// ||
-
-||~ Last comment || #%%comments%% from %%commented_by_linked%% on %%commented_at%% ||
-[[/module]]
-
-[[module ListPages name="scp-3790" limit="1"]]
-||~ Number || [[[SCP-3790|3790]]] ||~ Title || Department of Abnormalities ||
-||~ Rating || +%%rating%% ||~ Notes || Co-authored with [[*user djkaktus]] ||
-||~ Published || June 2018 ||~ Format screw? || No, for once! ||
-
-||~ Summary || At the end of a corridor, an elevator takes you to you a quiet, dark place. ||
-||~ Quote || //A pedestal rests in the middle of the chamber. Four parallel lines in the dust, consistent with finger marks, imply that whatever was upon it has recently been removed.// ||
-
-||~ Last comment || #%%comments%% from %%commented_by_linked%% on %%commented_at%% ||
-[[/module]]
-[[/div]]
+[[include :scp-sandbox-3:component:page-info-slider
+  fullname=scp-3790 |
+  truncate=yes |
+  title-length=short |
+  shade=black |
+  title-1=Title | text-1=Department of Abnormalities |
+  title-2=Written with | text-2=[[*user djkaktus]] |
+  title-3=Format screw? | text-3=No |
+  summary=At the end of a corridor, an elevator takes you to you a quiet, dark place. |
+  quote=A pedestal rests in the middle of the chamber. Four parallel lines in the dust, consistent with finger marks, imply that whatever was upon it has recently been removed.
+]]
 
 + Tales
 
-[[div class="table-tale"]]
-[[module ListPages fullname="omega-k" limit="1"]]
-||~ Title || [[[omega-k|ΩK]]] ||~ Length || 4688 words ||
-||~ Rating || +%%rating%% ||~ Notes || [[[end-of-death-hub|End of Death]]] ||
-||~ Published || May 2018 ||~ Format screw? || Is it possible for a tale? ||
+[[include :scp-sandbox-3:component:page-info-slider
+  fullname=omega-k |
+  truncate=yes |
+  title-length=short |
+  shade=saddlebrown |
+  title-1=Length | text-1=4688 words |
+  title-2=Written for | text-2=[[[end-of-death-hub|End of Death]]] |
+  title-3=Format screw? | text-3=It's a tale |
+  summary=It's the end of the world, but you still have to go to work in the morning. |
+  quote="I just find it funny how this is a K-class scenario and all, but the mundane day-to-day stuff just carries on."
+]]
 
-||~ Summary || It's the end of the world, but nobody is panicking. ||
-||~ Quote || //"I just find it funny how this is a K-class scenario and all, but the mundane day-to-day stuff just carries on."// ||
-
-||~ Last comment || #%%comments%% from %%commented_by_linked%% on %%commented_at%% ||
-[[/module]]
-
-
-[[module ListPages fullname="the-foundation-wants-a-robot-army" limit="1"]]
-||~ Title || [[[the-foundation-wants-a-robot-army|5 Reasons The Foundation Wants A Robot Army]]] ||~ Co-authored with || [[*user Captain Kirby]], [[*user OthellotheCat]] and [[*user Veiedhimaedhr]] ||
-||~ Rating || +%%rating%% ||~ Notes || [[[end-of-death-hub|End of Death]]] ||
-||~ Published || June 2018 ||~ Format screw? || Is it possible for a tale? ||
-
-||~ Summary || Three GoIs come together to discuss a long-term solution. Performed as a real chat and transcripted with only minor edits. ||
-||~ Quote || //**Young:** Even I have to admit that we do have to retain some humanity for this to be marketable.// ||
-
-||~ Last comment || #%%comments%% from %%commented_by_linked%% on %%commented_at%% ||
-[[/module]]
-[[/div]]
+[[include :scp-sandbox-3:component:page-info-slider
+  fullname=the-foundation-wants-a-robot-army |
+  truncate=no |
+  title-length=medium |
+  shade=saddlebrown |
+  title-1=Written with | text-1=[[*user Captain Kirby]], [[*user OthellotheCat]] and [[*user Veiedhimaedhr]] |
+  title-2=Written for | text-2=[[[end-of-death-hub|End of Death]]] |
+  title-3=Format screw? | text-3=TALE |
+  summary=Three GoIs come together to discuss a long-term solution. Performed as a real chat and transcripted with only minor edits. |
+  quote=**Young:** Even I have to admit that we do have to retain some humanity for this to be marketable.
+]]
 
 + Other
 
-[[div class="table-component"]]
-[[module ListPages name="earthworm" limit="1" category="component"]]
-||~ Title || [[[component:earthworm|Earthworm Series Navigator]]] ||~ Page type || component ||
-||~ Rating || +%%rating%% ||~ Appearance || Sick as hell ||
-||~ Published || May 2018 ||~ Format screw? || No? ||
+[[include :scp-sandbox-3:component:page-info-slider
+  fullname=component:earthworm |
+  truncate=no |
+  title-length=medium |
+  shade=blue |
+  title-1=Page type | text-1=component |
+  title-2=Written in | text-2=CSS |
+  title-3=Format screw? | text-3=Why not |
+  summary=A more decorative series navigator to replace cheap plaintext ones. Instructions for use are in the author comment. |
+  quote=.earthworm div:nth-child(2).no a, .earthworm a[href="/"] { color: #333; text-decoration: none; cursor: text; pointer-events: none; }
+]]
 
-||~ Summary |||||| A more decorative series navigator to replace cheap plaintext ones. Instructions for use are in the author comment. ||
-||~ Quote |||||| //.earthworm div:nth-child(2).no a, .earthworm a[href="/"] { color: #333; text-decoration: none; cursor: text; pointer-events: none; }// ||
+[[include :scp-sandbox-3:component:page-info-slider
+  fullname=cone |
+  truncate=yes |
+  title-length=short |
+  shade=red |
+  title-1=Page type | text-1=Author |
+  title-2=Please rate | text-2=//Please// |
+  title-3=Format screw? | text-3=Unsure |
+  summary=A collection of articles written by [[*user Croquembouche]]. |
+  quote=A collection of articles written by [[*user Croquembouche]].
+]]
 
-||~ Last comment || #%%comments%% from %%commented_by_linked%% on %%commented_at%% ||
-[[/module]]
-[[/div]]
+[[include :scp-sandbox-3:component:page-info-slider
+  fullname=fragment:site-news-title-fetcher |
+  truncate=yes |
+  title-length=medium |
+  shade=blue |
+  title-1=Page type | text-1="component" |
+  title-2=Written in | text-2=Javascript |
+  title-3=Format screw? | text-3=No |
+  summary=A tool to automagically fetch SCP titles to make it easier to update the Site News. |
+  quote=if(list.scps[j].toUpperCase() == splits[0].toUpperCase()) { vlog("Found a match for " + list.scps[j] + " (" + splits[1] + ")"); list.lines[j] = list.lines[j].replace("%%actual-title%%",splits[1]); };
+]]
 
-[[div class="table-author"]]
-[[module ListPages name="cone" limit="1"]]
-||~ Title || [[[cone]]] ||~ Page type || Author ||
-||~ Rating || +%%rating%% ||~ Please rate || //Please// ||
-||~ Published || June 2018 ||~ Format screw? || Unsure ||
-
-||~ Summary || A collection of articles written by [[*user Croquembouche]]. ||
-||~ Quote || //A collection of articles written by [[*user Croquembouche]].// ||
-
-||~ Last comment || #%%comments%% from %%commented_by_linked%% on %%commented_at%% ||
-[[/module]]
-[[/div]]
-
-[[div class="table-component"]]
-[[module ListPages name="site-news-title-fetcher" limit="1" category="fragment"]]
-||~ Title || [[[fragment:site-news-title-fetcher|Site News Title Fetcher]]] ||~ Page type || "component" ||
-||~ Rating || +%%rating%% ||~ Written in  || Javascript ||
-||~ Published || June 2018 ||~ Format screw? || No ||
-
-||~ Summary |||||| A tool to automagically fetch SCP titles to make it easier to update the Site News. ||
-||~ Quote |||||| //if(list.scps[j].toUpperCase() == splits[0].toUpperCase()) { vlog("Found a match for " + list.scps[j] + " (" + splits[1] + ")"); list.lines[j] = list.lines[j].replace("%%actual-title%%",splits[1]); };// ||
-
-||~ Last comment || #%%comments%% from %%commented_by_linked%% on %%commented_at%% ||
-[[/module]]
-[[/div]]
-
-[[div class="table-guide"]]
-[[module ListPages name="listpages-magic-and-you" limit="1"]]
-||~ Title || [[[ListPages Magic and You]]] ||~ Page type || Guide ||
-||~ Rating || +%%rating%% ||~ Written in  || English ||
-||~ Published || August 2018 ||~ Format screw? || No ||
-
-||~ Summary |||||| A guide to using ListPages both for Listing Pages and doing LPT. ||
-||~ Quote |||||| //Don't have a clue what any of that means? That's fine — that's what this guide is for.// ||
-
-||~ Last comment || #%%comments%% from %%commented_by_linked%% on %%commented_at%% ||
-[[/module]]
-[[/div]]
+[[include :scp-sandbox-3:component:page-info-slider
+  fullname=listpages-magic-and-you |
+  truncate=yes |
+  title-length=medium |
+  shade=purple |
+  title-1=Page type | text-1="Guide" |
+  title-2=Written in | text-2=English |
+  title-3=Format screw? | text-3=No |
+  summary=A guide to using ListPages both for Listing Pages and doing LPT. |
+  quote=Don't have a clue what any of that means? That's fine — that's what this guide is for
+]]
 
 [[collapsible show="+ Other things the cone has done"]]
 * Suggested the [[[http://www.scp-wiki.net/system:page-tags/tag/interactive|interactive]]] tag
