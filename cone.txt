@@ -14,6 +14,7 @@ table.wiki-content-table { margin: -1px auto 0 auto; width: 90%; }
 .yui-navset .yui-content{ background-color: initial; border: none; padding: 0; }
 .list-pages-box { margin-bottom: 2em; }
 
+.random { text-align: center; }
 .random a { position: relative; box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.2), 0px 3px 10px 0 rgba(0, 0, 0, 0.19); margin: 1em auto; padding: 1em; transition: all 0.3s ease-in-out; }
 .random a:hover { box-shadow: 0px 5px 4px 0 rgba(0, 0, 0, 0.2), 0px 3px 10px 0 rgba(0, 0, 0, 0.19); }
 
@@ -27,9 +28,9 @@ table.wiki-content-table { margin: -1px auto 0 auto; width: 90%; }
 
 [[div class="random"]]
 [[module Listpages created_by="=" tag="-author -workbench -contest -splash -supplement -translation" category="-fragment -component" limit="1" order="random"]]
-= **[[[*%%link%%|Visit a random article by me]]]**
+**[[[*%%link%%|Visit a random article by me]]]**
 
-= //It's a choice of %%total%%... which one will it be?//
+//It's a choice of %%total%%... which one will it be?//
 [[/module]]
 [[/div]]
 
