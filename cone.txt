@@ -15,10 +15,10 @@ table.wiki-content-table { margin: -1px auto 0 auto; width: 90%; }
 .list-pages-box { margin-bottom: 2em; }
 
 .random { text-align: center; }
-.random p { margin: 2em auto; z-index: 1; }
+.random p { margin: 2em auto; }
 .random a { position: relative; box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.2), 0px 3px 10px 0 rgba(0, 0, 0, 0.19); padding: 1em; transition: all 0.3s ease-in-out; }
 .random a:hover { box-shadow: 0px 3px 4px 0 rgba(0, 0, 0, 0.2), 0px 3px 10px 0 rgba(0, 0, 0, 0.19); }
-.random a:hover::after { content: ""; position: absolute; height: 197px; width: 217px; background: url(http://scp-wiki.wdfiles.com/local--files/cone/bigredarrow.png); opacity: 0.2; pointer-events: none; left: 50%; top: 50%; transform: translate(-50%,-50%); }
+.random a:hover::after { content: ""; position: absolute; height: 197px; width: 217px; background: url(http://scp-wiki.wdfiles.com/local--files/cone/bigredarrow.png); opacity: 0.2; pointer-events: none; left: 50%; top: 50%; transform: translate(-50%,-50%); z-index: -1; }
 
 .page-tags a { display: inline !important; }
 .page-tags a::after { white-space: normal; word-break: normal; }
