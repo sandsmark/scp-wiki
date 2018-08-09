@@ -1,4 +1,40 @@
 title:cone
+[!-- Oh hey, did you see my fancy sliders and think "hell yeah I want those"?
+
+If yes: lean in real close and I'll tell ya how.
+
+Copy this here component module and paste it anywhere you like:
+
+[[include :scp-sandbox-3:component:page-info-slider
+  fullname=NAME-OF-PAGE |
+  truncate=yes |
+  title-length=short |
+  image=yes |
+  shade=none |
+  title-1=TITLE | text-1=TEXT |
+  title-2=TITLE | text-2=TEXT |
+  title-3=TITLE | text-3=TEXT |
+  summary=SUMMARY |
+  quote=QUOTE
+]]
+
+I'm gonna get you to change some parameters. When I say "Change X to Y", what I'm asking you to do is find the line that says "X=A" and change it to "X=Y". Do not change it to "Y=A". X is the parameter name, Y (or A) is its value. You want to change its value.
+
+- Change fullname to the URL of your page - everything that comes after "www.scp-wiki.net/". If the url is "www.scp-wiki.net/scp-173", change it to "scp-173". If it's "www.scp-wiki.net/fragment:eshu1", change it to "fragment:eshu1". Simple as.
+
+- Change title-length to either short, medium or long. Short is good for SCPs. Medium is good for more than 10 characters. Long is good for longer. Try medium, see what happens.
+
+- By default, titles will only be on one line, and they'll get cut off with an ellipsis if they're too long. If you want it to wrap to the next line, set truncate to "no" or "false".
+
+- If you want an image, set image to "yes". It'll take the first one from the page. To find out which one is first, open up the Files window for that page - it's the one at the top.
+
+- If you want stuff to be overlaid with a colour, put either a colour name or a hex code in the shade parameter. It'll have an opacity of 0.1.
+
+- The rest of the parameters are to fill the content of the table. Change them all.
+
+--]
+
+
 [[>]]
 [[module Rate]]
 [[/>]]
