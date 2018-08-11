@@ -1,0 +1,674 @@
+title:ListPages Magic and You
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[module CSS]]
+:root {
+  --title-colour: #333;
+}
+h1 {
+  color: var(--title-colour);
+  font-family: Arial,sans-serif;
+  font-size: 250%;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+}
+h2 {
+  color: var(--title-colour);
+  font-family: Arial,sans-serif;
+  font-size: 150%;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+}
+hr {
+  margin: 0;
+}
+.warning {
+  background-color: #fee;
+  margin: 1em 40px;
+  padding: 0 1em;
+  color: rgba(0,0,0,0.8);
+  border: 1px dashed #f66;
+}
+.yellow {
+  background-color: #f2f2c2;
+  margin: 1em 40px;
+  padding: 0 1em;
+  color: rgba(0,0,0,0.8);
+  border: 1px dashed #c8b258;
+}
+.list-pages-box {
+  margin: 1em 40px;
+  padding: 0 1em;
+  background: #f4f4f4;
+}
+#page-content ul {
+  list-style: none;
+  padding: 0 40px;
+}
+#page-content .list-pages-box ul {
+  list-style: square;
+}
+#page-content .image {
+  margin-bottom: 1em;
+}
+tt {
+  opacity: 0.9;
+}
+
+.codeblock {
+  border: 1px dashed #ddd;
+  background-color: #F7F7F7;
+  font-family: 'Andale Mono', 'Courier New', Courier, monospace;
+  padding: 0 1em;
+  margin: 0.4em 0;
+  overflow: auto;
+  white-space: pre-wrap;
+}
+.codeblock br {
+  display: none;
+}
+
+.contents OL { counter-reset: item }
+.contents LI { display: block }
+.contents LI:before { content: counters(item, ".") " "; counter-increment: item }
+[[/module]]
+
+The word "ListPages" gets thrown around a lot.
+
+Sometimes it's from someone at the [[[http://www.scp-wiki.net/forum/c-891087/help:questions-desk|Questions Desk]]] who saw an SCP using ListPages would really like to replicate it. Sometimes it's from someone who wants to know how to do a specific thing and the answer is ListPages. And sometimes it's from someone who stumbled across it and wants to know just what the hell it is.
+
+I have meditated for months in the rainforest on the word "ListPages", and my mind has ascended to places beyond the deepest sleeper's dreams. You may know what it is, you may even know what it means... but //I// have felt the very essence of ListPages course through my body. //I// have felt its ethereal form buckle under my will.
+
+I have bent the 5th Element, ListPages, and in this guide -- which should be considered an extension to [[*user DrMagnus]]' [[[Advanced Formatting and You]]] -- I'll attempt to pass this knowledge onto you.
+
+-----
+
+[[div class="contents"]]
+**Contents:**
+# [#toc1 What is ListPages?]
+# [#toc3 Listing Pages]
+ # [#toc4 Selecting Pages for the List]
+ # [#toc5 Modifying the List]
+ # [#toc6 Displaying the List]
+# [#toc8 Doing the ListPages Thing]
+ # [#toc9 What is LPT?]
+ # [#toc11 How Does LPT Work?]
+ # [#toc12 The Offset Parameter]
+ # [#toc13 Creating the Child Pages]
+ # [#toc14 Creating the Parent Page]
+# [#toc16 Conclusion]
+[[/div]]
+
+-----
+
+Please note that in this guide I've given each example ListPages module a grey background, just to distinguish it from the rest of the page. Your ListPages modules will have a transparent background.
+
+[[div class="yellow"]]
++++ Hold on there, Croquembouche!
+"I don't need to know how to make a ListPages module from scratch!", you tell me. "I just want to know how to do the ListPages Thing used in [[[SCP-2998]]], [[[SCP-2111]]], and [[[SCP-3002]]], amongst others."
+
+And to that I say: no, it's really important to learn the basics as well. It's all well and good copy-pasting code, but when that goes wrong and you don't understand why, how do you fix it?
+
+But if you really do know all this stuff already, scroll down to Doing the ListPages Thing.
+[[/div]]
+
+@@ @@
+-----
++ 1: WHAT IS LISTPAGES?
+-----
+@@ @@
+
+ListPages is a Wikidot module. Its full documentation can be found [[[http://www.wikidot.com/doc-modules:listpages-module|here]]].
+
+To quote the documentation:
+
+> The ListPages module is a general-purpose and widely-used tool that selects and display pages within a site.
+
+That's all it does -- it literally Lists Pages.
+
+ListPages generally has two uses on the SCP wiki:
+# To filter the wiki for a specific group of pages and show them in a list,
+# To allow an SCP (or any page) to appear to have multiple pages which you go through one-by-one, but they all have the same Rating Module.
+
+The first one is the "boring but useful" one. We'll just call it Listing Pages, because that's what it is. [[[top rated pages this month|Here's an example page with 4 ListPages modules that List Pages]]].
+
+The second one, however, is the //Thing//, it's the Big Thing that everyone wants to know about. In fact, let's call it the ListPages Thing. LPT for short. [[[scp-2998|Here's an example page that uses LPT]]].
+
+But the first one, Listing Pages, is //way// easier to explain, so I'll be using that to cover a lot of the things you need to know for the second one, the ListPages Thing (LPT).
+
+[[div class="warning"]]
++++ Warning
+Try to limit yourself to just one ListPages module per page.
+
+ListPages modules can //really// slow down how fast a page loads. [[[cone|My author page]]] had about thirty on it at one point, and I swear it was taking at least a full minute to load sometimes. It was godawful. Don't do that.
+[[/div]]
+
+@@ @@
+-----
++ 2: LISTING PAGES
+-----
+@@ @@
+
+Without further ado, let's discuss the first implementation of ListPages: the simple listing of pages.
+
+Here's a list of my 5 worst-rated pages on the wiki.
+[[module ListPages created_by="Croquembouche" order="rating" limit="5" separate="no"]]
+* %%title_linked%% (+%%rating%%)
+[[/module]]
+
+If you think I just typed out the URLs of each of them and left it at that, think again. You're seeing ListPages magic. If you want, you can prove it by heading to one of those pages, upvoting it (//please :'(// ) and then refreshing this page. You'll see that the rating, as recorded here, will change as well.
+
+If you check the source of this page you'll see the following code:
+
+[[div_ class="codeblock"]]
+@@[[@@module ListPages created_by="Croquembouche" order="rating" limit="5" separate="no"@@]]@@
+@@*@@ %%title_linked%% (+%%rating%%)
+@@[[/module]]@@
+[[/div]]
+
+Don't have a clue what any of that means? That's fine -- that's what this guide is for.
+
+[[collapsible show="+ Explanation of basic syntax"]]
+-----
+If you've ever used certain Wikidot syntaxes, for example @@[[code]]@@ and the "align-right" syntax used on ratings modules (@@ [[>]] @@), or if you've used BBCode or HTML; Wikidot's module syntax is very similar.
+
+You start by putting @@"[[module]]"@@ on one line. This is the opening tag, and it's how to declare to Wikidot "Hello, my article has a ListPages module now".
+
+[[code]]
+[[module]]
+[[/code]]
+
+Then, two lines down (leaving a gap in the middle), you put the closing tag, which is the same as the opening tag except it starts with a slash. This tells Wikidot that your module is ending.
+
+[[code]]
+[[module]]
+
+[[/module]]
+[[/code]]
+
+In the opening tag, you put "ListPages", to declare that this is a //ListPages// module, not just some random module you found on the street.
+
+[[code]]
+[[module ListPages]]
+
+[[/module]]
+[[/code]]
+
+Then, after the "ListPages", you put a bunch of parameters to select what pages you want to display. We'll be covering those later.
+
+Between the two "module" tags, you put a bunch of content markers to determine what parts of the selected pages you want to be displayed. We'll be covering those later, too.
+-----
+[[/collapsible]]
+
+If I wanted to, I could show my top 5 pages. Or I could show more than 5. Or I could show only pages created after a certain date. There's a whole bunch of parameters that the ListPages module accepts in order to do what you want.
+
+I'm going to take you through basic ListPages use in three steps:
+# Selecting the pages you want;
+# Modifying how the list handles those pages,
+# Actually displaying the list.
+
+@@ @@
+-----
+++ 2.1: SELECTING PAGES FOR THE LIST
+-----
+@@ @@
+
+If you don't specify any parameters, ListPages will attempt to list every single page on the wiki. You don't want that (right?) which is why we specify **selectors**. These tell ListPages which pages to select and which ones to avoid.
+
+Let's work through the selectors to find out what each one does.
+
+ListPages has a whole bunch of selectors you can choose so that you can tell it exactly what pages to select. Here are the ones that you'll find most useful:
+
+* **created_by** -- filter by author's name. If you set this to "Croquembouche", ListPages will only show pages created by me and will ignore all others.
+
+* **rating** -- filter by rating. If you set this to ">20" you'll only see pages with a rating that's greater than 20. Set it to "=0" and you'll only see pages with a rating of 0.
+
+* **tags** -- filter by tags. If the tag name starts with "+", ListPages only shows pages with that tag. If it starts with "-", ListPages only shows pages without that tag. For example, "+scp -keter" would list all pages with the "scp" tag but without the "keter" tag.
+
+* **created_at** -- filter by the date on which each page was created. This selector accepts a fair range of values. "2009" will select all pages made in 2009, while "2009.02" will select all pages created in February 2009. ">2009.02" will select all pages created //after// February 2009. "last 3 month" will select all pages created in the last 3 months.
+
+* **name** -- filter by page name, or rather, the page URL. "SCP-3000" will match the page for SCP-3000. Use a percent symbol to denote "pages starting with this" -- for example, "SCP-%" will match all pages starting with "SCP-".
+
+* **category** -- filter by page category. By default, ListPages will only look at pages in the same category as the current page. For this page, the category is "_default". For [[[system:page-tags]]], the category is "system", and for [[[component:earthworm]]], the category is "component". Check the URL -- everything before the colon is the category, and if there's no colon, it's "_default". The category selector lets you specify a different category. Set it to "*" for all categories.
+
+In summary: **each selector will match certain pages and ignore others**. For a page to appear in the list, it must match all of your selectors.
+
+[[[http://www.wikidot.com/doc-modules:listpages-module#toc2|The documentation]]] goes into more detail on each of these selectors -- and a few others! -- under the "Selecting Pages" title.
+
+@@ @@
+-----
+++ 2.2: MODIFYING THE LIST
+-----
+@@ @@
+
+Just selecting different pages isn't everything we need to do -- we also need to specify how those pages are going to be displayed.
+
+There are a couple more parameters that you need to know. These aren't selectors, so they're not listed in the section above, but they're used in exactly the same way.
+
+* **limit** -- determines how many pages to show. If you set this to "5", then no more than 5 pages will be shown.
+
+* **perPage** -- how many pages should be shown per page of the list? (It's not as confusing as it sounds!) By default, this value is set to 20, so if there are more than 20 pages in the list, a new page will be created. You can see this effect on [[[Top Rated Pages This Month]]] -- at the bottom of the list of SCPs (assuming it's more than about a week into the month). The maximum value is 250.
+
+* **separate** -- whether or not each entry in the list should be by itself in its own little list, or all in the same list. Valid values are "yes" or "no" -- if you say "yes", you'll end up with a big gap between each entry in the list, which is rarely what you want.
+
+* **order** -- how to order the list.
+
+There's a lot of different options that the "order" parameter accepts, and they're listed [[[http://www.wikidot.com/doc-modules:listpages-module#toc3|in the documentation]]] under the "Ordering Pages" heading. I'll list a few of the more useful ones here.
+
+* **order="rating"** -- order by rating.
+* **order="name"** -- order alphabetically by page name (as specified in the URL).
+* **order="title"** -- order alphabetically by page title (the actual title of the page).
+* **order="created_at"** -- order by the date on which the page was created.
+* **order="comments"** -- order by number of comments.
+* **order="random"** -- everything is in a random order! Re-randomises once per minute.
+
+By default, everything is ordered in ascending order (so low numbers are shown first). To show them in descending order, append 'desc' to the end -- e.g. order="rating desc".
+
+Note that there's no special option to specifically sort things in ascending order. The correct way to do it is to append "desc desc". Does that make sense? Nope. Can we really expect any better from Wikidot? Nope.
+
+@@ @@
+-----
+++ 2.3: DISPLAYING THE LIST
+-----
+@@ @@
+
+Okay so now that we know all about how to select the exact pages we want, and how to modify the parameters of that list. We've got a list of pages.
+
+When it comes to displaying that list, you've got a lot of options. Within the body of the module -- that is, between @@[[module]] and @@[[/module]]@@ -- there are a number of different content markers you can put.
+
+Each content marker is like a stamp. We'll take **%%title%%** for example, which represents the title of the page. Imagine it like this: the ListPages module has a list of titles. It stamps the first title onto the page, then it moves down, changes to the next title, and stamps that. And so on, through the list. You end up with a list of page titles.
+
+Here are some of the most useful content markers. As usual, [[[http://www.wikidot.com/doc-modules:listpages-module#toc6|the documentation]]] has the full list, under the heading "Sections head/body/foot". And there are //a lot//, so be sure to take a look.
+
+* **%%title%%** -- represents the title of the page.
+* **%%title_linked%%** -- represents the title of the page, with a clickable link
+* **%%created_by%%** -- represents the author of the page.
+* **%%created_at%%** -- represents the date on which the page was created.
+* **%%rating%%** -- represents the rating of the page.
+* **%%index%%** -- represents the position of the page in the list
+* **%%content%%** -- represents the entire content of the page. We'll be coming back to this one later.
+
+Seriously, I've listed 7 here, there are 56 in total -- but some of them are so obscure that you'd never use them.
+
+[[div class="yellow"]]
++++ Please note
+ListPages //cannot// display the actual title of your SCP. For example if you wanted to list SCP-173, you can't have ListPages display "The Sculpture".
+
+This is because SCP titles are only kept on the SCP series pages, not on the SCP pages themselves. Therefore that information is inaccessible to ListPages, which only lists basic information about the selected pages and doesn't go looking on other pages for information about them.
+[[/div]]
+
+-----
+
+So now that we know a lot of parameters, let's do a demonstration.
+
+I'm going to list...
+* All pages created in the past three months...
+ * **##red|{{created_at="last 3 month"}}##**
+* ...with a title beginning with the letter "S"...
+ * **##green|{{name="S%"}}##**
+* ...that have a rating of less than 100...
+ * **##blue|{{rating="<100"}}##**
+* ...and that are not tagged "scp".
+ * **##a717de|{{tags="-scp"}}##**
+
+* I want to show no more than 40 results...
+ * **##red|{{limit="40"}}##**
+* ...and I want to show 10 results per page...
+ * **##green|{{perPage="10"}}##**
+* ...and I want all of these to appear in the same list instead of in separate lists...
+ * **##blue|{{separate="no"}}##**
+* ...and I want them to be ordered by rating, in descending order.
+ * **##a717de|{{order="rating desc"}}##**
+
+* I want these pages to be in a numbered list...
+ * **[[[http://www.wikidot.com/doc-wiki-syntax:lists|#]]]**
+* ...followed by the date on which the page was created...
+ * **##red|{{%%created_at%%}}##**
+* ...followed by the page title with a link to the page...
+ * **##green|{{%%title_linked%%}}##**
+* ...followed by the author's name...
+ * **##blue|{{by %%created_by%%}}##**
+* ...followed by the page rating, in parentheses.
+ * **##a717de|{{(%%rating%%)}}##**
+
+So I write the following ListPages module:
+
+[[div_ class="codeblock"]]
+@@[[@@module ListPages ##red|created_at="last 3 month"## ##green|name="S%"## ##blue|rating="<100"## ##a717de|tags="-scp"##
+@@                   @@##red|limit="40"## ##green|perPage="10"## ##blue|separate="no"## ##a717de|order="rating desc"##@@]]@@
+@@#@@ ##red|%%created_at%%## ##green|%%title_linked%%## by ##blue|%%created_by%%## (##a717de|%%rating%%##)
+@@[[/module]]@@
+[[/div]]
+
+...which outputs the following list:
+
+[[module ListPages created_at="last 3 month" name="S%" rating="<100" tags="-scp" limit="40" perPage="10" separate="no" order="rating desc"]]
+# %%created_at%% %%title_linked%% by %%created_by%% (%%rating%%)
+[[/module]]
+
+Is this a very useful list? No. But it's a great example.
+
+Cool. If you were following along in a sandbox, congratulations, you've just made a ListPages module. If you weren't, congratulations anyway, but less.
+
+**Note:** If you decide to make a ListPages module in the sandbox, be aware that you're going to see pages from the sandbox, not from the main wiki! It catches me off-guard every single time.
+
+Homework: Pop along to [[[Most Recently Created]]], hit Options then Page Source at the bottom, see if you can find the ListPages module, and then see if you know what each bit does. If you see stuff I've not covered, make sure you have the documentation to hand!
+
+-----
+
+Please also note that the content section of your ListPages module doesn't have to be one line long. It can be as many lines as you need it to be.
+
+If you do have more than one line, I recommend you set **separate="yes"**, or it might look a bit confusing.
+
+-----
+
+Now that I've covered the basics of ListPages, it's time to move on to its most well-known application.
+
+@@ @@
+-----
++ 3: DOING THE LISTPAGES THING
+-----
+@@ @@
+
+This is where things get tricky.
+
+[[[SCP-2998]]] followed by [[[SCP-1893]]] and [[[SCP-1173]]] are the pages that are most known for doing the ListPages Thing, and are certainly responsible for its popularity these days. All three were written by [[*user Eskobar]], who was himself taught by [[*user Aelanna]], so you have them to thank for that.
+
+Since then, many pages also do the ListPages Thing. [[[SCP-2111]]], [[[SCP-3002]]], [[[SCP-3939]]], [[[SCP-3449]]], [[[cone|my author page]]], [[[SCP-3020]]], [[[Jim North's Proposal]]], and many more also do it.
+//If your page also does the ListPages Thing, leave a comment to let everyone know!//
+
+I think 3939 wore it best. But I might be a little biased.
+
+From now on I'll be abbreviating the ListPages Thing to **LPT**.
+
+-----
+
+**BE WARNED!** Using LPT comes at a heavy cost: your reader will expect you to really justify why you've used it. LPT should be reserved for heavier articles that really need LPT to make their concepts and/or format screws work. LPT isn't suitable for SCP-AVGJOE.
+
+@@ @@
+-----
+++ 3.1: WHAT IS LPT?
+-----
+@@ @@
+
+
+LPT is when an SCP (or any page) appears to have multiple pages but keeps the same Rating Module throughout. LPT can be easily identified by checking the URL after clicking a link on the page -- if it ends in "/offset/X", where X is a number, it's LPT. Most (but not all!) applications of LPT can be identified in this way.
+
+More broadly, it's when any page on the wiki changes in content as a result of either refreshing or clicking a link.
+
+There are some exceptions to this rule -- [[[SCP-2786]]] and [[[SCP-3211]]] are not LPT, because they use @@[[html]]@@ instead of @@[[module ListPages]]@@. @@[[html]]@@ can be identified by part of the page taking a few seconds longer than the rest of the page to load, and also by the fact that changes happen instantly.
+
+LPT changes, unlike @@[[html]]@@, can only happen when the page is refreshed or when the user navigates to a /offset/ URL.
+
+[[[SCP-3340]]] makes this extra confusing, because it's powered by @@[[html]]@@ (not ListPages), and yet its changes only happen when the page is refreshed.
+
+**So, in summary:**
+
+Both LPT and @@[[html]]@@ are techniques for making the content of a page appear to change.
+
+LPT is powered by ListPages. @@[[html]]@@ is powered by HTML, CSS and often JavaScript.
+
+Changes as a result of @@[[html]]@@ can happen instantly and can be almost anything, but they can only affect things within the @@[[html]]@@ block that's already on the page.
+
+Changes as a result of LPT affect the entire page, but they can only occur when the user clicks on a link to an offset page or refreshes the page.
+
+LPT is [[[listpages-magic-and-you|easy to learn]]]. @@[[html]]@@ is [[[https://www.codecademy.com/learn/learn-html|more complicated]]].
+
+[[div class="warning"]]
++++ Warning
+According to the documentation, the ListPages module and @@[[html]]@@ do not play nicely together! You can't use @@[[html]]@@ in any LPT child pages -- it just won't work. Blame Wikidot.
+
+You get to use one or the other, not both (although an article can contain both LPT and @@[[html]]@@ so long as they're independent of each other). Choose which is best for your article and/or which is best for your skillset.
+
+[[collapsible show="+ Secret note"]]
+Recently, @@[[html]@@ and ListPages have been seen to be working together. This goes against what the documentation says, so it could mean that a fix is on its way, or it could just be a bug.
+
+Always, always test on the sandbox; always assume the documentation is correct; and if in doubt, don't use @@[[html]]@@ if you don't have to.
+[[/collapsible]]
+[[/div]]
+
+@@ @@
+-----
+++ 3.2: HOW DOES LPT WORK?
+-----
+@@ @@
+
+LPT is simply a very specific application of the standard Listing Pages technique.
+
+Here's the usual ListPages module. Take note of the specific parameters we're using here.
+
+[[div_ class="codeblock"]]
+@@[[@@module ListPages category="fragment" parent="." order="created_at" limit="1" offset="@URL|0"@@]]@@
+%%content%%
+@@[[/module]]@@
+[[/div]]
+
+There's a couple of new terms here, so I'll go over them now.
+
+* **category="fragment"** -- selects pages from the "fragment" category. Pages in the "fragment" category don't show up in Top Rated Pages This Month or in Recently Created Pages. This makes them useful for creating child pages, which we'll cover in a bit. They're not completely undetectable, though.
+
+* **parent="."** -- the parent selector matches pages whose parent is the same as this parameter's value. **parent="."** matches pages whose parent is the current page. To set a page's parent, hit Options at the bottom, then Parent, then type in the name of the page that you'd like this page to be the child of.
+
+* **order="created_at"** -- you should know what this does -- it orders pages by their date of creation. SCP-1893 actually orders its pages randomly.
+
+* **limit="1"** -- this limits the number of pages that ListPages can select to 1. Just one page.
+
+* **%%content%%** -- this placeholder means that, instead of just getting a small bit of info like the page title or its rating, ListPages will just dump the entire content of the selected page into the current page. Including CSS modules.
+
+* **offset="@URL|0"** -- this one's a little trickier to explain, so I'm going to do it in pictures.
+
+@@ @@
+-----
+++ 3.3: THE OFFSET PARAMETER
+-----
+@@ @@
+
+So say we have our SCP that we've just written. The green box below represents this brand new SCP page.
+
+[[image http://scp-sandbox-3.wdfiles.com/local--files/croquembouche-listpages/lp1.png]]
+
+Now let's place a ListPages module in it. This is represented by the big hole (which will later be filled with %%content%%).
+
+[[image http://scp-sandbox-3.wdfiles.com/local--files/croquembouche-listpages/lp2.png]]
+
+Now let's create two **child pages**. These pages are what are going to fill the hole in the **parent page**.
+
+I'll be detailing what exactly child pages are and how to make them in a bit, but for now, I'll represent them with these ugly salmon boxes:
+
+[[image http://scp-sandbox-3.wdfiles.com/local--files/croquembouche-listpages/lp3.png]]
+
+So those two child pages (salmon) are children of the parent page (green).
+
+On the parent page, we'll write our ListPages module to select and display the content of those two child pages:
+
+[[div_ class="codeblock"]]
+@@[[@@module ListPages parent="."@@]]@@
+%%content%%
+@@[[/module]]@@
+[[/div]]
+
+Which gives us the following parent page:
+
+[[image http://scp-sandbox-3.wdfiles.com/local--files/croquembouche-listpages/lp5.png]]
+
+We've got a problem already: the parent page is now displaying the content of //both// child pages. Because, by default, ListPages lists as many pages as it possibly can.
+
+So, we set **limit** to 1, to force ListPages to show only one page:
+
+[[div_ class="codeblock"]]
+@@[[@@module ListPages parent="." limit="1"@@]]@@
+%%content%%
+@@[[/module]]@@
+[[/div]]
+
+Which gives us the following:
+
+[[image http://scp-sandbox-3.wdfiles.com/local--files/croquembouche-listpages/lp4.png]]
+
+Great! We now have a ListPages module that's showing only one child page's content, and there's another child page ready and waiting to show //its// content when the reader has finished reading.
+
+So how do we actually show the second child page?
+
+We've already established that making the parent page "wider" -- i.e. making it show both child pages -- won't work, because then the reader will still be able to see the first child page.
+
+So we just move the parent page along to the right.
+
+[[image http://scp-sandbox-3.wdfiles.com/local--files/croquembouche-listpages/lp6.png]]
+
+[[div_ class="codeblock"]]
+@@[[@@module ListPages parent="." limit="1" offset="1"@@]]@@
+%%content%%
+@@[[/module]]@@
+[[/div]]
+
+We do this using the **offset** parameter. **offset** is most easily imagined as the distance from the start of the list to the child page that you want to show.
+
+[[image http://scp-sandbox-3.wdfiles.com/local--files/croquembouche-listpages/lp7.png]]
+
+[[image http://scp-sandbox-3.wdfiles.com/local--files/croquembouche-listpages/lp8.png]]
+
+[[image http://scp-sandbox-3.wdfiles.com/local--files/croquembouche-listpages/lp9.png]]
+
+[[image http://scp-sandbox-3.wdfiles.com/local--files/croquembouche-listpages/lp10.png]]
+
+The default value of **offset** is "0", meaning it will show the first child page in the list. You can change this manually if you want, but why would you want to do that?
+
+**offset="@URL"** means that instead of the offset value being a predetermined number, it's set by the URL. If you're on a page that ends in "/offset/X", that means that the URL has set the offset value of the ListPages module on that page. For example, http://www.scp-wiki.net/scp-2998/offset/1
+
+This makes it possible to change the offset via giving the reader a URL to the next page. [[[SCP-2998]]] does this by having a link at the bottom of each child page. [[[SCP-3939]]] does this by giving the reader multiple links at the bottom of each child page.
+
+**offset="@URL|0"** sets the offset according to the URL, but if the URL doesn't specify an offset -- for example when the reader loads the page for the first time -- this sets it to 0. It can be set to anything you want -- "@URL|21" is a valid value -- but 0 is normally easiest to work with. It just depends on what order your child pages are in, and which one you want to be seen first.
+
+[[[SCP-1893]]] doesn't give the reader any links. Instead, the pages are ordered randomly using **order="random"**. The offset value remains at its default values -- 0 -- so whenever the order changes, the first page in the list is displayed (i.e. a random page).
+
+* **Note about order="random":** The order of pages when using order="random" **updates once every minute**. Good news: it re-randomises all by itself, and you don't have to do anything. Bad news: It won't re-randomise any sooner. Refreshing the page over and over won't get you anywhere -- you'll still have to wait for a whole minute.
+
+@@ @@
+-----
+++ 3.4: CREATING THE CHILD PAGES
+-----
+@@ @@
+
+As established above, LPT requires there to be a parent page and several child pages.
+
+It's usually a good idea to create the parent page last because it'll take a while to create all of your child pages, so I'll detail how to create those first. Ideally you'll be creating and testing every page on the sandbox anyway, so hopefully, it shouldn't matter too much, but better safe than sorry.
+
+The child pages are what hold the content of your LPT.
+
+I'll be using [[[SCP-3939]]] as an example.
+
+The ListPages module has offset="@URL|0", so the main page is the same as [http://www.scp-wiki.net/scp-3939/offset/0 SCP-3939/offset/0].
+
+The child page that this is pointing to is [[[fragment:scp-3939-0|fragment:SCP-3939-0]]]. Take a look at the sources of the child page and the parent page and play a game of spot-the-difference between them.
+
+You should notice three things:
+# The child page contains all of the content that isn't already on the parent page.
+# The child page contains the links that take the reader to different offsets.
+# The parent page has the rating module and all the CSS formatting -- i.e. anything that needs to be on all pages.
+
+Regarding number 3, you can have things that need to be on all pages in the child if you want, but it's easier on you if it's on the parent. If you need to change something, you only need to change it once on the parent, instead of many times for each child.
+
+Note that in the case of SCP-3939, the image is on each child instead of on the parent because there's a single page on which the image isn't supposed to appear. If it was on the parent, then that image would be forced to appear on //all// pages.
+//If you're going to do this, please only upload the image to one page!//
+
+You'll usually be putting almost all of your content on the child pages, but you don't have to! Check [[[SCP-3306]]] for an example of LPT where the ListPages module is only at the bottom of the page, and only changes the ending.
+
+-----
+
+To create a child page, create a new page on the wiki called "fragment:something", where "something" is whatever you like.
+
+**It's super important that the URL begins with "fragment:".** Fragment pages don't appear in Top Rated Pages This Month, Recently Created Pages, or Most Recently Edited (although they do appear on Recent Changes). Also, neither jarvis nor scpper counts votes from fragment pages towards your vote total/average, so they won't affect anything.
+
+The "something" can be whatever you like, though I personally recommend naming them the same as your SCP while also numbering them along with the offset. So for SCP-XXXX, that'd be fragment:SCP-XXXX-0, fragment:SCP-XXXX-1, fragment:SCP-XXXX-2, and so on.
+
+Repeat this for each of your child pages.
+
+**Make sure you create the child pages in the right order!** In this guide, I'll be recommending ordering pages by the time of their creation using **order="created_at"**. You can put them in any order you like, but if you're ordering by date/time, make sure you create them in the right order.
+
+Make sure your child pages contain offset links so your reader can navigate easily to the next offset!
+
+-----
+
+The next step is to set your parent page as the parent of your child pages. Hit Options at the bottom of each child page, then Parent, then type in the name of your parent page (the URL, that is -- not the page title!). Once you've typed a few letters your parent page should appear automatically.
+
+If you haven't created your parent page yet, it won't appear in the list. Don't worry -- just do it after you've created the parent page.
+
+@@ @@
+-----
+++ 3.5: CREATING THE PARENT PAGE
+-----
+@@ @@
+
+Now that we have our child pages, we need the parent page. The parent page is the green-coloured lens through which the reader will see the salmon-coloured child pages, one by one.
+
+All you need to do is create a new page -- a normal one this time, not in the "fragment:" category -- and slap a ListPages module on it.
+
+The ListPages module I recommend is:
+
+[[div_ class="codeblock"]]
+@@[[@@module ListPages category="fragment" parent="." order="created_at" limit="1" offset="@URL|0"@@]]@@
+%%content%%
+@@[[/module]]@@
+[[/div]]
+
+This is the same module from Section 3.2: "How Does LPT Work?" from above, and each term is explained up there.
+
+The only term you may want to change is **order**. I always recommend creating your child pages in the order in which you want them to appear, and then order by "created_at". However, if you've followed my advice on how to name your child pages, then you should also be able to order by "name" or "title". You could even follow in [[[SCP-1893]]]'s footsteps and order by "random" if you like.
+
+On the sandbox, the parent page has to be in the "collab: category. Make sure the URL starts with "collab:".
+ListPages by default looks for pages in the same category as the parent page, so if you choose to omit the "category" selector in the sandbox, all of your child pages will have to be in the "collab:" category, too.
+
+-----
+
+If you've not already done so, set this page as the parent of the child pages.
+
+**On the sandbox**, you won't be able to do this unless the parent page's URL starts with "collab:". If you missed this step, no worries -- hit Options at the bottom of the parent page, then Rename, then stick "collab:" at the front of the page's name. This step isn't needed for the main wiki.
+
+[[div class="yellow"]]
++++ Hold on there, Croquembouche!
+"Why are you using these specific selectors?" you ask me. {{parent="."}} and {{order="created_at"}} are nice and all, but what's stopping me from using whatever selectors I want?"
+
+And to that I say: nothing at all. You can use whatever selectors you like to select your child pages.
+
+But here's the thing: let's say you create a load of pages called {{fragment:SCP-XXXX-0}} to {{fragment:SCP-XXXX-10}}. You order them using {{order="name"}} and select them using {{category="fragment"}} and {{name="SCP-XXXX-%"}}. And it works! Perfect.
+
+But then there's nothing stopping someone from injecting pages into the middle of that, if they were so inclined. If someone then went and created {{fragment:SCP-XXXX-0a}}, without your knowledge, it'd appear in the list between 0 and 1 and your whole offset chain would be ruined.
+
+Malicious people can't inject pages into the middle of {{order="created_at"}} without literally travelling back in time. In fact, it's even more secure if you also include {{created_by="Your Username"}}. Unless you're writing something collaborative, there's no reason not to.
+
+And {{parent="."}} is just nice because it automatically leaves a link at the top of your child pages that points to the parent page. Super helpful for lost people who don't know how they got there.
+[[/div]]
+
+Also, if you want to be really nice, make sure you leave a list of the child pages somewhere. Super convenient for future translators, and super convenient for nosy people like me who want to see how you did it.
+
+And of course, leave a comment on this page once your LPT SCP is posted!
+
+@@ @@
+-----
++ 4: CONCLUSION
+-----
+@@ @@
+
+Okay. You're done. You know all the basic stuff about Listing Pages and about doing the ListPages Thing.
+
+Still though, act with caution: you now wield great, terrible power; the power of ListPages. Use it wisely, use it responsibly, and most important: use it sparingly. ListPages format screws are amazing when they're done well. When they're done poorly, every page that uses ListPages also suffers.
+
+Get criticism on the forums, but more importantly //get your idea checked// before you even start writing. There's nothing worse than pouring this much effort into an idea that just doesn't deserve it.
+
+-----
+
+And of course, there's uses for ListPages beyond the 2 or 3 extremely specific use cases detailed here.
+
+Use a series of random ListPages to make a modular article that's completely different every time you read it. Use a ListPages along with @@[[tabview]]@@ to have separate footnotes for each tab.
+
+Do something no one has ever done before. That's the best way to wield this power.
+
+-----
+
+If you have any leftover questions, please, ask them in the discussion, and I'll make sure that they're answered.
+
+Thank you for tuning in.
