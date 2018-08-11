@@ -223,7 +223,7 @@ Let's work through the selectors to find out what each one does.
 
 ListPages has a whole bunch of selectors you can choose so that you can tell it exactly what pages to select. Here are the ones that you'll find most useful:
 
-* **created_by** -- filter by author's name. If you set this to "Croquembouche", ListPages will only show pages created by me and will ignore all others.
+* **created_by** -- filter by author's name. If you set this to "Croquembouche", ListPages will only show pages created by me and will ignore all others. Please note that this only selects the user who actually posted that page to the wiki! ListPages is blind to co-authorship and collaborations.
 
 * **rating** -- filter by rating. If you set this to ">20" you'll only see pages with a rating that's greater than 20. Set it to "=0" and you'll only see pages with a rating of 0.
 
