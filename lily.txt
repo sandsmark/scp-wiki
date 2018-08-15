@@ -1,0 +1,24 @@
+title:LilyFlower's Workbench
+Image tag checker- thanks to [[*user Croquembouche]] for the code.
+
+[[module CSS]]
+.image-checker .list-pages-item { display: flex; flex-direction: row-reverse; justify-content: space-between; align-items: center; border-top: 1px solid black; margin-top: -1px; }
+
+.image-checker .list-pages-item p { display: none; flex: 1; }
+.image-checker .list-pages-item img + p { display: block; }
+.image-checker .list-pages-item a + p { display: block; }
+
+.image-checker .list-pages-item > img { max-width: 30%; max-height: 200px; }
+.image-checker .list-pages-item a { max-width: 30%; max-height: 200px; }
+.image-checker .list-pages-item a > img { max-width: 100%; max-height: 200px; }
+.image-checker .list-pages-item img { margin: 2px; }
+[[/module]]
+
+[[div_ class="image-checker"]]
+[[module ListPages category="*" tags="-_image -_cc" perPage="250" order="created_at" separate="yes"]]
+[[image :first]]
+
+%%title_linked%% by %%created_by%%, %%created_at%%
+tags: %%_tags_linked%% %%tags%%
+[[/module]]
+[[/div]]
