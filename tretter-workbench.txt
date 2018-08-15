@@ -24,6 +24,13 @@ Instagram (Image)
 
 [[/collapsible]]
 ------
-Site news generation 
+4k list generation
+
+[[collapsible show="4ks" hide="Close"]]
+[[module ListPages separate="no" tags="+4000 -hub -donotshowupinmodule" created_at="2018.02" perPage="150" order="created_at desc desc"]]
+
+||@@* http://www.scp-wiki.net/@@%%name%% @@[[[@@%%name%%@@|@@ %%title%%@@]]]@@ @@[[*user @@%%created_by%%@@]]@@||
+[[/module]]
+[[/collapsible]]
 
 Removed to help the page load faster
