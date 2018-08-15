@@ -38,7 +38,7 @@ title:SCP Series 5
 + 4000 to 4099
 
 
-* [[[SCP-4000|Taboo]]]
+* [[span class="taboo"]][[[SCP-4000|Taboo]]][[/span]]
 * [[[SCP-4001]]] - [ACCESS DENIED]
 * [[[SCP-4002]]] - [ACCESS DENIED]
 * [[[SCP-4003]]] - [ACCESS DENIED]
@@ -1117,3 +1117,11 @@ Below, you can find recreations of each Series list which include all on-site wo
 *  [[[SCP Series 4 - Tales Edition]]]
 
 [[/div]]
+
+[[module CSS]]
+.taboo a{
+    color: green;
+    font-style: bold;
+    font-weight: 800;
+}
+[[/module]]
