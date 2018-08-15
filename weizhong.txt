@@ -236,25 +236,8 @@ Names that I have been called in Chat:
 
 [[collapsible show="Other stuff" hide="sekrit"]]
 
-[!-- SCP Block --]
-
-[[div class="feature-block"]]
-
-[[div class="content-panel left-column"]]
-[[div class="panel-heading"]]
-Top Rated SCPs This Month
-[[/div]]
-[[div class="panel-body"]]
-
-[[module ListPages rating=">10" tags="scp" order="rating desc" separate="false" date="2018.08"]]
-%%title_linked%% (+%%rating%%)
+[[module ListPages created_by="weizhong" separate="no" perPage="250" prependLine="||~ SCP ||~ Author ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||~ Length ||"]] 
+|| %%title_linked%% || [[* %%created_by%%]] || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% || %%size%% ||
 [[/module]]
-
-[[/div]]
-[[div class="panel-footer"]]
-  [!-- Placeholder --]
-[[/div]]
-[[/div]]
-[[/div]]
 
 [[/collapsible]]
