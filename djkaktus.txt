@@ -22,6 +22,10 @@ vertical-align: top; position: relative; top: -0.5em;
     text-shadow: 1px 1px 1px #000000;
     text-shadow: 1px 1px 1px rgba(0,0,0,.8);}
 }
+a img {
+    position: relative;
+    z-index: 1;
+}
 [[/module]]
 
 [[image header.png]]
@@ -181,8 +185,10 @@ vertical-align: top; position: relative; top: -0.5em;
 [[# 2812]]
 [[image 2812.png link="SCP-2812"]]
 [[module ListPages name="SCP-2812"]]
+[[div class="list-pages-box"]]
 **Class:** EUCLID | **Posted:** %%created_at%% | **Rating:** +%%rating%%
 //To our friends at Indiana Limestone, best wishes for 1935!//
+[[/div]]
 [[/module]]
 @@@@
 
@@ -1095,3 +1101,22 @@ SCP-4000 Contest **2nd** Place
 -----
 [[image workbench.png link="*http://scp-wiki.com/djkaktus-workbench"]] **-** [[image sandbox.png link="*http://kaktuskontainer.djkakt.us/djkaktus-sandbox-hub"]] **-** [[image kaktuskast.png link="*http://scp-wiki.com/kaktuskast-hub"]]
 [[/=]]
+[[module CSS]]
+a img {
+    position: relative;
+    z-index: 1;
+}
+a+.list-pages-box .list-pages-item {
+    transform: perspective(50em) rotateX(20deg);
+    transform-style: preserve-3d;
+}
+a+.list-pages-box {
+    width: 60%;
+    margin: auto;
+    border: 5px #ddd solid;
+    -webkit-transform: perspective(50em) rotateX(-30deg);
+    transform: perspective(50em) rotateX(-40deg);
+    margin-top: -12px;
+    transform-style: preserve-3d;
+}
+[[/module]]
