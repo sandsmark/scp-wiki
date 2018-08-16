@@ -1,0 +1,240 @@
+title:Author Page Tool
+[[module css]]
+
+.infobox {
+ display:inline-box;
+ overflow:hidden;
+ position:fixed;
+ right: 1em;
+ bottom: 2em;
+ width: 21%;
+ width: calc(50vw - 520px);
+ min-width: 250px;
+ height:23%;
+ padding:1%;
+ float:top; 
+ box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 6px 20px 0 rgba(0, 0, 0, 0.19);
+ background-color:#ffffff;
+ opacity: 1;
+ transition: all 0.5s ease-out;
+}
+
+.infobox:hover {
+  color:rgba(0, 0, 0, 0.5);
+  background-color:rgba(255, 255, 255, 0.5);
+}
+
+.preview{
+ color:grey;
+ width:100%;
+ display: inline-block;
+ padding-left:1%;
+ transition: box-shadow 1s ease-out;
+}
+
+.preview:hover{
+ box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.19);
+ transition: box-shadow 0.3s ease-out;
+}
+
+.preview.yes:hover, .preview.true:hover{
+  background: url('http://scpsandboxcn.wikidot.com/local--files/asriel3/logo.png') 80% 50% fixed no-repeat;
+}
+
+.preview .span { 
+ opacity: 0;
+ pointer-events: none;
+ transition: all 0.3s ease-in-out;
+ text-overflow:ellipsis;
+ position:fixed;
+ z-index: 11;
+ right: 1em;
+ bottom: 2em;
+ width:21%;
+ width: calc(50vw - 520px);
+ min-width: 250px;
+ height:23%;
+ padding:1%;
+ float:top; 
+ color:grey;
+ text-size:0.9em;
+ font-family:Segoe UI Light,Verdana,sans-serif;
+}
+
+.preview:hover .span { 
+ opacity: 1;
+ background-color:#ffffff;
+}
+
+.collab-header{
+ display:none;
+}
+
+.imagepre{
+ background:#fff;
+ max-width:80%;
+ position:absolute;
+ right: 1em;
+ bottom:calc(100% - 1em);
+ box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imagepre.\{\$image\} {
+display:none
+}
+
+@media screen and (max-width:992px) {
+    .preview .span{
+    	display: none;
+    }
+    .infobox {
+    	position: relative;
+    	margin: 1em auto;
+    	right: 0;
+    	bottom: 0;
+    }
+}
+
+#page-options-container {
+ background: transparent;
+ position: relative;
+ z-index: 10;
+}
+
+#action-area { position: relative; z-index: 20; }
+
+[[/module]]
+
+[[>]]
+[[module rate]]
+[[/>]]
+
++ TL;DR:
+
+Paste this into your author page:
+
+> @@[[include component:author-page order=created_at]]@@
+This component will automatically generate a list of all your works, in chronological order. They will be sorted into five categories: SCPs, tales, GoI-formats, translations, and others.
+
+The following collapsible contains a demonstration of what the component will look like when in use. This demonstration displays the 5 most recent pages on the wiki -- the version in your author page will display all pages posted by you.
+
+[[collapsible show="[ Show demonstration ]" hide="[ Hide demonstration ]" hideLocation="both"]]
+[[div class="infobox"]]
+
+[[module Listpages category="-fragment -component" date="last 24 hours" order="created_at" limit="1" order="random"]]
+= **[[[*%%link%%|Random Work!]]]**
+[[/module]]
+= Made by {{**[[*user Croquembouche]]**}} and {{**[[*user W Asriel]]**}}
+[[module Countpages category="-fragment -component" date="last 24 hours" order="created_at"]]
+= %%total%% new pages in last 24 hours
+[[/module]]
+[[/div]]
+
+-----
+[[=]]
+++* New Pages
+[[/=]]
+-----
+[[module ListPages category="-fragment -component" date="last 24 hours" order="created_at" limit="5"]]
+[[div class="preview"]]
+**%%title_linked%%**
+ +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
+//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
+//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
+[[div class="span"]]
+[[image :first class="imagepre yes"]]
+%%preview%%
+##000000|//tags://## %%tags%%
+[[/div]]
+[[/div]]
+[[/module]]
+
+[[/collapsible]]
+
++ Optional Parameters
+
+There are a total of 4 optional parameters which can be passed to the component to customise it further. The following is an example of the component with its default values specified.
+
+> @@[[include component:author-page@@ 
+> @@  order=created_at |@@
+> @@  perpage=100 |@@
+> @@  background=yes |@@
+> @@  image=yes |@@
+> @@]]@@
+
+I'll explain the parameters one by one.
+
+**Order:** What follows ##red|order=## will determine the order of the list of pages. You may prefer to order your pages by date posted, date edited, by rating, or by something else. Here are a few useful options:
+||~ Property||~ Meaning||
+|| name || Order by page URL, alphabetically ||
+|| title || Order by page title, alphabetically ||
+||rating desc|| Order by rating||
+||random || Random order (re-randomises once per minute) ||
+||created_at || Order by date created ||
+||updated_at || Order by date of last update ||
+These will be in ascending order -- to specify that you'd like descending order, append "desc" as such: "created_at desc"
+See [http://www.wikidot.com/doc-modules:listpages-module#toc3 here] for a full list of page order inputs.
+
+**Perpage:** How many items will be shown on each page - may be useful if you have a huge bunch of works. Default is 20, maximum is 250.
+
+**Background:** Whether a fancy-looking SCP logo shows up in the background when you mouseover something. Default is "no".
+Mouseover the following demonstration to see how it will appear.
+
+[[module ListPages name="collab:author-page-tool-guide"]]
+[[div class="preview yes"]]
+**%%title_linked%%**
+ +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
+Background is enabled by using {{**background=yes**}}.
+[[/div]]
+[[/module]]
+[[module ListPages name="collab:author-page-tool-guide"]]
+[[div class="preview"]]
+**%%title_linked%%**
+ +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
+Background is disabled by using {{**background=no**}} or by omitting the parameter altogether.
+[[/div]]
+[[/module]]
+
+**Image:** Whether the first image of each page shows up above the preview when you mouseover it. Please keep in mind that loading your author page may become really slow with the images enabled, so the decision is up to you.
+[[module ListPages name="scp-087"]]
+[[div class="preview"]]
+**%%title_linked%%**
+ +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
+Images enabled by using {{**image=yes**}} or {{**image=true**}}.
+[[div class="span"]]
+[[image :first class="imagepre"]]
+%%preview%%
+##000000|//tags://## %%tags%%
+[[/div]]
+[[/div]]
+[[/module]]
+[[module ListPages name="scp-087"]]
+[[div class="preview"]]
+**%%title_linked%%**
+ +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
+Images disabled by default - you can delete the line that says "image" in sample code.
+[[div class="span"]]
+[[image :first class="imagepre"]]
+%%preview%%
+##000000|//tags://## %%tags%%
+[[/div]]
+[[/div]]
+[[/module]]
+
++ Collaboration
+For collaborative works, the wiki page itself may not have been posted by you, but surely you'd still want it to appear on your author page! The standard component cannot display pages not created by you -- in order to display additional collaborative pages, add the following code below the previous include block.
+
+> @@[[include component:author-page-collab@@
+> @@  name=The name of the collaborative article |@@
+> @@  written_by=Authors of the page (Optional)|@@
+> @@  note=Other things you want to say about the page (Optional)|@@
+> @@  background=yes |@@
+> @@  image=yes | @@ 
+> @@]]@@
+What follows ##red|name=## should be the name of the article as seen in the URL instead of the title. For example, input ##red|scp-309-j## instead of "how do i delete articles".
+
+Each collaborative page requires you to include a new component for each one.
+
++ Tips
+1. The tool displays all pages created by the user that created the author page in which the component has been included. This usually does not cause issues, but if you have posted articles for other users, changed your wiki account name, asked another user to post your author page for you, etc... the module might not function properly.
+2. When using the collab component, please remember that no ##red|"## or ##red||## characters are allowed in the content that follows ##red|written_by=## and ##red|note=##. The input shouldn't be a single space, too.
