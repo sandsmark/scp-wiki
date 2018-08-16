@@ -187,6 +187,8 @@ Mouseover the following demonstration to see how it will appear.
 [[div class="preview yes"]]
 **%%title_linked%%**
  +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
+//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
+
 Background is enabled by using {{**background=yes**}}.
 [[/div]]
 [[/module]]
@@ -194,6 +196,8 @@ Background is enabled by using {{**background=yes**}}.
 [[div class="preview"]]
 **%%title_linked%%**
  +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
+//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
+
 Background is disabled by using {{**background=no**}} or by omitting the parameter altogether.
 [[/div]]
 [[/module]]
