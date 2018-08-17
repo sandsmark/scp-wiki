@@ -2,7 +2,7 @@ title:SCUTTLE
 [[>]]
 [[module Rate]]
 [[/>]]
-+++ PROVISIONAL ENTRY -- SCRAMBLE ORDER INITIATED, ALL TECHNICAL ADVISORS AND RAISA STAFF TO SITE-01 -- PROVISIONAL ENTRY
+++ PROVISIONAL ENTRY -- SCRAMBLE ORDER INITIATED, ALL TECHNICAL ADVISORS AND RAISA STAFF TO SITE-01 -- PROVISIONAL ENTRY
 
 ++++ This is an automatically generated entry documenting breaking events. Situation type: {{SCRAMBLE.}} Affected systems: {{SCUTTLE.}} Affected personnel: {{RAISA, TECHNICAL.}} This entry was generated on {{20██/01/28 15:42}} by {{Maria Jones [mjones06]}}
 
@@ -16,7 +16,7 @@ title:SCUTTLE
 
 **Incident Status:** {{In-Progress}}
 
-**Affected Sites:** {{Site-01, Site-06, Site-15, Site-17, Site-19, Site-23, Site-28, Site-36, Site-62, Site-66, Site-73, Site-76, Site-77, Site-103, Site-104}}
+**Affected Sites:** {{ Output Error: List object exceeds 10,000 characters. }}
 
 [[collapsible show="Access to Ticket History restricted to Technical staff." hide="Close Ticket History."]]
 
@@ -63,7 +63,7 @@ title:SCUTTLE
 
 ------
 
-> ++++++ IR#20██011300███-07, Status: //Replied.// User: //byarbr01// (**IP:** 10.101.254.███) Timestamp: //20██/01/13 10:39//
+> ++++++ IR#20██011300███-07, Status: //Replied.// User: //bcolli01// (**IP:** 10.101.254.███) Timestamp: //20██/01/13 10:39//
 >
 > Confirming initial report is as described. Are any of the sites checking in with SCUTTLE right now? If not, I'm going to powercycle this thing. Brandon
 > //Sent at light-speed from a shiny mobile device.//
@@ -76,7 +76,7 @@ title:SCUTTLE
 
 ------
 
-> ++++++ IR#20██011300███-09, Status: //Replied.// User: //byarbr01// (**IP:** 10.101.254.███) Timestamp: //20██/01/13 12:10//
+> ++++++ IR#20██011300███-09, Status: //Replied.// User: //bcolli01// (**IP:** 10.101.254.███) Timestamp: //20██/01/13 12:10//
 >
 > Tried multiple powercycles, no luck. Brought an extra set of peripherals, no difference. How are snapshots looking? They said it was working for sure last Friday. Do we even snapshot SCUTTLE? Also I found where you turn it off, sorry. :)
 
@@ -100,13 +100,13 @@ title:SCUTTLE
 
 ------
 
-> ++++++ IR#20██011300███-13, Status: //Replied.// User: //byarbr01// (**IP:** 10.101.147.███) Timestamp: //20██/01/13 13:42//
+> ++++++ IR#20██011300███-13, Status: //Replied.// User: //bcolli01// (**IP:** 10.101.147.███) Timestamp: //20██/01/13 13:42//
 >
-> Sounds good, I'll check in with you this evening. BY
+> Sounds good, I'll check in with you this evening. BC
 
 ------
 
-From: Brandon Yarbrough [byarbr01]
+From: Brandon Collins [bcolli01]
 To: Terry Thompson [tthomp03]
 Sent: 20██/01/13 21:22
 Subject: SCUTTLE - Still Broken
@@ -120,7 +120,7 @@ Brandon
 ------
 
 From: Terry Thompson [tthomp03]
-To: Brandon Yarbrough [byarbr01]
+To: Brandon Collins [bcolli01]
 Sent: 20██/01/14 07:44
 Subject: RE: SCUTTLE - Still Broken
 
@@ -128,7 +128,7 @@ That's no good. I'll try and spin up a mini-SCUTTLE on a dead VLAN with these ol
 
 ------
 
-From: Brandon Yarbrough [byarbr01]
+From: Brandon Collins [bcolli01]
 To: Terry Thompson [tthomp03]
 Sent: 20██/01/14 09:58
 Subject: RE: SCUTTLE - Still Broken
@@ -138,7 +138,7 @@ What system state? You can't take an image off this RE.
 ------
 
 From: Terry Thompson [tthomp03]
-To: Brandon Yarbrough [byarbr01]
+To: Brandon Collins [bcolli01]
 Cc: Maria Jones [mjones06]
 Sent: 20██/01/14 10:44
 Subject: FW: SCUTTLE - Still Broken
@@ -164,7 +164,7 @@ Maria, see Incident 20██011300███ at your earliest convenience and giv
 ------
 
 From: Maria Jones [mjones06]
-To: Terry Thompson [tthomp03]; Brandon Yarbrough [byarbr01]
+To: Terry Thompson [tthomp03]; Brandon Collins [bcolli01]
 Cc: O5-1 [o5comm01]; O5-6 [o5comm06]; O5-11 [o5comm11]
 Subject: SCUTTLE Outage
 Importance: High
@@ -176,7 +176,7 @@ I've looked at the incident so far, and worked with Terry via a remote session a
 
 I've sent the last three weekly snapshots (which are, in a nutshell, one big file that contains everything about what was loaded on a computer) to our programmers, but we may be suffering from a corrupted base image. Basically, we start with one large inventory of everything on the system, and then every week we track the changes made and designate it as a new snapshot. This is known as an incremental image, and allows for a much longer history of revisions for the storage. SCUTTLE is a bulky enough system that taking a brand new image of everything on the computer once a week was deemed untenable as the system collects a lot of data and the possibility of data corruption is very high.
 
-I believe everyone is up-to-speed on what the system is and does, but if you need a refresher, please see the RAISA Portal, KB10235, "System to Contain Unsupportable Threats To Life and Existence", and KB10236, "SCUTTLE Dead Man's Switch Protocol."
+I believe everyone is up-to-speed on what the system is and does, but if you need a refresher, please see the RAISA Portal, KB10235, "System to Contain Unsustainable Threats To Life and Existence", and KB10236, "SCUTTLE Dead Man's Switch Protocol."
 
 The base image was checked for consistency when it was created, so I'm not yet sure why we're having these issues. However, the question was raised on what happens if the last good image is from a time further than four weeks back. Theoretically, based on the order in which things are checked and synchronized, there should be no trouble at all. However, this is the first SCUTTLE outage directly attributable to the server itself in the many years that we've used it, and I'm simply not willing to take the risk until we can do more testing.
 
@@ -191,7 +191,7 @@ Director, Recordkeeping And Information Security Administration
 
 > ++++++ IR#20██011300███-16, Status: //Replied.// User: //wjacks02// (**IP:** 10.101.121.███) Timestamp: //20██/01/15 10:14//
 >
-> These snapshots look perfect to me. Everything inside is readable and editable when I mount them. I'm aware of the error code but I shouldn't be able to access anything on the image if it were a corrupt filesystem. I'm going to start getting into the deeper code with the team, go through the assembly. We've only got one employee that can make heads or tails of ML and she's currently on vacation. Did you guys really never test your backup scheme? The structure of this file is absolutely wild.
+> These snapshots look perfect to me. Everything inside is readable and editable when I mount them. I'm aware of the error code but I shouldn't be able to access anything on the image if it were a corrupt filesystem. I'm going to start getting into the deeper code with the team, go through the assembly. We've only got one employee that can make heads or tails of ASM and she's currently on vacation. Did you guys really never test your backup scheme? The structure of this file is absolutely wild.
 > Wayne Jackson, Senior Programmer, RAISA
 
 ------
@@ -208,15 +208,15 @@ Director, Recordkeeping And Information Security Administration
 
 ------
 
-> ++++++ IR#20██011300███-19, Status: //Replied.// User: //byarbr01// (**IP:** 10.101.147.███) Timestamp: //20██/01/16 14:14//
+> ++++++ IR#20██011300███-19, Status: //Replied.// User: //bcolli01// (**IP:** 10.101.147.███) Timestamp: //20██/01/16 14:14//
 >
-> I'm on it. BY
+> I'm on it. BC
 
 ------
 
-> ++++++ IR#20██011300███-20, Status: //Replied.// User: //byarbr01// (**IP:** 10.101.147.███) Timestamp: //20██/01/16 17:22//
+> ++++++ IR#20██011300███-20, Status: //Replied.// User: //bcolli01// (**IP:** 10.101.147.███) Timestamp: //20██/01/16 17:22//
 >
-> See attached. BY
+> See attached. BC
 >
 > //Attachment:// FSET.log [4096 KB]
 
@@ -236,7 +236,7 @@ Director, Recordkeeping And Information Security Administration
 
 > ++++++ IR#20██011300███-23, Status: //Replied.// User: //vsheld01// (**IP:** 10.101.121.███) Timestamp: //20██/01/22 11:14//
 >
-> I think we've found something. The way these backups try to restore, it's loading an incompatible RAID driver before the correct one, and the system is erroring out before the rest of the drivers load. That could definitely cause a filesystem error, if it can't see the virtual disk. Your FSET report confirms a different RAID controller was installed about six years ago. I didn't even know they did RAID that far back, I was still in college when this thing was rolled out. I think we have a potential solution here, I'm going to be working with the team and try and replace all the properties of the old driver with the new one. I'll get back to you when we've got something for you to try.
+> I think we've found something. The way these backups try to restore, it's loading an incompatible RAID driver before the correct one, and the system is erroring out before the rest of the drivers load. That could definitely cause a filesystem error, if it can't see the virtual disk. Your FSET report confirms a different RAID controller was installed about six years ago. I didn't even know they did RAID when SCUTTLE was first implemented, I was still in college when this thing was rolled out. I think we have a potential solution here, I'm going to be working with the team and try and replace all the properties of the old driver with the new one. I'll get back to you when we've got something for you to try.
 
 ------
 
@@ -270,7 +270,7 @@ Director, Recordkeeping And Information Security Administration
 
 ------
 
-> ++++++ IR#20██011300███-29, Status: //Replied.// User: //byarbr01// (**IP:** 10.101.254.███) Timestamp: //20██/01/26 14:44//
+> ++++++ IR#20██011300███-29, Status: //Replied.// User: //bcolli01// (**IP:** 10.101.254.███) Timestamp: //20██/01/26 14:44//
 >
 > No dice. Gets much further along but errors out E0x45 HSHFAIL. Is that hash checking? Brandon.
 
@@ -336,7 +336,7 @@ You might know where I'm going with this. SCUTTLE is broken.
 
 I want to be clear that you're not in imminent danger of being vaporized; we know exactly when to move you to safety if we cannot resolve the current issue. As such, please continue with your job as usual until February 10th at 2300 UTC. If you have not received an email from me between now and then, you will receive one automatically indicating the plan of evacuation for your particular site. These plans will be very similar to evacuation drills you've already done numerous times.
 
-Foundation administration is actively working on a suppression campaign to protect our secrecy should the worst occur, but in all honesty there aren't very many credible cover stories for fifteen nukes detonating simultaneously around the world. That team is accepting emails with suggestions at [misinfo].
+Foundation administration is actively working on a suppression campaign to protect our secrecy should the worst occur, but in all honesty there aren't very many credible cover stories for that many nuclear warheads detonating simultaneously around the world. That team is accepting emails with suggestions at [misinfo].
 
 The Foundation will survive, because it must. We all appreciate your cooperation during this situation.
 
