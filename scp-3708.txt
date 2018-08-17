@@ -1,7 +1,27 @@
 title:SCP-3708
-[[>]]
-[[module rate]]
-[[/>]]
+[[module CSS]]
+#u-pagetitlenew {
+    color: #901;
+    padding: 0 0 0.25em;
+    margin: 0 0 0.6em;
+    font-weight: normal;
+    font-size: 200%;
+    border-bottom: 1px solid #bbb;
+}
+ 
+body {
+    font-family: verdana,arial,helvetica,sans-serif;
+    font-size: 0.82em;
+}
+
+#page-title {
+    display: none;
+}
+[[/module]]
+
+[[div id="pagetitlenew"]]
+SCP-3708
+[[/div]]
 
 [[div style="background-color: rgba(255,255,255,0.6); border: 1px solid gray; border-radius: 3px; padding: 2% 4% 1% 4%;"]]
 
