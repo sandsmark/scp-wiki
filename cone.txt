@@ -1,19 +1,301 @@
 title:cone
-[[module CSS]]
-@import url('http://scp-sandbox-3.wikidot.com/local--files/move-2/IBM_VGA8.css');
+[!-- Oh hey, did you see my fancy sliders and think "hell yeah I want those"?
 
-body { font-family: pxplus_ibm_vga8regular,serif; font-size: 16px; line-height: 16px; }
-p { line-height: 16px; }
-strong, b, #side-bar div.menu-item a, #side-bar .collapsible-block-link { font-weight: normal; }
+If yes: lean in real close and I'll tell ya how.
 
-#top-bar { font-size: 100%; }
-#top-bar ul li a::before { content: "[ "; }
-#top-bar ul li a::after { content: " ]"; }
-[[/module]]
+Copy this here component module and paste it anywhere you like:
 
-[[include component:image-block
- | name=ui.jpg
- | caption=Hello yes this is text
+[[include :scp-sandbox-3:component:page-info-slider
+  fullname=NAME-OF-PAGE |
+  truncate=yes |
+  title-length=short |
+  image=yes |
+  shade=none |
+  title-1=TITLE | text-1=TEXT |
+  title-2=TITLE | text-2=TEXT |
+  title-3=TITLE | text-3=TEXT |
+  summary=SUMMARY |
+  quote=QUOTE
 ]]
 
-The original 8x8 font provided by the BIOS on the IBM PC and family (PCjr, XT, AT) is normally used in graphics modes.  Text modes use the fonts provided by the character ROM (or BIOS ROM) on the video card; see below for these.  The BIOS font contains only the lower 128 ASCII characters, but the same 8x8 font was carried over to IBM's EGA and VGA, which combine it with the upper half of the CGA charset.  This fills out the CP437 character set used here.
+I'm gonna get you to change some parameters. When I say "Change X to Y", what I'm asking you to do is find the line that says "X=A" and change it to "X=Y". Do not change it to "Y=A". X is the parameter name, Y (or A) is its value. You want to change its value.
+
+- Change fullname to the URL of your page - everything that comes after "www.scp-wiki.net/". If the url is "www.scp-wiki.net/scp-173", change it to "scp-173". If it's "www.scp-wiki.net/fragment:eshu1", change it to "fragment:eshu1". Simple as.
+
+- Change title-length to either short, medium or long. Short is good for SCPs. Medium is good for more than 10 characters. Long is good for longer. Try medium, see what happens.
+
+- By default, titles will only be on one line, and they'll get cut off with an ellipsis if they're too long. If you want it to wrap to the next line, set truncate to "no" or "false".
+
+- If you want an image, set image to "yes". It'll take the first one from the page. To find out which one is first, open up the Files window for that page - it's the one at the top.
+
+- If you want stuff to be overlaid with a colour, put either a colour name or a hex code in the shade parameter. It'll have an opacity of 0.1.
+
+- The rest of the parameters are to fill the content of the table. Change them all.
+
+--]
+
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[module CSS]]
+/*@import url(http://scp-sandbox-3.wikidot.com/component:raisatheme/code/1);*/
+
+/*#page-title { display: none; }
+.page-title { border-bottom: solid 1px #bbbbbb; color: #990011; font-weight: normal; margin: 0 0 0.6em; padding: 0 0 0.25em; font-size: 200%; }
+.page-title p { margin: 0; line-height: normal; }*/
+
+table.wiki-content-table { margin: -1px auto 0 auto; width: 90%; }
+.yui-navset .yui-content{ background-color: initial; border: none; padding: 0; }
+.list-pages-box { margin-bottom: 2em; }
+
+#side-bar .side-block {
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.random { text-align: center; }
+.random p { margin: 2em auto; }
+.random a { position: relative; box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.2), 0px 3px 10px 0 rgba(0, 0, 0, 0.19); padding: 1em; transition: all 0.3s ease-in-out; }
+.random a:hover { box-shadow: 0px 3px 4px 0 rgba(0, 0, 0, 0.2), 0px 3px 10px 0 rgba(0, 0, 0, 0.19); }
+.random a::after { content: ""; position: absolute; top: 0; right: 0; left: 0; bottom: 0; pointer-events: none; background: url(http://scp-wiki.wdfiles.com/local--files/cone/redarrow.png); animation: bg-slide 1s infinite linear; opacity: 0; transition: opacity 0.2s ease-in-out; }
+.random a:hover::after { opacity: 1; }
+
+@keyframes bg-slide {
+    0% { background-position: 0px center; }
+    100% { background-position: 74px center; }
+}
+
+.page-tags a { display: inline !important; }
+.page-tags a::after { white-space: normal; word-break: normal; }
+.page-tags a:nth-of-type(1)::after { content: " are-we-cool-yet best-author-page";  }
+.page-tags a:nth-of-type(2)::after { content: " goi-format global-occult-coalition maria-cones marshall-carter-and-dark meta pataphysical? possibly-pataphysical prometheus scp wilsons-wildlife _are-we-cool-yet _global-occult-coalition _marshall-carter-and-dark _prometheus _scp-foundation _wilsons-wildlife tagged-correctly"; }
+[[/module]]
+
+[[div]]
+
+[[module Listpages created_by="=" tag="-author -workbench -contest -splash -supplement -translation" category="-fragment -component" limit="1" order="random"]]
+[[div class="random"]]
+**[[[*%%link%%|Visit a random article by me]]]**
+
+//It's a choice of %%total%%... which one will it be?//
+[[/div]]
+[[/module]]
+
++ Pure Originals
+
+[[include :scp-sandbox-3:component:page-info-slider
+  fullname=scp-3939 |
+  truncate=yes |
+  title-length=short |
+  shade=grey |
+  title-1=Title | text-1=[NUMBER RESERVED; AWAITING RESEARCHER] |
+  title-2=Notes | text-2=March 2018 #2; most Offset pages (65) |
+  title-3=Format screw? | text-3=Oh yeah |
+  summary=A multiple choice story in which you, ████ ████████, a disgraced researcher, must discover what SCP-3939 really is. |
+  quote="I quit." he tells you. "I fucking quit. I'm done here. I'm done with you. I'm done with 3939. I'm done with the Foundation. I'm done with fuckers like you getting to Class 4. You'll make a great O5 someday, you know that? Fuck you. Fuck you, ████."
+]]
+
+[[include :scp-sandbox-3:component:page-info-slider
+  fullname=scp-3211 |
+  truncate=yes |
+  title-length=short |
+  shade=grey |
+  title-1=Title | text-1=There Is No Canon |
+  title-2=Notes | text-2=2nd longest article (char count); [https://www.reddit.com/r/SCPDeclassified/comments/8ek9j7/scp3211_there_is_no_canon/?ref=share&ref_source=link 4th highest rated Declassified] |
+  title-3=Format screw? | text-3=Hella |
+  summary="It's basically SCP-055, rebooted to fit the current site standards." - [https://www.reddit.com/r/SCPDeclassified/comments/8ek9j7/scp3211_there_is_no_canon/dxwzu9t/ /u/JPS_TEAM_B_6905] |
+  quote=By proceeding to read this document you acknowledge and accept that you are about to be exposed to an anomalous effect.
+]]
+
++ Collaborations
+
+[[include :scp-sandbox-3:component:page-info-slider
+  fullname=scp-3790 |
+  truncate=yes |
+  title-length=short |
+  shade=grey |
+  title-1=Title | text-1=Department of Abnormalities |
+  title-2=Written with | text-2=[[*user djkaktus]] |
+  title-3=Format screw? | text-3=No |
+  summary=At the end of a corridor, an elevator takes you to you a quiet, dark place. |
+  quote=A pedestal rests in the middle of the chamber. Four parallel lines in the dust, consistent with finger marks, imply that whatever was upon it has recently been removed.
+]]
+
++ Contest Entries
+
+[[include :scp-sandbox-3:component:page-info-slider
+  fullname=end-of-death-hub |
+  truncate=yes |
+  title-length=medium |
+  shade=red |
+  title-1=Written with | text-1=[[*user Captain Kirby]], [[*user OthellotheCat]] and [[*user Veiedhimaedhr]] |
+  title-2=Written for | text-2=Doomsday Contest |
+  title-3=Format screw? | text-3=No, but nice art |
+  summary=One day, people stopped dying. Joyce Michaels is pretty pissed off about it. |
+  quote=**Scenario Designation:** ΩK-Class. **Likelihood:** Near Impossible. **Severity:** Survivable.
+]]
+
+[[include :scp-sandbox-3:component:page-info-slider
+  fullname=scp-3984 |
+  truncate=yes |
+  title-length=short |
+  shade=grey |
+  title-1=Title | text-1=Poking Death with a Stick |
+  title-2=Written for | text-2=[/end-of-death-hub End of Death] |
+  title-3=Format screw? | text-3=Yeah |
+  summary=When death breaks... poke it with a stick. |
+  quote=One round from a standard-issue security handgun was fired into the forehead of D-10273 by Dr. Young.
+]]
+
+[[include :scp-sandbox-3:component:page-info-slider
+  fullname=omega-k |
+  truncate=yes |
+  title-length=short |
+  shade=saddlebrown |
+  title-1=Length | text-1=4688 words |
+  title-2=Written for | text-2=[/end-of-death-hub End of Death] |
+  title-3=Format screw? | text-3=It's a tale |
+  summary=It's the end of the world, but you still have to go to work in the morning. |
+  quote="I just find it funny how this is a K-class scenario and all, but the mundane day-to-day stuff just carries on."
+]]
+
+[[include :scp-sandbox-3:component:page-info-slider
+  fullname=the-foundation-wants-a-robot-army |
+  truncate=no |
+  title-length=medium |
+  shade=saddlebrown |
+  title-1=Written with | text-1=[[*user Captain Kirby]], [[*user OthellotheCat]] and [[*user Veiedhimaedhr]] |
+  title-2=Written for | text-2=[/end-of-death-hub End of Death] |
+  title-3=Format screw? | text-3=TALE |
+  summary=Three GoIs come together to discuss a long-term solution. Performed as a real chat and transcripted with only minor edits. |
+  quote=**Young:** Even I have to admit that we do have to retain some humanity for this to be marketable.
+]]
+
++ Other
+
+[[include :scp-sandbox-3:component:page-info-slider
+  fullname=component:earthworm |
+  truncate=yes |
+  title-length=medium |
+  shade=blue |
+  title-1=Page type | text-1=component |
+  title-2=Written in | text-2=CSS |
+  title-3=Format screw? | text-3=Why not |
+  summary=A more decorative series navigator to replace cheap plaintext ones. Instructions for use are in the author comment. |
+  quote=.earthworm div:nth-child(2).no a, .earthworm a[href="/"] { color: #333; text-decoration: none; cursor: text; pointer-events: none; }
+]]
+
+[[include :scp-sandbox-3:component:page-info-slider
+  fullname=cone |
+  truncate=yes |
+  title-length=short |
+  shade=red |
+  title-1=Page type | text-1=Author |
+  title-2=Please rate | text-2=//Please// |
+  title-3=Format screw? | text-3=Unsure |
+  summary=A collection of articles written by [[*user Croquembouche]]. |
+  quote=A collection of articles written by [[*user Croquembouche]].
+]]
+
+[[include :scp-sandbox-3:component:page-info-slider
+  fullname=fragment:site-news-title-fetcher |
+  truncate=yes |
+  title-length=medium |
+  shade=blue |
+  title-1=Page type | text-1="component" |
+  title-2=Written in | text-2=Javascript |
+  title-3=Format screw? | text-3=No |
+  summary=A tool to automagically fetch SCP titles to make it easier to update the Site News. |
+  quote=if(list.scps[j].toUpperCase() == splits[0].toUpperCase()) { vlog("Found a match for " + list.scps[j] + " (" + splits[1] + ")"); list.lines[j] = list.lines[j].replace("%%actual-title%%",splits[1]); };
+]]
+
+[[include :scp-sandbox-3:component:page-info-slider
+  fullname=listpages-magic-and-you |
+  truncate=yes |
+  title-length=medium |
+  shade=purple |
+  title-1=Page type | text-1="Guide" |
+  title-2=Written in | text-2=English |
+  title-3=Format screw? | text-3=No |
+  summary=A guide to using ListPages both for Listing Pages and doing LPT. |
+  quote=Don't have a clue what any of that means? That's fine — that's what this guide is for
+]]
+
+[[collapsible show="+ Other things the cone has done"]]
+* Suggested the [[[http://www.scp-wiki.net/system:page-tags/tag/interactive|interactive]]] tag
+* Created [[[http://www.scp-wiki.net/forum/t-6086502#post-3829009|the site logo]]] for Pride Month 2018
+* JS Technical Staff (25th June 2018 -- current)
+* Made the banner for the [[[GRU "P" Hub]]]
+* Suggested the [[[http://www.scp-wiki.net/system:page-tags/tag/theme|theme]]] tag
+[[/collapsible]]
+
+[[=]]
+[[image sandbox.jpg width="200" link="http://scp-sandbox-3.wikidot.com/cone"]]
+[[/=]]
+
+@@ @@
+
+[[tabview]]
+[[tab Workbench]]
+[[/tab]]
+
+[[tab Conic Sections]]
+[[div style="border:solid 1px #999999; background:#f2f2c2; padding:5px; margin-bottom: 10px;"]]
+[[=]]
+++++ NOTICE FROM THE FOUNDATION RECORDS AND INFORMATION SECURITY ADMINISTRATION 
+
+The following file is harbour to an extraordinarily virulent cognitohazard, which hijacks the reader's brain and forces it to produce shitty documentation about cones.
+
+Research is ongoing. In the meantime, please do not, under //any// circumstances, read this page's author comment and contribute your own cone-based fuckery.
+
+-- Maria Cones, Director, RAISA
+
+[[/=]]
+[[/div]]
+
+[[div class="normie"]]
+[[module ListPages name="cone%"
+                             order="random"
+                             limit="1"
+                             category="fragment"
+                             offset="@URL|0"]]
+[[div class="page-title"]]
+%%title_linked%%
+[[/div]]
+%%content%%
+[[/module]]
+[[/div]]
+[[/tab]]
+
+[[tab Tag Stuff]]
+
+**Pages tagged "4000"**
+//If you see this and the tag isn't the current contest, please feel free to correct it//
+[[collapsible]]
+[[module ListPages tags="+4000" separate="no" order="rating desc" perPage="250"]]
+* %%title_linked%% by %%created_by%% (%%rating%%)
+[[/module]]
+[[/collapsible]]
+
+**Pages tagged "4000" but are otherwise untagged**
+//If you see this and the tag isn't the current contest, please feel free to correct it//
+[[collapsible]]
+[[module ListPages tags="+4000 -scp -tale -goi-format -hub" separate="no" perPage="250"]]
+* %%title_linked%% by %%created_by%% (%%rating%%)
+[[/module]]
+[[/collapsible]]
+
+**List of pages that can appear on this author page**
+//Check the author comment if you want to contribute//
+[[collapsible]]
+[[module ListPages name="cone%" separate="no" category="fragment" perPage="250"]]
+* %%title_linked%% by %%created_by%%
+[[/module]]
+[[/collapsible]]
+
+[[/tab]]
+[[/tabview]]
+[[/div]]
