@@ -16,7 +16,7 @@ div#container-wrap { background: url(http://scp-sandbox-3.wdfiles.com/local--fil
 #header { max-width: initial; }
 #header h1, #header h2 { display: none; }
 
-#top-bar { font-size: 100%; top: 142px; }
+#top-bar { font-size: 100%; top: 142px; max-width: none; }
 #top-bar ul li { margin: 0 4px; }
 #top-bar ul li a { color: #0a0; background-color: #00a; padding: 0; border: none; line-height: 16px; max-height: 16px; }
 #top-bar ul li a:hover, #top-bar ul li:hover a { color: #0a0; text-decoration: none; border: none; background-color: white; }
@@ -27,16 +27,16 @@ div#container-wrap { background: url(http://scp-sandbox-3.wdfiles.com/local--fil
 #side-bar .side-block { position: relative; border-radius: 0; border-width: 16px; border-style: solid; padding: 0; border-image: url(http://scp-sandbox-3.wikidot.com/local--files/move-2/border_white.png) 16 round; box-shadow: none; margin-bottom: 2em; }
 #side-bar .heading { font-size: 100%; border: none; padding: 0; margin: 1em 0 0 -11px; width: calc(100% + 22px); background: url(http://scp-sandbox-3.wikidot.com/local--files/move-2/line_white.png); background-repeat: repeat-x; }
 #side-bar .heading p { display: inline-block; padding: 0 8px; margin-left: 1.5em; color: white; font-weight: normal; }
-#side-bar .side-block:nth-of-type(1),
-#side-bar .side-block:nth-of-type(1) .heading p { background-color: #aaa !important; }
-#side-bar .side-block:nth-of-type(2),
-#side-bar .side-block:nth-of-type(2) .heading p { background-color: #0a0 !important; }
-#side-bar .side-block:nth-of-type(3),
-#side-bar .side-block:nth-of-type(3) .heading p { background-color: #aaa !important; }
-#side-bar .side-block:nth-of-type(4),
-#side-bar .side-block:nth-of-type(4) .heading p { background-color: #a00 !important; }
-#side-bar .side-block:nth-of-type(5),
-#side-bar .side-block:nth-of-type(5) .heading p { background-color: #00a !important; }
+#side-bar .side-block,
+#side-bar .side-block .heading p { background-color: #aaa; }
+#side-bar .side-block[style="background-color: #f0fff6;"],
+#side-bar .side-block[style="background-color: #f0fff6;"] .heading p { background-color: #0a0 !important; }
+#side-bar .side-block[style="background-color: #e7e5e8;"],
+#side-bar .side-block[style="background-color: #e7e5e8;"] .heading p { background-color: #aaa !important; }
+#side-bar .side-block[style="background-color: #fff0f0;"],
+#side-bar .side-block[style="background-color: #fff0f0;"] .heading p { background-color: #a00 !important; }
+#side-bar .side-block[style="background-color: #e5e5ff;"],
+#side-bar .side-block[style="background-color: #e5e5ff;"] .heading p { background-color: #00a !important; }
 
 #page-content .image {position: relative; z-index: 1; }
 #page-content .scp-image-block { position: relative; background: #aaa; border-radius: 0; border-width: 16px; border-style: solid; padding: 0; border-image: url(http://scp-sandbox-3.wikidot.com/local--files/move-2/border_white.png) 16 round; margin: 1em -2em 1em 1em; box-shadow: none; }
