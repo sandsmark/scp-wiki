@@ -1,4 +1,78 @@
 title:pastarasta1's simply epic artpage
+[[module css]]
+/* HEADER */
+#header {
+    height: 140px;
+    position: relative;
+    z-index: 10;
+    padding-bottom: 30px; /* FOR MENU */
+    background: url(http://kaktuskontainer.wdfiles.com/local--files/floppyphoenix-test/pastarasta-logo.png) 10px 35px no-repeat;
+}
+ 
+#header h1 a {
+    display: block;
+    content: "pastarasta1's Art Page";
+    margin: 0;
+    padding: 80px 0 25px;
+    line-height: 0px;
+    max-height: 0px;
+    color: transparent;
+    background: transparent;
+    font-family: 'Nanum Gothic', Arial, sans-serif;
+    font-size: 150%;
+    text-decoration: none;
+    text-shadow: none;
+ 
+}
+ 
+#header h1 a::before {
+    content: "pastarasta1's Art Page";
+    color: #900000;
+    text-shadow: 3px 3px 5px #000000;
+}
+ 
+#header h1 a span{
+    display: block;
+    content: "";
+    visibility: hidden;
+}
+ 
+#header h2 {
+    margin-left: 120px;
+    padding: 0;
+    clear: left;
+    float: left;
+    font-size: 105%;
+    max-height: 38px;
+}
+#header h2 span {
+    display: block;
+    margin: 0;
+    padding: 19px 0;
+    line-height: 0px;
+    max-height: 0px;
+    font-weight: bold;
+    color: transparent;
+    text-shadow: none;
+}
+#header h2 span::before {
+    content: "simply epic";
+    display: block;
+    margin: 0;
+    padding: 0px 0;
+    line-height: 0px;
+    max-height: 0px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+}
+
+div#container-wrap {
+    background: url(http://kaktuskontainer.wdfiles.com/local--files/floppyphoenix-test/pastarasta-header.png) top left repeat-x;
+}
+[[/module]]
+
 [[>]]
 [[module Rate]]
 [[/>]]
