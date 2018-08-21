@@ -71,6 +71,49 @@ title:pastarasta1's simply epic artpage
 div#container-wrap {
     background: url(http://scp-wiki.wdfiles.com/local--files/pastarasta1-s-simply-epic-artpage/pastarasta-header.png) top left repeat-x;
 }
+
+/* RATING MODULE */
+.page-rate-widget-box .rate-points {
+    background-color: #505050 !important;
+    border: solid 1px #5a5a5a;
+}
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background-color: 505050;
+    border-top: solid 1px #5a5a5a;
+    border-bottom: solid 1px #5a5a5a;
+    font-weight: bold;
+}
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    background: 070;
+    color: #000;
+    padding: 0 4px;
+    margin: 0 1px;
+}
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background: #505050;
+    color: #000;
+    text-decoration: none;
+}
+.page-rate-widget-box .cancel {
+    background-color: #505050;
+    border: solid 1px #5a5a5a;
+    border-left: 0;
+    border-radius: 0 5px 5px 0;
+}
+.page-rate-widget-box .cancel a {
+    background: transparent;
+    text-transform: uppercase;
+    color: #000;
+}
+.page-rate-widget-box .cancel a:hover {
+    border-radius: 0 3px 3px 0;
+    background: #505050;
+    color: #ffffff;
+    text-decoration: none;
+}
 [[/module]]
 
 [[>]]
