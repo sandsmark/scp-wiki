@@ -1101,12 +1101,12 @@ Any piece of paratech that has had an article explicitly written about it (i.e. 
 
 [[collapsible show="+ Translations" hide="- Translations"]]
 @@ @@
-[[tabview]]
-[[tab Overview]]
+[[div style="border: solid 5px #999999; padding: 10px; margin-bottom: 10px;"]]
 
-This set of tabs contain links to foreign language translations of Third Law articles. This is provided as an alternative to the Interwiki sidebar module, which, due to technical limitations, is disabled by the Third Law CSS theme. The lists in these tabs are auto-generated using a ListPages module, and do not necessarily reflect the actual translation status of any given article -- you may follow a link only to find that the article has not been translated yet. This is an unfortunate limitation of the way these lists are generated.
+This section contain links to foreign language translations of Third Law articles. This is provided as an alternative to the Interwiki sidebar module, which, due to technical limitations, is disabled by the Third Law CSS theme. The list here is auto-generated using a ListPages module, and does not necessarily reflect the actual translation status of any given article -- you may follow a link only to find that the article has not been translated yet. This is an unfortunate limitation of the way this list is generated.
 
-||~ Tab ||~ Language||
+||~ Code||~ Language||
+|| EN || English ||
 || RU || Russian/Русский ||
 || KO || Korean/한국어 ||
 || CN || Chinese/中文 ||
@@ -1120,91 +1120,10 @@ This set of tabs contain links to foreign language translations of Third Law art
 || UA || Ukrainian/українська ||
 || PT/BR || Portuguese/Português ||
 
-[[/tab]]
-[[tab RU]]
-
-[[module ListPages tags="third-law" separate="no" order="title" perPage="100" prependLine="||~ English Title||~ RU Article||"]]
-||%%title%% || [http://scpfoundation.ru/%%name%% Link] ||
+[[module ListPages tags="third-law" separate="no" order="title" perPage="100" prependLine="||~ EN||~ RU||~ KO||~ CN||~ FR||~ PL||~ ES||~ TH||~ JP||~ DE||~ IT||~ UA||~ PT/BR||"]]
+||%%title_linked%% || [http://scpfoundation.ru/%%name%% Link] || [http://ko.scp-wiki.net/%%name%% Link] || [http://scp-wiki-cn.wikidot.com/%%name%% Link] || [http://fondationscp.wikidot.com/%%name%% Link] || [http://scp-wiki.net.pl/%%name%% Link] || [http://lafundacionscp.wikidot.com/%%name%% Link] || [http://scp-th.wikidot.com/%%name%% Link] || [http://scp-jp.wikidot.com/%%name%% Link] || [http://scp-wiki-de.wikidot.com/%%name%% Link] || [http://fondazionescp.wikidot.com/%%name%% Link] || [http://scp-ukrainian.wikidot.com/%%name%% Link] || [http://scp-pt-br.wikidot.com/%%name%% Link] ||
 [[/module]]
 
-[[/tab]]
-[[tab KO]]
-
-[[module ListPages tags="third-law" separate="no" order="title" perPage="100" prependLine="||~ English Title||~ KO Article||"]]
-||%%title%% || [http://ko.scp-wiki.net/%%name%% Link] ||
-[[/module]]
-
-[[/tab]]
-[[tab CN]]
-
-[[module ListPages tags="third-law" separate="no" order="title" perPage="100" prependLine="||~ English Title||~ CN Article||"]]
-||%%title%% || [http://scp-wiki-cn.wikidot.com/%%name%% Link] ||
-[[/module]]
-
-[[/tab]]
-[[tab FR]]
-
-[[module ListPages tags="third-law" separate="no" order="title" perPage="100" prependLine="||~ English Title||~ FR Article||"]]
-||%%title%% || [http://fondationscp.wikidot.com/%%name%% Link] ||
-[[/module]]
-
-[[/tab]]
-[[tab PL]]
-
-[[module ListPages tags="third-law" separate="no" order="title" perPage="100" prependLine="||~ English Title||~ PL Article||"]]
-||%%title%% || [http://scp-wiki.net.pl/%%name%% Link] ||
-[[/module]]
-
-[[/tab]]
-[[tab ES]]
-
-[[module ListPages tags="third-law" separate="no" order="title" perPage="100" prependLine="||~ English Title||~ ES Article||"]]
-||%%title%% || [http://lafundacionscp.wikidot.com/%%name%% Link] ||
-[[/module]]
-
-[[/tab]]
-[[tab TH]]
-
-[[module ListPages tags="third-law" separate="no" order="title" perPage="100" prependLine="||~ English Title||~ TH Article||"]]
-||%%title%% || [http://scp-th.wikidot.com/%%name%% Link] ||
-[[/module]]
-
-[[/tab]]
-[[tab JP]]
-
-[[module ListPages tags="third-law" separate="no" order="title" perPage="100" prependLine="||~ English Title||~ JP Article||"]]
-||%%title%% || [http://scp-jp.wikidot.com/%%name%% Link] ||
-[[/module]]
-
-[[/tab]]
-[[tab DE]]
-
-[[module ListPages tags="third-law" separate="no" order="title" perPage="100" prependLine="||~ English Title||~ DE Article||"]]
-||%%title%% || [http://scp-wiki-de.wikidot.com/%%name%% Link] ||
-[[/module]]
-
-[[/tab]]
-[[tab IT]]
-
-[[module ListPages tags="third-law" separate="no" order="title" perPage="100" prependLine="||~ English Title||~ IT Article||"]]
-||%%title%% || [http://fondazionescp.wikidot.com/%%name%% Link] ||
-[[/module]]
-
-[[/tab]]
-[[tab UA]]
-
-[[module ListPages tags="third-law" separate="no" order="title" perPage="100" prependLine="||~ English Title||~ UA Article||"]]
-||%%title%% || [http://scp-ukrainian.wikidot.com/%%name%% Link] ||
-[[/module]]
-
-[[/tab]]
-[[tab PT/BR]]
-
-[[module ListPages tags="third-law" separate="no" order="title" perPage="100" prependLine="||~ English Title||~ PT/BR Article||"]]
-||%%title%% || [http://scp-pt-br.wikidot.com/%%name%% Link] ||
-[[/module]]
-
-[[/tab]]
-[[/tabview]]
+[[/div]]
 
 [[/collapsible]]
