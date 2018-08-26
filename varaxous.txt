@@ -36,8 +36,6 @@ title:Varaxous' Author Page
     min-width: 200px;}
 .section table td:nth-child(3), .section table th:nth-child(3) {
     min-width: 80px;}
-.section table tr:nth-child(even) td:first-child {
-    font-weight: bold;}
 .section table tr{
     background: #fff;}
 .section table tr:nth-child(odd){
@@ -68,7 +66,7 @@ title:Varaxous' Author Page
 
 
 [[div class="section"]]
-[[module ListPages order="name" tags="artwork" perPage="500" separate="false" prependLine="||~ Title||~ Author||~ Created||"]]
+[[module ListPages order="name" tags="artwork -art2017" perPage="500" separate="false" prependLine="||~ Title||~ Author||~ Created||"]]
 ||%%title_linked%%||%%created_by_linked%%||%%created_at%%||
 @@ @@
 [[/module]]
