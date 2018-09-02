@@ -82,3 +82,9 @@ Thank you for taking time to view my author page.
 I'm content to be the light in the corner of this room.” - Ben Smolin//[[/size]][[/=]]
 
 [[/div]]
+
+[[collapsible show="+ comment tracker" hide="- comment tracker"]]
+ [[module ListPages created_by="scpcrnp" separate="no" order="commented_at desc"]]
+ * %%commented_by_linked%% commented on %%title_linked%% at %%commented_at%%
+ [[/module]]
+ [[/collapsible]]
