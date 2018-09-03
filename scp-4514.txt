@@ -1,4 +1,15 @@
 title:SCP-4514
+[[module CSS]]
+#page-content .collapsible-block-folded a.collapsible-block-link {
+    animation: blink 0.8s ease-in-out infinite alternate;
+}
+@keyframes blink {
+    0% { color: transparent; }
+    50%, 100% { color: #b01; }
+}
+[[/module]]
+
+
 [[>]]
 [[module Rate]]
 [[/>]]
@@ -84,91 +95,26 @@ Should an individual be injured by SCP-4514 in such a way that activates its ano
 > 
 > **Result:** Subject expired.
 
-[[html]]
+[[collapsible show="NOTICE: You have (1) new message(s)" hide="NOTICE: You have no new messages"]]
 
-<style type="text/css">
+= **Foundation Network Inter-Site Comm Service v.3.155**
 
-blockquote
-{
-  border:1px dashed #999;
-  padding: 0 12.8px;
-  background-color:#f4f4f4
-}
+= **===MESSAGE FROM ETHICS COMMITTEE RECEIVED===**
 
-</style>
-
-<script type="text/javascript">
-    
-function blink()
-{
-    var blinking = document.getElementById("blinking");
-
-    if (blinking.style.visibility == "visible")
-    {
-    	blinking.style.visibility = "hidden";
-    }
-    else
-    {
-    	blinking.style.visibility = "visible";
-    }
-}
-
-function openHide()
-{
-    if (timer)
-    {
-    	clearInterval(timer);
-    }
-    
-    var message = document.getElementById("message");
-    var blinking =  document.getElementById("blinking");
-    
-    if (message.style.display == "block")
-    {
-    	message.style.display = "none";
-    }
-    else
-    {
-    	message.style.display = "block";
-    }
-
-        blinking.innerHTML = "NOTICE: You have no new messages";
-
-    if (blinking.style.visibility == "hidden")
-    {
-    	blinking.style.visibility = "visible";
-    }
-}
-    
-var timer = setInterval(blink, 1000);
-
-</script>
-    
-<div id="blinking" style="font-family: verdana,arial,helvetica,sans-serif; font-size: 0.8em; color: #b01" onClick="openHide();">NOTICE: You have (1) new message(s)</div>
-<div id="message" style="display: none; font-family: verdana,arial,helvetica,sans-serif; font-size: 0.8em; color: #333">
-
-<br><center><strong>Foundation Network Inter-Site Comm Service v.3.155</strong></center><br>
-
-<br>
-<center><strong>===MESSAGE FROM ETHICS COMMITTEE RECEIVED===</strong></center><br>
-
-<blockquote>
-<p> Dr. Young,</p>
-<p></p>
-<p> We have reviewed your experiment logs, and deemed them excessive, and unwarranted. </p>
-<p> </p>
-<p> However, if we are to be honest, we noticed your undue testing of SCP-4514 a while ago. It's rare to have D-Class actively line up for experimentation. Moving to actual employees was only inevitable, given the service being offered.</p> 
-<p> 
-<p> We needed to discuss what the next step should be: create a standardized process for choosing SCP-4514 test subjects, offer this to the public, etc.</p>
-<p> 
-<p> In the end, as you can tell, we returned to our core principles as an organization. The world has forced us to redefine the status quo, but it is not our job to change it back. No matter how much we want to be at eternal peace, normalcy dictates that we can never achieve it.</p>
-<p>
-<p> Officially, you are hereby removed from the SCP-4514 project.</p>
-<p> 
-<p> Unofficially, we get it. <a href="http://www.scp-wiki.net/end-of-death-hub"> Life's a bitch.</a></p>
-<p> 
-<p> - Dr. Violet Mesmur, Ethics Committee</p>
-</blockquote>
-[[/html]]
-
+> Dr. Young,
+> 
+> We have reviewed your experiment logs, and deemed them excessive, and unwarranted.
+> 
+> However, if we are to be honest, we noticed your undue testing of SCP-4514 a while ago. It's rare to have D-Class actively line up for experimentation. Moving to actual employees was only inevitable, given the service being offered.
+> 
+> We needed to discuss what the next step should be: create a standardized process for choosing SCP-4514 test subjects, offer this to the public, etc.
+> 
+> In the end, as you can tell, we returned to our core principles as an organization. The world has forced us to redefine the status quo, but it is not our job to change it back. No matter how much we want to be at eternal peace, normalcy dictates that we can never achieve it.
+> 
+> Officially, you are hereby removed from the SCP-4514 project.
+> 
+> Unofficially, we get it. [[[end-of-death-hub | Life's a bitch.]]]
+> 
+> - Dr. Violet Mesmur, Ethics Committee
+[[/collapsible]]
 [[footnoteblock]]
