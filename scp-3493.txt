@@ -1,0 +1,887 @@
+title:SCP-3493
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[html]]
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=MedievalSharp');
+        @import url('http://scpsandbox2.wikidot.com/local--files/cyrusfiredawn/spots.css');
+        body {
+        font-size: 0.80em;
+        color: #333;
+        font-family: verdana,arial,helvetica,sans-serif;
+        }
+        li, p {
+        line-height: 141%;
+        }
+        ul li {
+        list-style: square;
+        width: fit-content;
+        }
+        blockquote {
+        border: 1px dashed #999;
+        padding: 0 1em;
+        background-color: #f4f4f4;
+        }
+        hr {
+        margin: 1em 2em;
+        padding: 0;
+        height: 1px;
+        border: none;
+        color: #DDD;
+        background-color: #AAA
+        }
+        @keyframes flipAnimation {
+        0%, 
+        50% {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        }, 
+        to {
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        } 
+        }
+        #loadSpinner {
+        width:2.5em;
+        animation: flipAnimation infinite;
+        animation-duration: 1.6s;
+        }
+        #header, #connecting {
+        background: #cadfff;
+        width: 100%;
+        text-align: center;
+        font-size: 1em;
+        }
+        #uniControls {
+        background: #cadfff;
+        font-size: 1em;
+        padding: 2em;
+        }
+        #uniControlsHeader {
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.3em;
+        }
+        #uniList .storyMode {
+        margin: 3em 0em;
+        color: red;
+        }
+        #uniList .freeMode li span {
+        color: #b01;
+        cursor: pointer;
+        }
+        #uniList .freeMode li span:hover {
+        text-decoration: underline;
+        }
+        #header #header-inner p, #connecting #connecting-inner p {
+        line-height:100%;
+        margin: 0.8em;
+        }
+        #header-inner {
+        padding: 0.1em;
+        }
+        #connecting-inner {
+        padding: 5em 1em;
+        font-size: 2em;
+        }
+        #uwarning, .uerror {
+        color: red;
+        }
+        .usuccess {
+        color: green;
+        }
+        .showButton {
+        color: #b01;
+        cursor: pointer;
+        }
+        .showButton:hover {
+        text-decoration: underline;
+        }
+        #main {
+        margin-top: 3em;
+        margin-bottom: 3em;
+        padding: 1em;
+        border: 1px solid black;
+        width: 95%;
+        }
+        #main>div:not(.current) {
+        display: none;
+        }
+        .scpbtn {
+        background: #ddd;
+        text-align: center;
+        padding: 1em;
+        border-style: outset;
+        font-weight: bold;
+        cursor: pointer;
+        user-select: none;
+        margin: 5px;
+        width: 14em;
+        margin: 0em auto;
+        }
+        .scpbtn:hover {
+        background: #bbb;
+        }
+        .scpbtn:active {
+        background: #aaa;
+        border-style: inset;
+        }
+        #uniTitle {
+        font-size: 1.2em;
+        }
+        #msue {
+        background: #1d1d1d;
+        color: #eaeaea;
+        padding: 2em;
+        font-size: 1.03em;
+        }
+        #msue blockquote {
+        background: #222;
+        }
+        #medieval {
+        font-family: 'MedievalSharp', cursive;
+        font-size: 1.3em;
+        margin-bottom: 3em;
+        position: relative;
+        background-image: url("http://scpsandbox2.wdfiles.com/local--files/cyrusfiredawn/parchment5.jpg");
+        padding: 2em;
+        background-size: 100%;
+        text-shadow: 0.5px 0.5px rgba(20, 20, 20, 0.29);
+        }
+        #medieval .section::first-letter {
+        font-size: 2em;
+        }
+        #future {
+        background: linear-gradient(#333384, #13326d);
+        padding: 2em;
+        color: #ffffff;
+        text-shadow: 0 0 0.5px #b9b9b9;
+        border-style: ridge;
+        border-width: 11px;
+        border-radius: 13px;
+        border-color: #c5c5c5;
+        }
+        #future blockquote {
+        background: #0a3052;
+        border: solid;
+        }
+        #future .columnd {
+        width: 100%;
+        font-size: 1.1em;
+        }
+        #future .columnd div{
+        width: 49%;
+        display:inline-block;
+        }
+        #future .glowbox {
+        box-shadow: 0px 0px 2px #43ffea;
+        }
+        #unknownspots {
+        font-family: 'wc_rhesus_b_btaitalic';
+        word-break: break-all;
+        }
+        #unknownspots p {
+        line-height: 2em;
+        }
+        #unknownspots p:nth-child(even) {
+        text-align:right;
+        }
+        #unknownspots hr {
+        border: 3px;
+        height: 8px;
+        background: #333;
+        border-radius: 6px;
+        border-style: dashed;
+        }
+        #unknownspots .emergency {
+        width: 100%;
+        font-size: 1.4em;
+        color: red;
+        }
+        #unknownspots .emergency div{
+        width: 49%;
+        display:inline-block;
+        }
+        #unknownspots .emergency div:nth-child(even){
+        text-align:right;
+        }
+        #unknownspots .translated {
+        color: blue;
+        font-family: verdana,arial,helvetica,sans-serif;
+        font-size: 0.8rem;
+        word-break: break-word;
+        }
+        @keyframes textflickerzero {
+        0%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 0);}
+        99.1%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 0);}
+        99.11%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 1);}
+        99.3%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 1);}
+        99.31%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 0);}
+        99.5%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 0);}
+        99.51%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 1);}
+        99.7%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 1);}
+        99.71%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 0);}
+        99.9%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 0);}
+        99.91%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 1);}
+        99.99%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 1);}
+        100% {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 0);}
+        }
+        #zero blockquote {
+        border-style: solid;
+        margin: 0;
+        border-bottom: none;
+        border-top: none;
+        background: #cbcbcb;
+        border-width: 1em !important;
+        animation: textflickerzero 30s infinite;
+        color: #930000;
+        border-color: #930000;
+        }
+        #zero blockquote:first-child p {
+        padding-top: 1em;
+        }
+        #zero blockquote p {
+        margin:0;
+        padding-bottom: 1em;
+        }
+        #zero blockquote:first-child {
+        border-top: 1px solid #999;
+        }
+        #zero blockquote:last-child {
+        border-bottom: 1px solid #999;
+        }
+        #o5pass {
+        outline: none;
+        border: 1px solid #a4a4a4;
+        font-size: 3em;
+        background: #fdfdfd;
+        padding: 0.1em 0.4em;
+        text-align: center;
+        width: 100%;
+        }
+        .page>img {
+        width: 100%;
+        }
+        .page-inner {
+        position: absolute;
+        padding: 4em 4em;
+        top: 0px;
+        left: 0px;
+        }
+        .m_chart {
+        position: absolute;
+        top: 3em;
+        right: 3em;
+        margin: 0;
+        text-align: right;
+        }
+        .m_chart>img {
+        width: 10em !important;
+        }
+        .m_chart>figcaption {
+        font-size: 0.7em;
+        margin-top: 0.3em;
+        }
+        #loadbar {
+        width: 100%;
+        background-color: #585858;
+        margin-top: 0.5em;
+        margin-bottom: 2em;
+        border: 3px double #888;
+        }
+        #loadbarprogress {
+        height: 2.3em;
+        background-color: #eaeaea;
+        color: black;
+        text-align: center;
+        line-height: 2.3em;
+        font-weight: bold;
+        }
+
+
+
+        // STEP TWO: Adding your custom CSS (if any)
+        // Important: Make sure each item starts with the ID of your div so your CSS doesn't clash with others!!
+        // -- ADD CSS BELOW THIS LINE --
+        #msue {
+            background: #1d1d1d;
+            color: #eaeaea;
+            padding: 2em;
+            font-size: 1.03em;
+        }
+        #msue blockquote {
+            background: #222;
+        }
+
+
+
+
+
+
+        // -- ADD CSS ABOVE THIS LINE --
+
+
+    </style>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script>
+        function toggleShow(clickedId, elementId, closedText, openedText) {
+                var clicked = document.getElementById(clickedId);
+                var target = document.getElementById(elementId);
+        
+                var targetVisibility = target.style.display;
+                if(targetVisibility === "none") {
+                    target.style.display = "block";
+                    clicked.innerHTML = openedText;
+                } else if(targetVisibility === "block") {
+                    target.style.display = "none";
+                    clicked.innerHTML = closedText;
+                }
+            }
+    </script>
+</head>
+<body>
+    <div id="header">
+        <div id="header-inner">
+            <p><strong>Connected To:</strong></p>
+            <p><strong id="uniTitle"></strong></p>
+            <p id="uwarning"><strong>WARNING:</strong><span id="uniWarning"></span></p>
+        </div>
+    </div>
+    <div id="connecting" style="display:none;">
+        <div id="connecting-inner">
+            <p id="o5approved" style="display:none; color: green;"><strong>ACCESS GRANTED:<br/>EMERGENCY OVERRIDE ACTIVE</strong></p>
+            <p><strong>...Reconnecting...</strong></p>
+            <image id="loadSpinner" src="http://scpsandbox2.wdfiles.com/local--files/cyrusfiredawn/SCP_Foundation_Logo.png">
+        </div>
+    </div>
+    <div id="main">
+        <div id="initial">
+            <p><strong>Item #:</strong> SCP-XXXX</p>
+            <p><strong>Object Class:</strong> Keter</p>
+            <p><strong>Special Containment Procedures:</strong> [DATA EXPUNGED]</p>
+            <p><strong>Description:</strong> [DATA EXPUNGED]</p>
+        </div>
+        <div id="parallel">
+            <p><strong>Item #:</strong> SCP-XXXX</p>
+            <p><strong>Object Class:</strong> Keter</p>
+            <p><strong>Special Containment Procedures:</strong> SCP-XXXX is to be monitored at all times via Foundation Space Telescope SCPST-03. SCPST-03 is to automatically measure alterations in size, relative position, and redshift of SCP-XXXX, and then record timestamped status reports to the appropriate documentation hosted on the Multiversal Collaboration Project network.</p>
+            <p>New researchers assigned to SCP-XXXX should first be exposed to files accessed by the Multiversal Collaboration Project network while connected to a non-local system peer, to ensure that they are capable of retaining necessary memories regarding SCP-XXXX information. Since local Foundation operatives are unable to enforce restricted security level access on non-local peer systems, IT staff with Level XXXX/5 clearance are to regularly review non-local peer documentation and restrict access to instances where security clearance is deemed inadequate. Restrictions may be removed when local security level access protocols have been negotiated with the non-local peer in violation of local ruling.</p>
+            <p>The Multiversal Collaboration Project should have access to at least 5 alternative non-local iterations of SCP-XXXX documentation at all times. Should this value drop below the threshold, the Multiversal Diplomatic Department is to begin negotiations and/or renegotiations with Foundation instances that currently exist as a part of the network, followed by those that have left the network for non-detrimental reasons, and lastly, attempts are to be made to contact as-of-yet-uncontacted  instances of the SCP Foundation.</p>
+            <p>Rogue instances are to be removed from the Multiversal Collaboration Project immediately, providing the network has more than the required 5 alternative instances.</p>
+            <p><strong>Description:</strong> SCP-XXXX is an anti-meme localized to single universe, capable of hiding all information regarding itself solely within the universe. While SCP-XXXX may be observed and described at any point in time, information dealing with the object will immediately become uninterpretable by both those describing it, and those attempting to interpret any form of a description pertaining to SCP-XXXX. Due to this, Foundation personnel are unable to interpret data describing a local instance of SCP-XXXX after it has been described, as long as it exists in the local universe.</p>
+            <p>SCP-XXXX itself is the first confirmed hyper-massive black hole that currently resides 3.1Gpc outside of the Milky Way Galaxy. While its post-hyperdense nature is not yet understood, it is currently theorized that the gravitational influence it produces is so great that it has begun to consume meta-information regarding itself as the meta-information spreads throughout the local universe. The result of this is the perceived effect that meta-information concerning it becomes inconceivable to those trying to interpret it, due to it being destroyed by the origin (SCP-XXXX) at almost the instant the meta-information is formed.</p>
+            <p>However, this effect has so far been observed to only manifest within the universe that a particular instance of SCP-XXXX resides in. Due to this, a counter-measure has been established to allow Foundation personnel the ability to retain information about SCP-XXXX via connections established through the Multiversal Diplomatic Department (MDD). For more information, see the Multiversal Collaboration Project Documentation Summary.</p>
+            <p><strong>Multiversal Collaboration Project Summary:</strong> The Multiversal Collaboration Project was created to combat the powerful anti-memetic effects of SCP-XXXX, by exploiting a major weakness in its mechanics: While it may consume its own meta-information soon after its creation, this meta-information can be "captured" when it passes in to a non-local universe, and therefore make the meta-information immune to the consumption of the local SCP-XXXX instance.</p>
+            <p>On 12/07/20██, the non-local universe now designated "UNI-ZERO" contacted the SCP Foundation and supplied an offer to join what is now known as the Multiversal Collaboration Project network, to allow a joint operation in efficiently monitoring SCP-XXXX. Using the network, local Foundation personnel are capable of retaining information regarding SCP-XXXX, by reviewing documentation written in alternate non-local universes by parallel Foundation operatives. Due to the cross-universe meta-information "capture" effect, SCP-XXXX data from alternate non-local universes manages to avoid consumption by SCP-XXXX and is therefore void of its anti-memetic properties.</p>
+            <p>Future collaboration projects between local and non-local Foundation iterations are pending review of potential Inter-Reality Paradox scenarios.</p>
+            <p><strong>UPDATE:</strong> On 04/02/20██, all contact with UNI-ZERO was lost.</p>
+        </div>
+        <div id="classic">
+            <p><strong>Item designation number:</strong> #21849AR-XXXX</p>
+            <p><strong>Description of item:</strong></p>
+            <p>Only known instance of a hypermassive black hole. Current coordinates: 5<sup>h</sup> 38<sup>m</sup> 24.0844<sup>s</sup>, 41° 02' 47.0317". Distance of 3.1Gpc from Earth. Total estimated mass exceeding 3.1×10<sup>20</sup> <i>M</i><sub>☉</sub> (roughly 1/10th mass of observable universe). Emits low-level gravitational distortions at periodic intervals. Remnants of decayed galaxy clusters detected within 3.4Mpc of anomaly. Theorized former galaxy clusters consumed by the hypermassive black hole.</p>
+            <p><strong>Detail of current containment:</strong></p>
+            <p>Anomaly is monitored by satellite ADRS-41C. ADRS-41C contains a core Gravitational Distortion Array (GDA). A back-up GDA is maintained at all times. Any changes detected in anomaly status are automatically recorded to Multiversal Collaboration Project network. Technicians to monitor Multiversal Collaboration Project network upload system at all times and fix errors immediately.</p>
+            <p><strong>Report:</strong></p>
+            <p>First discovered when currently designated UNI-ZERO contacted the Office during cross-universal experimentation, claiming to be an alternative iteration of the Office of Anomaly Regulation, known as the "SCP Foundation". The Foundation invited the OAR to join a collaborative effort to counter a powerful anti-memetic that was only capable of affecting those local to the universe they resided in (formerly undiscovered by the OAR, now designated #21849AR-XXXX). Experimentation was carried out involving researchers exposed to Foundation-supplied documentation and compared to a control group observing the anomaly with no exposure to Foundation documentation. Subsequent results confirmed Foundation claim and the OAR accepted the invitation to join what is now known as the Multiversal Collaboration Project.</p>
+            <p>Theorized the anomalies density enables it to consume meta-information regarding itself as it leaves the object, creating a natural anti-memetic property. Effect has proven unable to consume meta-information as it leaves its local universe, allowing alternative iterations of the OAR (shown to be more commonly referred to as the SCP Foundation in other universes, The Administrator has approved discussion regarding a possible name change of the OAR to match with counterparts) to share information concerning the anomaly in a large multiversal network.</p>
+            <p>So far proven effective.</p>
+            <p><strong>Addendum:</strong> Contact with UNI-ZERO lost without warning. Discussions with alternate iterations show mutual confusion regarding the sudden disappearance. Collaborative investigations are currently ongoing into the fate of UNI-ZERO.</p>
+        </div>
+        
+        <div id="medieval">
+            <figure class="m_chart">
+                <img src="http://scpsandbox2.wdfiles.com/local--files/cyrusfiredawn/ariga.PNG"/>
+                <figcaption>Heavenly SCP xxxx resting in Auriga</figcaption>
+            </figure>
+            <p class="section" style="margin-bottom: 2em;"><strong>Enumeration:</strong> SCP xxxx</p>
+            <p class="section" style="margin-bottom: 6.8em;"><strong>Object Form:</strong> Keterian</p>
+            <p class="section"><strong>Special Containment Procedures:</strong> SCP xxxx shalt be viewed at regular intervals through the enhanced telescopic device, which wilt be provided pow'r by an "electric generator" given to the House of SCP by an external cosmic hereby referred to as "celestial zero". </p>
+            <p>All changes of the anomalous heavenly body shalt be writ down on standard parchment and then placed into the "scanning" device provided here by aforementioned celestial zero. Only those who has't read the book that wast gift'd 'longside the device, may be permitted to toucheth, 'r operate it. </p>
+            <p>All memb'rs of the House of SCP that joineth endeavours involving SCP xxxx must but first be shown extra-celestial titles on the so-called "network" device pertaining to SCP xxxx. </p>
+            <p class="section"><strong>Description:</strong> SCP xxxx is a heavenly body shown to has't effects on the human mind that does involve creation of a form of forgetfulness regarding the supernatural body itself. </p>
+            <p>Scholars currently studying said body first hath believed the cause wast from that of a god of mental degradation, howev'r, recent contacts with extra-celestial guilds hast lead these same scholars to now view it as something beyond our current und'rstanding of the natural sciences and alchemies. </p>
+            <p>Extra-celestial guilds ref'r to SCP xxxx by the form of "hypermassive black hole", a concept yet to be truly und'rstood despite the known golden age of science our people reside in.</p>
+            <p>The most wondrous alchemists of the House has't been unable to unfold SCP xxxx by their und'rstandings of thaumaturgy giving more support to the claims of our alleg'd allies.</p>
+            <p>Those claiming to be of another world has't provided us with complex mechanical contraptions capable of most wondrous and paranormal feats, the likes of which continue to astound. Those who claimeth to join us with other brothers-in-arms are to also seek study of the celestial body with us in mutual und'rstanding. The ungodly devices provided for the mentioned "multiversal collaboration project" art actively being studied by the greatest minds of the House of SCP to ensure nay blasphemous activity doth take lodging within those forms.</p>
+            <p class="section"><strong>Addendum the First:</strong> As of recent events p'rtaining to the multiversal collaboration project, celestial zero hast ceased contact with both ourselves and our scholarly allies. It is regrettable we can find nay apparent sign of any last guide from our benefactors, howev'r it is possible the celestial body may has't quell'd their final efforts to form final bond with us.</p>
+            <p>Furth'r work taketh place to establish a final und'rstanding relating to this dark omen continues with the remaining benefactors of our great endeavour.</p>
+            <p class="section"><strong>Addendum the Second:</strong> Furth'r development regarding the celestial body hast been noted, in the form of a physical change in heavenly location. The change matches nay known pattern ev'r did measure upon the celestial spheres. Scholars and self proclaim'd prophets has't thus produced nay consistent explanation.</p>
+            <p>Those of the highest standing in the House of SCP has't thus far concluded this peculiar event may be connected to the aforementioned disappearance of celestial zero. Belief of relation in the recent infiltrations of the House of SCP by spies claiming to be long-standing memb'rs of the House of SCP to these events also holdeth high merit among peers.</p>
+            <p>Such heathens, in particular those claiming to has't been 'forgot' by the House of SCP, should be spared immediate execution and instead did hold f'r extensive interrogation to ascertain their connection to the celestial body and its recent movements.</p>
+        </div>
+        <div id="dado">
+            <div style="text-align:center;">
+                <p style="font-size:2em;"><strong>ACCESS TO THIS UNIVERSE HAS BEEN BLOCKED BY SYSADMIN</strong></p>
+                <p>See contact logs for more information.</p>
+            </div>
+            <br/>
+            <p><strong>UNI-3236 Contact Logs:</strong> The following is a record of the initial contact with the Foundation present in UNI-3236.</p>
+            <blockquote>
+                <p><strong>Dr. Hansol: </strong>Connection to UNI-3236 established. Attempting initial communication.</p>
+                <p><i>Dr. Hansol activates baseline sound communication array.</i></p>
+                <p><strong>Dr. Hansol: </strong>Hello? Do you hear me? Repeat, do you hear me?</p>
+                <p><i>Distorted sounds are heard, Dr. Hansol begins retuning instruments</i></p>
+                <p><strong>Dr. Hansol: </strong>Hold on, the signal's a bit patchy, let must just... There, that should do it. Can you hear me now?</p>
+                <p><strong>UNI-3236: </strong>Yes hello, this is dado, best place in multiverse to buy greatest anomaly, how can I be doing for you?</p>
+                <p><strong>Dr. Hansol: </strong>Wait, what? dado? That can't be right, this should be a Foundation facili-</p>
+                <p><strong>UNI-3236: </strong>Yes, you are interested in SCP Foundation by dado, okay then, which variety is your choosing? dado only make finest anomaly, only best.</p>
+                <p><strong>Dr. Hansol: </strong>You have got to be joking. dado, are you running the Foundation there?</p>
+                <p><strong>UNI-3236: </strong>Yes, dado run Foundation good, you trust dado, dado secure, dado contain, dado protect, only finest SCP from dado. You say joke, yes, you want -J SCP, okay, which can dado provide?</p>
+                <p><strong>Dr. Hansol: </strong>What? -J? What even... no, listen dado, we want to collaborate with oth-</p>
+                <p><strong>UNI-3236: </strong>Sorry no, dado no interest in partnership, sole trade only, ok, I send you surprise -J as order, thank you, bye.</p>
+                <p>[CONNECTION LOST]</p>
+                <hr/>
+                <p><strong>Aftermath: </strong>2 days following contact with UNI-3236, an unmarked package arrived at Site-41-B containing a single rock and a small piece of paper on which was crudely written in marker pen: "scp fondation by dado" (sic). The package is believed to have been sent as a result of the exchange with UNI-3236. The Multiversal Diplomacy Department has advised blocking access to UNI-3236 to all except those currently assigned to other SCP objects related to PoI "dado".</p>
+                <p>The rock has still not been studied.</p>
+            </blockquote>
+        </div>
+        <div id="future">
+            <p style="text-align:center;font-size:1.1em;"><strong>Item #:</strong> SCP-XXXX</p>
+            <div class="columnd">
+                <div>
+                    <p><strong>Threat Level:</strong> Yellow <span style="color:yellow">●</span></p>
+                </div>
+                <div style="text-align:right;">
+                    <p><strong>Object Class:</strong> Keter</p>
+                </div>
+            </div>
+            <div class="glowbox" style="border: solid 3px;background: #0a3052;">
+                <img style="width: 100%; border-bottom: solid;" src="http://scpsandbox2.wdfiles.com/local--files/cyrusfiredawn/blackhole.jpg"/>
+                <div style="padding: 0.4em; text-align: center;">SCP-XXXX as seen through the S-Hawking Deep Space Telescope.</div>
+            </div>
+            <p style="text-align:center;font-size:1.3em;"><strong>Special Containment Procedures</strong></p>
+            <p>SCP-XXXX is a designated watch target for SCP Foundation Outpost Kepler-22b-966 and is monitored at all times by an orbital Anti-Amnesic Network (AAN) on a magnitude of at least 75 nodes. 
+                <strong>Note:</strong> While the AAN is capable of keeping itself cognizant of changes to SCP-XXXX, human and huvron perception is still affected. Therefore, the AAN is solely responsible for the upkeep of the Multiversal Collaboration Project network file. At least 3 non-automaton personnel are to be briefed on SCP-XXXX and given access to the Multiversal Collaboration Project network, in order to allow maintenance of the AAN.
+            </p>
+            <p style="text-align:center;font-size:1.3em;"><strong>Description</strong></p>
+            <p>SCP-XXXX is a hypermassive black hole (Crowther Object a61C) with a Maximus Integer of over 17kMx. This level of meta-instability causes the anomaly to erase meta-information regarding itself within ~3.51s of being perceived by any intelligent entity capable of understanding it. Current estimates of the length of time for which the object's spatial instability can persist without changing form vary between 17 years and 430 years. When the black hole's Overlap Point is crossed, the anomaly is theorized to produce one of two possible effects:</p>
+            <ol>
+                <li>Disappear instantaneously, creating a temporary hypermassive white hole in its wake that will cause a fluctuation of meta-information across the temporal spectrum towards all intelligences that have previously perceived it, thereby returning any and all lost memories regarding it since its initial discovery.</li>
+                <li>Increase in size by a factor of ████████, leading to a Gimel-Class Mass-Dementia Scenario.</li>
+            </ol>
+            <p>
+                While the latter possibility poses a great threat to humanity, huvronity, and automatonity, the likelihood of the scenario occurring is below the Threat Hypothesis Value and therefore, not to be taken into account concerning the handling of SCP-XXXX containment procedures.
+            </p>
+            <p style="text-align:center;font-size:1.3em;"><strong>Addendum - Interstellar Mission (Renegade 4):</strong></p>
+            <p>On ██13-12-08, contact with UNI-ZERO was lost. This unexpected event was also reported by every contactable non-local peer on the Multiversal Collaboration Project network.</p>
+            <p>2 days before contact was lost, SCP-XXXX exhibited a decrease in redshift by a factor of 0.000001%. While such alterations are normally considered inconsequential in astrophysics, this was the first and so far only time that any change in SCP-XXXX's redshift had been measured. Further inquiry into non-local peer documentation reported similar changes in properties of SCP-XXXX at the same time as the recorded redshift alteration in the local universe.</p>
+            <p>Following an investigation into this phenomenon, permission to approach SCP-XXXX for further analysis was permitted, under the notion that the disappearance of UNI-ZERO may be connected to the anomaly.</p>
+            <p>On ██14-04-01, interstellar vehicle "Renegade 4" began an expedition towards SCP-XXXX, with the intention to monitor local anomalies and the effects of close exposure to SCP-XXXX. Estimated time of arrival: ██43-05-12.</p>
+            <p style="text-align:center;font-size:1.3em;"><strong>Addendum - Anomalous Event #01:</strong></p>
+            <p>On ██43-06-18, a signal was detected in the direction of SCP-XXXX, sent in an encrypted SCP102 format, an outdated form of Foundation encryption not used since ██21. The decrypted message read as follows:</p>
+            <blockquote class="glowbox">
+                <p>who am i</p>
+                <p>who are     </p>
+                <p>where        am i</p>
+                <p>what is is is'#</p>
+            </blockquote>
+            <p><span style="text-decoration:line-through">The meaning of the message is currently not understood, nor is the nature of its creator. Current attempts to respond to SCP-XXXX's communications are ongoing.</span> Following further contact across the Multiversal Collaboration Project network, we have since been made aware of an expedition sent by our own iteration of the Foundation towards SCP-XXXX that was due for arrival on ██43-05-12. External Foundation iterations refer to a document on our database titled "Addendum - Interstellar Mission (Renegade 4)", however no attempts to read this document have thus far proven effective, due to the effect SCP-XXXX exerts on the information it contains.</p>
+            <p>
+                The sudden loss of information regarding it is believed to coincide with the arrival of the alleged team at the designated observation point of SCP-XXXX. It is now believed that SCP-XXXX exerts its meta-information destroying ability to its surrounding area too, giving rise to the theory of a Meta-Event Horizon. Due to the danger this now poses to those that may try to interact with it, SCP-XXXX's Threat Level has been raised to Yellow.
+            </p>
+        </div>
+        <div id="unknownspots">
+            <p><strong>lsdfSdgx </strong>prosDnd <span class="translated"> [XXXX] </span></p>
+            <p><strong>nstmwFDgjsix  </strong>lwSmdfmSDF</p>
+            <hr>
+            <p><strong>fzoRX0NxWxEE9NLTPxobY1DXKzW4829Qx 
+                </strong>kfnavUvUdBdD2RLNAHE8eHiiy3fsUjNfVXUDKeANpScMVCSrS7lWeoJtQT7KFttICJzRViSwND6k4VJ6KAwF6LlaxX80qvyrR5iaLgMjRfMo5hsuCRcUHn2sFFvVyMaD0w7gzePjxm5pa859YtpnPIKNjl4b72ADs14cJb7FAwiOQL35FcHFjqKjtms72rzDfdD3z9<span class="translated"> [monitored constantly] </span>nyBLllhTvKnlk37bkmsiHu2SqgSFKpJNaCKsI3QRVes
+            </p>
+            <p>wKGw8OQ6Q9CuMieQOiC4P38SR8MwvYqTKv93aOdGQXWXmdKQLUxlEsqkpzttZnz4fjyFEbVGXTtGUnuz5q8CHRz4w4Z<span class="translated"> [restrained] </span>V1gb9BEwvZq0HNVx1CxtJpBEz3ByHhf9gTrjtEuwHA6QjiMEcEPTvveBBqDXzywskUJYMnUPBsTtrGZrXiPBB01jUV1YlcoiHjkr25x43m1lxs9Lv1M2fyN4wjX7uOdzwo0pO85QEpibjkMF59ng8xJWPdGlBqr0wsOMpPiZHEF07WSoNs<span class="translated"> [?K-Class event] </span>80cAURGhl9bAzSEfVC8pMOt5to5UdzBLI<span class="translated"> [expected 3 (months/years)?] </span>Lv8fp4QrsH4swSlPAOpIIlWtgWYzHX6jPDjupZYmt67IGb2zpptHiel92ToQ80i5f04Pc0mDI2W<span class="translated"> [plan of evacuation, see document(?) UNI-EVAC/003] </span>e05hf9j4wCYZJmruPXhAhx5veeH0fwHv</p>
+            <hr>
+            <p><strong>nBx <span class="translated"> [Information:] </span></strong>GTsQQfb3OhyxBmy7hkyNky5YwcGOWduwFf6q<span class="translated"> [post-hypermassive black hole] </span>bAVptiy2Pt5cIC3gq4FyKx1qT9uX3B4biKKkw2muoy0Q1R7r8ztPQs4KD8hfI
+            <p>x9QeIiIQESMBg8WFr<span class="translated"> [acting as an extra-universal anchor for] </span>skkhMHxXK0XcKKhCf<span class="translated"> [referred to as XXXX-A] </span> cDc1GK64b2d<span class="translated"> [most recent UNI-ZERO correspondent briefly referred to as "the maw"] </span>ZI8hmVlG6JtRjvWgal3kC2gCkNdAtYBlGZiO1BCfgBvm4PqHaizLWzfYqE7Fni1DYlybHdE5QNOmaKD6b47pZetMaq87dcP89DdNEBTg0JBYBKLTV6AXwweeYoiJe90p1lE4xesrg2TlMDcGZyn3SuZjru8LTrKuN712hBTbpd7NJcONBNIkcTiLp7MUP4HVa2ch3Rs3Pl7S7JSzS</p>
+            <p>GRHbdeqroNiRWj8N4ouf87279qS6Tj<span class="translated"> [detected movement in (space/direction)? towards current location] </span>NOHojtZjIDJjMt9aToKldHhkzMPTKsGCjFvC4r2AqTH9meWBn656DZYdM2H9d5CKo29VVLMbHdl0lQ0Lj1j6ViSuow1zyncUQsyJXjbqd1iFU5perw<span class="translated"> [creating a tear, exposing local space to the extra-universal anomaly XXXX-A] </span>GfKtTl0zI4QMMhqPxqsbFbZaLgacPhJgZTqNYch1wQMHNUbl1sqJRXK3tpvDFi8bSc7ClCm30IMqJDHyUve1EviRtoETeKdr7wnjsiy8VSOB0aCnI1acsQWlTZhSUmnIQLmAtydnzH3tTFLipEFIPF<span class="translated"> [unstable nature of] </span>CindZoC2coc9hapnD549MGqbFk08bllEdN7PF6xnRya6GBiz28FRds36p5J1r24TveA7TG<span class="translated"> [inevitable collision] </span>B4wTd<span class="translated"> [XXXX-A] </span>Ur</p>
+            <p>DKcMsUb83xlkrgIo79Zkozcz5hz<span class="translated"> [(a date of some sort)] </span>B7eVFgKMfefxeqzOYHFDLrMNdauwn8bcNiNFiMtcRuzr4Ud2JjX1yvbrxja0tksPGnMtoLiCS6hRF7KUrgNAJE99n8QrrCFw8FB2jrgJ</p>
+            <p>6I4Pu8tyKhZyH<span class="translated"> [ending the local] </span>Zv1krWAq3I3JUA29JVLV37PXu2KOzpeqocOcSKMg9FCHQ6APoIofCVVvg0Cmkhr2tPy9JkSP1DIsFMnEAkQeF6cBAOYuuvfMeBHajdKLm7giuqJkRCViYw<span class="translated"> [unable to avoid ?K-Class] </span>HRjpxZwXi7YmVBpj </p>
+            <hr>
+            <p><strong>sko4SDmx<span class="translated"> [Record:] </span>  </strong>QH9jHA<span class="translated"> [(a date of some sort) UNI-ZERO] </span>qu8etI0JSDFxDMJ7jRH5Li2yMuPEjA0eqt2dPNW1tunretTGiNQl7N67l1PMO9QlVq7hxnV7lzirZovJGUZlTyH5vet6F7M54y7X4wFbyFEueg<span class="translated"> [discovered] </span>dcWERX6iFvAobtj1wf34RewJWBmSeCwznUGmKcUV1rJtkaltCloRZPiz5S6Gvn5DKWzrxR1A9ycBfmauC5D60tjTsg<span class="translated"> [believed to be a warning from UNI-ZERO] </span>yfzXXOgXOAT2NZdFX7wW0ceqhrYACebyuQhJDPtu86reneRsDpkE<span class="translated"> [suggesting attempt to neutralize XXXX] </span>zZISnL48IROlFdFjQber1wsU<span class="translated"> [request was denied.] </span></p>
+            <hr>
+            <div class="emergency">
+                <div>qc5ZzBzrkjho<span class="translated"> [EMERGENCY] </span></div>
+                <div>qc5ZzBzrkjho<span class="translated"> [EMERGENCY] </span></div>
+            </div>
+            <p><strong>sko4dkreqdx  </strong>TwiXrt6bIx<span class="translated"> [initiation of operation UNI-EVAC/003] </span>UNOCkiQePEUQ8UyWX1bfD<span class="translated"> [inter-reality movement (see schematics for I-UNI Transportation Device 04196)] </span>cZNrA7febxNTKk6bySOkOgd3bcwA4a52fUZmfKzutL1jgDnDrVPpZHl5N9rODY4g39LTAO<span class="translated"> [dementia cases increase] </span>pq6E8JeAW<span class="translated"> [5.4 billion(?)] </span>H0rR<span class="translated"> [to be abandoned.] </span></p>
+            <p>XY714RIYh301ESiuOy40rCMUbIJf91zs6K<span class="translated"> [leave behind] </span>iPe3B0srpE9AnGeeY1D7SBR7zTj1MVR3KkX<span class="translated"> [aid to avoid future events] </span>o4U7w2Q0mcbhjNkoHITCH70M1P39ZCGJb3gqhJWLMj2HxPYbELRMJchgAh87G0caAMYlUUafIkwmqtSf707NyOhC47PIufttCwTotljrQWaQfGFm5FC4K3vGMFPLe9TjprOQF323iKOAO6TxdCkyhzOIka5KgMo1fAMbPfXHgjktlKZ9au6YtKm8IJfKKUW3<span class="translated"> [hope to translate to common dialects of foreign realities] </span>YlBPtxhU<span class="translated"> [before XXXX spreads] </span>qXYbdGsFyNvWuYhaZNApXGdqXxmO</p>
+            <p>ylmUPG4<span class="translated"> [do not forget] </span>RqDPMUehsNjiiVXIyFCiv6mIXGAdGxpzzdHnF7pYNJX2bcvglAcfydPda</p>
+            <p>PuBptSz<span class="translated"> [may be possible to neutralize XXXX] </span>mq1nhQRYh1mBGHsZAC<span style="font-size:2.2em;color:red;">yGnlrqaoJ4VI<span class="translated"> [must contact UNI-ZERO.] </span></span></p>
+        </div>
+        <div id="zero">
+            <div style="text-align:center; font-size: 1.1em;">
+                <p>Incoming connection request from: <strong>[UNI-ZERO]</strong>...</p>
+                <p>Connection accepted.</p>
+                <p>Downloading data from peer...</p>
+                <p class="uerror">ERROR: DOCUMENT CORRUPTED, ATTEMPTING CORRECTION</p>
+                <p class="uerror">FORMAT CORRECTION: FAILED</p>
+                <p class="uerror">MAIN LOOP CORRECTION: FAILED</p>
+                <p class="usuccess">CODE SET CORRECTION: SUCCESS</p>
+                <p>Displaying document (may contain errors), 1 image attached.</p>
+            </div>
+            <div>
+                <blockquote>
+                    <p>This is a final warning across the multiversal network, pleading for the immediate termination of SCP-XXXX.</p>
+                    <hr/>
+                    <p>I have stepped back from the portrait and see now that SCP-XXXX is only a single part of a larger picture. Not just our instance but all of them, across the multiverse, like individual pixels, on an unimaginably large canvas. While it is true that a single instance manifests as a hypermassive black hole, complete with the anti-memetic effect this network was designed to counter, it has since been discovered, through a less than desirable means, to be far more than what we observed on the surface.</p>
+                </blockquote>
+                <blockquote style="margin-left:-1em; margin-right:1em;">
+                    <p>As a part of our own containment procedures, we required at least one person to be stationed in a "memetic mirror chamber", a room designed to echo meta-information and act as a way of retaining memories of SCP-XXXX for a short time. Before the Maw appeared, I was the one assigned to the room and as of this message, I am still inside that room.</p>
+                </blockquote>
+                <blockquote>
+                    <p>I am fairly sure my mind will collapse the moment I try to leave, like those less fortunate. I can see them all from here, in the streets of the city, down there... the people, they don't act like people anymore. I can see them, in constant spasm, unable to control their limbs any longer, unable to even process their own innate self-awareness. Their mental faculties have diminished to a point where I wouldn't even classify them as living anymore, just husks of flesh passing scrambled, nonsensical signals across their nervous system.</p>
+                    <p>On our local date, 2027-08-29, SCP-XXXX was, I guess, "understood" to expand. By this I mean it was not something we could directly witness, it simply became known to all that looked in the direction of SCP-XXXX, despite a lack of observable confirmation. At first, it was believed to be a result of the anti-memetic effect being dampened for some unknown reason, causing a huge fluctuation of formerly repressed meta-information towards all that observed it, but this theory was quickly proven inadequate due to the remaining inability of viewers to remember anything about the anomaly. We soon realized that something had happened out there, where the anomaly is, something we could not perceive yet, simply because the meta-information had traveled fast enough to reach us, but the light that accompanied the event was still trailing behind. We did not know when it would reach us.</p>
+                    <p>Two days following the event, people began to lose memories. This had been observed before from over exposure of Foundation personnel to viewings of the anomaly, but this time it was different. It was not just the Foundation staff, not just those who knew of it, not just those that unknowingly observed it, but everyone, worldwide, began exhibiting an inability to memorize specific forms of information. Names, places, and things they had done that day, the information would become scrambled in their mind the moment they tried to recall it. </p>
+                </blockquote>
+                <blockquote style="margin-left:2em; margin-right:-2em;">
+                    <p>Over the following weeks, the effect began to expand: Long-term and short-term memories, the ability to perform simple tasks, language, communication, genetic memory, and in the cases of younger people, even bodily functions. Anything that might require information processing quickly became unable to perform its duty. </p>
+                </blockquote>
+                <blockquote>
+                    <p>Within a month, half of the global population had regressed into a state whereby they were unable to care for themselves adequately. Within two months, 98% of the population joined them. Of course, there were a few that remained immune for a long time, due to their natural immunity to anti-memetic anomalies, but when the weakest of them began to fall prey to the effects too, it became obvious that there was no place to hide anymore. We were experiencing the purest form of what many of you probably know as a Gimel-Class Mass-Dementia Scenario.</p>
+                    <p>Our lacking understanding of what the phenomenon truly was, had caused our countermeasures against this sudden turn of events to fall flat. On 2027-11-03, the Foundation and GOC admitted defeat at the hands of the phenomenon. On 2027-11-12, a reality evacuation was enacted, and the few hundred mentally sound individuals lucky enough to be in contact with the Multiversal Diplomatic Department, left our reality for God knows where.</p>
+                    <p>I sent out pleas for rescue, and each time I would receive messages informing me that I would be sent for shortly, so I could join them in the evacuation. And each time no rescue arrived, I would send out another request for help, only to be told by the same people that I had not sent any messages before it. Not that they could remember, anyway.</p>
+                    <p>So here I am, the last sane person on Earth. Relatively sane, that is. This chamber isn't meant to allow permanent retention of memories. It's like a greenhouse effect, I guess, it can hold a lot of information inside, but a lot of it still escapes through the cracks every so often. I can barely remember who I am, for one thing. Older memories seem to be some of the first to go. I can't remember where I'm from, how old I am, who my friends are... Sometimes I look down into the streets here and wonder if any of them know me, or if I know them. <span style="text-decoration:  line-through;">Or if they're my family, or if one of them is maybe</span></p>
+                    <hr/>
+                    <p>On 2027-12-27, light from the anomaly finally caught up with the meta-information it had been chasing, and I got a glimpse of what had been happening up there.</p>
+                    <p>I remember when it happened, it was dark, the stars were out, and I was trying to reconnect to the Multiversal network to send a message, just like this one, when I saw something circular, growing in the sky. It sounds strange when I type it out like this, but it was so dark that even against the night sky it had this astoundingly vast level of contrast. Just this deep well of blackness, growing quickly, behind the stars themselves, like the wispy colors of deep space were being blotted out by an eclipse of epic proportions.</p>
+                </blockquote>
+                <blockquote style="margin-left:1em; margin-right:-1em;">
+                    <p>I was mesmerized, my mind was so attached to this phenomenon that I didn't even think to switch on the monitoring equipment, I just sat there, dumbfounded as this thing began to consume more and more of the sky.</p>
+                </blockquote>
+                <blockquote style="margin-left:-1em; margin-right:1em;">
+                    <p>Then it stopped, and something else started.</p>
+                </blockquote>
+                <blockquote>
+                    <p>All at once, in one quick sweep, the sky distorted, the sheets of space looked as if they were folding up to a point at the center of the black circle. At the time, I recall thinking it looked like the sky was a patterned cloth that was being pinched in the middle and ripped away, like a magician quickly lifting a handkerchief off of a now vanished accessory.</p>
+                    <p>After the magician had finished their big reveal, they left in place of the star covered fabric a sea of dull, flowing colors, quivering slightly, disturbed by their own unexpected appearance. At the center of it all, remained that dark black circle, the Maw, out of place among the vast colors, an anomaly resting within an anomalous sky.</p>
+                    <hr/>
+                    <p>It seems I got carried away with my assessment of events. I think you need to see it for yourself to understand my reaction. I shall try to be more informative from now on.</p>
+                    <p>After the emergence of these new properties, I returned a vast amount of my time to analyzing it, an attempt to make sense of the phenomenon so to help fellow Foundations that may still be safe from its effects.</p>
+                    <p>And so I return to my findings and the truth of the matter.</p>
+                    <p>These black holes are not ordinary black holes. Ordinarily, a black hole is formed due to an intense gravity build up and subsequent collapse of matter <em>inside</em> a universe. What we're left with, is effectively a sinkhole in space, a steep drop towards what I now believe to be the outside of the universe. This theory, however, comes from my conclusion regarding the nature of these hypermassive black holes, which possess the same properties of a regular black hole, but with the important difference that they were formed <em>outside</em> of our universes. Punctures in the higher dimensional walls of our realities, originating from a place beyond the multiverse we share, created by the Maw.</p>
+                </blockquote>
+                <blockquote style="margin-left:-2em; margin-right:2em;">
+                    <p>No... not punctures. More like anchors. Anchors for the Maw, to tether itself to our realities and reel us into its vast blackness.</p>
+                </blockquote>
+                <blockquote>
+                    <p>I'm still not entirely sure what the Maw itself is. It may be alive, or it may simply be an extra-universal phenomenon born from the natural progression of a nature too vast for us to comprehend. Not the result of a biological evolution, but the evolution of physical law itself, in a realm beyond a set law of physics, as we are so accustomed to in our own realities. </p>
+                    <p>Looking back, it is possible the anti-memetic effect may just be a useful feature the anchors themselves possess, to stop us from dislodging them until it's too late and we're at the edge of the Maw. I don't really know, and I don't suppose it matters. All that matters is that the anchors, SCP-XXXX are removed, so that the thing they tether us to can't drag us further in.</p>
+                    <p>I am sorry that I can not offer you any more insight. Hopefully, this alone is enough to motivate you to take action.</p>
+                    <hr/>
+                    <p>You know, I actually regret that I can't spend the remaining time I have, that my reality has, admiring the beauty of the world beyond our worlds that covers the sky here. As the anchor, the arm of the Maw moves closer, even the walls of this chamber fail to protect my memory from its effects. I look upon it often but when I lose my line-of-sight, I have no memory of it. Simply a lingering feeling of having witnessed something truly magnificent.</p>
+                </blockquote>
+                <blockquote style="margin-left:1em; margin-right:-1em;">
+                    <p>Despite this, I can still remember what it looked like the last time it spared me my memories. I made sure I would remember it. When it first appeared, I vowed to find a way to remember it. Although I can't remember <em>doing it</em>, I know I did, I painted this, I must have. There's no one left who could have. A lasting view of the Maw and the colors of a misunderstood sky. I hope you like it as much as I do.</p>
+                </blockquote>
+                <blockquote>
+                    <p>Please, destroy the anchor before it gets this far.</p>
+                </blockquote>
+            </div>
+            <p id="finalimage_button" class="showButton" style="text-align:center;" onclick="toggleShow(this.id, 'finalimage', '[Open Attached Image]', '[Close Attached Image]')">[Open Attached Image]</p>
+            <img id="finalimage" style="display: none; width: 100%;
+                margin-bottom: 1em;" src="http://scpsandbox2.wdfiles.com/local--files/cyrusfiredawn/blackhole_temp.png">
+        </div>
+
+
+
+
+
+
+
+        <!-- STEP ONE: Adding the text content to a div. -->
+        <!-- To add new universe, create it in a div with an 'id' for code to reference it --> 
+        <!-- vvv ADD NEW UNIVERSE DIVS **BELOW** THIS LINE vvv -->
+
+
+        <div id="msue">
+            <p><strong>Item #:</strong> SCP-XXXX</p>
+            <p><strong>Object Class:</strong> Keterix</p>
+            <p><strong>Special Containment Procedures:</strong> SCP-XXXX will be watched by Dr. Joshua Smalls at all times and it is his sole duty to defend the world from it, for only he is capable of doing so.</p>
+            <p>Joshua prefers to be called by his nickname, Kaos, and shall be referred to by it at all times under penalty of immediate termination (this is a rule <span style="text-decoration:  line-through;">Joshua</span> Kaos has put in place himself and it must be obeyed at all times).</p>
+            <p><i>Dr. [REDACTED] has been terminated for referring to Kaos as "Joshua" in the Special Containment Procedures so I have now fixed it. He hates that name, don't forget it! You don't want to see what happens when his eyes start glowing blood red, I've seen it, it's like fear itself... - Dr. Kondraki</i></p>
+            <p><strong>Description:</strong> SCP-XXXX appears to probably be the most dangerous SCP we've ever met which is why only Kaos is able to stop it.</p>
+            <p>Kaos is one of the most famous members of the SCP Foundation. He has long black hair, blue eyes, and wears a long black leather coat at all times (he is friends with all of the O5 so he is allowed to break the dress code). One time, Clef was fighting 682 but he couldn't beat him so Kaos was called in and he took down 682 without an issue. Clef recognized Kaos' skill and promoted him to Site Director. They now both live together at Site-19 and the two are very happy with each other's company.</p>
+            <p>This is why Kaos was picked to handle SCP-XXXX, because Clef, Kondraki, Bright and Gears all recognized his ability to handle SCPs that are even of Keterix (new designation) strength. Kaos' abilities also cover a super powerful memory so he is the only person that can remember SCP-XXXX without using the Multiversal Collaboration Project network unlike everyone else, making him a super important asset.</p>
+            <p><strong>Interview Log - XKZ-XXXX:</strong></p>
+            <blockquote>
+                <p><strong>Interviewer:</strong> Dr. Gears</p>
+                <p><strong>Interviewee:</strong> Kaos</p>
+                <hr>
+                <p>[BEGIN LOG]</p>
+                <p><strong>Dr. Gears:</strong> Hello Jos-</p>
+                <p><i>Kaos' eyes begin to glow red</i></p>
+                <p><strong>Dr. Gears: </strong>Uh... sorry, I mean Kaos.</p>
+                <p><i>Kaos nods but keeps his eyes on Gears, like a wolf hunting its prey.</i></p>
+                <p><strong>Dr. Gears: </strong>So it's time for your daily report on SCP-XXXX. Have you noticed any changes?</p>
+                <p><strong>Kaos: </strong>I'd rather not talk about it, if you don't mind.</p>
+                <p><i>Kaos looks sad.</i></p>
+                <p><strong>Dr. Gears: </strong>Oh... what's wrong?</p>
+                <p><i>Kaos sighs then flicks his long hair out of his gloomy face.</i></p>
+                <p><strong>Kaos: </strong>It's... it's... it's nothing.</p>
+                <p><strong>Dr. Gears: </strong>Come on Kaos, you can tell me. You know we all care about you at Site-19. You're like the best scientist we have, and coming from me, that's something!</p>
+                <p><strong>Kaos: </strong>...it's ...it's Clef. He's forgotten me.</p>
+                <p><strong>Dr. Gears: </strong>That can't be right! You and Clef are mad about each other, everyone here is always jealous of you two because they wish you could be their boyfriend instead! ...is this about your parents trying to make you break up with him again?</p>
+                <p><i>Kaos begins to cry.</i></p>
+                <p><strong>Dr. Gears: </strong>I knew it. I knew your parents would be invol-</p>
+                <p><strong>Kaos: </strong>NO! That's not it! He genuinely doesn't remember me!</p>
+                <p><strong>Dr. Gears: </strong>...what?</p>
+                <p><strong>Kaos: </strong>It's not just me either! He doesn't remember any of us!</p>
+                <p><strong>Dr. Gears: </strong>What are you talking about?</p>
+                <p><strong>Kaos: </strong>Go see it for yourself! Go talk to him and see what happens!</p>
+                <p><strong>Dr. Gears: </strong>I... I don't understa-</p>
+                <p><strong>Kaos: </strong>This interview is over! If you'll excuse me, I'm going to have a duel with 682 to take my mind off things.</p>
+                <p><i>Kaos crushes the microphone with one hand and storms out.</i></p>
+                <p>[END LOG]</p>
+                <hr/>
+                <p><strong>Result: </strong>Further interviews with Dr. Clef showed inconsistent memories and an inability to recall various Foundation staff, the majority of which are currently assigned to SCP-XXXX. Deep in Clef's heart is a space fit for Kaos though.
+            </blockquote>
+            <p><strong>Addendum: </strong>Further research into psyche of other Foundation scientists shows additional signs of minor memory loss, particularly those assigned to SCP-XXXX, suggesting an additional, not yet understood effect produced by SCP-XXXX. Kaos is still working as hard as he can to find the one responsible so he can take his ultimate revenge.</p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- ^^^ ADD NEW UNIVERSE DIVS **ABOVE** THIS LINE ^^^ -->
+
+    </div>
+    <div id="uniControls">
+        <div id="uniControlsHeader">Multiversal Collaboration Project Network<br/>Control Panel</div>
+        <div id="uniList">
+            <div style="text-align:center; margin-top: 3em;"><i>Connecting...</i></div>
+            <div class="storyMode">
+                Database Connection Error: "ERROR 1146 (42S02): Table 'mcpdb.universe_list' doesn't exist"<br/>
+                <div style="text-align: center; color: black; margin-top:2em;">Attempting to resolve issue...</div>
+                <div id="loadbar">
+                    <div id="loadbarprogress" style="width:0%">0%</div>
+                </div>
+                Please try using the "Random Peer Universe" function until this issue has been fixed. <br/><br/>Alternatively, if you have sufficient clearance, use the Emergency Overseer Override.
+            </div>
+            <div class="freeMode" style="display:none;">
+                <div style="text-align:center;">Connection Successful.</div>
+                <div style="text-align:left;font-size:1.3em">Multiverse List</div>
+                <ul id="mainUniList">
+                </ul>
+            </div>
+        </div>
+        <div id="randomUni" class="scpbtn">Random Peer Universe</div>
+        <div class="storyMode" style="border: 1px solid black; padding: 1.5em; margin-top: 3em;">
+            <p id="o5controls_button" class="showButton" style="text-align:center;" onclick="toggleShow(this.id, 'o5controls', '[Open O5 Control Panel]', '[Close O5 Control Panel]')">[Open O5 Control Panel]</p>
+            <div id="o5controls" style="display: none; width: 100%;">
+                <p style="text-align: center; font-size: 1.3em; margin: 0; font-weight: bold;">EMERGENCY OVERSEER OVERRIDE</p>
+                <p><b>Warning:</b> Do not attempt to use unless you have either O5 clearance, or special MCP Network credentials.</p>
+                <div style="text-align:center;">
+                    <p>Please enter override passcode:</p>
+                    <input type="password" id="o5pass" style="box-sizing: border-box;">
+                    <div id="o5button" class="scpbtn" style="width: 12em; margin: 1em auto;">Attempt Override</div>
+                    <p id="o5denied" style="display:none;color:red; font-weight:bold; font-size:1.3em;">ACCESS DENIED</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $( document ).ready(function() {
+        var storyDone = false;
+        var storyMax = 7;
+        var storyEnd = 8;
+    
+        var universeData = function(newId, newTitle, newDiv, newWarning = "", newExclude = false) {
+            this.id = newId;
+            this.title = newTitle;
+            this.div = newDiv;
+            this.warning = newWarning;
+            this.exclude = newExclude;
+        };
+    
+        var universeList = new Array();
+        var currentUniverse = 0;
+        var o5access = false;
+    
+        function updateLoadbar(newPercent) {
+            var loadbar = document.getElementById("loadbarprogress"); 
+            loadbar.style.width = newPercent.toFixed(2) + '%'; 
+            loadbar.innerHTML = newPercent.toFixed(2) * 1 + '%'; 
+        }
+    
+    
+        function selectUniverse(uniData) {
+            $('#header').hide();
+            $('#main').hide();
+            $('#uniControls').hide();
+            $('#connecting').show();
+            if(o5access) {
+                 $('#o5approved').show();
+            }
+    
+            $('.current').removeClass('current');
+            $('#' + uniData.div).addClass('current');
+            $('#uniTitle').text(uniData.title);
+    
+            if(uniData.warning !== "") {
+                $('#uniWarning').text(" " + uniData.warning);
+                $('#uwarning').show();
+            } else {
+                $('#uwarning').hide();
+            }
+            
+            setTimeout(function(){ 
+                $('#header').show();
+                $('#main').show();
+                $('#uniControls').show();
+                $('#o5approved').hide();
+                $('#connecting').hide();
+                o5access = false;
+            }, 3000);
+        }
+    
+        function randomUniverse(universeArray) {
+            if(storyDone) {
+                var randomUni = currentUniverse;
+                while(randomUni === currentUniverse || universeArray[randomUni].exclude) {
+                    randomUni = Math.floor(Math.random() * (universeArray.length-1)) + 1;
+                }
+                selectUniverse(universeArray[randomUni]);
+                currentUniverse = randomUni;
+            } else {
+                currentUniverse++;
+                curStoryUniverse = currentUniverse;
+    
+                var loadPercent = currentUniverse/storyMax * 100.0;
+                if(loadPercent >= 100.0) {
+                    loadPercent = 99.0;
+                } else if(loadPercent <= 0.0) {
+                    loadPercent = 1.0;
+                }
+                updateLoadbar(loadPercent);
+    
+                if(curStoryUniverse > storyMax) {
+                    curStoryUniverse = 0;
+                }
+                selectUniverse(universeArray[curStoryUniverse]);
+                if(currentUniverse === storyEnd) {
+                    storyDone = true;
+                    $('.storyMode').hide()
+                    $('#uniList .freeMode').show();
+                }
+            }
+        }
+    
+        function findUniverseLocation(id) {
+             for(var i = 0; i < universeList.length; i++) {
+                 if(universeList[i].id.toString() === id) {
+                     return i;
+                 }
+             }
+             return -1;
+        }
+    
+        function compareUni(a,b) {
+            if (a.id < b.id)
+                return -1;
+            if (a.id > b.id)
+                return 1;
+            return 0;
+        }
+    
+        function populateUniList() {
+            var newUniList = universeList.slice();
+            newUniList.sort(compareUni);
+    
+            var oLi = $("<li>").append("UNI-ZERO (ORIGIN) - [CONNECTION LOST]");
+            $("#mainUniList").append(oLi);
+    
+            for(var i = 0; i < newUniList.length; i++) {
+                uni = newUniList[i];
+                if(uni.exclude === true){
+                    continue;
+                }
+    
+                var newLi = $("<li>").append("<span>" + uni.title + "</span>");
+                newLi.attr('id', '#uni-' + uni.id);
+                newLi.click(function () {
+                       var uniLoc = findUniverseLocation($(this).attr('id').substring(5));
+                       if(uniLoc !== -1) {
+                           selectUniverse(universeList[uniLoc]);
+                           currentUniverse = uniLoc;
+                       }
+                });
+                $("#mainUniList").append(newLi);
+            }
+        }
+    
+        $('#randomUni').click(function() {
+            randomUniverse(universeList);
+        });
+    
+        $('#o5button').click(function() {
+            if($('#o5pass').val() === "forgetmenot") {
+                storyDone = true;
+                $('.storyMode').hide()
+                $('#uniList .freeMode').show();
+                o5access = true;
+                selectUniverse(universeList[currentUniverse]);
+            } else if($('#o5pass').val() === "iremember") {
+                storyDone = true;
+                $('.storyMode').hide()
+                $('#uniList .freeMode').show();
+                o5access = true;
+                currentUniverse = 7;
+                selectUniverse(universeList[currentUniverse]);
+            } else {
+                $('#o5denied').show();
+            }
+        });
+    
+        // Story Mode
+        universeList.push(new universeData(2346, "UNI-2346 (LOCAL)", "initial", "Local will be inaccessible to users. Please try connecting to another peer universe."));
+        universeList.push(new universeData(2347, "UNI-2347 (PARALLEL)", "parallel"));
+        universeList.push(new universeData(86243, "UNI-86243 (CLASSIC)", "classic"));
+        universeList.push(new universeData(1100, "UNI-1100 (MEDIEVAL)", "medieval"));
+        universeList.push(new universeData(3236, "UNI-3236 (SALES)", "dado", "This universe is inaccessible to users. Please try connecting to another peer universe.")); 
+        universeList.push(new universeData(2049, "UNI-2049 (FUTURE)", "future"));
+        universeList.push(new universeData(7411, "UNI-7411 (UNKNOWN-04)", "unknownspots", "Source language still subject to translation process. The system will attempt to translate known phrases."));
+        universeList.push(new universeData(0000, "UNI-ZERO (ORIGIN)", "zero", "ERROR : FAILED TO <MESSAGE>, TRY <SOLUTION>.", true));    
+    
+        // Free Mode 
+        // STEP THREE: Connecting the code to your div.
+        /* Use this example code to add a new universe:
+
+            universeList.push(new universeData(UNI_NUMBER, UNI_NAME, UNI_DIV_ID, WARNING_TEXT));
+
+
+                UNI_NUMBER    : The number of the universe (must be a number).
+                UNI_NAME        : The name of the universe in the format "UNI-XXXX (NAME)".
+                UNI_DIV_ID      : The "id" you gave your div.
+                WARNING_TEXT : Optional field. Adds that red 'warning' text at the top of some iterations.
+        */
+
+        // -- ADD NEW UNIVERSES BELOW THIS LINE -- 
+
+        universeList.push(new universeData(4321, "UNI-4321 (M. SUE)", "msue", "Source may contain unreliable and/or redundant information."));
+        
+
+
+
+
+
+    
+
+        // -- ADD NEW UNIVERSES ABOVE THIS LINE -- 
+
+        populateUniList();
+    
+        selectUniverse(universeList[0]);
+    });
+</script>
+[[/html]]
