@@ -1,0 +1,60 @@
+title:Trilobites: Many Reasons To Kill Them, and 0 Reasons Not To
+[[>]]
+[[module Rate]]
+[/>]]
+
+[[module CSS]]
+.story {
+  clear: both; border: 3px black solid; padding: calc(20px - 1em) 0 20px 0;
+}
+.long, .story {
+  visibility: hidden; opacity: 0; animation: delayed-show 0s linear 2s 1 normal forwards; max-height: 0;
+}
+@keyframes delayed-show {
+  0% { opacity: 0; visibility: hidden; max-height: 0; }
+  100% { opacity: 1; visibility: visible; max-height: 999rem; }
+}
+.story p {
+  margin-left: 20px; margin-right: 20px; 
+}
+.choices {
+  clear: both;
+}
+.choices a {
+  height: 30px; border: 1px solid #b01; border-right: 1px solid transparent; line-height: 30px; position: relative; background: white; z-index: 8; margin-bottom: 0.5em; float: left; clear: both; padding-left: 7px; margin-left: 20px; margin-right: 20px
+}
+.choices a::before {
+  content: ""; position: absolute; border: 16px solid transparent; border-left: 16px solid #b01; right: -33px; top: -1px; z-index: 6;
+}
+.choices a::after {
+  content: ""; position: absolute; border: 15px solid transparent; border-left: 15px solid white; right: -31px; top: 0; z-index: 7;
+}
+.choices p {
+  clear: both; height: 30px; margin: 0 0 0 0;
+}
+.footer-wikiwalk-nav {
+  margin-top: 50px;
+}
+.footer-wikiwalk-nav a:nth-of-type(2) {
+  color: black !important;
+}
+span, a {
+  word-break: normal !important;
+}
+@media (max-width: 580px) {
+  .choices a {
+    line-height: initial !important; margin-left: 10px !important; margin-right: 30px !important;
+  }
+}
+[[/module]]
+
+[[module ListPages category="fragment" limit="1" name="trilobite-%" offset="@URL|0" order="name desc desc"]]
+%%content%%
+[[/module]]
+
+[[div_ class="long"]]
+-----
+> = ,,This was written as part of the [[[scp-oct-hub|SCP Original Character Tournament]]], Round One, between [[*user 9Volt]]'s [[[scp-4131|Gunhead Anomalocaris, Trilobite Slayer!]]] and my own [[[scp-3939|Senior Researcher ████ ████████]]].,,
+> = ,,I //highly// recommend that you check out 9Volt's entry, [[[prehistoric-artillery-strike|Derailment By Prehistoric Artillery Strike]]]!,,
+-----
+[[/div]]
