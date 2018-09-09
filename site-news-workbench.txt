@@ -1,114 +1,142 @@
 title:Site News Workbench
+[[=]]
+**« [[[news-07-2018|July 2018]]] | __[[[news-08-2018|August 2018]]]__ | [[[news-09-2018|September 2018]]] »**
+[[/=]]
+
+[[module CSS]]
+#header h2 span {
+    display: block;
+    margin: 0;
+    padding: 19px 0;
+    line-height: 0px;
+    max-height: 0px;
+    font-weight: bold;
+    color: transparent;
+    text-shadow: none;
+}
+
+#header {
+    background-image: url(http://kaktuskontainer.wikidot.com/local--files/news-08-2018/SCP-News-2018-08-Logo.png);
+}
+
+#header h2 span::before {
+    color: #eee;
+    font-weight: bold;
+    color: #f0f0c0;
+    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+    content: 'Site Correspondence Periodical';
+}
+[[/module]]
+
+
+[[size 75%]]This is a series showing off news from the site, articles from the past month[[footnote]] with a rating above 0 [[/footnote]], and fan-content for you to check out and discover! Be sure to leave a comment with your thoughts![[/size]]
+
+++++* Fandom Stuff
+
+
+
+++++* Featured Articles
+
+++++* Event Featured Articles
+
+
+
+
+
+* The featured articles for August were 
+
+++++* Editor's Choice Articles
+
+
+
+
+----
+++++*  Contest
+
+
 [[f>toc]]
-
-[[collapsible show="September markdown generator" hide="Close"]]
-
-⚠ Make sure to check [[[attribution-metadata|]]] for coauthored articles ⚠
-
-++++ SCPs
-[[module ListPages rating=">0" tags="scp" separate="false" date="2018.09" order="created_at"]]
-📈 [[[%%name%%|%%title_linked%%]]] ("TITLE") - BLURB. Written by [[{{*}}user %%created_by%%]]
-[[/module]]
-
-With rating and date - for separating into "Week of September 1st", "Week of September 8th", etc
-[[module ListPages rating=">0" tags="scp" separate="false" date="2018.09" order="created_at"]]
-%%title_linked%% (%%rating%%) %%created_at%%
-[[/module]]
-
-++++ Tales
-[[module ListPages rating=">0" tags="tale" separate="false" date="2018.09" order="created_at"]]
-📈 [[[%%name%%|%%title_linked%%]]] - BLURB. Written by [[{{*}}user %%created_by%%]]
-[[/module]]
-
-With rating and date - for separating into "Week of September 1st", "Week of September 8th", etc
-[[module ListPages rating=">0" tags="tale" separate="false" date="2018.09" order="created_at"]]
-%%title_linked%% (%%rating%%) %%created_at%%
-[[/module]]
-
-++++ GOI Formats
-[[module ListPages rating=">0" tags="goi-format" separate="false" date="2018.09" order="created_at"]]
-📈 [[[%%name%%|%%title_linked%%]]] ("TITLE") - BLURB. Written by [[{{*}}user %%created_by%%]]
-[[/module]]
-
-With rating and date - for separating into "Week of September 1st", "Week of September 8th", etc
-[[module ListPages rating=">0" tags="goi-format" separate="false" date="2018.09" order="created_at"]]
-%%title_linked%% (%%rating%%) %%created_at%%
-[[/module]]
-
-++++ Misc
-[[module ListPages rating=">0" tags="-scp -tale -goi-format" separate="false" date="2018.09" order="created_at"]]
-📈 [[[%%name%%|%%title_linked%%]]] ("TITLE") - BLURB. Written by [[{{*}}user %%created_by%%]]
-[[/module]]
-
-With rating and date - for separating into "Week of September 1st", "Week of September 8th", etc
-[[module ListPages rating=">0" tags="-scp -tale -goi-format" separate="false" date="2018.09" order="created_at"]]
-%%title_linked%% (%%rating%%) %%created_at%%
-[[/module]]
-
-
-[[/collapsible]]
-
-@@ @@
-@@ @@
-[[collapsible show="Old page contents (good reference for interesting ListPages)" hide="Close"]]
-++* SCP Articles Sorted by Date
-[[module ListPages tags="scp" created_at="2017.12" perPage="30" separate="no" order="created_at desc desc" prependLine="||~ SCP ||~ Author ||~ Created ||"]]
-|| %%title_linked%% || %%created_by%% || %%created_at%% ||
-[[/module]]
-
-++* Tales Sorted by Date
-[[module ListPages tags="tale -hub " created_at="2017.12" perPage="30" separate="no" order="created_at desc desc" prependLine="||~ Tale ||~ Author ||~ Created ||"]]
-|| %%title_linked%% || %%created_by%% || %%created_at%% ||
-[[/module]]
-
-++* GOI Format Articles Sorted by Date
-[[module ListPages tags="goi-format" created_at="2017.12" perPage="30" separate="no" order="created_at desc desc" prependLine="||~ GOI Format ||~ Author ||~ Created ||"]]
-|| %%title_linked%% || %%created_by%% || %%created_at%% ||
-[[/module]]
-
-++* Hubs Sorted by Date
-[[module ListPages tags="hub" created_at="2017.12" perPage="30" separate="no" order="created_at desc desc" prependLine="||~ Hub ||~ Author ||~ Created ||"]]
-|| %%title_linked%% || %%created_by%% || %%created_at%% ||
-[[/module]]
-
-++* Author Pages Sorted by Date
-[[module ListPages tags="author " created_at="2017.12" separate="no" order="created_at desc desc" prependLine="||~ Page ||~ Author ||~ Created ||"]]
-|| %%title_linked%% || %%created_by%% || %%created_at%% ||
-[[/module]]
-
-------
-------
-
-
-[[div class="contest-block content-panel"]]
-[[div class="panel-heading"]]
-Entries
-[[/div]]
-[[div class="panel-body"]]
-
-[[module ListPages separate="no" tags="+jam-con2018 -_murder-mystery -hub" perPage="100" order="random" date="2018.02.17"]]
-* [[size 120%]]**%%title_linked%%**[[/size]] [[size 105%]]//by// **%%created_by%%**[[/size]]
-[[/module]]
-[[/div]]
-[[/div]]
 
 ----
 
-Day 3: 
+You will notice little '📈' emojis besides some articles. That denotes SCP articles which were under 30 and tales which were under 20 when this edition of site news was posted. Give them a little love! Speaking from personal experience, the most frustrating thing that can happen to an article is not deletion, but stagnating below 20 without any comments. So try to read, vote, and comment on these articles! They're often hidden gems :)
 
-[[module ListPages created_by=" " perPage="250" separate="no" tags="+jam-con2018 +_dark-and-stormy" order="rating desc" prependLine="||~ Entry ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||~ Length ||~ Author ||"]]
-|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% || %%size%% || %%created_by%% ||
-[[/module]]
++++ Week of August 1st:
 
-Day 2:
 
-[[module ListPages created_by=" " perPage="250" separate="no" tags="+jam-con2018 +_tropical" order="rating desc" prependLine="||~ Entry ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||~ Length ||~ Author ||"]]
-|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% || %%size%% || %%created_by%% ||
-[[/module]]
+++++ SCPs
 
-Day 1:
 
-[[module ListPages created_by=" " perPage="250" separate="no" tags="+jam-con2018 +_murder-mystery" order="rating desc" prependLine="||~ Entry ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||~ Length ||~ Author ||"]]
-|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% || %%size%% || %%created_by%% ||
-[[/module]]
-[[/collapsible]]
+++++ Tales
+
+
+++++ GOI Formats
+
+
+
+++++ Misc
+
+
+
++++ Week of August 8th:
+
+
+
+
+
+++++ Tales
+
+
+++++ GOI Formats
+
+
+
+++++ Misc
+
+
++++ Week of August 15th:
+
+
+++++ SCPs
+
+
+
+++++ Tales
+
+++++ Author Pages
+
+
+
+++++ Misc
+
+
++++ Week of August 22nd:
+
+
+
+++++ SCPs
+
+
+++++ Tales
+
+
+++++ Author Pages
+
+
+++++ Misc
+
+
+-----
+
+
+
++++ Fanart
+
+
++++* Some Excellent YouTube Content Out This Month
+
+
+
+[[=]]
+**« [[[news-07-2018|July 2018]]] | __[[[news-08-2018|August 2018]]]__ | [[[news-09-2018|September 2018]]] »**
+[[/=]]
