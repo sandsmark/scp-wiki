@@ -1,0 +1,345 @@
+title:GOC ACT Hub
+[[module CSS]]
+/*
+    ACT Theme
+    [2018 Wikidot Theme]
+    Based on Aelanna's Sigma 9 and Greenwolf's Third Law and djkaktus' Darkbody Theme
+    Edited by PeppersGhost for the Doomsday Contest
+    Edited by DolphinSlugchugger for the Alto Clef Jr. "The ACT" Hub
+*/
+
+body {
+    background-color: #060606;;
+    font-size: 0.80em;
+}
+
+div#page-content {
+    color: white;
+}
+
+
+/* HEADER */
+#header {
+    height: 140px;
+    position: relative;
+    z-index: 10;
+    padding-bottom: 30px; /* FOR MENU */
+    background: url(http://scp-sandbox-3.wikidot.com/local--files/misercordia/gocact) 10px 35px no-repeat;
+}
+
+#header h1 a {
+    content: "GOC ACT";
+    text-shadow: 1px 1px 2px white, 0 0 1em red, 0 0 0.2em white;
+    color: #000;
+}
+
+#header h1 a::before {
+    content: "GOC ACT";
+}
+
+#header h1 a span{
+    display: block;
+    content: "";
+    visibility: hidden;
+}
+
+#header h2 {
+    margin-left: 120px;
+    padding: 0;
+    clear: left;
+    float: left;
+    font-size: 105%;
+    max-height: 38px;
+}
+#header h2 span {
+    display: block;
+    margin: 0;
+    padding: 19px 0;
+    line-height: 0px;
+    max-height: 0px;
+    font-weight: bold;
+    color: transparent;
+    text-shadow: none;
+}
+#header h2 span::before {
+    content: "Alto Clef [Jr.] Terminations";
+    display: block;
+    margin: 0;
+    padding: 0px 0;
+    line-height: 0px;
+    max-height: 0px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+}
+
+div#container-wrap {
+    background: url(http://www.scp-wiki.net/local--files/component:oct-theme/SCPbody_bg3.jpg) top left repeat-x;
+}
+/* Source: https://www.flickr.com/photos/telemax/2818520042 */
+
+/* SIDEBAR */
+.side-block {
+    background: #060606 !important;
+    background-color: #060606;
+}
+#side-bar .side-block {
+    padding: 10px;
+    border: 1px solid #660000;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(102,0,0,.5);
+    background: #060606;
+    background-color: #060606;
+    margin-bottom: 15px;
+}
+
+#side-bar img {
+  width:13px;
+  height:13px;
+  box-sizing:border-box;
+}
+/* Source: https://commons.wikimedia.org/wiki/File:Noun_project_758.svg */
+
+#side-bar .heading {
+    color: #fff;
+    border-bottom: solid 1px #fff;
+}
+
+#side-bar div.menu-item.inactive a {
+    color: #e2525d;
+}
+#side-bar div.menu-item .sub-text {
+    color: #e2525d;
+}
+
+#side-bar .collapsible-block-unfolded-link {
+    border-bottom: solid 1px #0b65c0;
+}
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link {
+    color: #0b65c0;
+}
+
+.interwiki_title {
+    color: #0b65c0;
+}
+
+.interwiki_entry a {
+    color: #0b65c0;
+}
+
+/* LINKS */
+
+a {
+    color: #e2525d;
+    text-decoration: none;
+    background: transparent;
+}
+a.newpage {
+    color: #e2525d;
+    text-decoration: none;
+    background: transparent;
+}
+
+/* RATING MODULE */
+.page-rate-widget-box .rate-points {
+    background-color: #3d0c0c !important;
+    border: solid 1px #6d1515;
+}
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background-color: 3d0c0c;
+    border-top: solid 1px #6d1515;
+    border-bottom: solid 1px #6d1515;
+    font-weight: bold;
+}
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    background: 3d0c0c;
+    color: #a05b58;
+    padding: 0 4px;
+    margin: 0 1px;
+}
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background: 3d0c0c;
+    color: #a05b58;
+    text-decoration: none;
+}
+.page-rate-widget-box .cancel {
+    background-color: 3d0c0c;
+    border: solid 1px #6d1515;
+    border-left: 0;
+    border-radius: 0 5px 5px 0;
+}
+.page-rate-widget-box .cancel a {
+    background: transparent;
+    text-transform: uppercase;
+    color: #a05b58;
+}
+.page-rate-widget-box .cancel a:hover {
+    border-radius: 0 3px 3px 0;
+    background: 3d0c0c;
+    color: #fffff0;
+    text-decoration: none;
+}
+
+/* PAGE TITLEs */
+h1, #page-title {
+    color: #e2525d;
+}
+
+/* SEARCH BAR */
+#search-top-box-input {
+    border: solid 1px #6d1515;
+    background-color: #1c0101;
+}
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+    border: solid 1px #6d1515;
+    background-color: #1c0101;
+}
+#search-top-box-form input[type=submit] {
+    border: solid 1px #6d1515;
+    background-color: #1c0101;
+    color: #fff;
+    background: linear-gradient(to bottom, #301515,#8c1313,#330303);
+}
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    border: solid 1px #6d1515;
+    color: #fff;
+    background-color: #1c0101;
+    background: linear-gradient(to bottom, #8c1313,#330303,#301515);
+}
+
+#top-bar a {
+    color: #505050;
+    background: transparent;
+}
+.body-text {
+    margin: 2% 13% 2% 9%;
+    padding: 5px 20px 5px 20px;
+    background-color: #f2f2f2;
+    color: #111;
+}
+
+.text4desk {
+    width: 70%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .body-text {
+        margin: 0% 4% 0% 4%;
+    }
+
+    .text4desk {
+        width:100%;
+    }
+
+}
+
+
+[[/module]]
+
+[[image http://scp-sandbox-3.wikidot.com/local--files/misercordia/me.png]]
+
+[[collapsible show="+ What is this?" hide="- Hide explanation"]]
+[[div class="body-text"]]
+**How it works:** Some folks entered their characters into a contest.
+
+I want in.
+
+I'm gonna force 'em to take me.
+[[/div]]
+[[/collapsible]]
+
+[[collapsible show="+ What are the rules?" hide="- Hide rules."]]
+[[div class="body-text"]]
+
+**Notes on termination:** 
+* I will remember you.
+* I will commit one mass murder per round.
+* I will not stop until I kill you.
+
+**Tips:**
+* Running is pointless.
+* Hiding is pointless.
+* Make peace with your death.
+
+**More rules:**
+* I'll get you when I get to you.
+[[/div]]
+[[/collapsible]]
+ 
+[[=]]
+[[size 300%]]**THE CHAMPION**[[/size]]
+[[/=]]
+
+@@@@
+@@@@
+[[table style="margin-right:auto;margin-left:auto;border:0px solid #AAA;"]]
+[[row]]
+[[cell style="border: 1px solid silver; width: 30%; padding: 15px 18px 15px 15px; text-align:center; background:#dbdbdb;"]]
+**Alto Clef Sr.**
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="border: 1px solid silver; padding: 2px; text-align:center; background:#fff;"]]
+**[[[alto-clef-jr-fins-of-the-father|Alto Clef Jr.]]]**
+[[/cell]]
+[[/row]]
+[[/table]]
+@@@@
+@@@@
+@@@@
+[[=]]
+[[size 300%]]**THE HITS SO FAR**[[/size]]
+[[/=]]
+ 
+@@@@
+@@@@
+@@@@
+[[table style="margin-right:auto;margin-left:auto;border:0px solid #AAA;"]]
+[[row]]
+[[cell style="border: 1px solid silver; width: 30%; padding: 15px 18px 15px 15px; text-align:center; background:#dbdbdb;"]]
+**[[*user Illyrias_Acolyte]]**
+[[/cell]]
+[[cell style="border: 0px solid silver; width: 5%; padding:25px;" rowspan="3"]]
+**VS**
+[[/cell]]
+[[cell style="border: 1px solid silver; width: 30%; padding: 15px 18px 15px 15px; text-align:center; background:#dbdbdb;"]]
+**[[*user AFX neuromancer]]**
+[[/cell]]
+[[cell style="border: 0px solid silver; width: 5%; padding:25px;" rowspan="3"]]
+**VS**
+[[/cell]]
+[[cell style="border: 1px solid silver; width: 30%; padding: 15px 18px 15px 15px; text-align:center; background:#dbdbdb;"]]
+**[[*user attila the pun]]**
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="border: 1px solid silver; padding: 2px; text-align:center; background:#fff;"]]
+--[[[http://www.scp-wiki.net/not-with-a-whimper-but-with-a-bang|Dr. Clair Wythers]]]--
+[[/cell]]
+[[cell style="border: 1px solid silver; padding: 2px; text-align:center; background:#fff;"]]
+--[[[http://www.scp-wiki.net/kids-with-guns-part-three|Nathan]]]--
+[[/cell]]
+[[cell style="border: 1px solid silver; padding: 2px; text-align:center; background:#fff;"]]
+--[[[http://www.scp-wiki.net/scp-2801|Nathan Snyder]]]--
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="border: 1px solid silver; padding: 2px; text-align:center; background:#fff;"]]
+[[[alto-clef-jr-fire-and-flames|Agent Pocket Ukulele Through the Fire and Flames]]]
+[[/cell]]
+[[cell style="border: 1px solid silver; padding: 2px; text-align:center; background:#fff; color: #000"]]
+[[[alto-clef-jr-the-star-and-you|Étoile et toi]]]
+[[/cell]]
+[[cell style="border: 1px solid silver; padding: 2px; text-align:center; background:#fff;"]]
+[[[alto-clef-jr-virus-alert|Virus Alert]]]
+[[/cell]]
+[[/row]]
+[[/table]]
