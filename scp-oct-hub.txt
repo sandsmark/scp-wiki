@@ -19,6 +19,22 @@ title:SCP OCT Hub
     margin: auto;
 }
 
+#page-content .collapsible-block {  
+  max-width: 100%;
+    /* text-align: center; */
+    text-align: center;
+    text-color: black;
+    border-color: #fff;
+    border: solid 1px #fff;
+    background-color: #f2f2f2;
+}
+
+.collapsible-block-content p {
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 @media only screen and (max-width: 600px) {
 
     .body-text {
