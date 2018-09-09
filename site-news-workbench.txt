@@ -1,25 +1,81 @@
 title:Site News Workbench
-++ SCP Articles Sorted by Date
+📈 [[[scp-3712| SCP-3712]]] ("TITLE") - BLURB. Written by [[*user JoseDzirehChong]]
+📈 [[scp-3953 SCP-3953]] ("TITLE") - BLURB. Written by [[*user Dramps]]
+📈 [scp-4016 SCP-4016] ("TITLE") - BLURB. Written by [[*user Alces_alces]]
+
+[[f>toc]]
+
+[[collapsible show="September markdown generator" hide="Close"]]
+
+⚠ Make sure to check [[[attribution-metadata|]]] for coauthored articles ⚠
+
+++++ SCPs
+[[module ListPages rating=">0" tags="scp" separate="false" date="2018.09" order="created_at"]]
+📈 [[[%%name%%|%%title_linked%%]]] ("TITLE") - BLURB. Written by [[{{*}}user %%created_by%%]]
+[[/module]]
+
+With rating and date - for separating into "Week of September 1st", "Week of September 8th", etc
+[[module ListPages rating=">0" tags="scp" separate="false" date="2018.09" order="created_at"]]
+%%title_linked%% (%%rating%%) %%created_at%%
+[[/module]]
+
+++++ Tales
+[[module ListPages rating=">0" tags="tale" separate="false" date="2018.09" order="created_at"]]
+📈 [[[%%name%%|%%title_linked%%]]] - BLURB. Written by [[{{*}}user %%created_by%%]]
+[[/module]]
+
+With rating and date - for separating into "Week of September 1st", "Week of September 8th", etc
+[[module ListPages rating=">0" tags="tale" separate="false" date="2018.09" order="created_at"]]
+%%title_linked%% (%%rating%%) %%created_at%%
+[[/module]]
+
+++++ GOI Formats
+[[module ListPages rating=">0" tags="goi-format" separate="false" date="2018.09" order="created_at"]]
+📈 [[[%%name%%|%%title_linked%%]]] ("TITLE") - BLURB. Written by [[{{*}}user %%created_by%%]]
+[[/module]]
+
+With rating and date - for separating into "Week of September 1st", "Week of September 8th", etc
+[[module ListPages rating=">0" tags="goi-format" separate="false" date="2018.09" order="created_at"]]
+%%title_linked%% (%%rating%%) %%created_at%%
+[[/module]]
+
+++++ Misc
+[[module ListPages rating=">0" tags="-scp -tale -goi-format" separate="false" date="2018.09" order="created_at"]]
+📈 [[[%%name%%|%%title_linked%%]]] ("TITLE") - BLURB. Written by [[{{*}}user %%created_by%%]]
+[[/module]]
+
+With rating and date - for separating into "Week of September 1st", "Week of September 8th", etc
+[[module ListPages rating=">0" tags="-scp -tale -goi-format" separate="false" date="2018.09" order="created_at"]]
+%%title_linked%% (%%rating%%) %%created_at%%
+[[/module]]
+
+
+[[/collapsible]]
+
+@@ @@
+@@ @@
+[[collapsible show="Old page contents (good reference for interesting ListPages)" hide="Close"]]
+++* SCP Articles Sorted by Date
 [[module ListPages tags="scp" created_at="2017.12" perPage="30" separate="no" order="created_at desc desc" prependLine="||~ SCP ||~ Author ||~ Created ||"]]
 || %%title_linked%% || %%created_by%% || %%created_at%% ||
 [[/module]]
 
-++ Tales Sorted by Date
+++* Tales Sorted by Date
 [[module ListPages tags="tale -hub " created_at="2017.12" perPage="30" separate="no" order="created_at desc desc" prependLine="||~ Tale ||~ Author ||~ Created ||"]]
 || %%title_linked%% || %%created_by%% || %%created_at%% ||
 [[/module]]
 
-++ GOI Format Articles Sorted by Date
+++* GOI Format Articles Sorted by Date
 [[module ListPages tags="goi-format" created_at="2017.12" perPage="30" separate="no" order="created_at desc desc" prependLine="||~ GOI Format ||~ Author ||~ Created ||"]]
 || %%title_linked%% || %%created_by%% || %%created_at%% ||
 [[/module]]
 
-++ Hubs Sorted by Date
+++* Hubs Sorted by Date
 [[module ListPages tags="hub" created_at="2017.12" perPage="30" separate="no" order="created_at desc desc" prependLine="||~ Hub ||~ Author ||~ Created ||"]]
 || %%title_linked%% || %%created_by%% || %%created_at%% ||
 [[/module]]
 
-++ Author Pages Sorted by Date
+++* Author Pages Sorted by Date
 [[module ListPages tags="author " created_at="2017.12" separate="no" order="created_at desc desc" prependLine="||~ Page ||~ Author ||~ Created ||"]]
 || %%title_linked%% || %%created_by%% || %%created_at%% ||
 [[/module]]
@@ -44,23 +100,18 @@ Entries
 
 Day 3: 
 
-[[collapsible]]
 [[module ListPages created_by=" " perPage="250" separate="no" tags="+jam-con2018 +_dark-and-stormy" order="rating desc" prependLine="||~ Entry ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||~ Length ||~ Author ||"]]
 || %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% || %%size%% || %%created_by%% ||
 [[/module]]
-[[/collapsible]]
 
 Day 2:
 
-[[collapsible]]
 [[module ListPages created_by=" " perPage="250" separate="no" tags="+jam-con2018 +_tropical" order="rating desc" prependLine="||~ Entry ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||~ Length ||~ Author ||"]]
 || %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% || %%size%% || %%created_by%% ||
 [[/module]]
-[[/collapsible]]
 
 Day 1:
 
-[[collapsible]]
 [[module ListPages created_by=" " perPage="250" separate="no" tags="+jam-con2018 +_murder-mystery" order="rating desc" prependLine="||~ Entry ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||~ Length ||~ Author ||"]]
 || %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% || %%size%% || %%created_by%% ||
 [[/module]]
