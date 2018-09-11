@@ -9,296 +9,296 @@ title:SCP-3493
         @import url('https://fonts.googleapis.com/css?family=MedievalSharp');
         @import url('http://scp-wiki.wdfiles.com/local--files/scp-3493/spots.css');
         body {
-        font-size: 0.80em;
-        color: #333;
-        font-family: verdana,arial,helvetica,sans-serif;
+          font-size: 0.80em;
+          color: #333;
+          font-family: Verdana, Helvetica Neue, Arial, Helvetica, sans-serif;
         }
         li, p {
-        line-height: 141%;
+          line-height: 141%;
         }
         ul li {
-        list-style: square;
-        width: fit-content;
+          list-style: square;
+          width: fit-content;
         }
         blockquote {
-        border: 1px dashed #999;
-        padding: 0 1em;
-        background-color: #f4f4f4;
+          border: 1px dashed #999;
+          padding: 0 1em;
+          background-color: #f4f4f4;
         }
         hr {
-        margin: 1em 2em;
-        padding: 0;
-        height: 1px;
-        border: none;
-        color: #DDD;
-        background-color: #AAA
+          margin: 1em 2em;
+          padding: 0;
+          height: 1px;
+          border: none;
+          color: #DDD;
+          background-color: #AAA
         }
         @keyframes flipAnimation {
-        0%, 
-        50% {
-        -webkit-transform: rotateY(180deg);
-        transform: rotateY(180deg);
-        }, 
-        to {
-        -webkit-transform: rotateY(0deg);
-        transform: rotateY(0deg);
-        } 
+          0%, 
+          50% {
+            -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+          }, 
+          to {
+            -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+          } 
         }
         #loadSpinner {
-        width:2.5em;
-        animation: flipAnimation infinite;
-        animation-duration: 1.6s;
+          width: 2.5em;
+          animation: flipAnimation infinite;
+          animation-duration: 1.6s;
         }
         #header, #connecting {
-        background: #cadfff;
-        width: 100%;
-        text-align: center;
-        font-size: 1em;
+          background: #cadfff;
+          width: 100%;
+          text-align: center;
+          font-size: 1em;
         }
         #uniControls {
-        background: #cadfff;
-        font-size: 1em;
-        padding: 2em;
+          background: #cadfff;
+          font-size: 1em;
+          padding: 2em;
         }
         #uniControlsHeader {
-        font-weight: bold;
-        text-align: center;
-        font-size: 1.3em;
+          font-weight: bold;
+          text-align: center;
+          font-size: 1.3em;
         }
         #uniList .storyMode {
-        margin: 3em 0em;
-        color: red;
+          margin: 3em 0em;
+          color: red;
         }
         #uniList .freeMode li span {
-        color: #b01;
-        cursor: pointer;
+          color: #b01;
+          cursor: pointer;
         }
         #uniList .freeMode li span:hover {
-        text-decoration: underline;
+          text-decoration: underline;
         }
         #header #header-inner p, #connecting #connecting-inner p {
-        line-height:100%;
-        margin: 0.8em;
+          line-height:100%;
+          margin: 0.8em;
         }
         #header-inner {
-        padding: 0.1em;
+          padding: 0.1em;
         }
         #connecting-inner {
-        padding: 5em 1em;
-        font-size: 2em;
+          padding: 5em 1em;
+          font-size: 2em;
         }
         #uwarning, .uerror {
-        color: red;
+          color: red;
         }
         .usuccess {
-        color: green;
+          color: green;
         }
         .showButton {
-        color: #b01;
-        cursor: pointer;
+          color: #b01;
+          cursor: pointer;
         }
         .showButton:hover {
-        text-decoration: underline;
+          text-decoration: underline;
         }
         #main {
-        margin-top: 3em;
-        margin-bottom: 3em;
-        padding: 1em;
-        border: 1px solid black;
-        width: 95%;
+          margin-top: 3em;
+          margin-bottom: 3em;
+          padding: 1em;
+          border: 1px solid black;
+          width: 95%;
         }
         #main>div:not(.current) {
-        display: none;
+          display: none;
         }
         .scpbtn {
-        background: #ddd;
-        text-align: center;
-        padding: 1em;
-        border-style: outset;
-        font-weight: bold;
-        cursor: pointer;
-        user-select: none;
-        margin: 5px;
-        width: 14em;
-        margin: 0em auto;
+          background: #ddd;
+          text-align: center;
+          padding: 1em;
+          border-style: outset;
+          font-weight: bold;
+          cursor: pointer;
+          user-select: none;
+          margin: 5px;
+          width: 14em;
+          margin: 0em auto;
         }
         .scpbtn:hover {
-        background: #bbb;
+          background: #bbb;
         }
         .scpbtn:active {
-        background: #aaa;
-        border-style: inset;
+          background: #aaa;
+          border-style: inset;
         }
         #uniTitle {
-        font-size: 1.2em;
+          font-size: 1.2em;
         }
         #msue {
-        background: #1d1d1d;
-        color: #eaeaea;
-        padding: 2em;
-        font-size: 1.03em;
+          background: #1d1d1d;
+          color: #eaeaea;
+          padding: 2em;
+          font-size: 1.03em;
         }
         #msue blockquote {
-        background: #222;
+          background: #222;
         }
         #medieval {
-        font-family: 'MedievalSharp', cursive;
-        font-size: 1.3em;
-        margin-bottom: 3em;
-        position: relative;
-        background-image: url("http://scp-wiki.wdfiles.com/local--files/scp-3493/parchment5.jpg");
-        padding: 2em;
-        background-size: 100%;
-        text-shadow: 0.5px 0.5px rgba(20, 20, 20, 0.29);
+          font-family: 'MedievalSharp', cursive;
+          font-size: 1.3em;
+          margin-bottom: 3em;
+          position: relative;
+          background-image: url("http://scp-wiki.wdfiles.com/local--files/scp-3493/parchment5.jpg");
+          padding: 2em;
+          background-size: 100%;
+          text-shadow: 0.5px 0.5px rgba(20, 20, 20, 0.29);
         }
         #medieval .section::first-letter {
-        font-size: 2em;
+          font-size: 2em;
         }
         #future {
-        background: linear-gradient(#333384, #13326d);
-        padding: 2em;
-        color: #ffffff;
-        text-shadow: 0 0 0.5px #b9b9b9;
-        border-style: ridge;
-        border-width: 11px;
-        border-radius: 13px;
-        border-color: #c5c5c5;
+          background: linear-gradient(#333384, #13326d);
+          padding: 2em;
+          color: #fff;
+          text-shadow: 0 0 0.5px #b9b9b9;
+          border-style: ridge;
+          border-width: 11px;
+          border-radius: 13px;
+          border-color: #c5c5c5;
         }
         #future blockquote {
-        background: #0a3052;
-        border: solid;
+          background: #0a3052;
+          border: solid;
         }
         #future .columnd {
-        width: 100%;
-        font-size: 1.1em;
+          width: 100%;
+          font-size: 1.1em;
         }
         #future .columnd div{
-        width: 49%;
-        display:inline-block;
+          width: 49%;
+          display:inline-block;
         }
         #future .glowbox {
-        box-shadow: 0px 0px 2px #43ffea;
+          box-shadow: 0px 0px 2px #43ffea;
         }
         #unknownspots {
-        font-family: 'wc_rhesus_b_btaitalic';
-        word-break: break-all;
+          font-family: 'wc_rhesus_b_btaitalic';
+          word-break: break-all;
         }
         #unknownspots p {
-        line-height: 2em;
+          line-height: 2em;
         }
         #unknownspots p:nth-child(even) {
-        text-align:right;
+          text-align: right;
         }
         #unknownspots hr {
-        border: 3px;
-        height: 8px;
-        background: #333;
-        border-radius: 6px;
-        border-style: dashed;
+          border: 3px;
+          height: 8px;
+          background: #333;
+          border-radius: 6px;
+          border-style: dashed;
         }
         #unknownspots .emergency {
-        width: 100%;
-        font-size: 1.4em;
-        color: red;
+          width: 100%;
+          font-size: 1.4em;
+          color: red;
         }
-        #unknownspots .emergency div{
-        width: 49%;
-        display:inline-block;
+        #unknownspots .emergency div {
+          width: 49%;
+          display: inline-block;
         }
-        #unknownspots .emergency div:nth-child(even){
-        text-align:right;
+        #unknownspots .emergency div:nth-child(even) {
+          text-align: right;
         }
         #unknownspots .translated {
-        color: blue;
-        font-family: verdana,arial,helvetica,sans-serif;
-        font-size: 0.8rem;
-        word-break: break-word;
+          color: blue;
+          font-family: Verdana, Helvetica Neue, Arial, Helvetica, sans-serif;
+          font-size: 0.8rem;
+          word-break: break-word;
         }
         @keyframes textflickerzero {
-        0%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 0);}
-        99.1%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 0);}
-        99.11%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 1);}
-        99.3%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 1);}
-        99.31%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 0);}
-        99.5%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 0);}
-        99.51%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 1);}
-        99.7%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 1);}
-        99.71%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 0);}
-        99.9%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 0);}
-        99.91%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 1);}
-        99.99%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 1);}
-        100% {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 0);}
+          0%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 0);}
+          99.1%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 0);}
+          99.11%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 1);}
+          99.3%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 1);}
+          99.31%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 0);}
+          99.5%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 0);}
+          99.51%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 1);}
+          99.7%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 1);}
+          99.71%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 0);}
+          99.9%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 0);}
+          99.91%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 1);}
+          99.99%   {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 1);}
+          100% {text-shadow: 0.3em 0.3em rgba(134, 134, 134, 0);}
         }
         #zero blockquote {
-        border-style: solid;
-        margin: 0;
-        border-bottom: none;
-        border-top: none;
-        background: #cbcbcb;
-        border-width: 1em !important;
-        animation: textflickerzero 30s infinite;
-        color: #930000;
-        border-color: #930000;
+          border-style: solid;
+          margin: 0;
+          border-bottom: none;
+          border-top: none;
+          background: #cbcbcb;
+          border-width: 1em !important;
+          animation: textflickerzero 30s infinite;
+          color: #930000;
+          border-color: #930000;
         }
         #zero blockquote:first-child p {
-        padding-top: 1em;
+          padding-top: 1em;
         }
         #zero blockquote p {
-        margin:0;
-        padding-bottom: 1em;
+          margin:0;
+          padding-bottom: 1em;
         }
         #zero blockquote:first-child {
-        border-top: 1px solid #999;
+          border-top: 1px solid #999;
         }
         #zero blockquote:last-child {
-        border-bottom: 1px solid #999;
+          border-bottom: 1px solid #999;
         }
         #o5pass {
-        outline: none;
-        border: 1px solid #a4a4a4;
-        font-size: 3em;
-        background: #fdfdfd;
-        padding: 0.1em 0.4em;
-        text-align: center;
-        width: 100%;
+          outline: none;
+          border: 1px solid #a4a4a4;
+          font-size: 3em;
+          background: #fdfdfd;
+          padding: 0.1em 0.4em;
+          text-align: center;
+          width: 100%;
         }
         .page>img {
-        width: 100%;
+          width: 100%;
         }
         .page-inner {
-        position: absolute;
-        padding: 4em 4em;
-        top: 0px;
-        left: 0px;
+          position: absolute;
+          padding: 4em 4em;
+          top: 0px;
+          left: 0px;
         }
         .m_chart {
         position: absolute;
         top: 3em;
-        right: 3em;
-        margin: 0;
-        text-align: right;
+          right: 3em;
+          margin: 0;
+          text-align: right;
         }
         .m_chart>img {
-        width: 10em !important;
+          width: 10em !important;
         }
         .m_chart>figcaption {
-        font-size: 0.7em;
-        margin-top: 0.3em;
+          font-size: 0.7em;
+          margin-top: 0.3em;
         }
         #loadbar {
-        width: 100%;
-        background-color: #585858;
-        margin-top: 0.5em;
-        margin-bottom: 2em;
-        border: 3px double #888;
+          width: 100%;
+          background-color: #585858;
+          margin-top: 0.5em;
+          margin-bottom: 2em;
+          border: 3px double #888;
         }
         #loadbarprogress {
-        height: 2.3em;
-        background-color: #eaeaea;
-        color: black;
-        text-align: center;
-        line-height: 2.3em;
-        font-weight: bold;
+          height: 2.3em;
+          background-color: #eaeaea;
+          color: black;
+          text-align: center;
+          line-height: 2.3em;
+          font-weight: bold;
         }
 
 
@@ -704,7 +704,7 @@ title:SCP-3493
             this.exclude = newExclude;
         };
     
-        var universeList = new Array();
+        var universeList = [];
         var currentUniverse = 0;
         var o5access = false;
     
