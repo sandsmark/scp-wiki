@@ -50,8 +50,17 @@ I'm gonna get you to change some parameters. When I say "Change X to Y", what I'
     100% { background-position: 74px center; }
 }
 
+#header h1 a::before {
+    content: "List of Sharticles";
+}
 #header h2 span::before {
-    content: "" !important;
+    content: "Croquembouche's Author Page" !important;
+}
+#header {
+    background-image: url();
+}
+#header::before {
+    display: none;
 }
 [[/module]]
 
