@@ -555,8 +555,8 @@ oh no you found the secrit testing place
 %%title%%
 [[/module]]
 
-[[module ListPages order="rating desc" separate="no" tags="mathematical" perPage="250"]]
-# [[size 110%]]**%%title_linked%%**[[/size]] //by %%created_by%%, at// [[size 120%]]**%%rating%%**[[/size]] //with// %%comments%% //comments.//
+[[module ListPages tags="-admin" order="created_at desc" perPage="30" separate="false" rss="Most Recently Created" rating=">=-15"]]
+%%title_linked%% @@|||@@ %%created_by%%
 [[/module]]
 
 ------
