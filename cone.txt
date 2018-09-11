@@ -37,21 +37,6 @@ I'm gonna get you to change some parameters. When I say "Change X to Y", what I'
 --]
 
 [[module CSS]]
-/*@import url(http://scp-sandbox-3.wikidot.com/component:raisatheme/code/1);*/
-
-/*#page-title { display: none; }
-.page-title { border-bottom: solid 1px #bbbbbb; color: #990011; font-weight: normal; margin: 0 0 0.6em; padding: 0 0 0.25em; font-size: 200%; }
-.page-title p { margin: 0; line-height: normal; }*/
-
-/*table.wiki-content-table { margin: -1px auto 0 auto; width: 90%; }
-.yui-navset .yui-content{ background-color: initial; border: none; padding: 0; }
-.list-pages-box { margin-bottom: 2em; }
-
-#side-bar .side-block {
-    border: none;
-    border-radius: 0;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
-}*/
 
 .random { text-align: center; }
 .random p { margin: 2em auto; }
@@ -65,10 +50,9 @@ I'm gonna get you to change some parameters. When I say "Change X to Y", what I'
     100% { background-position: 74px center; }
 }
 
-/*.page-tags a { display: inline !important; }
-.page-tags a::after { white-space: normal; word-break: normal; }
-.page-tags a:nth-of-type(1)::after { content: " are-we-cool-yet best-author-page";  }
-.page-tags a:nth-of-type(2)::after { content: " goi-format global-occult-coalition maria-cones marshall-carter-and-dark meta pataphysical? possibly-pataphysical prometheus scp wilsons-wildlife _are-we-cool-yet _global-occult-coalition _marshall-carter-and-dark _prometheus _scp-foundation _wilsons-wildlife tagged-correctly"; }*/
+#header h2 span::before {
+    content: "" !important;
+}
 [[/module]]
 
 [[module Listpages created_by="=" tag="-author -workbench -contest -splash -supplement -translation" category="-fragment -component" limit="1" order="random"]]
