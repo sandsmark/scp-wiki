@@ -12,19 +12,6 @@ title:cone
     0% { background-position: 0px center; }
     100% { background-position: 74px center; }
 }
-
-#header h1 a::before {
-    content: "List of Sharticles";
-}
-#header h2 span::before {
-    content: "Croquembouche's Author Page" !important;
-}
-#header {
-    background-image: url(http://scp-wiki.wdfiles.com/local--files/cone/delta.png);
-}
-#header::before {
-    display: none;
-}
 [[/module]]
 
 [[module Listpages created_by="=" tag="-author -workbench -contest -splash -supplement -translation" category="-fragment -component" limit="1" order="random"]]
@@ -307,3 +294,17 @@ Research is ongoing. In the meantime, please do not, under //any// circumstances
 [[/tabview]]
 
 [[include :scp-sandbox-3:collab:ar-theme]]
+[[module CSS]]
+#header h1 a::before {
+    content: "List of Sharticles";
+}
+#header h2 span::before {
+    content: "Croquembouche's Author Page" !important;
+}
+#header {
+    background-image: url(http://scp-wiki.wdfiles.com/local--files/cone/delta.png);
+}
+#header::before {
+    display: none;
+}
+[[/module]]
