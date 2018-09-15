@@ -234,3 +234,45 @@ The theme for the month of July was //Fire//!
 [[=]]
 **« [[[news-06-2018|June 2018]]] | __[[[news-07-2018|July 2018]]]__ | [[[news-08-2018|August 2018]]] »**
 [[/=]]
+
+[[module CSS]]
+
+#header {
+    background-image: url(http://www.scp-wiki.net/local--files/news/SCPNewsLogo);
+}
+
+#header h2 span::before {
+    color: #eee;
+    font-weight: bold;
+    color: #f0f0c0;
+    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+    content: 'Site Correspondence Periodical';
+}
+
+
+#header h2 span {
+    display: block;
+    margin: 0;
+    padding: 19px 0;
+    line-height: 0px;
+    max-height: 0px;
+    font-weight: bold;
+    color: transparent;
+    text-shadow: none;
+}
+
+
+/* 
+
+"SCPNewsLogo" is a derivative of "1f5de" by Twitter, Inc and other contributors, used under CC BY. "SCP-News-2018-08-Logo" is licensed under CC BY SA by TSATPWTCOTTTADC.
+
+"1f5de": https://github.com/twitter/twemoji/blob/gh-pages/2/svg/1f5de.svg
+"SCPNewsLogo": http://www.scp-wiki.net/local--files/news/SCPNewsLogo
+
+"1f5de" license: https://github.com/twitter/twemoji/blob/gh-pages/LICENSE-GRAPHICS
+"SCPNewsLogo" license: https://creativecommons.org/licenses/by-sa/3.0/
+
+ */
+
+[[/module]]
