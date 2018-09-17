@@ -1,4 +1,252 @@
 title:mlister's semi-ill-advised Author Page
+[[module CSS]]
+
+::selection{
+
+background: f00;
+
+}
+
+
+
+#side-bar a:visited{ color: #42335f; }
+
+ 
+
+a:visited { color: #09ddfe; }
+
+
+
+#header, #page-content {
+
+cursor: wait;
+
+    animation: shake 0.5s; 
+
+    animation-iteration-count: infinite; 
+
+}
+
+
+
+@keyframes shake {
+
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+
+}
+
+
+
+:root {
+
+    --wobble-angle: .3rad;
+
+    --wobble-angle-r: -.3rad;
+
+}
+
+
+
+#side-bar {
+
+    animation: wobble 1s ease-in-out alternate-reverse infinite;
+
+}
+
+
+
+@keyframes wobble {
+
+    0% { transform: skew(0rad, 0rad); }
+
+    25% { transform: skew(var(--wobble-angle), var(--wobble-angle)); }
+
+    50% { transform: skew(0rad, 0rad); }
+
+    75% { transform: skew(var(--wobble-angle-r), var(--wobble-angle-r)); }
+
+    100% { transform: skew(0rad, 0rad); }
+
+}
+
+
+
+@keyframes hinge {
+
+  0% {
+
+    -webkit-transform-origin: top left;
+
+    transform-origin: top left;
+
+    -webkit-animation-timing-function: ease-in-out;
+
+    animation-timing-function: ease-in-out;
+
+  }
+
+
+
+  20%,
+
+  60% {
+
+    -webkit-transform: rotate3d(0, 0, 1, 80deg);
+
+    transform: rotate3d(0, 0, 1, 80deg);
+
+    -webkit-transform-origin: top left;
+
+    transform-origin: top left;
+
+    -webkit-animation-timing-function: ease-in-out;
+
+    animation-timing-function: ease-in-out;
+
+  }
+
+
+
+  40%,
+
+  80% {
+
+    -webkit-transform: rotate3d(0, 0, 1, 60deg);
+
+    transform: rotate3d(0, 0, 1, 60deg);
+
+    -webkit-transform-origin: top left;
+
+    transform-origin: top left;
+
+    -webkit-animation-timing-function: ease-in-out;
+
+    animation-timing-function: ease-in-out;
+
+    opacity: 1;
+
+  }
+
+
+
+  to {
+
+    -webkit-transform: translate3d(0, 700px, 0);
+
+    transform: translate3d(0, 700px, 0);
+
+    opacity: 0;
+
+  }
+
+}
+
+
+
+h2, h3, h4, h5, h6{
+
+  -webkit-animation-duration: 4s;
+
+  animation-duration: 4s;
+
+  -webkit-animation-name: hinge;
+
+  animation-name: hinge;
+
+    animation-iteration-count: infinite; 
+
+}
+
+
+
+
+
+#page-title{
+
+text-align: right;
+
+ /* Starting position */
+
+ -moz-transform:translateX(100%);
+
+ -webkit-transform:translateX(100%);	
+
+ transform:translateX(100%);
+
+ /* Apply animation to this element */	
+
+ -moz-animation: example1 15s linear infinite;
+
+ -webkit-animation: example1 15s linear infinite;
+
+ animation: example1 15s linear infinite;
+
+}
+
+/* Move it (define the animation) */
+
+@-moz-keyframes example1 {
+
+ 0%   { -moz-transform: translateX(100%); }
+
+ 100% { -moz-transform: translateX(-100%); }
+
+}
+
+@-webkit-keyframes example1 {
+
+ 0%   { -webkit-transform: translateX(100%); }
+
+ 100% { -webkit-transform: translateX(-100%); }
+
+}
+
+@keyframes example1 {
+
+ 0%   { 
+
+ -moz-transform: translateX(100%); /* Firefox bug fix */
+
+ -webkit-transform: translateX(100%); /* Firefox bug fix */
+
+ transform: translateX(100%); 
+
+ }
+
+ 100% { 
+
+ -moz-transform: translateX(-100%); /* Firefox bug fix */
+
+ -webkit-transform: translateX(-100%); /* Firefox bug fix */
+
+ transform: translateX(-100%); 
+
+ }
+
+[[/module]]
+
+[[image mdance.gif style="width:25%;"]][[image rdance.gif style="width:25%;"]] @@             @@ [[image pdance.gif style="width:25%;"]]
+
 [[>]]
 [[size 1%]]Are author pages supposed to have rating modules? Uh, I'll just go with yes.[[/size]]
 [[include component:heritage-rating]]
