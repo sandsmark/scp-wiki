@@ -3,7 +3,7 @@ title:Wiki Syntax
 [[module Rate]]
 [[/>]]
 
-> Note: The majority of the contents of this page are translated and originally from the [http://ja.scp-wiki.net/wiki-syntax Wiki Syntax] page on the SCP-JP wiki.
+> Note: The majority of the contents of this page is translated and originally from the [http://ja.scp-wiki.net/wiki-syntax Wiki Syntax] page on the SCP-JP wiki.
 
 > This page references [http://www.wikidot.com/doc:wiki-syntax Wikidot's syntax documentation].
 
@@ -188,7 +188,7 @@ Contents of tab 3
 [[/tab]]
 [[/tabview]]
 
-Tabs can be nested within tabs, but be warned that the placement may start acting up if you do so.
+Tabs can be nested within tabs, but the most obvious method (putting a [[tabview]] within another [[tabview]]) will not work. There is a specific method required for nesting tabs, but I don't recommend doing it due to readability issues. Just make another sandbox page at that point.
 
 + Tables
 
