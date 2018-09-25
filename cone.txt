@@ -309,8 +309,8 @@ Research is ongoing. In the meantime, please do not, under //any// circumstances
 
 **Pages missing a top-level tag**
 [[collapsible]]
-[[module ListPages tags="-hub -scp -tale -goi-format -supplement -artwork -essay -guide -author" separate="no" category="_default" perPage="250" order="rating desc"]]
-# %%title_linked%% by %%created_by%% ([[#if %%rating%% >= 0 | + |  ]]%%rating%%) (%%tags%%)
+[[module ListPages tags="-hub -scp -tale -goi-format -supplement -artwork -essay -guide -author -news -workbench -admin" separate="no" category="_default" perPage="250" order="rating desc"]]
+# %%title_linked%% by %%created_by%% ([[#ifexpr %%rating%% > 0 | + |  ]]%%rating%%) (%%tags%%)
 [[/module]]
 [[/collapsible]]
 
