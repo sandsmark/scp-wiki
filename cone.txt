@@ -307,10 +307,10 @@ Research is ongoing. In the meantime, please do not, under //any// circumstances
 [[/module]]
 [[/collapsible]]
 
-**Themes by rating**
+**Pages missing a top-level tag**
 [[collapsible]]
-[[module ListPages tags="+theme" separate="no" category="*" perPage="250" order="rating desc"]]
-# %%title_linked%% by %%created_by%% ([[#if %%rating%% >= 0 | + |  ]]%%rating%%)
+[[module ListPages tags="-hub -scp - tale -goi-format" separate="no" category="*" perPage="250" order="rating desc"]]
+# %%title_linked%% by %%created_by%% ([[#if %%rating%% >= 0 | + |  ]]%%rating%%) (%%tags%%)
 [[/module]]
 [[/collapsible]]
 
