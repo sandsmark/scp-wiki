@@ -62,10 +62,10 @@ table.wiki-content-table td:nth-of-type(4) {
     width: 20%; text-align: center;
 }
 
-#pages > .standalone:target ~ .standalone:last-child, #pages > .standalone {
+#u-pages > .standalone:target ~ .standalone:last-child, #u-pages > .standalone {
     display: none;
 }
-#pages > :last-child, #pages > .standalone:target {
+#u-pages > :last-child, #u-pages > .standalone:target {
     display: block;
 }
 [[/module]]
@@ -77,7 +77,7 @@ table.wiki-content-table td:nth-of-type(4) {
 Top Rated 2008
 [[/div]]
 [[div class="content-type-description"]]
-[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="200" date="2008" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
+[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="50" date="2008" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
 || %%title_linked%% || %%rating%% || %%created_by_linked%% || %%created_at|%e %b %Y%% ||
 [[/module]]
 [[/div]]
@@ -88,7 +88,7 @@ Top Rated 2008
 Top Rated 2009
 [[/div]]
 [[div class="content-type-description"]]
-[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="200" date="2009" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
+[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="50" date="2009" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
 || %%title_linked%% || %%rating%% || %%created_by_linked%% || %%created_at|%e %b %Y%% ||
 [[/module]]
 [[/div]]
@@ -99,7 +99,7 @@ Top Rated 2009
 Top Rated 2010
 [[/div]]
 [[div class="content-type-description"]]
-[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="200" date="2010" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
+[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="50" date="2010" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
 || %%title_linked%% || %%rating%% || %%created_by_linked%% || %%created_at|%e %b %Y%% ||
 [[/module]]
 [[/div]]
@@ -110,7 +110,7 @@ Top Rated 2010
 Top Rated 2011
 [[/div]]
 [[div class="content-type-description"]]
-[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="200" date="2011" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
+[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="50" date="2011" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
 || %%title_linked%% || %%rating%% || %%created_by_linked%% || %%created_at|%e %b %Y%% ||
 [[/module]]
 [[/div]]
@@ -121,7 +121,7 @@ Top Rated 2011
 Top Rated 2012
 [[/div]]
 [[div class="content-type-description"]]
-[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="200" date="2012" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
+[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="50" date="2012" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
 || %%title_linked%% || %%rating%% || %%created_by_linked%% || %%created_at|%e %b %Y%% ||
 [[/module]]
 [[/div]]
@@ -132,7 +132,7 @@ Top Rated 2012
 Top Rated 2013
 [[/div]]
 [[div class="content-type-description"]]
-[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="200" date="2013" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
+[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="50" date="2013" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
 || %%title_linked%% || %%rating%% || %%created_by_linked%% || %%created_at|%e %b %Y%% ||
 [[/module]]
 [[/div]]
@@ -143,7 +143,7 @@ Top Rated 2013
 Top Rated 2014
 [[/div]]
 [[div class="content-type-description"]]
-[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="200" date="2014" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
+[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="50" date="2014" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
 || %%title_linked%% || %%rating%% || %%created_by_linked%% || %%created_at|%e %b %Y%% ||
 [[/module]]
 [[/div]]
@@ -154,7 +154,7 @@ Top Rated 2014
 Top Rated 2015
 [[/div]]
 [[div class="content-type-description"]]
-[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="200" date="2015" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
+[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="50" date="2015" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
 || %%title_linked%% || %%rating%% || %%created_by_linked%% || %%created_at|%e %b %Y%% ||
 [[/module]]
 [[/div]]
@@ -165,18 +165,18 @@ Top Rated 2015
 Top Rated 2016
 [[/div]]
 [[div class="content-type-description"]]
-[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="200" date="2016" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
+[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="50" date="2016" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
 || %%title_linked%% || %%rating%% || %%created_by_linked%% || %%created_at|%e %b %Y%% ||
 [[/module]]
 [[/div]]
 [[/div]]
 
-[[div class="content-panel standalone content-row" id="2017"]]
+[[div class="content-panel standalone content-row" id="y2017"]]
 [[div class="content-type-title"]]
 Top Rated 2017
 [[/div]]
 [[div class="content-type-description"]]
-[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="200" date="2017" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
+[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="50" date="2017" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
 || %%title_linked%% || %%rating%% || %%created_by_linked%% || %%created_at|%e %b %Y%% ||
 [[/module]]
 [[/div]]
@@ -187,7 +187,7 @@ Top Rated 2017
 Top Rated 2018
 [[/div]]
 [[div class="content-type-description"]]
-[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="200" date="2018" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
+[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="50" date="2018" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
 || %%title_linked%% || %%rating%% || %%created_by_linked%% || %%created_at|%e %b %Y%% ||
 [[/module]]
 [[/div]]
