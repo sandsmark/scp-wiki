@@ -75,8 +75,11 @@ Date Created
 [[div class="content-type-description"]]
 
 [[module CSS]]
+.wiki-content-table {
+    margin: 0; width: 100%;
+}
 .wiki-content-table tr > td {
-    vertical-align: top;
+    vertical-align: top; border: none;
 }
 .wiki-content-table tr > td:nth-of-type(1) {
     width: 40%;
