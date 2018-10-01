@@ -74,22 +74,41 @@ Date Created
 
 [[div class="content-type-description"]]
 
-[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="200" date="2017" prependLine="[[table style='width: 100%;'[][[row style='font-weight: bold; color: #fff;']][[cell style="padding: 0 2px; width: 40%;"]][[/cell]][[cell style="padding: 0 2px; width: 10%; text-align: center;"]][[/cell]][[cell style="padding: 0 2px; width: 30%; text-align: center;"]][[/cell]][[cell style="padding: 0 2px; text-align: center;"]][[/cell]][[/row]]" perPage="30" appendLine="[[/table]]" rating=">=-15"]]
-[[row]]
-[[cell style="vertical-align: top; width: 40%;"]]
-%%title_linked%%
+[[module CSS]]
+.wiki-content-table tr > td {
+    vertical-align: top; text-align: center;
+}
+.wiki-content-table tr > td:nth-of-type(1) {
+    width: 40%;
+}
+.wiki-content-table tr > td:nth-of-type(2) {
+    width: 10%;
+}
+.wiki-content-table tr > td:nth-of-type(3) {
+    width: 30%;
+}
+.wiki-content-table tr > td:nth-of-type(4) {
+    width: 20%;
+}
+[[/module]]
+
+[[table style="width: 100%;"]]
+[[row style="font-weight: bold; color: #fff;"]]
+[[cell style="padding: 0 2px; width: 40%;"]]
 [[/cell]]
-[[cell style="vertical-align: top; width: 10%; text-align: center;"]]
-%%rating%%
+[[cell style="padding: 0 2px; width: 10%; text-align: center;"]]
 [[/cell]]
-[[cell style="vertical-align: top; width: 30%;]]
-%%created_by_linked%%
+[[cell style="padding: 0 2px; width: 30%; text-align: center;"]]
 [[/cell]]
-[[cell style="vertical-align: top; width: 20%;"]]
-%%created_at|%e %b %Y%%
+[[cell style="padding: 0 2px; text-align: center;"]]
 [[/cell]]
 [[/row]]
+
+[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="200" date="2017" perPage="30"]]
+|| %%title_linked%% || %%rating%% || %%created_by_linked%% || %%created_at|%e %b %Y%% ||
 [[/module]]
+
+[[/table]]
 
 [[/div]]
 [[/div]]
