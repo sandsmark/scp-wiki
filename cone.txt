@@ -65,7 +65,7 @@ Rating
 Author
 [[/cell]]
 [[cell style="padding: 0 2px; width: 20%; text-align: center;"]]
-Author
+Date Created
 [[/cell]]
 [[/row]]
 [[/table]]
@@ -74,7 +74,7 @@ Author
 
 [[div class="content-type-description"]]
 
-[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="200" date="2017" prependLine="[[include component:listpages-table]]" perPage="30" appendLine="[[/table]]" rating=">=-15"]]
+[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="200" date="2017" prependLine="[[table style="width: 100%;"]][[row style="font-weight: bold; color: #fff;"]][[cell style="padding: 0 2px; width: 40%;"]][[/cell]][[cell style="padding: 0 2px; width: 20%; text-align: center;"]][[/cell]][[cell style="padding: 0 2px; width: 20%; text-align: center;"]][[/cell]][[cell style="padding: 0 2px; text-align: center;"]][[/cell]][[/row]]" perPage="30" appendLine="[[/table]]" rating=">=-15"]]
 [[row]]
 [[cell style="vertical-align: top; width: 40%;"]]
 %%title_linked%%
