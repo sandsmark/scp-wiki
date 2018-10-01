@@ -61,6 +61,22 @@ table.wiki-content-table td:nth-of-type(3) {
 table.wiki-content-table td:nth-of-type(4) {
     width: 20%; text-align: center;
 }
+
+  .pages > .page:target ~ .page:last-child, .pages > .page {
+    display: none;
+  }
+  
+  /* :last-child works, but for some reason .page:last-child will not */
+  .pages > :last-child, .pages > .page:target {
+    display: block;
+  }
+
+#page-content > .standalone:target ~ .standalone:last-child, #page-content > .standalone {
+    display: none;
+}
+#page-content > :last-child, #page-content > .standalone:target {
+    display: block;
+}
 [[/module]]
 
 [[div class="content-panel standalone content-row" id="2008"]]
