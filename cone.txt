@@ -62,22 +62,15 @@ table.wiki-content-table td:nth-of-type(4) {
     width: 20%; text-align: center;
 }
 
-  .pages > .page:target ~ .page:last-child, .pages > .page {
-    display: none;
-  }
-  
-  /* :last-child works, but for some reason .page:last-child will not */
-  .pages > :last-child, .pages > .page:target {
-    display: block;
-  }
-
-#page-content > .standalone:target ~ .standalone:last-child, #page-content > .standalone {
+#pages > .standalone:target ~ .standalone:last-child, #pages > .standalone {
     display: none;
 }
-#page-content > :last-child, #page-content > .standalone:target {
+#pages > :last-child, #pages > .standalone:target {
     display: block;
 }
 [[/module]]
+
+[[div id="pages"]]
 
 [[div class="content-panel standalone content-row" id="2008"]]
 [[div class="content-type-title"]]
@@ -198,4 +191,6 @@ Top Rated 2018
 || %%title_linked%% || %%rating%% || %%created_by_linked%% || %%created_at|%e %b %Y%% ||
 [[/module]]
 [[/div]]
+[[/div]]
+
 [[/div]]
