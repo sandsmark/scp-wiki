@@ -1,196 +1,343 @@
 title:cone
-[[=]]
-
-+ [[size 125%]]Top Rated Pages by Year[[/size]]
-
-++ This page is currently [unclassified].
-
-------
-
-[[/=]]
-
-[[div class="content-panel standalone series"]]
-[[=]]
-++ Click on a year to find the top rated pages during that time!
-[[/=]]
-[[div style="text-align: center; width: 100%; font-size:1.25em; font-weight: bold;"]]
-[/cone#u-2008 2008] | [/cone#u-2009 2009] | [/cone#u-2010 2010] | [/cone#u-2011 2011] | [/cone#u-2012 2012] | [/cone#u-2013 2013] | [/cone#u-2014 2014] | [/cone#u-2015 2015] | [/cone#u-2016 2016] | [/cone#u-2017 2017] | [/cone#u-2018 2018]
-[[/div]]
-[[/div]]
-
 [[module CSS]]
-.content-panel .content-type-title > p {
-  margin: 0;
-}
-.content-panel .content-type-title {
-  font-size: 120%;
-  font-weight: bold;
-  padding: 5px 20px;
-  background-color: #666;
-  color: #fff;
-  border-radius: 8px 8px 0 0;
-  box-shadow: inset 0 1px 1px rgba(255,255,255,.8),
-    inset 0 15px 1px rgba(255,255,255,.2),
-    inset 0 15px 10px rgba(255,255,255,.2);
-}
-.content-panel .content-type-description {
-padding: 0 20px;
-text-align: justify;
-}
-.content-panel.content-row .content-type-description {
-padding: 5px 20px;
-}
-table.wiki-content-table {
-    margin: 0; width: 100%;
-}
-table.wiki-content-table th {
-    border: 2px solid #fcfdfb; color: white; background-color: #666;
-}
-table.wiki-content-table td {
-    vertical-align: top; border: none;
-}
-table.wiki-content-table td:nth-of-type(1) {
-    width: 40%;
-}
-table.wiki-content-table td:nth-of-type(2) {
-    width: 10%; text-align: center;
-}
-table.wiki-content-table td:nth-of-type(3) {
-    width: 30%;
-}
-table.wiki-content-table td:nth-of-type(4) {
-    width: 20%; text-align: center;
+
+.random { text-align: center; }
+.random p { margin: 2em auto; }
+.random a { position: relative; box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.2), 0px 3px 10px 0 rgba(0, 0, 0, 0.19); padding: 1em; transition: all 0.3s ease-in-out; }
+.random a:hover { box-shadow: 0px 3px 4px 0 rgba(0, 0, 0, 0.2), 0px 3px 10px 0 rgba(0, 0, 0, 0.19); }
+.random a::after { content: ""; position: absolute; top: 0; right: 0; left: 0; bottom: 0; pointer-events: none; background: url(http://scp-wiki.wdfiles.com/local--files/cone/redarrow.png); animation: bg-slide 1s infinite linear; opacity: 0; transition: opacity 0.2s ease-in-out; }
+.random a:hover::after { opacity: 1; }
+
+@keyframes bg-slide {
+    0% { background-position: 0px center; }
+    100% { background-position: 74px center; }
 }
 
-#u-pages > .standalone:target ~ .standalone:last-child, #u-pages > .standalone {
+.yui-content h1, .yui-content h3 {
+    margin-left: 5%;
+}
+[[/module]]
+
+[[module Listpages created_by="=" tag="-author -workbench -contest -splash -supplement -translation" category="-fragment -component" limit="1" order="random"]]
+[[div class="random"]]
+**[[[*%%link%%|Visit a random article by me]]]**
+
+//It's a choice of %%total%%... which one will it be?//
+[[/div]]
+[[/module]]
+
+-----
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[=]]
++ Articles
+[[/=]]
+
+[[tabview]]
+[[tab Pure Originals]]
++ Pure Originals
+
+[[include :scp-sandbox-3:component:page-info-slider
+| fullname=scp-3939
+| truncate=yes
+| title-length=short
+| shade=grey
+| title-1=Title | text-1=[NUMBER RESERVED; AWAITING RESEARCHER]
+| title-2=Notes | text-2=March 2018 #2; most Offset pages (65)
+| title-3=Format screw? | text-3=Oh yeah
+| summary=A multiple choice story in which you, ████ ████████, a disgraced researcher, must discover what SCP-3939 really is.
+| quote="I quit." he tells you. "I fucking quit. I'm done here. I'm done with you. I'm done with 3939. I'm done with the Foundation. I'm done with fuckers like you getting to Class 4. You'll make a great O5 someday, you know that? Fuck you. Fuck you, ████."
+| tagline= |
+]]
+
+[[include :scp-sandbox-3:component:page-info-slider
+| fullname=scp-3211
+| truncate=yes
+| title-length=short
+| shade=grey
+| title-1=Title | text-1=There Is No Canon
+| title-2=Notes | text-2=2nd longest article (char count); [https://www.reddit.com/r/SCPDeclassified/comments/8ek9j7/scp3211_there_is_no_canon/?ref=share&ref_source=link 2nd highest rated Declassification]
+| title-3=Format screw? | text-3=Hella
+| summary=Hidden behind your phone or computer screen, you're usually safe from antimemetic SCPs. _
+But 3211? No no no. 3211 is different.
+| quote=By proceeding to read this document you acknowledge and accept that you are about to be exposed to an anomalous effect.
+| tagline=
+]]
+
+[[/tab]]
+[[tab Collaborations]]
++ Collaborations
+
+[[include :scp-sandbox-3:component:page-info-slider
+| fullname=scp-3790
+| truncate=yes
+| title-length=short
+| shade=grey
+| title-1=Title | text-1=Department of Abnormalities
+| title-2=Written with | text-2=[[*user djkaktus]]! |
+  title-3=Format screw? | text-3=No
+| summary=At the end of a corridor, an elevator takes you to you a quiet, dark place.
+| quote=A pedestal rests in the middle of the chamber. Four parallel lines in the dust, consistent with finger marks, imply that whatever was upon it has recently been removed.
+| tagline=Sponsored by [[*user djkaktus]] |
+]]
+
+[[/tab]]
+[[tab Contest Entries]]
++ Contest Entries
+
++++ Doomsday 2018
+
+[[include :scp-sandbox-3:component:page-info-slider
+| fullname=end-of-death-hub
+| truncate=yes
+| title-length=medium
+| shade=purple
+| title-1=Written with | text-1=[[*user Captain Kirby]], [[*user OthellotheCat]] and [[*user Veiedhimaedhr]]!
+| title-2=Written for | text-2=Doomsday Contest
+| title-3=Format screw? | text-3=No, but nice art
+| summary=One day, people stopped dying. Joyce Michaels is pretty pissed off about it.
+| quote=**Scenario Designation:** ΩK-Class. **Likelihood:** Near Impossible. **Severity:** Survivable.
+| tagline=Written for the [/doomsday-contest Doomsday Contest] -- 2nd place!
+]]
+
+[[include :scp-sandbox-3:component:page-info-slider
+| fullname=scp-3984
+| truncate=yes
+| title-length=short
+| shade=grey
+| title-1=Title | text-1=Poking Death with a Stick
+| title-2=Written for | text-2=[/end-of-death-hub End of Death]
+| title-3=Format screw? | text-3=Yeah
+| summary=When death breaks... poke it with a stick.
+| quote=One round from a standard-issue security handgun was fired into the forehead of D-10273 by Dr. Young.
+| tagline=Written for [/end-of-death-hub End of Death]
+]]
+
+[[include :scp-sandbox-3:component:page-info-slider
+| fullname=omega-k
+| truncate=yes
+| title-length=short
+| shade=saddlebrown
+| title-1=Length | text-1=4688 words
+| title-2=Written for | text-2=[/end-of-death-hub End of Death]
+| title-3=Format screw? | text-3=It's a tale
+| summary=It's the end of the world, but you still have to go to work in the morning.
+| quote="I just find it funny how this is a K-class scenario and all, but the mundane day-to-day stuff just carries on."
+| tagline=Written for [/end-of-death-hub End of Death]
+]]
+
+[[include :scp-sandbox-3:component:page-info-slider
+| fullname=the-foundation-wants-a-robot-army
+| truncate=no
+| title-length=medium
+| shade=saddlebrown
+| title-1=Written with | text-1=[[*user Captain Kirby]], [[*user OthellotheCat]] and [[*user Veiedhimaedhr]]!
+| title-2=Written for | text-2=[/end-of-death-hub End of Death]
+| title-3=Format screw? | text-3=TALE
+| summary=Three GoIs come together to discuss a long-term solution. Performed as a real chat and transcripted with only minor edits.
+| quote=**Young:** Even I have to admit that we do have to retain some humanity for this to be marketable.
+| tagline=Written for [/end-of-death-hub End of Death]
+]]
+
++++ SCP OCT
+
+[[include :scp-sandbox-3:component:page-info-slider
+| fullname=trilobastards
+| truncate=no
+| title-length=medium
+| shade=saddlebrown
+| title-1=Written for | text-1=[/scp-oct-hub SCP OCT]
+| title-2=Devastated by | text-2=[[*user 9Volt]]'s [/prehistoric-artillery-strike Derailment By Prehistoric Artillery Strike]
+| title-3=Format screw? | text-3=TALE but actually, yes
+| summary=████ ████████ has to needlessly prove a theory for the sake of setting up a workable plot.
+| quote=You whip out your nuclear shotgun boomer plasma destruction kaboom big bang cannons and you **fucking blitz** the trilobite bastard with bullets and shrapnel and enough radiation to sterilise a planet.
+| tagline=Written for the [/scp-oct-hub SCP OCT]
+]]
+
+[[/tab]]
+[[tab Other]]
++ Other
+
+[[include :scp-sandbox-3:component:page-info-slider
+| fullname=component:earthworm
+| truncate=yes
+| title-length=medium
+| shade=blue
+| title-1=Page type | text-1=component
+| title-2=Written in | text-2=CSS
+| title-3=Format screw? | text-3=Why not
+| summary=A more decorative series navigator to replace cheap plaintext ones. Instructions for use are in the author comment.
+| quote=.earthworm div:nth-child(2).no a, .earthworm a[href="/"] { color: #333; text-decoration: none; cursor: text; pointer-events: none; }
+| tagline=
+]]
+
+[[include :scp-sandbox-3:component:page-info-slider
+| fullname=cone
+| truncate=yes
+| title-length=short
+| shade=red
+| title-1=Page type | text-1=Author
+| title-2=Please rate | text-2=//Please//
+| title-3=Format screw? | text-3=Unsure
+| summary=A collection of articles written by [[*user Croquembouche]].
+| quote=A collection of articles written by [[*user Croquembouche]].
+| tagline=
+]]
+
+[[include :scp-sandbox-3:component:page-info-slider
+| fullname=fragment:site-news-title-fetcher
+| truncate=yes
+| title-length=medium
+| shade=blue
+| title-1=Page type | text-1="component"
+| title-2=Written in | text-2=Javascript
+| title-3=Format screw? | text-3=No
+| summary=A tool to automagically fetch SCP titles to make it easier to update the Site News.
+| quote=if(list.scps[j].toUpperCase() == splits[0].toUpperCase()) { vlog("Found a match for " + list.scps[j] + " (" + splits[1] + ")"); list.lines[j] = list.lines[j].replace("%%actual-title%%",splits[1]); };
+| tagline=
+]]
+
+[[include :scp-sandbox-3:component:page-info-slider
+| fullname=listpages-magic-and-you
+| truncate=yes
+| title-length=medium
+| shade=white
+| title-1=Page type | text-1="Guide"
+| title-2=Written in | text-2=English
+| title-3=Format screw? | text-3=No
+| summary=A guide to using ListPages both for Listing Pages and doing LPT.
+| quote=Don't have a clue what any of that means? That's fine — that's what this guide is for.
+| tagline=
+]]
+
+[[include :scp-sandbox-3:component:page-info-slider
+| fullname=component:ar-theme
+| truncate=yes
+| title-length=medium
+| shade=yellow
+| title-1=Page type | text-1=Theme
+| title-2=Written in | text-2=CSS
+| title-3=Format screw? | text-3=Precursory to
+| summary=The CSS theme for Anderson Robotics GOI-formats.
+| quote=div[style="display: none;"] { _
+        @@    @@display: block !important; _
+        }
+| tagline=
+]]
+
+[[/tab]]
+[[/tabview]]
+
+-----
+
+[[collapsible show="+ Other things the cone has done"]]
+* Suggested the [[[http://www.scp-wiki.net/system:page-tags/tag/interactive|interactive]]] tag
+* Created [[[http://www.scp-wiki.net/forum/t-6086502#post-3829009|the site logo]]] for Pride Month 2018
+* JS Technical Staff (25th June 2018 -- current)
+* Made the banner for the [[[GRU "P" Hub]]]
+* Suggested the [[[http://www.scp-wiki.net/system:page-tags/tag/theme|theme]]] tag
+* Made [[[lily|a tool]]] for checking which pages need the _image tag
+* Assisted in the creation of an [[[component:author-page|author page tool]]] with [[*user W Asriel]] ([[[author-page-tool|documentation]]])
+[[/collapsible]]
+
+[[=]]
+[[image sandbox.jpg width="200" link="http://scp-sandbox-3.wikidot.com/cone"]]
+[[/=]]
+
+-----
+
+[[tabview]]
+[[tab Workbench]]
+[[/tab]]
+
+[!--[[tab Conic Sections]]
+[[div style="border:solid 1px #999999; background:#f2f2c2; padding:5px; margin-bottom: 10px;"]]
+[[=]]
+++++ NOTICE FROM THE FOUNDATION RECORDS AND INFORMATION SECURITY ADMINISTRATION 
+
+The following file is harbour to an extraordinarily virulent cognitohazard, which hijacks the reader's brain and forces it to produce shitty documentation about cones.
+
+Research is ongoing. In the meantime, please do not, under //any// circumstances, read this page's author comment and contribute your own cone-based fuckery.
+
+-- Maria Cones, Director, RAISA
+
+[[/=]]
+[[/div]]
+
+[[div class="normie"]]
+[[module ListPages name="cone%"
+                             order="random"
+                             limit="1"
+                             category="fragment"
+                             offset="@URL|0"]]
+[[div class="page-title"]]
+%%title_linked%%
+[[/div]]
+%%content%%
+[[/module]]
+[[/div]]
+[[/tab]]--]
+
+[[tab Tag Stuff]]
+
+**Pages tagged "4000"**
+//If you see this and the tag isn't the current contest, please feel free to correct it//
+[[collapsible]]
+[[module ListPages tags="+4000" separate="no" order="rating desc" perPage="250"]]
+* %%title_linked%% by %%created_by%% (%%rating%%)
+[[/module]]
+[[/collapsible]]
+
+**Pages tagged "4000" but are otherwise untagged**
+//If you see this and the tag isn't the current contest, please feel free to correct it//
+[[collapsible]]
+[[module ListPages tags="+4000 -scp -tale -goi-format -hub" separate="no" perPage="250"]]
+* %%title_linked%% by %%created_by%% (%%rating%%)
+[[/module]]
+[[/collapsible]]
+
+**List of pages that can appear on this author page**
+//Check the author comment if you want to contribute//
+[[collapsible]]
+[[module ListPages name="cone%" separate="no" category="fragment" perPage="250"]]
+* %%title_linked%% by %%created_by%%
+[[/module]]
+[[/collapsible]]
+
+**Pages missing a top-level tag**
+[[collapsible]]
+[[module ListPages tags="-hub -scp -tale -goi-format -supplement -artwork -essay -guide -author -news -workbench -admin -project -splash -sandbox -in-deletion" separate="no" category="* -log-of-unexplained-locations -fragment" perPage="250" order="rating desc"]]
+# %%category%%: %%title_linked%% by %%created_by%% ([[#ifexpr %%rating%% > 0 | + |  ]]%%rating%%) (%%tags%%)
+[[/module]]
+[[/collapsible]]
+
+[[/tab]]
+[[/tabview]]
+
+[[include :scp-sandbox-3:collab:ar-theme]]
+[[module CSS]]
+#header h1 a::before {
+    content: "List of Sharticles";
+}
+#header h2 span::before {
+    content: "Croquembouche's Author Page" !important;
+}
+#header {
+    background-image: url(http://scp-wiki.wdfiles.com/local--files/cone/delta.png);
+}
+#header::before {
     display: none;
 }
-#u-pages > :last-child, #u-pages > .standalone:target {
-    display: block;
+div#container-wrap {
+    background: url(http://scp-sandbox-3.wdfiles.com/local--files/move-1/mat_body_bg.png) top left repeat-x;
+}
+:root {
+    --light-accent: #82292e;
+    --dark-accent: #611e22;
+    --hyperlink: #b01;
+    --hyperlink-visited: #824;
 }
 [[/module]]
-
-[[div id="pages"]]
-
-[[div class="content-panel standalone content-row" id="2008"]]
-[[div class="content-type-title"]]
-Top Rated 2008
-[[/div]]
-[[div class="content-type-description"]]
-[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="50" date="2008" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
-|| %%title_linked%% || %%rating%% || %%created_by_linked%% || %%created_at|%e %b %Y%% ||
-[[/module]]
-[[/div]]
-[[/div]]
-
-[[div class="content-panel standalone content-row" id="2009"]]
-[[div class="content-type-title"]]
-Top Rated 2009
-[[/div]]
-[[div class="content-type-description"]]
-[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="50" date="2009" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
-|| %%title_linked%% || %%rating%% || %%created_by_linked%% || %%created_at|%e %b %Y%% ||
-[[/module]]
-[[/div]]
-[[/div]]
-
-[[div class="content-panel standalone content-row" id="2010"]]
-[[div class="content-type-title"]]
-Top Rated 2010
-[[/div]]
-[[div class="content-type-description"]]
-[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="50" date="2010" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
-|| %%title_linked%% || %%rating%% || %%created_by_linked%% || %%created_at|%e %b %Y%% ||
-[[/module]]
-[[/div]]
-[[/div]]
-
-[[div class="content-panel standalone content-row" id="2011"]]
-[[div class="content-type-title"]]
-Top Rated 2011
-[[/div]]
-[[div class="content-type-description"]]
-[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="50" date="2011" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
-|| %%title_linked%% || %%rating%% || %%created_by_linked%% || %%created_at|%e %b %Y%% ||
-[[/module]]
-[[/div]]
-[[/div]]
-
-[[div class="content-panel standalone content-row" id="2012"]]
-[[div class="content-type-title"]]
-Top Rated 2012
-[[/div]]
-[[div class="content-type-description"]]
-[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="50" date="2012" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
-|| %%title_linked%% || %%rating%% || %%created_by_linked%% || %%created_at|%e %b %Y%% ||
-[[/module]]
-[[/div]]
-[[/div]]
-
-[[div class="content-panel standalone content-row" id="2013"]]
-[[div class="content-type-title"]]
-Top Rated 2013
-[[/div]]
-[[div class="content-type-description"]]
-[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="50" date="2013" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
-|| %%title_linked%% || %%rating%% || %%created_by_linked%% || %%created_at|%e %b %Y%% ||
-[[/module]]
-[[/div]]
-[[/div]]
-
-[[div class="content-panel standalone content-row" id="2014"]]
-[[div class="content-type-title"]]
-Top Rated 2014
-[[/div]]
-[[div class="content-type-description"]]
-[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="50" date="2014" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
-|| %%title_linked%% || %%rating%% || %%created_by_linked%% || %%created_at|%e %b %Y%% ||
-[[/module]]
-[[/div]]
-[[/div]]
-
-[[div class="content-panel standalone content-row" id="2015"]]
-[[div class="content-type-title"]]
-Top Rated 2015
-[[/div]]
-[[div class="content-type-description"]]
-[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="50" date="2015" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
-|| %%title_linked%% || %%rating%% || %%created_by_linked%% || %%created_at|%e %b %Y%% ||
-[[/module]]
-[[/div]]
-[[/div]]
-
-[[div class="content-panel standalone content-row" id="2016"]]
-[[div class="content-type-title"]]
-Top Rated 2016
-[[/div]]
-[[div class="content-type-description"]]
-[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="50" date="2016" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
-|| %%title_linked%% || %%rating%% || %%created_by_linked%% || %%created_at|%e %b %Y%% ||
-[[/module]]
-[[/div]]
-[[/div]]
-
-[[div class="content-panel standalone content-row" id="2017"]]
-[[div class="content-type-title"]]
-Top Rated 2017
-[[/div]]
-[[div class="content-type-description"]]
-[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="50" date="2017" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
-|| %%title_linked%% || %%rating%% || %%created_by_linked%% || %%created_at|%e %b %Y%% ||
-[[/module]]
-[[/div]]
-[[/div]]
-
-[[div class="content-panel standalone content-row" id="2018"]]
-[[div class="content-type-title"]]
-Top Rated 2018
-[[/div]]
-[[div class="content-type-description"]]
-[[module ListPages category="*" rating=">60" order="rating desc" separate="false" limit="50" date="2018" perPage="50" prependLine="||~ Title ||~ Rating ||~ Author ||~ Date Created ||"]]
-|| %%title_linked%% || %%rating%% || %%created_by_linked%% || %%created_at|%e %b %Y%% ||
-[[/module]]
-[[/div]]
-[[/div]]
-
-[[/div]]
