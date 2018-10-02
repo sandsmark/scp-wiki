@@ -293,3 +293,53 @@ Leslie could barely contain herself. She buzzed around in joy as Tyrone stretche
 Check out my competitors tales, too!
 
 [[user Captain Kirby]]: To Be Announced
+
+[[module CSS]]
+#header {background-image: url(http://scp-sandbox-3.wikidot.com/local--files/drchandra-s-sandbox/imageedit_2_2362011689.png);}
+#header h1 a {
+    display: block;
+    margin: 0;
+    padding: 80px 0 25px;
+    line-height: 0px;
+    max-height: 0px;
+    color: transparent;
+    background: transparent;
+    font-family: BauhausLTDemi. 'Nanum Gothic'. Arial. sans-serif;
+    text-decoration: none;
+    text-shadow: none;
+    letter-spacing: 0.9px;
+}
+ 
+#header h1 a::before {
+    content: "SCP Foundation";
+    color: #fff;
+    letter-spacing: -0.02em;
+    text-shadow: 3px 3px 5px #000;
+}
+ 
+#header h2 span {
+    display: block;
+    margin: 0;
+    padding: 19px 0;
+    line-height: 0px;
+    max-height: 0px;
+    font-weight: bold;
+    color: transparent;
+    text-shadow: none;
+}
+ 
+#header h2 span::before {
+    content: 'Subs, Chicken Wings, Panzerotti';
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+}
+
+sup {
+  vertical-align: top;
+  position: relative;
+  top: -0.5em;
+}
+
+.scp-image-block.block-right { margin: 1em 2em 1em 1em; }
+[[/module]]
