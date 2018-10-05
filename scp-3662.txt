@@ -1,5 +1,19 @@
 title:SCP-3662
 parent:bird
+[[module CSS]]
+.enlarge{
+transition: .25s;
+-webkit-filter: sepia(50%);
+}
+
+.enlarge:hover{
+transform: scale(1.6);
+transition: .25s;
+transition-delay: .4s;
+-webkit-filter: sepia(50%);
+}
+[[/module]]
+
 [[>]]
 [[module Rate]]
 [[/>]]
@@ -14,11 +28,16 @@ parent:bird
 //Note: By order of Dr. Frederick Hoygull, the clearance level required to access this file has been lowered from 3/GENERAL clearance to 1/GENERAL clearance, due to its relevance to the ongoing [[[http://www.scp-wiki.net/BIRD|BE-Class "Migration" Scenario]]].//
 [[/=]]
 [[/div]]
-[[include component:image-block
-    name=device.png|
-    caption=A picture of SCP-3662 (circa 1950)|
-    width=240px|
-]]
+
+[[div class="scp-image-block block-right" style="width: 240px;"]]
+[[image device.png class="enlarge" style="width: 240px;" align="right"]]
+[[div class="scp-image-caption" style="width: 240px;"]]
+A picture of SCP-3662 circa 1950
+(hover to enlarge)
+[[/div]]
+[[/div]]
+
+
 **Item #:** SCP-3662
 
 **Object Class:** Safe
