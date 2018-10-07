@@ -746,6 +746,106 @@ more[[span class="blinkbar"]][][[/span]]
 [[/code]]
 [[/collapsible]]
 
+**__Option 6__**
+
+**What it looks like:**
+
+[[div class="tape-wrap"]]
+[[collapsible show="▷PLAY" hide="-"]]
+[[div class="tape-anim"]]
+
+TEXT TEXT TEXT
+
+[[div class="tape-left"]]
+[[/div]]
+[[div class="tape-right"]]
+[[/div]]
+[[/div]]
+
+[[div class="tape-record"]]
+[[span class="record r1"]]//"Hey..."//[[/span]]
+[[span class="record r2"]]//"I'm... I'm coming in."//[[/span]]
+[[span class="record r3"]]//"..."//[[/span]]
+[[span class="record r4"]]//"... Anybody else?"//[[/span]]
+[[/div]]
+[[/collapsible]]
+[[/div]]
+
+
+[[module CSS]]
+/* //// When you want to add new "records", //// */
+/* //// add new "options" like the following format. //// */
+.r1 {animation-delay: 3s;}
+.r2 {animation-delay: 6s;}
+.r3 {animation-delay: 9s;}
+.r4 {animation-delay: 12s;}
+
+
+.tape-record {position: relative;height: 3em;overflow: hidden;white-space: pre;}.record {position: absolute;animation-name: record;animation-duration: 2.5s;opacity: 0;top: 0;left: 50%;transform: translateX(-50%);}.tape-wrap {position: relative;background-color: rgba(244,244,244,1);border: 1px dashed #999;padding: 0 1em;}.tape-anim {position: relative;background-image: url( "http://unofficial-scp-sandbox-jp.wikidot.com/local--files/iroiro-workshop-8/DoxYSJAV4AET63r.png" );background-size: 200px;background-position: center center;background-repeat: no-repeat;min-height: 300px;}.tape-left,.tape-right {display: block;position: absolute;margin: auto;height: 0;width: 70px;padding-bottom: 100%;background-image: url( "http://unofficial-scp-sandbox-jp.wikidot.com/local--files/iroiro-workshop-8/scp_trans.png" );background-size: contain;background-position: center center;background-repeat: no-repeat;}.tape-left {top: -20px;bottom: 0;left: -70px;right: 0;animation: spin1 15s linear infinite;}
+.tape-right {top: 0px;bottom: -32px;left: 0;right: -72px;animation: spin1 20s linear infinite;}.tape-wrap .collapsible-block-unfolded-link .collapsible-block-link {display: none;}
+@keyframes spin1 {0% {transform: rotate(0deg);}100% {transform: rotate(360deg);}}
+@keyframes record {0% {opacity: 0;}25% {opacity: 1;}75% {opacity: 1;}100% {opacity: 0;}}
+[[/module]]
+
+**What to copy:**
+
+[[collapsible]]
+**IMPORTANT:**
+* This part gets placed at the top of the page.
+* When you want to add new "records", add new "options" like the following format.
+ * .r5 {animation-delay: 15s;} _
+.r6 {animation-delay: 18s;}
+[[code]]
+[[module CSS]]
+/* //// When you want to add new "records", //// */
+/* //// add new "options" like the following format. //// */
+.r1 {animation-delay: 3s;}
+.r2 {animation-delay: 6s;}
+.r3 {animation-delay: 9s;}
+.r4 {animation-delay: 12s;}
+
+
+.tape-record {position: relative;height: 3em;overflow: hidden;white-space: pre;}.record {position: absolute;animation-name: record;animation-duration: 2.5s;opacity: 0;top: 0;left: 50%;transform: translateX(-50%);}.tape-wrap {position: relative;background-color: rgba(244,244,244,1);border: 1px dashed #999;padding: 0 1em;}.tape-anim {position: relative;background-image: url( "http://unofficial-scp-sandbox-jp.wikidot.com/local--files/iroiro-workshop-8/DoxYSJAV4AET63r.png" );background-size: 200px;background-position: center center;background-repeat: no-repeat;min-height: 300px;}.tape-left,.tape-right {display: block;position: absolute;margin: auto;height: 0;width: 70px;padding-bottom: 100%;background-image: url( "http://unofficial-scp-sandbox-jp.wikidot.com/local--files/iroiro-workshop-8/scp_trans.png" );background-size: contain;background-position: center center;background-repeat: no-repeat;}.tape-left {top: -20px;bottom: 0;left: -70px;right: 0;animation: spin1 15s linear infinite;}
+.tape-right {top: 0px;bottom: -32px;left: 0;right: -72px;animation: spin1 20s linear infinite;}.tape-wrap .collapsible-block-unfolded-link .collapsible-block-link {display: none;}
+@keyframes spin1 {0% {transform: rotate(0deg);}100% {transform: rotate(360deg);}}
+@keyframes record {0% {opacity: 0;}25% {opacity: 1;}75% {opacity: 1;}100% {opacity: 0;}}
+[[/module]]
+[[/code]]
+
+**IMPORTANT:**
+* This gets placed wherever you want the box to appear.
+* When you want to add new "records", add new "options" like the following format.
+ * @@[[span class="record r5"]]Text[[/span]]@@ _
+@@[[span class="record r6"]]More text[[/span]]@@
+[[code]]
+[[div class="tape-wrap"]]
+[[collapsible show="▷PLAY" hide="-"]]
+[[div class="tape-anim"]]
+
+TEXT TEXT TEXT
+
+[[div class="tape-left"]]
+[[/div]]
+[[div class="tape-right"]]
+[[/div]]
+[[/div]]
+
+[[div class="tape-record"]]
+/* //// When you want to add new "records", //// */
+/* //// add new "options" like the following format. //// */
+[[span class="record r1"]]//"Hey..."//[[/span]]
+[[span class="record r2"]]//"I'm... I'm coming in."//[[/span]]
+[[span class="record r3"]]//"..."//[[/span]]
+[[span class="record r4"]]//"... Anybody else?"//[[/span]]
+
+[[/div]]
+[[/collapsible]]
+[[/div]]
+[[/code]]
+[[/collapsible]]
+----
+
+
 @@ @@
 @@ @@
 [[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
