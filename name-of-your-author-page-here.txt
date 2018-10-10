@@ -1,0 +1,249 @@
+title:A wild Alces_alces is plugging
+[[module CSS]]
+/* Taken from Anderson Robotics theme by Croquembouche! Modified by Aers for Alces_alces */
+
+.yui-navset.yui-navset-top {
+    border-left: 3px solid #295183;
+    border-left: 3px solid #611e22;
+}
+.yui-navset .yui-nav {
+    position: relative;
+    z-index: 0;
+    border: none;
+    padding-left: 0.2em;
+}
+.yui-navset .yui-nav li {
+    padding: 0;
+    margin: 0.2em 0.3em;
+    transition: transform 0.2s ease-in-out;
+}
+.yui-navset .yui-nav li a {
+    background: transparent;
+    color: #5f6368;
+    border: 1px solid rgba(0,0,0,0.12);
+    transition: background 0.1s ease-in-out,
+                color 0.1s ease-in-out,
+                border 0.1s ease-in-out;
+}
+.yui-navset .yui-nav li a:hover {
+    background: rgba(0,0,0,0.04);
+    color: #202124;
+    border: 1px solid rgba(0,0,0,0.12);
+}
+.yui-navset .yui-nav li a em {
+    border: none;
+    padding: 0.5em 0.5em calc(0.5em - 2px) 0.5em;
+}
+.yui-navset .yui-nav .selected {
+    padding: 0;
+    margin: 0.2em 0.3em;
+    transform: scale(1.1);
+}
+
+.yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a:focus, .yui-navset .yui-nav .selected a:hover {
+    padding: 0;
+    border: 1px solid #1e3c62;
+    border: 1px solid #611e22;;
+    background: #295183;
+}
+
+.yui-navset .yui-nav .selected a em {
+    padding: 0.5em 0.5em calc(0.5em - 2px) 0.5em;
+    border: none;
+}
+
+.yui-navset .yui-content {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    position: relative;
+    margin-top: 0.2em;
+    transform-origin: 0 0;
+}
+.yui-navset .yui-content > div {
+    border: 1px solid rgba(0,0,0,0.12);
+    border-left: none;
+    background-color: #f5f5f5;
+    padding: 0.25em 0.5em;
+    display: block;
+    top: 0;
+    overflow: hidden;
+    transform-origin: 0 0;
+}
+#page-content .yui-navset .yui-content > div > * {
+    transform-origin: 0 0;
+}
+#page-content .yui-navset .yui-content > div[style*="none"] {
+    display: block !important;
+    flex: 0;
+    max-height: 0;
+    padding: 0 0.5em;
+    border-width: 0;
+    /* The following transition affects the one that DISAPPEARS */
+    transition: padding 0s linear 0.5s,
+                border-width 0s linear 0.5s,
+                flex 0.5s cubic-bezier(.0,1.27,.0,.89) 0s;
+    animation: tab-disappear 0.5s ease-in-out 0s 1 both;
+}
+#page-content .yui-navset .yui-content > div[style*="block"] {
+    display: block !important;
+    flex: 1;
+    max-height: 9999rem;
+    /* The following transition affects the one that APPEARS */
+    transition: padding 0s linear 0.5s,
+                border-width 0s linear 0.5s,
+                flex 0.5s cubic-bezier(.99,.0,.99,.0) 0.5s;
+    animation: tab-appear 0.5s ease-in-out 0.5s 1 both;
+}
+
+@keyframes tab-disappear {
+    0% { max-height: 9999rem; }
+    1% { max-height: 100vh; }
+    100% { max-height: 0; }
+}
+@keyframes tab-appear {
+    0% { max-height: 0; }
+    99% { max-height: 100vh; }
+    100% { max-height: 9999rem; }
+}
+[[/module]]
+
+> = A wild author jumps out of the grass
+@@ @@
+> = [https://www.youtube.com/watch?v=NrS523dOHU4 ...]
+@@ @@
+> = What do you do?
+[[tabview]]
+[[tab Items]]
+> = [http://www.scp-wiki.net/scp-3538 A Carabiner] 
+> ----
+> [[collapsible show="Info" hide="Close Info"]]
+> It won't stop clicking... could this be a code
+> [[/collapsible]]
+>    
+> [[collapsible show="Use" hide="It fails"]] 
+> You throw the object at the wild Alces but it misses and hits a crow.
+> [[/collapsible]]
+>       
+> 
+@@ @@
+> = [http://www.scp-wiki.net/scp-3604 A Crayfish]
+> ----
+> [[collapsible show="Info" hide="Close Info"]]
+> 
+> A soft buzzing goes off on your phone.
+> 
+> "(1) New message from Craydaddy."
+> 
+> Weird.
+> [[/collapsible]]
+>     
+> [[collapsible show="Use" hide=" huh... at least it didn't pinch you"]] 
+> 
+> You set the crawfish on the ground. It charges toward Alces. She watches it and asks for its signature. The crayfish stops and begins to click its claws in delight before scuttling off. 
+> 
+> "Don't worry, it's grabbing enough so you can have its signature also," The author's voice says with a cheery tone.
+> 
+> [[/collapsible]]
+>             
+> 
+@@ @@
+> = [http://www.scp-wiki.net/scp-4016 A Twine Man]
+> ----
+> [[collapsible show="Info" hide="Close Info"]]
+> It looks up at you before making a fighting stance.
+> [[/collapsible]]
+>     
+> [[collapsible show="Use" hide=":oh no:"]] 
+> You chuck it at the author only to have it hit a butterfly. You stare on as the little twine man gets up. It looks up and races off after a mouse.
+> 
+> "He doesn't really like harming anything that isn't a mouse...even then, that's subject to change." Alces watches the twine man before looking back at you. 
+> [[/collapsible]]
+>      
+> 
+@@ @@ 
+@@ @@
+> = [http://scp-sandbox-3.wikidot.com/alces-alces A Story book]
+> ----
+> [[collapsible show="Info" hide="Close Info"]]
+> It's filled with strange markings.
+> [[/collapsible]]
+>     
+> [[collapsible show="Open" hide="there's just one paper...and a lot of blank pages."]] 
+> 
+> Alces stared at the paper for a time before letting out a sigh. 
+> 
+> "I need to work on prose,"
+> 
+> [http://www.scp-wiki.net/a-letter-to-my-mother a lined sheet of paper.]
+> 
+> [[/collapsible]]
+>      
+> 
+
+[[/tab]]
+[[tab Talk]]
+You scan Alces figure before opening up your mouth.
+
+> 
+> [[collapsible show=""What is that carabiner doing?"" hide="Spoiler"]]
+> 
+> 
+> "Morse code... I assume you're also curious about what it is too. Originally, it was supposed to be a funny article about a carabiner that was arrogant. The original I thought of would've been a climber that turned into a carabiner. Now though, it's a carabiner who's just trying to have people remember his last owner in the best way. Really and honestly, Uncle Nicolini, another wildish author who you can find shitposting around here, is the one who helped me through this entire process."
+> 
+>there was a title spelling on the goddamn thing it was on main for one whole month!(maybe more)
+> Alces stares at you, awaiting the next question.
+> [[/collapsible]]
+
+
+> 
+> [[collapsible show=""What's up with the Crayfish?"" hide="Spoilers"]]
+> 
+> "Once again, a sad article that was meant to be funny. To be honest, I'm somewhat shocked as to how something called "Craydaddy," is on main. I got the idea when I rescued a crayfish. He was in a defensive stance that looked like a stereotypical rapper. I kept laughing and laughing until, I realized, that this would be a great article. Now, here we are talking about it."
+> 
+> Alces pauses and her eyes wander off to a river.
+> [[/collapsible]]
+
+> 
+> [[collapsible show=""Who is the twine man"" hide="Slight Spoilers"]]
+> "Twine man, many things. My first collab, my second thing I wrote, a piece gripping about the mice in my barn... In the end, I think that Zyn, the butterfly you just hit with it, was who helped mold it out. She gave me a critique on forums to which I tore down all of its dialogue and then rebuilt it from the start to make 4016 mute... She liked it and wanted to collab. We got right to work and sure enough, it was ready to post in, what like, two days? I think?"
+> 
+> [[/collapsible]]
+ 
+> [[collapsible show=""The stories what are they?"" hide="No Spoilers"]]
+> Well, story, I plan to add to it later...it was my first tale. Though, I'll be rewriting it at a later date. I'm not too proud of it. But, I needed to post it or else I'd scream.
+> 
+> [[/collapsible]]
+[[/tab]]
+
+
+[[tab Ask to see animal photos]]
+Alces looks up wide-eyed before asking;
+
+
+[[collapsible show=""Cat?"" hide="Shadow"]]
+[[image shadow.JPG]] 
+an evil mastermind at its purrest
+[[/collapsible]] 
+
+[[collapsible show=""Dog?"" hide="Pinto"]]
+[[image pinto.JPG]] 
+zoom
+[[/collapsible]] 
+ 
+
+[[collapsible show=""Horse?"" hide="Winston"]]
+[[image winston.JPG]] 
+he's a good horse
+[[/collapsible]] 
+>"If you want to see more then you can bug me on discord"
+[[/tab]]
+[[tab Runaway]]
+@@ @@
+= **You cannot run while an author is plugging.**
+@@ @@ 
+[[/tab]]
+
+[[/tabview]]
