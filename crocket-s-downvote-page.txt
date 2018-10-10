@@ -48,10 +48,13 @@ USE THE MODULE FOR DOWNVOTING
 ps read SCP-4299 - [[*user Hot-coles]]
 
 [[module CSS]]
+*{
+font-family: papyrus;
+}
+
 .rateup.btn.btn-default{
 display: none;
 }
-
 
 #header h1 a::before {
     content: "sans undertale";
@@ -70,7 +73,6 @@ display: none;
     font-size: 180%;
     text-decoration: none;
     text-shadow: none;
-    font-family: 'comic sans ms';
 }
 
 .gamer:active{
