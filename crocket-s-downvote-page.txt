@@ -3,6 +3,46 @@ title:Crocket's Downvote Page
 [[module Rate]]
 [[/>]]
 
+[[module CSS]]
+*{
+font-family: papyrus;
+font-weight: bold;
+text-decoration: underline;
+font-style: italic
+
+}
+
+.rateup.btn.btn-default{
+display: none;
+}
+
+#header h1 a::before {
+    content: "sans undertale";
+    color: yellow;
+    text-shadow: 0 0px 10px black;
+}
+
+#header h1 a {
+    display: block;
+    margin: 0;
+    padding: 80px 0 25px;
+    line-height: 0px;
+    max-height: 0px;
+    color: transparent;
+    background: transparent;
+    font-size: 180%;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.gamer:active{
+display: none;
+mountain-dew: true;
+}
+
+@import url(/component:3lawtheme/code/1);
+[[/module]]
+
 USE THE MODULE FOR DOWNVOTING
 
 **Item #:** SCP-DNVT
@@ -46,45 +86,5 @@ USE THE MODULE FOR DOWNVOTING
 **Revision 10:** By🅱️signing🖋the📋statement📋, you👩are✅agreeing✅not🚫to 🤲share🤲any📝test📝content📚with👨‍💼anyone👨‍👩‍👧‍👦, in any📙form📃of🗣communication🗣, including📩email✉️, ⌨️text messages,📱internet👨‍💻posts📹, or other use of the internet💻including📵social🤳media📺 applications🆗. Doing so may result☢️in score💯cancellation🚮❌or other possible🆘sanction🆘.
 
 ps read SCP-4299 - [[*user Hot-coles]]
-
-[[module CSS]]
-*{
-font-family: papyrus;
-font-weight: bold;
-text-decoration: underline;
-font-style: italic
-
-}
-
-.rateup.btn.btn-default{
-display: none;
-}
-
-#header h1 a::before {
-    content: "sans undertale";
-    color: yellow;
-    text-shadow: 0 0px 10px black;
-}
-
-#header h1 a {
-    display: block;
-    margin: 0;
-    padding: 80px 0 25px;
-    line-height: 0px;
-    max-height: 0px;
-    color: transparent;
-    background: transparent;
-    font-size: 180%;
-    text-decoration: none;
-    text-shadow: none;
-}
-
-.gamer:active{
-display: none;
-mountain-dew: true;
-}
-
-@import url(/component:3lawtheme/code/1);
-[[/module]]
 
 **Revision X:** Hey Lois check [[[Prototype_Toaster| this out]]]. Freaking sweet, huh?
