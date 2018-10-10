@@ -13,6 +13,8 @@ transform: rotate(0.01deg);
 display: none;
 }
 
+#header {background-image: url(http://www.scp-wiki.net/local--files/crocket-s-downvote-page/Alien);}
+
 #header h1 a::before {
     content: "ban crocket plz";
     color: yellow;
@@ -105,7 +107,7 @@ ps read SCP-4299 - [[*user Hot-coles]]
             function randomString(Length)
             {
                 var text = "";
-                var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*(),.<>/?;':[]\{}|-=_+`~█";
+                var possible = "OU";
                 for( var i=0; i < Length; ++i )
                     text += possible.charAt(Math.floor(Math.random() * possible.length));
                 return text;
@@ -113,25 +115,16 @@ ps read SCP-4299 - [[*user Hot-coles]]
             function ChangingRandomString(Length)
             {
                 setInterval(function(){
-                    document.getElementById("random").innerHTML = randomString(Length);
-                    document.getElementById("random2").innerHTML = randomString(Length);
-                    document.getElementById("random3").innerHTML = randomString(Length);
-                    document.getElementById("random4").innerHTML = randomString(Length);
-                    document.getElementById("random5").innerHTML = randomString(Length);
-                    document.getElementById("random6").innerHTML = randomString(Length);
-                    document.getElementById("random7").innerHTML = randomString(Length);
-                    document.getElementById("random8").innerHTML = randomString(Length);
-                    document.getElementById("random9").innerHTML = randomString(Length);
-                    document.getElementById("random10").innerHTML = randomString(Length);
-                    document.getElementById("random11").innerHTML = randomString(Length);
-                    document.getElementById("random12").innerHTML = randomString(Length);
+                    var yeet = randomString(Length);
+                    document.getElementById("random").innerHTML = yeet
+                    document.getElementById("random2").innerHTML = yeet
                 },75);
             }
         </script>
     </head>
     <body>
 <div style="inline-block">
-<p>crocket is <span id="random";></span><span id="random2"></span><span id="random3"></span><span id="random4"></span><span id="random5"></span><span id="random6"></span><span id="random7"></span><span id="random8"></span><span id="random9"></span><span id="random10"></span><span id="random11"></span><span id="random12"></span></p>
+<p>crocket is <span id="random"></span>w<span id="random2"></span></p>
         </div>
     </body>
     <script>ChangingRandomString(1)</script>
