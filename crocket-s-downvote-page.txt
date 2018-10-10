@@ -5,6 +5,10 @@ title:Crocket's Downvote Page
 
 [[module CSS]]
 
+.rateup.btn.btn-default{
+display: none;
+}
+
 #header h1 a::before {
     content: "downvote or perish";
     color: yellow;
