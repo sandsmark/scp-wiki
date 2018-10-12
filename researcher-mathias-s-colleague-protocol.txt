@@ -65,6 +65,22 @@ Posted at a hospital in ████ ████████, Iowa."[[/footnote
 
 @@@@
 @@@@
+[[module CSS]]
+#page-content .collapsible-block-folded a.collapsible-block-link {
+    animation: blink 0.8s ease-in-out infinite alternate;
+}
+@keyframes blink {
+    0% { color: transparent; }
+    50%, 100% { color: transparent; }
+}
+[[/module]]
+[[collapsible show="OUT OF UNIVERSE" hide="Oh, look what you found."]]
+Hi. If you found this, keep it a secret, okay? I just use this so I can keep track of ratings on all of my pages. I don't want to disrupt the stuff up top with listpages, you know?
+
+[[module ListPages created_by="RockTeethMothEyes" order="created_at" limit="none" separate="no"]]
+* %%title_linked%% (+%%rating%%)
+[[/module]]
+[[/collapsible]]
 
 @@@@
 @@@@
