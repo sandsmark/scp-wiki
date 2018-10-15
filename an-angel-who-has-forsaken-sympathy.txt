@@ -24,3 +24,161 @@ Stars shine down on the fifth night.  A black cloud through which the stars ca
 
 
 [[[http://www.scp-wiki.net/everyone-wears-a-mask|<<Part 1]]]
+
+[[module CSS]]
+
+a:visited {
+color: #BC4123;
+}
+
+#main-content {
+    background-color: #ffffca;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic');
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic');
+h1, #page-title {
+    font-family: 'Playfair Display', serif;
+    color: black;
+    padding: 0 0 0.25em;
+    margin: 0 0 0.6em;
+    font-weight: normal;
+}
+h1 {
+    margin-top: 0.7em;
+    padding: 0;
+    font-weight: bold;
+}
+h2, h3, h4, h6, h7 {
+    margin: 0.5em 0 0.4em;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    color: black;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px #000000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+}
+h5 {
+   margin: 0.5em 0 0.4em;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    color: black;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+#page-title {
+    border-color: black;
+}
+
+.head-box-2{
+    font-family: 'Playfair Display', serif;
+    padding: 10px 15px 10px 15px;
+    width: 89%;
+    position: relative;
+    text-align: left;
+    line-height: 20px;
+    display: inline-block;
+    margin: 0 25px 20px -360px;
+    background-color: #fdf5e8;
+    border-radius: 8px 8px 8px 8px;
+    font-size: 1.5em;
+}
+
+.head-box{
+    font-family: 'Playfair Display', serif;
+    padding: 10px 15px 10px 15px;
+    width: 89%;
+    position: relative;
+    border: 3px double #BC4123;
+    text-align: left;
+    line-height: 20px;
+    display: inline-block;
+    margin: 0 25px 20px -360px;
+    border-radius: 8px 8px 8px 8px;
+    background-color: #fdf5e8;
+    
+}
+
+
+.head{
+    text-align: right;
+    position: relative;
+}
+
+.main-body-div{
+    font-family: 'Droid Serif', serif;
+    font-size: 1.5em;
+    line-height: 20px;
+    width: 89%;
+    display: inline-block;
+    padding: 0 1% 0 1%;
+    vertical-align: top;
+    margin-bottom: 25px;
+    transition: all .7s;
+    border-left: 3px double #BC4123;
+    border-top: 3px double #BC4123;
+}
+
+blockquote {
+    background-color:  #fdf5e8;
+    color: black;
+    font-family: 'Droid Serif', serif;
+    list-style: none;
+}
+.main-body-div-r{
+    font-family: 'Droid Serif', serif;
+    font-size: 1.5em;
+    line-height: 20px;
+    width: 89%;
+    display: inline-block;
+    padding: 0 1% 0 1%;
+    vertical-align: top;
+    margin-bottom: 25px;
+    transition: all .7s;
+    border-right: 4px double #BC4123;
+    border-bottom:  3px double #BC4123;
+    
+}
+}
+
+#header h1 a {
+    font-family: "comic sans mf", times, serif;
+    content: "In the King's Court";
+}
+ 
+#header h1 a::before {
+    font-family: "comic sans mf", times, serif;
+    content: "In the King's Court";
+}
+ 
+#header h1 a span{
+    display: block;
+    content: "";
+    visibility: hidden;
+}
+
+#header h2 span {
+    display: block;
+    margin: 0;
+    padding: 19px 0;
+    line-height: 0px;
+    max-height: 0px;
+    font-weight: bold;
+    color: transparent;
+    text-shadow: none;
+}
+
+#header h2 span::before {
+    content: "Everyone wears a mask.";
+    display: block;
+    margin: 0;
+    padding: 0px 0;
+    line-height: 0px;
+    max-height: 0px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+}
+[[/module]]
