@@ -13,23 +13,23 @@ This tag-cloud shows every used tag, including hidden tags.
 [[module TagCloud limit="1000" target="system:page-tags" showHidden="yes"]]
 [[/tab]]
 
-[[tab Changes in categories]]
-Recently changed pages in the categories component, forum, nav, random, search and system.
+[[tab Changes in special categories]]
+Recently changed pages all categories but "_default", "fragment" and "log-of-unexplained-locations".
 
 [[module ListPages category="* -_default -fragment" separate="no" order="updated_at desc" pagetype="*" perPage="40"]]
 || %%title_linked%% || %%updated_at%% || %%updated_by_linked%%||
 [[/module]]
 [[/tab]]
 
-[[tab Changes in pages tagged "admin" or "guide"]]
-Recently changed pages with the tags "admin", "guide", "theme" and "template".
+[[tab Changes in special pages]]
+Recently changed pages with the tags "admin", "guide", "theme" and "template" in the categories "_default", "fragment" and "log-of-unexplained-locations".
 
-[[module ListPages tags="admin guide theme template" separate="no" order="updated_at desc" pagetype="*" category="*" perPage="40"]]
+[[module ListPages tags="admin guide theme template" separate="no" order="updated_at desc" pagetype="*" category="_default fragment log-of-unexplained-locations" perPage="40"]]
 || %%title_linked%% || %%updated_at%% || %%updated_by_linked%%||
 [[/module]]
 [[/tab]]
 
-[[tab Categories]]
+[[tab List of Categories]]
 [[module Categories includehidden="true"]]
 [[/tab]]
 
@@ -44,8 +44,6 @@ Recently changed pages with the tags "admin", "guide", "theme" and "template".
 [[/tab]]
 
 [[tab International articles]]
-Recently changed pages in the categories component, forum, nav, random, search and system.
-
 [[module ListPages category="*" separate="no" order="title" pagetype="*" tags="international" perPage="40" prependLine="||~ Article ||~ Rating ||~ Votes ||~ Comments ||~ Last editor||"]]
 || %%title_linked%% || %%rating%% || %%rating_votes%% || %%comments%% || %%updated_by_linked%%||
 [[/module]]
