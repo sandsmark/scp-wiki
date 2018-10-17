@@ -1,15 +1,9 @@
 title:Dr. Grom's Ambassador-Workbench
-This is the workbench of [[*user Dr. Grom]], the Master Admin of the [http://scp-wiki-de.wikidot.com/ German branch].
-
-More information about me as author see my [http://scp-wiki-de.wikidot.com/dr-groms-personaldaten german authors page].
-
-If you have questions about the German branch or myself please ask via PM or on our forums.
-
-I'm using this page to keep track of things. Probably not interesting for normal users.
+This is the workbench of [[*user Dr. Grom]], Admin of the [http://scp-wiki-de.wikidot.com/ German branch] and [http://scp-int.wikidot.com/ the International Translation Archive].
 
 [[tabview]]
 [[tab Notes]]
-This automated lists are meant to keep track of pages and categories that might be interesting from a technical point of view but usually not for normal users.
+These automated lists are meant to keep track of pages and categories that might be interesting from a technical point of view but usually not for normal users.
 
 Some tabs may be pretty slow and take some time to load.
 [[/tab]]
@@ -28,9 +22,9 @@ Recently changed pages in the categories component, forum, nav, random, search a
 [[/tab]]
 
 [[tab Changes in pages tagged "admin" or "guide"]]
-Recently changed pages with the tags "admin" or "guide". I'm putting these here as relief to my watch list..
+Recently changed pages with the tags "admin", "guide", "theme" and "template".
 
-[[module ListPages tags="admin guide" separate="no" order="updated_at desc" pagetype="*" perPage="40"]]
+[[module ListPages tags="admin guide theme template" separate="no" order="updated_at desc" pagetype="*" category="*" perPage="40"]]
 || %%title_linked%% || %%updated_at%% || %%updated_by_linked%%||
 [[/module]]
 [[/tab]]
@@ -47,6 +41,14 @@ Recently changed pages with the tags "admin" or "guide". I'm putting these here 
 
 [[tab Alphabetical Members list]]
 [[module Members order="name"]]
+[[/tab]]
+
+[[tab International articles]]
+Recently changed pages in the categories component, forum, nav, random, search and system.
+
+[[module ListPages category="*" separate="no" order="title" pagetype="*" tags="international" perPage="40"]]
+|| %%title_linked%% || %%rating%% || %%updated_at%% || %%updated_by_linked%%||
+[[/module]]
 [[/tab]]
 
 [[/tabview]]
