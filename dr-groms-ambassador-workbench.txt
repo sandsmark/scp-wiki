@@ -46,8 +46,8 @@ Recently changed pages with the tags "admin", "guide", "theme" and "template".
 [[tab International articles]]
 Recently changed pages in the categories component, forum, nav, random, search and system.
 
-[[module ListPages category="*" separate="no" order="title" pagetype="*" tags="international" perPage="40"]]
-|| %%title_linked%% || %%rating%% || %%updated_at%% || %%updated_by_linked%%||
+[[module ListPages category="*" separate="no" order="title" pagetype="*" tags="international" perPage="40" prependLine="||~ Article ||~ Rating ||~ Votes ||~ Comments ||~ Last editor||"]]
+|| %%title_linked%% || %%rating%% || %%rating_votes%% || %%comments%% || %%updated_by_linked%%||
 [[/module]]
 [[/tab]]
 
