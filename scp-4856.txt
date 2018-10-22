@@ -5,6 +5,24 @@ title:SCP-4856
     background-image: url(http://www.scp-wiki.net/local--files/scp-3176/temporal_dept_logo.png);
 }
 
+#header h2 span {
+    display: block;
+    margin: 0;
+    padding: 19px 0;
+    line-height: 0px;
+    max-height: 0px;
+    font-weight: bold;
+    color: transparent;
+    text-shadow: none;
+}
+
+#header h2 span::before {
+    content: 'Department of Temporal Anomalies ';
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+}
+
 #page-content .wiki-content-table tr th {
     border: none;
     background-color: transparent;
