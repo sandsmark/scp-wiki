@@ -109,6 +109,27 @@ More on the way. Eventually.
 [[/=]]
 
 
+[[div class="content-type-description"]]
+
+[[module ListPages category="deleted" order="created_atDsc" limit="100" tags="-" perPage="100" prependLine="[[include component:listpages-table-alt]]" appendLine="[[/table]]" separate="false"]]
+[[row]]
+[[cell style="vertical-align: top;"]]
+%%title_linked%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%rating%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%comments%%
+[[/cell]]
+[[cell style="vertical-align: top; text-align: center;"]]
+%%created_at%%
+[[/cell]]
+[[/row]]
+[[/module]]
+
+[[/div]]
+
 [[module ListPages separate="no" category="this-is-the-second-secret-page" perPage="150" order="created_at desc desc"]]
 
 ||@@* [[[@@%%name%%@@|@@ %%title%%@@]]]@@ ("%%actual-title%%") -  "//blurb//" Written by @@[[*user @@%%created_by%%@@]]@@.||
