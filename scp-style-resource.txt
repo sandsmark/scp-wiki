@@ -844,7 +844,9 @@ more[[span class="blinkbar"]][][[/span]]
 
 [[div class="type-wrap-wrapper"]]
 [[div class="type-wrapper"]]
-[[div id="u-start" class="typearea"]]
+[[div id="u-start"]]
+[[/div]]
+[[div class="typearea"]]
 [[div class="textchange"]]
 [[module ListUsers users="."]]
 [[div class="sitemember"]]
@@ -862,7 +864,7 @@ I can't verify your wikidot ID.[[span class="blink"]]|[[/span]]
 [[/div]]
 [[/div]]
 [[module CSS]]
-.textchange div.sitemember:nth-child(2) {display:none;}.type-wrap-wrapper {position: relative;text-align: left;}.type-wrapper {background: #555;}.typearea {color: lime; font-family: "Courier";font-size: 1.2em;margin: 10px 0 0 10px;white-space: nowrap;overflow: hidden;width: 0;}.typearea:target {width: 100%;animation: type 4s steps(60, end); }.typearea a{color: lime;text-decoration: none;}.blink {animation: blink 1s infinite;}@keyframes type{ from { width: 0; } } @keyframes blink{to{opacity: .0;}}.buttonwrapper {text-align: center;}.likebutton {padding: 0.1em 0.5em;text-decoration: none;font-size: 1.3em;background-color: #F4F4F4;border: 1px solid #AAA;color: #000;}.likebutton:hover {background-color: #DDD;color: #000;border: 1px solid #0098b3;}
+#u-start, .textchange div.sitemember:nth-child(2) {display:none;}.type-wrap-wrapper {position: relative;text-align: left;}.type-wrapper {background: #555;}.typearea {color: lime; font-family: "Courier";font-size: 1.2em;margin: 10px 0 0 10px;white-space: nowrap;overflow: hidden;width: 0;}#u-start:target ~ .typearea {width: 100%;animation: type 4s steps(60, end); }.typearea a{color: lime;text-decoration: none;}.blink {animation: blink 1s infinite;}@keyframes type{ from { width: 0; } } @keyframes blink{to{opacity: .0;}}.buttonwrapper {text-align: center;}.likebutton {padding: 0.1em 0.5em;text-decoration: none;font-size: 1.3em;background-color: #F4F4F4;border: 1px solid #AAA;color: #000;}.likebutton:hover {background-color: #DDD;color: #000;border: 1px solid #0098b3;}
 [[/module]]
 
 **What to copy:**
@@ -872,7 +874,7 @@ I can't verify your wikidot ID.[[span class="blink"]]|[[/span]]
 
 [[code]]
 [[module CSS]]
-.textchange div.sitemember:nth-child(2) {display:none;}.type-wrap-wrapper {position: relative;text-align: left;}.type-wrapper {background: #555;}.typearea {color: lime; font-family: "Courier";font-size: 1.2em;margin: 10px 0 0 10px;white-space: nowrap;overflow: hidden;width: 0;}.typearea:target {width: 100%;animation: type 4s steps(60, end); }.typearea a{color: lime;text-decoration: none;}.blink {animation: blink 1s infinite;}@keyframes type{ from { width: 0; } } @keyframes blink{to{opacity: .0;}}.buttonwrapper {text-align: center;}.likebutton {padding: 0.1em 0.5em;text-decoration: none;font-size: 1.3em;background-color: #F4F4F4;border: 1px solid #AAA;color: #000;}.likebutton:hover {background-color: #DDD;color: #000;border: 1px solid #0098b3;}
+#u-start, .textchange div.sitemember:nth-child(2) {display:none;}.type-wrap-wrapper {position: relative;text-align: left;}.type-wrapper {background: #555;}.typearea {color: lime; font-family: "Courier";font-size: 1.2em;margin: 10px 0 0 10px;white-space: nowrap;overflow: hidden;width: 0;}#u-start:target ~ .typearea {width: 100%;animation: type 4s steps(60, end); }.typearea a{color: lime;text-decoration: none;}.blink {animation: blink 1s infinite;}@keyframes type{ from { width: 0; } } @keyframes blink{to{opacity: .0;}}.buttonwrapper {text-align: center;}.likebutton {padding: 0.1em 0.5em;text-decoration: none;font-size: 1.3em;background-color: #F4F4F4;border: 1px solid #AAA;color: #000;}.likebutton:hover {background-color: #DDD;color: #000;border: 1px solid #0098b3;}
 [[/module]]
 [[/code]]
 
@@ -881,7 +883,9 @@ I can't verify your wikidot ID.[[span class="blink"]]|[[/span]]
 [[code]]
 [[div class="type-wrap-wrapper"]]
 [[div class="type-wrapper"]]
-[[div id="u-start" class="typearea"]]
+[[div id="u-start"]]
+[[/div]]
+[[div class="typearea"]]
 [[div class="textchange"]]
 [[module ListUsers users="."]]
 [[div class="sitemember"]]
