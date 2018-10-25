@@ -102,7 +102,7 @@ div#container-wrap::before {
     background-size: 1px 162px;
 }
 
-#header, .printuser a, #side-bar, #page-title {
+#header, .printuser a, #side-bar, #page-title, .page-rate-widget-box {
     filter: grayscale(100%);
 }
 
@@ -118,11 +118,12 @@ div#container-wrap::before {
 
 #footer {
     font-size: x-small;
-    border-top: 1px solid #3e8dab;
-    background: #5bcefa;
+    background: #ffafc7;
     color: black;
+    border-top: 1px solid #e51f47;
     box-shadow: 0px -3px 4px 0px #0000004a;
 }
+
 div#page-options-container a, div.page-tags a {
     color: #e51f47;
 }
@@ -132,16 +133,16 @@ div#page-options-container a:visited, div.page-tags a:visited {
 }
 
 #footer a {
-    color: #056c94;
+    color: #e51f47;
 }
 
 #license-area {
-    font-size: x-small;
-    background: #ffafc7;
+font-size: x-small;
+    background: #5bcefa;
     color: black;
 }
 
 #license-area a {
-    color: #e51f47;
+    color: #056c94;
 }
 [[/module]]
