@@ -93,26 +93,14 @@ Tim recognized the name as that of a forest spirit from a fairy tale which he ha
 
 Neither of them knew what the future would hold, but that didn't matter yet. For now, Tim Wilson and his daughter, Fae, stood side by side overlooking the beautiful Oregon wilderness. They were happy.
 [[module css]]
-/*div#container-wrap::before {
+div#container-wrap::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 162px;
-    background: linear-gradient(#000, #333) repeat-x;
-    background-size: 1px 162px;
+    background: url("http://www.scp-wiki.net/local--files/component:theme/body_bg.png") repeat-x;
+    filter: grayscale(100%);
 }
-
-#search-top-box-input {
-    background: black;
-    color: white;
-}
-
-#search-top-box-input:hover, #search-top-box-input:focus {
-    background: #333;
-    color: white;
-}
-
-*/
 
 #header, .printuser a, #side-bar, #page-title, .page-rate-widget-box {
     filter: grayscale(100%);
