@@ -133,4 +133,16 @@ div#page-options-container a:visited, div.page-tags a:visited {
 #license-area a {
     color: #056c94;
 }
+
+/* you are my sunshine, my only sunshine */
+
+div#container-wrap::before, #header, .printuser a, #side-bar, #page-title, .page-rate-widget-box {   
+    animation: ungrayscale linear 10s forwards;
+    animation-delay: 50s;
+}
+
+@keyframes ungrayscale {
+    0% { filter: grayscale(100%); }
+    100% { filter: grayscale(0%); }
+}
 [[/module]]
