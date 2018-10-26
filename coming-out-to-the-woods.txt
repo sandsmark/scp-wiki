@@ -166,4 +166,71 @@ div#container-wrap::before, #header, .printuser a, #side-bar, #page-title, .page
                 filter: grayscale(0%);
     }
 }
+#header h1::before {
+    content: "";
+    background: url('https://vgy.me/W0f3wX.png') no-repeat;
+    display: block;
+
+    pointer-events: none;
+
+    height: 100px;
+    width: 100px;
+
+    -webkit-background-size: contain;
+    background-size: contain;
+
+    position: absolute;
+    top: 38px;
+    left: 10px;
+
+    opacity: 0;
+
+    -webkit-animation: reveal linear 10s forwards;
+            animation: reveal linear 10s forwards; 
+    -webkit-animation-delay: 50s; 
+            animation-delay: 50s;
+}
+
+@-webkit-keyframes reveal {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes reveal {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@media (max-width: 979px) and (min-width: 768px) {
+    #header h1::before {
+        width: 90px;
+        top: 48px;
+        left: 12px;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 581px) {
+    #header h1::before {
+        width: 78px;
+        top: 48px;
+        left: 12px;
+    }
+}
+
+@media (max-width: 580px) and (min-width: 480px) {
+    #header h1::before {
+        width: 67px;
+        top: 56px;
+        left: 5px;
+    }
+}
+
+@media (max-width: 479px) {
+    #header h1::before {
+        width: 55px;
+        top: 69px;
+        left: 0px;
+    }
+}
+
 [[/module]]
