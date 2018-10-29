@@ -1,29 +1,234 @@
 title:Rogetbox
-+++ SCPs Up For Review (Older than 6 months, Under +10)
+= **Newly Created Pages**
+
+[[collapsible show="Rough mockup, not smart enough to figure out how to make it show the date posted and comments" hide="that's intended to be there if someone smarter than me can help"]]
+
+[!-- SCP Block --]
+
+[[div class="feature-block"]]
+
+[[div class="content-panel left-column"]]
+[[div class="panel-heading"]]
+Newly Posted SCP Articles
+[[/div]]
+[[div class="panel-body"]]
+
+[[module ListPages rating=">=-15" tags="scp" order="created_at desc" separate="false" date="2018.10" perPage="30"]]
+%%title_linked%% (+%%rating%%)
+[[/module]]
+
+[[/div]]
+[[div class="panel-footer"]]
+  [!-- Placeholder --]
+[[/div]]
+[[/div]]
+[[/div]]
+
+[!-- Tale Block --]
+
+[[div class="content-panel right-column"]]
+[[div class="panel-heading"]]
+Newly Created Tales
+[[/div]]
+[[div class="panel-body"]]
+
+[[module ListPages rating=">=-15" tags="tale" order="created_at desc" separate="false" date="2018.10" perPage="30"]]
+%%title_linked%% (+%%rating%%)
+[[/module]]
+[[/div]]
+[[div class="panel-footer"]]
+  [!-- Placeholder --]
+[[/div]]
+[[/div]]
+
+~~~~
+
+[!-- GOI Block --]
+
+[[div class="feature-block"]]
+
+[[div class="content-panel left-column"]]
+[[div class="panel-heading"]]
+Newly Created GoI Formats
+[[/div]]
+[[div class="panel-body"]]
+
+[[module ListPages rating=">=-15" tags="goi-format" order="created_at desc" separate="false" date="2018.10" perPage="30"]]
+%%title_linked%% (+%%rating%%)
+[[/module]]
+
+[[/div]]
+[[div class="panel-footer"]]
+  [!-- Placeholder --]
+[[/div]]
+[[/div]]
+[[/div]]
+
+[!-- GOI Block --]
+
+[[div class="content-panel right-column"]]
+[[div class="panel-heading"]]
+Other New Pages
+[[/div]]
+[[div class="panel-body"]]
+
+[[module ListPages rating=">=-15" tags="-scp,-tale,-goi-format" order="created_at desc" separate="false" date="2018.10" perPage="30"]]
+%%title_linked%% (+%%rating%%)
+[[/module]]
+
+[[/div]]
+[[div class="panel-footer"]]
+  [!-- Placeholder --]
+[[/div]]
+[[/div]]
+
+~~~~
+
+[[/collapsible]]
+----
+
+= **Pages By Rating**
+
+[[collapsible show="I feel like lowest rated is better on a separate page" hide="Maybe we should include scp names in page titles but that's really not up for debate rn let's open one can of worms at a time"]]
+
+
+[[toc]]
+
++ TOP RATED PAGES THIS MONTH
+
+= **October 2018**
+
+[!-- SCP Block --]
+
+[[div class="feature-block"]]
+
+[[div class="content-panel left-column"]]
+[[div class="panel-heading"]]
+Top Rated SCPs This Month
+[[/div]]
+[[div class="panel-body"]]
+
+[[module ListPages rating=">10" tags="scp" order="rating desc" separate="false" date="2018.10"]]
+%%title_linked%% (+%%rating%%)
+[[/module]]
+
+[[/div]]
+[[div class="panel-footer"]]
+  [!-- Placeholder --]
+[[/div]]
+[[/div]]
+[[/div]]
+
+[!-- Tale Block --]
+
+[[div class="content-panel right-column"]]
+[[div class="panel-heading"]]
+Top Rated Tales This Month
+[[/div]]
+[[div class="panel-body"]]
+
+[[module ListPages rating=">10" tags="tale" order="rating desc" separate="false" date="2018.10"]]
+%%title_linked%% (+%%rating%%)
+[[/module]]
+
+[[/div]]
+[[div class="panel-footer"]]
+  [!-- Placeholder --]
+[[/div]]
+[[/div]]
+
+~~~~
+
+[!-- GOI Block --]
+
+[[div class="feature-block"]]
+
+[[div class="content-panel left-column"]]
+[[div class="panel-heading"]]
+Top Rated GOI-Formats This Month
+[[/div]]
+[[div class="panel-body"]]
+
+[[module ListPages rating=">10" tags="goi-format" order="rating desc" separate="false" date="2018.10"]]
+%%title_linked%% (+%%rating%%)
+[[/module]]
+
+[[/div]]
+[[div class="panel-footer"]]
+  [!-- Placeholder --]
+[[/div]]
+[[/div]]
+[[/div]]
+
+[!-- GOI Block --]
+
+[[div class="content-panel right-column"]]
+[[div class="panel-heading"]]
+Other Top Rated Pages This Month
+[[/div]]
+[[div class="panel-body"]]
+
+[[module ListPages rating=">10" tags="-scp,-tale,-goi-format" order="rating desc" separate="false" date="2018.10"]]
+%%title_linked%% (+%%rating%%)
+[[/module]]
+
+[[/div]]
+[[div class="panel-footer"]]
+  [!-- Placeholder --]
+[[/div]]
+[[/div]]
+
+----
+
++ Top Rated Pages
+
+[[module ListPages rating=">75" order="rating desc" separate="false" limit="600" perPage="100"]]
+%%title_linked%% (rating: %%rating%%, comments: %%comments%%)
+[[/module]]
+
+
++ SCPs Up For Review (Older than 6 months, Under +10)
 [[module ListPages separate="no" tags="scp, -archived, -in_rewrite" created_at="older than 180 days" order="random" rating="<=10"]] 
 * %%title_linked%% [+%%rating%%]
 [[/module]]
 
-+++ Young and Under 30
++ Young and Under 30
 
 [[module ListPages separate="no" tags="scp, -archived, -in_rewrite" created_at="younger than 180 days" order="random" rating="<=30"]] 
 * %%title_linked%% [+%%rating%%]
 [[/module]]
 
-+++ Old and Under 30
++ Old and Under 30
 
 [[module ListPages separate="no" tags="scp, -archived, -in_rewrite" created_at="older than 180 days" order="random" rating="<=30"]] 
 * %%title_linked%% [+%%rating%%]
 [[/module]]
 
-+++ Tales
-
++ Hey Maybe Check Out These Tales
+ 
 
 [[module ListPages separate="no" tags="tale, -archived, -in_rewrite" created_at="older than 180 days" order="rating" rating="<=30"]] 
 * %%title_linked%% [+%%rating%%]
 [[/module]]
 
++ Archive
+
+(Maybe links to the old standalone pages?)
+[[[Top Rated Pages By Month 2018]]]
+[[[Top Rated Pages By Month 2017]]]
+[[[Top Rated Pages By Month 2016]]]
+[[[Top Rated Pages By Month 2015]]]
+[[[Top Rated Pages By Month 2014]]]
+[[[Top Rated Pages By Month 2013]]]
+[[[Top Rated Pages By Month 2012]]]
+[[[Top Rated Pages By Month 2011]]]
+[[[Top Rated Pages By Month 2010]]]
+[[[Top Rated Pages By Month 2009]]]
+[[[Top Rated Pages By Month 2008]]]
+
 ~~~~
+
+[[/collapsible]]
 ----
 
 [[collapsible show="► Author Page Rankings" hide="▼ Ranked By Rating"]]
