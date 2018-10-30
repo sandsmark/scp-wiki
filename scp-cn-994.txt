@@ -1,0 +1,143 @@
+title:SCP-CN-994
+[[>]]
+[[module rate]]
+[[/>]]
+[[html]]
+<html>
+
+<style type="text/css">
+    /* CSS duplicated from Wikidot proper -_- */
+    body {
+    	font-family: verdana, arial, helvetica, sans-serif;
+    	font-size: 12.8px; /* 16px * 0.8 */
+    	color: #333;
+    	line-height: 141%;
+    }
+
+    .classified-info {
+    	display: none;
+    }
+
+    blockquote {
+    	border: 1px dashed #999;
+    	padding: 0 12.8px;
+    	background-color: #f4f4f4;
+    }
+
+    a {
+    	color: #b01;
+    	cursor: pointer;
+    	text-decoration: none;
+    }
+
+    a:hover {
+    	text-decoration: underline;
+    }
+
+    .collapsed {
+    	display: none;
+    }
+
+    h4 {
+    	font-size: 130%;
+    	font-weight: bold;
+    	margin-bottom: 0;
+    }
+</style>
+
+  <body>
+    <div id="div1">
+
+    <blockquote>
+    <p>SCP Foundation Information Inquiry Terminal v1.6.1. Please Login</p>
+    </blockquote>
+    <p>login usn=ucnsld122 pwd=***************</p>
+    <blockquote>
+    <p>Welcome, Level 3 Researcher</p>
+    </blockquote>
+    <p>read SCP-CN-994</p>
+    <blockquote>
+    <p>Found 1 file with the name SCP-CN-994 and 0 related reports</p>
+    </blockquote>
+    <button type="button" onclick="go()"> Open SCP-CN-994 </button>
+
+    <div id="innerdiv">
+      <strong>Item #:</strong> SCP-CN-994<br><br>
+
+      <strong>Object class:</strong> Euclid<br><br>
+
+      <strong>Special Containment Procedures:</strong> No effective ways to prevent SCP-CN-994 incidents have been found, since no pattern has been determined among these incidents. For the time being, the containment procedures mainly focus on minimizing the effects caused by events. The newly-affected individuals should be psychologically evaluated on a weekly basis for suicidal ideation, and amnestics can be applied if necessary to reduce the effects of the incident. Mobile Task Force-GengWu-23 ("Out of Sight") has been put on standby to extract personnel affected by SCP-CN-994. Further research is ongoing regarding information on SCP-CN-994, such as its origin and frequency of occurrence. The staff of Site-CN-34 should avoid staying alone in a confined space if at all possible.<br><br>
+
+      <strong>Description:</strong> SCP-CN-994 is an abnormal phenomenon that occurs within Site-CN-34. During the occurrence of an SCP-CN-994 incident, the affected individual will be unable to open any doors or windows leading out of the confined space in which they are currently inhabiting (such as an office or a bathroom with closed doors). At the same time, a large number of eyeballs, designated as SCP-CN-994-1, appear on the walls, floors, and other partitions of the room. No successful sampling of SCP-CN-994-1 has been reported. In rare cases, the affected person reports that massive quantities of meaningless characters appear on any electronic device screen they are using, and a low, thudding noise can be heard from all directions around the room. When the space under SCP-CN-994's affects is forced open from the exterior, the SCP-CN-994 incident will end, and SCP-CN-994-1 instances disappear together with other anomalous effects inside this space.<br><br>
+
+      In all cases so far, the affected individuals have attempted to commit suicide by various methods. This occurs at some time between four hours to two weeks after the incident. The use of amnestics can reduce this effect, but the individuals will regain relevant memories when they next stay alone in a confined space. This usually leads to a stronger suicidal tendency than before.</div>
+
+     </div>
+
+    <script type="text/javascript">
+      var time =10000
+      var ICU = ["I"," ","s","e","e"," ","y","o","u"]//Annotation: You may edit the number of characters here, but make sure each "" contains one of the characters, including space
+      var as ="div1"
+      var counter=0;
+      var flag=0;
+      var content1=document.getElementById("div1").innerHTML
+      
+      document.getElementById("innerdiv").style.display="none"
+      
+      function Random(n)
+      {
+        return Math.floor(Math.random()*n)
+      }
+
+      function sleep(numberMillis) 
+      { 
+        var now = new Date(); 
+        var exitTime = now.getTime() + numberMillis; 
+        while (true) { 
+          now = new Date(); 
+          if (now.getTime() > exitTime) 
+            return; 
+        } 
+      }
+      
+      function Change(str)
+      {
+        try
+        {
+          var content=str.split("")
+          var cache = Random(content.length)
+
+          for(i=0;i<9;i++){content[cache+i]=ICU[i]}//Annotation: If you edited the variable ICU, please remember to replace the "9" here by the number of characters in ICU.
+          if(time>=100) time=time-1000
+          else counter++
+          if (counter>50000) {throw new Error("stop here");}
+          document.getElementById(as).innerHTML = content.join("")
+          clearInterval(s)
+          var s=setInterval("content1=Change(content1)",time)
+          return content.join("")
+        }
+
+        catch(err)
+        {
+          if(flag==0)
+          {
+            setTimeout("var a=1",10000)
+            document.write("<div>  Site-CN-34 Monitoring System finds that you are likely suffering the effect of SCP-CN-994. Please remain calm and stay still at your position. Mobile Task Force - GengWu - 23 (“Out of Sight”) <strong>has already seen you</strong> </div>") //Annotation: This is the notice that will be displayed to the readers. Please make sure there is no " in the sentence!
+            flag=flag+1
+            sleep(5000)
+            document.write("<div style='text-align: center;'><img src='http://scp-wiki-cn.wikidot.com/local--files/scp-cn-994/I%20See%20You.png' width='75%' style='margin: 0 auto;' /></div>")//Annotation: If a scroll bar appears near the image, you may change "75%" to a slightly smaller number.
+          }
+        }
+      }
+
+      function go()
+      {
+      	document.getElementById("innerdiv").style.display="block"
+      	var s=setInterval("content1=Change(content1)",time)
+      }
+
+
+    </script>
+  </body>
+</html>
+[[/html]]
