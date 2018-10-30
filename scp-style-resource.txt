@@ -1452,6 +1452,215 @@ text
 [[/collapsible]]
 [[/code]]
 [[/collapsible]]
+
+**__Option 2__**
+
+**What it looks like:**
+[[html]]
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Verdana;}
+* {box-sizing: border-box;}
+ 
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+ 
+}
+ 
+.input-field:focus{
+border-style: solid;
+transition: 0.5;
+border-color: maroon;
+border-width: 2px;
+ 
+}
+ 
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    transition: 0.5s;
+ 
+}
+ 
+.btn:focus {
+  outline: 0;
+}
+ 
+.btn {
+  background-color: Maroon;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+  transition: 0.09s;
+  border-radius: 3px;
+}
+ 
+.btn:hover {
+  opacity: 1;
+  transition: 0.8s;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.7);
+}
+ 
+.btn:active {
+  transition: 0.09s;
+  transform: translateY(1px);
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+}
+ 
+.btn2 {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+ 
+}
+ 
+.btn2:hover {
+}
+ 
+p{
+font-family: Helvetica;
+margin-bottom: 5%;
+}
+</style>
+</head>
+<body>
+ 
+<form autocomplete="off" style="max-width:450px;text-align:center;margin: auto;">
+<p style="font-size:55px; font-weight: bold;">SCiPNET LOGIN</p>
+  <div class="input-container">
+    <input class="input-field" type="text" placeholder="Username" name="usrnm">
+  </div>
+ 
+  <div class="input-container">
+    <input onkeyup="if(this.value.length > 0) document.getElementById('start_button').disabled = false; else document.getElementById('start_button').disabled = true;" class="input-field" type="password" placeholder="Password">
+  </div>
+ 
+   <button id="start_button" class="btn btn-success" onclick="window.open('REPLACE THIS TEXT WITH A URL TO WHERE YOU WANT THE LOGIN BUTTON TO TAKE YOU','_parent')" disabled> Login</button>
+ 
+<br></br>
+   <button style= "font-weight: bold;" class="btn2 btn-success"> Forgot password?</button>
+ 
+</form>
+</body>
+</html>
+[[/html]]
+
+**What to copy:**
+[[collapsible]]
+[[code type="html"]]
+[[html]]
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Verdana;}
+* {box-sizing: border-box;}
+
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+
+}
+
+.input-field:focus{
+border-style: solid;
+transition: 0.5;
+border-color: maroon;
+border-width: 2px;
+
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    transition: 0.5s;
+
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn {
+  background-color: Maroon;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+  transition: 0.09s;
+  border-radius: 3px;
+  transition 0.8s;
+}
+
+.btn:hover {
+  opacity: 1;
+  transition: 0.8s;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.7);
+}
+
+.btn:active {
+  transition: 0.09s;
+  transform: translateY(1px);
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+}
+
+.btn2 {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+.btn2:hover {
+}
+
+p{
+font-family: Helvetica;
+margin-bottom: 5%;
+}
+</style>
+</head>
+<body>
+
+<form autocomplete="off" style="max-width:450px;text-align:center;margin: auto;">
+<p style="font-size:55px; font-weight: bold;">SCiPNET LOGIN</p>
+  <div class="input-container">
+    <input class="input-field" type="text" placeholder="Username" name="usrnm">
+  </div>
+  
+  <div class="input-container">
+    <input onkeyup="if(this.value.length > 0) document.getElementById('start_button').disabled = false; else document.getElementById('start_button').disabled = true;" class="input-field" type="password" placeholder="Password">
+  </div>
+
+   <button id="start_button" class="btn btn-success" onclick="window.open('REPLACE THIS TEXT WITH A URL TO WHERE YOU WANT THE LOGIN BUTTON TO TAKE YOU','_parent')" disabled> Login</button>
+
+<br></br>
+   <button style= "font-weight: bold;" class="btn2 btn-success"> Forgot password?</button>
+
+
+</form>
+</body>
+</html>
+[[/html]]
+[[/code]]
+
+**IMPORTANT:** This login format is made for articles that use offsets. Change the placeholder text to the proper offset link for your article.
+[[/collapsible]]
+
 @@ @@
 
 @@ @@
