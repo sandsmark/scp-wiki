@@ -1665,7 +1665,7 @@ margin-bottom: 5%;
 [[/div]]
 [[div style="border-bottom:1px solid #777;"]]
 [[/div]]
-+++ Enlarging Image format
++++ Custom Image Block Format
 
 **__Option 1__**[[footnote]] As seen in [[[SCP-4224]]], [[[SCP-4577]]], and [[[SCP-3662]]] [[/footnote]]
 
@@ -1680,3 +1680,20 @@ margin-bottom: 5%;
 
 Change **{$name}** to the filename or link to the image. Change **{$caption}** to the text you want under the image. The width and alignment are set to the standard for SCP articles, but those can be changed as well.
 [[/collapsible]]
+
+**__Option 2__**[[footnote]] As seen in [http://www.scp-wiki.net/error-field-cannot-be-lloyd ERROR: Field Cannot Be Lloyd] [[/footnote]]
+
+[[include :scp-sandbox-3:image-blur name=http://scp.avn.sh/local--files/mrpines:choo-choo/train3.jpg|caption=Hover your mouse over the image to view it.|width=300px|align=center]]
+
+**What to copy:**
+[[collapsible]]
+[[div class="code"]]
+@@[[include :scp-sandbox-3:image-blur name={$name}|caption={$caption}|width=300px|align=right]]@@
+[[/div]]
+
+Change **{$name}** to the filename or link to the image. Change **{$caption}** to the text you want under the image. The width and alignment are set to the standard for SCP articles, but those can be changed as well.
+[[/collapsible]]
+
+@@ @@
+
+@@ @@
