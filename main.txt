@@ -1,3 +1,5 @@
+[[include component:halloween-theme]]
+
 [[module css]]
 #page-title { display: none; }
 .feature-block {
@@ -6,6 +8,7 @@
 .feature-block .panel-body {
     height: 160px;
     overflow-y: hidden;
+    color: #800000
 }
 .feature-block .feature-title {
     font-size: 120%;
@@ -22,6 +25,7 @@
 
 .news-block .panel-body {
     padding: 0;
+    color: #800000
 }
 .news-block .panel-body .alternate {
     padding: 5px 10px;
@@ -34,14 +38,17 @@
 }
 .news-block .news-content {
     margin: 5px 0;
+    color: #800000
 }
 .news-block .news-title > p,
 .news-block .news-content > p {
     margin: 0;
+    color: #800000
 }
 
 .international-block .panel-body {
     padding: 0;
+    color: #800000
 }
 .international-entry {
     padding: 5px 10px;
