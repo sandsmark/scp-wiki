@@ -1,0 +1,72 @@
+title:Top Rated Pages By Year
+[[html]]
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    function changeYear(year) {
+    	$("iframe").attr("src","http://www.scp-wiki.net/fragment:top-rated-by-year-" + year);
+    }
+</script>
+<style>
+@import url(http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--theme/base/css/style.css);
+@import url(http://www.scp-wiki.net/component:theme/code/1);
+a {
+    cursor: pointer;
+}
+iframe {
+    width: 100%;
+    min-height: 1000px;
+    border: none;
+}
+.holder::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: rotate(0deg) translate(-50%,-50%);
+    transform-origin: 0% 0%;
+    background: url(http://scp-sandbox-3.wdfiles.com/local--files/croqueyearly/logo.png) 50% 50%/100px 100px no-repeat;
+    opacity: 0.5;
+    animation: load 2000ms infinite linear;
+    z-index: -1;
+}
+.navigator {
+    text-align: center;
+    width: 100%;
+    font-size:1.25em;
+    font-weight: bold;
+}
+@keyframes load {
+    0% { transform: rotate(0deg) translate(-50%,-50%); }
+    100% { transform: rotate(360deg) translate(-50%,-50%); }
+}
+</style>
+<body>
+    <div class="content-panel standalone series">
+    	<div style="text-align: center;">
+    	<h2><span>Click on a year to find the top rated pages during that time!</span></h2>
+    	</div>
+    	<div class="navigator">
+    	<p><a href="javascript:void(0)" onclick="changeYear('08')">2008</a> | <a href="javascript:void(0)" onclick="changeYear('09')">2009</a> | <a href="javascript:void(0)" onclick="changeYear('10')">2010</a> | <a href="javascript:void(0)" onclick="changeYear('11')">2011</a> | <a href="javascript:void(0)" onclick="changeYear('12')">2012</a> | <a href="javascript:void(0)" onclick="changeYear('13')">2013</a> | <a href="javascript:void(0)" onclick="changeYear('14')">2014</a> | <a href="javascript:void(0)" onclick="changeYear('15')">2015</a> | <a href="javascript:void(0)" onclick="changeYear('16')">2016</a> | <a href="javascript:void(0)" onclick="changeYear('17')">2017</a> | <a href="javascript:void(0)" onclick="changeYear('18')">2018</a></p>
+    	</div>
+    </div>
+    <div class="holder">
+    	<iframe src="http://www.scp-wiki.net/fragment:top-rated-by-year-18"></iframe>
+    </div>
+</body>
+[[/html]]
+
+[[div class="loading"]]
+[[=]]
+++ Loading...
+[[/=]]
+[[/div]]
+
+[[module CSS]]
+.loading { opacity: 1; animation: opace 0ms linear 3000ms 1 forwards; }
+@keyframes opace {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+[[/module]]
