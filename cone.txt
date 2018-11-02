@@ -322,10 +322,9 @@ Research is ongoing. In the meantime, please do not, under //any// circumstances
 [[/tab]]
 [[/tabview]]
 
-[!-- [[include :scp-sandbox-3:collab:ar-theme]] --]
-[[include component:halloween-theme]]
+[[include :scp-sandbox-3:collab:ar-theme]]
 [[module CSS]]
-/*#header h1 a::before {
+#header h1 a::before {
     content: "List of Sharticles";
 }
 #header h2 span::before {
@@ -345,5 +344,5 @@ div#container-wrap {
     --dark-accent: #611e22;
     --hyperlink: #b01;
     --hyperlink-visited: #824;
-}*/
+}
 [[/module]]
