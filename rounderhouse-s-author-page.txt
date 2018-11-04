@@ -31,6 +31,33 @@ z-index: 201;
     	transform: rotate(359deg);
     	}
 }
+
+#header h1 a {
+    font-size: 150%;
+    color: transparent;
+    text-shadow: none;
+}
+
+#header h1 a::before {
+    content: "rounderhouse's author page";
+    color: #ffffff;
+    text-shadow: 3px 3px 5px #000000;
+}
+
+#header h2 span {
+    font-size: 100%;
+    color: transparent;
+    text-shadow: none;
+}
+#header h2 span::before {
+    content: "spherical livingquarters";
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+}
+
+
+
 [[/module]]
 
 [[module css]]
