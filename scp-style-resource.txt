@@ -1714,3 +1714,22 @@ Change **{$name}** to the filename or link to the image. Change **{$caption}** t
 @@ @@
 
 @@ @@
+[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[/div]]
+[[div style="border-bottom:1px solid #777;"]]
+[[/div]]
++++ Useful tool for the sandbox page
+
+**What it looks like:**
+[[module ListPages offset="@URL|0" range="."]]
+[/tool-test/offset/1/tool_limit/1#toc10 Show the tool]
+[[/module]]
+[[module ListPages limit="@URL|0" range="." urlAttrPrefix="tool"]]
+[[%%content{0}%%include :scp-sandbox-3:component:usefultool-module]]
++* Look at the lower right!
+[[/module]]
+**What to copy:**
+[[collapsible]]
+> @@[[include@@ :scp-sandbox-3:component:usefultool-module]]
+**IMPORTANT:** This part gets placed at the bottom of the page.
+[[/collapsible]]
