@@ -1,9 +1,57 @@
 title:FloppyPhoenix's Author Page
 [[module css]]
 a.collapsible-block-link { font-weight: bold; }
-[[/module]]
 
-[[module CSS]]
+/* for tabs */
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    border-color:#ffffff; /* color between tab list and content */
+}
+ 
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    background-color:#ffffff ! important; /* tab background */
+    border-color:#ffffff;
+    color:#000000;
+    transition: 0.125s;
+}
+ 
+.yui-navset .yui-nav a em {
+background-color: #ffffff;
+box-shadow: 0px 1px 2px rgba(0,0,0,0.7);
+border-color: #ffffff;
+}
+ 
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:hover {
+    background-image: none;
+    background-color: #ffffff; /* selected tab background */
+    color:black;
+}
+ 
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a em {
+    border-color: transparent;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+ background-color: #ffffff;
+}
+ 
+.yui-navset .yui-content {
+    background-color: #ffffff; /* content background color */
+}
+ 
+.yui-navset .yui-content,
+.yui-navset .yui-navset-top .yui-content {
+    border-color: #ffffff; /* content border */
+    border-top-color:#ffffff; /* different border color */
+}
+ 
+.yui-navset-left .yui-content {
+    border-left-color: #b7a9a9; /* different border color */
+}
+
+/* listpages exception */
 .preview .span, .infobox { display: none !important; }
 [[/module]]
 
@@ -42,6 +90,8 @@ The following file contains an activated **GAY FROGS**-Class **DANK ANTIMEME**. 
 Ah, they're gone. Anyways, //apparently//, this is the place where I get to show you all the wonderful works I've written? Don't worry, I'm surprised too. Just—don't leave the terminal, and continue reading until you've learned about all the --crispy sex pirates-- SCP articles I've worked on. I'll go get you a juice box. Or some bourbon. Don't like it? Well, that's too darn bad, hun, isn't it?
 
 **Deployment Record:**
+[[tabview]]
+[[tab Articles]]
 [[div style="display: inline-block; border: solid 1px #444444; background: #ffffff; float: top; width: 96.5%; padding: 10px; box-shadow: 1px 2px 2px 0 grey;"]]
 [[include component:author-page
   order=created_at |
@@ -77,9 +127,11 @@ Ah, they're gone. Anyways, //apparently//, this is the place where I get to show
 ++++++ *Team Bird is not_a_seagull, FloppyPhoenix, Dr Aers, and Quantum Physician
 [[/div]]
 = --
+[[/tab]]
+[[tab Author Commentary]]
 [[div style="display: inline-block; border: solid 1px #444444; background: #ffffff; float: top; width: 96.5%; padding: 10px; box-shadow: 1px 2px 2px 0 grey;"]]
 [[=]]
-+++ **Author Commentary (needs to be updated)**
++++ **Author Commentary**
 [[/=]]
 ----
 [[span style="font-family:Times New Roman; font-size:125%;"]]--##firebrick|SCP-#: ●●|●●●●●●|●●●●|● - Before the Fire##-- **[DELETED]**[[/span]]
@@ -205,6 +257,8 @@ Other things:
 [[/collapsible]]
 [[/div]]
 = --
+[[/tab]]
+[[tab Translations]]
 [[div style="display: inline-block; border: solid 1px #444444; background: #ffffff; float: top; width: 96.5%; padding: 10px; box-shadow: 1px 2px 2px 0 grey;"]]
 [[=]]
 +++ **Translations**
@@ -236,12 +290,14 @@ The following articles have been translated by other SCP Wiki branches. I'm //su
  * The aforementioned users, as well as a few others, have begun translating all Team Bird articles. Which is awesome!
 [[/div]]
 = --
+[[/tab]]
+[[tab Writing Style]]
 [[div style="display: inline-block; border: solid 1px #444444; background: #ffffff; float: top; width: 96.5%; padding: 10px; box-shadow: 1px 2px 2px 0 grey;"]]
 [[=]]
 +++ **Writing Style and Themes** 
+++++++ Ugh, this gushy stuff is always so dramatic.
 [[/=]]
 ----
-[[collapsible show="It's about to get a lot more personal in here." hide="Ugh, this gushy stuff is always so dramatic."]]
 I'm a big science fiction fan, and a diehard fan of the //Halo// series, which is where a lot of my inspiration comes from. Truth be told, I'm a nerd. I would say my articles are typically science fiction-oriented, and I always like to explore some wacky concept to its logical extreme. I'm not always the most successful, but I do try.
 
 As far as themes go, I like to write about community, family, and camaraderie. When writing an SCP, I typically think of the object or concept first and inject related concepts into the mix. Once I've figured that out, I try to tell an emotional story about that object or concept. My favourite things to write about are antimemetics and concepts (as in, intangible SCPs).
@@ -251,20 +307,23 @@ Other than writing SCPs, I've been trying to write my own science fiction series
 Final thoughts: my favourite SCP is [[[SCP-2747]]], and all my stories revolve around Site-82 in some way. Also, I would //love// to write a time travel scip some day.
 
 [http://kaktuskontainer.wikidot.com/floppyphoenix-nest You can find my sandbox here.]
-[[/collapsible]]
 [[/div]]
 = --
+[[/tab]]
+[[tab Declassifications]]
 [[div style="display: inline-block; border: solid 1px #444444; background: #ffffff; float: top; width: 96.5%; padding: 10px; box-shadow: 1px 2px 2px 0 grey;"]]
 [[=]]
 +++ **Declassifications** 
+++++++ Leak Redacted File?
 [[/=]]
 ----
-[[collapsible show="Leak Redacted File?" hide="Don't say I didn't warn you."]]You'll mainly find me interacting with the r/SCPDeclassified satellite community, which is a subreddit devoted to explaining hard-to-understand SCPs. I spend most of my SCP-related time --laughing at memes-- discussing new scips on the SCPDeclassified Discord server, and the friendly community there is fun to brainstorm with and receive feedback from. I've written a single Declassification, and hope to write more in the future. 
+You'll mainly find me interacting with the r/SCPDeclassified satellite community, which is a subreddit devoted to explaining hard-to-understand SCPs. I spend most of my SCP-related time --laughing at memes-- discussing new scips on the SCPDeclassified Discord server, and the friendly community there is fun to brainstorm with and receive feedback from. I've written a single Declassification, and hope to write more in the future. 
 
 * [https://www.reddit.com/r/SCPDeclassified/comments/84zc9e/scp3980_blind_lead_the_blind/?utm_content=title&utm_medium=hot&utm_source=reddit&utm_name=SCPDeclassified Declassification of Shaggydredlocks' SCP-3980 - Blind Lead the Blind]
-[[/collapsible]]
 [[/div]]
 = --
+[[/tab]]
+[[/tabview]]
 [[div style="border:solid 1px #999999; background:#FFC0CB; padding:5px; margin-bottom: 10px;"]]
 [[=]]
 
