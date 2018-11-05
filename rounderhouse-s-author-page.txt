@@ -56,8 +56,14 @@ z-index: 201;
     text-shadow: 1px 1px 1px rgba(0,0,0,.8);
 }
 
-div#container-wrap {
-    background: url(http://www.giejhaigtra.com/banner.png) top left repeat-x;
+div#container-wrap::before {
+    content: "";
+    display: block;
+    height: 140px;
+    width: 100%;
+    position: absolute;
+    
+    background: #F97F34;
 }
 [[/module]]
 
