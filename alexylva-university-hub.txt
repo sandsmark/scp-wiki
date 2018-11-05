@@ -283,6 +283,26 @@ blockquote {
     font-weight: 700;
 }
 
+/* RATING MODULE */ .page-rate-widget-box .rate-points {     background-color: #a38b65 !important;     border: solid 1px #ffe4af; } .page-rate-widget-box .rateup, .page-rate-widget-box .ratedown {     background-color: a38b65;     border-top: solid 1px #ffe4af;     border-bottom: solid 1px #ffe4af;     font-weight: bold; } .page-rate-widget-box .rateup a, .page-rate-widget-box .ratedown a {     background: a38b65;     color: #ffe4af;     padding: 0 4px;     margin: 0 1px; } .page-rate-widget-box .rateup a:hover, .page-rate-widget-box .ratedown a:hover {     background: #a38b65;     color: #ffe4af;     text-decoration: none; } .page-rate-widget-box .cancel {     background-color: #a38b65;     border: solid 1px #ffe4af;     border-left: 0;     border-radius: 0 5px 5px 0; } .page-rate-widget-box .cancel a {     background: transparent;     text-transform: uppercase;     color: #ffe4af; } .page-rate-widget-box .cancel a:hover {     border-radius: 0 3px 3px 0;     background: #a38b65;     color: #ffe4af;     text-decoration: none; }
+
+/* LINKS */
+ 
+a {
+    color: #d68c53;
+    text-decoration: bold;
+    background: transparent;
+}
+ 
+a.newpage {
+    color: #d68c53;
+    text-decoration: bold;
+    background: transparent;
+}
+ 
+#side-bar a:visited{ color: #5b472c; }
+ 
+a:visited { color: #4c3c26; }
+
 #header h1 a::before {
     content: "Alexylva U.";
     color: white;
