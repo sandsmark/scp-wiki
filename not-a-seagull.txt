@@ -27,10 +27,10 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-<div id="page-content">
+<div id="thread-action-area" class="action-area well" style="display: none"></div>
 
-<div class="forum-thread-box ">
-
+<div id="thread-container" class="thread-container">
+<div id="thread-container-posts" style="">
 <div class="post-container">
 <div class="post">
 <div class="long">
@@ -53,6 +53,8 @@ document.addEventListener('DOMContentLoaded', function() {
 <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Options</a>
 </div>
 <div class="options" style="display: none">
+</div>
+</div>
 </div>
 </div>
 </div>
