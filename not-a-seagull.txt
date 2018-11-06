@@ -7,9 +7,29 @@ title:Researcher Calvin's Personnel File
 
 [[html]]
 <style type="text/css" id="internal-style">
+/* disaster awaits you below */
+/* modules */
+
+/* theme */
 @import url(http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--theme/base/css/style.css);
 @import url(http://www.scp-wiki.net/component:theme/code/1);
 </style>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var fp = document.getElementById('fakepost');
+    var dpos = 0;
+    var dstring = 'And so the question remains: are you worth remembering?';
+    fp.addEventListener('keypress', function(e) {
+        fp.value = dstring.substr(0, ++dpos);
+        e.preventDefault();
+        return false;
+    });
+});
+</script>
+
+<div id="page-content">
+
+<div class="forum-thread-box ">
 
 <div class="post-container">
 <div class="post">
