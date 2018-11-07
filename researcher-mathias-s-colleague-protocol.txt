@@ -117,7 +117,36 @@ Last thing, I swear. I want to tell you all how thankful I am for this community
 
 @@@@
 @@@@
+[[module css]]
+.hover {
+}
+.hover:hover {
+     text-decoration: none;
+    border-bottom: none;
+}
 
+.hover span {    display: none;}
+.hover:hover span {
+    position: absolute;
+    display: inline;
+    margin: 0px 0px;
+    height: auto;
+    width: auto;
+    background: #FFF;
+    border: 2px solid #34B;
+    color: #000;
+    padding: 1em;
+}
+.hover:hover span span {
+    position: relative;
+    margin: auto;
+    height: auto;
+    width: auto;
+    border: none;
+    padding: 0;
+}
+[[/module]]
+[[span class="hover"]] [[span]]Why are you hovering over the circle? Stop it.[[/span]]☻[[/span]]
 @@@@
 @@@@
 
