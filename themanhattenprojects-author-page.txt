@@ -3,6 +3,9 @@ title:TheManhattenProjects Author Page
 
 I finally got a decent author page working (hopefully). If something borks I'll get on to it. By the way, the scp article listed is actually a rewrite, I need to see how to remove it.
 
+[[module CSS]]
+.preview .span, .infobox { display: none !important; }
+[[/module]]
 
 [[include component:author-page
       order=created_at |
