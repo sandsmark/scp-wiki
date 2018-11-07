@@ -24,13 +24,41 @@ Researcher Mathias has been known to use the provided crayons to write on the fl
 
 @@@@
 @@@@
+[[module css]]
+.hover {
+}
+.hover:hover {
+     text-decoration: none;
+    border-bottom: none;
+}
 
+.hover span {    display: none;}
+.hover:hover span {
+    position: absolute;
+    display: inline;
+    margin: 0px 0px;
+    height: auto;
+    width: auto;
+    background: #FFF;
+    border: 2px solid #34B;
+    color: #000;
+    padding: 1em;
+}
+.hover:hover span span {
+    position: relative;
+    margin: auto;
+    height: auto;
+    width: auto;
+    border: none;
+    padding: 0;
+}
+[[/module]]
 ||~ CURRENT DOCUMENTS ||
-||= SCP is [[[SCP-3757|lightning bugs]]][[footnote]]"This is by far my best work. I'm very proud of it. I remember being unreasonably anxious when I posted it and immensely satisfied when it was so well received.
+||= SCP is [[[SCP-3757|lightning bugs]]][[span class="hover"]][[span]]"This is by far my best work. I'm very proud of it. I remember being unreasonably anxious when I posted it and immensely satisfied when it was so well received.
 
 The goal was to make something that was keter, but non-violent (an atypical keter, I guess). I didn't intend for it to read as scary when I first wrote it, but it seems to have added to the skip.
 
-Written and posted while on vacation in Boise, Idaho."[[/footnote]] ||
+Written and posted while on vacation in Boise, Idaho."[[/span]]►[[/span]] ||
 ||= SCP is [[[SCP-3782|Roosevelt's glasses]]][[footnote]]"I intended for this to be my 4k entry, but I got cold feet after I saw the other entries. Admittedly, this didn't have much of a punch compared to some of the others. This was also alluded to in a tale I made for the GoI "AN-SO", but we aren't talking about AN-SO right now.
 
 If I had to pick an article of mine I didn't like as much as the others, this is it. Maybe I'll go back and do more with it someday.
