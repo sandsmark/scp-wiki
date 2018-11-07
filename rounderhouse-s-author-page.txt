@@ -76,6 +76,30 @@ div#container-wrap::before {
 }
 [[/module]]
 
+[[modules CSS]]
+/* TOP BAR RECOLORING*/
+#top-bar ul li ul {
+    border: solid 1px #3d2b1f;
+}
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+    border-top: 1px solid #665731;
+}
+ 
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    background: #82a016;
+    color: #ffffff;
+}
+#top-bar ul li ul a, #top-bar a:hover {
+    color: #8db600;
+}
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: #c8e293; /* top bar hover background color */
+}
+[[/module]]
+
 [[module css]]
 .list-pages-box a {
     color: white !important;
