@@ -3,6 +3,15 @@ title:TheManhattenProjects Author Page
 
 I finally got a decent author page working (hopefully). If something borks I'll get on to it
 
+<html>
+<head>
+<style>
+body {
+    background-color: lightblue;
+}
+</style>
+</head>
+
 
 [[include component:author-page
       order=created_at |
@@ -15,9 +24,6 @@ I finally got a decent author page working (hopefully). If something borks I'll 
 .preview .span, .infobox { display: none !important; }
 .preview.yes:hover, .preview.true:hover{
   background: url('https://i.kym-cdn.com/entries/icons/original/000/010/313/737547465_preview_Pm3UVdd.png') 80% 50% fixed no-repeat  !important;
-}
-.body {
-    background-color: lightblue;
 }
 [[/module]]
 
