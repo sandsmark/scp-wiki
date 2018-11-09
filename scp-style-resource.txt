@@ -911,13 +911,6 @@ I can't verify your wikidot ID.[[span class="blink"]]|[[/span]]
 **What it looks like:**
 [[module CSS]]
 
-blockquote {
-
-    background-color: black;
-
-    border: double 3px #80FF80
-
-}
 div.terminal{
         width: @display-width;
         height: @display-height;
@@ -935,6 +928,15 @@ div.terminal{
 /* prevents scanline from forming a scrollwheel */
   	overflow:hidden;
 }
+
+div.terminal blockquote {
+
+    background-color: black;
+
+    border: double 3px #80FF80
+
+}
+
 div.scanline{
     margin-top: -40%;
     width: @display-width;
@@ -1011,13 +1013,6 @@ Thanks for checking out my format!
 [[code]]
 [[module CSS]]
 
-blockquote {
-
-    background-color: black;
-
-    border: double 3px #80FF80
-
-}
 div.terminal{
         width: @display-width;
         height: @display-height;
@@ -1034,6 +1029,13 @@ div.terminal{
   	box-shadow: inset 0 0 10em 1em rgba(0,0,0,0.5);
 /* prevents scanline from forming a scrollwheel */
   	overflow:hidden;
+}
+div.terminal blockquote {
+
+    background-color: black;
+
+    border: double 3px #80FF80
+
 }
 div.scanline{
     margin-top: -40%;
