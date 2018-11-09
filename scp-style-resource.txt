@@ -906,14 +906,214 @@ I can't verify your wikidot ID.[[span class="blink"]]|[[/span]]
 [[/code]]
 [[/collapsible]]
 
+**__Option 8__**[[footnote]]As seen in [[[SCP-4224]]][[/footnote]]
 
+**What it looks like:**
+[[module CSS]]
+
+blockquote {
+
+    background-color: black;
+
+    border: double 3px #80FF80
+
+}
+div.terminal{
+        width: @display-width;
+        height: @display-height;
+    border: 1px solid black;
+    border: solid 3px #BBBBBB;
+    border-radius: 16px;
+    background-color: #131;
+/* black shadow at the top of the terminal */
+  	background-image: 
+    	radial-gradient(ellipse 1000% 100% at 50% 90%, transparent, #121);
+  	background-position: center;
+  	display: block;
+/* shadow around the terminal */
+  	box-shadow: inset 0 0 10em 1em rgba(0,0,0,0.5);
+/* prevents scanline from forming a scrollwheel */
+  	overflow:hidden;
+}
+div.scanline{
+    margin-top: -40%;
+    width: @display-width;
+    height: 60px;
+    position: relative;
+    pointer-events: none;
+    -webkit-animation: scan 5s linear 0s infinite;; /* Safari 4.0 - 8.0 */
+    animation: scan 12s linear 0s infinite;
+    background: linear-gradient(to bottom, rgba(56, 112, 82,0), rgba(56, 112, 82,0.1)) !important;
+}
+
+div.text{
+    color: rgba(128,255,128,0.8);
+    padding-left: 2em;
+    padding-top: 40%;
+font-family: monospace;
+font-size: 1.2em;
+    }
+    
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes scan{
+    from{ transform: translateY(-10%);}
+    to{  transform: translateY(5000%);}
+}
+
+
+div.text a {
+    color: #90EE90;
+    text-decoration: none;
+    background: transparent;
+}
+div.text a.newpage {
+    color: #90EE90;
+    text-decoration: none;
+    background: transparent;
+}
+div.text a:hover {
+    color: #131;
+    text-decoration: underline;
+    background-color: #80FF80;
+    padding: 1px;
+}
+div.text a:hover::before{
+content: "> ";
+}
+
+[[/module]]
+[[div class="terminal"]]
+[[div class="scanline"]]
+[[/div]]
+[[div class="text"]]
+[[=]]
+[[size 150%]] __Terminal #001__[[/size]]
+@@ @@
+@@ @@
+@@------@@
+Welcome, User
+@@------@@
+[[/=]]
+@@ @@
+@@ @@
+@@ @@
+> Links inside the terminal gain a ">" when you hover over them.
+> [http://www.google.com like this]
+ 
+Thanks for checking out my format!
+[[/div]]
+[[/div]]
+
+**What to copy:**
+[[collapsible]]
+
+**IMPORTANT:** This is the CSS module. It goes at the top of the article.
+[[code]]
+[[module CSS]]
+
+blockquote {
+
+    background-color: black;
+
+    border: double 3px #80FF80
+
+}
+div.terminal{
+        width: @display-width;
+        height: @display-height;
+    border: 1px solid black;
+    border: solid 3px #BBBBBB;
+    border-radius: 16px;
+    background-color: #131;
+/* black shadow at the top of the terminal */
+  	background-image: 
+    	radial-gradient(ellipse 1000% 100% at 50% 90%, transparent, #121);
+  	background-position: center;
+  	display: block;
+/* shadow around the terminal */
+  	box-shadow: inset 0 0 10em 1em rgba(0,0,0,0.5);
+/* prevents scanline from forming a scrollwheel */
+  	overflow:hidden;
+}
+div.scanline{
+    margin-top: -40%;
+    width: @display-width;
+    height: 60px;
+    position: relative;
+    pointer-events: none;
+    -webkit-animation: scan 5s linear 0s infinite;; /* Safari 4.0 - 8.0 */
+    animation: scan 12s linear 0s infinite;
+    background: linear-gradient(to bottom, rgba(56, 112, 82,0), rgba(56, 112, 82,0.1)) !important;
+}
+
+div.text{
+    color: rgba(128,255,128,0.8);
+    padding-left: 2em;
+    padding-top: 40%;
+font-family: monospace;
+font-size: 1.2em;
+    }
+    
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes scan{
+    from{ transform: translateY(-10%);}
+    to{  transform: translateY(5000%);} /* You may need to change this depending on the length of your terminal. */
+}
+
+
+div.text a {
+    color: #90EE90;
+    text-decoration: none;
+    background: transparent;
+}
+div.text a.newpage {
+    color: #90EE90;
+    text-decoration: none;
+    background: transparent;
+}
+div.text a:hover {
+    color: #131;
+    text-decoration: underline;
+    background-color: #80FF80;
+    padding: 1px;
+}
+div.text a:hover::before{
+content: "> ";
+}
+[[/module]]
+[[/code]]
+
+**IMPORTANT:** This is the terminal itself. This can go anywhere.
+[[code]]
+[[div class="terminal"]]
+[[div class="scanline"]]
+[[/div]]
+[[div class="text"]]
+[[=]]
+[[size 150%]] __Terminal #001__[[/size]]
+@@ @@
+@@ @@
+@@------@@
+Welcome, User
+@@------@@
+[[/=]]
+@@ @@
+@@ @@
+@@ @@
+> Links inside the terminal gain a ">" when you hover over them.
+> [http://www.google.com like this]
+ 
+Thanks for checking out my format!
+[[/div]]
+[[/div]]
+[[/code]]
+[[/collapsible]]
 @@ @@
 @@ @@
 [[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
 [[/div]]
 [[div style="border-bottom:1px solid #777;"]]
 [[/div]]
-
 +++ Warning/Notice formats:
 
 **__Option 1__**[[footnote]]As seen in [[[SCP-835]]][[/footnote]]
@@ -1277,6 +1477,32 @@ __**Option 3:**__[[footnote]] As seen in [http://ja.scp-wiki.net/scp-1970-jp SCP
 > @@]]@@
 [[/collapsible]]
 
+__**Option 4:**__
+
+**What it looks like:**
+
+[[include :scp.avn.sh:component:aers:classification-stuff
+|item=XXXX
+|lvl=4
+|class=Keter
+|threat=Red
+|threat-colour=#b01 [!-- This is colour of the little ball. If you're unsure, keep it the same as the threat. --]
+]]
+
+**What to copy:**
+
+[[collapsible]]
+
+
+> [[include :scp.avn.sh:component:aers:classification-stuff
+> |item=XXXX
+> |lvl=4
+> |class=Keter
+> |threat=Red
+> |threat-colour=#b01 @@[!-- This is colour of the little ball. If you're unsure, keep it the same as the threat. --]@@
+> ]]
+
+[[/collapsible]]
 @@ @@
 
 @@ @@
