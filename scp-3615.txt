@@ -164,3 +164,146 @@ SCP-3615 was discovered in a Foundation raid on [REDACTED], a suspected Serpent'
 >  **<End Log>**
 
 [[/collapsible]]
+
+[[module css]]
+div#container-wrap::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 162px;
+    background: url("http://www.scp-wiki.net/local--files/component:theme/body_bg.png") repeat-x;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+}
+ 
+#header, .printuser a, #side-bar, #page-title, .page-rate-widget-box {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+}
+ 
+#footer {
+    font-size: x-small;
+    background: #ffafc7;
+    color: black;
+}
+ 
+div#page-options-container a, div.page-tags a {
+    color: #e51f47;
+}
+ 
+div#page-options-container a:visited, div.page-tags a:visited {
+    color: #8d112a;
+}
+ 
+#footer a {
+    color: #e51f47;
+}
+ 
+#license-area {
+    font-size: x-small;
+    background: #5bcefa;
+    color: black;
+}
+ 
+#license-area a {
+    color: #056c94;
+}
+ 
+/* you are my sunshine, my only sunshine */
+ 
+div#container-wrap::before, #header, .printuser a, #side-bar, #page-title, .page-rate-widget-box {  
+    -webkit-animation: ungrayscale linear 10s forwards;  
+            animation: ungrayscale linear 10s forwards;
+    -webkit-animation-delay: 50s;
+            animation-delay: 50s;
+}
+ 
+@-webkit-keyframes ungrayscale {
+    0% {
+        -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+    }
+    100% {
+        -webkit-filter: grayscale(0%);
+                filter: grayscale(0%);
+    }
+}
+ 
+@keyframes ungrayscale {
+    0% {
+        -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+    }
+    100% {
+        -webkit-filter: grayscale(0%);
+                filter: grayscale(0%);
+    }
+}
+#header h1::before {
+    content: "";
+    background: url('https://vgy.me/W0f3wX.png') no-repeat;
+    display: block;
+ 
+    pointer-events: none;
+ 
+    height: 100px;
+    width: 100px;
+ 
+    -webkit-background-size: contain;
+    background-size: contain;
+ 
+    position: absolute;
+    top: 38px;
+    left: 10px;
+ 
+    opacity: 0;
+ 
+    -webkit-animation: reveal linear 10s forwards;
+            animation: reveal linear 10s forwards;
+    -webkit-animation-delay: 50s;
+            animation-delay: 50s;
+}
+ 
+@-webkit-keyframes reveal {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+ 
+@keyframes reveal {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+ 
+@media (max-width: 979px) and (min-width: 768px) {
+    #header h1::before {
+        width: 90px;
+        top: 48px;
+        left: 12px;
+    }
+}
+ 
+@media (max-width: 767px) and (min-width: 581px) {
+    #header h1::before {
+        width: 78px;
+        top: 48px;
+        left: 12px;
+    }
+}
+ 
+@media (max-width: 580px) and (min-width: 480px) {
+    #header h1::before {
+        width: 67px;
+        top: 56px;
+        left: 5px;
+    }
+}
+ 
+@media (max-width: 479px) {
+    #header h1::before {
+        width: 55px;
+        top: 69px;
+        left: 0px;
+    }
+}
+ 
+[[/module]]
