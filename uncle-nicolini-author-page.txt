@@ -223,5 +223,24 @@ if i am needed for any emergency reason, [[*user mlister]] and [[*user rockteeth
     99% { max-height: 100vh; }
     100% { max-height: 9999rem; }
 }
+#header h1 a::before {
+    content: "SCP Foundation";
+    color: #fff;
+}
+#header h2 span {
+    background: transparent;
+    text-shadow: none;
+    letter-spacing: -0.05em;
+    font-weight: 500;
+    color: #eee;
+    /* hide real header */
+    line-height: 0px;
+    max-height: 0px;
+    color: transparent;
+}
+#header h2 span::before {
+    content: "Scour. Plunder. Corrupt.";
+    color: #eee;
+}
 [[/module]]
 [[image shit.png]]
