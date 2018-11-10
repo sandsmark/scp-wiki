@@ -1,8 +1,14 @@
 title:uncle nicolini author page
+[[=]]
 hi
 welcome to my author page. 
+[[/=]]
+@@ @@
+@@ @@
+@@ @@
+[[tabview]]
+[[tab SCP Articles]]
 
-__scp i've written__
 [[[scp-3297]]]- Gramma Always Remembers
 [[[scp-3358]]]- --Anomaly apartments-- Site 316 (featuring [[*user janitorcakeworth]])
 [[[scp-3803]]]- Custom Business Cards on the Go
@@ -13,14 +19,16 @@ __scp i've written__
 [[[scp-3879]]]- Musical Jolly Ape™ by Dr. Wondertainment
 [[[scp-2983]]]- Choco-Wonder Explosion Marshmallow Bites!™ by Dr. Wondertainment (featuring [[*user darkstuff]])
 [[[scp-3756]]]- In Space, No One Can Hear Yee-Haw! (featuring [[*user gabriel jade]])
+[[/tab]]
+[[tab GoI Formats]]
 
-__goi things i've done__
 [[[critter-profile-maya|critter profile: maya]]] - Wilson's Wildlife Solutions
 [[[critter-profile-wobbles| critter profile: wobbles]]] (featuring [[*user drannoyingdog]])- Wilson's Wildlife Solutions
 [[[corncrake-of-destiny|The Corncrake of Destiny]]]- Black Queen
 [[[the-workshop|Caroll 055: The Workshop]]] (featuring [[*user rockteethmotheyes]])- Chicago Spirit
+[[/tab]]
+[[tab Tales]]
 
-__tales i've written__
 [[[Cack-Hard|Cack hard]]] (featuring [[*user Gabriel_Jade]] )
 [[[Classy-Carlos-Goes-To-Therapy|classy carlos goes to therapy]]]
 [[[Cured-Hams|cured hams]]]
@@ -32,27 +40,154 @@ __tales i've written__
 [[[coming-out-to-the-woods| i don't get it, but i'll figure it out.]]]
 [[[digging-up-the-past| digging up the past]]] (featuring [[*user gabriel jade]])
 [[[who-wants-to-live-forever|who wants to live forever?]]] (featuring [[*user gabriel jade]])
+[[/tab]]
+[[tab Contest Stuff]]
 
-__contest entries__
-[[[scp-4003]]]- [[[scp4000contesthub|4000 contest]]]
-[[[moon-champion-s-cinco-de-mayo-extravaganza|moon champion's cinco de mayo extravaganza]]]- [[[halloween-contest-2018|Halloween 2018 Contest]]]
+[[[scp-4003]]]- [[[scp4000contesthub|4000 contest]]] - 13th Place 
+[[[moon-champion-s-cinco-de-mayo-extravaganza|moon champion's cinco de mayo extravaganza]]]- [[[halloween-contest-2018|Halloween 2018 Contest]]]- 2nd Place
+[[/tab]]
+[[tab Canon Writing]]
 
-__canon writing__
 [[[scp-3879]]]- Musical Jolly Ape™ by Dr. Wondertainment - [[[wonder-world|what a wonderful world]]]
 [[[scp-2983]]]- Choco-Wonder Explosion Marshmallow Bites!™ by Dr. Wondertainment (featuring [[*user darkstuff]]) - [[[wonder-world|what a wonderful world]]]
 [[[digging-up-the-past| digging up the past]]] (featuring [[*user gabriel jade]]) -[[[end-of-death-hub|end of death]]] 
 [[[who-wants-to-live-forever|who wants to live forever?]]] (featuring [[*user gabriel jade]]) -[[[end-of-death-hub|end of death]]] 
 [[[the-workshop|Caroll 055: The Workshop]]] (featuring [[*user rockteethmotheyes]]) - [[[wonder-world|what a wonderful world]]]
+[[/tab]]
+[[tab RE: Old Author Page]]
 
-__re:my old author page__
 yeah, yeah, yeah. i get it, you miss the old author page. it may come back eventually, but --the stupidity of the 'best author page' contest-- recent events have worn me out from the whole shtick. 
-
-__srs bznz__
+[[/tab]]
+[[/tabview]]
+@@ @@
+@@ @@
+[[=]]
+++ __like my stuff?__
+aw shucks, thanks. i'm open for collabs almost all the time, so just hit me up. it helps if you have an idea though, so don't just come up to me asking to write. 
+[[/=]]
+[[=]]
+++ __srs bznz__
+[[/=]]
 in the event something happens to me and i disappear for 5 years or die, i leave all my non-colab articles entrusted to [[*user varaxous]], and all my collab articles with the respective co-authors. The only exception to this is [[[moon-champion-s-cinco-de-mayo-extravaganza|moon champion's cinco de mayo extravaganza]]], which would be left to [[*user cadavercommander]].
 
 if i am needed for any emergency reason, [[*user mlister]] and [[*user rockteethmotheyes]] have my personal number and can contact me at any time.
+
+
 [[module css]]
 #header {
     background-image: url(http://www.scp-wiki.net/local--files/component:scp_pride/scp_pride_icon2.png)
 }
 [[/module]]
+
+[[module css]]
+/*------------------*\
+ *       Tabs       *
+\*------------------*/
+ 
+.yui-navset.yui-navset-top {
+    border-left: 3px solid #295183;
+    border-left: 3px solid var(--light-accent);
+}
+.yui-navset .yui-nav {
+    position: relative;
+    z-index: 0;
+    border: none;
+    padding-left: 0.2em;
+}
+.yui-navset .yui-nav li {
+    padding: 0;
+    margin: 0.2em 0.3em;
+    transition: transform 0.2s ease-in-out;
+}
+.yui-navset .yui-nav li a {
+    background: transparent;
+    color: #5f6368;
+    border: 1px solid rgba(0,0,0,0.12);
+    transition: background 0.1s ease-in-out,
+                color 0.1s ease-in-out,
+                border 0.1s ease-in-out;
+}
+.yui-navset .yui-nav li a:hover {
+    background: rgba(0,0,0,0.04);
+    color: #202124;
+    border: 1px solid rgba(0,0,0,0.12);
+}
+.yui-navset .yui-nav li a em {
+    border: none;
+    padding: 0.5em 0.5em calc(0.5em - 2px) 0.5em;
+}
+.yui-navset .yui-nav .selected {
+    padding: 0;
+    margin: 0.2em 0.3em;
+    transform: scale(1.1);
+}
+.yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a:focus, .yui-navset .yui-nav .selected a:hover {
+    padding: 0;
+    border: 1px solid #1e3c62;
+    border: 1px solid var(--dark-accent);
+    background: #295183;
+    background: var(--light-accent);
+}
+.yui-navset .yui-nav .selected a em {
+    padding: 0.5em 0.5em calc(0.5em - 2px) 0.5em;
+    border: none;
+}
+ 
+.yui-navset .yui-content {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    position: relative;
+    margin-top: 0.2em;
+    transform-origin: 0 0;
+}
+.yui-navset .yui-content > div {
+    border: 1px solid rgba(0,0,0,0.12);
+    border-left: none;
+    background-color: #f5f5f5;
+    padding: 0.25em 0.5em;
+    display: block;
+    top: 0;
+    overflow: hidden;
+    transform-origin: 0 0;
+}
+#page-content .yui-navset .yui-content > div > * {
+    transform-origin: 0 0;
+}
+#page-content .yui-navset .yui-content > div[style*="none"] {
+    display: block !important;
+    flex: 0;
+    max-height: 0;
+    padding: 0 0.5em;
+    border-width: 0;
+    /* The following transition affects the one that DISAPPEARS */
+    transition: padding 0s linear 0.5s,
+                border-width 0s linear 0.5s,
+                flex 0.5s cubic-bezier(.0,1.27,.0,.89) 0s;
+    animation: tab-disappear 0.5s ease-in-out 0s 1 both;
+}
+#page-content .yui-navset .yui-content > div[style*="block"] {
+    display: block !important;
+    flex: 1;
+    max-height: 9999rem;
+    /* The following transition affects the one that APPEARS */
+    transition: padding 0s linear 0.5s,
+                border-width 0s linear 0.5s,
+                flex 0.5s cubic-bezier(.99,.0,.99,.0) 0.5s;
+    animation: tab-appear 0.5s ease-in-out 0.5s 1 both;
+}
+ 
+@keyframes tab-disappear {
+    0% { max-height: 9999rem; }
+    1% { max-height: 100vh; }
+    100% { max-height: 0; }
+}
+@keyframes tab-appear {
+    0% { max-height: 0; }
+    99% { max-height: 100vh; }
+    100% { max-height: 9999rem; }
+}
+[[/module]]
+[[image shit.png]]
