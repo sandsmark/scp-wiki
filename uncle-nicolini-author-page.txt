@@ -3,6 +3,40 @@ title:uncle nicolini author page
 hi
 welcome to my author page. 
 [[/=]]
+[[html]]
+<div style="display:inline-block; width = 100%">
+<div id="findbalance" class="titlebox" style="float:left">
+Here's a thing for you to click.
+  <Button type="button" class="inputfield" id="submit">Submit</Button><br/>
+</div>
+<div id="wise" style="display:none;float:right" class="titlebox" >
+Having fun?
+  <Button type="button" class="inputfield" id="wiseSubmit">Submit</Button>
+</div>
+</div>
+<script>
+document.getElementById("submit").onclick= function(){
+document.getElementById("findbalance").style.display = "none";
+document.getElementById("wise").style.display="";
+}
+document.getElementById("wiseSubmit").onclick= function(){
+document.getElementById("wise").style.display = "none";
+document.getElementById("findbalance").style.display = "";
+};
+</script>
+<style>
+.titlebox{
+  border: black 1px solid;
+  padding: 10px;
+  width: 40%;
+  background: beige;
+}
+.inputfield {
+padding: 2px;
+margin: 2px;
+}
+</style>
+[[/html]]
 @@ @@
 @@ @@
 @@ @@
