@@ -688,3 +688,89 @@ Check out my competitors tales, too!
 
 [[user keyii]]: To Be Announced
 [[user Weryllium]]: To Be Announced
+
+[[module css]]
+@import url('https://fonts.googleapis.com/css?family=Prompt:500');
+
+.snapchat, .snapchat-sender {
+    font-family: "Prompt", "Trebuchet MS", sans-serif;
+    font-weight: 500;
+}
+
+.snapchat {
+    border-left: 6px solid #999;
+    border-radius: 2px;
+    margin: 8px;
+    padding: 0 24px 0 4px;
+    font-size: 17px;
+    background: #eeeeee;
+    max-width: 460px !important;
+}
+
+.snapchat p {
+    margin: 0;
+    line-height: 1.55em;
+}
+
+.snapchat img {
+    margin: 8px 0 8px 12px;
+}
+
+.snapchat-sender {
+    font-size: 13px;
+    position: relative;
+    left: 7px;
+    bottom: -12px;
+    text-transform: uppercase;
+}
+
+.snapchat.snapchat-incoming {
+    border-left-color: #18aaf8;
+}
+
+.snapchat.snapchat-outgoing {
+    border-left-color: #f23b57;
+}
+
+.snapchat-sender.snapchat-incoming {
+    color: #18aaf8;
+}
+
+.snapchat-sender.snapchat-outgoing {
+    color: #f23b57;
+}
+
+.snapchat.snapchat-typing {
+    border-left-width: 3px;
+    background-color: white;
+    padding-right: 0;
+}
+
+.snapchat.snapchat-typing:after {
+    content: "typing...";
+    font-size: small;
+    color: #666;
+    pointer-events: none;
+}
+
+@media (min-width: 480px) {
+    .snapchat.snapchat-typing p:last-child {
+        margin-bottom: -12px
+    }
+
+    .snapchat.snapchat-typing:after {
+        content: url("http://scp-wiki.wdfiles.com/local--files/grin-and-bear-it/stacey-typing");
+        position: relative;
+        left: -7px;
+        speak: none;
+        pointer-events: none;
+    }
+
+    .jumbomoji {
+        line-height: 48px;
+        font-size: 32px;
+        letter-spacing: -0.17em;
+    }
+}
+
+[[/module]]
