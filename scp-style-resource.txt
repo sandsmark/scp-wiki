@@ -1900,6 +1900,27 @@ margin-bottom: 5%;
 * This login format is made for articles that use offsets. Change the placeholder text to the proper offset link for your article.
 [[/collapsible]]
 
+
+**__Option 2-//suboption//__**
+**What it looks like:**
+[[include :scp-int:component:coltop show=+ show|hide=- hide]]
+[[include :scp-sandbox-3:component:login-module |url=http://www.scp-wiki.net/scp-style-resource#toc8|id=<YOUR ID>|pw=<YOUR PASSWORD>|disc=true|value=link]]
+[[include :scp-sandbox-3:component:login-module |id=<YOUR ID>|pw=<YOUR PASSWORD>|disc=true]]
+[[collapsible show="collapsible" hide="Logout"]]
+text
+[[/collapsible]]
+[[include :scp-int:component:colend]]
+
+**__What to copy:__**
+[[collapsible]]
+> @@[[include :scp-sandbox-3:component:login-module |url=http://www.scp-wiki.net/scp-style-resource|id=<YOUR ID>|pw=<YOUR PASSWORD>|disc=true|value=link]]@@
+
+> @@[[include :scp-sandbox-3:component:login-module |id=<YOUR ID>|pw=<YOUR PASSWORD>|disc=true]]@@
+> @@[[collapsible show="collapsible" hide="Logout"]]@@
+> text
+> @@[[/collapsible]]@@
+[[/collapsible]]
+
 @@ @@
 
 @@ @@
