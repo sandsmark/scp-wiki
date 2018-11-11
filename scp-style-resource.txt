@@ -912,39 +912,33 @@ I can't verify your wikidot ID.[[span class="blink"]]|[[/span]]
 [[module CSS]]
 
 div.terminal{
-        width: @display-width;
-        height: @display-height;
     border: 1px solid black;
     border: solid 3px #BBBBBB;
     border-radius: 16px;
     background-color: #131;
 /* black shadow at the top of the terminal */
-  	background-image: 
-    	radial-gradient(ellipse 1000% 100% at 50% 90%, transparent, #121);
-  	background-position: center;
-  	display: block;
+    background-image: 
+        radial-gradient(ellipse 1000% 100% at 50% 90%, transparent, #121);
+    background-position: center;
+    display: block;
 /* shadow around the terminal */
-  	box-shadow: inset 0 0 10em 1em rgba(0,0,0,0.5);
+    box-shadow: inset 0 0 10em 1em rgba(0,0,0,0.5);
 /* prevents scanline from forming a scrollwheel */
-  	overflow:hidden;
+    overflow:hidden;
 }
-
 div.terminal blockquote {
-
     background-color: black;
-
     border: double 3px #80FF80
-
 }
-
 div.scanline{
     margin-top: -40%;
-    width: @display-width;
+    width: 100%;
     height: 60px;
     position: relative;
     pointer-events: none;
-    -webkit-animation: scan 5s linear 0s infinite;; /* Safari 4.0 - 8.0 */
-    animation: scan 12s linear 0s infinite;
+/* Safari 4.0 - 8.0 */
+    -webkit-animation: scan 12s linear 0s infinite; /* You may need to change this. If the bar goes by too quickly, increase 5s. */
+    animation: scan 12s linear 0s infinite; /* Same as above */
     background: linear-gradient(to bottom, rgba(56, 112, 82,0), rgba(56, 112, 82,0.1)) !important;
 }
 
@@ -952,16 +946,20 @@ div.text{
     color: rgba(128,255,128,0.8);
     padding-left: 2em;
     padding-top: 40%;
-font-family: monospace;
-font-size: 1.2em;
+    font-family: monospace;
+    font-size: 1.2em;
     }
-    
+
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes scan{
     from{ transform: translateY(-10%);}
-    to{  transform: translateY(5000%);}
+    to{  transform: translateY(5000%);} /* You may need to change this depending on the length of your terminal. If the scanline stops halfway, increase the second number.*/
 }
 
+@keyframes scan{
+    from{ transform: translateY(-10%);}
+    to{  transform: translateY(5000%);} /* Same as above.*/
+}
 
 div.text a {
     color: #90EE90;
@@ -982,7 +980,6 @@ div.text a:hover {
 div.text a:hover::before{
 content: "> ";
 }
-
 [[/module]]
 [[div class="terminal"]]
 [[div class="scanline"]]
@@ -1001,11 +998,12 @@ Welcome, User
 @@ @@
 > Links inside the terminal gain a ">" when you hover over them.
 > [http://www.google.com like this]
- 
-Thanks for checking out my format!
-[[/div]]
-[[/div]]
 
+Thanks for checking out my format!
+@@ @@
+@@ @@
+[[/div]]
+[[/div]]
 **What to copy:**
 [[collapsible]]
 
@@ -1014,37 +1012,33 @@ Thanks for checking out my format!
 [[module CSS]]
 
 div.terminal{
-        width: @display-width;
-        height: @display-height;
     border: 1px solid black;
     border: solid 3px #BBBBBB;
     border-radius: 16px;
     background-color: #131;
 /* black shadow at the top of the terminal */
-  	background-image: 
-    	radial-gradient(ellipse 1000% 100% at 50% 90%, transparent, #121);
-  	background-position: center;
-  	display: block;
+    background-image: 
+        radial-gradient(ellipse 1000% 100% at 50% 90%, transparent, #121);
+    background-position: center;
+    display: block;
 /* shadow around the terminal */
-  	box-shadow: inset 0 0 10em 1em rgba(0,0,0,0.5);
+    box-shadow: inset 0 0 10em 1em rgba(0,0,0,0.5);
 /* prevents scanline from forming a scrollwheel */
-  	overflow:hidden;
+    overflow:hidden;
 }
 div.terminal blockquote {
-
     background-color: black;
-
     border: double 3px #80FF80
-
 }
 div.scanline{
     margin-top: -40%;
-    width: @display-width;
+    width: 100%;
     height: 60px;
     position: relative;
     pointer-events: none;
-    -webkit-animation: scan 5s linear 0s infinite;; /* Safari 4.0 - 8.0 */
-    animation: scan 12s linear 0s infinite;
+/* Safari 4.0 - 8.0 */
+    -webkit-animation: scan 12s linear 0s infinite; /* You may need to change this. If the bar goes by too quickly, increase 5s. */
+    animation: scan 12s linear 0s infinite; /* Same as above */
     background: linear-gradient(to bottom, rgba(56, 112, 82,0), rgba(56, 112, 82,0.1)) !important;
 }
 
@@ -1052,16 +1046,20 @@ div.text{
     color: rgba(128,255,128,0.8);
     padding-left: 2em;
     padding-top: 40%;
-font-family: monospace;
-font-size: 1.2em;
+    font-family: monospace;
+    font-size: 1.2em;
     }
-    
+
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes scan{
     from{ transform: translateY(-10%);}
-    to{  transform: translateY(5000%);} /* You may need to change this depending on the length of your terminal. */
+    to{  transform: translateY(5000%);} /* You may need to change this depending on the length of your terminal. If the scanline stops halfway, increase the second number.*/
 }
 
+@keyframes scan{
+    from{ transform: translateY(-10%);}
+    to{  transform: translateY(5000%);} /* Same as above.*/
+}
 
 div.text a {
     color: #90EE90;
@@ -1104,8 +1102,10 @@ Welcome, User
 @@ @@
 > Links inside the terminal gain a ">" when you hover over them.
 > [http://www.google.com like this]
- 
+
 Thanks for checking out my format!
+@@ @@
+@@ @@
 [[/div]]
 [[/div]]
 [[/code]]
