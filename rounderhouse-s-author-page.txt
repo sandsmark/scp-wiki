@@ -98,6 +98,25 @@ div#container-wrap::before {
 #top-bar ul li:hover a:hover {
     background: #c8e293; /* top bar hover background color */
 }
+
+#login-status {
+    color: #000000;
+    font-size: 90%;
+    z-index: 30;
+}
+#login-status a {
+    background: transparent;
+    color: #000000;
+}
+#login-status ul a {
+    color: #000000;
+    background: transparent;
+}
+ 
+#account-topbutton {
+    background: #ddd;
+    color: #000000;
+}
 [[/module]]
 
 [[module css]]
