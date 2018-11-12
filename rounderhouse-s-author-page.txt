@@ -117,6 +117,57 @@ div#container-wrap::before {
     background: #ddd;
     color: #000000;
 }
+
+.page-rate-widget-box .rate-points {
+    background-color: #282e48 !important;
+    border: solid 1px #D4AF37;
+    border-right: 0;
+    border-radius: 10px 0 0 10px;
+}
+ 
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background-color: #282e48;
+    border-top: solid 1px #D4AF37;
+    border-bottom: solid 1px #D4AF37;
+    font-weight: bold;
+}
+ 
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    background: transparent;
+    color: #D4AF37;
+    padding: 0 4px;
+    margin: 0 1px;
+ 
+}
+ 
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background: #D4AF37;
+    color: #000000;
+    text-decoration: none;
+}
+ 
+.page-rate-widget-box .cancel {
+    background-color: #282e48;
+    border: solid 1px #D4AF37;
+    border-left: 0;
+    border-radius: 0 10px 10px 0;
+}
+ 
+.page-rate-widget-box .cancel a {
+    background: transparent;
+    text-transform: uppercase;
+    color: #D4AF37;
+}
+ 
+.page-rate-widget-box .cancel a:hover {
+    border-radius: 0 6px 6px 0;
+    background: #D4AF37;
+    color: #000000;
+    text-decoration: none;
+}
 [[/module]]
 
 [[module css]]
