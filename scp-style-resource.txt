@@ -1912,8 +1912,9 @@ text
 
 **__What to copy:__**
 [[collapsible]]
++++* link option: insert your page's url (or "/ + pagename") into "url"
 > @@[[include@@ :scp-sandbox-3:component:login-module **|url=@@http://www.scp-wiki.net/scp-style-resource@@**|id=<YOUR ID>|pw=<YOUR PASSWORD>|disc=true**|value=link**@@]]@@
-
++++* collapsible option: insert collapsible between the module
 > @@[[include :scp-sandbox-3:component:login-module |id=<YOUR ID>|pw=<YOUR PASSWORD>|disc=true]]@@
 > @@[[collapsible show="collapsible" hide="Logout"]]@@
 > text
