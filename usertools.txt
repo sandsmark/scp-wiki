@@ -1,35 +1,21 @@
 title:SCP Wiki Usertools
 + What this is
 
-This page hosts tools and scripts to alter and hopefully improve your site experience. If it's hosted here it //should// work without any problems on Firefox and, depending on the specific script, on Chrome. If they don't, report any bugs to [http://05command.wikidot.com/technical-staff-main Tech Staff] and they'll work on a fix.
-
-They //might// work on Opera and Safari, but they haven't been tested for it. See 'How to install the userscripts' below for a link to instructions on getting userscripts to run in those browsers.
+This page hosts extensions, tools and scripts to alter and hopefully improve your site experience. If it's hosted here it should work on all browsers that the tool has been tested on. If they don't, or if you need the script to support your browser and it doesn't, report any bugs to the [http://05command.wikidot.com/technical-staff-main Tech Staff] and they'll work on a fix.
 
 + What this isn't
 
 An attempt to screw with your browser, your computer, or your life. Nor is it a vast conspiracy to steal those pics of you at the beach wearing nothing but a small guinea pig and assorted fruits. Seriously, these don't do anything other than modify your user experience on the SCP wiki.
 
-+ How to enable your browser to run userscripts
+ _
 
-If you're a Firefox user, go [https://addons.mozilla.org/en-us/firefox/addon/greasemonkey here] and click the button labeled '+ Add to Firefox'.
+-----
 
-If you're a Chrome user, your browser comes with a built-in support for userscripts.
-
-If you're Safari user, go [http://www.simplehelp.net/2007/11/14/how-to-run-greasemonkey-scripts-in-safari here] to find instructions on how to enable your browser to run userscripts.
-
-That will install the base you need to be able to run the scripts linked here.
-
-+ How to install the userscripts
-
-**Firefox:** click on the link below and let Greasemonkey install it for you.
-
-**Chrome:** click on the link below and download the script to your computer. Open an Explorer window (if running Windows, otherwise run the equivalent) and browse to the file you just downloaded. Then click on the "Customize Google Chrome Button" to the right of the address bar and go to Tools > Extensions. Drag the downloaded .js file onto the Extensions page. Just click 'OK' to install the script.
-
-**Opera:** [http://www.howtogeek.com/howto/3986/set-up-user-scripts-in-opera-browser/ This page] tells you how to install userscripts for your browser.
-
-**Safari:** [http://www.simplehelp.net/2007/11/14/how-to-run-greasemonkey-scripts-in-safari This page] tells you how to install userscripts for your browser.
+ _
 
 + Extensions
+
+An extension is a fully-fledged addition to your browser that is installed from your browser's extension and/or app store. Extensions will automatically update.
 
 [[div class="content-panel standalone series"]]
 ++ S-CSS-P
@@ -38,7 +24,7 @@ That will install the base you need to be able to run the scripts linked here.
 
 [[image s-css-p.png]]
 
-**Description:** A modular stylesheet picker that lets you independently adjust the layout, color scheme, logo, fonts, and rating module visibility.  Includes sync capability so your preferences carry across browsers so long as you're sign in to Chrome or Firefox.
+**Description:** A modular stylesheet picker that lets you independently adjust the layout, color scheme, logo, fonts, and rating module visibility. Includes sync capability so your preferences carry across browsers so long as you're signed in to Chrome or Firefox.
 
 [[collapsible show="[+] Detailed instructions for install" hide="[-] Detailed instructions for install"]]
 # Install S-CSS-P as an add-on to your default browser.
@@ -55,6 +41,8 @@ For bugs, tips or comments, contact [[user pxdnbluesoul]].
 **Verified working on:** [[image FF_icon.png]] [[image Chrome_icon.png]] [[image Opera_icon.png]]
 @@ @@
 [[/div]]
+
+ _
 
 + User Styles
 
@@ -85,7 +73,77 @@ For bugs, tips or comments, contact [[user anqxyr]] or [[user LurkD]].
 @@ @@
 [[/div]]
 
-+ Greasemonkey/Tampermonkey userscripts
+ _
+
++ Tampermonkey userscripts
+
+A userscript is a single Javascript file that runs on your page. It is essentially a much smaller extension. Userscripts must be installed manually through a script manager such as Tampermonkey. These userscripts do not automatically update.
+
+[[collapsible show="+ How to install a userscript"]]
+
+> ++ How to enable your browser to run userscripts
+> 
+> Browsers don't know how to run userscripts by default - to teach them how, you'll need to install an extension that manages them. We recommend Tampermonkey, which works for most browsers. Other userscript managers are available, but it is not guaranteed that these userscripts will work for those.
+> 
+> **[[image FF_icon.png]] Firefox:**
+> 
+> # Go [https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/ here].
+> # Click the button labeled '+ Add to Firefox' to install Tampermonkey.
+> 
+> **[[image Chrome_icon.png]] Chrome:**
+> 
+> # Go [https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo here].
+> # Click the button labeled 'Add to Chrome' to install Tampermonkey.
+> 
+> **[[image Safari_icon.png]] Safari:**
+> 
+> # Go [https://safari-extensions.apple.com/details/?id=net.tampermonkey.safari-G3XV72R5TC here].
+> # Click 'Install now' to install Tampermonkey.
+> 
+> **[[image Opera_icon.png]] Opera:**
+> 
+> # Go [https://addons.opera.com/en/extensions/details/tampermonkey-beta/ here].
+> # Click the button labeled 'Add to Opera' to install Tampermonkey.
+> 
+> **[[image Edge_icon.png]] Edge:**
+> 
+> # Go [https://www.microsoft.com/en-gb/p/tampermonkey/9nblggh5162s?rtc=1&activetab=pivot:overviewtab here].
+> # Click the button labeled 'Get' to install Tampermonkey.
+> 
+> This will install the base you need to be able to run the scripts linked here.
+
+> ++ How to install the userscripts
+> 
+> **Any browser using Tampermonkey:**
+> 
+> # Pick the userscript you want and click the link labelled "Click here to download/install".
+> # You should be redirected to Tampermonkey. Click "Install".
+>  * If you are not redirected, and the file simply downloads itself, then Tampermonkey is not correctly installed.
+>  * If the userscript fails to install for whatever reason, let a Tech Team member know.
+> # Refresh the page, and your userscript should be active.
+> # Continue browsing!
+> # If at any point you get redirected to a page that says "//A userscript wants to access a cross-origin resource.//", click "Always allow" in the bottom left. You'll have 20 seconds in which to do this - if you run out of time, don't worry, it'll pretend you said "no" and ask you again when it needs to.
+
+ _
+
+[[/collapsible]]
+
+[[div class="content-panel standalone series"]]
+++ Staff Identification 2
+
+**Link:** [[file scpwiki-staff-ids-2.user.js|Click here to download/install]]
+
+**Screenshot:**
+
+[[image Staff-identification-screenshot-2.png]]
+
+**Description:** Adds a title below the username to signify if a user is staff and what position they hold. May help you keep track of the shitload of staff we have to employ around here. ;)
+
+This script works on both the SCP Wiki and on O5 Command.
+
+**Verified working on:** [[image FF_icon.png]] [[image Chrome_icon.png]] [[image Opera_icon.png]] (Oct 2018)
+@@ @@
+[[/div]]
 
 [[div class="content-panel standalone series"]]
 ++ The Jumpbox
@@ -117,7 +175,7 @@ If you use any other modifier, it ignores it and acts like you only requested th
 
 [[/collapsible]]
 
-**Verified working on:** [[image FF_icon.png]] [[image Chrome_icon.png]] [[image Opera_icon.png]]
+**Verified working on:** [[image FF_icon.png]] [[image Chrome_icon.png]] [[image Opera_icon.png]] (Oct 2018)
 @@ @@
 [[/div]]
 
@@ -134,7 +192,7 @@ If you use any other modifier, it ignores it and acts like you only requested th
 
 **Description:** This provides "<< Previous" and "Next >>" links at the top of any mainlist SCP article. Works fairly fast, but does get slower when there's a lot of [ACCESS DENIED]s between the current page and the next eligible article. This is really only a factor in Series 3 at this moment.
 
-**Verified working on:** [[image FF_icon.png]] [[image Chrome_icon.png]] [[image Opera_icon.png]]
+**Verified working on:** [[image FF_icon.png]] [[image Chrome_icon.png]] [[image Opera_icon.png]] (Oct 2018)
 @@ @@
 [[/div]]
 
@@ -154,41 +212,6 @@ If you use any other modifier, it ignores it and acts like you only requested th
 [[/div]]
 
 [[div class="content-panel standalone series"]]
-++ Author Karma
-
-**Link:** [[file scpwiki-author-karma.user.js|Click here to download/install]]
-
-**Screenshot:**
-
-[[image AuthorKarma-screenshot.png]]
-
-**Description:** Replaces the Wikidot karmabar with one that signifies how many succesful scp,  tale and goi-format pages a user has written for the wiki. Also adds a textual representation after the username. This may help you determine the amount of experience a user has when it comes to writing for the wiki. However, that does **not** necessarily mean users with low author karma are inexperienced.
-
-**Note:** The page this checks in the background may not have been updated recently (see the textual representation for the last time it was updated.)
-
-**Verified working on:** [[image FF_icon.png]]
-@@ @@
-[[/div]]
-
-[[div class="content-panel standalone series"]]
-++ Staff Identification **WARNING: CURRENTLY OUTDATED**
-
-**Link:** [[file scpwiki-staff-ids.user.js|Click here to download/install]]
-
-**Screenshot:**
-
-[[image Staff-identification-screenshot.png]]
-
-**Description:** Adds a title below the username to signify if a user is staff and what position they hold. May help you keep track of the shitload of staff we have to employ around here. ;)
-
-//Warning:// This plugin relies on an outdated staff listing and is currently scheduled for updating.
-
-**Verified working on:** [[image FF_icon.png]]
-@@ @@
-[[/div]]
-
-
-[[div class="content-panel standalone series"]]
 ++ Series pages dead link checker
 
 **Link:** [[file SCP-deadlinks_SCP_Series.user.js|Click here to download/install]]
@@ -204,7 +227,47 @@ If you use any other modifier, it ignores it and acts like you only requested th
 [[/div]]
 
 [[div class="content-panel standalone series"]]
-++ Real Rating Info
+++ Rating-B-Gone
+
+**Link:** [[file scpwiki-rating-b-gone.user.js|Click here to download/install]]
+
+**Screenshot:** N/A
+
+**Description:** Hides the rating module, and modifies the rating link at the bottom to not show the current rating.
+
+**Verified working on:** [[image FF_icon.png]]
+@@ @@
+[[/div]]
+
++ Outdated userscripts
+
+[[include :scp-sandbox-3:component:collapsible-top show=+ Show outdated userscripts]]
+
+[[div class="content-panel standalone series"]]
+++ Author Karma **(Working, but outdated)**
+
+**Database requires more frequent updating.** (Oct 2018)
+
+**Link:** [[file scpwiki-author-karma.user.js|Click here to download/install]]
+
+**Screenshot:**
+
+[[image AuthorKarma-screenshot.png]]
+
+**Description:** Replaces the Wikidot karmabar with one that signifies how many succesful scp,  tale and goi-format pages a user has written for the wiki. Also adds a textual representation after the username. This may help you determine the amount of experience a user has when it comes to writing for the wiki. However, that does **not** necessarily mean users with low author karma are inexperienced.
+
+**Note:** The page this checks in the background may not have been updated recently (see the textual representation for the last time it was updated.)
+
+The last time the database was updated was 22nd June 2017.
+
+**Verified working on:** [[image FF_icon.png]]
+@@ @@
+[[/div]]
+
+[[div class="content-panel standalone series"]]
+++ Real Rating Info **(Not working)**
+
+**Not working on Firefox or Chrome** (Oct 2018)
 
 **Link:** [[file scpwiki-real-votes.user.js|Click here to download/install]]
 
@@ -213,13 +276,12 @@ If you use any other modifier, it ignores it and acts like you only requested th
 [[image ss_real_votes.png]]
 
 **Description:** Adds a clickable text underneath the rating module for a page, that tells you more about its real rating including how many up- and downvotes it has from active members, how many deleted accounts voted on the page, and whether there are double votes.
-
-**Verified working on:** [[image FF_icon.png]]
-@@ @@
 [[/div]]
 
 [[div class="content-panel standalone series"]]
-++ HIRTOY? (Have I Read This One Yet?)
+++ HIRTOY? (Have I Read This One Yet?) **(Not working)**
+
+**Not working on Chrome (404)** (Nov 2018)
 
 **Link:** [[file scpwiki-page-read.user.js|Click here to download/install]]
 
@@ -235,15 +297,4 @@ Now also adds a green checkmark on Series pages to show you've already marked an
 @@ @@
 [[/div]]
 
-[[div class="content-panel standalone series"]]
-++ Rating-B-Gone
-
-**Link:** [[file scpwiki-rating-b-gone.user.js|Click here to download/install]]
-
-**Screenshot:** N/A
-
-**Description:** Hides the rating module, and modifies the rating link at the bottom to not show the current rating.
-
-**Verified working on:** [[image FF_icon.png]]
-@@ @@
-[[/div]]
+[[include :scp-sandbox-3:component:collapsible-bottom]]
