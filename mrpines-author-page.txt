@@ -135,11 +135,31 @@ There is also the fact to mention that several other author pages are meta thems
 -----
 
 [[collapsible show="area to test things"]]
-[[module ListPages order="created_at desc" tags="+shark-punching-center" perPage="20" separate="no"]]
+[[module ListPages order="created_at desc" tags="+shark-punching-center -tale" perPage="20" separate="no"]]
 [[div class="feature-block"]]
 [[div class="content-panel left-column"]]
 [[div class="panel-heading"]]
-Featured SCP
+SPC Article
+[[/div]]
+[[div class="panel-body"]]
+[[div class="feature-title"]]
+%%title_linked%%
+[[/div]]
+[[div class="feature-subtitle"]]
+by [[span class="ping"]]%%created_by%%[[/span]]
+[[/div]]
+[[/div]]
+[[div class="panel-footer"]]
+@@ @@
+[[/div]]
+[[/div]]
+[[/div]]
+-----
+[[module ListPages order="created_at desc" tags="+shark-punching-center +tale" perPage="20" separate="no"]]
+[[div class="feature-block"]]
+[[div class="content-panel left-column"]]
+[[div class="panel-heading"]]
+SPC Tale
 [[/div]]
 [[div class="panel-body"]]
 [[div class="feature-title"]]
