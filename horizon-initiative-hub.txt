@@ -1,0 +1,504 @@
+title:Horizon Initiative Hub
+[[module CSS]]
+@import url('https://fonts.googleapis.com/css?family=Kumar+One');
+
+
+:root {
+    --fg: #282e48;
+    --light-accent: #295183;
+    --dark-accent: #1e3c62;
+    --hyperlink: #434d79 !important;;
+    --hyperlink-visited: #282e20 !important;;
+}
+
+#header {
+    overflow:hidden
+    text-align: left;
+}
+ 
+#header {
+    background: url(http://firedawnfolder.wikidot.com/local--files/yurt-13/logo5.png) 1px 20px no-repeat;
+}
+
+#header h1 a span {
+    display: none;
+}
+
+#header h1 a::before {
+    content: "Horizon Initiative";
+    font-family: 'Kumar One', cursive;
+    color: #ffffff;
+    bottom: -2em;
+    text-shadow:
+        3px 1px 0 #D4AF37;
+}
+ 
+#header h2 {
+    display: inline-block;
+    position: absolute;
+    bottom: 30%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 65px 125px 0px;
+}
+ 
+#header h2 span{
+    font-size: 0px;
+    padding: 0px 0px;
+}
+#header h2:after {
+    content: "In The Eyes of God";
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+    white-space: pre;
+}
+
+div#container-wrap{background: url("http://firedawnfolder.wikidot.com/local--files/yurt-13/image1.png") top left repeat-x;
+background-position-y: -50px;
+}
+
+
+
+#login-status {
+    color: #d3d8e2;
+    font-size: 90%;
+    z-index: 30;
+}
+
+#login-status a {
+    background: transparent;
+    color: #d3d8e2;
+}
+#login-status ul a {
+    color: #d3d8e2;
+    background: transparent;
+}
+ 
+#account-topbutton {
+    background: #ddd;
+    color: #d3d8e2;
+}
+[[/module]]
+[[module CSS]]
+/* inputs */
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+    border-top: 1px solid #000000;
+}
+ 
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    background: #D4AF37;
+    color: #ffffff;
+}
+#top-bar ul li ul a, #top-bar a:hover {
+    color: #8db600;
+}
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: #282e48; /* top bar hover background color */
+}
+
+/*------------------*\
+ *     Side Bar     * 
+\*------------------*/
+#side-bar .side-block {
+    border: 1px solid #665731;
+}
+#side-bar .heading {
+    color: #ffffff;
+    border-bottom: solid 1px #665731;
+}
+
+#side-bar .side-block {
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    box-shadow: none !important;
+    background: #282e48 !important; 
+    margin-bottom: 15px;
+    color: white;
+}
+ 
+#side-bar img {
+    filter: hue-rotate(65deg);
+    -webkit-filter: hue-rotate(65deg) brightness(400%);
+}
+#side-bar div.side-block:nth-child(7) > div:nth-child(1) > div:nth-child(1) img {
+    filter: none;
+    -webkit-filter: none;
+}
+
+#side-bar div.menu-item a {
+    color: #ffffff;
+}
+
+
+/*-------------------*\
+ *    Blockquotes    * 
+\*-------------------*/
+ 
+blockquote {
+    border: 1px solid rgba(0,0,0,0.12);
+    background-color: transparent;
+}
+/*------------------*\
+ *      Images      * 
+\*------------------*/
+ 
+#page-content .scp-image-block {
+    border-color: rgba(0,0,0,0.12);
+    box-shadow: none;
+}
+#page-content .scp-image-block .scp-image-caption {
+    border-color: rgba(0,0,0,0.12);
+    background-color: #f5f5f5;
+}
+/*------------------*\
+ *      Tabs        * 
+\*------------------*/
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    border-color:#282e48; /* color between tab list and content */
+}
+ 
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    background-color:#eff1f7; /* tab background */
+    border-color:#282e48;
+    color:#000;
+}
+ 
+.yui-navset .yui-nav a em,
+.yui-navset .yui-navset-top .yui-nav a em {
+    border-color: #282e48;
+}
+ 
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:hover {
+    background-image: none;
+    background-color:#103259; /* selected tab background */
+    color:#d2a32d;
+}
+ 
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    background-color: #d2a32d; /* selected tab background */
+}
+ 
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a em {
+    border-color: #282e48; /* selected tab border color */
+}
+ 
+.yui-navset .yui-content {
+    background-color: #f5f6ff; /* content background color */
+}
+ 
+.yui-navset .yui-content,
+.yui-navset .yui-navset-top .yui-content {
+    border-color: #282e48; /* content border */
+    border-top-color:#282e48; /* different border color */
+}
+ 
+.yui-navset-left .yui-content {
+    border-color: #3a3f54; /* content border */
+    border-left-color: #282e48; /* different border color */
+}
+ 
+.yui-navset-bottom .yui-content,
+.yui-navset .yui-navset-bottom .yui-content {
+    border-color: #D4AF37; /* content border */
+    border-bottom-color: #D4AF37; /* different border color */
+}
+#search-top-box-input, #search-top-box-input:hover, #search-top-box-input:focus {
+    background-color: #11131f;
+}
+#search-top-box-form input[type=submit] {
+    background: linear-gradient(to bottom, #3b4265, #3b4265, #0d0f19);
+}
+
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    background: linear-gradient(to bottom, #3b4265, #57608a, #252a40);
+}
+
+/*------------------*\
+ *  LINKS AND SUCH  * 
+\*------------------*/
+a {
+    color: #d2a32d;
+    color: var(--hyperlink);
+}
+a:visited {
+    color: #d19602;
+    color: var(--hyperlink-visited);
+}
+
+/*------------------*\
+*  RATINGS AND SUCH  * 
+\*------------------*/
+.page-rate-widget-box .rate-points {
+    background-color: #282e48 !important;
+    border: solid 1px #D4AF37;
+    border-right: 0;
+    border-radius: 10px 0 0 10px;
+    box-shadow: none;
+}
+.page-rate-widget-box {
+    border-radius: 10px;
+}
+ 
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background-color: #282e48;
+    border-top: solid 1px #D4AF37;
+    border-bottom: solid 1px #D4AF37;
+    font-weight: bold;
+
+}
+ 
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    background: transparent;
+    color: #D4AF37;
+    padding: 0 4px;
+    margin: 0 1px;
+ 
+}
+ 
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background: #D4AF37;
+    color: #000000;
+    text-decoration: none;
+}
+ 
+.page-rate-widget-box .cancel {
+    background-color: #282e48;
+    border: solid 1px #D4AF37;
+    border-left: 0;
+    border-radius: 0 10px 10px 0;
+}
+ 
+.page-rate-widget-box .cancel a {
+    background: transparent;
+    text-transform: uppercase;
+    color: #D4AF37;
+}
+ 
+.page-rate-widget-box .cancel a:hover {
+    border-radius: 0 6px 6px 0;
+    background: #D4AF37;
+    color: #000000;
+    text-decoration: none;
+}
+
+
+h1, #page-title {
+    color: #282e48;
+    padding: 0 0 0.25em;
+    margin: 0 0 0.6em;
+    font-weight: normal;
+}
+
+@media (max-width: 767px) { #header h1 a::before {font-size: 80%;} }
+
+[[/module]]
+
+[[module CSS]]
+.c_content {
+    width: 93%;
+    line-height: 20px;
+    display: inline-block;
+    padding-left: 25px;
+    padding-right: 25px;
+    vertical-align: top;
+    transition: all .7s;
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("http://scp-sandbox-3.wdfiles.com/local--files/coldpostmcgee/oldtimeywhimey.jpg") ;
+}
+[[/module]]
+
+[[>]]
+[[module rate]]
+[[/>]]
+
+[[div style="padding-top:15px"]]
+[[div style="display:block;margin:auto;width:80%;padding:20px;border:double 3px #112211;background:#FFFFFF;"]]
+
+= [[size x-large]]**//Welcome, Shepherd.//**[[/size]]
+
+Congratulations. You are now a full member of the Shepherd Corps of the Horizon Initiative. The associated titles, privileges, and burdens rest on your shoulders. You are the first line of defense of against the anomalies that the other organizations are too self-absorbed to acknowledge.  You will acquire relics for the Scribes, report targets to the Wolves, and answer directly to the Tribunal itself. But no one ever answers the lurking question, why does the Horizon Initiative exist? What could bring together some of the most divided groups on the face of the planet under the banner of God? The answer is older than the question. 
+
+For decades, various organizations have sought to acquire objects for personal gain. No matter their intentions, it is foolhardy to let a single group born of science, with no creed and no morals to speak of, to sit upon the largest cache of anomalous objects in existence. Since before the counting of time itself, the heathen churches of Mekhane and Yaldaboath have squirreled away sacrifices for their unholy masters, rending humanity asunder in their squabbles. And the various nations of Earth have their own pet groups, dedicated to seeking out objects in the name of their homelands. Men of science, infidels, and soldiers. All must bow before the might of His hammer, lest they be crushed.
+
+The Initiative is both a response to the state of affairs in the anomalous community, and the answer. God's Hand has guided humanity through our lowest lows, and our highest highs. With the world rapidly marching into the dawn of a new era, we cannot allow our future to be built on a Foundation of lies. God has always provided Man with a shining beacon in the dark. Whether it be in the shape of a prophet or a preacher, God's annointed raise their armies to combat the forces that threaten the pure. The Initiative is only the most recent iteration of the army of the Lord. An army both in war, protecting the faithful, and in peace, raising up the less fortunate. This is our duty, and we accept the burdens of our ancestors.
+
+As it was, so it shall be. Hundreds of groups, thousands of faithful, many interpretations. All under the banner of our Lord.
+[[/div]]
+[[/div]]
+-----
+[[div style="display:block;margin:auto;width:50%;padding:20px;border:dashed 2px #112211;background:#FFFFFF;"]]
+[[=image sun.jpg]]
+= //Accessing Relic List...//
+= //Files ready.//
+[[module ListPages order="ratingAsc" limit="100" tags="-archived -admin -author -sandbox -tale -goi-format  +scp +horizon-initiative" separate="no" perPage="100"]]
+* %%title_linked%%
+[[/module]]
+
+[[/div]]
+@@ @@
+-----
+@@ @@
+[[div style="display:block;margin:auto;width:50%;padding:20px;border:dashed 2px #112211;background:#FFFFFF;"]]
+[[=image sun.jpg]]
+= //Accessing Parables...//
+= //Files ready.//
+[[module ListPages order="ratingAsc" limit="100" tags="-archived -admin -author -sandbox -tale -goi-format  +tale +horizon-initiative" separate="no" perPage="100"]]
+* %%title_linked%%
+[[/module]]
+
+[[/div]]
+@@ @@
+-----
+@@ @@
+[[div style="display:block;margin:auto;width:50%;padding:20px;border:dashed 2px #112211;background:#FFFFFF;"]]
+[[=image sun.jpg]]
+= //Accessing Universal Texts Archive...//
+= //Files ready.//
+[[module ListPages order="ratingAsc" limit="100" tags="-archived -admin -author -sandbox -tale -goi-format  +goi-format +horizon-initiative" separate="no" perPage="100"]]
+* %%title_linked%%
+[[/module]]
+
+[[/div]]
+@@ @@ 
+-----
+[[=]]
+
+[[collapsible show="Writing Guide" hide="- Close"]]
+[[<]]
+[[tabview]]
+[[tab Overview]]
+The Horizon Initiative is an organization created in the late 1960s by various influential sects in the main three Abrahamic religions as a response to the growing number of anomalous activities and groups which they perceived as threats. The Initiative targets various anomalous objects for collection and/or destruction, depending on how the item fits into their belief system.
+
+The Initiative is led by a tribunal composed of leaders from the three largest sects involved in its creation, though a large amount of internal strife often leaves the official leadership in less than full control of the organization. The Initiative's main combat force, Project Malleus, is generally deployed in anti-cult operations and item retrieval operations.
+
+The Initiative's relations with most other Groups of Interest and the Foundation are a constantly shifitn web; while all parts of the HI perceive the Church of the Broken God and Fifth Church with a great degree of hostility, sentiments toward the Foundation and the GOC vary greatly, from open hostility to a limited willingness to cooperate, depending on the internal affiliation of individual members. Depending on which group has power within the Initiative, these alliances can change at the drop of a hat. 
+[[/tab]]
+[[tab Factions]]
+= **The Tribunal**
+
+> = **Samuel** 
+> = The most radical of the Tribunal. Leader of the Sons of Shammai.
+> = **Adnan** 
+> = The moderate member of the Tribunal. Leader of Atibba al-Kitab.
+> = **Bernard**
+> = The tie-breaker: often indecisive. Leader of the Ordinis Occulti Luminis.
+
+= **Corps**
+
+**The Scribe Corps** - The Initiative’s librarians, researchers, archivists, and clerical staff. They generally work behind the scenes, translating and analyzing recovered document and scripture. They are currently working to compile the Universal Texts, an amalgamation of various theological and religious scripts that form the Horizon Initiative's overarching belief system.
+
+**The Shepherd Corps** - The Initiative’s primary multipurpose field agency. Shepherds are the eyes, ears, and arms of the organization. Shepherds operate in pairs, often deep undercover in civilian lives.
+
+Shepherds will generally receive their assignments from the District Head of the Corps, but may betake special orders from the Tribunal, as they, unlike Project Malleus, are under Tribunal jurisdiction.
+
+A Shepherd’s primary duties include:
+
+• Serving as guiding members of the local community.
+• Studying religious groups and establishing relations with groups listed for assimilation.
+• Recovery of artifacts and records of interest to the Initiative.
+• Low-threat anti-cult operations.
+
+Most Shepherds will own one or two items of some minor anomalous property, most often acquired through contacts with friendly anartists or Serpent’s Hand cells. Veteran Shepherds will have more items on their person, sometimes upward of a dozen.
+
+**Project Malleus** (“The Wolves”) - The Initiative’s combat forces, under the command of Henry DeMontfort. Project Malleus is made from the most zealous and aggressive sects under the Initiative's umbrella. They will kill and die without question. A strong rivalry exists between Project Malleus and the Shepherd Corps, with the Shepherds referring to PM agents as “Wolves”, while being referred to themselves as simply “Sheep”.
+
+Project Malleus troops favor fire-and-brimstone methods, often using relics in combat of significant destructive power.
+[[/tab]]
+[[tab Demographics]]
+
+= **Demographics**
+
+• **Christianity** - Primarily a mixture of Roman and Orthodox Catholics, and mainstream protestants such as Lutherans, Anglicans, and Episcopalians. Representatives from evangelical and congregational sects, and the LDS Church, while present, are low in number.
+• **Judaism** - A very heterogeneous mixture of sects and groups, without clear majority groups.
+• **Islam** - Primarily Sunni, but with a significant number of practitioners of the Sufi mystic traditions.
+• **Eastern Religions** - The Initiative employs a small number of consultants, but Eastern religion on the whole goes fairly unacknowledged within the Initiative.
+• **Other** - The Initiative has absorbed numerous small-scale cults and organizations, such as the Cult of the Wordsmith, the Church of Purity, and the Australian Church of Australia, among many others.
+
+**The New Path** - A philosophy and religion born within the Initiative itself, which emphasizes moving away from the engrained shell of past ritual and ancient tradition and turning towards the "Truth of God”. It is generally frowned upon by the traditionalists, but the existence of the Universal Texts shows that it is gaining ground.
+
+[[/tab]]
+[[tab Relations]]
+• **Good Relations:** The Initiative will occasionally sponsor the Manna Charitable Foundation, They also support most cells of the Serpent’s Hand and non-violent anartists, who often supply minor anomalous artifacts to the Initiative.
+• **Variable Relations:** The Initiative officially has a truce with the Foundation and Global Occult Coalition, supplying research and provided with peace and sovereignty in turn. In reality, the Foundation-Initiative-Coalition treaty is constantly on the breaking point due to inside strife, most of it coming form the Initiative.  They have some relations with Marshall, Carter & Dark, but keep them at arm’s reach at the best of times.
+• **Poor Relations:** ORIA and the Initiative often come into conflict, due to ORIA being a Shia Muslim majority group, which contesst with the Initiative's Sunni majority. The Chaos Insurgency also are on poor terms, as they seek to destroy life where the Initiative seeks to raise it,
+• **Open Combat:** Church of the Broken God, Fifthist Church, AWCY and other violent anartists (generally those who have begun a crusade of their own against religion because so edgy).
+• **No notable relations:** Alexyva, Dr. Wondertainment, the Factory, GRU-P, Nobody, and the UIU.
+
+The Initiative has connections of various kinds with a great many minor religious organizations not mentioned here.
+[[/tab]]
+[[tab Themes]]
+**Street-level anomalies** - “For every SCP contained by the Foundation, ten thousand harmless anomalies go unnoticed.” The world is not under constant threat of destruction here. People live with, work with, and are anomalies on a daily basis. This view of the world is a much more weird and wonderful place than how the Foundation sees it.
+
+**Affiliation does not equal alignment** - All of the groups of interest will have good people, bad people, and people of all shades of grey. All of the GOIs have their own perceptions and biases, of course, and many times with good reason, but do not let their biases become yours.
+
+**Old vs New and the Truth** - The Initiative is rife with internal issues. The old guard wants to hold on to the traditions of the past, maintaining the status quo or regaining lost position. Others, seek to mold the old traditions into something new, founded instead on newer and more accurate discoveries. Some will choose to try to destroy legitimate items because they clash with old beliefs, and others may come to crises of faith because of what is discovered. On the opposite side, characters may come to various realizations and empowered belief by those same truths.
+[[/tab]]
+[[tab Timeline]]
+1944 - The three members of the Tribunal meet, the precursor to the Horizon Initiative is formed.
+
+c. 1960 - The Horizon Initiative is officially formed.
+
+1974 – Salah is born.
+
+1980 – Mary-Ann is born.
+
+1994 – Salah moves to Britain, meets Adnan.
+
+1998 – Salah graduates from university, begins full-time work in the Shepherd corps. Mary-Ann joins the Army Field Artillery Branch.
+
+c. 2000 – Project Malleus is founded. ([[[Fire On The Horizon]]]) Salah moves to the United States and is assigned to Chapterhouse 3.
+
+2001 – Mary-Ann is deployed to Afghanistan.
+
+2009 – Mary-Ann receives Honorable Discharge from the Army.
+
+2011 – Mary-Ann begins training for the Shepherd corps. [[[Tolerance]]] takes place.
+
+March 2012 – Mary-Ann and Salah are assigned as partners in the Shepherd corps.
+
+November 2012 – [[[Shepherds]]] and [[[Second Watch]]] take place. Foundation/Coalition/Initiative Non-Aggression Pact is signed.
+
+December 2012 – [[[People Look East]]] takes place.
+
+January 2013 – [[[The Good of the Other]]] takes place.
+
+February 2013 – [[[The Place Where Two Rivers Meet]]] takes place. Project Malleus destroys an anart community in California.
+
+April 2013 – [[[Breakfast for Dinner]]] takes place.
+
+May 2013 – [[[Crossing the Streams]]] takes place.
+
+October 2013 – [[[The Tick Tock Gospel]]] tales place.
+
+November 2013 – [[[The Written God]]] and [[[The Word and the Wolf]]] take place. Tribunal sanctions, investigations, and reforms against Project Malleus begin.
+
+December 2013 – [[[The Horizon Blues]]], [[[Nor Gloom of Night Shall Stay]]], and [[[ignition-part-one-the-artists|Ignition Part 1: The Artists]]] take place. Naomi is born.
+
+April 2014 – [[[Agricola In Insula Est Poeta]]] takes place.
+
+June 2014 – Empire of Dirt takes place. [[[The Settling Ash]]] begins. Salah resigns from active service.
+
+2022 - [[[The Settling Ash]]] ends.
+[[/tab]]
+[[/tabview]]
+[[/<]]
+[[/collapsible]]
+
+[[/=]]
+@@ @@
+@@ @@
