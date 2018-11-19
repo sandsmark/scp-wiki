@@ -25,7 +25,7 @@ Check out more of my articles [[[uraniumempire|here!]]]
   margin: 0;
 }
 [[/module]]
-[[module ListPages category="fragment" parent="." order="name" limit="1" offset="@URL|0"]]
+[[module ListPages category="fragment" parent="." order="created_at" limit="1" offset="@URL|0"]]
 [[div class="meta-title"]]
 %%title%%
 [[/div]]
