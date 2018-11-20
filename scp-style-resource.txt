@@ -424,6 +424,98 @@ NOTES
 [[/code]]
 [[/collapsible]]
 
+
+**__Option 3__**
+
+**What it looks like:**
+[[collapsible]]
+[[include :scp-sandbox-3:component:classified-experiment
+|experiment-title=Experiment-XXXX
+|sub-title=Subtitle
+|left=Purpose of the experiment:
+here is a "left" frame
+
+Result:
+wide frame
+|right=Subject:
+here is a "right" frame
+
+Date/Location:
+narrow frame
+|content=> = blockquote
+> **bold:** text text text [https://www.google.com/ link within blockquote]
+> = ↓hr
+> ----
+> + h1
+> ++ h2
+> +++ h3
+> ++++ h4
+> +++++ h5
+> ++++++ h6
+
++ h1
+++ h2
++++ h3
+++++ h4
++++++ h5
+++++++ h6
+]]
+[[/collapsible]]
+
+**What to copy:**
+
+[[collapsible]]
+**Tips!** You can use [http://www.scp-wiki.net/scp-style-resource#toc7 "Login/Logout" formats (Option 1, Option 2-suboption)] instead of the basic collapsible.
+> @@[[collapsible]]@@
+> **[[include :scp-sandbox-3:component:classified-experiment**
+> **|experiment-title=**Experiment-XXXX
+> **|sub-title=**Subtitle
+> **|left=**Purpose of the experiment:
+> here is a "left" frame
+> 
+> Result:
+> wide frame
+> **|right=**Subject:
+> here is a "right" frame
+> 
+> Date/Location:
+> narrow frame
+> **|content=**@@> = blockquote@@
+> @@> **bold:** text text text [https://www.google.com/ link within blockquote]@@
+> @@> = ↓hr@@
+> @@> ----@@
+> @@> + h1@@
+> @@> ++ h2@@
+> @@> +++ h3@@
+> @@> ++++ h4@@
+> @@> +++++ h5@@
+> @@> ++++++ h6@@
+> 
+> @@+ h1@@
+> @@++ h2@@
+> @@+++ h3@@
+> @@++++ h4@@
+> @@+++++ h5@@
+> @@++++++ h6@@
+> **]]**
+> @@[[/collapsible]]@@
+
+||~ attribute ||~ required ||~ allowed values ||~ description ||
+|| experiment-title || **yes** || text _
+link || value of title ||
+|| sub-title || no || text _
+link || value of sub-title ||
+|| content || **yes** || text _
+link || also you can use wikidot syntax (like blockquote) ||
+|| left || no || text _
+link || wide frame ||
+|| right || no || text _
+link || narrow frame ||
+|| warning || no || text || change "ACCESS GRANTED" ||
+
+[[/collapsible]]
+
+
 [[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
 [[/div]]
 [[div style="border-bottom:1px solid #777;"]]
