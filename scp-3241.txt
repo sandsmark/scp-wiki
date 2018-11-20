@@ -1,5 +1,77 @@
 title:SCP-3241
 [[module CSS]]
+.blinkbar {animation: blink 1.5s infinite; letter-spacing: -0.13em;}@keyframes blink{to{opacity: .0;}}@keyframes flicker {0% {opacity: 0.9890; }5% {opacity: 0.5842; }10% {opacity: 0.9865; }15% {opacity: 0.0412; }20% {opacity: 0.6255; }25% {opacity: 0.3157; }30% {opacity: 0.7328; }35% {opacity: 0.4654; }40% {opacity: 0.9128; }45% {opacity: 0.2449; }50% {opacity: 0.5485; }55% {opacity: 0.6438; }60% {opacity: 0.1180; }65% {opacity: 0.9085; }70% {opacity: 0.0266; }75% {opacity: 0.6795; }80% {opacity: 0.7812; }85% {opacity: 0.0117; }90% {opacity: 0.2239; }95% {opacity: 0.8897; }100% {opacity: 0.2260; }}@keyframes overlay-anim {0% {visibility: hidden; }10% {visibility: hidden; }11% {visibility: visible; }50% {visibility: hidden; }100% {visibility: hidden; }}
+
+div.terminal{
+    border: 1px solid black;
+    border: solid 3px #BBBBBB;
+    border-radius: 16px;
+    background-color: #131;
+/* black shadow at the top of the terminal */
+    background-image: 
+        radial-gradient(ellipse 1000% 100% at 50% 90%, transparent, #121);
+    background-position: center;
+    display: block;
+/* shadow around the terminal */
+    box-shadow: inset 0 0 10em 1em rgba(0,0,0,0.5);
+/* prevents scanline from forming a scrollwheel */
+    overflow:hidden;
+}
+div.terminal blockquote {
+    background-color: black;
+    border: double 3px #80FF80
+}
+div.scanline{
+    margin-top: -40%;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    pointer-events: none;
+/* Safari 4.0 - 8.0 */
+    -webkit-animation: scan 12s linear 0s infinite; /* You may need to change this. If the bar goes by too quickly, increase 5s. */
+    animation: scan 12s linear 0s infinite; /* Same as above */
+    background: linear-gradient(to bottom, rgba(56, 112, 82,0), rgba(56, 112, 82,0.1)) !important;
+}
+
+div.text{
+    color: rgba(128,255,128,0.8);
+    padding-left: 2em;
+    padding-top: 40%;
+    font-family: monospace;
+    font-size: 1.2em;
+    }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes scan{
+    from{ transform: translateY(-10%);}
+    to{  transform: translateY(7000%);} /* You may need to change this depending on the length of your terminal. If the scanline stops halfway, increase the second number.*/
+}
+
+@keyframes scan{
+    from{ transform: translateY(-10%);}
+    to{  transform: translateY(7000%);} /* Same as above.*/
+}
+
+div.text a {
+    color: #90EE90;
+    text-decoration: none;
+    background: transparent;
+}
+div.text a.newpage {
+    color: #90EE90;
+    text-decoration: none;
+    background: transparent;
+}
+div.text a:hover {
+    color: #131;
+    text-decoration: underline;
+    background-color: #80FF80;
+    padding: 1px;
+}
+[[/module]]
+
+
+[[module CSS]]
 @import url(/component:scp-pride/code/1);
 [[/module]]
 
@@ -278,19 +350,33 @@ Two weeks prior to the start of the inquiry, Daniel DeVorn escaped Foundation cu
 [[=]]
 [[collapsible show="[ RESTRICTED ACCESS: O5 CLEARANCE REQUIRED ]" hide="[ ''Nemo me impune lacessit.'' ]"]]
 
-> **##green|ACCESS GRANTED.##**
-
 [[<]]
-[[div style="display: inline-block; background:#000000; float:top; padding:5px; width:100%"]]
-++ ##white|Welcome, O5-5.##
-> You currently have **##red|33##** emails which require your attention.
-> You currently have **##red|26##** procedures which require review and approval.
-> You currently have **##red|1##** unsent draft.
-> What would you like to do?
-{{##white|> review draft##}}
+[[div class="terminal"]]
+[[div class="scanline"]]
+[[/div]]
+[[div class="text"]]
+[[=]]
+[[size 150%]]ACCESS GRANTED.[[/size]]
 
-> **FROM:** O5-5 <{{o55@scp.foundation}}>
-> **TO:** Daniel DeVorn <{{daniel.devorn@███████}}>
+@@------@@
+Welcome, O5-5.
+@@------@@
+[[/=]]
+@@ @@
+
+You currently have **###b3ffb3|33##** emails which require your attention.
+You currently have **###b3ffb3|26##** procedures which require review and approval.
+You currently have **###b3ffb3|1##** unsent draft.
+What would you like to do?
+
+@@>@@ ###b3ffb3|review draft##
+
+@@ @@
+
+@@ @@
+
+> **FROM:** O5-5 <@@o55@scp.foundation@@>
+> **TO:** Daniel DeVorn <daniel.devorn@███████>
 > **SUBJECT:** <None>
 > ----
 > Hello, Daniel.
@@ -315,20 +401,26 @@ Two weeks prior to the start of the inquiry, Daniel DeVorn escaped Foundation cu
 > 
 > An [[[scp-106|old]]] [[[until-death|colleague]]] is just //dying// to lend you a hand.
 
-> What would you like to do?
-{{##white|> send draft##}}
-> Draft sent.
+@@ @@
 
-> What would you like to do?
-{{##white|> log off##}}
+@@ @@
 
-> Goodbye, O5-5. 
+What would you like to do?
+@@>@@ ###b3ffb3|send draft##
 
+Draft sent.
+
+What would you like to do?
+@@>@@ ###b3ffb3|log off##
+
+Goodbye, O5-5.
+
+@@>@@  ###0d260d|in pace requiescat##[[span class="blinkbar"]]###b3ffb3|_##[[/span]]
+
+[[/div]]
 [[/div]]
 [[/<]]
 [[/collapsible]]
 [[/=]]
-
-= ##white|> //in pace requiescat//##
 
 @@ @@
