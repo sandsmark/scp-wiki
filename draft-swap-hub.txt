@@ -1,0 +1,192 @@
+title:Draft Swap Hub
+[[module CSS]]
+#header {
+    height: 140px;
+    position: relative;
+    z-index: 10;
+    padding-bottom: 22px; /* FOR MENU */
+    background: none;
+    opacity: 0.8;
+}
+ 
+#header{
+    background: url(null)
+}
+#header:before{
+display:block;
+position: absolute;
+width: 100px;
+height: 100px;
+top: 22%;
+left:2%;
+z-index: -1;
+content: "";
+background:url(http://scpsandbox2.wdfiles.com/local--files/collab%3Adraft-swap-hub/ogspin);
+background-repeat: no-repeat;
+background-size:100px 100px;
+background-position: 0px 0px;
+z-index: 201;
+  animation: spinny1 4s ease infinite;
+}
+
+/* 
+CC BY-SA 3.0
+spinny
+ikr_4185
+ */
+@keyframes spinny1 {
+    0% {
+      -webkit-transform: rotate(0deg) scale(1);
+      transform: rotate(0deg) scale(1);
+    }
+    100% {
+      -webkit-transform: rotate(360deg) scale(1);
+      transform: rotate(360deg) scale(1);
+    }
+} 
+
+ 
+#header:after{
+display:block;
+position: absolute;
+width: 100px;
+height: 100px;
+top: 22%;
+left:2%;
+z-index: -2;
+content: "";
+background:url(http://topia.wdfiles.com/local--files/niconews/spin2.png);
+background-repeat: no-repeat;
+background-size:100px 100px;
+background-position: 0px 0px;
+z-index: 200;
+}
+
+/* 
+CC BY-SA 3.0
+spinny
+ikr_4185
+ */
+@keyframes spinny2 {
+    0% {
+      -webkit-transform: rotate(0deg) scale(1);
+      transform: rotate(0deg) scale(1);
+    }
+    50% {
+      -webkit-transform: rotate(60deg) scale(1);
+      transform: rotate(60deg) scale(1);
+      
+    }
+    100% {
+      -webkit-transform: rotate(360deg) scale(1);
+      transform: rotate(360deg) scale(1);
+    }
+} 
+#header h1 a::before {
+    content: "Draft Swap!";
+    color: white;
+}
+#header h1 a span{
+    display: block;
+    content: "";
+    visibility: hidden;
+}
+#header h2 span {
+    display: block;
+    margin: 0;
+    padding: 19px 0;
+    line-height: 0px;
+    max-height: 0px;
+    font-weight: bold;
+    color: transparent;
+    text-shadow: none;
+}
+#header h2 span::before {
+    content: "Who's will you get?";
+    display: block;
+    margin: 0;
+    padding: 0px 0;
+    line-height: 0px;
+    max-height: 0px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+
+#side-bar .side-block {
+    padding: 10px;
+    border: 3px double #9c3111;
+    border-radius: 0;
+    box-shadow: 0 2px 6px rgba(102,0,0,.5);
+    background: #fff;
+}
+[[/module]]
++++ What is this?
+
+The draft swap is a bi-annual challenge for established wiki authors to pool their ideas and drive themselves to work outside of their comfort zones.
+
+Most authors on the wiki have half-finished drafts sitting in their sandbox that they know could be awesome but also realistically know they'll never complete - you can't figure out the right approach, the story doesn't have an end, you just don't have the time, whatever. The aim of the draft swap is to free authors of that burden in a fun and constructive way.
+-----
++++ Posted articles
+
+
+||~ Article||~ Author||~ Original draft author||
+||[[[SCP-1548]]]: The Star, the Hateful|| Varaxous and 9Volt||9Volt||
+||[[[SCP-3466]]]: Only Birdbrains Live the American Dream|| DarkStuff||Rimple||
+||[[[SCP-3495]]]: St. Brendan's Howler Monkey|| ihp||Meserach||
+|| [[[SCP-3559]]]: Best Thing Since || Rimple || MaliceAforethought ||
+||[[[SCP-3716]]]: Boned Beyond Belief||MaliceAforethought||A Random Day||
+||[[[SCP-3694]]]: America's Diner is Always Open || Meserach || plaguebearer||
+||[[[SCP-4248]]]: Alphabet and Omega|| not_a_seagull||OthellotheCat||
+||[[[SCP-4411]]]: At Long Last Landing || Dog Teeth and MaliceAforethought|| MaliceAforethought||
+||[[[SCP-4416]]]: Tales of Site-42: Why The Foundation Punches Sharks || FloppyPhoenix || hot-coles||
+||[[[SCP-4725]]]: The Insurgency's Solution || OthellotheCat|| SeraDomiCher|| 
+||[[[SCP-4988]]]: Outsourced Customer Service Contact Center Solutions by Avelar Professional Products, Inc. || plaguebearer and Uncle Nicolini || Uncle Nicolini||
+||[[[RAISA-6147]]] (PENDING ASSIGNMENT)|| Uncle Nicolini||Casponaut||
+-----
++++ The Rules
+
+The concept is simple - every entrant into the draft swap will submit one of their __unfinished drafts__[[footnote]]In previous rounds, this has been restricted to SCP drafts. I am hoping to incorporate more formats in the next round.[[/footnote]] to an organiser, and on the first day of the swap, those drafts will be shuffled and redistributed - the entrants then have until the closing date to submit __a first draft__ to the organisers from what they were given. __This does NOT need to be a final polished draft ready to post__, you simply need to produce something that can be read as a story and ready for critique. Of course, if you want to polish or even post it, that's allowed.
+
+Once a draft has been given to you, __it is yours__. You may rework it as if it was your own idea, add and subtract elements, change the entire format, whatever works best for how you want to adapt it. Within the bounds of common sense, anything goes. This also extends to showing the drafts to whoever you want, collaborating with others, whatever - the draft swap is not a closed system, and you are encouraged to do whatever you want in order to make your entry shine. You should be in mind of the fact that this goes both ways - whoever gets your submission will likely take it in places you didn't expect, and that can be good or bad in your opinion, but you need to accept it as part of the experience going in.
+
+This is __not a competition__. This is about community spirit and helping each other out, there will never be a winner. The only thing you're aiming to do is produce a finished draft - if you want to post that, awesome. If you want to give it back to the original author to reconsider, also awesome. Ideally, everyone finds a wonderful new interpretation of each draft and we end up with as many posted skips as we do entrants, but realistically it's totally ok for you to have had a good time participating in an interesting writing exercise without having something big and shiny to show the world.
+
+For the sake of writers being confident that their draft will not end up in bad hands, all participants must have at least one article of any kind posted on the site, with a rating of at least 50. Individual cases will be considered.
+-----
++++ The Chat
+
+The Draft Swap has a dedicated IRC channel on synIRC, __#draftswap__. Any participants who use IRC should add this channel to their autojoin, and within their limitations should participate in brainstorming, crit and general discussion there for the duration of the swap.
+
+Standard chat rules apply - if you're a douchebag, you'll be kicked. Common sense applies. Assume there are minors. Beyond that, try to carry a spirit of positivity and collaboration within the chat - you won't be kicked for being snarky or skeptical, but it might bum people out.
+
+Memes are banned and we will report dabbing to the police.
+
+
+-----
+
++++ Current Round Information
+
+**Status: ##8938af|Post-round##**
+Final drafts have been received from most participants, with some participants being granted new deadlines to finish.
+
+**Next round starts**: May 4th, 2019
+-----
+[[collapsible show="+ FAQ" hide="- FAQ"]]
+**I want to get involved! I have a draft all ready, where can I send it?**
+First off, make sure submissions are actually open - drafts aren't accepted until a week or two before each round, so be patient. Once the draft is open, there should be a link above to submission guidelines for specific rounds.
+
+**What qualifies as a draft?**
+Drafts should be more than simply an idea: you should already have put some work into developing the idea, figuring out rules and structure, writing some parts out etc. You don't have to have a lot done, but we won't be accepting anything that's nothing more than a title. Drafts should //not// be of a work that would need to be very long to work (say 7000+ as a guideline), as this places unfair amounts of work on the person receiving it in the time given.
+
+**My draft is kind of hard to write without my perspective/knowledge, is that ok?**
+Nothing that requires specialist knowledge to write (high level science stuff, deep fandom lore, a leaning toward complex historical accuracy etc), or if you do you should be committed to sticking around in chat to help out and provide information.
+
+**If I want to post what I wrote, do I need to credit the original author as a co-author?**
+Before posting, you should ask the original author what they would like, and go along with that.
+
+**I've put a lot of thought into my draft, but most of it isn't on the actual page. Is that ok?**
+If this is the case for you, I'd suggest including a note to the recipient explaining ideas you'd had for the draft, what you wanted to get across with it etc. They're not beholden to it, but it might help them. 
+
+If you're active in the IRC chat, you can also just talk directly to whoever gets your draft and chat/brainstorm with them about it.
+[[/collapsible]]
