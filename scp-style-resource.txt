@@ -2086,3 +2086,44 @@ Change **{$name}** to the filename or link to the image. Change **{$caption}** t
 > @@[[include@@ :scp-sandbox-3:component:usefultool-module]]
 **IMPORTANT:** This part gets placed at the bottom of the page.
 [[/collapsible]]
+
+[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[/div]]
+[[div style="border-bottom:1px solid #777;"]]
+[[/div]]
+
++++ Blackbox formats[[footnote]]Credit for both of these goes to [[*user Nanimono Demonai]].[[/footnote]]
+
+**__Option 1__**
+**What It Looks Like:**
+[[span class="bblock"]]This is a format to let you blackbox information and let it be visible over a mouseover.[[/span]]
+
+**What To Copy:**
+[[code]]
+[[span class="bblock"]]text here[[/span]]
+[[/code]]
+
+**How To Adjust It:**
+This code lets you adjust the color of the mouseover text.
+[[code]]
+[[module CSS]]
+.bblock:hover {color: white}
+[[/module]]
+[[/code]]
+
+**__Option 2__**
+**What It Looks Like:**
+[[span class="bblock"]]This changes the color of the background on mouseover, rather than the text.[[/span]]
+
+**What To Copy:**
+[[code]]
+[[span class="dblock"]]text here[[/span]]
+[[/code]]
+
+**How To Adjust It:**
+This code lets you adjust the color of the mouseover background.
+[[code]]
+[[module CSS]]
+.dblock:hover {background: #f4f4f4}
+[[/module]]
+[[/code]]
