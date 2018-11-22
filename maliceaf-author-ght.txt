@@ -636,8 +636,8 @@ oh no you found the secrit testing place
 
 ------
 
-[[module ListPages order="name" separate="no" created_by="MaliceAforethought" tags="scp" perPage="250"]]
-%%title%%
+[[module ListPages rating=">60" order="rating desc" category="*" tags="tale" separate="false" limit="200" date="2018" prependLine="||~ Title||~ Rating||~ Author||~ Written On||"]]
+|| [[a target="_blank" href="%%link%%"]]%%title%%[[/a]] || %%rating%% || %%created_by_linked%% || %%created_at%% ||
 [[/module]]
 
 ~#~~#~~#~TRENCHCOAT~#~~#~~#~
