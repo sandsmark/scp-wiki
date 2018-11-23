@@ -499,5 +499,33 @@ Fine, take some [https://www.reddit.com/r/cats/top/ cat pics] and leave. ^^Pleas
 [[/=]]
 [[/tab]]
 
+[[tab ████]]
+[[=]]
+> + __TESTING__
+> 
+> ++++++ Just try to ignore what shows up here, I guess.
+[[/=]]
+------
+
+[[=]]
+++ SCPs
+[[/=]]
+[[module ListPages order="created_at" tags="second-hytoth +scp" separate="no" perPage="200" prependLine="||~ Title||~ Author||~ Created||"]]
+|| %%title_linked%% || %%created_by_linked%% || %%created_at%% ||
+[[/module]]
+
+------
+
+[[=]]
+++ Tales
+[[/=]]
+[[module ListPages order="created_at" tags="second-hytoth +tale -hub" separate="no" perPage="200" prependLine="||~ Title||~ Author||~ Created||"]]
+|| %%title_linked%% || %%created_by_linked%% || %%created_at%% ||
+[[/module]]
+
+------
+
+[[/tab]]
+
 [[/tabview]]
 [[footnoteblock]]
