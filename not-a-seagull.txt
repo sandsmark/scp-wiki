@@ -3,89 +3,126 @@ title:Researcher Calvin's Personnel File
 [[module Rate]]
 [[/>]]
 
-----
-
 [[html]]
-<style type="text/css" id="internal-style">
-/* disaster awaits you below */
-/* modules */
-
-/* theme */
-@import url(http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--theme/base/css/style.css);
-@import url(http://www.scp-wiki.net/component:theme/code/1);
+<body>
+<style type="text/css">
+body
+{
+   font-family:verdana,arial,helvetica,sans-serif;
+   font-size:12.8px;
+   color:#333;
+   line-height:141%
+}
+blockquote
+{
+  border:1px dashed #999;
+  padding: 0 12.8px;
+  background-color:#f4f4f4
+}
+a {
+    color: #b01;
+    text-decoration: none;
+    background: transparent;
+}
+a.newpage {
+    color: #d61;
+    text-decoration: none;
+    background: transparent;
+}
+a:hover {
+    text-decoration: underline;
+    background-color: transparent;
+}
+.collapsed {
+  display: none;
+}
+.vanished {
+  display: none;
+}
+.image-cap {
+    background-color: #eee;
+    border-top: solid 1px #666;
+    padding: 2px 0;
+    font-size: 80%;
+    font-weight: bold;
+    text-align: center;
+}
 </style>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    var fp = document.getElementById('fakepost');
-    var dpos = 0;
-    var dstring = 'And so the question remains: are you worth remembering?';
-    fp.addEventListener('keypress', function(e) {
-        fp.value = dstring.substr(0, ++dpos);
-        e.preventDefault();
-        return false;
-    });
-});
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+function addEvent(element, eventName, callback) {
+    if (element.addEventListener) {
+        element.addEventListener(eventName, callback, false);
+    } else if (element.attachEvent) {
+        element.attachEvent("on" + eventName, callback);
+    } else {
+        element["on" + eventName] = callback;
+    }
+}
+window.toggle = function(cls) {
+  var collapsed = document.querySelectorAll("." + cls + ".collapsed");
+  var expanded = document.querySelectorAll("." + cls + ":not(.collapsed)");
+  var i;
+  for(i = 0; i < collapsed.length; i++) {
+    collapsed[i].classList.remove("collapsed");
+  }
+  for(i = 0; i < expanded.length; i++) {
+    expanded[i].classList.add("collapsed");
+  }
+};
+
+var randomInt = function(min,max)
+{
+  return Math.floor(Math.random()*(max-min+1)+min);
+};
+
+var expandNumber = function(num,digit) {
+  if (digit === 1 || digit === 0) return num.toString();
+  var txt = num.toString();
+  while (txt.length < digit) {
+    txt = "0" + txt;
+  }
+  return txt;
+};
+
+var randomText = function(array) {
+  return array[randomInt(0,array.length - 1)];
+};
+
+window.onload = function() {
+
+$('.num1').text(expandNumber(randomInt(1,99),2));
+$('.num2').text(expandNumber(randomInt(0,99),2));
+$('.randomSCP').each(function() { $(this).text(expandNumber(randomInt(1,3999),3)); });
+
+$('.t1').text(randomText(['in San Francisco, California','in New York, New York','in Boston, Massachusetts','in Springfield, Oregon','on the sun','in some random IKEA','in Detroit']));
+$('.t2').text(randomText(['summer','winter','fall','spring']));
+$('.t3').text(randomText(['studying','playing video games','doing science experiments in his backyard','kicking puppies','eating glue','inhaling cocaine']));
+$('.t4').text(randomText(['programming','playing soccer','researching philosophy','establishing a communist regime','browsing dank memes','throwing eggs at important political figures','screaming in public restrooms']));
+$('.t5').text(randomText(['Stanford University','Harvard University','Yale University','the local dry cleaner\'s','his mom\'s basement','watching Rick & Morty']));
+$('.t6').text(randomText(['Biology','Computer Science','Theoretical Physics','Mechanical Engineering','Family Guy References','Huffing Paint','knowing if tomatoes are fruits or vegetables','being an asshat']));
+
+$('.t7').text(randomText(['Marshall, Carter & Dark','Prometheus Labs','a factory owned by Dr. Wondertainment','a Target on the moon','Dr. Clef\'s stripper shop','McDonalds']));
+$('.t8').text(randomText(['n anomalous phenomena researcher',' research assistant',' testing supervisor',' computer system administrator',' janitor',' meme expert',' professional hobo']));
+$('.t9').text(randomText(['he','Dr. Bright','Dr. Clef','O5-1','SCP-682','SCP-999-J','the entirety of Site-19']));
+$('.t10').text(randomText(['prevented a containment breach','successfully contained SCP-682','rode a unicycle','stole the Declaration of Independence','purposely let out SCP-3002 to "see what would happen"']));
+
+};
 </script>
-
-<div id="thread-action-area" class="action-area well" style="display: none"></div>
-
-<div id="thread-container" class="thread-container">
-<div id="thread-container-posts" style="">
-<div class="post-container">
-<div class="post">
-<div class="long">
-<div class="head">
-<div class="options">
-<a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Fold</a>
-</div>
-<div class="title">
-</div>
-<div class="info">
-<span class="printuser avatarhover"><a target="_blank" href=http://www.wikidot.com/user:info/rounderhouse><img class="small" src="https://d2qhngyckgiutd.cloudfront.net/1c95ab9b94ff09dca910209967524178" alt="rounder if youre reading this remember that the binomial theorom is (x+y)^2 = x^2 + 2xy + y^2" style="background-image:url(https://www.wikidot.com/userkarma.php?u=4187885&onlyKarma=true)"></a><a target="_blank" href="http://www.wikidot.com/user:info/rounderhouse">rounderhouse</a></span> 20 April 42069, 4:20
-</div>
-</div>
-<div class="content">
-<p>According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care what humans think is impossible. <span style="color: #b2b2b2">Yellow, black. Yellow, black. Yellow, black. Yellow,</span> <span style="color: #cccccc"> black. Ooh, black and yellow! Let's</span> <span style="color: #e5e5e5">shake it up a little. Barry! Breakfast is ready! Coming!</span> <span style="color: #efefef">Hang on a second. Hello?</span></p>
-</div>
-<div class="options">
-<strong><a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Reply</a></strong>
-<a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Options</a>
-</div>
-<div class="options" style="display: none">
-</div>
-</div>
-</div>
-<div class="post-container">
-<div class="post">
-<div class="long">
-<div class="head">
-<div class="options">
-<a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Fold</a>
-</div>
-<div class="title">
-</div>
-<div class="info">
-<span class="printuser avatarhover"><a target="_blank" href=http://www.wikidot.com/user:info/not-a-seagull><img class="small" src="http://d2qhngyckgiutd.cloudfront.net/bb6a62728da1ef08f70c75cb5e8b16ce" alt="👌" style="background-image:url(https://www.wikidot.com/userkarma.php?u=3009022&onlyKarma=true)"></a><a target="_blank" href="http://www.wikidot.com/user:info/not-a-seagull">not_a_seagull</a></span> 20 April 42069, 4:20
-</div>
-</div>
-<div class="content">
-<p>Carthage must be destroyed.</p>
-</div>
-<div class="options">
-<strong><a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Reply</a></strong>
-<a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Options</a>
-</div>
-<div class="options" style="display: none">
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+<center>
+<blockquote>
+<h2>RAISA WARNING #4523</h2>
+<p>This file is corrupted by a rogue memetic agent. This agent is unable to do any damage, but they may make this file look absurd, ridiculous, and downright silly. Refreshing the page is known to "reset" this agent.</p>
+</blockquote>
+</center>
+<p><b>Legal Name:</b> Researcher Craig S█████ Calvin</p>
+<p><b>Position:</b> Researcher, Site-<span class="num1"></span></p>
+<p><b>Clearance Level:</b> 3</p>
+<p><b>Clearance Sublevels:</b> 4/3095, 4/3339, 4/<span class="randomSCP"></span>, 4/<span class="randomSCP"></span>, 4/<span class="randomSCP"></span></p>
+<p><b>Known History:</b> Researcher Calvin was born <span class="t1"></span> in the <span class="t2"></span> of 19<span class="num2"></span>. Growing up, Researcher Calvin's favorite hobbies were <span class="t3"></span> and <span class="t4"></span>. Researcher Calvin graduated from <span class="t5"></span> with a Bachelor's degree in <span class="t6"></span>.</p>
+<p>Researcher Calvin was employed at <span class="t7"></span> as a<span class="t8"></span> at the time of Incident ████-████, where <span class="t9"></span> <span class="t10"></span>. After proving his worth during Incident ████-████, Researcher Calvin was employed by the Foundation.</p>
+</body>
 [[/html]]
-
-----
 
 **ADDENDUM:** SCP Files
 
