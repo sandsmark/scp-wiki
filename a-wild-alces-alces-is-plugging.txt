@@ -250,3 +250,12 @@ he's a good horse
 [[module CSS]]
 @import url(/component:scp-pride/code/1);
 [[/module]]
+[[include component:collapsible-top show=+ SHOWTITLE 1|hide=- HIDETITLE 1]]
+TEXT 1
+[[include component:collapsible-top show=+ SHOWTITLE 2|hide=- HIDETITLE 2]]
+TEXT 2
+[[include component:collapsible-top show=+ SHOWTITLE 3|hide=- HIDETITLE 3]]
+TEXT 3
+[[include component:collapsible-bottom]]
+[[include component:collapsible-bottom]]
+[[include component:collapsible-bottom]]
