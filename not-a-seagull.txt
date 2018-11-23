@@ -93,19 +93,19 @@ window.onload = function() {
 
 $('.num1').text(expandNumber(randomInt(1,99),2));
 $('.num2').text(expandNumber(randomInt(0,99),2));
-$('.randomSCP').each(function() { $(this).text(expandNumber(randomInt(1,3999),3)); });
+$('.randomSCP').each(function() { $(this).text(expandNumber(randomInt(1,4999),3)); });
 
-$('.t1').text(randomText(['in San Francisco, California','in New York, New York','in Boston, Massachusetts','in Springfield, Oregon','on the sun','in some random IKEA','in Detroit']));
-$('.t2').text(randomText(['summer','winter','fall','spring']));
-$('.t3').text(randomText(['studying','playing video games','doing science experiments in his backyard','kicking puppies','eating glue','inhaling cocaine']));
-$('.t4').text(randomText(['programming','playing soccer','researching philosophy','establishing a communist regime','browsing dank memes','throwing eggs at important political figures','screaming in public restrooms']));
-$('.t5').text(randomText(['Stanford University','Harvard University','Yale University','the local dry cleaner\'s','his mom\'s basement','watching Rick & Morty']));
-$('.t6').text(randomText(['Biology','Computer Science','Theoretical Physics','Mechanical Engineering','Family Guy References','Huffing Paint','knowing if tomatoes are fruits or vegetables','being an asshat']));
+$('.t1').text(randomText(['in San Francisco, California','in New York, New York','in Boston, Massachusetts','in Springfield, Oregon','on the sun','in some random IKEA','in Detroit','inside of SCP-3008','in the dimension beyond SCP-093','in the now-defunct Aperture Science research facility']));
+$('.t2').text(randomText(['summer','winter','fall','spring','armpits']));
+$('.t3').text(randomText(['studying','playing video games','doing science experiments in his backyard','kicking puppies','eating glue','inhaling cocaine','hacking important government databases','petting dogs']));
+$('.t4').text(randomText(['programming','playing soccer','researching philosophy','establishing a communist regime','browsing dank memes','throwing eggs at important political figures','screaming in public restrooms','selling Amway','dabbing on them haters']));
+$('.t5').text(randomText(['Stanford University','Harvard University','Yale University','CalTech','the local dry cleaner\'s','his mom\'s basement','watching Rick & Morty','Reddit','4chan']));
+$('.t6').text(randomText(['Biology','Computer Science','Theoretical Physics','Mechanical Engineering','Family Guy References','Huffing Paint','knowing if tomatoes are fruits or vegetables','being an asshat','Memeology','thinking blue fire is cold']));
 
-$('.t7').text(randomText(['Marshall, Carter & Dark','Prometheus Labs','a factory owned by Dr. Wondertainment','a Target on the moon','Dr. Clef\'s stripper shop','McDonalds']));
-$('.t8').text(randomText(['n anomalous phenomena researcher',' research assistant',' testing supervisor',' computer system administrator',' janitor',' meme expert',' professional hobo']));
-$('.t9').text(randomText(['he','Dr. Bright','Dr. Clef','O5-1','SCP-682','SCP-999-J','the entirety of Site-19']));
-$('.t10').text(randomText(['prevented a containment breach','successfully contained SCP-682','rode a unicycle','stole the Declaration of Independence','purposely let out SCP-3002 to "see what would happen"']));
+$('.t7').text(randomText(['Marshall, Carter & Dark','Prometheus Labs','the Global Occult Coalition','a factory owned by Dr. Wondertainment','a Target on the moon','Dr. Clef\'s stripper shop','McDonalds','djkaktus\' personal limosine service','dado borger and france fry']));
+$('.t8').text(randomText(['n anomalous phenomena researcher',' research assistant',' testing supervisor',' field agent',' computer system administrator',' janitor',' meme expert',' professional hobo',' test subject']));
+$('.t9').text(randomText(['he','Dr. Bright','Dr. Clef','O5-1','SCP-682','SCP-173','SCP-999-J','the entirety of Site-19','SCP-2785','dado','Uncle Nicolini','a man dual-wielding machine guns','minecraft YouTubers']));
+$('.t10').text(randomText(['prevented a containment breach','successfully contained SCP-682','rode a unicycle','stole the Declaration of Independence','purposely let out SCP-3002 to "see what would happen"','ate all of the Keter Cakes','went to Disney's website without parental permission','listened to Green Day','barbecued SCP-173','learned how to use a rocket launcher']));
 
 };
 </script>
