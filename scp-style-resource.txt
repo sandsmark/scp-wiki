@@ -2145,6 +2145,21 @@ Change **{$name}** to the filename or link to the image. Change **{$caption}** t
 Change **{$name}** to the filename or link to the image. Change **{$caption}** to the text you want under the image. The width and alignment are set to the standard for SCP articles, but those can be changed as well.
 [[/collapsible]]
 
+**__Option 3__**
+
+**What it looks like:**
+
+[[include :scp-sandbox-3:component:image-zoom-2 name=http://scp.avn.sh/local--files/mrpines:choo-choo/train3.jpg|caption=Click and hold to enlarge the image.|width=300px|align=center]]
+
+**What to copy:**
+[[collapsible]]
+[[div class="code"]]
+@@[[include :scp-sandbox-3:component:image-zoom-2 name={$name}|caption={$caption}|width=300px|align=right]]@@
+[[/div]]
+
+Change **{$name}** to the filename or link to the image. Change **{$caption}** to the text you want under the image. The width and alignment are set to the standard for SCP articles, but those can be changed as well.
+[[/collapsible]]
+
 @@ @@
 
 @@ @@
