@@ -77,18 +77,15 @@ div#container-wrap::before {
 [[/module]]
 
 [[module CSS]]
-/* TOP BAR RECOLORING*/
-#top-bar ul li ul {
-    border: solid 1px #3d2b1f;
-}
+/* inputs */
 #top-bar ul li.sfhover ul li a,
 #top-bar ul li:hover ul li a {
-    border-top: 1px solid #665731;
+    border-top: 1px solid #000000;
 }
  
 #top-bar ul li.sfhover a,
 #top-bar ul li:hover a {
-    background: #82a016;
+    background: #D4AF37;
     color: #ffffff;
 }
 #top-bar ul li ul a, #top-bar a:hover {
@@ -96,8 +93,9 @@ div#container-wrap::before {
 }
 #top-bar ul li.sfhover a:hover,
 #top-bar ul li:hover a:hover {
-    background: #c8e293; /* top bar hover background color */
+    background: #282e48; /* top bar hover background color */
 }
+
 
 #login-status {
     color: #000000;
