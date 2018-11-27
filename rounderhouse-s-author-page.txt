@@ -192,6 +192,15 @@ div#container-wrap::before {
 #search-top-box-form input[type=submit]:focus {
     background: linear-gradient(to bottom, #3b4265, #57608a, #252a40);
 }
+ 
+#page-content .scp-image-block {
+    border-color: rgba(0,0,0,0.12);
+    box-shadow: none;
+}
+#page-content .scp-image-block .scp-image-caption {
+    border-color: rgba(0,0,0,0.12);
+    background-color: #f5f5f5;
+}
 
 [[/module]]
 
