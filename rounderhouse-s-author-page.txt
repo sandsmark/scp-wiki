@@ -180,6 +180,19 @@ div#container-wrap::before {
 #side-bar div.menu-item a {
     color: #ffffff;
 }
+
+#search-top-box-input, #search-top-box-input:hover, #search-top-box-input:focus {
+    background-color: #11131f;
+}
+#search-top-box-form input[type=submit] {
+    background: linear-gradient(to bottom, #3b4265, #3b4265, #0d0f19);
+}
+
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    background: linear-gradient(to bottom, #3b4265, #57608a, #252a40);
+}
+
 [[/module]]
 
 [[module css]]
