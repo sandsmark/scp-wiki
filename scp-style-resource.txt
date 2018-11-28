@@ -2226,3 +2226,86 @@ This code lets you adjust the color of the mouseover background.
 .dblock:hover {background: #f4f4f4}
 [[/module]]
 [[/code]]
+
+[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[/div]]
+[[div style="border-bottom:1px solid #777;"]]
+[[/div]]
+
++++ "today's date" format
+
+**__Option 1__**[[footnote]]Credit goes to [[*user C-take]] from the JP branch.[[/footnote]]
+**What It Looks Like:**
+[[module css]]
+@import url(http://scp-sandbox-3.wikidot.com/local--code/component:todaysdate/7);
+[[/module]]
+++* normal (display to "m")
+[[div class="normalFontTime"]]
+sample: Today's date is [[iframe http://scp-sandbox-3.wikidot.com/local--code/component:todaysdate/1 width="120" scrolling="no"]].
+[[/div]]
+> @@[[div class="normalFontTime"]]@@
+> @@sample: Today's date is [[iframe http://scp-sandbox-3.wikidot.com/local--code/component:todaysdate/1 width="120" scrolling="no"]].@@
+> @@[[/div]]@@
+[[collapsible show="+ The others..."]]
+
+++* normal (display to "s")
+[[div class="normalFontTime"]]
+sample: [[iframe http://scp-sandbox-3.wikidot.com/local--code/component:todaysdate/2 width="130" scrolling="no"]]
+[[/div]]
+> @@[[div class="normalFontTime"]]@@
+> @@sample: [[iframe http://scp-sandbox-3.wikidot.com/local--code/component:todaysdate/2 width="130" scrolling="no"]]@@
+> @@[[/div]]@@
+
+++* h1 (display to "m")
+sample:
+[[iframe http://scp-sandbox-3.wikidot.com/local--code/component:todaysdate/3 width="230" height="25" scrolling="no"]]
+> @@[[iframe http://scp-sandbox-3.wikidot.com/local--code/component:todaysdate/3 width="230" height="25" scrolling="no"]]@@
+
+++* h1 (display to "s")
+sample:
+[[iframe http://scp-sandbox-3.wikidot.com/local--code/component:todaysdate/4 width="260" height="25" scrolling="no"]]
+> @@[[iframe http://scp-sandbox-3.wikidot.com/local--code/component:todaysdate/4 width="260" height="25" scrolling="no"]]@@
+
+++* bold (display to "m")
+[[div class="normalFontTime"]]
+**sample:** [[iframe http://scp-sandbox-3.wikidot.com/local--code/component:todaysdate/5 width="140" height="16" scrolling="no"]]
+[[/div]]
+> @@[[div class="normalFontTime"]]@@
+> @@[[iframe http://scp-sandbox-3.wikidot.com/local--code/component:todaysdate/5 width="140" height="16" scrolling="no"]]@@
+> @@[[/div]]@@
+
+++* bold (display to "s")
+[[div class="normalFontTime"]]
+**sample:** [[iframe http://scp-sandbox-3.wikidot.com/local--code/component:todaysdate/6 width="160" hegiht="16" scrolling="no"]]
+[[/div]]
+> @@[[div class="normalFontTime"]]@@
+> @@[[iframe http://scp-sandbox-3.wikidot.com/local--code/component:todaysdate/6 width="160" height="16" scrolling="no"]]@@
+> @@[[/div]]@@
+
+[[/collapsible]]
+**How to introduce:**
+[[collapsible]]
+**IMPORTANT:** This goes at the top of your page:
+[[code]]
+[[module css]]
+@import url(http://scp-sandbox-3.wikidot.com/local--code/component:todaysdate/7);
+[[/module]]
+[[/code]]
+
+When you install the above code, now you ready! You can use these iframe.
+[[/collapsible]]
+
+**__Option 2__**[[footnote]]Credit goes to [[*user furabbit]] and [[*user 7happy7]] from the JP branch.[[/footnote]]
+**What It Looks Like:**
+[[module ListPages limit="1" category="*" order="updated_at desc"]]
+> Today's date is %%updated_at|%Y/%m/%d%%... maybe!
+[[/module]]
+
+**What to copy:**
+[[collapsible]]
+[[code]]
+[[module ListPages limit="1" category="*" order="updated_at desc"]]
+> Today's date is %%updated_at|%Y/%m/%d%%... maybe!
+[[/module]]
+[[/code]]
+[[/collapsible]]
