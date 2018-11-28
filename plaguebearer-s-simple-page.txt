@@ -3,6 +3,127 @@ title:plaguebearer's simple author page
 [[module Rate]]
 [[/<]]
 
+[[module css]]
+
+@import url('https://fonts.googleapis.com/css?family=Ramaraja');
+@import url('http://scp.avn.sh/local--files/mrpines:app-theme/redvelvet.css');
+
+#header h1 a {
+    display: block;
+    margin: 0;
+    padding: 80px 0 25px;
+    line-height: 0px;
+    max-height: 0px;
+    color: transparent;
+    background: transparent;
+font-family: 'red_velvetregular';
+    font-size: 50%;
+    text-decoration: none;
+    text-shadow: none;
+}
+ 
+#header h1 a::after {
+position: relative;
+padding-left: -2em;
+color: #111;
+    letter-spacing: 30px;
+    content: " PLAGUEBEARER";
+    font-size: 400%;
+font-weight: lighter;
+    background: url(http://scp.avn.sh/local--files/mrpines:app-theme/box2.png) 46px no-repeat;
+background-size: ;
+}
+
+#header h2 span {
+    display: block;
+    margin: 0;
+    padding: 19px 0;
+    line-height: 0px;
+    max-height: 0px;
+    font-weight: bold;
+    color: transparent;
+    text-shadow: none;
+}
+
+#header h2 span::after {
+position: relative;
+    letter-spacing: 1px;
+    font-family: 'Ramaraja', serif;
+    content: "gay below";
+    display: block;
+    margin-left: 0em;
+    padding-left: 15.7em;
+    line-height: 0px;
+    max-height: 0px;
+    color: #333;
+font-size: 125%;
+font-weight: lighter;
+top: 10px;
+}
+
+div#container-wrap {
+    background: url(http://scp.avn.sh/local--files/mrpines:app-theme/body_bg2.png) top left repeat-x;
+}
+
+#header {
+    height: 140px;
+    position: relative;
+    z-index: 10;
+    padding-bottom: 22px; /* FOR MENU */
+background: none;
+}
+
+
+#side-bar .heading {
+    border: none;
+    border-radius: 0;
+    color: #202124;
+    font-size: 1.2em;
+    padding: 1em 1em 0 0;
+    border-top: 1px solid rgba(0,0,0,.12);
+    margin: 1em calc(-1em + 2px) 1em 0;
+    font-weight: normal;
+}
+#side-bar div.menu-item {
+    margin: 0;
+    font-size: 0;
+}
+#side-bar div.menu-item a {
+    font-weight: normal;
+}
+#side-bar .menu-item > img {
+    display: none;
+}
+#side-bar .menu-item > a {
+    transition: all 0.1s ease-in-out;
+    display: block;
+    color: #5f6368;
+    margin: 0 calc(-1em - 1px) 0 -0.5em;
+    padding: 0.5em 1em 0.5em 0.5em;
+    font-size: 12.8px;
+ 
+    /* sidebar links extend to left: */
+    margin-left: -99rem;
+    padding-left: 99rem;
+}
+#side-bar .menu-item > a:hover {
+    background-color: rgba(0,0,0,0.04);
+    color: #202124;
+    text-decoration: none;
+}
+
+#page-title{
+text-align: center;
+color: #333;
+border-bottom: 1px solid #333;
+}
+
+hr{
+background-color: #333;
+}
+
+[[/module]]
+
 [[[SCP-309-J]]]
 
 
