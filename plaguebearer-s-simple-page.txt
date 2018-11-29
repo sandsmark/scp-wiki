@@ -1,4 +1,559 @@
 title:plaguebearer's simple author page
+[[module css]]
+/*
+Theme created by MrPines, based on the Sigma 9 theme created by Aelanna and Dr Devan.
+Side bar and tab code modified from original code by Croquembouche.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Ramaraja');
+@import url('http://scp.avn.sh/local--files/mrpines:app-theme/redvelvet.css');
+@import url('https://fonts.googleapis.com/css?family=Palanquin');
+
+
+*::selection{
+background-color: #fdfdfd;
+color: #333;
+}
+
+body {
+font-family: 'Palanquin', sans-serif;
+background-color: #232323;
+color: #f1f1f1;
+}
+
+.title.modal-header {
+    background-color: #232323;
+}
+
+.owindow{
+background-color: #232323;
+}
+
+.owindow .button-bar a {
+    background-color: transparent;
+    border-color: #444;
+}
+
+.owindow .button-bar a:hover, .owindow .button-bar a:focus {
+    background-color: #444;
+    border-color: #444;
+}
+
+h1,h2,h3,h4,h5,h6{
+color: #f1f1f1;
+}
+
+#header h1 a {
+    display: block;
+    margin: 0;
+    padding: 80px 0 25px;
+    line-height: 0px;
+    max-height: 0px;
+    color: transparent;
+    background: transparent;
+font-family: 'red_velvetregular';
+    font-size: 50%;
+    text-decoration: none;
+    text-shadow: none;
+}
+ 
+#header h1 a::after {
+position: relative;
+padding-left: -2em;
+color: #f1f1f1;
+    letter-spacing: 30px;
+    content: " PLAGUEBEARER";
+    font-size: 400%;
+font-weight: lighter;
+}
+
+#header h2 span {
+    display: block;
+    margin: 0;
+    padding: 19px 0;
+    line-height: 0px;
+    max-height: 0px;
+    font-weight: bold;
+    color: transparent;
+    text-shadow: none;
+}
+
+#header h2 span::after {
+position: relative;
+    letter-spacing: 1px;
+    font-family: 'Ramaraja', serif;
+    content: " ''List Of Sharticles'' ";
+    display: block;
+    margin-left: 0em;
+    padding-left: 15.7em;
+    line-height: 0px;
+    max-height: 0px;
+    color: #f3f3f3;
+font-size: 125%;
+font-weight: lighter;
+top: 10px;
+}
+
+div#container-wrap {
+    background: url(http://smlt.wdfiles.com/local--files/plaguebearer%3Aapp-test/body_bg5.png) top left repeat-x;
+}
+
+#header {
+    height: 140px;
+    position: relative;
+    z-index: 10;
+    padding-bottom: 22px; /* FOR MENU */
+background: none;
+}
+
+#main-content {
+    border-left: 1px solid rgba(200,200,200,0.5);
+    margin: 0 2em 0 20em;
+    padding: 2em 2em 2em 4em;
+}
+
+#login-status {
+    color: #f1f1f1;
+    font-size: 90%;
+    z-index: 30;
+
+}
+
+#login-status a {
+    background: transparent;
+    color: #f1f1f1;
+border: none;
+}
+
+#login-status ul a {
+    color: #59e;
+    background: transparent;
+background-color: #232323;
+
+}
+ 
+#login-status ul a:hover{
+color: #6bf;
+}
+
+#account-topbutton {
+    background: #232323;
+    color: #f1f1f1;
+}
+
+#side-bar .side-block {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent !important;
+    padding: 0;
+}
+#side-bar .heading {
+    border: none;
+    border-radius: 0;
+    color: #202124;
+    font-size: 1.2em;
+    padding: 1em 1em 0 0;
+    border-top: 1px solid rgba(200,200,200,0.5);
+    margin: 1em calc(-1em + 2px) 1em 0;
+    font-weight: normal;
+}
+#side-bar div.menu-item {
+    margin: 0;
+    font-size: 0;
+}
+#side-bar div.menu-item a {
+    font-weight: normal;
+}
+#side-bar .menu-item > img {
+    display: none;
+}
+#side-bar .menu-item > a {
+    transition: all 0.1s ease-in-out;
+    display: block;
+    color: #999;
+    margin: 0 calc(-1em - 1px) 0 -0.5em;
+    padding: 0.5em 1em 0.5em 0.5em;
+    font-size: 12.8px;
+ 
+    /* sidebar links extend to left: */
+    margin-left: -99rem;
+    padding-left: 99rem;
+}
+
+#side-bar .menu-item > a:hover {
+    background-color: rgba(100,100,100,0.25);
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+#side-bar .menu-item > a[href="/random:random-tale"]::before {
+    content: "Random ";
+}
+#side-bar .menu-item > a[href="http://www.scp-wiki.net/most-recently-edited"]::before {
+    content: "Recent ";
+}
+#side-bar .menu-item > a[href*="/scp-series"]::after {
+    font-size: 80%;
+    opacity: 0.5;
+    margin-left: 0.5em;
+}
+#side-bar .menu-item > a[href="/scp-series"]::after {
+    content: "(001–999)";
+}
+#side-bar .menu-item > a[href="/scp-series-2"]::after {
+    content: "(1000–1999)";
+}
+#side-bar .menu-item > a[href="/scp-series-3"]::after {
+    content: "(2000–2999)";
+}
+#side-bar .menu-item > a[href="/scp-series-4"]::after {
+    content: "(3000–3999)";
+}
+#side-bar .menu-item > a[href="/scp-series-5"]::after {
+    content: "(4000–4999)";
+}
+
+#page-title{
+text-align: center;
+color: #f1f1f1;
+border-bottom: 1px solid rgba(200,200,200,0.5);
+z-index: -1;
+}
+
+hr{
+background-color: #f1f1f1;
+}
+
+#search-top-box-input {
+    border: solid 1px #1f1f1f;
+    border-radius: 0px;
+    color: #ddd;
+    background-color: #444;
+    box-shadow: inset 0px 0px 0px rgba(0,0,0,.5);
+}
+
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+    outline: 0;
+    border: solid 1px #1f1f1f;
+    color: #ddd;
+    background-color: #333;
+    box-shadow: inset 0px 0px 3px rgba(0,0,0,.5);
+}
+
+#search-top-box-form input[type=submit] {
+    border: solid 1px #1f1f1f;
+    border-radius: 0px;
+    padding-bottom: 1px;
+    font-size: 90%;
+    font-weight: bold;
+    color: #ddd;
+    background-color: #444 !important;
+    background: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,.5);
+    cursor: pointer;
+}
+
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    outline: 0;
+    border: solid 1px #1f1f1f;
+    color: #ddd;
+    text-shadow: 0 0 1px rgba(255,255,255,.10)
+    background-color: #252525 !important;
+    background: none;
+    box-shadow: 2px rgba(0,0,0,0.6);
+}
+
+#search-top-box-input, #search-top-box input.empty{
+border-radius: 0;
+border: solid 1px #1f1f1f;
+color: #ddd;
+background-color: #999;
+}
+
+#search-top-box-input, #search-top-box input.empty:hover{
+border-radius: 0;
+border: solid 1px #1f1f1f;
+color: #ddd;
+background-color: #555;
+}
+
+.page-rate-widget-box .rate-points {
+    background-color: #232323 !important;
+    border: solid 1px #f1f1f1;
+    border-right: 0;
+    border-radius: 0;
+}
+
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background-color: #232323;
+    border-top: solid 1px #f1f1f1;
+    border-bottom: solid 1px #f1f1f1;
+    font-weight: bold;
+}
+ 
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    background: transparent;
+    color: #f1f1f1;
+    padding: 0 4px;
+    margin: 0 1px;
+
+}
+ 
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background: #f1f1f1;
+    color: #232323;
+    text-decoration: none;
+}
+ 
+.page-rate-widget-box .cancel {
+    background-color: #232323;
+    border: solid 1px #f1f1f1;
+    border-left: 0;
+    border-radius: 0;
+}
+ 
+.page-rate-widget-box .cancel a {
+    background: transparent;
+    text-transform: uppercase;
+    color: #f1f1f1;
+}
+ 
+.page-rate-widget-box .cancel a:hover {
+    border-radius: 0;
+    background: #f1f1f1;
+    color: #232323;
+    text-decoration: none;
+}
+
+#top-bar ul li a {
+border: none;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1px;
+    max-height: 1px;
+    overflow: hidden;
+transition: 0 !important;
+}
+ 
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    background: #232323;
+    color: #f1f1f1;
+border: none;
+transition: 0 !important;
+}
+
+#top-bar ul li ul a, #top-bar a:hover {
+    color: #f1f1f1;
+transition: 0 !important;
+}
+
+#top-bar ul li.sfhover a:hover, #top-bar ul li:hover a:hover { 
+    color: #f1f1f1;
+    background-color: rgba(100,100,100,0.25);
+}
+
+table.wiki-content-table th,
+table.wiki-content-table td,
+#toc,
+blockquote,
+.scp-image-block .scp-image-caption {
+    border-color: #f3f3f3;
+    background-color: transparent;
+}
+ 
+table.wiki-content-table th {
+    background-color: transparent;
+}
+
+.hovertip .content {
+background-color: #232323;
+color: #f1f1f1;
+outline: 1px solid #f1f1f1;
+border: none;
+}
+
+blockquote, #toc{
+border: 1px solid #f3f3f3;
+}
+
+a{
+color: #59e;
+transition: 0.2s;
+}
+
+a:visited{
+color: #59e;
+transition: 0.2s;
+}
+
+a:hover{
+color: #6bf;
+transition: 0.2s;
+}
+
+textarea {
+background-color: #232323;
+color: #f3f3f3;
+outline: 0;
+}
+
+input.text, input.button,
+#search-top-box-input,
+#search-top-box-form input[type=submit],
+div.buttons input, input.button, button, file, a.button {
+    background: transparent;
+    color: #f3f3f3;
+    border: 1px solid #f3f3f3;
+    border-radius: 0;
+    font-size: 1em;
+    outline: 0;
+transition: 0.2s;
+}
+ 
+div.buttons input:hover, div.buttons input:focus {
+    border-color: #f3f3f3;
+    background-color: #f3f3f3;
+    color: #232323;
+transition: 0.2s;
+}
+
+#lock-info {
+    background: transparent;
+    border: 0;
+}
+ 
+#lock-info #lock-timer {
+    color: #59e;
+}
+
+.yui-navset.yui-navset-top {
+    border-left: 3px solid #454545;
+}
+
+.yui-navset .yui-nav {
+    position: relative;
+    z-index: 0;
+    border: none;
+    padding-left: 0.2em;
+}
+.yui-navset .yui-nav li {
+    padding: 0;
+    margin: 0.2em 0.3em;
+    transition: transform 0.2s ease-in-out;
+    border: none;
+}
+.yui-navset .yui-nav li a {
+    background: transparent;
+    color: #f1f1f1;
+    border: none;
+    transition: background 0.1s ease-in-out,
+                color 0.1s ease-in-out,
+}
+.yui-navset .yui-nav li a:hover {
+    background: rgba(0,0,0,0.04);
+    color: #e1e1e1;
+    border: none;
+}
+.yui-navset .yui-nav li a em {
+    border: none;
+    padding: 0.5em 0.5em calc(0.5em - 2px) 0.5em;
+}
+.yui-navset .yui-nav .selected {
+    padding: 0;
+    margin: 0.2em 0.3em;
+    transform: scale(1.1);
+}
+.yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a:focus, .yui-navset .yui-nav .selected a:hover {
+    padding: 0;
+border: none;
+    background: #232323;
+}
+.yui-navset .yui-nav .selected a em {
+    padding: 0.5em 0.5em calc(0.5em - 2px) 0.5em;
+    border: none;
+}
+ 
+.yui-navset .yui-content {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    position: relative;
+    margin-top: 0.2em;
+    transform-origin: 0 0;
+color: #f1f1f1;
+}
+.yui-navset .yui-content > div {
+    border: 1px solid rgba(0,0,0,0.12);
+    border-left: none;
+    background-color: #393939;
+    padding: 0.25em 0.5em;
+    display: block;
+    top: 0;
+    overflow: hidden;
+    transform-origin: 0 0;
+}
+
+#page-content .yui-navset .yui-content > div > * {
+    transform-origin: 0 0;
+}
+
+#page-content .yui-navset .yui-content > div[style*="none"] {
+    display: block !important;
+    flex: 0;
+    max-height: 0;
+    padding: 0 0.5em;
+    border-width: 0;
+    /* The following transition affects the one that DISAPPEARS */
+    transition: padding 0s linear 0.2s,
+                flex 0.2s cubic-bezier(.0,1.27,.0,.89) 0s;
+    animation: tab-disappear 0.2s ease-in-out 0s 1 both;
+}
+
+#page-content .yui-navset .yui-content > div[style*="block"] {
+    display: block !important;
+    flex: 1;
+    max-height: 9999rem;
+  border-width: 0;
+    /* The following transition affects the one that APPEARS */
+    transition: padding 0s linear 0.2s,
+                flex 0.2s cubic-bezier(.99,.0,.99,.0) 0.2s;
+    animation: tab-appear 0.2s ease-in-out 0.5s 1 both;
+}
+ 
+@keyframes tab-disappear {
+    0% { max-height: 9999rem; }
+    1% { max-height: 100vh; }
+    100% { max-height: 0; }
+}
+@keyframes tab-appear {
+    0% { max-height: 0; }
+    99% { max-height: 100vh; }
+    100% { max-height: 9999rem; }
+}
+
+.document {
+display: inline-block;
+border-radius: 10px;
+border: single 1px #454545;
+background-color: #393939;
+float: top; 
+width: 96.5%;
+padding: 10px;
+box-shadow: 0 2px 4px rgba(50,50,50,0.75);
+}
+
+[[/module]]
+
 [[>]]
 [[module Rate]]
 [[/>]]
