@@ -2169,25 +2169,6 @@ Instructions for use can be found [http://topia.wikidot.com/cqb:carousel here].
 > **JP:**[[footnote]]Translated into SCP-JP by [[*user 7happy7]][[/footnote]] @@[[include@@ :scp-jp-sandbox2:component:usefultool-module]]
 **IMPORTANT:** This part gets placed at the bottom of the page.
 
-**__Option 2__**
-
-[[include :scp.avn.sh:7happy7:ut-ver2]]
-[[module CSS]]
-.fixed-controls {display:none!important;}
-[[/module]]
-[[module ListPages offset="@URL|0" range="."]]
-[/scp-style-resource/offset/1/tool2_limit/1#toc10 Show the tool]
-[[/module]]
-[[module ListPages limit="@URL|0" range="." urlAttrPrefix="tool2"]]
-[[%%content{0}%%module CSS]]
-.fixed-controls{display:block!important;}
-[[%%content{0}%%/module]]
-+* Look at the lower right!
-[/scp-style-resource#toc10 Hide the tool]
-[[/module]]
-
-**What to copy:**
-> @@[[include@@ :scp.avn.sh:7happy7:ut-ver2]]
 
 [[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
 [[/div]]
