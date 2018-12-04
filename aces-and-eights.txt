@@ -1,0 +1,339 @@
+title:Aces And Eights
+[[module css]]
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Six+Caps');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC');
+[[/module]]
+
+[[module css]]
+
+#header{
+    background: url(null)
+}
+#header:before{
+display:block;
+position: absolute;
+width: 100px;
+height: 100px;
+top: 15%;
+left:2%;
+z-index: -1;
+content: "";
+background:url(http://scp-sandbox-3.wikidot.com/local--files/collab:rounderhouse-and-unclenicolini-and-ihp/chip.png);
+background-repeat: no-repeat;
+background-size: 100px 99px;
+background-position: 0px 0px 0px;
+z-index: -20;
+}
+
+#content-wrap {z-index: 2;}
+
+/* BODY */
+body {
+    background: #eee4d5 !important;
+}
+
+.main-body-div{
+    width: 92.7%;
+    line-height: 20px;
+    border: 2px
+    display: inline-block;
+    padding-left: 25px;
+    padding-right: 25px;
+    vertical-align: top;
+    transition: all .7s;
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("http://topia.wikidot.com/local--files/aces-n-eights-hub/paper.jpg");
+}
+
+#header h1 a {
+    font-size: 190%;
+    color: transparent;
+    text-shadow: none
+}
+
+div#container-wrap {
+    background: url(http://scp-sandbox-3.wdfiles.com/local--files/collab%3Arounderhouse-and-unclenicolini-and-ihp/nicotempfile.png) top left repeat-x;
+}
+
+#header h1 a::before {
+    font-family: 'Playfair Display SC', serif;
+    content: "Aces and Eights";
+    color: #000000;
+    padding-bottom: 50px;
+}
+
+#header h2 span {
+    font-size: 175%;
+    color: transparent;
+    text-shadow: none;
+}
+#header h2 span::before {
+    font-family: 'Playfair Display SC', serif;
+    content: "Astounding Tales: Fresh from the west!";
+    color: #000000;
+    padding: 0px 0px 00px;
+}
+
+#search-top-box-input, #search-top-box input.empty,
+#search-top-box-form input[type=submit] {
+    transition: 0.2s linear;
+}
+
+#search-top-box-input, #search-top-box input.empty {
+    background-color: #B4935D;
+    border: 1px solid #DBC39F;
+    border-radius: 0;
+    color: #000;
+}
+
+#search-top-box-input:hover, #search-top-box-input:focus,
+#search-top-box input.empty:hover, #search-top-box input.empty:focus {
+    outline: 0;
+    border: 1px solid #000;
+    background-color: #B4935D;
+    box-shadow: 0 1px 3px rgba(0,0,0,.8);
+}
+
+#search-top-box-form input[type=submit] {
+    outline: 0;
+    height: 1.65em;
+    border: 1px solid #DBC39F;
+    border-radius: 0;
+    color: #000;
+    background: #B6925E;
+
+    position: relative;
+    top: -1px;
+
+    box-shadow: none;
+}
+
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    border: 1px solid #000;
+    border-radius: 0;
+    background: #B6925E;
+}
+
+#search-top-box-form input[type=submit]:active {
+    padding: 0 0.5em;
+    border: 2px solid #DBC39F;
+    border-radius: 0;
+    color: #000;
+    background: #B6925E;
+}
+
+#login-status, #login-status a {
+    color: #000;
+    border-color: #000;
+}
+
+#side-bar .side-block {
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    box-shadow: none !important;
+    background: #e7d8c2; 
+    margin-bottom: 15px;
+    color: black;
+}
+
+h1, #page-title {
+    color: #000;
+    padding: 0 0 0.25em;
+    margin: 0 0 0.6em;
+    font-weight: heavy;
+    font-family: 'Playfair Display SC', serif;
+}
+
+
+/* inputs */
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+    border-top: 1px solid #000000;
+}
+ 
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    background: #bc9055;
+    color: #ffffff;
+}
+#top-bar ul li ul a, #top-bar a:hover {
+    color: #8db600;
+}
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: #680000; /* top bar hover background color */
+}
+/*nico was here*/
+:root {
+    --hyperlink: #824565;
+    --hyperlink-visited: #63173f;
+}
+
+@media (max-width: 479px) {
+#search-top-box-input, 
+#search-top-box-form {
+    display: none;
+}
+
+#header h1 a {
+    font-size: 100%;
+}
+
+#header h2 span{
+font-size: 75%;
+}
+
+#header {
+    background-position: 0 5.5em;
+    background-size: 55px 55px;
+}
+ 
+#header:before{
+width: 60%;
+height: 60%;
+background-size: 55px 55px;
+background-position: 0px 0px 20px;
+}
+}
+[[/module]]
+[[div style="border:1px solid #665731;"]]
+[[div class="borders"]]
+  [[div class="main-body-div"]]
+   [[div class="reset"]]
+
+[[div style="text-align: center"]]
+[[div class="unmargined" style="font-family: 'Playfair Display SC', serif; font-size: 475%; margin: 2px 0 5px;"]]
+@@ @@
+THE BALTIMORE STAR
+[[/div]]
+[[div class="unmargined" style="font-family: serif; font-size: 125%; border-top-style: solid; border-bottom-style: solid;"]]
+[[table style="border: none; width: 100%;"]]
+[[row]]
+[[cell]]
+BALTIMORE @@                                @@FRIDAY, DECEMBER 6TH, 1867
+[[/cell]]
+[[cell style="text-align: right;"]]
+1/2¢
+[[/cell]]
+[[/row]]
+[[/table]]
+[[/div]]
+[[div class="unmargined" style="font-family: 'Anton'; font-size: 575%; margin: 2px 0 5px;"]]
+THE WAR IS OVER
+[[/div]]
+[[div class="unmargined" style="font-family: 'Anton'; font-size: 380%; margin: 2px 0 5px;"]]
+GENERAL LEE SURRENDERS TO GENERAL SHERMAN IN RICHMOND[[/div]]
+[[div class="unmargined" style="font-family:serif; font-size:120%;"]]
+//by Jeremiah Cimmerian - Editor-In-Chief//
+[[/div]]
+[[/div]]
+[[embedvideo]]
+<iframe width="650" height="315" src="https://www.youtube.com/embed/DgXp4rMs7Q8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[[/embedvideo]]
+[[span style="font-family: 'Special Elite', cursive;"]]
+**...it may be lost on my readers, given the exultation you must be experiencing with the knowledge that you are no longer refugees, but an unexpectedly rainy day is all that separates those who still live from the cold reality of our current landscape. Recall the first battle of Gettysberg. Rain and wind blanketed the battlefield on that most unkind day.**
+
+**There are still legends of dark riders, the mythical 682nd which brought death and darkness along with them. This is a falsehood of the highest order, I assure you. The Union army, under the incompetent General Meade, allowed Lee free reign and they slaughtered the Army of the Potomac almost to the man. No greater loss of life has ever occurred on this continent, and may never again.**
+
+**To say that our optimism for a quicker end to the war was shattered in that moment would be an understatement, but I would myself be retelling a falsehood if I said that I expected the total obliteration of our fine city before war's end. That it would come within days of the signing of the terms of surrender is itself an appalling fact.**
+
+**I would venture to say that the terms of that surrender border on a victory by the South. With the exception of outlawing of slavery in the Southern states they have given the union nothing, and the demand that President Lincoln resign his position was only less preposterous than the fact that the terms were accepted. Even now he boards a train headed west, leaving behind the graves of his family and innumerable union soldiers. He is perhaps never to be seen again in the civilized world.**
+
+**And so it must be with myself also. The Razing of Baltimore was complete and abiding, dear reader. This last edition is being printed on borrowed presses in our nation's capital and distributed to you in whatever refugee camp you inhabit.** 
+
+**The union has seen fit to give the survivors of the Razing a sum of 50 dollars and the promise of land in the west. I will myself go there to find my fortune or my death. As I enter this new period of my life, I would like to thank you for your patronage. If you are to ever find yourself in Riddle, Wyoming, pass me by without a word. I do not wish to be reminded of this chapter of my life.**
+-----
+++ **Astounding Tales: Fresh From The West.**
+
+* [[[http://www.scp-wiki.net/now-hollow-fires-burn-out-to-black-and-lights-are-waning-low | Now Hollow Fires Burn Out To Black And Lights Are Guttering Low]]]
+* [[[An Explosive Shout Cracks the Great Empty Sky]]]
+* [[[There in the starless dark, with vast wings across the canceled skies; the sudden blackness of nothing at all.]]]
+* [[[http://www.scp-wiki.net/maybe-i-m-a-king | And the answer you have to give, no matter how dark and cold the world around you is: Maybe I’m a king.]]]
+* [[[Square your shoulders, lift your pack, and leave your friends and go.]]]
+* [[[The wall on which the prophets wrote, is cracking at the seams]]]
+-----
+
+++ **A Letter From The Editor**
+
+Do you enjoy watching, reading, or writing stories set in the old west? Do you enjoy the SCP Foundation? Wanna see what happens when you mix the two together? You're in luck, because that's what we do here.
+
+The history blurb above is about as much concrete information as you need to know. Between that and the very first tale in the series (that being "[[[http://www.scp-wiki.net/now-hollow-fires-burn-out-to-black-and-lights-are-waning-low | Hollow Fires]]]", which is linked above) you should be entirely up to date on the established history of the canon. So where do you go from there?
+
+I'm not exercising any sort of strong editorial control. The canon is very generally set in the old west. The setting is a big place and there's room for all kinds of stories.
+
+I have two things that I would ask of you. First: When you choose your tale title, choose either a line from a poem or a song you like. Something of decent length would be good. It's something we've done in the first 5 tales and something I'd like us to continue doing.
+
+Second: I would ask that you keep your works consistent with anything previously written about a particular person or group.
+
+Part of the fun of this setting, by the way, is taking an established modern idea, group, or character, and retooling it for the Old West. But if you want to write about Anderson Robotics in the old west (as an example), you'll need to read the tales that already include the setting's interpretation of the company (specifically Anderson Prosthetics) and build on what's already been written. 
+
+As far as I am concerned these are first come first serve. If you write it first, that's the canon interpretation. Consider it a gold rush.
+
+Except for the SCP Foundation. The SCP Foundation **does not exist**. Using doctors, agents, or SCPs, is fine. The organization itself, however, does not exist in this canon. Literally everything else is open to use.
+
+That's it. What follows is a semi-comprehensive list of what's //already// been interpreted and established (along with links to the tales that include them). If you write a new tale, you should add it to this hub yourself and edit the list below to include anything you reuse or use for the first time. If editing this page is too daunting for you, post on the discussion page and I'll get to it eventually. 
+
+
+-----
+[[=]]
++ Spoiler Warning. 
+[[/=]]
+If you want to read through the full canon unspoiled do not open this collapsible. If you'd like to be able to write for the canon but not have to read everything and need to check if what you want to do has already been done, then check below. I still highly suggest you at least read [[[http://www.scp-wiki.net/now-hollow-fires-burn-out-to-black-and-lights-are-waning-low | Hollow Fires]]], as it acts as a sort of foundational work to the canon.
+@@ @@
+[[collapsible show="Open Pandora's Box" hide="If hope is the only thing left in there doesn't that mean the world doesn't have any hope?"]]
+* **Site-19** is //Saloon Number 19//: 
+ * [[[http://www.scp-wiki.net/now-hollow-fires-burn-out-to-black-and-lights-are-waning-low | Hollow Fires]]]
+* **[http://www.scp-wiki.net/unusual-incidents-unit-hub The Unusual Incidents Unit]** are //The Union Investigation Unit//: 
+ * [[[http://www.scp-wiki.net/now-hollow-fires-burn-out-to-black-and-lights-are-waning-low | Hollow Fires]]] | [[[http://www.scp-wiki.net/maybe-i-m-a-king | Maybe I'm A King]]] | [[[http://www.scp-wiki.net/square-your-shoulders | Leave Your Friends]]]
+* **Dr. Kondraki** is //Conrad Drake//: 
+ * [[[http://www.scp-wiki.net/now-hollow-fires-burn-out-to-black-and-lights-are-waning-low | Hollow Fires]]]
+* **[http://www.scp-wiki.net/dr-wondertainment-hub Dr. Wondertainment]** is //Dr. Wonder//: 
+ * [[[http://www.scp-wiki.net/now-hollow-fires-burn-out-to-black-and-lights-are-waning-low | Hollow Fires]]]
+* **[http://www.scp-wiki.net/scp-073 Cain]** is //Jacob Kane//: 
+ * [[[http://www.scp-wiki.net/now-hollow-fires-burn-out-to-black-and-lights-are-waning-low | Hollow Fires]]]
+* **[http://www.scp-wiki.net/scp-076 Able]** is //Abe Kane//: 
+ * [[[http://www.scp-wiki.net/now-hollow-fires-burn-out-to-black-and-lights-are-waning-low | Hollow Fires]]]
+* **[[[SCP-500]]]** is //pretty much exactly the same//: 
+ * [[[http://www.scp-wiki.net/now-hollow-fires-burn-out-to-black-and-lights-are-waning-low | Hollow Fires]]]
+* **[http://www.scp-wiki.net/scp-2284 Mr. Lie]** is //Mr. Cozen//: 
+ * [[[http://www.scp-wiki.net/now-hollow-fires-burn-out-to-black-and-lights-are-waning-low | Hollow Fires]]]
+* **[[[SCP-682]]]** is //the 682^^nd^^ Cavalry//: 
+ * [[[http://www.scp-wiki.net/now-hollow-fires-burn-out-to-black-and-lights-are-waning-low | Hollow Fires]]] | [[[http://www.scp-wiki.net/square-your-shoulders | Leave Your Friends]]]
+* **[[[SCP-173]]]** is //a young Native American man//: 
+ * [[[http://www.scp-wiki.net/an-explosive-shout-cracks-the-great-empty-sky | Empty Sky]]]
+* **[http://www.scp-wiki.net/scp-049 The Plague Doctor]** is //the Doctor//: 
+ * [[[http://www.scp-wiki.net/an-explosive-shout-cracks-the-great-empty-sky | Empty Sky]]] | [[[http://www.scp-wiki.net/those-dazed-eyes | Starless Dark]]]
+* **Kain Pathos Crow** is //a man and his dog//: 
+ * [[[http://www.scp-wiki.net/an-explosive-shout-cracks-the-great-empty-sky | Empty Sky]]]
+* **[http://www.scp-wiki.net/scp-993 Bobble the Clown]** is //Bobby Farcer//: 
+ * [[[http://www.scp-wiki.net/those-dazed-eyes | Starless Dark]]]
+* **[http://www.scp-wiki.net/anderson-robotics-hub Anderson Robotics]** is //Anderson Prosthetics//: 
+ * [[[http://www.scp-wiki.net/those-dazed-eyes | Starless Dark]]] | [[[http://www.scp-wiki.net/square-your-shoulders | Leave Your Friends]]]
+* **[http://www.scp-wiki.net/chaos-insurgency-hub The Chaos Insurgency]** are //The Confederate Inspectors//: 
+ * [[[http://www.scp-wiki.net/maybe-i-m-a-king | Maybe I'm A King]]]
+* **Dr. Bright** is //Colonel Jackson Bright//: 
+ * [[[http://www.scp-wiki.net/maybe-i-m-a-king | Maybe I'm A King]]]
+* **[http://www.scp-wiki.net/scp-963 Bright's Amulet]** is a //Jeweled Sword Cane//
+ * [[[http://www.scp-wiki.net/maybe-i-m-a-king | Maybe I'm A King]]]
+* **Doctor Everwood** is //Justine Everwood//
+ * [[[http://www.scp-wiki.net/square-your-shoulders | Leave Your Friends]]]
+* **Agent Lombardi** is //Agent Lombardi//:
+ * [[[http://www.scp-wiki.net/square-your-shoulders | Leave Your Friends]]]
+* **The Church Of The Broken God** is the //Fellowship of the Broken God//:
+  * [[[http://www.scp-wiki.net/the-wall-on-which-the-prophets-wrote-is-cracking-at-the-seam | Cracking At The Seams]]]
+* **Dr. Cimmerian** is //Jeremiah Cimmerian, Newspaper Editor//
+  * [[[http://www.scp-wiki.net/aces-and-eights | This very hub.]]]
+
+= **//Please add any characters, GoIs, or SCPs you use in your Aces and Eights tales to this list with their appropriate crosslinks.//**
+[[/collapsible]]
+
+[[/span]]
+   [[/div]]
+  [[/div]]
+[[/div]]
+[[/div]]
