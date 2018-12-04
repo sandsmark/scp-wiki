@@ -2156,6 +2156,9 @@ Instructions for use can be found [http://topia.wikidot.com/cqb:carousel here].
 [[module ListPages offset="@URL|0" range="."]]
 [/scp-style-resource/offset/1/tool_limit/1#toc10 Show the tool]
 [[/module]]
+[[module ListPages limit="@URL|0" range="." urlAttrPrefix="tool2"]]
+[/scp-style-resource/offset/1/tool_limit/1#toc10 Show the tool]
+[[/module]]
 [[module ListPages limit="@URL|0" range="." urlAttrPrefix="tool"]]
 [[%%content{0}%%include :scp-sandbox-3:component:usefultool-module]]
 +* Look at the lower right!
