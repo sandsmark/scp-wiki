@@ -1,4 +1,62 @@
 title:Rigen's Author Page
+[[module css]]
+#header {
+    background-image: url(http://scpsandbox2.wikidot.com/local--files/rigens-draft/icon.png)
+}
+#header h1 {
+    margin-left: 110px;
+    padding: 0;
+    float: left;
+    max-height: 220px;
+}
+#header h2 {
+    margin-left: 110px;
+    padding: 0;
+    clear: left;
+    float: left;
+    font-size: 105%;
+    max-height: 60px;
+}
+ 
+#header h1 a {
+    display: block;
+    margin: 0;
+    padding: 74px 0 25px;
+    line-height: 0px;
+    max-height: 0px;
+    color: transparent;
+    background: transparent;
+    font-family: 'stationmedium', Arial, sans-serif;
+    font-size: 180%;
+    text-decoration: none;
+    text-shadow: none;
+    letter-spacing: 0.9px;
+}
+ 
+#header h1 a::before {
+    content: "NOSCOPE";
+    color: #efeeee;
+    text-shadow: 3px 3px 5px #000000;
+}
+ 
+#header h2 span {
+    display: block;
+    margin: 0;
+    padding: 13px 0;
+    line-height: 0px;
+    max-height: 0px;
+    font-weight: bold;
+    color: transparent;
+    text-shadow: none;
+}
+ 
+#header h2 span::before {
+    content: 'Near-Orbit Specially Contained Objects, Phenomenon, and Entities ';
+    color: #F1F1F1;
+    text-shadow: 1px 1px 1px #000000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);}
+ 
+[[/module]]
 [[>]]
 [[module rate]]
 [[/>]]
