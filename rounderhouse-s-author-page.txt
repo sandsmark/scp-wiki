@@ -21,7 +21,7 @@ background-repeat: no-repeat;
 background-size:100px 100px;
 background-position: 0px 0px;
 z-index: 201;
-  animation: spinny1 3s infinite linear;
+  animation: spinny1 7s infinite linear;
 
 }
 
@@ -46,7 +46,6 @@ z-index: 201;
     content: "the rounderpage™";
     color: #000000;
     text-shadow: 3px 3px 5px #000000;
-    animation: spinny1 7s infinite linear;
 }
 
 #header h2 span {
@@ -64,10 +63,14 @@ z-index: 201;
 div#container-wrap::before {
     content: "";
     display: block;
-    height: 600px;
+    height: 140px;
     width: 100%;
     position: absolute;
     
+    background: url("http://scp-wiki.net/local--files/rounderhouse-s-author-page/header3.png");
+}
+
+#footer
     background: url("http://scp-wiki.net/local--files/rounderhouse-s-author-page/header3.png");
 }
 
@@ -94,7 +97,7 @@ div#container-wrap::before {
 }
 #top-bar ul li.sfhover a:hover,
 #top-bar ul li:hover a:hover {
-    background: #ff0000; /* top bar hover background color */
+    background: #282e48; /* top bar hover background color */
 }
 
 
@@ -173,7 +176,7 @@ div#container-wrap::before {
     border: 1px solid #444;
     border-radius: 10px;
     box-shadow: none !important;
-   background:url(https://d1yn1kh78jj1rr.cloudfront.net/image/preview/rDtN98Qoishumwih/rainbowcheckered-1-091815-1241_SB_PM.jpg);
+    background:url(http://firedawnfolder.wikidot.com/local--files/yurt-11/house2.png);
     margin-bottom: 15px;
     color: white;
 }
@@ -203,11 +206,6 @@ div#container-wrap::before {
     border-color: rgba(0,0,0,0.12);
     background-color: #8B4513;
 }
-
-body {
-    background: url("https://upload.wikimedia.org/wikipedia/commons/2/22/Animated_fire_by_nevit.gif") !important;
-}
-
 [[/module]]
 
 [[module css]]
@@ -216,9 +214,6 @@ body {
     text-decoration: underline;
 }
 [[/module]]
-
-[[include :scp.avn.sh:7happy7:ut-ver2]]
-
 
 [[div id="myTextMessageConvoHolder" style="display:inline-block; width:100%;"]]
 [[div id="myTextMessageConvoDiv" style="color:white; border-radius: 25px; background: #73AD21;padding: 15px;width: 180px; height: 55px;float:left;"]]
@@ -279,7 +274,7 @@ nice, what about tales?
 [[html]]
 <br/>
 [[/html]]
-[[div id="myTextMessageConvoDivReply" style="color:white; border-radius: 25px; background: blue;padding: 15px;width: 180px; height: 210px;float:right;display: inline-block"]]
+[[div id="myTextMessageConvoDivReply" style="color:white; border-radius: 25px; background: blue;padding: 15px;width: 180px; height: 170px;float:right;display: inline-block"]]
 [[module ListPages created_by="Rounderhouse" order="rating" tags="+tale" separate="no"]]
 * %%title_linked%% (+%%rating%%)
 [[/module]]
@@ -310,7 +305,7 @@ any other stuff??
 [[html]]
 <br/>
 [[/html]]
-[[div id="myTextMessageConvoDivReply" style="color:white; border-radius: 25px; background: blue;padding: 15px;width: 180px; height: 160px;float:right;display: inline-block"]]
+[[div id="myTextMessageConvoDivReply" style="color:white; border-radius: 25px; background: blue;padding: 15px;width: 180px; height: 110px;float:right;display: inline-block"]]
 [[module ListPages created_by="Rounderhouse" order="rating" tags="-tale -scp -author" separate="no"]]
 * %%title_linked%% (+%%rating%%)
 [[/module]]
