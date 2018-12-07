@@ -2,25 +2,16 @@ title:The Based God
 [[module CSS]]
 @import url(http://kontainer.djkakt.us/component:theme/code/1);
 sup { 
+
 vertical-align: top; position: relative; top: -0.5em; 
-}
-
-a img {
-    position: relative;
-    z-index: 1;
-}
-
-.aquamarine {
-    background-color: aquamarine;
-    border: 2px solid #888;
-    border-radius: 10px;
-    margin:10px;
-    padding:10px;
-    width: 200px;
 }
 
 @media (max-width: 1600px) {
    .desktop-only{ display: none; visibility:hidden }
+}
+a img {
+    position: relative;
+    z-index: 1;
 }
 [[/module]]
 
@@ -187,9 +178,7 @@ a img {
 
 [[# 2812]]
 [[image 2812.png link="SCP-2812"]]
-[[div class="aquamarine"]]
 //To our friends at Indiana Limestone, best wishes for 1935!//
-[[/div]]
 @@@@
 
 [[# 2399]]
@@ -806,3 +795,22 @@ Bracket Challenge
 
 [[image workbench.png link="*http://scp-wiki.com/djkaktus-workbench"]] **-** [[image sandbox.png link="*http://kontainer.djkakt.us/djkaktus-sandbox-hub"]] **-** [[image kaktuskast.png link="*http://scp-wiki.com/kaktuskast-hub"]]
 [[/=]]
+[[module CSS]]
+a img {
+    position: relative;
+    z-index: 1;
+}
+a+.list-pages-box .list-pages-item {
+    transform: perspective(50em) rotateX(20deg);
+    transform-style: preserve-3d;
+}
+a+.list-pages-box {
+    width: 70%;
+    margin: auto;
+    border: 5px #ddd solid;
+    -webkit-transform: perspective(50em) rotateX(-30deg);
+    transform: perspective(50em) rotateX(-40deg);
+    margin-top: -12px;
+    transform-style: preserve-3d;
+}
+[[/module]]
