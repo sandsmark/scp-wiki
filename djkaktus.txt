@@ -5,18 +5,11 @@ sup {
 
 vertical-align: top; position: relative; top: -0.5em; 
 }
-a+.croqbox .croqbox-item {
-    transform: perspective(50em) rotateX(20deg);
-    transform-style: preserve-3d;
-}
 a+.croqbox {
     width: 70%;
     margin: auto;
     border: 5px #ddd solid;
-    -webkit-transform: perspective(50em) rotateX(-30deg);
-    transform: perspective(50em) rotateX(-40deg);
     margin-top: -12px;
-    transform-style: preserve-3d;
 }
 @media (max-width: 1600px) {
    .desktop-only{ display: none; visibility:hidden }
@@ -189,8 +182,8 @@ a img {
 -----
 
 [[# 2812]]
-[[div class="croqbox"]]
 [[image 2812.png link="SCP-2812"]]
+[[div class="croqbox"]]
 //To our friends at Indiana Limestone, best wishes for 1935!//
 [[/div]]
 @@@@
