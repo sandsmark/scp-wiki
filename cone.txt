@@ -1,4 +1,23 @@
 title:cone
+[[module css]]
+* {
+    font-family: "Comic Sans MS";
+
+  animation: what 600ms linear infinite reverse;
+}
+*::after { content: "you believed in a beautiful sandbox but this is the true face of the divine"; }
+@keyframes what {
+0% { background: repeating-radial-gradient(red 10px,orange 25px,yellow 40px,green 55px,blue 70px,indigo 85px,violet 100px,red 115px); }
+12.5% { background: repeating-radial-gradient(orange 10px,yellow 25px,green 40px,blue 55px,indigo 70px,violet 85px,red 100px,red 115px); }
+25% { background: repeating-radial-gradient(yellow 10px,green 25px,blue 40px,indigo 55px,violet 70px,red 85px,red 100px,orange 115px); }
+37.5% { background: repeating-radial-gradient(green 10px,blue 25px,indigo 40px,violet 55px,red 70px,red 85px,orange 100px,yellow 115px); }
+50% { background: repeating-radial-gradient(blue 10px,indigo 25px,violet 40px,red 55px,red 70px,orange 85px,yellow 100px,green 115px); }
+62.5% { background: repeating-radial-gradient(indigo 10px,violet 25px,red 40px,red 55px,orange 70px,yellow 85px,green 100px,blue 115px); }
+75% { background: repeating-radial-gradient(violet 10px,red 25px,red 40px,orange 55px,yellow 70px,green 85px,blue 100px,indigo 115px); }
+87.5% { background: repeating-radial-gradient(red 10px,red 25px,orange 40px,yellow 55px,green 70px,blue 85px,indigo 100px,violet 115px); }
+100% { background: repeating-radial-gradient(red 10px,orange 25px,yellow 40px,green 55px,blue 70px,indigo 85px,violet 100px,red 115px); }
+[[/module]]
+
 [[module CSS]]
 
 .random { text-align: center; }
