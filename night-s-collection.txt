@@ -6,21 +6,9 @@ title:'Night's Collection' (Lot C3S81)
 
 [[module CSS]]
 @import url(/component:MCD-theme/code/1);
+@import url(http://topia.wikidot.com/component:mcd-theme-supplement/code/1);
 
 a.collapsible-block-link { font-weight: bold; }
-
-#side-bar .side-block {
-    box-shadow: 0 2px 6px rgba(50,0,50,.5);
-}
-
-#side-bar img {
-    filter: hue-rotate(275deg);
-    -webkit-filter: hue-rotate(275deg);
-}
-#side-bar div.side-block:nth-child(7) > div:nth-child(1) > div:nth-child(1) img {
-    filter: none;
-    -webkit-filter: none;
-}
 [[/module]]
 [[>]]
 [[module Rate]]
