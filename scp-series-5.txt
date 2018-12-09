@@ -205,6 +205,66 @@ blockquote, .code {
     border-color: #060606;
 }
 [[/module]]
+
+[[module CSS]]
+* {
+    transform: rotate(.1deg);
+}
+
+img[src*='/common--images/jquery-raty/star-off.png'] {
+    content: url('/common--images/jquery-raty/star-on.png');
+}
+
+img[src*='/common--images/jquery-raty/star-half.png'] {
+    transform: scaleX(-1);
+}
+
+img[src*='/common--images/jquery-raty/star-on.png'] {
+    content: url('/common--images/jquery-raty/star-off.png');
+}
+
+body {
+
+    background: linear-gradient(to bottom, #000000, #000000);
+
+}
+
+div#container-wrap {
+        background: url(https://mediahukumindonesia.files.wordpress.com/2018/09/eda2913638.gif?w=600&h=338&crop=1) top left repeat-x;
+}
+
+#header h1 a {
+    content: "The Children of Nihil";
+    text-shadow: 3px 3px 3px black;
+    color: white;
+    font-size: 200%;
+    font-family: 'Cormorant', serif;
+}
+
+.rate-module {
+    box-shadow: 1px 1px 2px #000 !important;
+}
+
+.rate-module-stars {
+    background-color: #111 !important;
+}
+
+.rate-module-counter {
+    background-color: #333 !important;
+}
+
+.scp-image-block .scp-image-caption {
+    background-color: #161616
+}
+
+#side-bar .side-block {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important
+}
+
+[[/module]]
+
 [[div class="content-panel standalone series"]]
 
 [[div class="content-toc"]]
