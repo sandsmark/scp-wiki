@@ -3,6 +3,11 @@ parent:comedown-machine-hub
 [[module CSS]]
 @import url(/component:3lawtheme/code/1);
 @import url(/component:3lawcrackedtheme/code/1);
+#header h1 a::before {
+    content: "THIRD LAW? ";
+    color: #e9ebf0;
+    text-shadow: 3px 3px 5px #000000;
+}
 #header h2 span::before {
     content: 'PLEASE STANDBY ';
     color: #F1F1F1;
