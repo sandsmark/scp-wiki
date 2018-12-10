@@ -3,6 +3,12 @@ parent:comedown-machine-hub
 [[module CSS]]
 @import url(/component:3lawtheme/code/1);
 @import url(/component:3lawcrackedtheme/code/1);
+#header h2 span::before {
+    content: 'PLEASE STANDBY ';
+    color: #F1F1F1;
+    font-style: italic;
+    text-shadow: 1px 1px 1px #000000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);}
 [[/module]]
 [[>]]
 [[module Rate]]
