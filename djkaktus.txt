@@ -6,7 +6,7 @@ sup {
 vertical-align: top; position: relative; top: -0.5em; 
 }
 .shadow {
--webkit-border-radius: 0% 0% 100% 100% / 0% 0% 8px 8px;
+-webkit-border-radius: 20px/60px;
 -webkit-box-shadow: rgba(0, 0, 0,.30) 0 2px 3px;
 }
 .container {
@@ -17,7 +17,7 @@ vertical-align: top; position: relative; top: -0.5em;
   border: 1px solid #fff;
   box-shadow: 1px 1px 2px #fff inset,
               -1px -1px 2px #fff inset;
-  border-radius: 3px/6px;   
+  border-radius: 20px/60px;  
 }
 @media (max-width: 1600px) {
    .desktop-only{ display: none; visibility:hidden }
