@@ -1,0 +1,72 @@
+title:SCP-4054
+[[include info:start]]
+**SCP-4054:** The Seventh Door
+**Author:** [[*user the great hippo]]
+**Images:** [https://opengameart.org/content/nesmup Link], [https://opengameart.org/content/simple-broad-purpose-tileset Link], [https://opengameart.org/content/another-nes-like-village Link], [https://opengameart.org/content/openalchemist-as-an-nes-game-v099 Link], [https://opengameart.org/content/simple-nes-like-platformer-tiles Link], [https://opengameart.org/content/rpg-mansion-tile-set-nes Link], and -- finally -- [https://www.flickr.com/photos/frances__ann__blair/225410788 Link.]
+
+[https://en.wikipedia.org/wiki/File:Cassius_Marcellus_Coolidge_-_Poker_Game_(1894).png Link].
+**Music:** [https://youtu.be/-sOadAaGiq4 Lavender Town] (Japanese Version of Pokemon Green and Red)
+----
+[[include :scpsandbox2:hippo]]
+[[include info:more]]
+[[include info:end]]
+
+[[module CSS]]
+@import url(/component:scp-pride/code/1);
+[[/module]]
+
+[[module css]]
+sup { 
+vertical-align: top; position: relative; top: -0.5em; 
+}
+[[/module]]
+
+[[include component:image-block name=box.png|caption=**{{Fig 1.1:}}** Box-art for //The Seventh Door//.]]
+
+**Item #:** SCP-4054
+
+**Object Class:** Safe
+
+**Special Containment Procedures:** Three NES[[footnote]]Nintendo Entertainment System.[[/footnote]] consoles modified to run SCP-4054 are to be kept for testing purposes. SCP-4054 is to be stored on-site in a secure locker. Access is limited to Level-3 personnel and above.
+
+Foundation agents monitoring flea-markets, yard-sales, and property auctions for anomalous activity are to be briefed on the existence of SCP-4054. Any NES cartridges suspected of being copies of SCP-4054 are to be purchased for examination.
+
+A Foundation-operated bot (I/O-SAURON) is to monitor online gaming communities for discussions regarding the existence of SCP-4054. A joint operation involving MTF Mu-4 ("Debuggers") and MTF Gamma-5 ("Red Herrings") is to be conducted to investigate these discussions and determine whether the participants are aware of SCP-4054. 
+
+[[include component:image-block name=title.png|caption={{**Fig 1.2:**}} Title screen.]]
+
+All copies are to be recovered, and action is to be taken to discredit the existence of SCP-4054 as a hoax or urban legend. Any screen captures or videos of SCP-4054 are to be removed or otherwise replaced with doctored images to further perpetuate this narrative.
+
+**Description:**  SCP-4054 is //The Seventh Door//, an unlicensed platform adventure game released for the Nintendo Entertainment System in 1988. The contents of each cartridge vastly exceeds the storage limitations of its ROM[[footnote]]Read-only memory.[[/footnote]] chip. Extracting SCP-4054's source-code produces a data-file too large to be contained on any currently available device.
+
+Because of its limited publication (three hundred units), inability to be copied, limited replay-ability, and incomplete state, functional copies of //The Seventh Door// are highly valued by vintage NES collectors. The game is also notable for its unique method of bypassing the North American version of the 10NES lock-out system.[[footnote]]The 10NES lock-out system was designed by Nintendo to prevent unlicensed cartridges from operating on their consoles.[[/footnote]] 
+
+[[include component:image-block name=screenshot1.png|caption={{**Fig 1.3:**}} Level 5 (Catacombs).]]
+
+Each cartridge includes two transistors that function as a voltage inverter. When activated, this component produces a negative-charged voltage spike that can temporarily disable early versions of the console's CIC,[[footnote]]Checking Integrated Circuit.[[/footnote]] bypassing the authentication lock and allowing unlicensed cartridges to run. Later iterations of the NES would add a series of 1k resistors along with diodes and grounds to prevent this technique from circumventing the lock-out unit. 
+
+However, a defect in this voltage inverter's design causes irreparable damage to //The Seventh Door//'s SRAM[[footnote]]Static random-access memory.[[/footnote]] with each successive reset. This produces an increasing number of glitches which will inevitably render the cartridge non-functional.
+
+//The Seventh Door// was shipped prior completion. As a consequence, several core components of game-play differ from what is depicted in its instruction manual and box-art: 
+
+[[include component:image-block name=screenshot2.png|caption={{**Fig 1.4:**}} Level 7 (Buried City). Note several sprites and tiles failing to load correctly.]]
+
+* The protagonist has no extra lives; upon dying, all progress is lost. The cartridge resets.
+* All power-ups described in the manual are absent save one (the //Hand of Glory//, which prevents monsters and platforms from moving for ten seconds).
+* Falling into a pit does not kill the protagonist. The protagonist will instead continue to fall off-screen as the game-over sound loops.
+* Memory overflow errors periodically cause sprites to load incorrectly.
+* The seven prisoners use the protagonist's sprite rather than their own. 
+* After unlocking a door, prisoners provide no clue regarding the location of other keys (the text boxes are empty). 
+* The protagonist dies at apparently random intervals (typically after a period of remaining still). This occurs regardless of whether or not the game is paused.
+* All monsters are absent. 
+* There is no seventh key.
+
+**Addendum 4054.1:** Video Stream
+
+[[include component:image-block name=stream.png|caption={{**Fig 1.5:**}} Footage taken from user ink49's video stream.]]
+
+In 2004, Charles Rogers (an amateur NES cartridge collector) posted a thread at @@www.opening-the-seventh-door.int@@ (a defunct online forum that was dedicated to //The Seventh Door//) under the user-name 'inky49'. There, he suggested using an NES Game Genie[[footnote]]Produced in 1990, the Game Genie is a 'game-enhancing' module that attaches between the NES cartridge and console. It permits direct modification of reference addresses in the ROM of the cartridge via strings of characters, or 'code'.[[/footnote]] to directly set the value associated with the protagonist's number of keys to seven.
+
+Several days later, Mr. Rogers posted a link to an online video stream where he intended to attempt and beat //The Seventh Door// using this exploit. Part way through his run, the video abruptly stopped. A follow-up investigation determined that Mr. Rogers had gone missing; authorities suspected foul-play after discovering several fingernails torn from Mr. Rogers' left hand inside his NES console.[[footnote]]No copy of //The Seventh Door// was recovered.[[/footnote]]
+
+To date, SCP-4054 has been linked to 25 disappearances. It remains under investigation.
