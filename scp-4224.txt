@@ -24,12 +24,16 @@ https://commons.wikimedia.org/wiki/File:Polmone_d%27acciaio_(Alvis_Motor_Company
 [[module CSS]]
 @import url(http://themes.wdfiles.com/local--code/helloworld);
 #page-title{margin: 0 0 0 0;}
+
+
 [[/module]]
 [[>]]
 [[module Rate]]
 [[/>]]
 [[module ListPages category="fragment" parent="." order="name" limit="1" offset="@URL|0"]]
 %%content%%
+.triangle1{border-color: transparent transparent #777 transparent;}
+.triangle2{border-color: transparent transparent #777 transparent;}
 [[/module]]
 
 [!-- For maintenance, or if anyone wants to translate it for some reason
