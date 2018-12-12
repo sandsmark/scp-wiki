@@ -52,7 +52,7 @@ var imgs = [
 ];
 var index = 0;
 var rand = Math.round(Math.random() * 10);
-if (rand === 2 || rand === 3) index = 1;
+if (rand === 2 || rand === 3 || rand === 4 || rand === 5) index = 1;
 function show() {
   document.write('<img src="' + imgs[index] + '" alt="image" class="image" width="300px">');
 }
