@@ -52,7 +52,7 @@ var imgs = [
 ];
 var index = 0;
 var rand = Math.round(Math.random() * 10);
-if (rand > 2) index = 1;
+if (rand > 5) index = 1;
 function show() {
   document.write('<img src="' + imgs[index] + '" alt="image" class="image" width="300px">');
 }
@@ -60,7 +60,7 @@ show();
 </script></td>
 </tr>
 <tr>
-<th colspan="2"><sup>SCP-3561-1 (<i>Upstairs Hallway</i>, by Theodore Holdstock; 1905, oil on canvas).</sup></th>
+<th colspan="2"><sup>SCP-3561-1 (<i>Upstairs Hallway</i>, 1905; oil on canvas). Refresh page for changes.</sup></th>
 </tr>
 </tbody>
 </table>
@@ -124,7 +124,7 @@ var imgs = [
 ];
 var index = 0;
 var rand = Math.round(Math.random() * 10);
-if (rand === 2 || rand === 3) index = 1;
+if (rand > 5) index = 1;
 function show() {
   document.write('<img src="' + imgs[index] + '" alt="image" class="image" width="300px">');
 }
@@ -132,7 +132,7 @@ show();
 </script></td>
 </tr>
 <tr> 
-<th colspan="2"><sup>SCP-3561-4 (<i>A Living Room</i> by Theodore Holdstock; 1906, oil on canvas).</sup></th>
+<th colspan="2"><sup>SCP-3561-4 (<i>A Living Room</i>, 1906; oil on canvas). Refresh page for changes.</sup></th>
 </tr>
 </tbody>
 </table>
@@ -178,7 +178,7 @@ var imgs = [
 ];
 var index = 0;
 var rand = Math.round(Math.random() * 10);
-if (rand === 2 || rand === 3) index = 1;
+if (rand > 5) index = 1;
 function show() {
   document.write('<img src="' + imgs[index] + '" alt="image" class="image" width="300px">');
 }
@@ -186,7 +186,7 @@ show();
 </script></td>
 </tr>
 <tr> 
-<th colspan="2"><sup>SCP-3561-6 (<i>The Foyer</i> by Theodore Holdstock; 1907, oil on canvas).</sup></th>
+<th colspan="2"><sup>SCP-3561-6 (<i>The Foyer</i>, 1907; oil on canvas). Refresh page for changes.</sup></th>
 </tr>
 </tbody>
 </table>
