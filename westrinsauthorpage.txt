@@ -1,4 +1,73 @@
 title:Westrin's Personnel File
+[[module css]]
+#header{
+    background: #FFFF66;
+}
+
+#header:before{
+display:block;
+position: absolute;
+width: 100px;
+height: 100px;
+top: 22%;
+left:2%;
+z-index: -1;
+content: "";
+background:url(https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Garfield_the_Cat.svg/1200px-Garfield_the_Cat.svg.png);
+background-repeat: no-repeat;
+background-size:100px 100px;
+background-position: 0px 0px;
+z-index: 201;
+  animation: spinny1 7s infinite linear;
+
+}
+
+@keyframes spinny1{
+    	from {
+    	-webkit-transform: rotate(0deg);
+    	         webkit-transform: rotate(0deg);
+    	}
+    	to {
+    	-webkit-transform: rotate(359deg);
+    	transform: rotate(359deg);
+    	}
+}
+
+.customlink a{
+    color: #ffffff;}
+
+
+
+div#container-wrap {
+    background: #FFFF66 top left repeat-x;
+}
+
+#header h1 a {
+    font-size: 150%;
+    color: transparent;
+    text-shadow: none;
+}
+
+#header h1 a::before {
+    content: "lasaga";
+    color: #000000;
+    text-shadow: 3px 3px 5px #000000;
+}
+
+#header h2 span {
+    font-size: 100%;
+    color: transparent;
+    text-shadow: none;
+}
+#header h2 span::before {
+    content: "";
+    color: #000000;
+    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+}
+
+[[/module]]
+
 **Name:** Westrin
 
 **Security Clearance:** Fluctuating.
