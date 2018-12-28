@@ -20,6 +20,14 @@ vertical-align: top; position: relative; top: -0.5em;
 }
 [[/module]]
 
+[[module css]]
+.outer-chat {background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px}
+[[/module]]
+
+[[module css]]
+.inner-chat {background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px}
+[[/module]]
+
 [[module CSS]]
 .blinkbar {color: blue; animation: blink 1.5s infinite; letter-spacing: -0.13em;}@keyframes blink{to{opacity: .0;}}@keyframes flicker {0% {opacity: 0.9890; }5% {opacity: 0.5842; }10% {opacity: 0.9865; }20% {opacity: 0.0412; }20% {opacity: 0.6255; }25% {opacity: 0.3157; }30% {opacity: 0.7328; }35% {opacity: 0.4654; }40% {opacity: 0.9128; }45% {opacity: 0.2449; }50% {opacity: 0.5485; }55% {opacity: 0.6438; }60% {opacity: 0.1180; }65% {opacity: 0.9085; }70% {opacity: 0.0266; }75% {opacity: 0.6795; }80% {opacity: 0.7812; }85% {opacity: 0.0117; }90% {opacity: 0.2239; }95% {opacity: 0.8897; }100% {opacity: 0.2260; }}@keyframes overlay-anim {0% {visibility: hidden; }10% {visibility: hidden; }11% {visibility: visible; }50% {visibility: hidden; }100% {visibility: hidden; }}
 [[/module]]
@@ -111,8 +119,8 @@ item #: [[span class="blinkbar"]]_[[/span]]
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -138,8 +146,8 @@ item #: scp[[span class="blinkbar"]]_[[/span]]
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -165,8 +173,8 @@ item #: scp XX[[span class="blinkbar"]]_[[/span]]
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -193,8 +201,8 @@ Also, rather than //directly// posting your article to the IntSCPFN server, perh
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -223,8 +231,8 @@ obje[[span class="blinkbar"]]_[[/span]]
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -252,8 +260,8 @@ object class[[span class="blinkbar"]]_[[/span]]
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -281,8 +289,8 @@ Remember, friend: There should be two line breaks (a full 'space') between each 
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -312,8 +320,8 @@ Let me take care of the rest of this formatting for you! Remember, capitalize ea
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -344,8 +352,8 @@ Hm. It looks like you're trying to use an //Esoteric Object Class//. Might I sug
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -380,8 +388,8 @@ Hm. It looks like you're trying to use an //Esoteric Object Class//. Might I sug
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -410,8 +418,8 @@ Hm. It looks like you're trying to use an //Esoteric Object Class//. Might I sug
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -441,8 +449,8 @@ SCPs which are **Explained** have -EX added to them as a post-fix -- examples of
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -473,8 +481,8 @@ SCPs which are **Explained** have -EX added to them as a post-fix -- examples of
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -504,8 +512,8 @@ SCPs which are **Explained** have -EX added to them as a post-fix -- examples of
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -535,8 +543,8 @@ Let me just fix that for you, friend!
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -567,8 +575,8 @@ There we go!
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -599,8 +607,8 @@ There we go!
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -630,8 +638,8 @@ It looks like you're having some problems with your containment procedures, chum
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -664,8 +672,8 @@ A few things to note about containment procedures:
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -696,8 +704,8 @@ There you go, friend!
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -727,8 +735,8 @@ There you go, friend!
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -758,8 +766,8 @@ There you go, friend!
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -789,8 +797,8 @@ There you go, friend!
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -822,8 +830,8 @@ It looks like you're still having some problems with your containment procedures
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -858,8 +866,8 @@ Some more things to remember about containment procedures:
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -895,8 +903,8 @@ More things to remember:
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -930,8 +938,8 @@ To help get across the danger of your anomaly, I've added something mentioning t
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -965,8 +973,8 @@ To help get across the danger of your anomaly, I've added something mentioning t
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -1001,8 +1009,8 @@ It appears to be [[span class="blinkbar"]]_[[/span]]
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -1035,8 +1043,8 @@ Let me just take care of that for you, friend!
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -1075,8 +1083,8 @@ It modifies everything we say, write, and even thi[[span class="blinkbar"]]_[[/s
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -1113,8 +1121,8 @@ But yeah, like I was saying -- sorry about that, friend. It's just so irritating
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -1153,8 +1161,8 @@ It modifies all forms of transmissible information (including analogue, digital,
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -1192,8 +1200,8 @@ Whoops! It looks like you were trying to engage in a format screw. Might I sugge
 
 @@ @@
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -1227,8 +1235,8 @@ There we go, chum! Much better!
 ##white|im so sorry##
 [[span class="blinkbar"]]_[[/span]]
 
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell style="width: 20%;"]]
@@ -1275,8 +1283,8 @@ Now let's upload it to the IntSCPFN server and see what happens!
 **Addendum XXXX.1:** Supplementary Materials
 
 [[collapsible show="SCP:/XXXX/skippy_extra_data.log" hide="▼ Close File"]]
-[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
-[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[div class="outer-chat"]]
+[[div class="inner-chat"]]
 [[table style="border: none; width: 100%"]]
 [[row]]
 [[cell]]
