@@ -21,6 +21,10 @@ vertical-align: top; position: relative; top: -0.5em;
 [[/module]]
 
 [[module css]]
+.text-box {background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%}
+[[/module]]
+
+[[module css]]
 .outer-chat {background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px}
 [[/module]]
 
@@ -79,7 +83,7 @@ P###008aff|rotect.##
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 [[span class="blinkbar"]]_[[/span]]
 
 @@ @@
@@ -90,7 +94,7 @@ P###008aff|rotect.##
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 it[[span class="blinkbar"]]_[[/span]]
 
 @@ @@
@@ -101,7 +105,7 @@ it[[span class="blinkbar"]]_[[/span]]
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 item [[span class="blinkbar"]]_[[/span]]
 
 @@ @@
@@ -112,7 +116,7 @@ item [[span class="blinkbar"]]_[[/span]]
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 item #: [[span class="blinkbar"]]_[[/span]]
 
 @@ @@
@@ -139,7 +143,7 @@ Hello, friend! ~:o) I'm Skippy, your automated SCP helper! It looks like you're 
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 item #: scp[[span class="blinkbar"]]_[[/span]]
 
 @@ @@
@@ -166,7 +170,7 @@ Hm! If this is your first SCP, might I suggest you review your site's [[[how-to-
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 item #: scp XX[[span class="blinkbar"]]_[[/span]]
 
 @@ @@
@@ -193,7 +197,7 @@ Also, rather than //directly// posting your article to the IntSCPFN server, perh
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 [[span style="background-color: #ffc2b3;"]]item #: scp XXXX[[/span]]
 [[span class="blinkbar"]]_[[/span]]
 
@@ -223,7 +227,7 @@ Okay then, friend! I'm here to help! It looks like you've made some basic format
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 ##blue|**Item #:** SCP-##XXXX
 obje[[span class="blinkbar"]]_[[/span]]
 
@@ -251,7 +255,7 @@ There we go! I've bolded '**Item #:**' (just enclose text in double-asterisks to
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 **Item #:** SCP-XXXX
 ###ffc2b3|█##
 object class[[span class="blinkbar"]]_[[/span]]
@@ -280,7 +284,7 @@ Remember, friend: There should be two line breaks (a full 'space') between each 
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 **Item #:** SCP-XXXX
 
 ##blue|**Object Class:**## Unkno[[span class="blinkbar"]]_[[/span]]
@@ -310,7 +314,7 @@ Let me take care of the rest of this formatting for you! Remember, capitalize ea
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 **Item #:** SCP-XXXX
 
 **Object Class:** [[span style="background-color: #ffc2b3;"]]Unknown[[/span]]
@@ -341,7 +345,7 @@ Hm. It looks like you're trying to use an //Esoteric Object Class//. Might I sug
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 **Item #:** SCP-XXXX
 
 **Object Class:** [[span style="background-color: #ffc2b3;"]]Unknown[[/span]]
@@ -377,7 +381,7 @@ Hm. It looks like you're trying to use an //Esoteric Object Class//. Might I sug
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 **Item #:** SCP-XXXX
 
 **Object Class:** [[span style="background-color: #008aff; color: white"]]Unknown@@ @@[[/span]]
@@ -407,7 +411,7 @@ Hm. It looks like you're trying to use an //Esoteric Object Class//. Might I sug
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 **Item #:** SCP-XXXX
 
 **Object Class:** [[span class="blinkbar"]]_[[/span]]
@@ -438,7 +442,7 @@ SCPs which are **Explained** have -EX added to them as a post-fix -- examples of
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 **Item #:** SCP-XXXX
 
 **Object Class:** Apol[[span class="blinkbar"]]_[[/span]]
@@ -470,7 +474,7 @@ SCPs which are **Explained** have -EX added to them as a post-fix -- examples of
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 **Item #:** SCP-XXXX
 
 **Object Class:** Apollyon[[span class="blinkbar"]]_[[/span]]
@@ -501,7 +505,7 @@ SCPs which are **Explained** have -EX added to them as a post-fix -- examples of
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 **Item #:** SCP-XXXX
 
 **Object Class:** --[[span style="background-color: #ffc2b3;"]]Apollyon[[/span]]--
@@ -532,7 +536,7 @@ Let me just fix that for you, friend!
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 **Item #:** SCP-XXXX
 
 **Object Class:** [[span style="background-color: #ffc2b3;"]]##blue|Keter##[[/span]]
@@ -564,7 +568,7 @@ There we go!
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 **Item #:** SCP-XXXX
 
 **Object Class:** Keter
@@ -595,7 +599,7 @@ There we go!
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 **Item #:** SCP-XXXX
 
 **Object Class:** Keter
@@ -627,7 +631,7 @@ It looks like you're having some problems with your containment procedures, chum
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 **Item #:** SCP-XXXX
 
 **Object Class:** Keter
@@ -661,7 +665,7 @@ A few things to note about containment procedures:
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 **Item #:** SCP-XXXX
 
 **Object Class:** Keter
@@ -693,7 +697,7 @@ There you go, friend!
 @@ @@
 
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 **Item #:** SCP-XXXX
 
 **Object Class:** Keter
@@ -724,7 +728,7 @@ There you go, friend!
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 **Item #:** SCP-XXXX
 
 **Object Class:** Keter
@@ -755,7 +759,7 @@ There you go, friend!
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 **Item #:** SCP-XXXX
 
 **Object Class:** Keter
@@ -786,7 +790,7 @@ There you go, friend!
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 **Item #:** SCP-XXXX
 
 **Object Class:** Keter
@@ -818,7 +822,7 @@ It looks like you're still having some problems with your containment procedures
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 **Item #:** SCP-XXXX
 
 **Object Class:** Keter
@@ -853,7 +857,7 @@ Some more things to remember about containment procedures:
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 **Item #:** SCP-XXXX
 
 **Object Class:** Keter
@@ -890,7 +894,7 @@ More things to remember:
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 **Item #:** SCP-XXXX
 
 **Object Class:** Keter
@@ -925,7 +929,7 @@ To help get across the danger of your anomaly, I've added something mentioning t
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 **Item #:** SCP-XXXX
 
 **Object Class:** Keter
@@ -960,7 +964,7 @@ To help get across the danger of your anomaly, I've added something mentioning t
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 **Item #:** SCP-XXXX
 
 **Object Class:** Keter
@@ -994,7 +998,7 @@ It looks like you're trying to insert a narrative into your SCP document. Might 
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 **Item #:** SCP-XXXX
 
 **Object Class:** Keter
@@ -1030,7 +1034,7 @@ Let me just take care of that for you, friend!
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 **Item #:** SCP-XXXX
 
 **Object Class:** Keter
@@ -1068,7 +1072,7 @@ Also, sorry about the @@fanfiction.net@@ snipe back there, chum. Just got a litt
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 **Item #:** SCP-XXXX
 
 **Object Class:** Keter
@@ -1106,7 +1110,7 @@ But yeah, like I was saying -- sorry about that, friend. It's just so irritating
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 **Item #:** SCP-XXXX
 
 **Object Class:** Keter
@@ -1144,7 +1148,7 @@ Oh, don't worry. Just keep going. I'll fix it as you write. Okay, chum?
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 **Item #:** SCP-XXXX
 
 **Object Class:** Keter
@@ -1183,7 +1187,7 @@ Whoops! It looks like you were trying to engage in a format screw. Might I sugge
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 **Item #:** SCP-XXXX
 
 **Object Class:** [[span style="background-color: #ffc2b3;"]]--Keter-- ##blue|Thaumiel##[[/span]]
@@ -1221,7 +1225,7 @@ There we go, chum! Much better!
 
 @@ @@
 
-[[div style="background-color: white; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%"]]
+[[div class="text-box"]]
 **Item #:** SCP-XXXX
 
 **Object Class:** Thaumiel 
