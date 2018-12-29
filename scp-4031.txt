@@ -11,6 +11,22 @@ Written for **[http://www.scp-wiki.net/forum/t-381751 Bright's 1st Challenge]** 
 [[include info:end]]
 
 [[module css]]
+.centered {
+    max-width: none !important;
+    width: 100%;
+    display: inline-flex;
+    float: left;
+}
+
+.centered > tbody {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.centered > tbody > tr > td {
+    text-align: center;
+}
+
 .material-box {
     padding: .01em 16px;
     margin-bottom: 16px;
@@ -44,7 +60,7 @@ Subjects in visual, olfactory, gustatory, auditory, tactile, and memetic range s
 
 **Experimentation Log:** The following is a series of alleged interactions with SCP-4031. Interactions were not logged in real time: unknown subject(s) recorded the interactions in documentation areas. Inputs include different persons, objects, and conceptual structures. Results include different levels of conceptual recall.
 
-[[table  style="border-collapse:collapse; max-width: 600px;"]]
+[[table class="centered" style="border-collapse:collapse; max-width: 600px;"]]
 [[row]]
 [[cell style="font-weight:bold;padding: .3em .7em; text-align: center; border: 1px solid black; background-color: silver; width: 30%;"]]
 Input
