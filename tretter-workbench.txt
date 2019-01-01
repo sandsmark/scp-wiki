@@ -3,14 +3,19 @@ This is a workbench which I will be using for  various projects for the Techni
 
 ++ Internet Outreach posts
 
-[[module listpages separate="false" tags="+tale" date="last 365 days" rating="<=50" order="random" limit="10"]]
++++ tretter's less cool list generation
 
-%%title_linked%% written by %%author%% (+ %%rating%%) [[iftags +tale]] [##red|co-authored##] [[/iftags]] 
+[[module listpages tags="+tale" date="last 365 days" rating="<=50" order="random" limit="10"]]
+
+%%title_linked%% written by %%author%% (+ %%rating%%) [[iftags co-authored]] [##red|co-authored##] [[/iftags]] 
 
 [[/module]]
 
+------
 
-[[module ListPages tags="tale" date="last 365 days" order="random" rating="<50" limit="7"]]
++++ TSAT's cool list generation
+
+[[module ListPages tags="tale" date="2018" order="random" rating="<50" limit="7"]]
 [TALE OF THE DAY] "%%title_linked%%" by %%author%% [[iftags +co-authored]][##red|co-authored##][[/iftags]] 
 [[/module]]
 
