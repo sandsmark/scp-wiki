@@ -3,16 +3,10 @@ This is a workbench which I will be using for  various projects for the Techni
 
 ++ Internet Outreach posts
 
-Facebook
-[[module listpages separate="false" tags="goi-format scp tale -4000" date="last 30 days" rating=">=20" order="random" limit="5"]]
-%%title_linked%% by %%created_by%%
+[[module listpages separate="false" tags="tale " date="last 365 days" rating="<=50" order="random" limit="5"]]
+%%title_linked%% by %%created_by%% (+ %%rating%%)
 [[/module]]
 
-Instagram (Image)
-
-[[module listpages separate="false" tags="_image _cc -4000" date="last 30 days" rating=">=20" order="random" limit="5"]]
-%%title_linked%% by %%created_by%%
-[[/module]]
 
 ++ GOI Format without the proper _tags
 
@@ -25,12 +19,5 @@ Instagram (Image)
 [[/collapsible]]
 ------
 4k list generation
-
-[[collapsible show="4ks" hide="Close"]]
-[[module ListPages separate="no" perPage="200" tags="+4000 -hub" order="rating desc"]]
-
-||# @@[[[@@%%name%%@@|@@%%title%%@@]]]@@ by %%created_by%% (%%rating%%)||
-[[/module]]
-[[/collapsible]]
 
 Removed to help the page load faster
