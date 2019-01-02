@@ -1,5 +1,11 @@
 title:Top Rated Pages By Month 2018
-parent:top-rated-pages-this-month
+[[collapsible show="December 2018" hide="- Click to hide"]]
+**December 2018**
+[[module ListPages rating=">5" order="rating desc" separate="false" limit="200" perPage="25" date="2018.12"]]
+%%title_linked%% (rating: %%rating%%, comments: %%comments%%)
+[[/module]]
+[[/collapsible]]
+
 [[collapsible show="November 2018" hide="- Click to hide"]]
 **November 2018**
 [[module ListPages rating=">5" order="rating desc" separate="false" limit="200" perPage="25" date="2018.11"]]
