@@ -66,6 +66,8 @@ For the purposes of accruing multiple format bits, this will remain open for col
 
 **Note:** This is not intended to be an exhaustive list. These templates do not have to be adhered to. Users are encouraged to branch out and experiment with any set-up they're most comfortable with.
 
+**Note:** CSS Modules are only applied to a page after the page is refreshed. Previewing a page doesn't not refresh the page. To see the effect of any modifications to a CSS Module, you must save the page.
+
 @@ @@
 [[toc]]
 
@@ -737,7 +739,6 @@ AND YET EVEN MORE TEXT TO JOT DOWN
 
 **Tips!** Change 'danke agent' to 'danke site' for a different color scheme (yellow).
 [[/collapsible]]
-**Note:** Alterations made to this code in the sandbox may not reflect when the page is previewed and will only be visible when the page is saved.
 
 __**Option 4:**__
 
@@ -2209,9 +2210,9 @@ Instructions for use can be found [http://topia.wikidot.com/cqb:carousel here].
 [[div style="border-bottom:1px solid #777;"]]
 [[/div]]
 
-+++ Blackbox formats[[footnote]]Credit for both of these goes to [[*user Nanimono Demonai]].[[/footnote]]
++++ Blackbox formats
 
-**__Option 1__**
+**__Option 1__**[[footnote]]Credit for both of these goes to [[*user Nanimono Demonai]].[[/footnote]]
 **What It Looks Like:**
 [[span class="bblock"]]This is a format to let you blackbox information and let it be visible over a mouseover.[[/span]]
 
