@@ -1,5 +1,20 @@
 title:uncle nicolini author page
 [[module CSS]]
+span.rate-points::after {
+    content: "420";
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+    font-size: 12.8px;
+}
+
+span.number {
+    display: none;
+}
+
+[[/module]]
+
+[[module CSS]]
 .raisa_box{
 border:solid 1px #252525; 
 background:#f2f2c2; 
