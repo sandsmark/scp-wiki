@@ -300,7 +300,8 @@ Research is ongoing. In the meantime, please do not, under //any// circumstances
 
 [[tab Tag Stuff]]
 
-[[module ListPages tags="+_tale-hub" order="rating desc" perPage="250" limit="30" separate="no"]]
+**Pages tagged theme but not template**
+[[module ListPages tags="+theme -template" category="*" order="rating desc" perPage="250" limit="30" separate="no"]]
 %%title_linked%% +%%rating%% %%created_at%% %%created_by%%
 [[/module]]
 
