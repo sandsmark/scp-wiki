@@ -55,13 +55,18 @@ It's the second half of miscellaneous, Laneous. It's pronounced 'Lan-E-ous', any
 [[/tab]]
 [[tab Stats]]
 (the collab page isn't showing up yet)
-[[module ListPages order="rating desc" separate="false" limit="600" perPage="100" tag=" scp tale author" created_by="Laneous" prependLine="||~ Page ||~ Rating ||~ Comments ||~ Date Created ||"]]
+[[module ListPages order="rating desc" separate="false" limit="600" perPage="100" tags="scp"
+created_by="Laneous" prependLine="||~ Page ||~ Rating ||~ Comments ||~ Date Created ||"]]
 || %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
 [[/module]]
 [[/tab]]
 [[/tabview]]
 
-= Oh yeah and here's a rating module.
-[[=]]
-[[Module Rate]]
-[[/=]]
+[[collapsible show="Top Secret Level Gajillion Clearance" hide="go away"]]
+
+Using this to scout out SCPs to possibly rewrite.
+
+[[module ListPages order="rating desc" separate="false" limit="900" rating="<10" perPage="50" tag="scp" prependLine="||~ Page ||~ Rating ||~ Comments ||~ Date Created ||"]]
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
+[[/module]]
+[[/collapsible]]
