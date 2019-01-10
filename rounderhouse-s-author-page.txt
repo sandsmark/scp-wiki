@@ -46,7 +46,7 @@ z-index: 201;
 #header h1 a::before {
     content: "the rounderpage™";
     color: #000000;
-    text-shadow: 3px 3px 5px #000000;
+    text-shadow: none;
     font-family: 'Staatliches', cursive;
 }
 
@@ -58,8 +58,8 @@ z-index: 201;
 #header h2 span::before {
     content: "its rounder all the way downder";
     color: #000000;
-    text-shadow: 1px 1px 1px #000;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+    text-shadow: none;
+    font-family: 'Staatliches', cursive;
 }
 
 div#container-wrap::before {
