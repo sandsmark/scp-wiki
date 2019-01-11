@@ -208,6 +208,19 @@ div#container-wrap::before {
     border-color: rgba(0,0,0,0.12);
     background-color: #8B4513;
 }
+
+::-webkit-scrollbar-thumb {
+    background: url("https://i2.wp.com/media4.giphy.com/media/xTiTnAH5d9ROwzcoAo/giphy.gif");
+    background-clip: content-box;
+    background-attachment: fixed;
+    background-size: contain;
+}
+::-webkit-scrollbar-track {
+    background: url("https://media.giphy.com/media/3oKIPvQWkVBKRkPYJy/giphy.gif");
+    background-clip: content-box;
+    background-attachment: fixed;
+    background-size: contain;
+}
 [[/module]]
 
 [[module css]]
