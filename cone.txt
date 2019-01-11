@@ -256,87 +256,17 @@ But 3211? No no no. 3211 is different.
 [[tabview]]
 [[tab Workbench]]
 
-[[include :topia:cqb:carousel
-| images=nintendo.jpg,youtube.jpg,linkedin.png,rescue.png,billwurtz.jpg
-| caption=A selection of images with no inherent meaning or hidden message.
-| interval=3
-| wiki=scp-sandbox-3
-| page=carousel-demo
-| width=300px
-| height=240px
-| position=center
-| background=white
-]]
+= [[image image.png]]
 
 [[/tab]]
 
-[!--[[tab Conic Sections]]
-[[div style="border:solid 1px #999999; background:#f2f2c2; padding:5px; margin-bottom: 10px;"]]
-[[=]]
-++++ NOTICE FROM THE FOUNDATION RECORDS AND INFORMATION SECURITY ADMINISTRATION 
-
-The following file is harbour to an extraordinarily virulent cognitohazard, which hijacks the reader's brain and forces it to produce shitty documentation about cones.
-
-Research is ongoing. In the meantime, please do not, under //any// circumstances, read this page's author comment and contribute your own cone-based fuckery.
-
--- Maria Cones, Director, RAISA
-
-[[/=]]
-[[/div]]
-
-[[div class="normie"]]
-[[module ListPages name="cone%"
-                             order="random"
-                             limit="1"
-                             category="fragment"
-                             offset="@URL|0"]]
-[[div class="page-title"]]
-%%title_linked%%
-[[/div]]
-%%content%%
-[[/module]]
-[[/div]]
-[[/tab]]--]
-
 [[tab Tag Stuff]]
-
-**Pages tagged theme but not template**
-[[module ListPages tags="+theme -template" category="*" order="rating desc" perPage="250" limit="30" separate="no"]]
-%%title_linked%% +%%rating%% %%created_at%% %%created_by%%
-[[/module]]
-
-[!--
-
-**Pages tagged "4000"**
-//If you see this and the tag isn't the current contest, please feel free to correct it//
-[[collapsible]]
-[[module ListPages tags="+4000" separate="no" order="rating desc" perPage="250"]]
-* %%title_linked%% by %%created_by%% (%%rating%%)
-[[/module]]
-[[/collapsible]]
-
-**Pages tagged "4000" but are otherwise untagged**
-//If you see this and the tag isn't the current contest, please feel free to correct it//
-[[collapsible]]
-[[module ListPages tags="+4000 -scp -tale -goi-format -hub" separate="no" perPage="250"]]
-* %%title_linked%% by %%created_by%% (%%rating%%)
-[[/module]]
-[[/collapsible]]
-
-**List of pages that can appear on this author page**
-//Check the author comment if you want to contribute//
-[[collapsible]]
-[[module ListPages name="cone%" separate="no" category="fragment" perPage="250"]]
-* %%title_linked%% by %%created_by%%
-[[/module]]
-[[/collapsible]]
 
 **Pages missing a top-level tag**
 [[collapsible]]
 [[module ListPages tags="-hub -scp -tale -goi-format -supplement -artwork -essay -guide -author -news -workbench -admin -project -splash -sandbox -in-deletion" separate="no" category="* -log-of-unexplained-locations -fragment" perPage="250" order="rating desc"]]
 # %%category%%: %%title_linked%% by %%created_by%% ([[#ifexpr %%rating%% > 0 | + |  ]]%%rating%%) (%%tags%%)
 [[/module]]
-
 [[/collapsible]]
 
 --]
