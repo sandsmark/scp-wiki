@@ -9,13 +9,19 @@ All images/videos created by [[*user Woedenaz]]
 [[include :topia:credit:end]]
 
 [[module CSS]]
-
 .iframe {
     overflow: hidden;
     height: 90vh !important;
-    position: -webkit-sticky; /* Safari */
- 	position: sticky;
     display: block;
+
+}
+
+@media all and (max-width: 700px) {
+    .iframe {
+    	position: -webkit-sticky; /* Safari */
+ 		position: sticky;
+    	top: 0;
+    }
 }
 [[/module]]
 
