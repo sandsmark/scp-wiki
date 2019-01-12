@@ -11,19 +11,22 @@ All images/videos created by [[*user Woedenaz]]
 [[module CSS]]
 .iframe {
     overflow: hidden;
-    height: 90vh !important;
+    height: 88vh !important;
     display: block;
-
 }
 
 @media all and (max-width: 700px) {
-    .iframe {
+    #main-content{
     	position: -webkit-sticky; /* Safari */
  		position: sticky;
-    	top: 0;
+    	top: 35px;
+    	left: 0;
+    	right: 0;
+    	bottom: 1vh;
     }
 }
 [[/module]]
+
 
 [[html class="iframe"]]
 <html>
