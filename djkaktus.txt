@@ -14,10 +14,12 @@ vertical-align: top; position: relative; top: -0.5em;
 .container {
   margin: auto;
   margin-top: -5px;;
+
   background: #fff5ef;
   border: 1px solid #fff;
   box-shadow: 1px 1px 2px #fff inset,
-              -1px -1px 2px #fff inset;  
+              -1px -1px 2px #fff inset;
+  border-radius: 20px/60px;  
 }
 @media (max-width: 1600px) {
    .desktop-only{ display: none; visibility:hidden }
