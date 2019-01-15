@@ -1031,4 +1031,101 @@ span, a {
 word-break: break-all;
 }
 }
+/* Mobile Media Query */
+@media (max-width: 479px) { 
+#search-top-box-input {
+    display: none;
+}
+ 
+#page-content {
+    font-size: 0.9em;
+}
+ 
+#main-content {
+    margin: 0;
+}
+ 
+#recent-posts-category {
+width: 100%;
+}
+ 
+#header, .mobile-top-bar {
+    max-width: 90%;
+}
+ 
+#side-bar {
+    width: 80%;
+    position: relative;
+}
+ 
+.top-bar {
+    display:none;
+}
+ 
+.mobile-top-bar {
+    display: block;
+    padding: 0;
+}
+ 
+.page-options-bottom a {
+    padding: 0 4px;
+}
+ 
+#header h1 a {
+    font-size: 100%;
+}
+ 
+blockquote {
+    margin: 1em 0;
+}
+ 
+.license-area {
+    font-size: 0.8em;
+}
+ 
+#header {
+    background-position: 0 5.5em;
+    background-size: 55px 55px;
+}
+ 
+#header h1, #header h2 {
+    margin-left: 66px;
+}
+ 
+table.form td, table.form th {
+    float: left;
+}
+ 
+/*
+td.title {
+    width: 30%;
+}
+*/
+ 
+td.name {
+    width: 15em;
+}
+ 
+table.form td, table.form th {
+    padding: 0;
+}
+ 
+#edit-page-title {
+    max-width: 90%;
+}
+ 
+.content-panel.left-column, .content-panel.right-column  {
+width: 99%;
+float: left;
+}
+ 
+#page-content div, #page-content div table {
+clear: both;
+}
+ 
+#page-content div.title {
+word-break: keep-all;
+}
+ 
+}
 [[/module]]
