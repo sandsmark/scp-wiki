@@ -2,8 +2,15 @@ title:The Based God
 [[module CSS]]
 @import url(http://kontainer.djkakt.us/component:newscptheme/code/1);
 sup { 
-
 vertical-align: top; position: relative; top: -0.5em; 
+}
+:root{ 
+--cutColour: #fafafa;
+--barColour: #590505;
+}
+ 
+.info-container a{
+color: #FFF;
 }
 .shadow {
 -webkit-border-radius: 20px/60px;
