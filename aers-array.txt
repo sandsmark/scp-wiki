@@ -1004,4 +1004,31 @@ img, embed, video, object, iframe, table {
 #edit-page-comments {
     width: 100%;
 }
+@media (max-width: 767px) {
+.owindow {
+    min-width: 80%;
+    max-width: 99%;
+}
+ 
+.modal-body .table, .modal-body .table ~ div {
+    float: left;
+}
+ 
+.owindow .button-bar {
+    float: right;
+}
+ 
+.owindow div a.btn-primary {
+    width: 100%;
+    float: left;
+}
+ 
+.mobile-top-bar ul li:last-of-type ul {
+    right: 0;
+}
+ 
+span, a {
+word-break: break-all;
+}
+}
 [[/module]]
