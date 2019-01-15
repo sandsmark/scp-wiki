@@ -14,10 +14,12 @@ vertical-align: top; position: relative; top: -0.5em;
 --cutColour: #fafafa;
 --barColour: #590505;
 }
- 
-.info-container a{
-color: #FFF;
-}
+
+.info-container .collapsible-block-folded a{
+color: #FFF;}
+.info-container .collapsible-block-unfolded-link a{
+color: #FFF;}
+
 .shadow {
 -webkit-border-radius: 20px/60px;
 -webkit-box-shadow: rgba(0, 0, 0,.30) 0 2px 3px;
