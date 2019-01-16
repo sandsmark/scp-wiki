@@ -1,4 +1,6 @@
 title:ᴡᴏᴇᴅᴇɴᴀᴢ - wip
+[[include :http://css3.wikidot.com:demos:data-form-checkbox]]
+
 [[module CSS]]
 @import url(http://kontainer.djkakt.us/component:woedauthor:theme/code/1);
 @import url(http://kontainer.djkakt.us/component:newscptheme/code/1);
@@ -121,16 +123,3 @@ a img {
 [[/div]]
 
 ====
-
-[[div class="data-form"]]
-[[form]]
-fields:
-  onions:
-    label: Do you want onions?
-    type: checkbox
-  salami:
-    label: How about extra salami?
-    type: checkbox
-    default: 1
-[[/form]]
-[[/div]]
