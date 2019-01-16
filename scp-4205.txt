@@ -44,16 +44,6 @@ line-height: 1.6em;
     position: relative;
 }
 
-#page-content > div:nth-child(1) > div {
-    margin-top: -5vh;
-}
-
-@media (max-width: 479px) {
-    #page-content > div:nth-child(1) > div {
-        margin-top: 0;
-    }
-}
-
 .shadow {
 -webkit-border-radius: 20px/60px;
 -webkit-box-shadow: rgba(0, 0, 0,.30) 0 2px 3px;
