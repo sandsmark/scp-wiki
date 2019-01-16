@@ -1,4 +1,10 @@
 title:SCP-4249
+[[include :scp.avn.sh:component:aers:info-stuff
+|lang=en[!-- EN/RU/KO/CN/FR/PL/ES/TH/JP/DE/IT/UA/PTBR --]
+|page=SCP-4249[!-- url of your page on the scp wiki --]
+|authorPage=http://www.scp-wiki.net/rounderhouse-s-author-page[!-- link to your author page --]
+|comments= Coming Soon - Rounderhouse
+]]
 [[module css]]
 .page {
     display: block;
@@ -29,13 +35,17 @@ title:SCP-4249
     margin: 0;
 }
 [[/module]]
+[[module CSS]]
+:root{ 
+--cutColour: #fafafa;
+--barColour: #590505;
+}
 
-[[include :scp.avn.sh:component:aers:info-stuff
-|lang=en[!-- EN/RU/KO/CN/FR/PL/ES/TH/JP/DE/IT/UA/PTBR --]
-|page=SCP-4249[!-- url of your page on the scp wiki --]
-|authorPage=http://www.scp-wiki.net/rounderhouse-s-author-page[!-- link to your author page --]
-|comments= Coming Soon - Rounderhouse
-]]
+.info-container .collapsible-block-folded a{
+color: #FFF;}
+.info-container .collapsible-block-unfolded-link a{
+color: #FFF;}
+[[/module]]
 [[>]]
 [[module Rate]]
 [[/>]]
