@@ -157,6 +157,17 @@ display: none;
     [[/div]]
 [[/div]]
 
+[[form]]
+fields:
+  onions:
+    label: Do you want onions?
+    type: checkbox
+  salami:
+    label: How about extra salami?
+    type: checkbox
+    default: 1
+[[/form]]
+
 [[module ListPages category="*" created_by="Woedenaz" order="updated_at desc" separate="no"]]
 * %%created_at%% (+%%rating%%)
 [[/module]]
