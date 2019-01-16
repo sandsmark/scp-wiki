@@ -119,3 +119,23 @@ a img {
         + woedenaz
     [[/div]]
 [[/div]]
+
+++ Togglable Buttons Using Iftags
+[[div style="width: 200px; float:left;"]]
+[[iftags +button1-off]]
+[[button set-tags +button1-on -button1-off text="Button 1" class="btn btn-success"]]
+[[/iftags]]
+[[iftags +button1-on]]
+[[button set-tags +button1-off -button1-on text="Button 1" class="btn btn-danger"]]
+[[/iftags]]
+[[/div]]
+[[div style="width: 200px; float:left;"]]
+[[iftags +button2-off]]
+[[button set-tags +button2-on -button2-off text="Button 2" class="btn btn-success"]]
+[[/iftags]]
+[[iftags +button2-on]]
+[[button set-tags +button2-off -button2-on text="Button 2" class="btn btn-danger"]]
+[[/iftags]]
+[[/div]]
+~~~~
+----
