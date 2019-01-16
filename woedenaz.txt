@@ -1,0 +1,111 @@
+title:ᴡᴏᴇᴅᴇɴᴀᴢ - wip
+[[module CSS]]
+.code {
+    display:none;
+}
+.iframe {
+    overflow: hidden;
+    height: 88vh !important;
+    width: 100%;
+    display: block;
+}
+.list-pages-box {
+display: none;
+}
+#main-content{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 15px;
+    left: 0;
+    right: 0;
+    bottom: 1vh;
+}
+[[/module]]
+
++ STILL A WIP
+++ Please don't mind the dust
+
+[[html class="iframe"]]
+<!doctype html>
+<html>
+
+<head>
+<base target="_blank">
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/local--files/woedenaz-test/styles.css">
+    <link rel="stylesheet" href="/local--files/woedenaz-test/normalize.css">
+</head>
+
+<body>
+    <div id="container">
+        <article class="skips">
+            <div class="labels">
+                <div class="title" data-heading="A Tasteful Collection">A Tasteful Collection</div>
+            </div>
+            <div id="scps-block">
+                <ul class="accordion-container radio">
+                    <li class="accordion-category">
+                        <input type="radio" name="a-toggle" id="one" checked>
+                        <label for="one" class="accordion-title">SCP-2105 &#8669; Programmable Occult</label>
+                        <ul class="accordion-items">
+                            <li class="SCP-num" id="SCP-1">
+                                <span class="cat">Date Created</span>
+                                <span class="date">1/1/1111</span>
+                                <span class="cat">Rating</span>
+                                <span class="rate">(+20}</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="accordion-category">
+                        <input id="two" type="radio" name="a-toggle">
+                        <label for="two" class="accordion-title">SCP-4378 &#8669; Her Noodly Appendage</label>
+                        <ul class="accordion-items">
+                            <li class="SCP-num" id="SCP-2">
+                                <span class="cat">Date Created</span>
+                                <span class="date">1/1/1111</span>
+                                <span class="cat">Rating</span>
+                                <span class="rate">(+20}</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="accordion-category">
+                        <input id="tre" type="radio" name="a-toggle">
+                        <label for="tre" class="accordion-title">SCP-4205 &#8669; In The Eyes of the Beholder &#x1f5b3;</label>
+                        <ul class="accordion-items">
+                            <li class="SCP-num" id="SCP-3">
+                                <span class="cat">Date Created</span>
+                                <span class="date">1/1/1111</span>
+                                <span class="cat">Rating</span>
+                                <span class="rate">(+20}</span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <div class="name">
+            <div class="wrapper">
+                <h1 data-heading="woedenaz">woedenaz</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+
+<script src="http://scp-sandbox-3.wdfiles.com/local--files/woedenaz-test/jquery.ajax-cross-origin.min.js"></script>
+
+<script src="http://scp-sandbox-3.wdfiles.com/local--files/woedenaz-test/bliss.min.js"></script>
+
+<script src="http://scp-sandbox-3.wdfiles.com/local--files/woedenaz-test/main.js"></script>
+
+</html>
+[[/html]]
+
+[[module ListPages category="*" created_by="Woedenaz" order="updated_at desc" separate="no"]]
+* %%created_at%% (+%%rating%%)
+[[/module]]
