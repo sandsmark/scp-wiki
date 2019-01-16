@@ -1,25 +1,94 @@
 title:ᴡᴏᴇᴅᴇɴᴀᴢ - wip
 [[module CSS]]
+@import url(http://kontainer.djkakt.us/component:newscptheme/code/1);
+sup { 
+vertical-align: top; position: relative; top: -0.5em; 
+}
+:root{ 
+--cutColour: #fafafa;
+--barColour: #590505;
+}
+
+.info-container .collapsible-block-folded a{
+color: #FFF;}
+.info-container .collapsible-block-unfolded-link a{
+color: #FFF;}
+
+.info-container .collapsible-block-link, 
+.info-container:hover .collapsible-block-link {
+line-height: 1.6em;
+}
+
 .code {
     display:none;
 }
+
+.page-rate-widget-box {
+    overflow: hidden;
+    padding: 4px 0 4px 0;
+    border-radius: 5px;
+    z-index: 9999;
+    position: relative;
+}
+
+#page-content > div:nth-child(1) > div {
+    margin-top: -5vh;
+}
+
+@media (max-width: 775px) {
+    #page-content > div:nth-child(1) > div {
+        margin-top: 0vh !important;
+    }
+    .page-rate-widget-box {
+        display: block !important;
+        width: intrinsic;  
+        width: -moz-max-content;    
+        width: -webkit-max-content;
+        margin: 0 auto 1vh auto !important;
+    }
+}
+
+.shadow {
+-webkit-border-radius: 20px/60px;
+-webkit-box-shadow: rgba(0, 0, 0,.30) 0 2px 3px;
+  width: 80%;
+  margin: auto;
+}
+.container {
+  margin: auto;
+  margin-top: -5px;;
+
+  background: #fff;
+  border: 1px solid #000;
+  box-shadow: 1px 1px 2px #fff inset,
+              -1px -1px 2px #fff inset;
+  border-radius: 20px/60px;  
+}
+@media (max-width: 1600px) {
+   .desktop-only{ display: none; visibility:hidden }
+}
+a img {
+    position: relative;
+    z-index: 1;
+}
+
 .iframe {
     overflow: hidden;
     height: 88vh !important;
-    width: 100%;
     display: block;
 }
 .list-pages-box {
 display: none;
 }
-#main-content{
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 15px;
-    left: 0;
-    right: 0;
-    bottom: 1vh;
-}
+    #main-content{
+    	position: -webkit-sticky; /* Safari */
+ 	position: sticky !important;
+    	align-self: flex-start;
+    	top: 5px;
+    	left: 0;
+    	right: 0;
+    	bottom: 1vh;
+    }
 [[/module]]
 
 + STILL A WIP
