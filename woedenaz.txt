@@ -1,6 +1,4 @@
 title:ᴡᴏᴇᴅᴇɴᴀᴢ - wip
-[[include :css3.wikidot.com:demos:data-form-checkbox/code/1]]
-
 [[module CSS]]
 @import url(http://kontainer.djkakt.us/component:woedauthor:theme/code/1);
 @import url(http://kontainer.djkakt.us/component:newscptheme/code/1);
@@ -123,3 +121,51 @@ a img {
 [[/div]]
 
 ====
+
+[[div]]
+
+++++ Do you want a coffee? **[[span class="yes%%form_data{Coffee}%%"]]Yes[[/span]][[span class="no%%form_data{Coffee}%%"]]No[[/span]]**.
+----
++++ Putting it in a sentence...
+The customer wants the following with their coffee: [[span class="milk%%form_data{Milk}%%"]]Milk,[[/span]] [[span class="sugar%%form_data{Sugar}%%"]]Sugar,[[/span]] [[span class="biscuit%%form_data{Biscuit}%%"]]Biscuit[[/span]].
+
++++ Now in a table...
+||~ Milk || [[span class="yes%%form_data{Milk}%%"]]Yes[[/span]] || [[span class="no%%form_data{Milk}%%"]]No[[/span]] || 
+||~ Sugar || [[span class="yes%%form_data{Sugar}%%"]]Yes[[/span]] || [[span class="no%%form_data{Sugar}%%"]]No[[/span]] ||
+||~ Biscuit || [[span class="yes%%form_data{Biscuit}%%"]]Yes[[/span]] || [[span class="no%%form_data{Biscuit}%%"]]No[[/span]] ||
+
++++ And finally a random fact (using includes)...
+[[include inc:milk%%form_data{Milk}%%]]
+----
+[[module CSS]]
+.yes1 {display:inline; color: green;}
+.yes0 {display:none;}
+.no1 {display:none;}
+.no0 {display:inline; color: red;}
+
+.milk1 {display:inline;}
+.milk0 {display:none;}
+.sugar1 {display:inline;}
+.sugar0 {display:none;}
+.biscuit1 {display:inline;}
+.biscuit0 {display:none;}
+[[/module]]
+
+====
+[[form]]
+fields:
+  Coffee:
+    type: checkbox
+    label: Would you like a coffee?
+  Milk:
+    type: checkbox
+    label: Do you have milk with your coffee?
+  Sugar:
+    type: checkbox
+    label: Do you have sugar?
+  Biscuit:
+    type: checkbox
+    label: Would you like a biscuit as well (it's chocolate!)?
+[[/form]]
+
+[[/div]]
