@@ -1,13 +1,15 @@
 title:Ouroboros
 parent:scp-001
 [[include :scp.avn.sh:component:aers:info-stuff
-|lang=EN[!-- EN/RU/KO/CN/FR/PL/ES/TH/JP/DE/IT/UA/PTBR --]
+|lang=en[!-- EN/RU/KO/CN/FR/PL/ES/TH/JP/DE/IT/UA/PTBR --]
 |page=Ouroboros[!-- url of your page on the scp wiki --]
 |authorPage=http://www.scp-wiki.net/djkaktus[!-- link to your author page --]
-|comments=Ouroboros: The Cycle.
+|comments=TBD
 ]]
+@@@@
+@@@@
+[[include :kaktuskontainer:component:newscptheme]]
 [[module CSS]]
-@import url(http://kontainer.djkakt.us/component:newscptheme/code/1);
 sup { 
 vertical-align: top; position: relative; top: -0.5em; 
 }
@@ -20,7 +22,12 @@ vertical-align: top; position: relative; top: -0.5em;
 color: #FFF;}
 .info-container .collapsible-block-unfolded-link a{
 color: #FFF;}
+
+.translation_block{
+display:none;}
 [[/module]]
+@@@@
+@@@@
 [[>]]
 [[module Rate]]
 [[/>]]
