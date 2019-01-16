@@ -1,6 +1,9 @@
 title:ᴡᴏᴇᴅᴇɴᴀᴢ - wip
 [[module CSS]]
 @import url(http://kontainer.djkakt.us/component:newscptheme/code/1);
+@import url(/local--files/woedenaz/styles.css);
+@import url(/local--files/woedenaz/normalize.css);
+
 sup { 
 vertical-align: top; position: relative; top: -0.5em; 
 }
@@ -98,83 +101,63 @@ display: none;
 [[module Rate]]
 [[/>]]
 
-[[html class="iframe"]]
-<!doctype html>
-<html>
-
-<head>
-<base target="_blank">
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="/local--files/woedenaz/styles.css">
-    <link rel="stylesheet" href="/local--files/woedenaz/normalize.css">
-</head>
-
-<body>
-    <div id="container">
-        <article class="skips">
-            <div class="labels">
-                <div class="title" data-heading="A Tasteful Collection">A Tasteful Collection</div>
-            </div>
-            <div id="scps-block">
-                <ul class="accordion-container radio">
-                    <li class="accordion-category">
-                        <input type="radio" name="a-toggle" id="one" checked>
-                        <label for="one" class="accordion-title">SCP-2105 &#8669; Programmable Occult</label>
-                        <ul class="accordion-items">
-                            <li class="SCP-num" id="SCP-1">
-                                <span class="cat">Date Created</span>
-                                <span class="date">1/1/1111</span>
-                                <span class="cat">Rating</span>
-                                <span class="rate">(+20}</span>
-                                <span class="article_link"><a href="http://www.scp-wiki.net/scp-2105">Click here to read!</a></span>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="accordion-category">
-                        <input id="two" type="radio" name="a-toggle">
-                        <label for="two" class="accordion-title">SCP-4378 &#8669; Her Noodly Appendage</label>
-                        <ul class="accordion-items">
-                            <li class="SCP-num" id="SCP-2">
-                                <span class="cat">Date Created</span>
-                                <span class="date">1/1/1111</span>
-                                <span class="cat">Rating</span>
-                                <span class="rate">(+20}</span>
-                                <span class="article_link"><a href="http://www.scp-wiki.net/scp-4378">Click here to read!</a></span>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="accordion-category">
-                        <input id="tre" type="radio" name="a-toggle">
-                        <label for="tre" class="accordion-title">SCP-4205 &#8669; In The Eyes of the Beholder &#x1f5b3;</label>
-                        <ul class="accordion-items">
-                            <li class="SCP-num" id="SCP-3">
-                                <span class="cat">Date Created</span>
-                                <span class="date">1/1/1111</span>
-                                <span class="cat">Rating</span>
-                                <span class="rate">(+20}</span>
-                                <span class="article_link"><a href="http://www.scp-wiki.net/scp-4205">Click here to read!</a></span>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </article>
-        <div class="name">
-            <div class="wrapper">
-                <h1 data-heading="woedenaz">woedenaz</h1>
-            </div>
-        </div>
-    </div>
-</body>
-
-<script src="/local--files/woedenaz/jquery-3.3.1.min.js"></script>
-<script src="/local--files/woedenaz/bliss.min.js"></script>
-<script src="/local--files/woedenaz/main.js"></script>
-<script src="/local--files/woedenaz/jquery.ajax-cross-origin.min.js"></script>
-
-</html>
-[[/html]]
+[[div id="container"]]
+    [[div class="skips"]]
+        [[div class="labels"]]
+            [[div class="title" data-heading="A Tasteful Collection"]]
+            A Tasteful Collection
+            [[/div]]
+        [[/div]]
+        [[div id="scps-block"]]
+            [[c class="accordion-container radio"]]
+                [[li class="accordion-category"]]
+                    [[input type="radio" name="a-toggle" id="one" checked]]
+                    [[label for="one" class="accordion-title"]]SCP-2105 &#8669; Programmable Occult[[/label]]
+                    [[ul class="accordion-items"]]
+                        [[li class="SCP-num" id="SCP-1"]]
+                            [[span class="cat"]]Date Created[[/span]]
+                            [[span class="date"]]1/1/1111[[/span]]
+                            [[span class="cat"]]Rating[[/span]]
+                            [[span class="rate"]](+20}[[/span]]
+                            [[span class="article_link"]][[a href="http://www.scp-wiki.net/scp-2105"]]Click here to read![[/a]][[/span]]
+                        [[/li]]
+                    [[/ul]]
+                [[/li]]
+                [[li class="accordion-category"]]
+                    [[input id="two" type="radio" name="a-toggle"]]
+                    [[label for="two" class="accordion-title"]]SCP-4378 &#8669; Her Noodly Appendage[[/label]]
+                    [[ul class="accordion-items"]]
+                        [[li class="SCP-num" id="SCP-2"]]
+                            [[span class="cat"]]Date Created[[/span]]
+                            [[span class="date"]]1/1/1111[[/span]]
+                            [[span class="cat"]]Rating[[/span]]
+                            [[span class="rate"]](+20}[[/span]]
+                            [[span class="article_link"]][[a href="http://www.scp-wiki.net/scp-4378"]]Click here to read![[/a]][[/span]]
+                        [[/li]]
+                    [[/ul]]
+                [[/li]]
+                [[li class="accordion-category"]]
+                    [[input id="tre" type="radio" name="a-toggle"]]
+                    [[label for="tre" class="accordion-title"]]SCP-4205 &#8669; In The Eyes of the Beholder &#x1f5b3;[[/label]]
+                    [[ul class="accordion-items"]]
+                        [[li class="SCP-num" id="SCP-3"]]
+                            [[span class="cat"]]Date Created[[/span]]
+                            [[span class="date"]]1/1/1111[[/span]]
+                            [[span class="cat"]]Rating[[/span]]
+                            [[span class="rate"]](+20}[[/span]]
+                            [[span class="article_link"]][[a href="http://www.scp-wiki.net/scp-4205"]]Click here to read![[/a]][[/span]]
+                        [[/li]]
+                    [[/ul]]
+                [[/li]]
+            [[/ul]]
+        [[/div]]
+    [[/article]]
+    [[div class="name"]]
+        [[div class="wrapper"]]
+            [[h1 data-heading="woedenaz"]]woedenaz[[/h1]]
+        [[/div]]
+    [[/div]]
+[[/div]]
 
 [[module ListPages category="*" created_by="Woedenaz" order="updated_at desc" separate="no"]]
 * %%created_at%% (+%%rating%%)
