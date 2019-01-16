@@ -1,10 +1,41 @@
 title:SCP-4224
+[[include :scp.avn.sh:component:aers:info-stuff
+|lang=en[!-- EN/RU/KO/CN/FR/PL/ES/TH/JP/DE/IT/UA/PTBR --]
+|page=scp-4224[!-- url of your page on the scp wiki --]
+|authorPage=http://www.scp-wiki.net/aers-array[!-- link to your author page --]
+|comments=**AKA:** Gas & Light 
+**Theme:** [https://www.youtube.com/watch?v=YkADj0TPrJA 「In The Air Tonight」] 
+**Crit Credits:**
+* [[*user Uncle-Nicolini]] 
+* [[*user IndigoElks]] 
+* [[*user Geckoguy2704]] 
+* [[*user incidental_cabbage]] 
+* [[*user WrongJohnSilver]] 
+* [[*user magnadeus]] 
+* [[*user MrBazzle]] 
+* [[*user Vivax]] 
+**Additional Credits:** [[*user MrPines]] for the awesome hover code! 
+@@ @@
+**Image Credits:** warning.png:
+http://scp-wiki.wdfiles.com/local--files/the-great-hippo/scp_trans.png (modified)
+
+factory.jpg:
+http://www.geograph.org.uk/photo/1733287 (modified)
+
+ironlung.jpg:
+https://commons.wikimedia.org/wiki/File:Polmone_d%27acciaio_(Alvis_Motor_Company)_.jpg (modified)
+]]
+
 [[module CSS]]
 @import url(http://themes.wdfiles.com/local--code/helloworld);
+:root{
+    --barColour: #3a3a3a;
+}
 [[/module]]
 [[>]]
 [[module Rate]]
 [[/>]]
+@@ @@
 [[module ListPages category="fragment" parent="." order="name" limit="1" offset="@URL|0"]]
 %%content%%
 [[/module]]
