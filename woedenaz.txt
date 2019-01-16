@@ -80,22 +80,25 @@ a img {
     height: 88vh !important;
     display: block;
 }
-.list-pages-box {
-display: none;
+
+#main-content{
+    position: -webkit-sticky; /* Safari */
+    position: sticky !important;
+    align-self: flex-start;
+    top: 5px;
+    left: 0;
+    right: 0;
+    bottom: 1vh;
 }
-    #main-content{
-    	position: -webkit-sticky; /* Safari */
- 	position: sticky !important;
-    	align-self: flex-start;
-    	top: 5px;
-    	left: 0;
-    	right: 0;
-    	bottom: 1vh;
-    }
 [[/module]]
 
 + STILL A WIP
 ++ Please don't mind the dust
+++ Here is a basic ListPages thing in the meantime
+
+[[module ListPages category="*" created_by="Woedenaz" order="updated_at desc" separate="no"]]
+*%%title_linked%%  %%created_at%% (+%%rating%%)
+[[/module]]
 
 [[>]]
 [[module Rate]]
@@ -156,18 +159,3 @@ display: none;
         + woedenaz
     [[/div]]
 [[/div]]
-
-[[form]]
-fields:
-  onions:
-    label: Do you want onions?
-    type: checkbox
-  salami:
-    label: How about extra salami?
-    type: checkbox
-    default: 1
-[[/form]]
-
-[[module ListPages category="*" created_by="Woedenaz" order="updated_at desc" separate="no"]]
-* %%created_at%% (+%%rating%%)
-[[/module]]
