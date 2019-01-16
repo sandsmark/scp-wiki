@@ -49,8 +49,8 @@ line-height: 1.6em;
 }
 
 @media (max-width: 775px) {
-    #page-content > div:nth-child(1) {
-        margin-top: 3vh !important;
+    #page-content > div:nth-child(1) > div {
+        margin-top: 0vh !important;
     }
 }
 
