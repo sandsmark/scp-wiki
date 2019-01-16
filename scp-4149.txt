@@ -10,6 +10,20 @@ padding: 10px;
 box-shadow: 0 2px 4px rgba(68, 68, 68, .5);
 }
 [[/module]]
+[[module CSS]]
+:root{ 
+--cutColour: #fafafa;
+--barColour: #590505;
+}
+
+.info-container .collapsible-block-folded a{
+color: #FFF;}
+.info-container .collapsible-block-unfolded-link a{
+color: #FFF;}
+
+.translation_block{
+display:none;}
+[[/module]]
 
 [[include :scp.avn.sh:component:aers:info-stuff
 |lang=en[!-- EN/RU/KO/CN/FR/PL/ES/TH/JP/DE/IT/UA/PTBR --]
