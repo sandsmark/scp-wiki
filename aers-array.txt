@@ -1,38 +1,24 @@
 title:An Array Accommodating Aers' Anomalous Artifacts
 [[include :scp.avn.sh:component:aers:info-stuff
 |lang=en[!-- EN/RU/KO/CN/FR/PL/ES/TH/JP/DE/IT/UA/PTBR --]
-|page=SCP-4444[!-- url of your page on the scp wiki --]
-|authorPage=http://www.scp-wiki.net/djkaktus[!-- link to your author page --]
-|comments=IMPORTANT INSIGHTS TO COME.
+|page=scp-3340[!-- url of your page on the scp wiki --]
+|authorPage=http://www.scp-wiki.net/aers-array[!-- link to your author page --]
+|comments=With the 4k contest coming to a close, I'm putting this back up. I'm not totally happy with it, and I'll probably rewrite it again once the contest is over.
 ]]
-
-[[module CSS]]
-@import url(http://kontainer.djkakt.us/component:newscptheme/code/1);
-sup { 
-vertical-align: top; position: relative; top: -0.5em; 
-}
-@media (max-width: 1635px) {
-   .desktop-only{ display: none; visibility:hidden }
-}
-
-:root{ 
---cutColour: #fafafa;
---barColour: #590505;
-}
-
-.info-container .collapsible-block-folded a{
-color: #FFF;
-top: 10px;}
-.info-container .collapsible-block-unfolded-link a{
-color: #FFF;
-top: 10px;}
-[[/module]]
 
 [[>]]
 [[module Rate]]
 [[/>]]
 
 [[module CSS]]
+:root{ 
+--cutColour: #fafafa;
+--barColour: #590505;
+}
+
+.info-container a{
+color: #FFF;}
+
 blockquote {
 
     background-color: black;
