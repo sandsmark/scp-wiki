@@ -12,6 +12,10 @@ vertical-align: top; position: relative; top: -0.5em;
 --barColour: #590505;
 }
 
+.unicode {
+font-family: monospace ! important;
+}
+
 .info-container .collapsible-block-folded a{
 color: #FFF;}
 .info-container .collapsible-block-unfolded-link a{
@@ -113,7 +117,7 @@ a img {
         [[/div]]
         [[div id="scps-block"]]
 [[module ListPages category="*" name="SCP-2105" order="updated_at desc" separate="no" class="foldable-list-container"]]
-[[collapsible folded="yes" show="SCP@<&#8288;>@—@<&#8288;>@2105 || Programmable Occult" hide=" SCP@<&#8288;>@—@<&#8288;>@2105 || Programmable Occult"]]
+[[collapsible folded="yes" show="SCP[[span class="unicode"]]@<&#8288;>@[[/span]]—@<&#8288;>@2105 || Programmable Occult" hide=" SCP@<&#8288;>@—@<&#8288;>@2105 || Programmable Occult"]]
 * %%title_linked%%
 * %%created_at%% 
 * (+%%rating%%)
