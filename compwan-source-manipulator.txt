@@ -160,6 +160,7 @@ div:nth-child(18) > p:nth-child(19), div:nth-child(18) > p:nth-child(18) {
 #page-title {
     font-family: monospace;
     font-weight: bold;
+    pointer-events: none;
 }
 
 @media (max-width: 767px) {
