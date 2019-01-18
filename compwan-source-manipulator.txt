@@ -69,11 +69,12 @@ div:nth-child(18) > p:nth-child(19), div:nth-child(18) > p:nth-child(18) {
 }
 
 .pretty p {
-     z-index: 9999;
-     margin-bottom: 0.5em }
-.pretty p + p {
-     text-indent: 1.5em;
-     margin-top: 0.5em }
+    z-index: 9999;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.02rem;
+    word-spacing: 0.07rem;
+    line-height: 1.5;
+    text-align: justify; }
 
 .compiling_text {
      font-family: 'm-1m', monospace;
