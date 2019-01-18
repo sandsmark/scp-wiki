@@ -1,278 +1,144 @@
 title:ᴡᴏᴇᴅᴇɴᴀᴢ - wip
-[[code type="css"]]
-@import url(https://fonts.googleapis.com/css?family=Exo+2:400,900|Rammetto+One);
+[[module CSS]]
+@import url(http://kontainer.djkakt.us/component:newscptheme/code/1);
+@import url(http://kontainer.djkakt.us/component:woedauthor:theme/code/1);
+@import url(/local--files/woedenaz/normalize.css);
 
-:root {
-    --color1: rgba(252, 213, 184, 1);
-    --color2: rgba(47, 61, 88, 1);
-    --color3: rgba(228, 87, 78, 1);
-    --color4: rgba(36, 38, 61, 1);
-    --color5: rgba(246, 160, 103, 1);
-
-    /* base font size ranges */
-    --unitless-min-font-size: 0.875;
-    --unitless-max-font-size: 1.5;
-
-    /* base viewport size ranges */
-    --unitless-min-viewport: 300;
-    --unitless-max-viewport: 700;
-
-    /* base line height size ranges */
-    --min-lineheight: 1.2;
-    --max-lineheight: 1.5;
-
-    /* calculating size differences */
-    --font-size-difference: calc(var(--unitless-max-font-size) - var(--unitless-min-font-size));
-    --lineheight-difference: calc(var(--max-lineheight) - var(--min-lineheight));
-    --viewport-range-difference: calc(var(--unitless-max-viewport) - var(--unitless-min-viewport));
-    --min-viewport-difference: calc(90vw - (var(--unitless-min-viewport) * 1px));
-
-    /* responsive fluid type formula */    
-    --fontCalc: calc((var(--unitless-min-font-size) * 1em) + var(--font-size-difference) * var(--min-viewport-difference) / var(--viewport-range-difference));
-    --lineCalc: calc(var(--min-lineheight) + var(--lineheight-difference) * var(--min-viewport-difference) / var(--viewport-range-difference));
+sup { 
+vertical-align: top; position: relative; top: -0.5em; 
+}
+:root{ 
+--cutColour: #fafafa;
+--barColour: #590505;
 }
 
-div.WoedContainer {
-    border-left-width: 2vw;
-    border-right-width: 2vw;
-    border-top-width: 2vh;
-    border-bottom-width: 2vh;
-    border-color: var(--color1);
-    border-style: solid;
-    background: var(--color2);
-    background-clip: padding-box;
+.unicode {
+font-family: monospace ! important;
+}
+
+.info-container .collapsible-block-folded a{
+color: #FFF;}
+.info-container .collapsible-block-unfolded-link a{
+color: #FFF;}
+
+.info-container .collapsible-block-link, 
+.info-container:hover .collapsible-block-link {
+line-height: 1.6em;
+}
+
+.code {
+    display:none;
+}
+
+.page-rate-widget-box {
     overflow: hidden;
-    width: 100%;
-    margin: 0;
-    padding: 0 0 2em 0;
-    display: flex;
-    position: sticky;
-    box-sizing: border-box;
-    font-kerning: normal !important;
-    font-family: 'Exo 2', sans-serif;
-    line-height: var(--lineCalc);
-    align-items: center;
-}
-
-div.WoedContainer div.skips > div.labels {
-    height: 2em;
-    width: 50%;
-    text-align: center;
-    margin: 2vw 0 0 1vw;
-    display: inline-flex;
-    font-size: calc(var(--fontCalc) * 2);
-    flex-shrink: 2
-}
-
-div.WoedContainer div.skips > div.labels > div.title {
-    font-family: 'Rammetto One', sans-serif;
-    margin: 0;
-    hyphens: none
-}
-
-div.WoedContainer > div.name {
-    width: calc(var(--fontCalc) * 5)
-    margin: 0;
-    top: 1vh;
-    right: 2vw;
-    writing-mode: vertical-lr;
-    -webkit-writing-mode: vertical-lr;
-    -ms-writing-mode: vertical-lr;
-    transform: rotate(180deg);
-}
-
-div.WoedContainer > div.name > div.wrapper {
-    margin: 0;
-    position: absolute;
-    -webkit-transform-origin: bottom right;
-    transform-origin: bottom right;
-    hyphens: none;
-    font-size: calc(var(--fontCalc) * 5);
-    font-family: 'Rammetto One', sans-serif;
-}
-
-div.WoedContainer div.labels > .title,
-div.WoedContainer > div.name > div.wrapper {
-    color: var(--color3);
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: .15em;
-    position: relative
-}
-
-div.WoedContainer > div.skips > div.labels > .title::before,
-div.WoedContainer > div.skips > div.labels > .title::after,
-div.WoedContainer > div.name > div.wrapper::before, 
-div.WoedContainer > div.name > div.wrapper::after {
-    font-kerning: auto;
-    orphans: 2;
-    word-break: break-word;
-    text-rendering: optimizeLegibility
-}
-
-div.WoedContainer > div.skips > div.labels > div::before,
-div.WoedContainer > div.name > div.wrapper::before {
-    font-family: 'Rammetto One', sans-serif;
-    content: attr(data-heading);
-    color: var(--color1);
-    mix-blend-mode: screen;
-    position: absolute;
-    left: 0;
-    top: 0
-}
-
-div.WoedContainer > div.skips > div.labels > .title::after,
-div.WoedContainer > div.name > div.wrapper::after {
-    font-family: 'Rammetto One', sans-serif;
-    content: attr(data-heading);
-    color: var(--color4);
-    mix-blend-mode: screen;
-    position: absolute;
-    left: 0;
-    top: 0
-}
-
-div.WoedContainer > div.skips > div.labels > .title::after {
-    -webkit-transform: translate(-.5%, 0);
-    transform: translate(-.25%, 0);
-    width: 100%
-}
-
-div.WoedContainer > div.skips > div.labels > .title::before {
-    -webkit-transform: translate(.5%, 0);
-    transform: translate(.25%, 0);
-    width: 100%
-}
-
-div.WoedContainer > div.name > div.wrapper::after {
-    -webkit-transform: translate(-3%, 0);
-    transform: translate(3%, 0);
-    width: 100%
-}
-
-div.WoedContainer > div.name > div.wrapper::before {
-    -webkit-transform: translate(3%, 0);
-    transform: translate(3%, 0);
-    width: 100%
-}
-
-div.WoedContainer .skips {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: flex-start;
-    align-content: flex-start;
-    height: 100%;
-    flex-basis: 75%
-}
-
-div.WoedContainer #u-scps-block {
-    display: inline-flex;
-    flex-direction: column;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 900;
-    letter-spacing: .1em;
-    max-height: 90vh;
-    margin: 2vh 1vw 0 1vw;
-    border: .125rem solid var(--color3);
-    box-shadow: 0 .313rem .313rem -.313rem var(--color4);
-    list-style-type: none;
+    padding: 4px 0 4px 0;
+    border-radius: 5px;
     z-index: 9999;
-    flex-grow: 2;
-    align-content: stretch;
-    max-width: calc(100% - 3em)
-}
-
-#u-scps-block > .list-pages-box {
     position: relative;
-    background: var(--color3);
-    flex-grow: 2;
-    padding: 2em
 }
 
-#u-scps-block div.collapsible-block-unfolded > div.collapsible-block-unfolded-link {
-    display: flex
+#page-content > div:nth-child(1) > div {
+    margin-top: -5vh;
 }
 
-#u-scps-block a.collapsible-block-link {
-    width: 100%;
-    padding-top: 1vh;
-    font-size: calc(var(--fontCalc) * 1.5);
-    white-space: pre-line;
-    vertical-align: middle;
-    background: var(--color3);
-    color: #fff;
+@media (max-width: 775px) {
+    #page-content > div:nth-child(1) > div {
+        margin-top: 0vh !important;
+    }
+    .page-rate-widget-box {
+        display: block !important;
+        width: intrinsic;  
+        width: -moz-max-content;    
+        width: -webkit-max-content;
+        margin: 0 auto 1vh auto !important;
+    }
+}
+
+.shadow {
+-webkit-border-radius: 20px/60px;
+-webkit-box-shadow: rgba(0, 0, 0,.30) 0 2px 3px;
+  width: 80%;
+  margin: auto;
+}
+.container {
+  margin: auto;
+  margin-top: -5px;;
+
+  background: #fff;
+  border: 1px solid #000;
+  box-shadow: 1px 1px 2px #fff inset,
+              -1px -1px 2px #fff inset;
+  border-radius: 20px/60px;  
+}
+@media (max-width: 1600px) {
+   .desktop-only{ display: none; visibility:hidden }
+}
+a img {
     position: relative;
-    display: inline-block;
-    cursor: pointer;
-    hyphens: none;
-    word-break: keep-all
+    z-index: 1;
 }
 
-#u-scps-block div.collapsible-block-content {
-    height: auto;
-    max-height: 56.25rem;
-    padding-top: 2em
+.iframe {
+    overflow: hidden;
+    height: 88vh !important;
+    display: block;
 }
 
-#u-scps-block div.collapsible-block-content > ul {
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    list-style: none;
-    padding-inline-start: 0;
-    margin-block-end: 0;
-    margin: 0;
-    width: 100%;
-    background-color: var(--color1)
+#main-content{
+    position: -webkit-sticky; /* Safari */
+    position: sticky !important;
+    align-self: flex-start;
+    top: 5px;
+    left: 0;
+    right: 0;
+    bottom: 3vh;
 }
+[[/module]]
 
-#u-scps-block div.collapsible-block-content > ul > li {
-    width: 60%
-}
++ STILL A WIP
+++ Please don't mind the dust
 
-#u-scps-block div.collapsible-block-content > ul > li > a::before {
-    content: "Click To Read!";
-    font-family: 'Exo 2', sans-serif;
-    font-size: var(--fontCalc);
-    font-weight: 600;
-    display: inline-block;
-    padding: .5vw;
-    color: var(--color4);
-    cursor: pointer;
-    text-decoration: none;
-    vertical-align: middle;
-    position: absolute;
-    left: 3%
-}
+[[>]]
+[[module Rate]]
+[[/>]]
 
-#u-scps-block div.collapsible-block-content > ul > li > a {
-    font-family: 'Exo 2', sans-serif;
-    font-size: var(--fontCalc);
-    font-weight: 600;
-    display: inline-block;
-    padding: .5vh .5vw 0 .5vw;
-    margin: .5vh .5vw;
-    border-radius: .25vw;
-    background: var(--color3);
-    color: transparent;
-    transition: -webkit-backdrop-filter .3s, backdrop-filter .3s, box-shadow .3s, background-color .3s;
-    position: relative;
-    width: 60%;
-    height: calc(var(--fontCalc) * 3)
-}
+[[div_ class="WoedContainer"]]
+    [[div_ class="skips"]]
+        [[div_ class="labels"]]
+            [[div_ class="title" data-heading="A Tasteful Collection"]]
+            A Tasteful Collection
+            [[/div]]
+        [[/div]]
+        [[div_ id="scps-block"]]
+[[module ListPages category="*" name="SCP-2105" order="updated_at desc" separate="no" class="foldable-list-container"]]
+[[collapsible folded="yes" show="SCP‑2105 || Programmable Occult" hide="SCP‑2105 || Programmable Occult"]]
+* %%title_linked%%
+* %%created_at%% 
+* (+%%rating%%)
+[[/collapsible]]
+[[/module]]
 
-#u-scps-block div.collapsible-block-content > ul > li > a:hover {
-    box-shadow: 0 .188rem .25rem rgba(0, 0, 0, .8);
-    background: var(--color5);
-    text-decoration: none
-}
+[[module ListPages category="*" name="SCP-4378" order="updated_at desc" separate="no" class="foldable-list-container"]]
+[[collapsible folded="yes" show="SCP‑4378 || Her Noodly Appendage" hide="SCP‑4378 || Her Noodly Appendage"]]
+* %%title_linked%%
+* %%created_at%% 
+* (+%%rating%%)
+[[/collapsible]]
+[[/module]]
 
-#u-scps-block div.collapsible-block-content > ul > li > a::before:visited {
-    color: var(--color1)
-}
-
-[[/code]]
+[[module ListPages category="*" name="SCP-4205" order="updated_at desc" separate="no" class="foldable-list-container"]]
+[[collapsible folded="yes" show="SCP‑4205 || In The Eyes of the Beholder 🖳" hide="SCP‑4205 || In The Eyes of the Beholder 🖳"]]
+* %%title_linked%%
+* %%created_at%% 
+* (+%%rating%%)
+[[/collapsible]]
+[[/module]]            
+        [[/div]]
+    [[/div]]
+    [[div_ class="name"]]
+        [[div_ data-heading="woedenaz" class="wrapper"]]
+            woedenaz
+        [[/div]]
+    [[/div]]
+[[/div]]
