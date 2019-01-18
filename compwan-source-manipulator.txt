@@ -2,6 +2,9 @@ title:Compwan Source Manipulator
 [[module CSS]]
 @import url(http://kontainer.djkakt.us/component:newscptheme/code/1);
 @import url('https://fonts.googleapis.com/css?family=Martel+Sans:400,700');
+#page-content {
+    margin-top: -3em;
+}
 
 .translation_block {
     display: none !important;
@@ -155,6 +158,13 @@ div:nth-child(18) > p:nth-child(19), div:nth-child(18) > p:nth-child(18) {
 #page-title {
     font-family: monospace;
     font-weight: bold;
+
+@media (max-width:768px) {
+    #page-content {
+        margin-top: auto;
+    }
+}
+
 }
 
 [[/module]]
