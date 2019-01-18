@@ -1,0 +1,930 @@
+title:Compwan Source Manipulator
+[[module CSS]]
+@import url('https://fonts.googleapis.com/css?family=Martel+Sans:400,700');
+
+.yui-navset .yui-content {
+
+    background: transparent !important;
+    z-index: 20;
+
+}
+
+div.container > div > p:nth-child(1) {
+    margin-top: 0;
+}
+
+div:nth-child(18) > p:nth-child(19), div:nth-child(18) > p:nth-child(18) {
+    position: relative;
+}
+
+.spacer {
+    margin: 1.000em auto;
+    max-width: 44vw !important;
+    width: 100%;
+    position: relative;
+}
+.spacer .mask {
+    overflow: hidden;
+    height: 1.250em;
+}
+.spacer .mask:after {
+     content: '';
+     display: block;
+     margin: -1.500em auto 0;
+     width: 100%;
+     height: 1.500em;
+     border-radius: 7.750em / 0.750em;
+     box-shadow: 0 0 0.500em black;
+}
+
+.pretty > p:first-child:first-letter {
+     -webkit-initial-letter: 3;
+     initial-letter: 3;
+}
+
+.pretty {
+     margin: 0 auto;
+     display: block;
+     padding: 0 2em 0 1em;
+     font-family: 'Martel Sans', sans-serif;
+     font-kerning: auto;
+     line-height: 1.313em;
+     font-size: 1.125em;
+     orphans: 2;
+     -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+     -ms-hyphens: auto;
+     hyphens: auto;
+     word-break: break-word;
+}
+
+.pretty p {
+     z-index: 9999;
+     margin-bottom: 0.5em }
+.pretty p + p {
+     text-indent: 1.5em;
+     margin-top: 0.5em }
+
+.compiling_text {
+     font-family: 'm-1m', monospace;
+     font-weight: 600;
+     display: inline;
+}
+
+.container > .pretty {
+     background: linear-gradient(rgba(0,0,0,1), rgba(177,72,72,1)65%, rgba(255,255,255,1));
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     overflow: hidden;
+     position: relative;
+     right:0; 
+     bottom:0; 
+     left:0;
+     margin: 0;
+     padding: 0 2rem 2rem 2rem; 
+     margin: 0;
+     z-index: 9999;
+}
+
+.compiling-container {
+    display: block;
+    position: relative;
+}
+
+.compiling {
+     overflow: hidden;
+     position:absolute;
+     right:0; 
+     bottom:0; 
+     left:0;
+     margin: 0;
+     padding: 0 2rem 2rem 2rem;
+     pointer-events: none; 
+}
+
+.compiling:after {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) 1px, transparent 1px, transparent 2px);
+     pointer-events: none;
+}
+
+.compiling_2 {
+     overflow: hidden;
+     position:absolute;
+     z-index: 1;
+     right:0; 
+     bottom:0; 
+     left:0;
+     margin: 0;
+     padding: 0 2rem 2rem 2rem;
+     background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 30%);
+     background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 30%);
+     background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 30%);
+     pointer-events: none; 
+}
+
+.compiling_3 {
+     overflow: hidden;
+     position:absolute;
+     z-index: 0;
+     right:0; 
+     bottom:0; 
+     left:0;
+     margin: 0;
+     padding: 0 2rem 2rem 2rem;
+     background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 90%);
+     background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 90%);
+     background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 90%);
+     pointer-events: none;
+}
+
+.compiling_3 > p, .compiling_2 > p, .compiling > p {
+     opacity: 0;
+}
+
+[[/module]]
+
+[[div_ class="wan_container"]]
+[[html class="iframe"]]
+<!doctype html>
+
+<html>
+<head>
+    <style>
+        #body {
+            background-color: black;
+            background-image: radial-gradient(rgba(150, 150, 150, 0.5), black 120%);
+            height: initial;
+            margin: 0;
+            padding: 2rem;
+            color: white; 
+            text-shadow: 0 0 5px #C8C8C8;
+        }
+
+        #body::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) 1px, transparent 1px, transparent 2px);
+            pointer-events: none;
+        }
+
+        ::selection {
+            background: #0080FF;
+            text-shadow: none;
+        }
+
+        pre {
+            font-family: 'm-1m', monospace;
+            font-size: 0.75em;
+            line-height: 1.25em;
+            margin: 0;
+            white-space: pre-wrap;
+        }
+        
+        pre h1 {
+            margin: 0.5em 0 0 0;
+        }
+        
+        pre .block {
+            padding: 1rem;
+            display: inline-block;
+            border: 1px solid #fff;
+            margin: 0;
+        }
+        
+        pre ol {
+            width: 70%;
+            margin: 0 !important;
+            padding: 0 2rem !important;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        pre ol li {
+            width: 100vw;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+    </style>
+    <script src="//use.edgefonts.net/m-1m.js"></script>
+</head>
+
+<body>
+    <div id="body">
+        <pre><output>>> 
+C://Users/corvus/Downloads/mv_sk1r.com.COM   
+<h1>COMPWAN Source Manipulator</h1>
+<span class="block">Please input your desired ritual type sing the options below.
+Press enter when ready. Incomplete input will result in faulty output.</span>
+
+<b>Input desired steps:</b> 12    
+<b>Lethality (y/n):</b> n
+<b>Select type:</b>
+
+<ol>
+<li>Self-Reflection</li>    
+<li>Summoning</li>    
+<li>Revenge</li>
+<li>Self-Improvement</li>    
+<li>Projection</li>    
+<li>Worship</li>
+</ol>
+
+<b>Input:</b> 3
+
+>> Revenge selected.
+
+Please wait, ritual is being built.
+
+Progress: &#9619;&#9619;&#9619;&#9619;&#9619;&#9619;&#9619;&#9619;&#9619;&#9619;&#9619;&#9619;&#9619;&#9619;&#9619;&#9619; 100%
+
+Ritual created. Please follow directions:
+
+<b>Name:</b> <em>Ira constans Purus</em>
+
+<b>Ingredients:</b>
+<ol>
+<li>Name of target</li>
+<li>Small table, preferably round</li>     
+<li>Two Chairs</li>
+<li>Water in a clear glass</li>
+<li>A pencil</li>
+<li>Paper</li>
+<li>Sharp Needle</li>
+</ol>
+
+<b>Directions:</b>
+<ol>
+<li>Select and name target. Target's presence required for ritual.</li>
+<li>Place glass of water in center of table.</li>
+<li>Prick finger.</li>
+<li>Place blood on tip of pencil.</li>
+<li>Place pencil, tip down, in glass.</li>
+<li>Ask target to drink water with pencil in place. Do not allow target to leave. The target must drink all of the water. </li>
+<li>Place paper in front of target. </li>
+<li>Target will use pencil to write on paper.</li>
+<li>Take paper</li>
+</ol>
+
+</output></pre>
+    </div>
+</body>
+
+</html>
+[[/html]]
+
+[[div class="spacer"]]
+
+[[div class="mask"]]
+
+[[/div]]
+
+[[/div]]
+
+[[div class="pretty"]]
+Eight-hour work days five days in a row really grind me down to the thinnest part of my psyche. My coworker, Jen, sits on that bit of psyche and saws away at it with a bone saw made for a blue whale until it just snaps. And today it snapped.
+
+For reasons beyond me, Jen has a crush on me. Every day at work she will not stop speaking to me, flirting with me.
+
+“What are you doing today, Aaron?”
+
+“Do you want to hang out tonight, Aaron?”
+
+“I like your shirt today, Aaron.”
+
+“Have you been working out, Aaron?”
+
+Every time she talks, she ends with this upwards inflection that rings inside me and causes a swift rise of irrational anger. 
+
+Her dull blue eyes look at me with just emptiness behind them, waiting for my response... which is usually just a simple “No.” And after months of her no-so-obvious hints, I decided I'd give her what she wants.
+
+I invited her to my home.
+
+“Hey Jen,” I say. 
+
+She quickly turns towards me and smiles, “Hey Aaron.” 
+
+“Do you want to hang out at my place tonight?”
+
+She pauses for a second, not nearly as excited as I expect her to be. After so much prodding, I thought for sure she would lose her mind over the offer. But eventually she responds.
+
+“To do what?” She gives me the same empty look she usually does, “Well, I mean, of course. I would love to. Are others going to join us?”
+
+I am perplexed at the question. This is not the response I expected.
+
+“I, uh, found this ritual that's supposed to see who your true love is.” I’m making this up on the fly, she’ll for sure go for it, “It's supposed to work, but I thought you'd like to try it with me.” I force a smile.
+
+“True love?” She blinks before offering the strangest smile, “You know what? Sure! Perhaps we will both find out together.” She gives a lilting laugh before turning back and returning to work.
+
+“Uh…” I stand behind her, in a confused haze, “Right, well, see you tonight.”
+
+And with that, I return to work. 
+[[/div]]
+
+[[div class="spacer"]]
+
+[[div class="mask"]]
+
+[[/div]]
+
+[[/div]]
+
+[[div class="pretty"]]
+Last night, I had been trawling the web, the usual places, Procrastinating on house work. I had the lingering irritation of dealing with Jen settled in my mind, digging away at me. I genuinely have no idea why she irritates me so much. Maybe it’s because she reminds me of the girls that I grew up with, the same ones that made me feel like such a pile of shit as a teenager.
+
+Maybe I just feel like I don’t deserve it.
+
+As the thought crossed my mind, an acquaintance of mine messages me.
+[[/div]]
+
+[[html class="chat"]]
+<!doctype html>
+<html>
+
+<head>
+    <base target="_blank">
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="http://scp-sandbox-3.wdfiles.com/local--files/woedenaz/discord.css">
+</head>
+
+<body>
+    <div class="discord-mockup z-depth-3">
+        <div class="messages-panel">
+            <div class="messages-group" id="default">
+                <div class="messages">
+                    <div class="message">
+                        <div class="icon goto"></div>
+                        <div class="body">
+                            <div class="user-name">&#120438;&#120446;&#120451;&#120446;&#160;&#120824;&#120822;</div>
+                            <div class="content">yo, Corvus, you around?</div>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="icon corvas"></div>
+                        <div class="body">
+                            <div class="user-name">corvas</div>
+                            <div class="content">ya</div>
+                            <div class="content">wut’s up?</div>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="icon goto"></div>
+                        <div class="body">
+                            <div class="user-name">&#120438;&#120446;&#120451;&#120446;&#160;&#120824;&#120822;</div>
+                            <div class="attachment">
+                                <img class="icon-code" src="http://scp-sandbox-3.wdfiles.com/local--files/woedenaz/file_icon.svg" title="DOM">
+                                <div class="attachmentInner">
+                                    <div class="filenameLinkWrapper">
+                                        <a class="anchor" href="http://www.scp-wiki.net/scp-2105" rel="noreferrer noopener" target="_blank">mv_sk1r.tar.gz</a>
+                                        <div class="metadata">
+                                            2.71 KB
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="anchor" href="http://www.scp-wiki.net/scp-2105" target="_blank"><svg name="Download" class="downloadButton" width="24" height="24" viewBox="0 0 24 24">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0h24v24H0z"></path>
+                                            <path class="fill" fill="currentColor" d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path>
+                                        </g>
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="icon goto"></div>
+                        <div class="body">
+                            <div class="user-name">&#120438;&#120446;&#120451;&#120446;&#160;&#120824;&#120822;</div>
+                            <div class="content">check it. some old as shit program that makes rituals</div>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="icon corvas"></div>
+                        <div class="body">
+                            <div class="user-name">corvas</div>
+                            <div class="content">uh</div>
+                            <div class="content">that’s cool. How is a .com a program tho</div>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="icon goto"></div>
+                        <div class="body">
+                            <div class="user-name">&#120438;&#120446;&#120451;&#120446;&#160;&#120824;&#120822;</div>
+                            <div class="content">dunno man</div>
+                            <div class="content">runs like a cmd prompt</div>
+                            <div class="content">I ran it a few times, makes some weird shit</div>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="icon corvas"></div>
+                        <div class="body">
+                            <div class="user-name">corvas</div>
+                            <div class="content">where’d you get it? you sure it’s not a virus or something?</div>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="icon goto"></div>
+                        <div class="body">
+                            <div class="user-name">&#120438;&#120446;&#120451;&#120446;&#160;&#120824;&#120822;</div>
+                            <div class="content">nah, man. I ran it through a virus checker.</div>
+                            <div class="content">Do it yourself if you want.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+[[/html]]
+
+[[div class="pretty"]]
+I furrowed my brows, considering what to do. Goto knew I was in to weird occult shit but I didn’t want to download a virus on my computer.
+
+I took a long breath before downloading it and wasting no time running it through my virus program. 
+
+Nothing. Oh, well, that’s good.
+[[/div]]
+
+[[html class="chat"]]
+<!doctype html>
+<html>
+
+<head>
+    <base target="_blank">
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="http://scp-sandbox-3.wdfiles.com/local--files/woedenaz/discord.css">
+</head>
+
+<body>
+    <div class="discord-mockup z-depth-3">
+        <div class="messages-panel">
+            <div class="messages-group" id="default">
+                <div class="messages">
+                    <div class="message">
+                        <div class="icon corvas"></div>
+                        <div class="body">
+                            <div class="user-name">corvas</div>
+                            <div class="content">ok I dl’d it</div>
+                            <div class="content">what do I do with it?</div>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="icon goto"></div>
+                        <div class="body">
+                            <div class="user-name">&#120438;&#120446;&#120451;&#120446;&#160;&#120824;&#120822;</div>
+                            <div class="content">just run it, dood</div>
+                            <div class="content">it’s real self-explanatory.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+[[/html]]
+
+[[div class="pretty"]]
+Moving my mouse over the program, I give it a double-click. For a few seconds, my computer whirs, making a sound I’d never heard it make before. Like the sound of sparks mixed with the grinding of rusty gears.
+[[/div]]
+
+
+[[html class="chat"]]
+<!doctype html>
+<html>
+
+<head>
+    <base target="_blank">
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="http://scp-sandbox-3.wdfiles.com/local--files/woedenaz/discord.css">
+</head>
+
+<body>
+    <div class="discord-mockup z-depth-3">
+        <div class="messages-panel">
+            <div class="messages-group" id="default">
+                <div class="messages">
+                    <div class="message">
+                        <div class="icon corvas"></div>
+                        <div class="body">
+                            <div class="user-name">corvas</div>
+                            <div class="content">wtf man</div>
+                            <div class="content">I ran it and now my comp sounds like a rusty junkyard</div>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="icon goto"></div>
+                        <div class="body">
+                            <div class="user-name">&#120438;&#120446;&#120451;&#120446;&#160;&#120824;&#120822;</div>
+                            <div class="content">o yeah, mine did that too.</div>
+                            <div class="content">just give it a sec. It’ll stop.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+[[/html]]
+
+[[div class="pretty"]]
+Right as he sent that… it stopped, and a black window opens up in the center of my screen. “COMPWAN Source Manipulator” displays itself right on the top.
+[[/div]]
+
+[[html class="chat"]]
+<!doctype html>
+<html>
+
+<head>
+    <base target="_blank">
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="http://scp-sandbox-3.wdfiles.com/local--files/woedenaz/discord.css">
+</head>
+
+<body>
+    <div class="discord-mockup z-depth-3">
+        <div class="messages-panel">
+            <div class="messages-group" id="default">
+                <div class="messages">
+                    <div class="message">
+                        <div class="icon corvas"></div>
+                        <div class="body">
+                            <div class="user-name">corvas</div>
+                            <div class="content">ok… now what?</div>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="icon goto"></div>
+                        <div class="body">
+                            <div class="user-name">&#120438;&#120446;&#120451;&#120446;&#160;&#120824;&#120822;</div>
+                            <div class="content">give it a try</div>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <div class="icon corvas"></div>
+                        <div class="body">
+                            <div class="user-name">corvas</div>
+                            <div class="content">alright…</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+[[/html]]
+
+[[div class="pretty"]]
+I stare at the black screen for some time before finally typing. //I don’t really believe in this shit,// I think, //but maybe I could scare Jen away with it. Do one of these weird rituals with her. She’ll realize how much of a weirdo I am leave me alone.//
+
+I mull that over before typing a “3” and pressing enter.
+[[/div]]
+
+
+[[html class="iframe"]]
+<!doctype html>
+
+<html>
+<head>
+    <style>
+        #body {
+            background-color: black;
+            background-image: radial-gradient(rgba(150, 150, 150, 0.75), black 120%);
+            height: initial;
+            margin: 0;
+            padding: 2rem;
+            color: white; 
+            text-shadow: 0 0 5px #C8C8C8;
+        }
+
+        #body::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) 1px, transparent 1px, transparent 2px);
+            pointer-events: none;
+        }
+
+        ::selection {
+            background: #0080FF;
+            text-shadow: none;
+        }
+
+        pre {
+            font-family: 'm-1m', monospace;
+            font-size: 0.75em;
+            line-height: 1.25em;
+            margin: 0;
+            white-space: pre-wrap;
+        }  
+        
+        pre .block {
+            padding: 1rem;
+            display: inline-block;
+            border: 1px solid #fff;
+            margin: 0;
+        }
+    </style>
+    <script src="//use.edgefonts.net/m-1m.js"></script>
+</head>
+
+<body>
+    <div id="body">
+        <pre><output>>> Revenge selected.
+</output></pre>
+    </div>
+</body>
+
+</html>
+[[/html]]
+
+[[div class="spacer"]]
+
+[[div class="mask"]]
+
+[[/div]]
+
+[[/div]]
+
+[[div class="pretty"]]
+I know it won't work. I spent the majority of today just collecting all the objects I will need for the ritual. I set up my dining room for the whole affair. I have a nice round wooden table that is the perfect size for two sitting across from each other. Pushing the chairs across the tile floor, they make a scraping noise that causes me to shiver. 
+
+//Knock, knock, knock,// Three rapid taps on the front door.
+
+Pushing down my black shirt, I walk down the steps with only the soft pat of my socks joining the dull echo of knocks. As I turn the corner, there is Jen. I can see her through the window of my front door with a smile plastered across her face, though she has her head turned away. As she rocks back and forth on her heels, I quickly move to the kitchen.
+
+“Just a moment!” I shout.
+
+I walk to the counter and grab the bag of supplies I had gathered earlier, as well as an etched glass cup from my cupboard. With the items in hand, I make my way back to the front door.
+
+She turns her head and a grin greets me when I open the door, my dim porch light doing a poor job of illuminating her face. A small breeze is accompanied by the strong scent of some sort of shampoo and perfume. A part of me has to admit, she is somewhat cute.
+
+“Hey Jen,” I attempt a grin, “sorry for the wait, I had to get all the stuff.” I raise up the bag and the glass, one in each hand.
+
+She stops bouncing on her heels, still smiling, “May I come in?”
+
+I set out a short sigh.
+
+“Right, of course, shall we?” I wave her inside and close the door behind her. “Just up the stairs.” I start making my way back up, Jen following close behind me. As we approach the table, I place the items on it and back away, looking towards Jen.
+
+“You take a seat right there.” I gesture to the chair to my right.
+
+“Oh, right…” She nods, still… curiously less enthusiastic than I thought she might be. I shake the thought with a sigh and return to setting up the table.
+
+I place the etched glass down, making sure it was as close to the center as possible. The light from the lamp above the table refracts through the glass, making a pattern of light around it. I pull the paper, pencil, and needle out of the bag and place them on my side of the table. I look over at Jen, trying to assess what she was thinking.
+
+She had her hair pulled back and she was looking around the area, a spare room that used to house an ex-roommate. The only thing he had left behind was this table, saying I could keep it. Though I truly believed it was just because he didn’t want to move the thing.
+
+She looks back at me as I’m looking at her, we lock eyes for a moment. They aren’t quite as empty as I remember. Still the same pale blue, but there is a purpose to them that I don’t remember seeing before.
+
+“Jen, uh, maybe we shoul—”
+
+Perhaps she notices the hesitation in my voice as she interrupts me, “So, this ritual will tell us both our true love?” She asks, giving me a friendly if slightly broken smile.
+
+I blink, feeling a warmness in my face, “Oh, uh, yeah. Yeah, that’s right.” 
+
+Composing myself, I attempt to resume my air of mysteriousness. I move very deliberately, picking up the needle with a fair bit of flair. I hold it up in front of my face, looking away from her, pretending to inspect the sharpness of the needle.
+
+“I hope you're okay with blood, Jen. This is a blood ritual.” I say, smiling a bit as I turn to look at her.
+
+She chuckles slightly, almost condescendingly, “Yeah, sure. I don't care.”
+
+This isn’t working like I intended.
+
+“I need to get another item, give me just a moment.”
+
+As I exit the room, Jen’s gaze follows me out the door. I walk quickly to the kitchen and fill a pitcher with tap water. As the water flows out of the faucet, I peer listlessly out the window. //This is so goddamn stupid,// I tell myself. A steady flow of second guesses rushes through me just as the water in the pitcher reaches near the top.
+
+//Whatever, it’s been years of her not taking hints. Let’s just get this over with.// I turn off the faucet and make my way back up the stairs.
+
+“Alright, Jen. I'll need you to do everything exactly as I say when I say it.” I speak as I cross the threshold in to the room, “You cannot hesitate. If you do, I cannot promise you the results you'll want.”
+
+“The results I want?” She gives me a confused look.
+
+I place the pitcher down as I take a seat across from her, “You… you know, having it tell you your true love. It might not work if the ritual is not done exactly as I say.”
+
+She looks down at the items on the table and back up at me, an almost pained look crosses her face. “Right. Okay. I am ready.” She removes her purse from her shoulder, leaning over and sliding it under her chair.
+
+I only just now notice how nicely she is dressed. A light mauve lace top that loosely sits on her shoulders with a white shirt underneath. I shake my head slightly, focusing back on the ritual.
+
+ “Alright, I'm going to fill this glass halfway with water.” I do exactly as I say and fill the glass halfway with water. I am trying my best to seem strange and mysterious… but now I just felt awkward.
+
+I return the pitcher back to its position on the far edge of the table. I pan my head back up to look at her, “Let's begin. Please, do not move from your chair until the ritual is complete.”
+
+She nods and pushes herself closer to the table.
+
+I lift the needle back up with my left hand, again with a certain amount of flourish and quickly move my right hand around in front of me, pricking my right pointer finger. Involuntarily, I take a sharp breath through my teeth. //Holy shit, that hurt way worse than I expected,// I think to myself as I put the pin back on the table. I squeeze my finger until a small globe of blood escapes from the wound.
+
+“That looks like it hurts,” she comments, actual concern sitting in her words. 
+
+“Quiet.” I command, trying to keep it together as my finger still throbs in pain.
+
+I pick up the yellow pencil with my left hand and lightly touch the graphite tip to the drop of blood.
+
+I pause as I smell Jen's perfume on a small breeze, my eyes flicking around the room.
+
+“Uh…” I focus back on Jen, “Okay. I'm going to place this pencil in the glass. After I do, you must drink the water with the pencil still in it. You have to drink all of it.”
+
+She stares at me as the smell of her perfume becomes stronger, “Wha-- really? I don't really want to drink your blood.” She grimaces.
+
+“It's the only way it'll work.” I try my best to be convincing, pulling my mouth in to a grin, “Don't you want to know who your true love is?” 
+
+I carefully place the pencil, tip down, into the glass. It sits for a moment as the blood drifts off the tip in a small red cloud that shifts around slowly in the water, as if it had been stirred. We both watch as the small cloud drifts higher in the water. After a few seconds, it breaks the meniscus and continues drifting into the air.
+
+“Uh…” She watches the cloud drifting closely, “Aaron, how are you doing that?” She asks with a fair bit of amazement in her voice. The first time since she got her that she sounds like the Jen I am familiar with. 
+
+“I, er…” I don’t know what to answer. This is absolutely not supposed to happen, a feeling of dread sinks into my stomach. However, it is fleeting, quickly replaced with fascination. I shush her and keep watching.
+
+The red smoke continues drifting out of the cup and floats into the air, stopping about a foot above the glass. It then splits into two, each smaller cloud drifting lazily towards me and Jen.
+
+Jen speaks in quiet awe, “This is so cool…”
+
+I just sit silently with my thoughts are paralyzing me. The small bit of red smoke reaches my nose and swirls silently up nostril. It smells a bit like baking chocolate and… fish? Simultaneously, it drifts up Jen's nose as well. She coughs slightly, a bit of the smoke escaping out of her mouth and dancing back up her nose.
+
+“Jen?” I say, eventually. She doesn’t answer, just stared at me. A familiar smile descends on to her face. Without a word, she slowly grabs the glass and swallows the water, holding the pencil in the glass with her other hand. The smoke continues to escape from the pencil, engulfing her head in red. As she finishes, she places the glass in front of her. The red smoke pushing itself back into her, appearing to focus primarily on her eyes.
+
+I do not know what to do, but I speak without even really thinking. “So, next, you need to take this paper.” I feel my arm move as I grab the paper with my right hand, leaving a small dot of blood on the corner. I place it in the center of the table. 
+
+She grabs the paper and takes the pencil from the glass.
+
+Both of us moving slowly, almost mechanically, but with purpose. I am not sure if I am still continuing my act or not… A dull pressure, a haze, descends on my thoughts.
+
+She stares right at me as she writes without looking. I glance down at the paper; the writing is in green.
+
+//Okay, I want to stop.// I tell myself, a frantic desperation attempts to climb itself out of the haze of my mind. However, I find myself doing nothing in response.
+
+She puts the paper back into the center and I grab it. The letters are unfamiliar to me, though after a moment, they appear to almost sink into the paper and rise back out, having rearranged in to English.  I read it in my head.
+
+[[span class="compiling_text"]]“WHAT YOU DESIRE, IT IS MISSING. IT IS SHATTERED LIKE SO MANY PIECES OF GLASS. NOW, SO, SHALL YOU.”[[/span]]
+
+I stop breathing. Jen hadn't spoken at all.
+
+“Say it.” She says.
+
+And I do. “What you desire, it is missing,” I say slowly. Is that even really my voice? “It is shattered like so many pieces of glass. Now, so, shall you.”
+
+The table begins to spin heavily in front of us, making a sharp scraping noise on the wooden floor. I cannot move my head, my eyes are locked on Jen as the table had spins 180°, placing the glass and pencil directly in front of me. I feel my head move again, looking down at the items in front of me, I hear a //thwomp// before looking back up. Jen had passed out on the table, her brown hair spread over the table, obscuring her head.
+
+“Jen?” I say meekly. 
+
+There is no reply. 
+
+I stand up from the table, equally becoming aware that I can do so now. I feel panic spread through my whole body. “Jen!” I repeat and push at the side her head.
+
+“Why can't I move?” I hear her say, quietly, muffled by the table.
+
+“Oh fuck, Jen,” I push her hair away and see her face as she slowly turns it towards me. Twisted, unnaturally with a look of pure anger. Her eyes are wide. I can hear her teeth grinding.
+
+She speaks with her mouth closed, “Fuck you, Aaron. I'll fucking kill you.”
+
+I hear the sound of cracking come from her mouth, but the scraping continued – back and forth, back and forth – slow and deliberate.
+
+She had not moved yet, only her jaw – back and forth, back and forth, crunch, crunch.
+
+At that moment, I panic. I am not a strong guy, but I manage to lift her up and hoist her over my shoulder. Her mouth, the sound of scraping teeth, rhythmically repeating in my ear. //I'll just drive her home. The thought crosses my mind in my panic. Maybe this is just temporary.// 
+
+The thoughts keep rolling through my mind as I try not to lose it. 
+
+As I reach her car realize her purse is inside. I place her on the ground, her back propped against the car. As I try to positioner so she will not fall over, I hear a sharp //snap// as chunk of white slips out from between her lips. Her head tilts over limply, leaning against her should. Her wide eyes, sharp pupils, burrow in to my own.
+
+“Jen… please…” He lean down looking at her, “This wh—”
+
+//Crack// – another piece of tooth slides out of her lips.
+
+“Shit.” I whisper to myself as I stand, sprinting towards the door.
+
+I return with her purse and pull out her keys. Inspecting Jen as I unlock the passenger door, I notice that the two chunks of tooth are gone. Opening the door, I reach down and lift her up, doing my best to gently place her in the seat. I pull the seatbelt down, reaching past her to buckle it. 
+
+“It’s going to be okay.” I say quietly.
+
+The passenger door swings shut as I jog to the other side, taking a seat behind the wheel. I look over at her. Her face is flushed red, veins pulse in her forehead. I can hear her rapid heartbeat from four feet away, a fast rhythm that seems to only be getting faster. 
+
+//I just need to get her home.// I back out carefully and head towards her house. I am not going to lose my cool.
+[[/div]]
+
+[[div class="spacer"]]
+
+[[div class="mask"]]
+
+[[/div]]
+
+[[/div]]
+
+[[div class="pretty"]]
+“I'm bringing you home, Jen.” I say, taking my eyes off the road for a moment to look at her. The only reply is the continued scraping of her teeth – back and forth – only interrupted by the occasional //crack.//
+
+I keep driving.
+
+I jump when she speaks, “What's inside me? Clawing at me, chewing me.”
+
+I look at her, she is still looking straight ahead, the constant grinding never-ending.
+
+“I don't know,” I say.
+
+“I just... need to–,” the grinding stops slowly, replaced by a small squeaking noise. I look at her again. On her shirt are dozens of bloody fragments of teeth, her jaw is still moving back and forth.
+
+“I just asked him,” she speaks, “he calls himself… WAN.” She turns and looks at me. “He wants me to thank you. I am his now.”
+
+“I don't... I don't understand.”
+
+She finally stops sliding her jaw back and forth and grins at me, a toothless grin. As she smiles, her teeth slowly reappear one by one, with a short, wet popping noise.
+
+“He says…” //pop, pop,// “he tells me to go to him. To find the pieces along the way.”
+
+Her grin disappears as we arrive at her home – a small white house with red shutters. It almost seems to glow as the headlights shine on its walls.
+
+I turn off the car and sit for a moment, the grinding sound to my right returning in the silence. Leaning forward on the steering wheel, I breath in and breath out in a vain attempt to stop the panicked beating in my chest. I lean back up and turn to open the door.
+
+“WAN wants me. WAN needs me.” She speaks, muffled through her closed lips.
+
+I shake my head and close the door, heading to the passenger side and lifting her out. She seems to weigh even less than before…
+
+As I hold her, she gutturally whispers into my ear. 
+
+“He says he wants you too. He says that she didn't drink all the water like she was supposed to. He says he warned you. He says you knew the risks.” She opens her mouth and leans forward towards my ear, I feel her warm breath as a wad of teeth, blood, and saliva roll off of her tongue, slipping into the waiting canal, “He says you are his now.”
+
+In disgust, I drop her on the ground and look down at myself, the soft yellow of the sodium bulb street-lights illuminated my body. I try to reach up, in some attempt to reach my ear, but I could not move. I see my fists are bleeding as I dig my nails into them. The musculature on my arm is straining, expanding outside my skin. My skin splits open and the red of muscle seems even more vivid with the orange light.
+
+Jen pushes herself off the ground and looked at me, her movements slow and tired.
+
+“Aaron?” she asks, her eyes look heavy, as if just waking up.
+[[/div]]
+
+[[div class="container"]]
+
+    [[div class="pretty"]]
+        I hear a voice in my head, overwhelming my thoughts. It sounds stiff, automatic. “Bring them to me. The lines, they grow longer. I need more. MORE TO FILL. MORE TO COMPLETE.” It grows louder, I begin to lose myself to deep feeling of emptiness. I lift my arms up in front of my face and see scar tissue falling off. My vision grows brighter, the worlds many broken systems revealing themselves to me… but it is not enough.
+
+        [[span class="compiling_text"]]My head snaps down to look at this[[/span]] one of flesh. [[span class="compiling_text"]]WAN needs the flesh.[[/span]] The flesh must me made complete. [[span class="compiling_text"]]The flesh scrambles[[/span]] to its feet, lifting to its sad form and running away.
+
+        “Nghoh—” I try to speak, a last cry of my imperfect flesh, but my [[span class="compiling_text"]]jaw shoves itself out from my mouth,[[/span]] clattering to the ground, before my [[span class="compiling_text"]]lips seal themselves over my useless orifice.[[/span]]
+
+        With a sharp snap [[span class="compiling_text"]]as my spine lurches in my back, pushing itself out of my flesh. The pain is nothing, for it will be replaced and I will be compiled. My vision darkens as my eyes expel themselves from this imperfect vessel. A squelching sound becoming dull as my ears sink in to my waiting skull.[[/span]] 
+
+        [[span class="compiling_text"]]Soon. Soon I will be a program for WAN.[[/span]] 
+
+        [[span class="compiling_text"]]A program to compile the imperfect flesh.[[/span]]
+    [[/div]]
+
+[[/div]]
+
+[[div_ class="compiling-container"]]
+[[div class="compiling pretty"]]
+    I hear a voice in my head, overwhelming my thoughts. It sounds stiff, automatic. “Bring them to me. The lines, they grow longer. I need more. MORE TO FILL. MORE TO COMPLETE.” It grows louder, I begin to lose myself to deep feeling of emptiness. I lift my arms up in front of my face and see scar tissue falling off. My vision grows brighter, the worlds many broken systems revealing themselves to me… but it is not enough.
+
+    [[span class="compiling_text"]]My head snaps down to look at this[[/span]] one of flesh. [[span class="compiling_text"]]WAN needs the flesh.[[/span]] The flesh must me made complete. [[span class="compiling_text"]]The flesh scrambles[[/span]] to its feet, lifting to its sad form and running away.
+
+    “Nghoh—” I try to speak, a last cry of my imperfect flesh, but my [[span class="compiling_text"]]jaw shoves itself out from my mouth,[[/span]] clattering to the ground, before my [[span class="compiling_text"]]lips seal themselves over my useless orifice.[[/span]]
+
+    With a sharp snap [[span class="compiling_text"]]as my spine lurches in my back, pushing itself out of my flesh. The pain is nothing, for it will be replaced and I will be compiled. My vision darkens as my eyes expel themselves from this imperfect vessel. A squelching sound becoming dull as my ears sink in to my waiting skull.[[/span]] 
+
+    [[span class="compiling_text"]]Soon. Soon I will be a program for WAN. A program to compile the imperfect flesh.[[/span]]
+[[/div]]
+
+[[div class="compiling_2 pretty"]]
+    I hear a voice in my head, overwhelming my thoughts. It sounds stiff, automatic. “Bring them to me. The lines, they grow longer. I need more. MORE TO FILL. MORE TO COMPLETE.” It grows louder, I begin to lose myself to deep feeling of emptiness. I lift my arms up in front of my face and see scar tissue falling off. My vision grows brighter, the worlds many broken systems revealing themselves to me… but it is not enough.
+
+    [[span class="compiling_text"]]My head snaps down to look at this[[/span]] one of flesh. [[span class="compiling_text"]]WAN needs the flesh.[[/span]] The flesh must me made complete. [[span class="compiling_text"]]The flesh scrambles[[/span]] to its feet, lifting to its sad form and running away.
+
+    “Nghoh—” I try to speak, a last cry of my imperfect flesh, but my [[span class="compiling_text"]]jaw shoves itself out from my mouth,[[/span]] clattering to the ground, before my [[span class="compiling_text"]]lips seal themselves over my useless orifice.[[/span]]
+
+    With a sharp snap [[span class="compiling_text"]]as my spine lurches in my back, pushing itself out of my flesh. The pain is nothing, for it will be replaced and I will be compiled. My vision darkens as my eyes expel themselves from this imperfect vessel. A squelching sound becoming dull as my ears sink in to my waiting skull.[[/span]] 
+
+    [[span class="compiling_text"]]Soon. Soon I will be a program for WAN. A program to compile the imperfect flesh.[[/span]]
+[[/div]]
+
+[[div class="compiling_3 pretty"]]
+    I hear a voice in my head, overwhelming my thoughts. It sounds stiff, automatic. “Bring them to me. The lines, they grow longer. I need more. MORE TO FILL. MORE TO COMPLETE.” It grows louder, I begin to lose myself to deep feeling of emptiness. I lift my arms up in front of my face and see scar tissue falling off. My vision grows brighter, the worlds many broken systems revealing themselves to me… but it is not enough.
+
+    [[span class="compiling_text"]]My head snaps down to look at this[[/span]] one of flesh. [[span class="compiling_text"]]WAN needs the flesh.[[/span]] The flesh must me made complete. [[span class="compiling_text"]]The flesh scrambles[[/span]] to its feet, lifting to its sad form and running away.
+
+    “Nghoh—” I try to speak, a last cry of my imperfect flesh, but my [[span class="compiling_text"]]jaw shoves itself out from my mouth,[[/span]] clattering to the ground, before my [[span class="compiling_text"]]lips seal themselves over my useless orifice.[[/span]]
+
+    With a sharp snap [[span class="compiling_text"]]as my spine lurches in my back, pushing itself out of my flesh. The pain is nothing, for it will be replaced and I will be compiled. My vision darkens as my eyes expel themselves from this imperfect vessel. A squelching sound becoming dull as my ears sink in to my waiting skull.[[/span]] 
+
+    [[span class="compiling_text"]]Soon. Soon I will be a program for WAN. A program to compile the imperfect flesh.[[/span]]
+[[/div]]
+[[/div]]
+[[/div]]
