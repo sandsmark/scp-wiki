@@ -4,6 +4,30 @@ parent:broken-masquerade-hub
 @import URL(/component:mcd-theme-gray/code/1);
 [[/module]]
 [[module css]]
+@media (max-width: 479px) { 
+#header {
+    background-size: 150px 75px;
+    background-position: 1em;
+}
+}
+@media (min-width: 480px) and (max-width: 580px) { 
+#header {
+    background-size: 180px 90px;
+    background-position: 1em;
+}
+}
+@media (min-width: 581px) and (max-width: 767px) { 
+#header {
+    background-size: 210px 105px;
+    background-position: 1em;
+}
+}
+@media (min-width: 768px) and (max-width: 979px) {
+#header {
+    background-size: 240px 120px;
+    background-position: 1em;
+}
+}
 #header {
     background: url(http://scp-wiki.wdfiles.com/local--files/component%3Amcd-theme/MCDLogo2-small.png) no-repeat;
 }
