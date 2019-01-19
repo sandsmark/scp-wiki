@@ -620,6 +620,36 @@ Fine, take some [https://www.reddit.com/r/cats/top/ cat pics] and leave. ^^Pleas
 [[/module]]
 
 ------
+[[=]]
+> + __MORE TESTING__
+[[/=]]
+
+------
+
+[[=]]
++ Correlated Anomalies
+[[/=]]
+[[module ListPages order="created_at desc" tags="pattern-screamer +scp" separate="no" perPage="200" prependLine="||~ Title||~ Author||~ Created||"]]
+|| %%title_linked%% || %%created_by_linked%% || %%created_at%% ||
+[[/module]]
+
+------
+[[=]]
++ Relevant Documentation
+[[/=]]
+[[module ListPages order="created_at desc" tags="pattern-screamer +tale -hub" separate="no" perPage="200" prependLine="||~ Title||~ Author||~ Created||"]]
+|| %%title_linked%% || %%created_by_linked%% || %%created_at%% ||
+[[/module]]
+
+------
+[[=]]
++ Dossiers
+[[/=]]
+[[module ListPages order="created_at desc" tags="pattern-screamer +hub" separate="no" perPage="200" prependLine="||~ Title||~ Author||~ Created||"]]
+|| %%title_linked%% || %%created_by_linked%% || %%created_at%% ||
+[[/module]]
+
+------
 
 [[/tab]]
 
