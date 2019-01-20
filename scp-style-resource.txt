@@ -847,7 +847,7 @@ more[[span class="blinkbar"]][][[/span]]
 **What it looks like:**
 
 [[div class="tape-wrap"]]
-[[collapsible show="▶PLAY" hide="RELOAD"]]
+[[collapsible show="PLAY" hide="RELOAD"]]
 [[div class="tape-anim"]]
 [[div class="tape-left"]]
 [[/div]]
@@ -856,11 +856,11 @@ more[[span class="blinkbar"]][][[/span]]
 [[/div]]
 
 [[div class="tape-record"]]
-[[span class="record r1"]]//the first line//[[/span]]
-[[span class="record r1 line2"]]//the second line//[[/span]]
-[[span class="record r1 line3"]]//the final line//[[/span]]
-[[span class="record r2"]]//TEXT//[[/span]]
-[[span class="record r2 line2"]]//MORE TEXT//[[/span]]
+[[span class="record r1"]]//the first line//
+//the second line//
+//the final line//[[/span]]
+[[span class="record r2"]]//TEXT//
+//MORE TEXT//[[/span]]
 
 [[/div]]
 [[/collapsible]]
@@ -876,8 +876,7 @@ more[[span class="blinkbar"]][][[/span]]
 .tape-wrap .collapsible-block-unfolded-link .collapsible-block-link
 {animation-delay: calc(6s + 2s);}
 
-.tape-record {position: relative;height: 6em;overflow: hidden;white-space: pre;}.record {position: absolute;animation-name: record;animation-duration: 2.5s;opacity: 0;top: 0;left: 50%;transform: translateX(-50%);}.line2 {top: 1.2em!important;}.line3 {top: 2.4em!important;}.tape-wrap {position: relative;background-color: rgba(244,244,244,1);border: 1px dashed #999;padding: 0 1em;}.tape-anim {position: relative;background-image: url( "http://unofficial-scp-sandbox-jp.wikidot.com/local--files/iroiro-workshop-8/DoxYSJAV4AET63r.png" );background-size: 200px;background-position: center center;background-repeat: no-repeat;min-height: 300px;}.tape-left,.tape-right {display: block;position: absolute;margin: auto;height: 0;width: 70px;padding-bottom: 100%;background-image: url( "http://unofficial-scp-sandbox-jp.wikidot.com/local--files/iroiro-workshop-8/scp_trans.png" );background-size: contain;background-position: center center;background-repeat: no-repeat;pointer-events: none;}.tape-left {top: -20px;bottom: 0;left: -70px;right: 0;animation-name: spin1;animation-duration: 15s; animation-timing-function: linear; animation-fill-mode: forwards; animation-iteration-count: infinite;}.tape-right {top: 0px;bottom: -32px;left: 0;right: -72px;animation-name: spin1;animation-duration: 20s; animation-timing-function: linear; animation-fill-mode: forwards; animation-iteration-count: infinite;}.tape-wrap .collapsible-block-unfolded-link {padding-top: 1em;}.tape-wrap .collapsible-block-folded,.tape-wrap .collapsible-block-unfolded-link {position: relative;text-align: center;}.tape-wrap .collapsible-block-unfolded-link .collapsible-block-link:before {content:"\f1da";display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;transform:translate(0, 0);}
-.tape-wrap .collapsible-block-unfolded-link .collapsible-block-link {animation-name: g-ex;animation-duration: 1s;animation-fill-mode: forwards;visibility: hidden;opacity: 0;}.tape-wrap .collapsible-block-folded {padding-top: 1em;padding-bottom: 1em;}@keyframes g-ex {50% {visibility: visible; opacity: 0;}100% {visibility: visible; opacity: 1;}}@keyframes spin1 {0% {transform: rotate(0deg);}100% {transform: rotate(360deg);}}@keyframes record {0% {opacity: 0;}25% {opacity: 1;}75% {opacity: 1;}100% {opacity: 0;}}@-moz-document url-prefix() {.tape-anim {height: 300px;}.tape-left,.tape-right {display: block; width: 70px;height: 70px;position: relative;margin: 0 auto;padding: 0 auto!important;padding-bottom: 0;}.tape-left {top: 105px;bottom: initial;left:-36px; }.tape-right {top: 60px;bottom: initial;left: 35px;}}
+.tape-record {position: relative;height: 6em;pointer-events: none;}.record {display: block;position: absolute;width: 100%;animation-name: record;animation-duration: 2.5s;opacity: 0;top: 0;text-align: center;}.tape-wrap {position: relative;background-color: rgba(244, 244, 244, 1);border: 1px dashed #999;padding: 0 1em;}.tape-anim {position: relative;background-image: url("http://unofficial-scp-sandbox-jp.wikidot.com/local--files/iroiro-workshop-8/DoxYSJAV4AET63r.png");background-size: 200px;background-position: center center;background-repeat: no-repeat;min-height: 300px;}.tape-left,.tape-right {display: block;position: absolute;margin: auto;height: 0;width: 70px;padding-bottom: 100%;background-image: url("http://unofficial-scp-sandbox-jp.wikidot.com/local--files/iroiro-workshop-8/scp_trans.png");background-size: contain;background-position: center center;background-repeat: no-repeat;pointer-events: none;}.tape-left {top: -20px;bottom: 0;left: -70px;right: 0;animation-name: spin1;animation-duration: 15s;animation-timing-function: linear;animation-fill-mode: forwards;}.tape-right {top: 0;bottom: -32px;left: 0;right: -72px;animation-name: spin1;animation-duration: 20s;animation-timing-function: linear;animation-fill-mode: forwards;}.tape-wrap .collapsible-block-unfolded-link {padding-top: 1em;}.tape-wrap .collapsible-block-folded,.tape-wrap .collapsible-block-unfolded-link {position: relative;text-align: center;}.tape-wrap .collapsible-block-link:before {display: inline-block;font: normal normal normal 14px/1 FontAwesome;font-size: inherit;text-rendering: auto;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;transform: translate(0, 0);}.tape-wrap .collapsible-block-folded .collapsible-block-link:before {content: "\f04b";}.tape-wrap .collapsible-block-unfolded-link .collapsible-block-link:before {content: "\f1da";}.tape-wrap .collapsible-block-unfolded-link .collapsible-block-link {animation-name: g-ex;animation-duration: 1s;animation-fill-mode: forwards;visibility: hidden;opacity: 0;}.tape-wrap .collapsible-block-folded {padding-top: 1em;padding-bottom: 1em;}@keyframes g-ex {50% {visibility: visible;opacity: 0;}100% {visibility: visible;opacity: 1;}}@keyframes spin1 {0% {transform: rotate(0deg);}100% {transform: rotate(360deg);}}@keyframes record {0% {opacity: 0;}25% {opacity: 1;}75% {opacity: 1;}100% {opacity: 0;}}@-moz-document url-prefix() {.tape-anim {height: 300px;}.tape-left,.tape-right {display: block;width: 70px;height: 70px;position: relative;margin: 0 auto;padding: 0 auto;}.tape-left {top: 105px;bottom: initial;left: -36px;}.tape-right {top: 60px;bottom: initial;left: 35px;}}
 [[/module]]
 
 **What to copy:**
@@ -899,8 +898,7 @@ more[[span class="blinkbar"]][][[/span]]
 .tape-wrap .collapsible-block-unfolded-link .collapsible-block-link
 {animation-delay: calc(6s + 2s);}
 
-.tape-record {position: relative;height: 6em;overflow: hidden;white-space: pre;}.record {position: absolute;animation-name: record;animation-duration: 2.5s;opacity: 0;top: 0;left: 50%;transform: translateX(-50%);}.line2 {top: 1.2em!important;}.line3 {top: 2.4em!important;}.tape-wrap {position: relative;background-color: rgba(244,244,244,1);border: 1px dashed #999;padding: 0 1em;}.tape-anim {position: relative;background-image: url( "http://unofficial-scp-sandbox-jp.wikidot.com/local--files/iroiro-workshop-8/DoxYSJAV4AET63r.png" );background-size: 200px;background-position: center center;background-repeat: no-repeat;min-height: 300px;}.tape-left,.tape-right {display: block;position: absolute;margin: auto;height: 0;width: 70px;padding-bottom: 100%;background-image: url( "http://unofficial-scp-sandbox-jp.wikidot.com/local--files/iroiro-workshop-8/scp_trans.png" );background-size: contain;background-position: center center;background-repeat: no-repeat;pointer-events: none;}.tape-left {top: -20px;bottom: 0;left: -70px;right: 0;animation-name: spin1;animation-duration: 15s; animation-timing-function: linear; animation-fill-mode: forwards; animation-iteration-count: infinite;}.tape-right {top: 0px;bottom: -32px;left: 0;right: -72px;animation-name: spin1;animation-duration: 20s; animation-timing-function: linear; animation-fill-mode: forwards; animation-iteration-count: infinite;}.tape-wrap .collapsible-block-unfolded-link {padding-top: 1em;}.tape-wrap .collapsible-block-folded,.tape-wrap .collapsible-block-unfolded-link {position: relative;text-align: center;}.tape-wrap .collapsible-block-unfolded-link .collapsible-block-link:before {content:"\f1da";display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;transform:translate(0, 0);}
-.tape-wrap .collapsible-block-unfolded-link .collapsible-block-link {animation-name: g-ex;animation-duration: 1s;animation-fill-mode: forwards;visibility: hidden;opacity: 0;}.tape-wrap .collapsible-block-folded {padding-top: 1em;padding-bottom: 1em;}@keyframes g-ex {50% {visibility: visible; opacity: 0;}100% {visibility: visible; opacity: 1;}}@keyframes spin1 {0% {transform: rotate(0deg);}100% {transform: rotate(360deg);}}@keyframes record {0% {opacity: 0;}25% {opacity: 1;}75% {opacity: 1;}100% {opacity: 0;}}@-moz-document url-prefix() {.tape-anim {height: 300px;}.tape-left,.tape-right {display: block; width: 70px;height: 70px;position: relative;margin: 0 auto;padding: 0 auto!important;padding-bottom: 0;}.tape-left {top: 105px;bottom: initial;left:-36px; }.tape-right {top: 60px;bottom: initial;left: 35px;}}
+.tape-record {position: relative;height: 6em;pointer-events: none;}.record {display: block;position: absolute;width: 100%;animation-name: record;animation-duration: 2.5s;opacity: 0;top: 0;text-align: center;}.tape-wrap {position: relative;background-color: rgba(244, 244, 244, 1);border: 1px dashed #999;padding: 0 1em;}.tape-anim {position: relative;background-image: url("http://unofficial-scp-sandbox-jp.wikidot.com/local--files/iroiro-workshop-8/DoxYSJAV4AET63r.png");background-size: 200px;background-position: center center;background-repeat: no-repeat;min-height: 300px;}.tape-left,.tape-right {display: block;position: absolute;margin: auto;height: 0;width: 70px;padding-bottom: 100%;background-image: url("http://unofficial-scp-sandbox-jp.wikidot.com/local--files/iroiro-workshop-8/scp_trans.png");background-size: contain;background-position: center center;background-repeat: no-repeat;pointer-events: none;}.tape-left {top: -20px;bottom: 0;left: -70px;right: 0;animation-name: spin1;animation-duration: 15s;animation-timing-function: linear;animation-fill-mode: forwards;}.tape-right {top: 0;bottom: -32px;left: 0;right: -72px;animation-name: spin1;animation-duration: 20s;animation-timing-function: linear;animation-fill-mode: forwards;}.tape-wrap .collapsible-block-unfolded-link {padding-top: 1em;}.tape-wrap .collapsible-block-folded,.tape-wrap .collapsible-block-unfolded-link {position: relative;text-align: center;}.tape-wrap .collapsible-block-link:before {display: inline-block;font: normal normal normal 14px/1 FontAwesome;font-size: inherit;text-rendering: auto;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;transform: translate(0, 0);}.tape-wrap .collapsible-block-folded .collapsible-block-link:before {content: "\f04b";}.tape-wrap .collapsible-block-unfolded-link .collapsible-block-link:before {content: "\f1da";}.tape-wrap .collapsible-block-unfolded-link .collapsible-block-link {animation-name: g-ex;animation-duration: 1s;animation-fill-mode: forwards;visibility: hidden;opacity: 0;}.tape-wrap .collapsible-block-folded {padding-top: 1em;padding-bottom: 1em;}@keyframes g-ex {50% {visibility: visible;opacity: 0;}100% {visibility: visible;opacity: 1;}}@keyframes spin1 {0% {transform: rotate(0deg);}100% {transform: rotate(360deg);}}@keyframes record {0% {opacity: 0;}25% {opacity: 1;}75% {opacity: 1;}100% {opacity: 0;}}@-moz-document url-prefix() {.tape-anim {height: 300px;}.tape-left,.tape-right {display: block;width: 70px;height: 70px;position: relative;margin: 0 auto;padding: 0 auto;}.tape-left {top: 105px;bottom: initial;left: -36px;}.tape-right {top: 60px;bottom: initial;left: 35px;}}
 [[/module]]
 [[/code]]
 
@@ -908,11 +906,10 @@ more[[span class="blinkbar"]][][[/span]]
 * This gets placed wherever you want the box to appear.
 * When you want to add new "records", add new "options" like the following format.
  * @@[[span class="record r3"]]Text[[/span]]@@ _
-@@[[span class="record r4"]]//More text//[[/span]]@@ _
-@@[[span class="record r4 line2"]]//More//[[/span]]@@
+@@[[span class="record r4"]]//More text//[[/span]]@@
 [[code]]
 [[div class="tape-wrap"]]
-[[collapsible show="▶PLAY" hide="RELOAD"]]
+[[collapsible show="PLAY" hide="RELOAD"]]
 [[div class="tape-anim"]]
 [[div class="tape-left"]]
 [[/div]]
@@ -921,11 +918,11 @@ more[[span class="blinkbar"]][][[/span]]
 [[/div]]
 
 [[div class="tape-record"]]
-[[span class="record r1"]]//the first line//[[/span]]
-[[span class="record r1 line2"]]//the second line//[[/span]]
-[[span class="record r1 line3"]]//the final line//[[/span]]
-[[span class="record r2"]]//TEXT//[[/span]]
-[[span class="record r2 line2"]]//MORE TEXT//[[/span]]
+[[span class="record r1"]]//the first line//
+//the second line//
+//the final line//
+//TEXT//
+//MORE TEXT//[[/span]]
 
 [[/div]]
 [[/collapsible]]
