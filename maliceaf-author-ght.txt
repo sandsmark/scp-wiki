@@ -387,9 +387,12 @@ This table format was stolen directly from Tufto, who stole it from Mortos. The 
 
 +++ NON-LISTPAGED COLLABS:
 
-||~ Item #/Title ||~ Collaborated with ||~ Approximate rating ||
-|| [[[SCP-4029]]] || [[*user DarkStuff]] || 70 ||
-|| [[[SCP-4411]]] || [[*user Dog Teeth]] || 50 ||
+[[module ListPages title="SCP-4029" separate="no" perPage="1" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Created with||"]]
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_by%% ||
+[[/module]]
+[[module ListPages title="SCP-4411" separate="no" perPage="1" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Created with||"]]
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_by%% ||
+[[/module]]
 
 ------
 
