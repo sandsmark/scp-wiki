@@ -1,7 +1,12 @@
 title:SCP-3739
 parent:broken-masquerade-hub
 [[module CSS]]
-@import url(http://topia.wikidot.com/component:broken-pata/code/1);
+[[include component:pataphysics-theme]]
+
+#header h1 a::before { content: "Pataphysical Digital Archives" !important; }
+
+#header h2 span::before { content: "Archiving Apotheosis" !important; }
+
 
 a.collapsible-block-link { font-weight: bold; }
 
