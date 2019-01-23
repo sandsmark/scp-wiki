@@ -1,4 +1,32 @@
 title:djkaktus' Workbench
+[[include :kaktuskontainer:component:newscptheme]]
+[[module CSS]]
+sup { 
+vertical-align: top; position: relative; top: -0.5em; 
+}
+:root{ 
+--cutColour: #fafafa;
+--barColour: #590505;
+}
+
+.info-container .collapsible-block-folded a{
+color: #FFF;}
+.info-container .collapsible-block-unfolded-link a{
+color: #FFF;}
+#header h1 a::before {
+    content: "djkaktus";
+    color: #fff;
+    text-shadow: 3px 3px 5px #000000;
+}
+ 
+#header h2 span::before {
+    content: 'Workbench';
+    color: #fff;
+    text-shadow: 1px 1px 1px #000000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);}
+}
+[[/module]]
+
 + SCPs
 
 [[module ListPages created_by="djkaktus" order="rating desc" separate="no" tags="scp, joke" perPage="250" prependLine="||~ SCP ||~ Votes ||~ Comments ||~ Last Comment ||"]] 
