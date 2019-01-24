@@ -36,8 +36,6 @@ line-height: 1.6em;
 
 .page-rate-widget-box {
     overflow: hidden;
-    padding: 4px 0 4px 0;
-    border-radius: 5px;
     z-index: 9999;
     position: relative;
 }
@@ -51,7 +49,6 @@ line-height: 1.6em;
         margin-top: 0vh !important;
     }
     .page-rate-widget-box {
-        display: block !important;
         width: intrinsic;  
         width: -moz-max-content;    
         width: -webkit-max-content;
@@ -75,9 +72,7 @@ line-height: 1.6em;
               -1px -1px 2px #fff inset;
   border-radius: 20px/60px;  
 }
-@media (max-width: 1600px) {
-   .desktop-only{ display: none; visibility:hidden }
-}
+
 a img {
     position: relative;
     z-index: 1;
