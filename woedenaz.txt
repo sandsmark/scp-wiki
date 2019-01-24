@@ -17,6 +17,10 @@ font-family: monospace ! important;
     font-size: inherit;
 }
 
+#page-title {
+    pointer-events: none;
+}
+
 .info-container .collapsible-block-folded a{
 color: #FFF;}
 .info-container .collapsible-block-unfolded-link a{
@@ -33,7 +37,6 @@ line-height: 1.6em;
 
 .page-rate-widget-box {
     overflow: hidden;
-    z-index: 9999;
     position: relative;
 }
 
