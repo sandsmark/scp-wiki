@@ -3,10 +3,10 @@ title:SCP-2399
 |lang=en[!-- EN/RU/KO/CN/FR/PL/ES/TH/JP/DE/IT/UA/PTBR --]
 |page=SCP-2399[!-- url of your page on the scp wiki --]
 |authorPage=http://www.scp-wiki.net/djkaktus[!-- link to your author page --]
-|comments=TBD
+|comments=
 ]]
+[[include :kaktuskontainer:component:nuscp-dev]]
 [[module CSS]]
-@import url(http://kontainer.djkakt.us/component:newscptheme/code/1);
 sup { 
 vertical-align: top; position: relative; top: -0.5em; 
 }
@@ -19,7 +19,12 @@ vertical-align: top; position: relative; top: -0.5em;
 color: #FFF;}
 .info-container .collapsible-block-unfolded-link a{
 color: #FFF;}
+
+.translation_block{
+display:none;}
 [[/module]]
+@@@@
+@@@@
 [[>]]
 [[module Rate]]
 [[/>]]
