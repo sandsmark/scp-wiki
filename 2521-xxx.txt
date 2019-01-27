@@ -1,0 +1,51 @@
+title:●●|●●●●●|●●|●-xxx
+[[module CSS]]
+
+#page-title { 
+display: none; 
+}
+
+.meta-title {
+
+border-bottom: solid 1px #bbbbbb;
+
+color: #990011;
+
+font-weight: normal;
+
+margin: 0 0 0.6em;
+
+padding: 0 0 0.25em;
+
+font-size: 200%;
+
+}
+
+
+
+.meta-title p {
+
+margin: 0;
+
+}
+
+[[/module]]
+
+[[module ListPages category="fragment" parent="." limit="1" order="name" offset="@URL|0"]]
+[[div class="meta-title"]]
+%%title%%
+[[/div]]
+[[/module]]
+
+[[>]]
+[[module rate]]
+[[/>]]
+[[module ListPages category="fragment" parent="." limit="1" order="name" offset="@URL|0"]]
+
+%%content%%
+
+[[/module]]
+
+[!--
+http://www.scp-wiki.net/fragment:2521-xxx-1
+--]
