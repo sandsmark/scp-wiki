@@ -1,8 +1,4 @@
 title:djkaktus' Workbench
-[[module css]]
-@import url('https://nu-scptheme.github.io/Nu-SCP/styles/main.css');
-[[/module]]
-
 [[module CSS]]
 sup { 
 vertical-align: top; position: relative; top: -0.5em; 
@@ -29,7 +25,7 @@ color: #FFF;}
     text-shadow: 1px 1px 1px rgba(0,0,0,.8);}
 }
 [[/module]]
-
+[[include :kaktuskontainer:component:nuscp-dev]]
 + SCPs
 
 [[module ListPages created_by="djkaktus" order="rating desc" separate="no" tags="scp, joke" perPage="250" prependLine="||~ SCP ||~ Votes ||~ Comments ||~ Last Comment ||"]] 
