@@ -1,8 +1,8 @@
 title:SCP-3739
 parent:broken-masquerade-hub
-[[module CSS]]
-@import url(http://www.scp-wiki.net/component:pataphysics-theme/code/1);
+[[include component:pataphysics-theme]]
 
+[[module CSS]]
 #header h1 a::before { content: "Pataphysical Digital Archives" !important; }
 
 #header h2 span::before { content: "Archiving Apotheosis" !important; }
