@@ -110,15 +110,15 @@ Role/s:
   <body>
 
   <marquee behavior="scroll" scrollamount="3" direction="left" scrolldelay="60">
- | REM ▲ %%commented_by_id%%.%%size%% | <p1> XPA ▼ -%%size%%.%%comments%% </p1> | 
+   | NBY ▲ %%revisions%%%%comments%%.0 | GDP ▲ %%commented_by_id%%%%rating%%.%%size%% | <p1> XPA ▼ %%size%%.%%comments%% </p1> | 
    </marquee>
 
  <marquee behavior="scroll" scrollamount="5" direction="right" truespeed="10" >
-    | HUM ▲ 0.%%updated_by_id%% | ORC ▲ %%rating%%.%%comments%% |
+     <p1> DRW ▼ %%comments%%%%rating%%.%%revisions%% </p1>  | HUM ▲ 0.%%updated_by_id%% | ORC ▲ %%rating%%.%%comments%% |
   </marquee>
 
  <marquee behavior="scroll" scrollamount="1" direction="left" scrolldelay="60" >
-    | SCP ▲ %%total%%.%%revisions%% | <p1> ORW ▼ -%%comments%%.%%rating_votes%% </p1> |
+    | SCP ▲ %%total%%.%%revisions%% | <p1> ORW ▼ %%comments%%.%%rating_votes%% </p1> | FAC ▲ %%rating%%.%%comments%% | <p1> XKC ▼ 6.%%rating_votes%%%%total%% </p1>
   </marquee>
 
   <style>
