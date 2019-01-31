@@ -17,14 +17,15 @@ All images/videos created by [[*user Woedenaz]]
 ]]
 
 [[include :kaktuskontainer:component:nuscp-dev]]
+[[include :kaktuskontainer:component:nu-4205theme]]
 
 [[module CSS]]
 sup { 
 vertical-align: top; position: relative; top: -0.5em; 
 }
 :root{ 
---cutColour: #fafafa;
---barColour: #590505;
+--cutColour: rgb(var(--white-monochrome));
+--barColour: rgb(var(--bright-accent));
 }
 
 .info-container .collapsible-block-folded a{
@@ -42,7 +43,6 @@ line-height: 1.6em;
     padding: 4px 0 4px 0;
     border-radius: 5px;
     position: relative;
-    background-color: #590505 !important;
 }
 
 #page-content > div:nth-child(1) > div {
