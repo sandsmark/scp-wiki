@@ -102,24 +102,23 @@ Role/s:
 
 [[collapsible show="►" hide="▼"]]
 
-----
-[[div style="background-color: #47476b;"]]
+[[div style="float:right; background-color: #47476b; width=50%;"]]
 
-[[module ListPages order="random" limit="1" ]]
+[[module ListPages order="random" limit="1" tags="scp"]]
  [[html]]
   <html>
   <body>
 
   <marquee behavior="scroll" scrollamount="3" direction="left" scrolldelay="60">
-  | REM ▲ %%commented_by_id%%.%%size%% | <p1> XPA ▼ -%%size%%.%%comments%% </p1> | HUM ▲ 1.%%updated_by_id%% | ORC ▲ %%rating%%.%%comments%% | SCP ▲ %%total%%.%%revisions%% | <p1> ORW ▼ -%%comments%%.%%rating_votes%% </p1> |
+ | REM ▲ %%commented_by_id%%.%%size%% | <p1> XPA ▼ -%%size%%.%%comments%% </p1> | 
+   </marquee>
+
+ <marquee behavior="scroll" scrollamount="5" direction="right" truespeed="10" >
+    | HUM ▲ 0.%%updated_by_id%% | ORC ▲ %%rating%%.%%comments%% |
   </marquee>
 
- <marquee behavior="scroll" scrollamount="5" direction="right" truespeed="10">
-    %%commented_by_id%% | DRW ▲ %%total%%.%%comments%% | ONO ▲ %%limit%%.%%updated_by_id%% | <p1> ARS ▼ -%%rating%%.%%comments%% </p1> | SCP ▲ %%size%%.%%revisions%% | MCD ▲ %%comments%%.%%rating_votes%% |
-  </marquee>
-
- <marquee behavior="scroll" scrollamount="1" direction="left" scrolldelay="60">
-    %%commented_by_id%% | DRW ▲ %%total%%.%%comments%% | ONO ▲ %%limit%%.%%updated_by_id%% | ARS ▼ %%rating%%.%%comments%% | SCP ▲ %%size%%.%%revisions%% | MCD ▲ %%comments%%.%%rating_votes%% |
+ <marquee behavior="scroll" scrollamount="1" direction="left" scrolldelay="60" >
+    | SCP ▲ %%total%%.%%revisions%% | <p1> ORW ▼ -%%comments%%.%%rating_votes%% </p1> |
   </marquee>
 
   <style>
@@ -138,6 +137,7 @@ Role/s:
 [[/module]]
 
 [[/div]]
------
+
+test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test 
 
 [[/collapsible]]
