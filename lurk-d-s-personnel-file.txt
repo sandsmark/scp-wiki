@@ -100,6 +100,75 @@ Role/s:
 
 [[/div]]
 
+
+
+[[module CSS]]
+
+.marquee {
+  height: 30px;
+  width: 600px;
+
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee .list-pages-item {
+  display: block;
+  width: 200%;
+  height: 30px;
+
+  position: absolute;
+  overflow: hidden;
+
+  animation: marquee 10s linear infinite;
+}
+
+.marquee span {
+  float: left;
+  width: 50%;
+}
+
+.marquee p {margin: 0;}
+
+@keyframes marquee {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Firefox bug fix */
+ -webkit-transform: translateX(100%); /* Firefox bug fix */
+ transform: translateX(100%); 
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Firefox bug fix */
+ -webkit-transform: translateX(-100%); /* Firefox bug fix */
+ transform: translateX(-100%); 
+ }
+}
+
+[[/module]]
+
+[[div style="float:right; background-color: #47476b; color: white;"]]
+[[div class="marquee"]]
+[[module ListPages order="random" limit="1" tags="scp"]]
+%%created_at|%O ago (%e %b %Y, %H:%M %Z)%%
+[[/module]]
+[[/div]]
+[[/div]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 [[collapsible show="►" hide="▼"]]
 
 [[div style="float:right; background-color: #47476b; width=50%;"]]
