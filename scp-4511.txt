@@ -1,4 +1,6 @@
 title:SCP-4511
+[[include :kaktuskontainer:component:nuscp-dev]]
+
 [[include :scp.avn.sh:component:aers:info-stuff
 |lang=en[!-- EN/RU/KO/CN/FR/PL/ES/TH/JP/DE/IT/UA/PTBR --]
 |page=scp-4511[!-- url of your page on the scp wiki --]
@@ -7,7 +9,7 @@ title:SCP-4511
 http://www.scp-wiki.net/drannoyingdog <-- My author page! ~ DrAnnoyingDog
 ]]
 [[module CSS]]
-:root{ 
+:root{
 --cutColour: #fafafa;
 --barColour: #590505;
 }
@@ -25,6 +27,13 @@ color: #FFF;}
 
 table {
 margin: 0 auto;
+}
+
+#toc1 > span > span,
+#toc2 > span > span,
+#toc3 > span > span,
+#toc4 > span > span {
+    font-family: 'Special Elite', cursive  !important;
 }
 [[/module]]
 
@@ -65,7 +74,7 @@ Lead Researcher Westrin during the initial survey of Provisional Site-4511.
 
 SCP-4511's left flank contains a thin 5cm-long slit that, upon certain conditions being met, will print an index card carrying a series of instructions.
 
-**Recovery Report:** 
+**Recovery Report:**
 > The ██████████ factory was initially raided by Foundation agents embedded within the Chicago Police Department in response to reports of occult activity in the area. They encountered heavy resistance from a group of occult worshipers who had taken residence in the basement. MTF Epsilon-9 ("Fire Eaters") were dispatched to lend support to the Chicago Police Department. Of the forty-seven cultists that had previously inhabited the factory, only one survived their injuries for more than seventy-two hours. While the individual was treated for their injuries, Foundation personnel began studying SCP-4511. The following card was discovered left within SCP-4511.
 
 [[div style="background: #fff; float: center; border: solid 2px #000000; padding: 1px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
@@ -390,7 +399,7 @@ Demand
 Resources
 [[/cell]]
 [[cell style="border: 1px solid black; padding: .3em .7em;"]]
-D-023547 
+D-023547
 [[/cell]]
 [[/row]]
 [[row]]
@@ -535,7 +544,7 @@ Lead Researcher Westrin
 Procedure
 [[/cell]]
 [[cell style="border: 1px solid black; padding: .3em .7em;"]]
-Subject incapacitated using a 9mm bullet to the left thigh and moved to SCP-4511's entrance. Subject awoke midway through test and began attempting to bargain with researchers. 
+Subject incapacitated using a 9mm bullet to the left thigh and moved to SCP-4511's entrance. Subject awoke midway through test and began attempting to bargain with researchers.
 [[/cell]]
 [[/row]]
 [[row]]
@@ -584,7 +593,7 @@ Lead Researcher Westrin consumed by SCP-4511, screaming heard for approximately 
 
 **ε-1:** Three, time to earn your keep.
 
-**ε-3:** Yessir. 
+**ε-3:** Yessir.
 
 //ε-3 moves to the electrical box of the elevator and attempts to pull it open. After a few seconds of pulling, he succeeds in opening the cover. The interior of the fuse box is revealed to have been sealed to the door with a layer of waxy material.//
 
@@ -598,7 +607,7 @@ Lead Researcher Westrin consumed by SCP-4511, screaming heard for approximately 
 
 //ε-3 spends several minutes interacting with the fuse box. With a lurch, the elevator begins slowly dropping.//
 
-**ε-1:** Well done. Unless they somehow moved the thing, SCP-4511 should be somewhere on this floor. 
+**ε-1:** Well done. Unless they somehow moved the thing, SCP-4511 should be somewhere on this floor.
 
 **Command:** Weapons free, though we'd prefer if at least a couple were brought in alive.
 
@@ -616,13 +625,13 @@ Lead Researcher Westrin consumed by SCP-4511, screaming heard for approximately 
 
 **ε-1:** Flashlights on, they're creeping about here somewhere.
 
-//Team advances onto the catwalk and continue in silence for 2 minutes, until ε-2 pauses.// 
+//Team advances onto the catwalk and continue in silence for 2 minutes, until ε-2 pauses.//
 
 **ε-2:** Jesus fuck Three, did you piss yourself?
 
 **ε-3:** What? No!
 
-**ε-1:** We're walking in it. 
+**ε-1:** We're walking in it.
 
 //ε-1 gestures to the catwalk floor, and the shallow puddle of yellow liquid covering it.//
 
@@ -674,7 +683,7 @@ Lead Researcher Westrin consumed by SCP-4511, screaming heard for approximately 
 
 //The team return down the stairwell, reaching the bottom and spreading out. The floor is largely covered in various furnaces.//
 
-**ε-2:** There's something up ahead. 
+**ε-2:** There's something up ahead.
 
 //The entrance to SCP-4511 is visible at the end of the room. A large pile sits next to it. Upon closer view, the pile is comprised of several white-coated bodies, all suffering from extreme exsanguination. A figure sits on the floor next to the pile.//
 
@@ -698,7 +707,7 @@ Lead Researcher Westrin consumed by SCP-4511, screaming heard for approximately 
 
 //ε-2 terminates the individual with a single shot to the head. A rumbling sounds emanates from SCP-4511. ε-3 advances and inspects what the individual was holding: A small clump of bloody flesh and a scrap of paper.//
 
-**ε-3:** "Meat from those who seek to do in my faithful." 
+**ε-3:** "Meat from those who seek to do in my faithful."
 
 //ε-3 picks up the piece of flesh, and throws it into SCP-4511. The flames roar.//
 
@@ -716,7 +725,7 @@ Lead Researcher Westrin consumed by SCP-4511, screaming heard for approximately 
 
 //ε-2 shakes his head.//
 
-**ε-2:** Nothing. 
+**ε-2:** Nothing.
 
 **ε-3:** Christ. One, what do we do?
 
@@ -731,7 +740,7 @@ Lead Researcher Westrin consumed by SCP-4511, screaming heard for approximately 
 [[/div]]
 @@ @@
 
-**Document 4511.1:** 
+**Document 4511.1:**
 > Due to unforeseen circumstances, the current containment and research team for SCP-4511 are no longer in a position to do their duties. Until further notice, I will be removing myself from the Regional Director position in order to take the position of Lead Researcher on the SCP-4511 project. This anomaly is more dangerous than we originally gave it credit for, and it led to the deaths of twenty-four people. I refuse to let that happen again.
 > [[>]]
 > Regards,
