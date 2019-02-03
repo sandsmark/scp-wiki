@@ -1,223 +1,4 @@
 title:The Rounderpage
-[[module css]]
-@import url('https://fonts.googleapis.com/css?family=Righteous');
-@import url('https://fonts.googleapis.com/css?family=Staatliches');
-[[/module]]
-
-[[module css]]
-#header{
-    background: url(null)
-}
-#header:before{
-display:block;
-position: absolute;
-width: 100px;
-height: 100px;
-top: 22%;
-left:2%;
-z-index: -1;
-content: "";
-background:url(http://firedawnfolder.wikidot.com/local--files/yurt-11/house2.png);
-background-repeat: no-repeat;
-background-size:100px 100px;
-background-position: 0px 0px;
-z-index: 201;
-  animation: spinny1 7s infinite linear;
-
-}
-
-@keyframes spinny1{
-    	from {
-    	-webkit-transform: rotate(0deg);
-    	         webkit-transform: rotate(0deg);
-    	}
-    	to {
-    	-webkit-transform: rotate(359deg);
-    	transform: rotate(359deg);
-    	}
-}
-
-#header h1 a {
-    font-size: 150%;
-    color: transparent;
-    text-shadow: none;
-}
-
-#header h1 a::before {
-    content: "the rounderpage™";
-    color: #000000;
-    text-shadow: none;
-    font-family: 'Staatliches', cursive;
-}
-
-#header h2 span {
-    font-size: 100%;
-    color: transparent;
-    text-shadow: none;
-}
-#header h2 span::before {
-    content: "its rounder all the way downder";
-    color: #000000;
-    text-shadow: none;
-    font-family: 'Staatliches', cursive;
-}
-
-div#container-wrap::before {
-    content: "";
-    display: block;
-    height: 140px;
-    width: 100%;
-    position: absolute;
-    
-    background: url("http://scp-wiki.net/local--files/rounderhouse-s-author-page/header3.png");
-}
-
-#footer
-    background: url("http://scp-wiki.net/local--files/rounderhouse-s-author-page/header3.png");
-}
-
-#login-status a {
-    color: rgb(0, 0, 0);
-    background: transparent;
-}
-[[/module]]
-
-[[module CSS]]
-/* inputs */
-#top-bar ul li.sfhover ul li a,
-#top-bar ul li:hover ul li a {
-    border-top: 1px solid #000000;
-}
- 
-#top-bar ul li.sfhover a,
-#top-bar ul li:hover a {
-    background:url(http://www.scp-wiki.net/local--files/rounderhouse-s-author-page/12.PNG);
-    color: #000000;
-}
-#top-bar ul li ul a, #top-bar a:hover {
-    color: #8db600;
-}
-#top-bar ul li.sfhover a:hover,
-#top-bar ul li:hover a:hover {
-    background: #282e48; /* top bar hover background color */
-}
-
-
-#login-status {
-    color: #000000;
-    font-size: 90%;
-    z-index: 30;
-}
-#login-status a {
-    background: transparent;
-    color: #000000;
-}
-#login-status ul a {
-    color: #000000;
-    background: transparent;
-}
- 
-#account-topbutton {
-    background: #ddd;
-    color: #000000;
-}
-
-.page-rate-widget-box .rate-points {
-    background-color: #282e48 !important;
-    border: solid 1px #D4AF37;
-    border-right: 0;
-    border-radius: 10px 0 0 10px;
-}
- 
-.page-rate-widget-box .rateup,
-.page-rate-widget-box .ratedown {
-    background-color: #282e48;
-    border-top: solid 1px #D4AF37;
-    border-bottom: solid 1px #D4AF37;
-    font-weight: bold;
-}
- 
-.page-rate-widget-box .rateup a,
-.page-rate-widget-box .ratedown a {
-    background: transparent;
-    color: #D4AF37;
-    padding: 0 4px;
-    margin: 0 1px;
- 
-}
- 
-.page-rate-widget-box .rateup a:hover,
-.page-rate-widget-box .ratedown a:hover {
-    background: #D4AF37;
-    color: #000000;
-    text-decoration: none;
-}
- 
-.page-rate-widget-box .cancel {
-    background-color: #282e48;
-    border: solid 1px #D4AF37;
-    border-left: 0;
-    border-radius: 0 10px 10px 0;
-}
- 
-.page-rate-widget-box .cancel a {
-    background: transparent;
-    text-transform: uppercase;
-    color: #D4AF37;
-}
- 
-.page-rate-widget-box .cancel a:hover {
-    border-radius: 0 6px 6px 0;
-    background: #D4AF37;
-    color: #000000;
-    text-decoration: none;
-}
-
-#side-bar .side-block {
-    padding: 10px;
-    border: 1px solid #444;
-    border-radius: 10px;
-    box-shadow: none !important;
-    background:url(https://upload.wikimedia.org/wikipedia/commons/a/ab/Radial_engine.gif);
-    margin-bottom: 15px;
-    color: white;
-}
-
-#side-bar div.menu-item a {
-    color: #fff;
-}
-
-#search-top-box-input, #search-top-box-input:hover, #search-top-box-input:focus {
-    background-color: #11131f;
-}
-#search-top-box-form input[type=submit] {
-    background: linear-gradient(to bottom, #3b4265, #3b4265, #0d0f19);
-}
-
-#search-top-box-form input[type=submit]:hover,
-#search-top-box-form input[type=submit]:focus {
-    background: linear-gradient(to bottom, #3b4265, #57608a, #252a40);
-}
- 
-#page-content .scp-image-block {
-    border: solid 8px;
-    border-color: #D4AF37;
-    box-shadow: none;
-}
-#page-content .scp-image-block .scp-image-caption {
-    border-color: rgba(0,0,0,0.12);
-    background-color: #8B4513;
-}
-[[/module]]
-
-
-[[module css]]
-.list-pages-box a {
-    color: white !important;
-    text-decoration: underline;
-}
-[[/module]]
-
 [[div id="myTextMessageConvoHolder" style="display:inline-block; width:100%;"]]
 [[div id="myTextMessageConvoDiv" style="color:white; border-radius: 25px; background: #73AD21;padding: 15px;width: 180px; height: 55px;float:left;"]]
 yo theres this new author on the wiki
@@ -520,3 +301,221 @@ Life happens. If I don't show any activity for a period of 1 year, I ask that an
 [[/collapsible]]
 [[/=]]
 -----
+[[module css]]
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+[[/module]]
+
+[[module css]]
+#header{
+    background: url(null)
+}
+#header:before{
+display:block;
+position: absolute;
+width: 100px;
+height: 100px;
+top: 22%;
+left:2%;
+z-index: -1;
+content: "";
+background:url(http://firedawnfolder.wikidot.com/local--files/yurt-11/house2.png);
+background-repeat: no-repeat;
+background-size:100px 100px;
+background-position: 0px 0px;
+z-index: 201;
+  animation: spinny1 7s infinite linear;
+
+}
+
+@keyframes spinny1{
+    	from {
+    	-webkit-transform: rotate(0deg);
+    	         webkit-transform: rotate(0deg);
+    	}
+    	to {
+    	-webkit-transform: rotate(359deg);
+    	transform: rotate(359deg);
+    	}
+}
+
+#header h1 a {
+    font-size: 150%;
+    color: transparent;
+    text-shadow: none;
+}
+
+#header h1 a::before {
+    content: "the rounderpage™";
+    color: #000000;
+    text-shadow: none;
+    font-family: 'Staatliches', cursive;
+}
+
+#header h2 span {
+    font-size: 100%;
+    color: transparent;
+    text-shadow: none;
+}
+#header h2 span::before {
+    content: "its rounder all the way downder";
+    color: #000000;
+    text-shadow: none;
+    font-family: 'Staatliches', cursive;
+}
+
+div#container-wrap::before {
+    content: "";
+    display: block;
+    height: 140px;
+    width: 100%;
+    position: absolute;
+    
+    background: url("http://scp-wiki.net/local--files/rounderhouse-s-author-page/header3.png");
+}
+
+#footer
+    background: url("http://scp-wiki.net/local--files/rounderhouse-s-author-page/header3.png");
+}
+
+#login-status a {
+    color: rgb(0, 0, 0);
+    background: transparent;
+}
+[[/module]]
+
+[[module CSS]]
+/* inputs */
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+    border-top: 1px solid #000000;
+}
+ 
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    background:url(http://www.scp-wiki.net/local--files/rounderhouse-s-author-page/12.PNG);
+    color: #000000;
+}
+#top-bar ul li ul a, #top-bar a:hover {
+    color: #8db600;
+}
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: #282e48; /* top bar hover background color */
+}
+
+
+#login-status {
+    color: #000000;
+    font-size: 90%;
+    z-index: 30;
+}
+#login-status a {
+    background: transparent;
+    color: #000000;
+}
+#login-status ul a {
+    color: #000000;
+    background: transparent;
+}
+ 
+#account-topbutton {
+    background: #ddd;
+    color: #000000;
+}
+
+.page-rate-widget-box .rate-points {
+    background-color: #282e48 !important;
+    border: solid 1px #D4AF37;
+    border-right: 0;
+    border-radius: 10px 0 0 10px;
+}
+ 
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background-color: #282e48;
+    border-top: solid 1px #D4AF37;
+    border-bottom: solid 1px #D4AF37;
+    font-weight: bold;
+}
+ 
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    background: transparent;
+    color: #D4AF37;
+    padding: 0 4px;
+    margin: 0 1px;
+ 
+}
+ 
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background: #D4AF37;
+    color: #000000;
+    text-decoration: none;
+}
+ 
+.page-rate-widget-box .cancel {
+    background-color: #282e48;
+    border: solid 1px #D4AF37;
+    border-left: 0;
+    border-radius: 0 10px 10px 0;
+}
+ 
+.page-rate-widget-box .cancel a {
+    background: transparent;
+    text-transform: uppercase;
+    color: #D4AF37;
+}
+ 
+.page-rate-widget-box .cancel a:hover {
+    border-radius: 0 6px 6px 0;
+    background: #D4AF37;
+    color: #000000;
+    text-decoration: none;
+}
+
+#side-bar .side-block {
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    box-shadow: none !important;
+    background:url(https://upload.wikimedia.org/wikipedia/commons/a/ab/Radial_engine.gif);
+    margin-bottom: 15px;
+    color: white;
+}
+
+#side-bar div.menu-item a {
+    color: #fff;
+}
+
+#search-top-box-input, #search-top-box-input:hover, #search-top-box-input:focus {
+    background-color: #11131f;
+}
+#search-top-box-form input[type=submit] {
+    background: linear-gradient(to bottom, #3b4265, #3b4265, #0d0f19);
+}
+
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    background: linear-gradient(to bottom, #3b4265, #57608a, #252a40);
+}
+ 
+#page-content .scp-image-block {
+    border: solid 8px;
+    border-color: #D4AF37;
+    box-shadow: none;
+}
+#page-content .scp-image-block .scp-image-caption {
+    border-color: rgba(0,0,0,0.12);
+    background-color: #8B4513;
+}
+[[/module]]
+
+
+[[module css]]
+.list-pages-box a {
+    color: white !important;
+    text-decoration: underline;
+}
+[[/module]]
