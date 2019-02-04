@@ -1,7 +1,10 @@
 title:SPC-507
 [[module CSS]]
-
 @import url(http://www.scp-wiki.net/component:spc-theme/code/1);
+
+#header h1 a::before { content: "The Centre" !important; }
+
+#header h2 span::before { content: "Search, Punch, Conquer" !important; }
 
 [[/module]]
 [[>]]
