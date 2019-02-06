@@ -1,40 +1,91 @@
 title:plaguebearer's simple author page
+[[module css]]
+#header{
+    background: url(null)
+}
+#header:before{
+display:block;
+position: absolute;
+width: 100px;
+height: 100px;
+top: 22%;
+left:2%;
+z-index: -1;
+content: "";
+background:url(http://scp-sandbox-3.wdfiles.com/local--files/westrin-s-new-image-farm/Politics%20babeeee.jpg);
+background-repeat: no-repeat;
+background-size:100px 100px;
+background-position: 0px 0px;
+z-index: 201;
+  animation: spinny1 7s infinite linear;
+
+}
+
+@keyframes spinny1{
+    	from {
+    	-webkit-transform: rotate(0deg);
+    	         webkit-transform: rotate(0deg);
+    	}
+    	to {
+    	-webkit-transform: rotate(359deg);
+    	transform: rotate(359deg);
+    	}
+}
+
+#header h1 a {
+    font-size: 150%;
+    color: transparent;
+    text-shadow: none;
+}
+
+#header h1 a::before {
+    content: "the non-rounderpage™";
+    color: #000000;
+    text-shadow: 3px 3px 5px #000000;
+}
+
+#header h2 span {
+    font-size: 100%;
+    color: transparent;
+    text-shadow: none;
+}
+#header h2 span::before {
+    content: "making your own code is for PUSSIES";
+    color: #000000;
+    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+}
+
+div#container-wrap::before {
+    content: "";
+    display: block;
+    height: 140px;
+    width: 100%;
+    position: absolute;
+    
+    background: url("https://cdn.discordapp.com/attachments/316354378640654336/522075317792407563/new_wosas_killagent.png");
+}
+
+#footer
+    background: url("https://cdn.discordapp.com/attachments/316354378640654336/522075317792407563/new_wosas_killagent.png");
+}
+
+#login-status a {
+    color: rgb(0, 0, 0);
+    background: transparent;
+}
+[[/module]]
+
 [[>]]
 [[module Rate]]
 [[/>]]
-
-[[module CSS]]
-#header {
-    background-image: url(http://scp-wiki.wdfiles.com/local--files/plaguebearer-s-simple-page/SCP%20logo%20but%20patuhatautgiuath)
-}
-
-#footer {
-    font-size: x-small;
-    background: #ffafc7;
-    color: black;
-}
-
-#footer a {
-    color: #e51f47;
-}
-
-#license-area {
-    font-size: x-small;
-    background: #5bcefa;
-    color: black;
-}
-
-#license-area a {
-    color: #056c94;
-}
-[[/module]]
 
 [[include component:image-block
     name=http://kaktuskontainer.wdfiles.com/local--files/plague-author-2/pl|
     caption=pictured: me|
     width=250px
 ]]
-made this here with all the ice on in the booth
+they call me DJ Khaled bc i collab with everyone and don't do any work
 ----
 [[[SCP-309-J | The Popular One]]]
 not much to say about this (except if you can stop talking about it that would be great)
@@ -56,23 +107,13 @@ this was fun to write and hopefully it's interesting enough to get some votes
 god i love this hats off to meserach
 **Reference:** don’t know don’t care
 
-[[[SCP-4991| The 4chan One]]]
+[[[SCP-4898| The 4chan One]]]
 i did all the inspect element, westrin did the cool stuff like writing and all that
 **Reference:** Most of the names on reddit, also Anxiety[[[SCP-2721|2721]]] with that homestuck pfp
 
 [[[plaguebearer's simple page | The This One]]]
 oh
 **Reference:** the page is a reference to the fact that i have written 6 articles
-
-
-----
-
-**NOTE:**
-in the event that i dissapear or die,
-
-don't worry about my drafts. you have bigger problems.
-
-----
 
 @@ @@
 
