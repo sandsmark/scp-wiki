@@ -7,6 +7,12 @@ vertical-align: top; position: relative; top: -0.5em;
 @media (max-width: 1635px) {
    .desktop-only{ display: none; visibility:hidden }
 }
+.CS-title {
+    font-family: 'alpha_echoregular';
+}
+#page-content .collapsible-block .collapsible-block-link {
+    font-size: 2em;
+}
 [[/module]]
 [[div class="desktop-only" style="height: auto; width: auto; overflow-y:auto; background:#ffffff ; position: fixed; left: 80%; TOP: 190px; display: inline-block; border-radius: 10px; border:solid 1px #444444; float:none; padding:10px; box-shadow: 1px 2px 3px 0px #23334c;"]]
 [[=]]
@@ -83,6 +89,9 @@ Waiting for a reply from a critter? Why not take a look at this super helpful co
 @@   @@ εїз [[[scp-style-resource|Style Resource]]] 
 
 -----
+[[=]]
+[[collapsible show="Click to display A-M" hide="- Close"]]
+[[/=]]
 [[div style="display: inline-block; border-radius: 10px; border:dashed 1px #444444; background:#F5F5F5; float:top; width:96.5%; padding:10px"]]
 [[=]]
 [[*user A Random Day]]  ~  **Callsign:** //Brown Recluse//
@@ -255,6 +264,10 @@ Waiting for a reply from a critter? Why not take a look at this super helpful co
 **Likes:** Anything related to history, mythology, or exploration.
 [[/=]]
 [[/div]]
+[[/collapsible]]
+[[=]]
+[[collapsible show="Click to display N-Z" hide="- Close"]]
+
 -----
 [[# Add14]] 
 @@ @@
@@ -481,7 +494,7 @@ Waiting for a reply from a critter? Why not take a look at this super helpful co
 -----
 [[# Add26]]
 [[div style="display: inline-block; border-radius: 10px; border:dashed 1px #444444; background:#F5F5F5; float:top; width:96.5%; padding:10px"]]
-[[=]]
+
 [[*user Zyn]]  ~  **Callsign:** //Queen Alexandra’s Birdwing//
 @@ @@
 [[image QueenAlexBirdwing.jpg style="width:20%;"]]
@@ -492,5 +505,7 @@ Waiting for a reply from a critter? Why not take a look at this super helpful co
 **Will Crit:** ##green|Any type of draft, within reason. No drafts over 4000 words, please.##
 **Strengths:** Clinical tone, unusual containment procedures, emotional articles, narrative and backstory
 **Likes:** Short snappy articles, fantasy-genre anomalies, heartwarming-not-horror
-[[/=]]
+
 [[/div]]
+[[/collapsible]]
+[[/=]]
