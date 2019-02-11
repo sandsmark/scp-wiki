@@ -636,7 +636,7 @@ oh no you found the secrit testing place
 
 ------
 
-[[module ListPages order="created_at" rating="<20" category="*" tags="scp" separate="false" limit="200" perpage="30" prependLine="||~ Title||~ Rating||~ Author||~ Written On||"]]
+[[module ListPages order="created_at" rating="<20" category="*" tags="scp -archived" separate="false" limit="200" perpage="30" prependLine="||~ Title||~ Rating||~ Author||~ Written On||"]]
 || [[a target="_blank" href="%%link%%"]]%%title%%[[/a]] || %%rating%% || %%created_by_linked%% || %%created_at%% ||
 [[/module]]
 
