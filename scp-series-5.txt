@@ -332,7 +332,7 @@ title:SCP Series 5
 * [[[SCP-4284]]] - [ACCESS DENIED]
 * [[[SCP-4285]]] - [ACCESS DENIED]
 * [[[SCP-4286]]] - [ACCESS DENIED]
-* [[[SCP-4287]]] - [[span style="font-family:Monotype Corsiva"]][[size 17px]]##a40|P. Pigeon, Esq.##[[/size]][[/span]]
+* [[[SCP-4287]]] - [[span class="pigeon"]]**P. Pigeon, Esq.**[[/span]]
 * [[[SCP-4288]]] - [ACCESS DENIED]
 * [[[SCP-4289]]] - [ACCESS DENIED]
 * [[[SCP-4290]]] - [ACCESS DENIED]
@@ -1101,6 +1101,13 @@ Below, you can find recreations of each Series list which include all on-site wo
 [[/div]]
 
 [[module CSS]]
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+.pigeon {
+  font-family: 'Dancing Script', cursive;
+  color: #a40;
+}
+
 .taboo a{
     color: green;
     font-style: bold;
