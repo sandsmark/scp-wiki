@@ -75,19 +75,33 @@ Subject declared "total nerd" by O5 Command.
 [[/=]]
 **PoI-1223 has accessed the Foundation database and created the following file(s):**
 
-[[module ListPages created_by="ashburystreet" separate="no" perPage="250" order="rating desc" tags="+scp -co-authored" prependLine="||||~ SCPs||"]] 
-|| %%title_linked%% || Rating: %%Rating%% ||
+(This table format was stolen directly from MaliceAforethought, who stole it from Tufto, who stole it from Mortos.)
+
+------
+
++++ SCPs:
+
+[[module ListPages created_by="ashburystreet" order="created_at" separate="no" tags="scp" perPage="250" prependLine="||~ Item # ||~ Rating ||~ Comments ||~ Created ||"]]
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
 [[/module]]
 
-[[module ListPages created_by="ashburystreet" separate="no" perPage="250" order="rating desc" tags="+tale -co-authored" prependLine="||||~ Tales||"]] 
-|| %%title_linked%% || Rating: %%Rating%% ||
+------
+
++++ Tales:
+
+[[module ListPages created_by="ashburystreet" order="created_at" separate="no" tags="tale -hub" perPage="250" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Created ||"]]
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
 [[/module]]
 
-[[module ListPages created_by="ashburystreet" separate="no" perPage="250" order="rating desc" tags="+site -co-authored" prependLine="||||~ Other||"]] 
-|| %%title_linked%% || Rating: %%Rating%% ||
+------
+
++++ Other:
+
+[[module ListPages created_by="ashburystreet" order="created_at" separate="no" tags="hub essay artwork author supplement site" perPage="250" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Created ||"]]
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
 [[/module]]
 
-----
+------
 
 > Anyway a note here: Feel free to contact me about anything any time! I'll be updating this page soon
 
