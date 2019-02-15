@@ -118,40 +118,6 @@ Original artwork by [http://daily-scp.tumblr.com Gbroxey]
 [[include :snippets:mp3 |URL=http://scpsandbox2.wdfiles.com/local--files/randomini/supply-and-demand.mp3]]
 [[/collapsible]]
 
-----
-
-[[collapsible show="+ Current ratings" hide="- Current ratings"]]
-
-+++ SCP articles (Wikidot author == Crayne)
-
-[[module ListPages created_by="=" tags="+scp" separate="no" order="rating desc" perPage="50" prependLine="||~ Title||~ Rating||"]]
-||%%title_linked%% || %%rating%% ||
-[[/module]]
-
-+++ SCP articles (Wikidot author != Crayne or co-authored)
-[[module ListPages name="scp-366" separate="no"  prependLine="||~ Title||~ Rating||"]]
-||%%title_linked%%||%%rating%%||
-[[/module]]
-
-[[module ListPages name="scp-2314" separate="no" prependLine="||~ Title||~ Rating||"]]
-||%%title_linked%%||%%rating%%||
-[[/module]]
-
-+++ Tales:
-[[module ListPages created_by="=" tags="+tale" separate="no" order="rating desc" perPage="50" prependLine="||~ Title||~ Rating||"]]
-||%%title_linked%%||%%rating%%||
-[[/module]]
-
-+++ GoI-Formats:
-[[module ListPages created_by="=" tags="+goi-format" separate="no" order="rating desc" perPage="50" prependLine="||~ Title||~ Rating||"]]
-||%%title_linked%%||%%rating%%||
-[[/module]]
-
-+++ Other pages:
-[[module ListPages created_by="=" tags="-scp -tale -artwork -goi-format" separate="no" order="rating desc" perPage="50" prependLine="||~ Title||~ Rating||"]]
-||%%title_linked%%||%%rating%%||
-[[/module]]
-
 +++ Ignore:
 [[div id="metadata"]]
 [[module ListPages created_by="=" separate="no" perPage="500"]]
@@ -164,4 +130,3 @@ Original artwork by [http://daily-scp.tumblr.com Gbroxey]
 %%name%%;%%comments%%;%%revisions%%;%%rating%%|
 [[/module]]
 [[/div]]
-[[/collapsible]]
