@@ -679,3 +679,105 @@ Do something no one has ever done before. That's the best way to wield this powe
 If you have any leftover questions, please, ask them in the discussion, and I'll make sure that they're answered.
 
 Thank you for tuning in.
+
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+-----
++ 5: QUICK AND DIRTY
+-----
+@@ @@
+
+Now that Croque has provided the necessary technical explanation, I'll be doing my appeal to you, dear reader. The person like me, who is either unwilling to read all that above, or learn better through example. This is going to be a quick and dirty guide on how to set up the LPT for an article you need. However, if you mess something up, you //will// need the know-how that Ccroque has explained above to fix it. I strongly recommend you at least try to read everything above before resorting to this. I'm going to use the placeholder article SCP-9000 for this. If you see "scp-9000", switch it out for the number of your article.
+
+@@ @@
+-----
+++ 5.1: FRAGMENT TIME
+-----
+@@ @@
+
+First things first, decide how many pages you want in your listpage article. Let's say you want three. You're gonna make three pages using the generic page creator, all in the fragment category. **IMPORTANT: MAKE YOUR PAGES IN THE ORDER YOU WANT THEM TO BE DISPLAYED.** So your three pages would be "fragment:scp-9000-1", "fragment:scp-9000-2", and "fragment:scp-9000-3". The first wold have the writing on it that you want to be the first iteration, the second the writing for the second, and so on. Obviously you don't have to name them that, but it's simple and allows for little miscommunication. **ANOTHER NOTE: DO NOT PUT RATING MODULES ON THESE PAGES.** That would defeat the point of having them as listpages.
+
+@@ @@
+-----
+++ 5.2: PARENTS ARE HOME
+-----
+@@ @@
+
+Next, you gotta make a parent page. Since we're doing SCP-9000, we'd go to the appropriate slot in the mainlist and create the page. In it, we would put this: 
+
+[[code]]
+
+[[/code]]
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[module ListPages  category="fragment" parent="." limit="1" order="created_at" offset="@URL|0"]]
+%%content%%
+[[/module]]
+
+[!-- http://www.scp-wiki.net/fragment:scp-9000-1 --]
+[!-- http://www.scp-wiki.net/fragment:scp-9000-2 --]
+[!-- http://www.scp-wiki.net/fragment:scp-9000-3 --]
+[[/code]] 
+
+Those bits that are between [!-- ] are comments. They won't show up on the page or be counted in any code. They're mostly there for convenience of editing, as well as for translators. 
+
+@@ @@
+-----
+++ 5.3: PARENTING 101
+-----
+@@ @@
+
+Okay, now go back to your fragment pages. You're going to have to set their parent to your main page. An image speaks louder than a thousand words.
+
+[[=image parenting1.png]]
+----
+[[=image parenting2.png]]
+
+Do that for all of your fragment pages, obviously switching out "scp-9000" for your respective article.
+
+@@ @@
+-----
+++ 5.4: MOVEMENT
+-----
+@@ @@
+
+Okay. Obviously, you're going to want to include the option on your pages to go to other pages. For that, you can't just hyperlink normally. Since my article would open out on the contents of "fragment:scp-9000-1", I'll need to include a way to get to "fragment:scp-9000-2". To do that, I'd probably edit "fragment:scp-9000-1" to include something like this at the bottom:
+
+[[code]]
+[[>]]
+[[[http://www.scp-wiki.net/scp-9000/offset/1|NEXT ITERATION]]]
+[[/>]]
+[[/code]]
+
+the "offset/1" would actually lead to a page with the contents of "fragment:scp-9000-2" displayed on it. You'd also want to do this to the "fragment:scp-9000-2" page, with the added caveat of a link leading backwards.
+
+[[code]]
+[[<]]
+[[[http://www.scp-wiki.net/scp-9000|PREVIOUS ITERATION]]]
+[[/<]]
+
+[[>]]
+[[[http://www.scp-wiki.net/offset/2|NEXT ITERATION]]]
+[[/>]]
+[[/code]]
+
+You'd do the same for "fragment:scp-9000-3".
+
+@@ @@
+-----
+++ 5.5: HERE'S TO HOPING
+-----
+@@ @@
+
+Assuming you followed all the instruction correctly, that should work. When you go to the scp-9000 page, it should result in you seeing the contents of fragment:scp-9000-1 displayed onto the page, with a link leading to offset/2, which proudly displays the contents of fragment:scp-9000-2, and so on and so forth. They should share the same rating module, which is really the whole point of this. Feel free to PM me if you have any questions or concerns.
