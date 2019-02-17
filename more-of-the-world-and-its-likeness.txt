@@ -4,6 +4,14 @@ title:More of the World and its Likeness
 [[/>]]
 
 [[module CSS]]
+.containercontainer {position: relative;width: auto;height: auto;border: 2px solid #666;background: #141212;color: #3F3;margin-top: 1em;margin-bottom: 1em;}.containercontainer .container .overlay {background: rgba(51, 255, 51, 0.9);color: #121010;position: absolute;width: auto;height: 50px;top: 0;right: 0;bottom: 0;left: 0;margin: auto;line-height: 50px;display: inline;vertical-align: middle;text-align: center;font-family: Courier New;font-size: 30px;letter-spacing: 5px;font-weight: bolder;z-index: 3;animation: overlay-anim 10s linear;animation-fill-mode: forwards;animation-iteration-count: infinite;}.overlayback {background: rgba(187, 187, 187, 0.5);z-index: 3;position: absolute;top: 0;left: 0;bottom: 0;right: 0;width: auto;height: auto;animation: overlay-anim 10s linear;animation-fill-mode: forwards;animation-iteration-count: infinite;}.containercontainer .container {text-align: center;width: inherit;height: inherit;position: relative;overflow: hidden;}.containercontainer .container::after {content: " ";display: block;position: absolute;top: 0;left: 0;bottom: 0;right: 0;background: rgba(21, 19, 19, 0.2);opacity: 0;z-index: 2;animation: flicker 0.15s infinite;}.containercontainer .container::before {content: " ";display: block;position: absolute;top: 0;left: 0;bottom: 0;right: 0;background: linear-gradient(rgba(18, 16, 16, 0.03) 50%, rgba(0, 0, 0, 0.45) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.22), rgba(0, 255, 0, 0.11), rgba(0, 0, 255, 0.22));z-index: 2;background-size: 100% 2px, 3px 100%;}.no-unfold {text-align: center;}.container h1,.container h2,.container h3,.container h5,.container h6 {color: #3F3;}.container hr {border-top: 1px dotted #3F3;border-bottom: none;}.container hr {border-top: 1px solid #3F3;border-bottom: 1px solid #3F3;color: transparent;background-color: transparent;}.container hr:after {display: block;margin-top: 2px;border-top: 1px solid #3F3;border-bottom: 1px solid #3F3;}.blinkbar {animation: blink 1.5s infinite; letter-spacing: -0.13em;}@keyframes blink{to{opacity: .0;}}@keyframes flicker {0% {opacity: 0.9890; }5% {opacity: 0.5842; }10% {opacity: 0.9865; }15% {opacity: 0.0412; }20% {opacity: 0.6255; }25% {opacity: 0.3157; }30% {opacity: 0.7328; }35% {opacity: 0.4654; }40% {opacity: 0.9128; }45% {opacity: 0.2449; }50% {opacity: 0.5485; }55% {opacity: 0.6438; }60% {opacity: 0.1180; }65% {opacity: 0.9085; }70% {opacity: 0.0266; }75% {opacity: 0.6795; }80% {opacity: 0.7812; }85% {opacity: 0.0117; }90% {opacity: 0.2239; }95% {opacity: 0.8897; }100% {opacity: 0.2260; }}@keyframes overlay-anim {0% {visibility: hidden; }10% {visibility: hidden; }11% {visibility: visible; }50% {visibility: hidden; }100% {visibility: hidden; }}
+[[/module]]
+
+[[module css]]
+@import url(http://scp-sandbox-3.wikidot.com/local--code/component:todaysdate/7);
+[[/module]]
+
+[[module CSS]]
 div.terminal{
     border: 1px solid black;
     border: solid 3px #BBBBBB;
@@ -92,12 +100,70 @@ content: "> ";
 @@------@@
 Welcome, Overseer.
 @@------@@
-[[/=]]
-@@ @@
 @@ @@
 @@ @@
 The following links are currently {{RESTRICTED}}. Any attempt to open them without proper clearance will result in severe disciplinary measures.
 @@ @@
+[[collapsible show="Subject Information" hide="Close"]]
+[[a href="*http://scp-int.wikidot.com/niveaux-de-menace-des-objets-scp" style="font-size: 18px; color: white; text-shadow: 1px 3px 1px rgba(0,0,0,0.3); text-decoration: none;"]]
+[[span_ style="display: inline-block; width: 100%; background-color: red; text-align: center; border: 1px none #000; margin: 1px; padding-top: 8px; padding-bottom: 8px;"]]
+**Threat Level:** Red
+[[/span]]
+[[/a]]
+[[div style="display: inline-block; border:dashed 1px #999999; background:#F5F5F5; float:center; width:84%; padding:1px 15px; margin: 10px 10px 10px 40px"]]
+= **You barked up the wrong tree.**
+
+------
+< **DATE:** [[span style="color:black"]]Time doesn't exist.[[/span]]
+
+< **NOTE:** The following file has been corrupted. Information recall will begin shortly.
+----
+
+[BEGINNING SUBJECT INFORMATION RECALL...[[span class="blinkbar"]][][[/span]]]
+
+= [[span style="color:black"]]...oh?[[/span]]
+= [[span style="color:black"]]You want to know more about me?[[/span]]
+= [[span style="color:black"]]I like your moxie.[[/span]]
+
+-----
+= **SUBJECT OVERVIEW**
+
+Name : Sr Researcher Dr Adams Campbell
+Clearance Level : Provisional Level 4
+Current Status : Unknown
+Place of Residence : [DATA CORRUPTED]
+
+About :
+Dr Campbell, the lead of many projects that have been recently shut down, was discharged from Foundation service after proceeding with [http://www.scp-wiki.net/the-old-town-of-bridgewater The Bridgewater Project] despite Ethic Committee interference. --Was also suspended multiple times due to suspected use of unregistered thaumatergic abilities.--[[footnote]][[span style="color:black"]]they weren't unregistered! assholes.[[/span]][[/footnote]]
+
+Despite the use of amnestics as per discharge protocol, Dr Campbell appears to have resurfaced under the alias of 'MoreWorldliness' in multiple chatrooms and servers and spreads --false-- --truthful-- varying statements about the Foundation and the SCPs contained. Discovered through the I/UNDER webcrawler, efforts are currently being made to locate and contain Dr Campbell, with limited degrees of success.
+
+Activity reported from 'MoreWorldliness' includes;
+* [[size 150%]]Leaking Foundation Secrets[[/size]]
+* [[size 150%]]Excessive Interaction[[/size]]
+* [[size 150%]]Too Many Ideas[[/size]]
+* [[size 150%]]Bad 'Noir'-Style Roleplaying (To the point that we consider it offensive)[[/size]]
+* [[size 150%]]Development of Memetic Images[[/size]]
+
+------
+.
+------
+.
+------
+
+[[span style="color:black"]]Alternatively, you could always listen to me.[[/span]]
+
+[[span style="color:black"]]I like tea and hot chocolate, not that I'd ever drink them together. I worked for the Foundation since day one and was discharged for an 'unethical' experiment. Yea right, they were just looking for an excuse. What's 'unethical' in the Foundation, anyway? We literally send hundreds of people to their deaths every month, not to mention the thousands lost in the field and you're telling me the mistreatment of three kids is too far?[[/span]]
+
+[[span style="color:black"]]But whatever, you know? Guess you could say it's [http://www.scp-wiki.net/treading-around-the-fuzz water under the bridge.][[/span]]
+
+[[size 0.8em]][[span style="color:black"]]**And my noir is //not// bad**[[/span]][[/size]]
+[END OF FILE]
+
+[[/div]]
+[[/collapsible]]
+@@ @@
+[[/=]]
 [[collapsible show="Tales" hide="Close"]]
 
 > [[=]]
@@ -112,7 +178,7 @@ The following links are currently {{RESTRICTED}}. Any attempt to open them witho
 //"I remember the day I thought the world ended."//
 
 [[http://www.scp-wiki.net/ideals Ideals]] - ;
-//"Peace was an unsuccessful focus test with the entire human population as its subject; It was teased and teased until humanity screamed for the teasing to stop.//
+//"Peace was an unsuccessful focus test with the entire human population as its subject; It was teased and teased until humanity screamed for the teasing to stop."//
 
 [[http://www.scp-wiki.net/treading-around-the-fuzz Treading around the Fuzz]] ;
 //"It wasn't hard to pay attention to everything when two of your friends had been taken by the pseudo-government."//
@@ -156,14 +222,14 @@ Oh? But Nobody Came...
 
 
 [[size 150%]] {{WELCOME TO THE XILAS CORNER}} [[/size]]
-> 
-> 
-> 
+> .
+> .
+> .
 > xilas has no corner.
 > xilas only consumes.
-> 
-> 
-> 
+> .
+> .
+> .
 [[/=]]
 [[/collapsible]]
 ------
