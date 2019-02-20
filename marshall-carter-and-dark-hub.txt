@@ -126,12 +126,19 @@ The above header should be used at the top of all objects. The following is a de
 
 **Status:** This refers to the **current status** of the item. The different classes mean, as follows:
 * __**In Reserve:**__ The item is owned by MC&D, but currently not for rent or sale.
+
 * __**Selling:**__ The item is owned by MC&D, and is currently for sale.
+
 * __**Sold:**__ The item is no longer owned by MC&D, and has been sold. This category should also include a subcategory of Acquirable, Unacquirable, Destroyed, or Unknown, parsed as Sold (Acquirable), Sold (Unacquirable) and so on.
+
 * __**Renting:**__ The item is owned by MC&D, and is currently available for rent or being rented.
+
 * __**Acquirable:**__ The item is either owned by MC&D but not in its posession, as may be the case of items currently undergoing analysis by external contractors, or not owned by MC&D but trivially capable of being requisitioned from its current owner.
+
 * __**Unacquirable:**__ The item is not currently owned by MC&D, and acquiring it would require sizeable effort.
+
 * __**Destroyed:**__ The item has been destroyed.
+
 * __**Unknown:**__ The current status of the item is unknown, and is thus either Unacquirable or Destroyed.
 
 **Demand:** This is an **approximation of the demand for the item**. If an item can be easily sold at any time, it is rated High; if it is likely to find a buyer at auction, it is rated Medium; Low items are unlikely to sell at auction and may have a very specific market. The None category is when the item has no demand whatsoever. Demand categories can be combined as High/Medium or Medium/Low for approximations that span these ranges.
