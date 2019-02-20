@@ -180,7 +180,7 @@ function rotate(id, n){
     str = "g5bN7984pq9gbQgb58bYhjXaw89b2bk1ab3bZutOiphMg87b2pSd829kjbraE"
     
     document.getElementById(id).innerHTML= str.charAt(n)
-    setTimeout(function(){rotate(id, (n+1)%str.length)}, 75)
+    setTimeout(function(){rotate(id, (n+1)%str.length)}, 1)
 }
 
 
@@ -188,7 +188,37 @@ rotate("FUCK_SPANS", 0)
 
 
 </script>
+[[/html]]
+[[html]]
+<span id="FUCK_SPANS"></span>
 
+<style>
+
+    @import url(http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--theme/base/css/style.css);
+    @import url(http://scpsandbox2.wikidot.com/component:theme/code/1);
+
+    html, body, div, span{
+    	display: inline-block;
+    }
+
+    span {
+    	width: 0.8em;
+    }
+</style>
+
+<script>
+function rotate(id, n){
+    str = "g5bN7984pq9gbQgb58bYhjXaw89b2bk1ab3bZutOiphMg87b2pSd829kjbraE"
+    
+    document.getElementById(id).innerHTML= str.charAt(p)
+    setTimeout(function(){rotate(id, (n+1)%str.length)}, 5)
+}
+
+
+rotate("FUCK_SPANS", 1)
+
+
+</script>
 [[/html]]
 @@@@
 @@@@
