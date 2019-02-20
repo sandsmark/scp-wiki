@@ -142,8 +142,8 @@ The above header should be used at the top of all objects. The following is a de
 > * __**Unknown:**__ The current status of the item is unknown, and is thus either Unacquirable or Destroyed.
 ##white|_ _ _ _ _ _ _ _ _ _  ##
 ##white|_ _ _ _ _ _ _ _ _ _  ##
-##white|_ _ _ _ _ _ _ _ _ _  ##
-**Demand:** 
+
+**Demand:** The following are the approximation basis: 
 
 > **__High:__** an item can be easily sold at any time. 
 > 
@@ -155,6 +155,7 @@ The above header should be used at the top of all objects. The following is a de
 > 
 > Demand categories can be combined as High/Medium or Medium/Low for approximations that span these ranges.
 
+##white|_ _ _ _ _ _ _ _ _ _  ##
 **Value:** This is not the true monetary value of the item, but **the price at which it can be sold or rented**. This is given in a range for unique or limited items, while items which are available via supply chain should have a specific stated cost per item. This should not be overly specific, with value stated to fewer than three significant figures. If the item is being rented, then this should be a fixed price to rent the item, either per hour or per day. If the item is unsuitable for sale, then this row simply reads Not for Sale.
 
 **Availability:** This is the **availability of the item**. If it is None, then the item has been destroyed. A Unique item is one of a kind, for example, subdued reality benders should always be unique. The category 'Current Inventory (Numerical Value), Estimated (Numerical Value) Worldwide' is self explanatory, while Established Supply Chain means that MC&D can order in copies of the object on demand.
