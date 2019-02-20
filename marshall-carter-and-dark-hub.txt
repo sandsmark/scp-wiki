@@ -123,39 +123,19 @@ To use the MC&D custom theme, put the following at the top of your page:
 The above header should be used at the top of all objects. The following is a description of each criteria:
 
 **File Number:** In the above template, XXXXX/XXXXX/XXXXX is used as **an identifier for the document**. Each X should be replaced with a nonzero and non-unary digit or a capital letter; for example, a valid identifier is IWN45/N3OS8/4EGI5. The number 0 is not to be used in the identifier, as it can be easily confused with the letter O in documentation; similarly, 1 is not to be used as it can be mistaken with I. This numerical identifier is not used as an identifier for the item itself, as with SCP objects, but an identifier for the file. Items themselves are referred to by their Identifier in daily business (see below), but within the document are only to be referred to as 'item' or 'the item'.
-##white|_ _ _ _ _ _ _ _ _ _  ##
 
 **Status:** This refers to the **current status** of the item. The different classes mean, as follows:
-> * __**In Reserve:**__ The item is owned by MC&D, but currently not for rent or sale.
-> 
-> * __**Selling:**__ The item is owned by MC&D, and is currently for sale.
-> 
-> * __**Sold:**__ The item is no longer owned by MC&D, and has been sold. This category should also include a subcategory of Acquirable, Unacquirable, Destroyed, or Unknown, parsed as Sold (Acquirable), Sold (Unacquirable) and so on.
-> 
-> * __**Renting:**__ The item is owned by MC&D, and is currently available for rent or being rented.
-> 
-> * __**Acquirable:**__ The item is either owned by MC&D but not in its posession, as may be the case of items currently undergoing analysis by external contractors, or not owned by MC&D but trivially capable of being requisitioned from its current owner.
-> 
-> * __**Unacquirable:**__ The item is not currently owned by MC&D, and acquiring it would require sizeable effort.
-> 
-> * __**Destroyed:**__ The item has been destroyed.
-> 
-> * __**Unknown:**__ The current status of the item is unknown, and is thus either Unacquirable or Destroyed.
-##white|_ _ _ _ _ _ _ _ _ _  ##
+In Reserve: The item is owned by MC&D, but currently not for rent or sale.
+Selling: The item is owned by MC&D, and is currently for sale.
+Sold: The item is no longer owned by MC&D, and has been sold. This category should also include a subcategory of Acquirable, Unacquirable, Destroyed, or Unknown, parsed as Sold (Acquirable), Sold (Unacquirable) and so on.
+Renting: The item is owned by MC&D, and is currently available for rent or being rented.
+Acquirable: The item is either owned by MC&D but not in its posession, as may be the case of items currently undergoing analysis by external contractors, or not owned by MC&D but trivially capable of being requisitioned from its current owner.
+Unacquirable: The item is not currently owned by MC&D, and acquiring it would require sizeable effort.
+Destroyed: The item has been destroyed.
+Unknown: The current status of the item is unknown, and is thus either Unacquirable or Destroyed.
 
-**Demand:** The following are the **approximation** basis: 
+**Demand:** This is an **approximation of the demand for the item**. If an item can be easily sold at any time, it is rated High; if it is likely to find a buyer at auction, it is rated Medium; Low items are unlikely to sell at auction and may have a very specific market. The None category is when the item has no demand whatsoever. Demand categories can be combined as High/Medium or Medium/Low for approximations that span these ranges.
 
-> **__High:__** an item can be easily sold at any time. 
-> 
-> **__Medium:__** It is likely to find a buyer at auction.
-> 
-> **__Low:__** Items are unlikely to sell at auction and may have a very specific market. 
-> 
-> **__None__** The item has no demand whatsoever.
-> 
-> Demand categories can be combined as High/Medium or Medium/Low for approximations that span these ranges.
-
-##white|_ _ _ _ _ _ _ _ _ _  ##
 **Value:** This is not the true monetary value of the item, but **the price at which it can be sold or rented**. This is given in a range for unique or limited items, while items which are available via supply chain should have a specific stated cost per item. This should not be overly specific, with value stated to fewer than three significant figures. If the item is being rented, then this should be a fixed price to rent the item, either per hour or per day. If the item is unsuitable for sale, then this row simply reads Not for Sale.
 
 **Availability:** This is the **availability of the item**. If it is None, then the item has been destroyed. A Unique item is one of a kind, for example, subdued reality benders should always be unique. The category 'Current Inventory (Numerical Value), Estimated (Numerical Value) Worldwide' is self explanatory, while Established Supply Chain means that MC&D can order in copies of the object on demand.
