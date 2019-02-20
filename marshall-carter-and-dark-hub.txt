@@ -141,7 +141,17 @@ The above header should be used at the top of all objects. The following is a de
 > 
 > * __**Unknown:**__ The current status of the item is unknown, and is thus either Unacquirable or Destroyed.
 
-**Demand:** This is an **approximation of the demand for the item**. If an item can be easily sold at any time, it is rated High; if it is likely to find a buyer at auction, it is rated Medium; Low items are unlikely to sell at auction and may have a very specific market. The None category is when the item has no demand whatsoever. Demand categories can be combined as High/Medium or Medium/Low for approximations that span these ranges.
+**Demand:** This is an **approximation of the demand for the item**. 
+
+> **__High:__** an item can be easily sold at any time. 
+> 
+> **__Medium:__** It is likely to find a buyer at auction.
+> 
+> **__Low:__** Items are unlikely to sell at auction and may have a very specific market. 
+> 
+> **__None__** The item has no demand whatsoever.
+> 
+> Demand categories can be combined as High/Medium or Medium/Low for approximations that span these ranges.
 
 **Value:** This is not the true monetary value of the item, but **the price at which it can be sold or rented**. This is given in a range for unique or limited items, while items which are available via supply chain should have a specific stated cost per item. This should not be overly specific, with value stated to fewer than three significant figures. If the item is being rented, then this should be a fixed price to rent the item, either per hour or per day. If the item is unsuitable for sale, then this row simply reads Not for Sale.
 
