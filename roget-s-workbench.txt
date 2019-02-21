@@ -23,27 +23,29 @@ title:Rogetbox
     text-align: justify;
 }
 .odate { word-break: normal; }
-.content-panel .wiki-content-table { margin: 2px 0 0 0; }
+
+.content-panel .wiki-content-table {
+    margin: 2px 0 0 0;
+    width: 100%;
+}
 .content-panel .wiki-content-table th:nth-of-type(2),
 .content-panel .wiki-content-table th:nth-of-type(3),
 .content-panel .wiki-content-table td:nth-of-type(2),
-.content-panel .wiki-content-table td:nth-of-type(3) { text-align: center; }
+.content-panel .wiki-content-table td:nth-of-type(3) {
+    text-align: center;
+}
 .content-panel .wiki-content-table th,
-.content-panel .wiki-content-table td { border: none; }
-.content-panel .wiki-content-table tr { border-bottom: solid 1px rgba(0,0,0,0.1); }
+.content-panel .wiki-content-table td {
+    border: none;
+}
+.content-panel .wiki-content-table tr {
+    border-bottom: solid 1px rgba(0,0,0,0.1);
+}
 .content-panel .wiki-content-table th {
     border: 2px solid white;
     border-width: 0 2px;
     background-color: #666;
     color: white;
-}
-
-.content-panel.content-row .content-type-description {
-    padding: 5px 20px;
-}
-.content-panel.content-row .content-type-description-2 {
-    padding: 0 20px;
-    text-align: justify; 
 }
 [[/module]]
 
