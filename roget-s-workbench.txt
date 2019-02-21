@@ -51,20 +51,18 @@ title:Rogetbox
 
 [[div class="feature-block"]]
 
-[[div class="content-panel left-column"]]
-[[div class="panel-heading"]]
-Newly Posted SCP Articles
+[[div class="content-panel standalone left-column"]]
+[[div class="content-type-title"]]
+Newly Created Tales
 [[/div]]
-[[div class="panel-body"]]
+[[div class="content-type-description"]]
 
-[[module ListPages rating=">=-15" tags="scp" order="created_at desc" separate="false" date="2018.10" perPage="30"]]
-%%title_linked%% (+%%rating%%)
+[[module ListPages rating=">=-10" tags="scp" order="created_at desc" separate="false" date="2018.10" perPage="30" prependLine="||~ Page ||~ 📆 ||~ 💬 ||"]]
+|| %%title_linked%% || %%created_at|%e%%@<&nbsp;>@%%created_at|%b %R%% || %%comments%% ||
 [[/module]]
-
 [[/div]]
 [[div class="panel-footer"]]
   [!-- Placeholder --]
-[[/div]]
 [[/div]]
 [[/div]]
 
@@ -76,7 +74,7 @@ Newly Created Tales
 [[/div]]
 [[div class="content-type-description"]]
 
-[[module ListPages rating=">=-15" tags="tale" order="created_at desc" separate="false" date="2018.10" perPage="30" prependLine="||~ Page ||~ 📆 ||~ 💬 ||"]]
+[[module ListPages rating=">=-10" tags="tale" order="created_at desc" separate="false" date="2018.10" perPage="30" prependLine="||~ Page ||~ 📆 ||~ 💬 ||"]]
 || %%title_linked%% || %%created_at|%e%%@<&nbsp;>@%%created_at|%b %R%% || %%comments%% ||
 [[/module]]
 [[/div]]
@@ -91,35 +89,32 @@ Newly Created Tales
 
 [[div class="feature-block"]]
 
-[[div class="content-panel left-column"]]
-[[div class="panel-heading"]]
-Newly Created GoI Formats
+[[div class="content-panel standalone left-column"]]
+[[div class="content-type-title"]]
+Newly Created Tales
 [[/div]]
-[[div class="panel-body"]]
+[[div class="content-type-description"]]
 
-[[module ListPages rating=">=-15" tags="goi-format" order="created_at desc" separate="false" date="2018.10" perPage="30"]]
-%%title_linked%% (+%%rating%%)
+[[module ListPages rating=">=-10" tags="goi-format" order="created_at desc" separate="false" date="2018.10" perPage="30" prependLine="||~ Page ||~ 📆 ||~ 💬 ||"]]
+|| %%title_linked%% || %%created_at|%e%%@<&nbsp;>@%%created_at|%b %R%% || %%comments%% ||
 [[/module]]
-
 [[/div]]
 [[div class="panel-footer"]]
   [!-- Placeholder --]
 [[/div]]
 [[/div]]
-[[/div]]
 
 [!-- GOI Block --]
 
-[[div class="content-panel right-column"]]
-[[div class="panel-heading"]]
-Other New Pages
+[[div class="content-panel standalone right-column"]]
+[[div class="content-type-title"]]
+Newly Created Tales
 [[/div]]
-[[div class="panel-body"]]
+[[div class="content-type-description"]]
 
-[[module ListPages rating=">=-15" tags="-scp,-tale,-goi-format" order="created_at desc" separate="false" date="2018.10" perPage="30"]]
-%%title_linked%% (+%%rating%%)
+[[module ListPages rating=">=-10" tags="-scp -tale -goi-format" order="created_at desc" separate="false" date="2018.10" perPage="30" prependLine="||~ Page ||~ 📆 ||~ 💬 ||"]]
+|| %%title_linked%% || %%created_at|%e%%@<&nbsp;>@%%created_at|%b %R%% || %%comments%% ||
 [[/module]]
-
 [[/div]]
 [[div class="panel-footer"]]
   [!-- Placeholder --]
