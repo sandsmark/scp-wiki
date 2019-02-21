@@ -60,13 +60,13 @@ Newly Created Tales
 [[/div]]
 [[div class="panel-body"]]
 
-[[module ListPages rating=">=-15" tags="tale" order="created_at desc" separate="false" date="2018.10" perPage="30" prependLine="[[include component:listpages-table]]" appendLine="[[/table]]"]]
+[[module ListPages rating=">=-15" tags="tale" order="created_at desc" separate="false" date="2018.10" perPage="30" prependLine="[[table]]" appendLine="[[/table]]"]]
 [[row]]
 [[cell style="vertical-align: top;"]]
 %%title_linked%%
 [[/cell]]
 [[cell style="vertical-align: top; text-align: center;"]]
-%%created_at%%
+%%created_at|%e %b %R%%
 [[/cell]]
 [[cell style="vertical-align: top; text-align: center;"]]
 %%comments%%
