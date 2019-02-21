@@ -77,8 +77,7 @@ Newly Created Tales
 [[div class="content-type-description"]]
 
 [[module ListPages rating=">=-15" tags="tale" order="created_at desc" separate="false" date="2018.10" perPage="30" prependLine="||~ Page ||~ 📆 ||~ 💬 ||"]]
-[!-- WARNING: There is a NBSP between the "%e" and the "%b" of the next line --]
-|| %%title_linked%% || %%created_at|%e %b %R%% || %%comments%% ||
+|| %%title_linked%% || %%created_at|%e@<&nbsp;>@%b %R%% || %%comments%% ||
 [[/module]]
 [[/div]]
 [[div class="panel-footer"]]
