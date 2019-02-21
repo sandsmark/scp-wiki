@@ -64,7 +64,9 @@ Newly Created Tales
 [[div class="content-type-description"]]
 
 [[module ListPages rating=">=-15" tags="tale" order="created_at desc" separate="false" date="2018.10" perPage="30" prependLine="||~ Page ||~ DC ||~ C ||"]]
-|| %%title_linked%% || %%created_at|%e %b %R%% || %%comments%% ||
+|| %%title_linked%% || %%created_at|%e %b %R%% |
+
+%%comments%% ||
 [[/module]]
 [[/div]]
 [[div class="panel-footer"]]
