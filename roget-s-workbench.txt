@@ -24,6 +24,8 @@ title:Rogetbox
 }
 .odate { word-break: normal; }
 .content-panel .wiki-content-table { margin: 2px 0 0 0; }
+.content-panel .wiki-content-table td:nth-of-type(2),
+.content-panel .wiki-content-table td:nth-of-type(3) { text-align: center; }
 
 .content-panel.content-row .content-type-description {
     padding: 5px 20px;
@@ -63,9 +65,8 @@ Newly Created Tales
 [[/div]]
 [[div class="content-type-description"]]
 
-[[module ListPages rating=">=-15" tags="tale" order="created_at desc" separate="false" date="2018.10" perPage="30"]]
-|| %%title_linked%% || %%comments%% comments _
-%%created_at|%e %b %R%% ||
+[[module ListPages rating=">=-15" tags="tale" order="created_at desc" separate="false" date="2018.10" perPage="30" prependLine="||~ Page ||~ 📆 ||~ 💬 ||"]]
+|| %%title_linked%% || %%created_at|%e %b %R%% || %%comments%% ||
 [[/module]]
 [[/div]]
 [[div class="panel-footer"]]
