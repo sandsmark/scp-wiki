@@ -60,18 +60,8 @@ Newly Created Tales
 [[/div]]
 [[div class="panel-body"]]
 
-[[module ListPages rating=">=-15" tags="tale" order="created_at desc" separate="false" date="2018.10" perPage="30" prependLine="[[table]][[row style="font-weight: bold; color: #fff; background-color: #666;"]][[cell]]Page[[/cell]][[cell]]Date Created[[/cell]][[cell]]Comments[[/cell]][[/row]]" appendLine="[[/table]]"]]
-[[row]]
-[[cell style="vertical-align: top;"]]
-%%title_linked%%
-[[/cell]]
-[[cell style="vertical-align: top; text-align: center;"]]
-%%created_at|%e %b %R%%
-[[/cell]]
-[[cell style="vertical-align: top; text-align: center;"]]
-%%comments%%
-[[/cell]]
-[[/row]]
+[[module ListPages rating=">=-15" tags="tale" order="created_at desc" separate="false" date="2018.10" perPage="30" prependLine="||~ Page ||~ Date Created ||~ Comments ||"]]
+|| %%title_linked%% || %%created_at|%e %b %R%% || %%comments%% ||
 [[/module]]
 [[/div]]
 [[div class="panel-footer"]]
