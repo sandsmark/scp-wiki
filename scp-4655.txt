@@ -1,63 +1,5 @@
 title:SCP-4655
-[[module CSS]]
-@import url('https://fonts.googleapis.com/css?family=Homemade+Apple');
-
-#page-content div.jeeves2 .collapsible-block-folded a.collapsible-block-link {
-    animation: blink 0.8s ease-in-out infinite alternate;
-}
-
-#page-content div.jeeves .collapsible-block-folded a.collapsible-block-link {
-   color: #ffffff;
-}
-@keyframes blink {
-    0% { color: transparent; }
-    50%, 100% { color: #b01; }
-}
-
-.jeeves {
-  display: inline-block;
-  border-radius: 3px;
-  border: solid 1px #555;
-  background: #4A9B97;
-  width: 96.5%;
-  padding: 10px;
-  box-shadow: 0 2px 4px rgba(75, 75, 75, .5);
-
-}
-
-jeeves2 {
-
-}
-
-.docsig {
-  float: right;
-  text-align: right;
-  font-family: 'Homemade Apple', cursive;
-  font-size: 150%;
-  color: #16264c;
-}
-
-.inner {
-display:block;
-margin:auto;
-width:60%;
-padding:5px;
-border:double 3px #112211;
-background:#FFFFFF;
-box-shadow: 0 5px 15px rgba(0,0,0,.2);
-padding-bottom:15px;
-}
-.outer {
-display:block;
-margin:auto;
-width:93%;
-padding:10px;
-border:double 3px #112211;
-background:#FFFFFF;
-}
-
-[[/module]]
-
+[[include :kaktuskontainer:component:nuscp-dev]]
 [[include :scp.avn.sh:component:aers:info-stuff
 |lang=en[!-- EN/RU/KO/CN/FR/PL/ES/TH/JP/DE/IT/UA/PTBR --]
 |page=scp-4655[!-- url of your page on the scp wiki --]
@@ -66,12 +8,9 @@ background:#FFFFFF;
 [[>]]
 [[module Rate]]
 [[/>]]
-[[include :scp-wiki:component:classified-decoration
-|lv=2
-|item=4655
-|oc=Safe
-|lang=EN
-]]
+**Item #:** SCP-4655
+
+**Object Class:** Safe
 
 **Special Containment Procedures:** SCP-4655 is kept in a standard Safe-class containment chamber. Within the containment chamber, a single overhead lamp constructed for the manifestation of SCP-4655-1 instances is to remain dimly lit at all times. Personnel that have lost a relative or partner within the last 5 years are restricted from SCP-4655's containment chamber. 
 
