@@ -183,7 +183,8 @@ Documents
 [[/div]]
 [[div class="panel-body"]]
 [[div class="spc-page-entry"]]
-[[module listpages tags="shark-punching-center +tale -scp -hub -joke" perPage="10" order="created_at desc"]]
+[[module listpages tags="_shark-punching-center -tale -joke -scp -hub" perPage="10" order="created_at desc"prependLine="[[table]]" appendLine="[[/table]]" separate="false"]]
+[[row class="table-alt"]][[cell style="vertical-align: top; border-style: solid; border-width: 0px 0px 1px 0px; border-color: #eeeee0;"]]
 [[div class="spc-page-title"]]
 %%title_linked%%
 [[/div]]
@@ -193,6 +194,7 @@ Documents
 [[div class="spc-page-footer"]]
 Author(s) -- %%created_by_linked%%
 [[/div]]
+[[/cell]][[/row]]
 [[/module]]
 [[/div]]
 
