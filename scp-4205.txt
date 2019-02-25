@@ -100,7 +100,7 @@ a img {
     	right: 0;
     	bottom: 2vh;
     }
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 #main-content{
     	top: 0!important;
     }
