@@ -21,6 +21,7 @@ All images/videos created by [[*user Woedenaz]]
 [[include :kaktuskontainer:component:nuscp-gp]]
 
 [[module CSS]]
+@supports(--css: variables) {
 sup { 
 vertical-align: top; position: relative; top: -0.5em; 
 }
@@ -49,6 +50,7 @@ line-height: 1.6em;
 #page-content > div:nth-child(1) > div {
     margin-top: -5vh;
 }
+}
 
 @media (max-width: 775px) {
     #page-content > div:nth-child(1) > div {
@@ -62,6 +64,7 @@ line-height: 1.6em;
     }
 }
 
+@supports(--css: variables) {
 .shadow {
 -webkit-border-radius: 20px/60px;
 -webkit-box-shadow: rgba(0, 0, 0,.30) 0 2px 3px;
@@ -78,9 +81,8 @@ line-height: 1.6em;
               -1px -1px 2px #fff inset;
   border-radius: 20px/60px;  
 }
-@media (max-width: 1600px) {
-   .desktop-only{ display: none; visibility:hidden }
 }
+
 a img {
     position: relative;
     z-index: 1;
@@ -88,6 +90,7 @@ a img {
 [[/module]]
 
 [[module CSS]]
+@supports(--css: variables) {
 .iframe {
     overflow: hidden;
     height: 85vh !important;
@@ -101,6 +104,7 @@ a img {
     	left: 0;
     	right: 0;
     	bottom: 2vh;
+    }
     }
 [[/module]]
 
