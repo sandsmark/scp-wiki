@@ -45,7 +45,7 @@ title:New Pages Feed
 }
 .desktop-only { display: block; }
 .mobile-only { display: none; }
-@media screen only and (max-width: 768px) {
+@media (max-width: 979px) {
     .desktop-only { display: none; }
     .mobile-only { display: block; }
 }
