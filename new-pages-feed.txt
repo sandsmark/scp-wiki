@@ -1,7 +1,4 @@
 title:New Pages Feed
-A list of all newly created pages in one list can be found [[[most-recently-created| here]]].
-
-
 [[module CSS]]
 .content-panel .content-type-title > p {
     margin: 0;
@@ -46,11 +43,19 @@ A list of all newly created pages in one list can be found [[[most-recently-crea
     background-color: #666;
     color: white;
 }
+.desktop-only { display: block; }
+.mobile-only { display: none; }
+@media screen only and (max-width: 768px) {
+    .desktop-only { display: none; }
+    .mobile-only { display: block; }
+}
 [[/module]]
 
 [!-- SCP Block --]
 
-[[div class="feature-block"]]
+[[div class="feature-block desktop-only"]]
+
+A list of all newly created pages in one list can be found [[[most-recently-created| here]]].
 
 [[div class="content-panel standalone left-column"]]
 [[div class="content-type-title"]]
@@ -89,5 +94,26 @@ Other Newly Created Pages
 
 [[/div]]
 
+[!-- All pages, mobile only --]
+
+[[div class="feature-block mobile-only"]]
+
+[[div class="content-panel standalone"]]
+[[div class="content-type-title"]]
+All Newly Created Pages
+[[/div]]
+[[div class="content-type-description"]]
+
+[[module ListPages rating=">=-10" order="created_at desc" separate="false"  perPage="30" prependLine="||~ Page ||~ 📆 ||~ 💬 ||"]]
+|| %%title_linked%% || %%created_at|%e%%@<&nbsp;>@%%created_at|%b %R%% || %%comments%% ||
+[[/module]]
+[[/div]]
+[[div class="panel-footer"]]
+  [!-- Placeholder --]
+[[/div]]
+[[/div]]
 
 ~~~~
+
+
+[[/div]]
