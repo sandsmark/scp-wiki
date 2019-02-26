@@ -1,5 +1,5 @@
 title:New Pages Feed
-Original feed can be found [[[most-recently-created| Here]]].
+A list of all newly created pages in one list can be found [[[most-recently-created| here]]].
 
 
 [[module CSS]]
@@ -58,7 +58,7 @@ Newly Created SCPs
 [[/div]]
 [[div class="content-type-description"]]
 
-[[module ListPages rating=">=-10" tags="scp" order="created_at desc" separate="false"  perPage="52" prependLine="||~ Page ||~ 📆 ||~ 💬 ||"]]
+[[module ListPages rating=">=-10" tags="scp" order="created_at desc" separate="false"  perPage="51" prependLine="||~ Page ||~ 📆 ||~ 💬 ||"]]
 || %%title_linked%% || %%created_at|%e%%@<&nbsp;>@%%created_at|%b %R%% || %%comments%% ||
 [[/module]]
 [[/div]]
@@ -71,11 +71,11 @@ Newly Created SCPs
 
 [[div class="content-panel standalone right-column"]]
 [[div class="content-type-title"]]
-Newly Created Tales
+Other Newly Created Pages
 [[/div]]
 [[div class="content-type-description"]]
 
-[[module ListPages rating=">=-10" tags="tale" order="created_at desc" separate="false"  perPage="30" prependLine="||~ Page ||~ 📆 ||~ 💬 ||"]]
+[[module ListPages rating=">=-10" tags="-scp" order="created_at desc" separate="false"  perPage="30" prependLine="||~ Page ||~ 📆 ||~ 💬 ||"]]
 || %%title_linked%% || %%created_at|%e%%@<&nbsp;>@%%created_at|%b %R%% || %%comments%% ||
 [[/module]]
 [[/div]]
@@ -86,37 +86,8 @@ Newly Created Tales
 
 ~~~~
 
-[!-- GOI Block --]
 
-[[div class="feature-block"]]
-
-[[div class="content-panel standalone left-column"]]
-[[div class="content-type-title"]]
-Newly Created GoI Formats
-[[/div]]
-[[div class="content-type-description"]]
-
-[[module ListPages rating=">=-10" tags="goi-format" order="created_at desc" separate="false"  perPage="30" prependLine="||~ Page ||~ 📆 ||~ 💬 ||"]]
-|| %%title_linked%% || %%created_at|%e%%@<&nbsp;>@%%created_at|%b %R%% || %%comments%% ||
-[[/module]]
-[[/div]]
-[[div class="panel-footer"]]
-  [!-- Placeholder --]
-[[/div]]
 [[/div]]
 
-[!-- GOI Block --]
-
-[[div class="content-panel standalone right-column"]]
-[[div class="content-type-title"]]
-Other/Untagged Newly Created Pages
-[[/div]]
-
-[[module ListPages rating=">=-10" tags="-scp -tale -goi-format" order="created_at desc" separate="false" perPage="30" prependLine="||~ Page ||~ 📆 ||~ 💬 ||"]]
-|| %%title_linked%% || %%created_at|%e%%@<&nbsp;>@%%created_at|%b %R%% || %%comments%% ||
-[[/module]]
-[[/div]]
-[[/div]]
-[[/div]]
 
 ~~~~
