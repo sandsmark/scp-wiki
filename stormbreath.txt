@@ -448,19 +448,19 @@ __**Thai:**__
 [[module CSS]]
 .yui-navset .yui-nav,
 .yui-navset .yui-navset-top .yui-nav {
-    border-color: transparent; /* color between tab list and content */
+    border-color:#ffffff; /* color between tab list and content */
 }
  
 .yui-navset .yui-nav a,
 .yui-navset .yui-navset-top .yui-nav a {
-    background-color: transparent ! important; /* tab background */
-    border-color: transparent;
+    background-color:#ffffff ! important; /* tab background */
+    border-color:#ffffff;
     color:#000000;
     transition: 0.125s;
 }
  
 .yui-navset .yui-nav a em {
-background-color: transparent;
+background-color: #ffffff;
 box-shadow: 0px 1px 2px rgba(0,0,0,0.7);
 border-color: #ffffff;
 }
@@ -469,7 +469,7 @@ border-color: #ffffff;
 .yui-navset .yui-nav .selected a:focus,
 .yui-navset .yui-nav .selected a:hover {
     background-image: none;
-    background-color: transparent; /* selected tab background */
+    background-color: #ffffff; /* selected tab background */
     color:black;
 }
  
@@ -477,17 +477,17 @@ border-color: #ffffff;
 .yui-navset .yui-nav .selected a em {
     border-color: transparent;
     box-shadow: 0px 1px 2px rgba(0,0,0,0.5);
- background-color: #transparent; 
+ background-color: #ffffff; 
 }
  
 .yui-navset .yui-content {
-    background-color: transparent; /* content background color */
+    background-color: #ffffff; /* content background color */
 }
  
 .yui-navset .yui-content,
 .yui-navset .yui-navset-top .yui-content {
-    border-color: transparent; /* content border */
-    border-top-color: transparent; /* different border color */
+    border-color: #ffffff; /* content border */
+    border-top-color:#ffffff; /* different border color */
 }
  
 .yui-navset-left .yui-content {
@@ -500,4 +500,10 @@ blockquote {
   border-width: 1pt;
   background-color: #f7f7f7;
   box-shadow: 0px 1px 2px rgba(0,0,0,0.1); }
- [[/module]]
+ 
+div.image-block {
+ float:right;
+ margin:0 2em 1em 2em;
+ width:300px;
+}
+[[/module]]
