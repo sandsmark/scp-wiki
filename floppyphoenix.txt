@@ -417,7 +417,7 @@ Wait, what the heck? Where did that come from?
 [[/div]]
 
 [[collapsible show="tag stuff"]]
-[[module ListPages separate="no" order="created_at" tags="+4000 -hub -scp" perPage="20" prependLine="||~ Title ||~ Author ||~ Rating||~ Date Created||"]]
-||%%title_linked%%||%%created_by%%||%%rating%%||%%created_at%%||
-[[/module]] 
+[[module ListPages category="." separate="no" tags="-scp -tale -goi-format -admin -splash -supplement -guide -author -essay -hub -sandbox -artwork -in-deletion -workbench -news -project -archived -site" perPage="100" order="name"]]
+||%%title_linked%%||[[user %%created_by%%]]||%%rating%%||%%created_at%%||
+[[/module]]
 [[/collapsible]]
