@@ -6,8 +6,23 @@ title:SCP-4221
     name=http://scp-sandbox-3.wdfiles.com/local--files/collab:mathbrush-and-adl3z/DestroyedWorld|
     caption=A sample image taken inside of SCP-4221-2.
 ]]
+[[include :kaktuskontainer:component:nuscp-dev]]
 [[module CSS]]
-@import url(/component:scp-pride/code/1);
+sup { 
+vertical-align: top; position: relative; top: -0.5em; 
+}
+:root{ 
+--cutColour: #fafafa;
+--barColour: #590505;
+}
+
+.info-container .collapsible-block-folded a{
+color: #FFF;}
+.info-container .collapsible-block-unfolded-link a{
+color: #FFF;}
+
+.translation_block{
+display:none;}
 [[/module]]
 
 **Item #:** SCP-4221
