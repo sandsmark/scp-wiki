@@ -2,6 +2,26 @@ title:SCP-3856
 [[module css]]
 @import url(http://smlt.wdfiles.com/local--files/ashburystreet%3A6/deda.css)
 [[/module]]
+[[module css]]
+div#container-wrap {
+    background: url(http://smlt.wdfiles.com/local--files/ashburystreet%3A7/body_bg_deda.png) top left repeat-x;
+}
+ 
+sup { 
+ vertical-align: top; position: relative; top: -0.5em; 
+}
+#header {
+    height: 140px;
+    position: relative;
+    z-index: 10;
+    padding-bottom: 22px; /* FOR MENU */
+    background: url(http://smlt.wdfiles.com/local--files/ashburystreet%3A7/logoDEDA.png) 10px 40px no-repeat;
+}
+#header h1 span::before {
+    content: 'SCPF-CJBK17';
+    color: white;
+}
+[[/module]]
 [[include :topia:credit:start]]
 **SCP-3856:** Researcher Lloyd, Destroyer of Worlds
 **Author:** [[*user MaliceAforethought]]
