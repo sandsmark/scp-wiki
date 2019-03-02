@@ -16,9 +16,34 @@ sup {
     z-index: 10;
     padding-bottom: 22px; /* FOR MENU */
     background: url(http://smlt.wdfiles.com/local--files/ashburystreet%3A7/logoDEDA.png) 10px 40px no-repeat;
+#header h1 span {
+    display: block;
+    margin: 0;
+    padding: 0px 0px 20px;
+    line-height: 0px;
+    max-height: 0px;
+    font-weight: bold;
+    color: transparent;
+    text-shadow: none;
 }
+
 #header h1 span::before {
     content: 'SCPF-CJBK17';
+    color: white;
+}
+#header h2 span {
+    display: block;
+    margin: 0;
+    padding: 19px 0;
+    line-height: 0px;
+    max-height: 0px;
+    font-weight: bold;
+    color: transparent;
+    text-shadow: none;
+}
+
+#header h2 span::before {
+    content: 'Department of Ectodimensional Anomalies';
     color: white;
 }
 [[/module]]
