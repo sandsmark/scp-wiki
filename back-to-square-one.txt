@@ -1,0 +1,1027 @@
+title:Back To Square One
+> Reminder: This article is part of the [http://scp-int.wikidot.com/international-goi-contest-2019 International Contest]! Of course you can vote on this article here, however, for the contest, only votes on [http://scp-int.wikidot.com/back-to-square-one this pages counterpart] on the international wiki count. If it says that you're not a member - joining INT is just one small button instead of an application box!
+
+[[module css]]
+@import url(/component:letterstheme/code/1);
+[[/module]]
+
+[[include :kontainer.djkakt.us:component:discord-css]]
+
+[[module CSS]]
+@import url("https://fonts.googleapis.com/css?family=Catamaran");
+
+:root {
+    /* User 1 Items */
+    --user1_icon: url('http://paperkontainer.wdfiles.com/local--files/papermask%3Agoing-by-the-abc/Cat.png');
+    --user1_name: "SophL";
+
+    /* User 2 Items */
+    --user2_icon: url('http://paperkontainer.wdfiles.com/local--files/papermask%3Agoing-by-the-abc/dragon-238931_960_720.jpg');
+    --user2_name: "YourMainManDave";
+
+    /* User 3 Items */
+    --user3_icon: url('https://upload.wikimedia.org/wikipedia/commons/6/6d/Sean_Connery_1971.jpg');
+    --user3_name: "LazyJim";
+
+    /* User 4 Items */
+    --user4_icon: url('http://paperkontainer.wdfiles.com/local--files/papermask%3Agoing-by-the-abc/steampunk-1636156_640.png');
+    --user4_name: "Hunt";
+
+    /* User 5 Items */
+    --user5_icon: url('http://paperkontainer.wdfiles.com/local--files/papermask%3Agoing-by-the-abc/clyde.png');
+    --user5_name: "Clyde BOT";
+
+    /* User 6 Items */
+    --user6_icon: url('http://paperkontainer.wdfiles.com/local--files/papermask%3Agoing-by-the-abc/esoteric-1874403_640.png');
+    --user6_name: "Your Average Perfect Human Being";
+
+    /* Attachment 1 Items */
+    --attachment1_icon: url("http://kaktuskontainer.wdfiles.com/local--files/component%3Adiscord-css/file_icon.svg");
+    --attachment1_name: "innv031.tar.gz";
+    --attachment1_size: "19.32\a0MB";
+
+    /* Attachment 2 Items */
+    --attachment2_icon: url("http://kaktuskontainer.wdfiles.com/local--files/component%3Adiscord-css/file_icon.svg");
+    --attachment2_name: "letter.txt";
+    --attachment2_size: "661\a0B";
+
+}
+
+/* User 2 Name Colour */
+
+.user2 .user-name::before {
+    color: rgb(0,135,229)!important;
+}
+
+
+/* User 1 Messages Content */
+
+.user1 > .icon {
+    background-image: var(--user1_icon);
+}
+
+.user1 > .body > .user-name::before {
+    content: var(--user1_name);
+}
+
+/* User 2 Messages Content */
+
+.user2 > .icon {
+    background-image: var(--user2_icon);
+}
+
+.user2 > .body > .user-name::before {
+    content: var(--user2_name);
+}
+
+/* User 3 Messages Content */
+
+.user3 > .icon {
+    background-image: var(--user3_icon);
+}
+
+.user3 > .body > .user-name::before {
+    content: var(--user3_name);
+}
+
+/* User 4 Messages Content */
+
+.user4 > .icon {
+    background-image: var(--user4_icon);
+}
+
+.user4 > .body > .user-name::before {
+    content: var(--user4_name);
+}
+
+/* User 5 Messages Content */
+
+.user5 > .icon {
+    background-image: var(--user5_icon);
+}
+
+.user5 > .body > .user-name::before {
+    content: var(--user5_name);
+}
+
+/* User 6 Messages Content */
+
+.user6 > .icon {
+    background-image: var(--user6_icon);
+}
+
+.user6 > .body > .user-name::before {
+    content: var(--user6_name);
+}
+
+/* Attachment 1 Content */
+
+.attach1 .filenameLinkWrapper > .anchor::before {
+    content: var(--attachment1_name);
+}
+
+.attach1 .filenameLinkWrapper > .metadata::before {
+    content: var(--attachment1_size);
+}
+
+.attach1 .icon-code {
+    background-image: var(--attachment1_icon);
+}
+
+/* Attachment 2 Content */
+
+.attach2 .filenameLinkWrapper > .anchor::before {
+    content: var(--attachment2_name);
+}
+
+.attach2 .filenameLinkWrapper > .metadata::before {
+    content: var(--attachment2_size);
+}
+
+.attach2 .icon-code {
+    background-image: var(--attachment2_icon);
+}
+[[/module]]
+
+'When in doubt, listen to smooth jazz' was probably the worst piece of advice Sophie heard in a very long time. She has attempted concentrating for twenty minutes now and failed again and again. It got so bad that she figured she'd give her father's terrible advice a shot. 
+
+//Smooth jazz. I should've never bothered//. 
+
+//It's just little bug. I can fix this today.//
+
+She presses the F5 button again. A new window pops up on her monitor in which a door appears. Sophie presses the W key and the camera moves towards the door. E - the door opens; the window closes; red text appears.
+
+Sophie grabs her head. Simon looks over to her.
+
+"Having problems fixing bugs?"
+
+"Yes. Whenever I try entering the Inn, it just crashes."
+
+"Sadly, I don't have that much time to help fix your bugs. The supporters from the Help Chat will probably be able to help, though." 
+
+//That might be my last resort.//
+
+She opens her browser, types in the address and presses Enter.
+
+She went onto the Server she had saved at the top of her bar - [*http://scp-int.wikidot.com/letters I&I Studio].
+
+[[div_ class="discord"]]
+    [[div_ class="messages-panel"]]
+        [[div_ class="messages-group"]]
+            [[div_ class="messages"]]
+                [!-- USER1 MESSAGE --]
+                [[div_ class="message user1"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user1
+                        [[/div]]
+                        [[div_ class="content"]]
+                        ##0087E5|@Veteran## Can someone help me here?
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER2 MESSAGE --]
+                [[div_ class="message user2"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]
+                        user2
+                        [[/div]]
+                        [[div_ class="content"]]
+                        yeah, currently got a bit of free time, just got done with my part
+                        [[/div]]
+                        [[div_ class="content"]]
+                        what is it?
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER1 MESSAGE --]
+                [[div_ class="message user1"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user1
+                        [[/div]]
+                        [[div_ class="content"]]
+                        I've been stuck on trying to fix a bug for the past three days.
+                        [[/div]]
+                        [[div_ class="content"]]
+                        In "Knights of Terra", the one VR game we have in the works, the Inn is bugged.
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER2 MESSAGE --]
+                [[div_ class="message user2"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]
+                        user2
+                        [[/div]]
+                        [[div_ class="content"]]
+                        Which Inn?
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER1 MESSAGE --]
+                [[div_ class="message user1"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user1
+                        [[/div]]
+                        [[div_ class="content"]]
+                        The one in Three Streams.
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER2 MESSAGE --]
+                [[div_ class="message user2"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]
+                        user2
+                        [[/div]]
+                        [[div_ class="content"]]
+                        I actually got the Three Streams files here. Send me the Inn file real quick.
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER1 ATTACHMENT --]
+                [[div_ class="message user1 attach1"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]
+                            user1
+                        [[/div]]
+                        [[div_ class="attachment"]]
+                            [[div_ class="icon-code"]]
+                            [[/div]]
+                            [[div_ class="attachmentInner"]]
+                                [[div_ class="filenameLinkWrapper"]]
+                                    [[a href="http://paperkontainer.wikidot.com/local--files/papermask:going-by-the-abc/inn.html"class="anchor"  rel="noreferrer noopener" target="_blank"]]filename[[/a]]
+                                    [[div_ class="metadata"]]
+                                    filesize
+                                    [[/div]]
+                                [[/div]]
+                            [[/div]]
+                            [[a class="anchor" href="http://paperkontainer.wikidot.com/local--files/papermask:going-by-the-abc/inn.html" target="_blank"]][[/a]]
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER2 MESSAGE --]
+                [[div_ class="message user2"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]
+                        user2
+                        [[/div]]
+                        [[div_ class="content"]]
+                        Let me take a look.
+                        [[/div]]
+                        [[div_ class="content"]]
+                        ...that file is corrupted.
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+            [[/div]]
+        [[/div]]
+    [[/div]]
+[[/div]]
+
+Sophie checks the file again. Corrupted. Maybe the upload just went wrong, so she decides to upload it yet again.
+
+[[div_ class="discord"]]
+    [[div_ class="messages-panel"]]
+        [[div_ class="messages-group"]]
+            [[div_ class="messages"]]
+                [!-- USER1 ATTACHMENT --]
+                [[div_ class="message user1 attach1"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]
+                            user1
+                        [[/div]]
+                        [[div_ class="attachment"]]
+                            [[div_ class="icon-code"]]
+                            [[/div]]
+                            [[div_ class="attachmentInner"]]
+                                [[div_ class="filenameLinkWrapper"]]
+                                    [[a href="http://paperkontainer.wikidot.com/local--files/papermask:going-by-the-abc/inn.html"class="anchor"  rel="noreferrer noopener" target="_blank"]]filename[[/a]]
+                                    [[div_ class="metadata"]]
+                                    filesize
+                                    [[/div]]
+                                [[/div]]
+                            [[/div]]
+                            [[a class="anchor" href="http://paperkontainer.wikidot.com/local--files/papermask:going-by-the-abc/inn.html" target="_blank"]][[/a]]
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+            [[/div]]
+        [[/div]]
+    [[/div]]
+[[/div]]
+
+But it is still corrupted. Something went wrong. She checks her files again. 
+
+A portion of the files for Knights of Terra are corrupted. Mostly files for indoors textures, models and scripts. She hears a deep voice ring over the loudspeakers of the building.
+
+"Ms. Lancester, to the Manager's office. This is urgent."
+
+She stands up from her office chair and swiftly walks towards the glass door used to exit her department.
+
+She walks up the staircase covered in a big blue carpet, passes by the support department and enters the managers department. Her manager is sitting on his way too comfortable office chair.
+
+"Did you notice already?" Mr. Hunt spouts even before Sophie has a chance to just sit down.
+
+"Just right now, yes. Listen, I myself don't know what happened."
+
+Mr. Hunt sighs. "We promised to release this game by autumn next year. Now, your bloody team fucks up and half of your files are corrupted. This is bad, Ms. Lancester. Fix this."
+
+"We could load up a backup and--"
+
+"When was the last backup made?"
+
+"About three weeks ago."
+
+"Good, load that up. Now get out."
+
+Sophie is quick to stand up. When she gets out and passes the support section, she feels a cramp in her chest. Her vision starts to get blurry and her throat tightening up. She attempts to grasp for air, only to slowly lose control over her muscles. She quickly grabs into her pocket to get her inhaler. She takes it, puts it in her mouth and presses the orange button on the top. She feels her throat loosening up and takes in a lot of air. And so, she walks back to her office chair.
+
+She exhales and opens private messages. 
+
+[[div_ class="discord"]]
+    [[div_ class="messages-panel"]]
+        [[div_ class="messages-group"]]
+            [[div_ class="messages"]]
+                [!-- USER1 MESSAGE --]
+                [[div_ class="message user1"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user1
+                        [[/div]]
+                        [[div_ class="content"]]
+                        Hey. You there, James?
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER3 MESSAGE --]
+                [[div_ class="message user3"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]
+                        user3
+                        [[/div]]
+                        [[div_ class="content"]]
+                        Here.
+                        [[/div]]
+                        [[div_ class="content"]]
+                        You got something for me?
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER1 MESSAGE --]
+                [[div_ class="message user1"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user1
+                        [[/div]]
+                        [[div_ class="content"]]
+                        Could you load up the backup for our server files for Knights of Terra from last week?
+                        [[/div]]
+                        [[div_ class="content"]]
+                        Something went wrong with our files. Half of them just went corrupt.
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER3 MESSAGE --]
+                [[div_ class="message user3"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]
+                        user3
+                        [[/div]]
+                        [[div_ class="content"]]
+                        Do you know the source of the corruption yet?
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER1 MESSAGE --]
+                [[div_ class="message user1"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user1
+                        [[/div]]
+                        [[div_ class="content"]]
+                        Not yet. Could you look into that as well?
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER3 MESSAGE --]
+                [[div_ class="message user3"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]
+                        user3
+                        [[/div]]
+                        [[div_ class="content"]]
+                        On it.
+                        [[/div]]
+                        [[div_ class="content"]]
+                        This is strange.
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER1 MESSAGE --]
+                [[div_ class="message user1"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]
+                        user1
+                        [[/div]]
+                        [[div_ class="content"]]
+                        What is it?
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER3 MESSAGE --]
+                [[div_ class="message user3"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]
+                        user3
+                        [[/div]]
+                        [[div_ class="content"]]
+                        The records on who did what.
+                        [[/div]]
+                        [[div_ class="content"]]
+                        The one for the last two days are corrupted.
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+            [[/div]]
+        [[/div]]
+    [[/div]]
+[[/div]]
+@@ @@
+Sophie gets nervous. She quickly takes out her inhaler and breathes in another shot, just in case. 
+@@ @@
+@@ @@
+[[div_ class="discord"]]
+    [[div_ class="messages-panel"]]
+        [[div_ class="messages-group"]]
+            [[div_ class="messages"]]
+                [!-- USER1 MESSAGE --]
+                [[div_ class="message user1"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user1
+                        [[/div]]
+                        [[div_ class="content"]]
+                        The backup still works, yeah?
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER3 MESSAGE --]
+                [[div_ class="message user3"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user3
+                        [[/div]]
+                        [[div_ class="content"]]
+                        Yeah, that one still works. Uploading it now. Should be done in two hours.
+                        [[/div]]
+                        [[div_ class="content"]]
+                        Now your team gets an early break. Lucky you.
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER1 MESSAGE --]
+                [[div_ class="message user1"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user1
+                        [[/div]]
+                        [[div_ class="content"]]
+                        I wouldn't really call our current situation "lucky". We have about three weeks of work to catch up on.
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER3 MESSAGE --]
+                [[div_ class="message user3"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user3
+                        [[/div]]
+                        [[div_ class="content"]]
+                        Yeah, fair enough. Sorry for that comment.
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+            [[/div]]
+        [[/div]]
+    [[/div]]
+[[/div]]
+
+Sophie sighs. She opens another PM chat.
+[[div_ class="discord"]]
+    [[div_ class="messages-panel"]]
+        [[div_ class="messages-group"]]
+            [[div_ class="messages"]]
+                [!-- USER1 MESSAGE --]
+                [[div_ class="message user1"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user1
+                        [[/div]]
+                        [[div_ class="content"]]
+                        Mr. Hunt? 
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER4 MESSAGE --]
+                [[div_ class="message user4"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user4
+                        [[/div]]
+                        [[div_ class="content"]]
+                        Have you spoken to Mr. Seybold about the backup yet? 
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER1 MESSAGE --]
+                [[div_ class="message user1"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user1
+                        [[/div]]
+                        [[div_ class="content"]]
+                        Yes. 
+                        [[/div]]
+                        [[div_ class="content"]]
+                        Gonna take two hours though. In the meantime, we can't do anything. 
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER4 MESSAGE --]
+                [[div_ class="message user4"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user4
+                        [[/div]]
+                        [[div_ class="content"]]
+                        Plan on the story elements in the meantime. 
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER1 MESSAGE --]
+                [[div_ class="message user1"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user1
+                        [[/div]]
+                        [[div_ class="content"]]
+                        We've already planned the entire story for the game, Sir. 
+                        [[/div]]
+                        [[div_ class="content"]]
+                        We're way beyond the planning stage. 
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER4 MESSAGE --]
+                [[div_ class="message user4"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user4
+                        [[/div]]
+                        [[div_ class="content"]]
+                        Plan some easter eggs and achievements then. Do //something//. Make yourself useful. 
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+            [[/div]]
+        [[/div]]
+    [[/div]]
+[[/div]]
+
+//Make yourself useful.//
+
+Over the course of the next two hours, Sophie's team plans a total of 5 easter eggs and 13 achievements. During this entire time, she has this nagging thought in the back of her head: //someone is behind this.// The files went corrupt for whatever reason, and the access history of the files went corrupt as well. What if someone corrupted the files before corrupting the history to hide their wrongdoings? Sophie brushes it off. //It's nothing. I'm just paranoid again.//
+
+She went to sit back down at her computer. 
+@@ @@
+[[div_ class="discord"]]
+    [[div_ class="messages-panel"]]
+        [[div_ class="messages-group"]]
+            [[div_ class="messages"]]
+                [!-- USER3 MESSAGE --]
+                [[div_ class="message user3"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user3
+                        [[/div]]
+                        [[div_ class="content"]]
+                        Backup is done.
+                        [[/div]]
+                        [[div_ class="content"]]
+                        I also found something more worrying.
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER1 MESSAGE --]
+                [[div_ class="message user1"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user1
+                        [[/div]]
+                        [[div_ class="content"]]
+                        Really?
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER3 MESSAGE --]
+                [[div_ class="message user3"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user3
+                        [[/div]]
+                        [[div_ class="content"]]
+                        Yep. Let me just add Hunt to the chat. This is... //worrying//.
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER5 MESSAGE --]
+                [[div_ class="message user5"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user5
+                        [[/div]]
+                        [[div_ class="content"]]
+                        ##0087E5|@LazyJim## has added ##0087E5|@Hunt## to the conversation.
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER3 MESSAGE --]
+                [[div_ class="message user3"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user3
+                        [[/div]]
+                        [[div_ class="content"]]
+                        There might be something of worry, Mr. ##0087E5|@Hunt##.
+                       [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER4 MESSAGE --]
+                [[div_ class="message user4"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user4
+                        [[/div]]
+                        [[div_ class="content"]]
+                        Did the backup not work?
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER3 MESSAGE --]
+                [[div_ class="message user3"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user3
+                        [[/div]]
+                        [[div_ class="content"]]
+                        The backup worked perfectly fine. 
+                       [[/div]]
+                        [[div_ class="content"]]
+                        While uploading the backup, though, I noticed a .mp3 just randomly appeared. I let it run through our antivirus and it was clean. I opened it and it was just some random noise. I brushed it off as a bug and deleted the file. Later on, I got the thought that it might be a hidden message. I recovered the file and converted it into a .txt. Bingo - it was actual letters. Usually, when you convert a .mp3, all you get is a bunch of bizarre symbols. This, however, was actual lettering. It was still some nonsensical garbage, though. Tried decoding it with some encryption decoders. I didn't really expect to get anything - but when I ran it through Base64, one of the most basic encrypters out there, I got the message. An actual letter.
+                       [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER4 MESSAGE --]
+                [[div_ class="message user4"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user4
+                        [[/div]]
+                        [[div_ class="content"]]
+                        What does it say?
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER3 MESSAGE --]
+                [[div_ class="message user3"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user3
+                        [[/div]]
+                        [[div_ class="content"]]
+                        Just see for yourself.
+                       [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER3 ATTACHMENT --]
+                [[div_ class="message user3 attach2"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]
+                            user3
+                        [[/div]]
+                        [[div_ class="attachment"]]
+                            [[div_ class="icon-code"]]
+                            [[/div]]
+                            [[div_ class="attachmentInner"]]
+                                [[div_ class="filenameLinkWrapper"]]
+                                    [[a href="http://paperkontainer.wdfiles.com/local--files/papermask%3Agoing-by-the-abc/letter.html"class="anchor"  rel="noreferrer noopener" target="_blank"]]filename[[/a]]
+                                    [[div_ class="metadata"]]
+                                    filesize
+                                    [[/div]]
+                                [[/div]]
+                            [[/div]]
+                            [[a class="anchor" href="http://paperkontainer.wdfiles.com/local--files/papermask%3Agoing-by-the-abc/letter.html" target="_blank"]][[/a]]
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+            [[/div]]
+        [[/div]]
+    [[/div]]
+[[/div]]
+
+As Sophie reads the letter she clenches onto the armrests of her chair. She feels her breathing getting stronger and faster. Her eyes close themselves. //Stay calm. This-... This is fixable.//
+@@ @@
+[[div_ class="discord"]]
+    [[div_ class="messages-panel"]]
+        [[div_ class="messages-group"]]
+            [[div_ class="messages"]]
+                [!-- USER4 MESSAGE --]
+                [[div_ class="message user4"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user4
+                        [[/div]]
+                        [[div_ class="content"]]
+                        I'll inform higherups this very instant. Ms. Lancester, I know that your game isn't plagarized, the only thing the two have in common is that they're set during medieval times. They're reaching. 
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER3 MESSAGE --]
+                [[div_ class="message user3"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user3
+                        [[/div]]
+                        [[div_ class="content"]]
+                        Their game was 2D, ours is a VR Game! They have nothing in common! This is preposterous.
+                       [[/div]]
+                    [[/div]]
+                [[/div]]
+            [[/div]]
+        [[/div]]
+    [[/div]]
+[[/div]]
+
+Sophie gets dizzy. She stands up from her chair and opens the window. Disgusting polluted London air enters the room, and she closed the window again. 
+
+They have three weeks of work to catch up on, so the team starts programming //fast//. 
+
+A total of two hours pass in which Sophie programmed her literal ass off. 
+
+It was when she returns from a small toilet break that she finds many disstressed looks on the faces of her colleagues.
+
+As she slowely goes onto the databank of her Studio, she hears murmurs and sounds of distress coming from her colleagues. She doesn't even need to navigate down to the Knights of Terra files to see the damage. Most files were completely missing. Instead of several folders with games in them, there is a single .txt file. Sophie opens it. The PC tells her that another user from the studio was already using it, so she opens a copy.
+
+
+[[image mmletter.png]]
+
+
+
+Within an instant, she opens her chat program and attempts contacting her manager.
+
+[[div_ class="discord"]]
+    [[div_ class="messages-panel"]]
+        [[div_ class="messages-group"]]
+            [[div_ class="messages"]]
+                [!-- USER1 MESSAGE --]
+                [[div_ class="message user1"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user1
+                        [[/div]]
+                        [[div_ class="content"]]
+                        Mr. Hunt? Are you there?
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER4 MESSAGE --]
+                [[div_ class="message user4"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user4
+                        [[/div]]
+                        [[div_ class="content"]]
+                        Is something the matter? I was just busy writing the incident report for the sabotage yesterday.
+                       [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER1 MESSAGE --]
+                [[div_ class="message user1"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user1
+                        [[/div]]
+                        [[div_ class="content"]]
+                        Check out the database.
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER4 MESSAGE --]
+                [[div_ class="message user4"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user4
+                        [[/div]]
+                        [[div_ class="content"]]
+                        Motherfuckers.
+                        [[/div]]
+                        [[div_ class="content"]]
+                        I actually had contact with one M&M Salesperson recently. Let me add that shithead.
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER5 MESSAGE --]
+                [[div_ class="message user5"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user5
+                        [[/div]]
+                        [[div_ class="content"]]
+                        ##0087E5|@Hunt## has added ##0087E5|@Your Average Perfect Human Being## to the conversation.
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER6 MESSAGE --]
+                [[div_ class="message user6"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user6
+                        [[/div]]
+                        [[div_ class="content"]]
+                        Is something important the matter or do you addicts just want to waste my time?
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER4 MESSAGE --]
+                [[div_ class="message user4"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user4
+                        [[/div]]
+                        [[div_ class="content"]]
+                        We've seen your message.
+                        [[/div]]
+                        [[div_ class="content"]]
+                        Revert the damage you've done or we'll press legal charges.
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+                [!-- USER6 MESSAGE --]
+                [[div_ class="message user6"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user6
+                        [[/div]]
+                        [[div_ class="content"]]
+                        If you do press legal charges, an investigation would be executed. An investigation that would then find out more about your "paratechnical department", run by your trusty aid James Seybold, responsible for making your games so addictive. 
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+            [[/div]]
+        [[/div]]
+    [[/div]]
+[[/div]]
+
+Sophie has never heard of a paratechnical department inside of I&I, and James is responsible for the servers, not for some department.
+[[div_ class="discord"]]
+    [[div_ class="messages-panel"]]
+        [[div_ class="messages-group"]]
+            [[div_ class="messages"]]
+                [!-- USER6 MESSAGE --]
+                [[div_ class="message user6"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user6
+                        [[/div]]
+                        [[div_ class="content"]]
+                        Your entire company would go down and you'd be arrested and taken into custody by you know who. There's nothing you can do. 
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+            [[/div]]
+        [[/div]]
+    [[/div]]
+[[/div]]
+
+Sophie wants to call the M&M Salesperson out on their bluff, but before she could even type...
+
+[[div_ class="discord"]]
+    [[div_ class="messages-panel"]]
+        [[div_ class="messages-group"]]
+            [[div_ class="messages"]]
+                [!-- USER5 MESSAGE --]
+                [[div_ class="message user5"]]
+                    [[div_ class="icon"]]
+                    [[/div]]
+                    [[div_ class="body"]]
+                        [[div_ class="user-name"]]                     
+                        user5
+                        [[/div]]
+                        [[div_ class="content"]]
+                        User ##0087E5|@Hunt## has kicked you from the conversation.
+                        [[/div]]
+                    [[/div]]
+                [[/div]]
+            [[/div]]
+        [[/div]]
+    [[/div]]
+[[/div]]
