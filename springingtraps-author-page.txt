@@ -1,0 +1,277 @@
+title:Springingtraps Author Page
+[[module CSS]]
+
+@import url(http://springtest.wikidot.com/component:theme/code/1);
+
+div.terminal{
+    border: 1px solid black;
+    border: solid 3px #BBBBBB;
+    border-radius: 16px;
+    background-color: #0894d6;
+/* black shadow at the top of the terminal */
+    background-image: 
+        radial-gradient(ellipse 1000% 100% at 50% 90%, transparent, #122);
+    background-position: center;
+    display: block;
+/* shadow around the terminal */
+    box-shadow: inset 0 0 10em 1em rgba(0,0,0,1);
+/* prevents scanline from forming a scrollwheel */
+    overflow:hidden;
+}
+div.terminal blockquote {
+    background-color: black;
+    border: double 3px #80e2ff
+}
+div.scanline{
+    margin-top: -40%;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    pointer-events: none;
+/* Safari 4.0 - 8.0 */
+    -webkit-animation: scan 12s linear 0s infinite; /* You may need to change this. If the bar goes by too quickly, increase 5s. */
+    animation: scan 12s linear 0s infinite; /* Same as above */
+    background: linear-gradient(to bottom, rgba(56, 112, 82,0), rgba(56, 112, 82,0.1)) !important;
+}
+div.text{
+    color: rgba(128, 255, 225, 0.8);
+    padding-left: 2em;
+    padding-top: 40%;
+    font-family: monospace;
+    font-size: 1.2em;
+    }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes scan{
+    from{ transform: translateY(-10%);}
+    to{  transform: translateY(5000%);} /* You may need to change this depending on the length of your terminal. If the scanline stops halfway, increase the second number.*/
+}
+
+@keyframes scan{
+    from{ transform: translateY(-10%);}
+    to{  transform: translateY(5000%);} /* Same as above.*/
+}
+
+div.text a {
+    color: #90eeec;
+    text-decoration: none;
+    background: transparent;
+}
+div.text a.newpage {
+    color: #90eedd;
+    text-decoration: none;
+    background: transparent;
+}
+div.text a:hover {
+    color: #112d33;
+    text-decoration: underline;
+    background-color: #80fffc;
+    padding: 1px;
+}
+div.text a:hover::before{
+content: "> ";
+}
+
+.article {
+    border: solid 1px #00ffff;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 6px #666;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.1);
+    background: #0045ff;
+}
+
+.article-title {
+    display: inline-block;
+    float: left;
+    padding-left: 15px;
+    margin-top: -8px;
+    margin-bottom: -8px;
+    font-weight: bold;
+    font-size: 90%;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
+}
+
+.article-title a{
+    color: #fff;
+}
+
+.rating {
+    display: inline-block;
+    float: right;
+    padding-right: 15px;
+    margin-top: -8px;
+    margin-bottom: -8px;
+    font-weight: bold;
+    font-size: 90%;
+    color: #fff;
+}
+
+.article-body {
+    display: inline-block;
+    width: auto;
+    height: 140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-style: italic;
+    background: url("http://www.scp-wiki.net/local--files/component:theme/panel-bg-gradient-reverse.png") repeat-x scroll center bottom #fff;
+}
+
+.article-footer {
+    display: inline-block;
+    width: 100%;
+    height: 17px;
+    padding-left: 15px;
+    padding-top: 3px;
+}
+
+.article-footer a {
+    margin-right: 15px;
+}
+
+.col-left {
+    float: left;
+    width: 48%;
+}
+
+.col-right {
+    float: right;
+    width: 48%;
+
+[[/module]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[div class="terminal"]]
+[[div class="scanline"]]
+[[/div]]
+[[div class="text"]]
+[[=]]
+[[size 150%]] __Terminal 001__[[/size]]
+@@ @@
+@@ @@
+@@------@@
+Welcome, User
+@@------@@
+[[/=]]
+@@ @@
+@@ @@
+@@ @@
+sys.init-startup
+
+INITIATING STARTUP MAINTENANCE SEQUENCE...
+█
+
+CPU FAN .  .  . OPERATIONAL
+████
+
+MOTHERBOARD .  .  . OPERATIONAL
+█████████
+
+HARD STORAGE .  .  . OPERATIONAL
+██████████████
+
+MONITOR DISPLAY .  .  . OPERATIONAL
+████████████████████████
+
+STARTUP MAINTENANCE SEQUENCE COMPLETE
+██████████████████████████
+
+BOOTING UP.  .  .
+
+@@ @@
+@@ @@
+[[/div]]
+[[/div]]
+
+@@ @@
+@@ @@
+
+@@ @@
+@@ @@
+
+[[=]]
+[[size 300%]]##1e90ff|**Welcome to my author page!**##[[/size]]
+[[/=]]
+
+@@ @@
+@@ @@
+
+------
+
+[[collapsible show="▼ Introduction" hide="▲ Introduction"]]
+> **Name:** SpringingTraps
+> 
+> **Favorite Color:** Do you //really// need to ask?[[footnote]]If so, it's cyan.[[/footnote]]
+> 
+> **Hobbies:** Gaming, Game Developing, 3D Modeling, Taking Stuff Apart, Collecting 1990s CD-ROMs
+> 
+> **Likes:** Art, Computers, MIDI Covers (not the loud piano slamming kind), Video Games, Dank Memes, [[[https://www.reddit.com/r/okbuddyretard/ | r/okbuddyretard]]], FNaF, BaTIM
+> 
+> **Dislikes:** School, Math, MIDI Covers (the loud piano slamming kind), Quiche 
+[[/collapsible]]
+
+[[collapsible show="▼ My SCP Index" hide="▲ My SCP Index"]]
+
+@@ @@
+@@ @@
+
+[[div class="terminal"]]
+[[div class="scanline"]]
+[[/div]]
+[[div class="text"]]
+[[=]]
+[[size 150%]] __SpringingTraps' SCP Index__[[/size]]
+@@ @@
+@@ @@
+@@------@@
+It's everything I've written!
+@@------@@
+[[/=]]
+@@ @@
+@@ @@
+@@ @@
+
+* **[[size 150%]][[[SCP-4072]]][[/size]]** January 28th, 2019 //(My first successful SCP!)//
+* **[[size 150%]][[[SCP-4230]]][[/size]]** February 8th, 2019
+* **[[size 150%]][[[SCP-4370]]][[/size]]** February 27th, 2019
+@@ @@
+@@ @@
+[[/div]]
+[[/div]]
+@@ @@
+@@ @@
+[[/collapsible]]
+
+[[collapsible show="▼ Q&A" hide="▲ Q&A"]]
+> **Q:** Why are you on the SCP Wiki?
+> 
+> **A:** I've heard of SCPs for a while now, but I only recently started contributing. I just think this is a really cool site full of really cool stories and cool anomalies made by cool people, and would like to be part of that.
+> ------
+> **Q:** Are you like, ten or something? After all, your name and persona are related to Five Nights at Fre-
+> 
+> **A: Let me stop you right there.** I made my name around two years ago in November of 2016, right after the release of //Sister Location//. I made my name specifically to join the Five Nights at Freddy's subreddit. However, I've moved on from those days, and definitely have matured.
+> 
+> My persona on the other hand, was sort of based on Five Nights at Freddy's, but has //nothing// to do with the actual franchise.  
+> 
+> That's not to say I'm not a fan of the franchise anymore. I absolutely love it.
+> ------
+> **Q:** Who's that blue rabbit I see associated with you all the time?
+> 
+> **A:** That's Source. He's my persona that I made in July of 2017. I use him to represent myself online, since drawing people is difficult, but drawing a bipedal rabbit alien thing made of simple shapes is easy-peasy!
+> ------
+> **Q:** How long does it take you to write an SCP?
+> 
+> **A:** A while, usually around a week or more.
+> ------
+> **Q:** Don't you ever get sick of the color cyan?
+> 
+> **A:** ##teal|Nope.##
+> ------
+> 
+[[/collapsible]]
+
+------
