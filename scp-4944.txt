@@ -1,0 +1,236 @@
+title:SCP-4944
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[module CSS]]
+
+div.terminal{
+    border: 1px solid black;
+    border: solid 3px #BBBBBB;
+    border-radius: 16px;
+    background-color: #037aba;
+/* black shadow at the top of the terminal */
+    background-image: 
+        radial-gradient(ellipse 1000% 100% at 50% 90%, transparent, #111c22);
+    background-position: center;
+    display: block;
+/* shadow around the terminal */
+    box-shadow: inset 0 0 10em 1em rgba(0,0,0,0.5);
+/* prevents scanline from forming a scrollwheel */
+    overflow:hidden;
+}
+div.terminal blockquote {
+    background-color: black;
+    border: double 3px #88efe8
+}
+div.scanline{
+    margin-top: -40%;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    pointer-events: none;
+/* Safari 4.0 - 8.0 */
+    -webkit-animation: scan 12s linear 0s infinite; /* You may need to change this. If the bar goes by too quickly, increase 5s. */
+    animation: scan 12s linear 0s infinite; /* Same as above */
+    background: linear-gradient(to bottom, rgba(56, 112, 82,0), rgba(56, 112, 82,0.1)) !important;
+}
+
+div.text{
+    color: rgba(136,239,232,0.8);
+    padding-left: 2em;
+    padding-top: 40%;
+    font-family: monospace;
+    font-size: 1.2em;
+    }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes scan{
+    from{ transform: translateY(-10%);}
+    to{  transform: translateY(5000%);} /* You may need to change this depending on the length of your terminal. If the scanline stops halfway, increase the second number.*/
+}
+
+@keyframes scan{
+    from{ transform: translateY(-10%);}
+    to{  transform: translateY(5000%);} /* Same as above.*/
+}
+
+div.text a {
+    color: #88efe8;
+    text-decoration: none;
+    background: transparent;
+}
+div.text a.newpage {
+    color: #88efe8;
+    text-decoration: none;
+    background: transparent;
+}
+div.text a:hover {
+    color: #111c22;
+    text-decoration: underline;
+    background-color: #88efe8;
+    padding: 1px;
+}
+div.text a:hover::before{
+content: "> ";
+}
+[[/module]]
+
+
+[[include :kaktuskontainer:component:nuscp-dev]]
+
+[[module CSS]]
+.yui-navset .yui-content {
+    background-color: transparent;
+}
+.yui-navset .yui-content, .yui-navset .yui-navset-top .yui-content {
+    border: none;
+}
+.yui-navset .yui-nav, .yui-navset .yui-navset-top .yui-nav {
+    border: none;
+}
+[[/module]]
+[[div style="background: url(http://kaktuskontainer.wdfiles.com/local--files/format-hell/scp_trans.png) bottom center no-repeat; text-align: center; width: 600px; margin: 0 auto; font-size: 20px; padding: 0px;"]]
+
+@@ @@
+@@ @@
+
+@@ @@
+
+@@ @@
+
+[[=]]
+++* ##black|BY ORDER OF THE OVERSEER COUNCIL##
+##black|The following file is Level 3/4944 classified. Unauthorized access is forbidden.##
+[[/=]]
+= **##black|4944##**
+[[/div]]
+@@@@
+[[=]]
+
+[[include :scp-sandbox-3:component:collapsible-top show=〔Input Level-3 Credentials〕|hide=〔Authorization Granted.〕]]
+
+[[<]]
+@@@@
+[[include :scp-wiki:component:classified-decoration
+|lv=3
+|item=4944
+|oc=Safe
+|lang=EN
+]]
+----
+
+[[div class="scp-image-block block-center" style="width:100%;"]]
+[[image coffee.jpg style="width:100%;" link=#]]
+[[div class="scp-image-caption" style="width:100%;"]]
+SCP-4944 prior to containment.
+[[/div]]
+[[/div]]
+
+----
+
+**Special Containment Procedures:** SCP-4944 has been stored in an open containment cell[[footnote]] Designated Site-876-C. [[/footnote]] large enough to accommodate SCP-4944-B. Caffeinated fluid is to be brought to SCP-4944 on a bi-daily basis unless a test is being conducted, which must be approved by personnel with clearance level 4 or higher. Drains are to be installed in the ground of Site-876-C in case a of failure to bring caffeine. Drains are only to be blocked if a test if being conducted.
+
+**Description:** SCP-4944 is the designation given to two perspectives of the same object, SCP-4944-A, the appearance of a coffee machine, and SCP-4944-B, the actual physical body of SCP-4944. SCP-4944-B resembles a 100 meter long cargo vessel. Although the name cannot be deciphered, the architecture of the hull and stern of the ship can imply that the intended use of SCP-4944-B was to import exotic goods[[footnote]] This includes coffee beans.[[/footnote]] from Brazil to several locations in North America. When viewed directly[[footnote]]Photographs and videos included.[[/footnote]], SCP-4944-A has the appearance of a standard [[span class="bblock"]]//Keurig//[[/span]] brand coffee machine, circa 2012-2016. Although bearing the appearance of a [[span class="bblock"]]//Keurig//[[/span]] brand coffee machine, 3-dimensional digital mapping reveals the actual shape of SCP-4944 as SCP-4944-B. Although seemingly transparent, SCP-4944-B still exists physically, creating the illusion that an invisible border exists around SCP-4944-A.
+
+[[include :scp-sandbox-3:image-zoom name=3d.jpg|caption=A 3-dimensional digital map of SCP-4944's physical body outlined in red. Note that SCP-4944-A is not visible in the image.|width=400px|align=right]]
+
+If any form of caffeine enters within 10 meters of SCP-4944-B, the fog horns installed in SCP-4944-B will activate, and will only cease if the caffeine is laid in front of SCP-4944-B or leaves the premises. Although the noise exceeds 100-135 decibels, any organism able to hear the disruption is not disturbed by the noise.[[footnote]] This includes audio and video files.[[/footnote]] Personnel who are exposed to the sound report not hearing anything out of the ordinary while listening. Unedited audio of the noise produced by SCP-4944-B follows.
+
+,,Note: 97.7% of subjects report hearing an absence of noise during the following file.,,
+[[include :snippets:html5player
+    |type=audio
+    |url=http://scp-sandbox-3.wdfiles.com/local--files/researcherpie/10.mp3
+]]
+
+When presented with coffee or any form of caffeine in a liquid state, the liquid will begin to evaporate at an accelerated speed, especially if the substance contains traces of coffee beans. If not given caffeine within ~2 days, SCP-4944-A will begin to excrete an opaque, brown, viscous fluid similar to that of syrup from its base. This process will proceed until presented with caffeine. At this time SCP-4944 will begin to absorb the fluid back into SCP-4944-A's water chamber,[[footnote]] On most modern coffee machine designs, the water chamber is a container that is to be filled with water, as to mix the water with the powder given to produce a hot drink.[[/footnote]] even if the amount of fluid exuded from SCP-4944 is beyond the holding capacity of the chamber. The substance produced by SCP-4944 does not have any hazardous effects, but is extremely viscid, and has high levels of glucose and gelatin, causing the fluid to be highly sweet when tasted.
+
+Once SCP-4944 has ingested caffeinated fluid, SCP-4944 will again blow its built in fog horn,[[footnote]]The pitch of this noise varies, reaching up to around 9,000 Hz, although these noises are audible to the human ear.[[/footnote]] When viewed in a virtual oscilloscope[[footnote]]An instrument commonly used to display and analyze the waveform of electronic signals.[[/footnote]], variations of "I'm done," "coffe [sic]," or "More pls [sic]" are seen. SCP-4944 also uses an abundance of emoticons[[footnote]]a representation of a facial expression formed by various combinations of keyboard characters and used to convey the writer's feelings or intended tone.[[/footnote]] using the standard "qwerty" keyboard. If asked a question, SCP-4944 will comply and exude a noise that when put into an oscilloscope, will show words that vaguely answer the questions asked. This implies that SCP-4944 has some level of sentience.
+
+A test was conducted on SCP-4944 to answer several questions.
+
+||~ Question ||~ Answer seen through oscilloscope||
+|| "What are you?" || "Don't care, need bean." || 
+|| "Why do you enjoy caffeine?" || "I have the addiction to coffe :(" [sic] || 
+|| "What is the fluid you excrete when not supplied with caffeine?"  || "Coffe. drinky drinky." [sic] || 
+|| "What were you used for?" || "COFFE" [sic] || 
+|| "Why do you bear the appearance of a coffee machine?" || "Practicing impression." ||
+
+After several more questions, it is confirmed that SCP-4944 was once a cargo ship used for importing coffee beans from Brazil to North America. SCP-4944 claims to have an addiction to caffeine and coffee, likely from the abundance of coffee bean and other exotic goods shipments made with SCP-4944-B. For more information on SCP-4944's sentience, see Document-944G.
+
+Several tests have been conducted on SCP-4944 for further research into what SCP-4944 consumes and the limits of such.
+
+[[div style="display: inline-block; border:dashed 1px #999999; background:#F5F5F5; float:center; width:84%; padding:1px 15px; margin: 10px 10px 10px 40px"]]
+[[collapsible show="Experiments 491-8" hide="Credentials Accepted."]]
+= **Base**
+> [Experiment-#]
+> **Request:** [Request]
+> 
+> **Status:** [Approved/denied]
+> 
+> **Results:** [Results]
+----
+> Experiment-491
+> **Request:** Black coffee.
+> 
+> **Status:** Approved.
+> 
+> **Results:** SCP-4944 "drinks" the coffee within 5 hours.
+
+> Experiment-492
+> **Request:** Ordinary 2% milk.
+> 
+> **Status:** Approved.
+> 
+> **Results:** Level of milk is unchanged within 10 hours. SCP-4944 emits the words "This isn't coffe bean!! >:(" [sic]
+
+> Experiment-493
+> **Request:** Espresso with two shots of caffeine.
+> 
+> **Status:** Approved.
+> 
+> **Results:** Drink is absorbed within 2 hours. SCP-4944 emits the words "Oh heckle yeah I like that stuff... More pls." [sic]
+
+> Experiment-494
+> **Request:** Raw caffeine powder.
+> 
+> **Status:** Denied.
+> 
+> **Reason:** SCP-4944 only ingests caffeine in the liquid form.
+
+> Experiment-495
+> **Request:** Energy drink.
+> 
+> **Status:** Approved.
+> 
+> **Results:** SCP-4944 only ingests half of the drink within 5 hours. SCP-4944 emits "uhhhh. helo? this is not coffe." [sic]
+
+> Experiment-496
+> **Request:** Water with raw caffeine mixed in.
+> 
+> **Status:** Approved
+> 
+> **Results:** SCP-4944 ingests the fluid within 3 hours. SCP-4944 emits "haha this is a strange coffe thank very much sir :)" [sic]
+
+> Experiment-497
+> **Request:** Pure bleach with raw caffeine powder mixed in.
+> 
+> **Status:** Approved.
+> 
+> **Results:** SCP-4944 ingests within 30 minutes. SCP-4944 emits "delicos coffe" [sic] with no side-effects.
+
+> Experiment-498
+> **Request:** [http://www.scp-wiki.net/scp-3238 SCP-3238] with fire symbol.
+> 
+> **Status:** Approved
+> 
+> **Results:** SCP-4944 ingests the drink within 2 hours. SCP-4944 emits "ow!!! owie!!! haha! just kidding, I canot feel pain as I am a cargo ship." [sic] SCP-4944 does not show any side-effects.
+[[/div]]
+@@@@
+@@@@
+@@@@
+[[/<]]
+[[/collapsible]]
+[[footnoteblock]]
+[[include :scp-sandbox-3:component:collapsible-bottom show=ACCESS DATA FILE|hide= ]]
+[[/=]]
