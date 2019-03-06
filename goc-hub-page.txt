@@ -259,7 +259,232 @@ A cult based around **KTE-9927-Black** ("The Goddess") attempts to complete an i
 * %%title_linked%%
 [[/module]]
 
-To create further reports, please use [http://scpsandbox2.wikidot.com/goc-format-template this style template].
+[[/tab]]
+[[tab Casefile Template]]
+This is meant to be a very dynamic format, consisting of a collection of records on your Threat Entities from the various departments and organizations that make up the GOC. Due to this: the below sections can either be expanded upon or excised entirely at your discretion, depending on the nature of the story you want to tell.
+
++ REQUIRED READING: 
+It would probably be a good idea to read through [[[http://www.scp-wiki.net/goc-hub-page|this ]]] before starting, to familiarize yourself with the structure of the GOC. Go [[[http://www.scp-wiki.net/goc-supplemental-threat-entities|here]]] to get an idea of naming conventions used in Threat Entity documents. (Honestly, you should read all the supplemental though.)
+
+The articles are broken down by the individual branches of the GOC: PHYSICS, PTOLEMY, and PSYCHE divisions, as well as the standard Threat Entity Database entry. There are several types of documents to get you started, but no one document outside the 'Threat Entity Database'  section is critical to the final piece. Also, it should be noted that even the tab order itself is not set in stone. If you think it'll help your pacing to start off with 'PSYCHE Records', and end at 'Threat Entity Database' then so be it.
+
+++ Casefiles structure:
+
+Cover: This pretty little thing is just an added flair. It's an attempt at immersion, as if the tabbed format as a whole are individual documents can be found within the depicted file. 
+
+Threat Entity Database: The GOC equivalent to a standard SCP article.
+
+PTOLEMY Records: Provides operational support to the rest of the organization. This branch includes the Quartermasters Division, Public Relations and Information Concealment, and Research and Development. There are a couple doc formats to get you started.
+
+PSYCHE Records: The diplomatic branch of the GOC. Special Observers may be the first to document an emerging para-threat. May also include testimony from Ambassadors or paranormal liaisons and their interactions with the anomalous community. Internal docs from the various Member Orgs (e.g: letters, memos, occult requests and proposals) can also find their home in this section.
+
+PHYSICS Records: PHYSICS is the GOC's action arm. This would be the place to have reports, exploration logs and debriefings from agents in the field.  ]
+
+
+
++ Threat Entity Database Entry
+
+[[size large]]**Threat ID:**[[/size]]
+
+**[ Threat Alphanumeric designation/descriptor here ]"**
+
+[[size large]]**Authorized Response Level:**[[/size]]
+[[size 0%]][[/size]]
+##red|[[size 250%]] # [[/size]]## **[Enter scale of threat here]**
+
+[[size large]]**Description:**[[/size]]#
+[ Brief description of Threat Entity ]
+ 
+[[size large]]**Liquidation/Rules of Engagement:**[[/size]]
+[ Choose one or the other, depending on the angle of the article. ]
+
+[[collapsible show="What to copy:"]]
+[[code]]
++ Threat Entity Database Entry
+
+[[size large]]**Threat ID:**[[/size]]
+
+**[ Threat Alphanumeric designation/descriptor here ]"**
+
+[[size large]]**Authorized Response Level:**[[/size]]
+[[size 0%]][[/size]]
+##red|[[size 250%]] # [[/size]]## **[Enter scale of threat here ]**
+
+[[size large]]**Description:**[[/size]]##
+[ Brief description of Threat Entity ]
+ 
+[[size large]]**Liquidation/Rules of Engagement:**[[/size]]
+[ Choose one or the other, depending on the angle of the article. ]
+[[/code]]
+[[/collapsible]]
+@@ @@
+@@ @@
+[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[/div]]
+[[div style="border-bottom:1px solid #777;"]]
+[[/div]]
+(Lines like this ^ are used to separate reports from each division.)
+
+[[collapsible show="What to copy:"]]
+[[code]]
+[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[/div]]
+[[div style="border-bottom:1px solid #777;"]]
+[[/div]]
+[[/code]]
+[[/collapsible]]
+
++ PSYCHE Records
+
+> ||~ Parathreat Investigation||
+>
+> __**Special Observer:**__ 
+> 
+> __**Overview:**__
+> 
+> __**Parathreat Evidence:**__
+> 
+> __**Suggested Response/Requests:**__
+
+[[collapsible show="What to copy:"]]
+[[code]]
+> ||~ Parathreat Investigation||
+>
+> __**Special Observer:**__ 
+> 
+> __**Overview:**__
+> 
+> __**Parathreat Evidence:**__
+> 
+> __**Suggested Response/Requests:**__
+[[/code]]
+[[/collapsible]]
+
+[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[/div]]
+[[div style="border-bottom:1px solid #777;"]]
+[[/div]]
+@@ @@
+@@ @@
++ PTOLEMY Records
+
+AOD (Armaments Used in Destruction) Report Template.
+
+> ||||||||~ Quartermasters Division-AOD||
+> ||~ Item||~ Designation||~ Title||~ Qty||
+> ||1||ID#||Name||Amount||
+> ||||||||**Notes:** ||
+> ||2||ID#||Name||Amount||
+> ||||||||**Notes:** ||
+> ||3||ID#||Name||Amount||
+> ||||||||**Notes:** ||
+> ||4||ID#||Name||Amount||
+> ||||||||**Notes:** ||
+> ||5||ID#||Name||Amount||
+> ||||||||**Notes:** ||
+> ||6||ID#||Name||Amount||
+> ||||||||**Notes:** ||
+> ||7||ID#||Name||Amount||
+> ||||||||**Notes:** ||
+[[collapsible show="What to copy:"]]
+[[code]]
+> ||||||||~ Quartermasters Division-AOD||
+> ||~ Item||~ Designation||~ Title||~ Qty||
+> ||1||ID#||Name||Amount||
+> ||||||||**Notes:** ||
+> ||2||ID#||Name||Amount||
+> ||||||||**Notes:** ||
+> ||3||ID#||Name||Amount||
+> ||||||||**Notes:** ||
+> ||4||ID#||Name||Amount||
+> ||||||||**Notes:** ||
+> ||5||ID#||Name||Amount||
+> ||||||||**Notes:** ||
+> ||6||ID#||Name||Amount||
+> ||||||||**Notes:** ||
+> ||7||ID#||Name||Amount||
+> ||||||||**Notes:** ||
+
+[[/code]]
+[[/collapsible]]
+||||||||~ __[ Basic Memo Setup ]__||
+||~ Sender||X||~ Recipient||Y||
+||||||~ Subject|| Z||
+|||||||| [ Basic  memo body] ||
+[[collapsible show="What to copy:"]]
+[[code]]
+||||||||~ __[ Basic Memo Setup ]__||
+||~ Sender||X||~ Recipient||Y||
+||||||~ Subject|| Z||
+|||||||| [ Basic  memo body] ||
+[[/code]]
+[[/collapsible]]
+[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[/div]]
+[[div style="border-bottom:1px solid #777;"]]
+[[/div]]
+@@ @@
+@@ @@
++ PHYSICS Records
+
+
+> ||~ AT/ST Patrol Report (Debrief)||
+>
+> **Involved Assessment/Strike Team:**
+> 
+> **Filing Operative:**
+> 
+> **Mission (Location/Objective):**
+> 
+> **Encounter Report/Enemy Description:**
+> 
+> **Results:**
+> 
+> **Personnel Condition:**
+> 
+> **Conclusions/Recommendations:**
+>
+[[collapsible show="What to copy:"]]
+[[code]]
+> ||~ AT/ST Patrol Report (Debrief)||
+>
+> **Involved Assessment/Strike Team:**
+> 
+> **Filing Operative:**
+> 
+> **Mission (Location/Objective):**
+> 
+> **Encounter Report/Enemy Description:**
+> 
+> **Results:**
+> 
+> **Personnel Condition:**
+> 
+> **Conclusions/Recommendations:**
+>
+[[/code]]
+[[/collapsible]]
+
+> ++ Recorded Interview Log:
+> {{**Date**: 
+> **Interviewer**: Name
+> **Interviewed**: Name}}
+> 
+> {{**Preamble:** Foreword explaining circumstances}} 
+> 
+
+[[collapsible show="What to copy:"]]
+[[code]]
+> ++ Recorded Interview Log:
+> {{**Date**: 
+> **Interviewer**: Name
+> **Interviewed**: Name}}
+> 
+> {{**Preamble:** Foreword explaining circumstances}} 
+> 
+[[/code]]
+[[/collapsible]]
+
 [[/tab]]
 [[tab GOC Tales]]
 [[module ListPages order="ratingAsc" limit="100" tags="-archived -admin -author -sandbox -scp +tale +global-occult-coalition" separate="no" perPage="100"]]
