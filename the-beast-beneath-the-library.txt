@@ -1,12 +1,16 @@
 title:The Beast Beneath the Library
 parent:scp-4051
-[[module CSS]]
-.collapsible-block-folded a.collapsible-block-link {
-    animation: blink 0.8s ease-in-out infinite alternate;
+[[module css]]
+@-webkit-keyframes blinker {
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
 }
-@keyframes blink {
-    0% { color: transparent; }
-    50%, 100% { color: #b01; }
+
+.waitingForConnection {
+  -webkit-animation-name: blinker;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(.5, 0, 1, 1);
+  -webkit-animation-duration: 1.7s;
 }
 [[/module]]
 
