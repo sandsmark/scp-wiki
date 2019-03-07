@@ -72,15 +72,15 @@ Newly Created SCPs
 [[/div]]
 [[/div]]
 
-[!-- Other Block --]
+[!-- Tale/GoI format/Art Block --]
 
 [[div class="content-panel standalone right-column"]]
 [[div class="content-type-title"]]
-Other Newly Created Pages
+Tales, GoI Formats, and Artwork Pages
 [[/div]]
 [[div class="content-type-description"]]
 
-[[module ListPages rating=">=-10" tags="-scp" order="created_at desc" separate="false"  perPage="30" limit="150" urlAttrPrefix="other" prependLine="||~ Page ||~ [[size 0%]]Date Created[[/size]]📆︎ ||~ [[size 0%]]Comments[[/size]]💬︎ ||"]]
+[[module ListPages rating=">=-10" tags="tale goi-format artwork" order="created_at desc" separate="false" perPage="30" limit="150" urlAttrPrefix="tale_goi_art" prependLine="||~ Page ||~ [[size 0%]]Date Created[[/size]]📆︎ ||~ [[size 0%]]Comments[[/size]]💬︎ ||"]]
 || %%title_linked%% || %%created_at|%e%%@<&nbsp;>@%%created_at|%b %R%% || %%comments%% ||
 [[/module]]
 [[/div]]
@@ -91,6 +91,42 @@ Other Newly Created Pages
 
 ~~~~
 
+[!-- Other Block --]
+
+
+[[div class="content-panel standalone left-column"]]
+[[div class="content-type-title"]]
+Other Types of Pages
+[[/div]]
+[[div class="content-type-description"]]
+
+[[module ListPages rating=">=-10" tags="-scp -tale -goi-format -artwork admin archived author contest creepypasta essay experiment exploration guide hub incident interview newsorphaned project sandbox site splash supplement workbench " order="created_at desc" separate="false"  perPage="30" limit="150" urlAttrPrefix="other" prependLine="||~ Page ||~ [[size 0%]]Date Created[[/size]]📆︎ ||~ [[size 0%]]Comments[[/size]]💬︎ ||"]]
+|| %%title_linked%% || %%created_at|%e%%@<&nbsp;>@%%created_at|%b %R%% || %%comments%% ||
+[[/module]]
+[[/div]]
+[[div class="panel-footer"]]
+  [!-- Placeholder --]
+[[/div]]
+[[/div]]
+
+[!-- Untagged Block --]
+
+[[div class="content-panel standalone right-column"]]
+[[div class="content-type-title"]]
+Untagged Pages
+[[/div]]
+[[div class="content-type-description"]]
+
+[[module ListPages rating=">=-10" tags="-admin -archived -artwork -author -contest -creepypasta -essay -experiment -exploration -goi-format -guide -hub -incident -interview -news -orphaned -project -sandbox -scp -site -splash -supplement -tale -workbench" order="created_at desc" separate="false" perPage="30" limit="150" urlAttrPrefix="untagged" prependLine="||~ Page ||~ [[size 0%]]Date Created[[/size]]📆︎ ||~ [[size 0%]]Comments[[/size]]💬︎ ||"]]
+|| %%title_linked%% || %%created_at|%e%%@<&nbsp;>@%%created_at|%b %R%% || %%comments%% ||
+[[/module]]
+[[/div]]
+[[div class="panel-footer"]]
+  [!-- Placeholder --]
+[[/div]]
+[[/div]]
+
+~~~~
 
 [[/div]]
 
