@@ -1,0 +1,44 @@
+title:Css Policy
+[[size 125%]] **__Use__** [[/size]]
+
+Just like anything else on the wiki, a CSS theme must be licensed under the same Creative Commons site license, if it is hosted on the wiki.  This means that anyone is free to use, copy, and alter that copy.  
+
+What they may not do is alter it for you.   It would be treated like any other article or work on the wiki (minus being subject to deletion at this time.  A deletion policy is not currently defined for CSS themes, and is not being proposed at this time.)
+
+[[size 125%]] **__What you can do:__** [[/size]]
+* Change any of the style components of the wiki which do not violate the can't section.
+
+[[size 125%]] **__What you cannot do:__** [[/size]]
+* Remove, hide, alter, or "break" any navigation elements of the wiki.
+* Break the 'structure' of the wiki.  Don't move the top-bar to 50% to the right, don't change the sidebar to be in wingdings unless that's your specific format screw going on.
+* Use the '!important' tag beyond what is required to override issues with the main CSS theme, or provide compatibility with your sub-themes or other CSS projects.  Basically, don't make your theme be the only applicable theme.
+* Remove the rating module
+* Remove back/forward links from articles where they've been inserted.
+
+[[size 125%]] **__Translation Module__** [[/size]]
+
+The translation module currently can't be altered via CSS. In the event that the Translation module clashes significantly, you are free to remove it via css, and maintain a list of translations in the comments section, or relvant hub for that article.  Please try and keep it current to within a month at any given time. 
+
+[[size 125%]] **__Accessibility__**[[/size]]
+
+This can be evaluated on a per-theme basis.
+
+This section is difficult to explain, but the following should be considered when composing a theme: 
+
+* Is this theme readable for color-blind people? (e.g. it employs bad color combinations like red + green which make it difficult for colorblind users to navigate the site)
+* Does this theme hamper the ability to use screen readers? (e.g. it adds 'invisible' content which gets read by screen readers but not sighted users)
+* Are the fonts it uses legible for all users? (e.g. the body font size is too small, the font itself is difficult to read)
+and so on. Best practices and recommendations to address all of these potential issues are easily available with a cursory Google search.
+
+[[size 125%]] **__Hotlinking__**[[/size]]
+
+Hotlinking is incredibly bad practice and also against site rules. There isn't a good reason to do it, given that you can host assets such as fonts on the page itself, and it also introduces problems when browsers prevent CSS themes from accessing off-site resources. As an example of how this breaks, was a version of a new rating module hosted on the sandbox. Users reported them breaking because their browser would block the page from loading it entirely.
+
+To this end, CSS themes should not use off-site assets, instead of uploading them to the site as they would for images. I would also like to reinforce that CSS should not be linked from sandbox pages, or anywhere that isn't the main site outside of workbenches.  Please use a component: page on the wiki for css themes.
+
+[[size 125%]] **__Remediating non-compliant themes__**[[/size]]
+
+If your theme doesn't function in the major browsers (Internet Explorer 11, Firefox, Chrome, Opera, Safari) in a way that completely breaks navigation, function, or accessibility, it needs to be **removed** (or at bare minimum, removed from include blocks) from the site, then fixed, in that order.
+
+Our first priority is compatibility, function, and accessibility.  
+>
