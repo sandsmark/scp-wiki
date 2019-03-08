@@ -4,6 +4,10 @@ parent:broken-masquerade-hub
 @import URL(/component:mcd-theme-gray/code/1);
 [[/module]]
 [[module css]]
+#header {
+    background: url(http://scp-wiki.wdfiles.com/local--files/component%3Amcd-theme/MCDLogo2-small.png) no-repeat;
+}
+
 @media (max-width: 479px) { 
 #header {
     background-size: 150px 75px;
@@ -28,9 +32,7 @@ parent:broken-masquerade-hub
     background-position: 1em;
 }
 }
-#header {
-    background: url(http://scp-wiki.wdfiles.com/local--files/component%3Amcd-theme/MCDLogo2-small.png) no-repeat;
-}
+
 [[/module]]
 [[>]]
 [[module rate]]
