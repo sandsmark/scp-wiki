@@ -71,7 +71,32 @@ Winners will be chosen through total upvotes. At the conclusion of the contest, 
 
 When posting your entries for the First Day, please tag them with **jam-con2019** and **_shaggy-dog** (__mind the underscore__!).
 
-POSTING PERIOD HAS BEGUN! POST YOUR ARTICLES FOR DAY ONE!
+The posting period for Day One has begun! You may now post your articles until the Theme for Day Two opens!
+
++++ All Day One Entries!
+ [[collapsible show="+ Show entries" hide="- Hide entries" hideLocation="both"]]
+
+[[module css]]
+.contest-block .contest-entry {
+    font-weight: bold;
+    font-size: 110%;
+    margin-bottom: 5px;
+    color: #633;
+}
+[[/module]]
+
+[[div class="contest-block content-panel"]]
+[[div class="panel-heading"]]
+Entries
+[[/div]]
+[[div class="panel-body"]]
+
+[[module ListPages separate="no" tags="+jam-con2019 +_shaggy-dog -hub" perPage="100" order="random" date="2018.02.17"]]
+* [[size 120%]]**%%title_linked%%**[[/size]] [[size 105%]]//by// **%%created_by%%**[[/size]]
+[[/module]]
+[[/div]]
+[[/div]]
+[[/collapsible]]
 
 [!-- tuber  --]
 
