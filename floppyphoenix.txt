@@ -420,14 +420,7 @@ Wait, what the heck? Where did that come from?
 [[/=]]
 [[/div]]
 
-[[collapsible show="tag minion stuff"]]
-[[=]]
-++++ Untagged SCPs
-[[/=]]
-[[module ListPages category="." separate="no" tags="-scp -tale -goi-format -admin -splash -supplement -guide -author -essay -hub -sandbox -artwork -in-deletion -workbench -news -project -archived -site" perPage="100" order="created_at"]]
-||%%title_linked%%||[[user %%created_by%%]]||%%rating%%||%%created_at%%||
-[[/module]]
-
+[[collapsible show=">Contest Tracking"]]
 [[=]]
 ++++ INT GOI Contest Entries
 [[/=]]
@@ -436,9 +429,25 @@ Wait, what the heck? Where did that come from?
 [[/module]]
 
 [[=]]
-++++ INT GOI Contest Entries
+++++ 144-Hour Jam Contest Entries
 [[/=]]
 [[module ListPages category="." separate="no" tags="+jam-con2019" perPage="100" order="created_at"]]
+||%%title_linked%%||[[user %%created_by%%]]||%%rating%%||%%created_at%%||
+[[/module]]
+[[/collapsible]]
+
+[[collapsible show=">Tag Minion Work"]]
+[[=]]
+++++ Untagged SCPs
+[[/=]]
+[[module ListPages category="." separate="no" tags="-scp -tale -goi-format -admin -splash -supplement -guide -author -essay -hub -sandbox -artwork -in-deletion -workbench -news -project -archived -site" perPage="100" order="created_at"]]
+||%%title_linked%%||[[user %%created_by%%]]||%%rating%%||%%created_at%%||
+[[/module]]
+
+[[=]]
+++++ Improperly Tagged Contest Entries
+[[/=]]
+[[module ListPages category="." separate="no" tags="+jam-con2019 -_shaggy-dog" perPage="100" order="created_at"]]
 ||%%title_linked%%||[[user %%created_by%%]]||%%rating%%||%%created_at%%||
 [[/module]]
 [[/collapsible]]
