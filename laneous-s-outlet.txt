@@ -72,6 +72,14 @@ created_by="The Trashman" prependLine="||~ Page ||~ Rating ||~ Comments ||~ Date
 
 Ok so basically jamcon
 
+= **DAY THREE**
+--------------------
+[[module ListPages order="rating desc" separate="false" limit="900" perPage="50" tag="+jam-con2019 +_all-a-dream -hub" prependLine="||~ Page ||~ Rating ||~ Comments ||~ Date Created ||"]]
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
+[[/module]]
+
+
+
 = **DAY TWO**
 --------------------
 [[module ListPages order="rating desc" separate="false" limit="900" perPage="50" tag="+jam-con2019 +_pulp-fiction -hub" prependLine="||~ Page ||~ Rating ||~ Comments ||~ Date Created ||"]]
