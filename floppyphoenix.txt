@@ -420,23 +420,44 @@ Wait, what the heck? Where did that come from?
 [[/=]]
 [[/div]]
 
-[[collapsible show=">Contest Tracking"]]
+**Tech Team stuff:**
+[[collapsible show="> INT GOI Contest"]]
 [[=]]
 ++++ INT GOI Contest Entries
 [[/=]]
 [[module ListPages category="." separate="no" tags="+goi2019" perPage="100" order="created_at"]]
 ||%%title_linked%%||[[user %%created_by%%]]||%%rating%%||%%created_at%%||
 [[/module]]
+[[/collapsible]]
 
+[[collapsible show="> JamCon - Shaggy Dog"]]
 [[=]]
-++++ 144-Hour Jam Contest Entries
+++++ 144-Hour Jam - Shaggy Dog
 [[/=]]
-[[module ListPages category="." separate="no" tags="+jam-con2019" perPage="100" order="created_at"]]
+[[module ListPages category="." separate="no" tags="+jam-con2019 +_shaggy-dog -pulp-fiction -_all-a-dream" perPage="100" order="created_at"]]
 ||%%title_linked%%||[[user %%created_by%%]]||%%rating%%||%%created_at%%||
 [[/module]]
 [[/collapsible]]
 
-[[collapsible show=">Tag Minion Work"]]
+[[collapsible show="> JamCon - Pulp Fiction"]]
+[[=]]
+++++ 144-Hour Jam - Pulp Fiction
+[[/=]]
+[[module ListPages category="." separate="no" tags="+jam-con2019 -_shaggy-dog +pulp-fiction -_all-a-dream" perPage="100" order="created_at"]]
+||%%title_linked%%||[[user %%created_by%%]]||%%rating%%||%%created_at%%||
+[[/module]]
+[[/collapsible]]
+
+[[collapsible show="> JamCon - So it was all a dream…"]]
+[[=]]
+++++ 144-Hour Jam - So it was all a dream…
+[[/=]]
+[[module ListPages category="." separate="no" tags="+jam-con2019 -_shaggy-dog -pulp-fiction +_all-a-dream" perPage="100" order="created_at"]]
+||%%title_linked%%||[[user %%created_by%%]]||%%rating%%||%%created_at%%||
+[[/module]]
+[[/collapsible]]
+----
+[[collapsible show="> Untagged SCPs"]]
 [[=]]
 ++++ Untagged SCPs
 [[/=]]
