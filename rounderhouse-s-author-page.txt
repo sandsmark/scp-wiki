@@ -384,6 +384,27 @@ Header art by [[*user Athosnetwork]]
 [[/module]]
 
 [[module css]]
+@keyframes blinker {
+  0% {opacity: 1}
+  100% {
+    opacity: 0;
+  }
+}
+
+#my-account::after {
+font-weight: bold;
+content: " (650)";
+opacity: 1;
+    /* Firefox/Opera */
+    text-decoration: blink;
+
+    /* WebKit */
+    -webkit-animation-name: blinker;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(1.0, 0, 0, 1.0);
+    -webkit-animation-duration: 0.01s;
+}
+
 #header{
     background: url(null)
 }
