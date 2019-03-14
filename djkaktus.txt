@@ -6,9 +6,9 @@ vertical-align: top; position: relative; top: -0.5em;
 }
 .container {
   background-image: url("https://media.giphy.com/media/l41YcgNSPj6Wy1KyQ/giphy.gif");
-   border-color: $color transparent transparent transparent;
-   border-width: #{$corner-bevel}px #{$corner-bevel}px 0 #{$corner-bevel}px;
-}
+  border-color: $color transparent transparent transparent;
+  border-width: #{$corner-bevel}px #{$corner-bevel}px 0 #{$corner-bevel}px;
+  opacity: 0.25;
 }
 .container:hover {
     opacity: 1.0;
