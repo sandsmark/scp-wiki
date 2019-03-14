@@ -32,17 +32,15 @@ vertical-align: top; position: relative; top: -0.5em;
 .desktop-only {
   display: none;
   visibility: hidden;
-}
-
+#desktop-only a:link { color: #fff; }
+#desktop-only a:visited { color: #fff; } 
+#desktop-only a:hover { color: #fff; }
+#desktop-only a:active { color: #fff; }
 }
 a img {
     position: relative;
     z-index: 1;
 }
-#desktop-only a:link { color: #fff !important; }
-#desktop-only a:visited { color: #fff !important; } 
-#desktop-only a:hover { color: #fff !important; }
-#desktop-only a:active { color: #fff !important; }
 [[/module]]
 
 [[div style="width: 61%; float:left; clear: none;"]]
