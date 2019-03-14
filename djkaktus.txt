@@ -28,11 +28,8 @@ vertical-align: top; position: relative; top: -0.5em;
 .shadow:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
-@media (max-width: 1600px) {
-.desktop-only {
-  display: none;
-  visibility: hidden;
-  height: 570px; 
+.nav {
+ height: 570px; 
   width: 130px; 
   overflow-y:auto; 
   background: url("https://media.giphy.com/media/113S1tiTmyjoxq/giphy.gif"); 
@@ -45,10 +42,15 @@ vertical-align: top; position: relative; top: -0.5em;
   float:top; 
   padding:10px; 
   box-shadow: 1px 2px 3px 0px #23334c;
-  #desktop-only a:link { color: #fff; }
-  #desktop-only a:visited { color: #fff; } 
-  #desktop-only a:hover { color: #fff; }
-  #desktop-only a:active { color: #fff; }
+  #nav a:link { color: #fff; }
+  #nav a:visited { color: #fff; } 
+  #nav a:hover { color: #fff; }
+  #nav a:active { color: #fff; }
+}
+@media (max-width: 1600px) {
+.desktop-only {
+  display: none;
+  visibility: hidden;
 }
 a img {
     position: relative;
@@ -79,7 +81,7 @@ a img {
 @@@@
 
 [[=]]
-[[div class="desktop-only"]]
+[[div class="desktop-only nav"]]
 [[size 120%]]##white|**djkaktus**##[[/size]]
 [[size 75%]]##white|**File Nav**##[[/size]]
 -----
