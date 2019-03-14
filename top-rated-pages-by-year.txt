@@ -14,6 +14,7 @@ title:Top Rated Pages By Year
 @import url(http://www.scp-wiki.net/component:theme/code/1);
 a {
     cursor: pointer;
+    word-break: normal;
 }
 iframe {
     width: 100%;
@@ -51,11 +52,11 @@ iframe {
     	<h2><span>Click on a year to find the top rated pages during that time!</span></h2>
     	</div>
     	<div class="navigator">
-    	<p><a href="javascript:void(0)" onclick="changeYear('08')">2008</a> | <a href="javascript:void(0)" onclick="changeYear('09')">2009</a> | <a href="javascript:void(0)" onclick="changeYear('10')">2010</a> | <a href="javascript:void(0)" onclick="changeYear('11')">2011</a> | <a href="javascript:void(0)" onclick="changeYear('12')">2012</a> | <a href="javascript:void(0)" onclick="changeYear('13')">2013</a> | <a href="javascript:void(0)" onclick="changeYear('14')">2014</a> | <a href="javascript:void(0)" onclick="changeYear('15')">2015</a> | <a href="javascript:void(0)" onclick="changeYear('16')">2016</a> | <a href="javascript:void(0)" onclick="changeYear('17')">2017</a> | <a href="javascript:void(0)" onclick="changeYear('18')">2018</a></p>
+    	<p><a href="javascript:void(0)" onclick="changeYear('08')">2008</a> | <a href="javascript:void(0)" onclick="changeYear('09')">2009</a> | <a href="javascript:void(0)" onclick="changeYear('10')">2010</a> | <a href="javascript:void(0)" onclick="changeYear('11')">2011</a> | <a href="javascript:void(0)" onclick="changeYear('12')">2012</a> | <a href="javascript:void(0)" onclick="changeYear('13')">2013</a> | <a href="javascript:void(0)" onclick="changeYear('14')">2014</a> | <a href="javascript:void(0)" onclick="changeYear('15')">2015</a> | <a href="javascript:void(0)" onclick="changeYear('16')">2016</a> | <a href="javascript:void(0)" onclick="changeYear('17')">2017</a> | <a href="javascript:void(0)" onclick="changeYear('18')">2018</a> | <a href="javascript:void(0)" onclick="changeYear('19')">2019</a></p>
     	</div>
     </div>
     <div class="holder">
-    	<iframe src="http://www.scp-wiki.net/fragment:top-rated-by-year-18"></iframe>
+    	<iframe src="http://www.scp-wiki.net/fragment:top-rated-by-year-19"></iframe>
     </div>
 </body>
 [[/html]]
