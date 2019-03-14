@@ -2,24 +2,25 @@ title:The Based God
 [[include :kaktuskontainer:component:nuscp-dev]]
 [[module CSS]]
 sup { 
-vertical-align: top; position: relative; top: -0.5em; 
-}
-
-.shadow {
--webkit-border-radius: 20px/60px;
--webkit-box-shadow: rgba(0, 0, 0,.30) 0 2px 3px;
-  width: 80%;
-  margin: auto;
+vertical-align: top; position: relative; top: -0.5em;
 }
 .container {
-  margin: auto;
-  margin-top: -5px;;
-
   background: #fff;
-  border: 1px solid #000;
-  box-shadow: 1px 1px 2px #fff inset,
-              -1px -1px 2px #fff inset;
-  border-radius: 20px/60px;  
+  border-radius: 2px;
+  display: inline-block;
+  height: 70px;
+  margin: 1rem;
+  position: relative;
+  width: 70%;
+}
+.shadow {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.shadow:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+} 
 }
 @media (max-width: 1600px) {
    .desktop-only{ display: none; visibility:hidden }
