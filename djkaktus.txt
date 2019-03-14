@@ -42,18 +42,6 @@ div.nav {
   float:top; 
   padding:10px; 
   box-shadow: 1px 2px 3px 0px #23334c;
-#nav a:link { 
-  color: #fff; !important
-}
-#nav a:visited { 
-  color: #fff; !important
-} 
-#nav a:hover { 
-  color: #fff; !important
-}
-#nav a:active { 
-  color: #fff; !important
-}
 }
 @media (max-width: 1600px) {
 .desktop-only {
@@ -64,6 +52,12 @@ a img {
     position: relative;
     z-index: 1;
 }
+#nav a:link, 
+#nav a:visited, 
+#nav a:hover { 
+ color: #ffffff; 
+ text-decoration: none; 
+} 
 [[/module]]
 
 [[div style="width: 61%; float:left; clear: none;"]]
