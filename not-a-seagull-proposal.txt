@@ -1,0 +1,491 @@
+title:not_a_seagull's Proposal
+[[>]]
+[[module Rate]]
+[[/>]]
+[[html]]
+<body>
+<style type="text/css">
+body
+{
+   font-family:verdana,arial,helvetica,sans-serif;
+   font-size:12.8px;
+   color:#333;
+   line-height:141%
+}
+blockquote
+{
+  border:1px dashed #999;
+  padding: 0 12.8px;
+  background-color:#f4f4f4
+}
+a {
+    color: #b01;
+    text-decoration: none;
+    background: transparent;
+}
+.content-panel {
+    border: solid 1px #888880;
+    border-radius: 10px;
+    background-color: #999990;
+    margin: 10px 0 15px;
+    box-shadow: 3px 3px 6px #bbb;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.1);
+}
+.content-panel.standalone {
+    background: #fcfdfb;
+}
+.content-panel.series {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+a.newpage {
+    color: #d61;
+    text-decoration: none;
+    background: transparent;
+}
+a:hover {
+    text-decoration: underline;
+    background-color: transparent;
+}
+.collapsed {
+  display: none;
+}
+.vanished {
+  display: none;
+}
+.warning-cont {
+  color: red;
+  text-align: center;
+}
+#warning-header {
+  font-size: 25.6px;
+}
+#warning {
+  font-size: 20px;
+}
+.retrofont {
+font-family: 'Geo', cursive;
+font-weight: bold;
+}
+.cblwarning {
+  color: red;
+}
+.green {
+  color: green;
+}
+.smaller-g {
+width: 45%;
+margin: auto;
+background-color: #e6e6e6;
+border: none;
+height: 2px;
+}
+.adden{
+font-size: 1.3em;
+}
+/* Standard Image Block */
+.scp-image-block {
+    border: solid 1px #666;
+    box-shadow: 0 1px 6px rgba(0,0,0,.25);
+    width: 300px;
+}
+ 
+.scp-image-block.block-right {
+        float: right;
+    clear: right;
+    margin: 0 2em 1em 2em;
+}
+ 
+.scp-image-block.block-left {
+    float: left;
+    clear: left;
+    margin: 0 2em 1em 0;
+}
+ 
+.scp-image-block.block-center {
+    margin-right: auto;
+    margin-left: auto;
+}
+.scp-image-block img {
+    border: 0;
+    width: 300px;
+}
+.scp-image-block .scp-image-caption {
+    background-color: #eee;
+    border-top: solid 1px #666;
+    padding: 2px 0;
+    font-size: 80%;
+    font-weight: bold;
+    text-align: center;
+    width: 300px;
+}
+.scp-image-block > p {
+    margin: 0;
+}
+.scp-image-block .scp-image-caption > p {
+    margin: 0;
+    padding: 0 10px;
+}
+</style>
+<script type="text/javascript">
+function addEvent(element, eventName, callback) {
+    if (element.addEventListener) {
+        element.addEventListener(eventName, callback, false);
+    } else if (element.attachEvent) {
+        element.attachEvent("on" + eventName, callback);
+    } else {
+        element["on" + eventName] = callback;
+    }
+}
+
+window.toggle = function(cls) {
+  var collapsed = document.querySelectorAll("." + cls + ".collapsed");
+  var expanded = document.querySelectorAll("." + cls + ":not(.collapsed)");
+  var i;
+  for(i = 0; i < collapsed.length; i++) {
+    collapsed[i].classList.remove("collapsed");
+  }
+  for(i = 0; i < expanded.length; i++) {
+    expanded[i].classList.add("collapsed");
+  }
+};
+
+// typewriter code
+function Typewriter(el, str, delay) {
+  if (!(this instanceof Typewriter)) return new Typewriter(el, str, delay);
+
+  this.el = el;
+  this.str = str || el.innerHTML || el.value;
+  this.delay = delay || 100;
+  this.i = 0;
+}
+
+Typewriter.prototype.type = function() {
+  var i = this.i,
+    char = this.str.charAt(i);
+
+  if (!char) {
+    clearInterval(this.intervalID);
+    return this;
+  }
+
+  if (char === '<') this.isTag = true;
+  if (char === '>') this.isTag = false;
+
+  this.el.innerHTML += char;
+  return this.i++;
+};
+
+Typewriter.prototype.start = function() {
+  var self = this;
+  if (this.i < 0) this.i = 0;
+  if (this.el.innerHTML === this.str) this.clear();
+
+  // this.emit('start');
+  (function loop() {
+    self.type();
+    if (self.isTag) return loop();
+    self.intervalID = setTimeout(loop, self.delay);
+  }());
+
+  return this;
+};
+
+Typewriter.prototype.stop = function() {
+  this.i = -1;
+  return this;
+};
+
+Typewriter.prototype.restart = function() {
+  this.clear();
+  this.i = 0;
+  return this.start();
+};
+
+Typewriter.prototype.clear = function() {
+  this.el.innerHTML = '';
+  return this;
+};
+
+var junkChars = ['ó','ò','ñ','ç','¿','ß','à','è','ì','ù','Œ','þ','█','%','+','=','.','«','»','£','$','€','½','¾','À','È','Ì','Ò','Ù','Â','Ê','â','ê','Ä','Ë','ä','ë','ÿ','ü','•'];
+
+var an_iteration = "";
+
+
+var randomIntFromInterval = function(min,max)
+{
+  return Math.floor(Math.random()*(max-min+1)+min);
+};
+
+var getJunkChars = function(length) {
+  var res = '';
+  var i;
+  for (i = 0; i < length; i++) {
+    res += junkChars[randomIntFromInterval(0,junkChars.length - 1)];
+  }
+  return res;
+};
+
+var selTabs = [];
+
+function rndiam() {
+  var rndiams = document.getElementsByClassName('rndiam');
+  var i;
+  for (i = 0; i < rndiams.length; i++) {
+    rndiams[i].innerHTML = (Math.random() * (1.56 - 0.51) + 0.51).toFixed(2);
+  }
+  setTimeout(rndiam, 2000);
+}
+
+window.onload = function() {
+
+selTabs = [
+  document.getElementsByClassName('selTab1')[0],
+  document.getElementsByClassName('selTab2')[0],
+  document.getElementsByClassName('selTab3')[0],
+  document.getElementsByClassName('selTab4')[0],
+  document.getElementsByClassName('selTab5')[0]
+];
+
+var msg1 = '= SCP-001 | Technical Clearance Required =';
+
+var delay1 = 50;
+var delay2 = 25;
+
+var toD1 = delay1 * (msg1.length);
+
+var stopEarly = function(){
+  document.querySelectorAll("." + "article" + ":not(.collapsed)")[0].classList.remove("vanished");
+};
+
+var typ1 =Typewriter(document.querySelectorAll('#warning-header')[0],msg1,delay1)
+
+typ1.start();
+setTimeout(function() { document.getElementById("warning").classList.remove("vanished"); }, toD1 + 500);
+setTimeout(function () { document.querySelectorAll("." + "article" + ":not(.collapsed)")[0].classList.remove("vanished"); }, toD1 + 1500);
+
+  rndiam();
+
+  var today = new Date();
+  var todayformat = "" + (today.getFullYear() - 1) + "-" + (today.getMonth() + 1) + "-" + today.getDate();
+  document.getElementById("today").innerHTML = todayformat;
+  var todayformat2 = "" + (today.getFullYear() - 0) + "-" + (today.getMonth() + 1) + "-" + today.getDate();
+  document.getElementById("today2").innerHTML = todayformat2;
+  document.getElementById("yearplus3").innerHTML = "" + (today.getFullYear() + 3);
+
+  an_iteration = document.getElementById("part1").innerHTML;
+};
+
+window.new_iteration = function() {
+  var new_iters = document.getElementsByClassName("newiter");
+  console.log(new_iters);
+  new_iters[new_iters.length - 1].classList.add("vanished");
+  var inner = document.getElementsByClassName("inner");
+  inner[inner.length - 1].innerHTML = "<hr /><hr />" + an_iteration;
+};
+</script>
+</script>
+<div class="warning-cont">
+<h2 id="warning-header">
+<p>
+</p>
+<h3 id="warning" class="vanished">  
+<p>This document exists as technical containment for an anomaly and thus does not adhere to standard SCiPNET formatting. Input 5/TECHNICAL clearance to proceed.
+</p>
+</div>
+
+<div id="collapsible_to_open_skip" class="article vanished">
+<p><center><a onclick="toggle('article');">[ INPUT PERSONAL IDENTIFICATION NUMBER ]</a></center></p>
+</div>
+<div class="article collapsed">
+ <p><center><a onclick="toggle('article');">[ PERSONAL IDENTIFICATION NUMBER VERIFIED ]</a></center></p>
+<div id="part1">
+<hr />
+<div class="scp-image-block block-right" style="width:300px;"><img src="http://topia.wikidot.com/local--files/jamcon-001/sky.jpg" style="width:300px;" alt="destruction.jpg" class="image" />
+<div class="scp-image-caption" style="width:300px;">
+<p>The sky above Point Alpha during a breach of SCP-001.</p>
+</div>
+</div>
+<p><b>Item #:</b> SCP-001</p>
+<p><b>Object Class:</b> Keter</p>
+<p><b>Special Containment Procedures:</b> If the sky begins changing color with no prior stimuli or indication, all Foundation sites are to go onto ALERT LEVEL 7 immediately. Personnel at Site-05 and -06 are to enter ALERT LEVEL 8 and begin evaluating new methods of containing SCP-001.</p>
+<p>Site-05 has been constructed around Point Alpha. Procedure 001-ENTRY is in effect to contain SCP-001-1. A monitor containing Document 032, as well as a speaker reading the document, are to be placed at least five meters away from SCP-001-1. If SCP-001-1 swells up to 2 meters or more in diameter, the speed of the narration is to increase. This system is to have a direct cable link to the Foundation SCiPNET database at Site-06, and several redundant power generators are to ensure this system stays operational at all times.</p>
+<p><b>Description:</b> SCP-001 is an ongoing ZK-Class "Reality Failure" Scenario. SCP-001 is prevented from happening through several procedures manipulating its sub-anomalies. The only known observable symptom of SCP-001 is the sky becoming a different color; it is believed that, if SCP-001 were to progress to the point where other symptoms began to occur, it would become irreversible.</p>
+<p>SCP-001-1 is a levitating sphere-like object contained within Point Alpha, a cave chamber five kilometers south of the ruins of Babylon. SCP-001-1 visually resembles a perfectly smooth sphere with a texture similar to blurred television static. Measurement instruments indicate SCP-001-1 is currently <span class="rndiam"></span> meters in diameter. Solids and liquids that pass within the bounds of SCP-001-1 are replaced entirely with argon gas, giving the illusion of disappearing.</p>
+<p>SCP-001-2 is an entity that is capable of being seen within Point Alpha. SCP-001-2's manifestations are random; witnesses report seeing SCP-001-2 "past the walls of the cave." From descriptions of eyewitnesses, SCP-001-2 is humanoid in shape and large in stature, and is only visible when looking through SCP-001-1. SCP-001-2 takes the position of lying against the wall. It is most often seen with a neutral expression; however, the expression occasionally changes to discomfort or bliss.</p>
+<p>It has been determined from historical precedent that "entertaining" SCP-001-2 through SCP-001-1 will prevent SCP-001.</p>
+<p><b>History:</b> Point Alpha and its contents are believed to date back to prehistory. Babylonian scripts indicate that SCP-001-1 was routinely patrolled by a group of sages, known as the "Order of White and Black," who refused passage to anyone who could demonstrate the ability to read or write.</p>
+<p>This group was defunct by the rise of Achaemenid Persia, whom contained SCP-001-1 with a group of Zoroastrian monks. Very few accounts of SCP-001-1 are present; recovered accounts assert that all information about SCP-001-1 and its significance was passed orally.</p>
+<p>The most substantial account of SCP-001-1 and SCP-001-2 at this time date back to the Greek philosopher Xera, who made an expedition into the Acheaemenid Empire and found Point Alpha. During Alexander of Macedon's conquest of the Acheaemenid Empire, he took interest in Xera's texts and continued the Acheaemenid containment of SCP-001-1. However, this institution, known as the "Cronus Guard", was given to read Greek epics in order to "punish Cronus" for his actions. This institution lasted through the partition of Macedon into the Seleucid Empire, the rise of the Sassanid Empire, and even the formation of the Rashidun Caliphate.</p>
+<p>The Cronus Guard were eventually replaced with an Islamic equivalent: "The Society for the Containment of the Babel Demon." This group was the first to preform substantial research on SCP-001-1, and the first to accurately link SCP-001 to SCP-001-1.</p>
+<div class="socotbd">
+<p style="font-size: 82%"><a onclick="toggle('socotbd');">View Attachment: Excerpts from the notes of the Society for the Containment of the Babel Demon</a></p>
+</div>
+<div class="socotbd collapsed">
+ <p style="font-size: 82%"><a onclick="toggle('socotbd');">
+Close Attachment</a></p>
+<blockquote>
+<p><b>Literature Read:</b> The first quatrain of the <i>Rubaiyat of Omar Khayyam</i></p>
+<p><b>Result:</b> DEMON squirms but otherwise does not react. Consistent with reading of Homer's Epics by the Chronus Guard.</p>
+</blockquote>
+<blockquote>
+<p><b>Literature Read:</b> The remaining quatrains of the <i>Rubaiyat of Omar Khayyam</i></p>
+<p><b>Result:</b> No changes from observed behavior.</p>
+</blockquote>
+<blockquote>
+<p><b>Literature Read:</b> A poem written by Guardian Muhammad ibn Buya'aa meant explicitly for SCP-001-2</p>
+<p><b>Result:</b> DEMON thrashes more than usual until the cessation of the reading. ORB begins to expand until the <i>Genealogies of the Nobles</i> is read to DEMON.</p>
+</blockquote>
+<blockquote>
+<p><b>Literature Read:</b> None, for 10 days</p>
+<p><b>Result:</b> ORB is observed to expand, and DEMON is observed to thrash. Externally, the sky above the camp is noted to turn a darker red color, until the <i>Rubaiyat of Omar Khayyam</i> is read again.</p>
+</blockquote>
+<blockquote>
+<p><b>Literature Read:</b> <i>Rubaiyat of Omar Khayyam</i></p>
+<p><b>Result:</b> DEMON trashes more than during previous readings of the <i>Rubaiyat of Omar Khayyam</i>. It is believed that the Quran may no longer have any effect on DEMON.</p>
+</blockquote>
+<blockquote>
+<p><b>Literature Read:</b> <i>One Thousand and One Nights</i></p>
+<p><b>Result:</b> DEMON ceases thrashing. New literature may be necessary to prevent further phenomena from occurring.</p>
+</blockquote>
+</div>
+<p>The Society was eventually absorbed into the Office for the Reclamation of Islamic Artifacts, who assumed containment of SCP-001-1. After Incident 001-EXAL, the Foundation purchased Point Alpha from ORIA for a large sum of currency and several Safe-class anomalies.</p>
+<p>&nbsp;</p>
+<center>
+<hr class="smaller-g" />
+<p class="adden">Incident 001-EXAL</p>
+<hr class="smaller-g" />
+</center>
+<p>&nbsp;</p>
+<p style="font-size: 82%"><i>Note: Some documentation taken from ORIA's account of Incident 001-EXAL.</i></p>
+<p>On <span id="today"></span>, personnel with ORIA read the book <i>Tafsir al-Ahlam al-kabir</i>, or "Great Book of Interpretation of Dreams" as per normal containment of SCP-001-1. However, SCP-001-2 was observed to rapidly thrash while screaming. SCP-001-1 itself swelled from 50.3 centimeters to 3.2 meters in diameter.</p>
+<p>Shortly following this event, SCP-001 began to worsen. The sky worldwide turned a black/white color similar to the texture of SCP-001-1. In addition, reality bending phenomena began worldwide, causing deformed geography, the manifestation of dangerous anomalous objects and several natural disasters. This event was ended after ORIA personnel read SCP-001-1 an undisclosed number of as-of-yet unread books, which caused SCP-001-2 to stop thrashing and SCP-001 to restore to its pre-incident point. However, the damage caused by this incident was deemed enough to require an activation of <a target="_top" href="http://www.scp-wiki.net/scp-2000">SCP-2000</a>.</p>
+<p>This prompted the Foundation to take control of containment of SCP-001. See <b>History</b> segment above for more information.</p>
+<div class="info">
+<p style="font-size: 82%"><a onclick="toggle('info');">Input Level 5/001 Credentials</a></p>
+</div>
+<div class="info collapsed">
+ <p style="font-size: 82%"><a onclick="toggle('info');">
+Access Granted</a></p>
+<p>During Incident 001-Alpha, vocalizations in <a target="_top" href="http://www.scp-wiki.net/scp-140">Daevish</a> were recorded by ORIA instruments within Point Alpha. The source is presently unknown. The following are approximate translations of these vocalizations.</p>
+<blockquote>
+<p>It has passed some [space/time].</p>
+</blockquote>
+<blockquote>
+<p>The [UNKNOWN: gaera] has passed. It [has had/used to be] fun. It is [time/space] to leave.</p>
+</blockquote>
+<blockquote>
+<p>You cannot [stay/root/hold] yourself forever.</p>
+</blockquote>
+<blockquote>
+<p>The [UNKNOWN: gaera] has passed. You [must/will] awaken.</p>
+</blockquote>
+<blockquote>
+<p>No, you have [entered/reentered] slumber for too long. Wake up.</p>
+</blockquote>
+<blockquote>
+<p>[King/Prince/loved one], it is time for you to wake up.</p>
+</blockquote>
+<blockquote>
+<p>It is fun to be in the [UNKNOWN: gaera] but you cannot be [in/rooted] there [forever/unending]. It is [entertaining/deathlike], but you must wake up.</p>
+</blockquote>
+<blockquote>
+<p>Wake up, [King/Prince/loved one]. We miss you.</p>
+</blockquote>
+</div>
+<p>&nbsp;</p>
+<center>
+<hr class="smaller-g" />
+<p class="adden">Addenda</p>
+<hr class="smaller-g" />
+</center>
+<p>&nbsp;</p>
+<div class="discus">
+<p style="font-size: 82%"><a onclick="toggle('discus');">Input Level 5/001 Clearance</a></p>
+</div>
+<div class="discus collapsed">
+ <p style="font-size: 82%"><a onclick="toggle('discus');">
+Access Granted</a></p>
+<div div class="content-panel standalone series">
+<center>
+<h2>Discussion Thread 001-398:<br />Continued Containment</h2>
+<p style="font-size: 82%">Started on: <span id="today2"></span></p>
+<p style="font-size: 82%">Started by: <tt>HMCL Robinson</tt></p>
+</center>
+</div>
+<blockquote>
+<p><b><tt>HMCL Robinson:</tt></b> The usage of this thread will be for containment directives for SCP-001. In the past year that we have spent containing it, SCP-001-1's literature needs have become increasingly draconic: we can very rarely reread books without it beginning to thrash, and even then we're running out of high-quality literature to give it. We need a more long-term, reliable solution for containment. SCP-001's file has been temporarily opened up to all personnel with Level 2 clearance. Anybody can submit an idea.</p>
+</blockquote>
+<blockquote>
+<p><b>Proposal:</b> Use Artificial Intelligence Constructs to automatically generate new stories for SCP-001-2.</p>
+<p><b>Status: <tt>[ <span class="green">APPROVED</span> ]</tt></b></p>
+<p><b>Result:</b> TSATPWTCOTTTADC.aic was able to generate 10,000 volumes of stories imitating Greek literature. However, when the first was read to SCP-001-1, it began thrashing beyond acceptable measures until it was read approved reading. No further computer-generated works are to be given to SCP-001-1.</p>
+</blockquote>
+<blockquote>
+<p><b>Proposal:</b> Hire a full team of authors to create literature for SCP-001-1.</p>
+<p><b>Status: <tt>[ <span style="color: red">DENIED</span> ]</tt></b></p>
+<p><b>Reason:</b> In the past, literature written specifically for SCP-001-1 have failed to contain it (see: SCtBD Document #249). With SCP-001-2's current state this is not to be attempted again.</p>
+</blockquote>
+<blockquote>
+<p><b>Proposal:</b> Read mainlist documentation for SCP-███ to SCP-001-1.</p>
+<p><b>Status: <tt>[ <span style="color: red">DENIED</span> ]</tt></b></p>
+<p><b>Reason:</b> This could represent a possible information leak. Test denied.</p>
+</blockquote>
+<blockquote>
+<p><b>Proposal:</b> Read mainlist documentation for SCP-███ to SCP-001-1.</p>
+<p><b>Status: <tt>[ <span style="color: green">APPROVED</span> ]</tt></b></p>
+<p><b>Reason:</b> With SCP-001-2's recent containment breach, these measures are approved.</p>
+<p><b>Result:</b> SCP-001-2 observed to stop thrashing and stay completely still, seemingly smiling. In addition, SCP-███ was able to be read for 14 consecutive readings before SCP-001-2 resumed normal activity.</p>
+</blockquote>
+<blockquote>
+<p><b>Proposal:</b> Regularly read mainlist documentation for SCP-001-1.</p>
+<p><b>Status: <tt>[ <span style="color: green">APPROVED</span> ]</tt></b></p>
+</blockquote>
+<blockquote>
+<p><b>Proposal:</b> Replacement of the SCP-001 file with several "001 Proposals" with much more grand implications than normal SCP files.</p>
+<p><b>Status: <tt>[ <span style="color: green">APPROVED</span> ]</tt></b></p>
+<p><b>Result:</b> By only occasionally reading 001 files, SCP-001-2 is observed to be more calm on average. The previously observed actions of retaliation in response to specially crafted literature do not apply here.</p>
+</blockquote>
+<blockquote>
+<p><b>Proposal:</b> Expansion of the SCP Series beyond SCP-999, and declassification of several unnumbered SCP objects into these slots.</p>
+<p><b>Status: <tt>[ <span style="color: green">APPROVED</span> ]</tt></b></p>
+</blockquote>
+<blockquote>
+<p><b>Proposal:</b> Given the variation of the current 2957 SCP mainlist files, SCP-001-1 is to be read a random arrangement of these files, in repeat.</p>
+<p><b>Status: <tt>[ <span style="color: green">APPROVED</span> ]</tt></b></p>
+<p><b>Result:</b> This strategy succeeded for approximately 3 years, allowing for several repeats. However, on <span id="yearplus3"></span>-9-30, SCP-001-2 began thrashing rapidly, requiring newer documentation to sedate.</p>
+</blockquote>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<blockquote>
+<p><b>Proposal:</b> Expansion of the SCP Series beyond SCP-4999, and declassification of several unnumbered SCP objects into these slots.</p>
+<p><b>Status: <tt>[ <span style="color: red">DENIED</span> ]</tt></b></p>
+<p><b>Reason:</b> SCP-001-1 has required progressively more SCP mainlist articles for containment, even to the point of the fabrication of some anomalous entities.</p>
+</blockquote>
+<blockquote>
+<p><b>Proposal:</b> Rewriting of several older SCP mainlist files to be more exaggerated and narrative-like.</p>
+<p><b>Status: <tt>[ <span style="color: orange">TENTATIVELY APPROVED</span> ]</tt></b></p>
+<p><b>Note:</b> <i>Deliberately exaggerating our files for the purpose of this entity is crossing some lines, but for now, it will have to do. However, we need a better way. I'm calling a committee. We need to put a stop to this.</i></p>
+</blockquote>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<blockquote>
+<p><b>Proposal:</b> Creation of a file describing SCP-001 that uses recursion to effectively be "never-ending." Psychoanalysis related to SCP-001-2's apparent "enjoyment" of works implies a slight ego and bias towards works about itself, and past strategies with this idea have worked for long periods of time. File is to be archived as a "technical" file.</p>
+<p><b>Status: <tt>[ <span style="color: green">APPROVED</span> ]</tt></b></p>
+<p><b>Result:</b> Procedure 001-ENTRY implemented. [DATA EXPUNGED]</p>
+</blockquote>
+</div>
+
+<div class="newiter">
+<p style="font-size: 82%"><a onclick="new_iteration();">Input Level 5/TECHNICAL Clearance</a></p>
+</div>
+<div class="inner">
+<!-- :-) -->
+</div>
+</div>
+</body>
+[[/html]]
