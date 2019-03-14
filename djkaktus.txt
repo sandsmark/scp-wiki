@@ -29,13 +29,9 @@ vertical-align: top; position: relative; top: -0.5em;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 @media (max-width: 1600px) {
-.desktop-only{ 
-  display: none;
-}
-a {
-  color: hotpink;
-}
+   .desktop-only{ display: none; visibility:hidden }
 
+}
 a img {
     position: relative;
     z-index: 1;
@@ -65,7 +61,7 @@ a img {
 @@@@
 
 [[=]]
-[[div class="desktop-only" style="height: 620px; width: 130px; overflow-y:auto; background: url("https://media.giphy.com/media/113S1tiTmyjoxq/giphy.gif"); position: fixed; left: 78%; TOP: 190px; display: inline-block; border-radius: 0px; border:solid 1px #444444; float:top; padding:10px; box-shadow: 1px 2px 3px 0px #23334c;"]]
+[[div a="color: white;" class="desktop-only" style="height: 620px; width: 130px; overflow-y:auto; background: url("https://media.giphy.com/media/113S1tiTmyjoxq/giphy.gif"); position: fixed; left: 78%; TOP: 190px; display: inline-block; border-radius: 0px; border:solid 1px #444444; float:top; padding:10px; box-shadow: 1px 2px 3px 0px #23334c;"]]
 [[size 120%]]**djkaktus**[[/size]]
 [[size 75%]]**File Nav**[[/size]]
 -----
