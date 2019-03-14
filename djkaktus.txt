@@ -5,12 +5,14 @@ sup {
 vertical-align: top; position: relative; top: -0.5em;
 }
 .container {
-  border-top: 50px solid grey;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  height: 0;
-  width: 500px;
+  background-image: url("https://media.giphy.com/media/l41YcgNSPj6Wy1KyQ/giphy.gif");
   opacity: 0.25;
+  border-radius: 2px;
+  display: inline-block;
+  height: auto;
+  margin: auto;
+  position: relative;
+  width: 500px;
 }
 .container:hover {
     opacity: 1.0;
@@ -18,11 +20,9 @@ vertical-align: top; position: relative; top: -0.5em;
 .shadow {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  border-top: 50px solid grey;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  height: 0;
-  width: auto;
+  height: auto;
+  width: 500px;
+  margin: auto;
 }
 
 .shadow:hover {
