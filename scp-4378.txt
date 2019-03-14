@@ -1,8 +1,4 @@
 title:SCP-4378
-[[module CSS]]
-@import url(/component:scp-pride/code/1);
-[[/module]]
-
 [[>]]
 [[module rate]]
 [[/>]]
@@ -73,6 +69,18 @@ color: #77CC77;
 background-color:#222200;
 border: 3px solid #AAAA55;
 color: #DDDD77;
+}
+
+#page-content > div:nth-child(27) > div.collapsible-block-unfolded > div.collapsible-block-content > p:nth-child(28) {
+    width: 100%;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-content > div:nth-child(27) > div.collapsible-block-unfolded > div.collapsible-block-content > p:nth-child(28) > iframe {
+    width: 300px !important;
 }
 [[/module]]
 
