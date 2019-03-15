@@ -5,13 +5,14 @@ sup {
 vertical-align: top; position: relative; top: -0.5em;
 }
 .container {
-   position:absolute;
-    top:10px;
-    border-bottom: 300px solid #cccccc;
-    border-left: 19vw solid transparent;
-    border-right: 19vw solid transparent;
-    height: 10%;
-    width: 60vw;
+  background: #cccccc;
+  opacity: 0.25;
+  border-radius: 2px;
+  display: inline-block;
+  height: auto;
+  margin: auto;
+  position: relative;
+  width: 500px;
 }
 .container:hover {
     opacity: 1.0;
