@@ -19,7 +19,7 @@ sup {
     height: 35.625rem;
     width: 8.125rem;
     overflow: hidden auto;
-    background: url(https:media.giphy.com/media/113S1tiTmyjoxq/giphy.gif);
+    background: url(http://scptestwiki.wikidot.com/local--files/sigma:kakton-theme/kaktus_animation.gif);
     position: fixed;
     left: 78%;
     top: 11.875rem;
@@ -46,20 +46,6 @@ sup {
 .desktop-only.nav a:active,
 .desktop-only.nav a:visited {
     color: rgba(var(--swatch-menutxt-light-color));
-}
-
-.desktop-only.nav::before {
-    content: " ";
-    height: 35.625rem;
-    width: 8.125rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0.625rem;
-    background-color: rgba(var(--bright-accent));
-    mix-blend-mode: color;
-    pointer-events: none;
-    z-index: -1;
 }
 
 @media (max-width: 1600px) {
