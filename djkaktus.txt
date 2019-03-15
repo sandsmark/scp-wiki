@@ -16,19 +16,29 @@ sup {
 }
 
 .nav {
-    height: 570px;
-    width: 130px;
-    overflow-y: auto;
-    background: url("https:media.giphy.com/media/113S1tiTmyjoxq/giphy.gif");
+    height: 35.625rem;
+    width: 8.125rem;
+    overflow: hidden auto;
+    background: url(https:media.giphy.com/media/113S1tiTmyjoxq/giphy.gif);
     position: fixed;
     left: 78%;
-    top: 190px;
+    top: 11.875rem;
     display: inline-block;
-    border-radius: 0px;
-    border: solid 1px #444444;
-    float: top;
-    padding: 10px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 0;
+    border: solid 0.0625rem rgba(var(--swatch-primary));
+    padding: 0.625rem;
+    box-shadow: 0 0.0625rem 0.1875rem rgba(var(--black-monochrome), 0.12), 0 0.0625rem 0.125rem rgba(var(--black-monochrome), 0.24);
+}
+
+.nav > div {
+    width: 8.125rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.625rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden auto;
 }
 
 .desktop-only.nav a,
@@ -40,15 +50,16 @@ sup {
 
 .desktop-only.nav::before {
     content: " ";
-    width: 130px;
-    height: 570px;
+    height: 35.625rem;
+    width: 8.125rem;
     position: absolute;
     top: 0;
     left: 0;
-    padding: 10px;
+    padding: 0.625rem
     background-color: rgba(var(--bright-accent));
     mix-blend-mode: color;
     pointer-events: none;
+    z-index: -1;
 }
 
 @media (max-width: 1600px) {
