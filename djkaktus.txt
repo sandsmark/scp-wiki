@@ -52,8 +52,11 @@ a img {
     position: relative;
     z-index: 1;
 }
-div#nav a {
-color: #ffffff;
+.desktop-only.nav a,
+.desktop-only.nav a:hover,
+.desktop-only.nav a:active,
+.desktop-only.nav a:visited {
+    color: rgba(var(--swatch-menutxt-light-color)) !important;
 }
 [[/module]]
 
