@@ -38,6 +38,18 @@ sup {
     color: rgba(var(--swatch-menutxt-light-color));
 }
 
+.desktop-only.nav::before {
+    content: " ";
+    width: 130px;
+    height: 570px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-color: rgba(var(--bright-accent));
+    mix-blend-mode: color;
+}
+
 @media (max-width: 1600px) {
     .desktop-only {
     	display: none;
