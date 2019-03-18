@@ -1431,7 +1431,13 @@ infoText = '/*<br>    Powered on ' + year + "/" + month + "/" + day + " " + 
         var rootArea = '';
     }
     else {
-        var rootArea = ':root {<br>    ' + document.getElementById('rootArea').value.replace(/\n/g, '\n' + '    ') + '<br>}<br>';
+        if (document.getElementById('rootArea').value.match(/https?:/g)) {
+            alert('general options > :root:\nHotlinking is prohibited. You can use only relative pathname.\ne.g.\n"/local--files/<page-name>/<file-name>"\n"../<file-name>"');
+            document.getElementById('rootArea').value = "";
+        }
+        else {
+            var rootArea = ':root {<br>    ' + document.getElementById('rootArea').value.replace(/\n/g, '\n' + '    ') + '<br>}<br>';
+        }
 };
 
 
@@ -1440,7 +1446,14 @@ infoText = '/*<br>    Powered on ' + year + "/" + month + "/" + day + " " + 
         var keyframes = '';
     }
     else {
-        var keyframes = '<br>' + document.getElementById('keyframes').value.replace(/\n/g, '\n' + '    ').replace(/    }/g, '}') + '<br><br>';
+        if (document.getElementById('keyframes').value.match(/https?:/g)) {
+            alert('general options > @keyframes or @media:\nHotlinking is prohibited. You can use only relative pathname.\ne.g.\n"/local--files/<page-name>/<file-name>"\n"../<file-name>"');
+            document.getElementById('keyframes').value = "";
+        }
+        else {
+            var keyframes = '<br>' + document.getElementById('keyframes').value.replace(/\n/g, '\n' + '    ').replace(/    }/g, '}') + '<br><br>';
+        }
+
 };
 
 
