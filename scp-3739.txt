@@ -35,7 +35,7 @@ div.scanline{
     height: 60px;
     position: relative;
     pointer-events: none;
-    -webkit-animation: scan 5s linear 0s infinite;; /* Safari 4.0 - 8.0 */
+    -webkit-animation: scan 5s linear 0s infinite; /* Safari 4.0 - 8.0 */
     animation: scan 5s linear 0s infinite;
     background: linear-gradient(to bottom, rgba(56, 56, 82,0), rgba(56, 56, 112,0.1)) !important;
 }
@@ -92,7 +92,7 @@ div.log {
 -webkit-margin-end: 0px;
   border: 1px solid #d60000;
   padding: 12px;
-  background-clip: padding-box: /* support: IE9+ */
+  background-clip: padding-box; /* support: IE9+ */
   background-color: #e8e8e8;
   border-radius: 10px;
   box-shadow:
