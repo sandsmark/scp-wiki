@@ -7,9 +7,9 @@ parent:broken-masquerade-hub
 
 #header h2 span::before { content: "Archiving Apotheosis" !important; }
 
-a.collapsible-block-link { font-weight: bold; }
+.collapsible-block-link { font-weight: bold; }
 
-div.terminal{
+.terminal{
     width: @display-width;
     height: @display-height;
     border: 1px solid black;
@@ -29,7 +29,7 @@ div.terminal{
     padding-bottom: 15px !important;
 }
 
-div.scanline{
+.scanline{
     margin-top: -40%;
     width: @display-width;
     height: 60px;
@@ -40,23 +40,22 @@ div.scanline{
     background: linear-gradient(to bottom, rgba(56, 56, 82,0), rgba(56, 56, 112,0.1)) !important;
 }
 
-div.text{
+.text{
     color: rgba(255,255,255,0.8);
     padding-top: 34%;
     padding-left: 3rem;
     padding-right: 3rem;
     font-family: Lucida Console, Monaco, monospace;
-    }
+}
     
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes scan{
     from{ transform: translateY(-10%);}
     to{  transform: translateY(2000%);}
 }
-/* flags */
 
-div.log {
-  float: center; 
+/* FLAGS */
+.log {
   border: gray 1px; 
   padding: 7px; 
   margin: 3px;
@@ -64,7 +63,7 @@ div.log {
   box-shadow: 0 2px 4px rgba(75, 75, 75, .5);
 }
 
-/* Containers for Bauxes Of Information */
+/* INFORMATION BOX CONTAINERS */
 .container {
  font-family: 'Nanum Gothic', Arial, sans-serif;
     background-color: #1e0f2d !important;
@@ -75,7 +74,6 @@ div.log {
 .quoteblock { 
   display: inline-block; 
   width: 96%;
-  float: center; 
   border: gray 1px; 
   padding: 5px; 
   margin: 0.625em;
@@ -86,13 +84,13 @@ div.log {
 }
 
 .blockM {
--webkit-margin-start: 0px;
+-webkit-margin-start: 0;
 -webkit-margin-before: 1em;
 -webkit-margin-after: 1em;
--webkit-margin-end: 0px;
+-webkit-margin-end: 0;
   border: 1px solid #d60000;
   padding: 12px;
-  background-clip: padding-box: /* support: IE9+ */
+  background-clip: padding-box; /* support: IE9+ */
   background-color: #e8e8e8;
   border-radius: 10px;
   box-shadow:
@@ -721,7 +719,7 @@ Near the end of the footage, η-2 emerges naked and is marked with a disembodied
 
 [[span class="spangles"]]On February 9, 2020[[/span]], the CEO of Moosphere interrupted all of Wisconsin, Pennsylvania, and Washington's telecommunication broadcasts with a payload of cognitohazardous memes. Moosphere employs unaffected populations by force. Televisions broadcasted the following:
 
-[[div style="display: inline-block; border:dashed 1px #999999; background:#F5F5F5; float:center; width:84%; padding:1px 15px; margin: 10px 10px 10px 40px"]]
+[[div style="display: inline-block; border:dashed 1px #999999; background:#F5F5F5; width:84%; padding:1px 15px; margin: 10px 10px 10px 40px"]]
 ----
 = **VIDEO LOG**
 ----
