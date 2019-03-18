@@ -1586,8 +1586,8 @@ var headerH2Prev = document.getElementById('headerH2').value;
         var headerBack = '';
     }
     else {
-        if (document.getElementById('headerBack').value.match(/^https?:\/\//g)) {
-            alert('header > div#container-wrap > background:\nHotlinking is prohibited. You can use only relative pathname.\ne.g. "/local--files/<page-name>/<file-name>", "../<file-name>"')
+        if (document.getElementById('headerBack').value.match(/^https?:/g)) {
+            alert('header > div#container-wrap > background:\nHotlinking is prohibited. You can use only relative pathname.\ne.g.\n"/local--files/<page-name>/<file-name>"\n"../<file-name>"')
             document.getElementById('headerBack').value = "";
         }
         else {
@@ -1602,8 +1602,8 @@ var headerH2Prev = document.getElementById('headerH2').value;
         var headerLogo = '';
     }
     else {
-        if (document.getElementById('headerLogo').value.match(/^https?:\/\//g)) {
-            alert('header > logo (div#header):\nHotlinking is prohibited. You can use only relative pathname.\ne.g. "/local--files/<page-name>/<file-name>", "../<file-name>"')
+        if (document.getElementById('headerLogo').value.match(/^https?:/g)) {
+            alert('header > logo (div#header):\nHotlinking is prohibited. You can use only relative pathname.\ne.g.\n"/local--files/<page-name>/<file-name>"\n"../<file-name>"')
             document.getElementById('headerLogo').value = "";
         }
         else {
