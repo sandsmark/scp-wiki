@@ -1458,13 +1458,7 @@ infoText = '/*<br>    Powered on ' + year + "/" + month + "/" + day + " " + 
         backGround = "";
     }
     else {
-        if (document.getElementById('backGround').value.match(/https?:/g)) {
-            alert('general options > body > background:\nHotlinking is prohibited. You can use only relative pathname.\ne.g.\n"/local--files/<page-name>/<file-name>"\n"../<file-name>"')
-            document.getElementById('backGround').value = "";
-        }
-        else {
-            backGround = "    background: " + document.getElementById('backGround').value + ";<br>";
-        }
+        backGround = "    background: " + document.getElementById('backGround').value + ";<br>";
     };
     if (document.getElementById('txColor').value == "") {
         txColor = "";
@@ -1533,13 +1527,7 @@ else {
         var blockquoteValue = '';
     }
     else {
-        if (document.getElementById('blockquoteValue').value.match(/https?:/g)) {
-            alert('general options > blockquote > others:\nHotlinking is prohibited. You can use only relative pathname.\ne.g.\n"/local--files/<page-name>/<file-name>"\n"../<file-name>"')
-            document.getElementById('blockquoteValue').value = "";
-        }
-        else {
-            var blockquoteValue = 'blockquote {<br>    ' + document.getElementById('blockquoteValue').value.replace(/\n/g, '\n' + '    ') + '<br>}<br>';<br>";
-        }
+        var blockquoteValue = 'blockquote {<br>    ' + document.getElementById('blockquoteValue').value.replace(/\n/g, '\n' + '    ') + '<br>}<br>';
 };
 
 
@@ -1628,13 +1616,7 @@ var headerH2Prev = document.getElementById('headerH2').value;
         var logoValue = '';
     }
     else {
-        if (document.getElementById('logoValue').value.match(/https?:/g)) {
-            alert('header > others:\nHotlinking is prohibited. You can use only relative pathname.\ne.g.\n"/local--files/<page-name>/<file-name>"\n"../<file-name>"')
-            document.getElementById('logoValue').value = "";
-        }
-        else {
-            var logoValue = '    ' + document.getElementById('logoValue').value.replace(/\n/g, '\n' + '    ') + '<br>';
-        }
+        var logoValue = '    ' + document.getElementById('logoValue').value.replace(/\n/g, '\n' + '    ') + '<br>';
 };
 
 if (document.getElementById('headerLogo').value == "" && document.getElementById('logoValue').value == "") {
@@ -1651,13 +1633,7 @@ else {
         var sideBackGround = '';
     }
     else {
-        if (document.getElementById('sideBackGround').value.match(/https?:/g)) {
-            alert('sidebar > div.side-block > background:\nHotlinking is prohibited. You can use only relative pathname.\ne.g.\n"/local--files/<page-name>/<file-name>"\n"../<file-name>"')
-            document.getElementById('sideBackGround').value = "";
-        }
-        else {
-            var sideBackGround = '    background: ' + document.getElementById('sideBackGround').value + ';<br>';
-        }
+        var sideBackGround = '    background: ' + document.getElementById('sideBackGround').value + ';<br>';
 };
 
 //sideBorder
@@ -1681,13 +1657,7 @@ else {
         var sideValue = '';
     }
     else {
-        if (document.getElementById('sideValue').value.match(/https?:/g)) {
-            alert('sidebar > div.side-block > others:\nHotlinking is prohibited. You can use only relative pathname.\ne.g.\n"/local--files/<page-name>/<file-name>"\n"../<file-name>"')
-            document.getElementById('sideValue').value = "";
-        }
-        else {
-            var sideValue = '    ' + document.getElementById('sideValue').value.replace(/\n/g, '\n' + '    ') + '<br>';
-        }
+        var sideValue = '    ' + document.getElementById('sideValue').value.replace(/\n/g, '\n' + '    ') + '<br>';
 };
 
 if (document.getElementById('sideBackGround').value == "" && document.getElementById('sideBorder').value == "" && document.getElementById('sideShadow').value == "" && document.getElementById('sideValue').value == "") {
@@ -1723,13 +1693,7 @@ else {
         rateBg = "";
     }
     else {
-        if (document.getElementById('rateBg').value.match(/https?:/g)) {
-            alert('Rate module > background:\nHotlinking is prohibited. You can use only relative pathname.\ne.g.\n"/local--files/<page-name>/<file-name>"\n"../<file-name>"')
-            document.getElementById('rateBg').value = "";
-        }
-        else {
-            rateBg = "div.page-rate-widget-box,<br>div.page-rate-widget-box span.rate-points,<br>div.page-rate-widget-box span.cancel {<br>    background-color: " + document.getElementById('rateBg').value + "!important;<br>    border: solid " + document.getElementById('rateBg').value + " 1px!important;<br>}<br>" + "div.page-rate-widget-box span.rateup,<br>div.page-rate-widget-box span.ratedown {<br>    border: solid " + document.getElementById('rateBg').value + "!important;<br>    border-width: 1px 0!important;<br>}<br>";
-        }
+        rateBg = "div.page-rate-widget-box,<br>div.page-rate-widget-box span.rate-points,<br>div.page-rate-widget-box span.cancel {<br>    background-color: " + document.getElementById('rateBg').value + "!important;<br>    border: solid " + document.getElementById('rateBg').value + " 1px!important;<br>}<br>" + "div.page-rate-widget-box span.rateup,<br>div.page-rate-widget-box span.ratedown {<br>    border: solid " + document.getElementById('rateBg').value + "!important;<br>    border-width: 1px 0!important;<br>}<br>";
     };
     if (document.getElementById('rateColor').value == "") {
         rateColor = "";
@@ -1741,13 +1705,7 @@ else {
         rateSwitchBg = "";
     }
     else {
-        if (document.getElementById('rateSwitchBg').value.match(/https?:/g)) {
-            alert('Rate module > up/down > background:\nHotlinking is prohibited. You can use only relative pathname.\ne.g.\n"/local--files/<page-name>/<file-name>"\n"../<file-name>"')
-            document.getElementById('rateSwitchBg').value = "";
-        }
-        else {
-            rateSwitchBg = "div.page-rate-widget-box span.rateup,<br>div.page-rate-widget-box span.ratedown {<br>    background-color: " + document.getElementById('rateSwitchBg').value + "!important;<br>}<br>";
-        }
+        rateSwitchBg = "div.page-rate-widget-box span.rateup,<br>div.page-rate-widget-box span.ratedown {<br>    background-color: " + document.getElementById('rateSwitchBg').value + "!important;<br>}<br>";
     };
     if (document.getElementById('rateSwitchColor').value == "") {
         rateSwitchColor = "";
@@ -1862,13 +1820,7 @@ if (document.getElementById('yuiContentBackGround').value == "") {
     var yuiContentBackGround = '';
 }
 else {
-    if (document.getElementById('yuiContentBackGround').value.match(/https?:/g)) {
-        alert('tab > div.yui-content:\nHotlinking is prohibited. You can use only relative pathname.\ne.g.\n"/local--files/<page-name>/<file-name>"\n"../<file-name>"')
-        document.getElementById('yuiContentBackGround').value = "";
-    }
-    else {
-        var yuiContentBackGround = 'div.yui-navset div.yui-content {<br>    background: ' + document.getElementById('yuiContentBackGround').value + ';<br>}<br>';
-    }
+    var yuiContentBackGround = 'div.yui-navset div.yui-content {<br>    background: ' + document.getElementById('yuiContentBackGround').value + ';<br>}<br>';
 };
 
 
@@ -1877,13 +1829,7 @@ else {
         var yuiSelectorNormalBg = '';
     }
     else {
-        if (document.getElementById('yuiSelectorNormalBg').value.match(/https?:/g)) {
-            alert('tab > normal selector:\nHotlinking is prohibited. You can use only relative pathname.\ne.g.\n"/local--files/<page-name>/<file-name>"\n"../<file-name>"')
-            document.getElementById('yuiSelectorNormalBg').value = "";
-        }
-        else {
-            var yuiSelectorNormalBg = '    background: ' + document.getElementById('yuiSelectorNormalBg').value + ';<br>';
-        }
+        var yuiSelectorNormalBg = '    background: ' + document.getElementById('yuiSelectorNormalBg').value + ';<br>';
     };
 
     if (document.getElementById('yuiSelectorNormalColor').value == "") {
@@ -1913,13 +1859,7 @@ else {
         var yuiSelectorHoveredBg = '';
     }
     else {
-        if (document.getElementById('yuiSelectorHoveredBg').value.match(/https?:/g)) {
-            alert('tab > hovered selector:\nHotlinking is prohibited. You can use only relative pathname.\ne.g.\n"/local--files/<page-name>/<file-name>"\n"../<file-name>"')
-            document.getElementById('yuiSelectorHoveredBg').value = "";
-        }
-        else {
-            var yuiSelectorHoveredBg = '    background: ' + document.getElementById('yuiSelectorHoveredBg').value + ';<br>';
-        }
+        var yuiSelectorHoveredBg = '    background: ' + document.getElementById('yuiSelectorHoveredBg').value + ';<br>';
     };
 
     if (document.getElementById('yuiSelectorHoveredColor').value == "") {
@@ -1942,13 +1882,7 @@ else {
         var yuiSelectorSelectedBg = '';
     }
     else {
-        if (document.getElementById('yuiSelectorSelectedBg').value.match(/https?:/g)) {
-            alert('tab > active selector:\nHotlinking is prohibited. You can use only relative pathname.\ne.g.\n"/local--files/<page-name>/<file-name>"\n"../<file-name>"')
-            document.getElementById('yuiSelectorSelectedBg').value = "";
-        }
-        else {
-            var yuiSelectorSelectedBg = '    background: ' + document.getElementById('yuiSelectorSelectedBg').value + ';<br>';
-        }
+        var yuiSelectorSelectedBg = '    background: ' + document.getElementById('yuiSelectorSelectedBg').value + ';<br>';
     };
 
     if (document.getElementById('yuiSelectorSelectedColor').value == "") {
