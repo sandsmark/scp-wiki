@@ -1,0 +1,2635 @@
+title:CSS Theme Preparation Tool
+[[div class="unmargined" style="margin: 0 auto 20px; background-color: #b7a; border: solid 1px #b7a; border-radius: 20px; box-shadow: 0 1px 6px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.8), inset 0 10px 1px rgba(255,255,255,.6), inset 0 -15px 30px rgba(0,0,0,.2); text-align: center; width: 500px;"]]
+[[div class="unmargined" style="margin: 20px 0; font-size: 300%; color: #fff; font-weight: bold; text-shadow: 1px 2px 3px rgba(0,0,0,.5);"]]
+GO DOWN THE [[span class="ruby"]]RABBIT HOLE[[span class="rt"]]C S S[[/span]][[/span]]...
+[[/div]]
+[[div class="unmargined" style="margin: 20px 0; color: #fff;"]]
+This thing with which you can make simple CSS Theme. If you want to learn more wikidot magic, check out following pages:
+[[<]]
+* [[[advanced-formatting-and-you|]]] -- by [[*user DrMagnus]]
+* [[[scp-style-resource|]]] -- by [[*user Shaggydredlocks]]
+* [[[listpages-magic-and-you|]]] -- by [[*user Croquembouche]]
+* [[[wiki-syntax|]]] -- by [[*user ghostchibi]]
+[[/<]]
+[[/div]]
+[[div class="unmargined" style="margin: 20px 0; font-size: 120%; font-weight: bold; color: #fff; text-shadow: 1px 2px 3px rgba(0,0,0,.25);"]]
+[[module Rate]]
+[[/div]]
+[[/div]]
+
+[[module ListPages offset="@URL|0" range="."]]
+%%content{2}%%
+[[/module]]
+[[module ListPages limit="@URL|0" range="." urlAttrPrefix="local-code"]]
+%%content{3}%%
+[[/module]]
+
+
+[[iftags]]
+====
+[[div class="sp-tab"]]
+[[tabview]]
+[[tab CSS Theme preparation tool]]
++* CSS Theme preparation tool
+
+[[div class="col-warning"]]
+[[collapsible show="HOW TO USE?" hide="CLOSE"]]
++* How to use?
+[[include component:image-block |width=280px
+|name=htu1.png
+|caption=(1) Insert values]]
+[[div class="reload-wrap" style="display: inline-block;"]]
+[[include component:image-block |width=300px
+|name=htu2.png
+|caption=(2) Click **RELOAD**]]
+[[/div]]
+[[div class="copy-wrap" style="display: inline-block;"]]
+[[include component:image-block |width=300px
+|name=htu3.png
+|caption=(3) Click **COPY**]]
+[[/div]]
+[[include component:image-block |width=300px
+|name=htu4.png
+|caption=(4) ...and paste it!]]
+++++* Are you looking for the more information? Check the tab "[[span style="color: #fff; background: #333;"]]"Where is the options what I am looking for?"[[/span]]"!
+[[/collapsible]]
+[[/div]]
+[[module css]]
+a[name*="toc"] + a[href="#top"] {display: none;padding: 1em 0 0;color: #b01!important;}a[name*="toc"]:target + a[href="#top"] {display: inline;}
+#header {z-index: 0;}.col-warning {position: sticky;position: -webkit-sticky;top: -0.8em;z-index: 99999;}.col-warning .collapsible-block-folded {text-align: center;margin-bottom: 1em;font-size: 1.3em;font-weight: bold;padding: 0.4em 0;border: 3px dotted #f099aa; background: #f099aa;text-shadow: 1px -1px 2px white,1px 1px 2px white,-1px -1px 2px white,-1px 1px 2px white; border-radius: 10px;}.col-warning .collapsible-block-unfolded {position: fixed;background: rgba(255,255,255,0.95);border: 1px solid #333;box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);z-index: 99999;top: 0;left: 0;right: 0;margin: 0 auto;width: 90%;height: 600px;overflow-y: scroll;border-radius: 10px;animation: w-s 1s ease forwards;}@keyframes w-s {0% {opacity: 0; top: 100px;}100% {opacity: 1; top: 0;}}.col-warning .collapsible-block-content {text-align: center;}.col-warning .collapsible-block-unfolded-link {text-align: right;padding: 0.5em 1em;font-size: 1.1em;font-weight: bold;z-index: 1;}.col-warning .collapsible-block-unfolded-link a {border-bottom: 1px solid #aaa;padding: 0 1em 0.2em;text-decoration: none!important;}.col-warning .collapsible-block-unfolded-link a:before {content: "";display: block;position: absolute;width: 100%;height: 250%;max-height: 200%;top: 0;left: 0;}.col-warning .scp-image-block.block-right {margin: 0 1em 0.5em 1em;}.col-warning h4 {margin: 2em 0.2em 3em;}
+[[/module]]
+
+[[div class="textchange"]]
+[[module ListUsers users="."]]
+[[div class="sitemember"]]
+[[embed]]
+<iframe src="/local--code/css-theme-preparation-tool/1#%%title%%" style="width: 90%;height: 1600px; border-width: 2px; border-style: outset; border-color: buttonface; padding: 0.5em 1em; text-decoration: none; background: #fff; border-left: solid 6px #901!important; color: #901; font-weight: bold; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29); overflow:hidden;position:relative;top:0px;left:0px;right:0px;bottom:0px;" frameborder="0" scrolling="yes"></iframe>
+[[/embed]]
+[[/div]]
+[[/module]]
+[[div class="sitemember" style="text-align: center;"]]
++* Please sign in to Wikidot...
+
+[[/div]]
+[[/div]]
+[[/tab]]
+
+
+[[tab "Where is the options what I am looking for?"]]
+This tool is created for the people who want to change the theme of page for their article. Do you want to use it? Let's go!
+[[# top]]
+[[toc]]
+[[# toc0]][#top Return to toc]
++ Create the color which you want to use.
+[[div class="bq"]]
+# » ##901|color picker & sample##
+----
+The "##901|color picker & sample##" will prepare your original color.
+Please follow the below steps;
+[[div class="bq"]]
+[[include component:image-block |width=300px
+|name=color1.png
+|caption=(1) "THIS IS MY COLOR!"]]
+[[/div]]
+[[div class="reload-wrap bq"]]
+[[include component:image-block |width=400px
+|name=color2.png
+|caption=(2) Click **RELOAD**
+]]
+[[/div]]
+[[div class="substitute-wrap bq"]]
+[[include component:image-block |width=400px
+|name=color3.png
+|caption=(3) Chose the form and click **substitute the value of picker**
+]]
+[[/div]]
+[[/div]]
+
+[[# toc1]][#top Return to toc]
++ Change the site title from "[[span class="siteTitle"]]SCP Foundation[[/span]]"
+[[div class="bq"]]
+» ##901|header## » **pseudo title** » title [[size 80%]](**div#header h1 a:before**)[[/size]]
+----
+**Note:** When not required the form of title, forms of "color" and "text-shadow" will not function.
+[[/div]]
+
+[[# toc2]][#top Return to toc]
++ Change the site sub-title from "[[span class="siteSubTitle"]]Secure, Contain, Protect[[/span]]"
+[[div class="bq"]]
+» ##901|header## » **pseudo title** » sub title [[size 80%]](**div#header h2 span:before**)[[/size]]
+----
+**Note:** When not required the form of title, forms of "color" and "text-shadow" will not function.
+[[/div]]
+
+[[# toc3]][#top Return to toc]
++ Change the header logo [[span class="h-logo"]][[span]]　[[/span]][[/span]]
+[[div class="bq"]]
+» ##901|header## » logo [[size 80%]](**div#header**)[[/size]]
+[[/div]]
+
+[[# toc4]][#top Return to toc]
++ Change the header background [[span class="h-back"]][[span]]　[[/span]][[/span]]
+[[div class="bq"]]
+» ##901|header## » **div#container-wrap**
+[[/div]]
+
+[[# toc5]][#top Return to toc]
++ Change the link color
+[[div class="bq"]]
+» ##901|general options## » a (link) color
+[[/div]]
+
+[[# toc6]][#top Return to toc]
++ Change the text color
+[[div class="bq"]]
+» ##901|general options## » **body** » text color
+[[/div]]
+
+[[# toc7]][#top Return to toc]
++ Change the standard background color
+[[div class="bq"]]
+» ##901|general options## » **body** » background
+[[/div]]
+
+[[# toc8]][#top Return to toc]
++ Change the heading elements color
+[[div class="bq"]]
+» ##901|general options## » **heading elements** » color
+----
+**Note:** You can choose "**h1 only**" or "**All**"(h1, h2, h3, h4, h5, h6). 
+[[/div]]
+
+[[# toc9]][#top Return to toc]
++ Change the standard font
+[[div class="bq"]]
+# : » ##901|general options## » font » @import [[size 80%]][*https://fonts.google.com/ (Google font)][[/size]]
+# : » ##901|general options## » **body** » font-family
+----
++++++* 1. Go to [*https://fonts.google.com/ https://fonts.google.com/].
++++++* 2. Select your font.
+[[div class="bq" style="margin-top: 0;margin-bottom: 0.5em;"]]
+[[include component:image-block |width=300px
+|name=font1.png
+|caption=Select your font]]
+[[/div]]
+
++++++* [[span id="u-font1"]]3. Copy "@import url('``https://``fonts.googleapis.com/css?family=XXXXX');" and paste it into "α".[[/span]]
+[[div class="bq" style="margin-top: 0;margin-bottom: 0.5em;"]]
+[[include component:image-block |width=300px
+|name=font2.png
+|caption=without "**{{<style>}}**" and "**{{</style>}}**"]]
+[[/div]]
+
++++++* [[span id="u-font2"]]4. Copy "'<YOUR FONT>', <BASIC FONT KEYWORDS>((bibcite font))" and paste it into "**β**".[[/span]]
+[[div class="bq" style="margin-top: 0;"]]
+[[include component:image-block |width=300px
+|name=font3.png
+|caption=without "**{{font-family:}}**" and "**{{;}}**"]]
+[[/div]]
+[[/div]]
+
+[[# toc10]][#top Return to toc]
++ Change the heading elements' font
+[[div class="bq"]]
+» ##901|general options## » font » @import [[size 80%]][*https://fonts.google.com/ (Google font)][[/size]]
+» ##901|general options## » **heading elements** » font-family
+----
+**Note:** Please check [#toc9 "Change the font" (4.)]. 
+[[/div]]
+
+[[# toc11]][#top Return to toc]
++ Change sidebar color
+[[div class="bq"]]
+» ##901|sidebar## » **div.side-block** » background
+[[/div]]
+
+[[# toc12]][#top Return to toc]
++ Change sidebar header color
+[[div class="bq"]]
+» ##901|sidebar## » **div.side-block** » color [[size 80%]](**div.side-block div.heading**)[[/size]]
+[[/div]]
+
+[[# toc13]][#top Return to toc]
++ Change mobile sidebar button color
+[[div class="bq"]]
+» ##901|sidebar## » **open-menu** » color
+[[/div]]
+
+[[# toc14]][#top Return to toc]
++ Change tab background color
+[[div class="bq"]]
+» ##901|tab## » **div.yui-content** » background
+[[/div]]
+
+[[# toc15]][#top Return to toc]
++ Change tab selector color
+[[div class="bq"]]
+» ##901|tab## » **normal selector**
+» ##901|tab## » **hovered selector**
+» ##901|tab## » **active selector**
+----
+[[div class="bq"]]
+[[include component:image-block |width=300px
+|name=tab1.png
+|caption=active/hovered/normal selector]]
+[[/div]]
+[[/div]]
+
+[[# toc16]][#top Return to toc]
++ Adjust Interwiki color
+[[div class="bq"]]
+» ##901|Interwiki## » **div.scpnet-interwiki-wrapper** » filter
+----
+**Note:** Check the tab "[[span style="color: #fff; background: #333;"]][[span class="fa fa-folder"]]@<&nbsp;>@[[/span]]tips4: Interwiki filter[[/span]]" if you want more information. 
+[[/div]]
+
+[[# toc17]][#top Return to toc]
++ Change Rate module color
+[[div class="bq"]]
+» ##901|Rate module## » background
+» ##901|Rate module## » color
+[[/div]]
+
+
+
+
+
+[[div_ id="u-font1-hovertip"]]
+α. : » ##901|general options## » font » @import [[size 80%]][*https://fonts.google.com/ (Google font)][[/size]]
+[[/div]]
+[[div_ id="u-font2-hovertip"]]
+β. : » ##901|general options## » **body** » font-family
+[[/div]]
+
+
+[[module CSS]]
+.bq {border: 1px dashed #999;padding: 0 1em;background-color: #f4f4f4;margin: 40px 1em;}.bq ol {list-style-type: lower-greek;}h1[id] + .bq {margin-top: 0;}.bq > .bq {text-align: center;background-color: #fff; cursor: pointer;}.bq > .bq .image {transition: .25s; cursor: pointer;}.bq > .bq .image:hover{transform: scale(1.6);transition: .25s;transition-delay: .4s;}.scp-image-block {clear: both!important;float: none!important;margin: 1em auto;display: inline-block;}.siteTitle {color: #eee;text-shadow: 3px 3px 5px #000;font-family: BauhausLTDemi;background: linear-gradient(to bottom,#966,#633,#300);padding: 0 0.15em 0;}.siteSubTitle {color: #f0f0c0;text-shadow: 1px 1px 1px rgba(0,0,0,.8);background: linear-gradient(to bottom,#966,#633,#300);padding: 0.45em 0.15em 0;font-size: 55%;}#toc-list {counter-reset: number 0;}#toc-list div[style="margin-left: 1em;"] {margin-left: 0!important;}#toc-list a:before {content: counter(number )". ";counter-increment: number 1; }span[style="color: #901"] {font-size: 110%;font-weight: bold;font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;}.reload-wrap .scp-image-caption strong,.copy-wrap .scp-image-caption strong,.substitute-wrap .scp-image-caption strong {display: inline-block;padding: 0.25em 1em;text-decoration: none;background: #f7f7f7;border-width: 2px;border-style: outset;border-color: buttonface;border-left: solid 6px #901;border-radius: 0;color: #901;font-size: 8px;font-weight: bold;box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);cursor: pointer;white-space: nowrap;}.reload-wrap .scp-image-caption strong:before,.copy-wrap .scp-image-caption strong:before,.substitute-wrap .scp-image-caption strong:before {content: "";display: inline-block;font: normal normal normal 14px/1 FontAwesome;font-size: inherit;text-rendering: auto;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;transform: translate(0, 0);}.substitute-wrap .scp-image-caption strong:before {content: "\f0ea\00a0";}.reload-wrap .scp-image-caption strong:before {content: "\f079\00a0";}.copy-wrap .scp-image-caption strong:before {content: "\f0c5\00a0";}
+
+.h-logo:before,.h-back:before {content: "from";}.h-logo:after {content: "";position: relative;bottom: -0.3em;display: inline-block;width: 50px;height: 50px;background-image: url("/local--files/component:theme/logo.png");background-size:contain;background-position:center center;background-repeat:no-repeat; margin-left: 0.2em;}.h-back:after {content: "";position: relative;bottom: -0.3em;display: inline-block;width: 20px;height: 80px;background-image: url("/local--files/component:theme/body_bg.png");background-size:contain;background-position:center center;background-repeat:no-repeat;border: 1px solid; margin-left: 0.2em;}.h-logo span,.h-back span {font-size: 0;}
+[[/module]]
+[[/tab]]
+
+
+[[tab tips1: text-shadow]]
+> +* text-shadow
+> **<offset-x>, <offset-y>:** Required. These length values specify the shadow's distance from the text. <offset-x> specifies the horizontal distance; a negative value places the shadow to the left of the text. <offset-y> specifies the vertical distance; a negative value places the shadow above the text. If both values are 0, the shadow is placed directly behind the text, although it may be partly visible due to the effect of <blur-radius>.
+>> = ##blue|<length>((bibcite length))##
+> 
+> **<blur-radius>:** Optional. This is a length value. The higher the value, the bigger the blur; the shadow becomes wider and lighter. If not specified, it defaults to 0.
+>> = ##blue|<length>((bibcite length))##
+> 
+> **<color>:** Optional. The color of the shadow. It can be specified either before or after the offset values. If unspecified, the color's value is left up to the user agent, so when consistency across browsers is desired you should define it explicitly.
+>> = ##blue|<rgb()> | <rgba()> | <hsl()> | <hsla()> | <hex-color> | <named-color>((bibcite color)) | currentcolor | <deprecated-system-color>##
+
+> **/* offset-x | offset-y | blur-radius | color */**
+> 
+> [[span style="background: #fdd; padding: 0.5em; text-shadow: 1px 1px 2px black;"]]text-shadow: 1px 1px 2px black;[[/span]]
+
+> **/* color | offset-x | offset-y | blur-radius */**
+> 
+> [[span style="background: #fdd; padding: 0.5em; text-shadow: #fc0 1px 0 10px;"]]text-shadow: #fc0 1px 0 10px;[[/span]]
+
+> **/* offset-x | offset-y | color */**
+> 
+> [[span style="background: #fdd; padding: 0.5em; text-shadow: 5px 5px #558abb;"]]text-shadow: 5px 5px #558abb;[[/span]]
+
+> **/* color | offset-x | offset-y */**
+> 
+> [[span style="background: #fdd; padding: 0.5em; text-shadow: white 2px 5px;"]]text-shadow: white 2px 5px;[[/span]]
+
+> **/* offset-x | offset-y*/**
+> **/* Use defaults for color and blur-radius */**
+> 
+> [[span style="background: #fdd; padding: 0.5em; text-shadow: 5px 10px;"]]text-shadow: 5px 10px;[[/span]]
+
+----
+[[>]]
+**//[*https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow text-shadow - CSS: Cascading Style Sheets | MDN]//**
+by **//[*https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow$history Mozilla Contributors]//**
+CC-BY-SA 2.5
+[[/>]]
+[[/tab]]
+
+
+
+[[tab tips2: box-shadow]]
+> +* box-shadow
+> //**It's the same as "text-shadow" without a keyword of <inset>.**//
+> ----
+> 
+> **<inset>:** If not specified (default), the shadow is assumed to be a drop shadow (as if the box were raised above the content).
+> The presence of the inset keyword changes the shadow to one inside the frame (as if the content was depressed inside the box). Inset shadows are drawn inside the border (even transparent ones), above the background, but below content.
+>> = ##blue|inset##
+
+> **/* offset-x | offset-y | color */**
+> [[div style="box-shadow: 60px -16px teal; padding: 0.5em; border: 1px solid #333;" margin-bottom: 0.5em;"]]
+> box-shadow: 60px -16px teal;
+> [[/div]]
+
+> **/* offset-x | offset-y | blur-radius | color */**
+> [[div style="box-shadow: 10px 5px 5px black; padding: 0.5em; border: 1px solid #333;" margin-bottom: 0.5em;"]]
+> box-shadow: 10px 5px 5px black;
+> [[/div]]
+
+> **/* offset-x | offset-y | blur-radius | spread-radius | color */**
+> [[div style="box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); padding: 0.5em; border: 1px solid #333;" margin-bottom: 0.5em;"]]
+> box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+> [[/div]]
+
+> **/* inset | offset-x | offset-y | color */**
+> [[div style="box-shadow: inset 5em 1em gold; padding: 0.5em; border: 1px solid #333;" margin-bottom: 0.5em;]]
+> box-shadow: inset 5em 1em gold;
+> [[/div]]
+
+> **/* Any number of shadows, separated by commas */**
+> [[div style="box-shadow: 3px 3px red, -1em 0 0.4em olive; padding: 0.5em; border: 1px solid #333;" margin-bottom: 0.5em;"]]
+> box-shadow: 3px 3px red, -1em 0 0.4em olive;
+> [[/div]]
+
+----
+[[>]]
+**//[*https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow box-shadow - CSS: Cascading Style Sheets | MDN]//**
+by **//[*https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow$history Mozilla Contributors]//**
+CC-BY-SA 2.5
+[[/>]]
+[[/tab]]
+
+
+
+[[tab tips3: border]]
+> +* border
+> **<width>:** Sets the thickness of the border. Defaults to medium if absent.
+>> = ##blue|<length>((bibcite length)) | thin | medium | thick##
+> 
+> **<style>:** Sets the style of the border. Defaults to none if absent.
+>> = ##blue|none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset##
+> 
+> **<color>:** Sets the color of the border. Defaults to currentcolor if absent.
+>> = ##blue|<rgb()> | <rgba()> | <hsl()> | <hsla()> | <hex-color> | <named-color>((bibcite color)) | currentcolor | <deprecated-system-color>##
+
+> **/* style */**
+> 
+> [[span style="padding: 0.2em 0.5em; border: solid;"]]border: solid;[[/span]]
+
+> **/* width | style */**
+> 
+> [[span style="padding: 0.2em 0.5em; border: 2px dotted;"]]border: 2px dotted;[[/span]]
+
+> **/* style | color */**
+> 
+> [[span style="padding: 0.2em 0.5em; border: outset #f33;"]]border: outset #f33;[[/span]]
+
+> **/* width | style | color */**
+> 
+> [[span style="padding: 0.2em 0.5em; border: medium dashed green;"]]border: medium dashed green;[[/span]]
+
+----
+[[>]]
+**//[*https://developer.mozilla.org/en-US/docs/Web/CSS/border border - CSS: Cascading Style Sheets | MDN]//**
+by **//[*https://developer.mozilla.org/en-US/docs/Web/CSS/border$history Mozilla Contributors]//**
+CC-BY-SA 2.5
+[[/>]]
+[[/tab]]
+
+
+[[tab tips4: Interwiki filter]]
+
+[[embed]]
+<iframe src="/local--code/css-theme-preparation-tool/4" style="width: 100%; height: 200px; border: none;"></iframe>
+[[/embed]]
+
+[[table class="wiki-content-table t-sample" style="float: none;clear: both;margin-left: auto;margin-right: auto;"]]
+[[row]][[hcell]]H[[/hcell]][[hcell]]S[[/hcell]][[hcell]]V[[/hcell]][[/row]]
+[[row]][[cell]]355deg[[/cell]][[cell]]100%[[/cell]][[cell]]73%[[/cell]][[/row]]
+[[row]][[cell]]**hue-rotate**[[/cell]][[cell]]**saturate**[[/cell]][[cell]]/[[/cell]][[/row]]
+[[row]][[cell]]0deg[[/cell]][[cell]]0%[[/cell]][[cell]]100%[[/cell]][[/row]]
+[[row]][[cell]]/[[/cell]][[cell]]/[[/cell]][[cell]]**brightness**[[/cell]][[/row]]
+[[/table]]
+
+**Note 1:** You can calculate only rough values by using the above tool.
+**Note 2:** If the side-block color is not monotone[[size 80%]](#ffffff, #DCDCDC, etc.)[[/size]], this method will not function well like "Third Law Theme"(#E2E4E7).
+**Note 3:** hue-rotate(-70deg) = hue-rotate(290deg)
+
++* [[span style="display: inline-block; width: 100%;"]]Basics[[/span]]
+[[table class="wiki-content-table" style="float: left; margin-right: 0.8em;"]]
+[[row]][[hcell colspan="5"]]default color[[/hcell]][[/row]]
+[[row]][[cell]][[/cell]][[hcell]]color code[[/hcell]][[hcell]]H[[/hcell]][[hcell]]S[[/hcell]][[hcell]]V[[/hcell]][[/row]]
+[[row]][[hcell rowspan="2"]]Link[[/hcell]][[cell rowspan="2"]]**##b01|#bb0011##**[[/cell]][[cell]]355deg[[/cell]][[cell]]100%[[/cell]][[cell]]73%[[/cell]][[/row]]
+[[row]][[cell]]/[[/cell]][[cell]]/[[/cell]][[cell]]/[[/cell]][[/row]]
+
+[[row]][[hcell rowspan="2"]]side-bg[[/hcell]][[cell rowspan="2"]]#ffffff[[/cell]][[cell]]0deg[[/cell]][[cell]]0%[[/cell]][[cell]]100%[[/cell]][[/row]]
+[[row]][[cell]]/[[/cell]][[cell]]/[[/cell]][[cell]]/[[/cell]][[/row]]
+
+[[row]]
+[[cell colspan="5" style="text-align: center;"]]
+[[div class="side-block" style="width: 17em; background-color: #ffffff; border-color: #600;"]]
+[[a href="#" style="font-weight: bold; color: #b01;"]]side-block sample[[/a]]
+[[/div]]
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[cell class="scpnet-interwiki-wrapper" colspan="5" style="padding: 0; text-align: left;"]]
+[[div class="interwiki"]]
+[[div_ class="interwiki__title"]]
+Interwiki sample
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]Esperanto[[/a]]
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]tlhIngan Hol[[/a]]
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]Na'vi[[/a]]
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]Qenya[[/a]]
+[[/div]]
+[[/div]]
+[[/cell]]
+[[/row]]
+[[row]][[hcell]]filter:[[/hcell]][[hcell colspan="4" style="font-weight: normal; text-align: left;"]]
+ -- 
+ -- 
+ -- 
+[[/hcell]][[/row]]
+[[/table]]
+
+
+[!-- MC&D --]
+[[table class="wiki-content-table" style="float: left; margin-right: 0.8em;"]]
+[[row]][[hcell colspan="5"]][http://www.scp-wiki.net/component:mcd-theme MC&D Theme][[/hcell]][[/row]]
+[[row]][[cell]][[/cell]][[hcell]]color code[[/hcell]][[hcell]]H[[/hcell]][[hcell]]S[[/hcell]][[hcell]]V[[/hcell]][[/row]]
+[[row]][[hcell rowspan="2"]]Link[[/hcell]][[cell rowspan="2"]]**##6C4279|#6C4279##**[[/cell]][[cell]]285deg[[/cell]][[cell]]45%[[/cell]][[cell]]47%[[/cell]][[/row]]
+[[row]][[cell]]-70deg[[/cell]][[cell]]45%[[/cell]][[cell]]/[[/cell]][[/row]]
+
+[[row]][[hcell rowspan="2"]]side-bg[[/hcell]][[cell rowspan="2"]]#ffffff[[/cell]][[cell]]0deg[[/cell]][[cell]]0%[[/cell]][[cell]]100%[[/cell]][[/row]]
+[[row]][[cell]]/[[/cell]][[cell]]/[[/cell]][[cell]]/[[/cell]][[/row]]
+
+[[row]]
+[[cell colspan="5" style="text-align: center;"]]
+[[div class="side-block" style="width: 17em; background-color: #ffffff; border-color: #8B198B; box-shadow: 0 2px 6px rgba(50,0,50,.5);"]]
+[[a href="#" style="font-weight: bold; color: #6C4279;"]]side-block sample[[/a]]
+[[/div]]
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[cell class="scpnet-interwiki-wrapper mcd" colspan="5" style="padding: 0; text-align: left;"]]
+[[div class="interwiki"]]
+[[div_ class="interwiki__title"]]
+Interwiki sample
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]Esperanto[[/a]]
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]tlhIngan Hol[[/a]]
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]Na'vi[[/a]]
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]Qenya[[/a]]
+[[/div]]
+[[/div]]
+[[/cell]]
+[[/row]]
+[[row]][[hcell]]filter:[[/hcell]][[hcell colspan="4" style="font-weight: normal; text-align: left;"]]
+hue-rotate(290deg)
+saturate(45%)
+ -- 
+[[/hcell]][[/row]]
+[[/table]]
+
+
+[!-- Serpent's Hand --]
+[[table class="wiki-content-table" style="float: left; margin-right: 0.8em;"]]
+[[row]][[hcell colspan="5"]][http://www.scp-wiki.net/component:sh-theme Serpent's Hand Theme][[/hcell]][[/row]]
+[[row]][[cell]][[/cell]][[hcell]]color code[[/hcell]][[hcell]]H[[/hcell]][[hcell]]S[[/hcell]][[hcell]]V[[/hcell]][[/row]]
+[[row]][[hcell rowspan="2"]]Link[[/hcell]][[cell rowspan="2"]]**##059400|#059400##**[[/cell]][[cell]]117deg[[/cell]][[cell]]100%[[/cell]][[cell]]58%[[/cell]][[/row]]
+[[row]][[cell]]-238deg[[/cell]][[cell]]/[[/cell]][[cell]]/[[/cell]][[/row]]
+
+[[row]][[hcell rowspan="2"]]side-bg[[/hcell]][[cell rowspan="2"]]#ffffff[[/cell]][[cell]]0deg[[/cell]][[cell]]0%[[/cell]][[cell]]100%[[/cell]][[/row]]
+[[row]][[cell]]/[[/cell]][[cell]]/[[/cell]][[cell]]/[[/cell]][[/row]]
+
+[[row]]
+[[cell colspan="5" style="text-align: center;"]]
+[[div class="side-block" style="width: 17em; background-color: #ffffff; border: 1px dotted black; box-shadow: 0 2px 6px rgba(0,30,0,.5);"]]
+[[a href="#" style="font-weight: bold; color: #059400;"]]side-block sample[[/a]]
+[[/div]]
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[cell class="scpnet-interwiki-wrapper sh" colspan="5" style="padding: 0; text-align: left;"]]
+[[div class="interwiki"]]
+[[div_ class="interwiki__title"]]
+Interwiki sample
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]Esperanto[[/a]]
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]tlhIngan Hol[[/a]]
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]Na'vi[[/a]]
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]Qenya[[/a]]
+[[/div]]
+[[/div]]
+[[/cell]]
+[[/row]]
+[[row]][[hcell]]filter:[[/hcell]][[hcell colspan="4" style="font-weight: normal; text-align: left;"]]
+hue-rotate(122deg)
+ -- 
+ -- 
+[[/hcell]][[/row]]
+[[/table]]
+
+
+[!-- Third Law --]
+[[table class="wiki-content-table" style="float: left; margin-right: 0.8em;"]]
+[[row]][[hcell colspan="5"]][http://www.scp-wiki.net/component:3lawtheme Third Law Theme][[/hcell]][[/row]]
+[[row]][[cell]][[/cell]][[hcell]]color code[[/hcell]][[hcell]]H[[/hcell]][[hcell]]S[[/hcell]][[hcell]]V[[/hcell]][[/row]]
+[[row]][[hcell rowspan="2"]]Link[[/hcell]][[cell rowspan="2"]]**##4682B4|#4682B4##**[[/cell]][[cell]]207deg[[/cell]][[cell]]61%[[/cell]][[cell]]70%[[/cell]][[/row]]
+[[row]][[cell]]-148deg[[/cell]][[cell]]61%[[/cell]][[cell]]/[[/cell]][[/row]]
+
+[[row]][[hcell rowspan="2"]]side-bg[[/hcell]][[cell rowspan="2"]]**##E2E4E7|#E2E4E7##**[[/cell]][[cell]]216deg[[/cell]][[cell]]2%[[/cell]][[cell]]90%[[/cell]][[/row]]
+[[row]][[cell]]/[[/cell]][[cell]]/[[/cell]][[cell]]90%[[/cell]][[/row]]
+
+[[row]]
+[[cell colspan="5" style="text-align: center;"]]
+[[div class="side-block" style="width: 17em; border: 1px solid #315B7D; background: #E2E4E7; box-shadow: none;"]]
+[[a href="#" style="font-weight: bold; color: #4682B4;"]]side-block sample[[/a]]
+[[/div]]
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[cell class="scpnet-interwiki-wrapper tl" colspan="5" style="padding: 0; text-align: left;"]]
+[[div class="interwiki"]]
+[[div_ class="interwiki__title"]]
+Interwiki sample
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]Esperanto[[/a]]
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]tlhIngan Hol[[/a]]
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]Na'vi[[/a]]
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]Qenya[[/a]]
+[[/div]]
+[[/div]]
+[[/cell]]
+[[/row]]
+[[row]][[hcell]]filter:[[/hcell]][[hcell colspan="4" style="font-weight: normal; text-align: left;"]]
+hue-rotate(212deg)
+saturate(61%)
+brightness(90%)
+[[/hcell]][[/row]]
+[[/table]]
+
+
+[!-- SPC --]
+[[table class="wiki-content-table" style="float: left; margin-right: 0.8em;"]]
+[[row]][[hcell colspan="5"]][http://www.scp-wiki.net/component:spc-theme SPC Theme][[/hcell]][[/row]]
+[[row]][[cell]][[/cell]][[hcell]]color code[[/hcell]][[hcell]]H[[/hcell]][[hcell]]S[[/hcell]][[hcell]]V[[/hcell]][[/row]]
+[[row]][[hcell rowspan="2"]]Link[[/hcell]][[cell rowspan="2"]]**##0c499c|#0c499c##**[[/cell]][[cell]]214deg[[/cell]][[cell]]92%[[/cell]][[cell]]61%[[/cell]][[/row]]
+[[row]][[cell]]-141deg[[/cell]][[cell]]92%[[/cell]][[cell]]/[[/cell]][[/row]]
+
+[[row]][[hcell rowspan="2"]]side-bg[[/hcell]][[cell rowspan="2"]]#ffffff[[/cell]][[cell]]0deg[[/cell]][[cell]]0%[[/cell]][[cell]]100%[[/cell]][[/row]]
+[[row]][[cell]]/[[/cell]][[cell]]/[[/cell]][[cell]]/[[/cell]][[/row]]
+
+[[row]]
+[[cell colspan="5" style="text-align: center;"]]
+[[div class="side-block" style="width: 17em;"]]
+[[a href="#" style="font-weight: bold; color: #0c499c;"]]side-block sample[[/a]]
+[[/div]]
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[cell class="scpnet-interwiki-wrapper spc" colspan="5" style="padding: 0; text-align: left;"]]
+[[div class="interwiki"]]
+[[div_ class="interwiki__title"]]
+Interwiki sample
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]Esperanto[[/a]]
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]tlhIngan Hol[[/a]]
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]Na'vi[[/a]]
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]Qenya[[/a]]
+[[/div]]
+[[/div]]
+[[/cell]]
+[[/row]]
+[[row]][[hcell]]filter:[[/hcell]][[hcell colspan="4" style="font-weight: normal; text-align: left;"]]
+hue-rotate(219deg)
+saturate(92%)
+ -- 
+[[/hcell]][[/row]]
+[[/table]]
+
+
+[!-- Darkbody (djkaktus's Proposal II) --]
+[[table class="wiki-content-table" style="float: left; margin-right: 0.8em;"]]
+[[row]][[hcell colspan="5"]][http://kontainer.djkakt.us/component:darkbodytheme Darkbody Theme][[/hcell]][[/row]]
+[[row]][[cell]][[/cell]][[hcell]]color code[[/hcell]][[hcell]]H[[/hcell]][[hcell]]S[[/hcell]][[hcell]]V[[/hcell]][[/row]]
+[[row]][[hcell rowspan="2"]]Link[[/hcell]][[cell rowspan="2"]]**##2F4F4F|#2F4F4F##**[[/cell]][[cell]]180deg[[/cell]][[cell]]40%[[/cell]][[cell]]30%[[/cell]][[/row]]
+[[row]][[cell]]-175deg[[/cell]][[cell]]40%[[/cell]][[cell]]/[[/cell]][[/row]]
+
+[[row]][[hcell rowspan="2"]]side-bg[[/hcell]][[cell rowspan="2"]]**##DCDCDC|#DCDCDC##**[[/cell]][[cell]]0deg[[/cell]][[cell]]0%[[/cell]][[cell]]86%[[/cell]][[/row]]
+[[row]][[cell]]/[[/cell]][[cell]]/[[/cell]][[cell]]86%[[/cell]][[/row]]
+
+[[row]]
+[[cell colspan="5" style="text-align: center;"]]
+[[div class="side-block" style="width: 17em; border: 1px solid #2F4F4F;box-shadow: 0 2px 6px rgba(32,32,32,1);background: #DCDCDC;"]]
+[[a href="#" style="font-weight: bold; color: #2F4F4F;"]]side-block sample[[/a]]
+[[/div]]
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[cell class="scpnet-interwiki-wrapper db" colspan="5" style="padding: 0; text-align: left;"]]
+[[div class="interwiki"]]
+[[div_ class="interwiki__title"]]
+Interwiki sample
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]Esperanto[[/a]]
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]tlhIngan Hol[[/a]]
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]Na'vi[[/a]]
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]Qenya[[/a]]
+[[/div]]
+[[/div]]
+[[/cell]]
+[[/row]]
+[[row]][[hcell]]filter:[[/hcell]][[hcell colspan="4" style="font-weight: normal; text-align: left;"]]
+hue-rotate(185deg)
+saturate(40%)
+brightness(86%)
+[[/hcell]][[/row]]
+[[/table]]
+
+
++* [[span style="display: inline-block; width: 100%;"]]Exception[[/span]]
+[!-- The Way It Ends (djkaktus's Proposal III) --]
+[[table class="wiki-content-table" style="float: left; margin-right: 0.8em;"]]
+[[row]][[hcell colspan="5"]][http://kontainer.djkakt.us/component:thewayitendstheme The Way It Ends Theme][[/hcell]][[/row]]
+[[row]][[cell]][[/cell]][[hcell]]color code[[/hcell]][[hcell]]H[[/hcell]][[hcell]]S[[/hcell]][[hcell]]V[[/hcell]][[/row]]
+[[row]][[hcell rowspan="2"]]Link[[/hcell]][[cell rowspan="2"]]--**##e80e0e|#e80e0e##**--[[/cell]][[cell]]--0deg--[[/cell]][[cell]]--93%--[[/cell]][[cell]]--90%--[[/cell]][[/row]]
+[[row]][[cell]]---5deg--[[/cell]][[cell]]--93%--[[/cell]][[cell]]/[[/cell]][[/row]]
+
+[[row]][[hcell rowspan="2"]]side-bg[[/hcell]][[cell rowspan="2"]]--**##161616|#161616##**--[[/cell]][[cell]]--0deg--[[/cell]][[cell]]--0%--[[/cell]][[cell]]--8%--[[/cell]][[/row]]
+[[row]][[cell]]/[[/cell]][[cell]]/[[/cell]][[cell]]--8%--[[/cell]][[/row]]
+
+[[row]]
+[[cell colspan="5" style="text-align: center;"]]
+[[div class="side-block" style="width: 17em; border: 1px solid #920909;box-shadow: 0 2px 6px rgba(32,32,32,1);background: #161616; "]]
+[[a href="#" style="font-weight: bold; color: #e80e0e;"]]side-block sample[[/a]]
+[[/div]]
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[cell class="scpnet-interwiki-wrapper end-re" colspan="5" style="padding: 0; text-align: left;"]]
+[[div class="interwiki"]]
+[[div_ class="interwiki__title"]]
+Interwiki sample
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]Esperanto[[/a]]
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]tlhIngan Hol[[/a]]
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]Na'vi[[/a]]
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]Qenya[[/a]]
+[[/div]]
+[[/div]]
+[[/cell]]
+[[/row]]
+[[row]][[hcell]]filter:[[/hcell]][[hcell colspan="4" style="font-weight: normal; text-align: left;"]]
+**__##e80e0e|invert(92%)##__**((bibcite endre1))
+**__##e80e0e|hue-rotate(189deg)##__**((bibcite endre2))
+**__##e80e0e|saturate(1200%)##__**
+[[/hcell]][[/row]]
+[[/table]]
+
+
+[!-- IJAMEA --]
+[[table class="wiki-content-table" style="float: left; margin-right: 0.8em;"]]
+[[row]][[hcell colspan="5"]][http://www.scp-wiki.net/component:ijamea-theme IJAMEA Theme][[/hcell]][[/row]]
+[[row]][[cell]][[/cell]][[hcell]]color code[[/hcell]][[hcell]]H[[/hcell]][[hcell]]S[[/hcell]][[hcell]]V[[/hcell]][[/row]]
+[[row]][[hcell rowspan="2"]]Link[[/hcell]][[cell rowspan="2"]]**##000000|#000000##**[[/cell]][[cell]]0deg[[/cell]][[cell]]0%[[/cell]][[cell]]0%[[/cell]][[/row]]
+[[row]][[cell]]/[[/cell]][[cell]]/[[/cell]][[cell]]/[[/cell]][[/row]]
+
+[[row]][[hcell rowspan="2"]]side-bg[[/hcell]][[cell rowspan="2"]]**#FFFFFF**[[/cell]][[cell]]0deg[[/cell]][[cell]]0%[[/cell]][[cell]]100%[[/cell]][[/row]]
+[[row]][[cell]]/[[/cell]][[cell]]/[[/cell]][[cell]]/[[/cell]][[/row]]
+
+[[row]]
+[[cell colspan="5" style="text-align: center;"]]
+[[div class="side-block" style="width: 17em; border: 1px solid #000000;box-shadow: 0 2px 6px #000000;background-color: #ffffff;"]]
+[[a href="#" style="font-weight: bold; color: #000000;"]]side-block sample[[/a]]
+[[/div]]
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[cell class="scpnet-interwiki-wrapper ij" colspan="5" style="padding: 0; text-align: left;"]]
+[[div class="interwiki"]]
+[[div_ class="interwiki__title"]]
+Interwiki sample
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]Esperanto[[/a]]
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]tlhIngan Hol[[/a]]
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]Na'vi[[/a]]
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]Qenya[[/a]]
+[[/div]]
+[[/div]]
+[[/cell]]
+[[/row]]
+[[row]][[hcell]]filter:[[/hcell]][[hcell colspan="4" style="font-weight: normal; text-align: left;"]]
+**__##e80e0e|grayscale(100%)##__**
+**__##e80e0e|drop-shadow(0 1px 1px #000000)##__**
+[[/hcell]][[/row]]
+[[/table]]
++* [[span style="display: inline-block; width: 100%; font-size: 0px;"]]a[[/span]]
+----
+[[>]]
+by [[*user Dr Devan]], [[*user C-take]], [[*user 7happy7]]
+[[/>]]
+[[/tab]]
+[[/tabview]]
+[[/div]]
+
+[[note]]
+[/css-theme-preparation-tool/offset/1/local-code_limit/1 view local-code]
+[[/note]]
+
+[[bibliography title="Footnote"]]
+: font : sans-serif, serif, cursive, fantasy, monospace...
+: length : 1px, 1em…
+: color : red, green…
+: endre1 : 100% - 8% = 92%
+: endre2 : -5deg - (180deg * 0.92),,##blue|[invert]##,, + 360deg = 189.4 ≒ 189deg
+[[/bibliography]]
+====
+[[div class="cd-tab"]]
+[[tabview]]
+[[tab local-code]]
+[[note]]
+[/css-theme-preparation-tool return to tool]
+[[/note]]
+[[/tab]]
+
+[[tab 1]]
+[[code type="html"]]
+<!--
+author: 7happy7
+license: CC BY-SA 3.0
+-->
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/i18n/jquery.spectrum-en.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.css">
+    <link rel="stylesheet" type="text/css" href="/local--code/css-theme-preparation-tool/2">
+    <link rel="stylesheet" type="text/css" href="/local--code/css-theme-preparation-tool/3">
+    <link rel="stylesheet" type="text/css" href="http://scp-jp.wdfiles.com/local--theme/scp-sigma-9-off-canvas/style.css">
+    <style id="input-style"></style>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+</head>
+
+
+
+
+
+
+
+
+
+<body>
+<div id="tool-content">
+
+<button onclick="window.location.reload(false)" type="button"><span class="fa fa-retweet"></span> RELOAD THE TOOL</button>
+
+
+
+<form id="pickCover" style="width: 100%; text-align: center;">
+<h1>color picker & sample</h1>
+
+<input type="text" id="picker"><button id="lButton" type="button" style="margin-left: 0.2em;"><span class="fa fa-retweet"></span> RELOAD</button><br>
+<input type="text" id="cKey" onkeyup="getValue();" value="rgba(200, 100, 50, 0.5)" style="margin-top: 0.5em;"><br>
+<div id="cView" style="border: 2px solid #333333; background-color: #ffffff; height: 3em; margin: 1em; padding-top: 1.5em; text-align: center;"><i style="padding: 1em; background-color: #ffffff; border: 2px solid #333333;" id="cViewText">italic <span style="font-style: normal;"><b>bold</b> normal</span></i></div>
+</form>
+
+
+<div class="view-label-wrap-wrap">
+<h1>select</h1>
+<span class="view-label-wrap">
+<!--generalForm-->
+<input type="radio" id="viewGeneral" checked="checked" name="vCheck" onclick="viewGeneral()">
+<label for="viewGeneral">general options</label>
+<!--headerForm-->
+<input type="radio" id="viewHeader" name="vCheck" onclick="viewHeader()">
+<label for="viewHeader">header</label>
+<!--sidebarForm-->
+<input type="radio" id="viewSidebar" name="vCheck" onclick="viewSidebar()">
+<label for="viewSidebar">sidebar</label>
+<!--yuiForm-->
+<input type="radio" id="viewYui" name="vCheck" onclick="viewYui()">
+<label for="viewYui">tab</label>
+<!--intForm-->
+<input type="radio" id="viewInt" name="vCheck" onclick="viewInt()">
+<label for="viewInt">Interwiki</label>
+<!--rateForm-->
+<input type="radio" id="viewRate" name="vCheck" onclick="viewRate()">
+<label for="viewRate">Rate module</label>
+</span>
+</div>
+
+
+<div id="formWrap">
+<form id="generalForm" class="form-block only-view">
+
+<div class="genWrap">
+<h1>general options</h1><input type="reset" value="&#xf05e; RESET" class="fa">
+<ul class="list">
+<li><span>:root:</span><br></li>
+<li><textarea id="rootArea" rows="3" placeholder="--themeColor: #aa0;&#13;&#10;--accentColor: #fbfbf0;&#13;&#10;counter-reset: counter 0;"></textarea></li>
+<li><span>@keyframes or @media:</span><br></li>
+<li><textarea id="keyframes" rows="5" placeholder="@keyframes c-change {&#13;&#10;from {color: #b01;}&#13;&#10;to {color: #000;}&#13;&#10;}"></textarea></li>
+<li><span>font:</span><br></li>
+<li><span>@import<span> (<a href="https://fonts.google.com/" target="_blank">Google font</a>)</span>:</span>
+<textarea id="fontURL" rows="3" placeholder="@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');"></textarea></li>
+<li><span>a (link) color:</span></li>
+<li><input type="text" id="linkColor" placeholder="#b01"><br><button type="button" name="linkColor"><span class="fa fa-paste"></span> substitute the value of picker</button></li>
+</ul>
+</div>
+
+<div class="genWrap" style="margin-top: 1em;">
+<h2>body</h2>
+<ul class="list">
+<li><span>background:</span></li>
+<li><input type="text" id="backGround" placeholder="#ffffff"><br><button type="button" name="backGround"><span class="fa fa-paste"></span> substitute the value of picker</button></li>
+<li><span>text color:</span></li>
+<li><input type="text" id="txColor" placeholder="#333333"><br><button type="button" name="txColor"><span class="fa fa-paste"></span> substitute the value of picker</button></li>
+<li><span>font-family:</span></li>
+<li><textarea id="fontFamily" rows="2" placeholder="'Nanum Gothic'"></textarea></li>
+</ul>
+
+<h2>heading elements</h2>
+<ul class="list">
+<li><span>color:</span></li>
+<li><span class="label-wrap"><input type="radio" id="hOnly" checked="checked" name="hCheck"><label for="hOnly">h1 only</label><input type="radio" id="hAll" name="hCheck"><label for="hAll">All</label></span><br><input type="text" id="h1Color" placeholder="#ffffff"><br><button type="button" name="h1Color"><span class="fa fa-paste"></span> substitute the value of picker</button></li>
+<li><span>font-family<span> (<b>h1, h2, h3, h4, h5, h6</b>)</span>:</span></li>
+<li><textarea id="headingFontFamily" rows="2" placeholder="'Nanum Gothic'"></textarea></li>
+</ul>
+
+<h2>blockquote</h2>
+<ul class="list">
+<li><span>others:</span></li>
+<li><textarea id="blockquoteValue" rows="4" placeholder="border: 1px dashed #999;&#13;&#10;background: #f4f4f4;"></textarea></li>
+</ul>
+</div>
+
+<span style="width: 100%; display: inline-block;"></span>
+</form>
+
+
+<form id="headerForm" class="form-block others">
+<div class="genWrap">
+<h1>header</h1><input type="reset" value="&#xf05e; RESET" class="fa" id="headerReset">
+<ul class="list">
+<li><span>logo<span> (<b>div#header</b>)</span>:</span></li>
+<li><input type="text" id="headerLogo" placeholder="Image URL"><br><span>others:</span><textarea id="logoValue" rows="3" placeholder="background-position: 1em 4em;&#13;&#10;background-size: 88px 88px;"></textarea></li>
+</ul>
+<h2>div#container-wrap</h2>
+<ul class="list">
+<li><span>background:</span></li>
+<li><input type="text" id="headerBack" placeholder="Image URL"></li>
+</ul>
+</div>
+
+<div class="genWrap" style="margin-top: 1em;">
+<h2>pseudo title</h2>
+<ul class="list">
+<li><span>title<span> (<b>div#header h1 a:before</b>)</span>:</span></li>
+<li><input type="text" id="headerH1" placeholder="SCP Foundation"><br><span>color:</span><br><input type="text" id="headerH1Color" placeholder="#eee"><br><button type="button" name="headerH1Color"><span class="fa fa-paste"></span> substitute the value of picker</button><br><span>text-shadow:</span><br><input type="text" id="headerH1Shadow" placeholder="3px 3px 5px #000"></li>
+<li><span>sub title<span> (<b>div#header h2 span:before</b>)</span>:</span></li>
+<li><input type="text" id="headerH2" placeholder="Secure, Contain, Protect"><br><span>color:</span><br><input type="text" id="headerH2Color" placeholder="#f0f0c0"><br><button type="button" name="headerH2Color"><span class="fa fa-paste"></span> substitute the value of picker</button><br><span>text-shadow:</span><br><input type="text" id="headerH2Shadow" placeholder="1px 1px 1px rgba(0,0,0,.8)"></li>
+</ul>
+</div>
+</form>
+
+
+<form id="sidebarForm" class="form-block others">
+<div class="genWrap">
+<h1>sidebar</h1><input type="reset" value="&#xf05e; RESET" class="fa">
+<h2>div.side-block</h2>
+<ul class="list">
+<li><span>background:</span></li>
+<li><input type="text" id="sideBackGround" placeholder="#ffffff"><br><button type="button" name="sideBackGround"><span class="fa fa-paste"></span> substitute the value of picker</button></li>
+<li><span>border:</span></li>
+<li><input type="text" id="sideBorder" placeholder="1px solid #333333"></li>
+<li><span>box-shadow:</span></li>
+<li><input type="text" id="sideShadow" placeholder="0 2px 6px rgba(102,0,0,0.5)"></li>
+<li><span>others:</span></li>
+<li><textarea id="sideValue" rows="2" placeholder="border-radius: 5px;"></textarea></li>
+<li><span>color<span> (<b>div.side-block div.heading</b>)</span>:</span></li>
+<li><input type="text" id="sideHeadColor" placeholder="#660000"><br><button type="button" name="sideHeadColor"><span class="fa fa-paste"></span> substitute the value of picker</button></li>
+</ul>
+<h2>open-menu</h2>
+<ul class="list">
+<li><span>color:</span></li>
+<li><input type="text" id="openMenuColor" placeholder="#888888"><br><button type="button" name="openMenuColor"><span class="fa fa-paste"></span> substitute the value of picker</button></li>
+</ul>
+</div>
+</form>
+
+
+
+<form id="yuiForm" class="form-block others">
+<div class="genWrap">
+<h1>tab</h1><input type="reset" value="&#xf05e; RESET" class="fa">
+<h2>div.yui-content</h2>
+<ul class="list">
+<li><span>background:</span></li>
+<li><input type="text" id="yuiContentBackGround" placeholder="#f5f5f5"><br><button type="button" name="yuiContentBackGround"><span class="fa fa-paste"></span> substitute the value of picker</button></li>
+</ul>
+
+<h2>normal selector</h2>
+<ul class="list">
+<li><span>background:</span></li>
+<li><input type="text" id="yuiSelectorNormalBg" placeholder="#d8d8d8"><br><button type="button" name="yuiSelectorNormalBg"><span class="fa fa-paste"></span> substitute the value of picker</button></li>
+<li><span>color:</span></li>
+<li><input type="text" id="yuiSelectorNormalColor" placeholder="#000000"><br><button type="button" name="yuiSelectorNormalColor"><span class="fa fa-paste"></span> substitute the value of picker</button></li>
+<li><span>border:</span></li>
+<li><input type="text" id="yuiSelectorNormalBorder" placeholder="solid #a3a3a3"></li>
+</ul>
+</div>
+
+<div class="genWrap" style="margin-top: 1em;">
+<h2>hovered selector</h2>
+<ul class="list">
+<li><span>background:</span></li>
+<li><input type="text" id="yuiSelectorHoveredBg" placeholder="#dd8888"><br><button type="button" name="yuiSelectorHoveredBg"><span class="fa fa-paste"></span> substitute the value of picker</button></li>
+<li><span>color:</span></li>
+<li><input type="text" id="yuiSelectorHoveredColor" placeholder="#000000"><br><button type="button" name="yuiSelectorHoveredColor"><span class="fa fa-paste"></span> substitute the value of picker</button></li>
+</ul>
+
+<h2>active selector</h2>
+<ul class="list">
+<li><span>background:</span></li>
+<li><input type="text" id="yuiSelectorSelectedBg" placeholder="#770000"><br><button type="button" name="yuiSelectorSelectedBg"><span class="fa fa-paste"></span> substitute the value of picker</button></li>
+<li><span>color:</span></li>
+<li><input type="text" id="yuiSelectorSelectedColor" placeholder="#ffffff"><br><button type="button" name="yuiSelectorSelectedColor"><span class="fa fa-paste"></span> substitute the value of picker</button></li>
+<li><span>border:</span></li>
+<li><input type="text" id="yuiSelectorSelectedBorder" placeholder="solid #243356"></li>
+</ul>
+</div>
+</form>
+
+
+
+<div id="intForm" class="form-block others">
+<div class="genWrap">
+<h1>Interwiki</h1>
+<h2>div.scpnet-interwiki-wrapper</h2>
+<ul class="list">
+<li><span>filter:</span></li>
+<li>
+<span>hue-rotate<span> [<b>0 - 360</b>]</span>:</span><br><form><input type="reset" value="&#xf05e;" class="fa"><input type="number" id="intHueRotate">deg</form><br>
+<span>saturate:</span><br><form><input type="reset" value="&#xf05e;" class="fa"><input type="number" id="intSaturate" min="0">%</form><br>
+<span>brightness:</span><br><form><input type="reset" value="&#xf05e;" class="fa"><input type="number" id="intBrightness" min="0">%</form><br>
+<span>contrast:</span><br><form><input type="reset" value="&#xf05e;" class="fa"><input type="number" id="intContrast" min="0">%</form><br>
+<span>grayscale<span> [<b>0 - 100</b>]</span>:</span><br><form><input type="reset" value="&#xf05e;" class="fa"><input type="number" id="intGrayscale" min="0" max="100">%</form><br>
+<span>sepia<span> [<b>0 - 100</b>]</span>:</span><br><form><input type="reset" value="&#xf05e;" class="fa"><input type="number" id="intSepia" min="0" max="100">%</form><br>
+<span>invert<span> [<b>0 - 100</b>]</span>:</span><br><form><input type="reset" value="&#xf05e;" class="fa"><input type="number" id="intInvert" min="0" max="100">%</form><br>
+<span>blur:</span><br><form><input type="reset" value="&#xf05e;" class="fa"><input type="number" id="intBlur" min="0">px</form><br>
+<span>opacity<span> [<b>0 - 100</b>]</span>:</span><br><form><input type="reset" value="&#xf05e;" class="fa"><input type="number" id="intOpacity" min="0" max="100">%</form><br>
+<span>drop-shadow:</span><br><form><input type="reset" value="&#xf05e;" class="fa"><input type="text" id="intDropShadow" placeholder="0 2px 6px rgba(0,0,0,0.5)"></form>
+</li>
+</ul>
+</div>
+</div>
+
+
+
+<form id="rateForm" class="form-block others">
+<div class="genWrap">
+<h1>Rate module</h1><input type="reset" value="&#xf05e; RESET" class="fa">
+
+<ul class="list">
+<li><span>background:</span></li>
+<li><input type="text" id="rateBg" placeholder="#dd8888"><br><button type="button" name="rateBg"><span class="fa fa-paste"></span> substitute the value of picker</button></li>
+<li><span>color:</span></li>
+<li><input type="text" id="rateColor" placeholder="#000000"><br><button type="button" name="rateColor"><span class="fa fa-paste"></span> substitute the value of picker</button></li>
+</ul>
+
+
+<h2>up/down</h2>
+<ul class="list">
+<li><span>background:</span></li>
+<li><input type="text" id="rateSwitchBg" placeholder="#dd8888"><br><button type="button" name="rateSwitchBg"><span class="fa fa-paste"></span> substitute the value of picker</button></li>
+<li><span>color:</span></li>
+<li><input type="text" id="rateSwitchColor" placeholder="#000000"><br><button type="button" name="rateSwitchColor"><span class="fa fa-paste"></span> substitute the value of picker</button></li>
+</ul>
+</div>
+</form>
+</div>
+
+
+
+
+<hr style="clear: both;">
+<div class="table" id="result-table">
+<h1 style="margin: 0.5em;">result</h1>
+<button id="rButton" class="button"><span class="fa fa-retweet"></span> RELOAD</button>
+<button id="cButton" class="button"><span class="fa fa-copy"></span> COPY</button><br>
+<div id="formOut"></div>
+<br>
+</div>
+
+
+
+
+<hr style="clear: both;">
+<div style="text-align: center;">
+<h1>sample area</h1>
+<span class="label-wrap">
+<input type="radio" id="sView" name="sCheck" onclick="sView()">
+<label for="sView">Show sample</label>
+<input type="radio" id="sHide" checked="checked" name="sCheck" onclick="sHide()">
+<label for="sHide">Hide sample</label>
+</span>
+</div>
+<div class="sample" id="sampleArea" style="width: 100%; display: none;">
+
+<h2>When it doesn't function, there may be some errors in the forms.</h2>
+<div class="side-block"><div class="heading">side-bar sample</div><div class="menu-item"><image src="http://scp-wiki.wdfiles.com/local--files/nav%3Aside/series.png"><a>Series V</a><span style="font-size: 80%;color: #666;">(4000-4999)</span></div><div class="menu-item"><image src="http://scp-wiki.wdfiles.com/local--files/nav%3Aside/series.png"><a>Series IV</a><span style="font-size: 80%;color: #666;">(3000-3999)</span></div><div class="menu-item"><image src="http://scp-wiki.wdfiles.com/local--files/nav%3Aside/series.png"><a>Series III</a><span style="font-size: 80%;color: #666;">(2000-2999)</span></div><div class="menu-item"><image src="http://scp-wiki.wdfiles.com/local--files/nav%3Aside/series.png"><a>Series II</a><span style="font-size: 80%;color: #666;">(1000-1999)</span></div><div class="menu-item"><image src="http://scp-wiki.wdfiles.com/local--files/nav%3Aside/series.png"><a>Series I</a><span style="font-size: 80%;color: #666;">(001-999)</span></div></div>
+
+<div class="scpnet-interwiki-wrapper"><div class="interwiki"><div class="interwiki__title">Interwiki sample</div><div class="interwiki__entry"><a>Esperanto</a></div><div class="interwiki__entry"><a>tlhIngan Hol</a></div><div class="interwiki__entry"><a>Na'vi</a></div><div class="interwiki__entry"><a>Qenya</a></div></div></div>
+
+<div class="open-menu"><p><a>≡</a></p></div>
+
+<div class="yui-navset" style="clear: both;"><ul class="yui-nav"><li class="selected"><a><em>tab</em></a></li><li><a><em>sample</em></a></li><li><a id="ios" class="hover"><em>hovered selector (for iPhone)</em></a></li></ul><div class="yui-content"><div><p>text <a>link</a></p>
+<div class="page-rate-widget-box"><span class="rate-points">rating:&nbsp;<span class="number">±0</span></span><span class="rateup btn btn-default"><a>+</a></span><span class="ratedown btn btn-default"><a>–</a></span><span class="cancel btn btn-default"><a>x</a></span></div>
+<blockquote><h1 style="font-size: 190%!important;">h1</h1><h2 style="font-size: 150%!important;">h2</h2></blockquote></div></div></div><br>
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<script type="text/javascript">
+
+
+
+
+jQuery(function($){
+  $("#picker").spectrum({
+      allowEmpty:true,
+      color: "rgba(200, 100, 50, 0.5)",
+      showInput: true,
+      containerClassName: "full-spectrum",
+      showInitial: true,
+      showPalette: true,
+      showSelectionPalette: true,
+      showAlpha: true,
+      maxPaletteSize: 10,
+      preferredFormat: "hex",
+      localStorageKey: "spectrum.demo",
+      move: function (color) {
+      },
+      show: function () {
+      },
+      beforeShow: function () {
+      },
+      hide: function (color) {
+      },
+      palette: [
+          ["rgb(0, 0, 0)", "rgb(67, 67, 67)", "rgb(102, 102, 102)", 
+          "rgb(204, 204, 204)", "rgb(217, 217, 217)", "rgb(255, 255, 255)"],
+          ["rgb(152, 0, 0)", "rgb(255, 0, 0)", "rgb(255, 153, 0)", "rgb(255, 255, 0)", "rgb(0, 255, 0)",
+          "rgb(0, 255, 255)", "rgb(74, 134, 232)", "rgb(0, 0, 255)", "rgb(153, 0, 255)", "rgb(255, 0, 255)"],
+          ["rgb(230, 184, 175)", "rgb(244, 204, 204)", "rgb(252, 229, 205)", "rgb(255, 242, 204)", "rgb(217, 234, 211)",
+          "rgb(208, 224, 227)", "rgb(201, 218, 248)", "rgb(207, 226, 243)", "rgb(217, 210, 233)", "rgb(234, 209, 220)",
+          "rgb(221, 126, 107)", "rgb(234, 153, 153)", "rgb(249, 203, 156)", "rgb(255, 229, 153)", "rgb(182, 215, 168)",
+          "rgb(162, 196, 201)", "rgb(164, 194, 244)", "rgb(159, 197, 232)", "rgb(180, 167, 214)", "rgb(213, 166, 189)",
+          "rgb(204, 65, 37)", "rgb(224, 102, 102)", "rgb(246, 178, 107)", "rgb(255, 217, 102)", "rgb(147, 196, 125)",
+          "rgb(118, 165, 175)", "rgb(109, 158, 235)", "rgb(111, 168, 220)", "rgb(142, 124, 195)", "rgb(194, 123, 160)",
+          "rgb(166, 28, 0)", "rgb(204, 0, 0)", "rgb(230, 145, 56)", "rgb(241, 194, 50)", "rgb(106, 168, 79)",
+          "rgb(69, 129, 142)", "rgb(60, 120, 216)", "rgb(61, 133, 198)", "rgb(103, 78, 167)", "rgb(166, 77, 121)",
+          "rgb(91, 15, 0)", "rgb(102, 0, 0)", "rgb(120, 63, 4)", "rgb(127, 96, 0)", "rgb(39, 78, 19)",
+          "rgb(12, 52, 61)", "rgb(28, 69, 135)", "rgb(7, 55, 99)", "rgb(32, 18, 77)", "rgb(76, 17, 48)"]
+      ]
+  });
+});
+
+
+
+
+
+
+
+//view mode
+function viewGeneral() {
+    document.getElementById("generalForm").classList.remove('others');
+    document.getElementById("headerForm").classList.remove('only-view');
+    document.getElementById("sidebarForm").classList.remove('only-view');
+    document.getElementById("yuiForm").classList.remove('only-view');
+    document.getElementById("intForm").classList.remove('only-view');
+    document.getElementById("rateForm").classList.remove('only-view');
+
+    document.getElementById("generalForm").classList.add('only-view');
+    document.getElementById("headerForm").classList.add('others');
+    document.getElementById("sidebarForm").classList.add('others');
+    document.getElementById("yuiForm").classList.add('others');
+    document.getElementById("intForm").classList.add('others');
+    document.getElementById("rateForm").classList.add('others');
+}
+function viewHeader() {
+    document.getElementById("generalForm").classList.remove('only-view');
+    document.getElementById("headerForm").classList.remove('others');
+    document.getElementById("sidebarForm").classList.remove('only-view');
+    document.getElementById("yuiForm").classList.remove('only-view');
+    document.getElementById("intForm").classList.remove('only-view');
+    document.getElementById("rateForm").classList.remove('only-view');
+
+    document.getElementById("generalForm").classList.add('others');
+    document.getElementById("headerForm").classList.add('only-view');
+    document.getElementById("sidebarForm").classList.add('others');
+    document.getElementById("yuiForm").classList.add('others');
+    document.getElementById("intForm").classList.add('others');
+    document.getElementById("rateForm").classList.add('others');
+}
+function viewSidebar() {
+    document.getElementById("generalForm").classList.remove('only-view');
+    document.getElementById("headerForm").classList.remove('only-view');
+    document.getElementById("sidebarForm").classList.remove('others');
+    document.getElementById("yuiForm").classList.remove('only-view');
+    document.getElementById("intForm").classList.remove('only-view');
+    document.getElementById("rateForm").classList.remove('only-view');
+
+    document.getElementById("generalForm").classList.add('others');
+    document.getElementById("headerForm").classList.add('others');
+    document.getElementById("sidebarForm").classList.add('only-view');
+    document.getElementById("yuiForm").classList.add('others');
+    document.getElementById("intForm").classList.add('others');
+    document.getElementById("rateForm").classList.add('others');
+}
+function viewYui() {
+    document.getElementById("generalForm").classList.remove('only-view');
+    document.getElementById("headerForm").classList.remove('only-view');
+    document.getElementById("sidebarForm").classList.remove('only-view');
+    document.getElementById("yuiForm").classList.remove('others');
+    document.getElementById("intForm").classList.remove('only-view');
+    document.getElementById("rateForm").classList.remove('only-view');
+
+    document.getElementById("generalForm").classList.add('others');
+    document.getElementById("headerForm").classList.add('others');
+    document.getElementById("sidebarForm").classList.add('others');
+    document.getElementById("yuiForm").classList.add('only-view');
+    document.getElementById("intForm").classList.add('others');
+    document.getElementById("rateForm").classList.add('others');
+}
+function viewInt() {
+    document.getElementById("generalForm").classList.remove('only-view');
+    document.getElementById("headerForm").classList.remove('only-view');
+    document.getElementById("sidebarForm").classList.remove('only-view');
+    document.getElementById("yuiForm").classList.remove('only-view');
+    document.getElementById("intForm").classList.remove('others');
+    document.getElementById("rateForm").classList.remove('only-view');
+
+    document.getElementById("generalForm").classList.add('others');
+    document.getElementById("headerForm").classList.add('others');
+    document.getElementById("sidebarForm").classList.add('others');
+    document.getElementById("yuiForm").classList.add('others');
+    document.getElementById("intForm").classList.add('only-view');
+    document.getElementById("rateForm").classList.add('others');
+}
+function viewRate() {
+    document.getElementById("generalForm").classList.remove('only-view');
+    document.getElementById("headerForm").classList.remove('only-view');
+    document.getElementById("sidebarForm").classList.remove('only-view');
+    document.getElementById("yuiForm").classList.remove('only-view');
+    document.getElementById("intForm").classList.remove('only-view');
+    document.getElementById("rateForm").classList.remove('others');
+
+    document.getElementById("generalForm").classList.add('others');
+    document.getElementById("headerForm").classList.add('others');
+    document.getElementById("sidebarForm").classList.add('others');
+    document.getElementById("yuiForm").classList.add('others');
+    document.getElementById("intForm").classList.add('others');
+    document.getElementById("rateForm").classList.add('only-view');
+}
+function sView() {
+    document.getElementById("sampleArea").style.display = 'block';
+}
+function sHide() {
+    document.getElementById("sampleArea").style.display = 'none';
+}
+
+
+
+
+
+$(function(){
+
+//sample display for iOS
+var ua = window.navigator.userAgent.toLowerCase();
+        if (ua.indexOf('iphone') !== -1 || ua.indexOf('ipod') !== -1 ) {document.getElementById("ios").style.display='block';};
+        if (ua.indexOf('ipad') !== -1) {document.getElementById("ios").style.display='block';};
+
+
+//color
+function colorSampleTag(tag) {
+  var elm = document.getElementsByTagName(tag);
+  for(var i = 0; i < elm.length; i++) {
+    var text = elm[i].innerHTML;
+    text = text.replace(/((#[0-9a-f]{3})([^0-9a-f]|$))/gi, '<span style="display:inline-block;width:1em;height:1em;vertical-align:middle;margin-right:.5em;margin-bottom:.5em;border-left:1px solid #000;border-bottom:1px solid #000;background-color:$2"></span>$1');
+    text = text.replace(/(#[0-9a-f]{6})/gi, '<span style="display:inline-block;width:1em;height:1em;vertical-align:middle;margin-right:.5em;margin-bottom:.5em;border-left:1px solid #000;border-bottom:1px solid #000;background-color:$1"></span>$1');
+    text = text.replace(/(rgb\s*\(\s*\d{1,3}\s*,\s*\d{1,3}\s*,\s*\d{1,3}\s*\))/gi, '<span style="display:inline-block;width:1em;height:1em;vertical-align:middle;margin-right:.5em;margin-bottom:.5em;border-left:1px solid #000;border-bottom:1px solid #000;background-color:$1"></span>$1');
+    text = text.replace(/(rgba\s*\(\s*\d{1,3}\s*,\s*\d{1,3}\s*,\s*\d{1,3}\s*,\s*(1|0)?\.?[0-9]+\s*\))/gi, '<span style="display:inline-block;width:1em;height:1em;vertical-align:middle;margin-right:.5em;margin-bottom:.5em;border-left:1px solid #000;border-bottom:1px solid #000;background-color:$1"></span>$1');
+    elm[i].innerHTML = text;
+  }
+}
+
+
+//color picker
+      document.getElementById('cView').style.backgroundColor = 'rgba(200, 100, 50, 0.5)';
+      document.getElementById('cViewText').style.color = 'rgba(200, 100, 50, 0.5)';
+
+var cpResult = document.getElementById("cKey");
+var lButton = document.getElementById('lButton');
+lButton.onclick = function(){
+cpResult.value = window.getComputedStyle(document.getElementById("pickCover").getElementsByClassName("sp-preview-inner")[0], '').backgroundColor;
+
+//color sample
+  try{
+    var cSample = document.getElementById("cKey").value;
+    var regex = new RegExp(/(#[a-fA-F0-9]{3}|#[a-fA-F0-9]{6})|(rgb\s*\(\s*\d{1,3}\s*,\s*\d{1,3}\s*,\s*\d{1,3}\s*\))|(rgba\s*\(\s*\d{1,3}\s*,\s*\d{1,3}\s*,\s*\d{1,3}\s*,\s*(1|0)?\.?[0-9]+\s*\))/);
+    if (regex.test(cSample)){
+      document.getElementById('cView').style.backgroundColor = cSample;
+      document.getElementById('cViewText').style.color = cSample;
+    }else{
+      document.getElementById('cView').style.backgroundColor = '#ffffff';
+      document.getElementById('cViewText').style.color = '#333333';
+    }
+  }catch(e){
+      document.getElementById('cView').style.backgroundColor = '#ffffff';
+      document.getElementById('cViewText').style.color = '#333333';
+  }
+}
+//substitute the value of color picker
+document.getElementsByName("linkColor")[0].onclick = function() {
+document.getElementById("linkColor").value = document.getElementById("cKey").value;
+}
+document.getElementsByName("backGround")[0].onclick = function() {
+document.getElementById("backGround").value = document.getElementById("cKey").value;
+}
+document.getElementsByName("txColor")[0].onclick = function() {
+document.getElementById("txColor").value = document.getElementById("cKey").value;
+}
+document.getElementsByName("h1Color")[0].onclick = function() {
+document.getElementById("h1Color").value = document.getElementById("cKey").value;
+}
+document.getElementsByName("headerH1Color")[0].onclick = function() {
+document.getElementById("headerH1Color").value = document.getElementById("cKey").value;
+}
+document.getElementsByName("headerH2Color")[0].onclick = function() {
+document.getElementById("headerH2Color").value = document.getElementById("cKey").value;
+}
+document.getElementsByName("sideBackGround")[0].onclick = function() {
+document.getElementById("sideBackGround").value = document.getElementById("cKey").value;
+}
+document.getElementsByName("sideHeadColor")[0].onclick = function() {
+document.getElementById("sideHeadColor").value = document.getElementById("cKey").value;
+}
+document.getElementsByName("yuiContentBackGround")[0].onclick = function() {
+document.getElementById("yuiContentBackGround").value = document.getElementById("cKey").value;
+}
+document.getElementsByName("yuiSelectorNormalBg")[0].onclick = function() {
+document.getElementById("yuiSelectorNormalBg").value = document.getElementById("cKey").value;
+}
+document.getElementsByName("yuiSelectorNormalColor")[0].onclick = function() {
+document.getElementById("yuiSelectorNormalColor").value = document.getElementById("cKey").value;
+}
+document.getElementsByName("yuiSelectorHoveredBg")[0].onclick = function() {
+document.getElementById("yuiSelectorHoveredBg").value = document.getElementById("cKey").value;
+}
+document.getElementsByName("yuiSelectorHoveredColor")[0].onclick = function() {
+document.getElementById("yuiSelectorHoveredColor").value = document.getElementById("cKey").value;
+}
+document.getElementsByName("yuiSelectorSelectedBg")[0].onclick = function() {
+document.getElementById("yuiSelectorSelectedBg").value = document.getElementById("cKey").value;
+}
+document.getElementsByName("yuiSelectorSelectedColor")[0].onclick = function() {
+document.getElementById("yuiSelectorSelectedColor").value = document.getElementById("cKey").value;
+}
+document.getElementsByName("rateBg")[0].onclick = function() {
+document.getElementById("rateBg").value = document.getElementById("cKey").value;
+}
+document.getElementsByName("rateColor")[0].onclick = function() {
+document.getElementById("rateColor").value = document.getElementById("cKey").value;
+}
+document.getElementsByName("rateSwitchBg")[0].onclick = function() {
+document.getElementById("rateSwitchBg").value = document.getElementById("cKey").value;
+}
+document.getElementsByName("rateSwitchColor")[0].onclick = function() {
+document.getElementById("rateSwitchColor").value = document.getElementById("cKey").value;
+}
+document.getElementsByName("openMenuColor")[0].onclick = function() {
+document.getElementById("openMenuColor").value = document.getElementById("cKey").value;
+}
+
+
+
+
+
+
+
+//user name -> "Uname"
+var UnamePrev = document.location.hash.substr(1);
+var Uname = UnamePrev.replace(/%20/g, ' ');
+
+
+
+
+
+
+
+
+
+//inner HTML (textarea)
+var rButton = document.getElementById('rButton');
+formOut = document.getElementById("formOut");
+rButton.onclick = function(){
+
+
+
+//date -> "year", "month", "day"
+var date = new Date();
+var year = date.getFullYear();
+var monthPre = date.getMonth()+1;
+if (monthPre < 10) {var month = "0" + monthPre;}else {var month = monthPre;}
+var dayPre = date.getDate();
+if (dayPre < 10) {var day = "0" + dayPre;}else {var day = dayPre;}
+var hourPre = date.getHours();
+if (hourPre < 10) {var hour = "0" + hourPre;}else {var hour = hourPre;}
+var minutePre = date.getMinutes();
+if (minutePre < 10) {var minute = "0" + minutePre;}else {var minute = minutePre;}
+var secondPre = date.getSeconds();
+if (secondPre < 10) {var second = "0" + secondPre;}else {var second = secondPre;}
+
+
+
+//infoText
+infoText = '/*<br>    Powered on ' + year + "/" + month + "/" + day + " " + hour + ":" + minute + ":" + second + '<br>    [' + year + ' Wikidot Theme]<br>    Created by ' + Uname + '<br>    CC BY-SA 3.0<br>*/<br><br>';
+
+
+//rootArea
+    if (document.getElementById('rootArea').value == "" ) {
+        var rootArea = '';
+    }
+    else {
+        var rootArea = ':root {<br>    ' + document.getElementById('rootArea').value.replace(/\n/g, '\n' + '    ') + '<br>}<br>';
+};
+
+
+//keyframes
+    if (document.getElementById('keyframes').value == "" ) {
+        var keyframes = '';
+    }
+    else {
+        var keyframes = '<br>' + document.getElementById('keyframes').value.replace(/\n/g, '\n' + '    ').replace(/    }/g, '}') + '<br><br>';
+};
+
+
+//fontURL
+    if (document.getElementById('fontURL').value == "" ) {
+        var fontURL = '';
+    }
+    else {
+        var fontURL = document.getElementById('fontURL').value;
+};
+
+
+//bodyAll
+    if (document.getElementById('backGround').value == "") {
+        backGround = "";
+    }
+    else {
+        backGround = "    background: " + document.getElementById('backGround').value + ";<br>";
+    };
+    if (document.getElementById('txColor').value == "") {
+        txColor = "";
+    }
+    else {
+        txColor = "    color: " + document.getElementById('txColor').value + ";<br>";
+    };
+    if (document.getElementById('fontFamily').value == "") {
+        fontFamily = "";
+    }
+    else {
+        fontFamily = "    font-family: " + document.getElementById('fontFamily').value + ";<br>";
+    };
+
+if (document.getElementById('backGround').value == "" && document.getElementById('txColor').value == "" && document.getElementById('fontFamily').value == "") {
+    bodyAll = "";
+}
+else {
+    bodyAll = "body {<br>" + backGround + txColor + fontFamily + "}<br>";
+};
+
+
+
+//linkColor
+    if (document.getElementById('linkColor').value == "") {
+        var linkColor = '';
+    }
+    else {
+        var linkColor = 'a,a:visited {<br>    color: ' + document.getElementById('linkColor').value + ';<br>}<br>';
+};
+
+
+//h1Color
+if (document.getElementById('h1Color').value == "") {
+    h1Color = "";
+}
+else {
+    if (document.getElementById("hOnly").checked) {
+        h1Color = "h1 {<br>    color: " + document.getElementById('h1Color').value + ";<br>}<br>";
+    }
+    else {
+        if (document.getElementById('headingFontFamily').value == "") {
+            h1Color = "h1,h2,h3,h4,h5,h6 {<br>    color: " + document.getElementById('h1Color').value + ";<br>}<br>";
+        }else {
+            h1Color = "h1,h2,h3,h4,h5,h6 {<br>    color: " + document.getElementById('h1Color').value + ";<br>";
+        }
+    }
+};
+
+
+//headingFontFamily
+if (document.getElementById('headingFontFamily').value == "") {
+    headingFontFamily = "";
+}
+else {
+    if (document.getElementById("hAll").checked && !document.getElementById('h1Color').value == "") {
+    headingFontFamily = "    font-family: " + document.getElementById('headingFontFamily').value + ";<br>}<br>";
+    }else {
+    headingFontFamily = "h1,h2,h3,h4,h5,h6 {<br>    font-family: " + document.getElementById('headingFontFamily').value + ";<br>}<br>";
+    }
+};
+
+
+//blockquoteValue
+    if (document.getElementById('blockquoteValue').value == "" ) {
+        var blockquoteValue = '';
+    }
+    else {
+        var blockquoteValue = 'blockquote {<br>    ' + document.getElementById('blockquoteValue').value.replace(/\n/g, '\n' + '    ') + '<br>}<br>';
+};
+
+
+//headerH1
+var headerH1Prev = document.getElementById('headerH1').value;
+    if (headerH1Prev == "" ) {
+        var headerH1 = '';
+    }
+    else {
+        var headerH1ColorPrev = document.getElementById('headerH1Color').value;
+            if (headerH1ColorPrev == "" ) {
+                var headerH1Color = '#eee';
+            }
+            else {
+                var headerH1Color = headerH1ColorPrev;
+            }
+        var headerH1ShadowPrev = document.getElementById('headerH1Shadow').value;
+            if (headerH1ShadowPrev == "" ) {
+                var headerH1Shadow = '';
+            }
+            else {
+                var headerH1Shadow = 'text-shadow: ' + headerH1ShadowPrev + ';';
+            }
+        var headerH1 = 'div#header h1 a span {<br>    font-size: 0px;<br>}<br>div#header h1 a:before {<br>    content: "' + headerH1Prev + '";<br>    color: ' + headerH1Color + ';<br>    ' + headerH1Shadow + '<br>}<br>'
+    };
+
+
+//headerH2
+var headerH2Prev = document.getElementById('headerH2').value;
+    if (headerH2Prev == "" ) {
+        var headerH2 = '';
+    }
+    else {
+        var headerH2ColorPrev = document.getElementById('headerH2Color').value;
+            if (headerH2ColorPrev == "" ) {
+                var headerH2Color = '#f0f0c0';
+            }
+            else {
+                var headerH2Color = headerH2ColorPrev;
+            }
+        headerH2ShadowPrev = document.getElementById('headerH2Shadow').value;
+            if (headerH2ShadowPrev == "" ) {
+                var headerH2Shadow = '1px 1px 1px rgba(0, 0, 0, .8)';
+            }
+            else {
+                var headerH2Shadow = headerH2ShadowPrev;
+            }
+
+
+        var headerH2 = 'div#header h2 span {<br>    font-size:0px;<br>    padding: 4px;<br>}<br>div#header h2:after {<br>    content: "' + headerH2Prev + '";<br>    font-weight: bold;<br>    color: ' + headerH2Color + ';<br>    padding: 19px 0;<br>    text-shadow: ' + headerH2Shadow + ';<br>    white-space: pre;<br>}<br>'
+    };
+
+
+//headerBack
+    if (document.getElementById('headerBack').value == "" ) {
+        var headerBack = '';
+    }
+    else {
+        var headerBack = 'div#container-wrap {<br>    background: url(' + document.getElementById('headerBack').value + ') top left repeat-x;<br>}<br>';
+};
+
+
+//logoAll
+//headerLogo
+    if (document.getElementById('headerLogo').value == "" ) {
+        var headerLogo = '';
+    }
+    else {
+        var headerLogo = '    background: url(' + document.getElementById('headerLogo').value + ') 10px 40px no-repeat;<br>';
+};
+
+//logoValue
+    if (document.getElementById('logoValue').value == "" ) {
+        var logoValue = '';
+    }
+    else {
+        var logoValue = '    ' + document.getElementById('logoValue').value.replace(/\n/g, '\n' + '    ') + '<br>';
+};
+
+if (document.getElementById('headerLogo').value == "" && document.getElementById('logoValue').value == "") {
+    logoAll = "";
+}
+else {
+    logoAll = 'div#header {<br>' + headerLogo + logoValue + '}<br>'
+};
+
+
+//sideAll
+//sideBackGround
+    if (document.getElementById('sideBackGround').value == "" ) {
+        var sideBackGround = '';
+    }
+    else {
+        var sideBackGround = '    background: ' + document.getElementById('sideBackGround').value + ';<br>';
+};
+
+//sideBorder
+    if (document.getElementById('sideBorder').value == "" ) {
+        var sideBorder = '';
+    }
+    else {
+        var sideBorder = '    border: ' + document.getElementById('sideBorder').value + ';<br>';
+};
+
+//sideShadow
+    if (document.getElementById('sideShadow').value == "" ) {
+        var sideShadow = '';
+    }
+    else {
+        var sideShadow = '    box-shadow: ' + document.getElementById('sideShadow').value + ';<br>';
+};
+
+//sideValue
+    if (document.getElementById('sideValue').value == "" ) {
+        var sideValue = '';
+    }
+    else {
+        var sideValue = '    ' + document.getElementById('sideValue').value.replace(/\n/g, '\n' + '    ') + '<br>';
+};
+
+if (document.getElementById('sideBackGround').value == "" && document.getElementById('sideBorder').value == "" && document.getElementById('sideShadow').value == "" && document.getElementById('sideValue').value == "") {
+    sideAll = "";
+}
+else {
+    sideAll = 'div#side-bar div.side-block {<br>' + sideBackGround + sideBorder + sideShadow + sideValue + '}<br>'
+};
+
+//sideHeadColor
+    if (document.getElementById('sideHeadColor').value == "") {
+        var sideHeadColor = '';
+    }
+    else {
+        var sideHeadColor = 'div#side-bar div.side-block div.heading,<br>div#side-bar div.collapsible-block-unfolded-link,<br>div#side-bar div.collapsible-block-unfolded-link div.collapsible-block-link {<br>    color: ' + document.getElementById('sideHeadColor').value + ';<br>    border-color: ' + document.getElementById('sideHeadColor').value + ';<br>}<br>';
+};
+
+
+
+//openMenuColor
+    if (document.getElementById('openMenuColor').value == "") {
+        var openMenuColor = '';
+    }
+    else {
+        var openMenuColor = 'div.open-menu a {<br>    color: ' + document.getElementById('openMenuColor').value + '!important;<br>    border-color: ' + document.getElementById('openMenuColor').value + '!important;<br>}<br>';
+};
+
+
+
+
+//rateAll
+    if (document.getElementById('rateBg').value == "") {
+        rateBg = "";
+    }
+    else {
+        rateBg = "div.page-rate-widget-box,<br>div.page-rate-widget-box span.rate-points,<br>div.page-rate-widget-box span.cancel {<br>    background-color: " + document.getElementById('rateBg').value + "!important;<br>    border: solid " + document.getElementById('rateBg').value + " 1px!important;<br>}<br>" + "div.page-rate-widget-box span.rateup,<br>div.page-rate-widget-box span.ratedown {<br>    border: solid " + document.getElementById('rateBg').value + "!important;<br>    border-width: 1px 0!important;<br>}<br>";
+    };
+    if (document.getElementById('rateColor').value == "") {
+        rateColor = "";
+    }
+    else {
+        rateColor = "div.page-rate-widget-box span.rate-points,<br>div.page-rate-widget-box span.cancel a,<br>div.page-rate-widget-box span.cancel a:hover {<br>    color: " + document.getElementById('rateColor').value + ";<br>}<br>";
+    };
+    if (document.getElementById('rateSwitchBg').value == "") {
+        rateSwitchBg = "";
+    }
+    else {
+        rateSwitchBg = "div.page-rate-widget-box span.rateup,<br>div.page-rate-widget-box span.ratedown {<br>    background-color: " + document.getElementById('rateSwitchBg').value + "!important;<br>}<br>";
+    };
+    if (document.getElementById('rateSwitchColor').value == "") {
+        rateSwitchColor = "";
+    }
+    else {
+        rateSwitchColor = "div.page-rate-widget-box span.rateup a,<br>div.page-rate-widget-box span.ratedown a {<br>    color: " + document.getElementById('rateSwitchColor').value + "!important;<br>}<br>";
+    };
+
+if (document.getElementById('rateBg').value == "" && document.getElementById('rateColor').value == "" && document.getElementById('rateSwitchBg').value == "" && document.getElementById('rateSwitchColor').value == "") {
+    rateAll = "";
+}
+else {
+    rateAll = rateBg + rateColor + rateSwitchBg + rateSwitchColor + "div.page-rate-widget-box span.cancel a:hover,<br>div.page-rate-widget-box span.rateup a:hover,<br>div.page-rate-widget-box span.ratedown a:hover {<br>    background: transparent!important;<br>    color: transparent!important;<br>}<br>";
+};
+
+
+
+
+//intAll
+//intHueRotate
+    if (document.getElementById('intHueRotate').value == "") {
+        intHueRotate = "";
+    }
+    else {
+        intHueRotate = ' hue-rotate(' + document.getElementById('intHueRotate').value + 'deg)';
+    };
+
+//intSaturate
+    if (document.getElementById('intSaturate').value == "") {
+        intSaturate = "";
+    }
+    else {
+        intSaturate = ' saturate(' + document.getElementById('intSaturate').value + '%)';
+    };
+
+//intBrightness
+    if (document.getElementById('intBrightness').value == "") {
+        intBrightness = "";
+    }
+    else {
+        intBrightness = ' brightness(' + document.getElementById('intBrightness').value + '%)';
+    };
+
+//intContrast
+    if (document.getElementById('intContrast').value == "") {
+        intContrast = "";
+    }
+    else {
+        intContrast = ' contrast(' + document.getElementById('intContrast').value + '%)';
+    };
+
+//intGrayscale
+    if (document.getElementById('intGrayscale').value == "") {
+        intGrayscale = "";
+    }
+    else {
+        intGrayscale = ' grayscale(' + document.getElementById('intGrayscale').value + '%)';
+    };
+
+//intSepia
+    if (document.getElementById('intSepia').value == "") {
+        intSepia = "";
+    }
+    else {
+        intSepia = ' sepia(' + document.getElementById('intSepia').value + '%)';
+    };
+
+//intInvert
+    if (document.getElementById('intInvert').value == "") {
+        intInvert = "";
+    }
+    else {
+        intInvert = ' invert(' + document.getElementById('intInvert').value + '%)';
+    };
+
+//intBlur
+    if (document.getElementById('intBlur').value == "") {
+        intBlur = "";
+    }
+    else {
+        intBlur = ' blur(' + document.getElementById('intBlur').value + 'px)';
+    };
+
+//intOpacity
+    if (document.getElementById('intOpacity').value == "") {
+        intOpacity = "";
+    }
+    else {
+        intOpacity = ' opacity(' + document.getElementById('intOpacity').value + '%)';
+    };
+
+//intDropShadow
+    if (document.getElementById('intDropShadow').value == "") {
+        intDropShadow = "";
+    }
+    else {
+        intDropShadow = ' drop-shadow(' + document.getElementById('intDropShadow').value + '%)';
+    };
+
+//intAll result
+if (document.getElementById('intHueRotate').value == "" && document.getElementById('intSaturate').value == "" && document.getElementById('intBrightness').value == "" && document.getElementById('intContrast').value == "" && document.getElementById('intGrayscale').value == "" && document.getElementById('intSepia').value == "" && document.getElementById('intInvert').value == "" && document.getElementById('intBlur').value == "" && document.getElementById('intOpacity').value == "" && document.getElementById('intDropShadow').value == "") {
+    intAll = "";
+}
+else {
+    intAll = 'div.scpnet-interwiki-wrapper {<br>    filter:' + intHueRotate + intSaturate + intBrightness + intContrast + intGrayscale + intSepia + intInvert + intBlur + intOpacity + intDropShadow + ';<br>}<br>';
+};
+
+
+//yuiTab
+//yuiContentBackGround
+if (document.getElementById('yuiContentBackGround').value == "") {
+    var yuiContentBackGround = '';
+}
+else {
+    var yuiContentBackGround = 'div.yui-navset div.yui-content {<br>    background: ' + document.getElementById('yuiContentBackGround').value + ';<br>}<br>';
+};
+
+
+//yuiSelectorNormal 
+    if (document.getElementById('yuiSelectorNormalBg').value == "") {
+        var yuiSelectorNormalBg = '';
+    }
+    else {
+        var yuiSelectorNormalBg = '    background: ' + document.getElementById('yuiSelectorNormalBg').value + ';<br>';
+    };
+
+    if (document.getElementById('yuiSelectorNormalColor').value == "") {
+        var yuiSelectorNormalColor = '';
+    }
+    else {
+        var yuiSelectorNormalColor = '    color: ' + document.getElementById('yuiSelectorNormalColor').value + ';<br>';
+    };
+
+    if (document.getElementById('yuiSelectorNormalBorder').value == "") {
+        var yuiSelectorNormalBorder = '';
+    }
+    else {
+        var yuiSelectorNormalBorder = '    border: ' + document.getElementById('yuiSelectorNormalBorder').value + ';<br>';
+    };
+
+if (document.getElementById('yuiSelectorNormalBg').value == "" && document.getElementById('yuiSelectorNormalColor').value == "" && document.getElementById('yuiSelectorNormalBorder').value == "") {
+    yuiSelectorNormal = "";
+}
+else {
+    yuiSelectorNormal = "div.yui-navset ul.yui-nav a,<br>div.yui-navset div.yui-navset-top ul.yui-nav a {<br>" + yuiSelectorNormalBg + yuiSelectorNormalColor + yuiSelectorNormalBorder + "}<br>";
+};
+
+
+//yuiSelectorHovered 
+    if (document.getElementById('yuiSelectorHoveredBg').value == "") {
+        var yuiSelectorHoveredBg = '';
+    }
+    else {
+        var yuiSelectorHoveredBg = '    background: ' + document.getElementById('yuiSelectorHoveredBg').value + ';<br>';
+    };
+
+    if (document.getElementById('yuiSelectorHoveredColor').value == "") {
+        var yuiSelectorHoveredColor = '';
+    }
+    else {
+        var yuiSelectorHoveredColor = '    color: ' + document.getElementById('yuiSelectorHoveredColor').value + ';<br>';
+    };
+
+if (document.getElementById('yuiSelectorHoveredBg').value == "" && document.getElementById('yuiSelectorHoveredColor').value == "") {
+    yuiSelectorHovered = "";
+}
+else {
+    yuiSelectorHovered = "div.yui-navset ul.yui-nav a:hover,<br>div.yui-navset ul.yui-nav a:focus {<br>" + yuiSelectorHoveredBg + yuiSelectorHoveredColor + "}<br>";
+};
+
+
+//yuiSelectorSelected 
+    if (document.getElementById('yuiSelectorSelectedBg').value == "") {
+        var yuiSelectorSelectedBg = '';
+    }
+    else {
+        var yuiSelectorSelectedBg = '    background: ' + document.getElementById('yuiSelectorSelectedBg').value + ';<br>';
+    };
+
+    if (document.getElementById('yuiSelectorSelectedColor').value == "") {
+        var yuiSelectorSelectedColor = '';
+    }
+    else {
+        var yuiSelectorSelectedColor = '    color: ' + document.getElementById('yuiSelectorSelectedColor').value + ';<br>';
+    };
+
+    if (document.getElementById('yuiSelectorSelectedBorder').value == "") {
+        var yuiSelectorSelectedBorder = '';
+    }
+    else {
+        var yuiSelectorSelectedBorder = '    border: ' + document.getElementById('yuiSelectorSelectedBorder').value + ';<br>';
+    };
+
+if (document.getElementById('yuiSelectorSelectedBg').value == "" && document.getElementById('yuiSelectorSelectedColor').value == "" && document.getElementById('yuiSelectorSelectedBorder').value == "") {
+    yuiSelectorSelected = "";
+}
+else {
+    yuiSelectorSelected = "div.yui-navset ul.yui-nav .selected a,<br>div.yui-navset ul.yui-nav .selected a:focus,<br>div.yui-navset ul.yui-nav .selected a:hover {<br>" + yuiSelectorSelectedBg + yuiSelectorSelectedColor + yuiSelectorSelectedBorder + "}<br>";
+};
+
+
+//yuiTab result
+yuiTab = yuiContentBackGround + yuiSelectorNormal + yuiSelectorHovered + yuiSelectorSelected;
+
+
+
+//RESULT innerHTML
+formOutPre = '<pre>[[module CSS]]<br>' + infoText + fontURL + '<br><br>' + rootArea + bodyAll + linkColor + h1Color + headingFontFamily + blockquoteValue + headerBack + logoAll + headerH1 + headerH2 + sideAll + sideHeadColor + intAll + yuiTab + rateAll + openMenuColor + keyframes + '<br>[[/module]]</pre>';
+
+formOut.innerHTML = formOutPre;
+
+//SAMPLE innerHTML
+sampleBase = fontURL + rootArea + keyframes + bodyAll + linkColor + h1Color + headingFontFamily + blockquoteValue + sideAll + intAll + yuiTab + rateAll + sideHeadColor + openMenuColor;
+document.getElementById("input-style").innerHTML = sampleBase.replace(/<br>/g, '').replace(/div#side-bar/g, '').replace(/  /g, '').replace(/ul.yui-nav a:hover/g, 'ul.yui-nav a.hover').replace(/body/g, '.sample').replace(/a,a:visited/g, '.sample a,.sample a:visited') + yuiSelectorHovered.replace(/<br>/g, '').replace(/  /g, '');
+
+colorSampleTag("pre");
+};
+
+
+
+
+
+
+//headerh1 headerh2 disabled
+$("#headerH1").on({
+    "input" : function(e) {
+        if (document.getElementById('headerH1').value == "" ) {
+            document.getElementById("headerH1Color").disabled = true;
+            document.getElementById("headerH1Shadow").disabled = true;
+        }
+        else {
+            document.getElementById("headerH1Color").disabled = false;
+            document.getElementById("headerH1Shadow").disabled = false;
+        }
+    }
+});
+$("#headerH2").on({
+    "input" : function(e) {
+        if (document.getElementById('headerH2').value == "" ) {
+            document.getElementById("headerH2Color").disabled = true;
+            document.getElementById("headerH2Shadow").disabled = true;
+        }
+        else {
+            document.getElementById("headerH2Color").disabled = false;
+            document.getElementById("headerH2Shadow").disabled = false;
+        }
+    }
+});
+    document.getElementById("headerH1Color").disabled = true;
+    document.getElementById("headerH1Shadow").disabled = true;
+    document.getElementById("headerH2Color").disabled = true;
+    document.getElementById("headerH2Shadow").disabled = true;
+document.getElementById('headerReset').onclick = function(){
+    document.getElementById("headerH1Color").disabled = true;
+    document.getElementById("headerH1Shadow").disabled = true;
+    document.getElementById("headerH2Color").disabled = true;
+    document.getElementById("headerH2Shadow").disabled = true;
+}
+
+
+
+
+//copying
+function copyMessage () {
+  var a = document.querySelector('#formOut');
+  if (!a) {
+    return false;
+  }
+  var range = document.createRange();
+  range.selectNode(a);
+  window.getSelection().removeAllRanges();
+  window.getSelection().addRange(range);
+  document.execCommand('copy');
+  return false;
+}
+document.querySelector('#cButton').addEventListener('click', copyMessage, false);
+
+
+
+});
+</script>
+
+</body>
+[[/code]]
+[[/tab]]
+
+[[tab 2]]
+[[code type="CSS"]]
+::-webkit-scrollbar {
+    width: 4px!important;
+}
+::-webkit-scrollbar-thumb {
+    background: #901!important;
+}
+body {
+    overflow-x: hidden;
+    font-family: verdana,arial,helvetica,sans-serif;
+}
+#tool-content {
+    padding: 0 2.5%;
+}
+#tool-content:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    background-image: url("http://www.scp-wiki.net/local--files/scp-style-resource/scp_trans.png");
+    background-size:contain;
+    background-position:center center;
+    background-repeat:no-repeat;
+    pointer-events:none;
+    opacity:0.2;
+    max-height: 60%;
+    z-index: 100;
+}
+h1,h2 {
+    font-family:"Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
+}
+.form-block h1,.form-block h2 {
+    font-family:"Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica!important;
+}
+h1 {
+    font-size: 155%!important;
+}
+h2 {
+    color: #000000;
+    font-size: 105%!important;
+}
+.form-block h1 {
+    color: #901!important;
+}
+.form-block h2 {
+    color: #000000!important;
+}
+.form-block {
+    color: #333!important;
+    font-family: verdana,arial,helvetica,sans-serif!important;
+}
+.form-block a {
+    color: #b01!important;
+}
+.table {
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    clear: both;
+}
+#cViewText {
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.sp-preview {
+    width: 100%;
+    height: 1.5em;
+    border: none;
+}
+.sp-dd {
+    font-size: 0!important;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-weight: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+.sp-dd:before {
+    content: "color picker\00a0\f05b";
+    font-size: 11px;
+}
+.sp-input,.sp-cancel {
+    display: none;
+}
+textarea {
+    width: 95%!important;
+    font-family: verdana, arial, helvetica, 'Meiryo', 'Nanum Gothic', sans-serif;
+}
+button,input[type="reset"],.sp-replacer,.sp-replacer:hover,.sp-replacer.sp-active,.view-label-wrap label {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #f7f7f7;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-left: solid 6px #901;
+    border-radius: 0;
+    color: #901;
+    font-size: 10px;
+    font-weight: bold;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    cursor: pointer;
+    -webkit-appearance:none;
+    white-space: nowrap;
+}
+.view-label-wrap label {
+    font-weight: normal;
+    color: #bbb;
+}
+button:active,input[type="reset"]:active,.sp-replacer.sp-active {
+    box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
+    transform: translateY(2px);
+}
+input[type="radio"] {
+    display: none;
+}
+.label-wrap {
+    display: inline-block;
+    margin: 0 0 0.25em;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-left: solid 6px #901;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    background: #f7f7f7;
+    font-size: 0.75em;
+    cursor: pointer;
+}
+.label-wrap label {
+    display: block;
+    float: left;
+    cursor: pointer;
+    margin: 1px 0;
+    padding: 0.5em 1em;
+    background: #f7f7f7;
+    color: #bbb;
+    border-width: 0 1px 0;
+    border-style: solid;
+    border-color: #f7f7f7;
+    text-align: center;
+    line-height: 1;
+    transition: .2s;
+    -webkit-appearance:none;
+}
+input[type="radio"]:checked + label {
+    color: #fff!important;
+    background-color: #901!important;
+}
+textarea:disabled, input:disabled {
+    background-color: rgb(235, 235, 228);
+}
+.view-label-wrap-wrap,
+#formOut {
+    width: 99%;
+    max-width: 100%;
+    text-align: left;
+    font-size: 0.8em;
+    background-color: #ffffff;
+    color: #333333;
+    padding: 0.5em;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-left: solid 6px #901;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    overflow-x: scroll;
+}
+.view-label-wrap-wrap {
+    font-size: 1em;
+    text-align: center;
+    overflow: visible!important;
+    margin: auto 1em auto 0;
+    padding: 0.25em;
+}
+#formOut pre {
+    font-family: Courier, monospace;
+}
+ul.list {
+    font-size: 0.9em;
+    padding-inline-start: 0;
+}
+ul.list li {
+    list-style: none;
+}
+ul.list > li:nth-child(even) {
+    border-left: 7px #901 solid;
+    padding: 0 0 0.5em 0.5em;
+}
+ul.list li span {
+    font-size: 0.85em;
+}
+
+#intForm input[type="number"] {
+    width: 6em;
+}
+#intForm form {
+    display: inline;
+    margin: 0;
+}
+#intForm form input[type="reset"] {
+    margin-right: 0.2em;
+    height: 2.2em;
+}
+#intForm form input:not([type="reset"]) {
+    padding: 0.7em 0;
+    height: 1.7em;
+}
+
+
+.form-block {
+    left: initial;
+    width: initial;
+}
+.genWrap {
+    position: relative;
+    width: 250px;
+    margin-right: 1em;
+    float: left;
+}
+#generalForm .genWrap {
+    left: initial;
+}
+
+
+
+@media (max-width: 420px) {
+#formOut {
+    font-size: 0.7em;
+}
+}
+/* For iPhone Retina 4, 4S, 5, 5s, 5c, iPod touch 4, 5 */
+/* Portrait */
+@media only screen and (min-device-width: 280px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+#formOut  {
+    max-width: 260px !important;
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 480px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+#formOut  {
+    max-width: 450px !important;
+  }
+}
+.open-menu a {
+    display: inline-block;
+    position: relative!important;
+    bottom: 0!important;
+    left: 0!important;
+    z-index: 15;
+    font-family: san-serif;
+    font-size: 30px;
+    font-weight: 700;
+    width: 30px;
+    height: 30px;
+    line-height: 0.9em;
+    text-align: center;
+    border: 0.2em solid #888 !important;
+    background-color: #fff !important;
+    border-radius: 3em;
+    color: #888 !important;
+}
+.open-menu a:hover {
+    text-decoration: none !important;
+    box-shadow: 0px 0px 20px 3px rgba(153,153,153,1);
+}
+
+
+
+    @keyframes vis {to {opacity: 1; transform: scale(1);}}
+    @keyframes hid {60% {max-width: 0; max-height: 0;}100% {opacity: 0; transform: scale(0); max-width: 0; max-height: 0;}}
+    .only-view {
+        transform: scale(0);
+        opacity: 0;
+        animation: vis 0.5s ease-in-out both;
+        pointer-events: auto;
+    }
+    .others {
+        opacity: 1;
+        animation: hid 0.5s ease-in-out both;
+        pointer-events: none;
+        overflow: hidden!important;
+        margin: 0!important;
+    }
+    .blank {
+        transform: scale(0);
+        opacity: 0;
+        animation: vis 0.5s ease-in-out both;
+        pointer-events: auto;
+    }
+[[/code]]
+[[/tab]]
+
+[[tab 3]]
+[[code type="CSS"]]
+body * {
+    -webkit-overflow-scrolling: touch;
+}
+
+/* sample */
+div.sample a {
+    cursor: pointer;
+}
+div.side-block,
+div.interwiki {
+    width: 16.5em;
+    float: left;
+    margin-right: 1em;
+    padding: 10px;
+    border: 1px solid #660000;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(102,0,0,.5);
+    background: #fff;
+    margin-bottom: 15px;
+}
+div.side-block div.menu-item,
+.interwiki__entry {
+    margin: 2px 0;
+}
+div.side-block div.menu-item a {
+    font-weight: bold;
+}
+div.side-block div.menu-item img {
+    width: 13px;
+    height: 13px;
+    border: 0;
+    margin-right: 2px;
+    position: relative;
+    bottom: -2px;
+}
+div.side-block div.heading,
+div.interwiki__title {
+    color: #600;
+    border-bottom: solid 1px #600;
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 8pt;
+    font-weight: bold;
+}
+div.interwiki__entry:before {
+    content: "■";
+    font-size: 7px;
+    color: #b01;
+    position: relative;
+    margin: 0 7px 0 5px;
+    bottom: 3px;
+}
+div.interwiki__entry a, div.interwiki__entry a:visited {
+    color: #b01;
+    font-weight: bold;
+    text-decoration: none;
+}
+div.interwiki__entry a:hover {
+    text-decoration: underline;
+}
+
+blockquote{
+    border: 1px dashed #999;
+    padding: 0 1em;
+    background-color: #f4f4f4;
+}
+/* tab */
+.yui-nav,.yui-nav li {margin:0;padding:0;list-style:none;}.yui-navset .yui-nav li em {font-style:normal;}.yui-navset .yui-nav li {display:inline-block;vertical-align:bottom; cursor:pointer; }.yui-navset .yui-nav li a {display:inline-block;vertical-align:bottom;}.yui-navset .yui-nav li a em {display:block;}.yui-navset .yui-nav {border:solid #2647a0;border-width:0 0 5px;}.yui-navset .yui-nav li {margin:0 0.16em 0 0;padding:1px 0 0;}.yui-navset .yui-nav .selected { margin:0 0.16em -1px 0;}.yui-navset .yui-nav a {color: #000;border:solid #a3a3a3;border-width:0 1px;text-decoration:none;}.yui-navset .yui-nav a em {border:solid #a3a3a3;border-width:1px 0 0;cursor: pointer;padding:0.25em .75em;left:0; right: 0; bottom: 0;top:-1px;position:relative;}.yui-navset .yui-nav .selected a,.yui-navset .yui-nav .selected a:focus,.yui-navset .yui-nav .selected a:hover {color:#fff;}.yui-navset .yui-nav .selected a em {padding:0.35em 0.75em;}.yui-navset .yui-nav .selected a,.yui-navset .yui-nav .selected a em {border-color:#243356;}.yui-navset .yui-content {background:#f4f5ff;}.yui-navset .yui-content {border:1px solid #808080;border-top-color:#243356;padding:0.25em 0.5em;}.yui-navset .yui-nav a.hover {background: #d88 url(http://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png) repeat-x left -1300px; display: none;}
+[[/code]]
+[[/tab]]
+
+[[tab 4]]
+[[code type="HTML"]]
+<!--
+author: 7happy7
+license: CC BY-SA 3.0
+
+reference material:
+https://ja.wikipedia.org/wiki/HSV%E8%89%B2%E7%A9%BA%E9%96%93
+by ja.wikipedia Contributors (https://ja.wikipedia.org/w/index.php?title=HSV%E8%89%B2%E7%A9%BA%E9%96%93&action=history)
+(English) https://en.wikipedia.org/wiki/HSL_and_HSV
+CC BY-SA 3.0
+-->
+<head>
+<style>
+input[type="number"]::-webkit-outer-spin-button,input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}input[type="number"] {-moz-appearance:textfield;}
+</style>
+</head>
+<body style="margin: 0; padding: 0;">
+<table style="width:100%;font-size:13px;">
+<tbody>
+<tr>
+<td>color code: <input type="text" id="cCode" size="7" oninput="CodeToRGB()" onchange="CodeToRGB()" value="#ff0000"></td>
+<td rowspan="2" id="thisColor" style="background-color: rgb(255,0,0); padding: 1em; text-align: center; width: 40%;">
+<div  style="background-color: #fff; padding: 1em; margin: 0.5em;border: 4px solid #000;">
+<span id="hsvValue"></span>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width:40%;">
+R: <input type="number" id="rNum" min="0" max="255" onKeyUp="keyRGB()" value="255"><input type="range" step="1" oninput="funcRGB()" 
+onchange="funcRGB()" min="0" max="255" id="vR" value="255"><br>
+G: <input type="number" id="gNum" min="0" max="255" onKeyUp="keyRGB()" value="0"><input type="range" step="1" oninput="funcRGB()" onchange="funcRGB()" min="0" max="255" id="vG" value="0"><br>
+B: <input type="number" id="bNum" min="0" max="255" onKeyUp="keyRGB()" value="0"><input type="range" step="1" oninput="funcRGB()" onchange="funcRGB()" min="0" max="255" id="vB" value="0">
+</td>
+</tr>
+</tbody>
+</table>
+
+<!-- value of HSV rounding off -->
+<div style="display:none;">
+<!-- H [0-360]: --><input type="range" step="1" id="vH" max="360"><br>
+<!-- S [0-100]: --><input type="range" step="1" id="vS"><br>
+<!-- V [0-100]: --><input type="range" step="1" id="vV">
+</div>
+</body>
+
+<script type="text/javascript">
+var vR = document.getElementById("vR");
+var vG = document.getElementById("vG");
+var vB = document.getElementById("vB");
+ 
+var vH = document.getElementById("vH");
+var vS = document.getElementById("vS");
+var vV = document.getElementById("vV");
+ 
+var thisColor = document.getElementById("thisColor");
+var hsvValue = document.getElementById("hsvValue");
+
+var rNum = document.getElementById("rNum");
+var gNum = document.getElementById("gNum");
+var bNum = document.getElementById("bNum");
+
+hsvValue.innerHTML = "hsv(0deg,100%,100%)";
+
+var rgb6 = new RegExp(/^#[a-fA-F0-9]{6}$/);
+//note: following regexp is now unfunctional due to "color-code generator"
+var rgb3 = new RegExp(/^#[a-fA-F0-9]{3}$/);
+
+function CodeToRGB() {
+if (rgb3.test(document.getElementById("cCode").value)){
+    vR.value = parseInt(document.getElementById("cCode").value.substring(1,2) + document.getElementById("cCode").value.substring(1,2), 16);
+    vG.value = parseInt(document.getElementById("cCode").value.substring(2,3) + document.getElementById("cCode").value.substring(2,3), 16);
+    vB.value = parseInt(document.getElementById("cCode").value.substring(3,4) + document.getElementById("cCode").value.substring(3,4), 16);
+}else if (rgb6.test(document.getElementById("cCode").value)){
+    vR.value = parseInt(document.getElementById("cCode").value.substring(1,3), 16);
+    vG.value = parseInt(document.getElementById("cCode").value.substring(3,5), 16);
+    vB.value = parseInt(document.getElementById("cCode").value.substring(5,7), 16); 
+}
+rNum.value = vR.value;
+gNum.value = vG.value;
+bNum.value = vB.value;
+funcRGB();
+}
+//color-code generator
+function CodeToRGBother(rgb) {
+    return "#" + rgb.map(function (value) {
+    	return ("0" + Number(value).toString(16)).slice(-2) ;
+    }).join("") ;
+}
+
+function keyRGB() {
+vR.value = rNum.value;
+vG.value = gNum.value;
+vB.value = bNum.value;
+funcRGB();
+}
+
+function funcRGB() {
+var r = vR.value, g = vG.value, b = vB.value, hsv;
+hsv = RGBtoHSV(r, g, b);
+vH.value = hsv.h;
+vS.value = hsv.s * 100 / 255;
+vV.value = hsv.v * 100 / 255;
+
+rNum.value = vR.value;
+gNum.value = vG.value;
+bNum.value = vB.value;
+
+document.getElementById("cCode").value = CodeToRGBother( [vR.value, vG.value, vB.value] );
+
+hsvValue.innerHTML = "hsv(" + vH.value + "deg," + vS.value + "%," + vV.value + "%)";
+thisColor.style.backgroundColor = "rgb(" + vR.value + "," + vG.value + "," + vB.value + ")";
+}
+
+ 
+function RGBtoHSV (r, g, b, coneModel) {
+var h, s, v, max = Math.max(Math.max(r, g), b), min = Math.min(Math.min(r, g), b);
+// calc hue-rotate(H)
+if (max == min) {
+    h = 0;
+} else if (max == r) {
+    h = 60 * (g - b) / (max - min) + 0;
+} else if (max == g) {
+    h = (60 * (b - r) / (max - min)) + 120;
+} else {
+    h = (60 * (r - g) / (max - min)) + 240;
+}
+while (h < 0) {
+    h += 360;
+}
+// calc saturation(S)
+s = (max == 0)
+    ? 0
+    : (max - min) / max * 255;
+// calc value(V)
+v = max;
+// submit
+return {'h': h, 's': s, 'v': v};
+}
+</script>
+[[/code]]
+[[/tab]]
+[[/tabview]]
+[[/div]]
+====
+[[/iftags]]
+
+[[div class="open-menu"]]
+[#side-bar ≡]
+[[/div]]
+
+[[module CSS]]
+@import url("/local--code/css-theme-preparation-tool/3");
+
+#side-bar:target + div .open-menu,
+#top-bar .open-menu,
+.open-menu a {
+    display: none;
+}
+@media (max-width: 767px) {
+.open-menu a {
+    display: block;
+}
+#side-bar {
+    padding: 0 1em 0 0;
+}
+#side-bar .side-block {
+    width: 90%;
+    margin: 1em 1em 1em 0.5em;
+}
+[[/module]]
+
+[[module CSS]]
+.hovertip {
+    cursor: pointer;
+}
+.bibitems {
+    clear: both;
+}
+a.bibcite {
+    vertical-align: super;
+    font-size: smaller;
+}
+/* interwiki */
+.mcd {
+filter: hue-rotate(290deg) saturate(45%);
+}
+.sh {
+filter: hue-rotate(122deg);
+}
+.tl {
+filter: hue-rotate(212deg) saturate(61%) brightness(90%);
+}
+.spc {
+filter: hue-rotate(219deg) saturate(92%);
+}
+.db {
+filter: hue-rotate(185deg) saturate(40%) brightness(86%);
+}
+.end {
+filter: hue-rotate(5deg) saturate(93%) brightness(8%);
+}
+.end-re {
+filter: hue-rotate(189deg) saturate(1200%)  invert(90%);
+}
+.ij {
+filter: grayscale(100%) drop-shadow(0 1px 1px #000000);
+}
+table.wiki-content-table th,
+table.wiki-content-table td {
+padding: 0.3em;
+text-align: center;
+}
+.t-sample tr:nth-child(3) td:first-child,
+.t-sample tr:nth-child(3) td:nth-child(2),
+.t-sample tr:nth-child(5) td:nth-child(3),
+.wiki-content-table:not(.t-sample) tr:nth-child(4) td:first-child,
+.wiki-content-table:not(.t-sample) tr:nth-child(4) td:nth-child(2),
+.wiki-content-table:not(.t-sample) tr:nth-child(6) td:nth-child(3) {
+background: #fff0f0;
+}
+[[/module]]
+
+[[module CSS]]
+@import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+html {scroll-behavior: smooth;}.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.fa:hover {text-decoration:none}.fa-arrow-up:before{content:"\f062"}.fa-arrow-down:before{content:"\f063"}div.yui-navset ul.yui-nav {display: flex;flex-wrap: wrap;border: none;padding-right: 3px;padding-top: 2px;}div.yui-navset ul.yui-nav li {width: 40%;flex-grow: 1;margin: 0!important;padding: 0!important;line-height: 141%;}.sp-tab div.yui-navset ul.yui-nav li:first-child, .sp-tab div.yui-navset ul.yui-nav li:nth-child(2) {width: 90%;}div.yui-navset ul.yui-nav li a {width: 100%;text-align: center;background-color: #fff!important;background-image: none!important;margin: 0!important;padding: 0!important;border: solid #a3a3a3;border-width: 0 0 1px 1px;}.yui-navset .yui-nav .selected a {background: #901!important;color: #fff;border-radius: 0;}div.yui-navset ul.yui-nav li a em {overflow: hidden;white-space: nowrap;text-overflow: ellipsis;border-radius: 0;}div.yui-navset ul.yui-nav li.selected a em {padding: 0.25em 0.75em; /* heck! */}div.yui-navset {border: solid #a3a3a3;border-width: 1px 1px 0 0;border-radius: 4px;}div.yui-navset div.yui-content {border: none;border: solid #a3a3a3;border-width: 0 0 1px 1px;border-radius: 0 0 4px 4px;background-color: #fff;}.yui-navset .yui-nav > li > a em:before,.yui-navset .yui-nav > li > a em:after{content:"";font:normal normal normal 14px/1 FontAwesome;transform:translate(0, 0);display:inline-block;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}.yui-navset .yui-nav > li > a em:before{content:"\f07b\00a0";}.yui-navset .yui-nav > .selected > a em:before{content:"\f07c\00a0";}.sp-tab div.yui-navset ul.yui-nav li:first-child > a em:before,.sp-tab div.yui-navset ul.yui-nav li:first-child > a em:after{content:"\f069"!important; margin: 0.5em;}.sp-tab div.yui-navset ul.yui-nav li.selected:first-child > a em:before,.sp-tab div.yui-navset ul.yui-nav li.selected:first-child > a em:after{animation: fa-spin 1s infinite steps(8);}.sp-tab div.yui-navset ul.yui-nav li:nth-child(2) > a em:before {content:"\f002\00a0"!important;}.sp-tab div.yui-navset ul.yui-nav li.selected:nth-child(2) > a em:before {content:"\f00e\00a0"!important;animation: fa-blink 1s infinite steps(2);}#page-content .yui-navset .yui-content > div {opacity: 0;}#page-content .yui-navset .yui-content > div[style*="none"] {animation: none;}#page-content .yui-navset .yui-content > div[style*="block"] {animation: appear 0.6s ease-in-out 0s forwards; position: relative;}@keyframes appear {from {top: 100px;}to {top: 0;opacity: 1;}}@keyframes fa-blink {to {color: transparent;}}
+
+.cd-tab div.yui-navset ul.yui-nav li {width: 15%;}.cd-tab div.yui-navset ul.yui-nav li:first-child {width: 90%;}.cd-tab div.yui-navset ul.yui-nav li:first-child > a em:before {content: "";}.cd-tab #wiki-tab-0-0 {animation: none!important; display: block!important; opacity: 1!important; top: 0!important;}
+
+div.sitemember {
+    width: 100%;
+}
+.textchange div.sitemember:nth-child(2) {
+    display:none;
+}
+
+.wiki-note {
+    border-radius: 10px;
+}
+.wiki-note a {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.page-rate-widget-box {
+    border-radius: 0;
+    box-shadow: 1px 1px 3px rgba(255,255,255,.5), -1px 1px 3px rgba(255,255,255,.5), -1px -1px 3px rgba(255,255,255,.5), 1px -1px 3px rgba(255,255,255,.5), 1px 1px 3px rgba(255,255,255,.5) inset, -1px 1px 3px rgba(255,255,255,.5) inset, -3px -1px 3px #fff inset, 3px -1px 3px #fff inset;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin: 0;
+    padding: 0;
+}
+.page-rate-widget-box span,
+.page-rate-widget-box .rate-points,
+.page-rate-widget-box .btn-default a {
+    background-color: #fff!important;
+    border: none!important;
+    border-radius: 0;
+    color: #b7a;
+}
+
+.unmargined a, .unmargined a:visited {
+    color: #fff;
+    font-weight: bold;
+    transition: text-shadow 0.4s ease;
+}
+.unmargined a:hover {
+    text-shadow: -6px 0px 8px rgba(255, 255, 255, 0.83), 6px 0px 8px rgba(255, 255, 255, 0.83);
+    text-decoration-line: none;
+}
+[[/module]]
