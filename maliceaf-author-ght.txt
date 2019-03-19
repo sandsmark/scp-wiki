@@ -636,8 +636,16 @@ oh no you found the secrit testing place
 
 ------
 
-[[module ListPages order="created_at desc" category="*" tags="jam-con2019" separate="false" limit="200" perpage="50" prependLine="||~ Rating||~ Author||"]]
-|| %%rating%% || %%created_by_linked%% ||
+[[module ListPages order="created_at desc" category="*" tags="jam-con2019 +_shaggy-dog" separate="false" limit="200" perpage="50""]]
+* **%%rating%%** -- %%created_by%%
+[[/module]]
+
+[[module ListPages order="created_at desc" category="*" tags="jam-con2019 +_pulp-fiction" separate="false" limit="200" perpage="50""]]
+* **%%rating%%** -- %%created_by%%
+[[/module]]
+
+[[module ListPages order="created_at desc" category="*" tags="jam-con2019 +_all-a-dream" separate="false" limit="200" perpage="50""]]
+* **%%rating%%** -- %%created_by%%
 [[/module]]
 
 ------
