@@ -1,5 +1,38 @@
 title:SCP-4051
 [[module css]]
+div.warning{
+    background: url(https://files.gamebanana.com/img/ico/sprays/52044c1090611.png) center no-repeat
+    float: center
+    border: solid 2px #000000
+    padding: 1px 15px
+    box-shadow: 0 1px 3px rgba(0,0,0,.2)
+}
+div.test{
+    float: center
+    border: solid 2px #000000
+    width: 88%
+    padding: 1px 15px
+    margin: 10px 10px 10px 40px
+    box-shadow: 0 1px 3px rgba(0,0,0,1)
+}
+div.director{
+    background: url(http://scp-wiki.wdfiles.com/local--files/the-great-hippo/scp_trans.png) center no-repeat
+    float: center
+    border: solid 2px #000000
+    width: 88%
+    padding: 1px 15px
+    margin: 10px 10px 10px 40px
+    box-shadow: 0 1px 3px rgba(0,0,0,1)
+}
+div.session{
+    float:center
+    background: #eff4ff
+    padding: 10px
+    border: 2px solid #2F4F4F
+    width: 95%
+    margin: auto
+    box-shadow: 0 1px 3px rgba(0,0,0,1)
+}
 .page {
     display: block;
     overflow: hidden;
@@ -202,7 +235,7 @@ The video gained over two million views before warranting an intervention, follo
 
 [[=]]
 
-[[div style="background: url(https://files.gamebanana.com/img/ico/sprays/52044c1090611.png) center no-repeat ; float: center; border: solid 2px #000000; padding: 1px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
+[[div class="warning"]]
 
 + WARNING: THE FOLLOWING REPORTS ARE LEVEL 3/4051 CLASSIFIED
 ----
@@ -218,7 +251,7 @@ The video gained over two million views before warranting an intervention, follo
 
 [[collapsible show="+ Show Experiment-Log-4051-e-1, -e-2, -e-3" hide="- Hide Experiment Log-4051-e-1, -e-2, -e-3"]]
 
-[[div style="float: center; border: solid 2px #000000; width: 88%; padding: 1px 15px; margin: 10px 10px 10px 40px; box-shadow: 0 1px 3px rgba(0,0,0,1);"]]
+[[div class="test"]]
 
 __**Experiment 4051-e-1:**__
 
@@ -240,7 +273,7 @@ __**Experiment 4051-e-1:**__
 
 [[/div]]
 
-[[div style="float: center; border: solid 2px #000000; width: 88%; padding: 1px 15px; margin: 10px 10px 10px 40px; box-shadow: 0 1px 3px rgba(0,0,0,1);"]]
+[[div class="test"]]
 
 __**Experiment 4051-e-2:**__
 
@@ -264,7 +297,7 @@ The mobile phone that was manifested appeared to be unremarkable until attempts 
 
 [[/div]]
 
-[[div style="float: center; border: solid 2px #000000; width: 88%; padding: 1px 15px; margin: 10px 10px 10px 40px; box-shadow: 0 1px 3px rgba(0,0,0,1);"]]
+[[div class="test"]]
 
 __**Experiment 4051-e-3:**__
 
@@ -352,7 +385,7 @@ __**Experiment 4051-e-3:**__
 
 [[collapsible show="+ Show Note from Site Director Graham" hide="- Hide Note from Site Director Graham"]]
 
-[[div style="background: url(http://scp-wiki.wdfiles.com/local--files/the-great-hippo/scp_trans.png) center no-repeat ; float: center; border: solid 2px #000000; width: 88%; padding: 1px 15px; margin: 10px 10px 10px 40px; box-shadow: 0 1px 3px rgba(0,0,0,1);"]]
+[[div class="director"]]
 
 In light of yesterday's containment breach, SCP-4051 has been moved to an enhanced humanoid containment unit. Updating SCP-4051's object class to Keter has been discussed but has been decided against, since it seems like we'll be able to contain it fairly easily with the new unit. It was our fault for not considering the versatility of the anomaly.
 
@@ -374,7 +407,7 @@ All personnel assigned to directly interact with SCP-4051 have been sent a copy 
 
 @@ @@
 
-[[div style="float:center ; background: #eff4ff; padding: 10px; border: 2px solid #2F4F4F; width: 95%; margin: auto; box-shadow: 0 1px 3px rgba(0,0,0,1);"]]
+[[div class="session"]]
 
 __**Transcript of Therapy-Session-4051-1**__
 
@@ -448,7 +481,7 @@ __**Transcript of Therapy-Session-4051-1**__
 
 [[collapsible show="+ Show Experiment-Log-4051-e-4, -e-5" hide="- Hide Experiment-Log-4051-e-4, -e-5"]]
 
-[[div style="float: center; border: solid 2px #000000; width: 88%; padding: 1px 15px; margin: 10px 10px 10px 40px; box-shadow: 0 1px 3px rgba(0,0,0,1);"]]
+[[div class="test"]]
 
 __**Experiment 4051-e-4:**__
 
@@ -468,7 +501,7 @@ __**Experiment 4051-e-4:**__
 
 [[/div]]
 
-[[div style="float: center; border: solid 2px #000000; width: 88%; padding: 1px 15px; margin: 10px 10px 10px 40px; box-shadow: 0 1px 3px rgba(0,0,0,1);"]]
+[[div class="test"]]
 
 __**Experiment 4051-e-5:**__
 
@@ -496,7 +529,7 @@ Just a small note, too, but we compared the picture it manifested today to the o
 
 @@ @@
 
-[[div style="background: #eff4ff; padding: 10px; border: 2px solid #2F4F4F; width: 95%; margin: auto; box-shadow: 0 1px 3px rgba(0,0,0,1);"]]
+[[div class="session"]]
 
 __**Transcript of Therapy-Session-4051-2**__
 
@@ -661,7 +694,7 @@ __**Medical Profile of Dr. Anthony Roswell**__
 
 [[collapsible show="+ Show Experiment-Log-4051-e-6, -e-7" hide="- Hide Experiment-Log-4051-e-6, -e-7"]]
 
-[[div style="float: center; border: solid 2px #000000; width: 88%; padding: 1px 15px; margin: 10px 10px 10px 40px; box-shadow: 0 1px 3px rgba(0,0,0,1);"]]
+[[div class="test"]]
 
 __**Experiment 4051-e-6:**__
 
@@ -679,7 +712,7 @@ __**Experiment 4051-e-6:**__
 
 [[/div]]
 
-[[div style="float: center; border: solid 2px #000000; width: 88%; padding: 1px 15px; margin: 10px 10px 10px 40px; box-shadow: 0 1px 3px rgba(0,0,0,1);"]]
+[[div class="test"]]
 
 __**Experiment 4051-e-7:**__
 
@@ -703,7 +736,7 @@ __**Experiment 4051-e-7:**__
 
 @@ @@
 
-[[div style="background: #eff4ff; padding: 10px; border: 2px solid #2F4F4F; width: 95%; margin: auto; box-shadow: 0 1px 3px rgba(0,0,0,1);"]]
+[[div class="session"]]
 
 __**Transcript of Therapy-Session-4051-3**__
 
@@ -749,7 +782,7 @@ __**Transcript of Therapy-Session-4051-3**__
 
 [[collapsible show="+ Show Experiment-Log-4051-e-8, -e-9" hide="- Hide Experiment-Log-4051-e-8, -e-9"]]
 
-[[div style="float: center; border: solid 2px #000000; width: 88%; padding: 1px 15px; margin: 10px 10px 10px 40px; box-shadow: 0 1px 3px rgba(0,0,0,1);"]]
+[[div class="test"]]
 
 __**Experiment 4051-e-8:**__
 
@@ -767,7 +800,7 @@ __**Experiment 4051-e-8:**__
 
 [[/div]]
 
-[[div style="float: center; border: solid 2px #000000; width: 88%; padding: 1px 15px; margin: 10px 10px 10px 40px; box-shadow: 0 1px 3px rgba(0,0,0,1);"]]
+[[div class="test"]]
 
 __**Experiment 4051-e-9:**__
 
@@ -791,7 +824,7 @@ __**Experiment 4051-e-9:**__
 
 @@ @@
 
-[[div style="background: #eff4ff; padding: 10px; border: 2px solid #2F4F4F; width: 95%; margin: auto; box-shadow: 0 1px 3px rgba(0,0,0,1);"]]
+[[div class="session"]]
 
 __**Transcript of Therapy-Session-4051-4**__
 
@@ -851,7 +884,7 @@ __**Transcript of Therapy-Session-4051-4**__
 
 [[collapsible show="+ Show Experiment-Log-4051-e-12, -e-13, -e-14" hide="- Hide Experiment-Log-4051-e-12, -e-13, -e-14"]]
 
-[[div style="float: center; border: solid 2px #000000; width: 88%; padding: 1px 15px; margin: 10px 10px 10px 40px; box-shadow: 0 1px 3px rgba(0,0,0,1);"]]
+[[div class="test"]]
 
 __**Experiment 4051-e-12:**__
 
@@ -869,7 +902,7 @@ __**Experiment 4051-e-12:**__
 
 [[/div]]
 
-[[div style="float: center; border: solid 2px #000000; width: 88%; padding: 1px 15px; margin: 10px 10px 10px 40px; box-shadow: 0 1px 3px rgba(0,0,0,1);"]]
+[[div class="test"]]
 
 __**Experiment 4051-e-13:**__
 
@@ -889,7 +922,7 @@ __**Experiment 4051-e-13:**__
 
 [[/div]]
 
-[[div style="float: center; border: solid 2px #000000; width: 88%; padding: 1px 15px; margin: 10px 10px 10px 40px; box-shadow: 0 1px 3px rgba(0,0,0,1);"]]
+[[div class="test"]]
 
 __**Experiment 4051-e-14:**__
 
@@ -915,7 +948,7 @@ __**Experiment 4051-e-14:**__
 
 @@ @@
 
-[[div style="background: #eff4ff; padding: 10px; border: 2px solid #2F4F4F; width: 95%; margin: auto; box-shadow: 0 1px 3px rgba(0,0,0,1);"]]
+[[div class="session"]]
 
 __**Transcript of Therapy-Session-4051-5**__
 
