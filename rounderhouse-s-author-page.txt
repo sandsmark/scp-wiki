@@ -3,6 +3,8 @@ title:The Rounderpage
 [[module ListPages  category="fragment" parent="." limit="1" order="created_at" offset="@URL|0"]]
 %%content%%
 [[/module]]
+[!-- http://www.scp-wiki.net/fragment:rounderpage-1 --]
+[!-- http://www.scp-wiki.net/fragment:rounderpage-2 --]
 [[module css]]
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 @import url('https://fonts.googleapis.com/css?family=Staatliches');
@@ -233,17 +235,5 @@ div#container-wrap::before {
 #page-content .scp-image-block .scp-image-caption {
     border-color: rgba(0,0,0,0.12);
     background-color: #8B4513;
-}
-[[/module]]
-
-
-[[module css]]
-.list-pages-box a {
-    color: white !important;
-    text-decoration: underline;
-}
-
-#page-title {
-  display: none;
 }
 [[/module]]
