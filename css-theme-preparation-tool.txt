@@ -1872,7 +1872,7 @@ else {
         intDropShadow = "";
     }
     else {
-        intDropShadow = ' drop-shadow(' + document.getElementById('intDropShadow').value + '%)';
+        intDropShadow = ' drop-shadow(' + document.getElementById('intDropShadow').value + ')';
     };
 
 //intAll result
