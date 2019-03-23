@@ -1,7 +1,25 @@
 title:SCP-4776
+[[include :kaktuskontainer:component:nuscp-dev]]
 [[>]]
 [[module Rate]]
 [[/>]]
+[[include :scp.avn.sh:component:aers:info-stuff
+|lang=en[!-- EN/RU/KO/CN/FR/PL/ES/TH/JP/DE/IT/UA/PTBR --]
+|page=scp-4776[!-- url of your page on the scp wiki --]
+|authorPage=http://www.scp-wiki.net/rounderhouse-s-author-page[!-- link to your author page --]
+|comments=Coming Soon - Rounderhouse
+]]
+[[module CSS]]
+:root{
+--cutColour: #fafafa;
+--barColour: #590505;
+}
+
+.info-container .collapsible-block-folded a{
+color: #FFF;}
+.info-container .collapsible-block-unfolded-link a{
+color: #FFF;}
+[[/module]]
 
 [[include :topia:component:classified-decoration
 |lv=4
