@@ -1,8 +1,5 @@
 title:Wilson's Wildlife Solutions Hub
-[[module CSS]]
-@import url(/component:wilsons-theme/code/1)
-[[/module]]
-
+[[include component:wilsons-theme]]
 [[>]]
 [[module rate]]
 [[/>]]
@@ -204,9 +201,7 @@ Now, the last thing here would be what you might have //also// noticed on this p
 
 If you want to put it in your article, you just gotta copy this handy dandy code right here:
 
-> [[module CSS]]
-> @import url(/component:wilsons-theme/code/1)
-> [[/module]]
+> @@[[include component:wilsons-theme]]@@
 
 And put it at the tippy top of your article. Bing! Any WWS story instantly made homier, and classier, and themier! But wait, not //only// is it eye pleasing, it's useful! Do you think the code for those divs up there is clunky and large and unsightly while writing? So does our CSS theme. In the same order listed up there, those divs can be shortened to:
 
