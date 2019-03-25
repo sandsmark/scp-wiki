@@ -49,6 +49,7 @@ title:Laneous' Outlet
 **Fun Fact:** Knowing Publishing's authors all have fake names, so I made every single name translate to "fake name". Some are turned into english spellings, so it's harder to spot. Falsa's isn't though, it's Latin for "fake name".
 [[/collapsible]]
 -----------
+
 [[/tab]]
 [[tab Stats]]
 = **Originals**
@@ -66,18 +67,34 @@ created_by="The Trashman" prependLine="||~ Page ||~ Rating ||~ Comments ||~ Date
 [[/module]]
 -----------
 [[/tab]]
-[[tab Rewrite Scouting]]
-[[collapsible show="Top Secret Level Gajillion Clearance" hide="go away"]]
+[[tab Jamming Convict Tracker]]
 
-Using this to scout out SCPs to possibly rewrite.
 
-[[module ListPages order="rating desc" separate="false" limit="900" rating="<10" perPage="50" tag="scp" prependLine="||~ Page ||~ Rating ||~ Comments ||~ Date Created ||"]]
+Ok so basically jamcon
+
+= **DAY THREE**
+--------------------
+[[module ListPages order="rating desc" separate="false" limit="900" perPage="50" tag="+jam-con2019 +_all-a-dream -hub" prependLine="||~ Page ||~ Rating ||~ Comments ||~ Date Created ||"]]
 || %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
 [[/module]]
-[[/collapsible]]
+
+
+
+= **DAY TWO**
+--------------------
+[[module ListPages order="rating desc" separate="false" limit="900" perPage="50" tag="+jam-con2019 +_pulp-fiction -hub" prependLine="||~ Page ||~ Rating ||~ Comments ||~ Date Created ||"]]
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
+[[/module]]
+
+
+= **DAY ONE**
+----------------
+[[module ListPages order="rating desc" separate="false" limit="900" perPage="50" tag="+jam-con2019 +_shaggy-dog -hub" prependLine="||~ Page ||~ Rating ||~ Comments ||~ Date Created ||"]]
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
+[[/module]]
+
 [[/tab]]
 [[/tabview]]
-
 = Oh yeah and here's a rating module
 [[=]]
 [[Module Rate]]
