@@ -1,8 +1,21 @@
 title:SCP-3741
-[[module css]]
+[[include :kaktuskontainer:component:nuscp-dev]]
+[[module CSS]]
 sup { 
- vertical-align: top; position: relative; top: -0.5em; 
- }
+vertical-align: top; position: relative; top: -0.5em; 
+}
+:root{ 
+--cutColour: #fafafa;
+--barColour: #590505;
+}
+
+.info-container .collapsible-block-folded a{
+color: #FFF;}
+.info-container .collapsible-block-unfolded-link a{
+color: #FFF;}
+
+.translation_block{
+display:none;}
 [[/module]]
 [[>]]
 [[module Rate]]
