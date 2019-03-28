@@ -397,20 +397,6 @@ Header art by [[*user Athosnetwork]]
   }
 }
 
-#my-account::after {
-font-weight: bold;
-content: " (650)";
-opacity: 1;
-    /* Firefox/Opera */
-    text-decoration: blink;
-
-    /* WebKit */
-    -webkit-animation-name: blinker;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: cubic-bezier(1.0, 0, 0, 1.0);
-    -webkit-animation-duration: 1s;
-}
-
 #header{
     background: url(null)
 }
