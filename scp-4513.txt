@@ -1,7 +1,25 @@
 title:SCP-4513
+[[include :kaktuskontainer:component:nuscp-dev]]
 [[>]]
 [[module Rate]]
 [[/>]]
+[[include :scp.avn.sh:component:aers:info-stuff
+|lang=en[!-- EN/RU/KO/CN/FR/PL/ES/TH/JP/DE/IT/UA/PTBR --]
+|page=scp-4549[!-- url of your page on the scp wiki --]
+|authorPage=http://www.scp-wiki.net/rounderhouse-s-author-page[!-- link to your author page --]
+|comments= Coming Soon - Rounderhouse
+]]
+[[module CSS]]
+:root{ 
+--cutColour: #fafafa;
+--barColour: #590505;
+}
+
+.info-container .collapsible-block-folded a{
+color: #FFF;}
+.info-container .collapsible-block-unfolded-link a{
+color: #FFF;}
+[[/module]]
 
 [[include :scp-sandbox-3:image-zoom name=bottle.jpg|caption=SCP-4513-B|width=300px|align=right]]
 
