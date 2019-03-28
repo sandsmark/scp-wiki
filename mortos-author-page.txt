@@ -9,6 +9,10 @@ title:Mortos' Author Page
 .icepick-author: {
     display: inline;
 }
+
+.table-cell {
+     border: 1px solid black;
+}
 [[/module]]
 
 [[>]]
@@ -18,17 +22,16 @@ title:Mortos' Author Page
 **Articles**
 You're off the edge of the map, and here there be monsters!
 
-[!--
 [[module ListPages created_by="@URL|Mortos" order="created_at" separate="no" tags="-author -tale -goi-format -hub" perPage="250" prependLine="[[include :icebox:inc:author-table]]" appendLine="[[/table]]"]] 
 [[row]]
- [[cell]] %%title_linked%% - %%first_paragraph%%[[/cell]]
- [[cell]] %%rating%%[[/cell]]
- [[cell]] %%comments%%[[/cell]]
- [[cell]] %%created_at%%[[/cell]]
- [[cell]] %%updated_at%%[[/cell]]
+ [[cell class="table-cell"]] %%title_linked%% - %%first_paragraph%%[[/cell]]
+ [[cell class="table-cell"]] %%rating%%[[/cell]]
+ [[cell class="table-cell"]] %%comments%%[[/cell]]
+ [[cell class="table-cell"]] %%created_at%%[[/cell]]
+ [[cell class="table-cell"]] %%updated_at%%[[/cell]]
 [[/row]]
 [[/module]]
---]
+
 
 [[module ListPages created_by="@URL|Mortos" order="created_at" separate="no" tags="-author -tale -goi-format -hub" perPage="250" prependLine="||~ Item # ||~ Rating ||~ Comments ||~ Created ||~ Last Edited ||"]] 
 || %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%updated_at%% ||
