@@ -15,7 +15,7 @@ div.object {
     box-shadow: 0 .063em .125em var(--box-shadow);
     display: flow-root;
     border: 1px dashed #999;
-    padding: 0 1em;
+    padding: 1em;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 40px;
@@ -25,6 +25,8 @@ div.object {
 div.object div.table {
     border: 1px solid #888;
     padding: 0.3em 0.7em;
+    margin: 1em;
+    font-style: italic;
 }
 [[/module]]
 
