@@ -1,6 +1,31 @@
 title:SCP-2105
 [[module CSS]]
 @import url(/component:scp-pride/code/1);
+
+div.object {
+    --box-shadow: rgba(var(--swatch-menubg-black-color),0.1);
+    border-style: dashed;
+    border-color: rgba(var(--swatch-border-color),0.25);
+    border-width: .063em;
+    background-color: #f4f4f4;
+    background-color: rgb(var(--swatch-menubg-light-color));
+    -webkit-box-shadow: 0 0.063em 0.125em rgba(0,0,0,0.1);
+    box-shadow: 0 0.063em 0.125em rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 .063em .125em var(--box-shadow);
+    box-shadow: 0 .063em .125em var(--box-shadow);
+    display: flow-root;
+    border: 1px dashed #999;
+    padding: 0 1em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+div.object div.table {
+    border: 1px solid #888;
+    padding: 0.3em 0.7em;
+}
 [[/module]]
 
 [[>]]
@@ -97,14 +122,22 @@ mv_sk1r.tar.gz was discovered on the computer of a University of South ███
 
 **Addendum:** Under request of Researcher Michaelson, a through search of W-2105-001's belongings was conducted. A box matching the description given during interrogation was found and was taken to Research Facility-12 for further research. After a thorough examination of the box, it was found to be non-anomalous in nature, but Researcher Michaelson discovered a few properties of the box that may give insight into the nature of SCP-2105. The following is a facsimile of Researcher Micaelson's notes:
 
+
+[[div_ class="object"]]
 [[include component:image-block name=scp_objs_2105.png |caption=Objects discovered in W-2105-001's dwelling]]
-> **Research Findings** | **Object: Bronze Box associated with SCP-2105**
-> 
-> **Description:** A 14 cm x 14 cm x 14 cm cube with a pyramid-like lid composed of a highly corroded copper. Object is covered in markings found to be a text from Shang Dynasty [1250 BCE] surrounded by zoomorphic patterns set in a low relief. The interior of the object contains an object found to be a Shang Dynasty ritual wine container in the shape of an owl.
-> 
-> The text has been translated from a little known Oracle Language of the Shang Dynasty:
-> || Organics among us do not belong. Drink! Drink and be organic, you faithless among us who do not belong. Call out to Jade Emperor. He will not come for you. Place yourself under his gaze and find your whims bent to your every knowing. For the mutilated among us will find themselves hungry for integration. Write these whims with oracle bones and find them alive among your parchment.||
-> **Hypothesis:** While speaking in riddles is chief among the Church of the Broken God's dogma, I believe it may be possible to parse a meaning out of this nonsense. After discussing this matter with Dr. Forsyth, we believe that the anomalous properties of SCP-2105 may be a transference of a belief among primarily the "Church of Maxwellism"(GOI-004C) found in their "Gospel of the Sixth Network - Chapter 2: Comments." [[footnote]]//Original Text: {{WAN spoke to the believers and found them afraid of their power. He wrote among their source and allowed them to mark this mutilated world into completeness. He spoke, and the fragmented word compiled.}}[[/footnote]] This section is generally interpreted by members as a tacit acceptance by their god to modify this world's "source code" in any way they see fit in order to fulfil their goals. We have no proof of this outside our educated guess, but Dr. Forsyth and I believe that this program may have been made for this purpose.
+
+**Research Findings** | **Object: Bronze Box associated with SCP-2105**
+
+**Description:** A 14 cm x 14 cm x 14 cm cube with a pyramid-like lid composed of a highly corroded copper. Object is covered in markings found to be a text from Shang Dynasty [1250 BCE] surrounded by zoomorphic patterns set in a low relief. The interior of the object contains an object found to be a Shang Dynasty ritual wine container in the shape of an owl.
+
+The text has been translated from a little known Oracle Language of the Shang Dynasty:
+
+[[div_ class="table"]]
+Organics among us do not belong. Drink! Drink and be organic, you faithless among us who do not belong. Call out to Jade Emperor. He will not come for you. Place yourself under his gaze and find your whims bent to your every knowing. For the mutilated among us will find themselves hungry for integration. Write these whims with oracle bones and find them alive among your parchment.
+[[/div]]
+
+**Hypothesis:** While speaking in riddles is chief among the Church of the Broken God's dogma, I believe it may be possible to parse a meaning out of this nonsense. After discussing this matter with Dr. Forsyth, we believe that the anomalous properties of SCP-2105 may be a transference of a belief among primarily the "Church of Maxwellism"(GOI-004C) found in their "Gospel of the Sixth Network - Chapter 2: Comments." [[footnote]]//Original Text: {{WAN spoke to the believers and found them afraid of their power. He wrote among their source and allowed them to mark this mutilated world into completeness. He spoke, and the fragmented word compiled.}}[[/footnote]] This section is generally interpreted by members as a tacit acceptance by their god to modify this world's "source code" in any way they see fit in order to fulfill their goals. We have no proof of this outside our educated guess, but Dr. Forsyth and I believe that this program may have been made for this purpose.
+[[/div]]
 
 //The box and its contents have been placed back with W-2105-001's belongings until further research is required.// -O5-█
 
