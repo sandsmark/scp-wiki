@@ -1,8 +1,5 @@
 title:Marshall, Carter and Dark Hub
-[[module CSS]]
-@import url(/component:MCD-theme/code/1);
-[[/module]]
-
+[[include component:MCD-theme]]
 [[>]]
 [[module Rate]]
 [[/>]]
@@ -106,9 +103,12 @@ MC&D objects are **always referred to as 'items'** in documentation; pronouns su
 To use the MC&D custom theme, put the following at the top of your page:
 
 [[code]]
-[[module CSS]]
-@import url(/component:MCD-theme/code/1);
-[[/module]]
+[[include component:MCD-theme]]
+[[/code]]
+
+A variant of the MC&D custom theme also exists, with [[[component:mcd-theme-gray|gray colors]]]. To use this theme, put the following at the top of your page:
+[[code]]
+[[include component:MCD-theme-gray]]
 [[/code]]
 
 + Header
