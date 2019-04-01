@@ -1,2 +1,73 @@
 title:Kinchtheknifeblade's Author Page
+[[module CSS]]
+
+#container{
+
+background-image: linear-gradient(to top, red, orange);
+    -webkit-animation: scan 5s linear 0s infinite;; /* Safari 4.0 - 8.0 */
+    animation: example 5s linear 0s infinite;
+}
+
+* :not(#container), #side-bar .side-block, #side-bar.side-block[style="background-color: mintcream"] {
+background-color: rgba(255,0,255,.3) !important;
+color: black;
+background-blend-mode: color-dodge;
+}
+
+@keyframes example{
+from{filter: hue-rotate(0deg);}
+to{filter: hue-rotate(-360deg);}
+}
+
+@-webkit-keyframes example{
+from{filter: hue-rotate(0deg);}
+to{filter: hue-rotate(-360deg);}
+}
+[[/module]]
+
+[[module css]]
+@import url(http://scp-wiki.net/component:scp-pride/code/1);
+
+#header h1 a, #header h1 a::before {
+    content: "SCP Foundation";
+}
+
+#header h1 a span{
+    display: block;
+    content: "";
+    visibility: hidden;
+}
+
+#header h2 {
+    margin-left: 120px;
+    padding: 0;
+    clear: left;
+    float: left;
+    font-size: 105%;
+    max-height: 38px;
+}
+#header h2 span {
+    display: block;
+    margin: 0;
+    padding: 19px 0;
+    line-height: 0px;
+    max-height: 0px;
+    font-weight: bold;
+    color: transparent;
+    text-shadow: none;
+}
+#header h2 span::before {
+    content: "Secure, Contain, Protect";
+    display: block;
+    margin: 0;
+    padding: 0px 0;
+    line-height: 0px;
+    max-height: 0px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+}
+
+[[/module]]
 im that bitch the rpc discord has 43 pages of results about
