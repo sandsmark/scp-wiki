@@ -126,6 +126,51 @@ Stormbreath has been reassigned to the Community Outreach of the Global Occult C
 [[/tab]]
 [[tab Stats]]
 [[include :scp-stats:user:stormbreath]]
+
+[[collapsible show="                                " hide="my list page modules"]]
+
+----
+
+= **WARNING**
+
+= This table format was stolen from Ellie3, who stole it from ashburystreet, who stole it from MaliceAforethought, who stole it from Tufto, who stole it from Mortos. The great cycle of thievery!
+
+------
+[[=]]
++++ SCPs:
+
+[[module ListPages created_by="stormbreath" order="created_at" separate="no" tags="scp" perPage="250" prependLine="||~ Item # ||~ Rating ||~ Length ||~ Comments ||~ Last Comment ||"]]
+|| %%title_linked%% || ##green|+ %%rating%%## || %%size%% || %%comments%% || %%commented_at%% ||
+[[/module]]
+
+------
+
++++ Tales:
+
+[[module ListPages created_by="stormbreath" order="created_at" separate="no" tags="tale -hub" perPage="250" prependLine="||~ Item # ||~ Rating ||~ Length ||~ Comments ||~ Last Comment ||"]]
+|| %%title_linked%% || ##green|+ %%rating%%## || %%size%% || %%comments%% || %%commented_at%% ||
+[[/module]]
+
+----
+
++++ GoI Format:
+
+[[module ListPages created_by="stormbreath" order="created_at" separate="no" tags="goi-format" perPage="250" prependLine="||~ Item # ||~ Rating ||~ Length ||~ Comments ||~ Last Comment ||"]]
+|| %%title_linked%% || ##green|+ %%rating%%## || %%size%% || %%comments%% || %%commented_at%% ||
+[[/module]]
+
+------
+
++++ Other:
+
+[[module ListPages category="*" created_by="stormbreath" order="created_at" separate="no" tags="-scp -tale -goi-format" perPage="250" prependLine="||~ Item # ||~ Rating ||~ Length ||~ Comments ||~ Last Comment ||"]]
+|| %%title_linked%% || ##green|+ %%rating%%## || %%size%% || %%comments%% || %%commented_at%% ||
+[[/module]]
+[[/=]]
+
+------
+
+[[/collapsible]]
 [[/tab]]
 [[tab Commentary]]
 
@@ -490,5 +535,11 @@ border-color: #ffffff;
  
 .yui-navset-left .yui-content {
     border-left-color: #b7a9a9; /* different border color */
+}
+[[/module]]
+
+[[module CSS]]
+* {
+    font-family: "Comic Sans MS", cursive;
 }
 [[/module]]
