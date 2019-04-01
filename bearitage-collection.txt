@@ -2,6 +2,11 @@ title:Bearitage Collection
 [[module CSS]]
 @import url(http://www.scp-wiki.net/component:wilsons-theme/code/1);
 
+:root, :root * {
+    white-space: normal !important;
+    word-break: normal !important;
+}
+
 table.heritage {
   border: 0;
   padding: 0;
