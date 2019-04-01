@@ -60,11 +60,33 @@ table.heritage div.date p {
   margin: 0;
 }
 
+.heritage-rating-module {
+  background-color: #a3c162;
+  border: solid 2px #665731;
+  box-shadow: 0 1px 10px rgb(204,192,102);
+}
 
+.heritage-rating-module .page-rate-widget-box .rate-points {
+  border: solid 1px #a3c162;
+}
+.heritage-rating-module .page-rate-widget-box .rateup,
+.heritage-rating-module .page-rate-widget-box .ratedown {
+  border-top: solid 1px #a3c162;
+  border-bottom: solid 1px #a3c162;
+}
+ 
+.heritage-rating-module .page-rate-widget-box .cancel {
+  border: solid 1px #a3c162;
+}
 [[/module]]
 
 [[>]]
-[[module rate]]
+[[div class="heritage-rating-module"]]
+[[module Rate]]
+[[div class="heritage-emblem"]]
+[[image http://scp-wiki.wdfiles.com/local--files/component%3Aheritage-rating/scp-heritage-v3.png link="heritage-collection-arc"]]
+[[/div]]
+[[/div]]
 [[/>]]
 
 [[div style="border: dashed 2px #A3C162; border-radius: 10px; min-height: 116px; width: 400px; margin: 0 auto; padding: 0 20px; background: #D1ED9A url(/local--files/heritage-collection/hatch-black10i.png); color: #331010;"]]
