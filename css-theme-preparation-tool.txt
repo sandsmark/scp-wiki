@@ -700,6 +700,53 @@ brightness(86%)
 [[/table]]
 
 
+[!-- Pataphysics Department Theme --]
+[[table class="wiki-content-table" style="float: left; margin-right: 0.8em;"]]
+[[row]][[hcell colspan="5"]][http://scp-wiki.wikidot.com/component:pataphysics-theme Pataphysics Department Theme][[/hcell]][[/row]]
+[[row]][[cell]][[/cell]][[hcell]]color code[[/hcell]][[hcell]]H[[/hcell]][[hcell]]S[[/hcell]][[hcell]]V[[/hcell]][[/row]]
+[[row]][[hcell rowspan="2"]]Link[[/hcell]][[cell rowspan="2"]]**##5b2f8e|#5b2f8e##**[[/cell]][[cell]]268deg[[/cell]][[cell]]67%[[/cell]][[cell]]56%[[/cell]][[/row]]
+[[row]][[cell]]-87deg[[/cell]][[cell]]67%[[/cell]][[cell]]/[[/cell]][[/row]]
+
+[[row]][[hcell rowspan="2"]]side-bg[[/hcell]][[cell rowspan="2"]]**##f3f3f3|#f3f3f3##**[[/cell]][[cell]]0deg[[/cell]][[cell]]0%[[/cell]][[cell]]95%[[/cell]][[/row]]
+[[row]][[cell]]/[[/cell]][[cell]]/[[/cell]][[cell]]95%[[/cell]][[/row]]
+
+[[row]]
+[[cell colspan="5" style="text-align: center;"]]
+[[div class="side-block" style="width: 17em;background: #f3f3f3;border: 2px solid #3e2659;border-radius: 0;box-shadow: 0 2px 6px rgba(32,32,32,0);"]]
+[[a href="#" style="font-weight: bold; color: #5b2f8e;"]]side-block sample[[/a]]
+[[/div]]
+[[/cell]]
+[[/row]]
+
+[[row]]
+[[cell class="scpnet-interwiki-wrapper pt" colspan="5" style="padding: 0; text-align: left;"]]
+[[div class="interwiki"]]
+[[div_ class="interwiki__title"]]
+Interwiki sample
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]Esperanto[[/a]]
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]tlhIngan Hol[[/a]]
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]Na'vi[[/a]]
+[[/div]]
+[[div_ class="interwiki__entry"]]
+[[a href="#asap"]]Qenya[[/a]]
+[[/div]]
+[[/div]]
+[[/cell]]
+[[/row]]
+[[row]][[hcell]]filter:[[/hcell]][[hcell colspan="4" style="font-weight: normal; text-align: left;"]]
+hue-rotate(273deg)
+saturate(67%)
+brightness(95%)
+[[/hcell]][[/row]]
+[[/table]]
+
+
 +* [[span style="display: inline-block; width: 100%;"]]Exception[[/span]]
 [!-- The Way It Ends (djkaktus's Proposal III) --]
 [[table class="wiki-content-table" style="float: left; margin-right: 0.8em;"]]
@@ -2667,6 +2714,10 @@ filter: hue-rotate(219deg) saturate(92%);
 .db {
 filter: hue-rotate(185deg) saturate(40%) brightness(86%);
 }
+.pt {
+filter: hue-rotate(273deg) saturate(67%) brightness(95%);
+}
+
 .end {
 filter: hue-rotate(5deg) saturate(93%) brightness(8%);
 }
