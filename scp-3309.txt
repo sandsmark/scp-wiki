@@ -1,34 +1,77 @@
 title:SCP-3309
 [[include component:pataphysics-theme]]
 
+[[module CSS]]
+.patanotice {
+    text-align: center;
+    color: #ededed;
+    background: #201230;
+    border: solid 1px #fff;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.transquote {
+    display: inline-block;
+    border: dashed 1px #444444;
+    background: #ffffff;
+    width: 96.5%;
+    padding: 5px;
+    font-style: italic;
+    text-align: center;
+}
+
+.quoteblock {
+    display: inline-block;
+    border: 1px double #999;
+    background: #F5F5F5;
+    width: 85%;
+    padding: 0 12px;
+    margin: auto;
+}
+
+[[div style="display: inline-block; border: 1px double #999; background: #F5F5F5; width: 85%; padding: 0 12px; margin: auto;"]]
+
+.meta-title {
+  border-bottom: solid 1px #bbbbbb;
+  color: #990011;
+  font-weight: normal;
+  margin: 0 0 0.6em;
+  padding: 0 0 0.25em;
+  font-size: 200%;
+}
+
+.meta-title p {
+  margin: 0;
+}
+[[/module]]
+
 [[include info:start]]
 **SCP-3309:** Where We Go When We Fade, Fade Away
 **Authors:** [[*user PhamtomGuy]] and [[*user FloppyPhoenix]] ([[[floppyphoenix|Author Page]]])
 
-Based on [[[operation-overmeta|the Pataphysics Department]]] by [[*user Rimple]]
+Based on [[[operation-overmeta|the Pataphysics Department]]] by [[*user Rimple]].
 [[include info:end]]
 
-[[div style="border:solid 1px #fff; background: #201230; color: #ededed; padding:5px; margin-bottom: 10px;"]]
-[[=]]
+[[div class="patanotice"]]
 ++++ NOTICE FROM THE PATAPHYSICS DEPARTMENT
 
 The file you are about to read, 'SCP-3309,' describes an unpredictable narrativic anomaly intersecting with multiple subnarrative layers. Narrativic inoculation is required, as this document contains several embedded narrativohazards. Personnel not inoculated against such anomalies may undergo a narrative paraphrasing event. Are you sure you wish to proceed?
-[[/=]]
 [[/div]]
 
-= ##red|**Narrativic inoculation disseminated.**##
+= **##B01|Narrativic inoculation disseminated.##**
 
-[[div style="display:inline-block; border:dashed 1px #444444; background:#ffffff; float:center; width:96.5%; padding:5px;"]]
+[[div class="transquote"]]
 [[==]]
-= //Sometimes we don't fade until it's too late.//
+Sometimes we don't fade until it's too late.
 
-= //Until we've withered, withered, down to the bone. And at the end, there's nothing left to fade. It's forgotten. Memories, hopes, dreams, we're forgotten. How do we know that people can even have these memories, these hopes, these dreams? How can we be forgotten if there was nothing there in the first place? We fade from the minds of others, but not from our own. We live with it until we can't live any longer. Until we forget that there was ever any way we could live in peace. And then, that's when we fade away.//
+Until we've withered, withered, down to the bone. And at the end, there's nothing left to fade. It's forgotten. Memories, hopes, dreams, we're forgotten. How do we know that people can even have these memories, these hopes, these dreams? How can we be forgotten if there was nothing there in the first place? We fade from the minds of others, but not from our own. We live with it until we can't live any longer. Until we forget that there was ever any way we could live in peace. And then, that's when we fade away.
 
-= //Fade, fade away.//
+Fade, fade away.
 [[/==]]
 [[/div]]
 
-= **##blue|Inoculation complete. You may proceed.##**
+= **##0000bd|Inoculation complete. You may proceed.##**
 ----
 [[table style="border: none; width: 100%;"]]
 [[row]]
@@ -48,8 +91,6 @@ The file you are about to read, 'SCP-3309,' describes an unpredictable narrativi
 [[/cell]]
 [[/row]]
 [[/table]]
-
-
 ----
 **Special Containment Procedures:** All documentation regarding anomalies affected by SCP-3309 is to be preserved in a rewritten format and kept within the RAISA archive database. Following the containment of an instance, all personnel assigned to the affected item must undergo amnestic treatment and transfer to unrelated projects.
 
@@ -57,7 +98,13 @@ The file you are about to read, 'SCP-3309,' describes an unpredictable narrativi
 
 48 hours before the disappearance of an anomaly, SCP-3309-1 will appear appended to the end of the object's document. Documents undergoing SCP-3309 become wiped from all known file systems, including Protected Site-01 and RAISA archives. After this, the anomaly itself becomes effectively neutralized, or otherwise disappears entirely. The contents of SCP-3309-1 are as follows:
 
-> //If you are not the author and you want to rewrite this article, you may reply to this post asking for the opportunity to do so. Please obtain permission from the author.//
+[[div style="text-align: center;"]]
+[[div class="quoteblock" style="margin-bottom: 20px;"]]
+[[<]]
+//If you are not the author and you want to rewrite this article, you may reply to this post asking for the opportunity to do so. Please obtain permission from the author.//
+[[/<]]
+[[/div]]
+[[/div]]
 
 SCP-3309 affects back-ups created for disappearing documents. SCP-3309 also affects documents of anomalous items coming into contact with SCP-3309—approximately 71% of disappearing documents are connected to other non-affected anomalies. This leads to a weakening in the Foundation's anomaly containment network, potentially escalating to an ADK-Class Full Anomalous Destabilization scenario.
 
@@ -71,22 +118,32 @@ Since its prime emergence, SCP-3309 has affected an average of forty anomalies p
 
 Based on these new observations, PROJECT: TAPERED SPEAR has been proposed. TAPERED SPEAR outlines the adaptation of the aforementioned criteria for use against dangerous anomalies in an attempt to neutralize them. As this contravenes the mission of the Foundation, the execution of TAPERED SPEAR has been contested by an Ethics Committee special tribunal. The results of this tribunal are as follows:
 
-> **PROJECT: TAPERED SPEAR** — Tribunal Results
-> 
-> **For: ##green|21##**
-> **Against: ##red|20##**
-> **Abstain: ##orange|2##**
-> 
-> **Outcome:** PROJECT: TAPERED SPEAR has been authorized. SCP-3309 is pending Thaumiel reclassification.
+[[div style="text-align: center;"]]
+[[div class="quoteblock"]]
+[[<]]
+= **PROJECT: TAPERED SPEAR**
+----
+= Tribunal Results
+----
+**For: ##green|21##**
+**Against: ##red|20##**
+**Abstain: ##orange|2##**
+
+**Outcome:** PROJECT: TAPERED SPEAR has been authorized. SCP-3309 is pending Thaumiel reclassification.
+[[/<]]
+[[/div]]
+[[/div]]
 [[/collapsible]]
 
 **Addendum 3309.2:** 
 [[collapsible show="► TS/3309/EYES ONLY — DOCUMENT TAPERED SPEAR" hide="The king of jewels has been made a pawn."]]
 Preliminary testing of SCP-3309 to determine the suitability of a Thaumiel reclassification has officially commenced. Attached is a preliminary testing log, the results of which will determine a final decision. 
 
-[[div style="display: inline-block; border:dashed 1px #999999; background:#F5F5F5; float:center; width:84%; padding:1px 15px; margin: 10px 10px 10px 40px"]]
-**__Proposal excerpt__**
-
+[[div style="text-align: center;"]]
+[[div class="quoteblock"]]
+[[<]]
+= **__Proposal excerpt__**
+----
 **Proposal of SCP-3309 use:** Use SCP-3309 to neutralize [[[SCP-4463]]], a complex water-based spatial anomaly capable of flooding North America within 50 years.
 
 **Description:** SCP-4463 is a water-based anomaly affecting parts of the Chihuahuan desert in the state of Arizona. SCP-4463 describes the slow transformation of a large area of desert into an equivalent area of wetlands. 
@@ -97,7 +154,9 @@ In August of 2008, approximately 60% of desiccated topsoil per square meter bega
 
 **Actions taken:** SCP-4463's file was updated to contain heavy grammatical errors and major inconsistencies with the related functions of the anomaly. Multiple fabricated addenda and an unrelated image depicting a large ocean wave were also added.
 
-**Result:** SCP-4463 was completely erased from all Foundation databases within 48 hours by SCP-3309. After further research and an observation into the former location of SCP-4463, it was determined that the threat posed by SCP-4463 had been neutralized, and the area had become desertified once more.
+**Result:** SCP-4463 was completely erased from all Foundation databases within 48 hours by SCP-3309. After further research and observation into the former location of SCP-4463, it was determined that the threat posed by SCP-4463 had been neutralized, and the area had become desertified once more.
+[[/<]]
+[[/div]]
 [[/div]]
 
 After continued debate and preliminary testing involving 19 different anomalies, SCP-3309 has passed the second stage of voting among the Ethics Committee special tribunal. SCP-3309 has been reclassified as Thaumiel and authorized for use in TAPERED SPEAR. The first round of post-reclassification research involving 49 anomalies is underway.
