@@ -1,5 +1,5 @@
 title:SCP-3309
-[[include component:pataphysics-theme]]
+[[include :scp-wiki:component:pataphysics-theme]]
 
 [[module CSS]]
 .patanotice {
@@ -13,12 +13,12 @@ title:SCP-3309
 
 .transquote {
     display: inline-block;
-    border: dashed 1px #444444;
+    text-align: center;
+    font-style: italic;
     background: #ffffff;
+    border: dashed 1px #444444;
     width: 96.5%;
     padding: 5px;
-    font-style: italic;
-    text-align: center;
 }
 
 .quoteblock {
@@ -29,29 +29,14 @@ title:SCP-3309
     padding: 0 12px;
     margin: auto;
 }
-
-[[div style="display: inline-block; border: 1px double #999; background: #F5F5F5; width: 85%; padding: 0 12px; margin: auto;"]]
-
-.meta-title {
-  border-bottom: solid 1px #bbbbbb;
-  color: #990011;
-  font-weight: normal;
-  margin: 0 0 0.6em;
-  padding: 0 0 0.25em;
-  font-size: 200%;
-}
-
-.meta-title p {
-  margin: 0;
-}
 [[/module]]
 
-[[include info:start]]
+[[include :scp-wiki:info:start]]
 **SCP-3309:** Where We Go When We Fade, Fade Away
 **Authors:** [[*user PhamtomGuy]] and [[*user FloppyPhoenix]] ([[[floppyphoenix|Author Page]]])
 
 Based on [[[operation-overmeta|the Pataphysics Department]]] by [[*user Rimple]].
-[[include info:end]]
+[[include :scp-wiki:info:end]]
 
 [[div class="patanotice"]]
 ++++ NOTICE FROM THE PATAPHYSICS DEPARTMENT
@@ -61,18 +46,18 @@ The file you are about to read, 'SCP-3309,' describes an unpredictable narrativi
 
 = **##B01|Narrativic inoculation disseminated.##**
 
-[[div class="transquote"]]
 [[==]]
+[[div class="transquote"]]
 Sometimes we don't fade until it's too late.
 
 Until we've withered, withered, down to the bone. And at the end, there's nothing left to fade. It's forgotten. Memories, hopes, dreams, we're forgotten. How do we know that people can even have these memories, these hopes, these dreams? How can we be forgotten if there was nothing there in the first place? We fade from the minds of others, but not from our own. We live with it until we can't live any longer. Until we forget that there was ever any way we could live in peace. And then, that's when we fade away.
 
 Fade, fade away.
-[[/==]]
 [[/div]]
+[[/==]]
 
 = **##0000bd|Inoculation complete. You may proceed.##**
-----
+@@ @@
 [[table style="border: none; width: 100%;"]]
 [[row]]
 [[cell]]
@@ -99,7 +84,7 @@ Fade, fade away.
 48 hours before the disappearance of an anomaly, SCP-3309-1 will appear appended to the end of the object's document. Documents undergoing SCP-3309 become wiped from all known file systems, including Protected Site-01 and RAISA archives. After this, the anomaly itself becomes effectively neutralized, or otherwise disappears entirely. The contents of SCP-3309-1 are as follows:
 
 [[div style="text-align: center;"]]
-[[div class="quoteblock" style="margin-bottom: 20px;"]]
+[[div class="quoteblock"]]
 [[<]]
 //If you are not the author and you want to rewrite this article, you may reply to this post asking for the opportunity to do so. Please obtain permission from the author.//
 [[/<]]
@@ -121,9 +106,7 @@ Based on these new observations, PROJECT: TAPERED SPEAR has been proposed. TAPER
 [[div style="text-align: center;"]]
 [[div class="quoteblock"]]
 [[<]]
-= **PROJECT: TAPERED SPEAR**
-----
-= Tribunal Results
+= **PROJECT: TAPERED SPEAR – TRIBUNAL RESULTS**
 ----
 **For: ##green|21##**
 **Against: ##red|20##**
@@ -142,7 +125,7 @@ Preliminary testing of SCP-3309 to determine the suitability of a Thaumiel recla
 [[div style="text-align: center;"]]
 [[div class="quoteblock"]]
 [[<]]
-= **__Proposal excerpt__**
+= **PROPOSAL EXCERPT**
 ----
 **Proposal of SCP-3309 use:** Use SCP-3309 to neutralize [[[SCP-4463]]], a complex water-based spatial anomaly capable of flooding North America within 50 years.
 
@@ -161,8 +144,12 @@ In August of 2008, approximately 60% of desiccated topsoil per square meter bega
 
 After continued debate and preliminary testing involving 19 different anomalies, SCP-3309 has passed the second stage of voting among the Ethics Committee special tribunal. SCP-3309 has been reclassified as Thaumiel and authorized for use in TAPERED SPEAR. The first round of post-reclassification research involving 49 anomalies is underway.
 
-[[div style="display: inline-block; border:dashed 1px #999999; background:#F5F5F5; float:center; width:84%; padding:1px 15px; margin: 10px 10px 10px 40px"]]
-**Researcher Note:** I don't understand how one round of testing can burden a man with so much stress. I think I even saw my first grey hair this morning, or an entire patch of grey hairs? No, surely that's unnatural? I don't //feel// natural right now. I don't feel alright. But so early on in my tenure?
+[[div style="text-align: center;"]]
+[[div class="quoteblock"]]
+[[<]]
+= **RESEARCHER NOTE**
+----
+I don't understand how one round of testing can burden a man with so much stress. I think I even saw my first grey hair this morning, or an entire patch of grey hairs? No, surely that's unnatural? I don't //feel// natural right now. I don't feel alright. But so early on in my tenure?
 
 Fading to dust, what does that feel like? Would it burden my senses in the same way an illness might? Or might it leave me numb? I think, if I was to go out, I would want to continue to feel, even into my final moment. To know that I'm still here, as everything else fades away.
 
@@ -176,35 +163,71 @@ I don't want to be forgotten.
 [[>]]
 — Researcher Adamo Smalls
 [[/>]]
+[[/<]]
+[[/div]]
 [[/div]]
 [[/collapsible]]
 
 **Addendum 3309.3:** 
 
 [[collapsible show="His heart is a crater, and we have filled it." hide=" " hideLocation="bottom"]]
-> Researcher Smalls did not show up during the latter parts of our testing this evening. He no longer appears on any of our itineraries and his name has been expunged from my project files. If there has been an immediate project alteration or a change in schedule that I was not informed of, please notify me __immediately__.
-> 
-> — Researcher John Calzaroli
+[[div style="text-align: center;"]]
+[[div class="quoteblock" style="margin-bottom: 20px;"]]
+[[<]]
+Researcher Smalls did not show up during the latter parts of our testing this evening. He no longer appears on any of our itineraries and his name has been expunged from my project files. If there has been an immediate project alteration or a change in schedule that I was not informed of, please notify me __immediately__.
+[[>]]
+— Researcher John Calzaroli
+[[/>]]
+[[/<]]
+[[/div]]
+[[/div]]
 
-> Researcher Calzaroli, are you alright? Yes, there was indeed a 3-hour schedule change, but a "Researcher Smalls" has never been involved with this project. Further, I assure you that someone named Researcher Smalls does not work with us. Please, John, take a break, the stress must be getting to you. Testing has been absolutely rigorous these past few weeks. I feel it, too.
-> 
-> — Researcher Robert Woods
+[[div style="text-align: center;"]]
+[[div class="quoteblock" style="margin-bottom: 20px;"]]
+[[<]]
+Researcher Calzaroli, are you alright? Yes, there was indeed a 3-hour schedule change, but a "Researcher Smalls" has never been involved with this project. Further, I assure you that someone named Researcher Smalls does not work with us. Please, John, take a break, the stress must be getting to you. Testing has been absolutely rigorous these past few weeks. I feel it, too.
+[[>]]
+— Researcher Robert Woods
+[[/>]]
+[[/<]]
+[[/div]]
+[[/div]]
 
-> I'm sorry, you're mistaken. You //must// know the man. He's the most exceptional memeticist we have.
-> 
-> But, if you truly claim that there is no Researcher Smalls, well, there must be something more to this. SCP-3309 erases anomalies and the files associated with them. We haven't discussed where exactly these anomalies //go//, and I'm sure we've all had our questions. As far as I can remember, Smalls was assigned to investigate SCP-4463 when it was first discovered.
-> 
-> Are we sure personnel aren't also being deleted?
-> 
-> — [DELETED]
+[[div style="text-align: center;"]]
+[[div class="quoteblock" style="margin-bottom: 20px;"]]
+[[<]]
+I'm sorry, you're mistaken. You //must// know the man. He's the most exceptional memeticist we have.
 
-> What the hell?
-> 
-> — Researcher Robert Woods
+But, if you truly claim that there is no Researcher Smalls, well, there must be something more to this. SCP-3309 erases anomalies and the files associated with them. We haven't discussed where exactly these anomalies //go//, and I'm sure we've all had our questions. As far as I can remember, Smalls was assigned to investigate SCP-4463 when it was first discovered.
 
-> **[FROM: ACCOUNT DELETED]:** 
-> 
-> [MESSAGE DELETED]
+Are we sure personnel aren't also being deleted?
+[[>]]
+— [ACCOUNT DELETED]
+[[/>]]
+[[/<]]
+[[/div]]
+[[/div]]
+
+[[div style="text-align: center;"]]
+[[div class="quoteblock" style="margin-bottom: 20px;"]]
+[[<]]
+What the hell?
+[[>]]
+— Researcher Robert Woods
+[[/>]]
+[[/<]]
+[[/div]]
+[[/div]]
+
+[[div style="text-align: center;"]]
+[[div class="quoteblock"]]
+[[<]]
+**FROM: [ACCOUNT DELETED]:** 
+
+= [MESSAGE DELETED]
+[[/<]]
+[[/div]]
+[[/div]]
  @@ @@
  @@ @@
  @@ @@
