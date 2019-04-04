@@ -1,11 +1,11 @@
 title:SCP-2935
+[[include component:black-highlighter-theme-dev]]
 [[include :scp.avn.sh:component:aers:info-stuff
 |lang=en[!-- EN/RU/KO/CN/FR/PL/ES/TH/JP/DE/IT/UA/PTBR --]
-|page=SCP-2935[!-- url of your page on the scp wiki --]
+|page=scp-2935[!-- url of your page on the scp wiki --]
 |authorPage=http://www.scp-wiki.net/djkaktus[!-- link to your author page --]
-|comments=I've been asked about this one pretty often; it's no secret that this is one of my most successful articles here. Readers typically leave this article with a lot of questions about what happened in the article and what inspired it in the first place.
+|comments=N/A
 ]]
-[[include component:black-highlighter-theme-dev]]
 [[module CSS]]
 sup { 
 vertical-align: top; position: relative; top: -0.5em; 
@@ -14,14 +14,18 @@ vertical-align: top; position: relative; top: -0.5em;
 --cutColour: #fafafa;
 --barColour: #590505;
 }
+.translation_block{
+display:none;}
 
 .info-container .collapsible-block-folded a{
 color: #FFF;}
 .info-container .collapsible-block-unfolded-link a{
 color: #FFF;}
 
-.translation_block{
-display:none;}
+.info-container .collapsible-block-link, 
+.info-container:hover .collapsible-block-link {
+line-height: 1.6em;
+}
 [[/module]]
 @@@@
 @@@@
