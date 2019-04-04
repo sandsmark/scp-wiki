@@ -1,32 +1,32 @@
 title:SCP-4444
+[[include component:black-highlighter-theme-dev]]
 [[include :scp.avn.sh:component:aers:info-stuff
 |lang=en[!-- EN/RU/KO/CN/FR/PL/ES/TH/JP/DE/IT/UA/PTBR --]
-|page=SCP-4444[!-- url of your page on the scp wiki --]
+|page=scp-4760[!-- url of your page on the scp wiki --]
 |authorPage=http://www.scp-wiki.net/djkaktus[!-- link to your author page --]
-|comments=IMPORTANT INSIGHTS TO COME.
+|comments=N/A
 ]]
-[[include :kaktuskontainer:component:nuscp-dev]]
 [[module CSS]]
 sup { 
 vertical-align: top; position: relative; top: -0.5em; 
 }
-@media (max-width: 1635px) {
-   .desktop-only{ display: none !important; visibility:hidden }
-}
-
 :root{ 
 --cutColour: #fafafa;
 --barColour: #590505;
 }
+.translation_block{
+display:none;}
 
 .info-container .collapsible-block-folded a{
 color: #FFF;}
 .info-container .collapsible-block-unfolded-link a{
 color: #FFF;}
 
+.info-container .collapsible-block-link, 
+.info-container:hover .collapsible-block-link {
+line-height: 1.6em;
+}
 [[/module]]
-@@@@
-@@@@
 [[div class="desktop-only" style="height: auto; width: auto; overflow-y:auto; background:#ffffff ; position: fixed; left: 80%; TOP: 190px; display: block; border:solid 1px #444444; float:none; padding:10px; box-shadow: 1px 2px 3px 0px #23334c;"]]
 [[=]]
 [[size 120%]]**SCP-4444**[[/size]]
