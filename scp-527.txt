@@ -1,11 +1,11 @@
 title:SCP-527
+[[include component:black-highlighter-theme-dev]]
 [[include :scp.avn.sh:component:aers:info-stuff
 |lang=en[!-- EN/RU/KO/CN/FR/PL/ES/TH/JP/DE/IT/UA/PTBR --]
-|page=SCP-527[!-- url of your page on the scp wiki --]
+|page=scp-527[!-- url of your page on the scp wiki --]
 |authorPage=http://www.scp-wiki.net/djkaktus[!-- link to your author page --]
-|comments=
+|comments=N/A
 ]]
-[[include :kaktuskontainer:component:nuscp-dev]]
 [[module CSS]]
 sup { 
 vertical-align: top; position: relative; top: -0.5em; 
@@ -14,14 +14,18 @@ vertical-align: top; position: relative; top: -0.5em;
 --cutColour: #fafafa;
 --barColour: #590505;
 }
+.translation_block{
+display:none;}
 
 .info-container .collapsible-block-folded a{
 color: #FFF;}
 .info-container .collapsible-block-unfolded-link a{
 color: #FFF;}
 
-.translation_block{
-display:none;}
+.info-container .collapsible-block-link, 
+.info-container:hover .collapsible-block-link {
+line-height: 1.6em;
+}
 [[/module]]
 @@@@
 @@@@
