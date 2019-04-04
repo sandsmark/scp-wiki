@@ -18,6 +18,15 @@ title:SCP-4161
 color: #FFF;}
 .info-container .collapsible-block-unfolded-link a{
 color: #FFF;}
+
+#page-content > div:nth-child(17) > p:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+
+#page-content > div:nth-child(17) > p:nth-child(2) > iframe {
+    width: auto;
+}
 [[/module]]
 [[include :wanderers-library:component:black-highlighter-theme-dev]]
 [[include :scp-wiki:component:ch-scp-theme]]
