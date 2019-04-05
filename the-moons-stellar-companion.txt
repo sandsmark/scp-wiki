@@ -6,6 +6,11 @@ title:The Moon's Stellar Companion
 [[module css]]
 @import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou');
 
+#page-content {
+    font-size: 120%;
+}
+
+
 #page-content > p {
     padding: 0 2em;
 }
@@ -199,9 +204,9 @@ title:The Moon's Stellar Companion
 }
 
 .poem-font {
-    font-size: -webkit-calc(var(--base-font-size) * 1.1);
-    font-size: -moz-calc(var(--base-font-size) * 1.1);
-    font-size: calc(var(--base-font-size) * 1.1);
+    font-size: -webkit-calc(var(--base-font-size) * 1.2);
+    font-size: -moz-calc(var(--base-font-size) * 1.2);
+    font-size: calc(var(--base-font-size) * 1.2);
     font-family: var(--title-font);
     font-weight: 600;
 }
