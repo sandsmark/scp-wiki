@@ -20,6 +20,14 @@ This thing with which you can make simple CSS Theme. If you want to learn more w
 [[/div]]
 [[div class="unmargined" style="margin: 20px 0; font-size: 120%; font-weight: bold; color: #fff; text-shadow: 1px 2px 3px rgba(0,0,0,.25);"]]
 [[module Rate]]
+[[div]]
+[[include info:start-standalone]]
+= CSS Theme Preparation Tool
+Author: [[*user 7happy7]]
+Special thanks:
+[[*user Boyu12]], [[*user C-take]], [[*user Dr Devan]], [[*user Etinjat]], [[*user MrPines]], [[*user Nanimono Demonai]], [[*user physicslike]], [[*user Sekai_s]], [[*user shu_yabiyabi]], [[*user Zyn]]
+[[include info:end-standalone]]
+[[/div]]
 [[/div]]
 [[/div]]
 
@@ -2777,6 +2785,29 @@ div.sitemember {
     border: none!important;
     border-radius: 0;
     color: #b7a;
+}
+.unmargined .creditRate {
+    float: none;
+    margin: 0.5em 0 0!important;
+}
+.unmargined .creditButtonStandalone p a,
+.unmargined .creditButtonStandalone p a:hover {
+    border-radius: 0;
+    padding: 0em 0.5em;
+    color: #b7a;
+    text-align: center;
+    background: #fff;
+    box-shadow: 1px 1px 3px rgba(255,255,255,.5), -1px 1px 3px rgba(255,255,255,.5), -1px -1px 3px rgba(255,255,255,.5), 1px -1px 3px rgba(255,255,255,.5), 1px 1px 3px rgba(255,255,255,.5) inset, -1px 1px 3px rgba(255,255,255,.5) inset, -3px -1px 3px #fff inset, 3px -1px 3px #fff inset;
+}
+.unmargined .modalbox {
+    background: #f7a!important;
+}
+.unmargined .modalbox hr {
+    color: transparent;
+    background-color: #fff;
+}
+.unmargined .modalbox .credit {
+    text-align: left;
 }
 
 .unmargined a, .unmargined a:visited {
