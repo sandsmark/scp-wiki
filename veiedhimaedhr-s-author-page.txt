@@ -1,5 +1,34 @@
 title:Veiedhimaedhr's Author Page ES16
 [[module css]]
+.page {
+    display: block;
+    overflow: hidden;
+    font-family: "Monotype Corsiva", "Bradley Hand ITC", sans-serif;
+    font-style: normal;
+
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: linear-gradient(to top ,rgb(202, 219, 228) 0%, rgb(231, 233, 220) 8%);
+    background-origin: padding-box;
+    background-position: 0px 8px;
+    background-repeat: repeat;
+    background-size: 100% 20px;
+
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2)
+    }
+.page p {
+    line-height: 20px;
+    margin: 0;
+}
+[[/module]]
+
+[[module css]]
 .footnoteref{
 color: #FF5555;
 }
@@ -77,8 +106,22 @@ __##blue|Long Number and Letter Combinations Without Clinical Tone##__
 
 # http://www.scp-wiki.net/the-foundation-wants-a-robot-army
 
+[[div class="page"]]
+
+Document body here. You will need to use "@@ @@" on new lines to properly space text.
+@@ @@
+Like so.
+@@ @@
+You can use [[<]], [[=]], and [[>]] to align different lines/paragraphs to give proper feel. 
+@@ @@
 __Other Things__
 > http://www.scp-wiki.net/veiedhimaedhr-s-author-page
+
+
+[[>]]
+Enjoy.
+[[/>]]
+[[/div]]
 
 
 [[module ListPages limit="1" category="*" order="updated_at desc"]]
