@@ -10,22 +10,27 @@ margin-bottom:5px;
 }
 
 .pictures4mobile {
-    visibility: hidden;
+    height: 0px;
+    overflow: hidden;
 }
 
 .pictures4desk {
-    visibility: visible;
+    height: auto;
 }
-
 
 @media only screen and (max-width: 600px) {
 
+    .journal-logs {
+        margin: 0% 4% 0% 4%;
+    }
+
     .pictures4mobile {
-        visibility: visible;
+        height: auto;
     }
 
     .pictures4desk {
-        visibility: hidden;
+        height: 0px;
+        overflow: hidden;
     }
 
 }
