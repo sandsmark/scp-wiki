@@ -9,6 +9,27 @@ ul li {
 margin-bottom:5px;
 }
 
+.pictures4mobile {
+    visibility: hidden;
+}
+
+.pictures4desk {
+    visibility: visible;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .pictures4mobile {
+        visibility: visible;
+    }
+
+    .pictures4desk {
+        visibility: hidden;
+    }
+
+}
+
 [[/module]]
 
 ------
@@ -33,8 +54,13 @@ margin-bottom:5px;
 [[/table]]
 
 ------
+[[div class="pictures4desk"]]
+[[include component:image-block name=dead.jpg|width=250px|align=right|caption=Oldest known photograph of an SCP-4107 corpse.]]
+[[/div]]
 
-[[include component:image-block name=dead.jpg|width=250px|caption=Oldest known photograph of an SCP-4107 corpse.]]
+[[div class="pictures4mobile"]]
+[[include component:image-block name=dead.jpg|width=250px|align=center|caption=Oldest known photograph of an SCP-4107 corpse.]]
+[[/div]]
 
 **Special Containment Procedures:** Two dozen copies of SCP-4107 have been embalmed and displayed in Site-14 for further study and comparison with future iterations. Any additional occurrences of SCP-4107 that are discovered should be analyzed for unique features and incinerated if none are found. Personnel are to use standard counterintelligence procedures when procuring remains from law enforcement. 
 
