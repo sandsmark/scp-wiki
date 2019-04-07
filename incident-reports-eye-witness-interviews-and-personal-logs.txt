@@ -54,8 +54,8 @@ title:Incident Reports, Eye Witness Interviews, and Personal Logs
 [[tab Experiments]]
 + Experiments
 [[div class="section"]]
-[[module ListPages separate="no" tags="+experiment" order="created_atdsc" limit="250" prependLine="||~ Title ||~ Last Revision ||"]]
-|| %%title_linked%% || %%created_at|%b %e '%y%%@@    @@ ||
+[[module ListPages separate="no" tags="+experiment" order="updated_at desc" limit="250" prependLine="||~ Title ||~ Last Revision ||"]]
+|| %%title_linked%% || %%updated_at|%b %e '%y%%@@    @@ ||
 [[/module]]
 [[/div]]
 [[/tab]]
@@ -63,8 +63,8 @@ title:Incident Reports, Eye Witness Interviews, and Personal Logs
 [[tab Explorations]]
 + Explorations
 [[div class="section"]]
-[[module ListPages separate="no" tags="+exploration" order="created_atdsc" limit="250" prependLine="||~ Title ||~ Last Revision ||"]]
-|| %%title_linked%% || %%created_at|%b %e '%y%%@@    @@ ||
+[[module ListPages separate="no" tags="+exploration" order="updated_at desc" limit="250" prependLine="||~ Title ||~ Last Revision ||"]]
+|| %%title_linked%% || %%updated_at|%b %e '%y%%@@    @@ ||
 [[/module]]
 [[/div]]
 [[/tab]]
@@ -72,8 +72,8 @@ title:Incident Reports, Eye Witness Interviews, and Personal Logs
 [[tab Incidents]]
 + Incidents
 [[div class="section"]]
-[[module ListPages separate="no" tags="+incident" order="created_atdsc" limit="250" prependLine="||~ Title ||~ Last Revision ||"]]
-|| %%title_linked%% || %%created_at|%b %e '%y%%@@    @@ ||
+[[module ListPages separate="no" tags="+incident" order="updated_at desc" limit="250" prependLine="||~ Title ||~ Last Revision ||"]]
+|| %%title_linked%% || %%updated_at|%b %e '%y%%@@    @@ ||
 [[/module]]
 [[/div]]
 [[/tab]]
@@ -81,8 +81,8 @@ title:Incident Reports, Eye Witness Interviews, and Personal Logs
 [[tab Interviews]]
 + Interviews
 [[div class="section"]]
-[[module ListPages separate="no" tags="+interview" order="created_atdsc" limit="250" prependLine="||~ Title ||~ Last Revision ||"]]
-|| %%title_linked%% || %%created_at|%b %e '%y%%@@    @@ ||
+[[module ListPages separate="no" tags="+interview" order="updated_at desc" limit="250" prependLine="||~ Title ||~ Last Revision ||"]]
+|| %%title_linked%% || %%updated_at|%b %e '%y%%@@    @@ ||
 [[/module]]
 [[/div]]
 [[/tab]]
@@ -90,8 +90,8 @@ title:Incident Reports, Eye Witness Interviews, and Personal Logs
 [[tab Supplements]]
 + Stand-Alone Supplements
 [[div class="section"]]
-[[module ListPages separate="no" tags="+supplement, -experiment, -exploration, -incident, -interview" order="created_atdsc" limit="250" prependLine="||~ Title ||~ Last Revision ||"]]
-|| %%title_linked%% || %%created_at|%b %e '%y%%@@    @@ ||
+[[module ListPages separate="no" tags="+supplement, -experiment, -exploration, -incident, -interview" order="updated_at desc" limit="250" prependLine="||~ Title ||~ Last Revision ||"]]
+|| %%title_linked%% || %%updated_at|%b %e '%y%%@@    @@ ||
 [[/module]]
 [[/div]]
 [[/tab]]
