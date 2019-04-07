@@ -1,44 +1,99 @@
 title:Incident Reports, Eye Witness Interviews, and Personal Logs
+[[module css]]
+.section {
+    background: linear-gradient(to bottom, #eee 0%, #eee 50%, #f7f7f7 50%, #f7f7f7 100%);
+    border: 1px solid #888;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;}
+.section > p {
+    display: none;}
+.section h3 {
+    display: inline-block;
+    float: left;
+    padding-left: 0.7em;
+    margin-top: none;
+    margin-bottom: none;
+    font-size: 1.4em;
+    font-weight: bolder;
+    color: #901;}
+.section > a {
+    float: left;
+    font-size: 1.4em;
+    font-weight: bolder;
+    padding-right: 0.7em;
+    margin-top: 0.5em;}
+.section table {
+    width: 100%;}
+.section table td, .section table th {
+    border: none;}
+.section table *:first-child {
+    text-align: left;}
+.section table *:last-child {
+    text-align: center;}
+.section table td:first-child, .section table th:first-child {
+    font-weight: bold;}
+.section table tr{
+    background: #fff;
+    border-bottom: 1px dashed #888;}
+.section table tr:first-child {
+    border-bottom: 1px solid #888;}
+.section table tr:last-child {
+    border-bottom: none;}
+.section table tr:last-child{
+      background: linear-gradient(#fff, #f7f7f7);}
+.section table td:last-child {
+    width:8.75em;
+    text-align: right;
+    background-color:#f7f7f7;}
+[[/module]]
+
+
 [[tabview]]
 
 [[tab Experiments]]
 + Experiments
-
-[[module ListPages separate="no" tags="experiment" order="created_atdsc" limit="250"]] 
-* %%title_linked%%
+[[div class="section"]]
+[[module ListPages separate="no" tags="experiment" order="created_atdsc" limit="250" prependLine="||~ Title ||~ Last Revision ||"]]
+|| %%title_linked%% || %%created_at|%b %e '%y%%@@    @@ ||
 [[/module]]
+[[/div]]
 [[/tab]]
 
 [[tab Explorations]]
 + Explorations
-
-[[module ListPages separate="no" tags="exploration" order="created_atdsc" limit="250"]] 
-* %%title_linked%%
+[[div class="section"]]
+[[module ListPages separate="no" tags="exploration" order="created_atdsc" limit="250" prependLine="||~ Title ||~ Last Revision ||"]]
+|| %%title_linked%% || %%created_at|%b %e '%y%%@@    @@ ||
 [[/module]]
+[[/div]]
 [[/tab]]
 
 [[tab Incidents]]
 + Incidents
-
-[[module ListPages separate="no" tags="incident" order="created_atdsc" limit="250"]] 
-* %%title_linked%%
+[[div class="section"]]
+[[module ListPages separate="no" tags="incident" order="created_atdsc" limit="250" prependLine="||~ Title ||~ Last Revision ||"]]
+|| %%title_linked%% || %%created_at|%b %e '%y%%@@    @@ ||
 [[/module]]
+[[/div]]
 [[/tab]]
 
 [[tab Interviews]]
 + Interviews
-
-[[module ListPages separate="no" tags="interview" order="created_atdsc" limit="250"]] 
-* %%title_linked%%
+[[div class="section"]]
+[[module ListPages separate="no" tags="interview" order="created_atdsc" limit="250" prependLine="||~ Title ||~ Last Revision ||"]]
+|| %%title_linked%% || %%created_at|%b %e '%y%%@@    @@ ||
 [[/module]]
+[[/div]]
 [[/tab]]
 
 [[tab Supplements]]
 + Stand-Alone Supplements
-
-[[module ListPages separate="no" tags="supplement, -experiment, -exploration, -incident, -interview" order="created_atdsc" limit="250"]] 
-* %%title_linked%%
+[[div class="section"]]
+[[module ListPages separate="no" tags="supplement, -experiment, -exploration, -incident, -interview" order="created_atdsc" limit="250" prependLine="||~ Title ||~ Last Revision ||"]]
+|| %%title_linked%% || %%created_at|%b %e '%y%%@@    @@ ||
 [[/module]]
+[[/div]]
 [[/tab]]
 
 [[/tabview]]
