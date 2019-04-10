@@ -9,7 +9,7 @@ parent:broken-masquerade-hub
 
 a.collapsible-block-link { font-weight: bold; }
 
-div.terminal{
+.terminal{
     width: @display-width;
     height: @display-height;
     border: 1px solid black;
@@ -29,7 +29,7 @@ div.terminal{
     padding-bottom: 15px !important;
 }
 
-div.scanline{
+.scanline{
     margin-top: -40%;
     width: @display-width;
     height: 60px;
@@ -40,7 +40,7 @@ div.scanline{
     background: linear-gradient(to bottom, rgba(56, 56, 82,0), rgba(56, 56, 112,0.1)) !important;
 }
 
-div.text{
+.text{
     color: rgba(255,255,255,0.8);
     padding-top: 34%;
     padding-left: 3rem;
@@ -55,7 +55,7 @@ div.text{
 }
 /* flags */
 
-div.log {
+.log {
   float: center; 
   border: gray 1px; 
   padding: 7px; 
@@ -103,6 +103,14 @@ div.log {
 .spangles {
   color: #ffffff;
   background: #000000;
+}
+
+.lite-header hr{
+    width: 45%;
+    margin: auto;
+    background-color: #e6e6e6;
+    border: none;
+    height: 2px;
 }
 
 /*
@@ -205,7 +213,8 @@ display:none;
 [[/collapsible]]
 [[/div]]
 @@ @@
-----
+@@ @@
+@@ @@
 [[table style="width: 80%; font-family: Helvetica Neue,Helvetica,Arial,sans-serif; margin: 0 auto;"]]
 [[row]]
 [[cell]]
@@ -268,11 +277,16 @@ Moosphere ectoentropically generates 31% of its flagship product, Mind-Milk™, 
 [[/collapsible]]
 [[/div]]
 @@ @@
+[[div class="lite-header"]]
 ----
+[[/div]]
 [[=]]
-++++ Addendum 3739.1 -- Experimentation Log
+++ Addendum 3739.1
++++ ##darkred|EXPERIMENTATION LOG##
 [[/=]]
+[[div class="lite-header"]]
 ----
+[[/div]]
 @@ @@
 Site-82's Memetics Research Group C mail-ordered Moosphere company products for testing. Researchers selected Chocolate Mind-Milk™ due to its popularity and unique production process. Testing occurred with the goal of understanding Moosphere's use of literary archetypes in marketing, manufacturing, and product sales.
 
@@ -293,11 +307,16 @@ Within 2 to 5 business days, each of the researchers encountered the following a
 ||~ Moosphere expression||{{N/A}}||
 ||~ Moosphere manifestation||Researcher Mathias dreamt of a biblical flood sending tsunamis of milk into population centers. Upon reporting the motif to the phone line, an automated voice said "Please hold" before expelling milk from the receiver at 1 L/min. This ended after 5 minutes, when Mathias severed the phone line. Dream aligns with designated MK-Class "Spilled Milk" Scenario on the catastrophe classification list.||
 @@ @@
+[[div class="lite-header"]]
 ----
+[[/div]]
 [[=]]
-++++ Addendum 3739.2 -- History, Discovery, and Recovery
+++ Addendum 3739.2
++++ ##darkred|HISTORY, DISCOVERY, AND RECOVERY##
 [[/=]]
+[[div class="lite-header"]]
 ----
+[[/div]]
 @@ @@
 [[include component:image-block name=aswan-low-dam.png|caption=Aswan Low Dam c. 1906]]
 
@@ -491,11 +510,16 @@ The current whereabouts of Agents Smith and Wollensky are unknown.
 [[/collapsible]]
 [[/div]]
 @@ @@
+[[div class="lite-header"]]
 ----
+[[/div]]
 [[=]]
-++++ Addendum 3739.3 -- Initial Interview
+++ Addendum 3739.3
++++ ##darkred|INITIAL INTERVIEW##
 [[/=]]
+[[div class="lite-header"]]
 ----
+[[/div]]
 @@ @@
 [[div style="background-color: #1F083A; text-align: center;"]]
 [[div class="log"]]
@@ -596,11 +620,16 @@ The current whereabouts of Agents Smith and Wollensky are unknown.
 [[/div]]
 [[/div]]
 @@ @@
+[[div class="lite-header"]]
 ----
+[[/div]]
 [[=]]
-++++ Addendum 3739.4 -- Exploration Log
+++ Addendum 3739.4
++++ ##darkred|EXPLORATION LOG##
 [[/=]]
+[[div class="lite-header"]]
 ----
+[[/div]]
 @@ @@
 [[div style="background-color: #1F083A; text-align: center;"]]
 [[div class="log"]]
@@ -706,7 +735,7 @@ Near the end of the footage, η-2 emerges naked and is marked with a disembodied
 [[/div]]
 [[/div]]
 @@ @@
-------
+@@ @@
 @@ @@
 [[div class="blockM"]]
 [[==]]
