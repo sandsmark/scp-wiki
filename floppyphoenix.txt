@@ -2,7 +2,7 @@ title:FloppyPhoenix's Author Page
 [[include component:pataphysics-theme]]
 
 [[module CSS]]
-/* for tabs */
+/* TABS */
 .yui-navset .yui-nav,
 .yui-navset .yui-navset-top .yui-nav {
     border-color:#ffffff; /* color between tab list and content */
@@ -51,8 +51,27 @@ border-color: #ffffff;
     border-left-color: #b7a9a9; /* different border color */
 }
 
-/* listpages exception */
+/* LISTPAGES EXCEPTION */
 .preview .span, .infobox { display: none !important; }
+
+/* DIV BLOCKS */
+.interview {
+    display: inline-block; 
+    border: dashed 1px #999999; 
+    background:#F5F5F5; 
+    width: 85%; 
+    padding: 0 12px; 
+    margin: auto;
+}
+
+.header {
+    display: inline-block; 
+    border: solid 1px #999999; 
+    background: #FFC0CB; 
+    padding: 0 5px; 
+    margin-bottom: 10px; 
+    margin: auto;
+}
 
 #page-title {
   display: none;
@@ -64,6 +83,7 @@ border-color: #ffffff;
 [[/=]]
 ----
 [[div style="text-align: center;"]]
+
 [[<]]
 > {{Opening Person of Interest File #9731}}. . .
 [[/<]]
@@ -75,7 +95,7 @@ border-color: #ffffff;
 || (**##green|Y##**) / {{N}} ||
 
 [[module ListUsers users="."]]
-[[div style="display: inline-block; border: dashed 1px #999999; background:#F5F5F5; width: 85%; padding: 12px; margin: auto;"]]
+[[div class="interview"]]
 ----
 = **INTERVIEW LOG**
 ----
@@ -115,7 +135,7 @@ border-color: #ffffff;
 [[/<]]
 [[/div]]
 
-[[div style="display: inline-block; border: solid 1px #999999; background: #FFC0CB; padding: 5px; margin-bottom: 10px; margin: auto;"]]
+[[div class="header"]]
 [[=]]
 ++++ --coolpage funpage--
 
@@ -161,7 +181,7 @@ Ah, they're gone. Anyway, //apparently//, this is the place where I get to show 
 [[tab Articles]]
 [[div style="display: inline-block; border: solid 1px #444444; background: #ffffff; float: top; width: 96.5%; padding: 10px; box-shadow: 1px 2px 2px 0 grey;"]]
 [[=]]
-+++ **Articles** 
++++ **Floppy's Articles** 
 ++++++ I write things, depending on how you define "write" and "things".
 [[/=]]
 **Floppy Says:** In the spirit of collaboration, I grant any writer, artist, or otherwise, full permission to use or depict the SCPs, concepts, characters, task forces, locations, or events created by me in your own SCP Wiki work. Drop a link my way; maybe I'll like it, or give you some pointers on how to execute it best!
@@ -176,7 +196,7 @@ Ah, they're gone. Anyway, //apparently//, this is the place where I get to show 
 [[include component:author-page-collab
   name=SCP-3309 |
   written_by=FloppyPhoenix, PhamtomGuy |
-  note=Uses the cool and new Pataphysics Department CSS by myself, as well as the Pataphysics Logo by TSATPWTCOTTTADC & Woedenaz! |
+  note=Uses the cool and new Pataphysics Department CSS by myself, as well as the Pataphysics Logo by TSATPWTCOTTTADC and Woedenaz! |
   background=no |
   image=no | 
 ]]
@@ -199,9 +219,11 @@ Ah, they're gone. Anyway, //apparently//, this is the place where I get to show 
 
 ++++++ *Team Bird is not_a_seagull, FloppyPhoenix, Dr Aers, and Quantum Physician
 [[/div]]
-= --
+
 [[/tab]]
-[[tab Author Commentary]]
+
+[[tab Commentary]]
+
 [[div style="display: inline-block; border: solid 1px #444444; background: #ffffff; float: top; width: 96.5%; padding: 10px; box-shadow: 1px 2px 2px 0 grey;"]]
 [[=]]
 +++ **Author Commentary**
@@ -237,10 +259,6 @@ This article has a lot of things packed into it, including an explanation for wh
 
 **Commentary:** SCP-3787 is my 2nd SCP, written in February of 2018. It took me a very long time to come up with a second article. 3787 is the most ambitious article I've written and was dubbed the "001 of Horse Anomalies" when I was pitching it to people. As with 2641, I'm unhappy with how I executed some things here as well, but I do plan on giving the article an overhaul --when I'm not lazy-- in the near future. If you find that this article reads like I threw a bunch of horse anomalies into a blender, then I assure you: Mary Shelley's Horsenstein is //precisely// what I was looking for. Totally. I promise.
 
-**Fan Art:** 
-**[http://scp-wiki.wdfiles.com/local--files/pastarasta1-s-simply-epic-artpage/horse Beware the horse people!]** by **[[[pastarasta1-s-simply-epic-artpage|pastarasta1]]]**
-[[/collapsible]]
-
 ----
 
 [[span style="font-family:Times New Roman; font-size:125%;"]][[[SCP-3719|SCP-#: ●●●|●●●●●●●|●|●●●●●●●●● - Your Friendly Neighbourhood Lawnmower]]][[/span]]
@@ -260,7 +278,7 @@ This article has a lot of things packed into it, including an explanation for wh
 
 **Commentary:** SCP-3309 is my 4th SCP and first collab. I co-wrote it with [[*user PhamtomGuy]] in April of 2018. This is the most meta article I've ever written, and probably will ever write. It's also a major format screw.
 
-3309 is a bit of a strange article for me. I'm not exactly a fan of meta articles myself, unless they're done competently. But I don't actually think the work I put into 3309 is enough to consider it a well done meta article. 3309 is an ambitious story and an ambitious story requires ambitious writing. I do believe I put in decent writing, but not enough to allow for all of its parts to flow smoothly. Suffice to say, I don't think there's enough there for me to be satisfied with my writing. Perhaps it's the concept itself that needs work, perhaps there is too much reliance on a gimmick; perhaps it's both of these things.
+3309 is a bit of a strange article for me. I'm not exactly a fan of meta articles myself, unless they're done competently. But I don't actually think the work I put into 3309 is enough to consider it a well-done meta article. 3309 is an ambitious story and an ambitious story requires ambitious writing. I do believe I put in decent writing, but not enough to allow for all of its parts to flow smoothly. Suffice to say, I don't think there's enough there for me to be satisfied with my writing. Perhaps it's the concept itself that needs work, perhaps there is too much reliance on a gimmick; perhaps it's both of these things.
 
 Of course, as a collaborative article, there comes a point where both parties have to agree to take the middle path and be happy with the work they've put in, respective of one another's writing ability. To my co-writer it may seem as though we kept this article on the burner for long enough and that it needed to be posted, and the votes certainly seem to display a job well done (note: I don't necessarily believe that votes = a good article, either. 3309 is //very// controversial, especially among writers). But there will always be something in me that isn't happy with the work I put in, and I suppose that might never change.
 
@@ -330,12 +348,14 @@ Other things:
 * [[[umbral-migratory-sequence|UMBRAL_MIGRATORY_SEQUENCE.txt]]]
 [[/collapsible]]
 [[/div]]
-= --
+
 [[/tab]]
+
 [[tab Translations]]
+
 [[div style="display: inline-block; border: solid 1px #444444; background: #ffffff; float: top; width: 96.5%; padding: 10px; box-shadow: 1px 2px 2px 0 grey;"]]
 [[=]]
-+++ **Translations**
++++ **Page Translations**
 ++++++ Cool people doing cool translations.
 [[/=]]
 ----
@@ -405,11 +425,12 @@ CTapbIu_XyJIuraH]]**
 
 * **[[[The Sacred Djehuti]]]**
  * **[http://lafundacionscp.wikidot.com/the-sacred-djehuti Spanish Translation]** by **[[*user morhadow]]**
-
 [[/div]]
-= --
+
 [[/tab]]
+
 [[tab Writing Style]]
+
 [[div style="display: inline-block; border: solid 1px #444444; background: #ffffff; float: top; width: 96.5%; padding: 10px; box-shadow: 1px 2px 2px 0 grey;"]]
 [[=]]
 +++ **Writing Style and Themes** 
@@ -427,9 +448,11 @@ Final thoughts: my favourite SCP is [[[SCP-2747]]], and all my stories revolve a
 = **[http://scpdsandbox.wikidot.com/lt-flop-s-sandbox Sandbox 1]**
 = **[http://topia.wikidot.com/floppy-hub Sandbox 2]**
 [[/div]]
-= --
+
 [[/tab]]
+
 [[tab Declassifications]]
+
 [[div style="display: inline-block; border: solid 1px #444444; background: #ffffff; float: top; width: 96.5%; padding: 10px; box-shadow: 1px 2px 2px 0 grey;"]]
 [[=]]
 +++ **Declassifications** 
@@ -438,9 +461,11 @@ Final thoughts: my favourite SCP is [[[SCP-2747]]], and all my stories revolve a
 ----
 * **[https://www.reddit.com/r/SCPDeclassified/comments/84zc9e/scp3980_blind_lead_the_blind/?utm_content=title&utm_medium=hot&utm_source=reddit&utm_name=SCPDeclassified Declassification of Shaggydredlocks' SCP-3980 - Blind Lead the Blind]**
 [[/div]]
-= --
+
 [[/tab]]
-[[tab Tech Team Stuff]]
+
+[[tab Tech Stuff]]
+
 [[div style="display: inline-block; border: solid 1px #444444; background: #ffffff; float: top; width: 96.5%; padding: 10px; box-shadow: 1px 2px 2px 0 grey;"]]
 [[=]]
 +++ **Tech Team Stuff** 
@@ -492,8 +517,12 @@ Final thoughts: my favourite SCP is [[[SCP-2747]]], and all my stories revolve a
 [[/collapsible]]
 [[/div]]
 [[/tab]]
+
 [[/tabview]]
-[[div style="border:solid 1px #999999; background:#FFC0CB; padding:5px; margin-bottom: 10px;"]]
+
+= --
+
+[[div class="header"]]
 [[=]]
 
 ++++ --Inebriation-- Inoculation complete. Thanks for reading!
