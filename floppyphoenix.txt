@@ -68,9 +68,19 @@ border-color: #ffffff;
     display: inline-block; 
     border: solid 1px #999999; 
     background: #FFC0CB; 
+    width: 100%;
     padding: 0 5px; 
     margin-bottom: 10px; 
     margin: auto;
+}
+
+.tab {
+    display: inline-block; 
+    border: solid 1px #444444; 
+    background: #ffffff; 
+    float: top; width: 95%;
+    padding: 0 10px; 
+    box-shadow: 1px 2px 2px 0 grey;
 }
 
 #page-title {
@@ -179,7 +189,8 @@ Ah, they're gone. Anyway, //apparently//, this is the place where I get to show 
 @@ @@
 [[tabview]]
 [[tab Articles]]
-[[div style="display: inline-block; border: solid 1px #444444; background: #ffffff; float: top; width: 96.5%; padding: 10px; box-shadow: 1px 2px 2px 0 grey;"]]
+
+[[div class="tab"]]
 [[=]]
 +++ **Floppy's Articles** 
 ++++++ I write things, depending on how you define "write" and "things".
@@ -224,7 +235,7 @@ Ah, they're gone. Anyway, //apparently//, this is the place where I get to show 
 
 [[tab Commentary]]
 
-[[div style="display: inline-block; border: solid 1px #444444; background: #ffffff; float: top; width: 96.5%; padding: 10px; box-shadow: 1px 2px 2px 0 grey;"]]
+[[div class="tab"]]
 [[=]]
 +++ **Author Commentary**
 ++++++ Out of date!
@@ -353,7 +364,7 @@ Other things:
 
 [[tab Translations]]
 
-[[div style="display: inline-block; border: solid 1px #444444; background: #ffffff; float: top; width: 96.5%; padding: 10px; box-shadow: 1px 2px 2px 0 grey;"]]
+[[div class="tab"]]
 [[=]]
 +++ **Page Translations**
 ++++++ Cool people doing cool translations.
@@ -429,9 +440,31 @@ CTapbIu_XyJIuraH]]**
 
 [[/tab]]
 
+[[tab Fan Art]]
+
+[[div class="tab"]]
+[[=]]
++++ **Fan Art** 
+++++++ Beautiful fan renditions!
+[[/=]]
+----
++++++ [[[SCP-3787]]]
+* **[https://imgur.com/2McPrdG Glue Factory]** by **[[*user pastarasta1]]
+* **[https://www.deviantart.com/sunnyclockwork/art/SCP-3787-793333675 Horse Meme]** by [[*user SunnyClockwork]]
+
++++++ [[[SCP-3309]]]
+* **[https://www.deviantart.com/sunnyclockwork/art/SCP-3309-788150972 Where We Go When We Fade, Fade Away]** by **[[*user SunnyClockwork]]
+
++++++ [[[SCP-3739]]]
+* **[https://cdn.discordapp.com/attachments/522789244406595584/538113492176207872/20190124_154900.jpg Moosphere Medley]** by **[[*user Dramps]]
+* **[https://cdn.discordapp.com/attachments/526584173180485642/537833115234861077/image0.png D-1711, Experimentation Log]** by **[[*user pastarasta1]] 
+[[/div]]
+
+[[/tab]]
+
 [[tab Writing Style]]
 
-[[div style="display: inline-block; border: solid 1px #444444; background: #ffffff; float: top; width: 96.5%; padding: 10px; box-shadow: 1px 2px 2px 0 grey;"]]
+[[div class="tab"]]
 [[=]]
 +++ **Writing Style and Themes** 
 ++++++ Ugh, this gushy stuff is always so dramatic.
@@ -453,7 +486,7 @@ Final thoughts: my favourite SCP is [[[SCP-2747]]], and all my stories revolve a
 
 [[tab Declassifications]]
 
-[[div style="display: inline-block; border: solid 1px #444444; background: #ffffff; float: top; width: 96.5%; padding: 10px; box-shadow: 1px 2px 2px 0 grey;"]]
+[[div class="tab"]]
 [[=]]
 +++ **Declassifications** 
 ++++++ Does anyone read these little blurbs?
@@ -466,7 +499,7 @@ Final thoughts: my favourite SCP is [[[SCP-2747]]], and all my stories revolve a
 
 [[tab Tech Stuff]]
 
-[[div style="display: inline-block; border: solid 1px #444444; background: #ffffff; float: top; width: 96.5%; padding: 10px; box-shadow: 1px 2px 2px 0 grey;"]]
+[[div class="tab"]]
 [[=]]
 +++ **Tech Team Stuff** 
 [[/=]]
