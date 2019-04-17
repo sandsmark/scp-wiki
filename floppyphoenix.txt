@@ -521,11 +521,20 @@ Final thoughts: my favourite SCP is [[[SCP-2747]]], and all my stories revolve a
 +++ **Tech Team Stuff** 
 [[/=]]
 ----
-[[collapsible show="> INT GOI Contest"]]
+[[collapsible show="> INT GOI Contest - Earliest to Latest"]]
 [[=]]
-++++ INT GOI Contest Entries
+++++ INT GOI Contest Entries - Earliest to Latest
 [[/=]]
 [[module ListPages category="." separate="no" tags="+goi2019" perPage="100" order="created_at"]]
+||%%title_linked%%||[[user %%created_by%%]]||%%rating%%||%%created_at%%||
+[[/module]]
+[[/collapsible]]
+
+[[collapsible show="> INT GOI Contest - Rating"]]
+[[=]]
+++++ INT GOI Contest Entries - Rating
+[[/=]]
+[[module ListPages category="." separate="no" tags="+goi2019" perPage="100" order="rating desc"]]
 ||%%title_linked%%||[[user %%created_by%%]]||%%rating%%||%%created_at%%||
 [[/module]]
 [[/collapsible]]
