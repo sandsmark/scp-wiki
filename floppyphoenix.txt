@@ -2,55 +2,6 @@ title:FloppyPhoenix's Author Page
 [[include component:pataphysics-theme]]
 
 [[module CSS]]
-/* TABS */
-.yui-navset .yui-nav,
-.yui-navset .yui-navset-top .yui-nav {
-    border-color:#ffffff; /* color between tab list and content */
-}
- 
-.yui-navset .yui-nav a,
-.yui-navset .yui-navset-top .yui-nav a {
-    background-color:#ffffff ! important; /* tab background */
-    border-color:#ffffff;
-    color:#000000;
-    transition: 0.125s;
-}
- 
-.yui-navset .yui-nav a em {
-background-color: #ffffff;
-box-shadow: 0px 1px 2px rgba(0,0,0,0.7);
-border-color: #ffffff;
-}
- 
-.yui-navset .yui-nav .selected a,
-.yui-navset .yui-nav .selected a:focus,
-.yui-navset .yui-nav .selected a:hover {
-    background-image: none;
-    background-color: #ffffff; /* selected tab background */
-    color:black;
-}
- 
-.yui-navset .yui-nav .selected a,
-.yui-navset .yui-nav .selected a em {
-    border-color: transparent;
-    box-shadow: 0px 1px 2px rgba(0,0,0,0.5);
- background-color: #ffffff;
-}
- 
-.yui-navset .yui-content {
-    background-color: #ffffff; /* content background color */
-}
- 
-.yui-navset .yui-content,
-.yui-navset .yui-navset-top .yui-content {
-    border-color: #ffffff; /* content border */
-    border-top-color:#ffffff; /* different border color */
-}
- 
-.yui-navset-left .yui-content {
-    border-left-color: #b7a9a9; /* different border color */
-}
-
 /* LISTPAGES EXCEPTION */
 .preview .span, .infobox { display: none !important; }
 
@@ -72,15 +23,6 @@ border-color: #ffffff;
     padding: 0 5px; 
     margin-bottom: 10px; 
     margin: auto;
-}
-
-.tab {
-    display: inline-block; 
-    border: solid 1px #444444; 
-    background: #ffffff; 
-    float: top; width: 95%;
-    padding: 10px 10px; 
-    box-shadow: 1px 2px 2px 0 grey;
 }
 
 #page-title {
@@ -189,8 +131,6 @@ Ah, they're gone. Anyway, //apparently//, this is the place where I get to show 
 @@ @@
 [[tabview]]
 [[tab Articles]]
-
-[[div class="tab"]]
 [[=]]
 +++ **Floppy's Articles** 
 ++++++ I write things, depending on how you define "write" and "things".
@@ -245,13 +185,9 @@ Ah, they're gone. Anyway, //apparently//, this is the place where I get to show 
 ]]
 
 ++++++ *Team Bird is not_a_seagull, FloppyPhoenix, Dr Aers, and Quantum Physician
-[[/div]]
-
 [[/tab]]
 
 [[tab Commentary]]
-
-[[div class="tab"]]
 [[=]]
 +++ **Author Commentary**
 ++++++ Out of date!
@@ -374,13 +310,9 @@ Other things:
 * [[[bird|Team Bird Hub]]]
 * [[[umbral-migratory-sequence|UMBRAL_MIGRATORY_SEQUENCE.txt]]]
 [[/collapsible]]
-[[/div]]
-
 [[/tab]]
 
 [[tab Translations]]
-
-[[div class="tab"]]
 [[=]]
 +++ **Page Translations**
 ++++++ Cool people doing cool translations.
@@ -458,13 +390,9 @@ CTapbIu_XyJIuraH]]**
 
 * **[[[The Sacred Djehuti]]]**
  * **[http://lafundacionscp.wikidot.com/the-sacred-djehuti Spanish Translation]** by **[[*user morhadow]]**
-[[/div]]
-
 [[/tab]]
 
 [[tab Fan Art]]
-
-[[div class="tab"]]
 [[=]]
 +++ **Fan Art** 
 ++++++ Beautiful fan renditions!
@@ -480,13 +408,9 @@ CTapbIu_XyJIuraH]]**
 +++++ [[[SCP-3739]]]
 * **[https://cdn.discordapp.com/attachments/522789244406595584/538113492176207872/20190124_154900.jpg Moosphere Medley]** by **[[*user Dramps]]**
 * **[https://cdn.discordapp.com/attachments/526584173180485642/537833115234861077/image0.png D-1711, Experimentation Log]** by **[[*user pastarasta1]]** 
-[[/div]]
-
 [[/tab]]
 
 [[tab Writing Style]]
-
-[[div class="tab"]]
 [[=]]
 +++ **Writing Style and Themes** 
 ++++++ Ugh, this gushy stuff is always so dramatic.
@@ -502,26 +426,18 @@ Final thoughts: my favourite SCP is [[[SCP-2747]]], and all my stories revolve a
 
 = **[http://scpdsandbox.wikidot.com/lt-flop-s-sandbox Sandbox 1]**
 = **[http://topia.wikidot.com/floppy-hub Sandbox 2]**
-[[/div]]
-
 [[/tab]]
 
 [[tab Declassifications]]
-
-[[div class="tab"]]
 [[=]]
 +++ **Declassifications** 
 ++++++ Does anyone read these little blurbs?
 [[/=]]
 ----
 * **[https://www.reddit.com/r/SCPDeclassified/comments/84zc9e/scp3980_blind_lead_the_blind/?utm_content=title&utm_medium=hot&utm_source=reddit&utm_name=SCPDeclassified Declassification of Shaggydredlocks' SCP-3980 - Blind Lead the Blind]**
-[[/div]]
-
 [[/tab]]
 
 [[tab Tech Stuff]]
-
-[[div class="tab"]]
 [[=]]
 +++ **Tech Team Stuff** 
 [[/=]]
@@ -552,9 +468,7 @@ Final thoughts: my favourite SCP is [[[SCP-2747]]], and all my stories revolve a
 ||%%title_linked%%||[[user %%created_by%%]]||%%rating%%||%%created_at%%||
 [[/module]]
 [[/collapsible]]
-[[/div]]
 [[/tab]]
-
 [[/tabview]]
 
 = --
