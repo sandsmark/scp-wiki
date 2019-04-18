@@ -1,0 +1,782 @@
+title:SCP-4522
+[[include component:black-highlighter-theme-dev]]
+[[include :scp-wiki:component:ch-scp-theme]]
+
+[[module css]]
+[id*="toc"] {
+    text-align: center;
+}
+
+#page-content > br:first-of-type {
+    display: none;
+}
+
+.center-header {
+    font-size: 125%;
+    font-family: var(--title-font);
+    font-weight: 900;
+    display: flex;
+    height: auto;
+    text-align: center;
+    background-color: rgb(var(--bright-accent));
+    background-image: url(http://www.scp-wiki.net/local--files/component:ch-scp-theme/subtle_white_mini_waves.png);
+    background-blend-mode: screen;
+    color: rgb(var(--white-monochrome));
+    padding: 0.25em;
+    justify-content: center;
+    align-items: center;
+}
+
+.scp-image-block.block-right {
+    margin: -3em 0 1em 2em;
+}
+
+.scp-image-block.block-left {
+    margin: 2em 2em 1em 1em;
+}
+
+.scp-image-block img {
+    min-width: 100%;
+    border: 0.5rem solid rgba(var(--pale-gray-monochrome));
+    box-sizing: border-box;
+}
+
+div.notebox {
+    width: 90%;
+    margin: 0 auto;
+    background: rgba(var(--white-monochrome),0.15);
+    text-align: center;
+    border: 0.0625rem dashed rgb(var(--dark-accent));
+    padding: 1em;
+    font-size: 90%;
+}
+
+div.discbox [id*="toc"] {
+    text-align: center;
+    background: rgb(var(--bright-accent));
+    color: rgb(var(--white-monochrome));
+    margin-top: 0;
+    background-image: url(http://www.scp-wiki.net/local--files/component:ch-scp-theme/subtle_white_mini_waves.png);
+    background-blend-mode: screen;
+}
+
+div.discbox [id*="toc"] a[id*="footnoteref"] {
+    color: rgb(var(--white-monochrome));
+    font-size: 80%;
+}
+
+div.discbox {
+    border: 0.25rem solid rgb(var(--bright-accent));
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+div.notebox *,
+div.discbox * {
+    box-sizing: border-box;
+}
+
+/* Report Code */
+
+div.fnd_report,
+div.fnd_testing,
+div.fnd_chreport {
+    border: 0.125rem dotted rgba(var(--gray-monochrome),0.5);
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(var(--gray-monochrome),0.06);
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+div.fnd_chreport {
+    background: url("http://kontainer.djkakt.us/local--files/woed-peach-draft/scpchlogo_invsm.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: left 0.5rem top 0.5rem;
+    border-radius: 0;
+}
+
+div.fnd_report::before,
+div.fnd_testing::before,
+div.fnd_chreport::before  {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("http://www.scp-wiki.net/local--files/component:ch-scp-theme/subtle_white_mini_waves.png");
+    z-index: 1;
+    pointer-events: none;
+    mix-blend-mode: screen;
+}
+
+div.fnd_report,
+div.fnd_report *,
+div.fnd_testing,
+div.fnd_testing *,
+div.fnd_chreport,
+div.fnd_chreport * {
+    box-sizing: border-box;
+}
+
+
+div.fnd_report div.header,
+div.fnd_report div.footer,
+div.fnd_testing div.header,
+div.fnd_chreport div.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    font-family: var(--header-font);
+    font-size: 150%;
+    font-weight: 500;
+    border-bottom: 0.125rem dotted rgba(var(--gray-monochrome),0.5);
+    width: 100%;
+    background: rgba(var(--bright-accent),0.25);
+    background-image: url(http://kontainer.djkakt.us/local--files/woed-peach-draft/IJAMEA_10.png);
+    background-size: cover;
+    text-align: center;
+    line-height: 100%;
+}
+
+div.fnd_chreport div.header {
+    background-image: initial;
+    background: rgba(var(--dark-accent),0.25);
+}
+
+div.fnd_testing div.header {
+    flex-direction: column;
+    height: auto;
+    border: 0px;
+}
+
+div.fnd_testing div.header p {
+    margin: 0.25em 0;
+}
+
+div.fnd_report div.footer {
+    padding: 0;
+    height: auto;
+}
+
+div.fnd_report div.header > div.left,
+div.fnd_report div.footer > div.left {
+    white-space: nowrap;
+    padding: 0.5em;
+}
+
+div.fnd_report div.header > div.right,
+div.fnd_report div.footer > div.right {
+    font-size: 70%;
+    line-height: 100%;
+    padding: 0.25em 0;
+}
+
+div.fnd_report div.report_text,
+div.fnd_testing div.report_text,
+div.fnd_chreport div.report_text {
+    padding: 1em;
+    width: 100%;
+    border-top: 0.125rem dotted rgba(var(--gray-monochrome),0.5);
+}
+
+div.fnd_report div.compile, 
+div.fnd_report div.division, 
+div.fnd_report div.date_comp, 
+div.fnd_report div.date_disc, 
+div.fnd_report div.urgent,
+div.fnd_report div.useful,
+div.fnd_report div.collected,
+div.fnd_report div.approval {
+    flex-grow: 2;
+    flex-basis: 30%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+div.fnd_report div.collected,
+div.fnd_report div.approval {
+    align-self: flex-start;
+}
+
+div.fnd_report div.compile > div, 
+div.fnd_report div.division > div, 
+div.fnd_report div.date_comp > div, 
+div.fnd_report div.date_disc > div, 
+div.fnd_report div.urgent > div,
+div.fnd_report div.useful > div,
+div.fnd_report div.collected > div,
+div.fnd_report div.approval > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.fnd_report div.collected > div,
+div.fnd_report div.approval > div {
+    padding: 0.5em;
+}
+
+div.fnd_report div.top {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    font-size: 70%;
+    background: rgba(var(--gray-monochrome),0.15);
+    padding: 0.25em;
+}
+
+div.fnd_report div.bottom {
+    flex-grow: 2;
+}
+
+#page-content ul {
+    padding: 0 1em;
+    width: calc(100% - 2em);
+    list-style-position: inside;
+    list-style: none;
+}
+
+#page-content ul li {
+    padding: 0 0 1em 2em;
+}
+
+#page-content ul li::before {
+    content: "";
+    color: rgb(var(--swatch-menubg-dark-color));
+    font-family: var(--header-font);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+div.report_text div.rec_record {
+    width: 100%;
+    display: flex;
+    border-bottom: 0.125rem dotted rgba(var(--dark-accent));
+}
+
+div.report_text div.rec_record > div {
+    padding: 1rem;
+}
+
+div.report_text div.rec_record div.timestamp {
+    max-width: 4rem !important;
+    text-decoration-skip-ink: auto;
+    border-right: 0.125rem dotted rgba(var(--dark-accent));
+    font-family: var(--mono-font);
+    font-size: 80%;
+}
+
+div.report_text div.rec_record div.time_description.head {
+    display: flex;
+    align-items: flex-end;
+    font-size: 125%;
+    font-family: var(--mono-font);
+    font-weight: 500;
+}
+
+span.audio, span.video {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+    font-family: var(--mono-font);
+    font-size: 90%;
+}
+
+span.video {
+    padding-top: 1em;
+}
+
+/* collapsible block */
+
+#page-content > .collapsible-block {
+    display: block;
+    text-align: center;
+    padding: 0.75em;
+    background-color: rgba(var(--gray-monochrome),0.1);
+    border-top: 0.125rem dashed rgba(var(--dark-accent),1);
+    border-bottom: 0.125rem dashed rgba(var(--dark-accent),1);
+}
+
+#page-content > .collapsible-block .collapsible-block-content {
+    text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .scp-image-block.block-right,
+    .scp-image-block.block-left {
+    	margin: 1em 0;
+    	padding: 0;
+    }
+}
+[[/module]]
+
+[[div_ class="notebox"]]
+**Note:** This document was originally compiled by the Chinese Foundation Branch. As such, many Chinese characters and phrases will be found throughout as to keep the document as accurate as possible. Loose definitions will be supplied when deemed necessary. 
+[[/div]]
+
+**Item #:** SCP‑4522
+
+**Object Class:** Safe
+
+[[div class="scp-image-block block-right" style="width:300px;"]]
+[[image http://kaktuskontainer.wdfiles.com/local--files/woed-peach-draft/SCP%E2%80%914522%E2%80%91MQ.jpg width="300px" style="width:300px;" link="http://kaktuskontainer.wdfiles.com/local--files/woed-peach-draft/SCP%E2%80%914522%E2%80%91MQ.jpg"]]
+[[div class="scp-image-caption" style="width:width:300px;;"]]
+Early 19th century gouache painting by a foreign Japanese visitor thought to be of SCP‑4522‑MQ.
+[[/div]]
+[[/div]]
+**Special Containment Procedures:** A perimeter of two kilometers is maintained atop the mountains surrounding SCP‑4522‑BT. A base camp with a minimum of two researchers[[footnote]]One researcher from the Primary Foundation Branch and one researcher from the Chinese Foundation Branch[[/footnote]] are stationed within the perimeter. The Chinese Branch Researcher is tasked with maintaining continued communication between the Foundation and the inhabitants of SCP‑4522‑BT.
+
+Special access to SCP‑4522‑BT is permitted to personnel meeting the following conditions:
+
+# The personnel is deemed unnecessary to the continued containment of SCP‑4522.
+# The personnel is not aware of the anomalous properties of SCP‑4522‑PH.
+# The personnel has not read this document.
+
+**Description:** SCP‑4522 consists of the following:
+
+[[div_ class="discbox"]]
+++++ SCP‑4522‑BT[[footnote]]Truncated translation of "的" meaning "Bright" or "Clear"[[/footnote]]
+
+A village located within the western Chinese Kunlun mountains, near the Tibetan border. Surrounded on all sides by mountains, SCP‑4522‑BT is largely inacessible. All paths and buildings within SCP‑4522‑BT form sequentially larger rings around the center point, filling all available space within the valley, approximately 2.6 sq. km. 
+
+The village is of moderate size and is estimated to be populated by 315 individuals as of 11 April, 2019 and is indicative of other similar 自然村落[[footnote]]Meaning: "Natural Villages"[[/footnote]] found in remote, rural areas of China. Despite SCP‑4522‑BT's elevation (measured at 3.6km above sea level,) the location experiences weather indicative of subtropical rain forests despite its location. 
+[[/div]]
+
+[[div_ class="discbox"]]
+++++ SCP‑4522‑MQ[[footnote]]Truncated translation of the original "獼" meaning "Macaque"[[/footnote]]
+
+Referring to the individuals inhabiting SCP‑4522‑BT, the villagers appear identical to the //stump‑tailed macaque,// often found in the subtropical forests of South Asia. Satellite imagery has shown the village to consist entirely of these individuals and directional audio recording have gleaned minimal data. However, it can be confirmed that the majority of SCP-4522-MQ instance speak using Guānhuà[[footnote]]A Chinese dialect most commonly used in the early 20th century and a precursor to current Mandarin Chinese.[[/footnote]] and display intelligence similar to that of an adult human.
+
+Only a single individual has been interacted with, one known as the 村長, or "Village Head." The Village Head is consistently the first member of the village encountered by any sentient being that approaches SCP‑4522‑BT. Access to the village may only be granted by the Village Head, and is otherwise inaccessible. [[footnote]]A list of all attempted methods used to enter the village without permission is available upon request.[[/footnote]]  A record of this interaction can be found in Addendum 4522-A.
+
+If deemed "玉" [[footnote]]Meaning: "Jade", can also be defined as "pure" or "beautiful."[[/footnote]] by the Village Head, the individual will be capable of entering. If deemed "玉不琢" [[footnote]]These two states appear to be a reference from an ancient Chinese Trimetric Classic: "玉不琢，不成器" or "A jade without chiseling will not become useful."[[/footnote]] the individual will be immediately compelled to leave the valley by any means. Following this, the individual will display selective amnesia related to all topics and events pertaining to SCP‑4522.
+[[/div]]
+
+[[div_ class="discbox"]]
+++++ SCP‑4522‑PH[[footnote]]Truncated translation of "桃" meaning "Peach"[[/footnote]]
+[[div class="scp-image-block block-left" style="width:300px;"]]
+[[image http://kontainer.djkakt.us/local--files/woed-peach-draft/peachphoto.png width="300px" style="width:300px;" link="http://kontainer.djkakt.us/local--files/woed-peach-draft/peachphoto.png"]]
+[[div class="scp-image-caption" style="width:width:300px;;"]]
+Only surviving photo of SCP-4522-PH.
+[[/div]]
+[[/div]]
+A //Prunus persica// tree[[footnote]]Peach Tree[[/footnote]] of increased size centrally located within SCP‑4522‑BT. The fruit produced by SCP‑4522‑PH displays a number of anomalous properties. Consumption of the fruit will result in either the perceived enhancement or suppression of any anomalous properties possessed by an individual. This has also been shown to result in both the possible development and removal of anomalous abilities in certain individuals.
+
+At the time of writing, no tests have been performed directly by the Foundation in regards to these items. All known effects have been recorded from seized IJAMEA reports. 
+
+All attempts to plant the pits of the fruit taken from SCP‑4522‑PH have resulted in non‑anomalous //Prunus persica// trees.
+[[/div]]
+
+**Discovery:** The existence of SCP-4522 has been known to the Foundation since the seizing of IJAMEA records by the Foundation branch following the conclusion of the  Second Sino-Japanese War in 1945. Artistic depictions and written descriptions of  SCP-4522-MQ and SCP-4522-PH are numerous and are known to the general population of the region as mythical figures. However, the quantity and the consistency of these depictions and descriptions led Foundation Researchers to theorize the existence of SCP-4522 prior to 1945.
+
+The first recorded physical discovery of SCP-4522 occurred on 20 June, 1941 by an IJAMEA lead operative, Officer Numata Ichiyo. Numata had been tasked with exploring the Kunlun mountains in order to locate SCP-4522. Officer Numata was accompanied by four other subordinates, all of which were present for its discovery.
+
+A record of Numata Ichiyo's interactions was located in seized IJAMEA records and can be found in Addendum 4522-A.
+
+[[span class="center-header"]]Addendum 4522-A: IJAMEA Discovery[[/span]]
+
+> The following is a written description by IJAMEA lead operative, Officer Numata Ichiyo's discovery of SCP-4522. According to following reports, this is the only instance of a IJAMEA agent being allowed access to SCP-4522-BT, despite multiple efforts.
+
+[[collapsible show="▼ Click to confirm credentials ▼" hide="▲ Hide Addendum ▲"]]
+[[div_ class="fnd_report"]]
+[[div_ class="header"]]
+[[div_ class="left"]]
+秘敵‑FORM
+[[/div]]
+[[div_ class="right"]]
+Report of Anomalous Activity Within Enemy Lines
+[[/div]]
+[[/div]]
+[[div_ class="compile"]]
+[[div_ class="top"]]
+Compiled by
+[[/div]]
+[[div_ class="bottom"]]
+Shireikan [[footnote]]Meaning: "Commanding Officer"[[/footnote]] Numata Ichiyo
+[[/div]]
+[[/div]]
+[[div_ class="division"]]
+[[div_ class="top"]]
+Division
+[[/div]]
+[[div_ class="bottom"]]
+Foreign Investigation
+[[/div]]
+[[/div]]
+[[div_ class="date_comp"]]
+[[div_ class="top"]]
+Date Compiled
+[[/div]]
+[[div_ class="bottom"]]
+25 June, 1941
+[[/div]]
+[[/div]]
+[[div_ class="date_disc"]]
+[[div_ class="top"]]
+Date Discovered
+[[/div]]
+[[div_ class="bottom"]]
+20 June, 1941
+[[/div]]
+[[/div]]
+[[div_ class="urgent"]]
+[[div_ class="top"]]
+Urgency
+[[/div]]
+[[div_ class="bottom"]]
+Low
+[[/div]]
+[[/div]]
+[[div_ class="useful"]]
+[[div_ class="top"]]
+Usefulness
+[[/div]]
+[[div_ class="bottom"]]
+Moderate
+[[/div]]
+[[/div]]
+[[div_ class="report_text"]]
+I, Shireikan Numata Ichiyo, am pleased to report the fruitification[[footnote]]Likely a literal translation of 結実 (ketsujitsu) meaning "to bear fruit."[[/footnote]] of Expeditionary Force 18's efforts within enemy China. I will now humbly recall that which was found.
+
+As tasked, Expeditionary Force 18 has traveled the vast extent of the expansive Kunlun mountains for the past seven months. On the final month, the sun smiled upon us as we crossed over the westernmost edges of the mountains. Breaching the crest of the highest peak we had traversed thus far, a wondrous sight did behold us.
+
+Far below the peak, within a valley ringed with equally tall mountains, a moderate amount of cloud cover floated lazily over a large display of green and brown. This is a most unusual item to find hidden within these tall mountains. Not one among Force 18 had seen such a sight since entering the shouldering giants of Kunlun. We did then descend below to discover a sight of more fascination then the usual greenness we could not believe to see.
+
+As we became closer, the truth was revealed as the valley held a village of medium size sitting in rings around a massive central tree. 
+
+The temperature continued to rise with heightened quickness, in little time becoming uncomfortable for us with many layers of fur. As the bottom was reached, we found that we could not continue. The force of gods kept us from moving past a ring of jade that lay before us. Much was attempted with no measure of success. 
+
+After a short time passes, my subordinates notice a creature approach. Quite strange, as this is village, one would expect a figure of a human or maybe a dog. But this was not human or dog, it was a monkey, walking like a human comfortable on two feet, dressed in priest garb and a tall hat. He held an item we know as Vajra in its hand, a weapon almost a third the size of monkey itself.
+
+Of even more strangeness, when this monkey reached our impassable jade wall, it spoke! In the common tongue of Chinese peasantry, to the immense surprise to all! To this I will relay what was spoken with accuracy:
+
+The monkey brings its hands together in the traditional greeting before speaking: "Good outsiders from beyond the ring of jade, however do I express my delight at your presence."
+
+In shock at the words being spoken out of the mouth of a monkey, myself and my subordinates did not immediately respond. So the monkey continued: "I will welcome you to the home of the jade peach, though I cannot yet permit you to pass through. First I will recognize myself. I am Chu YeBai, most humble and knowing servant of the village you see before you. And now you must recognize yourself."
+
+The speaking monkey, which claimed to be named, gestured outwardly towards myself and my subordinates. Yet, to my shame, we still could not find words to express our shock. In our many months of wandering, we had seen many mystical items of which those begging claimed to be fantastical and glorious, only to discover purely disappointment. Trickery and fraud had come to be expectation to us humble servants to the homeland. 
+
+And yet, before us lay not fraud or trickery. No amount of polished steel or string could fabricate this mystical vision.
+
+In our silence this YeBai spoke once more, finding humor in our silence it let out a most human laugh: "Oh, oh my is it in my misfortune that a cluster of mutes hath stumble across the green below mists? It is most fortunate that names here are of least importance, both those given and those taken away. It is now that I would like to welcome you, however, a test must be performed."
+
+The monkey named YeBai extended its hand upward, offering this weapon, the Vajra, to myself. Entirely made of the jewel of jade, carved with such intricacy and care that only a master of craft might find the skill to pull such beauty from stone.
+
+It spoke once more: "Grasp this offering between both hands. Feel its weight both in hand as well as in self. Know that which is displayed will tell all that I need to know." Still offering the Vajra, this YeBai bowed deeply, arms raised in offering towards my humble self.
+
+It is now I discovered words once more, speaking before I take this item offered by the human voiced monkey: "Master Chu YeBai, you speak before us in a manner of much surprise to any familiar with your kind. I beg forgiveness for our silence for it is only the shock that forces our mouths closed. I beg further forgiveness in that I am not comfortable in accepting this gift you deeply offer. I must ask only a single question before I am to take hold of this, if this is acceptable to you."
+
+Still bowing with the offering, this YeBai speaks: "Ask as you may wish. I will answer as I may wish."
+
+Offering a respectful bow to this creature, I ask: "Master Chu YeBai, you are not a human yet you speak as one, how is this so?"
+
+The response to my request was a sharp, quiet laugh before the prostrated monkey responded: "I see now the name of the one before me is a horse owned by Sai Weng for with you brings a vision of misguided misfortune. In all misfortune, horsed owned by Sai Weng, how can one know that which would become most fortunate? In tragedy, the self is lost to the merciless flow of time, but tragedy is not the end and before you is only the beginning, yes?"
+
+This humble servant to the homeland did not understand the meaning behind this creature's words, I am most ashamed to say. However, looking towards my subordinates, I knew I must lead forth to discover the answers. Without answers, I am to never know that which can bring peace and happiness to those I care for most. So, to this, I accepted this YeBai's offering and took ahold of the Vajra.
+
+In time, this humble one was declared "jade" by the creature and granted entrance into the village proper. Alas, only myself and my direct subordinate Hanaya were allowed entrance. Both Hattori and Ida were not granted entrance. Despite pleas by myself and Hanaya, these two did turn to ascend the peaks exiting the valley, speaking not a word. I mourn the loss of two good men and accept all acceptable punishment for my failure.
+
+To this, my report concludes. This village, despite the welcoming of a speaking monkey, was most usual otherwise.
+
+I do hope this pleases all to the satisfaction of the many.
+
+[[div_ class="footer"]]
+[[div_ class="collected"]]
+[[div_ class="top"]]
+Items Collected
+[[/div]]
+[[div_ class="bottom"]]
+Eight Peaches
+[[/div]]
+[[/div]]
+[[div_ class="approval"]]
+[[div_ class="top"]]
+Report Approval
+[[/div]]
+[[div_ class="bottom"]]
+Approved
+[[/div]]
+[[/div]]
+[[/div]]
+[[/div]]
+[[/div]]
+[[/collapsible]]
+
+[[span class="center-header"]]Addendum 4522-B: IJAMEA Testing[[/span]]
+
+> The following is a record of the small number of tests performed by IJAMEA using SCP‑4522‑PH. Additional notes were included in the files and are reproduced as well. 
+
+[[collapsible show="▼ Click to confirm credentials ▼" hide="▲ Hide Addendum ▲"]]
+[[div_ class="fnd_testing"]]
+[[div class="header"]]
+The date of recording is the twenty first of June, 1941.
+
+The recording of testing is taken by the hand of this humble servant of the homeland, Medical Officer Jo Inoue.
+[[/div]]
+[[div_ class="report_text"]]
+The commencement of kensa[[footnote]]Meaning: "Tests" or "Inspections"[[/footnote]] began on this day and the record of which follows shall examine the properties of a particular set of peaches. Of note are a number of peculiar initial observations of these peaches:
+
+* The Shireikan, the man who recovered these intriguing foods, claims the age of these peaches far exceeds the known deterioration rate of familiar peaches. //As such, it can be determined with some certainty the first unusual property: **Greatly lowered rate of deterioration.**//
+* With no exception, the peaches appear near identical to one another. Their perfection may make a humble one such as myself question the reality of their existence. //Thus the second unusual property is identified: **Perfect appearance.**//
+* The Shireikan has claimed consumption of the peaches prior to surrendering his collection. It is claimed by this Shireikan that these peaches are beyond what one would expect from the taste of usual peaches. The words used by the Shireikan are: "Delicious above anything I have ever experienced." This has been confirmed with initial testing as well. //As such, the third unusual property is noted: **Exceptional flavor.**//
+
+Beyond this, the Shireikan claims no other unusual aspects to these peaches. Initial testing appears to verify this claim. However, this humble servant requests further testing and use of enemies within our care.
+
+To this I sign and beg acceptance:
+[[div_ class="japanese"]]
+[[image http://kontainer.djkakt.us/local--files/woed-peach-draft/jpofficersig.png]]
+[[/div]]
+[[/div]]
+[[/div]]
+@@ @@
+[[div_ class="fnd_testing"]]
+[[div class="header"]]
+The date of recording is the sixteenth of July, 1941.
+
+The recording of testing is taken by the hand of this humble servant of the homeland, Medical Officer Jo Inoue.
+[[/div]]
+[[div_ class="report_text"]]
+As directed, this humble servant of the homeland submits this monthly report on discovery and direction related to Item of Interest 033, also titled "Peaches of Immortality." 
+
+Despite earlier mentioned the lowered deterioration of Peaches, items have begun to display quickened ripening. It is my expectation that items will be unusable within the next thirty days. 
+
+As of the previous month, testing on enemies within our care was approved and began posthaste. Due to the scarcity of items, testing was still limited. The following observations were made as a result:
+
+* It is the strong opinion of this humble servant that Item of Interest 033 has further qualities than informed by our good Shireikan Numata Ichiyo. This will be elaborated on below but I declare strongly that this man **bore falsehood against his countrymen.** 
+* Upon consumption of Item of Interest 033, subjects consistently display a number of distinguishing events. _
+ _
+**The first of which is an unnatural silence.** This is noted particularly in one enemy subject who is punished daily for persistent outbursts. This individual did not speak a word for the following five days. This is the most apparent instance, however, this appeared to be consistent against all tested subjects. _
+ _
+**The second of which is the appearance of some degree of unnatural abilities.** This humble servant is ashamed to say that it is not known to what degree these abilities manifest and if any similarity is to be discovered. All subjects tested, six in total, began to show mystical abilities not yet seen by our own eyes. The only consistent nature of these abilities appears to be their usefulness in allowing these subjects to escape their confinement. It is this one's understanding that, due to this, all enemy testing is to cease. _
+ _
+**The third of which is the disappearance or lowering of unnatural abilities.** A final test commenced upon three enemies within our care already displaying some measure of unnatural abilities. Two of these enemies displayed what one would describe as personally "useful" skills. These two displayed enhanced abilities following testing. _
+ _
+However, one of these enemies displayed a most interesting condition that causes continued life no matter the degree of suffering imposed physically or mentally. This apparent immortality has been a most useful, allowing for all manner of kensa. Following the consumption of Item of Interest 033, this most useful enemy appeared to lose this ability, taking its wretched life six days following testing. I mourn the loss of this most useful subject.
+
+I declare as a servant to this glorious homeland that these items, these "Peaches of Immortality," are of significant desirability. As of currently, only two of these items still persist and this will not be for long. The sheer possibilities presented by the apparent abilities of these items could result in a force unseen in the history of man.
+
+To this I sign and beg acceptance:
+[[div_ class="japanese"]]
+[[image http://kontainer.djkakt.us/local--files/woed-peach-draft/jpofficersig.png]]
+[[/div]]
+[[/div]]
+[[/div]]
+> The two documents below were found within the same file containing the testing reports.
+[[div_ class="fnd_testing"]]
+[[div class="header"]]
+OFFICIAL DECLARATION OF EXECUTION
+[[/div]]
+[[div_ class="report_text"]]
+Shireikan Numata Ichiyo is declared to be put to death for the loss of two men under his care as well as declaring falsehoods against the homeland. This is to be carried out after suitable suffering is laid upon the failure of this pitiful individual.
+[[/div]]
+[[/div]]
+@@ @@
+[[div_ class="fnd_testing"]]
+[[div class="header"]]
+OFFICIAL SEARCH ORDER
+[[/div]]
+[[div_ class="report_text"]]
+Disgraced Numata Ichiyo has escaped from detention despite overwhelming efforts to disallow such numerous nearly successful attempts. The failure of those allowing the escape will be punished as is expected. Additionally, this most disgraceful man has stolen important items from IJAMEA research facilities. These items are to be returned along with the man.
+[[/div]]
+[[/div]]
+> This concludes all recovered IJAMEA documents related to SCP-4522
+[[/collapsible]]
+
+[[span class="center-header"]]Addendum 4522-C: Current Foundation Reports[[/span]]
+
+> Rediscovery of SCP-4522 by Foundation individuals took place on April 2, 2019 with contact made the following day. Chinese Foundation Branch researcher Chen Sui and Foundation Researcher Kory Michaels have been assigned to the newly designated Site 37.
+
+[[collapsible show="▼ Click to confirm credentials ▼" hide="▲ Hide Addendum ▲"]]
+[[div_ class="fnd_chreport"]]
+[[div class="header"]]
+Site 37 -- Initial Report
+[[/div]]
+[[div_ class="report_text"]]
+I apologize in advance for the informal tone of this document. However, Kory and I have just finished the absolutely absurd task of crossing mountains we are both convinced to be taller than Everest. We are only scientists so we are more than a little exhausted. I can't be bothered to sound like an //actual// scientist right now.
+
+This is Chen Sui writing. I have arrived along with my fellow Scientist and Researcher Kory Michaels at the site of SCP-4522. It is... April 9th, 2019.
+
+I was told that it is not possible to fly a helicopter here or airdrop anyone with any sort of accuracy towards the site. So... we hiked. And survived, somehow. 
+
+All things considered, though, it's quite nice here! As mentioned in the IJAMEA reports, the atmosphere here is something akin to a rainforest, though a very comfortable one. Also, as the reports say, we are unable to cross into the village proper. 
+
+Both Kory and I have also met the SCP‑4522‑MQ entity known as Chu YeBai. We took footage of that and I will attach it to this document. I will say, he is not what I expected from the depiction in the IJAMEA report... but you will know what I mean when you watch the footage.
+
+We both look forward to continued communication with YeBai and hope to see approved entry into the village within the month.
+[[/div]]
+[[/div]]
+@@ @@
+[[div_ class="fnd_chreport"]]
+[[div class="header"]]
+Site 37 -- April 9 Video Transcript
+[[/div]]
+[[div_ class="report_text"]]
+[[div_ class="rec_record"]]
+[[div_ class="timestamp head"]]
+VIDEO TIME STAMP
+[[/div]]
+[[div_ class="time_description head"]]
+AUDIO AND VISUAL DESCRIPTION
+[[/div]]
+[[/div]]
+[[div_ class="rec_record"]]
+[[div_ class="timestamp"]]
+00:01
+[[/div]]
+[[div_ class="time_description"]]
+[[span class="audio"]]Audio:[[/span]] 
+Muffled breathing, heavy footsteps
+
+[[span class="video"]]Video:[[/span]] 
+Field of wild flowers, about a foot tall on average. The wild flowers appear to terminate at a dense wall of deciduous trees about 100m ahead. The camera looks towards another individual, identified as Researcher Chen Sui, who is removing her jacket, hat, and scarf.
+[[/div]]
+[[/div]]
+[[div_ class="rec_record"]]
+[[div_ class="timestamp"]]
+00:06
+[[/div]]
+[[div_ class="time_description"]]
+[[span class="audio"]]Audio:[[/span]] 
+Continued muffled breathing followed by irrelevant chatter by the two researchers
+
+[[span class="video"]]Video:[[/span]] 
+Researchers are approaching the wall of trees, approximately 95m ahead a small figure appears in front of the trees. 
+[[/div]]
+[[/div]]
+[[div_ class="rec_record"]]
+[[div_ class="timestamp"]]
+00:15
+[[/div]]
+[[div_ class="time_description"]]
+[[span class="audio"]]Audio:[[/span]] 
+**Researcher Chen:** "Look, I think that's him. From the reports."
+**Researcher Michaels:** "It would certainly seem that wa—"
+
+[[span class="video"]]Video:[[/span]] 
+As Researchers approach, it becomes clearly apparent that the figure is a Macaque of near identical description as given by the IJAMEA report. The camera looks briefly towards Researcher Chen as both Researchers collide with an unseen object, falling backwards into the field.
+[[/div]]
+[[/div]]
+[[div_ class="rec_record"]]
+[[div_ class="timestamp"]]
+00:21
+[[/div]]
+[[div_ class="time_description"]]
+[[span class="audio"]]Audio:[[/span]] 
+**SCP-4522-MQ //(speaking in Guānhuà)//:** //The voice is distant still.// "Two visitors, turn around! Leave! We have no place for you here!"
+
+[[span class="video"]]Video:[[/span]] 
+The researchers lift themselves out of the field, taking some time to do so likely due to their heavy packs. As the camera rises, a line of jade, about five centimeters across and inlaid with currently unknown figures, is seen briefly.
+[[/div]]
+[[/div]]
+[[div_ class="rec_record"]]
+[[div_ class="timestamp"]]
+00:23
+[[/div]]
+[[div_ class="time_description"]]
+[[span class="audio"]]Audio:[[/span]] 
+**Researcher Chen** //(speaking in Guānhuà)//: "Greetings, friend! We mean no harm. We have traveled for many days and only wish to seek a suitable place to place our camp."
+
+[[span class="video"]]Video:[[/span]] 
+Researcher Chen brushes herself off before putting her hands together and bowing respectfully towards the Macaque. The camera pans to back to see the Macaque has reached the jade border as well. To note is the peculiar humanoid posture and anachronistic attire. The Macaque does not return the welcoming gesture. 
+[[/div]]
+[[/div]]
+[[div_ class="rec_record"]]
+[[div_ class="timestamp"]]
+00:25
+[[/div]]
+[[div_ class="time_description"]]
+[[span class="audio"]]Audio:[[/span]] 
+**SCP-4522-MQ** //(speaking in Guānhuà)//:  "We are no friends. I know my friends and you most certainly do not bear any resemblance to a single one. For one, you are at least four times their size. Either four of my friends stand atop each other as some sort of jape or you are an intruder."
+**Researcher Michaels** //(speaking in English)//: "What is he saying, Sui? I can understand some of it and it doesn't sound at all friendly."
+
+[[span class="video"]]Video:[[/span]] 
+The Macaque stands sharply in front of the two researchers, both arms behind its back, and keeping strong eye contact with Researcher Chen.
+[[/div]]
+[[/div]]
+[[div_ class="rec_record"]]
+[[div_ class="timestamp"]]
+00:29
+[[/div]]
+[[div_ class="time_description"]]
+[[span class="audio"]]Audio:[[/span]] 
+**Researcher Chen** //(speaking in Guānhuà)//:  "I beg your forgiveness. It was intended as only a friendly greeting. You would not happen to be named Chu YeBai? I am Chen Sui and this is Kory Michaels. We ha--"
+
+[[span class="video"]]Video:[[/span]] 
+When the name "Chu YeBai" is spoken, the Macaque shows immediate visible distress. It backs up, away from the border slightly and appears to grow much tenser. It then interrupts Researcher Chen. //This SCP-4522-MQ instance will be referred to as Chu YeBai from here on.//
+[[/div]]
+[[/div]]
+[[div_ class="rec_record"]]
+[[div_ class="timestamp"]]
+00:30
+[[/div]]
+[[div_ class="time_description"]]
+[[span class="audio"]]Audio:[[/span]] 
+**Chu YeBai** //(speaking in Guānhuà)//:  //Voice raised, wavering slightly// "Forgiveness is not something you beg or ask for, intruder. I do not know how you came to know my most humble of names but there are scant few ways in which you have come to know it. As such, you must //leave.// You will //never// be granted permission to enter. //Never.//"
+
+[[span class="video"]]Video:[[/span]] 
+Researcher Chen looks towards the camera with a raised eyebrow, giving a slight shrug. Chu YeBai shakes its hand holding what appears to be the Jade Vajra towards the two researchers as it spoke.
+[[/div]]
+[[/div]]
+[[div_ class="rec_record"]]
+[[div_ class="timestamp"]]
+00:33
+[[/div]]
+[[div_ class="time_description"]]
+[[span class="audio"]]Audio:[[/span]] 
+**Researcher Michaels** //(Speaking in English)//:  "That doesn't sound good. What did he say?"
+**Researcher Chen** //(Speaking in English//: "To put it briefly, that we will never be allowed to enter. I think we should maybe just set up camp nearby and try again another time, eh?"
+**Chu YeBai** //(speaking in Guānhuà)//: "Another time? //Another time?// Hah! You can try all you may like, but I will never declare you Jade. Here! Take hold of this so I can watch you climb atop the peaks, away from our peaceful home!"
+
+[[span class="video"]]Video:[[/span]] 
+Researcher Chen show surprise in Chen YeBai's apparent understanding of English. She begins to reach out for the Vajra before pulling her hand away, shaking her head.
+[[/div]]
+[[/div]]
+[[div_ class="rec_record"]]
+[[div_ class="timestamp"]]
+00:36
+[[/div]]
+[[div_ class="time_description"]]
+[[span class="audio"]]Audio:[[/span]] 
+**Researcher Chen** //(Speaking in Guānhuà//: "However long it takes, honorable Chu YeBai."
+**Chu YeBai**: //Scoffs but does not reply.//
+
+[[span class="video"]]Video:[[/span]] 
+Researcher Chen places her hands together and gives a short bow before turning to leave, Researcher Michaels turning to follow after her. 
+[[/div]]
+[[/div]]
+[[div_ class="rec_record"]]
+[[div_ class="timestamp"]]
+00:38
+[[/div]]
+[[div_ class="time_description"]]
+[[span class="audio"]]Audio:[[/span]] 
+**Researcher Michaels** //(Speaking in English//: "What do you think that was about?"
+**Researcher Chen** //(Speaking in English//: "Haven't a clue. Not at all what I expected. I think I see a good spot to set up camp, though."
+
+[[span class="video"]]Video:[[/span]] 
+The Researchers walk in the opposite direction to locate a camping spot.
+[[/div]]
+[[/div]]
+[[/div]]
+[[/div]]
+> End relevant section of recording.
+[[/collapsible]]
+
+-----
+
+[[collapsible show="+ Show image credits" hide="- Hide image credits"]]
+* Monkey Image from here: https://wellcomecollection.org/works/jq926hwk#licenseInformation -- Creative Commons Attribution (CC BY 4.0)
+* Peach Image from here: https://pixnio.com/flora-plants/fruits/peaches-pictures/peach-food-healthy-fruit-sweet-diet-vitamin-delicious - Creative Commons Attribution (CC0)
+[[/collapsible]]
