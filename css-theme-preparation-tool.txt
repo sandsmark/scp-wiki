@@ -21,14 +21,14 @@ This thing with which you can make simple CSS Theme. If you want to learn more w
 [[div class="unmargined" style="margin: 20px 0; font-size: 120%; font-weight: bold; color: #fff; text-shadow: 1px 2px 3px rgba(0,0,0,.25);"]]
 [[module Rate]]
 [[div]]
-[[include info:start-standalone]]
+[[include :scp-wiki:info:start-standalone]]
 = CSS Theme Preparation Tool
 Author: [[*user 7happy7]]
 Special thanks: [[*user Boyu12]], [[*user C-take]], [[*user Dr Devan]], [[*user Etinjat]], [[*user MrPines]], [[*user Nanimono Demonai]], [[*user physicslike]], [[*user Sekai_s]], [[*user shu_yabiyabi]], [[*user Zyn]]
 [[=]]
 [[module Rate]]
 [[/=]]
-[[include info:end-standalone]]
+[[include :scp-wiki:info:end-standalone]]
 [[/div]]
 [[/div]]
 [[/div]]
@@ -416,351 +416,121 @@ CC-BY-SA 2.5
 <iframe src="/local--code/css-theme-preparation-tool/4" style="width: 100%; height: 200px; border: none;"></iframe>
 [[/embed]]
 
-[[table class="wiki-content-table t-sample" style="float: none;clear: both;margin-left: auto;margin-right: auto;"]]
+[[table class="wiki-content-table t-sample" style="float: left;"]]
 [[row]][[hcell]]H[[/hcell]][[hcell]]S[[/hcell]][[hcell]]V[[/hcell]][[/row]]
 [[row]][[cell]]355deg[[/cell]][[cell]]100%[[/cell]][[cell]]73%[[/cell]][[/row]]
 [[row]][[cell]]**hue-rotate**[[/cell]][[cell]]**saturate**[[/cell]][[cell]]/[[/cell]][[/row]]
 [[row]][[cell]]0deg[[/cell]][[cell]]0%[[/cell]][[cell]]100%[[/cell]][[/row]]
 [[row]][[cell]]/[[/cell]][[cell]]/[[/cell]][[cell]]**brightness**[[/cell]][[/row]]
+[[row]][[cell colspan="3"]]...[[/cell]][[/row]]
+[[row]][[cell colspan="3"]]...[[/cell]][[/row]]
+[[row]][[hcell]]filter:[[/hcell]][[hcell colspan="2" style="font-weight: normal; text-align: left;"]]hue-rotate(0deg)
+saturate(100%)
+ -- [[/hcell]][[/row]]
 [[/table]]
 
+[[include component:image-block |width=300px|align=left
+|name=interwiki1.png
+|caption="How to adjust Interwiki color?"]]
+
++* [[span style="display: inline-block; width: 100%; font-size: 0px;"]]a[[/span]]
+
 **Note 1:** You can calculate only rough values by using the above tool.
-**Note 2:** If the side-block color is not monotone[[size 80%]](#ffffff, #DCDCDC, etc.)[[/size]], this method will not function well like "Third Law Theme"(#E2E4E7).
+**Note 2:** If the side-block color is not monotone[[size 80%]](#ffffff, #DCDCDC, etc.)[[/size]], this method will not function well like "Third Law Theme"[[size 80%]](#E2E4E7)[[/size]].
 **Note 3:** hue-rotate(-70deg) = hue-rotate(290deg)
 
 +* [[span style="display: inline-block; width: 100%;"]]Basics[[/span]]
-[[table class="wiki-content-table" style="float: left; margin-right: 0.8em;"]]
-[[row]][[hcell colspan="5"]]default color[[/hcell]][[/row]]
-[[row]][[cell]][[/cell]][[hcell]]color code[[/hcell]][[hcell]]H[[/hcell]][[hcell]]S[[/hcell]][[hcell]]V[[/hcell]][[/row]]
-[[row]][[hcell rowspan="2"]]Link[[/hcell]][[cell rowspan="2"]]**##b01|#bb0011##**[[/cell]][[cell]]355deg[[/cell]][[cell]]100%[[/cell]][[cell]]73%[[/cell]][[/row]]
-[[row]][[cell]]/[[/cell]][[cell]]/[[/cell]][[cell]]/[[/cell]][[/row]]
-
-[[row]][[hcell rowspan="2"]]side-bg[[/hcell]][[cell rowspan="2"]]#ffffff[[/cell]][[cell]]0deg[[/cell]][[cell]]0%[[/cell]][[cell]]100%[[/cell]][[/row]]
-[[row]][[cell]]/[[/cell]][[cell]]/[[/cell]][[cell]]/[[/cell]][[/row]]
-
-[[row]]
-[[cell colspan="5" style="text-align: center;"]]
-[[div class="side-block" style="width: 17em; background-color: #ffffff; border-color: #600;"]]
-[[a href="#" style="font-weight: bold; color: #b01;"]]side-block sample[[/a]]
-[[/div]]
-[[/cell]]
-[[/row]]
-
-[[row]]
-[[cell class="scpnet-interwiki-wrapper" colspan="5" style="padding: 0; text-align: left;"]]
-[[div class="interwiki"]]
-[[div_ class="interwiki__title"]]
-Interwiki sample
-[[/div]]
-[[div_ class="interwiki__entry"]]
-[[a href="#asap"]]Esperanto[[/a]]
-[[/div]]
-[[div_ class="interwiki__entry"]]
-[[a href="#asap"]]tlhIngan Hol[[/a]]
-[[/div]]
-[[div_ class="interwiki__entry"]]
-[[a href="#asap"]]Na'vi[[/a]]
-[[/div]]
-[[div_ class="interwiki__entry"]]
-[[a href="#asap"]]Qenya[[/a]]
-[[/div]]
-[[/div]]
-[[/cell]]
-[[/row]]
-[[row]][[hcell]]filter:[[/hcell]][[hcell colspan="4" style="font-weight: normal; text-align: left;"]]
- -- 
- -- 
- -- 
-[[/hcell]][[/row]]
-[[/table]]
+[[include :scp.avn.sh:7happy7:sample-int |class=none
+|link=default color (Sigma-9)
+**[[size 80%]]by [[*user Aelanna]][[/size]]**
+|hex=#bb0011|h=355|s=100|v=73
+|bg=false|h2=0|s2=0|v2=100
+|style=
+]]
 
 
 [!-- MC&D --]
-[[table class="wiki-content-table" style="float: left; margin-right: 0.8em;"]]
-[[row]][[hcell colspan="5"]][http://www.scp-wiki.net/component:mcd-theme MC&D Theme][[/hcell]][[/row]]
-[[row]][[cell]][[/cell]][[hcell]]color code[[/hcell]][[hcell]]H[[/hcell]][[hcell]]S[[/hcell]][[hcell]]V[[/hcell]][[/row]]
-[[row]][[hcell rowspan="2"]]Link[[/hcell]][[cell rowspan="2"]]**##6C4279|#6C4279##**[[/cell]][[cell]]285deg[[/cell]][[cell]]45%[[/cell]][[cell]]47%[[/cell]][[/row]]
-[[row]][[cell]]-70deg[[/cell]][[cell]]45%[[/cell]][[cell]]/[[/cell]][[/row]]
-
-[[row]][[hcell rowspan="2"]]side-bg[[/hcell]][[cell rowspan="2"]]#ffffff[[/cell]][[cell]]0deg[[/cell]][[cell]]0%[[/cell]][[cell]]100%[[/cell]][[/row]]
-[[row]][[cell]]/[[/cell]][[cell]]/[[/cell]][[cell]]/[[/cell]][[/row]]
-
-[[row]]
-[[cell colspan="5" style="text-align: center;"]]
-[[div class="side-block" style="width: 17em; background-color: #ffffff; border-color: #8B198B; box-shadow: 0 2px 6px rgba(50,0,50,.5);"]]
-[[a href="#" style="font-weight: bold; color: #6C4279;"]]side-block sample[[/a]]
-[[/div]]
-[[/cell]]
-[[/row]]
-
-[[row]]
-[[cell class="scpnet-interwiki-wrapper mcd" colspan="5" style="padding: 0; text-align: left;"]]
-[[div class="interwiki"]]
-[[div_ class="interwiki__title"]]
-Interwiki sample
-[[/div]]
-[[div_ class="interwiki__entry"]]
-[[a href="#asap"]]Esperanto[[/a]]
-[[/div]]
-[[div_ class="interwiki__entry"]]
-[[a href="#asap"]]tlhIngan Hol[[/a]]
-[[/div]]
-[[div_ class="interwiki__entry"]]
-[[a href="#asap"]]Na'vi[[/a]]
-[[/div]]
-[[div_ class="interwiki__entry"]]
-[[a href="#asap"]]Qenya[[/a]]
-[[/div]]
-[[/div]]
-[[/cell]]
-[[/row]]
-[[row]][[hcell]]filter:[[/hcell]][[hcell colspan="4" style="font-weight: normal; text-align: left;"]]
-hue-rotate(290deg)
-saturate(45%)
- -- 
-[[/hcell]][[/row]]
-[[/table]]
+[[include :scp.avn.sh:7happy7:sample-int |class=mcd
+|link=[http://www.scp-wiki.net/component:mcd-theme MC&D Theme]
+**[[size 80%]]by [[*user Randomini]][[/size]]**
+|hex=#6C4279|h=285|s=45|v=47
+|bg=false|h2=0|s2=0|v2=100
+|style=border-color: #8B198B; box-shadow: 0 2px 6px rgba(50,0,50,.5);
+]]
 
 
 [!-- Serpent's Hand --]
-[[table class="wiki-content-table" style="float: left; margin-right: 0.8em;"]]
-[[row]][[hcell colspan="5"]][http://www.scp-wiki.net/component:sh-theme Serpent's Hand Theme][[/hcell]][[/row]]
-[[row]][[cell]][[/cell]][[hcell]]color code[[/hcell]][[hcell]]H[[/hcell]][[hcell]]S[[/hcell]][[hcell]]V[[/hcell]][[/row]]
-[[row]][[hcell rowspan="2"]]Link[[/hcell]][[cell rowspan="2"]]**##059400|#059400##**[[/cell]][[cell]]117deg[[/cell]][[cell]]100%[[/cell]][[cell]]58%[[/cell]][[/row]]
-[[row]][[cell]]-238deg[[/cell]][[cell]]/[[/cell]][[cell]]/[[/cell]][[/row]]
-
-[[row]][[hcell rowspan="2"]]side-bg[[/hcell]][[cell rowspan="2"]]#ffffff[[/cell]][[cell]]0deg[[/cell]][[cell]]0%[[/cell]][[cell]]100%[[/cell]][[/row]]
-[[row]][[cell]]/[[/cell]][[cell]]/[[/cell]][[cell]]/[[/cell]][[/row]]
-
-[[row]]
-[[cell colspan="5" style="text-align: center;"]]
-[[div class="side-block" style="width: 17em; background-color: #ffffff; border: 1px dotted black; box-shadow: 0 2px 6px rgba(0,30,0,.5);"]]
-[[a href="#" style="font-weight: bold; color: #059400;"]]side-block sample[[/a]]
-[[/div]]
-[[/cell]]
-[[/row]]
-
-[[row]]
-[[cell class="scpnet-interwiki-wrapper sh" colspan="5" style="padding: 0; text-align: left;"]]
-[[div class="interwiki"]]
-[[div_ class="interwiki__title"]]
-Interwiki sample
-[[/div]]
-[[div_ class="interwiki__entry"]]
-[[a href="#asap"]]Esperanto[[/a]]
-[[/div]]
-[[div_ class="interwiki__entry"]]
-[[a href="#asap"]]tlhIngan Hol[[/a]]
-[[/div]]
-[[div_ class="interwiki__entry"]]
-[[a href="#asap"]]Na'vi[[/a]]
-[[/div]]
-[[div_ class="interwiki__entry"]]
-[[a href="#asap"]]Qenya[[/a]]
-[[/div]]
-[[/div]]
-[[/cell]]
-[[/row]]
-[[row]][[hcell]]filter:[[/hcell]][[hcell colspan="4" style="font-weight: normal; text-align: left;"]]
-hue-rotate(122deg)
- -- 
- -- 
-[[/hcell]][[/row]]
-[[/table]]
+[[include :scp.avn.sh:7happy7:sample-int |class=sh
+|link=[http://www.scp-wiki.net/component:sh-theme Serpent's Hand Theme]
+**[[size 80%]]by [[*user ZeroStrider]], [[*user Salamander724]][[/size]]**
+|hex=#059400|h=117|s=100|v=58
+|bg=false|h2=0|s2=0|v2=100
+|style=border: 1px dotted black; box-shadow: 0 2px 6px rgba(0,30,0,.5);
+]]
 
 
 [!-- Third Law --]
-[[table class="wiki-content-table" style="float: left; margin-right: 0.8em;"]]
-[[row]][[hcell colspan="5"]][http://www.scp-wiki.net/component:3lawtheme Third Law Theme][[/hcell]][[/row]]
-[[row]][[cell]][[/cell]][[hcell]]color code[[/hcell]][[hcell]]H[[/hcell]][[hcell]]S[[/hcell]][[hcell]]V[[/hcell]][[/row]]
-[[row]][[hcell rowspan="2"]]Link[[/hcell]][[cell rowspan="2"]]**##4682B4|#4682B4##**[[/cell]][[cell]]207deg[[/cell]][[cell]]61%[[/cell]][[cell]]70%[[/cell]][[/row]]
-[[row]][[cell]]-148deg[[/cell]][[cell]]61%[[/cell]][[cell]]/[[/cell]][[/row]]
+[[include :scp.avn.sh:7happy7:sample-int |class=tl
+|link=[http://www.scp-wiki.net/component:3lawtheme Third Law Theme]
+**[[size 80%]]by [[*user GreenWolf]], [[*user Randomini]][[/size]]**
+|hex=#4682B4|h=207|s=61|v=70
+|bg=#E2E4E7|h2=216|s2=2|v2=90
+|style=border: 1px solid #315B7D; background: #E2E4E7; box-shadow: none;
+]]
 
-[[row]][[hcell rowspan="2"]]side-bg[[/hcell]][[cell rowspan="2"]]**##E2E4E7|#E2E4E7##**[[/cell]][[cell]]216deg[[/cell]][[cell]]2%[[/cell]][[cell]]90%[[/cell]][[/row]]
-[[row]][[cell]]/[[/cell]][[cell]]/[[/cell]][[cell]]90%[[/cell]][[/row]]
-
-[[row]]
-[[cell colspan="5" style="text-align: center;"]]
-[[div class="side-block" style="width: 17em; border: 1px solid #315B7D; background: #E2E4E7; box-shadow: none;"]]
-[[a href="#" style="font-weight: bold; color: #4682B4;"]]side-block sample[[/a]]
-[[/div]]
-[[/cell]]
-[[/row]]
-
-[[row]]
-[[cell class="scpnet-interwiki-wrapper tl" colspan="5" style="padding: 0; text-align: left;"]]
-[[div class="interwiki"]]
-[[div_ class="interwiki__title"]]
-Interwiki sample
-[[/div]]
-[[div_ class="interwiki__entry"]]
-[[a href="#asap"]]Esperanto[[/a]]
-[[/div]]
-[[div_ class="interwiki__entry"]]
-[[a href="#asap"]]tlhIngan Hol[[/a]]
-[[/div]]
-[[div_ class="interwiki__entry"]]
-[[a href="#asap"]]Na'vi[[/a]]
-[[/div]]
-[[div_ class="interwiki__entry"]]
-[[a href="#asap"]]Qenya[[/a]]
-[[/div]]
-[[/div]]
-[[/cell]]
-[[/row]]
-[[row]][[hcell]]filter:[[/hcell]][[hcell colspan="4" style="font-weight: normal; text-align: left;"]]
-hue-rotate(212deg)
-saturate(61%)
-brightness(90%)
-[[/hcell]][[/row]]
-[[/table]]
 
 
 [!-- SPC --]
-[[table class="wiki-content-table" style="float: left; margin-right: 0.8em;"]]
-[[row]][[hcell colspan="5"]][http://www.scp-wiki.net/component:spc-theme SPC Theme][[/hcell]][[/row]]
-[[row]][[cell]][[/cell]][[hcell]]color code[[/hcell]][[hcell]]H[[/hcell]][[hcell]]S[[/hcell]][[hcell]]V[[/hcell]][[/row]]
-[[row]][[hcell rowspan="2"]]Link[[/hcell]][[cell rowspan="2"]]**##0c499c|#0c499c##**[[/cell]][[cell]]214deg[[/cell]][[cell]]92%[[/cell]][[cell]]61%[[/cell]][[/row]]
-[[row]][[cell]]-141deg[[/cell]][[cell]]92%[[/cell]][[cell]]/[[/cell]][[/row]]
+[[include :scp.avn.sh:7happy7:sample-int |class=spc
+|link=[http://www.scp-wiki.net/component:spc-theme SPC Theme]
+**[[size 80%]]by [[*user PeppersGhost]][[/size]]**
+|hex=#0c499c|h=214|s=92|v=61
+|bg=false|h2=0|s2=0|v2=100
+|style=
+]]
 
-[[row]][[hcell rowspan="2"]]side-bg[[/hcell]][[cell rowspan="2"]]#ffffff[[/cell]][[cell]]0deg[[/cell]][[cell]]0%[[/cell]][[cell]]100%[[/cell]][[/row]]
-[[row]][[cell]]/[[/cell]][[cell]]/[[/cell]][[cell]]/[[/cell]][[/row]]
-
-[[row]]
-[[cell colspan="5" style="text-align: center;"]]
-[[div class="side-block" style="width: 17em;"]]
-[[a href="#" style="font-weight: bold; color: #0c499c;"]]side-block sample[[/a]]
-[[/div]]
-[[/cell]]
-[[/row]]
-
-[[row]]
-[[cell class="scpnet-interwiki-wrapper spc" colspan="5" style="padding: 0; text-align: left;"]]
-[[div class="interwiki"]]
-[[div_ class="interwiki__title"]]
-Interwiki sample
-[[/div]]
-[[div_ class="interwiki__entry"]]
-[[a href="#asap"]]Esperanto[[/a]]
-[[/div]]
-[[div_ class="interwiki__entry"]]
-[[a href="#asap"]]tlhIngan Hol[[/a]]
-[[/div]]
-[[div_ class="interwiki__entry"]]
-[[a href="#asap"]]Na'vi[[/a]]
-[[/div]]
-[[div_ class="interwiki__entry"]]
-[[a href="#asap"]]Qenya[[/a]]
-[[/div]]
-[[/div]]
-[[/cell]]
-[[/row]]
-[[row]][[hcell]]filter:[[/hcell]][[hcell colspan="4" style="font-weight: normal; text-align: left;"]]
-hue-rotate(219deg)
-saturate(92%)
- -- 
-[[/hcell]][[/row]]
-[[/table]]
 
 
 [!-- Darkbody (djkaktus's Proposal II) --]
-[[table class="wiki-content-table" style="float: left; margin-right: 0.8em;"]]
-[[row]][[hcell colspan="5"]][http://kontainer.djkakt.us/component:darkbodytheme Darkbody Theme][[/hcell]][[/row]]
-[[row]][[cell]][[/cell]][[hcell]]color code[[/hcell]][[hcell]]H[[/hcell]][[hcell]]S[[/hcell]][[hcell]]V[[/hcell]][[/row]]
-[[row]][[hcell rowspan="2"]]Link[[/hcell]][[cell rowspan="2"]]**##2F4F4F|#2F4F4F##**[[/cell]][[cell]]180deg[[/cell]][[cell]]40%[[/cell]][[cell]]30%[[/cell]][[/row]]
-[[row]][[cell]]-175deg[[/cell]][[cell]]40%[[/cell]][[cell]]/[[/cell]][[/row]]
+[[include :scp.avn.sh:7happy7:sample-int |class=db
+|link=[http://kontainer.djkakt.us/component:darkbodytheme Darkbody Theme]
+**[[size 80%]]by [[*user djkaktus]][[/size]]**
+|hex=#2F4F4F|h=180|s=40|v=30
+|bg=#DCDCDC|h2=0|s2=0|v2=86
+|style=border: 1px solid #2F4F4F;box-shadow: 0 2px 6px rgba(32,32,32,1);background-color: #DCDCDC;
+]]
 
-[[row]][[hcell rowspan="2"]]side-bg[[/hcell]][[cell rowspan="2"]]**##DCDCDC|#DCDCDC##**[[/cell]][[cell]]0deg[[/cell]][[cell]]0%[[/cell]][[cell]]86%[[/cell]][[/row]]
-[[row]][[cell]]/[[/cell]][[cell]]/[[/cell]][[cell]]86%[[/cell]][[/row]]
-
-[[row]]
-[[cell colspan="5" style="text-align: center;"]]
-[[div class="side-block" style="width: 17em; border: 1px solid #2F4F4F;box-shadow: 0 2px 6px rgba(32,32,32,1);background: #DCDCDC;"]]
-[[a href="#" style="font-weight: bold; color: #2F4F4F;"]]side-block sample[[/a]]
-[[/div]]
-[[/cell]]
-[[/row]]
-
-[[row]]
-[[cell class="scpnet-interwiki-wrapper db" colspan="5" style="padding: 0; text-align: left;"]]
-[[div class="interwiki"]]
-[[div_ class="interwiki__title"]]
-Interwiki sample
-[[/div]]
-[[div_ class="interwiki__entry"]]
-[[a href="#asap"]]Esperanto[[/a]]
-[[/div]]
-[[div_ class="interwiki__entry"]]
-[[a href="#asap"]]tlhIngan Hol[[/a]]
-[[/div]]
-[[div_ class="interwiki__entry"]]
-[[a href="#asap"]]Na'vi[[/a]]
-[[/div]]
-[[div_ class="interwiki__entry"]]
-[[a href="#asap"]]Qenya[[/a]]
-[[/div]]
-[[/div]]
-[[/cell]]
-[[/row]]
-[[row]][[hcell]]filter:[[/hcell]][[hcell colspan="4" style="font-weight: normal; text-align: left;"]]
-hue-rotate(185deg)
-saturate(40%)
-brightness(86%)
-[[/hcell]][[/row]]
-[[/table]]
 
 
 [!-- Pataphysics Department Theme --]
-[[table class="wiki-content-table" style="float: left; margin-right: 0.8em;"]]
-[[row]][[hcell colspan="5"]][http://scp-wiki.wikidot.com/component:pataphysics-theme Pataphysics Department Theme][[/hcell]][[/row]]
-[[row]][[cell]][[/cell]][[hcell]]color code[[/hcell]][[hcell]]H[[/hcell]][[hcell]]S[[/hcell]][[hcell]]V[[/hcell]][[/row]]
-[[row]][[hcell rowspan="2"]]Link[[/hcell]][[cell rowspan="2"]]**##5b2f8e|#5b2f8e##**[[/cell]][[cell]]268deg[[/cell]][[cell]]67%[[/cell]][[cell]]56%[[/cell]][[/row]]
-[[row]][[cell]]-87deg[[/cell]][[cell]]67%[[/cell]][[cell]]/[[/cell]][[/row]]
+[[include :scp.avn.sh:7happy7:sample-int |class=pt
+|link=[http://scp-wiki.wikidot.com/component:pataphysics-theme Pataphysics Department Theme]
+**[[size 80%]]by [[*user FloppyPhoenix]], [[*user TSATPWTCOTTTADC]], [[*user Woedenaz]][[/size]]**
+|hex=#5b2f8e|h=268|s=67|v=56
+|bg=#f3f3f3|h2=0|s2=0|v2=95
+|style=background: #f3f3f3;border: 2px solid #3e2659;border-radius: 0;box-shadow: 0 2px 6px rgba(32,32,32,0);
+]]
 
-[[row]][[hcell rowspan="2"]]side-bg[[/hcell]][[cell rowspan="2"]]**##f3f3f3|#f3f3f3##**[[/cell]][[cell]]0deg[[/cell]][[cell]]0%[[/cell]][[cell]]95%[[/cell]][[/row]]
-[[row]][[cell]]/[[/cell]][[cell]]/[[/cell]][[cell]]95%[[/cell]][[/row]]
 
-[[row]]
-[[cell colspan="5" style="text-align: center;"]]
-[[div class="side-block" style="width: 17em;background: #f3f3f3;border: 2px solid #3e2659;border-radius: 0;box-shadow: 0 2px 6px rgba(32,32,32,0);"]]
-[[a href="#" style="font-weight: bold; color: #5b2f8e;"]]side-block sample[[/a]]
-[[/div]]
-[[/cell]]
-[[/row]]
 
-[[row]]
-[[cell class="scpnet-interwiki-wrapper pt" colspan="5" style="padding: 0; text-align: left;"]]
-[[div class="interwiki"]]
-[[div_ class="interwiki__title"]]
-Interwiki sample
-[[/div]]
-[[div_ class="interwiki__entry"]]
-[[a href="#asap"]]Esperanto[[/a]]
-[[/div]]
-[[div_ class="interwiki__entry"]]
-[[a href="#asap"]]tlhIngan Hol[[/a]]
-[[/div]]
-[[div_ class="interwiki__entry"]]
-[[a href="#asap"]]Na'vi[[/a]]
-[[/div]]
-[[div_ class="interwiki__entry"]]
-[[a href="#asap"]]Qenya[[/a]]
-[[/div]]
-[[/div]]
-[[/cell]]
-[[/row]]
-[[row]][[hcell]]filter:[[/hcell]][[hcell colspan="4" style="font-weight: normal; text-align: left;"]]
-hue-rotate(273deg)
-saturate(67%)
-brightness(95%)
-[[/hcell]][[/row]]
-[[/table]]
+[!-- SAPPHIRE Theme --]
+[[include :scp.avn.sh:7happy7:sample-int |class=sap
+|link=[http://topia.wikidot.com/component:saphir-theme SAPPHIRE Theme]
+**[[size 80%]]by [[*user stormbreath]][[/size]]**
+|hex=#151a61|h=236|s=78|v=38
+|bg=#e5e5e5|h2=0|s2=0|v2=90
+|style=border-color: #333;border-radius: 0;box-shadow: 0 2px 6px rgba(102,102,102,.5);
+]]
+
+
+
 
 
 +* [[span style="display: inline-block; width: 100%;"]]Exception[[/span]]
 [!-- The Way It Ends (djkaktus's Proposal III) --]
 [[table class="wiki-content-table" style="float: left; margin-right: 0.8em;"]]
-[[row]][[hcell colspan="5"]][http://kontainer.djkakt.us/component:thewayitendstheme The Way It Ends Theme][[/hcell]][[/row]]
+[[row]][[hcell colspan="5"]][http://kontainer.djkakt.us/component:thewayitendstheme The Way It Ends Theme]
+**[[size 80%]]by [[*user djkaktus]][[/size]]**[[/hcell]][[/row]]
 [[row]][[cell]][[/cell]][[hcell]]color code[[/hcell]][[hcell]]H[[/hcell]][[hcell]]S[[/hcell]][[hcell]]V[[/hcell]][[/row]]
 [[row]][[hcell rowspan="2"]]Link[[/hcell]][[cell rowspan="2"]]--**##e80e0e|#e80e0e##**--[[/cell]][[cell]]--0deg--[[/cell]][[cell]]--93%--[[/cell]][[cell]]--90%--[[/cell]][[/row]]
 [[row]][[cell]]---5deg--[[/cell]][[cell]]--93%--[[/cell]][[cell]]/[[/cell]][[/row]]
@@ -807,7 +577,8 @@ Interwiki sample
 
 [!-- IJAMEA --]
 [[table class="wiki-content-table" style="float: left; margin-right: 0.8em;"]]
-[[row]][[hcell colspan="5"]][http://www.scp-wiki.net/component:ijamea-theme IJAMEA Theme][[/hcell]][[/row]]
+[[row]][[hcell colspan="5"]][http://www.scp-wiki.net/component:ijamea-theme IJAMEA Theme]
+**[[size 80%]]by [[*user Dr Solo]][[/size]]**[[/hcell]][[/row]]
 [[row]][[cell]][[/cell]][[hcell]]color code[[/hcell]][[hcell]]H[[/hcell]][[hcell]]S[[/hcell]][[hcell]]V[[/hcell]][[/row]]
 [[row]][[hcell rowspan="2"]]Link[[/hcell]][[cell rowspan="2"]]**##000000|#000000##**[[/cell]][[cell]]0deg[[/cell]][[cell]]0%[[/cell]][[cell]]0%[[/cell]][[/row]]
 [[row]][[cell]]/[[/cell]][[cell]]/[[/cell]][[cell]]/[[/cell]][[/row]]
@@ -2727,6 +2498,9 @@ filter: hue-rotate(185deg) saturate(40%) brightness(86%);
 .pt {
 filter: hue-rotate(273deg) saturate(67%) brightness(95%);
 }
+.sap {
+filter: hue-rotate(241deg)  saturate(78%) brightness(90%)
+}
 
 .end {
 filter: hue-rotate(5deg) saturate(93%) brightness(8%);
@@ -2750,6 +2524,11 @@ text-align: center;
 .wiki-content-table:not(.t-sample) tr:nth-child(6) td:nth-child(3) {
 background: #fff0f0;
 }
+.wiki-content-table .printuser a {
+font-weight: normal!important;
+font-size: 0.9em;
+}
+
 [[/module]]
 
 [[module CSS]]
