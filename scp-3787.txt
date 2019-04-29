@@ -1,35 +1,85 @@
 title:SCP-3787
-[[include info:start]]
-**SCP-3787:** The Horse Meme **[[[[https://youtu.be/5hQaGJw-pmw|Audio Version]]]]**
-**Author:** [[*user FloppyPhoenix]]
+[[include :scp.avn.sh:component:aers:info-stuff
+|lang=en
+|page=scp-3787
+|authorPage=http://www.scp-wiki.net/floppyphoenix
+|comments=**SCP-3787:** The Horse Meme **[[*https://youtu.be/5hQaGJw-pmw Audio Version]]** 
+**Author:** [[*user FloppyPhoenix]] 
 ----
-[[div class="footer-wikiwalk-nav"]]
-[[include :scpsandbox2:FloppyPhoenix2]]
-[[/div]]
-[[include info:end]]
+[[include :scpdsandbox:floppyphoenix-info]]]]
 
-[[module css]]
-a.collapsible-block-link { font-weight: bold; }
+[[module CSS]]
+sup {
+    vertical-align: top;
+    position: relative;
+    top: -0.5em;
+}
+body{
+    --cutColour: #fafafa;
+    --barColour: #590505;
+}
+.translation_block{
+    display: none;
+}
+.info-container .collapsible-block-folded a{
+    color: #FFF;
+}
+.info-container .collapsible-block-unfolded-link a{
+    color: #FFF;
+}
+.info-container .collapsible-block-link, 
+.info-container:hover .collapsible-block-link {
+    line-height: 1.6em;
+}
+.collapsible-block-link{ 
+    font-weight: bold;
+}
+.report-box{
+    display: inline-block;
+    border: solid 1px #444;
+    background: white;
+    float: top;
+    width: 100%;
+    padding: 3px 12px;
+    margin: auto;
+}
+.quote-block {
+    display: inline-block;
+    border: 1px double #999;
+    background: #F5F5F5;
+    width: 85%;
+    padding: 3px 12px;
+    margin: auto;
+}
+.quote-block blockquote {
+    border: 1px double #999;
+}
 [[/module]]
 
-[[table style="border: none; width: 100%;"]]
-[[row]]
-[[cell]]
-[[size 125%]]**Item Number:** SCP-3787[[/size]]
-[[/cell]]
-[[cell style="text-align: right;"]]
-[[size 125%]]**Level 3/3787**[[/size]]
-[[/cell]]
-[[/row]]
-[[row]]
-[[cell]]
-[[size 125%]]**Object Class:** Archon[[footnote]]Archon-class anomalies are anomalies that should not be contained due to the damage that would be caused by doing so. [[/footnote]][[/size]]
-[[/cell]]
-[[cell style="text-align: right;"]]
-[[size 125%]]**Classified**[[/size]]
-[[/cell]]
-[[/row]]
-[[/table]]
+[[>]]
+[[module Rate]]
+[[/>]]
+@@ @@
+@@ @@
+@@ @@
+[[include :scp-wiki:component:object-class-bar-source
+|item-num=3787
+|obj-class=Keter
+|site-resp=USWIMC Site-82
+|director=Imogen Metcalfe
+|rsch-head=Elliot Alces
+|task-force=Pi-5
+|colorbar-bg-color=rgb(0,0,0)
+|colorbar-bg-img=optional
+|colorbar-one=full
+|colorbar-two=full
+|colorbar-three=full
+|colorbar-four=half
+|colorbar-five=half
+|colorbar-six=none
+|level=3
+|secrecy=CLASSIFIED
+]]
 
 [[a href="*http://scp-int.wikidot.com/niveaux-de-menace-des-objets-scp" style="font-size: 18px; color: white; text-shadow: 1px 3px 1px rgba(0,0,0,0.3); text-decoration: none;"]]
 [[span_ style="display: inline-block; width: 100%; background-color: #b01; text-align: center; border: 1px none #000; margin: 1px; padding-top: 8px; padding-bottom: 8px;"]]
@@ -37,12 +87,14 @@ a.collapsible-block-link { font-weight: bold; }
 [[/span]]
 [[/a]]
 ----
-**Special Containment Procedures [OUTDATED]:** 
-> As the anomaly associated with SCP-3787 continues to change over time, its documentation appears here in chronological order. All observed changes to the properties of this anomaly will appear as addenda materials. Only the most recent version of this anomaly's containment procedures are viable. The original 2021/06/30 documentation is as follows.
+**Foundation Containment Committee Notice:**
+> As the anomaly associated with SCP-3787 continues to change over time, its documentation appears here in chronological order. All observed changes to the properties of this anomaly will appear as addenda materials. Only the most recent version of this anomaly's containment procedures are viable. 
+> 
+> The original 2021/06/30 documentation is as follows.
 
-To ensure that horse breeding continues as a controlled element and to avoid further progression of the anomaly, Foundation personnel within the Zoology Department are to infiltrate various tiers of the North American horse industry. 
+**Special Containment Procedures [OUTDATED]:** To ensure that horse breeding continues as a controlled element and to avoid further progression of the anomaly, Foundation personnel within the Zoology Department are to infiltrate various tiers of the North American horse industry. 
 
-Analysts are to track domesticated horse populations for anomalous effects such as uncharacteristic or unprovoked aggression, deviance from feeding habits, and deviance from natural breeding cycles.  As personnel cannot quantify the exact numbers of feral horse populations, known populations are to be monitored for abnormal behaviour. 
+Analysts are to track domesticated horse populations for anomalous effects such as uncharacteristic or unprovoked aggression, deviance from feeding habits, and deviance from natural breeding cycles. As personnel cannot quantify the exact numbers of feral horse populations, known populations are to be monitored for abnormal behaviour. 
 
 To ensure no deviance to the well-being of baseline horse populations, personnel are to avoid sterilization efforts of current horse populations in an attempt to slow down birth rates and overpopulation. Instead, hormonal agent 762988-16-7 is to be dispersed among horse populations. 762988-16-7 targets horse endocrine systems to promote docility and extend breeding cycles.
 
@@ -54,7 +106,7 @@ SCP-3787-A refers to the emergence of a gestation period 8 to 10 times more rapi
 
 Horses involved in this breeding cycle, including both newborn foals and pregnant mares, are not negatively affected by this accelerated gestation period. Newborn foals exhibit physiological properties similar in nature to their non-anomalous counterparts. They develop within pregnant mares despite lacking the necessary sustenance over the accelerated developmental period.
 
-SCP-3787-B describes an anomalous increase in horse aggression in free-roam horse populations. Personnel have observed SCP-3787-B in the mustang populations of Nevada, where the largest feral horse population in North America exists. Examples of aggression include unprovoked hostilities toward horses outside a constituent pack, the active killing of most or all members of a feral horse pack by that pack's dominant stallion, and in some cases, the cannibalization of foals as a show of dominance[[footnote]]Document 3787.0031 contains a full list of observed hunting behaviour.[[/footnote]].
+SCP-3787-B describes an anomalous increase in horse aggression in free-roam horse populations. Personnel have observed SCP-3787-B in the mustang populations of Nevada, where the largest feral horse population in North America exists. Examples of aggression include unprovoked hostilities toward horses outside a constituent pack, the active killing of most or all members of a feral horse pack by that pack's dominant stallion, and in some cases, the cannibalization of foals as a show of dominance.[[footnote]]Document 3787.0031 contains a full list of observed hunting behaviour.[[/footnote]]
 
 Increase in horse hostility has extended into normal horse feeding patterns as well. Feral horse packs affected by this anomaly will carry out organized attacks on other wildlife, escalating to the point of ignoring herbivorous feeding habits. This occurs despite horse jaw structures and digestive systems being biologically unsuited for meat consumption. This manner of aggression has led to the progression of horses to the top of the food chain in many areas.
 
@@ -62,38 +114,42 @@ SCP-3787-B initially began in newborn foals affected by SCP-3787-A but has since
 
 SCP-3787-ε is the designation given to an anomalous memetic form of equinophobia, or the emergence of an intense fear of horses among humans with no previous basis to fear horses. Individuals may not be aware that they have been affected by this anomaly until they have been re-exposed to the concept of horses through forms of media, or through personal conversations that reference horses.
 
-SCP-3787-ε occurs in suburban areas and urban centres, and among populations far from rural communities. More specifically, SCP-3787-ε occurs among populations with little access to that which is equine in nature[[footnote]]Domesticated stud farms are an example of a resource unreachable to populations in these kinds of communities, though it can be noted that populations immediately interested in thoroughbred horse racing have not been affected.[[/footnote]]. Individuals within these populations with a fascination for horses on any level are not affected by this anomaly. An estimated 350,000 individuals within the continental United States alone have contracted this anomaly.
+SCP-3787-ε occurs in suburban areas and urban centres, and among populations far from rural communities. More specifically, SCP-3787-ε occurs among populations with little access to that which is equine in nature.[[footnote]]Domesticated stud farms are an example of a resource unreachable to populations in these kinds of communities, though it can be noted that populations immediately interested in thoroughbred horse racing have not been affected.[[/footnote]] Individuals within these populations with a fascination for horses on any level are not affected by this anomaly. An estimated 350,000 individuals within the continental United States alone have contracted this anomaly.
 
-**Addendum 3787.1:** On 2021/06/30, Foundation efforts to reduce the heightened equine birth rate were deemed successful. The median horse gestation period levelled out to approximately 1.5 times the baseline. In the two months since the detection of the anomaly, approximately 450,000 new horses were born in the United States alone.
+**Addendum 3787.1:** On June 30, 2021, Foundation efforts to reduce the heightened equine birth rate were deemed successful. The median horse gestation period levelled out to approximately 1.5 times the baseline. In the two months since the detection of the anomaly, approximately 450,000 new horses were born in the United States alone.
 
-On 2021/07/12, Zoology Department personnel observed what they hypothesized to be an anomalous illness spreading throughout domesticated horse populations. Horses affected by this illness experienced a period of extreme stress, leaving them in a comatose state. In approximately 18.5% of cases, affected horses later expired. Approximately 37% of horses in the Southern and Southwestern United States have been afflicted with this illness.
+On July 12, Zoology Department personnel observed what they hypothesized to be an anomalous illness spreading throughout domesticated horse populations. Horses affected by this illness experienced a period of extreme stress, leaving them in a comatose state. In 18% of cases, affected horses later expired. 37% of horses in the Southern and Southwestern United States have been afflicted with this illness.
 
-Research efforts into a cure for this illness have, as of 2021/07/29, proven ineffective.
+Research efforts into a cure for this illness have, as of July 29, proven ineffective.
 
-**Addendum 3787.2:** Since 2021/07/12, the accelerated spread of this illness has led to the death of approximately 1.1 million horses in the US alone. On 2021/08/10, Site-82, in conjunction with the Scientific Department, published a report on PROJECT: DIRE HORSE to SCiPNET. A summary of the report is as follows.
+**Addendum 3787.2:** Since July 12, the accelerated spread of this illness has led to the death of approximately 1.1 million horses in the US alone. On August 10, Site-82, in conjunction with the Scientific Department, published a report on PROJECT: DIRE HORSE to SCiPNET. A summary of the report is as follows.
 
-[[div style="border:solid 1px #000000; background:#ffffff; padding:3px; margin-bottom: 3px; margin-top: 3px; margin-right: 50px; margin-left: 50px; width: 80%; float:none; padding-left: 20px; padding-right: 20px;"]]
-[[collapsible show="► Open report?" hide="▲ Close" hideLocation="bottom"]]
-----
+[[div style="text-align: center;"]]
+[[div class="report-box" style="margin-bottom: 3px;"]]
+[[collapsible show="► Open report? ◄" hide="▲ Close ▲" hideLocation="bottom"]]
+[[f>image http://scp-ru.wdfiles.com/local--files/list-of-foundation-s-internal-departments/sd.png style="width: 90px;"]]
 [[=]]
-++++ ##black|Summary of PROJECT: DIRE HORSE##
++++ Summary of PROJECT: DIRE HORSE
 [[/=]]
-----
-[[include component:image-block name=factory-farm.jpg|caption=Ashleigh's Fields]]
 
+[[<]]
 PROJECT: DIRE HORSE outlines the production of a significant synthetic horse population and the dissemination of this new population across the United States. This is to be done to mitigate the ongoing loss of horse populations and to produce a phenotype resistant to the effects of the anomalous illness. To achieve this goal, DIRE HORSE has employed the use of Ashleigh's Fields, a cattle farm in Newton News, Montana, which has been operating under the Foundation front company Stratford Cattle Productions since 2010. Ashleigh's Fields uses an industrial farming facility responsible for the mass production of synthetic livestock in the place of modern farming techniques.
+
+[[include component:image-block name=factory-farm.jpg|caption=Ashleigh's Fields]]
 
 DIRE HORSE makes use of the Rimmer-Lister Hippological Simulacrum (RLHS) prototype. The RLHS is capable of producing 500 artificially grown adult horses, or approximately 1,000 foals, per hour, within 99.91% genetic similarity of their natural counterparts. Horses produced by the RLHS are behaviorally engineered and memetically hardened to reduce the potential effects of an SCP-3787-B spread into its population. In the event of a runaway equine extinction due to SCP-3787, the RLHS and its sentinel facility at Ashleigh's Fields are capable of storing up to 100,000 stable horses in cryonic storage for a period of up to 10 years. 
 
 To reduce public awareness of the full extent of SCP-3787's spread, DIRE HORSE is to immediately begin to replace horse populations in 35 different states. Document 3787.0155 outlines information on this process. Any expired horses having been affected by SCP-3787 in any capacity are to be collected and sent to Site-41 for decommissioning purposes. 
 
 Document 3787.0157 contains further information on the technical and logistical specifications of the RLHS.
+[[/<]]
 [[/collapsible]]
 [[/div]]
+[[/div]]
 
-[[div style="border:solid 1px #000000; background:#ffffff; padding:3px; margin-bottom: 3px; margin-top: 3px; margin-right: 50px; margin-left: 50px; width: 80%; float:none; padding-left: 20px; padding-right: 20px;"]]
-[[collapsible show="► LEVEL 4 CLEARANCE REQUIRED" hide="▲ Close" hideLocation="bottom"]]
-----
+[[div style="text-align: center;"]]
+[[div class="report-box"]]
+[[collapsible show="► LEVEL 4 CLEARANCE REQUIRED ◄" hide="▲ Close ▲" hideLocation="bottom"]]
 [[div class="orderwrapper"]]
 [[div class="council1"]]
 [[/div]]
@@ -115,6 +171,7 @@ Unauthorized access is forbidden.##
 .orderwrapper {position: relative;width: auto;text-align: center;}.council1 {position: relative;top: 0;bottom: 0;left: 0;right: 0;width: 295px;height: 295px;margin: auto;background-image: url( "http://scp-wiki.wdfiles.com/local--files/scp-3787/antimemetics_trans.png" );background-size: 295px 295px;background-repeat: no-repeat;background-position: center;}.ordertitle {position: absolute;left: 0;right: 0;top: 38px;}.ordertitle h1 {font-size: 220%;color: #555;}.orderdescription {position: absolute;left: 0;right: 0;top: 85px;width: 100%;}.orderdescription p {font-size: 90%;color: #555;}.orderdescription h1 {font-size: 120%;color: #555;}.itemno {position: absolute;left: 0;right: 0;bottom: 27px;}.itemno h1 {font-size: 170%;color: #555;}
 [[/module]]
 ----
+[[<]]
 [[include component:image-block name=site-41.jpg|caption=Site-41 during Procedure: IRISH WRISTWATCH]]
 
 To prevent environmental contamination, expired SCP-3787-affected horses are to be tagged and collected for decommissioning purposes. The nature of this decommissioning is as follows:
@@ -126,25 +183,29 @@ To prevent environmental contamination, expired SCP-3787-affected horses are to 
 * A network of Foundation web crawlers are to carry out mass media blackouts by purging any uncontained news reports on SCP-3787.
 *  A random pool of approximately 1,100 expired horses (0.1% of all horses killed by SCP-3787) are to be stored for future testing. Expired horses are to be taken to Site-41 for neutralization.
 
-Neutralization efforts will operate with the end goal of destroying all expired horses affected by SCP-3787. As per Procedure: IRISH WRISTWATCH, all destroyed subjects are to be broken down into a component slurry to begin the transformation into Class-W, -X, and -Y mnestics material, as a primary component of modern mnestics is an admixture of various parts of horse anatomy[[footnote]]See //Understanding Antimemetics, First Edition// by Drs L. Marness & G. Yarrow, published in 1976.[[/footnote]]. As of 2021/08/20, this aspect of PROJECT: DIRE HORSE has been taken over by the --[[[antimemetics-division-hub|Antimemetics Division]]]--[[footnote]][DATA LOST][[/footnote]].
+Neutralization efforts will operate with the end goal of destroying all expired horses affected by SCP-3787. As per Procedure: IRISH WRISTWATCH, all destroyed subjects are to be broken down into a component slurry to begin the transformation into Class-W, -X, and -Y mnestics material, as a primary component of modern mnestics is an admixture of various parts of horse anatomy.[[footnote]]See //Understanding Antimemetics, First Edition// by Drs L. Marness & G. Yarrow, published in 1976.[[/footnote]] As of August 20, this aspect of PROJECT: DIRE HORSE has been taken over by the --[[[antimemetics-division-hub|Antimemetics Division]]]--.[[footnote]][DATA LOST][[/footnote]]
+[[/<]]
 [[/collapsible]]
 [[/div]]
+[[/div]]
 
-**Addendum 3787.3:** On 2021/09/03 at 01:04 AM, unknown anomalous entities attempted to force access into Site-41 before being repelled by automated lockdown procedures. A transcript of the encounter, as recorded by on-site surveillance, is as follows.
+**Addendum 3787.3:** On September 3 at 01:04 AM, unknown anomalous entities attempted to force access into Site-41 before being repelled by automated lockdown procedures. A transcript of the encounter, as recorded by on-site surveillance, is as follows.
 
-[[div style="display: inline-block; border:dashed 1px #999999; background:#F5F5F5; float:center; width:84%; padding:1px 15px; margin: 10px 10px 10px 40px"]]
-[[collapsible show="► Open transcript?" hide="▲ Close" hideLocation="bottom"]]
+[[div style="text-align: center;"]]
+[[div class="quote-block"]]
+[[collapsible show="► Open transcript? ◄" hide="▲ Close ▲" hideLocation="bottom"]]
 = **VIDEO LOG**
 ----
+[[<]]
 **Note:** Due to the high volume of antimemetic anomalies on-site, all cameras at Site-41 are outfitted with a Mariotte-Pashler antimemetic perception filter, as well as standard night vision. This allows for the surveillance of most documented forms of antimemetic or counterconceptual anomalies. For the sake of identification purposes, the cameras outline anomalies corresponding to this description in red.
 ----
-**<Begin Log, 01:04 AM>**
+= **<Begin Log, 01:04 AM>**
 
-//A large wheel-shaped entity comes into view approximately 350 meters from Site-41[[footnote]]Eight individual entities working in tandem appeared to form the entity, which was at first believed to be singular.[[/footnote]]. The entity is identified by a contrasting red against the green hue of the surveillance footage. The wheel-like anatomical structure bypasses a surveillance pylon by rolling through it at approximately 50 km/h, taking out two of the pylon's legs. Security alarms begin to emit a high-pitched whine as the entity continues toward the site, at which point it begins to slow down.//
+//[A large wheel-shaped entity comes into view approximately 350 meters from Site-41.[[footnote]]Eight individual entities working in tandem appeared to form the entity, which was at first believed to be singular.[[/footnote]] The entity is identified by a contrasting red against the green hue of the surveillance footage. The wheel-like anatomical structure bypasses a surveillance pylon by rolling through it at approximately 50 km/h, taking out two of the pylon's legs. Security alarms emit a high-pitched whine as the entity continues toward the site, at which point it slows down.]//
 
-//MTF-Chai-10 ("Oxygenated Morons"), a three-man fast-insertion unit, comes into view, approaching the entity on a military ATV outfitted with an M2 heavy machine gun. At this point, the entity forms a ball and begins to expand.//
+//[MTF-Chai-10 ("Oxygenated Morons"), a three-man fast-insertion unit, comes into view, approaching the entity on a military ATV outfitted with an M2 heavy machine gun. The entity forms a ball expands.]//
 
-//MTF-Chai-10 is aware of the entity due to excess mnestic emissions from Procedure: IRISH WRISTWATCH present in the air.//
+//[MTF-Chai-10 is aware of the entity due to excess mnestic emissions from Procedure: IRISH WRISTWATCH present in the air.]//
 
 **MTF-Chai-10-1:** What the fuck?
 
@@ -152,19 +213,17 @@ Neutralization efforts will operate with the end goal of destroying all expired 
 
 **MTF-Chai-10-3:** Firing.
 
-//MTF-Chai-10-3 fires a 5-second long burst at the entity, expelling 75 rounds. The entity's outer layer makes a popping sound before emitting loud equine vocalizations. An individual entity separates from the larger entity and gallops towards MTF-Chai-10.//
+//[MTF-Chai-10-3 fires a 5-second long burst at the entity, expelling 75 rounds. The entity's outer layer makes a popping sound before emitting loud equine vocalizations. An individual entity separates from the larger entity and gallops towards MTF-Chai-10.]//
 
-**MTF-Chai-10-2:** A horse? What the fuck?
+**MTF-Chai-10-2:** A horse?
 
-//MTF-Chai-10-2, who is operating the vehicle, begins to reverse, before circling the larger entity in a wide arc. The individual entity matches speed and chases the unit for approximately forty seconds, before latching itself to the back of the ATV. The larger entity then disappears from view.//
+//[MTF-Chai-10-2, who is operating the vehicle, reverses before circling the larger entity in a wide arc. The individual entity matches speed and chases the unit for approximately forty seconds, before latching itself to the back of the ATV. The larger entity then disappears from view.]//
 
-//MTF-Chai-10-3 fires a 10-second burst at the individual entity, expelling 150 rounds. The entity breaks apart into many smaller portions. The scattered portions continue to move, implanting themselves onto various places of the ATV.// 
+//[MTF-Chai-10-3 fires a 10-second burst at the individual entity, expelling 150 rounds. The entity breaks apart into many smaller portions. The scattered portions continue to move, implanting themselves onto various places of the ATV.]// 
 
 **MTF-Chai-10-2:** Keep firing.
 
-**MTF-Chai-10-3:** The thing's Swiss cheese, I don't have anything to fire at!
-
-//Small portions of the entity enter open sections of the ATV, causing it to cease operation.//
+//[Small portions of the entity enter open sections of the ATV, causing it to cease operation.]//
 
 **MTF-Chai-10-2:** Alright, everyone out. Let's head behind the blast doors before the automated systems kick in.
 
@@ -174,30 +233,34 @@ Neutralization efforts will operate with the end goal of destroying all expired 
 
 **MTF-Chai-10-2:** Not sure. Let's go.
 
-//MTF-Chai-10 exits the ATV and makes their way to the side of Site-41. They enter through a large blast door, which reinforces itself upon closing. Outside, the visible entity squeezes the rest of its body into the vehicle. Equine vocalizations continue for the next 10 minutes.//
+//[MTF-Chai-10 exits the ATV and makes their way to the side of Site-41. They enter through a large blast door, which reinforces itself upon closing. Outside, the visible entity squeezes the rest of its body into the vehicle. Equine vocalizations continue.]//
 
-//Soon after, the larger entity appears approximately 100 meters from the facility. The entity takes the form of a large ball approximately 2 meters in diameter.//
+//[Soon after, the larger entity appears approximately 100 meters from the facility. The entity takes the form of a large ball approximately 2 meters in diameter.]//
 
-//The entity begins to roll towards the facility, gaining immense speed. It moves towards the site at approximately 150 km/h, impacting the side of the facility and causing structural damage. The camera is sent offline from the impact, while audio surveillance continues.//
+//[The entity rolls towards the facility, gaining immense speed. It moves towards the site at approximately 150 km/h, impacting the side of the facility and causing structural damage. The camera is sent offline from the impact, while audio surveillance continues.]//
 
-//Site systems at this point log the activation of high-powered 2000W floodlights located around the facility: an automated feature to prevent intruders via disorientation before weaponized systems activate.//
+//[Site systems at this point log the activation of high-powered 2000W floodlights located around the facility: an automated feature to prevent intruders via disorientation before weaponized systems activate.]//
 
-//Audio surveillance picks up a sharp equine vocalization, loud at first, but eventually becoming fainter before terminating.//
+//[Audio surveillance picks up a sharp equine vocalization, loud at first, but eventually becoming fainter before terminating.]//
 
-**<End Log, 01:26 AM>**
+= **<End Log, 01:26 AM>**
 ----
-**Closing Remarks:** Site-41 reported no further sightings of the larger entity after 01:26 AM. By morning, when lockdown lifted, an investigation into the entity within the ATV occurred. Security personnel found the entity within the ATV blackened and shrivelled; terminated by prolonged exposure to the intense light. Extended research into the nature of these entities (designated SCP-3787-n) has begun.
+**Closing Remarks:** Site-41 reported no further sightings of the larger entity after 01:26 AM. By morning, when lockdown lifted, an investigation into the entity within the ATV occurred. Security personnel found the entity within the ATV blackened and shrivelled: terminated by prolonged exposure to the intense light. Extended research into the nature of these entities (designated SCP-3787-n) has begun.
+[[/<]]
 [[/collapsible]]
 [[/div]]
+[[/div]]
 
-**Addendum 3787.4:** On 2021/09/05, individuals affected by SCP-3787-ε experienced a spontaneous shift in anatomy, becoming more equine in nature. Not all affected individuals were able to make a full transformation[[footnote]]"Anomalous equinophobia" is now no longer present among affected individuals.[[/footnote]], with some expiring before the full transformation became possible. Individuals undergoing this transformation have designated SCP-3787-ε-1.
+**Addendum 3787.4:** On September 5, individuals affected by SCP-3787-ε experienced a spontaneous shift in anatomy, becoming more equine in nature. Not all affected individuals were able to make a full transformation,[[footnote]]"Anomalous equinophobia" is now no longer present among affected individuals.[[/footnote]] with some expiring before the full transformation became possible. Individuals undergoing this transformation have designated SCP-3787-ε-1.
 
-As well, Foundation personnel specializing in antimemetics training have begun to make note of large numbers of SCP-3787-n. These entities have begun to appear en masse as a direct result of extended Foundation efforts to control North American horse population numbers[[footnote]]A conclusion reached based on the short time span between PROJECT: DIRE HORSE and the first sighting of SCP-3787-n, as well as their appearances near common horse populations.[[/footnote]]. 
+As well, Foundation personnel specializing in antimemetics training have begun to make note of large numbers of SCP-3787-n. These entities have begun to appear en masse as a direct result of extended Foundation efforts to control North American horse population numbers.[[footnote]]A conclusion reached based on the short time span between PROJECT: DIRE HORSE and the first sighting of SCP-3787-n, as well as their appearances near common horse populations.[[/footnote]]
 
 A full description of SCP-3787-n is as follows.
 
-[[div style="display: inline-block; border:dashed 1px #999999; background:#F5F5F5; float:center; width:84%; padding:1px 15px; margin: 10px 10px 10px 40px"]]
-[[collapsible show="► Description of SCP-3787-n" hide="▲ Close" hideLocation="bottom"]]
+[[div style="text-align: center;"]]
+[[div class="quote-block"]]
+[[collapsible show="► Description of SCP-3787-n ◄" hide="▲ Close ▲" hideLocation="bottom"]]
+[[<]]
 **SCP-3787-n Description:** Each instance of SCP-3787-n is part of a collective of predatory anomalous organisms. SCP-3787-n are semi-humanoid equine entities, each composed of a malleable cartilage structure integrated with groupings of musculature typical of the common horse. Instances have a thin epidermis with slight brown colouration.
 
 A defining feature of SCP-3787-n is the cranium, which is similar in shape to that of a horse, but on a smaller scale. At the bottom of the cranium is a muzzle of equine nature, from which equine vocalizations are possible. As well, naturally occurring braided hair similar in consistency to that of horsehair is visible in the form of a mane and a tail. Each individual strand of horsehair is autonomous, despite SCP-3787-n efforts to remain static in its positioning.
@@ -211,22 +274,26 @@ All appendages, including the arms, legs, and tail, are capable of being contort
 SCP-3787-n have a strong revulsion towards most forms of visible light, even to the point of being damaged physically by exposure to it. Personnel making contact with SCP-3787-n are advised to carry any forms of light-based weaponry available, ranging from LED spotlights to hard light weaponry prototypes. No other means of damaging SCP-3787-n exist.
 
 Sightings of SCP-3787-n have almost always occurred in nocturnal settings, which has led them to become colloquially known as "Nighters" among Foundation personnel. SCP-3787-n manifest in groups ranging from 5 to 500 instances. Instances are known manifest near domestic and thoroughbred horse farms, SCP-3787-ε-1, and feral horse packs. 
+[[/<]]
 [[/collapsible]]
+[[/div]]
 [[/div]]
 
 **Addendum 3787.5:** Containment analysts at Site-82 have come to understand a complex relationship between the appearance of SCP-3787-n and the previous equine anomalies. Analysts have concluded that the emergence of increased equine aggression and accelerated birth rates was in part a widespread anomalous defense mechanism tailored towards the repulsion of SCP-3787-n. However, recent reports have shown that this behaviour has almost reversed, in due part of the influence of SCP-3787-n entities.
 
-The latest development has prompted the reclassification of SCP-3787 to an Archon-class anomaly. The Foundation is now undergoing wide scale internal research efforts focused on the anomalous nature of the equine as a species.
+The latest development has prompted the reclassification of SCP-3787 to an Archon-class anomaly.[[footnote]]Archon-class anomalies are anomalies that should not be contained due to the damage that would be caused by doing so.[[/footnote]] The Foundation is now undergoing wide-scale internal research efforts focused on the anomalous nature of the equine as a species.
 
-Since the appearance of SCP-3787-n as a collective, North American horses have begun to deviate from their normal behaviour[[footnote]]Horses produced as a result of PROJECT: DIRE HORSE have not deviated from their standard behaviour.[[/footnote]]. Almost all horse populations have begun to display SCP-3787-B and attack humans, leading to civilian casualties beyond Foundation control. In areas with a high volume of SCP-3787-ε-1 instances, SCP-3787-ε-1 as a population[[footnote]]Which has been hypothesized to currently amass around 700,000 individuals.[[/footnote]] has begun to form large groups despite pre-existing human class structures. These groups have begun a mass pilgrimage to a yet undesignated area in the American Southwest, being lead by groups of SCP-3787-n. How the two groups communicate is currently under active investigation.
+Since the appearance of SCP-3787-n as a collective, North American horses have begun to deviate from their normal behaviour.[[footnote]]Horses produced as a result of PROJECT: DIRE HORSE have not deviated from their standard behaviour.[[/footnote]] Almost all horse populations have begun to display SCP-3787-B and attack humans, leading to civilian casualties beyond Foundation control. In areas with a high volume of SCP-3787-ε-1 instances, SCP-3787-ε-1 as a population[[footnote]]Which has been hypothesized to currently amass around 700,000 individuals.[[/footnote]] has begun to form large groups despite pre-existing human class structures. These groups have begun a mass pilgrimage to a yet undesignated area in the American Southwest, being lead by groups of SCP-3787-n. How the two groups communicate is currently under active investigation.
 
 Various North American equine anomalies have begun acting in an anomalous manner that deviates from their documented behaviour. Equine anomalies seem to have taken an adversarial position on humanity as a whole and are acting in the best interests of SCP-3787-n populations. A full list of the changes to these anomalies is as follows.
 
 ||~ Equine Anomaly ||~ Documented Behaviour ||~ Behaviour Post-SCP-3787 Emergence ||
 || [[[SCP-042]]] || A wounded sapient horse that spreads a sense of euphoria after making physical contact. The horse destroys most forms of vegetation it makes contact with by dehydrating them. || SCP-042 manifested a wingspan approximately 15 meters in width, which it used to breach containment by flying over the fence of its enclosure. Contact with SCP-042 was lost for approximately 3  hours as it entered a high altitude. Contact was remade when Foundation personnel became aware of reports of a flying horse above Sedalia, Missouri. When personnel arrived, almost all the city's 21,000 citizens had been afflicted with "horse fever", which made them believe they were horses. The use of amnestics has not been able to reverse the effects of "horse fever". ||
 || [[[SCP-1556]]] || A group of 15 mustangs that manifests during foggy conditions in the American Midwest. || SCP-1556 manifested in downtown Houston, Texas, after a dense fog and gale force winds were reported. The horses displayed hostility, engaging in attacks against civilians for approximately 16 hours. Attacked civilians were later reported to behave in an equine manner and were later designated as instances of SCP-3787-ε-1. It is estimated that over 3,400 civilians have been affected by this anomaly. ||
-|| [[[SCP-2514]]] || A horse that sings a modified version of "Happy Birthday to You" at a high volume, instilling joyful memories into anyone that listens, while emitting pyrotechnics. || The Director of Area-12 found SCP-2514 out of containment and inside his office. After following the Director around for the next 12 hours and causing damage to its surroundings with pyrotechnics, SCP-2514 de-manifested. The next day, on 2021/09/07, SCP-2514 re-manifested within Site-17 and turned all human-produced food within 1 kilometre of Site-17 into horse feed, while following around any personnel with a birthday. Site-17 personnel were advised not to consume the horse feed. All food shipped to Site-17 within the next 36 hours was also rendered as horse feed. After 72 hours, personnel attempting to consume the horse feed fell into a comatose state and emitted equine vocalizations. ||
-|| [[[SCP-3996]]] || An intangible feral horse pack that manifests within the Nevada Great Basin desert every 12 hours. Individuals that choose to ride on the horse pack during this manifestation are brought to a tangent dimension with a high Hume level. || SCP-3996 manifested in a normal manner. Agent Emile, upon mounting one of the manifested horses, expected to be brought to the tangential frontier of SCP-3996-1. Instead, Agent Emile was taken to the origin place of SCP-3787-n instances[[footnote]]See ##red|Incident Log I-3996.3787.##[[/footnote]]. ||
+|| [[[SCP-2514]]] || A horse that sings a modified version of "Happy Birthday to You" at a high volume, instilling joyful memories into anyone that listens, while emitting pyrotechnics. || The Director of Area-12 found SCP-2514 out of containment and inside his office. After following the Director around for the next 12 hours and causing damage to its surroundings with pyrotechnics, SCP-2514 de-manifested. _
+ _
+ The next day, SCP-2514 re-manifested within Site-17 and turned all human-produced food within 1 kilometre of Site-17 into horse feed, while following around any personnel with a birthday. Site-17 personnel were advised not to consume the horse feed. All food shipped to Site-17 within the next 36 hours was also rendered as horse feed. After 72 hours, personnel attempting to consume the horse feed fell into a comatose state and emitted equine vocalizations. ||
+|| [[[SCP-3996]]] || An intangible feral horse pack that manifests within the Nevada Great Basin desert every 12 hours. Individuals that choose to ride on the horse pack during this manifestation are brought to a tangent dimension with a high Hume level. || SCP-3996 manifested in a normal manner. Agent Emile, upon mounting one of the manifested horses, expected to be brought to the tangential frontier of SCP-3996-1. Instead, Agent Emile was taken to the origin place of SCP-3787-n instances.[[footnote]]See ##red|Incident Log I-3996.3787.##[[/footnote]] ||
 
 As of the creation of this document, the equine anomalies have yet to be re-contained. 
 
@@ -244,9 +311,9 @@ Despite the formation of MTF-Pi-5, the full containment of SCP-3787-n and any re
 
 [[footnoteblock]]
 
-[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[div style="border-bottom: 2px solid #777; margin-bottom:1px;"]]
 [[/div]]
-[[div style="border-bottom:1px solid #777;"]]
+[[div style="border-bottom: 1px solid #777;"]]
 [[/div]]
 [[>]]
 [[module Rate]]
