@@ -9,6 +9,7 @@ title:SCP-3787
 [[include :scpdsandbox:floppyphoenix-info]]]]
 
 [[module CSS]]
+/* INFO BOX */
 sup {
     vertical-align: top;
     position: relative;
@@ -34,6 +35,8 @@ body{
 .collapsible-block-link{ 
     font-weight: bold;
 }
+
+/* DIV BLOCKS */
 .report-box{
     display: inline-block;
     border: solid 1px #444;
@@ -53,6 +56,15 @@ body{
 }
 .quote-block blockquote {
     border: 1px double #999;
+}
+
+/* FORMATTING */
+.lite-header hr{
+    width: 45%;
+    margin: auto;
+    background-color: #e6e6e6;
+    border: none;
+    height: 2px;
 }
 [[/module]]
 
@@ -115,15 +127,37 @@ SCP-3787-B initially began in newborn foals affected by SCP-3787-A but has since
 SCP-3787-ε is the designation given to an anomalous memetic form of equinophobia, or the emergence of an intense fear of horses among humans with no previous basis to fear horses. Individuals may not be aware that they have been affected by this anomaly until they have been re-exposed to the concept of horses through forms of media, or through personal conversations that reference horses.
 
 SCP-3787-ε occurs in suburban areas and urban centres, and among populations far from rural communities. More specifically, SCP-3787-ε occurs among populations with little access to that which is equine in nature.[[footnote]]Domesticated stud farms are an example of a resource unreachable to populations in these kinds of communities, though it can be noted that populations immediately interested in thoroughbred horse racing have not been affected.[[/footnote]] Individuals within these populations with a fascination for horses on any level are not affected by this anomaly. An estimated 350,000 individuals within the continental United States alone have contracted this anomaly.
-
-**Addendum 3787.1:** On June 30, 2021, Foundation efforts to reduce the heightened equine birth rate were deemed successful. The median horse gestation period levelled out to approximately 1.5 times the baseline. In the two months since the detection of the anomaly, approximately 450,000 new horses were born in the United States alone.
+@@ @@
+[[div class="lite-header"]]
+----
+[[/div]]
+[[=]]
+++ Addendum 3787.1
++++ ##darkred|SCP-3787 UPDATE##
+[[/=]]
+[[div class="lite-header"]]
+----
+[[/div]]
+@@ @@
+On June 30, 2021, Foundation efforts to reduce the heightened equine birth rate were deemed successful. The median horse gestation period levelled out to approximately 1.5 times the baseline. In the two months since the detection of the anomaly, approximately 450,000 new horses were born in the United States alone.
 
 On July 12, Zoology Department personnel observed what they hypothesized to be an anomalous illness spreading throughout domesticated horse populations. Horses affected by this illness experienced a period of extreme stress, leaving them in a comatose state. In 18% of cases, affected horses later expired. 37% of horses in the Southern and Southwestern United States have been afflicted with this illness.
 
 Research efforts into a cure for this illness have, as of July 29, proven ineffective.
-
-**Addendum 3787.2:** Since July 12, the accelerated spread of this illness has led to the death of approximately 1.1 million horses in the US alone. On August 10, Site-82, in conjunction with the Scientific Department, published a report on PROJECT: DIRE HORSE to SCiPNET. A summary of the report is as follows.
-
+@@ @@
+[[div class="lite-header"]]
+----
+[[/div]]
+[[=]]
+++ Addendum 3787.2
++++ ##darkred|PROJECT: DIRE HORSE##
+[[/=]]
+[[div class="lite-header"]]
+----
+[[/div]]
+@@ @@
+Since July 12, the accelerated spread of this illness has led to the death of approximately 1.1 million horses in the US alone. On August 10, Site-82, in conjunction with the Scientific Department, published a report on PROJECT: DIRE HORSE to SCiPNET. A summary of the report is as follows.
+@@ @@
 [[div style="text-align: center;"]]
 [[div class="report-box" style="margin-bottom: 3px;"]]
 [[collapsible show="► Open report? ◄" hide="▲ Close ▲" hideLocation="bottom"]]
@@ -188,9 +222,20 @@ Neutralization efforts will operate with the end goal of destroying all expired 
 [[/collapsible]]
 [[/div]]
 [[/div]]
-
-**Addendum 3787.3:** On September 3 at 01:04 AM, unknown anomalous entities attempted to force access into Site-41 before being repelled by automated lockdown procedures. A transcript of the encounter, as recorded by on-site surveillance, is as follows.
-
+@@ @@
+[[div class="lite-header"]]
+----
+[[/div]]
+[[=]]
+++ Addendum 3787.3
++++ ##darkred|INCIDENT LOG##
+[[/=]]
+[[div class="lite-header"]]
+----
+[[/div]]
+@@ @@
+On September 3 at 01:04 AM, unknown anomalous entities attempted to force access into Site-41 before being repelled by automated lockdown procedures. A transcript of the encounter, as recorded by on-site surveillance, is as follows.
+@@ @@
 [[div style="text-align: center;"]]
 [[div class="quote-block"]]
 [[collapsible show="► Open transcript? ◄" hide="▲ Close ▲" hideLocation="bottom"]]
@@ -250,8 +295,19 @@ Neutralization efforts will operate with the end goal of destroying all expired 
 [[/collapsible]]
 [[/div]]
 [[/div]]
-
-**Addendum 3787.4:** On September 5, individuals affected by SCP-3787-ε experienced a spontaneous shift in anatomy, becoming more equine in nature. Not all affected individuals were able to make a full transformation,[[footnote]]"Anomalous equinophobia" is now no longer present among affected individuals.[[/footnote]] with some expiring before the full transformation became possible. Individuals undergoing this transformation have designated SCP-3787-ε-1.
+@@ @@
+[[div class="lite-header"]]
+----
+[[/div]]
+[[=]]
+++ Addendum 3787.4
++++ ##darkred|INVESTIGATION##
+[[/=]]
+[[div class="lite-header"]]
+----
+[[/div]]
+@@ @@
+On September 5, individuals affected by SCP-3787-ε experienced a spontaneous shift in anatomy, becoming more equine in nature. Not all affected individuals were able to make a full transformation,[[footnote]]"Anomalous equinophobia" is now no longer present among affected individuals.[[/footnote]] with some expiring before the full transformation became possible. Individuals undergoing this transformation have designated SCP-3787-ε-1.
 
 As well, Foundation personnel specializing in antimemetics training have begun to make note of large numbers of SCP-3787-n. These entities have begun to appear en masse as a direct result of extended Foundation efforts to control North American horse population numbers.[[footnote]]A conclusion reached based on the short time span between PROJECT: DIRE HORSE and the first sighting of SCP-3787-n, as well as their appearances near common horse populations.[[/footnote]]
 
@@ -279,7 +335,7 @@ Sightings of SCP-3787-n have almost always occurred in nocturnal settings, which
 [[/div]]
 [[/div]]
 
-**Addendum 3787.5:** Containment analysts at Site-82 have come to understand a complex relationship between the appearance of SCP-3787-n and the previous equine anomalies. Analysts have concluded that the emergence of increased equine aggression and accelerated birth rates was in part a widespread anomalous defense mechanism tailored towards the repulsion of SCP-3787-n. However, recent reports have shown that this behaviour has almost reversed, in due part of the influence of SCP-3787-n entities.
+Containment analysts at Site-82 have come to understand a complex relationship between the appearance of SCP-3787-n and the previous equine anomalies. Analysts have concluded that the emergence of increased equine aggression and accelerated birth rates was in part a widespread anomalous defense mechanism tailored towards the repulsion of SCP-3787-n. However, recent reports have shown that this behaviour has almost reversed, in due part of the influence of SCP-3787-n entities.
 
 The latest development has prompted the reclassification of SCP-3787 to an Archon-class anomaly.[[footnote]]Archon-class anomalies are anomalies that should not be contained due to the damage that would be caused by doing so.[[/footnote]] The Foundation is now undergoing wide-scale internal research efforts focused on the anomalous nature of the equine as a species.
 
@@ -298,8 +354,19 @@ Various North American equine anomalies have begun acting in an anomalous manner
 As of the creation of this document, the equine anomalies have yet to be re-contained. 
 
 SCP-3787-n have directed efforts toward creating an equine ethnostate composed of both horses and SCP-3787-ε-1 populations. Contact with passing equine populations by any non-equine populations has led to confrontative behaviour by SCP-3787-n to protect equine populations. Foundation personnel attempting to hinder the effects of SCP-3787 also face aggression by SCP-3787-n, and in some cases become transformed into horses by unknown means.
-
-**Addendum 3787.6:** MTF-Pi-5 ("Glue Factory") has been formed to repel the attacks of SCP-3787-n. Each member of MTF-Pi-5 is trained to deal with antimemetic anomalies and are to remain on a strict Class-W mnestic prescription. A summary of the task force's equipment is as follows:
+@@ @@
+[[div class="lite-header"]]
+----
+[[/div]]
+[[=]]
+++ Addendum 3787.5
++++ ##darkred|FURTHER ACTIONS TAKEN##
+[[/=]]
+[[div class="lite-header"]]
+----
+[[/div]]
+@@ @@
+MTF-Pi-5 ("Glue Factory") has been formed to repel the attacks of SCP-3787-n. Each member of MTF-Pi-5 is trained to deal with antimemetic anomalies and are to remain on a strict Class-W mnestic prescription. A summary of the task force's equipment is as follows:
 
 * 40 combat operatives using light-based weaponry such as the 1000W N-62A Laser Optics Pistol, the 2000W G1A Tactical Solid-state Laser Rifle, and the prototype 30,000W Basok-Prokhorov RX-7Z Hard Light Heavy Rifle ("Nulltaker").
 * 4000 lm flashlights and interfaces with night vision and blue-light eye protection lenses.
