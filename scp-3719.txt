@@ -1,13 +1,56 @@
 title:SCP-3719
-[[include info:start]]
-**SCP-3719:** Your Friendly Neighbourhood Lawnmower
-**Author:** [[*user FloppyPhoenix]]
+[[include :scp.avn.sh:component:aers:info-stuff
+|lang=en
+|page=scp-3719
+|authorPage=http://www.scp-wiki.net/floppyphoenix
+|comments=**SCP-3719:** Your Friendly Neighbourhood Lawnmower 
+**Author:** [[*user FloppyPhoenix]] 
 ----
-[[div class="footer-wikiwalk-nav"]]
-[[include :scpsandbox2:FloppyPhoenix2]]
-[[/div]]
-[[include info:end]]
+[[include :scpdsandbox:floppyphoenix-info]]]]
 
+[[module CSS]]
+/* INFO BOX */
+sup {
+    vertical-align: top;
+    position: relative;
+    top: -0.5em;
+}
+body{
+    --cutColour: #fafafa;
+    --barColour: #590505;
+}
+.translation_block{
+    display: none;
+}
+.info-container .collapsible-block-folded a{
+    color: #FFF;
+}
+.info-container .collapsible-block-unfolded-link a{
+    color: #FFF;
+}
+.info-container .collapsible-block-link,
+.info-container:hover .collapsible-block-link {
+    line-height: 1.6em;
+}
+.collapsible-block-link{
+    font-weight: bold;
+}
+.quote-block {
+    display: inline-block;
+    border: 1px double #999;
+    background: #F5F5F5;
+    width: 85%;
+    padding: 0px 12px;
+    margin: auto;
+}
+[[/module]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+@@ @@
+@@ @@
+@@ @@
 [[table style="border: none; width: 100%;"]]
 [[row]]
 [[cell]]
@@ -33,7 +76,7 @@ title:SCP-3719
 [[/span]]
 [[/a]]
 ----
-[[include component:image-block name=http://scp-wiki.wdfiles.com/local--files/scp-3719/ecto-lawn-mower.jpg|caption=SCP-3719 upon recovery.]]
+[[include :scp-sandbox-3:image-zoom name=ecto-lawn-mower.jpg|caption=SCP-3719 upon recovery (hover to enlarge).|width=300px|align=right]]
 
 **Special Containment Procedures:** SCP-3719 is kept in a standard object containment stall in the Anomalous Objects Wing of Site-82. 
 
@@ -53,11 +96,10 @@ SCP-3719 was discovered in the Middlesex suburb of Baltimore, Maryland on August
 
 The formation of masses similar to SCP-3719-B, as well as the widespread manifestation of grass on public roads, has been designated an SCP-3719-Cobalt event. How the prolonged use of SCP-3719 leads to the manifestation of these events is currently under active investigation.
 
-**Addendum 3719.1:** The following is a transcript of an interview with Grace Farley (PoI-3719-7), the mother of Kevin Farley. Kevin Farley was determined to be an individual within SCP-3719-B at the time of discovery. 
+**Interview Log 3719.1:** The following is a transcript of an interview with Grace Farley (PoI-3719-7), the mother of Kevin Farley. Kevin Farley was determined to be an individual within SCP-3719-B at the time of discovery. 
 
 [[div style="text-align: center;"]]
-[[div style="display: inline-block; border: dashed 1px #999999; background: #F5F5F5; width: 84%; padding: 12px; margin: auto;"]]
-----
+[[div class="quote-block"]]
 = **VIDEO LOG**
 ----
 [[<]]
@@ -65,7 +107,7 @@ The formation of masses similar to SCP-3719-B, as well as the widespread manifes
 
 **Interviewed:** Grace Farley (PoI 3719-7)
 
-**Note:** Agent Frank Digby began the interview shortly after Foundation personnel arrived on scene following the discovery of SCP-3719-B. A 3 km in diameter no-go zone around the neighbourhood was observed, at which point the neighbourhood was cordoned off. Any individuals directly outside the confines of the no-go zone were administered Class-A amnestics. 
+**Note:** Agent Frank Digby began the interview shortly after Foundation personnel arrived on scene following the discovery of SCP-3719-B. A 3 km in diameter no-go zone around the neighbourhood was observed, at which point the neighbourhood was cordoned off.
 
 The interview began after Foundation personnel searched for individuals directly affected by the SCP-3719-Cobalt event. Mrs. Grace Farley (designated PoI 3719-7) was the seventh person selected for interview purposes. Agent Frank Digby approached Mrs. Grace Farley under the guise of a concerned neighbour associated with the neighbourhood watch.
 ----
