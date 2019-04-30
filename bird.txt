@@ -9,12 +9,22 @@ title:Team Bird Hub
 }
 
 /* DIV BLOCK */
-.showcase{
+.header-image{
     border: solid 3px #444; 
     background:#EEE; 
+    float: top;
+    margin-left: 1pt;
+    margin-right: 1pt;
+    padding: 0;
+    text-align: left;
+}
+.showcase{
+    border: solid 3px #444; 
+    background: #fff; 
+    float:top; 
     margin-left: 3pt;
     margin-right: 3pt;
-    padding: 0;
+    padding: 10px;
     text-align: left;
 }
 
@@ -74,7 +84,7 @@ blockquote{
 [[module rate]]
 [[/>]]
 
-[[div class="showcase"]]
+[[div class="header-image"]]
 [[image teambird2.jpg]]
 [[div style="border-bottom: 2px solid #444;"]]
 [[/div]]
