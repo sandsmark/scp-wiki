@@ -139,3 +139,15 @@ To use the Dr. Wondertainment CSS theme, copy the following into the top of your
 [[module ListPages order="title" tags="dr-wondertainment +scp" separate="no" perPage="200" prependLine="||~ Title||~ Author||"]]
 || %%title_linked%% || %%created_by_linked%% ||
 [[/module]]
+
+------
+[[div id="myDiv" style="background-color: #780d8e; text-color: #FBD926;"]]
+[[=]]
+[[SIZE 120%]]##FBD926|**-Other Things-**##[[/size]]
+[[/=]]
+[[/div]]
+------
+
+[[module ListPages order="title" tags="doctor-wondertainment -goi-format -tale -scp" separate="no" perPage="200" prependLine="||~ Story||~ Author||"]]
+|| %%title_linked%% || %%created_by_linked%% ||
+[[/module]]
