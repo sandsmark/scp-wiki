@@ -1,22 +1,91 @@
 title:Team Bird Hub
-[[div style="padding-left: 2%; padding-right: 2%; background-color: #fff; background: linear-gradient(to bottom, #f7f7f7,#ffc81c,#ffc81c,#fff);"]]
+[[module CSS]]
+/* GRADIANT */
+.bg-gradiant{
+    background-color: #fff; 
+    background: linear-gradient(to bottom, #f7f7f7,#ffc81c,#ffc81c,#fff);
+    padding-left: 2%; 
+    padding-right: 2%; 
+}
+
+/* DIV BLOCK */
+.showcase{
+    border: solid 3px #444; 
+    background:#EEE; 
+    margin-left: 3pt;
+    margin-right: 3pt;
+    padding: 0;
+    text-align: left;
+}
+
+/* TABLES */
+blockquote{
+  border: solid 1px #ffc818;
+  background: #fff;
+  margin: 12pt;
+}
+
+.article blockquote{
+    padding: 0;
+}
+
+.article table.wiki-content-table{
+    margin: 0 0 -1px;
+    width: 100%;
+}
+
+.article table.wiki-content-table td{
+    border: solid 1px #ffc818;
+    border-right: 0;
+}
+
+.article table.wiki-content-table th{
+    border: solid 1px #ffc818;
+    font-weight: normal;
+    padding: 0 0.3em;
+    width: 5em;
+}
+
+.continued blockquote{
+    padding: 0;
+}
+
+.continued table.wiki-content-table{
+    margin: 0 0 -1px;
+    width: 100%;
+}
+
+.continued table.wiki-content-table td{
+    border: solid 1px #ffc818;
+    border-top: 0;
+    border-right: 0;
+}
+
+.continued table.wiki-content-table th{
+    border: solid 1px #ffc818;
+    font-weight: normal;
+    padding: 0 0.3em;
+    width: 5em;
+}
+[[/module]]
+
+[[div class="bg-gradiant"]]
 [[>]]
 [[module rate]]
 [[/>]]
 
-[[div style="display: inline-block; border:solid 2px #444444; background:#EEE; float:top; width:99.5%; padding:0px"]]
+[[div class="showcase"]]
 [[image teambird2.jpg]]
 [[div style="border-bottom: 2px solid #444;"]]
 [[/div]]
-= [[size 85%]]**Banner courtesy of the amazing [[*user Mendelssohn]]! Check out more of their art [http://www.scp-wiki.net/pendleton-miller-s-cognitoseward-collection here]!**[[/size]]
-
+= [[size 85%]]**Banner courtesy of the amazing [[*user Mendelssohn]]! Check out more of their art [[[pendleton-miller-s-cognitoseward-collection|here]]]!**[[/size]]
 [[/div]]
 
 [[=]]
 + ##white|—##
 [[/=]]
 
-[[div style="display: inline-block; border:solid 2px #444444; background:#ffffff; float:top; width:96.5%; padding:10px"]]
+[[div class="showcase"]]
 Because somehow, Egyptian gods, the SPC universe, mysterious soul-vacuum devices, bad puns, and seagull scientists can all happily coexist in the same storyline. No wonder they called themselves Team Bird, the plot brainstorming must have been done while everyone was hella high.
 = — **[[*user Modulum]], head honcho of [[[scpdeclassified|SCPDeclassified]]]**
 [[/div]]
@@ -25,7 +94,7 @@ Because somehow, Egyptian gods, the SPC universe, mysterious soul-vacuum devices
 + ##white|—##
 [[/=]]
 
-[[div style="display: inline-block; border:solid 2px #444444; background:#ffffff; float:top; width:96.5%; padding:10px"]]
+[[div class="showcase"]]
 [[=]]
 [[size 125%]]BE-Class "Migration" End-of-Consciousness Scenario[[/size]]
 [[/=]]
@@ -49,7 +118,7 @@ Because somehow, Egyptian gods, the SPC universe, mysterious soul-vacuum devices
 + ##white|—##
 [[/=]]
 
-[[div style="display: inline-block; border:solid 2px #444444; background:#ffffff; float:top; width:96.5%; padding:10px"]]
+[[div class="showcase"]]
 [[div style="border-bottom: 2px solid #ffc818;"]]
 [[/div]]
 
@@ -98,7 +167,7 @@ __[[size 110%]]**Part 2: Migration**[[/size]]__
 [[/div]]
 @@ @@
 @@ @@
-[[div style="display: inline-block; border:solid 2px #444444; background:#ffffff; float:top; width:96.5%; padding:10px"]]
+[[div class="showcase"]]
 [[div style="border-bottom: 2px solid #ffc818;"]]
 [[/div]]
 
@@ -115,7 +184,7 @@ __[[size 110%]]**Part 2: Migration**[[/size]]__
 [[/div]]
 @@ @@
 @@ @@
-[[div style="display: inline-block; border:solid 2px #444444; background:#ffffff; float:top; width:96.5%; padding:10px"]]
+[[div class="showcase"]]
 [[div style="border-bottom: 2px solid #ffc818;"]]
 [[/div]]
 
@@ -139,7 +208,7 @@ __[[size 110%]]**Part 2: Migration**[[/size]]__
 + ##white|—##
 [[/=]]
 
-[[div style="display: inline-block; border:solid 2px #444444; background:#ffffff; float:top; width:96.5%; padding:10px"]]
+[[div class="showcase"]]
 __[[size 110%]]**What if I can't/don't want to read all of these pages?**[[/size]]__
 [[div style="border-bottom: 2px solid #ffc818;"]]
 [[/div]]
@@ -159,54 +228,3 @@ However, if you do have the time, we heavily recommend reading the rest of the m
 @@ @@
 @@ @@
 [[/div]]
-
-[[module CSS]]
-blockquote {
-  border: solid 1px #ffc818;
-  background: #fff;
-  margin: 12pt;
-}
-
-.article blockquote {
-padding: 0;
-}
-
-.article table.wiki-content-table {
-margin: 0 0 -1px;
-width: 100%;
-}
-
-.article table.wiki-content-table td {
-border: solid 1px #ffc818;
-border-right: 0;
-}
-
-.article table.wiki-content-table th {
-border: solid 1px #ffc818;
-font-weight: normal;
-padding: 0 0.3em;
-width: 5em;
-}
-
-.continued blockquote {
-padding: 0;
-}
-
-.continued table.wiki-content-table {
-margin: 0 0 -1px;
-width: 100%;
-}
-
-.continued table.wiki-content-table td {
-border: solid 1px #ffc818;
-border-top: 0;
-border-right: 0;
-}
-
-.continued table.wiki-content-table th {
-border: solid 1px #ffc818;
-font-weight: normal;
-padding: 0 0.3em;
-width: 5em;
-}
-[[/module]]
