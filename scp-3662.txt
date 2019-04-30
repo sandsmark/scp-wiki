@@ -34,6 +34,16 @@ transform: scale(1.6);
 transition: .25s;
 transition-delay: .4s;
 }
+
+.team-bird-nav{
+    background-color: black;
+    border: outset 1.5px black;
+    border-radius: 30px;
+    color: black;
+    background: linear-gradient(to bottom right, rgba(0,0,0,0), rgba(255,200,28,1));
+    font-weight: bold;
+    font-size: 85%;
+}
 [[/module]]
 [[>]]
 [[module Rate]]
@@ -153,9 +163,6 @@ Analysis of SCP-3662 has shown that it stores SCP-3662-2 not as digital or physi
 [[/=]]
 [[footnoteblock]]
 ------
-
-[[div style="background-color: #000; border: outset 1.5px #000; border-radius: 30px; color: #000; background: linear-gradient(to bottom right, rgba(0,0,0,0), rgba(255,200,28,1));"]]
-[[=]]
-,,**<<** [[[SCP-3095]]] | **SCP-3662** | [[[SCP-3296]]] **>>**,,
-[[/=]]
+[[div class="team-bird-nav"]]
+= << [[[SCP-3095]]] | [[size 120%]][[[bird|TEAM BIRD HUB]]][[/size]] | [[[SCP-3296]]] >>
 [[/div]]
