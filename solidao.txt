@@ -1,26 +1,61 @@
 title:Solidão
-[[module css]]
-a.collapsible-block-link { font-weight: bold; }
-[[/module]]
-[[module css]]
+[[include :scp.avn.sh:component:aers:info-stuff
+|lang=en
+|page=solidao
+|authorPage=http://www.scp-wiki.net/floppyphoenix
+|comments=**Document 2641-Solidão** 
+**Author:** [[*user FloppyPhoenix]] 
+ 
+This article is the former supplement to the old SCP-2641 ([[[*http://scpdsandbox.wikidot.com/floppy-archive-1|which you can find archived here]]]), written by myself. It's otherwise entirely standalone: you can head to the link for extra context, but don't expect it to be great! 
+----
+[[include :scpdsandbox:floppyphoenix-info]]]]
+
+[[module CSS]]
 @import url(https://fonts.googleapis.com/css?family=Architects+Daughter);
 
-div.journal {
-    font-family: 'Architects Daughter';font-size: 16px;font-weight: 500;
-    padding: 30px; padding-top: 15px; padding-bottom: 15px;
-    display: block; margin: auto; width: 90%; border: solid 1px #112211; background: #f2f2f2;}
+/* INFO BOX */
+sup {
+    vertical-align: top;
+    position: relative;
+    top: -0.5em;
+}
+body{
+    --cutColour: #fafafa;
+    --barColour: #590505;
+}
+.translation_block{
+    display: none;
+}
+.info-container .collapsible-block-folded a{
+    color: #FFF;
+}
+.info-container .collapsible-block-unfolded-link a{
+    color: #FFF;
+}
+.info-container .collapsible-block-link,
+.info-container:hover .collapsible-block-link {
+    line-height: 1.6em;
+}
+.collapsible-block-link{
+    font-weight: bold;
+}
+
+/* DIV BLOCK */
+.journal {
+    font-family: 'Architects Daughter';
+    background: #E5E293;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 30pt;
+    margin-right: 30pt;
+    padding: 0 12px;
+    text-align: left;
+}
 [[/module]]
 
-[[include info:start]]
-**Document 2641-Solidão**
-**Author:** [[*user FloppyPhoenix]]
-
-This article is the former supplement to the old SCP-2641 ([[[http://kontainer.djkakt.us/floppyphoenix-0|which you can find archived here]]]), written by myself. It's otherwise entirely standalone: you can head to the link for extra context, but don't expect it to be great!
-----
-[[div class="footer-wikiwalk-nav"]]
-[[include :scpsandbox2:FloppyPhoenix2]]
-[[/div]]
-[[include info:end]]
+[[>]]
+[[module Rate]]
+[[/>]]
 
 **Document 2641-Solidão**
 
@@ -50,7 +85,10 @@ To be out of contact with a tribe for that long? If the Brazilian government fou
 It's too soon to determine what the reason for their movement was (as I'm not about to actually consider that they did vanish from the face of the planet). It's too soon to even assume it's them. The only way to find out is to make contact, and I've assembled four men to assist me with getting to the bottom of this. We should be leaving tomorrow morning.
 [[/div]]
 @@ @@
-[[include component:image-block name=javari-valley-maloca.png	|caption=A picture of the maloca, taken during a routine flyby of the area on 24/04/2003.]]
+[[include :scp-sandbox-3:image-zoom name=javari-valley-maloca.png|caption=A picture of the maloca, taken during a routine flyby of the area on April 24, 2003 (hover to enlarge).|width=300px|align=right]]
+
+[[include component:image-block name=javari-valley-maloca.png	|caption=A picture of the maloca, taken during a routine flyby of the area on April 24, 2003 (hover to enlarge).]]
+
 [[div class="journal"]]
 **25/04/2003:** We decided to set up camp for the night next to a river. This river actually intersects with three different indigenous populations if one were to travel downstream. I reckon it should still be another couple of days to the north before we come upon their general area. And that's when the situation gets sticky. Nobody wants to get themselves into trouble in the heart of the Amazon.
 
