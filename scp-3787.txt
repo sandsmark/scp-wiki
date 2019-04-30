@@ -38,21 +38,20 @@ body{
 
 /* DIV BLOCKS */
 .report-box{
-    display: inline-block;
     border: solid 1px #444;
     background: white;
-    float: top;
-    width: 95%;
+    margin-left: 10pt;
+    margin-right: 10pt;
     padding: 3px 12px;
-    margin: auto;
+    text-align: left;
 }
 .quote-block {
-    display: inline-block;
     border: 1px double #999;
     background: #F5F5F5;
-    width: 85%;
+    margin-left: 30pt;
+    margin-right: 30pt;
     padding: 3px 12px;
-    margin: auto;
+    text-align: left;
 }
 
 /* FORMATTING */
