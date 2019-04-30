@@ -4,15 +4,43 @@ title:SCP-3309
 |page=scp-3309
 |authorPage=http://www.scp-wiki.net/floppyphoenix
 |comments=**SCP-3309:** Where We Go When We Fade, Fade Away 
-**Authors:** [[*user PhamtomGuy]] and [[*user FloppyPhoenix]] ([*floppyphoenix Author Page]) 
+**Authors:** [[*user PhamtomGuy]] and [[*user FloppyPhoenix]] ([*http://www.scp-wiki.net/floppyphoenix Author Page]) 
  
-Based on **[*operation-overmeta the Pataphysics Department]** by [[*user Rimple]]. 
+Based on **[*http://www.scp-wiki.net/operation-overmeta the Pataphysics Department]** by [[*user Rimple]]. 
  
-**[*fragment:scp-3309-april-fools Click here]** to read the April Fools 2019 edit.]]
+**[*http://www.scp-wiki.net/fragment:scp-3309-april-fools Click here]** to read the April Fools 2019 edit.]]
 
 [[include :scp-wiki:component:pataphysics-theme]]
 
 [[module CSS]]
+/* INFO BOX */
+sup {
+    vertical-align: top;
+    position: relative;
+    top: -0.5em;
+}
+body{
+    --cutColour: #ededed;
+    --barColour: #201230;
+}
+.translation_block{
+    display: none;
+}
+.info-container .collapsible-block-folded a{
+    color: #FFF;
+}
+.info-container .collapsible-block-unfolded-link a{
+    color: #FFF;
+}
+.info-container .collapsible-block-link,
+.info-container:hover .collapsible-block-link {
+    line-height: 1.6em;
+}
+.collapsible-block-link{
+    font-weight: bold;
+}
+
+/* DIV BLOCKS */
 .patanotice {
     text-align: center;
     color: #ededed;
