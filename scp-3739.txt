@@ -1,14 +1,95 @@
 title:SCP-3739
 parent:broken-masquerade-hub
-[[include component:pataphysics-theme]]
+[[include :scp.avn.sh:component:aers:info-stuff
+|lang=en
+|page=scp-3739
+|authorPage=http://www.scp-wiki.net/floppyphoenix
+|comments=**SCP-3739:** [[span style="color: #407fbf; font-family:Tahoma;"]]**Mind-Milk™ by Moosphere, Inc.**[[/span]] 
+**Authors:** [[*user FloppyPhoenix]] & [[*user KindlyTurtleClem]] 
+**Image Credits and Citations:** 
+ 
+[[div class="log"]] 
+[[collapsible show="Special Thanks" hide="beautiful people"]] 
+ 
+* [[*user A Random Day]] and [[*user SonKingKong]] from Discord for dialogue help 
+* [[*user Modulum]] and [[*user JackalRelated]] for helping greatly with the adverts. Modulum edited the coal miner advert & Jackal helped sharpen and suggest changes for images. 
+* [[*user Uncle Nicolini]] for his CONSTANT help and critique on our draft, after each and every iteration. Can't thank him enough for sticking with our concept. 
+* [[*user DrChandra]], [[*user DarkStuff]], [[*user MacWarren]], [[*user aismallard]], and [[*user Cyantreuse]] for giving finalizing advice, esp. the latter approving of it in the BM canon. 
+* [[*user Geckoguy2704]], [[*user Gabriel Jade]], [[*user Cyantreuse]], and //Redeeming Qual may not Apply// from Discord for conceptual work and finalizing crit. 
+* [[*user Westrin]] and [[*user RockTeethMothEyes]] for beta reading. 
+* [[*user Woedenaz]] for giving the Pataphysics Logo a new spin. Literally. 
+[[/collapsible]] 
+[[/div]] 
+----
+[[=]] 
+**More by these authors:** 
+**[*http://www.scp-wiki.net/floppyphoenix FloppyPhoenix]** 
+**[*http://www.scp-wiki.net/personal-file-anon KindlyTurtleClem]** 
+[[/=]] 
+----
+[[div class="log"]] 
+[[collapsible show="Sources" hide="Used for gimp projects and images"]] 
+[http://kontainer.djkakt.us/moosphere our moosphere comments] 
+ 
+[https://en.wikipedia.org/wiki/Digital_pathology Digital Pathology] 
+[https://en.wikipedia.org/wiki/Jungian_archetypes Jungian Archetypes that turn into Bovine Archetypes] 
+[https://en.wikipedia.org/wiki/Bat_(goddess) Egyptian Goddess of Fertility] 
+[https://en.wikipedia.org/wiki/Glossolalia#20th_century 20th Century Tonguezzzz] 
+[https://en.wikipedia.org/wiki/Laying_on_of_hands Lay on Hands] 
+ 
+[https://commons.wikimedia.org/wiki/File:Snejanka-cave-udder.jpg Image 1, Public Domain] 
+[https://commons.wikimedia.org/wiki/File:10_small_subunit.gif Image 2, Public Domain] 
+[https://commons.wikimedia.org/wiki/File:PSM_V62_D565_Aswan_dam_during_eclipse_of_november_11_1901.png Image 3, Public Domain] 
+[https://commons.wikimedia.org/wiki/File:Creepy_way_in_imambara.jpg Image 4, CC-BY 3.0] 
+ 
+++++ Advert One 
+[https://upload.wikimedia.org/wikipedia/commons/7/79/Water_Drop_Icon_Vector.png Milk Droplets, CC-BY-SA 4.0] 
+[https://upload.wikimedia.org/wikipedia/commons/3/3a/Mare_Imbrium-AS17-M-2444.jpg Mare Imbrium, Public Domain] 
+ 
+++++ Advert Two 
+[https://commons.wikimedia.org/wiki/File:Bundesarchiv_B_145_Bild-F009360-0001,_Essen,_Bergm%C3%A4nner_mit_Milchflaschen.jpg Two Coalminers, CC-BY-SA 3.0] 
+ 
+++++ Final Guy 
+[https://commons.wikimedia.org/wiki/Category:Freak_show#/media/File:Joseph_Carey_Merrick_.jpg Carey Merrick, CC-BY-SA 3.0] 
+[https://en.wikipedia.org/wiki/Mastitis#/media/File:Ultrasound_Scan_ND_115254_1204420_cr.png Ultrasound, CC-BY-SA 3.0] 
+[[/collapsible]] 
+[[/div]]]]
+
+[[include :scp-wiki:component:pataphysics-theme]]
 
 [[module CSS]]
 #header h1 a::before { content: "Pataphysical Digital Archives" !important; }
 
 #header h2 span::before { content: "Archiving Apotheosis" !important; }
 
-a.collapsible-block-link { font-weight: bold; }
-
+/* INFO BOX */
+sup {
+    vertical-align: top;
+    position: relative;
+    top: -0.5em;
+}
+body{
+    --cutColour: #ededed;
+    --barColour: #201230;
+}
+.translation_block{
+    display: none;
+}
+.info-container .collapsible-block-folded a{
+    color: #FFF;
+}
+.info-container .collapsible-block-unfolded-link a{
+    color: #FFF;
+}
+.info-container .collapsible-block-link,
+.info-container:hover .collapsible-block-link {
+    line-height: 1.6em;
+}
+.collapsible-block-link{
+    font-weight: bold;
+}
+#u-author_block{ display:none; }
+.collapsible-block-link { font-weight: bold; }
 .terminal{
     width: @display-width;
     height: @display-height;
@@ -28,7 +109,6 @@ a.collapsible-block-link { font-weight: bold; }
     overflow: hidden;
     padding-bottom: 15px !important;
 }
-
 .scanline{
     margin-top: -40%;
     width: @display-width;
@@ -39,7 +119,6 @@ a.collapsible-block-link { font-weight: bold; }
     animation: scan 5s linear 0s infinite;
     background: linear-gradient(to bottom, rgba(56, 56, 82,0), rgba(56, 56, 112,0.1)) !important;
 }
-
 .text{
     color: rgba(255,255,255,0.8);
     padding-top: 34%;
@@ -54,7 +133,6 @@ a.collapsible-block-link { font-weight: bold; }
     to{  transform: translateY(2000%);}
 }
 /* flags */
-
 .log {
   float: center; 
   border: gray 1px; 
@@ -64,14 +142,13 @@ a.collapsible-block-link { font-weight: bold; }
   box-shadow: 0 2px 4px rgba(75, 75, 75, .5);
 }
 
-/* Containers for Bauxes Of Information */
+/* INFORMATION BOXES */
 .container {
  font-family: 'Nanum Gothic', Arial, sans-serif;
     background-color: #1e0f2d !important;
     border-color: #451c76 !important;
  padding: 5px 15px 15px 15px; 
 }
-
 .quoteblock { 
   display: inline-block; 
   width: 96%;
@@ -84,7 +161,6 @@ a.collapsible-block-link { font-weight: bold; }
   background-color: #fafafa; 
   box-shadow: 0 2px 4px rgba(75, 75, 75, .5);
 }
-
 .blockM {
 -webkit-margin-start: 0px;
 -webkit-margin-before: 1em;
@@ -99,12 +175,10 @@ a.collapsible-block-link { font-weight: bold; }
     0 0 0 4px hsl(0, 0%, 80%),
     0 0 0 7px hsl(0, 0%, 90%);
 }
-
 .spangles {
   color: #ffffff;
   background: #000000;
 }
-
 .lite-header hr{
     width: 45%;
     margin: auto;
@@ -112,68 +186,14 @@ a.collapsible-block-link { font-weight: bold; }
     border: none;
     height: 2px;
 }
-
-/*
-.footnotes-footer {
-display:none;
-}
-*/
 [[/module]]
 
-[[include info:start]]
-**SCP-3739:** [[span style="color: #407fbf; font-family:Tahoma;"]]**Mind-Milk™ by Moosphere, Inc.**[[/span]]
-**Authors:** [[*user FloppyPhoenix]] & [[*user KindlyTurtleClem]]
-**Image Credits and Citations:** 
-
-[[div class="log"]]
-[[collapsible show="Special Thanks" hide="beautiful people"]]
-
-* [[*user A Random Day]] and [[*user SonKingKong]] from Discord for dialogue help
-* [[*user Modulum]] and [[*user JackalRelated]] for helping greatly with the adverts. Modulum edited the coal miner advert & Jackal helped sharpen and suggest changes for images.
-* [[*user Uncle Nicolini]] for his CONSTANT help and critique on our draft, after each and every iteration. Can't thank him enough for sticking with our concept.
-* [[*user DrChandra]], [[*user DarkStuff]], [[*user MacWarren]], [[*user aismallard]], and [[*user Cyantreuse]] for giving finalizing advice, esp. the latter approving of it in the BM canon.
-* [[*user Geckoguy2704]], [[*user Gabriel Jade]], [[*user Cyantreuse]], and //Redeeming Qual may not Apply// from Discord for conceptual work and finalizing crit.
-* [[*user Westrin]] and [[*user RockTeethMothEyes]] for beta reading.
-* [[*user Woedenaz]] for giving the Pataphysics Logo a new spin. Literally.
-[[/collapsible]]
-[[/div]]
-----
-[[=]]
-**More by these authors:**
-**[http://www.scp-wiki.net/floppyphoenix FloppyPhoenix]**
-**[http://www.scp-wiki.net/personal-file-anon KindlyTurtleClem]**
-[[/=]]
-----
-[[div class="log"]]
-[[collapsible show="Sources" hide="Used for gimp projects and images"]]
-[http://kontainer.djkakt.us/moosphere our moosphere comments]
-
-[https://en.wikipedia.org/wiki/Digital_pathology Digital Pathology]
-[https://en.wikipedia.org/wiki/Jungian_archetypes Jungian Archetypes that turn into Bovine Archetypes]
-[https://en.wikipedia.org/wiki/Bat_(goddess) Egyptian Goddess of Fertility]
-[https://en.wikipedia.org/wiki/Glossolalia#20th_century 20th Century Tonguezzzz]
-[https://en.wikipedia.org/wiki/Laying_on_of_hands Lay on Hands]
-
-[https://commons.wikimedia.org/wiki/File:Snejanka-cave-udder.jpg Image 1, Public Domain]
-[https://commons.wikimedia.org/wiki/File:10_small_subunit.gif Image 2, Public Domain]
-[https://commons.wikimedia.org/wiki/File:PSM_V62_D565_Aswan_dam_during_eclipse_of_november_11_1901.png Image 3, Public Domain]
-[https://commons.wikimedia.org/wiki/File:Creepy_way_in_imambara.jpg Image 4, CC-BY 3.0]
-
-++++ Advert One
-[https://upload.wikimedia.org/wikipedia/commons/7/79/Water_Drop_Icon_Vector.png Milk Droplets, CC-BY-SA 4.0]
-[https://upload.wikimedia.org/wikipedia/commons/3/3a/Mare_Imbrium-AS17-M-2444.jpg Mare Imbrium, Public Domain]
-
-++++ Advert Two
-[https://commons.wikimedia.org/wiki/File:Bundesarchiv_B_145_Bild-F009360-0001,_Essen,_Bergm%C3%A4nner_mit_Milchflaschen.jpg Two Coalminers, CC-BY-SA 3.0]
-
-++++ Final Guy
-[https://commons.wikimedia.org/wiki/Category:Freak_show#/media/File:Joseph_Carey_Merrick_.jpg Carey Merrick, CC-BY-SA 3.0]
-[https://en.wikipedia.org/wiki/Mastitis#/media/File:Ultrasound_Scan_ND_115254_1204420_cr.png Ultrasound, CC-BY-SA 3.0]
-[[/collapsible]]
-[[/div]]
-----
-[[include info:end]]
-
+[[>]]
+[[module Rate]]
+[[/>]]
+@@ @@
+@@ @@
+@@ @@
 [[div class="terminal"]]
 [[div class="scanline"]]
 [[/div]]
@@ -227,8 +247,8 @@ display:none;
 |colorbar-one=full
 |colorbar-two=full
 |colorbar-three=full
-|colorbar-four=none
-|colorbar-five=none
+|colorbar-four=half
+|colorbar-five=half
 |colorbar-six=none
 |level=3
 |secrecy=CLASSIFIED
