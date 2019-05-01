@@ -1,6 +1,43 @@
 title:The Doctor's Dilemma
 parent:end-of-death-hub
-[[module css]]
+[[include :scp.avn.sh:component:aers:info-stuff
+|lang=en
+|page=the-doctor-s-dilemma
+|authorPage=http://www.scp-wiki.net/floppyphoenix
+|comments=**The Doctor's Dilemma** 
+**Author:** [[*user FloppyPhoenix]] 
+ 
+Written for the **[*http://www.scp-wiki.net/art-exchange-hub 7th Annual Holiday Art Exchange]** for **[[*user OthellotheCat]]**, who requested a piece featuring his characters! This Tale is set in the **[*www.scp-wiki.net/end-of-death-hub End of Death Canon]** and features characters **[*http://www.scp-wiki.net/populated-control-led Dr. Violet Mesmur]** and **[*http://www.scp-wiki.net/scp-3774 Leslie]**. 
+----
+[[include :scpdsandbox:floppyphoenix-info]]]]
+
+[[module CSS]]
+/* INFO BOX */
+sup {
+    vertical-align: top;
+    position: relative;
+    top: -0.5em;
+}
+body{
+    --cutColour: #fafafa;
+    --barColour: #590505;
+}
+.translation_block{
+    display: none;
+}
+.info-container .collapsible-block-folded a{
+    color: #FFF;
+}
+.info-container .collapsible-block-unfolded-link a{
+    color: #FFF;
+}
+.info-container .collapsible-block-link,
+.info-container:hover .collapsible-block-link {
+    line-height: 1.6em;
+}
+.collapsible-block-link{
+    font-weight: bold;
+}
 .material-box {
     padding: .01em 16px;
     margin-bottom: 16px;
@@ -16,17 +53,12 @@ parent:end-of-death-hub
 }
 [[/module]]
 
-[[include info:start]]
-**The Doctor's Dilemma**
-**Author:** [[*user FloppyPhoenix]]
-
-Written for the **[[[art-exchange-hub|7th Annual Holiday Art Exchange]]]** for **[[*user OthellotheCat]]**, who requested a piece featuring his characters! This Tale is set in the End of Death Canon and features characters **[[[populated-control-led|Dr. Violet Mesmur]]]** and **[[[SCP-3774|Leslie]]]**.
-----
-[[div class="footer-wikiwalk-nav"]]
-[[include :scpsandbox2:FloppyPhoenix2]]
-[[/div]]
-[[include info:end]]
-
+[[>]]
+[[module Rate]]
+[[/>]]
+@@ @@
+@@ @@
+@@ @@
 [[==]]
 [[=]]
 [[image site-82-hall.jpg width="1200"]]
@@ -285,6 +317,7 @@ For the last time, the doors closed on Leslie. And there was no one left to care
 If she was lucky, perhaps she could be with her children again. 
 
 But only in her dreams.
+@@ @@
 ----
 ,,//**...In order to have great happiness you have to have great pain and unhappiness -- otherwise, how would you know when you're happy?...**//,,
 [[>]]
@@ -293,6 +326,9 @@ But only in her dreams.
 [[/==]]
 ----
 @@ @@
+[[>]]
+[[module Rate]]
+[[/>]]
 
 [[include component:earthworm
   first=false | last=false | hub=yes |
