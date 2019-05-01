@@ -14,15 +14,16 @@ This article is **Part 5** of the **Team Bird** storyline.
 @charset "utf-8";
 @import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
 
-#header h1 a {
+#header h1 a{
     color: transparent;
     font-family: 'Nanum Gothic', Arial, sans-serif;
     text-decoration: none;
     text-shadow: none;
 }
-#header h1 a::before {
+#header h1 a::before{
     content: "Avian Division";
     font-size: 80%;
+    color: #eee;
     text-shadow: 3px 3px 5px black;
 }
 #header h1 a span{
@@ -30,7 +31,7 @@ This article is **Part 5** of the **Team Bird** storyline.
     content: "";
     visibility: hidden;
 }
-#header h2 span {
+#header h2 span{
     color: transparent;
     text-shadow: none;
 }
@@ -42,6 +43,7 @@ This article is **Part 5** of the **Team Bird** storyline.
     line-height: 0;
     max-height: 0;
     font-weight: bold;
+    color: #f3f3f3;
     text-shadow: 1px 1px 1px rgba(0,0,0,.8);
 }
 
