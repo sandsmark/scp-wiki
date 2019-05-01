@@ -1,17 +1,69 @@
 title:Buggy Hardware (or Why I Don't Play Violent Video Games)
-[[include component:pataphysics-theme]]
-
-[[include info:start]]
-**Buggy Hardware (or Why I Don't Play Violent Video Games)** 
-**Author:** [[*user FloppyPhoenix]]
-
-This article was written for Round 2 of the **[[[scp-oct-hub|SCP Original Character Tournament]]]**. This article features characters **[[[SCP-3309|Researcher Smalls]]]**, **[[[SCP-3090|Heather Mason]]]**, and **[[[SCP-2852|Cousin Johnny]]]**.
+[[include :scp.avn.sh:component:aers:info-stuff
+|lang=en
+|page=the-abyss-gazes-back
+|authorPage=http://www.scp-wiki.net/floppyphoenix
+|comments=**Buggy Hardware (or Why I Don't Play Violent Video Games)** 
+**Author:** [[*user FloppyPhoenix]] 
+ 
+This article was written for Round 2 of the **[*http://www.scp-wiki.net/scp-oct-hub SCP Original Character Tournament]**. This article features characters **[*http://www.scp-wiki.net/scp-3309 Researcher Smalls]**, **[*http://www.scp-wiki.net/scp-3090 Heather Mason]**, and **[*http://www.scp-wiki.net/scp-2852 Cousin Johnny]**. 
 ----
-[[div class="footer-wikiwalk-nav"]]
-[[include :scpsandbox2:FloppyPhoenix2]]
-[[/div]]
-[[include info:end]]
+[[include :scpdsandbox:floppyphoenix-info]]]]
 
+[[include :scp-wiki:component:pataphysics-theme]]
+
+[[module CSS]]
+/* INFO BOX */
+sup {
+    vertical-align: top;
+    position: relative;
+    top: -0.5em;
+}
+body{
+    --cutColour: #ededed;
+    --barColour: #201230;
+}
+.translation_block{
+    display: none;
+}
+.info-container .collapsible-block-folded a{
+    color: #FFF;
+}
+.info-container .collapsible-block-unfolded-link a{
+    color: #FFF;
+}
+.info-container .collapsible-block-link,
+.info-container:hover .collapsible-block-link {
+    line-height: 1.6em;
+}
+.collapsible-block-link{
+    font-weight: bold;
+}
+
+.quoteblock{
+    border: 1px double #999;
+    background: #F5F5F5;
+    margin-left: 20pt;
+    margin-right: 20pt;
+    padding: 0 12px;
+    text-align: left;
+}
+
+/* GRADIANT */
+.bg-gradiant{
+    background-color: white;
+    background: linear-gradient(to bottom, white,black);
+    padding-left: 2%;
+    padding-right: 2%;
+}
+[[/module]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+@@ @@
+@@ @@
+@@ @@
 [[div class="footer-wikiwalk-nav"]]
 [[=]]
 << **[[[The Abyss Gazes Back]]]** | **Buggy Hardware**
@@ -259,7 +311,7 @@ This article was written for Round 2 of the **[[[scp-oct-hub|SCP Original Charac
 
 ##000|**"Call me Johnny. [[[SCP-2852|Cousin Johnny]]]."**##
 
-"Well okay, Johnny. What's inside that casket that you don't want me seeing?"
+"What's inside that casket that you don't want me seeing, Johnny?"
 
 ##000|**"Something that a god above couldn't get out of your head, no matter how hard you prayed."**##
 
@@ -355,11 +407,21 @@ This article was written for Round 2 of the **[[[scp-oct-hub|SCP Original Charac
 
 "That beast tried to teach me something about darkness. I'm not sure I fully get it, but I don't want to remain in it. So let's go. Let's see where this game takes us next."
 [[/==]]
+[[div class="bg-gradiant"]]
 @@ @@
 @@ @@
 @@ @@
 @@ @@
-[[div style="display: inline-block; border:dashed 1px #999999; background:#F5F5F5; float:center; width:84%; padding:1px 15px; margin: 10px 10px 10px 40px"]]
+[[/div]]
+[[div style="border-bottom: 2px solid #777; margin-bottom:1px;"]]
+[[/div]]
+[[div style="border-bottom: 1px solid #777;"]]
+[[/div]]
+[[=]]
+[[module Rate]]
+[[/=]]
+
+[[div class="quoteblock"]]
 ,,This has been my entry for Round 2 of the **[[[scp-oct-hub|SCP Original Character Tournament]]]**! This tale is a matchup between the following characters:,,
 * ,,**Researcher Smalls** -- **[[[SCP-3309]]]**,,
 * ,,**Heather Mason** AKA **Ms. Mad About Video Games** -- **[[[SCP-3090]]]** and **[[[danger-in-the-manger|You Ain't No Family]]]**,,
@@ -370,6 +432,6 @@ This article was written for Round 2 of the **[[[scp-oct-hub|SCP Original Charac
 
 [[div class="footer-wikiwalk-nav"]]
 [[=]]
-**Buggy Hardware** | **To be continued...** >>
+**Buggy Hardware** | **FIN** >>
 [[/=]]
 [[/div]]
