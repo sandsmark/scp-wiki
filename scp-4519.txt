@@ -60,11 +60,10 @@ body{
 .collapsible-block-link{
     font-weight: bold;
 }
-
 #u-author_block{ display:none; }
 
 /* SAPPHIRE FORMATTING */
-.dark-header hr{
+.dark-header-45 hr{
     width: 45%;
     margin: auto;
     background-color: #0d0e26;
@@ -145,7 +144,13 @@ body{
     border: none;
     height: 2px;
 }
-.collapsible-block-link { font-weight: bold; }
+.dark-header hr{
+    width: 100%;
+    margin: auto;
+    background-color: #222;
+    border: none;
+    height: 1px;
+}
 
 /* WIKIWALK NAV */
 .saphir-nav{
@@ -470,7 +475,11 @@ Following [[[chimes-broken|a series of SAPPHIRE attacks]]] in Southwestern China
 
 [[div class="journal-block" style="margin-bottom: 10px;"]]
 = **TEXT LOG**
+
+[[div class="dark-header" style="margin-bottom: 10px;"]]
 ----
+[[/div]]
+
 **Personnel:** Agent Samara Maclear
 
 **Materials:**
