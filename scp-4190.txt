@@ -1,15 +1,72 @@
 title:SCP-4190
+[[include :scp.avn.sh:component:aers:info-stuff
+|lang=en
+|page=scp-4190
+|authorPage=http://www.scp-wiki.net/floppyphoenix
+|comments=**SCP-4190:** A Twenty Thousand League Delay 
+**Author:** [[*user FloppyPhoenix]] 
+ 
+This article was written for the Final Day of the **144-Hour Jam Contest**. The theme was "So it was all a dream...". 
+----
+[[include :scpdsandbox:floppyphoenix-info]]]]
+
 [[module CSS]]
+/* INFO BOX */
+sup {
+    vertical-align: top;
+    position: relative;
+    top: -0.5em;
+}
+body{
+    --cutColour: #fafafa;
+    --barColour: #590505;
+}
+.translation_block{
+    display: none;
+}
+.info-container .collapsible-block-folded a{
+    color: #FFF;
+}
+.info-container .collapsible-block-unfolded-link a{
+    color: #FFF;
+}
+.info-container .collapsible-block-link,
+.info-container:hover .collapsible-block-link {
+    line-height: 1.6em;
+}
+.collapsible-block-link{
+    font-weight: bold;
+}
+
+/* FORMATTING */
+.testing-log{
+    border-radius: 10px;
+    border: dashed 1px #999;
+    background: #F5F5F5;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 3px 12px;
+    text-align: left;
+}
+.quote-block{
+    border: 1px double #999;
+    background: #F5F5F5;
+    margin-left: 20pt;
+    margin-right: 20pt;
+    padding: 3px 12px;
+    text-align: left;
+}
 .footnotes-footer {
-display:none;
+    display:none;
 }
 [[/module]]
 
 [[>]]
 [[module Rate]]
 [[/>]]
-
-
+@@ @@
+@@ @@
+@@ @@
 [[table style="border: none; width: 100%;"]]
 [[row]]
 [[cell]]
@@ -24,7 +81,7 @@ display:none;
 [[size 125%]]**Object Class:** Safe[[/size]]
 [[/cell]]
 [[cell style="text-align: right;"]]
-[[size 125%]]**Classified**[[/size]]
+[[size 125%]]**CLASSIFIED**[[/size]]
 [[/cell]]
 [[/row]]
 [[/table]]
@@ -43,45 +100,31 @@ Subjects that read SCP-4190's cover or contents report experiencing vivid hypnag
 
 A list of tests with SCP-4190 is as follows.
 
-[[div style="text-align: center;"]]
-[[div style="display: inline-block; border: dashed 1px #999999; border-radius: 10px; background: #F5F5F5; width: 96.5%; padding: 0 12px; margin: auto; margin-bottom: 20px;"]]
-[[<]]
+[[div class="testing-log" style="margin-bottom: 20px;"]]
 = **STANDARD DREAM LOG**
 ----
 **NOTE:** Each subject was requested to read SCP-4190 for approximately 30 minutes in a controlled setting. Any nightmares experienced within a week of reading were to be relayed to a site psychiatric specialist and recorded by an audio device.
 
 Only willing participants were selected for this test.
-[[/<]]
-[[/div]]
 [[/div]]
 
-[[div style="text-align: center;"]]
-[[div style="display: inline-block; border: dashed 1px #999999; background: #F5F5F5; width: 85%; padding: 0 12px; margin: auto; margin-bottom: 20px;"]]
-[[<]]
+[[div class="quote-block" style="margin-bottom: 20px;"]]
 **SUBJECT:** D-3467
 
 **ESTIMATED DEGREE OF RECALL:** Low
 ----
 **NIGHTMARE SUMMARY:** Subject reported walking through a damp, dark, narrow hallway. Both the ceiling and the end of the hallway could not be seen at any point during the dream. About halfway through the walk, the subject reported seeing a black figure in their periphery. Turning around failed to reveal its location.
-[[/<]]
-[[/div]]
 [[/div]]
 
-[[div style="text-align: center;"]]
-[[div style="display: inline-block; border: dashed 1px #999999; background: #F5F5F5; width: 85%; padding: 0 12px; margin: auto; margin-bottom: 20px;"]]
-[[<]]
+[[div class="quote-block" style="margin-bottom: 20px;"]]
 **SUBJECT:** D-3852
 
 **ESTIMATED DEGREE OF RECALL:** Medium
 ----
 **NIGHTMARE SUMMARY:** Subject reported arriving at the base of a tall hill at the edge of a dense forest. No illumination -- natural or man-made -- was reported, although the subject claimed it was twilight. Subject climbed the hill. At one point, they stumbled, losing a third of their progress, after which they reported the sensation of being watched. Subject spent the rest of the dream searching for potential predators, but could not locate any.
-[[/<]]
-[[/div]]
 [[/div]]
 
-[[div style="text-align: center;"]]
-[[div style="display: inline-block; border: dashed 1px #999999; background: #F5F5F5; width: 85%; padding: 0 12px; margin: auto; margin-bottom: 20px;"]]
-[[<]]
+[[div class="quote-block" style="margin-bottom: 20px;"]]
 **SUBJECT:** Psionics Specialist Samara Maclear
 
 **ESTIMATED DEGREE OF RECALL:** High
@@ -89,13 +132,9 @@ Only willing participants were selected for this test.
 **NIGHTMARE SUMMARY:** Subject reported finding themselves out of breath in front of a large black gate surrounded by dead trees and heavy mist. No fences or connective material could be located. After failing to open the gate, the subject turned around 180 degrees and walked away from the barrier; the gate appeared in front of them, stopping them. Subject attempted this act approximately 49 times, to no avail.
 
 Near the end of the dream, subject sighted an indeterminate figure on the other side of the gate ambling toward them. Subject made direct visual contact with the entity for the rest of the dream until the mist became too dense to see.
-[[/<]]
-[[/div]]
 [[/div]]
 
-[[div style="text-align: center;"]]
-[[div style="display: inline-block; border: dashed 1px #999999; background: #F5F5F5; width: 85%; padding: 0 12px; margin: auto;"]]
-[[<]]
+[[div class="quote-block"]]
 **SUBJECT:** On-Site Researcher Jessie Quattrociocchi
 
 **ESTIMATED DEGREE OF RECALL:** Medium
@@ -104,7 +143,6 @@ Near the end of the dream, subject sighted an indeterminate figure on the other 
 
 Note reads as follows:
 
-[[div style="text-align: center;"]]
 [[div style="display: inline-block; border: solid 1px black; background: white; width: 72.25%; padding: 0 12px; margin: auto; margin-bottom: 12px;"]]
 [[=]]
 YOU ARE DOING EXCELLENT WORK
@@ -117,9 +155,6 @@ FOR OUR SAKE
 [[/=]]
 [[/div]]
 [[/div]]
-[[/<]]
-[[/div]]
-[[/div]]
 
 Testing of SCP-4190 has been halted. Personnel are informed to continue dreaming.
 @@ @@
@@ -127,16 +162,9 @@ Testing of SCP-4190 has been halted. Personnel are informed to continue dreaming
 [[/div]]
 [[div style="border-bottom:1px solid #777;"]]
 [[/div]]
-[[include info:start]]
-**SCP-4190:** A Twenty Thousand League Delay
-**Author:** [[*user FloppyPhoenix]]
-
-This article was written for the Final Day of the **144-Hour Jam Contest**. The theme was "So it was all a dream...".
-----
-[[div class="footer-wikiwalk-nav"]]
-[[include :scpsandbox2:FloppyPhoenix2]]
-[[/div]]
-[[include info:end]]
+[[>]]
+[[module Rate]]
+[[/>]]
 
 [[div class="footer-wikiwalk-nav"]]
 [[=]]
