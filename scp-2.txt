@@ -1,20 +1,57 @@
 title:SCP-2
-[[include info:start]]
-[[=]]
-> The sun, aching temperature, punishing what time could only take, turning threats against dark champions
-##white|She knows.##
-[[/=]]
+[[include :scp.avn.sh:component:aers:info-stuff
+|lang=en
+|page=scp-2
+|authorPage=http://www.scp-wiki.net/floppyphoenix
+|comments= 
+[[=]] 
+> The sun, aching temperature, punishing what time could only take, turning threats against dark champions 
+##white|She knows.## 
+[[/=]] 
 ----
-**SCP-2:** A Eulogy For 2wo
-**Author:** [[*user FloppyPhoenix]]
-**Attribution:** Excerpts from __When We Two Parted__, a poem by __Lord Byron__
+**SCP-2:** A Eulogy For 2wo 
+**Author:** [[*user FloppyPhoenix]] 
+**Attribution:** Excerpts from __When We Two Parted__, a poem by __Lord Byron__ 
+ 
+This article is set in the **[*http://www.scp-wiki.net/aiad-homescreen AIAD]** canon. 
+----
+[[include :scpdsandbox:floppyphoenix-info]]]]
 
-This article is set in the **[[[aiad-homescreen|AIAD]]]** canon.
-----
-[[div class="footer-wikiwalk-nav"]]
-[[include :scpsandbox2:FloppyPhoenix2]]
-[[/div]]
-[[include info:end]]
+[[module CSS]]
+/* INFO BOX */
+sup {
+    vertical-align: top;
+    position: relative;
+    top: -0.5em;
+}
+body{
+    --cutColour: #fafafa;
+    --barColour: #590505;
+}
+.translation_block{
+    display: none;
+}
+.info-container .collapsible-block-folded a{
+    color: #FFF;
+}
+.info-container .collapsible-block-unfolded-link a{
+    color: #FFF;
+}
+.info-container .collapsible-block-link,
+.info-container:hover .collapsible-block-link {
+    line-height: 1.6em;
+}
+.collapsible-block-link{
+    font-weight: bold;
+}
+[[/module]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+@@ @@
+@@ @@
+@@ @@
 [[module ListPages category="fragment" parent="." order="created_at" limit="1" offset="@URL|0"]]
 %%content%%
 [[/module]]
