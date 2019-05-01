@@ -1,8 +1,68 @@
 title:SCP-4519
 parent:non-prophet-organization-hub
-[[module css]]
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+[[include :scp.avn.sh:component:aers:info-stuff
+|lang=en
+|page=scp-4519
+|authorPage=http://www.scp-wiki.net/non-prophet-organization-hub
+|comments=**SCP-4519:** Carl Sagan, Godhead 
+**Authors:** [[*user 9Volt]] and [[*user FloppyPhoenix]] 
+ 
+This article is **Part 3** of **Team Nico's Angels**' series for the **International Contest 2019**! 
+ 
+[[div style="font-weight: bold;"]] 
+Sources: 
+* [https://commons.wikimedia.org/wiki/File:Carl_Sagan,_1994.jpg Carl Sagan Photo] – CC BY 2.0 
+* [https://commons.wikimedia.org/wiki/File:Amundsen%E2%80%93Scott_South_Pole_Station_(39788188895).jpg Amundsen-Scott Station] – CC BY 2.0 
+* [https://upload.wikimedia.org/wikipedia/commons/8/82/Becuan_valley_earthquake_building.jpg  Qinghai Province Attack] – CC BY-SA 4.0 
+* [https://en.wikipedia.org/wiki/Carl_Sagan Carl Sagan Wikipedia Page] 
+ 
+Critters and beta readers: 
+* [[*user Dramps]] 
+* [[*user Weryllium]] 
+* [[*user psychicprogrammer]] 
+* [[*user Uncle Nicolini]] 
+* [[*user Ziakial]] 
+* nyaaly from Discord 
+* [[*user KindlyTurtleClem]] 
+[[/div]] 
+----
+= **More by these authors:** 
+= **[*http://www.scp-wiki.net/watts-maxwell-personnel-files 9Volt]** 
+= **[*http://www.scp-wiki.net/floppyphoenix FloppyPhoenix]]**]]
+
+
+[[module CSS]]
+/* INFO BOX */
+sup {
+    vertical-align: top;
+    position: relative;
+    top: -0.5em;
+}
+body{
+    --cutColour: #fafafa;
+    --barColour: #590505;
+}
+.translation_block{
+    display: none;
+}
+.info-container .collapsible-block-folded a{
+    color: #FFF;
+}
+.info-container .collapsible-block-unfolded-link a{
+    color: #FFF;
+}
+.info-container .collapsible-block-link,
+.info-container:hover .collapsible-block-link {
+    line-height: 1.6em;
+}
+.collapsible-block-link{
+    font-weight: bold;
+}
+
+#u-author_block{ display:none; }
+
 @import url('https://fonts.googleapis.com/css?family=Tinos');
+@import url(https://fonts.googleapis.com/css?family=Architects+Daughter);
 
 /* SAPPHIRE FORMATTING */
 .dark-header hr{
@@ -12,19 +72,16 @@ parent:non-prophet-organization-hub
     border: none;
     height: 2px;
 }
-
 .sec-2{
     color: #151A61;
     font-size: 1.7em;
     font-weight: bold;
 }
-
 .sec-3{
     color: #151A61;
     font-size: 1.5em;
     font-weight: bold;
 }
-
 .sec-4{
     color: #151A61;
     font-size: 1.3em;
@@ -33,53 +90,52 @@ parent:non-prophet-organization-hub
 
 /* DIV BLOCKS */
 .saphir-format{
-    display: inline-block; 
-    border: solid 2px #0d0e26; 
-    background: #abafed; 
-    width: 85%; 
-    padding: 0 12px; 
-    margin: auto; 
-    color: #222; 
     font-family: 'Tinos', serif; 
     font-size: 13pt;
+    border: solid 2px #0d0e26; 
+    background: #abafed; 
+    color: #222; 
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 3px 12px;
+    text-align: left;
 }
-
-.quote-block {
-    display: inline-block;
+.quote-block{
     border: 1px double #999;
     background: #F5F5F5;
-    width: 85%;
-    padding: 0 12px;
-    margin: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 3px 12px;
+    text-align: left;
 }
-
-.quote-block blockquote {
+.quote-block blockquote{
     border: 1px double #999;
 }
-
 .comm-log{
-    display: inline-block; 
     border: solid 1px #444; 
     background: white;
-    float: top; 
-    width: 95%; 
-    padding: 0 12px; 
-    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 3px 12px;
+    text-align: left;
 }
-
 .journal{
-    display: inline-block; 
+    font-family: 'Architects Daughter';
+    background: #E5E293;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 20pt;
+    margin-right: 20pt;
+    padding: 3px 12px;
+    text-align: left;
+}
+.journal-block{
     border: solid 1px #222; 
     background: #F5F5DC; 
-    width: 85%; 
-    padding: 0 12px; 
-    margin: auto;
-}
-
-.journal-text{
-    font-family: 'Playfair Display', serif; 
-    font-size: 1.3em; 
-    font-weight: 500;
+    margin-left: 20pt;
+    margin-right: 20pt;
+    padding: 3px 12px;
+    text-align: left;
 }
 
 /* FORMATTING */
@@ -90,7 +146,6 @@ parent:non-prophet-organization-hub
     border: none;
     height: 2px;
 }
-
 .collapsible-block-link { font-weight: bold; }
 
 /* WIKIWALK NAV */
@@ -102,11 +157,12 @@ parent:non-prophet-organization-hub
     background-color: #969be9;
     box-shadow: 1.5px 1.5px 3px #636ce9;
     box-shadow: 0 1px 3px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 5px rgba(255,255,255,0.2), inset 0 5px 20px rgba(255,255,255,0.25), inset 0 -7.5px 15px rgba(0,0,0,0.1);
-    padding: 0 30px; 
+    padding: 0 30px;
     margin: 10px 0 15px;
     margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 85%;
 }
-
 .saphir-nav a{
     color: #202892;
 }
@@ -114,51 +170,19 @@ parent:non-prophet-organization-hub
 
 > Reminder: This article is part of the [[[http://scp-int.wikidot.com/international-goi-contest-2019|International Contest]]]! Of course, you can vote on this article here, however, for the contest, only votes on **[[[http://scp-int.wikidot.com/scp-4519|this page's counterpart]]]** on the international wiki count.
 
-[[include :scp-wiki:info:start]]
-**SCP-4519:** Sagan Godhead
-**Authors:** [[*user 9Volt]] and [[*user FloppyPhoenix]]
-
-This article is **Team Nico's Angels**' third entry for the **International Contest 2019**!
-
-[[=]]
-[[collapsible show="► Special Thanks and Attribution ◄" hide="▼ Special Thanks and Attribution ▼"]]
-[[<]]
-Sources:
-[[div style="font-weight: bold;"]]
-* [https://commons.wikimedia.org/wiki/File:Carl_Sagan,_1994.jpg Carl Sagan Photo] – CC BY 2.0
-* [https://commons.wikimedia.org/wiki/File:Amundsen%E2%80%93Scott_South_Pole_Station_(39788188895).jpg Amundsen-Scott Station] – CC BY 2.0
-* [https://upload.wikimedia.org/wikipedia/commons/8/82/Becuan_valley_earthquake_building.jpg  Qinghai Province Attack] – CC BY-SA 4.0
-* [https://en.wikipedia.org/wiki/Carl_Sagan Carl Sagan Wikipedia Page]
-[[/div]]
-
-Critters and beta readers:
-[[div style="font-weight: bold;"]]
-* [[*user Dramps]]
-* [[*user Weryllium]]
-* [[*user psychicprogrammer]]
-* [[*user Uncle Nicolini]]
-* [[*user Ziakial]]
-* nyaaly from Discord
-* [[*user KindlyTurtleClem]]
-[[/div]]
-[[/<]]
-[[/collapsible]]
-----
-[[div style="font-weight: bold;"]]
-More by these authors:
-[[[watts-maxwell-personnel-files|9Volt]]]
-[[[FloppyPhoenix]]]
-[[/div]]
-[[/=]]
-[[include :scp-wiki:info:end]]
-
+[[>]]
+[[module Rate]]
+[[/>]]
+@@ @@
+@@ @@
+@@ @@
 [[table style="border: none; width: 100%;"]]
 [[row]]
 [[cell]]
 [[size 125%]]**Item Number:** SCP-4519[[/size]]
 [[/cell]]
 [[cell style="text-align: right;"]]
-[[size 125%]]**Level 3/4519**[[/size]]
+[[size 125%]]**Level 4/4519**[[/size]]
 [[/cell]]
 [[/row]]
 [[row]]
@@ -166,7 +190,7 @@ More by these authors:
 [[size 125%]]**Object Class:** Keter (Uncontained)[[/size]]
 [[/cell]]
 [[cell style="text-align: right;"]]
-[[size 125%]]**Classified**[[/size]]
+[[size 125%]]**CLASSIFIED**[[/size]]
 [[/cell]]
 [[/row]]
 [[/table]]
@@ -218,7 +242,6 @@ Agent Adrien Daniau was dispatched to the region to infiltrate SAPPHIRE under th
 [[/div]]
 [[/div]]
 
-[[div style="text-align: center;"]]
 [[div class="saphir-format" style="margin-bottom: 20px;"]]
 [[==]]
 [[=]]
@@ -253,7 +276,6 @@ Expect further questions when I visit your offices tomorrow, Gardinier. I hope y
 = [[span class="sec-3"]]//When in doubt, doubt.//[[/span]]
 [[/==]]
 [[/div]]
-[[/div]]
 
 [[div style="text-align: center;"]]
 [[div style="background-color: #191f66;"]]
@@ -261,20 +283,17 @@ Expect further questions when I visit your offices tomorrow, Gardinier. I hope y
 [[/div]]
 [[/div]]
 
-[[div style="text-align: center;"]]
 [[div class="quote-block" style="margin-bottom: 20px;"]]
 = **AUDIO LOG**
 ----
-[[<]]
 **Date:** April 9, 2000
 
 **Recorded By:** Agent Daniau
 
 **Note:** Agent Daniau recorded the following log in secret during a procedure on Sagan's cadaver. Some portions of the recording have been translated from French. Most of the recording is filled with intermittent background static.
-[[/<]]
 ----
 = **<Begin Log>**
-[[<]]
+
 //[Agent Daniau turns on the recording device in secret; clothing rustles.]//
 
 **Carl Sagan (?):** //[Voice distorted, slurred.]// Babbling and maaake-believe, that's all you and your pseudo-scientists kn-kn-know. There is no more pain for me, but, this, deception... Ignorance in your words. What shame --
@@ -318,10 +337,9 @@ Expect further questions when I visit your offices tomorrow, Gardinier. I hope y
 **Carl Sagan (?):** //[Screaming.]// Emissions shoot out across countless dying stars, a young alien civilization discovering radio waves for the first time, crushed beneath several trillion trillion tons of hydrogen, the cries of a few hundred million dying mothers and their kin, echoing like microphone feedback, flattened into dust, redshifting into the deep, deeper, deeper, deeper --
 
 //[A high screeching sound emits at a deafening volume. The SAPPHIRE agents shout over the noise, incomprehensible.]//
-[[/<]]
+
 = **<End Log>**
 ----
-[[/div]]
 [[/div]]
 
 [[div style="text-align: center;"]]
@@ -330,11 +348,9 @@ Expect further questions when I visit your offices tomorrow, Gardinier. I hope y
 [[/div]]
 [[/div]]
 
-[[div style="text-align: center;"]]
 [[div class="comm-log"]]
 = **COMMUNICATIONS LOG**
 ----
-[[<]]
 **Date Received:** June 1, 2006
 
 **Foreword:** Agent Daniau infiltrated SAPPHIRE for approximately six years until his disappearance in mid-2006. After a month lapse without communication, IntSCPFN received his final correspondence in full -- alongside foreign information, suggesting a SAPPHIRE hijacking.
@@ -424,9 +440,7 @@ She was screaming about her ancestors coming out of her head, berating and attac
 **Simurgh.aic: {{COGNITOHAZARD DETECTED, SESSION AUTOMATICALLY TERMINATED.}}**
 
 = **<End Log>**
-[[/<]]
 ----
-[[/div]]
 [[/div]]
 @@ @@
 [[div class="lite-header"]]
@@ -455,11 +469,9 @@ Following [[[chimes-broken|a series of SAPPHIRE attacks]]] in Southwestern China
 [[/div]]
 [[/div]]
 
-[[div style="text-align: center;"]]
-[[div class="journal"]]
+[[div class="journal-block" style="margin-bottom: 20px;"]]
 = **TEXT LOG**
 ----
-[[<]]
 **Personnel:** Agent Samara Maclear
 
 **Materials:**
@@ -469,8 +481,9 @@ Following [[[chimes-broken|a series of SAPPHIRE attacks]]] in Southwestern China
 
 **Note:** The following was recorded in Agent Maclear's dream journal.
 ----
-**Report Text:** 
-[[div class="journal-text"]]
+[[/div]]
+
+[[div class="journal"]]
 I entered the protective chamber and sat down. The ritual called for inhaling the dose all at once if I was to go in and get what I needed fast. I mean, I was excited; who wouldn't want a chat with Carl fucking Sagan?
 
 I inhaled. I saw a shimmering fire. It budded, blossomed, swirling up my chest and twisting out of my mouth. Bitterness, stinging. It folded over and stretched through itself into a hundred permutations, each vying for a modicum of my memory. I heard his laughter in every cardinal direction. I felt the rising cackle of a chimp on pure ecstasy, or a swelling orchestral hit, echoing in faraway feedback loops.
@@ -492,10 +505,6 @@ I clawed, whisking the veil like soap, and it latched onto my arm. I jolted back
 There was brown and gray and bloody red: a village. A rural area -- Nepalese? Tibetan? Perhaps Manchurian? A chain of mountains shrunk into pebbles. Distant crowds screamed, and then they were ants, by the millions -- and I fucking hate ants.
 
 The translucent blue punctured under my weight. I fell through the clouds and landed back into myself.
-[[/<]]
-[[/div]]
-----
-[[/div]]
 [[/div]]
 
 After allegedly channeling with Carl Sagan, Maclair worked with global positioning personnel to narrow Sagan's location down to an approximate area. By April 26, the rural mountainous slopes of Qinghai Province, China were selected as the most likely location, prompting mobilization to that area.
@@ -533,13 +542,9 @@ As of May 4, OPERATION: MENDAX SWITCH has been launched. Mobile Task Force Alpha
 A non-zero risk of a //Shin-Sophist// "Global Religious Dissolution" Scenario exists at this time.
 
 [[footnoteblock]]
-
+----
 > Reminder: This article is part of the [[[http://scp-int.wikidot.com/international-goi-contest-2019|International Contest]]]! Of course, you can vote on this article here, however, for the contest, only votes on **[[[http://scp-int.wikidot.com/scp-4519|this page's counterpart]]]** on the international wiki count.
 
 [[div class="saphir-nav"]]
-[[div class="footer-wikiwalk-nav"]]
-[[=]]
-<< [[[Chimes Broken]]] | [[size 120%]][[[non-prophet-organization-hub|ACT I: GENESIS]]][[/size]] | Coming Soon... >>
-[[/=]]
-[[/div]]
+= << [[[Chimes Broken]]] | [[size 120%]][[[non-prophet-organization-hub|ACT I: GENESIS]]][[/size]] | Coming Soon... >>
 [[/div]]
