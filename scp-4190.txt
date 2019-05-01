@@ -56,6 +56,15 @@ body{
     padding: 3px 12px;
     text-align: left;
 }
+.note-block{
+    border: solid 1px black; 
+    background: white; 
+    margin-left: 20pt;
+    margin-right: 20pt;
+    padding: 3px 12px;
+    text-align: left;
+    margin-bottom: 12px;
+}
 .footnotes-footer {
     display:none;
 }
@@ -86,7 +95,7 @@ body{
 [[/row]]
 [[/table]]
 ----
-[[include component:image-block name=http://www.scp-wiki.net/local--files/scp-4190/arrival-of-the-mistaken-beast.jpg|caption=SCP-4190's front cover. All text with potential ephialteic (nightmare-inducing) properties has been expunged.]]
+[[include :scp-sandbox-3:image-zoom name=arrival-of-the-mistaken-beast.jpg|caption=SCP-4190's front cover. All text with potential ephialteic (nightmare-inducing) properties has been expunged (hover to enlarge).|width=300px|align=right]]
 
 **Special Containment Procedures:** SCP-4190 is kept in a standard Safe-class containment locker in the Anomalous Objects Wing of Site-82.
 
@@ -143,7 +152,7 @@ Near the end of the dream, subject sighted an indeterminate figure on the other 
 
 Note reads as follows:
 
-[[div style="display: inline-block; border: solid 1px black; background: white; width: 72.25%; padding: 0 12px; margin: auto; margin-bottom: 12px;"]]
+[[div class="note-block"]]
 [[=]]
 YOU ARE DOING EXCELLENT WORK
 PLEASE KEEP IT UP
@@ -157,7 +166,7 @@ FOR OUR SAKE
 [[/div]]
 
 Testing of SCP-4190 has been halted. Personnel are informed to continue dreaming.
-@@ @@
+
 [[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
 [[/div]]
 [[div style="border-bottom:1px solid #777;"]]
