@@ -21,7 +21,9 @@ This article is **Part 5** of the **Team Bird** storyline.
     text-shadow: none;
 }
 #header h1 a::before {
-    content: "Avian Division" !important;
+    content: "Avian Division";
+    color: #eee;
+    text-shadow: 3px 3px 5px black;
 }
 #header h1 a span{
     display: block;
@@ -33,7 +35,15 @@ This article is **Part 5** of the **Team Bird** storyline.
     text-shadow: none;
 }
 #header h2 span::before {
-    content: "Until we return to the Nest" !important;
+    content: "Killing Our Gods";
+    display: block;
+    margin: 0;
+    padding: 0 0;
+    line-height: 0;
+    max-height: 0;
+    font-weight: bold;
+    color: #f3f3f3;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
 }
 
 /* INFO BOX */
