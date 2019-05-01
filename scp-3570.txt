@@ -11,9 +11,30 @@ This article is **Part 5** of the **Team Bird** storyline.
 [[include :scpdsandbox:floppyphoenix-info]]]]
 
 [[module CSS]]
-#header h1 a::before { content: "Avian Division" !important; }
+@charset "utf-8";
+@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
 
-#header h2 span::before { content: "Until we return to the Nest" !important; }
+#header h1 a {
+    color: transparent;
+    font-family: 'Nanum Gothic', Arial, sans-serif;
+    text-decoration: none;
+    text-shadow: none;
+}
+#header h1 a::before {
+    content: "Avian Division" !important;
+}
+#header h1 a span{
+    display: block;
+    content: "";
+    visibility: hidden;
+}
+#header h2 span {
+    color: transparent;
+    text-shadow: none;
+}
+#header h2 span::before {
+    content: "Until we return to the Nest" !important;
+}
 
 /* INFO BOX */
 sup {
@@ -161,13 +182,12 @@ During the Moon's transit, locations across the globe became exposed to its ligh
 At 2:45 PM PST Armed Research Site-18, the Avian Division's base of operations, received the following transmission from [[[secure-facility-dossier-lunar-area-32|Lunar Area-32]]].
 
 [[collapsible show="► Lunar Area-32 Transmission" hide="▼ Close"]]
-
 [[div class="quote-block"]]
+[[<]]
 = **AUDIO LOG**
 ----
 = **<Begin Log>**
 
-[[<]]
 This is Junior Researcher Arvo Driessen of Lunar Area-32 transmitting on all Foundation channels. We are on full lockdown. Task Force Sigma-6 "Puddlejumpers" are unaccounted for. Multiple anomalous humanoids have entered the facility //(static)// engaging in hostilities.
 
 To the Avian Division: consider Lunar Area-32 lost.
@@ -187,9 +207,9 @@ I don't know what's going on down there, but up here? We're screwed. I think the
 I'll keep Hoygull updated, but honestly? Don't get your hopes up. The support systems are failing, the sub-levels are practically swarming with those stupid birds, and more of them keep piling in through dash 120.
 
 Good luck saving humanity and all that. As far as I can tell, humanity is beyond saving. If there was any hope before, it's all gone now. My only recommendation is to aim for the head.
-[[/<]]
 
 = **<End Log>**
+[[/<]]
 ----
 [[/div]]
 
@@ -218,9 +238,9 @@ The Avian Division projects that all Type-BE entities will leave the Earth withi
 [[collapsible show="► Incident Log EE-3570-035" hide="▼ Close"]]
 
 [[div class="report-box"]]
+[[<]]
 = **VIDEO LOG**
 ----
-[[<]]
 **Note:** MFT CHARYBDIS is a cybernetically augmented 4-man unit, part of an organisation known as the Centre[[footnote]]Centre personnel are primarily dedicated to neutralising anomalous nautical threats, typically Selachian in nature. The Department of Extra-Universal Affairs first made contact with the Centre in 2011, but MTF-Eta-4 of the Avian Division and MFT CHARYBDIS of the Centre had not run any joint operations until shortly before the advent of EE-3570.[[/footnote]]. A/V footage taken from each MFT CHARYBDIS operative has been compiled into the following log. CHARYBDIS agents appear unaffected by the anomaly. Whether this is due to their extra-universal origin, a memetic hardening developed during their training, or some other effect is unknown.
 
 Upon the start of the Event, MTF-Eta-4 ("Begone Thoth") advised MFT CHARYBDIS to immediately proceed to Outpost-24-B and remain there until the Event's cessation. While travelling to Outpost-24-B, MFT CHARYBDIS was forced to leave behind agent Leah Řezník (designated CHARYBDIS-3) during an engagement with an overwhelming force of Type-BE entities. Approximately 4 hours later fully transformed Type-BE entities discovered Outpost-24-B.
@@ -300,7 +320,6 @@ Upon the start of the Event, MTF-Eta-4 ("Begone Thoth") advised MFT CHARYBDIS to
 **E-4 Lead Keshrayuth (COM):** Yes, but hurry. I'd like to restrict today's operations to //today//. We're not aware of what implications this anomaly might have at night.
 
 **C-1 Quinn:** You heard the lady. C-2, grab the Deviant. Let's get back to base, team!
-[[/<]]
 
 = **<End Log>**
 ----
@@ -308,6 +327,7 @@ Upon the start of the Event, MTF-Eta-4 ("Begone Thoth") advised MFT CHARYBDIS to
 [[>]]
 — Captain Quinn Griffith, MFT CHARYBDIS Lead
 [[/>]]
+[[/<]]
 ----
 [[/div]]
 [[/collapsible]]
@@ -319,9 +339,9 @@ The captured instance, designated EE-3570-A, is contained within the Anomalous H
 [[collapsible show="► SCiPNET:/files/EE-3570/2018-08-10T23:58:44-07:00.wav" hide="▼ Close"]]
 
 [[div class="quote-block"]]
+[[<]]
 = **AUDIO LOG**
 ----
-[[<]]
 **Note:** //Our last known human colleagues — who were stationed at Lunar Area-32 before the Event — relayed most of the following information, which I've compiled and relayed via the following audio recording.// 
 [[>]]
 — Dr Frederick Hoygull, Avian Division Head
@@ -344,9 +364,9 @@ In the event that such intense energies might be manipulated against Earth, a nu
 Anyway, the red tape speaks for itself. Let me tell you what we're going to do about this. Appended to Document EE-3570 is Supplemental Materials file "**[[[umbral-migratory-sequence|UMBRAL_MIGRATORY_SEQUENCE.txt]]]**". Take note of the information within that file before using resources available to you to reach an immediate rendezvous with MTF-Eta-4, at which point we will co-ordinate off-world evacuation efforts. 
 
 Suffice to say, we don't have much time left. Everything will, uh, make sense soon. In the event that it doesn't? Good luck.
-[[/<]]
 
 = **<End Log>**
+[[/<]]
 ----
 [[/div]]
 
