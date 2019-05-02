@@ -1,13 +1,51 @@
 title:SPC-993
-[[module css]]
+[[include :scp.avn.sh:component:aers:info-stuff
+|lang=en
+|page=spc-993
+|authorPage=http://www.scp-wiki.net/floppyphoenix
+|comments=**SPC-993:** Bobble the Clown Shark 
+**Author:** [[*user FloppyPhoenix]] 
+ 
+This is an SPC Format for Day 2 of the **144-Hour Jam Contest**. The theme was "Pulp fiction". 
+----
+[[include :scpdsandbox:floppyphoenix-info]] 
+]]
+
+[[module CSS]]
 @import url(http://www.scp-wiki.net/component:spc-theme/code/1);
 
 #header h1 a::before { content: "Shark Punching Centre" !important; }
 
 #header h2 span::before { content: "Search, Punch, Conquer" !important; }
-[[/module]]
 
-[[module CSS]]
+/* INFO BOX */
+sup {
+    vertical-align: top;
+    position: relative;
+    top: -0.5em;
+}
+body{
+    --cutColour: #fafafa;
+    --barColour: #132639;
+}
+.translation_block{
+    display: none;
+}
+.info-container .collapsible-block-folded a{
+    color: #FFF;
+}
+.info-container .collapsible-block-unfolded-link a{
+    color: #FFF;
+}
+.info-container .collapsible-block-link,
+.info-container:hover .collapsible-block-link {
+    line-height: 1.6em;
+}
+.collapsible-block-link{
+    font-weight: bold;
+}
+
+/* FORMATTING */
 .raisa_box{
     border: solid 1px #252525;
     background:#f2f2c2;
@@ -15,7 +53,6 @@ title:SPC-993
     margin-bottom: 10px;
     text-align:center;
 }
-
 .oracle{
     border: solid 1px #00060A;
     background: #4682B4;
@@ -24,31 +61,29 @@ title:SPC-993
     color: #fff;
     text-align:center;
 }
-
 div.resize img{
     width: auto;
     height: 150px;
     float: left;
     margin: 5px;
 }
-
 div.resizesm img{
-width: auto;
-height: 125px;
-float: left;
-margin: 5px;
+    width: auto;
+    height: 125px;
+    float: left;
+    margin: 5px;
 }
-
-a.collapsible-block-link { font-weight: bold; }
-
 .footnotes-footer {
-display:none;
+    display: none;
 }
 [[/module]]
 
 [[>]]
 [[module Rate]]
 [[/>]]
+@@ @@
+@@ @@
+@@ @@
 [[div class="raisa_box"]]
 [[=]]
 ++++ NOTICE FROM THE CENTRAL INTELLIGENCE COORDINATION AND PROJECTS OPERATION COMMAND OFFICE
@@ -167,4 +202,10 @@ The following is QUALIFIED/993 Restricted.
 > That's right, watch Centre SmackDown-993, LIVE, at the __Dr. Mike Tyson Colosseum__. Buy your tickets TODAY!
 [[/=]]
 
-[[footnoteblock]]
+[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[/div]]
+[[div style="border-bottom:1px solid #777;"]]
+[[/div]]
+[[>]]
+[[module Rate]]
+[[/>]]
