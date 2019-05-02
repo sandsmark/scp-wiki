@@ -1,25 +1,59 @@
 title:A Surprise Encounter with Crispy Sex Pirates
-[[module css]]
+[[include :scp.avn.sh:component:aers:info-stuff
+|lang=en
+|page=crispy-sex-pirates
+|authorPage=http://www.scp-wiki.net/floppyphoenix
+|comments=**A Surprise Encounter with Crispy Sex Pirates** 
+**Author:** [[*user FloppyPhoenix]] 
+ 
+This is a tale for Day 1 of the **144-Hour Jam Contest**. The theme was "Shaggy Dog story". 
+ 
+"Crispy Sex Pirates" was created accidentally in [[*user PeppersGhost]] (and botnik)'s **[*http://www.scp-wiki.net/scp-botnik-j SCP-\̅\̅\̅\̅-J]**. 
+----
+[[include :scpdsandbox:floppyphoenix-info]] 
+]]
+
+[[module CSS]]
 @import url(http://www.scp-wiki.net/component:spc-theme/code/1);
 
 #header h1 a::before { content: "Shark Punching Centre" !important; }
 
 #header h2 span::before { content: "Search, Punch, Conquer" !important; }
+
+/* INFO BOX */
+sup {
+    vertical-align: top;
+    position: relative;
+    top: -0.5em;
+}
+body{
+    --cutColour: #fafafa;
+    --barColour: #132639;
+}
+.translation_block{
+    display: none;
+}
+.info-container .collapsible-block-folded a{
+    color: #FFF;
+}
+.info-container .collapsible-block-unfolded-link a{
+    color: #FFF;
+}
+.info-container .collapsible-block-link,
+.info-container:hover .collapsible-block-link {
+    line-height: 1.6em;
+}
+.collapsible-block-link{
+    font-weight: bold;
+}
 [[/module]]
 
-[[include info:start]]
-**A Surprise Encounter with Crispy Sex Pirates**
-**Author:** [[*user FloppyPhoenix]]
-
-This is a tale for Day 1 of the **144-Hour Jam Contest**. The theme was "Shaggy Dog story". 
-
-"Crispy Sex Pirates" was created accidentally in [[*user PeppersGhost]] (and botnik)'s **[[[scp-botnik-j|SCP-\̅\̅\̅\̅-J]]]**.
-----
-[[div class="footer-wikiwalk-nav"]]
-[[include :scpsandbox2:FloppyPhoenix2]]
-[[/div]]
-[[include info:end]]
-
+[[>]]
+[[module Rate]]
+[[/>]]
+@@ @@
+@@ @@
+@@ @@
 [[==]]
 Centre Pugilist Justine Everwood patrolled the area. It was Shark Week, and her superiors had tasked her with defending the beach against the Selachian menace.
 
@@ -131,3 +165,11 @@ Haruki skewered the crustacean to the table with her fork. "So, what else is new
 
 "Did you ever hear the story about Marshall, Carter, and Shark?"
 [[/==]]
+
+[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[/div]]
+[[div style="border-bottom:1px solid #777;"]]
+[[/div]]
+[[>]]
+[[module Rate]]
+[[/>]]
