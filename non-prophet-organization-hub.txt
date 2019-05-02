@@ -1,8 +1,47 @@
 title:A Non-Prophet Organization Hub
 parent:series-archive
+[[include :scp.avn.sh:component:aers:info-stuff
+|lang=en
+|page=non-prophet-organization-hub
+|authorPage=http://www.scp-wiki.net/non-prophet-organization-hub
+|comments=**A Non-Prophet Organization Hub** 
+**Authors:** Team Nico's Angels -- [[*user Uncle Nicolini]], [[*user 9Volt]], [[*user FloppyPhoenix]], and [[*user sepiafishie]]. 
+ 
+This is the Hub page for Team Nico's Angels' **SAPPHIRE** series, written for the **International Contest 2019**! 
+]]
+
 [[include :topia:component:saphir-theme]]
 
-[[module css]]
+[[module CSS]]
+/* INFO BOX */
+sup {
+    vertical-align: top;
+    position: relative;
+    top: -0.5em;
+}
+body{
+    --cutColour: #050505;
+    --barColour: #e6ac00;
+}
+.translation_block{
+    display: none;
+}
+.info-container .collapsible-block-folded a{
+    color: #FFF;
+}
+.info-container .collapsible-block-unfolded-link a{
+    color: #FFF;
+}
+.info-container .collapsible-block-link,
+.info-container:hover .collapsible-block-link {
+    line-height: 1.6em;
+}
+.collapsible-block-link{
+    font-weight: bold;
+}
+#u-author_block{ display:none; }
+
+/* FORMATTING */
 .content-panel{
     border: solid 1px #0d0e26;
     border-radius: 10px;
@@ -11,22 +50,18 @@ parent:series-archive
     box-shadow: 3px 3px 6px #636ce9;
     box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.1);
 }
-
 .entries table.wiki-content-table{
     width: 85%;
     margin: auto;
 }
-
 .entries table.wiki-content-table td{
     border: solid 1px #0d0e26;
 }
-
 .entries table.wiki-content-table th{
     background-color: #858be0;
     border: solid 1px #0d0e26;
     padding: 2 0.3em;
 }
-
 .dark-header hr{
     width: 100%;
     margin: auto;
@@ -34,7 +69,6 @@ parent:series-archive
     border: none;
     height: 1px;
 }
-
 .dark-header-75 hr{
     width: 75%;
     margin: auto;
@@ -51,7 +85,6 @@ parent:series-archive
 [[/>]]
 
 [[==]]
-
 [[=]]
 + No Gods. No Prophets.
 + Only Reason.
