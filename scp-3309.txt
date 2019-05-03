@@ -42,32 +42,34 @@ body{
 #u-author_block{ display:none; }
 
 /* DIV BLOCKS */
-.patanotice {
-    text-align: center;
-    color: #ededed;
-    border: solid 1px #fff;
-    background: #201230;
-    padding: 5px;
-    margin-bottom: 10px;
-}
+    border: 1px double #999;
+    background-color: #f4f4f4;
+    padding: .25em 1em;
+    margin-bottom: 1em;
 
-.transquote {
+.patanotice{
+    border: solid 1px #fff;
+    background-color: #201230;
+    color: #ededed;
+    padding: .25em 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.transquote{
     font-style: italic;
     border: dashed 1px #444;
-    background: white;
-    margin-left: 5pt;
-    margin-right: 5pt;
-    padding: 5px;
+    background-color: white;
+    padding: .25em 1em;
+    margin-bottom: 1em;
+    margin-left: .25em;
+    margin-right: .25em;
     text-align: center;
 }
-
-.quoteblock {
+.quoteblock{
     border: 1px double #999;
-    background: #F5F5F5;
-    margin-left: 20pt;
-    margin-right: 20pt;
-    padding: 0 12px;
-    text-align: left;
+    background-color: #f4f4f4;
+    padding: .25em 1em;
+    margin-bottom: 1em;
 }
 [[/module]]
 
@@ -195,21 +197,21 @@ I don't want to be forgotten.
 
 [[collapsible show="His heart is a crater, and we have filled it." hide=" " hideLocation="bottom"]]
 @@ @@
-[[div class="quoteblock" style="margin-bottom: 20px;"]]
+[[div class="quoteblock"]]
 Researcher Smalls did not show up during the latter parts of our testing this evening. He no longer appears on any of our itineraries and his name has been expunged from my project files. If there has been an immediate project alteration or a change in schedule that I was not informed of, please notify me __immediately__.
 [[>]]
 — Researcher John Calzaroli
 [[/>]]
 [[/div]]
 
-[[div class="quoteblock" style="margin-bottom: 20px;"]]
+[[div class="quoteblock"]]
 Researcher Calzaroli, are you alright? Yes, there was indeed a 3-hour schedule change, but a "Researcher Smalls" has never been involved with this project. Further, I assure you that someone named Researcher Smalls does not work with us. Please, John, take a break, the stress must be getting to you. Testing has been absolutely rigorous these past few weeks. I feel it, too.
 [[>]]
 — Researcher Robert Woods
 [[/>]]
 [[/div]]
 
-[[div class="quoteblock" style="margin-bottom: 20px;"]]
+[[div class="quoteblock"]]
 I'm sorry, you're mistaken. You //must// know the man. He's the most exceptional memeticist we have.
 
 But, if you truly claim that there is no Researcher Smalls, well, there must be something more to this. SCP-3309 erases anomalies and the files associated with them. We haven't discussed where exactly these anomalies //go//, and I'm sure we've all had our questions. As far as I can remember, Smalls was assigned to SCP-3309 when it was first discovered.
@@ -220,7 +222,7 @@ Are we sure personnel aren't also being deleted?
 [[/>]]
 [[/div]]
 
-[[div class="quoteblock" style="margin-bottom: 20px;"]]
+[[div class="quoteblock"]]
 What the hell?
 [[>]]
 — Researcher Robert Woods
