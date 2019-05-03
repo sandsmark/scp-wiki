@@ -64,6 +64,7 @@ This article is set in the **[*http://www.scp-wiki.net/broken-masquerade-hub Bro
 [[include :scp-wiki:component:pataphysics-theme]]
 
 [[module CSS]]
+/* HEADER */
 #header h1 a::before { content: "Pataphysical Digital Archives" !important; }
 
 #header h2 span::before { content: "Archiving Apotheosis" !important; }
@@ -95,6 +96,8 @@ body{
     font-weight: bold;
 }
 #u-author_block{ display:none; }
+
+/* FORMATTING */
 .collapsible-block-link { font-weight: bold; }
 .terminal{
     width: @display-width;
@@ -131,14 +134,15 @@ body{
     padding-left: 3rem;
     padding-right: 3rem;
     font-family: Lucida Console, Monaco, monospace;
-    }
+}
     
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes scan{
     from{ transform: translateY(-10%);}
     to{  transform: translateY(2000%);}
 }
-/* flags */
+
+/* FLAGS */
 .log {
   float: center; 
   border: gray 1px; 
@@ -149,23 +153,19 @@ body{
 }
 
 /* INFORMATION BOXES */
-.container {
- font-family: 'Nanum Gothic', Arial, sans-serif;
-    background-color: #1e0f2d !important;
-    border-color: #451c76 !important;
- padding: 5px 15px 15px 15px; 
-}
 .quoteblock { 
-  display: inline-block; 
-  width: 96%;
-  float: center; 
-  border: gray 1px; 
-  padding: 5px; 
-  margin: 0.625em;
+  border: 1px solid gray; 
+  padding: .25em 1em;
   color: gray;
   font-weight: bold;
   background-color: #fafafa; 
   box-shadow: 0 2px 4px rgba(75, 75, 75, .5);
+}
+.recording-block{
+    border: 1px double #999;
+    background-color: #f4f4f4;
+    padding: .25em 1em;
+    margin-bottom: 1em;
 }
 .blockM {
 -webkit-margin-start: 0px;
@@ -273,7 +273,7 @@ A natural Moosphere, Inc. cave udder, photographed via VERITAS Resonance Imaging
 [[/div]]
 [[/div]]
 ----
-**Special Containment Procedures:** Containment of SCP-3739 is focused on the introduction of a stable competitor product to gain a foothold in the paranormal market.[[footnote]]This market consists of competitors that are concerned with the dairy industry; Moosphere, Inc., MC&D, Ambrose Thorn Valley, [[[SCP-4525|dado go]]], etc.[[/footnote]] To this end, Foundation front company [[[SCP-3787|Stratford Cattle Productions]]][[footnote]]A parascientific bovine research firm and designer cattle farm.[[/footnote]] is to manufacture and market a legally safe anomalous dairy product. Cattle engineers are to distill dairy milk using bovine gene pool manipulation paratechniques and conceptual form separation. The Department of Economics is to reintroduce 13% of all revenue into Stratford Cattle Productions, and 87% into various other Foundation revenue streams.
+**Special Containment Procedures:** Containment of SCP-3739 is focused on the introduction of a stable competitor product to gain a foothold in the paranormal market.[[footnote]]This market consists of competitors that are concerned with the dairy industry; Moosphere, Inc., MC&D, [[[Ambrose Thorn Valley]]], [[[SCP-4525|dado go]]], etc.[[/footnote]] To this end, Foundation front company [[[SCP-3787|Stratford Cattle Productions]]][[footnote]]A parascientific bovine research firm and designer cattle farm.[[/footnote]] is to manufacture and market a legally safe anomalous dairy product. Cattle engineers are to distill dairy milk using bovine gene pool manipulation paratechniques and conceptual form separation. The Department of Economics is to reintroduce 13% of all revenue into Stratford Cattle Productions, and 87% into various other Foundation revenue streams.
 
 Meatspace Transitional Suppressor (MEATS) purification filters are to replace normative methods and technologies used for gauging bovine health by 2021. Clinical trials and filter prototyping are to continue at Site-82 Command in Eastern Wisconsin, United States. 
 
@@ -342,7 +342,7 @@ Within 2 to 5 business days, each of the researchers encountered the following a
 ----
 [[/div]]
 @@ @@
-[[include :scp-sandbox-3:image-zoom name=aswan-low-dam.png |caption=Aswan Low Dam c. 1906. |width=300px|align=right]]
+[[include :scp-sandbox-3:image-zoom name=aswan-low-dam.png |caption=Aswan Low Dam c. 1906 (hover to enlarge). |width=300px|align=right]]
 
 Egyptian Foundation personnel were first alerted to SCP-3739-1-type neural advertising during the October 1952 survey of the upper Suez Canal. While conducting initial geological testing for the Aswan Low Dam renovation, Suez Canal Company workers accidentally breached an underwater chamber, releasing a flow of viscous white liquid. Workers 15 m from the Lake Nasser embankment made physical contact with the liquid, experiencing immediate glossolalia.[[footnote]]The phenomenon of speaking in an unknown language; colloquially known as "speaking in tongues". [[/footnote]]
 
@@ -774,8 +774,7 @@ Near the end of the footage, η-2 emerges naked and is marked with a disembodied
 
 [[span class="spangles"]]On February 9, 2020[[/span]], the CEO of Moosphere interrupted all of Wisconsin, Pennsylvania, and Washington's telecommunication broadcasts with a payload of cognitohazardous memes. Moosphere employs unaffected populations by force. Televisions broadcasted the following:
 
-
-[[div style="border: 1px double #999; background: #F5F5F5; margin-left: 0; margin-right: 0; padding: 3px 12px; text-align: left;"]]
+[[div class="recording-block"]]
 = **VIDEO LOG**
 ----
 = **<Begin Log>**
@@ -805,16 +804,14 @@ Near the end of the footage, η-2 emerges naked and is marked with a disembodied
 
 [[footnoteblock]]
 
-[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[div style="border-bottom: 2px solid #777; margin-bottom: 1px;"]]
 [[/div]]
-[[div style="border-bottom:1px solid #777;"]]
+[[div style="border-bottom: 1px solid #777;"]]
 [[/div]]
 [[>]]
 [[module Rate]]
 [[/>]]
 
 [[div class="footer-wikiwalk-nav"]]
-[[=]]
-<< [[[SCP-3738]]] | SCP-3739 | [[[SCP-3740]]] >>
-[[/=]]
+= << [[[SCP-3738]]] | SCP-3739 | [[[SCP-3740]]] >>
 [[/div]]
