@@ -39,33 +39,31 @@ body{
     font-weight: bold;
 }
 
-/* FORMATTING */
+/* DIV BLOCKS */
 .testing-log{
     border-radius: 10px;
-    border: dashed 1px #999;
-    background: #F5F5F5;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 3px 12px;
-    text-align: left;
+    border: 1px dashed #999;
+    background-color: #F5F5F5;
+    padding: .25em 1em;
+    margin-bottom: 1em;
 }
 .quote-block{
     border: 1px double #999;
-    background: #F5F5F5;
-    margin-left: 20pt;
-    margin-right: 20pt;
-    padding: 3px 12px;
-    text-align: left;
+    background-color: #f4f4f4;
+    padding: .25em 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 .note-block{
-    border: solid 1px black;
-    background: white;
-    margin-left: 40pt;
-    margin-right: 40pt;
-    padding: 3px 12px;
-    text-align: left;
-    margin-bottom: 12px;
+    border: 1px solid black;
+    background-color: white;
+    padding: .25em 1em;
+    margin-bottom: 1em;
+    text-align: center;
 }
+
+/* FORMATTING */
 .footnotes-footer {
     display:none;
 }
@@ -110,7 +108,7 @@ Subjects that read SCP-4190's cover or contents report experiencing vivid hypnag
 
 A list of tests with SCP-4190 is as follows.
 
-[[div class="testing-log" style="margin-bottom: 20px;"]]
+[[div class="testing-log"]]
 = **STANDARD DREAM LOG**
 ----
 **NOTE:** Each subject was requested to read SCP-4190 for approximately 30 minutes in a controlled setting. Any nightmares experienced within a week of reading were to be relayed to a site psychiatric specialist and recorded by an audio device.
@@ -118,7 +116,7 @@ A list of tests with SCP-4190 is as follows.
 Only willing participants were selected for this test.
 [[/div]]
 
-[[div class="quote-block" style="margin-bottom: 20px;"]]
+[[div class="quote-block"]]
 **SUBJECT:** D-3467
 
 **ESTIMATED DEGREE OF RECALL:** Low
@@ -126,7 +124,7 @@ Only willing participants were selected for this test.
 **NIGHTMARE SUMMARY:** Subject reported walking through a damp, dark, narrow hallway. Both the ceiling and the end of the hallway could not be seen at any point during the dream. About halfway through the walk, the subject reported seeing a black figure in their periphery. Turning around failed to reveal its location.
 [[/div]]
 
-[[div class="quote-block" style="margin-bottom: 20px;"]]
+[[div class="quote-block"]]
 **SUBJECT:** D-3852
 
 **ESTIMATED DEGREE OF RECALL:** Medium
@@ -134,7 +132,7 @@ Only willing participants were selected for this test.
 **NIGHTMARE SUMMARY:** Subject reported arriving at the base of a tall hill at the edge of a dense forest. No illumination -- natural or man-made -- was reported, although the subject claimed it was twilight. Subject climbed the hill. At one point, they stumbled, losing a third of their progress, after which they reported the sensation of being watched. Subject spent the rest of the dream searching for potential predators, but could not locate any.
 [[/div]]
 
-[[div class="quote-block" style="margin-bottom: 20px;"]]
+[[div class="quote-block"]]
 **SUBJECT:** Psionics Specialist Samara Maclear
 
 **ESTIMATED DEGREE OF RECALL:** High
@@ -154,7 +152,6 @@ Near the end of the dream, subject sighted an indeterminate figure on the other 
 Note reads as follows:
 
 [[div class="note-block"]]
-[[=]]
 YOU ARE DOING EXCELLENT WORK
 PLEASE KEEP IT UP
 WE ARE HAVING SO MUCH FUN
@@ -162,22 +159,19 @@ WE HARBOUR NO GRUDGE
 IT DOES NOT CARE EITHER WAY
 THE JOKE CAN NOT DIE
 FOR OUR SAKE
-[[/=]]
 [[/div]]
 [[/div]]
 
 Testing of SCP-4190 has been halted. Personnel are informed to continue dreaming.
 
-[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[div style="border-bottom: 2px solid #777; margin-bottom: 1px;"]]
 [[/div]]
-[[div style="border-bottom:1px solid #777;"]]
+[[div style="border-bottom: 1px solid #777;"]]
 [[/div]]
 [[>]]
 [[module Rate]]
 [[/>]]
 
 [[div class="footer-wikiwalk-nav"]]
-[[=]]
-<< [[[SCP-4189]]] | SCP-4190 | [[[SCP-4191]]] >>
-[[/=]]
+= << [[[SCP-4189]]] | SCP-4190 | [[[SCP-4191]]] >>
 [[/div]]
