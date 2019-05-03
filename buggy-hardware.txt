@@ -41,13 +41,12 @@ body{
     font-weight: bold;
 }
 
-.quoteblock{
+/* DIV BLOCKS */
+.quote-block{
     border: 1px double #999;
-    background: #F5F5F5;
-    margin-left: 20pt;
-    margin-right: 20pt;
-    padding: 0 12px;
-    text-align: left;
+    background-color: #f4f4f4;
+    padding: .25em 1em;
+    margin-bottom: 1em;
 }
 
 /* GRADIANT */
@@ -66,9 +65,7 @@ body{
 @@ @@
 @@ @@
 [[div class="footer-wikiwalk-nav"]]
-[[=]]
-<< **[[[The Abyss Gazes Back]]]** | **Buggy Hardware**
-[[/=]]
+= << **[[[The Abyss Gazes Back]]]** | **Buggy Hardware**
 [[/div]]
 
 [[==]]
@@ -418,7 +415,7 @@ body{
 [[module Rate]]
 [[/=]]
 
-[[div class="quoteblock"]]
+[[div class="quote-block"]]
 ,,This has been my entry for Round 2 of the **[[[scp-oct-hub|SCP Original Character Tournament]]]**! This tale is a matchup between the following characters:,,
 * ,,**Researcher Smalls** -- **[[[SCP-3309]]]**,,
 * ,,**Heather Mason** AKA **Ms. Mad About Video Games** -- **[[[SCP-3090]]]** and **[[[danger-in-the-manger|You Ain't No Family]]]**,,
@@ -428,7 +425,5 @@ body{
 [[/div]]
 
 [[div class="footer-wikiwalk-nav"]]
-[[=]]
-**Buggy Hardware** | **FIN** >>
-[[/=]]
+= **Buggy Hardware** | **FIN** >>
 [[/div]]
