@@ -11,6 +11,7 @@ A **Series** by [[*user not_a_seagull]], [[*user FloppyPhoenix]], [[*user Ayers]
 @charset "utf-8";
 @import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
 
+/* HEADER */
 #header h1 a span{
     font-size: 0;
 }
@@ -101,24 +102,22 @@ body{
     padding-right: 2%; 
 }
 
-/* DIV BLOCK */
+/* DIV BLOCKS */
 .header-image{
-    border: solid 3px #444; 
-    background:#EEE; 
-    float: top;
-    margin-left: 1pt;
-    margin-right: 1pt;
-    padding: 0;
-    text-align: left;
+    border: 3px solid #444; 
+    background: #eee; 
+    padding: .25em 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 .showcase{
-    border: solid 3px #444; 
+    border: 3px solid #444; 
     background: #fff; 
-    float:top; 
-    margin-left: 3pt;
-    margin-right: 3pt;
-    padding: 10px;
-    text-align: left;
+    padding: .25em 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 /* TABLES */
@@ -127,43 +126,35 @@ blockquote{
   background: #fff;
   margin: 12pt;
 }
-
 .article blockquote{
     padding: 0;
 }
-
 .article table.wiki-content-table{
     margin: 0 0 -1px;
     width: 100%;
 }
-
 .article table.wiki-content-table td{
     border: solid 1px #ffc818;
     border-right: 0;
 }
-
 .article table.wiki-content-table th{
     border: solid 1px #ffc818;
     font-weight: normal;
     padding: 0 0.3em;
     width: 5em;
 }
-
 .continued blockquote{
     padding: 0;
 }
-
 .continued table.wiki-content-table{
     margin: 0 0 -1px;
     width: 100%;
 }
-
 .continued table.wiki-content-table td{
     border: solid 1px #ffc818;
     border-top: 0;
     border-right: 0;
 }
-
 .continued table.wiki-content-table th{
     border: solid 1px #ffc818;
     font-weight: normal;
