@@ -39,20 +39,16 @@ body{
 
 /* DIV BLOCKS */
 .report-box{
-    border: solid 1px #444;
-    background: white;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 3px 12px;
-    text-align: left;
+    border: 1px solid #444;
+    background-color: white;
+    padding: .25em 1em;
+    margin-bottom: 1em;
 }
 .quote-block{
     border: 1px double #999;
-    background: #F5F5F5;
-    margin-left: 20pt;
-    margin-right: 20pt;
-    padding: 3px 12px;
-    text-align: left;
+    background-color: #f4f4f4;
+    padding: .25em 1em;
+    margin-bottom: 1em;
 }
 
 /* FORMATTING */
@@ -155,7 +151,7 @@ Research efforts into a cure for this illness have, as of July 29, proven ineffe
 @@ @@
 Since July 12, the accelerated spread of this illness has led to the death of approximately 1.1 million horses in the US alone. On August 10, Site-82, in conjunction with the Scientific Department, published a report on PROJECT: DIRE HORSE to SCiPNET. A summary of the report is as follows.
 @@ @@
-[[div class="report-box" style="margin-bottom: 3px;"]]
+[[div class="report-box"]]
 [[div style="text-align: center;"]]
 [[collapsible show="► Open report? ◄" hide="▲ Close ▲"]]
 [[/div]]
@@ -390,7 +386,5 @@ Despite the formation of MTF-Pi-5, the full containment of SCP-3787-n and any re
 [[/>]]
 
 [[div class="footer-wikiwalk-nav"]]
-[[=]]
-<< [[[SCP-3786]]] | SCP-3787 | [[[SCP-3788]]] >>
-[[/=]]
+= << [[[SCP-3786]]] | SCP-3787 | [[[SCP-3788]]] >>
 [[/div]]
