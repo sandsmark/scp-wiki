@@ -6,7 +6,7 @@ title:SCP-4416
 |comments=**SCP-4416:** Tails of Site-42: Why The Foundation Punches Sharks 
 **Author:** [[*user FloppyPhoenix]] 
  
-This article was written for Round 2 of the **[*http://www.scp-wiki.net/draft-swap-hub Draft Swap]**. 
+This article was written for Round 2 of **[*http://www.scp-wiki.net/draft-swap-hub Draft Swap]**. 
 ----
 [[include :scpdsandbox:floppyphoenix-info]] 
 ]]
@@ -39,6 +39,23 @@ body{
     font-weight: bold;
 }
 
+/* DIV BLOCKS */
+.document {
+    display: inline-block;
+    border-radius: 10px;
+    border: solid 1px #ccc;
+    background: #f0f0f0;
+    width: 96.5%;
+    padding: .25em 1em;
+    box-shadow: 0 2px 4px rgba(68, 68, 68, .5);
+}
+.quote-block{
+    border: 1px double #999;
+    background-color: #f4f4f4;
+    padding: .25em 1em;
+    margin-bottom: 1em;
+}
+
 /* FORMATTING */
 .lite-header hr{
     width: 45%;
@@ -47,19 +64,7 @@ body{
     border: none;
     height: 2px;
 }
-
-.document {
-    display: inline-block;
-    border-radius: 10px;
-    border: solid 1px #ccc;
-    background: #f0f0f0;
-    width: 96.5%;
-    padding:10px;
-    box-shadow: 0 2px 4px rgba(68, 68, 68, .5);
-}
-
 .collapsible-block-link { font-weight: bold; }
-
 .footnotes-footer {
     display:none;
 }
@@ -170,17 +175,13 @@ On September 16, 2016, a local New Hanover County news network aired a story on 
 
 //[De Castro shows the following quoted excerpt on a computer screen.]//
 
-[[=]]
-[[div style="display: inline-block; border: dashed 1px #999999; background:#F5F5F5; width: 84%; padding: 1px 15px; margin: 10px 10px 10px 10px"]]
-[[<]]
+[[div class="quote-block"]]
 Amos' Shark Threshers have always punched sharks. Always. It wasn't even until the media picked up on us that the controversies came in. And it wasn't even, like, they feared for our lives or some shit like that. They thought it was inhumane what we were doing to the sharks! My step-brother Dani got his arm bitten off by one in 2012 but now //he's// the bad guy!
-[[/<]]
 
 [[>]]
 -- Madeline Cruz, Wilmington resident
 [[/>]]
 [[/div]]
-[[/=]]
 
 **Everwood:** Can we backtrace them?
 
@@ -226,23 +227,23 @@ On September 22 at 7:35 PM, six days after locating an area matching with the ph
 ----
 = **<Begin Log>**
 
-//Field Agent De Castro walks towards the shore. 9 people are congregating in the shallow water.//
+//[Field Agent De Castro walks towards the shore. 9 people congregate in the shallow water.]//
 
 **De Castro:** Um. Hey, excuse me!
 
-//Confused voices can be heard. A woman, presumably the group's leader, leaves the water and walks in the direction of De Castro.//
+//[Confused voices. A woman, presumably the group's leader, leaves the water and walks in the direction of De Castro.]//
 
 **Unidentified Woman:** What, are you lost or something?
 
 **De Castro:** I'm not lost, I'm --
 
-**Unidentified Woman:** //[interrupting]// I don't give a fuck! Who are you?
+**Unidentified Woman:** //[Interrupting.]// I don't give a fuck! Who are you?
 
 **De Castro:** Uh, my name's Nico. I didn't get lost, I'm here --
 
-**Unidentified Woman:** //[interrupting]// If you're not lost then what the hell are you doing on our turf?
+**Unidentified Woman:** //[Interrupting.]// If you're not lost then what the hell are you doing on our turf?
 
-**De Castro:** I'm here to -- //[pauses]// To punch sharks.
+**De Castro:** I'm here to -- //[Pause.]// To punch sharks.
 
 //[The woman pauses, then laughs.]//
 
@@ -290,7 +291,7 @@ After the first contact with Madeline Cruz (now PoI-3732), Field Agent De Castro
 @@ @@
 On September 23 at 7:51 PM, Field Agent Nico De Castro made contact with an anomalous entity (designated SCP-4416-A). At the time, he was undergoing a lone coastline observation in Seabreeze, North Carolina to surveil potential instances of SCP-4416 phenomena. The other members of the project team claim no knowledge of the event, nor of any unknown entity or person in the area at the time.
 
-In an offhand comment, De Castro referred to the communication as "divine intervention (with) a selachian deity". The following is a record of the supposed intervention, as recorded by his body camera.
+In an offhand comment, De Castro referred to the communication as "divine intervention" with "a selachian deity". The following is a record of the supposed intervention, as recorded by his body camera.
 
 [[div class="document"]]
 = **INCIDENT LOG**
@@ -301,9 +302,9 @@ In an offhand comment, De Castro referred to the communication as "divine interv
 
 //[After 15 minutes, a rocky outcropping comes into view. De Castro approaches it. The outcropping rises from the nearby inlet. 30 seconds later, De Castro enters the shallow water to get a closer look. The rocky outcropping reveals a section hidden from the beach and a cave within. He enters the cave.]//
 
-//[It is at this point in the recording that De Castro claims the anomalous entity came into view. De Castro claims the entity "could not be defined" and says that it attempted to obscure itself during the recording. The video log displays no such entity but does, however, pick up audio. The entity begins to speak.]//
+//[It is at this point in the recording that De Castro claims the anomalous entity came into view. De Castro claims the entity's form "could not be defined" and says that it attempted to obscure itself during the recording. The video log displays no such entity but does, however, pick up audio. The entity begins to speak.]//
 
-[[include component:image-block name=beach-cave.jpg|caption=A still from the point in the recording where Field Agent De Castro claims the entity emerged.]]
+[[include :scp-sandbox-3:image-zoom name=beach-cave.jpg|caption=A still from the point in the recording where Field Agent De Castro claims the entity emerged (hover to enlarge).|width=300px|align=right]]
 
 **SCP-4416-A:** Found you!
 
@@ -403,7 +404,6 @@ The following message was printed atop the package with dried blood:
 The following document was submitted to the Site-42 Projects Command Office by Field Agent De Castro.
 
 [[div class="content-panel standalone series"]]
-
 = __**CONTAINMENT PROPOSAL**__
 ----
 **Proposal #:** SCP-4416-16-A
@@ -421,16 +421,14 @@ Due to this, and the potential (if dubious) danger alluded to in my contact with
 [[/=]]
 @@ @@
 @@ @@
-[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[div style="border-bottom: 2px solid #777; margin-bottom: 1px;"]]
 [[/div]]
-[[div style="border-bottom:1px solid #777;"]]
+[[div style="border-bottom: 1px solid #777;"]]
 [[/div]]
 [[>]]
 [[module Rate]]
 [[/>]]
 
 [[div class="footer-wikiwalk-nav"]]
-[[=]]
-<< [[[SCP-4415]]] | SCP-4416 | [[[SCP-4417]]] >>
-[[/=]]
+= << [[[SCP-4415]]] | SCP-4416 | [[[SCP-4417]]] >>
 [[/div]]
