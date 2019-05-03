@@ -15,6 +15,7 @@ This article is **Part 5** of the **Team Bird** storyline.
 @charset "utf-8";
 @import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
 
+/* HEADER */
 #header h1 a span{
     font-size: 0;
 }
@@ -66,20 +67,16 @@ body{
 
 /* DIV BLOCKS */
 .report-box{
-    border: solid 1px #444;
-    background: white;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 3px 12px;
-    text-align: left;
+    border: 1px solid #444;
+    background-color: white;
+    padding: .25em 1em;
+    margin-bottom: 1em;
 }
 .quote-block{
     border: 1px double #999;
-    background: #F5F5F5;
-    margin-left: 20pt;
-    margin-right: 20pt;
-    padding: 3px 12px;
-    text-align: left;
+    background-color: #f4f4f4;
+    padding: .25em 1em;
+    margin-bottom: 1em;
 }
 .team-bird-nav{
     background-color: black;
@@ -99,7 +96,6 @@ body{
     border: none;
     height: 2px;
 }
-
 .collapsible-block-link { font-weight: bold; }
 [[/module]]
 
@@ -182,7 +178,7 @@ During the Moon's transit, locations across the globe became exposed to its ligh
 
 At 2:45 PM PST Armed Research Site-18, the Avian Division's base of operations, received the following transmission from [[[secure-facility-dossier-lunar-area-32|Lunar Area-32]]].
 
-[[collapsible show="► Lunar Area-32 Transmission" hide="▼ Close"]]
+[[collapsible show="► Lunar Area-32 Transmission" hide="▲ Close"]]
 [[div class="quote-block"]]
 [[<]]
 = **AUDIO LOG**
@@ -224,7 +220,8 @@ The extent of the behaviour these entities display has not been adequately docum
 ----
 [[/div]]
 [[=]]
-++ August 10 Update
+++ August 10
++++ ##darkred|EE-3570 UPDATE##
 [[/=]]
 [[div class="lite-header"]]
 ----
@@ -236,7 +233,7 @@ The Avian Division projects that all Type-BE entities will leave the Earth withi
 
 **Follow-up Actions Taken:** The following is an excerpt of Marine Fighting Team CHARYBDIS's initial response to EE-3570.
 
-[[collapsible show="► Incident Log EE-3570-035" hide="▼ Close"]]
+[[collapsible show="► Incident Log EE-3570-035" hide="▲ Close"]]
 
 [[div class="report-box"]]
 [[<]]
@@ -337,13 +334,13 @@ The captured instance, designated EE-3570-A, is contained within the Anomalous H
 
 36 hours after the start of the Event, the following was appended to Document EE-3570:
 
-[[collapsible show="► SCiPNET:/files/EE-3570/2018-08-10T23:58:44-07:00.wav" hide="▼ Close"]]
+[[collapsible show="► SCiPNET:/files/EE-3570/2018-08-10T23:58:44-07:00.wav" hide="▲ Close"]]
 
 [[div class="quote-block"]]
 [[<]]
 = **AUDIO LOG**
 ----
-**Note:** //Our last known human colleagues — who were stationed at Lunar Area-32 before the Event — relayed most of the following information, which I've compiled and relayed via the following audio recording.// 
+**Note:** //Our last known human colleagues — who were stationed at Lunar Area-32 before the Event — relayed most of the following information, which I've compiled and released via the following audio recording.// 
 [[>]]
 — Dr Frederick Hoygull, Avian Division Head
 [[/>]]
@@ -377,9 +374,9 @@ The remainder of the Foundation, which includes 75 Avian Division personnel, Mar
 
 **Supplemental Materials:** The following is a surviving excerpt taken from a preserved papyrus reed manuscript, circa 1900 BCE. The account was written using Egyptian hieratic script and was contained in [[[scp-1644|Reliquary Site-62]]].
 
-[[collapsible show="► Recovered Text" hide="▼ Close"]]
+[[collapsible show="► Recovered Text" hide="▲ Close"]]
 
-[[div class="quote-block" style="margin-bottom: 20px;"]]
+[[div class="quote-block"]]
 [[<]]
 -- and Khemennu employs its sons to the most effective degree. We are the jewel of the Nile, so Zaid the Ascended One professes - and it is true, and it is good.
 
@@ -387,7 +384,7 @@ Soon we depart the Land of Black and Red for the cosmos above, where Thoth will 
 [[/<]]
 [[/div]]
 
-[[div class="quote-block" style="margin-bottom: 20px;"]]
+[[div class="quote-block"]]
 I have not told the Elders, but I received a visit from the Sacred One in my dreams. In fear, I asked the one question that has haunted me most. I asked, //Thoth, why do you cast down unbelievers?//
 
 To which Thoth replied, //such an action is a justice basked in by the righteous.//
@@ -422,6 +419,7 @@ The account's subject matter describes phenomena surrounding --URA-8047-- ##1f1f
 [[/div]]
 [[=]]
 ++ August 11 Update
++++ ##darkred|EE-3570 UPDATE##
 [[/=]]
 [[div class="lite-header"]]
 ----
