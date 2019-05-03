@@ -14,6 +14,7 @@ This is an SPC Format for Day 2 of the **144-Hour Jam Contest**. The theme was "
 [[module CSS]]
 @import url(http://www.scp-wiki.net/component:spc-theme/code/1);
 
+/* HEADER */
 #header h1 a::before { content: "Shark Punching Centre" !important; }
 
 #header h2 span::before { content: "Search, Punch, Conquer" !important; }
@@ -45,29 +46,37 @@ body{
     font-weight: bold;
 }
 
-/* FORMATTING */
-.raisa_box{
-    border: solid 1px #252525;
+/* DIV BLOCKS */
+.cicapoco_box{
+    border: 1px solid #252525;
     background:#f2f2c2;
-    padding: 5px;
-    margin-bottom: 10px;
-    text-align:center;
+    padding: .25em .5em;
+    margin-bottom: 1em;
+    text-align: center;
 }
 .oracle{
-    border: solid 1px #00060A;
-    background: #4682B4;
-    padding: 5px;
-    margin-bottom: 10px;
-    color: #fff;
-    text-align:center;
+    border: 1px #00060A;
+    background-color: #4682B4;
+    color: white;
+    padding: .25em 1em;
+    margin-bottom: 1em;
+    text-align: center;
 }
-div.resize img{
+.quote-block{
+    border: 1px double #999;
+    background-color: #f4f4f4;
+    padding: .25em 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.resize img{
     width: auto;
     height: 150px;
     float: left;
     margin: 5px;
 }
-div.resizesm img{
+.resizesm img{
     width: auto;
     height: 125px;
     float: left;
@@ -84,8 +93,7 @@ div.resizesm img{
 @@ @@
 @@ @@
 @@ @@
-[[div class="raisa_box"]]
-[[=]]
+[[div class="cicapoco_box"]]
 ++++ NOTICE FROM THE CENTRAL INTELLIGENCE COORDINATION AND PROJECTS OPERATION COMMAND OFFICE
 
 SPC-993 is now **##b01|INACTIVE##**. Centre personnel may visit the Arena-19 Recreation Wing if they wish to view old episodes of //Bobble the Clown Shark// to increase morale.
@@ -94,7 +102,6 @@ Thank you for your loyalty.
 Search, Punch, Conquer.
 
 — Nathan Jones, Commissioner, CICAPOCO
-[[/=]]
 [[/div]]
 
 [[include component:image-block name=http://scp-wiki.wdfiles.com/local--files/spc-993/BobbletheClownShark.png|caption=Still image from an episode of SPC-993: "Bobble Gets Berated Mercilessly By Lobsters And Other Such Crustaceans".]]
@@ -115,7 +122,7 @@ Due to Centre augmentation, Bobble does not react negatively to pressure and is 
 
 Through the use of metanarrative pugnātorial techniques ([[[http://www.scp-wiki.net/scp-3922|with help from the ☽☽☽ Initiative]]]), Centre pugilists were able to coerce Bobble under duress and convince him to cooperate. Between 1953 and 1969, 416 animated //Bobble the Clown Shark// shorts aired on numerous syndicated television stations, acting as an educational comedy that teaches children the proper way to fight, build muscle, and engage in Selachian pugilism, often narrated by Bobble himself.
 
-**Deployment Record -- Episode Log:** 
+**Deployment Record | Episode Log:** 
 
 ||~ Episode Title ||~ Contents ||
 || "Bobble Pretends To Be The IRS" || Episode takes place in a large call center, where Bobble communicates with several people via telephone. He speaks with an elderly woman in an attempt to convince her to release credit card information. The woman punches him through the phone receiver, breaking several teeth. The office manager, noticing his scam attempt, convinces a mob of angry coworkers to beat him to a pulp as the Benny Hill Theme plays. ||
@@ -166,7 +173,6 @@ The reboot features Bobble advocating for activities Selachians can and should d
 [[div class="resize"]]
 [[image http://scp-wiki.wdfiles.com/local--files/spc-993/spcheader.png]]
 [[/div]]
-[[=]]
 +++ ATTENTION: ALL CENTRE PUGILISTS
 
 Bobble the Clown Shark is in **[[size 110%]]##164F7F|//COWABUNGA, DUDE!!!//##[[/size]]-Level Danger**. 
@@ -174,7 +180,6 @@ Bobble the Clown Shark is in **[[size 110%]]##164F7F|//COWABUNGA, DUDE!!!//##[[/
 We need //YOUR// help to get him back from the Deviant menace. To do this, we need a hardened fighter with FISTS OF STEEL. To prove your worth, all you need to do is 100 push-ups, 100 sit-ups, and 100 squats, and drink a peanut butter & banana chocolate protein shake. But you gotta be quick so that Bobble can get back on the air and teach these kids karate!
 
 Once you have read this document, please report to your Fitness Centre. Long Island Iced Tea will be administered when you get there. HURRY!
-[[/=]]
 [[/div]]
 
 [[=]]
@@ -193,18 +198,19 @@ The following is QUALIFIED/993 Restricted.
 [ACCESS GRANTED]
 [[/div]]
 
-> **OFFICIAL PROMOTION -- //CENTRE SMACKDOWN//**
-> ----
-> Are you READY for Centre SmackDown-993‽
-> 
-> Watch **SUPER-PUGILIST Clark "PUNCH-DOCTOR" Savage, Jr.**, in an EPIC once-in-a-lifetime UNLICENSED match-up //VS.// **SELACHIAN Richard C. Chappell**. Tune in on March 12th at 8/7 Central to witness ol' Doc Savage pulverize that Selachian wretch.
-> 
-> That's right, watch Centre SmackDown-993, LIVE, at the __Dr. Mike Tyson Colosseum__. Buy your tickets TODAY!
-[[/=]]
+[[div class="quote-block"]]
+**OFFICIAL PROMOTION – //CENTRE SMACKDOWN//**
+----
+Are you READY for Centre SmackDown-993‽
 
-[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+Watch **SUPER-PUGILIST Clark "PUNCH-DOCTOR" Savage, Jr.**, in an EPIC once-in-a-lifetime UNLICENSED match-up //VS.// **SELACHIAN Richard C. Chappell**. Tune in on March 12th at 8/7 Central to witness ol' Doc Savage pulverize that Selachian wretch.
+
+That's right, watch Centre SmackDown-993, LIVE, at the __Dr. Mike Tyson Colosseum__. Buy your tickets TODAY!
 [[/div]]
-[[div style="border-bottom:1px solid #777;"]]
+
+[[div style="border-bottom: 2px solid #777; margin-bottom: 1px;"]]
+[[/div]]
+[[div style="border-bottom: 1px solid #777;"]]
 [[/div]]
 [[>]]
 [[module Rate]]
