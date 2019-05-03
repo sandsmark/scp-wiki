@@ -14,26 +14,10 @@ This article is **Part 4** of the **Team Bird** storyline.
 [[module CSS]]
 @import url(http://www.scp-wiki.net/component:spc-theme/code/1);
 
+/* HEADER */
 #header h1 a::before { content: "Shark Punching Centre" !important; }
 
 #header h2 span::before { content: "Search, Punch, Conquer" !important; }
-
-.team-bird-nav-spc{
-    background-color: black;
-    border: outset 1.5px black;
-    border-radius: 30px;
-    color: black;
-    background: linear-gradient(to bottom right, rgba(0,0,0,0), rgba(70,130,180,1));
-    font-weight: bold;
-    font-size: 85%;
-}
-.dark-header hr{
-    width: 100%;
-    margin: auto;
-    background-color: #142954;
-    border: none;
-    height: 1px;
-}
 
 /* INFO BOX */
 sup {
@@ -61,22 +45,68 @@ body{
 .collapsible-block-link{
     font-weight: bold;
 }
+
+/* DIV BLOCKS */
+.exploration-log{
+    border-radius: 10px;
+    border: 1px dashed #999;
+    background-color: #F5F5F5;
+    padding: .25em 1em;
+    margin-bottom: 1em;
+}
 .quote-block{
     border: 1px double #999;
-    background: #F5F5F5;
-    margin-left: 20pt;
-    margin-right: 20pt;
-    padding: 3px 12px;
-    text-align: left;
+    background-color: #f4f4f4;
+    padding: .25em 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
-.exploration-log{
-    border-radius: 10px; 
-    border: dashed 1px #999; 
-    background: #F5F5F5; 
-    margin-left: 20;
-    margin-right: 20;
-    padding: 3px 12px;
-    text-align: left;
+.oracle{
+    border: 1px #00060A;
+    background-color: #4682B4;
+    color: white;
+    padding: .25em 1em;
+    margin-bottom: 1em;
+}
+.inner-block{
+    border: 1px solid #142954; 
+    background-color: #4682B4; 
+    color: #F0F8FF; 
+    padding: .25em 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.team-bird-nav-spc{
+    background-color: black;
+    border: outset 1.5px black;
+    border-radius: 30px;
+    color: black;
+    background: linear-gradient(to bottom right, rgba(0,0,0,0), rgba(70,130,180,1));
+    font-weight: bold;
+    font-size: 85%;
+}
+
+/* FORMATTING */
+.dark-header hr{
+    width: 100%;
+    margin: auto;
+    background-color: #142954;
+    border: none;
+    height: 1px;
+}
+.resize img{
+    width: auto;
+    height: 150px;
+    float: left;
+    margin: 5px;
+}
+.resizesm img{
+    width: auto;
+    height: 125px;
+    float: left;
+    margin: 5px;
 }
 [[/module]]
 
@@ -86,7 +116,10 @@ body{
 @@ @@
 @@ @@
 @@ @@
-[[div style="border:solid 1px #999999; background: #f2f2c2; padding: 5px; margin-bottom: 10px;"]]
+[[div style="border: solid 1px #999999; background: #f2f2c2; padding: .5em; margin-bottom: 1em;"]]
+[[div class="resize"]]
+[[image http://scp-wiki.wdfiles.com/local--files/spc-993/spcheader.png]]
+[[/div]]
 [[=]]
 ++++ NOTICE FROM THE CENTRAL INTELLIGENCE COORDINATION AND PROJECTS OPERATION COMMAND OFFICE
 
@@ -155,16 +188,16 @@ MFT CHARYBDIS utilizes the prototype NEUROKNOCK powered armour, which consists o
 * C-3 Leah Řezník (Parapugilist)
 * C-4 Haruki Nakahara (Tech Specialist)
 ----
-**Context:** The following is a list of notable SPC-507 project deployments. Deployment records use the following format: Mission #, Universe Designation, Cases of Interest, and Commentary.
+**Context:** The following is a list of notable SPC-507 project deployments. Deployment records use the following format: Mission Number, Universe Designation, Case(s) of Interest, and Commentary.
 ----
 [[/div]]
-@@ @@
-[[div class="quote-block" style="margin-bottom: 20px;"]]
-**Mission #:** 1
+
+[[div class="quote-block"]]
+**Mission Number:** 1
 
 **Universe Designation:** Prime Universe
 
-**Cases of Interest:** [[[pelagic-society|Coharminous Pelagic Society (CPS)]]]
+**Case(s) of Interest:** [[[pelagic-society|Coharminous Pelagic Society (CPS)]]]
 
 **Commentary:** MFT CHARYBDIS' first call to action was a RED NETHER Entity sighting in the Oceanic country of New South Wales. MFT CHARYBDIS searched the area for 2 hours before determining that the entity had fled. Before leaving the area, MFT CHARYBDIS came across a Baseline-Type Selachian Entity at a nearby public beach and attempted to communicate.
 ----
@@ -206,12 +239,12 @@ MFT CHARYBDIS utilizes the prototype NEUROKNOCK powered armour, which consists o
 ----
 [[/div]]
 
-[[div class="quote-block" style="margin-bottom: 20px;"]]
-**Mission #:** 13
+[[div class="quote-block"]]
+**Mission Number:** 13
 
 **Universe Designation:** Tri-Kaa
 
-**Cases of Interest:** RED NETHER
+**Case(s) of Interest:** RED NETHER
 
 **Commentary:** MFT CHARYBDIS' FASH device informed them of a RED NETHER incursion nearby universe designated Tri-Kaa. The Selachian, a Great Hammerhead (//Sphyrna mokarran//), measured 4 meters in length. Upon arriving, MFT CHARYBDIS entered orbit around an Earth-sized planet covered with 99% water. CHARYBDIS detected the Entity 8,000 km away in geosynchronous orbit.
 ----
@@ -259,12 +292,12 @@ MFT CHARYBDIS utilizes the prototype NEUROKNOCK powered armour, which consists o
 ----
 [[/div]]
 
-[[div class="quote-block" style="margin-bottom: 20px;"]]
-**Mission #:** 54
+[[div class="quote-block"]]
+**Mission Number:** 54
 
 **Universe Designation:** Penta-Waxaklahun
 
-**Cases of Interest:** Bee Obliteration Registry "K" (BORK)
+**Case(s) of Interest:** Bee Obliteration Registry "K" (BORK)
 
 **Commentary:** MFT CHARYBDIS is alerted to a RED NETHER attack in Universe Penta-Waxaklahun. MFT deploys to a city on a small terrestrial planet inhabited by humanoid entities. After pugilising the Selachian into submission, the humanoids celebrate, thanking MFT CHARYBDIS for their help.
 ----
@@ -299,11 +332,11 @@ MFT CHARYBDIS utilizes the prototype NEUROKNOCK powered armour, which consists o
 [[/div]]
 
 [[div class="quote-block"]]
-**Mission #:** 57
+**Mission Number:** 57
 
 **Universe Designation:** Proto-Mih
 
-**Cases of Interest:** WHITE NETHER
+**Case(s) of Interest:** WHITE NETHER
 
 **Commentary:** The following is a transcript of MFT CHARYBDIS' final recorded mission. On August 2nd, 2018 at 7:51 AM, the team's FASH device detected a WHITE NETHER incursion in Universe Proto-Mih: the HQ of the "SCP Foundation".
 ----
@@ -351,6 +384,8 @@ MFT CHARYBDIS utilizes the prototype NEUROKNOCK powered armour, which consists o
 
 As of August 2, 2018, at 10:01 AM, the Command Office has declared MFT CHARYBDIS Killed in Pugnātion. SPC-507 has been placed on HIATUS.
 
+[[footnoteblock]]
+
 [[=]]
 @@ @@
 @@ @@
@@ -365,13 +400,13 @@ As of August 2, 2018, at 10:01 AM, the Command Office has declared MFT CHARYBDIS
 @@ @@
 ##0b65c0|**[ACCESS GRANTED]**##
 [[/=]]
-[[div style="border: solid 1px #999999; background: #4682B4; color: #F0F8FF; padding: 5px; margin-bottom: 10px; text-align: center;"]]
+[[div class="oracle"]]
 [[=]]
 ++++ FROM THE DESK OF ORACLE
 
-The following audio was received by the Centre on August 9th, 2018, approximately 1 week after the loss of communication with MFT CHARYBDIS. The full context of this log cannot be determined.
+The following audio was received by the Centre on August 9, 2018, approximately 1 week after the loss of communication with MFT CHARYBDIS. The full context of this log cannot be determined.
 [[/=]]
-[[div style="border: dashed 1px #142954; background: #4682B4; color: #F0F8FF; padding: 10px; margin-left: 20pt; margin-right: 20pt;"]]
+[[div class="inner-block"]]
 [[<]]
 = **<Begin Log>**
 
@@ -439,11 +474,9 @@ The following audio was received by the Centre on August 9th, 2018, approximatel
 [[/<]]
 [[/div]]
 [[=]]
-No further transmissions of the current whereabouts of MFT CHARYBDIS have been received. CICAPOCO is searching for a new Marine Fighting Team to replace MFT CHARYBDIS.
+No further transmissions on the current whereabouts of MFT CHARYBDIS have been received. CICAPOCO is searching for a new Marine Fighting Team to replace MFT CHARYBDIS.
 [[/=]]
 [[/div]]
-
-[[footnoteblock]]
 
 ----
 
