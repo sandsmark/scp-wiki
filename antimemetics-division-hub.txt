@@ -3,11 +3,16 @@ title:Antimemetics Division Hub
 [[module Rate]]
 [[/>]]
 
+[!--
+  This module imports the content of another wiki page, specifically a page with category "fragment" whose parent is this page (the Antimemetics Division Hub page) which was created first or second or third or whatever, depending on the offset specified in the URL, defaulting to 0.
+  See: <http://www.scp-wiki.net/listpages-magic-and-you>
+--]
 [[module ListPages category="fragment" parent="." limit="1" order="created_at" offset="@URL|0"]]
 %%content%%
 [[/module]]
 
 [!--
   To edit the fragments which can appear here, visit:
-  http://www.scp-wiki.net/fragment:antimemetics-division-hub-main
+  Offset 0: <http://www.scp-wiki.net/fragment:antimemetics-division-hub-main>
+  Offset 1: <http://www.scp-wiki.net/fragment:antimemetics-division-hub-marion>
 --]
