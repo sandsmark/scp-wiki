@@ -1,0 +1,212 @@
+title:Automated Passive Amnestization System Ver. 17.09
+[[module CSS]]
+.blinkbar {color: #885e96; animation: blink 1.5s infinite; letter-spacing: -0.13em;}@keyframes blink{to{opacity: .0;}}@keyframes flicker {0% {opacity: 0.9890; }5% {opacity: 0.5842; }10% {opacity: 0.9865; }20% {opacity: 0.0412; }20% {opacity: 0.6255; }25% {opacity: 0.3157; }30% {opacity: 0.7328; }35% {opacity: 0.4654; }40% {opacity: 0.9128; }45% {opacity: 0.2449; }50% {opacity: 0.5485; }55% {opacity: 0.6438; }60% {opacity: 0.1180; }65% {opacity: 0.9085; }70% {opacity: 0.0266; }75% {opacity: 0.6795; }80% {opacity: 0.7812; }85% {opacity: 0.0117; }90% {opacity: 0.2239; }95% {opacity: 0.8897; }100% {opacity: 0.2260; }}@keyframes overlay-anim {0% {visibility: hidden; }10% {visibility: hidden; }11% {visibility: visible; }50% {visibility: hidden; }100% {visibility: hidden; }}
+.danke{
+padding: 5px 5px 5px 15px;
+margin-bottom:10px;
+width: 100%;
+font-family: monospace;
+font-size: 1.1em; }
+.agent{
+background-color:#002200;
+border: 3px solid #55AA55;
+color: #77CC77;
+}
+div.terminal{
+    border: 1px solid black;
+    border: solid 3px #BBBBBB;
+    border-radius: 16px;
+    background-color: #131;
+/* black shadow at the top of the terminal */
+    background-image: 
+        radial-gradient(ellipse 1000% 100% at 50% 90%, transparent, #121);
+    background-position: center;
+    display: block;
+/* shadow around the terminal */
+    box-shadow: inset 0 0 10em 1em rgba(0,0,0,0.5);
+/* prevents scanline from forming a scrollwheel */
+    overflow:hidden;
+}
+div.terminal blockquote {
+    background-color: black;
+    border: double 3px #80FF80
+}
+div.scanline{
+    margin-top: -40%;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    pointer-events: none;
+/* Safari 4.0 - 8.0 */
+    -webkit-animation: scan 12s linear 0s infinite; /* You may need to change this. If the bar goes by too quickly, increase 5s. */
+    animation: scan 12s linear 0s infinite; /* Same as above */
+    background: linear-gradient(to bottom, rgba(56, 112, 82,0), rgba(56, 112, 82,0.1)) !important;
+}
+
+div.text{
+    color: rgba(128,255,128,0.8);
+    padding-left: 2em;
+    padding-top: 40%;
+    font-family: monospace;
+    font-size: 1.2em;
+    }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes scan{
+    from{ transform: translateY(-10%);}
+    to{  transform: translateY(5000%);} /* You may need to change this depending on the length of your terminal. If the scanline stops halfway, increase the second number.*/
+}
+
+@keyframes scan{
+    from{ transform: translateY(-10%);}
+    to{  transform: translateY(5000%);} /* Same as above.*/
+}
+
+div.text a {
+    color: #90EE90;
+    text-decoration: none;
+    background: transparent;
+}
+div.text a.newpage {
+    color: #90EE90;
+    text-decoration: none;
+    background: transparent;
+}
+div.text a:hover {
+    color: #131;
+    text-decoration: underline;
+    background-color: #80FF80;
+    padding: 1px;
+}
+div.text a:hover::before{
+content: "> ";
+}
+div#header h1 a span {
+    font-size: 0px;
+}
+div#header h1 a:before {
+    content: "AMEC Database";
+    color: #eee;
+    
+}
+div#header h2 span {
+    font-size:0px;
+    padding: 4px;
+}
+div#header h2:after {
+    content: "Anti-Memetic Entities Catalog";
+    font-weight: bold;
+    color: #f0f0c0;
+    padding: 19px 0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+    white-space: pre;
+}
+
+[[/module]]
+
+[!--
+
+Note to editors:
+
+If you're looking to make alterations to any of the pages, use the following links.
+
+Page 1, (Homescreen): http://www.scp-wiki.net/fragment:apas-0
+Page 2, (System Check): http://www.scp-wiki.net/fragment:apas-1
+Page 3, (What is APAS?): http://www.scp-wiki.net/fragment:apas-2
+Page 4, (Hub of Logs): http://www.scp-wiki.net/fragment:apas-3
+Page 5, (Amnestization): http://www.scp-wiki.net/fragment:apas-4
+Page 6, (MDP): http://www.scp-wiki.net/fragment:apas-5
+Page 7, (DRO-0001): http://www.scp-wiki.net/fragment:apas-6
+
+--]
+
+[[include :topia:credit:start]]
+
+[[=]]
+
+**Automated Passive Amnestization System Ver. 17.09**
+
+[[/=]]
+
+------
+
+**Author:** [[*user Nagiros]], now with [/nagiros-poi-file an author page].
+
+**Stats:** 
+
+------
+
+**Credits:**
+* File name "dro-0001" taken from [https://www.flickr.com/photos/nve/8733992389/ NVE's Flickr].
+
+**Shoutouts:**
+* [[*user Croquembouche]], for writing the extremely helpful [[[ListPages Magic and You]]] guide.
+* [[*user calamitous1]], for providing a critique in the [/forum/t-11168832/tale:site-wide-behavioral-control#post-4220273 Drafts and Critique forum].
+
+**Stuff You May Also Like:** [[size 75%]]For this tale it's more like "Stuff I Ripped Formatting From".[[/size]]
+* [[[SCP-2798]]], by [[*user Kalinin]]
+* [/tanhony-s-proposal SCP-001: Dead Men], by [[*user Tanhony]]
+* [/scp-3942 UNDEFINED], by [[*user Jack Ike]]
+
+------
+
+[[=]]
+
+**Other Works by this Author:**
+
+[[/=]]
+
+[[div style="display: block ; border : dashed 1px #444444 ; background :#F5F5F5 ; margin-left : auto ; margin-right : auto ; width : 90% ; padding:10px"]]
+[[div style="float:left; width: 45% ; padding: 0 2%"]]
+
+------
+
+[[=]]
+
+++ Anomalies
+
+[[/=]]
+
+------
+
+[[module ListPages created_by="nagiros" order="rating desc" separate="no" tags="scp" perPage="10"]] 
+* %%title_linked%%
+[[/module]]
+[[/div]]
+[[div style="float:right; width: 45% ; padding: 0 2%"]]
+
+------
+
+[[=]]
+
+++ Tales
+
+[[/=]]
+
+------
+
+[[module ListPages created_by="nagiros" order="rating desc" separate="no" tags="-scp -author" perPage="10"]] 
+* %%title_linked%%
+[[/module]]
+[[/div]]
+~~~~
+[[/div]]
+
+------
+
+Thanks a ton, all!
+
+[[include :topia:credit:end]]
+
+[[module ListPages category="fragment" parent="." order="created_at" limit="1" offset="@URL|0"]]
+%%content%%
+[[/module]]
+
+[[=]]
+[[size 90%]]**Catalog Navigation:**[[/size]]
+[[/=]]
+[[div class="footer-wikiwalk-nav"]]
+[[=]]
+<< [[[SCP-4260]]] | APAS Ver. 17.09 | [[[SCP-4051]]] >>
+[[/=]]
+[[/div]]
