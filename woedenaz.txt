@@ -205,6 +205,17 @@ div.btn-container {
 
 div.btn-container > a {
     margin: 0 auto;
+    transition-property: -webkit-backdrop-filter, backdrop-filter, box-shadow, background-color;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+    -webkit-transition-property: -webkit-backdrop-filter, backdrop-filter, box-shadow, background-color;
+    -webkit-transition-duration: 300ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+div.btn-container > a:hover {
+    box-shadow: 0 0.188rem 0.25rem rgba(0, 0, 0, .8);
+    text-decoration: none;
 }
 
 div.btn-container > a > span {
