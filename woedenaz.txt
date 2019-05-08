@@ -44,6 +44,12 @@ line-height: 1.6em;
     margin-top: -5vh;
 }
 
+.ko-fi {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 @media (max-width: 775px) {
     #page-content > div:nth-child(1) > div {
         margin-top: 0vh !important;
@@ -172,8 +178,9 @@ I really like writing stories that have mysteries to unpack. Like puzzles for th
  _
 Okay, that's all you get. Thanks for stopping by!
 [[/collapsible]]   
+[[div_ class="ko-fi"]]
 [[html]]
-<style>
+<style type="text/css">
 .btn-container {
     width: 100%;
     display: flex!important;
@@ -184,7 +191,8 @@ span.kofitext {
 }
 </style>
 <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Tastefully support me on Ko-Fi', '#fcd5b8', 'C0C8V4PJ');kofiwidget2.draw();</script> 
-[[/html]]         
+[[/html]]   
+[[/div]]      
         [[/div]]
     [[/div]]
     [[div_ class="name"]]
