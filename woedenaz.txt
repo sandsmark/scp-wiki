@@ -45,7 +45,7 @@ line-height: 1.6em;
 }
 
 iframe.html-block-iframe {
-    width: inherit;
+    width: auto;
 }
 
 .ko-fi {
@@ -185,13 +185,18 @@ Okay, that's all you get. Thanks for stopping by!
 [[div_ class="ko-fi"]]
 [[html]]
 <style type="text/css">
-.btn-container {
+div.btn-container {
     width: 100%;
-    min-width: inherit;
+    min-width: 150px!important;
     display: flex!important;
     justify-content: center;
 }
-span.kofitext {
+
+div.btn-container > a {
+    margin: 0 auto;
+}
+
+div.btn-container > a > span {
     color: rgba(47, 61, 88, 1)!important;
 }
 </style>
