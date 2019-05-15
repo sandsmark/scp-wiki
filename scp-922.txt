@@ -1,4 +1,15 @@
 title:SCP-922
+[[module CSS]]
+.fakeprot .mailform-box .buttons{display:none;}
+.fakeprot + .collapsible-block .collapsible-block-link {padding: 0.1em 0.5em;text-decoration: none;background-color: #F4F4F4;border: 1px solid #AAA;color: #000;}
+.fakeprot + .collapsible-block .collapsible-block-link:hover {background-color: #DDD;color: #000;}
+.fakeprot + .collapsible-block .collapsible-block-link:active {background-color: #DDD;color: #000;}
+.fakeprot + .collapsible-block .collapsible-block-unfolded-link{margin:0.5em 0;text-align: center;}
+.fakeprot + .collapsible-block .collapsible-block-folded{margin:0.5em 0;text-align: center;}
+.fakeprot .passw input[type=text] {text-security:disc;-webkit-text-security:disc;-mox-text-security:disc;}
+.mailform-box td:first-child {width: 80px;}
+[[/module]]
+
 [[>]]
 [[module Rate]]
 [[/>]]
@@ -147,10 +158,35 @@ Over the course of the interrogations (some ██ days), an additional 74 indiv
 
 
 
+
+
 **NOTE:** For O5 Council eyes only
 
+[[div class="fakeprot"]]
+[[module MailForm to="aaaa (DUMMY)" button=""]]
+# name
+ * title: ID
+ * default: <YOUR ID>
+ * type: text
+ * rules:
+  * required: true 
+  * maxLength:10
+  * minLength: 100
+[[/module]]
+[[div class="passw"]]
+[[module MailForm to="aaaa (DUMMY)" button=""]]
+# affiliation
+ * title: PASSWORD
+ * default: ・・・・・・・・・
+ * rules:
+  * required: true 
+  * maxLength:10
+  * minLength: 100
+[[/module]]
+[[/div]]
+[[/div]]
+[[collapsible show="Login" hide="Logout"]]
 
-[[collapsible show="Input credentials: 'Does the Black Moon Howl?'" hide="Only when waning."]]
 
 **Addendum 2:** The following letter was delivered to the offices of the O5 council from the office of Dr. Jaime Marlowe at Site-19.  Dr. Marlowe herself was contacted directly and confirmed she had sent the letter in question and attested to the accuracy of its contents.  Contents of the note are logged below.
 
