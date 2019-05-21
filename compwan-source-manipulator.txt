@@ -1,6 +1,20 @@
 title:COMPWAN Source Manipulator
 [[include :kaktuskontainer:component:nuscp-dev]]
 
+[[include :scp-wiki:component:discord-chat-source |inc-user= --]
+|user-id=one
+|username=𝙶𝙾𝚃𝙾 𝟸𝟶
+|usericon=http://scp-wiki.wdfiles.com/local--files/compwan-source-manipulator/GOTO20.png
+|usercolor=white
+]]
+
+[[include :scp-wiki:component:discord-chat-source |inc-user= --]
+|user-id=two
+|username=corvas
+|usericon=http://scp-wiki.wdfiles.com/local--files/compwan-source-manipulator/corvas.png
+|usercolor=white
+]]
+
 [[module CSS]]
 @import url(/component:scp-pride/code/1);
 @import url('https://fonts.googleapis.com/css?family=Martel+Sans:400,700');
@@ -401,107 +415,80 @@ Maybe I just feel like I don’t deserve it.
 As the thought crossed my mind, an acquaintance of mine messages me.
 [[/div]]
 
-[[html class="chat"]]
-<!doctype html>
-<html>
+[[include :scp-wiki:component:discord-chat-source |inc-source= --] |inc-start= --] ]]
 
-<head>
-    <base target="_blank">
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="http://scp-wiki.wdfiles.com/local--files/compwan-source-manipulator/discord.css">
-</head>
+[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
+|user-id=one
+|username=𝙶𝙾𝚃𝙾 𝟸𝟶
+|msg-time=Today at 8:18 PM
+]]
+yo, Corvus, you around?
+[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
 
-<body>
-    <div class="discord-mockup z-depth-3">
-        <div class="messages-panel">
-            <div class="messages-group" id="default">
-                <div class="messages">
-                    <div class="message">
-                        <div class="icon goto"></div>
-                        <div class="body">
-                            <div class="user-name">&#120438;&#120446;&#120451;&#120446;&#160;&#120824;&#120822;</div>
-                            <div class="content">yo, Corvus, you around?</div>
-                        </div>
-                    </div>
-                    <div class="message">
-                        <div class="icon corvas"></div>
-                        <div class="body">
-                            <div class="user-name">corvas</div>
-                            <div class="content">ya</div>
-                            <div class="content">wut’s up?</div>
-                        </div>
-                    </div>
-                    <div class="message">
-                        <div class="icon goto"></div>
-                        <div class="body">
-                            <div class="user-name">&#120438;&#120446;&#120451;&#120446;&#160;&#120824;&#120822;</div>
-                            <div class="attachment">
-                                <img class="icon-code" src="http://scp-wiki.wdfiles.com/local--files/compwan-source-manipulator/file_icon.svg" title="DOM">
-                                <div class="attachmentInner">
-                                    <div class="filenameLinkWrapper">
-                                        <a class="anchor" href="http://www.scp-wiki.net/scp-2105" rel="noreferrer noopener" target="_blank">mv_sk1r.tar.gz</a>
-                                        <div class="metadata">
-                                            2.71 KB
-                                        </div>
-                                    </div>
-                                </div>
-                                <a class="anchor" href="http://www.scp-wiki.net/scp-2105" target="_blank"><svg name="Download" class="downloadButton" width="24" height="24" viewBox="0 0 24 24">
-                                        <g fill="none" fill-rule="evenodd">
-                                            <path d="M0 0h24v24H0z"></path>
-                                            <path class="fill" fill="currentColor" d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path>
-                                        </g>
-                                    </svg></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="message">
-                        <div class="icon goto"></div>
-                        <div class="body">
-                            <div class="user-name">&#120438;&#120446;&#120451;&#120446;&#160;&#120824;&#120822;</div>
-                            <div class="content">check it. some old as shit program that makes rituals</div>
-                        </div>
-                    </div>
-                    <div class="message">
-                        <div class="icon corvas"></div>
-                        <div class="body">
-                            <div class="user-name">corvas</div>
-                            <div class="content">uh</div>
-                            <div class="content">that’s cool. How is a .com a program tho</div>
-                        </div>
-                    </div>
-                    <div class="message">
-                        <div class="icon goto"></div>
-                        <div class="body">
-                            <div class="user-name">&#120438;&#120446;&#120451;&#120446;&#160;&#120824;&#120822;</div>
-                            <div class="content">dunno man</div>
-                            <div class="content">runs like a cmd prompt</div>
-                            <div class="content">I ran it a few times, makes some weird shit</div>
-                        </div>
-                    </div>
-                    <div class="message">
-                        <div class="icon corvas"></div>
-                        <div class="body">
-                            <div class="user-name">corvas</div>
-                            <div class="content">where’d you get it? you sure it’s not a virus or something?</div>
-                        </div>
-                    </div>
-                    <div class="message">
-                        <div class="icon goto"></div>
-                        <div class="body">
-                            <div class="user-name">&#120438;&#120446;&#120451;&#120446;&#160;&#120824;&#120822;</div>
-                            <div class="content">nah, man. I ran it through a virus checker.</div>
-                            <div class="content">Do it yourself if you want.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
+[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
+|user-id=two
+|username=corvas
+|msg-time=Today at 8:18 PM
+]]
+ya
+wut’s up?
+[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
 
-</html>
-[[/html]]
+[[include :scp-wiki:component:discord-chat-source |inc-attch= --]
+|attch-id=attch-one
+|user-id=one
+|username=𝙶𝙾𝚃𝙾 𝟸𝟶
+|msg-time=Today at 8:19 PM
+|attchname=mv_sk1r.tar.gz
+|attchsize=2.71 KB
+|attchlink=http://www.scp-wiki.net/scp-2105
+]]
+
+[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
+|user-id=one
+|username=𝙶𝙾𝚃𝙾 𝟸𝟶
+|msg-time=Today at 8:19 PM
+]]
+check it. some old as shit program that makes rituals
+[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
+
+[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
+|user-id=two
+|username=corvas
+|msg-time=Today at 8:19 PM
+]]
+uh
+that’s cool. How is a .com a program tho
+[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
+
+[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
+|user-id=one
+|username=𝙶𝙾𝚃𝙾 𝟸𝟶
+|msg-time=Today at 8:19 PM
+]]
+dunno man
+runs like a cmd prompt
+I ran it a few times, makes some weird shit
+[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
+
+[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
+|user-id=two
+|username=corvas
+|msg-time=Today at 8:19 PM
+]]
+where’d you get it? you sure it’s not a virus or something?
+[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
+
+[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
+|user-id=one
+|username=𝙶𝙾𝚃𝙾 𝟸𝟶
+|msg-time=Today at 8:19 PM
+]]
+nah, man. I ran it through a virus checker.
+Do it yourself if you want.
+[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
+
+[[include :scp-wiki:component:discord-chat-source |inc-source= --] |inc-end= --] ]]
 
 [[div class="pretty"]]
 I furrowed my brows, considering what to do. Goto knew I was in to weird occult shit but I didn’t want to download a virus on my computer.
