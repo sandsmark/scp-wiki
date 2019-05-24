@@ -65,6 +65,21 @@ sup {
     	z-index: 1;
     }
 }
+.scp-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.scp-container > p {
+    display: none;
+}
+
+.scp-container > div {
+    width: 48%;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+}
 [[/module]]
 
 [[div style="width: 61%; float:left; clear: none;"]]
