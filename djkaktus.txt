@@ -65,16 +65,16 @@ sup {
     	z-index: 1;
     }
 }
-.scp-hover-box {
+.scp-container {
     display: flex;
     flex-wrap: wrap;
 }
 
-.scp-hover-box > p {
+.scp-container > p {
     display: none;
 }
 
-.scp-hover-box > div {
+.scp-container > div {
     width: 48%;
     align-items: center;
     justify-content: center;
@@ -270,6 +270,7 @@ sup {
 [[# Articles]]
 -----
 
+[[div_ class="scp-container"]]
 [[include component:scp-hover-box-structure
 |container-number=echoes
 |corner-cutout=0em
@@ -1937,6 +1938,7 @@ sup {
 [[# Tales]]
 -----
 
+[[div_ class="scp-container"]]
 [[include component:scp-hover-box-structure
 |container-number=oldchilly
 |corner-cutout=0em
@@ -2550,6 +2552,7 @@ SCP Foundation Bloomington Research and Containment Facility
 |blerb=**WHAT HAVE YOU DONE?**
 ]]
 @@@@
+[[/div]]
 
 @@@@
 [[image kaktus1.png width="75px"]][[image other.png]][[image kaktus.png width="75px"]]
