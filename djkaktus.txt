@@ -66,11 +66,9 @@ sup {
     }
 }
 .scp-container {
-    column-count: 2;
-    column-gap: 0;
-    column-fill: initial;
-    page-break-inside: avoid;
-    break-inside: avoid;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
 }
 
 .scp-container > p {
@@ -78,15 +76,10 @@ sup {
 }
 
 .scp-container > div {
-    width: 98%;
-    margin-bottom: 0.5rem;
-    display: inline-block;
-    vertical-align: top;
-    page-break-inside: avoid;
-    break-inside: avoid;
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    transform: translateX(0);
+    width: 48%;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
 }
 div.scp-hover-box div.title > a, div.scp-hover-box div.sub-title > a {
     font-size: 100%;
