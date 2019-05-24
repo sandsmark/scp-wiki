@@ -1,15 +1,4 @@
 title:SCP-4730
-[[module CSS]]
-.fakeprot .mailform-box .buttons{display:none;}
-.fakeprot + .collapsible-block .collapsible-block-link {padding: 0.1em 0.5em;text-decoration: none;background-color: #F4F4F4;border: 1px solid #AAA;color: #000;}
-.fakeprot + .collapsible-block .collapsible-block-link:hover {background-color: #DDD;color: #000;}
-.fakeprot + .collapsible-block .collapsible-block-link:active {background-color: #DDD;color: #000;}
-.fakeprot + .collapsible-block .collapsible-block-unfolded-link{margin:0.5em 0;text-align: center;}
-.fakeprot + .collapsible-block .collapsible-block-folded{margin:0.5em 0;text-align: center;}
-.fakeprot .passw input[type=text] {text-security:disc;-webkit-text-security:disc;-mox-text-security:disc;}
-.mailform-box td:first-child {width: 80px;}
-[[/module]]
-
 [[>]]
 [[module Rate]]
 [[/>]]
@@ -410,39 +399,7 @@ Read. The. Procedures.
 [[size large]]**Login to record security clearance and access location information**[[/size]]
 [[/=]]
 
-[[module CSS]]
-.orderwrapper {position: relative;width: auto;text-align: center;}.council1 {position: relative;top: 0;bottom: 0;left: 0;right: 0;width: 295px;height: 295px;margin: auto;background-image: url( "http://kaktuskontainer.wdfiles.com/local--files/format-hell/scp_trans.png" );background-size: 295px 295px;background-repeat: no-repeat;background-position: center;}.ordertitle {position: absolute;left: 0;right: 0;top: 38px;}.ordertitle h1 {font-size: 220%;color: #555;}.orderdescription {position: absolute;left: 0;right: 0;top: 85px;width: 100%;}.orderdescription p {font-size: 90%;color: #555;}.orderdescription h1 {font-size: 120%;color: #555;}.itemno {position: absolute;left: 0;right: 0;bottom: 27px;}.itemno h1 {font-size: 170%;color: #555;}
-[[/module]]
-
-
-
-
-
-
-[[div class="fakeprot"]]
-[[module MailForm to="aaaa (DUMMY)" button=""]]
-# name
- * title: ID
- * default: <STAFF/O5 ID>
- * type: text
- * rules:
-  * required: true 
-  * maxLength:10
-  * minLength: 100
-[[/module]]
-[[div class="passw"]]
-[[module MailForm to="aaaa (DUMMY)" button=""]]
-# affiliation
- * title: PASSWORD
- * default: ・・・・・・・・・
- * rules:
-  * required: true 
-  * maxLength:10
-  * minLength: 100
-[[/module]]
-[[/div]]
-[[/div]]
-[[collapsible show="Login" hide="Logout"]]
+[[collapsible show="+ Level 5 Clearance accepted, click to view Logs" hide="- Close Logs"]]
 
 [[div style="display: inline-block; border-radius: 10px; border:dashed 1px #444444; background:#F5F5F5; float:top; width:96.5%; padding:10px"]]
 **O5 CREDENTIALS RECOGNIZED, PLAYING FINAL CONTAINMENT MEETING LOG**
