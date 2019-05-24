@@ -84,7 +84,9 @@ sup {
     vertical-align: top;
     page-break-inside: avoid;
     break-inside: avoid;
-    will-change: transform;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    transform: translateX(0);
 }
 div.scp-hover-box div.title > a, div.scp-hover-box div.sub-title > a {
     font-size: 100%;
