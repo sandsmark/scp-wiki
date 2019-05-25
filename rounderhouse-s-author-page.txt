@@ -466,13 +466,15 @@ z-index: 201;
     font-family: 'Staatliches', cursive;
 }
 
-div#container-wrap::before {
-    content: "";
-    display: block;
-    height: 120px;
+#skrollr-body {
     width: 100%;
+    height: 7.625rem;
     position: absolute;
-    background: url("http://scp-wiki.wdfiles.com/local--files/rounderhouse-s-author-page/rounderception.png");
+    top: 0;
+    left: 0;
+    background-image: url(http://scp-wiki.wdfiles.com/local--files/rounderhouse-s-author-page/rounderception.png);
+    background-repeat: repeat-x;
+    background-size: contain;
 }
 
 #footer
