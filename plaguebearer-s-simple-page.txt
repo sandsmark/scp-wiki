@@ -1,5 +1,61 @@
 title:plaguebearer's simplest author page
 [[module CSS]]
+/* epic trans moment */
+
+div#container-wrap{
+    background: url("http://m-ssc.wikidot.com/local--files/component:m-ssc-scp-theme/m-ssc-scp-body-bg.png") top left repeat-x;
+}
+#container-wrap-wrap{
+    color: #fff;
+    background: #F7A8B8 !important;
+    background: linear-gradient(-45deg, #55CDFC, #F7A8B8, #FFFFFF, #F7A8B8, #55CDFC,  #F7A8B8, #FFFFFF, #F7A8B8, #55CDFC, #F7A8B8, #FFFFFF, #F7A8B8, #55CDFC,  #F7A8B8, #FFFFFF, #F7A8B8, #55CDFC) !important;
+    background-size: 400% 200% !important;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+}
+
+#container{
+    background: linear-gradient(180deg, rgba(0,0,0,0) 400px,rgba(0,0,0,0) 1px, rgba(255,255,255,1) 0px);
+    color: #222;
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
 #header {
             background-image: url(http://scp-wiki.wdfiles.com/local--files/scp-3615/TransSCPlogo)
 }
@@ -29,7 +85,6 @@ title:plaguebearer's simplest author page
 }
 
 [[/module]]
-
 [[>]]
 [[module Rate]]
 [[/>]]
