@@ -31,160 +31,189 @@ Welcome to the Rounderpage, affectionately referred to as Hell! I, as the curren
 @@ @@
 [[=]]
 [[collapsible hideLocation="both" show="REVEAL" hide="↑"]]
-[[<]]
-[[div id="myTextMessageConvoHolder" style="display:inline-block; width:100%;"]]
-[[div id="myTextMessageConvoDiv" style="color:white; border-radius: 25px; background: #73AD21;padding: 15px;width: 180px; height: 55px;float:left;"]]
-yo theres this new author on the wiki
-[[/div]]
-[[html]]
-<br/>
-[[/html]]
-[[div id="myTextMessageConvoDivReply" style="color:white; border-radius: 25px; background: blue;padding: 15px;width: 180px; height: 45px;float:right;display: inline-block"]]
-what's his name
-[[/div]]
-[[/div]]
-[[html]]
-<br/>
-[[/html]]
-[[div id="myTextMessageConvoHolder" style="display:inline-block; width:100%;"]]
-[[div id="myTextMessageConvoDiv" style="color:white; border-radius: 25px; background: #73AD21;padding: 15px;width: 180px; height: 45px;float:left;"]]
-rounderhouse, i think
-[[/div]]
-[[html]]
-<br/>
-[[/html]]
-[[div id="myTextMessageConvoDivReply" style="color:white; border-radius: 25px; background: blue;padding: 15px;width: 180px; height: 45px;float:right;display: inline-block"]]
-oh yeah, his stuff is alright
-[[/div]]
-[[/div]]
-[[html]]
-<br/>
-[[/html]]
-[[div id="myTextMessageConvoHolder" style="display:inline-block; width:100%;"]]
-[[div id="myTextMessageConvoDiv" style="color:white; border-radius: 25px; background: #73AD21;padding: 15px;width: 180px; height: 45px;float:left;"]]
-whats he critten so far?
-[[/div]]
-[[html]]
-<br/>
-[[/html]]
-[[div id="myTextMessageConvoHolder" style="display:inline-block; width:100%;"]]
-[[div id="myTextMessageConvoDiv" style="color:white; border-radius: 25px; background: #73AD21;padding: 15px;width: 180px; height: 45px;float:left;"]]
-written*
-[[/div]]
-[[html]]
-<br/>
-[[/html]]
-[[div id="myTextMessageConvoDivReply" style="color:white; border-radius: 25px; background: blue;padding: 15px;width: 180px; height: 240px;float:right;display: inline-block"]]
-[[module ListPages created_by="Rounderhouse" order="rating" tags="+scp" separate="no"]]
-× %%title_linked%% (+%%rating%%)
-[[/module]]
-[[/div]]
-[[/div]]
-[[html]]
-<br/>
-[[/html]]
-[[div id="myTextMessageConvoHolder" style="display:inline-block; width:100%;"]]
-[[div id="myTextMessageConvoDiv" style="color:white; border-radius: 25px; background: #73AD21;padding: 15px;width: 180px; height: 45px;float:left;"]]
-nice, what about tales?
-[[/div]]
-[[/div]]
-[[html]]
-<br/>
-[[/html]]
-[[div id="myTextMessageConvoDivReply" style="color:white; border-radius: 25px; background: blue;padding: 15px;width: 180px; height: 500px;float:right;display: inline-block"]]
-[[module ListPages created_by="Rounderhouse" order="rating" tags="+tale" separate="no"]]
-• %%title_linked%% (+%%rating%%)
-[[/module]]
-[[/div]]
-[[/div]]
-[[html]]
-<br/>
-[[/html]]
+[[include :scp-wiki:component:discord-chat-source |inc-source= --]]]
 
-[[div id="myTextMessageConvoHolder" style="display:inline-block; width:100%;"]]
-[[div id="myTextMessageConvoDiv" style="color:white; border-radius: 25px; background: #73AD21;padding: 15px;width: 180px; height: 45px;float:left;"]]
-any other stuff??
-[[/div]]
-[[html]]
-<br/>
-[[/html]]
-[[div id="myTextMessageConvoDivReply" style="color:white; border-radius: 25px; background: blue;padding: 15px;width: 180px; height: 200px;float:right;display: inline-block"]]
+[[include :scp-wiki:component:discord-chat-source |inc-user= --]
+|user-id=one
+|username=Wigglesworth
+|usericon=https://i.imgur.com/aNO9zCh.png
+|usercolor=#FF6961
+]]
+
+[[include :scp-wiki:component:discord-chat-source |inc-user= --]
+|user-id=two
+|username=BonesMalone
+|usericon=https://upload.wikimedia.org/wikipedia/commons/a/ab/Radial_engine.gif
+|usercolor=#c0c0c0
+]]
+
+[[include :scp-wiki:component:discord-chat-source |inc-start= --] ]]
+
+[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
+|user-id=one
+|username=Wigglesworth
+|msg-time=Today at 4:28 PM
+]]
+yo theres this new author on the wiki
+[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
+
+
+[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
+|user-id=two
+|username=BonesMalone
+|msg-time=Today at 4:28 PM
+]]
+name?
+[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
+
+[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
+|user-id=one
+|username=Wigglesworth
+|msg-time=Today at 4:28 PM
+]]
+rounderhouse, i think
+[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
+
+
+[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
+|user-id=two
+|username=BonesMalone
+|msg-time=Today at 4:28 PM
+]]
+oh yeah, his stuff is alright
+[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
+
+[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
+|user-id=one
+|username=Wigglesworth
+|msg-time=Today at 4:28 PM
+]]
+what SCPs he critten?
+[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
+
+[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
+|user-id=one
+|username=Wigglesworth
+|msg-time=Today at 4:28 PM
+]]
+written*
+[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
+
+[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
+|user-id=two
+|username=BonesMalone
+|msg-time=Today at 4:28 PM
+]]
+[[module ListPages created_by="Rounderhouse" order="rating" tags="+scp" separate="no"]]
+∆ %%title_linked%% [+%%rating%% | 🗩 %%comments%%]
+[[/module]]
+[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
+
+[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
+|user-id=one
+|username=Wigglesworth
+|msg-time=Today at 4:28 PM
+]]
+nice, what about tales?
+[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
+
+
+[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
+|user-id=two
+|username=BonesMalone
+|msg-time=Today at 4:28 PM
+]]
+[[module ListPages created_by="Rounderhouse" order="rating" tags="+tale" separate="no"]]
+μ %%title_linked%% [+%%rating%% | 🗩 %%comments%%]
+[[/module]]
+[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
+
+[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
+|user-id=one
+|username=Wigglesworth
+|msg-time=Today at 4:28 PM
+]]
+dope, any other shit?
+[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
+
+
+[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
+|user-id=two
+|username=BonesMalone
+|msg-time=Today at 4:28 PM
+]]
 [[module ListPages created_by="Rounderhouse" order="rating" tags="-tale -scp -author" separate="no"]]
-∆ %%title_linked%% (+%%rating%%)
+Π %%title_linked%% [+%%rating%% | 🗩 %%comments%%]
 [[/module]]
 [[module ListPages created_by="Rounderhouse" order="rating" category="component" separate="no"]]
-→%%title_linked%% (+%%rating%%)
+Ω %%title_linked%% [+%%rating%% | 🗩 %%comments%%]
 [[/module]]
-[[/div]]
-[[/div]]
-[[div id="myTextMessageConvoHolder" style="display:inline-block; width:100%;"]]
-[[div id="myTextMessageConvoDiv" style="color:white; border-radius: 25px; background: #73AD21;padding: 15px;width: 180px; height: 90px;float:left;"]]
-seems ok. but everyone knows ur not a real author unless you have art made of your work
-[[/div]]
-[[html]]
-<br/>
-[[/html]]
-[[div id="myTextMessageConvoDivReply" style="color:white; border-radius: 25px; background: blue;padding: 15px;width: 180px; height: 240px;float:right;display: inline-block"]]
-[[image rounderhouse2.jpg]]
-[[/div]]
-[[/div]]
-[[html]]
-<br/>
-[[/html]]
-[[div id="myTextMessageConvoDivReply" style="color:white; border-radius: 25px; background: blue;padding: 15px;width: 180px; height: 190px;float:right;display: inline-block"]]
-[[image rounderhouse3.jpg]]
-[[/div]]
-[[html]]
-<br/>
-[[/html]]
-[[div id="myTextMessageConvoDivReply" style="color:white; border-radius: 25px; background: blue;padding: 15px;width: 180px; height: 130px;float:right;display: inline-block"]]
-[[image rounderhouse5.jpg]]
-[[/div]]
-[[html]]
-<br/>
-[[/html]]
-[[div id="myTextMessageConvoDivReply" style="color:white; border-radius: 25px; background: blue;padding: 15px;width: 180px; height: 210px;float:right;display: inline-block"]]
-[[image rounderhouse4.jpg]]
-[[/div]]
-[[html]]
-<br/>
-[[/html]]
-[[div id="myTextMessageConvoHolder" style="display:inline-block; width:100%;"]]
-[[div id="myTextMessageConvoDiv" style="color:white; border-radius: 25px; background: #73AD21;padding: 15px;width: 180px; height: 90px;float:left;"]]
+[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
+
+[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
+|user-id=one
+|username=Wigglesworth
+|msg-time=Today at 4:28 PM
+]]
+seems ok. but everyone knows ur not a real author unless you have art made of you
+[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
+
+
+[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
+|user-id=two
+|username=BonesMalone
+|msg-time=Today at 4:28 PM
+]]
+[[image http://scp-wiki.wdfiles.com/local--files/rounderhouse-s-author-page/rounderhouse2.jpg class="msgimage"]]
+[[image http://scp-wiki.wdfiles.com/local--files/rounderhouse-s-author-page/rounderhouse3.jpg class="msgimage"]]
+[[image http://scp-wiki.wdfiles.com/local--files/rounderhouse-s-author-page/rounderhouse4.jpg class="msgimage"]]
+[[image http://scp-wiki.wdfiles.com/local--files/rounderhouse-s-author-page/rounderhouse5.jpg  class="msgimage"]]
+[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
+
+[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
+|user-id=one
+|username=Wigglesworth
+|msg-time=Today at 4:28 PM
+]]
 bruh slow down, where all this art coming from??
-[[/div]]
-[[html]]
-<br/>
-[[/html]]
-[[div id="myTextMessageConvoDivReply" style="color:white; border-radius: 25px; background: blue;padding: 15px;width: 180px; height: 185px;float:right;display: inline-block"]]
-[[image https://i.imgur.com/BVS5dgS.png]]
-[[/div]]
-[[html]]
-<br/>
-[[/html]]
-[[div id="myTextMessageConvoHolder" style="display:inline-block; width:100%;"]]
-[[div id="myTextMessageConvoDiv" style="color:white; border-radius: 25px; background: #73AD21;padding: 15px;width: 180px; height: 100px;float:left;"]]
+[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
+
+
+[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
+|user-id=two
+|username=BonesMalone
+|msg-time=Today at 4:28 PM
+]]
+[[image https://i.imgur.com/BVS5dgS.png class="msgimage"]]
+[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
+
+[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
+|user-id=one
+|username=Wigglesworth
+|msg-time=Today at 4:28 PM
+]]
 yo wtf his author page doesnt have a rating module
 isn't that against the rules
-[[/div]]
-[[/div]]
-[[html]]
-<br/>
-[[/html]]
-[[div id="myTextMessageConvoDivReply" style="color:white; border-radius: 25px; background: blue;padding: 15px;width: 180px; height: 70px;float:right;display: inline-block"]]
-it's right here: 
+[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
+
+
+[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
+|user-id=two
+|username=BonesMalone
+|msg-time=Today at 4:28 PM
+]]
 [[module Rate]]
-[[/div]]
-[[/div]]
-[[html]]
-<br/>
-[[/html]]
-[[div id="myTextMessageConvoHolder" style="display:inline-block; width:100%;"]]
-[[div id="myTextMessageConvoDiv" style="color:white; border-radius: 25px; background: #73AD21;padding: 15px;width: 180px; height: 45px;float:left;"]]
+[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
+
+[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
+|user-id=one
+|username=Wigglesworth
+|msg-time=Today at 4:28 PM
+]]
 hot diggity
-[[/div]]
-[[/div]]
-[[/<]]
+[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
+
+[[include :scp-wiki:component:discord-chat-source |inc-end= --] ]] 
 [[/collapsible]]
 [[/=]]
 ----
