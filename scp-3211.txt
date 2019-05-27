@@ -165,7 +165,7 @@ $(document).ready(function () {
   });
 
   // Reset and forget
-  $("#reset").on("click", resetCookies(true));
+  $("#reset").on("click", true, resetCookies);
 
   // Manually stop the anomaly timer
   $("#stopTimer").on("click", function () {
