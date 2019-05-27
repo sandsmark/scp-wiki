@@ -101,8 +101,9 @@ var anomalyDict = [
 
 var constant = [
     "FPC-3211 rkuvovgf n fybj-npgvat ohg cbgrag creprcgvba-nygrevat rssrpg. Qhevat gur svefg 6 zvahgrf bs rkcbfher gb FPC-3211, fhowrpgf ner noyr gb bofreir naq erpbeq FPC-3211 jvgubhg vffhr. Bapr 6 zvahgrf unir cnffrq, fhowrpgf jvyy vzzrqvngryl naq creznaragyl or hanoyr gb creprvir nal qverpg vasbezngvba nffbpvngrq jvgu FPC-3211, be bofreir FPC-3211 vgfrys.</c><c>Sbe gur checbfrf bs guvf qbphzrag, fhowrpgf jub unir nyernql orra rkcbfrq gb FPC-3211 sbe ng yrnfg 6 zvahgrf jvyy or qrfpevorq nf <o>cbfg-3211</o> naq gubfr jub unir orra rkcbfrq gb vg sbe yrff guna 6 zvahgrf jvyy or qrfpevorq nf <o>cer-3211</o>.",
-    "Gur zrpunavfz guebhtu juvpu FPC-3211 cebcntngrf guvf rssrpg vf pheeragyl haxabja.</c><c>Nzarfgvpf unir cebira gb or rssrpgvir ba cbfg-3211 fhowrpgf. Gurl jvyy sbetrg FPC-3211 nf rkcrpgrq, naq hcba er-rkcbfher jvyy or noyr gb creprvir vg sbe na nqqvgvbany 6 zvahgrf.</c><c><o>Nqqraqhz 3211-N:</o> Rkcrevzrag Ybtf 3211-O naq 3211-Q",
+    "<c>Gur zrpunavfz guebhtu juvpu FPC-3211 cebcntngrf guvf rssrpg vf pheeragyl haxabja.</c><c>Nzarfgvpf unir cebira gb or rssrpgvir ba cbfg-3211 fhowrpgf. Gurl jvyy sbetrg FPC-3211 nf rkcrpgrq, naq hcba er-rkcbfher jvyy or noyr gb creprvir vg sbe na nqqvgvbany 6 zvahgrf.</c><c><o>Nqqraqhz 3211-N:</o> Rkcrevzrag Ybtf 3211-O naq 3211-Q",
     "<qvi pynff='sbbgabgrf-sbbgre'><qvi pynff='gvgyr'>Sbbgabgrf</qvi><qvi pynff='sbbgabgr-sbbgre' vq='sbbgabgr-1'><n bazbhfrbire='ubireqvi(rirag)' bazbhfrbhg='ubireqvi(rirag)'>1</n>. ''Zarfgvpf, nf bccbfrq gb gur zber pbzzba nzarfgvpf, trarenyyl nvq va gur ergragvba bs zrzbevrf naq gur ceriragvba bs gurve zbqvsvpngvba rira va gur snpr bs nabznyvrf gung frrx gb qvfehcg guvf...'' – Rkprecg sebz <v>Na Vagebqhpgvba gb Nagvzrzrgvp Pbhagre-Zrnfherf</v>, <n uers='uggc://jjj.fpc-jvxv.arg/jr-arrq-gb-gnyx-nobhg-svsgl-svir'>Znevba Jurryre</n></qvi></qvi>",
+    "</c><c>"
 ];
 
 var anomalies = [];
@@ -110,8 +111,10 @@ for(let a = 0; a < anomalyDict.length; a++) {
     anomalies[a] = [
     	anomalyDict[a]['first'],
     	constant[0],
+    	constant[3],
     	anomalyDict[a]['second'],
     	constant[1],
+    	constant[3],
     	anomalyDict[a]['third'],
     	constant[2],
     ].join("");
