@@ -110,12 +110,15 @@ var anomalies = [];
 for(let a = 0; a < anomalyDict.length; a++) {
     anomalies[a] = [
     	anomalyDict[a]['first'],
+    	constant[3],
     	constant[0],
     	constant[3],
     	anomalyDict[a]['second'],
+    	constant[3],
     	constant[1],
     	constant[3],
     	anomalyDict[a]['third'],
+    	constant[3],
     	constant[2],
     ].join("");
 }
