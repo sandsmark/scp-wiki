@@ -48,22 +48,19 @@ var decrypt = function(decryptee) {
   });
 };
 
+var resetCookie = function(cookie) {
+    console.log("Cleared localStorage: " + cookie + " " + storage.getItem(cookie));
+  storage.removeItem(cookie);
+  console.log("Cleared cookie: " + cookie + " " + Cookies.get(cookie));
+  Cookies.remove(cookie);
+};
+
 var resetCookies = function(reloadPageAfter) {
     console.log("Resetting cookies...");
-  console.log("Cleared localStorage: anomaly " + storage.getItem("anomaly"));
-  storage.removeItem("anomaly");
-  console.log("Cleared cookie: anomaly " + Cookies.get("anomaly"));
-  Cookies.remove("anomaly");
-
-  console.log("Cleared localStorage: seen " + storage.getItem("seen"));
-  storage.removeItem("seen");
-  console.log("Cleared cookie: seen " + Cookies.get("seen"));
-  Cookies.remove("seen");
-
-  console.log("Cleared localStorage: timerExpiresAt " + storage.getItem("timerExpiresAt"));
-  storage.removeItem("timerExpiresAt");
-  console.log("Cleared cookie: timerExpiresAt " + Cookies.get("timerExpiresAt"));
-  Cookies.remove("timerExpiresAt");
+  resetCookie("anomaly");
+  resetCookie("seen");
+  resetCookie("timerExpiresAt");
+  resetCookie("seenNew");
   
   console.log("reloadPageAfter is " + reloadPageAfter);
     if(reloadPageAfter) {
