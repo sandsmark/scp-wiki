@@ -48,7 +48,7 @@ var decrypt = function(decryptee) {
   });
 };
 
-var resetCookies = function(reloadPage) {
+var resetCookies = function(reload) {
   console.log("Cleared localStorage: anomaly " + storage.getItem("anomaly"));
   storage.removeItem("anomaly");
   console.log("Cleared cookie: anomaly " + Cookies.get("anomaly"));
@@ -63,7 +63,7 @@ var resetCookies = function(reloadPage) {
   storage.removeItem("timerExpiresAt");
   console.log("Cleared cookie: timerExpiresAt " + Cookies.get("timerExpiresAt"));
   Cookies.remove("timerExpiresAt");
-    if(reloadPage) {
+    if(reload) {
   	javascript: history.go(0);
     }
 };
@@ -126,9 +126,11 @@ $(document).ready(function () {
   // first, check if they've already seen the new entries
   if(Cookies.get("seenNew") || storage.getItem("seenNew")) {
   	//proceed with default behaviour
+  	console.log("User has seen the updated version at least once");
   	assign("seenNew", true);
   } else {
   	// force a reset
+  	console.log("User has not seen the updated version. Resetting");
   	assign("seenNew", true);
   	resetCookies(false);
   }
