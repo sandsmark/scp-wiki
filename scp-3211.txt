@@ -48,7 +48,7 @@ var decrypt = function(decryptee) {
   });
 };
 
-var resetCookies = function() {
+var resetCookies = function(reload) {
   console.log("Cleared localStorage: anomaly " + storage.getItem("anomaly"));
   storage.removeItem("anomaly");
   console.log("Cleared cookie: anomaly " + Cookies.get("anomaly"));
@@ -63,8 +63,9 @@ var resetCookies = function() {
   storage.removeItem("timerExpiresAt");
   console.log("Cleared cookie: timerExpiresAt " + Cookies.get("timerExpiresAt"));
   Cookies.remove("timerExpiresAt");
-
-  javascript: history.go(0);
+    if(reload) {
+  	javascript: history.go(0);
+    }
 };
 
 var str_pad_left = function(string, pad, length) {
@@ -129,7 +130,7 @@ $(document).ready(function () {
   } else {
   	// force a reset
   	assign("seenNew", true);
-  	resetCookies();
+  	resetCookies(false);
   }
   
   // Attempt to detect what iteration the reader previously viewed
@@ -159,7 +160,7 @@ $(document).ready(function () {
   });
 
   // Reset and forget
-  $("#reset").on("click", resetCookies());
+  $("#reset").on("click", resetCookies(true));
 
   // Manually stop the anomaly timer
   $("#stopTimer").on("click", function () {
