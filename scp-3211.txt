@@ -152,10 +152,8 @@ var resetCookies = function(reloadPageAfter) {
   resetCookie("anomaly");
   resetCookie("seen");
   resetCookie("timerExpiresAt");
-  resetCookie("seenNew");
-  
-  console.log("reloadPageAfter is " + reloadPageAfter);
     if(reloadPageAfter) {
+    resetCookie("seenNew");
     javascript: history.go(0);
     }
 };
