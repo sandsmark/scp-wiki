@@ -48,7 +48,8 @@ var decrypt = function(decryptee) {
   });
 };
 
-var resetCookies = function(reload) {
+var resetCookies = function(reloadPageAfter) {
+    console.log("Resetting cookies...");
   console.log("Cleared localStorage: anomaly " + storage.getItem("anomaly"));
   storage.removeItem("anomaly");
   console.log("Cleared cookie: anomaly " + Cookies.get("anomaly"));
@@ -63,8 +64,10 @@ var resetCookies = function(reload) {
   storage.removeItem("timerExpiresAt");
   console.log("Cleared cookie: timerExpiresAt " + Cookies.get("timerExpiresAt"));
   Cookies.remove("timerExpiresAt");
-    if(reload) {
-  	javascript: history.go(0);
+  
+  console.log("reloadPageAfter is " + reloadPageAfter);
+    if(reloadPageAfter) {
+    javascript: history.go(0);
     }
 };
 
