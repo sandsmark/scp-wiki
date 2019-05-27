@@ -48,7 +48,7 @@ var decrypt = function(decryptee) {
   });
 };
 
-var resetCookies = function(reload) {
+var resetCookies = function(reloadPage) {
   console.log("Cleared localStorage: anomaly " + storage.getItem("anomaly"));
   storage.removeItem("anomaly");
   console.log("Cleared cookie: anomaly " + Cookies.get("anomaly"));
@@ -63,7 +63,7 @@ var resetCookies = function(reload) {
   storage.removeItem("timerExpiresAt");
   console.log("Cleared cookie: timerExpiresAt " + Cookies.get("timerExpiresAt"));
   Cookies.remove("timerExpiresAt");
-    if(reload) {
+    if(reloadPage) {
   	javascript: history.go(0);
     }
 };
