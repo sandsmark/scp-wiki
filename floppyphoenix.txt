@@ -30,6 +30,65 @@ title:FloppyPhoenix's Author Page
 #page-title {
   display: none;
 }
+    
+.computed {
+    border: 1px black solid;
+    width: 50%;
+    display: inline-block;
+    text-align: left;
+    padding: 3px;
+}
+.computed:before {
+    content:"Computed Code";
+    font-weight: bold;
+    border-bottom: solid 1px black;
+    width: 100%;
+}
+.rawcode {
+    border: black solid 1px;
+    width: 50%;
+    display: inline-block;
+    text-align: left;
+    padding: 3px;
+}
+.rawcode:before{
+    content:"Raw Code";
+    text-align: center;
+    font-weight: bold;
+    border-bottom: solid 1px black;
+    width: 100%;
+}
+.codebox {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.yui-navset .yui-nav .selected a em, .yui-navset .yui-nav a em{
+    padding: 0.25em .75em;
+    top: 0;
+    margin-bottom: 0;
+}
+.yui-navset .yui-nav .selected a {
+    background: gray;
+}
+.yui-navset .yui-nav .selected {
+    margin: 0;
+}
+.yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a:focus, .yui-navset .yui-nav .selected a:hover, .yui-navset .yui-nav .selected a {
+    background: gray;
+}
+.yui-navset .yui-nav a, .yui-navset .yui-navset-top .yui-nav a {
+    background-color: none;
+    background-image: none;
+}
+.yui-navset .yui-nav a {
+    background: none;
+}
+.yui-navset .yui-nav li{
+    margin: 0;
+}
+[[/module]]
+
 
 /* HIDDEN UNTIL A SOLUTION IS FOUND
 a[href*="3787"]::after {
