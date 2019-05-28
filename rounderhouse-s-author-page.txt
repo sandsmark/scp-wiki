@@ -434,6 +434,10 @@ Header art by [[*user Athosnetwork]]
 [[module ListPages tags="-template +theme" separate="no" order="updated_at desc" category="*" perPage="249"]]
 # %%title_linked%% (%%rating%%) last edited at %%updated_at%% by %%updated_by%%
 [[/module]]
+-----
+[[module ListPages tags="-_cc +_image" separate="no" order="rating" rating=">300" category="*" perPage="249"]]
+# %%title_linked%% (%%rating%%) created by %%created_by%%
+[[/module]]
 [[/div]]
 [[/collapsible]] 
 [[module css]]
