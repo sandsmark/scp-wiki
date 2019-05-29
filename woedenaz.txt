@@ -5,6 +5,4 @@ title:woedenaz: a tasteful collection
 
 > Please excuse the dust while I figure out how to bend ListPages to my will...
 
-[[module ListPages  category="fragment" range="others" parent="." limit="1" order="created_at" offset="@URL|0"]]
-%%content%%
-[[/module]]
+[[include :csi:include:listpages body=@<[[>@module ListPages  category=\"fragment\" range=\"others\" parent=\".\" limit=\"1\" order=\"created_at\" offset=\"@URL@<&#124;>@0\"@<]]>@\n@<%%>@content@<%%>@\n@<[[>@/module@<]]>@|parent=.|category=fragment]]
