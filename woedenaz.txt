@@ -3,4 +3,8 @@ title:woedenaz: a tasteful collection
 [[module Rate]]
 [[/>]]
 
-[[include fragment:woedenaz-writing]]
+> Please excuse the dust while I figure out how to bend ListPages to my will...
+
+[[module ListPages  category="fragment" parent="." limit="1" order="created_at" offset="@URL|0" range="others"]]
+%%content%%
+[[/module]]
