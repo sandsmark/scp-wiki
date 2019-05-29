@@ -3,6 +3,32 @@ title:woedenaz: a tasteful collection
 [[module Rate]]
 [[/>]]
 
+[[module css]]
+.page_links {
+    display: flex;
+}
+
+.page_links div.WoedContainer {
+    border-width: 1vh;
+    margin: 1em;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.page_links div.WoedContainer div.skips > div.labels {
+    margin: 0.5rem 0.5vw;
+}
+
+.page_links div.WoedContainer div.skips > div.labels,
+.page_links div.WoedContainer div.skips > div.labels > .title::after,
+.page_links div.WoedContainer div.skips > div.labels > .title::before {
+    height: 1.5em;
+    width: 100%;
+    justify-content: center;
+}
+[[/module]]
+
 > Please excuse the dust while I figure out how to bend ListPages to my will...
 
 [[div_ class="page_links"]]
