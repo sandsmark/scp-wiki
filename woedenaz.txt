@@ -65,6 +65,12 @@ title:woedenaz: a tasteful collection
 .page_links div.WoedContainer div.skips > div.labels > .title:hover::before {
     transform: translate(0.15rem, -0.15rem);
 }
+
+@media only screen and (max-width: 980px) {
+    .page_links div.WoedContainer div.skips > div.labels {
+    	font-size: 75%;
+    }
+}
 [[/module]]
 
 [[div_ class="page_links"]]
