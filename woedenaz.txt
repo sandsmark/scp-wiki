@@ -25,8 +25,11 @@ title:woedenaz: a tasteful collection
 }
 
 .page_links div.WoedContainer.left-side div.skips > div.labels,
-.page_links div.WoedContainer.left-side div.skips > div.labels {
-    margin: 0.25rem 0 0.5rem 0;
+.page_links div.WoedContainer.right-side div.skips > div.labels {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 .page_links div.WoedContainer div.skips > div.labels {
