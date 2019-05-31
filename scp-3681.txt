@@ -36,32 +36,7 @@ div.log {
 [[/collapsible]]
 [[/div]]
 [[include :fondationscp:credit:end]]
-[[html]]
-<body>
 
-    <p id = "test0r"></p>
-    <script type="text/javascript">
-  if (window.addEventListener) { // Mozilla, Netscape, Firefox
-    window.addEventListener('load', WindowLoad, false);
-  } else if (window.attachEvent) { // IE
-    window.attachEvent('onload', WindowLoad);
-}
-
-    function WindowLoad(event) {
-  	var d = new Date(),
-   	e = new Date(2019, 5, 2),
-        a = " ";
-        // arrays start at 0. 5 is actually month 6. 
-  	if (d > e) {
-          for (i = 0; i < 10; i++) {
-            a = a + "<br>" + a
-          }
-  	  document.getElementById("test0r").innerHTML = a;
-  	}
-    }
-    </script>
-</body>
-[[/html]]
 **Item #:** SCP-3681
 
 **Object Class:** Uncontained
