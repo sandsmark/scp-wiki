@@ -3,14 +3,18 @@ title:Antimemetics Division Hub
 [[module Rate]]
 [[/>]]
 
-[!-- See: <http://www.scp-wiki.net/listpages-magic-and-you> --]
-[[module ListPages category="fragment" parent="." limit="1" order="created_at" offset="@URL|0"]]
-%%content%%
-[[/module]]
-
 [!--
+  This page is just a container, which can show one of several
+  fragment pages depending on the offset in the URL.
+
+  See: <http://www.scp-wiki.net/listpages-magic-and-you>
+
   To edit the fragments which can appear here, visit:
   Offset 0: <http://www.scp-wiki.net/fragment:antimemetics-division-hub-main>
   Offset 1: <http://www.scp-wiki.net/fragment:antimemetics-division-hub-marion>
   Offset 2: <http://www.scp-wiki.net/fragment:antimemetics-division-hub-adam>
 --]
+
+[[module ListPages category="fragment" parent="." limit="1" order="created_at" offset="@URL|0"]]
+%%content%%
+[[/module]]
