@@ -2,6 +2,32 @@ title:SCP-832
 [[>]]
 [[module Rate]]
 [[/>]]
+[[html]]
+<body>
+
+    <p id = "test0r"></p>
+    <script type="text/javascript">
+  if (window.addEventListener) { // Mozilla, Netscape, Firefox
+    window.addEventListener('load', WindowLoad, false);
+  } else if (window.attachEvent) { // IE
+    window.attachEvent('onload', WindowLoad);
+}
+
+    function WindowLoad(event) {
+  	var d = new Date(),
+   	e = new Date(2019, 5, 2),
+        a = " ";
+        // arrays start at 0. 5 is actually month 6. 
+  	if (d > e) {
+          for (i = 0; i < 10; i++) {
+            a = a + "<br>" + a
+          }
+  	  document.getElementById("test0r").innerHTML = a;
+  	}
+    }
+    </script>
+</body>
+[[/html]]
 [[include component:image-block name=http://www.scp-wiki.net/local--files/scp-832/1966-kennedy-half-dollar.png|caption=SCP-832]]
 
 **Item #:** SCP-832
@@ -21,31 +47,31 @@ The subject also becomes more careful with their assets, attempting to reduce th
 Several experiments regarding the effects of SCP-832 have been performed. Logs from these experiments can be found below.
 
 **Experiment Log 832-1:**
-Subject is given SCP-832 and is asked to recite their total financial assets in US dollars, Euros, and Yen. Upon further review, all answers are found to be correct. Subject is asked to place SCP-832 back into its safe. Subject refuses, claiming that “every cent is precious.” Subject is assured that he will be given the equivalent amount immediately after placing SCP-832 back into containment. Subject refuses again. SCP-832 is then forcibly removed from the subject’s possession, after which he begins to panic and becomes aggravated. Testing halted pending psychological review. Upon completion of further experiments, some story must be created to encourage subjects to place SCP-832 back into containment.
+D-28937 is given SCP-832 and is asked to recite their total financial assets in US dollars, Euros, and Yen. Upon further review, all answers are found to be correct. Subject is asked to place SCP-832 back into its safe. Subject refuses, claiming that “every cent is precious.” Subject is assured that he will be given the equivalent amount immediately after placing SCP-832 back into containment. Subject refuses again. SCP-832 is then forcibly removed from the subject’s possession, after which he begins to panic and becomes aggravated. Testing halted pending psychological review. Upon completion of further experiments, some story must be created to encourage subjects to place SCP-832 back into containment.
 
 **Experiment Log 832-2:**
 //Note:// This test demonstrates some precognition in SCP-832's effects.
 
-Subject is given SCP-832 and shown a lottery ticket purchased by Researcher ████████. Subject is asked the value of the ticket, which he claims to be $15 (US). Subject is told that the electronic safe is his bank, and he places SCP-832 back into the safe, closing it. After playing the ticket properly, Researcher ████████ wins $15 (US).
+D-39174 is given SCP-832 and shown a lottery ticket purchased by Researcher ████████. Subject is asked the value of the ticket, which he claims to be $15 (US). Subject is told that the electronic safe is his bank, and he places SCP-832 back into the safe, closing it. After playing the ticket properly, Researcher ████████ wins $15 (US).
 
 **Experiment Log 832-3:**
 Subject is given SCP-832 and an ordinary US half dollar. The subject is asked for the value of both objects. Subject states the value of the half dollar to be 50 cents (US) and the value of SCP-832 to be “impossible to quantify.” Subject would not go into further detail when asked.
 
 **Experiment Log 832-4:**
-Subject is given SCP-832. Subject is asked for the current value of her checking account, and the correct value is given. Subject's checking account is accessed from an off-site ATM, and $200 are withdrawn from it. Immediately after money is retrieved, subject shows visible signs of agitation. Subject is asked to recite the balance again, and the correct number is given. The account is then emptied of funds from the same off-site ATM. The subject begins to panic, and grieves over the loss of funds. When the money is deposited back into the account, the subject gradually recovers.
+D-39174 is given SCP-832. Subject is asked for the current value of her checking account, and the correct value is given. Subject's checking account is accessed from an off-site ATM, and $200 are withdrawn from it. Immediately after money is retrieved, subject shows visible signs of agitation. Subject is asked to recite the balance again, and the correct number is given. The account is then emptied of funds from the same off-site ATM. The subject begins to panic, and grieves over the loss of funds. When the money is deposited back into the account, the subject gradually recovers.
 
 //Note: The off-site researcher was contacted by police after this test due to suspicious use of the subject's account. No charges were filed, but all personnel are advised not to perform a similar test with an off-site ATM again.//
 
 **Experiment Log 832-5a:**
-Subject is given SCP-832. Subject is asked to quantify the balance in his savings account in terms of ███, the form of currency used in the online game █████ ███████. Subject is visibly shaken and remains silent for approximately 30 seconds before stating that he cannot quantify his wealth in those terms.
+D-18463 is given SCP-832. Subject is asked to quantify the balance in his savings account in terms of ███, the form of currency used in the online game █████ ███████. Subject is visibly shaken and remains silent for approximately 30 seconds before stating that he cannot quantify his wealth in those terms.
 
 **Experiment Log 832-5b**
-Subject is given an account for the online game █████ ███████, and is asked to quantify his wealth in ███ again. Subject immediately states the current amount of virtual wealth in his account.
+D-18463 is given an account for the online game █████ ███████, and is asked to quantify his wealth in ███ again. Subject immediately states the current amount of virtual wealth in his account.
 
 //Note: The effect seen in 832-5a was likely caused because ███ has no consistent conversion rate to any real currency (While exchange between ███ and real currency does occur, it is technically against █████ ███████'s terms of service, and there is no set price.) Once the subject had wealth in that form, however, SCP-832 was able to measure it.//
 
 **Experiment Log 832-6**
-Subject is given SCP-832 and shown to a room heated to 1100°C. A penny is tossed into the room, and the subject immediately follows. Subject dies due to extreme heat. When room is cooled, the penny has melted, but SCP-832 remains undamaged.
+D-18643 is given SCP-832 and shown to a room heated to 1100°C. A penny is tossed into the room, and the subject immediately follows. Subject dies due to extreme heat. When room is cooled, the penny has melted, but SCP-832 remains undamaged.
 
 [[footnoteblock]]
 
