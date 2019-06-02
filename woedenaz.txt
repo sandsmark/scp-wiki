@@ -5,6 +5,10 @@ title:woedenaz: a tasteful collection
 
 [[module css]]
 .page_links {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     height: 5.5rem;
 }
@@ -13,23 +17,49 @@ title:woedenaz: a tasteful collection
     width: 100%;
     border-width: 1vh;
     margin: 1em;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 0;
 }
 
 .page_links div.WoedContainer div.skips {
     height: auto !important;
-    flex-grow: 0;
-    flex-basis: 1.5em;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+       -moz-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -webkit-flex-basis: 1.5em;
+        -ms-flex-preferred-size: 1.5em;
+            flex-basis: 1.5em;
 }
 
 .page_links div.WoedContainer.left-side div.skips > div.labels,
 .page_links div.WoedContainer.right-side div.skips > div.labels {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .page_links div.WoedContainer div.skips > div.labels {
@@ -41,7 +71,11 @@ title:woedenaz: a tasteful collection
 .page_links div.WoedContainer div.skips > div.labels > .title::before {
     height: 1.5em;
     width: 100%;
-    justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .page_links div.WoedContainer div.skips > div.labels > .title::after, 
@@ -56,24 +90,45 @@ title:woedenaz: a tasteful collection
 .page_links div.WoedContainer div.skips > div.labels > .title,
 .page_links div.WoedContainer div.skips > div.labels > .title::after,
 .page_links div.WoedContainer div.skips > div.labels > .title::before {
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: -o-transform;
+    -moz-transition-property: transform, -moz-transform;
     transition-property: transform;
-    transition-duration: 300ms;
-    transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+    transition-property: transform, -webkit-transform, -moz-transform, -o-transform;
+    -moz-transition-duration: 300ms;
+      -o-transition-duration: 300ms;
+         transition-duration: 300ms;
+    -moz-transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+      -o-transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+         transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
     -webkit-transition-property: transform;
     -webkit-transition-duration: 300ms;
     -webkit-transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
 .page_links div.WoedContainer div.skips > div.labels > .title:hover {
-    transform: translate(-0.15rem, 0.15rem);
+    -webkit-transform: translate(-0.15rem, 0.15rem);
+       -moz-transform: translate(-0.15rem, 0.15rem);
+        -ms-transform: translate(-0.15rem, 0.15rem);
+         -o-transform: translate(-0.15rem, 0.15rem);
+            transform: translate(-0.15rem, 0.15rem);
 }
 
 .page_links div.WoedContainer div.skips > div.labels > .title:hover::after {
-    transform: translate(0.15rem, -0.15rem);
+    -webkit-transform: translate(0.15rem, -0.15rem);
+       -moz-transform: translate(0.15rem, -0.15rem);
+        -ms-transform: translate(0.15rem, -0.15rem);
+         -o-transform: translate(0.15rem, -0.15rem);
+            transform: translate(0.15rem, -0.15rem);
 }
 
 .page_links div.WoedContainer div.skips > div.labels > .title:hover::before {
-    transform: translate(0.15rem, -0.15rem);
+    -webkit-transform: translate(0.15rem, -0.15rem);
+       -moz-transform: translate(0.15rem, -0.15rem);
+        -ms-transform: translate(0.15rem, -0.15rem);
+         -o-transform: translate(0.15rem, -0.15rem);
+            transform: translate(0.15rem, -0.15rem);
 }
 
 @media only screen and (max-width: 980px) {
