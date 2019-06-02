@@ -42,6 +42,19 @@ title:woedenaz: a tasteful collection
             flex-basis: 1.5em;
 }
 
+.page_links div.WoedContainer.left-side,
+.page_links div.WoedContainer.right-side {
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; 
+    width: auto;
+    margin-top: 1.5rem;
+}
+
 .page_links div.WoedContainer.left-side div.skips > div.labels,
 .page_links div.WoedContainer.right-side div.skips > div.labels {
     display: -webkit-box;
