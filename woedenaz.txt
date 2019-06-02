@@ -131,9 +131,15 @@ title:woedenaz: a tasteful collection
             transform: translate(0.15rem, -0.15rem);
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 980px) and (min-width: 480px) {
     .page_links div.WoedContainer div.skips > div.labels {
     	font-size: 1.2rem !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .page_links div.WoedContainer div.skips > div.labels {
+    	font-size: 1rem !important;
     }
 }
 [[/module]]
