@@ -1,6 +1,34 @@
 title:cone
 [[include :topia:cqb:flow]]
 
+[!-- just for pride month --]
+[[include :scp-wiki:component:black-highlighter-theme-dev]]
+[[include :scptestwiki:theme:ace]]
+[!-- [[include :scp-sandbox-3:collab:ar-theme]] --]
+[[module CSS]]
+#header h1 a::before {
+    content: "List of Sharticles";
+}
+#header h2 span::before {
+    content: "Croquembouche's Author Page" !important;
+}
+#header {
+    background-image: url(http://scp-wiki.wdfiles.com/local--files/cone/delta.png);
+}
+#header::before {
+    display: none;
+}
+/*div#container-wrap {
+    background: url(http://scp-sandbox-3.wdfiles.com/local--files/move-1/mat_body_bg.png) top left repeat-x;
+}
+:root {
+    --light-accent: #82292e;
+    --dark-accent: #611e22;
+    --hyperlink: #b01;
+    --hyperlink-visited: #824;
+}*/
+[[/module]]
+
 [[module CSS]]
 
 .random { text-align: center; }
@@ -285,31 +313,3 @@ Last comment #%%comments%% by %%commented_by%%
 
 [[/tab]]
 [[/tabview]]
-
-[!-- just for pride month --]
-[[include :scp-wiki:component:black-highlighter-theme-dev]]
-[[include :scptestwiki:theme:ace]]
-[!-- [[include :scp-sandbox-3:collab:ar-theme]] --]
-[[module CSS]]
-#header h1 a::before {
-    content: "List of Sharticles";
-}
-#header h2 span::before {
-    content: "Croquembouche's Author Page" !important;
-}
-#header {
-    background-image: url(http://scp-wiki.wdfiles.com/local--files/cone/delta.png);
-}
-#header::before {
-    display: none;
-}
-/*div#container-wrap {
-    background: url(http://scp-sandbox-3.wdfiles.com/local--files/move-1/mat_body_bg.png) top left repeat-x;
-}
-:root {
-    --light-accent: #82292e;
-    --dark-accent: #611e22;
-    --hyperlink: #b01;
-    --hyperlink-visited: #824;
-}*/
-[[/module]]
