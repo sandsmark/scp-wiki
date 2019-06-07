@@ -8,29 +8,43 @@ A **Series** by [[*user not_a_seagull]], [[*user FloppyPhoenix]], [[*user Ayers]
 ]]
 
 [[module CSS]]
-@charset "utf-8";
-@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
-
 /* HEADER */
-#header h1 a span{
-    font-size: 0;
+#header h1 a {
+    display: block;
+    margin: 0;
+    padding: 80px 0 25px;
+    line-height: 0;
+    max-height: 0;
+    color: transparent;
+    background: transparent;
+    font-family: 'Verdana', Arial, sans-serif;
+    text-decoration: none;
+    text-shadow: none;
+    letter-spacing: 0.9px;
 }
-#header h1 a:before{
+
+#header h1 a::before {
     content: "The Avian Division";
-    font-family: 'Nanum Gothic', Arial, sans-serif;
-    font-size: 90%;
-    color: #eee;
+    color: white;
+    letter-spacing: -0.02em;
     text-shadow: 3px 3px 5px black;
 }
-#header h2 span{
-    font-size: 0;
-    padding: 4px;
-}
-#header h2:after{
-    content: "Until we return to the Nest";
-    font-weight: bold;
-    color: #f0f0c0;
+
+#header h2 span {
+    display: block;
+    margin: 0;
     padding: 19px 0;
+    line-height: 0;
+    max-height: 0;
+    font-weight: bold;
+    color: transparent;
+    text-shadow: none;
+}
+
+#header h2 span::before {
+    content: 'Until we return to the Nest';
+    color: white;
+    text-shadow: 1px 1px 1px black;
     text-shadow: 1px 1px 1px rgba(0,0,0,.8);
 }
 
