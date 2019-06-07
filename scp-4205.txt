@@ -50,6 +50,11 @@ line-height: 1.6em;
     margin-top: -4rem;
 }
 
+#header {
+    filter: inherit;
+    -webkit-filter: inherit;
+}
+
 @media (max-width: 775px) {
     #page-content > div:nth-child(1) > div {
         margin-top: 0vh !important;
