@@ -295,21 +295,5 @@ But 3211? No no no. 3211 is different.
 
 [[tab Tag Stuff]]
 
-**Pages missing a top-level tag**
-[[collapsible]]
-[[module ListPages tags="-hub -scp -tale -goi-format -supplement -artwork -essay -guide -author -news -workbench -admin -project -splash -sandbox -in-deletion" separate="no" category="* -log-of-unexplained-locations -fragment" perPage="250" order="rating desc"]]
-# %%category%%: %%title_linked%% by %%created_by%% ([[#ifexpr %%rating%% > 0 | + |  ]]%%rating%%) (%%tags%%)
-[[/module]]
-[[/collapsible]]
-
---]
-
-**Info module pages**
-[[module ListPages category="info" separate="no"]]
-* %%title_linked%% (+%%rating%%) _
-Last revision #%%revisions%% by %%updated_by%% _
-Last comment #%%comments%% by %%commented_by%%
-[[/module]]
-
 [[/tab]]
 [[/tabview]]
