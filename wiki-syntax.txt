@@ -116,9 +116,9 @@ Inserting @@[[footnoteblock]]@@ determines the position of the footnotes. Otherw
 
 + Images
 
-Use this code, including the right alignment, width, and border attributes, to insert images. The attributes in the code are standard for use in articles, although changing them for reasonable usage is allowed:
+Use this code, to insert images. Width is an optional measurement and can be skipped, in which case it shall default to 300px.
 
-> @@[[include component:image-block name=URL-GOES-HERE | caption=CAPTION-GOES-HERE]]@@
+> @@[[include component:image-block name=URL-GOES-HERE | caption=CAPTION-GOES-HERE|width=WIDTH-GOES-HERE]]@@
 
 + Audio and Video
 
