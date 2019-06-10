@@ -118,10 +118,7 @@ Inserting @@[[footnoteblock]]@@ determines the position of the footnotes. Otherw
 
 Use this code, including the right alignment, width, and border attributes, to insert images. The attributes in the code are standard for use in articles, although changing them for reasonable usage is allowed:
 
-> @@[[div style="float:right; margin:0 2em 1em 2em; width:300px; border:0;"]]@@
-> @@|||| [[image URL-GOES-HERE width="300px"]] ||@@
-> @@||||~ ^^Caption^^ ||@@
-> @@[[/div]]@@
+> @@[[include component:image-block name=URL-GOES-HERE | caption=CAPTION-GOES-HERE]]@@
 
 + Audio and Video
 
