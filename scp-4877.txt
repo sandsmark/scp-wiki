@@ -10,6 +10,16 @@ blockquote {
 .yui-navset .yui-nav,
 .yui-navset .yui-navset-top .yui-nav {
     border-color:#d6c2c2; /* color between tab list and content */
+    display: grid;
+    grid-gap: .25em;
+    grid-template-columns: repeat(9, auto);
+    grid-auto-flow: row;
+    text-align: center;
+}
+
+.yui-navset .yui-nav li, 
+.yui-navset .yui-navset-top .yui-nav li {
+    display: flex;
 }
  
 .yui-navset .yui-nav a,
@@ -18,6 +28,7 @@ blockquote {
     border-color:#d6c2c2;
     color:#303030;
     transition: 0.125s;
+    flex-grow: 2;
 }
  
 .yui-navset .yui-nav a em {
