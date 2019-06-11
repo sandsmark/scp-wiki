@@ -32,9 +32,9 @@ blockquote {
 }
  
 .yui-navset .yui-nav a em {
-background-color: #fdfdfd;
-box-shadow: 0px 1px 2px rgba(0,0,0,0.7);
-border-color: #b7a9a9;
+    background-color: #fdfdfd;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.7);
+    border-color: #b7a9a9;
 }
  
 .yui-navset .yui-nav .selected a,
@@ -49,7 +49,7 @@ border-color: #b7a9a9;
 .yui-navset .yui-nav .selected a em {
     border-color: transparent;
     box-shadow: 0px 1px 2px rgba(134,7,7,0.5);
- background-color: #c72e2e; 
+    background-color: #c72e2e; 
 }
  
 .yui-navset .yui-content {
@@ -64,6 +64,13 @@ border-color: #b7a9a9;
  
 .yui-navset-left .yui-content {
     border-left-color: #b7a9a9; /* different border color */
+}
+
+@media (max-width: 767px) {
+    .yui-navset .yui-nav,
+    .yui-navset .yui-navset-top .yui-nav {
+        grid-template-columns: repeat(3, auto);
+    }
 }
  
 blockquote {
