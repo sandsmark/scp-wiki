@@ -1,107 +1,95 @@
 title:Chat Guide
+[[=]]
++ The passcode for being accepted to the wiki is located in the __[*http://www.scp-wiki.net/guide-for-newbies Guide for Newbies]__. Chat Staff will not help you find it.
+[[/=]]
 [[tabview]]
+[[tab Welcome - IRC Basics]]
 
-[[tab Introduction]]
++ **{{<+Reverend> IRC is just multiplayer notepad.}}**
 
-+ Introduction to #Site19
+**If you're already a well-versed IRC user,** then point the client of your choice to **{{irc.synirc.net}}** (Ports 6660-6669 are available, as well as 6697 and 7001 for SSL) and join us in #site19 (you will need to register and identify before joining). Please proceed to the 'Rules and Guidelines' tab.
 
-#Site19 is the general chat channel for the SCP Foundation.
+**If none of that makes a bit of sense to you,** please read these basics in their entirety before  attempting to chat, because it probably will not work otherwise.
 
-* Talking about SCPs.
-* Getting advice about your article draft.
-* Socializing with site members from around the world, both new people and site veterans.
-* Shenanigans.
+IRC (Internet Relay Chat) allows for discussions across multiple **channels**, which are prefixed with a **{{#}}**. For example, **{{#football}}**, **{{#cats}}**, and **{{#techsupport}}** would be topical channels people might congregate in. You can also have private, 1-on-1 conversations with people, and even create your own channels to discuss whatever you'd like. 
 
-Chat is open to anyone. You don't have to be a site member to join.
+At the top of this page you'll see something that looks like this:
 
-[[/tab]]
+[[image chat01.png]]
 
+If you have never registered a synIRC account (which is entirely separate from Wikidot accounts), you will be required to do so before you can join our main channel. This is easy. Go ahead and hit Login, you'll see something like this:
 
-[[tab Connecting]]
-++ Chat Connection
+[[image chat02.png]]
 
-Our chat rooms are IRC channels on the SynIRC IRC network. If you don't know anything about IRC, [http://www.ircbeginner.com/ircinfo/ircc-commands.html this link (click!)] is a good place to start.
+I've highlighted some relevant areas.
 
-Our general chat channel is #site19. Our help channel is [http://05command.wikidot.com/chat #site17]. Occasionally, #site17 may be muted while chat operators are handling ban appeals. If you join and the channel is muted, please PM one of the operators present for assistance.
+1.) **Status Bar.** All channels and private messages will show up here, and there are options and the leave/quit button on the right-hand side. The "Status" link is clickable and shows server information.
+2.) **User List.** Some users have a prefix in front of them, they indicate a user's rank in the channel. They are **{{~}}** (owner), **{{&}}** (admin), **{{@}}** (op), **{{%}}** (half-op), and **{{+}}** (voice). Different channels use these ranks differently. In **{{#site19}}** and **{{#site17}}**, all users with a rank except **{{+}}** are chat staff (or bots that assist in performing channel duties). Users with the rank of **{{+}}** in #site17 are not staff, but are trusted non-staff users that can reliably give good information on basic questions.
+3.) **Chat window.** The screenshot above shows what a channel will normally look like on joining, showing the topic, then a list of users.
+4.) **Input box.** This is where you type your messages, as well as commands like **{{/register}}** and **{{/identify}}**.
 
-++ Registration
++ Registration
 
-We require you to register your nickname before joining chat. Here's how:
+You'll also notice that when you joined, if you don't have a registered account, you didn't join **{{#site19}}** even though it's in the list, because we require **registration** to join that channel. Let's take care of that now. Click Status at the top to switch to the server window, then type in:
 
-# Type the following: /msg NickServ register PASSWORD EMAIL - Substitute the stuff in caps with your desired password and email. Do not leave a space before the / and do not type anything else in the same message.
-# Once this is done, you should get a confirmation email. Be sure to check your spam folder if you have trouble finding it. Follow the directions in the email. Once that's all taken care of, you simply type "/msg nickserv identify [password]" (without the quotes) in your client. You have now registered!
+**{{/register PASSWORD EMAIL}}**
 
-[!--  FOR WHEN +R IS DOWN:
+This will be the password you use to log on to the chat in the future, so make sure it's something you will remember. When you're ready, hit Enter.
 
-We highly recommend that you register your nickname upon joining chat. Here's how to do that.
+Example:
 
-Type the following: /msg NickServ register [password] [email]
+[[image chat03.png]]
 
-Substitute the stuff in brackets with your desired password and email. (And remember to //not// leave in the brackets!) 
+If you did everything right, you'll see a message appear from NickServ (Nickname Services) that reads, **{{A passcode has been sent to (email), please type /msg NickServ confirm <passcode> to complete registration}}**. This can take a couple of minutes to arrive, and has been known to end up in junk mail occasionally, so please take a look there as well. When you find it and confirm the passcode as instructed, you are registered! Please note registrations expire after 35 days with no activity.
 
-Once this is done, you should get a confirmation email. Follow the directions in the email. Once that's all taken care of, you simply type "/msg nickserv identify [password]" (without the quotes) in your client. You have now registered!
+Now that you've registered, you simply need to **identify**. This logs you in, and allows you to join registered-only channels. This is done by entering:
 
-Sometimes (for instance, when dealing with trolls), we put +R on the chat. This means only people with registered nicks join. Register your nick now, so you won't be left out in the cold if that happens!
+**{{/identify PASSWORD}}**
 
---]
+Enter that the same way you put in your registration. Now, going forward, you can put that password in the password field highlighted above in red //before// you get connected, and it'll take care of identifying for you.
 
-++ Connecting
++ Channels
 
-Here are some common free IRC clients:
+We make use of three primary channels here.
 
-|| **Mibbit**  || Web || http://www.mibbit.com/ ||
-|| **KiwiIRC** || Web || https://kiwiirc.com/ ||
-|| **Chatzilla** || Firefox Addon || http://chatzilla.hacksrus.com/ ||
-|| **HexChat**  ||  Windows || http://hexchat.github.io/ ||
-|| **mIRC**  ||Windows || http://www.mirc.com/ ||
-|| **Pidgin** || Multiplatform || http://www.pidgin.im/ ||
-|| **IRCCloud** || Web, iOS, Android, Windows || https://www.irccloud.com/ ||
+* **{{#site19}}** - For general discussion.
+* **{{#site17}}** - For getting help from staff.
+* **{{#thecritters}}** - For giving and receiving critique on drafts and ideas.
 
-If you're unsure how to use IRC, there are instructions on how to use some of the simpler web clients below. For starting users, Mibbit and Chatzilla are suggested, or you can simply use the chat tool at the bottom of this page.
+There are also official channels for staff teams:
+* **{{#site11}}** - Technical Staff
+* **{{#site34}}** - Licensing Team
+* **{{#site81}}** - Community Outreach
+* **{{#workshop}}** - Staff and community-led seminars and workshops.
+* **{{#origins-ooc}}** - Hub for [*http://scp.bz/origins SCP Horizons] roleplaying channel.
 
-+++ Mibbit Instructions
+To join a new channel, it's as simple as **{{/join [channel]}}** (this can be entered in any chat window). E.g., **{{/join #thecritters}}** will take you to **{{#thecritters}}**. (This can also be shortened to **{{/j #thecritters}}**. You can leave a channel with **{{/part #channel}}** in any window, or **{{/part}}** from the window of the channel you want to part.
 
-You will need to identify yourself before joining #Site19. Make sure you follow the instructions above to do so.
-
-# Go to http://www.mibbit.com/chat
-# Select "SynIRC webirc" from the drop down menu.
-# Type your username into the box and click [Connect].
-# Identify yourself using the instructions above under 'Registration'.
-# Type "/join #site19" and press enter.
-
-+++ Chatzilla Instructions
-
-You will need to identify yourself before joining #Site19. Make sure you follow the instructions above to do so.
-
-# Set up the Chatzilla addon for your computer. This requires an up-to-date Firefox browser.
-# Copy this into the text bar: /attach irc.synirc.net (or just click here: irc://irc.synirc.net/site19)
-# Identify yourself using the instructions above under 'Registration'.
-# Type /join #site19
+You can double-click a name in the user list to begin a private message conversation with that person, and all your channels and conversations are available in the status bar.
 
 [[/tab]]
 
-[[tab Guidelines]]
+[[tab Rules and Guidelines]]
 
 + Chat Guidelines
 
-* **Age:** You must be 15 years of age or older. If you act the same as an underaged person, you may be banned.
+* **Age:** You must be 18 years of age or have parental consent to be on the synIRC network, and must be 15 regardless of consent to chat in official SCP channels. If you act the same as an underage person, you will be banned.
 * **Topics:** Discussion about SCP ideas and drafts take priority. Any NSFW (Not Safe For Work) links must be tagged as NSFW (check below for examples). No illegal activity is permitted, period. 
-* **Reporting:** If you need a chat operator, you can often get our attention by saying "ops" or sending an operator a private message.
+* **Reporting:** If you need a chat operator urgently, you can often get our attention by saying **{{ops}}** and we will be notified. Abusing this ping will result in disciplinary action.
 
 ++ Behavior 
 
 It is the responsibility of each chat user to know what is or is not acceptable behavior.
 
-The following are some specific things to avoid. This doesn't include every possible offense.
+The following are some specific things to avoid. This doesn't include every possible offense and if you're not sure whether you're about to break a rule, ask rather than finding out the hard way.
 
 * **Trolling**: Acting deliberately inflammatory. If you're doing it, you know you're doing it. If ops believe you're trolling and you don't think so, then you need to rethink your behavior. This includes targeting people or a group of people based on their gender, sexuality, race, etc.
-* **Harassment**: Asking for pictures, pressuring discussion of sex lives, etc. PMing or repeatedly talking to a user who has asked you to stop talking to them.
+* **Harassment**: Asking for pictures, pressuring discussion of sex lives, etc. PMing or repeatedly talking to a user who has asked you to stop talking to them. You can be banned from the synIRC network altogether for this.
 * **Creepiness**: Making others uncomfortable by behaving in a way that would be socially inappropriate if done in public.
-* **Corollary to the above:**  If your comment involves someone’s gender (eg: milady, typical female), think twice about if it needs to be said.
 * **Almost anything involving rape.**
-* **Spamming.**
+* **Spamming.** You can be banned from the synIRC network altogether for this.
 * **Brigades**: Do not use #Site19 as a base for bothering people on other sites. No one cares. Do not use #Site19 to get an SCP you hate downvoted. You'll be banned.
-* **Being Annoying/Disruptive:** If an OP says you're being annoying, //listen// and try to improve. Being annoying isn't entirely against the rules, //but you can still be banned for it// if it gets bad enough. This could be derailing chat, over-proselytizing your opinions, being incoherent, antagonizing others, roleplaying, backseat modding, etc.
+* **Being Annoying/Disruptive:** If an OP says you're being annoying, //listen// and try to improve. Being annoying isn't entirely against the rules, //but you can still be banned for it// if it gets bad enough. Example offenses here include (but are not limited to) derailing chat, over-proselytizing your opinions, being incoherent, antagonizing others, roleplaying, backseat modding, and the use of slurs. This includes racist, sexist, and sexual-oriented slurs, as well as slurs targeting the mentally disabled or differently abled such as //retard// or //spaz//.
 * **Pronounbot-fuckery:** Adding joke pronouns to Secretary_Helen is one of the quickest ways to earn a one-week ban. See the "Chatbots" tab for more information.
 
 ++ NSFW
@@ -114,7 +102,7 @@ Tag all these kinds of images.
 
 ++ Discipline & Banning
 
-Channel operators (ops) have the authority to dictate the course of conversation. Operator orders are to be followed at all times. 
+Channel operators (ops) have the authority to dictate the course of conversation. //**Operator orders are to be followed at all times.**//
 
 Operators have the authority to warn and ban users. Minor or accidental offenses may result in multiple warnings or several shorter bans. Especially bad offenses may result in a ban of any length.
 
@@ -131,6 +119,7 @@ Operators may decide to follow or ignore this at their discretion. It's only lis
 * Permanent Ban.
 [[/collapsible]]
 
+Bans will generally appear in the [*http://05command.wikidot.com/chat-ban-page Chat Ban Page] with a link to an O5 thread.
 [[/tab]]
 
 [[tab Chatbots]]
@@ -147,51 +136,72 @@ If you want to check multiple pages at once, always use a PM to Helen. Do not fl
 
 [[/tab]]
 
-[[tab Chat OPs]]
+[[tab Chat Staff]]
 
-+ Chat Operators (OPs)
++ Chat Admins
 
 ||~ **Name** ||~ **Chat Status** ||~ **Wiki Status** ||
 || [[*user Bouncl]] || Chat Admin || Wiki Moderator ||
 || [[*user Dexanote]] || Chat Admin || Wiki Admin ||
-|| [[*user DrKens]] || Chat Admin || Wiki Staff ||
-|| [[*user Quikngruvn]] / Teratophobia || Chat Admin || Wiki Admin ||
+|| [[*user DrKens]] || Chat Admin (Inactive) || Wiki Staff ||
+|| [[*user Quikngruvn]] / Teratophobia || Chat Admin (Inactive) || Wiki Admin ||
 || [[*user SoullessSingularity]] / Soulless || Chat Admin || Wiki Admin ||
 || [[*user thedeadlymoose]] || Chat Admin (Inactive) || Wiki Admin ||
-|| [[*user Tuomey Tombstone]] / Tuomey / Nuke_Fury || Chat Admin || Wiki Moderator ||
-|| [[*user AbsentmindedNihilist]] / Niles  || Chat Operator || Wiki Staff ||
+|| [[*user Tuomey Tombstone]] / Tuomey / Nuke_Fury / Tombstone || Chat Admin || Wiki Moderator ||
+
++ Chat Operators (Ops)
+
+||~ **Name** ||~ **Chat Status** ||~ **Wiki Status** ||
+|| [[*user AbsentmindedNihilist]] / Niles || Chat Operator || Wiki Staff ||
 || [[*user Athenodora]] / Dora / Athena_Grey || Chat Operator || Wiki User ||
 || [[*user ChaoSera]] || Chat Operator || Wiki Moderator ||
-|| [[*user EldritchCadence]] || Chat Operator || Wiki Staff ||
+|| [[*user EldritchCadence]] || Chat Operator (Inactive) || Wiki Staff ||
 || [[*user LilyFlower]] / Lily || Chat Operator || Wiki Moderator ||
 || [[*user MrAnakinSpecter]] || Chat Operator || Wiki Staff ||
 || [[*user minmin]] / shayshay || Chat Operator || Wiki User ||
 || [[*user ProcyonLotor]] || Chat Operator || Wiki Moderator ||
-|| [[*user pxdnbluesoul]] / Bluesoul || Chat Operator || Wiki Moderator ||
+|| [[*user pxdnbluesoul]] / bluesoul || Chat Operator || Wiki Moderator ||
 || [[*user Roget]] / Bananaman || Chat Operator || Wiki Admin ||
 || [[*user salvagebar]] || Chat Operator || Wiki User ||
-|| [[*user Silberescher]] || Chat Operator || Wiki Admin || 
-|| [[*user Serv Bot]] / Servbot / Hoofsy || Chat Operator || Wiki User ||
+|| [[*user Silberescher]] || Chat Operator (Inactive) || Wiki Admin || 
+|| [[*user Serv Bot]] / Servbot / Hoofsy || Chat Operator (Inactive) || Wiki User ||
 || [[*user Taffeta]] / Kashmir / AidenEldritch / Snugglewumps || Chat Operator || Wiki Moderator ||
 || [[*user AdminBright]] / Bright || Chat Operator || Wiki Admin ||
 || [[*user TyGently]] || Chat Operator || Wiki User ||
-|| [[*user Wogglebug]] || Chat Operator || Wiki Staff ||
+|| [[*user Wogglebug]] || Chat Operator (Inactive) || Wiki Staff ||
+
++ Chat Half-Ops (Hops)
+
+||~ **Name** ||~ **Chat Status** ||~ **Wiki Status** ||
 || [[*user anqxyr]] || Chat Half-Op || Wiki Admin ||
 || [[*user Lex1nat0r]] || Chat Half-Op || Wiki User ||
 || [[*user Fieldstone]] || Chat Half-Op || Wiki Staff ||
 || [[*user Jazstar]] || Chat Half-Op || Wiki User ||
-|| [[*user MaliceAForethought]] / MaliceAF || Chat Half-Op || Wiki User || 
 || [[*user taylor_itkin]] / taylor_IOStkin || Chat Half-Op || Wiki Staff ||
 
 [[/tab]]
+[[tab Click Here To Chat]]
+[[iframe http://webchat.synirc.net/irc.cgi?adv=1&chan=%23site19,%23site17 width="100%" height="600" scrolling="no" style="overflow: hidden;"]]
 
+You may also use [*http://webchat.synirc.net/irc.cgi?adv=1&chan=%23site19,%23site17 this link] for a full-screen client.
+
+Other standalone IRC clients can be used to connect to synIRC. Chat staff probably cannot help you with client-specific questions or issues. Some options you may want to check out include...
+
+
+||~ Platform ||~ Client ||
+|| Windows || [*https://hexchat.github.io/ HexChat], [*https://pidgin.im/ Pidgin], [*https://www.mirc.com/ mIRC] ||
+|| Mac || [*http://colloquy.info/ Colloquy], [*https://www.adium.im/ Adium] ||
+|| Linux || [*http://xchat.org/ XChat], [*http://konversation.kde.org/ Konversation],  [*https://pidgin.im/ Pidgin] ||
+|| iOS || [*https://itunes.apple.com/us/app/colloquy-irc-client/id302000478?mt=8 Colloquy], [*https://itunes.apple.com/us/app/mutter-irc-client/id1059224189?mt=8 Mutter], [*https://apps.apple.com/us/app/limechat-irc-client/id298766460 LimeChat] ||
+|| Android || [*https://play.google.com/store/apps/details?id=com.androirc&hl=en_US AndroIRC], [*https://play.google.com/store/apps/details?id=com.countercultured.irc4android IRC for Android] ||
+|| Other || [*https://en.wikipedia.org/wiki/Comparison_of_Internet_Relay_Chat_clients Wikipedia] ||
+
+[[/tab]]
 [[/tabview]]
 
 If you have more questions, please feel free to ask chat operators for assistance.
 
 Remember, to join chat, you must have read and understood the guide!
------
+----
 
 If you are having issues connecting, please go to the staff chat client [http://05command.wikidot.com/chat over here].
-
-[[iframe http://widget00.mibbit.com/?server=irc.synirc.net&channel=%23site19&nick= width="100%" height="600" scrolling="no" frameborder="0"]]
