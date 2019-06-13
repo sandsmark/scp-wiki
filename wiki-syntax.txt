@@ -116,17 +116,26 @@ Inserting @@[[footnoteblock]]@@ determines the position of the footnotes. Otherw
 
 + Images
 
-Use this code, to insert images. Width is an optional measurement and can be skipped, in which case it shall default to 300px.
+Use this code to insert images. {{width}} is an optional measurement and can be removed, in which case it shall default to 300px.
 
-> @@[[include component:image-block name=URL-GOES-HERE | caption=CAPTION-GOES-HERE|width=WIDTH-GOES-HERE]]@@
+> @@[[include component:image-block@@
+> | name=URL-GOES-HERE
+> | caption=CAPTION-GOES-HERE
+> @@| width=WIDTH-GOES-HERE]]@@
+
+This image will be placed on the right side of the page.
+
+* To place it on the left, use {{component:image-block-right}}
+* To place it in the middle and stretch from one side of the page to the other, set {{width}} to 100%.
+* To place it on the right for desktop and in the middle for mobile, use {{component:image-block-responsive}}
 
 + Audio and Video
 
 Use the HTML5 media player to add audio and video. Change the type to either "audio" or "video" to fit what you're inserting:
 
 > @@[[include :snippets:html5player@@
-> @@|type=audio@@
-> @@|url=URL-GOES-HERE]]@@
+> @@| type=audio@@
+> @@| url=URL-GOES-HERE]]@@
 
 + Quoteblocks
 
