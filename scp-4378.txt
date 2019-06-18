@@ -114,6 +114,18 @@ div[style="margin: 0 auto"] {
 div[style="margin: 0 auto"] > div {
     margin: 0 !important;
 }
+
+table.wiki-content-table th, 
+table.wiki-content-table tr {
+    display: flex;
+    align-items: stretch;
+    justify-content: start;
+}
+
+table.wiki-content-table th[colspan="2"],
+table.wiki-content-table td[colspan="2"] {
+  flex-grow: 2;
+}
 [[/module]]
 
 [[include component:classified-bar-woed
