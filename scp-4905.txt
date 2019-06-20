@@ -1,10 +1,6 @@
 title:SCP-4905
 [[include :scp-wiki:component:black-highlighter-theme-dev]]
 [[include :scp-wiki:component:aesthetic-theme]]
-.class1 > div,
-.item1 > div {
-    color: rgb(var(--swatch-primary));
-}
 [[>]]
 [[module Rate]]
 [[/>]]
@@ -14,6 +10,10 @@ title:SCP-4905
 |item=4905
 |oc=Safe
 |lang=EN
+.class1 > div,
+.item1 > div {
+    color: rgb(var(--swatch-primary));
+}
 ]]
 @@ @@
 [[include component:image-block name=nasamoon.jpg| caption=Multiple battlesites of SCP-4905| width=200px]]
