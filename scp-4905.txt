@@ -4,12 +4,6 @@ title:SCP-4905
 [[>]]
 [[module Rate]]
 [[/>]]
-[[module css]]
-.class1 > div,
-.item1 > div {
-    color: rgb(var(--swatch-primary));
-}
-[[/module]]
 @@  @@
 [[include :scp-wiki:component:classified-bar-woed
 |lv=3
@@ -17,6 +11,12 @@ title:SCP-4905
 |oc=Safe
 |lang=EN
 ]]
+[[module css]]
+.class1 > div,
+.item1 > div {
+    color: rgb(var(--swatch-primary));
+}
+[[/module]]
 @@ @@
 [[include component:image-block name=nasamoon.jpg| caption=Multiple battlesites of SCP-4905| width=200px]]
 
