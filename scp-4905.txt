@@ -1,6 +1,10 @@
 title:SCP-4905
 [[include :scp-wiki:component:black-highlighter-theme-dev]]
 [[include :scp-wiki:component:aesthetic-theme]]
+.class1 > div,
+.item1 > div {
+    color: rgb(var(--swatch-primary));
+}
 [[>]]
 [[module Rate]]
 [[/>]]
