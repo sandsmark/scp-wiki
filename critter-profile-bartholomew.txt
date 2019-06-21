@@ -56,15 +56,19 @@ body{
     background-size: 6.250rem
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 580px) and (min-width: 480px) {
     #header {
-        background-size: 0.625rem 2.500rem;
-        background-repeat: no-repeat;
-        background-position: left 0.75rem top 1.1875rem;
-        background-clip: border-box;
-        background-size: auto 5.375rem;
+        background-position: 0.5em 4.5em  !important;
+        background-size: 66px 66px  !important;
     }
-} /* Fixes mobile sizing issue */
+}
+ 
+@media (max-width: 479px) {
+    #header {
+        background-position: 0 5.5em !important;
+        background-size: 55px 55px !important;
+    }
+}
 [[/module]]
 
 [[div class="wilson-border"]]
