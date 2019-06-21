@@ -55,6 +55,16 @@ body{
     background-image: url("http://www.scp-wiki.net/local--files/critter-profile-bartholomew/wws-trans-pride.png");
     background-size: 6.250rem
 }
+
+@media only screen and (max-width: 768px) {
+    #header {
+        background-size: 0.625rem 2.500rem;
+        background-repeat: no-repeat;
+        background-position: left 0.75rem top 1.1875rem;
+        background-clip: border-box;
+        background-size: auto 5.375rem;
+    }
+} /* Fixes mobile sizing issue */
 [[/module]]
 
 [[div class="wilson-border"]]
