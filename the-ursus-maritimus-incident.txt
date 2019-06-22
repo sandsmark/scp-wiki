@@ -1,0 +1,123 @@
+title:The Ursus Maritimus Incident
+[[include :scp-wiki:component:black-highlighter-theme-dev]]
+[[module CSS]]
+@import url('http://scp-wiki.wdfiles.com/local--files/component%3Awilsons-theme/national-park.css');
+
+/* FONTS */
+#header h2 span:before, #top-bar, #side-bar {
+    font-family: var(--header-font); /*Makes subtitle National Park */
+}
+
+:root {
+ --logo-image: url("http://topia.wdfiles.com/local--files/polar-bear/logo.png");
+    --header-title: "Wilson's Wildlife Solutions";
+    --header-subtitle: "A Polar Bear in Boring";
+    --header-font: 'national_parkregular', sans-serif;
+
+    --pale-accent: 40, 106, 230;
+    /* light red, for visited links */
+    --bright-accent: 5, 0, 133;
+    /* bright red */
+    --medium-accent: 95, 132, 191;
+    /* medium red - the "default" accent color */
+    --dark-accent: 15, 3, 100;
+    /* dark red */
+    --alt-accent: 17, 102, 0;
+    /* pale orange, for newpage links */
+}
+/* Haha blue boi */
+.outside {
+  margin: 2em -6em;
+  padding: 1em 10em;
+  --narration-color: rgba(214, 234, 248,1);
+  background: var(--narration-color);
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, var(--narration-color) 20%, var(--narration-color) 80%, rgba(255,255,255,0) 100%);
+  z-index: -2;
+}
+
+/* Force the side bar to render on top of the blue bois */
+#side-bar {
+  z-index: 2;
+}
+
+/* Hide the original page title */
+#page-title {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    #header {
+        background-size: 0.625rem 2.500rem;
+        background-repeat: no-repeat;
+        background-position: left 0.75rem top 1.1875rem;
+        background-clip: border-box;
+        background-size: auto 5.375rem;
+    }
+} /* Fixes mobile sizing issue */
+
+body {
+  overflow-x: hidden;
+}
+[[/module]]
+
+[[div class="outside"]]
+[[=]]
+[[image http://topia.wikidot.com/local--files/polar-bear/ursusmaritimus.png]]
+[[/=]]
+//"We've been operational since 1997, when I was but a wee lad of 42 years, and we have been under official supervision since 2008 upon the signing of the legendary Boring Agreement (which came about after the infamous **Ursus Maritimus Incident**)."//
+
+= -- Tim Wilson, of [http://www.scp-wiki.net/wilson-s-wildlife-solutions-hub Wilson's Wildlife Solutions]
+@@ @@
+----
+//"We don't have a name for this critter, but folks around the wildlife center had taken to simply calling him 'The Polar Bear' during his time with us."//
+
+= -- From //Critter Profile: The Polar Bear!//
+
+//"I just want to talk to her and let her know we're going to cover her expenses. I think I might have to take out another loan, but it'll be a-okay."//
+
+= -- From //UIU File: 2008-021//
+
+//"Sorry for the interruption, but, the point is that all of these can be handled on a case by case basis, but together, Wilson's Wildlife is starting to bite off a bit more than it can chew, and I think we have to do something about it."//
+
+= -- From //On The Radar//
+@@ @@
+[[/div]]
+
+@@ @@
+[[=]]
+[[Size 230%]]//Choose a beginning.
+There is no wrong path.//[[/SIZE]]
+[[/=]]
+
+@@ @@
+[[table style="width: 100%"]]
+[[row ]]
+[[cell]]
+[[SIZE 250%]]**[http://www.scp-wiki.net/critter-profile-the-polar-bear The Polar Bear]**[[/size]]
+[[/cell]]
+[[cell style="text-align: center"]]
+@@ @@
+[[/cell]]
+[[cell style="text-align: right"]]
+[[SIZE 250%]]**[http://www.scp-wiki.net/on-the-radar On the Radar]**[[/size]]
+[[/cell]]
+[[/row]]
+[[/table]]
+
+[[table style="width: 100%"]]
+[[row ]]
+[[cell]]
+@@ @@
+[[/cell]]
+[[cell style="text-align: center"]]
+[[=]]
+[[SIZE 250%]]**[http://www.scp-wiki.net/uiu-file-2008-21 UIU File: 2008-21]**[[/size]]
+[[/=]]
+[[/cell]]
+[[cell style="text-align: right"]]
+@@ @@
+[[/cell]]
+[[/row]]
+[[/table]]
+@@ @@
+@@ @@
