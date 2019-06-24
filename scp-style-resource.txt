@@ -56,6 +56,16 @@ color: #DDDD77;
     line-height: 20px;
     margin: 0;
 }
+
+.discord-nagi {display:block; background:#363940; color: #DADBDC; padding: 5px 10px 5px 10px;}
+.quote {background-color: #2F3136;border: solid 3px #2B2C31;border-radius: 10px;color: #7C8C8E; padding: 0px 5px 0px 5px; width: 85%; margin: 0px 0px 5px; font-size: 110%}
+.highlight {background-color: black; color: white; font-family:monospace; font-size: 125%}
+.light {display:block; background:#FFFFFF; color: #DADBDC; padding: 5px 10px 5px 10px; border: solid 1px black}
+.lightquote {color: #839496; background-color: #F8F9F9;border: solid 3px #EBEDEF;border-radius: 10px; padding: 0px 5px 0px 5px; width: 85%; margin: 0px 0px 5px; font-size: 110%}
+.lighthighlight {background-color: #F8F9F9; color: #939BA6; font-family:monospace; font-size: 125%}
+.user1 {font-weight: bold;color: #c0e3ea}
+.user2 {font-weight: bold;color: #ff0066}
+.tag {color: #7289DA}
 [[/module]]
 
 Hello and welcome!
@@ -2405,5 +2415,183 @@ When you install the above code, now you′re ready! You can use these iframes.
 [[module ListPages limit="1" category="*" order="updated_at desc"]]
 > Today's date is %%updated_at|%Y/%m/%d%%... maybe!
 [[/module]]
+[[/code]]
+[[/collapsible]]
+
+++ Discord Chat Formatting
+
+**__Option 1:__**
+
+**What it looks like:**
+
+[[include :scp-wiki:component:discord-chat-source |inc-source= --] ]]
+
+[[include :scp-wiki:component:discord-chat-source |inc-user= --]
+|user-id=one
+|username=GOTO 20
+|usericon=http://www.scp-wiki.net/local--files/component:discord-chat/GOTO20.png
+|usercolor=#ff5e56
+]]
+
+[[include :scp-wiki:component:discord-chat-source |inc-user= --]
+|user-id=two
+|username=corvas
+|usericon=http://www.scp-wiki.net/local--files/component:discord-chat/corvas.png
+|usercolor=#60b9dc
+]]
+
+[[include :scp-wiki:component:discord-chat-source |inc-start= --] ]]
+
+[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
+|user-id=one
+|username=GOTO 20
+|msg-time=Today at 4:28 PM
+]]
+yo, Corvus, you around? [[image http://www.scp-wiki.net/local--files/component:discord-chat/smug.svg class="emoji inline"]]
+[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
+
+[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
+|user-id=two
+|username=Corvas
+|msg-time=Today at 4:28 PM
+]]
+ya 
+what's up [[span class="at_mention"]]@GOTO 20[[/span]]
+[[image http://www.scp-wiki.net/local--files/component:discord-chat/smug.svg class="emoji alone"]]
+[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
+
+[[include :scp-wiki:component:discord-chat-source |inc-new-msgs= --] ]]
+
+[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
+|user-id=one
+|username=GOTO 20
+|msg-time=Today at 4:29 PM
+]]
+Here is an image
+[[image http://www.scp-wiki.net/local--files/component:discord-chat/noodle.jpg link="http://www.scp-wiki.net/scp-4378" class="msgimage"]]
+[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
+
+[[include :scp-wiki:component:discord-chat-source |inc-attch= --]
+|attch-id=attch-one
+|user-id=one
+|username=GOTO 20
+|msg-time=Today at 4:30 PM
+|attchname=mv_sk1r.tar.gz
+|attchsize=2.71 KB
+|attchlink=http://www.scp-wiki.net/scp-2105
+]]
+
+[[include :scp-wiki:component:discord-chat-source |inc-attch= --]
+|attch-id=attch-two
+|user-id=two
+|username=corvas
+|msg-time=Today at 5:20 PM
+|attchname=butts.zip
+|attchsize=512 MB
+|attchlink=http://www.scp-wiki.net/scp-4205
+]]
+
+[[include :scp-wiki:component:discord-chat-source |inc-end= --] ]]
+
+**What to copy:**
+
+[/component:discord-chat Full explanation and code available here.]
+
+**__Option 2:__**
+
+**What it looks like:**
+
+[[div class="discord-nagi"]]
+[[span class="user1"]]A-paul-yon[[/span]] [[size 75%]]##5B5E63|Today at 12:00 AM##[[/size]]
+Yo, [[span class="tag"]]@Rainer's a soft boi[[/span]]
+[[span class="highlight"]]Check this.[[/span]]
+------
+[[span class="user2"]]Rainer's a soft boi[[/span]] [[size 75%]]##5B5E63|Today at 12:00 AM##[[/size]]
+That's pretty cool, but consider the following:
+[[div class="quote"]]
+There is no ethical consumption under capitalism.
+[[/div]]
+[[/div]]
+
+**What to copy:**
+
+[[collapsible]]
+**IMPORTANT:** This is the CSS module that goes at the top of the article.
+
+[[code]]
+[[module CSS]]
+.discord-nagi {display:block; background:#363940; color: #DADBDC; padding: 5px 10px 5px 10px;}
+.quote {background-color: #2F3136;border: solid 3px #2B2C31;border-radius: 10px;color: #7C8C8E; padding: 0px 5px 0px 5px; width: 85%; margin: 0px 0px 5px; font-size: 110%}
+.highlight {background-color: black; color: white; font-family:monospace; font-size: 125%}
+.user1 {font-weight: bold;color: #c0e3ea}
+.user2 {font-weight: bold;color: #ff0066}
+.tag {color: #7289DA}
+[[/module]]
+[[/code]]
+
+This is the code for the chat itself. Put it where it should appear in the article.
+
+[[code]]
+[[div class="discord-nagi"]]
+[[span class="user1"]]A-paul-yon[[/span]] [[size 75%]]##5B5E63|Today at 12:00 AM##[[/size]]
+Yo, [[span class="tag"]]@Rainer's a soft boi[[/span]]
+[[span class="highlight"]]Check this.[[/span]]
+------
+[[span class="user2"]]Rainer's a soft boi[[/span]] [[size 75%]]##5B5E63|Today at 12:00 AM##[[/size]]
+That's pretty cool, but consider the following:
+[[div class="quote"]]
+There is no ethical consumption under capitalism.
+[[/div]]
+[[/div]]
+[[/code]]
+[[/collapsible]]
+
+**__Option 3:__**
+[[size 75%]]Wow, it's literally as awful as Light mode normally looks.[[/size]]
+
+**What it looks like:**
+
+[[div class="light"]]
+[[span class="user1"]]A-paul-yon[[/span]] [[size 75%]]##5B5E63|Today at 12:00 AM##[[/size]]
+Yo, [[span class="tag"]]@Rainer's a soft boi[[/span]]
+[[span class="lighthighlight"]]Check this.[[/span]]
+------
+[[span class="user2"]]Rainer's a soft boi[[/span]] [[size 75%]]##5B5E63|Today at 12:00 AM##[[/size]]
+That's pretty cool, but consider the following:
+[[div class="lightquote"]]
+There is no ethical consumption under capitalism.
+[[/div]]
+[[/div]]
+
+**What to copy:**
+
+[[collapsible]]
+IMPORTANT: This is the CSS module. It goes at the top of the article.
+
+[[code]]
+[[module CSS]]
+.light {display:block; background:#FFFFFF; color: #DADBDC; padding: 5px 10px 5px 10px; border: solid 1px black}
+.lightquote {color: #839496; background-color: #F8F9F9;border: solid 3px #EBEDEF;border-radius: 10px; padding: 0px 5px 0px 5px; width: 85%; margin: 0px 0px 5px; font-size: 110%}
+.lighthighlight {background-color: #F8F9F9; color: #939BA6; font-family:monospace; font-size: 125%}
+.user1 {font-weight: bold;color: #c0e3ea}
+.user2 {font-weight: bold;color: #ff0066}
+.tag {color: #7289DA}
+[[/module]]
+[[/code]]
+
+This is the code for the chat itself. Put it where it should appear in the article.
+
+[[code]]
+[[div class="light"]]
+[[span class="user1"]]A-paul-yon[[/span]] [[size 75%]]##5B5E63|Today at 12:00 AM##[[/size]]
+Yo, [[span class="tag"]]@Rainer's a soft boi[[/span]]
+[[span class="lighthighlight"]]Check this.[[/span]]
+------
+[[span class="user2"]]Rainer's a soft boi[[/span]] [[size 75%]]##5B5E63|Today at 12:00 AM##[[/size]]
+That's pretty cool, but consider the following:
+[[div class="lightquote"]]
+There is no ethical consumption under capitalism.
+[[/div]]
+[[/div]]
 [[/code]]
 [[/collapsible]]
