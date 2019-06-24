@@ -1,4 +1,164 @@
 title:Tanijas Art Corner
+[[module CSS]]
+html, body {
+  overflow-x: hidden;
+}
+.attribution {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8em;
+  position: absolute;
+  top: -20px;
+  z-index: 10;
+  text-align: right;
+  right: -200px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.attribution p {
+  margin: 0;
+}
+#main-content::before {
+  height: 600px;
+  width: 1400px;
+  content: "";
+  background-image: url(xx);
+  background-size: contain;
+  position: relative;
+  display: block;
+  background-position: center;
+  margin-left: calc(-180px - 22em - 1em);
+  margin-top: calc(-600px - 1em);
+  z-index: 1;
+}
+#content-wrap::before {
+  height: 600px;
+  width: 1400px;
+  content: "";
+  background-image: url(https://i.imgur.com/ppGON2j.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  position: relative;
+  display: block;
+  background-position: center;
+  margin-left: -180px;
+  z-index: 2;
+  animation: 2s ease-in-out 0s 1 fadeIn;
+}
+#content-wrap::after {
+  height: 600px;
+  width: 1400px;
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 450px, rgba(255,255,255,0.5) 550px, rgba(255,255,255,1) 600px, rgba(255,255,255,1) 1200px);
+  margin-left: -180px;
+  animation: 2s ease-out 0s 1 swipeDown;
+  background-position: 0 0;
+  background-size: 1200px 1400px;
+  transition-timing-function: cubic-bezier(0,0.7,0.31,0.96);
+  z-index: 3;
+}
+@keyframes swipeDown {
+  0% {
+    background-position: 0 -300px;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+@keyframes swipeDownMobile {
+  0% {
+    /*background-position: 0 -21.4vw;*/
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0.01;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#content-wrap {
+  position: relative;
+  margin-top: 0;
+}
+#side-bar {
+  margin-top: 600px;
+}
+@media only screen and (max-width: 1400px) {
+  #content-wrap::before {
+    width: 100%;
+    margin-left: 0;
+  }
+  #main-content::before {
+    width: 100%;
+    margin-left: calc(-22em - 1em);
+    padding-right: 26em;
+    background-size: cover;
+  }
+  .attribution {
+    right: -2em;
+  }
+}
+@media only screen and (max-width: 1040px) {
+#content-wrap::before {
+  height: 300px;
+  width: 100%;
+  background-image: url(xx);
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  animation: none;
+}
+#main-content::before {
+  display: none;
+}
+#content-wrap::after {
+  height: 300px;
+  width: 100%;
+  top: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 225px, rgba(255,255,255,0.5) 275px, rgba(255,255,255,1) 300px, rgba(255,255,255,1) 600px);
+  margin-left: auto;
+  margin-right: auto;
+  background-position: 0 0;
+  background-size: 600px 700px;
+}
+#side-bar {
+  margin-top: 300px;
+}
+.attribution {
+  right: calc(50vw - 350px - 2em)
+}
+}
+@media only screen and (max-width: 700px) {
+#content-wrap::before {
+  height: 42.8vw;
+  background-size: 100vw 42.8vw;
+}
+#content-wrap::after {
+  height: 21.4vw;
+  background-size: 100vw 42.8vw;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 16vw, rgba(255,255,255,0.5) 19.6vw, rgba(255,255,255,1) 21.4vw, rgba(255,255,255,1) 42.8vw);
+  animation: 2s ease-out 0s 1 swipeDownMobile;
+  top: 21.4vw
+}
+.attribution {
+  right: 0;
+  box-shadow: 0 0 5px 5px #fff;
+  background-color: #fff;
+}
+#page-title {
+  padding-top: 1em;
+}
+}
+[[/module]]
 [[>]]
 [[module rate]]
 [[/>]]
