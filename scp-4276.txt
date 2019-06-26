@@ -1,4 +1,13 @@
 title:Scp 4276
+[[module CSS]]
+.fakeprot .mailform-box .buttons{display:none;}
+.fakeprot + .collapsible-block .collapsible-block-link {padding: 0.1em 0.5em;text-decoration: none;background-color: #F4F4F4;border: 1px solid #AAA;color: #000;}
+.fakeprot + .collapsible-block .collapsible-block-link:hover {background-color: #DDD;color: #000;}
+.fakeprot + .collapsible-block .collapsible-block-link:active {background-color: #DDD;color: #000;}
+.fakeprot + .collapsible-block .collapsible-block-unfolded-link{margin:0.5em 0;text-align: center;}
+.fakeprot + .collapsible-block .collapsible-block-folded{margin:0.5em 0;text-align: center;}
+.fakeprot .passw input[type=text] {text-security:disc;-webkit-text-security:disc;-mox-text-security:disc;}
+.mailform-box td:first-child {width: 80px;}
 [[/module]]
 [[>]]
 [[module Rate]]
@@ -252,4 +261,96 @@ Visual stimuli also appear to have an effect on SCP-XXXX events, as irregular or
 > [[/div]]
 > -----
 > **Addendum**: MTF Lambda-12 was deemed successful in their mission of eradicating the site of all traces of SCP-XXXX whilst minimizing loss of innocent life. Despite best attempts, however, a local investigation revealed the presence of SCP-XXXX in nearby homes. Class-C amnestics were administered to surviving inhabitants of Oak Creek and cover story 29 'Localized Blaze' was put into effect. The population of Oak Creek, Colorado prior to Incident-XXXX-1 was estimated to be about [[[*https://en.wikipedia.org/wiki/Oak_Creek,_Colorado | 1,020.]]]
+[[/collapsible]]
+
+[[div class="fakeprot"]]
+[[module MailForm to="aaaa (DUMMY)" button=""]]
+# name
+ * title: ID
+ * default: EC-257641
+ * type: text
+ * rules:
+  * required: true 
+  * maxLength:10
+  * minLength: 100
+[[/module]]
+[[div class="passw"]]
+[[module MailForm to="aaaa (DUMMY)" button=""]]
+# affiliation
+ * title: PASSWORD
+ * default: ・・・・・・
+ * rules:
+  * required: true 
+  * maxLength:10
+  * minLength: 100
+[[/module]]
+[[/div]]
+[[/div]]
+[[collapsible show="Login" hide="Logout"]]
+> **SECURITY FOOTAGE ACCESS IS RESTRICTED TO SITE TECHNICAL PERSONNEL.
+>  ARE YOU SURE YOU WISH TO ACCESS THIS FILE? Y/N**
+> 
+> **ACCESS GRANTED**
+> 
+> **COMMITTEE MEMBER JOHANSON'S OFFICE—1999/06/25 — 8:35 am**
+> 
+> **[BEGIN PLAYBACK]**
+> -----
+> 
+> **Johanson**: "Good morning. I didn't expect anyone to come in so early—"
+> 
+> **Dr.Calloway**: "Who the fuck do you think you are?"
+> 
+> **Johanson**: "I beg your pardon, Doctor? That appears awfully rash of—"
+> 
+> **Dr.Calloway**: "Shut the fuck up Joe, just listen to me for a second."
+> 
+> **Johanson**: "… Make it quick, doctor."
+> 
+> **Dr.Calloway**: "Do you have even a lick of a brain cell left in that rotten crypt of a thing you call a brain? What made you think that any of this was a good idea? This supposed job of yours to 'protect' doesn't seem to be doing a hell of a lot of anything!"
+> 
+> **Johanson**: "Excuse me? I have no idea where these disturbing accusations are coming from Doctor but I am determined that I—"
+> 
+> **Dr.Calloway**: sigh "I saw the records, Joe."
+> 
+> **Johanson**: "…Oh"
+> 
+> **Dr.Calloway**: "You're damn right 'Oh'. I understand that we had to test its capabilities to some degree, but even on a D-class, I could see why we needed to protect the public from those things. What was the point of those tests? Why did we have to test these things in the first place? We've been involved in a lot of death, Joe. So much blood is on our hands even though we choose to ignore it. But this? I'm not ignoring this."
+> 
+> **Johanson**: "I had to decide what was necessary to keep the normalcy, Doctor, this was the only way I saw that would actually work. Every decision I make, every choice I agree with, is for the well-being of the people. I am sorry that you think—"
+> 
+> **Dr.Calloway**: "They were children Joe, fucking children, and you decided that turning them to ash was the best course of action? What about all the homes? We could've treated so many people, helped so many people, but you concluded that that would harm the masquerade? Are you really willing to eradicate an entire town because of these things? Are you willing to annihilate all animal life in the state?"
+> 
+> **Johanson**: "I'm sorry Doctor, I truly am. But it was for the greater good."
+> 
+> **Dr.Calloway**: Greater good? Greater fucking good?! God, listen to yourself Joe, what the hell happened to your humanity? Do you really think that what we've done here was for the 'greater good'? Have you ever thought about why this is even happening?"
+> 
+> **Johanson**: "Are you here to enlighten me, Doctor?"
+> 
+> **Dr.Calloway**: "We're testing on wasps that only hatch normally in obnoxious social situations with humans. Don't you find that even a little weird? I mean, we found these things in the deserts of fucking Colorado! Do you see any party cruises in Colorado? It doesn't make any damn sense!"
+> 
+> **Johanson**: "What's your point? I still stand by my answer, we have to evolve to defend humanity from everything else that wants us dead."
+> 
+> **Dr.Calloway**: "Just like them."
+> 
+> **Johanson**: "Pardon?"
+> 
+> **Dr.Calloway**: "Shiny bugs, in the middle of the desert, that breed to loud ass music and disco balls? Last I checked EDM music didn't originate in the fucking wilderness! They've evolved against us, Joe. Who fucks up the planet as much as we do, huh? What other being on this earth is as much of an abomination to nature as we are? We drain their rivers, chop down their trees, mine their resources, and then we up and complain when the universe tells us to fuck off! We've dropped an urban jungle right on top of the worlds head, and now they're getting back at us! When we decided we didn't give a rats ass about the planet, it decided it didn't have to give a damn about us either. Humanity isn't going to make the earth uninhabitable for nature, no: Nature is going to make the earth uninhabitable for us.
+> 
+> **Johanson**: "That was a poetic revelation, Doctor, but I still have very important work to attend to. There are matters much larger than a couple of shiny bees, from a single city, of a single state, in the United States. Now if you would be so kind—"
+> 
+> **Dr.Calloway**: "Call me by my name, Joe."
+> 
+> **Johanson**: "Goodbye."
+> 
+> **Dr.Calloway**: "Call me by my name you fucking rat!"
+> 
+> **Johanson**: "Goodbye. Doctor."
+> 
+> **[END PLAYBACK]**
+> -----
+> **SECURITY FOOTAGE ACCESS IS RESTRICTED TO SITE TECHNICAL PERSONNEL. 
+> ARE YOU SURE YOU WISH TO DELETE THIS FILE? Y/N**
+> 
+> **REQUEST GRANTED**
 [[/collapsible]]
