@@ -1,0 +1,144 @@
+title:SCP-4406
+[[include :scp-wiki:component:black-highlighter-theme-dev]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[module CSS]]
+.notice {
+  border: solid 1px #999999;
+  background: #f2f2c2;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+[[/module]]
+
+> {{##gray|Welcome, John Powers.##}}
+> {{##gray|[jpowers@uiu-raven ~]# ## whisper show scpf-cthompson:/scp/4406}}
+> {{##gray|Connecting to scpf-cthompson...##}}
+> {{##gray|Connected.##}}
+
+[[include :scp-wiki:component:info-ayers
+    lang=EN |
+    page=SCP-4406 |
+    authorPage=http://www.scp-wiki.net/bluesoul-s-author-page |
+    comments= 
+**SCP-4406:** SUDDEN THUNDER 
+**Authors:** [[*user aismallard]] and [[*user pxdnbluesoul]] 
+**Image Credit:** Created by [[*user pxdnbluesoul]], freely released into the public domain.
+ 
+**For [http://www.scp-wiki.net/collaboration-contest Collab-Con 2019]:**
+[http://www.scp-wiki.net/unusual-incidents-unit-hub FBI Unusual Incidents Unit] & Pentagram 
+]]
+
+[[div class="notice"]]
+[[=]]
+++++ NOTICE FROM THE FOUNDATION RECORDS AND INFORMATION SECURITY ADMINISTRATION
+
+You are to viewing this file in **discussion mode**. Proposed edits, notes, commentary, or section information will be visible in the article. For more information about viewing modes, please contact your RAISA liaison.
+[[/=]]
+[[/div]]
+
+----
+
+[[table style="border: none; width: 100%;"]]
+[[row]]
+[[cell]]
+[[size 125%]]**Item #:** SCP-4406[[/size]]
+[[/cell]]
+[[cell style="text-align: right;"]]
+[[size 125%]]###900|**Level 3/4406**##[[/size]]
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell]]
+[[size 125%]]**Object Class:** --Keter-- Neutralized[[/size]]
+[[/cell]]
+[[cell style="text-align: right;"]]
+[[size 125%]]###900|**Classified**##[[/size]]
+[[/cell]]
+[[/row]]
+[[/table]]
+----
+
+[[div class="scp-image-block block-center" style="width: 100%;"]]
+[[image whisper-call.png style="width: 100%;" link=#]]
+[[div class="scp-image-caption" style="width: 100%;"]]
+Unrolled main loop of SCP-4406 for the x86_64 architecture. Note presence of {{_P5GMPUB3}} call in green.
+[[/div]]
+[[/div]]
+
+----
+
+**Special Containment Procedures:** An inert copy of SCP-4406 is kept on a standard issue field laptop in a TEMPEST-certified[[footnote]][*https://en.wikipedia.org/wiki/Tempest_(codename) TEMPEST] is a NATO certification for emission security (EMSEC) indicating that equipment and/or structures are insulated from 'leakage' of data via electromagnetic or acoustic emissions.[[/footnote]] vault at Site-11. Foundation computers exhibiting symptoms listed in Document 4406-3L are to be checked by I/O TORNADO for SCP-4406 contamination.
+
+**Archived Description:** SCP-4406 is highly advanced surveillance software, which masks itself from the host operating system by means of an electronic antimeme. Unlike most catalogued antimemetic objects, this effect is not known to impact sapient perception: the anomaly only renders itself invisible to any computer system relaying information about it. SCP-4406 achieves this by manipulating CPU pipelines to prevent execution of code which would indicate its existence to automated systems. This concealment strategy is similar to that of non-anomalous rootkits.[[footnote]]A [https://en.wikipedia.org/wiki/Rootkit rootkit] is a malicious program which gives an attacker backdoor access to a system, and avoids detection by removing itself from process lists and execution statistics. Because it utilizes its escalated permissions to hide evidence of itself, rootkits can be very difficult to detect and eliminate.[[/footnote]] Experimental semantic analysis techniques have proven useful in study of the anomaly despite its computation-inhibiting properties (see Addendum 4406-1).
+
+--It is believed that SCP-4406 is authored and maintained by GoI-616 ("Pentagram").-- //Reverted. Please refrain from speculation. -C. Thompson//
+
+--Data gathered by TEMPEST-warded machines indicates that SCP-4406 communicates via UDP port 45666 to addresses in the 134.11.0.0/16 range, an address space owned by the Department of Defense.-- //Reverted. Logs of network activity do not match this claim. -C. Thompson//
+
+__It is not known how SCP-4406 receives directives or from whom; the current hypothesis is that it utilizes some form of thaumaturgic remote communication to an unknown party.__ //Approved. -C. Thompson//
+
+**Current Description:** SCP-4406 was experimental antivirus software developed by GoI-616 ("Pentagram")[[footnote]][[[scp-4776|The occult branch of the Department of Defense.]]][[/footnote]] for the purpose of detecting both anomalous and mundane malware on US military computers. Due to a programming error, SCP-4406 escaped its internal network and installed itself on over ███████████ devices worldwide. Though harmless, the antimemetic nature of the antivirus made identification of the software difficult, however cooperation with the FBI's [[[unusual-incidents-unit-hub|Unusual Incidents Unit]]] led to the development of an effective uninstaller. 
+
+__No further action is needed at this time.__ //Approved. -C. Thompson//
+
+> **NOTE:** This section has been **locked**. Modifications to the description require manual approval by Lead Researcher Thompson.
+
+**Addendum 4406-1:** Discovery
+
+On 2018/02/11, hardware built for Project SUDDEN THUNDER[[footnote]]A project created to study electrical-ontology: a means of measuring informational intrinsics, or anomalous modifications to the properties of semantic entities. This was originally initiated to produce a means of instant one-way communication by manipulating the recipient's ontology directly.[[/footnote]] reported a significant number of semantic transitions[[footnote]]Changes in a discrete state from existentially true to false, or vice-versa.[[/footnote]] occurring on a RAISA █████ computing cluster in Site-11. A technical audit revealed inconsistencies between automated diagnostics and manual calculations. Furthermore, when information about the discrepancy was introduced to an infected computer, the unusual behavior could no longer be detected.
+
+Controlled thaumaturgic execution failed to fully isolate the payload, but static analysis led to the discovery of the referenced function "{{_P5GMPUB3}}", which returned a public key value linked to Pentagram. Following this discovery, all additional experimentation was conducted in a thaumaturgically-warded TEMPEST-certified chamber.
+
+--During secondary replication testing, SCP-4406 was determined to be a rootkit operating at Ring -2.-- //Reverted. This level of access is normal for antivirus software. Please stop pushing this false narrative. It is not a rootkit. -C. Thompson//
+
+During secondary replication testing, weak ontologically-negative emissions were detected from affected devices. A test within a Type 1 hypervisor revealed that SCP-4406 was capable of gaining Ring -2 access,[[footnote]]A [https://en.wikipedia.org/wiki/Protection_ring protection ring] is a permissions architecture within modern operating systems to limit access to resources based on its current level of privilege, with lower numbers indicating higher access. Ring 3 is generally the level user applications run at, and Ring 0 provides access to the system's kernel. Ring -1 and below provide access to the CPU itself, and require exploitation of its microcode programming.[[/footnote]] enabling it to escape virtualized or otherwise sandboxed environments. Once installed on the system, it would use its abilities to antimemetically cloak itself from other computer processes, as well as deliberately execute invalid CPU instructions to perform //ad hoc// thaumic invocations. These messages were then encrypted with the aforementioned public key. 
+
+__The contents and intended destination(s) of these broadcasts is unknown, but are presumed to be requests for updated antivirus signatures.__ //Approved. -C. Thompson//
+
+> **NOTE:** This section has been **locked**. Modifications to this addendum require manual approval by Lead Researcher Thompson.
+
+**Addendum 4406-2:** Communications with the US Government
+
+After the discovery of potential Pentagram involvement, strategy for containment of the anomaly was debated. Eventually it was decided that the Unusual Incidents Unit should be contacted to both alert federal authorities to the breach and maintain the veil. Lead Researcher Thompson reached out to a designated contact on 2018/02/14.
+
+The government confirmed the existence of SCP-4406, but resisted requests for technical information on the anomaly's capabilities or design. Talks on the terms of mutual containment were solidified on 2018/03/07: The UIU would, under the supervision of the Foundation, develop a counter-ontological agent to neutralize all SCP-4406 instances.[[footnote]]Due to the anomalous nature of SCP-4406's informational structure, it would not be possible to limit the effective range of the elimination.[[/footnote]] Pentagram would provide any needed help and support for the effort, and would also be responsible for any further clean-up should the anomaly be discovered again. A representative from Pentagram has delivered an official apology on behalf of the organization.
+
+--Lead Researcher Thompson was seen leaving a Washington, DC area strip club the same night.-- //Reverted. This is an outrageous breach of privacy, and is not relevant to the anomaly. I will not hesitate to reach out to HR if conspiracy theorists continue to have me tailed. -C. Thompson//
+
+The source code for the uninstallation agent was delivered to the Foundation and repurposed as I/O TORNADO.
+
+> **NOTE:** This section has been **locked**. Modifications to this addendum require manual approval by Lead Researcher Thompson.
+
+**Addendum 4406-3:** Incident 4406-1
+
+On 2018/03/10, a wide semantic shift was detected across all Foundation electro-ontology sensors for over six hours. Unusual Incidents Unit contact John Powers confirmed this corresponded to the agency's clean-up efforts. Both automated and human testing conducted by the Foundation on previously-infected electronics could not detect the presence of SCP-4406. After 90 days with no detected symptoms of the anomaly, it was reclassified as Neutralized.
+
+> **NOTE:** This section has been **locked**. Modifications to this addendum require manual approval by Lead Researcher Thompson.
+
+**Footnotes:**
+[[collapsible show="▸ Access data" hide="▾ Hide data"]]
+[[footnoteblock]]
+[[/collapsible]]
+
+**END OF FILE**
+
+----
+
+> {{##gray|[jpowers@uiu-raven ~]# ## whisper copy scpf-cthompson:/home/cthompson/copied/scp-* ~/scp-foundation/files/ &}}
+> {{##gray|Copying...##}}
+> {{##gray|[1] 616003##}}
+> 
+> {{##gray|[jpowers@uiu-raven ~]# ## whisper show scpf-tornado:/scp/001}}
+> {{##gray|Connecting to scpf-tornado...##}}
+> {{##gray|Connected.##}}
+> {{##gray|Error: (1063) Field berrymanlang_answer expected, not provided.##}}
+> {{##gray|See "man 3 killme" for more information on memetic verification protocols.##}}
+> {{##gray|[1] + 616003 done##}}
+> 
+> {{##gray|[jpowers@uiu-raven ~]# ## whisper exit}}
+> {{##gray|Terminating connection...##}}
+> {{##gray|You have been logged out from __[[[uiu-file-2017-102|WHISPER]]]__.##}}
