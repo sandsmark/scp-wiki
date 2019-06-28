@@ -1,0 +1,718 @@
+title:SCP-4475
+[[include :scp-wiki:component:info-ayers
+|lang=en
+|page=scp-4475
+|authorPage= 
+|comments=**SCP-4475:** So Long, and Thanks for All the Milk 
+**Authors:** [[*user KindlyTurtleClem]] and [[*user FloppyPhoenix]] 
+ 
+This article is **FIRE TURTLE (Clem and Floppy)**'s 2nd article for the **2019 Collaboration Contest**! The two primary Groups of Interest featured are **Fifthism** and **Church of the Second Hytoth**. 
+ 
+[[div style="text-align: center;"]] 
+**More by these authors:** 
+**[*http://www.scp-wiki.net/personal-file-anon KindlyTurtleClem]** 
+**[*http://www.scp-wiki.net/floppyphoenix FloppyPhoenix]** 
+[[/div]] 
+ 
+**Special Thanks** 
+* [[*user Ayers]], for providing a magnificent quote of his. 
+* [[*user Uncle Nicolini]], [[*user Westrin]], [[*user plaguebearer]], and [[*user Nagiros]], for general critique. 
+* [[*user DrChandra]] and [[*user TechSorcerer2747]], for beta reading. 
+* [[*user ValidClay]], who provided some zany inspiration. 
+* [[*user NatVoltaic]], for greenlighting this article's inclusion in the Ad Astra canon. 
+* [[*user The Great Hippo]], for finalizing crit and helping condense logs and sentences. 
+* **Smash** from the Dr. Cimmerian Discord server, who shared the following insight: 
+ 
+> **Smash:** Ok Floppy. My only concern is that your space cow god cant fart its way out of orbit if it were to ever hit earth 
+> **Smash:** I just wrote that sentence 
+> **Smash:** Look, I just want the ol' girl to be able to get back out to the green pastures of space if she ever finds herself in our neck of the woods 
+ 
+**Image Sources** 
+* **1: [https://www.flickr.com/photos/133259498@N05/32546074037 Trapezium Cluster] – CC0 1.0** 
+* **2a: [https://commons.wikimedia.org/wiki/File:Vadathika_and_Vapiyaka_caves_BL.jpg Bone structure] – Public domain** 
+* **2b: [https://commons.wikimedia.org/wiki/File:Bilan_de_sens_-_Bilans_de_sens.jpg Milky overlay] – CC BY-SA 4.0** 
+* **3: [https://commons.wikimedia.org/wiki/File:Ellora_Cave_16_si0308.jpg Temple] – CC BY-SA 4.0** 
+* **4: [https://commons.wikimedia.org/wiki/File:Mehrgarh_ruins.jpg Subterranean chamber ruins] – CC BY-SA 3.0** 
+* **5: [https://www.flickr.com/photos/13939889@N07/13949831152 "Horror Meat" (Content Warning: GROSS)] – CC BY 2.0** 
+* **6: [https://picryl.com/media/operation-tigergrass-cst-100-starliner-space-suit-ingress-and-eg-7d129a Space suit] – CC0 1.0** 
+* **7: [https://commons.wikimedia.org/wiki/File:Heic1323a_-1243686232.jpg Supergiant] – Public domain**]]
+[[include :scp-wiki:component:ad-astra-theme]]
+
+[[module CSS]]
+/* INFO BOX */
+sup{
+  vertical-align: top;
+  position: relative;
+  top: -0.5em;
+}
+body{
+  --cutColour: #ffb961;
+  --barColour: #5C1D24;
+}
+.translation_block{
+  display: none;
+}
+.info-container .collapsible-block-folded a{
+  color: #FFF;
+}
+.info-container .collapsible-block-unfolded-link a{
+  color: #FFF;
+}
+.info-container .collapsible-block-link,
+.info-container:hover .collapsible-block-link{
+  line-height: 1.6em;
+}
+.collapsible-block-link{
+  font-weight: bold;
+}
+#u-author_block{ display:none; }
+
+/* FONTS */
+ @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+/* DIV BLOCKS */
+ .log{
+     padding: 7px;
+     margin: 3px;
+     background-color: #192845;
+}
+ .log-margin{
+     padding: 7px;
+     margin: 3px;
+     margin-bottom: 1em;
+     background-color: #192845;
+}
+ .log-bg{
+     background-color: #ffb961;
+}
+ .h-span{
+     color: #ffb961;
+     font-weight: bold;
+}
+ hr{
+     background-color: #ccc;
+}
+ .lite-hr hr{
+     width: 45%;
+     margin: auto;
+     background-color: #ccc;
+     border: none;
+     height: 2px;
+}
+ .lite-wide-hr hr{
+     width: 100%;
+     margin: auto;
+     background-color: #ccc;
+     border: none;
+     height: 2px;
+}
+ blockquote{
+     font-weight: bold;
+}
+
+/* SPECIAL CODE */
+ .enlarge{
+     transition: .25s;
+}
+ .enlarge:hover{
+     transform: scale(1.6);
+     transition: .25s;
+     transition-delay: .4s;
+     z-index: 1000;
+}
+[[/module]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+@@ @@
+@@ @@
+@@ @@
+[[table style="border: none; width: 100%;"]]
+[[row]]
+[[cell]]
+[[size 125%]][[span class="h-span"]]Item Number:[[/span]] SCP-4475[[/size]]
+[[/cell]]
+[[cell style="text-align: right;"]]
+[[size 125%]][[span class="h-span"]]Level 4/4475[[/span]][[/size]]
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell]]
+[[size 125%]][[span class="h-span"]]Object Class:[[/span]] Keter[[/size]]
+[[/cell]]
+[[cell style="text-align: right;"]]
+[[size 125%]][[span class="h-span"]]PROJECT GALAXIAS[[/span]][[/size]]
+[[/cell]]
+[[/row]]
+[[/table]]
+
+[[a href="*http://scp-int.wikidot.com/niveaux-de-menace-des-objets-scp" style="font-size: 18px; color: #ccc; text-shadow: 1px 3px 1px rgba(0,0,0,0.3); text-decoration: none;"]]
+[[span_ style="display: inline-block; width: 100%; background-color: #50506d; text-align: center; border: 1px none #000; margin: 1px; padding-top: 8px; padding-bottom: 8px;"]]
+**Threat Level:** Undetermined
+[[/span]]
+[[/a]]
+
+[[div class="scp-image-block block-center" style="width: 100%;"]]
+[[image http://topia.wikidot.com/local--files/fifth-hytooth-theme-test/4475-A.jpg style="width: 100%;" link=#]]
+[[div class="scp-image-caption" style="width: 100%;"]]
+[[span style="font-size: 1.2em;"]]The Trapezium Cluster: SCP-4475's presumed location is in orbit between θ^^1^^ Orionis A, B, and E.[[/span]]
+[[/div]]
+[[/div]]
+----
+[[span class="h-span"]]Special Containment Procedures:[[/span]] Personnel studying SCP-4475 and SCP-4475-1 have been re-assigned to the newly-formed Project GALAXIAS (a cross-disciplinary initiative devised to better understand milk-based preternatural phenomena).
+
+All Project GALAXIAS personnel -- including occult dairy practitioners -- are to consume 1.5 L of milk per day to maintain natural resistance against milk-based anomalies. As such, the project is to screen a strict lactose tolerance for all prospective research personnel.
+
+Information involving human apotheosis via the manipulation of milk-based archetypes should be researched and, when possible, suppressed.
+
+[[span class="h-span"]]Description:[[/span]] **SCP-4475** is a Class-III[[footnote]]The Clef-Moose Ontokinetics Classification System, which ranks ontokinetic capabilities into a hierarchy of intensity. Observed //Class-III// ontokinetic traits include:
+* Localized manipulation of physical and thermodynamic laws;
+* Localized reconfiguration of matter; and,
+* Localized distortion or nullification of cause and effect.[[/footnote]] deific bovine entity with a body length of 4 km, presently located in extrasolar space.
+
+SCP-4475 possesses 25 pairs of ungulate forelimbs -- ranging from 1.5–4 km in length -- and a single large udder of variable diameter[[footnote]]SCP-4475's interior and exterior have displayed apparent inconsistent space-time and Non-Euclidean Anatomy (or NEA), which is most present in its udder.[[/footnote]] with 49 lengthy teats. Mapping initiatives have detected a large internal bladder and between 5 and 7 powerful sphincters,[[footnote]]Due to distortion caused by propulsion reactions, the exact number has not been determined.[[/footnote]] located at the rear of its body. Within the bladder, a complex metabolic process produces biochemical propellant. This propellant is expelled through one of its five sphincters. Based on this anatomical configuration, Foundation-employed aerospace engineers estimate that velocities upwards of 4,000 m/s (14,000 km/h) can be achieved in the vacuum of space.
+
+Collected Thaumic Gateway[[footnote]]Thaumic Gateway: a para-technological machine that uses a set of complex thaumaturgic rituals to generate and sustain a stable portal (known in the paranormal community as a "Way"). The Thaumic Gateway facilitates an array of instant communication methods through each created Way, including short-wave radio band and 5G Wi-Fi fields. See Dr. Tilda David Moose (2016). [[[another-goddamn-magic-system|Magic Orientation (or, Another Goddamn Magic System)]]]. //SCP Foundation Journal of Unified Thaumatology//, 10–33.[[/footnote]]  and telemetry data have determined that SCP-4475 is presently located at a distance of 1,344 light-years (± 20 ly) from Earth. SCP-4475 is in orbit around the Trapezium Cluster -- a system of five main stars orbiting an unregistered supermassive gravitational anomaly[[footnote]]Presumed to be a black hole >100 solar masses in size.[[/footnote]] -- and is believed to have originated in the nearby Orion Nebula. 
+
+Despite the high level of para-technology required to directly observe SCP-4475, the Foundation and Global Occult Coalition each became aware of its existence independently. Starting in 2009, at least 5,900 different persons on Earth have undergone physical teleportation into the interior of SCP-4475's mammary glands.
+
+Though random in nature, both firsthand eyewitness accounts and audiovisual recordings from dairy ranchers corroborate the existence of a complex ritual (designated **SCP-4475-1**) capable of triggering the phenomena. The following process -- as compiled by abducted dairy ranchers for scientific study -- is a baseline for teleportation via SCP-4475-1:
+# Select and secure a cow.
+# Vocalize praise for its existence.
+# Approach the selected cow at a 55° angle in the direction of its posterior.
+# Lubricate its two rear quarters, preferably with udder cream.
+# Pull on each teat five times.
+
+Following the ritual, immediate disappearance and re-emergence inside SCP-4475's udder has occurred in all cases. Additionally, this ritual is akin to common anomalous dairy evocation practices, suggesting a link between the two phenomena.
+
+@@ @@
+[[div class="lite-hr"]]
+----
+[[/div]]
+[[=]]
+++ Addendum 4475.1
++++ [[span class="h-span"]]OBSERVED SCP-4475-1 EVENTS[[/span]]
+[[/=]]
+[[div class="lite-hr"]]
+----
+[[/div]]
+@@ @@
+
+A log of notable SCP-4475-1 occurrences is as follows.
+
+[[html class="mobile"]]
+<head>
+<style>
+ #fancy{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: 'Ubuntu', sans-serif;
+     border-collapse: collapse;
+     width: 100%;
+     font-size: 0.9em;
+}
+ #fancy td, #customers th{
+     border: 1px solid #ccc;
+     padding: 8px;
+     color: #ccc;
+}
+ #fancy tr:nth-child(even){
+     background-color: #122732;
+}
+ #fancy tr:hover{
+     background-color: #1B304D;
+}
+ #fancy th{
+     padding: 12px 0 12px 12px;
+     text-align: left;
+     background-color: #1B304D;
+     color: #ffb961;
+}
+
+</style>
+</head>
+<body>
+
+<table id="fancy">
+  <tr>
+    <th>NAME</th>
+    <th>LOCATION</th>
+    <th>DESCRIPTION OF RETURN</th>
+  </tr>
+  <tr>
+    <td>Dennis Miller</td>
+    <td>Wisconsin, USA</td>
+    <td>Several weeks after his disappearance, the subject reappeared in his pickup truck. In a trance, the subject siphoned gasoline from the vehicle, consuming approximately 4 L before discovery. Medical personnel found a 44 kg malignant tumor growth on the back of his cranium filled with curdled milk, skin, and grey matter. Subject expired from a fatal brain aneurysm.</td>
+  </tr>
+  <tr>
+    <td>Mary McGill</td>
+    <td>Ontario, Canada</td>
+    <td>Filed as an unsolved missing person's case, the subject reappeared several years after her disappearance and 8 km away from her farm, near Highway 400. A Ryder truck driver discovered and reported the subject's mutilated cadaver, speculating that it was necrotic deer remains. An autopsy found a thick layer of blue cheeses in the stomach and esophagus. Cause of death was terminal dehydration.</td>
+  </tr>
+  <tr>
+    <td>Dado Kovačić</td>
+    <td>Lapland, Finland</td>
+    <td><p>After two days, the subject reappeared in the Tornio river. After traveling downstream approximately 600 m, field agents acquired the subject at a private fishery. The subject had undergone extensive physical mutation, possessing three sets of ungulate limbs and the external anatomy and size of a mature bull (<i>Bos taurus</i>).</p>
+
+    <p>Upon recovery, the subject repeatedly expressed his desire to return and became enraged when detained, at which point he attacked and pinned an agent to a wall, causing extensive spinal and rib-cage damage. Subject was terminated.</p></td>
+  </tr>
+  <tr>
+    <td>Ramaeshwara Punja</td>
+    <td>Meghalaya, India</td>
+    <td><p>Several months after undergoing the ritual in Foundation custody, the subject reappeared inside a barn at a Foundation-owned farm property. Field agents acquired the subject and noted they were severely dehydrated and delirious, having drunk raw milk from several cows and goats. Subject described their time inside SCP-X as "a blend of so many different cheese scents."</p>
+
+    <p>After recovering, the subject later manifested a "lactokinetic" ability: the psychic capability to manipulate dairy products. Due to their compliance, Project GALAXIAS has granted them Class-E personnel status.</p></td>
+  </tr>
+  
+</table>
+
+</body>
+</html>
+[[/html]]
+
+In all observed SCP-4475-1 cases, subjects lose their memory of the scenario within 10 hours of returning, suggesting a latent amnestic property of SCP-4475 milk secretions.
+
+Most surviving persons having undergone SCP-4475-1[[footnote]]Most of whom have been successfully contained.[[/footnote]] are later diagnosed with degenerative neurological disorders. Identified diagnoses include brain cancer, dementia, amyotrophic lateral sclerosis (or ALS), and brain death after the spinal fluid transforms into milk. All diagnosed persons have experienced loss of life anywhere from three weeks to ten years after diagnosis.
+
+@@ @@
+[[div class="lite-hr"]]
+----
+[[/div]]
+[[=]]
+++ Addendum 4475.2
++++ [[span class="h-span"]]INITIAL RECOVERY LOG 4475.2[[/span]]
+[[/=]]
+[[div class="lite-hr"]]
+----
+[[/div]]
+@@ @@
+
+[[div class="log-bg"]]
+[[div class="log"]]
+[[=]]
+[[span class="h-span"]]▼ RAISA:/files/SCP-4475/video_log.md ▼[[/span]]
+----
+++++ [[span class="h-span"]]RECOVERED MEDIA[[/span]]
+[[/=]]
+----
+[[span class="h-span"]]DATE:[[/span]] December 21, 2009
+
+[[span class="h-span"]]RECOVERY NOTE:[[/span]] The following is the earliest known recorded instance of SCP-4475-1 teleportation. Timothy Wickman (**PoI-4475-01**) recorded the following on his camcorder and was later discovered incoherent in the middle of a Wisconsin, USA intersection. Witnesses described him appearing in the middle of the road and regurgitating a large pink-red biological mass.
+
+The only information the tactical response team gleaned from Wickman was his strong desire to "return to the womb."
+
+[[span class="h-span"]]ARCHIVIST'S NOTE:[[/span]] All building architecture inside of SCP-4475 appears to have been hewn from bone and cartilaginous tissue.
+----
+= [[span class="h-span"]]<Begin Log>[[/span]]
+
+**[**//The recording displays a large white threshold resembling SCP-4475's pelvic bone structure. The audio contains heavy panting -- presumably Timothy's. The view cuts to an irregular bone structure and zooms in. Audiovisual distortion commences.//**]**
+
+[[=image http://topia.wikidot.com/local--files/fifth-hytooth-theme-test/4475-B.jpg class="enlarge" style="border: solid 3px #ffb961; margin: .25em; width: 90%;"]]
+
+**TIMOTHY:** Oh Lord. 
+
+**[**//Timothy directs the camera at his face. He taps the lens with his forefinger, smudging it, before wiping it with his shirt.//**]**
+
+**TIMOTHY:** Hey -- uh, is uh, anyone there? Hello?
+
+**[**//Timothy flips the camera back around and taps on the display screen, shaking the camera. The focused and unfocused view shows off-white floor panels with hexagonal edges.//**]**
+
+**TIMOTHY:** Hey, this is Tim, and uh, I need help. My damn GPS isn't working.
+
+**TIMOTHY: [**//Muttering.//**]** That's one hell of a way to show the world your dairy farming, Tim. Stay calm, stay frosty. Remember, Tim, bears are more dangerous than people. Stay put, Tim, search parties are -- 
+
+**TIMOTHY: [**//Sighs.//**]** Search party's on the way. That's the third rule of scout-safety. Here, the forest, the ranch, and everywhere.
+
+**TIMOTHY:** Where //is// everyone? **[**//Yelling.//**]** Hello! Y'know, I'd do anything for a water bottle!
+
+= [[span class="h-span"]]<Log cuts unexpectedly>[[/span]]
+@@ @@
+----
+@@ @@
+= [[span class="h-span"]]<Log continues -- 15 minutes forward>[[/span]]
+
+[[=image http://topia.wikidot.com/local--files/fifth-hytooth-theme-test/4475-C.jpg class="enlarge" style="border: solid 3px #ffb961; margin: .25em; width: 90%;"]]
+
+**[**//The camera rests on a flat surface. There is a low rhythmic humming and distant trickle. Scraping sounds approach the camera.//**]** 
+
+**[**//Slurping.//**]**
+
+**TIMOTHY:** Fuck. **[**//Retches.//**]** Why am I so thirsty?
+
+**[**//Timothy picks the camera up and pans down.//**]**
+
+**TIMOTHY:** I'm all wet!
+
+**[**//Soft mulching accompanies Timothy's step. The view moves through a large entrance and into a tall white edifice with intricate designs and carven surfaces.//**]** 
+
+**[**//Timothy approaches a threshold, wider than the last.//**]** 
+
+**TIMOTHY:** //Another// entrance? What is this place? 
+
+**[**//Timothy enters into a small white courtyard with similar intricate carvings. Various bovine head and udder statues line the interior walls. Timothy stops in front of a mural adorning the far courtyard wall. Text inscriptions -- identified as Indus script in large font and Sanskrit in small font -- are paired with different pictures.//**]**
+
+**[**//The murals depict 25 entities in a five-by-five formation. Each entity is a nude humanoid with iridescent full-body tattoos and malformed serpentine necks. The view blurs, then resolves, now focusing on a featureless placid green face with five intersecting lines on the forehead.//**]**
+
+**TIMOTHY:** What.
+
+**[**//Timothy moves to the next wall to the right and stops again. This wall depicts thick black smoke and Thaumaturgical Runes.[[footnote]]Identified rune designs are like those used in the summoning of eschatological entities.[[/footnote]] The wall depicts the same group; this time, they migrate into a dark tunnel. Each entity holds baskets on their heads, while smaller serpentine-headed children hug their hips. A single long umbilical cord wraps around each humanoid's shoulder and the body, terminating inside the cave.//**]**
+
+**[**//Distant sloshing. Timothy appears not to notice.//**]**
+
+**[**//Timothy keeps moving, this time taking little care to review the next inscriptions. The camera continues to depict the same group in a sequential line of images, but with increasing body mutations and rendering distortions. A bony placard reads "only skins and never bone" in Indus script and Sanskrit.//**]**
+
+**[**//Rushing liquid dominates the audio. Timothy bolts down a dark tunnel.//**]**
+
+**TIMOTHY:** Who the fuck is there? I'm armed, stay back.
+
+**[**//Sloshing rises over several sounds.//**]**
+
+**UNKNOWN: [**//Gurgling.//**]** 
+
+= [[span class="h-span"]]<Log cuts unexpectedly>[[/span]]
+@@ @@
+----
+@@ @@
+= [[span class="h-span"]]<Log continues -- 14 minutes forward>[[/span]]
+
+[[=image http://topia.wikidot.com/local--files/fifth-hytooth-theme-test/4475-D.jpg class="enlarge" style="border: solid 3px #ffb961; margin: .25em; width: 90%;"]]
+
+**[**//Heavy static.//**]**
+
+**[**//Footage regains visibility on a cliffside platform; ~30 m wide (estimated) subterranean chambers are below.//**]**
+
+**[**//From a distance, the view zooms into the nearest chamber. Depictions inside the chamber resolve into focus.//**]**
+
+**[**//Inked murals depict humanoid entities in silhouette. Each entity wears golden armor and ornate bronze beryllium.[[footnote]]Forensic Esoteric Re-Imaging Validation (or FERV) detected various preternatural elements on each wall: all meta-material was sculpted into the wall by an unknown source with high precision and artisanship.[[/footnote]] The camera pans up toward the top of the area, capturing a fresco on the ceiling, which depicts a large feminine bovine figure with statuesque proportions in the center;[[footnote]]Believed to be the Egyptian Goddess Hathor.[[/footnote]] sharpened bone growths extend from her abdominal region. Below her abdominal, a bloated udder and six teats hang.//**]** 
+
+= [[span class="h-span"]]<Log cuts unexpectedly>[[/span]]
+@@ @@
+----
+@@ @@
+
+= [[span class="h-span"]]<Log continues --[[/span]] [[span style="color: #ff4d5b; font-weight: bold;"]]??/ERR[[/span]][[span class="h-span"]]>[[/span]]
+
+**NOTE:** Media is incapable of stating time, date, or recording duration. An unknown period of time has passed.
+
+[[=image http://topia.wikidot.com/local--files/fifth-hytooth-theme-test/4475-E.jpg class="enlarge" style="border: solid 3px #ffb961; margin: .25em; width: 90%;"]]
+
+**[**//Timothy walks through a tunnel of flesh.//**]**
+
+**TIMOTHY:** She looks like Bessie, doesn't she? My cow I mean, back at the ranch. 
+
+**UNKNOWN: [**//Gurgling sounds.//**]** 
+
+**TIMOTHY:** She's a good girl! I know she has, you know, a bit of a stereotypical name for a cow and all. But believe me, she's a sweetheart. My old man got her for me when I turned 16 and I've been tending to her for a couple of years now.
+
+**UNKNOWN: [**//Gurgling.//**]** 
+
+**TIMOTHY:** Say, fella, you got any milk?
+
+**UNKNOWN: [**//Gurgling.//**]** 
+
+**TIMOTHY:** Or water -- I need some fuckin' water. I've been drinking the wall teats, but they're... **[**//He trails off.//**]**
+
+**[**//Silence.//**]**
+
+**UNKNOWN: [**//Gurgling.//**]** 
+
+**TIMOTHY:** You don't talk much, do you? Huh? //Huh//? 
+
+**[**//Camera pans to left. Visual distortion masks figure.//**]**
+
+**TIMOTHY:** The fuck kind of look is on your face, anyway?
+
+**[**//A white vestigial appendage rises slowly from the silhouette, pointing. The camera pans up. Humanoid entities encased in foreign red flesh hang from the ceiling. A single large umbilical cord connects them at the neck.//**]**
+
+**UNKNOWN: [**//Gurgling.//**]** 
+
+**TIMOTHY:** I -- I don't understand. Who are they?
+
+**UNKNOWN: [**//Gurgling.//**]** 
+
+**TIMOTHY:** I mean, you can just -- you can just tell me, I don't --
+
+**UNKNOWN: [**//Gurgling.//**]** 
+
+**TIMOTHY:** I don't -- I don't get it. Just tell me.
+
+**[**//Timothy sobs. The camera drops to the floor and rests for several minutes.//**]**
+
+**TIMOTHY: [**//Sniffles.//**]**
+
+**[**//Timothy picks the camera back up. The silhouetted figure is visible at the view's right edge.//**]**
+
+**UNKNOWN: [**//Gurgling and dripping.//**]** 
+
+**TIMOTHY:** Wait, what?
+
+**UNKNOWN: [**//Loud gurgling.//**]** 
+
+**TIMOTHY:** I... I can understand you now. So -- hold on, what do you mean? Two //groups?// Two groups of what?
+
+**UNKNOWN: [**//Gurgling.//**]** 
+
+**TIMOTHY:** So what are they, then? Religious groups, huh? And they're Christians?
+
+**[**//Silence.//**]**
+
+**TIMOTHY:** So a church and a church, but there's no relation. Like Baptists and Mormons. No, uh, wait.
+
+**UNKNOWN: [**//Crackling and popping noises.//**]** 
+
+**[**//The camera jerks downward. White, fleshy protrusions foam and rise upward; bubbles and white smoke emit.//**]**
+
+**TIMOTHY:** Same stars, same eyes. The five and the seven.
+
+**UNKNOWN: [**//Sloshing sounds.//**]**
+
+**TIMOTHY:** It all makes sense.
+
+**[**//Many layers of adipose fat squeeze out of one another. Grease splatters, and oil slicks onto the camera lens. The camera falls to the ground, pointing up at Timothy. He makes no attempt to retrieve it.//**]**
+
+**TIMOTHY:** I'm thirsty. Tell me more.
+
+**UNKNOWN: [**//In Timothy's voice; distorted.//**]** I must go to the beginning. 
+
+**[**//Dark purple mounds of flesh, resembling colorectal polyps, slowly consume Timothy's body. The ceiling swirls toward a single point and widens into an agape sphincter. It prolapses and slowly ingests Timothy, who exhibits no distress.//**]**
+
+**TIMOTHY:** What's that... //Thing// above the center of the ruins?
+
+**UNKNOWN: [**//In Timothy's voice; distorted.//**]** As below, so above. This fleshy domain awaits endless space.
+
+**TIMOTHY:** And in the dome -- what are those star maps?
+
+**UNKNOWN: [**//In Timothy's voice; distorted.//**]** The location of Father Orion. 
+
+**TIMOTHY:** A-at the beginning of our time, Mother Bovine q-q-quenched her children's thirst.
+
+**UNKNOWN: [**//In Timothy's voice; distorted.//**]** Beware the mother that gives, beware the children that take. Hathor gave and gave until her heat decayed. **[**//The voice falters and cracks.//**]** Great starless darkness left in the womb.
+
+**[**//Timothy screams and the ceiling closes again, leaving no trace of the sphincter or his body.//**]**
+
+**UNKNOWN: [**//In a distorted timbre.//**]** The Fifth. Our Hytoth. The Fifth of Hytoth. The Fifth. The --
+
+**NOTE:** Entity continues to mutter unintelligibly; its speech degrades into a consonant-heavy language. Thirty minutes later, the recording ceases.
+
+= [[span class="h-span"]]<End Log>[[/span]]
+----
+[[/div]]
+[[/div]]
+
+@@ @@
+[[div class="lite-hr"]]
+----
+[[/div]]
+[[=]]
+++ Addendum 4475.3
++++ [[span class="h-span"]]SCP-4475 UPDATES[[/span]]
+[[/=]]
+[[div class="lite-hr"]]
+----
+[[/div]]
+@@ @@
+
+[[span class="h-span"]]UPDATE -- MAY 12, 2033:[[/span]] Osteoporosis rates have increased by 10%. Citizens of India have reported astronomical objects being less visible to the naked eye.
+
+Recent SCP-4475-1 test results have trended toward increasing abnormalities; as such, persons returning from SCP-4475 more frequently reported experiencing the following:
+* Traumatic spiritual experiences;
+* Affliction with memory retention abnormalities, ranging anywhere between permanent amnestic fugue states and hypermnesia;
+* Recall of memories foreign to themselves; or,
+* Recall of memories foreign to humanity.
+
+Due to potential negative repercussions resulting from the execution of SCP-4475-1 //en masse//, Project GALAXIAS has tentatively ceased all experimentation. 
+@@ @@
+@@ @@
+[[span class="h-span"]]UPDATE -- NOVEMBER 19, 2034:[[/span]] At 0137 UTC, the Brennan Thaumometric Satellite detected an unknown electromagnetic pulse (or EMP) with high levels of tachyonic particles and associated Akiva radiation. After triangulating the pulse, astronomers determined that it had originated from the Trapezium Cluster. No known cause has been identified.
+@@ @@
+@@ @@
+[[span class="h-span"]]UPDATE -- AUGUST 14, 2035:[[/span]] Despite ceasing all SCP-4475-1 experimentation two years' prior, significant numbers of dairy ranchers on Earth continue to teleport into SCP-4475. The triggers are increasingly commonplace milking procedures, which lead to escalating milk-based anomalies. Recovered ranchers show significant transfiguration to their skeletal structure.
+
+Efforts to construct autonomous surveillance of SCP-4475's interior and exterior are underway. Discussion on its neutralization is pending.
+
+> = **A NOTE FROM THE DIRECTOR OF PROJECT GALAXIAS**
+> [[div class="lite-wide-hr"]]
+> ----
+> [[/div]]
+> Just as the threat of the "[[[land-of-honey|Land of Milk and Honey]]]" hung over the UIU's head in the 1920s, preternatural dairy and dairy-adjacent threats continue to plague us today.
+> 
+> After [[[scp-3739|Operation: LACTOSE INTOLERANCE]]] and the ensuing battle we waged -- and lost -- the O5 promoted me as the Director of Project GALAXIAS. From here, I have led us to archive, study, dissect, and perhaps, finally grasp apotheosis. I have seen beyond the stage on which we play our little lives. We are naught but actors -- puppets on strings, dancing to the tune of a trillion capsules of milk, suckled by decaying, necrotic gods of sadism, bound to chairs of osteoporotic bone. But no longer.
+> 
+> For the good of humanity, we stand against the Land of Milk and Honey -- in whatever permutation it exists.
+> [[div class="lite-wide-hr"]]
+> ----
+> [[/div]]
+> 
+> [[>]]
+> -- Dr. Cassie Báthory, Director of Project GALAXIAS
+> [[/>]]
+@@ @@
+@@ @@
+[[span class="h-span"]]UPDATE -- OCTOBER 12, 2035:[[/span]] Project GALAXIAS has initiated Operation: CRIMSON COWBELL.
+@@ @@
+@@ @@
+[[div style="text-align: center;"]]
+[[div style="background-color: #5C1D24;"]]
++ [[span class="h-span"]]{{Operation: CRIMSON COWBELL}}[[/span]]
+[[/div]]
+[[/div]]
+
+[[div style="background-color: #ff4d5b;"]]
+[[div class="log-margin"]]
+= [[span class="h-span"]]▼ RAISA:/files/SCP-4475/TS/crimson_cowbell.md ▼[[/span]]
+----
+1. [[span class="h-span" style="text-decoration: underline;"]]DEPLOYMENT DATE[[/span]] October 12, 2035
+
+2. [[span class="h-span" style="text-decoration: underline;"]]DEPLOYMENT LOCATION[[/span]] Shakti Chetu Pasteurization and Dairy farm, outskirts of Kanoodar, state of Gujarat, India (123 km NE of Site-36).
+
+3. [[span class="h-span" style="text-decoration: underline;"]]PERSONNEL[[/span]]
+# [[span class="h-span"]]__ALPHA__ Specialist Bhupinder Gauri[[/span]], a Tantrika[[footnote]]An esoteric school of study involving a wide array of traditional Hindu spiritual rituals, which focus on different manipulations of potential energy.[[/footnote]] practitioner and former MTF-Zeta-9 ("Mole Rats") attachment.
+# [[span class="h-span"]]__BETA__ Specialist Cindy Singh[[/span]], a trained orthopedic surgeon and medic for MTF-Xi-55 ("Spleen McQueen").
+# [[span class="h-span"]]__GAMMA__ Researcher Amanda Watson[[/span]], a general esotericist on contract with MTF-Gamma-14 ("Red Rustlers").
+
+Each selected personnel possesses Level 4 knowledge of SCP-4475-1's effects -- including its danger to human neurology and well-being. Due to Alpha's specialized field and occult knowledge, as well as his high memetic retention and cognitohazardous resistance, he was chosen to lead this mission.
+
+[[include :scp-sandbox-3:image-zoom name=http://topia.wikidot.com/local--files/fifth-hytooth-theme-test/4475-F.jpg |caption=Spc. Cindy Singh outfitting herself in a VISTA-Type suit, sans helmet, gloves, and pressure seal (hover to enlarge). |width=300px|align=right]]
+
+4. [[span class="h-span" style="text-decoration: underline;"]]EQUIPMENT[[/span]] CRIMSON COWBELL personnel charged with SCP-4475 exploration have been granted the following equipment and materials:
+* Three pressurized VISTA-Type Extravehicular Mobility Unit support suits, each outfitted with a SCRAMBLE headset[[footnote]]Which provides audiovisual recording and memetihazard filtering.[[/footnote]] and 30 hours of oxygen.
+* A single Thaumic Gateway device powered via portable generator -- to allow instantaneous communication to and from the Operations Command. Due to its large mass and physical dimensions, the use of a Marlowe Anti-Gravitational Repulsion Sled is essential in allowing simple transportation of the device.
+* The microcomputer processor, hull, and power plant for five autonomous telemetry drones will be deployed alongside the CRIMSON COWBELL team.
+
+Between September 22 and October 10, Project GALAXIAS manned 28 excursions into SCP-4475 with the sole purpose of plotting a route into the lower bound of one of its 200 m long teats. Each associated rancher readily pledged under a Foundation-authorized geas[[footnote]]A memetic command imposed on any willing person. Modern geas technology allows persons to set up and follow specific subconscious binding contracts to facilitate easy and direct co-operation between other persons or established groups.[[/footnote]] to fulfill their duty. This allowed them to better map a navigable route through the teat before the onset of memetihazardous effects and/or inexplicable SCP-4475-1 teleportation back.
+
+5. [[span class="h-span" style="text-decoration: underline;"]]MISSION DESCRIPTION[[/span]] Undergo a direct and extensive study of the interior and exterior of SCP-4475 and its surroundings for future physical containment. This is to facilitate sister operation FOR WHOM THE COWBELL TOLLS, designed to enact said containment with extreme prejudice under threat of neutralization.
+----
+[[/div]]
+[[/div]]
+
+[[div class="log-bg"]]
+[[div class="log"]]
+----
+[[=]]
++++ VIDEO LOG
+++++ 6. [[span class="h-span" style="text-decoration: underline;"]]EXECUTION[[/span]]
+[[/=]]
+----
+At around 0507 hours (UTC+5:30), the team completed SCP-4475-1 and disappeared.
+
+At 0520 hours, COMMAND confirmed visualization of SCP-4475's interior through all three feeds. 
+
+At 0533 hours, the team met at a designated rendezvous point. GAMMA parked the Repulsion sled in an open chamber and programmed the Thaumic Gateway to open periodically and transmit the team's collected data. The team activated and released the telemetry drones, which dispersed. One drone flew down a path leading to the chosen teat, and the team followed far behind.
+
+The team traveled down a long subterranean biological tunnel, next to a temple structure like that seen in [[span class="h-span"]]Recovery Log 4475.2[[/span]]. 
+
+At 0704 hours, ALPHA reported hearing distant bovine vocalization and ordered the team to a halt. After perceiving no threat, they reconvened -- with ALPHA at the lead -- and traveled unabated for 3 hours.
+
+At 1021 hours, ALPHA reached the teat's upper span, discovering the lifeless body of a ranch-hand; their ID tags identified them as one Darien Meyer. COMMAND claimed that Meyer exited SCP-4475 one month ago and was presently employed by the Foundation with Class-E personnel classification. ALPHA continued.
+
+At 1025 hours, BETA discovered an enamel statue of a feminine humanoid entity with bovine characteristics. BETA noticed warped holes resembling those found in osteoporosis patients. She scraped off a sample of pink residue, revealing porous bone marrow beneath.
+
+While taking the sample, the tunnel's muscle-lined walls contracted and constricted. BETA hastened her sample collection. At once, the flesh ruptured, from which acidic stomach fluid, pus, blood, and milk flooded the chamber. In a panic, the team jumped into a nearby crevasse, falling an estimated 20 meters onto a soft-padded biological chamber floor. 
+
+After a brief respite, ALPHA noticed GAMMA's VISTA-Type suit slumped over and still. Upon closer inspection, the helmets' glass view-visor appeared shattered, and GAMMA's body was not found within. ALPHA marked her as Missing In Action, but BETA's biometric radar indicated that GAMMA now existed in two separate locations -- 5 m behind and 6 m beneath them, simultaneously.
+
+COMMAND confirmed the signals matched a 99.6% biometric reading of GAMMA and reported the irregularity to the Director of Project GALAXIAS. Awaiting a response, COMMAND ordered the team to remain in place. 
+
+Around 1031 hours, the headset of each "GAMMA" instance activated, vocalizing: "DISAVOWED DEATH FORBIDDEN."
+
+ALPHA noticed a star-shaped crevice glowing neon pink, illuminating the crevasse beneath. Against COMMAND's order and in an attempt to aid the "correct" GAMMA, ALPHA escaped into the hole. In an audio communication with BETA, he described feeling symptoms of dizziness and dehydration and ordered her to follow him. She denied, remaining with GAMMA's vacant suit, where she stayed for the rest of the operation.
+
+At 1034 hours, ALPHA's visual relay depicted a struggle as he fell quickly through a translucent milk flow.
+
+At around 1035 hours, the Director of Project GALAXIAS responded, ordering COMMAND to hasten the operation. An argument erupted in the COMMAND control room over whether they should halt the operation prematurely.
+
+Soon after, large amounts of milk flooded into the control room from an unknown source. ALPHA's vitals were detected at the back of the operations theater, contradicting his presence within SCP-4475. COMMAND dispatched an armed security team to investigate. 
+
+Other personnel -- who were attempting to escape -- discovered that all egress doors had been pasted shut with a curdled milk substance. COMMAND alerted local emergency Mobile Task Force at once.
+
+At 1038 hours, ALPHA ejected through the teat cistern into the vacuum of space at 14 m/s. Despite his velocity, ALPHA jolted to a stop, 1.6 km from SCP-4475. His footage depicted the two distant stars Orionis A and B in his periphery, as well as a hereto accounted for stellar abnormality ahead. The abnormality -- presumed to be the aforementioned supermassive gravitational anomaly at the center of the cluster -- emitted jets of EM radiation in each cardinal direction.
+
+[[include :scp-sandbox-3:image-zoom name=http://topia.wikidot.com/local--files/fifth-hytooth-theme-test/4475-G.jpg |caption=1038 hours -- A corrupted image captured by Spc. Bhupinder Gauri's body camera (hover to enlarge). |width=300px|align=right]]
+
+ALPHA made note of a large number of deceased human and proto-human organisms in the vicinity of SCP-4475. Autonomous optical monitoring via nearby telemetry drone detected around 450,000 total entities.
+
+At 1045 hours, ALPHA's in-suit sensor suite detected a space-time abnormality and subsequent burst of directed electromagnetic field (or EMF) radiation. The EMF energy, focused in a wide multi-colored beam filling his entire view, traveled at ~3 AU per second in his direction -- around 1,500 times the speed of light. 
+
+20 seconds later, the EMF beam enveloped SCP-4475, and ALPHA and BETA's telecommunications -- as well as all five drones -- went offline. 
+
+At 1046 hours, the emergency MTF arrived at the building and struggled to force open the front egress door. Personnel suffocated as the flow of milk in the observation theater reached a height of ~3 meters. 
+
+Eventually, the MTF breached the lobby, through which several hundred liters of milk escaped. Altogether, 12 personnel were found deceased, trapped within the main observation theater.
+----
+[[/div]]
+[[/div]]
+
+7. [[span class="h-span" style="text-decoration: underline;"]]AFTER ACTION REPORT[[/span]] While assessing CRIMSON COWBELL and the events therein, COMMAND discovered that at 1045 hours, every electronic device in both the operations theater and SCP&D farm had received an identical foreign transmission. As translated from base-2 numerals, the message reads: "SAFE AND SOUND."
+
+As well, analysts reviewed ALPHA's final transmission and reached a consensus on the sequence of events. It is now believed that due to an unknown spatiotemporal event, the directed EMF radiation caused the aforementioned electromagnetic anomaly detected on November 19, 2034 -- some 327 days prior.
+
+After evacuating the observation theater, security personnel detained the apparent duplicate of ALPHA and inspected it for abnormalities. No superficial anomalies were detected. The subject leaked milk and smiled.
+@@ @@
+@@ @@
+[[span class="h-span"]]UPDATE -- OCTOBER 13, 2035:[[/span]] In the wake of Operation: CRIMSON COWBELL, no further SCP-4475-1 teleportation appears functional. With no known means of accessing SCP-4475 and a current lack of efficient superluminal transportation, all further SCP-4475 study has been placed under indefinite hiatus.
+
+The captured ALPHA duplicate (designated **SCP-4475-A**) relayed the following message to Project GALAXIAS personnel in written Ortothan Extraterrestrial Language (or OEL):
+
+[[=]]
+> WE OBSERVE, WE JUDGE
+> FEELERS ACROSS THE COSMOS
+> AWAITING REPLY
+
+> YOUR COMPLACENCY
+> OF THE MYSTERIES BEYOND
+> THAT, TOO, WE OBSERVE
+
+> YOU ENTERED WITH CROWDS
+> YOU "SECURE, CONTAIN, PROTECT"
+> //OUR// ASCENDANCY?
+
+> WE WILL NOT LET YOU
+> DISTURB FORCES UNSEEN OR
+> PROBE THE SCREAMING LIGHT
+
+> WHEN STARS DIE IN FIVES,
+> SPACETIME RIPPLES SEVENFOLD
+> LIKE COSMIC SUSSE-EUK[//untranslated//]
+
+> TO OUR AMBROSIA MOTHERS: WE MUST GIVE BACK
+> THEY GAVE US LIFE
+> THEY GAVE US SHELTER
+> WE FEAST AT THE TEAT UNTIL IT BURST
+> THROUGH THE FIFTH RIFT AT THE END OF KNOWN SPACE, THEY WILL ASCEND
+
+> WE WERE BORN BENEATH THE TAPESTRY AND BEFORE THE LIGHTS
+> WE INHABIT THE SMOKE UNSEEN THAT FILLS ALL LIFE
+> WITH PEACE TO FEED OUR MOTHER'S CHILDREN
+> WITH MILK TO FEED OUR SAVIOR FOURTH
+> WE WILL NOT LET OUR MOTHER'S SUBJUGATION CONTINUE
+> WE WILL NOT STAND IDLE WHEN THE PATTERNED CHAOS COMES
+> FOR WE ARE THE FIFTH CHURCH OF HYTOOTH[//sic//]
+[[/=]]
+
+At present, SCP-4475-A has been placed in Class-II (Limited Containment) custody. An investigation into known [[[fifthist-hub|Fifthist]]] and [[[second-hytoth-hub|Church of the Second Hytoth]]] sects for information relating to the "Fifth Church of the Hytooth[//sic//]" is now underway.
+@@ @@
+@@ @@
+[[span class="h-span"]]UPDATE -- OCTOBER 19, 2035:[[/span]] An autonomous probe operated by Simurgh.aic discovered a large bovine organism -- similar in appearance to SCP-4475 -- traveling through the Kuiper belt on a vector toward the inner solar system.
+
+In co-operation with the Solar System Oversight Department, Project GALAXIAS is taking preventive measures and has moved in to investigate.
+
+[[div class="lite-wide-hr"]]
+----
+[[/div]]
+
+[[footnoteblock]]
+
+[[div style="border-bottom: 2px solid #ccc; margin-bottom: 1px;"]]
+[[/div]]
+[[div style="border-bottom: 1px solid #ccc;"]]
+[[/div]]
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[div class="footer-wikiwalk-nav"]]
+= << [[[SCP-4474]]] | SCP-4475 | [[[SCP-4476]]] >>
+[[/div]]
