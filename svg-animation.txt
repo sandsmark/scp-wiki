@@ -1,0 +1,257 @@
+title:7happy7's SVG-animation Gallery
+[[module CSS]]
+.animSVG {
+    width: 100%;
+    height: 0px; 
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+[[/module]]
+
+[[iftags +artwork]]
+[[>]]
+[[include :topia:sp-rate-info-2 start= --]]]
+**Author:**
+[[*user 7happy7]]
+
+**Special Thanks(alphabetical order):**
+[[*user sheila_1576]](image modification)
+[[*user tsucchii0301]](image modification)
+[[*user Woedenaz]](cubic-bezier)
+
+**Authors of Original logos(alphabetical order):**
+[[*user Aelanna]]
+[[*user breaddddd]]
+[[*user djkaktus]]
+[[*user DrKens]]
+[[*user Fantem]]
+[[*user Nanimono Demonai]]
+[[*user SunnyClockwork]]
+[[*user TPS-Geronam]]
+[[include :topia:sp-rate-info-2 end= --]]]
+[[/>]]
+
+
+[[include :topia:pride-animated-source]]
+[[module CSS]]
+@import url("http://www.scp-wiki.net/local--files/svg-animation/caecus-c.css");
+@import url("http://www.scp-wiki.net/local--files/svg-animation/fixed-flowers.css");
+@import url("http://www.scp-wiki.net/local--files/svg-animation/gocLogo.css");
+@import url("http://www.scp-wiki.net/local--files/svg-animation/mcdLogo.css");
+@import url("http://www.scp-wiki.net/local--files/svg-animation/oneiroi.css");
+@import url("http://www.scp-wiki.net/local--files/svg-animation/recycle.css");
+@import url("http://www.scp-wiki.net/local--files/svg-animation/scarlet-2.css");
+@import url("http://www.scp-wiki.net/local--files/svg-animation/cotbg.css");
+
+.artContent h2 {
+    text-align: center;
+    background: #A0c6cE;
+    color: #fff;
+}
+.artContent .animSVG {
+    border: solid .0625rem rgb(var(--swatch-primary-darkest));
+    box-shadow: 0 0.0625rem 0.375rem rgba(0,0,0,0.25);
+}
+.artContent blockquote {
+    text-align: center;
+}
+.artContent blockquote a:not([onclick]) {
+    background-color: rgb(133,0,5);
+    border-radius: 0.5rem;
+    color: #fff;
+    display: inline-block;
+    margin: 0.5rem 0 0;
+    padding: 0.1rem 0.5rem;
+    transition: border-radius 0.5s, transform 0.5s;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+}
+.artContent blockquote a:not([onclick]):visited {
+    background-color: rgb(230,40,60);
+    color: #fff;
+}
+.artContent blockquote a:not([onclick]):hover {
+    border-radius: 0;
+    box-shadow: 0 0 0.15rem #fff;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+.artContent blockquote a:not([onclick]):before {
+    content: "link:";
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin: 0 0.15rem 0 0;
+}
+.artContent blockquote a:not([onclick]):after {
+    content: "\f0c1";
+    display: block;
+    font: normal normal normal 0.9rem/1 FontAwesome;
+    text-rendering: auto;
+    transition: transform 0.5s;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+}
+.artContent blockquote a:not([onclick]):hover:after {
+    transform: rotateY(360deg);
+}
+
+#header {
+    background: var(--anim-pride) 15px 40px no-repeat !important;
+    background-size: 6rem !important;
+}
+@media (max-width: 580px) and (min-width: 480px) {
+    #header {
+    	background-position: 0.5em 4.5em  !important;
+    	background-size: 66px 66px  !important;
+    }
+}
+
+@media (max-width: 479px) {
+    #header {
+    	background-position: 0 5.5em !important;
+    	background-size: 55px 55px !important;
+    }
+}
+[[/module]]
+
+[[div class="artContent"]]
+++* Welcome to the bizarre gallery...
+This is an artwork-page, **and also a component-page!** You can use these things for your article by using @@[[include]]@@ method. Please enjoy my SVG-animation!
+[[toc]]
+
++ GoI-EN
+[[div class="oneiroi animSVG" style="padding-bottom: calc(346.22 / 337.63 * 50%); background-image: var(--oneiroi);"]]
+[[/div]]
+> Based on [[*user Fantem]]'s Oneiroi West logo
+> http://www.scp-wiki.net/oneiroi
+> ----
+> [[include :scp-wiki:svg-animation |oneiroi=true|width=100%]]
+----
+[[div class="gocLogo animSVG" style="padding-bottom: calc(100% / 1.5); background-image: var(--gocLogo);"]]
+[[/div]]
+> Based on [[*user Aelanna]]'s GOC logo
+> http://www.scp-wiki.net/goc-hub-page
+> ----
+> [[include :scp-wiki:svg-animation |gocLogo=true|width=100%]]
+----
+[[div class="cotbg animSVG" style="width: 100%; padding-bottom: calc(100% * 5 / 9); background-image: var(--cotbg);"]]
+[[/div]]
+> Based on [[*user djkaktus]]'s Church of the Broken God logo (modified by[[*user sheila_1576]])
+> http://www.scp-wiki.net/groups-of-interest
+> ----
+> [[include :scp-wiki:svg-animation |cotbg=true|width=100%]]
+----
+[[div class="cotbg animSVG" style="width: 100%; padding-bottom: calc(50% / 32 * 31); background-image: var(--mcdLogo);"]]
+[[/div]]
+> Based on [[*user DrKens]]'s MC&D logo (modified by[[*user tsucchii0301]])
+> http://www.scp-wiki.net/marshall-carter-and-dark-hub
+> ----
+> [[include :scp-wiki:svg-animation |mcdLogo=true|width=100%]]
+----
+
++ GoI-CN
+[[div class="fixed-flowers animSVG" style="padding-bottom: 50%; background-image: var(--fixed-flowers);"]]
+[[/div]]
+> Based on [[*user breaddddd]]'s Fixed Flowers' logo(SCP-CN)
+> http://scp-wiki-cn.wikidot.com/fixedflowers
+> ----
+> [[include :scp-wiki:svg-animation |fixed-flowers=true|width=100%]]
+----
+
++ GoI-DE
+[[div class="caecus-c animSVG" style="padding-bottom: 75%; background-image: var(--caecus-c);"]]
+[[/div]]
+> Based on [[*user TPS-Geronam]]'s Caecus-Carlineara Collective's logo(SCP-DE)
+> http://scp-wiki-de.wikidot.com/caecus-c-hub
+> ----
+> [[include :scp-wiki:svg-animation |caecus-c=true|width=100%]]
+----
+
++ non-GoI logos
+[[div class="recycle animSVG" style="padding-bottom: 240px; background-image: var(--recycle);"]]
+[[/div]]
+> Based on [[*user Nanimono Demonai]]'s Recycle Contest-19 hub's logo(SCP-JP)
+> http://ja.scp-wiki.net/recyclecontest19
+> ----
+> [[include :scp-wiki:svg-animation |recycle=true]]
+----
+
+[[div class="scarlet-2 animSVG" style="padding-bottom: 75%; background-image: var(--scarlet-2);"]]
+[[/div]]
+> Based on [[*user SunnyClockwork]]'s artwork (Children of the Scarlet King 02)
+> http://www.scp-wiki.net/sunny-art-goi
+> ----
+> [[include :scp-wiki:svg-animation |scarlet-2=true|width=100%]]
+----
+
+[[/div]]
+[[/iftags]]
+
+
+
+
+
+[[iftags [[#ifexpr {$cotbg} == (true) | - ]]]]
+[[module CSS]]
+@import url("http://www.scp-wiki.net/local--files/svg-animation/cotbg.css");
+[[/module]]
+[[div class="cotbg animSVG" style="width: {$width}; padding-bottom: calc({$width} * 5 / 9); background-image: var(--cotbg);"]]
+[[/div]]
+[[/iftags]]
+
+[[iftags [[#ifexpr {$mcdLogo} == (true) | - ]]]]
+[[module CSS]]
+@import url("http://www.scp-wiki.net/local--files/svg-animation/mcdLogo.css");
+[[/module]]
+[[div class="mcdLogo animSVG" style="width: {$width}; padding-bottom: calc({$width} / 64 * 31); background-image: var(--mcdLogo);"]]
+[[/div]]
+[[/iftags]]
+
+[[iftags [[#ifexpr {$scarlet-2} == (true) | - ]]]]
+[[module CSS]]
+@import url("http://www.scp-wiki.net/local--files/svg-animation/scarlet-2.css");
+[[/module]]
+[[div class="scarlet-2 animSVG" style="width: {$width}; padding-bottom: calc({$width} * 3 / 4); background-image: var(--scarlet-2);"]]
+[[/div]]
+[[/iftags]]
+
+[[iftags [[#ifexpr {$recycle} == (true) | - ]]]]
+[[module CSS]]
+@import url("http://www.scp-wiki.net/local--files/svg-animation/recycle.css");
+[[/module]]
+[[div class="recycle animSVG" style="padding-bottom: 240px; background-image: var(--recycle);"]]
+[[/div]]
+[[/iftags]]
+
+[[iftags [[#ifexpr {$caecus-c} == (true) | - ]]]]
+[[module CSS]]
+@import url("http://www.scp-wiki.net/local--files/svg-animation/caecus-c.css");
+[[/module]]
+[[div class="caecus-c animSVG" style="width: {$width}; padding-bottom: calc({$width} * 3 / 4); background-image: var(--caecus-c);"]]
+[[/div]]
+[[/iftags]]
+
+[[iftags [[#ifexpr {$fixed-flowers} == (true) | - ]]]]
+[[module CSS]]
+@import url("http://www.scp-wiki.net/local--files/svg-animation/fixed-flowers.css");
+[[/module]]
+[[div class="fixed-flowers animSVG" style="width: {$width}; padding-bottom: calc({$width} / 2); background-image: var(--fixed-flowers);"]]
+[[/div]]
+[[/iftags]]
+
+[[iftags [[#ifexpr {$oneiroi} == (true) | - ]]]]
+[[module CSS]]
+@import url("http://www.scp-wiki.net/local--files/svg-animation/oneiroi.css");
+[[/module]]
+[[div class="oneiroi animSVG" style="width: {$width}; padding-bottom: calc(346.22 / 337.63 * {$width} / 2); background-image: var(--oneiroi);"]]
+[[/div]]
+[[/iftags]]
+
+[[iftags [[#ifexpr {$gocLogo} == (true) | - ]]]]
+[[module CSS]]
+@import url("http://www.scp-wiki.net/local--files/svg-animation/gocLogo.css");
+[[/module]]
+[[div class="gocLogo animSVG" style="width: {$width}; padding-bottom: calc({$width}/ 1.5); background-image: var(--gocLogo);"]]
+[[/div]]
+[[/iftags]]
