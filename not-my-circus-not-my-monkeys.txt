@@ -1,5 +1,25 @@
 title:Not My Circus Not My Monkeys
 [[include :scp-wiki:component:pride-highlighter |inc-s9-animp= --]]]
+[[module CSS]]
+@supports not ((-webkit-background-clip: text) and (-webkit-text-fill-color: transparent)) {
+    .dado1 {color: #FF7F7F; font-weight: bold;}
+    .dado2 {color: #FFB27F; font-weight: bold;}
+    .dado3 {color: #e6e600; font-weight: bold;}
+    .dado4 {color: #A5FF7F; font-weight: bold;}
+    .dado5 {color: #7FC9FF; font-weight: bold;}
+    .dado6 {color: #D67FFF; font-weight: bold;}
+    .dado7 {color: #FF7FED; font-weight: bold;}
+}
+
+@supports ((-webkit-background-clip: text) and (-webkit-text-fill-color: transparent)) {
+    .dado {
+         background: linear-gradient(to right, #FF7F7F, #FFB27F, #e6e600, #A5FF7F, #7FC9FF, #D67FFF, #FF7FED);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         font-weight: bold;
+    }
+}
+[[/module]]
 [[>]]
 [[module Rate]]
 [[/>]]
@@ -25,15 +45,15 @@ She went silent at the sound of someone picking up the receiver on the other end
 
 "Hello? Is someone there?" Gary asked hopefully. He was answered by a cheerful yet unenthusiastic voice in a strange and unplaceable accent.
  
-[[span style="background: linear-gradient(to right, #FF7F7F, #FFB27F, #e6e600, #A5FF7F, #7FC9FF, #D67FFF, #FF7FED); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"]] **"yes this is dado. owner of many fine dado business like dado speed date and colon detox. what can dado do 4 u?"** [[/span]]
+[[span class="dado dado1"]] **"yes this is dado. owner of many fine dado business like dado speed date and colon detox. what can dado do 4 u?"** [[/span]]
 
 "Jesus Murphy, what the hell are you doing?" Icky demanded as she and the others recoiled from the phone at the bizarre sensory assault.
 
-[[span style="background: linear-gradient(to right, #FF7F7F, #FFB27F, #e6e600, #A5FF7F, #7FC9FF, #D67FFF, #FF7FED); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"]] **"dado talking to very perspirant customer cuz customer wouldn't stop calling and hamster can't take nap. hamster need beauty sleep. hamster have big present nation tomorrow. u sleep now hamster. dream the sweetest hamster dreams."** [[/span]]
+[[span class="dado dado2"]] **"dado talking to very perspirant customer cuz customer wouldn't stop calling and hamster can't take nap. hamster need beauty sleep. hamster have big present nation tomorrow. u sleep now hamster. dream the sweetest hamster dreams."** [[/span]]
 
 "Your voice is inducing synaesthesia or something! It sounds like everything you're saying is rainbow coloured!" Icky shouted.
 
-[[span style="background: linear-gradient(to right, #FF7F7F, #FFB27F, #e6e600, #A5FF7F, #7FC9FF, #D67FFF, #FF7FED); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"]] **"ah yes. rainbow theme is for pride month yes? dado sees [[[http://www.scp-wiki.net/rainbow-crapitalism | other businesses]]] putting up rainbow logos to show they are good allies and make money. hamster think this goes 2 far. political corrective surgery run amuck. hamster say make america grate cheese again but dado think this not go far enough. dado make everything rainbow theme 2 show that dado is best ally. or best lgtv barbecue person. dado not care so long as dado make money. dado is all things 2 all people yes."**  [[/span]]
+[[span class="dado dado2"]] **"ah yes. rainbow theme is for pride month yes? dado sees [[[http://www.scp-wiki.net/rainbow-crapitalism | other businesses]]] putting up rainbow logos to show they are good allies and make money. hamster think this goes 2 far. political corrective surgery run amuck. hamster say make america grate cheese again but dado think this not go far enough. dado make everything rainbow theme 2 show that dado is best ally. or best lgtv barbecue person. dado not care so long as dado make money. dado is all things 2 all people yes."**  [[/span]]
 
 Lolly opened her mouth to speak, but Icky gently silenced her with a finger to her lips.
 
@@ -41,25 +61,25 @@ Lolly opened her mouth to speak, but Icky gently silenced her with a finger to h
 
 There was an awkward silence, followed by a nervous clearing of the throat.
 
-[[span style="background: linear-gradient(to right, #FF7F7F, #FFB27F, #e6e600, #A5FF7F, #7FC9FF, #D67FFF, #FF7FED); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"]] **"with who is dado speaking yes? u no sound like a mister herbicide fulcrum."**  [[/span]]
+[[span class="dado dado2"]] **"with who is dado speaking yes? u no sound like a mister herbicide fulcrum."**  [[/span]]
 
 "This is Icky, Ringmaster and co-owner of Herman Fuller's Circus of the Disquieting," she replied. "The Man With The Upside-Down Face is here as well. You've heard of //The Man With The Upside-Down Face at Herman Fuller's Circus of the Disquieting//, haven't you dado?"
 
 There was a pregnant pause as the others waited to see if the infohazardous phrase would give Manny access to the twisted mind of dado.
 
-[[span style="background: linear-gradient(to right, #FF7F7F, #FFB27F, #e6e600, #A5FF7F, #7FC9FF, #D67FFF, #FF7FED); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"]] **"no, sorry. dado knows nothing of the upside-down. dado no have netflix. dado watch prime video about high man in castles yes. 4.5 stars."**  [[/span]]
+[[span class="dado dado2"]] **"no, sorry. dado knows nothing of the upside-down. dado no have netflix. dado watch prime video about high man in castles yes. 4.5 stars."**  [[/span]]
 
 Manny shook his head disappointedly and mouthed //'didn't take'//. Icky let out a frustrated groan but nodded understandingly.
 
 "Listen dado, we saw your [[[SCP-4292 | video]]] advertising your 'herbie fucker' circus, and you're selling our merchandise rebranded as your own on your website. We never gave you permission to do that. Knock it off, or we'll make you knock it off," she said firmly. "Do you got that?"
 
-[[span style="background: linear-gradient(to right, #FF7F7F, #FFB27F, #e6e600, #A5FF7F, #7FC9FF, #D67FFF, #FF7FED); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"]] **"what crazy clown lady talking about? clown lady and dado agree to collaboration, yes? dado and hummin ferver have verbal contract. dado promise to make generic clown impulse impress pants and you let dado sell hermando fallview products, yes?"**  [[/span]]
+[[span class="dado dado2"]] **"what crazy clown lady talking about? clown lady and dado agree to collaboration, yes? dado and hummin ferver have verbal contract. dado promise to make generic clown impulse impress pants and you let dado sell hermando fallview products, yes?"**  [[/span]]
 
 "dado, the deal was that you could purchase our merchandise for resale at your own locations at a discount, not that you could rebrand it as your own," Manny explained.
 
 "And that Clown Impulse Suppressant you sold us was crap!" Lolly shouted, leaning in towards the phone.  "Eugene tried some and it made him shapeshift into a clownfish! He nearly drowned! And zebras aren't eldritch abominations you lunatic!"
 
-[[span style="background: linear-gradient(to right, #FF7F7F, #FFB27F, #e6e600, #A5FF7F, #7FC9FF, #D67FFF, #FF7FED); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"]] **"u say u want pills that make clowns no scary, yes? clownfish no scary. what herfull fluffer mad about? also the zedbras are pure lovecraft. they look like painted horses and yet there is no paint, yes? should not be possible. u trust dado."**  [[/span]]
+[[span class="dado dado2"]] **"u say u want pills that make clowns no scary, yes? clownfish no scary. what herfull fluffer mad about? also the zedbras are pure lovecraft. they look like painted horses and yet there is no paint, yes? should not be possible. u trust dado."**  [[/span]]
 
 "dado, you failed to live up to your end of the bargain by giving us defective medicine, and you violated the terms of our contract by putting your name on our merchandise, therefore the entire agreement is null and void!" Manny said adamantly. "Change the name of your circus to something less insulting to us and dispose of all your knockoff merchandise immediately, or things will get very, //very// unpleasant for you."
 
@@ -67,7 +87,7 @@ Manny shook his head disappointedly and mouthed //'didn't take'//. Icky let out 
 
 dado scoffed insolently at the petulant threat.
 
-[[span style="background: linear-gradient(to right, #FF7F7F, #FFB27F, #e6e600, #A5FF7F, #7FC9FF, #D67FFF, #FF7FED); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"]] **"dado does not fear the knight mayor king. dado does not fear IRS dark or circus circus las vegas. dado is fine capitalist and fear only the im birch tree ment of dado's good name. dado admits no wrong! dado will defend himself on tennis court where love means nothing! u will rue day that u did not trust dado!"** [[/span]]
+[[span class="dado dado2"]] **"dado does not fear the knight mayor king. dado does not fear IRS dark or circus circus las vegas. dado is fine capitalist and fear only the im birch tree ment of dado's good name. dado admits no wrong! dado will defend himself on tennis court where love means nothing! u will rue day that u did not trust dado!"** [[/span]]
 
 The call ended with a loud crunching sound, indicative of the phone on the other end being physically destroyed.
 
@@ -109,23 +129,23 @@ Noodles replied with a short, irritated growl.
 
 In his lap was a guinea pig, which he stroked like a Bond villain petting a cat.
 
-[[span style="background: linear-gradient(to right, #FF7F7F, #FFB27F, #e6e600, #A5FF7F, #7FC9FF, #D67FFF, #FF7FED); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"]]**"hello mr. bezos. u are sooner than expected yes. luckily dado is prepared for - hey wait, u no jeff bezos! u crazy circus people! how u learn about dado's secret luney moonbase and circus extravaganza-palooza?"** [[/span]]
+[[span class="dado dado2"]] **"hello mr. bezos. u are sooner than expected yes. luckily dado is prepared for - hey wait, u no jeff bezos! u crazy circus people! how u learn about dado's secret luney moonbase and circus extravaganza-palooza?"** [[/span]]
 
 "From your commercial," Manny said in a deadpan voice.
 
-[[span style="background: linear-gradient(to right, #FF7F7F, #FFB27F, #e6e600, #A5FF7F, #7FC9FF, #D67FFF, #FF7FED); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"]] **"curses! dado's plan for epic vengeance has been ruined by dado's even more epic business sauviness! oh well. since u here, u want to buy tickets for moon show? dado offer group discount."**  [[/span]]
+[[span class="dado dado2"]] **"curses! dado's plan for epic vengeance has been ruined by dado's even more epic business sauviness! oh well. since u here, u want to buy tickets for moon show? dado offer group discount."**  [[/span]]
 
 "No dado," Manny shook his head. "We're from the Circus of the Disquieting. We spoke on the phone a few moments ago. Remember?"
 
 dado spared a glance at the smartphone on the ground, crushed almost beyond recognition.
 
-[[span style="background: linear-gradient(to right, #FF7F7F, #FFB27F, #e6e600, #A5FF7F, #7FC9FF, #D67FFF, #FF7FED); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"]] **"ah yes. dado remember u and ur horrible horrible lies. lies that make hamster cry. u jealous of dado and his amazing lunar mooner circus-palooza!"** [[/span]]
+[[span class="dado dado2"]] **"ah yes. dado remember u and ur horrible horrible lies. lies that make hamster cry. u jealous of dado and his amazing lunar mooner circus-palooza!"** [[/span]]
 
 "No, we're not. We're here because your shitty drugs almost killed one of our friends and because you're ripping off our brand," Icky said as she shuffled her deck of cards, their edges glowing an incandescent red. "You need to know that there are consequences for pulling that kind of shit."
 
 "And since you know that Clowns are our own race, your costume is super racist!" Lolly screamed lividly.
 
-[[span style="background: linear-gradient(to right, #FF7F7F, #FFB27F, #e6e600, #A5FF7F, #7FC9FF, #D67FFF, #FF7FED); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"]] **"u no like dado ringmaster costume? okay, just for u, dado take costume off, yes?"** [[/span]]
+[[span class="dado dado2"]] **"u no like dado ringmaster costume? okay, just for u, dado take costume off, yes?"** [[/span]]
 
 Using both hands, dado slowly lifted up his top hat, revealing his entire face.
 
@@ -133,7 +153,7 @@ Using both hands, dado slowly lifted up his top hat, revealing his entire face.
 
 "Normally I'm the one getting asked this, but what the hell is wrong with your face?" Manny managed to ask through near petrifying terror.
 
-[[span style="background: linear-gradient(to right, #FF7F7F, #FFB27F, #e6e600,  #A5FF7F, #7FC9FF, #D67FFF, #FF7FED); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"]] **"uppercase key broken, of course. much apologies. now,**[[/span]] Veronica[[span style="background: linear-gradient(to right, #FF7F7F, #FFB27F, #e6e600, #A5FF7F, #7FC9FF, #D67FFF, #FF7FED); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"]] **, u were saying that dado must learn consequences, yes?"** [[/span]]
+[[span class="dado dado2"]] **"uppercase key broken, of course. much apologies. now,**[[/span]] Veronica[[span class="dado dado2"]] **, u were saying that dado must learn consequences, yes?"** [[/span]]
 
 Icky swallowed nervously, equally terrified by dado somehow knowing her real name as she was at the brief yet clearly calculated drop of his facade.
 
@@ -149,7 +169,7 @@ Icky swallowed nervously, equally terrified by dado somehow knowing her real nam
 
 "I can't," he admitted with a shake of his head.
 
-[[span style="background: linear-gradient(to right, #FF7F7F, #FFB27F, #e6e600, #A5FF7F, #7FC9FF, #D67FFF, #FF7FED); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"]] **"there is nothing inside dado. outside of dado is all of dado."** [[/span]]
+[[span class="dado dado2"]] **"there is nothing inside dado. outside of dado is all of dado."** [[/span]]
 
 "All right dado, listen up. I don't know what the fuck you are, but we don't take kindly to threats against our Circus!" Icky shouted as she spun her trick cards into a tornado of glowing hot laminated paper. "I'm only going to say this one more time; stop bootlegging our shit and change your show's fucking name, or I will tear this plastic moon dome and everything in it to pieces!"
 
@@ -157,11 +177,11 @@ Icky swallowed nervously, equally terrified by dado somehow knowing her real nam
 
 dado glared at them with whatever he had instead of eyes for a moment, and then with a weary sigh put the hat back on his head.    
 
-[[span style="background: linear-gradient(to right, #FF7F7F, #FFB27F, #e6e600, #A5FF7F, #7FC9FF, #D67FFF, #FF7FED); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"]] **"please give dado minute to consult with good friend robert mitchel about the snek clowns yes."** [[/span]]
+[[span class="dado dado2"]] **"please give dado minute to consult with good friend robert mitchel about the snek clowns yes."** [[/span]]
 
 dado lifted the guinea pig up to his ear, seemingly nodding at his sage advise.
 
-[[span style="background: linear-gradient(to right, #FF7F7F, #FFB27F, #e6e600, #A5FF7F, #7FC9FF, #D67FFF, #FF7FED); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"]] **"ok, hamster says that war with snek clowns would be bad for dado business. dado only needed circus to fund luna-moona-palooza anyway, so dado no need no more. dado will leave herbie fucker in bethesda as pay back for fallout 76."** [[/span]]
+[[span class="dado dado2"]] **"ok, hamster says that war with snek clowns would be bad for dado business. dado only needed circus to fund luna-moona-palooza anyway, so dado no need no more. dado will leave herbie fucker in bethesda as pay back for fallout 76."** [[/span]]
 
 Icky cautiously withdrew her cards back to her, but still held them tightly.
 
@@ -169,15 +189,15 @@ Icky cautiously withdrew her cards back to her, but still held them tightly.
 
 dado nodded sadly.
 
-[[span style="background: linear-gradient(to right, #FF7F7F, #FFB27F, #e6e600, #A5FF7F, #7FC9FF, #D67FFF, #FF7FED); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"]] **"yes. dado should have listen to hello darkness my old friend. [[[Free Consultation | she tell dado]]], 'liquid lunch dado empire and focus on the pills yes,' and dado say yes, but then jeff bezos announce the blue moon and trillion man star empire, and dado must remain competitive, yes? the stars must belong to dado alone!"** [[/span]]
+[[span class="dado dado2"]] **"yes. dado should have listen to hello darkness my old friend. [[[Free Consultation | she tell dado]]], 'liquid lunch dado empire and focus on the pills yes,' and dado say yes, but then jeff bezos announce the blue moon and trillion man star empire, and dado must remain competitive, yes? the stars must belong to dado alone!"** [[/span]]
 
 "Okay, why are you so obsessed with Jeff Bezos?" Lolly asked, her face twisted in bewilderment.
 
-[[span style="background: linear-gradient(to right, #FF7F7F, #FFB27F, #e6e600, #A5FF7F, #7FC9FF, #D67FFF, #FF7FED); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"]] **"dado was once great admirer of bezos. dado was inspired by bezos' skill with the amazon prime yes. dado want to be just like bezos, so dado open up many dado business like [[[SCP-4525 | dado go]]], and bezos was so jelly he use the corporate sabotage on dado. bezos has betrayed dado, so bezos must pay with amazon prime."**  [[/span]]
+[[span class="dado dado2"]] **"dado was once great admirer of bezos. dado was inspired by bezos' skill with the amazon prime yes. dado want to be just like bezos, so dado open up many dado business like [[[SCP-4525 | dado go]]], and bezos was so jelly he use the corporate sabotage on dado. bezos has betrayed dado, so bezos must pay with amazon prime."**  [[/span]]
 
 dado rose from his seat and walked over to the blue moon lander, nostalgically caressing it with one hand while holding his guinea pig in the other.
 
-[[span style="background: linear-gradient(to right, #FF7F7F, #FFB27F, #e6e600, #A5FF7F, #7FC9FF, #D67FFF, #FF7FED); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"]] **"dado -"** [[/span]] he paused to clear his throat. "dado drop pride theme. dado not proud today. dado feel only shame. dado let mad pursuit of vengeance make dado a bad business partner and almost start snek clown war. vengeance has corrupted dado, yes. dado must get back to dado's roots, making banana pills for mob hits and old horny pills for the preverts."
+[[span class="dado dado2"]] **"dado -"** [[/span]] he paused to clear his throat. "dado drop pride theme. dado not proud today. dado feel only shame. dado let mad pursuit of vengeance make dado a bad business partner and almost start snek clown war. vengeance has corrupted dado, yes. dado must get back to dado's roots, making banana pills for mob hits and old horny pills for the preverts."
 
 "... Wait, what?"
 
