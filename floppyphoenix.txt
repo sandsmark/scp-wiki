@@ -1,205 +1,153 @@
 title:FloppyPhoenix's Author Page
-[[include :scp-wiki:component:scp-trans-pride |trans-pride-animated-header= --] |trans-pride-logo= --] |trans-pride-footer= --]]]
-
+[[include :scp-wiki:component:scp-trans-pride |trans-pride-logo= --] |trans-pride-footer= --]]]
 
 [[module CSS]]
 /* LISTPAGES EXCEPTION */
-.preview .span, .infobox { display: none !important; }
+ .preview .span, 
+ .infobox{
+     display: none !important; 
+}
 
 /* DIV BLOCKS */
-.interview {
-    display: inline-block; 
-    border: dashed 1px #999999; 
-    background:#F5F5F5; 
-    width: 85%; 
-    padding: 0 12px; 
-    margin: auto;
+ #page-title{
+     display: none;
 }
-
-.header {
-    display: inline-block; 
-    border: solid 1px #999999; 
-    background: #FFC0CB; 
-    width: 100%;
-    padding: 0 5px; 
-    margin-bottom: 10px; 
-    margin: auto;
+ blockquote{
+     border: 1px double #999;
+     background-color: #f4f4f4;
+     padding: .25em 1em;
+     margin-bottom: 1em;
 }
-
-#page-title {
-  display: none;
+ .header{
+     border: solid 1px #999; 
+     background-color: #FFC0CB; 
+     padding: .25em 1em; 
+     margin-bottom: 1em;
+     text-align: center;
+}
+ .terminal-selection{
+     color: green;
+     font-weight: bold;
+}
+ .scp-showcase{
+     font-family: "Times New Roman", serif;
+     font-size: 125%;
+     color: darkred;
 }
     
-.computed {
-    border: 1px black solid;
-    width: 50%;
-    display: inline-block;
-    text-align: left;
-    padding: 3px;
+/* TABS */
+ .computed{
+     border: 1px black solid;
+     width: 50%;
+     display: inline-block;
+     text-align: left;
+     padding: 3px;
 }
-.computed:before {
-    content:"Computed Code";
-    font-weight: bold;
-    border-bottom: solid 1px black;
-    width: 100%;
+ .computed:before{
+     content: "Computed Code";
+     font-weight: bold;
+     border-bottom: solid 1px black;
+     width: 100%;
 }
-.rawcode {
-    border: black solid 1px;
-    width: 50%;
-    display: inline-block;
-    text-align: left;
-    padding: 3px;
+ .rawcode{
+     border: black solid 1px;
+     width: 50%;
+     display: inline-block;
+     text-align: left;
+     padding: 3px;
 }
-.rawcode:before{
-    content:"Raw Code";
-    text-align: center;
-    font-weight: bold;
-    border-bottom: solid 1px black;
-    width: 100%;
+ .rawcode:before{
+     content: "Raw Code";
+     text-align: center;
+     font-weight: bold;
+     border-bottom: solid 1px black;
+     width: 100%;
 }
-.codebox {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
+ .codebox{
+     display: inline-block;
+     width: 100%;
+     text-align: center;
 }
-.yui-navset .yui-nav .selected a em, .yui-navset .yui-nav a em{
-    padding: 0.25em .75em;
-    top: 0;
-    margin-bottom: 0;
+ .yui-navset .yui-nav .selected a em, .yui-navset .yui-nav a em{
+     padding: 0.25em .75em;
+     top: 0;
+     margin-bottom: 0;
 }
-.yui-navset .yui-nav .selected a {
-    background: gray;
+ .yui-navset .yui-nav .selected a{
+     background: gray;
 }
-.yui-navset .yui-nav .selected {
-    margin: 0;
+ .yui-navset .yui-nav .selected{
+     margin: 0;
 }
-.yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a:focus, .yui-navset .yui-nav .selected a:hover, .yui-navset .yui-nav .selected a {
-    background: gray;
+ .yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a:focus, .yui-navset .yui-nav .selected a:hover, .yui-navset .yui-nav .selected a{
+     background: gray;
 }
-.yui-navset .yui-nav a, .yui-navset .yui-navset-top .yui-nav a {
-    background-color: none;
-    background-image: none;
+ .yui-navset .yui-nav a, .yui-navset .yui-navset-top .yui-nav a{
+     background-color: none;
+     background-image: none;
 }
-.yui-navset .yui-nav a {
-    background: none;
+ .yui-navset .yui-nav a{
+     background: none;
 }
-.yui-navset .yui-nav li{
-    margin: 0;
+ .yui-navset .yui-nav li{
+     margin: 0;
 }
-
-/* HIDDEN UNTIL A SOLUTION IS FOUND
-a[href*="3787"]::after {
-    content: ' - The Horse Meme'
-}
-a[href*="3719"]::after {
-    content: ' - Your Friendly Neighbourhood Lawnmower'
-}
-a[href*="3309"]::after {
-    content: ' - Where We Go When We Fade, Fade Away'
-}
-a[href*="3464"]::after {
-    content: ' - Olive Garden regularly communes with DEMONIC ENTITIES to summon their SATANIC sempiternal garlic bread'
-}
-a[href*="3570"]::after {
-    content: ' - Umbral Ultimatum'
-}
-a[href*="4420"]::after {
-    content: ' - A Potato Thirst'
-}
-a[href*="4416"]::after {
-    content: ' - Tails of Site-42: Why The Foundation Punches Sharks'
-}
-a[href*="4031"]::after {
-    content: ' - The Amnesiac Redemption'
-}
-a[href*="3739"]::after {
-    content: ' - Mind-Milk™ by Moosphere, Inc.'
-}
-a[href*="4190"]::after {
-    content: ' - A Twenty Thousand League Delay'
-}
-a[href*="4519"]::after {
-    content: ' - Carl Sagan, Godhead'
-}
-a[href*="507"]::after {
-    content: ' - The Bigger Boat'
-}
-a[href*="993"]::after {
-    content: ' - Bobble the Clown Shark'
-}
-*/
 [[/module]]
 
-[[=]]
-+ FloppyPhoenix's Author Page
-[[/=]]
-----
 [[div style="text-align: center;"]]
-
-[[<]]
++ FloppyPhoenix's Author Page
+[[/div]]
+----
 > {{Opening Person of Interest File #9731}}. . .
-[[/<]]
 
-[[<]]
 > {{An addition was added since you last viewed the file. Read it?}}
-[[/<]]
 
-|| (**##green|Y##**) / {{N}} ||
+|| [[span class="terminal-selection"]]Y[[/span]] / {{N}} ||
 
 [[module ListUsers users="."]]
-[[div class="interview"]]
+> = **INTERVIEW LOG**
 ----
-= **INTERVIEW LOG**
-----
-= **<Begin Log>**
-[[<]]
-
-**%%title%%:** I just don't think a //bird// could pose a threat to global normalcy.
-
-**Interrogator:** You clearly have never had a flock of sky-demons rain faeces armageddon upon you like it's the Battle of Agincourt.
-
-**%%title%%:** That's -- //[Pause.]// An oddly specific comparison.
-
-**Interrogator:** Look, %%title%%, this isn't the type of bird you protect your Doritos from at the beach. This is a merciless enemy with a penchant to absolutely godzillafy our shit up.
-
-**%%title%%:** I don't think --
-
-**Interrogator:** This ain't a tea party, princess. This is a war. And if you're not with us, then you're against us. Guards, take this heathen away.
-
-**%%title%%:** Wh -- Get your hands off me! Nobody's gonna //believe// this log when they read it, you know! 
-
-**Interrogator:** //[Laughing.]//
-
-[[size 90%]]**%%title%%:** //[Distant.]// And besides! I -- It's not written well enough![[/size]]
-
-[[size 75%]]**%%title%%:** //[Even more distant.]// Please, I'm innocent![[/size]]
-
-**Interrogator:** You know what they say. Chirp chirp, motherfuckers. //[To security personnel.]// Sic 'em.
-[[/<]]
-
-= **<End Log>**
-----
-[[/div]]
+> = **<Begin Log>**
+> 
+> **%%title%%:** I just don't think a //bird// could pose a threat to global normalcy.
+> 
+> **Interrogator:** You clearly have never had a flock of sky-demons rain faeces armageddon upon you like it's the Battle of Agincourt.
+> 
+> **%%title%%:** That's -- //[Pause.]// An oddly specific comparison.
+> 
+> **Interrogator:** Look, %%title%%, this isn't the type of bird you protect your Doritos from at the beach. This is a merciless enemy with a penchant to absolutely godzillafy our shit up.
+> 
+> **%%title%%:** I don't think --
+> 
+> **Interrogator:** This ain't a tea party, princess. This is a war. And if you're not with us, then you're against us. Guards, take this heathen away.
+> 
+> **%%title%%:** Wh -- Get your hands off me! Nobody's gonna //believe// this log when they read it, you know! 
+> 
+> **Interrogator:** //[Laughing.]//
+> 
+> [[size 90%]]**%%title%%:** //[Distant.]// And besides! I -- It's not written well enough![[/size]]
+> 
+> [[size 75%]]**%%title%%:** //[Even more distant.]// Please, I'm innocent![[/size]]
+> 
+> **Interrogator:** You know what they say. Chirp chirp, motherfuckers. //[To security personnel.]// Sic 'em.
+> 
+> = **<End Log>**
+> ----
 [[/module]]
 
-[[<]]
 > {{Opening File}}. . .
-[[/<]]
-[[/div]]
 
 [[div class="header"]]
-[[=]]
 ++++ --coolpage funpage--
 
 The following file contains an activated **GAY FROGS**-Class **DANK ANTIMEME**. You are instructed to run. Immediately. In the event that you're lazy, you are directed to proceed at a velocity directly proportional to your daily cholesterol intake. What's that? //Fine//, you can catch up on //Grey's Anatomy// first. But make sure you make your way right back here after, mmkay?
 
 — Uhm, probably someone with, like, a //super// high clearance level. Or someone's Mary Sue OC.
-[[/=]]
 [[/div]]
 
 [[div style="text-align: center;"]]
 [[a href="*https://www.ko-fi.com/floppyphoenix" style="font-size: 18px; color: #ededed; text-shadow: 1px 3px 1px rgba(0,0,0,0.3); text-decoration: none;"]]
-[[span_ style="display: inline-block; width: 65%; background-color: #1e122b; border: 1px none #000; margin: 1px; padding-top: 8px; padding-bottom: 8px;"]]
+[[span_ style="display: inline-block; width: 75%; background-color: #1e122b; border: 1px none #000; margin: 1px; padding-top: 8px; padding-bottom: 8px;"]]
 If you like my works, consider donating!
 [[/span]]
 [[/a]]
@@ -228,13 +176,13 @@ If you like my works, consider donating!
 Ah, they're gone. Anyway, //apparently//, this is the place where I get to show you all the wonderful works I've written? Don't worry, I'm surprised too. Just — don't leave the terminal, and continue reading until you've learned about all the --[[[crispy sex pirates]]]-- SCP articles I've worked on. I'll go get you a juice box. Or some bourbon. Don't like it? Well, that's too darn bad, hun, isn't it?
 
 **Deployment Record:**
-@@ @@
+
 [[tabview]]
 [[tab Articles]]
-[[=]]
-+++ **Floppy's Articles** 
+[[div style="text-align: center;"]]
++++ Floppy's Articles
 ++++++ I write things, depending on how you define "write" and "things".
-[[/=]]
+[[/div]]
 **Floppy Says:** In the spirit of collaboration, I grant any writer, artist, or otherwise, full permission to use or depict the SCPs, concepts, characters, task forces, locations, or events created by me in your own SCP Wiki work. Drop a link my way; maybe I'll like it, or give you some pointers on how to execute it best!
 
 [[include component:author-page
@@ -297,7 +245,7 @@ Ah, they're gone. Anyway, //apparently//, this is the place where I get to show 
 [[/tab]]
 
 [[tab Other]]
-[[=]]
+[[div style="text-align: center;"]]
 ----
 +++ CSS Themes
 ++++++ My CSS Themes!
@@ -318,147 +266,171 @@ Ah, they're gone. Anyway, //apparently//, this is the place where I get to show 
 **[[[http://www.scp-wiki.net/system:page-tags/tag/team-bird#pages|team-bird]]]**
 **[[[http://www.scp-wiki.net/system:page-tags/tag/sapphire#pages|sapphire]]]**
 
-[[/=]]
+[[/div]]
 [[/tab]]
 
-
 [[tab Commentary]]
-[[=]]
-+++ **Author Commentary**
-++++++ Out of date!
-[[/=]]
+[[div style="text-align: center;"]]
++++ Author Commentary
+++++++ Last updated in June 2018
+[[/div]]
 ----
-[[span style="font-family:Times New Roman; font-size:125%;"]]--##firebrick|SCP-#: ●●|●●●●●●|●●●●|● - Before the Fire##-- **[DELETED]**[[/span]]
+[[span class="scp-showcase"]]--SCP-#: ●●|●●●●●●|●●●●|● - Before the Fire-- **[DELETED]**[[/span]]
 
 [[collapsible show="     + Learn more?" hide="- Close excerpt" hideLocation="bottom"]]
-**Summary:** SCP-2641 is a sentient concept that lives in different media. Become exposed to these media and you've become another connection 2641 has with the outside world. 2641 transforms things to allow them to perform in a manner //opposite// to the way they're supposed to. When it spreads into a medium, 2641 gains more power in the process. When 2641 has influenced enough persons, objects, or media, that's when the shit hits the fan, and it begins to regain its lost reality-bending properties.
+**Summary:** SCP-2641 is an ancient sapient concept that prefers to live inside literary media.
 
-That's really only a summary for the first //quarter// of the article. The rest is where things get a bit insane. Think, dense rainforest, mysterious cult contained by the Brazillian government, exploding spears, a father wishing to save his daughter, exiled denizen from Plato's World of Forms. That sort of thing. You'll have to read the scip and its corresponding supplements to understand what's going on, and I strongly urge that you do.
+Persons exposed to these media become a conduit, connecting 2641 with the outside world.  2641 makes objects act tangentially to the way they're supposed to, in a very surreal manner. When it spreads into a new medium, it gains more power. When 2641 is connected with enough media, people, and objects, it slowly regains its lost reality-bending properties.
 
-**Commentary:** SCP-2641 was my 1st successful SCP, written in April of 2017 following the Horror Contest. I had been trying to write a successful SCP article since 2013, and it took all the way until 2017 for me to muster up something bearable. 
+This article gets a bit insane, featuring a dense rainforest, mysterious cult contained by the Brazillian government, exploding spears, a father wishing to save his daughter, and exiled denizen from Plato's World of Forms. That sort of thing. 
 
-2641 was very much an experiment. I wanted to write an SCP that was contained within its own documentation. I wanted to be able to justify why the Foundation would even do such a thing. And I wanted to show that there was something very not right going on behind the scenes. I don't think I was the most successful in doing these three things, but either way, I'm happy with how the article turned out.
+**Commentary:** SCP-2641 was my 1st SCP, written in April 2017 following the SCP-3000 "Horror" Contest.
 
-The idea began with, "what if objects didn't act like they were supposed to, and instead acted the opposite of that?". It took a lot of writing and rewriting to make that idea make sense. Some people are still confused to this day, so clearly I haven't done the best job of explaining, heh. If you want to write your own entry, the Experiment log document is a collaboration piece open to all.
+2641 was very much an experiment. I wanted to write an SCP that was contained within its own documentation. I wanted to be able to justify why the Foundation would even do such a thing. And I wanted to show that there was something very not right going on behind the scenes. I don't think I was the most successful in doing these three things, but at the time, I was happy with how the article turned out.
 
-**Additional Documents:** 
-[[[experiment-log-2641|Experiment Log 2641]]]
-[[[Solidão]]]
+The idea began with "what if objects didn't act like they were supposed to, and instead acted the opposite of that?" It took a lot of writing and rewriting to make that idea make sense. Some people are still confused to this day, so I clearly haven't done the best job of explaining it.
+
+**UPDATE:** I self-deleted this article in mid-2018 because I was unhappy with how it performed over its long lifetime on the site (just over a year), and I didn't think I was a good enough author to execute it yet. Currently, it exists in an archived format, **[[[*http://scpdsandbox.wikidot.com/floppy-archive-1|which you can find here]]]**. One day I'll rewrite it but it won't be any time soon.
+
+[[div style="font-weight: bold;]]
+Additional Documents:
+* [[[Solidão]]]
+[[/div]]
 [[/collapsible]]
 
 ----
 
-[[span style="font-family:Times New Roman; font-size:125%;"]][[[SCP-3787|SCP-#: ●●●|●●●●●●●|●●●●●●●●|●●●●●●●]]][[/span]]
+[[span class="scp-showcase"]][[[SCP-3787|SCP-#: ●●●|●●●●●●●|●●●●●●●●|●●●●●●●]]][[/span]]
 
 [[collapsible show="     + Learn more?" hide="- Close excerpt" hideLocation="bottom"]]
-**Summary:** A mysterious group of antimemetic equine entities (known as "Nighters") are trying to give themselves some power on Earth. To counteract this, in what is perhaps the failed Deus Ex Machina of a drowsy god, horses have begun to breed 10 times more quickly, increasing the size of equine concepts in collective human headspace and making humans very afraid. This increase in "conceptual horse-ness" is effective in scaring away the Nighters, who fear the more powerful //Common Horse//. Of course, the Foundation tries to contain this strange horse anomaly by slowing down horse birth rates. Not only do they start a mass horse die-off, they allow the Nighters to pour into our world to wreak havoc throughout North America.
+**Summary:** A mysterious group of antimemetic equine entities -- known colloquially by the "Nighters" because of their unique properties -- is trying to give themselves some power on Earth. To counteract this, in what is perhaps the failed Deus Ex Machina of a drowsy god, horses have begun to breed 10 times more quickly, increasing the size of equine concepts in collective human headspace and making humans very afraid. This increase in "conceptual horseness" is effective in scaring away the Nighters, who fear the more powerful common Horse. 
 
-This article has a lot of things packed into it, including an explanation for where modern-day mnestics come from, the SCP-2000 of horses, and crosslinks with a few different horse SCPs (intended to be a "Four Horsemen of the Apocalypse" sort of thing). It also features a new task force Pi-3 ("Glue Factory") that battles antimemetic horse people with laser weapons, which is frankly //the coolest gosh darn thing ever.//
+Of course, the Foundation tries to contain this strange horse anomaly by slowing down horse birth rates. Not only do they start a mass horse die-off, but they also allow the Nighters to pour into our world to wreak havoc throughout North America.
 
-**Commentary:** SCP-3787 is my 2nd SCP, written in February of 2018. It took me a very long time to come up with a second article. 3787 is the most ambitious article I've written and was dubbed the "001 of Horse Anomalies" when I was pitching it to people. As with 2641, I'm unhappy with how I executed some things here as well, but I do plan on giving the article an overhaul --when I'm not lazy-- in the near future. If you find that this article reads like I threw a bunch of horse anomalies into a blender, then I assure you: Mary Shelley's Horsenstein is //precisely// what I was looking for. Totally. I promise.
-[[/collapsible]]
-----
+This article has a lot of things packed into it, including an explanation for where modern-day mnestics come from, the SCP-2000 of horses, and crosslinks with a few different horse SCPs (intended to be a "Four Horsemen of the Apocalypse" sort of thing). It also features MTF-Pi-3 ("Glue Factory"), which battles antimemetic horse people with laser weapons, and is frankly //the coolest gosh darn thing ever.//
 
-[[span style="font-family:Times New Roman; font-size:125%;"]][[[SCP-3719|SCP-#: ●●●|●●●●●●●|●|●●●●●●●●●]]][[/span]]
+**Commentary:** SCP-3787 was my 2nd SCP, written in February 2018. 
 
-[[collapsible show="     + Learn more?" hide="- Close excerpt" hideLocation="bottom"]]
-**Summary:** It's a lawnmower. Somehow, it ended up in a suburb of Baltimore, quickly making the neighbourhood closer than it's ever been. As in, it literally caused a bunch of residents to form into a 5,000 kg mass of flesh that mows lawns all day. And they enjoy it.
+It took me a very long time to come up with a second article. 3787 was far more ambitious than 2641, and I pitched it to people by calling it the "001 of horse anomalies". and was dubbed the "001 of Horse Anomalies" when I was pitching it to people. As with 2641, I was unhappy with the way I executed things, but I went back and touched it up considerably since. 
 
-**Commentary:** SCP-3719 is my 3rd SCP, written in March of 2018. I'd say it has a very Series I tone. This speaks not to the quality of the SCP (I think it's interesting enough), but to how simple it is. I haven't much to talk about in terms of how I wrote it because, to be honest, it took me a few days to go from the beginning to the critique stage. I've wanted to write something like this for about a year now, but could never figure out how until recently.
+If you find that this article reads like I threw a bunch of horse anomalies into a blender, then I assure you: Mary Shelley's Horsenstein is //precisely// what I was looking for. Totally. I promise.
 [[/collapsible]]
 
 ----
 
-[[span style="font-family:Times New Roman; font-size:125%;"]][[[SCP-3309|SCP-#: ●●●|●●●|○|●●●●●●●●●]]][[/span]]
+[[span class="scp-showcase"]][[[SCP-3719|SCP-#: ●●●|●●●●●●●|●|●●●●●●●●●]]][[/span]]
 
 [[collapsible show="     + Learn more?" hide="- Close excerpt" hideLocation="bottom"]]
-**Summary:** The Foundation discovers coldposts //in-universe//. They discover that these coldposts begin to become deleted, like their out-of-universe counterparts. And then they decide to delete some dangerous anomalies as though they were also coldposts, and everything goes horribly wrong.
+**Summary:** It's a lawnmower. Somehow, it ended up in a Baltimore suburb, quickly making the neighbourhood closer than it's ever been -- //quite literally// fusing a bunch of residents into a 5,000 kg flesh ball, perpetually mowing lawns. And they enjoy it.
 
-**Commentary:** SCP-3309 is my 4th SCP and first collab. I co-wrote it with [[*user PhamtomGuy]] in April of 2018. This is the most meta article I've ever written, and probably will ever write. It's also a major format screw.
+**Commentary:** SCP-3719 was my 3rd SCP, written in March 2018. 
 
-3309 is a bit of a strange article for me. I'm not exactly a fan of meta articles myself, unless they're done competently. But I don't actually think the work I put into 3309 is enough to consider it a well-done meta article. 3309 is an ambitious story and an ambitious story requires ambitious writing. I do believe I put in decent writing, but not enough to allow for all of its parts to flow smoothly. Suffice to say, I don't think there's enough there for me to be satisfied with my writing. Perhaps it's the concept itself that needs work, perhaps there is too much reliance on a gimmick; perhaps it's both of these things.
+I'd say it has a very Series I tone. This speaks not to the quality of the SCP (I think it's interesting enough), but to how simple it is. I haven't much to talk about in terms of how I wrote it because, to be honest, it took me a few days to go from the beginning to the critique stage. I had wanted to write something like this for about a year now, but could never figure out how until recently.
+[[/collapsible]]
 
-Of course, as a collaborative article, there comes a point where both parties have to agree to take the middle path and be happy with the work they've put in, respective of one another's writing ability. To my co-writer it may seem as though we kept this article on the burner for long enough and that it needed to be posted, and the votes certainly seem to display a job well done (note: I don't necessarily believe that votes = a good article, either. 3309 is //very// controversial, especially among writers). But there will always be something in me that isn't happy with the work I put in, and I suppose that might never change.
+----
+
+[[span class="scp-showcase"]][[[SCP-3309|SCP-#: ●●●|●●●|○|●●●●●●●●●]]][[/span]]
+
+[[collapsible show="     + Learn more?" hide="- Close excerpt" hideLocation="bottom"]]
+**Summary:** The Foundation classifies coldposts as a legitimate in-universe concept. When they learn that they can //delete// these coldposts -- as staff must do to their out-of-universe counterparts -- they do so with extreme prejudice and imprecision. This causes everything to go wrong.
+
+**Commentary:** SCP-3309 was my 4th SCP and 1st collab, written in April 2018. I co-wrote it with [[*user PhamtomGuy]] in April 2018. This was both my 1st format screw and 1st attempt at a meta article.
+
+3309 is a bit of a strange article for me. I'm not exactly a fan of meta articles myself unless they're done competently. And I don't actually think the work I put into 3309 is enough to consider it a well-done meta article. 3309 is an ambitious story, and ambitious stories require ambitious writing. I do believe I put in decent writing, but not enough to allow for all of its parts to flow smoothly. Suffice to say, I don't think there's enough here for me to be satisfied with my writing. Maybe the concept needs work; maybe it relies too much on a gimmick; maybe it's both.
+
+Of course, as a collaborative article, there comes a point where both parties have to agree to take the middle path and be happy with the work they've put in, respective of one another's writing ability. To my co-writer, it may seem as though we kept this article on the burner for long enough and that it needed to be posted, and the votes certainly seem to display a job well done (note: I don't necessarily believe that votes = a good article, either. 3309 is //very// controversial -- especially among site contributors -- but ended up doing incredibly well). But there will always be something in me that isn't happy with the work I put in, and I guess that might never change.
 
 Altogether, 3309 was a learning experience, and I hope I'm able to continue to progress as a writer.
+
+[[div style="font-weight: bold;]]
+Additional Documents:
+* [[[the-abyss-gazes-back|The Abyss Gazes Back (And It's ASCII On A CRT Screen)]]]
+* [[[buggy-hardware|Buggy Hardware (or Why I Don't Play Violent Video Games)]]]
+* [[[fragment:scp-3309-april-fools|SCP-3309 -- April Fools 2019 Edition]]]
+[[/div]]
 [[/collapsible]]
 
 ----
 
-[[span style="font-family:Times New Roman; font-size:125%;"]][[[SCP-3464|SCP-#: ●●●|●●●●|●●●●●●|●●●●]]][[/span]]
+[[span class="scp-showcase"]][[[SCP-3464|SCP-#: ●●●|●●●●|●●●●●●|●●●●]]][[/span]]
 
 [[collapsible show="     + Learn more?" hide="- Close excerpt" hideLocation="bottom"]]
 **Summary:** Some wizardy assholes steal Mr. Krab's secret garlic bread formula and start summoning demons with it.
 
-**Commentary:** This was fun to write. It was roughly 5 years ago that I had the idea for extremely gross garlic bread and the strange shenanigans involved with such a phenomenon, and now it's time for that idea to be a thing. So, my plan with this was to make it a relatively inane anart project used to spread the word about food waste. That's a pretty important thing, but it's probably at the very //bottom// of the Foundation's list of things to worry about when the universe can turn into cheese at any moment in the foreseeable future AND past. But I digress.
+**Commentary:** SCP-3464 was my 5th SCP, written in May 2018. 
 
-What other aspects are in this? There's the ghostly voice of Don LaFontaine, a Foundation thaumatologist (because they have those too), demonic shenanigans inspired heavily by Third Law ("demonic edibles" for instance), and an actual demon possessing a hunk of garlic bread. Fun read all together, I promise!
+This was fun to write. It was roughly 5 years ago that I had the idea for extremely gross garlic bread and the strange shenanigans involved with such a phenomenon, and now it's time for that idea to be a thing. So, my plan with this was to make it a relatively inane anart project used to spread the word about food waste. That's a pretty important thing, but it's probably at the very //bottom// of the Foundation's list of things to worry about when the universe can turn into cheese at any moment in the foreseeable future AND past. But I digress.
+
+What other aspects are in this? There's the ghostly voice of Don LaFontaine, a Foundation thaumaturge (because they have those too), demonic shenanigans inspired heavily by Third Law ("demonic edibles" for instance), and an actual demon possessing a hunk of garlic bread. A fun read all together, I promise!
 [[/collapsible]]
 
 ----
 
-[[span style="font-family:Times New Roman; font-size:125%;"]][[[SPC-507|SPC-#: ●●●●●|○|●●●●●●●]]][[/span]]
+[[span class="scp-showcase"]][[[SPC-507|SPC-#: ●●●●●|○|●●●●●●●]]][[/span]]
 
 [[collapsible show="     + Learn more?" hide="- Close excerpt" hideLocation="bottom"]]
-**Summary:** The Centre finds out about Extra-Universal Selachian threats and form a Marine Fighting Team with the know-how to punch it. My first GoI format, and a contest entry.
+**Summary:** The Centre finds out about Extra-Universal Selachian threats and form a Marine Fighting Team with the know-how to punch it. My first GoI format, and Doomsday Contest 2019 entry.
 
-**Commentary:** This is my first entry for my team's (Team Bird) Doomsday Contest 2018 story. It was a blast to write and I definitely plan on writing more SPC in the future.
+**Commentary:** SPC-507 was my 1st GOI Format, written in May 2018. And my 1st entry for Team Bird's Doomsday Contest 2018 series. It was a blast to write and I definitely plan on writing more SPC in the future.
 
-One thing I'm not too happy about is how dense the article is, which people have commented about and explained as being the cause of their downvote. I tried to make things more simplistic during critique sessions and honestly, this is about the most simple the article has been during its various stages of writing. Frankly, things such as "FASH" and "TOP" can be cut out of the article entirely, and I can give the Gaegr character universe-travelling powers. I can make these additions but it'll have to be after the contest ends (cus rules).
+One thing I wasn't too happy about was the article's density, which people had heavily criticized at the time. The original version was much denser, and after receiving a large amount of crit, it's now become the most simple it's been. 
 
 Either way, this is my attempt at giving the Centre a reason to exist in our universe and gives the Avian Division more manpower on the field to fight that bastard Thoth.
 
-Other things:
+**Other things:**
 
 * CHARYBDIS and SCYLLA are references to Greek mythology.
 * MFT CHARYBDIS was my take on supersoldiers, which is something I've always wanted to write 'cause it's fun as heck!
-* There are a //lot// of alt-history elements to this SPC, since the SPC reality deviated from Foundationverse's own a few thousand years ago. Here are some examples of that:
+* There are a //lot// of alt-history elements here, since the SPC reality deviated from Foundationverse's own a few thousand years ago. Here are some examples of that:
  * "The Kingdom of Mycenae" = Greece
  * "New South Wales" = Australia
  * "Poseidon Labs" = Prometheus Labs (though Prometheus Labs actually exists in the SPC canon)
- * "Ophiuchus" = some made-up month
  * Seventh Deviant Crusade = Seventh Occult War
 * "Gægr" and "Kemdulnim" were generated using a fantasy dragon name generator
 * "Quibba" and "Keshrayuth" were generated using a bird race name generator
-* "FASH" was named in such a manner because of a dumb idea I had to slide a lame "bash the fash" joke into the article. Quick note that I do not condone bashing anyone (except shyarks) :O
+* "FASH" was named in such a manner because of a dumb idea I had to slide a lame "bash the fash" joke into the article. A quick note that I do not condone bashing anyone (except shyarks)
 * Kaa, Waxaklahun, and Mih are Mayan numbers
 * Quick thing about the members of MFT CHARYBDIS, because I decided to pick names that are conventionally gender-neutral. Quinn and Jaedan are male while Leah and Haruki are female.
 * LIMP FIREBIRD is a self-insert ;)
 * PortalHunter from site19 came up with Bee Obliteration Registry "K". I'd like to write an article or something about them some day.
 
-**Additional Documents:** 
-
+[[div style="font-weight: bold;]]
+Additional Documents:
 * [[[bird|Team Bird Hub]]]
+[[/div]]
 [[/collapsible]]
 
 ----
 
-[[span style="font-family:Times New Roman; font-size:125%;"]][[[SCP-3570|EE-#: ●●●|●●●●●|●●●●●●●|○]]][[/span]]
+[[span class="scp-showcase"]][[[SCP-3570|EE-#: ●●●|●●●●●|●●●●●●●|○]]][[/span]]
 
 [[collapsible show="     + Learn more?" hide="- Close excerpt" hideLocation="bottom"]]
 **Summary:** The moon turns everyone into birds.
 
-**Commentary:** I am proud of this article.
+**Commentary:** EE-3570 was my 6th SCP, written in June 2018 as another Doomsday Contest entry.
 
-**Additional Documents:** 
+Until we return to the Nest, I will forever be proud of this article.
 
+[[div style="font-weight: bold;]]
+Additional Documents:
 * [[[bird|Team Bird Hub]]]
 * [[[umbral-migratory-sequence|UMBRAL_MIGRATORY_SEQUENCE.txt]]]
+[[/div]]
 [[/collapsible]]
 [[/tab]]
 
 [[tab Translations]]
-[[=]]
-+++ **Page Translations**
+[[div style="text-align: center;"]]
++++ Page Translations
 ++++++ Cool people doing cool translations.
-[[/=]]
+[[/div]]
 ----
 The following are articles of mine that have been translated by other SCP Wiki branches. I'm //super// thankful to anyone that's shared my articles to the international community by taking the time to translate them.
-
 ----
-[[=]]
+[[div style="text-align: center;"]]
 +++ SCPs
-[[/=]]
+[[/div]]
 ----
 
 * **[[[SCP-3787]]]** | **[[https://youtu.be/5hQaGJw-pmw Audio version]]**
@@ -501,9 +473,9 @@ CTapbIu_XyJIuraH]]**
  * **[http://scp-wiki-cn.wikidot.com/scp-3739 Chinese Translation]** by **[[*user ashausesall]]**
 
 ----
-[[=]]
+[[div style="text-align: center;"]]
 +++ Tales
-[[/=]]
+[[/div]]
 ----
 
 * **[[[SCP-2]]]**
@@ -518,9 +490,9 @@ CTapbIu_XyJIuraH]]**
  * **[http://scp-wiki-cn.wikidot.com/crispy-sex-pirates Chinese Translation]** by **[[*user miumeat]]**
  
 ----
-[[=]]
+[[div style="text-align: center;"]]
 +++ Series - Team Bird
-[[/=]]
+[[/div]]
 ----
 
 * **[[[bird|Team Bird Hub]]]**
@@ -538,9 +510,9 @@ CTapbIu_XyJIuraH]]**
  * **[http://lafundacionscp.wikidot.com/the-sacred-djehuti Spanish Translation]** by **[[*user morhadow]]**
 
 ----
-[[=]]
+[[div style="text-align: center;"]]
 +++ Series - A Non-Prophet Organization
-[[/=]]
+[[/div]]
 ----
 
 * **[[[non-prophet-organization-hub|A Non-Prophet Organization Hub]]]**
@@ -559,10 +531,10 @@ CTapbIu_XyJIuraH]]**
 [[/tab]]
 
 [[tab Fan Art]]
-[[=]]
-+++ **Fan Art** 
+[[div style="text-align: center;"]]
++++ Fan Art
 ++++++ Beautiful fan renditions!
-[[/=]]
+[[/div]]
 ----
 +++ [[[SCP-3787]]]
 * **[*https://imgur.com/2McPrdG Glue Factory]** by **[[*user pastarasta1]]** (**[*http://www.scp-wiki.net/pastarasta1-s-simply-epic-artpage Art Page]**)
@@ -582,10 +554,9 @@ CTapbIu_XyJIuraH]]**
 [[/tab]]
 
 [[tab Writing Style]]
-[[=]]
-+++ **Writing Style and Themes** 
-++++++ Ugh, this gushy stuff is always so dramatic.
-[[/=]]
+[[div style="text-align: center;"]]
++++ Writing Style and Themes
+[[/div]]
 ----
 I'm a big science fiction fan, and a diehard fan of the //Halo// series, which is where a lot of my inspiration comes from. Truth be told, I'm a nerd. I would say my articles are typically science fiction-oriented, and I always like to explore some wacky concept to its logical extreme. I'm not always the most successful, but I do try.
 
@@ -600,30 +571,21 @@ Final thoughts: my favourite SCP is [[[SCP-2747]]], and all my stories revolve a
 [[/tab]]
 
 [[tab Declassifications]]
-[[=]]
-+++ **Declassifications** 
+[[div style="text-align: center;"]]
++++ Declassifications
 ++++++ Does anyone read these little blurbs?
-[[/=]]
+[[/div]]
 ----
 * **[https://www.reddit.com/r/SCPDeclassified/comments/84zc9e/scp3980_blind_lead_the_blind/?utm_content=title&utm_medium=hot&utm_source=reddit&utm_name=SCPDeclassified Declassification of Shaggydredlocks' SCP-3980 - Blind Lead the Blind]**
-[[/tab]]
-[[tab Testing]]
-//[[span style="color:#880000;"]]This is simply a list of SCPs tagged "[/system:page-tags/tag/extraterrestrial extraterrestrial]" from Series III and beyond.[[/span]]//
-[[module ListPages separate="no" limit="250" perPage="250" tags="+scp, +extraterrestrial, -heimdall" order="created_at"]]
-||~ SCP File # || %%title_linked%% ||~ Research Contact || %%created_by_linked%% ||
-[[/module]] 
 [[/tab]]
 [[/tabview]]
 
 = --
 
 [[div class="header"]]
-[[=]]
-
 ++++ --Inebriation-- Inoculation complete. Thanks for reading!
 
 [[module Rate]]
 
 Wait, what the heck? Where did that come from?
-[[/=]]
 [[/div]]
