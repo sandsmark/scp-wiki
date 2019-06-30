@@ -53,14 +53,14 @@ title:7happy7's SVG-animation Gallery
     overflow: hidden;
 }
 .artContent h2 span {
-    animation: smooth 8s ease-in-out infinite;
+    animation: smooth 10s ease-in-out infinite;
     display: inline-block;
     width: 100%;
 }
 @keyframes smooth {
-    0% {transform: translate(-120%,0); opacity: 0.3;}
-    30%,70% {transform: translate(0,0); opacity: 1;}
-    100% {transform: translate(120%,0); opacity: 0.3;}
+    0% {transform: translate(-120%,0); opacity: 0;}
+    20%,80% {transform: translate(0,0); opacity: 1;}
+    100% {transform: translate(120%,0); opacity: 0;}
 }
 
 
