@@ -19,17 +19,6 @@ Page 7, (DRO-0001): http://www.scp-wiki.net/fragment:apas-6
 
 [[module CSS]]
 .blinkbar {color: #885e96; animation: blink 1.5s infinite; letter-spacing: -0.13em;}@keyframes blink{to{opacity: .0;}}@keyframes flicker {0% {opacity: 0.9890; }5% {opacity: 0.5842; }10% {opacity: 0.9865; }20% {opacity: 0.0412; }20% {opacity: 0.6255; }25% {opacity: 0.3157; }30% {opacity: 0.7328; }35% {opacity: 0.4654; }40% {opacity: 0.9128; }45% {opacity: 0.2449; }50% {opacity: 0.5485; }55% {opacity: 0.6438; }60% {opacity: 0.1180; }65% {opacity: 0.9085; }70% {opacity: 0.0266; }75% {opacity: 0.6795; }80% {opacity: 0.7812; }85% {opacity: 0.0117; }90% {opacity: 0.2239; }95% {opacity: 0.8897; }100% {opacity: 0.2260; }}@keyframes overlay-anim {0% {visibility: hidden; }10% {visibility: hidden; }11% {visibility: visible; }50% {visibility: hidden; }100% {visibility: hidden; }}
-.danke{
-padding: 5px 5px 5px 15px;
-margin-bottom:10px;
-width: 100%;
-font-family: monospace;
-font-size: 1.1em; }
-.agent{
-background-color:#002200;
-border: 3px solid #55AA55;
-color: #77CC77;
-}
 div.terminal{
     border: 1px solid black;
     border: solid 3px #BBBBBB;
@@ -66,7 +55,7 @@ div.text{
     padding-left: 2em;
     padding-top: 40%;
     font-family: monospace;
-    font-size: 1.2em;
+    font-size: 1.5em;
     }
 
 /* Safari 4.0 - 8.0 */
