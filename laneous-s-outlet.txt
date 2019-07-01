@@ -91,7 +91,11 @@ created_by="The Trashman" prependLine="||~ Page ||~ Rating ||~ Comments ||~ Date
 [[/module]]
 -----------
 [[/tab]]
-
+[[tab COLLARB-CON]]
+[[module ListPages order="rating desc" separate="false" limit="600" perPage="100" tags="collab-con2019" prependLine="||~ Page ||~ Rating ||~ Comments ||~ Poster ||"]]
+|| %%title_linked%% || %%rating%% || %%comments%%  || [[*user %%created_by%%]] ||
+[[/module]]
+[[/tab]]
 [[/tabview]]
 = Oh yeah and here's a rating module
 [[=]]
