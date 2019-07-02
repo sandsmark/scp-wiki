@@ -2,6 +2,12 @@ title:FloppyPhoenix's Author Page
 [[include :scp-wiki:component:scp-trans-pride |trans-pride-logo= --] |trans-pride-footer= --]]]
 
 [[module CSS]]
+/* LISTPAGES EXCEPTION */
+ .preview .span,
+ .infobox{
+     display: none !important;
+}
+
 /* DIV BLOCKS */
  #page-title{
      display: none;
@@ -100,7 +106,7 @@ title:FloppyPhoenix's Author Page
 
 [[module ListUsers users="."]]
 > = **INTERVIEW LOG**
-----
+> ----
 > = **<Begin Log>**
 > 
 > **%%title%%:** I just don't think a //bird// could pose a threat to global normalcy.
