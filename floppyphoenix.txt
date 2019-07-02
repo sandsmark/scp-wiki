@@ -185,12 +185,71 @@ Ah, they're gone. Anyway, //apparently//, this is the place where I get to show 
 [[/div]]
 **Floppy Says:** In the spirit of collaboration, I grant any writer, artist, or otherwise, full permission to use or depict the SCPs, concepts, characters, task forces, locations, or events created by me in your own SCP Wiki work. Drop a link my way; maybe I'll like it, or give you some pointers on how to execute it best!
 
-[[include component:author-page
-  order=created_at |
-  perpage=20 |
-  background=no |
-  image=no |
-]]
+[[div style="text-align: center;"]]
+-----
+++ SCPs
+-----
+[[/div]]
+
+[[module Listpages created_by="=" order="{$order}" tag="-translation +scp" category="-fragment -component" perPage="{$perPage}"]]
+
+**%%title_linked%%**
+ +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
+//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
+//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
+
+[[/module]]
+
+[[div style="text-align: center;"]]
+-----
+++ Tales
+-----
+[[/div]]
+
+[[module Listpages created_by="=" order="{$order}" tag="-translation +tale" category="-fragment -component" perPage="{$perPage}"]]
+
+**%%title_linked%%**
+ +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
+//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
+//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
+
+[[/module]]
+
+[[div style="text-align: center;"]]
+-----
+++ GoI Formats
+-----
+[[/div]]
+
+[[module Listpages created_by="=" order="{$order}" category="-fragment -component" tag="-translation +goi-format" perPage="{$perPage}"]]
+
+**%%title_linked%%**
+ +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
+//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
+//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
+
+[[/module]]
+
+[[div style="text-align: center;"]]
+-----
+++ Other
+-----
+[[/div]]
+
+[[module Listpages created_by="=" order="{$order}" category="-fragment -component" tag="-scp -tale -goi-format" perPage="{$perPage}"]]
+
+**%%title_linked%%**
+ +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
+//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
+//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
+
+[[/module]]
+
+[[div style="text-align: center;"]]
+-----
+++ Collaborations
+-----
+[[/div]] 
 
 [[include component:author-page-collab
   name=SCP-3309 |
