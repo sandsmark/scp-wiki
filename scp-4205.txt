@@ -141,7 +141,13 @@ a img {
                             <span id="header-r"></span>
                         </header>
                         <article id="main">
-                            <div id="scp_logo"></div>
+                            <div id="scp_logo">
+                            <picture>
+    			<source type="image/webp" srcset="http://elusionillusion.com/img/logoscp.webp">
+    			<source type="image/png" srcset="http://elusionillusion.com/img/logoscp.png">
+    			<img src="http://elusionillusion.com/img/logoscp.png">
+    			</picture>
+                            </div>
                             <div id="div1"></div>
                             <div id="div2"></div>
                             <article class="main_options">
