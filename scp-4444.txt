@@ -10,9 +10,6 @@ title:SCP-4444
 sup { 
 vertical-align: top; position: relative; top: -0.5em; 
 }
-@media (max-width: 1635px) {
-   .desktop-only{ display: none !important; visibility:hidden }
-}
 
 :root{ 
 --cutColour: #fafafa;
@@ -24,10 +21,45 @@ color: #FFF;}
 .info-container .collapsible-block-unfolded-link a{
 color: #FFF;}
 
+.desktop-only {
+    height: 32rem;
+    width: 10rem;
+    background: #ffffff;
+    position: sticky;
+    top: 2rem;
+    display: flex;
+    border: solid 1px #444444;
+    padding: 10px;
+    box-shadow: 1px 2px 3px 0px #23334c;
+    overflow: visible;
+    flex-direction: column;
+    transform: translateX(400%);
+}
+
+#page-content {
+    position: relative;
+}
+
+#page-content > div:nth-child(5) {
+    margin-top: -43rem;
+}
+
+@media (max-width: 1250px) {
+    .desktop-only { 
+    	display: none !important; 
+    	visibility:hidden 
+    }
+
+    #page-content > div:nth-child(5) {
+    	margin-top: 0;
+    }
+
+}
+
 [[/module]]
 @@@@
 @@@@
-[[div class="desktop-only" style="height: auto; width: auto; overflow-y:auto; background:#ffffff ; position: fixed; left: 80%; TOP: 190px; display: block; border:solid 1px #444444; float:none; padding:10px; box-shadow: 1px 2px 3px 0px #23334c;"]]
+[[div class="desktop-only"]]
 [[=]]
 [[size 120%]]**SCP-4444**[[/size]]
 [[size 75%]]**File Nav**[[/size]]
