@@ -59,6 +59,18 @@ title:New Pages Feed
 
 [!-- SCP Block --]
 
+[[div class="content-panel right-column"]]
+[[div class="panel-heading"]]
+Random Contest Entries - Voting Period Open!
+[[/div]]
+[[div class="panel-body"]]
+
+[[module ListPages rating=">10" tags="collab-con2019" perPage="5” limit=“100” order="random" separate="false"]]
+%%title_linked%% (+%%rating%%)
+[[/module]]
+[[/div]]
+[[/div]]
+
 [[div class="feature-block desktop-only"]]
 
 A list of all newly created pages in one list can be found [[[most-recently-created| here]]].
