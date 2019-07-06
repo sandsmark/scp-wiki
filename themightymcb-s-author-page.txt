@@ -37,34 +37,12 @@ I'm just a 21 year old college biology student who has no idea what he wants to 
 
 + Here's Some Stuff I Wrote
 
-++ SCP Articles
-
-[[module ListPages created_by="@URL|TheMightyMcB" order="created_at" separate="no" tags="-author -tale -goi-format -hub" perPage="250" prependLine="[[include :icebox:inc:author-table]]" appendLine="[[/table]]"]] 
-[[row]]
- [[cell class="table-cell"]] %%title_linked%%[[/cell]]
- [[cell class="table-cell"]] %%rating%%[[/cell]]
- [[cell class="table-cell"]] %%comments%%[[/cell]]
- [[cell class="table-cell"]] %%updated_at%%[[/cell]]
-[[/row]]
-[[/module]]
-
-[!--
-[[module ListPages created_by="@URL|TheMightyMcB" order="created_at" separate="no" tags="-author -tale -goi-format -hub" perPage="250" prependLine="||~ Item # ||~ Rating ||~ Comments ||~ Created ||~ Last Edited ||"]] 
-|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%updated_at%% ||
-[[/module]]
---]
-
-++ Tales
-
-[[module ListPages created_by="@URL|TheMightyMcB" order="created_at" separate="no" tags="tale" perPage="250" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Created ||"]] 
-|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || 
-[[/module]]
-
-++ GoI Formats
-
-[[module ListPages created_by="@URL|TheMightyMcB" order="created_at" separate="no" tags="goi-format" perPage="250" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Created ||"]] 
-|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || 
-[[/module]]
+[[include component:author-page
+  order=created_at |
+  perpage=20 |
+  background=yes |
+  image=yes |
+]]
 
 ++ Co-Written Work[[footnote]]May include stuff from above. Such is life using modules. Oh well.[[/footnote]]
 
