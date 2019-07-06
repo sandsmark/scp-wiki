@@ -19,15 +19,15 @@ title:New Pages Feed
     background-color: #666;
     color: #fff;
     -webkit-border-radius: 9px 9px 0 0;
-    -moz-border-radius: 9px 9px 0 0;
-    border-radius: 9px 9px 0 0;
+       -moz-border-radius: 9px 9px 0 0;
+            border-radius: 9px 9px 0 0;
     -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3),
     	inset 0 10px rgba(255, 255, 255, 0.2),
     	inset 0 10px 20px rgba(255, 255, 255, 0.25);
-    -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3),
+       -moz-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3),
     	inset 0 10px rgba(255, 255, 255, 0.2),
     	inset 0 10px 20px rgba(255, 255, 255, 0.25);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.3),
+            box-shadow: inset 0 1px rgba(255, 255, 255, 0.3),
     	inset 0 10px rgba(255, 255, 255, 0.2),
     	inset 0 10px 20px rgba(255, 255, 255, 0.25);
 }
@@ -89,17 +89,16 @@ title:New Pages Feed
     display: flex;
     -webkit-box-align: center;
     -webkit-align-items: center;
-    -moz-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
-    -moz-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
     height: 100%;
-    padding: 0.25em;
     text-align: center;
     background: #fff9f0 url(http://www.scp-wiki.net/local--files/component:theme/panel-bg-gradient-reverse.png) bottom repeat-x;
 }
@@ -120,26 +119,26 @@ title:New Pages Feed
     display: flex;
     -webkit-box-align: center;
     -webkit-align-items: center;
-    -moz-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
-    -moz-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
     -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
 }
 
 .contest-link > a {
     color: white;
     font-weight: bold;
     -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
 }
 
 
@@ -159,7 +158,12 @@ title:New Pages Feed
     .mobile-only {
     	display: block;
     }
+    .panel-body > div:nth-child(1) > p {
+        -ms-grid-columns: 1fr 1px 1fr;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
+
 
 [[/module]]
 
