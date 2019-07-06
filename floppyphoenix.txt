@@ -197,7 +197,7 @@ Ah, they're gone. Anyway, //apparently//, this is the place where I get to show 
 -----
 [[/div]]
 
-[[module Listpages created_by="=" order="{$order}" tag="-translation +scp" category="-fragment -component" perPage="{$perPage}"]]
+[[module Listpages created_by="=" order="created_at" tag="-translation +scp" category="-fragment -component" perPage="{$perPage}"]]
 
 **%%title_linked%%**
  +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
@@ -212,7 +212,7 @@ Ah, they're gone. Anyway, //apparently//, this is the place where I get to show 
 -----
 [[/div]]
 
-[[module Listpages created_by="=" order="{$order}" tag="-translation +tale" category="-fragment -component" perPage="{$perPage}"]]
+[[module Listpages created_by="=" order="created_at" tag="-translation +tale" category="-fragment -component" perPage="{$perPage}"]]
 
 **%%title_linked%%**
  +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
@@ -227,7 +227,7 @@ Ah, they're gone. Anyway, //apparently//, this is the place where I get to show 
 -----
 [[/div]]
 
-[[module Listpages created_by="=" order="{$order}" category="-fragment -component" tag="-translation +goi-format" perPage="{$perPage}"]]
+[[module Listpages created_by="=" order="created_at" category="-fragment -component" tag="-translation +goi-format" perPage="{$perPage}"]]
 
 **%%title_linked%%**
  +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
@@ -242,7 +242,7 @@ Ah, they're gone. Anyway, //apparently//, this is the place where I get to show 
 -----
 [[/div]]
 
-[[module Listpages created_by="=" order="{$order}" category="-fragment -component" tag="-scp -tale -goi-format" perPage="{$perPage}"]]
+[[module Listpages created_by="=" order="created_at" category="-fragment -component" tag="-scp -tale -goi-format -author" perPage="{$perPage}"]]
 
 **%%title_linked%%**
  +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
