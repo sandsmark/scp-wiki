@@ -16,8 +16,6 @@ This Tale is the former supplement to the old SCP-2641 -- ([*http://scpdsandbox.
 [[/div]]
 
 [[module CSS]]
-@import url(https://fonts.googleapis.com/css?family=Architects+Daughter);
-
 /* INFO BOX */
 sup {
     vertical-align: top;
@@ -45,16 +43,34 @@ body{
     font-weight: bold;
 }
 
-/* DIV BLOCK */
-.journal {
-    font-family: 'Architects Daughter';
-    background-color: #E5E293;
-    font-size: 16px;
-    font-weight: 500;
-    padding: .25em 1em;
-    margin-bottom: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
+/* JOURNALS */
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap');
+
+ .journal {
+     display: block;
+     overflow: hidden;
+     font-family: 'Architects Daughter', cursive;
+     font-style: normal;
+
+     background-attachment: scroll;
+     background-clip: border-box;
+     background-color: transparent;
+     background-image: linear-gradient(to top, rgb(202, 219, 228) 0%, rgb(231, 233, 220) 8%);
+     background-origin: padding-box;
+     background-position: 0 8px;
+     background-repeat: repeat;
+     background-size: 100% 20px;
+    
+     border: 1px solid #ccc;
+     border-radius: 10px;
+     padding: 10px 10px;
+     margin-bottom: 10px;
+
+     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+ .journal p {
+     line-height: 20px;
+     margin: 0;
 }
 [[/module]]
 
@@ -81,102 +97,124 @@ FUNAI operative [DATA LOST][[footnote]]"[DATA LOST]" remains the designated plac
 The following are excerpts from the transcribed version of [DATA LOST]'s personal journal, translated from Portuguese. Extraneous journal entries have been omitted.  
 
 [[div class="journal"]]
+[[span style="font-family: 'Architects Daughter', cursive; font-size: 20px;"]]
 __**Date: April 24th, 2003**__ 
 48 hours ago, a flyby of the region discovered a maloca about four clicks north of HQ. The navigator aboard the helicopter suggests that it must be the //Emparelhada// tribe — the design is like other buildings belonging to the tribe. Now, we're not at liberty to make guesses here. But based on the picture taken by in-flight surveillance, I'm inclined to believe it. 
-
+@@ @@
 There's one thing to keep in mind — we've been out of contact with the tribe in question for more than twelve years. I'm not about to put the blame on anyone within this organization. It's just that the group appeared to drop off the face of the Earth without warning. They abandoned their village, and neighbouring tribes were just as confused as we were.
-
+@@ @@
 To be out of contact with a tribe for that long? If the Brazilian government found out that FUNAI had gotten so negligent, our already run-dry budget would be sliced in half. Of course, I'm overreacting, but the strange nature of this situation is not something to take lightly. We need to keep tabs on the indigenous populations in this region, not just for information gathering. Or anthropological study. But because they rely on us for protection. And if we aren't around, then what's stopping outside forces from making a mess of our work? Of their livelihood?
-
+@@ @@
 It's too soon to determine what the reason for their movement was (as I'm not about to actually consider that they did vanish from the face of the planet). It's too soon to even assume it's them. The only way to find out is to make contact, and I've assembled four men to assist me with getting to the bottom of this. We should be leaving tomorrow morning.
+[[/span]]
 [[/div]]
 
 [[include :scp-sandbox-3:image-zoom name=javari-valley-maloca.png|caption=A picture of the maloca, taken during a routine flyby of the area on April 24, 2003 (hover to enlarge).|width=300px|align=right]]
 
 [[div class="journal"]]
+[[span style="font-family: 'Architects Daughter', cursive; font-size: 20px;"]]
 __**Date: April 25th**__
 We decided to set up camp for the night next to a river. This river actually intersects with three different indigenous populations if one were to travel downstream. I reckon it should still be another couple of days to the north before we come upon their general area. And that's when the situation gets sticky. Nobody wants to get themselves into trouble in the heart of the Amazon.
-
+@@ @@
 I suppose it doesn't hurt to ruminate on the tribe. I'm more connected to this particular group of Indians than any in the region. I was actually a part of the initial discovery party when I first joined FUNAI! It's been 30 long years since, hasn't it? Fabian keeps floating over my shoulder, joking about how old I am every once in a while. And only Joaquin laughs, but am I really surprised? 
-
+@@ @@
 Speaking of Joaquin. We had an hour-long discussion about the most horrible things. Basic drinking night talk. I entertained the horrifying idea of [[[scp-2003|Amazonian wandering spiders taking over the world]]]. Joaquin entertained the idea that I managed to remain married to my wife after all these years. I can admit that even I laughed at that. If only a little bit.
+[[/span]]
 [[/div]]
 
 [[div class="journal"]]
+[[span style="font-family: 'Architects Daughter', cursive; font-size: 20px;"]]
 __**Date: April 27th**__
 I went for a walk last night. It was too dark to be particularly safe, and I suppose I should have been more careful. But it's time I lightened up, like Fabian and Joaquin. I used to be like them when I first joined. I spent a while last night gazing up at the stars through the foliage, just to let my imagination flow. About everything. I don't get the opportunity to do that too often these days. It makes me wonder what I've missed all these years. My family. My dear Cátia.
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+[[/span]]
 [[/div]]
 
 [[div class="journal"]]
+[[span style="font-family: 'Architects Daughter', cursive; font-size: 20px;"]]
 __**Date: April 28th**__
 In the early evening, we happened upon an outpost — the one spotted during the initial flyby last week. Nothing too extravagant — a one-room maloca, dilapidated and abandoned for who knows how long. It certainly doesn't deviate from the way they plan their settlements if this truly is the mark of their tribe. A discovery such as this is great news, and it means we must be close to their settlement. 
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+[[/span]]
 [[/div]]
 
 [[div class="journal"]]
+[[span style="font-family: 'Architects Daughter', cursive; font-size: 20px;"]]
 __**Date: April 30th**__
 It took us until mid-day yesterday to come to the village. It wasn't long until someone found us. Three boys, couldn't have been much older than ten, twelve. Based on the patterns painted on their foreheads, they were definitely members of the //Emparelhada// tribe. They flanked us. They had spears. I made sure to be wary of my distance and mannerisms. But there was no preventing what happened.
-
+@@ @@
 When they approached us, Joaquin flashed a gesture of peace used by the Indians in the region, and a word of greeting in their dialect. What he got was a spear to the thigh. And if that wasn't bad enough, well, I don't know what in God's name was in that spear, but I've never seen that kind of damage. At the point of contact, his flesh exploded in every direction.[[footnote]]The spear in question is the first recorded instance of URA-2641-1. The spear was transformed such that the applied force exits the spearhead in all directions, rather than in a single direction.[[/footnote]] Gutted his leg. It defied logic. He fell to the ground at once. Fabian vomited. As bad as it was, I couldn't take my eyes off it. 
-
+@@ @@
 The damage was done. Joaquin couldn't be moved without causing incredible pain, I'm sure. But if he wasn't medically evacuated, those boys would have picked him apart. Devon, the largest of our group, threw Joaquin over his shoulder. He was screaming. I can imagine we all were at that moment. But he was alive, he was safe.
-
+@@ @@
 We ran. Luckily, the boys didn't follow us. But I think their plan was to scare us off. It's as if they were protecting the village from us, or protecting us from the village. Our fallback plan was the maloca. From there, we could call for a medical evacuation, and get him home safe. I was going to call for reinforcements. I had to. Anything to ensure the safety of the FUNAI agents that serve under me, and the safety of the tribe. 
+[[/span]]
 [[/div]]
 
 [[div class="journal"]]
+[[span style="font-family: 'Architects Daughter', cursive; font-size: 20px;"]]
 __**Date: May 1st**__
 Vincent, our physician, was the most concerned for Joaquin. The spear ruptured his femoral artery, and the impact crushed his pelvis. We had his thigh bound up, administered some morphine. But Vincent claimed he wouldn't last long in his condition. That he needed evac //hours ago//.
-
+@@ @@
 I called HQ, and our flare was visible in the early morning. Joaquin was airlifted. We've been told he'll be hospitalized in the Immediate Care ward of HQ for quite some time, and in the Lord's name, I pray he'll be alright. They're sending reinforcements tomorrow. I told them that I won't allow anyone to be armed, but despite the situation, HQ insists that we aren't to approach that village without protection.
-
+@@ @@
 I don't want any lives to be lost because of this endeavour. I don't want to lose you, Cátia. But we have to get to that village. As far as I'm concerned, it's our duty.
+[[/span]]
 [[/div]]
 
 [[div class="journal"]]
+[[span style="font-family: 'Architects Daughter', cursive; font-size: 20px;"]]
 My dear Cátia. I may never see you again. The damage is done. I hope they manage to retrieve this letter so that you might understand. So that you might forgive me. Never forget me. I love you.
-
+@@ @@
 __**Date:**__
 They dispatched Team 04-D a few days ago. Four soldiers, M16s, and Kevlar vests were there for our safety. They made sure to outfit us with the vests as well, --as if Kevlar could do anything to prevent against exploding spears.-- We entered the village from the south but weren't met with opposition. The village seemed vacant. We sat in the bush for an hour waiting for someone, something. Nothing.
-
+@@ @@
 Our point of interest was a shrine of sorts, located in the centre of the village. Going there was a mistake.
-
+@@ @@
 When reinforcements first arrived, the soldiers told us of reports they had gotten. Notices of strange behaviour within nearby indigenous populations. As far as 50 clicks away, ten local Indian tribes had somehow gotten a hold of the same occult beliefs. To have so many independent groups begin to follow the same beliefs, the same rituals, at the same time, was unheard of. But that shrine, it explained it all.
-
+@@ @@
 The building had a certain air to it. I can't describe it by any clinical means, but it was euphoric. Lingering, but distant. Tainted by time and emotions. I liken it to reminiscing about something from your childhood, for instance. I couldn't frame in my mind what there was to be joyful about, but it was, and it is. And then we saw the paintings.
-
+@@ @@
 Lord, the paintings. In the centre of the shrine was a stack of murals. There must have been hundreds of them in there. I couldn't count, there were too many. But they were beautiful — vibrant colour composition, a calculated level of subtlety. 
-
+@@ @@
 It was at that point we realized our true mission. We were to collect the paintings and bring them back to HQ for study. This was a discovery FUNAI hadn't yet seen before. But it was clear that the movement of these artifacts was impossible. There were too many. It would take too many trips. Time we didn't have. We sat there, poring over them. Those magnificent murals.
-
+@@ @@
 They told a grand, disconnected narrative. Some fragments showed us endless war, in the distant past and future to come, between vast and incomprehensible factions using arcane means. But at the centre of it all was a being. Not a monster, but a protector. It was only referred to as the 'Eljor. 'Eljor the Custodian. 'Eljor the Mystic. It was going to save them, and it was going to bring us all too.
-
+@@ @@
 Before we could realize what was happening, we noticed something off with Vincent. He seemed far gone. He was the most interested in the murals, and the most distant. I don't know how it happened, and I don't know why. But he felt off. Different. He said the paintings spoke to him. That a presence asked, pleaded, for its true salvation. He asked us what we should do about it. Somehow, the answer was clear. We told him to listen. And I'm so Goddamn sorry.
-
+@@ @@
 There was a struggle, something unseen, and I knew that Vincent was the cause of it. But I didn't have the time to react, as seconds later, the building collapsed in on itself. Vincent did it. I didn't understand how. Or why.
-
+@@ @@
 One of the soldiers was crushed when the roof caved in on him. We didn't help him. We fled. And then the villagers appeared. Hundreds of them. They came out of nowhere and they were all staring. They saw us. They knew. And Vincent was staring right on back.
-
+@@ @@
 A few of them grabbed at one of the soldiers, trying to drag him into the crowd. Shots rang out, the first couple connecting as tribesmen crumpled to the floor. But then the gun was different. It had to be the gun. It shot out of his hands, throwing him backwards. He tried to scramble away, but there was no time. It was too late. Fabian ran but tripped over some of the debris. The tribesmen grew closer. The next second, he was screaming, ripping his clothes to shreds, writhing in pain, his strength so great that even the Kevlar was in tatters. As if he was trying to pull one of his sick fucking pranks. But he wasn't laughing. Nobody was. 
-
+@@ @@
 And then the tribesmen swarmed the shrine, or whatever was left of it, and began to reclaim the paintings, shoving them wherever they could fit them. Some scrambled to get one final glance, exposing themselves to as many as they could. Some cried in agony. Others were shaking on the floor, panting, vomiting, bleeding. I saw. Opposites. The paintings, they were doing this, and I knew. And so did they.
-
+@@ @@
 I ran. I don't know how I escaped. I went, into the jungle, nearly ran into a tree, but my lungs collapsed under the weight of unseen toxins when I passed it. It was them. I went back, and my feet were on fire. Yet I stopped for nothing. Villagers were crumpled on the ground beside me. Some were injured, some had gone mad, and some must have been dead. But I saw, and it was upon them all, and it was upon my men, and I knew it was upon me too, and there was no escape.  But I didn't care. I needed to set things right. 
-
+@@ @@
 I had a few rations, no comms. There was no time to whimper. There was only time to act, and I did, as I crouched into the nearest settlement. I hid in the wall. There were ants, and it was cramped, and hot, sticky, felt hard to breathe. But that's where I hid. It was safer inside. They didn't see. But they knew I was near.
-
+@@ @@
 I ate little, only enough to survive. I was there for days. There were unending hours of unrest, of torment. Screaming. Someone out there needed my help. There had to be a way. But I never saw. I only knew.
-
+@@ @@
 The rations emptied. So did the water. I waited another full day before emerging. The struggle hadn't ended yet, but I needed to get out. I needed to save someone, anyone, at least a single person. I need to save you, Cátia. I stumbled out of my hole. Dwellings dismantled, foreign objects scattered about, strange things, bodies mangled and torn, twisted, off-colour, most smelling, some still shuddered as muscles spasmed and foam poured out of their mouths. The paintings had done this, but it was different. Evolved. Advancing. I knew they were opposites, but now I could see it too. 
-
+@@ @@
 And then they found me. I ran to the shrine, never looking back. I needed to fix this. For FUNAI, my team, the tribe. For my dear Cátia. Lord, forgive me. Please, Cátia, forgive me. I found a stack of paintings, some destroyed, most intact. I shuffled through them, glimpsed at random details, crushing some to get past. I needed to know how this all ended.
-
+@@ @@
 Then there were paintings of me. My family. They knew. I saw you there. They knew about you. Why didn't they tell me of your pain? I saw myself immolating in the flames my work caused. I saw you confused and alone as your mother and I fought. The void in your heart. You couldn't deal with the grief of not seeing me. We talked every few months via letter. But I spared not even a single picture, and you never even got to hear the sound of my voice. Please forgive me. You grew up alone. My heart was embedded in my work. Always work.
-
+@@ @@
 But the paintings showed darker truths. Our struggles. You were alone. And then I was there. I never laid a hand on you, but the paintings, the Goddamn paintings say otherwise, and Lord help me, I don't remember what the truth is anymore. They changed it. Please. Please be okay, Cátia. I miss you.
-
+@@ @@
 And then it showed more recent events. The outpost. What they did there. How was I so blind to it? They sacrificed their own people to that thing! I don't even think they knew what they were doing. But it must have worked to appease it. And now I know, that there must be another way to stop it. I knew, and I don't want to know. I wept, and even now, I weep. They built that place to keep it at bay. To keep it from growing. They were trying to save us all. But we interfered. We did not see. But I do. Their only survival, my survival, lies in its destruction. 'Eljor will cease to be. And I fear, so will I.
-
+@@ @@
 Cátia, I want you to see. You already know. But now you must see. And then we can be together. For our sake.
+[[/span]]
 [[/div]]
 
 [[footnoteblock]]
