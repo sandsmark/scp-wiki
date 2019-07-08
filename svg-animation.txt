@@ -28,6 +28,7 @@ title:7happy7's SVG-animation Gallery
 [[*user Fantem]]
 [[*user Nanimono Demonai]]
 [[*user SunnyClockwork]]
+[[*user thd-glasses]]
 [[*user TPS-Geronam]]
 
 = **CC BY-SA 3.0**
@@ -51,6 +52,7 @@ title:7happy7's SVG-animation Gallery
 @import url("http://www.scp-wiki.net/local--files/svg-animation/recycle.css");
 @import url("http://www.scp-wiki.net/local--files/svg-animation/scarlet-2.css");
 @import url("http://www.scp-wiki.net/local--files/svg-animation/cotbg.css");
+@import url("http://www.scp-wiki.net/local--files/svg-animation/beyondE.css");
 
 .artContent h2 {
     text-align: center;
@@ -116,6 +118,34 @@ title:7happy7's SVG-animation Gallery
     transform: rotateY(360deg);
 }
 
+/* NanimonoDemonai's warning box */
+.warning {
+    position: relative;
+    margin: 2em 0;
+    padding: 25px 10px 7px;
+    border: solid 2px #b01;
+}
+.warning h1{
+    position: absolute;
+    margin-top: 0;
+    display: inline-block;
+    top: -2px;
+    left: -2px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    font-size: 17px;
+    background: #b01;
+    color: #ffffff;
+    font-weight: bold;
+}
+.warning p {
+    margin: 0; 
+    padding: 0;
+}
+
+
 #header {
     background: var(--anim-pride) 15px 40px no-repeat !important;
     background-size: 6rem !important;
@@ -138,6 +168,11 @@ title:7happy7's SVG-animation Gallery
 [[div class="artContent"]]
 ++* Welcome to the bizarre gallery...
 This is an artwork-page, **and also a component-page!** You can use these things for your article by using @@[[include]]@@ method. Please enjoy my SVG-animation!
+
+[[div class="warning"]]
++* [[span class="fa fa-exclamation-triangle fa-lg"]]@<&nbsp;>@[[/span]]CAUTION
+Some SVGs may not be displayed correctly in **Edge**, **IE** and **Firefox**. __Please use **Chrome** or browsers of smartphones__.
+[[/div]]
 [[toc]]
 
 + GoI-EN
@@ -168,6 +203,15 @@ This is an artwork-page, **and also a component-page!** You can use these things
 > http://www.scp-wiki.net/marshall-carter-and-dark-hub
 > ----
 > [[include :scp-wiki:svg-animation |mcdLogo=true|width=100%]]
+----
+
++ GoI-KO
+[[div class="beyondE animSVG" style="padding-bottom: 50%; background-image: var(--beyondE);"]]
+[[/div]]
+> Based on [[*user thd-glasses]]'s BEYOND ENTROPY logo(SCP-KO)
+> http://ko.scp-wiki.net/beyond-entropy-hub
+> ----
+> [[include :scp-wiki:svg-animation |beyondE=true|width=100%]]
 ----
 
 + GoI-CN
@@ -257,6 +301,14 @@ This is an artwork-page, **and also a component-page!** You can use these things
 @import url("http://www.scp-wiki.net/local--files/svg-animation/fixed-flowers.css");
 [[/module]]
 [[div class="fixed-flowers animSVG" style="width: {$width}; padding-bottom: calc({$width} / 2); background-image: var(--fixed-flowers);"]]
+[[/div]]
+[[/iftags]]
+
+[[iftags [[#ifexpr {$beyondE} == (true) | - ]]]]
+[[module CSS]]
+@import url("http://www.scp-wiki.net/local--files/svg-animation/beyondE.css");
+[[/module]]
+[[div class="beyondE animSVG" style="width: {$width}; padding-bottom: calc({$width} / 2); background-image: var(--beyondE);"]]
 [[/div]]
 [[/iftags]]
 
