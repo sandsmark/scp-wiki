@@ -23,6 +23,7 @@ title:7happy7's SVG-animation Gallery
 **Authors of Original logos(alphabetical order):**
 [[*user Aelanna]]
 [[*user breaddddd]]
+[[*user Chubert]]
 [[*user djkaktus]]
 [[*user DrKens]]
 [[*user Fantem]]
@@ -30,6 +31,7 @@ title:7happy7's SVG-animation Gallery
 [[*user SunnyClockwork]]
 [[*user thd-glasses]]
 [[*user TPS-Geronam]]
+[[*user TwistedGears]]
 
 = **CC BY-SA 3.0**
 [[include :topia:sp-rate-info-2 end= --]]]
@@ -44,6 +46,7 @@ title:7happy7's SVG-animation Gallery
 ]]
 [[include :topia:pride-animated-source]]
 [[module CSS]]
+@import url("http://www.scp-wiki.net/local--files/svg-animation/ciLogo.css");
 @import url("http://www.scp-wiki.net/local--files/svg-animation/caecus-c.css");
 @import url("http://www.scp-wiki.net/local--files/svg-animation/fixed-flowers.css");
 @import url("http://www.scp-wiki.net/local--files/svg-animation/gocLogo.css");
@@ -207,6 +210,14 @@ Some SVGs may not be displayed correctly in **IE**[[footnote]] ALL OF THEM ARE N
 > ----
 > [[include :scp-wiki:svg-animation |mcdLogo=true|width=100%]]
 ----
+[[div class="ciLogo animSVG" style="width: 100%; padding-bottom: calc(100% / 1.5); background-image: var(--ciLogo);"]]
+[[/div]]
+> Based on [[*user TwistedGears]] and [[*user Chubert]]'s CI logo (an old edition) and [[*user djkaktus]]'s CI logo (a new edition)
+> http://www.scp-wiki.net/chaos-insurgency-hub
+> http://www.scp-wiki.net/groups-of-interest
+> ----
+> [[include :scp-wiki:svg-animation |ciLogo=true|width=100%]]
+----
 
 + GoI-KO
 [[div class="beyondE animSVG" style="padding-bottom: 50%; background-image: var(--beyondE);"]]
@@ -258,6 +269,14 @@ Some SVGs may not be displayed correctly in **IE**[[footnote]] ALL OF THEM ARE N
 
 
 
+
+[[iftags [[#ifexpr {$ciLogo} == (true) | - ]]]]
+[[module CSS]]
+@import url("http://www.scp-wiki.net/local--files/svg-animation/ciLogo.css");
+[[/module]]
+[[div class="ciLogo animSVG" style="width: {$width}; padding-bottom: calc({$width} / 1.5); background-image: var(--ciLogo);"]]
+[[/div]]
+[[/iftags]]
 
 [[iftags [[#ifexpr {$cotbg} == (true) | - ]]]]
 [[module CSS]]
