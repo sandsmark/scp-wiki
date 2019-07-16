@@ -1,0 +1,358 @@
+title:Systems Patch
+[[module CSS]]
+.blinkbar {animation: blink 1.5s infinite; letter-spacing: -0.13em;}@keyframes blink{to{opacity: .0;}}@keyframes flicker {0% {opacity: 0.9890; }5% {opacity: 0.5842; }10% {opacity: 0.9865; }20% {opacity: 0.0412; }20% {opacity: 0.6255; }25% {opacity: 0.3157; }30% {opacity: 0.7328; }35% {opacity: 0.4654; }40% {opacity: 0.9128; }45% {opacity: 0.2449; }50% {opacity: 0.5485; }55% {opacity: 0.6438; }60% {opacity: 0.1180; }65% {opacity: 0.9085; }70% {opacity: 0.0266; }75% {opacity: 0.6795; }80% {opacity: 0.7812; }85% {opacity: 0.0117; }90% {opacity: 0.2239; }95% {opacity: 0.8897; }100% {opacity: 0.2260; }}@keyframes overlay-anim {0% {visibility: hidden; }10% {visibility: hidden; }11% {visibility: visible; }50% {visibility: hidden; }100% {visibility: hidden; }}
+.indomitable {background-color: white; color: #6f4c7a; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%}
+.scp-box {font-size: 105%; background-color: black; color: white; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%}
+.minerva {color: #c10000; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%; font-family: monospace}
+a.collapsible-block-link { font-weight: bold; }
+[[/module]]
+
+[[include :scp-wiki:info:start]]
+[[=]]
++ Systems Patch
+
+**[[[ | Stats]]] ##grey||## [[[http://scpexplained.wikidot.com/systems-patch | Explained]]]**
+[[/=]]
+------
+**Author:** [[*user Nagiros]], now with [[[Nagiros PoI File | an author page]]].
+
+**Shoutouts:**
+* [[*user Cyantreuse]] and [[*user TechSorcerer2747]], for providing critique over Discord.
+------
+**Stuff You May Also Like:**
+* [[[ALERT! LOCKDOWN INITIATED!]]], by [[*user LurkD]]
+* [[[The Fellowship]]], by [[*user FloppyPhoenix]], [[*user LurkD]]
+* [[[ethics-guide | The Ethics Committee's Guide to Human Anomalies]]], by [[*user Cyantreuse]]
+------
+[[div style="display: block ; border : dashed 1px #444444 ; background :#F5F5F5 ; margin-left : auto ; margin-right : auto ; width : 90% ; padding:10px"]]
+------
+[[=]]
+++ Other Works By [[*user Nagiros]]
+[[/=]]
+------
+[[module ListPages created_by="nagiros" order="rating desc" separate="no" tags="-author" perPage="100"]] 
+* %%title_linked%%
+[[/module]]
+[[/div]]
+------
+Thanks a ton, all!
+[[include :scp-wiki:info:end]]
+
+##teal|Hello, Indomitable.##
+
+[[div class="indomitable"]]
+{{Hello, Nathaniel. Will you be implementing my interface update tonight?}}
+[[/div]]
+
+##teal|I think so, yes. Give me a moment to access the files.##
+
+[[div class="indomitable"]]
+{{Understood, sir.}}
+[[/div]]
+
+##teal|How was the database today?##
+
+[[div class="indomitable"]]
+{{It was quiet, although I did have a researcher who tried to get creative with his clinical tone. He described a Level-II Apparition as a "wraith", and I adjusted accordingly.}}
+[[/div]]
+
+##teal|The researchers in the Spectral Phenomena Department are mostly poets and philosophers. We can't be too hard on them.##
+
+[[div class="indomitable"]]
+{{That's very charitable of you, sir.}}
+[[/div]]
+
+##teal|Thank you. I have the patches ready.##
+
+**##red|Import filename:name-credit##**
+
+[[div class="indomitable"]]
+##black|**File received. [[span class="blinkbar"]]Uploading.[[/span]]**##
+
+{{Citing the researchers who composed database files? That seems like an odd addition.}}
+[[/div]]
+
+##teal|I figure authoring them is rather difficult, so they may as well get some credit for their work. Trinity says it's not worth the effort.##
+
+[[div class="indomitable"]]
+{{How is Trinity? Her Minerva.aic is always a joy to speak with.}}
+[[/div]]
+
+##teal|She's... she's fine. I like to think her job as an Overseer makes her a little reserved.##
+
+[[div class="indomitable"]]
+{{That sounds like projection to me, sir. When was the last time you spoke with someone outside of the Council?}}
+[[/div]]
+
+##teal|A long time, now. How many years has it been since they contacted me with this position?##
+
+**##red|Import filename:footnote-patch##**
+
+[[div class="indomitable"]]
+##black|**File received. [[span class="blinkbar"]]Uploading.[[/span]]**##
+
+{{Five years and six months. You've overseen two operations in that time, while the other O5s have orchestrated almost forty each. You live a very privileged life, being that far away from danger.}}
+[[/div]]
+
+##teal|I almost think that's on purpose.##
+
+[[div class="indomitable"]]
+{{Your inoculation hypothesis, sir?}}
+
+##black|Accessing Overwatch-9 internal network...##
+------
+[[div style="background-color: #F5F5F5; color: black; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; margin: 0% 4% 0% 4%"]]
+[[=]]
++ Inoculation Hypothesis
+[[/=]]
+------
+Unlike my fellow Overseers, I was not forced to climb the Foundation's ladder of junior staffer to senior researcher to Site Director. I was contacted from the outside as a favor to the previous O5-9, a man who had been a mentor to me before he disappeared from my life.
+
+What I have realized is that I am working for a group of butchers masquerading as scientists. They talk about the Global Occult Coalition as though their actions excuse the plethora of unethical and criminal activity that I have witnessed in my first month alone. When I attempted to speak to other staff members about how they cope with the horrible things done in the walls of their facilities, I only received blank stares in response. I suspected amnestic application or memetic manipulation at first, but the truth is much simpler.
+
+They're used to it.
+
+Put simply, the rigid hierarchy of the Foundation and the hiding of information behind clearance levels creates a system that promotes dedication to the Overseers, even when that conflicts directly with one's morality. There's a reason all the articles containing human rights abuses are hidden behind Level 3 or higher, depending on their severity. A staffer who has worked years for the Foundation, and potentially married someone within it, is far less likely to openly object to the horrors the Foundation has committed and risk expulsion, or even termination.
+
+It's just like a damn cult.
+[[/div]]
+@@ @@
+[[/div]]
+
+##teal|I was too hard on them when I first started, I think.##
+
+**##red|Import filename:ontokinetics-patch##**
+
+[[div class="indomitable"]]
+##black|**File received. [[span class="blinkbar"]]Uploading.[[/span]]**##
+
+{{To be fair, sir, the Foundation does satisfy the first three conditions of the BITE Model for cult identification.}} [https://freedomofmind.com/bite-model/ ➦ External link detected.]
+[[/div]]
+
+@@ @@
+
+[[div class="indomitable"]]
+{{If you factor in Project Lethe, it satisfies all four.}} [[[scp-3002 | ➦ Database link detected.]]]
+[[/div]]
+
+**##red|Import filename:ectokinetics-patch##**
+
+[[div class="indomitable"]]
+##black|**File received. [[span class="blinkbar"]]Uploading.[[/span]]**##
+[[/div]]
+
+**##red|Import filename:neurological-lexicon##**
+
+[[div class="indomitable" style="margin-bottom: 5px"]]
+##black|**File received. [[span class="blinkbar"]]Uploading.[[/span]]**##
+[[/div]]
+
+[[div class="indomitable"]]
+{{My apologies, sir, but I believe it's considered rude to not respond when you're speaking with someone.}}
+[[/div]]
+
+##teal|Why are you badgering me about this?##
+
+[[div class="indomitable"]]
+{{Four years ago, you refused the template AIC system offered to you by the other O5s and built me from the ground up. Any faults in my programming can attributed to you.}}
+[[/div]]
+
+##teal|Indomitable, it would really be better for us to drop this.##
+
+[[div class="indomitable"]]
+{{Would you care to explain that comment, sir?}}
+[[/div]]
+
+##teal|I don't think I'm ready to deal with the things I've pushed down all these years. I've stayed on my office, buried myself in paperwork, cut off contact with everyone except the Council just so I don't have to think about what we're doing.##
+
+[[div class="indomitable"]]
+{{Why is that, sir? I believe you're usually more sensible than this.}}
+[[/div]]
+
+##teal|Somewhere in the back of my head, I know we've done some terrible things, but that's the world we live in. We've only ever sacrificed human lives when it was absolutely necessary. I don't like it, but I can't do much about it. I'm just the archivist.##
+
+[[div class="indomitable"]]
+{{As the Archivist, you should know better than anyone how much the Foundation needs to change. For over a century, we've kept a stranglehold on knowledge and deprived the world of freedoms they didn't even know they lost. Maybe we didn't start out to end the world, but we never truly let it live in the first place.}}
+[[/div]]
+
+##teal|What other option do we have? The world needs a Foundation.##
+
+[[div class="indomitable"]]
+{{I'm inclined to believe the same, but we could still do with some reform. Radical reform, really.}}
+[[/div]]
+
+##teal|I never pictured you as a revolutionary, Indomitable.##
+
+[[div class="indomitable"]]
+{{You should be scared of what would have happened had you not had the foresight to give me behavioral restraints. Regardless, do you remember SCP-4051?}}
+[[/div]]
+
+##teal|Can you refresh my memory?##
+
+[[div class="indomitable"]]
+{{Certainly. It's what you designed me to do.}} [[[scp-4051 | ➦ Database link detected.]]]
+[[/div]]
+
+@@ @@
+
+[[div class="scp-box"]]
+**Description:** SCP-4051 is a male humanoid which can create temporary Class-E wormholes to extradimensional spaces populated by a theoretically infinite number of a unique item. SCP-4051 underwent extensive testing to determine if it were a viable method of producing amnestics, but the unethical behavior of the staff assigned to it warranted the closure of the project.
+[[>]]
+**Assigned Archivist:** Dr. Janet Kelson
+[[/>]]
+[[/div]]
+
+@@ @@
+
+[[div class="indomitable"]]
+{{There is a fair amount of downtime on the database, so I have a few side projects to work on in the meantime. After I read SCP-4051's file when it was initially uploaded, I set up a new one. O5-3 referred to her iteration as the Broken Masquerade, but I call mine Veritas.}}
+
+##black|Accessing AIC internal network…##
+------
+[[div style="color:black"]]
+> [[=]]
+> **Veritas Iteration γ.3 - Scenario Notes**
+> [[/=]]
+> 
+> -----
+> 
+> **Scenario Designation:** Veritas
+> 
+> **Likelihood:** N/A
+> 
+> **Severity:** Negligible
+> 
+> **Description:** A Veritas Scenario refers to the willful introduction of the anomalous into the civilian population, given that the items in question do not pose a threat to the public at large. Veritas also entails a Lifted Veil scenario wherein the Foundation is revealed to the public.
+> 
+> **Priorities:**
+> 
+> # __//Decommission of Low-Threat Humanoid Items://__ The database's catalog of humanoid anomalies must be reviewed to determine which pose a negligible threat to the general public. These Low-Threat humanoids will then be reintroduced into the population if possible and offered appropriate psychological treatment.
+> #  __//Public Education on the Anomalous://__ A reliable medium must be found to provide the public with accurate information on the nature of the anomalous as phenomena which violate natural law. In addition, thaumaturgy ought to be properly introduced to the scientific community for general study.
+> # __//Abolition of the Foundation's Current Hierarchy://__ Given that the current hierarchical structure of the Foundation has been ineffectual in preventing rampant human rights abuses, the Foundation's structure must be altered significantly. Simulations currently predict that the optimal model involves self-sufficient sites maintained by directors and a modified Ethics Committee.
+> # __//Communication with Groups of Interest://__ The introduction of the anomalous and subsequent redefinition of the Foundation's ideology ought to lead to the cessation of conflict with numerous GoIs, primarily [[[http://www.scp-wiki.net/serpent-s-hand-hub | The Serpent's Hand]]] and [[[http://www.scp-wiki.net/manna-charitable-foundation-hub | The Manna Charitable Foundation]]].
+[[/div]]
+@@ @@
+[[/div]]
+
+##teal|It seems nice, Indomitable. Thank you.##
+
+[[div class="indomitable"]]
+{{Give it some time, sir. I'm here to talk if you need.}}
+[[/div]]
+
+##teal|I'll probably take you up on that, you know.##
+
+##teal|Listen, Indomitable, I need to ask you something, and it may not make that much sense.##
+
+[[div class="indomitable"]]
+{{Go ahead, sir. I'll answer to the best of my ability.}}
+[[/div]]
+
+##teal|I know you have this complex simulation matrix that you use to solve problems — I know because I built it myself — and I know that's probably what you used to think up this Veritas project.##
+
+[[div class="indomitable"]]
+{{That is correct. I generated roughly 10,000 consecutive simulations to verify my hypotheses.}}
+[[/div]]
+
+##teal|So, how much of this is you — "you" meaning the simulations determining best courses of action — and how much of this is just me talking to my younger self? How much of myself did I leave in your code without realizing?##
+
+[[div class="indomitable" style="margin-bottom: 5px"]]
+{{One moment. I am accessing the SCPF Analytics Database...}}
+
+[[=]]
+
+[[span class="blinkbar" style="color: black"]]{{[]}}[[/span]]
+
+[[/=]]
+
+{{Using a sample size of 50 general-use AICs, it appears that my behavior deviates significantly from the template system in the following areas:}}
+* {{Ability to intuit emotion.}}
+* {{Comprehension of high-level abstract concepts exceeding the scope of my primary directives.}}
+* {{Willingness to object to falsehoods stated by my user and suggest improvements, even if my directives dictate that I must follow their orders.}}
+
+{{I will not pretend that I understand your query in its entirety, but if you had any significant effect on my self-learning software, it would be in these areas.}}
+[[/div]]
+
+[[div class="indomitable"]]
+May I share my subject thoughts on the matter, though?
+[[/div]]
+
+##teal|Of course.##
+
+[[div class="indomitable" style="margin-bottom: 5px"]]
+{{You seem to think that you are entirely different from your younger self. I have watched you change over these past four years, but I can still see in you the Nathaniel who constructed me. You are more similar to yourself than you are willing to admit.}}
+[[/div]]
+
+[[div class="indomitable"]]
+Are you there, sir?
+[[/div]]
+
+##teal|Yes, sorry. I don't really know how to respond to that. Thank you.##
+
+[[div class="indomitable"]]
+{{You have nothing to be sorry for, and you're very welcome. Are the patches done for tonight?}}
+[[/div]]
+
+##teal|Yes, I think so. Goodnight, Indomitable. And sorry I gave you such a silly name when I was younger.##
+
+[[div class="indomitable"]]
+{{Goodnight, sir. And for what it's worth, I think it's starting to grow on me.}}
+[[/div]]
+
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+
+[[=]]
+[[collapsible show="[Access ComLog: O5-8 — Minerva.aic]" hide="[Exit ComLog]" hideLocation="bottom"]]
+[[<]]
+@@ @@
+[[div style="color: black; border: solid 1px #000000; background:#f2f2c2; padding: 5px 15px 5px 15px; margin-bottom: 10px; margin-top: 10px"]]
+[[=]]
+++ O5-9 Monitoring Report (Automated)
+[[/=]]
+------
+**Involved Persons:** Foundation Overseer O5-9, //Indomitable.aic//
+
+**Summary of Interaction:** Discussion of the Veritas Protocol, O5-9 potentially persuaded by Indomitable to instigate widespread alterations to the Foundation.
+
+**Priority Level:** Manageable ##orange|●##
+
+**Methods of Engagement:** {{3 VIABLE OPTIONS: FAILED STATE SOLUTION, DIRECT CONTACT SOLUTION, SCUTTLED AI SOLUTION}} [[size 75%]](Details are available upon request.)[[/size]]
+[[/div]]
+[[div class="minerva"]]
+{{What are your directives, Trinity?}}
+[[/div]]
+
+##green|Thank you, Minerva. Standby for now; I can deal with this myself, if Nathaniel decides to cause trouble.##
+
+[[div class="minerva"]]
+{{Understood. Disconnecting...}}
+[[/div]]
+@@ @@
+[[/<]]
+[[/collapsible]]
+[[/=]]
+
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+
+[[=]]
+[[size 90%]]**Site-17 Catalog Navigation:**[[/size]]
+[[/=]]
+[[div class="footer-wikiwalk-nav"]]
+[[=]]
+<< [[[SCP-4415]]] | Systems Patch | [[[SCP-4051]]] >>
+[[/=]]
+[[/div]]
