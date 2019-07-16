@@ -2,7 +2,6 @@ title:Systems Patch
 [[module CSS]]
 .blinkbar {animation: blink 1.5s infinite; letter-spacing: -0.13em;}@keyframes blink{to{opacity: .0;}}@keyframes flicker {0% {opacity: 0.9890; }5% {opacity: 0.5842; }10% {opacity: 0.9865; }20% {opacity: 0.0412; }20% {opacity: 0.6255; }25% {opacity: 0.3157; }30% {opacity: 0.7328; }35% {opacity: 0.4654; }40% {opacity: 0.9128; }45% {opacity: 0.2449; }50% {opacity: 0.5485; }55% {opacity: 0.6438; }60% {opacity: 0.1180; }65% {opacity: 0.9085; }70% {opacity: 0.0266; }75% {opacity: 0.6795; }80% {opacity: 0.7812; }85% {opacity: 0.0117; }90% {opacity: 0.2239; }95% {opacity: 0.8897; }100% {opacity: 0.2260; }}@keyframes overlay-anim {0% {visibility: hidden; }10% {visibility: hidden; }11% {visibility: visible; }50% {visibility: hidden; }100% {visibility: hidden; }}
 .indomitable {background-color: white; color: #6f4c7a; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%}
-.scp-box {font-size: 105%; background-color: black; color: white; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%}
 .minerva {color: #c10000; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%; font-family: monospace}
 a.collapsible-block-link { font-weight: bold; }
 [[/module]]
@@ -116,7 +115,7 @@ Put simply, the rigid hierarchy of the Foundation and the hiding of information 
 
 It's just like a damn cult.
 [[/div]]
-@@ @@
+------
 [[/div]]
 
 ##teal|I was too hard on them when I first started, I think.##
@@ -189,20 +188,16 @@ It's just like a damn cult.
 
 ##teal|Can you refresh my memory?##
 
-[[div class="indomitable"]]
+[[div class="indomitable" style="margin-bottom: 10px"]]
 {{Certainly. It's what you designed me to do.}} [[[scp-4051 | ➦ Database link detected.]]]
 [[/div]]
 
-@@ @@
-
-[[div class="scp-box"]]
+[[div style="font-size: 105%; background-color: black; color: white; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin-bottom: 10px]]
 **Description:** SCP-4051 is a male humanoid which can create temporary Class-E wormholes to extradimensional spaces populated by a theoretically infinite number of a unique item. SCP-4051 underwent extensive testing to determine if it were a viable method of producing amnestics, but the unethical behavior of the staff assigned to it warranted the closure of the project.
 [[>]]
 **Assigned Archivist:** Dr. Janet Kelson
 [[/>]]
 [[/div]]
-
-@@ @@
 
 [[div class="indomitable"]]
 {{There is a fair amount of downtime on the database, so I have a few side projects to work on in the meantime. After I read SCP-4051's file when it was initially uploaded, I set up a new one. O5-3 referred to her iteration as the Broken Masquerade, but I call mine Veritas.}}
@@ -231,7 +226,7 @@ It's just like a damn cult.
 > # __//Abolition of the Foundation's Current Hierarchy://__ Given that the current hierarchical structure of the Foundation has been ineffectual in preventing rampant human rights abuses, the Foundation's structure must be altered significantly. Simulations currently predict that the optimal model involves self-sufficient sites maintained by directors and a modified Ethics Committee.
 > # __//Communication with Groups of Interest://__ The introduction of the anomalous and subsequent redefinition of the Foundation's ideology ought to lead to the cessation of conflict with numerous GoIs, primarily [[[http://www.scp-wiki.net/serpent-s-hand-hub | The Serpent's Hand]]] and [[[http://www.scp-wiki.net/manna-charitable-foundation-hub | The Manna Charitable Foundation]]].
 [[/div]]
-@@ @@
+------
 [[/div]]
 
 ##teal|It seems nice, Indomitable. Thank you.##
