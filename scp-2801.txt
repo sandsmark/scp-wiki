@@ -15,9 +15,9 @@ title:SCP-2801
 
 **Special Containment Procedures:** A copy of SCP-2801 is currently held at Site-19.
 
-All Foundation personnel are to undergo screening for SCP-2801-1 infection on a --monthly-- biweekly basis. Additional screenings may be mandated by the site security director. No more than two persons infected by SCP-2801-1 are to be held at any given facility, and all infected persons not held for research purposes are to be immediately terminated. No recordings of infected persons are to be made, and all other cognitohazardous material containing SCP-2801-1 are to be destroyed.
+All Foundation personnel are to undergo screening for SCP-2801-1 infection on a --monthly-- biweekly basis. Additional screenings may be mandated by the site security director. All infected persons not held for research purposes are to be immediately terminated. No recordings of infected persons are to be made, and all other cognitohazardous material containing SCP-2801-1 are to be destroyed.
 
-Foundation webcrawlers are to monitor file-sharing websites and hacker forums for copies of SCP-2801 or related materials. MTF Sigma-5 ("'; DROP TABLE taskforces --") is to take these copies down as soon as possible in compliance with standard data supression protocols. 
+Foundation webcrawlers are to monitor file-sharing websites and hacker forums for copies of SCP-2801 or related materials. MTF Sigma-5 ("'; DROP TABLE taskforces --") is to remove these copies as soon as possible upon detection in compliance with standard data supression protocols. 
 
 MTF Theta-8 ("Blue Pills") is currently responsible for identifying and neutralizing persons or organizations in possession of SCP-2801. Utilization of Project Lethe and/or [[[SCP-2000]]] is currently under consideration.
 
@@ -25,7 +25,7 @@ MTF Theta-8 ("Blue Pills") is currently responsible for identifying and neutrali
 
 **Description:** SCP-2801 refers to a software for Linux-based operating systems capable of generating Class-II cognitohazards as audio or image files, using a variety of common formats. The effects of the hazards generated are determined by user-written code similar in syntax to the C programming language. SCP-2801 was freely distributed on 2018/3/17 on the hacker forum [REDACTED] under the title "Neurocrack", and has since been redistributed multiple times from various sources despite Foundation containment efforts.
 
-SCP-2801 has demonstrated the ability to create self-propagating cognitohazards, referred to as SCP-2801-1,[[footnote]]Individual instances of SCP-2801-1 (called "variants") are referred to using assigned alphabetical designations (SCP-2801-A, SCP-2801-B, etc.).[[/footnote]] that are capable of nearly complete control over a host's behavior, including motor control, memory access, and psionic field manipulation. SCP-2801-1 variants are typically designed for financial gain, as experiments, or as offensive tools, although other uses are not uncommon. By default, SCP-2801-1 infection is permanent, and an effective treatment has not yet been found. As of 2018/11/12, over 100 unique SCP-2801-1 variants have been identified.
+SCP-2801 has demonstrated the ability to create self-propagating cognitohazards, referred to as SCP-2801-1,[[footnote]]Individual instances of SCP-2801-1 (called "variants") are referred to using assigned alphabetical designations (SCP-2801-A, SCP-2801-B, etc.).[[/footnote]] that are capable of nearly complete control over a host's behavior. This can include motor control, memory access, and psionic field manipulation, among other aspects. Over 100 unique SCP-2801-1 variants have been identified in the wild as of 2018/11/12, which are typically used for financial gain or as offensive tools, although other uses are not uncommon. Unless otherwise specified by its creators, SCP-2801-1 infection is permanent, and an effective treatment has not yet been found. 
 
 While the user-created nature of SCP-2801-1 variants means very few traits apply to every one, a few generalizations can be made regarding SCP-2801-1 behavior. Most SCP-2801-1 variants spread through the use of cognitohazards present in the speech of infected persons. In addition, variants often construct telepathic networks among infected persons, which can then be used for data exfiltration or to remotely control variant behavior, and variants with design flaws can unintentionally cause epileptic seizures. Infected persons are rarely aware of these symptoms.
 
@@ -34,11 +34,11 @@ See Document X3B-2801-RQ for descriptions of all known variants.
 
 **Addendum 2801:** The following is a timeline of events related to SCP-2801 and SCP-2801-1.
 
-> __**2017/11/29:**__  SCP-2801-A, the first known SCP-2801-1 variant, is discovered during testing on [[[SCP-4993]]] at Site-19. Test results were inconsistent with previous experiments, and this abnormality was attributed to the presence of an unknown cognitohazardous agent present in D-8937, despite the lack of observable symptoms. Further investigation revealed similar agents present in 96% of the personnel in D-8937's assigned barracks.
+> __**2017/11/29:**__  SCP-2801-A, the first known SCP-2801-1 variant, is discovered during testing on [[[SCP-4993]]] at Site-19. Test results were inconsistent with previous experiments, and after further testing this was attributed to an unknown cognitohazardous agent present in D-8937, despite the lack of observable symptoms. Further investigation revealed similar agents present in 96% of the personnel in D-8937's assigned barracks.
 > 
-> __**2017/12/3:**__ MTF Eta-11 ("Savage Beasts") begins an investigation to identify the origin of SCP-2801-A.
+> __**2017/12/3:**__ MTF Eta-11 ("Savage Beasts") begins an investigation into the origins of SCP-2801-A.
 > 
-> __**2018/3/17:**__ SCP-2801 is uploaded to the hacker forum [REDACTED] under the name "Neurocrack" along with instructions for usage and source code for a basic SCP-2801-1 variant.[[footnote]]Testing suggests this code, when compiled, is indistinguishable from SCP-2801-A.[[/footnote]] The file was available for 7 hours, and 97 unique downloads were recorded before the post was taken down by MTF Sigma-5 ("'; DROP TABLE taskforces --"). The file was accompanied by the following post:
+> __**2018/3/17:**__ SCP-2801 is uploaded to the hacker forum [REDACTED] under the name "Neurocrack" along with documentation and source code for a basic SCP-2801-1 variant[[footnote]]Testing suggests this was the source code for SCP-2801-A.[[/footnote]]. The file was available for 7 hours and received download requests from 97 unique hosts before it was removed by MTF Sigma-5 ("'; DROP TABLE taskforces --"). The file was accompanied by the following post:
 > [[collapsible show="+ Expand" hide="- Collapse"]]
 >> **[FREE][SOURCE] Neurocrack:Mind Exploit Development Tool & Worm Source**
 >> 
@@ -49,55 +49,55 @@ See Document X3B-2801-RQ for descriptions of all known variants.
 >> 
 >> Greetz yall,
 >> 
->> Breaking a bit from the norm, I will not be releasing another computer exploit this time. Instead, I have something much MUCH more exciting. Over the past two years, I have been working to answer a question I'm sure all of us have thought at some point: What if you could hack a person like you can a computer? After much blood sweat and tears, I finally have an answer:
+>> Today, all of you who have been asking what my "big project" is about for the past year finally get to take a look at it. Breaking from expectations, it's not just another computer exploit this time. Instead, it's something MUCH more exciting. After all, I'm sure we've all had this question at one point or another: What if you could hack a person like you can a computer? After over a year of work, I finally have an answer:
 >> [[div class="foldable-list-container"]]
 >> * Yes, and it is unbelievably easy
 >>  * //[COGNITOHAZARD EXPUNGED]// [[/div]]
 >>  
->> In essence, Neurocrack is to the brain what a compiler is to a computer. It exports an image or sound file that the brain interprets as instructions. This already opens up a world of possibilities, but I was even able to write software that spreads itself through speech. That's right, //worms for people.// And unlike most exploits, Neurocrack won't be patched out anytime soon.
+>> Neurocrack is to the brain what a compiler is to a computer. It exports an image or sound file that the brain interprets as instructions (effectively working like an RCE exploit). This already opens up a world of possibilities, but I was even able to write software that spreads itself through speech. That's right, //worms for people.// And unlike most exploits, Neurocrack won't be patched out. Last time I checked, the human brain was EOL'd!
 >> 
 >> I had my fun with this for a little while, but my worm spread much faster than I was expecting and it's attracted a lot of attention, so it's time for me to GTFO. So, I give you Neurocrack, the keys to hacking's final frontier.
 >> 
 >> //[EXTRANEOUS DATA EXPUNGED]//
 >> 
->> I'll be around for a little while longer to answer questions, but I don't have time to give 1-1 help. For god's sake, read the instructions.
+>> I'll be around for a little while longer to answer questions, but I don't have time to give 1-1 help. For god's sake, read the documentation.
 >> 
->> Also, just because this is new territory doesn't mean you shouldn't take the same precautions you normally would. There are people who work very hard to make sure stuff that conflicts with their view of how the world should work doesn't see the light. I found this out the hard way and now I'm stuck playing damage control. Don't repeat my mistakes, know what kind of world you are stepping into.
+>> Also, just because this is new territory doesn't mean you shouldn't take the same precautions you normally would. There are already people who have staked their claims on this new frontier; people who work very hard to make sure anything that thratends their total control of the worldnever sees the light. I found this out the hard way and now I'm stuck playing damage control. Don't repeat my mistakes. Know what kind of world you are stepping into.
 >> 
 >> But of course, when did people like us ever care about risks?
 >> 
 >> Happy hacking, and welcome to the secret world!
 > [[/collapsible]]
 > 
-> The author of this post and presumed creator of SCP-2801 has been designated POI-7684.
+> The author of this post was later identified as a penetration tester living in the city of Dallas, Texas named Nathan Snyder (designated POI-7684). A raid on POI-7684's apartment failed to apprehend him; the complex's owner indicated that he had left his apartment with a number of electronics the previous afternoon. POI-7684's status and location remains unknown.
 > 
 > __**2018/3/19:**__ SCP-2801-B, -C, and -D are discovered alongside a spike in SCP-2801-A infections. While simplistic, these variants proved active exploitation of SCP-2801 was occurring much sooner than was expected. Foundation webcrawlers also take down a number of threads pertaining to SCP-2801 on both [REDACTED] and other sites.
 >  
-> __**2018/4/2:**__ A string of identity theft cases is linked to a previously undiscovered SCP-2801-1 variant, designated SCP-2801-N. SCP-2801-N is used by its operator to steal sensitive information from the hosts' mind while displaying very few identifiable symptoms. The operator of the variant was estimated to have stolen over two million USD in this fashion.
+> __**2018/4/2:**__ A string of identity theft cases is linked to a previously undiscovered SCP-2801-1 variant, designated SCP-2801-N, which was used to steal sensitive information from the hosts' mind while displaying very few identifiable symptoms. The operator of the variant was estimated to have stolen over two million USD in this fashion.
 >  
-> Upon detainment, the operator of SCP-2801-N claimed that he was not the variant's creator, and that it had been sold to him and several other persons by another hacker. The operator was terminated two days later. Investigation into the identities of the creator and other operators are still on going.
->  
-> __**2018/4/28:**__ SCP-2801 utilization continues to spread despite containment efforts. SCP-2801 had been reuploaded to the internet under numerous screen names with over 1,000 downloads, and multiple users have opened threads attempting to sell SCP-2801 code modules. Five "Neurocracker"[[footnote]]Also commonly self-identified as "Psychohacker", "Psycker", "Brainjacker", and "Cognitohacker", and other variants thereof, among other terms.[[/footnote]] groups have also been identified, including Pseudonym[[footnote]]A highly decentralized group that claims to be a splinter group of Anonymous, but is also suspected to have been influenced by Gamers Against Weed.[[/footnote]] and Cohaz, both of which remain active threats.
->  
-> __**2018/5/6:**__ SCP-2801-W is discovered in central Germany, having infected ██,███ people in less than a week, the highest infection rate of any variant at the time. SCP-2801-W utilizes large amounts of psionic signals to induce epileptic seizures in a target individual followed by sudden unexpected death in 83% of cases, even if the target is not infected. No correlation has been found between targets, and this behavior occurs at seemingly random intervals.
+> Upon detainment, the operator of SCP-2801-N claimed that the variant had been sold to him and by another hacker. The operator was terminated two days later. Investigation into the identities of the creator and other operators are still on going.
 > 
-> Persons under multiple screen names have claimed to be the operator of SCP-2801-W on various black market websites. These persons claim to be able to use SCP-2801-W to assassinate an individual of the client's choice in exchange for payment in the Monero cryptocurrency. These claims have not yet been verified.
+> __**2018/4/28:**__ SCP-2801 utilization continues to spread despite containment efforts. SCP-2801 had been reuploaded to the internet under numerous screen names with over 1,000 downloads, and multiple users have opened threads attempting to sell SCP-2801 code modules. Five "Neurocracker"[[footnote]]Also commonly self-identified as "Psychohacker", "Psycker", "Brainjacker", and "Cognitohacker", and other variants thereof, among other terms.[[/footnote]] groups have also been identified, including Pseudonym[[footnote]]A highly decentralized group that claims to be a splinter group of Anonymous, but is also suspected to have been influenced by Gamers Against Weed.[[/footnote]], which remains the oldest active group.
+>  
+> __**2018/5/6:**__ SCP-2801-W is discovered in central Germany, having infected █████ people in less than a week, the highest infection rate of any variant at the time. SCP-2801-W utilizes large amounts of psionic signals to overwhelm a target, inducing epileptic seizures followed by sudden unexpected death in 83% of cases, even if the target is not infected. No correlation has been found between targets, and this behavior occurs at seemingly random intervals.
+> 
+> A group named Cohaz has claimed to be the operator of SCP-2801-W on various black market websites. This group claims to be able to use SCP-2801-W to assassinate an individual of the client's choice in exchange for payment in the Monero cryptocurrency. These claims have not yet been verified.
 > 
 > __**2018/5/15:**__ The Global Occult Coalition begins an initiative to identify and terminate persons in possession of SCP-2801.
 > 
-> __**2018/6/21:**__ Growing awareness of Foundation and GOC efforts to suppress information about SCP-2801 among portions of the hacker community leads many to use covert channels or to include SCP-2801-generated cognitohazards in threads in an attempt to deter censors. The adoption rate of SCP-2801 slows as a result, but the estimated user base size remains large. Evidence suggests that associated groups have begun seeking out other computer-based anomalies as well.
+> __**2018/6/21:**__ Growing awareness of Foundation and GOC efforts to suppress information about SCP-2801 among portions of the hacker community leads many to use covert channels or include SCP-2801-generated cognitohazards in threads in an attempt to deter censors. The adoption rate of SCP-2801 slows as a result, but the estimated user base remains large.
 > 
-> __**2018/8/4:**__ Dr. Charles Stone, assistant director of Site-22, enters a coma as a result of SCP-2801-BE infection. As is typical of SCP-2801-BE behavior, Dr. Stone cut himself on his left arm with a knife on his person and wrote the message "Send bitcoin have 1 week" along with a bitcoin address in his blood on the wall of his office before expiring. Compliance with these demands had no effect on Dr. Stone's condition, and he went into cardiac arrest and died 5 days later as a result of an epileptic seizure in the Site-22 medical sector. It remains unknown whether he was specifically targeted, or was infected by chance.
+> __**2018/8/4:**__ Dr. Charles Stone, assistant director of Site-22, enters a coma as a result of SCP-2801-BE infection. As is typical of SCP-2801-BE behavior, Dr. Stone cut himself on his left arm with a knife and wrote the message "Send bitcoin have 1 week" along with a bitcoin address on the wall of his office with his blood before expiring. Compliance with these demands had no effect on Dr. Stone's condition, and he went into cardiac arrest and died 5 days later as a result of an epileptic seizure in the Site-22 medical sector. It remains unknown whether he was specifically targeted, or was infected by chance.
 > 
 > __**2018/8/6:**__ Investigation into Dr. Stone's death reveals that at least 37% of Site-22 personnel were infected with SCP-2801-1. 7 unique variants were identified. Site-22 was placed under quarantine, and all SCP objects on-site were moved to Site-19.
 > 
 > __**2018/10/12:**__ SCP-2801-BV is identified in South Korea, marking the 100th unique variant discovered.
 > 
-> __**2018/10/26:**__ The Foundation and GOC are targeted by a number of coordinated remote attacks, consisting of both traditional cyberattacks and attacks utilizing SCP-2801-1. The attacks lasted for 4 hours and affected 7 Foundation facilities and 11 site networks. In addition to causing a number of Euclid and Keter-class containment breaches, the attacks resulted in ███ personnel casualties and the leakage of ███ classified documents, including [REDACTED]. Restoration efforts are still in progress. Statistics regarding the attacks on the GOC are not available, but are expected to be similar.
+> __**2018/10/26:**__ The Foundation and GOC are targeted by a number of coordinated remote attacks, consisting of both traditional cyberattacks and attacks utilizing SCP-2801-1. The attacks lasted for 4 hours and affected 7 Foundation facilities and 11 site networks, including [REDACTED]. In addition to causing a number of Euclid and Keter-class containment breaches, the attacks resulted in ███ personnel casualties and the leakage of ███ classified documents, including [REDACTED]. Restoration efforts are still in progress. Statistics regarding the attacks on the GOC are not available, but are expected to be similar.
 > 
-> Pseudonym and Cohaz have declared their involvement in the attacks, among several other groups. Efforts to identify other collaborators are ongoing.
+> Several Neurocracker groups, including Pseudonym and Cohaz, have declared their involvement in the attacks. Efforts to identify other collaborators are ongoing.
 > 
-> __**2018/11/7:**__ A raid is conducted on the residence of POI-7684, identified as a penetration tester living in the city of Dallas, Texas under the name of Nathan Snyder. POI-7684 was not present at his apartment, and the complex's owner indicated that POI-7684 had not returned to his apartment since leaving with a number of electronics the previous afternoon. A search of POI-7684's apartment revealed nothing indicating POI-7684's whereabouts or any materials related to SCP-2801. The location and status of POI-7684 remains unknown.
+> Restoration efforts are still in progress.
 
 [[footnoteblock]]
 
