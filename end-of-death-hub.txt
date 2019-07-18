@@ -43,11 +43,11 @@ html, body {
   height: 600px;
   width: 1400px;
   content: "";
-  background-image: url(http://scp-wiki.wdfiles.com/local--files/end-of-death-hub/big.png);
-  background-size: auto;
+  background-image: url(http://scp-wiki.wdfiles.com/local--files/end-of-death-hub/big.png), url(http://scp-wiki.wdfiles.com/local--files/end-of-death-hub/big_but_smaller.png);
+  background-size: contain, contain;
   position: relative;
   display: block;
-  background-position: center;
+  background-position: center, center;
   margin-left: -180px;
   z-index: 2;
   animation: 2s ease-in-out 0s 1 fadeIn;
