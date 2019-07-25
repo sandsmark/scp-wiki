@@ -1,6 +1,28 @@
 title:SCP-4002
 [[module CSS]]
 @import url(http://kaktuskontainer.wikidot.com/component:darkbodytheme/code/1);
+
+/* restore interwiki */
+div.scpnet-interwiki-wrapper {
+    width: 17em;
+    margin-left: -5px;
+}
+
+iframe.scpnet-interwiki-frame {
+    height: 300px;
+    width: 17em;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    iframe.scpnet-interwiki-frame {
+        height: 300px;
+        width: 18em;
+    }
+    div.scpnet-interwiki-wrapper {
+        width: 18em;
+    }
+}
 [[/module]]
 
 [[module CSS]]
