@@ -103,10 +103,6 @@ div#container-wrap::before {
             filter: grayscale(100%);
 }
 
-#header, .printuser a, #side-bar, #page-title, .page-rate-widget-box {
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
-}
 
 #footer {
     font-size: x-small;
@@ -138,7 +134,12 @@ div#page-options-container a:visited, div.page-tags a:visited {
 
 /* you are my sunshine, my only sunshine */
 
-div#container-wrap::before, #header, .printuser a, #side-bar, #page-title, .page-rate-widget-box {   
+#header, .printuser a, #side-bar, #page-title, .page-rate-widget-box, #breadcrumbs {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+}
+
+div#container-wrap::before, #header, .printuser a, #side-bar, #page-title, .page-rate-widget-box, #breadcrumbs {   
     -webkit-animation: ungrayscale linear 10s forwards;   
             animation: ungrayscale linear 10s forwards;
     -webkit-animation-delay: 50s;
