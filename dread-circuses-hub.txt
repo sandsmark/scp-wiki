@@ -1,8 +1,324 @@
 title:Dread & Circuses Hub
 [[module CSS]]
-@import url(http://topia.wikidot.com/component:hf-theme);
+@import url('https://fonts.googleapis.com/css?family=Rye');
+@import url('https://fonts.googleapis.com/css?family=Mountains+of+Christmas');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+/*
+    Herman Fuller's Theme of the Disquieting
+    [2019 Wikidot Theme]
+    Created by Herman Fuller, DrChandra and stormbreath (mostly stormbreath).
+    Based on SCP Sigma 9 Theme created by Aelanna and Dr Devan.
+    Logo is by SunnyClockwork
+*/
+
+/* BACKGROUND COLOUR */
+
+body {
+    background-image: linear-gradient(#4d0026, #fdffd3 400px);
+}
+
+div#extra-div-1 {
+    height: 22px;
+    width: 100%;
+    top: 140px;
+    position: absolute;
+    background: rgba(255, 255, 255, .05);
+}
+
+
+/*RECOLOR THE LINKS */
+a {
+    color: #ffff1a;
+}
+ 
+a.newpage {
+    color: #ffff1a;
+}
+ 
+#side-bar a:visited{
+    color: #DAA520;
+}
+ 
+a:visited {
+    color: #DAA520;
+}
+
+/* RECOLOR THE TITLE */
+h1, #page-title {
+    color: #BD0C3C;
+    font-family: 'Rye';
+}
+ 
+#page-title {
+    font-weight: lighter;
+    font-family: 'Rye';
+    border-color: #BD0C3C;
+}
+ 
+/* ADJUST THE HEADER */
+#header {
+    background-image: url(http://topia.wikidot.com/local--files/drchandra-s-box-of-sand/D%26CTent1.png);
+}
+
+#header h1 a {
+    color: transparent;
+    text-shadow: none;
+    image: url (http://topia.wikidot.com/local--files/component:hf-theme/1350216.jpg) ;
+}
+ 
+#header h1 a::before {
+    content: "Herman Fuller's Circus of the Disquieting";
+    color: #ffff1a;
+    letter-spacing: -0.02em;
+    text-shadow: 3px 3px 5px #000;
+    color: #ffff1a;
+    font-family:'Rye';
+    font-size: 22pt;
+}
+ 
+@media (max-width: 768px) {
+    #header h1 a::before {
+          content: "Herman Fuller";
+     }
+} /* Changes header text on mobile */
+
+#header h2 span {
+    text-shadow: none;
+    color: transparent;
+}
+ 
+#header h2 span::before {
+    content: 'The Greatest Show In All The Worlds!';
+    color: #ffff1a;
+    font-family: 'Great Vibes';
+    font-size: 16pt;  
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+}
+
+div#container-wrap {
+    background-image: url(https://art4clip.com/images/sparkles-clipart-transparent-background-15.png);
+}
+
+div.scpnet-interwiki-wrapper {
+    filter: hue-rotate(291deg) saturate(95%) brightness(120%);
+}
+
+/* SEARCH BOX INPUT */
+#search-top-box-input {
+    border: solid 1px #780d8e;
+    color: #B8860B;
+    font-family: 'Rye';
+    background-color: #8B0000;
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,.5);
+}
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+    border: solid 1px #B8806B;
+    color: #B88608;
+    background-color: #8B0000;
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,.8);
+}
+
+/* IMPORTANT SEARCH BOX BUTTON */
+#search-top-box-form input[type=submit] {
+    border: solid 1px #999;
+    font-family: 'Rye';
+    color: #ffff1a;;
+    background-color: #8B0000;
+    background: linear-gradient(to bottom,#FF69B4, #C71585,#8B0000);
+    box-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    border: solid 1px #fff;
+    color: #B8860B;;
+    text-shadow: 0 0 1px rgba(255,255,255,.25)
+    background-color: #8B0000;
+    background: linear-gradient(to bottom, #8B0000, #C71585, #FF69B4);
+    box-shadow: 0 1px 3px rgba(0,0,0,.8);
+}
+ 
+/* LOG-IN INFORMATION */
+#login-status a {
+    color: #ffff1a;
+    font-family: 'Rye';
+}
+#login-status {
+    color: #B8860B;
+    font-family: 'Rye';
+}
+
+#login-status ul a {
+    color: #ffff1a;
+}
+`#login-status a {
+  color: #ffff1a;
+}
+
+#account-topbutton {
+    background: #B8860B;
+    color: #B8860B;
+}
+ 
+/* TOP MENU */
+#top-bar {
+    font-family: 'Rye';
+}
+ 
+#top-bar a {
+    color: #ffff1a;
+}
+ 
+#top-bar ul li ul {
+    border: solid 1px #B80000;
+    box-shadow: 0 2px 6px rgba(0,0,0,.5);
+}
+ 
+#top-bar ul li a {
+    border-left: solid 1px rgba(64,64,64,.1);
+    border-right: solid 1px rgba(64,64,64,.1);
+}
+ 
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    background: #eee;
+    color: #B8860B;
+    border-left: solid 1px rgba(64,64,64,1);
+    border-right: solid 1px rgba(64,64,64,1);
+}
+ 
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+    border-top: 1px solid #ddd;
+}
+ 
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: #fff;
+}
+
+#top-bar ul li ul a, #top-bar a:hover {
+    color: #B8860B;
+}
+ 
+/* SIDE MENU */
+#side-bar .side-block {
+    border: 1px solid BD0C3C;
+    box-shadow: 0 2px 6px rgba(150,0,0,.4);
+    background: #BD0C3C !important;
+}
+
+#side-bar a {
+    font-family: 'RYE';
+}
+
+#side-bar .heading {
+    color: #ffff1a;
+    border-bottom: solid 1px #DAA520;
+    font-family: 'Rye';
+}
+
+#side-bar .menu-item img {
+    display: none;
+} /* Removes the normal side-bar bullet point images */
+
+#side-bar .menu-item::before {
+    display: inline;
+    position: relative;
+    font-size: 10px;
+    top: 1px;
+    margin-right: 1px;
+    content: url(http://topia.wikidot.com/local--files/component:hf-theme/goldstarsmall.png);
+} /*And replaces them with a star. */
+ 
+/* side bar: social media links workaround */
+#side-bar .side-block[style="background-color: #e5e5ff;"] .menu-item::before {
+    content: "";
+    top: 0;
+    margin-right: 0;
+    font-size: unset;
+}
+#side-bar .side-block[style="background-color: #e5e5ff;"] img {
+    display: inline;
+}
+
+/* FOOTER */
+#footer {
+    font-family: 'Rye';
+    background: #24022d;
+    color: #DAA520;
+}
+#footer a {
+    color: #DAA520;
+}
+
+.page-tags span a {
+    font-family: 'Rye';
+    color: #DAA520;
+}
+
+#page-options-container {
+    font-family: 'Rye';
+    color: #DAA520;
+}
+
+#page-options-container a {color: #DAA520}
+
+}
+
+ADJUST MOBILE IMAGE SIZE */
+ #header h1 {
+     padding: 0;
+     float: left;
+     max-height: 95px;
+}
+ @media (max-width: 479px) {
+     #header {
+         background-size: 150px 75px;
+         background-position: 1em;
+    }
+}
+ @media (min-width: 480px) and (max-width: 580px) {
+     #header {
+         background-size: 180px 90px;
+         background-position: 1em;
+    }
+}
+ @media (min-width: 581px) and (max-width: 767px) {
+     #header {
+         background-size: 210px 105px;
+         background-position: 1em;
+    }
+}
+ @media (min-width: 768px) and (max-width: 979px) {
+     #header {
+         background-size: 240px 120px;
+         background-position: 1em;
+    }
+}
+ @media (max-width: 979px) and (min-width: 768px) {
+     #header {
+         background-size: auto 88px;
+    }
+}
+ @media (max-width: 767px) and (min-width: 581px) {
+     #header {
+         background-size: auto 77px;
+    }
+}
+ @media (max-width: 580px) and (min-width: 480px) {
+     #header {
+         background-size: auto 66px;
+    }
+}
+ @media (max-width: 479px) {
+     #header {
+         background-size: auto 65px;
+    }
+}
 [[/module]]
+
 
 [[>]]
 [[module Rate]]
