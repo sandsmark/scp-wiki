@@ -1,15 +1,18 @@
 title:Nagiros' PoI File
 [[module CSS]]
 /*
-    Powered on 2019/04/20 17:22:43
+    SITE-17 THEME
     [2019 Wikidot Theme]
     Created by Nagiros
     CC BY-SA 3.0
 */
 
+/* LINK COLOR */
 a,a:visited {
     color: rgb(88, 54, 173);
 }
+
+/* SIDE BAR MODS */
 #side-bar {
     display: block;
     background: transparent;
@@ -17,6 +20,8 @@ a,a:visited {
 #side-bar a:visited{
     color: rgb(88, 54, 173);
 }
+
+/* HEADER TEXT */
 div#header h1 a span {
     font-size: 0px;
 }
@@ -41,17 +46,27 @@ div#side-bar div.side-block {
     border: 1px solid rgb(88, 54, 173);
     border-radius: 0px
 }
-::-webkit-scrollbar-thumb
-{
-    background: #F2ADC5;
-}
 
-/* WEIRD TAB STUFF */
+/* TAB STUFF */
+/* Courtesy of the Anderson Robotics Theme by Croquembouche, from which this was modified. */
+
+/* COLORS:
+Selected tab border: #a649ff, rgb(166,73,255)
+Selected tab background: #dfbcff, rgb(223,188,255)
+Selected tab text: #0000bf, rgb(0,0,191)
+
+Hover tab border: rgb(0,0,0,0.12)
+Hover tab background: rgb(0,0,0,0.04)
+Hover tab text: #6c6cff, rgb(108, 108, 255)
+
+Neutral tab border:
+Neutral tab background:
+Neutral tab text: */
 
 div.yui-navset ul.yui-nav .selected a,
 div.yui-navset ul.yui-nav .selected a:focus,
 div.yui-navset ul.yui-nav .selected a:hover {
-    color: rgb(0, 0, 0);
+    color: #0000bf;
 }
 yui-navset.yui-navset-top {
     border-left: 3px solid #295183;
@@ -89,13 +104,14 @@ yui-navset.yui-navset-top {
     padding: 0;
     margin: 0.2em 0.3em;
     transform: scale(1.1);
+    font-weight: bold;
 }
 
 .yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a:focus, .yui-navset .yui-nav .selected a:hover {
     padding: 0;
     border: 1px solid #1e3c62;
     border: 1px solid #a649ff;
-    background: rgb(200, 142, 255);
+    background: #dfbcff;
 }
 
 .yui-navset .yui-nav .selected a em {
@@ -159,7 +175,6 @@ yui-navset.yui-navset-top {
     99% { max-height: 100vh; }
     100% { max-height: 9999rem; }
 }
-
 [[/module]]
 
 [[include component:scp-trans-pride |trans-pride-logo= --] |trans-pride-footer= --]]]
