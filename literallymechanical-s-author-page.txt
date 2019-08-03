@@ -1,18 +1,20 @@
 title:LiterallyMechanical's Author Page
-[[code type="CSS"]]
+[[module CSS]]
 
-#u-starlist {
+.starlist {
 list-style: none;
 }
 
-#u-staritem:before {
+.staritem:before {
 content: "★ ";
 }
-[[/code]]
+
+[[/module]]
 
 [[>]]
 [[module Rate]]
 [[/>]]
+
 + [[span style="color:#600"]]Hello, I am literally a mechanical literary machine.[[/span]]
 
 ++ Words
@@ -53,8 +55,8 @@ And we are not protected.
 [[/module]]
 
 ++++ Other pages
-[[ul id="u-starlist"]]
-[[li id="u-staritem"]] 
+[[ul class="starlist"]]
+[[li class="staritem"]] 
 [[module ListPages name="scp-4452" ]]
  **[[[SCP-4452]]] -- Submitted to the Ethics Committee for review** (+%%rating%% 💬%%comments%%) | //%%created_at|%Y-%m-%d%%//
 [[/module]]
