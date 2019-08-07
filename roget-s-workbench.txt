@@ -120,31 +120,35 @@ Other Top Rated Pages This Month
 %%title_linked%% (rating: %%rating%%, comments: %%comments%%)
 [[/module]]
 
-
+[[tabview]]
+[[tab Up For Review]]
 + SCPs Up For Review (Older than 6 months, Under +10)
 [[module ListPages separate="no" tags="scp, -archived, -in_rewrite" created_at="older than 180 days" order="random" rating="<=10"]] 
 * %%title_linked%% [+%%rating%%]
 [[/module]]
-
+[[/tab]]
+[[tab YAU30]]
 + Young and Under 30
 
 [[module ListPages separate="no" tags="scp, -archived, -in_rewrite" created_at="younger than 180 days" order="random" rating="<=30"]] 
 * %%title_linked%% [+%%rating%%]
 [[/module]]
-
+[[/tab]]
+[[tab OAU30]]
 + Old and Under 30
-
 [[module ListPages separate="no" tags="scp, -archived, -in_rewrite" created_at="older than 180 days" order="random" rating="<=30"]] 
 * %%title_linked%% [+%%rating%%]
 [[/module]]
-
+[[/tab]]
+[[tab Old Tales]]
 + Hey Maybe Check Out These Tales
  
 
 [[module ListPages separate="no" tags="tale, -archived, -in_rewrite" created_at="older than 180 days" order="rating" rating="<=30"]] 
 * %%title_linked%% [+%%rating%%]
 [[/module]]
-
+[[/tab]]
+[[/tabview]]
 + Archive
 
 (Maybe links to the old standalone pages?)
