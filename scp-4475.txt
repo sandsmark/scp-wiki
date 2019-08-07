@@ -111,13 +111,6 @@ body{
  blockquote{
      font-weight: bold;
 }
- .blockquote-special{
-     padding: 7px;
-     margin: 3px;
-     border: 3px solid #ccc;
-     border-radius: 10px;
-     background-color: #21212D;
-}
 
 /* SPECIAL CODE */
  .enlarge{
@@ -437,13 +430,12 @@ The only information the tactical response team gleaned from Wickman was his str
 
 A log of notable SCP-4475-1 occurrences is as follows.
 
-@@ @@
-
-[[div class="blockquote-special"]]
+[[div class="log-bg"]]
+[[div class="log"]]
 [[div style="text-align: center;"]]
 [[collapsible show="▷ Abridged SCP-4475-1 Event Log ◁" hide="△ Close Log △"]]
 [[/div]]
-
+----
 [[html class="mobile"]]
 <head>
 <style>
@@ -458,6 +450,8 @@ A log of notable SCP-4475-1 occurrences is as follows.
 }
  #fancy td, #customers th{
      border: 1px solid #ccc;
+     border-left: 1px solid #ccc;
+     border-bottom: 1px solid #ccc;
      padding: 8px;
      color: #ccc;
 }
@@ -517,8 +511,7 @@ A log of notable SCP-4475-1 occurrences is as follows.
 
 [[/collapsible]]
 [[/div]]
-
-@@ @@
+[[/div]]
 
 In all observed SCP-4475-1 cases, subjects lose their memory of the scenario within 10 hours of returning, suggesting a latent amnestic property of SCP-4475 milk secretions.
 
