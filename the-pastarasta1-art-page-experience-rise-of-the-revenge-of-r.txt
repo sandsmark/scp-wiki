@@ -3,6 +3,45 @@ title:The Pastarasta1 Art Page Experience: Rise Of The Revenge Of Ruiz Duchamp (
 [[module Rate]]
 [[/>]]
 
+[[module CSS]]
+@import url(http://scp-wiki.wdfiles.com/local--files/stormbreath/minimal.css);
+
+#header {
+background-image: url(http://scp-wiki.wdfiles.com/local--files/the-pastarasta1-art-page-experience-rise-of-the-revenge-of-r/logo);
+}
+
+#header h1 a {
+    color: transparent;
+    text-shadow: none;
+}
+ 
+#header h1 a::before {
+    content: "Pastarasta1's";
+    color: black;
+}
+#header h1 a {
+    color: transparent;
+    text-shadow: none;
+}
+#header h2 a::before {
+    content: "Art Page Experience";
+    color: black;
+}
+
+#page-content .collapsible-block {  
+    border: solid 1px #000;
+    padding: 3px 5px;
+    margin: 1em 0;
+}
+
+#page-content hr {
+  height: .5em;
+  background: lightgray;
+  border: 1px solid lightgray;
+  margin: 1.2em 0;
+}
+[[/module]]
+
 [[include component:image-block name=https://i.imgur.com/FO4hpJB.png|align=center|caption=Welcome to the page!]]
 
 Hello! It's me, pastarasta1! I love drawing cartoonish stuff. You might remember me from that old art page I did a year ago. Well, I'm back and better then ever! 
