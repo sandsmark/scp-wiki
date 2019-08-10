@@ -1,5 +1,22 @@
 title:Natalie Watts' Author Page!
 [[include :scp-wiki:component:scp-trans-pride |trans-pride-animated-header= --] |trans-pride-logo= --] |trans-pride-footer= --]]]
+[[module css]]
+#header h2 span {
+    display: block;
+    margin: 0;
+    padding: 19px 0;
+    line-height: 0px;
+    max-height: 0px;
+    font-weight: bold;
+    color: transparent;
+    text-shadow: none}
+ 
+#header h2 span::before {
+    content: 'Super Cool Pages ';
+    color: #f0f0c0;
+    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+[[/module]]
 
 [[>]]
 [[module rate]]
