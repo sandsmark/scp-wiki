@@ -1,6 +1,27 @@
 title:Natalie Watts' Author Page!
 [[include :scp-wiki:component:scp-trans-pride |trans-pride-animated-header= --] |trans-pride-logo= --] |trans-pride-footer= --]]]
 [[module css]]
+#header h1 a {
+    display: block;
+    margin: 0;
+    padding: 80px 0 25px;
+    line-height: 0px;
+    max-height: 0px;
+    color: transparent;
+    background: transparent;
+    font-family: BauhausLTDemi, 'Nanum Gothic', Arial, sans-serif;
+    font-size: 180%;
+    text-decoration: none;
+    text-shadow: none;
+    letter-spacing: 0.9px;
+}
+ 
+#header h1 a::before {
+    content: "NatVoltaic ";
+    color: #eee;
+    text-shadow: 3px 3px 5px #000;
+}
+
 #header h2 span {
     display: block;
     margin: 0;
