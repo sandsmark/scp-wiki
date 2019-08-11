@@ -1,17 +1,15 @@
-title:Top Rated Pages This Month
-+ August 2019
-
+title:Top Rated Pages in the Last 30 Days
 [!-- SCP Block --]
 
 [[div class="feature-block"]]
 
 [[div class="content-panel left-column"]]
 [[div class="panel-heading"]]
-Top Rated SCPs This Month
+Top Rated SCPs (Last 30 Days)
 [[/div]]
 [[div class="panel-body"]]
 
-[[module ListPages rating=">10" tags="scp" order="rating desc" separate="false" date="2019.08"]]
+[[module ListPages rating=">10" tags="scp" order="rating desc" separate="false" date="last 30 day"]]
 %%title_linked%% (+%%rating%%)
 [[/module]]
 
@@ -26,11 +24,11 @@ Top Rated SCPs This Month
 
 [[div class="content-panel right-column"]]
 [[div class="panel-heading"]]
-Top Rated Tales This Month
+Top Rated Tales (Last 30 Days)
 [[/div]]
 [[div class="panel-body"]]
 
-[[module ListPages rating=">10" tags="tale" order="rating desc" separate="false" date="2019.08"]]
+[[module ListPages rating=">10" tags="tale" order="rating desc" separate="false" date="last 30 day"]]
 %%title_linked%% (+%%rating%%)
 [[/module]]
 
@@ -48,11 +46,11 @@ Top Rated Tales This Month
 
 [[div class="content-panel left-column"]]
 [[div class="panel-heading"]]
-Top Rated GOI-Formats This Month
+Top Rated GOI-Formats (Last 30 Days)
 [[/div]]
 [[div class="panel-body"]]
 
-[[module ListPages rating=">10" tags="goi-format" order="rating desc" separate="false" date="2019.08"]]
+[[module ListPages rating=">10" tags="goi-format" order="rating desc" separate="false" date="last 30 day"]]
 %%title_linked%% (+%%rating%%)
 [[/module]]
 
@@ -67,11 +65,11 @@ Top Rated GOI-Formats This Month
 
 [[div class="content-panel right-column"]]
 [[div class="panel-heading"]]
-Other Top Rated Pages This Month
+Other Top Rated Pages (Last 30 Days)
 [[/div]]
 [[div class="panel-body"]]
 
-[[module ListPages rating=">10" tags="-scp,-tale,-goi-format" order="rating desc" separate="false" date="2019.08"]]
+[[module ListPages rating=">10" tags="-scp,-tale,-goi-format" order="rating desc" separate="false" date="last 30 day"]]
 %%title_linked%% (+%%rating%%)
 [[/module]]
 
