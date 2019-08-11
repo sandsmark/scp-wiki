@@ -31,10 +31,15 @@ title:Natalie Watts' Author Page!
   }
 }
 
-#header h2 span::before {
-    color: #f0f0c0;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
-}
+#header h2 span {
+    display: block;
+    margin: 0;
+    padding: 19px 0;
+    line-height: 0px;
+    max-height: 0px;
+    font-weight: bold;
+    color: transparent;
+    text-shadow: none}
  
 #header h2 span::before {
     content: 'Sky tuned to a rad channel ';
