@@ -25,6 +25,12 @@ title:Natalie Watts' Author Page!
     text-shadow: 3px 3px 5px #000;
 }
 
+@media only screen and (max-width: 640px) {
+  #header h1 a {
+    font-size: 60%;
+  }
+}
+
 #header h2 span {
     display: block;
     margin: 0;
