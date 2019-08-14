@@ -29,6 +29,7 @@ title:7happy7's SVG-animation Gallery
 [[*user Fantem]](Oneiroi Collective)
 [[*user Nanimono Demonai]](Recycle Contest-19)
 [[*user SunnyClockwork]](Artwork "Children of the Scarlet King 02")
+[[*user Tanija]](RTI)
 [[*user thd-glasses]](BE)
 [[*user TPS-Geronam]](CCC)
 [[*user TwistedGears]](old CI)
@@ -62,6 +63,7 @@ title:7happy7's SVG-animation Gallery
 @import url("http://www.scp-wiki.net/local--files/svg-animation/scarlet-2.css");
 @import url("http://www.scp-wiki.net/local--files/svg-animation/cotbg.css");
 @import url("http://www.scp-wiki.net/local--files/svg-animation/beyondE.css");
+@import url("http://www.scp-wiki.net/local--files/svg-animation/rTech.css");
 
 .artContent h2 {
     text-align: center;
@@ -253,6 +255,14 @@ Some SVGs may not be displayed correctly in **IE**[[footnote]] ALL OF THEM ARE N
 > ----
 > [[include :scp-wiki:svg-animation |caecus-c=true|width=100%]]
 ----
+[[div class="rTech animSVG" style="padding-bottom: calc(100% * 241 / 424); background-image: var(--rTech);"]]
+[[/div]]
+> Based on [[*user Tanija]]'s Raptor Tech Industries' logo(SCP-DE)
+> http://scp-wiki-de.wikidot.com/raptor-tec-industries
+> http://www.scp-wiki.net/tanijas-atelier-ecke
+> ----
+> [[include :scp-wiki:svg-animation |rTech=true|width=100%]]
+----
 
 + non-GoI logos
 [[div class="recycle animSVG" style="padding-bottom: 240px; background-image: var(--recycle);"]]
@@ -288,6 +298,16 @@ Some SVGs may not be displayed correctly in **IE**[[footnote]] ALL OF THEM ARE N
     background-size: contain;
 }
 [[/module]]
+[[/iftags]]
+
+
+
+[[iftags [[#ifexpr {$rTech} == (true) | - ]]]]
+[[module CSS]]
+@import url("http://www.scp-wiki.net/local--files/svg-animation/rTech.css");
+[[/module]]
+[[div class="rTech animSVG" style="width: {$width}; padding-bottom: calc({$width} * 241 / 424); background-image: var(--rTech);"]]
+[[/div]]
 [[/iftags]]
 
 [[iftags [[#ifexpr {$ciLogo} == (true) | - ]]]]
