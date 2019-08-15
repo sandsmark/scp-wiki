@@ -1,0 +1,422 @@
+title:CyrusFiredawn's Author Page
+[[include :kaktuskontainer:component:nuscp-dev]]
+
+[[module css]]
+#page-title {
+    display:none;
+}
+[[/module]]
+
+[[html]]
+<head>
+    	
+    	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/orkney" type="text/css"/>
+    	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/redkost-comic" type="text/css"/>
+    	
+    	<style>
+    		
+    	
+    	
+    		body {
+    			min-height: 880px;
+    			overflow-x: hidden;
+    			margin:40px;
+    		}
+    	
+    		#container {
+    			font-family: 'OrkneyLight'; 
+    			font-weight: light; 
+    			font-size: 3em;
+    			
+    			text-align: center;
+    			
+    			margin: 0;
+    			position: absolute;
+    			top: 50%;
+    			left: 50%;
+    			-ms-transform: translate(-50%, -50%);
+    			transform: translate(-50%, -50%);
+    			
+    			width: 90%;
+    		}
+    		
+    		#maininput {
+    		    max-width: 100%;
+    			background: #eeeeee;
+    			border: none;
+    			font-size: 1.1em;
+    			padding: 0.2em;
+    			margin-top: 1em;
+    			outline: none;
+    			text-align: center;
+    		}
+    		
+    		#authorcontainer {
+    			font-family: 'RedkostComicRegular';
+    		}
+    		
+    		
+    		#authorpicture {
+    			float: right;
+    			width: 200px;
+    			border: 3px solid black;
+    			margin-left: 20px;
+    			transform: rotate(10deg);
+    			animation: shake 0.3s infinite;
+    		}
+    		
+    		#authorpicture-inner {
+    			border: 2px solid black;
+    			margin: 0.5em;
+    		}
+    		
+    		#authorpicture-text {
+    			margin: 0.8em;
+    			font-size: 0.8em;
+    			text-align: center;
+    		}
+    		
+    		
+    		@keyframes shake {
+    		  50% {
+    			transform: rotate(2deg);
+    		  }
+    		}
+    		
+    		.scp-button {
+    			margin-top: 40px;
+    			width: 100%;
+    		}
+    	
+    		.scp-link{
+    			display: inline-flex;
+    			position: relative;
+    			overflow: hidden;
+    			padding: 5px;
+    			color: #000;
+    			text-decoration: none;
+    			transition: color .3s ease-out;
+    			
+    			border: 3px solid black;
+    			border-radius: 4em;
+    			width: 90%
+    		}
+    		
+    		.scp-link:hover{
+    			color: #fff;
+    		}
+
+    		.scp-link::before, 
+    		.scp-link::after{
+    			content: "";
+    			background-color: #000;	
+    			opacity: 0;
+    			position: absolute;
+    			width: 50%;
+    			height: 100%;
+    			top: 0;
+    			transition: transform .2s ease-out, opacity .2s ease-out .03s;
+    		}
+    		
+    		.scp-link::before{
+    			left: 0;
+    			transform: translate3d(-100%, 0, 0);
+    		}
+
+    		.scp-link::after{
+    			right: 0;
+    			transform: translate3d(100%, 0, 0);
+    		}
+
+    		.scp-link:hover::before, 
+    		.scp-link:hover::after{
+    			opacity: 1;
+    			transition-duration: .35s, .35s;
+    			transition-delay: 0s, 0s;
+    			transform: translate3d(0, 0, 0);
+    		}
+    	
+    		.scp-link .scp-label{
+    			position: relative;
+    			z-index: 2;
+    			
+    			font-size: 5vw;
+    			padding: 20px;
+    		}
+    		
+    		.footer {
+    			font-family: Times New Roman;
+    			font-size: 12px;
+    			margin-top:50px;
+    		}
+    		
+    		
+    		#norounder {
+    			font-family: 'OrkneyLight'; 
+    			font-weight: light; 
+    			font-size: 3em;
+    			
+    			text-align: center;
+    			
+    			margin: 0;
+    			position: absolute;
+    			top: 50%;
+    			left: 50%;
+    			-ms-transform: translate(-50%, -50%);
+    			transform: translate(-50%, -50%);
+    			
+    			width: 90%;
+    		}
+    		
+    		#skipbutton {
+    			color: #000;
+    			cursor: pointer;
+    			font-size: 14px;
+    			position: fixed;
+    			bottom: 0;
+    			left: 50%;
+    			-ms-transform: translate(-50%, 0%);
+    			transform: translate(-50%, 0%);
+    			width: 100%;
+    			text-align: center;
+    		}
+    		
+    		#skipbutton p {
+    			margin:5px;
+    		}
+    		
+    		#skipbutton:hover {
+    			background: #000;
+    			color: #fff;
+    		}
+    	</style>
+    
+    	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+    	<div id="container">
+    		<div id="maintext" style="display:none;"></div>
+    		<input id="maininput" type="text" style="display:none;" autocomplete="off">
+    	</div>
+    	
+    	<div id="authorcontainer" style="display:none;">
+    		<h1>HALLO AND WELCOMING TO MY AUTHOR PAGE</h1>
+    		
+    		<div id="authorpicture">
+    			<div id="authorpicture-inner">
+    				<img src="http://firedawnfolder.wdfiles.com/local--files/foldereleven/bensexy.png" alt="Sexiest Man Alive" style="width:100%">
+    			</div>
+    			<div id="authorpicture-text">
+    				Photograph that won Cyrus the famous "Sexiest Employee" award in 2018
+    			</div>
+    		</div>
+    		
+    		<div id="authormaintext">
+    			<p><strong>Name:</strong> Dr. Cyrus Firedawn PhD OBE MIT STD LIGMA</p>
+    			<p><strong>Designation:</strong> Site 41-B</p>
+    			<p><strong>Speciality:</strong> Technological, Ontological, and anything manifesting in the syrupy blend of Pancake Space</p>
+    			<p><strong>Notable Achievements:</strong> Winner of the Sexiest Employee Award 27 years running (see attached photograph), Voted "Most Annoying Researcher" in 2018</p>
+    		</div>
+    		<hr/>
+    		<br/>
+    		<p>Cyrus is known to be involved with the following projects:</p>
+    		<div class="scp-button">
+    			<a class="scp-link" href="http://www.scp-wiki.net/scp-3264">
+    				<span class="scp-label"><strong>SCP-3264</strong> | Causeless Effect</span>
+    			</a>
+    		</div>
+    		<div class="scp-button">
+    			<a class="scp-link" href="http://www.scp-wiki.net/scp-3493">
+    				<span class="scp-label"><strong>SCP-3493</strong> | The Great SCP Foundation Collaboration</span>
+    			</a>
+    		</div>
+    		<div class="scp-button">
+    			<a class="scp-link" href="http://www.scp-wiki.net/scp-4386">
+    				<span class="scp-label"><strong>SCP-4386</strong> | B Gone, B</span>
+    			</a>
+    		</div>
+    		
+    		<p class="footer">if you enjoyed this page, make sure to like, subscribe, and reassess your taste in web design</p>
+    	</div>
+    	
+    	<div id="norounder" style="display:none;">
+    		<img src="http://firedawnfolder.wdfiles.com/local--files/foldereleven/nrh.png">
+    		<p>NICE TRY, YOU TRICKSY HOBBIT, BUT YOU KNOW ONLY SQUAREHOUSES MAY ENTER THIS DOMAIN.</p>
+    	</div>
+    	
+    	<div id="skipbutton">
+    		<p>skip all this nonsense</p>
+    	</div>
+    	
+    	<script>
+    		$( document ).ready(function() {
+    			var mtext = $("#maintext");
+    			var minput = $("#maininput");
+    			
+    			var waitInput = false;
+    			var inputStoreName = {};
+    			var inputFunc = function(){};
+    			
+    			var skipped = false;
+    			
+    			var inputVals = [];
+    			
+    			var fadeSpeed = 2000;
+    			
+    			var textLinesFirst = [
+    				{ type: "text", text : "Greetings.", time : 1000 },
+    				{ type: "text", text : "You are fortunate, traveller.", time : 1000 },
+    				{ type: "text", text : "For you have finally discovered...", time : 1000 },
+    				{ type: "text", text : "The greatest author page in the multiverse.", time : 1000 },
+    				{ type: "text", text : "Tell me, my child...", time : 1000 },
+    				{ type: "input", text : "By what name should I refer to you?", time : 1000, store : "name", response : textLinesNameResponse }
+    			];
+    			
+    			
+    			function changeText(txt, newText) {
+    				mtext.text(newText);
+    			}
+    			
+    			function showNextTextLine(txt, txtLines, line) {
+    				changeText(txt, txtLines[line].text);
+    				txt.fadeIn(fadeSpeed, function() {
+    					setTimeout(
+    						function() { 
+    							txt.fadeOut(fadeSpeed, function() {
+    								showNextLine(txt, txtLines, line+1);
+    							});
+    						}, 
+    						txtLines[line].time
+    					);
+    				});
+    			}
+    			
+    			function showNextInputLine(txt, txtLines, line) {
+    				changeText(txt, txtLines[line].text);
+    				txt.fadeIn(fadeSpeed, function() {
+    					minput.slideDown("slow");
+    					
+    					inputStoreName = txtLines[line].store;
+    					inputFunc = txtLines[line].response;
+    					
+    					waitInput = true;
+    				});
+    			}
+    			
+    			function showNextLine(txt, txtLines, line) {
+    				if(skipped) {
+    					return;
+    				}
+    			
+    				if(line < txtLines.length) {
+    					if(txtLines[line].type === "text") {
+    						showNextTextLine(txt, txtLines, line);
+    					} else if(txtLines[line].type === "input") {
+    						showNextInputLine(txt, txtLines, line);
+    					} else if(txtLines[line].type === "action") {
+    						txtLines[line].func();
+    					}
+    				}
+    			}
+    			
+    			$(document).keypress(function(e) {
+    				if(e.which == 13 && waitInput) {
+    					waitInput = false;
+    				
+    					inputVals[inputStoreName] = minput.val();
+    					
+    					minput.slideUp("fast");
+    					mtext.fadeOut(fadeSpeed, function() {
+    						inputFunc();
+    					});
+    				}
+    			});
+    			
+    			$("#skipbutton").click(function(){
+    				$("#container").hide();
+    				$("#norounder").hide();
+    				$("#authorcontainer").show();
+    				
+    				skipped = true;
+    				
+    				$("#skipbutton").hide();
+    			});
+    			
+    			function showAuthorPage() {
+    				$("#skipbutton").hide();
+    				$("#container").hide();
+    				$("#norounder").hide();
+    				$("#authorcontainer").fadeIn(500);
+    			}
+    			
+    			function textLinesNameResponse() {
+    				var textLinesNamedFull = [];
+    				
+    				var textLinesNamedHead = [
+    					{ type: "text", text : inputVals["name"] + "?", time : 1000 },
+    					{ type: "text", text : "I see.", time : 1000 },
+    				];
+    				
+    				textLinesNamedFull = textLinesNamedFull.concat(textLinesNamedHead);
+    				
+    				if(inputVals["name"].toLowerCase() === "cyrusfiredawn") {
+    					var textLinesCyrus = [
+    						{ type: "text", text : "A spectacular name, fit for a God.", time : 1000 },
+    						{ type: "text", text : "You truly are blessed.", time : 1000 }
+    					];
+    					
+    					textLinesNamedFull = textLinesNamedFull.concat(textLinesCyrus);
+    				} else if(inputVals["name"].toLowerCase() === "luke" || inputVals["name"].toLowerCase() === "sheppard" || inputVals["name"].toLowerCase() === "researchersheppard") {
+    					var textLinesSheppard = [
+    						{ type: "text", text : "For you alone, I have four words.", time : 1000 },
+    						{ type: "text", text : "Kick Flip Time Trip.", time : 1000 },
+    						{ type: "text", text : "DO IT.", time : 1000 },
+    					];
+    					
+    					textLinesNamedFull = textLinesNamedFull.concat(textLinesSheppard);
+    				} else if(inputVals["name"].toLowerCase() === "rounderhouse") {
+    					$("#container").hide();
+    					$("#norounder").show();
+    					
+    					$("#skipbutton p").text("loljk, ily, click this to check out the author page");
+    					return;
+    				} else if(inputVals["name"].toLowerCase() === "squarehouse" || inputVals["name"].toLowerCase() === "squarerhouse") {
+    					var textLinesSquare = [
+    						{ type: "text", text : "A person of culture.", time : 1000 },
+    						{ type: "text", text : "We too believe in the true squareness of houses.", time : 1000 },
+    						{ type: "text", text : "Unlike those pesky \"round\" houses others deal in.", time : 1000 },
+    					];
+    					
+    					textLinesNamedFull = textLinesNamedFull.concat(textLinesSquare);
+    				}
+    				
+    				var textLinesEnd = [
+    					{ type: "text", text : "Now, " + inputVals["name"] + ", let us begin.", time : 1000 },
+    					{ type: "text", text : "Please, sit back.", time : 1000 },
+    					{ type: "text", text : "Relax.", time : 1000 },
+    					{ type: "text", text : "Maybe put on some vapourwave, I don't know, there's no sound in this realm because I don't want to annoy people with unexpected music.", time : 4000 },
+    					{ type: "text", text : "You are about to experience something truly incredible.", time : 1000 },
+    					{ type: "text", text : "Here it comes...", time : 1000 },
+    					{ type: "text", text : "", time : 4000 },
+    					{ type: "text", text : "That was it, " + inputVals["name"] + ".", time : 1000 },
+    					{ type: "text", text : "About 4 seconds of nothing.", time : 1000 },
+    					{ type: "text", text : "Wasn't it incredible?", time : 1000 },
+    					{ type: "text", text : "No?", time : 1000 },
+    					{ type: "text", text : "Oh. Well screw you then, check out my author page instead, jeez", time : 1000 },
+    					{ type: "action", func : showAuthorPage },
+    				];
+    				
+    				textLinesNamedFull = textLinesNamedFull.concat(textLinesEnd);
+    				
+    				showNextLine(mtext, textLinesNamedFull, 0);
+    			}
+    			
+    			showNextTextLine(mtext, textLinesFirst, 0);
+    		});
+    	</script>
+    </body>
+[[/html]]
