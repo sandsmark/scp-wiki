@@ -23,7 +23,12 @@ The following documentation has been flagged as {{COMPROMISED}} by SCP-2786's ef
 @import url(http://d3g0gp89917ko0.cloudfront.net/v--95415cd81222/common--modules/css/pagerate/PageRateWidgetModule.css);
 @import url(http://d3g0gp89917ko0.cloudfront.net/v--95415cd81222/common--theme/base/css/style.css);
 @import url(http://www.scp-wiki.net/component:theme/code/1);
-
+title-fade {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 </style>
     
 <script type="text/javascript">
@@ -537,7 +542,7 @@ The <tt>HERO</tt> knew of many things, but they did not know of any way in which
                     <div id="action-area-top"></div>
                     
                     
-                        <div id="page-title">
+                        <div class="title-fade" id="page-title">
                             <del>SCP-2786</del>
                         </div>
                     
@@ -566,7 +571,7 @@ The <tt>HERO</tt> knew of many things, but they did not know of any way in which
                     
                     
                         <div id="page-title">
-                            <del>SCP-2786</del>
+                            <del>2786</del>
                         </div>
                     
 
@@ -595,7 +600,7 @@ The <tt>HERO</tt> knew of many things, but they did not know of any way in which
                     
                     
                         <div id="page-title">
-                            <del>SCP-2786</del>
+                            
                         </div>
                     
 
