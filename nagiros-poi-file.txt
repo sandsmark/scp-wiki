@@ -1103,15 +1103,15 @@ Just a small log I keep of all the stuff I couldn't figure out for a while. Enjo
 
 @@ @@
 
-Use this code instead! Just remove the slash after the opening brackets.
+Use this code instead!
 
-[[code]]
+[[div class="code"]]
+@@[[include info:start]]@@
+[[/div]]
 
-[[/include info:start]]
-
-[[/include info:end]]
-
-[[/code]]
+[[div class="code"]]
+@@[[include info:end]]@@
+[[/div]]
 
 It comes with a built-in rating module anyways, as well as a little info-box so you can include info about your article. If you want to see this in action, [[*user Shaggydredlocks]] utilizes it really well. Check [[[SCP-4910]]] for a reference. 
 
