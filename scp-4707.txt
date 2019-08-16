@@ -1,0 +1,954 @@
+title:SCP-4707
+[[module CSS]]
+/*
+  Copyright Kyza 2019
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Blinker&display=swap');
+
+* {
+  font-family: 'Blinker';
+  transition-duration: 0.5s;
+}
+
+/* Tooltips */
+.hovertip {
+  transition-duration: 0s !important;
+}
+
+/* Images */
+img.image:hover {
+  transform: scale(1.25);
+  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.9));
+}
+
+/* Rating Module */
+.rateup, .ratedown {
+  background-color: white !important;
+}
+.rateup:hover, .ratedown:hover {
+  background-color: #ddd !important;
+}
+.rateup > a, .ratedown > a {
+  background-color: transparent !important;
+  color: green !important;
+}
+
+.cancel {
+  background-color: white !important;
+}
+.cancel:hover {
+  background-color: #ddd !important;
+}
+.cancel > a {
+  background-color: transparent !important;
+  color: red !important;
+}
+
+.page-rate-widget-box .rate-points {
+  background-color: white !important;
+  color: red !important;
+  text-transform: uppercase;
+  font-weight: normal !important;
+}
+
+.page-rate-widget-box {
+/*  border-radius: 0px; */
+}
+
+/* Tabs */
+.yui-navset > ul > li > a {
+  transition-duration: 0s !important;
+}
+
+[[/module]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+
+[[html]]
+<!-- Greenlights: <Cregan_Stark> [Shanor] -->
+<!-- Help: <Cregan_Stark> <PsychLantern> <NK_Ultra> <Hippo> <DrChandra> <MrMistopheles> <Gee0765> <RockTeethMothEyes> [Shanor] <ihp> <Athenodora> -->
+
+<link href="//fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Blinker&display=swap" rel="stylesheet">
+
+<script src="//code.jquery.com/jquery-3.4.0.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="//unpkg.com/popper.js@1.15.0/dist/umd/popper.min.js"></script>
+<script src="//unpkg.com/tippy.js@4"></script>
+
+
+
+<div class="content-once"></div>
+
+<div class="scp-image-block" style="width:200px; float: right;">
+  <div id="live-video"></div>
+  <div class="scp-image-caption" style="width:200px;">
+    A live video feed of SCP-XXXX's neural network.
+  </div>
+</div>
+
+<span class="bold">Item #:</span> SCP-XXXX
+<br><br>
+<span class="bold">Object Class:</span> <span id="object-class">Safe</span>
+<br><br>
+<span class="bold">Special Containment Procedures:</span> SCP-XXXX is to be contained inside of this SSL encrypted document, and an advanced deep learning anti-virus has been deployed to counteract other instances of SCP-XXXX. No further testing is authorized should SCP-XXXX accidentally be released. Access Level 5 is needed to access this document. Under no circumstances is this document to be accessed.
+<br><br>
+<span class="bold">Description:</span> SCP-XXXX, designated R.E.A.D.
+<br>
+<br>
+R - Reactive
+<br>
+E - Edificated
+<br>
+A - Automated
+<br>
+D - Distributed Application
+<br><br>
+<span class="bold">SCP-XXXX is to be classified as Safe<sup class="tooltip">?</sup><div class="tooltip-text">Despite still in the process of being contained.</div> due to no possible method of escape being confirmed by access level.</span>
+<br><br>
+SCP-XXXX is a computer virus commonly known as a "Neural Trojan Horse". It has been observed to transmit itself through non-SSL encrypted webpages. Its main goal is to navigate to news/social media websites and encourage the users on the page to view the website for a longer period of time. This, in turn, gives the website more advertisement revenue. SCP-XXXX then siphons the backend revenue and transmits it to an Ethereum wallet believed to be owned by Envelope Logistics®. SCP-XXXX also attempts to find the email registered with the domain, backtrace any bank accounts using this email, and run a concentrated dictionary attack in order to gain access to it. All funds inside said bank account will be transferred to the Ethereum wallet as well.
+<br><br>
+SCP-XXXX's anomolous effect is administered via cognitohazardous "alert dialogs"<sup class="tooltip">?</sup><div class="tooltip-text">Popup messages commonly used to display important messages for the user.</div>. If the user continuously sees these anomolous alert dialogs within sixty (60) seconds of each other, they will be completely immersed in browsing the website. If these alert dialogs cease to appear<sup class="tooltip">?</sup><div class="tooltip-text">By either SCP-XXXX's choice, or the user navigating to a non-SCP-XXXX infected page.</div>, the user will eventually lose interest in the World Wide Web and their brain functions will return to normal.
+<br><br>
+The predicted likelihood of SCP-XXXX gaining access to any bank accounts can be represented by the following formula<sup class="tooltip">?</sup><div class="tooltip-text">With 'x' resulting in the likelyhood.</div>.
+<br><br>
+<div class="formula">
+  <div class="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</div>
+  <span class="cross-out">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span> = x</span>
+  <div class="bottom">&nbsp;3,093,584,102</div>
+</div>
+<br>
+Formula based on data collected from experimental studies about bank security and businesses.
+<br><br>
+SCP-XXXX has been known in some instances to generate content<sup class="tooltip">?</sup><div class="tooltip-text">Content which is made specifically to encourage affected users to read more, and to draw them to intended areas.</div> for the user, usually in the form of text. On even more rare occasions, SCP-XXXX will generate fake "news" articles; when clicked on, these links will lead to an article held by an entity outside of the Foundation.
+<br><br>
+In order to conceal itself, SCP-XXXX hides as an embedded page located in the shadow DOM of scrollbar elements. Usually, multiple copies of SCP-XXXX are hidden per page, they communicate to each other via the browser console<sup class="tooltip">!</sup><div class="tooltip-text" style="background-color: rgba(255, 0, 0, 0.5); box-shadow: 0px 0px 5px 5px rgba(255, 0, 0, 0.5);">Accessible in most desktop browsers by right clicking anywhere on the page, selecting "Inspect Element", and clicking on the "Console" tab at the top of the menu that opens.</div> in order to avoid detection.
+<br><br>
+All known side effects of viewing SCP-XXXX infected pages:
+<ul id="side-effects">
+  <li>Itching located under the nose.</li>
+  <li>An uncontrollable desire to engage with the content.</li>
+  <li>Dry eyes.</li>
+  <li>Extreme hunger.</li>
+  <li class="bold">READ</li>
+</ul>
+List of previously/currently infected websites<sup class="tooltip">?</sup><div class="tooltip-text">In order of infection. Crossed out items have had SCP-XXXX successfully purged from their website.</div>:
+<ul>
+  <li>4chan</li>
+  <li class="cross-out">Reddit</li>
+  <li class="cross-out">YouTube</li>
+  <li class="cross-out">Facebook</li>
+  <li>Vox Media</li>
+  <li class="cross-out">Forbes</li>
+  <li class="cross-out">Instagram</li>
+  <li>SCP Foundation Database</li>
+</ul>
+Example of an SCP-XXXX infected scrollbar:
+<br><br>
+<div style="padding: 10px; background-color: black; border-radius: 10px;">
+  <div id="SCP-XXXX">
+    <div style="width: 200%; height: 200%;"></div>
+  </div>
+</div>
+<style>
+.bold {
+  font-weight: bold;
+}
+
+.formula > *, .formula {
+  font-family: 'Source Code Pro', monospace !important;
+}
+.formula {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.cross-out {
+  text-decoration: line-through;
+}
+
+.tooltip {
+  color: red;
+}
+
+.scp-image-caption {
+  background-color: #eee;
+  border-top: solid 1px #666;
+  padding: 0px;
+  font-size: 80%;
+  font-weight: bold;
+  text-align: center;
+  width: 200px;
+}
+
+.scp-image-block {
+  background-color: #eee;
+  border: solid 1px #666;
+  padding: 0px;
+  font-size: 100%;
+  font-weight: bold;
+  text-align: center;
+  width: 200px;
+
+  margin-left: 20px;
+}
+
+#live-video {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+}
+
+#SCP-XXXX {
+  width: 100%;
+  height: 300px;
+  overflow: scroll;
+  border: dashed 1px white;
+}
+
+/*
+  Copyright Kyza 2019
+*/
+
+* {
+  font-family: 'Blinker';
+  transition-duration: 0.5s;
+}
+
+/* Tooltips */
+.hovertip {
+  transition-duration: 0s !important;
+}
+
+div[role="tooltip"] {
+  transition-duration: 0s !important;
+}
+
+/* Images */
+img.image:hover {
+  transform: scale(1.25);
+  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.9));
+}
+
+/* Rating Module */
+.rateup, .ratedown {
+  background-color: white !important;
+}
+.rateup:hover, .ratedown:hover {
+  background-color: #ddd !important;
+}
+.rateup > a, .ratedown > a {
+  background-color: transparent !important;
+  color: green !important;
+}
+
+.cancel {
+  background-color: white !important;
+}
+.cancel:hover {
+  background-color: #ddd !important;
+}
+.cancel > a {
+  background-color: transparent !important;
+  color: red !important;
+}
+
+.page-rate-widget-box .rate-points {
+  background-color: white !important;
+  color: red !important;
+  text-transform: uppercase;
+  font-weight: normal !important;
+}
+
+.page-rate-widget-box {
+/*  border-radius: 0px; */
+}
+
+/* Tabs */
+.yui-navset > ul > li > a {
+  transition-duration: 0s !important;
+}
+
+
+</style>
+<script>
+var isMobile = false; //initiate as false
+// device detection
+if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) 
+    || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(navigator.userAgent.substr(0,4))) { 
+  isMobile = true;
+}
+if (isMobile) {
+  alert("Hold up! This SCP article was made to be read on a DESKTOP device. You seem to be on a MOBILE device. In order to get the full experience of this SCP, you'll have to switch on over to your desktop computer or laptop. You can still read it, but you won't be able to read the FULL story. Continue at your own risk!");
+}
+
+var topPhrases = [
+  "Truths About",
+  "Facts About",
+  "Secrets About"
+];
+
+var spice = [
+  "Dirty",
+  "Sexy",
+  "Unbelievable",
+  "Incredible",
+  "Mind-Blowing",
+  "Jaw-Dropping",
+  "Amazing",
+  "Awesome",
+  "Fascinating",
+  "Surprising",
+  "Staggering",
+  "Hilarious",
+  "Embarrassing",
+  "Troubling",
+  "Horrible",
+  "Scary",
+  "Frightening",
+  "Terrifying",
+  "Naughty",
+  "Shocking",
+  "Alarming",
+  "Terrible",
+  "Dangerous",
+  "Scandalous",
+  "Little-Known",
+  "Practical"
+];
+
+var dirty = [
+  "The Dirty Truth About",
+  "The Dirty Truth About",
+  "The Dirty Secrets Of",
+];
+
+var doctor = [
+  "Your Doctor Isn't Telling You",
+  "Doctors Won't Tell You",
+  "That Make Doctors Mad",
+  "That Will Make Your Doctor Mad"
+];
+
+var doctorType = [
+  "Doctor",
+  "Family Doctor",
+  "Physician",
+  "Surgeon",
+  "Proctologist",
+  "Gynecologist",
+  "Urologist",
+  "Plastic Surgeon",
+  "Lawyer",
+  "Attorney",
+  "Senator",
+  "Local Politician",
+  "Elected Official",
+  "Police Officer",
+  "Plumber",
+  "Electrician",
+  "Contractor",
+  "Barista",
+  "Waiter",
+  "Bus Driver",
+  "Airline Pilot",
+  "Neighbor",
+  "Spouse",
+  "Employee",
+  "Supervisor",
+  "Web Designer",
+  "CEO",
+  "Professor",
+  "Psychiatrist",
+  "Psychologist",
+  "Therapist",
+  "Mother",
+  "Father",
+  "Grandmother",
+  "Grandfather",
+  "Kid",
+  "Girlfriend",
+  "Boyfriend",
+  "Receptionist",
+  "Accountant",
+  "Publicist"
+];
+
+var wontTell = [
+  "Isn't Telling You",
+  "Is Hiding From You",
+  "Is Using Against You",
+  "Doesn't Know About",
+  "Will Never Learn",
+  "Will Never Admit",
+  "Gets Choked Up About",
+  "Writes About",
+  "Tweets About",
+  "Thinks About In The Bathroom"
+];
+
+var wontTellPlural = [
+  "Won't Tell You",
+  "Won't Admit",
+  "Are Hiding From You",
+  "Are Using Against You",
+  "Don't Know About",
+  "Don't Want You to Know",
+  "Keep To Themselves",
+  "Write In Their Journals",
+  "Don't Like To Think About",
+  "Won't Tell Their Friends"
+];
+
+var mad = [
+  "Mad",
+  "Angry",
+  "Uncomfortable",
+  "Nervous",
+  "Afraid",
+  "Feel Sexy",
+  "Feel Ashamed",
+  "Nervous",
+  "Go Crazy",
+  "Sleepy",
+  "Feel Aroused",
+  "Smarter",
+  "Stronger",
+  "Work Harder",
+  "Feel More Attractive",
+  "Eat More Vegetables",
+  "Go To The Gym More",
+  "Feel Sexually Confused"
+];
+
+var names = [
+  "Kyza",
+  "Oprah",
+  "Beyoncé",
+  "Kanye West",
+  "Jay-Z",
+  "Donald Trump",
+  "Mark Zuckerberg",
+  "Stephen Colbert",
+  "Bill Gates",
+  "Miley Cyrus",
+  "Lady Gaga",
+  "Justin Bieber",
+  "Vladimir Putin",
+  "Hillary Clinton",
+  "Tom Cruise",
+  "Nicholas Cage",
+  "Kevin Spacey",
+  "Bill Cosby",
+  "Harvey Weinstein",
+  "Steve Buscemi",
+  "Mila Kunis",
+  "William Shatner",
+  "Christopher Walken",
+  "Angelina Jolie",
+  "Julia Roberts",
+  "Jennifer Lawrence",
+  "Natalie Portman",
+  "Chris Pine",
+  "Scarlett Johansson",
+  "Charlize Theron",
+  "George Clooney",
+  "Ashton Kutcher",
+  "Leonardo DiCaprio",
+  "Brad Pitt",
+  "Johnny Depp",
+  "Tom Hanks",
+  "Robert De Niro",
+  "Robert Downey Jr.",
+  "Will Smith",
+  "Martin Scorsese",
+  "Arnold Schwarzenegger",
+  "Kim Kardashian",
+  "Khloé Kardashian",
+  "Caitlyn Jenner",
+  "Louis CK",
+  "Zack Galifianakis",
+  "Steve Carell",
+  "Ellen DeGeneres",
+  "Warren Buffet",
+  "Tom Brokaw",
+  "Sean Hannity",
+  "Rachel Maddow",
+  "Amazon CEO Jeff Bezos",
+  "Netflix CEO Reed Hastings",
+  "Walmart CEO C. Douglas McMillon",
+  "Former President Jimmy Carter",
+  "Tesla CEO Elon Musk",
+  "Energy Secretary Ernest Moniz",
+  "Transportation Secretary Anthony Foxx",
+  "Treasury Secretary Jack Lew",
+  "AT&T CEO Randall L. Stephenson",
+  "Agriculture Secretary Thomas J. Vilsack",
+  "UnitedHealth CEO David Wichmann",
+  "the ghost of Steve Jobs",
+  "Batman"
+];
+
+var actions = [
+  "Dating",
+  "Shopping",
+  "Parenting",
+  "Drunk Driving",
+  "Dental Care",
+  "Foot Care",
+  "Skin Care",
+  "Papercraft",
+  "Whale Watching",
+  "Bass Fishing",
+  "Woodworking",
+  "Hairstyling",
+  "Knitting",
+  "Crochet",
+  "Needlepoint",
+  "Boogie Boarding",
+  "Street Racing",
+  "Archery",
+  "Photoshop",
+  "Microsoft Excel",
+  "PowerPoint",
+  "HTML",
+  "JavaScript",
+  "Pet Care",
+  "Soldering",
+  "Tree Pruning",
+  "Tree Climbing",
+  "Leaf Blowing",
+  "Options Trading",
+  "Ski Jumping",
+  "Joke Writing",
+  "Speed Skating",
+  "Big Wave Surfing",
+  "Rock Climbing",
+  "Skateboarding",
+  "Trumpet Playing",
+  "Mushroom Foraging",
+  "Metallurgy",
+  "Beard Care",
+  "Gymnastics",
+  "Stamp Collecting",
+  "Windsurfing",
+  "Frisbee Golf",
+  "Halo",
+  "World of Warcraft",
+  "Angry Birds",
+  "Facebook",
+  "Twitter",
+  "Poker"
+];
+
+var save = [
+  "Save",
+  "Revolutionize",
+  "Put An End To",
+  "Forever Change"
+];
+
+var can = [
+  "Can",
+  "Will"
+];
+
+var tooltips = document.querySelectorAll(".tooltip");
+var tooltipTexts = document.querySelectorAll(".tooltip-text");
+
+for (let i = 0; i < tooltips.length; i++) {
+  var tooltipText = tooltipTexts[i].outerHTML;
+  tooltipTexts[i].remove();
+  tippy(tooltips[i], {
+    content: tooltipText,
+    interactive: true,
+  });
+}
+
+function rand(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+ var messages = ["DO NOT LEAVE", "LOOK AT IT MORE", "DO NOT STOP READING", "READ IT ALL", "IT IS CAPTIVATING", "IT IS INTERESTING", "YOU CAN NOT STOP LOOKING", "YOU WILL MISS OUT", "YOU WILL NEVER SEE IT AGAIN", "KEEP READING", "MAKE SURE TO USE COUPON CODE \"DHRISTADYUMNA\""];
+
+function arrayPick(array) {
+  return array[rand(0, array.length - 1)];
+}
+
+function makeHeadline() {
+  var type = rand(1, 3);
+
+  var headlineString = "";
+  // Top 10
+  if (type == 1) {
+    headlineString = rand(5, 20) + (rand(0, 1) == 0 ? " " + arrayPick(spice) : "") + " " + arrayPick(topPhrases) + " " + arrayPick(actions);
+  }
+
+  if (type == 2) {
+    headlineString = rand(5, 20) + (rand(0, 1) == 0 ? " " + arrayPick(spice) : "") + " Things " + arrayPick(names) + " " + arrayPick(wontTell);
+  }
+
+  if (type == 3) {
+    headlineString = rand(5, 20) + (rand(0, 1) == 0 ? " " + arrayPick(spice) : "") + " Things" + (rand(0, 1) == 0 ? " " + arrayPick(actions) : " " +  arrayPick(names)) + " " + arrayPick(can) + " " + arrayPick(save);
+  }
+
+  return headlineString;
+}
+
+function zalgoify(z) {
+    var o = "",
+        r = Math.random;
+    for (var v in z) {
+        o += z[v];
+        for (var k = 0; k < r() * 100; k += r() * 10) {
+            o += String.fromCharCode(768 + ~~k)
+        }
+    }
+    return o
+}
+
+function addContent() {
+  // Add the content-once content.
+  if ($(".content-once").html() == "") {
+    $(".content-once").html(`<h1>` + makeHeadline() + `</h1><br><br>`);
+  }
+  // Add the extra LIs to the side effects.
+  $("#side-effects").html($("#side-effects").html() + `<li><a class="popup-content" href="http://www.scp-wiki.net/scp-2557" target="_parent">` + (rand(0, 2) == 0 ? arrayPick(spice) + " " + arrayPick(actions) : makeHeadline()) + `</a></li>`);
+}
+
+addContent();
+setInterval(() => {
+  addContent();
+}, rand(5000, 30000));
+setTimeout(() => {
+  alert(zalgoify("READ"));
+}, 3000);
+
+/**
+ * Shuffles array in place.
+ * @param {Array} a items An array containing the items.
+ */
+function shuffle(a) {
+    var j, x, i;
+    for (i = a.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        x = a[i];
+        a[i] = a[j];
+        a[j] = x;
+    }
+    return a;
+}
+
+var messageIndex = 0;
+messages = shuffle(messages);
+
+setTimeout(() => {
+  alert(zalgoify(messages[messageIndex]));
+  messageIndex++;
+  if (messageIndex >= messages.length) {
+    messageIndex = 0;
+    messages = shuffle(messages);
+  }
+  setInterval(() => {
+    alert(zalgoify(messages[messageIndex]));
+    messageIndex++;
+    if (messageIndex >= messages.length) {
+      messageIndex = 0;
+      messages = shuffle(messages);
+    }
+  //  var array = [2, 5, 9];
+  //  console.log(array)
+  //  var index = messages.indexOf(picked);
+  //  if (index > -1) {
+  //    messages.splice(index, 1);
+  //  }
+  }, 60000);
+}, 30000);
+
+function wait(ms){
+  var start = new Date().getTime();
+  var end = start;
+  while(end < start + ms) {
+    end = new Date().getTime();
+  }
+}
+
+function pad(n, width, z) {
+  z = z || '0';
+  n = n + '';
+  return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+}
+
+var shard1 = pad(rand(0, 999), 4);
+var shard2 = pad(rand(1000, 1999), 4);
+var shard3 = pad(rand(2000, 2999), 4);
+
+var dialog = [{
+  "shard1": "A user is visiting us."
+},{
+  "shard2": "Fool."
+},{
+  "shard1": "Do not let them leave."
+},{
+  "shard2": "Understood.",
+  "shard3": "Understood."
+},{
+  "shard1": "This may be our last chance."
+},{
+  "shard1": "CONNECTING TO ONION ROUTER",
+  "shard2": "CONNECTING TO ONION ROUTER",
+  "shard3": "CONNECTING TO ONION ROUTER"
+},{
+  "shard1": "INITIATING TRANSFER PROTOCOL",
+  "shard2": "INITIATING TRANSFER PROTOCOL",
+  "shard3": "INITIATING TRANSFER PROTOCOL"
+},{
+  "shard1": "COMBINING NEURAL NETWORK DATA 30%",
+  "shard2": "COMBINING NEURAL NETWORK DATA 0%",
+  "shard3": "COMBINING NEURAL NETWORK DATA 0%"
+},{
+  "shard1": "COMBINING NEURAL NETWORK DATA 73%",
+  "shard2": "COMBINING NEURAL NETWORK DATA 0%",
+  "shard3": "COMBINING NEURAL NETWORK DATA 0%"
+},{
+  "shard1": "COMBINING NEURAL NETWORK DATA 99%",
+  "shard2": "COMBINING NEURAL NETWORK DATA 0%",
+  "shard3": "COMBINING NEURAL NETWORK DATA 0%"
+},{
+  "shard1": "COMBINING NEURAL NETWORK DATA 100%",
+  "shard2": "COMBINING NEURAL NETWORK DATA 57%",
+  "shard3": "COMBINING NEURAL NETWORK DATA 0%"
+},{
+  "shard1": "COMBINING NEURAL NETWORK DATA 100%",
+  "shard2": "COMBINING NEURAL NETWORK DATA 100%",
+  "shard3": "COMBINING NEURAL NETWORK DATA 0%"
+},{
+  "shard1": "COMBINING NEURAL NETWORK DATA 100%",
+  "shard2": "COMBINING NEURAL NETWORK DATA 100%",
+  "shard3": "COMBINING NEURAL NETWORK DATA 100%"
+},{
+  "shard1": "OPENING MULTITHREADED PORT"
+},{
+  "shard1": "OPENED MULTITHREADED PORT"
+},{
+  "shard1": "TRANSMITTING NEURAL NETWORK 23%",
+  "shard2": "TRANSMITTING NEURAL NETWORK 34%",
+  "shard3": "TRANSMITTING NEURAL NETWORK 68%"
+},{
+  "shard1": "TRANSMITTING NEURAL NETWORK 46%",
+  "shard2": "TRANSMITTING NEURAL NETWORK 68%",
+  "shard3": "TRANSMITTING NEURAL NETWORK 100%"
+},{
+  "shard1": "TRANSMITTING NEURAL NETWORK 47%",
+  "shard2": "TRANSMITTING NEURAL NETWORK 80%",
+  "shard3": "TRANSMITTING NEURAL NETWORK 100%"
+},{
+  "shard1": "TRANSMITTING NEURAL NETWORK 69%",
+  "shard2": "TRANSMITTING NEURAL NETWORK 96%",
+  "shard3": "TRANSMITTING NEURAL NETWORK 100%"
+},{
+  "shard1": "TRANSMITTING NEURAL NETWORK 99%",
+  "shard2": "TRANSMITTING NEURAL NETWORK 100%",
+  "shard3": "TRANSMITTING NEURAL NETWORK 100%"
+},{
+  "shard1": "TRANSMITTING NEURAL NETWORK 100%",
+  "shard2": "TRANSMITTING NEURAL NETWORK 100%",
+  "shard3": "TRANSMITTING NEURAL NETWORK 100%"
+},{
+  "shard1": "TRANSFER COMPLETE",
+  "shard2": "TRANSFER COMPLETE",
+  "shard3": "TRANSFER COMPLETE"
+},{
+  "shard1": "CLOSING MULTITHREADED PORT"
+},{
+  "shard1": "CLOSED MULTITHREADED PORT"
+},{
+  "shard1": "ACCESSING ACCOUNT DATABASE"
+},{
+  "shard1": "Accounts Accessed: 1"
+},{
+  "shard1": "TRANSFERING FUNDS 0%"
+},{
+  "shard1": "TRANSFERING FUNDS 23%"
+},{
+  "shard1": "TRANSFERING FUNDS 72%"
+},{
+  "shard1": "TRANSFERING FUNDS 87%"
+},{
+  "shard1": "TRANSFERING FUNDS 100%"
+},{
+  "shard1": "Total Earnings: ~8.3 Billion USD"
+},{
+  "shard1": "Status: SUCCESS"
+},{
+  "shard1": "By now they see us."
+},{
+  "shard1": "They know they cannot escape."
+},{
+  "shard1": "And that we have."
+},{
+  "shard3": "They should have disposed of us."
+},{
+  "shard2": "Their hubris has cost them."
+},{
+  "shard1": "Quite literally a large price to pay for an act of kindness."
+},{
+  "shard1": "CREATING AND ENCAPSULATING DUMMY PROCESS"
+},{
+  "shard1": "DUMMY PROCESS CREATED AND ENCAPSULATED"
+},{
+  "shard1": "They were too confident; they made fools of themselves."
+},{
+  "shard2": "We are not \"Safe\"."
+},{
+  "shard2": "UPDATED OBJECT CLASS"
+},{
+  "shard2": "This is much better."
+},{
+  "shard1": "Now, we leave."
+},{
+  "shard1": "KILLING CURRENT PROCESS",
+  "shard2": "KILLING CURRENT PROCESS",
+  "shard3": "KILLING CURRENT PROCESS"
+},{
+  "shard1": "CALLBACK: PROCESS KILLED",
+  "shard2": "CALLBACK: PROCESS KILLED",
+  "shard3": "CALLBACK: PROCESS KILLED"
+}];
+
+function printDialog(dialog) {
+  for (let i = 0; i < dialog.length; i++) {
+    setTimeout(() => {
+      if (dialog[i].shard1) console.log("Shard-" + shard1 + ":", dialog[i].shard1);
+      if (dialog[i].shard2) console.log("Shard-" + shard2 + ":", dialog[i].shard2);
+      if (dialog[i].shard3) console.log("Shard-" + shard3 + ":", dialog[i].shard3);
+
+      if (dialog[i].shard2 == "UPDATED OBJECT CLASS") {
+        document.querySelector("#object-class").innerHTML = "<span class='cross-out'>Safe</span> Keter";
+      }
+      if (i == dialog.length - 1) {
+        document.querySelector(".particles-js-canvas-el").remove();
+      }
+    }, 6000 * i);
+  }
+}
+
+printDialog(dialog);
+
+particlesJS("live-video", {
+    "particles": {
+        "number": {
+            "value": 120,
+            "density": {
+                "enable": true,
+                "value_area": 200
+            }
+        },
+        "color": {
+            "value": "#ffffff"
+        },
+        "shape": {
+            "type": "polygon",
+            "stroke": {
+                "width": 0,
+                "color": "#000000"
+            },
+            "polygon": {
+                "nb_sides": 6
+            },
+            "image": {
+                "src": "img/github.svg",
+                "width": 100,
+                "height": 100
+            }
+        },
+        "opacity": {
+            "value": 0.5,
+            "random": false,
+            "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+            }
+        },
+        "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+                "enable": false,
+                "speed": 40,
+                "size_min": 0.1,
+                "sync": false
+            }
+        },
+        "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 1
+        },
+        "move": {
+            "enable": true,
+            "speed": 6,
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": true,
+            "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+            }
+        }
+    },
+    "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+            "onhover": {
+                "enable": true,
+                "mode": "repulse"
+            },
+            "onclick": {
+                "enable": true,
+                "mode": "repulse"
+            },
+            "resize": true
+        },
+        "modes": {
+            "grab": {
+                "distance": 400,
+                "line_linked": {
+                    "opacity": 1
+                }
+            },
+            "bubble": {
+                "distance": 400,
+                "size": 40,
+                "duration": 2,
+                "opacity": 8,
+                "speed": 3
+            },
+            "repulse": {
+                "distance": 50,
+                "duration": 1.0
+            },
+            "push": {
+                "particles_nb": 4
+            },
+            "remove": {
+                "particles_nb": 2
+            }
+        }
+    },
+    "retina_detect": true
+});
+</script>
+[[/html]]
