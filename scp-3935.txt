@@ -33,11 +33,23 @@ line-height: 1.6em;
 [[module Rate]]
 [[/>]]
 
-[[=]]
-[[image warning.png]]
-@@@@
-[[image classified.png]]
-[[/=]]
+[[include component:object-warning-box-source
+|bg-image=https://upload.wikimedia.org/wikipedia/commons/e/ec/SCP_Foundation_%28emblem%29.svg
+|bg-opacity=0.15
+|text-top=BY ORDER OF THE OVERSEER COUNCIL
+|text-bottom=The following file is Level 3/3935 classified.
+**Unauthorized access is forbidden.**
+|object-number=3935
+]]
+
+[[include :scp-wiki:component:anomaly-class-bar-source
+|item-number= 3935
+|clearance= 3
+|container-class= euclid
+|secondary-class= none
+|disruption-class= keneq
+|risk-class= caution
+]]
 
 -----
 
