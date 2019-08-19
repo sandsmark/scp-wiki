@@ -1,0 +1,120 @@
+title:Classification Committee Memo
+[[include component:black-highlighter-theme-dev]]
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[div style="display: block; border: dashed 1px #444444; background: #F5F5F5; margin-left: auto; margin-right: auto; width: auto; padding: 10px;"]]
+
+[[size 200%]]**SCP FOUNDATION INTERNAL MEMO**[[/size]]
+[[size 140%]]**Classifications Committee**[[/size]]
+[[size 120%]]**Site-81**[[/size]]
+
+**Date:** 18.8.2019
+**From:** J. Karlyle Aktus
+**To:** Classification Committee [ALL], Site-81 Leadership [ALL], American Command Group [ALL]
+-----
+
+Greetings!
+
+As many of you know, we recently concluded our latest classification reassessment initiative, which we have taken to calling RE/class 2019. The purpose of this project was to assess how we currently classify anomalous entities and artifacts. The project was a joint effort between the American Site Directors' Council, the Classification Committee leadership group, and O5-7's office. We are grateful for all of the support we have received.
+
+The full report will be available in the coming days, but I wanted to reach out to you and provide a summary of our findings, as well as some ideas and alterations we are considering. It is our hope that we will have addressed many of the extant issues with the current classification format, and we will give ourselves room to grow in the future.
+
+So, to begin, we tasked the team to assess our current format and how it is utilized when categorizing anomalies. After several weeks of research and deliberation, we narrowed it down to three main issues:
+
+* Personnel feel the current use of non-standard Object Classes is not clearly defined,
+* Personnel feel that attempts to obfuscate non-standard Object Classes is detrimental to files where they are necessary,
+* Personnel feel that the Object Class system does not identify containment priority or threats to their well-being.
+
+In order to address these issues, we had to take a long look at our current system. Our largest problem, as it typically is, seems to be one of communication, and clarifying intent. As our organization steps into the new century we are met by many challenges, foremost of which is our renewed dedication to the safety of our researchers, security personnel, academic and administrative staff, and everyone else under the Foundation's umbrella. As such, we determined a more comprehensive format was required. 
+
+As such, we'd like to present for your consideration the result of our efforts: the SCP Class System MK IV.
+
+-----
+
+**Example #1**
+
+[[include :scptestwiki:component:anomaly-class-bar-source
+|item-number= 2316
+|clearance= 4
+|container-class= keter
+|secondary-class= none
+|disruption-class= vlam
+|risk-class= danger
+]]
+
+**Example #2**
+
+[[include :scptestwiki:component:anomaly-class-bar-source
+|item-number= 3000
+|clearance= 5
+|container-class= esoteric
+|secondary-class= thaumiel
+|secondary-icon= http://scptestwiki.wikidot.com/local--files/component:anomaly-class-bar/thaumiel-icon.svg
+|disruption-class= ekhi
+|risk-class= critical
+]]
+
+**Example #3**
+
+[[include :scptestwiki:component:anomaly-class-bar-source
+|item-number= 1730
+|clearance= 3
+|container-class= neutralized
+|secondary-class= none
+|disruption-class= none
+|risk-class= none
+]]
+
+-----
+
+As I indicated earlier, the full details of this format will be available in the comprehensive report. However, I want to take a few short moments to identify the major characteristics of this model.
+
+To start, you'll notice that the area for Item Number, Classification Level (I-V) and Object Class have been fundamentally altered. The Item Number now features prominently on the left side of the document, in large-type font to make sure it is the first thing a reader will see on the screen. To the far right is the new classification system, which we have upgraded to create a more distinct system than the one we have now. Classification levels remain 1-5; however, each of these levels is now named, per standard classification naming conventions. 
+
+From lowest to highest clearance requirements, these levels are: 
+
+* **Unrestricted:** Fully available to all personnel, regardless of clearance level.
+* **Restricted:** Fully available to all personnel Level 2 or above, unless otherwise specified.
+* **Confidential:** Fully available to all personnel Level 3 or above, unless otherwise specified.
+* **Secret:** Fully available to all personnel Level 4 or above, unless otherwise specified.
+* **Top Secret:** Locked to all personnel without express permission or Overseer clearance level.
+
+Below the Object Number on the left side, you'll see the familiar Object Class has been exchanged for a more specific Containment Class. Containment Classes should be used to specifically identify the challenges involved when containing an entity or artifact, and do not reflect some aspect of the entity itself. In addition, the Classification Committee has agreed to approve the reclassification of the **five** primary containment classes, **Safe, Euclid, Keter, Neutralized, and Explained**, with **Pending** as a transition class prior to classification. These are now considered "Static" containment classes, and are to be utilized when there are no extenuating circumstances involved in containing an entity that would require clarification.
+
+The "Static" classes stand in contrast to the sixth containment class, **Esoteric**. The Esoteric-class is a catch-all containment class used when an object requires additional containment specifications that are not present within the five static classes. When utilizing the Esoteric containment class, personnel should then specify //which// containment class should be utilized in the box below. A full list of applicable colors for various Esoteric classes will be available in the beta testing guide shortly. Notably, this option will not appear on the module when not in use.
+
+You'll notice the new Disruption and Risk Class sections in the bottom center of the module. This is a feature we are currently testing to try to communicate priority and risk to our containment personnel, specifically by identifying which entities are the most likely to disrupt the general population were they to escape containment, and what risk those entities pose to personnel immediately around them. Due to Foundation resources often being at a premium, our ability to maximize our efficiency and safety will be paramount as we move into the next century.
+
+There are five levels to the Disruption Class scale:
+
+* **Dark:** Little to no potential to disrupt the general population.
+* **Vlam:** Low potential to disrupt the general population. Disruption is typically confined to a locality.
+* **Keneq:** Medium potential to disrupt the general population. Disruption is typically confined to a region or city.
+* **Ekhi:** High potential to disrupt the general population. Disruption is typically widespread, affecting major metropolitan areas or countries.
+* **Amida:** Worldwide disruption of the general population. Disruption is global, and is a significant threat to established normalcy. Threats that have the potential to disrupt an area larger than the boundaries of the planet Earth fall within the bounds of the Amida classification.
+
+There are also five levels to the Risk Class scale:
+
+* **Notice:** The anomaly in question has a low risk potential. Individuals nearby may feel minimal effects from the anomaly, but these effects rarely pose any harm or even discomfort.
+* **Caution:** The anomaly in question has a moderate risk potential. Individuals nearby will likely experience the effects of the anomaly, and these effects may cause discomfort or harm.
+* **Warning:** The anomaly in question has a high risk potential. Individuals nearby will likely experience the acute effects of the anomaly and will be at risk for experiencing severe harm, up to and including death.
+* **Danger:** The anomaly in question has a very high risk potential. Individuals nearby will invariably be exposed to harm, up to and including death. These effects are very difficult to mitigate.
+* **Critical:** The anomaly in question has an extremely severe risk potential. Individuals nearby will invariably be exposed to acute, life-threatening harm. These effects cannot be mitigated.
+
+Lastly, on the bottom right of the module you will see a new symbol that provides an at-a-glance view of the four primary information sections within this new system: Containment Class, Esoteric Class (if applicable), Disruption Class and Risk Class. These new classification diamonds will be posted on the exterior of containment cells of anomalous entities and artifacts, to provide efficient and consistent communication of all applicable challenges.
+
+The purpose of these changes are to provide better communication between our classification officials and our boots-on-the-ground containment personnel. However, while we feel this is a major improvement over the prior model, we understand that there will be those who do not feel comfortable adapting to this new format and will push back against it. This is understandable and reasonable, and since the current format is still within our standard there is no reason to force anyone to adapt to it. 
+
+However, we will be beta-testing this format at Site-81, and so you may see many of the existing files from our site change in the coming weeks. There are several other sites who are currently considering joining us in beta testing this format as well, and hopefully we will see wider adoption going forward. 
+
+As always, if you have questions, concerns, or complaints about this new module, please forward them to my office. I am working closely with Dr. Woedenaz's team to implement the best possible iteration of this module, and we are certainly open to new ideas!
+
+Thank you again to everyone involved in this project.
+
+Most sincerely,
+
+Jean Karlyle Aktus
+Director, USINBL Site-81
+[[/div]]
