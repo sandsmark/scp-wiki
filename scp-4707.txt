@@ -825,19 +825,19 @@ function printDialog(dialog) {
       if (dialog[i].shard1) {
         console.log("Shard-" + shard1 + ":", dialog[i].shard1);
         if (isMobile) {
-          $("#SCP-4707 > div").html($("#SCP-4707 > div").html() + `<span style="color: green; width: 100%;">` + "Shard-" + shard1 + ":" + dialog[i].shard1 + `</span><br>`);
+          $("#SCP-4707 > div").html($("#SCP-4707 > div").html() + `<span style="color: green; width: 100%;">` + "Shard-" + shard1 + ": " + dialog[i].shard1 + `</span><br>`);
         }
       }
       if (dialog[i].shard2) {
         console.log("Shard-" + shard2 + ":", dialog[i].shard2);
         if (isMobile) {
-          $("#SCP-4707 > div").html($("#SCP-4707 > div").html() + `<span style="color: green; width: 100%;">` + "Shard-" + shard2 + ":" + dialog[i].shard2 + `</span><br>`);
+          $("#SCP-4707 > div").html($("#SCP-4707 > div").html() + `<span style="color: green; width: 100%;">` + "Shard-" + shard2 + ": " + dialog[i].shard2 + `</span><br>`);
         }
       }
       if (dialog[i].shard3) {
         console.log("Shard-" + shard3 + ":", dialog[i].shard3);
         if (isMobile) {
-          $("#SCP-4707 > div").html($("#SCP-4707 > div").html() + `<span style="color: green; width: 100%;">` + "Shard-" + shard3 + ":" + dialog[i].shard3 + `</span><br>`);
+          $("#SCP-4707 > div").html($("#SCP-4707 > div").html() + `<span style="color: green; width: 100%;">` + "Shard-" + shard3 + ": " + dialog[i].shard3 + `</span><br>`);
         }
       }
 
