@@ -6,7 +6,7 @@ title:SCP-4838
 [[/>]]
 
 [[module CSS]]
-div.scp-image-block.block-center {
+div.scp-image-block.block-center {javascript:;
     position: relative;
     height: 215px;
 }
@@ -44,11 +44,13 @@ div.scp-image-block.block-center {
 **Thanks to:** [[*user KindlyTurtleClem]]@@ @@
 ]]
 
-[[include component:classified-bar-woed
-    lv=1 |
-    item=4838 |
-    oc=Neutralized |
-    lang=EN
+[[include :scptestwiki:component:anomaly-class-bar-source
+    item-number=4838 |
+    clearance=1 |
+    container-class=neutralized |
+    secondary-class=none |
+    disruption-class=vlam |
+    risk-class=notice
 ]]
 
 ----
