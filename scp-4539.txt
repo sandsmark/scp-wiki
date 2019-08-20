@@ -1,0 +1,243 @@
+title:SCP 4539
+[[>]]
+[[module Rate]]
+[[/>]]
+[[html]]
+<p style="font-family:Verdana,sans-serif;font-size: 0.80em"><span style="font-weight:bold;">Item #: </span><span id="demo">SCP-4539</span><span> (use alternate designation SCP-DECI)</span></p>
+<script>
+var myVar = setInterval(myTimer, 200);
+
+function myTimer() {
+  var d = Math.floor((Math.random() * (9999 - 1000)) + 1000);
+  var SCP = "SCP-"
+  document.getElementById("demo").innerHTML = SCP.concat(d.toString());
+}
+</script>
+[[/html]]
+[[include component:image-block
+    name=SCPDECIIMAGE.jpg|
+    caption=SCP-DECI, shortly after recovery
+]]
+[[f>image ]]
+**Object Class:** Pending
+
+**Special Containment Procedures:** Every numerical designation or dimension relating to SCP-DECI must be communicated through simile or metaphor.
+
+SCP-DECI is to be kept in a standard locker in site Mambo when discussing this object. The locker’s door must be painted bright pink. A strip of the aforementioned pink paint is to direct the path from SCP-DECI's locker, through Break Room Delta, to the entrance of Site Mambo. Personnel working with SCP-DECI are to follow this path exactly, and not make any attempt to make any numeric-based directions. No other pink-colored objects are allowed on Site Mambo.
+
+Personnel who are attending to SCP-DECI must read through document SCP-DECI-REF until any phrase within evokes the attached number. Any personnel who have been exposed to SCP-DECI within one week will be required to undergo an elementary mathematics skill assessment. These assessments will be obtained by personnel at the beginning and end of each shift.
+
+Test material for the personnel of SCP-DECI must be created and graded by personnel unaware of SCP-DECI's effects.
+
+**Description:** SCP-DECI is a Casio brand calculator, though the exact model is unclear. SCP-DECI was found with a detachable cover, which has the word "Malinda" written on it. Both the case and the calculator show signs of grime and water damage, but this does not seem to impede its function. When an individual attempts to write or communicate numbers related to SCP-DECI, the numbers produced are not the numbers intended. Moreover, when in a small radius of SCP-DECI, no person can correctly communicate any number to another. Attempts to do so will result in inaccurate numbers being communicated. SCP-DECI cannot alter numeric results if they are expressed in a format SCP-DECI has not previously been exposed to. After a few questions, however, SCP-DECI will begin to attempt to misdirect, though it may struggle to produce convincing wrong answers with the format.
+
+So far, the SCP has been shown to tamper with:
+* Decimal systems
+* Binary systems
+* Roman Numerals ('learned' during containment, see Test SCP-DECI-DELTA)
+* English text of numbers
+* French text of numbers
+* Spoken English
+* Spoken French
+* Hexadecimal numbers (though it cannot convincingly produce fake results as of the time of writing)
+
+At first, the effects only apply to communication. --All-- Nearly all subjects exposed to SCP-DECI for less than a fortnight will realize that the number they communicated is incorrect, and not what they intended to write. 
+
+However, increased exposure can cause the effect to become more thoroughly ingrained in the subject's psyche. In this state, subjects lose all ability to correctly calculate, count, write or read numbers in any situation, and will believe their mistaken numbers are correct beyond all reason. This effect dissipates if the subject is either administered amnestics sufficient for to erase the span of exposure from their memory, or kept away from SCP-DECI for a time roughly equal to their exposure.
+
+**Recovery:** SCP-DECI was retrieved from a pond on the grounds of █████ High School, in New South Wales, Australia after the school made local news. An entire year of students, undertaking their end-of-year exams, failed to produce any correct answers on their mathematics test. Malinda ███████, a student at the school who participated in the test, claimed to have purchased SCP-DECI shortly before the test. 
+
+**Addendum:**
+Note from Doctor David Patel: 
+
+> After the tests and events leading up to - and including - Incident SCP-DECI-Beta, I believe that SCP-DECI may possess sentience. Dr. Andrews had been assigned to SCP-DECI for less than a day, and yet he showed symptoms consistent with people exposed to SCP-DECI for far longer. 
+> 
+> If it was SCP-DECI, then it's range and onset time can both reach levels far greater than we initially believed. Until we establish those true limits, daily tests of mathematical skill are mandatory for anyone working with SCP-DECI.
+
+**Attached Logs:**
+
+[[collapsible show="+ Test SCP-DECI-Delta" hide="- Test SCP-DECI-Delta"]]
+**Test Subject:** D-(head)(eyes)(fingers)(dice sides) (see Document SCP-DECI-REF)
+**Mathematical Skill:** High School Level, as well as skill in expressing both Roman Numerals and Hexadecimal numbers.
+**Exposure To SCP-DECI Before Test:** None
+The subject was given a simple maths test, with some questions requiring them to answer either in Roman Numerals or Hexadecimal format. SCP-DECI was kept hidden in a compartment within the table the D-Class personnel was using. Dr. Andrews supervised the test.
+
+[[include :scp-sandbox-3:component:image-zoom-2 name=SCPDECITESTSDELTA|caption=Test Document SCP-DECI-DELTA|width=300px|align=right]]
+**Scan of Test Document and Transcript** 
+> 
+> **Q:** What is 4 + 5? 
+> **A:** 7 **Incorrect**
+> 
+> **Q:** What is 3 * 2? 
+> **A:** 8 **Incorrect**
+> 
+> **Q:** What is 6 + 7? Please write the answer in Roman Numerals. 
+> **A:** XIII **Correct**
+> 
+> **Q:** What is 10 + 7? Please write the answer in Roman Numerals. 
+> **A:** XIIIIII **Incorrect** //Wrong Format!//
+> 
+> **Q:** Please write the number 5 in Roman Numerals.
+> **A:** V **Correct**
+> 
+> **Q:** Which of the following is the correct way to write the numbers 14 and 9 in roman numerals?
+> **Options:** A: XIIII  and VIIII, B: XIV and VIIII, C: XIV and IX, D: XIIII and IX
+> **A:** C **Correct**
+> 
+> **Q:** What is 10 + 4? Please write the answer in Roman Numerals.
+> **A:** XIX **Incorrect** //Now it does it right//
+> 
+> **Q:** What is 5 * 3? Please write the answer in hexadecimal format.
+> **A:** F **Correct**
+> 
+> **Q:** What is 5 + 5? Please write the answer in hexadecimal format.
+> **A:** A **Correct**
+> 
+> **Q:** What is 7+7? Please write the answer in hexadecimal format
+> **A:**  N **Incorrect** //Wrong format again!//
+
+Notes from Dr. Andrews: //These results seem to suggest that the SCP is unable to create errors in a system it hasn't been exposed to. Notably, after the initial Roman numeral questions, it produced answers that were both incorrect and in the wrong format. It only produced more convincing answers after questions illuminated the actual format.// 
+[[/collapsible]]
+
+[[collapsible show="+ Excerpt from Test Log SCP-DECI-Theta" hide="- Excerpt from Test Log SCP-DECI-Theta"]]
+Excerpt of discussion Between D-Class Personnel D-(head)(eyes)(dice sides)(void) and Dr. Andrews.
+
+> **Andrews:** Now, Can you tell me how many fingers I'm holding up?
+> 
+> **D-Class:** Uh... unless you're some freak of nature, I count thirteen fingers.
+> 
+> **Andrews:** Incorrect.
+> 
+> **D-Class:** What happened to your pinky?
+> 
+> **Andrews:** Please focus on the test.
+> 
+> **D-Class:** Dude, I'm sitting in here counting fingers like I'm a preschooler. You can't just show your hand like a pre-school teacher and expect me not to comment on your fucked-up finger.
+> 
+> **Andrews:** Nevertheless, please stay on task. Now, how many - 
+> 
+> **D-Class:** So like, whatever this thing you're testing us about, it screws up numbers, right? That's why we're doing this? 
+> 
+> //There is a long pause before Dr. Andrews responds.//
+> 
+> **Andrews:** Please... please focus on the test.
+> 
+> **D-Class:** Doc, I'm a con man. I can't read your fancy literature, but I can read you.
+> 
+> **D-Class:** And lemme take this a step further and guess that you're making us do easy questions so everyone knows whether they're right or wrong?
+> 
+> **D-Class:** Man, two people in some secret government dungeon doing math a child couldn't get wrong. This is totally a high point of your career, huh? 
+> 
+> **Andrews:** Look, you listen here you little-
+> 
+> //Dr. Andrews pauses.//
+> 
+> **Andrews:** I'm sorry, what did you say?
+> 
+> **D-Class:** What?
+> 
+> **Andrews:** Could you repeat what you said?
+> 
+> **D-Class:** About the high point?
+> 
+> **Andrews:** No- Did you just say there were two people here?
+> 
+> **D-Class:** Uh, yeah?
+> 
+> **Andrews:** There are two people here. Two people in this room.
+> 
+> **D-Class:** Uh, doc? You finally lost it?
+> 
+> **Andrews:** Shut up. We need to scan.
+> 
+
+Test SCP-DECI-THETA was paused, while a series of scans attempted to determine the number of people inside. Biometric scans, as well as subsequent x-ray scans, thermal imaging, and [REDACTED] analysis, determined that the only observable life forms in the room were the D-Class personnel and the Doctor.
+[[/collapsible]]
+
+[[collapsible show="+ Incident Report SCP-DECI-Beta" hide="- Incident Report SCP-DECI-Beta"]]
+**Incident Subject(s):** Dr. Johnathan Andrews and Junior Researcher Zeke Mistopheles
+**Incident Type:** Containment Breach
+**Involved SCP(s):** SCP-5███ (breached containment), SCP-DECI (suspected influence)
+**Casualties:** Dr. Johnathan Andrews (deceased)
+**Event Description:** As they were moving to begin testing with SCP-DECI, Dr. Andrews was observed to break protocol, by leaving the specified path to SCP-DECI. Mr. Mistopheles followed him, while attempting to alert guards to the anomalous behavior through setting off alarms that he passed. 
+
+Dr. Andrew's path eventually lead to the entrance to SCP-5███'s containment cell. After a brief argument between Dr. Andrews and his assistant, he moved to open the cell, prompting Mistopheles to flee the scene.
+
+Though the response team was able to contain SCP-5███ quickly, Dr. Andrews had been severely mutilated. Dr. Andrews would succumb to his injuries before medical staff could arrive.
+
+Dr. David Patel was assigned to conduct an investigation into Incident SCP-DECI-Beta.
+
+**Event Log:** [CLASSIFIED]
+
+**Excerpt from Interview following Incident SCP-DECI-Beta**
+
+> **Patel:** Tell me more about the night before the incident. You said you stopped testing after Test Theta?
+> 
+> **Mistopheles:** Yeah, and thank god for that. I didn't take the uh... two people in the room thing well. Scared the shit out of me, pardon my language, and I couldn't stop thinking about it. And when I thought about it...
+> 
+> **Mistopheles:** Well, there was only the D-class and the Doctor in there, right? And all the tests said the same thing. So... what if it - what if SCP-DECI is counting itself?
+> 
+> **Patel:** Why would it do that?
+> 
+> **Mistopheles:** I mean... the tests showed that it needed to 'Learn' things. My thought was 'what if that's because it actually IS learning?'
+> 
+> **Patel:** What did Dr. Andrews say?
+> 
+> **Mistopheles:** He was... dismissive. Laughed it off, said I was overreacting.
+> 
+> **Patel:** And I believe this is when you said the inciting incident occurred?
+> 
+> **Mistopheles:** Y-yeah, I think so. See, he called it "just a dirty hunk of plastic", and I could just //feel// the temperature drop. I-it felt like someone was just drilling their glare through us. Sorry, that's not very clear. Someone looking at us angrily, that's what I felt.
+> 
+> **Patel:** Did you feel where this look was coming from?
+> 
+> **Mistopheles:** //Maybe// the calculator? I'm... not sure.
+> 
+> **Patel:** Alright. Let's move on...
+> 
+> **[Irrelevant/Redundant Portions Redacted.]**
+> 
+> **Patel:** Where did Dr. Andrews lead you?
+> 
+> **Mistopheles:** To SCP-████'s containment cell. I told him it was the wrong SCP, and that we should head back. He brushed it off.
+> 
+> **Mistopheles:** I wanted to stop him, sir, but I'd heard what that... that //thing// could do. I... I chickened out.
+> 
+> **Patel:** It's quite alright. You alerting security in advance probably prevented a disaster. But, a question.
+> 
+> **Mistopheles:** Yes? 
+> 
+> **Patel:** It says here that you were actually at SCP-5███'s containment cell. 
+> 
+> **Mistopheles:** What? No, I'm certain I read SC-
+> 
+> **Patel:** Moreover, SCP-████'s containment cell is not at this site, it is actively guarded, and you shouldn't even have clearance to view its data.
+> 
+> **Patel:** Are you sure you read SCP-████ on the door? 
+> 
+> **Mistopheles:** Wh-yes! I did! I read up on it just last night, it [DATA EXPUNGED]
+> 
+> **Patel:** That's... Mistopheles, that's an entirely different anomalous object. Again.
+> 
+> **Mistopheles:** What?! That can't be right. I'm sure I-
+> 
+> **Patel:** Remind me, what is SCP-DECI's anomalous property?
+> 
+> **Mistopheles:** It... interferes with the perception of numbers.
+> 
+> **Patel:** So isn't it possible that you making two errors might be due to interference with your perception?
+> 
+> //[Pause.]//
+> 
+> **Patel:** I'm going to sign you up for a mathematical test, to see if any lingering effects remain.
+> 
+> **Mistopheles:** ...I'm not crazy.
+> 
+> **Patel:** Of course you're not. But I'm told that you're new here. Not many staff members... get to enjoy their retirement. 
+> 
+> **Patel:** The ones that do? They are //thorough,// and don't leave anything to chance. Do you understand?
+> 
+> **Mistopheles:** ... Yes, sir.
+> 
+> **[End of Interview]**
+[[/collapsible]]
