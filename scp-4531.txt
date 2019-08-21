@@ -1,0 +1,194 @@
+title:SCP-4531
+[[include :scp-wiki:component:black-highlighter-theme-dev]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[div style="background: url(https://cdn.discordapp.com/attachments/440499450256031754/612895843682353153/Shiny_SCP_Logo.png) center no-repeat; border: 5px solid black; width: 90%; margin: auto; text-align: center; padding: 5px; text-shadow: 0px 1px 1px white; color: black; "]]
+@@ @@
+[[span style="font-size: 225%;"]]**NOTICE FROM THE O5 COUNCIL**[[/span]]
+
+[[span style="font-size: 165%;"]]**AND THE DEPARTMENT OF TACTICAL THEOLOGY**[[/span]]
+
+[[span style="font-size: 125%;"]]The following document has details which are restricted on a **need-to-know basis**. Attempting to access higher levels of this file without proper clearance may result in termination of your employment.[[/span]]
+
+[[span style="font-size: 150%; color: red;"]]**__You Have Been Warned__**[[/span]]
+@@ @@
+[[/div]]
+
+@@ @@
+@@ @@
+@@ @@
+
+
+[[include :scp-wiki:component:anomaly-class-bar-source
+|item-number= 4531
+|clearance= 3
+|container-class= esoteric
+|secondary-class= thaumiel
+|secondary-icon= http://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/thaumiel-icon.svg
+|disruption-class= keneq
+|risk-class= warning
+]]
+[[module css]]
+.contain-class .class-text {
+  color: rgb(0,0,0,0);
+}
+
+.contain-class .class-text::before {
+  content: "euclid";
+  position: absolute;
+  top: 0;
+  color: rgb(var(--black-monochrome),1);
+}
+
+.anom-bar-container.esoteric .text-part > .main-class::before {
+  background-color: rgba(var(--three-color),1);
+  background-image: url("http://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/euclid-icon.svg");
+  -webkit-filter: invert(0);
+  filter: invert(0);
+  border-color: rgb(var(--black-monochrome));
+}
+
+.anom-bar-container.esoteric .text-part > .main-class {
+  background-color: rgb(var(--white-monochrome));
+  background: linear-gradient(30deg,
+    rgb(var(--gray-monochrome),0.25) 0%,
+    rgb(var(--gray-monochrome),0.25) 50%,
+    rgb(var(--three-color),0.25) 50%,
+    rgb(var(--three-color),0.25) 50%
+  )
+}
+
+.anom-bar-container.esoteric .danger-diamond > .top-icon::before {
+  background-color: rgb(var(--three-color));
+  background-image: url("http://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/euclid-icon.svg");
+  -webkit-filter: invert(0);
+  filter: invert(0);
+}
+[[/module]]
+----
+[[=]]
+[[include component:image-block name=https://cdn.discordapp.com/attachments/440499450256031754/611472164234723328/river2.jpg
+|caption=The Daugava river nearby SCP-4531.
+|width=705px]]
+[[/=]]
+
+**Special Containment Procedures:** SCP-4531 is to be monitored by Mobile Task Force Eta-77 ("Spheres Within Spheres")[[footnote]]Mobile Task Force Unit η-77 is the designation for The Department of Tactical Theology's personalized operational unit, consisting of fifteen specialized members. All personnel in the task force have expertise in dealing with aggressive or threatening religion-related anomalies.[[/footnote]] for potentially disruptive anomalous activity during the months of September and October. During a //Tashlich// Event, MTF Eta-77 is to be positioned upstream of the Daugava river to observe it; should an instance of SCP-4531-1 taller than fifty meters manifest, MTF Eta-77 is to terminate the instance via any means available.
+
+In the event MTF Eta-77 fails to report back within thirty minutes of the event's conclusion, or the response is unintelligible, a drone is to be sent out in order to determine the status of the Task Force. Should MTF Eta-77 be rendered heavily incapacitated, and therefore incapable of destroying an SCP-4531-1 instance, Mobile Task Force Nu-7 ("Hammer Down") is to be brought to SCP-4531 and destroy the anomaly.
+
+SCP-4531-2 is available to Level 3 or higher personnel working with hazardous, mind-affecting anomalies, by the discretion of their HMCL. Personnel are not to consume or inject higher than the recommended dosage of SCP-4531-2. More information on SCP-4531-2 usage can be found in the Usage of Chemicals and Materials Guideline (UCMG).
+
+[[=]]
+**{{[REMAINING PROCEDURES RESTRICTED TO PERSONNEL ASSIGNED TO PROJECT TOCHACHA]}}**
+[[/=]]
+
+----
+
+**Description:** SCP-4531 is the designation for the town of Pļaviņas, Latvia, located along the Daugava river. SCP-4531's local population is primarily Jewish by both ethnicity and religion — approximately 92% of the town is ethnically Jewish, while 64% are observant in some capacity. All ethnically Jewish individuals within SCP-4531's borders experience its primary anomalous effect, regardless if they are permanently residing within SCP-4531 or visiting.
+
+Annually on the first of //Tishrei//[[footnote]]The first month of the Jewish Lunar Calendar. Typically coincides with September or October.[[/footnote]] at sundown, the residents of SCP-4531 congregate at the Daugava river for a religious ceremony known as //Tashlich//. During this, an individualized prayer service is performed, and is concluded by the shaking of each person's garments. This process will result in the manifestation of SCP-4531-1.
+
+SCP-4531-1 is the collective designation for a group of incorporeal organisms. SCP-4531-1 vary in physiology depending on specific factors of the individual which created them, most notably the amount and type of negative actions partaken in the prior lunar year, as according to the Torah's definition. Common features of SCP-4531-1 instances include red coloration, multiple skewed limbs, and disproportionately long torsos. SCP-4531-1 instances will remain immobile (unless provoked) for ten days, and if not destroyed by then, will become unconditionally hostile.
+
+On the tenth day of //Tishrei//, which corresponds with the Jewish holiday of //Yom Kippur//, the residents of SCP-4531 will engage in a fast while congregating at a place of worship (typically a synagogue) for lengthy prayer services. Once an individual has completed the prayer service and fasted according to proper customs, the SCP-4531-1 instance corresponding to them will spontaneously combust, producing SCP-4531-2.
+
+SCP-4531-2 is a fluid produced solely by the combustion of SCP-4531-1 on //Yom Kippur//. Upon oral ingestion, SCP-4531-2 causes numerous psychological and physiological changes in subjects, including:
+
+* Increased cognitive resistance to harmful memes.
+* Increased physical endurance.
+* Increased efficiency at problem solving and creative thinking.
+* Increased immune system effectiveness.
+* Increased mental health and well-being.
+
+The exact methods through which SCP-4531-2 achieves this effect is unclear, as no attempts to record chemical interactions between the substance and areas affected have been successful. In addition, the chemical make-up of SCP-4531-2 appears to nonsensical, and no ways of achieving its molecular structure have been successfully tested.
+
+For more information on SCP-4531-2, please see consult your local HMCL or the UCMG.
+
+SCP-4531-2 was utilized by the residents of SCP-4531 until Foundation interception in 1999, when SCP-4531-1 was discovered and contained. Following this, **{{[RESTRICTED TO PERSONNEL ASSIGNED TO PROJECT TOCHACHA]}}**.
+
+----
+
+[[=]]
+**Addendum One — Notable SCP-4531-1 Instances Since Foundation Inception**
+[[/=]]
+
+> **Subject:** Augusts Jēkabs Kalniņš
+> 
+> **Date of Manifestation:** September 11th, 1999
+> 
+> **Corresponding Crime:** Stealing ~160.00 USD from a relative.
+> 
+> **Instance Description:** Instance was approximately two meters long and one-third of a meter tall. Had fox-like features. Seven limbs were attached to the torso; only three appeared operational. Instance was lacking eyes, and had no tongue.
+> 
+> **SCP-4531-2 Produced:** Two liters.
+
+> **Subject:**  Maria Tzipporah Bērziņš
+> 
+> **Date of Manifestation:** September 17th, 2001
+> 
+> **Corresponding Crime:** Reckless driving; accidental death of two individuals, not including Maria, who made a full recovery.
+> 
+> **Instance Description:** Instance resembled a gorilla, approximately two and a half meters in height. Arms were disproportionate in length and twice normal size. Two pairs of human hands were attached to the instance's chest.
+> 
+> **SCP-4531-2 Produced:** Three liters.
+
+> **Subject:**  Genādijs Māris Ozolinsh
+> 
+> **Date of Manifestation:** October 3rd, 2005
+> 
+> **Corresponding Crime:** The murders of Enoch Jansons and Leui Krūmiņš.
+> 
+> **Instance Description:** Instance resembled a viper, approximately six meters in length and with an average thickness of half a meter. Teeth were replaced by two pairs of human hands.
+> 
+> **SCP-4531-2 Produced:** Seven liters.
+
+> **Subjects:** Yarav'am Lemuel Ozoliņš, Anan Ozolinsh, and Nechemyah Peter Ozols
+> 
+> **Date of Manifestation:** September 12th, 2007
+> 
+> **Corresponding Crime:** Gang rape, and subsequent murder, of Dinah Milka Liepiņš. All members of the crime were excommunicated, but **{{[RESTRICTED]}}**.
+> 
+> **Instance Description:** Instance resembled a large mallard, approximately eight meters tall, with an elongated neck. Both claws were replaced by a pair of large, human hands.
+> 
+> **SCP-4531-2 Produced:** Ten liters.
+
+> **Subject:** Yarav'am Lemuel Ozoliņš
+> 
+> **Date of Manifestation:** September 8th, 2010
+> 
+> **Corresponding Crime:** Killed seven people with pistol, and consumed part of victim Abia Jansons's corpse before being subdued.
+> 
+> **Instance Description:** Seven inter-connected instances resembling wolves. Each tail was replaced by two stalks of human arms and hands. Instances were approximately three times the average size of their resembled species, and appeared highly elastic.
+> 
+> **SCP-4531-2 Produced:** Thirty-seven liters.
+
+> **Subject:**  Ilai Zarah Bērziņš
+> 
+> **Date of Manifestation:** September 24th, 2014
+> 
+> **Corresponding Crime:** Kidnapping and continuous physical/mental torture of six men and eight women for three years. Killed all victims and consumed large quantities of the corpses on September 23rd, 2014, whilst copulating with them. In addition, secretly killed seventeen Foundation scientists over the course of eleven years.
+> 
+> **Instance Description:** Instance was humanoid in shape, approximately fifty-eight meters in height. Possessed sixty-four arms of various lengths, and legs were incredibly disproportionate to the body (~77% of total height). Instance had erratic and misaligned teeth, and no eyes. One arm carried a scale — the reason for this is unclear.
+> 
+> **SCP-4531-2 Produced:** Two-hundred and eighty-four liters.
+
+> **Subject:** Mayor Leia Ozols
+> 
+> **Date of Manifestation:** October 2nd, 2016
+> 
+> **Corresponding Crime:** **{{[RESTRICTED TO PERSONNEL ASSIGNED TO PROJECT TOCHACHA]}}**.
+> 
+> **Instance Description:** Approximately three hundrend and fifty meters in height, appearance indiscernible. Instance entirely composed of human hands.
+> 
+> **SCP-4531-2 Produced:** N/A — instance was terminated by MTF η-77. Project Tochacha details have been modified.
+
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+
+[[footnoteblock]]
