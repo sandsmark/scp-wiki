@@ -33,14 +33,14 @@ title:SCP-4531
 ]]
 [[module css]]
 .contain-class .class-text {
-  color: rgb(0,0,0,0);
+  color: transparent !important;
 }
 
 .contain-class .class-text::before {
   content: "euclid";
   position: absolute;
   top: 0;
-  color: rgb(var(--black-monochrome),1);
+  color: rgb(var(--black-monochrome),1) !important;
 }
 
 .anom-bar-container.esoteric .text-part > .main-class::before {
