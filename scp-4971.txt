@@ -53,9 +53,12 @@ color: #FFF;}
 .info-container:hover .collapsible-block-link {
 line-height: 1.6em;
 }
-.anom-bar-container.cernunnos .text-part > .main-class::after {
+.anom-bar-container.cernunnos .danger-diamond > .bottom-icon {
+        background-color: rgb(var(--black-monochrome));
+}
+
+.anom-bar-container.cernunnos .danger-diamond > .bottom-icon::before {
         filter: invert(1);
-        border-color: rgb(var(--white-monochrome));
 }
 [[/module]]
 [[include component:black-highlighter-theme-dev]]
