@@ -53,6 +53,10 @@ color: #FFF;}
 .info-container:hover .collapsible-block-link {
 line-height: 1.6em;
 }
+.anom-bar-container.cernunnos .text-part > .main-class::after {
+        filter: invert(1);
+        border-color: rgb(var(--white-monochrome));
+}
 [[/module]]
 [[include component:black-highlighter-theme-dev]]
 [[>]]
