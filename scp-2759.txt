@@ -6,8 +6,7 @@ title:UE-54701
 [[module CSS]]
 .blockquote {border-color: #000000;    
                  background-color: #35a6b8;
-white-space: nowrap;
-  overflow: hidden;
+  overflow-wrap: normal;
 
     	}
 .container  {position: absolute;
@@ -15,7 +14,7 @@ white-space: nowrap;
               
     	 width:100%;
     	white-space: nowrap;
-  overflow: hidden;
+  overflow-wrap: normal;
 
     	}
 .centered  	{position: absolute;
@@ -35,11 +34,11 @@ vertical-align: top; position: relative; top: -0.5em;
 display:none;}
 
 .info-container .collapsible-block-folded a{
-overflow-wrap: none;
+overflow-wrap: normal;
 color: #ff1482;}
 .info-container .collapsible-block-unfolded-link a{
 color: #b03c72;
-overflow-wrap: none;
+overflow-wrap: normal;
 }
 
 .info-container .collapsible-block-link, 
@@ -61,11 +60,11 @@ line-height: 1.6em;
     margin-bottom: 5px;
     background: #701F12;
     font-size: 90%;
-    white-space: nowrap;
-  overflow: hidden;
+  overflow-wrap: normal;
 }
 .inset > p {
     margin: 0;
+     rflow
 }
 .space {
 float:center; width:100%; border:solid 3px #7979bd; padding:10px; margin-bottom: 10px;margin:0 auto;
@@ -76,7 +75,7 @@ float:center; width:100%; border:solid 3px #7979bd; padding:10px; margin-bottom:
     background: 911501#;
     color:black;
     white-space: nowrap;
-    overflow: hidden;
+    overflow-wrap: normal;
     padding: 1%;
     margin-bottom: 8px;
     margin: 0 auto;"]]
@@ -84,8 +83,8 @@ float:center; width:100%; border:solid 3px #7979bd; padding:10px; margin-bottom:
 [[div style="    border: solid 0px #770077;
     background: #ff4d4d;
     padding: 6px;
-    white-space: nowrap;
-    overflow: hidden;
+  
+    overflow-wrap: normal;
     margin-bottom: 5px;
     margin: 0 auto;
 text-align:center;"
