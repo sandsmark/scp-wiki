@@ -4,23 +4,24 @@ title:UE-54701
 [[module rate]]
 [[/>]]
 [[module CSS]]
+.main-content {
+overflow-wrap:normal;
+}
 .blockquote {border-color: #000000;    
-                 background-color: #35a6b8;
-  
+                 background-color: #35a6b8 !important;
                  overflow-wrap: normal;
     	}
 .container  {position: absolute;
                  text-align: center;
-              
     	 width:100%;
-    
-  overflow-wrap: normal;
+            overflow-wrap: normal;
 
     	}
-.centered  	{position: absolute;
+.centered  {position: absolute;
    		 top: 50%;
     	 left: 50%;
    		 transform: translate(-50%, -50%);
+
 }
 
 sup { 
@@ -28,7 +29,7 @@ vertical-align: top; position: relative; top: -0.5em;
 }
 :root{ 
 --cutColour: #701F12;
---barColour: #666622;
+--barColour: #632538;
 }
 .translation_block{
 display:none;}
@@ -79,27 +80,28 @@ float:center; width:100%; border:solid 3px #7979bd; padding:10px; margin-bottom:
     margin-bottom: 8px;
     margin: 0 auto;"]]
 
-[[div style="    border: solid 0px #770077;
-    background: #ff4d4d;
-    padding: 6px;
-      overflow-wrap: normal;
+[[div style="border: solid 0px #770077;
+    background: #b82323;
+    padding: 4px;
+    overflow-wrap: normal;
     margin-bottom: 5px;
     margin: 0 auto;
     text-align:center;"
-    color:gray;]]
+    color:g]]
 
 [[include component:object-warning-box-source
 |bg-image=https://upload.wikimedia.org/wikipedia/commons/e/ec/SCP_Foundation_%28emblem%29.svg
 |bg-opacity=0.19
 |text-top=NOTICE FROM THE RECORDS AND INFORMATION SECURITY ADMINISTRATION
-|text-bottom= ,,{{//The following documentation has been designated **RESTRICTED**//}},,
+|text-bottom= ,,{{//The following documentation has been designated//}},, 
+,,{{//**RESTRICTED**//}},,
  ,,{{//**To prevent unauthorized breach of classified information**//}},,
 
-|object-number=,,{{//access to this file is monitored and logged.//}},,
+|object-number=,,{{//Network access to this file is monitored and logged.//}},,
 
 ]]
 ------
-++++++ ##ffeeee|//Your IP address has been successfully recorded.//##
+++++++ //Your IP address has been successfully recorded.//
 
 
 
