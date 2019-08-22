@@ -29,7 +29,7 @@ overflow-wrap:normal;
 --cutColour: #701F12;
 --barColour: #632538;
 }
-page-content .collapsible-block {  
+#page-content .collapsible-block {  
   max-width: 100%;
 overflow-wrap: normal;
 text-color: #ff1482;
@@ -37,8 +37,8 @@ text-color: #ff1482;
     border: solid 1px #b01;
 padding: 5px;
 }
-.collapsible-block-content {
-background-color: #afe0ff;
+.collapsible-block-content p{
+
 padding-left: 5px;
 padding-right: 5px;
 padding-bottom: 5px;
@@ -273,9 +273,13 @@ It is believed that the dimension containing SCP-2759-E1 and SCP-2759-E2 has a m
 
 **Exploration Log 2759-Enlil:**
 
-
-[[include component:image-block name=bloodmoon.jpg|caption=Moon of SCP-2759-E2, enlarged.]]
-
+[div class="scp-image-block" style="width:300px; float: right; position: relative;"]]
+[[image http://scp-wiki.wdfiles.com/local--files/scp-2759/bloodmoon.jpg width="200px" height="200px"]]
+[[div class="scp-image-caption" style="width:200px;"]]
+Moon of SCP-2759-E2, enlarged.
+[[/div]]
+[[/div]]
+ 
 **Abstract:** Exploration 2759-Enlil was approved and took place on ██/██/████, two days after contact with D-8821 was lost. D-3733 was sent through SCP-2759-1 with shoulder-mountable audiovisual recording gear, one hooded sweatshirt, and a small kit containing a flashlight, three flares, extra batteries and two granola bars, establishing contact eighteen minutes after death.
 
 > 
