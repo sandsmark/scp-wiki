@@ -6,14 +6,16 @@ title:UE-54701
 [[module CSS]]
 .blockquote {border-color: #000000;    
                  background-color: #35a6b8;
-overflow-wrap: none;
+white-space: nowrap;
+  overflow: hidden;
 
     	}
 .container  {position: absolute;
                  text-align: center;
               
     	 width:100%;
-    	overflow-wrap: none;
+    	white-space: nowrap;
+  overflow: hidden;
 
     	}
 .centered  	{position: absolute;
@@ -59,17 +61,22 @@ line-height: 1.6em;
     margin-bottom: 5px;
     background: #701F12;
     font-size: 90%;
+    white-space: nowrap;
+  overflow: hidden;
 }
 .inset > p {
     margin: 0;
 }
 .space {
-float:center; width:100%; border:solid 3px #ededfd; padding:10px; margin-bottom: 10px;margin:0 auto;
+float:center; width:100%; border:solid 3px #7979bd; padding:10px; margin-bottom: 10px;margin:0 auto;
 [[/module]]
 
 [[div style="width: 100%;
     border: solid 2px #4D0026;
     background: 911501#;
+    color:black;
+    white-space: nowrap;
+    overflow: hidden;
     padding: 1%;
     margin-bottom: 8px;
     margin: 0 auto;"]]
@@ -77,9 +84,12 @@ float:center; width:100%; border:solid 3px #ededfd; padding:10px; margin-bottom:
 [[div style="    border: solid 0px #770077;
     background: #ff4d4d;
     padding: 6px;
+    white-space: nowrap;
+    overflow: hidden;
     margin-bottom: 5px;
     margin: 0 auto;
-text-align:center;"]]
+text-align:center;"
+color:black;]]
 
 [[include component:object-warning-box-source
 |bg-image=https://upload.wikimedia.org/wikipedia/commons/e/ec/SCP_Foundation_%28emblem%29.svg
