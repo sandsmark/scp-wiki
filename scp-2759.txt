@@ -7,7 +7,7 @@ title:UE-54701
 .blockquote {border-color: #000000;    
                  background-color: #35a6b8;
     	}
-.container  {position: absolute;
+.container  {position: relative;
                  text-align: center;
                  color: white;
     	 width:100%;
@@ -22,8 +22,8 @@ sup {
 vertical-align: top; position: relative; top: -0.5em; 
 }
 :root{ 
---cutColour: #fafafa;
---barColour: #590505;
+--cutColour: #7e919c;
+--barColour: #14a9ff;
 }
 .translation_block{
 display:none;}
@@ -60,32 +60,17 @@ line-height: 1.6em;
 float:center; width:100%; border:solid 3px #ededfd; padding:10px; margin-bottom: 10px;margin:0 auto;
 [[/module]]
 
-[[div style="width: 100%;
-    border: solid 2px #4D0026;
-    background: #911501;
-    padding: 1%;
-    margin-bottom: 10px;
-    margin: 0 auto;"]]
+[[include component:object-warning-box-source
+|bg-image=https://upload.wikimedia.org/wikipedia/commons/e/ec/SCP_Foundation_%28emblem%29.svg
+|bg-opacity=0.19
+|text-top=NOTICE FROM THE RECORDS AND INFORMATION SECURITY ADMINISTRATION
+|text-bottom= //The following documentation has been designated// {{RESTRICTED}} //by  order of the O5 Council.//
+//To prevent unauthorized breach of classified information, access to this file is monitored and logged.//
++**//Your IP address has been successfully recorded.//**
 
-[[div style="    border: solid 0px #770077;
-    background: #911501;
-    padding: 10px;
-    margin-bottom: 5px;
-    margin: 0 auto;
-text-align:center;"]]
-
-++ ##ffeeee|**NOTICE FROM THE RECORDS AND INFORMATION SECURITY ADMINISTRATION**##
-
-------
-
-++++++ ##ffeeee|**//The following documentation has been designated// {{RESTRICTED}} //by  order of the O5 Council. To prevent unauthorized breach of classified information, access to this file is monitored and logged.**##//
-
-+++++ ##ffeeee|**//Your IP address has been successfully recorded.**##//
-
-[[/div]]
+-----
 
 
-[[/div]]
 
 
 [[include component:image-block-quoted name=zigzag2|caption=UE-54701]]
