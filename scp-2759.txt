@@ -65,7 +65,7 @@ line-height: 1.6em;
 }
 .inset > p {
     margin: 0;
-     rflow
+    overflow-wrap:normal;
 }
 .space {
 float:center; width:100%; border:solid 3px #7979bd; padding:10px; margin-bottom: 10px;margin:0 auto;
@@ -81,7 +81,7 @@ float:center; width:100%; border:solid 3px #7979bd; padding:10px; margin-bottom:
     margin: 0 auto;"]]
 
 [[div style="border: solid 0px #770077;
-    background: #ff386d;
+    background: #f2f2c2;
     padding: 8px;
     overflow-wrap: normal;
     margin-bottom: 5px;
@@ -92,9 +92,9 @@ float:center; width:100%; border:solid 3px #7979bd; padding:10px; margin-bottom:
 [[include component:object-warning-box-source
 |bg-image=https://upload.wikimedia.org/wikipedia/commons/e/ec/SCP_Foundation_%28emblem%29.svg
 |bg-opacity=0.19
-|text-top=NOTICE FROM THE RECORDS AND INFORMATION SECURITY ADMINISTRATION
+|text-top={{NOTICE FROM THE RECORDS AND INFORMATION SECURITY ADMINISTRATION}}
 |text-bottom= ,,**//The following documentation has been designated// {{RESTRICTED}} //by executive order of the O5 Council. As such, network access to this file is monitored and logged.//**,,
-|object-number= //Your IP address has been successfully recorded.//
+|object-number= **//Your IP address has been successfully recorded.//**
 ]]
 
 [[/div]]
