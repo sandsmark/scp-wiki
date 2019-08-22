@@ -6,14 +6,14 @@ title:UE-54701
 [[module CSS]]
 .blockquote {border-color: #000000;    
                  background-color: #35a6b8;
-overflow-wrap: break-word;
+overflow-wrap: none;
 
     	}
 .container  {position: absolute;
                  text-align: center;
-                 color: white;
+              
     	 width:100%;
-    	overflow-wrap: break-word;
+    	overflow-wrap: none;
 
     	}
 .centered  	{position: absolute;
@@ -33,11 +33,11 @@ vertical-align: top; position: relative; top: -0.5em;
 display:none;}
 
 .info-container .collapsible-block-folded a{
-overflow-wrap: break-word;
+overflow-wrap: none;
 color: #ff1482;}
 .info-container .collapsible-block-unfolded-link a{
 color: #b03c72;
-overflow-wrap: break-word;
+overflow-wrap: none;
 }
 
 .info-container .collapsible-block-link, 
