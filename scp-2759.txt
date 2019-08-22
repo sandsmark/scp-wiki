@@ -7,7 +7,7 @@ title:UE-54701
 .blockquote {border-color: #000000;    
                  background-color: #35a6b8;
   
-
+                 overflow-wrap: normal;
     	}
 .container  {position: absolute;
                  text-align: center;
@@ -85,8 +85,8 @@ float:center; width:100%; border:solid 3px #7979bd; padding:10px; margin-bottom:
       overflow-wrap: normal;
     margin-bottom: 5px;
     margin: 0 auto;
-text-align:center;"
-color:black;]]
+    text-align:center;"
+    color:gray;]]
 
 [[include component:object-warning-box-source
 |bg-image=https://upload.wikimedia.org/wikipedia/commons/e/ec/SCP_Foundation_%28emblem%29.svg
@@ -148,13 +148,17 @@ color:black;]]
 >   
 > = {{[END FILE]}}
 [[=]]
- [[collapsible show="[ PLEASE LOOK INTO THE RETINAL SCANNER NOW ]" hide="[ confirmed ]"]]
+ [[collapsible show="[ PLEASE LOOK INTO THE RETINAL SCANNER NOW ]" hide=" "]]
+
++++++ **{{//confirmed//}}**
+
++++++ **{{//welcome back, O5-11//}}**
 
 ------
 
 [[include :scp-wiki:component:anomaly-class-bar-source
 |item-number= 2759
-|clearance= ∅
+|clearance= Ω
 |container-class= esoteric
 |secondary-class= thaumiel
 |secondary-icon= http://scp-wiki.wdfiles.com/local--files/component%3Aanomaly-class-bar/thaumiel-icon.svg |disruption-class= dark
