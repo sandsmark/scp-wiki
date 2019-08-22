@@ -1,10 +1,48 @@
 title:UE-54701
+[[include component:black-highlighter-theme-dev]]
+[[include :scp-wiki:component:info-ayers
+|lang=en
+|page=SCP-2759
+|authorPage=http://www.scp-wiki.net/billith
+|comments=N/A
+]]
 [[>]]
 [[module rate]]
 [[/>]]
-
-
 [[module CSS]]
+.blockquote {border-color: #000000;    
+                 background-color: #ffffff
+    	}
+.container  {position: relative;
+                 text-align: center;
+                 color: white;
+    	 width:100%;
+    	}
+.centered  	{position: absolute;
+   		 top: 50%;
+    	 left: 50%;
+   		 transform: translate(-50%, -50%);
+}
+
+sup { 
+vertical-align: top; position: relative; top: -0.5em; 
+}
+:root{ 
+--cutColour: #fafafa;
+--barColour: #590505;
+}
+.translation_block{
+display:none;}
+
+.info-container .collapsible-block-folded a{
+color: #FFF;}
+.info-container .collapsible-block-unfolded-link a{
+color: #FFF;}
+
+.info-container .collapsible-block-link, 
+.info-container:hover .collapsible-block-link {
+line-height: 1.6em;
+}
 
 .inset {
     float: right;
@@ -56,8 +94,6 @@ text-align:center;"]]
 [[/div]]
 
 
-
-
 [[include component:image-block-quoted name=zigzag2|caption=UE-54701]]
  
 > 
@@ -97,15 +133,30 @@ text-align:center;"]]
 >   
 > = {{[END FILE]}}
 [[=]]
- [[collapsible show="INPUT LEVEL 5/2759 CREDENTIALS" hide="-"]]
+ [[collapsible show="[ PLEASE LOOK INTO THE RETINAL SCANNER NOW ]" hide="[ confirmed ]"]]
 
+------
+[[include component:object-warning-box-source
+|bg-image=https://upload.wikimedia.org/wikipedia/commons/e/ec/SCP_Foundation_%28emblem%29.svg
+|bg-opacity=0.24
+|text-top=BY EXECUTIVE ORDER OF THE O5 COUNCIL
+|text-bottom= {{//The following file has been designated **NON-ESSENTIAL**//}}
+{{//**unauthorized access or use is strictly prohibited**//}}
 
- ##white| . ##
- ##white| . ##
+|object-number=
+]]
+
+[[include :scp-wiki:component:anomaly-class-bar-source
+|item-number= 2759
+|clearance= cts
+|container-class= esoteric
+|secondary-class= thaumiel
+|secondary-icon= http://scp-wiki.wdfiles.com/local--files/component%3Aanomaly-class-bar/thaumiel-icon.svg |disruption-class= dark
+|risk-class= warning
+]]
 
 [[<]]
-[[div style="float:left; width: 77%"]]
-++ {{LEVEL 5/2759 CLEARANCE ONLY}}[[/div]]
+
 -----
 **Item #:** SCP-2759
 
