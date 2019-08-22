@@ -7,7 +7,7 @@ title:UE-54701
 .main-content {
 overflow-wrap:normal;
 }
-.blockquote {border-color: #000000;    
+#page-content .blockquote {border-color: #000000;    
                  background-color: #35a6b8;
                  overflow-wrap: normal;
     	}
@@ -24,9 +24,7 @@ overflow-wrap:normal;
 
 }
 
-sup { 
-vertical-align: top; position: relative; top: -0.5em; 
-}
+
 :root{ 
 --cutColour: #701F12;
 --barColour: #632538;
@@ -36,7 +34,6 @@ display:none;,}
 
 #page-content .collapsible-block {  
   max-width: 100%;
-background-color: #afe0ff;
 overflow-wrap: normal;
 text-color: #ff1482;
    border-color: #b01;
@@ -44,6 +41,7 @@ text-color: #ff1482;
 padding: 5px;
 }
 .collapsible-block-content p {
+background-color: #afe0ff;
 padding-left: 5px;
 padding-right: 5px;
 padding-bottom: 5px;
@@ -277,11 +275,9 @@ The composition of SCP-2759-E1's environment and atmosphere are unknown. It is p
 It is believed that the dimension containing SCP-2759-E1 and SCP-2759-E2 has a mild cognitohazardous effect on sentient beings, the full scope of which is unknown at this time.
 
 **Exploration Log 2759-Enlil:**
-[[/<]]
-[[>]]
+
+
 [[include component:image-block name=bloodmoon.jpg|caption=Moon of SCP-2759-E2, enlarged.]]
-[[/>]]
-[[<]]
 
 **Abstract:** Exploration 2759-Enlil was approved and took place on ██/██/████, two days after contact with D-8821 was lost. D-3733 was sent through SCP-2759-1 with shoulder-mountable audiovisual recording gear, one hooded sweatshirt, and a small kit containing a flashlight, three flares, extra batteries and two granola bars, establishing contact eighteen minutes after death.
 
