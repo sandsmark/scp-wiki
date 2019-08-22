@@ -1,9 +1,90 @@
 title:Personal Log of Richard Larenz
+[[include component:black-highlighter-theme-dev]]
+
 [[>]]
 [[module rate]]
 [[/>]]
+[[module CSS]]
+#page-content .blockquote {border-color: #000000;    
+                 overflow-wrap: normal;
+                background-color#f2ffe6;
+    	}
+    	
+#content-wrap div{
+
+ background-color#f2ffe6;
+}
+.container  {position: absolute;
+                 text-align: center;
+    	 width:100%;
+            overflow-wrap: normal;
+
+    	}
+    	
+.centered  {position: absolute;
+   		 top: 50%;
+    	 left: 50%;
+   		 transform: translate(-50%, -50%);
+
+}
 
 
+:root{ 
+--cutColour: #701F12;
+--barColour: #632538;
+}
+#page-content .collapsible-block {  
+  max-width: 100%;
+overflow-wrap: normal;
+text-color: #ff1482;
+   border-color: #b01;
+background-color:#f2ffe6;
+    border: solid 1px #b01;
+padding: 8px;
+}
+.collapsible-block-content p{
+
+padding-left: 3px;
+padding-right: 3px;
+padding-bottom: 3px;
+padding-top: 3px;
+}
+.collapsible-block-content{
+text-align: left;
+ }
+.collapsible-block-folded, .collapsible-block-unfolded{
+text-align: center;
+text-color: black;
+}
+
+.info-container .collapsible-block-link, 
+.info-container:hover .collapsible-block-link {
+line-height: 1.6em;
+}
+
+.inset {
+    float: right;
+    width: 20%;
+    margin: 0px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: #911501;
+    padding: 8px;	
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: #701F12;
+    font-size: 90%;
+  overflow-wrap: normal;
+}
+.inset > p {
+    margin: 0;
+    overflow-wrap:normal;
+}
+.space {
+float:center; width:100%; border:solid 3px #7979bd; padding:10px; margin-bottom: 10px;margin:0 auto;
+[[/module]]
 
 
 [[include component:image-block name=nibiru1.jpg|caption=Solar body of unknown origin. Image recovered within log book.]]
