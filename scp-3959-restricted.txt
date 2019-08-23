@@ -1,18 +1,132 @@
 title:SCP-3959 (LEVEL 5 CLEARANCE)
+[[include component:black-highlighter-theme-dev]]
+
 [[>]]
-[[module Rate]]
+[[module rate]]
 [[/>]]
+[[module CSS]]
+.hovertip {
+    border: 0px solid #fff !important;
+    -webkit-box-shadow: 2px 3px 4px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 3px 4px rgba(0,0,0,1);
+    box-shadow: 2px 3px 4px rgba(0,0,0,1);
+    max-width:400px;
+    width: 400px;
+
+}
+.hovertip .content {
+  
+    background-color: #000000;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#cccccc));
+    background-image: -moz-linear-gradient(top, #ffffff, #cccccc);
+    color: #000000;
+    padding:2px; 
+    max-width:400px;
+    width: 400px;
+
+}
+
+#page-content .blockquote {border-color: #000000;    
+                 overflow-wrap: normal;
+                background-color#f2ffe6;
+    	}
+    	
+#content-wrap div{
+
+ background-color#f2ffe6;
+}
+.container  {position: absolute;
+                 text-align: center;
+    	 width:100%;
+            overflow-wrap: normal;
+
+    	}
+    	
+.centered  {position: absolute;
+   		 top: 50%;
+    	 left: 50%;
+   		 transform: translate(-50%, -50%);
+
+}
 
 
+:root{ 
+--cutColour: #701F12;
+--barColour: #632538;
+}
+#page-content .collapsible-block {  
+  max-width: 100%;
+overflow-wrap: normal;
+text-color: #ff1482;
+   border-color: #b01;
+background-color:#f2ffe6;
+    border: solid 1px #b01;
+padding: 8px;
+}
+.collapsible-block-content p{
 
-{{PLEASE ENTER SECURITY CREDENTIALS (LEVEL 5):}} ••••••••••••••
+padding-left: 3px;
+padding-right: 3px;
+padding-bottom: 3px;
+padding-top: 3px;
+}
+.collapsible-block-content{
+text-align: left;
+ }
+.collapsible-block-folded, .collapsible-block-unfolded{
+text-align: center;
+text-color: black;
+}
 
-{{login failed}}
+.info-container .collapsible-block-link, 
+.info-container:hover .collapsible-block-link {
+line-height: 1.6em;
+}
 
-{{PLEASE ENTER SECURITY CREDENTIALS (LEVEL 5):}} •••••••••••••
-
-{{access granted}}
-
+.inset {
+    float: right;
+    width: 20%;
+    margin: 0px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: #911501;
+    padding: 8px;	
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: #701F12;
+    font-size: 90%;
+  overflow-wrap: normal;
+}
+.inset > p {
+    margin: 0;
+    overflow-wrap:normal;
+}
+.space {
+float:center; width:100%; border:solid 3px #7979bd; padding:10px; margin-bottom: 10px;margin:0 auto;
+[[/module]]
+> 
+> ,,{{PLEASE ENTER SECURITY CREDENTIALS (LEVEL 5):}},, ••••••••••••••
+> 
+> ,,{{login failed}},,
+> 
+> ,,{{PLEASE ENTER SECURITY CREDENTIALS (LEVEL 5):}},, •••••••••••••
+> 
+> ,,{{confirmed.}},,
+> 
+> ,,{{PLEASE INSERT BIOMETRICS PERIPHERAL TO CONTINUE}},,
+> 
+> ,,{{PRESS CONFIGURED FINGER INTO PERIPHERAL NOW.}},,
+> 
+> ,,{{confirmed}},,
+> 
+> ,,{{PLEASE LOOK INTO RETINAL SCANNER NOW}},,
+> 
+> ,,{{CONFIRMED}},,
+> 
+> ,,{{WELCOME, O5-2@SCiPNET}},,
+> 
 [[collapsible show="+ Access C:Users/Administrator/IV/3959/files/3959Original.log" hide="cd .."]]
 
 > **Item #:** SCP-3959
