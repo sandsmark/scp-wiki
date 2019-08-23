@@ -1,5 +1,9 @@
 title:SCP-4475
 parent:ad-astra-per-aspera-hub
+[[>]]
+[[module Rate]]
+[[/>]]
+
 [[include :scp-wiki:component:info-ayers
 |lang=en
 |page=scp-4475
@@ -113,6 +117,23 @@ body{
      font-weight: bold;
 }
 
+/* THREAT LEVEL */
+ .threat-level{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: .3rem 0 .3rem;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    color: rgb(230, 230, 230);
+    background-color: rgb(80, 80, 109);
+    text-shadow: 1px 3px 1px rgba(0,0,0,0.3);
+}
+ .threat-level a:hover{
+    text-decoration: none !important;
+}
+
 /* SPECIAL CODE */
  .enlarge{
      transition: .25s;
@@ -128,37 +149,32 @@ body{
 }
 [[/module]]
 
-[[>]]
-[[module Rate]]
-[[/>]]
 @@ @@
 @@ @@
 @@ @@
-[[table style="border: none; width: 100%;"]]
-[[row]]
-[[cell]]
-[[size 125%]][[span class="h-span"]]Item Number:[[/span]] SCP-4475[[/size]]
-[[/cell]]
-[[cell style="text-align: right;"]]
-[[size 125%]][[span class="h-span"]]❮❮❮❮ Level 4/4475[[/span]][[/size]]
-[[/cell]]
-[[/row]]
-[[row]]
-[[cell]]
-[[size 125%]][[span class="h-span"]]Containment Class:[[/span]] Keter[[/size]]
-[[/cell]]
-[[cell style="text-align: right;"]]
-[[size 125%]][[span class="h-span"]]PROJECT GALAXIAS[[/span]][[/size]]
-[[/cell]]
-[[/row]]
-[[/table]]
 
-[[a href="*http://scp-int.wikidot.com/niveaux-de-menace-des-objets-scp" style="font-size: 18px; color: #ccc; text-shadow: 1px 3px 1px rgba(0,0,0,0.3); text-decoration: none;"]]
-[[span_ style="display: inline-block; width: 100%; background-color: #50506d; text-align: center; border: 1px none #000; margin: 1px; padding-top: 8px; padding-bottom: 8px;"]]
-**Threat Level:** Undetermined
+[[include :topia:component:class-header-source
+|item-num=4475
+|cont-class=keter
+|clearance-bg-color=rgb(255,184,97)
+|class-text-color=rgb(255,184,97)
+|altbody-text-color=rgb(204, 204, 204)
+|clearance-one=full
+|clearance-two=full
+|clearance-three=full
+|clearance-four=full
+|clearance-five=half
+|clearance-six=none
+|level=4
+|clearance=PROJECT GALAXIAS
+]]
+
+[[a href="*http://scp-int.wikidot.com/niveaux-de-menace-des-objets-scp"]]
+[[span_ class="threat-level"]]
+[[span style="font-weight: 700;"]]THREAT LEVEL:[[/span]] UNDETERMINED
 [[/span]]
 [[/a]]
-
+----
 [[div class="scp-image-block block-center" style="width: 100%;"]]
 [[image http://www.scp-wiki.net/local--files/scp-4475/4475-A.jpg style="width: 100%;" link=#]]
 [[div class="scp-image-caption" style="width: 100%;"]]
@@ -171,7 +187,7 @@ body{
 All Project GALAXIAS personnel -- including occult dairy practitioners -- are to consume 1.5 L of milk per day to maintain natural resistance against dairy-based anomalies. As such, the project is to screen a strict lactose tolerance for all prospective research personnel.
 
 Information involving human apotheosis via the manipulation of milk-based archetypes should be researched and, when possible, suppressed.
-
+----
 [[span class="h-span"]]Description:[[/span]] **SCP-4475** is a Class-III[[footnote]]The Clef-Moose Ontokinetics Classification System, which ranks ontokinetic capabilities into a hierarchy of intensity. Observed //Class-III// ontokinetic traits include:
 * Localized manipulation of physical and thermodynamic laws;
 * Localized reconfiguration of matter; and,
