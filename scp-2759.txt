@@ -5,6 +5,27 @@ title:UE-54701
 [[module rate]]
 [[/>]]
 [[module CSS]]
+.hovertip {
+    border: 0px solid #fff !important;
+    -webkit-box-shadow: 2px 3px 4px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 3px 4px rgba(0,0,0,1);
+    box-shadow: 2px 3px 4px rgba(0,0,0,1);
+    max-width:400px;
+    width: 400px;
+
+}
+.hovertip .content {
+  
+    background-color: #000000;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#cccccc));
+    background-image: -moz-linear-gradient(top, #ffffff, #cccccc);
+    color: #000000;
+    padding:2px; 
+    max-width:400px;
+    width: 400px;
+
+}
+
 #page-content .blockquote {border-color: #000000;    
                  overflow-wrap: normal;
                 background-color#f2ffe6;
