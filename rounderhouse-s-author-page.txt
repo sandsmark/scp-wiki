@@ -461,9 +461,9 @@ Header art by [[user Athosnetwork]]
 body {
     transform:rotate(2deg);
 }
-
-
-
+body:hover {
+    transform:rotate(-2deg);
+}
 @keyframes blinker {
   0% {opacity: 1}
   100% {
