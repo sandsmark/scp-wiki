@@ -1,17 +1,120 @@
 title:SCP-2786
+[[include component:black-highlighter-theme-dev]]
+
 [[>]]
-[[module Rate]]
+[[module rate]]
 [[/>]]
+[[module CSS]]
 
-[[div style="border:solid 1px #999999; background:#f2f2c2; padding:5px; margin-bottom: 10px;"]]
-[[=]]
-++++ NOTICE FROM THE RECORDS AND INFORMATION SECURITY ADMINISTRATION
+#page-content .blockquote {border-color: #000000;    
+                 overflow-wrap: normal;
+                background-color#f2ffe6;
+    	}
+    	
+#content-wrap div{
 
-The following documentation has been flagged as {{COMPROMISED}} by SCP-2786's effects. Due to the nature of the anomaly, this has been deemed safe for reading for the time being. However, contents of the article may fluctuate between readings and may or may not be considered accurate at this time. Click below to initiate recalibration sequence.
+ background-color#f2ffe6;
+}
+.container  {position: absolute;
+                 text-align: center;
+    	 width:100%;
+            overflow-wrap: normal;
 
-+++++ //We apologize for any inconvenience this may cause.// 
+    	}
+    	
+.centered  {position: absolute;
+   		 top: 50%;
+    	 left: 50%;
+   		 transform: translate(-50%, -50%);
 
-[[/=]]
+}
+
+
+:root{ 
+--cutColour: #701F12;
+--barColour: #632538;
+}
+#page-content .collapsible-block {  
+  max-width: 100%;
+overflow-wrap: normal;
+text-color: #ff1482;
+   border-color: #b01;
+background-color:#f2ffe6;
+    border: solid 1px #b01;
+padding: 8px;
+}
+.collapsible-block-content p{
+
+padding-left: 3px;
+padding-right: 3px;
+padding-bottom: 3px;
+padding-top: 3px;
+}
+.collapsible-block-content{
+text-align: left;
+ }
+.collapsible-block-folded, .collapsible-block-unfolded{
+text-align: center;
+text-color: black;
+}
+
+.info-container .collapsible-block-link, 
+.info-container:hover .collapsible-block-link {
+line-height: 1.6em;
+}
+
+.inset {
+    float: right;
+    width: 20%;
+    margin: 0px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: #911501;
+    padding: 8px;	
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: #701F12;
+    font-size: 90%;
+  overflow-wrap: normal;
+}
+.inset > p {
+    margin: 0;
+    overflow-wrap:normal;
+}
+.space {
+float:center; width:100%; border:solid 3px #7979bd; padding:10px; margin-bottom: 10px;margin:0 auto;
+[[/module]]
+
+[[div style="width: 100%;
+    border: solid 2px #000000;
+    background: 911501#;
+    color:black;
+    overflow-wrap: normal;
+    margin-bottom: 6px;
+    margin: 0 auto;"]]
+
+[[div style="border: solid 0px #770077;
+    background: #f2f2c2;
+    padding: 6px;
+    overflow-wrap: normal;
+    margin-bottom: 5px;
+    margin: 0 auto;
+    text-align:center;"
+    ]]
+
+[[include component:object-warning-box-source
+|bg-image=https://upload.wikimedia.org/wikipedia/commons/e/ec/SCP_Foundation_%28emblem%29.svg
+|bg-opacity=0.19
+|text-top={{NOTICE FROM THE RECORDS AND INFORMATION SECURITY ADMINISTRATION}}
+|text-bottom= ,,//The following documentation has been flagged as// {{COMPROMISED}} //by SCP-2786's effects. Due to the nature of the anomaly, this file has been deemed safe for reading for the time being. However, contents of the article may fluctuate between readings and may or may not be considered accurate at this time. Click below to initiate recalibration sequence.//,,
+|object-number= **//We apologize for any inconvenience this may cause.//**
+]]
+
+[[/div]]
+
+
 [[/div]]
 [[html]]
 
