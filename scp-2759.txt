@@ -1,6 +1,7 @@
 title:UE-54701
 [[include component:black-highlighter-theme-dev]]
 [[html]]
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
 $('.clearance').each(function() {
   $(this).before($('<span>').text("NON-ESSENTIAL "));
