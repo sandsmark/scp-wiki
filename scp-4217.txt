@@ -1,16 +1,49 @@
 title:SCP-4217
+[[include component:black-highlighter-theme-dev]]
+
+[[module CSS]]
+sup { 
+vertical-align: top; position: relative; top: -0.5em; 
+}
+:root{ 
+--cutColour: #fafafa;
+--barColour: #590505;
+}
+.translation_block{
+display:none;}
+
+.info-container .collapsible-block-folded a{
+color: #FFF;}
+.info-container .collapsible-block-unfolded-link a{
+color: #FFF;}
+
+.info-container .collapsible-block-link, 
+.info-container:hover .collapsible-block-link {
+line-height: 1.6em;
+}
+[[/module]]
+
 [[>]]
 [[module Rate]]
 [[/>]]
 
+[[include :scp-wiki:component:anomaly-class-bar-source
+|item-number= 4217
+|clearance= 2
+|container-class= keter
+|secondary-class= none
+|disruption-class= vlam
+|risk-class= danger
+]]
+
 [[include component:image-block name=bismarck.jpg|caption=SCP-4217 (circa 1940)]]
 
-**Item #:** SCP-4217
+[!-- **Item #:** SCP-4217
 **Clearance Level 2:** Restricted
 
 **Object Class:** Keter
 **[http://scp-wiki.wikidot.com/anomaly-classification-system-guide Disruption Class:]** 2/Vlam
-**[http://scp-wiki.wikidot.com/anomaly-classification-system-guide Risk Class:]** 4/Danger
+**[http://scp-wiki.wikidot.com/anomaly-classification-system-guide Risk Class:]** 4/Danger--]
 
 **Special Containment Procedures:** Foundation naval forces are to patrol SCP-4217's territory with 3 or more battleships under the guise of the British Royal Navy. During a Hostile State, naval forces are to engage SCP-4217 until it reverts to a Passive State. Survivors from civilian vessels attacked by SCP-4217 are to be recovered and processed in accordance with Maritime Disinformation Protocols.
 
