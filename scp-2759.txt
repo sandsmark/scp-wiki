@@ -1,6 +1,12 @@
 title:UE-54701
 [[include component:black-highlighter-theme-dev]]
-
+[[html]]
+<script type="text/javascript">
+$('.clearance').each(function() {
+  $(this).before($('<span>').text("NON-ESSENTIAL "));
+});
+</script>
+[[/html]]
 [[>]]
 [[module rate]]
 [[/>]]
