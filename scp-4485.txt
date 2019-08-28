@@ -7,7 +7,7 @@ title:SCP-4485
     display: none;
 }
 [[/module]]
-[[module ListPages  category="members" parent="." limit="1" order="created_at" offset="@URL|0"]]
+[[module ListPages  category="fragment" parent="." limit="1" order="created_at" offset="@URL|0"]]
 %%content%%
 [[/module]]
 
