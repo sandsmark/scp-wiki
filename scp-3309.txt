@@ -20,7 +20,7 @@ Inspired by **[*http://www.scp-wiki.net/operation-overmeta the Pataphysics Depar
 
 [[module CSS]]
 /* INFO BOX */
-sup {
+sup{
     vertical-align: top;
     position: relative;
     top: -0.5em;
@@ -39,7 +39,7 @@ body{
     color: #FFF;
 }
 .info-container .collapsible-block-link,
-.info-container:hover .collapsible-block-link {
+.info-container:hover .collapsible-block-link{
     line-height: 1.6em;
 }
 .collapsible-block-link{
@@ -71,6 +71,11 @@ body{
     background-color: #e6e6e6;
     padding: .25em 1em;
     margin-bottom: 1em;
+}
+hr{
+     margin: 1em 0;
+     padding: 0;
+     border: 0;
 }
 [[/module]]
 
