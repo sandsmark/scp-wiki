@@ -21,7 +21,7 @@ This article was written for Round 2 of **[*http://www.scp-wiki.net/draft-swap-h
 
 [[module CSS]]
 /* INFO BOX */
-sup {
+sup{
     vertical-align: top;
     position: relative;
     top: -0.5em;
@@ -40,7 +40,7 @@ body{
     color: #FFF;
 }
 .info-container .collapsible-block-link,
-.info-container:hover .collapsible-block-link {
+.info-container:hover .collapsible-block-link{
     line-height: 1.6em;
 }
 .collapsible-block-link{
@@ -48,7 +48,7 @@ body{
 }
 
 /* DIV BLOCKS */
-.document {
+.document{
     border-radius: 10px;
     border: solid 1px #ccc;
     background-color: #f0f0f0;
@@ -73,12 +73,13 @@ body{
     height: 2px;
 }
 .collapsible-block-link { font-weight: bold; }
-.footnotes-footer {
+.footnotes-footer{
     display:none;
 }
 hr{
-    width: 100%;
-    margin: auto;
+     margin: 1em 0;
+     padding: 0;
+     border: 0;
 }
 [[/module]]
 
