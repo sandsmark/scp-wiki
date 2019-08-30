@@ -19,7 +19,7 @@ This article is set in the **[*http://www.scp-wiki.net/apotheosis-hub Apotheosis
 
 [[module CSS]]
 /* INFO BOX */
-sup {
+sup{
     vertical-align: top;
     position: relative;
     top: -0.5em;
@@ -38,11 +38,16 @@ body{
     color: #FFF;
 }
 .info-container .collapsible-block-link,
-.info-container:hover .collapsible-block-link {
+.info-container:hover .collapsible-block-link{
     line-height: 1.6em;
 }
 .collapsible-block-link{
     font-weight: bold;
+}
+hr{
+     margin: 1em 0;
+     padding: 0;
+     border: 0;
 }
 [[/module]]
 
