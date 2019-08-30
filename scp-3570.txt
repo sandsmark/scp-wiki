@@ -19,7 +19,7 @@ This article is **Part 7** of the **Team Bird** storyline.
 
 [[module CSS]]
 /* HEADER */
-#header h1 a {
+#header h1 a{
     display: block;
     margin: 0;
     padding: 80px 0 25px;
@@ -33,14 +33,14 @@ This article is **Part 7** of the **Team Bird** storyline.
     letter-spacing: 0.9px;
 }
 
-#header h1 a::before {
+#header h1 a::before{
     content: "The Avian Division";
     color: white;
     letter-spacing: -0.02em;
     text-shadow: 3px 3px 5px black;
 }
 
-#header h2 span {
+#header h2 span{
     display: block;
     margin: 0;
     padding: 19px 0;
@@ -51,7 +51,7 @@ This article is **Part 7** of the **Team Bird** storyline.
     text-shadow: none;
 }
 
-#header h2 span::before {
+#header h2 span::before{
     content: 'Until we return to the Nest';
     color: white;
     text-shadow: 1px 1px 1px black;
@@ -59,7 +59,7 @@ This article is **Part 7** of the **Team Bird** storyline.
 }
 
 /* INFO BOX */
-sup {
+sup{
     vertical-align: top;
     position: relative;
     top: -0.5em;
@@ -78,7 +78,7 @@ body{
     color: #FFF;
 }
 .info-container .collapsible-block-link,
-.info-container:hover .collapsible-block-link {
+.info-container:hover .collapsible-block-link{
     line-height: 1.6em;
 }
 .collapsible-block-link{
@@ -117,21 +117,27 @@ body{
     height: 2px;
 }
 .collapsible-block-link { font-weight: bold; }
+hr{
+     margin: 1em 0;
+     padding: 0;
+     border: 0;
+}
 [[/module]]
 
 @@ @@
 @@ @@
 @@ @@
 
-[[div style="background: url(http://scp-wiki.wdfiles.com/local--files/the-great-hippo/scp_trans.png) center no-repeat; border: solid 2px black; padding: 0 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
+[[div style="color: rgb(12, 12, 12); background: url(http://scp-wiki.wdfiles.com/local--files/the-great-hippo/scp_trans.png) center no-repeat; border: solid 2px black; padding: 0 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
 [[=]]
-**Revision #{{31}} of this document was prepared by:**
++++ REVISION #{{31}} OF THIS DOCUMENT WAS PREPARED BY
+----
++ [[span style="color: rgb(12, 12, 12);"]]THE FOUNDATION[[/span]] [[[scp-3095|AVIAN DIVISION]]]
+----
++++ IN ACCORDANCE WITH THE PLUTO PROTOCOL
 
-++ **THE FOUNDATION [[[scp-3095|AVIAN DIVISION]]]**
-
-**In accordance with the Pluto Protocol**
-
-//Note: By order of Dr. Frederick Hoygull, the clearance level required to access this file has been lowered from 3/3570 clearance to 1/GENERAL clearance, due to its relevance to the ongoing BE-Class "Migration" Scenario.//
+//The clearance level to access this file has been changed to Level 1/GENERAL for relevance to the ongoing BE-Class "Migration" End-of-Consciousness Scenario.//
++++ AUTHORIZED BY: {{Dr. Frederick Hoygull}}
 [[/=]]
 [[/div]]
 ----
@@ -169,14 +175,16 @@ The Moon during EE-3570.
 ----
 **Preceding Events:** Extranormal Event 3570 (EE-3570) was preceded by the following phenomena:
 
+[[collapsible show="► Show Timeline" hide="▲ Close"]]
 ||~ Date||~ Occurrence||
-||= May 10, 2018||The Earth's latent Akiva radiation[[footnote]]An SI unit used to assign a measurement to esoteric radiation emitted by powerful ontokinetic entities. Defined by the value of piety reported among adherents of any such entity.[[/footnote]] level decreases, becoming uniform with the universe's background constant of ~0.7 milliakiva (mÁ). The Earth's ambient hume level experiences only a minute decrease despite the expected repercussions. As well, one or more Class-IX Entities become undetectable and are considered lost.||
-||= May 11||A dense Avian meme complex -- "EoI-121" -- disperses throughout the Noosphere[[footnote]]The set of ideas, thoughts, or concepts humans are biologically capable of having or conceiving.[[/footnote]] via [[[SCP-3662]]]. This is thought to be the result of extra-universal interference[[footnote]]The Noosphere, an extra-dimensional construct, is not easily manipulated from within our reality.[[/footnote]]. The sum of human thought diminishes to align solely with the Avian meme[[footnote]]As opposed to the "human meme" by some definition thereof.[[/footnote]] within three months. Humans affected by the Avian meme complex are designated Type-BE Humanoid Entities.||
-||= June 5||Various correspondences between the Serpent's Hand and the Avian Division occur. Through this, and a series of messages from Project Milliard, the Avian Division determined that a Class-VIII Ontokinetic Entity was responsible for influencing the Noosphere.||
-||= June 24||60% of Type-BE entities in North America begin a mass exile to the Midwestern United States. The assembled entities erect a large ibis-shaped monument despite a lack of fine motor skills or higher intellect. The monument absorbs thaumic energies[[footnote]]Recorded by MTF-Eta-4 using a thaumometer, which quantifies thaumaturgic energy levels within a localized area. Absorbed energies were assimilated from the tens of millions of Type-BE entities situated within 50 km of the monument.[[/footnote]] during construction. The Avian Division detects similar thaumaturgic disturbances across the globe, suggesting the construction of other monuments.||
-||= August 2||99.9% of the human populace is afflicted with the Avian meme. Between 5 to 10% of the global population expires from starvation following the loss of the worldwide agricultural industry. A small percentage of Type-BE entities (10–15% of the total population) engage in regular sarcophagy upon the greater 85% for sustenance.||
-||= August 8||Lunar Area-32 detects thaumaturgic disturbances across the surface of the Moon.||
-||= August 9||The North American monument radiates a bright blue. It is surmised that the other monuments experience a similar change.||
+||~ May 10, 2018||The Earth's latent Akiva radiation[[footnote]]An SI unit used to assign a measurement to esoteric radiation emitted by powerful ontokinetic entities. Defined by the value of piety reported among adherents of any such entity.[[/footnote]] level decreases, becoming uniform with the universe's background constant of ~0.7 milliakiva (mÁ). The Earth's ambient hume level experiences only a minute decrease despite the expected repercussions. As well, one or more Class-IX Entities become undetectable and are considered lost.||
+||~ May 11||A dense Avian meme complex -- "EoI-121" -- disperses throughout the Noosphere[[footnote]]The set of ideas, thoughts, or concepts humans are biologically capable of having or conceiving.[[/footnote]] via [[[SCP-3662]]]. This is thought to be the result of extra-universal interference.[[footnote]]The Noosphere, an extra-dimensional construct, is not easily manipulated from within our reality.[[/footnote]] The sum of human thought diminishes to align solely with the Avian meme[[footnote]]As opposed to the "human meme" by some definition thereof.[[/footnote]] within three months. Humans affected by the Avian meme complex are designated Type-BE Humanoid Entities.||
+||~ June 5||Various correspondences between the Serpent's Hand and the Avian Division occur. Through this, and a series of messages from Project Milliard, the Avian Division determined that a Class-VIII Ontokinetic Entity was responsible for influencing the Noosphere.||
+||~ June 24||60% of Type-BE entities in North America begin a mass exile to the Midwestern United States. The assembled entities erect a large ibis-shaped monument despite a lack of fine motor skills or higher intellect. The monument absorbs thaumic energies[[footnote]]Recorded by MTF-Eta-4 using a thaumometer, which quantifies thaumaturgic energy levels within a localized area. Absorbed energies were assimilated from the tens of millions of Type-BE entities situated within 50 km of the monument.[[/footnote]] during construction. The Avian Division detects similar thaumaturgic disturbances across the globe, suggesting the construction of other monuments.||
+||~ August 2||99.9% of the human populace is afflicted with the Avian meme. Between 5 to 10% of the global population expires from starvation following the loss of the worldwide agricultural industry. A small percentage of Type-BE entities (10–15% of the total population) engage in regular sarcophagy upon the greater 85% for sustenance.||
+||~ August 8||Lunar Area-32 detects thaumaturgic disturbances across the surface of the Moon.||
+||~ August 9||The North American monument radiates a bright blue. It is surmised that the other monuments experience a similar change.||
+[[/collapsible]]
 
 EE-3570 began shortly thereafter.
 ----
@@ -194,7 +202,7 @@ The forelimbs developed long bone-based digits within a thick and supple membran
 
 During the Moon's transit, locations across the globe became exposed to its light and thaumaturgic emissions. All exposed Type-BE entities developed the same winged transformations. Newly winged Type-BE entities emitted increased [[[goc-supplemental-arad|Elan-Vital Energies (EVEs)]]], became capable of flight speeds more than 40 km/h and, in most cases, displayed predatory behaviour.
 
-At 2:45 PM PST Armed Research Site-18, the Avian Division's base of operations, received the following transmission from [[[secure-facility-dossier-lunar-area-32|Lunar Area-32]]].
+At 2:45 PM PST Armed Research Site-18 — the Avian Division's base of operations — received the following transmission from [[[secure-facility-dossier-lunar-area-32|Lunar Area-32]]].
 
 [[collapsible show="► Lunar Area-32 Transmission" hide="▲ Close"]]
 [[div class="quote-block"]]
@@ -251,6 +259,8 @@ Roughly 24 hours have elapsed since the start of the Moon's thaumaturgic emissio
 
 The Avian Division projects that all Type-BE entities will leave the Earth within one week's time. --Research into the emergence and destination of these portals is ongoing.-- [[span style="color: #1f1f93; font-weight: bold;"]]The portals have been determined to lead to exoplanet URA-8047 (see Supplemental Materials for more information).[[/span]]
 
+@@ @@
+
 **Follow-up Actions Taken:** The following is an excerpt of Marine Fighting Team CHARYBDIS's initial response to EE-3570.
 
 [[collapsible show="► Incident Log EE-3570-035" hide="▲ Close"]]
@@ -259,9 +269,9 @@ The Avian Division projects that all Type-BE entities will leave the Earth withi
 [[<]]
 = **VIDEO LOG**
 ----
-**Note:** MFT CHARYBDIS is a cybernetically augmented 4-man unit, part of an organization known as the Centre[[footnote]]Centre personnel are primarily dedicated to neutralizing anomalous nautical threats, typically Selachian in nature. The Department of Extra-Universal Affairs first made contact with the Centre in 2011, but MTF-Eta-4 of the Avian Division and MFT CHARYBDIS of the Centre had not run any joint operations until shortly before the advent of EE-3570.[[/footnote]]. A/V footage taken from each MFT CHARYBDIS operative has been compiled into the following log. CHARYBDIS agents appear unaffected by the anomaly. Whether this is due to their extra-universal origin, a memetic hardening developed during their training, or some other effect is unknown.
+**Note:** MFT CHARYBDIS is a cybernetically augmented 4-man unit, part of an organization known as the Centre.[[footnote]]Centre personnel are primarily dedicated to neutralizing anomalous nautical threats, typically Selachian in nature. The Department of Extra-Universal Affairs first made contact with the Centre in 2011, but MTF-Eta-4 of the Avian Division and MFT CHARYBDIS of the Centre had not run any joint operations until shortly before the advent of EE-3570.[[/footnote]] A/V footage taken from each MFT CHARYBDIS operative has been compiled into the following log. CHARYBDIS agents appear unaffected by the anomaly. Whether this is due to their extra-universal origin, a memetic hardening developed during their training, or some other effect is unknown.
 
-Upon the start of the Event, MTF-Eta-4 ("Begone Thoth") advised MFT CHARYBDIS to immediately proceed to Outpost-24-B and remain there until the Event's cessation. While travelling to Outpost-24-B, MFT CHARYBDIS was forced to leave behind agent Leah Řezník (designated CHARYBDIS-3) during an engagement with an overwhelming force of Type-BE entities. Approximately 4 hours later fully transformed Type-BE entities discovered Outpost-24-B.
+Upon the start of the Event, Mobile Task Force Eta-4 ("Begone Thoth") advised MFT CHARYBDIS to immediately proceed to Outpost-24-B and remain there until the Event's cessation. While travelling to Outpost-24-B, MFT CHARYBDIS was forced to leave behind agent Leah Řezník (designated CHARYBDIS-3) during an engagement with an overwhelming force of Type-BE entities. Approximately 4 hours later fully transformed Type-BE entities discovered Outpost-24-B.
 ----
 = **<Begin Log>**
 
@@ -309,7 +319,7 @@ Upon the start of the Event, MTF-Eta-4 ("Begone Thoth") advised MFT CHARYBDIS to
 
 **C-3 Leah:** Oh my Thoth, they reek!
 
-**C-2 Jaedan:** Come on, you heard what the bird lady said — don't use his name. That gives him, like, powers or something. Or was that the Devil? //[C-2 dispatches the third entity before kicking it.]// Listen: between you and me, I don't remember half the things she's told us.
+**C-2 Jaedan:** Come on, you heard what the bird lady said — don't use his name. That gives him, like, powers or something. //[C-2 dispatches the third entity before kicking it.]// Listen: between you and me, I don't remember half the things she's told us.
 
 //[Three more entities enter the farmhouse and attack C-2 and C-3.]//
 
@@ -369,7 +379,7 @@ The captured instance, designated EE-3570-A, is contained within the Anomalous H
 
 By the directive of the Avian Division, this recording has been transmitted on all Foundation channels.
 
-Before Extranormal Event 3570, the Foundation hypothesized that a massive lunar anomaly would occur in the near future. On December 24th, 1972, initial analysis of the Apollo 17 Moon landing's geological samples detailed elevated EVEs consistent with reality-bending phenomena[[footnote]]As thaumic technology was not fully developed before 1972 due to a lack of research into the Theory of Unified Thaumatology, previous lunar missions failed to detect any lunar thaumic energies.[[/footnote]]. The samples, taken from various deposits around the Taurus-Littrow Valley landing site, prompted theories of the Moon's thaumaturgic makeup.
+Before Extranormal Event 3570, the Foundation hypothesized that a massive lunar anomaly would occur in the near future. On December 24th, 1972, initial analysis of the Apollo 17 Moon landing's geological samples detailed elevated EVEs consistent with reality-bending phenomena.[[footnote]]As thaumatic technology was not fully developed before 1972 due to a lack of research into the Theory of Unified Thaumatology, previous lunar missions failed to detect any lunar thaumic energies.[[/footnote]] The samples, taken from various deposits around the Taurus-Littrow Valley landing site, prompted theories of the Moon's thaumaturgic makeup.
 
 In December 1995, the newly christened, and if might I add, unfortunately named "Outpost Thoth-1" performed a series of observations on various lunar sites to record thaumic radiation levels. It was discovered that the Moon had a baseline EVE intensity greater than 141,000 Caspers[[footnote]]Reality-altering phenomena are measured in Caspers.[[/footnote]] — higher than anywhere on Earth. 
 
@@ -377,7 +387,7 @@ Why that did not lead to drastic changes in localized reality and sub-reality is
 
 //[Pause.]//
 
-In the event that such intense energies might be manipulated against Earth, a number of active deterrents were devised. The contingencies, unfortunately, could not be enacted due to the BE-Class Scenario decimating our workforce[[footnote]]The Avian Division has decided it would be best to categorize the two events as one and the same, hence BE-Class **"Migration"** End-of-Consciousness Scenario.[[/footnote]]. Taking a look at the files here... Projects included the mass [[[SCP-1654|Scranton Reality Anchor "Seraphim Array"]]] in mid-Earth orbit, the Global Hardlight Energy Shielding System, and the controlled expansion of [[[SCP-2821]]] to quickly consume the Moon and then itself via... What's this? The file literally says "[DATA EXPUNGED]". Of course, the order and protocols of the Foundation still hold true even when the world falls apart!
+In the event that such intense energies might be manipulated against Earth, a number of active deterrents were devised. The contingencies, unfortunately, could not be enacted due to the BE-Class Scenario decimating our workforce.[[footnote]]The Avian Division has decided it would be best to categorize the two events as one and the same, hence BE-Class "**Migration**" End-of-Consciousness Scenario.[[/footnote]] Taking a look at the files here... Projects included the mass [[[SCP-1654|Scranton Reality Anchor "Seraphim Array"]]] in mid-Earth orbit, the Global Hardlight Energy Shielding System, and the controlled expansion of [[[SCP-2821]]] to quickly consume the Moon and then itself via... What's this? The file literally says "[DATA EXPUNGED]". Of course, the order and protocols of the Foundation still hold true even when the world falls apart!
 
 Anyway, the red tape speaks for itself. Let me tell you what we're going to do about this. Appended to Document EE-3570 is Supplemental Materials file "**[[[umbral-migratory-sequence|UMBRAL_MIGRATORY_SEQUENCE.txt]]]**". Take note of the information within that file before using resources available to you to reach an immediate rendezvous with MTF-Eta-4, at which point we will co-ordinate off-world evacuation efforts. 
 
@@ -390,7 +400,9 @@ Suffice to say, we don't have much time left. Everything will, uh, make sense so
 
 [[/collapsible]]
 
-The remainder of the Foundation, which includes 75 Avian Division personnel, Marine Fighting Team CHARYBDIS, and [[[SCP-2785]]], is stationed at Site-18. Operation: DIVINE RUSE is being developed at this time.
+The remainder of the Foundation — which includes 75 Avian Division personnel, Marine Fighting Team CHARYBDIS, and [[[SCP-2785]]] — is stationed at Site-18. Operation: DIVINE RUSE is being developed at this time.
+
+@@ @@
 
 **Supplemental Materials:** The following is a surviving excerpt taken from a preserved papyrus reed manuscript, circa 1900 BCE. The account was written using Egyptian hieratic script and was contained in [[[scp-1644|Reliquary Site-62]]].
 
@@ -449,20 +461,22 @@ The account's subject matter describes phenomena surrounding --URA-8047-- [[span
 
 [[span style="color: #1f1f93; font-weight: bold;"]]This document has been marked for immediate release via all available communication channels. See attached note for details.[[/span]]
 
-[[div style="background: url(http://scp-wiki.wdfiles.com/local--files/the-great-hippo/scp_trans.png) center no-repeat; border: solid 2px black; padding: 0 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
+[[div style="color: rgb(12, 12, 12); background: url(http://scp-wiki.wdfiles.com/local--files/the-great-hippo/scp_trans.png) center no-repeat; border: solid 2px black; padding: 0 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
 [[=]]
-**Note: By order of Dr. Frederick Hoygull, the clearance level required to access this file has been lowered from**
++++ THE CLEARANCE LEVEL TO ACCESS THIS FILE HAS BEEN LOWERED FROM
+----
++ LEVEL 1/GENERAL
 
-+ **LEVEL 1/UNRESTRICTED** 
++++ TO
 
-**to**
-
-+ **LEVEL 0/PUBLIC**
-
++ LEVEL 0/PUBLIC
+----
 //If there are any allies that have yet to reveal yourselves: please, we need your help.//
 //To our successors: if these are the only documents you find, know that we have failed.//
+//-- Dr. Frederick Hoygull//
 
-**Medila wills our path now. Until we return to the Nest.**
++++ MEDILA WILLS OUR PATH NOW
++++ UNTIL WE RETURN TO THE NEST
 [[/=]]
 [[/div]]
 [[footnoteblock]]
