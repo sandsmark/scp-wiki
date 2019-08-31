@@ -19,7 +19,7 @@ This article is set in the **[*http://www.scp-wiki.net/end-of-death-hub End of D
 
 [[module CSS]]
 /* INFO BOX */
-sup {
+sup{
     vertical-align: top;
     position: relative;
     top: -0.5em;
@@ -38,15 +38,20 @@ body{
     color: #FFF;
 }
 .info-container .collapsible-block-link,
-.info-container:hover .collapsible-block-link {
+.info-container:hover .collapsible-block-link{
     line-height: 1.6em;
 }
 .collapsible-block-link{
     font-weight: bold;
 }
+hr{
+     margin: 1em 0;
+     padding: 0;
+     border: 0;
+}
 
 /* DIV BLOCKS */
-.material-box {
+.material-box{
     padding: .01em 16px;
     margin-bottom: 16px;
     margin-top: 16px;
@@ -55,7 +60,7 @@ body{
     color: black;
     box-shadow: 1px 2px 2px 0 rgba(0,0,0,0.16);
 }
-.material-box blockquote {
+.material-box blockquote{
     border: 1px double #999;
 }
 [[/module]]
