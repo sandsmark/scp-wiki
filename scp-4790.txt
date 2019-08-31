@@ -100,6 +100,11 @@ body{
  .footnotes-footer{
      display: none;
 }
+hr{
+     margin: 1em 0;
+     padding: 0;
+     border: 0;
+}
 
 /* DIV BLOCKS */
  .h-span{
@@ -111,11 +116,6 @@ body{
      font-weight: bold;
      font-family: Courier, monospace; 
      font-size: 115%;
-}
- .wide-hr hr{
-     width: 100%;
-     margin: auto;
-     border: none;
 }
  .o5{
      color: #ccc; 
@@ -210,13 +210,9 @@ All attempts at hailing these vessels have resulted in failure.
 
 @@ @@
 
-[[div class="wide-hr"]]
 ----
-[[/div]]
 = [[span class="h-span"]][END OF FILE][[/span]]
-[[div class="wide-hr"]]
 ----
-[[/div]]
 
 @@ @@
 @@ @@
@@ -233,9 +229,7 @@ All attempts at hailing these vessels have resulted in failure.
 
 [[span style="color: #ffb961;"]]SUBJECT:[[/span]] //CHEKHOV-.009// FINDINGS
 
-[[div class="wide-hr"]]
 ----
-[[/div]]
 
 Alongside the evident destruction to Alpha Centauri B -- worse than we feared -- Fledgling.aic detected a signal emitting from within a space-faring vessel (code-name: IANTHINE HERALD). The signal contained the following information:
 
