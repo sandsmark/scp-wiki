@@ -74,7 +74,7 @@ This article is set in the **[*http://www.scp-wiki.net/broken-masquerade-hub Bro
 #header h2 span::before { content: "Archiving Apotheosis" !important; }
 
 /* INFO BOX */
-sup {
+sup{
     vertical-align: top;
     position: relative;
     top: -0.5em;
@@ -93,7 +93,7 @@ body{
     color: #FFF;
 }
 .info-container .collapsible-block-link,
-.info-container:hover .collapsible-block-link {
+.info-container:hover .collapsible-block-link{
     line-height: 1.6em;
 }
 .collapsible-block-link{
@@ -142,12 +142,12 @@ body{
     
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes scan{
-    from{ transform: translateY(-10%);}
-    to{  transform: translateY(2000%);}
+    from{ transform: translateY(-10%); }
+    to{  transform: translateY(2000%); }
 }
 
 /* FLAGS */
-.log {
+.log{
   float: center; 
   padding: 7px; 
   margin: 3px;
@@ -156,7 +156,7 @@ body{
 }
 
 /* INFORMATION BOXES */
-.quoteblock { 
+.quoteblock{ 
   padding: .25em 1em;
   color: gray;
   font-weight: bold;
@@ -169,7 +169,7 @@ body{
     padding: .25em 1em;
     margin-bottom: 1em;
 }
-.blockM {
+.blockM{
 -webkit-margin-start: 0px;
 -webkit-margin-before: 1em;
 -webkit-margin-after: 1em;
@@ -183,7 +183,7 @@ body{
     0 0 0 4px hsl(0, 0%, 80%),
     0 0 0 7px hsl(0, 0%, 90%);
 }
-.spangles {
+.spangles{
   color: #ffffff;
   background: #000000;
 }
@@ -193,6 +193,11 @@ body{
     background-color: #c6c6c6;
     border: none;
     height: 2px;
+}
+hr{
+     margin: 1em 0;
+     padding: 0;
+     border: 0;
 }
 [[/module]]
 
