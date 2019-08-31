@@ -23,7 +23,7 @@ This is a tale for Day 1 of the **144-Hour Jam Contest**. The theme was "Shaggy 
 #header h2 span::before { content: "Search, Punch, Conquer" !important; }
 
 /* INFO BOX */
-sup {
+sup{
     vertical-align: top;
     position: relative;
     top: -0.5em;
@@ -42,20 +42,27 @@ body{
     color: #FFF;
 }
 .info-container .collapsible-block-link,
-.info-container:hover .collapsible-block-link {
+.info-container:hover .collapsible-block-link{
     line-height: 1.6em;
 }
 .collapsible-block-link{
     font-weight: bold;
+}
+hr{
+     margin: 1em 0;
+     padding: 0;
+     border: 0;
 }
 [[/module]]
 
 [[>]]
 [[module Rate]]
 [[/>]]
+
 @@ @@
 @@ @@
 @@ @@
+
 [[==]]
 Centre Pugilist Justine Everwood patrolled the area. It was Shark Week, and her superiors had tasked her with defending the beach against the Selachian menace.
 
@@ -100,9 +107,13 @@ The ocean gazed back.
 Out past the dock, a ship that wasn't there before shimmered into view. 
 
 Points of light grew into a skeletal frame of composite metal; two large masts vertically bisected a ragged hull, looking more like two shark tails than anything resembling a functional support structure. The entire ship, bow to stern, floated a precarious three meters in the air, only just cresting the harsh waves beneath. On its starboard side, peeling white paint signalled the vessel's name:
+
 @@ @@
+
 = **[[size 1.3em]]//Daddy's Princess//[[/size]]**
+
 @@ @@
+
 A single metal plank connected to the dock. Three decrepit humanoids walked down to the shore.
 
 "Hey, this is a private beach. You can't be here!" Everwood jumped down from the steps and marched up to the mystery figures.
@@ -142,9 +153,13 @@ Shirley cleared his throat. "Perhaps we //can// help you." He eyed the mechanica
 "What's it to you?" Everwood wiped her mouth.
 
 "What d'you say to an upgrade?"
+
 @@ @@
+
 ----
+
 @@ @@
+
 "And that's how I got my hands on a magic arm."
 
 "Really? What's it do?"
@@ -172,6 +187,6 @@ Haruki skewered the crustacean to the table with her fork. "So, what else is new
 [[/div]]
 [[div style="border-bottom:1px solid #777;"]]
 [[/div]]
-[[>]]
+[[=]]
 [[module Rate]]
-[[/>]]
+[[/=]]
