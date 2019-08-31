@@ -1,0 +1,543 @@
+title:SCP-4319
+[[module CSS]]
+/*
+    Powered on 2019/07/04 18:46:21
+    [2019 Wikidot Theme]
+    Created by DianaBerry
+    CC BY-SA 3.0
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+
+:root {
+    --themeColor: #ffc9ea;
+    --accentColor: #ff599e;
+    counter-reset counter 0;
+}
+
+/* #6b001e  */
+a.collapsible-block-link {
+    color: #8b008b;
+}
+
+body {
+    background: #ffe3ee;
+    color: #a10050;
+    font-family: 'Courgette', cursive;
+}
+a,a:visited {
+    color: #ffa8c5;
+}
+h1,h2,h3,h4,h5,h6 {
+    color: #ff78a5;
+    font-family: 'Courgette', cursive;
+}
+blockquote {
+    border: 1px dashed #ffadeb;
+    background: #f5ebf3
+}
+div#container-wrap {
+    background: url(http://kaktuskontainer.wdfiles.com/local--files/sigma%3Atheme-test-page/header.png) top left repeat-x;
+}
+div#header {
+    background: url(http://kaktuskontainer.wdfiles.com/local--files/sigma%3Atheme-test-page/heart.png) no-repeat;
+    background-position: 0em 1em;
+    background-size: 150px
+}
+div#header h1 a span {
+    font-size: 0px;
+}
+div#header h1 a:before {
+    content: "Just Girly Things";
+    font-family: 'Courgette', cursive;
+    color: #ff5ca5;
+    text-shadow: #eb4991;
+}
+div#header h2 span {
+    font-size:0px;
+    padding: 4px;
+}
+div#header h2:after {
+    content: "By girls, for girls";
+    font-family: 'Courgette', cursive;
+    font-weight: bold;
+    color: #ff5ca5;
+    padding: 25px 0;
+    text-shadow: #eb4991;
+    white-space: pre;
+    margin: 4;
+}
+div#side-bar div.side-block {
+    background: #ff69ab;
+    border: 1-x solid #fff0f6;
+    box-shadow: #f0bdd1;
+    border-radius: 5px;
+}
+div#side-bar div.side-block div.heading,
+div#side-bar div.collapsible-block-unfolded-link,
+div#side-bar div.collapsible-block-unfolded-link div.collapsible-block-link {
+    color: #b50048;
+    border-color: #b50048;
+}
+div.scpnet-interwiki-wrapper {
+    filter: hue-rotate(355deg) saturate(55%);
+}
+div.yui-navset div.yui-content {
+    background: #ffdbf3;
+}
+div.yui-navset ul.yui-nav a,
+div.yui-navset div.yui-navset-top ul.yui-nav a {
+    background: #ffdbf3;
+    color: #ff5ebf;
+    border: solid #ffffff;
+}
+div.yui-navset ul.yui-nav a:hover,
+div.yui-navset ul.yui-nav a:focus {
+    background: #ff99ac;
+    color: #ff5ebf;
+}
+div.yui-navset ul.yui-nav .selected a,
+div.yui-navset ul.yui-nav .selected a:focus,
+div.yui-navset ul.yui-nav .selected a:hover {
+    background: #ffdbf3;
+    color: #ff5ebf;
+    border: solid #ffffff;
+}
+div.page-rate-widget-box,
+div.page-rate-widget-box span.rate-points,
+div.page-rate-widget-box span.cancel {
+    background-color: #ffa3c7!important;
+    border: solid #ffa3c7 1px!important;
+}
+div.page-rate-widget-box span.rateup,
+div.page-rate-widget-box span.ratedown {
+    border: solid #ffa3c7!important;
+    border-width: 1px 0!important;
+}
+div.page-rate-widget-box span.rate-points,
+div.page-rate-widget-box span.cancel a,
+div.page-rate-widget-box span.cancel a:hover {
+    color: #ff69a0;
+}
+div.page-rate-widget-box span.rateup,
+div.page-rate-widget-box span.ratedown {
+    background-color: #ffa3eb!important;
+}
+div.page-rate-widget-box span.rateup a,
+div.page-rate-widget-box span.ratedown a {
+    color: #ff69a0!important;
+}
+div.page-rate-widget-box span.cancel a:hover,
+div.page-rate-widget-box span.rateup a:hover,
+div.page-rate-widget-box span.ratedown a:hover {
+    background: transparent!important;
+    color: transparent!important;
+}
+div.open-menu a {
+    color: #ff85b5!important;
+    border-color: #ff85b5!important;
+}
+#side-bar h2 {
+    color: #ffa3eb;
+}
+#search-top-box-input {
+    background-color: #ffa3eb;
+    border: dotted 1px #ff69ab;
+}
+#search-top-box input.empty {
+    color: ##ff69ab;
+}
+#search-top-box-input:hover, #search-top-box-input:focus {
+    background-color: #ffa3eb;
+    border: dotted 1px #ff69ab;
+/*Nico was here. */
+}
+#search-top-box-form input[type="submit"]:hover, #search-top-box-form input[type="submit"]:focus {
+    background: #ffa3eb !important;
+    border: dotted 1px #ff69ab;
+    color: #fff;
+}
+#search-top-box-form input[type="submit"], #search-top-box-form input[type="submit"] {
+    background: #ffa3eb !important;
+    border: dotted 1px #ff69ab;
+    color: #fff;
+}
+[[/module]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[module CSS]]
+
+div.terminal{
+    border: 1px solid pink;
+    border: solid 3px #ff94b4;
+    border-radius: 16px;
+    background-color: #ffb0d0;
+/* black shadow at the top of the terminal */
+    background-image: 
+        radial-gradient(ellipse 1000% 100% at 50% 90%, transparent, #ffedf5);
+    background-position: center;
+    display: block;
+/* shadow around the terminal */
+    box-shadow: inset 0 0 10em 1em rgba(252,217,231,0.96);
+/* prevents scanline from forming a scrollwheel */
+    overflow:hidden;
+}
+div.terminal blockquote {
+    background-color: #fff2f7;
+    border: double 3px #ff94b4
+}
+div.scanline{
+    margin-top: -40%;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    pointer-events: none;
+/* Safari 4.0 - 8.0 */
+    -webkit-animation: scan 12s linear 0s infinite; /* You may need to change this. If the bar goes by too quickly, increase 5s. */
+    animation: scan 12s linear 0s infinite; /* Same as above */
+    background: linear-gradient(to bottom, rgba(56, 112, 82,0), rgba(56, 112, 82,0.1)) !important;
+}
+
+div.text{
+    color: rgba(148,0,108,1);
+    padding-left: 2em;
+    padding-top: 40%;
+    font-family: monospace;
+    font-size: 1.2em;
+    }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes scan{
+    from{ transform: translateY(-10%);}
+    to{  transform: translateY(5000%);} /* You may need to change this depending on the length of your terminal. If the scanline stops halfway, increase the second number.*/
+}
+
+@keyframes scan{
+    from{ transform: translateY(-10%);}
+    to{  transform: translateY(5000%);} /* Same as above.*/
+}
+
+div.text a {
+    color: #ff6ba3;
+    text-decoration: none;
+    background: transparent;
+}
+div.text a.newpage {
+    color: #ff6392;
+    text-decoration: none;
+    background: transparent;
+}
+div.text a:hover {
+    color: #131;
+    text-decoration: underline;
+    background-color: #ff6392;
+    padding: 1px;
+}
+div.text a:hover::before{
+content: "> ";
+}
+[[/module]]
+
+[[div class="terminal"]]
+[[div class="scanline"]]
+[[/div]]
+[[div class="text"]]
+[[=]]
+
+[[size 150%]][[collapsible show="About Us ♡(Ξ◕◡◕Ξ)♡" hide="Item #: SCP-4319"]][[/size]]
+[[/collapsible]]
+[[collapsible show="By Jess Landons" hide="Object Class: Keter
+"]]
+[[/collapsible]]
+
+@@ @@
+@@ @@
+
+Just Girly Things is a blog site run by girls, for girls! You can find it just by searching for our url,
+www.justgirlythingsblogsite.si.
+
+> [[collapsible show="♡♡♡♡♡♡♡♡♡♡" hide="♡♡♡♡♡♡♡♡♡♡"]]
+> ##black|**Special Containment Procedures:** Foundation web crawlers have been set up to search for any mention of the IP address in which SCP-4319 functions. Any mention is then to be immediately blocked from any public web servers. This block is to be re-instated once every seven days after it is forcefully removed by SCP-4319.##
+> [[/collapsible]]
+@@ @@
+
+So, what does our site do? We've had a lot of you ask us for a proper introduction post, so I thought I would take the initiative! One of the first things to know is that once you visit our site, all digital interfaces including home screens and lock screens of phones will match up to the JGT theme! Just a little treat from us to help remind you of your girly nature! We also can also give you new clothes to make you the best you can be as a girl! You don't have to worry about shipping and all that jazz, it appears right on your body and in your closet! Isn't that nice of us? I think it is! All the cool features and stuff will only go to the girl who was the one to pull up our site on their device. So friends, get going on your own to experience these cool features too! :3
+> [[collapsible show="♡♡♡♡♡♡♡♡♡♡" hide="♡♡♡♡♡♡♡♡♡♡"]]
+> ##black|**Description:** SCP-4319 is an internet blog site under the name "Just Girly Things." The anomaly of SCP-XXXX manifests in its ability to## [[size x-large]]Tooootally help out girls big time! Trying to stop this boringness but we do what we can~[[/size]]
+> [[/collapsible]]
+
+@@ @@
+
+We like to be a place with all things girly because well, sometimes girls have trouble understanding their place as a girl. Like Ella's sister started dressing like a boy and insisted she call her ‘Landon' or something. What Cora really needed is a reminder of how important girlhood really is! That's why Ella helped her see it again! I think that was really sweet of her. Well, sweet of KeeLee too because she helped Ella which helped Ella help Cora! Anyways, Cora's boring boyish room turned all pink with dresses and makeup and nail polish and stuff! Like I ALWAYS turn everything around me pink. Some girls don’t think they’re boys, but are just super into sports and stuff and still think they're true girls.＼＼\\٩(๑`^´๑)۶//／／Isn't that just dumb? 
+
+Like my old best friend liked soccer and watching sports ball or whatever. Like come on girl. GIRLS AREN’T SUPPOSED TO HAVE SHORT HAIR CORA AND MOLLIE! Ahem. I mean it's not like she got to super often since we met anways, but come on! Maybe being treated like a human is something she could have focused on. ANYWAYS. Now, she's a total beauty queen! She loved the site that KeeLee made! I mean how could you not?!
+
+But I mean I guess I get not being super girly? I was never into girly things much as a kid because that stuff just wasn't accesible for me. I mean in a way I did do one thing considered super girly, but I don't think I need to talk about it here lol. KeeLee first created JGT in 2006 in the form of a magazine, which is the form I first found out about it in. I was given the magazine one day becuase apparently I 'needed' to 'learn the values' or something. But I mean it CHANGED. MY. LIFE. I would tear out the pages and use them to decorate the bland gray walls I was always around. But then, everything just became pink instead!
+
+JGT helped my realize my place in the world. I needed to stop pittying myself for my situation. I'm a girly and I'm STRONGGGGGG. It's honestly so fucking dumb if you keep pittying yourself girls. If you're getting hurt, it's because YOU did something wrong. You're proabably not being hurt unjustfully. Or well, you aren't! Just start making heart shaped cookies, start doing your makeup girls! That's what you're for boo! ANYWaaysss.
+
+JGT became a blog site in 2010, and has been influencing girls EVERYWHERE every single day! Our posts have changed lives! Just like KeeLee's magazine changed mine! I don't see grey stone walls anymore, they're pink stone walls now! I have my wonderful pets Mandy the beetle and Cutie the cat! I'm allowed to like bugs BY THE WAY. Not every girl is, but KeeLee said I can. HAHA anyways ꐑ(*ꐌ◡ꐌꐐ*)࿐࿔࿓
+
+
+
+> [[collapsible show="♡♡♡♡♡♡♡♡♡♡" hide="♡♡♡♡♡♡♡♡♡♡"]]
+> ##black|The Foundation first became aware of SCP-XXXX after Researcher █████ had accessed the Site using foundation technology. Researcher  █████  spontaneously began altering baseline reality, causing all objects in her immediate vicinity to take on traditionally "feminine" qualities, such as heart-shaped pillows, pink hues, floral wall decor, jewlery, make-up brushes, frilly curtains, etc. Researcher █████ attacked Dr. Leena claiming she 'was a fake woman.' A security breach took place soon after, causing the evacuation of site ██. Researcher █████ is now quarantined at Site ██.##
+>  [[/collapsible]]
+
+@@ @@
+@@ @@ 
+@@ @@
+@@ @@
+@@ @@
+[[/=]]
+[[/div]]
+[[/div]]
+
+@@ @@
+@@ @@
+
+@@ @@
+[[div class="terminal"]]
+[[div class="scanline"]]
+[[/div]]
+[[div class="text"]]
+[[=]]
+Knowing things about our viewers/readers is really just part of us. I mean have you ever read a teen magazine made for girls and they had quizzes that CLAIMED they knew you? Claimed their quizes could really help you and your future? Well we're the version of that that's A digital and B TOTALLY FOR REAL! None of that fake bullshit. We really do help our fellow girls! So.....
+
+
+@@ @@
+@@ @@
+[[size xx-large]]Quiz!!![[/size]]
+
+> Jot down your answers on a sheet of paper and tally them up to see your results at the end!
+> 
+
+[[div style="border:solid 1px #eb9bbb; background:#fff0f6; padding:5px; margin-bottom: 10px;"]]
+[[=]]
+++++ 1.) What would be your ideal day?
+[[/=]]
+[[/div]]
+[[div style="background: pink; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+[[div style="background: white; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+A) Finding your most treasured lost item at a thrift shop
+
+[[/div]]
+[[/div]]
+
+[[div style="background: pink; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+[[div style="background: white; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+B) Redoing one of your worst moments and fixing it
+
+[[/div]]
+[[/div]]
+
+[[div style="background: pink; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+[[div style="background: white; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+C) Getting revenge on who hurt you
+
+[[/div]]
+[[/div]]
+
+[[div style="background: pink; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+[[div style="background: white; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+D) Seeing someone you can never see again
+
+[[/div]]
+[[/div]]
+
+@@ @@
+@@ @@
+[[div style="border:solid 1px #eb9bbb; background:#fff0f6; padding:5px; margin-bottom: 10px;"]]
+[[=]]
+++++ 2.) What do you look for in a person?
+[[/=]]
+[[/div]]
+[[div style="background: pink; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+[[div style="background: white; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+A) Is just as weird as you
+
+[[/div]]
+[[/div]]
+
+[[div style="background: pink; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+[[div style="background: white; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+B) Knows how to use a gun
+
+[[/div]]
+[[/div]]
+
+[[div style="background: pink; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+[[div style="background: white; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+C) Has the same desire to fix the past
+
+[[/div]]
+[[/div]]
+
+[[div style="background: pink; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+[[div style="background: white; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+D) Is someone who you lost
+
+[[/div]]
+[[/div]]
+
+@@ @@
+@@ @@
+[[div style="border:solid 1px #eb9bbb; background:#fff0f6; padding:5px; margin-bottom: 10px;"]]
+[[=]]
+++++ 3.) If you could have any super power, what would it be?
+[[/=]]
+[[/div]]
+[[div style="background: pink; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+[[div style="background: white; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+A) The ability to read minds
+
+[[/div]]
+[[/div]]
+
+[[div style="background: pink; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+[[div style="background: white; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+B) The ability to reverse time
+
+[[/div]]
+[[/div]]
+
+[[div style="background: pink; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+[[div style="background: white; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+C) The ability to communicate with past versions of yourself
+
+[[/div]]
+[[/div]]
+
+[[div style="background: pink; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+[[div style="background: white; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+D) The ability to talk to anyone no matter where they are in the universe
+
+[[/div]]
+[[/div]]
+
+@@ @@
+@@ @@
+[[div style="border:solid 1px #eb9bbb; background:#fff0f6; padding:5px; margin-bottom: 10px;"]]
+[[=]]
+++++ 4.) What do you wish for your future?
+[[/=]]
+[[/div]]
+[[div style="background: pink; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+[[div style="background: white; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+A) To become successful in achieving your greatest wish
+
+[[/div]]
+[[/div]]
+
+[[div style="background: pink; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+[[div style="background: white; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+B) To guide others in their life journey 
+
+[[/div]]
+[[/div]]
+
+[[div style="background: pink; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+[[div style="background: white; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+C) To protect people from the dangers of themselves 
+
+[[/div]]
+[[/div]]
+
+[[div style="background: pink; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+[[div style="background: white; padding: 1px 15px; border: solid 3px white; margin: 10px; border-radius: 30px 15px;"]]
+
+D) To become a warning
+
+[[/div]]
+[[/div]]
+
+@@ @@
+@@ @@
+
+[[div style="border:solid 1px #eb9bbb; background:#fff0f6; padding:5px; margin-bottom: 10px;"]]
+[[=]]
+++++ RESULTS!!!
+
+ **If you picked mostly A...**
+
+Your main personality trait is determination! You're a go getter! You aren't afraid of danger, and you know how to protect yourself.
+
+@@ @@
+@@ @@ 
+
+**If you picked mostly B...**
+
+Your main personality trait is generosity! You want to help others, no matter what that means! A bit of invasion may be necessary, but in the end, the lives of those around you will be so much better!
+
+@@ @@
+@@ @@
+
+**If you picked mostly C...**
+
+Redo yourself. Seriously? All you do is live on guilt. What's even the point?
+
+@@ @@
+@@ @@
+
+**If you picked mostly D...**
+
+You miss them that much? You're pathetic. You should have been better. God.
+
+[[/=]]
+[[/div]]
+
+> 
+> [[collapsible show="I hope that was fun! We've got TONS more quizzes over on our
+>  site! You should check it out! :3" hide="I hope I'm okay. I think I am."]]
+> [[/collapsible]]
+[[/=]]
+
+[[/div]]
+[[/div]]
+@@ @@
+[[div style="border:solid 1px #999999; background:#ffe8f2; padding:5px; margin-bottom: 10px;"]]
+[[module ListUsers users="."]]
+Hello there! Thank you for checking us out, %%title%%! Lovely to see you here! A place where you're trapped in what feels like eternal darkness and hurt is a bit close to home for Jess. She must have got carried away in that little quiz of hers, and her introduction. I think this site is infecting her, how //clumsy// of me. I think my poor Jess was losing herself!  But don't worry, she'll be okay soon! I’ll make sure of it. In the meantime, don't forget to check out our site! Again! Your viewership is really appreciated to us, %%title%%. Love you!
+
+-KeeLee ♡
+[[/module]]
+[[/div]]
+
+
+@@ @@ 
+@@ @@
+@@ @@
