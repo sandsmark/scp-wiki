@@ -22,7 +22,7 @@ This is an SPC Format for Day 2 of the **144-Hour Jam Contest**. The theme was "
 #header h2 span::before { content: "Search, Punch, Conquer" !important; }
 
 /* INFO BOX */
-sup {
+sup{
     vertical-align: top;
     position: relative;
     top: -0.5em;
@@ -41,7 +41,7 @@ body{
     color: #FFF;
 }
 .info-container .collapsible-block-link,
-.info-container:hover .collapsible-block-link {
+.info-container:hover .collapsible-block-link{
     line-height: 1.6em;
 }
 .collapsible-block-link{
@@ -84,8 +84,13 @@ body{
     float: left;
     margin: 5px;
 }
-.footnotes-footer {
+.footnotes-footer{
     display: none;
+}
+hr{
+     margin: 1em 0;
+     padding: 0;
+     border: 0;
 }
 [[/module]]
 
@@ -213,6 +218,6 @@ That's right, watch Centre SmackDown-993, LIVE, at the __Dr. Mike Tyson Colosseu
 [[/div]]
 [[div style="border-bottom: 1px solid #777;"]]
 [[/div]]
-[[>]]
+[[=]]
 [[module Rate]]
-[[/>]]
+[[/=]]
