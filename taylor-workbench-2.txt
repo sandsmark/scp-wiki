@@ -1,12 +1,12 @@
 title:Taylor Workbench 2
 + SCP articles at or above +30 from the last 30 days
 
-[[module ListPages separate="no" limit="5" tags="+scp" created_at="last 30 days" order="random" prependLine="||~ Title||~ Rating||~ Created||" rating=">=30"]]
-||%%title_linked%%||%%rating%%||%%created_at%%||
+[[module ListPages separate="no" limit="5" tags="+scp" created_at="last 30 days" order="random" prependLine="||~ Title||~ Rating||~ Created||~ Author||" rating=">=30"]]
+||%%title_linked%%||%%rating%%||%%created_at%%||%%created_by%%||
 [[/module]]
 
 + Tales at or above +15 from the last 30 days
 
-[[module ListPages separate="no" limit="5" tags="+tale" created_at="last 30 days" order="random" prependLine="||~ Title||~ Rating||~ Created||" rating=">=15"]]
-||%%title_linked%%||%%rating%%||%%created_at%%||
+[[module ListPages separate="no" limit="5" tags="+tale" created_at="last 30 days" order="random" prependLine="||~ Title||~ Rating||~ Created||~ Author||" rating=">=15"]]
+||%%title_linked%%||%%rating%%||%%created_at%%||%%created_by%%||
 [[/module]]
