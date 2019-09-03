@@ -15,11 +15,22 @@ title:Anomaly Classification System (ACS) Guide
     text-align: center;
 }
 div.iframe {
-    overflow: scroll;
     display: flex;
     width: 100vw;
     height: 100vh;	
 }
+
+/* Safari 7.1+ */
+
+_::-webkit-full-page-media, _:future, :root .safari_only {
+    overflow: scroll;
+}
+
+@media not all and (min-resolution:.001dpcm) { @media {
+    .safari_only { 
+        overflow: scroll; 
+    }
+}}
 
 div.iframe iframe {
     overflow: scroll;
@@ -379,7 +390,7 @@ h1, h2 {
 
 [[/div]]
 
-[[div_ class="iframe"]]
+[[div_ class="iframe safari_only"]]
 [[iframe http://elusionillusion.com/scp/acs-database/acs-database.html frameborder="0" scrolling="yes"]]
 [[/div]]
 
