@@ -14,16 +14,114 @@ title:Anomaly Classification System (ACS) Guide
 #page-title {
     text-align: center;
 }
-div.iframe {
-    display: flex;
-    width: 100vw;
-    height: 100vh;	
+
+/* 1. Beautifiers (optional) */
+
+iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
 }
 
-div.iframe iframe {
-    overflow: scroll;
-    width: 100vw;
-    height: 100vh;
+.simple-container {
+    width: 50vw;
+    height: 50vh;
+    padding: 1em;
+}
+
+/* 2. Resolving iOS iframe rendering issue */
+
+/* 2.1. Sizing reorganization (obligatory) */
+
+.popover {
+    /* To control popover size by .popover-body instead of .popover */
+    max-width: 100% !important;
+}
+
+.popover-body {
+    box-sizing: border-box;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.iframe-container,
+.iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+}
+
+.fixed iframe {
+    /* This only fits iframe inside iframe-container but prevents scrolling */
+    width: 0;
+    height: 0;
+    
+    min-width: 100%;
+    min-height: 100%;    
+}
+
+.popover-body {
+    width: 640px; height: 360px;
+}
+
+/* 2.2. RWD Resizings (optional) */
+
+@media only screen and (max-width: 568px)
+{
+    .rwd .popover-body {
+        width: 320px; height: 180px;
+    }    
+}
+
+@media only screen and (min-width: 569px) and (max-width: 965px)
+{
+    .rwd .popover-body {
+        width: 480px; height: 270px;
+    }    
+}
+
+@media only screen and (min-width: 968px) and (max-width: 1023px)
+{
+    .rwd .popover-body {
+        width: 640px; height: 360px;
+    }    
+}
+
+/* 2.3. Resolving iOS iframe scrolling issue (obligatory) */
+
+/*
+    Due to iOS WebKit bug an iframe content cannot be scrolled, because WebKit renders entire iframe content:
+    https://bugs.webkit.org/show_bug.cgi?id=155198
+    (still not resolved on iOS11)
+    The workaround is to scroll an div container content with full iframe rendered inside.
+*/
+
+.scroll {
+    overflow: scroll !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+/* 2.4. Resolving iframe and container double scrollbars on desktop browsers (rather obligatory) */
+
+.no-scrollbar {
+    position: relative;
+}
+
+.no-scrollbar iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.no-scrollbar {
+    /* Hide scrollbars in IE Edge */
+    /* Autohiding is needed inside iframe document */
+    /*-ms-overflow-style: -ms-autohiding-scrollbar;*/
+    /* In the parent iframe container we don't want any scrollbars */
+    -ms-overflow-style: none;
 }
 
  .foo {
@@ -413,8 +511,10 @@ h1, h2 {
 
 [[/div]]
 
-[[div_ class="iframe foo"]]
+[[div_ class="popover-body"]]
+[[div_ class="iframe-container scroll no-scrollbar"]]
 [[iframe http://elusionillusion.com/scp/acs-database/acs-database.html frameborder="0" scrolling="yes"]]
+[[/div]]
 [[/div]]
 
 [[div class="step_container"]]
