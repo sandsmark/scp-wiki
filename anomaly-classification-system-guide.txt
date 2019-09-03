@@ -20,22 +20,45 @@ div.iframe {
     height: 100vh;	
 }
 
-/* Safari 7.1+ */
-
-_::-webkit-full-page-media, _:future, :root .safari_only {
-    overflow: scroll;
-}
-
-@media not all and (min-resolution:.001dpcm) { @media {
-    .safari_only { 
-        overflow: scroll; 
-    }
-}}
-
 div.iframe iframe {
     overflow: scroll;
     width: 100vw;
     height: 100vh;
+}
+
+ .foo {
+    height: 100vh;
+    width: 100vw;
+    background: url(cover.jpg) center center / cover no-repeat;
+ }
+ 
+
+/** 
+ * iPad with portrait orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
+  .foo {
+    height: 1024px;
+  }
+}
+
+/** 
+ * iPad with landscape orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
+  .foo {
+    height: 768px;
+  }
+}
+
+/**
+ * iPhone 5
+ * You can also target devices with aspect ratio.
+ */
+@media screen and (device-aspect-ratio: 40/71) {
+  .foo {
+    height: 500px;
+  }
 }
 
 .color-five {
@@ -390,7 +413,7 @@ h1, h2 {
 
 [[/div]]
 
-[[div_ class="iframe safari_only"]]
+[[div_ class="iframe foo"]]
 [[iframe http://elusionillusion.com/scp/acs-database/acs-database.html frameborder="0" scrolling="yes"]]
 [[/div]]
 
