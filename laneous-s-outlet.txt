@@ -115,15 +115,22 @@ How much attention this is getting is nutty (ha) to me, it got its fair share of
 [[/tab]]
 
 [[tab Stats]]
-= **Articles**
+= **SCPs**
 
-[[module ListPages order="rating desc" separate="false" limit="600" perPage="100" tags="scp tale"
+[[module ListPages order="rating desc" separate="false" limit="600" perPage="100" tags="scp"
 created_by="Laneous" prependLine="||~ Page ||~ Rating ||~ Comments ||~ Date Created ||"]]
 || %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
 [[/module]]
 
 [[module ListPages order="rating desc" separate="false" limit="600" perPage="100" tags="scp aquatic meta"
 created_by="The Trashman" prependLine="||~ Page ||~ Rating ||~ Comments ||~ Date Created ||"]]
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
+[[/module]]
+------------
+= **Tales**
+
+[[module ListPages order="rating desc" separate="false" limit="600" perPage="100" tags="tale"
+created_by="Laneous" prependLine="||~ Page ||~ Rating ||~ Comments ||~ Date Created ||"]]
 || %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
 [[/module]]
 [[module ListPages order="rating desc" separate="false" name="cuteness-*" limit="600" perPage="100" tags="tale co-authored"
