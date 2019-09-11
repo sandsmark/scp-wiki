@@ -1,8 +1,31 @@
 title:SCP-3272
 [[include component:black-highlighter-theme-dev]]
-[[>]]
-[[module rate]]
-[[/>]]
+[[module CSS]]
+:root{
+--cutColour: #fafafa;
+--barColour: #590505;
+}
+
+.info-container .collapsible-block-folded a{
+color: #FFF;}
+.info-container .collapsible-block-unfolded-link a{
+color: #FFF;}
+
+.translation_block{
+display:none;}
+[[/module]]
+[[include info:start]]
+**SCP-3272:** It's Raining Men, HALLELUJAH!
+**Author:** [[*user TheMightyMcB]]
+**More By This Author:**
+* http://www.scp-wiki.net/themightymcb-s-author-page
+**Special thanks to:**
+[[*user MaliceAforethought]], [[*user Crashington]], [[*user Gee0765]], [[*user T Rutherford]], [[*user Veiedhimaedhr]], [[*user Ihp]], [[*user Jekeled]], [[*user Swaghetti]], [[*user Rattles]], and [[*user Roget]].
+[[collapsible show="+ Image Attribution" hide="- Image Attribution"]]
+https://commons.wikimedia.org/wiki/File:Shooting_Star.jpg (CC-BY-SA 4.0)
+https://commons.m.wikimedia.org/wiki/Category:Portable_toilets_in_the_United_States#/media/File%3AICanalFranceroadPortcranes5June06.jpg (CC-BY-SA 3.0)
+[[/collapsible]]
+[[include info:end]]
 
 [[module ListPages category="fragment" parent="." order="created_at" limit="1" offset="@URL|0"]]
 %%content%%
