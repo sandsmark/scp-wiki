@@ -459,12 +459,13 @@ Header art by [[user Athosnetwork]]
 
 [[module css]]
 body {
-    transform:rotate(0.5deg);
-    transform:skewY(5deg);
+    transform:rotate(1deg);
+    transform:skewY(7deg);
+    letter-spacing: -1px;
 }
 body:hover {
-    transform:rotate(-0.5deg);
-    transform:skewY(-5deg);
+    transform:rotate(-1deg);
+    transform:skewY(-7deg);
 }
 @keyframes blinker {
   0% {opacity: 1}
