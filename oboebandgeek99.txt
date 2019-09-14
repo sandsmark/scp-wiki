@@ -339,3 +339,144 @@ Favorite fun fact: I actually love all of the usernames, wander-nameless is a su
 |player-color=rgb(215, 215, 215)
 |progress-color=rgb(80, 0, 2)
 ]]
+
+[[=]]
+++ [[span class="hover"]][[span]][[size 60%]]This is by no means a comprehensive list of author friends, these are just a handful of people I could think of, and there are definitely people that I've missed[[/size]][[/span]]Rainbow Wall of Author friends[[/span]]
+[[/=]]
+
+[[module css]]
+.container-genius {
+    background-color: rgb(var(--swatch-primary), 0.05);
+    padding: 0rem 0em 0em 0em;
+    margin-top: 0rem;
+    border: 0.0625rem #CCCCCC solid;
+    border: 0.0625rem rgba(var(--swatch-border-color),0.15) solid;
+    position: relative;
+}
+
+.genius_block {
+    display: inline;
+    font-family: var(--body-font);
+}
+
+.genius_content,
+.genius_content * {
+    display: block;
+    position: absolute;
+    right: -14rem;
+    width: 10rem;
+    line-height: 1.2;
+    font-family: var(--body-font);
+    padding: 0.5rem 0.25rem 0.5rem 0.5rem;
+    text-shadow: initial;
+    filter: initial;
+    color: rgb(var(--black-monochrome));
+    transition:
+     opacity 600ms cubic-bezier(0.4, 0.0, 0.2, 1),
+     transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    pointer-events: none;
+    font-weight: normal;
+    font-size: calc(var(--base-font-size) * 0.9);
+    text-indent: 0.75rem;
+    letter-spacing: 0.0125rem;
+    z-index: 20;
+}
+
+.genius_content::before {
+    background-color: rgb(var(--swatch-primary));
+    bottom: 0;
+    content: " ";
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0.5em;
+    width: 0.125rem;
+ }
+
+.genius_content::after {
+    width: 0;
+    height: 0;
+    border-top: 0.625rem solid transparent;
+    border-bottom: 0.625rem solid transparent;
+    border-right:0.625rem solid rgb(var(--swatch-primary));
+    content: '';
+    display: block;
+    left: -0.625rem;
+    bottom: calc(50% - 1em);
+    position: absolute;
+ }
+
+.genius_highlight {
+    cursor: pointer;
+    background-color: rgb(var(--very-light-gray-monochrome));
+    box-shadow:
+    .01em 0 0 rgb(var(--very-light-gray-monochrome)),
+    -.01em 0 0 rgb(var(--very-light-gray-monochrome));
+    display: inline;
+}
+
+.genius_highlight:hover {
+    background-color: rgb(224,191,192);
+    box-shadow:
+    .01em 0 0 rgb(224,191,192),
+    -.01em 0 0 rgb(224,191,192);
+}
+
+.genius_highlight + span {
+    transform: translateX(-25%) translateY(calc((1% + 1em) * -1));
+    opacity: 0;
+}
+
+.genius_highlight:hover + span {
+    transform: translateX(0) translateY(calc((1% + 1em) * -1));
+    opacity: 1;
+}
+
+@media (max-width: 1200px) {
+    .genius_content {
+          position: fixed;
+          bottom: 1em;
+          left: 12.5%;
+          background-color: rgba(var(--white-monochrome));
+          width: 75%;
+          max-width: 75vw;
+    }
+    .genius_content::after {
+          border-left: 0.625rem solid transparent;;
+          border-right: 0.625rem solid transparent;;
+          border-bottom: 0.625rem solid rgb(var(--swatch-primary));
+          top: -1.125rem;
+          left: 50%;
+          content: '';
+    }
+    .genius_content::before {
+          top: 0;
+          width: 100%;
+          height: 0.125rem;
+    }
+}
+[[/module]]
+
+[[div class="container-genius"]]
+[[a href="*http://www.scp-wiki.net/absentmindednihilist-s-personnel-file"]][[span class="genius_block one"]][[span class="genius_highlight"]][[span style="max-width: 300px; border-radius: 15px; padding: 4px 8px; display: inline-block; text-align: left; float:left; background-color: #a30000; color: #fff;"]][[image http://kaktuskontainer.wdfiles.com/local--files/oboebandgeek99-v/Text%20thumbnail%20Niles.png]][[/span]][[/span]][[span class="genius_content"]]Niles is an amazing writer, with a strong sense of series direction, horror, sadness, and furry subtext. Suggested reading: SCP-2952[[/span]][[/span]][[/a]] [[a href="*http://www.scp-wiki.net/captain-kirby-s-personal-file"]][[span class="genius_block two"]][[span class="genius_highlight"]][[span style="max-width: 300px; border-radius: 15px; padding: 4px 8px; display: inline-block; text-align: left; float:left; background-color: #ba5c00; color: #fff;"]][[image http://kaktuskontainer.wdfiles.com/local--files/oboebandgeek99-v/Text%20thumbnail%20Kirby.png]][[/span]][[/span]][[span class="genius_content"]]Kirby has the uncanny to tell a story in the exact amount of words needed, no longer and no shorter. Suggested reading: Captain Kirby's proposal[[/span]][[/span]][[/a]] [[a href="*http://www.scp-wiki.net/poi-3181-198-file"]][[span class="genius_block three"]][[span class="genius_highlight"]][[span style="max-width: 300px; border-radius: 15px; padding: 4px 8px; display: inline-block; text-align: left; float:left; background-color: #a3a300; color: #fff;"]][[image http://kaktuskontainer.wdfiles.com/local--files/oboebandgeek99-v/Text%20thumbnail%20Crashington.png]][[/span]][[/span]][[span class="genius_content"]]Friend, critter, German translator, beard haver, writer, what can't this man do? Suggested reading: SCP-4534[[/span]][[/span]][[/a]] [[a href="*http://www.scp-wiki.net/djkaktus"]][[span class="genius_block four"]][[span class="genius_highlight"]][[span style="max-width: 300px; border-radius: 15px; padding: 4px 8px; display: inline-block; text-align: left; float:left; background-color: #00a300; color: #fff;"]][[image http://kaktuskontainer.wdfiles.com/local--files/oboebandgeek99-v/Text%20thumbnail%20djkaktus.png]][[/span]][[/span]][[span class="genius_content"]]Needs no introduction but gets one anyway, he's mainly here when I recorded You and Me he raised my recording up, promoting it as much as the original tale. A supportive creator. Suggested reading: Track 4: You and Me (duh)[[/span]][[/span]][[/a]] [[a href="*http://www.scp-wiki.net/ellie3-gimmick-free"]][[span class="genius_block five"]][[span class="genius_highlight"]][[span style="max-width: 300px; border-radius: 15px; padding: 4px 8px; display: inline-block; text-align: left; float:left; background-color: #00a3a3; color: #fff;"]][[image http://kaktuskontainer.wdfiles.com/local--files/oboebandgeek99-v/Text%20thumbnail%20Ellie3.png]][[/span]][[/span]][[span class="genius_content"]]Ellie is an absolute joy to talk to, and her writing swings wildly between optimistic and down right depressing in the best way. Suggested reading: I hope this isn't just a dream[[/span]][[/span]][[/a]] [[a href="*http://www.scp-wiki.net/floppyphoenix"]][[span class="genius_block six"]][[span class="genius_highlight"]][[span style="max-width: 300px; border-radius: 15px; padding: 4px 8px; display: inline-block; text-align: left; float:left; background-color: #0000a3; color: #fff;"]][[image http://kaktuskontainer.wdfiles.com/local--files/oboebandgeek99-v/Text%20thumbnail%20Flops.png]][[/span]][[/span]][[span class="genius_content"]]Flops is the best kind of person to have in your corner: supportive, good humored, sociable, and pushes you to be your best self (or at least your best writing). Suggested reading: Land of Honey[[/span]][[/span]][[/a]]
+@@@@
+@@@@
+@@@@ 
+@@@@ 
+[[a href="*http://www.scp-wiki.net/http://www.scp-wiki.net/gee0765-s-author-page"]][[span class="genius_block seven"]][[span class="genius_highlight"]][[span style="max-width: 300px; border-radius: 15px; padding: 4px 8px; display: inline-block; text-align: left; float:left; background-color: #6000a3; color: #fff;"]][[image http://kaktuskontainer.wdfiles.com/local--files/oboebandgeek99-v/Text%20thumbnail%20Gee.png]][[/span]][[/span]][[span class="genius_content"]]While best known for his humorous writing, Gee's potential for drama makes him an upcoming author to watch. Suggested reading: SCP-4593[[/span]][[/span]][[/a]] [[a href="*http://www.scp-wiki.net/maliceaf-author-ght"]][[span class="genius_block eight"]][[span class="genius_highlight"]][[span style="max-width: 300px; border-radius: 15px; padding: 4px 8px; display: inline-block; text-align: left; float:left; background-color: #a30000; color: #fff;"]][[image http://kaktuskontainer.wdfiles.com/local--files/oboebandgeek99-v/Text%20thumbnail%20Malice.png]][[/span]][[/span]][[span class="genius_content"]]Malice is great a wide variety of genres, just go read some articles by them and you'll get it. Suggested reading: SCP-4774[[/span]][[/span]][[/a]] [[a href="*http://www.scp-wiki.net/manymeats"]][[span class="genius_block nine"]][[span class="genius_highlight"]][[span style="max-width: 300px; border-radius: 15px; padding: 4px 8px; display: inline-block; text-align: left; float:left; background-color: #ba5c00; color: #fff;"]][[image http://kaktuskontainer.wdfiles.com/local--files/oboebandgeek99-v/Text%20thumbnail%20Manymeats.png]][[/span]][[/span]][[span class="genius_content"]]Just chill to talk to, and has really unique ideas both for scips and tales. Suggested reading: Tuesday Has Been Cancelled[[/span]][[/span]][[/a]] [[a href="*http://www.scp-wiki.net/metaphysician"]][[span class="genius_block ten"]][[span class="genius_highlight"]][[span style="max-width: 300px; border-radius: 15px; padding: 4px 8px; display: inline-block; text-align: left; float:left; background-color: #a3a300; color: #fff;"]][[image http://kaktuskontainer.wdfiles.com/local--files/oboebandgeek99-v/Text%20thumbnail%20Metaphysician.png]][[/span]][[/span]][[span class="genius_content"]]Another awesome person to talk to, and real great at writing that dreadful horror that sticks with you. Suggested reading: SCP-2264[[/span]][[/span]][[/a]] [[a href="*http://www.scp-wiki.net/dr-mews-personnel-file"]][[span class="genius_block eleven"]][[span class="genius_highlight"]][[span style="max-width: 300px; border-radius: 15px; padding: 4px 8px; display: inline-block; text-align: left; float:left; background-color: #00a300; color: #fff;"]][[image http://kaktuskontainer.wdfiles.com/local--files/oboebandgeek99-v/Text%20thumbnail%20Mew.png]][[/span]][[/span]][[span class="genius_content"]]The queen of rewrites, Mew is always a delight to talk to and brainstorm with. Suggested reading: Her Final Thoughts[[/span]][[/span]][[/a]] [[a href="*http://www.scp-wiki.net/he-who-cannot-stop-stealing"]][[span class="genius_block twelve"]][[span class="genius_highlight"]][[span style="max-width: 300px; border-radius: 15px; padding: 4px 8px; display: inline-block; text-align: left; float:left; background-color: #00a3a3; color: #fff;"]][[image http://kaktuskontainer.wdfiles.com/local--files/oboebandgeek99-v/Text%20thumbnail%20Naepic.png]][[/span]][[/span]][[span class="genius_content"]]It seems he steals everything-- excluding the ideas for his fantastic articles. Suggested reading: The Mother Who Demands One's Toes (With McB) or SCP-4958[[/span]][[/span]][[/a]]
+@@@@
+@@@@
+@@@@ 
+@@@@ 
+[[a href="*http://www.scp-wiki.net/watts-maxwell-personnel-files"]][[span class="genius_block thirteen"]][[span class="genius_highlight"]][[span style="max-width: 300px; border-radius: 15px; padding: 4px 8px; display: inline-block; text-align: left; float:left; background-color: #0000a3; color: #fff;"]][[image http://kaktuskontainer.wdfiles.com/local--files/oboebandgeek99-v/Text%20thumbnail%20Nat.png]][[/span]][[/span]][[span class="genius_content"]]Nat such an underrated writer, every single article is a banger, and she's really approachable, genuinely embodying the spirit of the Foundation. Suggested reading: Sweeter Dreams Inc.[[/span]][[/span]][[/a]] [[a href="*http://www.scp-wiki.net/scp-4154"]][[span class="genius_block fourteen"]][[span class="genius_highlight"]][[span style="max-width: 300px; border-radius: 15px; padding: 4px 8px; display: inline-block; text-align: left; float:left; background-color: #6000a3; color: #fff;"]][[image http://kaktuskontainer.wdfiles.com/local--files/oboebandgeek99-v/Text%20thumbnail%20Rattles.png]][[/span]][[/span]][[span class="genius_content"]]No author page yet, but what Rattles has written is incredible. All around real supportive guy. Suggested reading: SCP-4154[[/span]][[/span]][[/a]] [[a href="*http://www.scp-wiki.net/rtme-author"]][[span class="genius_block fifteen"]][[span class="genius_highlight"]][[span style="max-width: 300px; border-radius: 15px; padding: 4px 8px; display: inline-block; text-align: left; float:left; background-color: #a30000; color: #fff;"]][[image http://kaktuskontainer.wdfiles.com/local--files/oboebandgeek99-v/Text%20thumbnail%20RTME.png]][[/span]][[/span]][[span class="genius_content"]]This bony-stony author is fun to talk to and good at writing too. Suggested reading: SCP-4826[[/span]][[/span]][[/a]] [[a href="*http://www.scp-wiki.net/stormbreath"]][[span class="genius_block sixteen"]][[span class="genius_highlight"]][[span style="max-width: 300px; border-radius: 15px; padding: 4px 8px; display: inline-block; text-align: left; float:left; background-color: #ba5c00; color: #fff;"]][[image http://kaktuskontainer.wdfiles.com/local--files/oboebandgeek99-v/Text%20thumbnail%20Stormbreath.png]][[/span]][[/span]][[span class="genius_content"]]A fair judge, a good critter, an excellent idea haver. Suggested reading: SCP-4547[[/span]][[/span]][[/a]] [[a href="*http://www.scp-wiki.net/caterer-tim-tanhony-hyne-s-personnel-file"]][[span class="genius_block seventeen"]][[span class="genius_highlight"]][[span style="max-width: 300px; border-radius: 15px; padding: 4px 8px; display: inline-block; text-align: left; float:left; background-color: #a3a300; color: #fff;"]][[image http://kaktuskontainer.wdfiles.com/local--files/oboebandgeek99-v/Text%20thumbnail%20Tanhony.png]][[/span]][[/span]][[span class="genius_content"]]Good ol' skips tahon. It's hard to be prolific, and it's hard to be good, somehow Tanhony is both. Suggested reading: SCP-4162[[/span]][[/span]][[/a]] [[a href="*http://www.scp-wiki.net/dr-taylor-itkin-s-personnel-file"]][[span class="genius_block eighteen"]][[span class="genius_highlight"]][[span style="max-width: 300px; border-radius: 15px; padding: 4px 8px; display: inline-block; text-align: left; float:left; background-color: #00a300; color: #fff;"]][[image http://kaktuskontainer.wdfiles.com/local--files/oboebandgeek99-v/Text%20thumbnail%20Taylor.png]][[/span]][[/span]][[span class="genius_content"]]Taylor is a wonderful musician, author, leader, person, they're basically who I want to be when I grow up. Suggested reading: Inside the Wall[[/span]][[/span]][[/a]]
+@@@@
+@@@@
+@@@@
+@@@@
+[[a href="*http://www.scp-wiki.net/themightymcb-s-author-page"]][[span class="genius_block nineteen"]][[span class="genius_highlight"]][[span style="max-width: 300px; border-radius: 15px; padding: 4px 8px; display: inline-block; text-align: left; float:left; background-color: #00a3a3; color: #fff;"]][[image http://kaktuskontainer.wdfiles.com/local--files/oboebandgeek99-v/Text%20thumbnail%20McB.png]][[/span]][[/span]][[span class="genius_content"]]His mighty metal screaming skills (no, really) are matched only by his mighty writing. Suggested reading: MWDOT (with Aepic) or SCP-3272[[/span]][[/span]][[/a]] [[a href="*http://www.scp-wiki.net/t-rutherford-author-page"]][[span class="genius_block twenty"]][[span class="genius_highlight"]][[span style="max-width: 300px; border-radius: 15px; padding: 4px 8px; display: inline-block; text-align: left; float:left; background-color: #0000a3; color: #fff;"]][[image http://kaktuskontainer.wdfiles.com/local--files/oboebandgeek99-v/Text%20thumbnail%20TR.png]][[/span]][[/span]][[span class="genius_content"]]To tell the Trutherford, I think TR is a great author! ,,TR im so sorry i had to.,, Suggested reading: SCP-4978[[/span]][[/span]][[/a]] [[a href="*http://www.scp-wiki.net/weryl-wrote-stuff-come-look"]][[span class="genius_block twenty-one"]][[span class="genius_highlight"]][[span style="max-width: 300px; border-radius: 15px; padding: 4px 8px; display: inline-block; text-align: left; float:left; background-color: #6000a3; color: #fff;"]][[image http://kaktuskontainer.wdfiles.com/local--files/oboebandgeek99-v/Text%20thumbnail%20Weryl.png]][[/span]][[/span]][[span class="genius_content"]]Weryl and I go way back, having joined around the same time, and while I kinda stagnated, Weryl's stuff has only gotten better and better. Suggested reading: Dr. Palanez's Proposal[[/span]][[/span]][[/a]] [[a href="*http://www.scp-wiki.net/woedenaz"]][[span class="genius_block twenty-two"]][[span class="genius_highlight"]][[span style="max-width: 300px; border-radius: 15px; padding: 4px 8px; display: inline-block; text-align: left; float:left; background-color: #a30000; color: #fff;"]][[image http://kaktuskontainer.wdfiles.com/local--files/oboebandgeek99-v/Text%20thumbnail%20Woed.png]][[/span]][[/span]][[span class="genius_content"]]Listen, you already know how awesome Woed is with writing and coding, but Woed is also just a cool person, and helped customize the code im using here! Suggested reading: SCP-4205 (I know, I know, it's just so good)[[/span]][[/span]][[/a]]
+@@@@
+@@@@
+@@@@
+@@@@
+@@@@
+[[/div]]
