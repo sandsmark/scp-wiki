@@ -1,0 +1,654 @@
+title:SCP-4353
+[[module css]]
+.addtag {
+  color: green;
+  font-weight: bold;
+}
+
+.commit {
+  font-family: monospace;
+  background-color: #CCCCDD;
+  border-left-style: dotted;
+  padding-left: 5px;
+}
+
+.removetag {
+  color: red;
+  font-weight: bold;
+}
+
+.postmortem {
+  background-color: #EEEEFF;
+  border-style: solid;
+  padding: 5px;
+}
+
+.meeting {
+  background-color: #EEFFEE;
+  border-style: solid;
+  padding: 5px;
+}
+
+.email {
+  background-color: #FFEEEE;
+  border-style: solid;
+  padding: 5px;
+}
+
+.accessdenied {
+  background-color: #B22222;
+  border-style: dotted;
+  padding: 5px;
+  font-weight: bold;
+}
+[[/module]]
+
+> **Note:** This entry's change history is referenced in an HR investigation postmortem 'HR-64-2019-003-INVESTIGATION' and has been marked as 'permanent'.
+
+> **Note:** This entry's change history is referenced in an Ethics Council postmortem 'EC-2024-002-POSTMORTEM' and has been marked as 'permanent'.
+
+> **Note:** This entry's change history is referenced in a Ethics Council Amnestics Review Board postmortem 'ECARB-2024-002-POSTMORTEM' and has been marked as 'permanent'.
+
+[[tabview]]
+[[tab Dump notes.]]
+
+[[div class="commit"]]
+Username/change hash: cmace1/de49eba8ccbe
+Date: 2017-11-19
+Tags:
+Short description of changes:
+
+//Dump notes.//
+[[/div]]
+
+**Description:**
+
+A lollipop that changes color once a day unless you squeeze the bulb.  It's safe.
+
+[[/tab]]
+[[tab Format for style]]
+
+[[div class="commit"]]
+Username/change hash: ldrayton012/ede34828
+Date: 2019-03-08
+Tags:
+[[div class="addtag"]]
+  +//Stub// +//object:lollipop// +//effect:color:many//
+[[/div]]
+Short description of changes:
+
+//Project-64-TCD: Make entry conform to style template.//
+[[/div]]
+
+**Item #:** SCP-4353
+
+**Object Class:** Safe
+
+**Special Containment Procedures:** Not recorded, location unknown.
+
+**Description:**  A lollipop that changes color once a day unless you squeeze the bulb.
+
+[[/tab]]
+[[tab Revert]]
+
+[[div class="commit"]]
+Username/change hash: cmace1/5b2e25da
+Date: 2019-03-11
+Tags:
+[[div class="removetag"]]
+-//Stub// -//object:lollipop// -//effect:color:many//
+[[/div]]
+Short description of changes:
+
+//Revert ldrayton012/ede34828: Project-64-TCD: Make entry conform to style template.//
+[[/div]]
+
+**Description:**
+
+A lollipop that changes color once a day unless you squeeze the bulb.  It's safe.
+
+------
+
+[[collapsible show="+ ECARB-2024-002-D Click to access" hide="- ECARB-2024-002-D Access granted"]]
+
+[[div class="meeting"]]
+
+//Ethics Committee Amnestic Review Board note: This document is referenced in ECARB-2024-002-POSTMORTEM.//
+
+**Meeting transcript (2019-03-18)**
+
+//The following is an automated transcript of a telephone conversation from Leslie Drayton, Site-64 to Cody Mace, Site 11. Voices identified as Leslie Drayton (Technical Writer, L2-B), Cody Mace (Researcher, L4).//
+
+//Log begins 2017-03-18T10:05:05-08:00.//
+ 
+DRAYTON: Hi, is this Researcher Cody Mace?
+
+MACE: Hey, yes, hi.  How can I help you?
+
+DRAYTON: Hey Cody!  I'm Leslie Drayton, calling from Site-64, and I wondered if we could talk about SCP-4353 for a minute.
+
+MACE: SCP-4353?  I'm not familiar with it.  Is that the (TODO: description of SCP with last two digits transposed)?
+
+DRAYTON: It's the lollipop--
+
+MACE: Oh, I...
+
+DRAYTON: --the lollipop you catalogued.
+
+MACE: You want to run some tests on the peppermint smell?  It's in locker 64-XS-12...
+
+DRAYTON: No, I, uh, don't have clearance to run tests.  I'm...
+
+MACE: It's Safe, you should...
+
+DRAYTON: ...a TCD.
+
+MACE: You're a what?  You're an SCP?
+
+DRAYTON: No, a TCD.
+
+MACE: I thought you said you were an SCP.  Do you have a number?
+
+DRAYTON: I'm a TCD, a Technical Content Developer.  I take care of the documentation. I wanted to ask...
+
+MACE: What documentation?
+
+DRAYTON: The containment procedures.  Things like, uh, I check for spelling errors, slang, clinical tone.
+
+MACE: Are you the woman who grabbed my shirt at coffee last week?  Where are you?
+
+DRAYTON: I'm -- I don't think so, I'm in Site 64.  You're at Site 11?
+
+MACE: I was at Site 64 last week.  You're the woman who grabbed my shirt at coffee.  I already --
+
+DRAYTON: I'm not -- maybe. I don't remember.
+
+MACE: What?
+
+DRAYTON: I don't remember.  TCDs aren't -- we don't -- we have to take amnestics each week because we need to edit everything, and we're not allowed to remember the things we've edited.  What time did we speak?
+
+MACE: It was at coffee.
+
+DRAYTON: Around 11:30?  Apparently I take my amnestics at 11:30, so --
+
+MACE: I already told you, I don't want you changing my files.
+
+DRAYTON: --don't remember meeting you.
+
+MACE: What?
+
+DRAYTON: I don't remember meeting you.  I don't have clearance to remember --
+
+MACE: If you don't have clearance you shouldn't be able to access the --
+
+DRAYTON: Would you stop interrupting me?
+
+MACE: What?
+
+DRAYTON: I said, would you stop interrupting me?
+
+MACE: It sounds like you can read files that you shouldn't be able to, and you certainly should not be editing them. Junior researchers should not edit files that describe safety procedures, because you could kill someone.
+
+DRAYTON: I'm not a researcher, I'm a TCD -- 
+
+//MACE hangs up.//
+
+DRAYTON: ...asshole.
+[[/div]]
+
+[[/collapsible]]
+ 
+------
+
+[[div class="commit"]]
+Username/change hash: ldrayton012/0367f0de
+Date: 2019-03-18
+Tags:
+[[div class="addtag"]]
++//location:l64-xs-12// +//effect:smell:peppermint// +//ldrayton012:noeditt//
+[[/div]]
+Short description of changes:
+
+//Project-64-TCD: Add location tag, add smell tag, add noedit tag, move on.// 
+[[/div]]
+
+**Description:**
+
+A lollipop that changes color once a day unless you squeeze the bulb.  It's safe.
+
+[[/tab]]
+
+[[tab AutoFormat for style]]
+
+[[div class="commit"]]
+Username/change hash: ldrayton012/790f1569
+Date: 2019-03-29
+Tags: //Stub// //location:l64-xs-12// //effect:smell:peppermint// //ldrayton012:noeditt//
+Short description of changes:
+
+//Project-64-TCD: Make entry conform to style template (automated edit).//
+[[/div]] 
+
+**Item #:** SCP-4353
+
+**Object Class:** Pending
+
+**Special Containment Procedures:** Not recorded.
+
+This item is stored in Site 64 in locker XS-12.
+
+**Description:**
+
+A lollipop that changes color once a day unless you squeeze the bulb.  It's safe.
+
+------
+
+[[div class="commit"]]
+Username/change hash: cmace1/6deb6caa
+Date: 2019-04-01
+Tags:
+[[div class="removetag"]]
+-Stub -//location:l64-xs-12// -//effect:smell:peppermint// -//ldrayton012:noeditt//
+[[/div]]
+Short description of changes:
+
+//Revert ldrayton012/790f1569: Project-64-TCD: Make entry conform to style template (automated edit).//
+[[/div]] 
+
+**Description:**
+
+A lollipop that changes color once a day unless you squeeze the bulb.  It's safe.
+
+------
+
+[[collapsible show="+ ECARB-2024-002-C Click to access" hide="- ECARB-2024-002-C Access granted"]]
+
+[[div class="meeting"]]
+
+//Ethics Committee Amnestic Review Board note: This document is referenced in ECARB-2024-002-POSTMORTEM.//
+
+**Meeting transcript (2019-04-01)**
+
+//The following is an automated transcript of a telephone conversation from Cody Mace, Site 11 to Leslie Drayton, Site-64. Voices identified as Leslie Drayton (Technical Writer, L2-B), Cody Mace (Researcher, L4).//
+
+//Log begins 2017-04-01T11:50:37-08:00.//
+
+MACE: Is this Drayton?  Leslie Drayton?
+
+DRAYTON: Hey, that's right.  May I ask who I'm talking to?
+
+MACE: It's Researcher Mace.
+
+DRAYTON: OK, Researcher Mace, how can I...
+
+MACE: I told you not to touch my files.
+
+DRAYTON: ...help you today? I'm sorry?
+
+MACE: I told you not to touch my files! How long have you worked here?
+
+DRAYTON: (//laughs//) Well, it's kind of my first day?
+
+MACE: What?  What did you just say to me? You're going to get someone killed and you're laughing?
+
+DRAYTON: No, I mean... I'm sorry.  I'm a technical editor.  We edit containment procedures for style, but we aren't allowed to keep our memories more than one week, and Monday morning is when I have to re-learn everything.  If I've made a mistake I'm truly sorry and I want to make things right.  Can I ask what edit I should fix?
+
+MACE: I've already fixed it.
+
+DRAYTON: OK, thank you.  Can I ask for my records anyway, so I can make sure I don't make the same kind of mistake twice?
+
+MACE: Edit number seven-niner-oh-foxtrot-one-five-six-niner.
+
+DRAYTON: Thanks, let me just pull that up.
+
+//The sound of typing on a keyboard can be heard.//
+
+DRAYTON: OK, I've got it here.  I'd like to say sorry again for the wrong edit, it was an automated edit -- 
+
+MACE: Who wrote the code? How does it work?
+
+DRAYTON: I'll check for you, sir, one moment. It was (//typing//) oh, it was me.  Uh, could I ask specifically what was wrong about the edit? I'd like to make sure my future edits are...
+
+MACE: You shouldn't be touching my files.
+
+DRAYTON: ...safe. Uh, OK.  Is this file... info-hazardous?
+
+MACE: What?
+
+DRAYTON: "Info-hazardous" -- it's a word that means the document itself...
+
+MACE: ...I know what infohazards are....
+
+DRAYTON: ...can be dangerous.  What was that?
+
+MACE: I know what infohazards are!
+
+DRAYTON: OK, sir, to answer your previous question I've worked here for four and a half years, but because I'm a TCD I can only remember as far back as lunch on Friday.  It looks like this automatic edit was applied to all Safe SCPs procedure docs that aren't tagged 'no edit' and that aren't tagged 'infohazard' ...
+
+MACE: You are not allowed to edit my files...
+
+DRAYTON: ...or 'memetic'.  OK, sir.  Maybe I could just say that this is a new project we're trying out.  The only edit the automation would do is to move the words around, maybe add some tags...
+
+MACE: No! I've told you three times now...
+
+DRAYTON: ...for clarity.  Would you stop interrupting me?
+
+MACE: ...don't edit my files! What?
+
+DRAYTON: Would you...
+
+//MACE hangs up.//
+
+DRAYTON: ...stop interrupting me?  Asshole!
+[[/div]]
+
+[[/collapsible]]
+
+------
+
+[[div class="commit"]]
+Username/change hash: ldrayton012/f15173f3
+Date: 2019-04-02
+Tags:
+[[div class="addtag"]]
++//ldrayton012:noedit//
+[[/div]]
+Short description of changes:
+
+//Project-64-2019-430: Add noedit tag.//
+[[/div]]
+
+**Description:**
+
+A lollipop that changes color once a day unless you squeeze the bulb.  It's safe.
+
+
+[[/tab]]
+
+[[tab +HR-64-2019-003-INVESTIGATION]]
+
+[[div class="commit"]]
+Username/change hash: kmalone687/39a95cbf
+Date: 2019-04-13
+Tags: //ldrayton012:noedit//
+[[div class="addtag"]]
++//hr:HR-64-2019-003-INVESTIGATION//
+[[/div]]
+Short description of changes:
+
+//HR-64-2019-003-INVESTIGATION: Add investigation tag (automated edit).//
+[[/div]] 
+
+[[collapsible show="+ HR-64-2019-003-B Click to access" hide="- HR-64-2019-003-B Access granted"]]
+
+[[div class="meeting"]]
+
+//HR note: This document is referenced by HR-64-2019-003-INVESTIGATION//
+
+//Ethics Committee Amnestic Review Board note: This document is referenced in ECARB-2024-002-POSTMORTEM.//
+
+//The following is a transcript of a face-to-face interview between Leslie Drayton, Site-64 TCD, and Kevin Malone, Site-64 HR Business Partner.//
+
+//Log begins 2017-04-13T09:37:01-08:00.//
+
+------
+
+MALONE: Hey Leslie, how's it going?
+
+DRAYTON: Uh, hey.  Sorry I'm late, I needed some coffee.
+
+MALONE: Well, you're here now.  How's it going?
+
+DRAYTON: People seem nice.  Is this a regular meeting?
+
+MALONE: What do you mean, a regular meeting?
+
+DRAYTON: Is this a meeting we'll have every week? I mean, that we have had every week?
+
+MALONE: The last time we met was (//rustling papers//) actually almost a year ago.  Do you think we should be meeting more often?
+
+DRAYTON: I'm not sure (//laughs//) it's kind of my first day?
+
+MALONE: (//pause//) What do you mean, it's your first day?
+
+DRAYTON: Oh, I figured you'd know.  I have to take these special drugs, am--
+
+MALONE: Let me stop you there.  I'm your HRBP, but that doesn't mean I have all of the same clearances that you have.  In fact, I'm not allowed to know anything classified at all, and I ask that you be careful not to tell me anything like that.
+
+DRAYTON: Oh, sure.  Sure.
+
+MALONE: Do you know why we might be meeting today?
+
+DRAYTON: No, but... Am I in trouble?
+
+MALONE: Could you tell me about your relationship with Cody Mace?
+
+DRAYTON: I... can I use my laptop to check?
+
+MALONE: I'd rather you focus on the conversation, if that's OK with you.  Just tell me in your own words whatever you think about Researcher Mace.
+
+DRAYTON: Right, sure.  I don't remember meeting him.
+
+MALONE: You've never met him?
+
+DRAYTON: Well... I have to take these special drugs...
+
+MALONE: Does Cody supply you with these drugs, Leslie?
+
+DRAYTON: No -- it will be a different person each Friday.  This week it's someone called "Sara".  But these drugs are special...
+
+MALONE: Let's keep on topic then, shall we?  When did you last speak to Cody?
+
+DRAYTON: ...I'd prefer it if you didn't interrupt me.
+
+MALONE: Sorry, Leslie.  Could you tell me when you last spoke to Cody?
+
+DRAYTON: I don't remember.  But that's...
+
+MALONE: You don't remember meeting him on Thursday?
+
+DRAYTON: (//shakes her head//) Is this like a test?  To make sure the drugs are working?
+
+MALONE: You don't remember having an argument with him in the coffee lounge?
+
+DRAYTON: (//shakes her head//) No.  I don't remember that.
+
+MALONE: Two people said they saw you shout at him, Robert Lyman and Jacob Eccles from Site 11.  I wonder if you've met them before.
+
+DRAYTON: I... I don't think so.  I... please, is this a test?  I want a...
+
+MALONE: Do you deny...
+
+DRAYTON: ...colleague present.
+
+MALONE: ...throwing coffee over one of your colleagues?  OK, Leslie -- let me give them a call.  Who would you like present? 
+
+DRAYTON: My manager's name is on my laptop.  Can I use my laptop?
+
+MALONE: Leslie, since you've not denied assaulting a colleague, I've had to suspend your account pending a full investigation by HR.  Your laptop has been locked down. I should warn you that disciplinary measures can range up to and including termination or reassignment to Class D personnel.  Who would you like present?
+
+DRAYTON: I... don't know.
+
+[//silence//]
+
+DRAYTON: This is -- this is bullshit, that's what this is -- this interview is bullshit and you're a--
+
+[//MALONE terminates interview.///
+
+------
+
+**Note:** //Based on her own testimony and lack of engagement in the process I see no option but to recommend we demote Leslie Drayton.// -- Kevin Malone, HRBP
+[[/div]]
+
+[[/collapsible]]
+
+**Description:**
+
+A lollipop that changes color once a day unless you squeeze the bulb.  It's safe.
+
+
+[[/tab]]
+ 
+[[tab +EC-2025-001-POSTMORTEM]]
+
+[[div class="commit"]]
+Username/change hash: ███████/39a95cbf
+Date: 2024-02-29
+Tags: //ldrayton012:noedit// //hr:HR-64-2019-003-INVESTIGATION// 
+[[div class="addtag"]]
++//ec:EC-2024-001-POSTMORTEM//
+[[/div]]
+Short description of changes:
+
+//EC-2024-001-POSTMORTEM: Add postmortem tag (automated edit).//
+[[/div]] 
+
+[[collapsible show="+ EC-2024-001-POSTMORTEM Access Level 5+ Only" hide="- EC-2024-001-POSTMORTEM Access denied"]]
+
+[[div class="accessdenied"]]
+> ACCESS DENIED
+> Reason: insufficient privileges (L4, should be L5 or higher). This incident will be reported.
+> Did you mean 'ECARB-2024-002-POSTMORTEM'?
+[[/div]]
+
+[[/collapsible]]
+
+[[collapsible show="+ EC-2024-001-ZB Click to access" hide="- EC-2024-001-ZB Access granted"]]
+
+[[div class="email"]]
+
+//Ethics Committee note: This document is referenced in EC-2024-001-POSTMORTEM.//
+
+//Ethics Committee Amnestic Review Board note: This document is referenced in ECARB-2024-002-POSTMORTEM.//
+
+From: Dr. Yi <yiyuen1>
+To: Dr. Mace <cmace1>, Dr. Leeward <aleeward001>, 
+Date: 2024-06-28
+Subject: Peppermint sweets that change color?
+
+Hey gang,
+
+Got a skip here that wants peppermint sweets that change color.  Rings any bells?  Nothing in the database.  Not crucial.
+
+Yuen Yi, Lead Researcher
+
+-----
+From: Dr. Mace <cmace1>
+To: Dr. Yi <yiyuen1>
+Date: 2023-07-01
+Subject: AutoReply: Peppermint sweets that change color?
+
+Hi!  Thanks for your email.  I'm currently on my honeymoon!
+
+I'll be back at the start of August.  If it's urgent, please contact yiyuen1 (Research) or kmalone64 (HR).
+
+Site Director Cody Mace
+[[/div]]
+
+[[/collapsible]]
+
+**Description:**
+
+A lollipop that changes color once a day unless you squeeze the bulb.  It's safe.
+
+[[/tab]]
+
+[[tab +ECARB-2024-001-POSTMORTEM]]
+
+[[div class="commit"]]
+Username/change hash: █████████/01d6ed59
+Date: 2024-03-05
+Tags: //ldrayton012:noedit// //hr:HR-64-2019-003-INVESTIGATION// //ec:EC-2024-001-POSTMORTEM//
+[[div class="addtag"]]
++//ec:ECARB-2024-001-POSTMORTEM//
+[[/div]]
+Short description of changes:
+
+//ECARB-2024-002-POSTMORTEM: Add postmortem tag (automated edit).//
+[[/div]]
+
+[[collapsible show="+ ECARB-2024-002-POSTMORTEM Access Level 4+ Only" hide="- ECARB-2024-002-POSTMORTEM Access granted"]]
+
+[[div class="postmortem"]]
+This is a blameless postmortem.  We (Ethics Committee Amnestic Review Board) are interested in past events only as they pertain to improving our ongoing processes.
+
+For the avoidance of confusion:
+* The Ethics Committee Amnestic Review Board (ECARB) is owning this postmortem to do with amnestics
+* The Ethics Committee (EC) is owning the parent postmortem of containment failure EC-2024-001.
+
+All follow up action items will be assigned to an individual before the end of the meeting.
+
+**O5 Responder:** █████████ (ECARB)
+
+**Summary:** Grievance/disciplinary procedures for cross-division staff using amnestics while resourced outside the Antimemetics division were incorrectly marked not in scope for process HR-SPEC-AMN-001.
+
+**Impact (direct):** 1 Foundation death(s); 0 non-Foundation death(s); opportunity cost of documentation updates due to lack of TCD staffing
+
+**Impact (indirect):** ███ Foundation death(s); ██████ non-Foundation death(s) (see EC-2024-001-POSTMORTEM).
+
+**Root Cause:** Computerization of the HR-SPEC processes, contemporaneously with the launch of a new cross-division technical writing initiative meant the TCD job role was set up incorrectly.
+
+**Detection:** EC-2024-001-POSTMORTEM investigation revealed SCP item that could have mitigated QK-class event had been improperly documented.
+
+**Resolution:** None. This incident was discovered during root cause analysis for EC-2024-001.
+
+**Action items:**
+//Remember the 4 'R's: [[[lending-a-hand |Re-contain, reclaim, remember and record]]].//
+
+* Reclaim: Retrieve Leslie Drayton (D-642034) from [[[SCP-351]]] testing. (cmace01, FAILED -- **NO LONGER POSSIBLE**)
+* Remember: Add "HR-SPEC-AMN for cross-divisional staff" to HR review backlog. (kmalone64, DONE)
+* Record: Add second strike against Site Director Mace. (█████████, DONE)
+* Re-contain: Improve TCD work environment; TCDs to be amnesticised in 'cohorts' of no fewer than 3 to reduce isolation. (cmace, DONE)
+* Re-contain: cmace to attend 6 weeks of inclusivity training. (cmace, IN PROGRESS)
+[[/div]]
+
+[[/collapsible]]
+
+**Description:**
+
+A lollipop that changes color once a day unless you squeeze the bulb.  It's safe.
+
+[[/tab]]
+
+[[tab Format for style]]
+
+[[div class="commit"]]
+Username/change hash: █████████/3b17c862
+Date: 2024-03-20
+Tags: //ldrayton012:noedit// //hr:HR-64-2019-003-INVESTIGATION// //ec:EC-2024-001-POSTMORTEM// //ec:ECARB-2024-001-POSTMORTEM// 
+[[div class="addtag"]]
++//effect:color:many// +//effect:smell:peppermint// +//object:lollipop// +//location:l64-xs-12//
+[[/div]]
+Short description of changes:
+
+//Make entry conform to style template.//
+[[/div]]
+
+**Item #:** SCP-4353
+
+**Object Class:** --Thaumiel-- Neutralized
+
+**Special Containment Procedures:** Not recorded.
+
+This item is stored in Site 64 in locker XS-12.
+
+**Description:**
+
+A lollipop that changes color once a day unless you squeeze the bulb.
+
+Note: This SCP could have been used to //prevent// event QK-2024-001, but was misdocumented.
+
+[[div class="commit"]]
+Username/change hash: █████████/3b17c862
+Date: 2024-03-20
+Tags:  //hr:HR-64-2019-003-INVESTIGATION// //ec:EC-2024-001-POSTMORTEM// //ec:ECARB-2024-001-POSTMORTEM// //effect:color:many// //effect:smell:peppermint// //object:lollipop// //location:l64-xs-12//
+[[div class="removetag"]]
+-//ldrayton012:noedit//[[/div]]
+Short description of changes:
+
+Rest in peace.
+[[/div]]
+
+[[/tab]]
+
+[[/tabview]]
