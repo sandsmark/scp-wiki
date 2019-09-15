@@ -2651,3 +2651,59 @@ There is no ethical consumption under capitalism.
 [[/div]]
 [[/code]]
 [[/collapsible]]
+
+++ Extended Wikidot-modules
+[[=]]
++++ ListUsers module
+[[/=]]
+**__Option 1 (//ListUsers for non-wikidot users//):__**
+
+**What it looks like:**
+[[include :topia:listusers-1 users="."]]
+##red|%%name%%##
+[[include :topia:listusers-2]]
+##blue|guest##
+[[include :topia:listusers-3]]
+**Note:** If you are the wikidot user, **the module show your ID**; if not, **the module show "guest"**.
+
+**What to copy:**
+[[collapsible]]
+> [[include :topia:listusers-1 users="."]]
+> @@##red|@@**%%name%%**@@##@@
+> [[include :topia:listusers-2]]
+> @@##blue|@@**guest**@@##@@
+> [[include :topia:listusers-3]]
+[[/collapsible]]
+ _
+
+**__Option 2 (//@@[[include]]@@ method with ListUsers' variables//):__**[[footnote]] **Source:** http://smlt.wikidot.com/boyu12:inc-loop
+**Original Author:** [[*user boyu12]] [[/footnote]]
+
+**What it looks like:**[[footnote]]Image stolen from [[*user djkaktus]]'s [[[SCP-3935]]].[[/footnote]]
+[[module ListUsers users="."]]
+[[include :topia:inc-loop c=__________|p=component:image-block]]
+|name=http://scp-wiki.wdfiles.com/local--files/scp-3935/school.png
+|align=center
+|width=100%
+|caption=SCP-XXXX... and you are //%%name%%//.
+]]
+[[/module]]
+
+**What to copy:**
+[[collapsible]]
+> @@[[module ListUsers users="."]]@@
+> @@[[include :topia:inc-loop c=__________|p=<include-src>]]@@
+> |<value>=**%%name%%**
+> ]]
+> @@[[/module]]@@
+> ----
+> **sample:**
+> @@[[module ListUsers users="."]]@@
+> @@[[include :topia:inc-loop c=__________|p=component:image-block]]@@
+> |name=@@http://scp-wiki.wdfiles.com/local--files/scp-3935/school.png@@
+> |align=center
+> |width=100%
+> |caption=SCP-XXXX... and you are @@//@@**%%name%%**@@//@@.
+> ]]
+> @@[[/module]]@@
+[[/collapsible]]
