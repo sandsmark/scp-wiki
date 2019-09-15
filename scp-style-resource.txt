@@ -2681,14 +2681,21 @@ There is no ethical consumption under capitalism.
 **Original Author:** [[*user boyu12]] [[/footnote]]
 
 **What it looks like:**[[footnote]]Image stolen from [[*user djkaktus]]'s [[[SCP-3935]]].[[/footnote]]
-[[module ListUsers users="."]]
+[[include :topia:listusers-1 users="."]]
 [[include :topia:inc-loop c=__________|p=component:image-block]]
 |name=http://scp-wiki.wdfiles.com/local--files/scp-3935/school.png
 |align=center
 |width=100%
-|caption=SCP-XXXX... and you are //%%name%%//.
+|caption=SCP-XXXX… and you are //%%name%%//.
 ]]
-[[/module]]
+[[include :topia:listusers-2]]
+[[include component:image-block
+|name=http://scp-wiki.wdfiles.com/local--files/scp-3935/school.png
+|align=center
+|width=100%
+|caption=SCP-XXXX and… I don't know who you are.
+]]
+[[include :topia:listusers-3]]
 
 **What to copy:**
 [[collapsible]]
@@ -2699,12 +2706,19 @@ There is no ethical consumption under capitalism.
 > @@[[/module]]@@
 > ----
 > **sample:**
-> @@[[module ListUsers users="."]]@@
+> [[include :topia:listusers-1 users="."]]
 > @@[[include :topia:inc-loop c=__________|p=component:image-block]]@@
 > |name=@@http://scp-wiki.wdfiles.com/local--files/scp-3935/school.png@@
 > |align=center
 > |width=100%
 > |caption=SCP-XXXX... and you are @@//@@**%%name%%**@@//@@.
 > ]]
-> @@[[/module]]@@
+> [[include :topia:listusers-2]]
+> [[include component:image-block
+> |name=@@http://scp-wiki.wdfiles.com/local--files/scp-3935/school.png@@
+> |align=center
+> |width=100%
+> |caption=SCP-XXXX and... I don't know who you are.
+> ]]
+> [[include :topia:listusers-3]]
 [[/collapsible]]
