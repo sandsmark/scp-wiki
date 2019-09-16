@@ -408,7 +408,7 @@ title:SCP Series 5
 * [[[SCP-4356]]] - Where’d the Oil Go?
 * [[[SCP-4357]]] - Slimelord
 * [[[SCP-4358]]] - [ACCESS DENIED]
-* [[[SCP-4359]]] - Sash Lantern
+* [[[SCP-4359]]] - [[span class="news"]]Sash Lantern[[/span]]
 * [[[SCP-4360]]] - TreeVee
 * [[[SCP-4361]]] - [ACCESS DENIED]
 * [[[SCP-4362]]] - [ACCESS DENIED]
@@ -1102,7 +1102,12 @@ Below, you can find recreations of each Series list which include all on-site wo
 [[/div]]
 
 [[module CSS]]
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|IM+Fell+DW+Pica+SC');
+
+.news {
+  font-family: 'IM Fell DW Pica SC', serif;
+  color: #000000;
+}
 
 .pigeon {
   font-family: 'Dancing Script', cursive;
