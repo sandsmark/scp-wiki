@@ -28,23 +28,16 @@ table.wiki-content-table th{
 </style>
 <table class="wiki-content-table">
 <tbody><tr>
-<td colspan="2">
+<td>
+<img id="door" src="http://www.scp-wiki.net/local--files/scp-4948/door.png" alt="" class="image" width="300">
 <script language="JavaScript">
-var imgs = [
-  "http://www.scp-wiki.net/local--files/scp-4948/door.png",
-  "http://www.scp-wiki.net/local--files/scp-4948/door2.png"
-];
-var index = 0;
-var rand = Math.round(Math.random() * 10);
-if (rand === 2 || rand === 3) index = 1;
-function show() {
-  document.write('<img src="' + imgs[index] + '" alt="image" class="image" width="300px">');
+if (Math.random() < 0.2) {
+  document.getElementById("door").src = "http://www.scp-wiki.net/local--files/scp-4948/door2.png";
 }
-show();
 </script></td>
 </tr>
 <tr>
-<th colspan="2"><sup>If you feel dread or anxiety after viewing this image, or if you see any unexpected entities, please consult your on-site psychiatrist.</sup></th>
+<th><sup>If you feel dread or anxiety after viewing this image, or if you see any unexpected entities, please consult your on-site psychiatrist.</sup></th>
 </tr>
 </tbody>
 </table>
