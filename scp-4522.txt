@@ -7,6 +7,10 @@ title:SCP-4522
 [[include :scp-wiki:component:ch-scp-theme]]
 
 [[module css]]
+.anom-bar-container, .anom-bar-container * {
+    font-family: var(--body-font);
+    font-weight: initial;
+}
 sup { 
 vertical-align: top; position: relative; top: -0.5em; 
 }
