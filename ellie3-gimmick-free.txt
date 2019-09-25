@@ -275,3 +275,36 @@ From old to recently created:
 
 [[/tab]]
 [[/tabview]]
+
+[[html]]
+<style type="text/css" id="internal-style">
+
+        /* modules */
+@import url(http://d3g0gp89917ko0.cloudfront.net/v--ae3779389560/common--modules/css/monetize/textlinkads/MonetizeTextLinkAdsModule.css);
+
+
+
+        /* theme */
+        @import url(http://d3g0gp89917ko0.cloudfront.net/v--ae3779389560/common--theme/base/css/style.css);
+        @import url(http://d3g0gp89917ko0.cloudfront.net/v--ae3779389560/common--theme/webbish2/css/style.css);
+   
+    </style>
+<script type="text/javascript">
+function tomorrow( )
+{
+  var currentTime = new Date();
+  var currentUTC = currentTime.getTime();
+  var extraDay = 1000 * 60 * 60 * 24;
+  var tomorrowTime = new Date(currentUTC + extraDay);
+
+  // String padding
+  var tomMonth = ( tomorrowTime.getMonth() + 1 < 10 ? "0" : "" ) + (tomorrowTime.getMonth() + 1);
+  var tomDay = ( tomorrowTime.getDate() < 10 ? "0" : "" ) + tomorrowTime.getDate();
+  document.getElementById("lolTroy").firstChild.nodeValue = "This plan is to be carried out before " + tomorrowTime.getFullYear() + "/" + tomMonth + "/" + tomDay;
+}
+</script>
+<p id="lolTroy">This text was recovered by having [[[SCP-187]]] examine the terminal at Site-██. Her copied text was then sent through [[[SCP-758]]] to correct it, and then translated by Dr. ████████. The date on the communique was listed as [REDACTED].</p>
+<script type="text/javascript">
+tomorrow();
+</script>
+[[/html]]
