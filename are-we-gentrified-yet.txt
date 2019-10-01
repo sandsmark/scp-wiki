@@ -1,0 +1,501 @@
+title:Are We Gentrified Yet?
+[[>]]
+[[module rate]]
+[[/>]]
+[[module css]]
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Pinyon+Script');
+
+/*
+    The Anton font was created by Vernon Adams and is licensed under the Open Font License
+    The Cinzel font was created by Natanael Gama and is licensed under the Open Font License
+    The Pinyon Script font was created by Nicole Fally and is licensed under the Open Font License
+*/
+/* //// When you want to add new "records", //// */
+/* //// add new "options" like the following format. //// */
+.r1 {animation-delay: 3s;}
+.r2 {animation-delay: 6s;}
+
+.tape-wrap .collapsible-block-unfolded-link .collapsible-block-link
+{animation-delay: calc(6s + 2s);}
+
+.tape-record {position: relative;height: 6em;overflow: hidden;white-space: pre;}.record {position: absolute;animation-name: record;animation-duration: 2.5s;opacity: 0;top: 0;left: 50%;transform: translateX(-50%);}.line2 {top: 1.2em!important;}.line3 {top: 2.4em!important;}.tape-wrap {position: relative;background-color: rgba(244,244,244,1);border: 1px dashed #999;padding: 0 1em;}.tape-anim {position: relative;background-image: url( "http://unofficial-scp-sandbox-jp.wikidot.com/local--files/iroiro-workshop-8/DoxYSJAV4AET63r.png" );background-size: 200px;background-position: center center;background-repeat: no-repeat;min-height: 300px;}.tape-left,.tape-right {display: block;position: absolute;margin: auto;height: 0;width: 70px;padding-bottom: 100%;background-image: url( "http://unofficial-scp-sandbox-jp.wikidot.com/local--files/iroiro-workshop-8/scp_trans.png" );background-size: contain;background-position: center center;background-repeat: no-repeat;pointer-events: none;}.tape-left {top: -20px;bottom: 0;left: -70px;right: 0;animation-name: spin1;animation-duration: 15s; animation-timing-function: linear; animation-fill-mode: forwards; animation-iteration-count: infinite;}.tape-right {top: 0px;bottom: -32px;left: 0;right: -72px;animation-name: spin1;animation-duration: 20s; animation-timing-function: linear; animation-fill-mode: forwards; animation-iteration-count: infinite;}.tape-wrap .collapsible-block-unfolded-link {padding-top: 1em;}.tape-wrap .collapsible-block-folded,.tape-wrap .collapsible-block-unfolded-link {position: relative;text-align: center;}.tape-wrap .collapsible-block-unfolded-link .collapsible-block-link:before {content:"\f1da";display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;transform:translate(0, 0);}
+.tape-wrap .collapsible-block-unfolded-link .collapsible-block-link {animation-name: g-ex;animation-duration: 1s;animation-fill-mode: forwards;visibility: hidden;opacity: 0;}.tape-wrap .collapsible-block-folded {padding-top: 1em;padding-bottom: 1em;}@keyframes g-ex {50% {visibility: visible; opacity: 0;}100% {visibility: visible; opacity: 1;}}@keyframes spin1 {0% {transform: rotate(0deg);}100% {transform: rotate(360deg);}}@keyframes record {0% {opacity: 0;}25% {opacity: 1;}75% {opacity: 1;}100% {opacity: 0;}}@-moz-document url-prefix() {.tape-anim {height: 300px;}.tape-left,.tape-right {display: block; width: 70px;height: 70px;position: relative;margin: 0 auto;padding: 0 auto!important;padding-bottom: 0;}.tape-left {top: 105px;bottom: initial;left:-36px; }.tape-right {top: 60px;bottom: initial;left: 35px;}}
+
+.meta-title {
+  border-bottom: solid 1px #bbbbbb;
+  color: #990011;
+  font-weight: normal;
+  margin: 0 0 0.6em;
+  padding: 0 0 0.25em;
+  font-size: 200%;
+}
+.meta-title p {
+  margin: 0;
+}
+
+.page {
+    display: block;
+    overflow: hidden;
+    font-family: "Monotype Corsiva", "Bradley Hand ITC", sans-serif;
+    font-style: normal;
+
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: linear-gradient(to top ,rgb(202, 219, 228) 0%, rgb(231, 233, 220) 8%);
+    background-origin: padding-box;
+    background-position: 0px 8px;
+    background-repeat: repeat;
+    background-size: 100% 20px;
+
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2)
+    }
+.page p {
+    line-height: 20px;
+    margin: 0;
+}
+[[/module]]
+[[div style="float: center; border: solid 3px #444444; width: 85%; padding: 1px 15px; margin: auto; margin-top: 10px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
+**From:** curatorthe@torchmail.drk
+**To:** nobodysacritic@torchmail.drk
+**Subject:** I'm at my limit.
+**Date:** February 1st, 2018 at 15:31:59
+
+Hey, Critic. Sure you heard, but the Menagerie's hosting a general exhibition on the 18th. I've got most of the slots filled, but I still need about four or five more acts last minute before I feel comfortable attracting the kind of crowd I need right now.
+
+Three things I want to mention:
+# MC&D are actively gentrifying the BackDoor.
+# The Menagerie's union-owned.
+# My two biggest sponsors, in art //and// money, were the KoH Collective and Olney.
+
+Do the math.
+[[/div]]
+
+[[div style="float: center; border: solid 3px #444444; width: 85%; padding: 1px 15px; margin: auto; margin-top: 10px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
+**From:** nobodysacritic@torchmail.drk
+**To:** curatorthe@torchmail.drk
+**Subject:** Someone's at their limit.
+**Date:** February 1st, 2018 at 17:28:59
+
+Relax, James, relax. The Menagerie's gonna live if I gotta say in it.
+
+Look, you have a show coming up, right? Let me loan you my private collection for one, and for two, U of SoHo loves the place. I'll put out an open call, see if they can't whip something up for the exhibit. Don't feel like this is gonna be the end of the world, that's the Jailers' jobs.
+[[/div]]
+
+[[div style="float: center; border: solid 3px #444444; width: 85%; padding: 1px 15px; margin: auto; margin-top: 10px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
+**From:** curatorthe@torchmail.drk
+**To:** nobodysacritic@torchmail.drk
+**Subject:** Big Thanks
+**Date:** February 1st, 2018 at 19:44:59
+
+Thanks, yeah. I just didn't expect Yarkoni to hang herself on the same month Olney collapsed, but I suppose this is the wrong business in terms of workplace safety.
+
+Still, no matter the dire straits, I'm glad to know you have my back.
+[[/div]]
+------
+[[div style="border: solid 2px #000000; padding: 1px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
+[[div class="meta-title"]]
+@@ @@
+Project Proposal 2018-59: I Heart My Prophet
+[[/div]]
+**Title:** //I Heart My Prophet// by //Hansarp//
+
+**Material Requirements:**
+Custom-made molding of Chief Foreman Robert Bumaro (already in my possession)
+15 gallons of chocolate
+A refrigerator
+
+**Intent:** Love is a strange emotion, expressed in a myriad of forms.
+
+As a devout Mekhanite, I have often been told that I am beloved by my prophet, and I have often told others that I love my prophet. I know this to be true: I love Robert Bumaro and he loves me, for through his grace and his guidance towards MEKHANE I am able to live out my blessed life as it is.
+
+Many of the devout would argue that the ultimate expression of love is sex. It's the culmination of a partnership coming together to create something greater than the sum of its parts. It's two people who love each other committing an act of love, and there's nothing more beautiful than that.
+
+**Abstract:** I am going to fellate the anatomically correct chocolate Robert Bumaro as a display of my love and passion not just towards him, but towards MEKHANE.
+@@ @@
+@@ @@
+[[/div]]
+------
+[[div style="float: center; border: solid 3px #444444; width: 85%; padding: 1px 15px; margin: auto; margin-top: 10px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
+**From:** curatorthe@torchmail.drk
+**To:** nobodysacritic@torchmail.drk
+**Subject:** BUMARO COCK
+**Date:** February 5th, 2018 at 13:06:59
+
+[this email has no body text]
+[[/div]]
+
+[[div style="float: center; border: solid 3px #444444; width: 85%; padding: 1px 15px; margin: auto; margin-top: 10px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
+**From:** nobodysacritic@torchmail.drk
+**To:** curatorthe@torchmail.drk
+**Subject:** Re: BUMARO COCK
+**Date:** February 5th, 2018 at 16:27:59
+
+Ohhh, that one.
+
+Really I'm not seeing the problem. I mean A it's gonna generate a crapton of talk, B it's not //nearly// as bad as [[[SCP-1800|the creepy minotaur thing]]] a while back, and C, don't tell me you don't wanna see how this goes down.
+[[/div]]
+
+[[div style="float: center; border: solid 3px #444444; width: 85%; padding: 1px 15px; margin: auto; margin-top: 10px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
+**From:** curatorthe@torchmail.drk
+**To:** nobodysacritic@torchmail.drk
+**Subject:** Re:Re: BUMARO COCK
+**Date:** February 5th, 2018 at 17:55:59
+
+Alright, one, don't cite that creepy minotaur at me. //That// was all Tamlin.
+
+Two, what you're suggesting I bill is akin to Mekhanite sacrilege. Need I remind the BackDoor homes about as many Mekhanites as NYC homes Jews? At least Judaism lacks Mitzvah regarding //welding a cannon to one's arm//.
+
+Three, this is all disregarding the overly sexual nature of the piece in question. I don't care what Hansarp does in his spare time, but while he's in the Menagerie, he will be sucking exactly __zero__ cocks, whether hiding in the bathroom or //on the exhibit floor//. 
+
+I am //not// putting this in the itinerary.
+[[/div]]
+
+[[div style="float: center; border: solid 3px #444444; width: 85%; padding: 1px 15px; margin: auto; margin-top: 10px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
+**From:** nobodysacritic@torchmail.drk
+**To:** curatorthe@torchmail.drk
+**Subject:** Re:Re:Re: BUMARO COCK
+**Date:** February 5th, 2018 at 20:00:59
+
+You know it sounds to me like someone doesn't want their museum saved.
+[[/div]]
+
+[[div style="float: center; border: solid 3px #444444; width: 85%; padding: 1px 15px; margin: auto; margin-top: 10px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
+**From:** curatorthe@torchmail.drk
+**To:** nobodysacritic@torchmail.drk
+**Subject:** Re:Re:Re:Re: BUMARO COCK
+**Date:** February 5th, 2018 at 20:19:59
+
+Are you missing the part where a madman wants to suck Bumaro's cock? In //my// Menagerie? You are turning my exhibit into exhibitionism!
+
+Most of my invitations were already sent out. You have that list! Riddle me this, Critic: did you see a single Adytum's Lodge moron? Any one of the House of Spades goons? Did I headline, subtitle, byline, backpage, Sunday funny a single bit of lawyer-bait? No! Because the Menagerie can't afford that, because it doesn't //want// that.
+
+Look, everything else so far's gold. I don't know how you got that kinda talent, and frankly I don't care. But know that as long as I'm in charge, Bumaro's cock remains unsucked. Capiche?
+[[/div]]
+------
+[[div style="text-align: center"]]
+[[div class="unmargined" style="font-family: 'Cinzel'; font-size: 450%; margin: 2px 0 5px;"]]
+Trip Through the BackDoor
+[[/div]]
+[[div class="unmargined" style="font-family: 'Pinyon Script'; font-size: 250%; margin: 2px 0 5px;"]]
+Step On Through
+[[/div]]
+[[div class="unmargined" style="font-family: serif; font-size: 125%; border-top-style: solid; border-bottom-style: solid;"]]
+[[table style="border: none; width: 100%;"]]
+[[row]]
+[[cell]]
+BACKDOOR SOHO
+[[/cell]]
+[[cell style="text-align: center;"]]
+TUESDAY FEBRUARY 6TH, 2018
+[[/cell]]
+[[cell style="text-align: right;"]]
+5¢ - NO REFUNDS
+[[/cell]]
+[[/row]]
+[[/table]]
+[[/div]]
+[[div class="unmargined" style="font-family: 'Anton'; font-size: 500%; margin: 2px 0 5px;"]]
+CLOCK DOC CHOC COCK COCKBLOCK ART SHOCK
+[[/div]]
+[[div class="unmargined" style="font-family: 'Anton'; font-size: 375%; margin: 2px 0 5px;"]]
+A REPUGNANT DISPLAY OF CENSORSHIP
+[[/div]]
+[[div class="unmargined" style="font-family:serif; font-size:120%;"]]
+//By Lyre Lamarr-Turing//
+[[/div]]
+[[/div]]
+[[div style="text-align:justify;"]]
+BACKDOOR - It's a grim day when, in the very capital of anomalous counterculture, the allure of money reigns supreme over the duty of an artist.
+
+[[div_ style="opacity: .75"]]
+Several sources near and dear to this devastated journalist has confided in them that "//I Heart My Prophet//", the newest masterpiece of award-winning anartist Hansarp, has been pulled from the upcoming Menagerie exhibition, despite overwhelming support from anartists world-wide. The culprit? None other than The Curator himself. The motive? Money.
+[[/div]]
+@@@@
+[[div_ style="opacity: .5"]]
+The Menagerie's actions might have gone unnoticed, if not for the bravery of several anonymous sources within the SoHo anart scene.
+[[/div]]
+@@@@
+[[div_ style="opacity: .25"]]
+If you hadn't yet heard of "//I Heart My Prophet//", we don't blame you. A bold piece involving...
+[[/div]]
+[[/div]]
+------
+[[div style="float: center; border: solid 3px #444444; width: 85%; padding: 1px 15px; margin: auto; margin-top: 10px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
+**From:** bigdickgardengf@secmail.de
+**To:** curatorthe@torchmail.drk
+**Subject:** Regarding the actions of the Menagerie.
+**Date:** February 6th, 2018 at 11:31:59
+
+Hello.
+
+I have to say I'm disappointed in the Menagerie. The world of art is no stranger to controversy; it is, additionally, no stranger to //fake// controversy. I find it ludicrous that a simple display of faith (one I might add appears predominantly in the BackDoor), no matter how lurid it may appear on text, would prompt such a rash decision.
+
+I am thus issuing an ultimatum: reinstate //I Heart My Prophet// in the exhibition itinerary, or remove my works from the Menagerie in their entirety.
+
+Sincerely,
+[[div style="font-family: 'Pinyon Script'; font-size: 150%;"]]
+[[>]]
+~ Stella Freja Lindholm
+[[/>]]
+[[/div]]
+[[/div]]
+
+[[div style="float: center; border: solid 3px #444444; width: 85%; padding: 1px 15px; margin: auto; margin-top: 10px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
+**From:** lzapata@koh.drk
+**To:** curatorthe@torchmail.drk
+**Subject:** :(
+**Date:** February 6th, 2018 at 12:08:59
+
+> **Oh No!** You've just lost yourself your very own **Mrs. Gentrification** by Gamers Against Weed! Who would've thought you'd become another cog in the machine? And who is Dr. Wondertainment?
+> 
+> Betray them all and become Mr. Sellout!
+> 
+> [[[scp-2586|01. Mr. Literal Serial Killer]]]
+> [[[mr-normie|02. Mr. Normie]]]
+> [[[scp-3015|03. Mr. Bernie Sanders]]]
+> [[[uiu-file-2016-004|04. Mr. Get Anything For Free In Any Shop]]]
+> [[[scp-3697|20. Mr. Sex Number]]]
+> 21. Mr. Heavenly Virtues
+> [[[scp-3024|22. Mr. Deadly Sins]]]
+> [[[scp-2839|23. Mr. Original Character]]]
+> [[[adoption-poster-darius|24. Mr. D.A.R.E.]]]
+> 25. Mrs. Gentrification ✔
+> [[[SCP-3090|26. Ms. Mad About Video Games]]]
+> [[[scp-2842|27. Mr. Meme]]]
+> [[[scp-3012|28. Mr. Ominous (discontinued)]]]
+> [[[scp-4239|29. Mr. Destiny]]]
+> [[[scp-2476|30. Mr. Monty Python And The Holy Grail]]]
+> [[[scp-4669|31. Ms. Zapatista]]]
+> [[[scp-285|32. Mr. Hax]]]
+> [[[log-of-anomalous-items#jhtt|33. Mr. Just Has The Tattoo]]]
+> [[[scp-2562|34. Mr. Top Text and Mr. Bottom Text]]]
+> 35. Mr. Finale
+[[/div]]
+
+[[div style="float: center; border: solid 3px #444444; width: 85%; padding: 1px 15px; margin: auto; margin-top: 10px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
+**From:** RBarnes2@pizzanet.goc
+**To:** curatorthe@torchmail.drk
+**Subject:** [[[re-the-statue|Re: The Statue]]]
+**Date:** February 6th, 2018 at 12:21:59
+
+Hi there!
+
+As one of the oldest pizza establishments in the BackDoor, we're proud to see someone taking a stand against vulgarity for vulgarity's sake. The BackDoor is, after all, the culture capital of the anomalous world; if our standards degenerate, so does our standing.
+
+We are therefore offering the Menagerie's upcoming exhibition extensive catering services, free of charge. It's the least we can do to show our thanks, and hopefully make up for the Union boycotts. Of course, we'll need access to some of the backrooms, but it'll be worth it for the level of service we provide.
+[[>]]
+
++++++ //R. L. Barnes//
+++++++ //Spicy Crust Pizza//
+[[/>]]
+[[/div]]
+------
+[[div style="float: center; border: solid 3px #444444; width: 85%; padding: 1px 15px; margin: auto; margin-top: 10px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
+**From:** curatorthe@torchmail.drk
+**To:** nobodysacritic@torchmail.drk
+**Subject:** You
+**Date:** February 6th, 2018 at 17:58:59
+
+Hello Critic, how are you doing today? I'm doing super. Peachy. I'm fucking peachy. I have grown a thick layer of fuzz and a Chinese folk hero is going to pluck me from a gravid branch and make me into medicine. I have never been anymore peachy than I am at this exact moment. I am doing very fine.
+
+Attached to this email is an internet-famous image of a man stretching his asshole open. If I were not peachy, say if someone FED BULLSHIT TO THE FUCKING TTTB, I'd think this would be an appropriate image to send to someone.
+
+Take care! You're paying for my funeral. <3
+
+//,,Attached:,,//
+* //,,hello.jpg,,//
+[[/div]]
+
+[[div style="float: center; border: solid 3px #444444; width: 85%; padding: 1px 15px; margin: auto; margin-top: 10px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
+**From:** nobodysacritic@torchmail.drk
+**To:** curatorthe@torchmail.drk
+**Subject:** Okay, drama queen
+**Date:** February 7th, 2018 at 07:18:59
+
+Jeez, sorry for sending talent your way.
+
+Listen James, I know things are stressful, but you gotta remember what the biz is like. Handling controversy's the name of the game. 'sides, TTTB's gonna generate buzz whether you like it or not, and I know how much you like buzz.
+
+Seriously, don't stress too hard. Just put it back in and let everything fall into place.
+[[/div]]
+
+[[div style="float: center; border: solid 3px #444444; width: 85%; padding: 1px 15px; margin: auto; margin-top: 10px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
+**From:** curatorthe@torchmail.drk
+**To:** nobodysacritic@torchmail.drk
+**Subject:** Here's another picture of you
+**Date:** February 7th, 2018 at 09:31:59
+
+[this email has no body text]
+
+//,,Attached:,,//
+* //,,wormdick.png,,//
+[[/div]]
+------
+[[div style="float: center; border: solid 3px #444444; width: 85%; padding: 1px 15px; margin: auto; margin-top: 10px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
+**From:** curatorthe@torchmail.drk
+**To:** nobodysacritic@torchmail.drk
+**Subject:** I hate my life.
+**Date:** February 8th, 2018 at 20:48:59
+
+Hey buddy ol pal ol friend of mine my dear friend the Critic who is so good to me they sabotaged my exhibit my ol acquaintance. Here's the latest update on the mess you stuck me in:
+
+[[div style="float: center; border: solid 3px #444444; width: 85%; padding: 1px 15px; margin: auto; margin-top: 10px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
+**From:** patchypanels@thegestalt.WAN
+**To:** curatorthe@torchmail.drk
+**Subject:** MSAN Response
+**Date:** February 8th, 2018 at 11:59:59
+
+Greetings,
+
+On 02/05/2018, records indicate that //I Heart My Prophet//, a performance artpiece by one Mxr. Hansarp, was pulled from the Menagerie's upcoming exhibition. Following its removal, the general public at-large condemned the move; as the largest Mekhanite civil rights group in the Linuxsphere, the Mekhanite Self-Advocacy Network was thus obligated to respond to the event in question.
+
+The MSAN has reviewed the case at large, and has come to the following conclusion:
+
+This email is to inform you that you have been nominated for condemnation by the MSAN, following the arbitrary censorship of Mxr. Hansarp's act of self-expression. The MSAN accepts that //I Heart My Prophet//'s core content might have been risque; however, it is the opinion of the MSAN the performance itself would be no more obscene than pieces such as //Quin preu és la virtut?// and //The Book of Tamlin//, both of which had been exhibited in the past by the Menagerie. It is therefore the conclusion of the MSAN that the removal of Mxr. Hansarp's piece was motivated primarily by mekhanophobic intentions.
+
+Should you choose to reinstate //I Heart My Prophet// in the exhibition itinerary, condemnation proceedings will cease. It is the opinion of Reverend Technician Pandora Ellis that this is the preferred option in regards to the financial future of the Menagerie.
+
+We hope to hear from you soon.
+
+[[>]]
+//Reverend Technician Pandora Ellis//
+[[/>]]
+[[/div]]
+@@@@
+[[div class="page"]]
+[[size 125%]]
+{{To whom it may concern,}}
+@@@@
+{{On behalf of the SoHo Temple Ironworks, we strongly condemn your inclusion of one Mxr. Hansarp's //I Heart My Prophet// in your upcoming exhibit. While our Patriarchs recognize that you have pulled it from the itinerary, we are nonetheless obligated to condemn your carelessness.}}
+@@@@
+{{The SoHo Temple Ironworks holds the Menagerie accountable for the following blasphemies:}}
+* {{The allowance of idolatry through the worship of a mortal in the name of M-KHANE.}}
+* {{The depiction of a faithful in the medium of "milk chocolate", an aspect of FLESH.}}
+* {{The perversion inherent to a depiction of a Layperson performing oral sex on a Post-Nibbanic Foreman, especially in regards to the imbalance of power necessary for such an act.}}
+@@@@
+{{Regardless of the Broken Church's publicized support of Mxr. Hansarp's piece, the Menagerie cannot ignore the grievances of the BackDoor's significant Orthodoxist population. Know that we are disappointed in your carelessness, and implore you to do better in the future.}}
+@@@@
+[[>]]
+{{Brother-Schematist Key}} 
+[[/>]]
+[[/size]]
+[[/div]]
+Congratulations, I'm doomed. Whatever you did with TTTB, you doomed the Menagerie. Alternatively, you've doomed //me//. I am stuck between a giant, steaming rock and a hard place carrying enough current to fry my ass faster than a thunderstorm. Do you appreciate just how hard you screwed me? Do you?
+
+Get me out of this //now//.
+[[/div]]
+
+[[div style="float: center; border: solid 3px #444444; width: 85%; padding: 1px 15px; margin: auto; margin-top: 10px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
+**From:** nobodysacritic@torchmail.drk
+**To:** curatorthe@torchmail.drk
+**Subject:** Possible solution.
+**Date:** February 8th, 2018 at 14:28:59
+
+Right so, first of all sorry for trying to save the Menagerie from mediocrity. Second, I've talked a lot of people on this, so bear with me:
+
+Hansarp's willing to compromise; Mekhanite's hate making enemies, you know how it goes. Basically instead of using a chocolate Bumaro, he uses Fauxcolate (kosher Mekhanite "chocolate" made from synthetics like oil) to craft the likeness of Mekhane, then polishes off //that//. I've spoken to people from all three of the main branches, and it's completely kosher. It's even in line with the Orthodox thing about "Divine Submission". Whaddya say?
+[[/div]]
+
+[[div style="float: center; border: solid 3px #444444; width: 85%; padding: 1px 15px; margin: auto; margin-top: 10px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
+**From:** curatorthe@torchmail.drk
+**To:** nobodysacritic@torchmail.drk
+**Subject:** Re: Possible solution.
+**Date:** February 8th, 2018 at 14:39:59
+
+I am begging you to give me literally any other option. I will approve literally anything you send my way.
+[[/div]]
+------
+[[div style="float: center; border: solid 3px #444444; width: 85%; padding: 1px 15px; margin: auto; margin-top: 10px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
+**From:** pulmonaryprincex@torchmail.drk
+**To:** curatorthe@torchmail.drk
+**Subject:** Act Proposal
+**Date:** February 10th, 2018 at 18:41:59
+
+Hey, this is Zend Kivelä! The Critic might've told you about me.
+
+I heard you were looking for help regarding the mess revolving around that one Mekh's piece. Personally I thought it was hilarious, but I guess other people can't appreciate a good piece of sacrilege when they see it.
+
+I'm proposing an alternative, complete with a way out. See, I'm an up and coming artist. I'm also an unapologetic Nälkän. It would make sense that, if you were trying to promote the little guy, you'd exclude the kinds of people who wouldn't take well to xeir leanings. No harm, no foul, just... it's me or him, and he's got enough awards already.
+
+I've actually got a piece ready! It's a fleshcraft so I //do// need to feed it now and then, and I'll also probably need the +18 room you had reserved for Hansarp's, but //Ion Tames The Scarlet Archon// is sure to be a hit (don't ask me how much research I had to do on squid penises lmao)!
+
+Critic tells me you already pre-approved this, so I'll spare you the abstract. Thanks in advance! :D
+[[/div]]
+
+[[div style="float: center; border: solid 3px #444444; width: 85%; padding: 1px 15px; margin: auto; margin-top: 10px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
+**From:** curatorthe@torchmail.drk
+**To:** nobodysacritic@torchmail.drk
+**Subject:** [no subject]
+**Date:** February 10th, 2018 at 18:55:59
+
+I give up.
+[[/div]]
+------
+[[div style="float: center; border: solid 3px #444444; width: 85%; padding: 1px 15px; margin: auto; margin-top: 10px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
+**From:** curatorthe@torchmail.drk
+**To:** nobodysacritic@torchmail.drk
+**Subject:** A message.
+**Date:** February 19th, 2018 at 23:59:00
+
+Yesterday I woke up, put on my suit, and went to the show I spent weeks organizing. This show had to **__//BE//__** perfect, and I wish with all my heart there was a way to emphasize that "be" more. I had to have the perfect line-up, with the perfect crowd, and everything had to run absolutely perfectly.
+
+So let's flash back to one week prior.
+
+Let me set the scene: just, say, five days prior, my mentor, the teacher I trusted most in the whole goddamn world, the //absolute authority// on East Coast anart, snuck a story into the TTTB about how I pulled a //vulgar sex act// from an itinerary //that never included it in the first place//, and somehow that was a bad thing. I became the knuckle-dragging moral panic bogeyman over fake news. For five //excruciating days//, I was the most hated man in America. It was as if Karl Marx lived in a nation of McCarthies, and he had just bombed a bus of mixed Vietnamese-Korean orphans of the incorrect latitude.
+
+I would have lived //one hundred// of those days than experience //another singular second// of the week that followed the """re"""incorporation of Hansarp's living obscenity into my perfect show.
+
+Do you know how many people pulled out over your libelous garbage? Me neither. I stopped counting once it hit the double digits. Do you know how many pulled back in when I let myself sully my perfect show? __All of them__. One //hundred// percent. This was all they cared about. Do you know how it feels to know your star artists, your past and present peers care less about you than some cum-brained dullard?
+
+I can't even hate him. When I called him up to tell him I'd surrendered, I was finished, he didn't even care. I was not admonished, chastised, nor was I praised. He thanked me and hung up.
+
+Fate wouldn't even dignify me with righteous anger.
+
+For seven days, I didn't leave my apartment. I cried, screamed, lied perfectly still with a weight in my stomach; like something had pumped lead into my appendix until it burst. But I never left. How could I ever show my face again? I sold out. I failed you and I failed Melanie. I wasn't Cool.
+
+As I'm typing this, I look to my fingers. These are the fingers of a fraud, a hack, a garbage human. Can I still ask, with a straight face, if I'm Cool Yet, knowing the answer will never be affirmative? When I punch the dirty bathroom mirror, am I still fighting the reflection of a man?
+
+I don't even know if I still grieve for the ideal, unblemished past that could have been. I just want to feel genuine again.
+
+So let's get back to the not-so-distant past of yesterday. I vomited twice, thinking of the show. Only a week before, the horror of getting pasted by Mekhanite cannon fire felt so viscerally real, but now, now it wasn't even horror: it was the ideal. Every minute instant was colored by the desire to be reduced to fine cinders on the way to that rotten show. If I had disintegrated in a single, joyous second, that would have been enough.
+
+You can't know what it felt like, walking inside. Seeing the years of my hard work, everything in perfect working order, sandwiching the absolute most attractive, most //repugnantly beautiful// depiction of the Broken God ever crafted of synthetic chocolate. You want to know what wasn't Broken, Critic? Take a guess.
+
+I'll give you a hint: //Ten. Whole. Inches//.
+
+I need to reiterate: it was //beautiful//. //Divine//. In that horrid span of time it took my brain to register the Gnosis and its glorious stick-shift, it was as if the air had been stolen from my lungs by a fey vacuum. I knew then that Hansarp had been genuine, completely and utterly genuine: this was devotion at its purest, a magnum opus fueled by love in less than a fortnight. In that brief, intoxicating wet-nightmare, even //I// wanted to drop to my knees in reverence and suck off the Broken One.
+
+Can I still call myself The Curator? I feel as a ghost, an empty imprint of a broken man blown away by a divine wind.
+
+I can't remember much between then and The Main Show. Lindholm's botany was beautiful as usual, Zapata played the violin with inhuman grace to an applause of a dozen dead tenants past, Amador and Burg's performance... perhaps in another life, it'd have roused a righteous anger in me. Now, I can only say that I was faintly amused.
+
+And then... then came //I Heart My Prophet//. Then came //Hansarp//.
+
+All at once, as if a million black flies dove from the vents to skin me alive, to strip me of my muscles until only a skeleton remained, I simultaneously stood stunned in silence and, deep in the fractured recesses of my psyche, screamed with a searing, seething fury. I knew then I could stop it, tackle the wretched louse as he sauntered towards that chocolate Mekhane, stop this farce once and for all... if only my feet hadn't been weighted down by the unseen force of my compounded despair.
+
+Hansarp began, and lord help me but I //watched//.
+
+Silently, for that scant eternity, I looked on in a then-unimaginable horror. By some horrid force, some horrid //farce//, my attention remained firmly on that contemptible copper twink sucking his blackened heart out, the conductor to the Menagerie's ruin. His technique was impeccable, Critic. Take solace knowing that my ruin was performed with skill.
+
+Then, Hansarp went off script.
+
+I hesitate to recall the specifics; the imprint left in my mind is one of pathos, of the shapes and colors of Hansarp blending with Mekhane, who looked to be moving in time with its partner. "You had to be there". I wish you were, instead of I.
+
+When, finally, Hansarp took his bow, I checked my watch to find that my mental clock had been frozen in time, two hours short of the one on my wrist. I rubbed my eyes, and only then did I realize I had begun to cry at some indistinct point in the painfully recent past. Of beauty? Of sorrow? Of sheer existential despair? I don't think I care to know.
+
+Did you know I forgot to disinvite Kivelä? Me neither. I have nothing to say of xeir piece: the effigy of Ion, deep in the effigy of the Scarlet King, might have once moved me, towards disgust or awe.
+
+The Menagerie made bank and everyone loved it.
+
+Fuck you.
+
+-//The Curator//
+[[/div]]
