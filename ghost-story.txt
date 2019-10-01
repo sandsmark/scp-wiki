@@ -3,8 +3,7 @@ parent:ad-astra-per-aspera-hub
 [[include :scp-wiki:component:ad-astra-theme]]
 
 [[module css]]
-
-@import url('https://fonts.google.com/specimen/Kalam');
+@import url('https://fonts.googleapis.com/css?family=Kalam&display=swap');
 
 .page {
     display: block;
@@ -21,7 +20,7 @@ parent:ad-astra-per-aspera-hub
     background-repeat: repeat;
     background-size: 100% 20px;
     
-    font-family: 'Kalam';
+    font-family: 'Kalam', cursive;
     font-weight: bold;
     font-size: 150%;
     letter-spacing: 0.3px;
