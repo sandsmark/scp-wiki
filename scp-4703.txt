@@ -24,12 +24,21 @@ title:SCP-4703
 
 
 ------
-
+[[div class="pictures4desk"]]
 [[include component:image-block
     name=http://topia.wdfiles.com/local--files/peppo-wowo/419475400_73559b2b7a_z.jpg|
     caption=SCP-4703 interior.|
-    width=300px
+    width=300px|
+    align=right
 ]]
+[[/div]]
+[[div class="pictures4mobile"]]
+    name=http://topia.wdfiles.com/local--files/peppo-wowo/419475400_73559b2b7a_z.jpg|
+    caption=SCP-4703 interior.|
+    width=300px|
+    align=center
+]]
+[[/div]]
 
 **Special Containment Procedures:** Due to SCP-4703's status as a perfectly legal establishment,[[footnote]]thank you very much[[/footnote]] any direct attempts to shut it down or otherwise prevent members of the public from patronizing the business are considered unlawful. Instead, a Foundation-run grocery store[[footnote]]Super Competitive Prices!™, LLC.[[/footnote]] has been established adjacent to SCP-4703 to draw away potential customers. Advertising campaigns showcasing the Foundation's superior products and offers are to be sustained in perpetuity. 
 
@@ -233,11 +242,32 @@ FOUNDATION LEGAL DEPARTMENT
 .text-part > .main-class {
 margin-left: 0em;
 }
+
+.pictures4mobile {
+    height: 0px;
+    overflow: hidden;
+}
+
+.pictures4desk {
+    height: auto;
+}
+
 @media only screen and (max-width: 600px) {
 
     .addendum {
         margin: 0% 4% 0% 4%;
     }
+
+    .pictures4mobile {
+        height: auto;
+    }
+
+    .pictures4desk {
+        height: 0px;
+        overflow: hidden;
+    }
+
+}
 [[/module]]
 
 [[include component:acs-peppo-split
