@@ -240,6 +240,54 @@ yui-navset.yui-navset-top {
 }
 [[/module]]
 
+[[module css]]
+
+.infobox {
+ display:inline-box;
+ overflow:hidden;
+ position:fixed;
+ right: 1em;
+ bottom: 2em;
+ width: 21%;
+ width: calc(50vw - 520px);
+ min-width: 250px;
+ height:23%;
+ padding:1%;
+ float:top; 
+ box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 6px 20px 0 rgba(0, 0, 0, 0.19);
+ background-color:#ffffff;
+ opacity: 1;
+ transition: all 0.5s ease-out;
+}
+
+.infobox:hover {
+  color:rgba(0, 0, 0, 0.5);
+  background-color:rgba(255, 255, 255, 0.5);
+}
+
+.collab-header{
+ display:none;
+}
+
+@media screen and (max-width:992px) {
+    .infobox {
+     position: relative;
+     margin: 1em auto;
+     right: 0;
+     bottom: 0;
+    }
+}
+
+#page-options-container {
+ background: transparent;
+ position: relative;
+ z-index: 10;
+}
+
+#action-area { position: relative; z-index: 20; }
+
+[[/module]]
+
 [[include component:scp-trans-pride |trans-pride-logo= --] |trans-pride-footer= --]]]
 [!--
 [[div style="border:solid 1px #999999; background:#f6c0c0; padding:5px; margin-bottom: 10px;"]]
@@ -302,6 +350,23 @@ Regarding her thoughts towards her own creations, Poi-Cr@b-091 replied:
 [[/tab]]
 
 [[tab Associated Anomalies]]
+
+[[collapsible show="               " hide="- Hide Author Control Panel"]]
+[[div class="infobox"]]
+@@@@
+[[module ListPages created_by="Nagiros"]]
+Last edited by %%updated_by_linked%% on %%updated_at%%.
+Last comment by %%commented_by_linked%% on %%commented_at%%.
+[[/module]]
+
+[[module CountPages created_by="Nagiros" tags="-fragment"]]
+= {{**%%total%%** standard pages.}}
+[[/module]]
+[[module CountPages created_by="Nagiros"]]
+= {{**%%total%%** pages in total.}}
+[[/module]]
+[[/div]]
+[[/collapsible]]
 
 [[=]]
 {{ACCESSING SITE-17 ANOMALY ARCHIVE}}
