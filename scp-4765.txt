@@ -2,6 +2,7 @@ title:SCP-4765
 [[>]]
 [[module Rate]]
 [[/>]]
+[[include :scp-wiki:component:black-highlighter-theme-dev]]
 [[module css]]
 .page {
     display: block;
@@ -281,7 +282,7 @@ title:SCP-4765
         -ms-flex-align: end;
             align-items: flex-end;
     grid-area: level;
-    font-size: 2.5em;
+    font-size: 1.5em;
     line-height: 0.5;
 }
 
@@ -1915,7 +1916,9 @@ background-color: rgb(var(--white-monochrome, 252, 252, 252));
                 [[/div]]                
             [[/div]]
             [[div_ class="top-right-box"]]
-                [[div_ class="level"]]               
+
+                [[div_ class="level"]]
+                 Level-2               
                 [[/div]]
                 [[div_ class="clearance"]]
                 [[/div]]
