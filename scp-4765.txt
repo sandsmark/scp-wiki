@@ -458,7 +458,7 @@ title:SCP-4765
        -moz-border-radius: 50%;
             border-radius: 50%;
     border: 0.25rem solid rgb(0, 0, 0);
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgb(255, 255, 255);
     -webkit-background-size: contain;
        -moz-background-size: contain;
          -o-background-size: contain;
@@ -473,8 +473,8 @@ title:SCP-4765
     -webkit-border-radius: -webkit-calc(3.53125rem / 2);
        -moz-border-radius: -moz-calc(3.53125rem / 2);
             border-radius: calc(3.53125rem / 2);
-    background-color: rgba(255, 255, 255, 0);
-    border-color: rgba(255, 255, 255, 0);
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
     -webkit-filter: invert(1);
             filter: invert(1);
     background-image: url("http://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/esoteric-icon.svg");
@@ -497,7 +497,7 @@ title:SCP-4765
        -moz-border-radius: 50%;
             border-radius: 50%;
     border: 0.25rem solid rgb(0, 0, 0);
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgb(255, 255, 255);
     -webkit-background-size: contain;
        -moz-background-size: contain;
          -o-background-size: contain;
@@ -517,17 +517,17 @@ title:SCP-4765
 }
 
 .anom-bar-container.keter .text-part > .main-class::before {
-    background-color: rgba(255,255,255,0);
+    background-color: rgb(255,255,255);
     background-image: url("http://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/keter-icon.svg");
 }
 
 .anom-bar-container.euclid .text-part > .main-class::before {
-    background-color: rgba(255,255,255,p);
+    background-color: rgb(255,255,255);
     background-image: url("http://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/euclid-icon.svg");
 }
 
 .anom-bar-container.safe .text-part > .main-class::before {
-    background-color: rgba(255,255,255,0);
+    background-color: rgb(255,255,255);
     background-image: url("http://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/safe-icon.svg");
 }
 
@@ -670,7 +670,7 @@ title:SCP-4765
     top: -moz-calc(50% - 1.5rem);
     top: calc(50% - 1.5rem);
     font-size: 2em;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgb(255, 255, 255);
     -webkit-background-size: contain;
        -moz-background-size: contain;
          -o-background-size: contain;
@@ -707,7 +707,7 @@ title:SCP-4765
     text-align: left;
     font-size: 1em;
     padding-left: 0.5rem;
-    color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
 }
 
 .anom-bar-container.amida .text-part .disrupt-class::before,
@@ -737,7 +737,7 @@ title:SCP-4765
 
 .anom-bar-container.amida .text-part .disrupt-class::after,
 .anom-bar-container.critical .text-part .risk-class::after {
-    background-color: rgba(255,255,255,0);
+    background-color: rgb(255,255,255);
 }
 
 .anom-bar-container.amida .text-part .disrupt-class::after {
@@ -750,7 +750,7 @@ title:SCP-4765
 
 .anom-bar-container.ekhi .text-part .disrupt-class::after,
 .anom-bar-container.danger .text-part .risk-class::after {
-    background-color: rgba(255,255,255,0);
+    background-color: rgb(255,255,255);
 }
 
 .anom-bar-container.ekhi .text-part .disrupt-class::after {
@@ -763,7 +763,7 @@ title:SCP-4765
 
 .anom-bar-container.keneq .text-part .disrupt-class::after,
 .anom-bar-container.warning .text-part .risk-class::after {
-    background-color: rgba(255,255,255,0);
+    background-color: rgb(255,255,255);
 }
 
 .anom-bar-container.keneq .text-part .disrupt-class::after {
@@ -776,7 +776,7 @@ title:SCP-4765
 
 .anom-bar-container.vlam .text-part .disrupt-class::after,
 .anom-bar-container.caution .text-part .risk-class::after {
-    background-color: rgba(255,255,255,0);
+    background-color: rgb(255,255,255);
 }
 
 .anom-bar-container.vlam .text-part .disrupt-class::after {
@@ -789,7 +789,7 @@ title:SCP-4765
 
 .anom-bar-container.dark .text-part .disrupt-class::after,
 .anom-bar-container.notice .text-part .risk-class::after {
-    background-color: rgba(255,255,255,0);
+    background-color: rgb(255,255,255);
 }
 
 .anom-bar-container.dark .text-part .disrupt-class::after {
@@ -1021,15 +1021,15 @@ title:SCP-4765
 
 .danger-diamond > .quadrants > .top-quad.neutralized,
 .danger-diamond > .quadrants > .top-quad.neutralised {
-    background-color: rgba(255, 255, 255 , 0);
+    background-color: rgb(255, 255, 255 ,0);
 }
 
 .danger-diamond > .quadrants > .top-quad.explained {
-    background-color: rgba(255, 255, 255 , 0);
+    background-color: rgb(255, 255, 255 ,0);
 }
 
 .anom-bar-container.esoteric .danger-diamond > .quadrants > .top-quad {
-    background-color: rgba(255, 255, 255 , 0);
+    background-color: rgb(255, 255, 255 ,0);
 }
 
 .anom-bar-container.keter .danger-diamond > .quadrants > .top-quad,
@@ -1180,7 +1180,7 @@ title:SCP-4765
 
 .anom-bar-container.neutralized .danger-diamond > .top-icon,
 .anom-bar-container.neutralised .danger-diamond > .top-icon {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgb(255, 255, 255);
 }
 
 .anom-bar-container.neutralized .danger-diamond > .top-icon::before,
@@ -1201,19 +1201,19 @@ title:SCP-4765
 }
 
 .anom-bar-container.explained .danger-diamond > .top-icon::before {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgb(255, 255, 255);
     background-image: url("http://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/explained-icon.svg");
 }
 
 .anom-bar-container.esoteric .danger-diamond > .top-icon::before {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgb(255, 255, 255);
     background-image: url("http://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/esoteric-icon.svg");
 }
 
 .anom-bar-container.keter .danger-diamond > .top-icon::before,
 .anom-bar-container.amida .danger-diamond > .left-icon::before,
 .anom-bar-container.critical .danger-diamond > .right-icon::before {
-    background-color: rgba(255,255,255,0);
+    background-color: rgb(255,255,255);
 }
 
 .anom-bar-container.keter .danger-diamond > .top-icon::before {
@@ -1230,7 +1230,7 @@ title:SCP-4765
 
 .anom-bar-container.ekhi .danger-diamond > .left-icon::before,
 .anom-bar-container.danger .danger-diamond > .right-icon::before {
-    background-color: rgba(255,255,255,0);
+    background-color: rgb(255,255,255);
 }
 
 .anom-bar-container.ekhi .danger-diamond > .left-icon::before {
@@ -1244,7 +1244,7 @@ title:SCP-4765
 .anom-bar-container.euclid .danger-diamond > .top-icon::before,
 .anom-bar-container.keneq .danger-diamond > .left-icon::before,
 .anom-bar-container.warning .danger-diamond > .right-icon::before {
-    background-color: rgba(255,255,255,0);
+    background-color: rgb(255,255,255);
 }
 
 .anom-bar-container.euclid .danger-diamond > .top-icon::before {
@@ -1261,7 +1261,7 @@ title:SCP-4765
 
 .anom-bar-container.vlam .danger-diamond > .left-icon::before,
 .anom-bar-container.caution .danger-diamond > .right-icon::before {
-    background-color: rgba(255,255,255,0);
+    background-color: rgb(255,255,255);
 }
 
 .anom-bar-container.vlam .danger-diamond > .left-icon::before {
@@ -1275,7 +1275,7 @@ title:SCP-4765
 .anom-bar-container.safe .danger-diamond > .top-icon::before,
 .anom-bar-container.dark .danger-diamond > .left-icon::before,
 .anom-bar-container.notice .danger-diamond > .right-icon::before {
-    background-color: rgba(255,255,255,0);
+    background-color: rgb(255,255,255);
 }
 
 .anom-bar-container.safe .danger-diamond > .top-icon::before {
