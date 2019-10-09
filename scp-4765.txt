@@ -457,10 +457,8 @@ title:SCP-4765
     -webkit-border-radius: 50%;
        -moz-border-radius: 50%;
             border-radius: 50%;
-    border: 0.25rem solid rgb(12, 12, 12);
-border: 0.25rem solid rgb(var(--black-monochrome, 12, 12, 12));
-    background-color: rgb(252, 252, 252);
-background-color: rgb(var(--white-monochrome, 252, 252, 252));
+    border: 0.25rem solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     -webkit-background-size: contain;
        -moz-background-size: contain;
          -o-background-size: contain;
@@ -475,9 +473,8 @@ background-color: rgb(var(--white-monochrome, 252, 252, 252));
     -webkit-border-radius: -webkit-calc(3.53125rem / 2);
        -moz-border-radius: -moz-calc(3.53125rem / 2);
             border-radius: calc(3.53125rem / 2);
-    background-color: rgb(252, 252, 252);
-background-color: rgb(var(--white-monochrome, 252, 252, 252));
-    border-color: rgb(var(--white-monochrome, 252, 252, 252));
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
     -webkit-filter: invert(1);
             filter: invert(1);
     background-image: url("http://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/esoteric-icon.svg");
@@ -594,10 +591,8 @@ background-color: rgb(var(--white-monochrome, 252, 252, 252));
 }
 
 .anom-bar-container.explained .text-part .main-class {
-    background-color: rgba(252, 252, 252 ,0.15);
-    background-color: rgba(var(--white-monochrome, 252, 252, 252),0.15);
-    border-left: 0.75rem solid rgba(12, 12, 12 ,1);
-    border-left: 0.75rem solid rgba(var(--black-monochrome, 12, 12, 12),1);
+    background-color: rgba(255, 255, 255 ,0);
+    border-left: 0.75rem solid rgba(0, 0, 0 ,1);
 }
 
 .anom-bar-container.keter .text-part .main-class,
@@ -668,16 +663,14 @@ background-color: rgb(var(--white-monochrome, 252, 252, 252));
     -webkit-border-radius: 50%;
        -moz-border-radius: 50%;
             border-radius: 50%;
-    border: 0.25rem solid rgb(12, 12, 12);
-border: 0.25rem solid rgb(var(--black-monochrome, 12, 12, 12));
+    border: 0.25rem solid rgb(0, 0, 0);
     width: 2.5rem;
     height: 2.5rem;
     top: -webkit-calc(50% - 1.5rem);
     top: -moz-calc(50% - 1.5rem);
     top: calc(50% - 1.5rem);
     font-size: 2em;
-    background-color: rgb(252, 252, 252);
-background-color: rgb(var(--white-monochrome, 252, 252, 252));
+    background-color: rgb(255, 255, 255);
     -webkit-background-size: contain;
        -moz-background-size: contain;
          -o-background-size: contain;
@@ -714,8 +707,7 @@ background-color: rgb(var(--white-monochrome, 252, 252, 252));
     text-align: left;
     font-size: 1em;
     padding-left: 0.5rem;
-    color: rgb(252, 252, 252);
-    color: rgb(var(--white-monochrome, 252, 252, 252));
+    color: rgb(255, 255, 255);
 }
 
 .anom-bar-container.amida .text-part .disrupt-class::before,
@@ -984,8 +976,7 @@ background-color: rgb(var(--white-monochrome, 252, 252, 252));
     position: absolute;
     top: 2%;
     left: 16.25%;
-    background-color: rgb(252, 252, 252);
-background-color: rgb(var(--white-monochrome, 252, 252, 252));
+    background-color: rgb(255, 255, 255);
     -webkit-clip-path: polygon(22% 0, 77% 0, 100% 31%, 50% 100%, 0 31%);
             clip-path: polygon(22% 0, 77% 0, 100% 31%, 50% 100%, 0 31%);
     -webkit-transform-origin: bottom center;
@@ -1020,8 +1011,7 @@ background-color: rgb(var(--white-monochrome, 252, 252, 252));
 }
 
 .danger-diamond > .quadrants > .bottom-quad.none {
-    background-color: rgb(252, 252, 252 ,0.25);
-    background-color: rgb(var(--white-monochrome, 252, 252, 252),0.25);
+    background-color: rgb(255, 255, 255 ,0);
 }
 
 .danger-diamond > .quadrants > .top-quad.pending {
@@ -1035,8 +1025,7 @@ background-color: rgb(var(--white-monochrome, 252, 252, 252));
 }
 
 .danger-diamond > .quadrants > .top-quad.explained {
-    background-color: rgb(252, 252, 252 ,0.25);
-    background-color: rgb(var(--white-monochrome, 252, 252, 252),0.25);
+    background-color: rgb(255, 255, 255 ,0);
 }
 
 .anom-bar-container.esoteric .danger-diamond > .quadrants > .top-quad {
@@ -1191,8 +1180,7 @@ background-color: rgb(var(--white-monochrome, 252, 252, 252));
 
 .anom-bar-container.neutralized .danger-diamond > .top-icon,
 .anom-bar-container.neutralised .danger-diamond > .top-icon {
-    background-color: rgb(252, 252, 252);
-background-color: rgb(var(--white-monochrome, 252, 252, 252));
+    background-color: rgb(255, 255, 255);
 }
 
 .anom-bar-container.neutralized .danger-diamond > .top-icon::before,
@@ -1213,8 +1201,7 @@ background-color: rgb(var(--white-monochrome, 252, 252, 252));
 }
 
 .anom-bar-container.explained .danger-diamond > .top-icon::before {
-    background-color: rgb(252, 252, 252);
-background-color: rgb(var(--white-monochrome, 252, 252, 252));
+    background-color: rgb(255, 255, 255);
     background-image: url("http://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/explained-icon.svg");
 }
 
