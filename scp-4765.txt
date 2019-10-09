@@ -359,12 +359,12 @@ title:SCP-4765
     width: 100%; 
     height: 6rem;
     font-weight: 600;
-    -webkit-box-shadow: 0 -0.5rem 0 0 rgb(12, 12, 12);
-       -moz-box-shadow: 0 -0.5rem 0 0 rgb(12, 12, 12);
-            box-shadow: 0 -0.5rem 0 0 rgb(12, 12, 12);
-    -webkit-box-shadow: 0 -0.5rem 0 0 rgb(var(--black-monochrome, 12, 12, 12));
-       -moz-box-shadow: 0 -0.5rem 0 0 rgb(var(--black-monochrome, 12, 12, 12));
-            box-shadow: 0 -0.5rem 0 0 rgb(var(--black-monochrome, 12, 12, 12));
+    -webkit-box-shadow: 0 -0.5rem 0 0 rgb(0, 0, 0);
+       -moz-box-shadow: 0 -0.5rem 0 0 rgb(0, 0, 0);
+            box-shadow: 0 -0.5rem 0 0 rgb(0, 0, 0);
+    -webkit-box-shadow: 0 -0.5rem 0 0 rgb(var(--black-monochrome, 0, 0, 0));
+       -moz-box-shadow: 0 -0.5rem 0 0 rgb(var(--black-monochrome, 0, 0, 0));
+            box-shadow: 0 -0.5rem 0 0 rgb(var(--black-monochrome, 0, 0, 0));
     margin-top: -0.5rem;
     padding-top: 0.25rem;
 }
@@ -695,8 +695,8 @@ title:SCP-4765
        -moz-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    background-color: rgb(12, 12, 12);
-    background-color: rgb(var(--black-monochrome, 12, 12, 12));
+    background-color: rgb(0, 0, 0);
+    background-color: rgb(var(--black-monochrome, 0, 0, 0));
     width: 3rem;
     height: 3rem;
     top: -webkit-calc(50% - 1.5rem);
@@ -904,12 +904,12 @@ title:SCP-4765
     position: relative;
     grid-area: diamond-part;
     padding-left: 1rem;
-    -webkit-box-shadow: -0.5rem 0 0 0 rgb(12, 12, 12);
-       -moz-box-shadow: -0.5rem 0 0 0 rgb(12, 12, 12);
-            box-shadow: -0.5rem 0 0 0 rgb(12, 12, 12);
-    -webkit-box-shadow: -0.5rem 0 0 0 rgb(var(--black-monochrome, 12, 12, 12));
-       -moz-box-shadow: -0.5rem 0 0 0 rgb(var(--black-monochrome, 12, 12, 12));
-            box-shadow: -0.5rem 0 0 0 rgb(var(--black-monochrome, 12, 12, 12));
+    -webkit-box-shadow: -0.5rem 0 0 0 rgb(0, 0, 0);
+       -moz-box-shadow: -0.5rem 0 0 0 rgb(0, 0, 0);
+            box-shadow: -0.5rem 0 0 0 rgb(0, 0, 0);
+    -webkit-box-shadow: -0.5rem 0 0 0 rgb(var(--black-monochrome, 0, 0, 0));
+       -moz-box-shadow: -0.5rem 0 0 0 rgb(var(--black-monochrome, 0, 0, 0));
+            box-shadow: -0.5rem 0 0 0 rgb(var(--black-monochrome, 0, 0, 0));
 }
 
 .danger-diamond {
@@ -1015,8 +1015,8 @@ title:SCP-4765
 }
 
 .danger-diamond > .quadrants > .top-quad.pending {
-    background-color: rgb(12, 12, 12 ,0.25);
-    background-color: rgb(var(--black-monochrome, 12, 12, 12),0.25);
+    background-color: rgb(0, 0, 0 ,0.25);
+    background-color: rgb(var(--black-monochrome, 0, 0, 0),0.25);
 }
 
 .danger-diamond > .quadrants > .top-quad.neutralized,
@@ -1106,8 +1106,8 @@ title:SCP-4765
     -webkit-border-radius: 50%;
        -moz-border-radius: 50%;
             border-radius: 50%;
-    border: 0.1875rem solid rgb(12, 12, 12);
-    border: 0.1875rem solid rgb(var(--black-monochrome, 12, 12, 12));
+    border: 0.1875rem solid rgb(0, 0, 0);
+    border: 0.1875rem solid rgb(var(--black-monochrome, 0, 0, 0));
     overflow: hidden;
     z-index: 2;
 }
@@ -1144,7 +1144,7 @@ title:SCP-4765
 }
 
 .anom-bar-container.pending .danger-diamond > .top-icon {
-    background-color: rgb(var(--black-monochrome, 12, 12, 12));
+    background-color: rgb(var(--black-monochrome, 0, 0, 0));
 }
 
 .anom-bar-container:not(.esoteric) .danger-diamond > .bottom-icon {
@@ -1195,8 +1195,8 @@ title:SCP-4765
 }
 
 .anom-bar-container.pending .danger-diamond > .top-icon::before {
-    background-color: rgb(12, 12, 12);
-    background-color: rgb(var(--black-monochrome, 12, 12, 12));
+    background-color: rgb(0, 0, 0);
+    background-color: rgb(var(--black-monochrome, 0, 0, 0));
     background-image: url("http://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/pending-icon.svg");
 }
 
