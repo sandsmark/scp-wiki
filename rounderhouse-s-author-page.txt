@@ -474,11 +474,25 @@ Header art by [[user Athosnetwork]]
         transform:skewY(-7deg);
               }
 }
+ @-webkit-keyframes sham {
+    from {
+        transform:rotate(1deg);
+        transform:skewY(7deg);
+              }
+    to {
+        transform:rotate(-1deg);
+        transform:skewY(-7deg);
+              }
+}
 .shimmy {
   animation-name: sham;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  -webkit-animation-name: sham;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
 }
 
 
