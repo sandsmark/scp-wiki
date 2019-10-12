@@ -3,6 +3,7 @@ title:The Rounderpage
 [[div style="background: url(http://scp-wiki.wdfiles.com/local--files/rounderhouse-s-author-page/rounderception.png); height: 3%; position: sticky; top: 0; text-align: center; border: 4px double #000; "]]
 [[size 300%]][[span style="font-family: 'Bungee Shade', cursive;" color: "#FFF !important;"]]**THE ROUNDERPAGE**[[/span]][[/size]]
 [[/div]]
+[[div style="transform:rotate(1deg);    transform:skewY(7deg);"]]
 [[div class="content-panel standalone series"]]
 [[=]]
 [[size 300%]]
@@ -447,6 +448,8 @@ Header art by [[user Athosnetwork]]
 [[/size]]
 [[/=]]
 
+[[/div]]
+
 [[collapsible hideLocation="both" show="              " hide="- Close"]]
 + Rounderbox
 ++ This is my place for testing shit out. Don't touch stuff here if i don't say so.
@@ -461,15 +464,6 @@ Header art by [[user Athosnetwork]]
 [[/module]]
 
 [[module css]]
-body {
-    transform:rotate(1deg);
-    transform:skewY(7deg);
-
-}
-body:hover {
-    transform:rotate(-1deg);
-    transform:skewY(-7deg);
-}
 @keyframes blinker {
   0% {opacity: 1}
   100% {
