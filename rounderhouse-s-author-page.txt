@@ -3,7 +3,7 @@ title:The Rounderpage
 [[div style="background: url(http://scp-wiki.wdfiles.com/local--files/rounderhouse-s-author-page/rounderception.png); height: 3%; position: sticky; top: 0; text-align: center; border: 4px double #000; z-index: 100;"]]
 [[size 300%]][[span style="font-family: 'Bungee Shade', cursive;" color: "#FFF !important;"]]**THE ROUNDERPAGE**[[/span]][[/size]]
 [[/div]]
-[[div style="transform:rotate(1deg);    transform:skewY(7deg);"]]
+[[div class="shimmy"]]
 [[div class="content-panel standalone series"]]
 [[=]]
 [[size 300%]]
@@ -464,6 +464,15 @@ Header art by [[user Athosnetwork]]
 [[/module]]
 
 [[module css]]
+
+.shimmy {
+    transform:rotate(1deg);
+    transform:skewY(7deg);
+}
+shimmy:hover {
+    transform:rotate(-1deg);
+    transform:skewY(-7deg);
+}
 @keyframes blinker {
   0% {opacity: 1}
   100% {
