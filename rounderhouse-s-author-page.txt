@@ -464,15 +464,22 @@ Header art by [[user Athosnetwork]]
 [[/module]]
 
 [[module css]]
-
+ @keyframes sham {
+    from {
+        transform:rotate(1deg);
+        transform:skewY(7deg);
+              }
+    to {
+        transform:rotate(-1deg);
+        transform:skewY(-7deg);
+              }
+}
 .shimmy {
-    transform:rotate(1deg);
-    transform:skewY(7deg);
+  animation-name: sham;
+  animation-duration: 4s;
 }
-shimmy:hover {
-    transform:rotate(-1deg);
-    transform:skewY(-7deg);
-}
+
+
 @keyframes blinker {
   0% {opacity: 1}
   100% {
