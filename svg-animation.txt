@@ -32,6 +32,7 @@ title:7happy7's SVG-animation Gallery
 [[*user Tanija]](RTI)
 [[*user thd-glasses]](BE)
 [[*user TPS-Geronam]](CCC)
+[[*user tsucchii0301]](JOICL)
 [[*user TwistedGears]](old CI)
 
 = **CC BY-SA 3.0**
@@ -64,6 +65,7 @@ title:7happy7's SVG-animation Gallery
 @import url("http://www.scp-wiki.net/local--files/svg-animation/cotbg.css");
 @import url("http://www.scp-wiki.net/local--files/svg-animation/beyondE.css");
 @import url("http://www.scp-wiki.net/local--files/svg-animation/rTech.css");
+@import url("http://www.scp-wiki.net/local--files/svg-animation/joicl.css");
 
 .artContent h2 {
     text-align: center;
@@ -264,6 +266,15 @@ Some SVGs may not be displayed correctly in **IE**[[footnote]] ALL OF THEM ARE N
 > [[include :scp-wiki:svg-animation |rTech=true|width=100%]]
 ----
 
++ GoI-JP
+[[div class="joicl animSVG" style="padding-bottom: 100%; background-image: var(--joicl);"]]
+[[/div]]
+> Based on [[*user tsucchii0301]]'s JOICL logo(SCP-JP)
+> http://ja.scp-wiki.net/goi-icon
+> ----
+> [[include :scp-wiki:svg-animation |joicl=true|width=100%]]
+----
+
 + non-GoI logos
 [[div class="recycle animSVG" style="padding-bottom: 240px; background-image: var(--recycle);"]]
 [[/div]]
@@ -307,6 +318,14 @@ Some SVGs may not be displayed correctly in **IE**[[footnote]] ALL OF THEM ARE N
 @import url("http://www.scp-wiki.net/local--files/svg-animation/rTech.css");
 [[/module]]
 [[div class="rTech animSVG" style="width: {$width}; padding-bottom: calc({$width} * 241 / 424); background-image: var(--rTech);"]]
+[[/div]]
+[[/iftags]]
+
+[[iftags [[#ifexpr {$joicl} == (true) | - ]]]]
+[[module CSS]]
+@import url("http://www.scp-wiki.net/local--files/svg-animation/joicl.css");
+[[/module]]
+[[div class="joicl animSVG" style="width: {$width}; padding-bottom: {$width}; background-image: var(--joicl);"]]
 [[/div]]
 [[/iftags]]
 
