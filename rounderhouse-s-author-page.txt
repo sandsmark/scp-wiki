@@ -610,6 +610,17 @@ z-index: 201;
     color: #000000;
 }
 
+div#page-options-bottom-2 > a, div#page-options-bottom > a {
+  animation-name: sham;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  -webkit-animation-name: sham;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate-reverse;
+}
+
 #side-bar .side-block {
     padding: 10px;
     border: 1px solid #444;
