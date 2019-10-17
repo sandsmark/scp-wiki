@@ -1,4 +1,6 @@
 title:Nagiros' PoI File
+[[include :scp-sandbox-3:component:amec-theme]]
+[!--
 [[module CSS]]
 /* LINK COLOR */
 a {
@@ -109,18 +111,6 @@ div#side-bar div.side-block {
 .close-credits,
 .credit-back {
     filter: hue-rotate(275deg);
-}
- 
-/* AYER'S INFO MODULE */
-:root {
-     --barColour: #000098;
-}
- 
-/* HERITAGE MODULE */
-.heritage-rating-module {
-    background-color: #000098;
-    border: solid 1px #ccc066;
-    box-shadow: 0 1px 3px rgba(0,0,0,.25);
 }
 
 /* TAB STUFF */
@@ -241,7 +231,7 @@ yui-navset.yui-navset-top {
 [[/module]]
 
 [[include component:scp-trans-pride |trans-pride-logo= --] |trans-pride-footer= --]]]
-[!--
+--]
 [[div style="border:solid 1px #999999; background:#f6c0c0; padding:5px; margin-bottom: 10px;"]]
 [[=]]
 ++++ NOTICE FROM THE OFFICE OF A RAD CRAB WITCH 
@@ -249,7 +239,7 @@ yui-navset.yui-navset-top {
 Woah there, dude! This page is currently undergoing maintenance and may look even worse than normal. Sorry about that!
 [[/=]]
 [[/div]]
---]
+
 @@ @@
 
 [[include info:start]]
