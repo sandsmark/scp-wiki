@@ -24,6 +24,19 @@ color: #FFF;}
 .antimeme {-webkit-filter: blur(4px);
 filter: blur(4px);
 }
+
+#page-content > .collapsible-block {
+    display: block;
+    text-align: center;
+    padding: 0.75em;
+    background-color: lightgrey;
+    border-top: 0.125rem dashed slategrey;
+    border-bottom: 0.125rem dashed slategrey;
+}
+
+#page-content > .collapsible-block .collapsible-block-content {
+    text-align: left;
+}
 [[/module]]
 
 
