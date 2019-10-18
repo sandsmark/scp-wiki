@@ -25,6 +25,7 @@ sup{
 body{
     --cutColour: #fafafa;
     --barColour: #590505;
+    color: rgb(12, 12, 12);
 }
 .translation_block{
     display: none;
@@ -45,13 +46,13 @@ body{
 
 /* DIV BLOCKS */
 .report-box{
-    border: 1px solid #444;
+    border: 2px solid rgb(12, 12, 12);
     background-color: white;
     padding: .25em 1em;
     margin-bottom: 1em;
 }
 .quote-block{
-    border: 1px double #999;
+    border: 2px double #999;
     background-color: #f4f4f4;
     padding: .25em 1em;
     margin-bottom: 1em;
@@ -65,6 +66,7 @@ body{
     border: none;
     height: 2px;
 }
+.dark-hr hr{ background-color: rgb(12, 12, 12); }
 hr{
      margin: 1em 0;
      padding: 0;
@@ -112,7 +114,9 @@ hr{
 [[/div]]
 
 [[div style="text-align: justify; overflow-wrap: break-word;"]]
-> = **Special Containment Procedures [OUTDATED]** 
+> [[=]]
+> +++ Special Containment Procedures [OUTDATED]
+> [[/=]]
 > ----
 > To ensure that horse breeding continues as a controlled element and to avoid further progression of the anomaly, Foundation personnel within the Parazoology Division currently operate various tiers of the North American equine industry.
 > 
@@ -159,7 +163,7 @@ An estimated 750,000 persons within the continental United States have contracte
 [[/div]]
 [[=]]
 ++ Addendum 3787.1
-+++ ##darkred|SCP-3787 UPDATE##
++++ [[span style="color: darkred;"]]SCP-3787 UPDATE[[/span]]
 [[/=]]
 [[div class="lite-header"]]
 ----
@@ -178,7 +182,7 @@ As of July 29, research efforts into a cure have proven ineffective.
 [[/div]]
 [[=]]
 ++ Addendum 3787.2
-+++ ##darkred|PROJECT: DIRE HORSE##
++++ [[span style="color: darkred;"]]PROJECT: DIRE HORSE[[/span]]
 [[/=]]
 [[div class="lite-header"]]
 ----
@@ -191,10 +195,18 @@ Since it began, the accelerated spread of this illness has led to the death of ~
 [[div style="text-align: center;"]]
 [[collapsible show="► Project: DIRE HORSE ◄" hide="▲ Close ▲"]]
 [[/div]]
+
+[[div class="dark-hr"]]
 ----
+[[/div]]
+
 [[=]]
-+++ [[span style="color: rgb(12, 12, 12);"]]Summary of Project: DIRE HORSE[[/span]]
++++ SUMMARY OF PROJECT: DIRE HORSE
 [[/=]]
+
+[[div class="dark-hr"]]
+----
+[[/div]]
 
 [[f>image http://scp-ru.wdfiles.com/local--files/list-of-foundation-s-internal-departments/sd.png style="width: 90px;"]]
 
@@ -220,28 +232,36 @@ To reduce public awareness of the full extent of the spread of the equine illnes
 [[div style="text-align: center;"]]
 [[collapsible show="► Procedure MNEMOSYNE ◄" hide="▲ Close ▲"]]
 [[/div]]
+
+[[div class="dark-hr"]]
 ----
+[[/div]]
+
 [[div class="orderwrapper"]]
 [[div class="council1"]]
 [[/div]]
 [[div class="ordertitle"]]
-+* [[span style="color: rgb(12, 12, 12);"]]THE ANTIMEMETICS DIVISION[[/span]]
++* THE ANTIMEMETICS DIVISION
 [[/div]]
 [[div class="orderdescription"]]
  _
-+* [[span style="color: rgb(12, 12, 12);"]]DECOMISSIONING REPORT[[/span]]
-[[span style="color: rgb(12, 12, 12);"]]The following file is classified under Level 4/3787 (SECRET). 
-Unauthorized access is forbidden.[[/span]]
++* DECOMISSIONING REPORT
+The following file is classified under Level 4/3787 (SECRET). 
+Unauthorized access is forbidden.
 [[/div]]
 [[div class="itemno"]]
-+* [[span style="color: rgb(12, 12, 12);"]]PROJECT: DIRE HORSE[[/span]]
++* PROJECT: DIRE HORSE
 [[/div]]
 [[/div]]
 
 [[module CSS]]
-.orderwrapper {position: relative;width: auto;text-align: center;}.council1 {position: relative;top: 0;bottom: 0;left: 0;right: 0;width: 295px;height: 295px;margin: auto;background-image: url( "http://scp-wiki.wdfiles.com/local--files/scp-3787/antimemetics_trans.png" );background-size: 295px 295px;background-repeat: no-repeat;background-position: center;}.ordertitle {position: absolute;left: 0;right: 0;top: 38px;}.ordertitle h1 {font-size: 220%;color: #555;}.orderdescription {position: absolute;left: 0;right: 0;top: 85px;width: 100%;}.orderdescription p {font-size: 90%;color: #555;}.orderdescription h1 {font-size: 120%;color: #555;}.itemno {position: absolute;left: 0;right: 0;bottom: 27px;}.itemno h1 {font-size: 170%;color: #555;}
+.orderwrapper {position: relative;width: auto;text-align: center;}.council1 {position: relative;top: 0;bottom: 0;left: 0;right: 0;width: 295px;height: 295px;margin: auto;background-image: url( "http://scp-wiki.wdfiles.com/local--files/scp-3787/antimemetics_trans.png" );background-size: 295px 295px;background-repeat: no-repeat;background-position: center;}.ordertitle {position: absolute;left: 0;right: 0;top: 38px;}.ordertitle h1 {font-size: 220%;color: rgb(12, 12, 12);}.orderdescription {position: absolute;left: 0;right: 0;top: 85px;width: 100%;}.orderdescription p {font-size: 90%;color: rgb(12, 12, 12);}.orderdescription h1 {font-size: 120%;color: rgb(12, 12, 12);}.itemno {position: absolute;left: 0;right: 0;bottom: 27px;}.itemno h1 {font-size: 170%;color: rgb(12, 12, 12);}
 [[/module]]
+
+[[div class="dark-hr"]]
 ----
+[[/div]]
+
 [[div style="text-align: justify; overflow-wrap: break-word;"]]
 [[include :scp-sandbox-3:image-zoom name=http://scp-wiki.wdfiles.com/local--files/scp-3787/site-41.jpg|caption=Site-41 facility "Aleph".|width=300px|align=right]]
 
@@ -251,9 +271,9 @@ To prevent environmental contamination, expired SCP-3787-affected horses are und
 # Foundation personnel planted in the North American equine industry are to track all areas affected by mass die-offs. Expired horses identified during this process are to be removed from affected areas on an immediate basis and taken to Site-41 facility "Aleph" for neutralization. 
 # A random pool of 1,500 expired horses is to be stored for future testing.
 
-Neutralization efforts will operate with the end goal of destroying all expired horses affected by SCP-3787. Per __Procedure MNEMOSYNE__, destroyed subjects are to be broken down into multi-component slurry to begin the transformation into Class-W Mnestics material, as a primary component of modern mnestics is an admixture of various parts of horse anatomy.[[footnote]]For further information, see: Dr. Lyn Marness, "Glue Huffing and Dutch Occultism: Why the Best Bad Ideas Are Seldom Forgotten." //Understanding Antimemetics//, 1st ed., (1976): 393.[[/footnote]]
+Neutralization efforts will operate with the end goal of destroying all expired horses affected by SCP-3787. Per __Procedure MNEMOSYNE__, destroyed subjects are to be broken down into multi-component slurry to begin the transformation into Class-W Mnestics material, as a primary component of modern mnestics is an admixture of various parts of horse anatomy.[[footnote]]For further information, see: Dr. Marness, L. (1976). Glue Huffing and Dutch Occultism: Why the Best Bad Ideas Are Seldom Forgotten. //Understanding Antimemetics, 1//(1), 393.[[/footnote]]
 
-As of August 20, this aspect of Project: DIRE HORSE has been taken over by the --[[[antimemetics-division-hub|Antimemetics Division]]]--.[[footnote]][[span style="font-weight: bold; font-family: monospace; font-size: 150%;"]][DATA LOST][[/span]][[/footnote]]
+As of August 20, this aspect of Project: DIRE HORSE has been taken over by the --[[[antimemetics-division-hub|Antimemetics Division]]]--.[[footnote]][[span style="font-weight: bold; font-family: monospace; font-size: 125%;"]][DATA LOST][[/span]][[/footnote]]
 [[/div]]
 [[/collapsible]]
 [[/div]]
@@ -264,7 +284,7 @@ As of August 20, this aspect of Project: DIRE HORSE has been taken over by the -
 [[/div]]
 [[=]]
 ++ Addendum 3787.3
-+++ ##darkred|INCIDENT REPORT 41-ALEPH-2021-246##
++++ [[span style="color: darkred;"]]INCIDENT REPORT 41-ALEPH-2021-246[[/span]]
 [[/=]]
 [[div class="lite-header"]]
 ----
@@ -277,27 +297,41 @@ On September 3, hostile anomalous entities attempted to force access into Site-4
 [[div style="text-align: center;"]]
 [[collapsible show="► Incident Report 41-Aleph-2021-246 ◄" hide="▲ Close ▲"]]
 [[/div]]
+
+[[div class="dark-hr"]]
 ----
-= **VIDEO LOG**
+[[/div]]
+
+[[=]]
++++ VIDEO LOG
+[[/=]]
+
+[[div class="dark-hr"]]
 ----
+[[/div]]
+
 [[<]]
-**Note:** Due to the high volume of antimemetic anomalies on-site, all cameras at Site-41 are outfitted with a Mariotte-Pashler antimemetic perception filter. For identification purposes, anomalies corresponding with this description are outlined in red.
+**NOTE:** Due to the high volume of antimemetic anomalies on-site, all cameras at Site-41 are outfitted with a Mariotte-Pashler antimemetic perception filter. For identification purposes, anomalies corresponding with this description are outlined in red.
+
+[[div class="dark-hr"]]
 ----
-= **<Begin Log, 01:04 AM>**
+[[/div]]
+
+= **<Begin Log -- 01:04 AM>**
 
 //[A large wheel-shaped anatomical mass (automatically marked in red) emerges near Site-41. The anatomical structure disables a surveillance pylon at 50 km/h. Security alarms whine as the mass charges toward nearby MNEMOSYNE production facility "Aleph".]//
 
 //[Mobile Task Force Chai-10 ("Oxygenated Morons"), a three-member fast-insertion unit operating a light strike vehicle (LSV) outfitted with an M2 heavy machine gun, approaches the pylon to investigate. The mass appears to notice the task force and freezes in place, shuddering as it whinnies.]//
 
-**CH-10-Lead GARTER:** //[Quietly.]// Easy there, girl. You're a //stunner//, aren't you?
+**CH-10-Lead GARTER:** Easy there, girl. You're a //stunner//, aren't you?
 
 **CH-10 CASSIUS:** Who are you talking to?
 
-**CH-10-Lead GARTER:** //[Groans.]// Turn on your filter, dumbass. Things are about to get hairy.
+**CH-10-Lead GARTER:** //[He groans.]// Turn on your filter, dumbass. Things are about to get hairy.
 
-**CH-10 CASSIUS:** //[Pause.]// Holy shit!
+**CH-10 CASSIUS:** //[He fumbles with his gear.]// Holy shit!
 
-**CH-10 AZALEA:** Can our weapons even hit that thing? I mean, it's antimemetic, and the ammo's not spell-coated or anything. What if it passes right through?
+**CH-10 AZALEA:** Can our weapons even hit that thing? //[She hesitates.]// I mean, it's antimemetic, and the ammo's not spell-coated or anything. What if it passes right through?
 
 //[The mass transforms into a ball, expanding.]//
 
@@ -319,9 +353,13 @@ On September 3, hostile anomalous entities attempted to force access into Site-4
 
 //[Audio surveillance registers a sharp equine vocalization -- loud at first, but eventually becoming fainter before terminating altogether.]//
 
-= **<End Log, 01:26 AM>**
+= **<End Log -- 01:26 AM>**
+
+[[div class="dark-hr"]]
 ----
-**Closing Remarks:** The next morning, site security launched an investigation on the premises. Security personnel found the equine entity trapped within the LSV, its form blackened and shrivelled: terminated by prolonged exposure to intense light. 
+[[/div]]
+
+**CLOSING REMARKS:** The next morning, site security launched an investigation on the premises. Security personnel found the equine entity trapped within the LSV, its form blackened and shrivelled -- terminated by prolonged exposure to intense light. 
 
 Foundation cryptid analysts have launched an investigation into the nature of these newly discovered equine entities.
 [[/<]]
@@ -334,7 +372,7 @@ Foundation cryptid analysts have launched an investigation into the nature of th
 [[/div]]
 [[=]]
 ++ Addendum 3787.4
-+++ ##darkred|INVESTIGATION##
++++ [[span style="color: darkred;"]]INVESTIGATION[[/span]]
 [[/=]]
 [[div class="lite-header"]]
 ----
@@ -350,7 +388,9 @@ A full description of 3787-N is as follows.
 [[collapsible show="► Description of 3787-N ◄" hide="▲ Close ▲"]]
 [[/div]]
 ----
-= **3787-N DESCRIPTION**
+[[=]]
++++ 3787-N DESCRIPTION
+[[/=]]
 ----
 [[<]]
 3787-N designates a collective of predatory, intelligent, semi-humanoid equine entities. 3787-N are composed of a malleable cartilage structure integrated with groupings of musculature typical of horses.
@@ -388,14 +428,14 @@ Foundation personnel attempting to hinder the effects of SCP-3787 also face aggr
 [[/div]]
 [[=]]
 ++ Addendum 3787.5
-+++ ##darkred|FURTHER ACTIONS TAKEN##
++++ [[span style="color: darkred;"]]FURTHER ACTIONS TAKEN[[/span]]
 [[/=]]
 [[div class="lite-header"]]
 ----
 [[/div]]
 @@ @@
 
-Mobile Task Force Pi-5 ("Glue Factory") has formed to repel the attacks of 3787-N. Each member of Pi-5 is trained to deal with antimemetic anomalies, and is to remain on a strict Class-W mnestic prescription. A summary of the task force is as follows:
+Mobile Task Force Pi-5 ("Glue Factory") has formed to repel the attacks of 3787-N. Each member of Pi-5 is trained to deal with antimemetic anomalies and is to remain on a strict Class-W Mnestic prescription. A summary of the task force is as follows:
 
 * 40 combat operatives using light-based weaponry such as the 1000W N-62A Laser Optics Pistol, the 2000W G1A Tactical Solid-state Laser Rifle, and the prototype 30,000W Basok-Prokhorov RX-7Z Hard Light Heavy Rifle ("Nulltaker");
 * 4000 lm flashlights and interfaces with night vision and blue-light eye protection lenses;
