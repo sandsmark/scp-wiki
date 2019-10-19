@@ -292,6 +292,30 @@ with [[user Captain Kirby]]
 [[=]]
 [[size 300%]]
 [[span style="font-family: 'Bungee Shade', cursive;" color: "#D4AF37;"]]
+**Wanderer's Library**
+[[/span]]
+[[/size]]
+[[/=]]
+@@ @@
+@@ @@
+[[=]]
+[[collapsible hideLocation="both" show="REVEAL" hide="↑"]]
+
+[[div_ class="border"]]
+[[image http://wanderers-library.wdfiles.com/local--files/component%3Atheme/wl_logo.png width="60px"]]
+++ Heavy lies the crown of knowledge,
+++ Bringing naught but misery.
+++ These tomes we cast to the darkness,
+++ Never to harm the Garden.
+[[/div]]
+@@ @@
+@@ @@
+[[/collapsible]]
+[[/=]]
+----
+[[=]]
+[[size 300%]]
+[[span style="font-family: 'Bungee Shade', cursive;" color: "#D4AF37;"]]
 **Fanart**
 [[/span]]
 [[/size]]
@@ -504,6 +528,25 @@ Header art by [[user Athosnetwork]]
   100% {
     opacity: 0;
   }
+}
+
+@import url("http://wanderers-library.wikidot.com/component:dustjacket-theme-typefaces/code/1");
+@import url("https://use.typekit.net/tqr1skr.css");
+
+#page-content .border {
+    box-sizing: border-box;
+    border: 2vw solid rgba(0,0,0,0.5);
+    border-image: url(http://wanderers-library.wdfiles.com/local--files/component%3Adustjacket-theme/wl_border.png) 600 round;
+    border-image-width: 6;
+    background-color: rgb(45, 70, 45);
+    border-radius: 3vw;
+    padding: 1em 0;
+    color: #FFDB5A;
+    text-align: center;
+}
+
+.border h2 {
+    font-family: 'adelle-sans', sans-serif;
 }
 
 #header{
