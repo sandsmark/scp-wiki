@@ -303,7 +303,7 @@ with [[user Captain Kirby]]
 
 [[div_ class="border"]]
 [[image http://wanderers-library.wdfiles.com/local--files/component%3Atheme/wl_logo.png width="60px"]]
-++ Heavy lies the crown of knowledge,
+++ [[[http://wanderers-library.wikidot.com/a-misplaced-letter|A Misplaced Letter]]]
 ++ Bringing naught but misery.
 ++ These tomes we cast to the darkness,
 ++ Never to harm the Garden.
@@ -530,9 +530,6 @@ Header art by [[user Athosnetwork]]
   }
 }
 
-@import url("http://wanderers-library.wikidot.com/component:dustjacket-theme-typefaces/code/1");
-@import url("https://use.typekit.net/tqr1skr.css");
-
 #page-content .border {
     box-sizing: border-box;
     border: 2vw solid rgba(0,0,0,0.5);
@@ -544,9 +541,8 @@ Header art by [[user Athosnetwork]]
     color: #FFDB5A;
     text-align: center;
 }
-
-.border h2 {
-    font-family: 'adelle-sans', sans-serif;
+#page-content .border a {
+    color: #FFDB5A;
 }
 
 #header{
