@@ -55,7 +55,7 @@ As automatic computer technology matures, we will expect to see greater use of s
 
 +++ Details
 
-Our contacts in the US Navy and Greenwich Observatory have reported the use of a "Coordinated Universal Time" among the astronomical community. This technique, abbreviated CUT[[footnote]]In modern terminology, the more culturally neutral abbreviation "UTC" is used instead.[[/footnote]], aims to keep atomic time aligned with the rotation of the Earth. It achieves this goal by adjusting the clock forward or backward, in steps of 50 milliseconds, whenever the two diverge.
+Our contacts in the US Navy and Greenwich Observatory have reported the use of a "Coordinated Universal Time" among the astronomical community. This technique, abbreviated CUT,[[footnote]]In modern terminology, the more culturally neutral abbreviation "UTC" is used instead.[[/footnote]] aims to keep atomic time aligned with the rotation of the Earth. It achieves this goal by adjusting the clock forward or backward, in steps of 50 milliseconds, whenever the two diverge.
 
 If all electronic clocks were to adopt CUT as the timekeeping standard, then the disruption of //precision// and //monotonicity// would ensure containment of SCP-4882. However, without intervention, it is unlikely that CUT will be adopted outside of astronomy due to its difficulty of implementation. Thus, effective containment will require infiltrating relevant organizations and promoting the use of CUT by political means.
 [[/div]]
@@ -102,13 +102,13 @@ On 2013-12-01, Amazon halted communications with the Foundation, citing "operati
 
 **Incident 4882-23:**
 
-On 2014-08-14, Dr. Demetrios Matsakis, the Chief Scientist for Time Services at the US Naval Observatory, [https://tycho.usno.navy.mil/papers/ts-2014/Matsakis-LeapSecondComments.URSI-2014.pdf presented a paper] advocating for the removal of leap seconds from UTC, in direct opposition to Foundation policy.
+On 2014-08-14, Dr. Demetrios Matsakis, the Chief Scientist for Time Services at the US Naval Observatory, [https://tycho.usno.navy.mil/papers/ts-2014/Matsakis-LeapSecondComments.URSI-2014.pdf presented a paper] advocating for the removal of leap seconds from UTC -- in direct opposition to Foundation policy.
 
 Later questioning revealed that Dr. Matsakis had misread the 2012 communiqué and assumed that the previous abolition policy was still in place. He has since apologized for the mistake. No disciplinary actions were deemed necessary.
 
 The Foundation was unable to suppress news of this presentation: as the evidence presented in the paper was true, its retraction would have aroused too much suspicion among the scientific community. Moreover, as the paper contained no classified or anomalous information, the use of amnestics to censor it would have broken international law.
 
-The Foundation continues to lobby for the preservation of leap seconds, in accordance with Project MAKSUR.
+The Foundation continues to lobby for the preservation of leap seconds in accordance with Project MAKSUR.
 
 **Incident 4882-39:**
 
@@ -130,9 +130,11 @@ During the month of November, 2015, the ITU held the 8th World Radiocommunicatio
 > 
 > Let's see: navigators don't need them -- they're all on GPS. Radios, they're all run by computers now, which everyone knows are more likely to crash with leap seconds than without them. //(laughter)// Even the astronomers, the ones who pushed for UTC in the first place, they don't use it any more. Too inaccurate, they say!
 > 
-> What's left, tradition? Oh no, the sun peaked in the sky thirty-seven seconds later than I expected! Think of the children! //(laughter)//
+> What's left, tradition? Oh no, the sun peaked in the sky thirty-seven seconds later than I expected! Think of the children!
 > 
-> And for what cost? Earlier this year, [https://www.telegraph.co.uk/news/science/science-news/11710148/Leap-Second-confuses-Twitter-and-Android.html four major internet sites] crashed as they rolled into July. Amazon, Netflix, Twitter, ring a bell? The New York Stock Exchange shut down for an hour. I guess that's wise of them, given that no NTP[[footnote]]Network Time Protocol, the mechanism by which modern computers synchronize their clocks.[[/footnote]] server in the last decade has broadcast leap seconds properly.
+> //(laughter)//
+> 
+> And for what cost? Earlier this year, [https://www.telegraph.co.uk/news/science/science-news/11710148/Leap-Second-confuses-Twitter-and-Android.html four major internet sites] crashed as they rolled into July. Amazon, Netflix, Twitter, ring a bell? The New York Stock Exchange shut down for an hour. I guess that's wise of them, given that no NTP[[footnote]]Network Time Protocol, the mechanism by which modern computers synchronize their clocks.[[/footnote]] server in the last decade has broadcast leap seconds correctly!
 > 
 > I've been an observer at the ITU for the last five years. Worked as an engineer for twenty years before that. Not once in my career have I heard a convincing argument for leap seconds.
 > 
