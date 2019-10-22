@@ -3,6 +3,36 @@ title:SCP-4477
 [[module Rate]]
 [[/>]]
 
+[[module CSS]]
+div.jesus {
+    margin: auto;
+    width: 85%;
+    border: 2px solid gold;
+    background: ivory url(http://scp-wiki.wdfiles.com/local--files/the-great-hippo/scp_trans.png) center no-repeat;
+    padding: 0 1em;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.6);
+    border-radius: 3px;
+}
+
+div.jesus span {
+    display: block;
+    text-align: center;
+    word-break: unset;
+    color: gold;
+    font-weight: bold;
+}
+
+span.leave {
+    font-size: 1.95em;
+    text-shadow: 2px 2px 0 black;
+}
+
+span.room {
+    font-size: 1.5em;
+    text-shadow: 1px 1px 0 black;
+}
+[[/module]]
+
 **Item #:** SCP-4477
 
 **Object Class:** Keter
@@ -13,11 +43,9 @@ One member of MTF-Δ22 Subforce 1 is to be stationed next to SCP-4477 from 00:00
 
 MTF-Δ22 ("The Party Crashers") is to act as the primary containment for SCP-4477, as per their mission statement:
 
-[[div style="margin: auto; width: 85%; border: 2px solid gold; background: url(http://scp-wiki.wdfiles.com/local--files/the-great-hippo/scp_trans.png) center no-repeat; background-color: ivory; padding: 1em; box-shadow: 1px 1px 5px rgba(0,0,0,.6); border-radius: 3px;"]]
-[[=]]
-[[span style="font-size: 1.9em; color: gold; text-shadow: 2px 2px 0 black; line-height: 1.2; word-break: normal;"]] **MOBILE TASK FORCE DELTA-TWENTY-TWO**[[/span]]
-[[span style="font-size: 1.5em; color: gold; text-shadow: 1px 1px 0 black;"]] **"The Party-Crashers"** [[/span]]
-[[/=]]
+[[div class="jesus"]]
+[[span class="leave"]]MOBILE TASK FORCE DELTA-TWENTY-TWO[[/span]]
+[[span class="room"]]"The Party-Crashers"[[/span]]
 
 Mobile Task Force Delta-Twenty-Two is to be stationed out of [[[secure-facility-dossier-site-88|Site-88]]], which is located within a two-hour flight radius of all potential SCP-4477 Active Events. MTF-Δ22 is to be on constant standby for deployment during the period that SCP-4477 events may occur, as monitored by MTF-Δ22 Subforce 1 ("No Invite").
 
