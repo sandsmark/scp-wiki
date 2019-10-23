@@ -50,6 +50,18 @@ body{
  .journal{
      display: block;
      overflow-wrap: break-word;
+     -moz-display: inline-block;
+     -ms-word-break: break-all;
+     -o-display: inline-block;
+     -o-word-break: break-word;
+     -webkit-display: inline-block;
+     -webkit-word-break: break-word;
+
+     -ms-hyphens: auto;
+     -moz-hyphens: auto;
+     -webkit-hyphens: auto;
+     hyphens: auto;
+
      font-family: 'Architects Daughter', cursive;
      font-style: normal;
 
