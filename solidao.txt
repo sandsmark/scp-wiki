@@ -48,16 +48,8 @@ body{
 
 /* JOURNALS */
  .journal{
-     display: block;
+     word-wrap: break-word;
      overflow-wrap: break-word;
-     -moz-display: inline-block;
-     -ms-word-break: break-all;
-     -o-display: inline-block;
-     -o-word-break: break-word;
-     -webkit-display: inline-block;
-     -webkit-word-break: break-word;
-     hyphens: auto;
-
      font-family: 'Architects Daughter', cursive;
      font-style: normal;
 
