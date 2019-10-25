@@ -3,11 +3,15 @@ title:Solidão
 
 [[include :scp-wiki:component:scp-trans-pride |trans-pride-logo= --] |trans-pride-footer= --]]]
 
+[[>]]
+[[module Rate]]
+[[/>]]
+
 [[include :scp-wiki:component:info-ayers
 |lang=en
 |page=solidao
 |authorPage=http://www.scp-wiki.net/floppyphoenix
-|comments=**Document 2641-Solidão** 
+|comments=**Solidão** 
 **Author:** [[*user FloppyPhoenix]] 
  
 This Tale is the former supplement to the old SCP-2641 ([*http://scpdsandbox.wikidot.com/floppy-archive-1 which you can find archived here]), written by myself. It's otherwise entirely standalone. 
@@ -29,22 +33,7 @@ body{
     --barColour: #590505;
     color: rgb(12, 12, 12);
 }
-.translation_block{
-    display: none;
-}
-.info-container .collapsible-block-folded a{
-    color: #FFF;
-}
-.info-container .collapsible-block-unfolded-link a{
-    color: #FFF;
-}
-.info-container .collapsible-block-link,
-.info-container:hover .collapsible-block-link {
-    line-height: 1.6em;
-}
-.collapsible-block-link{
-    font-weight: bold;
-}
+.translation_block{ display: none; }
 
 /* JOURNALS */
  .journal{
@@ -73,29 +62,30 @@ body{
      margin: 0;
 }
 
-/* DIV BLOCKS */
+/* DIV BLOCK */
  .warning{
      background: url(http://scp-wiki.wdfiles.com/local--files/the-great-hippo/scp_trans.png) center no-repeat; 
      border: 2px solid black; 
      padding: .5em 1em; 
      box-shadow: 0 1px 3px rgba(0,0,0,.2);
 }
+
+/* FORMATTING */
+.collapsible-block-link{
+    font-weight: bold;
+}
 .terminal-span{
     color: #1f1f7a;
     font-weight: bold;
     font-family: Courier, monospace;
-    font-size: .88rem
+    font-size: 110%;
 }
 .data-lost{
-    font-family: monospace; 
+    font-family: Courier, monospace;
     font-weight: bold; 
-    font-size: .88rem;
+    font-size: 110%;
 }
 [[/module]]
-
-[[>]]
-[[module Rate]]
-[[/>]]
 
 **Document 2641-Solidão**
 
@@ -103,7 +93,7 @@ On September 6, 1976, agents of the National Indian Foundation of Brazil (or FUN
 
 Upon formal contact, the tribe referred to themselves as the //Emparelhada//. In 2003, Foundation sleeper agents within FUNAI discovered an anomaly associated with the //Emparelhada// tribe. After further investigation, agents designated the anomaly URA-2641 and the tribe GoI-2641.
 
-The following information further pertains to GoI-2641 ("The //Emparelhada// tribe"):
+The following information further pertains to GoI-2641 ("The Emparelhada tribe"):
 
 * The group often imposes their beliefs and ways of life on outsiders. Because of this, FUNAI vaccination efforts prove difficult.
 * Past FUNAI census data confirmed that the group was composed of ~1,500 members. Current estimates place the tribe's size at over 2,000. No other group in the region has maintained a population in this size range.
@@ -288,9 +278,9 @@ Cátia**,** I want you to see**.** You already know**.** But now you must see**.
 
 > [[span class="terminal-span"]]The remaining data has been flagged for potential memetic risk. Do you wish to proceed?[[/span]]
 
-|| [[span style="font-family: monospace; font-weight: bold; color: green; font-size: .88rem;"]]Y[[/span]] / [[span style="font-family: monospace; font-weight: bold; color: firebrick; font-size: .88rem;"]]N[[/span]] ||
+|| [[span style="font-family: Courier, monospace; font-weight: bold; color: green; font-size: 110%;"]]Y[[/span]] / [[span style="font-family: Courier, monospace; font-weight: bold; color: firebrick; font-size: 110%;"]]N[[/span]] ||
 
-|| [[span style="font-family: monospace; font-weight: bold; font-size: .88rem;"]]Input:[[/span]] [[span class="terminal-span"]]logout[[/span]] ||
+|| [[span style="font-family: Courier, monospace; font-weight: bold; font-size: 110%;"]]Input:[[/span]] [[span class="terminal-span"]]logout[[/span]] ||
 
 > [[span class="terminal-span"]]UNKNOWN ERROR. Displaying documentation.[[/span]]
 
