@@ -26,26 +26,11 @@ sup{
     top: -0.5em;
 }
 body{
-    --cutColour: #ededed;
-    --barColour: #201230;
+    --cutColour: #fafafa;
+    --barColour: #590505;
     color: rgb(12, 12, 12);
 }
-.translation_block{
-    display: none;
-}
-.info-container .collapsible-block-folded a{
-    color: #FFF;
-}
-.info-container .collapsible-block-unfolded-link a{
-    color: #FFF;
-}
-.info-container .collapsible-block-link,
-.info-container:hover .collapsible-block-link{
-    line-height: 1.6em;
-}
-.collapsible-block-link{
-    font-weight: bold;
-}
+.translation_block{ display: none; }
 #u-author_block{ display:none; }
 
 /* DIV BLOCKS */
@@ -75,6 +60,12 @@ body{
 }
 
 /* FORMATTING */
+.collapsible-block-link{ font-weight: bold; }
+hr{
+     margin: 1em 0;
+     padding: 0;
+     border: 0;
+}
 .lite-header hr{
     width: 45%;
     margin: auto;
@@ -82,13 +73,9 @@ body{
     border: none;
     height: 2px;
 }
-hr{
-     margin: 1em 0;
-     padding: 0;
-     border: 0;
-}
 .h2{
     margin: 0.5em 0 0.4em;
+    padding: 0;
     letter-spacing: 1px;
     font-size: 150%;
     font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
@@ -114,8 +101,6 @@ Fade, fade away.
 
 = [[span style="color: #1f1f93; font-weight: bold;"]]Inoculation complete. You may proceed.[[/span]]
 
-@@ @@
-@@ @@
 @@ @@
 
 [[include :topia:component:class-header-source
@@ -203,7 +188,7 @@ Preliminary testing of SCP-3309 to determine the suitability of a Thaumiel recla
 [[div style="border-bottom: 1px solid black;"]]
 [[/div]]
 
-**PROPOSAL:** Use SCP-3309 to neutralize [[[*scp-4463|SCP-4463]]]: a complex water-based spatial anomaly capable of flooding North America within 50 years.
+**PROPOSAL:** Use SCP-3309 to neutralize [[[*scp-4463|SCP-4463]]]: A complex water-based spatial anomaly capable of flooding North America within 50 years.
 
 **DESCRIPTION:** SCP-4463 is a water-based anomaly affecting parts of the Chihuahuan desert in the state of Arizona. SCP-4463 describes the slow transformation of a large area of desert into an equivalent area of wetlands. 
 
@@ -671,7 +656,7 @@ Staff Post - Deletion Vote
 
 <p>Let me go back.</p>
 
-<p>My name is Adamo Smalls. I was born on August 21st, 1988 to Katherine and Charles Smalls in Portland, Oregon. I studied at the University of Oregon and have an MA in Information Science. I started working for the Foundation in late 2010 as a memeticist. I have a cognitive resistance value in the 99th percentile.</p>
+<p>My name is Adamo Smalls. I was born on August 21st, 1988 to Katherine and Charles Smalls in Portland, Oregon. I studied at the University of Oregon and have an MA in Information Science. I started working for the Foundation in late 2010 as a memeticist and hold a cognitive resistance value in the 99th percentile.</p>
 
 <p>Uh. I was on a long-term assignment at Site-82 to research SCP-3309 and– That's it? No. 3309 is a strong memetic construct associated with a few internal Foundation parameters. It neutralized anomalies and the articles we wrote in an attempt to explain them. It kept up the Veil, but we were so stupid to think we could play with the universe like that. It's not our right.</p>
 
