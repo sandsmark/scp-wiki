@@ -27,37 +27,27 @@ body{
     --barColour: #590505;
     color: rgb(12, 12, 12);
 }
-.translation_block{
-    display: none;
+.translation_block{ display: none; }
+
+/* DIV BLOCK */
+.report-box{
+    border: 2px solid rgb(12, 12, 12);
+    background-color: white;
+    padding: .25em 1em;
+    margin-bottom: 1em;
 }
-.info-container .collapsible-block-folded a{
-    color: #FFF;
-}
-.info-container .collapsible-block-unfolded-link a{
-    color: #FFF;
-}
-.info-container .collapsible-block-link,
-.info-container:hover .collapsible-block-link{
-    line-height: 1.6em;
-}
+
+/* FORMATTING */
 .collapsible-block-link{
     font-weight: bold;
-}
-.footnotes-footer{
-    display: none;
 }
 hr{
      margin: 1em 0;
      padding: 0;
      border: 0;
 }
-
-/* DIV BLOCKS */
-.report-box{
-    border: 2px solid rgb(12, 12, 12);
-    background-color: white;
-    padding: .25em 1em;
-    margin-bottom: 1em;
+.footnotes-footer{
+    display: none;
 }
 [[/module]]
 
