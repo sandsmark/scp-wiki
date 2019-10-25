@@ -1,5 +1,5 @@
 title:Team Bird Hub
-[[include component:preview text=Yes, your new colleague is a seagull. The world is a weird place. Welcome to the Foundation. - //Researcher Calvin//]]
+[[include component:preview text=Yes, your new colleague is a seagull. The world is a weird place. Welcome to the Foundation. --//Researcher Calvin//]]
 
 [[include :scp-wiki:component:info-ayers
 |lang=en
@@ -10,6 +10,22 @@ A **Series** by [[*user not_a_seagull]], [[*user FloppyPhoenix]], [[*user Ayers]
 ]]
 
 [[module CSS]]
+/* INFO BOX */
+sup {
+    vertical-align: top;
+    position: relative;
+    top: -0.5em;
+}
+body{
+    --cutColour: #050505;
+    --barColour: #e6ac00;
+    color: rgb(12, 12, 12);
+}
+.translation_block{
+    display: none;
+}
+#u-author_block{ display:none; }
+
 /* HEADER */
 #header h1 a {
     display: block;
@@ -24,14 +40,12 @@ A **Series** by [[*user not_a_seagull]], [[*user FloppyPhoenix]], [[*user Ayers]
     text-shadow: none;
     letter-spacing: 0.9px;
 }
-
 #header h1 a::before {
     content: "The Avian Division";
     color: white;
     letter-spacing: -0.02em;
     text-shadow: 3px 3px 5px black;
 }
-
 #header h2 span {
     display: block;
     margin: 0;
@@ -42,7 +56,6 @@ A **Series** by [[*user not_a_seagull]], [[*user FloppyPhoenix]], [[*user Ayers]
     color: transparent;
     text-shadow: none;
 }
-
 #header h2 span::before {
     content: 'Until we return to The Nest';
     color: white;
@@ -82,34 +95,6 @@ A **Series** by [[*user not_a_seagull]], [[*user FloppyPhoenix]], [[*user Ayers]
     color: #fffbf0;
 }
 
-/* INFO BOX */
-sup {
-    vertical-align: top;
-    position: relative;
-    top: -0.5em;
-}
-body{
-    --cutColour: #050505;
-    --barColour: #e6ac00;
-}
-.translation_block{
-    display: none;
-}
-.info-container .collapsible-block-folded a{
-    color: #FFF;
-}
-.info-container .collapsible-block-unfolded-link a{
-    color: #FFF;
-}
-.info-container .collapsible-block-link,
-.info-container:hover .collapsible-block-link {
-    line-height: 1.6em;
-}
-.collapsible-block-link{
-    font-weight: bold;
-}
-#u-author_block{ display:none; }
-
 /* GRADIANT */
 .bg-gradiant{
     background-color: #fff; 
@@ -120,14 +105,14 @@ body{
 
 /* DIV BLOCKS */
 .header-image{
-    border: 3px solid #444; 
+    border: 3px solid rgb(12, 12, 12); 
     background: #eee; 
     padding: 0;
     margin-left: .5em;
     margin-right: .5em;
 }
 .showcase{
-    border: 3px solid #444; 
+    border: 3px solid rgb(12, 12, 12); 
     background: #fff; 
     padding: .25em 1em;
     margin-left: .5em;
@@ -184,30 +169,34 @@ blockquote{
 
 [[div class="header-image"]]
 [[image teambird2.jpg]]
-[[div style="border-bottom: 2px solid #444;"]]
+
+[[div style="border-bottom: 2px solid rgb(12, 12, 12);"]]
 [[/div]]
-= [[size 85%]]**Banner courtesy of the amazing [[*user Mendelssohn]]! Check out more of their art [[[pendleton-miller-s-cognitoseward-collection|here]]]!**[[/size]]
+
+= [[size 85%]]**Banner courtesy of the amazing [[*user Mendelssohn]]! Check out more of their art [[[*pendleton-miller-s-cognitoseward-collection|here]]]!**[[/size]]
 [[/div]]
 
 [[=]]
-+ ##444|—##
++ [[span style="color: rgb(12, 12, 12);"]]—[[/span]]
 [[/=]]
 
 [[div class="showcase"]]
 Because somehow, Egyptian gods, the SPC universe, mysterious soul-vacuum devices, bad puns, and seagull scientists can all happily coexist in the same storyline. No wonder they called themselves Team Bird, the plot brainstorming must have been done while everyone was hella high.
-= — **[[*user Modulum]], head honcho of [[[scpdeclassified|SCPDeclassified]]]**
+= —**[[*user Modulum]], head honcho of [[[*scpdeclassified|SCPDeclassified]]]**
 [[/div]]
 
 [[=]]
-+ ##444|—##
++ [[span style="color: rgb(12, 12, 12);"]]—[[/span]]
 [[/=]]
 
 [[div class="showcase"]]
 [[=]]
 [[size 125%]]BE-Class "Migration" End-of-Consciousness Scenario[[/size]]
 [[/=]]
+
 [[div style="border-bottom: 2px solid #ffc818;"]]
 [[/div]]
+
 [[==]]
 //Did you know that birds have their own gods? Well, "gods" is kind of a term we're not meant to use. We're supposed to use "Apex-tier Pluripotent Entity", but nobody around's gonna enforce that, so why bother?//
 
@@ -217,16 +206,18 @@ Because somehow, Egyptian gods, the SPC universe, mysterious soul-vacuum devices
 
 [[>]]
 //Medila help us all.//
-— Dr. Frederick Hoygull, Avian Division Head
+—Dr. Frederick Hoygull, PhD
+//Avian Division Head//
 [[/>]]
 [[/==]]
 [[/div]]
 
 [[=]]
-+ ##444|—##
++ [[span style="color: rgb(12, 12, 12);"]]—[[/span]]
 [[/=]]
 
 [[div class="showcase"]]
+
 [[div style="border-bottom: 2px solid #ffc818;"]]
 [[/div]]
 
@@ -240,41 +231,42 @@ Because somehow, Egyptian gods, the SPC universe, mysterious soul-vacuum devices
 __[[size 110%]]**Required reading:**[[/size]]__
 
 [[div class="article"]]
-> ||||**[[[scp-3095|SCP-3095 (Bird is the Word)]]]**||by **[[*user not_a_seagull]]**||
+> ||||**[[[*scp-3095|SCP-3095 (Bird is the Word)]]]**||by **[[*user not_a_seagull]]**||
 [[/div]]
 
 __[[size 110%]]**Part 1: Doomsday**[[/size]]__
 
 [[div class="article"]]
-> ||**1.**||**[[[scp-3662|SCP-3662 (The Doomsday Clock)]]]**||by **[[*user Ayers]]**||
-> ||**2.**||**[[[scp-3296|SCP-3296 (The Drifter)]]]**||by **[[*user not_a_seagull]]**||
-> ||**3.**||**Tale: [[[join-the-flock|Join the Flock]]]**||by **[[*user not_a_seagull]]**||
-> ||||||**Recommended: [[[SCP-2785]]]** by **[[*user not_a_seagull]]**||
-> ||**4.**||**Tale: [[[tales-of-the-automaton-the-big-birdocalypse|Tales of the Automaton: The Big Birdocalypse]]]**||by **[[*user not_a_seagull]]**||
-> ||**5.**||**[[[SCP-3362|SCP-3362 (A Forced Self-Insert)]]]**||by **[[*user not_a_seagull]]**||
+> ||**1.**||**[[[*scp-3662|SCP-3662 (The Doomsday Clock)]]]**||by **[[*user Ayers]]**||
+> ||**2.**||**[[[*scp-3296|SCP-3296 (The Drifter)]]]**||by **[[*user not_a_seagull]]**||
+> ||**3.**||**Tale: [[[*join-the-flock|Join the Flock]]]**||by **[[*user not_a_seagull]]**||
+> ||||||**Recommended: [[[*scp-2785|SCP-2785]]]** by **[[*user not_a_seagull]]**||
+> ||**4.**||**Tale: [[[*tales-of-the-automaton-the-big-birdocalypse|Tales of the Automaton: The Big Birdocalypse]]]**||by **[[*user not_a_seagull]]**||
+> ||**5.**||**[[[*scp-3362|SCP-3362 (A Forced Self-Insert)]]]**||by **[[*user not_a_seagull]]**||
 [[/div]]
 
 __[[size 110%]]**Interlude:**[[/size]]__
 
 [[div class="continued"]]
-> ||**6.**||**GoI Format: [[[spc-507|SPC-507 (The Bigger Boat)]]]**||by **[[*user FloppyPhoenix]]**||
+> ||**6.**||**GoI Format: [[[*spc-507|SPC-507 (The Bigger Boat)]]]**||by **[[*user FloppyPhoenix]]**||
 [[/div]]
 
 __[[size 110%]]**Part 2: Migration**[[/size]]__
 
 [[div class="continued"]]
-> ||**7.**||**[[[scp-3570|EE-3570 (Umbral Ultimatum)]]]**||by **[[*user FloppyPhoenix]]**||
-> ||**8.**||**GoI Format: [[[The Sacred Djehuti]]]**||by **[[*user FloppyPhoenix]]** and **[[*user Ayers]]**||
-> ||**9.**||**[[[scp-3632|SCP-3632 (Nibirdu)]]]**||by **[[*user Quantum Physician]]**||
-> ||**10.**||**Tale: [[[Avian Anthology I]]]**||by **Team Bird**||
-> ||**11.**||**Tale: [[[umbral-migratory-sequence|UMBRAL MIGRATORY SEQUENCE]]]**||by **[[*user FloppyPhoenix]]**||
-> ||**12.**||**Tale: [[[Avian Anthology II]]]**||by **Team Bird**||
+> ||**7.**||**[[[*scp-3570|EE-3570 (Umbral Ultimatum)]]]**||by **[[*user FloppyPhoenix]]**||
+> ||**8.**||**GoI Format: [[[*the-sacred-djehuti|The Sacred Djehuti]]]**||by **[[*user FloppyPhoenix]]** and **[[*user Ayers]]**||
+> ||**9.**||**[[[*scp-3632|SCP-3632 (Nibirdu)]]]**||by **[[*user Quantum Physician]]**||
+> ||**10.**||**Tale: [[[*avian-anthology-i|Avian Anthology I]]]**||by **Team Bird**||
+> ||**11.**||**Tale: [[[*umbral-migratory-sequence|UMBRAL MIGRATORY SEQUENCE]]]**||by **[[*user FloppyPhoenix]]**||
+> ||**12.**||**Tale: [[[*avian-anthology-ii|Avian Anthology II]]]**||by **Team Bird**||
 [[/div]]
 
 [[size 80%]]Team Bird = The whole gosh dang team[[/size]]
 [[/div]]
 @@ @@
 [[div class="showcase"]]
+
 [[div style="border-bottom: 2px solid #ffc818;"]]
 [[/div]]
 
@@ -287,14 +279,15 @@ __[[size 110%]]**Part 2: Migration**[[/size]]__
 [[/div]]
 
 [[div class="continued"]]
-> ||||**GoI Format: [[[corncrake-of-destiny|The Corncrake Of Destiny]]]**||by **[[*user Uncle Nicolini]]**||
-> ||||**[[[scp-4688|SCP-4688 (Manipulative Bike Helmets)]]]**||by **[[*user Mew-ltiverse]]** and **[[*user not_a_seagull]]**||
-> ||||**Tale: [[[erics-journal|Eric’s Journal]]]**||by **[[*user Mew-ltiverse]]** and **[[*user not_a_seagull]]**||
-> ||||**[[[scp-4795|SCP-4795 (Feathered F(r)iends)]]]**||by **[[*user Mew-ltiverse]]** and **[[*user FloppyPhoenix]]**||
+> ||||**GoI Format: [[[*corncrake-of-destiny|The Corncrake Of Destiny]]]**||by **[[*user Uncle Nicolini]]**||
+> ||||**[[[*scp-4688|SCP-4688 (Manipulative Bike Helmets)]]]**||by **[[*user Mew-ltiverse]]** and **[[*user not_a_seagull]]**||
+> ||||**Tale: [[[*erics-journal|Eric's Journal]]]**||by **[[*user Mew-ltiverse]]** and **[[*user not_a_seagull]]**||
+> ||||**[[[*scp-4795|SCP-4795 (Feathered F(r)iends)]]]**||by **[[*user Mew-ltiverse]]** and **[[*user FloppyPhoenix]]**||
 [[/div]]
 [[/div]]
 @@ @@
 [[div class="showcase"]]
+
 [[div style="border-bottom: 2px solid #ffc818;"]]
 [[/div]]
 
@@ -306,29 +299,31 @@ __[[size 110%]]**Part 2: Migration**[[/size]]__
 [[/div]]
 
 [[div class="article"]]
-> ||||**Tale: [[[The Scent of a Toaster]]]**||by **[[*user not_a_seagull]]**||
-> ||||**Tale: [[[My Empire of Birds]]]**||by **[[*user not_a_seagull]]**||
-> ||||**[[[scp-4248|SCP-4248 (Alphabet and Omega)]]]**||by **[[*user not_a_seagull]]**||
-> ||||**Tale: [[[Document recovered from a Parallel Universe]]]**||by **[[*user not_a_seagull]]**||
+> ||||**Tale: [[[*the-scent-of-a-toaster|The Scent of a Toaster]]]**||by **[[*user not_a_seagull]]**||
+> ||||**Tale: [[[*my-empire-of-birds|My Empire of Birds]]]**||by **[[*user not_a_seagull]]**||
+> ||||**[[[*scp-4248|SCP-4248 (Alphabet and Omega)]]]**||by **[[*user not_a_seagull]]**||
+> ||||**Tale: [[[*document-recovered-from-a-parallel-universe|Document recovered from a Parallel Universe]]]**||by **[[*user not_a_seagull]]**||
 [[/div]]
 
 [[/div]]
 
 [[=]]
-+ ##444|—##
++ [[span style="color: rgb(12, 12, 12);"]]—[[/span]]
 [[/=]]
 
 [[div class="showcase"]]
 __[[size 110%]]**What if I can't/don't want to read all of these pages?**[[/size]]__
+
 [[div style="border-bottom: 2px solid #ffc818;"]]
 [[/div]]
+
 The official Team Bird Machete Order is as follows:
 
-**[[[scp-3570|EE-3570]]]** ► **[[[Avian Anthology I]]]** ► **[[[umbral-migratory-sequence|UMBRAL_MIGRATORY_SEQUENCE]]]** ► **[[[Avian Anthology II]]]**
+**[[[*scp-3570|EE-3570]]]** ▶ **[[[*avian-anthology-i|Avian Anthology I]]]** ▶ **[[[*umbral-migratory-sequence|UMBRAL_MIGRATORY_SEQUENCE]]]** ▶ **[[[*avian-anthology-ii|Avian Anthology II]]]**
 
-EE-3570 will summarize the scenario for you, and the Avian Anthologies + Umbral Migratory is where all of the action is. If you want, or if you’re //really// starved for time, you can also skip SCP-3095, as it can be summarized as "birds that are scientists that work for the Foundation". 
+EE-3570 will summarize the scenario for you, and the Avian Anthologies + Umbral Migratory is where all of the action is. If you want, or if you're //really// starved for time, you can also skip SCP-3095, as it can be summarized as "birds that are scientists that work for the Foundation." 
 
-However, if you do have the time, we heavily recommend reading the rest of the material. It will give more context to this universe, and it’s all really, //really// good stuff!
+However, if you do have the time, we heavily recommend reading the rest of the material. It will give more context to this universe, and it's all really, //really// good stuff!
 [[/div]]
 
 ,,Hub created by [[*user FloppyPhoenix]] and [[*user not_a_seagull]].,,
