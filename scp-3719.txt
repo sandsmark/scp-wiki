@@ -27,40 +27,40 @@ body{
     --barColour: #590505;
     color: rgb(12, 12, 12);
 }
-.translation_block{
-    display: none;
-}
-.info-container .collapsible-block-folded a{
-    color: #FFF;
-}
-.info-container .collapsible-block-unfolded-link a{
-    color: #FFF;
-}
-.info-container .collapsible-block-link,
-.info-container:hover .collapsible-block-link{
-    line-height: 1.6em;
-}
-.collapsible-block-link{
-    font-weight: bold;
-}
+.translation_block{ display: none; }
 
-/* DIV BLOCKS */
+/* DIV BLOCK */
 .quote-block{
     border: 2px double #999;
     background-color: #f4f4f4;
     padding: .25em 1em;
     margin-bottom: 1em;
 }
+
+/* FORMATTING */
+.collapsible-block-link{
+    font-weight: bold;
+}
 hr{
     margin: 1em 0;
     padding: 0;
     border: 0;
 }
+.lite-header hr{
+    width: 45%;
+    margin: auto;
+    background-color: #e6e6e6;
+    border: none;
+    height: 2px;
+}
+.h2{
+    margin: 0.5em 0 0.4em;
+    padding: 0;
+    letter-spacing: 1px;
+    font-size: 150%;
+    font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
+}
 [[/module]]
-
-@@ @@
-@@ @@
-@@ @@
 
 [[include :topia:component:class-header-source
 |item-num=3719
@@ -90,7 +90,7 @@ hr{
 
 Foundation web crawler SE851G ("AZURE CHAWLA") is to track social media posts, news reports, telephone calls, and SMS messages disseminated in the state of Maryland for references to SCP-3719-COBALT events. References made to unnatural flowering plant growth patterns, the formation of collective human masses, and irregularities in the operation of yard equipment are to be flagged and isolated for further monitoring.
 
-SCP-3719-A-1 through -61 (collectively designated SCP-3719-B) are contained in suspended animation in a standardized 10,000 L Class 6 Lovell-Huron containment vat.[[footnote]]For specifications, see: Lovell, T., & Huron, M. (2011). Cryogenics and You (or How I Became a Teenage Ice Pop). //Containment: An SCP Foundation Journal, 24//(4), 279–285.[[/footnote]] Persons associated with the discovery of SCP-3719 -- including nearby genetic relatives of SCP-3719-A instances -- are to remain unaware of the containment of these instances. Persons associated with this anomaly have been administered Class-A Amnestics. These persons are to undergo a false memory implantation procedure to subdue all memory of SCP-3719-B and the impact they made on the Middlesex suburb during their life.
+SCP-3719-A-1 through -61 (collectively designated SCP-3719-B) are contained in suspended animation in a standardized 10,000 L Class-6 Lovell-Huron containment vat.[[footnote]]For specifications, see: Lovell, T., & Huron, M. (2014). Cryogenics and You (or How I Became a Teenage Ice Pop). //The Foundation Official Handbook on Special Containment Procedures, Rev. 24//, 279–285.[[/footnote]] Persons associated with the discovery of SCP-3719 -- including nearby genetic relatives of SCP-3719-A instances -- are to remain unaware of the containment of these instances. Persons associated with this anomaly have been administered Class-A Amnestics. These persons are to undergo a false memory implantation procedure to subdue all memory of SCP-3719-B and the impact they made on the Middlesex suburb during their life.
 ----
 **Description:** SCP-3719 is a GO/ON-brand lawnmower with a cutting width of 55 cm. SCP-3719 performs in a manner identical to non-anomalous rotary mowers, except for a few notable differences:
 
@@ -100,11 +100,25 @@ SCP-3719-A-1 through -61 (collectively designated SCP-3719-B) are contained in s
 
 Upon use, SCP-3719-A continues to operate until every square meter within the desired lawn is mowed, experiencing a sense of personal responsibility from its completion. SCP-3719-A is not hindered by this mind-affecting property, and instead, considers the use of SCP-3719 to be a pleasurable and cathartic experience. This effect is shared by any person with a similar headspace to SCP-3719-A[[footnote]]This includes close familial relatives within one to two generations of SCP-3719-A.[[/footnote]] within the general vicinity of its effects.[[footnote]]This area of effects expands directly proportional to the number of SCP-3719-A operating SCP-3719 at a time.[[/footnote]]
 
+@@ @@
+[[div class="lite-header"]]
+----
+[[/div]]
+= [[span class="h2"]]Addenda Materials[[/span]]
+[[div class="lite-header"]]
+----
+[[/div]]
+@@ @@
+
+**I. Discovery**
+
 SCP-3719 was discovered in the Middlesex suburb of Baltimore, Maryland on August 17, 2014. Upon discovery, numerous residents serving as SCP-3719-A simultaneously were using SCP-3719. 61 total residents were integrated into a collective mass,[[footnote]]Weighing an estimated 5,000 kg.[[/footnote]] piloting SCP-3719 along the road with apparent ease despite its size. 6 km of roads in the area had anomalously manifested grass[[footnote]]Which was spreading at a speed of 2 meters per hour.[[/footnote]] while ~2 km of roads had already been mowed by the time Foundation personnel were alerted. 
 
-The formation of masses similar to SCP-3719-B, as well as the widespread manifestation of grass on public roads, has been designated an SCP-3719-COBALT event. How the prolonged use of SCP-3719 leads to the manifestation of these events is currently under active investigation.
+The formation of masses similar to SCP-3719-B, as well as the widespread manifestation of grass on public roads, has been designated an SCP-3719-COBALT event.
 ----
-**Interview Log 3719.1:** The following is a transcript of an interview with Grace Farley (PoI-3719-7), the mother of Kevin Farley. Kevin Farley was determined to be an individual within SCP-3719-B at the time of discovery. 
+**II. Interview Log** 
+
+The following is a transcript of an interview with Grace Farley, the mother of Kevin Farley. Kevin Farley was determined to be an individual within SCP-3719-B at the time of discovery. 
 
 [[div class="quote-block"]]
 [[=]]
@@ -115,7 +129,7 @@ The formation of masses similar to SCP-3719-B, as well as the widespread manifes
 
 **INTERVIEWED:** Grace Farley (PoI-3719-7)
 
-**NOTE:** Shortly after Foundation personnel arrived, a 3 km in diameter no-go zone around the neighbourhood was observed, after which it was cordoned off.
+**NOTE:** Shortly after Foundation personnel arrived, a 3-km-in-diameter no-go zone around the neighbourhood was observed, after which it was cordoned off.
 
 The interview began after Foundation personnel searched for persons directly affected by the SCP-3719-COBALT event. Grace Farley (designated PoI-3719-7) was the seventh person selected for interview purposes. Agent Francis Digby approached Mrs. Farley under the guise of a concerned neighbour associated with the neighbourhood watch.
 ----
@@ -174,7 +188,6 @@ The interview began after Foundation personnel searched for persons directly aff
 **Mrs. Farley:** //[She interrupts him.]// Why can't you share one body, one soul, and by God if it's possible, one flesh? We're all human, Francis. We're one. We were born together and together we shall remain. It's meant to be that way, 'cause what other way could there be? Keep 'em together and we won't be having any more tragedies, like the ones you see in the headlines every week. That mower's the best thing to happen to this neighbourhood, period. You wouldn't understand unless you stitched your heart where all others can see and basked in the skin of your fellow man.
 ----
 = **[END LOG]**
-----
 [[/div]]
 
 [[footnoteblock]]
