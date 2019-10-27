@@ -29,42 +29,35 @@ sup{
 body{
     --cutColour: #fafafa;
     --barColour: #590505;
+    color: rgb(12, 12, 12);
 }
-.translation_block{
-    display: none;
-}
-.info-container .collapsible-block-folded a{
-    color: #FFF;
-}
-.info-container .collapsible-block-unfolded-link a{
-    color: #FFF;
-}
-.info-container .collapsible-block-link,
-.info-container:hover .collapsible-block-link{
-    line-height: 1.6em;
-}
-.collapsible-block-link{
-    font-weight: bold;
-}
+.translation_block{ display: none; }
 
 /* DIV BLOCKS */
 .document{
-    border-radius: 10px;
-    border: solid 1px #ccc;
     background-color: #f0f0f0;
-    padding: .25em 1em;
-    margin-left: .01em;
-    margin-right: .01em;
+    border: 1px solid #ccc;
+    border-radius: 0.769em;
     box-shadow: 0 2px 4px rgba(68, 68, 68, .5);
+    padding: .25em 1em;
 }
-.quote-block{
-    border: 1px double #999;
-    background-color: #f4f4f4;
+.researcher-note{
+    border: 2px solid rgb(12, 12, 12);
+    background-color: white;
     padding: .25em 1em;
     margin-bottom: 1em;
 }
 
 /* FORMATTING */
+.collapsible-block-link { font-weight: bold; }
+hr{
+     margin: 1em 0;
+     padding: 0;
+     border: 0;
+}
+.footnotes-footer{
+    display: none;
+}
 .lite-header hr{
     width: 45%;
     margin: auto;
@@ -72,20 +65,14 @@ body{
     border: none;
     height: 2px;
 }
-.collapsible-block-link { font-weight: bold; }
-.footnotes-footer{
-    display:none;
-}
-hr{
-     margin: 1em 0;
-     padding: 0;
-     border: 0;
+.h2{
+    margin: 0.5em 0 0.4em;
+    padding: 0;
+    letter-spacing: 1px;
+    font-size: 150%;
+    font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
 }
 [[/module]]
-
-@@ @@
-@@ @@
-@@ @@
 
 [[include :topia:component:class-header-source
 |item-num=4416
@@ -142,19 +129,19 @@ hr{
 [[/row]]
 [[/table]]
 ----
-**Special Containment Procedures:** All aspects of SCP-4416's properties are not to be interfered with; organized shark-punching is to remain commonplace in the state of North Carolina. Any instance of shark-punching encountered out-of-state is to be monitored for anomalous properties. If no anomalous properties manifest, the activity is to proceed unmitigated.
+**Special Containment Procedures:** No aspects of SCP-4416's properties are to be interfered with; organized shark-punching is to remain commonplace in the state of North Carolina. Any instance of shark-punching encountered out-of-state is to be monitored for anomalous properties. If no anomalous properties manifest, the activity is to proceed unmitigated.
 
 All references made to SCP-4416-A in writing, pictorial, or verbal communications are to be discredited where possible.
 ----
 **Description:** SCP-4416 is the recent increase in human-initiated attacks against sharks (Selachimorphic fish) in North Carolina.
 
-SCP-4416 refers to the action of any person(s) with the intention to assault sharks via punching.[[footnote]]Though less common, calcitration has also been observed.[[/footnote]] These attacks are coordinated to occur at dusk with a frequency of two to three times per night. Civilians engaging in SCP-4416 refer to their actions as "selachian pugilism" and "sharkboxing."
+SCP-4416 refers to the action of any person(s) with the intention to assault sharks via punching. These attacks are coordinated to occur at dusk with a frequency of two to three times per night. Civilians engaging in SCP-4416 refer to their actions as "selachian pugilism" and "sharkboxing."
 
 SCP-4416 has led to the formation of various groups dedicated to the activity. 90% of observed groups range between eight and 15 people in size. Competing philosophies between various groups assert that SCP-4416 exists either for sport or protecting others against sharks.
 
 SCP-4416, while non-anomalous, has led to a marked increase in shark appearances on the east coast of North Carolina. Research into whether this has led to an increase in shark attacks on humans is underway.
 
-Foundation para-anthropologists have formed the following hypotheses on the nature of this activity:
+Foundation analysts have formed the following hypotheses on the nature of this activity:
 
 * SCP-4416 was triggered by another anomalous phenomenon.
 * SCP-4416 groups are connected to another anomalous phenomenon.
@@ -166,61 +153,64 @@ Further investigation is underway.
 [[div class="lite-header"]]
 ----
 [[/div]]
-[[=]]
-++ Addendum 4416.1
-+++ ##darkred|DISCOVERY##
-[[/=]]
+= [[span class="h2"]]Addenda Materials[[/span]]
 [[div class="lite-header"]]
 ----
 [[/div]]
 @@ @@
 
-The first significant reference to SCP-4416-type phenomena can be traced back to the July 26, 2010 airing of conspiracy theorist radio broadcast //Mondays on the Alex Jones Show//. At the time, the show featured a segment on the archetypal significance of humans attacking sharks and "the spectre of shark-punching's clutch on the underbelly of North Carolina." The segment proceeded to list known shark-punching groups, the connection between those groups and the occult, and made allusion to a mythological trickster demigod that turns humans into shark-like abominations.
+**I. Discovery**
+
+The first significant reference to SCP-4416-type phenomena can be traced back to the July 26, 2010 airing of conspiracy theorist radio broadcast //Mondays on the Alex Jones Show//. At the time, the show featured a segment on the archetypal significance of humans attacking sharks and "the spectre of shark-punching's clutch on the underbelly of North Carolina." The segment proceeded to list known shark-punching groups, the connection between those groups and the occult, and alluded to a mythological trickster demigod that turns humans into shark-like abominations.
 
 Foundation web crawler UZ413H ("PAYLOAD TOO LARGE") flagged the broadcast and attempted to cross-reference several key phrases. Despite this, Foundation Intelligence Agents were unsuccessful in finding any such phenomena on the Eastern Seaboard.
 
-On September 16, 2016, a local New Hanover County news network aired a story on organized shark-punching and featured one such group dedicated to the activity: "Amos' Shark Threshers." A Foundation media watchdog picked up the story before forwarding it to Site-42's Command Office. The group was confirmed to have been mentioned during the 2010 radio broadcast, corroborating its legitimacy. With no other leads, efforts were redirected towards contacting and infiltrating Amos' Shark Threshers.
+On September 16, 2016, a local New Hanover County news network aired a story on organized shark-punching and featured one such group dedicated to the activity: "Amos' Shark Threshers." A Foundation media watchdog picked up the story before forwarding it to Site-42's Command Office, which confirmed the group's mention during the 2010 broadcast. With no other leads, efforts were redirected toward contacting and infiltrating Amos' Shark Threshers.
 
 [[div class="document"]]
-= **INTERNAL MEETING**
+[[=]]
++++ INTERNAL MEETING
+[[/=]]
 ----
-**Note:** The following is an excerpt from an extranormal categorization discussion on the potential anomalous properties of SCP-4416.
+**NOTE:** The following is an excerpt from an extranormal categorization discussion on the potential anomalous properties of SCP-4416.
 ----
-= **<Begin Log>**
-
+= **[BEGIN LOG]**
+----
 **Field Agent Nico De Castro:** Next up, a consensus on this new "shark-punching" phenomenon. I'm sure you've both heard of this by now.
 
-**Researcher Adamo Smalls:** Wait, when did that get picked up again? I thought–
+**Researcher Adamo Smalls:** Wait, when was that picked up again? I thought–
 
-**Researcher Justine Everwood:** //[Interrupting.]// Oh come on, that's anomalous! A memetic agent that compels people to punch sharks, right? It has to be.
+**Researcher Justine Everwood:** //[She interrupts.]// Oh come on, that's anomalous! A memetic agent that compels people to punch sharks, right? It has to be.
 
 **Smalls:** It //is// memetic, but not in the anomalous sense. Haven't you ever seen Shark Week? 
 
-**Everwood:** //[Pauses.]// I never actually got around to that.
+**Everwood:** //[She pauses.]// I never actually got around to that.
 
-**Smalls:** //[Under his breath.]// I'm surprised more people don't die by shark attacks these days...
+**Smalls:** //[He mutters under his breath.]// I'm surprised more people don't die by shark attacks these days...
 
-**Everwood:** The question is, how do we find out? I'm pretty sure we don't have the grounds to investigate this. Not unless we get permission from the Ethics Committee since this is //clearly// not anomalous.
+**Everwood:** The question is how do we find out? I'm pretty sure we don't have the grounds to investigate this. Not unless we get permission from the Ethics Committee since this is //clearly// not anomalous.
 
 **Smalls:** Didn't you just say it is?
 
-**Everwood:** //[Avoiding embarassment.]// Um, no!
+**Everwood:** Um, no!
 
-**Smalls:** //[Sarcastic.]// Alright, gang, let's get searching for whoever's behind this illegal underground shark boxing ring. We're looking for an evil lair, a devious end-of-the-word scheme, and the bogeyman's secret identity. Then we'll //finally// have something to show the authorities.
+**Smalls:** //[He takes a sarcastic tone.]// Alright, gang; let's get searching for whoever's behind this illegal underground shark boxing ring. We're looking for an evil lair, a devious end-of-the-word scheme, and the bogeyman's secret identity. Then we'll //finally// have something to show the authorities.
 
-**De Castro:** I know I'm asking from a lot from you guys, with how ridiculous this is, but let's not blow it out of proportion.
+**De Castro:** I know I'm asking from a lot from you people, with how ridiculous this is, but let's not blow it out of proportion.
 
 **Everwood:** I'm betting on this entire thing being just another Reefer prank.
 
-**De Castro:** This is all 100% legit. Anyway, the media leak reports quite a bit of information on an associated group called Amos' Shark Threshers. Well, there were a few different groups named, but this is the only one that came up twice. Check this out.
+**De Castro:** This is all 100% legit. Anyway, the media leak reports quite a bit of information on an associated group called Amos' Shark Threshers. Well, there were a few different groups named, but this is the only one that came up twice. Check this out. //[He displays the following quoted excerpt on a computer screen.]//
 
-//[De Castro shows the following quoted excerpt on a computer screen.]//
-
-[[div class="quote-block"]]
+[[div class="researcher-note"]]
 Amos' Shark Threshers have always punched sharks. Always. It wasn't even until the media picked up on us that the controversies came in. And it wasn't even, like, they feared for our lives or some shit like that. They thought it was inhumane what we were doing to the sharks! My step-brother Dani got his arm bitten off by one in 2012 but now //he's// the bad guy!
 
+[[div style="border-bottom: 1px solid black;"]]
+[[/div]]
+
 [[>]]
--- Madeline Cruz, Wilmington resident
+--Madeline Cruz
+//Wilmington resident//
 [[/>]]
 [[/div]]
 
@@ -230,7 +220,7 @@ Amos' Shark Threshers have always punched sharks. Always. It wasn't even until t
 
 **Smalls:** That answer doesn't sound very convincing.
 
-**De Castro:** Okay, there's more here. They took pictures of one of their attack spots. If we can't find them, well, then... //[Pauses.]//
+**De Castro:** Okay, there's more here. They took pictures of one of their attack spots. If we can't find them, well, then...
 
 **Smalls:** Maybe we can wait for them to come to us.
 
@@ -238,60 +228,49 @@ Amos' Shark Threshers have always punched sharks. Always. It wasn't even until t
 
 **Everwood:** //[Her voice pitches with excitement.]// Like a stakeout mission?
 
-**De Castro:** //[Nodding his head.]// That's the one. Let me get a tactical response team set up while the two of you do some research. Find anything you can on selachian anomalies and see if there's a link here. International network, anomalous items log, whatever. Anything we have clearance on.
+**De Castro:** //[He nods.]// That's the one. Let me get a tactical response team set up while the two of you do some research. Find anything you can on selachian anomalies and see if there's a link here. International network, anomalous items log, whatever. Anything we have clearance on.
 
 **Smalls:** This is by far the silliest assignment I've been on.
 
 **Everwood:** Right?! And we don't even get to punch any sharks!
-
-= **<End Log>**
-[[/div]]
-
-@@ @@
-[[div class="lite-header"]]
 ----
+= **[END LOG]**
 [[/div]]
-[[=]]
-++ Addendum 4416.2
-+++ ##darkred|INITIAL INTERVIEW##
-[[/=]]
-[[div class="lite-header"]]
 ----
-[[/div]]
-@@ @@
+**II. Initial Interview**
 
 On September 22 at 7:35 PM, six days after locating an area matching with the photographs, the response team encountered Amos' Shark Threshers. Field Agent De Castro exited cover and confronted the group while posing as a local shark-punching enthusiast.
 
 [[div class="document"]]
-= **VIDEO LOG**
+[[=]]
++++ VIDEO LOG
+[[/=]]
 ----
-**Note:** Field Agent De Castro was outfitted with a standard full-body swimsuit and a waterproof camera/audio recording device.
+**NOTE:** Field Agent De Castro was outfitted with a standard full-body swimsuit and a waterproof camera/audio recording device.
 ----
-= **<Begin Log>**
-
-//[Field Agent De Castro walks towards the shore. 9 people congregate in the shallow water.]//
+= **[BEGIN LOG]**
+----
+//[Field Agent De Castro walks toward the shore. Nine people congregate in the shallow water.]//
 
 **De Castro:** Um. Hey, excuse me!
 
 //[Confused voices. A woman, presumably the group's leader, leaves the water and walks in the direction of De Castro.]//
 
-**Unidentified Woman:** What, are you lost or something?
+**Unidentified Woman:** What are you, lost or something?
 
 **De Castro:** I'm not lost, I'm–
 
-**Unidentified Woman:** //[Interrupting.]// I don't give a fuck! Who are you?
+**Unidentified Woman:** //[She interrupts.]// I don't give a fuck! Who are you?
 
 **De Castro:** Uh, my name's Nico. I didn't get lost, I'm here–
 
-**Unidentified Woman:** //[Interrupting.]// If you're not lost then what the hell are you doing on our turf?
+**Unidentified Woman:** //[She interrupts.]// If you're not lost then what in the depths are you doing on our turf?
 
-**De Castro:** I'm here to– //[Pauses.]// To punch sharks.
+**De Castro:** I'm here to– //[He hesitates.]// To punch sharks.
 
-//[The woman pauses, then laughs.]//
+**Unidentified Woman:** //[She laughs.]// Oh, I get it. You're one of us! Sorry 'bout that, I thought you were one of those media rats. I'm Madeline, but you can call me Maddie.
 
-**Unidentified Woman:** Oh, I get it. You're one of us! Sorry 'bout that, I thought you were one of those media rats. I'm Madeline, but you can call me Maddy.
-
-**De Castro:** Well, okay then. It's a pleasure to meet you, Maddy. Are you guys with Amos?
+**De Castro:** Well, okay then. It's a pleasure to meet you, Maddie. Are you guys with Amos?
 
 **Madeline Cruz:** Amos died a few years back. Some say a Great White got him, but we don't actually know. //[She looks around before leaning in.]// If you ask me, I think he's still out there clobbering them, even as we speak.
 
@@ -307,46 +286,39 @@ On September 22 at 7:35 PM, six days after locating an area matching with the ph
 
 **Cruz:** Look, Nicky–
 
-**De Castro:** It's Nico.
+**De Castro:** //[He cuts in.]// It's Nico.
 
 **Cruz:** Nico, how much of an amateur are you at this anyway?
 
 **De Castro:** I have never punched a shark before.
 
 **Cruz:** Nico, I'm gonna be frank with you. The only way you'll ever know //why we punch sharks// is if you punch one yourself. 
-
-= **<End Log>**
-[[/div]]
-
-After the first contact with Madeline Cruz (now PoI-3732), Field Agent De Castro made efforts towards becoming acquainted with Amos' Shark Threshers. He was expected by group consensus to engage in "selachian pugilism," which he administered with success. De Castro reported no mental or physical compulsion at the time. A post-incident medical analysis found no physical abnormalities except for a higher-than-average testosterone level.
-
-@@ @@
-[[div class="lite-header"]]
 ----
+= **[END LOG]**
 [[/div]]
-[[=]]
-++ Addendum 4416.3
-+++ ##darkred|FURTHER COMMUNICATIONS##
-[[/=]]
-[[div class="lite-header"]]
-----
-[[/div]]
-@@ @@
 
-On September 23 at 7:51 PM, Field Agent Nico De Castro made contact with an anomalous entity (designated SCP-4416-A). At the time, he was undergoing a lone coastline observation in Seabreeze, North Carolina to surveil potential instances of SCP-4416 phenomena. The other members of the project team claim no knowledge of the event, nor of any unknown entity or person in the area at the time.
+After the first contact with Madeline Cruz (now designated PoI-3732), Field Agent De Castro made further efforts toward becoming acquainted with Amos' Shark Threshers. He was expected by group consensus to engage in "selachian pugilism," which he administered with success. De Castro reported no mental or physical compulsion at the time. A post-incident medical analysis found no physical abnormalities except for a higher-than-average testosterone level.
+----
+**II. Further Communications**
+
+On the night of September 23, Field Agent Nico De Castro made contact with an anomalous entity (designated SCP-4416-A). At the time, he was undergoing a lone coastline observation in Seabreeze, North Carolina to surveil potential instances of SCP-4416 phenomena. The other members of the project team claim no knowledge of the event, nor of any unknown entity or person in the area at the time.
 
 In an offhand comment, De Castro referred to the communication as "divine intervention" with "a selachian deity." The following is a record of the supposed intervention, as recorded by his body camera.
 
 [[div class="document"]]
-= **INCIDENT LOG**
+[[=]]
++++ INCIDENT LOG
+[[/=]]
 ----
-= **<Begin Log>**
+= **[BEGIN LOG | 07:33 PM]**
+----
+**«07:33:»** De Castro starts recording at the local Carolina Beach Fishing Pier. He turns on his night vision for visibility before setting off due north.
 
-//[De Castro begins recording at the local Carolina Beach Fishing Pier. He turns on his night vision for visibility before setting off due north.]//
+**«07:48:»** After 15 minutes, a rocky outcropping comes into view. De Castro approaches it. The outcropping juts from the nearby inlet. 
 
-//[After 15 minutes, a rocky outcropping comes into view. De Castro approaches it. The outcropping juts from the nearby inlet. 30 seconds later, De Castro enters the shallow water to get a closer look. The rocky outcropping reveals a section hidden from the beach and a cave within. He enters the cave.]//
+**«07:49:»** De Castro enters the shallow water to get a closer look. The rocky outcropping reveals a section hidden from the beach and a cave within. He enters the cave.
 
-//[It is at this point in the recording that De Castro claims the anomalous entity came into view. De Castro claims the entity's form "could not be defined" and says that it attempted to obscure itself during the recording. The video log displays no such entity, but does pick up audio. The entity starts speaking.]//
+**«07:51:»** It is at this point in the recording that De Castro claims the anomalous entity came into view. De Castro claims the entity's form "could not be defined" and says that it attempted to obscure itself during the recording. The video log displays no such entity, but does pick up audio.
 
 [[include :scp-sandbox-3:image-zoom name=beach-cave.jpg|caption=A still from the point in the recording where Field Agent De Castro claims the entity emerged (hover to enlarge).|width=300px|align=right]]
 
@@ -358,7 +330,7 @@ In an offhand comment, De Castro referred to the communication as "divine interv
 
 **De Castro:** How are you speaking?
 
-//[A high volume of bubbles fill the area.]//
+//[High volumes of bubbles fill the area.]//
 
 **SCP-4416-A:** Is not most crazy thing you see.
 
@@ -370,9 +342,7 @@ In an offhand comment, De Castro referred to the communication as "divine interv
 
 **SCP-4416-A:** Tubi here to do big warning. You make promise, ok?
 
-**De Castro:** I'm not authorized to make any sort of agreement with you.
-
-//[De Castro attempts to leave the area.]//
+**De Castro:** I'm not authorized to make any sort of agreement with you. //[De Castro attempts to leave the area.]//
 
 **SCP-4416-A:** No, no deal. Just say "agent man punch shark no more."
 
@@ -384,7 +354,7 @@ In an offhand comment, De Castro referred to the communication as "divine interv
 
 //[The entity does not reply. De Castro holsters his pistol.]//
 
-**De Castro:** I think I know who you are. That... //[Pauses.]// //Bitch// told me about you. She said that her people have a supreme duty to the ocean and that there was some real persistent shark guy that they've been trying to get rid of. I didn't understand at the time but I'm guessing they're trying to scare you away.
+**De Castro:** I think I know who you are. That... //Bitch// told me about you. She said that her people have a supreme duty to the ocean and that there was some real persistent shark guy that they've been trying to get rid of. I didn't understand at the time but I'm guessing they're trying to scare you away.
 
 **SCP-4416-A:** Tubi scared of punching, big time. People doing punching are big liars, all the time. And Tubi shark //god//, not guy. 
 
@@ -394,7 +364,7 @@ In an offhand comment, De Castro referred to the communication as "divine interv
 
 **De Castro:** So what am I missing? Why do you even exist?
 
-**SCP-4416-A:** Tubi want to turn human into sharkman to make big army. If work, Tubi would become full power. You seen, am good business-like selachian. Like good human entrepreneur show on glowing box. What is called...
+**SCP-4416-A:** Tubi want to turn human into sharkman to make big army. If work, Tubi would become full power. You see, am good business-like selachian. Like good human entrepreneur show on glowing box. What is called–?
 
 **De Castro:** On TV? Uh, what, Shark Tank?
 
@@ -410,9 +380,9 @@ In an offhand comment, De Castro referred to the communication as "divine interv
 
 **De Castro:** Okay. Is there anything else you have to say for the record?
 
-**SCP-4416-A:** Tubi make big warning: stop punching sharks.
+**SCP-4416-A:** Tubi make big warning: Stop punching sharks.
 
-**De Castro:** //[Laughing.]// That's ridiculous.
+**De Castro:** //[He chuckles.]// That's ridiculous.
 
 **SCP-4416-A:** Am serious. Stop it. Let shark people eat. We hunger.
 
@@ -420,53 +390,59 @@ In an offhand comment, De Castro referred to the communication as "divine interv
 
 **SCP-4416-A:** No please, stop!
 
-//[A disturbance causes large waves in the cave.]//
+//[The cave shakes, and waves crash against the walls.]//
 
 **De Castro:** I hope they punch a hundred sharks. A thousand! And I hope you feel every last knuckle.
 
 **SCP-4416-A:** Do not doubt my powers, agent man.
 
-//[At this point, no further audio from the entity was detected. De Castro searched for SCP-4416-A for the next 10 minutes before ending the recording.]//
-
-= **<End Log>**
+**«07:55:»** At this point, no further audio from the entity was detected. De Castro searched for SCP-4416-A for the next 10 minutes before ending the recording.
+----
+= **[END LOG | 08:05 PM]**
 [[/div]]
 
-After the correspondence, but before De Castro returned to the site, an unauthorized shipment arrived at Site-42. The shipment in question was a box with Amazon Prime packaging. After security personnel discerned the package's safety, the package was opened, revealing an assortment of human teeth and trace amounts of blood.
+After the correspondence, but before De Castro returned to the site, an unauthorized shipment arrived at Site-42. The shipment in question was a box with Amazon Prime packaging. After security personnel discerned the package's safety, it was opened, revealing an assortment of human teeth and trace amounts of blood.
 
 The following message was printed atop the package with dried blood:
 
 [[=]]
-> ##b01|**this is why u trust sharko**##
+> [[span style="color: #b01; font-weight: bold;"]]this is why u trust sharko[[/span]]
 [[/=]]
 
 ----
+
 @@ @@
 @@ @@
+
 [[=]]
-[[collapsible show="► INPUT LEVEL 4/4416 SECURITY CREDENTIALS ◄" hide="▼ CREDENTIALS APPROVED ▼"]]
+[[collapsible show="▶ INPUT LEVEL 4/4416 SECURITY CREDENTIALS ◀" hide="▼ CREDENTIALS APPROVED ▼"]]
 [[/=]]
 
 [[div style="text-align: left;"]]
-The following document was submitted to the Site-42 Projects Command Office by Field Agent De Castro.
+The following document was submitted to the Site-42 Projects Command Office by Field Agent Nico De Castro.
 
 [[div class="content-panel standalone series"]]
-= __**CONTAINMENT PROPOSAL**__
+[[=]]
++++ __VIDEO LOG__
+[[/=]]
 ----
-**Proposal #:** SCP-4416-16-A
+**PROPOSAL NUMBER:** SCP-4416-16
 
-**Proposed Secondary Classification:** Thaumiel 
+**PROPOSED SECONDARY CLASSIFICATION:** Thaumiel 
 
-**Proposal Description:** Following an extensive survey of recent events, I've deduced that the concealed existence of the entity known as "Tubi-ti" (designated SCP-4416-A) is the result of a weak incidental Sensory Extrapolation (SEP) Field created and perpetuated by SCP-4416. The activity remains effective enough in warding off the entity and increases in potency based on the number of people engaging in it. 
+**DESCRIPTION:** Following an extensive survey of recent events, I've deduced that the concealed existence of the entity known as "Tubi-ti" (designated SCP-4416-A) is the result of a weak incidental Sensory Extrapolation (or SEP) Field created and perpetuated by SCP-4416. The activity remains effective enough in warding off the entity and increases in potency with the number of people engaging in it. 
 
-Due to this, and the potential (if dubious) danger alluded to in my contact with the entity, I suggest updating the anomaly's secondary classification to Thaumiel-Class.
+Due to this -- and the potential (if dubious) danger alluded to in my contact with the entity -- I suggest updating the anomaly's secondary classification to THAUMIEL-Class.
 [[/div]]
 
-**Update:** Following an extensive investigation, SCP-4416 has been additionally classified as Thaumiel. Controlled attempts at practicing SCP-4416 are unauthorized but are under close consideration.
+**UPDATE:** Following an extensive investigation, SCP-4416 has been additionally classified as Thaumiel. Controlled attempts at practicing SCP-4416 are unauthorized but under close consideration.
 [[/div]]
 
 [[/collapsible]]
+
 @@ @@
 @@ @@
+
 [[div style="border-bottom: 2px solid #777; margin-bottom: 1px;"]]
 [[/div]]
 [[div style="border-bottom: 1px solid #777;"]]
