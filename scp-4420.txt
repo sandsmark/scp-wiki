@@ -27,27 +27,43 @@ sup{
 body{
     --cutColour: #fafafa;
     --barColour: #590505;
+    color: rgb(12, 12, 12);
 }
-.translation_block{
-    display: none;
+.translation_block{ display: none; }
+
+/* DIV BLOCKS */
+.message-location{
+    float: left; 
+    text-align: left;
 }
-.info-container .collapsible-block-folded a{
-    color: #FFF;
+.message-size{
+    background: #c0c0c0; 
+    width: 18.4em; 
+    border-radius: 3.049em; 
+    padding: 0.061em 1.220em;
+    font-size: 112.5%; 
+    text-align: center; 
 }
-.info-container .collapsible-block-unfolded-link a{
-    color: #FFF;
-}
-.info-container .collapsible-block-link,
-.info-container:hover .collapsible-block-link{
-    line-height: 1.6em;
-}
-.collapsible-block-link{
-    font-weight: bold;
-}
+
+/* FORMATTING */
 hr{
      margin: 1em 0;
      padding: 0;
      border: 0;
+}
+.lite-header hr{
+    width: 45%;
+    margin: auto;
+    background-color: #e6e6e6;
+    border: none;
+    height: 2px;
+}
+.h2{
+    margin: 0.5em 0 0.4em;
+    padding: 0;
+    letter-spacing: 1px;
+    font-size: 150%;
+    font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
 }
 [[/module]]
 
@@ -63,36 +79,44 @@ hr{
 [[div class="scp-image-block block-center" style="width:100%;"]]
 [[image tater-tot.png style="width:100%;" link=#]]
 [[div class="scp-image-caption" style="width:100%;"]]
-SCP-4420 in its current state. Photo taken from a safe distance of 50 m.
+SCP-4420 in its current state. Photo taken from a safe distance of 50 meters.
 [[/div]]
 [[/div]]
 ----
- **Special Containment Procedures:** SCP-4420 is currently contained 150 m from Site-82 in a localized artificial pocket dimension, housed in Tentative Containment Module #819. Para-technicians have installed a Scranton-Marlowe Topology Stabilizer (SMTS) to maintain dimensional stability in the chamber.
+ **Special Containment Procedures:** SCP-4420 is currently contained 150 meters from Site-82 in a localized artificial pocket dimension, housed in Tentative Containment Module #819. Para-technicians have installed a Scranton-Marlowe Topology Stabilizer (or SMTS) to maintain dimensional stability in the chamber.
 ----
-**Description:** SCP-4420 is a red Idaho potato with a current mass of 400,000,000 kg and external dimensions of 150 m by 65 m by 55 m. SCP-4420 displays the following ectoentropic properties:
+**Description:** SCP-4420 is a red Idaho potato with a current mass of 400,000,000 kg and external dimensions of 150 meters by 65 meters by 55 meters. SCP-4420 displays the following ectoentropic properties:
 
-1. SCP-4420 recuperates moisture shrinkage (~5% bi-weekly) by generating a random amount of solid potato matter. During this event, a random Idaho citizen's drinking water transforms into starch-rich potato-flavoured water, granting the ability to commune with potatoes for 3 to 10 hours upon consumption.
+# SCP-4420 recuperates moisture shrinkage (~5% every two weeks) by generating a random amount of solid potato matter. During this event, a random Idaho citizen's drinking water transforms into starch-rich potato-flavoured water, granting the ability to commune with potatoes for 3 to 10 hours upon consumption.
+# Exposure to visible EM radiation produces potato matter of a randomized form. The new matter relates to potatoes at various conceptual levels, be that immediate or vague. The new matter grows alongside SCP-4420, attaching themselves via esoteric means beyond current agricultural understanding. Observed forms include:
+ * Any variation of the 5,000 potato varieties grown globally.
+ * Forms of cooked potato such as mashed potatoes, French cut fries, potato chips, and hash browns.
+ * 1996 Idaho County Junior League Potato Sack Race champion Michelle Brown, age 6.
+ * A species of Jerusalem cricket (colloquially known as a potato bug) composed of sweet potato. The entities have colonized ~8% of SCP-4420 to date.
+ * Memetic ennui affecting 25% of individuals within a 5 km radius.
+# SCP-4420 displays an innate immunity to decay. SCP-4420 consumes organic irregularities almost immediately after they develop and produces healthy potato matter in their place.
+# SCP-4420 consumes food and organic waste within a 20-meter-wide area. Any organic matter entering this area transforms into a potato tuber of equal mass, which teleports into SCP-4420. Organic matter includes small animals up to 10 kg in mass.
 
-2. Exposure to visible EM radiation produces potato matter of a randomized form. The new matter relates to potatoes at various conceptual levels, be that immediate or vague. The new matter grows alongside SCP-4420, attaching themselves via esoteric means beyond current agricultural understanding. Observed forms include:
-* Any variation of the 5,000 potato varieties grown globally.
-* Forms of cooked potato such as mashed potatoes, French cut fries, potato chips, and hash browns.
-* 1996 Idaho County Junior League Potato Sack Race champion Michelle Brown, age 6.
-* A species of Jerusalem cricket (colloquially known as a potato bug) composed of sweet potato. The entities have colonized approximately 8% of SCP-4420 to date.
-* Memetic ennui affecting 25% of individuals within a 5 km radius.
+At the time of documentation, SCP-4420 has been growing for ~22 years.
 
-3. SCP-4420 displays an innate immunity to decay. SCP-4420 consumes organic irregularities almost immediately after they develop and produces healthy potato matter in their place.
+@@ @@
+[[div class="lite-header"]]
+----
+[[/div]]
+= [[span class="h2"]]Updates[[/span]]
+[[div class="lite-header"]]
+----
+[[/div]]
+@@ @@
 
-4. SCP-4420 consumes food and organic waste within a 20 m area. Any organic matter entering this area transforms into a potato tuber of equal mass, which teleports into SCP-4420. Organic matter includes small animals up to 10 kg in mass.
+**I. May 10, 2019**
 
-At the time of documentation, SCP-4420 has been growing for approximately 22 years.
+Field researchers discovered foreign fluid with trace amounts of thaumic contaminant in the local groundwater. Site-82's Command Office initiated [[[*scp-3731|Mandate 3731-Ov91]]], which calls for immediate lockdown and destruction of foreign substances. The area-wide lockdown was successful -- not accounting for SCP-4420, due to its containment location.
 
-**Update:** On May 10th, 2019, field researchers discovered foreign fluid with trace amounts of thaumic contaminant in the local groundwater. Site-82's Command Office initiated [[[http://www.scp-wiki.net/scp-3731|Mandate 3731-Ov91]]], which calls for immediate lockdown and destruction of foreign substances. The area-wide lockdown was successful -- not accounting for SCP-4420, due to its containment location.
+At 2151 CDT, SCP-4420 absorbed thaumic emission and developed sapience that lasted for a period of 32 hours. During this time, SCP-4420 displayed the ability to manipulate informational constructs. This led to the dissemination of 362 separate SMS messages to researchers on-site. A series of received messages are as follows.
 
-At 2151 CDT, SCP-4420 absorbed thaumaturgic emission and developed sapience that lasted for a period of 32 hours. During this time, SCP-4420 displayed the ability to manipulate informational constructs. This led to the dissemination of 362 separate SMS messages to researchers on-site. A series of received messages are as follows.
-
-
-[[div style="float:left; width: 300px; text-align: left;"]]
-[[div style="font-size: 11pt; background: #c0c0c0; text-align: center; border-radius: 50px /50px; padding: 1px 20px;"]]
+[[div class="message-location"]]
+[[div class="message-size"]]
 can you see me
 [[/div]]
 @@@@
@@ -100,8 +124,8 @@ can you see me
 [[div style="clear: left;"]]
 [[/div]]
 
-[[div style="float:left; width: 300px; text-align: left;"]]
-[[div style="font-size: 11pt; background: #c0c0c0; text-align: center; border-radius: 50px /50px; padding: 1px 20px;"]]
+[[div class="message-location"]]
+[[div class="message-size"]]
 pls look at me
 [[/div]]
 @@@@
@@ -109,8 +133,8 @@ pls look at me
 [[div style="clear: left;"]]
 [[/div]]
 
-[[div style="float:left; width: 300px; text-align: left;"]]
-[[div style="font-size: 11pt; background: #c0c0c0; text-align: center; border-radius: 50px /50px; padding: 1px 20px;"]]
+[[div class="message-location"]]
+[[div class="message-size"]]
 im big
 [[/div]]
 @@@@
@@ -118,8 +142,8 @@ im big
 [[div style="clear: left;"]]
 [[/div]]
 
-[[div style="float:left; width: 300px; text-align: left;"]]
-[[div style="font-size: 11pt; background: #c0c0c0; text-align: center; border-radius: 50px /50px; padding: 1px 20px;"]]
+[[div class="message-location"]]
+[[div class="message-size"]]
 look at me
 [[/div]]
 @@@@
@@ -127,8 +151,8 @@ look at me
 [[div style="clear: left;"]]
 [[/div]]
 
-[[div style="float:left; width: 300px; text-align: left;"]]
-[[div style="font-size: 11pt; background: #c0c0c0; text-align: center; border-radius: 50px /50px; padding: 1px 20px;"]]
+[[div class="message-location"]]
+[[div class="message-size"]]
 do you think im pretty
 [[/div]]
 @@@@
@@ -136,8 +160,8 @@ do you think im pretty
 [[div style="clear: left;"]]
 [[/div]]
 
-[[div style="float:left; width: 300px; text-align: left;"]]
-[[div style="font-size: 11pt; background: #c0c0c0; text-align: center; border-radius: 50px /50px; padding: 1px 20px;"]]
+[[div class="message-location"]]
+[[div class="message-size"]]
 is that what i rly look like
 [[/div]]
 @@@@
@@ -145,8 +169,8 @@ is that what i rly look like
 [[div style="clear: left;"]]
 [[/div]]
 
-[[div style="float:left; width: 300px; text-align: left;"]]
-[[div style="font-size: 11pt; background: #c0c0c0; text-align: center; border-radius: 50px /50px; padding: 1px 20px;"]]
+[[div class="message-location"]]
+[[div class="message-size"]]
 no way
 [[/div]]
 @@@@
@@ -154,8 +178,8 @@ no way
 [[div style="clear: left;"]]
 [[/div]]
 
-[[div style="float:left; width: 300px; text-align: left;"]]
-[[div style="font-size: 11pt; background: #c0c0c0; text-align: center; border-radius: 50px /50px; padding: 1px 20px;"]]
+[[div class="message-location"]]
+[[div class="message-size"]]
 is that how you see me ☹️
 [[/div]]
 @@@@
@@ -163,8 +187,8 @@ is that how you see me ☹️
 [[div style="clear: left;"]]
 [[/div]]
 
-[[div style="float:left; width: 300px; text-align: left;"]]
-[[div style="font-size: 11pt; background: #c0c0c0; text-align: center; border-radius: 50px /50px; padding: 1px 20px;"]]
+[[div class="message-location"]]
+[[div class="message-size"]]
 you cant see me like this
 [[/div]]
 @@@@
@@ -172,8 +196,8 @@ you cant see me like this
 [[div style="clear: left;"]]
 [[/div]]
 
-[[div style="float:left; width: 300px; text-align: left;"]]
-[[div style="font-size: 11pt; background: #c0c0c0; text-align: center; border-radius: 50px /50px; padding: 1px 20px;"]]
+[[div class="message-location"]]
+[[div class="message-size"]]
 im not good enough am i
 [[/div]]
 @@@@
@@ -181,8 +205,8 @@ im not good enough am i
 [[div style="clear: left;"]]
 [[/div]]
 
-[[div style="float:left; width: 300px; text-align: left;"]]
-[[div style="font-size: 11pt; background: #c0c0c0; text-align: center; border-radius: 50px /50px; padding: 1px 20px;"]]
+[[div class="message-location"]]
+[[div class="message-size"]]
 not for you
 [[/div]]
 @@@@
@@ -190,8 +214,8 @@ not for you
 [[div style="clear: left;"]]
 [[/div]]
 
-[[div style="float:left; width: 300px; text-align: left;"]]
-[[div style="font-size: 11pt; background: #c0c0c0; text-align: center; border-radius: 50px /50px; padding: 1px 20px;"]]
+[[div class="message-location"]]
+[[div class="message-size"]]
 how could i be
 [[/div]]
 @@@@
@@ -199,8 +223,8 @@ how could i be
 [[div style="clear: left;"]]
 [[/div]]
 
-[[div style="float:left; width: 300px; text-align: left;"]]
-[[div style="font-size: 11pt; background: #c0c0c0; text-align: center; border-radius: 50px /50px; padding: 1px 20px;"]]
+[[div class="message-location"]]
+[[div class="message-size"]]
 leave me alone
 [[/div]]
 @@@@
@@ -208,8 +232,8 @@ leave me alone
 [[div style="clear: left;"]]
 [[/div]]
 
-[[div style="float:left; width: 300px; text-align: left;"]]
-[[div style="font-size: 11pt; background: #c0c0c0; text-align: center; border-radius: 50px /50px; padding: 1px 20px;"]]
+[[div class="message-location"]]
+[[div class="message-size"]]
 im a monster
 [[/div]]
 @@@@
@@ -217,22 +241,26 @@ im a monster
 [[div style="clear: left;"]]
 [[/div]]
 
-[[div style="float:left; width: 300px; text-align: left;"]]
-[[div style="font-size: 11pt; background: #c0c0c0; text-align: center; border-radius: 50px /50px; padding: 1px 20px;"]]
+[[div class="message-location"]]
+[[div class="message-size"]]
 im sorry i look this way
 [[/div]]
-@@@@
+
 [[/div]]
 [[div style="clear: left;"]]
 [[/div]]
+----
+**II. May 12, 2019**
 
-**Update:** On May 12th at 0551 CDT, SCP-4420 ceased all anomalous growth and began to show signs of accelerated decomposition. SCP-4420 is currently classified as Neutralized.
+At 0551 CDT, SCP-4420 ceased all anomalous growth and began to show signs of accelerated decomposition. 
+
+SCP-4420 is currently classified as Neutralized.
 
 [[footnoteblock]]
 
-[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[div style="border-bottom: 2px solid #777; margin-bottom: 1px;"]]
 [[/div]]
-[[div style="border-bottom:1px solid #777;"]]
+[[div style="border-bottom: 1px solid #777;"]]
 [[/div]]
 
 [[=]]
