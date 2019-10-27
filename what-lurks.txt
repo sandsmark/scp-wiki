@@ -1,6 +1,10 @@
 title:What Lurks In The Dark
 [[include component:preview text="//My imagination populated the dark with its own monsters. I was never afraid of the darkness itself.//"]]
 
+[[>]]
+[[module Rate]]
+[[/>]]
+
 [[include component:info-ayers
 |lang=en
 |page=what-lurks
@@ -29,19 +33,8 @@ body{
 .translation_block{
     display: none;
 }
-.info-container .collapsible-block-folded a{
-    color: #FFF;
-}
-.info-container .collapsible-block-unfolded-link a{
-    color: #FFF;
-}
-.info-container .collapsible-block-link,
-.info-container:hover .collapsible-block-link{
-    line-height: 1.6em;
-}
-.collapsible-block-link{
-    font-weight: bold;
-}
+
+/* FORMATTING */
 hr{
      margin: 1em 0;
      padding: 0;
@@ -49,12 +42,6 @@ hr{
 }
 [[/module]]
 
-[[>]]
-[[module Rate]]
-[[/>]]
-@@ @@
-@@ @@
-@@ @@
 [[==]]
 [[=]]
 //All Hallow's Eve, 2313
@@ -184,6 +171,7 @@ Would you?
 [[/div]]
 [[div style="border-bottom:1px solid #777;"]]
 [[/div]]
-[[>]]
+
+[[=]]
 [[module Rate]]
-[[/>]]
+[[/=]]
