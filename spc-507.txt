@@ -1,5 +1,9 @@
 title:SPC-507
-[[include component:preview text=SPC-507 is a pugilistic operation co-developed by the Centre, Poseidon Labs, and the Liberated Cetacean Union (LCU).]]
+[[include component:preview text=SPC-507 is an ongoing pugilistic operation co-developed by the Centre, Poseidon Laboratories, and the Liberated Cetacean Union.]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
 
 [[include :scp-wiki:component:info-ayers
 |lang=en
@@ -16,13 +20,8 @@ This article is **Part 6** of the **Team Bird** storyline.
 [[module CSS]]
 @import url(http://www.scp-wiki.net/component:spc-theme/code/1);
 
-/* HEADER */
-#header h1 a::before { content: "Shark Punching Centre" !important; }
-
-#header h2 span::before { content: "Search, Punch, Conquer" !important; }
-
 /* INFO BOX */
-sup {
+sup{
     vertical-align: top;
     position: relative;
     top: -0.5em;
@@ -30,88 +29,62 @@ sup {
 body{
     --cutColour: #fafafa;
     --barColour: #132639;
+    color: rgb(12, 12, 12);
 }
-.translation_block{
-    display: none;
-}
-.info-container .collapsible-block-folded a{
-    color: #FFF;
-}
-.info-container .collapsible-block-unfolded-link a{
-    color: #FFF;
-}
-.info-container .collapsible-block-link,
-.info-container:hover .collapsible-block-link {
-    line-height: 1.6em;
-}
-.collapsible-block-link{
-    font-weight: bold;
-}
+.translation_block{ display: none; }
+
+/* HEADER */
+#header h1 a::before{ content: "SPC Database" !important; }
+#header h2 span::before{ content: "Search, Punch, Conquer" !important; }
 
 /* DIV BLOCKS */
-.cicapoco_box{
-    border: 1px solid #252525;
-    background:#f2f2c2;
+.cicapoco-box{
+    border: 1px solid #999;
+    background-color: #f2f2c2;
     padding: .5em;
     margin-bottom: 1em;
     text-align: center;
 }
 .exploration-log{
-    border-radius: 10px;
-    border: 1px dashed #999;
-    background-color: #F5F5F5;
+    border: 2px dashed #999;
+    border-radius: .61em;
+    background-color: #f4f4f4;
     padding: .25em 1em;
     margin-bottom: 1em;
 }
 .quote-block{
-    border: 1px double #999;
+    border: 2px double #999;
     background-color: #f4f4f4;
     padding: .25em 1em;
     margin-bottom: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
 }
 .oracle{
-    border: 1px #00060A;
+    border: 2px solid rgb(12, 12, 12);
     background-color: #4682B4;
-    color: white;
     padding: .25em 1em;
     margin-bottom: 1em;
+    color: #F0F8FF;
     text-align: center;
 }
 .inner-block{
-    border: 1px solid #142954; 
+    border: 1px solid rgb(12, 12, 12); 
     background-color: #4682B4; 
-    color: #F0F8FF; 
     padding: .25em 1em;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-bottom: 1em;
+    text-align: left;
 }
 .team-bird-nav-spc{
-    background-color: black;
-    border: outset 1.5px black;
-    border-radius: 30px;
-    color: black;
+    background-color: rgb(12, 12, 12);
     background: linear-gradient(to bottom right, rgba(0,0,0,0), rgba(70,130,180,1));
+    border: outset 1.5px rgb(12, 12, 12);
+    border-radius: 1.829em;
+    color: rgb(12, 12, 12);
     font-weight: bold;
     font-size: 85%;
 }
 
 /* FORMATTING */
-.dark-header hr{
-    width: 100%;
-    margin: auto;
-    background-color: #142954;
-    border: none;
-    height: 1px;
-}
 .resize img{
-    width: auto;
-    height: 150px;
-    float: left;
-    margin: 5px;
-}
-.resizesm img{
     width: auto;
     height: 125px;
     float: left;
@@ -124,130 +97,73 @@ hr{
 }
 [[/module]]
 
-[[>]]
-[[module Rate]]
-[[/>]]
-@@ @@
-@@ @@
-@@ @@
-[[div class="cicapoco_box"]]
+[[div class="cicapoco-box"]]
 [[div class="resize"]]
 [[image http://scp-wiki.wdfiles.com/local--files/spc-993/spcheader.png]]
 [[/div]]
 ++++ NOTICE FROM THE CENTRAL INTELLIGENCE COORDINATION AND PROJECTS OPERATION COMMAND OFFICE
 
-SPC-507 is currently **##green|ACTIVE##**. 
+SPC-507 is [[span style="color: green; font-weight: bold;"]]ACTIVE[[/span]]. 
 
-Any RED NETHER incursions are to be reported to the Command Office immediately, at which point an authorized Marine Fighting Team is to be deployed. All RED NETHER threats are designated an EPSILON-GREEN priority, escalating to OMEGA-GREEN during a mating scenario.
+All RED NETHER incursions are to be reported to the Command Office, at which point an authorized Marine Fighting Team will be deployed. RED NETHER threats are an EPSILON-GREEN priority, escalating to OMEGA-GREEN during a mating scenario. 
 
-The final resting place of MFT SCYLLA, marked by a trans-dimensional beacon, is located in pocket universe NOIR ZENITH. Centre Pugilists may pay their respects to MFT SCYLLA in NOIR ZENITH but are to remain vigilant of local Selachian attacks.
-
-MFT CHARYBDIS exists to deter the Selachian threat known as WHITE NETHER.
+The Selachian threat known as WHITE NETHER is to be deterred at all costs.
 [[/div]] 
  
 **Project #:** SPC-507
 
-**Selachian Pugnātorial Capabilities:** SPC-507 is an ongoing pugilistic operation against Extra-Universal Selachian threats.[[footnote]]Selachian threats from beyond our universe.[[/footnote]] RED NETHER have begun widespread attacks in nearby universes and can be deterred with state-of-the-art pugilism. Additionally, MFT CHARYBDIS has undergone enhancement to locate and pummel WHITE NETHER. 
+**Selachian Pugnātorial Capabilities:** SPC-507 exists to train and equip Centre Pugilists for combat against Extra-Universal Selachian threats (Selachian threats from beyond our universe). Prominent threats include:
 
-While off-duty, MFT CHARYBDIS is stationed in Kydonia, the Kingdom of Mycenae, in an underwater geodesic dome code-named BRINE MONASTERIUM. 
+1. **__RED NETHER__**
+[[div style="margin: 1.308em;"]]
+RED NETHER refers to Deviant-Type Selachian Entities that manifest in nearby universes to prepare for the Mistaken Beast's eventual arrival. During the Seventh Deviant Crusade, RED NETHER Entities were found referenced in ancient Sharkicist manuscripts as "angels" and "acolytes". RED NETHER are known for sexually aggressive exhibitionist mating attacks, which are capable of causing lightning storms, even in the vacuum of space.
 
-**Project Component(s):** SPC-507 is a pugilistic operation co-developed by the Centre, Poseidon Labs, and [[[spc-1258|the Liberated Cetacean Union (LCU)]]]. SPC-507 is adapted for locating, tracking down, and administering specialized pugilism to active Extra-Universal Selachian threats.
+Centre Pugilists have consistently went on record to describe these entities as "passive-aggressive", "demonic", and even "sassy". 
+[[/div]]
 
-RED NETHER refers to Extra-Universal Selachian Entities that act as heralds of the Mistaken Beast's arrival. RED NETHER manifest in universes untainted by the Selachian threat. RED NETHER Entities were referenced in ancient Sharkicist manuscripts pilfered on October 31, 1939, during the Seventh Deviant Crusade, and were first sighted in combat on February 9, 1999. Sharkics refer to RED NETHER in their holy scriptures as "angels" and "acolytes", while Centre Pugilists describe them as "demonic", "passive-aggressive", and even "sassy". RED NETHER are known for sexually aggressive exhibitionist mating attacks, which are capable of causing lightning storms, even in the vacuum of space.
+2. **__WHITE NETHER__**
+[[div style="margin: 1.308em;"]]
+WHITE NETHER refers to a massive individual Deviant-Type Selachian Entity with the capacity to travel between universes. 
 
-WHITE NETHER refers to a singular Extra-Universal Selachian Entity with the capacity to travel between universes. All Centre Pugilists encountering WHITE NETHER have become Missing in Pugnātion. All WHITE NETHER reports allege of its "realityvoric" tendencies: WHITE NETHER consumes copious amounts of matter during its hunts. Whether this is for survival, sport, or sexually explicit purposes is unknown. WHITE NETHER's ultimate goal has not been determined, as all attempts at communication with the entity have resulted in summary digestion.
+All Centre Pugilists encountering WHITE NETHER have gone Missing in Pugnātion. WHITE NETHER reports typically include reference to "ontovoric" tendencies: WHITE NETHER consumes copious amounts of matter during its hunts. Whether this is for survival, sport, or sexually explicit purposes is unknown. WHITE NETHER's ultimate goal has not yet been determined, as all attempts at communication have resulted in summary digestion.
+[[/div]]
 
-**Augmentation Summary:** The following is a list of SPC-507's sub-components:
+**Project Component(s):** SPC-507 is an ongoing pugilistic operation co-developed by the Centre, Poseidon Laboratories, and [[[spc-1258|the Liberated Cetacean Union (or LCU)]]]. SPC-507 makes use of the following sub-components:
 
-||~ Sub-component ||~ Function ||
-|| Fractal Acclimator for Spatial Heuristics (FASH) || A device capable of scanning for Selachian threats in nearby universes. ||
-|| Tyson Ontic Pugnātor (TOP) || A Deviant technology device capable of opening portals between different universes by "punching" through the dimensional barrier. ||
-|| CERULEAN EXPANSE || Deviant-Type Cetacean Entities allied with the Centre. These entities are trained in pugilism and are natural enemies of Selachians. ||
-|| Marine Fighting Team CHARYBDIS[[footnote]]All MFT SCYLLA frogmen expired following an abundantly painful encounter with WHITE NETHER, and have been replaced with MFT CHARYBDIS.[[/footnote]] || A special forces unit outfitted with biochemical and cybernetic enhancements. ||
+||~ Sub-Component ||~ Function ||
+|| Fractal Acclimator for Spatial Heuristics (or FASH) || A long-range scanning device capable of locating Deviant-Type Selachian threats in nearby universes. Developed with the help of Poseidon Labs. ||
+|| Tyson Ontic Pugnātor (or TOP) || An experimental Deviant technology capable of opening portals between different universes by "punching" through the dimensional barrier. Developed by Dr. Mike Tyson, PhD. ||
+|| CERULEAN EXPANSE || Deviant-Type Cetacean Entities allied with the Centre. Each Cetacean is trained in specialized Deviant pugilism. ||
+|| Marine Fighting Team CHARYBDIS || A special forces unit outfitted with biochemical and cybernetic enhancements. The team was formed following an abundantly fatal encounter between Marine Fighting Team SCYLLA frogmen and WHITE NETHER. MFT CHARYBDIS is currently stationed in Kydonia, the Kingdom of Mycenae; in an underwater geodesic dome code-named BRINE MONASTERIUM. Their prime directive is to locate and pummel WHITE NETHER. ||
 
-FASH and TOP possess no capacity to engage in pugilism with Selachian Entities, except when adapted for use in MFT CHARYBDIS operations.
+**Enhancement Summary:** CERULEAN EXPANSE (//Supramagnum musculus atlanto//) is the largest species of Deviant-Type Cetacean Entities on Earth, capable of atmospheric and exospheric flight via twelve natural ramjet sphincters. The LCU has granted the Centre express permission to use CERULEAN EXPANSE in SPC-507.
 
-Dr Mike Tyson, PhD, developed the experimental Tyson Ontic Pugnātor (TOP) as the first Centre technology with Extra-Universal capabilities. 
+The Centre has selected a single CERULEAN EXPANSE specimen ("Gægr Kemdulnim the Deep One") measuring 45 meters in length and over 180,000 kg in weight. Gægr has been outfitted with an internal cargo bay to transport a single Marine Fighting Team, their supplies, and a set of Fish Stick-Class cryonic units, as well as subdermal implants to produce internal oxygen. Gægr has been grafted with an additional propulsion system in the form of an unobtanium power extractor, granting him flight speeds of up to Mach 12 (14,800 km/h). Gægr is a veteran Cetacean pugilist trained in the esoteric pugilistic art of Yzylvin Xa, having served in the Seventh Deviant Crusade. Gægr is fluent in English, Whalish, Sharkish, and the Cetacean song-language "Balooga".
 
-On June 8, 2008, the Fathometric Acclimator for Subnautical Heuristics[[footnote]]Its designation before being renamed.[[/footnote]] (a FASH prototype) was proposed by the Global Organization of Countries as a rebuttal to the Abyssal Sharkicist government's ban on all deep-sea study. Since humans have only explored 5% of the Earth's oceans, we lack knowledge of potential Deviant threats lurking beneath the surface of two-thirds of the planet. The GOC requisitioned Poseidon Labs to develop this long-range scanning technology to discover seaborne Deviant threats while still on land. 
+**Augmentation Summary:** MFT CHARYBDIS is a team of Centre frogmen[[footnote]]**Frogman:** A Marine Fighting Team operator, trained for combat while wearing underwater breathing equipment.[[/footnote]] enhanced with mimetic magnesium-titanium bone implants and muscular grafts extracted directly from Deviant-Type Selachian entities. After the loss of MFT SCYLLA, CHARYBDIS was given further implants in the form of epinephrine emitters that yield a 200% increase in adrenal gland activity during high-stress scenarios.
 
-On October 28, 2013, the Centre acquired FASH, and with the help of Poseidon Labs, developed an update to the proprietary FASH software to focus on Selachian Entities (Project BASH THE FASH). Poseidon Labs adapted State-of-the-art Extra-Universal technologies for use in SPC-507, granting it the ability to detect Selachian threats in the nearest 200 universes.
-
-**Enhancement Summary:** CERULEAN EXPANSE (//Supramagnum musculus atlanto//) is a species of Deviant-Type Cetacean Entities that once rivalled the Megalodon (//Carcharocles megalodon//). CERULEAN EXPANSE are the largest Cetacean Entities on Earth and are capable of atmospheric and exospheric flight via 12 natural ramjet sphincters on the undersides of their bodies. The LCU has granted the Centre express permission to use CERULEAN EXPANSE in SPC-507.
-
-The Centre has selected a single CERULEAN EXPANSE specimen, "Gægr Kemdulnim the Deep One". Gægr measures 45 m in length and weighs over 180,000 kg. Gægr has been outfitted with an internal cargo bay to transport a single Marine Fighting Team, their supplies, and a set of Fish Stick-class cryonic units, as well as subdermal implants to produce internal oxygen. Gægr has been grafted with an additional propulsion system in the form of an unobtanium power extractor, granting him flight speeds of up to Mach 12 (14,800 km/h). Gægr is a veteran Cetacean pugilist trained in the esoteric pugilistic art of Yzylvin Xa, having served in the Seventh Deviant Crusade. Gægr is fluent in Whalish, English, Sharkish, and the Cetacean song-language "Balooga".
-
-MFT CHARYBDIS is a team of Centre frogmen[[footnote]]A Marine Fighting Team operator, trained for combat while wearing underwater breathing equipment.[[/footnote]] enhanced with mimetic magnesium-titanium bone implants and muscular grafts extracted from Deviant-Type Selachian entites part of [[[SPC-2000]]]. After the loss of MFT SCYLLA, MFT CHARYBDIS was given further implants in the form of epinephrine emitters that yield a 200% increase in adrenal gland activity during high-stress scenarios.
-
-MFT CHARYBDIS utilizes the prototype NEUROKNOCK powered armour, which consists of a high-durability vacuum-sealed tungsten carbide exoskeleton capable of enhancing pugilistic force by a factor of 3. NEUROKNOCK is outfitted with a 12-hour oxygen scrubber and rebreather, heating and cooling systems, a digital radio transmitter, and a Selachian identification HUD. NEUROKNOCK is powered with a miniaturized unobtanium power extractor, which fuels a back-mounted rocket pack for each set of armour.
+MFT CHARYBDIS uses prototype NEUROKNOCK powered armour, which consists of a high-durability vacuum-sealed tungsten carbide exoskeleton capable of enhancing pugilistic force by a factor of three. NEUROKNOCK is outfitted with a 12-hour oxygen scrubber and rebreather, heating and cooling systems, digital radio transmitter, and Selachian identification HUD. Each suit is also powered with a miniaturized unobtanium power extractor, which fuels a back-mounted rocket pack. 
 
 **Deployment Record:** 
 [[div class="exploration-log"]]
-= __**Marine Fighting Team Mission Logs**__
+[[=]]
++++ Marine Fighting Team Mission Logs
+[[/=]]
 ----
-**Tour of Duty:** April 5, 2018 – August 2, 2018
+1. [[span style="font-weight: bold; text-decoration: underline;"]]Subject[[/span]]: SPC-507
 
-**Team:** Marine Fighting Team CHARYBDIS
+2. [[span style="font-weight: bold; text-decoration: underline;"]]Tour of Duty[[/span]]: April 5–August 2, 2018
 
-**Subject:** SPC-507
+3. [[span style="font-weight: bold; text-decoration: underline;"]]Team[[/span]]: Marine Fighting Team CHARYBDIS
 
-**Team Lead:** C-1 Quinn Griffith (Captain)
-
-**Team Members:** 
-* C-0 Gægr Kemdulnim the Deep One (Transportation Agent)
-* C-2 Jaedan Traviss (Stealth Pugilist)
-* C-3 Leah Řezník (Parapugilist)
-* C-4 Haruki Nakahara (Tech Specialist)
+4. [[span style="font-weight: bold; text-decoration: underline;"]]Team Members[[/span]]: 
+# [[span style="font-weight: bold;"]]__C-1__ Captain Quinn Griffith[[/span]] -- Team Lead
+# [[span style="font-weight: bold;"]]__C-2__ Jaedan Traviss[[/span]] -- Stealth Pugilist
+# [[span style="font-weight: bold;"]]__C-3__ Leah Řezník[[/span]] -- Parapugilist
+# [[span style="font-weight: bold;"]]__C-4__ Haruki Nakahara[[/span]] -- Tech Specialist
+# [[span style="font-weight: bold;"]]__C-0__ Gægr Kemdulnim the Deep One[[/span]] -- Transportation Agent
 ----
 **Context:** The following is a list of notable SPC-507 project deployments. Deployment records use the following format: Mission Number, Universe Designation, Case(s) of Interest, and Commentary.
-----
-[[/div]]
-
-[[div class="quote-block"]]
-**Mission Number:** 1
-
-**Universe Designation:** Prime Universe
-
-**Case(s) of Interest:** [[[pelagic-society|Coharminous Pelagic Society (CPS)]]]
-
-**Commentary:** MFT CHARYBDIS' first call to action was a RED NETHER Entity sighting in the Oceanic country of New South Wales. MFT CHARYBDIS searched the area for 2 hours before determining that the entity had fled. Before leaving the area, MFT CHARYBDIS came across a Baseline-Type Selachian Entity at a nearby public beach and attempted to communicate.
-----
-= **<Begin Log>**
-
-**C-1 Quinn:** Oh, oh yeah, right there -- a bogey at the beach!
-
-**C-2 Jaedan:** Our //bogey// isn't anywhere to be //seen//, Quinn. Why aren't we on our way back to base right now?
-
-**C-1 Quinn:** Not on my mark, C-2. C-3, approach the bogey with elevated caution.
-
-**C-3 Leah:** Aye, sir!
-
-//[C-3 approaches the Selachian and engages in pugilism. C-3 lands 4 strikes in quick succession before the Entity vocalizes.]//
-
-**Unknown Selachian Entity:** Oi, lassie, anyone ever taught you some //kindness//? My teeth may be sharp but I'm the roundest fella this side of 'Oz. Y'all are a bunch of them boxers, ain't ya?
-
-**C-1 Quinn:** Unknown Deviant phenotype. This Selachian is capable of emitting human vocalizations! C-3, engage harder!
-
-**Unknown Selachian Entity:** Come now, lass, yer not willin' to talk this up like an adult?
-
-**C-3 Leah:** Sorry, Sammie, it's punting protocol. Listen, since you've almost reached your clobbering quota, how's about I get one more jab in and then we can both be on our way?
-
-**C-2 Jaedan:** Dammit, Leah, just bash the freak before it–
-
-**Unknown Selachian Entity:** Watch yer words, buck. The Coharminous Pelagic Society won't stand for yer tone. 
-
-**C-1 Quinn:** //[C-1 approaches the Selachian.]// What are you trying to say? Are you not the only Deviant-Type around here? Are we being ambushed?
-
-**Unknown Selachian Entity:** If ya wanna get technical, my pal Larry just a few klicks downstream got his fins on a pair of the ol' [REDACTED].[[footnote]]The name of this highly dangerous thaumaturgic counter-pugilistic weapon is classified. How it came under Selachian control is unknown.[[/footnote]] Me? I'm a //pacifish//, safe as bait.
-
-**C-2 Jaedan:** //[Muttering.]// Yeah? Well, I'm not afraid to //pass a fist//, if you catch my drift.
-
- **C-1 Quinn:** Hold on, C-2. //[To the Selachian.]// You wouldn't happen to have anything to do with that RED NETHER Entity spotted here a few hours ago, would you?
-
-**Unknown Selachian Entity:** What? Oh, yer confusin' me with one of them slimy degenerates! That's it, I'm outta here! //[The Selachian swims away before further pugilism can occur.]//
-
-= **<End Log>**
-----
 [[/div]]
 
 [[div class="quote-block"]]
@@ -259,8 +175,8 @@ MFT CHARYBDIS utilizes the prototype NEUROKNOCK powered armour, which consists o
 
 **Commentary:** MFT CHARYBDIS' FASH device informed them of a RED NETHER incursion nearby universe designated Tri-Kaa. The Selachian, a Great Hammerhead (//Sphyrna mokarran//), measured 4 meters in length. Upon arriving, MFT CHARYBDIS entered orbit around an Earth-sized planet covered with 99% water. CHARYBDIS detected the Entity 8,000 km away in geosynchronous orbit.
 ----
-= **<Begin Log>**
-
+= **[BEGIN LOG]**
+----
 **C-0 Gægr:** //[In the middle of song.]// RED NETHER is nigh, too close for comfort. Space dust, fleeting, in front and in the way. Assemble, my cohorts, and we'll make this Selachian pay!
 
 **C-3 Leah:** Oh, Gægr, that was your most beautiful song yet! Okay, boss, what are the orders?
@@ -293,14 +209,13 @@ MFT CHARYBDIS utilizes the prototype NEUROKNOCK powered armour, which consists o
 
 //[C-2 propels himself toward the Selachian at 115 km/h, performing a pugilistic technique at the base of the Selachian's skull.]//
 
-**RED NETHER Entity:** [Translation: FUCK, BUDDY, WHAT IN THE DEPTHS IS WRONG WITH YOU? I HAVE FEELINGS TOO, YOU KNOW. THAT BETTER NOT BRUISE, IT IS HARD ENOUGH TO GET A DATE LOOKING AS DUMB AS I DO AS IT IS.]
+**RED NETHER Entity:** [Translation: FUCK, BUDDY, WHAT IN THE DEPTHS IS WRONG WITH YOU? I HAVE FEELINGS TOO, YOU KNOW. THAT HAD BETTER NOT BRUISE, IT IS HARD ENOUGH TO GET A DATE LOOKING AS DUMB AS I DO AS IT IS.]
 
 //[The Selachian begins to attack by biting down on the leg of C-2's armour but is unsuccessful. In the next 3 minutes, C-2 lands 124 attacks. The Selachian goes unconscious.]//
 
-**C-1 Quinn:** Job's done, team. Head back to C-0. Now, this is against regulation, but why don't we explore that planet down there and see what we can eat? Maybe sea cows aren't extinct on this world.
-
-= **<End Log>**
+**C-1 Quinn:** Job's done, team. Head back to C-0. Now, this is against regulation, but... Why don't we explore that planet down there and see what we can eat? Maybe sea cows aren't extinct on this world.
 ----
+= **[END LOG]**
 [[/div]]
 
 [[div class="quote-block"]]
@@ -312,8 +227,8 @@ MFT CHARYBDIS utilizes the prototype NEUROKNOCK powered armour, which consists o
 
 **Commentary:** MFT CHARYBDIS is alerted to a RED NETHER attack in Universe Penta-Waxaklahun. MFT deploys to a city on a small terrestrial planet inhabited by humanoid entities. After pugilising the Selachian into submission, the humanoids celebrate, thanking MFT CHARYBDIS for their help.
 ----
-= **<Begin Log>**
-
+= **[BEGIN LOG]**
+----
 //[Recording takes place between C-1 and the leader of this particular group of humanoids.]//
 
 **C-1 Quinn:** So, you're saying that your men... Swat //bees//? How could someone hate bees?
@@ -337,9 +252,8 @@ MFT CHARYBDIS utilizes the prototype NEUROKNOCK powered armour, which consists o
 **Unknown Humanoid:** How dare you utter words tainted by the Striped Yellow Fiend? Guards, arrest this enchantress and her accomplices at once!
 
 **C-1 Quinn:** //C-4, what did you do?!// Quick, rendezvous with C-0 and let's get the hell out of here!
-
-= **<End Log>**
 ----
+= **[END LOG]**
 [[/div]]
 
 [[div class="quote-block"]]
@@ -349,10 +263,10 @@ MFT CHARYBDIS utilizes the prototype NEUROKNOCK powered armour, which consists o
 
 **Case(s) of Interest:** WHITE NETHER
 
-**Commentary:** The following is a transcript of MFT CHARYBDIS' final recorded mission. On August 2nd, 2018 at 7:51 AM, the team's FASH device detected a WHITE NETHER incursion in Universe Proto-Mih: the HQ of the "SCP Foundation".
+**Commentary:** On August 2nd, 2018 at 7:51 AM, the team's FASH device detected a WHITE NETHER incursion in Universe Proto-Mih: The HQ of "the SCP Foundation".
 ----
-= **<Begin Log, 7:51 AM>**
-
+= **[BEGIN LOG]**
+----
 **«0:00:00»** //[MFT CHARYBDIS emerges 400 km above a planet with striking similarities to Earth. WHITE NETHER takes the form of a Great White Selachian (//Carcharodon carcharias//) and is spotted consuming a passing satellite.]//
 
 **«0:29:47»** //[After consuming its meal, WHITE NETHER begins to descend into the atmosphere below. C-0 activates his unobtanium engine and follows the Entity.]//
@@ -388,9 +302,8 @@ MFT CHARYBDIS utilizes the prototype NEUROKNOCK powered armour, which consists o
 **«02:12:44»** //[C-0 attempts to escape. WHITE NETHER bites C-0's tail, preventing an exit. In an attempt to reduce further attacks, C-0 uses the unobtanium power extractor in an offensive manner, decimating WHITE NETHERS's 2nd dorsal fin. WHITE NETHER thrashes C-0, causing the unobtanium engine to malfunction, knocking C-0 into a nearby building.]//
 
 **«02:13:49»** //[The engine undergoes a destabilization. The engine blasts superheated unobtanium onto WHITE NETHER. In an attempt to escape, WHITE NETHER smashes the building into rubble before de-manifesting. The transmission ends, suggesting a total engine meltdown.]//
-
-= **<End Log>**
 ----
+= **[END LOG]**
 [[/div]]
 
 As of August 2, 2018, at 10:01 AM, the Command Office has declared MFT CHARYBDIS Killed in Pugnātion. SPC-507 has been placed on HIATUS.
@@ -401,17 +314,21 @@ As of August 2, 2018, at 10:01 AM, the Command Office has declared MFT CHARYBDIS
 [[div style="border-bottom: 1px solid #777;"]]
 [[/div]]
 [[div style="color: #0b65c0; font-weight: bold; text-align: center;"]]
+
 @@ @@
 @@ @@
 ...
 @@ @@
 @@ @@
+
 The following is ORACLE/507/OMEGA-BLACK Restricted
+
 @@ @@
 @@ @@
 ...
 @@ @@
 @@ @@
+
 [ACCESS GRANTED]
 [[/div]]
 
@@ -421,8 +338,10 @@ The following is ORACLE/507/OMEGA-BLACK Restricted
 The following audio was received by the Centre on August 9, 2018, approximately 1 week after the loss of communication with MFT CHARYBDIS. The full context of this log cannot be determined.
 
 [[div class="inner-block"]]
-[[<]]
-= **<Begin Log>**
+= **[BEGIN LOG]**
+
+[[div style="border-bottom: 1px solid black;"]]
+[[/div]]
 
 **First Avian Entity:** Now that you're willing to comply, let's–
 
@@ -452,7 +371,7 @@ The following audio was received by the Centre on August 9, 2018, approximately 
 
 **C-1 Quinn:** I don't get it.
 
-**Second Avian Entity:** You could never hope to. Speaking of which, who are you? We did not detect the proto-Avian meme complex within you. Only an experienced thaumaturge — perhaps even a powerful Type-Green, Medila forbid! — could resist such a memetic threat. Tell me, what manipulation has Thoth attempted this time?
+**Second Avian Entity:** You could never hope to. Speaking of which, who are you? We did not detect the proto-Avian meme complex within you. experienced thaumaturges — perhaps even a powerful Type-Green, Medila forbid! — could resist such a memetic threat. Tell me, what manipulation has Thoth attempted this time?
 
 **C-1 Quinn:** I'm not from around here. My team is part of an organization known as the Centre.
 
@@ -474,25 +393,24 @@ The following audio was received by the Centre on August 9, 2018, approximately 
 
 **Second Avian Entity:** Deal.
 
-= **<End Log>**
-
-[[div class="dark-header"]]
-----
+[[div style="border-bottom: 1px solid black;"]]
 [[/div]]
 
-^^**[A]**^^ This is a reference to GALLINACEOUS STRIFE, a two-phase project developed during the Seventh Deviant Crusade by the proto-Centre organization known as "The Union of American States' Center for Institutionalised Impacting (UASCII)". GALLINACEOUS STRIFE was dedicated to the use of Avian Entities to neutralize Selachian Entities, as some Avian phenotypes are known predators of Selachians. 
+= **[END LOG]**
+
+[[div style="border-bottom: 1px solid black;"]]
+[[/div]]
+
+^^**[A]**^^ This is a reference to GALLINACEOUS STRIFE, a two-phase project developed during the Seventh Deviant Crusade by the proto-Centre organization known as "The Union of American States' Center for Institutionalised Impacting" (or UASCII). GALLINACEOUS STRIFE was dedicated to the use of Avian Entities to neutralize Selachian Entities, as some Avian phenotypes are known predators of Selachians. 
 
 **Phase One:** Phase One utilized Deviant-Type Avian Entities, such as the LIMP FIREBIRD, to engage in the sport of cockfighting with Selachian Entities. Phase One was dissolved following an extensive investigation into the project's unlawful and unethical violation of Avian rights. 
 
 **Phase Two:** Phase Two involved the creation of a dense Avian meme complex (codenamed GAUSS KESTREL) to neutralize Selachian Entities. Since no actual Avians were being manipulated, no Avian rights could be violated. GAUSS KESTREL was dissolved when the Avian meme complex was lost to unknown Extra-Universal forces. As a result, GALLINACEOUS STRIFE remains on HIATUS to this day.
-[[/<]]
 [[/div]]
 
 No further transmissions on the current whereabouts of MFT CHARYBDIS have been received. CICAPOCO is searching for a new Marine Fighting Team to replace MFT CHARYBDIS.
 [[/div]]
-
 ----
-
 [[div class="team-bird-nav-spc"]]
-= << [[[SCP-3362]]] | [[size 120%]][[[bird|TEAM BIRD]]][[/size]] | [[[SCP-3570|EE-3570]]] >>
+= << [[[SCP-3362]]] | [[size 120%]][[[*bird|TEAM BIRD]]][[/size]] | [[[SCP-3570|EE-3570]]] >>
 [[/div]]
