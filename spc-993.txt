@@ -1,6 +1,10 @@
 title:SPC-993
 [[include component:preview text=At one point, orange-belt Christine Cooke, age 8, punches Bobble in the snout. The force causes him to fly through a structural beam and load-bearing wall at Mach 1.5, levelling the building.]]
 
+[[>]]
+[[module Rate]]
+[[/>]]
+
 [[include :scp-wiki:component:info-ayers
 |lang=en
 |page=spc-993
@@ -12,14 +16,8 @@ This is an SPC Format for Day 2 of the **144-Hour Jam Contest**. The theme was "
 ----
 [[include :scpdsandbox:floppyphoenix-info]]
 [[/div]]
-
 [[module CSS]]
 @import url(http://www.scp-wiki.net/component:spc-theme/code/1);
-
-/* HEADER */
-#header h1 a::before { content: "Shark Punching Centre" !important; }
-
-#header h2 span::before { content: "Search, Punch, Conquer" !important; }
 
 /* INFO BOX */
 sup{
@@ -30,106 +28,113 @@ sup{
 body{
     --cutColour: #fafafa;
     --barColour: #132639;
+    color: rgb(12, 12, 12);
 }
-.translation_block{
-    display: none;
-}
-.info-container .collapsible-block-folded a{
-    color: #FFF;
-}
-.info-container .collapsible-block-unfolded-link a{
-    color: #FFF;
-}
-.info-container .collapsible-block-link,
-.info-container:hover .collapsible-block-link{
-    line-height: 1.6em;
-}
-.collapsible-block-link{
-    font-weight: bold;
-}
+.translation_block{ display: none; }
+
+/* HEADER */
+#header h1 a::before{ content: "SPC Database" !important; }
+#header h2 span::before{ content: "Search, Punch, Conquer" !important; }
 
 /* DIV BLOCKS */
-.cicapoco_box{
-    border: 1px solid #252525;
-    background:#f2f2c2;
-    padding: .25em .5em;
+.cicapoco-box{
+    border: 1px solid #999;
+    background-color: #f2f2c2;
+    padding: .5em;
     margin-bottom: 1em;
     text-align: center;
 }
 .oracle{
-    border: 1px #00060A;
+    border: 2px solid rgb(12, 12, 12);
     background-color: #4682B4;
-    color: white;
     padding: .25em 1em;
     margin-bottom: 1em;
+    color: #F0F8FF;
     text-align: center;
 }
 .quote-block{
-    border: 1px double #999;
+    border: 2px double #999;
     background-color: #f4f4f4;
     padding: .25em 1em;
     margin-bottom: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
 }
-.resize img{
-    width: auto;
-    height: 150px;
-    float: left;
-    margin: 5px;
-}
-.resizesm img{
-    width: auto;
-    height: 125px;
-    float: left;
-    margin: 5px;
-}
-.footnotes-footer{
-    display: none;
-}
+
+/* FORMATTING */
+.collapsible-block-link{ font-weight: bold; }
 hr{
      margin: 1em 0;
      padding: 0;
      border: 0;
 }
+.resize img{
+    width: auto;
+    height: 125px;
+    float: left;
+    margin: 5px;
+}
+.h3{
+    margin: 0.5em 0 0.4em;
+    padding: 0;
+    letter-spacing: 1px;
+    font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
+    font-size: 130%;
+    font-weight: bold;
+}
+.footnotes-footer{
+    display: none;
+}
 [[/module]]
 
-[[>]]
-[[module Rate]]
-[[/>]]
-@@ @@
-@@ @@
-@@ @@
-[[div class="cicapoco_box"]]
+[[div class="cicapoco-box"]]
 ++++ NOTICE FROM THE CENTRAL INTELLIGENCE COORDINATION AND PROJECTS OPERATION COMMAND OFFICE
 
-SPC-993 is now **##b01|INACTIVE##**. Centre personnel may visit the Arena-19 Recreation Wing if they wish to view old episodes of //Bobble the Clown Shark// to increase morale.
+[[div class="resize"]]
+[[image http://scp-wiki.wdfiles.com/local--files/spc-993/spcheader.png]]
+[[/div]]
+
+Centre personnel may visit the Arena-19 Recreation Wing if they wish to view old episodes of //Bobble the Clown Shark// to increase morale.
 
 Thank you for your loyalty.
 Search, Punch, Conquer.
 
-— Nathan Jones, Commissioner, CICAPOCO
+--Nathan Jones, Commissioner, CICAPOCO
 [[/div]]
+
+[[table style="width: 100%;"]]
+[[row]]
+[[cell style="font-size: 125%;"]]
+[[span style="font-weight: 900;"]]PROJECT:[[/span]] SPC-993 [__ARCHIVED__]
+[[/cell]]
+[[cell style="font-size: 125%; text-align: right;"]]
+[[span style="font-weight: 900;"]]STATUS:[[/span]] [[span style="font-family: Courier New, Courier, monospace; font-weight: 900; color: darkred;"]]INACTIVE[[/span]]
+[[/cell]]
+[[/row]]
+[[/table]]
+----
+= [[span class="h3"]]Selachian Pugnātorial Capabilities [DEFUNCT][[/span]]
+SPC-993 is an anti-Selachian propaganda program, which the Centre uses to indoctrinate children under the age of 10. It is directly responsible for teaching pugilism and Deviant martial arts to children and training them under the Centre's mission.
+
+Viewers of SPC-993 over the age of 10 experience feelings of joy, amusement, and satisfaction. This is not believed to be a result of direct viewing: These are common side-effects of witnessing Selachian pugilism in action.
+----
+= [[span class="h3"]]Project Components[[/span]]
 
 [[include component:image-block name=http://scp-wiki.wdfiles.com/local--files/spc-993/BobbletheClownShark.png|caption=Still image from an episode of SPC-993: "Bobble Gets Berated Mercilessly By Lobsters And Other Such Crustaceans".]]
 
-**Project #:** SPC-993 (__ARCHIVED__)
-
-**Selachian Pugnātorial Capabilities [DEFUNCT]:** SPC-993 is an anti-Selachian propaganda program, which the Centre uses to indoctrinate children under the age of 10. It is directly responsible for teaching pugilism and occult martial arts to children and training them under the Centre's mission.
-
-Viewers of SPC-993 over the age of 10 experience feelings of joy, amusement, and satisfaction. This is not believed to be a result of direct viewing: these are common side-effects of witnessing Selachian pugilism in action.
-
-**Project Component(s):** SPC-993 consists of a single component: "//Bobble the Clown Shark//", a children's animated television program produced originally by FINIMATION Studios starting in 1949.
+SPC-993 consists of a single component: "//Bobble the Clown Shark//", a children's animated television program produced originally by FINIMATION Studios starting in 1949.
 
 SPC-993 features the titular character -- a Sand Tiger Selachian (//Carcharias taurus//) with ambulatory tailfins -- in his day-to-day activities as a stockbroker and moneylender. Episodes involve Bobble engaging, unsuccessfully, in insurance fraud and other business scams and becoming a victim of violence when discovered.
 
 Due to Centre augmentation, Bobble does not react negatively to pressure and is seen grinning and laughing in most scenes. Bobble does not expire as a result of his injuries; all damage incurred to Bobble[[footnote]]Which includes but is not limited to pugilism, exsanguination, punting, skewering, electrocution, use as a board in waterskiing activities (in contrast to waterboarding, which does not work on Selachian entities), mutilation, sarcophagy, exposure to cognitive hazards, and public humiliation after peeing himself.[[/footnote]] heals between episodes and scene transitions.
 
-**Augmentation Summary:** The Centre came to purchase FINIMATION Studios in 1953 and worked to alter the series to feature Bobble's humorous mistreatment by different humans and aquatic entities.
+@@ @@
 
-Through the use of metanarrative pugnātorial techniques ([[[http://www.scp-wiki.net/scp-3922|with help from the ☽☽☽ Initiative]]]), Centre pugilists were able to coerce Bobble under duress and convince him to cooperate. Between 1953 and 1969, 416 animated //Bobble the Clown Shark// shorts aired on numerous syndicated television stations. The show acted as an educational comedy that teaches children the proper way to fight, build muscle, and engage in Selachian pugilism, often narrated by Bobble himself.
+----
+= [[span class="h3"]]Augmentation Summary[[/span]]
+The Centre came to purchase FINIMATION Studios in 1953 and worked to alter the series to feature Bobble's humorous mistreatment by different humans and aquatic entities.
 
-**Deployment Record | Episode Log:** 
+Through the use of metanarrative pugnātorial techniques ([[[http://www.scp-wiki.net/scp-3922|with help from the ☽☽☽ Initiative]]]), Centre pugilists were able to coerce Bobble under duress and convince him to co-operate. Between 1953 and 1969, 416 animated //Bobble the Clown Shark// shorts aired on numerous syndicated television stations. The show acted as an educational comedy that teaches children the proper way to fight, build muscle, and engage in Selachian pugilism, often narrated by Bobble himself.
+----
+= [[span class="h3"]]Deployment Record | Episode Log[[/span]]
 
 ||~ Episode Title ||~ Contents ||
 || "Bobble Pretends To Be The IRS" || Episode takes place in a large call center, where Bobble communicates with several people via telephone. He speaks with an elderly woman in an attempt to convince her to release credit card information. The woman punches him through the phone receiver, breaking several teeth. The office manager, noticing his scam attempt, convinces a mob of angry coworkers to beat him to a pulp as the Benny Hill Theme plays. ||
@@ -144,68 +149,63 @@ No children were harmed in the production of this episode. ||
 In 1969, all further airings of SPC-993 emitted a "squaloidhazard"[[footnote]]A hazard of Selachian origin.[[/footnote]] produced by the character Bobble after years of torment. Viewers under the age of 10 affected by the hazard became enraged by the concept of Selachians and sought means to pummel them. To the Centre's luck, this compulsion ceased after the program ended -- though, the feelings persisted. 
 
 //Bobble the Clown Shark// was taken off the air, and all copies of the show were burned. SPC-993's master copies remain in CICAPOCO Archives.
-[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+
+[[div style="border-bottom: 2px solid #777; margin-bottom: 1px;"]]
 [[/div]]
-[[div style="border-bottom:1px solid #777;"]]
-[[/div]]
-@@ @@
-[[div style="text-align: center;"]]
-[[div style="display: inline-block; border: solid 1px black; background: white; width: 70%; padding: 1px 12px; margin: auto;"]]
-= **NOTICE:** There's been an update to SPC-993! Read it?
-[[/div]]
+[[div style="border-bottom: 1px solid #777;"]]
 [[/div]]
 
-||**##green|Y##/##b01|N##**||
+@@ @@
 
-|| **Input:** //##green|yes##// ||
+||= [[size 120%]]**NOTICE:** There's been an update to SPC-993! Read it?[[/size]] _
+ _
+[[size 120%]]**[[span style="color: green;"]]Y[[/span]] / [[span style="color: darkred;"]]N[[/span]]**[[/size]]||
 
-[[div style="text-align: center;"]]
-[[div style="display: inline-block; border: solid 1px black; background: white; width: 70%; padding: 1px 12px; margin: auto;"]]
-That's right, are you //SEEING// this shit? Check it out, dog!
-@@[@@//This is an automated message, please DO NOT reply.//@@]@@
-[[/div]]
-[[/div]]
+= **Input: [[span style="color: green;"]]Y[[/span]]**
+
+||= [[size 120%]]That's right, are you //SEEING// this shit? Check it out, dog![[/size]]||
+= [[size 90%]]@@[@@//This is an automated message, please DO NOT reply.//@@]@@[[/size]]
+
 @@ @@
-@@ @@
-@@ @@
-**Update:** In February 2017, all episodes of SPC-993 were altered simultaneously, edited //en masse// to no longer include the titular character. The next day, anomalous television programme //The Chappell Show// -- hosted by Richard Clavis Chappell, a critically-acclaimed Selachimorphic television entrepreneur and Mud City resident -- began broadcasting a low-budget CGI reboot of //Bobble the Clown Shark// daily for 12 hours each day.
+
+**UPDATE:** In February 2017, all episodes of SPC-993 were altered simultaneously, edited //en masse// to no longer include the titular character. The next day, anomalous television programme //The Chappell Show// -- hosted by Richard Clavis Chappell, a critically-acclaimed Selachimorphic television entrepreneur and Mud City resident -- began broadcasting a low-budget CGI reboot of //Bobble the Clown Shark// daily for 12 hours each day.
 
 The reboot features Bobble advocating for activities Selachians can and should do on land, such as driving pick-up trucks, teaching interpretive dance classes, and running for Congress, as well as **[REDACTED -- HEAVYWEIGHT PUGILISTS __ONLY__]** hugging puppies. **@@[/REDACTION]@@**
+
 @@ @@
-@@ @@
-= **##0b65c0|...##**
-@@ @@
-@@ @@
-[[div class="oracle"]]
-[[div class="resize"]]
-[[image http://scp-wiki.wdfiles.com/local--files/spc-993/spcheader.png]]
+
+[[div style="color: #0b65c0; font-weight: bold; text-align: center;"]]
+...
 [[/div]]
+
+@@ @@
+
+[[div class="oracle"]]
 +++ ATTENTION: ALL CENTRE PUGILISTS
 
-Bobble the Clown Shark is in **[[size 110%]]##164F7F|//COWABUNGA, DUDE!!!//##[[/size]]-Level Danger**. 
+[[div style="border-bottom: 1px solid #F0F8FF;"]]
+[[/div]]
+
+Bobble the Clown Shark is in **[[span style="color: #164F7F; font-size: 110%;"]]//COWABUNGA, DUDE!!!//[[/span]]-Level Danger**. 
 
 We need //YOUR// help to get him back from the Deviant menace. To do this, we need a hardened fighter with FISTS OF STEEL. To prove your worth, all you need to do is 100 push-ups, 100 sit-ups, and 100 squats, and drink a peanut butter & banana chocolate protein shake. But you gotta be quick so that Bobble can get back on the air and teach these kids karate!
 
 Once you have read this document, please report to your Fitness Centre. Long Island Iced Tea will be administered when you get there. HURRY!
 [[/div]]
 
-[[div style="color: #0b65c0; font-weight: bold; text-align: center;"]]
 @@ @@
+
+[[=]]
+[[collapsible show="▶ The following is QUALIFIED/993 Restricted ◀" hide="[ACCESS GRANTED]"]]
+[[/=]]
+
 @@ @@
-...
-@@ @@
-@@ @@
-The following is QUALIFIED/993 Restricted.
-@@ @@
-@@ @@
-...
-@@ @@
-@@ @@
-[ACCESS GRANTED]
-[[/div]]
 
 [[div class="quote-block" style="text-align: center;"]]
-**OFFICIAL PROMOTION – //CENTRE SMACKDOWN//**
+[[=]]
++++ OFFICIAL PROMOTION
+++++ __//CENTRE SMACKDOWN!//__
+[[/=]]
 ----
 Are you READY for Centre SmackDown-993‽
 
@@ -213,11 +213,15 @@ Watch **SUPER-PUGILIST Clark "PUNCH-DOCTOR" Savage, Jr.**, in an EPIC once-in-a-
 
 That's right, watch Centre SmackDown-993, LIVE, at the __Dr. Mike Tyson Colosseum__. Buy your tickets TODAY!
 [[/div]]
+[[/collapsible]]
+
+@@ @@
 
 [[div style="border-bottom: 2px solid #777; margin-bottom: 1px;"]]
 [[/div]]
 [[div style="border-bottom: 1px solid #777;"]]
 [[/div]]
+
 [[=]]
 [[module Rate]]
 [[/=]]
