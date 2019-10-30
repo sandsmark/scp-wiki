@@ -1,7 +1,11 @@
 title:The Doctor's Dilemma
 [[include component:preview text=Crystalline butterflies sat upon meter-tall orchids. Plants and flowers of varying genera, anomalous or otherwise, filled every square foot. Mesmur could see and hear iridescent pitcher plants trilling Vivaldi melodies.]]
 
-[[include :scp-wiki:component:scp-trans-pride |trans-pride-logo= --] |trans-pride-footer= --]]]
+[[include :scp-wiki:component:scp-trans-pride |trans-pride-footer= --]]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
 
 [[include :scp-wiki:component:info-ayers
 |lang=en
@@ -27,93 +31,84 @@ sup{
 body{
     --cutColour: #fafafa;
     --barColour: #590505;
+    color: rgb(12, 12, 12);
 }
-.translation_block{
-    display: none;
+.translation_block{ display: none; }
+
+/* HEADER LOGO */
+#header {
+    background-image: url(http://scp-wiki.wdfiles.com/local--files/the-doctor-s-dilemma/end-of-death-logo.png);
 }
-.info-container .collapsible-block-folded a{
-    color: #FFF;
+
+/* DIV BLOCK */
+.material-box {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding-bottom: 1em;
+    padding: .25em 1em;
+    border: 1px solid lightgrey;
+    box-shadow: 1px 2px 2px 0 rgba(0,0,0,.16);
 }
-.info-container .collapsible-block-unfolded-link a{
-    color: #FFF;
+.material-box blockquote {
+    border: 1px double #999;
 }
-.info-container .collapsible-block-link,
-.info-container:hover .collapsible-block-link{
-    line-height: 1.6em;
+.break{
+    width: 30px; 
 }
-.collapsible-block-link{
-    font-weight: bold;
-}
+
+/* FORMATTING */
 hr{
      margin: 1em 0;
      padding: 0;
      border: 0;
 }
-
-/* DIV BLOCKS */
-.material-box{
-    padding: .01em 16px;
-    margin-bottom: 16px;
-    margin-top: 16px;
-    padding-bottom: 1em;
-    border: 1px lightgrey solid;
-    color: black;
-    box-shadow: 1px 2px 2px 0 rgba(0,0,0,0.16);
-}
-.material-box blockquote{
-    border: 1px double #999;
-}
 [[/module]]
 
-[[>]]
-[[module Rate]]
-[[/>]]
-@@ @@
-@@ @@
-@@ @@
-[[==]]
 [[=]]
-[[image site-82-hall.jpg width="1200"]]
+[[image site-82-hall.jpg width="100%"]]
 [[/=]]
-A pair of footsteps marched down a hallway then came to a halt. Someone tapped a tablet screen, directing a //whoosh// of recycled air into the hall. The chamber door slid into the wall, revealing the subject slumped in the center, no more alive than dead.
 
-Another pair of footsteps walked into the chamber -- a woman's. She crouched down to inspect the minuscule body. Its slight stature gave the small containment chamber the illusion of appearing cavernous.
+[[==]]
+Two sets of footsteps marched down a hallway. Someone tapped a tablet screen and a //whoosh// brought recycled air into the hall. The chamber door slid into the wall, revealing the subject slumped in the center, no more alive than dead.
 
-"When was she last awake?" demanded the woman with piercing and watchful eyes.
+A woman crouched down to inspect the minuscule body. Its slight stature gave the small containment chamber the illusion of appearing cavernous.
 
-"Nobody knows," replied the man with sad eyes and a soft voice. "The subject hasn't responded to stimuli in years."
+"When was she last awake?" she demanded with piercing, watchful eyes.
+
+"Nobody knows." The man replied with sad eyes. "The subject hasn't responded to stimuli in years."
 
 "And you left her? //Alone//?" she snapped.
 
-The man repeated himself. "She hasn't responded in years. There was nothing we could do."
+He repeated himself. "She hasn't responded in years. There was nothing we could do."
 
-The woman leaned in, inspecting the shrivelled, blackened, unmoving body. Terrible condition, but alive. The woman teetered back, falling onto her haunches; she ignored the dust this kicked up.
+She leaned in, inspecting the shrivelled, blackened, unmoving body. Terrible condition, but alive. She teetered back, falling onto her haunches; ignoring the dust this kicked up.
 
 After a long moment of observation, she spoke again. "There's something you //should// do. Call the medical department. She needs help and she needs it immediately."
 
-The man hesitated. "Of course." With a couple more //plunks// on a tablet, he ambled away from the containment chamber, leaving the woman sitting in the dust.
+He hesitated. "Of course." With a couple more //plunks// on a tablet, he ambled away from the containment chamber, leaving the woman sitting in the dust.
 
-For the first time since she walked into the derelict facility that morning, she sighed. This was not going to be simple. But it had to be done, and the burden was hers alone to bear.
+For the first time since she walked into the derelict facility that morning, she sighed. This was not going to be simple. Nevertheless, it had to be done, and the burden was hers alone to bear.
 [[/==]]
-@@ @@
-@@ @@
-----
-@@ @@
-@@ @@
+
+[[=image http://scp-wiki.wdfiles.com/local--files/the-doctor-s-dilemma/end-of-death-logo.png class="break"]]
+
 [[div class="material-box"]]
-= **SCP-3774-2432**
+[[=]]
++++ SCP-3774-2432
+[[/=]]
 ----
 **Special Containment Procedures [INACTIVE AS OF 2030-11-24]:** SCP-3774-2432 is kept in a standard biological containment chamber in the Low-Risk Containment Wing of Site-82.
 
-**Description:** [[[SCP-3774]]] was a biomechanically-altered subspecies of mosquito engineered as part of PROJECT: SEARCH AND DEET-STROY, a covert intelligence-gathering operation on a variety of Persons of Interest. The Foundation liquidated the project shortly after the introduction of a speech apparatus prototype that regularly malfunctioned during blood sampling, causing SCP-3774 instances to pursue romantic associations with surveillance targets. 
+**Description:** [[[*scp-3774|SCP-3774]]] was a biomechanically altered subspecies of mosquito engineered as part of PROJECT: SEARCH AND DEET-STROY: A covert intelligence-gathering operation on a variety of Persons of Interest. The Foundation liquidated the project shortly after the introduction of a speech apparatus prototype that regularly malfunctioned during blood sampling, causing SCP-3774 instances to pursue romantic associations with surveillance targets. 
 
 When tasked with the surveillance of an innocent civilian in error, SCP-3774-2432 underwent a malfunction, leading to a month-long relationship between the two. SCP-3774-2432 displayed emergent anomalous properties during this time, impregnating the civilian. Field agents recovered SCP-3774-2432 shortly after its natural death and contained it at Site-19. 
 
-Sometime before the ΩK-Class ("End-of-Death") Scenario, [[[a-romantic-comedy-starring-a-dead-mosquito-guest-starring-th|a cross-test between SCP-049 and SCP-3774-2432]]] led to the latter's reanimation. SCP-3774-2432 was later contained at Site-82 due to its low risk.
+Sometime before the ΩK-Class ("End-of-Death") Scenario, [[[*a-romantic-comedy-starring-a-dead-mosquito-guest-starring-th|a cross-test between SCP-049 and SCP-3774-2432]]] led to the latter's reanimation. SCP-3774-2432 was later contained at Site-82 due to its low risk.
 
 **Addendum:** SCP-3774-2432 has failed to display any response to stimuli since November 24, 2030 and is classified as Neutralized.
 ----
 = **[END OF FILE]**
+----
 
 [[>]]
 [[size 80%]]
@@ -123,33 +118,33 @@ Last updated 36,514 days ago.
 [[/div]]
 
 [[==]]
-Doctor Violet Mesmur pored over the file on her personal tablet for the hundredth time. Mira, her assistant, was in a deep sleep, drooling onto the tabletop. She couldn't blame her. Being Dr. Mesmur's assistant meant frequent three-hour-long meetings, weekly flights abroad, and filling binders and binders with notes and other trivial nonsense. The two had been perched in the site's conference room for over an hour now, awaiting the arrival of Site Director Imogen Metcalfe: a woman with a name far too British to possibly be real. 
+Doctor Violet Mesmur pored over the file on her personal tablet for the hundredth time. Mira, her assistant, was in a deep sleep, drooling onto the tabletop. She couldn't blame her. Being Dr. Mesmur's assistant meant frequent three-hour-long meetings, weekly flights abroad, and filling binders and binders with notes and other trivial nonsense. The two had been perched in the site's conference room for over an hour now, awaiting the arrival of Site Director Imogen Metcalfe: A woman with a name far too British to possibly be real. 
 
-Site-82, once a booming paratechnology research and containment facility, was now a backwater. Funding cuts gutted the site: from the poorly maintained containment wings to the tardy Site Director, it showed.
+Site-82 -- once a booming paratechnology research and containment facility -- was now a backwater. Funding cuts gutted the site: From the poorly maintained containment wings to the tardy Site Director, it showed.
 
-The monolithic conference room doors nudged open. A fashionable hour-and-thirteen-minutes late, a petite woman with greying copper hair and thick glasses stepped through the opening. Her high heels brought about a ruckus on the laminated wood flooring. Dr. Mesmur stood up, then cleared her throat with a noisy //ahem//. Her assistant startled awake. She peered through glazed eyes at her boss and stood up beside her.
+The monolithic conference room doors nudged open. A fashionable hour-and-thirteen-minutes late, a petite woman with greying copper hair and thick glasses stepped through the opening. Her high heels brought about a ruckus on the laminated wood flooring. Dr. Mesmur stood up, and then cleared her throat with a noisy //ahem//. Her assistant startled awake. She peered through glazed eyes at her boss and stood up beside her.
 
 "Sorry to keep you waiting, ladies." Director Metcalfe spoke in an unmistakably posh accent, enunciating with clarity. "It's been a busy week. I hope you're well?"
 
 "We're fine." Dr. Mesmur did the talking for the pair. "You're going to have to forgive me for this, but we haven't much time to waste." She rotated her wrist on impulse, checking her watch.
 
-"We'll skip the niceties, then. Please, have a seat." The three women sat. Mira wiped up her drool and flashed a toothy smile. Mesmur and Metcalfe kept placid: they were all business today, even if one of them was //just a bit// late.
+"We'll skip the niceties, then. Please, have a seat." The three women sat. Mira wiped up her drool and flashed a toothy smile. Mesmur and Metcalfe kept placid: They were all business today, even if one of them was //just a bit// late.
 
-The Director cleared her throat. "SCP 3774 dash 2432 is doing quite well, all things considered. She's awake and undergoing rehabilitation. Her vitals are looking exceptional, really. I suppose it'll be a few more days until she's ready to go." She twinkled her nose. "Anyway, it //is// striking to see her doing so well so soon. But I do apologize for the oversight in her containment procedures. We haven't exactly been... Ah."
+The Director cleared her throat. "SCP 3774 dash 2432 is doing quite well, all things considered. She's awake and undergoing rehabilitation. Her vitals are looking exceptional, really. I suppose it'll be a few more days until she's ready to go." She crinkled her nose. "Anyway, it //is// striking to see her doing so well so soon. But I do apologize for the oversight in her containment procedures. We haven't exactly been... Ah."
 
-Dr. Mesmur straightened her back. "Your records indicate that before yesterday, she had been in a minimally conscious state for nearly a century. That sort of longevity shouldn't be possible. At face value, this situation //seems// exceptional. But, taking into consideration the toll this must have had on her mental wellbeing..." The rhetorical tone in her voice hung in the air.
+Dr. Mesmur straightened her back. "Your records indicate that before yesterday, she had been in a minimally conscious state for nearly a century. That sort of longevity shouldn't be possible. At face value, this situation //seems// exceptional. But, taking into consideration the toll this must have had on her mental wellbeing..."
 
-Metcalfe's tone took that of a sharpened spear. "My researchers work around the clock to operate with the highest level of vigilance. This was an oversight in --"
+Metcalfe's tone took that of a sharpened spear. "My researchers work around the clock to operate with the highest level of vigilance. This was an oversight–"
 
 Mesmur cut in. "This was negligence."
 
 The Director had no response. Mira bit her lip.
 
-"Anyway, your security personnel told me there hadn't been a scheduled check-up on her in years. In fact," Dr. Mesmur clasped her hands and put them on the table. "He didn't inform me of much at all. If I'm going to be quite honest, there was the air of speaking to a bedpost with him too."
+"Anyway, your security officer told me there hadn't been a scheduled check-up on her in years. In fact," Dr. Mesmur clasped her hands and put them on the table. "He didn't inform me of much at all. If I'm going to be quite honest, there was the air of speaking to a bedpost with him too."
 
-"I ask what it is you're hoping to do with her?" Director Metcalfe pushed her glasses further up her nose. "She is hardly sophisticated compared to the surveillance technology we employ nowadays. We can pack twice the optics into a drone the size of a pinhead and fly it into any facility on the planet. If you've come to fulfill a surveillance question, doctor, she's not your candidate. In an effort to be //less negligent//, you should give her a few more days before you start analyzing her." Her voice stung.
+"I ask what it is you're hoping to do with her." Director Metcalfe pushed her glasses further up her nose. "She is hardly sophisticated compared to the surveillance technology we employ nowadays. We can pack twice the optics into a drone the size of a pinhead and fly it into any facility on the planet. If you've come to fulfill a surveillance question, doctor, she's not your candidate. In an effort to be //less negligent//, you should give her a few more days before you start analyzing her." Her voice stung.
 
-"Truth be told, I haven't come here to give you grief over an Ethics issue. Even if your facility //is// lacking in the health and safety area." Dr. Mesmur gave her hair bun a poke and sighed. "I'm here because we suspect SCP-3774-2432 has actually breached containment."
+"Truth be told, I haven't come here to give you grief over an Ethics issue -- even if your facility //is// lacking in the health and safety department." Dr. Mesmur gave her hair bun a poke and sighed. "I'm here because we suspect SCP-3774-2432 has actually breached containment."
 
 Director Metcalfe widened her eyes. "Please, enlighten me."
 
@@ -157,48 +152,45 @@ Dr. Mesmur looked to her assistant and nodded. The quiet Mira flipped to the mos
 
 Dr. Mesmur put on a thin smile, while Director Metcalfe kept her lips straight. "Elaborate. Please."
 
-Mira continued. "Each signal is paired with an encryption scheme coded with the phrase 'SEARCH AND DEETSTROY'. The signal transmission has been found on SCiPNET, in innumerable places across the Internet, in over 57 different site intranet systems across North America and Europe, banking systems, chatter networks in 18 national and international intelligence agencies, and across at least one Thaumatological Way."
+Mira continued. "Each signal is paired with an encryption scheme coded with the phrase 'SEARCH AND DEETSTROY'. The signal transmission has been found on the International SCP Foundation Network, in innumerable places across the Internet, in over 57 different site intranet systems across North America and Europe, banking systems, chatter networks in 18 national and international intelligence agencies, and across at least one Thaumaturgical Way."
 
-The vast conference room went silent. Mira and Director Metcalfe both held their breath, while Mesmur smoothed out her already pristine hairdo. Director Metcalfe broke the silence: "I didn't know she talked." She shot a playful glance at Mira, and the two laughed; the awkwardness clung to the air, paralyzing Mira. She went back to being silent.
+The vast conference room went silent. Mira and Director Metcalfe both held their breath, while Mesmur smoothed out her already pristine hairdo. Director Metcalfe broke the silence. "I didn't know she talked." She shot a playful glance at Mira, and the two laughed; the awkwardness clung to the air, paralyzing Mira. She went back to being silent.
 
 Director Metcalfe crossed her legs and continued again. "So... What, then? Do you wish to interrogate her? Because I can have that arranged. Or are there some ulterior motives at play here?" She eyed Dr. Mesmur.
 
-"No, no, nothing of that sort. I do want to speak to Leslie, but I'm not here to interrogate her. I'm actually here to make a proposition." Dr. Mesmur leaned in. "I trust you know what a [[[new-buteo-series-mechanical-exoskeleton|Buteo Exoskeleton]]] is?"
+"No, no, nothing of that sort. I do want to speak to Leslie, but I'm not here to interrogate her. I'm actually here to make a proposition." Dr. Mesmur leaned in. "I trust you know what a [[[*new-buteo-series-mechanical-exoskeleton|Buteo Exoskeleton]]] is?"
 
-Director Metcalfe opened her mouth for a fraction of a second and then shut it again. In response, Dr. Mesmur leaned back in her chair and spoke again. "Oh, please, Director. I'm not daft, I know you're well aware of such a thing. You're even using one yourself." Mira's eyes widened, glancing over at superior, before jotting down a note on her page.
+Director Metcalfe opened her mouth for a fraction of a second and then shut it again. In response, Dr. Mesmur leaned back in her chair and spoke again. "Oh, please, Director. I'm not daft; I know you're well aware of such a thing. You're even using one yourself." Mira's eyes widened, glancing over at superior, before jotting down a note on her page.
 
 Metcalfe took a curious tone. "What, my dear, are you planning to do with Leslie?"
-@@ @@
-@@ @@
-----
-@@ @@
-@@ @@
-[[=]]
-[[image site-82-garden.jpg width="1200"]]
-[[/=]]
-A security officer (not the noncommittal bedpost from earlier) led Dr. Mesmur down a hallway. The hall was lined with travertine tiles and an expansive window facing an indoor garden. Mira trailed behind, carrying no less than six binders between her two arms. The officer stopped at the end of the hall, tapped a security code into his tablet, and stood by as the glass door to the garden depolarised, becoming transparent.
+
+[[=image http://scp-wiki.wdfiles.com/local--files/the-doctor-s-dilemma/end-of-death-logo.png class="break"]]
+
+[[=image site-82-garden.jpg width="100%"]]
+
+A security officer (not the noncommittal bedpost from earlier) led Dr. Mesmur down a hallway. Travertine tiles lined the hall and an expansive window faced an indoor garden. Mira trailed behind, carrying no less than six binders between her two arms. The officer stopped at the end of the hall, tapped a security code into his tablet, and stood by as the glass door to the garden depolarised, becoming transparent.
 
 "Leslie is in here?" asked Dr. Mesmur.
 
-"Yes ma'am, the research and medical team decided to give her some wing room." The officer shrugged. "Dynamic healing, or whatever."
+"Yes ma'am, the research and medical team decided to give her some wing room." The officer shrugged. "Dynamic healing or whatever."
 
 "Wait for me outside, Mira. This might take a while." Mira looked to the security officer, who nodded and led her back down the hallway. 
 
-Dr. Mesmur looked through the glass door ahead of her. Beyond the wall was a stone path that split apart into several different directions, cutting between swaths of foliage. Crystalline butterflies sat upon meter-tall orchids. Plants and flowers of varying genera, anomalous or otherwise, filled every square foot. Mesmur could see and hear iridescent pitcher plants trilling Vivaldi melodies. The Ethics liaison hadn't the time nor the luxury to catch a sight of beauty like this these days.
+Dr. Mesmur looked through the glass door ahead of her. Beyond the wall was a stone path that split apart into several different directions, cutting between swaths of foliage. Crystalline butterflies sat upon meter-tall orchids. Plants and flowers of varying genera, anomalous or otherwise, filled every square foot. Mesmur could see and hear iridescent pitcher plants trilling Vivaldi melodies. The Ethics liaison had neither the time nor the luxury to catch a sight of beauty like this these days.
 
-She sighed, and unpocketed a small yellow pouch from her pocket. A stimulation packet. She unfolded the packet, rolled up her sleeve, and pressed it against her skin. Upon contact, the effect was instant, giving her the same energy a cup of coffee would. Over the course of the past year, her personal Ethics operation was a nonstop train, and she wasn't the conductor -- she was a mere passenger, strapped to a seat. This was her kick to keep going. She walked through the threshold.
+She sighed, and unpocketed a small yellow pouch from her pocket -- a stimulation packet. She unfolded the packet, rolled up her sleeve, and pressed it against her skin. Upon contact, the effect was instant, giving her the same energy a cup of coffee would. Over the course of the past year, her personal Ethics operation was a nonstop train, and she wasn't the conductor -- she was a mere passenger, strapped to a seat. This was her kick to keep going. She walked through the threshold.
 
 Dr. Mesmur walked into the garden. She didn't know how she would actually address the anomaly when she came across it. "Leslie? Are you in here?"
 
 After a few seconds, something landed on her arm. She jumped back but resisted the urge to swat it.
 
-The mosquito started to speak. [[size 85%]]"Hi there. Do I know you?"[[/size]]
+The mosquito started to speak. [[size 85%]]"Hi, do I know you?"[[/size]]
 
 "We've never met before. My name is Doctor Violet Mesmur, I work with the Ethics Committee."
 
 Leslie's voice inflected upwards. [[size 85%]]"Oh. What are you doing all the way over here, Violet?"[[/size]]
 
-Dr. Mesmur looked around the expansive garden, then stuttered. "I'm -- I came here because I wanted to talk to you."
+Dr. Mesmur looked around the expansive garden. "I came here because I wanted to talk to you."
 
 [[size 85%]]"Why would you want to talk to //me//? You said you don't even know me..."[[/size]] Leslie's voice trailed off.
 
@@ -206,11 +198,11 @@ Dr. Mesmur started to stroll into the midst of the forest. "I've come here to //
 
 [[size 85%]]"Huh."[[/size]] Leslie had little to say. Her current file was too concise for Mesmur to get an understanding of her personality, but she felt something subdued in the way Leslie spoke.
 
-"I'm going to be asking some questions that are more personal in nature." Mesmur came to a stop in a clearing. The entrance to the garden and the geodesic dome that surrounded the area were obscured from view. "I know you haven't been in the fold for a while, and I want to ensure you remain as comfortable as possible. Is that alright with you?
+"I'm going to be asking some questions that are more personal in nature." Mesmur came to a stop in a clearing. The entrance to the garden and the geodesic dome that surrounded the area were obscured from view. "I know you haven't been in the fold for a while, and I want to ensure you remain as comfortable as possible. Is that all right with you?
 
 [[size 85%]]"Okay,"[[/size]] she chirped. [[size 85%]]"I'll answer to the best of my ability."[[/size]]
 
-"Alright. I'm aware you spent a period of time with SCP-049. He revived you. How did the revival process feel?"
+"Al lright. I'm aware you spent a short period with SCP-049. He revived you. How did the revival process feel?"
 
 [[size 85%]]"Oh, that was so long ago. It was practically another life altogether. It was like another me entirely."[[/size]]
 
@@ -230,7 +222,7 @@ Dr. Mesmur started to stroll into the midst of the forest. "I've come here to //
 
 Leslie landed on Dr. Mesmur's hand. [[size 85%]]"Am I allowed to ask //you// things, too?"[[/size]]
 
-"Absolutely. I'm here to make you try to feel comfortable."
+"Oh, absolutely. I'm here to make you try to feel comfortable."
 
 [[size 85%]]"Violet... Why do I feel so guilty?"[[/size]] 
 
@@ -266,7 +258,7 @@ This line, in particular, caught Dr. Mesmur's interest. "What do you mean by tha
 
 [[size 85%]]"It took a long time, but I found them. Like, I didn't actually //find// them, but I imagined that I did. Which was better than the truth."[[/size]] She fluttered in excitement, off the floor again.
 
-"Leslie, for the past year and a half, there have been a series of signals emitting from your containment chamber." She closed her eyes and tilted her head. "You've been trying to find your children this entire time and you didn't even realize it."
+"Leslie, for the past year-and-a-half, there has been a series of signals emitting from your containment chamber." She closed her eyes and tilted her head. "You've been trying to find your children this entire time and you didn't even realize it."
 
 [[size 85%]]"What are you talking about?"[[/size]]
 
@@ -289,12 +281,10 @@ Her shoulders slouched. "Given the shape that left them in..."
 Mesmur nodded her head in solemnity.
 
 An air of tension surrounded the pair for a while. Leslie gave a modulated attempt at crying, but since her body didn't equip her with the luxury of that release, it came out as a long-drawn-out whine. Mesmur wasn't sure how to comfort her minuscule form and sat idly beside her as the stimulation packet wore down. If there was one thing she could do for the mosquito that day, she had to be a pillar.
-@@ @@
-@@ @@
-----
-@@ @@
-@@ @@
-A medical team brought Leslie's body back to her containment chamber. There was a protest from Dr. Mesmur to at least reconsider building her a new one inside the garden, but the budget simply wouldn't allow for it. 
+
+[[=image http://scp-wiki.wdfiles.com/local--files/the-doctor-s-dilemma/end-of-death-logo.png class="break"]]
+
+A medical team brought Leslie's body back to her containment chamber. There was a protest from Dr. Mesmur to reconsider at least building her a new one inside the garden, but the budget simply wouldn't allow for it. 
 
 After some time, Mesmur returned to the containment chamber. She left without her assistant and asked for a security guard's assistance without passing it by Command. "I'll alert you when I'm ready," she told the guard. "Please, it will only be a few minutes." He did his job without a moment's hesitation and opened the containment chamber doors.
 
@@ -306,17 +296,17 @@ Dr. Mesmur walked in. After a few seconds, the doors closed again, and she met L
 
 All the soap operas and romantic movies she had seen in her short and convoluted life clearly had their effect on Leslie. She was a professional when it came to melodrama. [[size 85%]]"I don't care."[[/size]]
 
-"I came here because I wanted to offer you a second shot at life. There's a project we worked on with Anderson Robotics. It's something called a Buteo suit. A functional exoskeleton that looks and operates like a real human. Customizable, durable, you name it. If you want it, we can have one custom-built just for you." Mesmur imagined the likeness of a young Leslie Caron standing in front of her. They could do it, but they needed the go-ahead...
+"I came here because I wanted to offer you a second shot at life. We worked on with Anderson Robotics a project. It's something called a Buteo suit: A functional exoskeleton that looks and operates like a real human. Customizable, durable, you name it. If you want it, we can have one custom-built just for you." Mesmur imagined the likeness of a young Leslie Caron standing in front of her. They could do it, but they needed the go-ahead...
 
-[[size 85%]]"I don't want it. I want to go back to sleep and dream up my children again. It's not worth it if I'm alive and they're broken, rotting away in a fridge."[[/size]]
+[[size 85%]]"No. I want to go back to sleep and dream up my children again. It's not worth it if I'm alive and they're broken, rotting away in a fridge."[[/size]]
 
 "Please, Leslie."
 
 [[size 85%]]"You don't want this. You don't want to waste your time and money just to let me suffer. Just take me back."[[/size]]
 
-"Leslie --"
+"Leslie–"
 
-Leslie screamed as loud as her biomechanical implants would allow her to. [[size 85%]]"//Take me back!//"[[/size]]
+Leslie screamed as loud as her biomechanical implants would allow. [[size 85%]]"//Take me back!//"[[/size]]
 
 "If you don't want to accept this." Mesmur took a sharp breath in. "Then I've failed you."
 
@@ -329,15 +319,20 @@ For the last time, the doors closed on Leslie. And there was no one left to care
 If she was lucky, perhaps she could be with her children again. 
 
 But only in her dreams.
-@@ @@
-----
-,,//**...In order to have great happiness you have to have great pain and unhappiness -- otherwise, how would you know when you're happy?...**//,,
+
+[[=image http://scp-wiki.wdfiles.com/local--files/the-doctor-s-dilemma/end-of-death-logo.png class="break"]]
+
+,,//**In order to have great happiness you have to have great pain and unhappiness -- otherwise, how would you know when you're happy?**//,,
 [[>]]
-,,//**-- Leslie Caron**//,,
+,,//**--Leslie Caron**//,,
 [[/>]]
 [[/==]]
-----
-@@ @@
+
+[[div style="border-bottom: 2px solid #777; margin-bottom: 1px;"]]
+[[/div]]
+[[div style="border-bottom: 1px solid #777;"]]
+[[/div]]
+
 [[=]]
 [[module Rate]]
 [[/=]]
