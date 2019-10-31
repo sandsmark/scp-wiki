@@ -1,22 +1,4 @@
 title:A Necromantic Prelude
-[[module CSS]]
-@import url(http://www.scp-wiki.net/component:spc-theme/code/1);
-@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap');
-
-#header h1 a::before { content: "SPC Database" !important; }
-
-#header h2 span::before { content: "Search, Punch, Conquer" !important; }
-
-body{
-    color: rgb(12, 12, 12);
-}
-.shadow{
-    font-family: 'Libre Baskerville', serif;
-    font-size: 110%;
-    font-weight: 700;
-}
-[[/module]]
-
 [[>]]
 [[module Rate]]
 [[/>]]
@@ -30,6 +12,26 @@ body{
 ----
 [[include :scpdsandbox:floppyphoenix-info]]
 [[/div]]
+
+[[module CSS]]
+@import url(http://www.scp-wiki.net/component:spc-theme/code/1);
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap');
+
+#header h1 a::before { content: "SPC Database" !important; }
+
+#header h2 span::before { content: "Search, Punch, Conquer" !important; }
+
+body{
+    --cutColour: #fafafa;
+    --barColour: #132639;
+    color: rgb(12, 12, 12);
+}
+.shadow{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 110%;
+    font-weight: 700;
+}
+[[/module]]
 
 [[==]]
 A moonlit figure oozed red in trails. He clutched his ruptured spleen, winced, and glanced behind; hoping nobody followed. In his final hour of life, he clawed forward and reflected back.
