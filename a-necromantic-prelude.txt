@@ -1,4 +1,6 @@
 title:A Necromantic Prelude
+[[include component:preview text=**"Trespass into our pit, will you? Tsk tsk. Now you will pay!"** The body pit spoke through many voices, each in the Forgotten Tongue -- Selachian, unmistakably. **"Come."**]]
+
 [[>]]
 [[module Rate]]
 [[/>]]
@@ -18,14 +20,22 @@ title:A Necromantic Prelude
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap');
 
 #header h1 a::before { content: "SPC Database" !important; }
-
 #header h2 span::before { content: "Search, Punch, Conquer" !important; }
 
+/* INFO BOX */
+sup{
+    vertical-align: top;
+    position: relative;
+    top: -0.5em;
+}
 body{
     --cutColour: #fafafa;
     --barColour: #132639;
     color: rgb(12, 12, 12);
 }
+.translation_block{ display: none; }
+
+/* FORMATTING */
 .shadow{
     font-family: 'Libre Baskerville', serif;
     font-size: 110%;
@@ -102,3 +112,12 @@ There would be war. The world knew yet who would fight, but they would soon find
 
 Neither Man nor Deviant would survive.
 [[/==]]
+
+[[div style="border-bottom: 2px solid #777; margin-bottom: 1px;"]]
+[[/div]]
+[[div style="border-bottom: 1px solid #777;"]]
+[[/div]]
+
+[[=]]
+[[module Rate]]
+[[/=]]
