@@ -2,47 +2,55 @@ title:FloppyPhoenix's Author Page
 [[include :scp-wiki:component:scp-trans-pride |trans-pride-logo= --] |trans-pride-footer= --]]]
 
 [[module CSS]]
-/* LISTPAGES EXCEPTION */
- .preview .span,
- .infobox{
-     display: none !important;
-}
-
 /* PAGE TITLE */
-sup{
-    vertical-align: top;
-    position: relative;
-    top: -0.5em;
-}
-body{
-    color: rgb(12, 12, 12);
+ #page-title{
+     display: none;
 }
 
 /* DIV BLOCKS */
-.quote-block{
-    border: 2px double #999;
-    background-color: #f4f4f4;
-    padding: .25em 1em;
-    margin-bottom: 1em;
+ .quote-block,
+  blockquote{
+     border: 2px double #999;
+     background-color: #f4f4f4;
+     padding: .25em 1em;
+     margin-bottom: 1em;
 }
  .header{
-     border: solid 1px #999; 
+     border: 1px solid #999; 
      background-color: #FFC0CB; 
      padding: .25em 1em; 
      margin-bottom: 1em;
      text-align: center;
+}
+ .ko-fi-link{
+     display: inline-block; 
+     text-align: center;
+     width: 100%; 
+     margin: 0; 
+     padding: .5em 0; 
+     font-size: 140%; 
+     color: #ededed; 
+     text-shadow: 1px 3px 1px rgba(0, 0, 0, .3);"]]
+     background-color: #1e122b; 
+     font-weight: 700;
+}
+ .ko-fi-link a:hover{
+    text-decoration: none !important;
 }
  .scp-showcase{
      font-family: "Times New Roman", serif;
      font-size: 125%;
      color: darkred;
 }
+
+/* FORMATTING */
+.collapsible-block-link{ font-weight: bold; }
 hr{
      margin: 1em 0;
      padding: 0;
      border: 0;
 }
-    
+
 /* TABS */
  .computed{
      border: 1px black solid;
@@ -77,7 +85,7 @@ hr{
      text-align: center;
 }
  .yui-navset .yui-nav .selected a em, .yui-navset .yui-nav a em{
-     padding: 0.25em .75em;
+     padding: .25em .75em;
      top: 0;
      margin-bottom: 0;
 }
@@ -91,7 +99,6 @@ hr{
      background: gray;
 }
  .yui-navset .yui-nav a, .yui-navset .yui-navset-top .yui-nav a{
-     background-color: none;
      background-image: none;
 }
  .yui-navset .yui-nav a{
@@ -102,6 +109,10 @@ hr{
 }
 [[/module]]
 
+[[=]]
++ FloppyPhoenix's Author Page
+[[/=]]
+----
 > **{{Opening Person of Interest File #9731}}. . .**
 
 > **{{An addition was added since you last viewed the file. Read it?}}**
@@ -149,17 +160,15 @@ The following file contains an activated **GAY FROGS**-Class **DANK ANTIMEME**. 
 
 [[a href="*http://www.scp-wiki.net/anomaly-classification-system-guide"]]
   [[span_ class="disruption-header" style="background-color: {$disruption-bg-color}; color: {$disruption-text-color};"]]
-[[span style="font-weight: 700;"]]DISRUPTION CLASS:[[/span]]@@ @@{$disruption-class}
+If you like my works, consider donating!
   [[/span]]
 [[/a]]
 
-[[div style="text-align: center;"]]
-[[a href="*https://www.ko-fi.com/floppyphoenix" style="font-size: 110%; color: #ededed; text-shadow: 1px 3px 1px rgba(0,0,0,0.3);"]]
-[[span_ style="display: inline-block; width: 100%; background-color: #1e122b; border: none; margin: .122em; padding: .5em 0; font-weight: bold;"]]
+[[a href="*https://www.ko-fi.com/floppyphoenix" style="font-size: 110%; color: #ededed; text-shadow: 1px 3px 1px rgba(0, 0, 0, .3);"]]
+  [[span_ style="display: inline-block; width: 100%; background-color: #1e122b; border: none; margin: .122em; padding: .5em 0; font-weight: bold;"]]
 If you like my works, consider donating!
-[[/span]]
+  [[/span]]
 [[/a]]
-[[/div]]
 
 **Project:** [[*user FloppyPhoenix]]'s Author Page
 
@@ -467,15 +476,13 @@ Either way, this is my attempt at giving the Centre a reason to exist in our uni
 **Other things:**
 
 * CHARYBDIS and SCYLLA are references to Greek mythology.
-* MFT CHARYBDIS was my take on supersoldiers, which is something I've always wanted to write 'cause it's fun as heck!
+* Marine Fighting Team CHARYBDIS was my take on supersoldiers, which is something I've always wanted to write 'cause it's fun as heck!
 * There are a //lot// of alt-history elements here, since the SPC reality deviated from Foundationverse's own a few thousand years ago. Here are some examples of that:
  * "The Kingdom of Mycenae" = Greece
- * "New South Wales" = Australia
- * "Poseidon Labs" = Prometheus Labs (though Prometheus Labs actually exists in the SPC canon)
+ * "Poseidon Labs" = Prometheus Labs
  * Seventh Deviant Crusade = Seventh Occult War
 * "Gægr" and "Kemdulnim" were generated using a fantasy dragon name generator
 * "Quibba" and "Keshrayuth" were generated using a bird race name generator
-* "FASH" was named in such a manner because of a dumb idea I had to slide a lame "bash the fash" joke into the article. A quick note that I do not condone bashing anyone (except shyarks)
 * Kaa, Waxaklahun, and Mih are Mayan numbers
 * Quick thing about the members of MFT CHARYBDIS, because I decided to pick names that are conventionally gender-neutral. Quinn and Jaedan are male while Leah and Haruki are female.
 * LIMP FIREBIRD is a self-insert ;)
@@ -650,7 +657,7 @@ CTapbIu_XyJIuraH]]**
 My current profile picture!
 Drawn by [[*user Phoenixfire003]] (@phoefire003) and used with her permission.
 
-[[=image *http://scp-wiki.wdfiles.com/local--files/floppyphoenix/flops-the-phoenix.png style="border: solid 3px #080808; margin: .25em; width: 75%;"]]
+[[=image *http://scp-wiki.wdfiles.com/local--files/floppyphoenix/flops-the-phoenix.png style="border: 3px solid #080808; margin: .25em; width: 75%;"]]
 [[/collapsible]]
 [[/tab]]
 
