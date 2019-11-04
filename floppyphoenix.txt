@@ -8,15 +8,22 @@ title:FloppyPhoenix's Author Page
      display: none !important;
 }
 
-/* DIV BLOCKS */
- #page-title{
-     display: none;
+/* PAGE TITLE */
+sup{
+    vertical-align: top;
+    position: relative;
+    top: -0.5em;
 }
- blockquote{
-     border: 1px double #999;
-     background-color: #f4f4f4;
-     padding: .25em 1em;
-     margin-bottom: 1em;
+body{
+    color: rgb(12, 12, 12);
+}
+
+/* DIV BLOCKS */
+.quote-block{
+    border: 2px double #999;
+    background-color: #f4f4f4;
+    padding: .25em 1em;
+    margin-bottom: 1em;
 }
  .header{
      border: solid 1px #999; 
@@ -42,7 +49,7 @@ hr{
      width: 50%;
      display: inline-block;
      text-align: left;
-     padding: 3px;
+     padding: .183em;
 }
  .computed:before{
      content: "Computed Code";
@@ -55,7 +62,7 @@ hr{
      width: 50%;
      display: inline-block;
      text-align: left;
-     padding: 3px;
+     padding: .183em;
 }
  .rawcode:before{
      content: "Raw Code";
@@ -95,10 +102,6 @@ hr{
 }
 [[/module]]
 
-[[div style="text-align: center;"]]
-+ FloppyPhoenix's Author Page
-[[/div]]
-----
 > **{{Opening Person of Interest File #9731}}. . .**
 
 > **{{An addition was added since you last viewed the file. Read it?}}**
@@ -144,9 +147,15 @@ The following file contains an activated **GAY FROGS**-Class **DANK ANTIMEME**. 
 —Uhm, probably someone with, like, a //super// high clearance level. Or someone's Mary Sue OC.
 [[/div]]
 
+[[a href="*http://www.scp-wiki.net/anomaly-classification-system-guide"]]
+  [[span_ class="disruption-header" style="background-color: {$disruption-bg-color}; color: {$disruption-text-color};"]]
+[[span style="font-weight: 700;"]]DISRUPTION CLASS:[[/span]]@@ @@{$disruption-class}
+  [[/span]]
+[[/a]]
+
 [[div style="text-align: center;"]]
-[[a href="*https://www.ko-fi.com/floppyphoenix" style="font-size: 18px; color: #ededed; text-shadow: 1px 3px 1px rgba(0,0,0,0.3); text-decoration: none;"]]
-[[span_ style="display: inline-block; width: 75%; background-color: #1e122b; border: 1px none #000; margin: 1px; padding-top: 8px; padding-bottom: 8px;"]]
+[[a href="*https://www.ko-fi.com/floppyphoenix" style="font-size: 110%; color: #ededed; text-shadow: 1px 3px 1px rgba(0,0,0,0.3);"]]
+[[span_ style="display: inline-block; width: 100%; background-color: #1e122b; border: none; margin: .122em; padding: .5em 0; font-weight: bold;"]]
 If you like my works, consider donating!
 [[/span]]
 [[/a]]
@@ -326,8 +335,8 @@ Ah, they're gone. Anyway, //apparently//, this is the place where I get to show 
 ++++++ My CSS Themes!
 ----
 
-**[[[*http://www.scp-wiki.net/component:pataphysics-theme|Pataphysics Department Theme]]]**
-**[[[*http://www.scp-wiki.net/component:sapphire-theme|SAPPHIRE Theme]]]**
+**[[[*component:pataphysics-theme|Pataphysics Department Theme]]]**
+**[[[*component:sapphire-theme|SAPPHIRE Theme]]]**
 
 ----
 +++ Tags
