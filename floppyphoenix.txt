@@ -14,32 +14,31 @@ title:FloppyPhoenix's Author Page
 }
 
 /* DIV BLOCKS */
- .quote-block,
-  blockquote{
+ .quote-block, blockquote{
      border: 2px double #999;
      background-color: #f4f4f4;
      padding: .25em 1em;
      margin-bottom: 1em;
 }
  .header{
-     border: 1px solid #999; 
-     background-color: #FFC0CB; 
-     padding: .25em 1em; 
+     border: 1px solid #999;
+     background-color: #FFC0CB;
+     padding: .25em 1em;
      margin-bottom: 1em;
      text-align: center;
 }
  .ko-fi-link{
-     display: inline-block; 
+     display: inline-block;
      text-align: center;
-     width: 100%; 
-     margin: 0; 
-     padding: .5em 0; 
-     font-size: 140%; 
-     text-shadow: 1px 3px 1px rgba(0, 0, 0, .3);"]]
+     width: 100%;
+     margin: 0;
+     padding: .5em 0;
+     font-size: 140%;
+     text-shadow: 1px 3px 1px rgba(0, 0, 0, .3);
      font-weight: 700;
 }
  .ko-fi-link a:hover{
-    text-decoration: none !important;
+     text-decoration: none !important;
 }
  .scp-showcase{
      font-family: "Times New Roman", serif;
@@ -48,8 +47,10 @@ title:FloppyPhoenix's Author Page
 }
 
 /* FORMATTING */
-.collapsible-block-link{ font-weight: bold; }
-hr{
+ .collapsible-block-link{
+     font-weight: bold;
+}
+ hr{
      margin: 1em 0;
      padding: 0;
      border: 0;
@@ -68,25 +69,6 @@ hr{
      font-weight: bold;
      border-bottom: solid 1px black;
      width: 100%;
-}
- .rawcode{
-     border: black solid 1px;
-     width: 50%;
-     display: inline-block;
-     text-align: left;
-     padding: .183em;
-}
- .rawcode:before{
-     content: "Raw Code";
-     text-align: center;
-     font-weight: bold;
-     border-bottom: solid 1px black;
-     width: 100%;
-}
- .codebox{
-     display: inline-block;
-     width: 100%;
-     text-align: center;
 }
  .yui-navset .yui-nav .selected a em, .yui-navset .yui-nav a em{
      padding: .25em .75em;
