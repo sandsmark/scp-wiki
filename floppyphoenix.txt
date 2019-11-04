@@ -2,6 +2,12 @@ title:FloppyPhoenix's Author Page
 [[include :scp-wiki:component:scp-trans-pride |trans-pride-logo= --] |trans-pride-footer= --]]]
 
 [[module CSS]]
+/* LISTPAGES EXCEPTION */
+ .preview .span,
+ .infobox{
+     display: none !important;
+}
+
 /* PAGE TITLE */
  #page-title{
      display: none;
@@ -158,14 +164,8 @@ The following file contains an activated **GAY FROGS**-Class **DANK ANTIMEME**. 
 —Uhm, probably someone with, like, a //super// high clearance level. Or someone's Mary Sue OC.
 [[/div]]
 
-[[a href="*http://www.scp-wiki.net/anomaly-classification-system-guide"]]
-  [[span_ class="disruption-header" style="background-color: {$disruption-bg-color}; color: {$disruption-text-color};"]]
-If you like my works, consider donating!
-  [[/span]]
-[[/a]]
-
-[[a href="*https://www.ko-fi.com/floppyphoenix" style="font-size: 110%; color: #ededed; text-shadow: 1px 3px 1px rgba(0, 0, 0, .3);"]]
-  [[span_ style="display: inline-block; width: 100%; background-color: #1e122b; border: none; margin: .122em; padding: .5em 0; font-weight: bold;"]]
+[[a href="*https://www.ko-fi.com/floppyphoenix"]]
+  [[span_ class="ko-fi-link"]]
 If you like my works, consider donating!
   [[/span]]
 [[/a]]
