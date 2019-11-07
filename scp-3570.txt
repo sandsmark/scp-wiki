@@ -30,6 +30,7 @@ body{
     color: rgb(12, 12, 12);
 }
 .translation_block{ display: none; }
+.u-faq{ display: none; }
 
 /* HEADER */
 #header h1 a{
@@ -154,7 +155,7 @@ hr{
 [[/row]]
 [[/table]]
 
-[[include :topia:component:disruption-header-source
+[[include component:floppy-disruption-bar
 |disruption-class=amida
 |disruption-bg-color=rgb(146, 1, 38)
 |disruption-text-color=rgb(252, 252, 252)
