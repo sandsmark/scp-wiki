@@ -32,6 +32,7 @@ body{
     color: rgb(12, 12, 12);
 }
 .translation_block{ display: none; }
+.u-faq{ display: none; }
 
 /* DIV BLOCKS */
 .testing-log{
@@ -63,23 +64,26 @@ hr{
 }
 [[/module]]
 
-[[include :topia:component:class-header-source
-|item-num=4190
-|cont-class=safe
-|clearance-bg-color=rgb(12, 12, 12)
-|class-text-color=optional
-|altbody-text-color=optional
-|clearance-one=full
-|clearance-two=full
-|clearance-three=half
-|clearance-four=half
-|clearance-five=half
-|clearance-six=none
-|level=2
-|clearance=restricted
-]]
+[[table style="border: none; width: 100%;"]]
+[[row]]
+[[cell]]
+[[span style="font-size: 125%;"]][[span style="font-weight: 900;"]]ITEM NUMBER:[[/span]] SCP-4190[[/span]]
+[[/cell]]
+[[cell style="text-align: right;"]]
+[[span style="font-weight: 900; font-size: 125%;"]]LEVEL 2/4190[[/span]]
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell]]
+[[span style="font-size: 125%;"]][[span style="font-weight: 900;"]]CONTAINMENT CLASS:[[/span]] SAFE[[/span]]
+[[/cell]]
+[[cell style="text-align: right;"]]
+[[span style="font-weight: 900; font-size: 125%;"]]RESTRICTED[[/span]]
+[[/cell]]
+[[/row]]
+[[/table]]
 
-[[include :topia:component:disruption-header-source
+[[include component:floppy-disruption-bar
 |disruption-class=dark
 |disruption-bg-color=rgb(0, 99, 138)
 |disruption-text-color=rgb(252, 252, 252)
