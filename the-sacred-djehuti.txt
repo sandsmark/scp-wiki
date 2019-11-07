@@ -29,30 +29,19 @@ sup{
 body{
     --cutColour: #fafafa;
     --barColour: #044d00;
+    color: rgb(12, 12, 12);
 }
-.translation_block{
-    display: none;
-}
-.info-container .collapsible-block-folded a{
-    color: #FFF;
-}
-.info-container .collapsible-block-unfolded-link a{
-    color: #FFF;
-}
-.info-container .collapsible-block-link,
-.info-container:hover .collapsible-block-link{
-    line-height: 1.6em;
-}
-.collapsible-block-link{
-    font-weight: bold;
-}
+.translation_block{ display: none; }
+.u-faq{ display: none; }
 #u-author_block{ display:none; }
+
+/* NAV BLOCK */
 .team-bird-nav-sh{
-    background-color: black;
-    border: outset 1.5px black;
-    border-radius: 30px;
-    color: black;
+    background-color: rgb(12, 12, 12);
     background: linear-gradient(to bottom right, rgba(0,0,0,0), rgba(34,123,56,.7));
+    border: outset 1.5px rgb(12, 12, 12);
+    border-radius: 1.829em;
+    color: rgb(12, 12, 12);
     font-weight: bold;
     font-size: 85%;
 }
