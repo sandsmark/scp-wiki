@@ -24,3 +24,17 @@ All test logs should be written in this form.
 **Setting:**
 **Output:**
 ------
+
+[[module ListPages  category="fragment" parent="." limit="1" order="name" offset="@URL|0"]]
+%%content%%
+[[/module]]
+
+[!-- To generate a list of child pages, change:
+
+%%content%%
+
+to:
+
+%%title_linked%%
+
+and then remove 'limit="1"' from the module code. --]
