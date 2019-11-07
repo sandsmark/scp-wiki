@@ -80,6 +80,7 @@ body{
     color: rgb(12, 12, 12);
 }
 .translation_block{ display: none; }
+.u-faq{ display: none; }
 #u-author_block{ display:none; }
 
 /* HEADER */
@@ -254,23 +255,26 @@ hr{
 
 @@ @@
 
-[[include :topia:component:class-header-source
-|item-num=3739
-|cont-class=keter
-|clearance-bg-color=rgb(12, 12, 12)
-|class-text-color=optional
-|altbody-text-color=optional
-|clearance-one=full
-|clearance-two=full
-|clearance-three=full
-|clearance-four=full
-|clearance-five=half
-|clearance-six=none
-|level=4
-|clearance=secret
-]]
+[[table style="border: none; width: 100%;"]]
+[[row]]
+[[cell]]
+[[span style="font-size: 125%;"]][[span style="font-weight: 900;"]]ITEM NUMBER:[[/span]] SCP-3739[[/span]]
+[[/cell]]
+[[cell style="text-align: right;"]]
+[[span style="font-weight: 900; font-size: 125%;"]]LEVEL 4/3739[[/span]]
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell]]
+[[span style="font-size: 125%;"]][[span style="font-weight: 900;"]]CONTAINMENT CLASS:[[/span]] KETER[[/span]]
+[[/cell]]
+[[cell style="text-align: right;"]]
+[[span style="font-weight: 900; font-size: 125%;"]]SECRET[[/span]]
+[[/cell]]
+[[/row]]
+[[/table]]
 
-[[include :topia:component:disruption-header-source
+[[include component:floppy-disruption-bar
 |disruption-class=ekhi
 |disruption-bg-color=rgb(189, 82, 0)
 |disruption-text-color=rgb(252, 252, 252)
