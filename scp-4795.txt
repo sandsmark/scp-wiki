@@ -8,7 +8,7 @@ parent:bird
 |lang=en
 |page=scp-4795
 |authorPage= 
-|comments=**SCP-4795:** Feathered F(r)iends
+|comments=**SCP-4795:** Feathered F(r)iends 
 **Authors:** [[*user Mew-ltiverse]] and [[*user FloppyPhoenix]] 
  
 This article is set in the **Team Bird** Series. 
@@ -24,7 +24,7 @@ This article is set in the **Team Bird** Series.
 [[/div]] 
  
 * [[*user hawkguyy]] 
-* [[*user DrLycus]] 
+* [[*user Cerastes]] 
 * [[*user DrAkimoto]] 
 * [[*user not_a_seagull]] 
 * [[*user Ellie3]] 
@@ -39,27 +39,17 @@ This article is set in the **Team Bird** Series.
 [[module CSS]]
 /* INFO BOX */
 sup{
-  vertical-align: top;
-  position: relative;
-  top: -0.5em;
+    vertical-align: top;
+    position: relative;
+    top: -0.5em;
 }
 body{
-  --cutColour: #ffb961;
-  --barColour: #5C1D24;
+    --cutColour: #fafafa;
+    --barColour: #590505;
+    color: rgb(12, 12, 12);
 }
-.translation_block{
-  display: none;
-}
-.info-container .collapsible-block-folded a{
-  color: #FFF;
-}
-.info-container .collapsible-block-unfolded-link a{
-  color: #FFF;
-}
-.info-container .collapsible-block-link,
-.info-container:hover .collapsible-block-link{
-  line-height: 1.6em;
-}
+.translation_block{ display: none; }
+.u-faq{ display: none; }
 #u-author_block{ display:none; }
 
 /* PAGE HEADER */
@@ -99,30 +89,6 @@ body{
     text-shadow: 1px 1px 1px rgba(0,0,0,.8);
 }
 
-/* FORMATTING */
-hr{
-     margin: 1em 0;
-     padding: 0;
-     border: 0;
-}
-.lite-header hr{
-    width: 45%;
-    margin: auto;
-    background-color: #e6e6e6;
-    border: none;
-    height: 2px;
-}
-.dark-hr hr{
-    background-color: rgb(12, 12, 12);
-}
-.collapsible-block-link{ font-weight: bold; }
-.h2{
-    margin: 0.5em 0 0.4em;
-    letter-spacing: 1px;
-    font-size: 150%;
-    font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
-}
-
 /* DIV BLOCKS */
 .quote-block{
     border: 2px double #999;
@@ -135,31 +101,51 @@ hr{
     background-color: white;
     padding: .25em 1em;
     margin-bottom: 1em;
-    color: rgb(12, 12, 12);
+}
+
+/* FORMATTING */
+.collapsible-block-link{ font-weight: bold; }
+hr{
+     margin: 1em 0;
+     padding: 0;
+     border: 0;
+}
+.lite-header hr{
+    width: 45%;
+    margin: auto;
+    background-color: #e6e6e6;
+    border: none;
+    height: 2px;
+}
+.h2{
+    margin: .5em 0 .4em;
+    padding: 0;
+    letter-spacing: 1px;
+    font-size: 150%;
+    font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
 }
 [[/module]]
 
-@@ @@
-@@ @@
-@@ @@
-
-[[include :topia:component:class-header-source
-|item-num=4795
-|cont-class=keter
-|clearance-bg-color=rgb(12, 12, 12)
-|class-text-color=optional
-|altbody-text-color=optional
-|clearance-one=full
-|clearance-two=full
-|clearance-three=full
-|clearance-four=half
-|clearance-five=half
-|clearance-six=none
-|level=3
-|clearance=confidential
-]]
+[[table style="border: none; width: 100%;"]]
+[[row]]
+[[cell]]
+[[span style="font-size: 125%;"]][[span style="font-weight: 900;"]]ITEM NUMBER:[[/span]] SCP-4795[[/span]]
+[[/cell]]
+[[cell style="text-align: right;"]]
+[[span style="font-weight: 900; font-size: 125%;"]]LEVEL 3/4795[[/span]]
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell]]
+[[span style="font-size: 125%;"]][[span style="font-weight: 900;"]]CONTAINMENT CLASS:[[/span]] KETER[[/span]]
+[[/cell]]
+[[cell style="text-align: right;"]]
+[[span style="font-weight: 900; font-size: 125%;"]]CONFIDENTIAL[[/span]]
+[[/cell]]
+[[/row]]
+[[/table]]
 ----
-[[include component:image-block name=pigeon-protection.jpg|align=center|width=100%|caption=[[span style="font-size: 1.2em;"]]Pigeons protecting the northern entrance to SCP-4795.[[/span]]]]
+[[include component:image-block name=pigeon-protection.jpg|align=center|width=100%|caption=[[span style="font-size: 120%;"]]Pigeons protecting the northern entrance to SCP-4795.[[/span]]]]
 ----
 **Special Containment Procedures:** SCP-4795 is currently monitored in association with Project: CALADRIUS, which uses Foundation-operated biomechanical surveillance drones resembling the domestic pigeon. Foundation parazoologists regularly track pigeon flock movement through the Kanz Park area to assess population numbers. Park signs warning against pigeon aggression have been installed in and around Kanz Park to reduce the likelihood of pigeon attacks on civilians.
 ----
@@ -181,7 +167,7 @@ SCP-4795's anomalous properties manifest in its attraction of domestic pigeons (
 
 In the early 2010s, Cairo's municipal government reported a dramatic increase in pigeon populations, along with the prevalence of pigeon flocks using sophisticated attack techniques (i.e. stealth, tactical grouping, and the hierarchy of command) against other flocks. This culminated in March 2014 following the pigeon-mating season, when an observed convergence of tens of thousands of pigeons (comprising hundreds of rival flocks) organized and attacked one another within the Kanz Park area.
 
-Regional Foundation parazoologists noticed Kanz Park's use as a focal point and classified it as E-08298 while designating increased social intelligence and aggression in pigeon populations as E-08298-1. The case was later forwarded to the [[[scp-3095|Avian Division]]] for its immense importance to inter-avian relations. Cairo-based Foundation officials flew Dr. Guenevere Goshawk, then-Envoy to the Avian Division, out to Egypt in an attempt to foster positive pigeon relationships. Dr. Goshawk was charged with placating the population and determining what power structure had emerged -- if any.
+Regional Foundation parazoologists noticed Kanz Park's use as a focal point and classified it as E-08298 while designating increased social intelligence and aggression in pigeon populations as E-08298-1. The case was later forwarded to the [[[*scp-3095|Avian Division]]] for its immense importance to inter-avian relations. Cairo-based Foundation officials flew Dr. Guenevere Goshawk, then-Envoy to the Avian Division, out to Egypt in an attempt to foster positive pigeon relationships. Dr. Goshawk was charged with placating the population and determining what power structure had emerged -- if any.
 
 [[collapsible hideLocation="bottom" show="   a. Initial Interview 08298.1" hide="▲ Close"]]
 [[div class="quote-block"]]
@@ -190,11 +176,11 @@ Regional Foundation parazoologists noticed Kanz Park's use as a focal point and 
 [[/=]]
 ----
 [[<]]
-**Interviewed:** "Sergeant Nour", an E-08298-1 instance
+**INTERVIEWED:** "Sergeant Nour", an E-08298-1 instance
 
-**Interviewer:** Doctor Guenevere Goshawk, Avian Division Envoy
+**INTERVIEWER:** Doctor Guenevere Goshawk, Avian Division Envoy
 
-**Foreword:** The following is a transcript of an interview taken with Sgt. Nour. Dr. Goshawk conducted the interview in an Egyptian-avian dialect and translated it into English.
+**FOREWORD:** The following is a transcript of an interview taken with Sgt. Nour. Dr. Goshawk conducted the interview in an Egyptian-avian dialect and translated it into English.
 ----
 = **[BEGIN LOG]**
 ----
@@ -238,7 +224,7 @@ Regional Foundation parazoologists noticed Kanz Park's use as a focal point and 
 ----
 = **[END LOG]**
 ----
-**Note:** Dr. Goshawk's efforts across March and April 2014 led to E-08298-1's current flock taking permanent residence in Kanz Park. The current flock displays moderate aggression toward human occupation; though, no further pigeon or human injuries resulting from E-08298-1 attacks have been documented.
+**NOTE:** Dr. Goshawk's efforts across March and April 2014 led to E-08298-1's current flock taking permanent residence in Kanz Park. The current flock displays moderate aggression toward human occupation; though, no further pigeon or human injuries resulting from E-08298-1 attacks have been documented.
 
 At this time, a human investigation into E-08298 is underway.
 [[/<]]
@@ -252,19 +238,19 @@ At this time, a human investigation into E-08298 is underway.
 [[/=]]
 ----
 [[<]]
-**Interviewed:** "Pip", an E-08298-1 instance
+**INTERVIEWED:** "Pip", an E-08298-1 instance
 
-**Interviewers:** Doctors Juniper Marigold and Stanley Diamond
+**INTERVIEWERS:** Doctors Juniper Marigold and Stanley Diamond
 
-**Foreword:** Prototype avian speech and translation para-technology made communication in the following interview possible.
+**FOREWORD:** Prototype avian speech and translation para-technology made communication in the following interview possible.
 ----
 = **[BEGIN LOG]**
 ----
 //[Drs. Marigold and Diamond canvas Kanz Park in search of pigeons to interview.]//
 
-**[[[scp-4688|Dr. Stanley Diamond]]]:** Hey, you! //[He points at a nearby pigeon.]//
+**[[[*scp-4688|Dr. Stanley Diamond]]]:** Hey, you! //[He points at a nearby pigeon.]//
 
-**[[[scp-4208|Dr. Juniper Marigold]]]:** Ah, can you use some restraint?
+**[[[*scp-4208|Dr. Juniper Marigold]]]:** Ah, can you use some restraint?
 
 **Diamond:** Oh, come on. Why?
 
@@ -333,16 +319,15 @@ Though the study of E-08298 occurred mainly through Foundation plants within Cai
 
 Internal correspondences were transmitted during this time.
 
-[[collapsible hideLocation="bottom" show="   ► Site-76 correspondences" hide="▲ Close"]]
-[[div style="background: #faa794 url(http://scp-wiki.wdfiles.com/local--files/the-great-hippo/scp_trans.png) center no-repeat; border: solid 3px rgb(12, 12, 12); margin: auto; padding: 1em; width: 90%; color: rgb(12, 12, 12);"]]
+[[collapsible hideLocation="bottom" show="   ▶ Site-76 correspondences" hide="▲ Close"]]
+[[div style="background: #faa794 url(http://scp-wiki.wdfiles.com/local--files/the-great-hippo/scp_trans.png) center no-repeat; border: 3px solid rgb(12, 12, 12); margin: auto; padding: 1em; width: 90%;"]]
 
 [[=]]
 [[span style="font-size: 150%;"]]**DEPARTMENT OF TACTICAL THEOLOGY**[[/span]]
 +++ STOP WORK ORDER 4795.001
 [[/=]]
 
-[[div class="dark-hr"]]
-----
+[[div style="border-bottom: 1px solid black;"]]
 [[/div]]
 
 [[<]]
@@ -365,14 +350,13 @@ As well, E-08298 is pending reclassification to SCP-4795. Per SCP Re-Designation
 
 [[/div]]
 ----
-[[div style="background: #fae094 url(http://scp-wiki.wdfiles.com/local--files/the-great-hippo/scp_trans.png) center no-repeat; border: solid 3px rgb(12, 12, 12); margin: auto; padding: 1em; width: 90%; color: rgb(12, 12, 12);"]]
+[[div style="background: #fae094 url(http://scp-wiki.wdfiles.com/local--files/the-great-hippo/scp_trans.png) center no-repeat; border: 3px solid rgb(12, 12, 12); margin: auto; padding: 1em; width: 90%;"]]
 
 [[=]]
 [[span style="font-size: 150%;"]]**AVIAN DIVISION**[[/span]]
 [[/=]]
 
-[[div class="dark-hr"]]
-----
+[[div style="border-bottom: 1px solid black;"]]
 [[/div]]
 
 With all due respect, the Parazoology Division and I have worked diligently over the last two months to ensure that Kanz Park is not a warzone. We have made promises to Sergeant Nour and his fellow citizens that we would interfere no longer, and in exchange, they would remain only within the park's premises. In fact, it //was// a warzone before we stepped in -- before //I// stepped in. I cannot advocate for the sloppy handling of this situation for reasons of a zealous goal directly in opposition to our matters here.
@@ -395,14 +379,13 @@ I strongly urge that you reconsider. I will take the matter of this //unwarrante
 
 [[/div]]
 ----
-[[div style="background: #faa794 url(http://scp-wiki.wdfiles.com/local--files/the-great-hippo/scp_trans.png) center no-repeat; border: solid 3px rgb(12, 12, 12); margin: auto; padding: 1em; width: 90%; color: rgb(12, 12, 12);"]]
+[[div style="background: #faa794 url(http://scp-wiki.wdfiles.com/local--files/the-great-hippo/scp_trans.png) center no-repeat; border: 3px solid rgb(12, 12, 12); margin: auto; padding: 1em; width: 90%;"]]
 
 [[=]]
 [[span style="font-size: 150%;"]]**DEPARTMENT OF TACTICAL THEOLOGY**[[/span]]
 [[/=]]
 
-[[div class="dark-hr"]]
-----
+[[div style="border-bottom: 1px solid black;"]]
 [[/div]]
 
 We don't take orders from birds.
@@ -431,8 +414,7 @@ We don't take orders from birds.
 +++ INCIDENT LOG 4795-ALEPH
 [[/=]]
 
-[[div class="dark-hr"]]
-----
+[[div style="border-bottom: 1px solid black;"]]
 [[/div]]
 
 On the early morning of May 18, 2014, archaeological surveyors arrived on the premises of Kanz Park with dowsing equipment to locate a suspected Beirut-Tier religious artifact. During this time, SCP-4795-1 instances evaded archaeologists and perched in high locations around the park. Archaeologists soon determined that an artifact was located beneath the center of the park, and began excavation. SCP-4795-1 instances fled the park.
@@ -447,18 +429,16 @@ Though the artifact had been lost, the containment team managed to secure severa
 
 On May 30, through correspondence with the Mediterranean Regional Command, Envoy Dr. Guenevere Goshawk requested to assist with the interrogation. Dr. Goshawk was transported to Site-76 with diplomatic clearance.
 
-[[collapsible hideLocation="bottom" show="   ► Interview 4795.1" hide="▲ Close"]]
+[[collapsible hideLocation="bottom" show="   ▶ Interview 4795.1" hide="▲ Close"]]
 
-**Note:** Containment staff had placed Sgt. Nour in a cage prior to the interrogation.
+**NOTE:** Containment staff had placed Sgt. Nour in a cage prior to the interrogation.
 
-[[div class="dark-hr"]]
-----
+[[div style="border-bottom: 1px solid black;"]]
 [[/div]]
 
 = **[BEGIN LOG]**
 
-[[div class="dark-hr"]]
-----
+[[div style="border-bottom: 1px solid black;"]]
 [[/div]]
 
 **Dr. Guenevere Goshawk:** Hello again, Sergeant. It has been quite some time.
@@ -497,17 +477,15 @@ On May 30, through correspondence with the Mediterranean Regional Command, Envoy
 
 **Goshawk:** I can teach you.
 
-[[div class="dark-hr"]]
-----
+[[div style="border-bottom: 1px solid black;"]]
 [[/div]]
 
 = **[END LOG]**
 
-[[div class="dark-hr"]]
-----
+[[div style="border-bottom: 1px solid black;"]]
 [[/div]]
 
-**Closing Remarks:** //I want to take some SCP-4795-1 instances under my wing. I can teach them how to become more civilized. Whether that leads them to relinquish your artifact is none of my concern. The stability of their flock, however, is.//
+**CLOSING REMARKS:** //I want to take some SCP-4795-1 instances under my wing. I can teach them how to become more civilized. Whether that leads them to relinquish your artifact is none of my concern. The stability of their flock, however, is.//
 
 //I realize now that Nour and his pigeons would never be content with just food. No, they seek knowledge, too -- they just don't know it yet. If you let me recruit them, I can prove that we do not need// "divine intervention" //to achieve greatness.//
 
