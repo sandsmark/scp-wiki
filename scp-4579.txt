@@ -1,8 +1,16 @@
 title:SCP-4579
+[[module CSS]]
+
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Just+Another+Hand|Lexend+Peta|Nunito|Playfair+Display|Roboto+Mono|Saira+Stencil+One|Electrolize&display=swap');/* General-purpose font imports */
+
+.text {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.2em;
+} 
+[[/module]]
 [[>]]
 [[module Rate]]
 [[/>]]
-
 [[include :scp-wiki:component:anomaly-class-bar-source
 
 |item-number= 4579
@@ -19,7 +27,7 @@ title:SCP-4579
 
 ]]
 @@ @@
-
+[[div class="text"]]
 **Special Containment Procedures:** SCP-4579 is to be kept in a standard humanoid containment cell at Site-17, equipped with two mirrors in highly visible areas. As SCP-4579 is not aware of its anomalous capabilities, personnel are forbidden from discussing anomalous activity in its presence.
 
 Testing on SCP-4579 is open to all personnel with Level 2 or higher clearance. SCP-4579 is permitted to visit the Site-17 high-security courtyard for no more than two hours a week, provided it is escorted by at least one guard.
@@ -297,3 +305,4 @@ While it is somewhat cooperative with Foundation personnel, SCP-4579 has a histo
 **Incident 21/09/2017:** [[[quit-questions-take-money|Report pending.]]] 
 
 [[/collapsible]]
+[[/div]]
