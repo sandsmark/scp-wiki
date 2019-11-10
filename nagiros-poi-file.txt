@@ -60,6 +60,12 @@ div#side-bar div.side-block {
   border-top: solid 1px rgb(108, 108, 255, .5);
 }
 
+/* Scrollbar */  
+::-webkit-scrollbar-thumb
+{
+    background: rgba(247,168,184, .5);
+}
+
 /* RATINGS */
 .page-rate-widget-box .rate-points {
   background-color: #000098 !important;
