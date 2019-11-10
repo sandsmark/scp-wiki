@@ -1,4 +1,8 @@
 title:Dr. Michaels
+[[>]]
+[[module Rate]]
+[[/>]]
+
 [[include :scp-wiki:component:info-ayers
 |lang=en
 |page=scp-4428 
@@ -8,14 +12,14 @@ title:Dr. Michaels
  
 [[div style="text-align: center;"]] 
 **More by these authors:** 
-**[*http://www.scp-wiki.net/henzoids-author-page Henzoid]** 
-**[*http://www.scp-wiki.net/floppyphoenix FloppyPhoenix]** 
+[[size 130%]]**[*http://www.scp-wiki.net/henzoids-author-page Henzoid]** 
+**[*http://www.scp-wiki.net/floppyphoenix FloppyPhoenix]**[[/size]] 
 [[/div]] 
 ----
 [[div style="text-align: center;"]] 
 [[size 110%]] **Special Thanks - Critters & Beta Readers** [[/size]] 
 [[/div]] 
-  
+ 
 * [[*user CaimanChameleon]] 
 * [[*user plaidypus]] 
 * [[*user DarkStuff]] 
@@ -36,25 +40,16 @@ title:Dr. Michaels
 [[module CSS]]
 /* INFO BOX */
 sup{
-  vertical-align: top;
-  position: relative;
-  top: -0.5em;
+    vertical-align: top;
+    position: relative;
+    top: -0.5em;
 }
 body{
-  --cutColour: #ffb961;
-  --barColour: #5C1D24;
-  color: rgb(12, 12, 12);
+    --cutColour: #fafafa;
+    --barColour: #590505;
+    color: rgb(12, 12, 12);
 }
-.info-container .collapsible-block-folded a{
-  color: #FFF;
-}
-.info-container .collapsible-block-unfolded-link a{
-  color: #FFF;
-}
-.info-container .collapsible-block-link,
-.info-container:hover .collapsible-block-link{
-  line-height: 1.6em;
-}
+.u-faq{ display: none; }
 #u-author_block{ display:none; }
 
 /* DIV BLOCKS */
@@ -62,16 +57,16 @@ body{
     background: #b54d3b; 
     outline: 4px solid #b54d3b; 
     border: 1px solid #f7db26; 
-    padding: 10px;
+    padding: .61em;
     color: #f7db26; 
     text-align: center;
     font-weight: bold;
-    overflow-wrap: break-word;
+    word-break: unset;
 }
 .index{
     border: 1px solid rgb(136, 136, 136);
     background-color: white;
-    padding: 0 1em;
+    padding: .25em 1em;
     margin-bottom: 1em;
 }
 .quote-block{
@@ -88,28 +83,20 @@ body{
 }
 
 /* FORMATTING */
-.inoculation table.wiki-content-table{
-    width: 100%;
-}
-.inoculation table.wiki-content-table td{
-    border: none;
-}
+.inoculation table.wiki-content-table{ width: 100%; }
+.inoculation table.wiki-content-table td{ border: none; }
 .inoculation table.wiki-content-table th{
     border: none;
     width: 2em;
 }
-.wiki-content-table tr td:nth-child(1) {
-    text-align: left;
-}
-.wiki-content-table tr td:nth-child(2) {
-    text-align: right;
-}
+.wiki-content-table tr td:nth-child(1){ text-align: left; }
+.wiki-content-table tr td:nth-child(2){ text-align: right; }
 .lie{
     font-family: 'Courier', monospace;
     font-weight: bold;
     margin: 2px 1px 1px 1px; 
     background-color: #a3cef1;
-    overflow-wrap: break-word;
+    word-break: unset;
 }
 hr{
     margin: 1em 0;
@@ -124,16 +111,12 @@ hr{
     height: 2px;
 }
 .h2{
-    margin: 0.5em 0 0.4em;
+    margin: .5em 0 .4em;
     letter-spacing: 1px;
     font-size: 150%;
     font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
 }
 [[/module]]
-
-[[>]]
-[[module Rate]]
-[[/>]]
 
 [[div class="notice"]]
 [[span class="h2"]]NOTICE FROM THE FOUNDATION 
@@ -161,7 +144,7 @@ The Department of Miscommunications (DoMc) is to handle all documentation and co
 @@ @@
 
 [[div class="index"]]
-**COMMUNICABILITY INDEX:** For adherence to the DoMc personnel Code of Linguistic Integrity, the information contained herein is [[span class="lie"]]100% accurate and readily communicable[[/span]] through textual, pictorial, visual, audial, and subliminal means. Questionable personnel are to proceed to the Site-96 Medical Wing for the administration of Class-A Veritants,[[footnote]]An agent used to verify the existence of a specific memory within a subject.[[/footnote]] and if necessary, subsequent administration of [[[updated-amnestics-guide#toc4|Class-C Amnestics]]].
+**COMMUNICABILITY INDEX:** For adherence to the DoMc personnel Code of Linguistic Integrity, the information contained herein is [[span class="lie"]]100% accurate and readily communicable[[/span]] through textual, pictorial, visual, audial, and subliminal means. Questionable personnel are to proceed to the Site-96 Medical Wing for the administration of Class-A Veritants,[[footnote]]An agent used to verify the existence of a specific memory within a subject.[[/footnote]] and if necessary, subsequent administration of [[[*updated-amnestics-guide#toc4|Class-C Amnestics]]].
 [[/div]]
 
 **Item Number:** Dr. Michaels
@@ -197,9 +180,9 @@ A custodial team will follow Dr. Michaels throughout the day and sanitize the ar
 
 **FOREWORD:** Dr. Michaels is an asset to the Foundation due to his competencies in the fields of linguistics and miscommunications. The use of a Personal Safety Assessment Battery (or PSAB) is necessary to identify risks to his personal well-being. Designated personnel conducted the PSAB inside a locked containment chamber [[span class="lie"]]to identify issues with Dr. Michaels' mental health.[[/span]]
 ----
-= **<Begin Log>**
+= **[BEGIN LOG]**
 ----
-[[include component:image-block name=doctor-michaels.jpg | caption=[[span style="font-size: 1.2em;"]]A recent image of Dr. Michaels. Immediate surroundings redacted.[[/span]] ]]
+[[include component:image-block name=doctor-michaels.jpg | caption=[[span style="font-size: 120%;"]]A recent image of Dr. Michaels. Immediate surroundings redacted.[[/span]] ]]
 
 **Interviewer:** Okay, so just tell me your name -- as is protocol -- and we'll start. How does that sound?
 
@@ -284,11 +267,9 @@ D-4428-2,[[footnote]]Deceased as of 2019-10-13 @ 01:44 UTC.[[/footnote]] Contain
 
 **Interviewer:** Indeed. 
 ----
-= **<End Log>**
+= **[END LOG]**
 [[/div]]
-
 ----
-
 **II. Final Note**
 
 [[div class="researcher-note"]]
