@@ -18,12 +18,15 @@ parent:ad-astra-per-aspera-hub
 |lang=en
 |page=scp-4790
 |authorPage=http://www.scp-wiki.net/floppyphoenix
-|comments=**SCP-4790:** Do not go gentle into that good night.
-**Author:** [[*user FloppyPhoenix]] 
+|comments=[[span class="h-span"]]SCP-4790:[[/span]] Do not go gentle into that good night. 
+[[span class="h-span"]]Author:[[/span]] [[*user FloppyPhoenix]] 
  
-This article is set in the upcoming **Ad Astra Per Aspera** Canon. 
+This article is set in the **[*http://www.scp-wiki.net/ad-astra-per-aspera-hub Ad Astra Per Aspera]** Canon. 
 ----
-**Special Thanks -- To my critters and beta readers:** 
+[[div style="text-align: center;"]] 
+[[size 110%]] [[span class="h-span"]]Special Thanks - Critters & Beta Readers[[/span]] [[/size]] 
+[[/div]] 
+ 
 **▷** [[*user Crashington]] 
 **▷** [[*user Nameless Mediocre]] 
 **▷** [[*user Westrin]] 
@@ -32,12 +35,15 @@ This article is set in the upcoming **Ad Astra Per Aspera** Canon.
 **▷** [[*user Nerdibbles]] 
 **▷** [[*user NatVoltaic]] 
 **▷** [[*user KindlyTurtleClem]] 
-**▷** [[*user DrLycus]] 
+**▷** [[*user Cerastes]] 
 **▷** [[*user ManyMeats]] 
 **▷** [[*user AlanDaris]] 
 **▷** [[*user Phoenixfire003]] 
-
-**Image Attribution** 
+----
+[[div style="text-align: center;"]] 
+[[size 110%]] [[span class="h-span"]]Sources[[/span]] [[/size]] 
+[[/div]] 
+ 
 **▷ [https://www.flickr.com/photos/hubble_esa/29230946621/ Alpha Centauri] – CC BY 2.0** 
 **▷ [http://www.scp-wiki.net/component:the-way-out-theme#toc1 Overwatch Command logo] – CC-BY-SA-3.0** 
 ----
@@ -48,34 +54,18 @@ This article is set in the upcoming **Ad Astra Per Aspera** Canon.
 [[module CSS]]
 /* INFO BOX */
 sup{
-  vertical-align: top;
-  position: relative;
-  top: -0.5em;
+    vertical-align: top;
+    position: relative;
+    top: -0.5em;
 }
 body{
   --cutColour: #ffb961;
   --barColour: #5C1D24;
 }
-.translation_block{
-  display: none;
-}
-.info-container .collapsible-block-folded a{
-  color: #FFF;
-}
-.info-container .collapsible-block-unfolded-link a{
-  color: #FFF;
-}
-.info-container .collapsible-block-link,
-.info-container:hover .collapsible-block-link{
-  line-height: 1.6em;
-}
-.collapsible-block-link{
-  font-weight: bold;
-  font-family: Courier, monospace;
-  font-size: 115%;
-}
+.translation_block{ display: none; }
+.u-faq{ display: none; }
 
-/* SPECIAL CODE */
+/* PAGE TITLE CODE */
  #page-title{
      display: none;
 }
@@ -90,6 +80,40 @@ body{
  .page-title p{
      margin: 0;
 }
+
+/* DIV BLOCKS */
+ .terminal-span{
+     font-family: Courier, monospace; 
+     font-size: 115%;
+     font-weight: bold;
+     color: #ffb961;
+}
+ .o5{
+     border: 1px solid #ffb961; 
+     background: #192845 url(http://scp-wiki.wdfiles.com/local--files/scp-4790/o5-command-trans.png) center no-repeat; 
+     padding: .915em; 
+     margin: 4%;
+     width: 85%; 
+     font-family: Courier, monospace; 
+     font-size: 115%;
+     font-weight: bold;
+     color: #ccc; 
+}
+ .forget{
+     display: inline-block;
+     border: 3px solid #ccc;
+     border-radius: .61em;
+     background-color: #21212D;
+     margin: 1em 0;
+     width: 40%;
+}
+
+/* FORMATTING */
+ .collapsible-block-link{
+   font-weight: bold;
+   font-family: Courier, monospace;
+   font-size: 115%;
+}
  #page-content .collapsible-block-folded a.collapsible-block-link{
      animation: blink 0.8s ease-in-out infinite alternate;
 }
@@ -97,68 +121,39 @@ body{
      0% { color: transparent; }
      50%, 100% { color: #ffb961; }
 }
- .footnotes-footer{
-     display: none;
-}
-hr{
+ hr{
      margin: 1em 0;
      padding: 0;
      border: 0;
 }
-
-/* DIV BLOCKS */
- .terminal-span{
-     color: #ffb961;
-     font-weight: bold;
-     font-family: Courier, monospace; 
-     font-size: 115%;
-}
- .o5{
-     color: #ccc; 
-     font-family: Courier, monospace;
-     font-weight: bold; 
-     font-size: 1.154em;
-     background: #192845 url(http://scp-wiki.wdfiles.com/local--files/scp-4790/o5-command-trans.png) center no-repeat; 
-     border: solid 1px #ffb961; 
-     padding: 15px 15px; 
-     box-shadow: 0 1px 3px rgba(0,0,0,.2); 
-     width: 85%; 
-     margin: 4% 4% 4% 4%;
-}
- .forget{
-     display: inline-block;
-     margin: 1em 0;
-     width: 40%;
-     border: 3px solid #ccc;
-     border-radius: 10px;
-     background-color: #21212D;
+ .footnotes-footer{
+     display: none;
 }
 [[/module]]
 
-@@ @@
-@@ @@
-@@ @@
-
-[[include :topia:component:class-header-source
-|item-num=4790
-|cont-class={{Pending}}
-|clearance-bg-color=rgb(255,184,97)
-|class-text-color=rgb(255,184,97)
-|altbody-text-color=rgb(204, 204, 204)
-|clearance-one=full
-|clearance-two=full
-|clearance-three=full
-|clearance-four=full
-|clearance-five=half
-|clearance-six=none
-|level=4
-|clearance=EXTRASOLAR
-]]
+[[table style="border: none; width: 100%;"]]
+[[row]]
+[[cell]]
+[[span style="font-size: 125%;"]][[span style="font-weight: 900; color: #ffb961"]]ITEM NUMBER:[[/span]] SCP-4790[[/span]]
+[[/cell]]
+[[cell style="text-align: right;"]]
+[[span style="font-weight: 900; font-size: 125%; color: #ffb961"]]LEVEL 4/4790[[/span]]
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell]]
+[[span style="font-size: 125%;"]][[span style="font-weight: 900; color: #ffb961"]]CONTAINMENT CLASS:[[/span]] {{PENDING}}[[/span]]
+[[/cell]]
+[[cell style="text-align: right;"]]
+[[span style="font-weight: 900; font-size: 125%; color: #ffb961;"]]EXTRASOLAR[[/span]]
+[[/cell]]
+[[/row]]
+[[/table]]
 ----
 [[div class="scp-image-block block-center" style="width: 100%;"]]
 [[image http://scp-wiki.wdfiles.com/local--files/scp-4790/Alpha-Centauri.jpg style="width: 100%;" link=#]]
 [[div class="scp-image-caption" style="width: 100%;"]]
-[[span style="font-size: 1.2em;"]]Alpha Centauri A and B, photographed by the ESA (with the Hubble Space Telescope) and NASA.[[/span]]
+[[span style="font-size: 120%;"]]Alpha Centauri A and B, photographed by the ESA (with the Hubble Space Telescope) and NASA.[[/span]]
 [[/div]]
 [[/div]]
 ----
@@ -166,15 +161,15 @@ hr{
 ----
 [[span class="h-span"]]Description:[[/span]] SCP-4790 refers to a series of abnormal phenomena associated with Alpha Centauri B (AKA "Toliman"), a star located 4.37 light-years from Earth. 
 
-Initial Hubble observation detected a field of irregular gravitational activity surrounding Toliman with a radius of 5.1–16 Astronomical Units.[[footnote]]One Astronomical Unit (AU) = 149.6 million km: the average distance between the planet Earth and the Sun.[[/footnote]] Objects within this range disobey causal laws, regularly exhibiting random fluctuations in size, composition, velocity, and ontology. In all instances, objects in Toliman's stellar neighbourhood become trapped at the edge of an unexpectedly powerful gravity well, forming a ~0.05 AU-thick debris field around the star with a radius of 0.9 AU.
+Initial Hubble observation detected a field of irregular gravitational activity surrounding Toliman with a radius of 5.1–16 Astronomical Units.[[footnote]]One Astronomical Unit (AU) = 149.6 million km. The average distance between the planet Earth and the Sun.[[/footnote]] Objects within this range disobey causal laws, regularly exhibiting random fluctuations in size, composition, velocity, and ontology. In all instances, objects in Toliman's stellar neighbourhood become trapped at the edge of an unexpectedly powerful gravity well, forming a ~0.05 AU-thick debris field around the star with a radius of 0.9 AU.
 
 Mainstream astronomers assert that 45% of debris corresponds with the unexplained destruction of speculated Earth-sized exoplanet [[span style="font-family: monospace; font-size: 150%;"]]α[[/span]] Cen B//b//. In a study population of 2,700 civilian and Foundation researchers attached to the observation of Toliman, 83% tested positive for cognitohazard infection and expressed considerable distress toward their findings.
 
-Autonomous satellite //Chekhov-.009// departed[[footnote]]Using the experimental Lang Distortion Drive for faster-than-light travel.[[/footnote]] on its maiden voyage to study Toliman with advanced para-technologies -- including onboard [[[aiad-homescreen|Artificially Intelligent Conscript]]] Fledgling.aic.
+Autonomous satellite //Chekhov-.009// departed[[footnote]]Using the experimental Lang Distortion Drive for faster-than-light travel.[[/footnote]] on its maiden voyage to study Toliman with advanced para-technologies -- including onboard [[[*aiad-homescreen|Artificially Intelligent Conscript]]] Fledgling.aic.
 
 //Chekhov-.009// arrived near Toliman on July 11, 2020, and made confirmation of the debris field. Fledgling.aic immediately detected an unexpected 1,420 MHz signal burst, which was filtered automatically via counter-cognitohazard algorithms before its contents could be translated. Fledgling.aic launched a monitoring probe on a vector to the signal's source. 
 
-Located at the source was a vessel built according to a previously documented //Priorihominus//[[footnote]][[span class="terminal-span"]]ERROR 6c24: MISSING DEFINITIONS -- UNKNOWN GROUP. Contact your RAISA liaison.[[/span]][[/footnote]] design, displaying the outward shape of an enclosed [[[https://en.wikipedia.org/wiki/Klein_bottle|Klein bottle]]]. Entering the vessel, the probe encountered an internal environment containing extensive hydroponics, cryogenics, and habitation spaces, suggesting its purpose as a generation ship. 
+Located at the source was a vessel built according to a previously documented //Priorihominus//[[footnote]][[span class="terminal-span"]]ERROR 6c24: MISSING DEFINITIONS -- UNKNOWN GROUP. Contact your RAISA liaison.[[/span]][[/footnote]] design, displaying the outward shape of an enclosed [[[*https://en.wikipedia.org/wiki/Klein_bottle|Klein bottle]]]. Entering the vessel, the probe encountered an internal environment containing extensive hydroponics, cryogenics, and habitation spaces, suggesting its purpose as a generation ship. 
 
 Upon closer inspection, the probe was unable to find any signs of life, including microbial. This information, in addition to the discovery of empty data cores, suggests that the vessel has not been inhabited at any point.
 
@@ -213,6 +208,7 @@ All attempts at hailing these vessels have resulted in failure.
 @@ @@
 @@ @@
 @@ @@
+
 [[=]]
 [[collapsible show="▷ LVL. 5/4790 "TOP SECRET" — MEMETIC GEAS REQUIRED ◁" hide=" " hideLocation="bottom"]]
 [[span class="terminal-span"]]▽ THE FEW AND THE MANY ▽[[/span]]
@@ -221,11 +217,12 @@ All attempts at hailing these vessels have resulted in failure.
 [[div class="o5" style="text-align: left;"]]
 ||~ [[size 150%]]{{O5 INTERNAL MEMO}}[[/size]] ||
 
-[[span style="color: #ffb961;"]]TO:[[/span]] O5-1, O5-2, O5-3, O5-4, O5-5, O5-6, O5-8, O5-9, O5-10, O5-11, O5-12, O5-13, DIR. OF EXTRASOLAR ACTIVITIES, DIR. OF PROJECT "HEIMDALL", DIR. OF PROJECT "GALAXIAS"
+[[span style="color: #ffb961;"]]TO:[[/span]] O5-1, O5-2, O5-3, O5-4, O5-5, O5-6, O5-8, O5-9, O5-10, O5-11, O5-12, O5-13, DIR. OF EXTRASOLAR ACTIVITIES, DIR. OF PROJECT "HEIMDALL", AND DIR. OF PROJECT "GALAXIAS"
 
 [[span style="color: #ffb961;"]]SUBJECT:[[/span]] //CHEKHOV-.009// FINDINGS
 
-----
+[[div style="border-bottom: 1px solid #ffb961;"]]
+[[/div]]
 
 Alongside the evident destruction to Alpha Centauri B -- worse than we feared -- Fledgling.aic detected a signal emitting from within a space-faring vessel (code-name: IANTHINE HERALD). The signal contained the following information:
 
@@ -254,7 +251,7 @@ It does not matter.
       [[cell style="padding: 0; width: 70%; vertical-align: top;"]]
     [[/cell]]
       [[cell style="padding: 0; width: 30%; vertical-align: top;"]]
--- O5-7
+--O5-7
 OVERWATCH COUNCIL
     [[/cell]]
   [[/row]]
