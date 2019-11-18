@@ -121,7 +121,7 @@ written*
 |username=BonesMalone
 |msg-time=Today at 4:34 PM
 ]]
-[[module ListPages created_by="Rounderhouse" order="created_at desc" tags="+scp -co-authored" separate="no"]]
+[[module ListPages created_by="Rounderhouse" order="created_at desc" tags="+scp" separate="no"]]
 **∆** %%title_linked%% [+##green|%%rating%%## | 🗩 ##lightblue|%%comments%%##] 
 [[/module]]
 [[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
@@ -489,6 +489,9 @@ Header art by [[user Athosnetwork]]
 [[/module]]
 [[module CountPages created_by="rounderhouse" rating=">200"]]
 %%total%%
+[[/module]]
+[[module ListPages order="rating desc" tags="+author" separate="no"]]
+%%title_linked%% by %%created_by%%
 [[/module]]
 [[/div]]
 [[/collapsible]] 
