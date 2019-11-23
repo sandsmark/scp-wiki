@@ -1,61 +1,89 @@
 title:SCP-4031
-[[include info:start]]
-**SCP-4031:** The Amnesiac Redemption **[[https://youtu.be/d4pltuR8QPc Audio version]]**
-**Author:** [[*user FloppyPhoenix]]
+[[include :scp-wiki:component:scp-trans-pride |trans-pride-logo= --] |trans-pride-footer= --]]]
 
-Written for **[http://www.scp-wiki.net/forum/t-381751 Bright's 1st Challenge]** in under 3 hours.
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[include :scp-wiki:component:info-ayers
+|lang=en
+|page=scp-4031
+|authorPage=http://www.scp-wiki.net/floppyphoenix
+|comments=**SCP-4031:** The Amnesiac Redemption **[[https://youtu.be/d4pltuR8QPc Audio version]]** 
+**Author:** [[*user FloppyPhoenix]] 
+ 
+Written for **[http://www.scp-wiki.net/forum/t-381751 Bright's 1st Challenge]** in under 3 hours. 
 ----
-[[div class="footer-wikiwalk-nav"]]
-[[include :scpsandbox2:FloppyPhoenix2]]
+[[include :scpdsandbox:floppyphoenix-info]]
 [[/div]]
-[[include info:end]]
 
 [[module css]]
-.centered {
+/* INFO BOX */
+sup{
+    vertical-align: top;
+    position: relative;
+    top: -0.5em;
+}
+body{
+    --cutColour: #fafafa;
+    --barColour: #590505;
+    color: rgb(12, 12, 12);
+}
+.translation_block{ display: none; }
+.u-faq{ display: none; }
+
+/* DOCUMENT CSS */
+.material-box {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding-bottom: 1em;
+    padding: .25em 1em;
+    border: 1px solid lightgrey;
+    box-shadow: 1px 2px 2px 0 rgba(0,0,0,.16);
+}
+blockquote {
+    border: 2px double #999;
+}
+
+/* TABLE CSS */
+.centered{
     max-width: none !important;
     width: 100%;
     display: inline-flex;
     float: left;
     margin-bottom: 1em;
 }
-
-.centered > tbody {
+.centered > tbody{
     text-align: center;
     margin: 0 auto;
 }
 
-.material-box {
-    padding: .01em 16px;
-    margin-bottom: 16px;
-    margin-top: 16px;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    border: 1px lightgrey solid;
-    color: black;
-    box-shadow: 1px 2px 2px 0 rgba(0,0,0,0.16);
-}
-
-.material-box blockquote {
-    border: 1px double #999;
+/* FORMATTING */
+hr{
+     margin: 1em 0;
+     padding: 0;
+     border: 0;
 }
 [[/module]]
+
+@@ @@
 
 > The following file was discovered in Site-82's Research Wing.
 
 [[div class="material-box"]]
 **Item Number:** SCP-4031
 
-**Object Class:** Euclid
+**Object Class:** EUCLID
 
-**Threat Level:** [[[http://scp-int.wikidot.com/niveaux-de-menace-des-objets-scp |Undetermined]]]
+**Threat Level:** [[[*http://scp-int.wikidot.com/niveaux-de-menace-des-objets-scp |UNDETERMINED]]]
 
 **Special Containment Procedures:** {{N/A}}
 
-**Description:** SCP-4031 is a powerful fast-acting amnesiac of unknown makeup, quantity, and origin. 
+**Description:** SCP-4031 is a powerful fast-acting amnesiac of unknown makeup, quantity, and origin.
 
 Subjects in visual, olfactory, gustatory, auditory, tactile, and memetic range sustain short-term memory loss, disassociation, and an acidic aftertaste. Application of the amnesiac leads to a male vocalization of human origin. Exposed subjects cannot corroborate the vocalization's existence upon interrogation.
 
-**Experimentation Log:** The following is a series of alleged interactions with SCP-4031. Interactions were not logged in real time: unknown subject(s) recorded the interactions in documentation areas. Inputs include different persons, objects, and conceptual structures. Results include different levels of conceptual recall.
+**Experimentation Log:** The following is a series of alleged interactions with SCP-4031. Interactions were not logged in real time: Unknown subject(s) recorded the interactions in documentation areas. Inputs include different persons, objects, and conceptual structures. Results include different levels of conceptual recall.
 
 [[table class="centered" style="border-collapse:collapse; max-width: 600px;"]]
 [[row]]
@@ -161,88 +189,88 @@ Recalled.
 [[cell style="padding: .3em .7em; border: 1px solid black"]]
 Blood
 [[/cell]]
-[[cell style="border: 1px solid black; padding: .3em .7em; color: red;"]]
+[[cell style="border: 1px solid black; padding: .3em .7em; color: #C40000;"]]
 Recalled.
 [[/cell]]
 [[/row]]
 
 [[row]]
-[[cell style="padding: .3em .7em; border: 1px solid black; color: red;"]]
+[[cell style="padding: .3em .7em; border: 1px solid black; color: #C40000;"]]
 Lab Pencil
 [[/cell]]
-[[cell style="border: 1px solid black; padding: .3em .7em; color: red;"]]
+[[cell style="border: 1px solid black; padding: .3em .7em; color: #C40000;"]]
 Forgotten.
 [[/cell]]
 [[/row]]
 
 [[row]]
-[[cell style="padding: .3em .7em; border: 1px solid black; color: red;"]]
+[[cell style="padding: .3em .7em; border: 1px solid black; color: #C40000;"]]
 D-5549
 [[/cell]]
-[[cell style="border: 1px solid black; padding: .3em .7em; color: red;"]]
+[[cell style="border: 1px solid black; padding: .3em .7em; color: #C40000;"]]
 Forgotten.
 [[/cell]]
 [[/row]]
 
 [[row]]
-[[cell style="padding: .3em .7em; border: 1px solid black; color: red;"]]
+[[cell style="padding: .3em .7em; border: 1px solid black; color: #C40000;"]]
 D-5549
 [[/cell]]
-[[cell style="border: 1px solid black; padding: .3em .7em; color: red;"]]
+[[cell style="border: 1px solid black; padding: .3em .7em; color: #C40000;"]]
 {{N/A}}
 [[/cell]]
 [[/row]]
 
 [[row]]
-[[cell style="padding: .3em .7em; border: 1px solid black; color: red;"]]
+[[cell style="padding: .3em .7em; border: 1px solid black; color: #C40000;"]]
 Junior Researcher Ortega
 [[/cell]]
-[[cell style="border: 1px solid black; padding: .3em .7em; color: red;"]]
+[[cell style="border: 1px solid black; padding: .3em .7em; color: #C40000;"]]
 Forgotten.
 [[/cell]]
 [[/row]]
 
 [[row]]
-[[cell style="padding: .3em .7em; border: 1px solid black; color: red;"]]
+[[cell style="padding: .3em .7em; border: 1px solid black; color: #C40000;"]]
 Junior Researcher Ortega
 [[/cell]]
-[[cell style="border: 1px solid black; padding: .3em .7em; color: red;"]]
+[[cell style="border: 1px solid black; padding: .3em .7em; color: #C40000;"]]
 {{N/A}}
 [[/cell]]
 [[/row]]
 
 [[row]]
-[[cell style="padding: .3em .7em; border: 1px solid black; color: red;"]]
+[[cell style="padding: .3em .7em; border: 1px solid black; color: #C40000;"]]
 Researcher Smalls
 [[/cell]]
-[[cell style="border: 1px solid black; padding: .3em .7em; color: red;"]]
-{{[[[SCP-3309|N/A]]]}}
+[[cell style="border: 1px solid black; padding: .3em .7em; color: #C40000;"]]
+{{[[[*http://www.scp-wiki.net/scp-3309|N/A]]]}}
 [[/cell]]
 [[/row]]
 
 [[row]]
-[[cell style="padding: .3em .7em; border: 1px solid black; color: red;"]]
+[[cell style="padding: .3em .7em; border: 1px solid black; color: #C40000;"]]
 Dr. Westrin
 [[/cell]]
-[[cell style="border: 1px solid black; padding: .3em .7em; color: red;"]]
+[[cell style="border: 1px solid black; padding: .3em .7em; color: #C40000;"]]
 Forgotten.
 [[/cell]]
 [[/row]]
 
 [[row]]
-[[cell style="padding: .3em .7em; border: 1px solid black; color: red;"]]
+[[cell style="padding: .3em .7em; border: 1px solid black; color: #C40000;"]]
 Dr. Westrin
 [[/cell]]
-[[cell style="border: 1px solid black; padding: .3em .7em; color: red;"]]
+[[cell style="border: 1px solid black; padding: .3em .7em; color: #C40000;"]]
 {{N/A}}
 [[/cell]]
 [[/row]]
 
 [[row]]
-[[cell style="padding: .3em .7em; border: 1px solid black; color: red;"]]
+[[cell style="padding: .3em .7em; border: 1px solid black; color: #C40000;"]]
 Project Lead Xiulan
 [[/cell]]
-[[cell style="border: 1px solid black; padding: .3em .7em; color: red;"]]
+[[cell style="border: 1px solid black; padding: .3em .7em; color: #C40000;"]]
 Forgotten.
 [[/cell]]
 [[/row]]
@@ -284,5 +312,5 @@ Vocalization
 [[/row]]
 [[/table]]
 
-**Addendum:** Research personnel were administered Class-W mnestic drugs with the intent to examine SCP-4031. Researchers discovered a hereto unaccounted for white male subject on the floor, deceased. The subject possessed lacerations, emaciation, a broken left clavicle, and blood loss in the oral cavity. Notably, the subject possessed significant cranial damage.
+**Addendum:** Research personnel were administered Class-W Mnestic drugs with the intent to examine SCP-4031. Researchers discovered a hereto unaccounted for white male subject on the floor, deceased. The subject possessed lacerations, emaciation, a broken left clavicle, and blood loss in the oral cavity. Notably, the subject possessed significant cranial damage.
 [[/div]]
