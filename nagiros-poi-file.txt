@@ -1243,6 +1243,73 @@ Wikidot usually doesn't display any indentations beyond the first two, so use th
 
 @@ @@
 
+
+
+------
+
+[[div class="content-panel standalone"]]
+
+[[=]]
+
+[[size 125%]]##purple|**Sixth Precept:**##[[/size]]
+
+[[size 110%]]You can alter the color of the scrollbar.[[/size]]
+
+[[/=]]
+
+[[/div]]
+
+------
+
+@@ @@
+
+Just use the below syntax. It may look better if you use a color at half transparency, //i.e.// rgb(R, G, B, .5).
+
+[[code]]
+::-webkit-scrollbar-thumb
+{
+    background: COLOR;
+}
+[[/code]]
+
+@@ @@
+
+------
+
+[[div class="content-panel standalone"]]
+
+[[=]]
+
+[[size 125%]]##purple|**Seventh Precept:**##[[/size]]
+
+[[size 110%]]You can make custom quoteblocks![[/size]]
+
+[[/=]]
+
+[[/div]]
+
+------
+
+@@ @@
+
+Okay, this one is genuinely really cool to me. So, you //could// adjust every quoteblock on a page using CSS, or you can adjust just a few or only one while leaving the rest untouched. Try it with the code below!
+
+[[code]]
+[[module css]]
+.nagiros blockquote{
+[argument];
+}
+[[/module]]
+[[/code]]
+
+And then where you want the quoteblock:
+
+[[code]]
+[[div class="nagiros"]]
+> This will reflect your special arguments.
+[[/div]]
+[[/code]]
+
 [[/tab]]
 
 [[/tabview]]
