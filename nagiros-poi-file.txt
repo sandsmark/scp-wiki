@@ -1262,7 +1262,7 @@ Wikidot usually doesn't display any indentations beyond the first two, so use th
 
 [[size 125%]]##purple|**Sixth Precept:**##[[/size]]
 
-[[size 110%]]You can alter the color of the scrollbar.[[/size]]
+[[size 110%]]You can make changes to the scrollbar.[[/size]]
 
 [[/=]]
 
@@ -1272,12 +1272,12 @@ Wikidot usually doesn't display any indentations beyond the first two, so use th
 
 @@ @@
 
-Just use the below syntax. It may look better if you use a color at half transparency, //i.e.// rgb(R, G, B, .5).
+Just use the below syntax. If you're changing the color, it may look better if you use a color at half transparency, //i.e.// rgb(R, G, B, .5).
 
 [[code]]
 ::-webkit-scrollbar-thumb
 {
-    background: COLOR;
+    [arguments];
 }
 [[/code]]
 
