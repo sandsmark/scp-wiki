@@ -19,6 +19,7 @@ Woah there, dude! This page is currently undergoing maintenance and may look eve
     border-radius: 5px;
     border: 1px solid black;
 }
+.precept {max-width: 100%; text-color: black; border-color: #b01; border: solid 1px #5836AD; background-color: rgb(214, 234, 248, .5); padding-left: 5px; padding-right: 5px;}
 [[/module]]
 
 [!--
@@ -1100,22 +1101,10 @@ Just a small log I keep of all the stuff I couldn't figure out for a while. Enjo
 
 ------
 
-[[div class="content-panel standalone"]]
-
+[[div class="precept"]]
 [[=]]
-
-[[size 125%]]##purple|**First Precept:**##[[/size]]
-
-[[size 110%]]The rating modules are outdated. The future is now.[[/size]]
-
-[[/=]]
-
-[[/div]]
-
-------
-
-@@ @@
-
+[[collapsible show="▷ First Precept" hide="▽ The rating modules are outdated. The future is now."]]
+[[<]]
 Use this code instead!
 
 [[div class="code"]]
@@ -1125,28 +1114,17 @@ Use this code instead!
 [[div class="code"]]
 @@[[include info:end]]@@
 [[/div]]
-
-It comes with a built-in rating module anyways, as well as a little info-box so you can include info about your article. If you want to see this in action, [[*user Shaggydredlocks]] utilizes it really well. Check [[[SCP-4910]]] for a reference. 
-
-@@ @@
-
-------
-
-[[div class="content-panel standalone"]]
-
-[[=]]
-
-[[size 125%]]##purple|**Second Precept:**##[[/size]]
-
-[[size 110%]]How to do that cool thing with linking users.[[/size]]
-
+[[/<]]
+[[/collapsible]]
 [[/=]]
-
 [[/div]]
 
 ------
 
-@@ @@
+[[div class="precept"]]
+[[=]]
+[[collapsible show="▷ Second Precept" hide="▽ How to do that cool thing with linking users."]]
+[[<]]
 
 Like this, you know? [[*user Nagiros]]
 
@@ -1158,19 +1136,17 @@ Like this, you know? [[*user Nagiros]]
 
 @@ @@
 
+[[/<]]
+[[/collapsible]]
+[[/=]]
+[[/div]]
+
 ------
 
-[[div class="content-panel standalone"]]
-
+[[div class="precept"]]
 [[=]]
-
-[[size 125%]]##purple|**Third Precept:**##[[/size]]
-
-[[size 110%]]How to get extra blank lines.[[/size]]
-
-[[/=]]
-
-[[/div]]
+[[collapsible show="▷ Third Precept" hide="▽ How to get extra blank lines."]]
+[[<]]
 
 ------
 
@@ -1197,19 +1173,17 @@ Wikidot usually doesn't display any indentations beyond the first two, so use th
 
 @@ @@
 
+[[/<]]
+[[/collapsible]]
+[[/=]]
+[[/div]]
+
 ------
 
-[[div class="content-panel standalone"]]
-
+[[div class="precept"]]
 [[=]]
-
-[[size 125%]]##purple|**Fourth Precept:**##[[/size]]
-
-[[size 110%]]You can make fake links.[[/size]]
-
-[[/=]]
-
-[[/div]]
+[[collapsible show="▷ Fourth Precept" hide="▽ You can make fake links."]]
+[[<]]
 
 ------
 
@@ -1225,19 +1199,17 @@ Wikidot usually doesn't display any indentations beyond the first two, so use th
 
 @@ @@
 
+[[/<]]
+[[/collapsible]]
+[[/=]]
+[[/div]]
+
 ------
 
-[[div class="content-panel standalone"]]
-
+[[div class="precept"]]
 [[=]]
-
-[[size 125%]]##purple|**Fifth Precept:**##[[/size]]
-
-[[size 110%]]You can add invisible comments like a real programmer.[[/size]]
-
-[[/=]]
-
-[[/div]]
+[[collapsible show="▷ Fifth Precept" hide="▽ You can add invisible comments like a real programmer."]]
+[[<]]
 
 ------
 
@@ -1252,21 +1224,17 @@ Wikidot usually doesn't display any indentations beyond the first two, so use th
 
 @@ @@
 
-
+[[/<]]
+[[/collapsible]]
+[[/=]]
+[[/div]]
 
 ------
 
-[[div class="content-panel standalone"]]
-
+[[div class="precept"]]
 [[=]]
-
-[[size 125%]]##purple|**Sixth Precept:**##[[/size]]
-
-[[size 110%]]You can make changes to the scrollbar.[[/size]]
-
-[[/=]]
-
-[[/div]]
+[[collapsible show="▷ Sixth Precept" hide="▽ You can make changes to the scrollbar."]]
+[[<]]
 
 ------
 
@@ -1283,19 +1251,17 @@ Just use the below syntax. If you're changing the color, it may look better if y
 
 @@ @@
 
+[[/<]]
+[[/collapsible]]
+[[/=]]
+[[/div]]
+
 ------
 
-[[div class="content-panel standalone"]]
-
+[[div class="precept"]]
 [[=]]
-
-[[size 125%]]##purple|**Seventh Precept:**##[[/size]]
-
-[[size 110%]]You can make custom quoteblocks![[/size]]
-
-[[/=]]
-
-[[/div]]
+[[collapsible show="▷ Seventh Precept" hide="▽ You can make custom quoteblocks!"]]
+[[<]]
 
 ------
 
@@ -1318,6 +1284,11 @@ And then where you want the quoteblock:
 > This will reflect your special arguments.
 [[/div]]
 [[/code]]
+
+[[/<]]
+[[/collapsible]]
+[[/=]]
+[[/div]]
 
 [[/tab]]
 
