@@ -9,71 +9,764 @@ Woah there, dude! This page is currently undergoing maintenance and may look eve
 
 @@ @@
 
-[[include :scp-sandbox-3:component:site-17-theme]]
-[[include component:scp-trans-pride |trans-pride-logo= --] |trans-pride-footer= --]]]
-
 [[module CSS]]
-/* HEADER LOGO */
-#header {
-    background-image: url(http://scp-wiki.wdfiles.com/local--files/component%3Ascp-trans-pride/TransSCPlogo.png) !important;
+.amalgamate {margin-left: 25px; margin-top: 5px; padding: 1px 15px; border-left: solid 2px #000098}
+.list {float: center; border: gray 1px; padding: 7px; margin: 3px; background-color: #fafafa; box-shadow: 0 2px 4px rgba(75, 75, 75, .5); border-radius: 10px}
+.intro blockquote{
+    border: dashed 1px #5836AD;
+    background-color: rgb(214, 234, 248, .3);
+    text-align: justify;
 }
-/* SCROLLBAR */
-::-webkit-scrollbar-thumb
-{
-    background: rgba(247,168,184, .5);
-    border-radius: 5px;
-    border: 1px solid black;
-}
-/* PRECEPT STUFF */
-.precept {max-width: 100%; text-color: black; border-color: #b01; border: solid 1px #5836AD; background-color: rgb(214, 234, 248, .5); padding-left: 5px; padding-right: 5px; margin-top: 15px; margin-bottom: 15px;}
-.precept .collapsible-block {  
+.head {
+  text-shadow: #003 2px 2px;
+  color: #fff;
   text-align: center;
+  margin: 2em -6em;
+  padding: 1em 10em;
+  --narration-color: rgb(173, 72, 54, .5);
+  background: var(--narration-color);
+  background: linear-gradient(90deg, rgb(173, 72, 54, 0) 0%, var(--narration-color) 20%, var(--narration-color) 80%, rgb(173, 72, 54, 0) 100%);
+  z-index: -2;
 }
-.precept .collapsible-block-content {
-  text-align: left;
+
+.head.inline {
+  margin: 1em -6em;
+  padding: 1px 10em;
 }
-.precept .collapsible-block-content hr{
-max-width: 105px;
-border: none;
-height: 2px;
-text-align:center; 
-margin: 0 auto;
-margin-top: 25px;
-margin-bottom: 25px;
+
+#side-bar {
+  z-index: 2;
 }
+
+sup {
+vertical-align: top; position: relative; top: -0.5em;
+}
+
+:root{
+--cutColour: #fafafa;
+--barColour: #590505;
+}
+
+.info-container .collapsible-block-folded a{
+color: #FFF;}
+.info-container .collapsible-block-unfolded-link a{
+color: #FFF;}
+
+.desktop-only {
+    height: 30rem;
+    width: 10rem;
+    background: #ffffff;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: solid 1px #444444;
+    padding: 10px;
+    -webkit-box-shadow: 1px 2px 3px 0px #23334c;
+       -moz-box-shadow: 1px 2px 3px 0px #23334c;
+            box-shadow: 1px 2px 3px 0px #23334c;
+    overflow: visible;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform: translateX(400%);
+       -moz-transform: translateX(400%);
+        -ms-transform: translateX(400%);
+         -o-transform: translateX(400%);
+            transform: translateX(400%);
+}
+
+#page-content {
+    position: relative;
+}
+
+#page-content > div:nth-child(5) {
+    margin-top: -42rem;
+}
+
+@media (max-width: 1250px) {
+    .desktop-only {
+     display: none !important;
+     visibility:hidden
+    }
+
+    #page-content > div:nth-child(5) {
+     margin-top: 0;
+    }
+
+}
+
 [[/module]]
+[[div class="desktop-only"]]
+[[=]]
+[[size 120%]]**Site-17**[[/size]]
+[[size 75%]]**File Nav**[[/size]]
+-----
+[[/=]]
+
+➤ **Directory**
+* [#About About]
+* [#All Site-17 Deepwell Catalog]
+* [#Nagiros The Narrative]
+
+➤ **Major Characters**
+* [#Apollyon Apollyon]
+* [#Graham Dr. Thomas Graham]
+* [#Rainer Rainer Miller]
+
+➤ **Miscellaneous**
+* [#Misc Series Details]
+
+------
+
+[[/div]]
+@@@@
+@@@@
+[[=]]
+**[https://www.youtube.com/watch?v=jLKOBJR5vHs They're gonna clean up your looks... ♫]**
+[[/=]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+@@@@
+@@@@
+[[div class="head"]]
+++ Introductions
+[[/div]]
+@@@@
+[[# About]]
+[[div class="intro"]]
+> [[>]]
+> //"The anomalous is brutality incarnate. Is it really so strange that we were also brutalized?"//
+> [[/>]]
+> [[=image http://scp-sandbox-3.wdfiles.com/local--files/site-17/logo17 style="width: 75px"]]
+> Welcome to Site-17. We are the means to every end; Keter and Safe alike find themselves here eventually. There is magic coursing through the halls, automatons feasting in the canteen, and reality-benders sleeping under lock and key. There is always the slowly-beating thrum of anticipation, always the knowledge of something bigger, always the end just out of reach. None of us understand what we're containing, and God knows our superiors won't say a word.
+>
+> So keep your head down, and your nose to the grindstone. You don't have to like what we do here; you just have to do it. If you start having dreams, consult a psychiatrist. If you start feeling ill, look past the blood. If you start losing your memories, don't bother. That's just how it is in this place.
+[[/div]]
+@@@@
+[[=]]
+[[div style="max-width: 100%; text-color: black; border-color: #b01; border: solid 1px #5836AD; background-color: rgb(214, 234, 248, .5); padding-left: 5px; padding-right: 5px;"]]
+[[collapsible show="▷ What is this? /// Writers' Guide" hide="▽ What is this? /// Writers' Guide"]]
+[[<]]
+The Site-17 Deepwell Catalog is a series of tales and SCPs which are written to be enjoyable in isolation, but are constructing a complex narrative beneath the surface about power structures, secrecy, and the faults of the Foundation. The core "narrative" articles are being authored by [[*user Nagiros]].
+
+++++* Is this a series or a canon?
+It's officially a series that you can participate in, pending canon status. At present, one more author needs to submit a successful entry.
+
+++++* Writers' Guide
+Writing for Site-17 can be as simple as referencing a character in your tale or article. Note that simply referencing Site-17 as a facility is not enough, as Site-17 has been a fairly prevalent installation in wiki history for a while now.
+
+The ideal submission deals with Ethics Committee interactions, humanoid anomalies, and/or essophysics while being thematically concerned with secrecy, truth, and/or the sacrifices made to maintain the Veil. If you just want to write an article with a few characters you like, though, have at it!
+
+If you want to do something more major with an established character, I'd appreciate being contacted first. I promise I won't impose my visions of the characters too much! I just need to check over that it doesn't conflict with extant or future installations in the core articles.
+
+In either case, feel free to add it to the [/site-17#toc0 Site-17 Deepwell Catalog section] when it's posted!
+[[/<]]
+[[/collapsible]]
+[[/div]]
+[[/=]]
+
+------
 
 [!--
-[[module CSS]]
-/* LINK COLOR */
-a {
-    color: rgb(88, 54, 173);
-}
-a.newpage {
-    color: rgb(88, 54, 173);
-}
-#side-bar a:visited{ 
-    color: rgb(88, 54, 173);
-}
-a:visited {
-    color: rgb(88, 54, 173);
-}
+* **[[[SCP-#]]]** - //Alternate title//, by [[*user username]]
+* **[[[Tale Name]]]**, by [[*user username]]
+--]
 
-/* SIDE BAR MODS */
+[[# All]]
++ Site-17 Deepwell Catalog
+
+[[collapsible show="◄ View All" hide="► Fold All" folded="no"]]
+* **[[[A Hymn For Pandora]]]**
+* **[[[APAS | Automated Passive Amnestization System Ver. 17.09]]]**
+* **[[[He Who Screws With Reality]]]**
+* **[[[SCP-4051]]]** - //Your Friendly Neighborhood Keter//
+ * **[[[The Beast Beneath The Library]]]**
+* **[[[SCP-4260]]]** - //The Subdirective//
+* **[[[SCP-4415]]]** - //Humanoid Containment Chamber #λ045//
+* **[[[SCP-4175]]]** - //Friends Made, and the **Void**//
+* **[[[SCP-4855]]]** - //Mind Like a Steel Trap//, by [[*user loddite]]
+* **[[[Systems Patch]]]**
+[[/collapsible]]
+
+------
+
+[[# Nagiros]]
++ The Narrative
+
+[[collapsible show="◄ View By Order" hide="► Fold By Order" folded="no"]]
+[[=]]
+[[module ListPages name="SCP-4260"]]
+**%%title_linked%% - //The Subdirective// ##grey||## [[[https://www.reddit.com/r/SCPDeclassified/comments/c4quyc/scp4260_the_subdirective/ | Declassified]]] ##grey||## [[[http://scpexplained.wikidot.com/scp-4260 | Explained]]] ##grey||## +%%rating%% ##grey||## %%comments%% Comments**
+[[/module]]
+
+> Procedure 8917 is considered complete when the following criteria are met: SCP-4260 has been successfully terminated, the Strayer Density Matrix is fully operational, all affected civilians have been located and terminated, all evidence of Procedure 8917 has been removed, and SCP-4260 has been resurrected.
+
+[[module ListPages name="apas"]]
+**%%title_linked%% ##grey||## [[[http://scpexplained.wikidot.com/apas | Explained]]] ##grey||## +%%rating%% ##grey||## %%comments%% Comments**
+[[/module]]
+
+> When the earth first felt the dread grip of death, you knew of me. When your species first crawled from the mud and had the right sense to weep, you heard my voice. When a towering monolith was constructed to contain the encroaching army which rides over endless fields of ash and waste, you knew my name.
+
+[[module ListPages name="SCP-4051"]]
+**%%title_linked%% - //Your Friendly Neighborhood Keter// ##grey||## [[[http://scpexplained.wikidot.com/scp-4051 | Explained]]] ##grey||## +%%rating%% ##grey||## %%comments%% Comments**
+[[/module]]
+
+> Damn kid. Broke the straps on the chair. I'm tempted to get it tranquilized during the procedure, but we need it awake.
+
+[[module ListPages name="the-beast-beneath-the-library"]]
+**%%title_linked%% ##grey||## [[[http://scpexplained.wikidot.com/the-beast-beneath-the-library | Explained]]] ##grey||## +%%rating%% ##grey||## %%comments%% Comments**
+[[/module]]
+
+> What follows is the unofficial report on the incident involving SCP-4051, the anomalous object placed under your care by Ethics Committee liaison Jeremiah Cimmerian.
+[[/=]]
+[[/collapsible]]
+@@ @@
+[[div class="list"]]
+[[=]]
+[[collapsible show="► View By Posted ◄" hide="▼ View By Posted ▼"]]
+[[module ListPages name="SCP-4051"]]
+**%%title_linked%% - //Your Friendly Neighborhood Keter// ##grey||## [[[http://scpexplained.wikidot.com/scp-4051 | Explained]]] ##grey||## +%%rating%% ##grey||## %%comments%% Comments**
+[[/module]]
+
+> Damn kid. Broke the straps on the chair. I'm tempted to get it tranquilized during the procedure, but we need it awake.
+
+[[module ListPages name="the-beast-beneath-the-library"]]
+**%%title_linked%% ##grey||## [[[http://scpexplained.wikidot.com/the-beast-beneath-the-library | Explained]]] ##grey||## +%%rating%% ##grey||## %%comments%% Comments**
+[[/module]]
+
+> What follows is the unofficial report on the incident involving SCP-4051, the anomalous object placed under your care by Ethics Committee liaison Jeremiah Cimmerian.
+
+[[module ListPages name="SCP-4260"]]
+**%%title_linked%% - //The Subdirective// ##grey||## [[[https://www.reddit.com/r/SCPDeclassified/comments/c4quyc/scp4260_the_subdirective/ | Declassified]]] ##grey||## [[[http://scpexplained.wikidot.com/scp-4260 | Explained]]] ##grey||## +%%rating%% ##grey||## %%comments%% Comments**
+[[/module]]
+
+> Procedure 8917 is considered complete when the following criteria are met: SCP-4260 has been successfully terminated, the Strayer Density Matrix is fully operational, all affected civilians have been located and terminated, all evidence of Procedure 8917 has been removed, and SCP-4260 has been resurrected.
+
+[[module ListPages name="apas"]]
+**%%title_linked%% ##grey||## [[[http://scpexplained.wikidot.com/apas | Explained]]] ##grey||## +%%rating%% ##grey||## %%comments%% Comments**
+[[/module]]
+
+> When the earth first felt the dread grip of death, you knew of me. When your species first crawled from the mud and had the right sense to weep, you heard my voice. When a towering monolith was constructed to contain the encroaching army which rides over endless fields of ash and waste, you knew my name.
+[[/collapsible]]
+[[/=]]
+[[/div]]
+
+------
+
++ Major Characters
+
+[!--
+* **[[[SCP-#]]]** - //Alternate title//, by [[*user username]]
+* **[[[Tale Name]]]**, by [[*user username]]
+--]
+
+[[# Apollon]]
+++ Apollyon
+**Role:** Uncontained Essophysical Anomaly
+**Bio:** Embodying anomalous phenomena, Apollyon was unintentionally summoned by the Foundation's Veil Protocol and solely desires to upend normalcy — rendering reality itself anomalous. Initial containment efforts proved incapable of stopping its titanic strength and willpower, and it briefly entered the local timeline before dispersing into another. It's re-entry into our timeline would constitute a ΔK-Class ("Immolated Masquerade") Scenario.
+
+**Important Documentation:**
+* **[[[APAS | Automated Passive Amnestization System Ver. 17.09]]]**
+[[collapsible show="► All Articles" hide="◄ All Articles"]]
+* **[[[APAS | Automated Passive Amnestization System Ver. 17.09]]]**
+[[/collapsible]]
+
+[[# Graham]]
+++ Dr. Thomas Graham
+**Role:** Director of Site-17
+**Bio:** Thomas Graham was promoted to Site Director in 2011 after Dr. Weathers became O5-4. Ruthless and determined, Graham has demonstrated a willingness to work well outside the permissions of the Ethics Committee to help the Foundation — however it is that he defines "help", that is. Given immense power through Site-17's Automated Passive Amnestization System, he runs the facility with an iron fist and an eye locked on a brighter future for humanity.
+
+**Important Documentation:**
+* **[[[SCP-4051]]]** - //Your Friendly Neighborhood Keter//
+ * **[[[The Beast Beneath The Library]]]**
+* **[[[SCP-4415]]]** - //Humanoid Containment Chamber #λ045//
+[[collapsible show="► All Articles" hide="◄ All Articles"]]
+* **[[[SCP-4051]]]** - //Your Friendly Neighborhood Keter//
+ * **[[[The Beast Beneath The Library]]]**
+* **[[[SCP-4175]]]** - //Friends Made, and the **Void**//
+* **[[[SCP-4415]]]** - //Humanoid Containment Chamber #λ045//
+* **[[[SCP-4855]]]** - //Mind Like a Steel Trap//, by [[*user loddite]]
+[[/collapsible]]
+
+[[# Rainer]]
+++ Rainer Miller
+**Role:** Contained Anomalous Humanoid
+**Bio:** Rainer is capable of producing small items from extradimensional portals and was contained by the Foundation in 2012 as SCP-4051. The unethical testing he underwent prompted numerous characters to take action against Dr. Graham, although Rainer himself would prefer to live a quiet life helping the world in his own small ways.
+
+**Important Documentation:**
+* **[[[SCP-4051]]]** - //Your Friendly Neighborhood Keter//
+ * **[[[The Beast Beneath The Library]]]**
+* **[[[Systems Patch]]]**
+[[collapsible show="► All Articles" hide="◄ All Articles"]]
+* **[[[SCP-4051]]]** - //Your Friendly Neighborhood Keter//
+ * **[[[The Beast Beneath The Library]]]**
+* **[[[SCP-4260]]]** - //The Subdirective//
+* **[[[SCP-4415]]]** - //Humanoid Containment Chamber #λ045//
+* **[[[Systems Patch]]]**
+[[/collapsible]]
+
+------
+
+[[# Misc]]
++ Series Details
+
+Please note that none of the following are exclusive to the Site-17 canon. I'd personnally love to see a lot of these characters and concepts become mainstream.
+
+[[tabview]]
+
+[[tab Series Timeline]]
+
++++* Timeline of Important Events
+
+||~ Date ||~ Event ||
+||01/13/1999|| Death is contained as SCP-4260 after voluntarily manifesting and requesting medical assistance. ||
+||March 1999|| First completion of Procedure 8917; SCP-4260 is terminated and reanimated. ||
+||2003|| Apollyon manifests for the first time and destroys Site-17, but is turned back by Dr. Skyler. Dr. Weathers is contracted as the Provisional Site Director. ||
+||01/04/2010|| Apollyon completes a manifestation event and exits the local timeline. ||
+||August 2012|| Rainer Miller is contained as SCP-4051 after covertly operating as a vigilante for several months. ||
+||08/17/2012|| Testing on SCP-4051 results in Dr. Anthony Roswell entering a coma and Dr. David Edwards become project lead over him. ||
+||08/31/2012|| Procedure 350-PROMETHEAN is initiated for the first time on SCP-4051. ||
+||07/18/2013|| SCP-4051 is reclassified as Keter after a botched containment mission. ||
+||09/08/2015|| Alex Conrad is neutralized. ||
+||02/13/2016|| Foundation Administrator Ethan Horowitz becomes the heir to SCP-4260 in order to prevent a ΩK-Class ("End-of-Death") Scenario. ||
+||2019|| Edwina Drake is contained as SCP-4855 after the propagation of a lethal cognitohazard destroys her hometown. ||
+||07/26/2022|| A Snap Back Scenario resulting from SCP-4855's clinical death occurs. ||
+
+[[/tab]]
+
+[[tab Other Characters]]
+
+[!--
+* **[[[SCP-#]]]** - //Alternate title//, by [[*user username]]
+* **[[[Tale Name]]]**, by [[*user username]]
+--]
+
+++* Staff
+
+**Dr. Preston Bracks -** Leader of RTF Iota-39, Assistant Director of the Essophysics Department, and a dedicated member of the Foundation.
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[APAS | Automated Passive Amnestization System Ver. 17.09]]]**
+* **[[[SCP-4260]]]** - //The Subdirective//
+[[/collapsible]]
+
+**Researcher Carvelia -** A researcher who is open to the concept of utilizing beneficial, non-Thaumiel anomalies to aid the Foundation.
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[SCP-4855]]]** - //Mind Like a Steel Trap//
+[[/collapsible]]
+
+**Junior Researcher Daniels -** A reckless researcher who was reprimanded by Dr. Graham.
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[SCP-4855]]]** - //Mind Like a Steel Trap//
+[[/collapsible]]
+
+**Dr. David Edwards -** Apathetic and unethical, Dr. Edwards is the brother to Dr. Roswell and briefly enjoyed the privileges of being the Lead of Procedure 350-PROMETHEAN before being fired for malpractice.
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[SCP-4051]]]** - //Your Friendly Neighborhood Keter//
+ * **[[[The Beast Beneath The Library]]]**
+[[/collapsible]]
+
+**Dr. Genevieve -** Head of the Essophysics Department, she has an intense personality and is extremely dedicated to her job.
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[APAS | Automated Passive Amnestization System Ver. 17.09]]]**
+[[/collapsible]]
+
+**Dr. Natalie Reems -** A nervous poet of a junior researcher that works in the Department of Extratemporal Studies and struggles to remember her former lover, Dr. Tonya Skyler.
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[APAS | Automated Passive Amnestization System Ver. 17.09]]]**
+* **[[[SCP-4175]]]** - //Friends Made, and the **Void**//
+* **[[[SCP-4415]]]** - //Humanoid Containment Chamber #λ045//
+[[/collapsible]]
+
+**Dr. Anthony Roswell -** A professional senior researcher and brother to Dr. Edwards. Currently in a coma induced by exposure to a paracognitohazard.
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[SCP-4051]]]** - //Your Friendly Neighborhood Keter//
+ * **[[[The Beast Beneath The Library]]]**
+[[/collapsible]]
+
+**Dr. Tonya Skyler -** A confident junior researcher officially known as Asset.0001.DRO, hiding repressed emotional trauma from her past as an MTF operative. Has partial anti-memetic resistance to Apollyon and the ability to cause an essophysical demanifestation event.
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[APAS | Automated Passive Amnestization System Ver. 17.09]]]**
+* **[[[SCP-4415]]]** - //Humanoid Containment Chamber #λ045//
+[[/collapsible]]
+
+**Dr. Allan Weathers -** The former director of Site-17, Dr. Weathers has a friendly relationship with the author and was promoted to Foundation Director of Pataphysical and Existential Studies O5-4.
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[A Hymn For Pandora]]]**
+* **[[[APAS | Automated Passive Amnestization System Ver. 17.09]]]**
+* **[[[He Who Screws With Reality]]]**
+* **[[[SCP-4415]]]** - //Humanoid Containment Chamber #λ045//
+[[/collapsible]]
+
+**Dr. Jules Yesenia -** A caring on-site therapist, Dr. Yesenia is mostly concerned with helping her clients to the greatest extent possible — although she seems unwilling to question the Foundation's role in her clients' mental health issues.
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[SCP-4051]]]** - //Your Friendly Neighborhood Keter//
+ * **[[[The Beast Beneath The Library]]]**
+[[/collapsible]]
+
+++* SCPs
+
+**Alex Conrad -** The ghostly remains of a murdered teenage boy, Alex was classified as SCP-4175 before being humanely neutralized by Maria Hayes.
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[SCP-4175]]]** - //Friends Made, and the **Void**//
+[[/collapsible]]
+
+**Death -** Classified as SCP-4260, it is the essophysical entity responsible for death and infirmity while slowly dying itself. It is currently deceased with Foundation Administrator Horowitz acting as its heir.
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[A Hymn For Pandora]]]**
+* **[[[SCP-4260]]]** - //The Subdirective//
+[[/collapsible]]
+
+**Denizens of the Scattered Realm -** A set of anomalous humanoids killed in covert experiments by Site Director Graham, then reanimated by Samuel Veras and currently located in the Scattered Realm. They include a young botanokinetic, a true artificial intelligence, an elderly cultist, and two clairvoyant individuals.
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[SCP-4415]]]** - //Humanoid Containment Chamber #λ045//
+[[/collapsible]]
+
+**Edwina Drake -** Classified as SCP-4855, she is an elderly humanoid possessing anomalously high memetic resistance. Her death is projected to result in the local propagation of a multitude of lethal memetic agents.
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[SCP-4855]]]** - //Mind Like a Steel Trap//
+[[/collapsible]]
+
+**Lazarus -** A large-scale entity who speaks in archaic rhyme and granted wishes prior to an exile beneath the Wanderers' Library.
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[The Beast Beneath The Library]]]**
+[[/collapsible]]
+
+**Samuel Veras -** A Class-V reality bender which submitted itself to the Foundation to be protected from pataphysical annihilation[[footnote]] As documented in [[[SCP-3309 | Primary_Asset.3309 ("Where We Go When We Fade, Fade Away")]]]. [[/footnote]]. Presumably self-terminated during the creation of SCP-4415.
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[He Who Screws With Reality]]]**
+* **[[[SCP-4415]]]** - //Humanoid Containment Chamber #λ045//
+[[/collapsible]]
+
+**Terrega -** A hostile arachnid entity exiled beneath the Wanderers' Library. Currently deceased.
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[The Beast Beneath The Library]]]**
+[[/collapsible]]
+
+++* MTF Operatives
+**Beck -** A polite member of MTF Gamma-5 ("Red Herrings").
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[SCP-4855]]]** - //Mind Like a Steel Trap//
+[[/collapsible]]
+
+**Charlie -** Taciturn team leader of an MTF Psi-7 ("Home Improvement") unit.
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[The Beast Beneath The Library]]]**
+[[/collapsible]]
+
+**Jayla -** Demolitions expert of MTF Psi-7 ("Home Improvement"), was sacrificial killed by Terrega.
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[The Beast Beneath The Library]]]**
+[[/collapsible]]
+
+**Morgan -** A nonbinary member of MTF Sigma-3 ("Bibliographers"); cool and competent but concerned for others when actual danger is involved. Is capable of thaumaturgy.
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[The Beast Beneath The Library]]]**
+[[/collapsible]]
+
+**Maria Hayes -** A friendly transwoman who is part of MTF Psi-8 ("The Silencers") and neutralized Alex Conrad.
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[SCP-4175]]]** - //Friends Made, and the **Void**//
+[[/collapsible]]
+
+**Rico -** Senior member of MTF Psi-7 ("Home Improvement").
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[The Beast Beneath The Library]]]**
+[[/collapsible]]
+
+**Trevor -** Pyromaniac of MTF Psi-7 ("Home Improvement") armed with a flamethrower.
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[The Beast Beneath The Library]]]**
+[[/collapsible]]
+
+++* O5s
+
+**Administrator Ethan Horowitz -** Calm and pragmatic, he is presently the essophysical heir to Death and contained in Area-03.
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[SCP-4260]]]** - //The Subdirective//
+[[/collapsible]]
+
+**O5-1 -** Mediator of Overseers
+
+**O5-2 (Henrick) -** Foundation Coordinator of Human Relations
+
+**O5-3 -** Foundation Director of Hypothetical Scenarios
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[SCP-4260]]]** - //The Subdirective//
+[[/collapsible]]
+
+**O5-4 (Allan Weathers) -** Foundation Director of Pataphysical and Existential Studies
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[SCP-4260]]]** - //The Subdirective//
+[[/collapsible]]
+
+**O5-5 -** Overwatch Liaison to the Ethics Committee
+
+**O5-6 -** Foundation Analytical Administrator and Coordinator
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[SCP-4260]]]** - //The Subdirective//
+[[/collapsible]]
+
+**O5-7 -** Foundation Coordinator of Initial Containment
+
+**O5-8 (Trinity) -** Foundation Administrative and Logistical Director
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[APAS | Automated Passive Amnestization System Ver. 17.09]]]**
+* **[[[Systems Patch]]]**
+[[/collapsible]]
+
+**O5-9 (Nathaniel) -** Foundation Archival Director
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[APAS | Automated Passive Amnestization System Ver. 17.09]]]**
+* **[[[SCP-4260]]]** - //The Subdirective//
+* **[[[Systems Patch]]]**
+[[/collapsible]]
+
+**O5-10 -** Foundation Director of Active Containment
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[SCP-4260]]]** - //The Subdirective//
+[[/collapsible]]
+
+**O5-11 -** Foundation Director of Antimemetics
+
+**O5-12 -** Foundation Director of GoI Relations
+
+**O5-13 -** Overseer Coordinator
+
++* AICs
+
+**Indomitable.iac -** The personal archival AIC of O5-9, he is conversational but still cordial and professional. He has drafted the Veritas Scenario dossier and is exceptionally critical of the Foundation.
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[APAS | Automated Passive Amnestization System Ver. 17.09]]]**
+* **[[[Systems Patch]]]**
+[[/collapsible]]
+
+**Galileo.aic -** Site-17 AIC in charge of the Memetic Dissemination Process.
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[APAS | Automated Passive Amnestization System Ver. 17.09]]]**
+[[/collapsible]]
+
+**Minerva.aic -** Personal logistical and administrative AIC of O5-8. Blunt and predatory.
+[[collapsible show="+ All Articles" hide="- All Articles"]]
+* **[[[APAS | Automated Passive Amnestization System Ver. 17.09]]]**
+* **[[[Systems Patch]]]**
+[[/collapsible]]
+
+[[/tab]]
+
+[[tab Locations]]
+
+++* AL-908
+The site of Apollyon's manifestation attempts, located one mile from Site-17 in an empty and icy stretch of land.
+* **[[[APAS | Automated Passive Amnestization System Ver. 17.09]]]**
+
+++* Area-03
+The permanent containment area of SCP-4260. It remains minimally staffed and is located two kilometers beneath Hong Kong.
+* **[[[SCP-4260]]]** - //The Subdirective//
+
+++* Scattered Realm
+A series of extradimensional locations accessible to anomalous humanoids via the door of former Humanoid Containment Chamber #λ045. It was created by Samuel Veras to reanimate and protect four contained humanoids killed in experiments by Graham, although Samuel self-terminated during the Realm's creation.
+* **[[[SCP-4415]]]** - //Humanoid Containment Chamber #λ045//
+
+++* Site-17
+A major Foundation facility designed to contain a large variety of anomalous items. Located in the northern United States.
+* **[/site-17#toc0 Scroll up?]**
+
+++* Site-76
+A Foundation Research and Development site which contained SCP-4260, in addition to developing Strayer Density Matrices.
+* **[[[SCP-4260]]]** - //The Subdirective//
+
+++* Wanderers' Exile
+A dungeon-esque location beneath the Wanderers' Library populated by entities which pose an irrevocable threat to knowledge itself. Individuals which cannot be simply barred from the library are sent here, and are presumably never released.
+* **[[[The Beast Beneath The Library]]]**
+
+[[/tab]]
+
+[[tab Departments and Task Forces]]
+
+[[div style="margin: auto; background: white; padding-top: 3px; padding-bottom: 3px; border-radius: 5px; font-size: 110%"]]
+[[=]]
+//Somewhere on an unknown shore,
+Where the rivers of life their waters pour,
+Sit three sisters forevermore,
+Spinning a silver thread.//
+[[/=]]
+[[/div]]
+
++* Departments
+
+++* Department of Essophysics
+A small department which studies essophysical entities and manifestation events while only employing twenty members.
+* **[[[APAS | Automated Passive Amnestization System Ver. 17.09]]]**
+* **[[[SCP-4260]]]** - //The Subdirective//
+
+++* Department of Extratemporal Studies
+Studies events from other timelines and dimensions.
+* **[[[SCP-4415]]]** - //Humanoid Containment Chamber #λ045//
+
++* Task Forces
+
+++* MTF Zeta-5 ("Lazarus Abominables")
+Assembled to perform aerial bombardment runs to subdue hazardous anomalies.
+* **[[[APAS | Automated Passive Amnestization System Ver. 17.09]]]**
+
+++* RTF Iota-39 ("Gods and Monsters"):
+A small research task force dedicated to the investigation of essophysical entities such as SCP-4260, sharing many members with MTF Gamma-8.
+* **[[[SCP-4260]]]** - //The Subdirective//
+
+++* Amalgamate Force Omicron-45:
+Composed of MTF Gamma-8, MTF Xi-2, and MTF Tau-900; will neutralize SCP-4260 and terminate any civilians affected by its death.
+* **[[[SCP-4260]]]** - //The Subdirective//
+[[div class="amalgamate"]]
+++* MTF Gamma-8 ("Baphomites"):
+Assembled from numerous technicians proficient in the operation of Strayer Density Matrices and speculative essophysicists from RTF Iota-39 to contained SCP-4260; a member of Amalgamate Force Omicron-45.
+* **[[[SCP-4260]]]** - //The Subdirective//
+
+++* MTF Xi-2 ("Out of the Shadows Come We, Darkly"):
+An armed Mobile Task Force specializing in combat with essophysical, deity-class entities such as SCP-4260; a member of Amalgamate Force Omicron-45.
+* **[[[SCP-4260]]]** - //The Subdirective//
+
+++* MTF Tau-900 ("Deliverance"):
+An armed Mobile Task Force specializing in the location and termination of civilians accidentally affected by a successful neutralization of SCP-4260; a member of Amalgamate Force Omicron-45.
+* **[[[SCP-4260]]]** - //The Subdirective//
+[[/div]]
+
+++* MTF Upsilon-1 ("Born from Flesh and Metal")
+Assembled to explore evacuated Foundation facilities which both contain Keter-class entities and have experienced critical structural damage; summarily destroyed by DRO-0001, barring Dr. Tonya Skyler.
+* **[[[APAS | Automated Passive Amnestization System Ver. 17.09]]]**
+
+[[/tab]]
+
+[[tab The World]]
+
+Here are some unique bits of [https://www.youtube.com/watch?v=7ePWNmLP0Z0 the world] of the SCP Foundation introduced through Site-17.
+
++++* Essophysics
+Essophysics is the study of entities which exert a passive and universal effect on baseline reality. These entities generally exist in a state of omnipresence, their physical forms spread so thin they are practically non-physical. It is presently assumed that reality would be radically altered following their destruction or removal from the timeline.
+
+[[collapsible show="+ Known Essophysical Entities"]]
+||~ Name ||~ Essophysical Embodiment ||~ Articles ||
+|| Apollyon || Anomalous phenomena. || [[[APAS | Automated Passive Amnestization System Ver. 17.09]]] ||
+|| Death, Ethan Horowitz || Universal decay of living organisms and societal structures, entropy. || [[[SCP-4260]]] ||
+[[/collapsible]]
+
++++* K-Class Scenarios
+||~ Title ||~ Definition ||~ Articles ||
+|| χK-Class ("Crowning-of-Death") Scenario || The inadvertent containment breach of SCP-4260, resulting in universal supremacy of Death and the probability of life's continuation becoming approximately zero. || [[[SCP-4260]]] ||
+
++++* AMEC and DRO
+The Antimemetic Entities Catalog (AMEC) database operates as a classified twin to the standard SCiPNET database, using specialized memetic inoculation to bypass the antimemetic effects of certain anomalous objects. These objects were given an Item Number of DRO-####, standing for Documentation-Resistant Object.
+
+[[div style="display: inline-block; border-radius: 10px; border:solid 2px red; float:top; width:96.5%; padding:10px"]]
+* **[/apas/offset/6 DRO-0001]** - Apollyon
+* **[/apas/offset/5 DRO-0002]** - Site-17 Seismic Disturbance
+* **[/apas/offset/5 DRO-0045]** - Asset.0001.DRO ("Tonya Skyler")
+* **[/apas/offset/5 DRO-0355]** - Amorphous Leather Masses
+* **[/apas/offset/5 DRO-0678]** - A Living Letter
+[[/div]]
+
+If people start taking a liking to this idea, I may make it its own hub.
+
++++* Esoteric Amnestics
+* **Class-S ("Slow Burn") -** Used in situations where operatives without sufficient clearance require knowledge of classified materials for a period of time, and administration of an amnestic after such a period may not be possible. Summarily erases all memories formed between administration and activation of the amnestic.
+* **Class-R ("Remote Repression") -** Used when subjects require amnestic application but the excised memories will be of value to the Foundation at a later date. Takes the physical form of a microchip implanted in the neck and acts as a standard amnestic until it is remotely deactivated, allowing the subject to recall the excised memories.
+
++++* Semi-Physical Entities
+* **Aleph-Order:** Designates an entity which is both non-physical and capable of interacting with the physical world while possessing the ability to deconstruct physical objects.
+* **Hazma-Order:** Designates an entity which is non-physical and capable of interacting with the physical world via simple pushing and pulling forces.
+
++++* Codes and Templates
+[[collapsible show="+ AIC Message Templates" hide="- AIC Message Templates"]]
+++++* Indomitable.aic
+**Seen In:** [[[Systems Patch]]]
+[[=]]
+**Place at top:**
+[[/=]]
+[[code]]
+[[module CSS]]
+.indomitable {background-color: white; color: #6f4c7a; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%; font-family: monospace}
+[[/module]]
+[[/code]]
+[[=]]
+**Place wherever:**
+[[/=]]
+[[code]]
+[[div class="indomitable"]]
+Hello, world!
+[[/div]]
+[[/code]]
+++++* Minerva.aic
+**Seen In:** [[[Systems Patch]]]
+[[=]]
+**Place at top:**
+[[/=]]
+[[code]]
+[[module CSS]]
+.minerva {color: #c10000; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%; font-family: monospace}
+[[/module]]
+[[/code]]
+[[=]]
+**Place wherever:**
+[[/=]]
+[[code]]
+[[div class="minerva"]]
+Hello, world!
+[[/div]]
+[[/code]]
+[[/collapsible]]
+
+[[collapsible show="+ Costume CSS Themes" hide="- Costume CSS Themes"]]
++++* Site-17 Deepwell Theme
+[[=]]
+**Place at top:**
+[[/=]]
+[[div class="code"]]
+@@[[include component:site-17-theme]]@@
+[[/div]]
++++* AMEC Database Theme
+[[=]]
+**Place at top:**
+[[/=]]
+[[code]]
+[[module CSS]]
+/*
+    Powered on 2019/05/05 21:00:38
+    [2019 Wikidot Theme]
+    Created by Nagiros
+    CC BY-SA 3.0
+*/
+
+
+a,a:visited {
+    color: green;
+}
 #side-bar {
     display: block;
     background: transparent;
 }
 #side-bar a:visited{
-    color: rgb(88, 54, 173);
+    color: green;
 }
 
-/* HEADER TEXT */
+div#side-bar div.side-block {
+    border: 1px solid rgb(88, 54, 173);
+    border-radius: 0px
+}
 div#header h1 a span {
     font-size: 0px;
 }
 div#header h1 a:before {
-    content: "Site-17 Database";
+    content: "AMEC Database";
     color: #eee;
     
 }
@@ -82,1173 +775,91 @@ div#header h2 span {
     padding: 4px;
 }
 div#header h2:after {
-    content: "Living Past Our End";
+    content: "Anti-Memetic Entities Catalog";
     font-weight: bold;
     color: #f0f0c0;
     padding: 19px 0;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
     white-space: pre;
 }
-div#side-bar div.side-block {
-    border: 1px solid rgb(88, 54, 173);
-    border-radius: 0px
-}
-
-/* IMAGE BLOCK BORDER */
-.scp-image-block {
-  border: solid 1px rgb(108, 108, 255, .5);
-}
-.scp-image-block .scp-image-caption {
-  border-top: solid 1px rgb(108, 108, 255, .5);
-}
-
-/* RATINGS */
-.page-rate-widget-box .rate-points {
-  background-color: #000098 !important;
-  border: solid 1px #000098;
-}
-.page-rate-widget-box .rateup,
-.page-rate-widget-box .ratedown {
-  background-color: #f0ffff;
-  border-top: solid 1px #000098;
-  border-bottom: solid 1px #000098;
-}
-.page-rate-widget-box .rateup a,
-.page-rate-widget-box .ratedown a {
-  background: transparent;
-  color: #5836AD;
-}
-.page-rate-widget-box .rateup a:hover,
-.page-rate-widget-box .ratedown a:hover {
-  background: #000098;
-  color: #f0ffff;
-}
-.page-rate-widget-box .cancel {
-  background: transparent;
-  background-color: #000098;
-  border: solid 1px #000098;
-}
-.page-rate-widget-box .cancel a {
-  color: #f0ffff;
-}
-.page-rate-widget-box .cancel a:hover {
-  background: #f0ffff;
-  color: #5836AD;
-}
- 
-/* INFO MODULE */
-#page-content .rate-box-with-credit-button {
-    background-color: #000098;
-    border-color: #000098;
-    border-radius: 5px;
-    box-shadow: 1px 1px 3px rgba(0,0,0,.5);
-}
-#page-content .creditButton p a {
-    border-left-color: #f0ffff;
-}
- 
-#page-content .modalbox {
-    box-shadow: 0 2px 6px rgba(50,0,50,.5);
-}
- 
-.close-credits,
-.credit-back {
-    filter: hue-rotate(275deg);
-}
-
-/* TAB STUFF */
-/* Courtesy of the Anderson Robotics Theme by Croquembouche, from which this was modified. */
-
-div.yui-navset ul.yui-nav .selected a,
-div.yui-navset ul.yui-nav .selected a:focus,
-div.yui-navset ul.yui-nav .selected a:hover {
-    color: #0000bf;
-}
-yui-navset.yui-navset-top {
-    border-left: 3px solid #295183;
-    border-left: 3px solid #611e22;
-}
-.yui-navset .yui-nav {
-    position: relative;
-    z-index: 0;
-    border: none;
-    padding-left: 0.2em;
-}
-.yui-navset .yui-nav li {
-    padding: 0;
-    margin: 0.2em 0.3em;
-    transition: transform 0.2s ease-in-out;
-}
-.yui-navset .yui-nav li a {
-    background: transparent;
-    color: #5f6368;
-    border: 1px solid rgba(0,0,0,0.12);
-    transition: background 0.1s ease-in-out,
-                color 0.1s ease-in-out,
-                border 0.1s ease-in-out;
-}
-.yui-navset .yui-nav li a:hover {
-    background: rgba(0,0,0,0.04);
-    color: rgb(108, 108, 255);
-    border: 1px solid rgba(0,0,0,0.12);
-}
-.yui-navset .yui-nav li a em {
-    border: none;
-    padding: 0.5em 0.5em calc(0.5em - 2px) 0.5em;
-}
-.yui-navset .yui-nav .selected {
-    padding: 0;
-    margin: 0.2em 0.3em;
-    transform: scale(1.1);
-    font-weight: bold;
-}
-
-.yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a:focus, .yui-navset .yui-nav .selected a:hover {
-    padding: 0;
-    border: 1px solid #1e3c62;
-    border: 1px solid #a649ff;
-    background: #dfbcff;
-}
-
-.yui-navset .yui-nav .selected a em {
-    padding: 0.5em 0.5em calc(0.5em - 2px) 0.5em;
-    border: none;
-}
-
-.yui-navset .yui-content {
-    display: flex;
-    flex-direction: column;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    position: relative;
-    margin-top: 0.2em;
-    transform-origin: 0 0;
-}
-.yui-navset .yui-content > div {
-    border: 1px solid rgba(0,0,0,0.12);
-    border-left: none;
-    background-color: #f5f5f5;
-    padding: 0.25em 0.5em;
-    display: block;
-    top: 0;
-    overflow: hidden;
-    transform-origin: 0 0;
-}
-#page-content .yui-navset .yui-content > div > * {
-    transform-origin: 0 0;
-}
-#page-content .yui-navset .yui-content > div[style*="none"] {
-    display: block !important;
-    flex: 0;
-    max-height: 0;
-    padding: 0 0.5em;
-    border-width: 0;
-    /* The following transition affects the one that DISAPPEARS */
-    transition: padding 0s linear 0.5s,
-                border-width 0s linear 0.5s,
-                flex 0.5s cubic-bezier(.0,1.27,.0,.89) 0s;
-    animation: tab-disappear 0.5s ease-in-out 0s 1 both;
-}
-#page-content .yui-navset .yui-content > div[style*="block"] {
-    display: block !important;
-    flex: 1;
-    max-height: 9999rem;
-    /* The following transition affects the one that APPEARS */
-    transition: padding 0s linear 0.5s,
-                border-width 0s linear 0.5s,
-                flex 0.5s cubic-bezier(.99,.0,.99,.0) 0.5s;
-    animation: tab-appear 0.5s ease-in-out 0.5s 1 both;
-}
-
-@keyframes tab-disappear {
-    0% { max-height: 9999rem; }
-    1% { max-height: 100vh; }
-    100% { max-height: 0; }
-}
-@keyframes tab-appear {
-    0% { max-height: 0; }
-    99% { max-height: 100vh; }
-    100% { max-height: 9999rem; }
-}
 [[/module]]
+[[/code]]
+[[/collapsible]]
 
+[[collapsible show="+ New Email" hide="- New Email"]]
+**Seen In:** [[[SCP-4415]]], [[[The Beast Beneath The Library]]]
+[[=]]
+**Place at top:**
+[[/=]]
+[[code]]
+[[module CSS]]
+.blinkbar {color: red; font-size:125%; animation: blink 1.5s infinite; letter-spacing: -0.13em;}@keyframes blink{to{opacity: .0;}}@keyframes flicker {0% {opacity: 0.9890; }5% {opacity: 0.5842; }10% {opacity: 0.9865; }20% {opacity: 0.0412; }20% {opacity: 0.6255; }25% {opacity: 0.3157; }30% {opacity: 0.7328; }35% {opacity: 0.4654; }40% {opacity: 0.9128; }45% {opacity: 0.2449; }50% {opacity: 0.5485; }55% {opacity: 0.6438; }60% {opacity: 0.1180; }65% {opacity: 0.9085; }70% {opacity: 0.0266; }75% {opacity: 0.6795; }80% {opacity: 0.7812; }85% {opacity: 0.0117; }90% {opacity: 0.2239; }95% {opacity: 0.8897; }100% {opacity: 0.2260; }}@keyframes overlay-anim {0% {visibility: hidden; }10% {visibility: hidden; }11% {visibility: visible; }50% {visibility: hidden; }100% {visibility: hidden; }}
+#page-content .collapsible-block-folded a.collapsible-block-link {
+    animation: blink 0.8s ease-in-out infinite alternate;
+}
+@keyframes blink {
+    0% { color: transparent; }
+    50%, 100% { color: #b01; }
+}
+.email {float: center; border: solid 2px #000000; width: 88%; padding: 1px 15px; margin: 10px 10px 10px 10px; box-shadow: 0 1px 3px rgba(0,0,0,.5)}
+a.collapsible-block-link { font-weight: bold; }
+.tofrom {margin-left: 10px; margin-top: 5px; padding: 1px 15px; border-left: solid 3px #000098}
+[[/module]]
+[[/code]]
+[[=]]
+**Place wherever:**
+[[/=]]
+[[code]]
+@@ @@
+@@ @@
+@@ @@
+------
+[[<]]
+[[collapsible show="Access SCiPNET Email? One (1) new message!" hide="Re:SUBJECT"]]
+[[div class="email"]]
+[[div class="tofrom"]]
+**To:** Researcher Natalie Reems
+**From:** Researcher Tonya Skyler
+**Subject:** SUBJECT
+[[/div]]
+------
+OwO
+[[/div]]
+@@ @@
+[[=]]
+[[span class="blinkbar"]]NEW MESSAGE![[/span]]
+[[/=]]
+@@ @@
+[[div class="email"]]
+[[div class="tofrom"]]
+**To:** Researcher Tonya Skyler
+**From:** Researcher Natalie Reems
+**Subject:** Re:SUBJECT
+[[/div]]
+------
+uwu bitch
+[[/div]]
+[[/<]]
+[[/code]]
+[[/collapsible]]
+[!--
+[[collapsible show="+ K-Class Dossier Template" hide="- K-Class Dossier Template"]]
+**Seen In:**
+[[code]]
+> **Scenario Designation:** (Letter)K-Class ("(Title)")
+>
+> **Likelihood:** CHOOSE ONE: Impossible/Presumed Impossible/Near Impossible/Improbable/Probable/Near Certain/Presumed Certain/Certain
+>
+> **Threat Designation:** CHOOSE ALL THAT APPLY: Anomalous Propagation, Conceptual Alteration, Lifted Veil, Reality Restructuring
+>
+> **Effected Directives:** CHOOSE ALL THAT APPLY: Alpha-1 ("Secure"), Alpha-2 ("Contain"), Alpha-3 ("Protect"), Beta-1 ("Neutralization of Death"), Beta-4 ("Preservation of Contemporary Humanity")
+>
+> **Summary:**
+>
+> **Prevention:**
+[[/code]]
+[[/collapsible]]
 --]
-
-[[include info:start]]
-
-Image Source: https://www.flickr.com/photos/88893304@N00/855509214
-
-CC By SA 2.0.
-
-[[include info:end]]
-
-[[tabview]]
-
-[[tab Profile]]
-
-[[include component:image-block
-    name=crab|
-    caption=Image expunged for dysphoria reasons, here's a good boi instead. <3
-]]
-
-**Name:** [[*user Nagiros]]
-
-**PoI Designation:** PoI-Cr@b-091
-
-**Aliases:** Nagi, Crabbo, Queen of the Crustaceans, Tax Evasion
-
-**Age:** 18
-
-**Threat Type:** Creation of anomalous items and events, development of anomalies with various other Persons of Interest.
-
-**Profile Source:** **[https://www.deviantart.com/guweiz/art/Chill-745214892 Chill] — by [https://www.deviantart.com/guweiz GUWEIZ]**
-
-**Bases of Operation:**
-
-||||~ SCP Sandbox||[http://scp-sandbox-3.wikidot.com/nagiros Click for some bad ideas and bad execution.]||
-||||~ The Wanderers' Library||[http://wanderers-sandbox.wikidot.com/nagiros Reports pending!]||
-||||~ The Wayward Society||[http://wayward.wikidot.com/aberrationsandbox:nagiros-aberrations Spooky stuff in the woods.]||
-
-**Policy for Engagement:** PoI-Cr@b-091 is currently open to DMs on Wikidot. Feel free to ask for help developing a tale or anomaly, and I'll get back as soon as I can!
-
-**Profile:** Research into potential similarities between PoI-Cr@b-091's anomalous creations have uncovered the following preferences:
-
-# Humanoid anomalies, specifically teenagers.
-# Large-scale aggressors, because it's scarier if it's bigger.
-# Deific entities, because Safe-Class is for nerds.
-
-Regarding her thoughts towards her own creations, Poi-Cr@b-091 replied:
-
-> I'm not a great writer, but I can try to be, and if I try hard enough and long enough, I hope I can make something good.
-
 [[/tab]]
 
-[[tab Associated Anomalies]]
-
-[[collapsible show="               " hide="- Hide Author Control Panel"]]
-@@@@
-[[module ListPages created_by="Nagiros"]]
-[[div style="float:left; display: inline-block; width: 45%; padding: 0 2%; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin-right: 5px; margin-bottom: 5px"]]
-+++* %%title_linked%%
-Last edited by %%updated_by_linked%% on %%updated_at%%.
-Last comment by %%commented_by_linked%% on %%commented_at%%.
-[[/div]]
-[[/module]]
-~~~~
-
-------
-[[=]]
-[[module CountPages created_by="Nagiros"]]
-{{**##6C6CFF|%%total%%##** TOTAL PAGES}}
-[[/module]]
-[[module CountPages created_by="Nagiros" tags="-fragment"]]
-{{**##6C6CFF|%%total%%##** STANDARD PAGES}}
-[[/module]]
-[[module countPages created_by="nagiros" tags="scp"]]
-{{**##6C6CFF|%%total%%##** SCPS}}
-[[/module]]
-[[module countPages created_by="nagiros" tags="tale"]]
-{{**##6C6CFF|%%total%%##** TALES}}
-[[/module]]
-[[module countPages created_by="nagiros" tags="essay"]]
-{{**##6C6CFF|%%total%%##** ESSAY}}
-[[/module]]
-[[module countPages created_by="nagiros" tags="-scp -tale -essay"]]
-{{**##6C6CFF|%%total%%##** OTHERS}}
-[[/module]]
-[[/=]]
-
-------
-@@ @@
-[[/collapsible]]
-
-[[toc]]
-
-[[=]]
-{{ACCESSING SITE-17 ANOMALY ARCHIVE}}
-
-...
-
-...
-
-{{ACCESS GRANTED, DATA RETRIEVED}}
-
-...
-
-[[/=]]
-
-@@ @@
-@@ @@
-@@ @@
-
-+ The Narrative
-
-------
-
-[[=]]
-[[collapsible show="► Display Site-17 Narrative ◄" hide="▼ Hide Site-17 Narrative ▼"]]
-
-@@ @@
-
-[[module ListPages name="SCP-4051"]]
-**%%title_linked%% - //Your Friendly Neighborhood Keter// ##grey||## [[[http://scpexplained.wikidot.com/scp-4051 | Explained]]] ##grey||## [http://scp-wiki-cn.wikidot.com/scp-4051 Chinese] ##grey||## +%%rating%%**
-[[/module]]
-
-> Damn kid. Broke the straps on the chair. I'm tempted to get it tranquilized during the procedure, but we need it awake.
-
-[[module ListPages name="the-beast-beneath-the-library"]]
-**%%title_linked%% ##grey||## [[[http://scpexplained.wikidot.com/the-beast-beneath-the-library | Explained]]] ##grey||## +%%rating%%**
-[[/module]]
-
-> What follows is the unofficial report on the incident involving SCP-4051, the anomalous object placed under your care by Ethics Committee liaison Jeremiah Cimmerian.
-
-[[module ListPages name="SCP-4260"]]
-**%%title_linked%% - //The Subdirective// ##grey||## [[[https://www.reddit.com/r/SCPDeclassified/comments/c4quyc/scp4260_the_subdirective/ | Declassified]]] ##grey||## [[[http://scpexplained.wikidot.com/scp-4260 | Explained]]] ##grey||## +%%rating%%**
-[[/module]]
-
-> Procedure 8917 is considered complete when the following criteria are met: SCP-4260 has been successfully terminated, the Strayer Density Matrix is fully operational, all affected civilians have been located and terminated, all evidence of Procedure 8917 has been removed, and SCP-4260 has been resurrected.
-
-[[module ListPages name="apas"]]
-**%%title_linked%% ##grey||## [[[http://scpexplained.wikidot.com/apas | Explained]]] ##grey||## +%%rating%%**
-[[/module]]
-
-> When the earth first felt the dread grip of death, you knew of me. When your species first crawled from the mud and had the right sense to weep, you heard my voice. When a towering monolith was constructed to contain the encroaching army which rides over endless fields of ash and waste, you knew my name.
-
-[[/collapsible]]
-[[/=]]
-
-------
-
-@@ @@
-
-+ The Spares
-
-------
-
-[[=]]
-[[collapsible show="► Display Site-17 Spares ◄" hide="▼ Hide Site-17 Spares ▼"]]
-
-@@ @@
-
-[[module ListPages name="he-who-screws-with-reality"]]
-**%%title_linked%% ##grey||## [[[http://scpexplained.wikidot.com/he-who-screws-with-reality | Explained]]] ##grey||## +%%rating%%**
-[[/module]]
-
-> Reality isn't a wave, as you suggested. It's an ocean, boiling and pitching under a never-abating hurricane. Some people get to… how did you put it? "Ride the wave near the beach"? //Child's play.// **##red|A real reality bender makes nature his bitch from the eye of the storm.##**"
-
-[[module ListPages name="SCP-4415"]]
-**%%title_linked%% - //Humanoid Containment Chamber #λ045// ##grey||## [[[http://scpexplained.wikidot.com/scp-4415 | Explained]]] ##grey||## +%%rating%%**
-[[/module]]
-
-> Weathers, if you're reading this, just know I ended up as a good guy.
-> 
-> Bye, I guess.
-
-[[module ListPages name="systems-patch"]]
-**%%title_linked%% ##grey||## +%%rating%%**
-[[/module]]
-
-> A staffer who has worked years for the Foundation, and potentially married someone within it, is far less likely to openly object to the horrors the Foundation has committed and risk expulsion, or even termination.
-> 
-> It's just like a damn cult.
-
-[[module ListPages name="SCP-4175"]]
-**%%title_linked%% - //Friends Made, and the Void//** (Written for **##3195df|Pride Month 2019##**. 🏳️‍🌈) **##grey||## [[[http://scpexplained.wikidot.com/scp-4175 | Explained]]] ##grey||## +%%rating%%**
-[[/module]]
-
-> Is that me? Is my real body just decomposing somewhere? Did they ever find my body?
-
-[[module ListPages name="a-hymn-for-pandora"]]
-**%%title_linked%% ##grey||## [[[http://scpexplained.wikidot.com/a-hymn-for-pandora | Explained]]] ##grey||## +%%rating%%**
-[[/module]]
-
-> "Look around you, mortal men, and see the land of gods, and weep. We were once the strange and the disquieting, the horrific and the dead. We were anomalies, but anomalies no more."
-
-[[module ListPages name="Slipping Away"]]
-**%%title_linked%% ##grey||## [https://www.youtube.com/watch?v=m27ZTza7DUc ♪] ##grey||## +%%rating%%**
-[[/module]]
-
-> As gunfire engulfed the town, her fingerprint remained on the broken glass of that old window.
-
-[[/collapsible]]
-[[/=]]
-
-------
-
-@@ @@
-
-+ Others
-
-------
-
-[[=]]
-[[collapsible show="► Display Others ◄" hide="▼ Hide Others ▼"]]
-
-[[module ListPages name="esoteric-classes-complete-list"]]
-**%%title_linked%% (Essay) ##grey||## +%%rating%%**
-[[/module]]
-
-> These Esoteric Classes are exceedingly rare, and many are not viable for standard documentation due to their unique and specialized nature. The following lists serve as a collection of these highly esoteric classes.
-
-[[module ListPages name="operation-galahad"]]
-**[[[http://www.scp-wiki.net/operation-galahad | Greenleaf Woods, SCP-PC-012, and PC-S08-L5]]] (Collab) ##grey||## [[[http://scpexplained.wikidot.com/operation-galahad | Explained]]]**
-[[/module]]
-
-> Distinguished from SCP-PC-004 because of its deviation from established immunity to injury and death. Elderly, caucasian male with deteriorated anatomy indicative of infirmities expected for its perceived age. Ostensibly identical to SCP-PC-004, barring these deviations.
-
-[[/collapsible]]
-[[/=]]
-
-------
-
-@@ @@
-
-+ Fanwork
-
-------
-
-[[=]]
-[[collapsible show="► Display Fanwork ◄" hide="▼ Hide Fanwork ▼"]]
-[[<]]
-
-++* SCP-4051
-
-**Useful**, by [[*user Crashington]]:
-
-[[image rainer_crashington]]
-
-@@ @@
-
-++* SCP-4260
-
-**The Virgin Death**, by [[*user MrGoomba]]
-
-[[image death_goomba]]
-
-[[/<]]
-[[/collapsible]]
-[[/=]]
-
-------
-
-@@ @@
-
-Oh, geez, it's pretty sparse here. Sorry about that! I guess that's motivation to fill up my collection a bit more.
-
-@@ @@
-@@ @@
-@@ @@
-@@ @@
-@@ @@
-@@ @@
-...
-@@ @@
-@@ @@
-@@ @@
-@@ @@
-@@ @@
-@@ @@
-
-[[collapsible show="+ Oh? What's this?" hide="- The Wayward Society"]]
-
-+* Aberrations
-
-------
-
-[http://wayward.wikidot.com/aberration:the-walking-men The Walking Men] - Giants rise from deep forests and walk towards city centers.
-[http://wayward.wikidot.com/aberration:orichalton-mt Orichalton, MT] - A small town and its people.
-
-+* The Bahane
-
-------
-
-[http://wayward.wikidot.com/bahane:concerning-the-grave-diggers Concerning the Grave Diggers] - A new branch in Wayward lore.
-
-+* Others
-
-------
-
-[http://wayward.wikidot.com/about:writing-guide A Fringe Template] - I made a template for fringe groups, in the "Our Template" tab at the bottom.
-[http://www.wayward-wiki.net/fringe:the-phoenix-initiative The Phoenix Initiative] - A Fringe cult that's been taken over by an eldritch god.
-[http://wayward.wikidot.com/tag-guide Tag Guide] - A small catalog of tags for pages to be given.
-[http://wayward.wikidot.com/outfit-guide Outfit Guide] - A small catalog of established outfits.
-
-[[/collapsible]]
-@@ @@
-
-[[/tab]]
-
-[[tab Achievements]]
-
-++* Showcase [[size 75%]](Yay, we did it!)[[/size]]
-
-------
-
-[[=]]
-[[collapsible show="► Display Showcase ◄" hide="▼ Hide Showcase ▼"]]
-[[<]]
-@@ @@
-* Have three works in the first page of the [http://www.scp-wiki.net/top-rated-pages-this-month Top Rated New Pages] at once.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✔ Achieved January 1, 2019
-
-[[/div]]
-
-* Have an SCP reach +50 votes.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✔ Achieved January 21, 2019
-
-[[/div]]
-
-* Have an SCP reach +75 votes.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✔ Achieved March 12, 2019
-
-[[/div]]
-
-* Have a tale reach +50 votes.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✔ Achieved March 14, 2019
-
-[[/div]]
-
-* Have an SCP reach +100 votes.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✔ Achieved April 20, 2019
-
-[[/div]]
-
-* Write five works.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✔ Achieved May 5, 2019
-
-[[/div]]
-
-* Have a tale reach +75 votes.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✔ Achieved June 17, 2019
-
-[[/div]]
-
-* Have an article featured one time.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✔ Achieved August 1, 2019
-
-[[/div]]
-
-* Have an SCP reach +150 votes.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✔ Achieved August 29, 2019
-
-[[/div]]
-
-* Have a tale reach +100 votes.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✔ Achieved November 7, 2019
-
-[[/div]]
-
-* Write ten works.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✔ Achieved November 11, 2019
-
-[[/div]]
-
-[[/<]]
-[[/collapsible]]
-[[/=]]
-
-------
-
-@@ @@
-
-++* Incomplete [[size 75%]](Not yet, but some day!)[[/size]]
-
-------
-
-[[=]]
-[[collapsible show="► Display Incomplete ◄" hide="▼ Hide Incomplete ▼"]]
-[[<]]
-@@ @@
-* Have three SCPs in the first page of the [http://www.scp-wiki.net/top-rated-pages-this-month Top Rated New Pages] at once.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Have three tales in the first page of the [http://www.scp-wiki.net/top-rated-pages-this-month Top Rated New Pages] at once.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Have four works on the first page of the [http://www.scp-wiki.net/top-rated-pages-this-month Top Rated New Pages] at once.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Have four SCPs on the first page of the [http://www.scp-wiki.net/top-rated-pages-this-month Top Rated New Pages] at once.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Have four tales in the first page of the [http://www.scp-wiki.net/top-rated-pages-this-month Top Rated New Pages] at once.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Have five works on the first page of the [http://www.scp-wiki.net/top-rated-pages-this-month Top Rated New Pages] at once.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Have five SCPs on the first page of the [http://www.scp-wiki.net/top-rated-pages-this-month Top Rated New Pages] at once.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Have five tales in the first page of the [http://www.scp-wiki.net/top-rated-pages-this-month Top Rated New Pages] at once.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Have a tale reach +150 votes.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Have an SCP reach +200 votes.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Have a tale reach +200 votes.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Have an article featured two times.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Have an article featured three times.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Write five SCPs.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Write five tales.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Write ten SCPs.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Write ten tales.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Write twenty works.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Write twenty SCPs.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Write twenty tales.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Write fifty works.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Write fifty SCPs.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Write fifty tales.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-[[/<]]
-[[/collapsible]]
-[[/=]]
-
-------
-
-[[/tab]]
-
-[[tab Recommended SCPs and Tales]]
-
-Here you'll find some articles and tales that I've personally really enjoyed. Keep in mind, this isn't a list designed to introduce new community members! Shoutout to [[*user Shaggydredlocks]] for putting together the awesome [[[User-Curated Lists]]], which functions far better in that regard.
-
-That being said, if you have an article that you think deserves to be on this list, PM me! I'd love to read it.
-
-**Other Important Note:** If you see an item on this list that is attributed to the wrong author because the Discord bot I used screwed up, please contact me about it and I'll correct it as soon as possible.
-
-------
-
-+* SCPs
-
-------
-
-[[=]]
-[[collapsible show="► Display Recommended SCPs ◄" hide="▼ Hide Recommended SCPs ▼"]]
-[[<]]
-@@ @@
-
-► [[[daveyoufool-proposal | Daveyoufool's Proposal]]] -"KEEP CALM AND APOLLY ON", by [[*user daveyoufool]]
-► [[[lily-s-proposal | Lily's Proposal]]] - The World's Gone Beautiful, by [[*user LilyFlower]]
-► [[[ouroboros | Literally just all of djkaktus's SCP-001 proposals, like seriously, please read them.]]], by [[*user djkaktus]]
-► [[[sandrewswann-s-proposal | S. Andrew Swann's Proposal]]] - The Database, by [[*user sandrewswann]]
-► [[[tuftos-proposal | Tufto's Proposal]]] - The Scarlet King, by [[*user Tufto]]
-► [[[SCP-O5-J]]] - Sorry, I do not understand the command., by [[*user Quaristice]]
-► [[[SCP-093]]] - Red Sea Object, by [[*user NekoChris]], //Unknown Author//
-► [[[SCP-128]]] - Kinetic Energy Entity, by [[*user WrongJohnSilver]]
-► [[[SCP-178]]] - "3-D" Specs, by [[*user Dr Wartheim]]
-► [[[SCP-184]]] - The Architect, by [[*user Dr Gears]]
-► [[[SCP-455]]] - Cargo Ship, by [[*user Dr Gears]]
-► [[[SCP-507]]] - Reluctant Dimension Hopper, by [[*user PennywiseTheClown]]
-► [[[SCP-557]]] - Ancient Containment Site, by [[*user Leicontis]]
-► [/scp-666-and-a-half-j SCP-666½-J] - The Roaring Flames of Hell, by [[*user Accelerando]]
-► [[[SCP-711]]] - Paradoxical Insurance Policy, by [[*user Photosynthetic]]
-► [[[SCP-804]]] - World Without Man, by [[*user Sorts]]
-► [[[SCP-999-J]]] - Creepy Speedo Man, by [[*user Salman Corbette]]
-► [[[SCP-1104]]][[footnote]] Crabbo! <3 [[/footnote]] - Nose Crab, by [[*user Rhoark]]
-► [[[SCP-1152]]] - A Common Raccoon, by [[*user Vorcha]]
-► [[[SCP-1461]]] - House of the Worm, by [[*user SnakeoilSage]]
-► [[[SCP-1463]]] - Comprehension/{{Invasion}}/##red|{{Evasion}}##, by [[*user NatVoltaic]]
-► [[[SCP-1504]]] - Joe Schmo, by [[*user MayD]]
-► [[[SCP-1548]]] - The Star, the Hateful, by [[*user NatVoltaic]], [[*user Varaxous]]
-► [[[SCP-1657]]] - **MAN EGG**, by [[*user azzleflux]]
-► [[[SCP-1730]]] - What Happened to Site-13?, by [[*user djkaktus]]
-► [[[MZL-1730]]] - What Happened to Site-19?, by [[*user djkaktus]]
-► [[[SCP-1746]]] - Anomalous Weather Pattern, by [[*user spikebrennan]]
-► [[[SCP-1762]]] - Where The Dragons Went, by [[*user OZ Ouroboros]]
-► [[[SCP-1831]]] - I Feel Homesick For A Place I'm Not Even Sure Exists, by [[*user Westrin]]
-► [[[SCP-1861]]] - The Crew of the HMS Wintersheimer, by [[*user PeppersGhost]]
-► [[[SCP-1936]]] - Daleport, by [[*user FlameShirt]]
-► [[[SCP-1985]]] - Recovered K-Class Scenario Research Device, by [[*user thedeadlymoose]]
-► [[[SCP-2006]]] - Too Spooky, by [[*user weizhong]]
-► [[[SCP-2072]]] - Prime Ministerial Pet Cemetery, by [[*user Kate McTiriss]]
-► [[[SCP-2207]]] - Dimensional Razor, by [[*user dankaar]]
-► [[[SCP-2241]]] - Cameron The Crusader, by [[*user Tuomey Tombstone]]
-► [[[SCP-2316]]] - Field Trip, by [[*user djkaktus]]
-► [[[SCP-2399]]] - A Malfunctioning Destroyer, by [[*user djkaktus]]
-► [[[SCP-2578]]] - "This Machine Kills Fascists", BY [[*user daveyoufool]]
-► [[[SCP-2621]]] - Knocking on Heaven's Door, by [[*user Doctor Cimmerian]]
-► [[[SCP-2632]]] - No Fury, by [[*user Doctor Cimmerian]]
-► [[[SCP-2662]]] - cthulhu f' UCK OFF!, by [[*user SoullessSingularity]]
-► [[[SCP-2700]]] - Teleforce, by [[*user Anborough]]
-► [[[SCP-2718]]] - What Happens After, by [[*user Michael Atreus]]
-► [[[SCP-2721]]] - Eli and Lyris, by [[*user DolphinSlugchugger]] and [[*user kinchtheknifeblade]]
-► [[[SCP-2786]]] - The Archetype, by [[*user Billith]]
-► [[[SCP-2912]]] - Clowny Clown Clown, by [[*user Metaphysician]]
-► [[[SCP-2922]]] - Notes From the Under, by [[*user daveyoufool]]
-► [[[SCP-2975]]] - Another Sun, by [[*user thedeadlymoose]]
-► [[[SCP-3000]]] - Ananteshesha, by [[*user A Random Day]], [[*user djkaktus]], [[*user Joreth]]
-► [[[SCP-3001]]] - Red Reality, by [[*user OZ Ouroboros]]
-► [[[SCP-3006]]] - Twice The Number One, by [[*user Roget]]
-► [[[SCP-3031]]] - Future Gift, by [[*user Weryllium]]
-► [[[SCP-3034]]] - The Counting Station, by [[*user The Great Hippo]]
-► [[[SCP-3041]]] - The Red Knife, by [[*user The Great Hippo]]
-► [[[SCP-3309]]] - Where We Go When We Fade, Fade Away, by [[*user PhamtomGuy]], [[*user FloppyPhoenix]]
-► [[[SCP-3183 | dissociation]]] - , by [[*user DolphinSlugchugger]]
-► [[[SCP-3326]]] - On May 3rd 2005, Dr. Tobias Scranton died in a car accident in 1964, by [[*user Greentext]]
-► [[[SCP-3393]]] - For Your Eyes Only, by [[*user Captain Kirby]]
-► [[[SCP-3480]]] - Olympus Mons, by [[*user Modern_Erasmus]]
-► [[[SCP-3493]]] - The Great SCP Foundation Collaboration, by [[*user CyrusFiredawn]]
-► [[[SCP-3546]]] - Doggone it, I Fold!, by [[*user Fal IE]]
-► [[[SCP-3557]]] - CK or OK?, by [[*user stormbreath]]
-► [[[SCP-3604]]] - Craydaddy, by [[*user Alces_alces]]
-► [[[SCP-3625]]] - The Great American Meme Machine, by [[*user djkaktus]]
-► [[[SCP-3688]]] - You Can Dance If You Want To, by [[*user Mortos]]
-► [[[SCP-3739]]] - ##407fbf|**Mind-Milk™ by Moosphere, Inc.**##, by [[*user FloppyPhoenix]], [[*user KindlyTurtleClem]]
-► [[[SCP-3780]]] - Who Shot J.F.K.?, by [[*user A Random Day]]
-► [[[SCP-3790]]] - Department of Abnormalities, by [[*user djkaktus]]
-► [[[SCP-3794]]] - Salsa Hammer, by [[*user Weryllium]]
-► [[[SCP-3812]]] - A Voice Behind Me, by [[*user djkaktus]]
-► [[[SCP-3908]]] - [[[SCP-3908]]], by [[*user JanitorCakeworth]]
-► [[[SCP-3922]]] - STOPRIGHTTHERECRIMINALSCUM!!!, by [[*user daveyoufool]]
-► [[[SCP-3935]]] - This Thing a Quiet Madness Made, by [[*user djkaktus]]
-► [[[SCP-3939]]] - [NUMBER RESERVED; AWAITING RESEARCHER], by [[*user Croquembouche]]
-► [[[scp-3942 | UNDEFINED]]] - Containment Chamber #3942, by [[*user Jack Ike]]
-► [[[SCP-3999]]] - I Am At The Center of Everything That Happens To Me, by [[*user LordStonefish]]
-► [[[SCP-4000-J]]] - 2boo, by [[*user djkaktus]]
-► [[[SCP-4005]]] - The Holy and Heavenly City of Fabled China, by [[*user Tufto]]
-► [[[SCP-4010]]] - Attempt to look at what we accomplished, by [[*user Utylike]]
-► [[[SCP-4205]]] - [[span style="display: inline-block; background: #1e1e1e; color: #ccc; padding: 0 2px; border-radius: 3px;"]]**{{In The Eyes of the Beholder}}** 🖳 [[/span]], by [[*user Woedenaz]]
-► [[[SCP-4290]]] - The Child Hungers, by [[*user NatVoltaic]]
-► [[[SCP-4352]]] - Storytime, by [[*user Henzoid]] and [[*user Tanhony]]
-► [[[SCP-4410]]] - The Ongoing Development of an Art Form, by [[*user Zzuxon]]
-► [[[SCP-4444]]] - Bush v. Gore, by [[*user djkaktus]]
-► [[[SCP-4455]]] - In Short..., by [[*user DarkStuff]]
-► [[[SCP-4465]]] - No Man is an Island, by [[*user DarkStuff]]
-► [[[SCP-4475]]] - So Long, and Thanks for All the Milk, by [[*user FloppyPhoenix]], [[*user KindlyTurtleClem]]
-► [[[SCP-4489]]] - Apologies, by [[*user djkaktus]]
-► [[[SCP-4493]]] - Keep Pride Out of Corps, by [[*user kinchtheknifeblade]]
-► [[[SCP-4517]]] - Not Very 𝒩, by [[*user MaliceAforethought]]
-► [[[SCP-4640]]] - Let the darn kid experience real life!, by [[*user Dramps]]
-► [[[SCP-4734-EX]]] - It Was Inside You All Along, by [[*user OthellotheCat]]
-► [[[SCP-4780]]] - Shrunk, by [[*user A Random Day]]
-► [[[SCP-4826]]] - No One But Me Gets To Say When I Die, by [[*user RockTeethMothEyes]]
-► [[[SCP-5040-J]]] - Stripèd Gangs, by [[*user DrBerggren]]
-
-[[/<]]
-[[/collapsible]]
-[[/=]]
-
-------
-
-+* Tales
-
-------
-
-[[=]]
-[[collapsible show="► Display Recommended Tales ◄" hide="▼ Hide Recommended Tales ▼"]]
-[[<]]
-@@ @@
-
-► [/10-30-a-m 10:30 A.M.], by [[*user Djoric]]
-► [[[Alexandria Burning]]], by [[*user GentleGifts]]
-► [[[i-thought-you-would-leave-even-the-reaper-for-me | all i ever wanted; all i ever deserved]]], by [[*user SoullessSingularity]]
-► [[[A Suicide Note]]], by [[*user Ihp]]
-► [[[Avatara]]], by [[*user A Random Day]]
-► [[[black white black white black white black white black white gray]]], by [[*user tunedtoadeadchannel]]
-► [/code-name-the-truth CODE NAME: ████ ███ - The Truth], by [[*user Jack Ike]]
-► [[[Containment Breach The Musical]]], by [[*user PeppersGhost]]
-► [[[Document Recovered From The Marianas Trench]]], by [[*user Dr Gears]]
-► [[[Ethics Committee Orientation]]], by [[*user Voct]]
-► [[[Experiment Log 455]]], by [[*user NekoChris]]
-► [[[Exploration Log Record 455 3]]], by [[*user Dr Gears]]
-► [[[he-sees-you | He sees you when you're sleeping. He knows when you're awake.]]], by [[*user Doctor Cimmerian]]
-► [[[illegitimum-non-carborundum-domine-savium-fac | Illegitimum non carborundum; Domine salvum fac]]], by [[*user Ihp]]
-► [[[Impossible-To-Destroy Reptile]]], by [[*user Captain Kirby]]
-► [[[In The End, We All Went Out in a Blaze]]], by [[*user Swaghetti]]
-► [[[Interviews with Prospective Groups of Interest]]], by [[*user MrWrong]]
-► [[[it-would-make-sense-if-that-were-true | It Would Make Sense If That Were True, But Actually It Doesn't Make Sense At All, So Good Luck]]], by [[*user Sophia Light]]
-► [[[I Wanna Be The Very Best | SCPokemon]]], by [[*user Dexanote]]
-► [[[another-goddamn-magic-system | Magic Orientation]]], by [[*user thedeadlymoose]]
-► [[[Piercing The Veil | Masquerade's End]]], by [[*user Uncle Nicolini]]
-► [[[Misery Makes Company]]], by [[*user Tiefling]]
-► [[[MTF Sigma-5 "Pumpkin Punchers"]]], by [[*user Rounderhouse]]
-► [[[sigma-psych-eval | MTF Sigma-66 Post-Mission Psychological Evaluation]]], by [[*user Silberescher]]
-► [[[Operation AZURE PEREGRINE]]], by [[*user sirpudding]]
-► [[[Operation Galahad]]], by [[*user daveyoufool]]
-► [[[Personal Log Of Gordon Richards]]], by [[*user Dr Gears]]
-► [[[Playing God]]], by [[*user Rikks]]
-► [[[Quiet Days]]], by [[*user Dmatix]]
-► [[[RAISA-6147 | RAISA-6147 (PENDING ASSIGNMENT)]]], by [[*user Uncle Nicolini]]
-► [[[Rainbow Crapitalism | More Like Rainbow Crapitalism]]], by [[*user ch00bakka]]
-► [[[Remembrance]]], by [[*user Roget]]
-► [[[you-want-happy-endings | Re: You Want Happy Endings?]]], by [[*user daveyoufool]]
-► [[[SCP-2]]], by [[*user FloppyPhoenix]]
-► [[[SCP-S]]], by [[*user CryogenChaos]]
-► [[[Societal Census Programme | Excerpts From The Societal Census Programme ΩK-Class Report]]], by [[*user Captain Kirby]]
-► [[[someareborntoendlessnight | Some Are Born To Endless Night]]], by [[*user Tufto
-]]
-► [[[we-die-in-the-dark | So You Can Live In The Light]]], by [[*user Doctor Cimmerian]]
-► [[[The Conspiracy Of Sigma 3]]], by [[*user thedeadlymoose]]
-► [[[The Fellowship]]], by [[*user LurkD]]
-► [[[The Minions© day at the scp]]], by [[*user Randomini]]
-► [[[The O5 Orientation]]], by [[*user Anborough]]
-► [[[The Stars Do Not Wait For You]]], by [[*user Dmatix]]
-► [[[Time After Time]]], by [[*user MaliceAforethought]]
-► [[[To Never Again See The Light Of Day]]], by [[*user djkaktus]]
-► [[[clef101 | Transcript of Dr. Clef's seminar, "Reality Benders and You: How to Survive When Existence Doesn't."]]], by [[*user DrClef]]
-► [[[UIU Orientation]]], by [[*user Kingreaper]]
-► [[[Until Death]]], by [[*user psul]]
-► [[[What The Spybird Saw]]], by [[*user Vezaz]]
-► [[[We Need To Talk About Fifty-Five]]], by [[*user qntm]]
-► [[[Why Change?]]], by [[*user Joreth]]
-► [[[You Can Leave Your Friends Behind]]], by [[*user Mortos]]
-► [[[Your Very First SCP!]]], by [[*user The Great Hippo]]
-
-[[/<]]
-[[/collapsible]]
-[[/=]]
-
-------
-
-+* Others
-
-------
-
-[[=]]
-[[collapsible show="► Display Recommended Pages ◄" hide="▼ Hide Recommended Pages ▼"]]
-[[<]]
-@@ @@
-
-► [https://www.youtube.com/user/TheVolgun Volgun's Youtube Readings] - Awesome readings with an awesome voice. Join the Discord!
-► [https://www.youtube.com/user/SCPReadings SCPReadings' Youtube Channel] - Hey, it's that person who got me into the SCP community! Also an awesome reader.
-► [https://scp.cafe SCP Café] - A podcast recapping highlights of the Foundation week by week, also with [https://www.youtube.com/channel/UCO48AOLQUI1DWBL6C4lBHiw a YouTube channel].
-► [https://www.youtube.com/watch?v=cM6GkERwEM0&list=PLEXIiC3q94eO992TlwBD98Zast0gret1r Confinement] - An animated YouTube series about an immortal D-Class. You'll love every minute.
-► [https://www.youtube.com/channel/UC8AmK8BHcHwu6bV_2Vdt0yg Dr. Cimmerian's Youtube] - Readings and helpful advice from [[*user Doctor Cimmerian]]
-► [https://www.youtube.com/user/ManggMangg The Exploring Series] - In-depth analysis of SCPs, tales, and GoIs.
-► [https://www.youtube.com/watch?v=Z4ShfODnvns SCP: First Contact] - A half-hour movie about an MTF finding spooky stuff in the Yukon.
-► [https://www.youtube.com/channel/UC-pIl52jIuoZ6_yNwRiPaAw ForlornFoudry] - Short videos based on popular SCPs. It really needs more love.
-► [https://www.youtube.com/user/EvanRoyalty EvanRoyalty] - Short films based on original SCPs. Really damn cool.
-► [http://scpper.com SCPPer.com] - a great place to find stats on users and pages.
-► [/zhange-artwork Zhange's Artwork Page] and [https://www.deviantart.com/zhange000 Zhange000's Deviantart] - Really, really good art, like oh my god.
-► [/sunny-s-black-and-white-art SunnyClockWork's Artwork Hub] - All kinds of awesome.
-► [/crash-s-flashy-art-dash Crash's flashy art-dash] - Wow fanart.
-
-[[/<]]
-[[/collapsible]]
-[[/=]]
-
-------
-
-[[/tab]]
-
-[[tab Everything the Guides Don't Tell You]]
-
-Just a small log I keep of all the stuff I couldn't figure out for a while. Enjoy!
-
-@@ @@
-
-[[div class="precept"]]
-[[collapsible show="▷ First Precept" hide="▽ The rating modules are outdated. The future is now."]]
-
-------
-
-Use this code instead!
-
-[[div class="code"]]
-@@[[include info:start]]@@
-[[/div]]
-
-[[div class="code"]]
-@@[[include info:end]]@@
-[[/div]]
-[[/collapsible]]
-[[/div]]
-
-[[div class="precept"]]
-[[collapsible show="▷ Second Precept" hide="▽ How to do that cool thing with linking users."]]
-
-------
-
-Like this, you know? [[*user Nagiros]]
-
-[[code]]
-
-[[*user username]]
-
-[[/code]]
-
-[[/collapsible]]
-[[/div]]
-
-[[div class="precept"]]
-[[collapsible show="▷ Third Precept" hide="▽ How to get extra blank lines."]]
-
-------
-
-@@ @@
-@@ @@
-@@ @@
-@@ @@
-@@ @@
-@@ @@
-@@ @@
-@@ @@
-@@ @@
-@@ @@
-@@ @@
-@@ @@
-
-Wikidot usually doesn't display any indentations beyond the first two, so use the code below instead.
-
-[[code]]
-
-@@ @@
-
-[[/code]]
-
-[[/collapsible]]
-[[/div]]
-
-[[div class="precept"]]
-[[collapsible show="▷ Fourth Precept" hide="▽ You can make fake links."]]
-
-------
-
-[# Go ahead. Try and click it.]
-
-[[code]]
-
-[# link text]
-
-[[/code]]
-
-[[/collapsible]]
-[[/div]]
-
-[[div class="precept"]]
-[[collapsible show="▷ Fifth Precept" hide="▽ You can add invisible comments like a real programmer."]]
-
-------
-
-[[code]]
-
-[!-- A good crab is a happy crab!
---]
-
-[[/code]]
-
-[[/collapsible]]
-[[/div]]
-
-[[div class="precept"]]
-[[collapsible show="▷ Sixth Precept" hide="▽ You can make changes to the scrollbar."]]
-
-------
-
-Just use the below syntax. If you're changing the color, it may look better if you use a color at half transparency, //i.e.// rgb(R, G, B, .5).
-
-[[code]]
-::-webkit-scrollbar-thumb
-{
-    [arguments];
-}
-[[/code]]
-
-[[/collapsible]]
-[[/div]]
-
-[[div class="precept"]]
-[[collapsible show="▷ Seventh Precept" hide="▽ You can make custom quoteblocks!"]]
-
-------
-
-Okay, this one is genuinely really cool to me. So, you //could// adjust every quoteblock on a page using CSS, or you can adjust just a few or only one while leaving the rest untouched. Try it with the code below!
-
-[[code]]
-[[module css]]
-.nagiros blockquote{
-[argument];
-}
-[[/module]]
-[[/code]]
-
-And then where you want the quoteblock:
-
-[[code]]
-[[div class="nagiros"]]
-> This will reflect your special arguments.
-[[/div]]
-[[/code]]
-
-[[/collapsible]]
-[[/div]]
-
-[[/tab]]
 [[/tabview]]
