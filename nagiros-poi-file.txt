@@ -26,6 +26,14 @@ Woah there, dude! This page is currently undergoing maintenance and may look eve
 .precept .collapsible-block-content {
   text-align: left;
 }
+.precept .collapsible-block-content hr{
+max-width: 105px;
+background-color: #e6e6e6;
+border: none;
+height: 2px;
+text-align:center; 
+margin: 0 auto;
+}
 [[/module]]
 
 [!--
@@ -85,12 +93,6 @@ div#side-bar div.side-block {
 }
 .scp-image-block .scp-image-caption {
   border-top: solid 1px rgb(108, 108, 255, .5);
-}
-
-/* Scrollbar */  
-::-webkit-scrollbar-thumb
-{
-    background: rgba(247,168,184, .5);
 }
 
 /* RATINGS */
@@ -1126,8 +1128,6 @@ Use this code instead!
 [[/collapsible]]
 [[/div]]
 
-------
-
 [[div class="precept"]]
 [[collapsible show="▷ Second Precept" hide="▽ How to do that cool thing with linking users."]]
 
@@ -1145,8 +1145,6 @@ Like this, you know? [[*user Nagiros]]
 
 [[/collapsible]]
 [[/div]]
-
-------
 
 [[div class="precept"]]
 [[collapsible show="▷ Third Precept" hide="▽ How to get extra blank lines."]]
@@ -1177,8 +1175,6 @@ Wikidot usually doesn't display any indentations beyond the first two, so use th
 [[/collapsible]]
 [[/div]]
 
-------
-
 [[div class="precept"]]
 [[collapsible show="▷ Fourth Precept" hide="▽ You can make fake links."]]
 
@@ -1197,8 +1193,6 @@ Wikidot usually doesn't display any indentations beyond the first two, so use th
 [[/collapsible]]
 [[/div]]
 
-------
-
 [[div class="precept"]]
 [[collapsible show="▷ Fifth Precept" hide="▽ You can add invisible comments like a real programmer."]]
 
@@ -1215,8 +1209,6 @@ Wikidot usually doesn't display any indentations beyond the first two, so use th
 
 [[/collapsible]]
 [[/div]]
-
-------
 
 [[div class="precept"]]
 [[collapsible show="▷ Sixth Precept" hide="▽ You can make changes to the scrollbar."]]
@@ -1236,8 +1228,6 @@ Just use the below syntax. If you're changing the color, it may look better if y
 
 [[/collapsible]]
 [[/div]]
-
-------
 
 [[div class="precept"]]
 [[collapsible show="▷ Seventh Precept" hide="▽ You can make custom quoteblocks!"]]
@@ -1268,5 +1258,4 @@ And then where you want the quoteblock:
 [[/div]]
 
 [[/tab]]
-
 [[/tabview]]
