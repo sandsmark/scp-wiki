@@ -2,6 +2,12 @@ title:A Comprehensive List of Esoteric Classes
 [[module CSS]]
 .indomitable {background-color: white; color: #6f4c7a; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%}
 .list {float: center; border: gray 1px; padding: 7px; margin: 3px; background-color: #fafafa; box-shadow: 0 2px 4px rgba(75, 75, 75, .5); border-radius: 10px}
+.list .collapsible-block {  
+  text-align: center;
+}
+.list .collapsible-block-content {
+  text-align: left;
+}
 .lie{
     font-family: 'Courier', monospace;
     font-weight: bold;
@@ -42,9 +48,7 @@ Several of the following classes are self-explanatory in nature; a definition of
 The following object classes were created by the Foundation to describe the containment of certain abnormal anomalies, or the anomalies themselves.
 @@ @@
 [[div class="list"]]
-[[=]]
 [[collapsible show="► Established Esoteric Classes ◄" hide="▼ Established Esoteric Classes ▼"]]
-[[<]]
 ||~ Class ||~ Definition ||~ Appearances ||
 ||Anomalous[[footnote]] Translated as "Abnormal" in some foreign branches. [[/footnote]]||Item is so simplistic that it is not assigned an official database file.|| [[[proposition-du-dr-Gray | Dr. Gray's Proposal]]], [[[SCP-472]]]||
 ||Apollyon||Item is uncontainable and actively causing the end of the world.||[[[Jim North's Proposal]]], [[[jack Ike s Proposal I | Meta Ike Proposal]]], [[[SCP-3999]]], [[[SCP-4005]]], [[[SCP-4023]]], [[[SCP-4057]]], [[[SCP-4485]]], [[[SCP-4547]]], [[[SCP-4780]]], [[[shaggydredlocks-proposal | S. D. Locke's Proposal]]]||
@@ -78,9 +82,7 @@ The following object classes were created by the Foundation to describe the cont
 ||Unnecessary||  ||[[[Lily's Proposal]]], [[[SCP-4023]]]||
 ||Yesod|| Item has been integrated into the Foundation's command structure. ||[[[spikebrennan's proposal]]], [[[SCP-4436]]]||
 ||Zeno||Item has medium containment difficulty and is low threat.||[[[SCP-2005]]]||
-[[/<]]
 [[/collapsible]]
-[[/=]]
 [[/div]]
 @@ @@
 ++ Subclasses
@@ -89,9 +91,7 @@ Some archivists have determined that the anomalies assigned to them do not entir
 
 @@ @@
 [[div class="list"]]
-[[=]]
 [[collapsible show="► Subclasses ◄" hide="▼ Subclasses ▼"]]
-[[<]]
 +++* Suffix System
 
 The following subclasses are attached to standard classes (//e.g.// Safe-alterius) to denote attributes of the anomaly. Several of these classes lack established definitions; where this is the case, definitions have been inferred.
@@ -129,10 +129,7 @@ The following subclasses are used in a variety of formats; it is advised archivi
 || Eigenweapon ||Item is an anomalous Weapon of Mass Destruction.||[[[SCP-4700]]]||
 || Paradox-Apollyon ||Item will evitably destroy mankind and can be contained by the pre-emptive destruction of human life.||[http://scpfoundation.net/swelling-of-the-worlds You - Anomaly, Swelling of the Worlds][[footnote]] Original text: Ты - аномалия, опухоль миров [[/footnote]]||
 || Paradox-Thaumiel ||Item has been created to totally destroy human life via a localized ZK-Class Scenario.||[http://scpfoundation.net/swelling-of-the-worlds You - Anomaly, Swelling of the Worlds]||
-
-[[/<]]
 [[/collapsible]]
-[[/=]]
 [[/div]]
 @@ @@
 ++ System Classes
@@ -140,9 +137,7 @@ The following subclasses are used in a variety of formats; it is advised archivi
 The following classes do not describe the anomaly they are assigned, but are rather a placeholder or the result of a system error.
 @@ @@
 [[div class="list"]]
-[[=]]
 [[collapsible show="► System Classes ◄" hide="▼ System Classes ▼"]]
-[[<]]
 ||~ Class ||~ Definition ||~ Appearances ||
 ||  ||Object class has been omitted.||[[[SCP-2864 | Di Molte Voci]]], [[[dr-gears-s-proposal | Dr Gears' Proposal]]], [[[SCP-2839 | Dr Weppler's Personnel File]]], [[[SCP-3570 | EE-3570]]], [[[SCP-1654]]], [[[SCP-3682]]], [[[SCP-4100]]], [[[SCP-4311]]], [[[SCP-2235 | URA-9611]]], [[[SCP-4773 | SCP-4773-2]]], [[[SCP-4787]]]||
 ||[DATA EXPUNGED]||  ||[[[Pedantique's Proposal]]]||
@@ -150,13 +145,12 @@ The following classes do not describe the anomaly they are assigned, but are rat
 ||{{HANDLE_NOT_FOUND}}||Item cannot be located in the SCiPNET database.||[[[SCP-2718]]]||
 ||{{Keter}}/Friend||  ||[[[SCP-4239 | Project Kenowhere Central Volunteer Hub]]]||
 ||#NULL||  ||[[[SCP-000]]]||
-||Pending, Unclassed|| ||[[[SCP-2827]]], [[[SCP-3030]]], [[[SCP-3557]]], [[[SCP-3939]]],  [[[SCP-4008]]], [[[SCP-4013]]], [[[SCP-4511]]], [[[SCP-4790]]], [[[SCP-4447]]]||
+||Pending|| ||[[[SCP-2827]]], [[[SCP-3030]]], [[[SCP-3557]]], [[[SCP-3939]]],  [[[SCP-4008]]], [[[SCP-4013]]], [[[SCP-4511]]], [[[SCP-4790]]], [[[SCP-4447]]]||
 ||[REDACTED]||  ||[[[SCP-1463]]]||
 ||[[span class="lie"]]Safe[[/span]]||Object class is being lied about.||[[[SCP-4428|Dr. Michaels]]]||
+||Unclassed|| Object classification has been intentionally avoided. ||[[[http://fondationscp.wikidot.com/scp-200-fr | SCP-200-FR]]], [[[http://fondationscp.wikidot.com/scp-226-fr | SCP-226-FR]]], [[[http://ja.scp-wiki.net/scp-1375-jp | SCP-1375-JP]]], [[[SCP-3939]]]||
 ||Urgent reclassification required.||  ||[[[SCP-3547]]]||
-[[/<]]
 [[/collapsible]]
-[[/=]]
 [[/div]]
 @@ @@
 ++ Anomalous Esoteric Classes
@@ -164,9 +158,7 @@ The following classes do not describe the anomaly they are assigned, but are rat
 The following classes are, generally, the results of infectious memetic agents and infohazards; personnel lacking a Cognitive Resistance Value (CRV) of 16.3 or greater are advised to read at their own risk.
 @@ @@
 [[div class="list"]]
-[[=]]
 [[collapsible show="► Anomalous Esoteric Classes ◄" hide="▼ Anomalous Esoteric Classes ▼"]]
-[[<]]
 ||~ Class ||~ Definition ||~ Appearances ||
 ||{{Apologize.}}||  ||[[[shaggydredlocks-proposal | S. D. Locke's Proposal]]]||
 ||At home, Bullshit, ??||  ||[[[SCP-4205]]]||
@@ -190,9 +182,7 @@ The following classes are, generally, the results of infectious memetic agents a
 ||Youklid|| Incorrect spelling of "Euclid". ||[[[SCP-4259]]]||
 ||53||Item is highly intrusive, and has unknown capabilities and an unknown nature.||[[[Scantron's Proposal]]]||
 ||▄█▐██||  ||[[[URA-1902]]]||
-[[/<]]
 [[/collapsible]]
-[[/=]]
 [[/div]]
 @@ @@
 
@@ -210,9 +200,7 @@ If a foreign esoteric class falls into any of the following categories, it shoul
 [[/collapsible]]
 @@ @@
 [[div class="list"]]
-[[=]]
 [[collapsible show="► Foreign Esoteric Classes ◄" hide="▼ Foreign Esoteric Classes ▼"]]
-[[<]]
 ||~ Class ||~ Definition ||~ Appearances||
 ||Ain||Item is capable of causing YK-Class events in the future that are unable to be dealt with.||[[[http://ja.scp-wiki.net/scp-1690-jp | SCP-1690-JP]]]||
 ||Anesidora|| ||[[[http://scp-wiki-cn.wikidot.com/scp-cn-422 | SCP-CN-422]]]||
@@ -235,21 +223,17 @@ If a foreign esoteric class falls into any of the following categories, it shoul
 ||Malkuth|| ||[[[http://ja.scp-wiki.net/okaka-onigiri-s-proposal | Okaka_Onigiri’s Proposal]]], [[[http://scp-wiki-cn.wikidot.com/adamnpluto-s-proposal-i | AdamnPluto's Proposal]]]||
 ||Möbius|| ||[[[http://ja.scp-wiki.net/scp-789-jp | SCP-789-JP]]]||
 ||Necropsar||An anomaly that currently has no reliable evidence supporting its existence in the standard Human History Process (H-001), but can be confirmed to potentially exist through observations made by the Department of Parahistorical Plotting regarding other Human History Processes and hidden signs currently in H-001.||[[[http://scp-wiki-cn.wikidot.com/scp-cn-1050 | SCP-CN-1050]]]||
-||Unclassified[[footnote]] Original text: Non-Classé [[/footnote]]|| ||[[[http://fondationscp.wikidot.com/scp-200-fr | SCP-200-FR]]], [[[http://fondationscp.wikidot.com/scp-226-fr | SCP-226-FR]]]||
 ||Pantokratōr|| ||[[[http://ja.scp-wiki.net/indonootoko-s-proposal | indonootoko's proposal]]]||
 ||Secret|| ||[[[http://scp-wiki-cn.wikidot.com/scp-cn-398 | SCP-CN-398]]]||
 ||Socrat|| ||[[[http://ja.scp-wiki.net/scp-1818-jp | SCP-1818-JP]]]||
 ||Tantum|| ||[[[http://ja.scp-wiki.net/scp-1018-jp | SCP-1018-JP]]]||
 ||Terminal||Item incorporates human beings following their death. [http://scp-int.wikidot.com/forum/t-7855061/scp-es-145 In-depth definition here.] ||[[[http://scp-int.wikidot.com/scp-es-145 | SCP-ES-145]]], [[[http://lafundacionscp.wikidot.com/scp-es-163 | SCP-ES-163]]]||
 ||Trout|| ||[[[http://scp-wiki-cn.wikidot.com/scp-cn-920 | SCP-CN-920]]]||
-||Unclassed|| ||[[[http://ja.scp-wiki.net/scp-1375-jp | SCP-1375-JP]]]||
 ||Uncontainable||  ||[[[SCP-ES-100-EX]]]||
 ||Veleafer|| ||[[[http://scp-wiki-cn.wikidot.com/scp-cn-606 | SCP-CN-606]]]||
 ||Weathervane[[footnote]] Original text: Girouette [[/footnote]]|| ||[[[http://scp-int.wikidot.com/scp-237-fr | SCP-237-FR]]]||
 ||XeteZ|| ||[[[http://scp-vn.wikidot.com/scp-888-vn | SCP-888-VN]]]||
-[[/<]]
 [[/collapsible]]
-[[/=]]
 [[/div]]
 @@ @@
 ++ Theoretical Esoteric Classes
@@ -257,17 +241,13 @@ If a foreign esoteric class falls into any of the following categories, it shoul
 The following classes have not been officially implemented in any form of documentation, but have been tentatively proposed.
 @@ @@
 [[div class="list"]]
-[[=]]
 [[collapsible show="► Theoretical Esoteric Classes ◄" hide="▼ Theoretical Esoteric Classes ▼"]]
-[[<]]
 ||~ Class ||~ Definition ||
 ||Anatta||Item is capable of causing a YK-End-of-the-Universe Scenario, or altering the universe in a detrimental manner.||
 ||Mild||Item is almost completely safe to interact with unless handled in an irresponsible manner.||
 ||Simpatico||Item is unpredictable but not dangerous.||
 ||Yggdrasil||Item is capable of causing a ZK-End-of-Reality Scenario, or altering reality in a detrimental manner.||
-[[/<]]
 [[/collapsible]]
-[[/=]]
 [[/div]]
 @@ @@
 ------
