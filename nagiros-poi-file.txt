@@ -13,12 +13,18 @@ Woah there, dude! This page is currently undergoing maintenance and may look eve
 [[include component:scp-trans-pride |trans-pride-logo= --] |trans-pride-footer= --]]]
 
 [[module CSS]]
+/* HEADER LOGO */
+#header {
+    background-image: url(http://scp-wiki.wdfiles.com/local--files/component%3Ascp-trans-pride/TransSCPlogo.png)
+}
+/* SCROLLBAR */
 ::-webkit-scrollbar-thumb
 {
     background: rgba(247,168,184, .5);
     border-radius: 5px;
     border: 1px solid black;
 }
+/* PRECEPT STUFF */
 .precept {max-width: 100%; text-color: black; border-color: #b01; border: solid 1px #5836AD; background-color: rgb(214, 234, 248, .5); padding-left: 5px; padding-right: 5px; margin-top: 15px; margin-bottom: 15px;}
 .precept .collapsible-block {  
   text-align: center;
