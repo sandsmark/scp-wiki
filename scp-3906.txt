@@ -1,7 +1,14 @@
 title:SCP-3906
-[[>]]
-[[module Rate]]
-[[/>]]
+[[include :scp-wiki:info:start]]
+= SCP-3906 by [[*user PeppersGhost]]
+
+-----
+
+[[=]]
+**[http://www.scp-wiki.net/dr-john-peppersghost-pepper-s-personnel-file More by this author]**
+[[/=]]
+[[include :scp-wiki:info:end]]
+
 
 [[include :scp-wiki:component:acs-peppo-lite
 
@@ -9,7 +16,7 @@ title:SCP-3906
 |clearance= 1
 |container-class= esoteric
 |secondary-class= numen
-|secondary-icon= http://topia.wdfiles.com/local--files/peppo-bork/numen5.svg
+|secondary-icon= http://scp-wiki.wdfiles.com/local--files/scp-3906/numen.svg
 |disruption-class= ekhi
 |risk-class= critical
 
@@ -23,8 +30,23 @@ title:SCP-3906
 ]]
 
 ------
+[[div class="pictures4desk"]]
+[[include component:image-block
+    name=http://topia.wdfiles.com/local--files/peppo-bork/balutparade2.jpg|
+    caption=Agent Malano leading the 1993 containment parade.|
+    width=250px|
+    align=right
+]]
+[[/div]]
+[[div class="pictures4mobile"]]
+[[include component:image-block
+    name=http://topia.wdfiles.com/local--files/peppo-bork/balutparade2.jpg|
+    caption=Agent Malano leading the 1993 containment parade.|
+    width=250px|
+    align=center
+]]
+[[/div]]
 
-[[include component:image-block name=http://topia.wdfiles.com/local--files/peppo-bork/balutparade2.jpg|caption=Agent Malano leading the 1993 containment parade.|width=250px]]
 **Item #:** SCP-3906
 
 **Object Class:** Keter
@@ -114,3 +136,33 @@ The threat posed by SCP-3906 peaked in 1983, by which point balut had become a u
 > **Dr. Dulay:** Okay, yes. Good night, shooting star. 
 > 
 > **[End log]**
+
+[[module CSS]]
+
+.scp-image-block.block-right {
+    margin: 0em 0em 1em 2em;
+}
+
+.pictures4mobile {
+    height: 0px;
+    overflow: hidden;
+}
+
+.pictures4desk {
+    height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    .pictures4mobile {
+        height: auto;
+    }
+
+    .pictures4desk {
+        height: 0px;
+        overflow: hidden;
+    }
+
+}
+[[/module]]
