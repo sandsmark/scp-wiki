@@ -24,13 +24,17 @@ Woah there, dude! This page is currently undergoing maintenance and may look eve
     border: 1px solid black;
 }
 /* PRECEPT STUFF */
-.precept {max-width: 100%; text-color: black; border-color: #b01; border: solid 1px #5836AD; background-color: rgb(214, 234, 248, .5); padding-left: 5px; padding-right: 5px; margin-top: 15px; margin-bottom: 15px;}
-.precept .collapsible-block {  
-  text-align: center;
+.precept .collapsible-block {max-width: 100%; text-color: black; border-color: #b01; border: solid 1px #5836AD; background-color: rgb(214, 234, 248, .5); margin-top: 15px; margin-bottom: 15px; text-align: center}
+.precept .collapsible-block-content p {
+padding-left: 5px;
+padding-right: 5px;
+padding-bottom: 15px;
+padding-top: 15px;
 }
-.precept .collapsible-block-content {
-  text-align: left;
+.precept .collapsible-block-content{
+text-align: left;
 }
+.precept {color: black}
 .precept .collapsible-block-content hr{
 max-width: 105px;
 border: none;
@@ -910,9 +914,7 @@ Use this code instead!
 @@[[include info:end]]@@
 [[/div]]
 [[/collapsible]]
-[[/div]]
 
-[[div class="precept"]]
 [[collapsible show="▷ Second Precept" hide="▽ How to do that cool thing with linking users."]]
 
 ------
@@ -926,9 +928,7 @@ Like this, you know? [[*user Nagiros]]
 [[/code]]
 
 [[/collapsible]]
-[[/div]]
 
-[[div class="precept"]]
 [[collapsible show="▷ Third Precept" hide="▽ How to get extra blank lines."]]
 
 ------
@@ -955,9 +955,7 @@ Wikidot usually doesn't display any indentations beyond the first two, so use th
 [[/code]]
 
 [[/collapsible]]
-[[/div]]
 
-[[div class="precept"]]
 [[collapsible show="▷ Fourth Precept" hide="▽ You can make fake links."]]
 
 ------
@@ -971,9 +969,7 @@ Wikidot usually doesn't display any indentations beyond the first two, so use th
 [[/code]]
 
 [[/collapsible]]
-[[/div]]
 
-[[div class="precept"]]
 [[collapsible show="▷ Fifth Precept" hide="▽ You can add invisible comments like a real programmer."]]
 
 ------
@@ -986,9 +982,7 @@ Wikidot usually doesn't display any indentations beyond the first two, so use th
 [[/code]]
 
 [[/collapsible]]
-[[/div]]
 
-[[div class="precept"]]
 [[collapsible show="▷ Sixth Precept" hide="▽ You can make changes to the scrollbar."]]
 
 ------
@@ -1003,9 +997,7 @@ Just use the below syntax. If you're changing the color, it may look better if y
 [[/code]]
 
 [[/collapsible]]
-[[/div]]
 
-[[div class="precept"]]
 [[collapsible show="▷ Seventh Precept" hide="▽ You can make custom quoteblocks!"]]
 
 ------
