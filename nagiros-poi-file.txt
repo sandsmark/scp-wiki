@@ -24,6 +24,27 @@ Woah there, dude! This page is currently undergoing maintenance and may look eve
     border-radius: 5px;
     border: 1px solid black;
 }
+/* ARTWORK STUFF */
+.art .collapsible-block {max-width: 100%; text-color: black; border-color: #b01; border: solid 1px #5836AD; background-color: rgb(214, 234, 248, .5); margin-top: 15px; margin-bottom: 15px; text-align: center}
+.art .collapsible-block-content p {
+padding-left: 5px;
+padding-right: 5px;
+padding-bottom: 15px;
+padding-top: 15px;
+}
+.art .collapsible-block-content{
+text-align: left;
+}
+.art {color: black}
+.art .collapsible-block-content hr{
+max-width: 105px;
+border: none;
+height: 2px;
+text-align:center; 
+margin: 0 auto;
+margin-top: 25px;
+margin-bottom: 25px;
+}
 /* PRECEPT STUFF */
 .precept .collapsible-block {max-width: 100%; text-color: black; border-color: #b01; border: solid 1px #5836AD; background-color: rgb(214, 234, 248, .5); margin-top: 15px; margin-bottom: 15px; text-align: center}
 .precept .collapsible-block-content p {
@@ -35,7 +56,6 @@ padding-top: 15px;
 .precept .collapsible-block-content{
 text-align: left;
 }
-.precept {color: black}
 .precept .collapsible-block-content hr{
 max-width: 105px;
 border: none;
@@ -44,6 +64,10 @@ text-align:center;
 margin: 0 auto;
 margin-top: 25px;
 margin-bottom: 25px;
+}
+/* ACHIEVEMENTS */
+.content-panel standalone {
+text-align: center;
 }
 [[/module]]
 
@@ -365,6 +389,12 @@ Oh, geez, it's pretty sparse here. Sorry about that! I guess that's motivation t
 
 [[/tab]]
 
+[[tab Artwork (?)]]
+
+
+
+[[/tab]]
+
 [[tab Achievements]]
 
 ++* Showcase [[size 75%]](Yay, we did it!)[[/size]]
@@ -671,6 +701,138 @@ Oh, geez, it's pretty sparse here. Sorry about that! I guess that's motivation t
 
 [[/tab]]
 
+[[tab Everything the Guides Don't Tell You]]
+
+Just a small log I keep of all the stuff I couldn't figure out for a while. Enjoy!
+
+@@ @@
+
+[[div class="precept"]]
+[[collapsible show="▷ First Precept" hide="▽ The rating modules are outdated. The future is now."]]
+
+------
+
+Use this code instead!
+
+[[div class="code"]]
+@@[[include info:start]]@@
+[[/div]]
+
+[[div class="code"]]
+@@[[include info:end]]@@
+[[/div]]
+[[/collapsible]]
+
+[[collapsible show="▷ Second Precept" hide="▽ How to do that cool thing with linking users."]]
+
+------
+
+Like this, you know? [[*user Nagiros]]
+
+[[code]]
+
+[[*user username]]
+
+[[/code]]
+
+[[/collapsible]]
+
+[[collapsible show="▷ Third Precept" hide="▽ How to get extra blank lines."]]
+
+------
+
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+
+Wikidot usually doesn't display any indentations beyond the first two, so use the code below instead.
+
+[[code]]
+
+@@ @@
+
+[[/code]]
+
+[[/collapsible]]
+
+[[collapsible show="▷ Fourth Precept" hide="▽ You can make fake links."]]
+
+------
+
+[# Go ahead. Try and click it.]
+
+[[code]]
+
+[# link text]
+
+[[/code]]
+
+[[/collapsible]]
+
+[[collapsible show="▷ Fifth Precept" hide="▽ You can add invisible comments like a real programmer."]]
+
+------
+
+[[code]]
+
+[!-- A good crab is a happy crab!
+--]
+
+[[/code]]
+
+[[/collapsible]]
+
+[[collapsible show="▷ Sixth Precept" hide="▽ You can make changes to the scrollbar."]]
+
+------
+
+Just use the below syntax. If you're changing the color, it may look better if you use a color at half transparency, //i.e.// rgb(R, G, B, .5).
+
+[[code]]
+::-webkit-scrollbar-thumb
+{
+    [arguments];
+}
+[[/code]]
+
+[[/collapsible]]
+
+[[collapsible show="▷ Seventh Precept" hide="▽ You can make custom quoteblocks!"]]
+
+------
+
+Okay, this one is genuinely really cool to me. So, you //could// adjust every quoteblock on a page using CSS, or you can adjust just a few or only one while leaving the rest untouched. Try it with the code below!
+
+[[code]]
+[[module css]]
+.nagiros blockquote{
+[argument];
+}
+[[/module]]
+[[/code]]
+
+And then where you want the quoteblock:
+
+[[code]]
+[[div class="nagiros"]]
+> This will reflect your special arguments.
+[[/div]]
+[[/code]]
+
+[[/collapsible]]
+[[/div]]
+
+[[/tab]]
+
 [[tab Recommended SCPs and Tales]]
 
 Here you'll find some articles and tales that I've personally really enjoyed. Keep in mind, this isn't a list designed to introduce new community members! Shoutout to [[*user Shaggydredlocks]] for putting together the awesome [[[User-Curated Lists]]], which functions far better in that regard.
@@ -894,135 +1056,5 @@ That being said, if you have an article that you think deserves to be on this li
 
 [[/tab]]
 
-[[tab Everything the Guides Don't Tell You]]
 
-Just a small log I keep of all the stuff I couldn't figure out for a while. Enjoy!
-
-@@ @@
-
-[[div class="precept"]]
-[[collapsible show="▷ First Precept" hide="▽ The rating modules are outdated. The future is now."]]
-
-------
-
-Use this code instead!
-
-[[div class="code"]]
-@@[[include info:start]]@@
-[[/div]]
-
-[[div class="code"]]
-@@[[include info:end]]@@
-[[/div]]
-[[/collapsible]]
-
-[[collapsible show="▷ Second Precept" hide="▽ How to do that cool thing with linking users."]]
-
-------
-
-Like this, you know? [[*user Nagiros]]
-
-[[code]]
-
-[[*user username]]
-
-[[/code]]
-
-[[/collapsible]]
-
-[[collapsible show="▷ Third Precept" hide="▽ How to get extra blank lines."]]
-
-------
-
-@@ @@
-@@ @@
-@@ @@
-@@ @@
-@@ @@
-@@ @@
-@@ @@
-@@ @@
-@@ @@
-@@ @@
-@@ @@
-@@ @@
-
-Wikidot usually doesn't display any indentations beyond the first two, so use the code below instead.
-
-[[code]]
-
-@@ @@
-
-[[/code]]
-
-[[/collapsible]]
-
-[[collapsible show="▷ Fourth Precept" hide="▽ You can make fake links."]]
-
-------
-
-[# Go ahead. Try and click it.]
-
-[[code]]
-
-[# link text]
-
-[[/code]]
-
-[[/collapsible]]
-
-[[collapsible show="▷ Fifth Precept" hide="▽ You can add invisible comments like a real programmer."]]
-
-------
-
-[[code]]
-
-[!-- A good crab is a happy crab!
---]
-
-[[/code]]
-
-[[/collapsible]]
-
-[[collapsible show="▷ Sixth Precept" hide="▽ You can make changes to the scrollbar."]]
-
-------
-
-Just use the below syntax. If you're changing the color, it may look better if you use a color at half transparency, //i.e.// rgb(R, G, B, .5).
-
-[[code]]
-::-webkit-scrollbar-thumb
-{
-    [arguments];
-}
-[[/code]]
-
-[[/collapsible]]
-
-[[collapsible show="▷ Seventh Precept" hide="▽ You can make custom quoteblocks!"]]
-
-------
-
-Okay, this one is genuinely really cool to me. So, you //could// adjust every quoteblock on a page using CSS, or you can adjust just a few or only one while leaving the rest untouched. Try it with the code below!
-
-[[code]]
-[[module css]]
-.nagiros blockquote{
-[argument];
-}
-[[/module]]
-[[/code]]
-
-And then where you want the quoteblock:
-
-[[code]]
-[[div class="nagiros"]]
-> This will reflect your special arguments.
-[[/div]]
-[[/code]]
-
-[[/collapsible]]
-[[/div]]
-
-[[/tab]]
 [[/tabview]]
