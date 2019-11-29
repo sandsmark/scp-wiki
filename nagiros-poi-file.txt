@@ -26,11 +26,15 @@ Woah there, dude! This page is currently undergoing maintenance and may look eve
 }
 /* ARTWORK STUFF */
 .art a.collapsible-block-link {
-    color: #b01;
-    text-align: center;
+  color: #b01;
+}
+.art .collapsible-block {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .art .collapsible-block-content{
-text-align: left;
+  text-align: left;
 }
 /* PRECEPT STUFF */
 .precept .collapsible-block {max-width: 100%; text-color: black; border: solid 1px #5836AD; background-color: rgb(214, 234, 248, .5); margin-top: 15px; margin-bottom: 15px; text-align: center}
@@ -301,36 +305,6 @@ Last comment by %%commented_by_linked%% on %%commented_at%%.
 
 @@ @@
 
-+ Fanwork
-
-------
-
-[[=]]
-[[collapsible show="► Display Fanwork ◄" hide="▼ Hide Fanwork ▼"]]
-[[<]]
-
-++* SCP-4051
-
-**Useful**, by [[*user Crashington]]:
-
-[[image rainer_crashington]]
-
-@@ @@
-
-++* SCP-4260
-
-**The Virgin Death**, by [[*user MrGoomba]]
-
-[[image death_goomba]]
-
-[[/<]]
-[[/collapsible]]
-[[/=]]
-
-------
-
-@@ @@
-
 Oh, geez, it's pretty sparse here. Sorry about that! I guess that's motivation to fill up my collection a bit more.
 
 @@ @@
@@ -378,18 +352,18 @@ Oh, geez, it's pretty sparse here. Sorry about that! I guess that's motivation t
 
 [[tab Artwork (?)]]
 [[div class="art"]]
-[[collapsible show="◆ Anti-Memetic Entities Catalog ◆" hide="◇ Anti-Memetic Entities Catalog ◇"]]
+[[collapsible show="◇ Anti-Memetic Entities Catalog ◇" hide="◆ Anti-Memetic Entities Catalog ◆"]]
 [[include component:image-block name=http://scp-sandbox-3.wdfiles.com/local--files/component%3Aamec-theme/amec.png|align=center|caption=The unseen enemy is always the most fearsome.|width=100px]]
 [[/collapsible]]
-[[collapsible show="◆ Brave New World ◆" hide="◇ Brave New World ◇"]]
+[[collapsible show="◇ Brave New World ◇" hide="◆ Brave New World ◆"]]
 [[include component:image-block name=http://scp-wiki.wdfiles.com/local--files/slipping-away/breaker|align=center|caption=O Bright, O Cimmerian, O damned Kondraki:
 May this foundation bring peace to Mankind.|width=234px]]
 [[/collapsible]]
-[[collapsible show="◆ Site-17 ◆" hide="◇ Site-17 ◇"]]
+[[collapsible show="◇ Site-17 ◇" hide="◆ Site-17 ◆"]]
 [[include component:image-block name=http://scp-sandbox-3.wdfiles.com/local--files/component%3Asite-17-theme/logo17|align=center|caption=In times past, the Foundation operated under the motto "Cold, not cruel." This is no longer the case. The Foundation is human.|width=100px]]
 [[include component:image-block name=http://scp-sandbox-3.wdfiles.com/local--files/site-17/logo17|align=center|caption=If you start losing your memories, don't bother. That's just how it is in this place.|width=196px]]
 [[/collapsible]]
-[[collapsible show="◆ General Use ◆" hide="◇ General Use ◇"]]
+[[collapsible show="◇ General Use ◇" hide="◆ General Use ◆"]]
 > **GENERAL NOTE:** I encourage interested readers to adapt and adjust the following for their own ends. I can also provide {{.ai}} files for Adobe Illustator upon request. The font of the "17" in my Site-17 logo is Acumin Variable Concept, if you want to emulate it.
 [[include component:image-block name=G&S-site-template|align=center|caption=To replace the official Foundation logo in the top left. Have fun! 🦀|width=209px]]
 [[include component:image-block name=B&W-site-template|align=center|caption=To be used anywhere. Have fun! 🦀|width=209px]]
