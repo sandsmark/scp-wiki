@@ -25,28 +25,15 @@ Woah there, dude! This page is currently undergoing maintenance and may look eve
     border: 1px solid black;
 }
 /* ARTWORK STUFF */
-.art .collapsible-block {max-width: 100%; text-color: black; border-color: #b01; border: solid 1px #5836AD; background-color: rgb(214, 234, 248, .5); margin-top: 15px; margin-bottom: 15px; text-align: center}
-.art .collapsible-block-content p {
-padding-left: 5px;
-padding-right: 5px;
-padding-bottom: 15px;
-padding-top: 15px;
+.art .collapsible-block{
+    color: #b01;
+    text-align: center;
 }
 .art .collapsible-block-content{
 text-align: left;
 }
-.art {color: black}
-.art .collapsible-block-content hr{
-max-width: 105px;
-border: none;
-height: 2px;
-text-align:center; 
-margin: 0 auto;
-margin-top: 25px;
-margin-bottom: 25px;
-}
 /* PRECEPT STUFF */
-.precept .collapsible-block {max-width: 100%; text-color: black; border-color: #b01; border: solid 1px #5836AD; background-color: rgb(214, 234, 248, .5); margin-top: 15px; margin-bottom: 15px; text-align: center}
+.precept .collapsible-block {max-width: 100%; text-color: black; border: solid 1px #5836AD; background-color: rgb(214, 234, 248, .5); margin-top: 15px; margin-bottom: 15px; text-align: center}
 .precept .collapsible-block-content p {
 padding-left: 5px;
 padding-right: 5px;
@@ -390,8 +377,24 @@ Oh, geez, it's pretty sparse here. Sorry about that! I guess that's motivation t
 [[/tab]]
 
 [[tab Artwork (?)]]
-
-
+[[div class="art"]]
+[[collapsible show="◆ Anti-Memetic Entities Catalog ◆" hide="◇ Anti-Memetic Entities Catalog ◇"]]
+[[include component:image-block name=http://scp-sandbox-3.wdfiles.com/local--files/component%3Aamec-theme/amec.png|align=center|caption=The unseen enemy is always the most fearsome.|width=100px]]
+[[/collapsible]]
+[[collapsible show="◆ Brave New World ◆" hide="◇ Brave New World ◇"]]
+[[include component:image-block name=http://scp-wiki.wdfiles.com/local--files/slipping-away/breaker|align=center|caption=O Bright, O Cimmerian, O damned Kondraki:
+May this foundation bring peace to Mankind.|width=234px]]
+[[/collapsible]]
+[[collapsible show="◆ Site-17 ◆" hide="◇ Site-17 ◇"]]
+[[include component:image-block name=http://scp-sandbox-3.wdfiles.com/local--files/component%3Asite-17-theme/logo17|align=center|caption=In times past, the Foundation operated under the motto "Cold, not cruel." This is no longer the case. The Foundation is human.|width=100px]]
+[[include component:image-block name=http://scp-sandbox-3.wdfiles.com/local--files/site-17/logo17|align=center|caption=If you start losing your memories, don't bother. That's just how it is in this place.|width=196px]]
+[[/collapsible]]
+[[collapsible show="◆ General Use ◆" hide="◇ General Use ◇"]]
+> **GENERAL NOTE:** I encourage interested readers to adapt and adjust the following for their own ends. I can also provide {{.ai}} files for Adobe Illustator upon request. The font of the "17" in my Site-17 logo is Acumin Variable Concept, if you want to emulate it.
+[[include component:image-block name=G&S-site-template|align=center|caption=To replace the official Foundation logo in the top left. Have fun! 🦀|width=209px]]
+[[include component:image-block name=B&W-site-template|align=center|caption=To be used anywhere. Have fun! 🦀|width=209px]]
+[[/collapsible]]
+[[/div]]
 
 [[/tab]]
 
