@@ -56,6 +56,17 @@ margin: 0 auto;
 margin-top: 25px;
 margin-bottom: 25px;
 }
+.page-title {
+  border-bottom: solid 1px #bbbbbb;
+  color: #990011;
+  font-weight: normal;
+  margin: 0 0 0.6em;
+  padding: 0 0 0.25em;
+  font-size: 200%;
+}
+.page-title p {
+  margin: 0;
+}
 /* ACHIEVEMENTS */
 .content-panel standalone {
 text-align: center;
@@ -707,9 +718,7 @@ Use this code instead!
 Like this, you know? [[*user Nagiros]]
 
 [[code]]
-
 [[*user username]]
-
 [[/code]]
 
 [[/collapsible]]
@@ -802,6 +811,110 @@ And then where you want the quoteblock:
 [[code]]
 [[div class="nagiros"]]
 > This will reflect your special arguments.
+[[/div]]
+[[/code]]
+
+[[/collapsible]]
+
+[[collapsible show="▷ Eighth Precept" hide="▽ Amateur countdown timers"]]
+
+------
+
+[[html]]
+<script type="text/javascript">
+today = new Date();
+BigDay = new Date("January 1, 2050"); // Change date to the day you would like to countdown to
+msPerDay = 24 * 60 * 60 * 1000 ;  // Vbs
+timeLeft = (BigDay.getTime() - today.getTime());// Vbs
+e_daysLeft = timeLeft / msPerDay;// Vbs
+daysLeft = Math.floor(e_daysLeft);// Vbs
+e_hrsLeft = (e_daysLeft - daysLeft)*24;// Vbs
+hrsLeft = Math.floor(e_hrsLeft);// Vbs
+minsLeft = Math.floor((e_hrsLeft - hrsLeft)*60);// Vbs
+document.write("There are " + daysLeft + " days,  " + hrsLeft +" hours, and " + minsLeft + "  minutes left until 2050.</H4> <P>"); 
+</script>
+[[/html]]
+
+[[code]]
+[[html]]
+<script type="text/javascript">
+today = new Date();
+BigDay = new Date("Month dayofmonth, year"); // Change date to the day you would like to countdown to
+msPerDay = 24 * 60 * 60 * 1000 ;  // Vbs
+timeLeft = (BigDay.getTime() - today.getTime());// Vbs
+e_daysLeft = timeLeft / msPerDay;// Vbs
+daysLeft = Math.floor(e_daysLeft);// Vbs
+e_hrsLeft = (e_daysLeft - daysLeft)*24;// Vbs
+hrsLeft = Math.floor(e_hrsLeft);// Vbs
+minsLeft = Math.floor((e_hrsLeft - hrsLeft)*60);// Vbs
+document.write("there are only ... the days left will come after this " + daysLeft + " Days  " + hrsLeft +" Hours " + minsLeft + "  Minutes</H4> Until it is ... your reason of count down like my birthday or ... <P>"); 
+// I started this from something I got from moonfruit.com  Credits for them. 
+</script>
+[[/html]]
+[[/code]]
+
+[[/collapsible]]
+
+[[collapsible show="▷ Nineth Precept" hide="▽ Hiding open collapsibles"]]
+
+------
+
+[[div class="example"]]
+[[include :scp-sandbox-3:component:collapsible-top show=Sorry I'm Late |hide=I was doing stuff]]
+LOREM IPSUM
+[[include :scp-sandbox-3:component:collapsible-top show=I'm stuff|hide=OMG NO]]
+DOLOR SIT
+[[include :scp-sandbox-3:component:collapsible-bottom]]
+[[include :scp-sandbox-3:component:collapsible-top show=*laughing* |hide=User, your girlfriend is awesome]]
+AMET
+[[include :scp-sandbox-3:component:collapsible-bottom]]
+[[include :scp-sandbox-3:component:collapsible-bottom]]
+[[/div]]
+
+[[code]]
+[[module CSS]]
+.collapsible-block-unfolded-link .collapsible-block-link, #breadcrumbs {
+  display: none;
+}
+[[/module]]
+[[/code]]
+
+[[/collapsible]]
+
+[[collapsible show="▷ Tenth Precept" hide="▽ Changing page titles"]]
+
+------
+
+Very useful for fragment pages in ListPages modules.
+
+[[div class="page-title"]]
+Yeet
+------
+[[/div]]
+
+[[code]]
+[[module CSS]]
+#page-title {
+  display: none;
+}
+.page-title {
+  border-bottom: solid 1px #bbbbbb;
+  color: #990011;
+  font-weight: normal;
+  margin: 0 0 0.6em;
+  padding: 0 0 0.25em;
+  font-size: 200%;
+}
+.page-title p {
+  margin: 0;
+}
+[[/module]]
+[[/code]]
+
+[[code]]
+[[div class="page-title"]]
+TITLE
+------
 [[/div]]
 [[/code]]
 
