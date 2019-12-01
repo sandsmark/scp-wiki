@@ -56,6 +56,9 @@ margin: 0 auto;
 margin-top: 25px;
 margin-bottom: 25px;
 }
+.example .collapsible-block-unfolded-link .collapsible-block-link, #breadcrumbs {
+  display: none;
+}
 .page-title {
   border-bottom: solid 1px #bbbbbb;
   color: #990011;
@@ -860,14 +863,8 @@ document.write("there are only ... the days left will come after this " + daysLe
 ------
 
 [[div class="example"]]
-[[include :scp-sandbox-3:component:collapsible-top show=Sorry I'm Late |hide=I was doing stuff]]
-LOREM IPSUM
-[[include :scp-sandbox-3:component:collapsible-top show=I'm stuff|hide=OMG NO]]
-DOLOR SIT
-[[include :scp-sandbox-3:component:collapsible-bottom]]
-[[include :scp-sandbox-3:component:collapsible-top show=*laughing* |hide=User, your girlfriend is awesome]]
-AMET
-[[include :scp-sandbox-3:component:collapsible-bottom]]
+[[include :scp-sandbox-3:component:collapsible-top show=Like this]]
+**>:]**
 [[include :scp-sandbox-3:component:collapsible-bottom]]
 [[/div]]
 
