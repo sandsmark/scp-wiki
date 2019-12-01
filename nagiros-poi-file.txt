@@ -56,9 +56,6 @@ margin: 0 auto;
 margin-top: 25px;
 margin-bottom: 25px;
 }
-.example .collapsible-block-unfolded-link .collapsible-block-link, #breadcrumbs {
-  display: none;
-}
 .page-title {
   border-bottom: solid 1px #bbbbbb;
   color: #990011;
@@ -858,62 +855,25 @@ document.write("there are only ... the days left will come after this " + daysLe
 
 [[/collapsible]]
 
-[[collapsible show="▷ Nineth Precept" hide="▽ Hiding open collapsibles"]]
+[[collapsible show="▷ Nineth Precept" hide="▽ Nesting collapsibles"]]
 
 ------
 
-[[div class="example"]]
-[[include :scp-sandbox-3:component:collapsible-top show=Like this]]
-**>:]**
+[[include :scp-sandbox-3:component:collapsible-top]]
+AAAAAAAAAAAAAAAAAAA!
+[[include :scp-sandbox-3:component:collapsible-top show=+ More A? |hide=- AAAAAAAA]]
+[[=]]
++ A
+[[/=]]
 [[include :scp-sandbox-3:component:collapsible-bottom]]
+[[include :scp-sandbox-3:component:collapsible-bottom]]
+
+[[div class="code"]]
+@@[[collapsible]]@@
+@@[[include :scp-sandbox-3:component:collapsible-top show=SHOW TEXT |hide=HIDE TEXT]]@@
+@@[[include :scp-sandbox-3:component:collapsible-bottom]]@@
+@@[[/collapsible]]@@
 [[/div]]
-
-[[code]]
-[[module CSS]]
-.collapsible-block-unfolded-link .collapsible-block-link, #breadcrumbs {
-  display: none;
-}
-[[/module]]
-[[/code]]
-
-[[/collapsible]]
-
-[[collapsible show="▷ Tenth Precept" hide="▽ Changing page titles"]]
-
-------
-
-Very useful for fragment pages in ListPages modules.
-
-[[div class="page-title"]]
-Yeet
-------
-[[/div]]
-
-[[code]]
-[[module CSS]]
-#page-title {
-  display: none;
-}
-.page-title {
-  border-bottom: solid 1px #bbbbbb;
-  color: #990011;
-  font-weight: normal;
-  margin: 0 0 0.6em;
-  padding: 0 0 0.25em;
-  font-size: 200%;
-}
-.page-title p {
-  margin: 0;
-}
-[[/module]]
-[[/code]]
-
-[[code]]
-[[div class="page-title"]]
-TITLE
-------
-[[/div]]
-[[/code]]
 
 [[/collapsible]]
 [[/div]]
