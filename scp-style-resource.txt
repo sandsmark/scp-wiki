@@ -2800,3 +2800,171 @@ There is no ethical consumption under capitalism.
 [[/code]]
 
 [[/collapsible]]
+
+@@@@
+@@@@
+[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[/div]]
+[[div style="border-bottom:1px solid #777;"]]
+[[/div]]
+@@@@
+@@@@
+
+++ Modifying Scrollbars
+
+**What it looks like:** [[[component:wondertainmenttheme | Dr. Wondertainment Theme]]] and [[[Nagiros' PoI File]]]
+
+**What to copy:**
+
+[[collapsible]]
+[[code]]
+[[module CSS]]
+::-webkit-scrollbar-thumb
+{
+    [properties]; /* This can be almost anything, from the scrollbar color to border radius to adding an outline. Included below is the code from Nagiros' PoI File for reference. */
+    background: rgba(247,168,184, .5);
+    border-radius: 5px;
+    border: 1px solid black;
+}
+[[/module]]
+[[/code]]
+[[/collapsible]]
+
+@@@@
+@@@@
+[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[/div]]
+[[div style="border-bottom:1px solid #777;"]]
+[[/div]]
+@@@@
+@@@@
+
+++ Mobile Sidebar Button Reformatting
+
+**What it looks like:** [[[component:wondertainmenttheme | Dr. Wondertainment Theme]]], [[[component:wilsons-theme | Wilson's Wildlife Solutions Theme]]] and [[[Nagiros' PoI File]]]
+
+**What to copy:**
+
+[[collapsible]]
+[[code]]
+[[module CSS]]
+@media (max-width: 767px) {
+    .open-menu a {
+         /* If you do not want to change a particular color, delete the relevant line. */
+         border: 0.2em solid COLOR !important; /* This affects the circular border. */
+         background-color: COLOR !important; /* This affects the interior color. */
+         color: COLOR !important; /* This affects the color of the bars inside the circle. */
+    }
+}
+[[/module]]
+[[/code]]
+[[/collapsible]]
+
+@@@@
+@@@@
+[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[/div]]
+[[div style="border-bottom:1px solid #777;"]]
+[[/div]]
+@@@@
+@@@@
+
+++ Amateur Countdown Timer
+
+**What it looks like:** 
+
+[[html]]
+<script type="text/javascript">
+today = new Date();
+BigDay = new Date("January 1, 2050"); // Change date to the day you would like to countdown to
+msPerDay = 24 * 60 * 60 * 1000 ;  // Vbs
+timeLeft = (BigDay.getTime() - today.getTime());// Vbs
+e_daysLeft = timeLeft / msPerDay;// Vbs
+daysLeft = Math.floor(e_daysLeft);// Vbs
+e_hrsLeft = (e_daysLeft - daysLeft)*24;// Vbs
+hrsLeft = Math.floor(e_hrsLeft);// Vbs
+minsLeft = Math.floor((e_hrsLeft - hrsLeft)*60);// Vbs
+document.write("There are only " + daysLeft + " days,  " + hrsLeft +" hours, and " + minsLeft + "  minutes</H4> until the year 2050. <P>"); 
+// I started this from something I got from moonfruit.com  Credits for them. 
+</script>
+[[/html]]
+
+**What to copy:**
+
+[[collapsible]]
+[[code]]
+[[html]]
+<script type="text/javascript">
+today = new Date();
+BigDay = new Date("Month dayofmonth, year"); // Change date to the day you would like to countdown to
+msPerDay = 24 * 60 * 60 * 1000 ;  // Vbs
+timeLeft = (BigDay.getTime() - today.getTime());// Vbs
+e_daysLeft = timeLeft / msPerDay;// Vbs
+daysLeft = Math.floor(e_daysLeft);// Vbs
+e_hrsLeft = (e_daysLeft - daysLeft)*24;// Vbs
+hrsLeft = Math.floor(e_hrsLeft);// Vbs
+minsLeft = Math.floor((e_hrsLeft - hrsLeft)*60);// Vbs
+document.write("There are only " + daysLeft + " days,  " + hrsLeft +" hours, and " + minsLeft + "  minutes</H4> until ... <P>"); 
+// I started this from something I got from moonfruit.com  Credits for them. 
+</script>
+[[/html]]
+[[/code]]
+[[/collapsible]]
+
+@@@@
+@@@@
+[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[/div]]
+[[div style="border-bottom:1px solid #777;"]]
+[[/div]]
+@@@@
+@@@@
+
+++ Nesting Collapsibles
+
+**What it looks like:** 
+
+[[include :scp-sandbox-3:component:collapsible-top]]
+AAAAAAAAAAAAAAAAAAA!
+[[include :scp-sandbox-3:component:collapsible-top show=+ More A? |hide=- AAAAAAAA]]
+[[=]]
++* A
+[[/=]]
+[[include :scp-sandbox-3:component:collapsible-bottom]]
+[[include :scp-sandbox-3:component:collapsible-bottom]]
+
+**What to copy:**
+
+[[collapsible]]
+[[div class="code"]]
+@@[[include :scp-sandbox-3:component:collapsible-top show=SHOW TEXT |hide=HIDE TEXT]]@@
+@@[[include :scp-sandbox-3:component:collapsible-top show=SHOW TEXT |hide=HIDE TEXT]]@@
+@@[[include :scp-sandbox-3:component:collapsible-bottom]]@@
+@@[[include :scp-sandbox-3:component:collapsible-bottom]]@@
+[[/div]]
+[[/collapsible]]
+
+@@@@
+@@@@
+[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[/div]]
+[[div style="border-bottom:1px solid #777;"]]
+[[/div]]
+@@@@
+@@@@
+
+++ False Links/Collapsibles
+
+**What it looks like:**[[footnote]] As seen in [[[SCP-4415]]]. [[/footnote]]
+
+[# + Access █K-class "Dance of a Thousand (DATA EXPUNGED)" Archived File]
+
+[# www.serpents-hand.org]
+
+**What to copy:**
+
+[[collapsible]]
+[[code]]
+[# Link text.]
+[[/code]]
+[[/collapsible]]
