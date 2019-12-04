@@ -1,5 +1,4 @@
 title:Lt. Flops' Author Page
-[[include :scp-wiki:component:pataphysics-theme]]
 [[include :scp-wiki:component:scp-trans-pride |trans-pride-logo= --] |trans-pride-footer= --]]]
 
 [[module CSS]]
@@ -18,9 +17,6 @@ title:Lt. Flops' Author Page
 #header h1 a::before { content: "Lt. Flops' Author Page" !important; }
 #header h2 span::before { content: "Archiving Apotheosis" !important; }
 body{ color: rgb(12, 12, 12); }
-#header #header-extra-div-1,
-#header #header-extra-div-2,
-#header #header-extra-div-3{ display: none; }
 
 /* DIV BLOCKS */
  .quote-block, blockquote{
@@ -50,7 +46,7 @@ body{ color: rgb(12, 12, 12); }
 }
  .scp-showcase{
      font-size: 125%;
-     color: #5b2f8e;
+     color: darkred;
      font-weight: bold;
 }
 
