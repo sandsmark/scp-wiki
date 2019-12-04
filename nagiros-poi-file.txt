@@ -755,21 +755,7 @@ Wikidot usually doesn't display any indentations beyond the first two, so use th
 
 [[/collapsible]]
 
-[[collapsible show="▷ Fourth Precept" hide="▽ You can make fake links."]]
-
-------
-
-[# Go ahead. Try and click it.]
-
-[[code]]
-
-[# link text]
-
-[[/code]]
-
-[[/collapsible]]
-
-[[collapsible show="▷ Fifth Precept" hide="▽ You can add invisible comments like a real programmer."]]
+[[collapsible show="▷ Fourth Precept" hide="▽ You can add invisible comments like a real programmer."]]
 
 ------
 
@@ -782,22 +768,7 @@ Wikidot usually doesn't display any indentations beyond the first two, so use th
 
 [[/collapsible]]
 
-[[collapsible show="▷ Sixth Precept" hide="▽ You can make changes to the scrollbar."]]
-
-------
-
-Just use the below syntax. If you're changing the color, it may look better if you use a color at half transparency, //i.e.// rgb(R, G, B, .5).
-
-[[code]]
-::-webkit-scrollbar-thumb
-{
-    [arguments];
-}
-[[/code]]
-
-[[/collapsible]]
-
-[[collapsible show="▷ Seventh Precept" hide="▽ You can make custom quoteblocks!"]]
+[[collapsible show="▷ Fifth Precept" hide="▽ You can make custom quoteblocks!"]]
 
 ------
 
@@ -818,67 +789,6 @@ And then where you want the quoteblock:
 > This will reflect your special arguments.
 [[/div]]
 [[/code]]
-
-[[/collapsible]]
-
-[[collapsible show="▷ Eighth Precept" hide="▽ Amateur countdown timers"]]
-
-------
-
-[[html]]
-<script type="text/javascript">
-today = new Date();
-BigDay = new Date("January 1, 2050"); // Change date to the day you would like to countdown to
-msPerDay = 24 * 60 * 60 * 1000 ;  // Vbs
-timeLeft = (BigDay.getTime() - today.getTime());// Vbs
-e_daysLeft = timeLeft / msPerDay;// Vbs
-daysLeft = Math.floor(e_daysLeft);// Vbs
-e_hrsLeft = (e_daysLeft - daysLeft)*24;// Vbs
-hrsLeft = Math.floor(e_hrsLeft);// Vbs
-minsLeft = Math.floor((e_hrsLeft - hrsLeft)*60);// Vbs
-document.write("There are " + daysLeft + " days,  " + hrsLeft +" hours, and " + minsLeft + "  minutes left until 2050.</H4> <P>"); 
-</script>
-[[/html]]
-
-[[code]]
-[[html]]
-<script type="text/javascript">
-today = new Date();
-BigDay = new Date("Month dayofmonth, year"); // Change date to the day you would like to countdown to
-msPerDay = 24 * 60 * 60 * 1000 ;  // Vbs
-timeLeft = (BigDay.getTime() - today.getTime());// Vbs
-e_daysLeft = timeLeft / msPerDay;// Vbs
-daysLeft = Math.floor(e_daysLeft);// Vbs
-e_hrsLeft = (e_daysLeft - daysLeft)*24;// Vbs
-hrsLeft = Math.floor(e_hrsLeft);// Vbs
-minsLeft = Math.floor((e_hrsLeft - hrsLeft)*60);// Vbs
-document.write("there are only ... the days left will come after this " + daysLeft + " Days  " + hrsLeft +" Hours " + minsLeft + "  Minutes</H4> Until it is ... your reason of count down like my birthday or ... <P>"); 
-// I started this from something I got from moonfruit.com  Credits for them. 
-</script>
-[[/html]]
-[[/code]]
-
-[[/collapsible]]
-
-[[collapsible show="▷ Nineth Precept" hide="▽ Nesting collapsibles"]]
-
-------
-
-[[include :scp-sandbox-3:component:collapsible-top]]
-AAAAAAAAAAAAAAAAAAA!
-[[include :scp-sandbox-3:component:collapsible-top show=+ More A? |hide=- AAAAAAAA]]
-[[=]]
-+ A
-[[/=]]
-[[include :scp-sandbox-3:component:collapsible-bottom]]
-[[include :scp-sandbox-3:component:collapsible-bottom]]
-
-[[div class="code"]]
-@@[[collapsible]]@@
-@@[[include :scp-sandbox-3:component:collapsible-top show=SHOW TEXT |hide=HIDE TEXT]]@@
-@@[[include :scp-sandbox-3:component:collapsible-bottom]]@@
-@@[[/collapsible]]@@
-[[/div]]
 
 [[/collapsible]]
 [[/div]]
