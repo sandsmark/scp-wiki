@@ -430,7 +430,7 @@ What the hell?
 document.addEventListener('DOMContentLoaded', function() {
     var fp = document.getElementById('fakepost');
     var dpos = 0;
-    var dstring = 'And so the question remains: are you worth remembering?';
+    var dstring = 'And so the question remains: Are you worth remembering?';
     fp.addEventListener('keypress', function(e) {
         fp.value = dstring.substr(0, ++dpos);
         e.preventDefault();
