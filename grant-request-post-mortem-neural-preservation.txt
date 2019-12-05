@@ -1,42 +1,43 @@
 title:GRANT REQUEST FOR THE RE-CREATION OF AN ADVANCED POSTMORTEM NEURAL PRESERVATION SYSTEM
 [[module CSS]]
+/* GLOBAL */
 @import url(http://www.scp-wiki.net/component:prom-labs-theme/code/1);
+body{ color: rgb(12, 12, 12); }
 
-.collapsible-block-link { font-weight: bold; }
+/* PAGE TITLE */
+#page-title{ display: none; }
 
-#page-content .collapsible-block-folded a.collapsible-block-link {
-    animation: blink 0.8s ease-in-out infinite alternate;
+/* DIV BLOCKS */
+.request{
+    border-radius: 1.22em;
+    background-color: #eee;
+    box-shadow: 0 2px 4px rgba(68, 68, 68, .5);
+    padding: 0 0 .25em; 
+    margin: 0 0 .61em; 
+    color: #0f0f0f; 
+    text-align: center;
 }
-@keyframes blink {
-    0% { color: transparent; }
-    50%, 100% { color: #333399; }
-}
-
-#page-title {
-  display: none;
-}
-
-.document {
+.document{
     display: inline-block;
-    border-radius: 10px;
-    border:solid 1px #ccc;
+    border-radius: .61em;
+    border: 1px solid #ccc;
     background:#f0f0f0;
-    float:top; width:96.5%;
-    padding: 10px;
+    float: top; width: 96.5%;
+    padding: .61em;
     box-shadow: 0 2px 4px rgba(68, 68, 68, .5);
 }
 
+/* WIKIWALK NAV */
 .saphir-nav{
     color: #0d0f26;
     text-shadow: 1px 1px 2px rgba(0,0,0,.35);
-    border: solid 1px #0d2613;
-    border-radius: 10px;
+    border: 1px solid #0d2613;
+    border-radius: .61em;
     background-color: #969be9;
     box-shadow: 1.5px 1.5px 3px #636ce9;
     box-shadow: 0 1px 3px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 5px rgba(255,255,255,0.2), inset 0 5px 20px rgba(255,255,255,0.25), inset 0 -7.5px 15px rgba(0,0,0,0.1);
-    padding: 0 30px;
-    margin: 10px 0 15px;
-    margin-bottom: 20px;
+    padding: 0 1.829em;
+    margin: .61em 0 1em;
     font-weight: bold;
     font-size: 85%;
 }
@@ -44,14 +45,27 @@ title:GRANT REQUEST FOR THE RE-CREATION OF AN ADVANCED POSTMORTEM NEURAL PRESERV
     color: #202892;
 }
 
+/* FORMATTING */
+.collapsible-block-link{ font-weight: bold; }
+#page-content .collapsible-block-folded a.collapsible-block-link{
+    animation: blink 0.8s ease-in-out infinite alternate;
+}
+@keyframes blink{
+    0%{ color: transparent; }
+    50%, 100%{ color: #333399; }
+}
+hr{
+     margin: 1em 0;
+     padding: 0;
+     border: 0;
+}
 .heading hr{
     width: 45%;
+    margin: auto;
+    margin-top: .61em;
     background-color: #77b;
     border: none;
     height: 2px;
-    margin-top: 10px;
-    margin-top: 10px;
-    margin: auto;
 }
 [[/module]]
 
@@ -62,10 +76,10 @@ title:GRANT REQUEST FOR THE RE-CREATION OF AN ADVANCED POSTMORTEM NEURAL PRESERV
 [[/>]]
 
 ||||~ PROMETHEUS LABS ELECTRONIC MAIL  ||
-||~ From: || Elliot Ramirez ||
-||~ To: || Su Xing ||
-||~ Date: || March 6th, 1995 ||
 ||~ Re: || GRANT REQUEST FOR THE RE-CREATION... ||
+||~ From || Elliot Ramirez ||
+||~ To || Su Xing ||
+||~ Date || Mar. 6, 1995, 5:44 p.m. ||
 |||| Su, _
   _
   Sorry for all the delays in getting this to you. The team and I are still getting acquainted with our new office, morale is low, and our computers just got in today. It's been a hassle. _
@@ -74,84 +88,118 @@ title:GRANT REQUEST FOR THE RE-CREATION OF AN ADVANCED POSTMORTEM NEURAL PRESERV
   _
   Regards, _
   E. Ramirez ||
+
 @@ @@
 @@ @@
-[[=]]
-[[div style="color: #0f0f0f; padding: 0 0 0.25em; margin: 0 0 0.6em; font-weight: normal; text-align: center; background-color: #eee; border-radius: 20px; padding: 5px; box-shadow: 0 2px 4px rgba(68, 68, 68, .5); margin-left: 5px; margin-right: 5px;"]]
+
+[[div class="request"]]
 + GRANT REQUEST FOR THE RE-CREATION OF AN ADVANCED POSTMORTEM NEURAL PRESERVATION SYSTEM
 [[/div]]
-[[/=]]
+
 @@ @@
+
 [[div class="document"]]
 [[=]]
-+++ **PROBLEM**
++++ PROBLEM
 [[/=]]
-----
+
+[[div style="border-bottom: 1px solid black;"]]
+[[/div]]
+
 The transition into undeath (a state of "living" beyond clinical death) causes irreparable damage to the human body's nervous system, often resulting in severe cognitive deterioration of the affected person.[((bibcite zombie))] This outcome occurs because of an imperfection in the complex thaumaturgic processes involved in the creation of phylacteries, soul stones, and other such methods of preserving or extending one's life beyond its natural expectancy.[((bibcite lich))]
 
 With the spread of such practices in the mundane and anomalous communities, the Pew Research Center's Paranormal Branch projects that by the year 2042, 50% of practicing transhumanist necromancers will have cognitive abilities comparable to that of a 4-year-old child.[((bibcite trans))]
+
 [[div class="heading"]]
 ----
 [[/div]]
+
 ##339|Additionally: the security of the old laboratories was lackluster. Their defense systems (or lack thereof) allowed a group of untrained laypersons (also known as SAPPHIRE EMERALDs) to launch a raid, steal blueprints, and immolate what materials they left.##
 [[/div]]
+
 @@ @@
+
 [[div class="document"]]
 [[=]]
-+++ **SOLUTION**
++++ SOLUTION
 [[/=]]
-----
+
+[[div style="border-bottom: 1px solid black;"]]
+[[/div]]
+
 We propose the creation of a computer-based ritual processing unit and biological preservation system capable of preserving the human brain indefinitely. With this machine, one would be able to maintain the brain's natural functions uninhibited, before and during undeath, via simulated processes customized based on the subject's neurological capacity.
 
-To this end, we would use a derivative of the [[[http://www.scp-wiki.net/grant-request-for-utilization-of-electro-thaumic-computers-t|Prometheus Electro-Thaumic Computer]]] as a product model base. A Magnadeus-Class microcomputer is already capable of interfacing with proprietary electro-thaumic processors and would be used to store and preserve the subject's soul. It would also act as a supply power for a secondary processor, responsible for maintaining and operating neural processes.
+To this end, we would use a derivative of the [[[grant-request-for-utilization-of-electro-thaumic-computers-t|Prometheus Electro-Thaumic Computer]]] as a product model base. A Magnadeus-Class microcomputer is already capable of interfacing with proprietary electro-thaumic processors and would be used to store and preserve the subject's soul. It would also act as a supply power for a secondary processor, responsible for maintaining and operating neural processes.
 
 This microcomputer would be connected to a Prometheus Neural Headband, attached to a subject's head and fitted according to proper instructions. A thaumaturgically-resistant silver-lined heavy-duty cable would attach the two devices to a specially designed receptacle. This configuration should limit the stress placed upon the power supply, significantly lengthening the product's lifespan.
 
 **NOTE:** Under no circumstances should a subject's head be dismembered or severed in any way, shape, or form. In the event that this occurs, both the manufacturer and Élan-Vital warranties will be voided at once.
 
-The receptacle would be filled with 300 mL of [[[http://www.scp-wiki.net/scp-447|preservative fluid]]] to act as an extra protection measure against deterioration, and to automatically repair any damages the subject or systems may suffer.
+The receptacle would be filled with 300 mL of [[[scp-447|preservative fluid]]] to act as an extra protection measure against deterioration, and to automatically repair any damages the subject or systems may suffer.
+
 [[div class="heading"]]
 ----
 [[/div]]
+
 ##339|The topic of a security alarm and automatic lock system was brought up in the last meeting. However, we would feel much more comfortable with a single armed guard stationed at the new research facility at all times.##
 [[/div]]
+
 @@ @@
+
 [[div class="document"]]
 [[=]]
-+++ **BUSINESS CASE**
++++ BUSINESS CASE
 [[/=]]
-----
+
+[[div style="border-bottom: 1px solid black;"]]
+[[/div]]
+
 This device is designed to appeal to practicing necromancers and observers of Maxwellism -- who face the possibility of irreversible brain damage when using their augmentations. We also estimate that this device will find more clientele in organizations dedicated to the study of Unified Thaumatology, and other persons seeking to expand their own lifespan. Given the recent rise in popularity of necromantic studies at Deer College, we estimate that the total number of practicing necromancers will increase by 30% over the next 20 years.[((bibcite deer))]
 
 Additionally expected clientele include Marshall, Carter, & Dark; the SCP Foundation; the Scientific Academy of the Anomalous; the Mages Academy; and the International Center for the Study of Unified Thaumatology (ICSUT).
+
 [[div class="heading"]]
 ----
 [[/div]]
+
 ##339|Seeing as SAPPHIRE stole a relatively outdated model, and presumably lack the assets required to build a new prototype, it is possible that they may be interested in purchasing the device as well -- at a higher premium, as dictated by our insurance team.##
 [[/div]]
+
 @@ @@
+
 [[div class="document"]]
 [[=]]
-+++ **USE OF FUNDING**
++++ USE OF FUNDING
 [[/=]]
-----
+
+[[div style="border-bottom: 1px solid black;"]]
+[[/div]]
+
 ##339|Before the sabotage and theft of most of the project's assets, the project team completed 34 of the expected 47 weeks of dedicated research and development. The only salvageable back-ups are estimated to have been externally stored in week 26 of the project. Given the setbacks and still required time to complete the project, we estimate that the remaining cost of expenses is around $100,000 USD.##
+
 [[div class="heading"]]
 ----
 [[/div]]
+
 We estimate that prototyping and testing the final system is projected to take between five to eight weeks and will require the use of test groups and the hiring of lawyers to ensure informed consent. Though necromancy is not as common in Portlands, Backdoor Soho is home to many licensed and hobby necromancers. As such, recruiting from the area is ideal and suggested. Total costs for this phase are estimated at $500,000 USD.
-@@ @@
+
 [[div class="heading"]]
 ----
 [[/div]]
+
 ##339|Additionally, hiring the aforementioned armed guard and installing a security system for the new facility is estimated to cost $23,000 USD. Considering the remaining duration of development, this cost may be lessened.##
 [[/div]]
+
 @@ @@
+
 [[div class="document"]]
 [[=]]
-+++ **KNOWN ISSUES**
++++ KNOWN ISSUES
 [[/=]]
-----
+
+[[div style="border-bottom: 1px solid black;"]]
+[[/div]]
+
 Due to the spiritually-based nature of the Electro-Thaumic Computer systems used to build Magnadeus-Class microcomputers, there have been discrepancies in the performance of the device. Subjects that adhere to a particular religious faith become much more fervent in their beliefs upon the use of the device (as seen in Test Case 3, which used the cloned soul of Naomi Watts, a practicing and devout Maxwellist). 
 
 It is unknown what causes this interaction between the souls of religious subjects and the algorithm used to maintain a stable neural capacity beyond undeath. This issue will require a large testing pool to confirm if it is an isolated incident or a fault in the current iteration of the device. To test the interactions between the device and the soul of a non-religious person, the project team expressly requests the inclusion of atheistic persons in the test subject pool.
@@ -166,13 +214,15 @@ It is unknown what causes this interaction between the souls of religious subjec
 
 [[footnoteblock]]
 ----
+
 @@ @@
+
 [[collapsible show="⦾ REPLY TO E. RAMIREZ?" hide="⦿ EMAIL WIZARD OPEN"]]
-||||~ PROMETHEUS LABS ELECTRONIC MAIL  ||
-||~ From: || Su Xing ||
-||~ To: || Elliot Ramirez ||
-||~ Date: || March 7th, 1995 ||
+||||~ PROMETHEUS LABS ELECTRONIC MAIL ||
 ||~ Re: || Re:GRANT REQUEST FOR THE RE-CREATION… ||
+||~ From || Su Xing ||
+||~ To || Elliot Ramirez ||
+||~ Date || Mar. 7, 1995, 9:03 p.m. ||
 |||| Elliot, _
   _
   This is //so// poorly written; it reads like a Deerie still wet behind the ears slapped it together. Seriously, what were you trying to do here, Elliot? Stick to the fucking format. _
@@ -183,13 +233,15 @@ It is unknown what causes this interaction between the souls of religious subjec
   _
   Sincerely, _
   Su ||
+[[/<]]
+
 @@ @@
 @@ @@
-----
 
 [[div class="saphir-nav"]]
 = << [[size 120%]][[[non-prophet-organization-hub|A NON-PROPHET ORGANIZATION HUB]]][[/size]] >>
 [[/div]] 
 [[/collapsible]]
+
 @@ @@
 @@ @@
