@@ -6,6 +6,20 @@ title:Simartar's Author Page
 [[module CSS]]
 @import url('https://fonts.googleapis.com/css?family=Exo+2|Just+Another+Hand|Lexend+Peta|Nunito|Playfair+Display|Saira+Stencil+One&display=swap');
 
+div#header h2 span {
+    font-size:0px;
+    padding: 4px;
+}
+div#header h2:after {
+    content: "Secure, Contain, Procrastinate";
+    font-weight: bold;
+    color: #f0f0c0;
+    padding: 19px 0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+    white-space: pre;
+}
+
+
 .text {
     font-family: 'Exo 2', sans-serif;
     font-size: 1.2em;
