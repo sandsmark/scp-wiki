@@ -1,5 +1,12 @@
 title:Jade Skylar's Author Page
 [[include :scp-wiki:component:pride-highlighter |inc-s9-nb-alt= --]]]
+[[module CSS]]
+/* LISTPAGES EXCEPTION */
+ .preview .span,
+ .infobox{
+     display: none !important;
+}
+[[/module]]
 
 [[=image drdog.png]]
 
