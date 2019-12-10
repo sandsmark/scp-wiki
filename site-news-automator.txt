@@ -7,10 +7,12 @@ Copy this template and paste it in your sandbox. The dates will have to be chang
 
 [[code]]
 [[=]]
-**« [[[news-10-2018|October 2018]]] | __[[[news-11-2018|November 2018]]]__ | [[[news-12-2018|December 2018]]] »**
+[[=]]
+**« [[[news-10-2019|October 2019]]] | __[[[news-11-2019|November 2019]]]__ | [[[news-12-2019|December 2019]]] »**
 [[/=]]
 
 [[module CSS]]
+
 #header h2 span {
     display: block;
     margin: 0;
@@ -23,7 +25,7 @@ Copy this template and paste it in your sandbox. The dates will have to be chang
 }
 
 #header {
-    background-image: url(http://kaktuskontainer.wikidot.com/local--files/news-08-2018/SCP-News-2018-08-Logo.png);
+    background-image: url(http://scp-wiki.wdfiles.com/local--files/news/SCPNewsLogo);
 }
 
 #header h2 span::before {
@@ -41,55 +43,56 @@ Copy this template and paste it in your sandbox. The dates will have to be chang
 
 ++++* Fandom Stuff
 
-* 
+*  Blah
 
 ++++* Featured Articles
 
-* 
+
+* article
+
+* article 
+
+* article
+*  
+++++* Reviewer's Spotlight Articles
 
 
-++++* Event Featured Articles
+* [[[SCP-]]] - ("") - blurb. Written by [[*user USER]], selected by //[USER].//
 
-The theme for the month of October was //Shadow!//
+* [[[SCP-]]] - ("") - blurb. Written by [[*user USER]], selected by //[USER].//
 
-* In [[[SCP-XXXX]]] ("[TITLE]"), by [[*user ]], 
-* In [[[SCP-XXXX]]] ("[TITLE]"), by [[*user ]], 
-* In [[[SCP-XXXX]]] ("[TITLE]"), by [[*user ]], 
+* [[[SCP-]]] - ("") - blurb. Written by [[*user USER]], selected by //[USER].//
 
-
-
-++++* Editor's Choice
-
-* 
-> 
-
-
-
-----
+* [[[SCP-]]] - ("") - blurb. Written by [[*user USER]], selected by //[USER].//
 
 
 [[f>toc]]
 
 ----
 
-You will notice little '📈' emojis besides some articles. That denotes SCP articles which were under 30 and tales which were under 20 when this edition of site news was posted. Give them a little love! Speaking from personal experience, the most frustrating thing that can happen to an article is not deletion, but stagnating below 20 without any comments. So try to read, vote, and comment on these articles! They're often hidden gems :)
+You will notice little '📈' emojis beside some articles. That denotes SCP articles which were under 30 and tales which were under 20 when this edition of site news was posted. Give them a little love! Speaking from personal experience, the most frustrating thing that can happen to an article is not deletion, but stagnating below 20 without any comments. So try to read, vote, and comment on these articles! They're often hidden gems :)
 
 +++ Week of November 1st:
 
 
-++++ SCPs
+++++* SCPs
 
 
 
-++++ Tales
+++++* Tales
 
 
-++++ GOI Formats
 
-++++ Author Pages
+++++* GoI Formats
 
 
-++++ Misc
+
+++++* Misc
+
+
+
+
+@@ @@
 
 
 
@@ -97,71 +100,115 @@ You will notice little '📈' emojis besides some articles. That denotes SCP art
 +++ Week of November 8th:
 
 
-++++ SCPs
-
-
-++++ Tales
-
-
-++++ GOI Formats
-
-
-++++ Author Pages
+++++* SCPs
 
 
 
-++++ Misc
+++++* Tales
+
+
+
+++++* GoI Formats
+
+
+
+++++* Misc
+
+
+@@ @@
 
 
 +++ Week of November 15th:
 
 
-++++ SCPs
-
-
-++++ Tales
+++++* SCPs
 
 
 
-++++ GOI Formats
-
-
-++++ Author Pages
+++++* Tales
 
 
 
-++++ Misc
+++++* GoI Formats
 
 
 
-
-+++ Week of November 22nd:
-
+++++* Misc
 
 
-++++ SCPs
+@@ @@
+
++++ Week of November  22nd:
+
+
+++++* SCPs
 
 
 
-++++ Tales
-
-++++ GOI Formats
+++++* Tales
 
 
-++++ Author Pages
 
-++++ Misc
+++++* GoI Formats
+
+
+
+++++* Misc
 
 
 -----
 
 
-
+-----
+@@ @@
 +++ Fanart
 
+[[module css]]
+/*
+This tooltip hover effect is adapted from LurkD's code on http://www.scp-wiki.net/command-query-separation
+*/
+.hover {
+}
+.hover:hover {
+  text-decoration: none;
+    border-bottom: none;
+}
 
-------
+.hover span { display: none;}
+.hover:hover span {
+    position: absolute;
+    display: inline;
+    margin: -5px;
+    height: auto;
+    width: auto;
+    background: rgba(245, 245, 245, 0.95);
+    border-style: double;
+    border-color: #fff;
+    color: #b01;
+    font-weight: bold;
+    padding: 1em;
+}
+.hover:hover span span {
+    position: relative;
+    margin: auto;
+    height: auto;
+    width: auto;
+    border: none;
+    padding: 0;
+}
+[[/module]]
 
+Here you will find a selection of artists who consistently released new work throughout the month and whose art output is worth following. The thumbnails are clickable.
+
+See these and more artists' works on the [[[scp-artwork-hub|]]].
+
+@@ @@
+----
+
+
+@@ @@
+@@ @@
+---- 
 +* Q&A:
 
 ++* Q: Can I replace a blurb that you wrote for one of my articles with my own? I'm not satisfied with it.
@@ -175,9 +222,10 @@ A: Sure! If the changes are not limited to your own article(s) and/or are substa
 ++* Q: I wrote an article and it seems to have stuck. Can I send a blurb of mine to one of the frequent collaborators?
 
 A: Yup! It's much easier if you come to us about it, and it gives you the control over what you want shown on the news page.
+----
 
 [[=]]
-**« [[[news-10-2018|October 2018]]] | __[[[news-11-2018|November 2018]]]__ | [[[news-12-2018|December 2018]]] »**
+**« [[[news-10-2019|October 2019]]] | __[[[news-11-2019|November 2019]]]__ | [[[news-12-2019|December 2019]]] »**
 [[/=]]
 
 [[/code]]
