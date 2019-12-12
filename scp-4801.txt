@@ -220,6 +220,7 @@ title:SCP-4801
     font-size: 0.8em;
     margin-left: -0.5em;
     margin-right: -0.5em;
+    z-index: 9999;
 }
 
 .footnote_content,
@@ -243,7 +244,7 @@ title:SCP-4801
     font-size: calc(var(--base-font-size) * 0.9);
     text-indent: 0.75rem;
     letter-spacing: 0.0125rem;
-    z-index: 5;
+    z-index: 9999;
 }
 
 .footnote_num {
