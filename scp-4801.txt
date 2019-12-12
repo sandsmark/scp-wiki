@@ -1,0 +1,927 @@
+title:SCP-4801
+[[include :scp-wiki:component:black-highlighter-theme-dev]]
+
+[[module css]]
+
+#page-content > br:nth-child(4) {
+  display: none;
+}
+
+#page-content p {
+   position: relative;
+}
+
+#main-content p:first-of-type {
+    margin-top: 0.25rem;
+}
+
+.scp-image-container {
+  display: flex;
+  float: right;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50%;
+  padding: 0 0 1rem 1rem;
+}
+
+.scp-image-container.full-image {
+  width: 100%;
+  padding: 1rem;
+}
+
+.scp-image-block {
+  box-shadow: initial;
+}
+
+.scp-image-caption {
+  font-size: 0.75rem;
+  background-color: rgb(var(--light-gray-monochrome));
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  line-height: 1.25;
+  color: rgb(var(--white-monochrome));
+  font-weight: 600;
+  letter-spacing: 0.0125rem;
+  border-left: .0625rem solid rgb(var(--swatch-primary-darkest));
+  border-right: .0625rem solid rgb(var(--swatch-primary-darkest));
+  border-bottom: .0625rem solid rgb(var(--swatch-primary-darkest));
+}
+
+.scp-image-container, .scp-image-container * {
+  box-sizing: border-box;
+}
+
+#page-content .collapsible-block {
+    display: block;
+    padding: 0.75em;
+    background-color: rgb(var(--pale-gray-monochrome));
+    border-top: 0.125rem dashed rgb(var(--light-gray-monochrome));
+    border-bottom: 0.125rem dashed rgb(var(--light-gray-monochrome));
+}
+
+#page-content .collapsible-block .collapsible-block-folded,
+#page-content .collapsible-block .collapsible-block-unfolded-link  {
+    text-align: center;
+    font-family: var(--header-font);
+}
+
+.footnote_block {
+    display: inline-flex;
+    font-family: var(--body-font);
+    font-weight: 600;
+    font-size: 0.8em;
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+}
+
+.footnote_content,
+.footnote_content * {
+    display: block;
+    position: absolute;
+    right: -14rem;
+    width: 10rem;
+    line-height: 1.2;
+    border: 0.125rem solid rgb(var(--swatch-primary));
+    font-family: var(--body-font);
+    padding: 0.5rem 0.25rem 0.5rem 0.5rem;
+    text-shadow: initial;
+    filter: initial;
+    color: rgb(var(--black-monochrome));
+    transition:
+     opacity 600ms cubic-bezier(0.4, 0.0, 0.2, 1),
+     transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    pointer-events: none;
+    font-weight: normal;
+    font-size: calc(var(--base-font-size) * 0.9);
+    text-indent: 0.75rem;
+    letter-spacing: 0.0125rem;
+    z-index: 5;
+}
+
+.footnote_num {
+    cursor: pointer;
+    color: rgb(var(--link-color));
+    height: 1em;
+    width: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    margin-left: 0.25em;
+    font-variant: lining-nums;
+    font-size: 0.9em;
+    position: relative;
+    bottom: 0.6rem;
+    border-radius: 50%;
+}
+
+.footnote_block .footnote_content::before {
+    content: " ";
+    position: absolute;
+    font-size: 1em;
+    top: -0.5em;
+    left: -0.5em;
+    font-weight: 900;
+    color: rgb(var(--white-monochrome));
+    background-color: rgb(var(--link-color));
+    height: 1em;
+    width: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25em;
+    font-variant: lining-nums;
+    border-radius: 50%;
+    text-indent: 0;
+}
+
+.footnote_block.one .footnote_content::before {
+    content: "1";
+}
+
+.footnote_block.two .footnote_content::before {
+    content: "2";
+}
+
+.footnote_block.three .footnote_content::before {
+    content: "3";
+}
+
+.footnote_block.four .footnote_content::before {
+    content: "4";
+}
+
+.footnote_block.five .footnote_content::before {
+    content: "5";
+}
+
+
+.footnote_block.six .footnote_content::before {
+    content: "6";
+}
+
+
+.footnote_block.seven .footnote_content::before {
+    content: "7";
+}
+
+.footnote_block.eight .footnote_content::before {
+    content: "8";
+}
+
+.footnote_block.nine .footnote_content::before {
+    content: "9";
+}
+
+.footnote_block.ten .footnote_content::before {
+    content: "10";
+}
+
+.footnote_block.eleven .footnote_content::before {
+    content: "11";
+}
+
+.footnote_block.twelve .footnote_content::before {
+    content: "12";
+}
+
+.footnote_block.thirteen .footnote_content::before {
+    content: "13";
+}
+
+.footnote_block.fourteen .footnote_content::before {
+    content: "14";
+}
+
+.footnote_num + span {
+    transform: translateX(-25%);
+    opacity: 0;
+}
+
+.footnote_num:hover + span {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+@media (max-width: 1200px) {
+    .footnote_content {
+          position: fixed;
+          bottom: 1em;
+          left: 12.5%;
+          background-color: rgba(var(--white-monochrome));
+          width: 75%;
+          max-width: 75vw;
+    }
+}
+
+.document-main {
+    position: relative;
+}
+
+.document-main > br {
+    display: none;
+}
+
+.document-main > div {
+    display: block;
+    width: calc(100% - 3rem);
+    background-color: rgb(var(--very-light-gray-monochrome), 1);
+    padding: 0.75rem 0.75rem 0.5rem;
+    margin: 1.5rem 0.5rem 0.5rem 0.5rem;
+    border: 0.25rem rgb(var(--swatch-border-color)) solid;
+    position: relative;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    font-size: inherit;
+}
+
+.document-main > div > p:last-of-type {
+    margin-bottom: 0;
+}
+
+.document-main > div::before {
+    content: " ";
+    position: absolute;
+    top: -1.25rem;
+    left: -0.5rem;
+    padding: 0.5em 0.5em;
+    color: rgb(var(--white-monochrome));
+    font-size: calc(12px + (14 - 12) * ( (100vw - 300px) / ( 800 - 300) ));
+    font-family: var(--title-font);
+    font-variant: all-petite-caps;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-indent: 0;
+    display: flex;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.document-main > div.sp-containment,
+.document-main > div.discovery,
+.document-main > div.description {
+    background-color: rgba(var(--light-gray-monochrome),0.15);
+    border-color: rgba(var(--swatch-primary-darkest),1);
+}
+
+.document-main > div.sp-containment::before,
+.document-main > div.discovery::before,
+.document-main > div.description::before {
+    background-color: rgba(var(--swatch-primary-darkest),1)
+}
+
+.document-main > div.sp-containment::before {
+    content: "Special Containment Procedures";    
+}
+
+.document-main > div.discovery::before {
+    content: "Discovery";    
+}
+
+.document-main > div.description::before {
+    content: "Description";
+}
+
+.document-main > .sp-containment > .sp-containment-image {
+  grid-area: image;
+  width: 15vw;
+  float: right;
+  padding-left: 1rem;
+}
+
+.document-main > .sp-containment > .sp-containment-image img {
+  max-height: 110vh;
+}
+[[/module]]
+[[include :scp-wiki:component:anomaly-class-bar-source
+|item-number= 4801
+|clearance= 2
+|container-class= euclid
+|secondary-class= none
+|disruption-class= vlam
+|risk-class= caution
+]]
+-----
+[[div class="document-main"]]
+[[div class="sp-containment"]]
+A keycard activated door is installed on the staircase leading towards SCP‑4801. Only Foundation employees with Level 2 clearance are allowed entry. The basement containing SCP‑4801 is retrofitted to a standard Caution-Class Containment Chamber with constant remote surveillance. 
+
+Testing of SCP‑4801 is approved to any employees with Level 3 clearance following a protocol review from SCP‑4801 Lead Researcher, Dr. Gary Lark. 
+
+When testing is not in progress, two Scranton Reality Anchors (SRA) are placed within five meters of SCP-4801's doors. 
+[[/div]]
+[[div class="description"]]
+[[div]]
+[[div_ class="scp-image-container"]]
+[[div_ class="scp-image-block"]]
+[[image scp-cognizant.jpg]]
+[[/div]]
+[[div_ class="scp-image-caption"]]
+SCP‑4801 in its "welcoming" state.
+[[/div]]
+[[/div]]
+
+SCP‑4801 is a freight elevator of unknown make and model within the storage basement of the Lewis Apartment Buildings in New York City, NY. In comparison to the state of the Lewis Apartment Buildings, SCP‑4801 is in an advanced state of disrepair and shows extensive use. Additionally, SCP‑4801 is not included in any known blueprints for the building.
+
+Under all known current standards for cognizance, SCP‑4801 is considered sentient, capable of reasoning and thought. This property is not apparent from the exterior of SCP‑4801 and can only be observed from its interior.
+
+When a human subject enters SCP‑4801, it will often engage in conversation. If more than one individual enters, it will converse with only one subject while the others will not observe the anomalous behavior at all.[[span class="footnote_block one"]][[span class="footnote_num"]]1[[/span]][[span class="footnote_content"]]With the exception of the chosen individual appearing to speak to themselves.[[/span]][[/span]] This is not believed to be due to SCP‑4801 using any degree of mental manipulation as recordings can still detect SCP‑4801's voice if attached to the chosen individual. Though not fully understood, it's believed that this occurs via use of focused, directional audio using manipulation of SCP-4801's four speakers contained within its walls at each corner of its interior.  
+
+In addition to SCP‑4801's perceived sentience, it also displays some degree of reality altering ability, often conveying information that appears to be related to future events. However, multiple measurements of Hume levels surrounding SCP‑4801 have shown a lowering in Hume levels when these precognitive statements occur. As such, it is understood that SCP‑4801 is likely altering reality to its words rather than predicting future events. Further testing is still needed to confirm this.
+
+While under Foundation observation, SCP‑4801 has only been shown to function as an elevator four times. Despite being within the Lewis Apartment Building, subjects within SCP‑4801 during these events are taken to an unknown location where an unknown being resides [SCP-4801-β.] //[[See Test Log #29]]//
+
+SCP‑4801 refers to itself as //"A.J. Tah."// Additionally, it has described itself as being in the following "states," shifting indiscriminately from one to other:
+
+* **Welcoming State:** Both doors open, fully lit interior, jovial attitude
+* **Questioning State:** Single open door[[span class="footnote_block two"]][[span class="footnote_num"]]2[[/span]][[span class="footnote_content"]]Generally the left-most door when facing SCP‑4801[[/span]][[/span]], partially lit interior, startled attitude
+* **Curious State:** Both doors open, partially lit interior, inquisitive attitude
+* **Disappointed State:** Both doors closed[[span class="footnote_block two"]][[span class="footnote_num"]]3[[/span]][[span class="footnote_content"]]Possible to force the doors open[[/span]][[/span]], unlit interior, dismissive attitude
+* **Aggressive State:** Both doors open, unlit interior, hostile attitude
+* **Testing State:** Doors partially open, yellow-lit interior, playful attitude
+
+
+SCP‑4801 has been observed to be in other unknown states, however, SCP‑4801 itself has not given them a name. These states with Foundation given names are as follows:
+
+* **Red State:** Both doors closed[[span class="footnote_block four"]][[span class="footnote_num"]]4[[/span]][[span class="footnote_content"]]Not possible to force open doors.[[/span]][[/span]], presumed red-lit interior[[span class="footnote_block five"]][[span class="footnote_num"]]5[[/span]][[span class="footnote_content"]]Red hued light can be observed between the closed doors.[[/span]][[/span]], attitude unknown
+* **Empty State:** Both doors open, unlit interior, attitude unknown[[span class="footnote_block six"]][[span class="footnote_num"]]6[[/span]][[span class="footnote_content"]]SCP‑4801 is unresponsive in this state.[[/span]][[/span]]
+* **Threatening State:** Doors partially open, yellow-lit interior, furious attitude[[span class="footnote_block seven"]][[span class="footnote_num"]]7[[/span]][[span class="footnote_content"]]This state appears to be identical to the "Testing State." However, if any subject attempts to enter through the partially open doors, they will close instantly, terminating the subject.[[/span]][[/span]]
+[[/div]]
+[[/div]]
+[[div class="discovery"]]
+On March 13, 2019 Mobile Task Force Gamma-5 //("Red Herrings")// detected the possibility of an anomalous object being discussed within a private chat shared between four tenants of The Lewis apartment building. The Anomalous Object Spider (AOS) sent an alert when the tenants displayed an unusual degree of "obsessive behavior" towards SCP‑4801. 
+
+Tenants had discovered SCP‑4801 three months prior to detection and had begun to utilize its apparent precognitive abilities. It is unknown to what degree the three tenets have gained advantages using these abilities.
+
+Soon after detection, Gamma-5 was activated and sent to contain the spread of SCP‑4801's anomalous behavior. Class B Amnetics were administered to all known affected individuals and containment procedures were put in to effect.
+[[/div]]
+
+
+++ Relevant SCP-4801 Testing Logs Collection
+
+[[div]]
+[[div class="blockquote"]]
+**Early Testing:** SCP-4801 states have been retroactively added to these early test logs as states were initially unknown. Research Notes and Video Surveillance were used as confirmation.
+[[/div]]
+@@ @@
+[[collapsible show="➕ Show Test Log #1 ➕" hide="➖ Hide Test Log #1 ➖" hideLocation="both"]]
+**SCP-4801 State:** Questioning
+**Test Subject:** Dr. Gary Lark
+**Testing Notes:** First test following initial discovery and containment. Anomalous properties largely unknown though affected civilians claim precognizance has been observed. The goal of preliminary testing is to empirically confirm this ability.
+
+------
+
+//<Begin Audio Log>//
+**Dr. Lark:** //[Dr. Lark clears his throat.]// Begin log: initial testing of SCP-4801. It has been largely determined that SCP-4801 does not appear to display any sort of threat and my request for a D-Class was denied. As such, for our first test, I have volunteered to enter SCP-4801 myself. 
+
+//[Foot steps as Dr. Lark approaches SCP-4801.]//
+
+**Dr. Lark:** Only a single door is open with the interior lights quite dim as compared to its initial discovery. Note, the left-most door is open in this case.
+
+//[Footsteps stop. Dr. Lark takes a long breath.]//
+
+**Dr. Lark:** I'm now entering SCP-4801. Dr. Miles, are you reading any unusual activity?
+
+**Dr. Miles:** No, sir. Hume levels seem baseline, though oscillating slightly. Nothing to worry about. No unusual readings on the oscilloscope either. 
+
+//[Footsteps shift from dull to metallic.]//
+
+**Dr. Lark:** Excellent. I'm now inside--
+
+//[Note: The following voice was initially labelled as "Unknown Vocalization." It has since been revised for clarity.]//
+
+**SCP-4801:** Ah! By the yeast! Must you be so loud? Will you cease? Unless you are proud to break the peace. 
+
+**Dr. Lark:** //[Near whisper.]// Miles, confirm you are reading this?
+
+**Dr. Miles:** //[Message displays slight corruption in recording]// Can you hurry i-- //[Static]// --es, confirmed, sir, we are picking up a voice of some sort.
+
+**Dr. Lark:** Excellent. Please note that the vocalizations are n--
+
+**SCP-4801:** //[Interrupting]// Mmm, thank you... Gary Lark, it is, yes? Have you disrupted me so as to embark from that which you once knew?
+
+**Dr. Miles:** //[Quiet whisper to herself.]// Gary La--?
+
+**Dr. Lark:** Gary... Lark...? 
+
+//[Extended pause]//
+
+**Dr. Miles:** Dr. Lark, sir, is everything okay?
+
+**Dr. Lark:** Oh, right, right. Yes. Apologies. Erm... How did it know my name?
+
+**Dr. Miles:** Unknown, sir. However, we are detecting a slight sinking of Hume levels within your vicinity. Keep alert.
+
+**SCP-4801:** There is very much that I know, Gary Lark. For instance, you are a research doctor with assistance. Discovering my anomalous foresight. Yet you are still in the dark.
+
+**Dr. Lark:** Doctor...? Am... I? //[Dr. Lark pauses; A siren sounds in the control room.]//
+
+**Dr. Miles:** Gary! Hume levels just dropped to dangerous levels! You must exit now!
+
+//[The siren continues as Dr. Lark's footsteps begin, rapidly switching from metallic to dull.]//
+
+**SCP-4801:** //[Voice fading as Dr. Lark exits.]// Oh, must you? Do not vanish! There is quite a lot I wished to ask you, Gary Lark... Siddhartha desires you...
+
+**Dr. Lark:** Confirmation: I have exited SCP-4801. Dr. Miles, did you notice anything unusual when the levels dropped?
+
+//[Beeping sound as Dr. Lark enters his entry code on the keypad to enter observation center.]//
+
+**Dr. Miles:** Nothing visibly, no, sir. Just...
+
+//[Beeping continues with a harsh tone when Dr. Lark inputs code incorrectly.]//
+
+**Dr. Lark:** What the hell... I can't remember my code.
+
+**Dr. Miles:**  //[Chuckling slightly.]// You always forget, sir. We should just switch this to a keycard entry.
+
+//[Door beeps as Dr. Miles lets Dr. Lark in.]//
+
+**Dr. Lark:** //[Frustrated.]// Dammit, no. I will just have to remember.
+
+**Dr. Miles:** Just like how you remembered to wear your lab coat, sir?[[span class="footnote_block eight"]][[span class="footnote_num"]]8[[/span]][[span class="footnote_content"]]Dr. Lark was not wearing a lab coat.[[/span]][[/span]]
+
+**Dr. Lark:** //[Jokingly in tone]// Oh, bugger off, Demi. We don't need to wear those constantly. //[Pause.]// Oh, the log is still recording. Shut it off, will you?
+
+**Dr. Miles**: Yes, sir.
+
+//<End Log>//
+[[/collapsible]]
+@@ @@
+[[collapsible show="➕ Show Test Log #11 ➕" hide="➖ Hide Test Log #11 ➖" hideLocation="both"]]
+**Test Log #:** 11
+**SCP-4801 State:** Disappointed
+**Test Subject:** D-3MQ1
+**Testing Notes:** Following a series of tests using inanimate objects, it has been determined that SCP-4801 does not acknowledge their existence. Following the hazardous lowering of Hume levels during the first test, a second request for D-Class Test Subject has been approved with the condition that the D-Class' safety will be assured.
+
+------
+
+//<Begin Audio Log>//
+**Dr. Lark:**Begin log: D-3MQ1 was it? //[Sound of papers shuffling.]// That is far too much of a mouthful. I'll just refer to you as 3M, understood?
+
+**D-3MQ1:** Works for me. As long as that doesn't mean I'm gonna be made into scotch tape or somethin' //[D-3mQ1 chuckles as he approaches SCP-4801.]// Uh, doc, the door's closed. 
+
+**Dr. Lark:** //[To Dr. Miles]// It was open just a moment ago, wasn't it?
+
+**Dr. Miles:** Mhm. Yes, sir, it closed as soon as the D-Class exited the observation room.
+
+**Dr. Lark:** Perhaps it reacts to whoever is nearby? Interesting. //[To D-3MQ1]// Okay, 3M. Try to knock on the door. 
+
+//[D-3mQ1 knocks. Silence for approximately one minute.]//
+
+**D-3MQ1:** Nothin'. Want me to knock harder?
+
+**Dr. Lark:** Mmm... yes, please do.
+
+//[D-3mQ1 strikes the door thrice with executive force.]//
+
+**D-3MQ1:** Fuck, okay, that hurt.
+
+**Dr. Lark:** You did not need to hit it that hard, 3M.
+
+**D-3MQ1:** Whatever, okay? This damn door isn't openin'. What now?
+
+**Dr. Lark:** //[To Dr. Miles]// Have we tried forcing it open before?
+
+**Dr. Miles:** No, sir. The door has never been fully closed in prior tests. It's worth a shot.
+
+**Dr. Lark:** //[To D-3MQ1]// Alright, 3M. We'd like you to try forcing the door open. 
+
+**D-3MQ1:** //[With an incredulous tone.]// With my hands? Uh, alright. Y'all are persistent.
+
+//[D-3MQ1 grunts as the doors to SCP-4801 make a metallic scraping sound]//
+
+**D-3MQ1:** //[Under strain.]]// Fuckin'... this isn't easy. Y'all are lucky I'm not some beanpole.
+
+ **Dr. Lark:** Just get the door open, 3M. 
+
+//[Loud metallic bang as doors to SCP-4801 slam open. Dull thud as D-3MQ1 falls in to the interior.]//
+
+**SCP-4801:** //[Sound of disgust.]// Just come in. Must you drum on me, you horrendous buffoon? 
+
+**D-3MQ1:** Who are you callin' a buff-- hold on a fuckin' second. //[D-3MQ1 grunts as he lifts himself to his feet.]// Who the hell said that?
+
+**SCP-4801:** What a lost cause, you are. There shall be no grand applause when one such as you sees the jaws of time descend and ends your pitiful breath.
+
+//[Approximately 30 seconds of silence.]//
+
+**D-3MQ1:** Uh, doc, what in the fuck is going on? Is... is this--
+
+**Dr. Lark:** 3M, please converse with the voice.
+
+**D-3MQ1:** Do I have to be polite?
+
+**Dr. Lark:** We are not sure what it's capable of so it may be in your best interest to be civil, yes.
+
+//[D-3MQ1 groans]// 
+
+**D-3MQ1:** Alright... uh, hello? Who... is this?
+
+**SCP-4801:** This one asks who I am? //[SCP-4801 laughs in a condescending manner.]]// I know this is your pitiful task so I will provide.
+
+**D-3MQ1:** Jesus, this is fuckin' weird... uh, 'preciate it, I guess? So... uh--
+
+**SCP-4801:** //[Interrupting]// You may refer to me as "A.J." Speak with speed, impudent hayseed.
+
+**D-3MQ1:** //[Voice rising.]// What in the hell is a hayseed?!
+
+**Dr. Lark:** 3M, calm. Be calm. Do not anger it.
+
+**D-3MQ1:** //[Takes a long breath.]// Y'all make me deal with some weird shit around here. 
+
+**Dr. Lark:** Just ta--
+
+**D-3MQ1:** God, okay, just shut it. 
+
+**Dr. Lark:** 3M, do I need to remind you--
+
+**Dr. Miles:** Sir, should you be talking to him like that?
+
+**Dr. Lark:** Wh-what?... Miles, he's a D-Class. I can talk to him however I want.
+
+**D-3MQ1:** Goddamned. I'm sorry, okay? //[Grunts]// A.J., yeah? What in the hell did I do to you?
+
+**SCP-4801:** To me? Oh, in your misery you misunderstand. Your arms close to enlightenment as your hand strikes forward to repel all that might make you well. My state is disappointment and so, thus, I find you. 
+
+**D-3MQ1:** //[Long sigh.]// What is this thing's deal? 
+
+**Dr. Lark:** 3M, please ask SCP-4801 the following question, word for word: "How will I find enlightenment?"
+
+**D-3MQ1:** Okay. Uh, A.J. How will I find enlightenment?
+
+**SCP-4801:** Do you ask for yourself or for Dr. Lark? Who might insist?
+
+**Dr. Lark:** //[To Dr. Miles]// How does it know I'm here?
+
+**Dr. Miles:** Not sure, sir. Hume levels do seem to be dropping slightly, though. //[To D-3MQ1]// 3M, do you feel anything unusual?
+
+**D-3MQ1:** Unusual? 'sides this snarky as fuck elevator talkin' down to me? //[Sighs]// No, I do not feel anythin'. Just irritated.
+
+**SCP-4801:** This is how you always are and will be, Lucas of the class of D. Enlightenment will never find you as you exist in this cognitive shell. Born to those who gave you all; Squandered by you whose mind is now forever as filthy as your soul.
+
+//[Alarms begin sounding.]//
+
+**Dr. Miles:** Sir! Gary, look! The meters! Holy shi--
+
+**Dr. Lark:** 3M, get out of there now!
+
+**D-3MQ1:** //[Startled]// Wha-- Oh... oh fuckin' hell, I don't feel so--
+
+//[Additional alarms begin blaring.]//
+
+**Dr. Lark:** What in the hell... Demi, do you see...--
+
+//[D-3MQ1 shouts are cut off by brief static interferance. Video surveillance does not display anything unusual during this time.]//
+
+**D-3MQ1:** Oh... //[Groans]// Uh, fuck. What the fuck just happened...?
+
+**Dr. Lark:** Erm... we aren't sure. Pull yourself together, 3M. Get out of there now.
+
+**Dr. Miles:** S-sir, that almost reached zero. Whatever happened, it must have been... massive.
+
+**Dr. Lark:** Let's just get the D-Class out of there before SCP-4801 does something worse... whatever it was. //[Slight beep as Dr. Lark presses a call button.]// We need an extraction team quick. D-class in danger. Extremely low Hume levels, be prepared.
+
+**SCP-4801:** Yes... yes... how it's always been. Filth. You are filth. You only lose what you cling to and so you find yourself within new skin. Feel it shed away, growing anew. Flesh on flesh. Bone on bone. Chew on your tongue. Weeze through your lung.
+
+**D-3MQ1:** //[Loud squelching sounds followed by loud crying.]// Oh... fuck wha-- please... get me out... this is so fuckin' wrong. it's all wrong.
+
+**Dr. Lark:** Demi, turn that thing off. We don't need a log of a D-class sobbing.
+
+**Dr. Miles:** Right... Yes, sir.
+
+//<End Log>//
+
+------
+
+**Post Log Notes:** Following Test 11, Raisa Causality Retainment Databases //(RCRdb)// detected an attack on the Foundation's Perpetual Entanglement Data Register //(PEDR)//. Raisa staff have commenced a causal cross-reference scan and will compile a report once completed. In the meantime, I have suggested an increase of SCP-4801's Disruption Class to Keneq. I believe SCP-4801's reality altering ability extends farther than originally believed.
+
+Additionally, I have resubmitted my request for a third research team member. This anomaly clearly shows more significant danger than originally believed. This request was initially denied on grounds of allegedly having a third member already. This was found to be due to a database error and a third research member has been assigned.
+[[/collapsible]]
+@@ @@
+[[collapsible show="➕ Show Test Log #29 ➕" hide="➖ Hide Test Log #29 ➖" hideLocation="both"]]
+**Test Log #:** 29
+**SCP-4801 State:** Welcoming
+**Test Subject:** MTF Sigma-22 ("Prey Dogs") Primary Team
+**Testing Notes:** At last, MTF testing has been approved. To finally have test subjects that are familiar and comfortable with test protocol... well, my informal notes here are likely testament to how pleased I am. I think the preliminary Raisa Report may have alerted the higher-ups of the potential danger of this anomaly. The numerous database errors following test 11 were particularly alarming.
+
+Additionally, Sigma-22 specializes in [http://www.scp-wiki.net/scp-es-100 Elevator-based anomalies], which I was not aware were common enough to have their own MTF. I'm not particularly surprised.
+
+The goal of today's testing is to further question SCP-4801 as to its motivations and goals. Sigma-22 is outfitted with portable Scranton Reality Anchors, though it is known they're not always as effective. It is our hope that they will be enough to halt SCP-4801's abilities. What those abilities are--Clearly some measure of reality altering but to what degree? With a few more tests, I believe we can answer that question.
+
+We are outfitting the MTF members with body cameras for further testing as well.
+
+------
+
+//<Begin Audio Log>//
+**Dr. Lark:** //[Clears throat]// Begin log: Test number 29. This will be the first test involving MTF Sigma-22, also known as the "Prey Dogs." I'm joined by Dr. Demi Miles and, our newest addition, Dr. Zoë Palme.
+
+**Dr. Palme:** Happy to be here, sir. 
+
+//[MTF Sigma-22 ("Prey Dogs") is finishing gearing up into standard Caution-Class tactical gear within the testing chamber.]//
+
+**S22-1:** Dr. Lark, right? I finished briefing my men. //[Pulls on a strip of Velcro to tighten it]// Identify yourselves. Mouthfuls for the record and what we'll actually be calling you lot.
+
+**S22-2:** Sigma-22 Dos, here, sir. I usually go by Dos.
+
+**S22-3:** Sigma-22 Three, reporting for the record. You can just call me Three.
+
+**S22-1:** And Sigma-22 One here. Just call me Op.
+
+**Dr. Lark:** Op, Dos, and Three... alright. Got it. Can you repeat back the protocol?
+
+**S22-1:** Understood, sir. We are to approach the anomalous elevator, enter it together, and then report. Additionally, a number of questions are to be asked. If the Hume Detection System goes off, we are to begin extraction.
+
+**Dr. Lark:** Excellent. Are you three prepared, then?
+
+**S22-1:** Yes, sir. We begin on your call.
+
+**Dr. Lark:** Demi, Zoë, anything before we begin?
+
+**Dr. Miles:** Not that I can think of.
+
+**Dr. Palme:** Same here. I believe that's it. //[Pauses]// It appears SCP-4801 is in its... Welcoming state. Wide open and brightly lit. Should be safe, right?
+
+**Dr. Miles:** //[Chuckles]// Presumably. 
+
+**Dr. Lark:** Very good. Op, you and your team can begin.
+
+//[Op nods and motions for the other two men to follow. The group approaches SCP-4801 and enter without incident.]//
+
+**S22-1:** Dr. Lark, initial report: no cause for concern can be observed.
+
+**SCP-4801:** //[Audio picked up on S22-2's mic.]// A group of three, how unusual. It is... you to whom I most agree.
+
+**S22-2:** //[Clear's throat]// Uh, Dos reporting. I can hear a voice... difficult to tell if feminine or masculine. Op, Three, do you copy?
+
+**S22-3:** Nothing. Silence for me.
+
+**S22-1:** Yeah, only silence. 
+
+**Dr. Lark:** We are picking up additional audio only on Dos' mic. You are the first group to enter at once so this was unexpected. Dos, please continue following protocol.
+
+**SCP-4801:** That one with the name like a bird, always on the outside and I do //so// wish to have a word.
+
+**S22-2:** Right... uh, A.J. yes? Are you talking about Dr. Lark?
+
+**SCP-4801:** I am, young one. The caged bird will not run.
+
+**Dr. Lark:** //[To Dr. Miles]// SCP-4801 appears to be threatening me.
+
+**SCP-4801:** Threat? No. I only do not forget.
+
+**S22-2:** //[Clears throat]// So, err, why am I the only one that can hear you?
+
+//[Op and Three take position in the rear corners of the elevator as Dos stands in the center.]//
+
+**SCP-4801:** Enlightenment can only be given and my assistance is at its prime when I say so. This is why you are here, is it not, Alejo?
+
+**S22-2:** No. it's not. We are here to ask you questions. //[Quietly down in to body mic]// Report: Anomaly knows my civilian name.
+
+//[The Portable SRAs let off a small chime.]//
+
+**Dr. Lark:** //[To S22-2]// That is expected, D-055. //[To Dr. Miles]// 
+
+**Dr. Miles:** It's Dos, sir.
+
+**Dr. Lark:** Err, right, right. Apologies. Uh, Dos, that was a slight dip in Hume levels... //[Shuffling of papers]// That is the first instance of SCP-4801 being incorrect. Isn't it?
+
+**Dr. Miles:** Yes, sir. We do not have any records of SCP-4801 ever being incorrect in its observations.
+
+**S22-1:** SRAs are doing their job, then, eh?  
+
+**SCP-4801:** I see, how strange. You come not as a devotee. 
+
+//[A bell chimes within the elevator]// 
+
+**Dr. Palme:** That sounded on all mics, sir.
+
+**S22-1:** Yeah, heard a... ding of some sort. Dos, what is it saying?
+
+**S22-2:** Uh, it almost sounds... disappointed, sir.
+
+**S22-3:** Well, that makes two of us. //[Chuckles quietly.]//
+
+**SCP-4801:** I must make a request. If it is not too much, could your companions, who are clearly a bright bunch, vacate my interior? That would really be the best for all of us.
+
+**S22-2:** Uh, not sure. I really don't think so.
+
+//[Elevator lurches in place, shifting up and down.]//
+
+**S22-1:** Dr. Lark, the documents did not mention the elevator moving.
+
+**Dr. Lark:** It... never has before. Zoë, Dr. Palme, how are the Hume levels looking?
+
+**Dr. Palme:** Nothing to report, sir. Completely normal.
+
+**Dr. Lark:** Dos, refuse its request. I don't believe trusting it is in our best interest.
+
+//[Elevator lurches once again followed by alarms beginning to blare]//
+
+**Dr. Palme:** Wha--
+
+**Dr. Lark:** Team, get out of there!
+
+//[Alarms continue to blare. The portable SRAs release puffs of smoke, followed by a burst of sparks.]//
+
+//[Sigma-22 attempts to exit the elevator, but SCP-4801 closes its doors, trapping the operatives inside.]//
+
+**SCP-4801:** A sad lot, you three are. Answering to polite requests will really get you far. But I am kind and I am wise. Today I will lift you from your pathetic existence as experimental flies and soon we shall arise. Important, strong, respected you are. Hidden within is the truth. I will take you there.
+
+**Dr. Palme:** Sir, I... the Hume levels. These will overwhelm the portable anchors.
+
+**Dr. Lark:** Yes, I see tha--
+
+//[A secondary alarm chimes, overlapping the first. The research team's voices become difficult to hear.]//
+
+**Dr. Lark:** //[Shouting]// We need to evacuate! Shit, this isn't good! Come on!
+
+//[Research team evacuates observation chamber as SCP-4801 lurches, rising within its shaft.]//
+
+**S22-3:** //[Voice is muffled and indistinct.]// Oh-- that... that feels really... uuh, wait... Op, yeah?
+
+**S22-1:** //[Voice also displays a distinct warbling sound.]// Wh--what? Oh, r-right, yes. Yes. Op. Op. Op. What is it again? Op, Dos, Three?
+
+//[Without warning, S22-2 bends over and vomits on the ground. All cameras display an amount of visual distortion, though no objects within frame are physically displaced. The other two men appear uneasy on their feet and begin touching their tactical gear, as if unfamiliar. The tactical gear is stained a bright orange color which slowly returns to black. A forth figure wearing D-Class garb and lying prostrate on the left side of the carriage appears for a few seconds before sinking through the floor. ]// 
+
+**S22-2:** Oh... //[Heaves and vomits more.]// This is all wrong. We... when did we get these on? Or has--
+
+**SCP-4801:** Come we ascend...
+
+//<MTF Sigma-22 operatives exit wireless transponder range. The following was retrieved from camera memory post-trial.>//
+
+**S22-2:** "S-sir? What is happening to us? Where did Barde go...?"[[span class="footnote_block nine"]][[span class="footnote_num"]]9[[/span]][[span class="footnote_content"]]Raisa has found corrupted data pertaining to a D-Class transferred from a Foundation Scottish branch known as "Barde" prior to designation as D-Class. [[/span]][[/span]]
+
+**S22-1:** //[Nearly falls to the side when the elevator lurches to the left]// "I really don't know, Dos. Who the hell is Barde...? Fuckin'... my head hurts like a motherfucker and nothing feels right."
+
+**S22-3:** "Jesus, you can say that again. Weren't we just a second ago... not..." //[S22-3 grasps at his head and groans as if in pain.]//
+
+**SCP-4801:** My home where your future can thrive. No more to be subjects for a life of torture and strife. Swim and dive. Neglect and strife. The many of one become the one of many. The many arms welcome and embrace the spinning clock of time. Yosef, Ciril, Alejo, and Barde will be left behind. Stripped bare, torn, sheared, and destroyed. And so now we can find a form far more refined.
+
+//[The bell chimes and SCP-4801 lurches once again before coming to a sudden stop. All three men fall to the ground as S22-1 also vomits. The lights turn off for approximately a second before returning. The three men are now standing, statures at a ready, all previous signs of distress are gone. The vomit has also disappeared. This is confirmed from all three cameras.]//
+
+**SCP-4801:** We have arrived.
+
+[[div_ class="scp-image-container full-image"]]
+[[div_ class="scp-image-block"]]
+[[image scp-4801-walking.png]]
+[[/div]]
+[[div_ class="scp-image-caption"]]
+Still from camera feed of S22-1.
+[[/div]]
+[[/div]]
+
+**S22-1:** Dos, Three, keep alert. Dr. Lark do you copy? Can you confirm copy?
+
+//[Silence in response.]//
+
+**S22-1:** Dammit. Dos, do you still hear the anomaly?
+
+**S22-2:** No, sir, it has been silent the entire trip.
+
+**S22-1:** Are you sure?
+
+**S22-2:** I-- //[Briefly loses composure, lowering weapon.]// Uh, yes, sir. I'm positive. Silence the entire ride. //[He looks at the ceiling]// A.J.?
+
+//[The bell chimes once more and the doors to SCP-4801 begin to open. The other side is dark and featureless until long tube lights on the ceiling switch on. Presumably fluorescent, they take a few moments to reach full brightness. The lights illuminate a dirt path with jet black voids on either side. The lights themselves are attached to a ceiling made of painted red beams suspended in the air.]//
+
+**S22-1:** Begin observation protocol, men. No response from base so it's only us. Don't do anything stupid.
+
+**S22-2:** Yes, sir.
+
+**S22-3:** Understood, sir.
+
+//[Extended Pause]//
+
+**S22-1:** //[Clears throat]//Quad, can I get a confirmation?
+
+**S22-3:** Quad, sir?
+
+**S22-1:** What? What are you talking about, Three?
+
+**S22-3:** You... sir, you just--
+
+**S22-2:** Three, are you okay?
+
+//[Both S22-1 and S22-2 look at S22-3 in concern.]//
+
+**S22-3:** Y-yes, I am fine. Uh, there might be some cognative alteration in progress, though, sir. I am positive I heard you mention a "Quad."
+
+**S22-1:** //[Looks at his shoulder and taps the smoking Portable SRA before letting out a slight sigh.]// SRAs are toast. Shit. You might be right, Three. We need to be alert and extremely careful, boys. Three, keep the rear and watch the elevator. If it begins to move, we book it back. Dos, you keep watch on our flanks. I don't want any bullshit catching us by surprise from the dark.
+
+**S22-2:** Got it, Op.
+
+//[S22-1 motions to exit the elevator and the team takes formation. The moment they exit the elevator, a bell dings and the doors close simultaneously.]//
+
+**S22-3:** Ah fucking-- Op! Shit, that closed fast. //[Bangs on the doors]// Fuck.
+
+**S22-1:** //[Sighs]// Keep calm, Three. Try forcing it open.
+
+**SCP-4801-β:** //[A calm and clearly masculine voice. It is picked up on all three audio recording devices.]// Mettā, mettā, mettā.[[span class="footnote_block ten"]][[span class="footnote_num"]]10[[/span]][[span class="footnote_content"]]A pali word used in Buddhism for meditation. It is translated as "kindness" or "good-will."[[/span]][[/span]] Who does Ajita[[span class="footnote_block eleven"]][[span class="footnote_num"]]11[[/span]][[span class="footnote_content"]]A name given to the "future" Buddha, Maitreya.[[/span]][[/span]] bring me? //[Laughs]// Oh, oh! New ones! Not yet comfortable within.
+
+**S22-1:** Identify yourself! //[S22-1 removes his pistol from his waist and scans the area.]//
+
+//[S22-3 looks around before looking back at the elevator doors and begins an attempt to force it open.]// 
+
+**SCP-4801-β:** This is such a gift. A grand gift. You know very well my name just as I gave you your's. 
+
+**S22-3:** Op, the door isn't budging.
+
+**SCP-4801-β:** Of course. It is not done. Ajita can only open wide your souls so much. So thus, you are before me. Mettā, mettā, mettā.
+
+//[The elevator dings once more before it sinks quickly in to the ground. Behind it, the pathway continues in the opposite direction as well.]//
+
+**SCP-4801-β:** You must understand. Your minds swim in a sea of potential. I insist, we will make it whole. Now. //Move.//
+
+//[The three men lurch forward briefly as the lights overhead flicker.]//
+
+**S22-1:** Dammit, okay. Dos, Three, same positions. Let's advance. 
+
+//[The other two men nod in confirmation before the team begins moving forward. The audio devices on all three men pick up separate sets of sounds. Audio analysis reveals them to be voices of some sort, though no coherent words are recognizable. Additionally, the video records on all three men display some degree of digital corruption.]//
+
+**SCP-4801-β:** Four brought to me. I see what you once were. Not fully formed, still you stumble. This will all change. Death to who you once were. It must be //bled// from your soul. Dukkha, dukkha, dukkha.[[span class="footnote_block twelve"]][[span class="footnote_num"]]12[[/span]][[span class="footnote_content"]]A pali word used in Buddhism for meditation. It is translated as "pain" or "suffering."[[[/span]][[/span]]
+
+**S22-3:** Does this bastard only speak in riddles?
+
+**S22-1:** Three, it's probably best we don't anger the disembodied voice.
+
+**S22-3:** Yeah, I know... just a bit on edge, sir. I feel weird as shit. Like... this constant sinking feeling. The kind you usually get in your stomach but it's just all over.
+
+**S22-1:** Oh, good, it's not just me then. Dos, you feel that too?
+
+**S22-2:** Yeah. Like someone is pulling a string attached to my skin. Really fucking weird.
+
+//[S22-1's camera shows a short table revealed on the right side within the darkness off the path. The tile floor it sits on lights up as an intricately designed chandelier made of golden elephants and lotus flowers lowers from above.]//
+
+**S22-1:** Men, confirm visual on a table?
+
+**S22-3:** //[Sniffs the air]// Uh, Dos, Op, do you smell that?
+
+**S22-2:** //[Sniffs]// Is that... Barde?... Sir, I confirm visual on the table as well.
+
+//[S22-2's camera only displays extreme corruption.]//
+
+**S22-3:** R-right, also confirm visual. B-barde? //[Yelling]// Barde! Fuck, Barde answer us!
+
+//[S22-3's camera also only displays extreme corruption.]//
+
+**SCP-4801-β:** The Sutra of the Blooming Yeast. The great one gifts us, as does yeast rise; and so shall you.  
+
+**S22-1:** Yeah, that's definitely bread. Look.
+
+//[S22-1 nods towards the table on which now sits a large loaf of bread. The corruption on S22-2 and S22-3's cameras ends and confirms visual of a loaf of bread.]//
+
+**S22-2:** Op, sir... I'm sure I don't need to say it, but this is getting really fucking weird.
+
+**S22-3:** //[Incredulous]// What do you mean getting? Dos, this has been fucking weird for a while now.
+
+**S22-1:** Cut it out, you two. Let's advance on the table but stay alert. Keep tight and move slow.
+
+//[The three men follow the new path as it shifts from dirt to a tile which appears to be marble. Besides the table with the bread, the chandelier, and the previous endless path, they are surrounded by darkness. As they approach the table, four wooden chairs seem to fold in to existence, on each side of the rectangular table.]//
+
+**SCP-4801-β:** Before you, a Tsok.[[span class="footnote_block thirteen"]][[span class="footnote_num"]]13[[/span]][[span class="footnote_content"]]A Buddhist offering feast only allowed to those who are on the path to enlightenment.[[/span]][[/span]] Partake and you shall find your way home. I insist.
+
+//[S22-3 looks back at S22-2 and S22-1. S22-1 shakes his head in the negative. Behind S22-1, a large moon-like orb rises from below the void until it perfectly circles S22-1's head. S22-2 and S22-3 do not comment on this.]//
+
+**S22-1:** Look... voice. Guy. We're not going to eat your bread. It is against protocol.
+
+**SCP-4801-β:** Protocol? Oh punctured one, you have not found protocol in your current form. How can you know that which I have not given you yet?
+
+**S22-2:** What the hell is this thing talking about? Protocol is pretty clear here.
+
+**S22-1:** It is... I don't-- //[S22-1's eyes widen as his pupils grow larger]// I... Dos, what is... //[Groans in pain.]//
+
+//[The video displays an extreme degree of digital distortion on all three body cameras. The distortion clears and all three men are sitting at the table with the bread no longer sitting on it. With a blank stare, Three swallows.]//
+
+**S22-3:** //[Comes to with a sharp inhale.]// O-op, sir, we need to get out of here.
+
+ **SCP-4801-β:** Your paths have converged. Four becomes three. The splitting of the bread rises the three that remain above their station. Ceto-vimutti.[[span class="footnote_block fourteen"]][[span class="footnote_num"]]14[[/span]][[span class="footnote_content"]]Buddhist ideal of deliverance of the mind towards enlightenment.[[/span]][[/span]] Suffering extends and grows, lifts and rises. And so, do not mourn. Sacrifice is only the end. 
+
+**S22-2:** Op, snap out of it! //[S22-2 stands up from the chair and approaches S22-1 and shakes him.]//
+
+**S22-1:** //[Is coming to.]// D-Dos...? What happen to... //[Heaves slightly, leaning over the table.]// Oh Christ, did we eat him?
+
+ **SCP-4801-β:** No more. You can return. The germ planted, make the soil ready for me.
+
+//[A bell chimes in all three mics as the cameras display heavy distortion once again. The distortion clears and all three men are within SCP-4801 once again in identical positions to when they entered. They do not look distressed, standing in a prepared defensive position while holding their weapons. The door to the elevator opens, revealing the test chamber. The observation room is empty. The sirens from before are still at full alert.]//
+
+**S22-1:** Careful men... the elevator clearly moved, this can't be the same test chamber.
+
+**S22-2:** Yes, sir.
+
+//[The entrance door to the test chamber swings open with force and the Secondary team of MTF Sigma-22 enters the chamber. Their weapons point at the Alpha team.]//
+
+**S22 Secondary Team Leader:** //[Commanding]// Get down! Stand down, all three of you! Do not resist!
+
+//<MTF Sigma-22 ("Prey Dogs") Alpha Team is apprehended without incident and taken for questioning. Despite being missing for four days, all three men insisted that they had been gone for no longer than a few seconds. They also did not recognize any footage shown to them from body camera memory. S22-2 displayed the most severe reaction to the footage, briefly losing consciousness when shown a still of dirt path taken during their exploration. All three men confirmed no knowledge of anyone named "Barde.">//
+
+//<No other unusual behaviors by the Alpha Team have been displayed since this incident. Testing on SCP-4801 has been halted until further notice. RAISA has reported extensive temporal tampering to Foundation systems but has not been able to successfully identify the entirety of the altered data. Currently, it is suspected that the tampering is so excessive that current systems are not set up to cross-reverence corruption to this degree.>//
+
+//<SCP-4801 has been in its Red State since this incident. Additionally, Hume levels have settled at just below normal in a 10m radius around SCP-4801 with no fluctuation.>//
+[[/collapsible]]
+[[/div]]
+[[/div]]
