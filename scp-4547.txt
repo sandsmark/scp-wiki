@@ -23,28 +23,29 @@ span.orto {
     word-break: unset;
 }
 
-kclass {
+.kclass {
     border-collapse: collapse;
     margin: 1em 0;
 }
 
-.kclass td {
-    padding: .3em .7em;
-    border: 1px solid #ccc;
-    text-align: center;
-}
-
-.kclass tr td:last-child {
-    text-align: left;
-}
-
-.kclass tr:first-child td {
+.kclass-hcell {
     font-weight:bold;
     padding: 1em;
     text-align: center;
     border: 1px solid #ffb961;
     background-color: #1b304d;
     color: #ffb961;
+}
+
+.kclass-cell1 {
+    text-align: center;
+    padding: .3em .7em;
+    border: 1px solid #ccc;
+}
+
+.kclass-cell2 {
+    padding: .3em .7em;
+    border: 1px solid #ccc;
 }
 [[/module]]
 
@@ -94,31 +95,28 @@ The taronyu[[footnote]]Formerly designated as SCP-4547-A before being declared i
 An organization referred to as the Tìhawnum[[footnote]]Literally translating to "Protectorate"[[/footnote]] existed on SCP-4547, with roughly analogous motives to the Foundation on Earth. The Tìhawnum was dedicated to the general focus of protecting taronyu society and life, including against dangerous anomalies. However, the Tìhawnum did not share in the same practices of Masquerade and concealment as the Foundation, leading to higher integration of anomalies into SCP-4547 culture.
 
 SCP-4547-B is a collection of anomalous phenomena located on SCP-4547 which resulted in the near-total extinction of the taronyu. Each SCP-4547-B phenomenon caused a distinct K-Class Scenario on SCP-4547. The majority of these K-Class Scenarios are either the cause or result of an FK-Class (Broken Foundation) Scenario and have been collectively grouped into the one designation. For the purpose of brevity, only the conclusively identified K-Class Scenarios and their causes have been listed below.
-
 [[table class="kclass"]]
-
 [[row]]
-[[cell]]
+[[cell class="kclass-hcell"]]
 Designation
 [[/cell]]
-[[cell]]
+[[cell class="kclass-hcell"]]
 K-Class Scenario
 [[/cell]]
-[[cell]]
+[[cell class="kclass-hcell"]]
 Description
 [[/cell]]
 [[/row]]
-
 [[row]]
-[[cell]]
+[[cell class="kclass-cell1"]]
 4547-B1
 [[/cell]]
-[[cell]]
+[[cell class="kclass-cell1"]]
 **IK**
 
 Societal Collapse
 [[/cell]]
-[[cell]]
+[[cell class="kclass-cell2"]]
 The "Dead Hand" system of a major taronyu world superpower, designed to ensure mutually assured destruction. However, upon a transition between heads of state, SCP-4547-B1 malfunctioned and detected the end of the government and initiated nuclear war.
 
 The resultant nuclear war lasted for approximately five hours. By the conclusion of the war, over ten thousand nuclear weapons had been detonated upon SCP-4547, destroying most bases of the Tìhawnum and most major metropolitan areas, in addition to causing severe nuclear fallout.
@@ -126,17 +124,16 @@ The resultant nuclear war lasted for approximately five hours. By the conclusion
 The exact functioning mechanics of SCP-4547-B1 are unknown, but is believed to have functioned using a [[[a-brief-explanation-on-demonics|demonic solid-state drive]]] set to monitor for specific parameters. These parameters were set too specific, and a minor change in government triggered the dead hand.
 [[/cell]]
 [[/row]]
-
 [[row]]
-[[cell]]
+[[cell class="kclass-cell1"]]
 4547-B2
 [[/cell]]
-[[cell]]
+[[cell class="kclass-cell1"]]
 **RK**
 
 Out-Competition
 [[/cell]]
-[[cell]]
+[[cell class="kclass-cell2"]]
 SCP-4547-B2 was a collection of organic nanites designed to improve taronyu anatomy. However, difficulties in implementing these improvements caused partial brain death, increased aggression, inhibition of social norms and cannibalistic impulses in the infected (termed SCP-4547-B2-ζ). Furthermore, SCP-4547-B2-ζ were able to enter stasis indefinitely, negating the need to breathe or eat.
 
 The Tìhawnum had kept a small sample of SCP-4547-B2, which was released during the IK-Class Scenario and became airborne. In the days following the IK-Class Scenario, 49% of taronyu on SCP-4547 became infected with SCP-4547-B2. As a result, there are currently an estimated 1-2 billion SCP-4547-B2-ζ instances remaining on SCP-4547 at present.
@@ -144,33 +141,31 @@ The Tìhawnum had kept a small sample of SCP-4547-B2, which was released during 
 SCP-4547-B2 is capable of infecting humans.
 [[/cell]]
 [[/row]]
-
 [[row]]
-[[cell]]
+[[cell class="kclass-cell1"]]
 4547-B3
 [[/cell]]
-[[cell]]
+[[cell class="kclass-cell1"]]
 **GK**
 
 Broken Greenhouse
 [[/cell]]
-[[cell]]
+[[cell class="kclass-cell2"]]
 SCP-4547-B3 was a large glass orrery of the SCP-4547 solar system. When not properly aligned, it would project a noncorporeal herbicidal field, destroying local xenoplant matter. This field would expand based upon the amount of time spent unaligned. SCP-4547-B3 was previously maintained by the Tìhawnum, but this maintenance stopped when they were destroyed.
 
 As a result, all xenoplant life on SCP-4547 was rapidly killed off within three weeks of the IK-Class Scenario. Attempts to realign SCP-4547-B3 by Tìhawnum remnants appear to have been attempted, but were unsuccessful. It is currently not believed that SCP-4547-B3 can be repaired, and transport is forbidden.
 [[/cell]]
 [[/row]]
-
 [[row]]
-[[cell]]
+[[cell class="kclass-cell1"]]
 4547-B4
 [[/cell]]
-[[cell]]
+[[cell class="kclass-cell1"]]
 **XK-Ω**
 
 Eschaton
 [[/cell]]
-[[cell]]
+[[cell class="kclass-cell2"]]
 4547-B4 was a collection of seven humanoid entities standing 500 meters tall, bearing noted similarity to [[[SCP-231|SCP-██]]]. All SCP-4547-B4 had been in a dormant state prior to the activation of SCP-4547-B1, and were targeted with nuclear missiles in a neutralization attempt during the IK-Class Scenario. These nuclear weapons did not kill any SCP-4547-B4 instances and only awakened them.
 
 The SCP-4547-B4 identified themselves as the Kive'eveng Tun Koren[[footnote]]Approximate English translation: The Seven Spawn of the [[a href="/tuftos-proposal" style="color: red"]]Red Ruler[[/a]].[[/footnote]], and took control of the remnants of taronyu society. They granted an anomalous resistance to many of the anomalous phenomena on SCP-4547 to any taronyu that served them.
@@ -178,17 +173,16 @@ The SCP-4547-B4 identified themselves as the Kive'eveng Tun Koren[[footnote]]App
 All SCP-4547-B4 instances appeared to have entered into a war with each other at some point following their reawakening. All except one perished in this conflict; one of the losers was infected with SCP-4547-B2 and is currently active in a diminished capacity. The sole victor (SCP-4547-B4-3) is one of the few remaining sapient lifeforms on SCP-4547.
 [[/cell]]
 [[/row]]
-
 [[row]]
-[[cell]]
+[[cell class="kclass-cell1"]]
 4547-B5
 [[/cell]]
-[[cell]]
+[[cell class="kclass-cell1"]]
 **AK**
 
 Madness
 [[/cell]]
-[[cell]]
+[[cell class="kclass-cell2"]]
 An intensely virulent memetic cult, centered around the number [[[fifthist-hub|five]]]. The exact origin of SCP-4547-B5 is unknown, but similar organizations were observed by the Tìhawnum prior to the end of the world. It is believed that these organizations heavily mutated following another K-Class Scenario, becoming SCP-4547-B5.
 
 SCP-4547-B4-5 became infected with SCP-4547-B5, altering the details of its cult in order to follow the principles of SCP-4547-B5.
@@ -196,17 +190,16 @@ SCP-4547-B4-5 became infected with SCP-4547-B5, altering the details of its cult
 Further research has indicated [{{[[[SCP-3125|LETHAL INFOHAZARD EXPUNGED]]]}}].
 [[/cell]]
 [[/row]]
-
 [[row]]
-[[cell]]
+[[cell class="kclass-cell1"]]
 4547-B6
 [[/cell]]
-[[cell]]
+[[cell class="kclass-cell1"]]
 **WK**
 
 Meteorological
 [[/cell]]
-[[cell]]
+[[cell class="kclass-cell2"]]
 SCP-4547-B6 was an apex-tier pluripotent entity inimical to atmospheric conditions on SCP-4547. It is unclear how specifically, but SCP-4547-B6 was neutralized during the interchange of SCP-4547-B1.
 
 Immediately following this, weather conditions of SCP-4547 greatly changed, with violent and intense meteorological events being observed at a high frequency. This included abnormally large storms, volcanic eruptions, earthquakes, and spontaneously generated hurricanes. These phenomena have not abated in the time between the neutralization of SCP-4547-B6 and present.
