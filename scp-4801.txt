@@ -7,6 +7,9 @@ title:SCP-4801
 [[/>]]
 
 [[module css]]
+.anom-bar-container, .anom-bar-container * {
+    font-family: "Poppins",sans-serif !important;
+}
 
 #page-content > br:nth-child(4) {
   display: none;
@@ -71,7 +74,7 @@ title:SCP-4801
 #page-content .collapsible-block .collapsible-block-folded,
 #page-content .collapsible-block .collapsible-block-unfolded-link  {
     text-align: center;
-    font-family: var(--header-font);
+    font-family: "Poppins",sans-serif;
 }
 
 .footnote_block {
