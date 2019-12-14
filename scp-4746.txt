@@ -14,7 +14,7 @@ title:SCP-4746
 .dblock:hover {color: #333; transition: 1.5s}
 
 .hover1{color: #333; transition: 1s}
-.hover1:hover {color: white; transition: 1s}
+.hover1:hover {color: white; transition: 1s; max-width: 60%}
 .hover1 span {display: none}
 .hover1:hover span {position: absolute; display: inline; background-color: transparent; color: #333; animation: fade-in 1s}
 .hover1:hover span span {position: relative}
