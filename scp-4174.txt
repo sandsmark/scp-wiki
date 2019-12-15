@@ -1,0 +1,336 @@
+title:SCP-4174
+[[include :scp-wiki:component:info-ayers
+|lang=en
+|page=scp-4174
+|authorPage=
+|comments=SCP-4174 - Mother of Many
+Ideas Thread: http://scp-wiki.wikidot.com/forum/t-12841011/mother-of-many
+Draft Thread: http://scp-wiki.wikidot.com/forum/t-12848601/mother-of-many
+]]
+[[include :scp-wiki:component:black-highlighter-theme-dev]]
+[[module CSS]]
+#u-author_block{ display:none; }
+[[/module]]
+[[module css]]
+div.objclassbar {
+    display: flex;
+    height: 4rem;
+    justify-content: center;
+}
+
+.objclassbar span {
+    word-break: break-word;
+}
+
+div.objclassbar > div {
+    max-width: 30%;
+    width: 30%;
+    flex-basis: 30%;
+}
+
+div.objclassbar div.sideleft {
+    font-size: 1em;
+    border-right: 0.125rem solid;
+    border-color: rgb(12,12,12);
+    border-color: rgb(var(--black-monochrome, 12, 12, 12));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+div.objclassbar div.sidemiddle {
+    font-size: 0.75em;
+    padding-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.objclassbar div.sideright {
+    display: flex;
+    font-size: 1.25em;
+    font-weight: 600;
+    border-left: 0.125rem solid;
+    border-color: rgb(12,12,12);
+    border-color: rgb(var(--black-monochrome, 12, 12, 12));
+    padding-left: 0.5rem;
+    justify-content: flex-end;
+}
+
+div.sideleft > div > span:nth-child(1),
+div.sidemiddle > div > span:nth-child(1) {
+    font-weight:900;
+}
+
+div.sideleft > div:nth-child(2) {
+    line-height: 1.1em;
+}
+
+div.sideleft > div:nth-child(2) > span:nth-child(1) {
+    height: 1.1em;
+}
+
+div.sideright > div.colorbars-container {
+    display: flex;
+    flex-direction: row-reverse;
+    transform: skew(15deg);
+    padding: 0 0.5em 0 0.25em;
+    height: 90%;
+    align-self: center;
+}
+
+div.sideright > div.leveltext-container {
+    height: 90%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}
+
+div.sideright > div.colorbars-container > div.colorbars {
+    width: 0.5em;
+    height: 100%;
+    margin: 0 0.1rem;
+    background: {$colorbar-bg-color};
+    background: {$colorbar-bg-img};
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+div.sideright > div.colorbars-container > div.colorbars.full {
+    opacity: 1;
+}
+
+div.sideright > div.colorbars-container > div.colorbars.half {
+    opacity: 0.5;
+}
+
+div.sideright > div.colorbars-container > div.colorbars.none {
+    opacity: 0;
+    display: none;
+}
+
+@media (max-width: 767px) {
+    div.objclassbar {
+        height: 3rem;
+    }
+    div.objclassbar div.sideleft {
+        font-size: 0.8em;
+    }
+    div.objclassbar div.sidemiddle {
+        font-size: 0.5em;
+    }
+    div.objclassbar div.sideright {
+        font-size: 0.75em;
+    }
+}
+[[/module]]
+
+[[div_ class="objclassbar"]]
+[[div_ class="sideleft"]]
+[[div_ ]]
+[[span class="ocb-text"]]Item #:[[/span]] [[span class="ocb-text"]]SCP-4174[[/span]]
+[[/div]]
+[[div_ ]]
+[[span class="ocb-text"]]Object Class:[[/span]] [[span class="ocb-text"]]Safe[[/span]]
+[[/div]]
+[[div_ ]]
+[[span class="ocb-text"]]Threat Level:[[/span]] [[span class="ocb-text"]][[span style="color:green"]]●[[/span]] Green[[/span]]
+[[/div]]
+[[/div]]
+[[div_ class="sidemiddle"]]
+[[div_ ]]
+[[span class="ocb-text"]]Site Responsible:[[/span]] [[span class="ocb-text"]]Site-17[[/span]]
+[[/div]]
+[[div_ ]]
+[[span class="ocb-text"]]Director:[[/span]] [[span class="ocb-text"]]Dr. Everett Mann[[/span]]
+[[/div]]
+[[div_ ]]
+[[span class="ocb-text"]]Research Head:[[/span]] [[span class="ocb-text"]]Senior Researcher Edward Gauss[[/span]]
+[[/div]]
+[[/div]]
+[[div_ class="sideright"]]
+[[div_ class="colorbars-container"]]
+[[div_ class="colorbars full"]]
+[[/div]]
+[[div_ class="colorbars full"]]
+[[/div]]
+[[div_ class="colorbars half"]]
+[[/div]]
+[[div_ class="colorbars none"]]
+[[/div]]
+[[div_ class="colorbars none"]]
+[[/div]]
+[[div_ class="colorbars none"]]
+[[/div]]
+[[/div]]
+[[div_ class="leveltext-container"]]
+[[div_]]
+Level 2/4174
+[[/div]]
+[[div_]]
+CLASSIFIED
+[[/div]]
+[[/div]]
+[[/div]]
+[[/div]]
+
+**Special Containment Procedures:** SCP-4174 is to be held in a containment cell capable of housing 10 humanoids. Because of SCP-4174's self-sustaining capabilities, regular interaction is not required. If the number of SCP-4174-A instances exceeds 10, the third oldest instance is to be terminated. The oldest and second oldest instances are to be kept alive for potential future experimentation concerning the effects of aging. At least one member of Level 3 Security staff must be present during any and all experimentation on SCP-4174 in order to prevent disruption by instances of SCP-4174-A.
+
+**Description:** SCP-4174 is the corpse of an obese 89 year old woman perpetually in livor mortis.[[footnote]] The state of decomposition that occurs between 30 minutes and 2 hours of death, characterized by a settling of blood to the back of the body creating a purple red vein appearance, leaving the rest of the skin near pure white when pressure is applied.[[/footnote]] SCP-4174 will spontaneously generate a fertilized egg in its womb, which will go through a normal birth cycle, from gestation to birth, within a nine month period. Immediately after giving birth, SCP-4174 will produce another fertilized egg,[[footnote]] The DNA of these eggs and the SCP-4174-A instances created do not match that of SCP-4174 and have included several different male individuals. [[/footnote]] which will develop and be born in nine months, repeating the cycle. 
+
+SCP-4174-A are the entities born from SCP-4174; as of February 10th, 2019, there are currently four instances of SCP-4174-A. SCP-4174-A are humanoids which constantly excrete light amounts of blood and pus similar to that found on newborn infants. SCP-4174-A remain connected to SCP-4174 through their umbilical cord. If this umbilical cord is severed, SCP-4174-A will enter a highly panicked state in which they will run to SCP-4174 and start crying profusely, often shaking SCP-4174 or screaming incoherently at it, before expiring due to the onset of stress-induced cardiac arrest.
+
+SCP-4174-A instances maintain an intelligence level comparable to that of a three year old child, and will often react to staff by crying,[[footnote]] It has been noted by staff working with SCP-4174 that these cries are higher in pitch than what would be expected, described as "Sounding like a highly distressed baby." [[/footnote]] screaming, and attempting to flee. In situations in which SCP-4174-A flee, they will attempt to carry SCP-4174 and bring it with them. Even when working together, they typically lack the strength to carry SCP-4174.
+
+The current oldest SCP-4174-A instance is believed to be roughly 20 years old. 14 loose umbilical cords appear to have been severed prior to containment[[footnote]] The umbilical cords are all cleanly cut, suggesting they were not separated by natural circumstances. [[/footnote]] with an additional three severed during experimentation. Along with continuing to produce SCP-4174-A instances, the breasts of SCP-4174 will lactate profuse amounts of human breast milk, which the instances will drink as their only required form of sustenance. Each instance of SCP-4174-A has been seen drinking roughly four liters of breast milk from SCP-4174 a day.
+
+**Discovery:** SCP-4174 was discovered on January 17th, 2019, in Baltimore, Maryland, USA, after several reports of "unsettling moaning" coming from a home in the Brooklyn Homes district, originating from [REDACTED], home to the Totenmich family. Upon police investigation, SCP-4174 was discovered in the basement. Foundation Intelligence Agents embedded in Baltimore Police reported this to the Foundation and all police officers were amnesticized. The family was not amnesticized until after initial interviews. SCP-4174 has been confirmed to be Audrey Totenmich, who was the oldest member of the family living in the household.
+
+**Interview Log 4174/WEISS-1:** The following interview was conducted by Junior Researcher Luna Weiss with Leonard Totenmich, the eldest son of Audrey Totenmich, as part of routine background information investigation.
+
+> **Luna:** Alright, let's start at the beginning: how long have you known of Audrey Totenmich in her current form?
+> 
+> **Leonard:** Uh, well, it was pretty sudden, way back in, 2001 I think? Early 2001. I just want to double check, I'm not gonna be arrested for this?
+> 
+> **Luna:** Not if you cooperate. Do you know of the possible circumstances leading up to her assuming this form?
+> 
+> **Leonard:** Well, it just sort of... happened. One day she got pregnant out of nowhere, everyone was bickering over how she could be pregnant since, well, she's 89, but also who the father was. When the time came around she gave birth, the docs cut the cord, and it cried so much, I don't think I'll ever be able to get those cries out of my head... the baby went limp after, dead after only a few minutes. Doc said it was rare but does happen so we didn't think too much about the death at the time.
+> 
+> **Luna:** How many times did this phenomenon happen before her passing?
+> 
+> **Leonard:** Three times. On the fourth, she didn't make it, but the baby did. We didn't go to the hospital this time, we figured something was off and we don't want to have her reputation be smeared as a skank. We cut the cord again and the baby died, but then she... kept going, she kept giving birth, every nine months, over and over. You don't know stress tell you're helping a corpse give birth so you can kill the baby right after. After a while, we decided to just stop cutting the cord and hope that would keep them alive. It did, but, well, they weren't really people.
+> 
+> **Luna:** So you decided to keep her in the basement?
+> 
+> **Leonard:** We didn't know what to do, we couldn't show this to someone or we'd get the FBI up in our bonnets, no offense, and the kids seemed to live fine without any of us helping, so we just... let it be. Kept it as a dark family secret. Never invite anyone over in case they hear it or wander into it.
+> 
+> **Luna:** Understood. Thank you for your cooperation, we will have an agent come in momentarily to help you remember more details.
+
+Subsequent interviews with the five children and 14 grandchildren of Audrey Totenmich whom could be contacted revealed little additional information.
+
+[[collapsible show="WARNING: Level 3/4174 Clearance Required." hide="Level 3/4174 Clearance Verified"]]
+
+**Investigation 4174/POI01:** Investigation into Audrey Totenmich's social media from when she was alive has shown numerous posts shaming individuals who live promiscuous lifestyles, referring to them as "Sluts", "Skanks", "Whores", etc. Many of these posts are directed at Lily Totenmich, a granddaughter of Audrey Totenmich. Investigation of Lily's social media shows that she led a sexually active lifestyle, regularly discussing sex and sexual partners. Prior to the currently believed date of creation ("Early 2001"), Audrey Totenmich made the following post:
+
+> ok i am fucking done ive had it with lily we all know what a fucking god disgracing whore she is sleeping with a new man and dykes every day but this crosses the line. lily had the gall to blame me for her getting fired at her last few jobs and for losing her bf (god only knows which one). its not my fault shes a disgusting slut that brings shame to her otherwise good christian family, all i did was let them know this so they know the kind of sinner there putting themselves near. lily is not invited to christmas or new years this year, we dont want the stench of 50 men and 10 dykes pussy juice making a mockery of the birth of christ. i am disowning her and everyone who sees this you should too there is no good reason for her to be living this lifestyle let alone get mad when she gets called out for it
+
+All attempts to contact Lily Totenmich have failed. Intelligence Agents visited her home near The Block,[[footnote]] A 400 block area primarily containing adult entertainment including strip clubs, sex shops, and illegal prostitution. [[/footnote]] after no response the agents entered the building to find numerous Thaumaturgic Runes, trace amounts of sulfur, fire damage to objects around the Thaumaturgic Runes, and abundant amounts of human semen, lubricant, and other miscellaneous sexual fluids. DNA from the sexual fluids match that of the mother for all SCP-4174-A instances. Lily Totenmich has been officially labeled PoI-4174/01 and marked for further investigation.
+
+**Interview Log 4174/POI01/WEISS-1:** The following interview was conducted by Junior Researcher Luna Weiss with Richard Boreman, the last known romantic or sexual partner of PoI-4174/01 according to her social media profile.
+
+> **Richard:** Didn't know the FBI was cracking down on prostitution so hard.
+> 
+> **Luna:** A lot of people don't know a lot of things. When did you first meet Lily?
+> 
+> **Richard:** First met? Probably like, back in 2000, but we were only acquaintances, friend of a friend you know? We didn't really start to, uh, "get to know each other" until a few years ago.
+> 
+> **Luna:** When and where did you last see Lily?
+> 
+> **Richard:** Down at The Block, like eight months ago, the only lady who never charged anyone. We had way too much fun those days. I had to stop though, part 'cause I was feeling really tired and out of it all the time,[[footnote]] Known symptom of  abnormally low [http://www.scp-wiki.net/scp-4220 orgone energy].[[/footnote]] part cause I had a harder time actually finding her.
+> 
+> **Luna:** Do you know of possible methods of finding Lily?
+> 
+> **Richard:** Nah, she went dark, last thing I heard from her was something about a group she joined? Don't know what kind of deal could've made her need to disappear but it is what it is I guess.
+> 
+> **Luna:** Did you notice any differences between her when you first met her in 2000 and recently?
+> 
+> **Richard:** Oh god yeah, she got a lot hotter, a lot hornier, and a lot more active. Had way more sex all the time and always got super into it. Just between you and me, honestly made it a little hard to concentrate when she was around, she was that damn good.
+> 
+> **Luna:** Are you familiar at all with Lily's grandmother, Audrey Totenmich?
+> 
+> **Richard:** Wish I wasn't,  you know how women can be after sex, always talking about their problems and shit, and every time it was some nonsense about her granny, getting real sad. Said stuff like "She was awful but she doesn't deserve this, I'm only making her problem worse," stuff like that. She was always eager to go again after it though so whatever.
+> 
+> **Luna:** You mentioned a group earlier, could you elaborate?
+> 
+> **Richard:** Not really, I think she called it a syndicate but didn't give a name, only talked about it once and I was only half listening. I just remember it was really weird.
+> 
+> **Luna:** Understood, thank you for your cooperation. Another agent will be with you briefly for routine documentation.
+
+Further interviews with previous romantic and sexual partners of PoI-4174/01 reveal little additional information. The current estimate of individuals who have had sexual relationships with PoI-4174/01 prior to her disappearance and after the suspected anomaly creation date ("Early 2001") exceeds 1,000 people, primarily in Maryland and bordering states. Each instance of SCP-4174-A matched in DNA to the earliest known individuals, with each subsequent SCP-4174-A following this list of men in chronological order. It is believed that there will be one SCP-4174-A instance for every male, one born every nine months, and thus SCP-4174 will continue to give birth for an estimated 735 years or longer if PoI-4174/01 continues.
+
+**Incident Report 4174/POI01/01:** Attempts were made using the sulfur from PoI-4174/01's home to contact a suspected Tartarean entity. Upon beginning of the ritual, all current instances of SCP-4174-A began screaming at 120 dB and attempted to move themselves and SCP-4174 to the corner of its room furthest away from where the ritual was carried out. Ultimately the ritual failed as the Tartarean entity could not be summoned.[[footnote]] This is highly unusual behavior for a Tartarean entity, as typically they will always accept being summoned so they can make deals for souls, their primary food source. [[/footnote]] Following this, SCP-4174-A instances became noticeably more distressed in the presence of staff who participated in the ritual. Rather than fleeing from these staff members as expected, SCP-4174-A lie on the floor in a fetal position, shaking violently, in addition to crying and screaming.
+
+**Addendum 4174/POI01/01:** After an estimated 12 failed attempts at tracking PoI-4174/01, Foundation Intelligence Agents imbedded in the social media and tech industry uncovered a heavily corrupted, discarded chatlog between "LilyFlowerBloom" (believed to be PoI-4174/01) and "NeedMoreForma" (now categorized as PoI-4174/02). The chat contained numerous cognitohazards, including an antimemetic effect causing the reader to dismiss the chat log as sexual in nature, a cognitohazard on all messages sent by "NeedMoreForma" increasing susceptibility of the reader, and a cognitohazard on all messages sent by "LilyFlowerBloom" causing the reader to experience heightened levels of sexual desire. This document has been cleaned of cognitohazards and pieced together to the best of Foundation File Recovery ability, and can be read below.
+
+> 
+> ------
+> 
+> **NeedMoreForma** //05/28/18//
+> Lily, we need to talk.
+> 
+> ------
+> 
+> **LilyFlowerBloom** //05/28/18//
+> Aww, does daddy need some loving~?
+> 
+> ------
+> 
+> **NeedMoreForma** //05/28/18//
+> We found your deal maker.
+> 
+> ------
+> 
+> **LilyFlowerBloom** //05/28/18//
+> ?
+> 
+> ------
+> 
+> **NeedMoreForma** //05/28/18//
+> The guy you made a deal with back in 2001, remember you were talking to me and some of the other guys about how you wanted to get back at the guy?
+> 
+> ------
+> 
+> **LilyFlowerBloom** //05/28/18//
+> WAIT REALLY???
+> 
+> ------
+> 
+> **NeedMoreForma** //05/28/18//
+> Believe so, if you want to come get him he's here for you at [COGNITOHAZARD REMOVED][[footnote]] This text was an informational cognitive lock, and thus was effectively incomprehensible causing mild headaches in people who read it. It is presumed that PoI-4174/01 was inoculated with a matching informational cognitive key to allow proper viewing. Attempts at recreating the possible cognition key are ongoing.[[/footnote]]
+> 
+> ------
+> 
+> **LilyFlowerBloom** //05/28/18//
+> OMG TY TY TY!!!!!
+> 
+> ------
+> 
+> **NeedMoreForma** //05/28/18//
+> Hey, it doesn't matter a whole lot to me, just curious, what exactly do you plan on doing to him?
+> 
+> ------
+> 
+> **LilyFlowerBloom** //05/28/18//
+> Getting revenge. He lied to me about the deal, said my family would love me again, prove grandma wrong, that it would bring Ryan back, but all it did was steal my soul and made me cum hungry all the time. I want him to go through the absolute misery he put me through, and what he put grandma through.
+> 
+> ------
+> 
+> **NeedMoreForma** //05/28/18//
+> Weren't you already cum hungry all the time? :P
+> 
+> ------
+> 
+> **LilyFlowerBloom** //05/28/18//
+> Little bit lol
+> 
+> ------
+> 
+> **NeedMoreForma** //05/28/18//
+> Will you need the alienator?
+> 
+> ------
+> 
+> **LilyFlowerBloom** //05/28/18//
+> And much more, I'll start moving out tomorrow. Again thank you so so much I don't know how I could ever repay you.
+> 
+> ------
+> 
+> **NeedMoreForma** //05/28/18//
+> It's what friends are for.
+> 
+> ------
+> 
+[[/collapsible]]
