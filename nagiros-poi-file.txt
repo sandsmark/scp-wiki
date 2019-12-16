@@ -23,7 +23,6 @@ I've been active here for a year, and finally posted the main hub for my canon. 
 [[/=]]
 [[/div]]
 
-[[include :scp-sandbox-3:component:site-17-theme]]
 [[include component:scp-trans-pride |trans-pride-logo= --] |trans-pride-footer= --]]]
 
 [[module CSS]]
@@ -69,6 +68,250 @@ margin-bottom: 25px;
 /* ACHIEVEMENTS */
 .content-panel standalone {
 text-align: center;
+}
+[[/module]]
+
+[[module CSS]]
+/*
+    SITE-17 THEME
+    [2019 Wikidot Theme]
+    Created by Nagiros
+    CC BY-SA 3.0
+*/
+ 
+/* BREADCRUMBS, PAGE TITLE, H1 */
+#breadcrumbs{
+margin: auto;
+margin-bottom: 5px;
+text-align: center;
+padding-bottom: 4px;
+}
+ 
+h1, #page-title {
+    color: #000051;
+}
+ 
+#page-title {
+    position: relative;
+    text-align: center;
+    border-bottom: solid 1px #000051;
+}
+ 
+/* LOGO */
+div#header {
+    background: url(http://scp-sandbox-3.wdfiles.com/local--files/component%3Asite-17-theme/logo17) 10px 40px no-repeat;
+}
+ 
+/* LINK COLOR */
+a {
+    color: rgb(88, 54, 173);
+}
+a.newpage {
+    color: rgb(88, 54, 173);
+}
+#side-bar a:visited{ 
+    color: rgb(88, 54, 173);
+}
+a:visited {
+    color: rgb(88, 54, 173);
+}
+ 
+/* SIDE BAR MODS */
+#side-bar {
+    display: block;
+    background: transparent;
+}
+#side-bar a:visited{
+    color: rgb(88, 54, 173);
+}
+ 
+/* HEADER TEXT */
+div#header h1 a span {
+    font-size: 0px;
+}
+div#header h1 a:before {
+    content: "Site-17 Database";
+    color: #eee;
+ 
+}
+div#header h2 span {
+    font-size:0px;
+    padding: 4px;
+}
+div#header h2:after {
+    content: "Living Past Our End";
+    font-weight: bold;
+    color: #f0f0c0;
+    padding: 19px 0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+    white-space: pre;
+}
+div#side-bar div.side-block {
+    border: 1px solid rgb(88, 54, 173);
+    border-radius: 0px
+}
+ 
+/* IMAGE BLOCK BORDER */
+.scp-image-block {
+  border: solid 1px rgb(108, 108, 255, .5);
+}
+.scp-image-block .scp-image-caption {
+  border-top: solid 1px rgb(108, 108, 255, .5);
+}
+ 
+/* RATINGS */
+.page-rate-widget-box .rate-points {
+  background-color: #000098 !important;
+  border: solid 1px #000098;
+}
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+  background-color: #f0ffff;
+  border-top: solid 1px #000098;
+  border-bottom: solid 1px #000098;
+}
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+  background: transparent;
+  color: #5836AD;
+}
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+  background: #000098;
+  color: #f0ffff;
+}
+.page-rate-widget-box .cancel {
+  background: transparent;
+  background-color: #000098;
+  border: solid 1px #000098;
+}
+.page-rate-widget-box .cancel a {
+  color: #f0ffff;
+}
+.page-rate-widget-box .cancel a:hover {
+  background: #f0ffff;
+  color: #5836AD;
+}
+ 
+/* INFO MODULE */
+#page-content .rate-box-with-credit-button {
+    background-color: #000098;
+    border-color: #000098;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+}
+#page-content .creditButton p a {
+    border-left-color: #f0ffff;
+}
+ 
+#page-content .modalbox {
+    box-shadow: 0 2px 6px rgba(50,0,50,.5);
+}
+ 
+.close-credits,
+.credit-back {
+    filter: hue-rotate(275deg);
+}
+ 
+/* AYER'S INFO MODULE */
+:root {
+     --barColour: #000098;
+}
+ 
+/* HERITAGE MODULE */
+.heritage-rating-module {
+    background-color: #000098;
+    border: solid 1px #ccc066;
+    box-shadow: 0 1px 3px rgba(0,0,0,.25);
+}
+ 
+/* TAB STUFF */
+/* Courtesy of the Anderson Robotics Theme by Croquembouche, from which this was modified. */
+ 
+div.yui-navset ul.yui-nav .selected a,
+div.yui-navset ul.yui-nav .selected a:focus,
+div.yui-navset ul.yui-nav .selected a:hover {
+    color: #0000bf;
+}
+yui-navset.yui-navset-top {
+    border-left: 3px solid #295183;
+    border-left: 3px solid #611e22;
+}
+.yui-navset .yui-nav {
+    position: relative;
+    z-index: 0;
+    border: none;
+    padding-left: 0.2em;
+}
+.yui-navset .yui-nav li {
+    padding: 0;
+    margin: 0.2em 0.3em;
+    transition: transform 0.2s ease-in-out;
+}
+.yui-navset .yui-nav li a {
+    background: transparent;
+    color: #5f6368;
+    border: 1px solid rgba(0,0,0,0.12);
+    transition: background 0.1s ease-in-out,
+                color 0.1s ease-in-out,
+                border 0.1s ease-in-out;
+}
+.yui-navset .yui-nav li a:hover {
+    background: rgba(0,0,0,0.04);
+    color: rgb(108, 108, 255);
+    border: 1px solid rgba(0,0,0,0.12);
+}
+.yui-navset .yui-nav li a em {
+    border: none;
+    padding: 0.5em 0.5em calc(0.5em - 2px) 0.5em;
+}
+.yui-navset .yui-nav .selected {
+    padding: 0;
+    margin: 0.2em 0.3em;
+    transform: scale(1.1);
+    font-weight: bold;
+}
+ 
+.yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a:focus, .yui-navset .yui-nav .selected a:hover {
+    padding: 0;
+    border: 1px solid #1e3c62;
+    border: 1px solid #000051;
+    background: transparent;
+}
+ 
+.yui-navset .yui-nav .selected a em {
+    padding: 0.5em 0.5em calc(0.5em - 2px) 0.5em;
+    border: none;
+}
+ 
+.yui-navset .yui-content {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    position: relative;
+    margin-top: 0.2em;
+    transform-origin: 0 0;
+}
+.yui-navset .yui-content > div {
+    border: 1px solid rgba(0,0,0,0.12);
+    border-left: none;
+    background-color: #f5f5f5;
+    padding: 0.25em 0.5em;
+    display: block;
+    top: 0;
+    overflow: hidden;
+    transform-origin: 0 0;
+}
+ 
+/* MOBILE SIDEBAR BUTTON */
+@media (max-width: 767px) {
+    .open-menu a {
+         border: 0.2em solid #5353ff !important;
+         background-color: #6c6cff !important;
+         color: #dfbcff !important;
+    }
 }
 [[/module]]
 
