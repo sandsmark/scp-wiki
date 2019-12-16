@@ -1,5 +1,46 @@
 title:SCP-4260
 parent:site-17
+[[module CSS]]
+/* BREADCRUMBS, PAGE TITLE, H1 */
+#breadcrumbs{
+margin: auto;
+margin-bottom: 5px;
+text-align: center;
+padding-bottom: 4px;
+}
+
+#page-title {
+position: relative;
+text-align: center;
+}
+
+/* LOGO */
+div#header {
+background: url(http://scp-sandbox-3.wdfiles.com/local--files/component%3Asite-17-theme/logo17) 10px 40px no-repeat;
+}
+
+/* HEADER TEXT */
+div#header h1 a span {
+font-size: 0px;
+}
+div#header h1 a:before {
+content: "Site-17 Database";
+color: #eee;
+
+}
+div#header h2 span {
+font-size:0px;
+padding: 4px;
+}
+div#header h2:after {
+content: "Living Past Our End";
+font-weight: bold;
+color: #f0f0c0;
+padding: 19px 0;
+text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+white-space: pre;
+}
+[[/module]]
 [!--
 
 NOTE REGARDING EDITS:
