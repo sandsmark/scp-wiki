@@ -3,6 +3,45 @@ parent:site-17
 [[include component:site-17-theme]]
 
 [[module CSS]]
+/* BREADCRUMBS, PAGE TITLE, H1 */
+#breadcrumbs{
+margin: auto;
+margin-bottom: 5px;
+text-align: center;
+padding-bottom: 4px;
+}
+
+#page-title {
+position: relative;
+text-align: center;
+}
+
+/* LOGO */
+div#header {
+background: url(http://scp-sandbox-3.wdfiles.com/local--files/component%3Asite-17-theme/logo17) 10px 40px no-repeat;
+}
+
+/* HEADER TEXT */
+div#header h1 a span {
+font-size: 0px;
+}
+div#header h1 a:before {
+content: "Site-17 Database";
+color: #eee;
+
+}
+div#header h2 span {
+font-size:0px;
+padding: 4px;
+}
+div#header h2:after {
+content: "Living Past Our End";
+font-weight: bold;
+color: #f0f0c0;
+padding: 19px 0;
+text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+white-space: pre;
+}
 .blinkbar {animation: blink 1.5s infinite; letter-spacing: -0.13em;}@keyframes blink{to{opacity: .0;}}@keyframes flicker {0% {opacity: 0.9890; }5% {opacity: 0.5842; }10% {opacity: 0.9865; }20% {opacity: 0.0412; }20% {opacity: 0.6255; }25% {opacity: 0.3157; }30% {opacity: 0.7328; }35% {opacity: 0.4654; }40% {opacity: 0.9128; }45% {opacity: 0.2449; }50% {opacity: 0.5485; }55% {opacity: 0.6438; }60% {opacity: 0.1180; }65% {opacity: 0.9085; }70% {opacity: 0.0266; }75% {opacity: 0.6795; }80% {opacity: 0.7812; }85% {opacity: 0.0117; }90% {opacity: 0.2239; }95% {opacity: 0.8897; }100% {opacity: 0.2260; }}@keyframes overlay-anim {0% {visibility: hidden; }10% {visibility: hidden; }11% {visibility: visible; }50% {visibility: hidden; }100% {visibility: hidden; }}
 .indomitable {background-color: white; color: #6f4c7a; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%}
 .scp-box {font-size: 105%; background-color: black; color: white; float: center; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 0% 4% 0% 4%}
