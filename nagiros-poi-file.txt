@@ -129,38 +129,45 @@ Regarding her thoughts towards her own creations, Poi-Cr@b-091 replied:
 
 [[collapsible show="               " hide="- Hide Author Control Panel"]]
 @@@@
-[[module ListPages created_by="Nagiros"]]
-[[div style="float:left; display: inline-block; width: 45%; padding: 0 2%; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin-right: 5px; margin-bottom: 5px"]]
-+++* %%title_linked%%
-Last edited by %%updated_by_linked%% on %%updated_at%%.
-Last comment by %%commented_by_linked%% on %%commented_at%%.
-[[/div]]
-[[/module]]
-~~~~
-
-------
 [[=]]
-[[module CountPages created_by="Nagiros"]]
-{{**##6C6CFF|%%total%%##** TOTAL PAGES}}
+[[module CountPages created_by="Nagiros" category="*"]]
++ ##510000|%%total%%## TOTAL PAGES
 [[/module]]
-[[module CountPages created_by="Nagiros" tags="-fragment"]]
-{{**##6C6CFF|%%total%%##** STANDARD PAGES}}
+[[module CountPages created_by="Nagiros"]]
++ ##510000|%%total%%## STANDARD PAGES
 [[/module]]
 [[module countPages created_by="nagiros" tags="scp"]]
-{{**##6C6CFF|%%total%%##** SCPS}}
+++ ##510000|%%total%%## SCPS
 [[/module]]
 [[module countPages created_by="nagiros" tags="tale"]]
-{{**##6C6CFF|%%total%%##** TALES}}
+++ ##510000|%%total%%## TALES
 [[/module]]
 [[module countPages created_by="nagiros" tags="essay"]]
-{{**##6C6CFF|%%total%%##** ESSAY}}
-[[/module]]
-[[module countPages created_by="nagiros" tags="-scp -tale -essay"]]
-{{**##6C6CFF|%%total%%##** OTHERS}}
+++ ##510000|%%total%%## ESSAY
 [[/module]]
 [[/=]]
+[[module ListPages created_by="Nagiros" separate="no" order="created_at desc" prependLine="||~ Title ||~ Rating ||~ Last Edit ||~ Last Comment ||"]]
+||~ %%title_linked%% || %%rating%% || %%updated_by_linked%% || %%commented_by_linked%% ||
+[[/module]]
+[[=]]
+[[module countPages created_by="nagiros" category="fragment"]]
++ ##510000|%%total%%## FRAGMENTS
+[[/module]]
+[[/=]]
+[[module ListPages created_by="Nagiros" category="fragment" separate="no" order="created_at desc" prependLine="||~ Title ||~ Rating ||~ Last Edit ||~ Last Comment ||"]]
+||~ %%title_linked%% || %%rating%% || %%updated_by_linked%% || %%commented_by_linked%% ||
+[[/module]]
+[[=]]
+[[module countPages created_by="nagiros" category="component"]]
++ ##510000|%%total%%## COMPONENT
+[[/module]]
+[[/=]]
+[[module ListPages created_by="Nagiros" category="component" separate="no" order="created_at desc" prependLine="||~ Title ||~ Rating ||~ Last Edit ||~ Last Comment ||"]]
+||~ %%title_linked%% || %%rating%% || %%updated_by_linked%% || %%commented_by_linked%% ||
+[[/module]]
 
 ------
+
 @@ @@
 [[/collapsible]]
 [[div style="border: solid black 2px; padding-top: -5px; padding-bottom: -5px; padding-left: 5px; padding-right: 5px; font-weight: bold; text-align: center;"]]
@@ -919,6 +926,5 @@ That being said, if you have an article that you think deserves to be on this li
 ------
 
 [[/tab]]
-
 
 [[/tabview]]
