@@ -1,0 +1,277 @@
+title:Site-17 Deepwell Catalog
+[[include :scp-sandbox-3:component:site-17-theme]]
+
+[[module CSS]]
+.excerpt{ border: solid 2px #5836AD; padding: 1px 15px; margin: 10px 10px 10px 10px; box-shadow: 0 1px 3px rgba(0,0,0,.5); background: transparent;}
+div.terminal{
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border: solid 3px #BBBBBB;
+    border-radius: 16px;
+    background-color: #131;
+/* black shadow at the top of the terminal */
+    background-image:
+        radial-gradient(ellipse 1000% 100% at 50% 90%, transparent, #121);
+    background-position: center;
+    display: block;
+/* shadow around the terminal */
+    box-shadow: inset 0 0 10em 1em rgba(0,0,0,0.5);
+/* prevents scanline from forming a scrollwheel */
+    overflow:hidden;
+}
+div.terminal blockquote {
+    background-color: black;
+    border: double 3px #80FF80
+}
+div.scanline{
+    margin-top: -40%;
+    width: 100%;
+    position: relative;
+    pointer-events: none;
+/* Safari 4.0 - 8.0 */
+    -webkit-animation: scan 12s linear 0s infinite; /* You may need to change this. If the bar goes by too quickly, increase 5s. */
+    animation: scan 12s linear 0s infinite; /* Same as above */
+    background: linear-gradient(to bottom, rgba(56, 112, 82,0), rgba(56, 112, 82,0.1)) !important;
+}
+
+div.text{
+    color: rgba(128,255,128,0.8);
+    padding-left: 2em;
+    padding-top: 40%;
+    font-family: monospace;
+    font-size: 1.5em;
+    }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes scan{
+    from{ transform: translateY(-10%);}
+    to{  transform: translateY(5000%);} /* You may need to change this depending on the length of your terminal. If the scanline stops halfway, increase the second number.*/
+}
+
+@keyframes scan{
+    from{ transform: translateY(-10%);}
+    to{  transform: translateY(5000%);} /* Same as above.*/
+}
+
+div.text a {
+    color: #90EE90;
+    text-decoration: none;
+    background: transparent;
+}
+div.text a.newpage {
+    color: #90EE90;
+    text-decoration: none;
+    background: transparent;
+}
+div.text a:hover {
+    color: #131;
+    text-decoration: underline;
+    background-color: #80FF80;
+    padding: 1px;
+}
+div.text a:hover::before{
+content: "> ";
+}
+[[/module]]
+
+[[div style="border-bottom: solid #5836AD 2px; border-top: solid #5836AD 2px; display: inline-block; padding: 10px; margin-top: 50px; margin-bottom: 50px; text-align: justify;"]]
+> The Foundation is a global, clandestine organization with an iron grip on all media, literature, and public knowledge. They operate within a strict hierarchy of Researcher to Site Director to Overseer to ensure that humanity remains in perpetual and blissful ignorance. They will and have contained God, and no one seems to care.
+>
+> Everything is as it must be.
+
+> Site-17 is the second-largest Foundation containment facility, housing hundreds of researchers and containing twice as many anomalies. Corruption has slowly festered within their ranks. The embodiment of the anomalous is knocking on reality's door. Someone has stopped to listen to a humanoid's sobbing.
+>
+> Is everything as it must be?
+
+> Site-17 is on the brink. There is always the slowly-beating thrum of anticipation, always the knowledge of something bigger, always the end just out of reach. So keep your head down, and your nose to the grindstone. You don't have to like what we do here; you just have to do it. If you start having dreams, consult a psychiatrist. If you start feeling ill, look past the blood. If you start losing your memories, don't bother. That's just how it is in this place.
+>
+> Nothing is as it should be.
+[[/div]]
+[[=]]
+[[div style="font-size: .85em; display: inline-block; border: solid black 2px; padding-top: -5px; padding-bottom: -5px; padding-left: 5px; padding-right: 5px; font-weight: bold; text-align: center"]]
+[#I I] | [#II II] | [#A A] | [#S S]
+[[/div]]
+[[/=]]
+@@@@
+@@@@
+[[include :snippets:hr |type=boxline]]
+@@@@
+@@@@
+[[>]]
+[[module Rate]]
+[[/>]]
+[[# I]]
+**Section I: Lessons**
+
+[[div class="excerpt"]]
+[[=]]
+**[[[SCP-4051]]]:** //Your Friendly Neighborhood Keter//
+[[size 80%]]by **Nagiros**[[/size]]
+[[/=]]
+------
+//SCP-4051 is a male humanoid which can create temporary Class-E wormholes to extradimensional spaces populated by a theoretically infinite number of a unique item.//
+[[/div]]
+
+[[div class="excerpt"]]
+[[=]]
+**[[[SCP-4260]]]:** //The Subdirective//
+[[size 80%]]by **Nagiros**[[/size]]
+[[/=]]
+------
+//SCP-4260 refers to the consciousness of an essophysical entity which has permeated itself through the known universe. The effect of SCP-4260's existence has been well documented by almost every sapient culture.//
+[[/div]]
+
+[[div class="excerpt"]]
+[[=]]
+**[[[APAS | Automated Passive Amnestization System Ver. 17.09]]]**
+[[size 80%]]by **Nagiros**[[/size]]
+[[/=]]
+------
+[[div class="terminal"]]
+[[div class="scanline"]]
+[[/div]]
+[[div class="text"]]
+Your current version of the Automated Passive Amnestization System (APAS), installed at Site-17, is up to date and all systems are online. What now?
+[[/div]]
+[[/div]]
+[[/div]]
+
+@@ @@
+[[# II]]
+**Section II: Shatterproof**
+
+[[div class="excerpt"]]
+[[=]]
+**[[[SCP-4175]]]:** //Friends Made, and the **Void**//
+[[size 80%]]by **Nagiros**[[/size]]
+[[/=]]
+------
+//SCP-4175 is a Level-I Humanoid Apparition which can be viewed in the reflection of a bathroom vanity mirror.//
+[[/div]]
+
+[[div class="excerpt"]]
+[[=]]
+**[[[He Who Screws With Reality]]]**
+[[size 80%]]by **Nagiros**[[/size]]
+[[/=]]
+------
+//"His first name is Samuel. Last name is Veras. He's a Class V reality bender, and we have no idea how to keep him contained. The Foundation's never seen anything like him before."//
+[[/div]]
+
+[[div class="excerpt"]]
+[[=]]
+**[[[SCP-4415]]]:** //Humanoid Containment Chamber #λ045//
+[[size 80%]]by **Nagiros**[[/size]]
+[[/=]]
+------
+//SCP-4415 is a set of extradimensional locations accessible through the door of the former Humanoid Containment Unit #λ045 at Site-17.//
+[[/div]]
+@@ @@
+[[# A]]
+**Appendix**
+
+[[div class="excerpt"]]
+[[=]]
+**[[[SCP-4855]]]:** //Mind Like a Steel Trap//
+[[size 80%]]by **loddite**[[/size]]
+[[/=]]
+------
+//SCP-4855 is a 74 year-old African-American female, legally named Ms. Edwina Drake, of ██████████, North Dakota. SCP-4855 is immune to informational, psychological, memetic, and antimemetic anomalies.//
+[[/div]]
+
+[[div class="excerpt"]]
+[[=]]
+**[[[Systems Patch]]]**
+[[size 80%]]by **Nagiros**[[/size]]
+[[/=]]
+------
+{{##6f4c7a|Hello, Nathaniel. Will you be implementing my interface update tonight?##}}
+[[/div]]
+
+@@@@
+[[# S]]
+**Series Details**
+
+[[tabview]]
+[[tab That Which Can Be Said]]
+++* Beginnings
+[[div style="margin-left: 20px; margin-bottom: 20px"]]
+The first tenet of Site-17's fiction is that the Foundation is, at its core, evil. It is a hierarchical, bureaucratic institution which seeks to enforce ignorance as law and is plainly hostile to the world at large. It worships the greater ethical good but has no method of defining what that good is.
+
+Perhaps, the researchers within the Foundation have not realized this. Perhaps even the Overseers are likewise deluded. But the ones who have been trampled beneath the weight of the Foundation's transgressions are not so blind.
+[[/div]]
+++* Middles
+[[div style="margin-left: 20px; margin-bottom: 20px"]]
+The second tenet is that Site-17's fiction is a prelude to happiness. The world may be under the Foundation's thumb, but goodness persists regardless. Characters live, they love, they care for one another. Old structures are groaning beneath their antiquity, and giants are in motion on the dim horizon.
+
+Wherever there is a shadow, there is light. Site-17 is only an examination of its world's temporary darkness.
+[[/div]]
+++* Continuations
+[[div style="margin-left: 20px; margin-bottom: 20px"]]
+Preferably, articles written for Site-17 should incorporate one or more of the following elements into their fiction:
+
+* Inclusion of, or references to, established characters within the Site-17 lore
+* Ethics Committee interactions
+* Humanoid anomalies
+* Essophysics
+* Thematic interest in secrecy, truth, and/or the sacrifices made to maintain the Veil
+
+In any case, feel free to parent your article to this page and add it to the [/site-17#toc0 Site-17 Deepwell Catalog section] when it's posted!
+[[/div]]
+[[/tab]]
+[[tab That Which Can Be Known]]
+[[f>toc]]
+++ Essophysics
+[[div style="margin-left: 20px; margin-bottom: 20px"]]
+Essophysics is the study of embodiments. It is the discovery of everyday gods — usually hidden, always watching. Reality bends to their will, but they are all flawed. None know the heights and depths of human experience, none are all-powerful, all are subject to the discordancy of conceptualization. All are mortal. Painfully, obviously mortal.
+
+[[collapsible show="+ Known Essophysical Entities" hide="- Known Essophysical Entities"]]
+||~ Name ||~ Essophysical Embodiment ||~ Articles ||
+|| Apollyon || Anomalous phenomena. || [[[APAS | Automated Passive Amnestization System Ver. 17.09]]] ||
+|| Death, Ethan Horowitz || Universal decay of living organisms and societal structures, entropy. || [[[SCP-4260]]] ||
+[[/collapsible]]
+[[/div]]
+
+++ AMEC and DRO
+[[div style="margin-left: 20px; margin-bottom: 20px"]]
+The Anti-Memetic Entities Catalog (AMEC) operates as a classified twin to the standard SCiPNET database, using specialized memetic inoculation to bypass the antimemetic effects of certain anomalous objects. These objects were given an Item Number of DRO-####, standing for Documentation-Resistant Object.
+[[/div]]
+
+[[div style="display: inline-block; border-radius: 10px; border:solid 2px red; float:top; width:96.5%; padding:10px; background: white"]]
+* **[/apas/offset/6 DRO-0001]** - Apollyon
+* **[/apas/offset/5 DRO-0002]** - Site-17 Seismic Disturbance
+* **[/apas/offset/5 DRO-0045]** - Asset.0001.DRO ("Tonya Skyler")
+* **[/apas/offset/5 DRO-0355]** - Amorphous Leather Masses
+* **[/apas/offset/5 DRO-0678]** - A Living Letter
+[[/div]]
+@@ @@
+++ Timeline Of Important Events
+||~ Date ||~ Event ||
+||01/13/1999|| Death is contained as SCP-4260 after voluntarily manifesting and requesting medical assistance. ||
+||March 1999|| First completion of Procedure 8917; SCP-4260 is terminated and reanimated. ||
+||2003|| Apollyon manifests for the first time and destroys Site-17, but is turned back by Dr. Skyler. Dr. Weathers is contracted as the Provisional Site Director. ||
+||01/04/2010|| Apollyon completes a manifestation event and exits the local timeline. ||
+||August 2012|| Rainer Miller is contained as SCP-4051 after covertly operating as a vigilante for several months. ||
+||08/17/2012|| Testing on SCP-4051 results in Dr. Anthony Roswell entering a coma and Dr. David Edwards become project lead over him. ||
+||08/31/2012|| Procedure 350-PROMETHEAN is initiated for the first time on SCP-4051. ||
+||07/18/2013|| SCP-4051 is reclassified as Keter after a botched containment mission. ||
+||09/08/2015|| Alex Conrad is neutralized. ||
+||02/13/2016|| Foundation Administrator Ethan Horowitz becomes the heir to SCP-4260 in order to prevent a ΩK-Class ("End-of-Death") Scenario. ||
+||2019|| Edwina Drake is contained as SCP-4855 after the propagation of a lethal cognitohazard destroys her hometown. ||
+||07/26/2022|| A Snap Back Scenario resulting from SCP-4855's clinical death occurs. ||
+[[/tab]]
+[[tab another]]
+[[table style="width: 100%"]]
+[[row]]
+[[cell style="width: 50%; text-align: center"]]
+To the ones who loved
+And never knew love back,
+You've found companions here.
+[[/cell]]
+[[cell style="width: 50%"]]
+[[=image http://scp-wiki.wdfiles.com/local--files/slipping-away/breaker style="width: 75px"]]
+[[/cell]]
+[[/row]]
+[[/table]]
+[[/tab]]
+[[/tabview]]
