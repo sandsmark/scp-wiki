@@ -1,10 +1,5 @@
 title:SCP-4352
 [[module CSS]]
-.lie{
-     font-weight: bold;
-     font-family: monospace;
-     font-size: 140%;
-}
 .notice{
     border: 1px solid #f9e24d;
     outline: 4px solid #b54d3b;
@@ -12,6 +7,43 @@ title:SCP-4352
     background: #b54d3b;
     padding: 10px;
     text-align: center;
+}
+
+/* HEADER */
+#header{ background-image: url(http://scp-wiki.wdfiles.com/local--files/scp-4428/DoMC_Logo100.png); }
+#header h1 a{
+    display: block;
+    margin: 0;
+    padding: 80px 0 25px;
+    line-height: 0;
+    max-height: 0;
+    color: transparent;
+    background: transparent;
+    font-family: 'Verdana', Arial, sans-serif;
+    text-decoration: none;
+    text-shadow: none;
+    letter-spacing: 0.9px;
+}
+#header h1 a::before{
+    content: "DoMC";
+    color: white;
+    letter-spacing: -0.02em;
+    text-shadow: 3px 3px 5px black;
+}
+#header h2 span{
+    display: block;
+    margin: 0;
+    padding: 19px 0;
+    line-height: 0;
+    max-height: 0;
+    font-weight: bold;
+    color: transparent;
+    text-shadow: none;
+}
+#header h2 span::before{
+    content: 'Solving Communications Problems';
+    color: white;
+    text-shadow: 1px 1px 1px black;
 }
 [[/module]]
 
