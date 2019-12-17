@@ -384,30 +384,25 @@ Regarding her thoughts towards her own creations, Poi-Cr@b-091 replied:
 @@@@
 [[=]]
 [[module CountPages created_by="Nagiros" category="*"]]
-+ ##510000|%%total%%## TOTAL PAGES
+##510000|%%total%%## TOTAL PAGES
 [[/module]]
 [[module CountPages created_by="Nagiros"]]
-+ ##510000|%%total%%## STANDARD PAGES
+##510000|%%total%%## STANDARD PAGES
 [[/module]]
 [[module countPages created_by="nagiros" tags="scp"]]
-++ ##510000|%%total%%## SCPS
+##510000|%%total%%## SCPS
 [[/module]]
 [[module countPages created_by="nagiros" tags="tale"]]
-++ ##510000|%%total%%## TALES
+##510000|%%total%%## TALES
 [[/module]]
 [[module countPages created_by="nagiros" tags="essay"]]
-++ ##510000|%%total%%## ESSAY
+##510000|%%total%%## ESSAY
 [[/module]]
-[[/=]]
-[[module ListPages created_by="Nagiros" separate="no" order="created_at desc" prependLine="||~ Title ||~ Rating ||~ Last Edit ||~ Last Comment ||"]]
-||~ %%title_linked%% || %%rating%% || %%updated_by_linked%% || %%commented_by_linked%% ||
-[[/module]]
-[[=]]
 [[module countPages created_by="nagiros" category="fragment"]]
-+ ##510000|%%total%%## FRAGMENTS
+##510000|%%total%%## FRAGMENTS
 [[/module]]
 [[/=]]
-[[module ListPages created_by="Nagiros" category="fragment" separate="no" order="created_at desc" prependLine="||~ Title ||~ Rating ||~ Last Edit ||~ Last Comment ||"]]
+[[module ListPages perPage="10" created_by="Nagiros" separate="no" categories="*" order="created_at desc" prependLine="||~ Title ||~ Rating ||~ Last Edit ||~ Last Comment ||"]]
 ||~ %%title_linked%% || %%rating%% || %%updated_by_linked%% || %%commented_by_linked%% ||
 [[/module]]
 
