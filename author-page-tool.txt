@@ -1,5 +1,4 @@
 title:A Super Easy Tool for Those Too Lazy to Update Their Author Pages
-parent:guide-hub
 [[module css]]
 
 .infobox {
@@ -157,13 +156,14 @@ The following collapsible contains a demonstration of what the component will lo
 
 + Optional Parameters
 
-There are a total of 4 optional parameters which can be passed to the component to customise it further. The following is an example of the component with its default values specified.
+There are a total of 5 optional parameters which can be passed to the component to customise it further. The following is an example of the component with its default values specified.
 
 > @@[[include component:author-page@@ 
 > @@  order=created_at |@@
 > @@  perpage=100 |@@
 > @@  background=yes |@@
 > @@  image=yes |@@
+> @@  sortbar=yes |@@
 > @@]]@@
 
 I'll explain the parameters one by one.
@@ -227,6 +227,8 @@ Images disabled by default - you can delete the line that says "image" in sample
 [[/div]]
 [[/div]]
 [[/module]]
+
+**Sortbar:** Whether a bar that says "Chronological order | Recently posted | Top rated | Recently updated" displays on the top of the page. Default is "yes". Use ##red|sortbat=no## to disable it.
 
 + Collaboration
 For collaborative works, the wiki page itself may not have been posted by you, but surely you'd still want it to appear on your author page! The standard component cannot display pages not created by you -- in order to display additional collaborative pages, add the following code below the previous include block.
