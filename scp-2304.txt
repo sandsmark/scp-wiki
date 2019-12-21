@@ -10,7 +10,17 @@ title:SCP-2304
 |comments= Coming Soon - Rounderhouse
 ]]
 [[include :scptestwiki:component:rounderformat]]
+[[module CSS]]
 
+.sekrit #page-content > .collapsible-block {
+    display: block;
+    text-align: center;
+    padding: none;
+    background-color: none;
+    border-top: none;
+    border-bottom: none;
+}
+[[/module]]
 [[include :scp-wiki:component:classified-bar-woed
 |lv=4
 |item=2304
@@ -345,13 +355,14 @@ From the metadata located in the images of the channel members, Foundation perso
 @@ @@
 @@ @@
 @@ @@
-@@ @@
+[[div class="sekrit"]]
 [[collapsible show="                                      "]]
 > Excerpt: January 11th, 2022 (Private Messages)
 
 > [[span class="member0"]]**Komodo:**[[/span]] yo
 > [[span class="member0"]]**PebbleTooth:**[[/span]] hey
 [[/collapsible]]
+[[/div]]
 [[div class="footer-wikiwalk-nav"]]
 [[=]]
 << [[[SCP-2303]]] | SCP-2304 | [[[SCP-2305]]] >>
