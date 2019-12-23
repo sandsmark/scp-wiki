@@ -1,0 +1,330 @@
+title:SCP-4367
+[[module CSS]]
+/* RECOLORING THE TABS */
+:root {
+    --tab-flicker-color-1: var(--swatch-primary-darker);
+    --tab-flicker-color-2: var(--swatch-primary);
+}
+
+.yui-navset .yui-nav li, 
+.yui-navset .yui-navset-top .yui-nav li {
+    margin: 0 0.25em 0.5em;
+    box-shadow: 0px 0px 0px rgba(var(--dark-accent));
+    transition: all 300ms cubic-bezier(0.4,0.0,0.2,1);
+    background-color: rgb(var(--swatch-menubg-light-color));
+}
+
+.yui-navset .yui-nav .selected, 
+.yui-navset .yui-navset-top .yui-nav .selected {
+    margin: -0.25em 0 0.25em 0;
+}
+
+.yui-navset .yui-nav li:not([class*="selected"]) a:hover, 
+.yui-navset .yui-navset-top .yui-nav li:not([class*="selected"]) a:hover {
+    animation: flicker-on-1 1s linear forwards;
+    -webkit-animation: flicker-on-1 1s linear forwards;
+}
+
+.yui-navset .yui-nav .selected a, 
+.yui-navset .yui-navset-top .yui-nav .selected a {
+    animation: flicker-on-2 1s linear forwards;
+    -webkit-animation: flicker-on-2 1s linear forwards;
+    background-color: rgba(var(--tab-flicker-color-2),1);
+    box-shadow: 0px 1px 2px rgba(var(--dark-accent));
+}
+
+.yui-navset .yui-nav .selected a:hover, 
+.yui-navset .yui-navset-top .yui-nav .selected a:hover {
+    background-color: rgba(var(--tab-flicker-color-2),1) !important;
+}
+
+@keyframes flicker-on-1 {
+  0% {
+    background-color: rgba(var(--tab-flicker-color-1),0);
+  }
+  10% {
+    background-color: rgba(var(--tab-flicker-color-1),1);
+  }
+  15% {
+    background-color: rgba(var(--tab-flicker-color-1),0);
+  }
+  20% {
+    background-color: rgba(var(--tab-flicker-color-1),0.5);
+  }
+  25% {
+    background-color: rgba(var(--tab-flicker-color-1),0.2);
+  }
+  30%,75% {
+    background-color: rgba(var(--tab-flicker-color-1),0.75);
+  }
+  79% {
+    background-color: rgba(var(--tab-flicker-color-1),0.8);
+  }
+  80% {
+    background-color: rgba(var(--tab-flicker-color-1),0.85);
+  }
+  100% {
+    background-color: rgba(var(--tab-flicker-color-1),1);
+  }
+}
+
+@keyframes flicker-on-2 {
+  0% {
+    background-color: rgba(var(--tab-flicker-color-2),0);
+  }
+  10% {
+    background-color: rgba(var(--tab-flicker-color-2),1);
+  }
+  15% {
+    background-color: rgba(var(--tab-flicker-color-2),0);
+  }
+  20% {
+    background-color: rgba(var(--tab-flicker-color-2),0.5);
+  }
+  25% {
+    background-color: rgba(var(--tab-flicker-color-2),0.2);
+  }
+  30%,75% {
+    background-color: rgba(var(--tab-flicker-color-2),0.75);
+  }
+  79% {
+    background-color: rgba(var(--tab-flicker-color-2),0.8);
+  }
+  80% {
+    background-color: rgba(var(--tab-flicker-color-2),0.85);
+  }
+  100% {
+    background-color: rgba(var(--tab-flicker-color-2),1);
+  }
+}
+[[/module]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[include component:image-block name=http://scp-wiki.wdfiles.com/local--files/scp-776-arc/scp-776.jpg|caption=SCP-776|width=300px]]
+**Item #:** SCP-4367
+
+**Object Class:** Safe
+
+**Special Containment Procedures:** SCP-4376 is kept suspended using a gyroscope which prevents any of its sides from being making contact with another surface. This mechanism is situated inside a containment locker located at [[[secure-facility-dossier-site-77| Site-77]]]. Any container used to store or transport SCP-4376 must be capable of withstanding earthquakes measuring up to 7.0 on the Richter scale. All physical handling of SCP-4376 is to be performed using mechanical assistance.
+
+**Description:** SCP-4367 is a six sided die which alters local probabilities when it is rolled. The exact scope of its effect is not fully understood, but does not appear to be substantial. The feeling of using SCP-4367 in the context of being thrown has been described as “satisfying” and a generally pleasant action to perform. 
+
+The surface of SCP-4367 is translucent apart from symbolic engravings on each of its sides. These symbols are arranged similarly to the appearance of a standard six-sided die configuration. In order of quantity the emblems are a lightning bolt, two snowflakes, three drops of water, four brown circles, five red triangles, and six waving lines radiating from the center of that side.
+
+A pamphlet found alongside SCP-4376 describes numerous potential effects which may occur after rolling. Utilizing flowery language and alluding to various aspects of mysticism, each side of the die is ascribed multiple and occasionally overlapping properties.
+
+[[tabview]]
+[[tab Opening Page]]
+[[=]]
++ ODD ENERGY DISSEMBLER  
+[[/=]]
+@@
+@@
+@@
+@@
++++ We have known since ancient times of powers of magnetism and dowsing in Binding on our souls and intwined to the natural forces of the Universe.
+@@
+@@
+@@
+@@
++++ Living weighs the soul down and //throws open the doors// to a rushing ever-present living space pulling predicting movement and flowing in all manner of random directions.
+@@
+@@
+@@
+@@
++++++ This leaflet companion piece will ensure that pulling on the strings which bind everything to material places will not lead to your eradication, but emancipation.
+@@
+@@
+@@
+@@
+[[/tab]]
+[[tab ENERGY ]]
+
+ENERGY is used by universal actors in pursuit of SERENITY. When we speak of ENERGY it is too often in the wrapper of objectivist material concepts like battery. School textbooks describe ENERGY in wholly pedestrian terms.
+
+Lightning bolts are singular moments of natural history.
+
+Some people feel as though ENERGY can be defined through these physical terms. Those who know better can talk of ENERGY as the power of the universe flowing through time and space to strike suddenly and severely upon the limited space of worlds which we can see.
+
+The Sun links ENERGY through to DIVINITY and from that space all those walking on life's stage are able to ascend if they can let go of their preconceived notions.
+
+
+[[/tab]]
+[[tab SERENITY]]
+
+SERENITY means peace in all things, calm balance amid a tilting universe. At the center of all emotional and physical turbulence is an eye which //all of our focus// must be placed into for our best chance of being the very best.
+
+Two snowflakes can never look the same. All of the millions of actors in a blizzard of bits must each complement the other while staying unique. Existing briefly they have found perfect SERENITY and worrying is //never// inherently present in a snowstorm.
+
+SERENITY rolls reflect on the peace of users. Inner strifes will come out as a material focus from a hopefully peaceful intent. Let the world pass by with calm contemplation.
+
+[[/tab]]
+[[tab PURITY]]
+
+Hysterical tears and bubbling weeps bring PURITY through the shedding of negative emotions and distressing memories. Purity is not removing the darkness or exorcising all demons but the process of coming to terms with our own bad blood.
+
+Three droplets of water refresh like a shower with pain dripping off our legs down a dirty drain. Gone from life is the wretched ENERGY which counteracted every motivation and desire with inertia until material desires were all that remained!
+
+PURITY washes away everything which we fear to accept along with what we have accepted out of fear. Cleansing water bursts the dam of self-denying decrees and sweeps the roller towards their complete self-actualization.
+
+[[/tab]]
+[[tab STABILITY]]
+STABILITY is four brown circles, possibly symbolizing stone. SERENITY and PURITY come before STABILITY, all powered by ENERGY. Once one is passed others must soon follow. They will all come together when they go.
+
+Once the absence of Counterweights is undertaken a whole self is centered at their middle point of the universe. Anywhere can be the //middle of the universe// if ENERGY is present. Free from gravity rising without hinderance.
+
+Material and baggage of the mind //dusted like bundt cake.// Soar free in the same spot as all else moves around searching forever. 
+
+[[/tab]]
+[[tab RIGHTEOUSNESS]]
+Five triangular embers of RIGHTEOUSNESS, the first red signs of mastered intellect. Choose to let the red seeds burn up your mind of all falsehoods labored within mortal experience. 
+
+The heat is the penultimate form of ENERGY exerting universal natural force upon your being. Physically present but spiritually the limitations are burned away. Truth And Justice are present without need for catching lies. Seeing clearly all which was fogged before.
+
+Every atom of your being is //vibrating to every corner of the universe// unless through conduit with the conductors of natural force //ENERGY STABILITY SERENITY PURITY// sling the strings of being back to retract at your center.
+
+
+[[/tab]]
+[[tab DIVINITY]]
+
+DIVINITY is not perfection. Six crooked lines surrounding an empty center. Every point a step so steep that even taxing every ounce of ENERGY in the universe may not bring a DIVINITY status closer to actual being. //Not without luck and chance.//
+
+Others who still vibrate pick up on DIVINITY inherently and will submit  to those with such radiant PURITY that their gleaming energy //may blind even those who cannot see aura ENERGY exploding from every pore//.  
+
+All of these results are to be Respected. Do not take the powers of Natural Force as a parlor trick. These changes are FOREVER.
+
+
+[[/tab]]
+
+[[/tabview]]
+
+
+The originator of SCP-4367 and the associated pamphlet is not known. Agent Albert Montoya reported experiencing temporary cessation of his gravitational connection to the earth while cleaning out a deceased family member's home[[footnote]]Analysis of debriefing interview indicates Agent Montoya may have gained forward momentum in this incident by losing his footing on debris.[[/footnote]]. This led to SCP-4367 being discovered and contained. No other item associated with the estate has shown any anomalous properties and it is unknown how Agent Montoya's relative came to possess it.  
+
+Notably, no user of SCP-4367 has ever reported feeling as though SCP-4367 was rolled unfairly or improperly.
+
+**Addendum:** SCP-4367 diagnostics testing log.
+
+> __**Procedure:**__ Tester rolls SCP-4367 in a controlled test chamber, then remains for one hour before exiting the testing area. Any effects or events instigated by utilizing SCP-4367 are recorded and analyzed. 
+> 
+> Devices for measuring air pressure, temperature, local radiation levels and other events which may otherwise be difficult to detect have been allocated at the discretion of the Supervising Researcher.
+> 
+> __**Personnel:**__ Junior Researcher Darlene Penny, Junior Researcher Cindy Lou
+> 
+> __**Supervising Researcher:**__ [[[nacho-business| Brian Cohen.]]]
+
+----
+
+[[div style="display: inline-block; border-radius: 10px; border:dashed 1px #444444; background:#F5F5F5; float:top; width:96.5%; padding:10px"]]
+__**Test Battery Experiment A**__
+**Subject:** Junior Researcher Lou supervised by Junior Researcher Penny
+**Procedure:** Junior Researcher Lou rolls the dice, which momentarily spins on one of its points before landing on the lightning bolt [[footnote]]ENERGY[[/footnote]]icon.
+**Results:** No immediate changes in the environment or atmosphere noted. During a review of collecting data, audio recordings from the inside of the test chamber were not present. Recorder was subsequently noted to be defective and was repaired.
+**Analysis:** 
+- //It could have been human error. Should we be more closely controlling for how it's rolled? If it affects probability we'll probably be taking as much chance out of the equation as possible to erase the potential for coincidence. There were no voltage spikes or magnetic pulses or anything else that might've corrupted the data. But I saw myself turn the machine on. Hopefully we'll get a repeat to compare this one to.// -- J.R. Penny
+- //Speculation isn't evidence. Occam's razor, until we get some consistency it's more likely that the technician mishandled the equipment.// -- J.R. Lou
+[[/div]]
+
+
+> //Note: Mechanical drone subsequently requisitioned for testing purposes//
+
+----
+
+[[div style="display: inline-block; border-radius: 10px; border:dashed 1px #444444; background:#F5F5F5; float:top; width:96.5%; padding:10px"]]
+__**Test Battery Experiment D**__
+**Subject:** RC Drone, with by Junior Researcher Penny and Junior Researcher Lou supervising.
+**Procedure:** The drone shakes SCP-4367 for thirty seconds before dropping it. The three water droplets[[footnote]]PURITY[[/footnote]] icon is rolled
+**Results:** Fire extinguishing sprinklers in the control room ceiling were errantly activated, causing both attending researchers to evacuate the chamber. Malfunction was determined to be because of excess dust which was stirred by their activity. Testing suspended early.
+**Analysis:** 
+- //Fool me once, twice, thrice, all that. I was expecting to maybe see some water or the reported gravitational reversal, which has not recurred. But things are happening. I feel like this one should count. Based on the material, it's highly plausible that our shower could have been part of its effect.// -- J. R. Penny
+
+- //I'm not sure how likely that is. On the other hand, given what we're working with I can't prove you wrong. We'll just have to re-review this one at the end of the testing battery.// -- J.R. Lou
+[[/div]]
+
+----
+
+[[div style="display: inline-block; border-radius: 10px; border:dashed 1px #444444; background:#F5F5F5; float:top; width:96.5%; padding:10px"]]
+__**Test Battery Experiment F**__
+**Subject:** RC Drone, with by Junior Researcher Penny and Junior Researcher Lou supervising.
+**Procedure:** The drone shakes SCP-4367 for thirty seconds before dropping it. The face with five red triangles [[footnote]]RIGHTEOUSNESS[[/footnote]]icons is rolled.
+**Results:** Approximately fifteen minutes into the test, J. R. Lou received a personal text communication and was excused from the testing chamber. No other unusual events were recorded by the testers or sensors.
+**Analysis:** 
+- //I feel this is our strongest and most significant effect so far. Unusual how it doesn't even seem to be noticing the drone. Perhaps we should find a more remote testing areas. Many future avenues to explore. So when the manual describes the purification, it's applicable in my colleague in her situation. That being said, conflating personal experience with the supernatural is an easy trap to fall into. I'm feeling bullish about continued good results for our experiments.// -- J. R. Penny
+
+- //The 'just-so-happens' element is becoming a pattern. Monitoring equipment for the chamber itself may be necessary, as the anomaly appears to be able to affect the subject(s) initiating the rolling even if they are not physically present. Double-blind testing for a future battery of tests may be necessary to fully quantify the object's anomalous properties The text was significant because I was waiting for the results of a lab test. I felt relief when I read it which was personally significant. While I see my colleague's logic and find it reasonable I would have trouble correlating this to our testing.// -- J. R. Lou
+[[/div]]
+
+----
+
+[[div style="display: inline-block; border-radius: 10px; border:dashed 1px #444444; background:#F5F5F5; float:top; width:96.5%; padding:10px"]]
+__**Test Battery Experiment AA**__
+**Subject:** RC Drone, with by Junior Researcher Penny and Junior Researcher Lou supervising.
+**Procedure:** The drone shakes SCP-4367 for thirty seconds before dropping it. The face with six radiant curved lines[[footnote]]DIVINITY[[/footnote]] is rolled.
+**Results:** No results were noted during any portion of the test. On the same day, air conditioning/filtration in the testing wing had an unscheduled shutdown due to failures in scheduled maintenance routines.[[footnote]]Maintenance procedures are now undergoing routine auditing.[[/footnote]]
+**Analysis:**
+- //This seems like the most direct correlation yet, and it's also expanding scope in both time and space. This escalation might mean we should suspend testing if anything more serious happens. Or is this already serious enough?// -- J. R. Penny
+
+- //It could have happened at any time. So why now? Losing air power on the side which looks like wind is coincidental, but we're following the thread which says that it's not. Does that make it our fault if people have heatstroke downstairs, but this could all just a big coincidence. I will not undermine Penny's work but I would like to officially note my uncertainty in continuing.// -- J.R Lou
+
+[[/div]]
+
+
+> //Note: Continuation of testing authorized by Researcher Cohen//
+
+----
+
+[[div style="display: inline-block; border-radius: 10px; border:dashed 1px #444444; background:#F5F5F5; float:top; width:96.5%; padding:10px"]]
+__**Test Battery Experiment AD**__
+**Subject:** RC Drone, with by Junior Researcher Penny and Junior Researcher Lou supervising.
+**Procedure:** The drone shakes SCP-4367 for thirty seconds before dropping it. The lightning bolt[[footnote]]ENERGY[[/footnote]] symbol is the result.
+**Results:** No results were recorded in or in relation to the test chamber on this day.
+
+
+During the next day of the experiment, as the drone was shaking SCP-4367, a malfunction with the rolling mechanism caused SCP-4367 to fall out of the recording area. The dice result was not recorded. Review of testing and observation chamber surveillance records showed no abnormalities. 
+**Results:** N/A
+**Analysis:**
+- //In concluding the initial test battery, I think there's several options to pursue in subsequent testing. I have many other suggestions for what these tests could entail which will be included in my follow-up report.// -- J. R. Penny
+
+- //Even when serviced, broken equipment is more likely than new machines to break down. All the parts in it were just as old as the part that brought everything down. So in a sense this could be expected but we can't take absence of evidence as further signs that something is happening. Nothing happening means the only significant takeaway we can glean is the skip had no effect this time. How widespread are the alterations we make to odds if it spreads through time and space? Why is the Foundation playing with fire?// -- J.R. Lou
+
+[[/div]]
+
+----
+
+[[collapsible show=">Level 3 Clearance Required - Accessing... Relevant Confidential Personnel Documentation<" hide=">Access Granted<"]]
+**Addendum:** 
+[[div style="display: inline-block; border-radius: 10px; border:dashed 1px #444444; background:#F5F5F5; float:top; width:96.5%; padding:10px"]]
+[[div style="background-color:#000080"]]
+[[=]]
++ [[span style="color:white"]]**{{Re-Assignment Request Form}}**[[/span]]
+[[/=]]
+[[/div]]
+> FROM: {{Junior Researcher Cindy Lou}}
+> TO: {{Assistant Director of Human Resources Mary Guild}}
+
+To whom it may concern,
+
+I am requesting transfer from the SCP-4367 project. This has nothing to do with Junior Researcher Penny, who has been a pleasure to work with. I am the only reason this transfer is necessary. 
+
+From everything I've learned about the Foundation there's no end to the layers of its operations. I've come to accept that I was working for the void and might have to look one day. I didn't think I would see the void in a die. 
+
+The sprinklers coming on as I was leaving the building on the same day that we rolled the water droplets in testing instigated my first panic attack since college. Maybe they always came on at that time and I never noticed, maybe it was a programming error, either way I spent the rest of the night wide-awake fighting invasive odds and probabilities.
+
+Every time the drone rolled fire I would inevitably burn myself at some point during the day. From spilling coffee to singeing my arms as I took dinner from the oven, I wasn't finding any way to avoid thinking about the chances.
+
+No matter how hard I wanted to believe my skeptical side, I couldn't distance myself from the thought that maybe there was really something to that die. I ran into a friend who had moved cross country at a local coffee shop. The conversation was natural and light, it brought me a sense of peace at the time, but once alone I came to the horrible realization. The last, unrecorded roll, must have been snowflakes. The SERENITY the conversation brought, and the worry that disappeared. I know it was snowflakes, I know it was. 
+
+I can't stop spiraling. Every time I reach for a cup, I must think to myself, "What are the odds of this spilling?" Going to bed, I wonder what my chances are of a fire starting in my home while I sleep. Instead of sleep I'm looking up spreadsheets to see how likely it is my father succumbs to heart disease before next year. 
+
+Actions that I once did autonomously now force me to ponder the statistical odds of the unthinkable. I cannot continue like this.
+
+These feelings are not rational, and I know that it is all extremely circumstantial. I'm sorry for any inconvenience or problems this causes anyone else. I've tried to keep a professional distance between work and my personal life but it's all bleeding together and I don't know how to fix it here.
+
+Respectfully
+
+Junior Researcher Cindy Lou
+[[/div]]
+[[/collapsible]]
