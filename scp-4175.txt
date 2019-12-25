@@ -1,20 +1,6 @@
 title:SCP-4175
-parent:site-17
 [[module CSS]]
 a.collapsible-block-link { font-weight: bold; }
-.meta-title {
-  border-bottom: solid 1px #bbbbbb;
-  color: #990011;
-  font-weight: normal;
-  margin: 0 0 0.6em;
-  padding: 0 0 0.25em;
-  font-size: 200%;
-}
-.meta-title p {
-  margin: 0;
-  position: relative;
-  text-align: center;
-}
 /* BREADCRUMBS, PAGE TITLE, H1 */
 #breadcrumbs{
 margin: auto;
@@ -51,10 +37,6 @@ white-space: pre;
 }
 [[/module]]
 
-[[div class="meta-title"]]
-SCP-4175
-[[/div]]
-
 [[include :scp-wiki:component:pride-highlighter |inc-s9-tg-alt= --]]]
 
 [[include info:start]]
@@ -88,6 +70,12 @@ Thanks a ton, all!
 |clearance= 2
 ]]
 [[/<]]
+
+[[module CSS]]
+#page-title {
+    display: block;
+}
+[[/module]]
 
 @@ @@
 
