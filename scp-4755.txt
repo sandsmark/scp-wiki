@@ -1,20 +1,5 @@
 title:SCP-4755
-parent:site-17
 [[module CSS]]
-.meta-title {
-  border-bottom: solid 1px #bbbbbb;
-  color: rgb(48, 48, 52);
-  font-weight: bold;
-  margin: 0 0 0.6em;
-  padding: 0 0 0.25em;
-  font-size: 200%;
-  font-family: Poppins;
-}
-.meta-title p {
-  margin: 0;
-  position: relative;
-  text-align: center;
-}
 /* BREADCRUMBS, PAGE TITLE, H1 */
 #breadcrumbs{
 margin: auto;
@@ -34,10 +19,6 @@ a.collapsible-block-link { font-weight: bold; }
   text-align: justify;
 }
 [[/module]]
-
-[[div class="meta-title"]]
-SCP-4755
-[[/div]]
 
 [[include :scp-wiki:component:black-highlighter-theme-dev]]
 [[include :scp-wiki:component:pride-highlighter |inc-tg-alt= --]]]
@@ -108,6 +89,12 @@ If you are not a registered member of the Overseer Council, attempting to access
 |risk-class= notice
 ]]
 ------
+[[module CSS]]
+#page-title {
+    display: block;
+    text-align: center;
+}
+[[/module]]
 @@ @@
 [[include component:image-block
     name=containment|
