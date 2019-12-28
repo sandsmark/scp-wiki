@@ -96,13 +96,28 @@ We'll be in touch.
 [[span class="hover"]] [[span]] How well you can handle your shit is an important component of training, and there will be pharmacological hallucinatory tutorials just for you. Have fun in the desert with the lizard king.[[/span]]Because it is chock full of drugs[[/span]][[span class="hover"]][[span]]It's also pretty funny watching you rooks spaz out.[[/span]].[[/span]]
 
 [[module CSS]]
-#header {
-    height: 140px;
-    position: relative;
-    z-index: 10;
-    padding-bottom: 22px; /* FOR MENU */
-    background: url(http://scp-sandbox-3.wdfiles.com/local--files/rounzie/psips2.png) 10px 40px no-repeat;
+#header {background-image: url(http://scp-sandbox-3.wdfiles.com/local--files/rounzie/psips2.png);}
+#header h1 a {
+    display: block;
+    margin: 0;
+    padding: 80px 0 25px;
+    line-height: 0px;
+    max-height: 0px;
+    color: transparent;
+    background: transparent;
+    font-family: BauhausLTDemi. 'Nanum Gothic'. Arial. sans-serif;
+    text-decoration: none;
+    text-shadow: none;
+    letter-spacing: 0.9px;
 }
+ 
+#header h1 a::before {
+    content: "SCP Foundation";
+    color: #fff;
+    letter-spacing: -0.02em;
+    text-shadow: 3px 3px 5px #000;
+}
+ 
 #header h2 span {
     display: block;
     margin: 0;
@@ -121,8 +136,12 @@ We'll be in touch.
     text-shadow: 1px 1px 1px rgba(0,0,0,.8);
 }
 
-sup {  vertical-align: top;
+sup {
+  vertical-align: top;
   position: relative;
-  top: -0.5em;}
+  top: -0.5em;
+}
+
 .scp-image-block.block-right { margin: 1em 2em 1em 1em; }
+
 [[/module]]
