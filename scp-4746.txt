@@ -5,42 +5,55 @@ title:SCP-4746
 
 [[module CSS]]
 @keyframes fade-in {
-    0% {opacity: 0}
-    50% {opacity: 0}
-    100% {opacity: 1}
-}
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}}
 
-.dblock {background: white; color: white; transition: 1s}
-.dblock:hover {color: #333; transition: 1.5s}
+/* Credit to Nanimono Daemon for the mouseover blackbox format, found here:
+http://www.scp-wiki.net/scp-style-resource#toc11 */
 
-.hover1{color: #333; transition: 1s}
-.hover1:hover {color: white; transition: 1s}
-.hover1 span {display: none}
-.hover1:hover span {position: absolute; display: inline; background-color: transparent; color: #333; animation: fade-in 1s}
-.hover1:hover span span {position: relative}
+.dblock {background: white; color: white; transition: 1s;}
+.dblock:hover {color: #333; transition: 1.5s;}
 
-.hover2{color: #333; transition: 1s}
-.hover2:hover {color: #f5f5f5; transition: 1s}
-.hover2 span {display: none}
-.hover2:hover span {position: absolute; display: inline; background-color: transparent; color: #333; animation: fade-in 1s; width: 80%}
-.hover2:hover span span {position: relative}
+/* Credit to James Kanjo for the inline hover tip CSS I butchered, found here:
+http://community.wikidot.com/howto:inline-hover-tips */
+
+/* The three different hover classes defined below are for three different background colors: the main text (white), the interview log (#f5f5f5) and the image caption (#eee). */
+
+.hover1{color: #333; transition: 1s;}
+.hover1:hover {color: white; transition: 1s;}
+.hover1 span {display: none;}
+.hover1:hover span {position: absolute; display: inline; background-color: transparent; color: #333; animation: fade-in 1s;}
+.hover1:hover span span {position: relative;}
+
+.hover2{color: #333; transition: 1s;}
+.hover2:hover {color: #f5f5f5; transition: 1s;}
+.hover2 span {display: none;}
+.hover2:hover span {position: absolute; display: inline; background-color: transparent; color: #333; animation: fade-in 1s; width: 80%;}
+.hover2:hover span span {position: relative;}
+
+.hover3{color: #333; transition: 1s;}
+.hover3:hover {color: #eee; transition: 1s;}
+.hover3 span {display: none;}
+.hover3:hover span {position: absolute; display: inline; background-color: transparent; color: #333; animation: fade-in 1s; width: 24%;}
+.hover3:hover span span {position: relative;}
 [[/module]]
 
-[[div style="max-width: 30%; float: right; padding-left: 10px"]]
-[[include component:image-block name=Traitor.jpg|align=right|width=200px|caption=[[span class="hover2"]][[span style="width: 24%"]]Photo of SCP-4746 predating their anomalous nature.[[/span]]Visual aid to assist personnel in terminating SCP-4746 on sight.[[/span]]]]
+[[div style="max-width: 30%; float: right; padding-left: 10px;"]]
+[[include component:image-block name=Traitor.jpg|align=right|width=200px|caption=[[span class="hover3"]][[span]]Photo of SCP-4746 predating their anomalous nature.[[/span]]Visual aid to assist personnel in terminating SCP-4746 on sight.[[/span]]]]
 [[/div]]
 
 **Item #:** SCP-4746
 
 [[span class="hover1"]][[span]]**Object Class:** Euclid[[/span]]**Object Class:** N/A[[/span]]
 
-[[span style="max-width: 62%; display: inline-block"]][[span class="hover1"]][[span style="max-width: 60%"]]**Special Containment Procedures:** SCP-4746 should be contained at an undisclosed location by Foundation personnel that are able to perceive the unaltered version of this file.[[/span]]**Special Containment Procedures:** SCP-4746 should not be contained, but eliminated at all costs. Collateral damage is irrelevant. No attempts may be made to negotiate with SCP-4746.[[/span]][[/span]]
+[[span style="max-width: 62%; display: inline-block;"]][[span class="hover1"]][[span style="max-width: 60%;"]]**Special Containment Procedures:** SCP-4746 should be contained at an undisclosed location by Foundation personnel that are able to perceive the unaltered version of this file.[[/span]]**Special Containment Procedures:** SCP-4746 should not be contained, but eliminated at all costs. Collateral damage is irrelevant. No attempts may be made to negotiate with SCP-4746.[[/span]][[/span]]
 
-[[span style="max-width: 62%; display: inline-block"]][[span class="hover1"]][[span style="max-width: 62%"]]**Description:** SCP-4746 refers to former Chaos Insurgency operative A███ R███████. Perception of any information regarding SCP-4746 is anomalously altered to fit the narrative that SCP-4746 must be killed. These alterations contain mild cognitohazardous triggers to convince subjects of their veracity. Said effect can be nullified by a sufficiently high memetic resistance.[[/span]]**Description:** SCP-4746 is a 45-year old Caucasian male by the name of A███ R███████, who must be eliminated at all costs. Foundation personnel reading this file are hereby commanded to terminate SCP-4746 with extreme prejudice if the opportunity arises. This information should be made available to as many Foundation assets as possible, regardless of security clearance.[[/span]][[/span]]
+[[span style="max-width: 62%; display: inline-block;"]][[span class="hover1"]][[span style="max-width: 62%;"]]**Description:** SCP-4746 refers to former Chaos Insurgency operative A███ R███████. Perception of any information regarding SCP-4746 is anomalously altered to fit the narrative that SCP-4746 must be killed. These alterations contain mild cognitohazardous triggers to convince subjects of their veracity. Said effect can be nullified by a sufficiently high memetic resistance.[[/span]]**Description:** SCP-4746 is a 45-year old Caucasian male by the name of A███ R███████, who must be eliminated at all costs. Foundation personnel reading this file are hereby commanded to terminate SCP-4746 with extreme prejudice if the opportunity arises. This information should be made available to as many Foundation assets as possible, regardless of security clearance.[[/span]][[/span]]
 
 **Addendum:** Interview log 2019/08/28 9:30 AM
 
-[[div style="display: inline-block; border: dashed 1px #999; background: #f5f5f5; float: center; width: 84%; padding: 1px 15px; margin: 10px 10px 10px 40px"]]
+[[div style="display: inline-block; border: dashed 1px #999; background: #f5f5f5; float: center; width: 84%; padding: 1px 15px; margin: 10px 10px 10px 40px;"]]
 
 **Interviewed:** SCP-4746
 
@@ -90,8 +103,7 @@ title:SCP-4746
 [[div style="border-bottom: solid 1px #999;"]]
 [[/div]]
 
-[[span class="hover2"]][[span]]**Closing statement:** These logs are to be made publicly available, in order to test Dr. Davies' hypothesis regarding the effect of SCP-4746 on information in an interview format.[[/span]]**Closing statement:** In light of his actions, John Davies' employment at the Foundation should be terminated. Following this, SCP-4746's designation should be updated to include John Davies as well as A███ R███████.[[/span]]
-
+[[span class="hover2"]][[span]]**Closing statement:** These logs are to be made publicly available, in order to test Dr. Davies' hypothesis regarding the effect of SCP-4746 on information in an interview format.[[/span]]**Closing statement:** In light of his actions, Dr. Davies' employment at the Foundation should be terminated. Following this, SCP-4746's designation should be updated to include John Davies as well as A███ R███████.[[/span]]
 [[/div]]
 
 [[span class="dblock"]]**Update:** I don't know if anyone will be able to see this, but here goes. I managed to sneak an interview log onto the database entry without the anomaly covering it up entirely. Looks like I was right - It's not foolproof. It can't seem to affect SCP-4746's own speech. Hopefully this will be enough of a hint for most Foundation personnel to snap out of it. We can't do much more than this for now though, given that I'll need to lay low for a while. We didn't quite expect it to, uh, //react// like this. -- Dr. Davies[[/span]]
