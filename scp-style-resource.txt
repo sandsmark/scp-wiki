@@ -2926,23 +2926,23 @@ document.write("There are only " + daysLeft + " days,  " + hrsLeft +" hours, a
 
 **What it looks like:** 
 
-[[include :scp-sandbox-3:component:collapsible-top show=+ A |hide=- A]]
+[[include :scp-int:component:coltop show=+ A |hide=- A]]
 AAAAAAAAAAAAAAAAAAA!
-[[include :scp-sandbox-3:component:collapsible-top show=+ More A? |hide=- AAAAAAAA]]
+[[include :scp-int:component:coltop show=+ More A? |hide=- AAAAAAAA]]
 [[=]]
 +* A
 [[/=]]
-[[include :scp-sandbox-3:component:collapsible-bottom]]
-[[include :scp-sandbox-3:component:collapsible-bottom]]
+[[include :scp-int:component:colend]]
+[[include :scp-int:component:colend]]
 
 **What to copy:**
 
 [[collapsible]]
 [[div class="code"]]
-@@[[include :scp-sandbox-3:component:collapsible-top show=SHOW TEXT |hide=HIDE TEXT]]@@
-@@[[include :scp-sandbox-3:component:collapsible-top show=SHOW TEXT |hide=HIDE TEXT]]@@
-@@[[include :scp-sandbox-3:component:collapsible-bottom]]@@
-@@[[include :scp-sandbox-3:component:collapsible-bottom]]@@
+@@[[include :scp-int:component:coltop show=SHOW TEXT |hide=HIDE TEXT]]@@
+@@[[include :scp-int:component:coltop show=SHOW TEXT |hide=HIDE TEXT]]@@
+@@[[include :scp-int:component:colend]]@@
+@@[[include :scp-int:component:colend]]@@
 [[/div]]
 [[/collapsible]]
 
