@@ -1,0 +1,331 @@
+title:SCP-4592
+[[module Rate]]
+[[/>]]
+
+div.terminal{
+    border: 1px solid black;
+    border: solid 3px #BBBBBB;
+    border-radius: 16px;
+    background-color: #131;
+/* black shadow at the top of the terminal */
+    background-image: 
+        radial-gradient(ellipse 1000% 100% at 50% 90%, transparent, #121);
+    background-position: center;
+    display: block;
+/* shadow around the terminal */
+    box-shadow: inset 0 0 10em 1em rgba(0,0,0,0.5);
+/* prevents scanline from forming a scrollwheel */
+    overflow:hidden;
+}
+div.terminal blockquote {
+    background-color: black;
+    border: double 3px #80FF80
+}
+div.scanline{
+    margin-top: -40%;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    pointer-events: none;
+/* Safari 4.0 - 8.0 */
+    -webkit-animation: scan 12s linear 0s infinite; /* You may need to change this. If the bar goes by too quickly, increase 5s. */
+    animation: scan 12s linear 0s infinite; /* Same as above */
+    background: linear-gradient(to bottom, rgba(56, 112, 82,0), rgba(56, 112, 82,0.1)) !important;
+}
+
+div.text{
+    color: rgba(128,255,128,0.8);
+    padding-left: 2em;
+    padding-top: 40%;
+    font-family: monospace;
+    font-size: 1.2em;
+    }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes scan{
+    from{ transform: translateY(-10%);}
+    to{  transform: translateY(5000%);} /* You may need to change this depending on the length of your terminal. If the scanline stops halfway, increase the second number.*/
+}
+
+@keyframes scan{
+    from{ transform: translateY(-10%);}
+    to{  transform: translateY(5000%);} /* Same as above.*/
+}
+
+div.text a {
+    color: #90EE90;
+    text-decoration: none;
+    background: transparent;
+}
+div.text a.newpage {
+    color: #90EE90;
+    text-decoration: none;
+    background: transparent;
+}
+div.text a:hover {
+    color: #131;
+    text-decoration: underline;
+    background-color: #80FF80;
+    padding: 1px;
+}
+div.text a:hover::before{
+content: "> ";
+}
+[[/module]]
+
+[[include :smlt:component:aers:classification-stuff
+|item=4592
+|lvl=2
+|class=Keter
+|threat=Green
+|threat-colour=green [!-- This is colour of the little ball. If you're unsure, keep it the same as the threat. --]
+]]
+
+[[include component:image-block
+    name=nebula.jpg|
+    caption=An image of the nebula from which SCP-4592 originates, taken by Foundation satellite Pioneer-9
+]]
+
+**Special Containment Procedures:** All recent media is to be scanned for references to SCP-4592. Any media containing a reference to SCP-4592 is to be removed from circulation and archived. 
+
+Any individual claiming to have experienced SCP-4592 or something similar is to be taken in for questioning and amnesticized.
+
+Foundation Sattelite Pioneer-9 is to be permanently stationed around the SCP-4592 nebula. It is to be constantly emitting signal-jamming radio waves to deter the detection of the nebula, as well as tracking the movement of the nebula.  
+
+**Description:** SCP-4592 is a phenomenon --of unknown origin or source-- that manifests in the vacuum of space. This phenomenon takes the form of music. This music can only be heard when an individual is physically exposed to the vacuum of space, hence, it cannot be heard from within a functional space suit or spacecraft. 
+
+
+All individuals who have experienced SCP-4592 claim to have heard different melodies, often with different instruments. Descriptions range from a single guitar to a full choir, however, this music is always described as "soothing" or "calming". Individuals who have heard SCP-4592 also describe it not coming from any particular direction.
+
+SCP-4592 can be recorded via audio recording devices placed in the vacuum of space, however, even when these audio recordings are played back, all individuals describe hearing different melodies.
+
+**Recovery:** SCP-4592 was discovered on February 28, 19██, when a manned Foundation spacecraft was sent out of Earth's orbit to investigate an anomaly now designated SCP-████.
+
+During the mission, a piece of space debris damaged the communications array, causing Agent Daniels to have to go on a spacewalk to repair the damage. During her spacewalk, a second piece of space debris struck her helmet, causing it to shatter. It was at this point she heard SCP-4592. She then claims that the music was able to keep her calm enough to safely return to the ship. Upon returning to Earth, she reported her encounter with SCP-4592 to the Foundation, at which point research began into its existence.
+
+[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+
+[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+
+**Addendum A:** Via use of SCP-████, SCP-████, SCP-███, as well as several new pieces of technology developed by the Foundation, the origin of SCP-4592 was tracked to a previously unknown nebula just outside of the CR32B planetary system. A Foundation satellite designated Pioneer-9 was dispatched to the nebula and is estimated to arrive in █ years' time.
+
+
+[[/div]]
+[[/div]]
+
+[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+
+[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+
+**Addendum B:** On June 11, 20██, the Pioneer-9 satellite reached the origin of SCP-4592. The satellite took an image of the nebula (seen above) as well as several scans. After close examination, it was determined via these scans that what appeared to be the remains of a spacecraft were located in the center of the nebula. After this, via wireless transmission, Pioneer-9 was able to retrieve several transcribed audio logs from the damaged spacecraft. These logs may be viewed in document 4592-A.
+[[/div]]
+[[/div]]
+
+[[size 120%]]__**Additional Documents**__[[/size]]
+
+[[collapsible show="+ View Document 4592-A" hide="- Hide Document 4592-A"]]
+
+[[div class="terminal"]]
+[[div class="scanline"]]
+[[/div]]
+[[div class="text"]]
+
+
+[[size 150%]] __Entry #001__[[/size]]
+@@ @@
+April 1, 1971
+@@ @@
+> Hello? Is this thing recording? Text is appearing on the screen so I'm assuming it is. Uh, hello, my name is ████ ██████, and I will be the pilot and sole passenger of the spacecraft Icarus. I am currently working for DracoTech, the company that both developed and funded the Icarus Project. Let's see, what else is on the list here, uh... ah, so, I'm supposed to say that this mission is top secret and that if you're hearing this blah blah blah, anyway, I... well... I'm excited, but also a little terrified. A lot terrified. Not sure what's gonna happen. Anything could happen in space, I assume. We're taking off tomorrow. So, if I'm not ready then, I guess I never will be.
+[[/div]]
+[[/div]]
+
+[[div class="terminal"]]
+[[div class="scanline"]]
+[[/div]]
+[[div class="text"]]
+
+
+[[size 150%]] __Entry #002__[[/size]]
+@@ @@
+April 2, 1971
+@@ @@
+> Well, we're launching in exactly three hours but █████ insisted I make this log anyway since apparently there are some things I missed in the last one. For one, they want me to talk about how the reason we're heading up there is that, apparently, they discovered this nebula passing by our solar system that's sending out messages. I'm not exactly sure what that means, but, y'know. I'm no astronomer. What? Oh, yeah, I'll go get ready.
+[[/div]]
+[[/div]]
+
+[[div class="terminal"]]
+[[div class="scanline"]]
+[[/div]]
+[[div class="text"]]
+
+
+[[size 150%]] __Entry #003__[[/size]]
+@@ @@
+April 3, 1971
+@@ @@
+> Ok, so, I passed the moon just a couple of hours ago, and might I say, god it's beautiful up here. I know space is supposed to be this endless vacuum of nothing, but I can see the stars and an arm of the Milky Way from here, and it's just marvelous. I don't know, it's just something about space, I guess... anyway, I'm currently two days from the nebula. So far, they say the mission is going even better than expected! My son, his name's Anderson, called me today. I showed him some pictures of what I could see through the windows, and he was so happy. I can't wait to go back to him.
+[[/div]]
+[[/div]]
+
+[[div class="terminal"]]
+[[div class="scanline"]]
+[[/div]]
+[[div class="text"]]
+
+
+[[size 150%]] __Entry #004__[[/size]]
+@@ @@
+April 4, 1971
+@@ @@
+> I passed the inner asteroid belt exactly two hours ago, and am now passing Jupiter. I knew Jupiter was supposed to be this great astral body, but let me say, by god, it is more magnificent than words can do it justice. The way its many moons orbit around it, and how they will repeat those orbits for millennia to come. It's like a... really old song passed down from generation to generation. The singer may be different, but the tune, the rhythm, it'll always be the same. Apparently I'm expected to reach what they are now calling the "Athena Nebula" in 14 hours. Don't know why they have such an affinity for Greek names, but whatever suits them, I guess.
+[[/div]]
+[[/div]]
+
+[[div class="terminal"]]
+[[div class="scanline"]]
+[[/div]]
+[[div class="text"]]
+
+[[size 150%]] __Entry #005__[[/size]]
+@@ @@
+April 5, 1971
+@@ @@
+> I'm here. I made it. I can see the Athena Nebula from the primary viewing port, and it... well, it doesn't look like any nebula I've ever seen. It's got the colorful gas part down, but there's this weird glowing light in the middle that the gas seems to be swirling around. It seems... I don't know... daunting, I guess? But either wa- What? I'm getting a transmission... I'M WHAT!?! I'M NOT GOING INTO THAT THING! HOW DO YOU KNOW THAT IT ISN'T LIKE A NEUTRON STAR!? WE DIDN'T DISCUSS THIS, █████! WHAT DO YOU MEAN AUTOPILOT!? HEY, DON'T YOU DARE END THIS TRANSMISSION! Oh fuck, oh fuck, oh god, I can't quite turn this thing around. No, no, no, no... I'm not ready. WAIT STO
+[[/div]]
+[[/div]]
+
+[[div class="terminal"]]
+[[div class="scanline"]]
+[[/div]]
+[[div class="text"]]
+
+[[size 150%]] __Entry #000__[[/size]]
+@@ @@
+N/A, [NO DATE FOUND]
+@@ @@
+> H-hello? Is this recordi- holy shit it is! Well, at least that's something. I suppose I should explain what just happened. When the autopilot activated it drove the Icarus, and me, straight into the nebula. Nothing happened when we broke the gas surrounding the center, but the closer we got to the light at the center, the brighter it became, and soon all I could see was white outside of the windows. It's still all I can see. Anyway, I could feel the ship, or reality itself, almost, getting faster, and faster, and faster, and I thought that was about to be the end and then everything just... stopped. Like a television put on pause. I mean, I can still move, and most of the devices still function to a degree, even if they are... malfunctioning, considering that this here says I'm going almost 10X light speed. I'm still tired, though, so... goodnight, I guess.
+[[/div]]
+[[/div]]
+
+[[div class="terminal"]]
+[[div class="scanline"]]
+[[/div]]
+[[div class="text"]]
+
+[[size 150%]] __Entry #000__[[/size]]
+@@ @@
+N/A, [NO DATE FOUND]
+@@ @@
+> Ok, ok... so listen, I know this sounds crazy but... there's someone on my ship. They weren't there when I went to sleep, and I can't really make out anything about them, other than they're a person, and they're standing there.
+> //I can speak, you know.//
+> What the hell?... Who are... what are... what?
+> //Look, I'm sure you have plenty of questions, and I will answer as many as I can in time. But for now, to put it as simply as possible, you are effectively dead. Or about to be, anyway.//
+> Wait, are you saying you're gonna kill me!?
+> //On the contrary, I'm the one keeping you alive. You see, I have taken the moment before your demise and, well, essentially stretched it into eternity, or as long as we need it to be.//
+> Wait, wait... slow down... I'm dead?
+> //Essentially, yes.//
+> No, but I have family... I have a son... I... no... I need to get back to Earth... I need to go home...
+> //I'm sorry, but that simply cannot happen.//
+> But... but why?
+> //Look, you have a lot of questions, and I have a few answers, so take a seat, and I will explain.//
+> No, no I don't have time... I have to get home, and you're not even real, you're a dream.
+> //Dear, listen to me. We literally have eternity. And if this is just a dream, then you have time to sit and chat, yes?//
+> I... I guess...
+> //Good. Please, have a seat.//
+[[/div]]
+[[/div]]
+
+[[div class="terminal"]]
+[[div class="scanline"]]
+[[/div]]
+[[div class="text"]]
+
+[[size 150%]] __Entry #000__[[/size]]
+@@ @@
+N/A, [NO DATE FOUND]
+@@ @@
+> WHY WOULD YOU DO THIS!?!
+> //Why would I do what?//
+> Why would you force me to suffer like this!? Couldn't you have just let me fucking die!?
+> //Listen, I needed to talk to y-//
+> No, shut up, I don't give a shit! I hate you! Because of YOU, I get to think of all the things I will NEVER HAVE AGAIN, like my son, my home, my friends, my family. If you had just LET ME DIE, I wouldn't have to go through this shit!
+> //You need to calm down before I can answer your questions.//
+> I don't have any questions, ALRIGHT!? Just let me die! PLEASE!
+> //No. I brought you here for a rea-//
+> SHUT UP! I HATE YOU! END THIS BULLSHIT RIGHT FUCKING NOW!
+> //Look, I'm just going to stand here and wait for you to calm down.//
+> AHG! YOU PIECE OF SHIT! WHY CAN'T I HIT YOU!?
+> //Because that's not how this works.//
+[[/div]]
+[[/div]]
+
+[[div class="terminal"]]
+[[div class="scanline"]]
+[[/div]]
+[[div class="text"]]
+
+[[size 150%]] __Entry #000__[[/size]]
+@@ @@
+N/A, [NO DATE FOUND]
+@@ @@
+> So let me get this clear, you're all-powerful.
+> //That's... not exactly accurate, but if that's how you wish to perceive it, then I suppo-//
+> Great. And I'm gonna die, right?
+> //Unfortunately, yes.//
+> Alright, then... I know this sounds cheesy... but can you grant me a wish? I mean, I'm gonna die anyway.
+> //Yes, I suppose I could do that.//
+> Great! Send me back.
+> //Clarify, please.//
+> Send me back to Earth! Teleport me, or turn back time, or whatever you have to do, JUST DO IT!
+> //No.//
+> You said you would grant me a wish!
+> //Yes, but not any wish. I can't just turn back time or change reality just to benefit one per-//
+> I fucking hate you.
+[[/div]]
+[[/div]]
+
+[[div class="terminal"]]
+[[div class="scanline"]]
+[[/div]]
+[[div class="text"]]
+
+[[size 150%]] __Entry #000__[[/size]]
+@@ @@
+N/A, [NO DATE FOUND]
+@@ @@
+> //Can you explain why exactly you haven't said anything for quite some time?//
+> I thought you were all-powerful.
+> //I know why. I want you to hear yourself say it.//
+> I give up. I'm just going to sit here in this moment with you for all eternity. At least this way I never have to truly give up Anderson.
+> //Very well then.//
+> What?
+> //What is it?//
+> You're not going to say no?
+> //If you want to wallow in your own sorrow for eternity, I will not stop you. However, might I remind you, I'm still granting you a wish.//
+> It doesn't matter. I can't go back. I'll never see Earth again, so there's no point in using it.
+> //Just because you don't get to go home, doesn't mean you can't still make an impact.//
+> Hm?
+> //Your wish doesn't just have to be for you.//
+> I... guess you're right...
+[[/div]]
+[[/div]]
+
+[[div class="terminal"]]
+[[div class="scanline"]]
+[[/div]]
+[[div class="text"]]
+
+[[size 150%]] __Entry #000__[[/size]]
+@@ @@
+N/A, [NO DATE FOUND]
+@@ @@
+> I know what I want my wish to be.
+> //Is that so?//
+> Yes.
+> //Very well, what is your wish?//
+> I wish... I wish for the people of Earth to not think of space as this cold uncaring nothing, as this... empty void of pain. I want them to know that there is a rhythm to the planets, that there is harmony in the stars, that there is... that there is music in the void.
+> //That. That I can do.//
+[[/div]]
+[[/div]]
+
+[[/collapsible]]
