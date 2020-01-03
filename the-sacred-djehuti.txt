@@ -1,4 +1,7 @@
 title:The Sacred Djehuti
+[[include :scp-wiki:component:black-highlighter-theme-dev]]
+[[include :scp-wiki:component:dustjacket-theme]]
+
 [[include component:preview text=Then, amidst hushed tones, the crooked beak of a particularly mirthful Ancient One descended. He was Djehuti, the Scribe of the Underworld.]]
 
 [[include :scp-wiki:component:info-ayers
@@ -17,8 +20,6 @@ More by these authors:
 [[/div]] @@ @@
 ]]
 
-[[include component:sh-theme]]
-
 [[module CSS]]
 /* INFO BOX */
 sup{
@@ -31,45 +32,39 @@ body{
     --barColour: #044d00;
     color: rgb(12, 12, 12);
 }
-.translation_block{ display: none; }
-.u-faq{ display: none; }
-#u-author_block{ display:none; }
+.translation_block, .u-faq, #u-author_block{ display: none; }
 
 /* NAV BLOCK */
 .team-bird-nav-sh{
     background-color: rgb(12, 12, 12);
-    background: linear-gradient(to bottom right, rgba(0,0,0,0), rgba(34,123,56,.7));
-    border: outset 1.5px rgb(12, 12, 12);
+    border: outset 2px rgb(12, 12, 12);
     border-radius: 1.829em;
     color: rgb(12, 12, 12);
+    background: linear-gradient(to bottom right, rgba(0,0,0,0), rgba(34,123,56,.7));
     font-weight: bold;
     font-size: 85%;
 }
-.team-bird-nav-sh a{
-    color: #156128;
-}
-hr{
-     margin: 1em 0;
-     padding: 0;
-     border: 0;
-}
+.team-bird-nav-sh a{ color: #156128; }
+
+/* FORMATTING */
+.footnoteref{ font-variant: unset; }
 [[/module]]
 
-[[div style="border:solid 2px #112211; background:#DDEEDD; padding:25px; margin-bottom: 25px;"]]
+[[div style="border: solid 2px #112211; background: #DDEEDD; padding: 1.524em; margin-bottom: 1.524em;"]]
 
 [[>]]
 [[module Rate]]
 [[/>]]
 
-[[size 150%]] **The Sacred Djehuti**[[/size]]
+[[size 150%]]**The Sacred Djehuti**[[/size]]
 
 [[>]]
 **Scribe of the Underworld, Lord of Khemennu, Conciliator of the Crescent Moon, Θωθ[[footnote]]WHAT'S THIS? –MOONSTONE BRAVEHEART OF HELHEIM[[/footnote]][[footnote]]I know you're excited, but there's no need to scream. It means "He Who is Like the Ibis" and is read as "Thoth". — J. V.[[/footnote]]**
 [[/>]]
 
-[[div style="overflow:auto"]]
+[[div style="overflow: auto"]]
 
-[[div style="border:solid 1px #112211; background:#EEF6EE; padding: 20px; margin-bottom: 3px;"]]
+[[div style="border: solid 1px #112211; background: #EEF6EE; padding: 1.22em; margin-bottom: .183em;"]]
 [[=]]
 **Conspectus**
 [[/=]]
@@ -83,7 +78,7 @@ Before the golden age of Holy Science, two like-minded peoples dedicated to wors
 Brothers and sisters from far and wide are welcome to taste the sweetness of The Sacred One's wisdom!
 [[/div]]
 
-[[div style="border:solid 1px #112211; background:#EEF6EE; padding: 20px; margin-bottom: 3px;"]]
+[[div style="border: solid 1px #112211; background: #EEF6EE; padding: 1.22em; margin-bottom: .183em;"]]
 [[=]]
 **Illustration**
 [[/=]]
@@ -94,7 +89,7 @@ Brothers and sisters from far and wide are welcome to taste the sweetness of The
 [[/=]]
 [[/div]]
 
-[[div style="border: solid 1px #112211; background:#EEF6EE; padding: 20px; margin-bottom: 3px;"]]
+[[div style="border: solid 1px #112211; background: #EEF6EE; padding: 1.22em; margin-bottom: .183em;"]]
 [[=]]
 **Knowledge**
 [[/=]]
@@ -118,11 +113,11 @@ For his conduct, Akheilos is barred from the Library. Djehuti and his followers,
 Thoth battles the monstrous Akheilos, spawn of the Mistaken Beast. One day, Akheilos shall descend and devour all that Thoth has built with the mortals, as it has done countless times in the past. Once this is complete, its master may finally awaken and rebuild reality in his image. Though, if I may point out: To consume Thoth's work is to eventually consume Thoth himself. An arduous task indeed. -G.W.
 [[/div]]
 
-[[div style="border:solid 1px #112211; background:#EEF6EE; padding: 20px; margin-bottom: 3px;"]]
-
+[[div style="border: solid 1px #112211; background: #EEF6EE; padding: 1.22em; margin-bottom: .183em;"]]
 [[=]]
 **Observations & Stories**
 [[/=]]
+
 I do not worship Djehuti, I instead lay in awe of the sprawling whole of his creation. And so, I have travelled vast distances over many years to compile the observations you see below. It took more time than I expected, and I received correspondence from the most unlikely of allies, from the past and present, but all information will be presented for posterity. This is the most important affair I have brought to the Hand. 
 ----
 //Hekuhirkopshef, my brother not in blood but in spirit, what have you wrought? [[[SCP-1644|Thoth knows the extent of your sacrilege]]] and has cast down his wrath to punish you. It is a blessing that you leave behind no lineage, lest your punishment results in the spilling of more innocent blood. You have gambled with Thoth above us and tainted his wisdom. Why? Why have you disrespected the Communion?//
@@ -175,8 +170,7 @@ Who is "Moon God"? I know one named "Moon". I call her "Moon Moon", she is very 
 [[/>]]
 [[/div]]
 
-[[div style="border:solid 1px #112211; background:#EEF6EE; padding: 20px; margin-bottom: 3px;"]]
-
+[[div style="border: solid 1px #112211; background: #EEF6EE; padding: 1.22em; margin-bottom: .183em;"]]
 [[=]]
 **Doubt**
 [[/=]]
