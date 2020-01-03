@@ -1,0 +1,634 @@
+title:Calibri's Mega Cool Art Page (It's Mostly Just Icons, But Whatever, It's Still Mega Cool)
+[[module css]]
+:root {
+    --five-color: 196,2,51;
+    --four-color: 255,109,0;
+    --three-color: 255,211,0;
+    --two-color: 0,135,189;
+    --one-color: 0,159,107;
+}
+
+#breadcrumbs,
+#page-title {
+    text-align: center;
+}
+
+/* 1. Beautifiers (optional) */
+
+iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+.simple-container {
+    width: 50vw;
+    height: 50vh;
+    padding: 1em;
+}
+
+/* 2. Resolving iOS iframe rendering issue */
+
+/* 2.1. Sizing reorganization (obligatory) */
+
+.popover {
+    /* To control popover size by .popover-body instead of .popover */
+    max-width: 100% !important;
+}
+
+.popover-body {
+    box-sizing: border-box;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.iframe-container,
+.iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+}
+
+.fixed iframe {
+    /* This only fits iframe inside iframe-container but prevents scrolling */
+    width: 0;
+    height: 0;
+    
+    min-width: 100%;
+    min-height: 100%;    
+}
+
+.popover-body {
+    width: 706px; height: 900px;
+    max-width: 100vw; max-height: 100vh;
+}
+
+/* 2.2. RWD Resizings (optional) */
+
+@media only screen and (max-width: 568px)
+{
+    .rwd .popover-body {
+        width: 320px; height: 560px;
+    }    
+}
+
+@media only screen and (min-width: 569px) and (max-width: 965px)
+{
+    .rwd .popover-body {
+        width: 480px; height: 850px;
+    }    
+}
+
+@media only screen and (min-width: 968px) and (max-width: 1023px)
+{
+    .rwd .popover-body {
+        width: 640px; height: 1130px;
+    }    
+}
+
+/* 2.3. Resolving iOS iframe scrolling issue (obligatory) */
+
+/*
+    Due to iOS WebKit bug an iframe content cannot be scrolled, because WebKit renders entire iframe content:
+    https://bugs.webkit.org/show_bug.cgi?id=155198
+    (still not resolved on iOS11)
+    The workaround is to scroll an div container content with full iframe rendered inside.
+*/
+
+.scroll {
+    overflow: scroll !important;
+    -webkit-overflow-scrolling: touch !important;
+}
+
+/* 2.4. Resolving iframe and container double scrollbars on desktop browsers (rather obligatory) */
+
+.no-scrollbar {
+    position: relative;
+}
+
+.no-scrollbar iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.no-scrollbar {
+    /* Hide scrollbars in IE Edge */
+    /* Autohiding is needed inside iframe document */
+    /*-ms-overflow-style: -ms-autohiding-scrollbar;*/
+    /* In the parent iframe container we don't want any scrollbars */
+    -ms-overflow-style: none;
+}
+
+ .foo {
+    height: 100vh;
+    width: 100vw;
+    background: url(cover.jpg) center center / cover no-repeat;
+ }
+ 
+
+/** 
+ * iPad with portrait orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
+  .foo {
+    height: 1024px;
+  }
+}
+
+/** 
+ * iPad with landscape orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
+  .foo {
+    height: 768px;
+  }
+}
+
+/**
+ * iPhone 5
+ * You can also target devices with aspect ratio.
+ */
+@media screen and (device-aspect-ratio: 40/71) {
+  .foo {
+    height: 500px;
+  }
+}
+
+.color-five {
+    background-color: rgb(var(--five-color));
+    color: rgb(var(--white-monochrome, 252, 252, 252));
+}
+
+.color-four {
+    background-color: rgb(var(--four-color));
+}
+
+.color-three {
+    background-color: rgb(var(--three-color));
+}
+
+.color-two {
+    background-color: rgb(var(--two-color));
+}
+
+.color-one {
+    background-color: rgb(var(--one-color));
+}
+
+.color-gray {
+    background-color: rgba(var(--gray-monochrome, 66, 66, 72),0.15);
+}
+
+.color-white {
+    background-color: rgb(var(--white-monochrome, 252, 252, 252));
+}
+
+.color-black,
+.cosmic {
+    background-color: rgb(var(--black-monochrome, 12, 12, 12));
+    color: rgb(var(--white-monochrome, 252, 252, 252));
+    border: 0.5rem solid rgb(var(--white-monochrome));
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(5, calc((100% / 5) - 0.25rem));
+    grid-gap: 0.25rem;
+}
+
+.class-table-box {
+    display: grid;
+    grid-template-columns: 1fr 75%;
+    background-color: rgb(var(--black-monochrome));
+    grid-gap: 0.125rem;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 500px ) {
+    .class-table-box {
+    	grid-template-columns: initial;
+    	border: 0.125rem solid rgb(var(--black-monochrome, 12,12,12));
+    }
+}
+
+.class-table-box > div {
+    padding: 0.5rem;
+}
+
+.class-name {
+    font-family: var(--title-font);
+    font-size: 1.15em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.class-description {
+    background-color: rgb(var(--white-monochrome));
+}
+
+.acs-text,
+.acs-hybrid {
+    display: grid;
+    grid-template-areas:
+    	"item item clear"
+    	"contain disrupt disrupt"
+    	"contain risk risk";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 25% 1fr 1fr;
+    grid-gap: 0.125rem;
+    width: 100%;
+    height: 6.5rem;
+    background-color: rgb(var(--black-monochrome, 12, 12, 12));
+    line-height: 1;
+    position: relative;
+}
+
+.acs-text > a, 
+.acs-hybrid > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(0,0,0,0);
+}
+
+.acs-text > div,
+.acs-hybrid > div {
+    background-color: rgb(var(--white-monochrome, 252, 252, 252));
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.acs-text > div strong, 
+.acs-hybrid > div strong {
+    margin-right: 0.25rem;
+}
+
+.acs-hybrid > div {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.acs-hybrid > div {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.acs-hybrid .acs-hybrid-icon {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.25rem;
+}
+
+.acs-hybrid .acs-hybrid-icon img {
+    border-radius: 50%;
+  border: 0.125rem solid rgb(var(--black-monochrome,12,12,12));
+}
+
+
+.acs-hybrid > .acs-hybrid-contain .acs-hybrid-icon {
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+.acs-hybrid > .acs-hybrid-disrupt .acs-hybrid-icon,
+.acs-hybrid > .acs-hybrid-risk .acs-hybrid-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.acs-text > .acs-text-item,
+.acs-hybrid > .acs-hybrid-item {
+    grid-area: item;
+    font-size: 1.5em;
+}
+
+.acs-text > .acs-text-clear,
+.acs-hybrid > .acs-hybrid-clear {
+    grid-area: clear;
+    font-size: 1.25em;
+}
+
+.acs-hybrid > .acs-hybrid-clear.acs-clear-2 {
+    box-shadow: inset 0.25rem 0 0 0 rgb(var(--two-color));
+    padding-left: 0.5em;
+}
+
+.acs-text > .acs-text-contain,
+.acs-hybrid > .acs-hybrid-contain {
+    grid-area: contain;
+    font-size: 1.25em;
+}
+
+.acs-hybrid > .acs-hybrid-contain.acs-euclid {
+    box-shadow: inset 0.5rem 0 0 0 rgb(var(--three-color));
+    padding-left: 0.75em;
+}
+
+.acs-hybrid > .acs-hybrid-contain.acs-euclid img {
+    background-color: rgb(var(--three-color));
+}
+
+.acs-text > .acs-text-disrupt,
+.acs-hybrid > .acs-hybrid-disrupt {
+    grid-area: disrupt;
+}
+
+.acs-hybrid > .acs-hybrid-disrupt.acs-vlam {
+    box-shadow: inset 0.25rem 0 0 0 rgb(var(--two-color));
+    padding-left: 0.5em;
+}
+
+.acs-hybrid > .acs-hybrid-disrupt.acs-vlam img {
+    background-color: rgb(var(--two-color));
+}
+
+.acs-text > .acs-text-risk,
+.acs-hybrid > .acs-hybrid-risk {
+    grid-area: risk;
+}
+
+.acs-hybrid > .acs-hybrid-risk.acs-notice {
+    box-shadow: inset 0.25rem 0 0 0 rgb(var(--one-color));
+    padding-left: 0.5em;
+}
+
+.acs-hybrid > .acs-hybrid-risk.acs-notice img {
+    background-color: rgb(var(--one-color));
+}
+
+@media (max-width: 500px ) {
+    .acs-text,
+    .acs-hybrid {
+    	grid-template-areas:
+    	"item item clear"
+    	"contain contain contain"
+    	"disrupt disrupt disrupt"
+    	"risk risk risk";
+    	grid-template-rows: 2fr 2fr 1fr 1fr;
+    	height: 10rem;
+    	max-height: 50vh;
+    }
+}
+
+@media (max-width: 500px ) {
+    .icons {
+    	grid-template-columns: repeat(3, calc((100% / 3) - 0.25rem));
+    }
+}
+
+.icon_image {
+    border-radius: 50%;
+    border: 0.25rem solid  rgb(var(--black-monochrome, 12, 12, 12));
+    overflow: hidden;
+}
+
+.icon_name,
+.icon_link {
+    font-family: var(--title-font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.step_container {
+    margin: 0.5rem 0;
+    border: 1px solid #999;
+    padding: 1em;
+}
+
+.help {
+    display: flex;
+    align-content: stretch;
+    padding-top: 1em;
+    border-top: 1px dashed #999;
+}
+
+.help blockquote {
+    margin: 0;
+    font-size: 85%;
+}
+
+.help blockquote > p {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin-right: 0;
+    min-height: 2rem;
+    margin: 0;
+}
+
+.help blockquote > p * {
+    margin: 0 0.1rem;
+    height: 100%;
+}
+
+.help blockquote:nth-of-type(1) {
+    width: 50%;
+    background: transparent;
+    border: unset;
+    box-shadow: unset;
+    text-align: right;
+    margin-right: 0;
+    padding: 0;
+}
+
+.help blockquote:nth-of-type(1) > p {
+    justify-content: flex-end;
+}
+
+.help blockquote:nth-of-type(2) {
+    margin-left: 1em;
+    width: 50%;
+}
+
+#page-content .collapsible-block {
+    display: block;
+    text-align: center;
+    padding: 0.75em;
+    background-color: lightgrey;
+    border-top: 0.125rem dashed slategrey;
+    border-bottom: 0.125rem dashed slategrey;
+}
+
+#page-content div.collapsible-block > div.collapsible-block-unfolded > div.collapsible-block-content {
+    text-align:left;
+}
+[[/module]]
+
+Hello, and welcome to my art page! This is where I post my artwork for things like ACS icons and logos and maybe other things. Feel free to stay and enjoy!
+
+[[collapsible show="ACS Icons" hide="ACS Icons"]]
+
+These are ACS icons I made for esoteric classes! Obviously, a lot of them wouldn't really be used, but they were fun to make regardless! [http://www.scp-wiki.net/esoteric-classes-complete-list Here] is a reference for what they all mean.
+
+[[div_ class="icons"]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-white"]]
+[[image http://www.scp-wiki.net/local--files/calibri-bold-s-mega-cool-office/Decommissioned%20Icon]]
+[[/div]]
+[[div_ class="icon_name"]]
+decommissioned
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-white"]]
+[[image http://www.scp-wiki.net/local--files/calibri-bold-s-mega-cool-office/Yesod%20Icon]]
+[[/div]]
+[[div_ class="icon_name"]]
+yesod
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-white"]]
+[[image http://www.scp-wiki.net/local--files/calibri-bold-s-mega-cool-office/Maksur%20Icon]]
+[[/div]]
+[[div_ class="icon_name"]]
+maksur
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-white"]]
+[[image http://www.scp-wiki.net/local--files/calibri-bold-s-mega-cool-office/Ignosi%20Icon]]
+[[/div]]
+[[div_ class="icon_name"]]
+ignosi
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-white"]]
+[[image https://usercontent.irccloud-cdn.com/file/kNm1WIHD/Screen%20Shot%202019-12-28%20at%201.31.21%20PM.png]]
+[[/div]]
+[[div_ class="icon_name"]]
+drygioni
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-white"]]
+[[image http://kontainer.djkakt.us/local--files/calibri-bold-s-mega-cool-minecraft-server/Uncontained%20Class%20Icon]]
+[[/div]]
+[[div_ class="icon_name"]]
+uncontained
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-white"]]
+[[image https://usercontent.irccloud-cdn.com/file/mpjt9298/Screen%20Shot%202019-12-28%20at%206.07.05%20PM.png]]
+[[/div]]
+[[div_ class="icon_name"]]
+netzach
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-white"]]
+[[image http://kontainer.djkakt.us/local--files/calibri-bold-s-mega-cool-minecraft-server/Declassified%20Adjusted]]
+[[/div]]
+[[div_ class="icon_name"]]
+declassified
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-white"]]
+[[image https://usercontent.irccloud-cdn.com/file/0ycEhmk8/Screen%20Shot%202019-12-28%20at%207.29.29%20PM.png]]
+[[/div]]
+[[div_ class="icon_name"]]
+kronecker
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-white"]]
+[[image https://usercontent.irccloud-cdn.com/file/MDF7VsFQ/Glorious.png]]
+[[/div]]
+[[div_ class="icon_name"]]
+glorious
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-white"]]
+[[image https://usercontent.irccloud-cdn.com/file/hOzaeSei/Anomalous.png]]
+[[/div]]
+[[div_ class="icon_name"]]
+Anomalous
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-white"]]
+[[image https://usercontent.irccloud-cdn.com/file/w200/YsukCPNI]]
+[[/div]]
+[[div_ class="icon_name"]]
+Terminal
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-white"]]
+[[image https://usercontent.irccloud-cdn.com/file/w200/frvmXr8c]]
+[[/div]]
+[[div_ class="icon_name"]]
+Girouette
+[[/div]]
+[[/div]]
+
+[[/div]]
+
+[[/collapsible]]
+
+@@ @@
+
+[[collapsible show="Riders Emblem" hide="Riders Emblem"]]
+
+Yes, it is the official emblem for the [[[Chapter One - The End|Riders]]]!
+
+[[=image http://kontainer.djkakt.us/local--files/calibri-bold-s-mega-cool-minecraft-server/Riders size="thumbnail"]]
+
+[[/collapsible]]
+
+@@ @@
+
+[[collapsible show="Operation Stargazer Logo" hide="Operation Stargazer Logo"]]
+
+Fan-made logo for [[[SCP-1425|Operation Stargazer]]].
+
+[[=image https://usercontent.irccloud-cdn.com/file/w300/vDXY0qz9 size="thumbnail"]]
+
+[[/collapsible]]
+
+@@ @@
+
+[[collapsible show="Diamond Sword Emblem" hide="Diamond Sword Emblem"]]
+
+Emblem for my upcoming Mobile Task Force, MTF Chi-64 ("Diamond Sword"), to be introduced in my SCP-5000 entry!
+
+[[=image https://usercontent.irccloud-cdn.com/file/w200/JSg5lPKs size="thumbnail"]]
+
+[[/collapsible]]
