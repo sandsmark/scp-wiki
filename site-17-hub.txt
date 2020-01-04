@@ -113,6 +113,15 @@ div.text a:hover {
 div.text a:hover::before{
 content: "> ";
 }
+.timeline .collapsible-block {  
+  text-align: center;
+}
+.timeline .collapsible-block-content {
+  text-align: left;
+}
+.timeline a.collapsible-block-link {
+  font-weight: bold;
+}
 [[/module]]
 
 [[div style="border-bottom: solid #424248 4px; border-top: solid #424248 4px; display: inline-block; padding: 10px; margin-top: 50px; margin-bottom: 50px; text-align: justify;"]]
@@ -223,7 +232,9 @@ Your current version of the Automated Passive Amnestization System (APAS), insta
 [[size 80%]]by **Nagiros**[[/size]]
 [[/=]]
 ------
-{{##6f4c7a|Hello, Nathaniel. Will you be implementing my interface update tonight?##}}
+[[div style="color: #6f4c7a; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 5px"]]
+{{Hello, Nathaniel. Will you be implementing my interface update tonight?}}
+[[/div]]
 [[/div]]
 
 [[div class="excerpt" style="text-align:justify"]]
@@ -290,7 +301,7 @@ Essophysics is the study of embodiments. It is the discovery of everyday gods �
 
 ++ AMEC and DRO
 [[div style="margin-left: 20px; margin-bottom: 20px"]]
-The Anti-Memetic Entities Catalog (AMEC) operates as a classified twin to the standard SCiPNET database, using specialized memetic inoculation to bypass the antimemetic effects of certain anomalous objects. These objects were given an Item Number of DRO-####, standing for Documentation-Resistant Object.
+The Anti-Memetic Entities Catalog (AMEC) operates as a classified twin to the standard SCiPNET database, using specialized memetic inoculation to bypass the antimemetic effects of certain anomalous objects. These objects are given an Item Number of DRO-####, standing for Documentation-Resistant Object.
 [[/div]]
 
 [[div style="display: inline-block; border-radius: 10px; border:solid 2px #424248; float:top; width:96.5%; padding:10px; background: white"]]
@@ -302,19 +313,37 @@ The Anti-Memetic Entities Catalog (AMEC) operates as a classified twin to the st
 [[/div]]
 @@ @@
 ++ Timeline Of Important Events
+
+[[div style="margin-left: 20px; margin-bottom: 20px"]]
+This primarily exists as a vain attempt to ensure that characters born in 1990 don't become Site Directors in 1970. It's harder than you'd think!
+
+**Warning:** Heavy spoilers.
+[[/div]]
+
+[[div class="timeline"]]
+[[collapsible show="[Show Full Timeline]" hide="[Hide Full Timeline]" hideLocation="both"]]
+@@ @@
 ||~ Date ||~ Event ||
-||01/13/1999|| Death is contained as SCP-4260 after voluntarily manifesting and requesting medical assistance. ||
+||1987|| The Foundation notes the existence of [[[SCP-4755]]] but fails to determine its source or nature. ||
+||01/13/1999|| Death is contained as [[[SCP-4260]]] after voluntarily manifesting and requesting medical assistance. ||
 ||March 1999|| First completion of Procedure 8917; SCP-4260 is terminated and reanimated. ||
-||2003|| Apollyon manifests for the first time and destroys Site-17, but is turned back by Dr. Skyler. Dr. Weathers is contracted as the Provisional Site Director. ||
+||2003|| [[[APAS | Apollyon]]] manifests for the first time and destroys Site-17, but is turned back by Dr. Skyler. Dr. Weathers is contracted as the Provisional Site Director. ||
+||5/13/2005|| Irantu //Mark-LXXII// contacts the Foundation from the year 2103 CE regarding SCP-4755. ||
 ||01/04/2010|| Apollyon completes a manifestation event and exits the local timeline. ||
-||August 2012|| Rainer Miller is contained as SCP-4051 after covertly operating as a vigilante for several months. ||
-||08/17/2012|| Testing on SCP-4051 results in Dr. Anthony Roswell entering a coma and Dr. David Edwards become project lead over him. ||
+||4/17/2011|| [[[SCP-4518]]] is contained with significant effort. ||
+||August 2012|| Rainer Miller is contained as [[[SCP-4051]]] after covertly operating as a vigilante for several months. ||
+||08/17/2012|| Testing on SCP-4051 results in Dr. Anthony Roswell entering a coma and Dr. David Edwards become project lead over SCP4051. ||
 ||08/31/2012|| Procedure 350-PROMETHEAN is initiated for the first time on SCP-4051. ||
-||07/18/2013|| SCP-4051 is reclassified as Keter after a botched containment mission. ||
-||09/08/2015|| Alex Conrad is neutralized. ||
+||07/18/2013|| SCP-4051 is reclassified as Keter after [[[The Beast Beneath The Library | a botched containment mission]]]. ||
+||09/08/2015|| [[[SCP-4175 | Alex Conrad]]] is neutralized. ||
 ||02/13/2016|| Foundation Administrator Ethan Horowitz becomes the heir to SCP-4260 in order to prevent a ΩK-Class ("End-of-Death") Scenario. ||
-||2019|| Edwina Drake is contained as SCP-4855 after the propagation of a lethal cognitohazard destroys her hometown. ||
+||2019|| Edwina Drake is contained as [[[SCP-4855]]] after the propagation of a lethal cognitohazard destroys her hometown. ||
 ||07/26/2022|| A Snap Back Scenario resulting from SCP-4855's clinical death occurs. ||
+||2103||The Foundation ascends to a Tier V conceptual anomaly, becoming SCP-4755.||
+@@ @@
+[[/collapsible]]
+[[/div]]
+@@ @@
 [[/tab]]
 [[tab another]]
 [[table style="width: 100%"]]
