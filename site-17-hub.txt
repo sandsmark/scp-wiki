@@ -280,10 +280,41 @@ Preferably, articles written for Site-17 should incorporate one or more of the f
 * Inclusion of, or references to, established characters within the Site-17 lore
 * Ethics Committee interactions
 * Humanoid anomalies
-* Essophysics
+* Essophysics or the AMEC Database
 * Thematic interest in secrecy, truth, and/or the sacrifices made to maintain the Veil
 
 In any case, feel free to parent your article to this page and add it to this page when it's posted!
+[[/div]]
+
+[[div style="margin-bottom: 20px"]]
+[[collapsible show="+ Show Optional CSS Theme" hide="- Hide Optional CSS Theme"]]
+[[code]]
+[[module CSS]]
+div#header {
+  background-image: url(http://scp-wiki.wdfiles.com/local--files/site-17-hub/header17);
+}
+div#header h1 a span {
+  font-size: 0px;
+}
+div#header h1 a:before {
+  content: "Site-17 Database";
+  color: #eee;
+}
+div#header h2 span {
+  font-size:0px;
+  padding: 4px;
+}
+div#header h2:after {
+  content: "Living Past Our End";
+  font-weight: bold;
+  color: #f0f0c0;
+  padding: 19px 0;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+  white-space: pre;
+}
+[[/module]]
+[[/code]]
+[[/collapsible]]
 [[/div]]
 [[/tab]]
 [[tab That Which Can Be Known]]
