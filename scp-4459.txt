@@ -29,9 +29,12 @@ title:SCP-4459
     color: #056c94;
 }
 
-[[/module]]
+div.info-container > div.collapsible-block {
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+}
 
-[[module css]]
 .page {
     display: block;
     overflow: hidden;
