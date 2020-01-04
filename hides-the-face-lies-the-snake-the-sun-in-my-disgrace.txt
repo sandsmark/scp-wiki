@@ -1,4 +1,47 @@
 title:In my eyes, indisposed. In disguises no one knows. Hides the face, lies the snake. The sun in my disgrace
+[[include component:info-ayers
+|lang=en[!-- EN/RU/KO/CN/FR/PL/ES/TH/JP/DE/IT/UA/PTBR --]
+|page=scp-4613[!-- url of your page on the scp wiki --]
+|authorPage=http://www.scp-wiki.net/dr-cimmerian-s-personnel-file[!-- link to your author page --]
+|comments= something
+
+]]
+[[include component:black-highlighter-theme-dev]]
+[[module CSS]]
+sup {
+vertical-align: top; position: relative; top: -0.5em;
+}
+:root{
+--cutColour: #fafafa;
+--barColour: #590505;
+}
+
+.info-container .collapsible-block-folded a{
+color: #FFF;}
+.info-container .collapsible-block-unfolded-link a{
+color: #FFF;}
+
+.translation_block{
+display:none;}
+[[/module]]
+[[module css]]
+#side-bar {
+    background: rgb(var(--white-monochrome));
+}
+
+#side-bar div.menu-item a, #side-bar div.menu-item .text {
+    color: rgb(var(--black-monochrome));
+}
+
+#side-bar>div:nth-child(5) {
+    background-color: rgba(var(--dark-accent),0.25)!important;
+}
+[[/module]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
 We had the best intentions. That's the kind of thing you tell yourself late at night when you're feeling particularly self reflective, but only because it's actually true. When you're dealing with infinities, though... it doesn't really matter what you meant. Only what happened.
 
 If you took a poll today among Foundation staff you'd be hard pressed to find a single person who supported the proposal. I'm serious, ask around. Clef'll tell you it's Cimmerian's fault. Cimmerian'll say it's Moose's Fault. Moose'll blame Light. Like it matters.
