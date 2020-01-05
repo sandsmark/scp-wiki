@@ -1,4 +1,16 @@
 title:SCP-4981
+[[module css]]
+#header h2 span {
+    color: transparent;
+    text-shadow:none;
+}
+#header h2 span::before {
+    content: "Secure, Cowtain, Protect";
+    color: #F0f0c0;
+    padding: 0px 0px 00px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+}
+[[/module]]
 [[include :scp-wiki:component:black-highlighter-theme-dev]]
 [[>]]
 [[module Rate]]
