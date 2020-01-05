@@ -1,4 +1,26 @@
 title:SCP-4663
+[[module css]]
+#header{
+    background: url(null);
+}
+#header:before{
+display:block;
+position: absolute;
+width: 100px;
+height: 100px;
+top: 15%;
+left:2%;
+z-index: -1;
+content: "";
+background:url(http://scp-wiki.wdfiles.com/local--files/component%3Atheme/logo.png);
+background-repeat: no-repeat;
+background-size: 100px 99px;
+background-position: 0px 0px 0px;
+z-index: -20;
+transform: rotateZ(180deg);
+}
+[[/module]]
+
 [[include component:info-ayers
 |lang=en
 |page=scp-4663
