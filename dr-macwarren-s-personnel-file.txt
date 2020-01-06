@@ -1,6 +1,45 @@
 title:Dr. MacWarren's Personnel File
 [[include :scp-wiki:component:black-highlighter-theme-dev]]
 [[include :scp-wiki:component:the-foundation-theme]]
+[[module CSS]]
+.fakeprot .mailform-box .buttons{display:none;}
+.fakeprot + .collapsible-block .collapsible-block-link {padding: 0.1em 0.5em;text-decoration: none;background-color: #F4F4F4;border: 1px solid #AAA;color: #000;}
+.fakeprot + .collapsible-block .collapsible-block-link:hover {background-color: #DDD;color: #000;}
+.fakeprot + .collapsible-block .collapsible-block-link:active {background-color: #DDD;color: #000;}
+.fakeprot + .collapsible-block .collapsible-block-unfolded-link{margin:0.5em 0;text-align: center;}
+.fakeprot + .collapsible-block .collapsible-block-folded{margin:0.5em 0;text-align: center;}
+.fakeprot .passw input[type=text] {text-security:disc;-webkit-text-security:disc;-mox-text-security:disc;}
+.mailform-box td:first-child {width: 80px;}
+[[/module]]
+
+**##red|Greetings, my name is Abraxas.aic, I am the personal Artificial Intelligent Construct to the Department of Extradimensional Anomalies. It appears you are attempting to access a the personnel file of ##**
+
+[[div class="fakeprot"]]
+[[module MailForm to="aaaa (DUMMY)" button=""]]
+# name
+ * title: ID
+ * default: <YOUR ID>
+ * type: text
+ * rules:
+  * required: true 
+  * maxLength:10
+  * minLength: 100
+[[/module]]
+[[div class="passw"]]
+[[module MailForm to="aaaa (DUMMY)" button=""]]
+# affiliation
+ * title: PASSWORD
+ * default: ・・・・・・・・・
+ * rules:
+  * required: true 
+  * maxLength:10
+  * minLength: 100
+[[/module]]
+[[/div]]
+[[/div]]
+[[collapsible show="Login" hide="Logout"]]
+text
+[[/collapsible]]
 
 + SCPs
 
