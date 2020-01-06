@@ -29,6 +29,26 @@ title:Malyce Graves is a Liar.
     color: #056c94;
 }
 
+@keyframes fade-in {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}}
+
+/* Credit to Nanimono Daemon for the mouseover blackbox format, found here:
+http://www.scp-wiki.net/scp-style-resource#toc11 */
+
+.dblock {background: white; color: white; transition: 1s;}
+.dblock:hover {color: #333; transition: 1.5s;}
+
+/* Credit to James Kanjo for the inline hover tip CSS
+http://community.wikidot.com/howto:inline-hover-tips */
+
+.hover {color: #333; transition: 1s;}
+.hover:hover {color: white; transition: 1s;}
+.hover span {display: none;}
+.hover:hover span {position: absolute; display: inline; background-color: transparent; color: #333; animation: fade-in 1s;}
+.hover:hover span span {position: relative;}
+
 [[/module]]
 
 [[div class="material-box" style="margin-bottom: 5px;"]]
@@ -80,8 +100,9 @@ title:Malyce Graves is a Liar.
 
 SCP-Malyce Graves should be kept in an extravagant penthouse estate over looking Central Park. Everything they need should be delivered by remotely-operated drone in order to prevent contamination by the obscenity that is Malyce's overactive imagination.
 
-Never attribute to Malyce that which can be adequately explained by stupidity.
-
+[[span class="hover"]][[span]]**ONLY** attribute to Malyce that which can be adequately explained by stupidity.
+[[/span]]Never attribute to Malyce that which can be adequately explained by stupidity.
+[[/span]]
 Or not.
 
 -----
