@@ -1,24 +1,111 @@
 title:SCP-4372
+[[module css]]
+@import url(http://www.scp-wiki.net/theme:magnus-web-format/code/1)
+[[/module]]
+[[include component:black-highlighter-theme-dev]]
+
+[[module CSS]]
+#header {
+    background-image: url(https://vgy.me/W0f3wX.png)
+}
+
+#footer {
+    font-size: x-small;
+    background: #ffafc7;
+    color: black;
+}
+
+#footer a {
+    color: #e51f47;
+}
+
+#license-area {
+    font-size: x-small;
+    background: #5bcefa;
+    color: black;
+}
+
+#license-area a {
+    color: #056c94;
+}
+div.info-container > div.collapsible-block {
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+}
+
+[[/module]]
+
 [[>]]
-[[module rate]]
+[[module Rate]]
 [[/>]]
 
-[[include :scp-wiki:component:anomaly-class-bar-source
-|item-number= 4372
-|clearance= 3
-|container-class= euclid
-|secondary-class= none
-|disruption-class= vlam
-|risk-class= warning
+[[include :scp-wiki:component:info-ayers
+|lang=en
+|page=component:info-ayers
+|authorPage=http://www.scp-wiki.net
+|comments=**SCP-4372:** So Very Small, So Very Safe
+@@ @@
+**Author:** [[*user Francis_Scalia]].  
+@@ @@
+**Image Credit:** See comments.
 ]]
- _
+[[div class="material-box" style="margin-bottom: 5px;"]]
+
+[[include :scp-wiki:component:classified-bar-woed
+|lv=3
+|item=4372
+|oc=euclid
+|lang=EN
+]]
+
+[[table style="width: 100%;"]]
+[[row]]
+[[cell style="border-bottom: 1px solid #AAA; border-right: 1px solid #AAA; text-align: center; width: 25%;"]]
+[[size 90%]]**Assigned Site**[[/size]]
+[[/cell]]
+[[cell style="border-bottom: 1px solid #AAA; border-right: 1px solid #AAA; text-align: center; width: 25%;"]]
+[[size 90%]]**Site Director**[[/size]]
+[[/cell]]
+[[cell style="border-bottom: 1px solid #AAA; border-right: 1px solid #AAA; text-align: center; width: 25%;"]]
+[[size 90%]]**Research Head**[[/size]]
+[[/cell]]
+[[cell style="border-bottom: 1px solid #AAA; text-align: center; width: 25%;"]]
+[[size 90%]]**Assigned MTF**[[/size]]
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="border-right: 1px solid #AAA; text-align: center; width: 25%;"]]
+[[size 80%]]Site-77[[/size]]
+[[/cell]]
+[[cell style="border-right: 1px solid #AAA; text-align: center; width: 25%;"]]
+[[size 80%]]Dr. Shirley Gillespie[[/size]]
+[[/cell]]
+[[cell style="border-right: 1px solid #AAA; text-align: center; width: 25%;"]]
+[[size 80%]]Dr. Mai Giang Lê[[/size]]
+[[/cell]]
+[[cell style="text-align: center; width: 25%;"]]
+[[size 80%]]N/A[[/size]]
+[[/cell]]
+[[/row]]
+[[/table]]
+>
+[[/div]]
+
+[[div class="material-box"]]
+[[div class="title-style"]]
+++++++ __**Special Containment Procedures**__
+[[/div]]
 [[include component:image-block name=4372|caption=SCP-4372-1|width=120px]]
 
-**Special Containment Procedures:** SCP-4372 should be kept in a standard containment unit measuring no less than 20x20x20m within [[[http://www.scp-wiki.net/secure-facility-dossier-site-77 |Site-77]]]. The boundary of SCP-4372 must be monitored to ensure it does not come into contact with the walls of the containment unit. --Exploration teams must to be tethered to a recovery winch anchored beyond the border of SCP-4372.--
+SCP-4372 should be kept in a standard containment unit measuring no less than 20x20x20m within [[[http://www.scp-wiki.net/secure-facility-dossier-site-77 |Site-77]]]. The boundary of SCP-4372 must be monitored to ensure it does not come into contact with the walls of the containment unit. --Exploration teams must to be tethered to a recovery winch anchored beyond the border of SCP-4372.--
 
 The Ashby Protocol was enacted by Dr. Joseph Edmunson on ██/██/17. Therefore, manned exploration of SCP-4372 is no longer permitted. No contact is to be attempted with effects/entities within SCP-4372. Communications originating from SCP-4372 are not from Foundation personnel.
-
-**Description:** SCP-4372 is a gaseous substance that forms a half-sphere reaching 4.5 m in height and fluctuates between 10 m and 14 m in diameter. The substance resembles a dense smoke, and physical contact leaves a dusty residue comprising of carbon, calcium, phosphorus, and other molecules believed to have biological origins. It is unknown if living matter can be safely recalled from SCP-4372.
+----
+[[div class="title-style"]]
+++++++ __**Description**__
+[[/div]]
+SCP-4372 is a gaseous substance that forms a half-sphere reaching 4.5 m in height and fluctuates between 10 m and 14 m in diameter. The substance resembles a dense smoke, and physical contact leaves a dusty residue comprising of carbon, calcium, phosphorus, and other molecules believed to have biological origins. It is unknown if living matter can be safely recalled from SCP-4372.
 
 External testing during manned exploration suggests that matter within the boundaries of the SCP-4372 is compressed into increasingly smaller, flatter dimensions as it approaches the center. Individuals within SCP-4372 do not seem to notice this effect.
 
@@ -27,8 +114,15 @@ Due to these compression effects, the internal topography of SCP-4372 appears va
 SCP-4372-1 is a light source that that appears to float at the center of the gaseous substance. External observation measures SCP-4372-1 emitting visible light at 3500 lumens. Reports from inside SCP-4372 depict the light in the distance, resting near the horizon. Attempts by Foundation personnel to reach SCP-4372-1 are not believed to have succeeded.
 
 Manned expeditions have confirmed the presence of humanoid entities within SCP-4372. Neither intent nor agency of these entities has been confirmed.
+[[/div]]
 
-**Addendum 4372.1: Exploration Logs** 
+[[div class="addenda-header"]]
++++ **Attached Addenda**
+[[/div]]
+[[div class="material-box "]]
+[[div class="title-style"]]
+++++++ **Addendum 4372.1: Exploration Logs**
+[[/div]]
 
 On ██/██/2017, Dr. Mai oversaw the first and only manned exploration of SCP-4372. A Provisional Exploration Team (PET) was assembled including two D-class personnel experienced in exploratory testing and equipped with modified Foundation chemical HAZMAT equipment. Dr. Mai and Researcher Edmunson supervised the mission from the control room overlooking SCP-4372, while Specialist Addaway was assigned to personnel recall duty within the containment cell. 
 
@@ -500,7 +594,10 @@ Following this incident, Dr. Mai received an official reprimand transferred to S
 
 It is important to note that exploration logs have been transcribed exactly as recorded. Linguistic analysis has been unable to definitively distinguish communications of the exploration team from "echoes" produced by anomalous effects and/or entities inside SCP-4372.
 
-**Addendum 4372.2: Public Reprimand and Record of Personnel Change** 
+[[div class="title-style"]]
+++++++ **Addendum 4372.2:**
+[[/div]]
+**Public Reprimand and Record of Personnel Change** 
 
 > From: Dr. Johannes Ashby
 > To: Dr. Mai Giang Lê 
@@ -528,3 +625,4 @@ It is important to note that exploration logs have been transcribed exactly as r
 > We all expect great things from you, Dr. Mai. Please be more cautious in your future work with the Foundation.
 > 
 > -Dr. Johannes Ashby
+[[/div]]
