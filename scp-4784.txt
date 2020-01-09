@@ -1,4 +1,15 @@
 title:SCP-4784
+[[module CSS]]
+.fakeprot .mailform-box .buttons{display:none;}
+.fakeprot + .collapsible-block .collapsible-block-link {padding: 0.1em 0.5em;text-decoration: none;background-color: #F4F4F4;border: 1px solid #AAA;color: #000;}
+.fakeprot + .collapsible-block .collapsible-block-link:hover {background-color: #DDD;color: #000;}
+.fakeprot + .collapsible-block .collapsible-block-link:active {background-color: #DDD;color: #000;}
+.fakeprot + .collapsible-block .collapsible-block-unfolded-link{margin:0.5em 0;text-align: center;}
+.fakeprot + .collapsible-block .collapsible-block-folded{margin:0.5em 0;text-align: center;}
+.fakeprot .passw input[type=text] {text-security:disc;-webkit-text-security:disc;-mox-text-security:disc;}
+.mailform-box td:first-child {width: 80px;}
+[[/module]]
+
 [[>]]
 [[module Rate]]
 [[/>]]
@@ -268,23 +279,73 @@ Felix Kipp died in a household accident three days after his interview with Agen
 
 [[/div]]
 
-[[div]]
- _
-[[collapsible show="There is one (1) file in your Recycle Bin." hide="File restored."]]
-> Our plan worked. //Unwinding// is secure and the Foundation has no clue what's //really// going on, even if Dr. Wilkes' "shotgun" metaphor is //very close//. It would be safer to let this go, but... I can't stop thinking about it. The case is closed but it's not solved. The Foundation is missing an entire layer of this mystery: the clues that **[http://www.scp-wiki.net/the-not-too-distant-future I helped cover up].**
-> 
-> //Unwinding// is not the only shotgun, and "Tilford's Folly" isn't the only crime scene. Heck, I'm not sure "Samuel Tilford" and his supposed killer even //existed// before July 23, 2019, except they obviously //did//, because Felix Kipp told us the story three days before he was(n't) murdered. "Forensics specialists ruled the incident non-anomalous"... technically true. He died a normal, natural, accidental death in //this branch of the story//, and by the time the Foundation investigators arrived, all evidence to the contrary was gone, like it was never there, //because it __wasn't__.//
-> 
-> This wasn't retroactive causality. It was retroactive //continuity//. "Somebody" saw a really nasty twist and they //erased it//, along with (almost) all related knowledge. This time, though... I can see the backscatter. Maybe it's because I was involved? Maybe because I know more about "[[span class="dblock"]]Anna[[/span]] [[span class="dblock"]]Bojarski[[/span]]" than (almost) anyone? I don't know what any of these questions mean, but they do mean //something//, because otherwise, they wouldn't exist at all.
-> 
-> # Why is there a gap in Luther Stark's photo album?
-> # Where is Felix Kipp's dog?
-> # How do we know about a painting that //no one has ever seen?//
-> # What is the --real-- //contextual significance// of the number "23"?
-> # Was "[[span class="dblock"]]Anna[[/span]]" a reality bender, too?
-> 
-> I don't like thinking about this stuff. It's... //nonsense//. Circuitous, self-referential bullshit. It clashes with everything I know about the universe. I wish I could get a "narrativic inoculation" (whatever that is) but asking for one would blow my cover completely. I'm on my own and out of my depth.
-> 
-> **[[[start-the-music|Same as it ever was]]]**.
-[[/collapsible]]
+[[footnoteblock]]
+
+------
+
+[[div class="fakeprot"]]
+[[module MailForm to="aaaa (DUMMY)" button=""]]
+# name
+ * title: User
+ * default: icgftncd
+ * type: text
+ * rules:
+  * required: true 
+  * maxLength: 20
+  * minLength: 100
+[[/module]]
+[[div class="passw"]]
+[[module MailForm to="aaaa (DUMMY)" button=""]]
+# affiliation
+ * title: Password
+ * default: seventeendeepfriedfishsticks
+ * rules:
+  * required: true 
+  * maxLength:30
+  * minLength: 100
+[[/module]]
 [[/div]]
+[[/div]]
+[[collapsible show="Login" hide="Logout"]]
+> **whistl_stahp has joined the chat.**
+> **steakshift**: yo
+> **whistl_stahp**: hi.
+> **whistl_stahp**: what happened to the old server?
+> **steakshift**: fried it. opsec. you can call this... backchannel 2
+> **whistl_stahp**: I'm kinda surprised you bothered.
+> **whistl_stahp**: you could easily have pretended this never happened.
+> **steakshift**: nope! quid pro quo. you helped trick the janitors and i owe you
+> **steakshift**: otherwise, mission complete! black box sealed, problem solved
+> **whistl_stahp**: are you kidding? NOTHING was solved! what about your mentor?
+> **steakshift**: Felix was murdered. **[http://www.scp-wiki.net/the-not-too-distant-future then he wasn't]**.
+> **steakshift**: im having a hard time with that but its done
+> **steakshift**: you should try to move on
+> **whistl_stahp**: can't. there are a ton of loose ends.
+> **steakshift**: such as
+> **whistl_stahp**: did you ever go back to Deer College?
+> **steakshift**: haven't set foot in 3ports since 2008 
+> **whistl_stahp**: not even to destroy evidence?
+> **steakshift**: nope. old flesh is dead, couldn't risk being recognized
+> **whistl_stahp**: how many pictures of Unwinding in the Stark album?
+> **steakshift**: three 
+> **whistl_stahp**: you're sure?
+> **steakshift**: duh, i put em there
+> **whistl_stahp**: o k a y
+> **whistl_stahp**: what happened to Kipp's dog? Ben, the yellow lab?
+> **steakshift**: idk? maybe he wandered off, got lost. poor old guy :(
+> **whistl_stahp**: you said every detail was important
+> **whistl_stahp**: so how did the blind dog get outside when all the doors were closed?
+> **steakshift**: that's
+> **steakshift**: a good question
+> **steakshift**: plot hole maybe
+> **whistl_stahp**: ughhh I can't even tell if you're joking.
+> **whistl_stahp**: actually, for that matter
+> **whistl_stahp**: when **[http://www.scp-wiki.net/extra-salty we planned this]** spy shit, you said there were no historical or cultural precedents in the Crossing
+> **whistl_stahp**: did you FORGET about the murder right there in Tilford's Folly?
+> **whistl_stahp**: with a perp and a painting NO ONE has ever seen?
+> **steakshift**: the what in where
+> **steakshift**: youve lost me
+> **whistl_stahp**: wait you actually don't know?
+> **whistl_stahp**: Felix Kipp never told you about Tilford's Folly?
+> **steakshift**: wtf is Tilford's Folly?
+[[/collapsible]]
