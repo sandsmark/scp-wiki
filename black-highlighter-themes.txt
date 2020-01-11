@@ -2,7 +2,29 @@ title:Black Highlighter Themes
 [[include :scp-wiki:component:black-highlighter-theme-dev]]
 [[module css]]
 @import url("http://www.scp-wiki.net/local--files/black-highlighter-themes/bhl-themes.css");
-@import url('https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
+
+.rounder {
+    background: url(http://scp-wiki.wdfiles.com/local--files/rounderhouse-s-author-page/rounderception.png);
+    border: 5px solid #000;
+    color: #000;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    padding-left: 2%
+} 
+
+.rounder h1 {
+    font-size: 150%;
+    font-family: 'Bungee', cursive;
+    color: #000;
+    border-bottom: none !important; 
+    text-align: center !important;
+}
+
+.rounder #toc0::after {
+       display: none;
+}
 
 #page-title {
     display: none;
@@ -37,7 +59,9 @@ Below are themes to Black Highlighter, an SCP Wiki theme that most that browse t
 Everyone is welcome to add their themes here! Just make sure you follow the format. Make sure to put your name in Alphabetical order.
 [[/div]]
 
-+ Rounderhouse
+[[div class="rounder"]]
++ **ROUNDERHOUSE**
+[[/div]]
 
 [[div_ class="theme-container"]]
     [[div_ class="theme-name"]]
