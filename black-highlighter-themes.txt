@@ -5,20 +5,16 @@ title:Black Highlighter Themes
 @import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
 
 .rounder {
-    border: 5px solid rgb(var(--dark-gray-monochrome));;
+    background: url(http://scp-wiki.wdfiles.com/local--files/rounderhouse-s-author-page/rounderception.png);
+    border: 5px solid rgb(var(--dark-gray-monochrome));
     color: #000;
     margin-top: 5%;
     margin-right: 5%;
     margin-bottom: 5%;
     padding-left: 2%
 } 
-.rounder::after {
-    content: " ";
-    background: url(http://scp-wiki.wdfiles.com/local--files/rounderhouse-s-author-page/rounderception.png);
-    opacity: 0.5;
-}
+
 .rounder h1 {
-    font-size: 1.5rem;
     font-family: 'Bungee', cursive;
 }
 
@@ -56,7 +52,7 @@ Everyone is welcome to add their themes here! Just make sure you follow the form
 [[/div]]
 
 [[div class="rounder"]]
-+ **ROUNDERHOUSE**
++ [[size 160%]]**ROUNDERHOUSE**[[size]]
 [[/div]]
 
 [[div_ class="theme-container"]]
