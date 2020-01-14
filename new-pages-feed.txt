@@ -55,13 +55,112 @@ title:New Pages Feed
     .desktop-only { display: none; }
     .mobile-only { display: block; }
 }
+
+.contest-link {
+    border: 2px solid white;
+    background-color: #666;
+    padding: 0.25rem;
+    height: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+}
+
+.contest-link > a {
+    color: white;
+    font-weight: bold;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+}
+
+.content-panel .panel-body {
+    position: relative;
+}
+
+.panel-body > div:nth-child(1) > p {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1px 1fr 1px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1px;
+    grid-auto-rows: auto;
+    height: 100%;
+    margin-top: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.panel-body > div:nth-child(1) > p > a {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0.25em;
+    text-align: center;
+    background: #fff9f0 url(http://www.scp-wiki.net/local--files/component:theme/panel-bg-gradient-reverse.png) bottom repeat-x;
+    word-break: inherit !important;
+}
+
+.panel-body > div:nth-child(1) br {
+    display: none;
+}
+    
 [[/module]]
 
 [!-- SCP Block --]
 
-[[div class="feature-block desktop-only"]]
-
 A list of all newly created pages in one list can be found [[[most-recently-created| here]]].
+
+~~~~
+
+[[div class="content-panel"]]
+[[div class="panel-heading"]]
+Random Contest Entries - Voting Period Open!
+[[/div]]
+[[div class="panel-body"]]
+
+[[module ListPages tags="+5000 -hub" perPage="6" limit="6" order="random" separate="false"]]
+%%title_linked%%
+[[/module]]
+[[div_ class="contest-link"]]
+[[[scp5000contesthub| Click here to see all entries!]]]
+[[/div]]
+[[/div]]
+[[div class="panel-footer"]]
+[!-- Placeholder --]
+[[/div]]
+[[/div]]
+
+[[div class="feature-block desktop-only"]]
 
 [[div class="content-panel standalone left-column"]]
 [[div class="content-type-title"]]
