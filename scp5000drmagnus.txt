@@ -1,0 +1,80 @@
+title:SCP-5000-J
+[[>]]
+[[module rate]]
+[[/>]]
+[[include component:image-block name=https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Cookie_jar.jpg/517px-Cookie_jar.jpg|caption=Which one of you fuckers...|width=300px]]
+**Item #:** SCP-5000-J
+
+**Object Class:** Uncontained
+
+**Special Containment Procedures:** SCP-5000-J is considered uncontained until Foundation Agents get to the bottom of who took the cookie.
+
+[[html]]
+<style>
+p {
+color: rgb(51, 51, 51);
+font-family: verdana, arial, helvetica, sans-serif;
+font-size: 0.8em;
+line-height: 141%;
+}
+</style>
+<p id="demo"></p>
+<script>
+var randomStrings = [
+    "Dr. Rights, stress eating",
+    "Dr. Bright, looking for a late night snack",
+    "Dr. Magnus, on his bullshit again",
+    "Ruslav Diaghilev, finding balance",
+    "Director Moose, herding cats",
+    "Dr. Clef, hunting a type green",
+    "Agent Strelnikov, chasing a Chechen",
+    "Dr. Light",
+    "Dr. Kiryu, to feed the butterflies",
+    "Joey Fucknuts, believing in himself",
+    "Captain Donnarson",
+    "Marshall, Carter, and Dark",
+    "The entire lunarian civiliation",
+    "Rakmou-leusan",
+    "the Hanged King",
+    "SCP-682",
+    "the Back Half of Josie",
+"the ghost of Helen Magnus, telling him to get off the goddamned laptop and come to bed",
+    "Sherry Andrews, Queen of Site 234",
+    "Leep Andrews",
+    "Avery Solace",
+    "Giancarlo DeLuca",
+    "Andrew Kowalczic on a bender",
+    "Justine Everwood, famed pugilist",
+    "Kain Pathos Crow (sans chocolate of course)",
+    "Director Aktus",
+    "Director Iceberg",
+    "Agent Yoric",
+    "Sir Caliban, fifth knight of the fuck stick league",
+    "Moon Champion",
+    "u trust dado yes",
+"SCP-4759-A with lance and horse",
+"Darkblade, with infinite angst",
+"every single little mister at once",
+"Vincent Anderson",
+"the butt ghost",
+"The Almighty Mither, Mother of the Universe, and known stealer of cookies",
+"Researcher James (nuh uh!)",
+"one of the many, many Ralph Rogets we can't get rid of",
+"Dr. Madison Craggs",
+"Travis Kazmarek",
+"Buddy",
+"Robber Ducks",
+"The Great Anoati",
+"The Living Joke",
+"Dr. Clair Wythers",
+"that son of a bitch Jim Henson",
+"the entire contents of the SCP-914 test log"
+];
+window.onload = function() {
+
+var text = randomStrings[Math.floor(Math.random() * randomStrings.length)]
+document.getElementById("demo").innerHTML = "<b>Description:</b> Was it " + text + "? Couldn't be! <a target=\"_parent\" styke=\"none;\"  href=\"http://scpsandbox2.wikidot.com/magnus-poetry-box\">Then Who?</a>";
+}
+
+</script>
+[[/html]]
