@@ -1,0 +1,49 @@
+title:SCP: The Broken Rose
+[[module CSS]]
+@keyframes blink {
+    0% { color: transparent; }
+    50%, 100% { color: #b01; }
+}
+.email {float: center; border: solid 2px #000000; width: 88%; padding: 1px 15px; margin: 10px 10px 10px 10px; box-shadow: 0 1px 3px rgba(0,0,0,.5)}
+a.collapsible-block-link { font-weight: bold; }
+.tofrom {margin-left: 10px; margin-top: 5px; padding: 1px 15px; border-left: solid 3px #000098}
+[[/module]]
+[[module CSS]]
+.dblock:hover {background: #f4f4f4} 
+[[/module]]
+[[module css]]
+.danke{
+padding: 5px 5px 5px 15px;
+margin-bottom:10px;
+width: 95%;
+font-family: monospace;
+font-size: 1.1em; }
+
+.agent{
+background-color:#002200;
+border: 3px solid #55AA55;
+color: #77CC77;
+}
+
+.site{
+background-color:#222200;
+border: 3px solid #AAAA55;
+color: #DDDD77;
+}
+
+.clpcolor a.collapsible-block-link { 
+color: #1A8718; 
+}
+
+}
+[[/module]]
+[[include :scp-wiki:component:black-highlighter-theme-dev]]
+[[include :scp-wiki:component:the-way-out-theme]]
+
+[[>]]
+[[module Rate]]
+
+[[/>]]
+[[module ListPages  category="fragment" parent="5000contestjakdragox-irondruid" limit="1" order="created_at" offset="@URL|0"]]
+%%content%%
+[[/module]]
