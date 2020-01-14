@@ -154,7 +154,13 @@ created_by="Ellie3" prependLine="||~ Page ||~ Rating ||~ Comments ||~ Date Creat
 [[/module]]
 -----------
 [[/tab]]
+[[tab 5K CON]]
+[[module ListPages order="rating desc" separate="false" limit="600" perPage="100" tags="5000 -hub"
+ prependLine="||~ Page ||~ Rating ||~ Comments ||~ Date Created ||"]]
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
+[[/module]]
 
+[[/tab]]
 [[/tabview]]
 = Oh yeah and here's a rating module
 [[=]]
