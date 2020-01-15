@@ -824,6 +824,11 @@ In reading order:
 || %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% ||
 [[/module]]
 [[/tab]]
+[[tab Contest tracker]]
+[[module ListPages tag="5000" order="rating desc" separate="no" perPage="250" prependLine="||~ Title||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||"]] 
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
+[[/module]]
+[[/tab]]
 [[/tabview]]
 @@@@
 @@@@
