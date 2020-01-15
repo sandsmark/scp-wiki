@@ -9,10 +9,11 @@ title:The Rounderpage
 [[/=]]
 
 ----
+[[div class="5k"]]
 [[module ListPages order="random" category="." tags="+5000 -contest" perPage="40" separate="no" prependLine="||~ Place ||~ Title ||~ Author ||~ Rating ||"]]
 || # || %%title_linked%% || %%created_by%% || %%rating%% ||
 [[/module]]
-
+[[/div]]
 
 
 
@@ -576,7 +577,13 @@ Header art by [[user Athosnetwork]]
 }
  */
 
+.5k {
+   border: 4px solid #000;
+}
 
+.5k a { 
+   color: #850005!important;
+}
 
 #page-content .border {
     box-sizing: border-box;
