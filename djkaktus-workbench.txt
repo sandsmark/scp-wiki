@@ -69,6 +69,6 @@ color: #FFF;}
 || %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% || %%size%% ||
 [[/module]]
 
-[[module ListPages order="rating desc" separate="no" tags="5000" perPage="50" prependLine="||~ SCP ||~ Votes ||~ Comments ||~ Last Comment ||"]] 
+[[module ListPages order="rating desc" separate="no" tags="5000, -hub" perPage="50" prependLine="||~ SCP ||~ Votes ||~ Comments ||~ Last Comment ||"]] 
 || %%title_linked%% || %%rating%% || %%comments%% || %%commented_at%% ||
 [[/module]]
