@@ -11,9 +11,13 @@ div#container-wrap {
     background: #000000;
 }
 
-#side-bar img {
-    filter: hue-rotate(237deg) ;
-    -webkit-filter: hue-rotate(237deg) ;
+#side-bar div.side-block:nth-child(7) > div:nth-child(1) > div:nth-child(1) img {
+    filter: none;
+    -webkit-filter: none;
+}
+
+#side-bar .scpnet-interwiki-wrapper {
+    width: 0em;
 }
 
 body {
