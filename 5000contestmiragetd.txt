@@ -1,0 +1,169 @@
+title:SCP-5000: Ship in a Bottle
+[[include :scp-wiki:component:black-highlighter-theme-dev]]
+
+[!-- Remove the page title, info bar and email formatting. --]
+[[module CSS]]
+#page-title {
+    display: none;
+}
+
+:root {
+    --linkColour: #FFF;
+    --barColour: #633;
+}
+
+#breadcrumbs{
+    margin: auto;
+    text-align: center;
+    padding-bottom: 4px;
+}
+
+.info-container {
+    content: " ";
+    width: 100%;
+    text-align: center;
+    bottom: 2em;
+    margin-bottom: 1em;
+}
+
+.info-container h1 {
+    text-align: center;
+}
+
+.info-container .collapsible-block-folded,
+.info-container .collapsible-block-unfolded-link {
+-webkit-mask: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.2' baseProfile='tiny' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 628 18' xml:space='preserve'%3E%3Cpolygon fill='%23B2B2B2' points='628.3,0 0,0 0,5.3 243.6,5.3 268.1,18.2 360,18.3 384.7,5.3 628.3,5.3 '/%3E%3C/svg%3E%0A");
+  mask: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.2' baseProfile='tiny' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 628 18' xml:space='preserve'%3E%3Cpolygon fill='%23B2B2B2' points='628.3,0 0,0 0,5.3 243.6,5.3 268.1,18.2 360,18.3 384.7,5.3 628.3,5.3 '/%3E%3C/svg%3E%0A");
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    -webkit-mask-position: top center;
+    mask-position: top center;
+    background: var(--barColour);
+}
+
+.info-container .collapsible-block-folded {
+    display: block;
+    margin: 0 auto;
+    height: 1.5em;
+    width: 100%;
+}
+
+.info-container .collapsible-block-folded .collapsible-block-link, .info-container .collapsible-block-link {
+    -webkit-mask: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.2' baseProfile='tiny' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 103 205.3' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23FFFFFF' d='M4.2,75.6c24.1-2.6,48.2-5.2,74.9-8.1c0,15.6,0,29.4,0,43.3c0,20.8,0.4,41.6-0.2,62.3 c-0.3,10.5,4,16.3,13.4,20c4,1.5,7.1,5.3,10.6,8c-0.8,1.4-1.6,2.8-2.4,4.3c-32.4,0-64.8,0-97.3,0c-0.9-1.1-1.7-2.3-2.6-3.4 c3.3-2.7,6.2-7,9.9-7.8c11.4-2.3,15.3-9,15.2-19.9c-0.2-20.3-0.6-40.5,0.1-60.8c0.4-11.8-4.4-18.1-15-22.3c-4.4-1.8-7.4-7.2-11-11 C1.4,78.6,2.8,77.1,4.2,75.6z'/%3E%3Cpath fill='%23FFFFFF' d='M79.6,27c0,16.3-11,26.9-27.5,26.7c-16.5-0.2-26.2-9.9-26.2-26c0-17,10.1-27.7,26.5-27.7 C68.6-0.1,79.6,10.8,79.6,27z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    mask: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.2' baseProfile='tiny' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 103 205.3' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23FFFFFF' d='M4.2,75.6c24.1-2.6,48.2-5.2,74.9-8.1c0,15.6,0,29.4,0,43.3c0,20.8,0.4,41.6-0.2,62.3 c-0.3,10.5,4,16.3,13.4,20c4,1.5,7.1,5.3,10.6,8c-0.8,1.4-1.6,2.8-2.4,4.3c-32.4,0-64.8,0-97.3,0c-0.9-1.1-1.7-2.3-2.6-3.4 c3.3-2.7,6.2-7,9.9-7.8c11.4-2.3,15.3-9,15.2-19.9c-0.2-20.3-0.6-40.5,0.1-60.8c0.4-11.8-4.4-18.1-15-22.3c-4.4-1.8-7.4-7.2-11-11 C1.4,78.6,2.8,77.1,4.2,75.6z'/%3E%3Cpath fill='%23FFFFFF' d='M79.6,27c0,16.3-11,26.9-27.5,26.7c-16.5-0.2-26.2-9.9-26.2-26c0-17,10.1-27.7,26.5-27.7 C68.6-0.1,79.6,10.8,79.6,27z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    display: block;
+    width: 100%;
+    height: 100%;
+    -webkit-mask-size: 0.5em;
+    mask-size: 0.5em;
+    -webkit-mask-position: top center;
+    mask-position: top center;
+    mask-position-y: 3px;
+    -webkit-mask-position-y: 3px;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    background: var(--linkColour);
+    text-decoration: none;
+}
+
+
+.info-container .collapsible-block-unfolded-link {
+    display: block;
+    margin: 0 auto;
+    height: 1.5em;
+    width: 100%;
+}
+
+.info-container .collapsible-block-unfolded {
+    border: 1px solid #BBB;
+    border-top: none;
+}
+
+.info-container .collapsible-block-content {
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+.info-container .collapsible-block-content br {
+    margin-bottom: 1em;
+}
+
+.info-container .collapsible-block-content > div:nth-child(1) > p {
+    margin: 1em 2em 1em 2em;
+}
+
+.u-faq a:link {
+    font-size: 80%;
+}
+
+.blinkbar {color: red; font-size:125%; animation: blink 1.5s infinite;}@keyframes blink{to{opacity: .0;}}@keyframes flicker {0% {opacity: 0.9890; }5% {opacity: 0.5842; }10% {opacity: 0.9865; }20% {opacity: 0.0412; }20% {opacity: 0.6255; }25% {opacity: 0.3157; }30% {opacity: 0.7328; }35% {opacity: 0.4654; }40% {opacity: 0.9128; }45% {opacity: 0.2449; }50% {opacity: 0.5485; }55% {opacity: 0.6438; }60% {opacity: 0.1180; }65% {opacity: 0.9085; }70% {opacity: 0.0266; }75% {opacity: 0.6795; }80% {opacity: 0.7812; }85% {opacity: 0.0117; }90% {opacity: 0.2239; }95% {opacity: 0.8897; }100% {opacity: 0.2260; }}@keyframes overlay-anim {0% {visibility: hidden; }10% {visibility: hidden; }11% {visibility: visible; }50% {visibility: hidden; }100% {visibility: hidden; }}
+@keyframes blink {
+    0% { color: transparent; }
+    50%, 100% { color: #b01; }
+}
+.logbox {
+    display: inline-block;
+    float: top;
+    padding: 1px 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    width:100%;
+    margin: auto;
+    border: solid 2px #000000;
+    box-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+.tofrom {
+    margin-left: 10px;
+    margin-top: 5px;
+    padding: 1px 15px;
+    border-left: solid 3px maroon;
+}
+[[/module]]
+
+[!-- The content for some of these ListPages is pretty minimal. This outer div acts as a container which allows us to put the footer-wikiwalk-nav element at the bottom of the article. --]
+[[div style="position: relative; height:100%"]]
+
+[[div class="info-container"]]
+[[collapsible hideLocation="top" show=" " hide=" "]]
+[[div]]
+[[=]]
+**SCP-5000** - //Ship in a Bottle//
+Written by [[*user MirageTD]] and [[*user Habitual_Snubnose]]
+[[/=]]
+------
+= **Images (in order of appearance)**
+SCP Location Starchart - Generated with [[[https://github.com/dcf21/star-charter | the StarCharter tool]]], written by Dominic Ford
+[[[https://plus.maths.org/content/imaging-maths-inside-klein-bottle | Klein Bottle with Möbius Band]]] - Doctor Konrad Polthier, Freie Universität Berlin (used with [[file 2019-11-20_Polthier-Konrad_SCP-Foundation-Wiki_Images-Klein-Bottle_permission.pdf | written permission]] as per [[[https://plus.maths.org/content/terms-use-and-notices | the terms of plus.maths.org]]])
+------
+= **Critters**
+Many thanks to [[*user Dyslexion]], [[*user Calibri_Bold]], [[*user DrAkimoto]] and [[*user stormbreath]] for providing critique and feedback.
+------
+= **Miscellaneous Credits**
+The end of the fourth paragraph in the introductory email is a paraphrase from [[[http://www.scp-wiki.net/about-the-scp-foundation#wiki-tab-0-0 | the Administrator's note]]].
+------
+[[/div]]
+[[div class="u-faq"]]
+@@ @@
+= [http://www.scp-wiki.net/component:info-ayers F.A.Q.]
+[[/div]]
+[[/collapsible]]
+[[/div]] 
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[module ListPages category="fragment" parent="." order="created_at" limit="1" offset="@URL|0"]]
+%%content%%
+[[/module]]
+
+@@ @@
+[[div class="footer-wikiwalk-nav" style="position: absolute; bottom: 0; left: 0; right: 0"]]
+[[=]]
+<< [[[SCP-4999]]] | SCP-5000 | [[[SCP-5001]]] >>
+[[/=]]
+[[/div]]
+
+[[/div]]
