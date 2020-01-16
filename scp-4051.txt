@@ -2,45 +2,48 @@ title:SCP-4051
 [[module CSS]]
 /* BREADCRUMBS, PAGE TITLE, H1 */
 #breadcrumbs{
-margin: auto;
-margin-bottom: 5px;
-text-align: center;
-padding-bottom: 4px;
+  margin: auto;
+  margin-bottom: 5px;
+  text-align: center;
+  padding-bottom: 4px;
 }
 
 #page-title {
-position: relative;
-text-align: center;
+  position: relative;
+  text-align: center;
 }
 
 /* LOGO */
 div#header {
-background-image: url(http://scp-wiki.wdfiles.com/local--files/site-17-hub/header17);
+  background-image: url(http://scp-wiki.wdfiles.com/local--files/site-17-hub/header17);
 }
 
 /* HEADER TEXT */
 div#header h1 a span {
-font-size: 0px;
+  font-size: 0px;
 }
 div#header h1 a:before {
-content: "Site-17 Database";
-color: #eee;
+  content: "Site-17 Database";
+  color: #eee;
 
 }
 div#header h2 span {
-font-size:0px;
-padding: 4px;
+  font-size:0px;
+  padding: 4px;
 }
 div#header h2:after {
-content: "Living Past Our End";
-font-weight: bold;
-color: #f0f0c0;
-padding: 19px 0;
-text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
-white-space: pre;
+  content: "Living Past Our End";
+  font-weight: bold;
+  color: #f0f0c0;
+  padding: 19px 0;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+  white-space: pre;
 }
-.test {float: center; border: solid 2px #000000; width: 88%; padding: 1px 15px; margin: 10px 10px 10px 10px; box-shadow: 0 1px 3px rgba(0,0,0,.5)}
-.therapy {float:center ; background: #eff4ff; padding: 1px 15px; border: 2px solid #2F4F4F; width: 88%; margin: 10px 10px 10px 10px; box-shadow: 0 1px 3px rgba(0,0,0,1)}
+.test {border: solid 2px #000000; width: 88%; padding: 1px 15px; margin: 10px auto; box-shadow: 0 1px 3px rgba(0,0,0,.5)}
+.therapy {background: #eff4ff; padding: 1px 15px; border: 2px solid #2F4F4F; width: 88%; margin: 10px auto; box-shadow: 0 1px 3px rgba(0,0,0,1)}
+html {
+  scroll-behavior: smooth;
+}
 [[/module]]
 
 [[include info:start]]
@@ -141,7 +144,7 @@ SCP-4051 has either claimed or has been reported to have manifested the followin
 
 **Recovery:** SCP-4051 was first brought to the attention of Foundation operatives in August of 2012 when a video depicting it using its anomalous abilities began to gain significant online attention. The recording depicted SCP-4051 assaulting and detaining several men via its anomalous abilities.
 
-The video gained over two million views before warranting an intervention, following multiple testimonies by commenters of similar occurrences. [[[http://www.scp-wiki.net/task-forces#pi-1 | Mobile Task Force Pi-1 "City Slickers"]]] identified SCP-4051 and performed a successful retrieval and extraction.
+The video gained over two million views before warranting an intervention, following multiple testimonies by commenters of similar occurrences. [[[task-forces#pi-1 | Mobile Task Force Pi-1 "City Slickers"]]] identified SCP-4051 and performed a successful retrieval and extraction.
 
 **Relevant Materials and Reports:**
 
