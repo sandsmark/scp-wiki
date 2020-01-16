@@ -1,38 +1,9 @@
 title:A Comprehensive List of Esoteric Classes
-[[module CSS]]
-/* BREADCRUMBS, PAGE TITLE, H1 */
-#breadcrumbs{
-margin: auto;
-margin-bottom: 5px;
-text-align: center;
-padding-bottom: 4px;
-}
-
-#page-title {
-position: relative;
-text-align: center;
-}
-.list {float: center; border: gray 1px; padding: 7px; margin: 3px; background-color: #fafafa; box-shadow: 0 2px 4px rgba(75, 75, 75, .5); border-radius: 10px}
-.list .collapsible-block {  
-  text-align: center;
-}
-.list .collapsible-block-content {
-  text-align: left;
-}
-.lie{
-    font-family: 'Courier', monospace;
-    font-weight: bold;
-    margin: 2px 1px 1px 1px; 
-    background-color: #a3cef1;
-    overflow-wrap: break-word;
-}
-[[/module]]
-
 [[>]]
 [[module Rate]]
 [[/>]]
 
-[[f>toc]]
+[[f>toc title="Sections"]]
 The Foundation's primary directive is to order the anomalous by designating instances with four-digit numbers and methods of containment. One of the tools used to accomplish this is the Object Class, a process of parsing anomalies into groups based on the difficulty of containment. [[[Object Classes | Full dossiers are available for archivists wishing to familiarize themselves.]]]
 
 Despite this, some anomalies warrant entirely new object classes beyond the standard Safe, Euclid, and Keter, and sometimes even beyond Thaumiel, Neutralized, and Explained. These Esoteric Classes are exceedingly rare, and many are not viable for standard documentation due to their unique and specialized nature. The following lists serve as a collection of these classes.
@@ -197,7 +168,15 @@ The following classes do not describe the anomaly they are assigned, but are rat
 [[/div]]
 @@ @@
 ++ Anomalous Esoteric Classes
-
+[[module CSS]]
+.lie{
+  font-family: 'Courier', monospace;
+  font-weight: bold;
+  margin: 2px 1px 1px 1px; 
+  background-color: #a3cef1;
+  overflow-wrap: break-word;
+}
+[[/module]]
 The following classes are, generally, the results of infectious memetic agents and infohazards; personnel lacking a Cognitive Resistance Value (CRV) of 16.3 or greater are advised to read at their own risk.
 @@ @@
 [[div class="list"]]
@@ -296,3 +275,29 @@ The following classes have not been officially implemented in any form of docume
 
 If you need any clarifications or have any questions, contact [[*user Nagiros]] over Wikidot.
 ------
+[[module CSS]]
+/* BREADCRUMBS, PAGE TITLE, H1 */
+#breadcrumbs{
+  margin: auto;
+  margin-bottom: 5px;
+  text-align: center;
+  padding-bottom: 4px;
+}
+#page-title {
+  position: relative;
+  text-align: center;
+}
+html {
+  scroll-behavior: smooth;
+}
+.list {float: center; padding: 7px; margin: 3px; background-color: #fafafa; box-shadow: 0 2px 4px rgba(75, 75, 75, .5); border-radius: 10px}
+.list .collapsible-block {  
+  text-align: center;
+}
+.list .collapsible-block-content {
+  text-align: left;
+}
+#toc {
+  padding-right: 25px;
+}
+[[/module]]
