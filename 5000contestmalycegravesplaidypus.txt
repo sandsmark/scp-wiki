@@ -1,0 +1,806 @@
+title:SCP-5000: The Freudian Split
+[[module css]]
+@import url(http://www.scp-wiki.net/theme:magnus-web-format/code/1)
+[[/module]]
+[[include component:black-highlighter-theme-dev]]
+
+[[module CSS]]
+#header {
+    background-image: url(https://vgy.me/W0f3wX.png)
+}
+
+#footer {
+    font-size: x-small;
+    background: #ffafc7;
+    color: black;
+}
+
+#footer a {
+    color: #e51f47;
+}
+
+#license-area {
+    font-size: x-small;
+    background: #5bcefa;
+    color: black;
+}
+
+#license-area a {
+    color: #056c94;
+}
+
+.page {
+    display: block;
+    overflow: hidden;
+    font-family: "Monotype Corsiva", "Bradley Hand ITC", sans-serif;
+    font-style: normal;
+
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: linear-gradient(to top ,rgb(202, 219, 228) 0%, rgb(231, 233, 220) 8%);
+    background-origin: padding-box;
+    background-position: 0px 8px;
+    background-repeat: repeat;
+    background-size: 100% 20px;
+
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2)
+    }
+.page p,
+.page ul {
+    line-height: 20px;
+    margin: 0;
+}
+
+div.info-container > div.collapsible-block {
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Courier+Prime&display=swap');
+ 
+.courierprime {
+    font-family: 'Courier Prime', monospace;
+}
+
+[[/module]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
++ Please be patient as I upload all the images.
+
+[[include :scp-wiki:component:info-ayers
+|lang=en
+|page=component:info-ayers
+|authorPage=http://www.scp-wiki.net/
+|comments=**SCP-5000:** The Freudian Split
+@@ @@
+**Authors:** [[*user MalyceGraves]] & [[*user plaidypus]]. 
+@@ @@
+**Image Credit:** See comments.
+]]
+[[div class="material-box" style="margin-bottom: 5px;"]]
+
+[[include :scp-wiki:component:classified-bar-woed
+|lv=3
+|item=5000
+|oc=keter
+|lang=EN
+]]
+
+[[table style="width: 100%;"]]
+[[row]]
+[[cell style="border-bottom: 1px solid #AAA; border-right: 1px solid #AAA; text-align: center; width: 25%;"]]
+[[size 90%]]**Assigned Site**[[/size]]
+[[/cell]]
+[[cell style="border-bottom: 1px solid #AAA; border-right: 1px solid #AAA; text-align: center; width: 25%;"]]
+[[size 90%]]**Site Director**[[/size]]
+[[/cell]]
+[[cell style="border-bottom: 1px solid #AAA; border-right: 1px solid #AAA; text-align: center; width: 25%;"]]
+[[size 90%]]**Research Head**[[/size]]
+[[/cell]]
+[[cell style="border-bottom: 1px solid #AAA; text-align: center; width: 25%;"]]
+[[size 90%]]**Assigned MTF**[[/size]]
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="border-right: 1px solid #AAA; text-align: center; width: 25%;"]]
+[[size 80%]]Site–81[[/size]]
+[[/cell]]
+[[cell style="border-right: 1px solid #AAA; text-align: center; width: 25%;"]]
+[[size 80%]]Dr. Jean Karlyle Aktus[[/size]]
+[[/cell]]
+[[cell style="border-right: 1px solid #AAA; text-align: center; width: 25%;"]]
+[[size 80%]]Dr. Imogene Stewart[[/size]]
+[[/cell]]
+[[cell style="text-align: center; width: 25%;"]]
+[[size 80%]]Pi-6 ("Clown Wranglers")[[/size]]
+[[/cell]]
+[[/row]]
+[[/table]]
+>
+[[/div]]
+-----
+[[div class="material-box"]]
+[[div class="title-style"]]
+++++++ __**Special Containment Procedures**__
+[[/div]]
+
+SCP-5000 collectively refers to three genetically identical humanoids that all identify themselves as some variation of "Agent McNeal", formerly an FBI:UIU operative. As of October 3rd, 2011, all three have been contained at least once, and currently, only SCP-5000-1 is in containment. Due to SCP-5000's ability to circumvent standard security protocols, the containment procedures have been updated and revised. 
+
+This report contains all relevant data gleaned from the FBI:UIU case file, as well as additional data gathered in the ongoing attempt to apprehend SCP-5000-2 & -3. Due to the sensitive nature of this case & the potential for continued security breaches on the part of SCP-5000-1, -2, & -3, apprehension of these two iterations have been given a high priority. MTF Pi-6 ("Clown Wranglers") has been assigned to the ongoing investigation primarily for their expertise in encountering and capturing bozomorphic entities. 
+
+SCP-AI webcrawler ΛΞ-207 "Wallbanger" has been reassigned to trawl for any forum or social media postings indicating the current or prospective location of GoI-233. Due to the anomalous nature of GoI-233's mode of travel, additional predictive analytics have been added to ΛΞ-207's codebase in an attempt to more successfully ascertain where they will appear next. 
+
+**SCP-5000-1 Containment Procedures**
+SCP-5000-1 is currently contained at Site-81 in a secured humanoid containment cell modified to include an automated cleaning system and a secured drainage system. This cell shall be monitored 24 hours a day via audio/visual recording equipment. A single Class 2 Scranton Reality Anchor of sufficient strength to cover the entire area of the cell has been installed in an adjacent room, along with a Bonfeld-Carizza Hume Level Detector. Should Hume levels deviate more than .02 from the documented regional baseline, the entire humanoid containment wing should be locked down and MTF Pi-6 ("Clown Wranglers") put on immediate alert.
+
+SCP-5000-1 is also fitted with a shock collar with a direct field-link to the Bonfeld-Carizza detector. This device will trigger immediately upon detection of any localized Hume level fluctuation, and upon the device leaving the Scranton Reality Anchor's field of effect.
+
+Twice a week, the cell should be flushed using the automated cleaning system to prevent buildup of SCP-5000-1A.
+
+Research into SCP-5000-1 has been suspended due to the high difficulty in interacting with -1, and it's ongoing refusal to speak.
+
+[[collapsible show="+ Proposed SCP-5000-2 Containment Procedures" hide="- Hide Containment Procedures"]]
+SCP-5000-2 is contained in at Site-81 in a secured humanoid containment cell and should be fed twice daily. This cell is monitored 24 hours a day via audio/visual recording equipment. A single Class 2 Scranton Reality Anchor of sufficient strength to cover the entire area of the cell has been installed in an adjacent room, along with a Bonfeld-Carizza Hume Level Detector. Should Hume levels deviate more than .02 from the documented regional baseline, the entire humanoid containment wing should be locked down and MTF Pi-6 ("Clown Wranglers") put on immediate alert.
+
+Interviews and research into the -2 iteration may be conducted in a secured interrogation room, with at least one member of MTF Pi-6 present. 
+[[/collapsible]]
+
+[[collapsible show="+ Proposed SCP-5000-3 Containment Procedures" hide="- Hide Containment Procedures"]]
+SCP-5000-3 is contained in at Site-81 in a secured humanoid containment cell and should be fed twice daily. This cell is monitored 24 hours a day via audio/visual recording equipment. A single Class 2 Scranton Reality Anchor of sufficient strength to cover the entire area of the cell has been installed in an adjacent room, along with a Bonfeld-Carizza Hume Level Detector. Should Hume levels deviate more than .02 from the documented regional baseline, the entire humanoid containment wing should be locked down and MTF Pi-6 ("Clown Wranglers") put on immediate alert.
+
+Interviews are to be conducted via the built-in audio/visual equipment and only with at least two members of MTF Pi-6 present at all times. 
+[[/collapsible]]
+
+-----
+[[div class="title-style"]]
+++++++ __**Description**__
+[[/div]]
+
+SCP-5000-1 is a large, heavily muscled, and white-skinned humanoid. It's body shows significant signs of extensive carnomantic and thaumaturgic modification through a process that is currently unknown. According to the FBI:UIU personnel file for Special Agent McNeal, the subject in question was initially described as slight, dark-complexioned, and of indeterminate gender.
+
+SCP-5000-1A refers to a black, viscous fluid that continuously seeps from SCP-5000-1's eyes, ears, nostrils, and mouth, as well as the single remaining orifice in the groin. This fluid usually discharges at a consistent rate of 30 milliliters a day but will vary significantly depending on SCP-5000-1's arousal state. During heightened emotional states, this discharge has been recorded in excess of 15 milliliters/hour.
+
+Under no circumstances should any personnel come into contact with SCP-5000-1A, as it produces an extremely potent hallucinogenic effect. This effect induces a state wherein those affected become highly susceptible to SCP-5000-1's reality-bending properties, and should thus be avoided.
+
+The purpose of this discharge is currently unknown, though it is believed to be a close analogue to the fluid known as [http://www.scp-wiki.net/scp-2912 Clown's Milk] that has been previously encountered. The current hypothesis postulates that this discharge is a by-product of bozomorphic internal processes and represents the entity's sole nutritional requirement. 
+
+The process by which SCP-5000 was transformed is unknown, but physical analysis of SCP-5000-01 indicates significant carnomantic and thaumaturgic modifications. Additionally, some of the unknown internal biological structures show indications of being artificially crafted through an unknown means.
+
+[[include component:image-block name=McNealCouple|caption=Recovered Photograph, SCP-5000-2 & -3, c. unknown |width=250px]]
+
+SCP-5000-2 and -3 have both exhibited the ability to radically alter their physical form and identity to appear as a variety of baseline humans. This ability does not seem to be entirely under their control, and it only triggers upon the "death" of the current instance. 
+
+This massive cellular regeneration produces what appears to be a fully-grown adult human, and appears to select physical appearance characteristics at random, via anomalous triggering of certain aspects of their genetic code. The only constant being that both -2 and -3 iterations retain a high degree of physical aptitude, and their memories and abilities remain undiminished. 
+
+The current appearance and dispositions of SCP-5000-2 & -3 are unknown.
+
+[[/div]]
+
+[[div class="addenda-header"]]
++++ **Attached Addenda**
+[[/div]]
+[[div class="material-box "]]
+[[div class="title-style"]]
+++++++ **Discovery**
+[[/div]]
+
+SCP-5000 was originally brought to the Foundation's attention after the ongoing mutual exchange of files between the Foundation and [http://www.scp-wiki.net/unusual-incidents-unit-hub the FBI:Unusual Incidents Unit] began in 2███.[[footnote]]To date, this file exchange has provided an unknown number of documents scattered through 538 file cabinets with no clear system of organization.[[/footnote]]
+
+Initially created to investigate the activities of GoI-233 “[http://scp-wiki.wikidot.com/herman-fuller-hub Herman Fuller’s Circus of the Disquieting]”, the FBI:UIU's case designation was modified to include a kidnapping charge after Special Agent McNeal was captured by GoI-233 operatives. This was subsequently updated again once it became known that SCP-5000 had begun to actively collaborate with GoI-233. 
+
+Since jurisdiction over SCP-5000 was passed to the Foundation, MTF Pi-6 ("Clown Wranglers") have engaged repeatedly with SCP-5000 with limited success. 
+
+In March of 2012, Pi-6 agents were able to apprehend SCP-5000-2, and it was transferred to a standard humanoid containment cell at Site-81. 
+
+[[collapsible show="+ SCP-5000-2 Initial Interview, 5000.int.01" hide="- Hide Transcript"]]
+[[div style="display: inline-block; border-radius: 10px; border:dashed 1px #444444; background:#F5F5F5; float:top; width:96.5%; padding:10px"]]
+**Initial Subject Interview Transcript**
+
+**Date:** March 13, 2012
+**Interviewed:** SCP-5000-2 "Mick"
+**Interviewer:** Dr. Imogene Stewart
+
+**Foreword:** Subject has been polite and cooperative, and appears to accept containment. While not docile, the subject is amenable to converse with and has consented to this interview willingly. 
+
+
+**<Begin Log, 11:23>**
+-----
+
+[BEGIN LOG]
+
+**Dr. Stewart:** Good morning SCP-5000-2, I am Dr. Imogene Stewart, and I'd like to ask you a few questions. 
+
+**SCP-5000-2:** Mick, please. Or Agent McNeal, if you'd prefer to be formal. 
+
+**Dr. Stewart:** You are no longer an Agent of the FBI, SCP-5000-2. 
+
+**SCP-5000-2:** No, I guess not, but that hardly matters. I've been Agent McNeal for far longer than I was anything else. If it is too much to ask, "McNeal" is sufficient.
+
+**Dr. Stewart:** Ok, McNeal then. I'd like to ask you some questions about how you came to be... like you are.
+
+**SCP-5000-2:** In the custody of the SCPF, my dear Doctor, you already know that!
+
+**Dr. Stewart:** Of course, I meant how you became three different entities. 
+
+**SCP-5000-2:** Well, you'd have to ask Fuller about the specifics of that, I'm afraid. And he's [http://www.scp-wiki.net/scp-3440 no longer around] for you to ask such things. 
+
+**Dr. Stewart:** That may be the case, but I am asking you.
+
+**SCP-5000-2:** Doc, you don't seem to understand. We didn't //want// any of this. At no point did we get a choice in the matter. Fuller wanted a bodyguard, and Manny didn't think that was such a good idea. The J. Edgars intervened, and now there are three of us. Mick, Mack, and the Spook.
+
+**Dr. Stewart:** You mean when the FBI tried to rescue you?
+
+**SCP-5000-2:** Hell, they didn't care about us. Sure, they listened when I said go, but that's only 'cause I was a good Agent to blame if shit went sideways. No, they only wanted us back 'cause we was an //embarrassment//. Later, they shot us. Several times. Though, I'm sure you'd //never// have to worry about your employers terminating you //with prejudice.//
+
+**Dr. Stewart:** Is that why you joined the Circus?
+
+**SCP-5000-2:** Honey, who doesn't want to run away and join the Circus from time to time? It's the Greatest Show in All the Worlds!
+
+**Dr. Stewart:** Well, I believe that's all we need for this interview. We will reconvene in a few days to discuss your history with the Circus.
+
+**SCP-5000-2:** No, I don't believe we will.
+
+**Closing Statement:** Interview was terminated shortly after that. The subject never elaborated upon its final statement. Security around SCP-5000-2's SCP-5000's containment has been tightened.
+
+[END LOG]
+[[/div]]
+[[/collapsible]]
+
+Shortly after the initial interview, Site-81 experienced a security failure, and SCP-5000-2 was able to breach containment with the assistance of -1 and -3. To date, the twelve days that the Foundation had custody of SCP-5000-2 represents the longest that the Foundation has been able to contain any of the SCP-5000 instances.
+
+----
+While much of SCP-5000's history prior to their joining GoI-233 has been stricken from the record, the Foundation was able to locate the single living person that could possibly shed some light onto who Agent McNeal was when they were actively a FBI:UIU agent. 
+
+[[collapsible show="+ Agent Hooper Initial Interview" hide="- Hide Transcript"]]
+[[div style="display: inline-block; border-radius: 10px; border:dashed 1px #444444; background:#F5F5F5; float:top; width:96.5%; padding:10px"]]
+**Interviewed:** Retired FBI:UIU Agent Jackson Hooper
+
+**Interviewer:** Dr. Imogene Stewart 
+
+**Foreword:** FBI:UIU Agent Jackson Hooper was the only surviving FBI:UIU Agent to have worked directly with the original SCP-5000 instance. Unfortunately, he was in the early stages of Alzheimer’s Syndrome, he could remember little. Class A mnestics were applied in the hopes that their use would aid his failing memory.
+
+**<Begin Log, 07/03/2008 09:37>**
+
+**Dr. Stewart:** Well Mr. Hooper, let’s begin. Do you recall working with an Agent McNeal?
+
+**Agent Hooper:** That queer? Fucking hell, that kid was a strange one. Yeah, couple times. Why?
+
+**Dr. Stewart:** We're conducting an investi-
+
+**Agent Hooper:** You wait now, what kind’ve investigation? I ain’t done nothing wrong, I’m a model Agent. Oldest in the Unit, in fact. You’d best not be trying to //implicate// me in nothing, now.
+
+**Dr. Stewart:** <//sighs//> As I was saying Mr. Hooper, we're conducting an investigation in order to apprehend Agent McNeal. You’re the only living Agent who worked with them. What were the circumstances surrounding their disappearance? I understand you were present. 
+
+**Agent Hooper:** Ah, that’s good, that’s good. Traitorous ass, he were. Hope you find that kid, I’ll have a word or two for him!
+
+**Dr. Stewart:** That’s irrelevant Mr. Hooper. Please answer the question. 
+
+**Agent Hooper:** Straight to it eh? I’ve had a couple like you. I can dig it. 
+
+**Dr. Stewart:** Answer my question, Mr. Hooper. 
+
+**Agent Hooper:** Fine. Uh, it was a long time ago. 
+
+**Dr. Stewart:** Go on.
+
+**Agent Hooper:** I'm thinkin'! Don't you be hurryin' me along, you hear? <//Several seconds pass in silence//> Well, we was tryin' to get info on them screwy Circus folk. They was poppin up all over the damn place, and we was havin' a hell of a time tryin' to stop 'em. Was like they didn't have to travel like regular folk or nothin'. 
+
+**Dr. Stewart:** We know about Herman Fuller's Circus, Agent Hooper. I was asking abou-
+
+**Agent Hooper:** I knows, I knows! Give me a break. Kids these days, don't know how to show proper respect. I earned my retirement the old way, lady! Like I said, we was tryin' to get information, McNeal had this way with folk, could get them to talk like he was some sort of shrink. So we was goin' in to see what we could find. I was with Tommy Meyer, I think. We often worked together, watched each other's backs and all. 
+
+**Dr. Stewart:** Agent Hooper, please. 
+
+**Agent Hooper:** All right, all right, Jesus woman! We got ourselves lost in them mirrors. Hard to find the way out when everythin's just showin' our pretty faces starin' back at us. Most of the fun stuff happened while we was lost, and so we got out jus' as McNeal was callin' for extraction. We was tryin' to meet up behind the Big Top, but things was real crazy like. Them Clowns kept poppin' up from everywhere, they was the weirdest things, comin' after us like that. I think two agents went down, 'cause Meyer was bleedin' like a pig when we all got out.
+
+**Dr. Stewart:** How did you manage to escape?
+
+**Agent Hooper:** McNeal. Fuckin' queer managed to steer the Clowns the other way. Was the damndest thing. I think that he was dancin' or some shit. Draper grabbed us all and we got out. I never saw McNeal after that. Heard he went traitor. Spent a while lookin' for that bastard, 'til I got myself reassigned. I think Draper stayed on a bit. 
+
+**Dr. Stewart:** Thank you, Agent Hooper, that'll be all. 
+
+**<End Log>**
+
+**Closing Statement:** It's clear that McNeal wasn't well-liked, even if they were respected by the people working for them. We attempted to locate any relatives of Agent C. Draper, but he had no children or siblings when he was transferred to the Office of Strategic Services. OSS records indicate that he was lost in action in France in 1944. His parents died a few months apart in 1946.
+[[/div]]
+[[/collapsible]]
+
+[[/div]]
+
+[[div class="material-box "]]
+
+[[div class="title-style"]]
+++++++ **Additional Documents**
+[[/div]]
+
+[[collapsible show="+ FBI:UIU Case File" hide="- Hide Case File"]]
+
+[[=image seal.png]]
+
+[[tabview]]
+[[Tab Initial Report]]
+= //Electronic copy below as per Federal Records Act//
+[[div class="content-panel standalone" style="padding: 0 1em; font-family: 'Courier Prime', monospace;"]]
+[[=]]
+[[size 120%]] **FBI:UIU File 1932-013:** Herman Fuller's Circus of the Disquieting[[/size]]
+[[/=]]
+**Command:** Section Chief ████████
+**Operational Lead:** --Special Agent McNeal-- --Special Agent Thompkins-- --Special Agent Hobart-- --Special Agent Myers-- --Special Agent Ryan-- --Special Agent Gordon-- --Special Agent Rodriguez-- --Special Agent Danner-- --Special Agent Hoyer-- --Special Agent Webb--
+
+**Summary:** 
+The Circus is an anomalous group that is known to be operating throughout the entirety of the United States. Confirmed reports have placed the Circus in Chicago, IL, San Francisco, CA, Sacramento, CA, Madison, WI, Sarasota, FL, Allentown, PA, and many other cities all across the country. Numerous accounts of injuries sustained while visiting the Circus, along with multiple deaths and disappearances attributed to Circus activities show that it represents a serious and present danger to the Citizenry of the United States and all appropriate efforts should be put forth to protect the United States and her citizens from this threat.
+
+While it is currently unknown how many people are employed by the Circus, due to the nature of their rapid deployment and movement about the country, it is safe to assume that they can call upon vast material and personal resources. 
+
+[[/div]]
+[[/tab]]
+
+
+[[tab Suspects]]
+= //Electronic copy below as per Federal Records Act//
+[[div class="content-panel standalone" style="padding: 0 1em; font-family: 'Courier Prime', monospace;"]]
+**AS OF 01/23/36, Special Agent McNeal is also considered a suspect.**
+
+**Name:** "McNeal", "Spook"
+
+**Irregularity Cross-reference:** Human(?), Minor Type Green Reality Bender, Cognitohazard, Memetic 
+
+**Physical Description:**
+||~ Sex ||~ Height ||~ Weight/Build ||~ Race ||~ Hair ||~ Eyes ||
+|| Unknown || 6'6 || 305lbs/Muscular || Unknown || Brown || Brown || 
+
+||~ Identifying Attributes ||
+|| Wears attire no less formal than business casual at all times. Always carries a navy blue pocket square embroidered with the letters S.M in the top right corner, along with a similar handkerchief capable of neutralizing the memetic effects of their byproduct and removing stains via anomalous means. ||
+
+**Capabilities:** The full extent of the suspect's abilities is currently unknown. 
+
+The black fluid that constantly drains from the suspect has strong hallucinogenic and memetic properties, and direct skin contact with the suspect should be avoided at all costs. The substance causes a Class III memetic effect in observers when smeared on an animal's body which renders the victim anomalously average. Additionally, if the substance is mixed with oils present on human skin, it causes powerful visual hallucinations. There have been reports that the suspect is capable of manipulating these hallucinations, however, these reports contain no physical proof. The suspect may also be a minor Type Green.
+
+The suspect has shown an anomalous resistance to injury and death, as well as a tendency to grow new bodies upon death. This process is not believed to be voluntary or under the suspect’s control.
+
+**Purpose/Motive:** Though it is believed that the suspect was originally intended to act as a bodyguard or enforcer for Herman Fuller, their role appears to have grown. The suspect also claims they defected from the FBI:UIU as the employees of the Circus “Have been quite cordial to us, especially compared to you.”  
+
+**Modus Operandi:** The suspect is calm and methodical in their actions, and appears to have been responsible for planning the majority of the break-ins on UIU property. The suspect is also capable of easily infiltrating UIU assets and facilities to the memetic nature of its byproduct. Agents should beware of unfamiliar individuals claiming to be a part of their Action Team.
+
+**Behavior:** The suspect is detail-focused to the point of mania. They are often described by captured Circus employees with some variation on the statement; "The most unbelievably anal-retentive person I have ever met," though they are still generally liked. Suspect "Mack" stated in an interview that "That fucker could carry a stick in their ass through a marathon, but they can count the shit outta some cards, lemme tell ya."
+
+----
+**Name:** "Agent McNeal", "Mick"
+
+**Irregularity Cross-reference:** Human(?), Kinetohazard Production, Shape-shifting
+
+**Physical Description:**
+
+||~ Sex ||~ Height ||~ Weight/Build ||~ Race ||~ Hair ||~ Eyes ||
+|| Variable || Variable || Variable || Variable || Variable || Variable || 
+
+||~ Identifying Attributes ||
+|| Smokes cigars often, sometimes cigarettes. Wears a 1920s era FBI:UIU badge at all times. Dresses business casual. ||
+
+**Capabilities:** The suspect has proven themselves capable of forming kinetohazards by performing dances of a kinetoglyphic nature. The suspect has also shown an anomalous resistance to injury and death, as well as a tendency to grow new bodies upon death. This process is not believed to be voluntary or under the suspect’s control.
+
+**Purpose/Motive:** Though it is believed that the suspect was originally intended to act as a bodyguard or enforcer for Herman Fuller, their role appears to have grown. The suspect also claims they defected from the FBI:UIU as the employees of the Circus "Have been much kinder and more accepting than you were, though that is an admittedly low bar."  
+
+**Modus Operandi:** The suspect rarely travels without the Circus, and thus it is safe to assume that if the Circus is located, the suspect will also be present. The suspect appears to be in jointly in charge of defending the Circus from intruders such as unruly customers and the FBI:UIU. They are known to use their kinetohazardous capabilities to evade and attack FBI:UIU personnel. Special caution should be used when attempting to apprehend this suspect, as they have extensive knowledge of FBI:UIU tactics and procedures. 
+
+**Behavior:** The suspect is quieter than their counterparts, apparently preferring to take more subtle approaches to problems that complement the other suspect's capabilities. 
+
+----
+**Name:** "McNeal", "Mack"
+
+**Irregularity Cross-reference:** Human(?), Distortion of Local Physics, Shape-shifting 
+
+**Physical Description:**
+
+||~ Sex ||~ Height ||~ Weight/Build ||~ Race ||~ Hair ||~ Eyes ||
+|| Variable || Variable || Variable || Variable || Variable || Variable ||
+
+||~ Identifying Attributes ||
+|| Often speaks with an unusually deep voice. Dresses casually and/or scantily. ||
+
+**Capabilities:** Suspect is significantly stronger than baseline //homo sapiens sapiens//, which poses additional difficulties in maintaining custody. Suspect shows an extremely high resistance to the standard array of sedatives and tranquilizers. It is also exceptionally resistant to most forms of impact damage. 
+
+Currently, an electroshock discharge with a minimum of 8 kV and a current intensity output of 750 mA administered for a minimum of 4 seconds is the only known way to incapacitate the suspect.
+
+This suspect is capable of distorting local geometry and physics in order to perform near-impossible feats of acrobatics with minimal effort. They have also shown a tendency to grow new bodies upon death. This process is not believed to be voluntary or under the suspect’s control.
+
+**Purpose/Motive:** Though it is believed that the suspect was originally intended to act as a bodyguard or enforcer for Herman Fuller, their role appears to have grown. The suspect also claims they defected from the FBI:UIU as the employees of the Circus "Ain't dicks for the most part."
+
+**Modus Operandi:** The suspect rarely travels without the Circus, and thus it is safe to assume that if the Circus is located, the suspect will also be present. The suspect appears to be in jointly in charge of defending the Circus from intruders such as unruly customers and the FBI:UIU. They are known to use their ontological capabilities to evade and attack FBI:UIU personnel. Special caution should be used when attempting to apprehend this suspect, as they have extensive knowledge of FBI:UIU tactics and procedures. 
+
+**Behavior:** The suspect is reported to be “A loud and enjoyably unruly” individual, with a crass sense of humor and high libido, regardless of the suspect’s gender. 
+
+[[/div]]
+[[/tab]]
+
+[[tab Evidence]]
+= //Electronic copy below as per Federal Records Act//
+[[div class="content-panel standalone" style="padding: 0 1em; font-family: 'Courier Prime', monospace;"]]
+[[=]]
+[[include :topia:cqb:carousel
+| images=page01,page02,page03,page04,page05,page06,page07,page08,page09,page10,page11
+| caption=File selections
+| interval=5
+| wiki=scp-wiki
+| page=5000contestmalycegravesplaidypus
+| width=100%
+| height=700px
+| position=right
+| no-caption=false
+| background=white
+| options=yes
+]]
+[[/=]]
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+[[/div]]
+[[/tab]]
+
+[[tab Bureau Record]]
+= //Electronic copy below as per Federal Records Act//
+[[div class="content-panel standalone" style="padding: 0 1em; font-family: 'Courier Prime', monospace;"]]
+
+||~ Date ||~ Action ||
+|| 02/11/1935 || Bureau Record initiated, Sector Chief & Special Agent Assigned ||
+|| - || Chief ████████, Special Agent McNeal ||
+|| 02/28/1935 || Reports of unusual activity collated and recorded in file. Action team assigned. CI ████████, ████████, and ████████ assigned. APB released ||
+|| 03/02/1935 || Reported sighting in Rochester, MD. Performance missed ||
+|| 03/18/1935 || Advertisements reported in Bakersfield, CA. CI ████████ attended, report appended. ||
+|| 08/11/1935 || Action team activated for performance in Kansas City, MO. Special Agent McNeal in command ||
+|| 08/12/1935 || Infiltration incomplete. SA McNeal MIA. Report appended. ||
+|| 01/22/1936 || SA McNeal sighting confirmed. Action team activated for S&R ||
+|| 01/23/1936 || Action failed. 1 suspect in custody. Report appended. New Operational lead assigned ||
+|| - || Special Agent Thompkins ||
+|| 01/24/1936 || Suspect interrogation unsuccessful. Suspect uncooperative. ||
+|| 02/03/1936 || Suspect interrogation unsuccessful. Suspect uncooperative. ||
+|| 02/18/1936 || Suspect interrogation unsuccessful. Interrogation attempts suspended. ||
+|| 03/09/1936 || Suspect McNeal sighting confirmed. Action team activated for suspect apprehension. ||
+|| 03/10/1936 || Action failed, team lost. Report appended. Further apprehension attempts suspended. ||
+|| 05/13/1936 || Two of the suspects infiltrated the UIU facility underneath Alcatraz Prison and retrieved Suspect 3. Report appended. ||
+|| 06/14/1936 || Suspect McNeal sighting confirmed. Action team activated. Action aborted. ||
+|| 06/15/1936 || Special Agent Thompkins reassigned. New Operational Lead assigned ||
+|| - || Special Agent Hobart ||
+|| 1937-1946 || [Too heavily redacted for significant data recovery] ||
+|| 04/22/1947 || Break-in at FBI:UIU Headquarters, suspect McNeal implicated. ||
+|| 04/28/1947 || Special Agent Ryan reassigned. New Operational Lead assigned. ||
+|| - || Special Agent Gordon ||
+|| 03/09/1948 || Action team activated for performance in Oakland, CA. Action repulsed by McNeal and Circus security. Suspect terminated. ||
+|| 04/11/1948 || Suspect McNeal sighting confirmed. Action team activated. Action aborted. ||
+|| 08/27/1950 || Chicago, IL field office break-in attempt. Suspect McNeal sighting confirmed. Suspect McNeal now in possession of information linking FBI:UIU activities to the SCPF. ||
+|| 01/28/1951 || Action team activated for performance in Athens, GA. Action repulsed by McNeal and Circus security. ||
+|| 03/13/1952 || Action team activated for performance in Oconto, NE. Action repulsed by McNeal and Circus security. ||
+|| 05/24/1952 || Action team activated for performance in Slocomb, AL. Action repulsed by McNeal and Circus security. ||
+|| 06/22/1953 || Action team activated for performance in Danbury, TX. Action repulsed by McNeal and Circus security. ||
+|| 06/25/1953 || Special Agent Gordon resigned. New Operational Lead assigned. ||
+|| - || Special Agent Rodriguez ||
+|| 1953-1961 || [Too heavily redacted for significant data recovery] ||
+|| - || Special Agent Danner ||
+|| 11/01/1962 || Action team activated for performance in Decatur, ██. Raid succesful, Suspect "Mack" has been detained.||
+|| 02/12/1963 || Suspect moved from Alcatraz Detainment Facility to Rikers Detainment Facility. Detainment breach attempt #32. ||
+|| 08/12/1963 || Financial report on McNeal Anomaly detainment. SRA acquisition successful. ||
+|| 10/14/1964 || SRA malfunction, McNeal Anomaly detainment breach attempt #35. ||
+|| 10/15/1964 || McNeal Anomaly interrogation unsuccessful. McNeal Anomaly uncooperative. ||
+|| 10/16/1964 || McNeal Anomaly interrogation unsuccessful. McNeal Anomaly uncooperative. ||
+|| 10/17/1964 || McNeal Anomaly interrogation unsuccessful. Interrogation attempts suspended. ||
+|| 10/17/1964 || McNeal Anomaly interrogation unsuccessful. Interrogation attempts suspended. ||
+|| 10/20/1964 || McNeal Anomaly escaped Rikers detainment facility. ||
+|| 11/04/1964 || Special Agent Danner resigned. New Operational Lead assigned. ||
+|| - || Special Agent Hoyer ||
+|| 1972-1978 || [Files lost or destroyed] ||
+|| 01/28/1979 || Suspect McNeal implicated in foiled Circus raid. ||
+|| 02/01/1979 || Special Agent Hoyer reassigned. New Operational Lead assigned. ||
+|| - || Special Agent Webb ||
+|| 02/02/1979 || Case file review. Despite multiple attempts to apprehend suspect McNeal, suspect is still at large. Numerous raids on Circus have proved fruitless and are now to be considered cost-prohibitive. Confinement of McNeal Anomaly becoming cost-prohibitive. SRA repairs nominal. Case file moved to observe and report. || 
+|| 11/13/1991 || Special Agent Webb reassigned. Case assigned to General Operations Command. ||
+|| 06/12/2008 || File collated and redacted for transmission to SCPF. Bureau file closed. ||
+
+------
+
++++++ Notes
+
+The FBI:UIU records this log was collated from were heavily redacted, as such, this may not be a fully accurate timeline of events as they occurred. 
+[[/div]]
+[[/tab]]
+[[/tabview]]
+[[/collapsible]]
+
+[[collapsible show="+ FBI:UIU Appended Reports" hide="- Hide Case File"]]
+[[=image seal.png]]
+
+[[tabview]]
+[[Tab Report Overview]]
+= //Electronic copy below as per Federal Records Act//
+[[div class="content-panel standalone" style="padding: 0 1em; font-family: 'Courier Prime', monospace;"]]
+Included are the appended reports to the FBI:UIU: Herman Fuller's Circus of the Disquieting case file. 
+* 03/18/1935 CI Report
+* 08/12/1935 Action Report
+* 01/23/1936 Action Report
+* 03/10/1936 Action Report
+[[/div]]
+[[/tab]]
+
+[[tab 03/18 CI Report]]
+= //Electronic copy below as per Federal Records Act//
+[[div class="content-panel standalone" style="padding: 0 1em; font-family: 'Courier Prime', monospace;"]]
+[[=]]
++++ __**Confidential Informant Report**__
+[[/=]]
+**Informant:** ████████ 
+**Date:** 03/18/1935
+**Narrative:**
+----
+The big ass ad I saw pasted to the side of Ace Hardware told me to go to the old fairgrounds just outside of the city. Said they'd just be there for the one night, and I know'd you wanted someone to tell yas about it, so I went.
+
+Super weird show, but nothin' that usually gets you spooks all uppity. What, you gonna start raiding kiddie parties to get out the balloon clowns? 
+
+Anyways, mostly just your run of the mill circus stuff. Cotton candy, animal show, sideshow freak tent, funhouse, weird mirror house, big top show. The cotton candy vendor is right there at the front, and the shit was free with admission, so I got myself some. Tasted pretty fuckin' great, so I ain't even mad yous don't reimburse for that kinda shit.
+
+So, I ate my candy and went to see the animals. Some funny looking things too. Tiger that causes dead shit to float. Dancing bear. These weird mole things in a big glass cage. Dug tunnels that spellt out words n' shit. "TRAPPED" "SLAVES" "HELP". Real fuckin' riot, like we was sposed to believe 'em or somethin.
+
+After that I went to the funhouse, who aint lovin' a funhouse, right? Anyway, played in the ballpit with some kids and a few adults. Big ball pit, lots of ladders n' shit. Could jump off this diving board into the deep end. Never knew'd yous could swim in a ballpit, 'guess I ain't never been in one so big before. fuckin' great shit. 
+
+Only caught the last part of the Big Top show. Some spooky guy named --Malawhatsit-- --Melodrofuckit--, eh, some dude with a lot of letters in his name. He floated in the middle of the room and show'd some poor shit's memories or somethin'. Couldn't hardly understand the guy, he was mumblin' in some weird --languiog--. Shit, he talked funny. Didn't know'd what he said. 
+
+Then I went home. 
+[[/div]]
+[[/tab]]
+
+[[tab 08/12 After Action Report]]
+= //Electronic copy below as per Federal Records Act//
+[[div class="content-panel standalone" style="padding: 0 1em; font-family: 'Courier Prime', monospace;"]]
+[[=]]
++++ __**After Action Report**__
+[[/=]]
+**Team Lead:** Agent C. Draper for Special Agent McNeal
+**Date:** 08/12/1935
+**Narrative:**
+----
+**19:01** - Arrived on scene for debrief and setup. Special Agent McNeal would lead infiltrate in plain clothes, with Agents Draper, Clearwater, Hooper, & Meyer assisting. Extraction team in contact gear: Franks, Dwight, Marshall, & Thomas. No problem getting to the site, Circus is set up in the Oak Park Mall back parking lot. McNeal contacted Mall management, there was no record of the Circus being in town. Denied the Circus was even there. 
+
+**19:52** - Infiltration team heads in twos, Draper & Clearwater/Hooper & Meyer, with McNeal on their own. Initial contact smooth, no issues to report. 
+
+**20:03** - D&C attends Den of Freaks, H&M to head for Hall of Mirrors, McNeal attempting to find "the Backyard", Circus staging area. 
+
+**20:08** - D&C report Den closed for the night, reroutes to Menagerie. H&M enters Hall. McNeal no report.
+
+**20:12** - D&C enter Menagerie, same lineup from Rochester C.I. report. H&M no contact. McNeal reports success in finding "Clown Alley".
+
+**[Report trimmed for brevity]**
+
+**22:33** - D&C exit Funhouse, head to Big Top. H&M still lost in Hall. McNeal reports locating HF trailer. 
+
+**22:40** - Big Top Performance to begin at 22:45, D&C in position. H&M still lost. McNeal enters HF trailer.
+
+**22:46** - Announcement that BT show is delayed. HF absent. H&M make it to Hall exit. McNeal no report.
+
+**22:49** - McNeal calls for extraction, reports being caught by the Clowns. HF is heard over the radio giving orders. Extraction team heads in, D, C, H, & M head for rendezvous behind Big Top. 
+
+**22:51** - Circus security announces Circus is closed. Lots of chaos as patrons and Clowns run about. Contact with McNeal lost. 
+
+**23:01** - Extraction team reports no entry available into Circus. Reports anomaly preventing ingress, memetic hazard indicated. Infiltration team makes contact with Circus security, suspect Manny & Fuller engage. 
+
+**23:02** - Draper reports shots fired, Clearwater & Meyer down. McNeal spotted making a break back towards Fuller's trailer, draws suspects and Clowns, last McNeal transmission is mission cancel order, evacuation command given.
+
+**23:10** - Team evacuates, rendezvous with Extraction Team at Point Charley, McNeal is reported missing. 
+
+**23:20** - McNeal declared MIA, team vacates.
+----
+You weren't there, Thompkins. McNeal sacrificed to save our asses. I don't care what you guys have said about McNeal in the past, but that's a damn fine Agent. We have to retrieve them, they'd have done the same for any of us. 
+
+We can't leave McNeal to the Clowns. 
+[[>]]
+- Special Agent Draper
+[[/>]]
+[[/div]]
+[[/tab]]
+
+[[tab 01/23 After Action Report]]
+= //Electronic copy below as per Federal Records Act//
+[[div class="content-panel standalone" style="padding: 0 1em; font-family: 'Courier Prime', monospace;"]]
+[[=]]
++++ __**After Action Report**__
+[[/=]]
+**Team Lead:** Special Agent Thompkins
+**Date:** 01/23/1936
+**Narrative:**
+----
+On January 23, 1935 Action Team Alpha attempted to infiltrate Herman Fuller's Circus of the Disquieting in an attempt to locate and retrieve Special Agent McNeal. 
+
+While previous attempts to infiltrate were made in plainclothes, this attempt was made in full contact gear with the assistance of local NYPD assets. 
+
+**[Report trimmed for brevity]**
+
+After contact was made, NYPD assets attempted to apprehend what had originally been indicated was Special Agent McNeal. When contact was made, "McNeal" became agitated and uncooperative, breaking free of the asset. Asset then attempted to truncheon McNeal, and the agent fell to the ground and began to transform. McNeal now referred to as "Target A".
+
+Target A anomalously grew in mass, clothing falling off as Target A rapidly outgrew them. 
+
+**[Description of SCP-5000-1 omitted]**
+
+Target A shrugged off all attempts at apprehension, and proceeded to attack Action Team Alpha and NYPD assets. Agent Draper attempted to intervene, and this caused Target A to pause long enough for several NYPD assets to fire their service weapons. Target A fell to the ground and was attempting to rise when suspects The Man With The Upside Down Face[[footnote]] The report appears to refer to this one as "Manny" after this point. - Researcher Davidson [[/footnote]] and Fuller arrived on the scene. 
+
+Suspect Manny began yelling at Fuller to "clean up his goddamned mess before I do", and Fuller pulled a long black cane from beneath his tuxedo jacket. At this point, suspect Manny turned to the Alpha Team and the SWAT assets, and both dropped their firearms. 
+
+Suspect Fuller finished whatever he was doing to Target A, then somehow "pulled" Agent McNeal from Target's back. Suspects Manny and Fuller began arguing again, and suspect Fuller struck McNeal with the cane, causing them to split into two identical copies. He then told suspect Manny to "deal with it", and dashed behind the tents. 
+
+The Alpha Team and the NYPD assets were then forced unconscious, and when they were recovered several hours later, the fairgrounds were empty, with only minimal detritus remaining to indicate the Circus had been there.
+
+[[/div]]
+[[/tab]]
+
+[[tab 03/10 After Action Report]]
+= //Electronic copy below as per Federal Records Act//
+[[div class="content-panel standalone" style="padding: 0 1em; font-family: 'Courier Prime', monospace;"]]
+[[=]]
++++ __**After Action Report**__
+[[/=]]
+**Team Lead:** Special Agent Thompkins
+**Date:** 03/10/1936
+**Narrative:**
+----
+[This report was received by the Foundation heavily redacted. From what data can be retrieved from the document and correlated with other sources, it appears that SCP-5000-1, -2, & -3 are working with the Circus to provide additional security.]
+[[/div]]
+[[/tab]]
+
+[[tab 05/13 After Action Report]]
+= //Electronic copy below as per Federal Records Act//
+[[div class="content-panel standalone" style="padding: 0 1em; font-family: 'Courier Prime', monospace;"]]
+[[=]]
++++ __**After Action Report**__
+[[/=]]
+**Team Lead:** N/A
+**Date:** 05/13/1936
+**Narrative:**
+------
+In the early morning of May 13 of 1936, several unarmed individuals successfully infiltrated Alcatraz in order to retrieve suspect "Spook".
+
+████████████████████████████████████████████████████████████████████████
+██████████████████████████████████████████████████████ █████████████████ ██████████████████████████████████████████████████████████████████ █████ ████████████████████████████████████
+
+████████████████████████ ██████████████████████████████████████████ ███████ ██████████████████████████████████████████ █████████████████████████████
+██████████████████████████████████████████████████████ ████████████████
+████████████████████████████████████████████████████████████████████████
+██████████████████████████████████████████████████████ █████████████████ ████████████ ██████████████████████████████████████████████████████ █████ ██████████████████████████████████████████████████████████
+
+██████████████████████████████████████████ █████████████████████████████
+██████████████████████████████████████████████████████ ████████████████
+██████ ██████████████████████████████████████████████████████████████████
+███████████████████████████████████████████████████████████████████████ 
+
+████████████████████████████████████████████████████████████████████████
+██████the suspect had attempted several times to escape on it's own, an assault on the facility was unprecedented and unexpected. 
+
+The assailants first snuck into the facility on a supply barge with the use of suspect Spook's byproduct, and walked to the lower levels and UIU detainment areas.
+
+████████████████████████████████████████████████ ████████████████
+██████ ██████████████████████████████████████████████████████████████████
+███████████████████████████████████████████████████████████████████████ 
+
+████████████████████████████████████████████████████████████████ █████████
+██████ ██████████████████████████████████████████████████████████████████
+██████████████████████████████████████████████████ █████████████████████ 
+█████████████████████████████████ ██████████████████████████████████████████
+█████████ ███████████████████████████████████████████████████ █████████████████
+██████████████████
+
+
+[[/div]]
+
+[[/tab]]
+[[/tabview]]
+[[/collapsible]]
+
+[[collapsible show="+ Recovered GoI-233 Documents" hide="- Recovered Documents"]]
+[[tabview]]
+[[tab Preface]]
+**Summary:**
+The following documents were recovered from GoI-233 by operations conducted by both the FBI:UIU & MTF Pi-6 ("Clown Wranglers"). Despite multiple attempts to apprehend SCP-5000-2 & -3, they remain at large and unaccounted for. 
+
+Their current appearance and location are unknown.
+
+[[/tab]]
+[[tab Recovered Images]]
+**Attached letter:**
+[[include component:image-block-left name=oggoodcopritual|caption=Last confirmed image of McNeal prior to the Shearing Event. It is currently believed that the image is of in the midst of either a rehearsal or a performance of one of its kinetoglyphic dances.[[footnote]] Since Incident 5000.inc.01, these kinetoglyphs have been observed to be far more potent than FBI:UIU records describe. [[/footnote]] |width=200px]]
+
+[[div class="page"]]
+1935-36. A good run, I started learning my dances in that one. 
+@@ @@
+Fuller had captured me 'cause I stayed behind to let the other Agents escape, unbelievable, I know, but I was a different man. Fuller wasn't, unfortunately. We're still not sure how he managed to do what he did. 
+@@ @@
+At first, he just introduced invasive personality traits to my mind, which was //highly// unpleasant. Manny never likes to go into what he did for us too much, it makes him uncomfortable, bless him. All he'll ever say about it is that he'd got sick of Fuller turning his(Manny's) circus into a hunting ground for his(Fuller's) sick experiments.
+@@ @@
+When Manny went in to confront him, Fuller most likely got all blustery, "Do you know what I am?", y'know, the typical spiel. But I didn't see that. At that moment, my mind was in the most thorough, intense pain, mental and physical, that I'd ever been in. 
+@@ @@
+But suddenly, it went away. I looked around, I was strapped to a table, and I looked over and saw the biggest man I'd ever seen standing next to the POS who'd be experimenting on me. That Man-With-An-Upside-Down-Face drew himself up, looked Fuller square in his beady eyes, and said: "Yes, Herman Fuller, I know what you are." 
+@@ @@
+Then he crouched a bit to get eye level with Fuller, and finished with; "But you know what I am too. Let's not do this today, hm?" It wasn't until a long time after that I realized I'd never seen Manny's mouth open. He was pushing so hard against Fuller's mind that I and half the damn Circus heard him. That was when things really started getting tense between the two, or so I hear. I've only ever seen them in their constant Mexican standoff, heh.
+[[/div]]
+
+**Attached Letter:**
+[[include component:image-block name=badcopwheel.jpg|caption=Earliest known image of SCP-5000-3. This is believed to be an image of it preparing for an acrobatic performance. |width=200px]]
+[[div class="page"]]
+1935-1940. Didn't want to use one showing my face, 'cause that first one was ugly as cow shit, hah. I did make my first big steps in learning to fuck with my center of mass, but none of the high-flying shit I can do now. But lemme tell ya, that wheel was fun once I got the hang of things!
+@@ @@
+I met Mick and Spook, but we weren't so used to things yet, it would be years before we were comfortable with our situation. It's weird knowin' that we was once the same damn person. I guess I got the lucky draw, 'cause I got all the mean shit that was inside of us. Squigly and Poodles took to callin' me "Mack", which is a great fucking name. Now, it's technically from our given name, but hey, it fits me good! 
+@@ @@
+We may not have got along so great in those years, it really got pretty //acrimonial// there in fact! I dunno what that means though, that's just what Spook always says. But in the end, I guess it didn't matter none. Together Mick, Spook and I make a helluva team! We stopped the J Edgars cold when they tried to come and 'nick us. I guess we probably should've gone with them, but we was both done with how they treated us back home. Good to have a family, even one with Fuller in it. That old bastard's crazier than a shack full of monkeys, but he's kept us safe. Long as Manny keeps us safe from him, that is. 
+
+[[/div]]
+
+**Attached Letter:**
+[[include component:image-block-left name=goodcopcigar.jpg|caption=According to FBI:UIU records and captured GoI-233 records, this was SCP-5000-2's appearance during most major FBI:UIU raids on GoI-233 post-Incident-5000-5 in the 1940s.|width=200px]]
+[[div class="page"]]
+1940-1945. That was when the bâtards shot me.
+@@ @@
+ I was one of them, and they fucking //shot// me. So much for the years I spent working for them, helping to keep America safe from the shit goes bump in the night. Being called a faggot and a queer every day made that tough, but I --knew-- thought what I was doing mattered. And I had been having doubts too, if you'd believe it. I looked Thompkins in the eyes as I put my hands behind my head, told him I surrendered, and felt his bullets rip through my chest. I guess those doubts leaked out with the blood, 'cause I ain't had none since.
+@@ @@
+I just responded to Thompkins' cowardice by coughing up blood and hollering Cajun profanities at him. My dear Grandad taught me those, bless him. That old swamper and his wife were and are some of the only folks to accept us, both times, and the only ones who'd raise us. I can't remember all of what I said, but I do recall saying "Vous bâtard jaune, pic kee toi." He just laughed and tried to call me a faggot one last time, but he got cut off before he could finish gloating. Mack threw him into a tent pole and told him "Tuat t'en grosse bueche." "You have a big mouth". That was when we really started getting along better. 
+@@ @@
+Anyway, I didn't stay dead. At all. Fuller says it has something to do with the carnomancy merde he did. The old fuck was all kinds of giddy when I pulled free of my old skin like some sort of weird lizard. He wanted to examine me in his trailer, but Manny wouldn't let him. Said that we should just all be grateful that Mack and I were willing to stick around and help out keeping the Family safe. 
+@@ @@
+Mack, Spook, and I sat down and had a long talk about it, and we decided that we need to do more. This Circus is some of the only family we've got left now, excepting La Rue. And besides, what with the War and all, I'm sure the J Edgars have plenty going on without having to worry about a former Agent gone rogue.
+@@ @@
+[[/div]]
+
+**Attached Letter:**
+[[include component:image-block name=shortcopunknown.jpg|caption=It's unclear if this image depicts -2 or -3, however, due to the significance of its letter's contents, it has been included here. |width=200px]]
+[[div class="page"]]
+1945-1948. Thankfully a very short ride, I fucking hated being short. We did start talkin' seriously with a few of the others about pushing Fuller outta the picture during this one, so it wasn't all bad. 
+@@ @@
+The Clowns think that Fuller's some kind of god or somethin', they all claim that he saved them from terminal boredom. Whatever that means, I don't really care about findin' out. Livin' with 'em these last years has been fun, I ain't gonna lie about that, but they're still a weird bunch of folks. Manny assures us that we don't need to worry about them, but... hell, it don't matter. Squigly and Poodles are definitely fine by me, those two merdes know how to have real fun! They took us dancin' the other night, too. I didn't know those freaky bâtards could make 'emselves look like people, it's freaky as hell, but I guess we are too, eh? Watching 'em shift and change like that, I ain't wonder where Fuller got his trick at changing us any more. 
+@@ @@
+Dancing is fun. We'll probably incorporate it into the tricks we pull. We've started raiding ewey headquarters whenever we get the chance. Gotta stay up on whatever the hell they're planning. 
+@@ @@
+Was a shame to hear about Draper though. That one didn't care about what we were, didn't mind workin' with... well, he didn't mind working with us, and that was good enough for us. 
+[[/div]]
+
+**Attached Letter:**
+[[include component:image-block-left name=McNealCouple|caption=Earliest known image of both -2 and -3. From left to right; -2, -3.|width=200px]]
+[[div class="page"]]
+1948-1964 Mick and I spent some time pretending to be hitched. It was weird at first, but we ain't the same people anymore, and it allowed us to get into places we wouldn't have been able to get into. 
+@@ @@
+In the craziness after the war, we found out about the Essie P. I don't know why those bastards didn't do anything to prevent the fucking war, but they've got a lot more pull than the J Edgars ever did. I guess it's a good thing they don't work for the Feds. If their resources had been more devoted to stopping us, we'd have been locked up a long time ago. Mick and I have agreed we need to get in there and learn what we can.
+@@ @@
+It took us a bit to gain access, but some of their Sites have some real poor security. They've got some mighty dark secrets, no doubt about that. I think that they're all right bastards, but Mick ain't so sure. He says they're protecting the world, just like we're protecting the Family. Says we should be grateful. 
+@@ @@
+Either way, we're going to do what we can to keep them from finding us. 
+[[/div]]
+
+**Attached Letter:**
+[[include component:image-block name=goodcoptree|caption=First known color image of -2 or -3. Depicts -2. |width=150px]]
+[[div class="page"]]
+1971-1980 It's been a while since I've done one of these. Mack and I did a few but lost track of them, then we eventually stopped. With the J. Edgars trying to raid every other performance, we were dying a lot. But with things starting to calm down, I'm trying to get the old tradition going again, and Mack and Spook have agreed. Things are different now. It's harder and harder to keep the Essies from coming at us full bore. So far we've been able to divert their primary attention away from us, but Fuller's insanity is getting a lot worse. We've had to ditch and run more than a few times when whatever madness he wants to throw out there gets loose. We've hurt a lot of innocent folks, and it's just going to get worse. 
+@@ @@
+Cahaya and Fraust are with us. That brought Squigly and Poodles as well, which doesn't count for nothing. Now we just gotta get Icky to get on board. Manny's been itching to get Fuller off our backs for years, same with the rest of the Freaks. Couldn't do anything as long as Fuller had the respect of the Clowns.
+@@ @@
+We don't think he'll have that for much longer. 
+[[/div]]
+
+**Attached Letter:**
+[[include component:image-block-left name=mickandspook|caption=The only known picture of -1 outside of confinement. Pictured with -3. |width=250px]]
+[[div class="page"]]
+1935-1980 Well, now that we have got this thing done, I do not know why we did not do it before now. After all, without Fuller, it is still the Greatest Show in All the Worlds, with the added benefit of Herman Fuller's non-presence. It's also been good not being required to organize a full-scale defense of the Circus every other month. It's been so calm, the other day we went out for the first time in years. However, swing and jazz have more or less lost their former places in popular music, so we simply set up our own club with Fuller's old tent, the one he did his "experiments" in. Mick dug up his old records, and we threw a party, invited anyone who wanted to come get drunk, learn the Charleston, and dance on Fuller's grave. The tent couldn't hold everyone who came, and eventually, we took it down. Mack, Mick and I, as well as Manny, Squigly, and Poodles, (the latter two of which actually took us out dancing for the first time) kept ourselves quite busy teaching everyone how it's done. Though I would never think of saying this to them, I very much enjoyed it. That might have been Mack's hooch, however. The stuff could get a horse drunk with no more than a shot, and I had five. 
+@@ @@
+Back to seriousness, it's almost a shame, really. Herman Fuller created us to protect him. To keep him in his palace atop the hill. How was he to know that he'd get lagniappe?
+@@ @@
+Now, it really is on us to keep the Family from harm, and that doesn't just mean from Fuller. The J Edgars, the Traitors, the Essie P. All of them. We will stand against them, in the shadows or in the light. We don't know why we're this way or how Herman Fuller did it, but in the end, I'm glad we are like we are, because then we wouldn't have found --the-- our Family. And as long as we live, we will endeavor to do one thing.
+@@ @@
+We will keep our Family safe.
+[[/div]]
+[[/tab]]
+[[/tabview]]
+[[/collapsible]]
+[[/div]]
