@@ -12,7 +12,7 @@ Woah there, dude! This page is currently undergoing maintenance and may look eve
 
 --]
 
-[[div style="border:solid 1px #999999; background:#F7A8B8; padding:5px; margin-bottom: 10px;"]]
+[[div class="nagi-announcement" style="border:solid 1px #55CDFC; background:#F7A8B8; padding:5px; margin-bottom: 10px;"]]
 [[=]]
 ++++* 🤠 SITE-17 IS LIVE, BITCHES 🤠
 ------
@@ -28,7 +28,6 @@ I've been active here for a year, and finally posted the main hub for my canon. 
 /* SCROLLBAR */
 ::-webkit-scrollbar-thumb
 {
-  /* background: rgba(247,168,184, .5); */
   background: linear-gradient(to bottom, #55CDFC, #F7A8B8, #FFFFFF, #F7A8B8, #55CDFC);;
   border-radius: 5px;
   border: 1px solid black;
@@ -68,6 +67,10 @@ margin-bottom: 25px;
 /* ACHIEVEMENTS */
 .content-panel standalone {
 text-align: center;
+}
+/* ANNOUNCEMENTS */
+nagi-announcement hr {
+  background: white;
 }
 [[/module]]
 
