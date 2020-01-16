@@ -127,6 +127,20 @@ padding: 19px 0;
 text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
 white-space: pre;
 }
+.warning {
+  border: 2px solid black;
+  padding: 0 10px;
+  text-align: center;
+}
+.warning a.collapsible-block-link {
+  font-weight: bold;
+}
+.warning .collapsible-block {  
+  text-align: center;
+}
+.warning .collapsible-block-content {
+  text-align: left;
+}
 [[/module]]
 
 [[include info:start]]
