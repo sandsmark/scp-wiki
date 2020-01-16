@@ -132,7 +132,6 @@ div#header h1 a span {
 div#header h1 a:before {
     content: "Nagi's PoI File";
     color: #eee;
- 
 }
 div#header h2 span {
     font-size:0px;
@@ -312,6 +311,9 @@ yui-navset.yui-navset-top {
          background-color: #6c6cff !important;
          color: #dfbcff !important;
     }
+}
+html {
+  scroll-behavior: smooth;
 }
 [[/module]]
 
