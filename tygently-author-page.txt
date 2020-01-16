@@ -133,8 +133,8 @@ Hi, I'm TyGently (pronounced "tie-gently"). I've been a part of this community s
 
 [[/tab]]
 [[tab There Are Six Of Them]]
-[[module ListPages order="rating desc" separate="false" limit="900" perPage="50" tag="+5000" prependLine="||~ Page ||~ Rating ||~ Comments ||~ Date Created ||"]]
-|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
+[[module ListPages order="rating desc" separate="false" limit="900" perPage="50" tag="+5000" prependLine="||~ Page ||~ Rating ||~ Comments ||~ Author ||~ Date Created ||"]]
+|| %%title_linked%% || %%rating%% || %%comments%% || [[user %%created_by%%]] || %%created_at%% ||
 [[/module]]
 
 [[/tab]]
