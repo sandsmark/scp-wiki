@@ -4,127 +4,6 @@ parent:canon-hub
 [[module Rate]]
 [[/>]]
 
-[[module CSS]]
-/* BREADCRUMBS, PAGE TITLE */
-#breadcrumbs{
-margin: auto;
-margin-bottom: 5px;
-text-align: center;
-padding-bottom: 4px;
-}
-
-#page-title {
-    position: relative;
-    text-align: center;
-}
-
-/* LOGO */
-div#header {
-background-image: url(http://scp-wiki.wdfiles.com/local--files/site-17-hub/header17);
-}
-
-/* HEADER TEXT */
-div#header h1 a span {
-    font-size: 0px;
-}
-div#header h1 a:before {
-    content: "Site-17 Database";
-    color: #eee;
-    
-}
-div#header h2 span {
-    font-size:0px;
-    padding: 4px;
-}
-div#header h2:after {
-    content: "Living Past Our End";
-    font-weight: bold;
-    color: #f0f0c0;
-    padding: 19px 0;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
-    white-space: pre;
-}
-.excerpt{ border: solid 2px #424248; padding: 1px 15px; margin: 10px 10px 10px 10px; box-shadow: 0 1px 3px rgba(0,0,0,.5); background: transparent;}
-div.terminal{
-    margin-bottom: 10px;
-    border: 1px solid black;
-    border: solid 3px #BBBBBB;
-    border-radius: 16px;
-    background-color: #131;
-/* black shadow at the top of the terminal */
-    background-image:
-        radial-gradient(ellipse 1000% 100% at 50% 90%, transparent, #121);
-    background-position: center;
-    display: block;
-/* shadow around the terminal */
-    box-shadow: inset 0 0 10em 1em rgba(0,0,0,0.5);
-/* prevents scanline from forming a scrollwheel */
-    overflow:hidden;
-}
-div.terminal blockquote {
-    background-color: black;
-    border: double 3px #80FF80
-}
-div.scanline{
-    margin-top: -40%;
-    width: 100%;
-    position: relative;
-    pointer-events: none;
-/* Safari 4.0 - 8.0 */
-    -webkit-animation: scan 12s linear 0s infinite; /* You may need to change this. If the bar goes by too quickly, increase 5s. */
-    animation: scan 12s linear 0s infinite; /* Same as above */
-    background: linear-gradient(to bottom, rgba(56, 112, 82,0), rgba(56, 112, 82,0.1)) !important;
-}
-
-div.text{
-    color: rgba(128,255,128,0.8);
-    padding-left: 2em;
-    padding-top: 40%;
-    font-family: monospace;
-    font-size: 1.5em;
-    }
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes scan{
-    from{ transform: translateY(-10%);}
-    to{  transform: translateY(5000%);} /* You may need to change this depending on the length of your terminal. If the scanline stops halfway, increase the second number.*/
-}
-
-@keyframes scan{
-    from{ transform: translateY(-10%);}
-    to{  transform: translateY(5000%);} /* Same as above.*/
-}
-
-div.text a {
-    color: #90EE90;
-    text-decoration: none;
-    background: transparent;
-}
-div.text a.newpage {
-    color: #90EE90;
-    text-decoration: none;
-    background: transparent;
-}
-div.text a:hover {
-    color: #131;
-    text-decoration: underline;
-    background-color: #80FF80;
-    padding: 1px;
-}
-div.text a:hover::before{
-content: "> ";
-}
-.timeline .collapsible-block {  
-  text-align: center;
-}
-.timeline .collapsible-block-content {
-  text-align: left;
-}
-.timeline a.collapsible-block-link {
-  font-weight: bold;
-}
-[[/module]]
-
 [[div style="border-bottom: solid #424248 4px; border-top: solid #424248 4px; display: inline-block; padding: 10px; margin-top: 50px; margin-bottom: 50px; text-align: justify;"]]
 > The Foundation is a global, clandestine organization with an iron grip on all media, literature, and public knowledge. They operate within a strict hierarchy of Researcher to Site Director to Overseer to ensure that humanity remains in perpetual and blissful ignorance. They will and have contained God, and no one seems to care.
 > 
@@ -400,3 +279,127 @@ You've found companions here.
 [[/table]]
 [[/tab]]
 [[/tabview]]
+
+[[module CSS]]
+/* BREADCRUMBS, PAGE TITLE */
+#breadcrumbs{
+margin: auto;
+margin-bottom: 5px;
+text-align: center;
+padding-bottom: 4px;
+}
+#breadcrumbs a {
+font-weight: bold;
+}
+
+#page-title {
+    position: relative;
+    text-align: center;
+}
+
+/* LOGO */
+div#header {
+background-image: url(http://scp-wiki.wdfiles.com/local--files/site-17-hub/header17);
+}
+
+/* HEADER TEXT */
+div#header h1 a span {
+    font-size: 0px;
+}
+div#header h1 a:before {
+    content: "Site-17 Database";
+    color: #eee;
+    
+}
+div#header h2 span {
+    font-size:0px;
+    padding: 4px;
+}
+div#header h2:after {
+    content: "Living Past Our End";
+    font-weight: bold;
+    color: #f0f0c0;
+    padding: 19px 0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+    white-space: pre;
+}
+.excerpt{ border: solid 2px #424248; padding: 1px 15px; margin: 10px 10px 10px 10px; box-shadow: 0 1px 3px rgba(0,0,0,.5); background: transparent;}
+div.terminal{
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border: solid 3px #BBBBBB;
+    border-radius: 16px;
+    background-color: #131;
+/* black shadow at the top of the terminal */
+    background-image:
+        radial-gradient(ellipse 1000% 100% at 50% 90%, transparent, #121);
+    background-position: center;
+    display: block;
+/* shadow around the terminal */
+    box-shadow: inset 0 0 10em 1em rgba(0,0,0,0.5);
+/* prevents scanline from forming a scrollwheel */
+    overflow:hidden;
+}
+div.terminal blockquote {
+    background-color: black;
+    border: double 3px #80FF80
+}
+div.scanline{
+    margin-top: -40%;
+    width: 100%;
+    position: relative;
+    pointer-events: none;
+/* Safari 4.0 - 8.0 */
+    -webkit-animation: scan 12s linear 0s infinite; /* You may need to change this. If the bar goes by too quickly, increase 5s. */
+    animation: scan 12s linear 0s infinite; /* Same as above */
+    background: linear-gradient(to bottom, rgba(56, 112, 82,0), rgba(56, 112, 82,0.1)) !important;
+}
+
+div.text{
+    color: rgba(128,255,128,0.8);
+    padding-left: 2em;
+    padding-top: 40%;
+    font-family: monospace;
+    font-size: 1.5em;
+    }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes scan{
+    from{ transform: translateY(-10%);}
+    to{  transform: translateY(5000%);} /* You may need to change this depending on the length of your terminal. If the scanline stops halfway, increase the second number.*/
+}
+
+@keyframes scan{
+    from{ transform: translateY(-10%);}
+    to{  transform: translateY(5000%);} /* Same as above.*/
+}
+
+div.text a {
+    color: #90EE90;
+    text-decoration: none;
+    background: transparent;
+}
+div.text a.newpage {
+    color: #90EE90;
+    text-decoration: none;
+    background: transparent;
+}
+div.text a:hover {
+    color: #131;
+    text-decoration: underline;
+    background-color: #80FF80;
+    padding: 1px;
+}
+div.text a:hover::before{
+content: "> ";
+}
+.timeline .collapsible-block {  
+  text-align: center;
+}
+.timeline .collapsible-block-content {
+  text-align: left;
+}
+.timeline a.collapsible-block-link {
+  font-weight: bold;
+}
+[[/module]]
