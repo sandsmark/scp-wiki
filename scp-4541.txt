@@ -1,0 +1,521 @@
+title:SCP-4541
+[[include :scp-wiki:component:black-highlighter-theme-dev]]
+[[include :scp-wiki:component:pride-highlighter |inc-animp= --]]]
+[[module css]]
+.page {
+    display: block;
+    overflow: hidden;
+    font-family: "Monotype Corsiva", "Bradley Hand ITC", sans-serif;
+    font-style: normal;
+
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: linear-gradient(to top ,rgb(202, 219, 228) 0%, rgb(231, 233, 220) 8%);
+    background-origin: padding-box;
+    background-position: 0px 8px;
+    background-repeat: repeat;
+    background-size: 100% 20px;
+
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2)
+    }
+.page p {
+    line-height: 20px;
+    margin: 0;
+}
+[[/module]]
+[[include :scp-wiki:component:info-ayers
+|lang=en
+|page=scp-4541
+|comments=**Image Source**
+https://www.flickr.com/photos/24239982@N00/381962904 - IMG_1034.JPG by Daniel Means
+]]
+[[module CSS]]
+.translation_block{
+display:none;}
+#u-author_block{
+display:none;}
+[[/module]]
+[[>]]
+[[module rate]]
+[[/>]]
+
+[[include component:object-warning-box-source
+|bg-image=https://upload.wikimedia.org/wikipedia/commons/e/ec/SCP_Foundation_%28emblem%29.svg
+|bg-opacity=0.15
+|text-top=BY ORDER OF THE OVERSEER COUNCIL
+|text-bottom=The following file is Level 2/4541 Classified.
+Unauthorized access is forbidden.
+|object-number=**4541**
+]]
+
+[[module css]]
+:root {
+    --five-color: 196,2,51;
+    --four-color: 255,109,0;
+    --three-color: 255,211,0;
+    --two-color: 0,135,189;
+    --one-color: 0,159,107;
+}
+
+.acs-hybrid {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas:
+        "item item clear"
+        "contain disrupt disrupt"
+        "contain risk risk";
+    -ms-grid-rows: 1fr 0.125rem 1fr 0.125rem 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    -ms-grid-columns: 25% 0.125rem 1fr 0.125rem 1fr;
+    grid-template-columns: 25% 1fr 1fr;
+    grid-gap: 0.125rem;
+    width: 100%;
+    height: 7rem;
+    background-color: rgb(var(--black-monochrome, 12, 12, 12));
+    position: relative;
+}
+
+.acs-hybrid > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(0,0,0,0);
+}
+
+@media (max-width: 500px ) {
+    .acs-hybrid {
+        grid-template-areas:
+            "item item clear"
+            "contain contain contain"
+            "disrupt disrupt disrupt"
+            "risk risk risk";
+        grid-template-rows: 2fr 2fr 1fr 1fr;
+        height: 10rem;
+        max-height: 50vh;
+    }
+}
+
+.acs-hybrid > div {
+     background-color: rgb(var(--white-monochrome, 252, 252, 252));
+    padding: 0.25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.acs-hybrid > div strong {
+    margin-right: 0.25rem;
+}
+
+.acs-hybrid > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+
+.acs-hybrid > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+
+.acs-hybrid .acs-hybrid-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 0.25rem;
+}
+
+.acs-hybrid .acs-hybrid-icon img {
+    border-radius: 50%;
+    border: 0.125rem solid rgb(var(--black-monochrome,12,12,12));
+}
+
+.acs-hybrid > .acs-hybrid-contain .acs-hybrid-icon {
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+.acs-hybrid > .acs-hybrid-disrupt .acs-hybrid-icon,
+.acs-hybrid > .acs-hybrid-risk .acs-hybrid-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.acs-hybrid > .acs-hybrid-item {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: item;
+    font-size: 1.5em;
+}
+
+.acs-hybrid > .acs-hybrid-clear {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    grid-area: clear;
+    font-size: 1.25em;
+}
+
+.acs-hybrid > .acs-hybrid-clear.acs-clear-1 {
+    -webkit-box-shadow: inset 0.25rem 0 0 0 rgb(var(--one-color));
+            box-shadow: inset 0.25rem 0 0 0 rgb(var(--one-color));
+    padding-left: 0.5em;
+}
+
+.acs-hybrid > .acs-hybrid-clear.acs-clear-2 {
+    -webkit-box-shadow: inset 0.25rem 0 0 0 rgb(var(--two-color));
+            box-shadow: inset 0.25rem 0 0 0 rgb(var(--two-color));
+    padding-left: 0.5em;
+}
+
+.acs-hybrid > .acs-hybrid-clear.acs-clear-3 {
+    -webkit-box-shadow: inset 0.25rem 0 0 0 rgb(var(--three-color));
+            box-shadow: inset 0.25rem 0 0 0 rgb(var(--three-color));
+    padding-left: 0.5em;
+}
+
+.acs-hybrid > .acs-hybrid-clear.acs-clear-4 {
+    -webkit-box-shadow: inset 0.25rem 0 0 0 rgb(var(--four-color));
+            box-shadow: inset 0.25rem 0 0 0 rgb(var(--four-color));
+    padding-left: 0.5em;
+}
+
+.acs-hybrid > .acs-hybrid-clear.acs-clear-5 {
+    -webkit-box-shadow: inset 0.25rem 0 0 0 rgb(var(--five-color));
+            box-shadow: inset 0.25rem 0 0 0 rgb(var(--five-color));
+    padding-left: 0.5em;
+}
+
+.acs-hybrid > .acs-hybrid-contain {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    grid-area: contain;
+    font-size: 1.25em;
+    padding-left: 0.75em;
+}
+
+.acs-hybrid > .acs-hybrid-contain.acs-neutralized,
+.acs-hybrid > .acs-hybrid-contain.acs-esoteric {
+    -webkit-box-shadow: inset 0.5rem 0 0 0 rgba(var(--gray-monochrome, 66, 66, 72),0.15);
+            box-shadow: inset 0.5rem 0 0 0 rgba(var(--gray-monochrome, 66, 66, 72),0.15);
+}
+
+.acs-hybrid > .acs-hybrid-contain.acs-pending {
+    -webkit-box-shadow: inset 0.5rem 0 0 0 rgb(var(--white-monochrome, 12, 12, 12));
+            box-shadow: inset 0.5rem 0 0 0 rgb(var(--white-monochrome, 12, 12, 12));
+    background-color: rgb(var(--black-monochrome, 12, 12, 12));
+    color: rgb(var(--white-monochrome, 252, 252, 252));
+}
+
+.acs-hybrid > .acs-hybrid-contain.acs-explained {
+    -webkit-box-shadow: inset 0.5rem 0 0 0 rgb(var(--black-monochrome, 12, 12, 12));
+            box-shadow: inset 0.5rem 0 0 0 rgb(var(--black-monochrome, 12, 12, 12));
+}
+
+.acs-hybrid > .acs-hybrid-contain.acs-safe {
+    -webkit-box-shadow: inset 0.5rem 0 0 0 rgb(var(--one-color));
+            box-shadow: inset 0.5rem 0 0 0 rgb(var(--one-color));
+}
+
+.acs-hybrid > .acs-hybrid-contain.acs-euclid {
+    -webkit-box-shadow: inset 0.5rem 0 0 0 rgb(var(--three-color));
+            box-shadow: inset 0.5rem 0 0 0 rgb(var(--three-color));
+}
+
+.acs-hybrid > .acs-hybrid-contain.acs-keter {
+    -webkit-box-shadow: inset 0.5rem 0 0 0 rgb(var(--five-color));
+            box-shadow: inset 0.5rem 0 0 0 rgb(var(--five-color));
+}
+
+.acs-hybrid > .acs-hybrid-contain.acs-euclid img {
+    background-color: rgb(var(--three-color));
+}
+
+.acs-hybrid > .acs-hybrid-disrupt {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 3;
+    grid-area: disrupt;
+}
+
+.acs-hybrid > .acs-hybrid-disrupt.acs-dark,
+.acs-hybrid > .acs-hybrid-disrupt.acs-vlam,
+.acs-hybrid > .acs-hybrid-disrupt.acs-keneq,
+.acs-hybrid > .acs-hybrid-disrupt.acs-ekhi,
+.acs-hybrid > .acs-hybrid-disrupt.acs-amida, {
+    padding-left: 0.5em;
+}
+
+.acs-hybrid > .acs-hybrid-disrupt.acs-dark {
+    -webkit-box-shadow: inset 0.25rem 0 0 0 rgb(var(--one-color));
+            box-shadow: inset 0.25rem 0 0 0 rgb(var(--one-color));
+}
+
+.acs-hybrid > .acs-hybrid-disrupt.acs-dark img {
+    background-color: rgb(var(--one-color));
+}
+
+.acs-hybrid > .acs-hybrid-disrupt.acs-vlam img {
+    background-color: rgb(var(--two-color));
+}
+
+.acs-hybrid > .acs-hybrid-disrupt.acs-vlam {
+    -webkit-box-shadow: inset 0.25rem 0 0 0 rgb(var(--two-color));
+            box-shadow: inset 0.25rem 0 0 0 rgb(var(--two-color));
+}
+
+.acs-hybrid > .acs-hybrid-disrupt.acs-keneq {
+    -webkit-box-shadow: inset 0.25rem 0 0 0 rgb(var(--three-color));
+            box-shadow: inset 0.25rem 0 0 0 rgb(var(--three-color));
+}
+
+.acs-hybrid > .acs-hybrid-disrupt.acs-keneq {
+    -webkit-box-shadow: inset 0.25rem 0 0 0 rgb(var(--three-color));
+            box-shadow: inset 0.25rem 0 0 0 rgb(var(--three-color));
+}
+
+.acs-hybrid > .acs-hybrid-disrupt.acs-ekhi {
+    -webkit-box-shadow: inset 0.25rem 0 0 0 rgb(var(--four-color));
+            box-shadow: inset 0.25rem 0 0 0 rgb(var(--four-color));
+}
+
+.acs-hybrid > .acs-hybrid-disrupt.acs-ekhi {
+    -webkit-box-shadow: inset 0.25rem 0 0 0 rgb(var(--four-color));
+            box-shadow: inset 0.25rem 0 0 0 rgb(var(--four-color));
+}
+
+.acs-hybrid > .acs-hybrid-disrupt.acs-amida {
+    -webkit-box-shadow: inset 0.25rem 0 0 0 rgb(var(--five-color));
+            box-shadow: inset 0.25rem 0 0 0 rgb(var(--five-color));
+}
+
+.acs-hybrid > .acs-hybrid-disrupt.acs-amida {
+    -webkit-box-shadow: inset 0.25rem 0 0 0 rgb(var(--five-color));
+            box-shadow: inset 0.25rem 0 0 0 rgb(var(--five-color));
+}
+
+.acs-text > .acs-text-risk,
+.acs-hybrid > .acs-hybrid-risk {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 3;
+    grid-area: risk;
+}
+
+.acs-hybrid > .acs-hybrid-risk.acs-notice,
+.acs-hybrid > .acs-hybrid-risk.acs-caution,
+.acs-hybrid > .acs-hybrid-risk.acs-warning,
+.acs-hybrid > .acs-hybrid-risk.acs-danger,
+.acs-hybrid > .acs-hybrid-risk.acs-critical {
+    padding-left: 0.5em;
+}
+
+.acs-hybrid > .acs-hybrid-risk.acs-notice {
+    -webkit-box-shadow: inset 0.25rem 0 0 0 rgb(var(--one-color));
+            box-shadow: inset 0.25rem 0 0 0 rgb(var(--one-color));
+}
+
+.acs-hybrid > .acs-hybrid-risk.acs-notice img {
+    background-color: rgb(var(--one-color));
+}
+
+.acs-hybrid > .acs-hybrid-risk.acs-caution {
+    -webkit-box-shadow: inset 0.25rem 0 0 0 rgb(var(--two-color));
+            box-shadow: inset 0.25rem 0 0 0 rgb(var(--two-color));
+}
+
+.acs-hybrid > .acs-hybrid-risk.acs-caution img {
+    background-color: rgb(var(--two-color));
+}
+
+.acs-hybrid > .acs-hybrid-risk.acs-warning {
+    -webkit-box-shadow: inset 0.25rem 0 0 0 rgb(var(--three-color));
+            box-shadow: inset 0.25rem 0 0 0 rgb(var(--three-color));
+}
+
+.acs-hybrid > .acs-hybrid-risk.acs-warning img {
+    background-color: rgb(var(--three-color));
+}
+
+.acs-hybrid > .acs-hybrid-risk.acs-danger {
+    -webkit-box-shadow: inset 0.25rem 0 0 0 rgb(var(--four-color));
+            box-shadow: inset 0.25rem 0 0 0 rgb(var(--four-color));
+}
+
+.acs-hybrid > .acs-hybrid-risk.acs-danger img {
+    background-color: rgb(var(--four-color));
+}
+
+.acs-hybrid > .acs-hybrid-risk.acs-critical {
+    -webkit-box-shadow: inset 0.25rem 0 0 0 rgb(var(--five-color));
+            box-shadow: inset 0.25rem 0 0 0 rgb(var(--five-color));
+}
+
+.acs-hybrid > .acs-hybrid-risk.acs-critical img {
+    background-color: rgb(var(--five-color));
+}
+[[/module]]
+
+[[div_ class="acs-hybrid"]]
+[http://scp-wiki.wikidot.com/anomaly-classification-system-guide Link To Guide]
+[[div_ class="acs-hybrid-item"]]
+[[span]]**Item #:** 4541[[/span]]
+[[/div]]
+[[div_ class="acs-hybrid-clear acs-clear-2"]]
+**Clearance Level 2:** Restricted
+[[/div]]
+[[div_ class="acs-hybrid-contain acs-euclid"]]
+[[div_ class="acs-hybrid-text"]]
+**Containment Class:** Euclid
+[[/div]]
+[[div_ class="acs-hybrid-icon"]]
+[[image http://scp-wiki.wdfiles.com/local--files/component%3Aanomaly-class-bar/euclid-icon.svg]]
+[[/div]]
+[[/div]]
+[[div_ class="acs-hybrid-disrupt acs-dark"]]
+[[div_ class="acs-hybrid-text"]]
+**Disruption Class:** Dark
+[[/div]]
+[[div_ class="acs-hybrid-icon"]]
+[[image http://scp-wiki.wdfiles.com/local--files/component%3Aanomaly-class-bar/dark-icon.svg]]
+[[/div]]
+[[/div]]
+[[div_ class="acs-hybrid-risk acs-notice"]]
+[[div_ class="acs-hybrid-text"]]
+**Risk Class:** Notice
+[[/div]]
+[[div_ class="acs-hybrid-icon"]]
+[[image http://scp-wiki.wdfiles.com/local--files/component%3Aanomaly-class-bar/notice-icon.svg]]
+[[/div]]
+[[/div]]
+[[/div]]
+------
+[[include component:image-block
+    name=SCP-4541_image|
+    caption=SCP-4541-2 instances within SCP-4541-1.
+]]
+
+**Special Containment Procedures:** SCP-4541-1 is to be contained within a standard containment chamber. Retrieved SCP-4541-2 instances are to be contained in individual standard containment lockers that are to be monitored for any signs of resurgent anomalous activity. There is to be no further retrieval of SCP-4541-2 instances.
+
+**Description:** SCP-4541 is a phenomenon affecting a standard arcade claw crane, which is designated as SCP-4541-1. SCP-4541-1 is unable to be damaged or dismantled, and all attempts to forcefully open the flap leading to SCP-4541-1's prize collection chute have failed. Placing an object within SCP-4541-1's chute and elevating the object into the display area results in the object disappearing.
+
+SCP-4541-2 refers to a set of animate and sapient stuffed animals of various designs and brands within SCP-4541-1. SCP-4541-2 instances are capable of autonomous movement, but typically remain motionless in the presence of humans. Additionally, SCP-4541-2 instances are capable of speech,[[footnote]]SCP-4541-2 instances are noted to have child-like voices.[[/footnote]] although their voices are low enough that they cannot be heard from outside of SCP-4541-1. If SCP-4541-1 is activated and its claw is used to place an SCP-4541-2 instance into SCP-4541-1's prize collection chute, the flap leading to the chute will be able to be opened. Within the chute will be the SCP-4541-2 instance removed of its stuffing, and the instance will no longer display anomalous properties.
+
+SCP-4541-2-A is a heavily damaged SCP-4541-2 instance that is a stuffed snake, and is located underneath the other SCP-4541-2 instances under most circumstances. Unlike most SCP-4541-2 instances, SCP-4541-2-A has not been observed vocalizing at any time. When SCP-4541-1 is activated, SCP-4541-2-A typically attempts to reach the top of the pile of SCP-4541-2 instances and maneuver itself to be grabbed by the SCP-4541-1 instance's claw arm. All of SCP-4541-2-A's recorded attempts at this have been thwarted by other SCP-4541-2 instances, which obstruct and restrain SCP-4541-2-A, and pull it back underneath themselves.
+
+**Addendum-4541-01:** After retrieval of two SCP-4541-2 instances, a recording device was placed at the bottom of SCP-4541-1's prize collection chute. The following transcript is comprised of camera footage from SCP-4541-1's containment chamber and video and audio received from the device within SCP-4541-1.
+
+[[collapsible show="▼ Show Observation Log ▼" hide="▲ Hide Observation Log ▲"]]
+[[div style="background: gray; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+
+[[div style="background: white; padding: 1px 15px; border: solid 3px lightgray; margin: 10px; border-radius: 30px 15px;"]]
+[[=]]
+**<Begin Log>**
+[[/=]]
+
+//Recording device is placed into SCP-4541-1's prize collection chute, and is positioned to face upwards. An SCP-4541-2 instance raises itself, looks outside through the display area window, and observes the recording device as it is placed.//
+
+**SCP-4541-2 (1):** "Someone's here."
+
+**SCP-4541-2 (2):** "Someone's always here."
+
+**SCP-4541-2 (1):** "They've brought something this time."
+
+**SCP-4541-2 (2):** "What is it? Is it a present?"
+
+**SCP-4541-2 (1):** "I don't know what it is."
+
+**SCP-4541-2 (2):** //(louder)// "How do you not know what it is?"
+
+**SCP-4541-2 (1):** "Shush. You'll wake up the others."
+
+//An SCP-4541-2 instance, presumably SCP-4541-2 (2), moves to the chute and looks into it.//
+
+**SCP-4541-2 (2):** "They've brought us a listener."
+
+**SCP-4541-2 (1):** "To listen to what?"
+
+**SCP-4541-2 (2):** "To listen to nothing."
+
+**SCP-4541-2 (1):** "Why is that?"
+
+**SCP-4541-2 (2):** "Because that's all that's left in this machine. A story of nothing, a story of no one, a story of the beast below."
+
+**SCP-4541-2 (1):** "If they want it, we should tell it."
+
+**SCP-4541-2 (2):** "It's a story of lost remembrance, and that will continue. Listener, all of us here want to rest, to be free, but we know that someone must stay here. Someone must keep it here. Someone must keep the beast below. Come now, we should sleep already."
+
+**SCP-4541-2 (1):** "I-I think I'll keep watching outside. Maybe... Maybe I will find something important. Maybe I will find someone else who will remember and let us all go."
+
+**SCP-4541-2 (2):** "You know what will happen if we all leave."
+
+//SCP-4541-2 (2) returns to its previous position and rests itself.// 
+
+**SCP-4541-2 (1):** "I don't care anymore."
+
+//SCP-4541-2 (1) continues looking outside.// 
+
+[[=]]
+**<End Log>**
+[[/=]]
+[[/div]]
+[[/div]]
+[[/collapsible]]
+
+**Addendum-4541-02:** Strands of hair were discovered within some SCP-4541-2 instances during analysis after their retrievals from SCP-4541-1. DNA tests revealed that each of these individual instances contained hair with unique DNA signatures, although no DNA signatures match any known individual. Despite this, further analysis identified the parents of each of the hypothetical individuals who match the hairs' DNA signatures. Investigations revealed that the majority of the hypothetical parents appeared to be or used to be in stable marital relationships, although none had any children.
+
+**Addendum-4541-03:** After the majority of SCP-4541-2 instances were retrieved from SCP-4541-1, SCP-4541-1 disappeared from containment on 7/24/2003 and reappeared in its chamber the subsequent day. Within SCP-4541-1 was a new set of SCP-4541-2 instances. These instances notably show identical behavior towards SCP-4541-2-A as the previous instances. Also similarly to the previous instances, hair strands were found within new instances retrieved from SCP-4541-1. Analysis revealed that they are also from unique individuals and do not match any known individuals.
+
+No hair strands between either set of SCP-4541-2 instances share a DNA signature. Retrieval of SCP-4541-2 instances for research purposes has been halted.
+
+**Addendum-4541-04:** [[[http://www.scp-wiki.net/scp-4001 | An investigation]]] produced results that identified the owners of the hair strands recovered from SCP-4541-2 instances, and indicated possible origins for SCP-4541.
+
+All personnel with knowledge of the investigation fail to remember the results and most details of it, indicating possible anti-memetic interference.[[footnote]]All attempts to mitigate this, including usage of mnestics, have failed. Personnel with anti-memetic resistance are also affected by the memory loss.[[/footnote]] Additionally, all physical records of the investigation are currently lost for unknown reasons. The only known remaining sources of information regarding the investigation are digital logs of the investigation that were created and updated throughout it. These logs have been compiled, and may be accessed below.
+
+[[collapsible show="▼ Show Investigation Logs ▼" hide="ERROR"]]
+[[div style="background: red; padding: 1px 15px; border: solid 3px pink; margin: 10px; border-radius: 30px 15px;"]]
+
+[[div style="background: white; padding: 1px 15px; border: solid 3px pink; margin: 10px; border-radius: 30px 15px;"]]
+[[=]]
+    ##red|File is missing or corrupted.##
+[[/=]]
+[[/div]]
+[[/div]]
+[[/collapsible]]
+
+[[footnoteblock]]
+[[div style="background-color: #066; border: outset 1.5px #000; border-radius: 30px; color: #000; background: linear-gradient(to bottom right, rgba(6,108,182,0), rgba(6,108,182,0.35));"]]
+[[=]]
+,,**<<** [[[SCP-4540]]] | **SCP-4541** | [[[SCP-4542]]] **>>**,,
+[[/=]]
+[[/div]]
