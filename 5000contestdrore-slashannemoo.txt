@@ -3,7 +3,7 @@ title:SCP-5000: System Error
 [[module Rate]]
 [[/>]]
 
-[[module ListPages parent="." limit="1" order="created_at" offset="@URL|0"]]
+[[module ListPages  category="fragment" parent="." limit="1" order="created_at" offset="@URL|0"]]
 [[div class="meta-title"]]
 %%title%%
 [[/div]]
