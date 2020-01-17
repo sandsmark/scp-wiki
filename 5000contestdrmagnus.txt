@@ -75,7 +75,7 @@ var randomStrings = [
 window.onload = function() {
 
 var text = randomStrings[Math.floor(Math.random() * randomStrings.length)]
-document.getElementById("demo").innerHTML = "<b>Description:</b> Was it " + text + "? Couldn't be! <a target=\"_parent\" style=\"none;\"  href=\"/5000contestdrmagnus\">Then Who?</a>";
+document.getElementById("demo").innerHTML = "<b>Description:</b> Was it " + text + "? Couldn't be! <a target=\"_parent\" style=\"none;\"  href=\"http://www.scp-wiki.net/5000contestdrmagnus\">Then Who?</a>";
 }
 
 </script>
