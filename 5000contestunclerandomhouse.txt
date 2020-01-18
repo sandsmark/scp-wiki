@@ -1,4 +1,5 @@
 title:SCP-5000: Made in Heaven
+[[include :scp-wiki:component:black-highlighter-theme-dev]]
 [!-- [[module CSS]]
 #page-content .collapsible-block-folded a.collapsible-block-link {
     animation: blink 0.8s ease-in-out infinite alternate;
@@ -88,7 +89,7 @@ title:SCP-5000: Made in Heaven
 }
 
 .article {
-    margin-top: -19rem!important;
+    margin-top: -19rem;
 }
     
 @media (max-width: 1250px) {
@@ -97,6 +98,9 @@ title:SCP-5000: Made in Heaven
      visibility:hidden
     }
 
+    .article {
+    margin-top: none!important;
+    }
     #page-content > div:nth-child(5) {
      margin-top: 0;
     }
