@@ -82,9 +82,14 @@ military.png can be found [https://commons.m.wikimedia.org/wiki/File:NIght_opera
 ]]
 
 [[module css]]
-
-#page-title:after {
+#page-title {
     display: initial;
+    position: relative;
+    text-align: center;
+    border-bottom: none;
+    margin-bottom: 0;
+}
+#page-title {
     position: relative;
     text-align: center;
     border-bottom: none;
