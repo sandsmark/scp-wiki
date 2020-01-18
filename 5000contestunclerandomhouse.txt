@@ -1,15 +1,4 @@
 title:SCP-5000: Made in Heaven
-[[include :scp-wiki:component:black-highlighter-theme-dev]]
-[!-- [[module CSS]]
-#page-content .collapsible-block-folded a.collapsible-block-link {
-    animation: blink 0.8s ease-in-out infinite alternate;
-}
-@keyframes blink {
-    0% { color: transparent; }
-    50%, 100% { color: #b01; }
-}
-[[/module]] --]
-
 [[module CSS]]
 @import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Cinzel');
@@ -97,14 +86,13 @@ title:SCP-5000: Made in Heaven
      display: none !important;
      visibility:hidden
     }
-
+.article {
+    margin-top: 4rem!important;
+}
     #page-content > div:nth-child(5) {
      margin-top: 0;
     }
 
-.article {
-    margin-top: 4rem!important;
-}
 }
 
 [[/module]]
@@ -338,11 +326,11 @@ I wish I could give you more details at the moment. Unfortunately, all I know is
 @@ @@
 I'm on the run, so I can't teach you as much as my predecessor taught me. I'll send you as many logs as I can. Don't focus on how they're getting to you, just what's inside them. Fritz undoubtedly has you on a screw-tight leash, but our duty is still to protect the world. You'll have to kill him to save the Foundation. Then you can get back to saving mankind.
 @@ @@
-Despite his myriad failings, Fritz always had a talent for delegation. You are an Overseer. And that means you have the wisdom to make plans, the cunning and tenacity to see them through, and the paranoia to ensure that they can't be traced back to you. More than that, you still have the drive to do the right thing. 
+Despite his myriad failings, Fritz always had a talent for delegation. You are an Overseer. And that means you have the wisdom to make plans, the cunning and tenacity to see them through, and the paranoia to ensure that they can't be traced back to you. More than that, you still have the drive to do the right thing.
 @@ @@
 But I'm getting ahead of myself. It won't do you any good to run out and get yourself killed. Before you even think of raising a hand against him, you'll need three key things: a lair, escape plans, and safehouses.
 @@ @@
-Your lair is your first line of defense. Stock it with guards and line it with traps so that when Fritz comes you'll have time to get away. In fact, ignore the guards. Traps only betray you if you're stupid enough to fall into them. When Fritz first burned me, he sent his own death squad to my door. I should've been easy prey -- a hermit who'd holed up in an Arctic shack for nearly thirty years at that point. My Factotums did everything short of shit for me. Do you still call them that? They were our body doubles. The people who looked, spoke, sounded like us -- who acted and died for us. I imagine you do. 
+Your lair is your first line of defense. Stock it with guards and line it with traps so that when Fritz comes you'll have time to get away. In fact, ignore the guards. Traps only betray you if you're stupid enough to fall into them. When Fritz first burned me, he sent his own death squad to my door. I should've been easy prey -- a hermit who'd holed up in an Arctic shack for nearly thirty years at that point. My Factotums did everything short of shit for me. Do you still call them that? They were our body doubles. The people who looked, spoke, sounded like us -- who acted and died for us. I imagine you do.
 @@ @@
 My point is, I spent all my time making decisions and then smoking the memory of those decisions away. When Fritz came for me, I barely remembered how to hold a gun or even how to throw a punch. But I often read "The Most Dangerous Game", and it inspired me to rig the entrance to my lair with Malay man-catchers and Burmese tiger pits. These were crude and simple traps -- so simple that every man on that death squad fell for one. It gave me the time I needed to escape.
 @@ @@
@@ -350,7 +338,7 @@ Escape plans are the second piece of the puzzle. Be ready to exfiltrate any time
 @@ @@
 From this point on, safehouses will be your only refuge. Plan for the end of the world. Establish lots of them, stocked with as many supplies as you can get your hands on -- anomalous or not. Have fake safehouses. Steal anomalies that can get you to your safehouses. At any and every Foundation site, have a mole in place you can contact. Have two or three or four if you can. If you can't trust them, blackmail them. As one of the secret rulers of the world, you have every resource that you could possibly dream of. Use them proactively -- but discreetly!
 @@ @@
-I was lucky enough to download the contents of Fritz's email box and [[[http://www.scp-wiki.net/scp-268 |nab a cap that made me practically invisible]]], but unlucky enough to have trusted him with most all of my other failsafes. Learn from my mistakes and make your own luck. Take what you can. If you succeed, you can always put it back. 
+I was lucky enough to download the contents of Fritz's email box and [[[http://www.scp-wiki.net/scp-268 |nab a cap that made me practically invisible]]], but unlucky enough to have trusted him with most all of my other failsafes. Learn from my mistakes and make your own luck. Take what you can. If you succeed, you can always put it back.
 @@ @@
 This task must seem daunting. Your enemy has the entire Foundation behind him, and maybe the entire rest of the anomalous community as well. I wish I could offer you reassurance or moral fortitude but I can't. I can only tell you that if you've become an Overseer then you are indeed the most qualified for the job. That knowledge carried me through my darkest moments. I hope it helps you.
 @@ @@
@@ -478,7 +466,7 @@ ENTIRE CAST FIRED, NOT OUT OF CANNONS
 
 [!-- BEGIN DIV FOR O5_1 NOTES --]
 [[div class="page"]]
-I beg your patience for some of my stylistic flourishes; reading and writing are the only things I have to distract from the crushing weight of this responsibility. So let's move on. By now, you're almost certainly holed up in a safe house somewhere and trying to determine your next move. KILL THE ADMINISTRATOR: a laudable goal, but how do you get from here to there? 
+I beg your patience for some of my stylistic flourishes; reading and writing are the only things I have to distract from the crushing weight of this responsibility. So let's move on. By now, you're almost certainly holed up in a safe house somewhere and trying to determine your next move. KILL THE ADMINISTRATOR: a laudable goal, but how do you get from here to there?
 @@ @@
 Before I was an overseer, I was a silencer: a member of a highly clandestine Foundation task force tasked with eliminating the leadership of the Chaos Insurgency. In the process, Fritz and I developed an eminently effective set of rules for carrying out this task. Rather ironic that we're going to use it against him.
 @@ @@
@@ -486,7 +474,7 @@ The first and most important rule of silencing is to ask the right questions. As
 @@ @@
 With these questions in mind, I started digging through Fritz's email and found the attached message from Doctor Wondertainment. Whatever Fritz's plan is, the secret rulers of the entire anomalous world are conspirators within it. Unfortunately, Fritz chose to send the file as regular mail rather than email. Given its significance, I decided to go to Wonder World to retrieve it.
 @@ @@
-Maybe you think I should try to assassinate Wondertainment. That's understandable. Fritz would've made you play chess with him once a fortnight. So you almost certainly think that this is like a game of chess. You have to checkmate the king, but first remove the pieces around him. Pick off his pieces one-by-one. Play dirty. 
+Maybe you think I should try to assassinate Wondertainment. That's understandable. Fritz would've made you play chess with him once a fortnight. So you almost certainly think that this is like a game of chess. You have to checkmate the king, but first remove the pieces around him. Pick off his pieces one-by-one. Play dirty.
 @@ @@
 Maybe that will work for you. Maybe you have an army of laser death satellites at your disposal. I'm just an old man with an invisibility cap who has to pick his battles. In all my years as an Overseer, all I ever learned about the Doctor was her infinite caprice and malice. Better simply to know what she does and let her squabble with Fritz about it.
 @@ @@
@@ -500,7 +488,7 @@ To do: Unravel the conspiracy.
 [[div class="page"]]
 The second rule of silencing is to keep your eyes and ears open but your mouth closed. There is a portal into Wonder World on the corner of Birch Road and Loring Road at Chelsea Point. It is opened by ripping the heads off of a G.I. Joe and Barbie doll simultaneously, then tossing them into the trash can in the alley at the intersection aforementioned roads. It took me weeks to find, lurking around the city with little more than a jacket and flask to warm me while trying to suss out the Doctor's men from the blue-collars. But it paid off. Despite the chill, it feels good to be out in the field again.
 @@ @@
-The portal at Chelsea Point deposited me approximately 1.5 kilometers east of the Doctor's base of operations: the so-called Wonder Tower. Boston is a miserable city, with miserable roads and miserable people and miserable freezing chills. But its natural misery is infinitely preferable to Wonder World's facade of happiness. That place had no sun, only a tambourine drum hanging in a purple sky. Its buildings were stripped from the nightmares of Dali and Escher, possibly literally. Still, the city thrummed with a distinctly urban energy that not even the Doctor could cover in sugar. It's an energy I'd almost forgotten after being away from civilization so long. 
+The portal at Chelsea Point deposited me approximately 1.5 kilometers east of the Doctor's base of operations: the so-called Wonder Tower. Boston is a miserable city, with miserable roads and miserable people and miserable freezing chills. But its natural misery is infinitely preferable to Wonder World's facade of happiness. That place had no sun, only a tambourine drum hanging in a purple sky. Its buildings were stripped from the nightmares of Dali and Escher, possibly literally. Still, the city thrummed with a distinctly urban energy that not even the Doctor could cover in sugar. It's an energy I'd almost forgotten after being away from civilization so long.
 @@ @@
 Wonder Tower itself is a monument to the Doctor's hubris -- an ugly purple spire that dominates the skyline, with massive steps leading into an equally massive lobby. Having relied on my cap to shield me for most of the day, I crossed the lobby and asked the secretary for keycard access to the Doctor's private office. She handed it off and told me in the same breath that the Doctor was out of the office.
 @@ @@
@@ -616,7 +604,7 @@ The third rule of silencing is to be patient. I should have waited and establish
 
 //[Both struggle as the office burns before Wondertainment overpowers the figure and straddles their chest while repeatedly punching their face, visibly laughing. Figure flips Wondertainment onto the floor and knees Wondertainment's sternum before reaching for the fallen Super Squirter. Figure unscrews the cap and overturns it, dumping the acid solution onto her face. Figure holds Wondertainment as she screams and struggles for a few seconds before going limp. Rolling off, the figure notices the camera before shooting it. Camera feed terminated.]//
 
-[[/div]] 
+[[/div]]
 @@ @@
 @@ @@
 ----
@@ -633,7 +621,7 @@ The third rule of silencing is to be patient. I should have waited and establish
 ]]
 ----
 [[include component:image-block
-name=http://kontainer.djkakt.us/local--files/graves5/pit.png|
+name=pit.png|
 caption=The elevator leading to SCP-5000.
 ]]
 
@@ -817,7 +805,7 @@ Wondertainment got the drop on me and I had to kill her. Worse, she ruined the c
 @@ @@
 The file is a 5000, but not the one either of us knew; it's far worse. And that's without the implications of WHAT things are being rolled into this pit. Take the Seed. Assuming they mean [[[SCP-3179]]], that came from outer space. Hell, I was there when the Cogwork Orthodoxy handed the thing off to us. Fritz and his friends must have been planning this for decades -- or god forbid, centuries. I don't even think 006 provides that kind of longevity.
 @@ @@
-Fifth rule of silencing: prioritize. Sixth rule: cut the head off the snake. The file being labeled SCP-5000 means Fritz is the true leader of the conspiracy. He needs to be eliminated ASAP. Then we can figure out how badly he compromised the Foundation (and GOIs, for whatever value of compromised). 
+Fifth rule of silencing: prioritize. Sixth rule: cut the head off the snake. The file being labeled SCP-5000 means Fritz is the true leader of the conspiracy. He needs to be eliminated ASAP. Then we can figure out how badly he compromised the Foundation (and GOIs, for whatever value of compromised).
 @@ @@
 You need to pass the file to every Overseer and member of Senior Staff you can contact; I'm sure they have enough initiative to raise hell of their own. If the file's accurate, Bumaro is in England. I might be able to wring Fritz's location out of him. Then I'm going to burn Fritz alive. It's a long shot, but it's all we have.
 @@ @@
@@ -847,7 +835,7 @@ It took me two days to reach Dellinton. I've been camped on a hill outside the t
 @@ @@
 And for what? A pockmark of craters on the far side of town. A stubby brass spire was erected near them when I arrived -- I assume it's Bumaro's temporary accommodations. There's too many Cogworks there to get close. They've been tearing down buildings and displacing civilians all week for raw material that they've been moving to the crater. Thought they might be recreating 3179's original containment unit, but I haven't seen any sign of construction.
 @@ @@
-I've also yet to see Bumaro. He's content to hide out in his spire for however long the process takes. But two can play at that game. Remember rule three? I once hid in a tree for two weeks straight to take one shot. I can lie under the stars a few days more. 
+I've also yet to see Bumaro. He's content to hide out in his spire for however long the process takes. But two can play at that game. Remember rule three? I once hid in a tree for two weeks straight to take one shot. I can lie under the stars a few days more.
 @@ @@
 I caught a rabbit in a snare tonight; first one I'd made in forty years. But every motion held the familiarity of an old friend.
 [[/div]]
@@ -887,7 +875,7 @@ Armed Forces deployed against avian mutants
 @@ @@
 [!-- BEGIN DIV FOR O5_1 NOTES --]
 [[div class="page"]]
-Bumaro finally came out after ten days. He exited the spire just after dawn, peeked at one of the craters, and then immediately retreated back inside. Whatever the Cogworks have been doing in the crater, it's nearing its conclusion. There's fewer and fewer of them every day and I've noticed holes in the guard shifts. 
+Bumaro finally came out after ten days. He exited the spire just after dawn, peeked at one of the craters, and then immediately retreated back inside. Whatever the Cogworks have been doing in the crater, it's nearing its conclusion. There's fewer and fewer of them every day and I've noticed holes in the guard shifts.
 @@ @@
 I've assembled a plan to kidnap Bumaro. For whatever reason, the Cogworks still use the latrine -- and do so in packs. I've made a few pipe bombs from the supplies I took off Wondertainment's corpse and investigated the sewer system; it stinks like shit and murders my knees, but offers direct access to a public toilet near the craters. I'll make my way there by nightfall. As the guard shift changes, I'll plant the pipe bombs in the latrine, then use the cover of darkness to get near Bumaro's chambers. If my IEDs work, they'll melt the brass right off Bumaro's men, and I can use what little remains in Wondertainment's squirt gun to incapacitate him and get him into the sewers.
 @@ @@
@@ -921,7 +909,7 @@ To do: Stay frosty.
 
 //[Computer identifies VOICE 2 as PoI-096, ROBERT BUMARO.]//
 
-**FULLER:** Yeah I got him, you limp-dick. 
+**FULLER:** Yeah I got him, you limp-dick.
 
 **BUMARO:** This would've been easier if we just used the cogwor-
 
@@ -951,7 +939,7 @@ To do: Stay frosty.
 
 **FULLER:** You deserve to do the dance, and fuck all else. Now- //Mister// Everett Mann, Overseer One, Oh-Five Uno... what can you tell me about the man you call Francis Fritzwilliams?
 
-**MANN:** Why? 
+**MANN:** Why?
 
 //[Sound of a punch, followed by a grunt from MANN.]//
 
@@ -999,9 +987,9 @@ To do: Stay frosty.
 
 **MANN:** Don't remember you being this gleeful about violence.
 
-**FRITZWILLIAMS:** Mmm. Well, th' field changes us all, don't it? Anyway, gents, I'm here to take Mr. Mann into my custody. 
+**FRITZWILLIAMS:** Mmm. Well, th' field changes us all, don't it? Anyway, gents, I'm here to take Mr. Mann into my custody.
 
-**FULLER:** Like fuck you are. We captured him fair and square. 
+**FULLER:** Like fuck you are. We captured him fair and square.
 
 **FRITZWILLIAMS:** Sure did, and kudos on tha', haha. He's a wily one. But winning comes with certain, ah, privileges. Such as the snipers in the rafters aiming at both yer heads.
 
@@ -1069,13 +1057,13 @@ WHERE IS THE FOUNDATION?
 
 [!-- BEGIN DIV FOR O5_1 NOTES --]
 [[div class="page"]]
-Focus. Writing helps. I like writing. I like putting my thoughts on a page. My wrist hurts, focus on that. 
+Focus. Writing helps. I like writing. I like putting my thoughts on a page. My wrist hurts, focus on that.
 @@ @@
 Stop. Think. Process.
 @@ @@
 Summarize.
 @@ @@
-I woke up in a bed with a migraine. My back hurt and my shoulders hurt and I ached all over. But I was also bandaged up. I was in a square room, with featureless sheetrock walls and carpet flooring. There was a dresser on the right with water and Tylenol. 
+I woke up in a bed with a migraine. My back hurt and my shoulders hurt and I ached all over. But I was also bandaged up. I was in a square room, with featureless sheetrock walls and carpet flooring. There was a dresser on the right with water and Tylenol.
 @@ @@
 Found a connected bathroom. I looked like hell. But there was toothpaste and a brush and a shower. I took an hour long shower. Hot water good. Soap great. Soft towel excellent. Found jeans and a plaid shirt in the dresser. Wrangler-brand. Fit perfectly.
 @@ @@
@@ -1090,7 +1078,7 @@ Fritz left a note for me in the living room, and an updated copy of the file.
 [[div style="font-family: 'Patrick Hand SC', cursive;"]]
 Hey Rhett,
 @@ @@
-Sorry I couldn't stay. You were pretty conked out when I patched you up and I had some errands to run. The Critic's in Toronto shutting that whole scene down. He likes to hang out near Graffiti Alley. Your plane leaves tonight. My [[[http://www.scp-wiki.net/scp-262 |old jacket's]]] by the door; told her you'd be taking her out. She's got a wallet with your tickets and some other stuff you might need. I know your run-in with Herman and Bobby might have you a bit rattled, but shake it off. You've got a world to save and Foundation to avenge. 
+Sorry I couldn't stay. You were pretty conked out when I patched you up and I had some errands to run. The Critic's in Toronto shutting that whole scene down. He likes to hang out near Graffiti Alley. Your plane leaves tonight. My [[[http://www.scp-wiki.net/scp-262 |old jacket's]]] by the door; told her you'd be taking her out. She's got a wallet with your tickets and some other stuff you might need. I know your run-in with Herman and Bobby might have you a bit rattled, but shake it off. You've got a world to save and Foundation to avenge.
 @@ @@
 Love,
 Fritz
@@ -1110,7 +1098,7 @@ P.S. Great work with those notes. Glad you still remember my lessons.
 ]]
 ----
 [[include component:image-block
-name=http://kontainer.djkakt.us/local--files/graves5/pit.png|
+name=pit.png|
 caption=The elevator leading to SCP-5000.
 ]]
 
@@ -1466,7 +1454,7 @@ Secure, Contain, Protect[[/div]]
 
 //Gunshot, followed by screaming and sounds of flesh striking flesh.//
 
-**INDIVIDUAL:**  Shut up for a moment. How do you turn this fucking thing on? 
+**INDIVIDUAL:**  Shut up for a moment. How do you turn this fucking thing on?
 
 **GLASS:** Right button, fucking Christ! Hold the right button down for two seconds. Owwwowoohhaaaa... fucking hell!
 
@@ -1476,7 +1464,7 @@ Secure, Contain, Protect[[/div]]
 
 //Individual is leaning over camera, possibly looking at its screen. After a moment, they step back. The individual is wearing a large military greatcoat (identified as SCP-262) and earmuffs. but their face is otherwise concealed. Next to them is Simon Glass, tied to a chair. There is a gunshot wound in his right knee. The room is seen to be Simon Glass's office, which is in extreme disarray.//
 
-**INDIVIDUAL:** Could've saved us a lot of trouble if you'd just told me that in the first place. 
+**INDIVIDUAL:** Could've saved us a lot of trouble if you'd just told me that in the first place.
 
 //Several arms emerge from the individual's coat and tie the gag around Glass's mouth. The individual looks back at the camera.//
 
@@ -1514,9 +1502,9 @@ Secure, Contain, Protect[[/div]]
 
 //Mann shoots Glass once in the head.//
 
-**MANN:** I'm thinking pork chops for dinner. 
+**MANN:** I'm thinking pork chops for dinner.
 
-[[/div]] 
+[[/div]]
 
 @@ @@
 
@@ -1528,133 +1516,133 @@ Secure, Contain, Protect[[/div]]
 [[# Part8]]
 
 > The lights were on, but nobody was home at Overwatch Command. The base's layout was elegant in its simplicity: a fourteen-spoked wheel, with the access elevator in its center. All but two of the spokes contained an Overseer's private office; the odd ones out contained the Administrator's office and what used to be Mann's.
-> 
+>
 > Mann didn't bother checking his former colleagues' offices. There was nothing there for him. Nor did he bother looking in his room. He made a beeline for the Administrator's office and waited expectantly for the door.
-> 
+>
 > The door opened a moment later to reveal a suburban American home. In front of Mann lay a combination kitchen and dining room, with a small living room off to the right. Fritz was mashing potatoes in a bowl while the smell of pork chops wafted from the stove to his right.
-> 
+>
 > "Grab a couple beers from th' fridge," he said without turning around.
-> 
+>
 > Mann stepped into the room and looked around briefly, then set his gun on the countertop. He opened the fridge on Fritz's left and inspected the bottles on the bottom shelf.
-> 
+>
 > "Erdinger?" he said with a frustrated click.
-> 
-> "Finest stout on th' planet," Fritz said. 
-> 
+>
+> "Finest stout on th' planet," Fritz said.
+>
 > "You don't even have Guinness?"
-> 
+>
 > "No dice. That stuff'll kill ya, y'know."
-> 
+>
 > "I rely on it," Mann said. He retrieved two bottles, sat one on the table, and used the table's edge to open the other. A few minutes later, Fritz set down two plates laden with pork chops and mashed potatoes.
-> 
+>
 > Mann squirted hot sauce across the meal, then stuffed half a chop into his mouth and filled what little space with mashed potato.
-> 
-> "Don' eat like a savage," Fritz said. 
-> 
+>
+> "Don' eat like a savage," Fritz said.
+>
 > Mann waved the knife in his face and swallowed. "I will eat... however... I damn well please. You ain't my daddy."
-> 
+>
 > "I sure as hell became it." Fritz sliced a chunk out of his own pork chops, slowly chewed it, then swallowed. "Binna while since we ate together, eh?"
 >  
-> "What'd you do with this place?" Mann said. 
-> 
+> "What'd you do with this place?" Mann said.
+>
 > "Executive desks just ain't my style and the cold weren't doin' me no good. Figured I'd turn th' place into a little home away from home. Can't open th' windows, but th' weather's sure beautiful. I kept invitin' ya down here but y'were too scared t'leave that shack of yours."
-> 
+>
 > "Speaking of my shack, what's this really about, old man?" Mann said through another mouthful of food. He took a long swig from his beer.
-> 
+>
 > "Yer no spring chicken yourself," Fritz said.
-> 
+>
 > "Shut up and answer my questions."
-> 
+>
 > "Tell you what." Fritz sipped from his beer. "Why don't we play a game?"
-> 
+>
 > "Enough of your -- " Mann paused, clenched his fist, then sighed. "Fine."
-> 
+>
 > "Th' game is simplicity itself. We each get to ask th' other three questions, and we have to answer truthfully with a short, medium, or long answer. You can only pick each type once."
-> 
+>
 > Mann drained his bottle and stared at it.
-> 
+>
 > "I'll even sweeten th' pot," Fritz said. From a cupboard above the fridge, he retrieved two Glencairn glasses and a sealed bottle full of caramel liquid. Mann's eyebrows nearly shot off his forehead.
-> 
+>
 > "Is that Pappy Van Winkle's?"
-> 
+>
 > "Was savin' it fer you." Fritz put the tumblers down and poured. "Ice?"
-> 
+>
 > Mann drained his glass in a single swig and shuddered.
-> 
+>
 > "Y'gotta //sip it//, son."
-> 
+>
 > "Just pour me another and let's play."
-> 
+>
 > "You start," Fritz said as he refilled Mann's glass.
-> 
+>
 > "Short. How do I kill you permanently and end your conspiracy?" Mann took a sip of the bourbon and let it sit in his mouth.
-> 
+>
 > "No clue," Fritz said. "Tried everythin' th' Foundation had an' then some. Nothin' took. Same goes for the rest'a the gang." He sipped from his glass. "Short. You been havin' fun?"
-> 
+>
 > "Why the hell would I --" Mann paused and took another sip. He exhaled through his nose. "Yes."
-> 
+>
 > "Ain't nothin' wrong with that. Man's gotta enjoy his work."
-> 
+>
 > "This my work now? That's not my question." Mann drank deeper. "Medium. Why did you save me from your co-conspirators?"
-> 
+>
 > "Co-conspirators, eh? Truth be told, Herman's always been one a' Holly's pals more'n mine. An' Bobby's just fun t' mess around with."
-> 
+>
 > Fritz drank from his glass and held up a finger. The two of them sat there for the minute, savoring the taste of the alcohol. Then he swallowed and winced slightly. "I saved you because they're a couple'a spoilsports. Lemme tell you somethin', Rhett. Yer like this Pappy Van Winkle -- fulla potential, but ya gotta age and gain experience for the best flavor. Yer what, eighty now? Ninety? But you hotwired those site nukes like you were thirty. An' those Burmese tiger-pits -- made me proud to burstin'."
-> 
+>
 > He took another sip of his bourbon. "Or th' way you got into Site-67. You shoulda read that email Clef sent me. Boy was hoppin' mad about you pullin' one over on him. Not t'mention th' way you've been raising hell with the others. Yer a one-man army -- you just needed a little bit more time. Sure, th' others weren't too keen on ya at first, God love 'em, but they started to see yer value once ya started blowin' up my own spaceships. Yer the shot in th' arm this game needed, son-- and we're th' kinda people you need to be your best self."
-> 
+>
 > Mann gritted his teeth, but simply drank and refilled his tumbler.
-> 
+>
 > "Medium," Fritz said. "You been havin' fun?"
-> 
-> "A little," Mann said. "It's been nice to travel and apply myself in the field again. Working with my hands. Planning and executing infiltration ops. Being responsible for everything. Having a gun in my hands." 
-> 
+>
+> "A little," Mann said. "It's been nice to travel and apply myself in the field again. Working with my hands. Planning and executing infiltration ops. Being responsible for everything. Having a gun in my hands."
+>
 > He drank and held up a finger. "Not so nice? Why I've been out there. Why I'm all by myself. What you did to -- the //Foundation//. Some goddamn father figure you turned out to be."
-> 
+>
 > Fritz winced. "Rhett --"
-> 
+>
 > "Shut up," Mann said. "I'm not done. The pork chops, the Pappy, the bandaging? That don't make up fer any the bullshit you done."
-> 
+>
 > He emptied his glass again and took Fritz's. "I've shot a hundred and thirteen Chaos Insurgents, run through twenty body doubles, had thirteen world leaders assassinated, nine more replaced, ordered nineteen false flag operations, and racked up sixty thousand civilian casualties at th' last estimate. You taught me how to do that. Then just -- " he emptied the glass -- "you just tossed it all out the damn window inta that damn pit a' yours. Tried t' toss me out."
-> 
-> Mann slammed the glass onto the table. It shattered. "Long. Why th' hell did you do it all?" 
-> 
+>
+> Mann slammed the glass onto the table. It shattered. "Long. Why th' hell did you do it all?"
+>
 > Fritz looked Mann dead in the eyes. "One billion, three hundred million."
-> 
+>
 > "What?" Mann said.
-> 
+>
 > "Hell of a number, innit? Bobby says that's my all-time body count. All the people killed by or because a' me. He's always bin' pretty good with numbers. But I don't worry about that number cause they're just people."
-> 
+>
 > Fritz got up and rummaged through the cupboards under the sink. "You an' me, we're //more// n' that. I knew it the day I first laid eyes on ya, you ain't one in a million, yer one in a million years. But you got that damnable streak a' empathy in ya. When I get you to forget it... boy, you do amazin' things."
-> 
+>
 > "Like kill thousands?" Mann said.
-> 
+>
 > "You said it yerself." Fritz emerged with a dustpan and began sweeping up the glass around the table. "Shut down th' Insurgency, put your yoke to th' UN's neck, even strongarmed al Fine into helpin' you erase North Korea from memory. Thought fer sure I was hosed that time, but you fixed it. You were winnin' the damn game for me all by yer self. Then y' went off and developed a damn conscience. Hid in th' Arctic and let yerself go. Squanderin' yer gifts like that? Cut me to th' quick."
-> 
+>
 > He went and tossed the debris into the trash. "I've been there before, a couple times. I figured you'd get outta yer slump soon, but before I knew it thirty years had gone by. Game was endin' soon and I couldn't let you go t' waste. But you got that inertia.  Once you get goin' you don't stop, but you needed that push t' get ya rolling."
-> 
+>
 > "A push?" Mann stood up and poked Fritz in the chest. "You bastard. You absolute goddamn bastard. I wish you were my real father so I could disown you."
-> 
+>
 > Fritz shrugged. "If that's what it takes."
-> 
-> Mann punched him in the face. 
-> 
+>
+> Mann punched him in the face.
+>
 > Fritz rubbed his jaw and stared at him. "That's some right hook. Technique's flawless. Even when yer sluggin' yer old man yer impeccable. You gotta get over these damn feelings, Rhett. They're only gonna slow you down."
-> 
+>
 > Mann clenched his teeth so hard his jaw hurt. The bourbon was starting to kick in. "What th' hell else you want from me? Want me to pretend I'm fine with this? That I like this -- this game you're playing, using th' world as your goddamn Monopoly board?"
-> 
+>
 > "Who said anythin' about pretendin'?" Fritz said. "Just be yerself -- th' spy, th' assassin, th' one-man army. Throw a monkey wrench into things. I've had more fun followin' your globetrottin' adventures than I've had in the last dozen games combined."
-> 
+>
 > Fritz poured the last of the bourbon into the remaining glass and offered it to Mann. "Long. Ready to have some fun?"
-> 
+>
 > Mann drew and fired before either of them realized he'd grabbed it. Fritz collapsed backwards and fell against the wall with a sharp crack. The glass of bourbon shattered on the ground.
-> 
+>
 > "There's your fucking monkey wrench, old man," Mann said.
-> 
+>
 > A moment passed. There was another crack as Fritz's neck realigned itself and a faint tinking sound as a bone-covered bullet popped out of his forehead. Fritz stood up, cracked his neck, and clapped Mann on the back. "Lookit that, yer already gettin' into the swing of things."
-> 
-> Mann sat down heavily. 
-> 
+>
+> Mann sat down heavily.
+>
 > "Don't take it so harsh, son," Fritz said. "You did a helluva job and you'll fit right in. Who knows, y'might even learn t'enjoy yourself. C'mon, we gotta get you set up and up to speed on th' rules."
 @@ @@
 -----
@@ -1731,16 +1719,17 @@ Fritz
 @@ @@
 @@ @@
 
-[[div class="page"]]
+[[div class="page" style="font-family: 'Reenie Beanie', cursive;"]]
+@@ @@
 I'm immortal now. Not long-lived, not slow to age. Un-aging. One of Them. I don't know how long they've been playing this game or when they started or why. But I'm part of it now.
 @@ @@
 I've been assigned the role "Nobody". My "win condition" is to kill the rest of them. They're mocking me.
 @@ @@
-The joke's on them. I left this life because I thought the world needed a better Mann. I wanted my life to be more than violence and death. But they've taught me better. 
+The joke's on them. I left this life because I thought the world needed a better Mann. I wanted my life to be more than violence and death. But they've taught me better.
 @@ @@
 There is no greater good -- nor catch, nor collateral, nor consequence. But the joy of adventure, the thrill of the hunt, the fire inside me? Those are real.
 @@ @@
-I've assembled all my notes and files for you, the new Overseers, as a warning. You know now what I accomplished as an old man. Ask yourself what I could do as an immortal, then do us both a favor and walk away. 
+I've assembled all my notes and files for you, the new Overseers, as a warning. You know now what I accomplished as an old man. Ask yourself what I could do as an immortal, then do us both a favor and walk away.
 @@ @@
 And Fritz, if you're reading this? I've got a grudge against you, and all the time in the world to hold it. I've even got a to-do list.
 @@ @@
@@ -1749,6 +1738,4 @@ And Fritz, if you're reading this? I've got a grudge against you, and all the ti
 **__KILL FRITZ.__**
 @@ @@
 @@ @@
-[[/div]]
-[[/div]]
 [[/div]]
