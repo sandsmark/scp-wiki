@@ -1,216 +1,192 @@
-title:Young and under 30
+title:Underread and Underrated
 [[>]]
 [[module Rate]]
 [[/>]]
 
-[[=]]
-> ++ Currently under review: [[[SCP-3784]]]
-> 
-> **Updated as of: 19 June 2018**
-[[/=]]
-@@@@
-@@@@
-**Do you read the SCP wiki?** Want the authors to improve their work so the stuff you read is better?
++ UNDERREAD AND UNDERRATED
 
-**Do you write for the SCP wiki?** Want to get more feedback (and votes) on your work?
+[PLACEHOLDER]
 
-You can help make this happen. 
+[[footnoteblock]]
+------
 
-The "Young and under 30" project is aiming to get more attention to articles less than a year old, and with a score of less than +30. These are often the articles getting the least attention on site, and we want to change that!
+[[module CSS]]
+.wiki-content-table td:nth-last-child(1){
+    width: 3ch;
+}
+.wiki-content-table td:nth-last-child(2){
+    width: 12ch;
+}
+.content-panel .content-type-title > p {
+    margin: 0;
+}
+.content-panel .content-type-title {
+    /*font-size: 120%;*/
+    font-weight: bold;
+    padding: 2px 10px;
+    background-color: #666;
+    color: #fff;
+    border-radius: 9px 9px 0 0;
+    box-shadow: inset 0 1px rgba(255,255,255,0.3),
+                inset 0 10px rgba(255,255,255,0.2),
+                inset 0 10px 20px rgba(255,255,255,0.25);
+}
+.content-panel .content-type-description {
+    padding: 0;
+    text-align: justify;
+}
 
-Every so often we'll flag up an article to try to raise discussion on it, and get it more votes (one way or another).  All we're going to do is read the article and share our thoughts on it, and encourage others to join the discussion and share their thoughts too.
-
-This is not a one-person show.  This is not a staff or staff-sanctioned project, so everyone should feel free to contribute - you don't need permission, and the only rules that apply are the existing forum/crit rules.  Here's what you can do:
-
-* look out for "Young and under 30" posts - read, vote and comment.
-
-* plug the current Yau30 article on chat and reddit from time to time to stir interest.
-
-* feel free to pick up articles from the list on your own and make the first Yau30 post on an article, especially if no-one else has kicked off a new Yau30 article in the past couple of days. Just remember to (a) announce it as a Yau30 review, so people know to look at it and comment; and (b) edit this page (including the box at the top of the page) to keep track of what's under review and the voting results.
-
-I strongly encourage all readers to participate, whether you're an experienced author, newly published, lurking voter or only just joined the site. If you're only going to read / comment on one article each day, make it a Yau30 one - let's get people voting on and talking about under-reviewed articles. This is you making the site experience better for everyone.
-
-A list of eligible articles is below, and there are links to articles we've reviewed in the next tab.
-
-[[tabview]]
-[[tab List of potential pages]]
-
-**Update procedures:** When choosing a new article for review, in addition to updating the link and date at the top of the page, create an entry for it in the "Articles reviewed" tab and update the numbers for the last reviewed article. For example "{{Total Votes: 43}}" becomes "{{Total Votes: 45 (+2)}}".
-
-[[module ListPages tags="scp, -joke, -explained, -archived, -001, -decommissioned" rating="<=29" created_at="last 12 months" separate="no" order="comments" perPage="50" prependLine="||~ Title||~ Rating ||~ Comments ||~ Created ||"]] 
-|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || 
+.content-panel .wiki-content-table {
+    margin: 2px 0 0 0;
+    width: 100%;
+    word-break: break-word;
+}
+.content-panel .wiki-content-table th:nth-of-type(2),
+.content-panel .wiki-content-table th:nth-of-type(3),
+.content-panel .wiki-content-table td:nth-of-type(2),
+.content-panel .wiki-content-table td:nth-of-type(3) {
+    text-align: center;
+}
+.content-panel .wiki-content-table th,
+.content-panel .wiki-content-table td {
+    border: none;
+}
+.content-panel .wiki-content-table tr {
+    border-bottom: solid 1px rgba(0,0,0,0.1);
+}
+.content-panel .wiki-content-table th {
+    border: 2px solid white;
+    border-width: 0 2px;
+    background-color: #666;
+    color: white;
+}
+.desktop-only { display: block; }
+.mobile-only { display: none; }
+@media (max-width: 979px) {
+    .desktop-only { display: none; }
+    .mobile-only { display: block; }
+}
 [[/module]]
-[[/tab]]
-[[tab Articles reviewed]]
 
-1) [[[SCP-3257]]]
+[!-- SCP Block --]
 
-* Date reviewed: 4 August 2017
-* Total Votes: 24 (+18)
-* Total Comments: 1
+[[div class="feature-block desktop-only"]]
 
-Update (14 August 2017): 28 votes (+20), 6 comments
-Update (29 July 2018): 48 votes (+42), 18 comments
+[[div class="content-panel standalone left-column"]]
+[[div class="content-type-title"]]
+Young and Under 30
+[[/div]]
+[[div class="content-type-description"]]
+[[module ListPages separate="no" tags="scp, -archived, -in_rewrite" created_at="last 180 day" order="random" rating="<=30" urlAttrPrefix="yau30"]]
+* %%title_linked%% [+%%rating%%]
+[[/module]]
+[[/div]]
+[[div class="panel-footer"]]
+  [!-- Placeholder --]
+[[/div]]
+[[/div]]
 
-2) [[[SCP-3499]]]
+[!-- Tale/GoI format/Art Block --]
 
-* Date reviewed: 4 August 2017
-* Total Votes: 15 (+11)
-* Total Comments: 2 (one of which wasn't really a comment)
+[[div class="content-panel standalone right-column"]]
+[[div class="content-type-title"]]
+Old and Under 30
+[[/div]]
+[[div class="content-type-description"]]
 
-Update (23 August 2017): 30 votes (+4), 9 comments
-Update (29 July 2018): 52 votes (+8), 11 comments
+[[module ListPages separate="no" tags="scp, -archived, -in_rewrite" created_at="older than 180 days" order="random" rating="<=30" urlAttrPrefix="oau30"]]
+* %%title_linked%% [+%%rating%%]
+[[/module]]
+[[/div]]
+[[div class="panel-footer"]]
+  [!-- Placeholder --]
+[[/div]]
+[[/div]]
 
-3) SCP-3578 (was self-deleted)
+~~~~
 
-4) [[[SCP-3388]]] 
+[!-- Other Block --]
 
-* Date reviewed: 5 August 2017
-* Total Votes: 25 (+19)
-* Total Comments: 9 
 
-Update (29 August 2017): 40 votes (+8), 12 comments
+[[div class="content-panel standalone left-column"]]
+[[div class="content-type-title"]]
+Tales under 30
+[[/div]]
+[[div class="content-type-description"]]
+[[module ListPages separate="no" tags="tale, -archived, -in_rewrite" created_at="older than 180 days" order="random" rating="<=30" urlAttrPrefix="tu30"]]
+* %%title_linked%% [+%%rating%%]
+[[/module]]
+[[/div]]
+[[div class="panel-footer"]]
+  [!-- Placeholder --]
+[[/div]]
+[[/div]]
 
-5) [[[SCP-2587]]]
 
-* Date reviewed: 4 August 2017
-* Total Votes: 33 (+24)
-* Total Comments: 4, including author post.
+[[div class="content-panel standalone right-column"]]
+[[div class="content-type-title"]]
+GOI Formats under 30
+[[/div]]
+[[div class="content-type-description"]]
+[[module ListPages separate="no" tags="goi-format, -archived, -in_rewrite" created_at="older than 180 days" order="random" rating="<=30" urlAttrPrefix="tu30"]]
+* %%title_linked%% [+%%rating%%]
+[[/module]]
+[[/div]]
+[[div class="panel-footer"]]
+  [!-- Placeholder --]
+[[/div]]
+[[/div]]
+[[/div]]
 
-Update (6 September 2017): 42 votes (+22), 7 comments
 
-6) [[[SCP-3535]]]
+[!-- All pages, mobile only --]
 
-* Date reviewed: 5 August 2017
-* Total Votes: 26 (+22)
-* Total Comments: 3
+[[div class="feature-block mobile-only"]]
+[[div class="content-panel standalone"]]
+[[div class="content-type-title"]]
+SCPs under 30.
+[[/div]]
+[[div class="content-type-description"]]
+[[module ListPages separate="no" tags="scp, -archived, -in_rewrite" order="random" rating="<=30" urlAttrPrefix="yau30"]]
+* %%title_linked%% [+%%rating%%]
+[[/module]]
+[[/div]]
+[[div class="panel-footer"]]
+  [!-- Placeholder --]
+[[/div]]
+[[/div]]
+[[/div]]
 
-Update (22 September 2017): 43 votes (+31), 7 comments
 
-7) --[http://www.scp-wiki.net/scp-2684 SCP-2684]--
 
-* Date reviewed: 25 August 2017
-* Total Votes: 31 (+3)
-* Total Comments: 5
+[!-- All pages, mobile only --]
 
---Update (22 September 2017): 45 votes (-5), 8 comments--
-Since deleted and replaced.
+[[div class="feature-block mobile-only"]]
+[[div class="content-panel standalone"]]
+[[div class="content-type-title"]]
+Other articles under 30.
+[[/div]]
+[[div class="content-type-description"]]
+[[module ListPages separate="no" tags="tale, goi-format, -archived, -in_rewrite" created_at="older than 180 days" order="random" rating="<=30" urlAttrPrefix="tu30"]]
+* %%title_linked%% [+%%rating%%]
+[[/module]]
+[[/div]]
+[[div class="panel-footer"]]
+  [!-- Placeholder --]
+[[/div]]
+[[/div]]
+[[/div]]
 
-8) [[[SCP-3058]]]
+------
+------
+------
+[PLACEHOLDER]
+------
+------
+++* Frequent Collaborators:
 
-* Date reviewed: 29 August 2017
-* Total Votes: 32 (+6)
-* Total Comments: 6
-
-Update (22 September 2017): 35 votes (+7), 8 comments
-
-9) [[[SCP-2831]]]
-
-* Date reviewed: 6 September 2017
-* Total Votes: 35 (+15)
-* Total Comments: 7
-
-Update (29 July 2018): 54 votes (+20), 9 comments
-
-10) [[[SCP-2374]]]
-
-* Date reviewed: 22 September 2017
-* Total Votes: 40 (+27)
-* Total Comments: 7
-
-11) [[[SCP-3217]]]
-
-* Date reviewed: 3 October 2017
-* Total Votes: 30 (+8)
-* Total Comments: 7
-
-12) [[[SCP-3046]]]
-
-* Date reviewed: 18 December 2017
-* Total Votes: 42 (+0)
-* Total Comments: 9
-
-13) [[[SCP-2834]]]
-
-* Date reviewed: 1 January 2018
-* Total Votes: 120 (+0)
-* Total Comments: 46
-
-14) [[[SCP-3483]]]
-
-* Date reviewed: 24 January 2018
-* Total Votes: 10 (+0)
-* Total Comments: 10
-
-15) [[[SCP-520]]]
-
-* Date reviewed: 22 Feburary 2018
-* Total Votes: 24 (+3)
-* Total Comments: 13
-
-16) [[[SCP-3669]]]
-
-* Date reviewed: 29 March 2018
-* Total Votes: 53 (+3)
-* Total Comments: 9
-
-17) [[[SCP-1563]]]
-
-* Date reviewed: 12 April 2018
-* Total Votes: 9 (+1)
-* Total Comments: 2
-
-18) [[[SCP-3402]]]
-
-* Date reviewed: 5 May 2018
-* Total Votes: 48 (+0)
-* Total Comments: 5
-
-19) --[http://www.scp-wiki.net/scp-3537 SCP-3537]--
-
-* Date reviewed: 17 June 2018
-* Total Votes: ?
-* Total Comments: ?
-
-Since deleted and replaced.
-
-20) [[[SCP-3372]]]
-
-* Date reviewed: 13 July 2018
-* Total Votes: 32
-* Total Comments: 5
-
-21) [[[SCP-3876]]]
-
-* Date reviewed: 25 October 2018
-* Total Votes: 28 (+1)
-* Total Comments: 4 (+0)
-
-22) [[[SCP-4169]]]
-
-* Date reviewed: 30 January 2018
-* Total Votes: 45 (+2)
-* Total Comments: 3
-
-23) [[[SCP-3742]]]
-* Date reviewed: 12 March 2018
-* Total Votes: 17 (+0)
-* Total Comments: 2 (+0)
-
-24) [[[SCP-011-PT]]]
-* Date reviewed: 20 April 2018
-* Total Votes: 11 (+0)
-* Total Comments: 1 (+0)
-
-25) [[[SCP-4380]]]
-* Date reviewed: 20 May 2018
-* Total Votes: 17 (+3)
-* Total Comments: 3 (+1)
-
-26) [[[SCP-3784]]]
-* Date reviewed: 19 June 2018
-* Total Votes: 13
-* Total Comments: 2
-
-[[/tab]]
-[[/tabview]]
+* [[*user UraniumEmpire]]
+* [[*user aismallard]]
+* [[*user Edna Granbo]]
+* [[*user Croquembouche]]
+* [[*user TSATPWTCOTTTADC]]
