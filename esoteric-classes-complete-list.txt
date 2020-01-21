@@ -353,10 +353,10 @@ html {
 .list .collapsible-block-content {
   text-align: left;
 }
-@media (max-width: 1250px) {
-  #toc {
+#toc {
     padding-right: 25px;
 }
+@media (min-width: 1250px) {
   .resources {
     margin: 50px 0 !important;
 }
