@@ -1,0 +1,13 @@
+title:cyvstvilance
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[module css]]
+@import url(http://www.scp-wiki.net/theme:magnus-web-format/code/1)
+[[/module]]
+[[include component:black-highlighter-theme-dev]]
+
+[[module ListPages category="fragment" parent="." order="created_at" limit="1" offset="@URL|0"]]
+%%content%%
+[[/module]]
