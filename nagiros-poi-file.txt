@@ -24,6 +24,7 @@ I've been active here for a year, and finally posted the main hub for my canon. 
 [[/div]]
 
 [[include component:scp-trans-pride |trans-pride-logo= --] |trans-pride-footer= --]]]
+[[include :nagiros:component:page-theme]]
 
 [[module CSS]]
 /* SCROLLBAR */
@@ -80,23 +81,12 @@ text-align: center;
 */
  
 /* BREADCRUMBS, PAGE TITLE, H1 */
-#breadcrumbs{
-margin: auto;
-margin-bottom: 5px;
-text-align: center;
-padding-bottom: 4px;
-}
-#breadcrumbs a {
-font-weight: bold;
-}
  
 h1, #page-title {
     color: #000051;
 }
  
 #page-title {
-    position: relative;
-    text-align: center;
     border-bottom: solid 1px #000051;
 }
  
@@ -314,9 +304,6 @@ yui-navset.yui-navset-top {
          background-color: #6c6cff !important;
          color: #dfbcff !important;
     }
-}
-html {
-  scroll-behavior: smooth;
 }
 [[/module]]
 
