@@ -1,21 +1,7 @@
 title:SCP-4051
+[[include :nagiros:component:page-theme]]
+
 [[module CSS]]
-/* BREADCRUMBS, PAGE TITLE, H1 */
-#breadcrumbs{
-  margin: auto;
-  margin-bottom: 5px;
-  text-align: center;
-  padding-bottom: 4px;
-}
-#breadcrumbs a {
-font-weight: bold;
-}
-
-#page-title {
-  position: relative;
-  text-align: center;
-}
-
 /* LOGO */
 div#header {
   background-image: url(http://scp-wiki.wdfiles.com/local--files/site-17-hub/header17);
@@ -44,9 +30,6 @@ div#header h2:after {
 }
 .test {border: solid 2px #000000; width: 88%; padding: 1px 15px; margin: 10px auto; box-shadow: 0 1px 3px rgba(0,0,0,.5)}
 .therapy {background: #eff4ff; padding: 1px 15px; border: 2px solid #2F4F4F; width: 88%; margin: 10px auto; box-shadow: 0 1px 3px rgba(0,0,0,1)}
-html {
-  scroll-behavior: smooth;
-}
 [[/module]]
 
 ------
