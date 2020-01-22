@@ -28,21 +28,20 @@ body{
     --barColour: #201230;
     color: rgb(12, 12, 12);
 }
-.translation_block{ display: none; }
-.u-faq{ display: none; }
+.translation_block, .u-faq{ display: none; }
 
 /* DIV BLOCKS */
+.quote-block{
+    border: 3px double #999;
+    background-color: #f4f4f4;
+    padding: 0 1em;
+}
 blockquote{
     border: 1px solid lightgrey;
     background-color: white;
     padding: 0 1em;
 }
-.quote-block{
-    border: 3px double #999;
-    background-color: #f4f4f4;
-    padding: .25em 1em;
-    margin-bottom: 1em;
-}
+blockquote p{ text-indent: 3em; }
 
 /* FORMATTING */
 hr{
@@ -55,8 +54,8 @@ hr{
     word-break: unset;
 }
 .break{
-    width: 35px;
-    margin: 12px 0;
+    width: 40px;
+    margin: 1em 0;
 }
 .heather{
     color: #FF1493;
@@ -67,14 +66,6 @@ hr{
     color: rgb(12, 12, 12);
     font-weight: bold;
     word-break: unset;
-}
-
-/* GRADIANT */
-.bg-gradiant{
-    background-color: #F8F8F8;
-    background: linear-gradient(to bottom, #F8F8F8, black);
-    padding-left: 2%;
-    padding-right: 2%;
 }
 [[/module]]
 
@@ -93,7 +84,7 @@ hr{
 
 "Am I imagining this too?"
 
-> The darkness consumed both [[[scp-3309|Adamo Smalls]]] and [[[scp-3090|Heather Mason]]] in one fell swoop. It commanded its presence for a fraction of a moment. It transformed a canvas of potential into an inkblot, soaking up the fabric. The birds, the cliffs, and even the curious peak had fallen from sight, consumed by the aether.
+> [[span style="margin: -3em;"]]The darkness consumed both [[[scp-3309|Adamo Smalls]]] and [[[scp-3090|Heather Mason]]] in one fell swoop. It commanded its presence for a fraction of a moment. It transformed a canvas of potential into an inkblot, soaking up the fabric. The birds, the cliffs, and even the curious peak had fallen from sight, consumed by the aether.[[/span]]
 
 [[span class="heather"]]"I don't think so."[[/span]]
 
@@ -151,9 +142,7 @@ hr{
 
 [[=image http://scp-wiki.wdfiles.com/local--files/component%3Apataphysics-theme/pata-logo.png class="break"]]
 
-"..."
-
-> His feet found a place on solid ground. Each direction showed the same dull dark. Where was he? Of course, now the ground beneath him was firm, so that might help him become acquainted with his surroundings. And he //did// feel a draft coming from somewhere to the left of him. That was enough to give him a chance to–
+> [[span style="margin: -3em;"]]His feet found a place on solid ground. Each direction showed the same dull dark. Where was he? Of course, now the ground beneath him was firm, so that might help him become acquainted with his surroundings. And he //did// feel a draft coming from somewhere to the left of him. That was enough to give him a chance to–[[/span]]
 
 "Where am I?"
 
