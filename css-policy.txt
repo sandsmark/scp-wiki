@@ -1,47 +1,111 @@
 title:CSS Policy
-parent:guide-hub
-+ __CSS Policy__
+The following policy concerns CSS themes, primarily those that are self-contained and may be imported onto other pages, but much of this policy also applies to embedded CSS on individual pages.
 
-[[size 125%]] **__Use__** [[/size]]
+[[module CSS]]
+.policy { border: 1px solid #ddd; padding: 1em; margin-bottom: 1em; }
+[[/module]]
 
-Just like anything else on the wiki, a CSS theme must be licensed under the same Creative Commons site license, if it is hosted on the wiki.  This means that anyone is free to use, copy, and alter that copy.  
+[[div class="policy"]]
++ Creation
 
-What they may not do is alter it for you.   It would be treated like any other article or work on the wiki (minus being subject to deletion at this time.  A deletion policy is not currently defined for CSS themes, and is not being proposed at this time.)
+A CSS theme should be drafted on a sandbox page.
 
-[[size 125%]] **__What you can do:__** [[/size]]
-* Change any of the style components of the wiki which do not violate the can't section.
+Once you feel the theme is ready, you may move it to the Wiki proper. Once you have recieved permission from a member of the Tech Team ([http://05command.wikidot.com/tech-hub-chat #site11 in IRC]), who will make sure that your theme is compliant with this policy, you may create a new page on the wiki in the {{theme:}} category with the {{theme}} tag.
 
-[[size 125%]] **__What you cannot do:__** [[/size]]
-* Remove, hide, alter, or "break" any navigation elements of the wiki.
-* Break the 'structure' of the wiki.  Don't move the top-bar to 50% to the right, don't change the sidebar to be in wingdings unless that's your specific format screw going on.
-* Use the '!important' tag beyond what is required to override issues with the main CSS theme, or provide compatibility with your sub-themes or other CSS projects.  Basically, don't make your theme be the only applicable theme.
-* Remove the rating module
-* Remove back/forward links from articles where they've been inserted.
+Some older themes have been posted to the {{component:}} category. Please use the {{theme:}} category.
 
-[[size 125%]] **__Translation Module__** [[/size]]
+The theme must be compliant with the following restrictions, listed below.
+[[/div]]
 
-The translation module currently can't be altered via CSS. In the event that the Translation module clashes significantly, you are free to remove it via css, and maintain a list of translations in the comments section, or relvant hub for that article.  Please try and keep it current to within a month at any given time. 
+[[div class="policy"]]
++ Restrictions
 
-[[size 125%]] **__Accessibility__**[[/size]]
+In order to be allowed on the site, there are a few restrictions that your theme must abide by.
 
-This can be evaluated on a per-theme basis.
+**Licensing**
 
-This section is difficult to explain, but the following should be considered when composing a theme: 
+The theme must be released under the same Creative Commons license as the rest of the wiki.
 
-* Is this theme readable for color-blind people? (e.g. it employs bad color combinations like red + green which make it difficult for colorblind users to navigate the site)
+**What you can and can't change**
+
+You may change any of the style components of the wiki other than stuff that's specified in this policy.
+
+You can't remove, hide, alter, or "break" any navigation elements of the wiki or the rating module.
+
+You can't break the structure or look of the wiki beyond realistic expectations. The site should still be recognisable and readable.
+
+You may style the translation module ({{.scpnet-interwiki-frame}}) using CSS3 Filters or similar, but you can't remove it outright (even if it conflicts horribly and you already tried using filters).
+
+**Basic functionality**
+
+Your CSS theme must work well in the major browsers (Chromium, Firefox, Safari) and be at least functional in minor ones (IE 11 etc).
+
+Your CSS theme must work well on mobile as well as desktop.
+
+**Setting up the theme's page**
+
+The theme's page is where the source code of your CSS theme is kept.
+
+You must instruct users to add your theme to their page using Wikidot's [[include]] method (and set up your theme page accordingly. [http://scp-sandbox-3.wikidot.com/css-include-template Here's a template].
+
+You may not instruct users to add your theme to their page via CSS's {{@import}} method.[[footnote]]If you see a page that uses a theme via the @import method, and an [[include]] method is available for that theme, you may edit the page to update it to the new method.[[/footnote]]
+
+You must provide usage instructions on your theme's page. Note that this only refers to telling users what to type to get the theme to show up on their article. If your theme has any special features that an author should know how to use, these must be documented as well. You do not need to include examples of your theme's formatting -- although you totally can, and definitely should!
+
+Your theme's page must have your theme applied to it -- i.e. your page must act as a preview of your theme. If you used the template linked above, this will be done for you.
+
+The Tech Team member who's approving your theme will expect to see not only your CSS source code, but a draft of your theme's page.
+
+**Bloat code**
+
+A CSS theme cannot contain huge amounts of code that doesn't do anything. A CSS theme's source code should contain little, if anything, other than what this theme changes from sigma9 (the wiki's base CSS theme). Vast sections copy-pasted from sigma9 are strictly not allowed.
+
+Someone familiar CSS should be able to look at your theme and know exactly what your intent is. At the very least, you should be able to justify why you have chosen to include any given line.
+
+Additionally, you should try to avoid using the {{!important}} marker unless you need to override something in sigma9 or to provide compatibility with other CSS.
+
+**Accessibility**
+
+Accessibility concerns should be considered when composing a CSS theme. For example:
+
+* Is this theme readable for colorblind people? (e.g. it employs bad color combinations like red + green which make it difficult for colorblind users to navigate the site)
 * Does this theme hamper the ability to use screen readers? (e.g. it adds 'invisible' content which gets read by screen readers but not sighted users)
 * Are the fonts it uses legible for all users? (e.g. the body font size is too small, the font itself is difficult to read)
 and so on. Best practices and recommendations to address all of these potential issues are easily available with a cursory Google search.
 
-[[size 125%]] **__Hotlinking__**[[/size]]
+**Hotlinking**
 
-Hotlinking is incredibly bad practice and also against site rules. There isn't a good reason to do it, given that you can host assets such as fonts on the page itself, and it also introduces problems when browsers prevent CSS themes from accessing off-site resources. As an example of how this breaks, was a version of a new rating module hosted on the sandbox. Users reported them breaking because their browser would block the page from loading it entirely.
+Hotlinking is the practice of linking to files on another site, and is both incredibly bad practice and against site rules. It is incredibly bad manners to force someone's site to load images for your theme, and also introduces a degree of unreliability to your theme -- what if that site disappears?
 
-To this end, CSS themes should not use off-site assets, instead of uploading them to the site as they would for images. I would also like to reinforce that CSS should not be linked from sandbox pages, or anywhere that isn't the main site outside of workbenches.  Please use a component: page on the wiki for css themes.
+To prevent hotlinking, all images, fonts and miscellaneous files used in a CSS theme must be files uploaded to the theme's page rather than linked from elsewhere on the internet.
 
-[[size 125%]] **__Remediating non-compliant themes__**[[/size]]
+However, you are permitted to use certain sites that explicitly encourage hotlinking for serving files to users. Notable examples include [https://fonts.google.com/ Google Fonts] and [https://picsum.photos/ Lorem Picsum]. If in doubt, play it safe and [http://05command.wikidot.com/tech-hub-chat ask the Tech Team].
 
-If your theme doesn't function in the major browsers (Internet Explorer 11, Firefox, Chrome, Opera, Safari) in a way that completely breaks navigation, function, or accessibility, it needs to be **removed** (or at bare minimum, removed from include blocks) from the site, then fixed, in that order.
+Additionally, CSS should not be linked from sandbox pages or anywhere that isn't the main site (outside of workbenches). Please use a {{theme:}} page on the wiki for CSS themes. This isn't a hard rule, just try to avoid it. If you're going to use a CSS theme, might as well make it official!
 
-Our first priority is compatibility, function, and accessibility.  
->
+**Being used**
+
+CSS themes that aren't being used aren't allowed on the site. To get your theme approved you'll have to assert //at least one// of the following:
+
+* That the theme is going to be used on an article that already exists on the wiki
+* That the theme is going to be posted at about the same time as an article that will use it
+* That the theme is going to be posted shortly before (up to a week) an article that will use it
+
+For the purposes of this section, author pages do not count. Articles on other wikis do not count unless that wiki is an international SCP Branch.
+
+Whoever is approving your theme may ask to see either the article or draft that the theme will be used on.
+[[/div]]
+
+[[div class="policy"]]
++ Deletion policy for CSS themes
+
+CSS themes are treated like normal pages in that other users are not permitted to make major changes to your work. Small mistakes are considered equivalent to spelling and grammar errors and may be corrected by any well-meaning user.
+
+CSS themes are affected by the regular deletion policy, and are eligible for deletion once they fall under -10 votes. Additionally, a theme that is not being used on any pages is eligible for deletion regardless of how many votes it has.
+[[/div]]
+
+[[div class="policy"]]
++ Remediating non-compliant themes
+
+If your theme doesn't function in the major browsers (Chromium, Firefox, Safari, mobile, IE11) in a way that completely breaks navigation, function, or accessibility, it needs to be **removed** (or at bare minimum, removed from include blocks) from the site, then fixed, in that order. Our first priority is compatibility, function, and accessibility.
+[[/div]]
