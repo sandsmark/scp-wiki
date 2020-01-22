@@ -1,0 +1,545 @@
+title:A Scene From A Meme(-ory)
+[[include component:preview text=the EVERYMAN is a person who flounders about in his own blissful ignorance, until life smacks him in the face with a TASTE OF ADVENTURE!]]
+
+[[include :scp-wiki:component:scp-trans-pride |trans-pride-footer= --]]]
+
+[[include :scp-wiki:component:info-ayers
+|lang=en
+|page=a-scene-from-a-meme
+|authorPage=http://www.scp-wiki.net/floppyphoenix
+|comments=**A Scene From A Meme(-ory)** 
+**Author:** [[*user Lt Flops]] 
+----
+[[include :scpdsandbox:floppyphoenix-info]]
+[[/div]]
+
+[[include :scp-wiki:component:pataphysics-theme]]
+
+[[module CSS]]
+/* INFO BOX */
+sup{
+    vertical-align: top;
+    position: relative;
+    top: -0.5em;
+}
+body{
+    --cutColour: #ededed;
+    --barColour: #201230;
+}
+.translation_block, .u-faq{ display: none; }
+
+/* TERMINAL */
+.terminal{
+    border: 3px solid #bbb;
+    border-radius: .976em;
+    background-color: #20142e;
+    text-align: center;
+/* black shadow at the top of the terminal */
+    background-image: radial-gradient(ellipse 1000% 100% at 50% 90%, transparent, #191122);
+/* shadow around the terminal */
+    box-shadow: inset 0 0 10em 1em rgba(0,0,0,0.5);
+/* prevents scanline from forming a scrollwheel */
+    overflow: hidden;
+}
+.terminal hr{ 
+    background: 1px solid rgba(242, 242, 242, 0.9); 
+    height: 2px; 
+}
+.scanline{
+    background: linear-gradient(to bottom, rgba(56, 56, 82,0), rgba(56, 56, 112,0.1));
+    margin-top: -40%;
+    height: 3.659em;
+    position: relative;
+    pointer-events: none;
+    animation: scan 5s linear 0s infinite;
+/* Safari 4.0 - 8.0 */
+    -moz-animation: scan 5s linear 0s infinite;
+    -webkit-animation: scan 5s linear 0s infinite;
+}
+.terminal-text{
+    padding: 34% 3em 0;
+    color: rgba(242, 242, 242, 0.9);
+    font-family: Lucida Console, Monaco, monospace;
+    font-size: 110%;
+}
+/* SAFARI 4.0 - 8.0 */
+@-webkit-keyframes scan{
+    from{ transform: translateY(-10%); }
+    to{  transform: translateY(2000%); }
+}
+
+/* FAKE LINKS */
+.fake-link{
+    color: rgba(242, 242, 242, 0.9);
+    cursor: pointer;
+}
+.fake-link :hover{
+    left: 25%;
+    color: #1F083A;
+    width: 50%;
+    position: relative;
+    background-color: #a880ff;
+    background: linear-gradient(to right, rgba(0,0,0,0),#a880ff,#a880ff,rgba(0,0,0,0));
+}
+.fake-link :hover::before{ content: "▶ "; }
+.escape{ color: rgba(242, 242, 242, 0.9); cursor: pointer; }
+.escape :hover span{ display: none; }
+.escape :hover::before{ content:"▶ THERE IS NO ESCAPE" }
+
+/* DIV BLOCKS */
+.pata{
+    border: 3px solid #BBB;
+    border-radius: .976em;
+    background-color: #20142e;
+    text-align: center;
+/* black shadow at the top of the terminal */
+    background-image: radial-gradient(ellipse 1000% 100% at 50% 90%, transparent, #191122);
+/* shadow around the terminal */
+    box-shadow: inset 0 0 10em 1em rgba(0,0,0,0.5);
+/* text */
+    padding: 0 3em;
+    color: rgba(242, 242, 242, 0.9);
+    font-family: Lucida Console, Monaco, monospace;
+    font-size: 110%;
+}
+.quote-block{
+    border: 3px double #999;
+    background-color: #f4f4f4;
+    padding: 0 1em;
+}
+blockquote{
+    border: 1px solid lightgrey;
+    background-color: white;
+    padding: 0 1em;
+}
+blockquote p{ text-indent: 3em; }
+
+/* FORMATTING */
+h3{ animation: vibrate linear 100ms 100000; }
+@keyframes vibrate{
+    0%{ transform: translate3d(0, 0, 0); }
+    10%{ transform: translate3d(2px, 0, 0); }
+    20%{ transform: translate3d(2px, 2px, 0); }
+    30%{ transform: translate3d(0, 0, 0); }
+    40%{ transform: translate3d(-2px, 0, 0); }
+    50%{ transform: translate3d(-2px, -2px, 0); }
+}
+hr{
+     margin: 1em 0;
+     padding: 0;
+     border: 0;
+}
+.justify{
+    text-align: justify;
+    word-break: unset;
+}
+.break{
+    width: 40px;
+    margin: 1em 0;
+}
+.heather{
+    color: #FF1493;
+    font-weight: bold;
+    word-break: unset;
+}
+[[/module]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[div class="quote-block"]]
+,,This tale features the following characters:,,
+* ,,**Researcher Adamo Smalls** -- **[[[scp-3309|SCP-3309]]]**
+* **Heather Mason** AKA **Ms. Mad About Video Games** -- **[[[scp-3090|SCP-3090]]]** and **[[[danger-in-the-manger|You Ain't No Family]]]**,,
+[[/div]]
+----
+[[div class="justify"]]
+> [[span style="margin: -3em;"]]After [[[buggy-hardware|a massive insect in Messianic skin]]] swallowed him whole, Adamo Smalls could safely say he survived his own funeral. Which he did. But the real tragedy had only just dawned on him: He was having a fashion emergency. Luckily, Heather Mason came to save the day.[[/span]]
+> 
+> It took her one passing remark to win him over.
+
+[[span class="heather"]]"Let's get that //godawful// cicada stench off you. Do you have a spare incinerator?"[[/span]]
+
+> At the local second-hand store, Heather picked out his outfit. She traded his soot-stained, gut-garnished overcoat with attire that no memeticist worth their salt could leave home without: 
+> 
+> A sweater vest and a pair of khakis.
+> 
+> Adamo gaped at his own reflection in Heather's face-screen.
+
+"I look like someone's deadbeat uncle."
+
+> The pair crossed 'wardrobe malfunction' off the mental bucket list and slumped into a nearby alcove. They stared off into the distance. For the next half-hour, the pair was still. Faceless passersby flowed along in a stream of monotony.
+> 
+> What felt like days before, the pair had bid their old reality //adieu// when it faded out from under them. They travelled on different journeys but found themselves at the same destination.
+> 
+> Wherever that was.
+> 
+> Heather bobbed her face-screen to the side and noticed Adamo frowning. It was a brief flicker, but it sent her searching for a reason. Was he exhausted? For sure, but he showed that in his shoulders. Hungry? Maybe; there was a Taco Bell a half-block away, if they craved it, but no. There was something else. His gaze held secrets.
+> 
+> She had secrets, too. She knew things he didn't.
+
+[[span class="heather"]]"This is just another part of the game."[[/span]]
+
+"What do you mean?"
+
+> He turned his head to study her face-screen.
+> 
+> She told him before that their destiny -- in this place-between-places, filled with memories from Adamo's past -- was part of a game. Some complex game of cosmic fates played by gods and demons. But [[span style="font-family: Georgia, serif; font-weight: bold;"]]They[[/span]] wouldn't let her tell him the truth. The full truth.
+> 
+> She tipped her CRT screen head away.
+
+[[span class="heather"]]"It's... Complicated."[[/span]]
+
+"Let's //un//complicate it, then. Games don't usually put you right into the action, do they? There's a lot that the player needs to slog through before they can even begin. There's a tutorial, maybe some backstory scrolling down the loading screen. World-building. That sort of thing. Right?"
+
+[[span class="heather"]]"Right, okay, yeah."[[/span]]
+
+"Yeah. But in the span of a few hours, I've been through, like, three different unrelated places and met some buggy asshole that may or may not have been alien Jesus Christ. And now I'm here. Doesn't seem like any game I've ever played. You know?"
+
+[[span class="heather"]]"I, uh, no. I don't."[[/span]]
+
+"... And that's another thing. What's //your// role in all this? Your //actual// role, aside from helping me. You didn't just pop up here because I imagined you."
+
+[[span class="heather"]]"Um..."[[/span]]
+
+"Like, alright, maybe you're physically incapable of explaining //why// you can't explain why... If that makes sense?" 
+
+[[span class="heather"]]"But–"[[/span]]
+
+"No, it's okay, I get it. Something memetic, maybe? Never mind, you wouldn't even know what that means. That's okay, too. See, I'm not just some generic secret agent from an action movie. I'm a field researcher. I have expertise, and–"
+
+[[span class="heather"]]"Adamo."[[/span]]
+
+"... Okay, you're right. Fine. I'll get to that. But first, I–"
+
+[[span class="heather"]]"Adamo!"[[/span]]
+
+"What?"
+
+[[span class="heather"]]"Look!"[[/span]]
+
+> Adamo perplexed over her change in tone. She pointed frantic fingers at her face-screen.
+
+@@ @@
+@@ @@
+@@ @@
+
+[[div class="terminal"]]
+  [[div class="scanline"]]
+  [[/div]]
+    [[div class="terminal-text"]]
+
+[[span style="font-size: 120%; word-break: unset;"]]The Pataphysics Department presents...[[/span]]
+----
+[[span style="font-size: 250%;"]]“THE GAME”[[/span]]
+----
+      [[div class="fake-link"]]
+START THE GAME
+      [[/div]]
+      [[div class="fake-link"]]
+LOAD THE GAME
+      [[/div]]
+      [[div class="fake-link"]]
+OPTIONS
+      [[/div]]
+      [[div class="escape"]]
+[[span]]ESCAPE[[/span]]
+
+    [[/div]]
+  [[/div]]
+[[/div]]
+
+"... What the hell is that?"
+
+[[=image http://scp-wiki.wdfiles.com/local--files/component%3Apataphysics-theme/pata-logo.png class="break"]]
+
+> [[span style="margin: -3em;"]]The strange words had been flashing on Heather's face-screen for all of five minutes, but to her, it felt like an eternity.[[/span]]
+
+"Can't you just think really hard about it?"
+
+> His tone didn't sound very convincing.
+
+[[span class="heather"]]"It's not as easy as it looks, you know!"[[/span]]
+
+> And she didn't sound very convinced.
+
+"All I'm saying is that if I had a CRT screen for a head, I might find it in my best interest to figure out how the damn thing works!"
+
+[[span class="heather"]]"You're being so //insensitive!//"[[/span]]
+
+> Heather squealed as she gripped the sides of her CRT screen head. Her fingers ached and butterflies made a roost in her chest as she squirmed in fear. Adamo stood by, hands up in the //en garde// stance, as if he were about to supply technical aid like some IT magician.
+
+"I don't have time to play any games, //young lady.//"
+
+> He lowered his arms in brief uncertainty and shrugged.
+
+"I mean, this might literally be a game, but..."
+
+[[span class="heather"]]"//Young lady?// Who are you, my mother?!"[[/span]]
+
+"Come on, you could at least check your pockets, there must be a remote for this or //something.//"
+
+[[span class="heather"]]"... That's my head you're talking about, Adamo."[[/span]]
+
+> Ever since a makeshift rebirth ritual pulled Heather taut between meatspace and this place-between-places, she had a TV screen for a head. That was her anchor. That was her normal. It had taken the better part of two years to get used to, and she spent hours upon angst-ridden hours fearing how the world would perceive her. 
+> 
+> The time after she received it was the hardest in her life. The Foundation had her cooped up for three months. A brief time for an 'anomalous humanoid entity' -- which is how Containment Security rats called it -- but aeons for her. Eventually, through a chain of events she didn't dare question, she broke out. Her adoptive moms came to find her, and for the next year-and-a-half, they were on the lam.
+> 
+> And now Adamo was treating her 'anomaly' as a toy; a set piece. He was probing her like the Jailors did. She remembered the anguish that kept her up for weeks. //He's just like them,// she thought. //Just like them!//
+> 
+> But surely, he had faced considerable distress, too, hadn't he? An anomaly ripped him from the world. He watched his family, his friends, his colleagues, and everything he knew, slip through his fingers like coarse sand. 
+> 
+> Maybe he empathised. Maybe he looked to her 'anomaly' the same way he looked at his. Maybe he just wanted to understand.
+> 
+> She forced herself to internalize all these feelings, for the briefest moment, and focused on her breathing. 
+
+[[=image http://scp-wiki.wdfiles.com/local--files/component%3Apataphysics-theme/pata-logo.png class="break"]]
+
+"Hey, Heather?"
+
+[[span class="heather"]]"."[[/span]]
+
+"You still with me?"
+
+[[span class="heather"]]".."[[/span]]
+
+"Hey, if you can make jokes, then so can I. Look, I'm sorry. I'm sorry I pushed. Let's figure this out together. Okay?"
+
+[[span class="heather"]]"..."[[/span]]
+
+> [[span style="margin: -3em;"]]Heather shook her head. She looked at Adamo. Lucid again. She smiled and cracked a joke.[[/span]]
+
+[[span class="heather"]]"Okay, //grandpa.//"[[/span]]
+
+"... Heather, I'm thirty-one years old!"
+
+[[span class="heather"]]"So then why are you always such a grumpy old geezer?"[[/span]]
+
+"All right. Let's just take a second to calm down. You're the one that wanted me to play this game in the first place."
+
+[[span class="heather"]]"I know, I know."[[/span]]
+
+> Adamo sighed and scanned their surroundings.
+
+"Well, I'm lost. Let's get some help."
+
+> ...
+
+@@ @@
+
+[[div class="pata"]]
+
+[[span style="font-size: 120%; word-break: unset;"]]HELLO! THERE ARE NO CURRENT HELP OPTIONS AVAILABLE. WHAT WOULD YOU LIKE TO DO?[[/span]]
+
+[[/div]]
+
+> Adamo jumped. The screen was talking. //To him.//
+
+"Heather? What do I say?"
+
+[[span class="heather"]]"I don't know..."[[/span]]
+
+"Uh, hey. I'd like to start the game, please."
+
+[[div class="pata"]]
+
+[[span style="font-size: 120%; word-break: unset;"]]THERE IS ONE SAVE FILE ALREADY IN USE. WOULD YOU LIKE TO LOAD A NEW ONE?[[/span]]
+
+[[/div]]
+
+"Yes."
+
+[[div class="pata"]]
+
+[[span style="font-size: 120%; word-break: unset;"]]WE APOLOGIZE, BUT THERE IS ONLY ONE SAVE FILE AVAILABLE FOR YOUR GAME SESSION. WOULD YOU LIKE TO RESTART YOUR PLAY SESSION?[[/span]]
+
+[[/div]]
+
+"Sure, I don't see why not. Would save a hell of a lot of grief."
+
+[[div class="pata"]]
+
+[[span style="font-size: 120%; word-break: unset;"]]OH, OH MY. YOU WILL LOSE ALL YOUR CURRENT PROGRESS IF YOU RESTART. IS THIS WHAT YOU WOULD LIKE TO DO?[[/span]]
+
+[[/div]]
+
+"Progress? What progress? I haven't even started yet."
+
+[[div class="pata"]]
+
+[[span style="font-size: 120%; word-break: unset;"]]THE CURRENT SAVE FILE HAS A RECORDED GAMEPLAY TIME OF 31 YEARS, 10 MONTHS, 19 DAYS, 15 HOURS, AND 22 SECONDS. DO YOU WISH TO PROCEED?[[/span]]
+
+[[/div]]
+
+> Adamo's placid expression twisted into shock.
+
+"No, I do not–"
+
+[[div class="pata"]]
+
+DELETING...
+░░░░░░░░░░░░░░░ 0%
+
+▒░░░░░░░░░░░░░░ 1%
+
+[[/div]]
+
+"Shit, Heather, make it go back."
+
+[[span class="heather"]]"I can't!"[[/span]]
+
+[[div class="pata"]]
+
+DELETING...
+█▓░░░░░░░░░░░░░ 13%
+
+██████████▒░░░░ 69%
+
+[[/div]]
+
+"Stop, abort, quit!"
+
+[[div class="pata"]]
+
+DELETING...
+
+██████████▓░░░░ 69.1%
+
+██████████▒░░░░  69.11%
+
+[[/div]]
+
+> Heather giggled. Adamo's face flickered with a tinge of red, either from embarrassment, relief, annoyance, or a mixture of the three.
+
+"Oh, perfect. Just perfect!"
+
+> A third, separate voice spoke with a robotic timbre and a spoonful of whimsy.
+
+[[div class="pata"]]
+
+hehe, you should see the look on your face. i got you good!
+
+[[/div]]
+
+"Drop the charade. Who are you, and what's going on?"
+
+[[div class="pata"]]
+
+i am a text to speech analysis construct, type p, code named FODDER! youve been selected to play THE GAME. are you excited??? i sure am!
+
+[[/div]]
+
+"Let's take a step back here. I want this 'game' explained to me. Right now. Capisce?"
+
+[[div class="pata"]]
+
+THE GAME follows a naive EVERYMAN on a QUEST to unlock his true potential! the EVERYMAN is a person who flounders about in his own blissful ignorance, until life smacks him in the face with a TASTE OF ADVENTURE! he stumbles into THE GUIDE: his unsuspecting companion and bearer of THE GAMEs information! he resists THE GUIDE -- maybe once or thrice -- until THE GUIDE pushes him into THE UNKNOWN. there, he faces VICES, and VILLAINS that scare him into battling a terrible BEAST. he narrowly defeats THE BEAST, nabs its TREASURE, and meets THE MAKER, who shows him how much of a LAZY OAF he used to be. with the POWER OF FRIENDSHIP, he returns to his old life a HERO!!! ^u^
+
+[[/div]]
+
+"That is //so// vague, you could have described any game out there. Is that it? Heather, did you know this?"
+
+[[span class="heather"]]"I– Uh, I know all sorts of things about the game."[[/span]]
+
+"So why haven't you explained anything?"
+
+[[div class="pata" style="padding: .5em;"]]
+[[div style="font-size: 150%; font-style: italic; color: rgba(242, 242, 242, 0.9); word-wrap: break-word; white-space: normal; line-height: 18.05px;"]]
+
++++ MS. MAD ABOUT VIDEO 
++++ GAMES WOULD NOT WANT 
++++ TO BREAK THE RULES, 
++++ WOULD SHE???
+
+[[/div]]
+[[/div]]
+
+[[span class="heather"]]"Oh, I wouldn't, I really, //really// wouldn't!"[[/span]]
+
+[[div class="pata"]]
+
+hehe! so then, guide! //whatareyouwaitingfor????// are you going to //guide// your compatriot here to absolution????? OR WHAT.
+
+[[/div]]
+
+> Heather snapped out of a slouch.
+
+[[span class="heather"]]"I'm ready!"[[/span]]
+
+[[div class="pata"]]
+
+oh gosh, you are just like the //cutest// lil thing!
+
+[[/div]]
+
+"... This entire thing brings up more questions than answers."
+
+[[span class="heather"]]"I can't //reveal// anything to you, Adamo! Not anything meaningful, at least. It's like... Those mind programming things your people //claim// to save the world from."[[/span]]
+
+[[div class="pata"]]
+
+yawn. booooring! can we get THE GAME going or naw?
+
+[[/div]]
+
+"I just need to know //some// things. Like... We were in the void. Why are we where we are right now? With a Taco Bell, and a thrift shop, and everything else?"
+
+[[span class="heather"]]"Oh, um, like. The game uses your memories and worldview as a baseline, and then builds from there. From a game development standpoint -- especially one so personalized and far-reaching as this -- it only makes sense to do that."[[/span]]
+
+"And, and what about that weird... Insect //freak//. What does he have to do with this?"
+
+[[div class="pata"]]
+
+THE GAME would like to inform you that it has no discretion over multiplayer activities and takes no responsibility for damages incurred there!
+
+[[/div]]
+
+"Well, I'm exhausted already. How's about that Taco Bell, first? I've never actually had it, but I heard it's delicious."
+
+[[span class="heather"]]"I, like, can't actually //eat// Taco Bell, so."[[/span]]
+
+"What, not hungry? Maybe we can–"
+
+> The realization slammed into Adamo like an 18-wheeler.
+
+"//Oh.// Forgot about that."
+
+[[span class="heather"]]"But I think I spotted a cyber café nearby!"[[/span]]
+
+"Great, let's go!"
+
+> The pair had more-or-less walked away before the quirky mechanical voice jolted them back.
+
+[[div class="pata"]]
+
+once you guys get all powered up or whatever, im sorry to say, but THE GAME will //truly begin!//
+
+[[/div]]
+
+"Sure, whatever. Let's eat! I know I'm starving, and this gal over here is down for a //byte// or two herself."
+
+> As if reading words on a screen, she let out a snort. Whether she admired him as a friend, a weird, adoptive uncle, or as his guide, was irrelevant. She admired Adamo Smalls no matter how flawed he was.
+> 
+> And so, she followed him, down to the cyber café. Hoping that the world conjured up by this man's mind was hospitable but knowing that it probably wasn't.
+[[/div]]
+
+[[=image http://scp-wiki.wdfiles.com/local--files/component%3Apataphysics-theme/pata-logo.png class="break"]]
+
+[[include :scp-wiki:component:earthworm
+| first=false | last=true | hub=no
+| previous-url=http://www.scp-wiki.net/buggy-hardware | previous-title=Buggy Hardware
+| next-url=/ | next-title=/
+| hub-url=/ | hub-title=A Scene From A Meme(-ory)
+]]
+
+@@ @@
+
+[[div style="border-bottom: 2px solid #777; margin-bottom: 1px;"]]
+[[/div]]
+[[div style="border-bottom: 1px solid #777;"]]
+[[/div]]
+
+[[=]]
+[[module Rate]]
+[[/=]]
