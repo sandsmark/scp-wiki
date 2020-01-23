@@ -1,11 +1,9 @@
 title:SCP-4568
-[out of universe note: please wait a few minutes while I finish setting up the ListPages module. Thanks!]
-
 [[>]]
 [[module Rate]]
 [[/>]]
 
-[[module ListPages parent="." limit="1" order="created_at" offset="@URL|1"]]
+[[module ListPages category="fragment" parent="." order="created_at" limit="1" offset="@URL|0"]]
 %%content%%
 [[/module]]
 
