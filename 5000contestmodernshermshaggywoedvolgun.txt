@@ -64,6 +64,11 @@ title:SCP-5000: Seven
     
     .mobile-display > div > div > div > a {
     	font-size: 85% !important;
+    	width: calc(100vw - 3rem);
+    		display: block;
+    	white-space: normal;
+    	word-wrap: break-word;
+    	hyphens: auto;
     }
 
     .desktop-display {
