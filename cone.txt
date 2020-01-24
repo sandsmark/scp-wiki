@@ -292,5 +292,11 @@ But 3211? No no no. 3211 is different.
 
 [[tab Tag Stuff]]
 
+**Recent Themes**
+
+[[module ListPages limit="5" category="*" tags="theme" orderBy="date desc" separate="no"]]
+# %%title_linked%% by [[*user %%created_by%%]] on %%created_at%%
+[[/module]]
+
 [[/tab]]
 [[/tabview]]
