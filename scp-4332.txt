@@ -29,10 +29,25 @@ transform: rotateZ(180deg);
     padding: 0px 0px 00px;
     text-shadow:initial;
 }
-@media (max-width: 479px) {
-#header {
-    background-position: 0 5.5em;
-    background-size: 55px 55px;
+@media (max-width: 800px) {
+#header{
+    background: url(null);
+}
+#header:before{
+display:block;
+position: absolute;
+width: 100px;
+height: 100px;
+top: 15%;
+left:2%;
+z-index: -1;
+content: "";
+background:url(http://scp-wiki.wdfiles.com/local--files/component%3Atheme/logo.png);
+background-repeat: no-repeat;
+background-position: 0 5.5em;
+background-size: 55px 55px;
+z-index: -20;
+transform: rotateZ(180deg);
 }
 }
 [[/module]]
