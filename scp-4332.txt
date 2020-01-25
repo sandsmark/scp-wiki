@@ -29,6 +29,12 @@ transform: rotateZ(180deg);
     padding: 0px 0px 00px;
     text-shadow:initial;
 }
+@media (max-width: 479px) {
+#header {
+    background-position: 0 5.5em;
+    background-size: 55px 55px;
+}
+}
 [[/module]]
 
 [[include component:info-ayers
