@@ -92,41 +92,6 @@ title:SCP-5000: Seven
     display: none;
 }
 
-#page-options-container {
-    position: relative;
-}
-
-#page-options-container > div {
-    opacity: 0;
-    transition: opacity .3s cubic-bezier(.4,0,.2,1);
-}
-
-#page-options-container::before {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(var(--swatch-primary-darker),.05);
-    width: 100%;
-    height: 100%;
-    max-width: 55vw;
-    opacity: 1;
-    border-radius: 1rem;
-    transition: 
-    	opacity .3s cubic-bezier(.4,0,.2,1),
-    	max-width .15s cubic-bezier(.4,0,.2,1);
-}
-
-#page-options-container:hover > div {
-    opacity: 1;
-}
-
-#page-options-container:hover::before {
-    max-width: 0vw;
-    opacity: 0;
-}
-
 .mobile-ratingmodule {
     display: none;
 }
@@ -157,9 +122,6 @@ title:SCP-5000: Seven
     	min-height: 42px;
     }
 
-    #page-options-container::before {
-    	max-width: 100vw;
-    }
 }
 [[/module]]
 
