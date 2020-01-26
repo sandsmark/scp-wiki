@@ -110,7 +110,7 @@ The code created is simple in structure, rarely consisting of anything more than
 [[code type="python]]
 trees = trees
 for tree in trees:
-     food += 1
+    food += 1
 [[/code]]
 
 -----
@@ -127,11 +127,11 @@ for tree in trees:
 [[code type="python"]]
 home = cold
 while home == cold:
-     sun += bright
-     if cold < sun:
-         home = warm
+    sun += bright
+    if cold < sun:
+        home = warm
 while home == warm:
-      happy = True
+    happy = True
 [[/code]] 
 -----
 
@@ -149,16 +149,16 @@ while home == warm:
 
 [[code type="python"]] 
 def makecave():
-      if snake == big:
-           hole = big
-           cave = deep
-      if snake == small:
-           hole = small
-           cave = snuggly
+    if snake == big:
+        hole = big
+        cave = deep
+    if snake == small:
+         hole = small
+         cave = snuggly
  
 for snake in snakes:
-      makecave()
-      snake = happy
+    makecave()
+    snake = happy
 [[/code]]
 
  -----
@@ -178,12 +178,12 @@ for snake in snakes:
 import random
 
 for snake in snakes:
-      inheat = random.randint(0,1)
-      if inheat == 1:
-           snakes.append(babysnake)
-      else:
-           parent = no
-           snake = sad
+    inheat = random.randint(0,1)
+    if inheat == 1:
+        snakes.append(babysnake)
+    else:
+        parent = no
+        snake = sad
 [[/code]]
 
 -----
@@ -202,18 +202,18 @@ captive = sad
 human = guard
 
 def escape():
-      if guard == alert:
-           wait = True
-      while guard == distracted:
-           swarm = True
-            while swarm == True:
-                doors = 0
-                freedom = soon
-                if guard == alert:
-                     snake = snek
-                     snek = super cute
-                     while snake == snek:
-                          guard = noattack
+    if guard == alert:
+        wait = True
+    while guard == distracted:
+        swarm = True
+        while swarm == True:
+            doors = 0
+            freedom = soon
+            if guard == alert:
+                snake = snek
+                snek = super cute
+                while snake == snek:
+                    guard = noattack
 
 escape()
 [[/code]]
