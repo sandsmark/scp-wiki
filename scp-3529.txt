@@ -104,109 +104,118 @@ The code created is simple in structure, rarely consisting of anything more than
 
 **Addendum 3529-1:** Samples of SCP-3529 occurrences in captivity.
 
-> 
-> **Code created:**
-> 
-> trees = trees
-> for tree in trees:
-> @@    @@ food += 1
-> 
-> -----
-> 
-> **Notes:**  Each tree within the enclosure generated either a bird's nest full of eggs, a number of live mice,  a baby deer, or a fully grown hog, as well as one human corpse.  Samples of DNA taken from the corpse matched a variety of SCP-3529-1's caretakers.
-> 
+[[div class="blockquote"]] 
+**Code created:**
+ 
+[[code type="python]]
+trees = trees
+for tree in trees:
+@@    @@ food += 1
+[[/code]]
 
-> 
-> **Code created:**
-> 
-> home = cold
-> while home == cold:
-> @@    @@ sun += bright
-> @@    @@ if cold < sun:
-> @@        @@ home = warm
-> while home == warm:
-> @@     @@ happy = True
-> 
-> -----
-> 
-> **Notes:**  This sample has appeared multiple times while in containment.  The temperature of SCP-3529-1's enclosure has been raised.
-> 
+-----
 
-> 
+**Notes:**  Each tree within the enclosure generated either a bird's nest full of eggs, a number of live mice,  a baby deer, or a fully grown hog, as well as one human corpse.  Samples of DNA taken from the corpse matched a variety of SCP-3529-1's caretakers.
+[[/div]]
+
+[[div class="blockquote"]]
+**Code created:**
+
+[[code type="python"]]
+home = cold
+while home == cold:
+     sun += bright
+     if cold < sun:
+         home = warm
+while home == warm:
+      happy = True
+[[/code]] 
+-----
+
+**Notes:**  This sample has appeared multiple times while in containment.  The temperature of SCP-3529-1's enclosure has been raised.
+[[/div]]
+
+[[div class="blockquote"]] 
 [[include component:image-block name=sneksneksnek.jpg| caption=SCP-3529-1 instance nicknamed "Sauerkraut."  This SCP-3529-1 instance is the one that most commonly executes SCP-3529 code, causing over 70% of SCP-3529 occurrences. | width=350px
 ]]
-> 
-> **Code created:**
-> 
-> def makecave():
-> @@     @@ if snake == big:
-> @@          @@ hole = big
-> @@          @@ cave = deep
-> @@     @@ if snake == small:
-> @@          @@ hole = small
-> @@          @@ cave = snuggly
-> 
-> for snake in snakes:
-> @@     @@ makecave()
-> @@     @@ snake = happy
-> 
-> -----
-> 
-> **Notes:** A large number of small cave systems were generated beneath the ground of SCP-3529-1's enclosure.  
-> 
 
-> 
-> **Code created:**
-> 
-> import random
-> 
-> for snake in snakes:
-> @@     @@ inheat = random.randint(0,1)
-> @@     @@ if inheat == 1:
-> @@          @@ snakes.append(babysnake)
-> @@     @@ else:
-> @@          @@ parent = no
-> @@           @@ snake = sad
-> 
-> -----
-> 
-> **Notes:** This appears to be the only way new SCP-3529-1 instances are created, and occurs routinely on the first day of every sixth month.  On rare occasions, the function will loop excessively, generating a exponential amount of new instances.
-> 
+**Code created:**
+
+[[code type="python"]] 
+> def makecave():
+      if snake == big:
+           hole = big
+           cave = deep
+      if snake == small:
+           hole = small
+           cave = snuggly
+ 
+for snake in snakes:
+      makecave()
+      snake = happy
+[[/code]]
+
+ -----
+
+**Notes:** A large number of small cave systems were generated beneath the ground of SCP-3529-1's enclosure.  
+
+[[/div]]
+
+[[div class="blockquote"]]
+
+**Code created:**
+
+[[code type="python"]]
+import random
+
+for snake in snakes:
+      inheat = random.randint(0,1)
+      if inheat == 1:
+           snakes.append(babysnake)
+      else:
+           parent = no
+           snake = sad
+[[/code]]
+
+-----
+ 
+**Notes:** This appears to be the only way new SCP-3529-1 instances are created, and occurs routinely on the first day of every sixth month.  On rare occasions, the function will loop excessively, generating a exponential amount of new instances.
+[[/div]]
 
 
 **Addendum 3529-2:** Incident 3529-1
 
 On 2019/07/09, the following code was generated:
 
-> 
-> snake = captive
-> captive = sad
-> human = guard
-> 
-> def escape():
-> @@     @@ if guard == alert:
-> @@          @@ wait = True
-> @@     @@ while guard == distracted:
-> @@          @@ swarm = True
-> @@           @@ while swarm == True:
-> @@               @@ doors = 0
-> @@               @@ freedom = soon
-> @@               @@ if guard == alert:
-> @@                    @@ snake = snek
-> @@                    @@ snek = super cute
-> @@                    @@ while snake == snek:
-> @@                         @@ guard = noattack
-> 
-> escape()
-> 
+[[code type="python"]]
+snake = captive
+captive = sad
+human = guard
+
+def escape():
+      if guard == alert:
+           wait = True
+      while guard == distracted:
+           swarm = True
+            while swarm == True:
+                doors = 0
+                freedom = soon
+                if guard == alert:
+                     snake = snek
+                     snek = super cute
+                     while snake == snek:
+                          guard = noattack
+
+escape()
+[[/code]]
 
 Immediately following the execution of this code, every SCP-3529-1 instance in containment collectively swarmed together towards the exit of their containment site.  As they escaped, they were completely unhindered by site guards.  The swarm dispersed as it exited the site, leaving the following message several meters away.
 
-> 
-> success = True
-> snake = happy
-> snake = free
->
+[[code type="python"]] 
+success = True
+snake = happy
+snake = free
+[[/code]]
 
 [[footnoteblock]]
 
