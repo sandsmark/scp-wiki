@@ -14,31 +14,24 @@ title:SCP-4319
     --accentColor: #ff599e;
     counter-reset counter 0;
 }
-
-/* #6b001e  */
-a.collapsible-block-link {
-    color: #b800b8;
-}
-
 body {
-    background: #fff6fa;
-    color: #650032;
+    background: #ffe3ee;
+    color: #a10050;
     font-family: 'Courgette', cursive;
-    font-size: 1.02em;
 }
 a,a:visited {
-    color: #b800b8;
+    color: #ffa8c5;
 }
 h1,h2,h3,h4,h5,h6 {
     color: #ff78a5;
     font-family: 'Courgette', cursive;
 }
 blockquote {
-    border: 2px dotted #8b008b;
-    background: #f0dbec
+    border: 1px dashed #ffadeb;
+    background: #f5ebf3
 }
 div#container-wrap {
-    background: url(http://smlt.wdfiles.com/local--files/nagiros%3Acrab-den/header-test.png) top left repeat-x;
+    background: url(http://kaktuskontainer.wdfiles.com/local--files/sigma%3Atheme-test-page/header.png) top left repeat-x;
 }
 div#header {
     background: url(http://kaktuskontainer.wdfiles.com/local--files/sigma%3Atheme-test-page/heart.png) no-repeat;
@@ -62,14 +55,13 @@ div#header h2:after {
     content: "By girls, for girls";
     font-family: 'Courgette', cursive;
     font-weight: bold;
-    color: #b50048;
+    color: #ff5ca5;
     padding: 25px 0;
     text-shadow: #eb4991;
     white-space: pre;
-    margin: 20px;
 }
 div#side-bar div.side-block {
-    background: #fde8f1;
+    background: #ff69ab;
     border: 1-x solid #fff0f6;
     box-shadow: #f0bdd1;
     border-radius: 5px;
@@ -77,8 +69,8 @@ div#side-bar div.side-block {
 div#side-bar div.side-block div.heading,
 div#side-bar div.collapsible-block-unfolded-link,
 div#side-bar div.collapsible-block-unfolded-link div.collapsible-block-link {
-    color: #b50048;
-    border-color: #b50048;
+    color: #ff85b5;
+    border-color: #ff85b5;
 }
 div.scpnet-interwiki-wrapper {
     filter: hue-rotate(355deg) saturate(55%);
@@ -88,27 +80,26 @@ div.yui-navset div.yui-content {
 }
 div.yui-navset ul.yui-nav a,
 div.yui-navset div.yui-navset-top ul.yui-nav a {
-    background: #ffa4e1;
-    color: #b6006e;
+    background: #ffdbf3;
+    color: #ff5ebf;
     border: solid #ffffff;
 }
 div.yui-navset ul.yui-nav a:hover,
 div.yui-navset ul.yui-nav a:focus {
-    background: #ffb7c4;
-    color: #b6006e;
+    background: #ff99ac;
+    color: #ff5ebf;
 }
 div.yui-navset ul.yui-nav .selected a,
 div.yui-navset ul.yui-nav .selected a:focus,
 div.yui-navset ul.yui-nav .selected a:hover {
-    background: #ffa4e1;
-    color: #b6006e;
+    background: #ffdbf3;
+    color: #ff5ebf;
     border: solid #ffffff;
-    font-weight: bold;
 }
 div.page-rate-widget-box,
 div.page-rate-widget-box span.rate-points,
 div.page-rate-widget-box span.cancel {
-    background-color: #b50048!important;
+    background-color: #ffa3c7!important;
     border: solid #ffa3c7 1px!important;
 }
 div.page-rate-widget-box span.rateup,
@@ -116,12 +107,8 @@ div.page-rate-widget-box span.ratedown {
     border: solid #ffa3c7!important;
     border-width: 1px 0!important;
 }
-div.page-rate-widget-box span.rate-points {
-    color: #ff69a0;
-}
-div.page-rate-widget-box span.cancel a {
-    color: #ff69a0;
-}
+div.page-rate-widget-box span.rate-points,
+div.page-rate-widget-box span.cancel a,
 div.page-rate-widget-box span.cancel a:hover {
     color: #ff69a0;
 }
@@ -133,15 +120,11 @@ div.page-rate-widget-box span.rateup a,
 div.page-rate-widget-box span.ratedown a {
     color: #ff69a0!important;
 }
-div.page-rate-widget-box span.cancel a:hover {
-    background: transparent!important;
-    color: #ffa3eb!important;
-}
+div.page-rate-widget-box span.cancel a:hover,
 div.page-rate-widget-box span.rateup a:hover,
 div.page-rate-widget-box span.ratedown a:hover {
     background: transparent!important;
-    color: #b50048!important;
-}
+    color: transparent!important;
 }
 div.open-menu a {
     color: #ff85b5!important;
@@ -155,12 +138,11 @@ div.open-menu a {
     border: dotted 1px #ff69ab;
 }
 #search-top-box input.empty {
-    color: #ff69ab;
+    color: ##ff69ab;
 }
 #search-top-box-input:hover, #search-top-box-input:focus {
     background-color: #ffa3eb;
     border: dotted 1px #ff69ab;
-/*Nico was here. */
 }
 #search-top-box-form input[type="submit"]:hover, #search-top-box-form input[type="submit"]:focus {
     background: #ffa3eb !important;
@@ -173,7 +155,6 @@ div.open-menu a {
     color: #fff;
 }
 [[/module]]
-
 [[>]]
 [[module Rate]]
 [[/>]]
