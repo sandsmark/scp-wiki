@@ -3084,7 +3084,252 @@ UwU
 [[/collapsible]]
 [[/=]]
 [[/code]]
+[[/collapsible]] 
+@@@@
+@@@@
+[[div style="border-bottom:2px solid #777; margin-bottom:1px;"]]
+[[/div]]
+[[div style="border-bottom:1px solid #777;"]]
+[[/div]]
+@@@@
+@@@@
+
+++ Fadeout Page Contents
+
+__**Option 1:**__
+
+**What it looks like:** 
+[[module css]]
+/* 
+Fadeout Page-Contents
+- Copyright (c) 2020 ukwhatn
+- Released under the MIT License
+- http://expunged.xyz/MIT.txt
+*/
+
+/*== variables ==*/
+:root {
+
+  /* FadeOut Duration */
+  --fadeout-time: 1s;
+
+  /* Image FadeIn Duration */
+  --img-fadein-time: 1s;
+
+  /* Image Fadein Delay */
+  --img-fadein-delay: 2s;
+
+}
+
+/*== BASE CODE ==*/
+
+.fadeout-wrapper  {
+  position: relative;
+  overflow: hidden;
+}
+
+.fadeout-wrapper .cover{
+  width: 100%;
+  height: 200%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  background: white;
+  color: transparent;
+  animation: cover-anim var(--fadeout-time) linear 0s 1 forwards;
+}
+
+@keyframes cover-anim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeout-wrapper .escape {
+  position: relative;
+  display: inline-block;
+  z-index: 3;
+}
+
+.fadeout-wrapper .fadein-img img{
+  position: relative;
+  z-index: 3;
+  opacity: 0;
+  animation: cover-anim var(--img-fadein-time) linear var(--img-fadein-delay) 1 forwards;
+}
+[[/module]] 
+[[div style="padding-left: 1em"]]
+Page-Content not to Erase
+
+[[div_ class="fadeout-wrapper"]]
+
+Page-Content to Erase
+
+[[span class="escape"]]Page-Content not to Erase[[/span]]
+
+Page-Content to Erase
+
+[[collapsible show="CLICK to FADEOUT" hide=" "]]
+[[div class="cover"]]
+@@@@
+[[/div]]
 [[/collapsible]]
+[[/div]]
+Page-Content not to Erase
+[[/div]]
+**What to copy:**
+@@ @@
+[[collapsible]]
+----
+[[size 125%]]**CSS Module**[[/size]]
+
+You can custom some elements with variables.
+[[code]]
+[[module css]]
+@import url('http://smlt.wdfiles.com/local--code/ukwhatn%3Afadeout/1');
+
+/*== VARIABLES ==*/
+:root {
+
+  /* Background Color (Default: white) */
+  --fadeout-background: white;
+
+  /* FadeOut Duration */
+  --fadeout-time: 1s;
+
+  /* Cropped Header (To erace the shadow under the header)
+      If you use themes other than Sigma-9(Default), pls change this variable. */
+  --cropped-header: url(http://smlt.wdfiles.com/local--files/ukwhatn:fadeout/header-crop.png);
+
+}
+
+[[/module]]
+[[/code]]
+
+[[size 125%]]**Fade-out Part**[[/size]]
+
+Only the elements in fadeout-wrapper are erased.
+**@@[[span class="escape"]]text[[/span]]@@** is not erased. It can be used any number of times and is not limited in size.
+
+[[code]]
+
+Page-Content not to Erase
+
+[[div_ class="fadeout-wrapper"]]
+
+Page-Content to Erase
+
+[[span class="escape"]]Page-Content not to Erase[[/span]]
+
+Page-Content to Erase
+
+[[collapsible show="CLICK to FADEOUT" hide=" "]]
+[[div class="cover"]]
+@@@@
+[[/div]]
+[[/collapsible]]
+[[/div]]
+Page-Content not to Erase
+
+[[/code]]
+
+[[/collapsible]]
+@@ @@
+__**Option 2: Display image after fading out**__[[footnote]]Sample image is [*https://www.goodfreephotos.com/public-domain-images/wide-hiking-path.jpg.php Wide Hiking Path] under the CC0[[/footnote]]
+
+**What it looks like:** 
+[[div style="padding-left: 1em"]]
+Page-Content not to Erase
+
+[[div_ class="fadeout-wrapper"]]
+
+Page-Content to Erase
+@@ @@
+[[collapsible show="CLICK to FADEOUT" hide=" "]]
+[[div class="cover"]]
+@@ @@
+[[/div]]
+
+[[div_ class="fadein-img"]]
+[[=image http://smlt.wdfiles.com/local--files/ukwhatn%3Afadeout/sample.jpg]]
+[[/div]]
+
+[[/collapsible]]
+
+[[/div]]
+Page-Content not to Erase
+[[/div]]
+**What to copy:**
+@@ @@
+[[collapsible]]
+----
+[[size 125%]]**CSS Module**[[/size]]
+
+You can custom some elements with variables.
+[[code]]
+[[module css]]
+@import url('http://smlt.wdfiles.com/local--code/ukwhatn%3Afadeout/1');
+
+/*== VARIABLES ==*/
+:root {
+
+  /* Background Color (Default: white) */
+  --fadeout-background: white;
+
+  /* FadeOut Duration */
+  --fadeout-time: 1s;
+
+  /* Image FadeIn Duration (For Option2) */
+  --img-fadein-time: 1s;
+
+  /* Image Fadein Delay (For Option2) */
+  --img-fadein-delay: 2s;
+
+  /* Cropped Header (To erace the shadow under the header)
+      If you use themes other than Sigma-9(Default), pls change this variable. */
+  --cropped-header: url(http://smlt.wdfiles.com/local--files/ukwhatn:fadeout/header-crop.png);
+
+}
+
+[[/module]]
+[[/code]]
+
+[[size 125%]]**Fade-out Part**[[/size]]
+
+Only the elements in fadeout-wrapper are erased.
+**@@[[span class="escape"]]text[[/span]]@@** is not erased. It can be used any number of times and is not limited in size.
+
+[[code]]
+
+Page-Content not to Erase
+
+[[div_ class="fadeout-wrapper"]]
+
+Page-Content to Erase
+
+[[collapsible show="CLICK to FADEOUT" hide=" "]]
+
+[[div class="cover"]]
+@@ @@
+[[/div]]
+
+[[div_ class="fadein-img"]]
+[[=image [image URL]]]
+[[/div]]
+
+[[/collapsible]]
+
+[[/div]]
+Page-Content not to Erase
+
+[[/code]]
+
+[[/collapsible]]
+
 
 [[module CSS]]
 #page-title {
