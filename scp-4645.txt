@@ -16,6 +16,11 @@ title:SCP-4645
     background-image: url("https://usercontent.irccloud-cdn.com/file/qRFqYR2Y/Gevurah.png");
 }
 
+.anom-bar-container.gevurah .text-part .disrupt-class{
+    border-left: 0.5rem solid rgba(0,135,189,1);
+    border-left: 0.5rem solid rgba(var(--two-color),1);
+}
+
 .anom-bar-container.gevurah .danger-diamond > .left-icon::before {
     background-image: url("https://usercontent.irccloud-cdn.com/file/qRFqYR2Y/Gevurah.png");
 }
