@@ -24,9 +24,34 @@ I've been active here for a year, and finally posted the main hub for my canon. 
 [[/=]]
 [[/div]]
 
-[[include component:scp-trans-pride |trans-pride-logo= --] |trans-pride-footer= --]]]
-
 [[module CSS]]
+/* Trans logo */
+#header {
+    background-image: url(http://scp-wiki.wdfiles.com/local--files/component%3Ascp-trans-pride/TransSCPlogo.png) !important;
+
+/* Trans footer by Uncle Nicolini */
+#license-area {
+    font-size: x-small;
+    background: #5bcefa;
+    color: black;
+}
+ 
+#license-area a {
+    color: #056c94;
+}
+ 
+/* you are my sunshine, my only sunshine */
+ 
+#footer {
+    font-size: x-small;
+    background: #ffafc7;
+    color: black;
+}
+ 
+#footer a {
+    color: #e51f47;
+}
+
 /* SCROLLBAR */
 ::-webkit-scrollbar-thumb
 {
