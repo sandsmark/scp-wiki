@@ -1,5 +1,4 @@
 title:Low Earth Orbit Divinity
-parent:ad-astra-per-aspera-hub
 [[>]]
 [[module rate]]
 [[/>]]
@@ -283,5 +282,256 @@ Peace is restored to the heavens.
 > In the mountains, the day came to an end. The sun bade it farewell. Enlil's mighty lord, Ninurta, great son of the E-kur, heroic one of the father who bore him: it is good to praise you.
 
 [[module CSS]]
-@import url(http://www.scp-wiki.net/component:aapa-theme/code/1);
+/* Ad Astra Per Aspera CSS Theme by Cyantreuse on base code by InitHello with edits by CyrusFiredawn and Uncle Nicolini | CC-by-SA-3.0 */
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+blockquote{
+    -webkit-margin-start: 0px;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-end: 0px;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    background-color: #181818;
+}
+.gray blockquote{background-color:#262626}
+.blue blockquote{background-color:#001f2f}
+.pink blockquote{background-color:#24000f}
+.gold blockquote{background-color:#2f1600}
+.purp blockquote{background-color:#160020}
+#header {
+    background: url(http://scp-sandbox-3.wdfiles.com/local--files/collab:aapa-css/logo5.png) no-repeat left 11px !important;
+    background-size: 300px 120px !important;
+    max-width: none;
+}
+#header h1 a::before, #header h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+}
+#header h1 a span{
+    display: block;
+    content: "test";
+    visibility: hidden;
+}
+#header h1 a::before {
+    content: "  Ad Astra";
+    padding-left: 5px;
+    color: #ffd200;
+}
+#header span {
+    color: #ffd200;
+    margin-left: 9px;
+}
+#header h2 span {
+    display: block;
+    margin: 0;
+    margin-left: 9px;
+    padding: 19px 0;
+    line-height: 0px;
+    max-height: 0px;
+    font-weight: bold;
+    color: transparent;
+    text-shadow: 0px 0px 0px;
+}
+#header h2 span::before {
+    content: "To the Stars Through Hardship";
+    color: fuchsia;
+    text-shadow: 3px 3px 3px; #ffd200;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+}
+@media (max-width: 767px) {
+    #header h2 span::before {font-size: 60%;} 
+}
+#my-account, #account-topbutton {
+    color: #ffd200 !important;
+}
+#header {
+    width: 100%;
+    max-width: none;
+    right: 0;
+    left: 0;
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+#top-bar {
+    width: 100%;
+    max-width: none;
+    right: 0;
+    left: 0;
+    color: black !important;
+}
+#top-bar a:hover {
+    color: blue !important;
+    background-color: black !important;
+}
+div#container-wrap {
+    background: url(http://scp-sandbox-3.wdfiles.com/local--files/collab:aapa-css/background.png) top left repeat-x !important;
+}
+h1, #page-title {
+    color: #ffd200 !important;
+}
+a {
+    color: #ffd200 !important;
+}
+body {
+    background-color: #0D0D0D !important;
+    color: #ccc !important;
+}
+.yui-nav { 
+    border-bottom: 1px solid #808080 !important; 
+}
+.yui-content {
+    /*border-top-color: #808080 !important;*/
+    border-top: none !important;
+}
+.yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a em, .yui-navset .yui-nav .selected a:focus, .yui-navset .yui-nav .selected a:hover {
+    background-color: #070016 !important;
+    color: #fff
+    background-image: none !important;
+    border-color: #808080 !important;
+}
+.yui-navset .yui-nav a, .yui-navset .yui-nav a em, .yui-navset .yui-navset-top .yui-nav a {
+    background-color: #0a001c !important;
+    background-image: none !important;
+    color: #ffd200 !important;
+    border-color: #243356 !important;
+}
+.heading {
+    color: #777 !important;
+}
+.yui-content {
+    background-color: #000117 !important;
+    color: #ededed !important;
+}
+a.collapsible-block-link {
+    color: #ffd200 !important;
+}
+#side-bar a:visited{ color: #e2ba00; }
+ a:visited { color: #e2ba00; }
+#side-bar .side-block {
+    border: 2px solid blue;
+    box-shadow: 6px 4px 6px #000cd3;
+    background-color: #0a001c !important;
+}
+#search-top-box-input:hover, #search-top-box-input:focus {
+    background-color: fuchsia !important;
+    color: black !important;
+}
+#search-top-box-input {
+    background-color: #ffd200 !important;
+    color: black !important;
+}
+#search-top-box-form input[type="submit"] {
+    background: none !important;
+    background-color: #000 !important;
+    color: #ffd200 !important;
+}
+table.wiki-content-table th {
+    color: #181818;
+    background-color: #181818 !important;
+}
+/* FIX FOR MOBILE GAP BUG */
+a {
+    word-wrap: break-word;
+}
+/* Alternative fix
+.container-wrap-wrap {
+    overflow: hidden;
+}*/
+.page-rate-widget-box {
+    border: 1px solid blue;
+    box-shadow: 1px 1px 2px #000cd3;
+    border-radius: 3px;
+    background-color: #0a001c !important;
+}
+.page-rate-widget-box .rate-points {
+    background-color: #0a001c !important;
+    border: 0  !important;
+}
+.page-rate-widget-box .rateup {
+    background-color: #282828 !important;
+    border: none !important;
+}
+.page-rate-widget-box .rateup a {
+    color: white !important;
+}
+.page-rate-widget-box .ratedown {
+    background-color: #282828 !important;
+    border: 0  !important;
+}
+.page-rate-widget-box .ratedown a {
+    color: white !important;
+}
+.page-rate-widget-box .cancel {
+    background-color: #282828 !important;
+    border: none !important;
+}
+.page-rate-widget-box .cancel>a {
+    color: white !important;
+}
+/* SIDE-BAR HEADINGS e.g. "Authors' Resources"*/
+#side-bar .heading {
+    border-bottom: 2px solid blue;
+    color: #ffd200 !important;
+}
+/* AUTHOR WINDOW */
+.owindow {
+    background-color: #000117 !important;
+}
+.owindow .modal-header {
+    background-color: #000117 !important;
+}
+.owindow .modal-body img {
+    background-color: transparent !important;
+}
+.owindow .button-bar a {
+    background-color: #000117 !important;
+    border: 1px solid #808080 !important;
+}
+/* FOOTER POP-UP */
+.hovertip {
+     background-color: #000117 !important;
+     border: 1px solid #808080 !important;
+}
+/* DROPDOWN BACKGROUNDS */
+#account-options ul {
+    background-color: #000 !important;
+}
+#top-bar ul li ul li a {
+    background-color: #000 !important;
+}
+/* TABLE HEADERS */
+table.wiki-content-table th {
+    background-color: black !important;
+    color: white !important;
+}
+/* IMAGE CAPTION */
+.scp-image-block .scp-image-caption {
+    background-color: #000;
+}
+/* SIDE-BAR IMAGES */
+#side-bar img {
+  -webkit-filter:  hue-rotate(20deg) brightness(300%); /* Safari 6.0 - 9.0 */
+  filter: hue-rotate(340deg) brightness(300%);
+}
+#side-bar div.side-block:nth-child(7) > div:nth-child(1) > div:nth-child(1) img {
+    filter: none;
+    -webkit-filter: none;
+}
+ 
+/* TRANSLATION BLOCK (Not great, I know, but better than nothing */
+iframe.scpnet-interwiki-frame {
+    filter: invert(1) hue-rotate(60deg) saturate(20) contrast(100%) brightness(40%) ;
+    -webkit-filter: invert(1) hue-rotate(60deg) saturate(20) contrast(100%) brightness(40%) ;
+}
+/* Mobile Side-Bar Updates */
+@media (max-width: 767px) {
+#side-bar{
+    background-color: #0d0d0d
+ } 
+ .open-menu a { 
+    border: 0.2em solid #ffd200 !important; 
+    background-color: #0d0d0d !important;
+    color: #ffd200 !important; }
+ }
 [[/module]]
