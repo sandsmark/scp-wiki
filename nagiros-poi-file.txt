@@ -1,5 +1,4 @@
 title:Nagiros' PoI File
-[[iftags +author]]
 [!--
 [[div style="border:solid 1px #999999; background:#f6c0c0; padding:5px; margin-bottom: 10px;"]]
 [[=]]
@@ -24,34 +23,10 @@ I've been active here for a year, and finally posted the main hub for my canon. 
 [[/=]]
 [[/div]]
 
+[[include component:scp-trans-pride |trans-pride-logo= --] |trans-pride-footer= --]]]
+[[include :nagiros:component:page-theme]]
+
 [[module CSS]]
-/* Trans logo */
-#header {
-    background-image: url(http://scp-wiki.wdfiles.com/local--files/component%3Ascp-trans-pride/TransSCPlogo.png) !important;
-
-/* Trans footer by Uncle Nicolini */
-#license-area {
-    font-size: x-small;
-    background: #5bcefa;
-    color: black;
-}
- 
-#license-area a {
-    color: #056c94;
-}
- 
-/* you are my sunshine, my only sunshine */
- 
-#footer {
-    font-size: x-small;
-    background: #ffafc7;
-    color: black;
-}
- 
-#footer a {
-    color: #e51f47;
-}
-
 /* SCROLLBAR */
 ::-webkit-scrollbar-thumb
 {
@@ -1225,60 +1200,3 @@ That being said, if you have an article that you think deserves to be on this li
 [[/tab]]
 
 [[/tabview]]
-[[/iftags]]
-
-[[module CSS]]
-/* Centered breadcrumbs */
-#breadcrumbs{
-  margin: auto;
-  margin-bottom: 20px;
-  text-align: center;
-  padding-bottom: 4px;
-}
- 
-/* Bold breadcrumbs */
-#breadcrumbs a {
-  font-weight: bold;
-}
- 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
- 
-/* Extended page bottom */
-#page-content {
-  margin-bottom: 100px;
-}
- 
-/* Centered title */
-#page-title {
-  display: block !important;
-  text-align: center;
-}
- 
-/* Content warning box */
-.warning {
-  border: double 3px black;
-  padding: 10px;
-  text-align: center;
-  margin: 20px auto;
-  display: inline-block;
-}
-.warning a.collapsible-block-link {
-  font-weight: bold;
-}
-.warning .collapsible-block {  
-  text-align: center;
-}
- 
-/* Hidden footnotes */
-.footnotes-footer {
-  display: none;
-}
- 
-/* Extended bottom rating module */
-.page-rate-widget-box {
-  margin-bottom: 25px;
-}
-[[/module]]
