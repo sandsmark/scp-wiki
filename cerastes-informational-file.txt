@@ -1,29 +1,190 @@
-title:POI-3212 "Cerastes"
+title:swn001-131-CRS
 [[>]]
 [[module Rate]]
 [[/>]]
 
-[[include :scp-wiki:component:black-highlighter-theme-dev]]
-[[include :scp-wiki:component:the-foundation-theme]]
+[[[module css]]
+/*
+    Disrememberment Theme
+    [2020 Wikidot Theme]
+    Created by Rounderhouse.
+    Based on Black Highlighter Theme created by Woedenaz and Croquembouche.
+    Ennui Logo made by Ayers, CC BY SA 3.0.
+*/
+ 
+@import url("https://nu-scptheme.github.io/Black-Highlighter/stable/styles/normalize.min.css");
+@import url("https://nu-scptheme.github.io/Black-Highlighter/stable/styles/black-highlighter.min.css");
+ 
+/* Fonts */
+ 
+@import url('https://fonts.googleapis.com/css?family=Carrois+Gothic&display=swap');
+ 
+/* All Vars Used */
+ 
+:root {
+    /* S-CSS-P Integration */
+    /* If you're making a new CSS theme, please include the following three variables at minimum. */
+    --theme-base: "nuscp";
+    /* must be either "nuscp" or "sigma9" */
+    --theme-id: "disrememberment";
+    /* set this to the URL of your theme's page - eg for "component:ar-theme", set it to "ar-theme" */
+    --theme-name: "Dsirememberment Theme";
+    /* set this to your theme's full name */
+ 
+    /* Header */
+    --logo-image: url("http://scp-wiki.wdfiles.com/local--files/component%3Apataphysics-theme/pata-logo.png");
+    --header-title: "swn001-131-CRS";
+    --header-subtitle: "Even God Can Die.";
+
+ 
+    /* Typefaces */
+    --body-font: 'Lato', sans-serif;
+    --header-font: 'Carrois Gothic', sans-serif;
+    --title-font: 'Carrois Gothic', italic;
+    --mono-font: "PT Mono", "Andale Mono", "Courier New", Courier, monospace;
+ 
+    /* Standard Colors */
+    --white-monochrome: 252, 252, 252;
+    /* white */
+    --pale-gray-monochrome: 244, 244, 244;
+    /* v light gray for blockquotes and stuff */
+    --light-gray-monochrome: 120, 120, 120;
+    /* light accent gray for login status */
+    --gray-monochrome: 66, 66, 72;
+    /* gray */
+    --dark-gray-monochrome: 48, 48, 52;
+    /* dark accent gray for sidebar background */
+    --black-monochrome: 12, 12, 12;
+    /* black */
+    --bright-accent: 90, 90, 90;
+    /* blue */
+    --medium-accent: 103, 0, 0;
+    /* medium blue */
+    --dark-accent: 103, 0, 0;
+    /* dark blue */
+    --newpage-color: 99, 190, 255;
+    /* bright blue */
+ 
+    /* Primary Theme Colors */
+    --swatch-background: var(--white-monochrome);
+    --swatch-primary: var(--medium-accent);
+    --swatch-primary-darker: var(--bright-accent);
+    --swatch-primary-darkest: var(--bright-accent);
+    /* Primary Text Colors */
+    --swatch-text-dark: var(--black-monochrome);
+    --swatch-text-light: var(--white-monochrome);
+    --swatch-important-text: var(--bright-accent);
+ 
+    /* Primary Menu Colors */
+    --swatch-menubg-color: var(--gray-monochrome);
+    --swatch-menubg-light-color: var(--gray-monochrome);
+    --swatch-menubg-medium-color: var(--gray-monochrome);
+    --swatch-menubg-medium-dark-color: var(--black-monochrome);
+    --swatch-menubg-dark-color: var(--dark-gray-monochrome);
+    --swatch-menubg-black-color: var(--black-monochrome);
+    --swatch-menubg-hover-color: var(--gray-monochrome);
+    --swatch-menutxt-dark-color: var(--white-monochrome);
+    --swatch-menutxt-light-color: var(--white-monochrome);
+    --swatch-border-color: var(--black-monochrome);
+    /* Primary Header Colors */
+    --swatch-headerh1-color: var(--white-monochrome);
+    --swatch-headerh2-color: var(--white-monochrome);
+    --swatch-topmenu-border-color: var(--dark-gray-monochrome);
+    --swatch-topmenu-bg-color: var(--dark-gray-monochrome);
+ 
+    --rating-module-button-color: var(--black-monochrome);
+    --rating-module-text-color: var(--black-monochrome);
+ 
+    /* Sidebar */
+    --sidebar-transition-timing: 0.5s ease-in-out 0.1s;
+    --sidebar-internal-border-thickness: 0.125rem;
+ 
+    --background-gradient-color: 90, 90, 90;
+    --background-gradient-distance: 30rem;
+ 
+    /* Header Gradients */
+ 
+    --gradient-header: linear-gradient(to bottom, rgba(var(--black-monochrome),0.97) 0%, rgb(var(--dark-gray-monochrome)) 100%);
+    --gradient-topmenu: linear-gradient(to bottom,
+     white 0%,
+     white 7.5rem,
+     rgba(var(--swatch-topmenu-border-color), 1) 7.5rem,
+     rgba(var(--swatch-topmenu-bg-color), 1) 7.625rem,
+     rgba(var(--swatch-topmenu-bg-color), 0.95) calc(100% - 0.125rem),
+     rgba(var(--swatch-topmenu-bg-color), 1) calc(100% - 0.125rem),
+     rgba(var(--swatch-topmenu-border-color), 1) 100%);
+    --gradient-topmenu-mobile: linear-gradient(to bottom,
+     rgba(var(--swatch-topmenu-border-color), 1) 0,
+     rgba(var(--swatch-topmenu-bg-color), 1) 0.125rem,
+     rgba(var(--swatch-topmenu-bg-color), 1) calc(3rem - 0.125rem),
+     rgba(var(--swatch-topmenu-bg-color), 1) calc(3rem - 0.125rem),
+     rgba(var(--swatch-topmenu-border-color), 1) 3rem);
+    --gradient-sidemenu-header: linear-gradient(40deg,
+     rgba(var(--medium-accent), 0.45) 0%,
+     rgba(var(--medium-accent), 0.55) 100%);
+    --gradient-background: linear-gradient(to bottom,
+     rgba(var(--background-gradient-color), 1) calc(calc(0 / 100) * var(--background-gradient-distance)),
+     rgba(var(--background-gradient-color), 0.987) calc(calc(0.8 / 100) * var(--background-gradient-distance)),
+     rgba(var(--background-gradient-color), 0.951) calc(calc(2.9 / 100) * var(--background-gradient-distance)),
+     rgba(var(--background-gradient-color), 0.896) calc(calc(6.4 / 100) * var(--background-gradient-distance)),
+     rgba(var(--background-gradient-color), 0.825) calc(calc(11 / 100) * var(--background-gradient-distance)),
+     rgba(var(--background-gradient-color), 0.741) calc(calc(16.6 / 100) * var(--background-gradient-distance)),
+     rgba(var(--background-gradient-color), 0.648) calc(calc(23.1 / 100) * var(--background-gradient-distance)),
+     rgba(var(--background-gradient-color), 0.55) calc(calc(30.4 / 100) * var(--background-gradient-distance)),
+     rgba(var(--background-gradient-color), 0.45) calc(calc(38.3 / 100) * var(--background-gradient-distance)),
+     rgba(var(--background-gradient-color), 0.352) calc(calc(46.7 / 100) * var(--background-gradient-distance)),
+     rgba(var(--background-gradient-color), 0.259) calc(calc(55.4 / 100) * var(--background-gradient-distance)),
+     rgba(var(--background-gradient-color), 0.175) calc(calc(64.4 / 100) * var(--background-gradient-distance)),
+     rgba(var(--background-gradient-color), 0.104) calc(calc(73.5 / 100) * var(--background-gradient-distance)),
+     rgba(var(--background-gradient-color), 0.049) calc(calc(82.5 / 100) * var(--background-gradient-distance)),
+     rgba(var(--background-gradient-color), 0.013) calc(calc(91.4 / 100) * var(--background-gradient-distance)),
+     rgba(var(--background-gradient-color), 0) calc(calc(100 / 100) * var(--background-gradient-distance)));
+}
+ 
+.scp-image-block {
+   color: rgb(var(--white-monochrome));
+}
+#login-status {
+   color: rgb(var(--light-gray-monochrome));
+}
+ 
+#side-bar .heading p, #side-bar .side-block>.collapsible-block .collapsible-block-link {
+   color: rgb(var(--black-monochrome));
+   background-color: rgb(var(--light-gray-monochrome));
+}
+blockquote {
+    background-color: rgba(0,0,0,0.05);
+}
+#side-bar div.menu-item>:not(:nth-child(2)):not(.collapsible-block) {
+   color: rgb(var(--pale-gray-monochrome));
+}
+.yui-navset .yui-nav li a em, .yui-navset-top .yui-nav li a em, .yui-navset-bottom .yui-nav li a em {
+   color: white;
+}
+ 
+#page-content .collapsible-block-link{color: #000;}
+ 
+#page-title{
+text-align: center!important;
+}
+ 
+.code {
+   background-color: rgba(var(--bright-accent), .75);
+   border-style: dashed;
+}
+[[/module]]
 
 [[=]]
-//[[size 150%]]The true genius shudders at incompleteness — imperfection — and usually prefers silence to saying the something which is not everything that should be said.[[/size]]//
+//[[size 150%]]Suppose that which is taking place here and now is not reality, but only a tale, a tale of some higher order...[[/size]]//
 [[/=]]
 
 
 
-[[=image http://kaktuskontainer.wdfiles.com/local--files/new-author-page/author]]
+[[=image http://kaktuskontainer.wdfiles.com/local--files/testpage/tree]]
 
-@@@@
 @@@@
 
 ------
-[[=]]
-Hello, and welcome to my humble abode. Cerastes here, formerly DrLycus. Why'd I change my name? I saw a really cool snake and decided to change it. Additionally, I felt it was time to shed the Doctor designation, as I made that way back when I first joined the site, and thought it would be cool to be like all the senior staff.
-
-But you're not here to read me talking about myself. You're here to see all my accomplishments and read about me talking about how great I am at writing.
-[[/=]]
-
 
 @@@@
 @@@@
@@ -37,7 +198,7 @@ But you're not here to read me talking about myself. You're here to see all my a
 
 ------
 [[=]]
-Author Commentary
+Metacommentary
 [[/=]]
 ------
 
