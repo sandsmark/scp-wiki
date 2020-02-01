@@ -9,7 +9,9 @@ title:Top Rated Pages By Month 2018
     border-right:none;
 }
 @media (max-width: 979px) {
-    .toc-table { display: none; }
+    .toc-table tr {
+        display: inline;
+    }
 }
 [[/module]]
 
