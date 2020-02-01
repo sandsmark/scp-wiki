@@ -328,22 +328,15 @@ These classes are, generally, those which were used on the EditThis wiki or in t
 [[/collapsible]]
 [[/div]]
 
-++ Joke Esoteric Classes
-
-The following classes are exclusive to [[[joke-scps| Joke SCPs]]], and shouldn't be used in any real documents unless you're doing something weird and meta.
-
-[[div class="list"]]
-[[collapsible show="► Joke Esoteric Classes ◄" hide="▼ Joke Esoteric Classes ▼"]]
-||~ Class ||~ Definition ||~ Appearances||
-||Enochian||Object is really super edgy, okay guys? And we need like, Foundation dreadlords to contain it.  This preceded the "real" Enochian class, listed under "Established Esoteric Classes"||[[[SCP-1333-J!]]],[[[SCP-616-J]]]||
-||SUPER APOLLYON||A containment class by By Researcher James, Age 10||[[[SCP-8231-J]]]||
-||Keter-Ashmedai||Object's containment procedures are just the worst.||[[[SCP-WTF-J]]]||
-||_______||Object's researcher is too lazy to come up with something||[[[SCP-____-J]]]||
-[[/collapsible]]
-[[/div]]
-
 [[module CSS]]
-.list {float: center; padding: 7px; margin: 20px 3px; background-color: #fafafa; box-shadow: 0 2px 4px rgba(75, 75, 75, .5); border-radius: 10px}
+.list {
+  float: center;
+  padding: 7px;
+  margin: 20px 3px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 4px rgba(75, 75, 75, .5);
+  border-radius: 10px
+}
 .list .collapsible-block {  
   text-align: center;
 }
@@ -378,13 +371,7 @@ h2 {
 .list h3 {
   margin-top: 20px;
 }
-.footnotes-footer { 
-  visibility: hidden; 
-  display: none;
-}
 [[/module]]
-
-
 
 [[module CSS]]
 @import url("http://www.scp-wiki.net/nagiros-poi-file/code/1");
