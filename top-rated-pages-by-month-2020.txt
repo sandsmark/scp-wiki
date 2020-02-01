@@ -10,7 +10,9 @@ parent:top-rated-pages-this-month
     border-right:none;
 }
 @media (max-width: 979px) {
-    .toc-table { display: none; }
+    .toc-table tr {
+        display: inline;
+    }
 }
 [[/module]]
 
