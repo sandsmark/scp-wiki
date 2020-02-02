@@ -4,7 +4,6 @@ parent:broken-masquerade-hub
 [[include :scp-wiki:component:dustjacket-theme]]
 
 [[module CSS]]
-@import url("http://wanderers-library.wikidot.com/component:dustjacket-theme-typefaces/code/1");
 @import url("https://use.typekit.net/tqr1skr.css");
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:700|Poppins:400,600&display=swap');
 
@@ -14,46 +13,18 @@ parent:broken-masquerade-hub
     border: 2vw solid rgba(0,0,0,0.5);
     border-image: url(http://wanderers-library.wdfiles.com/local--files/component%3Adustjacket-theme/wl_border.png) 600 round;
     border-image-width: 6;
-    background-color: rgb(45, 70, 45);
     border-radius: 3vw;
-    padding: 1em 0;
+    background-color: rgb(45, 70, 45);
+    padding: .85em 0;
     color: #FFDB5A;
 }
 .h2{
-    margin: 0.5em 0 0.4em;
+    margin: .43em 0 .34em;
     padding: 0;
     letter-spacing: 1px;
     font-size: 150%;
     font-family: 'adelle-sans', sans-serif;
     word-break: unset;
-    line-height: 141%;
-}
-blockquote{
-    border: solid 1px #112211;
-    background: #EEF6EE; 
-}
-hr{
-    height: .125rem;
-    border: 0;
-    background: url(http://wanderers-library.wikidot.com/local--files/component:dustjacket-theme/goldfoil.png);
-    background-size: cover;
-    display: block;
-    margin: 1em 0;
-    padding: 0;
-    color: #DDD;
-}
-
-/* WANDERERS' LINKS */
-span, a{
-    word-break: unset;
-}
-.h2 a {
-    color: rgb(228, 180, 28);
-}
-.h2 a:hover,
-.h2 a:active,
-.h2 a:visited {
-    color: rgb(185, 150, 17);
 }
 
 /* VOID */
@@ -61,21 +32,21 @@ div.void{
     border: 1px solid lightgray;
     background-color: #fff;
     box-shadow: 2px 2px 2px 2px rgba(0,0,0,.1);
-    width: 370px;
-    padding: 1em;
-    margin: 1em auto;
+    width: 24.67em;
+    padding: 0 0 0 .85em;
+    margin: .85em auto;
 }
 @media (max-width: 479px){
-    div.void{ width: auto; margin: 1em 0; }
+    div.void{ width: auto; margin: .85em 0; }
 }
 @media (min-width: 480px) and (max-width: 580px){
-    div.void{ width: auto; margin: 0.5em; }
+    div.void{ width: auto; margin: .43em; }
 }
 .void-dp{
     float: left;
     background-color: #fff;
-    padding: 0 1em;
-    margin: 1em 0 0 .4em;
+    padding: 0 .85em;
+    margin: .4em 0 0 .34em;
 }
 .void-activity{ color: blue; }
 
@@ -83,9 +54,18 @@ div.void{
 .reddit-post{
     background-color: #fcfcfb; 
     border: 1px solid #b5b3ac; 
-    padding: 0 1em; 
-    margin: .5em; 
+    padding: 0 .85em;
+    margin: .43em; 
     overflow: hidden;
+    font-family: verdana,arial,sans-serif;
+}
+
+/* PITCHFORK */
+.pitchfork-header{
+    font-family: 'Playfair Display', serif; 
+    font-size: 260%; 
+    font-weight: 700; 
+    line-height: 38.1px; 
 }
 [[/module]]
 
@@ -93,7 +73,7 @@ div.void{
 [[module Rate]]
 [[/>]]
 
------
+----
 [[div_ class="border"]]
 [[div style="text-align: center;"]]
 
@@ -111,24 +91,24 @@ div.void{
 [[/div]]
 
 [[/div]]
------
+----
 
 //Relevant snippet of first post-Veil press release from The Walt Disney Company, 24 April 2013://
 > ...Magic is not just what our parks and films try to capture. It's a fundamental part of the world we live in. That is why we at Disney wish to finally pull back the curtain and introduce the Veteran Elves of the Light. Our partnership with them has lasted since Walt himself began to formulate the plans for Disneyland...
 
------
+----
 
 //Excerpt from a United States Consumer Product Safety Commission email sent to retailers, 25 April 2013://
 > **TO ALL RETAILERS -- URGENT PRIORITY**
 >
 > All products made by or licensed from WONDERTAINMENT INCORPORATED are to be recalled from all stores, effective immediately, due to unacceptable consumer safety risks. Failure to comply may warrant a fine of up to $100,000 for each....
 
------
+----
 
 //Transcript of advertisement ran throughout the United States, starting from 23 February 2014://
 > **VO:** Attention. If you suspect you or a loved one has been amnesticized, you may apply for financial compensation. Amnestic administrations have been linked to decreased motor functions, recurring short-term memory problems, chronic insomnia, and increased risk of sensory loss. Don't delay. Call now at 1-800-555-AMNI to receive free consultation and pricing.
 
------
+----
 
 //Excerpt from the New York Times, June 23rd edition, 2015//
 
@@ -138,17 +118,17 @@ div.void{
 > ~~~~
 > Anderson's statement was delivered ahead of the eagerly anticipated Friday ICC decision concerning the rights of sapient paratech anomalies...
 
------
+----
 
 //Excerpt from New York Times article, 17 March 2017://
 > ...have reported feeling an urge to read books by Elenjepo Publishing upon seeing them, even if they are not something they would normally be interested in. Leading memetics researchers theorize that Elenjepo Publishing is using cognitohazards on their book covers to make consumers feel enticed to purchase them. Elenjepo Publishing has denied these allegations. The investigation is currently ongoing...
 
------
+----
 
 //Excerpt from a print advertisement distributed in European countries, 17 February 2018://
 > ...loss or doubt? Do you ever feel as if this universe is just too vast to comprehend? Well, we here at the Eastern Church of the Five Tongued Leech believe that we may be able to help you with those feelings. Our goal is to become one with the cosmos, and to finally understand what it means to be a many-limbed organism. We promise to extinguish your woes and help lead you down a path towards a lifetime of bliss. To begin this journey towards your new life, call our toll free...
 
------
+----
 
 //Official Reddit thread, 15 April 2018://
 
@@ -180,7 +160,7 @@ div.void{
 
 [[div style="float: right; width: 93.5%;"]]
 
-[[span style="font-size: x-small; display: inline-block; height: .8em;"]] [[span style="padding: 1px; color: #369;"]] [–] [[/span]] [[span style="font-weight: bold; margin-right: .5em; color: #369;"]] Heynowyouranallstar [[/span]] [[span style="color: #888;"]] 3 points 7 hours ago [[/span]] [[/span]]
+[[span style="display: inline-block; font-size: x-small; height: .67em;"]] [[span style="padding: 1px; color: #369;"]] [–] [[/span]] [[span style="font-weight: bold; margin-right: .4em; color: #369;"]] Heynowyouranallstar [[/span]] [[span style="color: #888;"]] 3 points 7 hours ago [[/span]] [[/span]]
 
 [[span style="font-size: small; font-weight: 400; color: #222;"]] Hey Bill. I have a question: I read over Roads and Hopes, and it looks promising. How do you think you'll be able to accomplish it with the SCP Foundation basically not letting anyone do anything? [[/span]]
 
@@ -197,7 +177,7 @@ div.void{
 
 [[div style="float: right; width: 93.5%;"]]
 
-[[span style="font-size: x-small; display: inline-block; height: .8em;"]] [[span style="padding: 1px; color: #369;"]] [–] [[/span]] [[span style="font-weight: bold; color: #0055df;"]] BillNyeOfficial [[/span]] [[span style="padding: 1px;"]] ##888|[####0055df|S####888|]## [[/span]] [[span style="color: #888;"]] 4 points 7 hours ago [[/span]] [[/span]]
+[[span style="display: inline-block; font-size: x-small; height: .67em;"]] [[span style="padding: 1px; color: #369;"]] [–] [[/span]] [[span style="font-weight: bold; color: #0055df;"]] BillNyeOfficial [[/span]] [[span style="padding: 1px;"]] ##888|[####0055df|S####888|]## [[/span]] [[span style="color: #888;"]] 4 points 7 hours ago [[/span]] [[/span]]
 
 [[span style="font-size: small; font-weight: 400; color: #222;"]] That's an excellent question. Site 57 recently reached out to me about Roads and Hopes, and said that it can be used for an emergency Plan B, in case they have an anomaly of theirs that proves to be more trouble than it's worth. [[/span]]
 
@@ -214,7 +194,7 @@ div.void{
 
 [[div style="float: right; width: 90%;"]]
 
-[[span style="font-size: x-small; display: inline-block; height: .8em;"]] [[span style="padding: 1px; color: #369;"]] [–] [[/span]] [[span style="font-weight: bold; margin-right: .5em; color: #369;"]] Heynowyouranallstar [[/span]] [[span style="color: #888;"]] 1 point 7 hours ago [[/span]] [[/span]]
+[[span style="display: inline-block; font-size: x-small; height: .67em;"]] [[span style="padding: 1px; color: #369;"]] [–] [[/span]] [[span style="font-weight: bold; margin-right: .4em; color: #369;"]] Heynowyouranallstar [[/span]] [[span style="color: #888;"]] 1 point 7 hours ago [[/span]] [[/span]]
 
 [[span style="font-size: small; font-weight: 400; color: #222;"]] I see. Thank you. [[/span]]
 
@@ -227,11 +207,11 @@ div.void{
 
 
 
-[[div class="reddit-post" style="margin-top: .8em;"]]
+[[div class="reddit-post" style="margin-top: .67em;"]]
 
 [[div style="float: right; width: 93.5%;"]]
 
-[[span style="font-size: x-small; display: inline-block; height: .8em;"]] [[span style="padding: 1px; color: #369;"]] [–] [[/span]] [[span style="font-weight: bold; color: #0055df;"]] BillNyeOfficial [[/span]] [[span style="padding: 1px;"]] ##888|[####0055df|S####888|]## [[/span]] [[span style="color: #888;"]] 1 point 2 hours ago [[/span]] [[/span]]
+[[span style="display: inline-block; font-size: x-small; height: .67em;"]] [[span style="padding: 1px; color: #369;"]] [–] [[/span]] [[span style="font-weight: bold; color: #0055df;"]] BillNyeOfficial [[/span]] [[span style="padding: 1px;"]] ##888|[####0055df|S####888|]## [[/span]] [[span style="color: #888;"]] 1 point 2 hours ago [[/span]] [[/span]]
 
 [[span style="font-size: small; font-weight: 400; color: #222;"]] Noting that I'm still taking questions! [[/span]]
 
@@ -244,11 +224,11 @@ div.void{
 
 
 
-[[div class="reddit-post" style="margin-top: .8em;"]]
+[[div class="reddit-post" style="margin-top: .67em;"]]
 
 [[div style="float: right; width: 93.5%;"]]
 
-[[span style="font-size: x-small; display: inline-block; height: .8em;"]] [[span style="padding: 1px; color: #369;"]] [–] [[/span]] [[span style="font-weight: bold; color: #0055df;"]] BillNyeOfficial [[/span]] [[span style="padding: 1px;"]] ##888|[####0055df|S####888|]## [[/span]] [[span style="color: #888;"]] 1 point 23 minutes ago [[/span]] [[/span]]
+[[span style="display: inline-block; font-size: x-small; height: .67em;"]] [[span style="padding: 1px; color: #369;"]] [–] [[/span]] [[span style="font-weight: bold; color: #0055df;"]] BillNyeOfficial [[/span]] [[span style="padding: 1px;"]] ##888|[####0055df|S####888|]## [[/span]] [[span style="color: #888;"]] 1 point 23 minutes ago [[/span]] [[/span]]
 
 [[span style="font-size: small; font-weight: 400; color: #222;"]] Again, I am still taking questions! [[/span]]
 
@@ -259,14 +239,14 @@ div.void{
 
 [[/div]]
 
------
+----
 
 //Headlines from UnVeiled Pop Culture, week of 4 May 2020://
 > __RUMOR: "Black Mirror" episodes inspired by [[[scp-096|SCRAMBLE gear]]], Maxwellist Mekhanites, //[[[scp-3241|Sommerfeld incident]]]// in various stages of development...__
 > 
 > __Banksy furiously denies connections to anart terrorist group //Are We Cool Yet?// in letter accompanying latest installation near GOC embassy...__
 
------
+----
 
 //Excerpt of Twitch's prohibited anomedia list, revision May 2020://
 > * [[[scp-591|Pretendo]]]-branded games and hardware
@@ -277,14 +257,14 @@ div.void{
 >
 > Users streaming these games will receive permanent suspension from the Twitch platform.
 
------
+----
 
 //Article headline from online independent music review publication// Pitchfork//, 9 May 2020://
 
-> = [[span style="font-family: 'Playfair Display', serif; font-size: 260%; font-weight: 700; line-height: 38.1px; color: #2b2b2b;"]]Who The Fuck is 
+> = [[span class="pitchfork-header"]]Who The Fuck is 
 > = “[[[scp-3933|Tyrannosaurus Flex]]]”?[[/span]]
-> = [[span style="font-family: 'Poppins', sans-serif; font-size: 140%; font-weight: 400; line-height: 1.5; color: #2b2b2b;"]]There's a 40-year-old musical conspiracy theory that's been blowing up my inbox. Tell me: I being trolled?[[/span]]
-> = [[span style="font-family: 'Poppins', sans-serif; font-weight: 600; line-height: 2; color: #2b2b2b;"]]BY: FELICITY CHAMBERLAIN[[/span]]
+> = [[span style="font-family: 'Poppins', sans-serif; font-size: 140%; font-weight: 400; line-height: 1.5;"]]There's a 40-year-old musical conspiracy theory that's been blowing up my inbox. Tell me: Am I being trolled?[[/span]]
+> = [[span style="font-family: 'Poppins', sans-serif; font-weight: 600; line-height: 2;"]]BY: FELICITY CHAMBERLAIN[[/span]]
 
 ----
 
@@ -292,73 +272,67 @@ div.void{
 
 [[div class="void"]]
 [[span class="void-dp"]]
-[[image http://www.scp-wiki.net/local--files/deer-college-hub/reddeer.png width="50px"]]
+[[image http://www.scp-wiki.net/local--files/deer-college-hub/reddeer.png width="55px"]]
 [[/span]]
-@@ @@
-[[size 1.5em]] ##grey|DC Official
+[[size 140%]] ##grey|DC Official
 ⁂Deer College of Portlands## [[/size]]
 @@ @@
+[[size 140%]] The number of applications we received more than quadrupled [[span class="void-activity"]]#whentheVeilbroke[[/span]]. For more statistics, visit [[span class="void-activity"]]deercollege.odyssey.edu/dc-unmaskeddecade[[/span]] [[/size]]
 @@ @@
-[[size 1.5em]]The number of applications we received more than quadrupled [[span class="void-activity"]]#whentheVeilbroke[[/span]]. For more statistics, visit ##blue|deercollege.odyssey.edu/dc-unmaskeddecade##[[/size]]
+* [[size 80%]] ##grey|ECHOES## [[/size]] [[size 110%]] [[span class="void-activity"]]25[[/span]] [[/size]]
+* [[size 80%]] ##grey|HUMS## [[/size]] [[size 110%]] [[span class="void-activity"]]101[[/span]] [[/size]]
 @@ @@
-* [[size .8em]] ##grey|ECHOES## [[/size]][[size 1.1em]] ##blue| 25## [[/size]]
-* [[size .8em]] ##grey|HUMS## [[/size]][[size 1.1em]] ##blue| 101## [[/size]]
-@@ @@
-[[size .8em]] ##grey|9:24 AM - 12 April 2023## [[/size]]
+[[size 80%]] ##grey|9:24 AM - 12 April 2023## [[/size]]
 [[/div]]
 
 [[div class="void"]]
 [[span class="void-dp"]]
-[[image http://scp-wiki.wdfiles.com/local--files/rainbow-crapitalism/bluntfiend.png width="50px"]]
+[[image http://scp-wiki.wdfiles.com/local--files/rainbow-crapitalism/bluntfiend.png width="55px"]]
 [[/span]]
-@@ @@
-[[size 1.5em]] ##grey|bluntfiend
+[[size 140%]] ##grey|bluntfiend
 ⁂jude_k2## [[/size]]
 @@ @@
+[[size 140%]] [[span class="void-activity"]]#whentheVeilbroke[[/span]] i was shitposting w/ [[span class="void-activity"]]⁂jockjamsmixtape[[/span]] about thatcher when Bones muted everyone and linked us to the CNN live feed.[[/size]]
 @@ @@
-[[size 1.5em]] [[span class="void-activity"]]#whentheVeilbroke[[/span]] i was shitposting w/##blue|⁂jockjamsmixtape## about thatcher when Bones muted everyone and linked us to the CNN live feed.[[/size]]
+* [[size 80%]] ##grey|ECHOES## [[/size]] [[size 110%]] [[span class="void-activity"]]299[[/span]] [[/size]]
+* [[size 80%]] ##grey|HUMS## [[/size]] [[size 110%]] [[span class="void-activity"]]121[[/span]] [[/size]]
 @@ @@
-* [[size .8em]] ##grey|ECHOES## [[/size]][[size 1.1em]] ##blue|299## [[/size]]
-* [[size .8em]] ##grey|HUMS## [[/size]][[size 1.1em]] ##blue|121## [[/size]]
-@@ @@
-[[size .8em]]##grey|4:20 PM - 12 April 2023##[[/size]]
+[[size 80%]]##grey|4:20 PM - 12 April 2023##[[/size]]
 [[/div]]
 
 [[div class="void"]]
 [[span class="void-dp"]]
-[[image http://scp-wiki.wdfiles.com/local--files/parawatch-hub/rook4.png width="50px"]]
+[[image http://scp-wiki.wdfiles.com/local--files/parawatch-hub/rook4.png width="55px"]]
 [[/span]]
-@@ @@
-[[size 1.5em]] ##grey|Rook
+[[size 140%]] ##grey|Rook
 ⁂paradmin## [[/size]]
 @@ @@
+[[size 140%]] [[span class="void-activity"]]#whentheVeilbroke[[/span]] I couldn't down that bottle of Captain Morgan fast enough.[[/size]]
 @@ @@
-[[size 1.5em]] [[span class="void-activity"]]#whentheVeilbroke[[/span]] I couldn't down that bottle of Captain Morgan fast enough.[[/size]]
+* [[size 80%]] ##grey|ECHOES## [[/size]] [[size 110%]] [[span class="void-activity"]]2.1k[[/span]] [[/size]]
+* [[size 80%]] ##grey|HUMS## [[/size]] [[size 110%]] [[span class="void-activity"]]451[[/span]] [[/size]]
 @@ @@
-* [[size .8em]] ##grey|ECHOES## [[/size]][[size 1.1em]] ##blue| 2.1k## [[/size]]
-* [[size .8em]] ##grey|HUMS## [[/size]][[size 1.1em]] ##blue| 451## [[/size]]
-@@ @@
-[[size .8em]] ##grey|06:25 PM - 12 April 2023## [[/size]]
+[[size 80%]] ##grey|06:25 PM - 12 April 2023## [[/size]]
 [[/div]] 
 
 ----
 
 //Excerpts from a news segment on the opening of a new [[[scp-3739|Moosphere, Inc.]]] production facility, 1 February 2025://
 
-> Consumer Reports recently announced that business is "going well" at the recently constructed Mindscape Megafactory here out of Bangalore, India.
+> Consumer Reports recently announced that business is "going well" at the newly constructed Mindscape Megafactory here out of Bangalore, India.
 > 
-> I sat down with factory manager Sanjay Lochan, who told me about the company's success in what they call the 'Mindscape' industry. "We fulfill about 1,500 orders daily, and have a current waiting list of 30,000 people," he says. "It's in high demand. We offer people a chance to become what they never would have been naturally. It's a surprising business model that would not have even worked ten years ago." This is, of course, in reference to the Veil protocol, which as you may know, was [...]
+> Last week, I attended an exclusive press tour of the facility grounds. I spoke with factory manager Sanjay Lochan, who told me about the company's success in what they call the 'Mindscape' industry. "We fulfill about 1,500 orders daily, and have a current waiting list of 30,000 people," he says. "It's in high demand. We offer people a chance to become what they never would have been naturally. It's a surprising business model that would not have even worked ten years ago." This is, of course, in reference to the Veil protocol, which as you may know, was [...]
 
-> Anonymous Moosphere representatives -- who relayed messages through a company liaison, to avoid divulging trade secrets -- told us they have five factories going up in India alone in the next twelve months.
+> Anonymous Moosphere representatives -- who relayed messages through a company liaison, to avoid divulging trade secrets -- told us they have five factories going up in India alone in the next eighteen months.
 > 
-> "Aren't you concerned about consumer safety?" I ask Sanjay in private.
+> Their facilities use state-of-the-art paratechnology that's genuinely out of this world. "Aren't you concerned about consumer safety?" I ask Sanjay in private.
 > 
-> "Quite the contrary! People consent with their dollars, and they consent to cranial probes before we even admit them, and they light up in all the right areas," Sanjay tells me. "The truth is people enjoy it. They like it. And why wouldn't they?"
+> "Quite the contrary. People consent with their dollars, and they consent to cranial probes before we even admit them, and they light up in all the right areas," Sanjay tells me. "The truth is people enjoy it. They like it. And why wouldn't they?"
 > 
-> I can't argue with that logic, Sanjay! The process involves hooking oneself up with the pumping station, through which you can experience a prolonged astral projection for just under 18,000 rupees. Trials for a more permanent, long-distance experience -- in a process known as "astral bridging" -- are underway in a lab in Hong Kong. Moosphere Astrologists say they want to allow "[a] chance to explore nearby nebulae from the comfort of your own home!"
+> I can't argue with that logic, Sanjay! One process involves hooking oneself up with the pumping station, through which you can experience a prolonged astral projection for just under 18,000 rupees. Trials for a more permanent, long-distance experience -- in a process known as "astral bridging" -- are underway in a lab in Hong Kong. Moosphere Astrologists say they want to allow "[a] chance to explore nearby nebulae from the comfort of your own home!"
 
-> Overall, my interview with Sanjay was unexpectedly candid. Sanjay, my crew, and I laughed for what must have been hours. The ruckus garnered a few furtive glances from the otherwise focused line workers, who stood wide-eyed and taciturn at their stations the entire day. Talk about diligent work ethic! But, of course, before my tour was over, Sanjay brought me down to the R&D Wing to join my mind with [[span style="color: #407fbf;"]]The Lactescent Chorus[[/span]]–
+> Overall, my talks with Sanjay were unexpectedly candid. Sanjay, my crew, and I laughed for what must have been hours. The ruckus garnered a few furtive glances from the otherwise focused line workers, who stood wide-eyed and taciturn at their stations the entire day. Talk about diligent work ethic! But, of course, before the tour was over, Sanjay brought me down to the R&D Wing to join my mind with [[span style="color: #407fbf;"]]The Lactescent Chorus[[/span]]–
 > 
-> **「 {{Informational Hazard Destroyed}} 」**
+> = **「 {{INFORMATIONAL HAZARD DESTROYED}} 」**
 
------
+----
