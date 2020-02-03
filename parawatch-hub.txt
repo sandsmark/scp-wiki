@@ -1,5 +1,4 @@
 title:Parawatch Hub
-parent:groups-of-interest
 [[include :scp-wiki:component:creepypasta-theme]]
 
 [[>]]
@@ -218,7 +217,7 @@ Alternative code that foregoes the standard quoteblock code is also usable:
 [[collapsible show="+ Open Code" hide="+ Hide Code"]]
 [[code]]
 
-[[div style="display: inline-block; background:  var(--bg-dark); border-width: 2px; border-style: solid; border-color: var(--bg-light); float:center; width:84%; padding:1px 15px; margin: 10px 10px 10px 40px"]]
+[[div class="parapost"]]
 
 Standard forum post text goes here
 
@@ -227,9 +226,9 @@ Standard forum post text goes here
 [[/code]]
 [[/collapsible]]
 
-Replies can be formatted similarly:
+Replies can be formatted similarly: (Please not, however, that this method does not support nesting greater than five levels smaller the normal post {{reply5}}.)
 
-[[div style="display: inline-block; background:  var(--bg-dark); border-width: 2px; border-style: solid; border-color: var(--bg-light); float:center; width:84%; padding:1px 15px; margin: 10px 10px 10px 40px"]]
+[[div class="parapost"]]
 
 ##green|**username**## Month/Day/Year (Day) Hour:Minute:Second #8digitnumber
 ------
@@ -238,7 +237,7 @@ blah
 
 [[/div]]
 
-[[div style="display: inline-block; background:  var(--bg-dark); border-width: 2px; border-style: solid; border-color: var(--bg-light); float:center; width:81%; padding:1px 15px; margin: 10px 10px 10px 60px"]]
+[[div class="parapost reply1"]]
 
 ##green|**username**## Month/Day/Year (Day) Hour:Minute:Second #8digitnumber
 ------
@@ -247,7 +246,7 @@ blah blah blah
 
 [[/div]]
 
-[[div style="display: inline-block; background:  var(--bg-dark); border-width: 2px; border-style: solid; border-color: var(--bg-light); float:center; width:78%; padding:1px 15px; margin: 10px 10px 10px 80px"]]
+[[div class="parapost reply2"]]
 
 ##green|**username**## Month/Day/Year (Day) Hour:Minute:Second #8digitnumber
 ------
@@ -259,21 +258,21 @@ boo
 [[collapsible show="+ Open Code" hide="+ Hide Code"]]
 [[code]]
 
-[[div style="display: inline-block; background:  var(--bg-dark); border-width: 2px; border-style: solid; border-color: var(--bg-light); float:center; width:84%; padding:1px 15px; margin: 10px 10px 10px 40px"]]
+[[div class="parapost"]]
 ##green|**username**## Month/Day/Year (Day) Hour:Minute:Second #8digitnumber
 ------
 
 blah
 [[/div]]
 
-[[div style="display: inline-block; background:  var(--bg-dark); border-width: 2px; border-style: solid; border-color: var(--bg-light); float:center; width:81%; padding:1px 15px; margin: 10px 10px 10px 60px"]]
+[[div class="parapost reply1"]]
 ##green|**username**## Month/Day/Year (Day) Hour:Minute:Second #8digitnumber
 ------
 
 blah blah blah
 [[/div]]
 
-[[div style="display: inline-block; background:  var(--bg-dark); border-width: 2px; border-style: solid; border-color: var(--bg-light); float:center; width:78%; padding:1px 15px; margin: 10px 10px 10px 80px"]]
+[[div class="parapost reply2"]]
 ##green|**username**## Month/Day/Year (Day) Hour:Minute:Second #8digitnumber
 ------
 
