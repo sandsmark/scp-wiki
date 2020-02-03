@@ -212,7 +212,7 @@ Date Created
 
 [[div class="content-type-description"]]
 
-[[module ListPages order="created_atDsc" limit="100"  tags="-admin -archived -artwork -author -contest -creepypasta -essay -goi-format -guide -hub -in-deletion -in-rewrite -news -orphaned -project -sandbox -scp -site -splash -supplement -tale -workbench" perPage="100" prependLine="[[include component:listpages-table-alt]]" appendLine="[[/table]]" separate="false"]]
+[[module ListPages rating=">=-10" order="created_atDsc" limit="100"  tags="-admin -archived -artwork -author -contest -creepypasta -essay -goi-format -guide -hub -in-deletion -in-rewrite -news -orphaned -project -sandbox -scp -site -splash -supplement -tale -workbench" perPage="100" prependLine="[[include component:listpages-table-alt]]" appendLine="[[/table]]" separate="false"]]
 [[row]]
 [[cell style="vertical-align: top;"]]
 %%title_linked%%
