@@ -33,6 +33,23 @@ I've been active here for a year, and finally posted the main hub for my canon. 
   border-radius: 5px;
   border: 1px solid black;
 }
+
+/* TAGS */
+#main-content .page-tags a {
+  line-height: 13px;
+  font-size: 11px;
+  border: solid 3px #55CDFC;
+  background: #F7A8B8;
+  color: white;
+  border-radius: 0.25rem;
+  margin: 0 0 .5rem .75rem;
+  padding: 0 0.3125rem 0.15625rem 0.3125rem;
+}
+ 
+.page-tags span {
+  border-top: .5rem solid transparent;
+}
+
 /* ARTWORK STUFF */
 .art a.collapsible-block-link {
   color: #b01;
