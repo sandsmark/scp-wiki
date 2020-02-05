@@ -11,6 +11,19 @@ a.collapsible-block-link { font-weight: bold; }
 .collapsible-block-content {
   text-align: justify;
 }
+.roundhr {
+  border-bottom: 5px solid #AAAAAA;
+  clip-path: polygon(
+    0% .2em,
+    .2em 0%,
+    calc(100% - .2em) 0%,
+    100% .2em,
+    100% calc(100% - .2em),
+    calc(100% - .2em) 100%,
+    .2em 100%,
+    0% calc(100% - .2em)
+    );
+}
 [[/module]]
 
 [[include :scp-wiki:component:black-highlighter-theme-dev]]
@@ -43,7 +56,8 @@ a.collapsible-block-link { font-weight: bold; }
 ------
 Thanks a ton, all!
 [[include :scp-wiki:info:end]]
-[[include :snippets:hr |type=round]]
+[[div class="roundhr"]]
+[[/div]]
 [[table style="border: none; width: 100%; margin: 10px"]]
 [[row]]
 [[cell style="width: 15%;"]]
@@ -65,7 +79,8 @@ If you are not a registered member of the Overseer Council, attempting to access
 [[/cell]]
 [[/row]]
 [[/table]]
-[[include :snippets:hr |type=round]]
+[[div class="roundhr"]]
+[[/div]]
 @@ @@
 @@ @@
 @@ @@
