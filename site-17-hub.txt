@@ -24,7 +24,10 @@ parent:canon-hub
 [[/=]]
 @@@@
 @@@@
-[[include :snippets:hr |type=boxline]]
+[div class="boxhr"]]
+[[/div]]
+[[div class="boxhrfront"]]
+[[/div]]
 @@@@
 @@@@
 [[# I]]
@@ -385,6 +388,16 @@ content: "> ";
 }
 .timeline a.collapsible-block-link {
   font-weight: bold;
+}
+.boxhr {
+  border-bottom: 1px solid #AAAAAA;
+  margin: 30px 0;
+}
+.boxhrfront {
+  border: 1px solid #AAAAAA;
+  height: 3px;
+  margin: -3px 4em 0;
+  background: #FFFFFF;
 }
 [[/module]]
 
