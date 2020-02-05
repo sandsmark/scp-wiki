@@ -229,17 +229,22 @@ FOUNDATION LEGAL DEPARTMENT
 [[/div]]
 
 [[module CSS]]
+/* Fix footnote superscript flying away: */
+.footnoteref, #page-content > sup {
+    top: 0em;
+}
 
+/* Remove clear on image block when >600px wide */
 @media (max-width: 979px) and (min-width: 768px) {
     #page-content div, #page-content div table {
     clear: none;
     }
 }
-
-    .scp-image-block.block-right {
+.scp-image-block.block-right {
     clear: none;
-    }
+}
 
+/* Stylized addendum blocks: */
 .addendum {
     margin: 0% 9% 0% 7%;
     padding: 10px 20px 10px 20px;
@@ -254,6 +259,7 @@ FOUNDATION LEGAL DEPARTMENT
 margin-left: 0em;
 }
 
+/* Alternate picture layouts for mobile and desktop: */
 .pictures4mobile {
     height: 0px;
     overflow: hidden;
