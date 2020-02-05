@@ -231,7 +231,7 @@ FOUNDATION LEGAL DEPARTMENT
 [[module CSS]]
 /* Fix footnote superscript flying away: */
 .footnoteref, #page-content > sup {
-    top: 0em;
+    top: -0.25em;
 }
 
 /* Remove clear on image block when >600px wide */
