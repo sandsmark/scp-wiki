@@ -6,6 +6,7 @@ parent:broken-masquerade-hub
 [[module CSS]]
 @import url("https://use.typekit.net/tqr1skr.css");
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:700|Poppins:400,600&display=swap');
+@import url("https://fontlibrary.org/face/comic-neue");
 
 /* WANDERERS' CSS */
 #page-content .border{
@@ -66,6 +67,15 @@ div.void{
     font-size: 260%; 
     font-weight: 700; 
     line-height: 38.1px; 
+}
+
+/* dado */
+
+div.dado{
+   color: #000000;
+   font-family: 'ComicNeueAngularRegular', 'MS Comic Sans', 'Comic Sans', sans-serif;
+   padding: 0;
+   font-size: 2em;
 }
 [[/module]]
 
