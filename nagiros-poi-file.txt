@@ -220,19 +220,7 @@ div#side-bar div.side-block {
 .credit-back {
     filter: hue-rotate(275deg);
 }
- 
-/* AYER'S INFO MODULE */
-:root {
-     --barColour: #000098;
-}
- 
-/* HERITAGE MODULE */
-.heritage-rating-module {
-    background-color: #000098;
-    border: solid 1px #ccc066;
-    box-shadow: 0 1px 3px rgba(0,0,0,.25);
-}
- 
+
 /* TAB STUFF */
 /* Courtesy of the Anderson Robotics Theme by Croquembouche, from which this was modified. */
  
@@ -607,7 +595,7 @@ html {
 }
 
 /* Extended bottom rating module */
-.page-rate-widget-box {
+.page-rate-widget-box, .creditRate {
   margin-bottom: 25px;
 }
 [[/code]]
