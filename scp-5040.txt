@@ -11,6 +11,18 @@ title:SCP-5040
 
 [[module CSS]]
 
+/* Fix footnote superscript flying away: */
+.footnoteref, #page-content > sup {
+    top: -0.25em;
+}
+
+/* Remove clear on image block when >600px wide */
+@media (max-width: 979px) and (min-width: 768px) {
+    #page-content div, #page-content div table {
+    clear: none;
+    }
+}
+
 .synopsis {
     margin: 25px 8% 25px 6%;
     padding: 2% 4% 2% 4%;
