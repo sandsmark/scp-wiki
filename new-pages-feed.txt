@@ -55,112 +55,13 @@ title:New Pages Feed
     .desktop-only { display: none; }
     .mobile-only { display: block; }
 }
-
-.contest-link {
-    border: 2px solid white;
-    background-color: #666;
-    padding: 0.25rem;
-    height: auto;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-       -moz-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-       -moz-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-    -webkit-border-radius: 10px;
-       -moz-border-radius: 10px;
-            border-radius: 10px;
-}
-
-.contest-link > a {
-    color: white;
-    font-weight: bold;
-    -webkit-border-radius: 10px;
-       -moz-border-radius: 10px;
-            border-radius: 10px;
-}
-
-.content-panel .panel-body {
-    position: relative;
-}
-
-.panel-body > div:nth-child(1) > p {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1px 1fr 1px 1fr;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1px;
-    grid-auto-rows: auto;
-    height: 100%;
-    margin-top: 0;
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-.panel-body > div:nth-child(1) > p > a {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-       -moz-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-       -moz-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-    height: 100%;
-    padding: 0.25em;
-    text-align: center;
-    background: #fff9f0 url(http://www.scp-wiki.net/local--files/component:theme/panel-bg-gradient-reverse.png) bottom repeat-x;
-    word-break: inherit !important;
-}
-
-.panel-body > div:nth-child(1) br {
-    display: none;
-}
-    
 [[/module]]
 
 [!-- SCP Block --]
 
-A list of all newly created pages in one list can be found [[[most-recently-created| here]]].
-
-~~~~
-
-[[div class="content-panel"]]
-[[div class="panel-heading"]]
-Random Contest Entries - The Contest Voting Period Ends February 8th
-[[/div]]
-[[div class="panel-body"]]
-
-[[module ListPages tags="+5000 -hub" perPage="6" limit="6" order="random" separate="false"]]
-%%title_linked%%
-[[/module]]
-[[div_ class="contest-link"]]
-[[[scp5000contesthub| Click here to see all entries!]]]
-[[/div]]
-[[/div]]
-[[div class="panel-footer"]]
-[!-- Placeholder --]
-[[/div]]
-[[/div]]
-
 [[div class="feature-block desktop-only"]]
+
+A list of all newly created pages in one list can be found [[[most-recently-created| here]]].
 
 [[div class="content-panel standalone left-column"]]
 [[div class="content-type-title"]]
@@ -169,7 +70,7 @@ Newly Created SCPs
 [[div class="content-type-description"]]
 
 [!-- Temporarily removing name="scp-*" from below to show 5000 contest entries. Will restore after. --]
-[[module ListPages rating=">=-10" tags="-001-proposal -admin -artwork -author -contest -creepypasta -essay -former-author -goi-format -guide -hub -in-deletion -in-rewrite -news -orphaned -project -sandbox -site -splash -supplement -tale -workbench" order="created_at desc" separate="false"  perPage="51" limit="255" urlAttrPrefix="scps" prependLine="||~ Page ||~ [[size 0%]]Date Created[[/size]]📆︎ ||~ [[size 0%]]Comments[[/size]]💬︎ ||"]]
+[[module ListPages rating=">=-10" tags="-001-proposal -admin -artwork -author -contest -creepypasta -essay -goi-format -guide -hub -news -orphaned -project -sandbox -site -splash -supplement -tale -workbench" order="created_at desc" separate="false"  perPage="51" limit="255" urlAttrPrefix="scps" prependLine="||~ Page ||~ [[size 0%]]Date Created[[/size]]📆︎ ||~ [[size 0%]]Comments[[/size]]💬︎ ||"]]
 || %%title_linked%% || %%created_at|%e%%@<&nbsp;>@%%created_at|%b %R%% || %%comments%% ||
 [[/module]]
 [[/div]]
@@ -186,7 +87,7 @@ Tales, GoI Formats, and Artwork Pages
 [[/div]]
 [[div class="content-type-description"]]
 
-[[module ListPages rating=">=-10" tags="tale goi-format artwork 001-proposal -in-deletion -in-rewrite" order="created_at desc" separate="false" perPage="35" limit="150" urlAttrPrefix="tale_goi_art" prependLine="||~ Page ||~ [[size 0%]]Date Created[[/size]]📆︎ ||~ [[size 0%]]Comments[[/size]]💬︎ ||"]]
+[[module ListPages rating=">=-10" tags="tale goi-format artwork 001-proposal" order="created_at desc" separate="false" perPage="35" limit="150" urlAttrPrefix="tale_goi_art" prependLine="||~ Page ||~ [[size 0%]]Date Created[[/size]]📆︎ ||~ [[size 0%]]Comments[[/size]]💬︎ ||"]]
 || %%title_linked%% || %%created_at|%e%%@<&nbsp;>@%%created_at|%b %R%% || %%comments%% ||
 [[/module]]
 [[/div]]
@@ -206,7 +107,7 @@ Other Types of Pages
 [[/div]]
 [[div class="content-type-description"]]
 
-[[module ListPages rating=">=-10" category="*" tags="-scp -tale -goi-format -in-deletion -in-rewrite  -artwork admin archived author contest creepypasta essay former-author guide hub news orphaned project sandbox site splash supplement template theme workbench " order="created_at desc" separate="false" perPage="35" limit="150" urlAttrPrefix="other" prependLine="||~ Page ||~ [[size 0%]]Date Created[[/size]]📆︎ ||~ [[size 0%]]Comments[[/size]]💬︎ ||"]]
+[[module ListPages rating=">=-10" category="*" tags="-scp -tale -goi-format -artwork admin archived author contest creepypasta essay guide hub news orphaned project sandbox site splash supplement template theme workbench " order="created_at desc" separate="false" perPage="35" limit="150" urlAttrPrefix="other" prependLine="||~ Page ||~ [[size 0%]]Date Created[[/size]]📆︎ ||~ [[size 0%]]Comments[[/size]]💬︎ ||"]]
 || %%title_linked%% || %%created_at|%e%%@<&nbsp;>@%%created_at|%b %R%% || %%comments%% ||
 [[/module]]
 [[/div]]
@@ -223,7 +124,7 @@ Untagged Pages
 [[/div]]
 [[div class="content-type-description"]]
 
-[[module ListPages rating=">=-10" tags="-admin -archived -artwork -author -contest -creepypasta -essay -former-author -goi-format -guide -hub -in-deletion -in-rewrite -news -orphaned -project -sandbox -scp -site -splash -supplement -tale -workbench" order="created_at desc" separate="false" perPage="50" limit="150" urlAttrPrefix="untagged" prependLine="||~ Page ||~ [[size 0%]]Date Created[[/size]]📆︎ ||~ [[size 0%]]Comments[[/size]]💬︎ ||"]]
+[[module ListPages rating=">=-10" tags="-admin -archived -artwork -author -contest -creepypasta -essay -goi-format -guide -hub -in-deletion -in-rewrite -news -orphaned -project -sandbox -scp -site -splash -supplement -tale -workbench" order="created_at desc" separate="false" perPage="50" limit="150" urlAttrPrefix="untagged" prependLine="||~ Page ||~ [[size 0%]]Date Created[[/size]]📆︎ ||~ [[size 0%]]Comments[[/size]]💬︎ ||"]]
 || %%title_linked%% || %%created_at|%e%%@<&nbsp;>@%%created_at|%b %R%% || %%comments%% ||
 [[/module]]
 [[/div]]
