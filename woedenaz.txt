@@ -335,6 +335,8 @@ div.btn-container > a > span {
     [[/div]]
 [[/div]]
 
+====
+
 [[div_ class="WoedContainer Tech"]]
 [[div_ class="WholeContainer"]]
 [[div_ class="SkipsContainer"]]
@@ -390,7 +392,50 @@ Classy Components
     [[/div]]
     [[div_ class="scps-block"]]
         [[div_ class="foldable-list-container"]]
-    		[[collapsible folded="yes" show="Discord Styling" hide="Discord Styling"]]
+    	[[collapsible folded="yes" show="Blacklight Box" hide="Blacklight Box"]]
+[http://www.scp-wiki.net/component:blacklight-box Click to Use!]
+[[image http://scp-wiki.wikidot.com/local--files/fragment:woedenaz-tech/blacklight-box.png]]
+    	[[/collapsible]]
+[[div_ class="preview_img"]]
+[[image http://scp-wiki.wikidot.com/local--files/fragment:woedenaz-tech/blacklight-box-preview.png]]
+[[/div]]
+    [[/div]]
+    [[div_ class="foldable-list-container"]]
+    	[[collapsible folded="yes" show="Responsive Tables" hide="Responsive Tables"]]
+[http://www.scp-wiki.net/component:responsive-tables Click to Use!]
+[[html]]
+<head>
+<style type="text/css">
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0 0 0 #000;
+    -moz-box-shadow: 0 0 0 #000;
+    box-shadow: 0 0 0 #000;
+    margin: 0;
+    padding: 0;
+}
+video {
+    width: 100%;
+}
+</style>
+</head>
+<figure>
+    <video preload="" controls="controls" width="628" height="396" autoplay loop muted>
+     <source src="http://www.scp-wiki.net/local--files/component:responsive-tables/Responsive%20Tables.mp4">
+     <source src="http://www.scp-wiki.net/local--files/component:responsive-tables/Responsive%20Tables.webm">
+     <p class="warning">Your browser does not support HTML5 video.</p>
+    </video>     
+</figure>                       
+[[/html]]
+    	[[/collapsible]]	
+[[div_ class="preview_img"]]
+[[image http://scp-wiki.wikidot.com/local--files/fragment:woedenaz-tech/responsive-table-preview.png]]
+[[/div]]
+    [[/div]]
+    [[div_ class="foldable-list-container"]]
+    	[[collapsible folded="yes" show="Discord Styling" hide="Discord Styling"]]
 [http://www.scp-wiki.net/component:discord-chat Click to Use!]
 [[include :scp-wiki:component:discord-chat-source |inc-source= --] ]]
 
@@ -576,6 +621,15 @@ Snazzy Themes
 [[/collapsible]]
 [[div_ class="preview_img"]]
 [[image http://scp-wiki.wdfiles.com/local--files/fragment%3Awoedenaz-tech/WL_Theme.png]]
+[[/div]]
+[[/div]]
+[[div_ class="foldable-list-container TFT"]]
+[[collapsible folded="yes" show="The Foundation Theme" hide="The Foundation Theme"]]
+[http://www.scp-wiki.net/component:the-foundation-theme Click to Use!]
+[[image http://scp-wiki.wdfiles.com/local--files/fragment%3Awoedenaz-tech/TF_Theme.png]]
+[[/collapsible]]
+[[div_ class="preview_img"]]
+[[image http://scp-wiki.wdfiles.com/local--files/fragment%3Awoedenaz-tech/TF_Theme.png]]
 [[/div]]
 [[/div]]
 [[div_ class="foldable-list-container UIU"]]
