@@ -1,0 +1,408 @@
+title:Ulysses B. Donkman and the Clockwork Bandits
+[[module CSS]]
+/*
+    Aces and Eights Theme
+    [2018 Wikidot Theme]
+    Created by rounderhouse, with help from Uncle Nicolini.
+    Based on SCP Sigma 9 Theme created by Aelanna and Dr Devan, and MC&D Theme created by Randomini.
+    The Aces and Eights logo was created by Rounderhouse, based off : https://thenounproject.com/term/poker-chip/170698/ . Licensed under CC BY 3.0
+*/
+ 
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Six+Caps');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC');
+ 
+#header{
+    background: url(null)
+}
+#header:before{
+display:block;
+position: absolute;
+width: 100px;
+height: 100px;
+top: 15%;
+left:2%;
+z-index: -1;
+content: "";
+background:url(http://scp-wiki.wdfiles.com/local--files/component%3Aaces-and-eights-theme/chip.png);
+background-repeat: no-repeat;
+background-size: 100px 99px;
+background-position: 0px 0px 0px;
+z-index: -20;
+}
+ 
+#content-wrap {z-index: 2;}
+ 
+/* BODY */
+body {
+    background: #eee4d5 !important;
+}
+ 
+.main-body-div{
+    width: 92.7%;
+    line-height: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    vertical-align: top;
+    transition: all .7s;
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("http://scp-wiki.wdfiles.com/local--files/component%3Aaces-and-eights-theme/paper.jpg");
+}
+ 
+#header h1 a {
+    font-size: 190%;
+    color: transparent;
+    text-shadow: none;
+}
+ 
+div#container-wrap {
+    background: url(http://scp-wiki.wdfiles.com/local--files/component%3Aaces-and-eights-theme/header.png) top left repeat-x;
+}
+ 
+#header h1 a::before {
+    font-family: 'Playfair Display SC', serif;
+    content: "Aces and Eights";
+    color: #000000;
+    padding-bottom: 50px;
+}
+ 
+#header h2 span {
+    font-size: 175%;
+    color: transparent;
+    text-shadow: none;
+}
+#header h2 span::before {
+    font-family: 'Playfair Display SC', serif;
+    content: "Astounding Tales: Fresh from the west!";
+    color: #000000;
+    padding: 0px 0px 00px;
+}
+ 
+#search-top-box-input, #search-top-box input.empty,
+#search-top-box-form input[type=submit] {
+    transition: 0.2s linear;
+}
+ 
+#search-top-box-input, #search-top-box input.empty {
+    background-color: #B4935D;
+    border: 1px solid #DBC39F;
+    border-radius: 0;
+    color: #000;
+}
+ 
+#search-top-box-input:hover, #search-top-box-input:focus,
+#search-top-box input.empty:hover, #search-top-box input.empty:focus {
+    outline: 0;
+    border: 1px solid #000;
+    background-color: #B4935D;
+    box-shadow: 0 1px 3px rgba(0,0,0,.8);
+}
+ 
+#search-top-box-form input[type=submit] {
+    outline: 0;
+    height: 1.65em;
+    border: 1px solid #DBC39F;
+    border-radius: 0;
+    color: #000;
+    background: #B6925E;
+ 
+    position: relative;
+    top: -1px;
+ 
+    box-shadow: none;
+}
+ 
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    border: 1px solid #000;
+    border-radius: 0;
+    background: #B6925E;
+}
+ 
+#search-top-box-form input[type=submit]:active {
+    padding: 0 0.5em;
+    border: 2px solid #DBC39F;
+    border-radius: 0;
+    color: #000;
+    background: #B6925E;
+}
+ 
+#login-status, #login-status a {
+    color: #000;
+    border-color: #000;
+}
+ 
+#side-bar .side-block {
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    box-shadow: none !important;
+    background: #e7d8c2;
+    margin-bottom: 15px;
+    color: black;
+}
+ 
+h1, #page-title {
+    color: #000;
+    padding: 0 0 0.25em;
+    margin: 0 0 0.6em;
+    font-weight: heavy;
+    font-family: 'Playfair Display SC', serif;
+}
+ 
+blockquote,
+div.blockquote {
+    border-color: #444;
+    background-color: #e7d8c2;
+    color:#000;
+}
+ 
+/* inputs */
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+    border-top: 1px solid #000000;
+}
+ 
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    background: #bc9055;
+    color: #ffffff;
+}
+#top-bar ul li ul a, #top-bar a:hover {
+    color: #8db600;
+}
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: #680000; /* top bar hover background color */
+}
+/*nico was here*/
+:root {
+    --hyperlink: #824565;
+    --hyperlink-visited: #63173f;
+}
+ 
+@media (max-width: 479px) {
+#search-top-box-input,
+#search-top-box-form {
+    display: none;
+}
+ 
+#header h1 a {
+    font-size: 90%;
+}
+ 
+#header h2 span{
+font-size: 55%;
+}
+ 
+#header {
+    background-position: 0 5.5em;
+    background-size: 55px 55px;
+}
+ 
+#header:before{
+width: 60%;
+height: 50%;
+background-size: 55px 55px;
+background-position: 0px 0px 20px;
+}
+}
+[[/module]]
+ 
+[[include :scp-wiki:info:start]]
+ 
+**Ulysses B. Donkman and the Clockwork Bandits** by: [[*user DrAkimoto]] & [[*user MalyceGraves]]
+@@ @@
+[http://www.scp-wiki.net/scp-4768 Donkman Article]
+@@ @@
+[http://www.scp-wiki.net/drakimoto-s-author-page ~DrAkimoto's Author Page~]
+[[include :scp-wiki:info:end]]
+>
+[[div style="border:solid 1px #999999; background:#FFF8E7; padding:5px; margin-bottom: 10px;"]]
+++++ Notice from the Foundation Historical Analysis Division
+[[include component:image-block
+    name=donk2|
+    caption=Photograph of SCP-4768 and Herman Schroeder found in the SCP-4768 cache, circa 1875.|
+    width=210px
+]]
+@@ @@
+@@ @@
+On 2003/04/29, the Historical Analysis Division discovered and confirmed SCP-4768 activity in and around New Orleans circa 1875. During the investigation, agents discovered a small cache believed to belong to SCP-4768. This cache included: newspaper clippings, one photograph, an iron gear, and a small vial of a previously undiscovered liquid compound. The headlines from the aforementioned newspaper clippings read as follows: **"Strange Heroes Save the Day!**, The unlikely story of a train robbery gone wrong." and "**Dr. Heart Proven Fraud!**, Miracle Elixir Turns Out to be Moonshine."
+@@ @@
+All evidence is available to personnel with 3/4768 Clearance at the Site-51 Archives.
+@@ @@
+[[/div]]
+>
+[[=]]
+[[html]]
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Train_Icon_bw.svg" style="height:75px; width:75px; padding-left: 0%;">
+[[/html]]
+[[/=]]
+"–and that's when I told the sheriff, if ya' not careful he'll bite back!" Ulysses B. Donkman relaxes into his seat on the bench as the small private stateroom erupts into laughter. The man to his left, a large Germanic fellow dressed in a smart suit and a small bowler cap, slaps Donkman on the back with a meaty hand as he catches his breath from laughing.
+
+"You must tell us another, Herr Donkman!" Herman Schroeder continues laughing, pausing only to drain the contents from his glass before setting it on the table between the benches. Donkman contemplates his own glass for a moment before glancing around at the other gentlemen in the room.
+
+"I reckon I'd be more interested in you and the good doctor here. Ya' done said you had business in the New Orleans, of what nature would it be?"
+
+Across from him, a much smaller man in an expensive-looking suit sits up and waves his glass expansively at Donkman. "Well now good fellow, I have discovered a revolutionary new elixir capable of exponentially increasing the efficiency of the steam engine."
+
+"Well, that surely is a mouthful, Doctor Heart." Donkman raises an eyebrow at him, before turning back to the man on his own bench. "What's your involvement, Mr. Schroeder?"
+
+The large German grins and pulls open one side of his jacket revealing a holstered pistol. "The Doctor has hired me to deliver himself and his cargo to the city of New Orleans."
+
+"One can never be too careful, Mr. Donkman, would you not agree?" Dr. Heart glances nervously at Mr. Schroeder's weapon before looking back across at Donkman. In response, Donkman raises his glass of whiskey in a salute.
+
+"Well hell, I'll drink to that. I, too, pride myself on bein' prepared for the unexpected." He takes a sip from his glass before using it to point at Schroeder. "I suppose you know how to use that thing? It sure is fancy."
+
+Before Schroeder can respond, the Doctor leans forward to interrupt. "Are you traveling to New Orleans as well, Mr. Donkman?"
+
+Donkman grins at Schroeder, giving a placating wave at his frown before turning back to the gentleman across the table. "That I am, Doctor. If'n ya' ask me, there ain't quite a place like it. Have you ever been?"
+
+"No, I can't say that I have." He indicates his traveling companion. "Though it is my understanding that Mr. Schroeder is quite familiar with the city."
+
+The German nods and pats his suit jacket back into place. "That is correct. I've spent quite some time there ushering clients about. In fact, I was planning on going back to New Orleans anyway, when I came into the employ of Dr. Heart."
+
+Donkman nods sagely at them both. "That reminds me of the time–"
+
+The whole car quakes as if from a powerful impact, and Donkman is cut short by the whiskey in his glass sloshing out across his hand. He looks at his glass with consternation, then his attention is jerked towards the hallway as faint screams can be heard from the next car over.
+
+"Oh my!" Dr. Heart exclaims, looking worriedly about and glancing nervously out the compartment's small window. Schroeder begins to shift away from the table, his hand sliding into his jacket and the concealed pistol.  "Wait here, Dr. Heart, I will inquire."
+
+He stands and steps across to the door, where he cautiously cracks it open and looks out into the hallway. A moment passes as Donkman, too, climbs to his feet and steps up behind the German. "I reckon I'll join ya', Mr. Schroeder."
+
+The doctor grimaces at being left alone and clutches for his small bag. "Do be careful you two."
+
+Donkman turns to give him a wink before following Schroeder out into the walkway.
+------
+
+"Everyone remain calm, this is not a robbery!" The Clockwork bandit's voice came out with a puff of steam and the grinding of both seen and unseen gears. It steps clear of the debris that is all that remains of the shattered door at the back of the coach, and it moves out of the way for another clockwork contraption to step up beside it.
+
+"We are looking for one Dr. Heart. If he is given to us, no one will be hurt." The second automaton's voice hisses similarly to it's companion's, but with a slightly higher and nasally pitch to it. They both scan the assembled passengers through shadowed black lenses, obviously looking for someone.
+
+Donkman and Schroeder open the compartment's door in time to hear the Clockwork's pronouncement. Donkman leans back and whispers quietly at Schroeder. "Go'n get the Doctor, move him up to the First Class baggage car."
+
+Schroeder hesitates for a moment, eyeing the two mechanical bandits with more than a bit of incredulity. "Aye, but what of yo–"
+
+Donkman cuts him off with a light jab of the elbow to the side. "Quick now, no time for that."
+
+Schroeder frowns and pauses as if he would say something more, before turning and re-entering the other passenger car.
+
+Both Clockworks are moving forward through the compartment, roughly shoving passengers out of the way. The first bandit grabs one of the passengers and lifts the unfortunate man free from one of the benches. "He said, where is the doctor!?"
+
+A spout of steam bursts from Clockwork's shoulder as his arm splits in two at the forearm, revealing 3 gun barrels within the appendage. The passenger looks agape at the weapon before shaking his head and spluttering incoherently.
+
+"I will not ask again, where is the doctor!?" The first Clockwork's voice has taken on a grating edge as it continues to shake the passenger about, knocking his feet against the side of the bench.
+
+The other automaton glances around the compartment. "I think they need a bit of convincing, brother."
+
+The barrels in the first Clockwork's arm begin to rotate, "I'd be happy to oblige." After a moment, the barrels begin discharging rounds into the ceiling, the deafening roar of the weapon filling the space. The passengers, already terrified, shrink further away from the two automatons.
+
+After a score or so bullets riddle the roof of the compartment, the Clockwork stops firing, and one of the civilians calls out, "I... I think he's up there! Got his own private room!"
+
+The second Clockwork turns towards the civilian and nods. "You should have been useful first." A long blade ejects from Clockwork's wrist, and it uses it to behead the civilian. The first Clockwork casually tosses its terrified passenger aside, and the both of them make their way to the train car door, where Donkman is leaning casually against the frame.
+
+"Now let's take it easy there partner, you wouldn't–"
+
+The second Clockwork points its blade towards Donkman, cutting him off mid-comment. "Move!"
+
+Donkman sighs as he straightens. "Can't say I'dn't warn ya'."
+
+Suddenly, Donkman moves, ducking under the extended blade and grabbing the Clockwork by the wrist. With a deft chop of his free hand at the Clockwork's elbow and a quick shove upwards on its wrist, he embeds the Clockwork's blade into the ceiling.
+
+It struggles against the wooden slats of the roof, but the blade is jammed too far for it to budge. "Dammit, I am stuck!"
+
+With a grace uncommon in men of his size, Donkman glides past the jerking Clockwork and steps inside the firing line of the first one as the barrels in its gun begin to rotate. Donkman grabs a hold of the frame around the barrels with both hands and shoves, aligning the weapon on the second Clockwork just as the barrels begin discharging more bullets. The Clockwork jerks violently as the bullets slam into it, then it slumps into immobility like a broken marionette hanging from the ceiling.
+
+"How dare–" is all the first Clockwork gets out before Donkman punches it with such force that its bottom jaw is ripped clear, revealing several gears where its jaw muscles should be. It stumbles back from the force of the blow, and falls heavily to the ground.
+
+"I reckon we started on the wrong foot." Donkman quips as he stomps down on the Clockwork's head with an audible crunch, crushing the metal carapace protecting its brain.
+
+Donkman adjusts his suit and turns to leave the train car, leaving the second Clockwork dangling lifelessly from the ceiling, a small pool of blood and oil forming underneath it.
+------
+As Donkman enters the first-class car he is greeted by two more Clockwork bandits rummaging through Dr. Heart's personal belongings.
+
+He coughs politely. "Is there something I can help you gentlemen find?"
+
+Both bandits stop examining the Doctor's effects to turn and face Donkman. The first looks towards the other.  "This is not Dr. Heart."
+
+"What an astute observation, my not-so-human friend." Donkman leers at the both of them as the second advances towards him. "Where is that thieving doctor!?" Steam pours from the Clockwork's shoulder as its arm segments and separates revealing a double-barreled shotgun.
+
+Donkman sighs and spreads his hands in another placating gesture. "There's no need for all of that, how's 'bout we sit a spell– have a drink?" He steps over to the drink cart as the Clockwork swivels the barrel of its gun towards him.
+
+Steam and a grinding noise issues from somewhere inside the first Clockwork. "We do not have time for this, just kill him already."
+
+With a shake of his head, Donkman stops and shifts around to face the second Clockwork, something hidden in his left hand. "If'n you go lookin' for trouble, trouble's gonna' find ya'."
+
+As the second Clockwork fires his shotgun prosthetic, Donkman dodges to the side, tossing a bottle of clear alcohol from the cart into the path of the oncoming buckshot. The bottle explodes, coating both Clockworks in burning alcohol and bits of shattered glass.
+
+Both Clockworks begin screaming and flailing about. Donkman takes out a cigarette case and flicks it open to select one of the slender sticks. He watches the antics of the burning automatons as he casually lights his cigarette and puts away the case. He takes a deep drag before he steps forward and kicks one of the bandits heavily in the side. The kick sends it crashing into the other, and then through the big bay window in the side of the car.
+
+He takes a few more drags on his cigarette then flicks it out into the wind after them with a sigh. "I reckon it'sa' time I have a talk with the good Doctor."
+-----
+Donkman enters the storage car to find Dr. Heart sitting on some luggage near the back of the car.  Schroeder stands before him in the walkway, his gun out and pointed at the floor.
+
+After the briefest of moments, the Doctor recognizes Donkman, leaps to his feet, and brushes past Schroeder towards him. "Oh thank goodness, you made it."
+
+Schroeder holsters his gun with a nod. "Jah, we thought you were dead, especially with all the screaming from the First Class cabin."
+
+Donkman chuckles. "It'll take more than common crook to stop 'ol Donkman."
+
+The Doctor motions toward the three clockwork bandits crumpled against the far wall in their own spreading pool of blood and oil.  "I'd say these monsters are far from common."
+
+With an appreciative nod towards Schroeder's competency with his firearm, Donkman turns towards the diminutive man. "Now Doctor, I reckon ya' said you was the one who discovered this miracle elixir of yours."
+
+The Doctor shrinks back a bit from Donkman, suddenly uncomfortable. "I– Yes, that's correct."
+
+Donkman frowns and gestures towards the broken Clockworks. "I reckon these banditos were mistaken in callin' ya' a thief then?"
+
+Schroeder steps between Donkman and the Doctor, his hand sliding underneath his suit jacket. "What are you trying to say?"
+
+With another sigh and a placating gesture with his hands, Donkman shakes his head. "Well, it's seemin' a mite suspicious that these bandits only lookin' for the Doctor here, wouldn't ya' say?"
+
+Schroeder takes another step towards Donkman, pulling his gun free from its holster. "I do not like what you're impl–"
+
+The doctor steps forward and places a calming hand on Schroeder's arm. "It's true, I hate to admit it, but it's true. They hired me to help them create some dastardly device– I couldn't let them do it. I snuck out in the middle of the night and took the elixir with me. I re–"
+
+The Doctor's confession is interrupted as the cargo door in the side of the car is ripped from the wall, and a huge Clockwork bandit climbs through into the storage compartment.
+ 
+"Oh god!" The Doctor shrinks away as the ghastly Clockwork behemoth hisses and clanks into the car. Schroeder's arm jerks up and as he levels his pistol on the thing.
+
+"Get behind m–" is all he could get out before the Colossus wraps its large hands around the both of them, tossing the two across the room to crash into the train car's far wall.
+
+Donkman snorts as he squares up to the monstrosity. "Well I'll be dammed, I reckon ya' do the eatin' for the lot of 'em."
+
+The mechanical giant roars, clouds of steam rising from its joints as it flexes and leans forward. "Give me what is stolen. Give me now!" With another inarticulate roar, it charges down the alley, knocking luggage and storage carts aside. Donkman calmly pulls a red cape from within his jacket and begins a matador taunt towards the charging Colossus.
+
+"Andele!" He yells as the thing charges through the cape and crashes into the wall behind him. The whole car shakes with the impact, and Donkman glances ruefully out at the landscape speeding by before turning again towards the hulking thing of cogwork and muscle.
+
+"Certainly a big boy like you can do better than that, can't ya'?" Donkman taunts the bandit again as it charges towards him. At the last moment, he yanks the cape out of the way, revealing the massive hole in the side of the car. Unable to slow in time, the Colossus charges straight through the hole to fall screaming into the night.
+
+Donkman shakes his head as he follows the thing's trajectory. "Simple fella, didn't even see it comin'."
+
+He grins and turns away to walk up to where the Doctor and Schroeder lay stunned against the wall. He picks up the Doctor's bag and reaches his hand inside before nudging both of them with his foot. Schroeder groans, but the Doctor scrambles to his feet.
+
+"Where is it!? Did they take it?" His voice is shrill with worry as he begins to search frantically about near him.
+
+Donkman makes a polite sound and holds up the Doctor's bag. "If'n you mean this, I suppose not." He hands the bag to Dr. Heart, who immediately looks relieved and begins digging through it. After a moment, he looks up at Donkman.
+
+"Mr. Donkman, I cannot thank you enough. You truly are a gentleman in my book."
+
+Schroeder groans as he climbs to his feet beside the Doctor. "Jah, a true hero!"
+
+At that, the train whistle blows its mournful wail, preempting any reply from Donkman. "Next stop, New Orleans Station!" the conductor can be heard calling from the next train car.
+
+Donkman nods and brushes the already impeccable thighs of his trousers. "Well, y'all take care of yourselves now. Don't go stirring' trouble were ya' don't belong." At that, he turns and walks back towards his seat in the First Class cabin. As the train pulls into the station Donkman puts Dr. Heart's elixir back into his pocket, straightens his jacket, and slicks back his mane.
+@@ @@
+[[=]]
+[[html]]
+<img src="http://topia.wikidot.com/local--files/drakimotosdonkument/1581265321378.png" style="height:75px; width:75px; padding-left: 0%;">
+[[/html]]
+[[/=]]
+@@ @@
+[[=]]
+[[size 80%]][http://scp-wiki.net/scp-4768 << SCP-4768: The Tall Tales of Ulysses B. Donkman] 
+♦ **Ulysses B. Donkman and the Clockwork Bandits** ♦
+Ulysses B. Donkman and the Sarkic Swamp >>[[/size]]
+[[/=]]
