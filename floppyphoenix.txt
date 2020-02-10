@@ -3,17 +3,13 @@ title:Lt. Flops' Author Page
 
 [[module CSS]]
 /* LISTPAGES EXCEPTION */
- .preview .span,
- .infobox{
-     display: none !important;
-}
+ .preview .span, .infobox{ display: none !important; }
 
 /* PAGE TITLE */
- #page-title{
-     display: none;
-}
+ #page-title{ display: none; }
 
 /* GLOBAL EDITS */
+body{ color: rgb(12, 12, 12); }
  #header h1 a {
      display: block;
      margin: 0;
@@ -28,7 +24,7 @@ title:Lt. Flops' Author Page
      letter-spacing: 0.9px;
 }
  #header h1 a::before {
-     content: "Lt. Flops' Author Page";
+     content: "Lt. Flops’ Author Page";
      font-size: 90%;
      color: #f8f8f8;
      letter-spacing: -0.02em;
@@ -54,34 +50,39 @@ title:Lt. Flops' Author Page
      text-shadow: 1px 1px 1px black;
      text-shadow: 1px 1px 1px rgba(0,0,0,.8);
 }
-body{ color: rgb(12, 12, 12); }
 
 /* DIV BLOCKS */
- .quote-block, blockquote{
-     border: 3px double #999;
-     background-color: #f4f4f4;
-     padding: .25em 1em;
-     margin-bottom: 1em;
+blockquote{ border: 3px double #999; }
+div.quote-block{
+    border: 3px double #999;
+    background-color: #f4f4f4;
+    padding: 0 1em;
+    margin: 1em 3em;
+}
+@media (max-width: 479px) { 
+    div.quote-block{ margin: 1em 0; } 
+}
+@media (min-width: 480px) and (max-width: 580px) { 
+    div.quote-block{ margin: 0.5em; } 
 }
  .header{
      border: 1px solid #999;
      background-color: #FFC0CB;
-     padding: .25em 1em;
-     margin-bottom: 1em;
+     padding: 0 1em;
+     margin: 1em 0;
      text-align: center;
 }
  .ko-fi-link{
      display: inline-block;
      text-align: center;
      width: 100%;
+     margin: 0;
      padding: .5em 0;
      font-size: 140%;
      text-shadow: 1px 3px 1px rgba(0, 0, 0, .3);
      font-weight: 700;
 }
- .ko-fi-link a:hover{
-     text-decoration: none !important;
-}
+ .ko-fi-link a:hover{ text-decoration: nonet; }
  .scp-showcase{
      font-size: 125%;
      color: darkred;
@@ -89,13 +90,13 @@ body{ color: rgb(12, 12, 12); }
 }
 
 /* FORMATTING */
- .collapsible-block-link{
-     font-weight: bold;
-}
+ .collapsible-block-link{ font-weight: bold; }
  hr{
-     margin: 1em 0;
-     padding: 0;
+     display: block;
      border: 0;
+     padding: 0;
+     margin: 1em 0;
+     height: 1px;
 }
 
 /* TABS */
@@ -125,44 +126,46 @@ body{ color: rgb(12, 12, 12); }
 [[/module]]
 
 [[=]]
-+ Lt. Flops' Author Page
++ Lt. Flops’ Author Page
 [[/=]]
 ----
 > **{{OPENING ENTITY OF INTEREST FILE #9731}}. . .**
 
 > **{{AN ADDITION WAS ADDED SINCE YOU LAST VIEWED THE FILE. READ IT?}}**
 
+[[div class="quote-block"]]
 [[module ListUsers users="."]]
-> [[=]]
-> +++ INTERVIEW LOG
-> [[/=]]
-> ----
-> = **[BEGIN LOG]**
-> ----
-> **%%title%%:** I just don't think a //bird// could pose a threat to global normalcy.
-> 
-> **Interrogator:** You clearly have never had a flock of sky-demons rain faeces Armageddon on you like it's the Battle of Agincourt.
-> 
-> **%%title%%:** That's an oddly specific comparison.
-> 
-> **Interrogator:** Look, %%title%%, this isn't the type of bird you protect your Doritos from at the beach. This is a merciless enemy with a penchant to absolutely godzillafy our shit up.
-> 
-> **%%title%%:** I don't think–
-> 
-> **Interrogator:** This ain't a tea party, princess. This is a war. And if you're not with us, then you're against us. Guards, take this heathen away.
-> 
-> **%%title%%:** Wh– Get your hands off me! Nobody's gonna //believe// this log when they read it, you know! 
-> 
-> **Interrogator:** //[Laughing.]//
-> 
-> [[size 90%]]**%%title%%:** //[Distant.]// Besides! I– It's not written well enough![[/size]]
-> 
-> [[size 75%]]**%%title%%:** //[Even more distant.]// Please, I'm innocent![[/size]]
-> 
-> **Interrogator:** You know what they say. Chirp chirp, motherfuckers. //[To security personnel.]// Sic 'em.
-> ----
-> = **[END LOG]**
+[[=]]
++++ INTERVIEW LOG
+[[/=]]
+----
+= **[BEGIN LOG]**
+----
+**%%title%%:** I just don't think a //bird// could pose a threat to global normalcy.
+
+**Interrogator:** You clearly have never had a flock of sky-demons rain faeces Armageddon on you like it's the Battle of Agincourt.
+
+**%%title%%:** That's an oddly specific comparison.
+
+**Interrogator:** Look, %%title%%, this isn't the type of bird you protect your Doritos from at the beach. This is a merciless enemy with a penchant to absolutely godzillafy our shit up.
+
+**%%title%%:** I don't think–
+
+**Interrogator:** This ain't a tea party, princess. This is a war. And if you're not with us, you're against us. Guards, take this heathen away.
+
+**%%title%%:** Wh– Get your hands off me! Nobody's gonna //believe// this log when they read it, you know! 
+
+**Interrogator:** //[Laughing.]//
+
+[[size 90%]]**%%title%%:** //[Distant.]// Besides! I– It's not written well enough![[/size]]
+
+[[size 75%]]**%%title%%:** //[Even more distant.]// Please, I'm innocent![[/size]]
+
+**Interrogator:** You know what they say. Chirp chirp, motherfuckers. //[To security personnel.]// Sic 'em.
+----
+= **[END LOG]**
 [[/module]]
+[[/div]]
 
 > **{{OPENING FILE}}. . .**
 
@@ -213,13 +216,15 @@ Ah, they're gone. Anyway, //apparently//, this is the place where I get to show 
 ----
 **Floppy Says:** In the spirit of collaboration: I grant any writer, artist, or otherwise, full permission to use or depict the SCPs, concepts, characters, task forces, locations, or events created by me in your own SCP Wiki work. Drop a link my way; maybe I'll like it, or give you some pointers on how to execute it best!
 ----
-> = [[size 125%]]**MY NEWEST ARTICLES**[[/size]]
-> 
-> **1. [TALE COLLAB]** 🐍 **[[[broken-masquerade-epistolary|Snippets of an Unveiled World]]]** //with [[[*http://www.scp-wiki.net/researcher-nyka-s-file|Nykacolaquantum]]] and other collaborators//
-> **2. [TALE]** 📺 **[[[a-scene-from-a-meme|A Scene From A Meme(-ory)]]]** //with [[[*http://www.scp-wiki.net/dr-mews-personnel-file|Mew-ltiverse]]]//
-> **3. [TALE]** ☠️ **[[[a-necromantic-prelude|A Necromantic Prelude]]]**
-> **4. [SCP COLLAB]** 💭 **--[[[scp-4428|SCP-4428:]]]-- [[span style="font-family: 'Courier', monospace; font-size: 120%; margin: 2px 1px 1px 1px; background-color: #a3cef1; word-break: unset;"]][[[scp-4428|Dr. Michaels is not in danger.]]][[/span]]** //with [[[*http://www.scp-wiki.net/henzoids-author-page|Henzoid]]]//
-> **5. [SCP COLLAB] 🕊️ [[[scp-4795|SCP-4795: Feathered F(r)iends]]]** //with [[[*http://www.scp-wiki.net/dr-mews-personnel-file|Mew-ltiverse]]]//
+[[div class="quote-block"]]
+= [[size 125%]]**MY NEWEST ARTICLES**[[/size]]
+----
+**1. [TALE COLLAB]** 🐍 **[[[broken-masquerade-epistolary|Snippets of an Unveiled World]]]** //with [[[*http://www.scp-wiki.net/researcher-nyka-s-file|Nykacolaquantum]]] and other collaborators//
+**2. [TALE]** 📺 **[[[a-scene-from-a-meme|A Scene From A Meme(-ory)]]]** //with [[[*http://www.scp-wiki.net/dr-mews-personnel-file|Mew-ltiverse]]]//
+**3. [TALE]** ☠️ **[[[a-necromantic-prelude|A Necromantic Prelude]]]**
+**4. [SCP COLLAB]** 💭 **--[[[scp-4428|SCP-4428:]]]-- [[span style="font-family: 'Courier', monospace; font-size: 120%; margin: 2px 1px 1px 1px; background-color: #a3cef1; word-break: unset;"]][[[scp-4428|Dr. Michaels is not in danger.]]][[/span]]** //with [[[*http://www.scp-wiki.net/henzoids-author-page|Henzoid]]]//
+**5. [SCP COLLAB] 🕊️ [[[scp-4795|SCP-4795: Feathered F(r)iends]]]** //with [[[*http://www.scp-wiki.net/dr-mews-personnel-file|Mew-ltiverse]]]//
+[[/div]]
 
 [[=]]
 -----
@@ -498,18 +503,24 @@ Either way, this is my attempt at giving the Centre a reason to exist in our uni
 
 **Other things:**
 
-* CHARYBDIS and SCYLLA are references to Greek mythology.
-* Marine Fighting Team CHARYBDIS is my take on supersoldiers, which is something I've always wanted to write 'cause it's fun as heck!
-* There are a //lot// of alt-history elements here, since the SPC reality deviated from Foundationverse's own a few thousand years ago. Here are some examples of that:
- * "The Kingdom of Mycenae" = Greece
- * "Poseidon Labs" = Prometheus Labs
- * Seventh Deviant Crusade = Seventh Occult War
-* "Gægr" and "Kemdulnim" were generated using a fantasy dragon name generator
-* "Quibba" and "Keshrayuth" were generated using a bird race name generator
-* Kaa, Waxaklahun, and Mih are Mayan numbers
-* Quick thing about the members of MFT CHARYBDIS, because I decided to pick names that are conventionally gender-neutral. Quinn and Jaedan are male while Leah and Haruki are female.
-* LIMP FIREBIRD is a self-insert ;)
-* PortalHunter from #site19 came up with Bee Obliteration Registry "K". I'd like to write an article or something about them some day.
+||~ MFT "CHARYBDIS" and "SCYLLA" || References to Greek mythology. ||
+||~ "FASH" || Reference to the "bash the fash"**@@*@@** catchphrase. ||
+||~ "Gægr" and "Kemdulnim" || Generated using a fantasy dragon name generator. ||
+||~ "Quibba" and "Keshrayuth" || Generated using a bird race name generator. ||
+||~ Kaa, Waxaklahun, and Mih || Mayan numbers. ||
+||~ "LIMP FIREBIRD" || A self-insert. ;) ||
+|||| ***NOTICE:** I do not condone bashing anyone. Except sharks. In the snout. ||
+
+For Marine Fighting Team CHARYBDIS, I chose names that are conventionally gender-neutral.
+
+* "Quinn" and "Jaedan" are male characters.
+* "Leah" and "Haruki" are female characters.
+
+The SPC universe deviated from the main Foundationverse a few thousand years ago. As such, this article features some alt-history elements. Here are some examples:
+||~ The Kingdom of Mycenae || Greece ||
+||~ Poseidon Labs || Prometheus Labs ||
+||~ Bee Obliteration Registry "K" || Directorate K. Coined by PortalHunter from #site19. ||
+||~ Seventh Deviant Crusade || Seventh Occult War ||
 
 [[div style="font-weight: bold;]]
 Additional Documents:
