@@ -1,6 +1,46 @@
 title:SCP-4400
 [[module CSS]]
-.page-tags span {border-top: none;}
+.page-tags span {
+    border-top: none;
+}
+
+a.collapsible-block-link {
+    font-weight: bold;
+}
+
+.report {
+    border: solid 2px #000; 
+    padding: 10px; 
+    width: 90%; 
+    margin: auto; 
+    margin-top: 10px; 
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+
+.arch blockquote {
+    border-color: black; 
+    background-color: white;
+}
+
+.other blockquote {
+    border-style: solid; 
+    background-color: white; 
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+}
+
+.prepped {
+    display: inline-block;
+    border: 1px solid black; 
+    background-color: white;
+    padding: 0 20px;
+}
+
+@media (max-width: 767px) {
+    .scp-image-block.block-right {
+        float: none;
+        margin: auto;
+    }
+}
 [[/module]]
 [[>]]
 [[module Rate]]
@@ -26,17 +66,13 @@ title:SCP-4400
 ]]
 ----
 
-[[div class="scp-image-block block-center" style="width:100%;"]]
-[[image DSC_0360.jpg style="width:100%;" link=#]]
-[[div class="scp-image-caption" style="width:100%;"]]
-Reference photograph of Palenque, the location and basis of SCP-4400.
-[[/div]]
-[[/div]]
+[[include component:image-block name=DSC_0360.jpg|caption=Reference photograph of Palenque, the location and basis of SCP-4400.|width=100%|align=center]]
+
 ----
 
 **Special Containment Procedures:** Palenque National Park is to be operated entirely by Foundation operatives under the guise of standard Mexican National Park employees. A clause concerning this has been inserted into the Foundation-Mexico Operating Treaty, and the National Commission of Protected Natural Areas will assist the Foundation in upholding this.
 
-[[include component:image-block-responsive name=DSC_0351.jpg|caption=Exterior of the building containing SCP-4400 Access Tunnel Ka'a.]]
+[[include component:image-block name=DSC_0351.jpg|caption=Exterior of the building containing SCP-4400 Access Tunnel Ka'a.]]
 
 All further archaeological exploration of Palenque is to have a minimum of two Foundation personnel from the Archaeological Division embedded within the existing exploration team. These personnel are to be stocked and trained with Class B amnestics. If a new SCP-4400 access tunnel is discovered, they are to use the amnestics to remove any memory of the discovery from the exploration team. Following this, they are to covertly alert Site-484 Command to the discovery, to allow for proper containment.
 
@@ -64,19 +100,10 @@ This anomalous empathetic alteration appears to be stronger around certain areas
 
 The exact boundaries of SCP-4400 are unclear. There is no observable upper limit to SCP-4400. The copy of Palenque within SCP-4400 is situated atop a 1000 meter tall plateau, with all surrounding land being undifferentiated smooth rock. Excavation attempts have tunneled 100 meters downward and yielded no results. 
 ----
-[[module CSS]]
-.arch blockquote {border-color: black; background-color: white}
-
-.other blockquote {border: solid 1px #999999; background-color: white; box-shadow: 0px 1px 2px rgba(0,0,0,0.1);}
-
-a.collapsible-block-link { font-weight: bold; }
-
-.report {border: solid 2px #000000; padding: 10px; width: 90%; margin: auto; margin-top: 10px; box-shadow: 0 1px 3px rgba(0,0,0,.2);
-[[/module]]
 [[collapsible show="◆ ADDENDUM 4400.1" hide="◇ ADDENDUM 4400.1 — Archaeological Division Records"]]
 [[div class="arch report" style="background: #FFEFD8"]]
 [[=]]
-[[div style="border: 1px solid black; background-color: white; display: inline-block; padding-left: 20px; padding-right: 20px;"]]
+[[div class="prepped"]]
 [[=image archaeology.png	width="65px" height="65px"]]
 ++ Archaeological Division Records
 [[/div]]
@@ -133,7 +160,7 @@ A detachment of Mobile Task Force Xi-Kai was sent to the supposed location of Ch
 [[collapsible show="◆ ADDENDUM 4400.2" hide="◇ ADDENDUM 4400.2 — Archaeological Division Records"]]
 [[div class="other report" style="background: #FFEFD8"]]
 [[=]]
-[[div style="border: 1px solid black; background-color: white; display: inline-block; padding-left: 20px; padding-right: 20px;"]]
+[[div class="prepped"]]
 [[=image archaeology.png	width="65px" height="65px"]]
 ++ Archaeological Division Records
 [[/div]]
@@ -191,7 +218,7 @@ This dream, or one similar to it, has been recorded by approximately half of the
 [[collapsible show="◆ ADDENDUM 4400.3" hide="◇ ADDENDUM 4400.3 — MTF Xi-Kai Records"]]
 [[div class="arch report" style="background: mistyrose"]]
 [[=]]
-[[div style="border: 1px solid black; background-color: white; display: inline-block; padding-left: 20px; padding-right: 20px;"]]
+[[div class="prepped"]]
 [[=image http://scp-ru.wdfiles.com/local--files/list-of-foundation-s-internal-departments/mtf.png	width="65px" height="65px"]]
 ++ Mobile Task Force Xi-Kai Records
 [[/div]]
@@ -282,7 +309,7 @@ The following interview was conducted in Yucatec Mayan, of which Researcher Bale
 [[collapsible show="◆ ADDENDUM 4400.4" hide="◇ ADDENDUM 4400.4 — Site-484 Records"]]
 [[div class="arch report" style="background: #F4F4F4"]]
 [[=]]
-[[div style="border: 1px solid black; background-color: white; display: inline-block; padding-left: 20px; padding-right: 20px;"]]
+[[div class="prepped"]]
 [[=image http://scp-ru.wdfiles.com/local--files/list-of-foundation-s-internal-departments/admin.png width="65px" height="65px"]]
 ++ Site-484 Administration Records 
 [[/div]]
