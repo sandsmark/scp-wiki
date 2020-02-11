@@ -451,6 +451,8 @@ This is more or less directly ripped from Crashington's author page, and I have 
 [[tab Modules]]
 + Keeps Track of Edits and Comments
 ----
+This was ripped from MaliceAF, who ripped it from Tufto, who ripped it from Mortos.
+
 +++ SCPs:
 [[module ListPages created_by="TheMightyMcB" order="created_at" separate="no" tags="scp" perPage="250" prependLine="||~ Item # ||~ Rating ||~ Comments ||~ Created ||"]]
 || %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
@@ -472,7 +474,9 @@ This is more or less directly ripped from Crashington's author page, and I have 
 [[/module]]
 
 +++ Collab Pages Not Posted By Me:
-
+[[module ListPages link_to="." tags="-hub -guide" order="created_at" separate="no" perPage="250" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Co-authored with ||"]]
+|| %%title_linked%% || %%rating%% || %%comments%% || [[*user %%created_by%%]] ||
+[[/module]]
 
 [[/tab]]
 
