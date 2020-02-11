@@ -18,13 +18,21 @@ title:SCP-4901
     color: #6F9;
     font-weight: bold;
 }
-[[/module]]
 
-[[include component:image-block-responsive name=bubbly.jpg|caption={{Fig 1.1.}} Current Location of SCP-4901.]]
+
+@media (max-width: 767px) {
+    .scp-image-block.block-right {
+        float: none;
+        margin: auto;
+    }
+}
+[[/module]]
 
 **Item #:** SCP-4901
 
 **Object Class:** Keter
+
+[[include component:image-block name=bubbly.jpg|caption={{Fig 1.1.}} Current Location of SCP-4901.]]
 
 **Special Containment Procedures:** SCP-4901 is currently uncontained, and is located in Bubbly Creek, Chicago. Until the time when SCP-4901 can be successfully and fully contained, Special Containment Procedures are to focus on the minimization of sporadic sightings and the concealment of SCP-4901's existence.
 
@@ -36,7 +44,7 @@ Containment of SCP-4901 has been hampered by the need for a Mobile Containment U
 
 SCP-4901 is known to have been created from a human being and it is currently theorized that the initial mental state of SCP-4901 was inherited from this human. It is suspected that shortly after creation, SCP-4901 was at least partially cognizant and able to communicate, but its mental state has deteriorated as a result of its physical condition. SCP-4901 is generally reclusive and tends to primarily spend time on the riverbed or otherwise obscured.
 
-[[include component:image-block-responsive name=benson.png|caption={{Fig 2.1.}} Photograph recovered from Chicago Spirit. Depicts Bubbly Creek around time of SCP-4901's creation and mention of SCP-4901.]]
+[[include component:image-block name=benson.png|caption={{Fig 2.1.}} Photograph recovered from Chicago Spirit. Depicts Bubbly Creek around time of SCP-4901's creation and mention of SCP-4901.]]
 
 SCP-4901 has an amorphous body shape but is capable of altering its form. It tends to take the form of an amorphous quadruped but occasionally takes on a more humanoid body shape during moments of lucidity.
 
