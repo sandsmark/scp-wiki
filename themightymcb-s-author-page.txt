@@ -455,22 +455,22 @@ This was ripped from MaliceAF, who ripped it from Tufto, who ripped it from Mort
 
 +++ SCPs:
 [[module ListPages created_by="TheMightyMcB" order="created_at" separate="no" tags="scp" perPage="250" prependLine="||~ Item # ||~ Rating ||~ Comments ||~ Created ||"]]
-|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
+|| %%title_linked%% || %%rating%% || %%comments%% || %%commented_by%% || %%created_at%% ||
 [[/module]]
 
 +++ Tales:
 [[module ListPages created_by="TheMightyMcB" order="created_at" separate="no" tags="tale -hub" perPage="250" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Created ||"]]
-|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
+|| %%title_linked%% || %%rating%% || %%comments%% || %%commented_by%% || %%created_at%% ||
 [[/module]]
 
 +++ Other Various Pages:
 [[module ListPages created_by="TheMightyMcB" order="created_at" separate="no" tags="hub essay artwork author supplement" perPage="250" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Created ||"]]
-|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
+|| %%title_linked%% || %%rating%% || %%comments%% || %%commented_by%% || %%created_at%% ||
 [[/module]]
 
 +++ Collab Pages Not Posted By Me:
 [[module ListPages link_to="." tags="+co-authored -guide" order="created_at" separate="no" perPage="250" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Co-authored with ||"]]
-|| %%title_linked%% || %%rating%% || %%comments%% || [[*user %%created_by%%]] ||
+|| %%title_linked%% || %%rating%% || %%comments%% || %%commented_by%% || [[*user %%created_by%%]] ||
 [[/module]]
 
 
