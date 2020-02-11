@@ -451,44 +451,31 @@ This is more or less directly ripped from Crashington's author page, and I have 
 [[tab Modules]]
 + Keeps Track of Edits and Comments
 ----
-[[include component:author-page
-  order=created_at |
-  perpage=20 |
-  background=no|
-  image=no |
-]]
++++ SCPs:
+[[module ListPages created_by="TheMightyMcB" order="created_at" separate="no" tags="scp" perPage="250" prependLine="||~ Item # ||~ Rating ||~ Comments ||~ Created ||"]]
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
+[[/module]]
 
-[[include component:author-page-collab
-  name=scp-5006 |
-  cowriter=RockTeethMothEyes |
-  note=This was written for the SCP-5000 Contest |
-  background=no|
-  image=no| 
-]]
++++ Tales:
+[[module ListPages created_by="TheMightyMcB" order="created_at" separate="no" tags="tale -hub" perPage="250" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Created ||"]]
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
+[[/module]]
 
-[[include component:author-page-collab
-  name=mother-who-demands-ones-toes |
-  cowriter=N_Aepic_Fael  |
-  note=This was written for CollabCon2019 |
-  background=no|
-  image=no| 
-]]
++++ GoI Formats:
+[[module ListPages created_by="TheMightyMcB" order="created_at" separate="no" tags="goi-format" perPage="250" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Created ||"]]
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
+[[/module]]
 
-[[include component:author-page-collab
-  name=another-soul-joins-the-halkost |
-  cowriter=N_Aepic_Fael |
-  note=This was written for CollabCon2019|
-  background=no|
-  image=no| 
-]]
++++ Other Various Pages:
+[[module ListPages created_by="TheMightyMcB" order="created_at" separate="no" tags="hub essay artwork author supplement" perPage="250" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Created ||"]]
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
+[[/module]]
 
-[[include component:author-page-collab
-  name=package-dxv-180294-217 |
-  cowriter=CrankyMonkey2 |
-  note=|
-  background=no|
-  image=no| 
-]]
++++ Collab Pages Not Posted By Me:
+[[module ListPages link_to="." tags="-hub" order="created_at" separate="no" perPage="250" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Co-authored with ||"]]
+ || %%title_linked%% || %%rating%% || %%comments%% || [[*user %%created_by%%]] ||
+ [[/module]]
+
 [[/tab]]
 
 [[/tabview]]
