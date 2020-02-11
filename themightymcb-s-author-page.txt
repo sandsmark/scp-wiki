@@ -474,12 +474,8 @@ This was ripped from MaliceAF, who ripped it from Tufto, who ripped it from Mort
 [[/module]]
 
 +++ Collab Pages Not Posted By Me:
-[[module ListPages link_to="." tags="-hub -guide" order="created_at" separate="no" perPage="250" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Co-authored with ||"]]
+[[module ListPages link_to="." tags="+co-authored -guide" order="created_at" separate="no" perPage="250" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Co-authored with ||"]]
 || %%title_linked%% || %%rating%% || %%comments%% || [[*user %%created_by%%]] ||
-[[/module]]
-
-[[module ListPages separate="yes" tags="+5000 -hub" perPage="100" order="rating desc"]]
-%%title%% [[iftags +co-authored]] ##red|**CO-AUTHORED**## [[/iftags]]
 [[/module]]
 
 
