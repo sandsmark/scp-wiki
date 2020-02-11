@@ -314,7 +314,7 @@ The Foundation is an international organization that employs researchers and arc
   border-radius: 10px
 }
 .list .collapsible-block {  
-  text-align: center;
+  position: relative;
 }
 #toc {
     padding-right: 25px;
@@ -333,10 +333,7 @@ The Foundation is an international organization that employs researchers and arc
   font-weight: bold;
 }
 .resources .collapsible-block {  
-  text-align: center;
-}
-.resources .collapsible-block-content {
-  text-align: left;
+  position: relative;
 }
 h2 {
   margin-top: 50px;
