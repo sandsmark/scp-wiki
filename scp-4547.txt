@@ -44,6 +44,13 @@ span.orto {
     background-color: #1b304d;
     color: #ffb961;
 }
+
+@media (max-width: 767px) {
+    .scp-image-block.block-right {
+        float: none;
+        margin: auto;
+    }
+}
 [[/module]]
 
 [[include info:start]]
@@ -72,7 +79,7 @@ View more of my articles [[[stormbreath|here.]]]
 [[/div]]
 [[include info:end]]
 
-[[include component:image-block-responsive name=moara.jpg|caption=Composite photo of SCP-4547.]]
+[[include component:image-block name=moara.jpg|caption=Composite photo of SCP-4547.]]
 [[span class="h-span"]]Item #:[[/span]] SCP-4547
 
 [[span class="h-span"]]Object Class:[[/span]] Apollyon
