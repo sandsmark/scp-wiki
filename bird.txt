@@ -92,12 +92,19 @@ body{
     color: #fffbf0;
 }
 
-/* GRADIANT */
+/* FORMATTING */
 .bg-gradiant{
     background-color: #fff; 
     background: linear-gradient(to bottom, #f7f7f7,#ffc81c,#ffc81c,#fff);
     padding-left: 2%; 
     padding-right: 2%; 
+}
+hr{
+    display: block;
+    border: 0;
+    padding: 0;
+    margin: 1em 0;
+    height: 1px;
 }
 
 /* DIV BLOCKS */
