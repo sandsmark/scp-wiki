@@ -6,6 +6,7 @@ title:SCP-4444
 |comments=IMPORTANT INSIGHTS TO COME.
 ]]
 [[include component:black-highlighter-theme-dev]]
+[[include :scptestwiki:sigma:dark-sidebar]]
 [[module CSS]]
 sup { 
 vertical-align: top; position: relative; top: -0.5em; 
@@ -20,38 +21,6 @@ vertical-align: top; position: relative; top: -0.5em;
 color: #FFF;}
 .info-container .collapsible-block-unfolded-link a{
 color: #FFF;}
-
-.desktop-only {
-    height: 36rem;
-    width: 10rem;
-    background: #ffffff;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 2rem;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    border: solid 1px #444444;
-    padding: 10px;
-    -webkit-box-shadow: 1px 2px 3px 0px #23334c;
-       -moz-box-shadow: 1px 2px 3px 0px #23334c;
-            box-shadow: 1px 2px 3px 0px #23334c;
-    overflow: visible;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-       -moz-box-orient: vertical;
-       -moz-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-transform: translateX(400%);
-       -moz-transform: translateX(400%);
-        -ms-transform: translateX(400%);
-         -o-transform: translateX(400%);
-            transform: translateX(400%);
-}
 
 #page-content {
     position: relative;
@@ -70,37 +39,8 @@ color: #FFF;}
     #page-content > div:nth-child(5) {
     	margin-top: 0;
     }
-
 }
-
 [[/module]]
-@@@@
-@@@@
-[[div class="desktop-only"]]
-[[=]]
-[[size 120%]]**SCP-4444**[[/size]]
-[[size 75%]]**File Nav**[[/size]]
------
-[[/=]]
-
-➤ **Main Article**
-* [#Class Classification]
-* [#SCP Containment]
-* [#Description Description]
-
-➤ **Addenda**
-* [#Add1 Discovery]
-* [#Add2 Interview #1]
-* [#Add3 Deliberations]
-* [#Add4 Complaint]
-* [#Add5 Disinformation]
-* [#Add6 Sept. Debate]
-* [#Add7 Television Ads]
-* [#Add8 GOC Inquiries]
-* [#Add9 Election Night]
-* [#Add10 Unidentified Call]
-* [#Add11 Unexplained Ad]
-[[/div]]
 [[>]]
 [[module Rate]]
 [[/>]]
