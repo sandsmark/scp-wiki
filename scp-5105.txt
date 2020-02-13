@@ -1,0 +1,419 @@
+title:SCP-5105
+[[module css]]
+/*
+    The Way Out Theme
+    [2019 Wikidot Theme]
+    Created by Rounderhouse, with massive help from Woedenaz.
+    Based on Black Highlighter Theme created by Woedenaz and Croquembouche.
+    The O5 Command logo was created by djkaktus. Licensed under CC BY SA 3.0.
+*/
+ 
+@import url("https://nu-scptheme.github.io/Black-Highlighter/stable/styles/normalize.min.css");
+@import url("https://nu-scptheme.github.io/Black-Highlighter/stable/styles/black-highlighter.min.css");
+ 
+/* Fonts */
+ 
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900|PT+Mono|Poppins:600,800');
+ 
+/* All Vars Used */
+ 
+:root {
+    /* S-CSS-P Integration */
+    /* If you're making a new CSS theme, please include the following three variables at minimum. */
+    --theme-base: "nuscp";
+    /* must be either "nuscp" or "sigma9" */
+    --theme-id: "nuscp";
+    /* set this to the URL of your theme's page - eg for "component:ar-theme", set it to "ar-theme" */
+    --theme-name: "nu-SCP Theme";
+    /* set this to your theme's full name */
+ 
+    /* Header */
+    --logo-image:
+    --header-title: "OVERWATCH COMMAND";
+    --header-subtitle: "SITE-01 INTERNAL DATABASE";
+ 
+    /* Typefaces */
+    --body-font: 'Lato', sans-serif;
+    --header-font: 'Poppins', sans-serif;
+    --title-font: 'Poppins', sans-serif;
+    --mono-font: "PT Mono", "Andale Mono", "Courier New", Courier, monospace;
+ 
+    /* Standard Colors */
+    --white-monochrome: 252, 252, 252;
+    /* white */
+    --pale-gray-monochrome: 244, 244, 244;
+    /* v light gray for blockquotes and stuff */
+    --light-gray-monochrome: 170, 170, 170;
+    /* light accent gray for login status */
+    --gray-monochrome: 66, 66, 72;
+    /* gray */
+    --dark-gray-monochrome: 48, 48, 52;
+    /* dark accent gray for sidebar background */
+    --black-monochrome: 12, 12, 12;
+    /* black */
+    --bright-accent: 14, 65, 102;
+    /* blue */
+    --medium-accent: 60, 100, 120;
+    /* medium blue */
+    --dark-accent: 12, 36, 54;
+    /* dark blue */
+    --newpage-color: 99, 190, 255;
+    /* bright blue */
+ 
+    /* Primary Theme Colors */
+    --swatch-background: var(--white-monochrome);
+    --swatch-primary: var(--medium-accent);
+    --swatch-primary-darker: var(--bright-accent);
+    --swatch-primary-darkest: var(--bright-accent);
+    /* Primary Text Colors */
+    --swatch-text-dark: var(--black-monochrome);
+    --swatch-text-light: var(--white-monochrome);
+    --swatch-important-text: var(--bright-accent);
+ 
+    /* Primary Menu Colors */
+    --swatch-menubg-color: var(--gray-monochrome);
+    --swatch-menubg-light-color: var(--gray-monochrome);
+    --swatch-menubg-medium-color: var(--gray-monochrome);
+    --swatch-menubg-medium-dark-color: var(--black-monochrome);
+    --swatch-menubg-dark-color: var(--dark-gray-monochrome);
+    --swatch-menubg-black-color: var(--black-monochrome);
+    --swatch-menubg-hover-color: var(--gray-monochrome);
+    --swatch-menutxt-dark-color: var(--white-monochrome);
+    --swatch-menutxt-light-color: var(--white-monochrome);
+    --swatch-border-color: var(--black-monochrome);
+    /* Primary Header Colors */
+    --swatch-headerh1-color: var(--white-monochrome);
+    --swatch-headerh2-color: var(--white-monochrome);
+    --swatch-topmenu-border-color: var(--dark-gray-monochrome);
+    --swatch-topmenu-bg-color: var(--dark-gray-monochrome);
+ 
+    --rating-module-button-color: var(--black-monochrome);
+    --rating-module-text-color: var(--black-monochrome);
+ 
+       /* Link Colors */
+    --link-color: 27, 65, 94 ;
+    --visited-link-color: 133, 193, 233;
+    --hover-link-color: 133, 193, 233;
+ 
+    /* Header Gradients */
+ 
+    --gradient-header: linear-gradient(to bottom,
+     rgba(var(--black-monochrome),0.97) 10%,
+     rgb(var(--black-monochrome)) 65%,
+     rgb(var(--dark-gray-monochrome)) 100%);
+    --gradient-topmenu: linear-gradient(to bottom,
+     white 0%,
+     white 7.5rem,
+     rgba(var(--swatch-topmenu-border-color), 1) 7.5rem,
+     rgba(var(--swatch-topmenu-bg-color), 1) 7.625rem,
+     rgba(var(--swatch-topmenu-bg-color), 0.95) calc(100% - 0.125rem),
+     rgba(var(--swatch-topmenu-bg-color), 1) calc(100% - 0.125rem),
+     rgba(var(--swatch-topmenu-border-color), 1) 100%);
+    --gradient-topmenu-mobile: linear-gradient(to bottom,
+     rgba(var(--swatch-topmenu-border-color), 1) 0,
+     rgba(var(--swatch-topmenu-bg-color), 1) 0.125rem,
+     rgba(var(--swatch-topmenu-bg-color), 1) calc(3rem - 0.125rem),
+     rgba(var(--swatch-topmenu-bg-color), 1) calc(3rem - 0.125rem),
+     rgba(var(--swatch-topmenu-border-color), 1) 3rem);
+    --diagonal-stripes: repeating-linear-gradient(25deg,
+     hsla(0, 0%, 100%, 0),
+     hsla(0, 0%, 100%, 0) 0.25vh,
+     rgba(88, 88, 88, 0.1) 0.35vh,
+     rgba(88, 88, 88, 0.2) 0.5vh);
+    --gradient-sidemenu-header: linear-gradient(10deg,
+     rgba(var(--medium-accent), 0.45) 0%,
+     rgba(var(--medium-accent), 0.55) 100%);
+    --gradient-background: linear-gradient(to bottom,
+     rgba(var(--background-gradient-color), 1) calc(calc(0 / 100) * var(--background-gradient-distance)),
+     rgba(var(--background-gradient-color), 0.987) calc(calc(0.8 / 100) * var(--background-gradient-distance)),
+     rgba(var(--background-gradient-color), 0.951) calc(calc(2.9 / 100) * var(--background-gradient-distance)),
+     rgba(var(--background-gradient-color), 0.896) calc(calc(6.4 / 100) * var(--background-gradient-distance)),
+     rgba(var(--background-gradient-color), 0.825) calc(calc(11 / 100) * var(--background-gradient-distance)),
+     rgba(var(--background-gradient-color), 0.741) calc(calc(16.6 / 100) * var(--background-gradient-distance)),
+     rgba(var(--background-gradient-color), 0.648) calc(calc(23.1 / 100) * var(--background-gradient-distance)),
+     rgba(var(--background-gradient-color), 0.55) calc(calc(30.4 / 100) * var(--background-gradient-distance)),
+     rgba(var(--background-gradient-color), 0.45) calc(calc(38.3 / 100) * var(--background-gradient-distance)),
+     rgba(var(--background-gradient-color), 0.352) calc(calc(46.7 / 100) * var(--background-gradient-distance)),
+     rgba(var(--background-gradient-color), 0.259) calc(calc(55.4 / 100) * var(--background-gradient-distance)),
+     rgba(var(--background-gradient-color), 0.175) calc(calc(64.4 / 100) * var(--background-gradient-distance)),
+     rgba(var(--background-gradient-color), 0.104) calc(calc(73.5 / 100) * var(--background-gradient-distance)),
+     rgba(var(--background-gradient-color), 0.049) calc(calc(82.5 / 100) * var(--background-gradient-distance)),
+     rgba(var(--background-gradient-color), 0.013) calc(calc(91.4 / 100) * var(--background-gradient-distance)),
+     rgba(var(--background-gradient-color), 0) calc(calc(100 / 100) * var(--background-gradient-distance)));
+    --header-background-image-size: 100% 7.5rem;
+ 
+    /* Spacing Measurements */
+    --offset-from-page-top: 1.2rem;
+    /* space between the top of the page and the start of the header */
+    --body-width-on-desktop: 44.25rem;
+    --sidebar-width-on-desktop: calc(var(--base-font-size)*19);
+    --sidebar-width-on-mobile: 14rem;
+    --scrollbar-width: 0.5625rem;
+    --border-styling: solid 0.0625rem rgb(var(--swatch-border-color));
+    --border-radius-width: 0.0625rem;
+ 
+    /* Sidebar */
+    --sidebar-transition-timing: 0.5s ease-in-out 0.1s;
+    --sidebar-internal-border-thickness: 0.125rem;
+ 
+    --background-gradient-color: 12, 36, 54;
+    --background-gradient-distance: 40rem;
+ 
+    /* Dynamic Font Sizing */
+    /* This set of vars will make the base font size vary with screen width */
+    /* base font size ranges */
+    --unitless-min-font-size: 0.8;
+    --unitless-max-font-size: 1;
+    /* base viewport size ranges */
+    --unitless-min-viewport: 768;
+    --unitless-max-viewport: 900;
+    /* base line height size ranges */
+    --min-lineheight: 1.2;
+    --max-lineheight: 1.5;
+    /* calculating size differences */
+    --font-size-difference: calc(var(--unitless-max-font-size) - var(--unitless-min-font-size));
+    --lineheight-difference: calc(var(--max-lineheight) - var(--min-lineheight));
+    --viewport-range-difference: calc(var(--unitless-max-viewport) - var(--unitless-min-viewport));
+    --min-viewport-difference: calc(100vw - (var(--unitless-min-viewport) * 1px));
+    /* responsive fluid type formula */
+    --font-calc: calc((var(--unitless-min-font-size) * 1rem) + var(--font-size-difference) * var(--min-viewport-difference) / var(--viewport-range-difference));
+    --line-calc: calc(var(--min-lineheight) + var(--lineheight-difference) * var(--min-viewport-difference) / var(--viewport-range-difference));
+    /* final values */
+    --base-font-size: var(--font-calc);
+    --base-line-height: var(--line-calc);
+}
+ 
+#side-bar div.menu-item a,
+#side-bar div.menu-item .text,
+#side-bar div.menu-item a:visited,
+#side-bar div.menu-item a:active {
+        color: white;
+}
+ 
+.scp-image-block {
+   color: rgb(var(--white-monochrome));
+}
+#side-bar div.menu-item .sub-text {
+   color: rgb(var(--white-monochrome));
+}
+#login-status {
+   color: rgb(var(--medium-accent));
+}
+blockquote {
+    background-color: rgb(var(--light-gray-monochrome));
+}
+ 
+.yui-navset .yui-nav li a em, .yui-navset-top .yui-nav li a em, .yui-navset-bottom .yui-nav li a em {
+   color: white;
+}
+.code {
+  background-color: rgb(var(--light-gray-monochrome)) !important;
+}
+iframe.scpnet-interwiki-frame {
+        filter: invert(0.8) saturate(0.25) hue-rotate(50deg);
+}
+@media only screen and (max-width: 768px) {
+    #header h1 a,
+    #header h2 span {
+        margin-left: 7.75rem;
+        margin-top: 0.35em;
+    }
+ 
+    #header h1 a {
+        line-height: 1;
+    }
+ 
+    #header h2 span {
+        margin-top: -webkit-calc(5.5rem + var(--offset-from-page-top));
+        margin-top: calc(5.5rem + var(--offset-from-page-top));
+    }
+}
+#header {
+    filter: drop-shadow(.042rem .042rem .042rem rgb(150,150,150));
+}
+@media only screen and (max-width: 768px) {
+    #header {
+        background-position: calc(7.4rem - var(--size)) calc(((var(--size) * -1) + 7.5rem + var(--y-offset)) / 2);
+    }
+}
+[[/module]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[include :scp-wiki:component:anomaly-class-bar-source
+
+|item-number= 5105
+
+|clearance= 5
+
+|container-class= keter
+
+|secondary-class=
+
+|secondary-icon=
+
+|disruption-class= dark
+
+|risk-class= notice
+
+]]
+
+**Updated Special Containment Procedures:** SCP-5105 is currently contained at Site-01, under the direct management of the Overseer Council.
+
+**Description:** SCP-5105 is the designation for a shadow resembling the Foundation's sigil, covering a wall of the meeting room of Site-01. SCP-5105  will manifest without any need for a light source or an object to create it, and will remain on the wall regardless of the level of lighting in the room. Direct illumination aimed at SCP-5105 will cause it to vanish, however it will immediately reform as soon as the offending light source is removed.
+
+SCP-5105 appears to elicit an emotional response in subjects, though the extent of this is unknown. Due to concerns raised about the security of SCP-5105's location, general testing has been postponed.
+
+||~ O5 Designation||~ Response||
+||O5-1|| Disgust, along with a sudden exhaustion.||
+|| O5-2|| Sudden sharp pains in her hands.||
+||O5-3||Examined it for three minutes, then decline to comment, citing no interest.||
+||O5-4||Laughter for approximately thirty seconds, which then stopped suddenly and was replaced with apprehension.||
+||O5-5|| Alarm.||
+||O5-6 ||  Relief, and a sensation similar to pride.||
+||O5-7 || Professed a reluctance to look at it for long.||
+||O5-8 ||  Contentment, which was said to feel uncomfortable.||
+||O5-9 || Curiosity.||
+||O5-10 || Nostalgia.||
+||O5-11 || Frustration.||
+||O5-12 || Began to sweat, and reported a headache.||
+||O5-13 || Found it of no particular interest.||
+
+Attempts to neutralize the anomaly have failed. When the location of Site-01 was changed,  SCP-5105 immediately reappeared at the new location. SCP-5105 appears to translocate itself to the primary meeting spot for two or more Overseers as soon as its previous place is abandoned. When the Overseers attempted to bypass this restriction by meeting in small individual groups, SCP-5105 reappeared at the largest gathering of Overseers.
+
+**Discovery:** SCP-5105 was first discovered by O5-5 on 21/02/2020, as they entered Site-01 for a meeting, and began to show great distress at the sight of SCP-5105. MTF Alpha-1, correctly deducing the presence of an anomaly,  immediately evacuated Site-01 and escorted each Overseer to individual secondary safe locations.. Alpha-1 attempted to remove SCP-5105, but was unsuccessful in doing so.
+
+> **Interviewed:** O5-7
+> ~~~~
+> **Interviewer:** O5-2
+> ~~~~
+> **Foreword:** As O5-7 was the only Overseer not present at the date of discovery, O5-2 briefed them over a secure line to update them on events.
+> ~~~~
+> **<Begin Log>**
+> ~~~~
+> **O5-2:** How was Siberia?
+> ~~~~
+> **O5-7:** Cold and frustrating. I was looking forward to returning to Command for once, then my pilot was informed of the whole debacle. Is everyone alright?
+> ~~~~
+> **O5-2:** Mostly fine. Scattered among their safehouses while Alpha-1's trying to figure out more about this. Have you seen it yet?
+> ~~~~
+> **O5-7:** I have not. From the preliminary file I was sent, it seems to have some emotokinetic capabilities? Was everyone exposed to it?
+> ~~~~
+> **O5-2:** The rest of the council, and a few Alpha-1 members. Interestingly enough, it only seems to elicit a response in Overseers. Well except for Thirteen. Do you have access to Site-01's servers at the moment? I'll send you the image we took.
+> ~~~~
+> **O5-7:** I'm an Overseer, not a D-Class personnel. Is this wise? As far as I can see, I'm the only one unexposed to it.
+> ~~~~
+> **O5-2:** Over the last 24 hours or so we've been scanned for every type of memetic and infohazardous anomaly there is. Forgot how much I hated memetic inoculation...  Anyways, Alpha-1's determined it carries no personal risk. Just sent it.
+> ~~~~
+> **O5-7:** Allow me a moment. Oh. I see. Can I look away from it now?
+> ~~~~
+> **O5-2:** Getting anything?
+> ~~~~
+> **O5-7:** There's something strange about it. My first instinct was to close the computer and throw it into the sea. Something about that image makes my skin crawl. Reminds me of my first anomaly. Just looking at it, I could tell there was something inherently wrong in its makeup.... I'm closing the file now.
+> ~~~~
+> **O5-2:** Gotcha. I'll put down a "Professed a reluctance to look at it for long..." Thank you.
+> ~~~~
+> **O5-7:** I'm not sure what that will give us, but I'm glad I could help. What emotions did it elicit in you?
+> ~~~~
+> **O5-2:** I... had these stabbing pains in my wrists. Just like... well, never mind.
+> ~~~~
+> **O5-7:** Ah. I can see why One would be so interested in sniffing out the truth behind this. Are you alright, my dear?
+> ~~~~
+> **O5-2:** I'll be fine. The sooner we're done with this, the better. I'll catch you when your plane arrives.
+> ~~~~
+> **<End Log>**
+
+The origins of SCP-5105 are unknown. No known anomaly has been recorded within 100 km of Site-01 that has the capability to affect the location. No groups of interest on record are known to possess credible knowledge of Site-01's location.
+
+> [[=]]
+> **Post-Investigation Interview: SCP-5105**
+> [[/=]]
+> ~~~~
+> **Interviewed:** O5-13
+> ~~~~
+> **Interviewer:** O5-1
+> ~~~~
+> **<Begin Log>**
+> ~~~~
+> **O5-1:** Any luck?
+> ~~~~
+> **O5-13:** No. Nothing solid, at least. Wasn't the Chaos Insurgency, or the anartists, or even ORIA... Whoever, or whatever it is, they somehow managed to sneak an anomaly into Command without tripping a single alarm.
+> ~~~~
+> //[O5-1 sighs.]//
+> ~~~~
+> **O5-1:** I suppose that's rather flattering, that such an impeccable infiltrator took an interest in us. Of course it begs the question, why do it at all?
+> ~~~~
+> **O5-13:** Intimidation, I suppose. If they managed to get in here, they could be anywhere they want to be. Any other site on the planet would be like tearing open a wet paper bag in comparison.
+> ~~~~
+> **O5-1:** If that was the goal, I can think of a million things more intimidating.  Our severed heads, for one. Or an armed bomb. They could've wiped out decades worth of classified data.
+> ~~~~
+> **O5-13:** I've had Alpha-1 double and triple checking our digital security. It seems like nothing's been touched, oddly enough.  So whoever they were, they didn't steal anything. So it appears to be some sort of political statement, oddly enough.
+> ~~~~
+> **O5-1:** A shadow on the wall.
+> ~~~~
+> //O5-1 turns on a flashlight, aiming it at SCP-5105, which vanishes.//
+> ~~~~
+> **O5-1:** Every test we've been able to conclude is that it's just that; a shadow. No humes disparity, or akiva radiation, or unusual EVE particle transmission to speak of. Just... a shadow. And in the perfect shape of our very own sigil.
+> ~~~~
+> Except whenever I shine a light at it, it vanishes. Funny thing is, this shouldn't actually do anything. A regular shadow doesn't care if the light's from the bulbs overhead or my flashlight straight on, it'll just vanish. Which seems to suggest it can react to direct observation, interestingly. Take a look.
+> ~~~~
+> //O5-1 leaves the room, returning shortly with a ladder. Climbing the ladder, they aim the flashlight at a direct angle from in front of the overhead lights. SCP-5105 vanishes again//
+> ~~~~
+> **O5-1:** See? Before, the shadow was fine. Now that it has a direct observer, it vanishes again.
+> ~~~~
+> //O5-1 clicks off their flashlight and climbs off the ladder.//
+> ~~~~
+> **O5-1:** You said that you felt nothing looking at it. Why is that?
+> ~~~~
+> **O5-13:** How should I know? It's not as if I engineered this little curiosity. It's just a blank slate for me. Yes, I  can recognize it's anomalous. Yes, I recognize that it's potentially dangerous and should not be here. But beyond what my experience as an Overseer tells me... I feel nothing. It's just a shadow. Why do you feel disgust?
+> ~~~~
+> **O5-1:** I have no idea. I just do. I've seen that image millions of times, on every slip of paperwork that's ever crossed my desk since we designed that little thing. I like the design, of course, we wouldn't have it if I didn't. Two wanted to go with something a little more elaborate, but I managed to persuade her...
+> ~~~~
+> **O5-13:** Relief, Laughter, Nostalgia… and then there’s me. Nothing. I wonder why that is. We'll have to do some more testing in the future, try and find someone who's susceptible to this effect aside from us.
+> ~~~~
+> **O5-1:** Good luck convincing the rest to allow so much as a housefly in here. You know Five's half convinced that you smuggled this in here? Had a very delightful chat with him about it.
+> ~~~~
+> **O5-13:** Honestly, I think it's far more likely this was a freak occurrence. We've had stranger things happen before. [[[http://www.scp-wiki.net/scp-3336|That sneeze]]] five years ago, for instance.
+> ~~~~
+> **O5-1:** Hmm. It's possible, I suppose. But look around us. We're in Command right now. Do you know how many SRA's there are just underneath this table? Statistically speaking, it's the least likely spot for an anomaly to ever spontaneously form. We're in the eye of the storm here.
+> ~~~~
+> **O5-13:** Perhaps it's intentional. What's the saying? 'Nature abhors a vacuum.' Perhaps this is our comeuppance for all our years sequestered in Site-01, our little sanctuary of Reality Anchors and Red Right Hands. A shadow on the wall, to remind us we're not as invincible as we think we are.
+> ~~~~
+> **O5-1:** I've rarely heard of anomalies making room for artistic interpretation. I thought you said it wasn't the anartists?
+> ~~~~
+> **O5-13:** No, not like that. Think about it. Sitting here, making decisions every day that result in people dying, while we sit safely tucked away miles from any danger? It dehumanizes us.
+> ~~~~
+> **O5-1:** No one forced your hand to accept this role.
+> ~~~~
+> **O5-13:** It's just... take today. I've just signed an order authorizing the procurement of forty new D-Class Personnel from twelve American prisons. I won't ever see them die, or have to feed and shelter them, they're letters and figures on a page for me. When was the last time you were within spitting distance of an anomaly, not counting [{{[[[SCP-006|REDACTED]]]}}]?
+> ~~~~
+> **O5-1:** ...Fuck you, Thirteen.
+> ~~~~
+> **O5-13:** I didn't mean to offend.
+> ~~~~
+> **O5-1:** You most certainly did.
+> ~~~~
+> //[O5-1 and O5-13 sit in silence.]//
+> ~~~~
+> **O5-1:** So. You're convinced  that this is some sort of anomalous Sword of Damocles, to remind us we're not invincible?
+> ~~~~
+> **O5-13:** Well I might have framed it a little differently, but yes. And I hate to point it out, but I was the only one unaffected by this. Perhaps I'm the only one with an unbiased view.
+> ~~~~
+> **O5-1:** Hmm.
+> ~~~~
+> //[O5-1 and O5-13 remain sitting at the table.]//
+> ~~~~
+> **O5-13:** Rest of the council should be coming shortly. Should we just tell them to carry on as usual?
+> ~~~~
+> **O5-1:** You're the one convinced that it's a message for us. If so, perhaps we shouldn't ignore it. We'll do what we always do.
+> ~~~~
+> **O5-13:** Which is?
+> ~~~~
+> //O5-1 clicks on their flashlight again, causing SCP-5105 to vanish.//
+> ~~~~
+> **O5-1:** Keep the light burning.
+> ~~~~
+> **<End Log>**
+>
