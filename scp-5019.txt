@@ -1,0 +1,441 @@
+title:SCP-5019
+[[include :scp-wiki:component:black-highlighter-theme-dev]]
+[[include :scp-wiki:component:the-foundation-theme]]
+
+[[module css]]
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&amp;display=swap');
+
+.lostmedia-comment,
+.lostmedia-comment * {
+    box-sizing: border-box;
+}
+
+.lostmedia-comment * {
+    font-family: 'Poppins', sans-serif;
+}
+.lostmedia-comment {
+    margin-top:5px;
+    margin-bottom:5px;
+    overflow:hidden;
+    background-color: #fff;
+}
+.lostmedia-comment .comment {
+    position:relative;
+}
+.lostmedia-comment .reply-comment {
+    margin-top:10px;
+    margin-left:30px;
+}
+.lostmedia-comment .head-comment > .comment-header {
+    border-top:1px solid #00a7d8;
+}
+.lostmedia-comment .target-comment .comment-header {
+    border:2px solid green;
+}
+.lostmedia-comment .comment-header {
+    background-color:#e4f1ff;
+}
+.lostmedia-comment .reply-comment > .comment-header {
+    background-color:#f5faff;
+}
+.lostmedia-comment .comment-header {
+    padding-top:2px;
+    padding-bottom:2px;
+    background-color:#f9f9f9 !important;
+    width:100%
+}
+.lostmedia-comment .head-comment > .comment-header {
+    border-top: 4px solid #36782c;
+}
+.lostmedia-comment .comment-header-left {
+    display:inline-block;
+    vertical-align:middle;
+}
+.lostmedia-comment .comment-header-center {
+    display:inline-block;
+    vertical-align:middle;
+    padding-left:5px;
+}
+.lostmedia-comment .comment-header-right {
+    display:inline-block;
+    float:right;
+}
+.lostmedia-comment .avatar {
+    height:48px;
+    padding:5px;
+}
+.lostmedia-comment .comment-title {
+    font-size:20px;
+    font-weight:bold;
+}
+.lostmedia-comment .comment-author {
+    padding-right:5px;
+    font-size:12px;
+}
+.lostmedia-comment .comment-author a {
+    color:#00a7d8;
+    font-weight:bold;
+}
+.lostmedia-comment .collapsible-block {
+    position: relative;
+}
+.lostmedia-comment .collapsible-block .collapsible-block-link {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    box-sizing: content-box;
+    padding: 0 5px;
+    color: rgba(0,0,0,0);
+}
+.lostmedia-comment .collapsible-block .collapsible-block-link:hover {
+    background-color:#8eddf5;
+    mix-blend-mode: darken;
+}
+.lostmedia-comment .comment-body {
+    margin-bottom:5px;
+    font-size:14px;
+    padding-left: 5px;
+}
+.lostmedia-comment .comment-details {
+    color:#555555;
+    opacity:0.8;
+    font-size:12px;
+    padding-right:5px;
+    padding-left:5px;
+}
+.lostmedia-comment .button {
+    background-color:transparent;
+    border:none;
+    font-family:sans-serif;
+    font-weight:bold;
+    text-decoration:none;
+    padding-left:5px;
+    padding-right:5px;
+    box-shadow:none;
+    -webkit-appearance: button;
+    cursor: pointer;
+    text-transform: none;
+    overflow: visible;
+    margin: 0;
+}
+.lostmedia-comment .button:hover {
+    background-color:#8eddf5;
+}
+.lostmedia-comment .button:enabled:active {
+    opacity:0.5;
+}
+.lostmedia-comment .button:enabled:hover {
+    color:#3ccefa;
+}
+.lostmedia-comment .button:disabled {
+    color:#95a5a6;
+    opacity:0.2;
+}
+.lostmedia-comment .moderator-button {
+    color:#ff0000;
+}
+.lostmedia-comment .moderator-button:enabled:hover {
+    color:#ff5555;
+}
+.lostmedia-comment .toggle-button {
+    border:none;
+    border-style:none;
+}
+.lostmedia-comment .vote-upcount,
+.lostmedia-comment .vote-downcount {
+    color:#555555;
+    padding-left:3px;
+}
+.lostmedia-comment .link-button {
+    border:none;
+    border-style:none;
+    font-size:12px;
+    font-weight:normal;
+    text-align:left;
+    position: relative;
+}
+
+.lostmedia-comment .link-button a,
+.lostmedia-comment .link-button a:hover,
+.lostmedia-comment .link-button a:active,
+.lostmedia-comment .link-button a:visited {
+    text-decoration: none;
+    color: #333;
+}
+.lostmedia-comment .reply-button {
+    font-size:12px;
+    font-weight:normal;
+    text-align:left;
+}
+.lostmedia-comment div.span {
+    display: inline-block;
+}
+
+[[/module]]
+
+[[module CSS]]
+@import url("https://use.typekit.net/tqr1skr.css");
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700|Poppins:400,600&display=swap');
+@import url("https://fontlibrary.org/face/comic-neue");
+
+/* REDDIT */
+.reddit-post{
+    background-color: #fcfcfb; 
+    border: 1px solid #b5b3ac; 
+    padding: 0 .85em;
+    margin: .43em; 
+    overflow: hidden;
+    font-family: verdana,arial,sans-serif;
+}
+[[/module]]
+
+[[include :scp-wiki:component:anomaly-class-bar-source
+
+|item-number= 5019
+
+|clearance= 2
+
+|container-class= keter
+
+|secondary-class= none
+
+|secondary-icon= http://acsurlexample.com/image.svg
+
+|disruption-class= ekhi
+
+|risk-class= caution
+
+]]
+
+------
+
+@@ @@
+
+[[include component:image-block
+| name=LILLYPOSTER
+| caption=The show poster for //Loopy Lilly//.
+| width=WIDTH-GOES-HERE]]
+
+**Special Containment Procedures:** Due to the nature of SCP-5019, it is currently uncontained. Foundation web crawlers have been unable to suppress any mentions of SCP-5019. Administered amnestics have been shown to have no affect. Any mention of SCP-5019 is to be monitored by Foundation web crawlers. Copies should be downloaded and stored on a secure hard drive.
+
+**Description:** SCP-5019 is a nonexistent episode of the television cartoon //Loopy Lilly// titled //Ick Day.// SCP-5019 is displayed as the 15th episode of the 3rd season of the show, despite there being no record of such an episode ever being aired or created. Non-affected individuals remember the episode in its true state as a canceled project (see below.) The status, contents, and description of the episode vary per affected individual.
+
+According to a Foundation web scan of all internet platforms, the release status of SCP-5019 has been remembered in the following various ways:
+
+* The episode had an official television release, but no saved copy exists. Rather, only official statements and plot summaries confirming its release. The consensus among those displaying this effect is that it is considered "lost media".
+* The episode can be found in the same manner as the rest of the series. 
+* The episode was planned for release, but was canceled with only a title and number released. This is the status remembered by non affected individuals, and is the factually true status.  
+* The episode is a horror story written by a user of an online forum that is popularly mistaken for a lost episode.
+* The episode is a horror story written by a user of an online forum that is remembered as such, and is not mistaken for being official content. 
+* The episode is only rumored to exist, with the origin of this rumor unknown.
+* The episode is rumored to exist, but is confirmed fake by an individual who worked on the show.
+* The episode does not exist in any form, not even in its true form as a canceled title. 
+@@ @@
+As concluded by Foundation-run tests and interviews, those affected by SCP-5019 will view all discussion related to SCP-5019 as matching their own recollection, despite evidence to the contrary. This effect also applies to any stills or clips of SCP-5019.
+
+@@ @@
+
+------
+
+The following is an abridged list of online posts containing descriptions of the contents of SCP-XXXX:
+@@ @@
+@@ @@
+> **User:** //Accompliceofneverland//
+> **Source:** www.tumblr.com
+> [[=]]
+> [[image ACCNEV width="500" height="500"]]
+> [[/=]]
+> @@ @@
+
+@@ @@
+[[div_ class="blockquote"]]
+@@ @@
+**User:** //FoundFormest//
+**Source:** www.lostmediawiki.com
+@@ @@
+[[div_ class="lostmedia-comment expanded" id="lostmedia-comment-1"]]
+[!-- BEGIN PRIMARY COMMENT --]
+[[div_ class="comment head-comment" id="comment"]]
+    [[div_ class="comment-header"]]
+     [[div_ class="comment-header-left"]]
+
+     [[/div]]
+     [[div_ class="comment-header-center"]]
+     [[div_ class="comment-title"]]
+     Makes sense
+     [[/div]]
+     [[div_ class="comment-author span"]]
+     [[a href="#"]]FoundFormest[[/a]]
+     [[/div]]
+     [[div_ class="comment-details span"]]
+     |
+     [[/div]]
+     [[div_ class="comment-details span"]]
+     Posted on August 22 at 3:20 pm
+     [[/div]]
+     [[div_ class="comment-details span"]]
+     |
+     [[/div]]
+     [[div_ class="button link-button span"]]
+     [[a href="#u-lostmedia-comment-1"]][link][[/a]]
+     [[/div]]
+     [[/div]]
+     [[div_ class="comment-header-right"]]
+     [[div_ class="button toggle-button"]]
+     [[image http://scptestwiki.wdfiles.com/local--files/sigma%3Alostmediawiki-comment/collapse.png]]
+     [[/div]]
+     [[/div]]
+    [[/div]]
+[[collapsible show="+" hide="-" folded="no"]]
+[[div_ class="comment-body"]]
+    Non-existence confirmed makes so much sense. I thought it was real for the longest time, and dude, it scared the shit out of me. I mean I heard stuff about Lilly kicking her lamb into the street, and there were pictures of the scene. So fuckin glad those are fake and fanmade. Ick Day, the episode where Lilly went of being mean and grumpy to her friends around time because she was sick and refused medicine. I'd have nightmares about that when I was little. It's a show for like 5 to 9 year olds! God I hate the internet lmao
+[[/div]]
+[[/div]]
+    [!-- END PRIMARY COMMENT --]
+[[/collapsible]]
+[[/div]]
+@@ @@
+[[/div]]
+
+@@ @@
+
+> **User:** //Questionartmark//
+> **Source:** www.instagram.com
+> 
+> [[=]]
+> [[image MARKART width="500" height="700"]]
+> [[/=]]
+> @@ @@
+
+@@ @@
+
+> **User:** //KuestionableXontent//
+> **Source:** www.reddit.com
+> 
+> [[div class="reddit-post"]]
+> 
+> [[div style="float: right; width: 93.5%;"]]
+> 
+> [[span style="color: #551a8b; font-size: medium; font-weight: normal; margin-bottom: 1px;"]] Thought I'd drop what I remember of the Loopy Lilly episode peeps have been discussing. Basically Lilly is out in the town with her friends and someone near them gets sick and then they're scared that they'll get sick. The spend the whole episode being super careful afraid that they'll get germs and stuff. At the end they all get sick. The episode was controversial because parents were afraid it sent a kinda mean message. It's weird that it's lost. Now I don't remember much either, that's about it. [[/span]]
+> [[span style="font-size: x-small;"]] ##888|submitted 21 hours ago by## ##369|KuestionableXontent##[[/span]]
+> [[span style="color: #888; font-size: x-small; font-weight: bold; padding: 1px 0;"]] 5 comments@@   @@share@@   @@save@@   @@hide@@   @@##a79128|give gold##@@   @@report@@   @@crosspost [[/span]]
+> 
+> [[/div]]
+> 
+> [[span style="text-align: center; color: #FF8B60; font-weight: bold; font-size: large;"]] ⬆ [[/span]]
+> [[span style="text-align: center; color: #FF8B60; font-weight: bold; font-size: small;"]] 18 [[/span]]
+> [[span style="text-align: center; color: #B6B6B6; font-weight: bold; font-size: large;"]] ⬇ [[/span]]
+> 
+> [[/div]]
+> @@ @@
+@@ @@
+
+> **User:** //Quillednevildevil//
+> **Source:** www.twitter.com
+> [[=]]
+> [[image QUILL width="500" height="330"]]
+> [[/=]]
+> @@ @@
+
+------
+
+**Addendum-1:**
+
+On 09-08-2016, a notable user under the name of Nichola.Myerssss (dubbed PoI-5019) was found on various discussion threads of various sites discussing SCP-5019. PoI-5019 appears to be affected by SCP-XXXX in a way that differs from all other cases of SCP-5019's affect. Most affected individuals see all discussions of SCP-5019 fitting their view of it, while PoI-5019 views each discussion written in its true nature. PoI-5019 claims to be the writer of the episode and that it does exist, but was never released. Other affected individuals see PoI-5019's comments as supporting their view of SCP-5019.
+
+
+Below is an abridged list of comments PoI-5019 has made on discussion threads revolving around SCP-5019:
+
+> **Source:** www.reddit.com
+> @@ @@
+> 
+> [[div class="reddit-post"]]
+> 
+> [[div style="float: right; width: 93.5%;"]]
+> 
+> [[span style="display: inline-block; font-size: x-small; height: .67em;"]] [[span style="padding: 1px; color: #369;"]] [–] [[/span]] [[span style="font-weight: bold; margin-right: .4em; color: #369;"]] Nichola.myerssss [[/span]] [[span style="color: #888;"]] 2 points 23 hours ago [[/span]] [[/span]]
+> 
+> [[span style="font-size: small; font-weight: 400; color: #222;"]] OH MY ACTUAL FUCKING GOD WHAT THE FUCK IS GOING ON HERE?? Like am I crazy?? I'm the creator of the damn thing, look me up. The episode isn't an online horror tale! It's a real thing that I wrote and helped animate, and damnit the plot is NOTHING like that. Dizzy isn't hit by a car what the fuck [[/span]]
+> 
+> [[/div]]
+> 
+> [[span style="display: inline-block; text-align: center; color: #B6B6B6; font-weight: bold; font-size: large; height: 19px;"]] ⬆ [[/span]]
+> [[span style="display: inline-block; text-align: center; color: #B6B6B6; font-weight: bold; font-size: large; height: 19px;"]] ⬇ [[/span]]
+> 
+> [[/div]]
+> 
+> [[div class="reddit-post" style="margin-left: 2em;"]]
+> 
+> [[div style="float: right; width: 93.5%;"]]
+> 
+> [[span style="display: inline-block; font-size: x-small; height: .67em;"]] [[span style="padding: 1px; color: #369;"]] [–] [[/span]] [[span style="font-weight: bold; color: #0055df;"]] Daisiesinrazors[[/span]] [[span style="padding: 1px;"]] ##888|[####0055df|S####888|]## [[/span]] [[span style="color: #888;"]] 10 points 15 hours ago [[/span]] [[/span]]
+> 
+> [[span style="font-size: small; font-weight: 400; color: #222;"]] Ikr! pretty crazy that someone would write something like that based off a show for literal children. Honestly, I heard the crew of the show is pretty upset by it. I hate the internet lmao[[/span]]
+> 
+> [[/div]]
+> 
+> [[span style="display: inline-block; text-align: center; color: #B6B6B6; font-weight: bold; font-size: large; height: 19px;"]] ⬆ [[/span]]
+> [[span style="display: inline-block; text-align: center; color: #B6B6B6; font-weight: bold; font-size: large; height: 19px;"]] ⬇ [[/span]]
+> 
+> [[/div]]
+> 
+> [[div class="reddit-post" style="margin-left: 4em;"]]
+> 
+> [[div style="float: right; width: 90%;"]]
+> 
+> [[span style="display: inline-block; font-size: x-small; height: .67em;"]] [[span style="padding: 1px; color: #369;"]] [–] [[/span]] [[span style="font-weight: bold; margin-right: .4em; color: #369;"]] Nichola.myersss [[/span]] [[span style="color: #888;"]] 1 point 7 hours ago [[/span]] [[/span]]
+> 
+> [[span style="font-size: small; font-weight: 400; color: #222;"]] First off, I didn't say anything even close to that! Jesus christ! What, they paying you or something? Why is the whole internet broken? [[/span]]
+> 
+> [[/div]]
+> 
+> [[span style="display: inline-block; text-align: center; color: #B6B6B6; font-weight: bold; font-size: large; height: 19px;"]] ⬆ [[/span]]
+> [[span style="display: inline-block; text-align: center; color: #B6B6B6; font-weight: bold; font-size: large; height: 19px;"]] ⬇ [[/span]]
+> 
+> [[/div]]
+
+
+@@ @@
+> **Source:** www.twitter.com
+> [[=]]
+> [[image NIC1 width="385" height="520"]]
+> [[image NIC2 width="385" height="320"]]
+> [[/=]]
+> @@ @@
+
+@@ @@
+> **Source:** www.twitter.com
+> 
+> [[=]]
+> [[image T3 width="385" height="540"]]
+> [[image T4 width="385" height="540"]]
+> [[image T5 width="385" height="300"]]
+> [[/=]]
+
+@@ @@
+PoI-5019 has not been active on any online source since 10-23-2015. Foundation web crawlers have been coded to alert the SCP-5019 Head Researcher immediately should PoI-5019 become active once more.
+
+@@ @@
+
+------
+
+**Addendum-2:** 
+
+On 12-04-17, Agent Carawoa discovered the root of SCP-5019's anomalous features stem from PoI-6786, whom she knows through a Foundation undercover operation she is currently involved in.
+
+Agent Carawoa reports that PoI-6786 was a member of the production cast for //Loopy Lilly//, and was upset that PoI-5019 was given the production lead role of the series finale instead of her. PoI-6786 expressed disinterest in PoI-5019's finished product, believing that the message she was trying to spread was inappropriate for a program of a light-hearted nature. PoI-6786 admitted creating a finished clip for the episode, and to implementing it as a part of PoI-6786's work. PoI-5019 submitted the clip to her boss, and SCP-5019 suddenly manifested. PoI-6786 is unaware as to how her messing with the episode spread such an affect, but holds clear guilt as she explained the situation to fellow members of her artists' cabal.
+
+Agent Carawoa was able to retrieve stills from the completed clip PoI-6786 created. The following are currently under Foundation investigation.
+
+@@ @@
+[[=]]
+[[div style="width: 48%; float:left; clear: none;"]]
+[[image DIZZY width="320" height="315"]] 
+[[/div]]
+[[div style="width: 48%; float:left; clear: none;"]]
+[[image LILLY width="320" height="315"]]
+[[/div]]
+[[/=]]
