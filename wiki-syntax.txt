@@ -1,5 +1,4 @@
 title:Wiki Syntax
-parent:guide-hub
 [[>]]
 [[module Rate]]
 [[/>]]
@@ -23,7 +22,10 @@ This is a reference for Wikidot syntax used often (or not) in writing SCPs. If y
 || @@Text^^Superscript^^@@ || Text^^Superscript^^ ||
 || @@Text,,Subscript,,@@ || Text,,Subscript,, ||
 || @@[[span style="color:red"]]//span// Inline Element[[/span]]@@ || [[span style="color:red"]]//span// Inline Element[[/span]] ||
-|| @@##blue|Predefined## Or ##0000FF|Hex Color Code##@@ || ##blue|Predefined## or ##0000FF|Hex Color Code## ||
+|| @@##blue|Predefined## or ##0000FF|Hex Color Code##@@ || ##blue|Predefined## or ##0000FF|Hex Color Code## ||
+|| @ @ @@Escape Parsing {{Example}}@@ @ @ || @@Escape Parsing {{Example}}@@ ||
+
+*Note that to escape parsing, there should be no spaces between the two @'s and the text. It is written as above due to @@ failing to escape parsing for itself.
 
 + Text Size
 
@@ -141,9 +143,9 @@ Use the HTML5 media player to add audio and video. Change the type to either "au
 
 Quoteblocks are handy for inserting text that comes from notes, or just to insert long quotes:
 
-**@@> Quote@@**
-**@@> @@**
-**@@> More quote@@**
+{{@@> Quote@@}}
+{{@@> @@}}
+{{@@> More quote@@}}
 
 > Quote
 > 
@@ -151,17 +153,17 @@ Quoteblocks are handy for inserting text that comes from notes, or just to inser
 
 Note that there is a "> " to insert the empty line, and a space after the second ">" bracket; without those, the empty line isn't there:
 
-**@@> Quote@@**
-**@@>@@**
-**@@> More quote@@**
+{{@@> Quote@@}}
+{{@@>@@}}
+{{@@> More quote@@}}
 
 > Quote
 >
 > More quote
 
-**@@> Quote@@**
+{{@@> Quote@@}}
 
-**@@> More quote@@**
+{{@@> More quote@@}}
 
 > Quote
 
