@@ -165,15 +165,15 @@ created_by="The Trashman" prependLine="||~ Page ||~ Rating ||~ Comments ||~ Date
 [[/module]]
 ------------
 = **Tales**
-
-[[module ListPages order="rating desc" separate="false" limit="600" perPage="100" tags="tale"
-created_by="Laneous" prependLine="||~ Page ||~ Rating ||~ Comments ||~ Date Created ||"]]
-|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
-[[/module]]
 [[module ListPages order="rating desc" separate="false" name="cuteness-*" limit="600" perPage="100" tags="tale co-authored"
 created_by="Ellie3" prependLine="||~ Page ||~ Rating ||~ Comments ||~ Date Created ||"]]
 || %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
 [[/module]]
+[[module ListPages order="rating desc" separate="false" limit="600" perPage="100" tags="tale"
+created_by="Laneous" prependLine="||~ Page ||~ Rating ||~ Comments ||~ Date Created ||"]]
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% ||
+[[/module]]
+
 -----------
 [[/tab]]
 [[tab Fan-Art]]
