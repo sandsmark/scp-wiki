@@ -24,22 +24,12 @@ title:SCP-4703
 
 
 ------
-[[div class="pictures4desk"]]
-[[include component:image-block
+[[include component:image-block-peppo
     name=4703.jpg|
     caption=SCP-4703 interior.|
     width=300px|
-    align=right
 ]]
-[[/div]]
-[[div class="pictures4mobile"]]
-[[include component:image-block
-    name=4703.jpg|
-    caption=SCP-4703 interior.|
-    width=300px|
-    align=center
-]]
-[[/div]]
+
 
 **Special Containment Procedures:** Due to SCP-4703's status as a perfectly legal establishment,[[footnote]]thank you very much[[/footnote]] any direct attempts to shut it down or otherwise prevent members of the public from patronizing the business are considered unlawful. Instead, a Foundation-run grocery store[[footnote]]Super Competitive Prices!™, LLC.[[/footnote]] has been established adjacent to SCP-4703 to draw away potential customers. Advertising campaigns showcasing the Foundation's superior products and offers are to be sustained in perpetuity. 
 
@@ -229,21 +219,6 @@ FOUNDATION LEGAL DEPARTMENT
 [[/div]]
 
 [[module CSS]]
-/* Fix footnote superscript flying away: */
-.footnoteref, #page-content > sup {
-    top: -0.25em;
-}
-
-/* Remove clear on image block when >600px wide */
-@media (max-width: 979px) and (min-width: 768px) {
-    #page-content div, #page-content div table {
-    clear: none;
-    }
-}
-.scp-image-block.block-right {
-    clear: none;
-}
-
 /* Stylized addendum blocks: */
 .addendum {
     margin: 0% 9% 0% 7%;
@@ -251,40 +226,17 @@ FOUNDATION LEGAL DEPARTMENT
     background-color: #f2f2f2;
 }
 
-.scp-image-block.block-right {
-    margin: 0em 0em 1em 2em;
-}
-
 .text-part > .main-class {
 margin-left: 0em;
 }
 
-/* Alternate picture layouts for mobile and desktop: */
-.pictures4mobile {
-    height: 0px;
-    overflow: hidden;
-}
 
-.pictures4desk {
-    height: auto;
-}
 
 @media only screen and (max-width: 600px) {
 
     .addendum {
         margin: 0% 4% 0% 4%;
     }
-
-    .pictures4mobile {
-        height: auto;
-    }
-
-    .pictures4desk {
-        height: 0px;
-        overflow: hidden;
-    }
-
-}
 [[/module]]
 
 [[include component:acs-peppo-split
