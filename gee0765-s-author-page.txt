@@ -15,13 +15,11 @@ title:gee0765's Author Page
 [[module Rate]]
 [[/>]]
 
-[[module ListPages separate="no" tags="+_cc +scp" perPage="1" order="random" prependLine="||~ Page||~ Author||~ Rating||"]]
+[[collapsible]]
+[[module ListPages separate="no" tags="scp, -archived, -in_rewrite" created_at="last 180 day" order="created_at desc" rating="<=20" prependLine="||~ Page||~ Author||~ Rating||"]]
 ||%%title_linked%%||%%created_by%%||%%rating%%||
 [[/module]]
-
-[[module ListPages separate="no" tags="scp, -archived, -in_rewrite" created_at="last 180 day" order="created_at desc" rating="<=30"]]
-* %%title_linked%% [+%%rating%%]
-[[/module]]
+[[/collapsible]]
 
 
 Hello everybody, and welcome to my Author Page. Below, I will display the //**massive**// amount of work I’ve posted to this site: ##white|spinchaintrain##
