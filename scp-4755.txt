@@ -2,6 +2,24 @@ title:SCP-4755
 [[include :scp-wiki:component:black-highlighter-theme-dev]]
 [[include :scp-wiki:component:bhl-dark-sidebar]]
 [[module CSS]]
+.collapsible-block-unfolded {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+     opacity: 0;
+     transform: translate(0,30px);
+    }
+    to {
+     opacity: 1;
+     transform: translate(0,0);
+    }
+}
 #page-content blockquote {
   border: 2px double #999;
   background-color: #f4f4f4;
