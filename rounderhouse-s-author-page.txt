@@ -1,26 +1,5 @@
 title:The Rounderpage
 [[include component:black-highlighter-theme-dev]]
-[[=]]
-[[size 300%]]
-[[span style="font-family: 'Bungee Shade', cursive;" color: "#D4AF37;"]]
-**5000KON ENTRIES**
-[[/span]]
-[[/size]]
-[[/=]]
-
-----
-[[div class="fivek"]]
-[[module ListPages order="rating desc" category="." tags="+5000 -contest" perPage="40" separate="no" prependLine="||~ Place ||~ Title ||~ Author ||~ Rating ||~ Votes ||~ Comments ||"]]
-|| #%%index%% || %%title_linked%% || %%created_by_linked%% || %%rating%% || +[[#expr (%%rating%%+((%%rating_votes%%-%%rating%%)/2))]], -[[#expr ((%%rating_votes%%-%%rating%%)/2)]] || %%comments%% ||
-[[/module]]
-[[/div]]
-
-
-
-
-
-
-
 [[div style="background: url(http://scp-wiki.wdfiles.com/local--files/rounderhouse-s-author-page/rounderception.png); height: 20px; position: sticky; top: 0; text-align: center; border: 4px solid #000; z-index: 100;"]]
 [[/div]]
 [[div class="shimmy"]]
