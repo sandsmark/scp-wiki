@@ -1,0 +1,267 @@
+title:SCP-3928
+[[module CSS]]
+.blinkbar {color: red;font-size:125%; animation: blink 1.5s infinite; letter-spacing: -0.13em;}@keyframes blink{to{opacity: .0;}}@keyframes flicker {0% {opacity: 0.9890; }5% {opacity: 0.5842; }10% {opacity: 0.9865; }20% {opacity: 0.0412; }20% {opacity: 0.6255; }25% {opacity: 0.3157; }30% {opacity: 0.7328; }35% {opacity: 0.4654; }40% {opacity: 0.9128; }45% {opacity: 0.2449; }50% {opacity: 0.5485; }55% {opacity: 0.6438; }60% {opacity: 0.1180; }65% {opacity: 0.9085; }70% {opacity: 0.0266; }75% {opacity: 0.6795; }80% {opacity: 0.7812; }85% {opacity: 0.0117; }90% {opacity: 0.2239; }95% {opacity: 0.8897; }100% {opacity: 0.2260; }}@keyframes overlay-anim {0% {visibility: hidden; }10% {visibility: hidden; }11% {visibility: visible; }50% {visibility: hidden; }100% {visibility: hidden; }}
+.collapsible-block-folded a.collapsible-block-link {
+    animation: blink 0.8s ease-in-out infinite alternate;
+}
+@keyframes blink {
+    0% { color: transparent; }
+    50%, 100% { color: #b01; }
+}
+.email {float: center; border: solid 2px #000000; width: 88%; padding: 1px 15px; margin: 10px 10px 10px 10px; box-shadow: 0 1px 3px rgba(0,0,0,.5)}
+a.collapsible-block-link { font-weight: bold; }
+.tofrom {margin-left: 10px; margin-top: 5px; padding: 1px 15px; border-left: solid 3px maroon}
+[[/module]]
+
+[[include :scp-wiki:component:black-highlighter-theme-dev]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[include :scp-wiki:component:classified-bar-woed
+|lv=3
+|item=3928
+
+|oc=Keter
+|lang=EN
+]]
+
+**Special Containment Procedures:** Total containment is infeasible at this time, due to the nature of SCP-3928 events. If an SCP-3928 event is confirmed to have occurred, aerosol amnestics will be deployed over a 0.5 km radius of the incident. Footage or photographs of the event circulated online will be removed by Foundation webcrawlers.
+
+[[include :scp-sandbox-3:image-zoom name=khanda|caption=An Indian Khanda recovered from Event-3928-19.|width=300px|align=right]]
+
+**Description:**SCP-3928 is the tentative designation given to a series of events wherein random individuals are stabbed in the chest by swords in public venues, with hundreds or thousands of witnesses.
+
+Despite a large amount of potential eyewitnesses in all cases, witnesses are always turned away from the approximate origin location of the sword at the moment of appearance. The precise type of swords used have varied widely, with Indoneisian goloks, Japanese katanas, Chinese jians and Iberian falcatas all having manifested. Swords collected from events appear to be entirely non-anomalous.
+
+An examination of victim's histories reveals that SCP-3928 appears to target those with a connection to firearms. What SCP-3928 considers a connection appears to be arbitrary/broad in scope, as SCP-3928 events have occurred to those with the last names of arms companies or famous gun manufacturers, players of shooter video games, those belonging to the technical crew of any of the //Godfather// films, or fans of the English punk-rock band //The Sex Pistols.//
+
+**3928 Event Log Excerpts:**
+
+|| SCP-3928-13|| Samantha Barring|| Was singing along to American singer Lana Del Rey's //Bartender//[[footnote]]Excerpt of lyrics: //The poetry, inside of me, is warm like a gun//[[/footnote]] when she was killed by a flamberge sword[[footnote]]An undulating-bladed longsword effective at parrying enemy blades.[[/footnote]] inside a friend's car during rush-hour traffic.||
+|| SCP-3928-23|| Fredrick Wilson|| Low level accountant at Remington Arms Company. Killed by a Roman Gladius[[footnote]]A one-handed double-edged sword used primarily as a stabbing weapon.[[/footnote]] while at a company picnic.||
+|| SCP-3928-28 || Justin Iglesias|| Political activist and gun store owner. Impaled by a European arming sword[[footnote]]A one-handed sword averaging 0.95 metres in length.[[/footnote]] during a speech on the importance of an armed militia.||
+|| SCP-3928-37|| Lucy Carrington|| Doctor at the Greater Utah Neurosurgery research center. Killed by a Japanese World War II's Shin guntō[[footnote]]A saber similar to a katana, although traditionally ceremonial.[[/footnote]] at work.||
+|| SCP-3928-44|| Anthony Hegel|| Was discussing the //Doom// video game series with a coworker. Nearly decapitated by a Scottish claymore[[footnote]]A two-handed sword around 1.3 metres in length.[[/footnote]] at a public park.||
+
+[[=]]
+------
+[[<]]
+[[div class="email"]]
+[[div class="tofrom"]]
+**To:** Maria Gonzales
+**From:** Lucia Reinette-Hartle
+**Subject:** SCP-3928
+[[/div]]
+------
+Maria,
+
+I've been going over our records of SCP-3928 incidents, and noticed something interesting. The incidents appear to not be random, but have been following a clear path. Our first recorded incident took place in the Netherlands, and then we had some in Belgium, Germany, France, and Portugal. After that is our first notable delay, taking place 14 days later on the first of January in New York.
+
+I asked Carson in Surveillance if he could get me a record of every ship to arrive from Portugal in the last week of December. A cargo ship from Portugal arrived in New York harbor on the first, just a few hours before our next incident of SCP-3928.
+
+I don't think it's a phenomena. It appears that someone is controlling this. I'm putting in an order for your team to be equipped with Aetheric examiners. See if you can find anything on your next deployment.
+[[/div]]
+@@ @@
+
+@@ @@
+[[div class="email"]]
+[[div class="tofrom"]]
+**To:** Lucia Reinette-Hartle
+**From:** Maria Gonzales
+**Subject:** Re: SCP-3928
+[[/div]]
+------
+Just got back from Salt Lake City. Got to the hospital about three to four hours after the incident. Didn't find anything with the Aetheric Examiners, but John picked up something with his thaumometer he had from his last deployment. Akiva radiation.
+
+You were right. Looks like we've got a god on our hands.
+[[/div]]
+@@ @@
+
+@@ @@
+[[div class="email"]]
+[[div class="tofrom"]]
+**To:** Maria Gonzales
+**From:** Lucia Reinette-Hartle
+**Subject:** fuck.
+[[/div]]
+------
+Well, fuck. I think I know where it's going to go next, though. Have you ever been to Comic Con?
+
+https://fanxsaltlake.com/
+
+[[/div]]
+[[/<]]
+@@ @@
+
+@@ @@
+[[/=]]
+
+------
+
+> [[=]]
+> **SCP-3928 MOBILE TASK FORCE LOG**
+> [[/=]]
+> **Mission Abstract:** Finding and containing SCP-3928-1.
+>
+> **Mobile Task Force:** MTF Pi-1 ("City Slickers")
+>
+> [BEGIN LOG]
+> ~~~~
+> **Romero:** So, what exactly is this supposed to be?
+> ~~~~
+> **Luc:** Think it's from Game of Thrones. The, uh, guy who sleeps with his sister. Best we avoid guns, I guess.
+> ~~~~
+> **Brant:** Wait, how do you guys not know who Jaime fucking Lannister is?
+> ~~~~
+> **Gonzales:** Language, Brant, this is all going on transcripts.
+> ~~~~
+> **Brant:** Sorry, Captain. But have you guys been living under a rock for the past 8 years? Like I know season seven and eight weren't that great, god I could go on a tangent about that-
+> ~~~~
+> **Luc:** Anyways, let's try and focus on the mission, alright? Are we sure SCP-3928-1's gonna be here? Utah's pretty liberal when it comes to gun laws, could've gone anywhere. Like a gun store for one, don't think it's gonna think a piece of cardboard is a real firearm.
+> ~~~~
+> **Brant:** You've seen the logs, right? It's ridiculous, it'll kill for anything. And remember, it always looks for an audience. There's over a hundred thousand people at this thing every year, it'll-
+> ~~~~
+> **Gonzales:** Fuck. Yeah, Akiva levels are definitely out of whack. It's definitely here, or was here recently.
+> ~~~~
+> **Brant:** Alright, so it should be around here somewhere-
+> ~~~~
+> //[screaming is heard from a nearby convention hall.]//
+> ~~~~
+> **Gonzales:** Alright, that's us, move out. This is Pi-1, we're gonna need some aerosol amnestics fast, if we wanna keep this under wraps.
+> ~~~~
+> //[PI-1 enters the convention hall, pushing through a horde of attendees rushing out. A man in a costume is on the ground, a sword in his chest.]//
+> ~~~~
+> **Brant:** Got it right here, Captain. Where is it?
+> ~~~~
+> **Gonzales:** Right by the body. Don't think it knows we can see it.
+> ~~~~
+> **Brant:** There?
+> ~~~~
+> **Gonzales:** Little more to the right. A little more... yeah. Fire away.
+> ~~~~
+> //[Brant empty his paintball magazine at the directed space, splattering against a humanoid shaped creature holding a sword like object.]//
+> ~~~~
+> **SCP-3928-1:** Foul sorcerers! TODAY YOU MEET YOUR END AT THE HANDS OF THE FINEST WARRIOR ALIVE!
+> ~~~~
+> **Gonzales:** Well, you can't be very good if we've never heard of you.
+> ~~~~
+> **Romero:** Is that wise-
+> ~~~~
+> **Gonzales:** //[Aside]// I know what I'm doing. Sorry, who did you say you were again.
+> ~~~~
+> //[SCP-3928-1 lowers its sword. At the same time it becomes visible, revealing itself to resemble a woman in her early thirties.]//
+> ~~~~
+> **SCP-3928-1** Surely you jest. Have I been gone for so many years that my face has been forgotten? No matter. If not my face endures, surely my deeds have. After all, who could possibly forget the goddess //Sandraudiga, the painter of the sands!//
+> ~~~~
+> //[silence.]//
+> ~~~~
+> **SCP-3928-1:** As in, painting the sands with your blood. I am a war goddess, after all.
+> ~~~~
+> **Romero:** Oh. Do the Netherlands even have sand?
+> ~~~~
+> **SCP-3928-1:** Well we have beaches, so yes. But enough talk! You must die for your crimes against the art of honorable combat!
+> ~~~~
+> **Gonzales:** Uh, could you excuse me for a moment? I forgot my weapon on my uh, horse.
+> ~~~~
+> //[SCP-3928-1 frowns.]//
+> ~~~~
+> **SCP-3928-1:** What?
+> ~~~~
+> **Gonzales:** Well, I assume we're going to be dueling to the death? I can't properly duel without my weapon, wouldn't, be um, uh... honorable.
+> ~~~~
+> **SCP-3928-1:** Ah, of course! But I'd be a barbarian if I let you go unarmed. Here, take one of mine.
+> ~~~~
+> //[As if pulling it from a sheath, SCP-3928-1 pulls another sword out of thin air, offering it to Gonzales.]//
+> ~~~~
+> **Gonzales:** No, that's alright. Got the, uh, grip just how I like it. Besides, wouldn't be proper to just rely on other people's swords now would it?
+> ~~~~
+> //SCP-3928-1 nods enthusiastically.//
+> ~~~~
+> **SCP-3928-1:** Fly as swift as the wind, my good lady. I'm looking forward to killing you.
+> ~~~~
+> **Gonzales:** Er, likewise. //[aside]// Keep her busy.
+> ~~~~
+> //[Gonzales exits the room.]//
+> ~~~~
+> **Romero:** So, um... What exactly is a goddess doing at Comic Con?
+> ~~~~
+> **SCP-3928-1:** I'm happy to inform you! But first, let me ask you a question. Looking at all the years of humanity's greatest wars and battles, what would you say is the most perfect weapon ever devised?
+> ~~~~
+> **Romero:** I don't know, probably some form of nuclear-
+> ~~~~
+> //[Romero is elbowed by Brant.]//
+> ~~~~
+> **Romero:** I mean, the sword?
+> ~~~~
+> **SCP-3928-1:** Exactly! The Saxons, the Greeks, even the heretical Romans recognized the true beauty of the sword. A cowardly archer may attempt to claim superiority at a further range, but a swordsman can feel the weight of the sword in his hand as it tears through skin and bone. An elegant weapon from a more civilized age.
+> ~~~~
+> **Luc:** Did you just quote //A New Hope-// You know what, never mind. Think you were saying how you ended up here?
+> ~~~~
+> **SCP-3928-1:** Ah, yes. Long ago, I was  leading my people against the Romans and their leader, Bellona, who challenged me to single combat to determine the fate of the battle. I stepped outside to duel, when she crushed me with her siege weapons! Then she dropped a fortress on me! Had to dig my way out of it. Never trust a Roman, you three.
+> ~~~~
+> **Brant:** Uh, we'll take your advice. But why exactly are you killing people two millennia later?
+> ~~~~
+> **SCP-3928-1:** Because they're treacherous roman cowards! These //guns//, as people call them, are completely dishonorable. Strength of arms matters little with them. A commoner can kill a seasoned warrior five times his equal with the press of a button! If no one else is correcting this behavior, I must. One coward at a time, starting with you three. Draw your weapons!
+> ~~~~
+> **Brant:** Fine fine, just had one more question. Why use swords? Like I get that they're honorable and all, but I'm sure it'd be easier another way. You are a goddess, after all. Sure you could just explode tus, or something.
+> ~~~~
+> **Romero:** //[aside]// What the hell are you doing?
+> ~~~~
+> **SCP-3928-1:** I... I don't have to answer to you, you sorcerer!
+> ~~~~
+> **Luc:** Wait a minute, the file said she's been tracing her way from the Netherlands to here. She took a boat across the Atlantic. Doesn't strike me as something an all powerful goddess would do.
+> ~~~~
+> **Brant:** So what, she's not actually a goddess?
+> ~~~~
+> **Luc:** No, she definitely is one, that's for sure. But she seems to be on the lower scale of them. Sword manifestation, sure, that's technically reality bending, but nothing I haven't seen before. If I had to guess, I'd say she's probably a Class... C?[[footnote]]Typically those only capable of small to intermediate changes in their immediate vicinity. See [[[SCP-4166]]].[[/footnote]]
+> ~~~~
+> **SCP-3928-1:** If you three wish to die squabbling over my talents, so be it. I am still perfectly capable of killing all three of you. Never let it be said I did not offer you a chance at an honorable death-
+> ~~~~
+> //[A small object flies into the room, landing at SCP-3928-1's feet. It picks it up, revealing it to be a grenade.]//
+> ~~~~
+> **SCP-3928-1:** And what's this curious little thing-
+> ~~~~
+> **Romero:** Fuck, everyone get down!
+> ~~~~
+> //[Pi-1 takes cover as the grenade explodes in SCP-3928-1's face, sending it flying backwards.]//
+> ~~~~
+> //Gonzales enters the room, carrying a grenade launcher.//
+> ~~~~
+> **Gonzales:** You know, swords are great and all, but I definitely prefer my Milkor.
+> ~~~~
+> **Brant:** Well, took you awhile.
+> ~~~~
+> **Gonzales:** You have the key, remember? Had to bash open the case. 
+> ~~~~
+> //[SCP-3928-1 stirs in a pile of rubble.]//
+> ~~~~
+> **SCP-3928-1:** Ugh... you cheat.
+> ~~~~
+> **Gonzales:** Hey, I said I was bringing my weapon, I didn't say what //kind// of weapon it was. 
+> ~~~~
+> //Gonzales aims her launcher at SCP-3928-1.//
+> ~~~~
+> **Gonzales:** Now, how does a nice, comfy containment cell sound?
+> ~~~~
+> [END LOG]
+
+@@ @@
+[[collapsible show="You have (1) pending revision to this file." hide="Opening revisions..."]]
+
+[[include :scp-wiki:component:classified-bar-woed
+|lv=2
+|item=3928
+|oc=Euclid
+|lang=EN
+]]
+
+**Special Containment Procedures:** SCP-3928 is contained within a modified Humanoid Containment Chamber, designed to have a magnetic floor and equipped with a Class D Scranton Reality Anchor. All objects brought into SCP-3928's containment chamber must not contain any ferromagnetic metals. Personnel bringing food or performing maintenance are to be equipped with personal thaumometers.
+
+**Description:** SCP-3928 is the Nadir-Tier Pluripotent Entity known as Sandraudiga, a minor Germanic goddess of warfare worshiped in the Netherlands around the second century CE. SCP-3928 possesses the ability to manifest any premodern tool that can be considered a combat weapon, but appears to have a pathological obsession with swords. SCP-3928 prefers to throw its weapons at its opponents above other combat scenarios.
+
+SCP-3928 has an additional ability to turn invisible from eyesight and camera footage for short periods of time. However, it is still viewable by thermal imaging, and can be detected by non-visual senses and ambient Akiva radiation.
+
+While SCP-3928 is a capable melee combatant, firearms are extremely effective against it.
+[[/collapsible]]
