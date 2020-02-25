@@ -1,0 +1,363 @@
+title:Ulysses B Donkman and the Mournful Birthday
+[[module CSS]]
+/*
+    Donkman Theme, a modification by DrAkimoto of the Aces and Eights Theme
+    [2018 Wikidot Theme]
+    Created by rounderhouse, with help from Uncle Nicolini.
+    Based on SCP Sigma 9 Theme created by Aelanna and Dr Devan, and MC&D Theme created by Randomini.
+*/
+ 
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Six+Caps');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC');
+ 
+#header{
+    background: url(null)
+}
+#header:before{
+display:block;
+position: absolute;
+width: 100px;
+height: 100px;
+top: 15%;
+left:2%;
+z-index: -1;
+content: "";
+background:url(http://topia.wikidot.com/local--files/collab:ravenmilk/bicon);
+background-repeat: no-repeat;
+background-size: 100px 99px;
+background-position: 0px 0px 0px;
+z-index: -20;
+}
+ 
+#content-wrap {z-index: 2;}
+ 
+/* BODY */
+body {
+    background: #eee4d5 !important;
+}
+ 
+.main-body-div{
+    width: 92.7%;
+    line-height: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    vertical-align: top;
+    transition: all .7s;
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("http://scp-wiki.wdfiles.com/local--files/component%3Aaces-and-eights-theme/paper.jpg");
+}
+ 
+#header h1 a {
+    font-size: 190%;
+    color: transparent;
+    text-shadow: none;
+}
+ 
+div#container-wrap {
+    background: url(http://scp-wiki.wdfiles.com/local--files/component%3Aaces-and-eights-theme/header.png) top left repeat-x;
+}
+ 
+#header h1 a::before {
+    font-family: 'Playfair Display SC', serif;
+    content: "SCP Foundation";
+    color: #000000;
+    padding-bottom: 50px;
+}
+ 
+#header h2 span {
+    font-size: 175%;
+    color: transparent;
+    text-shadow: none;
+}
+#header h2 span::before {
+    font-family: 'Playfair Display SC', serif;
+    content: "Secure, Contain, Protect";
+    color: #000000;
+    padding: 0px 0px 00px;
+}
+ 
+#search-top-box-input, #search-top-box input.empty,
+#search-top-box-form input[type=submit] {
+    transition: 0.2s linear;
+}
+ 
+#search-top-box-input, #search-top-box input.empty {
+    background-color: #B4935D;
+    border: 1px solid #DBC39F;
+    border-radius: 0;
+    color: #000;
+}
+ 
+#search-top-box-input:hover, #search-top-box-input:focus,
+#search-top-box input.empty:hover, #search-top-box input.empty:focus {
+    outline: 0;
+    border: 1px solid #000;
+    background-color: #B4935D;
+    box-shadow: 0 1px 3px rgba(0,0,0,.8);
+}
+ 
+#search-top-box-form input[type=submit] {
+    outline: 0;
+    height: 1.65em;
+    border: 1px solid #DBC39F;
+    border-radius: 0;
+    color: #000;
+    background: #B6925E;
+ 
+    position: relative;
+    top: -1px;
+ 
+    box-shadow: none;
+}
+ 
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    border: 1px solid #000;
+    border-radius: 0;
+    background: #B6925E;
+}
+ 
+#search-top-box-form input[type=submit]:active {
+    padding: 0 0.5em;
+    border: 2px solid #DBC39F;
+    border-radius: 0;
+    color: #000;
+    background: #B6925E;
+}
+ 
+#login-status, #login-status a {
+    color: #000;
+    border-color: #000;
+}
+ 
+#side-bar .side-block {
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    box-shadow: none !important;
+    background: #e7d8c2;
+    margin-bottom: 15px;
+    color: black;
+}
+ 
+h1, #page-title {
+    color: #000;
+    padding: 0 0 0.25em;
+    margin: 0 0 0.6em;
+    font-weight: heavy;
+    font-family: 'Playfair Display SC', serif;
+}
+ 
+blockquote,
+div.blockquote {
+    border-color: #444;
+    background-color: #e7d8c2;
+    color:#000;
+}
+ 
+/* inputs */
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+    border-top: 1px solid #000000;
+}
+ 
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    background: #bc9055;
+    color: #ffffff;
+}
+#top-bar ul li ul a, #top-bar a:hover {
+    color: #8db600;
+}
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: #680000; /* top bar hover background color */
+}
+/*nico was here*/
+:root {
+    --hyperlink: #824565;
+    --hyperlink-visited: #63173f;
+}
+ 
+@media (max-width: 479px) {
+#search-top-box-input,
+#search-top-box-form {
+    display: none;
+}
+ 
+#header h1 a {
+    font-size: 90%;
+}
+ 
+#header h2 span{
+font-size: 55%;
+}
+ 
+#header {
+    background-position: 0 5.5em;
+    background-size: 55px 55px;
+}
+ 
+#header:before{
+width: 60%;
+height: 50%;
+background-size: 55px 55px;
+background-position: 0px 0px 20px;
+}
+}
+[[/module]]
+ 
+[[include :scp-wiki:info:start]]
+ 
+**Ulysses B. Donkman and the Mournful Birthday** by: [[*user DrAkimoto]] & [[*user MalyceGraves]]
+@@ @@
+[http://www.scp-wiki.net/scp-4768 Original Donkman Article]
+@@ @@
+[http://www.scp-wiki.net/ulysses-b-donkman-and-the-clockwork-bandits Donkman and the Clockwork Bandits]
+@@ @@
+[http://www.scp-wiki.net/drakimoto-s-author-page ~DrAkimoto's Author Page~]
+[http://www.scp-wiki.net/malycegraves-author ♠ MalyceGraves' Author Page]
+[[include :scp-wiki:info:end]]
+@@ @@
+[[=]]
+[[html]]
+<img src="http://topia.wikidot.com/local--files/collab:ravenmilk/bicon" style="height:75px; width:70px; padding-left: 0%;">
+[[/html]]
+[[/=]]
+@@ @@
+**February 10, 1976 - Atlanta, GA**
+
+The rain poured relentlessly from a slate-gray sky, coating everyone and everything in damp misery. Ulysses B. Donkman had definitely seen better days, certainly better weather. But, the weather matched his mood, and he found that to be just about right. 
+
+He stood on a corner outside yet another bar in yet another town, the collar of his old dust-colored trench coat was pulled up around his neck, but it did little to stop the more-than-frequent drips of cold water from running down his back. But, that too was just about right. This was just the season for it, after all, and Donkman was just glad it wasn't snowing. 
+
+The screeching noise from the breaks of an old panel van caught his attention, and he looked up just in time to see a group of four men dressed in black leather jackets hustling a small figure with a bag over their head into the side of the van. Now that, that didn't seem right. 
+
+The men slammed the door shut and accelerated away, only to turn and come to a halt at the traffic light in front of Donkman. He snorted in the irony of it as he stepped out and calmly reached out to open the side door. It wasn't even locked.
+
+The kidnappers all looked up in shock, and a muffled scream can be heard from the bundle at their feet. "Pardon me friends, I'ma need y'all to step out a moment." Donkman looked pointedly at the dumbfounded kidnappers.
+
+"And just who the fuck are you?" Came from one of the thugs in the front seat.
+
+Donkman gripped the frame of the car door tightly, controlling his temper. "Now, there ain't no need to be rude. I'm just a concerned bystander." At that, the driver slammed his foot down on the gas as he tried to just leave this obviously crazy man behind. 
+
+With an ease that shouldn't have been possible, Donkman casually stepped up onto the side of the van and ripped the driver's door from its hinges before the van could travel more than a few feet. Again with nonchalant ease, he grabbed the kidnapper by the collar and casually tossed him from the van. 
+
+The vehicle rolled to a stop in stunned silence. Donkman grinned laconically at the crooks still sitting in the van. 
+
+"Christ–" One of them got out before he too was yanked bodily from the back of the car.
+
+"I done told y'all that there was no call for bein' rude. Now, if'n ya please, jus-" His slow drawl was cut off as the two remaining thugs lunged at him, and all three went tumbling to the wet pavement. For just a moment, it looked as if the two had the upper hand on the erstwhile rescuer, before he reached up with deceptive speed and slammed the heads of the two together in a wet sounding smack. 
+
+The man in the passenger seat shoved open his door. "I'm getting' outta' here, man! You're fucking crazy!"
+
+Donkman climbed to his feet with a sigh, then reached into his coat to remove his slingshot and a small metal ball. The second crook was running helter-skelter down the street as Donkman lined up his shot. With a flick of the wrist, the ball was sent flying through the air like a bullet, connecting with the fleeing crook in the back of the head. With an audible yelp, he too collapsed to the ground. 
+
+Donkman gazed out at him for a few moments, making certain that he wouldn't be getting to his feet, before climbing into the van. 
+
+"Are you alright, young mister?" His voice was quiet, with a healthy dose of a reassuring tone. 
+
+"I want my mommy!" The boy's voice was tremulous, obviously still filled with fear. 
+
+Donkman sighed, and paused for a moment and thinks of his own mother. He settled down beside the boy, sitting cross-legged on the floor of the van. "Can ya' keep a secret, kid?"
+ 
+The boy nodded and wiped at his nose. 
+
+"I reckon we all miss our mothers now and again; even 'ol Donkman." He nodded to himself, his tone somber and still with that lacing of calm reassurance. 
+
+The boy sniffled, then looked up at Donkman, tears wet in his eyes.
+
+"Really?"
+
+Donkman placed a hand on the boy's shoulder, a smile playing about his lips. "Of course."
+
+For a moment they sat there in a companionable silence before Donkman patted the boy on the back. "Now, let's see if'n we can find ya' momma; where were ya' before those loathsome crooks snatched ya?"
+
+"We went to the market, but I got lost, and I couldn't find her." The kid pointed down the road towards the store. 
+
+"Well, let's go find her." Donkman climbed out of the van and turned to help the kid down to the pavement just as the rain stopped falling.  He takes the kid's hand, and they started to walk towards the market.
+
+"What's ya' name partner?" 
+
+"I'm Robert! But everyone just calls me Bobby!"
+
+Donkman laughed and looked over to give his young companion a wink. "Well it's nice to meet'ya, Bobby. My name's Donkman, Ulysses Donkman." 
+
+They shook hands and continued to amble down the street. "So where's your momma, mister?"
+
+"Oh, I haven't seen my mother in quite a while, I'd like to think she's in a better place."
+
+"Better than what?"
+
+Donkman motioned around himself with a broad gesture, "All of this."
+
+"Is she pretty? My momma is the prettiest."
+
+Donkman stopped and dug into his pocket. After a moment, he pulled out a small portrait in an ancient pocket photo case. He paused for a moment, then showed the kid the picture. 
+
+[[=image http://topia.wikidot.com/local--files/collab:ravenmilk/mum style="width:75%;"]]
+
+The kid scrunched up his face as he looked at the picture. "That's a funny looking mask you got there."
+
+"Yeah... I reckon it is." Donkman said solemnly as he tucked the picture back into his pocket. With a sigh, he straightened and they kept walking towards the store.
+
+"Well, why haven't you seen her?"
+
+Donkman sighed again at that one, and his tone takes on a wistful quality. "Time has a funny way of gettin' away from us."
+
+They come to a stop outside the market, and a pretty young woman dashed out and gathered the boy up in her arms. 
+
+"Mr. Donkman saved me, momma! The bad men were gonna take me and he beat 'em up real good!" The kid's voice came out in a rush as he returned the hug with fervor. "He brought me back here, and we were coming to look for you!"
+
+The woman finally turned to Donkman, tears of joy streaming down her cheeks. "How can I ever repay you, Mr. Donkman?"
+
+He shook his head and reached over to rustle Bobby's hair. "Nah, 'twernt nothin, ma'am. Just bein' polite, is all." With that, he knuckled his forehead at her, and turned to walk away. 
+
+"Make sure you go see your momma mister!" The boy's voice carried after him, and Donkman wiped one of his own tears from his eye.
+@@ @@
+[[=]]
+[[html]]
+<img src="http://topia.wikidot.com/local--files/collab:ravenmilk/bicon" style="height:75px; width:70px; padding-left: 0%;">
+[[/html]]
+[[/=]]
+@@ @@
+[[div style="border:solid 1px #999999; background:#FFF8E7; padding:5px; margin-bottom: 10px;"]]
+++++ Notice from the Foundation Historical Analysis Division
+[[include component:image-block
+    name=grave|
+    caption=Photograph of what is assumed to be SCP-4768's mother's grave.|
+    width=210px
+]]
+Foundation agents looking for the childhood home of SCP-4768 found an unmarked grave located near the town of Willsboro, Texas. The grave was on the Pickman farm, tax records indicate the land was abandoned and ownership was transferred to the town of Willsboro in 1899. The home on the property was demolished in 1925 but the unmarked grave was left undisturbed. The skeletal remains match with those of a female donkey (//Equus asinus//), approximately 35-40 years olds at time of death. A small metal box was found holding a picture of SCP-4768 and a donkey, along with a note written on parchment, dated February 23, 1976. Due to the nature of the material found, the grave and the box were left at the scene, though extensive photographs were taken. Local Foundation agents will observe the area on the 22-24 of February each year.
+@@ @@
+All photographic evidence is available to personnel with 3/4768 Clearance at the Site-51 Archives.
+@@ @@
+[[/div]]
+
+-----
+The content of the note reads as follows:
+
+> February 23, 1976
+> 
+> @@ @@
+> 
+> Today, on the day of my birth, I cannot help but think of you. 
+> 
+> Ever since you left I find myself at a loss for a home to lay my head, for a place to truly call safe. I have spent many, many years traveling across these great lands, a hero to some, a villain to others, a wanderer to most. 
+> 
+> Of course, I have made friends along the way. But none will see me for what I really am. I have been many things, I have seen many places but none have brought me the joys of youth, when we would graze about the farm, not a care in the world. I should have never left home, my insatiable need for adventure has led me astray time and time again, one misstep after another. 
+> 
+> When I was just a foal you told me life would be hard, that I would need to find my own way, but you never said it would last forever. The longer you've been away the more my long life seems a curse. Forever a stranger in a strange land. 
+> 
+> I miss you, mum.
+> 
+> [[>]]
+> Your Devoted Son, 
+> Ulysses
+> [[/>]]
+> 
+@@ @@
+@@ @@
