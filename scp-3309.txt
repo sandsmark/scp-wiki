@@ -4,13 +4,13 @@ title:SCP-3309
 |page=scp-3309
 |authorPage=http://www.scp-wiki.net/floppyphoenix
 |comments=**SCP-3309:** Where We Go When We Fade, Fade Away 
-**Authors:** [[*user PhamtomGuy]] and [[*user Lt Flops]] ([*http://www.scp-wiki.net/floppyphoenix Author Page]) 
+**Authors:** [[*user PhamtomGuy]] & [[*user Lt Flops]] ([*http://www.scp-wiki.net/floppyphoenix Author Page]) 
  
 Inspired by **[*http://www.scp-wiki.net/operation-overmeta the Pataphysics Department]** by [[*user Rimple]]. 
  
 With coding help from [[*user Westrin]]. 
  
-**[*http://www.scp-wiki.net/fragment:scp-3309-april-fools Click here]** to read the April Fools 2019 edit!]]
+**[*http://www.scp-wiki.net/fragment:scp-3309-april-fools Click here]** to read the April Fools edit!]]
 [[include :scp-wiki:component:pataphysics-theme]]
 
 [[module CSS]]
@@ -22,52 +22,70 @@ sup{
 }
 body{
     --cutColour: #e6e6e6;
-    --barColour: #201230;
+    --barColour: #1e122b;
     color: rgb(12, 12, 12);
 }
-.translation_block{ display: none; }
-.u-faq{ display: none; }
-#u-author_block{ display:none; }
+.translation_block, .u-faq, #u-author_block{ display: none; }
+
+/* MIMIC BLOCKQUOTE */
+ div.quote-block, blockquote{
+     border: 3px double #999;
+}
+ div.quote-block{
+     background-color: #f4f4f4;
+     padding: 0 1em;
+     margin: 1em 3em;
+}
+ @media (max-width: 479px){
+     div.quote-block{ margin: 1em 0; }
+}
+ @media (min-width: 480px) and (max-width: 580px){
+     div.quote-block{ margin: .5em; }
+}
 
 /* DIV BLOCKS */
 .pata-notice{
-    border: 1px solid black;
-    background-color: #201230;
-    padding: .25em 1em;
-    margin-bottom: 1em;
+    border: 1px solid rgb(12, 12, 12);
+    background-color: #1e122b;
+    padding: 0 1em;
+    margin: 1em 0;
 
     text-align: center;
     color: #e6e6e6;
 }
 .trans-quote{
-    border: 1px dashed #444;
+    border: 1px dashed #AAA;
+    padding: 1em 2em;
     background-color: white;
-    padding: .25em 1em;
-    margin-bottom: 1em;
 
     text-align: center;
     font-style: italic;
 }
-.quote-block{
+.report-box{
     border: 2px solid rgb(12, 12, 12);
     background-color: white;
-    padding: .25em 1em;
-    margin-bottom: 1em;
+    padding: 0 1em;
+    margin: 1em 0;
 }
+.report-box hr{ background: rgb(12, 12, 12); }
 
 /* FORMATTING */
-.collapsible-block-link{ font-weight: bold; }
+a.footnoteref, a.footnoteref::before { color: #e817d0; }
+.footnotes-footer{ display: none; }
 hr{
-     margin: 1em 0;
-     padding: 0;
-     border: 0;
+    display: block;
+    border: 0;
+    padding: 0;
+    margin: 1em 0;
+    height: 1px;
 }
 .lite-header hr{
-    width: 45%;
-    margin: auto;
-    background-color: #dedede;
+    display: block;
     border: none;
+    background-color: #d9d9d9;
+    margin: auto;
     height: 2px;
+    width: 45%;
 }
 .h2{
     margin: 0.5em 0 0.4em;
@@ -86,7 +104,9 @@ hr{
 ++++ NOTICE FROM THE 
 ++++ PATAPHYSICS DEPARTMENT
 
-The file you are about to read, 'SCP-3309,' describes an unpredictable narrativic anomaly intersecting with multiple subnarrative layers. Narrativic inoculation is required, as this document contains several embedded narrativohazards. Personnel not inoculated against such anomalies may undergo a narrative paraphrasing event. Are you sure you wish to proceed?
+The file you wish to read, '[[span style="font-family: Courier, monospace; font-size: 110%;"]]SCP-3309[[/span]],' describes an unpredictable narrativic anomaly intersecting with multiple subnarrative layers. Narrativic inoculation is required, as this document contains several embedded narrativohazards.[[footnote]]**Narrativohazard:** A cascading hazard affecting elements of a narrative and its mode of transmission, often leading to their mutual destruction. Definitions of a narrative differ between cultures but typically describe a story and its medium.[[/footnote]] Personnel not inoculated against such anomalies may experience a narrative paraphrasing event. 
+
+Are you sure you wish to continue?
 [[/div]]
 
 = [[span style="color: firebrick; font-weight: bold;"]]Narrativic inoculation disseminated.[[/span]]
@@ -94,12 +114,12 @@ The file you are about to read, 'SCP-3309,' describes an unpredictable narrativi
 [[div class="trans-quote"]]
 Sometimes we don't fade until it's too late.
 
-Until we've withered, withered, down to the bone. And at the end, there's nothing left. It's forgotten. Memories, hopes, dreams; we're all forgotten. How can we know that people even have these memories, these hopes, and these dreams? How can we be forgotten if there was nothing there in the first place? We fade from the minds of others, but not from our own. We live with it until we can't live any longer. Until we forget that there was ever any way we could live in peace. And then, that's when we fade away.
+Until we've withered, withered, down to the bone. And at the end, there's nothing left. It's forgotten. Memories, hopes, dreams; we're all forgotten. How can we know that people even have these memories, these hopes, and these dreams? Who could forget us if there was nothing there to begin with? We fade from the minds of others, but not from our own. We live with it until we can't live any longer. Until we forget that there was ever any way we could live in peace. And then, that's when we fade away.
 
 Fade, fade away.
 [[/div]]
 
-= [[span style="color: #1f1f93; font-weight: bold;"]]Inoculation complete. You may proceed.[[/span]]
+= [[span style="color: #1f1f93; font-weight: bold;"]]Inoculation complete. You may continue.[[/span]]
 
 @@ @@
 
@@ -117,26 +137,26 @@ Fade, fade away.
 [[span style="font-size: 125%;"]][[span style="font-weight: 900;"]]CONTAINMENT CLASS:[[/span]] KETER[[/span]]
 [[/cell]]
 [[cell style="text-align: right;"]]
-[[span style="font-weight: 900; font-size: 125%;"]]TOP SECRET[[/span]]
+[[span style="font-weight: 900; font-size: 125%;"]]TOP-SECRET[[/span]]
 [[/cell]]
 [[/row]]
 [[/table]]
 
-[[include component:floppy-disruption-bar
+[[include :scp-wiki:component:floppy-disruption-bar
 |disruption-class=amida
 |disruption-bg-color=rgb(146, 1, 38)
 |disruption-text-color=rgb(252, 252, 252)
 ]]
 ----
-**Special Containment Procedures:** All documentation regarding anomalies affected by SCP-3309 is to be preserved in a rewritten format and kept within the RAISA archive database. Following the containment of an instance, all personnel assigned to the affected anomaly must undergo amnestic treatment and transfer to unrelated projects.
+**Special Containment Procedures:** All documentation on anomalies affected by SCP-3309 is to be preserved in a paraphrased format and kept within the RAISA archive database. Following the containment of an instance, all personnel assigned to the affected anomaly must undergo amnestic treatment and transfer to unrelated projects.
 ----
-**Description:** SCP-3309 is a phenomenon in which catalogued anomalies spontaneously disappear. Items affected by SCP-3309 have included anomalous objects, entities, locations, and conceptual structures. Anomalies affected by this phenomenon do not appear to be directly related; SCP-3309 activity is indicated by a note of unknown origin (designated SCP-3309-1).
+**Description:** SCP-3309 is a phenomenon in which catalogued anomalies spontaneously disappear. Items affected by SCP-3309 have included anomalous objects, entities, locations, and conceptual structures. Anomalies affected by this phenomenon do not appear to have a causal relation; SCP-3309 activity is indicated by a note of unknown origin (designated SCP-3309-1).
 
 24–36 hours before the disappearance of an anomaly, SCP-3309-1 appears appended to the end of the item's document. Documents undergoing SCP-3309 become wiped from all known file systems, including Protected Site-01 and RAISA archives. After this, the anomaly itself becomes effectively neutralized, or otherwise disappears. The contents of SCP-3309-1 are as follows:
 
 > //If you are not the author and you want to rewrite this article, you may reply to this post asking for the opportunity to do so. Please obtain permission from the author.//
 
-SCP-3309 affects back-ups created for disappearing documents. SCP-3309 also affects documents of anomalous items coming into contact with SCP-3309 -- approximately 71% of disappearing documents are connected to other non-affected anomalies. This leads to a weakening in the Foundation's anomaly containment network, potentially escalating to an ADK-Class Full Anomalous Destabilization Scenario.
+SCP-3309 affects back-ups created for disappearing documents. SCP-3309 also affects the documents of anomalous items encountering SCP-3309: ~71% of disappearing documents are connected to other, non-affected anomalies. This leads to a weakening in the Foundation's anomaly containment network, potentially escalating to an ADK-Class "Complete Anomalous Destabilization" Scenario.
 
 @@ @@
 [[div class="lite-header"]]
@@ -153,55 +173,47 @@ SCP-3309 affects back-ups created for disappearing documents. SCP-3309 also affe
 [[collapsible show="   ▶ TS/3309/EYES ONLY" hide="Your coming was foretold in the stones. The long circle is nearly complete."]]
 Since its prime emergence, SCP-3309 has affected an average of forty anomalies per month. Researchers assigned to SCP-3309 have identified an emerging pattern and developed the following list of criteria:
 
-* Affected items are documented as being contained with excessive containment procedures (such as chambers constructed from heavy-duty titanium alloy). This indicates either a misunderstanding of the anomaly's nature or an unprofessional level of care taken to contain it.
-* The item itself is powerful enough to threaten a K-Class End-of-the-World Scenario. Documentation fails to outline the true consequences of this anomaly and containment procedures typically align with that of the first criteria.
-* The item's documentation -- which includes any written supplements -- is poorly written, improperly formatted, or filled with logical and grammatical errors. 
+* Affected items are documented as having been contained with excessive containment procedures (such as chambers constructed from heavy-duty titanium alloy). This indicates either a misunderstanding of the anomaly's nature or an unprofessional level of care taken to contain it.
+* The affected item itself is powerful enough to threaten a K-Class End-of-the-World Scenario. Documentation does not outline the true consequences of this anomaly, and containment procedures typically align with that of the first criteria.
+* The affected item's documentation -- which includes any written supplements -- is poorly written, improperly formatted, or filled with logical and grammatical errors. 
 
-Based on these new observations, PROJECT: TAPERED SPEAR has been proposed. TAPERED SPEAR outlines the adaptation of the aforementioned criteria for use against high-threat anomalies in an attempt to neutralize them. As this contravenes the Foundation's mission, the execution of TAPERED SPEAR has been contested by an Ethics Committee special tribunal. The results of this tribunal are as follows:
+Based on these new observations, the containment team has proposed PROJECT: TAPERED SPEAR. TAPERED SPEAR outlines the adaptation of the aforementioned criteria for use against high-risk anomalies to neutralize them. As this contravenes the Foundation's mission, an Ethics Committee special tribunal has contested the execution of TAPERED SPEAR. The results of this tribunal are as follows:
 
-[[div class="quote-block"]]
+[[div class="report-box"]]
 [[=]]
 +++ PROJECT: TAPERED SPEAR
 ++++ __TRIBUNAL RESULTS__
 [[/=]]
-
-[[div style="border-bottom: 1px solid black;"]]
-[[/div]]
-
+----
 **FOR: [[span style="color: green;"]]21[[/span]]**
 **AGAINST: [[span style="color: firebrick;"]]20[[/span]]**
 **ABSTAIN: [[span style="color: #E18A07;"]]2[[/span]]**
 
-**OUTCOME:** PROJECT: TAPERED SPEAR has been authorized. SCP-3309 is pending secondary reclassification to THAUMIEL-Class.
+**OUTCOME:** PROJECT: TAPERED SPEAR is hereby authorized. SCP-3309 is pending secondary reclassification to THAUMIEL-Class.
 [[/div]]
 [[/collapsible]]
-
 ----
-
 **II. Project: TAPERED SPEAR** 
 
 [[collapsible show="   ▶ TS/3309/EYES ONLY" hide="The king of jewels has been made a pawn."]]
-Preliminary testing of SCP-3309 to determine the suitability of a Thaumiel reclassification has officially commenced. Attached is a preliminary testing log, the results of which will determine a final decision. 
+Preliminary testing of SCP-3309 to determine the suitability of a Thaumiel reclassification has officially begun. Attached is a preliminary testing log, the results of which will determine a final decision. 
 
-[[div class="quote-block" style="text-align: justify;"]]
+[[div class="report-box" style="text-align: justify;"]]
 [[=]]
 +++ PROPOSAL EXCERPT
 [[/=]]
-
-[[div style="border-bottom: 1px solid black;"]]
-[[/div]]
-
+----
 **PROPOSAL:** Use SCP-3309 to neutralize [[[scp-4463|SCP-4463]]]: A complex water-based spatial anomaly capable of flooding North America within 50 years.
 
 **DESCRIPTION:** SCP-4463 is a water-based anomaly affecting parts of the Chihuahuan desert in the state of Arizona. SCP-4463 describes the slow transformation of a large area of desert into an equivalent area of wetlands. 
 
-Since the 1990s, desertification of southeastern Arizona occurred at a rate of roughly 2 km^^2^^ per month. This desertification increased at a rate of 0.5% per year until 2008, when approximately 1,200 km^^2^^ of previously arable land had been rendered incapable of bearing healthy vegetation. At this point, the government of Arizona considered this phenomenon an ecological disaster and enacted plans to attempt to reverse the spread of desertification. This occurred as a response to mass protest by members of the Pascua Yaqui Tribe in the nearby Tucson region beginning in November 2006. 
+Since the 1990s, desertification of southeastern Arizona occurred at a rate of ~2 km^^2^^ per month. This desertification increased at a rate of 0.5% per year until 2008, when 1,200 km^^2^^ of previously arable land had been rendered incapable of bearing healthy vegetation. At this point, the government of Arizona considered this phenomenon an ecological disaster and enacted plans to reverse the spread of desertification. This occurred as a response to mass protest by members of the Pascua Yaqui Tribe in the nearby Tucson region beginning in November 2006. 
 
 In August 2008, 60% of desiccated topsoil per square meter began to transform into water by an unknown anomalous effect. By 2017, 45% of the previously desertified area had transformed into wetlands, preventing any native animal or human development in this territory.
 
 **ACTIONS TAKEN:** [[[scp-4463-j|SCP-4463's file was updated to contain heavy grammatical errors and major inconsistencies with the related functions of the anomaly]]]. Multiple fabricated addenda and an unrelated image depicting a large ocean wave were also added.
 
-**RESULT:** SCP-4463 was completely erased from all Foundation databases within 28 hours by SCP-3309. After further research and observation into the former location of SCP-4463, it was determined that the threat posed by SCP-4463 had been neutralized, and the area had become desertified once more.
+**RESULT:** SCP-4463 was erased from all Foundation databases within 28 hours. After further research and observation into the former location of SCP-4463, it was determined that the risk posed by SCP-4463 had been nullified and the area had again become desertified.
 [[/div]]
 
 After continued debate and preliminary testing involving 19 different anomalies, SCP-3309 has passed the second stage of voting among the Ethics Committee special tribunal. SCP-3309 has been additionally classified as Thaumiel and authorized for use in TAPERED SPEAR. The first round of post-reclassification research involving 49 anomalies is underway.
@@ -210,33 +222,27 @@ After continued debate and preliminary testing involving 19 different anomalies,
 [[=]]
 +++ RESEARCHER NOTE
 [[/=]]
+----
+I don't understand how one round of testing could burden a man like this. I think I even saw my first white hair this morning, or an entire patch of white hairs?
 
-[[div style="border-bottom: 1px solid black;"]]
-[[/div]]
+Fading to dust -- what does that feel like? Would it burden my senses the same way an illness might? Or might it leave me numb? I think, if I had to go out, I would want to continue to feel, even into my final moment. To know that I'm still here, as everything else fades away.
 
-I don't understand how one round of testing can burden a man with so much stress. I think I even saw my first grey hair this morning, or an entire patch of grey hairs? No, surely that's unnatural? I don't //feel// natural right now. I don't feel alright. But so early on in my tenure?
+There's something wrong.
 
-Fading to dust, what does that feel like? Would it burden my senses in the same way an illness might? Or might it leave me numb? I think, if I was to go out, I would want to continue to feel, even into my final moment. To know that I'm still here, as everything else fades away.
+I've locked myself in my office. I'm going numb. This isn't what I would have wanted. But the end doesn't much care about one man's wants and needs, does it? There is nothing, nothing.
 
-I'm not alright.
+Did we ever find out where those neutralized anomalies went? Surely it can't be so easy, to do what we did -- to see justice without repercussions. That's unlike us. But it feels like everyone, everyone except me, forgot what happened to them. 
 
-I've locked myself in my office. I'm going numb. This isn't what I would have wanted. But the end doesn't care about one man's wants and needs, does it? There is nothing, nothing.
+Is it that simple? //Have// we simply forgotten?
 
-Did we ever find out where those neutralized anomalies went? Surely it can't be so easy, to do what we did, to feel justice without any repercussions. That's unlike us. But it feels like everyone, everyone except me, forgot what happened to those anomalies. Is it that simple? Have we simply forgotten?
-
-I don't want to be forgotten.
-
-[[div style="border-bottom: 1px solid black;"]]
-[[/div]]
-
+I don't want to be [[span style="color: #f4f4f4;"]]forgotten[[/span]].
+----
 [[>]]
 --Researcher Adamo Smalls
 [[/>]]
 [[/div]]
 [[/collapsible]]
-
 ----
-
 **III. [@@                                 @@]**
 
 [[collapsible show="His heart is a crater, and we have filled it." hide=" " hideLocation="bottom"]]
@@ -244,27 +250,27 @@ I don't want to be forgotten.
 @@ @@
 
 [[div class="quote-block"]]
-Researcher Smalls did not show up during the latter parts of our testing this evening. He no longer appears on any of our itineraries and his name has been expunged from my project files. If there has been an immediate project alteration or a change in schedule that I was not informed of, please notify me __immediately__.
+Researcher Smalls did not attend the latter parts of our testing this evening. He no longer appears on any of our itineraries and his name has been expunged from my project files. If there has been an immediate project alteration or a change in schedule that I was not informed of, please let me know __immediately__.
 [[>]]
 --Researcher John Calzaroli
 [[/>]]
 [[/div]]
 
 [[div class="quote-block"]]
-Researcher Calzaroli, are you alright? Yes, there was indeed a 3-hour schedule change, but a "Researcher Smalls" has never been involved with this project. Further, I assure you that someone named Researcher Smalls does not work with us. Please, John, take a break, the stress must be getting to you. Testing has been absolutely rigorous these past few weeks. I feel it, too.
+Researcher Calzaroli, are you alright? Yes, there was indeed a 3-hour schedule change, but a "Researcher Smalls" has never been involved with this project. I can assure you -- __no one__ named Researcher Smalls has worked with us. Please, John, take a break, the stress must be getting to you. I know that testing has been absolutely //cutthroat// these past few weeks. I feel it, too.
 [[>]]
 --Dr. Robert Woods
 [[/>]]
 [[/div]]
 
 [[div class="quote-block"]]
-I'm sorry, you're mistaken. You //must// know the man. He's the most exceptional memeticist we have.
+You're mistaken. You //must// know the man. He's the most exceptional memeticist we have.
 
 But, if you truly claim that there is no Researcher Smalls, well, there must be something more to this. SCP-3309 erases anomalies and the files associated with them. We haven't discussed where exactly these anomalies //go//, and I'm sure we've all had our questions. As far as I can remember, Smalls was assigned to SCP-3309 when it was first discovered.
 
-Are we sure personnel aren't also being deleted?
+Are we sure personnel aren't also being [[span style="color: #f4f4f4;"]]deleted[[/span]]?
 [[>]]
-[ACCOUNT DELETED]
+[[[span style="font-family: Courier, monospace; font-size: 110%;"]]ACCOUNT DELETED[[/span]]]
 [[/>]]
 [[/div]]
 
@@ -276,10 +282,11 @@ What the hell?
 [[/div]]
 
 [[div class="quote-block"]]
-**FROM: [ACCOUNT DELETED]** 
+**FROM: [[[span style="font-family: Courier, monospace; font-size: 110%;"]]ACCOUNT DELETED[[/span]]]** 
 
-= [MESSAGE DELETED]
+= [[[span style="font-family: Courier, monospace; font-size: 110%;"]]MESSAGE DELETED[[/span]]]
 [[/div]]
+
  @@ @@
  @@ @@
  @@ @@
@@ -419,10 +426,11 @@ What the hell?
 </h1>
 <hr>
 <style type="text/css" id="internal-style">
-/* disaster awaits you below */
-/* modules */
 
-/* theme */
+/* do you feel it too? */
+
+/* MODULES */
+/* THEME */
 @import url(http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--theme/base/css/style.css);
 @import url(http://www.scp-wiki.net/component:theme/code/1);
 </style>
@@ -655,25 +663,25 @@ Staff Post - Deletion Vote
 </div>
 <div class="content">
 
-<p>Hold on. This entire place, if it is a place, is devoid of, well. Stuff. Things. There's nothing here. Something has gone horribly wrong.</p>
+<p>Hold on. This place — if it is a place — is devoid of, well. Things. There's nothing here. Something has gone horribly wrong.</p>
 
 <p>Let me go back.</p>
 
-<p>My name is Adamo Smalls. I was born on August 21st, 1988 to Katherine and Charles Smalls in Portland, Oregon. I studied at the University of Oregon and have an MA in Information Science. I started working for the Foundation in late 2010 as a memeticist and hold a cognitive resistance value in the 99th percentile.</p>
+<p>My name is Adamo Smalls. I was born on August 21st, 1988 to Katherine and Charles Smalls in Portland, Oregon. I studied at the University of Oregon and have an MA in Information Science. The Foundation employed me in late 2010 as a memeticist. I hold a cognitive resistance value in the 99th percentile.</p>
 
-<p>Uh. I was on a long-term assignment at Site-82 to research SCP-3309 and– That's it? No. 3309 is a strong memetic construct associated with a few internal Foundation parameters. It neutralized anomalies and the articles we wrote in an attempt to explain them. It kept up the Veil, but we were so stupid to think we could play with the universe like that. It's not our right.</p>
+<p>Uh. I was on a long-term assignment at Site-82 to research SCP-3309 and– That's it? No. 3309 is a strong memetic construct associated with a few key Foundation parameters. It neutralized anomalies and the articles we compiled in an attempt to explain them. It kept up the Veil, but we were fools to think we could play with the universe like that. It's not our right.</p>
 
 <p>But surely the universe plays with us every day? No, why separate us from the world around us? We are that world. And we played ourselves.</p>
 
-<p>Okay. I don't exactly recall what happened, as my memetic retainment is still not high enough to let me truly comprehend this construct. But 3309 started erasing things. Systemically. It erased personnel, then entire task forces. Sites. Places around sites. Sections of the damn Foundation. All gone. The conceptual constructs that permeate to even allow us to make things like the Foundation. The concept of an organization? Wiped. Didn't exist. This continued until there was nothing, and I felt myself go away along with it all. Everything was different, after that night. When I was alone. But now I'm truly alone. In here.</p>
+<p>Okay. I don't exactly recall what happened, as my memetic retainment is still not high enough to let me truly understand this construct. But 3309 started erasing things. Systemically. It erased personnel, then entire task forces. Sites. The places between them. Sections of the damn Foundation — all gone. The conceptual constructs that permeate to even allow us to make things like the Foundation. The concept of an organization? Wiped. Didn't exist. This continued until there was nothing, and I felt myself go away along with it. Everything was different after that night. When I was alone. But now I <i>am</i> alone. In here.</p>
 
 <p>Here? <a target="_blank" href="http://www.scp-wiki.net/sandrewswann-s-proposal">This is hell.</a></p>
 
-<p>Or — or maybe that's not what happened. Maybe I made it up. I must've. No–</p>
+<p>No. That isn't what happened. I made it up. I must've. But–</p>
 
 <p>Am I one of the erased personnel?</p>
 
-<p>If — If I'm forgotten like them, then what does that mean? What does any of this mean? Oh God, I don't want to be forgotten.</p>
+<p>If — If I'm forgotten like them, what does that mean? What does any of this mean? Oh God, I don't want to be forgotten.</p>
 
 </div>
 
@@ -769,7 +777,5 @@ Help: <a target="_blank" href="http://www.wikidot.com/doc:quick-reference">wiki 
 [[footnoteblock]]
 
 [[div class="footer-wikiwalk-nav"]]
-[[=]]
-<< [[[SCP-3308]]] |  SCP-3309 | [[[SCP-3310]]] >>
-[[/=]]
+= << [[[SCP-3308]]] |  SCP-3309 | [[[SCP-3310]]] >>
 [[/div]]
