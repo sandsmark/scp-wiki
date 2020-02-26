@@ -1,7 +1,48 @@
 title:SCP-4648
-[[include :scp-wiki:theme:site-23-theme]]
-
 [[include :scp-wiki:component:pride-highlighter |inc-s9-lgbt= --]]]
+
+[[module CSS]]
+
+/*
+    Site 23 Theme
+    Powered on 2020/02/25 17:46:33
+    [2020 Wikidot Theme]
+    Created by Mew-ltiverse
+    CC BY-SA 3.0
+*/
+ 
+@import url('https://fonts.googleapis.com/css?family=Arvo&display=swap');
+ 
+#header {background-image: url(http://firedawnfolder.wikidot.com/local--files/sigma:theme-test/23Yeety2.png);} 
+ 
+body {
+    font-family: Arvo;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: Arvo;
+}
+div#header h1 a span {
+    font-size: 0px;
+}
+div#header h1 a:before {
+    content: "Site-23";
+    color: #eee;
+ 
+}
+div#header h2 span {
+    font-size:0px;
+    padding: 4px;
+}
+div#header h2:after {
+    content: "The Third-Eye of Technology";
+    font-weight: bold;
+    color: rgb(245, 249, 248);
+    padding: 19px 0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+    white-space: pre;
+}
+
+[[/module]]
 
 [[>]]
 [[module Rate]]
