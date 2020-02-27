@@ -1,4 +1,5 @@
 title:Dr. Buchanan, Personnel File
+[[iftags +theme]]
 [[module css]]
 @import url("https://nu-scptheme.github.io/Black-Highlighter/stable/styles/normalize.min.css");
 @import url("https://nu-scptheme.github.io/Black-Highlighter/stable/styles/black-highlighter.min.css");
@@ -30,7 +31,7 @@ title:Dr. Buchanan, Personnel File
 }
 
 :root {
-    --logo-image: url("http://scp-sandbox-3.wdfiles.com/local--files/citytoast/SCP_Foundation_New.png");
+    --logo-image: url("http://www.scp-wiki.net/local--files/component:scp-offices-theme/scpoffices_logo.svg");
 }
 
 .scp-image-block.block-right {
@@ -159,6 +160,9 @@ title:Dr. Buchanan, Personnel File
 }
 
 [[/module]]
+[[>]]
+[[module Rate]]
+[[/>]]
 
 [[=]]
 + Theme Colors
@@ -212,7 +216,7 @@ Viridian Green[[span class="css-variable"]]@@--dark-accent@@[[/span]][[span clas
 [[/div]]
 
 [[div class="scp-image-block block-right" style="width:300px;"]]
-[[image http://scp-sandbox-3.wdfiles.com/local--files/citytoast/SCP_Foundation_New.png width="300px" style="width:300px;" link="http://scp-sandbox-3.wdfiles.com/local--files/citytoast/SCP_Foundation_New.png"]]
+[[image http://www.scp-wiki.net/local--files/component:scp-offices-theme/scpoffices_logo.svg width="300px" style="width:300px;" link="http://www.scp-wiki.net/local--files/component:scp-offices-theme/scpoffices_logo.svg"]]
 [[div class="scp-image-caption" style="width:width:300px;;"]]
 SCP Offices Theme
 [[/div]]
@@ -324,5 +328,5 @@ This is a long tab. It contains a lot of text.
 [[/iftags]]
 
 [[module css]]
-@import url(http://www.scp-wiki.net/local--files/reixis-personnel-file/SCPTHEMEModified.css);
+@import url(http://scp-sandbox-3.wikidot.com/local--files/citytoast/SCPTHEMEModified.css);
 [[/module]]
