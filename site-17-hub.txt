@@ -1,5 +1,4 @@
 title:Site-17 Deepwell Catalog
-parent:canon-hub
 [[>]]
 [[module Rate]]
 [[/>]]
@@ -200,6 +199,21 @@ div#header h2:after {
 [[/module]]
 [[/code]]
 [[/collapsible]]
+[[div style="margin-left: 20px; margin-bottom: 20px"]]
+Alternatively, there is a BHL version.
+[[collapsible show="+ Show Optional BHL Theme" hide="- Hide Optional BHL Theme"]]
+[[code]]
+[[module CSS]]
+:root {
+    /* Header */
+    --logo-image: url(http://scp-wiki.wdfiles.com/local--files/site-17-hub/header17);
+    --header-title: "SITE-17 DATABASE";
+    --header-subtitle: "Living Past Our End";
+}
+[[/module]]
+[[/code]]
+[[/collapsible]]
+[[/div]]
 [[/div]]
 [[/tab]]
 [[tab That Which Can Be Known]]
