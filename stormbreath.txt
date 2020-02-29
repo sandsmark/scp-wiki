@@ -1,17 +1,9 @@
 title:Stormbreath's Author Page
+[[include theme:minimal
+|title=Stormbreath
+|subtitle=Welcome to My Author Page]]
+
 [[module css]]
-@import url(http://scp-wiki.wdfiles.com/local--files/stormbreath/minimal.css);
-
-#header h1 a {
-    color: transparent;
-    text-shadow: none;
-}
- 
-#header h1 a::before {
-    content: "Stormbreath";
-    color: black;
-}
-
 #page-content .collapsible-block {  
     border: solid 1px #000;
     padding: 3px 5px;
