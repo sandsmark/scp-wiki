@@ -1,26 +1,18 @@
 title:Pastarasta1's Author Page
+[[include theme:minimal
+|title=Welcome!
+|subtitle=Bobble Loves you!]]
+
 [[module CSS]]
-@import url(http://scp-wiki.wdfiles.com/local--files/stormbreath/minimal.css);
-
 #header {
-background-image: url(http://scp-wiki.wdfiles.com/local--files/pastarasta1-s-author-page/bobble);
+    background-image: url(http://scp-wiki.wdfiles.com/local--files/pastarasta1-s-author-page/bobble);
 }
 
-#header h1 a {
-    color: transparent;
-    text-shadow: none;
-}
- 
 #header h1 a::before {
-    content: "Welcome!";
     color: darkred;
 }
-#header h2 span {
-    color: transparent;
-    text-shadow: none;
-}
+
 #header h2 span::before {
-    content: "Bobble Loves You!";
     color: darkblue;
 }
 
