@@ -1,5 +1,4 @@
 title:Top Rated Pages By Month 2020
-parent:top-rated-pages-this-month
 [[module css]]
 .toc-table {
     float: right;
@@ -36,6 +35,13 @@ parent:top-rated-pages-this-month
 [[collapsible show="January 2020" hide="- Click to hide"]]
 **January 2020**
 [[module ListPages rating=">5" order="rating desc" separate="false" limit="200" perPage="25" date="2020.01"]]
+%%title_linked%% (rating: %%rating%%, comments: %%comments%%)
+[[/module]]
+[[/collapsible]]
+
+[[collapsible show="February 2020" hide="- Click to hide"]]
+**February  2020**
+[[module ListPages rating=">5" order="rating desc" separate="false" limit="200" perPage="25" date="2020.02"]]
 %%title_linked%% (rating: %%rating%%, comments: %%comments%%)
 [[/module]]
 [[/collapsible]]
