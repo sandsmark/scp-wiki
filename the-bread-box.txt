@@ -1,15 +1,27 @@
 title:The Bread Box
-[[iftags +theme]]
 [[>]]
 [[module Rate]]
 [[/>]]
 
 [[module css]]
-:root {
-    --logo-image: url("http://www.scp-wiki.net/local--files/calibri-bold-s-mega-cool-office/USA%20SCP") !important;
+#header {
+    background: url("https://raw.githubusercontent.com/Jet-Savage/Random-Media/master/TUBCPLg.png") 15px 40px no-repeat !important;
+    background-size: 6rem !important;
+}
+@media (max-width: 580px) and (min-width: 480px) {
+    #header {
+        background-position: 0.5em 4.5em  !important;
+        background-size: 66px 66px  !important;
+    }
+}
+
+@media (max-width: 479px) {
+    #header {
+        background-position: 0 5.5em !important;
+        background-size: 55px 55px !important;
+    }
 }
 [[/module]]
-
 Hello and welcome to the leech pit. Most people don't bother coming here, on account of all the leeches. If you dig around, you should be able to find some of my incredibly cursed articles. Or just more leeches, but that's a win-win in my book. 
 
 [[tabview]]
