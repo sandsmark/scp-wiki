@@ -1,7 +1,16 @@
 title:SCP-5850
-[[include :scp-wiki:theme:minimal
-|title=SCP Foundation
-|subtitle=Secure, Contain, Protect]]
+[[include :scp-wiki:component:black-highlighter-theme-dev]]
+[[module css]]
+:root {
+    --header-gradient-color-bottom: var(--black-monochrome);
+}
+*{
+    -moz-filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    filter: gray; /* IE6-9 */
+    filter: grayscale(100%);
+}
+[[/module]]
 
 [[>]]
 [[include info:start]]
