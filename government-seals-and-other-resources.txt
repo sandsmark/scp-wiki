@@ -70,8 +70,13 @@ div.pridebox div.insidebox h1, div.pridebox div.insidebox h2 {
     width: 90%;
 }
 
-#page-content > div.pridebox div.scp-image-block > div.scp-image-caption {
+#page-content > div.pridebox > div.scp-image-caption {
     border-top: inherit;
+}
+
+#page-content > div.scp-image-block {
+    border-top: inherit;
+margin-bottom: 1em;
 }
 
 .flipped {
