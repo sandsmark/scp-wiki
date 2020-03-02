@@ -1,0 +1,378 @@
+title:Ulysses B Donkman and the Foreboding Forest: Part 1
+[[module CSS]]
+/*
+    Donkman Theme, a modification by DrAkimoto of the Aces and Eights Theme
+    [2018 Wikidot Theme]
+    Created by rounderhouse, with help from Uncle Nicolini.
+    Based on SCP Sigma 9 Theme created by Aelanna and Dr Devan, and MC&D Theme created by     
+    Randomini.
+*/
+ 
+#header{
+    background: url(null)
+}
+#header:before{
+display:block;
+position: absolute;
+width: 100px;
+height: 100px;
+top: 15%;
+left:2%;
+z-index: -1;
+content: "";
+background:url(http://topia.wikidot.com/local--files/collab:ravenmilk/donkcon);
+background-repeat: no-repeat;
+background-size: 100px 99px;
+background-position: 0px 0px 0px;
+z-index: -20;
+}
+ 
+#content-wrap {z-index: 2;}
+ 
+/* BODY */
+body {
+    background: #eee4d5 !important;
+}
+ 
+.main-body-div{
+    width: 92.7%;
+    line-height: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    vertical-align: top;
+    transition: all .7s;
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("http://scp-wiki.wdfiles.com/local--files/component%3Aaces-and-eights-theme/paper.jpg");
+}
+ 
+#header h1 a {
+    font-size: 190%;
+    color: transparent;
+    text-shadow: none;
+}
+ 
+div#container-wrap {
+    background: url(http://scp-wiki.wdfiles.com/local--files/component%3Aaces-and-eights-theme/header.png) top left repeat-x;
+}
+ 
+#header h1 a::before {
+    font-family: 'Playfair Display SC', serif;
+    content: "The Donkman's Den";
+    color: #000000;
+    padding-bottom: 50px;
+}
+ 
+#header h2 span {
+    font-size: 175%;
+    color: transparent;
+    text-shadow: none;
+}
+#header h2 span::before {
+    font-family: 'Playfair Display SC', serif;
+    content: "The Tallest Tales, the Donkest Man.";
+    color: #000000;
+    padding: 0px 0px 00px;
+}
+ 
+#search-top-box-input, #search-top-box input.empty,
+#search-top-box-form input[type=submit] {
+    transition: 0.2s linear;
+}
+ 
+#search-top-box-input, #search-top-box input.empty {
+    background-color: #B4935D;
+    border: 1px solid #DBC39F;
+    border-radius: 0;
+    color: #000;
+}
+ 
+#search-top-box-input:hover, #search-top-box-input:focus,
+#search-top-box input.empty:hover, #search-top-box input.empty:focus {
+    outline: 0;
+    border: 1px solid #000;
+    background-color: #B4935D;
+    box-shadow: 0 1px 3px rgba(0,0,0,.8);
+}
+ 
+#search-top-box-form input[type=submit] {
+    outline: 0;
+    height: 1.65em;
+    border: 1px solid #DBC39F;
+    border-radius: 0;
+    color: #000;
+    background: #B6925E;
+ 
+    position: relative;
+    top: -1px;
+ 
+    box-shadow: none;
+}
+ 
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    border: 1px solid #000;
+    border-radius: 0;
+    background: #B6925E;
+}
+ 
+#search-top-box-form input[type=submit]:active {
+    padding: 0 0.5em;
+    border: 2px solid #DBC39F;
+    border-radius: 0;
+    color: #000;
+    background: #B6925E;
+}
+ 
+#login-status, #login-status a {
+    color: #000;
+    border-color: #000;
+}
+ 
+#side-bar .side-block {
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    box-shadow: none !important;
+    background: #e7d8c2;
+    margin-bottom: 15px;
+    color: black;
+}
+ 
+h1, #page-title {
+    color: #000;
+    padding: 0 0 0.25em;
+    margin: 0 0 0.6em;
+    font-weight: heavy;
+    font-family: 'Playfair Display SC', serif;
+}
+ 
+blockquote,
+div.blockquote {
+    border-color: #444;
+    background-color: #e7d8c2;
+    color:#000;
+}
+ 
+/* inputs */
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+    border-top: 1px solid #000000;
+}
+ 
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    background: #bc9055;
+    color: #ffffff;
+}
+#top-bar ul li ul a, #top-bar a:hover {
+    color: #8db600;
+}
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: #680000; /* top bar hover background color */
+}
+/*nico was here*/
+:root {
+    --hyperlink: #824565;
+    --hyperlink-visited: #63173f;
+}
+ 
+@media (max-width: 479px) {
+#search-top-box-input,
+#search-top-box-form {
+    display: none;
+}
+ 
+#header h1 a {
+    font-size: 90%;
+}
+ 
+#header h2 span{
+font-size: 55%;
+}
+ 
+#header {
+    background-position: 0 5.5em;
+    background-size: 55px 55px;
+}
+ 
+#header:before{
+width: 60%;
+height: 50%;
+background-size: 55px 55px;
+background-position: 0px 0px 20px;
+}
+}
+[[/module]]
+ 
+[[include :scp-wiki:info:start]]
+ 
+**Ulysses B. Donkman and the Foreboding Forest** by: [[*user DrAkimoto]] & [[*user MalyceGraves]]
+@@ @@
+[http://www.scp-wiki.net/the-donkman-s-den Donkman Hub!]
+@@ @@
+[http://www.scp-wiki.net/drakimoto-s-author-page ~DrAkimoto's Author Page~]
+[http://www.scp-wiki.net/malycegraves-author ♠ MalyceGraves' Author Page]
+[[include :scp-wiki:info:end]]
+@@ @@
+
+[[=]]
+[[html]]
+<img src="http://topia.wikidot.com/local--files/collab:ravenmilk/fishicon" style="height:75px; width:70px; padding-left: 0%;">
+[[/html]]
+[[/=]]
+@@ @@
+**June 19th, 1867 - Somewhere in what would become Ouachita National Forest**
+
+[http://www.scp-wiki.net/scp-4768 Ulysses B. Donkman] and Ezekiel Taylor pushed through the thick undergrowth as they made their way steadily through the forest. Two weeks prior, they'd met in a small bar in Little Rock, as Donkman was telling one of his usual tall tales. Taylor'd been fascinated with hearing stories about places he'd never been.
+
+According to him, at nearly 24, he'd been only marginally involved in the War, and had sat most of it out playing picket duty in Little Rock. Even after the city had been taken by the Union, he'd simply traded a gray jacket for a blue one. 
+
+All told, he seemed like an impressionable young man, and Donkman had taken him under his wing. Which is why, two weeks later, they found themselves wandering around in the woods.
+
+"Are ya' sure this the way?" Donkman stopped for a moment, glancing around at the unchanging foliage that surrounded them. 
+
+Taylor stopped as well and looked around for landmarks that matched the small scrap of paper he pulled from his pocket. 
+
+"Well it's a touch hard to tell, but I think so, Mr. Donkman. Should just be a mite further."
+
+With an agreeable snort, Donkman started back up, holding aside a branch for Taylor to duck past "This reminds me of the time I went hunting in northern California. My, my, whatta' land." He paused and issued a low whistle. "Ya' ever been to California?"
+
+"Can't say I have. I was on the farm 'til the war, an' after that up until recently, I had to take care of my pa, God rest his soul. Ne'er really found the time for travellin'. Well, until I met you, that is."
+
+"'Tis a mighty shame, friend. Thems some gorgeous views in the Sierra's comin' up on Maheon Lake... Though I'm guessin' it's Lake Tahoe now." With a shrug, Donkman continued on through the trees, and the two men walked in silence for a few minutes.
+
+After a bit, they stepped out into a small clearing before a low escarpment.
+
+"Well, now how the he–" Taylor fumed a bit, glancing incredulously at the crude map drawn on the backside of his paper. 
+
+"Now don't go worryin' 'bout this boy, ol' Donkman got just the thing we need." Donkman reached into his jacket and removed a grappling hook attached to a piece of rope. Taylor watched dumbfounded as Donkman threw the grapple up the cliff to wrap around a tree.
+
+"See, no problems here." -Donkman said, gesturing to his work.
+
+Taylor eyed the nearly 25-foot climb with a frown. "Yeah, I'm guessin' you was right."
+
+They climbed in relative silence, with only a few muttered curses from Taylor as they scrambled over the top and onto solid ground. Donkman took a moment to look out over the trees, then dusted off his jacket with his hands before looking over at his erstwhile companion still catching his breath perched atop a fallen tree.
+
+"I reckon you could use a break? How's about I fix us somethin' to eat." Donkman's tone was conciliatory, a hint of concern narrowing his eyes a bit as he looked over at the much younger man. 
+
+"Nah... I, I don't think that's necessary, I'm just gonna sit a spell. Catch my breath 'n all." Taylor said. He looked up, his jaw dropping open as he watched Donkman already tucking the neatly wound rope and grapple back into his jacket. 
+
+"How do ya' always do that?" Taylor asked.
+
+"How do I do what?" Donkman gently patted his jacket back into place and looked quizzically over at his companion.
+
+Taylor threw up his hands and waved them about at Donkman. "Ya' always have exactly what ya need, when ya need it. Besides how the hell does that fit in y–" His tirade was cut off by a boisterous laugh from Donkman. The laughter continued a moment more before he wiped a non-existent tear from his eye.
+
+"I reckon it would appear that way. But nay, I jus' pride myself in bein' prepared. We was goin' into the woods, ya never know when a hook 'n line will be useful." 
+
+"Yeah, but that doesn't exp–" Taylor started, before once again being cut off by Donkman. 
+
+"How much further ya' reckon?" Donkman asked, pointing towards a rough trail through the forest.
+
+For a moment, Taylor just stared at Donkman before releasing an exasperated sigh. He patted around a few times, then pulled the small paper back out and stared at it for a few seconds.
+
+With gritted teeth, Taylor pointed towards the path. "Just 'bout 10 minutes that way, 'n we'll be there."
+
+"Well let's get movin', boy! Plenty o' time for restin' when we get to this fishin' hole of yours." 
+
+With that, the two of them started off again through the woods.
+
+------
+
+As they reached the fishing hole, it began to dawn on Donkman that something wasn't quite right. The air was stale, the trees sickly, the ground felt too soft beneath his feet.
+
+"Where'd ya' say ya' heard of this place?" Donkman's question was quiet as he eyed the unhealthy little pond. 
+
+"I already tol' ya'. Couple a' old-timers down the saloon in Kimberton." Taylor said, with a tinge of worry in his voice. "They said they heard it from a pack of Redskins."
+
+Donkman frowned at the boy. "Now, don'tcha be goin' about bein' rude like that. Thems a proud folk, the First Nations people, you best be rememberin' that Johnny Reb." He glared briefly at him, then crouched down to get a closer look.
+
+The water in the fishing hole was clouded and murky and had a distinct whitish color to it. Donkman reached out to trail his fingers in the water, grimacing at the unpleasantly thick texture. 
+
+"Well, I reckon we've been played for fools. Ain't no fish in this here water." He stood, wiping his fingers on a handkerchief. He gave it a distasteful look, then shoved it back in his pocket.
+
+"Well, damn. Comin' all this way for nothin'." Taylor kicked a small stone into the water, eliciting an unusually small ripple in the thick slime.
+
+Donkman surveyed his surroundings, and he noticed the small inconsistencies in the details. The trees all looked the same, the ground was uneven and lumpy. The air was unusually still, with no bird calls or movement in the underbrush. 
+
+He shook his head, a concerned note creeping into his tone. "We could head back down, prolly' make it most the way afore sundown."
+
+"Gee, I'm pretty spent from the trip up." Taylor's voice was tight, too quick in his response. 
+
+"Well then, how's about we stay a spell, scrap together some wood and get ourselves a nice fire goin'."
+
+"No– No, I uh, don't think that's a good idea. Why don't we see if there's another fishing spot near here? Maybe this is the wrong hole?" It was still too tight, too quick. "Stallin' tactics." Donkman thought to himself.
+
+Donkman retrieved a cigarette and casually lit it before turning to Taylor, all sense of levity gone from his voice. "So, why you reckon we're up here, Boy?"
+
+"W- Well, like I said, they tol–" Taylors word choked off, then died completely as the crack of branches announced the arrival of two strange men. Taylor slowly backed away from Donkman and pulled out the ugly-looking sawed-off shotgun that had been hidden underneath his jacket. "Imma real sorry 'bout this, Mr. Donkman."
+
+"Well, well, well. Looks'a like ya' gots us a goodin'" The tallest of the two newcomers snickered. Donkman eyed them each as they approached. The tallest of them crept around to face Donkman walking on legs with far too many joints and pointing with arms just the same. It possessed a single large eye in the center of its face, and a small hole of a mouth for parsing its bitter words. "You'a do just fine, Papa will be'a joyed."
+
+Whereas the tallest of the men had far too many joints; the rounder one had far too many limbs. Four meaty legs supported an unnaturally round torso, and an extra pair of double-jointed arms reaching around from its back. It spoke at them in a harsh and guttural language completely unknown to Donkman, sounding more animal than man.
+
+Donkman slicked back his hair and shook his head ruefully. "Well, I reckon it's a party I didn't know I was invited to. My names–" Donkman is cut off by a guttural cough from the many-limbed thing. 
+
+"My brother is'a right– we don't be needin' ya name. Papa will'a wake up soon, we'a gon' make sure ya' sittin' tight." The taller brother stated as the limbed one pulled a rope from its tattered clothes and made its way to Donkman.
+
+"Just do what they say, Mr. Donkman– don't go playin' the hero." Taylor pleaded with Donkman, shame burning obviously in his too-bright eyes.
+
+As the round brother reached out to grab his arm, Donkman sprang into action. Gripping the multi-limbed monster's arm, Donkman pulled it free with a wet sucking sound and the staccato pop of tendons.
+
+"AW FUCK, I knew this was a bad idea!" Taylor shrieked as he fumbled with his sawed-off, trying to get it aimed at Donkman. 
+
+Donkman wrapped an arm around the now screaming monstrosities' neck, choking off its cries. 
+
+"I reckon you was right." With a regretful frown, Donkman threw the severed limb at Taylor, knocking the gun free from his hands just as it went off, the heavy slug slamming hard into Donkman's shoulder, forcing him to take a step back with a grunt. 
+
+Donkman tossed the limp body of the many-limbed man to the ground and turned to face taller of his two remaining assailants. Before either of them could make a further move, the ground beneath them began to tremble and shake, an ominous groan echoing hugely through the trees.
+
+------
+
+With the sound of sick gurgling, the liquid in the fishing hole began to drain, revealing rows of large serrated teeth, and a throat large enough to swallow a man whole. The gaping maw lifted free from the ground, revealing a long serpent-like body composed of a hundred faces and limbs from all manner of species. As the faces lifted free from the muck, they began screeching out in dozens of different tongues, an animalistic cacophony.
+
+"We did like ya' tol' us, Papa. This one could'a hold ya'." The tall brother's voice had taken on a tone of whining supplication tinged with the hint of ragged glee, and he stepped back from the serpent in the posture of a butler backing away from the table.
+
+"He's special Papa, just like you said we should find." Taylor sounded just as frightened as he looked, as he too backed away from the rising monstrosity. 
+
+Donkman scrambled back, putting distance between himself and the towering flesh serpent as its many faces screamed out again in riotous sound. The tableau was certainly not one that he would have ever wanted, and Donkman felt the rare tingles of true fear slithering down his spine. 
+
+As the serpent reared back it's body, Donkman did the only thing that came to mind. 
+
+"I'm sorry, Boy!" Donkman shouted as the screeching serpent arched far above them and slammed down towards him. In desperation, he shoved off and away from Taylor, flinging the shrieking boy into the path of the onrushing monster and using the momentum to tumble clear of the disappearing serpent. He hated doing that to the poor boy, even if he had proven false, but bad situations call for bad decisions.
+
+"Papa, no!" The taller brother shrieked as he watched his younger brother get sucked screaming into the churning vortex of muck created by the monster as it plunged headfirst back into the ground. 
+
+Donkman reached frantically into his jacket to retrieve something, anything that could help him in these dire circumstances. The circumstances only got worse as he looked over to see the only remaining brother rushed furiously at him, his arms bent in weirdly unnatural angles.
+
+"What'a have ya' done!" His voice was high-pitched and ragged, fury and madness given voice as he scuttled across the ground towards him. 
+
+Donkman found himself unable to think clearly as the raging brother neared, and he pulled a long walking stick from his coat. For a moment, he could only gape at the thing. "Just what I fucking need." Donkman quipped acidly, his mind racing to find a use for the nearly pointless thing.
+
+The remaining brother slid to a stop, as the ground beneath Donkman started to collapse around him.
+
+Donkman cursed under his breath and gripped the walking stick tight. Erupting from the ground, the serpent-thing opened its gaping maw and attempted to swallow him. Donkman reached up and held the stick in both hands above his head. 
+
+Quite suddenly, Donkman found himself dangling inside the monster's throat the stick lodged in both of its jaws preventing him from falling into the thing's hungry gullet. Donkman felt the constricting squeeze of the serpent's throat muscles on his lower legs and the slender cane in his hands trembled with the force of the monster trying to close its mouth. With strength born of near-panic and pure //need//, Donkman pulled hard on the stick and launched himself free from the maw of the beast, just as the stick shattered. 
+
+With a splash, he landed in the soft muck well in front of the shrieking abomination. "Well, I'm thinkin' it's past time I should take my leave." With that incredible understatement, he took off as fast as his feet could take him. He angled slightly and barreled down on the remaining brother like a freight train at full steam. He slammed hard into the monster, knocking it to the ground in a sprawl of awkward limbs. Donkman didn't even look back as he just kept on through.
+
+As Donkman ran, he could hear the screaming serpent as it crashed through the foliage behind him. Not daring to look back, and with no time for antics, Donkman dove down the steep cliff, curling into a roll once he hit the bottom. Sharp pain from his shoulder lanced through him as he sprawled out on the ground. For a moment he just lay there, gripping his injured shoulder. Then the shrieking roar of the monster shattered the quiet of the forest again, and Donkman leaped to his feet. The fear tingled again, and he plunged onward in his mad dash through the brush, just as the serpent slammed onto the ground he had been laying on mere moments before. 
+
+Never before had Donkman run as fast as he did that day. He had lost all sense of where he was in the forest, but he ran at full pace, nonetheless. He glanced back just long enough to see the great coils of the serpent crashing through the trees behind him, and that was enough for him to stumble headlong into empty air.
+
+Donkman registered the sensation of falling and encroaching darkness enveloping him as he fell through the ceiling of a large cavern beneath the forest. His moment of clarity was shattered as he slammed ungracefully to the cavern floor in a shower of loose dirt and rocks. He groaned in agony, and he thought he heard faint whispers in the dark as is his vision blurred, and even the ragged hole of bright light far above him faded into darkness. 
+
+[[=]]
+[[html]]
+<img src="http://topia.wikidot.com/local--files/collab:ravenmilk/fishicon" style="height:75px; width:70px; padding-left: 0%;">
+[[/html]]
+[[/=]]
+
++++ To Be Continued...
+
+[[=]]
+[[size 80%]][http://www.scp-wiki.net/ulysses-b-donkman-and-the-mournful-birthday << Ulysses B. Donkman and the Mournful Birthday] 
+♦ **Ulysses B. Donkman and the Foreboding Forest Pt. 1** ♦
+Ulysses B. Donkman and the Foreboding Forest Pt. 2 >>[[/size]]
+[[/=]]
