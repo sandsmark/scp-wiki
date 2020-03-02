@@ -523,7 +523,7 @@ Header art by [[user Athosnetwork]]
 [[/module]]
 
 [[module css]]
-
+/* 
 
 @keyframes sham {
     from {
@@ -537,21 +537,21 @@ Header art by [[user Athosnetwork]]
 }
  @-webkit-keyframes sham {
     from {
-        transform:rotate(4deg);
-        transform:skewY(4deg);
+        transform:rotate(1deg);
+        transform:skewY(1deg);
               }
     to {
-        transform:rotate(-4deg);
-        transform:skewY(-4deg);
+        transform:rotate(-1deg);
+        transform:skewY(-1deg);
               }
 }
 .shimmy {
   animation-name: sham;
-  animation-duration: 4s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   -webkit-animation-name: sham;
-  -webkit-animation-duration: 4s;
+  -webkit-animation-duration: 6s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
 }
@@ -563,7 +563,7 @@ Header art by [[user Athosnetwork]]
     opacity: 0;
   }
 }
- 
+ */
 
 .fivek > .list-pages-box a { 
    color: #850005;
