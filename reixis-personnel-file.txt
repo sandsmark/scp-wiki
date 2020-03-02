@@ -67,8 +67,8 @@ Site-98 (Secondary)
 **SCP Logs**
 [[/cell]]
 [[cell style="border: 1px solid black; width: 45%;" rowspan="2"]]
-[[module ListPages style="width: 100%;" created_by="CityToast" order="name desc" separate="no" tags="scp" perPage="250" prependLine="||~ Number ||~ Rating ||~ Created ||"]] 
-|| %%title_linked%% || %%rating%% || %%created_at%% ||
+[[module ListPages style="width: 100%;" created_by="CityToast" order="created_at desc desc" separate="no" tags="scp" perPage="250"]] 
+ %%created_at|%b %Y%% - **%%title_linked%%** **+%%rating%%** 
 [[/module]]
 [[/cell]]
 [[cell style="border: 1px solid black; text-align: center; width: 40%; background-color: #DDD;" colspan="2"]]
@@ -93,8 +93,8 @@ X
 **Event Logs**
 [[/cell]]
 [[cell style="border: 1px solid black; width: 45%;" rowspan="5"]]
-[[module ListPages style="width: 100%;" created_by="CityToast" order="created_at desc" separate="no" tags="tale" perPage="250" prependLine="||~ Number ||~ Rating ||~ Created ||"]] 
-|| %%title_linked%% || %%rating%% || %%created_at%% ||
+[[module ListPages style="width: 100%;" created_by="CityToast" order="created_at desc desc" separate="no" tags="tale" perPage="250"]] 
+ %%created_at|%b %Y%% - **%%title_linked%%** **+%%rating%%**
 [[/module]]
 [[/cell]]
 [[cell style="border: 1px solid black; text-align: center; width: 40%; background-color: #DDD;" colspan="2"]]
