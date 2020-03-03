@@ -1,0 +1,355 @@
+title:SCP-5444
+[[>]]
+[[module rate]]
+[[/>]]
+[[include :scp-sandbox-3:component:cd-ver2
+|lv=3
+|item=SCP-5444
+|class=Euclid
+|site-responsible= USNVBR-Site-56
+|director=Dr. Anderson Harper
+|research-head=Technician Eleanor Empira
+|assigned-task-force=MTF-κ10
+]]
+[[a href="*http://scp-int.wikidot.com/niveaux-de-menace-des-objets-scp" style="font-size: 18px; color: white; text-shadow: 1px 3px 1px rgba(0,0,0,0.3); text-decoration: none;"]]
+[[span_ style="display: inline-block; width: 100%; background-color: blue; text-align: center; border: 1px none #000; margin: 1px; padding-top: 8px; padding-bottom: 8px;"]]
+**Threat Level:** Blue
+[[/span]]
+[[/a]]
+------
+**Special Containment Procedures:** Antivirus software in use by the Foundation is to be capable of identifying and blocking requests from SCP-5444. Furthermore, all information relating to SCP-5444-4 is to be backed-up through at least two network-inaccessible mediums.
+
+Instances of SCP-5444-1 are to be stored, unpowered, in an electromagnetically-shielded storage locker. Experimentation, when applicable, is to be conducted under similar conditions, and instances may not be connected to the Site-56 intranet without approval and supervision from the IT Department.
+
+Several instances of SCP-5444-2 are uncontained; Mobile Task Force Kappa-10 ("Skynet") has been tasked with locating and disabling rogue instances of SCP-5444-2.
+
+SCP-5444-3 is to be kept disassembled and stored in the High Value Containment Wing of Site-56.
+
+**Description:** SCP-5444 is a series of malware programmed in the Yashagorō paralanguage. Metadata analysis has returned largely inconclusive results; it is known that SCP-5444 is 1.32//i// GB in size at most, although metadata relating to its creation and ownership has been extensively obfuscated. The most recent iteration of SCP-5444 was last modified on January 9th, 2018 at 16:15 EST.
+
+Three variations of SCP-5444 are known to exist, each of which is associated with a specific hardware environment.
+
+* SCP-5444-1 are a series of miniature computers of custom make, upon which SCP-5444 has been installed as firmware. All run a bare-metal hypervisor in order to simulate a variety of operating systems, while allowing SCP-5444 to run several iterations at once. A high-end web camera has been installed into the chassis of a single instance, designated SCP-5444-1-Prime.
+* SCP-5444-2 is a hypervisor-level rootkit, commonly installed across insecure network connections by SCP-5444-1. Instances otherwise function identically to SCP-5444-1.
+* SCP-5444-3 is a humanoid automaton with an artificial intelligence governed by SCP-5444. Unlike -1 and -2, SCP-5444-3 cannot directly interface with a network, and must employ HIDs[[footnote]] Human Interface Devices. [[/footnote]] to perform its intended functions. SCP-5444-3 was powered by an esoteric engine drawing from SCP-████.
+
+When connected to either a database or computer network, SCP-5444 functions as an effectively sapient user. SCP-5444's primary activities are initially limited to accessing and analyzing as much data as possible; upon the confirmation of data referenced in SCP-5444-4, SCP-5444 will attempt to remove such data through any means necessary.
+
+All variations of SCP-5444 reference SCP-5444-4 through a series of anomalous pointer variables[[footnote]] One of the technical advantages of the Yashagorō paralanguage over nonanomalous languages is the ability to reference variables stored and defined on remote/isolated machines. [[/footnote]]. SCP-5444-4 is a file stored on SCP-5444-1-Prime with a .rysh extension, serving as the primary method of setting SCP-5444's censorship parameters. Modification of SCP-5444-4 first requires the user to undergo a three-factor authentication process to confirm they are PoI-9522-D.
+
+PoI-9522-D was [[[wwydftltimd-hub|Sara Miriam Yarkoni]]], a 29-year-old Iranian-American freelance programmer with connections to GoI-1285 ("The King of Hearts Collective")[[footnote]] An independent record label managed by a collective of anartists. [[/footnote]]. According to data recovered from SCP-5444-1-Prime, PoI-9522-D was the sole programmer of SCP-5444-1.
+
+At present, SCP-5444-4 directs SCP-5444 to erase all evidence of PoI-9522-D's existence.
+------
+[[=]]
+[[size 150%]]**HISTORY**[[/size]]
+[[/=]]
+
+SCP-5444's existence was brought to the attention of the Foundation on January 10th, 2018, following a string of attacks targeting several individuals of various backgrounds. Although coordinated in such a manner as to suggest a botnet, several attacks displayed unusual complexity. Attacks included, but were not limited to:
+* Mass DMCA claims against videos featuring PoI-9522-D and her music.
+* Extensive vandalism to several online wikis.
+* Specific behavior intended to exploit streaming algorithms in order to sabotage PoI-9522-D's music's chances of discovery.
+* Blackmail intended to coerce the recipient into deleting files depicting PoI-9522-D from their devices.
+
+Shortly thereafter, Senior Researcher Yehezkel Yarkoni received an email, purportedly from his daughter Sara. Attached was a PDF, ostensibly a handwritten letter, infected with an SCP-5444-2 installer.[[footnote]] The resulting SCP-5444-2 instance has been designated SCP-5444-2-1. [[/footnote]]
+
+Following its installation, SCP-5444-2-1 launched a series of attacks directed at personnel assigned to the GoI-1285 project, as well as Researcher Yarkoni and his wife, [[[SCP-4947|Dr. Rivka Yarkoni]]]. Mobile Task Force Kappa-10 ("Skynet") was directed to identify, combat, and isolate the threat.
+
+SCP-5444-2-1 was subsequently isolated and neutralized by MTF-κ10 after two hours and fourteen minutes. Researcher Yarkoni was reprimanded for his carelessness and reassigned to [[[SCP-1769|Area-56]]] duty.
+------
+[[=]]
+[[size 150%]]**DOCUMENT 5444-A**[[/size]]
+[[/=]]
+
+In accordance with the 1966 SoHo accord, the Foundation required a warrant to raid the residences of PoI-9522-D, on account of her fiance's registration as a Frequent Resident of BackDoor SoHo. Furthermore, action on part of the Foundation was limited to assisting attendant Unusual Incidents Unit operatives.
+
+[DATA LOST]
+
+Following the acquisition of SCP-5444-3 and all four instances of SCP-5444-1, each of their drives were isolated and imaged, as standard for computer anomalies. According to imaging software, all files pertaining to PoI-9522-D had been deleted at 16:15:54 EST on 10/01/2018, 24 hours after the last modification to SCP-5444-4; as no action had been taken to wipe the associated data, files were successfully restored with minimal effort.
+
+Of interest to the Foundation were several video files recorded on SCP-5444-1-Prime, in which PoI-9522-D discusses the function and background of SCP-5444, as well as updates as appropriate. The last of such videos was recorded on 16:17 EST on 09/01/2018, 19 minutes prior to her estimated time of death.
+
+Excerpted video logs have been provided below. The original files, as well as full transcripts, may be accessed with permission from RAISA; personnel are to be advised of their sexually explicit nature.
+
+------
+[[collapsible show="▷ Excerpt of bonus.wmv, recorded 30/12/2010" hide="Access Granted"]]
+[[div style="display: inline-block; border-radius: 10px; border:dashed 1px #444444; background:#F5F5F5; float:top; width:96.5%; padding:10px"]]
+[[=]]
++++ **bonus.wmv**
+[[/=]]
+**Date:** 30/12/2010
+
+**Length** 0:28:19
+------
+{{[BEGIN LOG 2.1]}}
+
+**PoI-9522-D:** Heya! Thanks for buying my content, ya little devil!
+
+//PoI-9522-D blows a kiss to the camera, then winks.//
+
+**PoI-9522-D:** If you're wondering why this came with your purchase, think of this like, well, a EULA. Obviously this is gonna be sexier than reading an EULA, but it still concerns a lot of technical and legal bullshit, and I know not all of you are here for my coding stuff. Bear with me, I'm gonna try making this the easiest EULA possible.
+
+//Turning around, PoI-9522-D makes a show of walking to an office chair in the middle of the room, then settling into it with a relaxed position perpendicular to the backrest.//
+
+**PoI-9522-D:** So, you're the proud owner of one of my videos, albums, et cetera. That entitles you to several legal rights. First of all, you are entitled to watch it. You are //more// than welcome to watch it.
+
+//PoI-9522-D chuckles, winks, and begins to slowly unbutton her jacket.//
+
+**PoI-9522-D:** Secondly, you're entitled to download it to any device you own. Do with that whatever the hell you wish, dear. So, what //can't// you do?
+
+**PoI-9522-D:** Well, you //can't// upload it anywhere else. Much as I love showing myself off, a girl's gotta keep work-work and play-work separate. Coming off of that, you can't bring the real me into BabylonShedim's[[footnote]] PoI-9552-D's account on the [[[fakepage|iicameras.drk]]] streaming service.[[/footnote]] domain, and trust me, I'll know. Third, and this is one goes out to "pink fly", you cannot show any of this to anyone who doesn't need to know. Again, darling, I'll know.
+
+**PoI-9522-D:** So, let me be one hundred percent transparent: those files are a bit of an //experiment//. They're a bit smarter than your typical file, so in addition to carrying the image of me fucking myself raw, they're a bit shy when it comes to distribution. So, how does this all work?
+
+//Unfastening the last button, PoI-9522-D pauses, then smirks.//
+
+**PoI-9522-D:** Let's peel back the veil a little.
+
+{{[END LOG 2.1]}}
+[[/div]]
+[[/collapsible]]
+------
+**Note:** Video appears to be a collaboration with PoI-CBGC103 ("K4m3ra"), a webcam model and practicing Maxwellist.
+
+[[collapsible show="▷ Excerpt of babshed_k4m3rabonus.wmv, recorded 12/04/2012" hide="Access Granted"]]
+[[div style="display: inline-block; border-radius: 10px; border:dashed 1px #444444; background:#F5F5F5; float:top; width:96.5%; padding:10px"]]
+[[=]]
++++ **babshed_k4m3rabonus.wmv**
+[[/=]]
+**Date:** 12/04/2012
+
+**Length** 1:01:32
+------
+{{[BEGIN LOG 9.4]}}
+
+//PoI-CBGC103's ventral circuitry is presently exposed as PoI-9522-D performs a ritualized maintenance upon it. During this time, PoI-CBGC103 attempts to recite what appears to be an early version of a README found on SCP-5444-1-Prime, with a noticeable stutter.//
+
+**PoI-CBGC103:** Installation is legal under the... the PENTAGRAM[[footnote]][[[scp-4776|The occult branch of the Department of Defense.]]][[/footnote]]-Disney accord, so long as operation doesn't //fuck//, doesn't extend beyond image and IP enforcement. All code produced in the making of Panoptican't...
+
+//PoI-CBGC103 trails off, prompting PoI-9522-D to look up from her work.//
+
+**PoI-9522-D:** Something up?
+
+**PoI-CBGC103:** Not exact... well, one, you have the fingers of an Aeon. But mostly, I'm just... impressed is adjacent to the word I want.
+
+//PoI-9522-D chuckles softly.//
+
+**PoI-9522-D:** Pleasure's all mine. Wait til we get past the-
+
+**PoI-CBGC103:** Oh, not that. Just, all the effort that went into... this. All the work that had to have gone into the programming, or the licensing, or even the documentation. I've known witnesses to the Signal who could learn from your example.
+
+**PoI-9522-D:** Oh. Yeah, this shit's been a hobby my whole life. Glad you like me for my brains, cutie.
+
+**PoI-CBGC103:** A hobby? You could be the woman the next Bill Gates backstabs.
+
+//PoI-9522-D remains silent for several seconds. Her shoulders slouch. Finally, after fifteen seconds, PoI-9522-D leans down to kiss PoI-CBGC103.//
+
+**PoI-9522-D:** That's enough boring our fans.
+
+//PoI-9522-D resumes the ritualized maintenance.//
+
+{{[END LOG 9.4]}}
+[[/div]]
+[[/collapsible]]
+------
+**Note:** Video appears to have been recorded during a livestream.
+[[collapsible show="▷ Excerpt of 03302013live.wmv, recorded 30/03/2013" hide="Access Granted"]]
+[[div style="display: inline-block; border-radius: 10px; border:dashed 1px #444444; background:#F5F5F5; float:top; width:96.5%; padding:10px"]]
+[[=]]
++++ **03302013live.wmv**
+[[/=]]
+**Date:** 30/03/2013
+
+**Length** 2:38:13
+------
+{{[BEGIN LOG 12.2]}}
+
+//PoI-9522-D, dressed in a "sexy teacher" outfit, gives a lecture to her digital audience in apparent earnest regarding updates to SCP-5444, complete with a dry-erase whiteboard. At this point in the recording, the board's surface is covered in an array of diagrams, equations, and citations relating to licensing laws.//
+
+**PoI-9522-D:** So while the resources of a host machine //are// employed, it's only in service of what, by definition, they are //legally required// to do. Moreover, file size is measured by an imaginary number, so technically-
+
+//PoI-9522-D is interrupted by an unrecorded noise.//
+
+**PoI-9522-D:** Yep, that's the tip goal.
+
+//Putting down a dry-erase marker, PoI-9522-D returns to SCP-5444-1-Prime.//
+
+**PoI-9522-D:** Okay, just a quick check-up before I get to my blouse. Looks like... looks like stockings and hair-up are winning the bid war. I gotta do this more often, if it pays this many bills. As for questions...
+
+//PoI-9522-D is silent for several seconds.//
+
+**PoI-9522-D:** Right, so, question one, thank you BlackHanbok: "How do you find the time for music, cam work, //and// programming?" Short answer: when I go to Sheol, I'm gonna strangle the person who came up with the phrase "gig economy", and Hashem will forgive me for it. Second, from Hung-er, very clever: "When will BookBurn't come out?" When it's done. And finally...
+
+//PoI-9522-D trails off, before putting her face in her hands. After several seconds, PoI-9522-D looks back up at the camera.//
+
+**PoI-9522-D:** Look, it's... I don't have a past I can point to. I have five years of my life I can point to where I'm doing what I'm doing //now//, more or less, shit I'm doing to keep myself off the streets and out of the psych ward. And you know, maybe there's something I can sift through, a GitHub or every barely-legal website I coded half-naked in my room. But I'm also a college... dropout with too much baggage. So that's why.
+
+//PoI-9522-D pauses.//
+
+**PoI-9522-D:** I'm sorry. Back to the show.
+
+{{[END LOG 12.2]}}
+[[/div]]
+[[/collapsible]]
+------
+**Note:** Video appears to have been recorded on accident.
+[[collapsible show="▷ Excerpt of new1.wmv, recorded 24/08/2014" hide="Access Granted"]]
+[[div style="display: inline-block; border-radius: 10px; border:dashed 1px #444444; background:#F5F5F5; float:top; width:96.5%; padding:10px"]]
+[[=]]
++++ **new1.wmv**
+[[/=]]
+**Date:** 24/08/2014
+
+**Length** 4:59:59
+------
+{{[BEGIN LOG 16.1]}}
+
+//Video opens with PoI-9522-D presenting SCP-5444-1-Prime to Ms. Isabella Kawajiri, PoI-9522-D's fiance at the time of her death.[[footnote]] As of 01/02/2018, the whereabouts of Ms. Kawajiri are unknown. [[/footnote]]//
+
+**PoI-9522-D:** Yeah, you know, I thought it'd be appropriate. I thought, "hey, maybe I should record the announcement on the thing" and the rest is history.
+
+**Kawajiri:** Credit to Veronica, the picture quality is quite good... I mean, sorry. That sounds frustrating.
+
+**PoI-9522-D:** It's cool, babe, it's cool.
+
+//PoI-9522-D turns back to her bed, retrieving the bong on her counter.//
+
+**Kawajiri:** It doesn't feel... again, sorry. (//Kawajiri sighs//) I'll admit that aside from... from the Self-Titled Interview, all of this is rather new to me. Still, if it's causing this much trouble, why not stick it in a garage?
+
+//PoI-9522-D lights the bowl and inhales as Kawajiri sits next to her. The two share a brief kiss, after which Kawajiri exhales a cloud of smoke.//
+
+**PoI-9522-D:** See, aside from the camera, I //like// Panoptican't. You know how many bots I had putting my stuff on Pornhub? That was before I breached the Veil. I can't have my face on some, you know, some freak's browser history, two hours after a job interview. And you know, this way I'm actually getting money... christ, this was what they meant by "selling out", huh?
+
+**Kawajiri:** Pride shouldn't come before your well-being.
+
+**PoI-9522-D:** At this point it's kinda hard to tell which is which.
+
+//PoI-9522-D passes the bong to Kawajiri, who inhales.//
+
+**PoI-9522-D:** ... I don't know who I am. I don't know if I ever did.
+
+//The two share a slightly longer kiss, after which PoI-9522-D exhales a cloud of smoke. Kawajiri takes PoI-9522-D right hand and squeezes gently.//
+
+**Kawajiri:** I'm sorry, Sara. Identity is never a fun sparring partner. (//Kawajiri hugs PoI-9522-D//) But if this is causing you so much stress, it's my duty as your girlfriend to do everything I can to offset. (//Kawajiri playfully taps PoI-9522-D's nose//) So //there//.
+
+**PoI-9522-D:** You're a dork.
+
+**Kawajiri:** I'm //your// dork, darling.
+
+{{[END LOG 16.1]}}
+[[/div]]
+[[/collapsible]]
+------
+[[collapsible show="▷ Excerpt of curtaincall.wmv, recorded 16/04/2015" hide="Access Granted"]]
+[[div style="display: inline-block; border-radius: 10px; border:dashed 1px #444444; background:#F5F5F5; float:top; width:96.5%; padding:10px"]]
+[[=]]
++++ **curtaincall.wmv**
+[[/=]]
+**Date:** 16/04/2015
+
+**Length** 0:22:38
+------
+{{[BEGIN LOG 18.1]}}
+
+//Video begins with PoI-9522-D in casual wear, in a different room than her previous videos.//
+
+**PoI-9522-D:** Heya! If you're wondering why you got this video, I updated the licensing stuff for probably the final time. So, yeah! This video isn't going to be particularly exciting, and most of the important stuff's on my profile, so if you're not looking for a design doc vlog, feel free to skip this one.
+
+**PoI-9522-D:** So, good news and bad news for my long-time fans. Bad news is, I'm sure you already heard, I'm retiring from cam work. Between moving in with my gf and the job I'm starting, I've kinda reached a point where I don't have the time or, really, need to cam anymore. It was fun while it lasted, sure, but a girl's gotta move on. So, what's the good news?
+
+**PoI-9522-D:** Well, for starters, all my stuff's on sale for the next month, including a whole-ass bundle of everything I've put out, including the JGT Dev streams and the //much// requested Self-Titled Interview. Second, I'm still gonna do the occasional dev stream, assuming I've got the time. Thiiiiiiird...
+
+//PoI-9522-D grins.//
+
+**PoI-9522-D:** Just //wait// til I get to all the cool shit Panoptican't does now.
+
+{{[END LOG 18.1]}}
+[[/div]]
+[[/collapsible]]
+------
+**Note:** Video appears to have been recorded during a livestream.
+[[collapsible show="▷ Excerpt of 12142016live.wmv, recorded 14/12/2016" hide="Access Granted"]]
+[[div style="display: inline-block; border-radius: 10px; border:dashed 1px #444444; background:#F5F5F5; float:top; width:96.5%; padding:10px"]]
+[[=]]
++++ **12142016live.wmv**
+[[/=]]
+**Date:** 14/12/2016
+
+**Length** 3:01:18
+------
+{{[BEGIN LOG 19.1]}}
+
+//Video opens with PoI-9522-D sitting in an office chair with a downcast expression. PoI-9522-D does not move over the course of three minutes and twenty-eight seconds, although she does occasionally glance at the camera. At 3:28, PoI-9522-D sighs.//
+
+**PoI-9522-D:** I'm sorry. Just trying to get back in the swing of... of this.
+
+//PoI-9522-D remains silent for eight more seconds, before smiling and looking back to the camera.//
+
+**PoI-9522-D:** Hey, glad to see y'all again. Been a while. I know I said I'd be retiring, but...
+
+//PoI-9522-D trails off, remaining silent for ten more seconds.//
+
+**PoI-9522-D:** Eh, it doesn't matter. Just mind the tip goals and enjoy the show.
+
+{{[END LOG 19.1]}}
+[[/div]]
+[[/collapsible]]
+------
+[[collapsible show="▷ Excerpt of new3.wmv, recorded 25/11/2017" hide="Access Granted"]]
+[[div style="display: inline-block; border-radius: 10px; border:dashed 1px #444444; background:#F5F5F5; float:top; width:96.5%; padding:10px"]]
+[[=]]
++++ **new3.wmv**
+[[/=]]
+**Date:** 25/11/2017
+
+**Length** 4:59:59
+------
+{{[BEGIN LOG 24.3]}}
+
+//PoI-9522-D engages in sexual intercourse with SCP-5444-3. Two and a half minutes pass before PoI-9522-D abruptly stops.//
+
+**PoI-9522-D:** [//indistinct//], anyway? Oh //bother//.
+
+//PoI-9522-D climbs off of SCP-5444-3, remaining silent for several seconds.//
+
+**PoI-9522-D:** ... I don't even know. You're not actually speaking, I didn't program that. I don't even know //why// I programmed you, and I hope I never realize why. And I wish I was crazy enough that I could be experiencing delusions, rather than crystal-clear, unambiguous being. That this isn't just me trying to rationalize a decade of bad decisions. I'm not sure this is helping.
+
+//PoI-9522-D looks up at the camera.//
+
+**PoI-9522-D:** Are you enjoying the show? It's not real. None of it's real, not me or the bot or any kiss I've blown in the past year. I don't need or want a fucking robot. I don't know what I want.
+
+//PoI-9522-D pauses, wiping something from her eye.//
+
+**PoI-9522-D:** I'm tired. Sorry.
+
+//Pushing SCP-5444-3 out of her bed, PoI-9522-D curls into a fetal position and does not move for the remainder of the video.//
+
+{{[END LOG 24.3]}}
+[[/div]]
+[[/collapsible]]
+------
+[[collapsible show="▷ Excerpt of away.wmv, recorded 09/01/2018" hide="Access Granted"]]
+[[div style="display: inline-block; border-radius: 10px; border:dashed 1px #444444; background:#F5F5F5; float:top; width:96.5%; padding:10px"]]
+[[=]]
++++ **away.wmv**
+[[/=]]
+**Date:** 09/01/2018
+
+**Length** 0:03:01
+------
+{{[BEGIN LOG 25]}}
+
+//Footage opens with PoI-9522-D staring at the camera. PoI-9522-D opens her mouth to speak, only to begin sobbing. Over the course of three minutes, PoI-9522-D's sobs grow in intensity, before laying her head face down into the desk. A wire can be seen hanging from the light fixture behind her.//
+
+//At the end of the video, PoI-9522-D looks up at the camera, mouths something indistinct, and ends the recording.//
+
+{{[END LOG 25]}}
+[[/div]]
+[[/collapsible]]
+
+[[footnoteblock]]
+[[div class="footer-wikiwalk-nav"]]
+[[=]]
+« [[[SCP-5443]]] | SCP-5444 | [[[SCP-5445]]] »
+[[/=]]
+[[/div]]
