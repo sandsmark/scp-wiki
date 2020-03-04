@@ -3,21 +3,8 @@ title:The Letters of the Commission on Unusual Cargo
 [[module Rate]]
 [[/>]]
 [[include component:preview text=Before the Foundation, history's largest mega-corporation—the East India Company—bankrolled a commission to protect anomalous objects. But what happened to them?]]
-[[module CSS]]
-div.letter {
-     margin: 1em 3em;
-}
- @media (max-width: 479px) {
-     div.letter {
-         margin: 1em 0;
-    }
-}
- @media (min-width: 480px) and (max-width: 580px) {
-     div.letter {
-         margin: 0.5em;
-    }
-}
 
+[[module CSS]]
 /*
 Commission of Unusual Cargo Theme by CityToast
 
@@ -277,6 +264,20 @@ height: 50%;
 background-size: 55px 55px;
 background-position: 0px 0px 20px;
 }
+}
+
+div.letter {
+     margin: 1em 3em;
+}
+ @media (max-width: 479px) {
+     div.letter {
+         margin: 1em 0;
+    }
+}
+ @media (min-width: 480px) and (max-width: 580px) {
+     div.letter {
+         margin: 0.5em;
+    }
 }
 [[/module]]
 [[==]]
