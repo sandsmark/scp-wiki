@@ -83,7 +83,7 @@ div#container-wrap {
     color: #000000;
     padding: 0px 20px 00px;
 }
-
+/* minor color and style tweaks that do not impact functionality */
 #search-top-box-input, #search-top-box input.empty,
 #search-top-box-form input[type=submit] {
     transition: 0.2s linear;
@@ -188,11 +188,7 @@ border-style: solid;
     color: black;
 }
 
-/*
-Ya boi toast started adding things here
-
-#side-bar: Color changes, removing border, modifying font sizes, and changing general appearance
-*/
+/* #side-bar: Color changes, removing border, modifying font sizes, and changing general appearance */
 #side-bar .heading {
     font-family: 'Tangerine', cursive;
     font-size: 2em;
@@ -232,22 +228,28 @@ a {
     background: transparent;
 }
 
-/*
-Media stuff at the bottom
-*/
+/* Media stuff for mobile/responsive */
 
 @media (max-width: 479px) {
 #search-top-box-input, 
 #search-top-box-form {
     display: none;
 }
-
+/* update headers for new swapped sizing (See line 89) */
 #header h1 a {
     font-size: 65%;
 }
 
+#header h1 a::before {
+    content: "The Commission on";
+}
+
 #header h2 span{
-font-size: 150%;
+font-size: 100%;
+}
+
+#header h2 span::before {
+    content: "Unusual Cargo";
 }
 
 #header {
