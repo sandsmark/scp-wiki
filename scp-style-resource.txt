@@ -1777,6 +1777,40 @@ __**Option 7:**__
 [[div style="border-bottom:1px solid #777;"]]
 [[/div]]
 
+++ Invisible Text
+
+Instead of doing "{{@@##white|TEXT HERE...##@@}}" (which would break on any browsers using a "dark theme"), you should use //transparent// instead.
+
+[[module CSS]]
+div.transparent-box-example {
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    margin: 0.25em;
+}
+[[/module]]
+
+[[div class="transparent-box-example" style="background-color: white"]]
+##transparent|This text is invisible but can be seen on select.##
+
+##white|This text is white instead.##
+[[/div]]
+
+[[div class="transparent-box-example" style="background-color: black"]]
+##transparent|This text is invisible but can be seen on select.##
+
+##white|This text is white instead.##
+[[/div]]
+
+**What to copy:**
+
+[[code]]
+##transparent|Your text here.##
+[[/code]]
+
+**What it looks like:**
+
+##transparent|Your text here.##
+
 ++ "Paper/Note" formats
 
 **__Option 1__**[[footnote]] As seen in [http://www.scp-wiki.net/scp-4003 SCP-4003] [[/footnote]]
