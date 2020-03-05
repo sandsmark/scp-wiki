@@ -1779,8 +1779,6 @@ __**Option 7:**__
 
 ++ Invisible Text
 
-Instead of doing "{{@@##white|TEXT HERE...##@@}}" (which would break on any browsers using a "dark theme"), you should use //transparent// instead.
-
 [[module CSS]]
 div.transparent-box-example {
     border: 1px solid #ccc;
@@ -1788,6 +1786,10 @@ div.transparent-box-example {
     margin: 0.25em;
 }
 [[/module]]
+
+Instead of doing "{{@@##white|TEXT HERE...##@@}}" (which would break on any browsers using a "dark theme"), you should use //transparent// instead.
+
+Try selecting the below boxes:
 
 [[div class="transparent-box-example" style="background-color: white"]]
 ##transparent|This text is invisible but can be seen on select.##
