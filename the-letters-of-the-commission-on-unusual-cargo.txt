@@ -62,7 +62,7 @@ body {
 div#container-wrap {
     background: url(http://scp-sandbox-3.wdfiles.com/local--files/citytoast/toast_header.png) top left repeat-x;
 }
-/* Headers being swapped around from Sigma: the top text is the smaller one */
+/* Headers being swapped around from Sigma: the top text is the smaller one for this theme */
 #header h1 a::before {
     font-family: 'IM Fell DW Pica SC', serif;
     padding: 35px 0 25px; 
@@ -83,7 +83,44 @@ div#container-wrap {
     color: #000000;
     padding: 0px 20px 00px;
 }
-/* minor color and style tweaks that do not impact functionality */
+
+/* Media stuff for mobile/responsive; these changes occur under 565px */
+
+@media (max-width: 565px) {
+#search-top-box-input, 
+#search-top-box-form {
+    display: none;
+}
+/* update headers for new swapped sizing and changes text to fit better (See line 89) */
+#header h1 a {
+    font-size: 65%;
+}
+
+#header h1 a::before {
+    content: "The Rt. Hon. Commission on";
+}
+
+#header h2 span{
+font-size: 140%;
+}
+
+#header h2 span::before {
+    content: "Unusual Cargo";
+}
+
+#header {
+    background-position: 0 5.5em;
+    background-size: 55px 55px;
+}
+ 
+#header:before{
+    width: 60%;
+    height: 50%;
+    background-size: 55px 55px;
+    background-position: 0px 0px 20px;
+}
+}
+/* minor color and style tweaks */
 #search-top-box-input, #search-top-box input.empty,
 #search-top-box-form input[type=submit] {
     transition: 0.2s linear;
@@ -145,7 +182,7 @@ h1, #page-title {
     font-weight: heavy;
     font-family: 'IM Fell DW Pica', serif;
 }
-/* remove the blockquote border, adds a shadow and a nice background */
+/* remove the blockquote border, adds a shadow and a gradient over the new paper background */
 blockquote, div.blockquote {
     border: none;
     box-shadow: 4px 6px 8px #a98;
@@ -171,24 +208,29 @@ blockquote, div.blockquote {
     background: #000000; /* top bar hover background color */
 }
 
+/* Hyperlink colors */
 :root {
     --hyperlink: #824565;
     --hyperlink-visited: #63173f;
 }
+
+
+
+/* #side-bar: Color changes, removing border, modifying font sizes, and changing general appearance.
+Make the left menu look like it's "written" in the left margin */
 
 #side-bar .side-block {
     padding: 10px;
     border: none;
     border-radius: 10px;
 border-style: solid;
-    border-color: transparent;
-    box-shadow: none !important;
-    background: none !important;
+    border-color: transparent; /* no border */
+    box-shadow: none !important; /* no shadow */
+    background: none !important; /* no background */
     margin-bottom: 15px;
     color: black;
 }
 
-/* #side-bar: Color changes, removing border, modifying font sizes, and changing general appearance */
 #side-bar .heading {
     font-family: 'Tangerine', cursive;
     font-size: 2em;
@@ -211,7 +253,7 @@ border-style: solid;
  #side-bar a:visited {
      color: #995c00;
 }
-
+/* #top-bar: Color changes, removing border, modifying font sizes, and changing general appearance */
 #top-bar li a{
     text-align: center;
     font-family: 'Caladea', serif;
@@ -228,55 +270,19 @@ a {
     background: transparent;
 }
 
-/* Media stuff for mobile/responsive */
-
-@media (max-width: 565px) {
-#search-top-box-input, 
-#search-top-box-form {
-    display: none;
-}
-/* update headers for new swapped sizing (See line 89) */
-#header h1 a {
-    font-size: 65%;
-}
-
-#header h1 a::before {
-    content: "The Rt. Hon. Commission on";
-}
-
-#header h2 span{
-font-size: 140%;
-}
-
-#header h2 span::before {
-    content: "Unusual Cargo";
-}
-
-#header {
-    background-position: 0 5.5em;
-    background-size: 55px 55px;
-}
- 
-#header:before{
-    width: 60%;
-    height: 50%;
-    background-size: 55px 55px;
-    background-position: 0px 0px 20px;
-}
-}
-
+/* Adds the "letter" class that helps align collapsibles with the associated blockquote */
 div.letter {
-     margin: 1em 3em;
+    margin: 1em 3em;
 }
- @media (max-width: 479px) {
-     div.letter {
-         margin: 1em 0;
-    }
+@media (max-width: 479px) {
+div.letter {
+    margin: 1em 0;
 }
- @media (min-width: 480px) and (max-width: 580px) {
-     div.letter {
-         margin: 0.5em;
-    }
+}
+@media (min-width: 480px) and (max-width: 580px) {
+div.letter {
+    margin: 0.5em;
+}
 }
 [[/module]]
 [[==]]
