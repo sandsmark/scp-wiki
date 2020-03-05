@@ -29,7 +29,7 @@ Contest Entry Ratings
 
 ----
 
-[[collapsible show="► Organized Page Rankings" hide="▼ Ranked By Rating"]]
+[[collapsible show="► Organized Page Rankings 2013" hide="▼ Ranked By Rating"]]
 
 
 
@@ -40,7 +40,7 @@ Contest Entry Ratings
 
 + TOP RATED PAGES THIS MONTH
 
-= **October 2018**
+= **January 2013**
 
 [!-- SCP Block --]
 
@@ -52,7 +52,7 @@ Top Rated SCPs This Month
 [[/div]]
 [[div class="panel-body"]]
 
-[[module ListPages rating=">10" tags="scp" order="rating desc" separate="false" date="2018.10"]]
+[[module ListPages rating=">10" tags="scp" order="rating desc" separate="false" date="2013.1"]]
 %%title_linked%% (+%%rating%%)
 [[/module]]
 
@@ -71,7 +71,7 @@ Top Rated Tales This Month
 [[/div]]
 [[div class="panel-body"]]
 
-[[module ListPages rating=">10" tags="tale" order="rating desc" separate="false" date="2018.10"]]
+[[module ListPages rating=">10" tags="tale" order="rating desc" separate="false" date="2013.1"]]
 %%title_linked%% (+%%rating%%)
 [[/module]]
 
@@ -83,50 +83,11 @@ Top Rated Tales This Month
 
 ~~~~
 
-[!-- GOI Block --]
-
-[[div class="feature-block"]]
-
-[[div class="content-panel left-column"]]
-[[div class="panel-heading"]]
-Top Rated GOI-Formats This Month
-[[/div]]
-[[div class="panel-body"]]
-
-[[module ListPages rating=">10" tags="goi-format" order="rating desc" separate="false" date="2018.10"]]
-%%title_linked%% (+%%rating%%)
-[[/module]]
-
-[[/div]]
-[[div class="panel-footer"]]
-  [!-- Placeholder --]
-[[/div]]
-[[/div]]
-[[/div]]
-
-[!-- GOI Block --]
-
-[[div class="content-panel right-column"]]
-[[div class="panel-heading"]]
-Other Top Rated Pages This Month
-[[/div]]
-[[div class="panel-body"]]
-
-[[module ListPages rating=">10" tags="-scp,-tale,-goi-format" order="rating desc" separate="false" date="2018.10"]]
-%%title_linked%% (+%%rating%%)
-[[/module]]
-
-[[/div]]
-[[div class="panel-footer"]]
-  [!-- Placeholder --]
-[[/div]]
-[[/div]]
-
 ----
 
 + Top Rated Pages
 
-[[module ListPages rating=">75" order="rating desc" separate="false" limit="600" perPage="100"]]
+[[module ListPages rating=">10" order="rating desc" separate="false" limit="600" perPage="100" date="2013"]]
 %%title_linked%% (rating: %%rating%%, comments: %%comments%%)
 [[/module]]
 
