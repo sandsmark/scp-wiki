@@ -5,6 +5,37 @@ title:The Letters of the Commission on Unusual Cargo
 [[include component:preview text=Before the Foundation, history's largest mega-corporation—the East India Company—bankrolled a commission to protect anomalous objects. But what happened to them?]]
 
 [[module css]]
+[!-- Note to Site-11 reviewer 
+
+To localize:
+- http://scp-sandbox-3.wikidot.com/local--files/citytoast/TOAST-PAPER.jpg
+- http://scp-sandbox-3.wdfiles.com/local--files/citytoast/COUC_logo.png
+- http://scp-sandbox-3.wdfiles.com/local--files/citytoast/toast_header.png
+
+
+--]
+[[module css]]
+@import url(http://scp-sandbox-3.wikidot.com/citytoast/code/1);
+[[/module]]
+
+[[iftags +theme]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+Cargo Theme by CityToast
+Made for [http://www.scp-wiki.net/the-letters-of-the-commission-on-unusual-cargo The Commission on Unusual Cargo]
+
+This is a remix of Aces and Eights Theme by rounderhouse, SCP Sigma 9 Theme created by Aelanna and Dr Devan, and MC&D Theme created by Randomini.
+
+To use this theme, please put the following at the top of your page:
+
+[[div class="code"]]
+@@[[include citytoast]]@@ /*replace with [[include theme:unusual-cargo]] upon publish*/
+[[/div]]
+
+[[code type="css"]]
 /*
 Commission of Unusual Cargo Theme by CityToast
 
@@ -146,11 +177,11 @@ h1, #page-title {
     font-family: 'IM Fell DW Pica', serif;
 }
 
-blockquote,
+blockquote,/* removes the blockquote border, adds a shadow and a nice background */
 div.blockquote {
-    border-color: #444; 
-    background-color: #e7d8c2; 
-    color:#000;
+    border: none;
+    box-shadow: 4px 6px 8px #a98;
+    background: linear-gradient(rgba(255, 220, 220, 0.3), rgba(255, 220, 220, 0.5)), url(http://scp-sandbox-3.wikidot.com/local--files/citytoast/TOAST-PAPER.jpg);
 }
 
 /* inputs */
@@ -277,9 +308,6 @@ div.letter {
          margin: 0.5em;
     }
 }
-[[/code]]
-
-[[/iftags]]
 [[/module]]
 [[==]]
 > = From The Merchants at Jambi
