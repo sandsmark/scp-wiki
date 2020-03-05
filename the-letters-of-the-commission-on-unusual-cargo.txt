@@ -5,6 +5,37 @@ title:The Letters of the Commission on Unusual Cargo
 [[include component:preview text=Before the Foundation, history's largest mega-corporation—the East India Company—bankrolled a commission to protect anomalous objects. But what happened to them?]]
 
 [[module CSS]]
+[!-- Note to Site-11 reviewer 
+
+To localize:
+- http://scp-sandbox-3.wikidot.com/local--files/citytoast/TOAST-PAPER.jpg
+- http://scp-sandbox-3.wdfiles.com/local--files/citytoast/COUC_logo.png
+- http://scp-sandbox-3.wdfiles.com/local--files/citytoast/toast_header.png
+
+
+--]
+[[module css]]
+@import url(http://scp-sandbox-3.wikidot.com/citytoast/code/1);
+[[/module]]
+
+[[iftags +theme]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+Cargo Theme by CityToast
+Made for [http://www.scp-wiki.net/the-letters-of-the-commission-on-unusual-cargo The Commission on Unusual Cargo]
+
+This is a remix of Aces and Eights Theme by rounderhouse, SCP Sigma 9 Theme created by Aelanna and Dr Devan, and MC&D Theme created by Randomini.
+
+To use this theme, please put the following at the top of your page:
+
+[[div class="code"]]
+@@[[include citytoast]]@@ /*replace with [[include theme:unusual-cargo]] upon publish*/
+[[/div]]
+
+[[code type="css"]]
 /*
 Commission of Unusual Cargo Theme by CityToast
 
@@ -12,38 +43,34 @@ Based on Aces and Eights Theme by rounderhouse, SCP Sigma 9 Theme created by Ael
 */
 
 
-@import url('https://fonts.googleapis.com/css?family=Caladea');
-@import url('https://fonts.googleapis.com/css?family=Tangerine');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+English');
-@import url('https://fonts.googleapis.com/css?family=Six+Caps');
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Caladea|IM+Fell+DW+Pica|IM+Fell+DW+Pica+SC|Tangerine');
 
 
 #header{
-    background: url(null)
+    background: url(null) /* this terminates the default header image */
 }
+
 #header:before{
-display:block;
-position: absolute;
-width: 120px;
-height: 120px;
-top: 15%;
-left:2%;
-z-index: -1;
-content: "";
-background:url(http://scp-sandbox-3.wdfiles.com/local--files/citytoast/COUC_logo.png);
-background-repeat: no-repeat;
-background-size: 110px 109px;
-background-position: 0px 0px 0px;
-z-index: -20;
+    display:block;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 15%;
+    left:2%;
+    z-index: -1;
+    content: "";
+    background:url(http://scp-sandbox-3.wdfiles.com/local--files/citytoast/COUC_logo.png);
+    background-repeat: no-repeat;
+    background-size: 110px 109px;
+    background-position: 0px 0px 0px;
+    z-index: -20;
 }
 
 #content-wrap {z-index: 2;}
 
 /* BODY */
 body {
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(http://scp-wiki.wdfiles.com/local--files/component%3Aaces-and-eights-theme/paper.jpg);
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),    url(http://scp-sandbox-3.wikidot.com/local--files/citytoast/TOAST-PAPER.jpg);
 }
 
 .main-body-div{
@@ -53,7 +80,7 @@ body {
     padding-right: 25px;
     vertical-align: top;
     transition: all .7s;
-    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("http://scp-wiki.wdfiles.com/local--files/component%3Aaces-and-eights-theme/paper.jpg");
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("http://scp-sandbox-3.wikidot.com/local--files/citytoast/TOAST-PAPER.jpg");
 }
 
 #header h1 a {
@@ -64,17 +91,17 @@ body {
 }
 
 div#container-wrap {
-    background: url(http://scp-wiki.wdfiles.com/local--files/component%3Aaces-and-eights-theme/header.png) top left repeat-x;
+    background: url(http://scp-sandbox-3.wdfiles.com/local--files/citytoast/toast_header.png) top left repeat-x;
 }
-
+/* Headers being swapped around from Sigma: the top text is the smaller one */
 #header h1 a::before {
-    font-family: 'IM Fell English', serif;
-    padding: 35px 0 25px;
+    font-family: 'IM Fell DW Pica SC', serif;
+    padding: 35px 0 25px; 
     font-weight: normal;
     content: "The Right Honourable Commission";
     color: #000000;
 }
-/* Dr Magnus is a pretty cool guy ya know*/
+ 
 #header h2 span {
     font-size: 175%;
     color: transparent;
@@ -147,7 +174,7 @@ h1, #page-title {
     padding: 0 0 0.25em;
     margin: 0 0 0.6em;
     font-weight: heavy;
-    font-family: 'Playfair Display SC', serif;
+    font-family: 'IM Fell DW Pica', serif;
 }
 
 blockquote,
@@ -173,9 +200,9 @@ div.blockquote {
 }
 #top-bar ul li.sfhover a:hover,
 #top-bar ul li:hover a:hover {
-    background: #680000; /* top bar hover background color */
+    background: #000000; /* top bar hover background color */
 }
-/*nico was here*/
+
 :root {
     --hyperlink: #824565;
     --hyperlink-visited: #63173f;
@@ -195,6 +222,8 @@ border-style: solid;
 
 /*
 Ya boi toast started adding things here
+
+#side-bar: Color changes, removing border, modifying font sizes, and changing general appearance
 */
 #side-bar .heading {
     font-family: 'Tangerine', cursive;
@@ -259,10 +288,10 @@ font-size: 150%;
 }
  
 #header:before{
-width: 60%;
-height: 50%;
-background-size: 55px 55px;
-background-position: 0px 0px 20px;
+    width: 60%;
+    height: 50%;
+    background-size: 55px 55px;
+    background-position: 0px 0px 20px;
 }
 }
 
@@ -279,6 +308,10 @@ div.letter {
          margin: 0.5em;
     }
 }
+
+[[/code]]
+
+[[/iftags]]
 [[/module]]
 [[==]]
 > = From The Merchants at Jambi
