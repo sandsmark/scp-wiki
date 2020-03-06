@@ -193,7 +193,13 @@ text-align: center!important;
 @@@@
 
 
-[[include component:author-page order=created_at]]
+[[include component:author-page
+  order=created_at |
+  perpage=100 |
+  background=yes |
+  image=yes |
+  sortbar=yes |
+]]
 
 
 @@@@
