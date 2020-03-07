@@ -1,8 +1,5 @@
 title:Straight On Till Morning Hub
-[[module CSS]]
-@import url(/component:SOTMTheme/code/1);
-[[/module]]
-
+[[include component:sotmtheme]]
 
 [[>]]
 [[module Rate]]
@@ -93,9 +90,7 @@ The Straight On Till Morning canon uses custom CSS formatting, made by Von Pinci
 
 To implement this formatting, copy-paste the following code into your article above the rating module:
 
-> [[module CSS]]
-> @import url(/component:SOTMTheme/code/1);
-> [[/module]]
+> @@[[include component:sotmtheme]]@@
 
 **How to write for SOTM:**
 
