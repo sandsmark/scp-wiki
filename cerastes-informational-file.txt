@@ -193,14 +193,13 @@ text-align: center!important;
 @@@@
 
 
-[[include component:author-page
-  order=created_at |
-  perpage=100 |
-  background=yes |
-  image=yes |
-  sortbar=yes |
-]]
+[[module ListPages created_by="Cerastes" order="rating desc" separate="no" tags="-tale -goi-format -author -template" perPage="20" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Created ||"]]
+|| %%title_linked%% || ##green|+ %%rating%%## || %%comments%% || %%created_at%% ||
+[[/module]]
 
+[[module ListPages created_by="Cerastes" order="rating desc" separate="no" tags="-co-authored tale goi-format" perPage="20" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Created ||"]]
+|| %%title_linked%% || ##green|+ %%rating%%## || %%comments%% || %%created_at%% ||
+[[/module]]
 
 @@@@
 @@@@
