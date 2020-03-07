@@ -1,0 +1,92 @@
+title:Fixing logins on Chrome
+[[module css]]
+.collapsible-block {
+    max-width: 100%;
+    text-align: center;
+    border-color: black;
+    border: solid 1px black;
+    background: #f5f5f5;
+    margin-bottom: 0.125em;
+}
+
+.collapsible-block-content p {
+    text-align: left;
+    margin: 0.75em 0.5em auto 0.5em;
+    padding: auto 0.75em auto 0.75em;
+}
+
+.mobile img {
+    border: solid 1px #ccc;
+    max-height: 50vh;
+}
+[[/module]]
+
+Google recently added a change for Chrome/Chromium which blocks all third-party cookies by default. The aim is to minimize user tracking across different sites, which is good. Unfortunately because Wikidot only reports cookies (used to determine if a user is signed in) for sites ending in "{{wikidot.com}}" this means wikis with custom domains (e.g. {{scp-wiki.net}} and {{kontainer.djkakt.us}}) don't recognize that you're logged in.
+
+**The easiest workaround is to use http://scp-wiki.wikidot.com/ instead** of http://www.scp-wiki.net/.
+
+However it is possible to adjust Chrome settings so we can enjoy the privacy benefits and log into Wikidot sites.
+
+[[collapsible show="Desktop Instructions" hide="Desktop Instructions" hideLocation="both"]]
+[[div class="desktop"]]
+
+Sign-in like you normally do. If the cookies are being blocked you won't appear as signed in.
+
+In the top-right of your address bar click the "cookie" icon to get the menu, then click "Manage".
+
+[[=image desktop-1.png]]
+
+Once you get to the list of cookies, click on the blocked tab.
+
+[[=image desktop-2.png]]
+
+From there you will see the domains for Wikidot, which you will need to set to "Allow".
+
+[[=image desktop-3.png]]
+
+Hit "Done" and refresh the page. You should now be recognized as logged in!
+[[/div]]
+[[/collapsible]]
+
+[[collapsible show="Mobile Instructions" hide="Mobile Instructions" hideLocation="both"]]
+[[div class="mobile"]]
+
+Sign-in like you normally do. If the cookies are being blocked you won't appear as signed in.
+
+Open up the settings from the sidebar menu.
+
+[[=image mobile-1.png]]
+
+From there scroll down and open "Site settings".
+
+[[=image mobile-2.png]]
+
+Then tap on "Cookies".
+
+[[=image mobile-3.png]]
+
+First, ensure that cookies are enabled.
+
+Then tap to add site exceptions for Wikidot, specifically "{{wikidot.com}}" and "{{www.wikidot.com}}".
+
+[[=image mobile-4.png]]
+
+Once they are both present, tap each one to enter its site-specific settings.
+
+[[=image mobile-5.png]]
+
+Set cookies to "Allow", then go back once to return to the menu.
+
+[[=image mobile-6.png]]
+
+When properly set, the settings page should appear as below.
+
+Note: the presence or absence of other sites other than "{{wikidot.com}}" and "{{www.wikidot.com}}" is irrelevant.
+
+[[=image mobile-7.png]]
+
+Exit from the settings menu and refresh the page. You should now be recognized as logged in!
+[[/div]]
+[[/collapsible]]
+
+If you have any questions, you can ask in {{[[[chat-guide|#site11]]]}}, our IRC channel for technical matters.
