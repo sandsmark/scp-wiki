@@ -12,12 +12,10 @@ title:The Rounderpage
 ----
 [[=]]
 [[collapsible show="THEME 1: EXPLOSIONS"]]
-[[<]]
-[[size 200%]]
-[[span style="font-family: 'Bungee Shade', cursive;" color: "#D4AF37;"]]
+[[span style="font-family: 'Bungee Shade', cursive;" color: "#D4AF37; font-size: 200%;"]]
 **EXPLOSIONS**
 [[/span]]
-[[/size]]
+[[<]]
 [[div class="fivek"]]
 [[module ListPages order="rating desc" category="." tags="+_explosions" perPage="40" separate="no" prependLine="||~ Place ||~ Title ||~ Author ||~ Rating ||~ Votes ||~ Comments ||"]]
 || #%%index%% || %%title_linked%% || %%created_by_linked%% || %%rating%% || +[[#expr (%%rating%%+((%%rating_votes%%-%%rating%%)/2))]], -[[#expr ((%%rating_votes%%-%%rating%%)/2)]] || %%comments%% ||
