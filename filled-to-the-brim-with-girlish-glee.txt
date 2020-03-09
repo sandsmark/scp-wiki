@@ -2,6 +2,41 @@ title:Filled To The Brim With Girlish Glee
 [[>]]
 [[module rate]]
 [[/>]]
+[[module CSS]]
+
+.body-text {
+    margin: 2% 13% 2% 9%;
+    padding: 5px 20px 5px 20px;
+    background-color: #f2f2f2;
+    color: #111;
+}
+
+.text4desk {
+    width: 70%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .body-text {
+        margin: 0% 4% 0% 4%;
+    }
+
+    .text4desk {
+        width:100%;
+    }
+
+}
+
+
+[[/module]]
+
+[[div class="body-text"]]
+[[=]]
++ Graphic depictions of abuse ahead. Proceed with caution.
+[[/=]]
+[[/div]]
+
 [[tabview]]
 [[tab #JGT_GeneralChat]]
 
