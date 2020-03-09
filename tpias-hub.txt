@@ -4,7 +4,7 @@ title:Three Ports in a Storm -- Podcast Hub
 [[/>]]
 
 [[div style="border: double 5px #89043d; background:#eaebed; padding-left: 10px; padding-right: 10px; margin-bottom: 10px; margin-left: 15%; margin-right: 15%; line-height: 0.75"]]
-[[module ListPages category="fragment" parent="." created_by="GreenWolf" limit="1" order="created_at desc"]]
+[[module ListPages parent="." created_by="GreenWolf" limit="1" order="created_at desc"]]
 [[=]]
 + Latest Episode
 ++ %%title%%
@@ -43,7 +43,7 @@ div#page-content a.collapsible-block-link{
 }
 [[/module]]
 
-[[module ListPages category="fragment" parent="." created_by="GreenWolf" limit="50" order="created_at"]]
+[[module ListPages parent="." created_by="GreenWolf" limit="50" order="created_at"]]
 [[# %%index%%]]
 [[collapsible show="+ %%title%%" hide="- %%title%%"]]
 [[div style="border: double 5px #89043d; background:#eaebed; padding: 10px; padding-bottom: 0px; margin-bottom: 0px; line-height: 0;"]]
