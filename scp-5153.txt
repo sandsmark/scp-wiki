@@ -1,0 +1,36 @@
+title:SCP-5153
+[[include component:black-highlighter-theme-dev]]
+[[include :scp-wiki:component:bhl-dark-sidebar]]
+[[module CSS]]
+:root{
+--cutColour: #fafafa;
+--barColour: #590505;
+}
+
+.info-container .collapsible-block-folded a{
+color: #FFF;}
+.info-container .collapsible-block-unfolded-link a{
+color: #FFF;}
+
+.translation_block{
+display:none;}
+[[/module]]
+
+[[include info:start]]
+__**SCP-XXXX:**__ The Meteor Who Cried Wolf
+**Author:** [[*user TheMightyMcB]]
+
+**More by me:**
+* [http://www.scp-wiki.net/themightymcb-s-author-page TheMightyMcB's Author Page]
+
+**Special thanks to:**
+* [[*user DrAkimoto]]
+* [[*user rattles]]
+* [[*user Crashington]]
+* [[*user Oboebandgeek99]]
+
+[[include info:end]]
+
+[[module ListPages category="fragment" parent="." order="created_at" limit="1" offset="@URL|0"]]
+%%content%%
+[[/module]]
