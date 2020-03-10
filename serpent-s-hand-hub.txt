@@ -311,7 +311,7 @@ DOUBT TEXT GOES HERE
 
 ----------------
 
-[[div style="float:left;width:40%;padding:20px;"]]
+[[div class="end1"]]
 
 SCP FOUNDATION INTRODUCTORY FILE ON GROUP OF INTEREST ALPHA-019, "SERPENT'S HAND"
 
@@ -361,7 +361,7 @@ Efforts to neutralize the Serpent's Hand in a more permanent fashion are ongoing
 
 [[/div]]
 
-[[div style="float:right;width:40%;padding:20px;border:solid 2px #112211; background:#DDEEDD;"]]
+[[div class="end2"]]
 
 Welcome.
 
@@ -426,3 +426,37 @@ We are the Serpent's Hand.
 
 [[/div]]
 ~~~~
+
+
+[[module css]]
+.end1 {
+    float:left;
+    width:40%;
+    padding:20px;
+}
+
+.end2 {
+    float:right;
+    width:40%;
+    padding:20px;
+    border:solid 2px #112211;
+    background:#DDEEDD;
+}
+
+@media only screen and (max-width: 450px) {
+
+    .pictures4mobile {
+        float: clear;
+        padding: 12px;
+        width: 100%;
+    }
+
+    .pictures4desk {
+        float: clear;
+        padding: 12px;
+        width: 100%;
+    }
+
+}
+
+[[/module]]
