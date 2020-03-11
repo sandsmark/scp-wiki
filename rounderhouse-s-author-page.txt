@@ -25,7 +25,20 @@ title:The Rounderpage
 [[/collapsible]]
 [[/=]]
 ----
-= [# THEME 2: TBA]
+[[=]]
+[[collapsible show="THEME 2: DELICIOUS"]]
+[[span style="font-family: 'Bungee Shade', cursive;" color: "#D4AF37; font-size: 200%;"]]
+**DELICIOUS**
+[[/span]]
+[[<]]
+[[div class="fivek"]]
+[[module ListPages order="rating desc" category="." tags="+_delicious" perPage="40" separate="no" prependLine="||~ Place ||~ Title ||~ Author ||~ Rating ||~ Votes ||~ Comments ||"]]
+|| #%%index%% || %%title_linked%% || %%created_by_linked%% || %%rating%% || +[[#expr (%%rating%%+((%%rating_votes%%-%%rating%%)/2))]], -[[#expr ((%%rating_votes%%-%%rating%%)/2)]] || %%comments%% ||
+[[/module]]
+[[/div]]
+[[/<]]
+[[/collapsible]]
+[[/=]]
 ----
 = [# THEME 3: TBA] 
 ----
