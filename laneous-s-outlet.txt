@@ -192,9 +192,16 @@ Cool and epic artworks of my articles.
 
 [[/tab]]
 [[tab JAM-CON]]
+[[collapsible show="FIRST THEME - EXPLOSIONS" hide="close"]]
 [[module ListPages order="rating desc" separate="false" limit="600" perPage="100" tags="+jam-con2020 +_explosions -hub"  prependLine="||~ Page ||~ Rating ||~ Comments ||~ Date Created ||"]]
 || %%title_linked%% || %%rating%% || %%comments%% || [[*user %%created_by%%]] ||
 [[/module]]
+[[/collapsible]]
+[[collapsible show="FIRST THEME - EXPLOSIONS" hide="close"]]
+[[module ListPages order="rating desc" separate="false" limit="600" perPage="100" tags="+jam-con2020 +_delicious -hub"  prependLine="||~ Page ||~ Rating ||~ Comments ||~ Date Created ||"]]
+|| %%title_linked%% || %%rating%% || %%comments%% || [[*user %%created_by%%]] ||
+[[/module]]
+[[/collapsible]]
 [[/tab]]
 [[/tabview]]
 = Oh yeah and here's a rating module
