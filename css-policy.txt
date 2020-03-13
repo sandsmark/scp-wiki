@@ -117,3 +117,33 @@ CSS themes are affected by the regular deletion policy, and are eligible for del
 
 If your theme doesn't function in the major browsers (Chromium, Firefox, Safari, mobile, IE11) in a way that completely breaks navigation, function, or accessibility, it needs to be **removed** (or at bare minimum, removed from include blocks) from the site, then fixed, in that order. Our first priority is compatibility, function, and accessibility.
 [[/div]]
+
+[[collapsible show="Approval Checklist"]]
+++ Requirements
+The theme must be able to answer "yes" to all these questions.
+# Is it clear what the theme does?
+# Is the theme applied to its own page?
+# Does it appear to work? Is it free of obvious errors?
+# Does it work on mobile? (some sandboxes do not have a mobile version, you may need to use the theme on a page that does have one)
+# Does it work on another browser? (try IE11)
+# Are the navigation components all present and ok?
+# Does the page still look like the SCP wiki?
+# Are there usage instructions?
+# Is the page using [[include]]?
+# Is there a lot of bloat code? (e.g. large sections copied from sigma9 or other themes) (if in doubt, ask the author to explain what a section is for. If they can't, it's likely bloat)
+# Is the CSS easy to understand? Where there are complicated parts, are they difficult commented? (there should be no parts that you don't understand AND the author can't explain)
+# Is the theme free of any accessibility issues? (e.g. low contrast colour choices, unreadable or too-small fonts)
+# Is !important used reasonably? (a few uses are ok, none is ideal)
+# ctrl+f for http, are all external resources hosted on wikidot?
+# Is the theme currently being used on any pages? If not, can the user demonstrate that it is soon going to be used?
+# If the theme provides any custom divs, is their usage documented?
+Make sure the author posts their theme to the theme category, and tags it theme. Log any co-authors in attribution metadata. 
+
+++ Non-Requirements
+If the theme can't answer "yes" to any of these questions, offer advice on how to improve it. They are not required for approval. 
+# Is the code clean and easy to understand?
+# Is the CSS properly indented? (poor indentation can be indicative of mass copy-pasting)
+# Does the theme look good?
+# Do you think the author understands what each part of their code does?
+# Is it clear what the theme is for, and who should be using it?
+[[/collapsible]]
