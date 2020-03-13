@@ -146,4 +146,11 @@ If the theme can't answer "yes" to any of these questions, offer advice on how t
 # Does the theme look good?
 # Do you think the author understands what each part of their code does?
 # Is it clear what the theme is for, and who should be using it?
+# 
+**Recent Themes**
+
+[[module ListPages limit="5" category="*" tags="theme" orderBy="date desc" separate="no"]]
+# %%title_linked%% by [[*user %%created_by%%]] on %%created_at%%
+[[/module]]
+
 [[/collapsible]]
