@@ -40,7 +40,20 @@ title:The Rounderpage
 [[/collapsible]]
 [[/=]]
 ----
-= [# THEME 3: TBA] 
+[[=]]
+[[collapsible show="THEME 3: MORE THAN MEETS THE EYE"]]
+[[span style="font-family: 'Bungee Shade', cursive;" color: "#D4AF37; font-size: 200%;"]]
+**MORE THAN MEETS THE EYE**
+[[/span]]
+[[<]]
+[[div class="fivek"]]
+[[module ListPages order="rating desc" category="." tags="+_meets-the-eye" perPage="40" separate="no" prependLine="||~ Place ||~ Title ||~ Author ||~ Rating ||~ Votes ||~ Comments ||"]]
+|| #%%index%% || %%title_linked%% || %%created_by_linked%% || %%rating%% || +[[#expr (%%rating%%+((%%rating_votes%%-%%rating%%)/2))]], -[[#expr ((%%rating_votes%%-%%rating%%)/2)]] || %%comments%% ||
+[[/module]]
+[[/div]]
+[[/<]]
+[[/collapsible]]
+[[/=]]
 ----
 @@ @@
 @@ @@
