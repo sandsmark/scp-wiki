@@ -1,10 +1,246 @@
 title:SCP-5663
-Hi, I'm currently setting up offsets. Please come back in ten minutes
+**Item #:** SCP-5992
 
-[[module ListPages parent="." limit="1" order="created_at" offset="@URL|0"]]
-[[div class="meta-title"]]
-%%title%%
+**Object Class:** Euclid
+
+**Special Containment Procedures:** Please inspect the below image and answer the question provided.
+
+
+[[=image suzuki.jpg]]
+[[html]]
+
+<style>
+
+.btn:focus {
+  outline: 0;
+}
+ 
+.btn {
+  background-color: Maroon;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  width: 70%;
+  opacity: 0.9;
+  transition: 0.09s;
+  border-radius: 3px;
+  transition 0.8s;
+}
+ 
+.btn:hover {
+  opacity: 1;
+  transition: 0.8s;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.7);
+}
+ 
+.btn:active {
+  transition: 0.09s;
+  transform: translateY(1px);
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+}
+ 
+.btn2 {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+ 
+}
+
+
+</style>
+
+
+
+
+
+
+<script>
+var tnum1 = 0;
+var tnum2 = 0;
+var tstring = "RADICAL!!!"
+
+function eckhart()
+{
+   if(tnum2<tstring.length){
+      tnum2++;
+   }
+   window.setTimeout(twait,1);
+}
+
+function twait(){
+   document.getElementById("fakename").value= tstring.substring(tnum1, tnum2);
+}
+</script>
+<h4>Please describe, in one word, the image above:</h4>
+<div><textarea rows="1" style="width:70%;" id="fakename"  onkeyup="if(this.value.length > 7) document.getElementById('start_button').disabled = false; else document.getElementById('start_button').disabled = true;" onkeypress="eckhart()" wrap="hard">
+
+</textarea> </div>
+[[/html]]
+
+
+
+[[collapsible show="Submit answer" hide="POSSIBLE MEMETIC HAZARD DETECTED - SEE INSTRUCTIONS BELOW"]]
+@@ @@
+[[=]]
+[[div style="background: url(http://scp-wiki.wdfiles.com/local--files/the-great-hippo/scp_trans.png) center no-repeat; float: center; border: solid 2px #000; padding: 1px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
++ You may have been exposed to SCP-5992
+----
++++ An advisor has been notified. Please read the following documentation and wait for further instruction
 [[/div]]
+[[/=]]
 
-%%content%%
-[[/module]]
+
+[[include component:image-block name=suzuki.jpg|caption=SCP-5992-1 instance shortly before capture.|link="*/local--files/scp-2779/suzuki.jpg"]]
+
+**Item #:** SCP-5992
+
+**Object Class:** Euclid
+
+**Special Containment Procedures:** 
+
+**Description:** SCP-5992 is three[[footnote]]A possible fourth is under investigation.[[/footnote]] sets of yoga poses which, done in sequence, allow the individual who performed them to become an autonomous vehicle. These steps can be reversed to return to normal. While in vehicle form, affected individuals are referred to as SCP-5992-1. 
+
+The method by which SCP-5992 works is not well understood, appearing to have some sort of effect on reason or reality. For instance, while step three of sequence two instructs performers to tuck their elbows tight into their sides until they hear a click, step 9 asks one to rotate the front of their torso 180 degrees and step 14 involves splitting one's legs apart to reveal a series of wheels hidden inside. Although externally absurd, as long as the steps are done in order they make logical sense to the performer and observers, and no part of the steps can be identified as having any anomalous effect in the moment - only the overall sequence of steps can be identified as anomalous.
+
+The vehicles are fixed in form, as below:
+
+* **Sequence one (13 steps)**: Yellow Volkswagen Beetle with black stripes
+* **Sequence two (15 steps)**: Red Freightliner FL86 with blue accents
+* **Sequence three (9 steps)**: Black and white Suzuki B-King motorcycle with pink accents
+
+Some variance has been seen in details of the vehicles, mostly reflecting the clothing and accessories worn by those affected. The only consistent factor that has thus far been determined is that those wearing sunglasses when transformed will have tinted windows.
+
+SCP-5992 has a secondary anomalous effect which causes those who witness or are in close proximity to affected individuals to be trapped in certain patterns of speech when describing them in all tested forms of communication. Chiefly, speakers will attempt to import how impressive SCP-5992-1 instances are, and express a desire to also become an instance of SCP-5992-1. This is not a compulsive effect, and no speakers have thus been seen attempting to replicate the steps of SCP-5992 during their time affected without having previously shown signs of interest.
+
+SCP-5992 was first identified in early March, 1987, when a number of children in Dighton, Rhode Island, were found to have become Volkswagen Beetles, causing general distress among the community. During initial investigation by local law enforcement, all children involved refused to demonstrate these abilities and the case was dropped. After a story about it was published in a local paper, //The Dighton Digest//, Foundation assets investigating a separate zoological anomaly in Lincoln Woods State Park caught wind and passed a short report to central processing per standard procedure. 
+
+MTF-ξ-12c, a subteam of MTF-Xi-12 ("//Peculiar Yellow//"), were dispatched to Dighton in the following weeks, posing as teens from a local town. Following standard investigation protocol for the team brought them into contact with Bobby Frischkorn, a twelve year old with knowledge of the incidents. Frischkorn was befriended over the course of a year by Agent Blum (ξ-12c-4), at which point he promised to reveal the secret if Agent Blum met him at a makeshift hideout near the Warren Upper reservoir known only to Frischkorn and friends. 
+
+On arriving at the hideout, Agent Blum was initially chastised for arriving late, before this criticism was turned to Frischkorn when Blum showed the group his instructions. Once Blum was sufficiently ingratiated with the group, they collectively decided to induct him into "The Order of the Sparked" their name for those youths with knowledge of SCP-5992, on a vote of five for and two against.
+
+Note that at this time, Agent Blum was wearing "Mitch Sanders", an early synth glamour developed by the Foundation in collaboration with magical assets in Three Portlands.
+
+> **Frischkorn:** Ok, M-Mitch. Here it is. You ever watch- ever watched //Transformers//, on the TV?
+> 
+> **Brick Langton** Of course he knows //Transformers//, Cornhead!
+> 
+> **Frischkorn:** Sh-shut up, Brick! You s-said I could do this!
+> 
+> **Blum:** I know //Transformers//, man. Autobots, Decepticons. Turn into cars.
+> 
+> **Frischkorn:** R-Right, yeah! They turn into c-cars and mo-motorcycles and whatall. Well, w-we got a real special //Transformers// show here on ham radio, j-just for Dighton.
+> 
+> **Wally Guggenheim:** It's BS, man. They gotta be broadcasting it all over, can't just be Dighton. Why would it just be us?
+> 
+> **Blum:** Tell me about the radio show, Cornhead. Sure sounds like somethin'.
+> 
+> **Frischkorn:** It's- Yeah, it's real good. They got kinda a different voice for Shockwave, but the rest of em are real close to the TV show. And they give you instructions for, how to fold your toys, if you don't g-get it or you lost the manual or anythin'. It's real clear.
+> 
+> **Langton:** Only babies don't know how to fold a transformer, man. It's easy.
+> 
+> **Josephine O'Donnell:** Your mom's easy, Brick.
+> 
+> **Langton:** Shut the fuck up, Josie.
+> 
+> **Frischkorn:** Um, so, //anyway//, l-last month there was a real weird folding pattern they talked about. Didn't match any of the ones I got, and I got a bunch of em. Said they'd reveal what it was for the next day. Next day comes an' th-they say it's for //us//. For folding up ourselves into a B-Bumblebee car.
+> 
+> **Blum:** A Volkswagen Beetle?
+> 
+> **Frischkorn:** Maybe, I don't really know c-cars.
+> 
+> **O'Donnell:** Bumblebee's a Volkswagen Beetle, dude.
+> 
+> **Frischkorn:** Maybe, yeah. So, so we thought it was a prank or something, b-but then Wally tries them-
+> 
+> **Guggenheim:** And shit you not, Mitch, I turn into freaking Bumblebee.
+> 
+> **Blum:** Certainly sounds as if you're shitting me, folks.
+> 
+> **Frischkorn:** W-we can show you, man! All of us can do it now! And not just the bumblebee car, either. They have instructions for other stuff too! They take a couple minutes to go through all the steps, but we already got Chromia and Optimus and, and right now we're working on all the steps for-
+> 
+> **Langton:** Let's just show him, Cornhead. We've stood around with our thumbs up our asses for way too long, I wanna go be a truck.
+> 
+> **Blum:** Yes. Perhaps we could get everyone who knows how to do this together, for a race? The person most familiar could help me learn by writing out the steps on this notepad I brought, with as much detail as possible.
+> 
+> //There is a silence in the room. O'Donnell and Guggenheim look at Blum with suspicion.//
+> 
+> **Blum:** So, not Cornhead. He'd fuck it up and I'd be half an hour late again.
+> 
+> //The silence breaks as all collected laugh and resume mockery of Frischkorn. Guggenheim volunteers to write out the steps while O'Donnell quickly becomes a motorbike to collect the other members of the Order of the Sparked.//
+
+Blum covertly passed a radio message to the rest of ξ-12c, who convened along with backup agents on the spot the race was to begin at. Once everyone had been declared collected, Blum signalled the agents to draw in with knockout gas. The children, caught off guard, were not able to utilise SCP-5992 before losing consciousness.
+
+Following the amnesticisation of the children and parents involved, the Foundation put in place watchdogs to monitor public and private communications in the Dighton area. Due to the limitations of amnesticisation at the time, a number of incidents required handling between 1987 and 1991, mostly involving children managing to recall one or more of the sequences. In 2004, after 13 years of no activity, watchdogs were retired or reassigned as needed and replaced with basic monitoring AI. The item was downgraded to Safe (Inactive) in 2012.
+
+**Recent events**:
+
+In December 2043, Providence and Pawtucket were hit with a chain of bank thefts, notable for employing a novel getaway technique - rather than one getaway vehicle, each of the members of the heist would split off in separate directions individually. Foundation watchdog AI flagged the case when initial reports on the case showed many escape routes that would be difficult or impossible to pull off in a vehicle. This was then further escalated when the below police chatter was recorded two weeks later between Officers Niko Hernandes and Gill Draper:
+
+> **Officer Hernandes:** Draper, do you copy?
+> 
+> **Officer Draper:** I copy. 
+> 
+> **Officer Hernandes:** May have eyes on Wane Zeta, suspect in our 0300 the other day there. He's went to ground the job, but I managed to get a doxx on his VRChat rig's location from a botcrawl of his most frequented servers. These virt junkies, man. No helping em.
+> 
+> **Officer Draper:** Hernandes, confirm you have Wane Zeta?
+> 
+> **Officer Hernandes:** Eyes, Draper. I got eyes on him. I'm up by Coles Brook, an old boat house. Pull my coords. Requesting backup before- ah shit. Shit, I'm clocked.
+> 
+> **Officer Draper:** Copy that, Hernandes. Drones dispatched, should be there in ten. I know it's not your jam, but formally requesting you await backup before moving in.
+> 
+> **Officer Hernandes:** He's run into the boathouse there, so he's cornered. I can just wait it out til- FUCK ME-
+> 
+>  //There is the sound of an oncoming vehicle, followed by a heavy collision. Hernandes yells incoherently.//
+> 
+> **Officer Draper:** BABE?!
+> 
+> **Officer Hernandes:** I'm - //ngh// - I'm alright, Draper. He was hiding a sicknasty truckazilla in there, hit me hard, but the nanos caught most of it. In pursuit - I can still see his sweet headlights cruising down the old train tracks.
+> 
+> **Officer Draper:** B- Hernandes, requesting again you wait for backup. Med drone can assess your injuries.
+> 
+> **Officer Hernandes:** No can do. We need this bag. Update systems to watch for a phat red Freightliner. Lock cam drone target to my position, projected forwards thirty seconds. Account for rough driving - this is one bad dude and he's got some gnarly tricks up his sleeve.
+> 
+> **Officer Draper:** On it. Are you, uh.. You feeling lightheaded at all, Hernandes? You're talking funny.
+> 
+> **Officer Hernandes:** Negative, Draper. Feeling fine. Target vehicle is radical. It's radical. It's ... //huh//. Not sure what's happening there, Draper, but I would //love// to be crushin' it at the wheel of that sweet honey.
+> 
+> **Officer Draper:** Alright, I'm making this an order, rather than a request. Stand down, Hernandes, you've clearly suffered some kind of head trauma.
+
+Officer Hernandes' onsite medical tests came back clean for concussion or other head trauma, showing only a fractured collarbone and elbow. Despite this, her unusual speech patterns continued whenever discussing the subject of the truck the subject had escaped in.
+
+Once escalated, the issue was passed to Foundation AI Alexandria, who was quickly able to establish a possible connection to SCP-5992. A taskforce was assembled to investigate the link, with Agent Blum and other surviving members of the original ξ-12c recovered from retirement to advise. After months of investigation, the activity was traced back to a covert mercenary collective known as the Order of the Sparked, which had previously managed to stay beneath the Foundation's radar under the protection of the New England Oneroi/MC&D Coalition.
+
+A raid on the headquarters of the Order of the Spark was carried out shortly before midnight, 9/12/44. While the majority of the members were quietly taken out before any alarms could be triggered, a member in the form of a Suzuki B-King motorcycle. On a hunch, Agent Blum asked to be geared in the retired "Mitch Sanders" synth glamour and joined the cavalcade moving to intercept.
+
+When the target came within view of Agent Blum, they skidded out of control and crashed into the makeshift barricade, breaking through it. Agent Blum interceded the target before other agents by jumping straight into the crash area, finding that they had returned to their normal form.
+
+> **Agent Blum:** Holy shit... //Cornhead?!//
+> 
+> **Bobby Frischkorn:** Mitch fucking Sanders. How the hell haven't you aged?
+>
+> //Agent Blum drops his glamour.//
+> 
+> **Frischkorn:** Never even real. Fuck me.
+> 
+> //Frischkorn hisses and holds his side. He is suffering from extensive road rash, and part of his chest is open, exposing a wheel stored inside his ribcage.//
+> 
+> **Agent Blum:** I'm sorry, Bobby. This doesn't look great for you.
+> 
+> **Frischkorn:** D-did you ever use it? Afterward? Took me years and years to dredge it up, but I guess you remembered perfectly.
+> 
+> **Agent Blum:** I remembered. Never given permission to use it, though. Come to think of it, never asked.
+> 
+> **Frischkorn:** God, that's pathetic.
+> 
+> //Frischkorn coughs heavily and black smoke exits his mouth.//
+> 
+> **Frischkorn:** Tell me one thing, Mitch. How'd I look out there? Good as ever?
+> 
+> //Agent Blum attempts to say something, but seems unable.//
+> 
+> **Agent Blum:** You were... //Hm//. 
+> 
+> **Agent Blum:** You were totally gnarly, Conehead.
+
+[[/collapsible]]
