@@ -1,0 +1,10 @@
+title:SCP-5663
+Hi, I'm currently setting up offsets. Please come back in ten minutes
+
+[[module ListPages parent="." limit="1" order="created_at" offset="@URL|0"]]
+[[div class="meta-title"]]
+%%title%%
+[[/div]]
+
+%%content%%
+[[/module]]
