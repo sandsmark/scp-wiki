@@ -84,7 +84,7 @@ function twait(){
 }
 </script>
 <h4>Please describe, in one word, the image above:</h4>
-<div><textarea rows="1" style="width:70%;" id="fakename"  onkeyup="if(this.value.length > 7) document.getElementById('start_button').disabled = false; else document.getElementById('start_button').disabled = true;" onkeypress="eckhart()" wrap="hard">
+<div><textarea rows="1" style="width:70%;" id="fakename"  onkeyup="if(this.value.length > 7) document.getElementById('start_button').disabled = false; else document.getElementById('start_button').disabled = true;" onkeydown="eckhart()" wrap="hard">
 
 </textarea> </div>
 [[/html]]
