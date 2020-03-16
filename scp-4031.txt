@@ -1,9 +1,6 @@
 title:SCP-4031
 [[include :scp-wiki:component:scp-trans-pride |trans-pride-logo= --] |trans-pride-footer= --]]]
-
-[[>]]
-[[module Rate]]
-[[/>]]
+[[include :scp-wiki:theme:magnus-web-format]]
 
 [[include :scp-wiki:component:info-ayers
 |lang=en
@@ -29,21 +26,7 @@ body{
     --barColour: #590505;
     color: rgb(12, 12, 12);
 }
-.translation_block{ display: none; }
-.u-faq{ display: none; }
-
-/* DOCUMENT CSS */
-.material-box{
-    margin-bottom: 1em;
-    margin-top: 1em;
-    padding-bottom: 1em;
-    padding: .25em 1em;
-    border: 1px solid lightgrey;
-    box-shadow: 1px 2px 2px 0 rgba(0,0,0,.16);
-}
-blockquote{
-    border: 2px double #999;
-}
+.translation_block, .u-faq{ display: none; }
 
 /* TABLE CSS */
 .centered{
@@ -72,15 +55,31 @@ blockquote{
     border: 1px solid black
 }
 
+/* BLOCKQUOTE */
+blockquote{
+     border: 3px double #999;
+}
+
 /* FORMATTING */
 hr{
-     margin: 1em 0;
-     padding: 0;
-     border: 0;
+    display: block;
+    border: 0;
+    padding: 0;
+    margin: 1em 0;
+    height: 1px;
+}
+#page-content .collapsible-block { 
+    position: unset;
+    padding: unset;
+    margin: unset;
+    box-shadow: unset;
+    overflow-wrap: unset;
 }
 [[/module]]
 
-@@ @@
+[[>]]
+[[module Rate]]
+[[/>]]
 
 > The following file was discovered in Site-82's Research Wing.
 
@@ -93,11 +92,11 @@ hr{
 
 **Special Containment Procedures:** {{N/A}}
 
-**Description:** SCP-4031 is a powerful fast-acting amnesiac of unknown makeup, quantity, and origin.
+**Description:** SCP-4031 is a powerful, fast-acting amnesiac of unknown makeup, quantity, and origin.
 
 Subjects in visual, olfactory, gustatory, auditory, tactile, and memetic range sustain short-term memory loss, disassociation, and an acidic aftertaste. Application of the amnesiac leads to a male vocalization of human origin. Exposed subjects cannot corroborate the vocalization's existence upon interrogation.
 
-**Experimentation Log:** The following is a series of alleged interactions with SCP-4031. Interactions were not logged in real time: Unknown subject(s) recorded the interactions in documentation areas. Inputs include different persons, objects, and conceptual structures. Results include different levels of conceptual recall.
+**Experimentation Log:** The following is a series of alleged interactions with SCP-4031. Interactions were not logged in real time: Unknown subject(s) recorded the interactions in documentation areas. Inputs include different persons, objects, and conceptual structures. Results include various levels of conceptual recall.
 
 [[table class="centered"]]
 [[row]]
@@ -326,14 +325,22 @@ Vocalization
 [[/row]]
 [[/table]]
 
-**Addendum:** Research personnel were administered Class-W Mnestic[[footnote]]An agent used to temporarily enhance a subject's immediate memory retention.[[/footnote]] drugs with the intent to examine SCP-4031. Researchers discovered a hereto unaccounted for white male subject on the floor, deceased. The subject possessed lacerations, emaciation, a broken left clavicle, and blood loss in the oral cavity. Notably, the subject possessed significant cranial damage.
+**Addendum:** Research personnel were administered Class-W Mnestic[[footnote]]**Mnestic:** An agent used to temporarily enhance a user's immediate memory retention.[[/footnote]] drugs with the intent to examine SCP-4031. Personnel discovered a hereto unaccounted for white male subject on the floor, deceased. The subject possessed lacerations, emaciation, a broken left clavicle, and blood loss in the oral cavity. 
+
+Most notably, the subject possessed significant cranial damage.
 
 [[footnoteblock]]
 [[/div]]
 
-
-
+[[div style="border-bottom: 2px solid #777; margin-bottom: 1px;"]]
+[[/div]]
+[[div style="border-bottom: 1px solid #777;"]]
+[[/div]]
 
 [[=]]
-<< [[[SCP-4030]]] | SCP-4031 | [[[SCP-4032]]] >>
+[[module Rate]]
 [[/=]]
+
+[[div class="footer-wikiwalk-nav"]]
+= << [[[SCP-4030]]] | [[[floppyphoenix|Lt Flops]]] | [[[SCP-4032]]] >>
+[[/div]]
