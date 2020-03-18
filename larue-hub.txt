@@ -145,12 +145,47 @@ We've created a template for you that can be easily integrated into whatever you
 ----
 +++ Author Resources 
 ||~ **Title** ||~ **Summary** ||
-|| [http://firedawnfolder.wikidot.com/component:larueposting LaRue Format Template] || Just follow the directions on the template! ||
+|| [http://scp-wiki.wikidot.com/component:laruepost LaRue Format Template] || Directions below! ||
 || [http://www.scp-wiki.net/theme:laruetheme La Rue Site Theme] || For use with SCP articles and Tales ||
 
-This should scale easily with mobile, as long as you follow the directions. You don't need to upload the images to your own page, just edit the place where it says "CONTENT GOES HERE"
+This template can be used by importing this code:
 
-The top one has a max word count of about 300 words, depending on how many paragraphs you use. The one without the La Rue image can hold about 340, with the same restriction. 
+[[code]]
+[[include component:laruepost image=[1]|title=[2]|subtitle=[3]|content=[4]|content2=[5]]]
+[[/code]]
+
+* @@[1]@@ is the image filename, and it is constrained to being 200px wide. If you put a tall image in here it'll change the wordcount. I suggest a 200x200px image.
+* @@[2]@@ is the Title, I suggest 2-5 words
+* @@[3]@@ is the little subtitle in parentheses. I suggest 5-8 words.
+* @@[4]@@ is the first page content. You've got about 150 words, depending on paragraph breaks & the size of your image.
+* @@[5]@@ is the second page content. You've got about 350 words, again depending on paragraph breaks.
+
+This was designed for fairly short-form stories. This should scale easily with mobile devices, as long as you follow the directions. 
+
+[[=]]
+[[size 200%]]**##red|IMPORTANT:##**[[/size]] **Your page MUST be tagged "goi-format" in order for this to work.**
+[[/=]]
+
+[[collapsible show="If you wish to add more pages ->"]]
+The following can be inserted AFTER you use the top stuff. 
+
+[[code]]
+@@ @@
+[[div class="rmpostcontainer"]]
+@@ @@
+[[div class="rmpostcontent"]]
+
+PAGE THREE CONTENT GOES HERE.
+
+Again, about 350 words, depending.
+
+[[/div]]
+[[/div]]
+[[/code]]
+[[/collapsible]]
+
+All of this stuff was created by [[*user MalyceGraves]] and is licensed under CC BY-SA 3.0
+
 
 [[/tab]]
 [[/tabview]]
