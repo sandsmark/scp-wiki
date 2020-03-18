@@ -150,9 +150,8 @@ We've created a template for you that can be easily integrated into whatever you
 
 This template can be used by importing this code:
 
-[[code]]
-[[include component:laruepost image=[1]|title=[2]|subtitle=[3]|content=[4]|content2=[5]]]
-[[/code]]
+
+> @@[[include component:laruepost image=[1]|title=[2]|subtitle=[3]|content=[4]|content2=[5]]]@@
 
 * @@[1]@@ is the image filename, and it is constrained to being 200px wide. If you put a tall image in here it'll change the wordcount. I suggest a 200x200px image.
 * @@[2]@@ is the Title, I suggest 2-5 words
