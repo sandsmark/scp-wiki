@@ -1,5 +1,20 @@
 title:The Toasty Guide to Mixed Sources
-+ The Toasty Guide to Mixed Sources
+[[module CSS]]
+.enlarge{
+transition: .25s;
+}
+
+.enlarge:hover{
+transform: scale(2);
+transition: .25s;
+transition-delay: .4s;
+z-index: 1000;
+}
+
+[[/module]]
+[[>]]
+[[module Rate]]
+[[/>]]
 
 = **Note: This advice is very general and is not meant as legal advice; it is intended solely as a guideline for using mixed-asset works on the SCP Wiki.**
 
@@ -36,7 +51,7 @@ Hi, I'm [[*user CityToast]], Junior Licensing Team staffer and general licensing
 A mixed source image/graphic/asset is when you take two different assets and merge them together into one derivative asset. Here's an example:
 
 [[collapsible show="Click here to lose sleep tonight" hide="You cannot unsee him and AND HE CANNOT UNSEE YOU"]]
-[[image http://www.scp-wiki.net/local--files/guide-to-mixed-sources/WHATTHEFUCKBALLS.png]]
+[[image http://www.scp-wiki.net/local--files/guide-to-mixed-sources/WHATTHEFUCKBALLS.png class="enlarge" width="100%" style="float:right; margin: 1.5em"]]
 [[/collapsible]]
 
 When you create a work out of assets from different sources, you've created a "Mixed source" work. Since the SCP Wiki is pretty clear about [http://www.scp-wiki.net/image-use-policy what images it does and doesn't allow], it leaves few possible "combinations" that might arise, so I'm going to try and cover the majority of situations that might come up. Now it's time to play:
