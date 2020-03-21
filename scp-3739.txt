@@ -1,8 +1,4 @@
 title:SCP-3739
-[[>]]
-[[module Rate]]
-[[/>]]
-
 [[include :scp-wiki:component:info-ayers
 |lang=en
 |page=scp-3739
@@ -14,23 +10,18 @@ This article is set in the **[*http://www.scp-wiki.net/broken-masquerade-hub Bro
  
 [[div class="log"]] 
 = [[size 110%]] **Special Thanks** [[/size]] 
-[[div class="lite-header"]] 
 ----
-[[/div]] 
-* [[*user A Random Day]] and [[*user SonKingKong]] from Discord for dialogue help. 
+* [[*user A Random Day]] and [[*user SonKingKong]] for dialogue help. 
 * [[*user Modulum]] and [[*user JackalRelated]] for helping greatly with the adverts. Modulum edited the coal miner advert & Jackal helped sharpen and suggest changes for images. 
 * [[*user Uncle Nicolini]] for his CONSTANT help and critique on our draft, after each and every iteration. Can't thank him enough for sticking with our concept. 
-* [[*user DrChandra]], [[*user DarkStuff]], [[*user MacWarren]], [[*user aismallard]], and Cyantreuse for giving finalizing advice, esp. the latter approving of it in the BM canon. 
+* [[*user DrChandra]], [[*user DarkStuff]], [[*user Connor MacWarren]], [[*user aismallard]], and Cyantreuse for giving finalizing advice, esp. the latter approving of it in the BM canon. 
 * [[*user Gekkoguy]], [[*user Gabriel Jade]], Cyantreuse, and [[*user televisionist]] for conceptual work and finalizing crit. 
 * [[*user Westrin]] and [[*user RockTeethMothEyes]] for beta reading. 
-* [[*user Woedenaz]] for giving the Pataphysics Logo a new spin. Literally. 
 [[/div]] 
  
 [[div class="log"]] 
 = [[size 110%]] **Sources** [[/size]] 
-[[div class="lite-header"]] 
 ----
-[[/div]] 
 * [http://kontainer.djkakt.us/moosphere our moosphere comments] 
  
 **Research Links:** 
@@ -41,24 +32,23 @@ This article is set in the **[*http://www.scp-wiki.net/broken-masquerade-hub Bro
 * [https://en.wikipedia.org/wiki/Laying_on_of_hands Lay on Hands] 
  
 **General Images** 
-* [https://commons.wikimedia.org/wiki/File:Snejanka-cave-udder.jpg Image 1 – Public Domain] 
-* [https://commons.wikimedia.org/wiki/File:10_small_subunit.gif Image 2 – Public Domain] 
-* [https://commons.wikimedia.org/wiki/File:PSM_V62_D565_Aswan_dam_during_eclipse_of_november_11_1901.png Image 3 – Public Domain] 
-* [https://commons.wikimedia.org/wiki/File:Creepy_way_in_imambara.jpg Image 4 – CC-BY 3.0] 
+* [https://commons.wikimedia.org/wiki/File:Snejanka-cave-udder.jpg Image 1] – Public Domain 
+* [https://commons.wikimedia.org/wiki/File:10_small_subunit.gif Image 2] – Public Domain 
+* [https://commons.wikimedia.org/wiki/File:PSM_V62_D565_Aswan_dam_during_eclipse_of_november_11_1901.png Image 3] – Public Domain 
+* [https://commons.wikimedia.org/wiki/File:Creepy_way_in_imambara.jpg Image 4] – CC-BY 3.0 
  
 **Advert One** 
-* [https://upload.wikimedia.org/wikipedia/commons/7/79/Water_Drop_Icon_Vector.png Milk Droplets – CC-BY-SA 4.0] 
-* [https://upload.wikimedia.org/wikipedia/commons/3/3a/Mare_Imbrium-AS17-M-2444.jpg Mare Imbrium – Public Domain] 
+* [https://upload.wikimedia.org/wikipedia/commons/7/79/Water_Drop_Icon_Vector.png Milk Droplets] – CC-BY-SA 4.0 
+* [https://upload.wikimedia.org/wikipedia/commons/3/3a/Mare_Imbrium-AS17-M-2444.jpg Mare Imbrium] – Public Domain 
  
 **Advert Two** 
-* [https://commons.wikimedia.org/wiki/File:Bundesarchiv_B_145_Bild-F009360-0001,_Essen,_Bergm%C3%A4nner_mit_Milchflaschen.jpg Two Coalminers – CC-BY-SA 3.0] 
+* [https://commons.wikimedia.org/wiki/File:Bundesarchiv_B_145_Bild-F009360-0001,_Essen,_Bergm%C3%A4nner_mit_Milchflaschen.jpg Two Coalminers] – CC-BY-SA 3.0 
  
 **Final Screen** 
-* [https://commons.wikimedia.org/wiki/Category:Freak_show#/media/File:Joseph_Carey_Merrick_.jpg Carey Merrick – CC-BY-SA 3.0] 
-* [https://en.wikipedia.org/wiki/Mastitis#/media/File:Ultrasound_Scan_ND_115254_1204420_cr.png Ultrasound – CC-BY-SA 3.0] 
+* [https://commons.wikimedia.org/wiki/Category:Freak_show#/media/File:Joseph_Carey_Merrick_.jpg Carey Merrick] – CC-BY-SA 3.0 
+* [https://en.wikipedia.org/wiki/Mastitis#/media/File:Ultrasound_Scan_ND_115254_1204420_cr.png Ultrasound] – CC-BY-SA 3.0 
 [[/div]] @@ @@
 ]]
-
 [[include :scp-wiki:component:pataphysics-theme]]
 
 [[module CSS]]
@@ -68,182 +58,190 @@ sup{
     position: relative;
     top: -0.5em;
 }
-body{
-    --cutColour: #ededed;
-    --barColour: #201230;
-    color: rgb(12, 12, 12);
-}
-.translation_block{ display: none; }
-.u-faq{ display: none; }
-#u-author_block{ display:none; }
+.translation_block, .u-faq, #u-author_block{ display: none; }
 
 /* HEADER */
-#header h1 a::before { content: "Pataphysical Digital Archives" !important; }
-#header h2 span::before { content: "Archiving Apotheosis" !important; }
+#header h1 a::before{ content: "Pataphysical Digital Archives"; }
+#header h2 span::before{ content: "Archiving Apotheosis"; }
+ @media only screen and (max-width: 425px){
+     #header h1 a::before{
+         content: "Pataphysical Digital Arc.";
+         font-size: 90%;
+    }
+}
 
 /* TERMINAL */
 .terminal{
-    width: @display-width;
-    height: @display-height;
-    border: 1px solid rgb(12, 12, 12);
     border: 3px solid #BBB;
-    border-radius: .976em;
+    border-radius: 1.25em;
     background-color: #20142e;
+    padding-bottom: 1.17em;
     margin: 0;
+
 /* black shadow at the top of the terminal */
     background-image: radial-gradient(ellipse 1000% 100% at 50% 90%, transparent, #191122);
     background-position: center;
-    display: block;
+
 /* shadow around the terminal */
-    box-shadow: inset 0 0 10em 1em rgba(0,0,0,0.5);
-/* prevents scanline from forming a scrollwheel */
+    box-shadow: inset 0 0 10em 1em rgba(0, 0, 0, .5);
+
+/* prevent scanline from forming a scrollwheel */
     overflow: hidden;
-    padding-bottom: .915em;
+}
+.terminal hr{ background: rgba(230, 230, 230, .9); height: 1px; }
+.terminal-text{
+    padding: 34% 3em 0;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 110%;
+    color: rgba(230, 230, 230, .9);
 }
 .scanline{
+    background: linear-gradient(to bottom, rgba(56, 56, 82, 0), rgba(56, 56, 112, .1));
     margin-top: -40%;
-    width: @display-width;
-    height: 3.659em;
+    height: 4.68em;
+
+/*animation */
     position: relative;
     pointer-events: none;
-    -moz-animation: scan 5s linear 0s infinite; /* Safari 4.0 - 8.0 */
-    -webkit-animation: scan 5s linear 0s infinite; /* Safari 4.0 - 8.0 */
     animation: scan 5s linear 0s infinite;
-    background: linear-gradient(to bottom, rgba(56, 56, 82,0), rgba(56, 56, 112,0.1));
+    -moz-animation: scan 5s linear 0s infinite; /* SAFARI 4.0 - 8.0 */
+    -webkit-animation: scan 5s linear 0s infinite; /* SAFARI 4.0 - 8.0 */
 }
-.terminal-text{
-    color: rgba(242, 242, 242, 0.9);
-    padding-top: 34%;
-    padding-left: 3em;
-    padding-right: 3em;
-    font-family: Lucida Console, Monaco, monospace;
-    font-size: 110%;
-}
-    
+
 /* SAFARI 4.0 - 8.0 */
 @-webkit-keyframes scan{
     from{ transform: translateY(-10%); }
-    to{  transform: translateY(2000%); }
+    to{ transform: translateY(2000%); }
 }
 
 /* DIV BLOCKS */
 .log{
-    background-color: #fafafa; 
+    background-color: #fafafa;
     box-shadow: 0 2px 4px rgba(75, 75, 75, .5);
-    padding: .427em; 
-    margin: .183em;
+    padding: .5em;
+    margin: .25em;
 }
-.quote-block{ 
-    background-color: #fafafa; 
+.log-bg{
+    background-color: #1F083A; 
+    text-align: center;
+}
+.quote-block{
+    background-color: #fafafa;
     box-shadow: 0 2px 4px rgba(75, 75, 75, .5);
-    padding: .25em 1em;
-    margin: .183em;
-    color: gray;
+    padding: .5em;
+    margin: .25em;
     font-weight: bold;
+    color: gray;
 }
-.recording-block{
+div.recording-block{
     border: 3px double #999;
     background-color: #f4f4f4;
-    padding: .25em 1em;
-    margin-bottom: 1em;
+    padding: 0 1em;
+    margin: 1em 3em;
+}
+ @media (max-width: 479px){
+     div.recording-block{
+         margin: 1em 0;
+    }
+}
+ @media (min-width: 480px) and (max-width: 580px){
+     div.recording-block{
+         margin: .5em;
+    }
 }
 .raisa-block{
--moz-margin-start: 0;
--webkit-margin-start: 0;
--webkit-margin-before: 1em;
--webkit-margin-after: 1em;
--moz-margin-end: 0;
--webkit-margin-end: 0;
     border: 1px solid #d60000;
-    padding: .732em;
-    background-clip: padding-box; /* IE9+ support */
+    border-radius: .78em;
     background-color: #e8e8e8;
-    border-radius: .61em;
+    background-clip: padding-box; /* IE9+ support */
     box-shadow:
     0 0 0 4px hsl(0, 0%, 80%),
     0 0 0 7px hsl(0, 0%, 90%);
+    padding: .93em;
+ -moz-margin-start: 0;
+ -moz-margin-end: 0;
+ -webkit-margin-start: 0;
+ -webkit-margin-before: 1em;
+ -webkit-margin-after: 1em;
+ -webkit-margin-end: 0;
+}
+.related-flex{
+    display: flex;
+    justify-content: center;
+}
+.related{
+    border: 4px solid rgba(150, 150, 150, .5);
+    background: linear-gradient(10deg, rgba(150, 150, 150, .1), rgba(150, 150, 150, 0));
+    padding: 0 1em;
+    margin: 1em 0;
 }
 
 /* FORMATTING */
-.collapsible-block-link{ font-weight: bold; }
-hr{
-     margin: 1em 0;
-     padding: 0;
-     border: 0;
-}
+a.collapsible-block-link{ font-size: 120%; }
 .lite-header hr{
-    width: 45%;
-    margin: auto;
-    background-color: #dedede;
+    display: block;
     border: none;
+    background-color: #d9d9d9;
+    margin: auto;
     height: 2px;
+    width: 45%;
 }
 .h2, .h3{
-    margin: 0.5em 0 0.4em;
+    margin: .5em 0 .4em;
     padding: 0;
     letter-spacing: 1px;
     font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
 }
-.h2{
-    font-size: 150%;
-}
+.h2{ font-size: 150%; }
 .h3{
     font-size: 130%;
     font-weight: bold;
     color: #1E122B;
 }
 .spangles{
-    color: #fff;
-    background: #000;
+    color: #f2f2f2;
+    background: #0c0c0c;
 }
 [[/module]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
 
 [[div class="terminal"]]
 [[div class="scanline"]]
 [[/div]]
 [[div class="terminal-text"]]
-[[span class="h3" style="color: rgba(242, 242, 242, 0.9); word-break: unset;"]]{{NOTICE from the Department of Pataphysical & Digital Archivists}}[[/span]]
+[[span class="h3" style="font-family: "Lucida Console", Monaco, monospace; color: rgba(242, 242, 242, .9); word-break: unset;"]]NOTICE from the Department of Pataphysical & Digital Archivists[[/span]]
 
 = [[span style="color: #f87963; word-break: unset;"]]Advertisement-based inoculation disseminated.[[/span]]
-
-[[div style="border-bottom: 1px solid rgba(242, 242, 242, 0.9);"]]
-[[/div]]
-
-//Need containment insurance? We've got you covered. **South-Central Protective Services**, protecting you against malignant Fae hexes, hemovore invasions, and flesh-eating Sarkic rituals since 1826.//
-
-[[div style="border-bottom: 1px solid rgba(242, 242, 242, 0.9);"]]
-[[/div]]
-
+----
+//Need containment insurance? We've got you covered.// **South-Central Protective Services**//, protecting you against malignant Fae hexes, hemovore invasions, and flesh-eating Sarkic rituals since 1826.//
+----
 = [[span style="color: #f87963; word-break: unset;"]]Advertisement-based inoculation complete. Beginning biometric and neural scan.[[/span]]
-
-[[div style="border-bottom: 1px solid rgba(242, 242, 242, 0.9);"]]
-[[/div]]
-
-~$ **Simurgh.aic:** [[span style="color: #f87963;"]]nominal.[[/span]]
-~$ **Last login:** [[span style="color: #f87963;"]]2024-02-29 @ 06:45 PM (UTC-5)[[/span]]
-~$ **Memetic advertisements tracked and quarantined:** [[span style="color: #f87963;"]] 45214.[[/span]]
-~$ **Anti-infiltration detection:** [[span style="color: #f87963; word-break: unset;"]]nominal.[[/span]]
+----
+~$ **Simurgh.aic:** [[span style="color: #f87963;"]]nominal[[/span]]
+~$ **Last login:** [[span style="color: #f87963;"]]2024-02-28 @ 06:45 PM (UTC−05)[[/span]]
+~$ **Memetic advertisements tracked and quarantined:** [[span style="color: #f87963;"]] 45,214[[/span]]
+~$ **Anti-infiltration detection:** [[span style="color: #f87963; word-break: unset;"]]nominal[[/span]]
 ~$ **Accessing intSCPFN:/files/SCP-3739/SPOILED_MILK_SEQUENCE**
-
-[[div style="border-bottom: 1px solid rgba(242, 242, 242, 0.9);"]]
-[[/div]]
-
+----
 = [[span style="color: #f87963; word-break: unset;"]]Biometric and neural scan complete. Inoculation complete! You may proceed.[[/span]]
 [[/div]]
 [[/div]]
 
-[[div class="log"]]
-[[collapsible show="▶ Simurgh.aic: SCP-3739-1 Quarantine History" hide="▼ Simurgh.aic: SCP-3739-1 Quarantine History"]]
+[[div class="log" style="color: gray;"]]
+[[collapsible show="▷ SIMURGH.aic: SCP-3739-1 Quarantine History" hide="△ Viewing secured"]]
 
-[[span style="color: gray; word-break: unset;"]]**//"Expect a 5% drop of lactic optimization in your lactose tolerance! Buy all yeast shares, all yeast shares, all yeast shares."//** -- 2024-02-28 @ 9:56 PM (UTC-5)[[/span]]
-@@ @@
-[[span style="color: gray; word-break: unset;"]]**//"If the Moon is made of cream cheese, we'll sell it!"//** -- 2024-02-28 @ 10:43 PM (UTC-5)[[/span]]
-@@ @@
-[[span style="color: gray; word-break: unset;"]]**//"Milk! The Meaning of Life."//** -- 2024-02-29 @ 12:01 AM (UTC-5)[[/span]]
-@@ @@
-[[span style="color: gray; word-break: unset;"]]**//"You'll Wonder Where the Red Went When You Brush Your Teeth with Moosphere Fresh Dreams™!"//** -- 2024-02-29 @ 02:17 AM (UTC-5)[[/span]]
-@@ @@
-[[span style="color: gray; word-break: unset;"]]**//"Makes Children and Adults as Swollen as Cows!"//** -- 2024-02-29 @ 04:00 AM (UTC-5)[[/span]]
+[[span style="word-break: unset;"]]**//"Expect a 5% drop of optimization in your lactose tolerance! Buy all yeast shares, all yeast shares, all yeast shares."//** -- 2024-02-28 @ 9:56 PM (UTC−05)[[/span]]
+
+[[span style="word-break: unset;"]]**//"If the Moon is made of cream cheese, we'll sell it!"//** -- 2024-02-28 @ 10:43 PM (UTC−05)[[/span]]
+
+[[span style="word-break: unset;"]]**//"Milk! The Meaning of Life."//** -- 2024-02-29 @ 12:01 AM (UTC−05)[[/span]]
+
+[[span style="word-break: unset;"]]**//"You'll Wonder Where the Red Went When You Brush Your Teeth with Moosphere Fresh Dreams™!"//** -- 2024-02-29 @ 02:17 AM (UTC−05)[[/span]]
+
+[[span style="word-break: unset;"]]**//"Makes Children and Adults as Swollen as Cows!"//** -- 2024-02-29 @ 04:00 AM (UTC−05)[[/span]]
 [[/collapsible]]
 [[/div]]
 
@@ -252,57 +250,54 @@ hr{
 [[table style="border: none; width: 100%;"]]
 [[row]]
 [[cell]]
-[[span style="font-size: 125%;"]][[span style="font-weight: 900;"]]ITEM NUMBER:[[/span]] SCP-3739[[/span]]
+[[span style="font-size: 120%;"]][[span style="font-weight: 900;"]]ITEM NUMBER:[[/span]] SCP-3739[[/span]]
 [[/cell]]
 [[cell style="text-align: right;"]]
-[[span style="font-weight: 900; font-size: 125%;"]]LEVEL 4/3739[[/span]]
+[[span style="font-weight: 900; font-size: 120%;"]]LEVEL 4/3739[[/span]]
 [[/cell]]
 [[/row]]
 [[row]]
 [[cell]]
-[[span style="font-size: 125%;"]][[span style="font-weight: 900;"]]CONTAINMENT CLASS:[[/span]] KETER[[/span]]
+[[span style="font-size: 120%;"]][[span style="font-weight: 900;"]]CONTAINMENT CLASS:[[/span]] KETER[[/span]]
 [[/cell]]
 [[cell style="text-align: right;"]]
-[[span style="font-weight: 900; font-size: 125%;"]]SECRET[[/span]]
+[[span style="font-weight: 900; font-size: 120%;"]]SECRET[[/span]]
 [[/cell]]
 [[/row]]
 [[/table]]
 
-[[include component:floppy-disruption-bar
+[[include :scp-wiki:component:floppy-disruption-bar
 |disruption-class=ekhi
 |disruption-bg-color=rgb(189, 82, 0)
 |disruption-text-color=rgb(252, 252, 252)
 ]]
 ----
-[[div class="scp-image-block block-center" style="width: 100%;"]]
-[[image snejanka-cave.png style="width: 100%;" link=#]]
-[[div class="scp-image-caption" style="width: 100%;"]]
-[[span style="font-size: 120%;"]]A natural Moosphere, Inc. cave udder, photographed via VERITAS Resonance Imaging (right).[[/span]]
-[[/div]]
-[[/div]]
+[[include component:image-block name=snejanka-cave.png|align=center|width=100%|caption=[[span style="font-size: 120%;"]]A natural [[span style="color: #407fbf; font-weight: bold; font-family: Tahoma;"]]Moosphere, Inc.[[/span]] cave udder, photographed via VERITAS Resonance Imaging (right).[[/span]]]]
 ----
-**Special Containment Procedures:** Containment of SCP-3739 is focused on the introduction of a stable competitor product to gain a foothold in the paranormal market.[[footnote]]This market, as it pertains to the dairy industry, consists of the following competitors: Moosphere, Inc., [[[ambrose-thorn-valley|Ambrose Thorn Valley]]], [[[scp-4525|dado go]]], etc.[[/footnote]] To this end, Foundation front company [[[scp-3787|Stratford Cattle Productions]]][[footnote]]**Stratford Cattle Productions:** A parascientific bovine research firm and designer cattle farm.[[/footnote]] is to manufacture and market a legally safe anomalous dairy product. Cattle engineers are to distill dairy milk using bovine gene pool manipulation techniques and conceptual form separation. The Department of Economics is to reintroduce 13% of all revenue into Stratford Cattle Productions, and 87% into various other Foundation revenue streams.
+**Special Containment Procedures:** Containment of SCP-3739 is focused on the introduction of a stable competitor product to gain a foothold in the paranormal market.[[footnote]] This market, as it pertains to the dairy industry, consists of the following competitors: [[span style="color: #407fbf; font-weight: bold; font-family: Tahoma;"]]Moosphere, Inc.[[/span]], [[[ambrose-thorn-valley|Ambrose Thorn Valley]]], [[[scp-4525|dado go]]], etc. [[/footnote]] To this end, Foundation front company [[[scp-3787|Stratford Cattle Productions]]][[footnote]] **Stratford Cattle Productions:** A parascientific bovine research firm and designer cattle farm. [[/footnote]] is to manufacture and market a legally safe anomalous dairy product. Cattle engineers are to distill dairy milk using bovine gene pool manipulation techniques and conceptual form separation. The Department of Economics is to reintroduce 13% of all revenue into Stratford Cattle Productions, and 87% into various other Foundation revenue streams.
 
-Meatspace Transitional Suppressor (or MEATS) purification filters are to replace normative methods and technologies used for gauging bovine health by 2025. Clinical trials and filter prototyping are to continue at Site-82 Command. 
+Meatspace Transitional Suppressor purification filters (or MEATS) are to replace normative methods and technologies used for gauging bovine health by 2025. Clinical trials and filter prototyping are to continue at Site-82 Command. 
 ----
-**Description:** SCP-3739 is a cognitohazardous vector spreading into human perception via hidden advertisements targeting the paranormal market. SCP-3739 manifests from the human noosphere[[footnote]]**Noosphere:** [[[scp-3662|the sphere of human thought.]]] For more information on the ecosystem of memes, see: Hoygull, F. (2015). Memetics and Chill: The Power Of Virulent Thoughtforms. //SCP Foundation Journal of Memetics and Informational Hazards, 48//(3), 192–207.[[/footnote]] as the corporation [[span style="color: #407fbf; font-weight: bold;"]]Moosphere, Inc.[[/span]]: A gestalt thought-based dairy company threatening an impending CK-Class restructuring event.
+**Description:** SCP-3739 is a cognitohazardous vector spreading into human perception via hidden advertisements, which target the worldwide paranormal market. SCP-3739 manifests from the human noosphere[[footnote]] **Noosphere:** [[[scp-3662|The sphere of human thought.]]] For more information on the ecosystem of memes, see: Hoygull, F. (2015). Memetics and Chill: The Power of Virulent Thoughtforms. //SCP Foundation Journal of Memetics and Informational Hazards, 48//(3), 192–207. [[/footnote]] as the company [[span style="color: #407fbf; font-weight: bold;"]]Moosphere, Incorporated[[/span]]: A gestalt thought-based dairy corporation threatening an impending CK-Class restructuring event.
 
-Moosphere uses microscopy technologies -- ordinarily used to transmit images visible only at 300 microns -- to produce invasive cognitohazardous catchphrases (designated SCP-3739-1). SCP-3739-1 instances are brand archetypes, anchoring themselves onto symbols and signals already embedded in the consciousness of humanity. Transmission occurs when subjects are unconscious: The bovine motifs and SCP-3739 archetypes are only visible in REM sleep. 
+Moosphere uses microscopy technologies -- ordinarily used to transmit images visible only at 300 microns -- to produce invasive cognitohazardous catchphrases (designated SCP-3739-1). SCP-3739-1 instances are brand archetypes that anchor themselves onto symbols and signals already embedded in the consciousness of humanity. Transmission occurs when humans are unconscious: SCP-3739's archetypes and its related bovine motifs are only visible in REM sleep. 
 
-[[include :scp-sandbox-3:image-zoom name=10_small_subunit.gif |caption=Digital reconstruction of milk curdle build-up (blue). |width=200px|align=right]]
+[[include :scp-sandbox-3:image-zoom name=10_small_subunit.gif |caption=[[span style="font-size: 120%;"]]Digital reconstruction of milk curdle build-up (blue).[[/span]]|width=200px|align=right]]
 
-Moosphere's mass neurological advertisement campaign connects to a chain of legitimate products -- both real and dream-based -- produced by the human subconscious and esoteric sources. A significant sum of Moosphere's product comes from the neural and memetic pathways of its market base. 
+Moosphere's mass neurological advertisement campaign connects to a chain of legitimate products -- both real and dream-based -- produced by the human subconscious and esoteric sources. A significant sum of Moosphere's products come from the neural and memetic pathways of its market base.[[footnote]] **Market base:** The total amount of consumers who use or may potentially use a company's goods or services. [[/footnote]]
 
-Moosphere ectoentropically generates 31% of its flagship product, Mind-Milk™, from the hypothalamus and pineal gland (hormone release centers) respectively, while a metaphysical source secretes the remaining 69%. Regular consumers of Moosphere products develop milk curdle build-up on portions of cerebral tissue, which further influences consumers to use Moosphere products but does not otherwise negatively affect consumer health.
+Moosphere ectoentropically generates 31% of its flagship product, Mind-Milk™, from the hypothalamus and pineal gland (hormone release centers) respectively, while a metaphysical source secretes the remaining 69%. Regular consumers of Moosphere products develop milk curdle build-up on portions of cerebral tissue, which further influences consumers to use Moosphere products but does not otherwise negatively affect their health.
 
-[[div class="log"]]
-[[collapsible show="▶ WARNING: Memetic Ad Quarantined" hide="▼ Viewing secured."]]
 @@ @@
+
+[[div class="log" style="color: gray;"]]
+[[collapsible show="▷ WARNING: Memetic Ad Quarantined" hide="△ Viewing secured"]]
+
 [[>]]
-[[span style="color: gray;"]]**Flagged** on 2024-02-29 @ 07:00 AM (UTC-5)[[/span]]
+**Flagged** on 2024-02-29 @ 08:00 AM (UTC−05)
 [[/>]]
 
-[[image final_ad_1.png style="width:100%;" link=#]]
+[[image final_ad_1.png style="width: 100%;"]]
 
 [[/collapsible]]
 [[/div]]
@@ -320,7 +315,7 @@ Moosphere ectoentropically generates 31% of its flagship product, Mind-Milk™, 
 
 Site-82's Memetics Research Group C mail-ordered Moosphere company products for testing. Researchers selected Chocolate Mind-Milk™ due to its popularity and unique production process. Testing occurred with the goal of understanding Moosphere's use of literary archetypes in marketing, manufacturing, and product sales.
 
-Each Chocolate Mind-Milk™ packaging contains[[footnote]]Alongside a dairy-based pun on the carton inset.[[/footnote]] the text "[[span style="font-family: Tahoma;"]]What was your Mind-Milk™ experience like?[[/span]]" with an attached phone number. Researchers consumed the product daily (before a full night's rest) over a 10-day period. Personnel noted any recurring dreams or motifs in a Standard Dream Report before relaying them to the phone line.
+Each Chocolate Mind-Milk™ packaging contained[[footnote]] Alongside a dairy-based pun on the carton inset. [[/footnote]] the text "What was your Mind-Milk™ experience like?" with an attached phone number. Researchers consumed the product daily (before a full night's rest) over a 10-day period. Personnel noted any recurring dreams or motifs in a Standard Dream Report before relaying them to the phone line.
 
 Within two to five business days, each of the researchers encountered the following archetypal representations:
 
@@ -332,10 +327,10 @@ Within two to five business days, each of the researchers encountered the follow
 ||~ Moosphere manifestation||See Addendum 3739.4.||
 ||||~ Archetype 08: Wounded Child||
 ||~ Moosphere expression||Child Curdles/Coagulated Children||
-||~ Moosphere manifestation||A group of 15 "Child Curdles" appeared at the Research Group Supervisor's home at 4:07am. All subjects had varying levels of injuries and appeared as golden age animated cartoon characters.[[footnote]] Hand-drawn, rubberhose animation dating back to the 1920s.[[/footnote]] One of the instances, self-identifying as "Creamy Charlie" (SCP-3739-1-C), recounted dairy-themed parables at 90 dB. Notably, the Supervisor's daughter, age 7, was diagnosed with hypocalcaemia[[footnote]]**Hypocalcaemia:** A medical condition wherein a patient has too little calcium in the blood.[[/footnote]] three weeks prior.||
+||~ Moosphere manifestation||A group of 15 "Child Curdles" (SCP-3739-1-C) appeared at the Research Group Supervisor's home at 4:07 AM. All subjects had varying levels of injuries and appeared as golden age animated cartoon characters.[[footnote]] Hand-drawn, rubber hose animation dating back to the 1920s. [[/footnote]] One of the instances, self-identifying as "Creamy Charlie", recounted dairy-themed parables at 90 decibels. Most notably, the Supervisor's daughter, age 7, was diagnosed with hypocalcemia[[footnote]] **Hypocalcemia:** A medical condition wherein a patient has too little calcium in the blood. [[/footnote]] three weeks prior.||
 ||||~ Archetype 14: The Flood||
 ||~ Moosphere expression||{{N/A}}||
-||~ Moosphere manifestation||Researcher Mathias dreamt of a biblical flood sending tsunamis of milk into population centers. Upon reporting the motif to the phone line, an automated voice said "Please hold" before expelling milk from the receiver at 1 L per minute. This ended after five minutes when Mathias severed the phone line. Dream aligns with designated MF-Class "Spilled Milk" Scenario on the catastrophe classification list.||
+||~ Moosphere manifestation||Researcher Mathias dreamt of a biblical flood sending tsunamis of milk into population centers. Upon reporting the motif to the phone line, an automated voice said "Please hold" before expelling milk from the receiver at 1 L/minute. This ended after five minutes when Mathias severed the phone line. Dream aligns with designated MF-Class "Spilled Milk" Scenario on the catastrophe classification list.||
 
 @@ @@
 [[div class="lite-header"]]
@@ -348,36 +343,36 @@ Within two to five business days, each of the researchers encountered the follow
 [[/div]]
 @@ @@
 
-[[include :scp-sandbox-3:image-zoom name=aswan-low-dam.png |caption=Aswan Low Dam c. 1906 (hover to enlarge). |width=300px|align=right]]
+[[include :scp-sandbox-3:image-zoom name=aswan-low-dam.png |caption=[[span style="font-size: 120%;"]]Aswan Low Dam c. 1906 (hover to enlarge).[[/span]]|width=300px|align=right]]
 
-Egyptian Foundation personnel were first alerted to SCP-3739-1-type neural advertising during the October 1952 survey of the upper Suez Canal. While conducting initial geological testing for the Aswan Low Dam renovation, Suez Canal Company workers accidentally breached an underwater chamber, releasing a flow of viscous white liquid. Workers 15 meters from the Lake Nasser embankment made physical contact with the liquid, experiencing immediate glossolalia.[[footnote]]**Glossolalia:** The phenomenon of speaking in an unknown language; known colloquially as "speaking in tongues."[[/footnote]]
+Egyptian Foundation personnel first became aware of SCP-3739-1-type neural advertising during the October 1952 survey of the upper Suez Canal. While conducting initial geological testing for the Aswan Low Dam renovation, Suez Canal Company workers accidentally breached an underwater chamber, releasing a flow of viscous white fluid. Workers 15 meters from the Lake Nasser embankment made physical contact with the fluid and experienced immediate glossolalia.[[footnote]] **Glossolalia:** The phenomenon of speaking in an unknown language. Known colloquially as "speaking in tongues." [[/footnote]]
 
-Language interpretation officials[[footnote]]The Suez Canal Company employed a multitude of national and international specialists during its pre-Suez Crisis management of the Suez Canal region, which includes American, British, French, Saudi, and Egyptian nationals.[[/footnote]] identified the glossolalia as pre-Ptolemaic Era Egyptian. The phenomenon affected one Maat Mohamed (designated POI-11366) for the next three days. Mohamed later underwent medical evacuation at St. Sophia's Asylum -- a Foundation-owned medical facility -- under the guise of demonic possession affecting his memetic health. He became the first recorded vector for SCP-3739-1 phenomena.
+Language interpretation officials[[footnote]] The Suez Canal Company employed a multitude of national and international specialists during its pre-Suez Crisis management of the Suez Canal region, which includes American, British, French, Saudi, and Egyptian nationals. [[/footnote]] identified the glossolalia as pre-Ptolemaic Era Egyptian. The phenomenon affected one Maat Mohamed (designated Person of Interest #11366) for the next three days. Mohamed later underwent medical evacuation at St. Sophia's Asylum -- a Foundation-owned medical facility -- under the guise of demonic possession affecting his memetic health. He became the first recorded vector for SCP-3739-1 phenomena.
 
 The following is a translated excerpt of a key phrase spoken by Mohamed:
 
 [[div class="quote-block"]]
-"//Bat,[[footnote]]**Bat:** The name of a Middle Egyptian goddess associated with femininity and fertility, typically depicted as a cow or ox.[[/footnote]] my Earthly mother. She leads me out of the [sphincter/depths] of my head. She says it is [nutritious/good]. Should I [siphon/exploit] the teat? Why?//"
+"//Bat,[[footnote]] **Bat:** The name of a Middle Egyptian goddess associated with femininity and fertility, typically depicted as a cow or ox. [[/footnote]] my Earthly mother. She leads me out of the [sphincter/depths] of my head. She says it is nutritious. Should I [siphon/exploit] the teat? Why?//"
 [[/div]]
 
-Whilst in the recreational room at St. Sophia's Asylum, Mohamed imitated marketing jargon from commercials and shows played on television. He produced SCP-3739-1 marketing jargon after viewing Coca-Cola advertisements.[[footnote]]Corporate advertisements used minor compulsion memetics (which POI-11366 was likely affected by) until the UNGOC Extranormal Advertisement Act passed in 1961. Moosphere falls outside legal jurisdiction due to its location in metaphysical space.[[/footnote]] A week into his inpatient stay, Mohamed lactated, flooding his room. Mohamed displayed no further anomalous properties over the course of his month-long psychiatric containment. 
+Whilst in the recreational room at St. Sophia's Asylum, Mohamed imitated marketing jargon from commercials and shows played on television. He produced SCP-3739-1 marketing jargon after viewing Coca-Cola advertisements.[[footnote]] Corporate advertisements used minor compulsion memetics (which POI-11366 was likely affected by) until the UNGOC Extranormal Advertisement Act passed in 1961. Moosphere falls outside legal jurisdiction due to its location in metaphysical space. [[/footnote]] A week into his inpatient stay, Mohamed lactated, flooding his room. Mohamed displayed no further anomalous properties over the course of his month-long psychiatric containment. 
 
 Three months after his release, Mohamed fled Egypt, escaping Foundation surveillance. Local law enforcement discovered his apartment abandoned, containing the following materials:
 
-* Publications by Fyodor Dostoevsky and Sigmund Freud. 
-* Books on cattle farming and entrepreneurship.
-* Several documents indicating plans to establish a dairy farm.
-* A bathroom containing 200 L of curdled milk in the sinks, toilet, and bathtub.
+# Publications by Fyodor Dostoevsky and Sigmund Freud. 
+# Books on cattle farming and entrepreneurship.
+# Several documents indicating plans to establish a dairy farm.
+# A bathroom containing 200 liters of curdled milk in the sinks, toilet, and bathtub.
 
 The Foundation became aware of Moosphere in 2014 following a sudden influx of online and television advertisements flagged with memetic and cognitohazardous properties. The advertisements drew a similarity to POI-11366's behavior, prompting a formal investigation. The Department of Analytics tracked Moosphere company presence for several years but could not locate physical operation locations.
 
-As of mid-2023, Moosphere has amassed a total global workforce of 61,000 employees. With anomalous control of 1% of the Noospheric market share, their product manufacturing output has a capacity 100 times a company of its size.
+As of 2023, Moosphere has reported a total global workforce of 61,000 employees. With anomalous control of an estimated 1% of the noospheric market share, their product manufacturing output has a capacity 100 times a company of its size.
 
-In June 2023, Analytics Management deployed field operatives -- impersonating FDA inspectors -- to multiple Eastern Wisconsin dairy farms flagged with irregularities. The following is one such inspection.
+In June 2023, Analytics Management deployed field operatives (impersonating FDA inspectors) to multiple Eastern Wisconsin dairy farms flagged with irregularities. The following is one such inspection.
 
-[[div style="background-color: #1F083A; text-align: center;"]]
+[[div class="log-bg"]]
 [[div class="log"]]
-[[collapsible show="▶ Recovery Log 3739.2 ◀" hide="▼ Recovery Log 3739.2 ▼"]]
+[[collapsible show="▷ Recovery Log 3739.2 ◁" hide="△ Recovery Log 3739.2 △"]]
 [[/div]]
 [[div style="text-align: left;"]]
 [[=]]
@@ -386,7 +381,7 @@ In June 2023, Analytics Management deployed field operatives -- impersonating FD
 ----
 = **[BEGIN LOG]**
 ----
-//(NOTE: Keys for format  --  Time | Source of Sound)//
+//(NOTE: Keys for format:  Time | Source of Sound)//
 
 **0m 00s |** //[Field Agents Smith and Wollensky are inside a police car, driving on roads intersecting cornfields and distant barns. They pass fence posts outlining a ranch where ranchers wrangle up grazing cattle. A black warehouse, brown domicile, and red-walled livestock facility come into view. Wollensky eases the ignition and halts the vehicle near the facility before they both dismount.]//
 
@@ -404,63 +399,63 @@ In June 2023, Analytics Management deployed field operatives -- impersonating FD
 
 **1m 54s | Gordon:** You can call me Curdles the Cow for all I care. I just want to get back to work.
 
-**2m 04s | Smith:** This'll be a real quick inspection. 
+**2m 02s | Smith:** This'll be a real quick inspection. 
 
-**2m 07s | Gordon:** Right.
+**2m 04s | Gordon:** Right.
 
-**2m 08s | Smith:** We'll hardly take much of your time. Hell, we passed by a Costco on the way here, so if you fine gents want some Coors Light after toiling in the sun all day, you can have some. We had a few cases we were taking back for tonight anyway. 
+**2m 07s | Smith:** We'll hardly take much of your time. Hell, we passed by a Costco on the way here, so if you fine gents want some Coors Light after toiling in the sun all day, you can have some. We had a few cases we were taking back for tonight anyway. 
 
-**2m 27s | Gordon:** That right? 
+**2m 25s | Gordon:** That right? 
 
-**2m 29s | Smith:** Absolutely, Gordon. Free of charge.
+**2m 27s | Smith:** Absolutely, Gordon. Free of charge.
 
-**2m 32s | Gordon:** Well bud, if that's the case, consider that smudge of manure near the entrance your "welcome mat." I'll show you around.
+**2m 30s | Gordon:** Well bud, if that's the case, consider that smudge of manure near the entrance your "welcome mat." I'll show you around.
 
-**2m 40s | Smith:** Wollensky's going to take a look at things out back near the warehouse. Again, for the sake of expediency. 
+**2m 38s | Smith:** Wollensky's going to look at things out back near the warehouse. Again, for the sake of expediency. 
 
-**2m 48s |** //[Gordon gestures his hand toward the livestock facility, and Smith proceeds inside. Wollensky paces toward the black warehouse while nearby farmhands congregate, throwing brief glances at the agent. Wollensky's headset picks up children's laughter, but his body camera displays no children.]//
+**2m 45s |** //[Gordon gestures his hand toward the livestock facility, and Smith proceeds inside. Wollensky paces toward the black warehouse while nearby farmhands congregate, throwing brief glances at him. Wollensky's headset picks up children's laughter, but his body camera displays no children.]//
 
 **3m 19s | Gordon:** You're here 'cause of that weird CGI Photoshop nonsense they got on LiveLeak, ain't you?
 
-//[Whilst speaking, Gordon gesticulates. His right palm brushes against Smith's body camera and video capture becomes obfuscated with a sticker of Jackie the Clown Cow. Audio reception from the headset remains operational. Smith fails to notice.]//
+//[Whilst speaking, Gordon gesticulates. His right palm brushes against Smith's body camera. Video capture becomes obfuscated with a sticker of Jackie the Clown Cow. Audio reception from the headset remains operational. Smith fails to notice.]//
 @@ @@
 ----
 @@ @@
-||~ SMITH'S POV - AUDIO ONLY||
+||~ SMITH'S POV | AUDIO ONLY||
 
 **3m 25s | Smith:** Pardon?
 
-**3m 26s | Gordon:** I can assure you, that was Dave. Always used to believe in "guerrilla marketing", that man. Look, I can tell you this: Our quality assurance has gone untarnished for twenty-some-odd years. 
+**3m 26s | Gordon:** I can assure you, that was Dave. Always used to believe in "guerrilla marketing," that man. Look, I can tell you this: Our quality assurance has gone untarnished for twenty-some-odd years. 
 
-**3m 38s | Smith:** Dave? 
+**3m 38s | Smith:** //Dave?//
 
-**3m 40s | Gordon:** //[Gordon chortles.]// My //former// partner in crime.
+**3m 40s | Gordon:** //[He chuckles.]// My //former// partner in crime.
 
-**3m 43s | Smith:** Registrar indicated he bought the farm first before dual-ownership.
+**3m 45s | Smith:** Registrar indicated he bought the farm first before dual-ownership.
 
-**3m 46s | Gordon:** It's just me now. Dave had a run-in with corporate. Nice guy and all, but he had to transfer.
+**3m 49s | Gordon:** It's just me now. Dave had a run-in with corporate. Nice guy and all, but he had to transfer.
 
-**3m 51s | Smith:** While the "advertisement" he marketed is a... Concern that I'll bring up later, we're primarily here for -- well, let's see. //[Smith pauses.]// Ah, loud noises heard in the middle of the night, run-off going into the lake over yonder. The one you use, that is. That sort of thing.
+**3m 57s | Smith:** While the "advertisement" he marketed is a... Concern that I'll bring up later, we're primarily here for -- well, let's see. //[Pause.]// Ah, loud noises heard in the middle of the night, run-off going into the lake over yonder. The one you use, that is. That sort of thing.
 
-**4m 07s | Gordon:** Complaints? By whom?
+**4m 14s | Gordon:** Complaints? By whom?
 
-**4m 10s | Smith:** Can't say, Gordon. I actually also have a missing person's report on your business partner. //Dave//, isn't it?
+**4m 17s | Smith:** //[Pause.]// Can't say, Gordon. I actually got a missing person's report on your business partner. //Dave//, isn't it?
 @@ @@
 ----
 @@ @@
 ||~ WOLLENSKY'S POV||
 
-**4m 04s | Unidentified Farmhand:** We use the most up-to-date technology to produce the finest four gallons of dairy product this side of the state. Prior to pasteurization, even! Ever taste it raw before?
+**4m 23s | Unidentified Farmhand:** We use the most up-to-date technology to produce the finest four gallons of dairy product this side of state. Before we pasteurize it, even! Ever taste it raw?
 @@ @@
 ----
 @@ @@
-||~ SMITH'S POV -- AUDIO ONLY||
+||~ SMITH'S POV | AUDIO ONLY||
 
-**4m 10s | Gordon:** //[Toneless.]// It's Mister Kazinsky to you. 
+**4m 24s | Gordon:** //[Toneless.]// It's Mister Kazinsky to you. 
 
-**4m 13s | Smith:** Now isn't that shooting yourself in the foot?
+**4m 27s | Smith:** Now isn't that shooting yourself in the foot?
 
-**4m 17s | Gordon:** How you reckon?
+**4m 31s | Gordon:** How you reckon?
 
 = **<LOG CUTS UNEXPECTEDLY>**
 @@ @@
@@ -468,7 +463,7 @@ In June 2023, Analytics Management deployed field operatives -- impersonating FD
 @@ @@
 ||~ WOLLENSKY'S POV||
 
-**12m 47s |** //[The facility's slide doors are open. Farmhands commingle viscous fluids.]//
+**12m 47s |** //[The facility's slide doors are open. Farmhands mix viscous fluids of varying color.]//
 
 **12m 52s |** //[The ranchers gather around the two agents. They greet and lead them through the slide doors.]//
 
@@ -476,7 +471,7 @@ In June 2023, Analytics Management deployed field operatives -- impersonating FD
 @@ @@
 ----
 @@ @@
-||~ SMITH'S POV -- AUDIO ONLY||
+||~ SMITH'S POV | AUDIO ONLY||
 
 **41m 28s |** //[Smith is deep in conversation with Gordon and the other ranchers, querying how they produce their product. Ranchers relay cognitohazardous advertisement jargon to him.]//
 
@@ -484,35 +479,35 @@ In June 2023, Analytics Management deployed field operatives -- impersonating FD
 @@ @@
 ----
 @@ @@
-||~ WOLLENSKY'S POV -- VIDEO ONLY|| 
+||~ WOLLENSKY'S POV | VIDEO ONLY|| 
 
-[[include :scp-sandbox-3:image-zoom name=Creepy_way_in_imambara.jpg |caption=Image captured by Wollensky's camera, time-stamped 3h 35m 15s. |width=300px|align=right]]
+[[include :scp-sandbox-3:image-zoom name=Creepy_way_in_imambara.jpg |caption=[[span style="font-size: 120%;"]]Image captured by Wollensky's camera, time-stamped 3h35m15s.[[/span]]|width=300px|align=right]]
 
-**Note:** Wollensky appears to have lost his headset. His view displays visuals separate from audio. Command received the audio with high amounts of white noise.
+**NOTE:** Wollensky appears to have lost his headset. His view displays visuals separate from audio. Command received the audio with high amounts of white noise.
 
-**3h 34m 51s |** //[Camera captures aged concrete walls inked in white hieroglyphics. Wollensky moves forward, shining his flashlight onto dusty IBM 702 computers stationed on plastic-folding tables, each divided by cubicle walls. The camera pans downward and captures puddles of viscous white liquid on hay-covered floors and manure.]//
+**3h 34m 51s |** //[Camera captures aged concrete walls inked in white hieroglyphics. Wollensky moves forward and shines his flashlight onto dusty IBM 702 computers stationed on plastic-folding tables, each divided by cubicle walls. The camera pans downward and captures puddles of white liquid on hay-covered floors and manure.]//
 
 **3h 36m 04s | (COM):** //[A group of children laugh.]//
 
-**3h 36m 04s |** //[Wollensky stops, directing his mounted flashlight on a child. The camera shudders. The child giggles and shakes its head. It holds up its index finger, pointing. Wollensky rears his head toward a vacant location then turns back. The child flees, skipping across hay-covered floors and manure.]//
+**3h 36m 07s |** //[Wollensky stops, directing his mounted flashlight on a child. The camera shudders. The child giggles and shakes their head. They hold up an index finger, pointing. Wollensky rears his head toward a vacant location then turns back. The child flees, skipping across hay-covered floors and manure.]//
 
-**3h 36m 13s |** //[Wollensky follows. The child darts to the left corner. The manure displays countless footprints of varying shoe sizes impressed into it.]//
+**3h 36m 16s |** //[Wollensky follows. The child darts to the left corner. The manure displays countless footprints of varying shoe sizes impressed into it.]//
 
 = **<LOG CUTS UNEXPECTEDLY>**
 @@ @@
 ----
 @@ @@
-||~ WOLLENSKY'S POV -- VIDEO ONLY|| 
+||~ WOLLENSKY'S POV | VIDEO ONLY|| 
 
 **4h 44m 41s |** //[Unknown person(s) apply a hot glue gun from above view. Wollensky's arms struggle against fifteen small, pale arms pressing against him. The body camera falls to his feet.]//
 
-**4h 44m 58s |** //[Copious amounts of milk drip from Wollensky's ears.]//
+**4h 44m 58s |** //[A copious amount of white liquid drips from Wollensky's ears.]//
 
 = **<LOG CUTS UNEXPECTEDLY>**
 @@ @@
 ----
 @@ @@
-||~ UNKNOWN CONTEXT -- AUDIO ONLY|| 
+||~ UNKNOWN CONTEXT | AUDIO ONLY|| 
 
 **??h ??m ??s | (COM):** //[Gurgling sounds emit for approximately 12 hours. Various moans, bovine and human, are audible periodically. This occurs until the audio equipment runs out of battery.]//
 ----
@@ -522,21 +517,23 @@ In June 2023, Analytics Management deployed field operatives -- impersonating FD
 ++++ __RAISA POST-INVESTIGATION NOTICE__
 [[/=]]
 
-When a retrieval task force arrived at the farmland, the facilities were vacant, save for an undulating 1.7-meter-wide udder. The udder, branded with the initials "M.M." on its lower-end, emitted male vocalizations akin to sobbing.
+When a retrieval task force arrived at the farmland, the facilities were vacant, save for an undulating 1.7-meter-wide udder. The udder, branded with the initials "M.M." on its lower end, emitted male vocalizations akin to sobbing.
 
 The current whereabouts of Agents Smith and Wollensky are unknown.
 [[/collapsible]]
 [[/div]]
 [[/div]]
+
 @@ @@
-[[div class="log"]]
-[[collapsible show="▶ WARNING: Memetic Ad Quarantined" hide="▼ Viewing secured."]]
-@@ @@
+
+[[div class="log" style="color: gray;"]]
+[[collapsible show="▷ WARNING: Memetic Ad Quarantined" hide="△ Viewing secured"]]
+
 [[>]]
-[[span style="color: gray;"]]**Flagged** on 2024-02-29 @ 07:10 AM (UTC-5)[[/span]]
+**Flagged** on 2024-02-29 @ 08:11 AM (UTC−05)
 [[/>]]
 
-[[image final_ad_2.png style="width:100%;" link=#]]
+[[image final_ad_2.png style="width:100%;"]]
 
 [[/collapsible]]
 [[/div]]
@@ -552,9 +549,9 @@ The current whereabouts of Agents Smith and Wollensky are unknown.
 [[/div]]
 @@ @@
 
-[[div style="background-color: #1F083A; text-align: center;"]]
+[[div class="log-bg"]]
 [[div class="log"]]
-[[collapsible show="▶ Interview Log 3739.3 ◀" hide="▼ Interview Log 3739.3 ▼"]]
+[[collapsible show="▷ Interview Log 3739.3 ◁" hide="△ Interview Log 3739.3 △"]]
 [[/div]]
 [[div style="text-align: left;"]]
 [[=]]
@@ -567,13 +564,13 @@ The current whereabouts of Agents Smith and Wollensky are unknown.
 
 **DATE:** June 10, 2023
 
-**NOTE:** Simurgh.aic intercepted various social media and local news outlets with advertisements connected to SCP-3739-1 phenomena. An internet forensics team back-traced the IP addresses to a defunct compound in Bellevue, Wisconsin, which was then raided by Mobile Task Force Eta-33 ("Don't Have a Cow, Man"). The unit found Jacob Drauss in a state of unconsciousness and under duress with intravenous pumps injecting viscous white liquids into his bloodstream from emptied milk containers.
+**NOTE:** Simurgh.aic intercepted various social media pages and local news articles with advertisements connected to SCP-3739-1 phenomena. An internet forensics team back-traced the IP addresses to a defunct compound in Bellevue, Wisconsin, which a unit of Mobile Task Force Eta-33 ("Don't Have a Cow, Man") members raided. The unit found Jacob Drauss in a state of unconsciousness and under duress, with intravenous pumps injecting white liquid into his bloodstream from emptied milk containers.
 ----
 = **[BEGIN LOG]**
 ----
-//[Jacob Drauss regained consciousness 90 minutes after the start of the raid. Recording begins as Drauss leaks milk from his left ear canal at an approximate rate of 400 mL per minute.]//
+//[Jacob Drauss regains consciousness 90 minutes after the start of the raid. Recording begins as Drauss leaks milk from his left ear canal at an approximate rate of 300 mL/minute.]//
 
-**Jacob Drauss:** Ah, fuck, all over the kitchen!
+**Jacob Drauss:** Ah fuck, all over the kitchen!
 
 **Dr. Michael Handler:** This is your house?
 
@@ -583,67 +580,72 @@ The current whereabouts of Agents Smith and Wollensky are unknown.
 
 //[A member of Eta-33 places a bucket at Drauss' side, catching the liquid.]//
 
-**Drauss:** We don't have time for this. They're gonna be here any minute!
+**Drauss:** We don't have time for this. They're going to be here any minute!
 
-**Dr. Handler:** Well, then, the clock is ticking, Jacob.
+**Dr. Handler:** Well then, the clock is ticking, Jacob.
 
 **Jacob Drauss:** What else do you need? You got my ID, my background check, academic certs, tungsten ring...
 
 **Dr. Handler:** My hands are tied. You'll have to play ball with us. 
 
-**Drauss:** Playing ball means I won't be able to sleep without several gallons of milk pouring out of my nostrils and mouth, goddamnit. Fuck!
+**Drauss:** Playing ball means I won't be able to sleep without several gallons of milk pouring out my nostrils and mouth, goddamnit.
 
-**Dr. Handler:** That's a risk you're willing to take. //[Dr. Handler taps on a folder on the desk.]// Freedom's right within reach, Drauss. More than I can say for those poor sods you personally trapped with memetics. //[Dr. Handler opens the folder, flipping through birth certificates and passports.]// We have a nice little home for you, out by the pier with Little Mary and Jonesy -- the four of you under a nice little carousel. You're taking out little Mary's favorite treats from a picnic basket; the sun's caressing your shoulders; the sand kernels are wedging between your toes. //[Dr. Handler slams the folder shut.]// Come on, work for it! Work for your new life.
+**Dr. Handler:** That's a risk you're willing to take. //[He taps on a folder on the desk.]// Freedom's right within reach, Drauss. More than I can say for those poor sods you personally trapped with memetics. //[He opens the folder, flipping through birth certificates and passports.]// We have a nice little home for you, out by the pier with Little Mary and Jonesy -- the four of you under a nice little carousel. You're taking out little Mary's favorite treats from a picnic basket; the sun's caressing your shoulders; the sand kernels are wedging between your toes. //[He slams the folder shut.]// Come on, work for it! Work for your new life.
 
-**Drauss:** You make sure you protect them after I'm gone, you hear? CEO's gonna kill me for revealing his secrets. //[Drauss grunts.]// There's that udder you found. At the warehouse, right?
+**Drauss:** You make sure you protect them after I'm gone, you hear? CEO's gonna assimilate me for revealing his secrets. //[He grunts.]// There's that udder you found. At the warehouse, right?
 
 **Dr. Handler:** Any others?
 
-**Drauss:** Couple. It's emergent aeonian bio-organic paratech. Or in other words -- the CEO expects his workers to become his product. Black warehouse, brown doors? With the cat poster, right? Yeah, that was Dave. Great guy, but not smart enough to avoid the CEO's ire. Tried to reveal what was going on anonymously and thought he was protected because he had fuckin' NordVPN on. //[Drauss shakes his head.]// The last message he sent me said he got "transferred."
+**Drauss:** Couple. It's emergent aeonian bio-organic paratech. Or in other words -- the CEO expects his workers to become his product. Black warehouse, brown doors? With the cat poster, right? Yeah, that was Dave. Great guy, but not smart enough to avoid the CEO's ire. Tried to reveal what was going on anonymously and thought he was protected because he had fuckin' NordVPN on. //[He shakes his head.]// The last message he sent me said he got "transferred."
 
-**Dr. Handler:** E-mails we intercepted on the company intranet confirms that message was sent not too long ago, but we couldn't trace it back to any known source. We also couldn't find any technologies capable of doing that to your friend.
+**Dr. Handler:** E-mails we intercepted on the company intranet confirm that message was sent not too long ago, but we couldn't trace it back to any known source. We also couldn't find any technologies capable of doing that to your friend.
 
-**Drauss:** That's because it's in here. //[Drauss taps his temple.]// It's like this. Imagine a valve being affixed to a piston. Or an artificial ventricle filled with blood, forming a unique mechanism capable of muscle contraction. We //dreamt up// our heat exchangers to pasteurize that damned dairy.
+**Drauss:** That's because it's in here. //[He taps his temple.]// It's like this. Imagine a valve being affixed to a piston. Or an artificial ventricle filled with blood, forming a unique mechanism capable of muscle contraction. We //dreamt up// our heat exchangers to pasteurize that damned dairy.
 
 //[A large disembodied udder manifests in the corner of the room behind Drauss.]//
 
 **Dr. Handler:** The floating udder, Drauss?
 
-**Drauss:** //[Drauss covers his face with his hands, disrupting the flow. He exhales.]// Fuck!
+**Drauss:** //[He covers his face with his hands, disrupting the flow. He exhales.]// Fuck!
 
-**Dr. Handler:** //[Aside.]// You didn't bring the MEATS,[[footnote]]**Meatspace Transitional Suppressors (MEATS):** Provisional containment modules used to contain metaphysical threats.[[/footnote]] did you?
+**Dr. Handler:** //[Aside.]// You didn't bring the MEATS,[[footnote]] **Meatspace Transitional Suppressors (MEATS):** Provisional containment modules used to contain metaphysical threats. [[/footnote]] did you?
 
-**Eta-33 Lead:** We'll handle it; just keep talking to the perp.
+**Eta-33 Lead:** We'll handle it. Just keep talking to the perp.
 
 **Dr. Handler:** Alright. //[Pause.]// Jacob, how does someone get into this business?
 
-**Drauss:** Handler, was it? //[Handler nods.]// Well, Handler, you know how they operate. It's all between-the-lines, through subliminal catchy slogan bullshit, brand deals, seasonal sales, et cetera. Once you get into it you can say bye-bye to whatever goodnight's sleep you had prior.
+**Drauss:** Handler, was it? 
+
+//[Dr. Handler nods.]//
+
+**Drauss:** Well, Handler, you know how they operate. It's all between-the-lines, through subliminal catchy slogan bullshit, brand deals, seasonal sales, et cetera. Once you get into it you can say bye-bye to whatever goodnight's sleep you had before.
 
 **Dr. Handler:** Before this, you were a full-time Lyft driver. Can't imagine you were getting much sleep on those long nights out anyway. What's with the change in occupation?
 
-**Drauss:** I was conscripted. See, it starts slowly. You get fatigued. So you put a little more cheese in your diet, maybe pour a little more skim milk in your decaf. Espresso won't work. Pills won't work, and some days you collapse from exhaustion. And when the coma hits? //[Drauss drops his palms to his lap.]// That means you're hired. Your subconscious isn't your private property anymore, understand?
+**Drauss:** I was conscripted. See, it starts slowly. You get fatigued. So, you put a little more cheese in your diet, maybe pour a little more skim milk in your decaf. Espresso won't work. Pills won't work, and some days you collapse from exhaustion. And when the coma hits? //[He drops his palms to his lap.]// That means you're hired. Your subconscious isn't your private property anymore, understand?
 
 **Dr. Handler:** So then how did you propagate the advertisements? You were physically incapable of doing any typing from what I could tell.
 
-**Drauss:** Yeah, those? Written in legally-distinct arcana via the amygdala: Drafted in emotion and fear, so they can't get sued by competitors in the Marketplace of Ideas. 
+**Drauss:** Yeah, those? Written in legally distinct arcana via the amygdala: Drafted in emotion and fear, so they can't get sued by competitors in the Marketplace of Ideas. 
 
 **Dr. Handler:** What else did you witness?
 
-**Drauss:** After I was employed, it was all about Moosphere Mind-Cubicles™, Moosphere-brand Mind-Staplers™, Mind-Utilities™, Mind-Slaves™, Moosphere Grazing Barns™, and a "district manager" with six leaky tits. I was busy filing tax returns for these primordial, bovine entities. These, these things that expect you to drink yourself into oblivion. Oneiroi's Kangeroo Kourt System isn't going to recognize Staff mistreatment or unions if the Moosphere did it on company grounds.
+**Drauss:** After I was employed, it was all about Moosphere Mind-Cubicles™, Moosphere-brand Mind-Staplers™, Mind-Utilities™, Mind-Slaves™, Moosphere Grazing Barns™, and a "district manager" with six leaky tits. I was busy filing tax returns for these primordial bovine entities. These– these things that expect you to drink yourself into oblivion. Oneiroi's Kangaroo Kourt system isn't going to recognize Staff mistreatment or unions if the Moosphere did it on company grounds.
 
-//[The floating udder undulates; retching sounds emerge.]// 
+//[The floating udder undulates. Sounds of retching emerge.]// 
 
 **Dr. Handler:** On company grounds? 
 
-**Drauss:** The Marketplace of Ideas isn't a lie, Doctor Handler. The domain exists, and you're a part of it, whether you like it or not.
+**Drauss:** The Marketplace of Ideas isn't a lie, Doctor Handler. That domain exists, and you're a part of it, whether you like it or not.
 
 **Dr. Handler:** How do you mean?
 
-**Drauss:** I need you to listen very carefully when I tell you this. //[Drauss sits up straight and sighs.]// You should know that there are only two types of people in this world. Those of us who drink Mind-Milk™, and those of us who secrete it.
+**Drauss:** I need you to listen very carefully when I tell you this. //[He sits up straight and sighs.]// You should know that there are only two types of people in this world. Those of us who drink Mind-Milk™, and those of us who secrete it.
 ----
 = **[END LOG]**
 ----
 **NOTE:** //Mr. Drauss has refused to answer any further questions about Moosphere, his position in the company, or the Marketplace of Ideas. My team and I have taken him into limited protective custody for psychological evaluation and his own personal safety.//
+
 [[>]]
 --Dr. Michael Handler
 //Foundation Public Relations//
@@ -663,106 +665,110 @@ The current whereabouts of Agents Smith and Wollensky are unknown.
 [[/div]]
 @@ @@
 
-[[div style="background-color: #1F083A; text-align: center;"]]
+[[div class="log-bg"]]
 [[div class="log"]]
-[[collapsible show="▶ OPERATION: LACTOSE INTOLERANCE ◀" hide="▼ CODENAME: How The Udder Half Lives ▼"]]
+[[collapsible show="▷ OPERATION: LACTOSE INTOLERANCE ◁" hide="△ CODENAME: How the Udder Half Lives △"]]
 [[/div]]
 [[div style="text-align: left;"]]
 [[=]]
 +++ VIDEO LOG
 [[/=]]
 ----
-**FOREWORD:** On June 24, 2023, live footage of a writhing, gelatinous clump was posted to YouTube, triggering Simurgh.aic. Sometime after, Foundation pataphysicists detected an aberrant mass of bovine memes equal to 150,000 dairy cattle in a 640 m^^2^^ area. MTF-Eta-33 ("Don't Have a Cow, Man") members initiated the investigation, tracking the memes to a large abandoned warehouse in Northeastern Wisconsin.
+**FOREWORD:** On June 24, 2023, a livestream containing surreal bovine imagery was posted to YouTube, triggering Simurgh.aic. The livestream, entitled "Sights of Wausaukee, Northeastern Wisconsin," displayed normative footage of the town's attractions interspersed with shocking imagery of large, writhing, gelatinous bovine masses. Simurgh.aic could not determine a geolocation and blocked the stream.
 
-Site-82 Command has authorized the use of esoteric materials during this mission to combat oneiric and anomalous dairy entities.
+Foundation officials investigated Wausaukee as part of a mandatory sweep for anomalous threats. An  attached crew of field pataphysicists detected an aberrant mass of 150,000 individual bovine memes in and around the town, most of which centered on a 640 m^^2^^ area. MTF-Eta-33 members initiated further investigation, and with the help of pataphysicists, tracked the memes to a nearby warehouse at the town's outskirts.
+
+A raid on the facility was scheduled for the following evening. Aware of the pataphysical findings, Site-82 Command became convinced of a likely risk to civilian populations and authorized the use of esoteric materials to combat potential oneiric threats and anomalous dairy entities.
 ----
 **TEAM MEMBERS:** η-1, η-2, and η-3.
 
-**TEAM NOTES:** Task force members were selected based on:
+**TEAM NOTES:** Task force specialists were selected based on:
 a) Their teamwork skills.
 b) Pataphysical markers pointing to their archetypal significance, necessary for an operation of this nature.
 
 **EQUIPMENT:**
-* Three sets of standard Spectra-fiber body armor.[[footnote]]Body cameras fitted with a transmission stream and headset.[[/footnote]]
+* Three sets of standard Spectra-fiber body armor.[[footnote]] Body cameras fitted with a transmission stream and headset. [[/footnote]]
 * Three M4 carbines.
 * One tactical astral projection kit and subdermal sigil carried by η-1.
 * One reconnaissance drone and a remote controller carried by η-2.
 * One breach kit carried by η-3.
 * Miscellaneous utility grenades and stunning weapons.
 * Specialized infrared visualizers.
-* [[[scp-3863|SCP-3863]]]-1-type milk-honey, 250 mL.
+* [[[scp-3863|SCP-3863]]]-1-type milk-honey, 250 milliliters.
 
-**PREAMBLE:** MTF-Eta-33 was deployed by a combat search and rescue helicopter. Cast iron and steel roofing are partially collapsed, leaving a large breach above the warehouse.
+**PREAMBLE:** A small team of MTF-Eta-33 specialists deployed via combat search and rescue helicopter. On arrival, the cast iron and steel roofing were partially collapsed, leaving a large breach above the warehouse.
 ----
 = **[BEGIN LOG | 09:47 PM]**
 ----
-**«9:47:»** η-1 and η-3 hold position outside the front entrance. η-2 operates a drone over the exposed opening.
+**«9:47:»** η-1 and η-3 hold position outside the front entrance. η-2 operates a quadcopter drone over the exposed roof.
 
-**«9:50:»** Drone feed captures a dimly lit interior with 25 docile cows inside compact rooms, guarded behind slide-doors. The cows are fitted with metallic portholes on their left flank and udders.
+**«9:50:»** The drone enters a dimly lit interior containing 25 docile cows inside compact rooms, guarded behind slide-doors. The cows display fitted metallic portholes on their left flank and udders.
 
-**«9:52:»** Drone feed captures manure and hay compositions surrounding a hole directly underneath the roof's breach. Drone feed concentrates on gelatinous, purple tubing networks leading into the hole and between compact cow stalls. The drone's audio receivers detect noise leaking through seams in the wall.
+**«9:52:»** Manure and hay compositions surround a hole directly beneath the roof's breach. Gelatinous purple tubing networks lead out of the hole and crisscross between compact cow stalls.
 
-**«9:57:»** Drone feed captures generic farming utilities, fertilizer, and seed bags.
+**«9:57:»** The drone feed captures generic farming utilities, fertilizer, and seed bags.
 
-**«9:58:»** Small outlines move within bushes nearby η-1's camera. η-1 shines her flashlight near the location of movement. After a moment, η-1 states, "//Negative sighting, remain alert//."
+**«9:58:»** Small outlines move within bushes near η-1's camera. η-1 shines her flashlight at the location of movement. After a moment, η-1 states, "//Negative sighting, remain alert//."
 
-**«9:58:»** η-1 gestures an "all-clear" signal. η-2 nods to η-3. η-3 installs a breach charge at the facility's front doors. The three pile behind a breaching blanket.
+**«9:58:»** η-1 gestures an "all-clear" signal. η-2 places the drone on auto-pilot and nods to η-3. η-3 installs a breach charge at the facility's front doors. The three pile behind a breaching blanket.
 
 **«9:59:»** The charge detonates. η-3 enters the facility, followed by η-2 and η-1.
 
 **«10:01:»** The team proceeds through a tight windowless vestibule into a wide foyer. No persons are present within, and the interior lacks light sources. Team members activate night-vision.
 
-**«10:04:»** The unit makes a thorough sweep of the area before turning left two-thirds of the way down. They encounter a door, ajar, to an open office space. The office displays hundreds of laminated posters, each sporting motivational messages overlaid onto stock images of persons consuming dairy products. 
+**«10:04:»** The team makes a thorough sweep of the area, and two-thirds of the way down, turns left. They encounter a door, ajar, to an open office space. The office displays hundreds of laminated posters, each sporting motivational messages overlaid onto stock images of persons consuming dairy products. 
 
-**«10:06:»** η-1 discovers milk leaking from the ceiling. Drone feed captures undulating movement from no discernible source. η-2 claims, "//It's coming from everywhere//."
+**«10:06:»** η-1 discovers milk leaking from the ceiling. Drone feed captures undulating movement from no discernible source. η-2 whispers, "//It's coming from everywhere//."
 
 **«10:07:»** η-1 takes a milk sample, enclosing it in a rally bag. The milk emits a faint green bioluminescence.
 
-**«10:08:»** η-3 leads the team into an antechamber at the back of the office, claiming he "//smells a sulfuric scent//." η-1 activates electro-photonic sensors, revealing aetheric radiation[[footnote]]A byproduct of aetheric energy, which powers all Thaumatology.[[/footnote]] leaking from an adjacent chamber. 
+**«10:08:»** η-3 leads the team into an antechamber at the back of the office and claims he "//smells a sulfuric scent//." η-1 activates electro-photonic sensors and registers aetheric radiation[[footnote]] A byproduct of aetheric energy, which powers all Thaumatology. [[/footnote]] leaking from an adjacent chamber. 
 
-**«10:09:»** η-3 pushes into the next antechamber, which is filled with curdled milk. η-3 opens a metal door, drawing his carbine. A cow comes into view, mooing. Aetheric emission flows from its posterior, consistent with bovine flatulence.
+**«10:09:»** η-3 pushes into the next chamber, which is filled with curdled milk. η-3 opens a metal door, drawing his carbine. A cow comes into view, mooing. Aetheric emission flows from its posterior, consistent with bovine flatulence.
 
 **«10:11:»** The team returns to the foyer, traveling east through winding halls.
 
-**«10:15:»** A tremor shakes the facility, followed by a long bovine vocalization. η-1's milk sample vibrates, growing ten times in volume. She abandons the sample.
+**«10:15:»** A tremor shakes the facility, followed by a long bovine vocalization. η-1's milk sample vibrates and grows ten times in volume. She abandons the sample.
 
-**«10:18:»** η-3 reports a 3-meter-wide teat intersecting through support columns. The teat leaks faint green milk.
+**«10:18:»** η-3 reports a 3-meter-wide teat intersecting through support columns. The teat leaks faint green fluids.
 
-**«10:19:»** η-1 makes incisions into the teat, revealing more flesh within. The flesh gurgles, pushing through the incision, consuming the cutting implement. Cutting operation is abandoned.
+**«10:19:»** η-1 makes incisions into the teat, revealing more flesh within. The flesh gurgles and pushes through the incision, consuming the cutting implement. She abandons cutting operation.
 
-**«10:20:»** Drone footage shows cows either fleeing or charging toward something.
+**«10:20:»** The drone views cows either fleeing from, or charging toward, an indiscernible point.
 
-**«10:23:»** η-3 heaves open frosted double doors into a massive chamber ~20 meters in height. A writhing light brown udder (hereafter "Udder") of indeterminable width fills the chamber, producing hundreds of large teats, stretching and collapsing. Sleeping persons, presumably employees, levitate mid-air in groups of three around smaller teats. Cream cheese flows in bulk from their craniums down into a giant subterranean tank below.
+**«10:23:»** η-3 heaves open frosted double doors into a massive chamber ~20 meters in height that slopes downward toward the center. A writhing light brown udder (hereafter "Udder") of indeterminable width fills the chamber, producing hundreds of large teats, which stretch and collapse. Sleeping persons, presumably employees, levitate mid-air and upside down in groups of three around smaller teats. Cream cheese flows in bulk from their craniums down into a giant subterranean tank below.
 
-**«10:24:»** η-2's drone captures footage of a cow falling from an upper walkway, yelping. A second prior to hitting the ground, the Udder trembles. The cow hits the ground, melting into a milky liquid, some of which moves toward the room's center. 
+**«10:24:»** η-2's drone captures footage of a cow falling from an upper walkway, yelping. A moment before striking the floor, the Udder trembles. The cow contacts the floor in slow-motion and dissolves into a translucent white liquid. This liquid flows toward the room's center. 
 
-**«10:25:»** More cows follow until all 25 have fallen. Splashes fill the chamber, spraying MTF members.
+**«10:25:»** Additional cows follow until all 25 have fallen. Newly transmogrified fluids spray the team members.
 
-**«10:27:»** A floating pink udder (an SCP-3739-1-B instance, or "Mammary Mother") approaches the trio. η-1 recoils, clutching her temples -- she receives a telepathic payload. η-1 asks, "//What do you want?//" The instance undulates, laughing. η-3 aims then fires his carbine. The instance fails to take damage, in due part to its apparent metaphysical nature.
+**«10:27:»** A pale, floating pink udder (SCP-3739-1-B) approaches the trio. η-1 recoils, clutching her temples -- she receives a telepathic payload. η-1 asks, "//What do you want?//" The entity undulates as if laughing and approaches the team. η-3 fires on the entity. In due part to its apparent metaphysical nature, it does not take damage.
 
-**«10:28:»** η-1 nods at η-3, who nods back, then stands at guard in front of her. η-2 does the same. η-1 unpacks her tool kit. She burns incense and reads a selection from her personal dream journal.
+**«10:27:»** η-1 and η-3 share a nod. η-3 then stands at guard in front of her, and η-2 steps beside him. η-1 sets down her tool kit and unpacks it. She burns incense and reads an excerpt from her personal dream journal.
 
-**«10:29:»** The instance sports multiple arms, unfolding from within each other and into view. The udder grows an attractive, plump face, shooting milk from its mouth. It says, "//Your mother wants you to finish your milk//" with a giggle and piercing shriek.
+**«10:28:»** The entity sports multiple arms that unfold from within each other and into view. It grows an attractive, plump face, spewing off-white fluids from its mouth. With a giggle and piercing shriek, it says, "//Your mother wants you to finish your milk//."
 
-**«10:30:»** η-2 trains the drone on a fleshy off-color sack near the middle of the Udder's anterior face. η-3 levels his carbine, waiting to fire.
+**«10:29:»** η-2 trains the drone on a fleshy off-color sack near the middle of the Udder's anterior face. η-3 levels his carbine, waiting to fire.
 
-**«10:31:»** η-2 says, "//I'm lactose intolerant//" and curses the instance with reductionist profanities. The drone detects natural chemosignals[[footnote]]Pheromones used to convey emotion and directions to those under its effect.[[/footnote]] emitting from the instance. 15 "Child Curdles" separate from the main Udder, bombarding η-2 with runny cream cheese. Some Children siphon liquids directly from the Mother. They scream: "//Eat it! Drink it!//" η-2 refuses to comply.
+**«10:30:»** η-2 says, "//I'm lactose intolerant//," and curses the entity with reductionist profanities. The drone registers natural chemosignals[[footnote]] Pheromones used to convey emotion and directions to those under its effect. [[/footnote]] emerging from the entity (hereafter "Mother"). Fifteen smaller bovine entities with the appearance of animated cartoon characters (SCP-3739-1-C, hereafter "Children") separate from the Udder. Ten Children bombard η-2 with runny cream cheese projectiles. Others siphon fluids directly from the Mother and chant: "//Eat it! Eat it!//" 
 
-**«10:32:»** η-1 strikes a match, burning her thumb tip. She thumbs her tactical sigil, and then downs the milk-honey. Her body goes limp. An astral body sprouts up from her physical body's chest and flips toward the Mother, grabbing at teats and pulling.
+η-2 refuses to comply.
 
-**«10:33:»** η-2 is fully covered in cream cheese but refuses to consume it. The Children drag him to the Udder, forcing a leaking teat into his mouth. He has no choice but to comply.
+**«10:31:»** η-1 strikes a match, burning her thumb tip. She thumbs her tactical sigil, and then downs the milk-honey. Her body goes limp. An astral body sprouts up from her physical body's chest and flips toward the Mother. She grabs at loose teats and pulls.
 
-**«10:32:»** η-1 combats the Mother. Both scream, trading blows. η-3 walks to the Udder, aims, and fires at the exposed fleshy protrusion. He yells, "//You're not real//." The flesh goes erect and sprays milk at him. He consumes the milk at will, downing liters without apparent stress.
+**«10:32:»** η-2 is fully covered in cream cheese but refuses to consume it. The Children drag him toward the Udder, causing him to drop the remote control as he fights to be freed. They force a leaking teat into his mouth. He has no choice but to comply.
 
-**«10:34:»** η-1 spirals and pirouettes through the air, faster than the Mother. It squeezes green milk at her. She grabs a teat and stretches it with ease. The Mother screams in shock, deflates, and then falls to the floor. A palpable wet smack echoes throughout the room: It becomes tangible, leaking the rest of its fluids.
+**«10:33:»** η-1 combats the Mother. Both scream, trading blows. η-3 walks to the Udder, aims, and fires at the exposed fleshy protrusion. He yells, "//You're not real//." The flesh goes erect and sprays raw milk at him. He consumes the milk at will, downing liters without apparent stress.
 
-**«10:35:»** η-2 is no longer visible. The large Udder shakes and spills milk into the vast room. η-1's astral body reconnects with her physical body. She ditches the astral projection kit. η-1 and η-3 escape.
+**«10:34:»** η-1 spirals and pirouettes through the air, faster than the Mother. It squeezes green liquids at her. She grabs a teat and stretches it with ease. The Mother screams in shock, deflates, and then falls to the floor. A palpable wet smack echoes throughout the room. The entity finally becomes tangible, leaking the rest of its fluids.
+
+**«10:35:»** η-2 is no longer visible. The large Udder shakes and spills raw milk into the vast room. η-1's astral body reconnects with her physical body. She ditches the astral projection kit. η-1 and η-3 escape.
 ----
 = **[END LOG | 10:35 PM]**
 ----
-**EXTRACTION:** Post-log footage taken from η-2's drone records η-2 screaming in distress. This occurs for roughly 30 minutes as the warehouse fills with milk. 
+**EXTRACTION:** Post-log footage taken autonomously from η-2's drone records η-2 screaming in distress. This occurs for roughly 30 minutes as the warehouse fills with milk. 
 
-Near the end of the footage, η-2 emerges naked and is marked with a disembodied cattle branding prosthesis. He shudders, mooing. The prosthesis spots the drone, extends, and emits electricity from a cattle prod, frying it.
+Near the end of the footage, η-2 emerges naked, and a disembodied cattle branding prosthesis marks him on the upper thigh. He shudders, mooing. The prosthesis spots the drone, extends, and emits electricity from a cattle prod, frying it.
 [[/collapsible]]
 [[/div]]
 [[/div]]
@@ -775,13 +781,14 @@ Near the end of the footage, η-2 emerges naked and is marked with a disembodied
 [[=]]
 ++++ __RAISA POST-INVESTIGATION NOTICE__
 [[/=]]
-On [[span class="spangles"]]October 19, 2023[[/span]], interrogation campaigns across United States farmlands suggested ~3,130 oneiric advertisements coerced dairy corporate executives, regional managers, and ranchers to sign away rights to their dreams.
 
-On [[span class="spangles"]]November 21, 2023[[/span]], several hundred livestock facilities experienced bovine and human inflation; like the entities seen in OPERATION: L.I., replacing body fluids with a voluminous amount of non-anomalous milk product. MEATS filtration and conventional FDA regulations failed to contain public knowledge of oneiric dairy products. Wisconsin dreaming is the first to be assimilated -- their REM sleep is irreversibly altered.
+Between [[span class="spangles"]]October 12[[/span]] and [[span class="spangles"]]October 19, 2023[[/span]], a wide-scale interrogation campaign across U.S. farmlands reveals that over 3,100 oneiric advertisements coerced dairy corporate executives, regional managers, and ranchers to sign away rights to their dreams.
 
-On [[span class="spangles"]]January 30, 2024[[/span]], Pennsylvania and Washington dreaming are assimilated -- their REM sleep is irreversibly altered. Despite reintegration attempts made by Stratford Cattle Productions (via top-selling beef and yogurt products), citizens from these regions support CEO M.M.'s presidential campaign with vice president Jackie the Clown Cow.
+On [[span class="spangles"]]November 21, 2023[[/span]], several hundred livestock facilities experience bovine and human inflation. Like the entities seen in OPERATION: L.I., body fluids became replaced with a voluminous amount of non-anomalous milk product. MEATS filtration and conventional FDA regulations fail to contain public knowledge of oneiric dairy products. Wisconsin dreaming is the first to be assimilated. The REM sleep of thousands of citizens becomes irreversibly altered.
 
-On [[span class="spangles"]]February 9, 2024[[/span]], the CEO of Moosphere interrupted all of Wisconsin, Pennsylvania, and Washington's telecommunication broadcasts with a payload of cognitohazardous memes. Moosphere employs unaffected populations by force. Televisions broadcasted the following:
+On [[span class="spangles"]]January 30, 2024[[/span]], Pennsylvania and Washington dreaming are assimilated. The REM sleep of thousands of citizens becomes irreversibly altered. Despite reintegration attempts made by Stratford Cattle Productions (via top-selling beef and yogurt products implanted with gustatory memetic agents), large numbers of civilians from these regions support CEO M.M.'s presidential campaign, with running mate VP Jackie the Clown Cow.
+
+On [[span class="spangles"]]February 9, 2024[[/span]], the CEO of Moosphere interrupts all of Wisconsin, Pennsylvania, and Washington's major telecommunication broadcasts with a payload of cognitohazardous advertisements. Moosphere employs affected populations by force. Televisions broadcast the following:
 
 [[div class="recording-block"]]
 [[=]]
@@ -790,7 +797,7 @@ On [[span class="spangles"]]February 9, 2024[[/span]], the CEO of Moosphere inte
 ----
 = **[BEGIN LOG]**
 ----
-//[CEO M.M. descends onto a podium, cranium inflamed. He sighs. He opens his mandibles and a bovine eye atop his brow. Cream cheese secretes from the two orifices. Palpable dripping and splashing sounds are audible for the next three minutes twenty-seven seconds.]//
+//[CEO M.M. descends onto a podium, cranium inflamed. He sighs. He opens his mandibles and a bovine eye atop his brow. Cream cheese secretes from the two orifices. Palpable dripping and sloshing sounds are audible for the next three minutes and twenty-seven seconds.]//
 
 //[Undulating, it thinks.]//
 ----
@@ -798,19 +805,23 @@ On [[span class="spangles"]]February 9, 2024[[/span]], the CEO of Moosphere inte
 [[/div]]
 [[/div]]
 
-[[div class="log"]]
-[[collapsible show="▶ WARNING: PAUSED FOOTAGE QUARANTINED" hide="MNESTIC INNOCULATION FAILED. MTF AND PARAPHYSICIANS DISPATCHED."]]
-@@ @@
+[[div class="log" style="color: gray;"]]
+[[collapsible hideLocation="bottom" show="▷ WARNING: Paused Footage Quarantined" hide=" "]]
+[[=]]
+[[span class="h3"]]AMNESTIC INOCULATION FAILED
+MTF AND PARAPHYSICIANS DISPATCHED[[/span]]
+[[/=]]
+
 [[>]]
-[[span style="color: gray;"]]**Time-stamped:** 2m 59s
-2024-02-29 @ 9:43 AM (UTC-5)[[/span]]
+**Time-stamped:** 2m 59s
+-- 2024-02-29 @ 08:29 AM (UTC−05)
 [[/>]]
 
-[[image final_guy.png style="width:100%;" link=#]]
+[[image final_guy.png style="width: 100%;"]]
 
 [[/collapsible]]
 [[/div]]
-
+----
 [[footnoteblock]]
 
 [[div style="border-bottom: 2px solid #777; margin-bottom: 1px;"]]
@@ -822,15 +833,14 @@ On [[span class="spangles"]]February 9, 2024[[/span]], the CEO of Moosphere inte
 [[module Rate]]
 [[/=]]
 
-[[include component:earthworm
-| first=true | last=false | hub=no
-| previous-url=/ | previous-title=/
-| next-url=http://www.scp-wiki.net/scp-4475 | next-title=SCP-4475
-| hub-url=/ | hub-title=SCP-3739
-]]
+[[div class="related-flex"]]
+[[div class="related"]]
+**__Related Articles__:**
+* **[[[no-sense-crying|Spilled Milk]]]**
+* **[[[SCP-4475]]]** - So Long, and Thanks for All the Milk
+[[/div]]
+[[/div]]
 
 [[div class="footer-wikiwalk-nav"]]
-[[=]]
-<< [[[SCP-3738]]] | SCP-3739 | [[[SCP-3740]]] >>
-[[/=]]
+= << [[[SCP-3738]]] | SCP-3739 | [[[SCP-3740]]] >>
 [[/div]]
