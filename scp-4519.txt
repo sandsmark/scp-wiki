@@ -1,10 +1,6 @@
 title:SCP-4519
 [[include :scp-wiki:component:scp-trans-pride |trans-pride-logo= --] |trans-pride-footer= --]]]
 
-[[>]]
-[[module Rate]]
-[[/>]]
-
 [[include :scp-wiki:component:info-ayers
 |lang=en
 |page=scp-4519
@@ -12,7 +8,7 @@ title:SCP-4519
 |comments=**SCP-4519:** Carl Sagan, Godhead 
 **Authors:** [[*user NatVoltaic]] and [[*user Lt Flops]] 
  
-This article is **Part 3** of Team Nico's Angels' **[*http://www.scp-wiki.net/saphir-centre SAPPHIRE]** series for the **International Contest 2019**! 
+This article is **Part 3** of Team Nico's Angels' **[*http://www.scp-wiki.net/saphir-centre SAPPHIRE]** series for the **2019 International GOI Contest**! 
 ----
 [[div style="text-align: center;"]] 
 **More by these authors:** 
@@ -20,22 +16,18 @@ This article is **Part 3** of Team Nico's Angels' **[*http://www.scp-wiki.net/sa
 **[*http://www.scp-wiki.net/floppyphoenix Lt Flops]** 
 [[/div]] 
  
-[[div class="saphir-format" style="margin-bottom: .305em;"]] 
-= [[span class="sec-4"]] Sources [[/span]] 
-[[div class="dark-header"]] 
+[[div class="sapphire-block"]] 
+= [[span class=sapphire-heading-4"]] Sources [[/span]] 
 ----
-[[/div]] 
 * [https://commons.wikimedia.org/wiki/File:Carl_Sagan,_1994.jpg Carl Sagan Photo – CC BY 2.0]   
 * [https://commons.wikimedia.org/wiki/File:Amundsen%E2%80%93Scott_South_Pole_Station_(39788188895).jpg Amundsen-Scott Station – CC BY 2.0] 
 * [https://upload.wikimedia.org/wikipedia/commons/8/82/Becuan_valley_earthquake_building.jpg  Qinghai Province Attack – CC BY-SA 4.0] 
 * [https://en.wikipedia.org/wiki/Carl_Sagan Carl Sagan Wikipedia Page] 
 [[/div]] 
  
-[[div class="saphir-format"]] 
-= [[span class="sec-4"]] Critters and beta readers [[/span]] 
-[[div class="dark-header"]] 
+[[div class="sapphire-block"]] 
+= [[span class="sapphire-heading-4"]] Critters and beta readers [[/span]] 
 ----
-[[/div]] 
 * [[*user Dramps]] 
 * [[*user Weryllium]] 
 * [[*user psychicprogrammer]] 
@@ -61,60 +53,64 @@ body{
     --barColour: #590505;
     color: rgb(12, 12, 12);
 }
-.translation_block{ display: none; }
-.u-faq{ display: none; }
-#u-author_block{ display:none; }
+.translation_block, .u-faq, #u-author_block{ display: none; }
 
-/* SAPPHIRE FORMATTING */
-.dark-header hr{
-    width: 45%;
-    margin: auto;
-    background-color: #0d0e26;
-    border: none;
-    height: 2px;
+/* SAPPHIRE FORMAT */
+ .sapphire-block{
+     border: 5px solid #0d0e26;
+     background-color: #abafed;
+     padding: 0 1em;
+     margin: 1em 0;
+ 
+     color: #222;
+     font-family: 'Tinos', serif;
+     font-size: 12.5pt;
+     text-align: justify;
+     word-break: unset;
 }
-.sec-2{
-    color: #151A61;
-    font-size: 170%;
-    font-weight: bold;
+ .sapphire-block hr{
+     background-color: #0d0e26;
+     border: none;
+     margin: auto;
+     height: 2px;
+     width: 100%;
 }
-.sec-3{
-    color: #151A61;
-    font-size: 150%;
-    font-weight: bold;
+ .sapphire-heading-2,
+ .sapphire-heading-3,
+ .sapphire-heading-4{
+     color: #151a61;
+     font-weight: bold;
+     word-break: unset;
+     line-height: 120%;
 }
-.sec-4{
-    color: #151A61;
-    font-size: 130%;
-    font-weight: bold;
+ .sapphire-heading-2{ font-size: 150%; }
+ .sapphire-heading-3{ font-size: 130%; }
+ .sapphire-heading-4{ font-size: 120%; }
+
+/* MIMIC BLOCKQUOTE */
+ div.quote-block, blockquote{
+     border: 3px double #999;
+}
+ div.quote-block{
+     background-color: #f4f4f4;
+     padding: 0 1em;
+     margin: 1em 3em;
+}
+ @media (max-width: 479px){
+     div.quote-block{ margin: 1em 0; }
+}
+ @media (min-width: 480px) and (max-width: 580px){
+     div.quote-block{ margin: .5em; }
 }
 
-/* DIV BLOCKS */
-.saphir-format{
-    border: 3px solid #0d0e26; 
-    background-color: #abafed; 
-    padding: .25em 1.563em;
-    margin-bottom: 1em;
-
-    font-family: 'Tinos', serif; 
-    font-size: 13pt;
-    color: #222;
-}
-.quote-block{
-    border: 3px double #999;
-    background-color: #f4f4f4;
-    padding: .25em 1em;
-    margin-bottom: 1em;
-}
+/* DIV BLOCK */
 .report-box{
     border: 2px solid rgb(12, 12, 12);
     background-color: white;
-    padding: .25em 1em;
-    margin-bottom: 1em;
+    padding: 0 1em;
+    margin: 1em 0;
 }
-blockquote{
-    border: 3px double #999;
-}
+.report-box hr{ background: rgb(12, 12, 12); }
 
 /* JOURNALS */
  .journal{
@@ -144,16 +140,19 @@ blockquote{
 /* FORMATTING */
 .collapsible-block-link{ font-weight: bold; }
 hr{
-     margin: 1em 0;
-     padding: 0;
-     border: 0;
+    display: block;
+    border: 0;
+    padding: 0;
+    margin: 1em 0;
+    height: 1px;
 }
 .lite-header hr{
-    width: 45%;
-    margin: auto;
-    background-color: #e6e6e6;
+    display: block;
     border: none;
+    background-color: #e6e6e6;
+    margin: auto;
     height: 2px;
+    width: 45%;
 }
 .h2, .h3{
     margin: 0.5em 0 0.4em;
@@ -184,10 +183,12 @@ hr{
     font-weight: bold;
     font-size: 85%;
 }
-.saphir-nav a{
-    color: #202892;
-}
+.saphir-nav a{ color: #202892; }
 [[/module]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
 
 [[include :scp-wiki:component:anomaly-class-bar-source
 |item-number= 4519
@@ -198,14 +199,17 @@ hr{
 |risk-class= warning
 ]]
 ----
-**Special Containment Procedures:** SCP-4519 remains under the control of SAPPHIRE, and because of its long-range nature, its location is unknown.[[footnote]]The region has been narrowed down to within mainland China; surveillance and scouting measures have been increased in this area.[[/footnote]] As identification of its location is still in progress, no direct action can be taken against the anomaly for the time being.
+**Special Containment Procedures:** SCP-4519 remains under the control of SAPPHIRE and, because of its long-range nature, its location is unknown.[[footnote]]The region has been narrowed down to within mainland China; surveillance and scouting measures have been increased in this area.[[/footnote]] As identification of its location is still in progress, no direct action can be taken against the anomaly for the time being.
 
 Current procedures are focused on limiting the impact of SCP-4519-A and SAPPHIRE-related attacks on worldwide normalcy. Widespread psionics incidents are to be subject to heavy disinformation campaigns, including ones directed at paranormal communities. Decreases in religious belief are to be attributed to schisms within the religious institutions in question. Attacks by SAPPHIRE will be handled similarly.
 
-> = [[span style="font-weight: bold; font-size: 110%; text-decoration: underline;"]]2019/05/04 UPDATE[[/span]]
-> [[span style="color: #008000;"]]OPERATION: MENDAX SWITCH has been organized. Refer to **Addendum 4519.3** for further information.[[/span]]
+> [[=]]
+> [[span class="h3" style="color: rgb(12, 12, 12); word-break: unset;"]]2019/05/04 UPDATE[[/span]]
+> [[/=]]
+> ----
+> [[span style="color: #008000;"]]**OPERATION: MENDAX SWITCH** has been organized. Refer to **Addendum 4519.3** for further information.[[/span]]
 ----
-[[include :scp-sandbox-3:image-zoom name=carl-sagan.jpg|caption=Photograph of Carl Sagan, taken before his death and subsequent decapitation (hover to enlarge).|width=300px|align=right]]
+[[include :scp-sandbox-3:image-zoom name=carl-sagan.jpg|caption=[[span style="font-size: 120%;"]]Photograph of Carl Sagan, taken before his death and subsequent decapitation (hover to enlarge).[[/span]]|width=300px|align=right]]
 
 **Description:** SCP-4519 is the severed head of American astronomer Carl Edward Sagan, in use as a global antireligious weapon system by Group of Interest #0051 "SAPPHIRE".[[footnote]]A para-terrorist organization aiming to discredit theistic beliefs and destabilize religious institutions. Refer to the [[[saphir-centre|SAPPHIRE Dossier]]] for further information.[[/footnote]] Limited information on the anomaly exists; known details are that the head is being stored within a glass jar filled with preservative solutions, [[[grant-request-post-mortem-neural-preservation|connected to a device which enables cognitive functions]]]. The involvement of spectral and psionic phenomena is suspected.
 
@@ -233,15 +237,15 @@ In early 2000, the Department of Analytics became aware of recent SAPPHIRE mobil
 Agent Adrien Daniau was dispatched to the region to infiltrate SAPPHIRE under the guise of a group researcher. With assistance from covert cybernetic implants and Analytics personnel, he was able to gather files on what would later become designated as SCP-4519. The following documents were transmitted by Daniau to the Foundation:
 
 [[div style="text-align: center; background-color: #191f66;"]]
-+ [[span style="color: white"]]**{{Document I: SAPPHIRE Memo}}**[[/span]]
++ [[span style="color: #fafafa;"]]**{{Document I: SAPPHIRE Memo}}**[[/span]]
 [[/div]]
 
-[[div class="saphir-format"]]
+[[div class="sapphire-block"]]
 
-[[==]]
 [[=image saphir-logo-updated.png width="300px"]]
-= [[span class="sec-2"]]Memo to ZIRCON Mathieu Gardinier[[/span]]
-= [[span class="sec-3"]]February 10th, 2000[[/span]]
+
+= [[span class="sapphire-heading-2"]]Memo to ZIRCON Mathieu Gardinier[[/span]]
+= [[span class="sapphire-heading-3"]]February 10th, 2000[[/span]]
 
 @@     @@As of yesterday, my team received the shipment of the body. It was in the same condition as was requested, and based on the crystal formation within his eyes, the mind-reinforcing bath your SPIRALs[[footnote]]SAPPHIRE operatives that possess anomalous abilities.[[/footnote]] set up worked well. Heck, we could still smell that "ethereal decay" stench that I remember pervaded the bath when I went to see it. I even had one of our SPIRALs stick his semi-physical head into the liquid -- he claimed it "tasted like crying salt." When I asked him what that meant he told me it was good. A slate of pure logic was ready for us.
 
@@ -257,22 +261,24 @@ Agent Adrien Daniau was dispatched to the region to infiltrate SAPPHIRE under th
 
 Expect further questions when I visit your offices tomorrow, Gardinier. I hope you have answers.
 
-[[=]]
-[[span class="sec-4"]]From,[[/span]]@@                                    @@
-[[span class="sec-4"]]ZIRCON Winoc Merle[[/span]]
-[[/=]]
-
-[[div class="dark-header"]]
+[[table style="border: none; width: 100%;"]]
+[[row]]
+[[cell style="padding: 0; width: 60%; vertical-align: top;"]]
+[[/cell]]
+[[cell style="padding: 0; width: 40%; vertical-align: top;"]]
+[[span class="sapphire-heading-4"]]From,[[/span]]
+[[span class="sapphire-heading-4"]]ZIRCON Winoc Merle[[/span]]
+@@ @@
+[[/cell]]
+[[/row]]
+[[/table]]
 ----
-[[/div]]
-
-= [[span class="sec-3"]]//When in doubt, doubt.//[[/span]]
-[[/==]]
+= [[span class="sapphire-heading-3"]]//When in doubt, doubt.//[[/span]]
 
 [[/div]]
 
 [[div style="text-align: center; background-color: #191f66;"]]
-+ [[span style="color:white"]]**{{Document II: Covert Recording}}**[[/span]]
++ [[span style="color: #fafafa;"]]**{{Document II: Covert Recording}}**[[/span]]
 [[/div]]
 
 [[div class="quote-block"]]
@@ -334,29 +340,20 @@ Expect further questions when I visit your offices tomorrow, Gardinier. I hope y
 [[/div]]
 
 [[div style="text-align: center; background-color: #191f66;"]]
-+ [[span style="color:white"]]**{{Document III: Internal Correspondence}}**[[/span]]
++ [[span style="color: #fafafa;"]]**{{Document III: Internal Correspondence}}**[[/span]]
 [[/div]]
 
 [[div class="report-box"]]
 [[=]]
 +++ COMMUNICATIONS LOG
 [[/=]]
-
-[[div style="border-bottom: 1px solid black;"]]
-[[/div]]
-
+----
 **DATE RECEIVED:** June 1, 2006
 
 **NOTE:** Agent Daniau infiltrated SAPPHIRE for approximately six years until his disappearance in mid-2006. After a month lapse without communication, IntSCPFN received his final correspondence in full -- alongside foreign information, suggesting a SAPPHIRE hijacking.
-
-[[div style="border-bottom: 1px solid black;"]]
-[[/div]]
-
+----
 = **[BEGIN LOG]**
-
-[[div style="border-bottom: 1px solid black;"]]
-[[/div]]
-
+----
 **Agent Daniau:** They moved the head again. The site isn't mapped by any GPS, just like the last one.
 
 **COMMAND: {{Noted. Tell us about SCP-4519. You said you were close when they last tested it.}}**
@@ -409,39 +406,26 @@ She was screaming about her ancestors coming out of her head, berating and attac
 
 **Agent Daniau:** Of course.
 @@ @@
-
-[[div style="border-bottom: 1px solid black;"]]
-[[/div]]
-
+----
 @@ @@
 //[After the final message, Agent Daniau failed to contact Command for roughly 500 hours, at which point he was contacted by remote AIC.]//
 
 **Simurgh.aic: {{Life signs could not be detected. Agent Daniau, please state your personalized memetic ID phrase.}}**
 @@ @@
-
-[[div style="border-bottom: 1px solid black;"]]
-[[/div]]
-
+----
 @@ @@
 **Simurgh.aic: {{Agent Daniau, are you there? Please state your personalized memetic ID phrase.}}**
 @@ @@
-
-[[div style="border-bottom: 1px solid black;"]]
-[[/div]]
-
+----
 @@ @@
 **Simurgh.aic: {{Agent Daniau, state your personalized memetic ID phrase immediately.}}**
 @@ @@
-
-[[div style="border-bottom: 1px solid black;"]]
-[[/div]]
-
+----
 @@ @@
 **Simurgh.aic: {{Adrien, please respond.}}**
 
-[[=]]
-[[collapsible hideLocation="bottom" show="▶ ROGUE COMMUNIQUÉ DETECTED, CLICK TO VIEW CONTENT ◀" hide=" "]]
-[[span style="color: #b01;"]]**▼ VIEWING SECURED ▼**[[/span]]
+[[collapsible hideLocation="bottom" show="▶ ROGUE COMMUNIQUÉ DETECTED, CLICK TO VIEW CONTENT" hide=" "]]
+[[span style="color: #b01;"]]**▲ Viewing secured**[[/span]]
 
 [[<]]
 **UNKNOWN:** We see you, Foundation. Your knight is in our hands now.
@@ -450,10 +434,7 @@ She was screaming about her ancestors coming out of her head, berating and attac
 [[/=]]
 
 **Simurgh.aic: {{COGNITOHAZARD DETECTED, SESSION AUTOMATICALLY TERMINATED.}}**
-
-[[div style="border-bottom: 1px solid black;"]]
-[[/div]]
-
+----
 = **[END LOG]**
 [[/div]]
 
@@ -468,7 +449,7 @@ She was screaming about her ancestors coming out of her head, berating and attac
 [[/div]]
 @@ @@
 
-[[include :scp-sandbox-3:image-zoom name=Amundsen–Scott_South_Pole_Station.jpg|caption=The Amundsen–Scott South Pole Station, c. 2018.|width=300px|align=right]]
+[[include :scp-sandbox-3:image-zoom name=Amundsen–Scott_South_Pole_Station.jpg|caption=[[span style="font-size: 120%;"]]The Amundsen–Scott South Pole Station, c. 2018.[[/span]]|width=300px|align=right]]
 
 On April 21, 2019, theological engineers operating the Brennan Thaumometric Satellite registered a record loss in global Akiva radiation levels. This followed a 4-month trend in declining religious fervor worldwide. 
 
@@ -534,9 +515,9 @@ After allegedly channeling with Carl Sagan, Maclear worked with global positioni
 [[/div]]
 @@ @@
 
-[[include :scp-sandbox-3:image-zoom name=Becuan_valley_earthquake_building.jpg|caption=Aftermath of a SAPPHIRE attack on a religious site.|width=300px|align=right]]
+[[include :scp-sandbox-3:image-zoom name=Becuan_valley_earthquake_building.jpg|caption=[[span style="font-size: 120%;"]]Aftermath of a SAPPHIRE attack on a religious site.[[/span]]|width=300px|align=right]]
 
-SCP-4519 has been used by SAPPHIRE in a series of assaults against the //Huǒjù zhi Zi// occult organization.[[footnote]]Also known as the Children of the Torch. The group's religious beliefs focus on the worship of avian entities and the Sun, which is given a deific status.[[/footnote]] Alongside highly organized attacks on //Huǒjù zhi Zi// temples, mass numbers of group adherents have abruptly lost their beliefs, claiming to be "enlightened" while repeating quotes from Carl Sagan. Non-human anomalies connected to the group have also been impacted, with [[[scp-1428|SCP-1428]]] having entered a coma and [[[scp-2995|SCP-2995]]] erratically decreasing and increasing in gravitational strength.[[footnote]]Cover-ups for the abrupt faults in SCP-2995-1 and the ensuing damage to surrounding civilian centers are underway.[[/footnote]] This poses a severe shift in SCP-4519-A, from affecting only human minds to having the potential to affect all sentient life.
+SCP-4519 has been used by SAPPHIRE in a series of assaults against the //Huǒjù zhi Zi// occult organization.[[footnote]]Also known as the Children of the Torch. The group's religious beliefs focus on the worship of avian entities and the Sun, which is given a deific status.[[/footnote]] Alongside highly organized attacks on //Huǒjù zhi Zi// temples, mass numbers of group adherents have abruptly lost their beliefs, claiming to be "enlightened" while repeating quotes from Carl Sagan. Non-human anomalies connected to the group have also been impacted, with [[[SCP-1428]]] having entered a coma and [[[SCP-2995]]] erratically decreasing and increasing in gravitational strength.[[footnote]]Cover-ups for the abrupt faults in SCP-2995-1 and the ensuing damage to surrounding civilian centers are underway.[[/footnote]] This poses a severe shift in SCP-4519-A, from affecting only human minds to having the potential to affect all sentient life.
 
 In addition, undercover agents within other occult groups have reported phenomena similar to SCP-4519-A occurring, leading to widespread panic and anger towards SAPPHIRE. Isolated incidents of non-anomalous religious adherents losing their beliefs are being investigated for connections.
 
@@ -561,7 +542,5 @@ A non-zero risk of a //Shin-Sophist// "Global Religious Dissolution" Scenario ex
 [[/div]]
 
 [[div class="footer-wikiwalk-nav"]]
-[[=]]
-<< [[[SCP-4518]]] | SCP-4519 | [[[SCP-4520]]] >>
-[[/=]]
+= << [[[SCP-4518]]] | SCP-4519 | [[[SCP-4520]]] >>
 [[/div]]
