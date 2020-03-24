@@ -1,0 +1,151 @@
+title:SCP 5325
+[[include :scp-wiki:component:black-highlighter-theme-dev]]
+
+
+[[module CSS]]
+.blinkbar {color: red;font-size:125%; animation: blink 1.5s infinite; letter-spacing: -0.13em;}@keyframes blink{to{opacity: .0;}}@keyframes flicker {0% {opacity: 0.9890; }5% {opacity: 0.5842; }10% {opacity: 0.9865; }20% {opacity: 0.0412; }20% {opacity: 0.6255; }25% {opacity: 0.3157; }30% {opacity: 0.7328; }35% {opacity: 0.4654; }40% {opacity: 0.9128; }45% {opacity: 0.2449; }50% {opacity: 0.5485; }55% {opacity: 0.6438; }60% {opacity: 0.1180; }65% {opacity: 0.9085; }70% {opacity: 0.0266; }75% {opacity: 0.6795; }80% {opacity: 0.7812; }85% {opacity: 0.0117; }90% {opacity: 0.2239; }95% {opacity: 0.8897; }100% {opacity: 0.2260; }}@keyframes overlay-anim {0% {visibility: hidden; }10% {visibility: hidden; }11% {visibility: visible; }50% {visibility: hidden; }100% {visibility: hidden; }}
+.collapsible-block-folded a.collapsible-block-link {
+    animation: blink 0.8s ease-in-out infinite alternate;
+}
+@keyframes blink {
+    0% { color: transparent; }
+    50%, 100% { color: #b01; }
+}
+.email {float: center; border: solid 2px #000000; width: 88%; padding: 1px 15px; margin: 10px 10px 10px 10px; box-shadow: 0 1px 3px rgba(0,0,0,.5)}
+a.collapsible-block-link { font-weight: bold; }
+.tofrom {margin-left: 10px; margin-top: 5px; padding: 1px 15px; border-left: solid 3px maroon}
+[[/module]]
+
+
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[include :scp-wiki:component:anomaly-class-bar-source
+
+|item-number= 5325
+|clearance= 2
+
+|container-class= safe
+
+|secondary-class= 
+|secondary-icon= 
+
+|disruption-class= vlam
+
+|risk-class= notice
+
+]]
+
+----
+@@ @@
+
+[[div class="scp-image-block block-center" style="width:100%;"]]
+[[image http://scp-sandbox-3.wikidot.com/local--files/dr-moned3/SCP%20%26%26%26%26-A style="width:100%;" link=#]]
+[[div class="scp-image-caption" style="width:100%;"]]
+The entrance to SCP-5325
+[[/div]]
+[[/div]]
+
+__**Special Containment Procedures:**__ A barricade is to be erected around platform 4 of the Canfranc Intercontinental Station, and the underground tunnels blocked under the guise of health and safety risk. Due to currently active trains still passing through platform 1, a research site is unable to be established next to the anomaly. Thus, Provisional Site 14 is to be established in the nearby town of Canfranc with a skeleton crew of staff.
+
+__**Description:**__ SCP-5325 is the remains of a train that served the Canfranc to Piest line in 1932. SCP-5325 is currently located at an abandoned intercountry railway station in Spain. After a bridge collapse on the French side of the line, the station was decommissioned in 1970.
+
+At precisely 7:30 pm every day SCP-5325 will emerge, still worn down by age, from the nearby train shed and arrive at Platform 4. If a subject stands on the aforementioned platform, they begin to experience auditory hallucinations described as vocalizations in French. These hallucinations include speech and messages from the conductor, alongside the opening and closing of doors. The train is seen to depart at 8:00 pm precisely. 
+
+When subjects enter SCP-5325 they will each find a single seat within the carriage to sit-in. Soon after entering SCP-5325, subjects will hear an anomalous broadcast declaring a station close to one of their residences as the next stop.
+
+SCP-5325 can be seen until approximately 10m before the end of the track, at which point the front end of the train vanishes along with each coach in turn. All subjects reported blacking out from exhaustion after around 30 seconds from leaving the station, which coincides with the disappearance of SCP-5325. 
+
+Subjects report waking on an entirely separate, seemingly modern, train carriage at varying times. All subjects described a spray-painted neon red heart on the door of the carriage. It is currently unknown if the spray-painted heart is a memetic trigger.
+
+This train will typically arrive, as normal, at a station near their residence within 5 minutes. However, one subject described exiting the carriage followed by two more passengers that they reported not seeing on the train. It can be inferred that they are in a separate carriage to the other passengers, that occupies the same physical space. 
+
+When exiting the carriage, the subjects describe feeling happy and well-rested.
+
+[[=]]
+[[table  style="border-collapse:collapse; max-width: 600px;"]]
+[[row]]
+[[cell style="font-weight:bold;padding: .3em .7em; text-align: center; border: 1px solid black; background-color: silver; width: 20%;"]]
+Subject
+[[/cell]]
+[[cell style="font-weight:bold; padding: .3em .7em; text-align: center; border: 1px solid black; background-color: silver;"]]
+Location of recovery.
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="text-align: center; padding: .3em .7em; border: 1px solid black"]]
+D-73821 (From Site 06-3)
+[[/cell]]
+[[cell style="border: 1px solid black; padding: .3em .7em;"]]
+D-73821 ended up in the 9pm train passing through the [DATA REDACTED] station near Site 06-3. He was picked up by Facility guards who had been dispatched to the station following GPS locating the D-classes device.
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="text-align: center; border: 1px solid black"]]
+Researcher Adell
+[[/cell]]
+[[cell style="border: 1px solid black; padding: .3em .7em;"]]
+Researcher Adell was found to have arrived near his childhood home in Sweden despite not living there for 3 years. It is unknown if Researcher Adell was able to influence where he was sent.
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="text-align: center; border: 1px solid black"]]
+D-19203 (New D-class. From Site 06-3)
+[[/cell]]
+[[cell style="border: 1px solid black; padding: .3em .7em;"]]
+D-19203 was tracked to [DATA REDACTED] station, England. He told the foundation this was the location of his childhood home before his parents died. This has been corroborated by official sources.
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="text-align: center; border: 1px solid black"]]
+MTF Rho-12 member (New recruit)
+[[/cell]]
+[[cell style="border: 1px solid black; padding: .3em .7em;"]]
+MTF Rho-12 member reported arriving at Kings Cross London. Upon debriefing he said that he used to live in London with his single mother before she died.
+[[/cell]]
+[[/row]]
+[[/table]]
+[[/=]]
+
+@@ @@
+
+Permission for recorded expeditions through SCP-5325 is under review. Furthermore, a full interview with MTF Rho-12 member is pending.
+
+@@ @@
+
+[[=]]
+[[collapsible show="Updated Information" hide="You are up to date"]]
+[[div style="display: inline-block; border-radius: 10px; border:dashed 1px #444444; background:#F5F5F5; float:top; width:96.5%; padding:10px"]]
+
+[[<]]
+The new MTF Rho-12 member reported being able to read the walls of the carriage before he fell asleep. He described scribbling of thoughts and what seemed to be dreams of users on the walls. Most notable were seemingly newly written paragraphs talking about: 
+* The fun and games of childhood, before money was a problem. 
+* A hardworking scientist playing with his son by the fire.
+
+The MTF member said they fell asleep soon after, however, a small camera captured the subsequent proceedings:
+
+> //Outside the train, there appeared to be a Victorian-era Spanish woman with an umbrella. Clutched tightly in her hand was a reel of film with the name  "André Leducq." signed. The woman can be seen entering a packed train carriage and falling asleep to the swaying of the train.// 
+
+The scene fades and the MTF re-awakes in the new train carriage. During the re-awakening of the MTF, the camera experiences a momentary glitch.
+
+Due to the increased information from the video, the MTF member is sent back through SCP-5325. The new camera log is below:
+
+> //A man is seen strolling along the pavement whistling. He takes off his tag and smiled// ("Junior Researcher Adell" was seen to be written) //. Knocking on the door of a house, the door opened to the waiting arms of a woman, inferred to be his wife. The sounds of children echo in the background.//
+> 
+> //He gives her a quick hug, "Boys!" she is heard shouting, "Daddy's home!". Two small children are seen to come rushing out of another room giggling, Adell sweeps them up in a hug.//
+
+The door closes and the scene once again fades, the MTF re-awakening to the same train carriage as the first attempt.
+
+Final test to attempt to send the MTF to a different location:
+
+> As the MTF unit enters SCP-5325, they reported noticing a strip of torn paper from within a wall panel. It seems to be photographic film of a kind, trapped in one of the destroyed carriage walls. Upon inspection, it shows pictures of men on bikes racing. Despite being severely damaged the name "dre Leduc" can be read, it is unsure whom this is referring to.
+> 
+
+Due to this newfound evidence, the MTF Rho member exited the carriage before it left, no ill effects have been found. Analysis of the photo film is ongoing.
+
+[[/<]]
+[[/div]]
+[[/collapsible]]
+[[/=]]
