@@ -1,4 +1,45 @@
 title:SCP-4632
+[[module CSS]]
+.email {float: center; border: solid 2px #000000; width: 88%; padding: 1px 15px; margin: 10px 10px 10px 10px; box-shadow: 0 1px 3px rgba(0,0,0,.5)}
+a.collapsible-block-link { font-weight: bold; }
+.tofrom {margin-left: 10px; margin-top: 5px; padding: 1px 15px; border-left: solid 3px maroon}
+[[/module]]
+
+[[=]]
+[[module Rate]]
+[[/=]]
+
+
+[[module CSS]]
+.footnoteref{
+color: #FF5555;
+}
+.danke{
+padding: 5px 5px 5px 15px;
+margin: auto;
+margin-top:1em;
+margin-bottom:1em;
+width: auto;
+font-family: monospace;
+font-size: 1em;
+}
+
+.red{
+background-color:#220000;
+border: 3px solid #AA5555;
+color: #dd1f1b;
+}
+
+.blue{
+background-color:#000022;
+border: 3px solid #5555AA;
+color: #0076fd;
+}
+[[/module]]
+
+[[include :scp-wiki:component:black-highlighter-theme-dev]]
+[[include :scptestwiki:component:rounderformat]]
+
 [[include :scp-wiki:component:info-ayers
 |lang=en[!-- EN/RU/KO/CN/FR/PL/ES/TH/JP/DE/IT/UA/PTBR --]
 |page=SCP-4632[!-- url of your page on the scp wiki --]
@@ -22,6 +63,24 @@ Picture Credit: https://twitter.com/ScaryNewDad/status/1221766750234140672
 
 ]]
 
+
+[[module CSS]]
+sup {
+vertical-align: top; position: relative; top: -0.5em;
+}
+:root{
+--cutColour: #fafafa;
+--barColour: #590505;
+}
+
+.info-container .collapsible-block-folded a{
+color: #FFF;}
+.info-container .collapsible-block-unfolded-link a{
+color: #FFF;}
+
+.translation_block{
+display:none;}
+[[/module]]
 
 [!--【 ﻿Ａ Ｒ Ｔ Ｉ Ｃ Ｌ Ｅ   　                Ｓ Ｔ Ａ Ｒ Ｔ Ｓ   　               Ｈ Ｅ Ｒ Ｅ 】--]
 
