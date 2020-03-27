@@ -20,11 +20,12 @@ parent:guide-hub
     padding: auto 0.75em auto 0.75em;
 }
 
-#main-content img {
+.mobile img,
+.desktop img {
     border: solid 1px #ccc;
 }
 
-#main-content .mobile img {
+.mobile img {
     max-height: 50vh;
 }
 [[/module]]
