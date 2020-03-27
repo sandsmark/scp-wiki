@@ -20,38 +20,51 @@ parent:guide-hub
     padding: auto 0.75em auto 0.75em;
 }
 
-.mobile img {
+#main-content img {
     border: solid 1px #ccc;
+}
+
+#main-content .mobile img {
     max-height: 50vh;
 }
 [[/module]]
 
 Google recently added a change for Chrome/Chromium which blocks all third-party cookies by default. The aim is to minimize user tracking across different sites, which is good. Unfortunately because Wikidot only reports cookies (used to determine if a user is signed in) for sites ending in "{{wikidot.com}}" this means wikis with custom domains (e.g. {{scp-wiki.net}} and {{kontainer.djkakt.us}}) don't recognize that you're logged in.
 
-**The easiest workaround is to use http://scp-wiki.wikidot.com/ instead** of http://www.scp-wiki.net/.
+**The easiest workaround is to use http://scp-wiki.wikidot.com/** instead of http://www.scp-wiki.net/.
 
-However it is possible to adjust Chrome settings so we can enjoy the privacy benefits and log into Wikidot sites.
+However it is possible to adjust Chrome settings so we can use the custom URLs and be logged in on Wikidot. Note however, **there is an outstanding bug in Chrome where this will not work in some cases.** In this case the only workaround is to use the {{*.wikidot.com}} addresses as mentioned above.
 
 [[collapsible show="Desktop Instructions" hide="Desktop Instructions" hideLocation="both"]]
 [[div class="desktop"]]
 
 Sign-in like you normally do. If the cookies are being blocked you won't appear as signed in.
 
-In the top-right of your address bar click the "cookie" icon to get the menu, then click "Manage".
+Go to your brower's settings.
 
-[[=image desktop-1.png]]
+[[=image desktop-1-menu.png]]
 
-If your version of Chrome does not have this shortcut, you can access the cookie settings menu by going to {{chrome://settings/}} >> Advanced >> Privacy and Security >> Site Settings >> Cookies and site data. Instead of tabs like below you will be able to directly add domains to allow.
+Then click on "Privacy and security".
 
-Once you get to the list of cookies, click on the blocked tab.
+[[=image desktop-2-settings.png]]
 
-[[=image desktop-2.png]]
+Then "Site Settings".
 
-From there you will see the domains for Wikidot, which you will need to set to "Allow".
+[[=image desktop-3-sitesettings.png]]
 
-[[=image desktop-3.png]]
+Finally, "Cookies and site data".
 
-Hit "Done" and refresh the page. You should now be recognized as logged in!
+[[=image desktop-4-cookies.png]]
+
+Now that we're in the cookies settings page, we can add exceptions. We need to allow both {{wikidot.com}} and {{www.wikidot.com}} to issue cookies.
+
+[[=image desktop-5-addcookies.png]]
+[[=image desktop-6-wikidot.png]]
+[[=image desktop-6-www.png]]
+
+Hit "Done" and refresh the page. You should now be recognized as logged in! If not, use the http://scp-wiki.wikidot.com/ workaround:
+
+[[=image wikidot-com-workaround.png]]
 [[/div]]
 [[/collapsible]]
 
@@ -74,7 +87,7 @@ Then tap on "Cookies".
 
 First, ensure that cookies are enabled.
 
-Then tap to add site exceptions for Wikidot, specifically "{{wikidot.com}}" and "{{www.wikidot.com}}".
+Then tap to add site exceptions for Wikidot. We need to allow both {{wikidot.com}} and {{www.wikidot.com}} to issue cookies.
 
 [[=image mobile-4.png]]
 
@@ -88,11 +101,14 @@ Set cookies to "Allow", then go back once to return to the menu.
 
 When properly set, the settings page should appear as below.
 
-Note: the presence or absence of other sites other than "{{wikidot.com}}" and "{{www.wikidot.com}}" is irrelevant.
+Note: the presence or absence of other sites is irrelevant.
 
 [[=image mobile-7.png]]
 
-Exit from the settings menu and refresh the page. You should now be recognized as logged in!
+Exit from the settings menu and refresh the page. You should now be recognized as logged in! If not, use the http://scp-wiki.wikidot.com/ workaround.
+
+@@@@
+@@@@
 [[/div]]
 [[/collapsible]]
 
