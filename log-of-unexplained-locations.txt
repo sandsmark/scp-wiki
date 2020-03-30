@@ -8,11 +8,6 @@ Sort: [[[/log-of-unexplained-locations/order/rating desc |top rated]]], [[[/log-
 
 [[module ListPages category="log-of-unexplained-locations" rating="@URL|>-3" order="@URL|rating desc" perPage="10"]]
 [[# %%name%%]]
-[[div style="float:right; height:16px;"]]
-[[div style="overflow: hidden; max-width: 200px; max-height:26px;margin-top:7px"]]
-[[iframe http://www.scp-wiki.net/%%fullname%%/noredirect/true scrolling="no" style="width:300px;height:300px;margin-top: -280px;max-width: none;"]]
-[[/div]]
-[[/div]]
 **[[[/log-of-unexplained-locations/p/[[#expr ((%%index%%-1)/10 % %%total%%)+1]]#%%name%% |Unexplained Location UE-[[#expr (496579*%%name%%)%900000 + (41389*%%name%%)%100000]] ]]]** ([[[*/%%fullname%%/norender/true#_editpage |edit]]]) 
 **%%form_label{desc}%%** %%form_raw{desc}%%
 **%%form_label{date}%%** %%form_raw{date}%%
