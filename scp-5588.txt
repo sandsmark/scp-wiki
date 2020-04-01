@@ -1,4 +1,57 @@
 title:SCP-5588
+[[module css]]
+#header{
+    background: url(null);
+}
+#header:before{
+display:block;
+position: absolute;
+width: 100px;
+height: 100px;
+top: 15%;
+left:2%;
+z-index: -1;
+content: "";
+background:url(http://scp-wiki.wdfiles.com/local--files/component%3Atheme/logo.png);
+background-repeat: no-repeat;
+background-size: 100px 99px;
+background-position: 0px 0px 0px;
+z-index: -20;
+transform: rotateZ(180deg);
+}
+#header h2 span {
+    color: transparent;
+    text-shadow:none;
+}
+#header h2 span::before {
+    content: "Protect, Secure. Contain";
+    color: #F0F0C0;
+    padding: 0px 0px 00px;
+    text-shadow:initial;
+}
+@media (max-width: 800px) {
+#header{
+    background: url(null);
+}
+#header:before{
+display:block;
+position: absolute;
+width: 100px;
+height: 100px;
+top: 15%;
+left:2%;
+z-index: -1;
+content: "";
+background:url(http://scp-wiki.wdfiles.com/local--files/component%3Atheme/logo.png);
+background-repeat: no-repeat;
+background-position: 3.75em .5em;
+background-size: 55px 55px;
+z-index: -20;
+transform: rotateZ(180deg);
+}
+}
+[[/module]]
+
 [[include :scp-wiki:component:info-ayers
 |lang=en
 |page=
