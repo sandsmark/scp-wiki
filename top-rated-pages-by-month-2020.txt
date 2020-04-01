@@ -32,8 +32,15 @@ title:Top Rated Pages By Month 2020
 > ||= [[[top-rated-pages-by-month-2008|2008]]] ||
 [[/div]]
 
+[[collapsible show="March 2020" hide="- Click to hide"]]
+**March 2020**
+[[module ListPages rating=">5" order="rating desc" separate="false" limit="200" perPage="25" date="2020.03"]]
+%%title_linked%% (rating: %%rating%%, comments: %%comments%%)
+[[/module]]
+[[/collapsible]]
+
 [[collapsible show="February 2020" hide="- Click to hide"]]
-**February  2020**
+**February 2020**
 [[module ListPages rating=">5" order="rating desc" separate="false" limit="200" perPage="25" date="2020.02"]]
 %%title_linked%% (rating: %%rating%%, comments: %%comments%%)
 [[/module]]
