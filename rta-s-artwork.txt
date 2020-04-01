@@ -1,4 +1,138 @@
 title:RTa's Artwork
+[[include :smlt:secret:rta-sub:alert
+|close=Agree
+|top=CAUTION!
+|sub=++ This is Af theme.
+If you can agree, please push the button below.
+]]
+
+[[module css]]
+#header h1 a{
+font-size:0px;
+padding: 40px;
+}
+#header h1:after{
+     display: block;
+     margin: 0;
+     padding: 0px 0 25px;
+     line-height: 0px;
+     max-height: 0px;
+     color: #eee;
+     background: transparent;
+     font-size: 130%;
+     text-decoration: none;
+     text-shadow: 3px 3px 5px #000;
+     letter-spacing: 0.9px;
+content: "█████";
+}
+#header h2 span{
+font-size:0px;
+padding: 4px;
+}
+#header h2:after{
+padding: 19px 0;
+font-weight: bold;
+color: #f0f0c0;
+text-shadow: 1px 1px 1px #000;
+text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+white-space: pre ;
+content: "██、██、██";
+}
+/*
+karma animation
+CC BY-SA 3.0
+By Sekai
+*/
+
+.printuser img {
+  animation: karma 0.1s forwards;
+}
+
+@keyframes karma {
+  0% {
+    background-image: url('http://www.wikidot.com/common--theme/base/images/karma/karma_5.png');
+  }
+  100% {
+    background-image: url('http://www.wikidot.com/common--theme/base/images/karma/karma_5.png');
+  }
+
+[[/module]]
+[[module css]]
+/*
+    Powered on 2020/03/31 11:31:00
+    [2020 Wikidot Theme]
+    Created by Seto42357
+    CC BY-SA 3.0
+*/
+
+/* CONTENT */
+#main-content {
+     color: #fff;
+}
+
+div#container-wrap{
+background: url(http://furuta-scp-laboratory.wikidot.com/local--files/exp:experiment036/white.jpg) top left repeat-x;
+background-size:100px;
+}
+
+#html-body{
+background-color:#fff;
+color:#fff;
+}
+
+#header {
+    height: 140px;
+    position: relative;
+    z-index: 10;
+    padding-bottom: 22px; /* FOR MENU */
+    color:#fff !important;
+}
+
+body {
+    background-color: #fff;
+    color: #ffffff;
+}
+#page-content {
+color:#aaa;
+}
+a,a:visited {
+    color: #ddd;
+}
+h1 {
+    color: #aaa;
+}
+blockquote {
+    border: 1px dashed #aaa;
+    padding: 0 1em;
+    background-color: #aaa;
+}
+div#side-bar div.side-block {
+    background: #fff;
+}
+div#side-bar div.side-block div.heading,
+div#side-bar div.collapsible-block-unfolded-link,
+div#side-bar div.collapsible-block-unfolded-link div.collapsible-block-link {
+    color: #fff;
+    border-color: #ddd;
+}
+#side-bar .side-block {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(102,0,0,.5);
+    background: #fff;
+    margin-bottom: 15px;
+div.yui-navset div.yui-content {
+    background: #ddd;
+}
+div.yui-navset ul.yui-nav .selected a,
+div.yui-navset ul.yui-nav .selected a:focus,
+div.yui-navset ul.yui-nav .selected a:hover {
+    background: #aaa;
+}
+
+[[/module]]
+
 [[include :scp-jp:credit:start
 |view-credit=View Credit
 |branch-notation=Credit
