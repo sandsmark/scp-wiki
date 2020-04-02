@@ -1,10 +1,6 @@
 title:SCP-4420
 [[include :scp-wiki:component:scp-trans-pride |trans-pride-logo= --] |trans-pride-footer= --]]]
 
-[[>]]
-[[module Rate]]
-[[/>]]
-
 [[include :scp-wiki:component:info-ayers
 |lang=en
 |page=scp-4420
@@ -29,8 +25,7 @@ body{
     --barColour: #590505;
     color: rgb(12, 12, 12);
 }
-.translation_block{ display: none; }
-.u-faq{ display: none; }
+.translation_block, .u-faq{ display: none; }
 
 /* DIV BLOCKS */
 .message-location{
@@ -40,24 +35,27 @@ body{
 .message-size{
     background: #c0c0c0; 
     width: 18.4em; 
-    border-radius: 3.049em; 
-    padding: 0.061em 1.220em;
+    border-radius: 3.05em; 
+    padding: .06em 1.22em;
     font-size: 112.5%; 
     text-align: center; 
 }
 
 /* FORMATTING */
 hr{
-     margin: 1em 0;
-     padding: 0;
-     border: 0;
+    display: block;
+    border: 0;
+    padding: 0;
+    margin: 1em 0;
+    height: 1px;
 }
 .lite-header hr{
-    width: 45%;
-    margin: auto;
-    background-color: #e6e6e6;
+    display: block;
     border: none;
+    background-color: #e6e6e6;
+    margin: auto;
     height: 2px;
+    width: 45%;
 }
 .h2{
     margin: 0.5em 0 0.4em;
@@ -68,6 +66,10 @@ hr{
 }
 [[/module]]
 
+[[>]]
+[[module Rate]]
+[[/>]]
+
 [[include :scp-wiki:component:anomaly-class-bar-source
 |item-number= 4420
 |clearance= 2
@@ -77,14 +79,11 @@ hr{
 |risk-class= none
 ]]
 ----
-[[div class="scp-image-block block-center" style="width:100%;"]]
-[[image tater-tot.png style="width:100%;" link=#]]
-[[div class="scp-image-caption" style="width:100%;"]]
-[[span style="font-size: 120%;"]]SCP-4420 in its current state. Photo taken from a safe distance of 50 meters.[[/span]]
-[[/div]]
-[[/div]]
+= //[[span style="font-family: Courier, monospace; font-size: 110%;"]]Displaying archived documentation...[[/span]]//
 ----
- **Special Containment Procedures:** SCP-4420 is currently contained 150 meters from Site-82 in a localized artificial pocket dimension, housed in Tentative Containment Module #819. Para-technicians have installed a Scranton-Marlowe Topology Stabilizer (or SMTS) to maintain dimensional stability in the chamber.
+[[include component:image-block name=tater-tot.png|align=center|width=100%|caption=[[span style="font-size: 120%;"]]SCP-4420 in its current state. Photo taken from a safe distance of 50 meters.[[/span]]]]
+----
+ **Special Containment Procedures:** SCP-4420 is currently contained 150 meters from Site-82 in a localized artificial pocket dimension, housed in Tentative Containment Module #819. Paratechnicians have installed a Scranton-Marlowe Topology Stabilizer (or SMTS) to maintain dimensional stability in the chamber.
 ----
 **Description:** SCP-4420 is a red Idaho potato with a current mass of 400,000,000 kg and external dimensions of 150 meters by 65 meters by 55 meters. SCP-4420 displays the following ectoentropic properties:
 
@@ -272,7 +271,5 @@ SCP-4420 is currently classified as Neutralized.
 [[/=]]
 
 [[div class="footer-wikiwalk-nav"]]
-[[=]]
-<< [[[SCP-4419]]] | [[[floppyphoenix|Lt Flops]]] | [[[SCP-4421]]] >>
-[[/=]]
+= << [[[SCP-4419]]] | [[[floppyphoenix|Lt Flops]]] | [[[SCP-4421]]] >>
 [[/div]]
