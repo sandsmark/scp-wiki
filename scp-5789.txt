@@ -83,6 +83,10 @@ div#container-wrap { background: url(http://scp-sandbox-3.wdfiles.com/local--fil
 a {
     text-decoration: none;
 }
+
+@media only screen and (max-width: 600px) {
+#page-content .block::after { content: attr(data-title); position: absolute; top: -1em; width:90%; text-align:center; margin-left: auto!important; color: #FFF!important; font-size: .9em!important; padding: 0 8px; }
+}
 </style>
 </head>
 <body>
@@ -164,7 +168,7 @@ SCP-𝕐's relationship to <a href="http://www.scp-wiki.net/scp-033"> other anom
 <p>RESEARCHER NOTE: Tests are suspended until further notice.</p>
 <div class="heading"><span style="margin-left: 1em; background: #c9d; padding-left: .5em; padding-right: .5em; color: #FFF;">END LOG</span></div>
 </div>
-<div class="block grey" data-title="REQUEST TO RECLASSIFY AS KETER: PENDING">
+<div class="block grey" data-title="REQUEST TO RECLASSIFY (KETER): PENDING">
 <p>RESEARCHER: DR. TREYVON BUCKHANON</p>
 
 <p>During the initial containment of SCP-𝕐, a Foundation operative assigned the anomaly a standard item designation, ����, thinking that as long as the number was not added to the containment file, it would be safe to do so. He was wrong.</p>
