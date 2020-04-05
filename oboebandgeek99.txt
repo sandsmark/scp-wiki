@@ -32,6 +32,69 @@ title:Oboebandgeek99's Author Page
     border: none;
     padding: 0;
 }
+
+.log-form + p {
+text-align: center;
+}
+.log-form + .collapsible-block .collapsible-block-unfolded-link{
+margin:0.5em 0;
+text-align: center;
+}
+.log-form + .collapsible-block .collapsible-block-folded {
+margin:0.5em 0;text-align: center;
+}
+.log-form a,
+.log-form + .collapsible-block a.collapsible-block-link {
+display: inline-block;
+width: 90%;
+max-width: 640px;
+background: linear-gradient(to bottom right,
+            rgb(255, 244, 48),
+            rgb(255, 244, 48),
+            rgb(255, 255, 255),
+            rgb(255, 255, 255),
+            rgb(156, 89, 209),
+            rgb(0, 0, 0),
+            rgb(0, 0, 0));
+color: black;
+font-size: 200%;
+padding: 10px 20px;
+border: none;
+cursor: pointer;
+opacity: 0.75;
+transition: 0.09s;
+border-radius: 3px;
+transition 0.8s;
+}
+.log-form a:hover,
+.log-form + .collapsible-block a.collapsible-block-link:hover {
+opacity: 1;
+transition: 0.8s;
+box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.7);
+text-decoration: none;
+}
+.log-form a:active,
+.log-form + .collapsible-block a.collapsible-block-link:active {
+transition: 0.09s;
+transform: translateY(1px);
+box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+}
+
+.in-log-form a,
+.in-log-form + .collapsible-block a.collapsible-block-link {
+display: inline-block;
+width: 0%;
+max-width: 0px;
+background: rgba(0, 0, 0, 0);
+color: red;
+padding: 0px 0px;
+border: none;
+cursor: pointer;
+opacity: 0.9;
+transition: 0.09s;
+border-radius: 0px;
+transition 0.8s;
+}
 [[/module]]
 
 
@@ -41,9 +104,9 @@ title:Oboebandgeek99's Author Page
 [[=]]
 Hey, I'm Oboebandgeek99, most call me Oboe or OBG or very rarely by [[span class="hover"]][[span]]It's Will, by the way. Pleasure to meet you![[/span]]my name[[/span]]. You probably know me as the guy who recorded "[[[you-and-me |Track 4: You and Me]]]" but I sometimes also write things. Here are some of those things.
 ------
-++ One-Shots
-[[/=]]
-------
+[[div class="log-form"]]
+[[collapsible show="One-Shots" hide="One-Shots"]]
+[[div class="in-log-form"]]
 [[include component:scp-hover-box-structure
 |container-number=one
 |corner-cutout=1em
@@ -232,11 +295,11 @@ Hey, I'm Oboebandgeek99, most call me Oboe or OBG or very rarely by [[span class
 |sub-title=2nd Hytoth format
 |blerb=**How was the Holy Fifth forgotten?**
 ]]
-------
-[[=]]
-++ Self Similar (Collabcon2k19)
-[[/=]]
-------
+[[/div]]
+[[/collapsible]]
+
+[[collapsible show="Self Similar (Collabcon 2k19)" hide="Self Similar (Collabcon 2k19)"]]
+[[div class="in-log-form"]]
 [[include component:scp-hover-box-structure
 |container-number=three
 |corner-cutout=1em
@@ -278,11 +341,10 @@ Hey, I'm Oboebandgeek99, most call me Oboe or OBG or very rarely by [[span class
 |sub-title=Tale
 |blerb=**The Black Queen goes to the island, and Nobody follows her. Collab with Dr Lake, currently in stages of rewriting.**
 ]]
-------
-[[=]]
-++ Schwarzwald
-[[/=]]
-------
+[[/div]]
+[[/collapsible]]
+[[collapsible show="Schwarzwald" hide="Schwarzwald"]]
+[[div class="in-log-form"]]
 [[include component:scp-hover-box-structure
 |container-number=five
 |corner-cutout=1em
@@ -324,6 +386,14 @@ Hey, I'm Oboebandgeek99, most call me Oboe or OBG or very rarely by [[span class
 |sub-title=Tale
 |blerb=**In which David goes looking for a tree. Part two of the VdM subarc of Schwarzwald.**
 ]]
+[[/div]]
+[[/collapsible]]
+[[collapsible show="Self Similar (Collabcon 2k19)" hide="Self Similar (Collabcon 2k19)"]]
+[[div class="in-log-form"]]
+Coming soon!
+[[/div]]
+[[/collapsible]]
+[[/div]]
 ------
 ++ [[span class="hover"]][[span]][[size 60%]]--Original characters do not steal!-- Just kidding, you can use them if you want (and please tell me if you do!)[[/size]][[/span]]Characters I've Created[[/span]]:
 
