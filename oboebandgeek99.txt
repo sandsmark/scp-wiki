@@ -97,6 +97,13 @@ transition: 0.09s;
 border-radius: 0px;
 transition 0.8s;
 }
+.in-log-form a:hover,
+.in-log-form + .collapsible-block a.collapsible-block-link:hover {
+opacity: 1;
+transition: 0.8s;
+box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+text-decoration: none;
+}
 [[/module]]
 
 
