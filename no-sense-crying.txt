@@ -30,21 +30,24 @@ body{
 
 /* DIV BLOCKS */
 blockquote,
-div.blockquote {
+div.blockquote{
       margin: 1em 0;
+
       border: 1px solid #d60000;
       border-radius: 10px;
 }
 
 /* MIMIC BLOCKQUOTE */
- div.quote-block, blockquote{
+ div.quote-block,
+blockquote{
      border: 1px solid #d60000;
      border-radius: 10px;
 }
  div.quote-block{
-     background-color: #f4f4f4;
-     padding: 0 1em;
      margin: 1em 0;
+     padding: 0 1em;
+
+     background-color: #f4f4f4;
 }
  @media (max-width: 479px){
      div.quote-block{ margin: 1em 0; }
@@ -55,46 +58,25 @@ div.blockquote {
 
 /* AMBROSE RESTAURANT */
 .mindscape{
-    border: 12px double #4b419b; 
+    margin: 0 0 3em;
+    padding: 3em;
+
+    color: #0d1d59;
     background-image: radial-gradient(#c0b0ed 60%, #8b92c6);
-    padding: 3em; 
-    margin-bottom: 3em; 
-    color: #0d1d59; 
+    border: 12px double #4b419b;
     text-align: center;
 }
-.mindscape hr{ background: #0d1d59; height: 2px; }
-
-/* VOID */
-div.void{
-    border: 1px solid lightgray;
-    background-color: #fff;
-    box-shadow: 2px 2px 2px 2px rgba(0,0,0,.1);
-    width: 370px;
-    padding: 1em;
-    margin: 1em auto;
-}
-@media (max-width: 479px){
-    div.void{ width: auto; margin: 1em 0; }
-}
-@media (min-width: 480px) and (max-width: 580px){
-    div.void{ width: auto; margin: 0.5em; }
-}
-.void-dp{
-    float: left;
-    background-color: #fff;
-    padding: 0 1em;
-    margin: 1em 0 0 .4em;
-}
-.void-activity{ color: blue; }
+.mindscape hr{ height: 2px; background: #0d1d59; }
 
 /* FORMATTING */
 .collapsible-block-link{ font-weight: bold; }
 hr{
     display: block;
-    border: 0;
-    padding: 0;
-    margin: 1em 0;
     height: 1px;
+    margin: 1em 0;
+    padding: 0;
+
+    border: 0;
 }
 [[/module]]
 
@@ -102,12 +84,12 @@ hr{
 [[module Rate]]
 [[/>]]
 
-//A voicemail sent by one// Chaz Ambrose (**__POI #__:** //{{N/A}}//) //to an unknown party, regarding a partnership with// [[span style="color: #2266C1; font-weight: bold;"]]Moosphere, Incorporated[[/span]]:
+//A voicemail sent by one// Chaz Ambrose //of// Ambrose Restaurants //to an unknown party, regarding a partnership with// [[span style="color: #2266C1; font-weight: bold;"]]Moosphere, Incorporated[[/span]]:[[footnote]]See [[[SCP-3739]]].[[/footnote]]
 
 [[div class="quote-block"]]
 Andy! Hey mate, it's Chaz!
 
-So, I got the MC&D shareholders together for one final board meeting, right? And some were, well, still a tad skeptical of the whole thing. I'm telling you; I haven't had that much difficulty giving a pitch since cookery school, heh heh! I got a hold of a few Oneiric representatives who, luckily, were more than willing to spin their dreams into day for us. They'll be able to ease along our partnership with those secretive Moo... Those moo fellows. Can't recall their name, sorry!
+So, I got the MC&D shareholders together for one final board meeting, right? And some were, well, still a tad skeptical of the whole thing. I'm telling you: I haven't had that much difficulty giving a pitch since cookery school, heh heh! I got a hold of a few Oneiric representatives who, luckily, were more than willing to spin their dreams into day for us. They'll be able to ease along our partnership with those secretive Moo... Those moo fellows. Can't recall their name, sorry!
 
 We've been working on the insurance angle -- can't seem to get that sorted out yet, sadly -- but I'm telling you, we'll have this all set up within six, maybe twelve weeks, by the latest!
 
@@ -118,115 +100,80 @@ Andy? 2025's our bloody year! That's right -- Ambrose is setting up shop in the 
 
 [[div class="mindscape"]]
 
-[[span style="font-size: 400%; font-family: 'EB Garamond', serif; word-break: normal; line-height: .8em; font-weight: 800;"]]AMBROSE MINDSCAPE[[/span]]
+[[span style="line-height: .8em; font-size: 400%; font-family: 'EB Garamond', serif; font-weight: 800; word-break: normal;"]]AMBROSE MINDSCAPE[[/span]]
 
-[[span style="font-size: 200%; font-family: 'EB Garamond', serif; word-break: normal; line-height: .6em; font-weight: 600; font-style: italic;"]]~in partnership with~[[/span]]
+[[span style="line-height: .6em; font-size: 200%; font-family: 'EB Garamond', serif; font-weight: 600; font-style: italic; word-break: normal;"]]~in partnership with~[[/span]]
 
-[[span style="font-size: 360%; font-family: 'EB Garamond', serif; word-break: normal; line-height: .8em; font-weight: 600; color: #0744A4;"]]Moosphere, Inc.[[/span]]
+[[span style="color: #0744A4; line-height: .8em; font-size: 360%; font-family: 'EB Garamond', serif; font-weight: 600; word-break: normal;"]]Moosphere, Inc.[[/span]]
 @@ @@
 ----
 @@ @@
-[[span style="font-family: 'Tahoma'; font-size: 1.3em; word-break: normal;"]]For more than [UNKNOWN] long Ages, ##0744A4|**Moosphere, Incorporated**## has been a forerunner in surrealistic dairy artisanship; a feast for more than 30 BILLION souls and counting! By the fruits of their very spirits, our well-trained Oneiric confectioneers would like to serve you our many fresh, EGO-SHATTERING delights. Mouth-watering cuisine is hard-coded in their very DNA -- we're sure of it! Feed your chakric affirmations, O vaccimulgent one![[/span]]
+[[span style="font-size: 130%; font-family: 'Tahoma'; word-break: normal;"]]For more than [UNKNOWN] long Ages, ##0744A4|**Moosphere, Incorporated**## has been a forerunner in surrealistic dairy artisanship; a feast for more than 30 BILLION souls and counting! By the fruits of their very spirits, our well-trained Oneiric confectioneers would like to serve you our many fresh, EGO-SHATTERING delights. Mouth-watering cuisine is hard-coded in their very DNA -- we're sure of it! Feed your chakric affirmations, O vaccimulgent one![[/span]]
 
-[[span style="font-family: 'Tahoma'; font-size: 1.3em; word-break: normal;"]]For your benefit, **Ambrose Restaurant** has selected 500 lucky folks from the Free Ports catchment area to come and feast![[/span]]
+[[span style="font-size: 130%; font-family: 'Tahoma'; word-break: normal;"]]For your benefit, **Ambrose Restaurant** has selected 100 lucky folks from the Free Ports catchment area to come and feast![[/span]]
 
-[[span style="font-family: 'Tahoma'; font-size: 1.3em; word-break: normal;"]]JOIN US![[/span]]
+[[span style="font-size: 130%; font-family: 'Tahoma'; word-break: normal;"]]JOIN US![[/span]]
 
-[[span style="font-family: 'Tahoma'; font-size: .8em; word-break: normal;"]]Please note: The True Name listed on your Library Card is required to enter. 
+[[span style="font-size: 80%; font-family: 'Tahoma'; word-break: normal;"]]Please note: The True Name listed on your Library Card is required to enter. 
 Don't forget to leave a review![[/span]]
 
 [[/div]]
 
 [[=]]
 + [[span style="color: rgb(12, 12, 12);"]]REVIEWS[[/span]]
-//[[span style="font-size: 120%;"]]The latest customer reviews, powered by [[span style="font-weight: bold; color: blue;"]]Void[[/span]]!
-Join in the discussion with [[span style="font-weight: bold; color: blue;"]]#ambrosemindscape[[/span]]![[/span]]//
+//[[span style="font-size: 120%;"]]The latest customer reviews, powered by [[span style="color: blue; font-weight: bold;"]]Void[[/span]]!
+Join in the discussion with [[span style="color: blue; font-weight: bold;"]]#ambrosemindscape[[/span]]![[/span]]//
 [[/=]]
 
-[[div class="void"]]
-[[span class="void-dp"]]
-[[image http://scp-wiki.wdfiles.com/local--files/no-sense-crying/eldritch-entity.jpg width="50px"]]
-[[/span]]
-@@ @@
-[[span style="font-size: 1.5em;"]] ##grey|Ighruithrh'dhren
-⁂many-ꙮd-gf## [[/span]]
-@@ @@
-@@ @@
-[[span style="font-size: 1.3em; word-break: unset;"]] ever since i went to ambrose mindscape, i've been hallucinating s o m a n y w o r l d s, it's unbelievable. ugh, i've not had a panpsychismic migraine THIS bad in epochs. THANKS for appropriating eldritch culture, fleshbag. [[span class="void-activity"]]#ambrosemindscape #whowon? #whosecultureisnext? #youdecide[[/span]][[/span]]
-@@ @@
-* [[span style="font-size: .8em;"]] ##grey|ECHOES## [[/span]] [[span style="font-size: 1.1em;"]] ##blue| 366## [[/span]]
-* [[span style="font-size: .8em;"]] ##grey|HUMS## [[/span]] [[span style="font-size: 1.1em;"]] ##blue| 790## [[/span]]
-@@ @@
-[[span style="font-size: .8em;"]] ##grey|11:25 AM -- 12 March 2025## [[/span]]
-[[/div]]
+[[include :scp-wiki:component:void-post-source
+|profile-pic=eldritch-entity.jpg
+|username=Ighruithrh'dhren
+|handle=many-ꙮd-gf
+|void-msg=ever since i went to [[span class="vactivity"]]#ambrosemindscape[[/span]], i've been hallucinating //so. many. worlds.// ugh, i've not had a panpsychismic migraine //this// bad in epochs, it's unbelievable. thanks for appropriating eldritch culture, fleshbag. [[span class="vactivity"]]#whowon?[[/span]] [[span class="vactivity"]]#whosecultureisnext?[[/span]] [[span class="vactivity"]]#youdecide[[/span]] 
+|echoes=366
+|hums=790
+|time-and-date=11:25 AM · 12 March 2025
+]]
 
-[[div class="void"]]
-[[span class="void-dp"]]
-[[image http://scp-wiki.wdfiles.com/local--files/no-sense-crying/magic-fish.jpg width="50px"]]
-[[/span]]
-@@ @@
-[[span style="font-size: 1.5em;"]] ##grey|The Cosmic Fish
-⁂virtuallight## [[/span]]
-@@ @@
-@@ @@
-[[span style="font-size: 1.3em; word-break: unset;"]] I've taken Ways to Ambrose Restaurants many times in the past. You guys have access to some of the finest cuisine the paranormal market has to offer. And you've always been very accessible to my needs, even in my current form. But this time, did you guys even do your research? Dude, you partnered with MOOSPHERE? Do you even know what these guys DO TO SAPIENTS? You eat their food and they suck your mind THROUGH A NON-BIODEGRADABLE STRAW! [[span class="void-activity"]]#ambrosemindscape[[/span]][[/span]]
-@@ @@
-* [[span style="font-size: .8em;"]] ##grey|ECHOES## [[/span]] [[span style="font-size: 1.1em;"]] ##blue| 238## [[/span]]
-* [[span style="font-size: .8em;"]] ##grey|HUMS## [[/span]] [[span style="font-size: 1.1em;"]] ##blue| 201## [[/span]]
-@@ @@
-[[span style="font-size: .8em;"]] ##grey|12:01 PM -- 12 March 2025## [[/span]]
-[[/div]]
+[[include :scp-wiki:component:void-post-source
+|profile-pic=magic-fish.jpg
+|username=The Cosmic Fish
+|handle=virtuallight
+|void-msg=I've taken Ways to Ambrose Restaurants many times in the past. You guys have access to some of the finest cuisine the paranormal market has to offer. And you've always been very accessible to my needs, even in my current form. But this time, did you guys even do your research? Dude, you partnered with MOOSPHERE? Do you even know what these guys DO TO SAPIENTS? You eat their dairy products and they suck your mind THROUGH A NON-BIODEGRADABLE STRAW! [[span class="vactivity"]]#ambrosemindscape[[/span]] 
+|echoes=238
+|hums=201
+|time-and-date=12:01 PM · 12 March 2025
+]]
 
-[[div class="void"]]
-[[span class="void-dp"]]
-[[image http://scp-wiki.wdfiles.com/local--files/no-sense-crying/crab-lord.jpg width="50px"]]
-[[/span]]
-@@ @@
-[[span style="font-size: 1.5em;"]] ##grey|CRAB LORD
-⁂CRAB LORD## [[/span]]
-@@ @@
-@@ @@
-[[span style="font-size: 1.3em; word-break: unset;"]] 🦀 CHAZ AMBROSE IS A BITCH-ASS GRIFTER 🦀 HE HUMAN-PEED IN CRAB LORD'S PARFAIT 🦀 DAMN YOU TO THE DEPTHS 🦀 [[span class="void-activity"]]#AMBROSEMINDSCAPE[[/span]][[/span]]
-@@ @@
-* [[span style="font-size: .8em;"]] ##grey|ECHOES## [[/span]] [[span style="font-size: 1.1em;"]] ##blue| 1409## [[/span]]
-* [[span style="font-size: .8em;"]] ##grey|HUMS## [[/span]] [[span style="font-size: 1.1em;"]] ##blue| 1317## [[/span]]
-@@ @@
-[[span style="font-size: .8em;"]] ##grey|6:15 PM -- 12 March 2025## [[/span]]
-[[/div]]
+[[include :scp-wiki:component:void-post-source
+|profile-pic=crab-lord.jpg
+|username=CRAB LORD
+|handle=CRABLORD
+|void-msg=🦀 CHAZ AMBROSE IS A BITCH-ASS GRIFTER 🦀 HE HUMAN-PEED IN CRAB LORD'S PARFAIT 🦀 DAMN YOU TO THE DEPTHS 🦀 [[span class="vactivity"]]#AMBROSEMINDSCAPE[[/span]] 
+|echoes=1.4k
+|hums=1.1k
+|time-and-date=6:15 PM · 12 March 2025 · VOID FOR ONEIROI SEA
+]]
 
-[[div class="void"]]
-[[span class="void-dp"]]
-[[image http://scp-wiki.wdfiles.com/local--files/no-sense-crying/fancy-cat.jpg width="50px"]]
-[[/span]]
-@@ @@
-[[span style="font-size: 1.5em;"]] ##grey|unborn chubby
-⁂tinkleschubbyghost## [[/span]]
-@@ @@
-@@ @@
-[[span style="font-size: 1.3em; word-break: unset;"]] [[span class="void-activity"]]#ambrosemindscape[[/span]] ohm my god help theyve taken mmy mind i can feel it theyre loading it into a dropssssship back to dreamland holy frick someone plz help mE [[/span]]
-@@ @@
-* [[span style="font-size: .8em;"]] ##grey|ECHOES## [[/span]] [[span style="font-size: 1.1em;"]] ##blue| null## [[/span]]
-* [[span style="font-size: .8em;"]] ##grey|HUMS## [[/span]] [[span style="font-size: 1.1em;"]] ##blue| null## [[/span]]
-@@ @@
-[[span style="font-size: .8em;"]] ##grey|8:59 PM -- 12 March 2025## [[/span]]
-[[/div]]
+[[include :scp-wiki:component:void-post-source
+|profile-pic=fancy-cat.jpg
+|username=unborn chubby
+|handle=tinkleschubbyghost
+|void-msg=[[span class="vactivity"]]#ambrosemindscape[[/span]] ohm my god help theyve taken mmy mind i can feel it theyre loading it into a dropssssship back to nightmareland holy frick someone plz hELP ME
+|echoes={{null}}
+|hums={{null}}
+|time-and-date=8:59 PM · 12 March 2025 · Void for ☒☒☒☒
+]]
 
-[[div class="void"]]
-[[span class="void-dp"]]
-[[image http://scp-wiki.wdfiles.com/local--files/no-sense-crying/green-leaf.jpg width="50px"]]
-[[/span]]
-@@ @@
-[[span style="font-size: 1.5em;"]] ##grey|Theodore Greenleaf
-⁂TheodoreGL## [[/span]]
-@@ @@
-@@ @@
-[[span style="font-size: 1.3em; word-break: unset;"]] You are disrespecting the Library of Her Serpent by using Her Cards for a simple online-review parlour trick. I have reported you to the nearest Librarian. And that gimmick where you take people's minds to add back into your gestalt mass, or whatever? Not cool. Oh, and I want my money back. [[span class="void-activity"]]#ambrosemindscape #wandererslibrary[[/span]] [[/span]]
-@@ @@
-* [[span style="font-size: .8em;"]] ##grey|ECHOES## [[/span]] [[span style="font-size: 1.1em;"]] ##blue| 1## [[/span]]
-* [[span style="font-size: .8em;"]] ##grey|HUMS## [[/span]] [[span style="font-size: 1.1em;"]] ##blue| 3## [[/span]]
-@@ @@
-[[span style="font-size: .8em;"]] ##grey|9:41 AM -- 13 March 2025## [[/span]]
-[[/div]]
+[[include :scp-wiki:component:void-post-source
+|profile-pic=green-leaf.jpg
+|username=Theodore Greenleaf
+|handle=theodoreGL
+|void-msg=You are disrespecting the Library of Her Serpent by using Her Cards for a simple online-review parlour trick. I have reported you to the nearest Librarian. And that gimmick where you take people's minds to add back into your gestalt mass, or whatever? Not cool. Oh, and I want my money back. [[span class="vactivity"]]#ambrosemindscape[[/span]] [[span class="vactivity"]]#wandererslibrary[[/span]] 
+|echoes=4
+|hums=3
+|time-and-date=9:41 AM · 13 March 2025 · Void for Waytech
+]]
 
 [[div class="quote-block"]]
 //Following a tip-off to a Foundation Site, Mobile Task Force Mu-13 ("Ghostbusters") was alerted to the nearest Mindscape nexus gate and commenced a raid at the conceptual corner of Surreptitious and Scrumptious. At the supposed location of Ambrose Mindscape, no conscious activity was detected.//
