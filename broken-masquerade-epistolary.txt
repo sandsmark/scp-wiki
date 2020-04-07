@@ -28,29 +28,6 @@ title:Snippets of an Unveiled World
     word-break: unset;
 }
 
-/* VOID */
-div.void{
-    border: 1px solid lightgray;
-    background-color: #fff;
-    box-shadow: 2px 2px 2px 2px rgba(0,0,0,.1);
-    width: 24.67em;
-    padding: 0 0 0 .85em;
-    margin: .85em auto;
-}
-@media (max-width: 479px){
-    div.void{ width: auto; margin: .85em 0; }
-}
-@media (min-width: 480px) and (max-width: 580px){
-    div.void{ width: auto; margin: .43em; }
-}
-.void-dp{
-    float: left;
-    background-color: #fff;
-    padding: 0 .85em;
-    margin: .4em 0 0 .34em;
-}
-.void-activity{ color: blue; }
-
 /* REDDIT */
 .reddit-post{
     background-color: #fcfcfb; 
@@ -338,51 +315,35 @@ div.dado{
 
 //Select posts made on paranatural microblogging platform Void, as part of the trending hashtag [[span class="void-activity"]]#whentheVeilbroke[[/span]], 12 April 2023//:
 
-[[div class="void"]]
-[[span class="void-dp"]]
-[[image http://www.scp-wiki.net/local--files/deer-college-hub/reddeer.png width="55px"]]
-[[/span]]
-[[size 140%]] ##grey|DC Official
-⁂Deer College of Portlands## [[/size]]
-@@ @@
-[[size 140%]] The number of applications we received more than quadrupled [[span class="void-activity"]]#whentheVeilbroke[[/span]]. For more statistics, visit [[span class="void-activity"]]deercollege.odyssey.edu/dc-unmaskeddecade[[/span]] [[/size]]
-@@ @@
-* [[size 80%]] ##grey|ECHOES## [[/size]] [[size 110%]] [[span class="void-activity"]]25[[/span]] [[/size]]
-* [[size 80%]] ##grey|HUMS## [[/size]] [[size 110%]] [[span class="void-activity"]]101[[/span]] [[/size]]
-@@ @@
-[[size 80%]] ##grey|9:24 AM - 12 April 2023## [[/size]]
-[[/div]]
+[[include :topia:component:void-post-source
+|profile-pic=http://www.scp-wiki.net/local--files/deer-college-hub/reddeer.png
+|username=DC Official
+|handle=Deer College of Portlands
+|void-msg=The number of applications we received more than quadrupled [[span class="vactivity"]]#whentheVeilbroke[[/span]]. For more statistics, visit [[span class="vactivity"]]deercollege.odyssey.edu/dc-unmaskeddecade[[/span]] 
+|echoes=25
+|hums=101
+|time-and-date=9:24 AM · 12 April 2023
+]]
 
-[[div class="void"]]
-[[span class="void-dp"]]
-[[image http://scp-wiki.wdfiles.com/local--files/rainbow-crapitalism/bluntfiend.png width="55px"]]
-[[/span]]
-[[size 140%]] ##grey|bluntfiend
-⁂jude_k2## [[/size]]
-@@ @@
-[[size 140%]] [[span class="void-activity"]]#whentheVeilbroke[[/span]] i was shitposting w/ [[span class="void-activity"]]⁂jockjamsmixtape[[/span]] about thatcher when Bones muted everyone and linked us to the CNN live feed.[[/size]]
-@@ @@
-* [[size 80%]] ##grey|ECHOES## [[/size]] [[size 110%]] [[span class="void-activity"]]299[[/span]] [[/size]]
-* [[size 80%]] ##grey|HUMS## [[/size]] [[size 110%]] [[span class="void-activity"]]121[[/span]] [[/size]]
-@@ @@
-[[size 80%]]##grey|4:20 PM - 12 April 2023##[[/size]]
-[[/div]]
+[[include :topia:component:void-post-source
+|profile-pic=http://scp-wiki.wdfiles.com/local--files/rainbow-crapitalism/bluntfiend.png
+|username=bluntfiend
+|handle=jude_k2
+|void-msg=[[span class="vactivity"]]#whentheVeilbroke[[/span]] i was shitposting w/ [[span class="vactivity"]]⁂jockjamsmixtape[[/span]] about thatcher when Bones muted everyone and linked us to the CNN live feed.
+|echoes=299
+|hums=121
+|time-and-date=4:20 PM · 12 April 2023
+]]
 
-[[div class="void"]]
-[[span class="void-dp"]]
-[[image http://scp-wiki.wdfiles.com/local--files/parawatch-hub/rook4.png width="55px"]]
-[[/span]]
-[[size 140%]] ##grey|Rook
-⁂paradmin## [[/size]]
-@@ @@
-[[size 140%]] [[span class="void-activity"]]#whentheVeilbroke[[/span]] I couldn't down that bottle of Captain Morgan fast enough.[[/size]]
-@@ @@
-* [[size 80%]] ##grey|ECHOES## [[/size]] [[size 110%]] [[span class="void-activity"]]2.1k[[/span]] [[/size]]
-* [[size 80%]] ##grey|HUMS## [[/size]] [[size 110%]] [[span class="void-activity"]]451[[/span]] [[/size]]
-@@ @@
-[[size 80%]] ##grey|06:25 PM - 12 April 2023## [[/size]]
-[[/div]] 
-
+[[include :topia:component:void-post-source
+|profile-pic=http://scp-wiki.wdfiles.com/local--files/parawatch-hub/rook4.png
+|username=Rook
+|handle=paradmin
+|void-msg=[[span class="vactivity"]]#whentheVeilbroke[[/span]] I couldn't down that bottle of Captain Morgan fast enough.
+|echoes=2.1k
+|hums=451
+|time-and-date=6:25 PM · 12 April 2023
+]]
 ----
 ++++++  
 //Excerpts from a news segment on the opening of a new [[[scp-3739|Moosphere, Incorporated]]] production facility, 1 February 2025://
