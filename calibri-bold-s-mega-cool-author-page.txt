@@ -1,116 +1,6 @@
 title:Calibri Bold's Mega Cool Author Page
 [[include :scp-wiki:component:black-highlighter-theme-dev]]
 
-[[module css]]
-
-.infobox {
- display:inline-box;
- overflow:hidden;
- position:fixed;
- right: 1em;
- bottom: 2em;
- width: 21%;
- width: calc(50vw - 520px);
- min-width: 250px;
- height:23%;
- padding:1%;
- float:top; 
- box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 6px 20px 0 rgba(0, 0, 0, 0.19);
- background-color:#ffffff;
- opacity: 1;
- transition: all 0.5s ease-out;
-}
-
-.infobox:hover {
-  color:rgba(0, 0, 0, 0.5);
-  background-color:rgba(255, 255, 255, 0.5);
-}
-
-.preview{
- color:grey;
- width:100%;
- display: inline-block;
- padding-left:1%;
- transition: box-shadow 1s ease-out;
-}
-
-.preview:hover{
- box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.19);
- transition: box-shadow 0.3s ease-out;
-}
-
-.preview.yes:hover, .preview.true:hover{
-  background: url('http://scpsandboxcn.wikidot.com/local--files/asriel3/logo.png') 80% 50% fixed no-repeat;
-}
-
-.preview .span { 
- opacity: 0;
- pointer-events: none;
- transition: all 0.3s ease-in-out;
- text-overflow:ellipsis;
- position:fixed;
- z-index: 11;
- right: 1em;
- bottom: 2em;
- width:21%;
- width: calc(50vw - 520px);
- min-width: 250px;
- height:23%;
- padding:1%;
- float:top; 
- color:grey;
- text-size:0.9em;
- font-family:Segoe UI Light,Verdana,sans-serif;
-}
-
-.preview:hover .span { 
- opacity: 1;
- background-color:#ffffff;
-}
-
-.collab-header{
- display:none;
-}
-
-.imagepre{
- background:#fff;
- max-width:80%;
- position:absolute;
- right: 1em;
- bottom:calc(100% - 1em);
- box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.imagepre.\{\$image\} {
-display:none
-}
-
-.sortbar.no{
-display:none
-}
-
-@media screen and (max-width:992px) {
-    .preview .span{
-    	display: none;
-    }
-    .infobox {
-    	position: relative;
-    	margin: 1em auto;
-    	right: 0;
-    	bottom: 0;
-    }
-}
-
-#page-options-container {
- background: transparent;
- position: relative;
- z-index: 10;
-}
-
-#action-area { position: relative; z-index: 20; }
-
-[[/module]]
-
 [[>]]
 [[module Rate]]
 [[/>]]
@@ -761,4 +651,5 @@ Cal looks at the bowl and a frown appears on his face. "Oh. The candy corn's all
 
 This tab is just for testing code or whatever that I can't test on a sandbox.
 
+[[/tab]]
 [[/tabview]]
