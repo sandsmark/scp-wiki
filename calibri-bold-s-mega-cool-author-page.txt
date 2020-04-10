@@ -168,6 +168,133 @@ I might comment on your thing and say that it's mega cool. It has no official we
 [[/tab]]
 [[tab My Articles]]
 
+[[div class="infobox"]]
+@@@@
+= [[size large]]__**Random**__[[/size]]
+[[=]]
+[[module Listpages created_by="=" tag="-author -workbench -contest -splash -supplement -translation" category="-fragment -component" limit="1" order="random"]]
+[[[*%%link%%|Article]]] \
+[[/module]] \
+[[module Listpages created_by="=" tag="+scp -author -workbench -contest -splash -supplement -translation" category="-fragment -component" limit="1" order="random"]]
+[[[*%%link%%|SCP]]] \
+[[/module]] \
+[[module Listpages created_by="=" tag="+tale -author -workbench -contest -splash -supplement -translation" category="-fragment -component" limit="1" order="random"]]
+[[[*%%link%%|Tale]]] \
+[[/module]] \
+[[module Listpages created_by="=" tag="-author -workbench -contest -splash -supplement -translation" category="-fragment -component" limit="1" order="random"]]
+[[[*%%link%%|GoI Format]]] \
+[[/module]] \
+[[/=]]
+[[module Listpages created_by="=" tag="-author -workbench -contest -splash -supplement -translation" category="-fragment -component" limit="1" order="random"]]
+= {{**%%created_by_linked%%**}}
+[[/module]]
+[[module Countpages created_by="=" tag="-workbench -contest" category="-fragment -component"]]
+= %%total%% Pages
+[[/module]]
+[[/div]]
+
+[!-- SCP Block: Auto disabled if none --]
+[[module Listpages created_by="=" tag="-translation +scp -co-authored" category="-fragment -component" limit="1"]]
+[[div style="text-align: center;"]]
+-----
+++ SCPs
+-----
+[[/div]]
+[[/module]]
+
+[[module Listpages created_by="=" order="@URL|{$order}" tag="-translation +scp -co-authored" category="-fragment -component" perPage="{$perPage}"]]
+[[div class="preview yes"]]
+**%%title_linked%%**
+ +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
+//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
+//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
+[[/div]]
+[[/module]]
+
+[!-- Tale Block: Auto disabled if none --]
+[[module Listpages created_by="=" tag="-translation +tale -co-authored" category="-fragment -component" limit="1"]]
+[[div style="text-align: center;"]]
+-----
+++ Tales
+-----
+[[/div]]
+[[/module]]
+
+[[module Listpages created_by="=" order="@URL|{$order}" tag="-translation +tale -co-authored" category="-fragment -component" perPage="{$perPage}"]]
+[[div class="preview yes"]]
+**%%title_linked%%**
+ +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
+//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
+//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
+[[/div]]
+[[/module]]
+
+[!-- GoI Block: Auto disabled if none --]
+[[module Listpages created_by="=" category="-fragment -component" tag="-translation +goi-format -co-authored" limit="1"]]
+[[div style="text-align: center;"]]
+-----
+++ GoI Formats
+-----
+[[/div]]
+[[/module]]
+
+[[module Listpages created_by="=" order="@URL|{$order}" category="-fragment -component" tag="-translation +goi-format -co-authored" perPage="{$perPage}"]]
+[[div class="preview yes"]]
+**%%title_linked%%**
+ +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
+//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
+//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
+[[/div]]
+[[/module]]
+
+[!-- Others Block: Auto disabled if none --]
+[[module Listpages created_by="=" category="-fragment -component" tag="-scp -tale -goi-format -co-authored" limit="1"]]
+[[div style="text-align: center;"]]
+-----
+++ Others
+-----
+[[/div]]
+[[/module]]
+
+[[module Listpages created_by="=" order="@URL|{$order}" category="-fragment -component" tag="-scp -tale -goi-format -co-authored" perPage="{$perPage}"]]
+[[div class="preview yes"]]
+**%%title_linked%%**
+ +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
+//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
+//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
+[[/div]]
+[[/module]]
+
+[[module Listpages created_by="=" category="-fragment -component" tag="+co-authored" limit="1"]]
+[[div style="text-align: center;"]]
+-----
+++ Co-Authored
+-----
+[[/div]]
+[[/module]]
+
+[[module Listpages fullname="scp-194" category="*"]]
+[[div class="preview yes"]]
+**%%title_linked%%**
+ +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
+[[span class="written_by **Calibri Bold and CityToast**"]]//Written by:// **Calibri Bold** and **CityToast** [[/span]][[span class="collabnote {$note}"]]{$note}[[/span]]
+//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
+//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
+[[/div]]
+[[/module]]
+
+[[div style="text-align: center;"]]
+-----
+++ Foreign
+-----
+[[/div]]
+
+[[div class="preview yes"]]
+**[http://scp-int.wikidot.com/scp-002-la SCP-002-LA]**
+//Language:// **Latin**
+//Original Article:// **[http://scp-la.wikidot.com/scp-la-002 SCP-LA-II]**
+[[/div]]
+
 [[/tab]]
 [[tab Author Commentary]]
 
@@ -762,133 +889,6 @@ Cal looks at the bowl and a frown appears on his face. "Oh. The candy corn's all
 [[tab Experimental Stuff]]
 
 This tab is just for testing code or whatever that I can't test on a sandbox.
-
-[[div class="infobox"]]
-@@@@
-= [[size large]]__**Random**__[[/size]]
-[[=]]
-[[module Listpages created_by="=" tag="-author -workbench -contest -splash -supplement -translation" category="-fragment -component" limit="1" order="random"]]
-[[[*%%link%%|Article]]] \
-[[/module]] \
-[[module Listpages created_by="=" tag="+scp -author -workbench -contest -splash -supplement -translation" category="-fragment -component" limit="1" order="random"]]
-[[[*%%link%%|SCP]]] \
-[[/module]] \
-[[module Listpages created_by="=" tag="+tale -author -workbench -contest -splash -supplement -translation" category="-fragment -component" limit="1" order="random"]]
-[[[*%%link%%|Tale]]] \
-[[/module]] \
-[[module Listpages created_by="=" tag="-author -workbench -contest -splash -supplement -translation" category="-fragment -component" limit="1" order="random"]]
-[[[*%%link%%|GoI Format]]] \
-[[/module]] \
-[[/=]]
-[[module Listpages created_by="=" tag="-author -workbench -contest -splash -supplement -translation" category="-fragment -component" limit="1" order="random"]]
-= {{**%%created_by_linked%%**}}
-[[/module]]
-[[module Countpages created_by="=" tag="-workbench -contest" category="-fragment -component"]]
-= %%total%% Pages
-[[/module]]
-[[/div]]
-
-[!-- SCP Block: Auto disabled if none --]
-[[module Listpages created_by="=" tag="-translation +scp -co-authored" category="-fragment -component" limit="1"]]
-[[div style="text-align: center;"]]
------
-++ SCPs
------
-[[/div]]
-[[/module]]
-
-[[module Listpages created_by="=" order="@URL|{$order}" tag="-translation +scp -co-authored" category="-fragment -component" perPage="{$perPage}"]]
-[[div class="preview yes"]]
-**%%title_linked%%**
- +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
-//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
-//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
-[[/div]]
-[[/module]]
-
-[!-- Tale Block: Auto disabled if none --]
-[[module Listpages created_by="=" tag="-translation +tale -co-authored" category="-fragment -component" limit="1"]]
-[[div style="text-align: center;"]]
------
-++ Tales
------
-[[/div]]
-[[/module]]
-
-[[module Listpages created_by="=" order="@URL|{$order}" tag="-translation +tale -co-authored" category="-fragment -component" perPage="{$perPage}"]]
-[[div class="preview yes"]]
-**%%title_linked%%**
- +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
-//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
-//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
-[[/div]]
-[[/module]]
-
-[!-- GoI Block: Auto disabled if none --]
-[[module Listpages created_by="=" category="-fragment -component" tag="-translation +goi-format -co-authored" limit="1"]]
-[[div style="text-align: center;"]]
------
-++ GoI Formats
------
-[[/div]]
-[[/module]]
-
-[[module Listpages created_by="=" order="@URL|{$order}" category="-fragment -component" tag="-translation +goi-format -co-authored" perPage="{$perPage}"]]
-[[div class="preview yes"]]
-**%%title_linked%%**
- +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
-//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
-//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
-[[/div]]
-[[/module]]
-
-[!-- Others Block: Auto disabled if none --]
-[[module Listpages created_by="=" category="-fragment -component" tag="-scp -tale -goi-format -co-authored" limit="1"]]
-[[div style="text-align: center;"]]
------
-++ Others
------
-[[/div]]
-[[/module]]
-
-[[module Listpages created_by="=" order="@URL|{$order}" category="-fragment -component" tag="-scp -tale -goi-format -co-authored" perPage="{$perPage}"]]
-[[div class="preview yes"]]
-**%%title_linked%%**
- +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
-//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
-//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
-[[/div]]
-[[/module]]
-
-[[module Listpages created_by="=" category="-fragment -component" tag="+co-authored" limit="1"]]
-[[div style="text-align: center;"]]
------
-++ Co-Authored
------
-[[/div]]
-[[/module]]
-
-[[module Listpages fullname="scp-194" category="*"]]
-[[div class="preview yes"]]
-**%%title_linked%%**
- +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
-[[span class="written_by **Calibri Bold and CityToast**"]]//Written by:// **Calibri Bold** and **CityToast** [[/span]][[span class="collabnote {$note}"]]{$note}[[/span]]
-//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
-//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
-[[/div]]
-[[/module]]
-
-[[div style="text-align: center;"]]
------
-++ Foreign
------
-[[/div]]
-
-[[div class="preview yes"]]
-**[http://scp-int.wikidot.com/scp-002-la SCP-002-LA]**
-//Language:// **Latin**
-//Original Article:// **[http://scp-la.wikidot.com/scp-la-002 SCP-LA-II]**
-[[/div]]
 
 [[/tab]]
 [[/tabview]]
