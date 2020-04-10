@@ -761,27 +761,4 @@ Cal looks at the bowl and a frown appears on his face. "Oh. The candy corn's all
 
 This tab is just for testing code or whatever that I can't test on a sandbox.
 
-[!-- SCP Block: Auto disabled if none --]
-[[module Listpages created_by="=" tag="-translation +scp" category="-fragment -component" limit="1"]]
-[[div style="text-align: center;"]]
------
-++ SCPs
------
-[[/div]]
-[[/module]]
-
-[[module Listpages created_by="=" order="@URL|{$order}" tag="-translation +scp" category="-fragment -component" perPage="{$perPage}"]]
-[[div class="preview {$background}"]]
-**%%title_linked%%**
- +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
-//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
-//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
-[[div class="span"]]
-[[image :first class="imagepre {$image}"]]
-%%preview%%
-##000000|//tags://## %%tags%%
-[[/div]]
-[[/div]]
-[[/module]]
-
 [[/tabview]]
