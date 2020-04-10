@@ -762,7 +762,7 @@ Cal looks at the bowl and a frown appears on his face. "Oh. The candy corn's all
 This tab is just for testing code or whatever that I can't test on a sandbox.
 
 [!-- SCP Block: Auto disabled if none --]
-[[module Listpages created_by="=" tag="-translation +scp" category="-fragment -component" limit="1"]]
+[[module Listpages created_by="=" tag="-translation +scp -co-authored" category="-fragment -component" limit="1"]]
 [[div style="text-align: center;"]]
 -----
 ++ SCPs
@@ -770,7 +770,7 @@ This tab is just for testing code or whatever that I can't test on a sandbox.
 [[/div]]
 [[/module]]
 
-[[module Listpages created_by="=" order="@URL|{$order}" tag="-translation +scp" category="-fragment -component" perPage="{$perPage}"]]
+[[module Listpages created_by="=" order="@URL|{$order}" tag="-translation +scp -co-authored" category="-fragment -component" perPage="{$perPage}"]]
 [[div class="preview {$background}"]]
 **%%title_linked%%**
  +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
@@ -785,7 +785,7 @@ This tab is just for testing code or whatever that I can't test on a sandbox.
 [[/module]]
 
 [!-- Tale Block: Auto disabled if none --]
-[[module Listpages created_by="=" tag="-translation +tale" category="-fragment -component" limit="1"]]
+[[module Listpages created_by="=" tag="-translation +tale -co-authored" category="-fragment -component" limit="1"]]
 [[div style="text-align: center;"]]
 -----
 ++ Tales
@@ -793,7 +793,7 @@ This tab is just for testing code or whatever that I can't test on a sandbox.
 [[/div]]
 [[/module]]
 
-[[module Listpages created_by="=" order="@URL|{$order}" tag="-translation +tale" category="-fragment -component" perPage="{$perPage}"]]
+[[module Listpages created_by="=" order="@URL|{$order}" tag="-translation +tale -co-authored" category="-fragment -component" perPage="{$perPage}"]]
 [[div class="preview"]]
 **%%title_linked%%**
  +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
@@ -808,7 +808,7 @@ This tab is just for testing code or whatever that I can't test on a sandbox.
 [[/module]]
 
 [!-- GoI Block: Auto disabled if none --]
-[[module Listpages created_by="=" category="-fragment -component" tag="-translation +goi-format" limit="1"]]
+[[module Listpages created_by="=" category="-fragment -component" tag="-translation +goi-format -co-authored" limit="1"]]
 [[div style="text-align: center;"]]
 -----
 ++ GoI Formats
@@ -816,7 +816,7 @@ This tab is just for testing code or whatever that I can't test on a sandbox.
 [[/div]]
 [[/module]]
 
-[[module Listpages created_by="=" order="@URL|{$order}" category="-fragment -component" tag="-translation +goi-format" perPage="{$perPage}"]]
+[[module Listpages created_by="=" order="@URL|{$order}" category="-fragment -component" tag="-translation +goi-format -co-authored" perPage="{$perPage}"]]
 [[div class="preview {$background}"]]
 **%%title_linked%%**
  +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
@@ -831,7 +831,7 @@ This tab is just for testing code or whatever that I can't test on a sandbox.
 [[/module]]
 
 [!-- Others Block: Auto disabled if none --]
-[[module Listpages created_by="=" category="-fragment -component" tag="-scp -tale -goi-format" limit="1"]]
+[[module Listpages created_by="=" category="-fragment -component" tag="-scp -tale -goi-format -co-authored" limit="1"]]
 [[div style="text-align: center;"]]
 -----
 ++ Others
@@ -840,28 +840,6 @@ This tab is just for testing code or whatever that I can't test on a sandbox.
 [[/module]]
 
 [[module Listpages created_by="=" order="@URL|{$order}" category="-fragment -component" tag="-scp -tale -goi-format -co-authored" perPage="{$perPage}"]]
-[[div class="preview {$background}"]]
-**%%title_linked%%**
- +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
-//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
-//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
-[[div class="span"]]
-[[image :first class="imagepre {$image}"]]
-%%preview%%
-##000000|//tags://## %%tags%%
-[[/div]]
-[[/div]]
-[[/module]]
-
-[[module Listpages created_by="=" category="-fragment -component" tag="+co-authored" limit="1"]]
-[[div style="text-align: center;"]]
------
-++ Co-Authored
------
-[[/div]]
-[[/module]]
-
-[[module Listpages created_by="=" order="@URL|{$order}" category="-fragment -component" tag="+co-authored" perPage="{$perPage}"]]
 [[div class="preview {$background}"]]
 **%%title_linked%%**
  +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
