@@ -878,5 +878,26 @@ This tab is just for testing code or whatever that I can't test on a sandbox.
 [[/div]]
 [[/module]]
 
+[[div style="text-align: center;"]]
+-----
+++ Foreign
+-----
+[[/div]]
+
+[[module Listpages fullname="scp-194" category="*"]]
+[[div class="preview {$background}"]]
+**%%title_linked%%**
+ +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
+[[span class="written_by Latin"]]//Language:// Latin [[/span]][[span class="collabnote {$note}"]]{$note}[[/span]]
+//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
+//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
+[[div class="span"]]
+[[image :first class="imagepre {$image}"]]
+%%preview%%
+##000000|//tags://## %%tags%%
+[[/div]]
+[[/div]]
+[[/module]]
+
 [[/tab]]
 [[/tabview]]
