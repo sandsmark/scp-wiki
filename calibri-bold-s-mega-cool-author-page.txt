@@ -160,12 +160,6 @@ I might comment on your thing and say that it's mega cool. It has no official we
 [[/tab]]
 [[tab My Articles]]
 
-[[include component:author-page
-  order=created_at |
-  perpage=100 |
-  sortbar=no |
-]]
-
 [[/tab]]
 [[tab Author Commentary]]
 
@@ -840,7 +834,7 @@ This tab is just for testing code or whatever that I can't test on a sandbox.
 [[/module]]
 
 [[module Listpages created_by="=" order="@URL|{$order}" category="-fragment -component" tag="-scp -tale -goi-format -co-authored" perPage="{$perPage}"]]
-[[div class="preview http://www.scp-wiki.net/local--files/calibri-s-mega-cool-art-page-it-s-mostly-just-icons-but-what/Mega%20Cool%20Background"]]
+[[div class="preview {$background}"]]
 **%%title_linked%%**
  +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
 //Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
