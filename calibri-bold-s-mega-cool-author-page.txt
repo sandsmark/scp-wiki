@@ -834,13 +834,13 @@ This tab is just for testing code or whatever that I can't test on a sandbox.
 [[/module]]
 
 [[module Listpages created_by="=" order="@URL|{$order}" category="-fragment -component" tag="-scp -tale -goi-format -co-authored" perPage="{$perPage}"]]
-[[div class="preview {$background}"]]
+[[div class="preview yes"]]
 **%%title_linked%%**
  +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
 //Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
 //Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
 [[div class="span"]]
-[[image :first class="imagepre yes"]]
+[[image :first class="imagepre {$image}"]]
 %%preview%%
 ##000000|//tags://## %%tags%%
 [[/div]]
