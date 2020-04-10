@@ -757,4 +757,118 @@ Cal looks at the bowl and a frown appears on his face. "Oh. The candy corn's all
 [[/module]]
 
 [[/tab]]
+[[tab Experimental Stuff]]
+
+This tab is just for testing code or whatever that I can't test on a sandbox.
+
+[[div class="infobox"]]
+@@@@
+[[module Listpages created_by="=" tag="-author -workbench -contest -splash -supplement -translation" category="-fragment -component" limit="1" order="random"]]
+= **[[[*%%link%%|Random Work!]]]**
+
+= {{**%%created_by_linked%%**}}
+[[/module]]
+[[module Countpages created_by="=" tag="-workbench -contest" category="-fragment -component"]]
+= %%total%% Pages
+[[/module]]
+[[/div]]
+
+[[div class="sortbar {$sortbar}"]]
+[[module ListPages fullname="="]]
+= [http://scp-wiki-cn.wikidot.com/%%fullname%%/order/created_at  Chronological order] | [http://scp-wiki-cn.wikidot.com/%%fullname%%/order/created_at%20desc  Recently posted] | [http://scp-wiki-cn.wikidot.com/%%fullname%%/order/rating%20desc  Top rated]  | [http://scp-wiki-cn.wikidot.com/%%fullname%%/order/updated_at%20desc/category/* Recently updated]
+[[/module]]
+[[/div]]
+
+[!-- SCP Block: Auto disabled if none --]
+[[module Listpages created_by="=" tag="-translation +scp" category="-fragment -component" limit="1"]]
+[[div style="text-align: center;"]]
+-----
+++ SCPs
+-----
+[[/div]]
+[[/module]]
+
+[[module Listpages created_by="=" order="@URL|{$order}" tag="-translation +scp" category="-fragment -component" perPage="{$perPage}"]]
+[[div class="preview {$background}"]]
+**%%title_linked%%**
+ +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
+//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
+//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
+[[div class="span"]]
+[[image :first class="imagepre {$image}"]]
+%%preview%%
+##000000|//tags://## %%tags%%
+[[/div]]
+[[/div]]
+[[/module]]
+
+[!-- Tale Block: Auto disabled if none --]
+[[module Listpages created_by="=" tag="-translation +tale" category="-fragment -component" limit="1"]]
+[[div style="text-align: center;"]]
+-----
+++ Tales
+-----
+[[/div]]
+[[/module]]
+
+[[module Listpages created_by="=" order="@URL|{$order}" tag="-translation +tale" category="-fragment -component" perPage="{$perPage}"]]
+[[div class="preview"]]
+**%%title_linked%%**
+ +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
+//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
+//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
+[[div class="span"]]
+[[image :first class="imagepre {$image}"]]
+%%preview%%
+##000000|//tags://## %%tags%%
+[[/div]]
+[[/div]]
+[[/module]]
+
+[!-- GoI Block: Auto disabled if none --]
+[[module Listpages created_by="=" category="-fragment -component" tag="-translation +goi-format" limit="1"]]
+[[div style="text-align: center;"]]
+-----
+++ GoI Formats
+-----
+[[/div]]
+[[/module]]
+
+[[module Listpages created_by="=" order="@URL|{$order}" category="-fragment -component" tag="-translation +goi-format" perPage="{$perPage}"]]
+[[div class="preview {$background}"]]
+**%%title_linked%%**
+ +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
+//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
+//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
+[[div class="span"]]
+[[image :first class="imagepre {$image}"]]
+%%preview%%
+##000000|//tags://## %%tags%%
+[[/div]]
+[[/div]]
+[[/module]]
+
+[!-- Others Block: Auto disabled if none --]
+[[module Listpages created_by="=" category="-fragment -component" tag="-scp -tale -goi-format" limit="1"]]
+[[div style="text-align: center;"]]
+-----
+++ Others
+-----
+[[/div]]
+[[/module]]
+
+[[module Listpages created_by="=" order="@URL|{$order}" category="-fragment -component" tag="-scp -tale -goi-format" perPage="{$perPage}"]]
+[[div class="preview {$background}"]]
+**%%title_linked%%**
+ +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
+//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
+//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
+[[div class="span"]]
+[[image :first class="imagepre {$image}"]]
+%%preview%%
+##000000|//tags://## %%tags%%
+[[/div]]
+[[/div]]
+[[/module]]
+
 [[/tabview]]
