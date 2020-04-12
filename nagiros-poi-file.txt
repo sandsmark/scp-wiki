@@ -1,202 +1,185 @@
-title:Nagiros' PoI File
-[[div style="border-style: solid dashed; border-color: #55CDFC #F7A8B8; padding: 10px; margin-bottom: 50px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)"]]
-[[=]]
-+++* 🦀 NOTICE FROM A RAD CRAB WITCH 🦀
-[[div style="border-bottom: 2px solid black; margin: 0 2em"]]
-[[/div]]
-[[div style="line-spacing: 150%"]]
-I'm currently in the process of slimming down and simplifying this author page, moving certain content over to my [http://nagiros.wikidot.com/ personal wiki]. This is an ongoing project and that wiki is mostly just using Sigma-9 at the moment. Expect that to change.
-[[/div]]
-[[/=]]
-[[/div]]
-
-[[include component:scp-trans-pride |trans-pride-logo= --] |trans-pride-footer= --]]]
-
+title:The Crab Den
 [[module CSS]]
+@import url("/nagiros-poi-file/code/1");
 
-div#container-wrap {
-    background: url(http://smlt.wdfiles.com/local--files/ashburystreet%3A7/body_bg_deda.png) top left repeat-x;
+h1 a {
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
 }
-
-/* SCROLLBAR */
-::-webkit-scrollbar-thumb
-{
-  background: linear-gradient(to bottom, #55CDFC, #F7A8B8, #FFFFFF, #F7A8B8, #55CDFC);;
-  border-radius: 5px;
-  border: 1px solid black;
+h1 a:hover {
+  font-size: 150%;
+  text-decoration: none;
+  text-shadow: 0px 0px 6px black;
 }
-
-/* TAGS */
-#main-content .page-tags a {
-  line-height: 13px;
-  font-size: 11px;
-  border: solid 3px #55CDFC;
-  background: #F7A8B8;
-  color: white;
-  border-radius: 0.25rem;
-  margin-bottom: .5rem;
-  padding: 0 0.3125rem 0.15625rem 0.3125rem;
+.heading h1 {
+  border-bottom: 1px solid #f2f2f2;
+}
+.yui-content #wiki-tab-0-1 table.wiki-content-table tbody tr th,
+.yui-content #wiki-tab-0-1 table.wiki-content-table tbody tr td {
+  padding: 10px;
+}
+.yui-content #wiki-tab-0-1 table.wiki-content-table tbody tr td:nth-child(2) {
+  text-align: center;
 }
  
-.page-tags span {
-  border-top: .5rem solid transparent;
-}
-/* ACHIEVEMENTS */
-.content-panel standalone {
-text-align: center;
-}
-[[/module]]
-
-[[module CSS]]
 /*
-    SITE-17 THEME
-    [2019 Wikidot Theme]
-    Created by Nagiros
-    CC BY-SA 3.0
+    Night Rush Theme
+    [2020 Wikidot Theme]
+    Created for The Crab Den by Nagiros
+    Obviously based on the Sigma-9 Theme for the SCP Foundation by Aelanna
 */
  
-/* BREADCRUMBS, PAGE TITLE, H1 */
+/* COMMON */
  
-h1, #page-title {
-    color: #000051;
+h1, h2, h3, h4, h5, h6, h7, #page-title {
+    color: #f2f2f2;
 }
- 
 #page-title {
-    border-bottom: solid 1px #000051;
+    border-color: #f2f2f2;
 }
- 
-/* LOGO */
-div#header {
-    background: url(http://scp-wiki.wdfiles.com/local--files/nagiros-poi-file/header17) 10px 40px no-repeat;
+ins, del {
+    color: black;
 }
- 
-/* LINK COLOR */
-a {
-    color: rgb(88, 54, 173);
-}
-a.newpage {
-    color: rgb(88, 54, 173);
-}
-#side-bar a:visited{ 
-    color: rgb(88, 54, 173);
+a, #side-bar a:visited {
+    color: #8870DF;
 }
 a:visited {
-    color: rgb(88, 54, 173);
+  color: #6b51c9;
+}
+a.newpage {
+    color: #cc9cff;
 }
  
-/* SIDE BAR MODS */
+body {
+    background: #1a1a1a;
+    color: #c7c7c7;
+}
+div#container-wrap {
+    background-image: url(http://nagiros.wdfiles.com/local--files/component%3Atheme/nightrush-header.png);
+}
+ 
+/* HEADER */
+#header {
+    background-image: url(http://scp-wiki.wdfiles.com/local--files/component%3Ascp-trans-pride/TransSCPlogo.png);
+}
+#login-status ul a {
+    color: #f2f2f2;
+    background: #1a1a1a;
+    border-color: #f2f2f2;
+}
+#login-status ul a:hover {
+    color: #e6e6e6;
+}
+ 
+/* Makes the code readable */
+.hl-identifier, .hl-code, .hl-brackets {
+    color: #f2f2f2;
+}
+ 
+/* TOP MENU */
+#top-bar a {
+    color: #e6e6e6;
+}
+ 
+#top-bar ul li ul {
+    border-color: #ffffff;
+}
+ 
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    background: #262626;
+    color: #e6e6e6;
+}
+ 
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+    border-top-color: #ffffff;
+}
+ 
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: #000000;
+    color: #e6e6e6;
+}
+#top-bar ul li ul a, #top-bar a:hover {
+    color: #8870DF;
+}
+ 
+/* SIDE MENU */
+div#side-bar div.side-block {
+    background: rgb(24, 24, 24) !important;
+    box-shadow: 0 2px 6px #404040;
+    border-radius: 0px;
+    border-width: 2px;
+    border-color: white;
+}
+ 
+div#side-bar div.side-block div.heading {
+    color: #f2f2f2;
+    border-color: #f2f2f2;
+}
+ 
+/* Recolors the image bullet points in the side-bar */
+.side-block .menu-item > .image {
+    filter: hue-rotate(335deg) grayscale(0.1);
+}
 #side-bar {
-    display: block;
     background: transparent;
 }
-#side-bar a:visited{
-    color: rgb(88, 54, 173);
+#side-bar a, #side-bar a:visited{
+    color: #f2f2f2;
+}
+#side-bar div.menu-item.inactive a {
+    color: #8870DF;
+}
+#side-bar div.menu-item .sub-text {
+    color: #666;
 }
  
-/* HEADER TEXT */
-div#header h1 a span {
-    font-size: 0px;
-}
-div#header h1 a:before {
-    content: "Nagi's PoI File";
-    color: #eee;
-}
-div#header h2 span {
-    font-size:0px;
-    padding: 4px;
-}
-div#header h2:after {
-    content: "You're my UwU in a sea of OwOs.";
-    font-weight: bold;
-    color: #f0f0c0;
-    padding: 19px 0;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
-    white-space: pre;
-}
-div#side-bar div.side-block {
-    border: 1px solid rgb(88, 54, 173);
-    border-radius: 0px
-}
- 
-/* IMAGE BLOCK BORDER */
-.scp-image-block {
-  border: solid 1px rgb(108, 108, 255, .5);
-}
-.scp-image-block .scp-image-caption {
-  border-top: solid 1px rgb(108, 108, 255, .5);
-}
- 
-/* RATINGS */
-.page-rate-widget-box .rate-points {
-  background-color: #000098 !important;
-  border: solid 1px #000098;
-}
-.page-rate-widget-box .rateup,
-.page-rate-widget-box .ratedown {
-  background-color: #f0ffff;
-  border-top: solid 1px #000098;
-  border-bottom: solid 1px #000098;
-}
-.page-rate-widget-box .rateup a,
-.page-rate-widget-box .ratedown a {
-  background: transparent;
-  color: #5836AD;
-}
-.page-rate-widget-box .rateup a:hover,
-.page-rate-widget-box .ratedown a:hover {
-  background: #000098;
-  color: #f0ffff;
-}
-.page-rate-widget-box .cancel {
-  background: transparent;
-  background-color: #000098;
-  border: solid 1px #000098;
-}
-.page-rate-widget-box .cancel a {
-  color: #f0ffff;
-}
-.page-rate-widget-box .cancel a:hover {
-  background: #f0ffff;
-  color: #5836AD;
-}
- 
-/* INFO MODULE */
-#page-content .rate-box-with-credit-button {
-    background-color: #000098;
-    border-color: #000098;
-    border-radius: 5px;
-    box-shadow: 1px 1px 3px rgba(0,0,0,.5);
-}
-#page-content .creditButton p a {
-    border-left-color: #f0ffff;
-}
- 
-#page-content .modalbox {
-    box-shadow: 0 2px 6px rgba(50,0,50,.5);
-}
- 
-.close-credits,
-.credit-back {
-    filter: hue-rotate(275deg);
-}
-
-/* TAB STUFF */
+/* YUI-TABS */
 /* Courtesy of the Anderson Robotics Theme by Croquembouche, from which this was modified. */
- 
-div.yui-navset ul.yui-nav .selected a,
-div.yui-navset ul.yui-nav .selected a:focus,
-div.yui-navset ul.yui-nav .selected a:hover {
-    color: #0000bf;
+.yui-navset .yui-content{
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: 1px solid #f2f2f2;
+    position: relative;
+    margin-top: 0.2em;
+    transform-origin: 0 0;
 }
-yui-navset.yui-navset-top {
-    border-left: 3px solid #295183;
-    border-left: 3px solid #611e22;
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    background-color: rgb(24, 24, 24);
+    color: #c7c7c7;
+    border: 0;
+}
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus, /* no focus effect for selected */
+.yui-navset .yui-nav .selected a:hover { /* no hover effect for selected */
+    background: rgb(50, 50, 50);
+    background-image: none;
+    color: #f2f2f2;
+    padding: 0;
+}
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    background: rgb(40, 40, 40) repeat-x left -1300px;
+    text-decoration: none;
+    color: #f2f2f2;
 }
 .yui-navset .yui-nav {
     position: relative;
     z-index: 0;
     border: none;
     padding-left: 0.2em;
+}
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    border-color: #f2f2f2;
+}
+.yui-navset li {
+    line-height: normal;
 }
 .yui-navset .yui-nav li {
     padding: 0;
@@ -206,15 +189,10 @@ yui-navset.yui-navset-top {
 .yui-navset .yui-nav li a {
     background: transparent;
     color: #5f6368;
-    border: 1px solid rgba(0,0,0,0.12);
+    border: 0;
     transition: background 0.1s ease-in-out,
                 color 0.1s ease-in-out,
                 border 0.1s ease-in-out;
-}
-.yui-navset .yui-nav li a:hover {
-    background: rgba(0,0,0,0.04);
-    color: rgb(108, 108, 255);
-    border: 1px solid rgba(0,0,0,0.12);
 }
 .yui-navset .yui-nav li a em {
     border: none;
@@ -227,232 +205,672 @@ yui-navset.yui-navset-top {
     font-weight: bold;
 }
  
-.yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a:focus, .yui-navset .yui-nav .selected a:hover {
-    padding: 0;
-    border: 1px solid #1e3c62;
-    border: 1px solid #000051;
-    background: transparent;
-}
- 
 .yui-navset .yui-nav .selected a em {
     padding: 0.5em 0.5em calc(0.5em - 2px) 0.5em;
     border: none;
 }
  
-.yui-navset .yui-content {
-    display: flex;
-    flex-direction: column;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    position: relative;
-    margin-top: 0.2em;
-    transform-origin: 0 0;
-}
-.yui-navset .yui-content > div {
-    border: 1px solid rgba(0,0,0,0.12);
-    border-left: none;
-    background-color: #f5f5f5;
-    padding: 0.25em 0.5em;
-    display: block;
-    top: 0;
-    overflow: hidden;
-    transform-origin: 0 0;
+/*FOOTNOTES */
+.hovertip {
+    width: 20em;
+    padding: 0.5em;
+    border: 1px solid #8870DF !important;
+    border-radius: 0.5em;
+    background-color: #000000ee !important;
+    box-shadow: 0 0 6px 1px #000000aa;
+    z-index: 100;
 }
  
-/* MOBILE SIDEBAR BUTTON */
-@media (max-width: 767px) {
-    .open-menu a {
-         border: 0.2em solid #5353ff !important;
-         background-color: #6c6cff !important;
-         color: #dfbcff !important;
-    }
+.hovertip .f-heading {
+    color: #8870DF;
+}
+ 
+/* Page Rating Module Customizations */
+.page-rate-widget-box .rate-points,
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a,
+.page-rate-widget-box .cancel a {
+    background-color: #000000 !important;
+    border: 0;
+    color: white;
+}
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    background-color: #000000;
+    color: white;
+}
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background-color: #000000;
+    border: 0;
+    border-left: 1px solid #8870DF;
+    font-weight: bold;
+}
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background: #000000;
+    color: white;
+}
+.page-rate-widget-box .cancel {
+    background-color: #000000;
+    border: 0;
+    border-left: 1px solid #8870DF;
+}
+.page-rate-widget-box .cancel a:hover {
+    background: #000000;
+    color: white;
+}
+ 
+/* MISC */
+ 
+table.wiki-content-table th {
+  background-color: #000000;
+}
+ 
+hr {
+    background-color: #f2f2f2;
+}
+ 
+.code {
+    border: 1px dashed #f2f2f2;
+    background-color: transparent;
+ 
+    font-family: "Courier", "Courier New", "Roboto Mono", monospace;
+    font-size: 1em;
+}
+ 
+.license-area a, .page-watch-options a, .page-options-bottom a, .edit-help-34 a {
+  color: white;
+}
+ 
+#edit-page-title {
+  border: 1px solid #CCC;
+  background: #262626;
+  text-align: center;
+}
+ 
+#edit-page-textarea {
+  background-color: #242424;
+  border-color: #CCC;
+  color: #f2f2f2;
+}
+ 
+#edit-page-comments {
+  background-color: #2e2e2e;
+  border-color: #CCC;
+  color: #c7c7c7;
+}
+ 
+/* inputs */
+ 
+input.text, input.button,
+#search-top-box-input,
+#search-top-box-form input[type=submit],
+div.buttons input, input.button, button, file, a.button {
+    background: transparent;
+    color: #f2f2f2;
+    border: 1px solid #ffffff;
+    border-radius: 0;
+    font-size: 1em;
+    outline: 0;
+}
+ 
+div.buttons input:hover, div.buttons input:focus,
+input.button:hover, input.button:focus,
+button:hover, button:focus,
+file:hover, file:focus,
+a.button:hover, a.button:focus {
+    border-color: #ffffff;
+    background: transparent;
+    color: #f2f2f2;
+}
+ 
+input.text:hover, input.button:hover,
+input.text:focus, input.button:focus,
+#search-top-box-input:hover,
+#search-top-box-input:focus,
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    color: #f2f2f2;
+    background: transparent;
+    border: 1px solid #ffffff;
+    outline: 0;
+}
+ 
+/* EDITING WINDOWS */
+.owindow {
+    color: #000;
+}
+ 
+.owindow h1, .owindow h2, .owindow h3, .owindow h4, .owindow h5, .owindow h6 {
+    color: #000;
+}
+ 
+.owindow a {
+    color: #272727;
+}
+ 
+table.page-files .highlight {
+    background-color: #272727;
+}
+ 
+input.text {
+    border: 1px dashed #000;
+    color: #fff;
+}
+ 
+input.text:focus {
+    border: 1px dashed #000;
+    color: #fff;
+}
+ 
+input.text:hover {
+    border: 1px dashed #000;
+    color: #fff;
+}
+ 
+div#lock-info {
+    background-color: #262626;
+}
+ 
+/* tag style */
+ 
+.page-tags span {
+  border-top: 0;
+}
+.page-tags span a {
+    display: inline-block;
+    margin: 0 0 .5rem .75rem;
+    padding: 0.1875rem 0.3125rem 0.1875rem 0;
+    height: 0.8125rem;
+    line-height: 13px;
+    font-size: 11px;
+    background: #c451c4;
+    color: #fff;
+    text-decoration: none;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 0.25rem;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius: 0.25rem;
+}
+.page-tags span a:before, .page-tags span a:after {
+    content: "";
+    float: left;
+    position: relative;
+}
+.page-tags span a:before {
+    padding:0 0.0625rem 0.1875rem;
+    top: -0.1875rem;
+    left: -0.625rem;
+    width: 0;
+    height: 0;
+    border-color: transparent #c451c4 transparent transparent;
+    border-style: solid;
+    border-width: 0.5rem 0.5rem 0.5rem 0;
+}
+ 
+.page-tags span a:after {
+    top: 0.28125rem;
+    left: -0.5rem;
+    width: 0.25rem;
+    height: 0.25rem;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 0.125rem;
+    background: rgb(252, 252, 252);
+    -moz-box-shadow: -1px -1px 2px #004977;
+    -webkit-box-shadow: -1px -1px 2px #333;
+    box-shadow: -0.0625rem -0.0625rem 0.125rem rgb(48, 48, 52);
+}
+ 
+/* Blockquote Mimic Dic */
+blockquote, div.blockquote {
+    border-color: #f2f2f2;
+    background-color: #000000;
+}
+ 
+/* webkit scrollbar */
+ 
+::-webkit-scrollbar-thumb {
+  background: #420042;
+  border-radius: 5px;
+  border: 1px solid #c7c7c7;
 }
 [[/module]]
 
-[[include info:start]]
-
-Image Source: https://www.flickr.com/photos/88893304@N00/855509214
-
-CC By SA 2.0.
-
-[[include info:end]]
-
-[[tabview]]
-
-[[tab Profile]]
-
-[[include component:image-block-peppo
-|name=https://live.staticflickr.com/1011/855509214_7798d36cc7_b.jpg
-|caption= Image expunged for dysphoria reasons, here's a good boi instead. <3
-|width=300px
-]]
-
-**Name:** [[*user Nagiros]]
-
-**PoI Designation:** PoI-Cr@b-091
-
-**Aliases:** Nagi, Queen of the Crustaceans
-
-**Age:** 18[!--[[footnote]]
-[[html]]
-<script type="text/javascript">
-today = new Date();
-BigDay = new Date("October 1, 2020"); // Change date to the day you would like to countdown to
-msPerDay = 24 * 60 * 60 * 1000 ;  // Vbs
-timeLeft = (BigDay.getTime() - today.getTime());// Vbs
-e_daysLeft = timeLeft / msPerDay;// Vbs
-daysLeft = Math.floor(e_daysLeft);// Vbs
-e_hrsLeft = (e_daysLeft - daysLeft)*24;// Vbs
-hrsLeft = Math.floor(e_hrsLeft);// Vbs
-minsLeft = Math.floor((e_hrsLeft - hrsLeft)*60);// Vbs
-document.write("Countdown to my 19th! We have " + daysLeft + " days,  " + hrsLeft +" hours, and " + minsLeft + "  minutes left.</H4> Almost there! <P>");
-</script>
-[[/html]]
-[[/footnote]] --]
-
-**Threat Type:** Creation of anomalous phenomena, development of anomalies with other Persons of Interest.
-
-**Profile Source:** **[https://www.deviantart.com/guweiz/art/Chill-745214892 Chill] — by [https://www.deviantart.com/guweiz GUWEIZ]**
-
-+ Articles
-
-------
-
 [[=]]
-@@ @@
+[[module Rate]]
+[[/=]]
+
+> //In the psychology of the modern, civilized human being, it is difficult to overstate the significance of the house. Since as early as the Neolithic era, humankind has defined itself by its buildings. Buildings for worship, buildings for socializing, buildings for protection, even buildings for the commemoration of the dead. But of all the structures that mankind has invented for itself, there is little doubt the house is that which it relies on most completely for its continued survival.//
+>
+> [[>]]
+> **— Kitty Horrorshow's __[https://kittyhorrorshow.itch.io/anatomy Anatomy]__**
+> [[/>]]
+
+> //It's Now & Never: a reverie endeavor
+> Awaits somnambulant directives
+> To take the helm.//
+>
+> //Believe me, darling:
+> The stars were made for falling!
+> Like melting obelisks as tall as another realm.//
+>
+> //Joy mirage's kingdom come, no one left at stake.
+> Now that existence is on the wake,
+> Let's see what we can make.//
+>
+> [[>]]
+> **— ミラクルミュージカル's __[https://youtu.be/uxyM7vhU0uU Dream Sweet in Sea Major]__**
+> [[/>]]
+
+[[table style="background: black; width: 100%; border-spacing: 4px; margin: 50px 0 75px 0"]]
+[[row]]
+[[cell rowspan="3" style="text-align: center; vertical-align: middle; font-size: 200%; width: 25%; background: #2e2e2e; text-shadow: 0px 0px 4px black;"]]
++* [https://youtu.be/4Hg1Kudd_x4 ♫]
+[[/cell]]
+[[cell style="text-align: center; veritcal-align: middle; width: 75%; background: #383838; text-shadow: 0px 0px 4px black;"]]
++* [http://nagiros.wikidot.com/nagiros Personal Site 🦀]
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="text-align: center; veritcal-align: middle; width: 75%; background: #383838; text-shadow: 0px 0px 4px black;"]]
++* [https://twitter.com/Nagiros1 @Nagiros1 🐦]
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="text-align: center; veritcal-align: middle; width: 75%; background: #383838; text-shadow: 0px 0px 4px black;"]]
++* [http://scpper.com/user/4665703 SCPper Record 📈]
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell colspan="2" style="text-align: center; veritcal-align: middle; width: 75%; background: #383838; text-shadow: 0px 0px 4px black;"]]
++* Avatar by [https://www.deviantart.com/guweiz/art/Chill-745214892 GUWEIZ] 🧙‍♀️
+[[/cell]]
+[[/row]]
+[[/table]]
+
+[[div class="heading"]]
++* Who I Am
+[[/div]]
+
+Hello.
+
+Most people refer to me as [[*user Nagiros]], although I also accept Nagi for short. I use she/her pronouns, and I'm currently 18. I'm a believer in music and emotion. I've got a lot to learn about this site and life in general.
+
+I review articles posted to the Idea and Draft forums, as well as creating my own SCPs, tales, and GOI Formats — you may see me around sometimes, and I'm always happy to help if you want some eyes on a draft.
+
+I'm most well-known for making a lot of contributions to the [[[Site-17 Hub | Site-17 Deepwell Catalog]]] and creating/maintaining the [[[Esoteric Classes Complete List | Comprehensive List of Esoteric Classes]]]. I have aspirations of doing more — I want to be prolific and have a formidable backlog of content I can be proud of. I want to inspire others.
+
+We'll see.
+
+[[div class="heading" style="margin-top: 75px;"]]
++* What I've Done
+[[/div]]
+
 [[module ListPages name="SCP-4051"]]
-**%%title_linked%% - //Your Friendly Neighborhood Keter// ##grey||## [[[http://scpexplained.wikidot.com/scp-4051 | Explained]]] ##grey||## [http://scp-wiki-cn.wikidot.com/scp-4051 Chinese] ##grey||## +%%rating%%**
+[[table style="background: black; width: 100%; border-spacing: 4px; margin: 50px 0 75px 0"]]
+[[row]]
+[[cell rowspan="3" style="text-align: center; vertical-align: middle; font-size: 150%; width: 25%; background: #2e2e2e; text-shadow: 0px 0px 4px black;"]]
++* [[[SCP-4051 | 4051]]]
+[[/cell]]
+[[cell colspan="2" style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black;"]]
++* Your Friendly Neighborhood Keter
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black; width: 37.5%"]]
++* +%%rating%% 👍
+[[/cell]]
+[[cell style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black;"]]
++* %%comments%% 💬
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell colspan="2" style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black;"]]
++* [[[Nagiros#toc0 |  Author Commentary]]]
+[[/cell]]
+[[/row]]
+[[/table]]
 [[/module]]
 
-> Damn kid. Broke the straps on the chair. I'm tempted to get it tranquilized during the procedure, but we need it awake.
+[[module ListPages name="The Beast Beneath The Library"]]
+[[table style="background: black; width: 100%; border-spacing: 4px; margin: 50px 0 75px 0"]]
+[[row]]
+[[cell colspan="2" style="text-align: center; veritcal-align: middle; background: #2e2e2e; text-shadow: 0px 0px 4px black;"]]
++* %%title_linked%%
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black; width: 50%"]]
++* +%%rating%% 👍
+[[/cell]]
+[[cell style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black;"]]
++* %%comments%% 💬
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell colspan="2" style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black;"]]
++* [[[Nagiros#toc0 |  Author Commentary]]]
+[[/cell]]
+[[/row]]
+[[/table]]
+[[/module]]
+
+[[module ListPages name="He Who Screws With Reality"]]
+[[table style="background: black; width: 100%; border-spacing: 4px; margin: 50px 0 75px 0"]]
+[[row]]
+[[cell colspan="2" style="text-align: center; veritcal-align: middle; background: #2e2e2e; text-shadow: 0px 0px 4px black;"]]
++* %%title_linked%%
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black; width: 50%"]]
++* +%%rating%% 👍
+[[/cell]]
+[[cell style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black;"]]
++* %%comments%% 💬
+[[/cell]]
+[[/row]]
+[[/table]]
+[[/module]]
 
 [[module ListPages name="SCP-4260"]]
-**%%title_linked%% - //The Subdirective// ##grey||## [[[https://www.reddit.com/r/SCPDeclassified/comments/c4quyc/scp4260_the_subdirective/ | Declassified]]] ##grey||## [[[http://scpexplained.wikidot.com/scp-4260 | Explained]]] ##grey||## +%%rating%%**
+[[table style="background: black; width: 100%; border-spacing: 4px; margin: 50px 0 75px 0"]]
+[[row]]
+[[cell rowspan="2" style="text-align: center; vertical-align: middle; font-size: 150%; width: 25%; background: #2e2e2e; text-shadow: 0px 0px 4px black;"]]
++* [[[SCP-4260 | 4260]]]
+[[/cell]]
+[[cell colspan="2" style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black;"]]
++* The Subdirective
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black; width: 37.5%"]]
++* +%%rating%% 👍
+[[/cell]]
+[[cell style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black;"]]
++* %%comments%% 💬
+[[/cell]]
+[[/row]]
+[[/table]]
 [[/module]]
 
-> Procedure 8917 is considered complete when the following criteria are met: SCP-4260 has been successfully terminated, the Strayer Density Matrix is fully operational, all affected civilians have been located and terminated, all evidence of Procedure 8917 has been removed, and SCP-4260 has been resurrected.
+[[module ListPages name="APAS"]]
+[[table style="background: black; width: 100%; border-spacing: 4px; margin: 50px 0 75px 0"]]
+[[row]]
+[[cell colspan="2" style="text-align: center; veritcal-align: middle; background: #2e2e2e; text-shadow: 0px 0px 4px black;"]]
++* %%title_linked%%
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black; width: 50%"]]
++* +%%rating%% 👍
+[[/cell]]
+[[cell style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black;"]]
++* %%comments%% 💬
+[[/cell]]
+[[/row]]
+[[/table]]
+[[/module]]
+
+[[module ListPages name="Esoteric Classes Complete List"]]
+[[table style="background: black; width: 100%; border-spacing: 4px; margin: 50px 0 75px 0"]]
+[[row]]
+[[cell colspan="2" style="text-align: center; veritcal-align: middle; background: #2e2e2e; text-shadow: 0px 0px 4px black;"]]
++* %%title_linked%%
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black; width: 50%"]]
++* +%%rating%% 👍
+[[/cell]]
+[[cell style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black;"]]
++* %%comments%% 💬
+[[/cell]]
+[[/row]]
+[[/table]]
+[[/module]]
+
+[[module ListPages name="A Hymn For Pandora"]]
+[[table style="background: black; width: 100%; border-spacing: 4px; margin: 50px 0 75px 0"]]
+[[row]]
+[[cell colspan="2" style="text-align: center; veritcal-align: middle; background: #2e2e2e; text-shadow: 0px 0px 4px black;"]]
++* %%title_linked%%
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black; width: 50%"]]
++* +%%rating%% 👍
+[[/cell]]
+[[cell style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black;"]]
++* %%comments%% 💬
+[[/cell]]
+[[/row]]
+[[/table]]
+[[/module]]
 
 [[module ListPages name="SCP-4175"]]
-**%%title_linked%% - //Friends Made, and the Void//** (Written for **##3195df|Pride Month 2019##**. 🏳️‍🌈) **##grey||## [[[http://scpexplained.wikidot.com/scp-4175 | Explained]]] ##grey||## [http://scp-wiki-cn.wikidot.com/scp-4175 Chinese]##grey||## +%%rating%%**
+[[table style="background: black; width: 100%; border-spacing: 4px; margin: 50px 0 75px 0"]]
+[[row]]
+[[cell rowspan="3" style="text-align: center; vertical-align: middle; font-size: 150%; width: 25%; background: #2e2e2e; text-shadow: 0px 0px 4px black;"]]
++* [[[SCP-4175 | 4175]]]
+[[/cell]]
+[[cell colspan="2" style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black;"]]
++* Friends Made, and the Void
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black; width: 37.5%"]]
++* +%%rating%% 👍
+[[/cell]]
+[[cell style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black;"]]
++* %%comments%% 💬
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell colspan="2" style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black;"]]
++* [[[Nagiros#toc1 |  Author Commentary]]]
+[[/cell]]
+[[/row]]
+[[/table]]
 [[/module]]
-
-> Is that me? Is my real body just decomposing somewhere? Did they ever find my body?
 
 [[module ListPages name="SCP-4415"]]
-**%%title_linked%% - //Humanoid Containment Chamber #λ045// ##grey||## [[[http://scpexplained.wikidot.com/scp-4415 | Explained]]] ##grey||## +%%rating%%**
+[[table style="background: black; width: 100%; border-spacing: 4px; margin: 50px 0 75px 0"]]
+[[row]]
+[[cell rowspan="2" style="text-align: center; vertical-align: middle; font-size: 150%; width: 25%; background: #2e2e2e; text-shadow: 0px 0px 4px black;"]]
++* [[[SCP-4415 | 4415]]]
+[[/cell]]
+[[cell colspan="2" style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black;"]]
++* Humanoid Containment Chamber #λ045
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black; width: 37.5%"]]
++* +%%rating%% 👍
+[[/cell]]
+[[cell style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black;"]]
++* %%comments%% 💬
+[[/cell]]
+[[/row]]
+[[/table]]
 [[/module]]
 
-> Weathers, if you're reading this, just know I ended up as a good guy.
->
-> Bye, I guess.
-
-[[module ListPages name="SCP-4755"]]
-**%%title_linked%% - //When We Are Omnipotent// ##grey||## [[[http://scpexplained.wikidot.com/scp-4755 | Explained]]] ##grey||## +%%rating%%**
+[[module ListPages name="Systems Patch"]]
+[[table style="background: black; width: 100%; border-spacing: 4px; margin: 50px 0 75px 0"]]
+[[row]]
+[[cell colspan="2" style="text-align: center; veritcal-align: middle; background: #2e2e2e; text-shadow: 0px 0px 4px black;"]]
++* %%title_linked%%
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black; width: 50%"]]
++* +%%rating%% 👍
+[[/cell]]
+[[cell style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black;"]]
++* %%comments%% 💬
+[[/cell]]
+[[/row]]
+[[/table]]
 [[/module]]
-
-> SCP-4755 designates the ultimate purpose of conceptualization, which is containment.
-
-[[module ListPages name="the-beast-beneath-the-library"]]
-**%%title_linked%% ##grey||## [[[http://scpexplained.wikidot.com/the-beast-beneath-the-library | Explained]]] ##grey||## [http://scp-wiki-cn.wikidot.com/the-beast-beneath-the-library Chinese] ##grey||## +%%rating%%**
-[[/module]]
-
-> What follows is the unofficial report on the incident involving SCP-4051, the anomalous object placed under your care by Ethics Committee liaison Jeremiah Cimmerian.
-
-[[module ListPages name="he-who-screws-with-reality"]]
-**%%title_linked%% ##grey||## [[[http://scpexplained.wikidot.com/he-who-screws-with-reality | Explained]]] ##grey||## +%%rating%%**
-[[/module]]
-
-> Reality isn't a wave, as you suggested. It's an ocean, boiling and pitching under a never-abating hurricane. Some people get to… how did you put it? "Ride the wave near the beach"? //Child's play.// **##red|A real reality bender makes nature his bitch from the eye of the storm.##**"
-
-[[module ListPages name="apas"]]
-**%%title_linked%% ##grey||## [[[http://scpexplained.wikidot.com/apas | Explained]]] ##grey||## +%%rating%%**
-[[/module]]
-
-> When the earth first felt the dread grip of death, you knew of me. When your species first crawled from the mud and had the right sense to weep, you heard my voice. When a towering monolith was constructed to contain the encroaching army which rides over endless fields of ash and waste, you knew my name.
-
-[[module ListPages name="a-hymn-for-pandora"]]
-**%%title_linked%% ##grey||## [[[http://scpexplained.wikidot.com/a-hymn-for-pandora | Explained]]] ##grey||## +%%rating%%**
-[[/module]]
-
-> "Look around you, mortal men, and see the land of gods, and weep. We were once the strange and the disquieting, the horrific and the dead. We were anomalies, but anomalies no more."
-
-[[module ListPages name="systems-patch"]]
-**%%title_linked%% ##grey||## +%%rating%%**
-[[/module]]
-
-> A staffer who has worked years for the Foundation, and potentially married someone within it, is far less likely to openly object to the horrors the Foundation has committed and risk expulsion, or even termination.
->
-> It's just like a damn cult.
 
 [[module ListPages name="Slipping Away"]]
-**%%title_linked%% ##grey||## [https://www.youtube.com/watch?v=m27ZTza7DUc ♪] ##grey||## +%%rating%%**
+[[table style="background: black; width: 100%; border-spacing: 4px; margin: 50px 0 75px 0"]]
+[[row]]
+[[cell colspan="2" style="text-align: center; veritcal-align: middle; background: #2e2e2e; text-shadow: 0px 0px 4px black;"]]
++* %%title_linked%%
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black; width: 50%"]]
++* +%%rating%% 👍
+[[/cell]]
+[[cell style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black;"]]
++* %%comments%% 💬
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell colspan="2" style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black;"]]
++* [[[Nagiros#toc2 |  Author Commentary]]]
+[[/cell]]
+[[/row]]
+[[/table]]
 [[/module]]
 
-> As gunfire engulfed the town, her fingerprint remained on the broken glass of that old window.
+[[module ListPages name="SCP-4755"]]
+[[table style="background: black; width: 100%; border-spacing: 4px; margin: 50px 0 75px 0"]]
+[[row]]
+[[cell rowspan="3" style="text-align: center; vertical-align: middle; font-size: 150%; width: 25%; background: #2e2e2e; text-shadow: 0px 0px 4px black;"]]
++* [[[SCP-4755 | 4755]]]
+[[/cell]]
+[[cell colspan="2" style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black;"]]
++* When We Are Omnipotent
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black; width: 37.5%"]]
++* +%%rating%% 👍
+[[/cell]]
+[[cell style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black;"]]
++* %%comments%% 💬
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell colspan="2" style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black;"]]
++* [[[Nagiros#toc3 |  Author Commentary]]]
+[[/cell]]
+[[/row]]
+[[/table]]
+[[/module]]
 
 [[module ListPages name="The Eschaton"]]
-**%%title_linked%% ##grey||## [https://youtu.be/o4Ce-xG_HIQ ▶] ##grey||## [https://youtu.be/awNItyOj00Q ♪] ##grey||## +%%rating%%**
+[[table style="background: black; width: 100%; border-spacing: 4px; margin: 50px 0 75px 0"]]
+[[row]]
+[[cell colspan="2" style="text-align: center; veritcal-align: middle; background: #2e2e2e; text-shadow: 0px 0px 4px black;"]]
++* %%title_linked%%
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black; width: 50%"]]
++* +%%rating%% 👍
+[[/cell]]
+[[cell style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black;"]]
++* %%comments%% 💬
+[[/cell]]
+[[/row]]
+[[/table]]
 [[/module]]
 
-> Until it is proven otherwise, the Eschaton is assumed to be a hostile action against Knowledge. Without seekers, the truths of the Library remain inert, untouched. It is a sad thing for a library to wither.
+[[div class="heading"]]
++* Reflection
+[[/div]]
 
-[[module ListPages name="site-17-hub"]]
-**%%title_linked%% (Hub) ##grey||## +%%rating%%**
+[[tabview]]
+[[tab Author Commentary]]
++ SCP-4051
+
+Well, here we are. First SCP. The one that started the Deepwell Catalog, even if that wasn't my intent when I posted it. I'm still surprised people liked it.
+
+4051 is… complex. It's a story about a teenage vigilante superhero who joins a task force and unlocks a hidden power by the end — and it's all played straight. I had no aspiration of commenting on well-known tropes which have been known to kill articles on this site. I just wanted to write a story despite them.
+
+4051 was a cry for help. The Nagiros who posted it was trapped in a hostile setting, tormented by authority figures who should have been looking after her, stuck in a mindspace of passive acceptance and denial.
+
+I've had a lot of requests to continue Rainer's story. As I've grown as a person, he's remained at the sidelines: foraying with [[[SCP-4260 | Death]]], finding some [[[SCP-4415 | friends]]], inspiring [[[Systems Patch | revolution]]]. I'd like to continue that story.
+
++ SCP-4175
+
+I wrote this for Pride Month of 2019 and it's currently my most popular article. Personally? I don't think it's my best work.
+
+Then again, a lot of people liked it. I know a lot of readers were excited to see the trans pride flag on a featured article — even if it did bring a fair amount of controversy my way.
+
++ AFTERLIFE OPHIDIAN /// The Foundation Over Heaven
+
+A poetry-prose piece based in despair. I felt trapped in life, faced by oblivion on all sides, and channeled it into this article.
+
+It exists, I suppose.
+
++ SCP-4755
+
+Now then, it looks like my pet anomalous science, essophysics, has finally come into its own. The Foundation's tasted the blood in the water and they aren't backing down. If the universe rejects them, then the solution is simple: build a better universe.
+
+Expect great things in the future.
+[[/tab]]
+[[tab Achievements]]
+
+[[div class="heading" style="margin: auto 10px"]]
++* Accomplishments
+[[/div]]
+
+||~ Criteria ||~ Date Achieved ||
+|| Have three works in the first page of the [[[top-rated-pages-this-month | Top Rated New Pages]]] at once.||January 1, 2019||
+||Have an SCP reach +50 votes.||January 21, 2019||
+||Have an SCP reach +75 votes.||March 12, 2019||
+||Have a tale reach +50 votes.||March 14, 2019||
+||Have an SCP reach +100 votes.||April 20, 2019||
+||Write five works.||May 5, 2019||
+||Have a tale reach +75 votes.||June 17, 2019||
+||Have an article featured one time.||August 1, 2019||
+||Have an SCP reach +150 votes.||August 29, 2019||
+||Have a tale reach +100 votes.||November 7, 2019||
+||Write ten works.||November 11, 2019||
+||Write five tales.||November 11, 2019||
+||Have an SCP reach +200 votes.||December 5, 2019||
+||Write five SCPs.||December 16, 2020||
+||Have an article featured two times.||January 10, 2020||
+
+[[div class="heading" style="margin: 50px 10px 0 10px"]]
++* Goals
+[[/div]]
+
+||~ Criteria ||
+||Have three SCPs in the first page of the [[[top-rated-pages-this-month | Top Rated New Pages]]] at once.||
+||Have three tales in the first page of the [[[top-rated-pages-this-month | Top Rated New Pages]]] at once.||
+||Have four works on the first page of the [[[top-rated-pages-this-month | Top Rated New Pages]]] at once.||
+||Have four SCPs on the first page of the [[[top-rated-pages-this-month | Top Rated New Pages]]] at once.||
+||Have four tales in the first page of the [[[top-rated-pages-this-month | Top Rated New Pages]]] at once.||
+||Have five works on the first page of the [[[top-rated-pages-this-month | Top Rated New Pages]]] at once.||
+||Have five SCPs on the first page of the [[[top-rated-pages-this-month | Top Rated New Pages]]] at once.||
+||Have five tales in the first page of the [[[top-rated-pages-this-month | Top Rated New Pages]]] at once.||
+||Have a tale reach +150 votes.||
+||Have a tale reach +200 votes.||
+||Have an article featured three times.||
+||Write ten SCPs.||
+||Write ten tales.||
+||Write twenty works.||
+||Write twenty SCPs.||
+||Write twenty tales.||
+||Write fifty works.||
+||Write fifty SCPs.||
+||Write fifty tales.||
+[[/tab]]
+[[tab Control Panel]]
+[[module ListPages perPage="30" created_by="Nagiros" separate="no" categories="*" order="rating desc" prependLine="||~ Title ||~ Rating ||~ Last Edit ||~ Last Comment ||"]]
+|| **%%title_linked%%** || %%rating%% || %%updated_by_linked%% || %%commented_by_linked%% ||
 [[/module]]
 
-> People come to power. Other people get hurt. It doesn't matter if it belongs to a conceptual embodiment or a Site Director, power seems to breed injury at Site-17, and people have started to notice. Old structures are groaning beneath the weight of their antiquity, and it's up to a few of researchers and SCPs to survive the coming crash.
-
-[[module ListPages name="esoteric-classes-complete-list"]]
-**%%title_linked%% (Essay) ##grey||## +%%rating%%**
-[[/module]]
-
-> These Esoteric Classes are exceedingly rare, and many are not viable for standard documentation due to their unique and specialized nature. The following lists serve as a collection of these highly esoteric classes.
-
-**Various additions to the [[[SCP Style Resource]]] (Collab)**
-
-> Options 2 and 3 of Discord Chat Formatting, Modifying Scrollbars, Mobile Sidebar Button Reformatting, Amateur Countdown Timer, Nesting Collapsibles, False Links/Collapsibles, and Email Template.
-
-**[[[operation-galahad | Greenleaf Woods, SCP-PC-012, and PC-S08-L5]]] (Collab) ##grey||## [[[http://scpexplained.wikidot.com/operation-galahad | Explained]]]**
-
-> Distinguished from SCP-PC-004 because of its deviation from established immunity to injury and death. Elderly, caucasian male with deteriorated anatomy indicative of infirmities expected for its perceived age. Ostensibly identical to SCP-PC-004, barring these deviations.
-
-**[http://scp-sandbox-3.wikidot.com/component:jgt-theme Just Girly Things Theme] ##grey||## For [[[SCP-4319]]]**
-
-> Not really mine. A bunch of users contributed to this and attribution of specific elements is nearly impossible. [[*user DianaBerry]] created most of the assets and I varied the color scheme.
-
-**[/system:page-tags/tag/deepwell-catalog#pages deepwell-catalog] (Tag) ##grey||## For the [[[Site-17 Hub | Site-17 Deepwell Catalog]]] canon.**
-
-> It's finally here! ✨✨
-[[/=]]
-
-------
-@@ @@
-[[=]]
-[[module CountPages created_by="Nagiros" category="*"]]
-##510000|%%total%%## TOTAL PAGES
-[[/module]]
-[[module CountPages created_by="Nagiros"]]
-##510000|%%total%%## STANDARD PAGES
-[[/module]]
-[[module countPages created_by="nagiros" tags="scp"]]
-##510000|%%total%%## SCPS
-[[/module]]
-[[module countPages created_by="nagiros" tags="tale"]]
-##510000|%%total%%## TALES
-[[/module]]
-[[module countPages created_by="nagiros" tags="essay"]]
-##510000|%%total%%## ESSAY
-[[/module]]
-[[module countPages created_by="nagiros" category="fragment"]]
-##510000|%%total%%## FRAGMENTS
-[[/module]]
-[[/=]]
-[[module ListPages perPage="10" created_by="Nagiros" separate="no" categories="*" order="rating desc" prependLine="||~ Title ||~ Rating ||~ Last Edit ||~ Last Comment ||"]]
-||~ %%title_linked%% || %%rating%% || %%updated_by_linked%% || %%commented_by_linked%% ||
-[[/module]]
-
-[[collapsible show="      " hide="- Hide theme code"]]
 [[code type="css"]]
 /* Centered breadcrumbs */
 #breadcrumbs{
@@ -479,7 +897,7 @@ html {
 
 /* Centered title */
 #page-title {
-  display: block !important;
+  display: block;
   text-align: center;
 }
 
@@ -513,317 +931,5 @@ html {
   margin-bottom: 20px;
 }
 [[/code]]
-[[/collapsible]]
 [[/tab]]
-
-[[tab Achievements]]
-
-++* Showcase [[size 75%]](Yay, we did it!)[[/size]]
-
-------
-
-[[=]]
-[[collapsible show="► Display Showcase ◄" hide="▼ Hide Showcase ▼"]]
-[[<]]
-@@ @@
-* Have three works in the first page of the [http://www.scp-wiki.net/top-rated-pages-this-month Top Rated New Pages] at once.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✔ Achieved January 1, 2019
-
-[[/div]]
-
-* Have an SCP reach +50 votes.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✔ Achieved January 21, 2019
-
-[[/div]]
-
-* Have an SCP reach +75 votes.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✔ Achieved March 12, 2019
-
-[[/div]]
-
-* Have a tale reach +50 votes.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✔ Achieved March 14, 2019
-
-[[/div]]
-
-* Have an SCP reach +100 votes.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✔ Achieved April 20, 2019
-
-[[/div]]
-
-* Write five works.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✔ Achieved May 5, 2019
-
-[[/div]]
-
-* Have a tale reach +75 votes.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✔ Achieved June 17, 2019
-
-[[/div]]
-
-* Have an article featured one time.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✔ Achieved August 1, 2019
-
-[[/div]]
-
-* Have an SCP reach +150 votes.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✔ Achieved August 29, 2019
-
-[[/div]]
-
-* Have a tale reach +100 votes.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✔ Achieved November 7, 2019
-
-[[/div]]
-
-* Write ten works.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✔ Achieved November 11, 2019
-
-[[/div]]
-
-* Write five tales.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✔ Achieved November 11, 2019
-
-[[/div]]
-
-* Have an SCP reach +200 votes.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✔ Achieved December 5, 2019
-
-[[/div]]
-
-* Write five SCPs.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✔ Achieved December 16, 2020
-
-[[/div]]
-
-* Have an article featured two times.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✔ Achieved January 10, 2020
-
-[[/div]]
-
-[[/<]]
-[[/collapsible]]
-[[/=]]
-
-------
-
-@@ @@
-
-++* Incomplete [[size 75%]](Not yet, but some day!)[[/size]]
-
-------
-
-[[=]]
-[[collapsible show="► Display Incomplete ◄" hide="▼ Hide Incomplete ▼"]]
-[[<]]
-@@ @@
-* Have three SCPs in the first page of the [http://www.scp-wiki.net/top-rated-pages-this-month Top Rated New Pages] at once.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Have three tales in the first page of the [http://www.scp-wiki.net/top-rated-pages-this-month Top Rated New Pages] at once.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Have four works on the first page of the [http://www.scp-wiki.net/top-rated-pages-this-month Top Rated New Pages] at once.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Have four SCPs on the first page of the [http://www.scp-wiki.net/top-rated-pages-this-month Top Rated New Pages] at once.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Have four tales in the first page of the [http://www.scp-wiki.net/top-rated-pages-this-month Top Rated New Pages] at once.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Have five works on the first page of the [http://www.scp-wiki.net/top-rated-pages-this-month Top Rated New Pages] at once.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Have five SCPs on the first page of the [http://www.scp-wiki.net/top-rated-pages-this-month Top Rated New Pages] at once.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Have five tales in the first page of the [http://www.scp-wiki.net/top-rated-pages-this-month Top Rated New Pages] at once.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Have a tale reach +150 votes.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Have a tale reach +200 votes.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Have an article featured three times.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Write ten SCPs.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Write ten tales.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Write twenty works.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Write twenty SCPs.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Write twenty tales.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Write fifty works.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Write fifty SCPs.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-* Write fifty tales.
-
-[[div class="content-panel standalone"]]
-
-##F5F6F9||## ✘ Not yet achieved.
-
-[[/div]]
-
-[[/<]]
-[[/collapsible]]
-[[/=]]
-
-------
-
-[[/tab]]
-
 [[/tabview]]
-
-[[module CSS]]
-@import url("http://www.scp-wiki.net/nagiros-poi-file/code/1");
-[[/module]]
