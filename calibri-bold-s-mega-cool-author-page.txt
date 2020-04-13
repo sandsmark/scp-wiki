@@ -3,6 +3,9 @@ title:Calibri Bold's Mega Cool Author Page
 
 [[module css]]
 
+.rate {
+ }
+
 .infobox {
  display:inline-box;
  overflow:hidden;
@@ -97,6 +100,12 @@ display:none
     }
 }
 
+@media screen and (min-width:992px) {
+    .rate {
+        display: none;
+    }
+}
+
 #page-options-container {
  background: transparent;
  position: relative;
@@ -114,6 +123,12 @@ display:none
 .collabnote.\{\$note\} {display: none;}
 
 [[/module]]
+
+[[div class="rate"]]
+[[>]]
+[[module Rate]]
+[[/>]]
+[[/div]]
 
 [[div class="infobox"]]
 [[=]]
