@@ -5,30 +5,31 @@ title:Lt. Flops' Author Page
 /* LISTPAGES EXCEPTION */
  .preview .span, .infobox{ display: none !important; }
 
-/* PAGE TITLE */
- #page-title{ display: none; }
-
 /* GLOBAL EDITS */
-body{ color: rgb(12, 12, 12); }
+ body{ color: rgb(12, 12, 12); }
  #header h1 a {
      display: block;
      margin: 0;
      padding: 80px 0 25px;
-     line-height: 0;
-     max-height: 0;
+
      color: transparent;
      background: transparent;
+
+     line-height: 0;
+     max-height: 0;
      font-family: 'Carrois Gothic', sans-serif, Arial;
      text-decoration: none;
      text-shadow: none;
-     letter-spacing: 0.9px;
+     letter-spacing: .9px;
 }
  #header h1 a::before {
      content: "Lt. Flops’ Author Page";
-     font-size: 90%;
+
      color: #f8f8f8;
-     letter-spacing: -0.02em;
+
+     font-size: 90%;
      text-shadow: 3px 3px 5px black;
+     letter-spacing: -.02em;
 }
  #header h1 a span{
      content: "";
@@ -38,110 +39,123 @@ body{ color: rgb(12, 12, 12); }
      display: block;
      margin: 0;
      padding: 19px 0;
+
+     color: transparent;
+
      line-height: 0;
      max-height: 0;
      font-weight: bold;
-     color: transparent;
      text-shadow: none;
 }
  #header h2 span::before {
      content: "Archiving Apotheosis";
+
      color: #f8f8f8;
-     text-shadow: 1px 1px 1px black;
      text-shadow: 1px 1px 1px rgba(0,0,0,.8);
 }
+ #page-title{ display: none; }
 
 /* DIV BLOCKS */
-blockquote{ border: 3px double #999; }
-div.quote-block{
-    border: 3px double #999;
-    background-color: #f4f4f4;
-    padding: 0 1em;
-    margin: 1em 3em;
-}
-@media (max-width: 479px) { 
-    div.quote-block{ margin: 1em 0; } 
-}
-@media (min-width: 480px) and (max-width: 580px) { 
-    div.quote-block{ margin: 0.5em; } 
-}
+ div.blockquote,
+ blockquote{ border: 3px double #999; }
  .header{
-     border: 1px solid #999;
-     background-color: #FFC0CB;
-     padding: 0 1em;
      margin: 1em 0;
+     padding: 0 1em;
+
+     background-color: #FFC0CB;
+     border: 1px solid #605858;
+
      text-align: center;
 }
+ .header hr{ background: #605858; }
  .ko-fi-link{
      display: inline-block;
-     text-align: center;
      width: 100%;
      margin: 0;
      padding: .5em 0;
+
      font-size: 140%;
-     text-shadow: 1px 3px 1px rgba(0, 0, 0, .3);
      font-weight: 700;
+     text-align: center;
+     text-shadow: 1px 3px 1px rgba(0, 0, 0, .3);
 }
- .ko-fi-link a:hover{ text-decoration: nonet; }
+ .ko-fi-link a:hover{ text-decoration: none; }
  .scp-showcase{
-     font-size: 125%;
      color: darkred;
+
+     font-size: 125%;
      font-weight: bold;
 }
 
 /* FORMATTING */
- .collapsible-block-link{ font-weight: bold; }
- hr{
-     display: block;
-     border: 0;
-     padding: 0;
-     margin: 1em 0;
-     height: 1px;
+.collapsible-block-link{ font-weight: bold; }
+hr{
+    display: block;
+    height: 1px;
+    margin: 1em 0;
+    padding: 0;
+
+    border: 0;
+}
+ .h3, .h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    word-break: unset;
+}
+ .h3{
+    margin: .5em 0 .4em;
+    padding: 0;
+
+    color: rgb(12, 12, 12);
+    font-size: 130%;
+}
+ .h5{
+    font-size: 100%;
 }
 
-/* TABS */
- .yui-navset .yui-nav .selected a em, .yui-navset .yui-nav a em{
-     padding: .25em .75em;
+/* TABS — from Magnus Web Format */
+ .yui-navset .yui-nav .selected a em,  .yui-navset .yui-nav a em{
      top: 0;
      margin-bottom: 0;
+     padding: .25em .75em; 
 }
- .yui-navset .yui-nav .selected a{
-     background: gray;
-}
- .yui-navset .yui-nav .selected{
-     margin: 0;
-}
- .yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a:focus, .yui-navset .yui-nav .selected a:hover, .yui-navset .yui-nav .selected a{
-     background: gray;
+ .yui-navset .yui-nav .selected a{ background: gray; }
+ .yui-navset .yui-nav .selected{ margin: 0; }
+ .yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a:focus, .yui-navset .yui-nav .selected a:hover, .yui-navset .yui-nav .selected a{ background: gray; }
+ .yui-navset .yui-nav a:hover,
+ .yui-navset .yui-nav a:focus{
+     background: gainsboro;
+     text-decoration: none;
 }
  .yui-navset .yui-nav a, .yui-navset .yui-navset-top .yui-nav a{
+     background-color: none;
      background-image: none;
 }
- .yui-navset .yui-nav a{
-     background: none;
-}
- .yui-navset .yui-nav li{
-     margin: 0;
-}
+ .yui-navset .yui-nav a{ background: none; }
+ .yui-navset .yui-nav li{ margin: 0; }
 [[/module]]
 
 [[=]]
 + Lt. Flops’ Author Page
 [[/=]]
 ----
-> **{{OPENING ENTITY OF INTEREST FILE #9731}}. . .**
+> **[[span style="font-family: Courier, monospace; font-size: 110%;"]]OPENING ENTITY OF INTEREST FILE #9731[[/span]]. . .**
 
-> **{{AN ADDITION WAS ADDED SINCE YOU LAST VIEWED THE FILE. READ IT?}}**
+> **[[span style="font-family: Courier, monospace; font-size: 110%;"]]AN ADDITION WAS ADDED. READ IT?[[/span]]**
 
-[[div class="quote-block"]]
-[[module ListUsers users="."]]
-[[=]]
-+++ INTERVIEW LOG
-[[/=]]
+[[div class="blockquote"]]
+[[span class="h3"]]INTERVIEW LOG[[/span]]
 ----
 = **[BEGIN LOG]**
 ----
-**%%title%%:** I just don't think a //bird// could pose a threat to global normalcy.
+[[module ListUsers users="."]]
+**%%title%%:** I just don't think a //bird// could pose a threat to global normalcy!
 
 **Interrogator:** You clearly have never seen a flock of sky-demons rain faeces Armageddon like the Battle of Agincourt.
 
@@ -162,76 +176,99 @@ div.quote-block{
 [[size 75%]]**%%title%%:** //[Even more distant.]// Please, I'm innocent![[/size]]
 
 **Interrogator:** You know what they say. Chirp chirp, motherfuckers. //[To security personnel.]// Sic 'em.
+[[/module]]
 ----
 = **[END LOG]**
-[[/module]]
 [[/div]]
 
-> **{{OPENING FILE}}. . .**
+> **[[span style="font-family: Courier, monospace; font-size: 110%;"]]OPENING FILE[[/span]]. . .**
 
 [[div class="header"]]
-+++ --coolpage funpage--
+[[span class="h3"]]--coolpage funpage--[[/span]]
 
-The following file contains an activated **GAY FROGS**-Class **DANK ANTIMEME**. You are instructed to run. In the event that you're lazy, you are directed to proceed at a velocity directly proportional to your daily cholesterol intake. What's that? //Fine//, you can catch up on //Grey's Anatomy// first. But make sure you make your way right back here after, mmkay?
+The following file contains an activated **GAY FROGS**-Class **DANK ANTIMEME**. You are instructed to run. In the event that you're lazy, you are directed to proceed at a velocity directly proportional to your daily cholesterol intake. 
 
-—Uhm, probably someone with, like, a //super// high clearance level. Or someone's Mary Sue OC.
+... What's that? //Fine//, you can catch up on //Grey's Anatomy// first. But make sure you make your way right back here after, mmkay?
+----
+--Uhm, probably someone with, like, a //super// high clearance level. Or someone's Mary Sue OC.
 [[/div]]
 
+[[table style="width: 100%;"]]
+[[row]]
+[[cell style="font-size: 120%;"]]
+[[span style="font-weight: 900;"]]ENTITY:[[/span]] [[*user Lt Flops]]
+[[/cell]]
+[[cell style="font-size: 125%; text-align: right;"]]
+[[span style="font-weight: 900;"]]STATUS:[[/span]] [[span style="font-family: Courier New, Courier, monospace; font-weight: 900; color: green;"]]ACTIVE[[/span]]
+[[/cell]]
+[[/row]]
+[[/table]]
+
 [[a href="*https://www.ko-fi.com/floppyphoenix"]]
-  [[span_ class="ko-fi-link" style="background-color: #1e122b; color: #ededed;"]]
+  [[span_ class="ko-fi-link" style="color: #e6e6e6; background-color: #362471;"]]
 If you like my works, consider donating!
   [[/span]]
 [[/a]]
-
-**Entity:** [[*user Lt Flops]]
-
+----
+[[span class="h3"]]Select Production Commentaries[[/span]]
+----
 [[include component:image-block
-    name=http://scp-wiki.wdfiles.com/local--files/floppyphoenix/lt-flops.jpg|
-    caption=Initial sighting of LIMP FIREBIRD. --It's so pretty-- VERY DEADLY. //RUN//.
+|name=http://scp-wiki.wdfiles.com/local--files/floppyphoenix/lt-flops.jpg
+|caption=Initial sighting of LIMP FIREBIRD. --It's so pretty-- VERY DEADLY. //RUN//.
 ]]
 
-**Select Production Commentaries:** The following are quote excerpts from individuals affected by LIMP FIREBIRD, a Deviant-Type Avian Entity:
+The following are quote excerpts from individuals affected by LIMP FIREBIRD, a Deviant-Type Avian Entity:
 
-//If the phrase "dank antimeme" makes it into an SCP, I am leaving this site forever. I am 100% serious.// 
-++++++ —qntm, --Director of the Antimemetics Division-- Civilian # 84250, #site19
+//If the phrase "dank antimeme" makes it into an SCP, I am leaving this site forever. I am 100% serious.//
+
++++++ —qntm, --Director of the Antimemetics Division-- Civilian #84250, {{#site19}}
 ----
 //thats a weird way to spell sexy cyborg priests :///
-++++++ —sepiafishie, Queen of Cephalopods
+
++++++ --sepiafishie, Queen of Cephalopods
 ----
 //Nerd. Wait, where am I? Who put me in here? Help!//
-++++++ —Westrin, Captain of the SCPF //Spooky Boat//
-----
-**Project Summary:** Hi there, {{[non-//homo ignotus// non-Daevite non-malfunctioning Lazarus-01 Procedure humanoid]}}. It appears you've stumbled upon my personnel file. I– Wait, //please// don't leave. No, come back!
 
-Ah, they're gone. Anyway, //apparently//, this is the place where I get to show you all the wonderful works I've written? Don't worry -- I'm surprised too. Just– Don't leave the terminal, and continue reading until you've learned about all the --[[[crispy-sex-pirates|crispy sex pirates]]]-- SCP articles I've worked on. I'll go get you a juice box. Or some bourbon. Don't like it? Well, that's too darn bad, hun, isn't it?
++++++ --Westrin, Captain of the SCPF //Spooky Boat//
+----
+[[span class="h3"]]Project Summary[[/span]]
+----
+Hi there, {{[non-//homo ignotus// non-Daevite non-malfunctioning Lazarus-01 Procedure humanoid]}}. It appears you've stumbled upon my personnel file. 
 
-**Deployment Record:**
+I– Wait, //please// don't leave. 
 
-[[tabview]]
-[[tab Articles]]
-[[=]]
-+++ Floppy's Articles
-++++++ I write things, depending on how you define "write" and "things".
-[[/=]]
+No, come back!
+
+Ah, they're gone. Anyway, //apparently//, this is the place where I get to show you all the wonderful works I've written? Don't worry -- I'm surprised too. Just– Don't leave the terminal, and continue reading until you've learned about all the stuff (and also things) that I've worked on. 
+
+I'll go get you a juice box. Or some bourbon. 
+
+Don't like it? Well, that's too darn bad, hun, isn't it?
 ----
-**Floppy Says:** In the spirit of collaboration: I grant any writer, artist, or otherwise, full permission to use or depict the SCPs, concepts, characters, task forces, locations, or events created by me in your own SCP Wiki work. Drop a link my way; maybe I'll like it, or give you some pointers on how to execute it best!
+[[span class="h3"]]Deployment Record[[/span]]
+-----
+[[div class="blockquote"]]
+[[span class="h3"]]My Newest Articles![[/span]]
 ----
-[[div class="quote-block"]]
-= [[size 125%]]**MY NEWEST ARTICLES**[[/size]]
-----
-**1. [GOI FORMAT]** 👤 **[[[scattersomnia| "Scattersomnia": A Disease of the Wise and Drowsy Wanderers ]]]** (//for Jam Contest Two//)
-**2. [TALE]** 🥛 **[[[no-sense-crying|Spilled Milk]]]** (//for Jam Contest Two//)
-**3. [SCP]** 🧠 **[[[scp-5990|SCP-5990: Out of my head, out of my mind]]]** (//for Jam Contest Two//)
-**4. [COLLAB TALE]** 🐍 **[[[broken-masquerade-epistolary|Snippets of an Unveiled World]]]** //with [[[*http://www.scp-wiki.net/researcher-nyka-s-file|Nykacolaquantum]]] and other collaborators//
-**5. [TALE]** 📺 **[[[a-scene-from-a-meme|A Scene From A Meme(-ory)]]]**
+**1. [ENTRY]** 🌊 **[[[http://wanderers-library.wikidot.com/cave-story|Cave Story]]]** (//for the Wanderers' Depths Contest//)
+**2. [GOI FORMAT]** 👤 **[[[scattersomnia| "Scattersomnia": A Disease of the Wise and Drowsy Wanderers ]]]** (//for Jam Contest Two//)
+**3. [TALE]** 🥛 **[[[no-sense-crying|Spilled Milk]]]** (//for Jam Contest Two//)
+**4. [SCP]** 🧠 **[[[scp-5990|SCP-5990: Out of my head, out of my mind]]]** (//for Jam Contest Two//)
+**5. [COLLAB TALE]** 🐍 **[[[broken-masquerade-epistolary|Snippets of an Unveiled World]]]** //with [[[*http://www.scp-wiki.net/researcher-nyka-s-file|Nykacolaquantum]]] and other collaborators//
 [[/div]]
 
-[[=]]
------
-++ SCPs
------
-[[/=]]
+[[tabview]]
+[[tab SCP-Wiki Works]]
+[[span class="h3"]]FLOPPY'S ARTICLES[[/span]]
 
+[[span class="h5"]]I write things, depending on how you define "write" and "things".[[/span]]
+----
+**Floppy Says:** In the spirit of collaboration: I grant any writer, artist, or otherwise, full permission to use or depict the SCPs, concepts, characters, task forces, locations, or events created by me in your own SCP Wiki work. Drop a link my way; maybe I'll like it, or give you some pointers on how to execute it best!
+-----
+[[=]]
+++ SCPs
+[[/=]]
+-----
 [[module Listpages created_by="=" order="created_at" tag="-translation +scp -international" category="-fragment -component" perPage="{$perPage}"]]
 
 **%%title_linked%%**
@@ -240,13 +277,11 @@ Ah, they're gone. Anyway, //apparently//, this is the place where I get to show 
 //Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
 
 [[/module]]
-
+-----
 [[=]]
------
 ++ Tales
------
 [[/=]]
-
+-----
 [[module Listpages created_by="=" order="created_at" tag="-translation +tale" category="-fragment -component" perPage="{$perPage}"]]
 
 **%%title_linked%%**
@@ -255,13 +290,11 @@ Ah, they're gone. Anyway, //apparently//, this is the place where I get to show 
 //Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
 
 [[/module]]
-
+-----
 [[=]]
------
-++ GoI Formats
------
+++ GOI Formats
 [[/=]]
-
+-----
 [[module Listpages created_by="=" order="created_at" category="-fragment -component" tag="-translation +goi-format" perPage="{$perPage}"]]
 
 **%%title_linked%%**
@@ -270,13 +303,11 @@ Ah, they're gone. Anyway, //apparently//, this is the place where I get to show 
 //Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
 
 [[/module]]
-
+-----
 [[=]]
------
 ++ Hubs
------
 [[/=]]
-
+-----
 [[module Listpages created_by="=" order="created_at" category="-fragment -component" tag="-scp -tale -goi-format -author" perPage="{$perPage}"]]
 
 **%%title_linked%%**
@@ -285,13 +316,11 @@ Ah, they're gone. Anyway, //apparently//, this is the place where I get to show 
 //Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
 
 [[/module]]
-
+-----
 [[=]]
------
 ++ Collaborations
------
 [[/=]]
-
+-----
 [[include component:author-page-collab
   name=SCP-3309 |
   written_by=Lt Flops and PhamtomGuy |
@@ -357,27 +386,37 @@ Ah, they're gone. Anyway, //apparently//, this is the place where I get to show 
   image=no | 
 ]]
 
-++++++ *Team Bird is not_a_seagull, Lt Flops, Ayers, and Quantum Physician
++++++ *Team Bird is not_a_seagull, Lt Flops, Ayers, and Quantum Physician
+[[/tab]]
+
+[[tab Wanderers' Library Works]]
+[[span class="h3"]]FLOPPY'S ARTICLES x2[[/span]]
+
+[[span class="h5"]]I write for The Wanderers' Library too![[/span]]
+----
+@@ @@
+[[span class="h3"]] ~ [[[*http://wanderers-library.wikidot.com/cave-story|Cave Story]]] ~ [[/span]]
+@@ @@
 [[/tab]]
 
 [[tab Other]]
-[[=]]
-----
-+++ CSS Themes
-++++++ My CSS Themes!
-----
+[[span class="h3"]]CSS THEMES[[/span]]
 
-[[span style="font-weight: bold;"]]
+[[span class="h5"]]My CSS Themes![[/span]]
+----
+[[div style="font-weight: bold; text-align: center;"]]
+
 [[[*http://www.scp-wiki.net/component:pataphysics-theme|Pataphysics Department Theme]]]
 [[[*http://www.scp-wiki.net/component:sapphire-theme|SAPPHIRE Theme]]] (with help from [[user Uncle Nicolini]] & [[user stormbreath]])
-[[/span]]
 
+[[/div]]
 ----
-+++ Tags
-++++++ Tags I've requested, created, or contributed to!
-----
+[[span class="h3"]]TAGS[[/span]]
 
-[[span style="font-weight: bold;"]]
+[[span class="h5"]]Tags I've requested, created, or contributed to![[/span]]
+----
+[[div style="font-weight: bold; text-align: center;"]]
+
 [[[*http://www.scp-wiki.net/system:page-tags/tag/researcher-smalls#pages|researcher-smalls]]]
 [[[*http://www.scp-wiki.net/system:page-tags/tag/bobble-the-clown#pages|bobble-the-clown]]]
 [[[*http://www.scp-wiki.net/system:page-tags/tag/director-moose#pages|director-moose]]]
@@ -387,16 +426,24 @@ Ah, they're gone. Anyway, //apparently//, this is the place where I get to show 
 [[[*http://www.scp-wiki.net/system:page-tags/tag/three-moons-initiative#pages|three-moons-initiative]]]
 
 [[[*http://www.scp-wiki.net/system:page-tags/tag/team-bird#pages|team-bird]]]
-[[/span]]
 
-[[/=]]
+[[/div]]
+----
+[[span class="h3"]]DECLASSIFICATIONS[[/span]]
+
+[[span class="h5"]]See:@@  @@[[[scpdeclassified|r/SCPDeclassified]]].[[/span]]
+----
+[[div style="font-weight: bold; text-align: center;"]]
+
+[[[*https://redd.it/84zc9e|Shaggydredlocks' SCP-3980 — Blind Lead the Blind (Declassification)]]]
+
+[[/div]]
 [[/tab]]
 
 [[tab Commentary]]
-[[=]]
-+++ Author Commentary
-++++++ Last updated in June 2018
-[[/=]]
+[[span class="h3"]]COMMENTARY[[/span]]
+
+[[span class="h5"]]Last updated: June 2018.[[/span]]
 ----
 [[span class="scp-showcase"]]--SCP-2641: Before the Fire-- **[DELETED]**[[/span]]
 
@@ -420,9 +467,7 @@ Additional Documents:
 * [[[solidao|Solidão]]]
 [[/div]]
 [[/collapsible]]
-
 ----
-
 [[span class="scp-showcase"]][[[scp-3787|SCP-3787: The Horse Meme]]][[/span]]
 
 [[collapsible show="     + Learn more?" hide="- Close excerpt" hideLocation="bottom"]]
@@ -438,9 +483,7 @@ It took me a very long time to come up with a second article. 3787 was far more 
 
 If you find that this article reads like I threw a bunch of horse anomalies into a blender, then I assure you: Mary Shelley's Horsenstein is //precisely// what I was looking for. Totally. I promise.
 [[/collapsible]]
-
 ----
-
 [[span class="scp-showcase"]][[[scp-3719|SCP-3719: Your Friendly Neighbourhood Lawnmower]]][[/span]]
 
 [[collapsible show="     + Learn more?" hide="- Close excerpt" hideLocation="bottom"]]
@@ -450,9 +493,7 @@ If you find that this article reads like I threw a bunch of horse anomalies into
 
 I'd say it has a very Series I tone. This speaks not to the quality of the SCP (I think it's interesting enough), but to how simple it is. I haven't much to talk about in terms of how I wrote it because, to be honest, it took me a few days to go from the beginning to the critique stage. I had wanted to write something like this for about a year now, but could never figure out how until recently.
 [[/collapsible]]
-
 ----
-
 [[span class="scp-showcase"]][[[scp-3309|SCP-3309: Where We Go When We Fade, Fade Away]]][[/span]]
 
 [[collapsible show="     + Learn more?" hide="- Close excerpt" hideLocation="bottom"]]
@@ -473,9 +514,7 @@ Additional Documents:
 * [[[fragment:scp-3309-april-fools|SCP-3309 -- April Fools 2019 Edition]]]
 [[/div]]
 [[/collapsible]]
-
 ----
-
 [[span class="scp-showcase"]][[[scp-3464|SCP-3464: Olive Garden regularly communes with DEMONIC ENTITIES to summon their SATANIC sempiternal garlic bread]]][[/span]]
 
 [[collapsible show="     + Learn more?" hide="- Close excerpt" hideLocation="bottom"]]
@@ -487,9 +526,7 @@ This was fun to write. It was roughly 5 years ago that I had the idea for extrem
 
 What other aspects are in this? There's the ghostly voice of Don LaFontaine, a Foundation thaumaturge (because they have those too), demonic shenanigans inspired heavily by Third Law ("demonic edibles" for instance), and an actual demon possessing a hunk of garlic bread. A fun read all together, I promise!
 [[/collapsible]]
-
 ----
-
 [[span class="scp-showcase"]][[[spc-507|SPC-507: The Bigger Boat]]][[/span]]
 
 [[collapsible show="     + Learn more?" hide="- Close excerpt" hideLocation="bottom"]]
@@ -527,9 +564,7 @@ Additional Documents:
 * [[[bird|Team Bird Hub]]]
 [[/div]]
 [[/collapsible]]
-
 ----
-
 [[span class="scp-showcase"]][[[scp-3570|EE-3570: Umbral Ultimatum]]][[/span]]
 
 [[collapsible show="     + Learn more?" hide="- Close excerpt" hideLocation="bottom"]]
@@ -548,18 +583,14 @@ Additional Documents:
 [[/tab]]
 
 [[tab Translations]]
-[[=]]
-+++ Page Translations
-++++++ Cool people doing cool translations.
-[[/=]]
+[[span class="h3"]]PAGE TRANSLATIONS[[/span]]
+
+[[span class="h5"]]Cool people doing cool translations.[[/span]]
 ----
 The following are articles of mine that have been translated by other SCP Wiki branches. I'm //super// thankful to anyone that's shared my articles to the international community by taking the time to translate them.
 ----
-[[=]]
-+++ SCPs
-[[/=]]
+[[span class="h3"]]SCPs[[/span]]
 ----
-
 * **[[[scp-3787|SCP-3787]]]** | **[[https://youtu.be/5hQaGJw-pmw Audio version]]**
  * **[*http://lafundacionscp.wikidot.com/scp-3787 Spanish Translation]** by **[[*user Riyer A]]**
 
@@ -618,13 +649,9 @@ CTapbIu_XyJIuraH]]**
 
 * **[[[scp-5990|SCP-5990]]]**
  * **[*http://scp-wiki-cn.wikidot.com/scp-5990 Chinese Translation]** by **[[*user ashausesall]]**
- * 
 ----
-[[=]]
-+++ Tales
-[[/=]]
+[[span class="h3"]]TALES[[/span]]
 ----
-
 * **[[[the-abyss-gazes-back|The Abyss Gazes Back (And It's ASCII On A CRT Screen)]]]**
  * **[*http://scp-wiki-cn.wikidot.com/the-abyss-gazes-back Chinese Translation]** by **[[*user Patrick Liu]]**
 
@@ -641,22 +668,14 @@ CTapbIu_XyJIuraH]]**
 
 * **[[[crispy-sex-pirates|A Surprise Encounter with Crispy Sex Pirates]]]**
  * **[*http://scp-wiki-cn.wikidot.com/crispy-sex-pirates Chinese Translation]** by **[[*user miumeat]]**
-
 ----
-[[=]]
-+++ GOI Formats
-[[/=]]
+[[span class="h3"]]GOI FORMATS[[/span]]
 ----
-
 * **[[[critter-profile-bartholomew|Critter Profile: Bartholomew!]]]**
  * **[*http://scp-es.com/critter-profile-bartholomew Spanish Translation]** by **[[*user Riyer A]]**
- 
 ----
-[[=]]
-+++ Series: Team Bird
-[[/=]]
+[[span class="h3"]]SERIES -- Team Bird[[/span]]
 ----
-
 * **[[[bird|Team Bird Hub]]]**
  * **[*http://lafundacionscp.wikidot.com/bird Spanish Translation]** by **[[*user morhadow]]**
  * **[*http://scp-wiki-cn.wikidot.com/bird Chinese Translation]** by **[[*user Sraosha]]**
@@ -673,13 +692,9 @@ CTapbIu_XyJIuraH]]**
 * **[[[the-sacred-djehuti|The Sacred Djehuti]]]**
  * **[*http://lafundacionscp.wikidot.com/the-sacred-djehuti Spanish Translation]** by **[[*user morhadow]]**
  * **[*http://scp-wiki-cn.wikidot.com/the-sacred-djehuti Chinese Translation]** by **[[*user vxeov]]**
-
 ----
-[[=]]
-+++ Series: A Non-Prophet Organization
-[[/=]]
+[[span class="h3"]]SERIES -- A Non-Prophet Organization[[/span]]
 ----
-
 * **[[[non-prophet-organization-hub|A Non-Prophet Organization Hub]]]**
  * **[*http://scp-int.wikidot.com/non-prophet-organization-hub International Version]**
  * **[*http://scp-wiki-cn.wikidot.com/non-prophet-organization-hub Chinese Translation]** by **[[*user Etinjat]]**
@@ -693,35 +708,39 @@ CTapbIu_XyJIuraH]]**
 
 * **[[[grant-request-post-mortem-neural-preservation|GRANT REQUEST FOR THE RE-CREATION OF AN ADVANCED POSTMORTEM NEURAL PRESERVATION SYSTEM]]]**
  * **[*http://fondationscp.wikidot.com/grant-request-post-mortem-neural-preservation French Translation]** by **[[*user DrGemini]]**
- 
 [[/tab]]
 
 [[tab Fan Art]]
-[[=]]
-+++ Fan Art
-++++++ Beautiful fan renditions!
-[[/=]]
+[[span class="h3"]]FAN ART[[/span]]
+
+[[span class="h5"]]Beautiful fan renditions![[/span]]
 ----
-+++ [[[scp-3787|SCP-3787]]]
+[[span class="h3"]] [[[SCP-3787]]] [[/span]]
+
 * **[*https://imgur.com/2McPrdG Glue Factory]** by **[[*user pastarasta1]]** (**[[[*http://www.scp-wiki.net/pastarasta1-s-simply-epic-artpage|Art Page]]]**)
 * **[*https://www.deviantart.com/sunnyclockwork/art/SCP-3787-793333675 Horse Meme]** by **[[*user SunnyClockwork]]** (**[[[*http://www.scp-wiki.net/sunny-s-black-and-white-art|Art Page]]]**)
+----
+[[span class="h3"]] [[[SCP-3309]]] [[/span]]
 
-+++ [[[scp-3309|SCP-3309]]]
 * **[*https://www.deviantart.com/sunnyclockwork/art/SCP-3309-788150972 Where We Go When We Fade, Fade Away]** by **[[*user SunnyClockwork]]** (**[[[*http://www.scp-wiki.net/sunny-s-black-and-white-art|Art Page]]]**)
 * **[*http://scp-wiki.wdfiles.com/local--files/dianas-spectacular-not-really-art-hub/3309-1 SCP-3309]** by **[[*user DianaBerry]]** (**[[[*http://www.scp-wiki.net/dianas-spectacular-not-really-art-hub|Art Page]]]**)
 * //**[*https://imgur.com/ecGAKqv are you worth remembering?]**// by **[[*user crushed bananas]]**
+----
+[[span class="h3"]] [[[SCP-3739]]] [[/span]]
 
-+++ [[[scp-3739|SCP-3739]]]
 * **[*https://i.imgur.com/aTZQBRz.jpg Moosphere Medley]** by **[[*user Dramps]]**
 * **[*https://i.imgur.com/7ih0Wov.png D-1711, Experimentation Log]** by **[[*user pastarasta1]]** (**[[[*http://www.scp-wiki.net/pastarasta1-s-simply-epic-artpage|Art Page]]]**)
 ----
-+++ [[[scp-2|SCP-2]]]
+[[span class="h3"]] [[[SCP-2]]] [[/span]]
+
 * **[*https://old.reddit.com/r/DankMemesFromSite19/comments/a3vb63/so_scp2_is_now_an_scp_so_to_celebrate_i_made_a/ TL;DR]** by **Unknown**
 ----
-+++ [[[spc-993|SPC-993]]]
+[[span class="h3"]] [[[SPC-993]]] [[/span]]
+
 * **[*http://scp-wiki.wdfiles.com/local--files/caimanchameleon/SPC-993 Low-Poly Bobble the Clown Shark]** by **[[*user CaimanChameleon]]** (**[[[*http://www.scp-wiki.net/caimanchameleon|Art Page]]]**)
 ----
-+++ "A Floppy Phoenix"
+[[span class="h3"]] "A Floppy Phoenix" [[/span]]
+
 [[collapsible]]
 Drawn by [[*user Phoenixfire003]] (@phoefire003) and used with her permission.
 
@@ -730,9 +749,7 @@ Drawn by [[*user Phoenixfire003]] (@phoefire003) and used with her permission.
 [[/tab]]
 
 [[tab Writing]]
-[[=]]
-+++ Writing, Inspiration, and the Community
-[[/=]]
+[[span class="h3"]]WRITING/INSPIRATION/COMMUNITY[[/span]]
 ----
 I'm a big science fiction fan, and a diehard fan of the //Halo// series, which is where a lot of my inspiration comes from. Truth be told, I'm a nerd. I would say my articles are typically science fiction-oriented (specifically featuring paratechnology), and I always like to explore some wacky concept to its logical extreme. I'm not always the most successful, but I do try.
 
@@ -766,21 +783,12 @@ And more to come!
 * **[*http://scpdsandbox.wikidot.com/lt-flop-s-sandbox Sandbox Hub Une]**
 * **[*http://topia.wikidot.com/floppy-hub Sandbox Hub Deux]**
 [[/tab]]
-
-[[tab Declassifications]]
-[[=]]
-+++ Declassifications
-++++++ Does anyone read these little blurbs?
-[[/=]]
-----
-* **[*https://www.reddit.com/r/SCPDeclassified/comments/84zc9e/scp3980_blind_lead_the_blind/?utm_content=title&utm_medium=hot&utm_source=reddit&utm_name=SCPDeclassified Declassification of Shaggydredlocks' SCP-3980 - Blind Lead the Blind]**
-[[/tab]]
 [[/tabview]]
 
-= **—**
+= **--**
 
 [[div class="header"]]
-+++ --Inebriation-- Inoculation complete. Thanks for reading!
+[[span class="h3"]]--Inebriation-- Inoculation complete. Thanks for reading![[/span]]
 
 [[module Rate]]
 
