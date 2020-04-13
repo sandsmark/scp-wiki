@@ -1,63 +1,6 @@
 title:The Rounderpage
 [[include component:black-highlighter-theme-dev]]
 
-[[=]]
-[[size 300%]]
-[[span style="font-family: 'Bungee Shade', cursive;" color: "#D4AF37;"]]
-**JAMCON 2020**
-[[/span]]
-[[/size]]
-[[/=]]
-
-----
-[[=]]
-[[collapsible show="THEME 1: EXPLOSIONS"]]
-[[span style="font-family: 'Bungee Shade', cursive;" color: "#D4AF37; font-size: 200%;"]]
-**EXPLOSIONS**
-[[/span]]
-[[<]]
-[[div class="fivek"]]
-[[module ListPages order="rating desc" category="." tags="+_explosions" perPage="40" separate="no" prependLine="||~ Place ||~ Title ||~ Author ||~ Rating ||~ Votes ||~ Comments ||"]]
-|| #%%index%% || %%title_linked%% || %%created_by_linked%% || %%rating%% || +[[#expr (%%rating%%+((%%rating_votes%%-%%rating%%)/2))]], -[[#expr ((%%rating_votes%%-%%rating%%)/2)]] || %%comments%% ||
-[[/module]]
-[[/div]]
-[[/<]]
-[[/collapsible]]
-[[/=]]
-----
-[[=]]
-[[collapsible show="THEME 2: DELICIOUS"]]
-[[span style="font-family: 'Bungee Shade', cursive;" color: "#D4AF37; font-size: 200%;"]]
-**DELICIOUS**
-[[/span]]
-[[<]]
-[[div class="fivek"]]
-[[module ListPages order="rating desc" category="." tags="+_delicious" perPage="40" separate="no" prependLine="||~ Place ||~ Title ||~ Author ||~ Rating ||~ Votes ||~ Comments ||"]]
-|| #%%index%% || %%title_linked%% || %%created_by_linked%% || %%rating%% || +[[#expr (%%rating%%+((%%rating_votes%%-%%rating%%)/2))]], -[[#expr ((%%rating_votes%%-%%rating%%)/2)]] || %%comments%% ||
-[[/module]]
-[[/div]]
-[[/<]]
-[[/collapsible]]
-[[/=]]
-----
-[[=]]
-[[collapsible show="THEME 3: MORE THAN MEETS THE EYE"]]
-[[span style="font-family: 'Bungee Shade', cursive;" color: "#D4AF37; font-size: 200%;"]]
-**MORE THAN MEETS THE EYE**
-[[/span]]
-[[<]]
-[[div class="fivek"]]
-[[module ListPages order="rating desc" category="." tags="+_meets-the-eye" perPage="40" separate="no" prependLine="||~ Place ||~ Title ||~ Author ||~ Rating ||~ Votes ||~ Comments ||"]]
-|| #%%index%% || %%title_linked%% || %%created_by_linked%% || %%rating%% || +[[#expr (%%rating%%+((%%rating_votes%%-%%rating%%)/2))]], -[[#expr ((%%rating_votes%%-%%rating%%)/2)]] || %%comments%% ||
-[[/module]]
-[[/div]]
-[[/<]]
-[[/collapsible]]
-[[/=]]
-----
-@@ @@
-@@ @@
-
 [[div style="background: url(http://scp-wiki.wdfiles.com/local--files/rounderhouse-s-author-page/rounderception.png); height: 20px; position: sticky; top: 0; text-align: center; border: 4px solid #000; z-index: 100;"]]
 [[/div]]
 [[div class="shimmy"]]
