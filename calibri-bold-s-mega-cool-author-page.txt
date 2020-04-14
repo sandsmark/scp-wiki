@@ -137,8 +137,10 @@ display:none
 %%total%% Pages \
 [[/module]] \
 [[size large]]__**Random**__[[/size]]
+[[module Countpages created_by="=" tag="-workbench -contest" category="-fragment -component"]]
 [[module Listpages created_by="=" tag="-author -workbench -contest -splash -supplement -translation" category="-fragment -component" limit="1" order="random"]]
-[[[*%%link%%|Article]]] \
+[[[*%%link%%|%%total%% Articles]]] \
+[[/module]] \
 [[/module]] \
 [[module Listpages created_by="=" tag="+scp -author -workbench -contest -splash -supplement -translation" category="-fragment -component" limit="1" order="random"]]
 [[[*%%link%%|SCP]]] \
