@@ -49,8 +49,8 @@ I'm sure there's other stuff but who cares!
 @@ @@
 ++++ Attached Documents
 
-[[module ListPages created_by="DrAkimoto" order="created_at" separate="no" perPage="250" prependLine="||~ Article Name ||~ Rating ||~ Votes||~ Comments ||~ Last Comment ||~ Created ||~ Last Edited ||"]] 
-|| %%title_linked%% || %%rating%% || +[[#expr (%%rating%%+((%%rating_votes%%-%%rating%%)/2))]], -[[#expr ((%%rating_votes%%-%%rating%%)/2)]] || %%comments%% || %%commented_at%% || %%created_at%% || %%updated_at%% ||
+[[module ListPages created_by="DrAkimoto" order="created_at" separate="no" perPage="250" prependLine="||~ Article Name ||~ Rating ||~ Votes||~ Comments ||~ Last Comment ||~ Created ||"]] 
+|| %%title_linked%% || %%rating%% || +[[#expr (%%rating%%+((%%rating_votes%%-%%rating%%)/2))]], -[[#expr ((%%rating_votes%%-%%rating%%)/2)]] || %%comments%% || %%commented_at%% || %%created_at%% ||
 [[/module]]
 
 [[include :scp-sandbox-3:image-zoom name=donk|caption=You've been DONKED.|width=300px|align=left]]
