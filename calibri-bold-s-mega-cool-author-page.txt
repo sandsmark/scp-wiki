@@ -135,7 +135,7 @@ display:none
 [[module Rate]]
 [[size large]]__**Random**__[[/size]]
 [[module Listpages created_by="=" tag="-author -workbench -contest -splash -supplement -translation" category="-fragment -component" limit="1" order="random"]]
-[[[*%%link%%|%%total%% Articles]]] \
+[[[*%%link%%|[[#expr (%%total%%+1)]] Articles]]] \
 [[/module]] \
 [[module Listpages created_by="=" tag="+scp -author -workbench -contest -splash -supplement -translation" category="-fragment -component" limit="1" order="random"]]
 [[[*%%link%%|%%total%% SCPs]]] \
