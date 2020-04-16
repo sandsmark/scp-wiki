@@ -219,7 +219,7 @@ I might comment on your thing and say that it's mega cool. It has no official we
 [[/div]]
 [[/module]]
 
-[[module Listpages created_by="=" order="@URL|{$order}" tag="-translation +scp -co-authored" category="-fragment -component" perPage="{$perPage}"]]
+[[module Listpages created_by="=" order="@URL|{$order}" tag="-translation +scp -co-authored" category="-fragment -component" perPage="250"]]
 [[div class="preview yes"]]
 **%%title_linked%%**
  +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
@@ -237,7 +237,7 @@ I might comment on your thing and say that it's mega cool. It has no official we
 [[/div]]
 [[/module]]
 
-[[module Listpages created_by="=" order="@URL|{$order}" tag="-translation +tale -co-authored" category="-fragment -component" perPage="{$perPage}"]]
+[[module Listpages created_by="=" order="@URL|{$order}" tag="-translation +tale -co-authored" category="-fragment -component" perPage="250]]
 [[div class="preview yes"]]
 **%%title_linked%%**
  +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
@@ -255,7 +255,7 @@ I might comment on your thing and say that it's mega cool. It has no official we
 [[/div]]
 [[/module]]
 
-[[module Listpages created_by="=" order="@URL|{$order}" category="-fragment -component" tag="-translation +goi-format -co-authored" perPage="{$perPage}"]]
+[[module Listpages created_by="=" order="@URL|{$order}" category="-fragment -component" tag="-translation +goi-format -co-authored" perPage="250"]]
 [[div class="preview yes"]]
 **%%title_linked%%**
  +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
@@ -273,7 +273,7 @@ I might comment on your thing and say that it's mega cool. It has no official we
 [[/div]]
 [[/module]]
 
-[[module Listpages created_by="=" order="@URL|{$order}" category="-fragment -component" tag="-scp -tale -goi-format -co-authored" perPage="{$perPage}"]]
+[[module Listpages created_by="=" order="@URL|{$order}" category="-fragment -component" tag="-scp -tale -goi-format -co-authored" perPage="250"]]
 [[div class="preview yes"]]
 **%%title_linked%%**
  +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
@@ -541,31 +541,6 @@ While I know I'll never be able to achieve all of these, this is a nice sort of 
 || Successfully coldpost an article || Yay! ||
 || Complete Bright's Challenge ||  ||
 || Create a new GoI ||  ||
-
-[[/tab]]
-[[tab Recommended Authors]]
-
-This is a list of author I would personally recommend to anyone. Note that this isn't in any particular order, it's just a disorganized list of good authors.
-
-[[=]]
-
-[[module Listpages created_by="AbsentmindedNihilist" order="random" category="-fragment -component" tag="-translation -author" perPage="1" limit="1"]]
-[[div class="preview yes"]]
-+++ ##black|AbsentmindedNihilist##
-**[[[AbsentmindedNihilist's Personnel File|Author Page]]]**
-**[%%link%% Random Article]**
-[[/div]]
-[[/module]]
-
-[[module Listpages created_by="DrAkimoto" order="random" category="-fragment -component" tag="-translation -author" perPage="1" limit="1"]]
-[[div class="preview yes"]]
-+++ ##black|DrAkimoto##
-**[[[Drakimoto's Author Page|Author Page]]]**
-**[%%link%% Random Article]**
-[[/div]]
-[[/module]]
-
-[[/=]]
 
 [[/tab]]
 [[tab Former Author Page (Archived)]]
