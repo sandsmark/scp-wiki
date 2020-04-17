@@ -1,0 +1,399 @@
+title:Ulysses B Donkman And The Foreboding Forest, Part 2
+[[module CSS]]
+/*
+    Donkman Theme, a modification by DrAkimoto of the Aces and Eights Theme
+    [2018 Wikidot Theme]
+    Created by rounderhouse, with help from Uncle Nicolini.
+    Based on SCP Sigma 9 Theme created by Aelanna and Dr Devan, and MC&D Theme created by     
+    Randomini.
+*/
+ 
+#header{
+    background: url(null)
+}
+#header:before{
+display:block;
+position: absolute;
+width: 100px;
+height: 100px;
+top: 15%;
+left:2%;
+z-index: -1;
+content: "";
+background:url(http://topia.wikidot.com/local--files/collab:ravenmilk/donkcon);
+background-repeat: no-repeat;
+background-size: 100px 99px;
+background-position: 0px 0px 0px;
+z-index: -20;
+}
+ 
+#content-wrap {z-index: 2;}
+ 
+/* BODY */
+body {
+    background: #eee4d5 !important;
+}
+ 
+.main-body-div{
+    width: 92.7%;
+    line-height: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    vertical-align: top;
+    transition: all .7s;
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("http://scp-wiki.wdfiles.com/local--files/component%3Aaces-and-eights-theme/paper.jpg");
+}
+ 
+#header h1 a {
+    font-size: 190%;
+    color: transparent;
+    text-shadow: none;
+}
+ 
+div#container-wrap {
+    background: url(http://scp-wiki.wdfiles.com/local--files/component%3Aaces-and-eights-theme/header.png) top left repeat-x;
+}
+ 
+#header h1 a::before {
+    font-family: 'Playfair Display SC', serif;
+    content: "The Donkman's Den";
+    color: #000000;
+    padding-bottom: 50px;
+}
+ 
+#header h2 span {
+    font-size: 175%;
+    color: transparent;
+    text-shadow: none;
+}
+#header h2 span::before {
+    font-family: 'Playfair Display SC', serif;
+    content: "The Tallest Tales, the Donkest Man.";
+    color: #000000;
+    padding: 0px 0px 00px;
+}
+ 
+#search-top-box-input, #search-top-box input.empty,
+#search-top-box-form input[type=submit] {
+    transition: 0.2s linear;
+}
+ 
+#search-top-box-input, #search-top-box input.empty {
+    background-color: #B4935D;
+    border: 1px solid #DBC39F;
+    border-radius: 0;
+    color: #000;
+}
+ 
+#search-top-box-input:hover, #search-top-box-input:focus,
+#search-top-box input.empty:hover, #search-top-box input.empty:focus {
+    outline: 0;
+    border: 1px solid #000;
+    background-color: #B4935D;
+    box-shadow: 0 1px 3px rgba(0,0,0,.8);
+}
+ 
+#search-top-box-form input[type=submit] {
+    outline: 0;
+    height: 1.65em;
+    border: 1px solid #DBC39F;
+    border-radius: 0;
+    color: #000;
+    background: #B6925E;
+ 
+    position: relative;
+    top: -1px;
+ 
+    box-shadow: none;
+}
+ 
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    border: 1px solid #000;
+    border-radius: 0;
+    background: #B6925E;
+}
+ 
+#search-top-box-form input[type=submit]:active {
+    padding: 0 0.5em;
+    border: 2px solid #DBC39F;
+    border-radius: 0;
+    color: #000;
+    background: #B6925E;
+}
+ 
+#login-status, #login-status a {
+    color: #000;
+    border-color: #000;
+}
+ 
+#side-bar .side-block {
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    box-shadow: none !important;
+    background: #e7d8c2;
+    margin-bottom: 15px;
+    color: black;
+}
+ 
+h1, #page-title {
+    color: #000;
+    padding: 0 0 0.25em;
+    margin: 0 0 0.6em;
+    font-weight: heavy;
+    font-family: 'Playfair Display SC', serif;
+}
+ 
+blockquote,
+div.blockquote {
+    border-color: #444;
+    background-color: #e7d8c2;
+    color:#000;
+}
+ 
+/* inputs */
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+    border-top: 1px solid #000000;
+}
+ 
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    background: #bc9055;
+    color: #ffffff;
+}
+#top-bar ul li ul a, #top-bar a:hover {
+    color: #8db600;
+}
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: #680000; /* top bar hover background color */
+}
+/*nico was here*/
+:root {
+    --hyperlink: #824565;
+    --hyperlink-visited: #63173f;
+}
+ 
+@media (max-width: 479px) {
+#search-top-box-input,
+#search-top-box-form {
+    display: none;
+}
+ 
+#header h1 a {
+    font-size: 90%;
+}
+ 
+#header h2 span{
+font-size: 55%;
+}
+ 
+#header {
+    background-position: 0 5.5em;
+    background-size: 55px 55px;
+}
+ 
+#header:before{
+width: 60%;
+height: 50%;
+background-size: 55px 55px;
+background-position: 0px 0px 20px;
+}
+}
+[[/module]]
+ 
+[[include :scp-wiki:info:start]]
+ 
+**Ulysses B. Donkman and the Foreboding Forest: Part 2** by: [[*user DrAkimoto]] & [[*user MalyceGraves]]
+@@ @@
+[http://www.scp-wiki.net/ulysses-b-donkman-and-the-foreboding-forest Ulysses B. Donkman and the Foreboding Forest: Part 1]
+@@ @@
+[http://www.scp-wiki.net/the-donkman-s-den Donkman Hub!]
+@@ @@
+[http://www.scp-wiki.net/drakimoto-s-author-page ~DrAkimoto's Author Page~]
+[http://www.scp-wiki.net/malycegraves-author ♠ MalyceGraves' Author Page]
+[[include :scp-wiki:info:end]]
+@@ @@
+
+[[=]]
+[[html]]
+<img src="http://topia.wikidot.com/local--files/collab:ravenmilk/cavecon" style="height:75px; width:70px; padding-left: 0%;">
+[[/html]]
+[[/=]]
+@@ @@
+**June 19th, 1867 - Somewhere underneath what would become the [http://www.scp-wiki.net/ulysses-b-donkman-and-the-foreboding-forest Ouachita National Forest]**
+
+
+
+
+The shrieks of the angry serpent could still be heard echoing down from the opening far above him. Donkman lifted himself to his knees and started to brush the dirt from his jacket when a twinge of pain reminded him of his wounded shoulder. He shook his head ruefully as he tested the movement in it. 
+
+"What in tarnation have I done gotten myself into this time?" He mumbled to himself as he peered into the darkness surrounding him. 
+
+After a few moments of staring ineffectually into the dark, he pulled out his matches and lit a cigarette, using the fading light from the match to survey his surroundings. As the light from the match faded out, the serpent above him let out another tremendous shriek followed by the sound of digging. 
+
+"Well, I'm certainly not gonna be climbin' out, that's for sure. Tunnel on the left, here we go."
+
+At that, he turned and jogged into the darkness of the tunnel, hoping it led somewhere other than a deep pit. As he made his way down the twisting tunnel, a loud crash accompanied by the screams of the serpent's many faces echoed from the chamber behind him, and Donkman quickened his pace.
+
+With his eyes not fully adjusted, he barely registered the wall at the end of the tunnel, skidding to a stop before he slammed into it. With a muttered curse, he ran his hands over the wall, looking for an opening large enough to squeeze through. 
+
+Finding none, Donkman reached into his jacket and pulled out a slender stick of dynamite. 
+
+"I reckon this'll have to do." He muttered to himself as he turned to face the onrushing serpent. He tried to clear his mind, trying to project the shape of the tunnel he just passed through, only mildly distracted by his imminent encounter with the many-faced monstrosity.
+
+"Ugly bastard, ain'tcha?" Donkman taunted as the thing slid to a halt a few feet before him. After a moment of stillness, he cleared his throat. "Well, whatcha' waitin' on fella?"
+
+With that the serpent lunged forward, barreling down on Donkman. He dove to the right, just barely escaping the abomination's gaping maw. The serpent crashed headfirst into the wall of tunnel and Donkman flicked his lighter, igniting the entirely too-short wick of the dynamite. "Here, catch!" he called as he tossed the stick into the space between the top of the snake and the roof of the tunnel. 
+
+The dynamite bounced once off the roof, then detonated in a massive concussion that collapsed the roof of the tunnel, burying the monstrosity in tons of rock and dirt.
+
+"Well, damn." Donkman muttered again to himself where he lay, partially covered in dirt and small rocks. He groaned and rolled over onto his back. "I think I might need to just sit a spell and catch my breath."
+
+--------
+After a short time, Donkman rolled over and pushed himself to his feet. He swayed a little as he leaned against the wall of the tunnel, then he proceeded to gingerly make his way back to the cavern. 
+
+The light flickering on the side of the tunnel was his first indication that he was not alone. As he edged towards the opening into the cavern, he could see two men standing in the center of the large space, inspecting the spot where he fell. Both were of medium height, and they were both dressed in rough homespun, just as most of the frontiersmen he had met. What was different were the beads and feathers woven into their long, dark hair. 
+
+After a few minutes of watching them converse in a language he did not understand, Donkman decided that they probably weren't connected to the serpent or the strange brothers. "Eh, I might as well say hello."
+
+As Donkman stepped out into the cavern, the men immediately turned to face him, looks of wary suspicion flickering across their faces. Donkman raised both of his hands in a placating gesture.
+
+"If'n your lookin' for a fight, ya won't find one here, fellas." He grinned at them, trying to look as nonthreatening as possible.
+
+The first man stepped forward and lifted his torch to cast the light more fully across Donkman, his tomahawk loosely hanging from his beaded belt. He gestured with his other hand for Donkman to stop, adding a few more words in the language that Donkman could not understand.
+
+"This'll be a mite tricky." Donkman ran his fingers through his mane, "¿Hablas español, mi amigos?"
+
+Both men stared blankly back at him, then one of them pointed towards the tunnel and spoke again.
+
+Donkman snorted, "Now, you don't wanna head that way, believe you me."
+
+Donkman scratched his chin and looked around, finally stopping on the first man's torch. "Hm. Maybe this'll work." 
+
+Donkman pointed to the man's torch and then at the wall, repeating the motion several times. After a brief exchange with his companion, the first man tentatively stepped forward, raising the torch towards the cavern wall. Donkman stepped forward, stopping a few feet between the man and the wall. Noting that both men were watching him, he rolled up his sleeves and cracked his knuckles.
+
+"Y'all gonna' love this one."
+
+Donkman began to put on an elaborate shadow puppet show, his hands and fingers weaving into unnatural positions forming intricate shadow figures on the wall. By manipulating the shadows, Donkman proceeded to show the men about how he'd been tricked into the forest, then how he climbed up the cliff, and finally the disgusting water hole. As Donkman introduced the two foul brothers, the second man motioned for him to stop. 
+
+Donkman stopped, keeping his fingers twisted into the shadow that showcased the many-jointed brother. The second man stepped up to the wall and pointed at the weirdly proportioned figure.  
+
+"Ak Shu." At Donkman's confused look, the man repeated it again, "Ak Shu!"
+
+"Well, I reckon that's his name then? Ak Shu." Donkman mused.
+
+The man pointed at the shadow figure again, then to the ceiling. With both hands he mimicked something with many jointed limbs crawling like a spider down the wall, before pointing to the right tunnel entrance.
+
+"Now we're gettin' somewheres!" Donkman said and shifted his hands to only show the Ak Shu shadow figure.
+
+The second man held his arms together, replicating the posture of being shackled at the wrist. Then, he pointed down the tunnel and makes a square motion with his hands, then brought one of his hands out and down, vertically slashing the air between the box’s borders. 
+
+Donkman shifted his hands again, now showing Ak Shu in a barred cage. The man clapped once and shouted something to his companion. The man gestured at the cage, then to himself, then repeated the gesture again. He then pointed to Ak Shu and the space just beyond the cage. Donkman nodded, thinking that he finally understood.
+
+"Like this, then." Shifting his hands again, Donkman portrayed several First Nations people in a cage with Ak Shu standing next to it. 
+
+The man clapped once again, pointed to the shadow, then to the entrance of the second tunnel.
+
+Donkman nodded, and changed the shadow again, this time depicting himself and the two men opening the cage. At their pleased nods, he released the shadows and pointed to the entrance before flashing a smile.
+
+Donkman placed his right hand on his own chest. "Donkman."
+
+Both men repeated the gesture. 
+
+"Tsela" said the first man, "Ahiga" said the other. 
+
+Donkman rubbed at his injured shoulder again before dusting off his jacket and fixing his trousers. "Well, what're we waitin' for boys? Let's getta' move on."
+
+------
+
+As the silent trio carefully made their way down the tunnel, Donkman noted that this one continued much further than the last. Something stirred ahead, and Donkman's ear twitched.
+
+"Hey now, hold ya' horses." Donkman whispered, gesturing for his newfound companions to stop. 
+
+As Donkman cupped his hand and raised it to his ear, the two men perk their heads up, obviously straining to hear as well. It was distant but they could all hear it: the faint sound of weeping. 
+
+The three men quickened their pace, steadfast with the knowledge that they were drawing near to their goal.
+
+The tunnel opened into another cavern and the three men carefully peeked into it. In the center of the cavern stood a large cage that looked as if it had been assembled from discarded bone. Inside the cage sat three women, two elderly men, a small child, and a wailing baby clutching desperately at who was probably their mother. 
+
+Donkman surveyed the rest of the cavern as Tsela and Ahiga step up and attempted to open the cage. "Ugh." Donkman grunts in disgust, as his eyes play over the bookshelves, tables, chairs, and several makeshift beds- all crafted from human bone.
+
+Distracted by his growing rage, Donkman did not notice at first as his companions struggling to open the cage. Still angry, Donkman stomped over and gestured for them to move. As soon as they complied, he chopped through the bars of the cage, shattering them with a quick sweeping motion. Two of the women immediately rushed out and tearfully embraced Tsela and Ahiga, quickly followed by the rest, the woman with the child.
+
+------
+
+A tinge of fear trickled down his spine as Donkman turned to the reunited group. "I reckon we best make our way quick-like bef–"
+
+"Before what." The cold and slimy voice that interrupted him was altogether too familiar, and Donkman slowly turned to look towards the entrance.
+
+"Were ya plannin' on'a goin' somewhere with my'a, dinner?" Ak Shu was pressed belly first against the cavern wall where he clung above the entrance.
+
+His many jointed limbs sprawled unnaturally across the rocky surface fixing him in place; his neck stretched backward to face the assembled group.
+
+"Tsk. Tsk. Tsk. Can't be'a lettin' Papa have all the fun, can'a we?" The twisted caricature of a man cackled at them. 
+
+Donkman, Tsela, and Ahiga dashed to the front of the group they had only just rescued and braced for the oncoming confrontation. Ahiga readied a bow he pulled from atop a pile near the cage while Tsela hefted the torch, brandishing his tomahawk in the other hand. Donkman remained still– focused intently on Ak Shu.
+
+"I reckon it's your move." He drawled, his eyes never leaving the creature.
+
+At that, Ak Shu burst into movement, his long arms and legs arched unnaturally as he skittered along the cavern's ceiling. Ahiga drew and released several arrows in rapid succession, all of which missed their target as Ak Shu skittered from side to side across the roof. 
+
+In an explosion of motion, Ak Shu dove from the ceiling towards them. Donkman grabbed Ahiga by the arm and pointed at the rescued individuals.
+
+"Get them outta' here, Ahiga!" Donkman yelled, pointing again at the entrance to the tunnel. In a rush, the rescued people ran past Donkman and into the tunnel, Ahiga following closely behind. 
+
+They slipped past Donkman just in time for him to catch a glimpse of Ak Shu slamming into Tsela. With a swift punch, the torch exploded into shards of wood and embers.
+
+By the time Donkman's eyes adjusted to the darkness, he found that he was once again alone, with no sign of either Ak Shu or Tsela. As he peered into the darkened corners of the cavern, he was startled by a loud wet pop followed by a tearing sound. A complete spinal column landed on the ground in front of Donkman, and before the sight fully registers, Donkman is drenched by a wave of cascading blood.
+
+"Now you'sa mine!" Ak Shu screamed as he lunged from the ceiling above.
+
+Slamming into Donkman, Ak Shu wrapped his slender jointed legs around the man, his arms arched over and around Donkman's arms, pinning him to the ground. As Donkman struggled against him, Ak Shu began to squeeze, pushing the wind from Donkman's lungs. 
+
+For the second time in as many hours, Donkman suddenly found himself face to face with the realization that he might not make it out of this one. This time, however, at least he can buy his newfound friends a little more time.
+
+"It'll take more than that to stop ol' Donkman!" he bellowed as he reared his head back and bit down on Ak Shu's arm as hard as he could.
+
+Ak Shu jerked his arm up, slamming Donkman's head backward into the ground before taking his own bite from Donkman's chest. His teeth sank deeply into the muscles and flesh of Donkman's chest, grating harshly against his sternum. 
+
+With a jerk, he tore a bloody strip from Donkman's chest and chewed it sloppy, spraying Donkman with his own blood. "Delicious! And to think Papa almost'a had ya all to himself."
+
+Donkman squirmed against the thing's arms as Ak Shu lunged in for another bite, only to jerk aside as a sharp whistle interrupted their struggle.
+
+Ak Shu looked up to see Ahiga pointing a drawn bow at point-blank range, tension trembling in the taut bowstring. He released the arrow, and Ak Shu was forced to release Donkman's left arm in order to change position. The desperate jerk caused the arrow to miss his heart and it buried itself in the soft flesh just inside his shoulder. 
+
+Ak Shu shrieked in pain, his entire body convulsing in pain. Donkman saw the opportunity, and he reached up to grip the arrow and tugged it loose. With a mighty bellow he drove the arrow through Ak Shu's eye.
+
+Ak Shu wailed again in response, flying backwards and skittering on all fours across the cavern floor. Donkman tucked his hand into his jacket and retrieved a length of rope tied into a lasso.
+
+"You're not gettin' away that easy!" Donkman quipped as he quickly flung the lasso at the fleeing monster, catching it in the lasso's loop. "Now's your chance, Ahiga!" he roared as he yanked hard on the line, ensnaring Ak Shu's upper torso.
+
+Even if Ahiga did not understand Donkman's words, he immediately understood the tableau before him. With his own roar, he unleashed a volley of arrows into Ak Shu's chest and back. The flailing monster let out one final shriek of pain before falling to the ground in a crumpled mass of tangled limbs.
+
+------
+
+With Donkman using Ahiga's shoulder for support, the pair limped their way into the cavern Donkman initially fell into, to find two thick ropes dangling from the opening in the ceiling. Donkman gritted his teeth as the two of them grab their own rope. A rumbling can be heard emanating from from the tunnel behind them; they had no plans to stick around to investigate its origins. The men slowly pulled themselves up the ropes, the sunlight above them urging them onward through their growing fatigue. 
+
+With echoing groans, the two pulled themselves out into the crisp air, only to collapse at the edge, both men gathering great lungfuls of air. They looked at each other with grim determination, ready to be out of the foreboding forest. 
+
+The trail was long and winding, but the pair did not stop, and finally Donkman could see the trees beginning to thin out up ahead. Ahiga's rescued family could be seen I the clearing, waving the exhausted men forward. Gripping his aching arm across his wounded chest, he slumped forward as the two of them quickened their pace. 
+
+At last, as the pair was about to step out of the forest they stopped and turned back for one last look.
+
+"I really owe ya' one, Ahiga." Donkman said as he placed a hand on Ahiga's shoulder. "We make a pretty good team, if'n I say so myself."
+
+The moment was cut short by the now-familiar shrieks of the serpent, and the ground collapsed beneath Donkman's feet. There would be no quick thinking this time, no perfect escapes, no quips– 
+
+Only darkness, as Donkman and Ahiga were swallowed whole.
+
+
+**To Be Continued...**
+@@ @@
+[[=]]
+[[html]]
+<img src="http://topia.wikidot.com/local--files/collab:ravenmilk/cavecon" style="height:75px; width:70px; padding-left: 0%;">
+[[/html]]
+[[/=]]
