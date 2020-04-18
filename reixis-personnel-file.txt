@@ -8,6 +8,23 @@ div.list-pages-item, div.list-pages-item p{
 margin-bottom: 0;
 }
 [[/module]]
+[[Collapsible show="Licensing Listpages Box - In progress]]
+[!--Making this page to test a thing for the licensing team. will revert shortly.--]
+[[module ListPages category="_default" order="name desc desc" wrapper="no" separate="no" perPage="250"]]
+  [[head]]
+[[table class="wiki-content-table" style="width:100%"]]
+[[row]] [[hcell]] Page Name [[/hcell]] [[hcell]] License Info [[/hcell]] [[/row]]
+  [[/head]]
+
+  [[body]]
+[[row]] [[cell class="wiki-content-table"]] %%title_linked%% [[/cell]] [[cell]] %%content{2}%% [[/cell]] [[/row]]
+  [[/body]]
+
+  [[foot]]
+    [[/table]]
+  [[/foot]]
+[[/module]]
+[[/collapsible]]
 = [[span style="font-family: 'Courier New'; font-size: 1.7em;"]]PERSONNEL FILE[[/span]]
 [[table style="border-collapse:collapse; font-family: 'Courier New'; width:100%;"]]
 [[row]]
