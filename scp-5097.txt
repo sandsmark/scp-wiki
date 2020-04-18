@@ -1,7 +1,381 @@
 title:SCP-5097
 parent:site-17-hub
-[[include :scp-wiki:component:black-highlighter-theme-dev]]
-[[include :scp-wiki:component:pride-highlighter |inc-lgbt-alt= --]]]
+[[module CSS]]
+@import url("/nagiros/code/1");
+
+#page-content blockquote {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.signatureline:before {
+  content: "X";
+  color: #F5F5DC;
+  font-size: 200%;
+}
+ 
+/*
+    Night Rush Theme
+    [2020 Wikidot Theme]
+    Created for The Crab Den by Nagiros
+    Obviously based on the Sigma-9 Theme for the SCP Foundation by Aelanna
+*/
+ 
+/* COMMON */
+ 
+h1, h2, h3, #page-title {
+    color: #f2f2f2;
+}
+#page-title {
+    border-color: #f2f2f2;
+}
+ins, del {
+    color: black;
+}
+a, #side-bar a:visited {
+    color: #8870DF;
+}
+a:visited {
+  color: #6b51c9;
+}
+a.newpage {
+    color: #cc9cff;
+}
+ 
+body {
+    background: #141414;
+    color: #c7c7c7;
+}
+div#container-wrap {
+    background-image: url(http://nagiros.wdfiles.com/local--files/component%3Atheme/nightrush-header.png);
+}
+ 
+/* HEADER */
+#header {
+    background-image: url(http://scp-wiki.wdfiles.com/local--files/component%3Ascp-trans-pride/TransSCPlogo.png);
+}
+#login-status ul a {
+    color: #f2f2f2;
+    background: #1a1a1a;
+    border-color: #f2f2f2;
+}
+#login-status ul a:hover {
+    color: #e6e6e6;
+}
+ 
+/* Makes the code readable */
+.hl-identifier, .hl-code, .hl-brackets {
+    color: #f2f2f2;
+}
+ 
+/* TOP MENU */
+#top-bar a {
+    color: #e6e6e6;
+}
+ 
+#top-bar ul li ul {
+    border-color: #ffffff;
+}
+ 
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    background: #262626;
+    color: #e6e6e6;
+}
+ 
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+    border-top-color: #ffffff;
+}
+ 
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: #000000;
+    color: #e6e6e6;
+}
+#top-bar ul li ul a, #top-bar a:hover {
+    color: #8870DF;
+}
+ 
+/* SIDE MENU */
+div#side-bar div.side-block {
+    background: rgb(24, 24, 24) !important;
+    box-shadow: 0 2px 6px #404040;
+    border-radius: 0px;
+    border-width: 2px;
+    border-color: white;
+}
+ 
+div#side-bar div.side-block div.heading {
+    color: #f2f2f2;
+    border-color: #f2f2f2;
+}
+ 
+/* Recolors the image bullet points in the side-bar */
+.side-block .menu-item > .image {
+    filter: hue-rotate(335deg) grayscale(0.1);
+}
+#side-bar {
+    background: transparent;
+}
+#side-bar a, #side-bar a:visited{
+    color: #f2f2f2;
+}
+#side-bar div.menu-item.inactive a {
+    color: #8870DF;
+}
+#side-bar div.menu-item .sub-text {
+    color: #666;
+}
+ 
+/*FOOTNOTES */
+.hovertip {
+    width: 20em;
+    padding: 0.5em;
+    border: 1px solid #8870DF !important;
+    border-radius: 0.5em;
+    background-color: #000000ee !important;
+    box-shadow: 0 0 6px 1px #000000aa;
+    z-index: 100;
+}
+ 
+.hovertip .f-heading {
+    color: #8870DF;
+}
+ 
+/* Page Rating Module Customizations */
+.page-rate-widget-box .rate-points,
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a,
+.page-rate-widget-box .cancel a {
+    background-color: #000000 !important;
+    border: 0;
+    color: white;
+}
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    background-color: #000000;
+    color: white;
+}
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background-color: #000000;
+    border: 0;
+    border-left: 1px solid #8870DF;
+    font-weight: bold;
+}
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background: #000000;
+    color: white;
+}
+.page-rate-widget-box .cancel {
+    background-color: #000000;
+    border: 0;
+    border-left: 1px solid #8870DF;
+}
+.page-rate-widget-box .cancel a:hover {
+    background: #000000;
+    color: white;
+}
+
+/* INFO BOX */
+
+#page-content .rate-box-with-credit-button {
+    background-color: #000000;
+    border: 1px solid #000000;
+}
+ 
+#page-content .rate-box-with-credit-button .creditButton p a {
+    border-left-color: #8870DF;
+}
+ 
+#page-content .rate-box-with-credit-button .page-rate-widget-box .cancel {
+    border-radius: 0;
+}
+#page-content .rate-box-with-credit-button .page-rate-widget-box .rate-points {
+    border-left: 0;
+}
+ 
+#page-content .modalbox {
+    background: linear-gradient(#141414 51px,#262626 51px,#262626) !important;
+    color: #c7c7c7;
+    box-shadow: 0 2px 6px #404040;
+}
+ 
+.close-credits, .credit-back {
+  filter: hue-rotate(335deg) grayscale(0.1);
+}
+ 
+/* MISC */
+ 
+hr {
+    background-color: #f2f2f2;
+}
+ 
+.license-area a, .page-watch-options a, .page-options-bottom a, .edit-help-34 a {
+  color: white;
+}
+ 
+#edit-page-title {
+  border: 1px solid #CCC;
+  background: #262626;
+  text-align: center;
+}
+ 
+#edit-page-textarea {
+  background-color: #242424;
+  border-color: #CCC;
+  color: #f2f2f2;
+}
+ 
+#edit-page-comments {
+  background-color: #2e2e2e;
+  border-color: #CCC;
+  color: #c7c7c7;
+}
+
+#page-tags-input, #parent-page-name, #move-new-page-name {
+  border-color: #CCC;
+}
+ 
+/* inputs */
+ 
+input.text, input.button,
+#search-top-box-input,
+#search-top-box-form input[type=submit],
+div.buttons input, input.button, button, file, a.button {
+    background: transparent;
+    color: #f2f2f2;
+    border: 1px solid #ffffff;
+    border-radius: 0;
+    font-size: 1em;
+    outline: 0;
+}
+ 
+div.buttons input:hover, div.buttons input:focus,
+input.button:hover, input.button:focus,
+button:hover, button:focus,
+file:hover, file:focus,
+a.button:hover, a.button:focus {
+    border-color: #ffffff;
+    background: transparent;
+    color: #f2f2f2;
+}
+ 
+input.text:hover, input.button:hover,
+input.text:focus, input.button:focus,
+#search-top-box-input:hover,
+#search-top-box-input:focus,
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    color: #f2f2f2;
+    background: transparent;
+    border: 1px solid #ffffff;
+    outline: 0;
+}
+ 
+/* EDITING WINDOWS */
+.owindow {
+    color: #000;
+}
+ 
+.owindow h1, .owindow h2, .owindow h3, .owindow h4, .owindow h5, .owindow h6 {
+    color: #000;
+}
+ 
+.owindow a {
+    color: #272727;
+}
+ 
+table.page-files .highlight {
+    background-color: #272727;
+}
+ 
+input.text {
+    border: 1px dashed #000;
+    color: #fff;
+}
+ 
+input.text:focus {
+    border: 1px dashed #000;
+    color: #fff;
+}
+ 
+input.text:hover {
+    border: 1px dashed #000;
+    color: #fff;
+}
+ 
+div#lock-info {
+    background-color: #262626;
+}
+ 
+/* tag style */
+ 
+.page-tags span {
+  border-top: 0;
+}
+.page-tags span a {
+    display: inline-block;
+    margin: 0 0 .5rem .75rem;
+    padding: 0.1875rem 0.3125rem 0.1875rem 0;
+    height: 0.8125rem;
+    line-height: 13px;
+    font-size: 11px;
+    background: #c451c4;
+    color: #fff;
+    text-decoration: none;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 0.25rem;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius: 0.25rem;
+}
+.page-tags span a:before, .page-tags span a:after {
+    content: "";
+    float: left;
+    position: relative;
+}
+.page-tags span a:before {
+    padding:0 0.0625rem 0.1875rem;
+    top: -0.1875rem;
+    left: -0.625rem;
+    width: 0;
+    height: 0;
+    border-color: transparent #c451c4 transparent transparent;
+    border-style: solid;
+    border-width: 0.5rem 0.5rem 0.5rem 0;
+}
+ 
+.page-tags span a:after {
+    top: 0.28125rem;
+    left: -0.5rem;
+    width: 0.25rem;
+    height: 0.25rem;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 0.125rem;
+    background: rgb(252, 252, 252);
+    -moz-box-shadow: -1px -1px 2px #004977;
+    -webkit-box-shadow: -1px -1px 2px #333;
+    box-shadow: -0.0625rem -0.0625rem 0.125rem rgb(48, 48, 52);
+}
+ 
+/* Blockquote Mimic Dic */
+blockquote, div.blockquote {
+    border-color: #f2f2f2;
+    background-color: #000000;
+}
+ 
+/* webkit scrollbar */
+ 
+::-webkit-scrollbar-thumb {
+  background: #420042;
+  border-radius: 5px;
+  border: 1px solid #c7c7c7;
+}
+[[/module]]
 
 [[>]]
 [[module Rate]]
