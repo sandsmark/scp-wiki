@@ -547,7 +547,7 @@ While I know I'll never be able to achieve all of these, this is a nice sort of 
 
 This is a tab I came up with, and it just shows random articles between 10 and 150 upvotes, of various categories. Just a few extra pages that could do with some attention, if you're curious!
 
-[[module Listpages tag="-author -workbench -contest -splash -supplement -translation" category="-fragment -component" limit="1" order="random" rating="<150" rating=">10"]]
+[[module Listpages tag="-author -workbench -contest -splash -supplement -translation" category="-fragment -component" limit="1" order="random" rating="<150"]]
 [[div class="preview yes"]]
 ++ Random Article
 **%%title_linked%%** by **{{%%created_by%%}}**
@@ -555,7 +555,7 @@ This is a tab I came up with, and it just shows random articles between 10 and 1
 [[/div]]
 [[/module]]
 
-[[module Listpages tag="+scp -author -workbench -contest -splash -supplement -translation" category="-fragment -component" limit="1" order="random" rating="<150" rating=">10"]]
+[[module Listpages tag="+scp -author -workbench -contest -splash -supplement -translation" category="-fragment -component" limit="1" order="random" rating="<150"]]
 [[div class="preview yes"]]
 ++ Random SCP
 **%%title_linked%%** by **{{%%created_by%%}}**
@@ -563,7 +563,7 @@ This is a tab I came up with, and it just shows random articles between 10 and 1
 [[/div]]
 [[/module]]
 
-[[module Listpages tag="+tale -author -workbench -contest -splash -supplement -translation" category="-fragment -component" limit="1" order="random" rating="<150" rating=">10"]]
+[[module Listpages tag="+tale -author -workbench -contest -splash -supplement -translation" category="-fragment -component" limit="1" order="random" rating="<150"]]
 [[div class="preview yes"]]
 ++ Random Tale
 **%%title_linked%%** by **{{%%created_by%%}}**
@@ -571,7 +571,7 @@ This is a tab I came up with, and it just shows random articles between 10 and 1
 [[/div]]
 [[/module]]
 
-[[module Listpages tag="+goi-format -author -workbench -contest -splash -supplement -translation" category="-fragment -component" limit="1" order="random" rating="<150" rating=">10"]]
+[[module Listpages tag="+goi-format -author -workbench -contest -splash -supplement -translation" category="-fragment -component" limit="1" order="random" rating="<150"]]
 [[div class="preview yes"]]
 ++ Random GoI Format
 **%%title_linked%%** by **{{%%created_by%%}}**
