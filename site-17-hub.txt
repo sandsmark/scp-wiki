@@ -3,7 +3,7 @@ title:Site-17 Deepwell Catalog
 [[module Rate]]
 [[/>]]
 
-[[div style="border-bottom: solid #424248 4px; border-top: solid #424248 4px; display: inline-block; padding: 10px; margin-top: 50px; margin-bottom: 50px; text-align: justify;"]]
+[[div style="display: inline-block; padding: 10px; margin-bottom: 25px; text-align: justify;"]]
 > The Foundation is a global, clandestine organization with an iron grip on all media, literature, and public knowledge. They operate within a strict hierarchy of Researcher to Site Director to Overseer to ensure that humanity remains in perpetual and blissful ignorance. They will and have contained God, and no one seems to care.
 > 
 > **Everything is as it must be.**
@@ -16,26 +16,32 @@ title:Site-17 Deepwell Catalog
 > 
 > **Nothing is as it should be.**
 [[/div]]
-[[=]]
-[[div style="font-size: .85em; display: inline-block; border: solid black 2px; padding-top: -5px; padding-bottom: -5px; padding-left: 5px; padding-right: 5px; font-weight: bold; text-align: center"]]
-[#I I] | [#II II] | [#A A] | [#S S]
-[[/div]]
-[[/=]]
- _
- _
-[[div class="boxhr"]]
-[[/div]]
-[[div class="boxhrfront"]]
-[[/div]]
- _
- _
-[[# I]]
-**Section I: Lessons**
 
+[[div class="section-header" style="border-bottom: 2px solid #901; margin-top: 50px"]]
++* Stories
+[[/div]]
+
+[[div style="border: 2px double #999; background-color: #f4f4f4; width: 50%; margin-left: auto; margin-right: auto; margin-top: 25px; padding: 0 10px"]]
+**Newest Pages:**
+[[module ListPages tags="deepwell-catalog" limit="5" order="created_at desc" separate="no"]]
+@@    @@▷ **%%title_linked%%** by [[user %%created_by%%]]
+[[/module]]
+[[/div]]
+
+[[div style="border: 2px double #999; background-color: #f4f4f4; width: 50%; margin-bottom: 75px; margin-left: auto; margin-right: auto; margin-top: 25px; padding: 0 10px; text-align: center"]]
+[[module ListPages limit="1" order="random" tags="+deepwell-catalog -hub"]]
+[[[%%fullname%% | Select a random Deepwell Catalog page?]]]
+[[/module]]
+[[/div]]
+
+[[div class="series-collapse" style="background-color: rgba(244,244,244); border: 1px dashed #999; padding: 20px 10px; margin: 20px 0 0 0"]]
+[[=]]
+[[collapsible show="These Lifeless Things ◄" hide="These Lifeless Things ▼"]]
+[[<]]
 [[div class="excerpt"]]
 [[=]]
 **[[[SCP-4051]]]:** //Your Friendly Neighborhood Keter//
-[[size 80%]]by **Nagiros**[[/size]]
+[[size 80%]]by **[[user Nagiros]]**[[/size]]
 [[/=]]
 ------
 //SCP-4051 is a male humanoid which can create temporary Class-E wormholes to extradimensional spaces populated by a theoretically infinite number of a unique item. Efforts to utilize it to the Foundation's benefit are ongoing.//
@@ -44,7 +50,7 @@ title:Site-17 Deepwell Catalog
 [[div class="excerpt"]]
 [[=]]
 **[[[SCP-4260]]]:** //The Subdirective//
-[[size 80%]]by **Nagiros**[[/size]]
+[[size 80%]]by **[[user Nagiros]]**[[/size]]
 [[/=]]
 ------
 //SCP-4260 refers to the consciousness of an essophysical entity which has permeated itself through the known universe. The effect of SCP-4260's existence has been well documented by almost every sapient culture.//
@@ -53,7 +59,7 @@ title:Site-17 Deepwell Catalog
 [[div class="excerpt"]]
 [[=]]
 **[[[APAS | Automated Passive Amnestization System Ver. 17.09]]]**
-[[size 80%]]by **Nagiros**[[/size]]
+[[size 80%]]by **[[user Nagiros]]**[[/size]]
 [[/=]]
 ------
 [[div class="terminal"]]
@@ -65,23 +71,10 @@ Your current version of the Automated Passive Amnestization System (APAS), insta
 [[/div]]
 [[/div]]
 
-@@ @@
-[[# II]]
-**Section II: Shatterproof**
-
-[[div class="excerpt"]]
-[[=]]
-**[[[SCP-4175]]]:** //Friends Made, and the **Void**//
-[[size 80%]]by **Nagiros**[[/size]]
-[[/=]]
-------
-//SCP-4175 is a Level-I Humanoid Apparition which can be viewed in the reflection of a bathroom vanity mirror.//
-[[/div]]
-
 [[div class="excerpt"]]
 [[=]]
 **[[[He Who Screws With Reality]]]**
-[[size 80%]]by **Nagiros**[[/size]]
+[[size 80%]]by **[[user Nagiros]]**[[/size]]
 [[/=]]
 ------
 //"His first name is Samuel. Last name is Veras. He's a Class V reality bender, and we have no idea how to keep him contained. The Foundation's never seen anything like him before."//
@@ -89,40 +82,26 @@ Your current version of the Automated Passive Amnestization System (APAS), insta
 
 [[div class="excerpt"]]
 [[=]]
+**[[[SCP-4175]]]:** //Friends Made, and the **Void**//
+[[size 80%]]by **[[user Nagiros]]**[[/size]]
+[[/=]]
+------
+//SCP-4175 is a Level-I Humanoid Apparition which can be viewed in the reflection of a bathroom vanity mirror.//
+[[/div]]
+
+[[div class="excerpt"]]
+[[=]]
 **[[[SCP-4415]]]:** //Humanoid Containment Chamber #λ045//
-[[size 80%]]by **Nagiros**[[/size]]
+[[size 80%]]by **[[user Nagiros]]**[[/size]]
 [[/=]]
 ------
 //SCP-4415 is a set of extradimensional locations accessible through the door of the former Humanoid Containment Unit #λ045 at Site-17. They are inaccessible to non-anomalous persons.//
 [[/div]]
-@@ @@
-[[# A]]
-**Appendix**
 
 [[div class="excerpt"]]
-[[=]]
-**[[[SCP-4855]]]:** //Mind Like a Steel Trap//
-[[size 80%]]by **loddite**[[/size]]
-[[/=]]
-------
-//SCP-4855 is a 74 year-old African-American female, legally named Ms. Edwina Drake, of ██████████, North Dakota. SCP-4855 is immune to informational, psychological, memetic, and antimemetic anomalies.//
-[[/div]]
-
-[[div class="excerpt"]]
-[[=]]
-**[[[Systems Patch]]]**
-[[size 80%]]by **Nagiros**[[/size]]
-[[/=]]
-------
-[[div style="color: #6f4c7a; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 5px"]]
-{{Hello, Nathaniel. Will you be implementing my interface update tonight?}}
-[[/div]]
-[[/div]]
-
-[[div class="excerpt" style="text-align:justify"]]
 [[=]]
 **[[[SCP-4755]]]:** //When We Are Omnipotent//
-[[size 80%]]by **Nagiros**[[/size]]
+[[size 80%]]by **[[user Nagiros]]**[[/size]]
 [[/=]]
 ------
 //SCP-4755 designates the ultimate purpose of conceptualization, which is containment.//
@@ -130,8 +109,72 @@ Your current version of the Automated Passive Amnestization System (APAS), insta
 
 [[div class="excerpt"]]
 [[=]]
+**[[[Systems Patch]]]**
+[[size 80%]]by **[[user Nagiros]]**[[/size]]
+[[/=]]
+------
+[[div style="color: #6f4c7a; border: solid 1px #000000; padding: 5px 15px 5px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); margin: 5px 5px 12.800px 5px"]]
+{{Hello, Nathaniel. Will you be implementing my interface update tonight?}}
+[[/div]]
+[[/div]]
+[[/<]]
+[[/collapsible]]
+[[/=]]
+[[/div]]
+
+[[div class="series-collapse" style="background-color: rgba(244,244,244); border: 1px dashed #999; padding: 20px 10px; margin: 20px 0 0 0"]]
+[[=]]
+[[collapsible show="white space ◄" hide="white space ▼"]]
+[[<]]
+[[div class="excerpt"]]
+[[=]]
+**[[[Slipping Away | AFTERLIFE OPHIDIAN /// The Foundation Over Heaven]]]**
+[[size 80%]]by **[[user Nagiros]]**[[/size]]
+[[/=]]
+------
+//When I was a child, a day came when shadows lengthened and the moon no longer rose. It was the end of all things like it had been so many times before. It was war — bloody war against the anomalous.//
+[[/div]]
+
+[[div class="excerpt"]]
+[[=]]
+**[[[The Eschaton | Serpent Bound \\\ BEAR WITNESS]]]**
+[[size 80%]]by **[[user Nagiros]]**[[/size]]
+[[/=]]
+------
+//The Eschaton was the de-materialization of all guests to the Library, occurring after 1,143,837,925 Cycles, in midday. Since this time, no individual has entered the Library or attempted to contact the Head Librarian. As a result, twelve million loaned books are currently marked Overdue.//
+[[/div]]
+[[/<]]
+[[/collapsible]]
+[[/=]]
+[[/div]]
+
+[[div style="background-color: rgba(244,244,244); border: 1px dashed #999; padding: 20px 10px; margin: 20px 0 20px 0"]]
+[[=]]
+[[collapsible show="► Other Scenes from the Deepwell ◄" hide="▼ Other Scenes from the Deepwell ▼"]]
+[[<]]
+
+[[div class="excerpt"]]
+[[=]]
+**[[[SCP-4855]]]:** //Mind Like a Steel Trap//
+[[size 80%]]by **[[user loddite]]**[[/size]]
+[[/=]]
+------
+//SCP-4855 is a 74 year-old African-American female, legally named Ms. Edwina Drake, of ██████████, North Dakota. SCP-4855 is immune to informational, psychological, memetic, and antimemetic anomalies.//
+[[/div]]
+
+[[div class="excerpt" style="text-align:justify"]]
+[[=]]
+**[[[SCP-4518]]]:** //MBMBMBMBMBMBMBaM//
+[[size 80%]]by **[[user cybersqyd]]**[[/size]]
+[[/=]]
+------
+//SCP-4518 is an anomalous group of humans that are visually identical, approximately 30 year old white males. Attempting to count the number of SCP-4518 instances causes the number of instances present to increase.//
+[[/div]]
+
+[[div class="excerpt"]]
+[[=]]
 **[[[SCP-5097]]]:** //Letter of Resignation//
-[[size 80%]]by **TrustyOlValet2**[[/size]]
+[[size 80%]]by **[[user TrustyOlValet2]]**[[/size]]
 [[/=]]
 ------
 //On 4/8/20, Dr. Kara spontaneously ceased existing in physical space.//
@@ -140,26 +183,24 @@ Your current version of the Automated Passive Amnestization System (APAS), insta
 [[div class="excerpt"]]
 [[=]]
 **[[[Somnambulant Directives Take The Helm]]]**
-[[size 80%]]by **Nagiros**[[/size]]
+[[size 80%]]by **[[user Nagiros]]**[[/size]]
 [[/=]]
 ------
 //Her coworkers dreamed of the hyperreal, but Kassidy was left with paper cuts.//
 [[/div]]
 
-[[div class="excerpt" style="text-align:justify"]]
-[[=]]
-**[[[SCP-4518]]]:** //MBMBMBMBMBMBMBaM//
-[[size 80%]]by **cybersqyd**[[/size]]
+[[/<]]
+[[/collapsible]]
 [[/=]]
-------
-//SCP-4518 is an anomalous group of humans that are visually identical, approximately 30 year old white males. Attempting to count the number of SCP-4518 instances causes the number of instances present to increase.//
 [[/div]]
-@@ @@
-* [/system:page-tags/tag/deepwell-catalog#pages View all pages tagged "deepwell-catalog"?]
+
+* View all pages tagged "**[/system:page-tags/tag/deepwell-catalog#pages deepwell-catalog]**"?
 
 @@@@
-[[# S]]
-**Series Details**
+
+[[div class="section-header" style="border-bottom: 2px solid #901; margin-top: 50px; margin-bottom: 15px"]]
++* Series Details
+[[/div]]
 
 [[tabview]]
 [[tab That Which Can Be Said]]
@@ -314,7 +355,7 @@ You've found companions here.
 [[/tabview]]
 
 [[module CSS]]
-@import url("/nagiros/code/1");
+@import url("http://www.scp-wiki.net/nagiros-poi-file/code/1");
 
 /* LOGO */
 div#header {
@@ -342,7 +383,7 @@ div#header h2:after {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
     white-space: pre;
 }
-.excerpt{ border: solid 2px #424248; padding: 1px 15px; margin: 10px 10px 10px 10px; box-shadow: 0 1px 3px rgba(0,0,0,.5); background: transparent;}
+.excerpt{border: solid 2px #424248; padding: 1px 15px; margin: 20px 10px; box-shadow: 0 1px 3px rgba(0,0,0,.5); background: white;}
 div.terminal{
     margin-bottom: 10px;
     border: 1px solid black;
@@ -429,5 +470,19 @@ content: "> ";
   height: 3px;
   margin: -3px 4em 0;
   background: #FFFFFF;
+}
+.section-header h1 {
+  margin-bottom: 2px;
+}
+.series-collapse .collapsible-block-folded a.collapsible-block-link:before {
+  content: "► Series: ";
+  font-weight: bold;
+}
+.series-collapse .collapsible-block-unfolded-link a.collapsible-block-link:before {
+  content: "▼ Series: ";
+  font-weight: bold;
+}
+#page-content a:visited {
+  color: #b01;
 }
 [[/module]]
