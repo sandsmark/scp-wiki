@@ -1,19 +1,85 @@
 title:SCP-4664
-[[include :scp-wiki:info:start]]
+[[>]]
+[[module Rate]]
+[[/>]]
 
-**SCP-4664:** Nightmare of 20,000 Feet
-**Author:** [[*user Deadly Bread]]
------
+[[include :scp-wiki:component:info-ayers
+|lang=en
+|page=scp-4664
+|authorPage=http://www.scp-wiki.net/the-bread-box
+|comments=**SCP-4664:** Nightmare of 20,000 Feet
+**Author:** [[*user Deadly Bread]]@@ @@
+----
 [[include :firedawnfolder:Loaf-0]]
+[[/div]]
 
-@@ @@
-[[include :scp-wiki:info:more]]
+[[module CSS]]
+/* INFO BOX */
+sup{
+    vertical-align: top;
+    position: relative;
+    top: -0.5em;
+}
+body{
+    --cutColour: #fafafa;
+    --barColour: #590505;
+    color: rgb(12, 12, 12);
+}
+.translation_block{ display: none; }
+.u-faq{ display: none; }
 
-Islands.png can be found [https://en.wikipedia.org/wiki/File:South_Georgia_and_the_South_Sandwich_Islands_in_United_Kingdom.svg here] and is licensed under CC BY-SA 3.0
+/* DIV BLOCKS */
+.report-box{
+    border: 2px solid rgb(12, 12, 12);
+    background-color: white;
+    padding: 0.769em;
+    margin-bottom: 1em;
+}
+.quote-block{
+    border: 3px double #999;
+    background-color: #f4f4f4;
+    padding: 0.769em;
+    margin-bottom: 1em;
+}
 
-Shipwreck.png can be found [https://commons.wikimedia.org/wiki/File:SS_Nornen_wreck.jpg here] and is in the public domain
-
-[[include :scp-wiki:info:end]]
+/* FORMATTING */
+.collapsible-block-link{ font-weight: bold; }
+hr{
+     margin: 1em 0;
+     padding: 0;
+     border: 0;
+}
+.lite-header hr{
+    width: 45%;
+    margin: auto;
+    background-color: #e6e6e6;
+    border: none;
+    height: 2px;
+}
+.h1{
+    font-size: 190%;
+    margin: 0.7em 0 0.6em;
+    padding: 0;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
+}
+.h2, .h3{
+    margin: 0.5em 0 0.4em;
+    padding: 0;
+    letter-spacing: 1px;
+    font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
+}
+.h2{ font-size: 150%; }
+.h3{
+    font-size: 130%;
+    font-weight: bold;
+    color: darkred;
+}
+.justify{
+    text-align: justify;
+    word-break: unset;
+}
+[[/module]]
 
 [[table style="border: none; width: 100%;"]]
 [[row]]
@@ -34,7 +100,7 @@ Shipwreck.png can be found [https://commons.wikimedia.org/wiki/File:SS_Nornen_wr
 [[/row]]
 [[/table]]
 -----
-[[include component:image-block name=Islands.png|caption=The estimated area of SCP-4664's effect (Right)]]
+[[include component:image-block name=Islands.png|caption=The estimated area of SCP-4664's effect (Right).]]
 
 **Special Containment Procedures:** The perimeter of SCP-4664’s area of effect is to be heavily guarded by STF-Alpha-15 (”Catch & Release”) piloting armed Foundation vessels. All scientific teams previously stationed on these islands have been relocated and amnestized after experiencing SCP-4664-1. Vessels approaching SCP-4664 are to be intercepted and redirected away from SCP-4664. All attempts to access the Southern Sandwich Islands are to be denied under Cover Story 067 (Endangered Species). All testing involving SCP-4664 is to be done by Containment Site-3T1 located on Leskov Island in order to avoid excessive damage to the surroundings.
 
@@ -142,10 +208,10 @@ The following is a transcript of an SCP-4664 manifestation.
 > **SCP-4664:** Sweet dreams.
 > 
 > //SCP-4664 completely demanifests.//
-[[include component:image-block name=Shipwreck.png|caption=A portion of the shipwreck located near SCP-4664]]
+[[include component:image-block name=Shipwreck.png|caption=A portion of the shipwreck located near SCP-4664.]]
 **Addendum:** On 10/2/08, part of a previously undiscovered shipwreck was located off the coast of Leskov Island. A portion of the ship was recovered by Foundation specialists and inspected for any relation to SCP-4664. The ship appears to have no distinct markings or any indications of its origin. It appears to have been breached through the hull multiple times as well as the entirety of the keel having been torn off. Chemical analysis of the wreckage has found traces of a corrosive black substance on breached areas of the ship. Further research into any relationship between the vessel and SCP-4664 is currently ongoing.
 
-[[collapsible show="► Level 4/4664 Access Required"hide="◄ Access Granted. Welcome Researcher"]]
+[[collapsible show="► Level 4/4664 Access Required"hide="▼ Access Granted. Welcome Researcher"]]
 On 10/14/██, Junior Researcher Stephanie Everetts was tasked in attempting to interview SCP-4664 after showing unprecedented resistance to SCP-4664's auditory hazard. The following is a transcript of the interview.
 
 > **Procedures:** Everetts was given a motorized fishing vessel and instructed to enter and stay within SCP-4664's area of effect for approximately 3 hours. Everetts was then to sleep within a makeshift research tent containing a twin-sized bed. Everetts was monitored during this time for approximately 2 months until SCP-4664 manifestation occurred. 
@@ -230,8 +296,13 @@ On 10/14/██, Junior Researcher Stephanie Everetts was tasked in attempting t
 > 
 > //SCP-4664 demanifests.//
 
-Further research into the origin of SCP-4664 and the entity that is referred to by SCP-4664 as its brother are considered a top priority. The usage of sonar equipment in searching for this entity is currently pending approval.
+Further research into the origin of SCP-4664 and the entity that is referred to by SCP-4664 as its brother are considered a Class-B priority. The usage of sonar equipment in searching for this entity is currently pending approval.
 [[/collapsible]]
+
+@@ @@
+[[>]]
+[[module rate]]
+[[/>]]
 
 [[div class="footer-wikiwalk-nav"]]
 [[=]]
