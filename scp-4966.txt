@@ -1,13 +1,85 @@
 title:SCP-4966
-[[include :scp-wiki:info:start]]
+[[>]]
+[[module Rate]]
+[[/>]]
 
-**SCP-4966:** Tubbioca: Devourer of Souls, Consumer of Secrets, Lord of Munchies
-**Author:** [[*user Deadly Bread]]
------
+[[include :scp-wiki:component:info-ayers
+|lang=en
+|page=scp-4966
+|authorPage=http://www.scp-wiki.net/the-bread-box
+|comments=**SCP-4966:** Tubbioca: Devourer of Souls, Consumer of Secrets, Lord of Munchies
+**Author:** [[*user Deadly Bread]]@@ @@
+----
 [[include :firedawnfolder:Loaf-0]]
+[[/div]]
 
-@@ @@
-[[include :scp-wiki:info:end]]
+[[module CSS]]
+/* INFO BOX */
+sup{
+    vertical-align: top;
+    position: relative;
+    top: -0.5em;
+}
+body{
+    --cutColour: #fafafa;
+    --barColour: #590505;
+    color: rgb(12, 12, 12);
+}
+.translation_block{ display: none; }
+.u-faq{ display: none; }
+
+/* DIV BLOCKS */
+.report-box{
+    border: 2px solid rgb(12, 12, 12);
+    background-color: white;
+    padding: 0.769em;
+    margin-bottom: 1em;
+}
+.quote-block{
+    border: 3px double #999;
+    background-color: #f4f4f4;
+    padding: 0.769em;
+    margin-bottom: 1em;
+}
+
+/* FORMATTING */
+.collapsible-block-link{ font-weight: bold; }
+hr{
+     margin: 1em 0;
+     padding: 0;
+     border: 0;
+}
+.lite-header hr{
+    width: 45%;
+    margin: auto;
+    background-color: #e6e6e6;
+    border: none;
+    height: 2px;
+}
+.h1{
+    font-size: 190%;
+    margin: 0.7em 0 0.6em;
+    padding: 0;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
+}
+.h2, .h3{
+    margin: 0.5em 0 0.4em;
+    padding: 0;
+    letter-spacing: 1px;
+    font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
+}
+.h2{ font-size: 150%; }
+.h3{
+    font-size: 130%;
+    font-weight: bold;
+    color: darkred;
+}
+.justify{
+    text-align: justify;
+    word-break: unset;
+}
+[[/module]]
 
 [[include component:image-block name=tubbs.png|caption=SCP-4966]]
 
@@ -19,13 +91,13 @@ title:SCP-4966
 
 **Description:** SCP-4966 is an animate quadrupedal creature constructed of gray fabric. All attempts to pierce or damage this fabric have failed. X-rays and other examinations of SCP-4966 have shown a lack of any internal structures. SCP-4966’s body is completely devoid of markings or orifices, with the exception of two black eyes and a woven mouth. Vocalizations made by SCP-4966 are similar to that of a young feline. SCP-4966 is highly social and will become anxious and withdrawn if not socialized with on a normal basis. SCP-4966 has a tendency to imitate the actions of other entities it interacts with. SCP-4966 shows no apparent need to eat, drink, or breathe, although it will imitate these actions if another entity is doing the same. 
 
-When presented with the corpse of an organism, SCP-4966 will extend its mouth through unknown means and consume the corpse in its entirety, causing its body to bulge and stretch around the added mass. All attempts to measure the tensile strength of SCP-4966 while in this state have failed, as SCP-4966’s skin will visibly remain the same density throughout this process. No limit has been found to the degree that SCP-4966 is able to distend, with it having completely enveloped the corpse of an adult //Balaenoptera musculus//[[footnote]]Blue whale[[/footnote]] during testing. 
+When presented with the corpse of an organism, SCP-4966 will extend its mouth through unknown means and consume the corpse in its entirety, causing its body to bulge and stretch around the added mass. All attempts to measure the tensile strength of SCP-4966 while in this state have failed, as SCP-4966’s skin will visibly remain the same density throughout this process. No limit has been found to the degree that SCP-4966 is able to distend, with it having completely enveloped the corpse of an adult blue whale (//Balaenoptera musculus//) during testing. 
 
 Once a corpse is fully enveloped, SCP-4966’s body will slowly return to its normal size. During this deflation, SCP-4966 will experience alterations in its morphology consistent with the physical characteristics of the organism it consumed. The most common alteration is the addition and modification of limbs, although other alterations such as changes in SCP-4966’s proportions and vocalizations have been recorded. The only physical traits of SCP-4966 that are unable to be altered are its existing facial features and gray coloration. Alterations will remain for approximately 4 hours after consumption, after which SCP-4966 will regurgitate biological waste consistent with the composition of the consumed organism.
 
 **Addendum:** Included below are several excerpts from the SCP-4966 experiment log for the purpose of further understanding SCP-4966’s transformation abilities. 
 
-> **Introduced Corpse:** An adult male //Crotalus horridus//.[[footnote]]Timber rattlesnake[[/footnote]]
+> **Introduced Corpse:** An adult male timber rattlesnake (//Crotalus horridus//).
 > 
 > **Corpse Integrity:** Shows initial signs of decomposition.
 > 
@@ -33,7 +105,7 @@ Once a corpse is fully enveloped, SCP-4966’s body will slowly return to its no
 > 
 > **Regurgitated Matter:** A mass of decomposing keratin and liquified organic matter.
 
-> **Introduced Corpse:** An adult female //Pterois miles//.[[footnote]]Common lionfish[[/footnote]]
+> **Introduced Corpse:** An adult female lionfish (//Pterois miles//).
 > 
 > **Corpse Integrity:** Shows signs of advanced decomposition. The interior of the corpse is almost completely putrefied. Despite the corpse’s venomous spines, SCP-4966 was able to consume it without issue. 
 > 
@@ -41,7 +113,7 @@ Once a corpse is fully enveloped, SCP-4966’s body will slowly return to its no
 > 
 > **Regurgitated Matter:** Broken spines and liquified organic matter.
 
-> **Introduced Corpse:** A pile of deceased //Acer pseudoplatanus//[[footnote]]Sycamore maple[[/footnote]] leaves.
+> **Introduced Corpse:** A pile of deceased sycamore maple (//Acer pseudoplatanus//) leaves.
 > 
 > **Corpse Integrity:** Slightly degraded. 
 > 
@@ -49,7 +121,7 @@ Once a corpse is fully enveloped, SCP-4966’s body will slowly return to its no
 > 
 > **Regurgitated Matter:** A slightly damaged leaf. 
 
-> **Introduced Corpse:** A female adult //Struthio camelus//.[[footnote]]Common ostrich[[/footnote]]
+> **Introduced Corpse:** A female adult ostrich (//Struthio camelus//).
 > 
 > **Corpse Integrity:** Severely damaged. The corpse was presented to SCP-4966 in several pieces, with the left leg and head of the corpse not present.
 > 
@@ -57,7 +129,7 @@ Once a corpse is fully enveloped, SCP-4966’s body will slowly return to its no
 > 
 > **Regurgitated Matter:** Several shattered portions of bone and a large amount of liquified organic matter.
 
-> **Introduced Corpse:** The head of a male adult //Alces alces americana//.[[footnote]]Eastern moose[[/footnote]]
+> **Introduced Corpse:** The head of a male adult Eastern moose (//Alces alces americana//).
 > 
 > **Corpse Integrity:** Corpse is taxidermied, and is well preserved.
 > 
@@ -205,19 +277,10 @@ After some difficulties, SCP-4966 lists the identification numbers of fourteen D
 [[/collapsible]]
 [[/<]]
 
-[[module css]]
-
-
-
-.footnotes-footer{
-
-    display: none;
-
-};
-
-
-
-[[/module]]
+----
+[[>]]
+[[module rate]]
+[[/>]]
 
 [[div class="footer-wikiwalk-nav"]]
 [[=]]
