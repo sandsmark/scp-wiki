@@ -1,37 +1,101 @@
 title:SCP-5020
-[[include :scp-wiki:info:start]]
+[[>]]
+[[module Rate]]
+[[/>]]
 
-**SCP-5020:** InfeStation™
-**Author:** [[*user Deadly Bread]]
------
+[[include :scp-wiki:component:info-ayers
+|lang=en
+|page=scp-5020
+|authorPage=http://www.scp-wiki.net/the-bread-box
+|comments=**SCP-5020:** InfestStation™ 
+**Author:** [[*user Deadly Bread]]@@ @@
+----
 [[include :firedawnfolder:Loaf-0]]
+[[/div]]
 
-@@ @@
-[[include :scp-wiki:info:more]]
+[[module CSS]]
+/* INFO BOX */
+sup{
+    vertical-align: top;
+    position: relative;
+    top: -0.5em;
+}
+body{
+    --cutColour: #fafafa;
+    --barColour: #590505;
+    color: rgb(12, 12, 12);
+}
+.translation_block{ display: none; }
+.u-faq{ display: none; }
 
-header.png can be found [https://www.flickr.com/photos/79157069@N03/48785336047/in/faves-186437866@N02/ here] and is licensed under CC BY 2.0
+/* DIV BLOCKS */
+.report-box{
+    border: 2px solid rgb(12, 12, 12);
+    background-color: white;
+    padding: 0.769em;
+    margin-bottom: 1em;
+}
+.quote-block{
+    border: 3px double #999;
+    background-color: #f4f4f4;
+    padding: 0.769em;
+    margin-bottom: 1em;
+}
 
-atari.png can be found [https://www.flickr.com/photos/asimzb/1902252873/in/faves-186437866@N02/ here] and is licensed under CC BY 2.0
-
-arcadia.png was created by [[*user jackalrelated]] for ##purple|Arcadia##
-
-[[include :scp-wiki:info:end]]
+/* FORMATTING */
+.collapsible-block-link{ font-weight: bold; }
+hr{
+     margin: 1em 0;
+     padding: 0;
+     border: 0;
+}
+.lite-header hr{
+    width: 45%;
+    margin: auto;
+    background-color: #e6e6e6;
+    border: none;
+    height: 2px;
+}
+.h1{
+    font-size: 190%;
+    margin: 0.7em 0 0.6em;
+    padding: 0;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
+}
+.h2, .h3{
+    margin: 0.5em 0 0.4em;
+    padding: 0;
+    letter-spacing: 1px;
+    font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
+}
+.h2{ font-size: 150%; }
+.h3{
+    font-size: 130%;
+    font-weight: bold;
+    color: darkred;
+}
+.justify{
+    text-align: justify;
+    word-break: unset;
+}
+[[/module]]
 
 [[table style="border: none; width: 100%;"]]
 [[row]]
 [[cell]]
-[[size 125%]]**Item #:** SCP-5020[[/size]]
+[[span style="font-size: 125%;"]][[span style="font-weight: 900;"]]ITEM NUMBER:[[/span]] SCP-5020[[/span]]
 [[/cell]]
 [[cell style="text-align: right;"]]
-[[size 125%]]###990000|**Level 3/5020**##[[/size]]
+[[span style="font-weight: 900; font-size: 125%;"]]###990000|LEVEL 2/5020##[[/span]]
 [[/cell]]
 [[/row]]
 [[row]]
 [[cell]]
-[[size 125%]]**Object Class:** Euclid[[/size]]
+[[span style="font-size: 125%;"]][[span style="font-weight: 900;"]]CONTAINMENT CLASS:[[/span]] EUCLID[[/span]]
 [[/cell]]
 [[cell style="text-align: right;"]]
-[[size 125%]]###990000|**Classified**##[[/size]]
+[[span style="font-weight: 900; font-size: 125%;"]]###990000|RESTRICTED##[[/span]]
 [[/cell]]
 [[/row]]
 [[/table]]
@@ -86,3 +150,7 @@ Thank you for your continued patronage,
 
 ##purple|Arcadia## Electronics Software
 [[/div]]
+----
+[[>]]
+[[module rate]]
+[[/>]]
