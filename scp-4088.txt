@@ -1,17 +1,85 @@
 title:SCP-4088
-[[include :scp-wiki:info:start]]
+[[>]]
+[[module Rate]]
+[[/>]]
 
-**SCP-4088:** Sing us a song, you're a piano, man
-**Author:** [[*user Deadly Bread]]
------
+[[include :scp-wiki:component:info-ayers
+|lang=en
+|page=scp-4088
+|authorPage=http://www.scp-wiki.net/the-bread-box
+|comments=**SCP-4088:** Sing us a song, you're a piano, man
+**Author:** [[*user Deadly Bread]]@@ @@
+----
 [[include :firedawnfolder:Loaf-0]]
+[[/div]]
 
-@@ @@
-[[include :scp-wiki:info:more]]
+[[module CSS]]
+/* INFO BOX */
+sup{
+    vertical-align: top;
+    position: relative;
+    top: -0.5em;
+}
+body{
+    --cutColour: #fafafa;
+    --barColour: #590505;
+    color: rgb(12, 12, 12);
+}
+.translation_block{ display: none; }
+.u-faq{ display: none; }
 
-piano.png can be found [https://commons.m.wikimedia.org/wiki/File:Grand_Piano_(5942685295).jpg#mw-jump-to-license here] and is licensed under CC BY-SA 2.0
+/* DIV BLOCKS */
+.report-box{
+    border: 2px solid rgb(12, 12, 12);
+    background-color: white;
+    padding: 0.769em;
+    margin-bottom: 1em;
+}
+.quote-block{
+    border: 3px double #999;
+    background-color: #f4f4f4;
+    padding: 0.769em;
+    margin-bottom: 1em;
+}
 
-[[include :scp-wiki:info:end]]
+/* FORMATTING */
+.collapsible-block-link{ font-weight: bold; }
+hr{
+     margin: 1em 0;
+     padding: 0;
+     border: 0;
+}
+.lite-header hr{
+    width: 45%;
+    margin: auto;
+    background-color: #e6e6e6;
+    border: none;
+    height: 2px;
+}
+.h1{
+    font-size: 190%;
+    margin: 0.7em 0 0.6em;
+    padding: 0;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
+}
+.h2, .h3{
+    margin: 0.5em 0 0.4em;
+    padding: 0;
+    letter-spacing: 1px;
+    font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
+}
+.h2{ font-size: 150%; }
+.h3{
+    font-size: 130%;
+    font-weight: bold;
+    color: darkred;
+}
+.justify{
+    text-align: justify;
+    word-break: unset;
+}
+[[/module]]
 
 [[table style="border: none; width: 100%;"]]
 [[row]]
