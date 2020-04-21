@@ -1,31 +1,104 @@
 title:SCP-4052
-[[include :scp-wiki:info:start]]
+[[>]]
+[[module Rate]]
+[[/>]]
 
-**SCP-4052:** Sandwich (disambiguation)
-**Author:** [[*user Deadly Bread]]
------
+[[include :scp-wiki:component:info-ayers
+|lang=en
+|page=scp-4052
+|authorPage=http://www.scp-wiki.net/the-bread-box
+|comments=**SCP-4052:** Sandwich (disambiguation)
+**Author:** [[*user Deadly Bread]]@@ @@
+----
 [[include :firedawnfolder:Loaf-0]]
+[[/div]]
 
-@@ @@
-[[include :scp-wiki:info:more]]
+[[module CSS]]
+/* INFO BOX */
+sup{
+    vertical-align: top;
+    position: relative;
+    top: -0.5em;
+}
+body{
+    --cutColour: #fafafa;
+    --barColour: #590505;
+    color: rgb(12, 12, 12);
+}
+.translation_block{ display: none; }
+.u-faq{ display: none; }
 
-police.png can be found [http://www.capecodfd.com/pages%20police/pd%20sandwich.htm here] and is in the public domain
+/* DIV BLOCKS */
+.report-box{
+    border: 2px solid rgb(12, 12, 12);
+    background-color: white;
+    padding: 0.769em;
+    margin-bottom: 1em;
+}
+.quote-block{
+    border: 3px double #999;
+    background-color: #f4f4f4;
+    padding: 0.769em;
+    margin-bottom: 1em;
+}
 
-town.png can be found [https://commons.wikimedia.org/wiki/File:Downtown_Hespeler.jpg here] and is licensed under CC BY-SA 4.0. Edits made by me
+/* FORMATTING */
+.collapsible-block-link{ font-weight: bold; }
+hr{
+     margin: 1em 0;
+     padding: 0;
+     border: 0;
+}
+.lite-header hr{
+    width: 45%;
+    margin: auto;
+    background-color: #e6e6e6;
+    border: none;
+    height: 2px;
+}
+.h1{
+    font-size: 190%;
+    margin: 0.7em 0 0.6em;
+    padding: 0;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
+}
+.h2, .h3{
+    margin: 0.5em 0 0.4em;
+    padding: 0;
+    letter-spacing: 1px;
+    font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
+}
+.h2{ font-size: 150%; }
+.h3{
+    font-size: 130%;
+    font-weight: bold;
+    color: darkred;
+}
+.justify{
+    text-align: justify;
+    word-break: unset;
+}
+[[/module]]
 
-laser.png can be found [https://commons.wikimedia.org/wiki/File:Breaching_Door.jpg here] and is in the public domain. Edits made by me
-
-[[include :scp-wiki:info:end]]
-
-[[include :scp-wiki:component:acs-peppo-lite
-
-|item-number= 4052
-|clearance= 2
-|container-class= euclid
-|disruption-class= vlam
-|risk-class= caution
-
-]]
+[[table style="border: none; width: 100%;"]]
+[[row]]
+[[cell]]
+[[span style="font-size: 125%;"]][[span style="font-weight: 900;"]]ITEM NUMBER:[[/span]] SCP-4052[[/span]]
+[[/cell]]
+[[cell style="text-align: right;"]]
+[[span style="font-weight: 900; font-size: 125%;"]]###990000|LEVEL 2/4052##[[/span]]
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell]]
+[[span style="font-size: 125%;"]][[span style="font-weight: 900;"]]CONTAINMENT CLASS:[[/span]] EUCLID[[/span]]
+[[/cell]]
+[[cell style="text-align: right;"]]
+[[span style="font-weight: 900; font-size: 125%;"]]###990000|RESTRICTED##[[/span]]
+[[/cell]]
+[[/row]]
+[[/table]]
 -----
 [[include component:image-block name=police.png|caption=SCP-4052-1]]
 **Special Containment Procedures:** Due to its relatively isolated nature, the town of Sandwich, Illinois[[footnote]]Now designated Site-481.[[/footnote]] has been quarantined by the Foundation. Individuals attempting to enter the town are to be interrogated, issued Class-B amnestics, and released.
@@ -71,17 +144,25 @@ If a satisfactory document cannot be produced, SCP-4052 will respond by confisca
 [[collapsible show="► INPUT LEVEL 4/4052 SECURITY CREDENTIALS ◄" hide="▼ DECRYPTION KEY ACCEPTED. ACCESSING FILES.▼"]]
 [[/=]]
 [[<]]
-[[include component:acs-peppo-lite
 
-|item-number= 4052
-|clearance= 4
-|container-class= esoteric
-|secondary-class= archon
-|secondary-icon= http://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/archon-icon.svg
-|disruption-class= ekhi 
-|risk-class= warning
-
-]]
+[[table style="border: none; width: 100%;"]]
+[[row]]
+[[cell]]
+[[span style="font-size: 125%;"]][[span style="font-weight: 900;"]]ITEM NUMBER:[[/span]] SCP-4052[[/span]]
+[[/cell]]
+[[cell style="text-align: right;"]]
+[[span style="font-weight: 900; font-size: 125%;"]]###990000|LEVEL 4/4052##[[/span]]
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell]]
+[[span style="font-size: 125%;"]][[span style="font-weight: 900;"]]CONTAINMENT CLASS:[[/span]] ARCHON[[/span]]
+[[/cell]]
+[[cell style="text-align: right;"]]
+[[span style="font-weight: 900; font-size: 125%;"]]###990000|SECRET##[[/span]]
+[[/cell]]
+[[/row]]
+[[/table]]
 -----
 [[include component:image-block name=town.png|align=center|width=100%|caption=Sandwich, Illinois prior to its occupation.]]
 
