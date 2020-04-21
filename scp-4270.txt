@@ -1,27 +1,104 @@
 title:SCP-4270
-[[include :scp-wiki:info:start]]
+[[>]]
+[[module Rate]]
+[[/>]]
 
-**SCP-4270:** Does Benjamin Harrison Shit in the Oval Office? 
-**Author:** [[*user Deadly Bread]]
------
+[[include :scp-wiki:component:info-ayers
+|lang=en
+|page=scp-4270
+|authorPage=http://www.scp-wiki.net/the-bread-box
+|comments=**SCP-4270:** Does Benjamin Harrison Shit in the Oval Office?
+**Author:** [[*user Deadly Bread]]@@ @@
+----
 [[include :firedawnfolder:Loaf-0]]
+[[/div]]
 
-@@ @@
-[[include :scp-wiki:info:more]]
+[[module CSS]]
+/* INFO BOX */
+sup{
+    vertical-align: top;
+    position: relative;
+    top: -0.5em;
+}
+body{
+    --cutColour: #fafafa;
+    --barColour: #590505;
+    color: rgb(12, 12, 12);
+}
+.translation_block{ display: none; }
+.u-faq{ display: none; }
 
-benharris.png can be found [https://commons.m.wikimedia.org/wiki/File:Benjamin_Harrison,_head_and_shoulders_bw_photo,_1896.jpg#mw-jump-to-license here] and is in the public domain
+/* DIV BLOCKS */
+.report-box{
+    border: 2px solid rgb(12, 12, 12);
+    background-color: white;
+    padding: 0.769em;
+    margin-bottom: 1em;
+}
+.quote-block{
+    border: 3px double #999;
+    background-color: #f4f4f4;
+    padding: 0.769em;
+    margin-bottom: 1em;
+}
 
-[[include :scp-wiki:info:end]]
+/* FORMATTING */
+.collapsible-block-link{ font-weight: bold; }
+hr{
+     margin: 1em 0;
+     padding: 0;
+     border: 0;
+}
+.lite-header hr{
+    width: 45%;
+    margin: auto;
+    background-color: #e6e6e6;
+    border: none;
+    height: 2px;
+}
+.h1{
+    font-size: 190%;
+    margin: 0.7em 0 0.6em;
+    padding: 0;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
+}
+.h2, .h3{
+    margin: 0.5em 0 0.4em;
+    padding: 0;
+    letter-spacing: 1px;
+    font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
+}
+.h2{ font-size: 150%; }
+.h3{
+    font-size: 130%;
+    font-weight: bold;
+    color: darkred;
+}
+.justify{
+    text-align: justify;
+    word-break: unset;
+}
+[[/module]]
 
-[[include :scp-wiki:component:acs-peppo-lite
-
-|item-number= 4270
-|clearance= 1
-|container-class= safe
-|disruption-class= dark
-|risk-class= notice
-
-]]
+[[table style="border: none; width: 100%;"]]
+[[row]]
+[[cell]]
+[[span style="font-size: 125%;"]][[span style="font-weight: 900;"]]ITEM NUMBER:[[/span]] SCP-4286[[/span]]
+[[/cell]]
+[[cell style="text-align: right;"]]
+[[span style="font-weight: 900; font-size: 125%;"]]###990000|LEVEL 1/4088##[[/span]]
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell]]
+[[span style="font-size: 125%;"]][[span style="font-weight: 900;"]]CONTAINMENT CLASS:[[/span]] SAFE[[/span]]
+[[/cell]]
+[[cell style="text-align: right;"]]
+[[span style="font-weight: 900; font-size: 125%;"]]###990000|UNRESTRICTED##[[/span]]
+[[/cell]]
+[[/row]]
+[[/table]]
 -----
 [[include component:image-block name=benharris.png|caption=SCP-4270]]
 
@@ -66,17 +143,24 @@ benharris.png can be found [https://commons.m.wikimedia.org/wiki/File:Benjamin_H
 {{WELCOME, %%title%%}}
 [[/module]]
 
-[[include component:acs-peppo-lite
-
-|item-number= 4270
-|clearance= 3
-|container-class= esoteric
-|secondary-class= ticonderoga
-|secondary-icon= http://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/ticonderoga-icon.svg
-|disruption-class= keneq
-|risk-class= notice
-
-]]
+[[table style="border: none; width: 100%;"]]
+[[row]]
+[[cell]]
+[[span style="font-size: 125%;"]][[span style="font-weight: 900;"]]ITEM NUMBER:[[/span]] SCP-4270[[/span]]
+[[/cell]]
+[[cell style="text-align: right;"]]
+[[span style="font-weight: 900; font-size: 125%;"]]###990000|LEVEL 3/4270##[[/span]]
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell]]
+[[span style="font-size: 125%;"]][[span style="font-weight: 900;"]]CONTAINMENT CLASS:[[/span]] TICONDEROGA[[/span]]
+[[/cell]]
+[[cell style="text-align: right;"]]
+[[span style="font-weight: 900; font-size: 125%;"]]###990000|CONFIDENTIAL##[[/span]]
+[[/cell]]
+[[/row]]
+[[/table]]
 ----
 **Special Containment Procedures:** Due to SCP-4270’s relative obscurity within the general consciousness and the current inability of individuals to recognize its anomalous effects, it has been determined that attempting to fully expunge all knowledge pertaining to SCP-4270 would be detrimental to its containment. As such, the containment and investigation of SCP-4270 and its anomalous effects have been assigned to the Foundation Antimemetics Division. Information pertaining to SCP-4270’s normalization effects has been restricted to individuals with Level 3/4270 access or higher.
 
@@ -96,6 +180,11 @@ As investigations into the validity of these discrepancies have provided conflic
 
 [[footnoteblock title="Footnotes"]]
 [[/collapsible]]
+----
+[[>]]
+[[module rate]]
+[[/>]]
+
 [[/<]]
 [[div class="footer-wikiwalk-nav"]]
 [[=]]
