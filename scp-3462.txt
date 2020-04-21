@@ -1,48 +1,111 @@
 title:SCP-3462
-[[include :scp-wiki:info:start]]
-
-**SCP-3462:** Lights, Camera, REDACTION
-**Author:** [[*user Deadly Bread]]
------
+[[include :scp-wiki:component:info-ayers
+|lang=en
+|page=scp-3462
+|authorPage=http://www.scp-wiki.net/the-bread-box
+|comments=**SCP-3462:** Lights, Camera, REDACTION 
+**Author:** [[*user Lt Flops]]
+----
 [[include :firedawnfolder:Loaf-0]]
+[[/div]]
 
-@@ @@
-[[include :scp-wiki:info:more]]
+[[module CSS]]
+/* INFO BOX */
+sup{
+    vertical-align: top;
+    position: relative;
+    top: -0.5em;
+}
+body{
+    --cutColour: #fafafa;
+    --barColour: #590505;
+    color: rgb(12, 12, 12);
+}
+.translation_block{ display: none; }
+.u-faq{ display: none; }
 
-Blockbuster.png can be found [https://commons.m.wikimedia.org/wiki/File:BlockBuster-Video-Store-Closed.jpg#mw-jump-to-license here] and is in the public domain. Edits done by me.
+/* DIV BLOCKS */
+.report-box{
+    border: 2px solid rgb(12, 12, 12);
+    background-color: white;
+    padding: 0.769em;
+    margin-bottom: 1em;
+}
+.quote-block{
+    border: 3px double #999;
+    background-color: #f4f4f4;
+    padding: 0.769em;
+    margin-bottom: 1em;
+}
 
-Inside.png can be found [https://commons.m.wikimedia.org/wiki/File:OIC_morley_2012-07-05_blockbuster_4.jpg#mw-jump-to-license here] and is licensed under CC BY-SA 3.0. Edits done by me.
+/* FORMATTING */
+.collapsible-block-link{ font-weight: bold; }
+hr{
+     margin: 1em 0;
+     padding: 0;
+     border: 0;
+}
+.lite-header hr{
+    width: 45%;
+    margin: auto;
+    background-color: #e6e6e6;
+    border: none;
+    height: 2px;
+}
+.h1{
+    font-size: 190%;
+    margin: 0.7em 0 0.6em;
+    padding: 0;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
+}
+.h2, .h3{
+    margin: 0.5em 0 0.4em;
+    padding: 0;
+    letter-spacing: 1px;
+    font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
+}
+.h2{ font-size: 150%; }
+.h3{
+    font-size: 130%;
+    font-weight: bold;
+    color: darkred;
+}
+.justify{
+    text-align: justify;
+    word-break: unset;
+}
+[[/module]]
 
-Security.png can be found [https://commons.m.wikimedia.org/wiki/File:Interior_of_last_Blockbuster_Video.jpg#mw-jump-to-license here] and is licensed under CC BY-SA 4.0. Edits done by me.
-
-[[include :scp-wiki:info:end]]
+[[>]]
+[[module Rate]]
+[[/>]]
 
 [[table style="border: none; width: 100%;"]]
 [[row]]
 [[cell]]
-[[size 125%]]**Item #:** SCP-3462[[/size]]
+[[span style="font-size: 125%;"]][[span style="font-weight: 900;"]]ITEM NUMBER:[[/span]] SCP-3462[[/span]]
 [[/cell]]
 [[cell style="text-align: right;"]]
-[[size 125%]]###990000|**Level 4/3462**##[[/size]]
+[[span style="font-weight: 900; font-size: 125%;"]]###990000|LEVEL 4/3462##[[/span]]
 [[/cell]]
 [[/row]]
 [[row]]
 [[cell]]
-[[size 125%]]**Object Class:** Keter[[/size]]
+[[span style="font-size: 125%;"]][[span style="font-weight: 900;"]]CONTAINMENT CLASS: KETER[[/span]]
 [[/cell]]
 [[cell style="text-align: right;"]]
-[[size 125%]]###990000|**Classified**##[[/size]]
+[[span style="font-weight: 900; font-size: 125%;"]]###990000|SECRET##[[/span]]
 [[/cell]]
 [[/row]]
 [[/table]]
 ----
-[[include component:image-block name=Blockbuster.png|width=400px|caption=The location of SCP-3462.]]
 
-**Special Containment Procedures:** The town of Bend, Oregon has been evacuated and occupied by the Foundation. Major highways traveling through the town have been reconstructed away from the anomaly. A 3.6-meter tall steel fence has been constructed around the town to prevent civilian entry. The town is to be patrolled by STF-Lambda-17 (“Live Studio Audience”) for possible civilian entry and SCP-3462-A expansion. Personnel tasked with guarding SCP-3462 are to be housed in Temporary Site-5T1, located at the Southwest edge of the town. The borders of SCP-3462-A are to be marked by portable warning signs that state “DO NOT CROSS” in simplistic black lettering. Any distortion to this information is to be immediately reported. If SCP-3462-A is found to have expanded, D-Class personnel are to test the borders by placing one of the labeled signs and observing for possible degradation. VHS tapes thought to fall within SCP-3462’s restrictions are to be stored within Temporary Site-5T1. A VHS tape containing a list of films already provided to SCP-3462 is to be kept on site.
+[[include component:image-block name=blockbuster.png|align=center|width=100%|caption=The location of SCP-3462.]]
 
-Once every week, one nonviolent D-Class personnel is to be given a VHS tape thought to follow SCP-3462’s restrictions, standard memetic resistance gear used by mobile task forces, and a trackable form of motorized transportation to ensure delivery. The subject is to then bring the tape to SCP-3462’s location and leave it at the entrance of the store. This is to be performed as soon as possible to prevent the possible expansion of SCP-3462-A. Once the film is delivered, SCP-3462 is to be observed from a safe distance to see if the film is rejected. 
+**Special Containment Procedures:** The town of Bend, Oregon has been evacuated and occupied by the Foundation. Major highways traveling through the town have been rerouted away from the anomaly. A 3.6 meter tall steel fence has been constructed around the town to prevent civilian entry. The town is to be patrolled by STF-Lambda-17 ("Live Studio Audience") who are to monitor for SCP-3462-A expansion. Lambda-17 members are to be housed in Containment Site-5T1, located a significant distance from the anomaly. The borders of SCP-3462-A are to be marked by portable warning signs that state "DO NOT CROSS" in simplistic black lettering. Any distortion to these signs are to be immediately reported. If SCP-3462-A is found to have expanded, D-Class personnel are to locate the border by placing labeled signs and observing for degradation. VHS tapes thought to fall within SCP-3462's restrictions are to be stored within Containment Site-5T1. A tape containing a list of films already provided to SCP-3462 is to be kept on site. 
 
-Films considered for SCP-3462 are to be reviewed several times by multiple personnel familiar with SCP-3462’s presumed restrictions and previously rejected films. Films rejected by SCP-3462 are to be analyzed for any similarities in traits with other rejected and accepted films. Agents operating within the MPAA are to attempt to decrease the rating of older movies to increase the number of films accepted by SCP-3462. Research into a permanent method of mitigating or lessening the effects of SCP-3462-A is currently underway and considered a top priority. 
+One per week, one nonviolent D-Class personnel is ot be given a VHS tape thought to follow SCP-3462's restrictions and a trackable form of motorized transportation to ensure delivery. The subject is to deliver the tape to SCP-3462 and return if possible. Films considered for SCP-3462 are to be reviewed by multiple personnel familiar with SCP-3462's presumed restrictions and previously rejected films. Agents operating within the MPAA are gradually decrease the rating of older movies as to increase the number of films accepted by SCP-3462. Research into a more permanent method of mitigating the effects of SCP-3462-A is currently underway and considered a Class-A priority. 
 
 **Description:** SCP-3462 is a humanoid entity within a heavily damaged Blockbuster video rental store. SCP-3462 is constructed of the film reel of various destroyed VHS tapes located within the building. The only surviving tape within the store is a copy of //The Brave Little Toaster//, which is embedded within the entity’s chest. Despite its construction, SCP-3462 has shown to have the strength of a baseline human, along with being able to withstand severe damage to itself by replacing damaged portions of its body with nearby film reel. It is unknown if SCP-3462 is sentient, though its actions while in containment have suggested some form of sapience. It is unknown if SCP-3462 is able to leave its current location, as it has not made any attempt to do so.
 
@@ -61,7 +124,7 @@ For a full list of theorized requirements, please see Document-3462-TR
 
 Once the movie is provided, SCP-3462 will place the movie within SCP-3462-B and watch its contents. If the movie meets the requirements set by SCP-3462, it will forcefully remove the reel from within the tape and add it to SCP-3462’s mass upon the movie’s conclusion. If the contents do not meet the requirements, SCP-3462 will place the VHS on one of the remaining shelves within the store.
 [[=]]
-[[collapsible show="► INPUT LEVEL 3/3462 SECURITY CREDENTIALS ◄" hide="▼ CREDENTIALS APPROVED ▼"]]
+[[collapsible show="► INPUT LEVEL 5/3462 SECURITY CREDENTIALS ◄" hide="▼ CREDENTIALS APPROVED ▼"]]
 [[/=]]
 [[<]]
 SCP-3462 was first discovered on 09/26/20██ following detections of a possible infohazard in the town of Bend, Oregon. Upon SCP-3462’s discovery by MTF-Lambda-14 (“One Star Reviewers”), several miscellaneous VHS tapes were found within a locked safe in the back room office. Select portions of these tapes have been transcribed below for the purpose of understanding SCP-3462’s origin. 
@@ -240,6 +303,11 @@ SCP-3462 was first discovered on 09/26/20██ following detections of a possib
 
 [[/collapsible]]
 [[/<]]
+
+@@ @@
+[[>]]
+[[module Rate]]
+[[/>]]
 
 [[footnoteblock]]
 
