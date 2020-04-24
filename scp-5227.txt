@@ -11,6 +11,81 @@ title:SCP-5227
 [[include :scp-wiki:component:black-highlighter-theme-dev]]
 [[include :scp-wiki:component:rso]]
 [[include theme:i57]]
+
+[[module CSS]]
+
+div.terminal{
+    border: 1px solid black;
+    border: solid 3px #BBBBBB;
+    border-radius: 16px;
+    background-color: #131;
+/* black shadow at the top of the terminal */
+    background-image:
+        radial-gradient(ellipse 1000% 100% at 50% 90%, transparent, #121);
+    background-position: center;
+    display: block;
+/* shadow around the terminal */
+    box-shadow: inset 0 0 10em 1em rgba(0,0,0,0.5);
+/* prevents scanline from forming a scrollwheel */
+    overflow:hidden;
+}
+div.terminal blockquote {
+    background-color: black;
+    border: double 3px #80FF80
+}
+div.scanline{
+    margin-top: -40%;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    pointer-events: none;
+/* Safari 4.0 - 8.0 */
+    -webkit-animation: scan 12s linear 0s infinite; /* You may need to change this. If the bar goes by too quickly, increase 5s. */
+    animation: scan 12s linear 0s infinite; /* Same as above */
+    background: linear-gradient(to bottom, rgba(56, 112, 82,0), rgba(56, 112, 82,0.1)) !important;
+}
+
+div.text{
+    color: rgba(128,255,128,0.8);
+    padding-top: 40%;
+    font-family: monospace;
+    font-size: 1.2em;
+   padding-left: 1rem;
+    }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes scan{
+    from{ transform: translateY(-10%);}
+    to{  transform: translateY(5000%);} /* You may need to change this depending on the length of your terminal. If the scanline stops halfway, increase the second number.*/
+}
+
+@keyframes scan{
+    from{ transform: translateY(-10%);}
+    to{  transform: translateY(5000%);} /* Same as above.*/
+}
+
+div.text a {
+    color: #90EE90;
+    text-decoration: none;
+    background: transparent;
+   padding-left: 1rem;
+}
+div.text a.newpage {
+    color: #90EE90;
+    text-decoration: none;
+    background: transparent;
+}
+div.text a:hover {
+    color: #131;
+    text-decoration: underline;
+    background-color: #80FF80;
+    padding: 1px;
+}
+div.text a:hover::before{
+content: "> ";
+}
+[[/module]]
+
 [[include :scp-wiki:component:classified-bar-woed
 |lv=3
 |item=5227
@@ -928,89 +1003,10 @@ Following the termination of the camera feed, all bombs suspended in the air abo
 
 The body of Supervisory Agent Damien Garles was discovered; the cause of death was determined to have been respiration of the vat amniotic fluid. The vat itself was completely drained. Captain Valentino Scipioni was found at the bottom  in a state of shock, sitting next to an unidentified desiccated corpse crushed by the large metal cross.. Captain Scipioni has been amnesticized following a full medical recovery.
 
-Project Divinidad is considered ##red|closed.##
+Project Divinidad is considered **##red|closed.##**
 [[/div]]
 [[/collapsible]]
 ----
 [[=]]
 [[module Rate]]
 [[/=]]
-
-
-
-
-
-
-[[module CSS]]
-
-div.terminal{
-    border: 1px solid black;
-    border: solid 3px #BBBBBB;
-    border-radius: 16px;
-    background-color: #131;
-/* black shadow at the top of the terminal */
-    background-image:
-        radial-gradient(ellipse 1000% 100% at 50% 90%, transparent, #121);
-    background-position: center;
-    display: block;
-/* shadow around the terminal */
-    box-shadow: inset 0 0 10em 1em rgba(0,0,0,0.5);
-/* prevents scanline from forming a scrollwheel */
-    overflow:hidden;
-}
-div.terminal blockquote {
-    background-color: black;
-    border: double 3px #80FF80
-}
-div.scanline{
-    margin-top: -40%;
-    width: 100%;
-    height: 60px;
-    position: relative;
-    pointer-events: none;
-/* Safari 4.0 - 8.0 */
-    -webkit-animation: scan 12s linear 0s infinite; /* You may need to change this. If the bar goes by too quickly, increase 5s. */
-    animation: scan 12s linear 0s infinite; /* Same as above */
-    background: linear-gradient(to bottom, rgba(56, 112, 82,0), rgba(56, 112, 82,0.1)) !important;
-}
-
-div.text{
-    color: rgba(128,255,128,0.8);
-    padding-top: 40%;
-    font-family: monospace;
-    font-size: 1.2em;
-   padding-left: 1rem;
-    }
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes scan{
-    from{ transform: translateY(-10%);}
-    to{  transform: translateY(5000%);} /* You may need to change this depending on the length of your terminal. If the scanline stops halfway, increase the second number.*/
-}
-
-@keyframes scan{
-    from{ transform: translateY(-10%);}
-    to{  transform: translateY(5000%);} /* Same as above.*/
-}
-
-div.text a {
-    color: #90EE90;
-    text-decoration: none;
-    background: transparent;
-   padding-left: 1rem;
-}
-div.text a.newpage {
-    color: #90EE90;
-    text-decoration: none;
-    background: transparent;
-}
-div.text a:hover {
-    color: #131;
-    text-decoration: underline;
-    background-color: #80FF80;
-    padding: 1px;
-}
-div.text a:hover::before{
-content: "> ";
-}
-[[/module]]
