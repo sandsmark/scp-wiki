@@ -1,4 +1,27 @@
 title:popsioak's garden: or, how i learned that i can kinda write yeah woo yeah woo woo
+[[include :scp-wiki:component:black-highlighter-theme-dev]]
+[[module CSS]]
+:root {
+    --header-title: "Parabotanical Division";
+    --header-subtitle: "Getting to the Roots of Anomalies";
+    --logo-image: url("http://scp-wiki.wdfiles.com/local--files/scp-3529/parazoo_downsideup.png");
+
+    --pale-accent: 40, 230, 60;
+    /* light red, for visited links */
+    --bright-accent: 0, 133, 5;
+    /* bright red */
+    --medium-accent: 46, 100, 44;
+    /* medium red - the "default" accent color */
+    --dark-accent: 3, 100, 15;
+    /* dark red */
+    --alt-accent: 102, 221, 17;
+    /* pale orange, for newpage links */
+}
+[[/module]]
+
+
+[[include :scp-wiki:component:bhl-dark-sidebar]]
+
 [[>]]
 [[module rate]]
 [[/>]]
