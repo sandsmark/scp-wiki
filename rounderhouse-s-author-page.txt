@@ -1,5 +1,5 @@
 title:The Rounderpage
-[[include component:black-highlighter-theme-dev]]
+.con[[include component:black-highlighter-theme-dev]]
 [[include :scp-wiki:component:bhl-dark-sidebar]]
 [[div class="content"]]
 [[div class="desktop-only"]]
@@ -802,6 +802,12 @@ div.pages_container {
 h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
+
+#lock-info {
+    background-color: #3d3d3d;
+    border: none
+}
+
 /* ANIMATIONS */
 
 @keyframes marquee {
@@ -837,7 +843,7 @@ h1, h2, h3, h4, h5, h6 {
          display: none !important;
          visibility:hidden
     }
-    .content {
+    #page-content {
         margin-top: 0rem!important;
 }
 
