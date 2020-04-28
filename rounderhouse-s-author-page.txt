@@ -376,7 +376,15 @@ techbox
 
 /* ROOT */
 :root {
-
+    /* Rating Module Colors */
+    --rating-module-button-color: var(--light-gray-monochrome);
+    --rating-module-button-plus-color: 0, 200, 0;
+    --rating-module-button-negative-color: 200, 0, 0;
+    --rating-module-button-cancel-color: 200, 200, 200;
+    --rating-module-button-credit-color: 50, 50, 50;
+    --rating-module-text-color: var(--swatch-menutxt-light-color);
+    --rating-module-text-hover-color: var(--swatch-menutxt-light-color);
+    
     --background-gradient-distance: 0rem;
 
     /* Primary Theme Colors */
