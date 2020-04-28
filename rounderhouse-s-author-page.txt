@@ -820,6 +820,10 @@ h1, h2, h3, h4, h5, h6 {
      }
 }
 
+    #page-content > div:nth-child(5) {
+         margin-top: 0;
+    }
+
 /* @MEDIA */
 
 @media only screen and (max-width: 767px) {
@@ -836,9 +840,6 @@ h1, h2, h3, h4, h5, h6 {
     .content {
         margin-top: 0rem!important;
 }
-    #page-content > div:nth-child(5) {
-         margin-top: 0;
-    }
 
 }
 [[/module]]
