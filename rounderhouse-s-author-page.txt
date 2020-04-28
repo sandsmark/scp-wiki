@@ -1,7 +1,10 @@
 title:The Rounderpage
 [[include component:black-highlighter-theme-dev]]
 
-[[div style="background: url(http://scp-wiki.wdfiles.com/local--files/rounderhouse-s-author-page/rounderception.png); height: 20px; position: sticky; top: 0; text-align: center; border: 4px solid #000; z-index: 100;"]]
+[[div class="ticker"]]
+[[module Listpages created_by="ROUNDERHOUSE" order="created_at" limit="1" separate="no" wrapper="yes" ]]
+Latest Work: %%title_linked%% @ +%%rating%%
+[[/module]]
 [[/div]]
 [[div class="shimmy"]]
 [[div class="content-panel standalone series"]]
@@ -539,9 +542,6 @@ Header art by [[user Athosnetwork]]
 @import url('https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Staatliches');
 @import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
-[[/module]]
-
-[[module css]]
 
 /* @keyframes sham {
     from {
@@ -582,6 +582,31 @@ Header art by [[user Athosnetwork]]
   }
 } */
 
+.ticker {
+    background-color: #272727;
+    color: red;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 4px grey solid;
+   position: sticky; 
+   top: 0; 
+   text-align: center; 
+   border: 4px solid #000; 
+   z-index: 100;
+}
+.ticker p {
+    font-size: 1.3rem;
+    font-family: 'Share Tech Mono', monospace;
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
 
 .fivek > .list-pages-box a { 
    color: #850005;
