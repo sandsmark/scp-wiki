@@ -608,6 +608,12 @@ Header art by [[user Athosnetwork]]
     100% { transform: translate(-100%, 0); }
 }
 
+@media only screen and (max-width: 765px) {
+    .ticker {
+        padding-top: 1rem;
+    }
+}
+
 .fivek > .list-pages-box a { 
    color: #850005;
 }
