@@ -1,15 +1,25 @@
 title:The Rounderpage
 [[include component:black-highlighter-theme-dev]]
-
+[[include :scp-wiki:component:bhl-dark-sidebar]]
+[[div class="content"]]
+[[div class="desktop-only"]]
+[[size 120%]]**Welcome, Loser.**[[/size]]
+-----
+[#SoloWork Solo Work]
+[#Collabs Collabs]
+[#WanderersLibrary Wanderer's Library]
+[#Fanart Fanart]
+[#HallOfFame Hall of Fame]
+[#RealShit Real Shit]
+[[/div]]
 [[div class="ticker"]]
-[[module Listpages created_by="ROUNDERHOUSE" order="created_at desc" limit="1" separate="no" wrapper="yes" ]]
+[[module Listpages created_by="ROUNDERHOUSE" order="created_at desc" limit="1" separate="no" wrapper="yes"]]
 Latest Work: %%title_linked%% @ +%%rating%%, on %%created_at%%
 [[/module]]
 [[/div]]
-[[div class="shimmy"]]
-[[div class="content-panel standalone series"]]
+[[div class="intro"]]
 [[=]]
-[[span style="font-size: 300%; font-family: 'Bungee Shade', cursive;" color: "#D4AF37;"]] **THE ROUNDERPAGE**[[/span]]
+[[span class="bungee"]] **THE ROUNDERPAGE**[[/span]]
 ----
 [[<]]
 [[include :scp-wiki:component:anomaly-class-bar-source
@@ -28,287 +38,112 @@ Latest Work: %%title_linked%% @ +%%rating%%, on %%created_at%%
 [[span style="font-size: 150%; font-family: 'Staatliches', cursive;" color: "#D4AF37;"]]
 Welcome to the Rounderpage, affectionately referred to as Hell! If you look to your left, you'll see some of the magnificent pistons that have been described by former patrons as "oddly sexual", and "fucking weird". If you scroll down, you'll see a small text exchange which serves to introduce you, dear reader, to my body of work! You scroll a little further down and you'll see a nice little section reserved for reviews of the Rounderpage. Enjoy your stay!
 [[/span]]
-[[div style="width: 80px; border: 4px solid #272727; margin: auto; border-radius: 100%; padding: 2%;"]]
+[[div style="width: 80px; border: 4px solid #fff; margin: auto; border-radius: 100%; padding: 2%;"]]
 [[image https://www.colorbook.io/img/icons/socialmedia/twitter.svg link="*https://twitter.com/rounderhouse" alt="ROUNDERHOUSE ON TWITTER"]]
 [[/div]]
 [[/=]]
 [[/div]]
+[[# SoloWork]]
 ----
-[[=]]
-[[size 300%]]
-[[span style="font-family: 'Bungee Shade', cursive;" color: "#D4AF37;"]]
-**Solo Work**
-[[/span]]
-[[/size]]
-[[/=]]
 @@ @@
+= [[span class="bungee"]]**Solo Work**[[/span]]
 @@ @@
 [[=]]
 [[collapsible hideLocation="both" show="REVEAL" hide="↑"]]
-
-[[<]]
-
-[[include :scp-wiki:component:discord-chat-source |inc-source= --]]]
-
-[[include :scp-wiki:component:discord-chat-source |inc-user= --]
-|user-id=one
-|username=Wigglesworth
-|usericon=https://i.imgur.com/aNO9zCh.png
-|usercolor=#FF6961
-]]
-
-[[include :scp-wiki:component:discord-chat-source |inc-user= --]
-|user-id=two
-|username=BonesMalone
-|usericon=https://upload.wikimedia.org/wikipedia/commons/a/ab/Radial_engine.gif
-|usercolor=#c0c0c0
-]]
-
-[[include :scp-wiki:component:discord-chat-source |inc-start= --] ]]
-
-[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
-|user-id=one
-|username=Wigglesworth
-|msg-time=Today at 4:28 PM
-]]
-yo theres this new author on the wiki
-[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
-
-
-[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
-|user-id=two
-|username=BonesMalone
-|msg-time=Today at 4:28 PM
-]]
-name?
-[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
-
-[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
-|user-id=one
-|username=Wigglesworth
-|msg-time=Today at 4:29 PM
-]]
-rounderhouse, i think
-[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
-
-
-[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
-|user-id=two
-|username=BonesMalone
-|msg-time=Today at 4:30 PM
-]]
-oh yeah, his stuff is alright
-[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
-
-[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
-|user-id=one
-|username=Wigglesworth
-|msg-time=Today at 4:30 PM
-]]
-what SCPs he critten?
-[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
-
-[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
-|user-id=one
-|username=Wigglesworth
-|msg-time=Today at 4:31 PM
-]]
-written*
-[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
-
-[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
-|user-id=two
-|username=BonesMalone
-|msg-time=Today at 4:34 PM
-]]
-[[module ListPages created_by="Rounderhouse" order="created_at desc" tags="+scp" separate="no"]]
-**∆** %%title_linked%% [+##green|%%rating%%## | 🗩 ##lightblue|%%comments%%##] 
++ SCPs
+[[div_ class="pages_container"]]
+[[div_ class="pages"]]
+[[module ListPages created_by="Rounderhouse" order="created_at desc" tags="+scp -co-authored" separate="false" perPage="16"]]
+# **%%title_linked%%** _
+[[span class="page_tags"]]**Rating:** %%rating%%[[/span]] [[span class="page_tags"]]**Created on:**[[/span]][[span class="page_tags"]]%%created_at|%e %B %Y%%[[/span]]
 [[/module]]
-[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
-
-[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
-|user-id=one
-|username=Wigglesworth
-|msg-time=Today at 4:35 PM
-]]
-nice, what about tales?
-[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
-
-
-[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
-|user-id=two
-|username=BonesMalone
-|msg-time=Today at 4:39 PM
-]]
-[[module ListPages created_by="Rounderhouse" order="created_at desc" tags="+tale -co-authored" separate="no"]]
-**μ** %%title_linked%% [+##green|%%rating%%## | 🗩 ##lightblue|%%comments%%##]
+[[/div]]
+[[/div]]
++ Tales
+[[div_ class="pages_container"]]
+[[div_ class="pages"]]
+[[module ListPages created_by="Rounderhouse" order="created_at desc" tags="+tales -co-authored" separate="false" perPage="16"]]
+# **%%title_linked%%** _
+[[span class="page_tags"]]**Rating:** %%rating%%[[/span]] [[span class="page_tags"]]**Created on:**[[/span]][[span class="page_tags"]]%%created_at|%e %B %Y%%[[/span]]
 [[/module]]
-[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
-
-[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
-|user-id=one
-|username=Wigglesworth
-|msg-time=Today at 4:40 PM
-]]
-dope, any other shit?
-[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
-
-
-[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
-|user-id=two
-|username=BonesMalone
-|msg-time=Today at 4:47 PM
-]]
-[[module ListPages created_by="Rounderhouse" order="created_at desc" tags="-tale -scp -author -co-authored" separate="no"]]
-**Π** %%title_linked%% [+##green|%%rating%%## | 🗩 ##lightblue|%%comments%%##]
+[[/div]]
+[[/div]]
++ Other
+[[div_ class="pages_container"]]
+[[div_ class="pages"]]
+[[module ListPages created_by="Rounderhouse" order="created_at desc" category="." tags="-scp -tale -co-authored" separate="false" perPage="16"]]
+# **%%title_linked%%** _
+[[span class="page_tags"]]**Rating:** %%rating%%[[/span]] [[span class="page_tags"]]**Created on:**[[/span]][[span class="page_tags"]]%%created_at|%e %B %Y%%[[/span]]
 [[/module]]
-[[module ListPages created_by="Rounderhouse" order="created_at desc" category="component" tags="-co-authored" separate="no"]]
-**Ω** %%title_linked%% [+##green|%%rating%%## | 🗩 ##lightblue|%%comments%%##]
+[[/div]]
+[[/div]]
++ Themes & Components
+[[div_ class="pages_container"]]
+[[div_ class="pages"]]
+[[module ListPages created_by="Rounderhouse" order="created_at desc" category="theme component" tags="-coauthored" separate="false" perPage="16"]]
+# **%%title_linked%%** _
+[[span class="page_tags"]]**Rating:** %%rating%%[[/span]] [[span class="page_tags"]]**Created on:**[[/span]][[span class="page_tags"]]%%created_at|%e %B %Y%%[[/span]]
 [[/module]]
-[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
-
-[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
-|user-id=one
-|username=Wigglesworth
-|msg-time=Today at 4:48 PM
-]]
-seems ok. but everyone knows ur not a real author unless you have art made of you
-[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
-
-
-[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
-|user-id=two
-|username=BonesMalone
-|msg-time=Today at 4:53 PM
-]]
-[[image http://scp-wiki.wdfiles.com/local--files/rounderhouse-s-author-page/rounderhouse2.jpg class="msgimage"]]
-[[image http://scp-wiki.wdfiles.com/local--files/rounderhouse-s-author-page/rounderhouse3.jpg class="msgimage"]]
-[[image http://scp-wiki.wdfiles.com/local--files/rounderhouse-s-author-page/rounderhouse4.jpg class="msgimage"]]
-[[image http://scp-wiki.wdfiles.com/local--files/rounderhouse-s-author-page/rounderhouse5.jpg  class="msgimage"]]
-[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
-
-[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
-|user-id=one
-|username=Wigglesworth
-|msg-time=Today at 4:53 PM
-]]
-bruh slow down, where all this art coming from??
-[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
-
-
-[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
-|user-id=two
-|username=BonesMalone
-|msg-time=Today at 4:54 PM
-]]
-[[image https://i.imgur.com/BVS5dgS.png class="msgimage"]]
-[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
-
-[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
-|user-id=one
-|username=Wigglesworth
-|msg-time=Today at 4:55 PM
-]]
-yo wtf his author page doesnt have a rating module
-isn't that against the rules
-[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
-
-
-[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
-|user-id=two
-|username=BonesMalone
-|msg-time=Today at 4:55 PM
-]]
-[[module Rate]]
-[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
-
-[[include :scp-wiki:component:discord-chat-source |inc-msg-start= --]
-|user-id=one
-|username=Wigglesworth
-|msg-time=Today at 4:56 PM
-]]
-hot diggity
-[[include :scp-wiki:component:discord-chat-source |inc-msg-end= --] ]]
-[[include :scp-wiki:component:discord-chat-source |inc-end= --] ]]
-@@@@
-@@@@
-@@@@
-@@@@
-@@@@
-[[/<]]
+[[/div]]
+[[/div]]
 [[/collapsible]]
 [[/=]]
+[[# Collabs]]
 ----
-[[=]]
-[[size 300%]]
-[[span style="font-family: 'Bungee Shade', cursive;" color: "#D4AF37;"]]
-**Collabs**
-[[/span]]
-[[/size]]
-[[/=]]
 @@ @@
+= [[span class="bungee"]]**Collabs**[[/span]]
 @@ @@
 [[=]]
 [[collapsible hideLocation="both" show="REVEAL" hide="↑"]]
-
-++ [[[http://www.scp-wiki.net/scp-4511|SCP-4511: SWINE GOD]]]
+[[div class="solo"]]
+[[div class="article"]]
+++ [[[scp-4511|SCP-4511: SWINE GOD]]]
 [[size 85%]]
-with [[user DrAnnoyingDog]]
+with [[user Jade Skylar]]
 [[/size]]
-@@ @@
-@@ @@
-----
-++ [[[http://www.scp-wiki.net/hare-023-the-cheshire-cat|Hare 023: The Cheshire Cat]]]
+[[/div]]
+[[div class="article"]]
+++ [[[hare-023-the-cheshire-cat|Hare 023: The Cheshire Cat]]]
 [[size 75%]]
 with [[user Uncle Nicolini]]
 [[/size]]
-@@ @@
-@@ @@
-----
-++ [[[http://www.scp-wiki.net/scp-4512|SCP-4512: A Goddamn Filthy Teleporting Party Pool]]]
+[[/div]]
+[[div class="article"]]
+++ [[[/scp-4512|SCP-4512: A Goddamn Filthy Teleporting Party Pool]]]
 [[size 75%]]
-with [[user Uncle Nicolini]], [[user Woedenaz]], and [[user DrAnnoyingDog]]
+with [[user Uncle Nicolini]], [[user Woedenaz]], and [[user Jade Skylar]]
 [[/size]]
-@@ @@
-@@ @@
-----
-++ [[[http://www.scp-wiki.net/scp-3746|SCP-3746: 🦀 MOM'S DEAD 🦀]]]
+[[/div]]
+[[div class="article"]]
+++ [[[scp-3746|SCP-3746: 🦀 MOM'S DEAD 🦀]]]
 [[size 75%]]
 with [[user Roget]]
 [[/size]]
-@@ @@
-@@ @@
-----
-++ [[[http://www.scp-wiki.net/scp-4316|SCP-4316:  The Water's Warm]]]
+[[/div]]
+[[div class="article"]]
+++ [[[scp-4316|SCP-4316:  The Water's Warm]]]
 [[size 75%]]
 with [[user Captain Kirby]]
 [[/size]]
-@@ @@
-@@ @@
-----
-++ [[[http://www.scp-wiki.net/scp-5555|SCP-5555: Made In Heaven]]]
+[[/div]]
+[[div class="article"]]
+++ [[[scp-5555|SCP-5555: Made In Heaven]]]
 [[size 75%]]
 with [[user Uncle Nicolini]] & [[user A Random Day]]
 [[/size]]
-@@ @@
-@@ @@
-
+[[/div]]
+[[/div]]
 [[/collapsible]]
 [[/=]]
+[[# WanderersLibrary]]
 ----
-[[=]]
-[[size 300%]]
-[[span style="font-family: 'Bungee Shade', cursive;" color: "#D4AF37;"]]
-**Wanderer's Library**
-[[/span]]
-[[/size]]
-[[/=]]
 @@ @@
+= [[span class="bungee"]]**Wanderer's Library**[[/span]]
 @@ @@
 [[=]]
 [[collapsible hideLocation="both" show="REVEAL" hide="↑"]]
 I'm an admin on [[[http://wanderers-library.wikidot.com|the Wanderer's Library]]], the official SCP sister site. Here's [http://wanderers-library.wikidot.com/the-rounderpede-s-nest my author page] and some of my writing from there.
-[[div_ class="border"]]
+[[div_ class="library"]]
 [[image http://wanderers-library.wdfiles.com/local--files/component%3Atheme/wl_logo.png width="60px"]]
 ++ [[[http://wanderers-library.wikidot.com/on-the-common-vampyre|On The Common Vampyre]]]
 ++ [[[http://wanderers-library.wikidot.com/wizard-cops|Novoathens Police Department]]]
@@ -320,15 +155,10 @@ I'm an admin on [[[http://wanderers-library.wikidot.com|the Wanderer's Library]]
 @@ @@
 [[/collapsible]]
 [[/=]]
+[[# Fanart]]
 ----
-[[=]]
-[[size 300%]]
-[[span style="font-family: 'Bungee Shade', cursive;" color: "#D4AF37;"]]
-**Fanart**
-[[/span]]
-[[/size]]
-[[/=]]
 @@ @@
+= [[span class="bungee"]]**Fanart**[[/span]]
 @@ @@
 [[=]]
 [[collapsible hideLocation="both" show="REVEAL" hide="- Close"]]
@@ -350,7 +180,7 @@ by [[user Alistair Hawks]]
 @@ @@
 [[=image https://i.imgur.com/hyHzPdz.jpg width="500px"]]
 [[size 75%]]
-by [[[https://aminoapps.com/c/scp-foundation/page/user/great-skua/xqPo_jgTofxw8jN7bqVWnNgBX4dE8Eae2n|Great-Skua]]] 
+by [[[https://aminoapps.com/c/scp-foundation/page/user/great-skua/xqPo_jgTofxw8jN7bqVWnNgBX4dE8Eae2n|Great-Skua]]]
 [[/size]]
 @@ @@
 [[=image 4149two.png width="500px"]]
@@ -404,112 +234,22 @@ by [[user aethris]]
 [[/size]]
 [[/collapsible]]
 [[/=]]
+[[# HallOfFame]]
 ----
-[[=]]
-[[size 300%]]
-[[span style="font-family: 'Bungee Shade', cursive;" color: "#D4AF37;"]]
-**Hall Of Fame**
-[[/span]]
-[[/size]]
-[[/=]]
 @@ @@
+= [[span class="bungee"]]**Hall Of Fame**[[/span]]
 @@ @@
 [[=]]
 [[collapsible hideLocation="both" show="REVEAL" hide="- Close"]]
-@@ @@
-@@ @@
-@@ @@
-@@ @@
-@@ @@
-[[include component:image-block
-    name=kak.png |
-    caption=[[span style="color:white"]]Prolific scp-wiki.net author [[user djkaktus]] expresses his undying love for The Rounderpage[[/span]]|
-    width=600px |
-    align=center
-]]
-@@ @@
-@@ @@
-[[include component:image-block
-    name=pilz.png |
-    caption=[[span style="color:white"]]Snapshot from the future of SCP, 2034.[[/span]]|
-    width=350px |
-    align=center
-]]
-@@ @@
-@@ @@
-[[include component:image-block
-    name=fan.png |
-    caption=[[span style="color:white"]]A rare portrait of Rounderhouse.[[/span]]|
-    width=350px |
-    align=center
-]]
-@@ @@
-@@ @@
-[[include component:image-block
-    name=dunk.png |
-    caption=[[span style="color:white"]]A Renaissance painting of The Rounderpage™'s creation.[[/span]]|
-    width=350px |
-    align=center
-]]
-@@ @@
-@@ @@
-[[include component:image-block
-    name=westrin.JPG |
-    caption=[[span style="color:white"]]A remnant from when The Rounderpage was aflame.[[/span]]|
-    width=700px |
-    align=center
-]]
-@@ @@
-@@ @@
-[[include component:image-block
-    name=pb.JPG |
-    caption=[[span style="color:white"]]The Rounderpage splits the community.[[/span]]|
-    width=500px |
-    align=center
-]]
-@@ @@
-@@ @@
-[[include component:image-block
-    name=hawks2.JPG |
-    caption=[[span style="color:white"]]The Rounderpage is beyond the laws of mortals.[[/span]]|
-    width=800px |
-    align=center
-]]
-@@ @@
-@@ @@
-[[include component:image-block
-    name=dog.JPG |
-    caption=[[span style="color:white"]]The Rounderpage is judged.[[/span]]|
-    width=350px |
-    align=center
-]]
-@@ @@
-@@ @@
-[[include component:image-block
-    name=cedric.JPG |
-    caption=[[span style="color:white"]]Rounderhouse suffers for his art.[[/span]]|
-    width=500px |
-    align=center
-]]
-@@ @@
-@@ @@
 [[/collapsible]]
 [[/=]]
+[[# RealShit]]
 -----
-[[=]]
-[[size 300%]]
-[[span style="font-family: 'Bungee Shade', cursive;" color: "#D4AF37;"]]
-**Real Shit**
-[[/span]]
-[[/size]]
-[[/=]]
 @@ @@
+= [[span class="bungee"]]**Real Shit**[[/span]]
 @@ @@
 [[=]]
 [[collapsible hideLocation="both" show="REVEAL" hide="- Close"]]
-@@ @@
-@@ @@
-@@ @@
 Life happens. If I don't show any activity for a period of 1 year, I ask that any crisis concerns about licensing, porting, deletion, etc, for my articles be forwarded to [[user RockTeethMothEyes]]. If I don't show any activity for a whole three years, I entrust [[user RockTeethMothEyes]] with my articles and slots, but collaborations go to their respective co-authors. If I fall off the face of the earth & need to be contacted, [[*user aismallard]] has my phone number. Hopefully this will never be needed.
 [[/collapsible]]
 [[/=]]
@@ -521,148 +261,51 @@ Header art by [[user Athosnetwork]]
 [[/=]]
 
 [[/div]]
-
-[[collapsible hideLocation="both" show="              " hide="- Close"]]
-+ Rounderbox
-++ This is my place for testing shit out. Don't touch stuff here if i don't say so.
-
-[[div style="background: #3339ff;"]]
-[[module CountPages created_by="rounderhouse" rating=">100"]]
-%%total%%
-[[/module]]
-[[module CountPages created_by="rounderhouse" rating=">200"]]
-%%total%%
-[[/module]]
-[[module ListPages order="rating desc" tags="+author" separate="no"]]
-%%title_linked%% by %%created_by%% @ %%rating%%
-[[/module]]
-[[/div]]
-[[/collapsible]] 
 [[module css]]
+
+/* FONTS */
+
 @import url('https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Staatliches');
 @import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
-/* @keyframes sham {
-    from {
-        transform:rotate(1deg);
-        transform:skewY(1deg);
-              }
-    to {
-        transform:rotate(-1deg);
-        transform:skewY(-1deg);
-              }
-}
- @-webkit-keyframes sham {
-    from {
-        transform:rotate(1deg);
-        transform:skewY(1deg);
-              }
-    to {
-        transform:rotate(-1deg);
-        transform:skewY(-1deg);
-              }
-}
-.shimmy {
-  animation-name: sham;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  -webkit-animation-name: sham;
-  -webkit-animation-duration: 6s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
+/* ROOT */
+:root {
+
+    --background-gradient-distance: 0rem;
+
+    /* Primary Theme Colors */
+    --swatch-background: 39, 39, 39;
+    --swatch-primary: var(--medium-accent);
+    --swatch-primary-darker: var(--bright-accent);
+    --swatch-primary-darkest: var(--medium-accent);
+    /* Primary Text Colors */
+    --swatch-text-dark: var(--white-monochrome);
+    --swatch-text-light: var(--black-monochrome);
+    --swatch-important-text: var(--bright-accent);
+    --rounder-red: #ED1B24;
 }
 
-
-@keyframes blinker {
-  0% {opacity: 1}
-  100% {
-    opacity: 0;
-  }
-} */
-
-.ticker {
-    background-color: #272727;
-    color: red;
-    white-space: nowrap;
-    overflow: hidden;
-    box-sizing: border-box;
-    border: 4px grey solid;
-   position: sticky; 
-   top: 0; 
-   text-align: center;  
-   z-index: 100;
-}
-.ticker p {
-    font-size: 1.1rem;
-    font-family: 'Share Tech Mono', monospace;
-    display: inline-block;
-    padding-left: 100%;
-    animation: marquee 10s linear infinite;
-}
-
-@keyframes marquee {
-    0%   { transform: translate(0, 0); }
-    100% { transform: translate(-100%, 0); }
-}
-
-@media only screen and (max-width: 765px) {
-    .ticker {
-        top: 10%;
-    }
-}
-
-.fivek > .list-pages-box a { 
-   color: #850005;
-}
-
-#page-content .border {
-    box-sizing: border-box;
-    border: 2vw solid rgba(0,0,0,0.5);
-    border-image: url(http://wanderers-library.wdfiles.com/local--files/component%3Adustjacket-theme/wl_border.png) 600 round;
-    border-image-width: 6;
-    background-color: rgb(45, 70, 45);
-    border-radius: 3vw;
-    padding: 1em 0;
-    color: #FFDB5A;
-    text-align: center;
-}
-#page-content .border a {
-    color: #FFDB5A;
-}
+/* HEADER */
 
 #header{
     background: url(null)
 }
+
 #header:before{
-display:block;
-position: absolute;
-width: 100px;
-height: 100px;
-top: 22%;
-left:2%;
-z-index: -1;
-content: "";
-background:url(http://scp-wiki.wdfiles.com/local--files/rounderhouse-s-author-page/rounderlogo.png);
-background-repeat: no-repeat;
-background-size:100px 100px;
-background-position: 0px 0px;
-z-index: 201;
-  animation: spinny1 7s infinite linear;
-
-}
-
-@keyframes spinny1{
-     from {
-     -webkit-transform: rotate(0deg);
-              webkit-transform: rotate(0deg);
-     }
-     to {
-     -webkit-transform: rotate(359deg);
-     transform: rotate(359deg);
-     }
+    display:block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 10%;
+    content: "";
+    background:url(http://scp-wiki.wdfiles.com/local--files/rounderhouse-s-author-page/rounderlogo.png);
+    background-repeat: no-repeat;
+    background-size:100px 100px;
+    background-position: 0px 0px;
+    z-index: 201;
+    animation: spinny1 7s infinite linear;
 }
 
 #header h1 a {
@@ -683,6 +326,7 @@ z-index: 201;
     color: transparent;
     text-shadow: none;
 }
+
 #header h2 span::before {
     content: "its rounder all the way downder";
     color: #fff;
@@ -699,19 +343,298 @@ z-index: 201;
     background-image: url(http://scp-wiki.wdfiles.com/local--files/rounderhouse-s-author-page/rounderception.png);
     background-repeat: repeat-x;
     background-size: contain;
-  animation-name: sham;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-  -webkit-animation-name: sham;
-  -webkit-animation-duration: 6s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate-reverse;
 }
 
-#footer
-    background: url("http://scp-wiki.net/local--files/rounderhouse-s-author-page/header3.png");
+/* STYLING */
+
+/* Bungee Header */
+
+span.bungee {
+   font-family: 'Bungee Shade', cursive;
+   font-size: 300%;
+   color: #fff;
 }
+
+/* Intro Box */
+
+div.intro {
+    background: #3D3D3D;
+    border-radius: 3px;  
+    padding: 2rem 1.5rem;
+    margin: 1rem auto;
+    z-index: 0;
+}
+
+/* Latest Article Ticker */
+
+.ticker {
+    background-color: #272727;
+    color: red;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 4px grey solid;
+   position: sticky;
+   top: 0;
+   text-align: center;  
+   z-index: 1;
+}
+
+.ticker p {
+    font-size: 1.1rem;
+    font-family: 'Share Tech Mono', monospace;
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 10s linear infinite;
+}
+
+/* Article Boxes */
+
+div.solo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+div.article {
+  display: inline-block;
+  min-width: 20%;
+  background: #3d3d3d;
+  padding: 1.3rem;
+  margin: 1rem 1.5rem;
+  border-radius: 3px;
+  color: white;
+  box-shadow: 20px 20px rgba(0,0,0,.15);
+  transition: all .4s ease;
+overflow-wrap: break-word;
+}
+
+div.article:hover {
+  box-shadow: 10px 10px rgba(0,0,0,.25);
+}
+
+div.solo.list-pages-box {
+  display: block;
+   width: 100%;
+}
+div.solo.list-pages-item {
+  display: inline-block!important;
+}
+/* Listpages Fix */
+
+.fivek.list-pages-box a {
+   color: #850005;
+}
+
+.ticker > .list-pages-box a {
+    text-decoration: underline;
+}
+
+/* Listpages Block */
+
+div.list-pages-box * {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+div.list-pages-box br {
+    display: none;
+}
+
+div.list-pages-box ol {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    position: relative;
+    -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+    padding: inherit;
+    overflow: hidden;
+}
+
+div.list-pages-box ol li {
+    -ms-flex-preferred-size: calc(100% / 5);
+        -webkit-flex-basis: -webkit-calc(100% / 5);
+            flex-basis: -moz-calc(100% / 5);
+            flex-basis: calc(100% / 5);
+    color: #fff;
+    padding: 0.75em;
+    margin: 0.5em;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            -webkit-flex-grow: 2;
+               -moz-box-flex: 2;
+            flex-grow: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            -webkit-justify-content: center;
+               -moz-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            -webkit-align-items: center;
+               -moz-box-align: center;
+            align-items: center;
+    text-align: center;
+    border: 0.125rem solid #3d3d3d;
+    background: #3d3d3d;
+    font-size: -webkit-calc(var(--base-font-size) * 1.25);
+    font-size: -moz-calc(var(--base-font-size) * 1.25);
+    font-size: calc(var(--base-font-size) * 1.25);
+    overflow: hidden;
+    box-shadow: 15px 15px rgba(0,0,0,.15);
+    transition: all .4s ease;
+}
+
+div.list-pages-box ol li:hover {
+    box-shadow: 7px 7px rgba(0,0,0,.25);
+}
+
+div.list-pages-box ol li > span:first-of-type {
+    padding-top: 0.5em;
+}
+
+div.list-pages-box ol li > span:nth-of-type(5) {
+    padding-bottom: 0.5em;
+}
+
+span.page_tags {
+    font-size: 80%;
+}
+
+div.list-pages-box ol li a,
+div.list-pages-box ol li > span {
+    will-change: color, border, filter;
+    -webkit-transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), border 500ms cubic-bezier(0.4, 0, 0.2, 1), border-top 500ms cubic-bezier(0.4, 0, 0.2, 1), filter 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), border 500ms cubic-bezier(0.4, 0, 0.2, 1), border-top 500ms cubic-bezier(0.4, 0, 0.2, 1), filter 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), border 500ms cubic-bezier(0.4, 0, 0.2, 1), border-top 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-filter 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), border 500ms cubic-bezier(0.4, 0, 0.2, 1), border-top 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-filter 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), border 500ms cubic-bezier(0.4, 0, 0.2, 1), border-top 500ms cubic-bezier(0.4, 0, 0.2, 1), filter 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), border 500ms cubic-bezier(0.4, 0, 0.2, 1), border-top 500ms cubic-bezier(0.4, 0, 0.2, 1), filter 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1), border 500ms cubic-bezier(0.4, 0, 0.2, 1), border-top 500ms cubic-bezier(0.4, 0, 0.2, 1), filter 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-filter 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-filter: invert(0) hue-rotate(0deg);
+            filter: invert(0) hue-rotate(0deg);
+}
+
+div.list-pages-box ol li::before {
+content: " ";
+    width: 125%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+    opacity: 1;
+    background-color: rgb(255, 219, 90);
+    background-color: rgb(var(--bright-accent));
+    -webkit-transform: translateX(-webkit-calc(-100% - 4rem));
+    -moz-transform: translateX(-moz-calc(-100% - 4rem));
+    -ms-transform: translateX(calc(-100% - 4rem));
+    -o-transform: translateX(calc(-100% - 4rem));
+    transform: translateX(calc(-100% - 4rem));
+    -webkit-transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: -o-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), -moz-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1), -moz-transform 500ms cubic-bezier(0.4, 0, 0.2, 1), -o-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-clip-path: polygon(0.00% 0.00%, 100% 0px, 90% 100%, 0px 100%);
+    clip-path: polygon(0.00% 0.00%, 100% 0px, 90% 100%, 0px 100%);
+
+}
+
+
+div.list-pages-box ol li a,
+div.list-pages-box ol li > span:first-of-type  {
+    border-top: 0.0625rem solid rgb(var(--swatch-menutxt-light-color));
+}
+
+div.list-pages-box ol li:hover a,
+div.list-pages-box ol li:hover > span {
+    color: rgb(var(--swatch-menutxt-dark-color)) !important;
+}
+
+div.list-pages-box ol li:hover a {
+    -webkit-filter: invert(1) hue-rotate(195deg);
+            filter: invert(1) hue-rotate(195deg);
+}
+
+div.list-pages-box ol li:hover > span:first-of-type  {
+    border-top: 0.0625rem solid rgb(var(--swatch-menutxt-dark-color))  !important;
+}
+
+div.pages_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    position: relative;
+    width: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+/* Wanderer's Library Box */
+
+.library {
+    box-sizing: border-box;
+    border: 2vw solid rgba(0,0,0,0.5);
+    border-image: url(http://wanderers-library.wdfiles.com/local--files/component%3Adustjacket-theme/wl_border.png) 600 round;
+    border-image-width: 6;
+    background-color: rgb(45, 70, 45);
+    border-radius: 3vw;
+    padding: 1em 0;
+    color: #FFDB5A;
+    text-align: center;
+}
+
+.library a {
+    color: #FFDB5A!important;
+}
+
+/* Fix Login */
 
 #login-status a {
     color: rgb(0, 0, 0);
@@ -723,10 +646,12 @@ z-index: 201;
     font-size: 90%;
     z-index: 30;
 }
+
 #login-status a {
     background: transparent;
     color: #000000;
 }
+
 #login-status ul a {
     color: #000000;
     background: transparent;
@@ -736,48 +661,11 @@ z-index: 201;
     background: #ddd;
     color: #000000;
 }
-
-div#page-options-bottom-2 > a, div#page-options-bottom > a {
-  animation-name: sham;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-  -webkit-animation-name: sham;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate-reverse;
-}
-
-#side-bar .side-block {
-    padding: 10px;
-    border: 1px solid #444;
-    text-align: center;
-    border-radius: 100px;
-    box-shadow: none !important;
-    background:url(https://upload.wikimedia.org/wikipedia/commons/a/ab/Radial_engine.gif);
-    margin-bottom: 15px;
-    color: white;
-}
-
-#side-bar div.menu-item a {
-    color: #fff;
-}
-
-#search-top-box-input, #search-top-box-input:hover, #search-top-box-input:focus {
-    background-color: #11131f;
-}
-#search-top-box-form input[type=submit] {
-    background: linear-gradient(to bottom, #3b4265, #3b4265, #0d0f19);
-}
-
-#search-top-box-form input[type=submit]:hover,
-#search-top-box-form input[type=submit]:focus {
-    background: linear-gradient(to bottom, #3b4265, #57608a, #252a40);
-}
  
+/* Images */
+
 #page-content .scp-image-block {
-    border: solid 8px;
-    border-color: #D4AF37;
+    border: groove 8px #D4AF37;
     box-shadow: none;
 }
 #page-content .scp-image-block .scp-image-caption {
@@ -785,12 +673,99 @@ div#page-options-bottom-2 > a, div#page-options-bottom > a {
     background-color: #8B4513;
 }
 
-.list-pages-box a {
-    color: white;
-    text-decoration: underline;
+/* BUDDY MENU */
+
+#page-content {
+    position: relative;
 }
+
+.desktop-only {
+    text-align: center;
+    height: 16rem;
+    width: 10rem;
+    background: #3D3D3D;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 15rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 3px;
+    padding: 10px;
+    -webkit-box-shadow: none;
+       -moz-box-shadow:  none;
+            box-shadow: none;
+    overflow: visible;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform: translateX(400%);
+       -moz-transform: translateX(400%);
+        -ms-transform: translateX(400%);
+         -o-transform: translateX(400%);
+            transform: translateX(400%);
+}
+
+.desktop-only a, a:visited {
+     color: var(--rounder-red);
+}
+
+.content {
+    margin-top: -16rem!important;
+}
+
+/* OTHER */
 
 #page-title {
   display: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+}
+/* ANIMATIONS */
+
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+@keyframes spinny1{
+     from {
+     -webkit-transform: rotate(0deg);
+              webkit-transform: rotate(0deg);
+     }
+     to {
+     -webkit-transform: rotate(359deg);
+     transform: rotate(359deg);
+     }
+}
+
+/* @MEDIA */
+
+@media only screen and (max-width: 767px) {
+    .ticker {
+        top: 9%;
+    }
+}
+
+@media (max-width: 1250px) {
+    .desktop-only {
+         display: none !important;
+         visibility:hidden
+    }
+    .content {
+        margin-top: 0rem!important;
+}
+    #page-content > div:nth-child(5) {
+         margin-top: 0;
+    }
+
 }
 [[/module]]
