@@ -46,6 +46,159 @@ title:Natalie Watts' Author Page!
     color: #f0f0c0;
     text-shadow: 1px 1px 1px #000;
     text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+
+/* YUI-TABS */
+.yui-navset .yui-content {
+    background-color: inherit;
+}
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    background-color: inherit;
+    background-image: inherit;
+}
+.yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a:focus,
+/* no focus effect for selected */
+ .yui-navset .yui-nav .selected a:hover {
+    /* no hover effect for selected */
+    background: inherit;
+    /* selected tab background */
+    color: inherit;
+}
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    background: inherit;
+    text-decoration: inherit;
+}
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav,.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    border-color: inherit;
+}
+.yui-navset li {
+    line-height: inherit;
+}
+
+.yui-navset * {
+    transition: background-color 80ms cubic-bezier(0.4, 0.0, 0.2, 1), color 80ms cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    zoom: unset;
+    display: flex;
+    flex-wrap: wrap;
+    border-color: rgb(140, 20, 25);
+    width: calc(100% - 0.125rem);
+    margin: 0 auto;
+    border: 0;
+    box-shadow: 0 calc(0.0625rem * 5) 0 0 rgb(140, 20, 25);
+}
+
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    zoom: unset;
+    background-image: none;
+    background-color: rgb(244, 244, 244);
+    border: unset;
+    color: rgb(12, 12, 12);
+}
+
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    zoom: unset;
+    background-color: rgb(100, 3, 15);
+    color: rgb(252, 252, 252);
+}
+
+.yui-navset .yui-nav li,
+.yui-navset .yui-navset-top .yui-nav li {
+    background-color: rgb(244, 244, 244);
+    border-color: transparent;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    zoom: unset;
+    display: flex;
+    position: relative;
+    flex-grow: 2;
+    box-shadow: 0 0 0 0.0625rem rgb(140, 20, 25);
+}
+
+.yui-navset .yui-nav li a,
+.yui-navset-top .yui-nav li a,
+.yui-navset-bottom .yui-nav li a {
+    display: flex;
+    vertical-align: bottom;
+    zoom: unset;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.yui-navset .yui-nav a em,
+.yui-navset .yui-navset-top .yui-nav a em {
+    padding: 0.35em 0.75em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.yui-navset .yui-nav li em {
+    /* Undoes border set by wikidot's default layout */
+    border: unset !important;
+}
+
+/* Selected Tab */
+
+.yui-navset .yui-nav .selected,
+.yui-navset .yui-navset-top .yui-nav .selected {
+    padding: 0;
+    margin: 0;
+    flex-grow: 2;
+    background-color: rgb(140, 20, 25);
+}
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a em {
+    border: none;
+    border-color: transparent;
+
+}
+
+.yui-navset .yui-nav .selected a {
+    /* Undoes a color set by wikidot's default layout */
+    color: rgb(252, 252, 252) !important;
+    width: 100%;
+    background-image: none;
+}
+
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:active {
+    background-color: rgb(140, 20, 25);
+    color: rgb(252, 252, 252);
+}
+
+.yui-navset .yui-nav .selected a:hover {
+    /* Indicate that the currently selected tab is not clickable */
+    cursor: default;
+}
+
+
+.yui-navset .yui-content {
+    background-color: rgba(244, 244, 244, 0.25);
+    /* content background color */
+}
+
+.yui-navset .yui-content,
+.yui-navset .yui-navset-top .yui-content {
+    border-color: rgb(170, 170, 170);
+    /* content border */
+}
+
+.yui-navset-left .yui-content {
+    border-left-color: rgb(244, 244, 244);
+    /* different border color */
+}
 [[/module]]
 
 [[>]]
@@ -450,23 +603,23 @@ Of course, major special thanks to LordStonefish for being a pleasure to write w
 [[tab About Me]]
 + who's this nerd?
 
-Hiya, I'm Natalie Terezi Rei Watts, aka [[*user NatVoltaic]]! I'm a genderfluid nb lesbian (she/xe/its, Mx.) who's been writing for the wiki upwards of 3 years. Currently I'm the self-appointed Wiki Space Princess,[[footnote]]Most extraterrestrial-tagged SCPs out of any author! ^_^[[/footnote]] a frequenter of the queer eldritch, and the type of person regarded by xer friends as "absolute trash."
+Hiya! I'm Natalie Terezi Rei Watts, aka [[*user NatVoltaic]]! I'm a genderfluid nb lesbian (she/xe/its, Mx.) with neurodivergence, who's been writing on the wiki upwards of 3 years. Currently, I'm the self-appointed Wiki Space Princess,[[footnote]]Most extraterrestrial-tagged SCPs out of any author! ^_^[[/footnote]] the archon of eldritch cyberpunk lesbianism, and the type of person regarded by xyr friends as "absolute trash."
 
 + major wiki contributions?
 
-See //Articles// tab for too many articles.
+See //Articles// tab for a lot.
 
-For more significant contributions:
+For significant contributions:
 
-* **[[[second-hytoth-hub|Church of the Second Hytoth]]]** -- Humans and aliens defend reality against extrauniversal horrors. Alternatively, what would've happened if Arthur C. Clarke got blazed and became an occultist.
+* **[[[second-hytoth-hub|Church of the Second Hytoth]]]** -- Aliens and humans defend reality against extrauniversal horrors. What would've happened if Arthur C. Clarke got blazed and became an occultist.
 
-* **[[[parawatch-hub|Parawatch]]]** -- Old school creepypasta: the GoI: the movie. I wrote the first article, then — thanks to articles by [[*user The Great Hippo]] — watched the group explode in popularity.
+* **[[[parawatch-hub|Parawatch]]]** -- Old school creepypasta: the GoI: the musical. I wrote the first article, then — thanks to works by [[*user The Great Hippo]] — watched the group explode in popularity.
 
 * **[[[ad-astra-per-aspera-hub|Ad Astra Per Aspera]]]** -- //spaaaaaaaaaaaaaaaaaaaaaaaaaaaaaace.//
 
-Additionally I've created Site-201, monitoring Toronto, and [[[lake-ontario-array|various]]] [[[cease-and-deceased|stories]]] set in the region. //(also there's a bunch of unfinished tale series, but shhhhhhhh)//
+Additionally, I've created the Toronto-located Site-201 and stories [[[lake-ontario-array|various]]] [[[cease-and-deceased|stories]]] set in the region. There's a bunch of unfinished tale series, but //shhhhhhhh.//
 
-+ anything else online?
++ other works online?
 
 Check the //Off-Wiki// tab!
 
@@ -486,7 +639,9 @@ The avenue I take for this: monsters. The eldritch, the occult, the things we re
 
 This is along with writing loads of explicitly LGBTQ+ characters, of course. The gayest shit you can imagine.
 
-Asides from fiction I'm a (very) amateur artist, practicing whenever my executive dysfunction lets me catch a break. I'm also an anarchotranshumanist,[[footnote]]Information and bodily augmentations belong to everyone, and should not be denied on a class or capitalist basis.[[/footnote]] a commie bitch, and a (non-practicing) gnostic occultist. 
++ any more?
+
+Asides from fiction I'm a (very) amateur artist, practicing whenever my executive dysfunction lets me catch a break. I'm also an anarchotranshumanist,[[footnote]]Information and bodily augmentations belong to everyone, and should not be denied on a class or capitalist basis.[[/footnote]] a commie bitch, and a Discordian-Gnostic occultist. Philosophically, Deleuzian metaphysics runs thick like blood through my veins.
 
 + any //extra// neat facts?
 
