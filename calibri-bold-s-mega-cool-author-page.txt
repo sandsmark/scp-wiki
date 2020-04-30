@@ -217,13 +217,15 @@ I'm a very social young lad, and I do many social things.
 [[/module]]
 
 [[module Listpages created_by="=" order="@URL|{$order}" tag="-translation +scp -co-authored" category="-fragment -component" perPage="250"]]
+[[div class="preview yes"]]
 **%%title_linked%%**
  +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
 //Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
 //Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
-[[collapsible show="+ Translations" hide="- Translations"]]
+[[collapsible show="Translations" hide="Translations"]]
 [[iframe http://interwiki.scpdb.org/?wiki=scp-wiki&lang=en&page=%%category%%:%%name%%]]
 [[/collapsible]]
+[[/div]]
 [[/module]]
 
 [!-- Tale Block: Auto disabled if none --]
