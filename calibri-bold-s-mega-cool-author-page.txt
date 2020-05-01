@@ -131,6 +131,41 @@ display:none
 
 .collabnote.\{\$note\} {display: none;}
 
+/*
+This tooltip hover effect is adapted from LurkD's code on http://www.scp-wiki.net/command-query-separation
+*/
+.hover {
+}
+.hover:hover {
+  text-decoration: none;
+    border-bottom: none;
+}
+
+.hover span {display: none;}
+.hover:hover span {
+    position: absolute;
+    display: inline;
+    margin: -15px;
+    height: auto;
+    max-width: 27%;
+    background: rgba(230, 230, 230, 1);
+    border-style: double;
+    border-color: #fff;
+    border-width: thick;
+    color: #fff;
+    font-weight: bold;
+    padding: 1em;
+    border-radius: 15px 15px 0px;
+}
+.hover:hover span span {
+    position: relative;
+    margin: auto;
+    height: auto;
+    width: auto;
+    border: none;
+    padding: 0;
+}
+
 [[/module]]
 
 [[div class="rate"]]
@@ -416,7 +451,7 @@ Some people liked my things so much, they did other things based off of those th
 
 A very lovely portrait of my author avatar, Dr. C. Bold. He's found in [[[SCP-4456|SCP-4456-D]]], [[[SCP-4943]]], and //[[[A Bold Choice]]]//. Huge thanks to my dad for this amazing gift he made!
 
-[[=image http://www.scp-wiki.net/local--files/calibri-s-mega-cool-art-page-it-s-mostly-just-icons-but-what/Dr.%20C.%20Bold]]
+[[span class="hover"]][[span style="background: radial-gradient(ellipse at bottom right, hsla(060, 25%, 50%, 0.75) 0%, hsla(060, 25%, 50%, 1) 50%);"]]Illustrator: My Dad <3[[/span]][[=image http://www.scp-wiki.net/local--files/calibri-s-mega-cool-art-page-it-s-mostly-just-icons-but-what/Dr.%20C.%20Bold]][[/span]]
 
 Here's another portrait of Dr. Bold, but this time //before// his encounter with [[[SCP-212]]], by [[*user barredowl]].
 
