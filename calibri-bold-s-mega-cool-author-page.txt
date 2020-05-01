@@ -999,8 +999,11 @@ This tab is just for testing code or whatever that I can't test on a sandbox.
 
 [!--[[include :scp-la:scp-la-002]]--]
 
-[[module ListPages range="." limit="1"]]
-      [[iframe http://interwiki.scpdb.org/?wiki=scp-wiki&lang=en&page=%%category%%:%%name%% class="scpnet-interwiki-frame"]]
-
 [[/tab]]
 [[/tabview]]
+
+[[module css]]
+.footnotes-footer { 
+display:none;
+}
+[[/module]]
