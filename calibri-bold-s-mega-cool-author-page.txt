@@ -19,9 +19,9 @@ title:Calibri Bold's Mega Cool Author Page
  display:inline-box;
  overflow:hidden;
  position:fixed;
- right: 1.5em;
- top: 14em;
- width: 13em;
+ right: 4em;
+ top: 12em;
+ width: 12em;
  min-width: 10px;
  height:30%;
  padding:1%;
@@ -1004,102 +1004,6 @@ Cal looks at the bowl and a frown appears on his face. "Oh. The candy corn's all
 This tab is just for testing code or whatever that I can't test on a sandbox.
 
 [!--[[include :scp-la:scp-la-002]]--]
-
-[!-- SCP Block: Auto disabled if none --]
-[[module Listpages created_by="=" tag="-translation +scp -co-authored" category="-fragment -component" limit="1"]]
-[[div style="text-align: center;"]]
------
-++ SCPs
------
-[[/div]]
-[[/module]]
-
-[[module Listpages created_by="=" order="@URL|{$order}" tag="-translation +scp -co-authored" category="-fragment -component" perPage="250"]]
-[[div class="preview yes"]]
-**%%title_linked%%**
- +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
-//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
-//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
-[[div class="bold"]]
-[[collapsible show="+ Translations" hide="- Translations"]]
-[[iframe http://interwiki.scpdb.org/?wiki=scp-wiki&lang=en&page=%%category%%:%%name%%]] 
-[[/collapsible]]
-[[/div]]
-@@@@
-[[/div]]
-[[/module]]
-
-[!-- Tale Block: Auto disabled if none --]
-[[module Listpages created_by="=" tag="-translation +tale -co-authored" category="-fragment -component" limit="1"]]
-[[div style="text-align: center;"]]
------
-++ Tales
------
-[[/div]]
-[[/module]]
-
-[[module Listpages created_by="=" order="@URL|{$order}" tag="-translation +tale -co-authored" category="-fragment -component" perPage="250"]]
-[[div class="preview yes"]]
-**%%title_linked%%**
- +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
-//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
-//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
-[[div class="bold"]]
-[[collapsible show="+ Translations" hide="- Translations"]]
-[[iframe http://interwiki.scpdb.org/?wiki=scp-wiki&lang=en&page=%%category%%:%%name%%]] 
-[[/collapsible]]
-[[/div]]
-@@@@
-[[/div]]
-[[/module]]
-
-[!-- GoI Block: Auto disabled if none --]
-[[module Listpages created_by="=" category="-fragment -component" tag="-translation +goi-format -co-authored" limit="1"]]
-[[div style="text-align: center;"]]
------
-++ GoI Formats
------
-[[/div]]
-[[/module]]
-
-[[module Listpages created_by="=" order="@URL|{$order}" category="-fragment -component" tag="-translation +goi-format -co-authored" perPage="250"]]
-[[div class="preview yes"]]
-**%%title_linked%%**
- +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
-//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
-//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
-[[div class="bold"]]
-[[collapsible show="+ Translations" hide="- Translations"]]
-[[iframe http://interwiki.scpdb.org/?wiki=scp-wiki&lang=en&page=%%category%%:%%name%%]] 
-[[/collapsible]]
-[[/div]]
-@@@@
-[[/div]]
-[[/module]]
-
-[!-- Others Block: Auto disabled if none --]
-[[module Listpages created_by="=" category="-fragment -component" tag="-scp -tale -goi-format -co-authored" limit="1"]]
-[[div style="text-align: center;"]]
------
-++ Others
------
-[[/div]]
-[[/module]]
-
-[[module Listpages created_by="=" order="@URL|{$order}" category="-fragment -component" tag="-scp -tale -goi-format -co-authored" perPage="250"]]
-[[div class="preview yes"]]
-**%%title_linked%%**
- +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
-//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
-//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
-[[div class="bold"]]
-[[collapsible show="+ Translations" hide="- Translations"]]
-[[iframe http://interwiki.scpdb.org/?wiki=scp-wiki&lang=en&page=%%category%%:%%name%%]] 
-[[/collapsible]]
-[[/div]]
-@@@@
-[[/div]]
-[[/module]]
 
 [[/tab]]
 [[/tabview]]
