@@ -166,6 +166,14 @@ This tooltip hover effect is adapted from LurkD's code on http://www.scp-wiki.ne
     padding: 0;
 }
 
+.video-info {
+    content: " ";
+    width: 100%;
+    text-align: center;
+    bottom: 2em;
+    margin-bottom: 1em;
+}
+
 [[/module]]
 
 [[div class="rate"]]
@@ -479,9 +487,7 @@ People have made fan work of my stuff, which is super awesome of them! Here are 
 
 Readthrough of [[[SCP-3448-J]]] by [[*user TheeSherm]]! Check out their [https://www.youtube.com/channel/UC6RiHFLxsdcUWQZsfDi1oOg YouTube channel] for more!
 
-[[div id="myTextMessageConvoDivReply" style="color:white; border-radius: 25px; background: firebrick; width: 500px; height: 100px; margin-top:0; margin-right:auto; margin-bottom:0; margin-left:auto; display: inline-block"]]
 = By TheeSherm: [[[TheeSherm Site-42|Author Page]]] | [https://www.youtube.com/channel/UC6RiHFLxsdcUWQZsfDi1oOg Channel]
-[[/div]]
 [[=]]
 [[=]]
 [[html]]
@@ -1009,6 +1015,10 @@ Cal looks at the bowl and a frown appears on his face. "Oh. The candy corn's all
 This tab is just for testing code or whatever that I can't test on a sandbox.
 
 [!--[[include :scp-la:scp-la-002]]--]
+
+[[div class="info-container"]]
+Hi.
+[[/div]]
 
 [[/tab]]
 [[/tabview]]
