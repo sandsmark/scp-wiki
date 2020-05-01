@@ -3,6 +3,18 @@ title:Calibri Bold's Mega Cool Author Page
 
 [[module css]]
 
+span.rate-points::after {
+    content: "+ 5000";
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+    font-size: 12.8px;
+}
+
+span.number {
+    display: none;
+}
+
 :root {
     --header-title: "Historical Thickness";
     --header-subtitle: "Crowned the code of SCP-194";
@@ -141,7 +153,7 @@ display:none
 
 [[div class="infobox"]]
 [[=]]
-[[include :topia:sp-rate-info-2 start= --]|end= --]|info=none|bhl=true]]
+[[module Rate]]
 [[size large]]__**Random**__[[/size]]
 [[module Listpages created_by="=" tag="-author -workbench -contest -splash -supplement -translation" category="-fragment -component" limit="1" order="random"]]
 [[[*%%link%%|[[#expr (%%total%%+1)]] Articles]]] \
