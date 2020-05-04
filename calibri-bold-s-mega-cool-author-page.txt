@@ -1022,7 +1022,7 @@ This tab is just for testing code or whatever that I can't test on a sandbox.
 **+ / - :** [[#expr ((%%rating%%+%%rating_votes%%)/2)]]/[[#expr ((%%rating_votes%%-%%rating%%)/2)]]
 %%commented_at|%d, %m, %y%%
 %%date%%
-[[#ifexpr %d, %m, %y%% = 15, 04, 20 | true | false ]]
+[[#ifexpr %d, %m, %y = 15, 04, 20 | true | false ]]
 [[/div]]
 [[/module]]
 
