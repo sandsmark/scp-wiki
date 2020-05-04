@@ -1019,7 +1019,7 @@ This tab is just for testing code or whatever that I can't test on a sandbox.
 [[module Listpages created_by="=" order="@URL|{$order}" category="-fragment -component" tag="-scp -tale -goi-format -co-authored" perPage="250"]]
 [[div class="preview yes"]]
 **%%title_linked%%**
-**Upvote %:** [[#expr ((%%rating%%+%%rating_votes%%)/(%%rating%%-%%rating_votes%%))*100]]%
+**Upvote %:** [[#expr ((%%rating%%+%%rating_votes%%)/%%rating_votes%%)*100]]%
 [[/div]]
 [[/module]]
 
