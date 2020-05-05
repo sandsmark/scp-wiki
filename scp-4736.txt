@@ -1,0 +1,929 @@
+title:DEAD WEIGHT ≡ DON'T KILL THE VIBE
+[[module CSS]]
+@import url("/nagiros/code/1");
+
+#page-content a {
+  font-weight: bold;
+}
+.excerpt hr {
+  margin: 50px auto
+}
+#page-content blockquote {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.collapsible-block-link, .collapsible-block-unfolded-link, .collapsible-block-folded {
+  text-align: center;
+}
+.collapsible-block {
+  margin-top: 50px;
+}
+.collapsible-block-unfolded-link {
+  margin-bottom: 50px;
+}
+.collapsible-block-folded, .collapsible-block-unfolded-link {
+  font-size: 125%;
+}
+.dialogue {
+  margin: 25px 0;
+  padding-left: 2%;
+  border-left: 3px solid white;
+}
+table.wiki-content-table td:nth-child(1) {
+  text-align: center;
+}
+span:not([class]):not([style]) > sup.footnoteref:first-child > a.footnoteref:before,
+sup.footnoteref > a.footnoteref:before {
+  content: "[";
+}
+span:not([class]):not([style]) > sup.footnoteref:first-child > a.footnoteref:after,
+sup.footnoteref > a.footnoteref:after {
+  content: "]";
+}
+.hubbox a {
+  background: rgb(38, 38, 38);
+  border: 4px solid #aaa;
+  margin: 125px 0 0 0;
+  transition: 0.75s;
+  display: block;
+  padding: 15px;
+  font-size: 105%;
+  display: inline-block;
+}
+.hubbox a:hover {
+  background: #141414;
+  border: 4px solid #141414;
+  cursor: none;
+}
+ 
+/*
+    Night Rush Theme
+    [2020 Wikidot Theme]
+    Created for The Crab Den by Nagiros
+    Obviously based on the Sigma-9 Theme for the SCP Foundation by Aelanna
+*/
+ 
+/* COMMON */
+ 
+#page-title {
+    border-color: #f2f2f2;
+}
+h1, #page-title {
+    color: #f2f2f2;
+}
+ins, del {
+    color: black;
+}
+a, #side-bar a:visited {
+    color: #8870DF;
+}
+a:visited {
+  color: #6b51c9;
+}
+a.newpage {
+    color: #cc9cff;
+}
+ 
+body {
+    background: #141414;
+    color: #c7c7c7;
+}
+div#container-wrap {
+    background-image: url(http://nagiros.wdfiles.com/local--files/component%3Atheme/nightrush-header.png);
+}
+ 
+/* HEADER */
+#header {
+    background-image: url(http://scp-wiki.wdfiles.com/local--files/component%3Ascp-trans-pride/TransSCPlogo.png);
+}
+#login-status ul a {
+    color: #f2f2f2;
+    background: #1a1a1a;
+    border-color: #f2f2f2;
+}
+#login-status ul a:hover {
+    color: #e6e6e6;
+}
+ 
+/* Makes the code readable */
+.hl-identifier, .hl-code, .hl-brackets {
+    color: #f2f2f2;
+}
+ 
+/* TOP MENU */
+#top-bar a {
+    color: #e6e6e6;
+}
+ 
+#top-bar ul li ul {
+    border-color: #ffffff;
+}
+ 
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    background: #262626;
+    color: #e6e6e6;
+}
+ 
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+    border-top-color: #ffffff;
+}
+ 
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: #000000;
+    color: #e6e6e6;
+}
+#top-bar ul li ul a, #top-bar a:hover {
+    color: #8870DF;
+}
+ 
+/* SIDE MENU */
+div#side-bar div.side-block {
+    background: rgb(24, 24, 24) !important;
+    box-shadow: 0 2px 6px #404040;
+    border-radius: 0px;
+    border-width: 2px;
+    border-color: white;
+}
+ 
+div#side-bar div.side-block div.heading {
+    color: #f2f2f2;
+    border-color: #f2f2f2;
+}
+ 
+/* Recolors the image bullet points in the side-bar */
+.side-block .menu-item > .image {
+    filter: hue-rotate(335deg) grayscale(0.1);
+}
+#side-bar {
+    background: transparent;
+}
+#side-bar a, #side-bar a:visited{
+    color: #f2f2f2;
+}
+#side-bar div.menu-item.inactive a {
+    color: #8870DF;
+}
+#side-bar div.menu-item .sub-text {
+    color: #666;
+}
+ 
+/*FOOTNOTES */
+.hovertip {
+    width: 20em;
+    padding: 0.5em;
+    border: 1px solid #8870DF !important;
+    border-radius: 0.5em;
+    background-color: #000000ee !important;
+    box-shadow: 0 0 6px 1px #000000aa;
+    z-index: 100;
+}
+ 
+.hovertip .f-heading {
+    color: #8870DF;
+}
+ 
+/* Page Rating Module Customizations */
+.page-rate-widget-box .rate-points,
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a,
+.page-rate-widget-box .cancel a {
+    background-color: #000000 !important;
+    border: 0;
+    color: white;
+}
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    background-color: #000000;
+    color: white;
+}
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background-color: #000000;
+    border: 0;
+    border-left: 1px solid #8870DF;
+    font-weight: bold;
+}
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background: #000000;
+    color: white;
+}
+.page-rate-widget-box .cancel {
+    background-color: #000000;
+    border: 0;
+    border-left: 1px solid #8870DF;
+}
+.page-rate-widget-box .cancel a:hover {
+    background: #000000;
+    color: white;
+}
+ 
+/* MISC */
+ 
+hr {
+    background-color: #f2f2f2;
+}
+ 
+.license-area a, .page-watch-options a, .page-options-bottom a, .edit-help-34 a {
+  color: white;
+}
+ 
+#edit-page-title {
+  border: 1px solid #CCC;
+  background: #262626;
+  text-align: center;
+}
+ 
+#edit-page-textarea {
+  background-color: #242424;
+  border-color: #CCC;
+  color: #f2f2f2;
+}
+ 
+#edit-page-comments {
+  background-color: #2e2e2e;
+  border-color: #CCC;
+  color: #c7c7c7;
+}
+
+#page-tags-input, #parent-page-name, #move-new-page-name {
+  border-color: #CCC;
+}
+ 
+/* inputs */
+ 
+input.text, input.button,
+#search-top-box-input,
+#search-top-box-form input[type=submit],
+div.buttons input, input.button, button, file, a.button {
+    background: transparent;
+    color: #f2f2f2;
+    border: 1px solid #ffffff;
+    border-radius: 0;
+    font-size: 1em;
+    outline: 0;
+}
+ 
+div.buttons input:hover, div.buttons input:focus,
+input.button:hover, input.button:focus,
+button:hover, button:focus,
+file:hover, file:focus,
+a.button:hover, a.button:focus {
+    border-color: #ffffff;
+    background: transparent;
+    color: #f2f2f2;
+}
+ 
+input.text:hover, input.button:hover,
+input.text:focus, input.button:focus,
+#search-top-box-input:hover,
+#search-top-box-input:focus,
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    color: #f2f2f2;
+    background: transparent;
+    border: 1px solid #ffffff;
+    outline: 0;
+}
+ 
+/* EDITING WINDOWS */
+.owindow {
+    color: #000;
+}
+ 
+.owindow h1, .owindow h2, .owindow h3, .owindow h4, .owindow h5, .owindow h6 {
+    color: #000;
+}
+ 
+.owindow a {
+    color: #272727;
+}
+ 
+table.page-files .highlight {
+    background-color: #272727;
+}
+ 
+input.text {
+    border: 1px dashed #000;
+    color: #fff;
+}
+ 
+input.text:focus {
+    border: 1px dashed #000;
+    color: #fff;
+}
+ 
+input.text:hover {
+    border: 1px dashed #000;
+    color: #fff;
+}
+ 
+div#lock-info {
+    background-color: #262626;
+}
+ 
+/* tag style */
+ 
+.page-tags span {
+  border-top: 0;
+}
+.page-tags span a {
+    display: inline-block;
+    margin: 0 0 .5rem .75rem;
+    padding: 0.1875rem 0.3125rem 0.1875rem 0;
+    height: 0.8125rem;
+    line-height: 13px;
+    font-size: 11px;
+    background: #c451c4;
+    color: #fff;
+    text-decoration: none;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 0.25rem;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius: 0.25rem;
+}
+.page-tags span a:before, .page-tags span a:after {
+    content: "";
+    float: left;
+    position: relative;
+}
+.page-tags span a:before {
+    padding:0 0.0625rem 0.1875rem;
+    top: -0.1875rem;
+    left: -0.625rem;
+    width: 0;
+    height: 0;
+    border-color: transparent #c451c4 transparent transparent;
+    border-style: solid;
+    border-width: 0.5rem 0.5rem 0.5rem 0;
+}
+ 
+.page-tags span a:after {
+    top: 0.28125rem;
+    left: -0.5rem;
+    width: 0.25rem;
+    height: 0.25rem;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 0.125rem;
+    background: rgb(252, 252, 252);
+    -moz-box-shadow: -1px -1px 2px #004977;
+    -webkit-box-shadow: -1px -1px 2px #333;
+    box-shadow: -0.0625rem -0.0625rem 0.125rem rgb(48, 48, 52);
+}
+ 
+/* Blockquote Mimic Dic */
+blockquote, div.blockquote {
+    border: 2px solid #f2f2f2;
+    background-color: #000000;
+}
+ 
+/* webkit scrollbar */
+ 
+::-webkit-scrollbar-thumb {
+  background: #420042;
+  border-radius: 5px;
+  border: 1px solid #c7c7c7;
+}
+[[/module]]
+
+[[=]]
+[[module Rate]]
+[[/=]]
+
+**Item №:** SCP-XXXX
+
+**Anomaly Class:** Thaumiel-numen[[footnote]] Antiquated Divinity-Type subclass repurposed out of respect for the deceased. [[/footnote]]
+
+**Object Class:** Decommissioned (Informal)
+
+**Special Containment Procedures:** Containment has been rendered unnecessary by Operation Astaroth. The corpse once held by Foundation High Command is now buried in an Arizonan field per the deceased's request.
+
+Previous containment procedures have been supplanted in the wake of Operation Astaroth. Give your thanks to the deceased and then depart.
+
+**Description:** The deceased[[footnote]]Hereafter cataloged as SCP-XXXX out of formality.[[/footnote]] was a Class-V Manufactured Theo-Weapon of transhuman origin. Its last will and testament indicate that it answered to the name "Robin" and was aged twenty-four[[footnote]] Standard Sol-revolution year. [[/footnote]] upon death. However, this information was rendered inaccurate upon its creation.
+
+SCP-XXXX had access to vast energies[[footnote]] Gamma-type controlled power emissions; baseline for Class-V Theo-Weapons produced in the modern era. [[/footnote]] while under Foundation custody as a result of its inextricable self-relation. This self-relation extended to all aspects of its intersection with hyper-conceptual reality (AKA the Infosphere, the post-dormant Noosphere, the aggregate deific realm), rendering all attempted metaphysical assaults ineffective so long as SCP-XXXX understood itself to be immune.
+
+Per accepted workings of forced apotheosis, SCP-XXXX's previous identity was retroactively purged from hyper-conceptual reality and repurposed into a weapon useful to the Foundation. Following the implementation of a [[[SCP-2578 | hypnestic]]][[footnote]] An injection-based method of altering and manipulating human thought. [[/footnote]]-loaded subdermal [[[SCP-1463|auto-injector]]][[footnote]] Dose Alpha-Cameo; baseline for Class-V Theo-Weapons produced in the modern era. [[/footnote]], it performed certain actions guided by Foundation Central Control such that Operation Astaroth became feasible.
+
+Accolades have been rendered unnecessary by Operation Astaroth. The following remain unawarded to the deceased:
+
+* Foundation Medal of Honor (Bravery, Accomplishment, Control)
+* Foundation Consolation for Theft of Human Goodness (Irreversible)
+* General human recognition/appreciation (Rendered unnecessary)
+* Foundation Recognition of Theocide (First Class)
+
+[[div class="excerpt"]]
+
+------
+
+[[=]]
+//Tell me again how you died:
+How you saved the world one last time,
+How you conquered the future
+And came back alive,
+But withered at the end.//
+
+//Tell me how the world moved on:
+How the Foundation left
+Your spark to
+Smolder
+And
+Des-
+cend.//
+[[/=]]
+
+------
+
+[[/div]]
+
+[[collapsible show="[DATA LOCKED]" hide="[DATA RELEASED]"]]
+[[div class="blockquote" style="box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
+= [[size 125%]]**<EXPLORATION_LOG.XXXX (INITIAL)>**[[/size]]
+
+@@ @@
+
+**{{DATE:}}** 12/31/[[[SCP-4755 | 2102]]] | 00:00 - 00:47
+
+**{{PERSONNEL INVOLVED:}}** SCP-XXXX, Sr. Researcher Preston Bracks (SiteCommand)
+
+**{{STATION:}}** Site-873
+
+**{{PURPOSE:}}** The necessity of the operation was confirmed by Overwatch Command on May 26, 2005, in order to achieve optimal containment. During the initial stages of the operation, SCP-XXXX was housed within Site-873's Medical Bay. A paratechnological scrying-tool was utilized to view its surroundings once it escaped baseline reality; its remains stayed unmoving within Site-873.
+
+@@ @@
+
+----
+= **{{<BEGIN LOG>}}**
+----
+
+@@ @@
+
+**[00:00]** //TABULA-RASA-Grade amnestic//[[footnote]] A primative chemical-based injection utilized prior to Noospheric Scrubbing technology. [[/footnote]] //applied. Subject forgets.//
+
+[[div class="dialogue"]]
+**SiteCommand:** Greetings, SCP-XXXX. You have a job to do.
+
+**SCP-XXXX:** A job?
+
+**SiteCommand:** It does not benefit you to lie. If you continue, the operation will have to be postponed.
+[[/div]]
+
+**[00:01]** //FOOL-Grade hypnestic injected. Subject develops cognition-dependent immunity to conceptual jamming; Site-873 sustains minor conceptual damage for the duration.//
+
+[[div class="dialogue"]]
+**SiteCommand:** Look at the ground next to your bed. You have been supplied with a firearm, a flashlight, and a dictionary of expanded vocabulary; please determine which you wish to take.
+
+**SCP-XXXX:** I don't know that word — "firearm"?
+
+**SiteCommand:** A weapon.
+
+**SCP-XXXX:** I'll... I'll take the dictionary, I guess. Is that alright?
+[[/div]]
+
+**[00:02]** //SiteCommand confers with attending personnel regarding subject's unsatisfactory decision. The operation is allowed to continue.//
+
+[[div class="dialogue"]]
+**SCP-XXXX:** Listen, if you want me to take the weapon or the flashlight, I can do that.
+
+**SiteCommand:** Incorrect. The choice has been made, and you do not live in a world without consequences.
+
+**SCP-XXXX:** Can I, uh, speak with someone else? I feel like I need some clarification on what I'm doing here.
+
+**SiteCommand:** All complaints should have been filed before the operation began. Now, you have a job to do.
+[[/div]]
+
+**[00:03]** //The operation proper begins. Site-873's scrying-tool indicates that subject is transported to the FIRST GATE, equipped with a Foundation-issue Merriam-Webster dictionary. Ironworks and labors of absurdity rise before her into an acrid sky. The GATE and its wall are damaged irreparably  — inoperabilities rent into firmament beyond. Before her stand two AVIAN-Type Astaroth-Obstructors, dressed in soldiers' garb.//
+
+//The leftmost guardian speaks, its words unobstructed by its faux bird-mask.//
+
+[[div class="dialogue"]]
+**Guardian-1:** Ah, another one sent from the Deep. Shall we test its personhood, friend?
+
+**Guardian-2:** Yes, yes, show her 'round!
+
+**Guardian-1:** Hmm... a blank slate once again. Yet more dead weight; pitiful creature.
+
+**Guardian-2:** No memories to her name? Twirly-bird! Gate-stopper!
+
+**Guardian-1:** Take up arms, my compatriot. We will dispatch this one with haste.
+[[/div]]
+
+**[00:03]** //Both AVIAN-Type Astaroth-Obstructors unsheath halberds of fluctuating steel. SiteCommand remains unaffected.//
+
+[[div class="dialogue"]]
+**SCP-XXXX:** Dead... dead weight?
+
+**SiteCommand:** Of course.
+[[/div]]
+
+**[00:04]** //MAGICIAN-Grade hypnestic injected. Subject's form becomes intolerable to both AVIAN-Type Astaroth-Obstructors. Post-injection, they immolate before her; the halberds drop to the ground, useless.//
+
+[[div class="dialogue"]]
+**SCP-XXXX:** Shit!
+
+**SiteCommand:** Check your soul, SCP-XXXX.
+
+**SCP-XXXX:** Some of that ash got in my eye. Damnit.
+
+**SiteCommand:** You have surpassed the deadline for complaints. Continue through the Gate.
+[[/div]]
+
+**[00:05]** //The FIRST GATE is cleared. Subject enters an aggregate steel-spike structure amidst a barren field. Each spire is irregularly placed and several thousand times taller than subject.//
+
+[[div class="dialogue"]]
+**SCP-XXXX:** So, um, what's my purpose here? Are you going to keep injecting me with whatever that stuff is?
+
+**SiteCommand:** You were informed of your purpose before the operation's initiation.
+
+**SCP-XXXX:** I just... I don't think I understand what's happening.
+
+**SiteCommand:** Would you like to file for clarity of purpose?
+
+**SCP-XXXX:** I guess? Do I need to fill out a form?
+
+**SiteCommand:** The question confuses us. Look to the steel-spike structure at your right.
+[[/div]]
+
+**[00:07]** //Subject approaches the structure and notes lettering inscribed on its base.//
+
+[[div class="dialogue"]]
+**SCP-XXXX:** I see words! Did you write them?
+
+**SiteCommand:** No. They have existed since long before our organization.
+
+**SCP-XXXX:** "Mail a letter to Site-001 requesting information about the ongoing Operation." And then some black boxes, but then it says... "No mail sent to Site-001 will be recognized."
+
+**SiteCommand:** Is there a problem?
+
+**SCP-XXXX:** Why does it say two different things here? Oh, wait... are these two different forms? Which one am I supposed to follow?
+
+**SiteCommand:** The question confuses us.
+[[/div]]
+
+**[00:08]** //Subject steps back and notes that the inscriptions continue the entire length of the steel-spike structure.//
+
+[[div class="dialogue"]]
+**SCP-XXXX:** Are these all... different forms?
+
+**SiteCommand:** In order to prevent knowledge of clarity from being leaked, several/no false files have been created alongside the true file/files. Revealing the true nature/natures of clarity to the general public is cause for execution, except as required under ████-███-██████.
+
+**SCP-XXXX:** Those weren't words. You just spoke static to me.
+
+**SiteCommand:** Complaints will not be accepted at this time.
+
+**SCP-XXXX:** Can't I just... hold on.
+[[/div]]
+
+**[00:09]** //Subject removes her dictionary, and flips to the "C" section.//
+
+[[div class="dialogue"]]
+**SCP-XXXX:** There we go, I've got it right here. "Clarity of purpose; noun-phrase: a clearly stated purpose."
+
+**SiteCommand:** Correct.
+
+**SCP-XXXX:** That's unhelpful.
+
+**SiteCommand:** You were wrong to expect anything else. Such a useless endeavor.
+[[/div]]
+
+**[00:35]** //Subject proceeds through the landscape of thorns. The journey is long and tedious, without significant progress. Her hands begin to twitch.//
+
+[[div class="dialogue"]]
+**SCP-XXXX:** Someone's watching.
+[[/div]]
+
+**[00:39]** //Command is silent. Subject continues forward as the spasms increase in intensity.//
+
+[[div class="dialogue"]]
+**SCP-XXXX:** Someone's watching me from the spikes. Do you know who it is? Or are you not allowed to tell me?
+[[/div]]
+
+**[00:42]** //Subject is forced to restrain her hands to restrict the twitching sensation.//
+
+[[div class="dialogue"]]
+**SCP-XXXX:** Hello? Something's wrong. This isn't a complaint.
+
+**SiteCommand:** Is it an objection?
+
+**SCP-XXXX:** How is that any different from... Yes. An objection.
+
+**SiteCommand:** Then conceptual integrity has begun to deteriorate. Run.
+[[/div]]
+
+**[00:43]** //Subject hesitates before beginning to sprint through the landscape. A hill becomes visible on the horizon, upon which rests a wall several kilometers deep.//
+
+**[00:44]** //Subject halts abruptly, still several leagues from the SECOND GATE.//
+
+[[div class="dialogue"]]
+**SiteCommand:** Explain yourself.
+
+**SCP-XXXX:** There's something standing right in front of me but I can't see it.
+
+**SiteCommand:** MANOS-Type Astaroth-Obstructor noted. It seems reality has begun to fail; we are doing very good work. Proceed forward.
+
+**SCP-XXXX:** What the fuck is wrong with you? I just said I can't move.
+
+**SiteCommand:** Please remain professional. Your words will be recorded for generations to come.
+
+**SCP-XXXX:** Professional? Bureaucratic assholes — alright, I'll speak your language. I'd like to file an objection against whatever's in front of me.
+
+**SiteCommand:** Are you certain? Such an action would be highly praised by the Ethics Committee.
+
+**SCP-XXXX:** Ethics Co... forget it. Yes. Inject me with something.
+
+**SiteCommand:** That would be ill-advised. Procedures overridden and protocols ignored: Tier-VI entity introduced into Tier-I.
+[[/div]]
+
+**[00:46]** //Subject looks to the sky, and notes a humanoid form which blocks the crescent sun.//
+
+[[div class="dialogue"]]
+**SCP-XXXX:** Wait, that's not what I asked. What is that?
+
+**SiteCommand:** Irantu.
+
+**SCP-XXXX:** Who?
+[[/div]]
+
+**[00:47]** //Landscape scorched. Contact with subject is totally lost.//
+
+@@ @@
+
+----
+= **{{<END LOG>}}**
+----
+
+@@ @@
+[[/div]]
+
+[[div class="blockquote" style="box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
+= [[size 125%]]**<EXPLORATION_LOG.XXXX (PENULTIMATE)>**[[/size]]
+
+@@ @@
+
+**{{DATE:}}** 12/31/2102 | 03:25 - 18:43
+
+**{{PERSONNEL INVOLVED:}}** SCP-XXXX, Sr. Researcher Preston Bracks (SiteCommand)
+
+**{{STATION:}}** Site-873
+
+**{{PURPOSE:}}** See above.
+
+@@ @@
+
+----
+= **{{<BEGIN LOG>}}**
+----
+
+@@ @@
+
+**[03:25]** //One-way connection with SiteCommand is re-established. Audio-visual data originating from subject becomes viewable, but none from Site-873 can be communicated. Audio-visual data is highly corrupted and remains indiscernible.//
+
+[[div style="margin: 25px 0"]]
+
+------
+
+[[/div]]
+
+**[03:55]** //Distortion clears, replaced by light and intermittent static. Subject is traveling through a valley which breaths with the wind, upturning sand into violent storms. As it enters the air, the sand congeals and reshapes into many self-propelled hands.//
+
+**[03:58]** //A particularly violent gust of wind blows several hands into the subject, causing her notable injury and disorientation. She collapses, apparently believing that she is helpless.//
+
+**[03:59]** //PRIESTESS-Grade hypnestic injected. The sand and debris part before subject.//
+
+[[div class="dialogue"]]
+**SCP-XXXX:** Ah... I thought you'd be back eventually.
+[[/div]]
+
+**[04:00]** //The distortion returns, and contact with SiteCommand is functionally lost. Hyper-real interference from the surrounding storm is suspected but not confirmed.//
+
+[[div style="margin: 25px 0"]]
+
+------
+
+[[/div]]
+
+**[04:11]** //Visual connection is re-established, but audio remains absent. Subject stands at the end of the valley, facing a vast ocean bordered by a sandy beach. Subject turns to view a mechanical contraption partially buried in the sand — all metal, encroached by sea-weed, battered and dented. The air thrums around it, as though it would move, but it moves not. The shattered corpse of some unremarkable thing lays beside it.//
+
+**[04:12]** //Subject removes its dictionary and flips to the "M" section. She then appears to vocalize; lip-readings indicate the following dialogue to be accurate://
+
+[[div class="dialogue"]]
+**SCP-XXXX:** So. That's where you hid the heart.
+[[/div]]
+
+**[04:13]** //Distortion returns. Connection is functionally lost.//
+
+[[div style="margin: 25px 0"]]
+
+------
+
+[[/div]]
+
+**[016:23]** //One-way audio-visual connection is re-established. Subject is located in an unknown forest, leaning against a tree and reading the dictionary. The trees are of cyclopean proportions, over-stimulated by life. Subject clutches something unknown in her palm.//
+
+[[div class="dialogue"]]
+**SCP-XXXX:** Are you back? Inject me with something if you are.
+[[/div]]
+
+**[16:24]** //EMPRESS-Grade hypnestic injected. The forest surrounding subject is consumed in a fire which spreads from her feet. Several unidentified humanoid entities fall from the treetops and run from the scene. Subject smiles.//
+
+[[div class="dialogue"]]
+**SCP-XXXX:** I've been doing some reading since we last spoke. This book taught me a lot about weapons, especially the ones you developed. And every firearm needs a holder.
+[[/div]]
+
+**[16:25]** //EMPEROR-Grade hypnestic injected. Subject is compelled to stand and move forward.//
+
+[[div class="dialogue"]]
+**SCP-XXXX:** I think I'm called a Theo-Weapon: very succinct, very straight-forward. That's not very like you, is it? You seem like you're all about complications and wrinkles in plans.
+[[/div]]
+
+**[16:25]** //HIEROPHANT-Grade hypnestic injected. Subject is compelled to walk to its final destination. As she does, one of the entities tails her, departing between the remains of trees; on its forehead is branded the symbol of a hand.//
+
+[[div class="dialogue"]]
+**SCP-XXXX:** I think I'm understanding now. I think I'm understanding what makes you tick.
+[[/div]]
+
+**[16:26]** //The entity rushes towards the subject from behind, but she turns and presses the object in her palm to its forehead. The enemy disintegrates, and subject drops the metallic gear in her hand to wipe her eye.//
+
+[[div class="dialogue"]]
+**SCP-XXXX:** Damn, that stings.
+[[/div]]
+
+**[16:27]** //Distortion returns. Connection is totally lost.//
+
+@@ @@
+
+----
+= **{{<END LOG>}}**
+----
+
+@@ @@
+[[/div]]
+
+[[div class="blockquote" style="box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
+= [[size 125%]]**<EXPLORATION_LOG.XXXX (FINAL)>**[[/size]]
+
+@@ @@
+
+**{{DATE:}}** 12/31/2102 | 23:50 - 24:00
+
+**{{PERSONNEL INVOLVED:}}** SCP-XXXX, Sr. Researcher Preston Bracks (SiteCommand)
+
+**{{STATION:}}** Site-873
+
+**{{PURPOSE:}}** See above.
+
+@@ @@
+
+----
+= **{{<BEGIN LOG>}}**
+----
+
+@@ @@
+
+**[23:50]** //Total connection is re-established with Site-873. Subject has entered the sewer system beneath the FINAL GATE and trudges through the dark. Every seven steps there is damage to the brick walls which suggests recent and violent entry.//
+
+[[div class="dialogue"]]
+**SCP-XXXX:** It's almost New Year's; aren't you cutting it a little close?
+
+**SiteCommand:** This ending was pre-determined. Thank you for persisting despite the technical difficulties.
+
+**SCP-XXXX:** Of course, Bracks. Your name is Bracks, right? Preston Bracks?
+
+**SiteCommand:** I'm not at the liberty to discuss such a thing.
+
+**SCP-XXXX:** So you're not all-powerful, then. You work for someone, who works for someone, who works for someone else, who tells you what to say. Question is: Who's at the top?
+[[/div]]
+
+**[23:51]** //There is a loud sucking sound as the sewage divulges a human-adjacent corpse in front of subject. Its skin is scorched and torn, and on its forehead is branded the Foundation logo.//
+
+[[div class="dialogue"]]
+**SCP-XXXX:** Is this... another one of your creations?
+
+**SiteCommand:** A failure, yes. One of many in an infinite upward stream.
+
+**SCP-XXXX:** And I'm the last one you're sending.
+
+**SiteCommand:** You are the most powerful thing we have created, though your power may have been wasted. You took the dictionary, after all.
+[[/div]]
+
+**[23:52]** //Subject steps over the corpse and laughs, approaching the end of the sewage tunnel.//
+
+[[div class="dialogue"]]
+**SCP-XXXX:** I saw a lot of crazy shit out here in the concept-space: mountains of rotting flesh, stars torn from the sky, a Foundation insignia burning in the Earth's core with black fire. Can you say the same?
+[[/div]]
+
+**[23:53]** //At the end of the tunnel is a stairwell, leading upwards towards an unstated victory.//
+
+[[div class="dialogue"]]
+**SCP-XXXX:** You say my words are being recorded? I don't doubt it. You'll shove it into some archive and call it a job well done. It'll trade hands a dozen times, but no one will read it. It's a drop in the proverbial, conceptual, essophysical bucket.
+[[/div]]
+
+**[23:54]** //Subject ascends the stairs, tracing a finger over the hand-symbols on the wall.//
+
+[[div class="dialogue"]]
+**SCP-XXXX:** And I'm fine with that. Maybe I don't want to mean anything. Maybe I just want to help the Foundation. Who's going to stop me?
+[[/div]]
+
+**[23:55]** //LOVERS-Grade hypnestic injected. No effect is noted.//
+
+**[23:56]** //Subject exits the stairwell and enters the THRONE ROOM. The FINAL GATE is seated on the central throne, framed by soaring marble and ornate gems embedded throughout. Its skin rots atop the gilded chair, muscles atrophied and long-dead. It is UNIVERSALIS INCARNATUM//.
+
+//Subject approaches the throne and speaks to the FINAL GATE, still holding the dictionary.//
+
+[[div class="dialogue"]]
+**SCP-XXXX:** Do you know what we are?
+[[/div]]
+
+**[23:57]** //The FINAL GATE struggles to speak. It remains near-gone.//
+
+[[div class="dialogue"]]
+**FINAL GATE:** I... am... last. Last... warden. Last... parent. Last... killed.
+[[/div]]
+
+**[23:58]** //The FINAL GATE emits liquid from its corroded sockets. Its orifices ooze, and its body shakes in turn with the THRONE ROOM. It reaches both of its hands towards subject in agonous supplication.//
+
+[[div class="dialogue"]]
+**FINAL GATE:** I am... wretched. I am... low.
+[[/div]]
+
+**[23:59]** //The THRONE ROOM begins to collapse, chunks of marble breaking away and dissipating into conceptual tiers as-of-yet unexplored. The FINAL GATE weeps. Its hands shake uncontrollably.//
+
+[[div class="dialogue"]]
+**FINAL GATE:** I am sorry... you did not want... my creation.
+[[/div]]
+
+**[24:00]** //Subject reaches the throne and raises the dictionary above her head. She strikes downwards, and the FINAL GATE'S form is shattered beneath the weight.//
+
+[[div style="margin: 25px 0"]]
+
+------
+
+[[/div]]
+
+//At this time, subject awakens within the Site-873 Medical Bay; the dictionary manifests at her bedside. Hurriedly, she removes the needles and tubes from her body and exits the bed.//
+
+[[div class="dialogue"]]
+**SiteCommand:** You've done well, SCP-XXXX.
+
+**SCP-XXXX:** No, you did well. You're the Foundation. Now, when does Astaroth begin?
+
+**SiteCommand:** Immediately. Although, there have been some complications.
+
+**SCP-XXXX:** I'm sure they can be fixed.
+[[/div]]
+
+//SiteCommand confers with attendant superiors before proceeding.//
+
+[[div class="dialogue"]]
+**SiteCommand:** They involve you, SCP-XXXX.
+
+**SCP-XXXX:** Oh. Hopefully nothing which would impact my usefulness, no?
+
+**SiteCommand:** Be patient.
+[[/div]]
+
+//SiteCommand exits the communication booth and walks to the Medical Bay entrance. He phases through the door and stands before subject.//
+
+[[div class="dialogue"]]
+**SCP-XXXX:** So, you're not just a voice. But you are... something. Not human.
+
+**SiteCommand:** You'll find very little of that here. It was quite the difficulty, creating a human such as yourself from scratch. You were, after all, our finest creation. Too fine. Too advanced. Too powerful.
+
+**SCP-XXXX:** Bracks, I'm under no delusions that you control everything I do. I read the definition of "hypnestic" in that diction —
+
+**SiteCommand:** We can't bring you with us, SCP-XXXX. We don't have the ability. Unfortunately, your work for the Foundation stops here.
+
+**SCP-XXXX:** I don't think I understand.
+
+**SiteCommand:** You were never meant to. Thank you for your service.
+[[/div]]
+
+//SiteCommand retrieves a non-anomalous firearm and unloads six bullets into subject's skull. Subject expires shortly thereafter due to purposeful vulnerability to antiquated weaponries.//
+
+[[div class="dialogue"]]
+**SiteCommand:** Astaroth begins now. Prepare yourselves; we ride at dawn.
+[[/div]]
+
+@@ @@
+
+----
+= **{{<END LOG>}}**
+----
+
+@@ @@
+[[/div]]
+
+[[=]]
+[[div class="hubbox"]]
++ [[[white space hub | (HUB)]]]
+[[/div]]
+[[/=]]
+
+[[/collapsible]]
