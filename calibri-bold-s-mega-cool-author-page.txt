@@ -11,10 +11,6 @@ title:Calibri Bold's Mega Cool Author Page
 .rate {
 }
 
-.bold{
-  font-weight: bold;
-}
-
 .infobox {
  display:inline-box;
  overflow:hidden;
@@ -32,104 +28,6 @@ title:Calibri Bold's Mega Cool Author Page
  transition: all 0.5s ease-out;
  border-radius: 25px;
 }
-
-.preview{
- color:grey;
- width:100%;
- display: inline-block;
- padding-left:1%;
- transition: box-shadow 1s ease-out;
-}
-
-.preview:hover{
- box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.19);
- transition: box-shadow 0.3s ease-out;
-}
-
-.preview.yes:hover, .preview.true:hover{
-  background: url('http://www.scp-wiki.net/local--files/calibri-s-mega-cool-art-page-it-s-mostly-just-icons-but-what/Mega%20Cool%20Background') 80% 50% fixed no-repeat;
-}
-
-.preview .span { 
- opacity: 0;
- pointer-events: none;
- transition: all 0.3s ease-in-out;
- text-overflow:ellipsis;
- position:fixed;
- z-index: 11;
- right: 1em;
- bottom: 2em;
- width:21%;
- width: calc(50vw - 520px);
- min-width: 250px;
- height:23%;
- padding:1%;
- float:top; 
- color:grey;
- text-size:0.9em;
- font-family:Segoe UI Light,Verdana,sans-serif;
-}
-
-.preview:hover .span { 
- opacity: 1;
- background-color:#ffffff;
-}
-
-.collab-header{
- display:none;
-}
-
-.imagepre{
- background:#fff;
- max-width:80%;
- position:absolute;
- right: 1em;
- bottom:calc(100% - 1em);
- box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.imagepre.\{\$image\} {
-display:none
-}
-
-.sortbar.no{
-display:none
-}
-
-@media screen and (max-width:1100px) {
-    .preview .span{
-    	display: none;
-    }
-    .infobox {
-        display: none;
-    	position: relative;
-    	margin: 1em auto;
-    	right: 0;
-    	bottom: 0;
-    }
-}
-
-@media screen and (min-width:1100px) {
-    .rate {
-        display: none;
-    }
-}
-
-#page-options-container {
- background: transparent;
- position: relative;
- z-index: 10;
-}
-
-#action-area { position: relative; z-index: 20; }
-
-.collab-header{
- display:initial;
-}
-
-.written_by.\{\$written_by\} {display: none;}
-
-.collabnote.\{\$note\} {display: none;}
 
 /*
 This tooltip hover effect is adapted from LurkD's code on http://www.scp-wiki.net/command-query-separation
@@ -271,150 +169,30 @@ I'm a very social young lad, and I do many social things.
 [[/tab]]
 [[tab My Articles]]
 
-[!-- SCP Block: Auto disabled if none --]
-[[module Listpages created_by="=" tag="-translation +scp -co-authored" category="-fragment -component" limit="1"]]
-[[div style="text-align: center;"]]
------
-++ SCPs
------
-[[/div]]
-[[/module]]
+[[include :scp-sandbox-3:component:calibri-author-module |inc-list= --]
+|background-image=http://www.scp-wiki.net/local--files/calibri-s-mega-cool-art-page-it-s-mostly-just-icons-but-what/Mega%20Cool%20Background
+|language=en
+|order=
+|shadow=
+]]
 
-[[module Listpages created_by="=" order="@URL|{$order}" tag="-translation +scp -co-authored" category="-fragment -component" perPage="250"]]
-[[div class="preview yes"]]
-**%%title_linked%%**
- +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
-//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
-//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
-[[div class="bold"]]
-[[collapsible show="+ Translations" hide="- Translations"]]
-[[iframe http://interwiki.scpdb.org/?wiki=scp-wiki&lang=en&page=%%category%%:%%name%%]] 
-[[/collapsible]]
-[[/div]]
-@@@@
-[[/div]]
-[[/module]]
+[[include :scp-sandbox-3:component:calibri-author-module |inc-coauthored-header= --]]]
 
-[!-- Tale Block: Auto disabled if none --]
-[[module Listpages created_by="=" tag="-translation +tale -co-authored" category="-fragment -component" limit="1"]]
-[[div style="text-align: center;"]]
------
-++ Tales
------
-[[/div]]
-[[/module]]
+[[include :scp-sandbox-3:component:calibri-author-module |inc-coauthored= --]
+|name=scp-194
+|feat=CityToast
+]]
 
-[[module Listpages created_by="=" order="@URL|{$order}" tag="-translation +tale -co-authored" category="-fragment -component" perPage="250"]]
-[[div class="preview yes"]]
-**%%title_linked%%**
- +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
-//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
-//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
-[[div class="bold"]]
-[[collapsible show="+ Translations" hide="- Translations"]]
-[[iframe http://interwiki.scpdb.org/?wiki=scp-wiki&lang=en&page=%%category%%:%%name%%]] 
-[[/collapsible]]
-[[/div]]
-@@@@
-[[/div]]
-[[/module]]
+[[include :scp-sandbox-3:component:calibri-author-module |inc-foreign-header= --]]]
 
-[!-- GoI Block: Auto disabled if none --]
-[[module Listpages created_by="=" category="-fragment -component" tag="-translation +goi-format -co-authored" limit="1"]]
-[[div style="text-align: center;"]]
------
-++ GoI Formats
------
-[[/div]]
-[[/module]]
-
-[[module Listpages created_by="=" order="@URL|{$order}" category="-fragment -component" tag="-translation +goi-format -co-authored" perPage="250"]]
-[[div class="preview yes"]]
-**%%title_linked%%**
- +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
-//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
-//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
-[[div class="bold"]]
-[[collapsible show="+ Translations" hide="- Translations"]]
-[[iframe http://interwiki.scpdb.org/?wiki=scp-wiki&lang=en&page=%%category%%:%%name%%]] 
-[[/collapsible]]
-[[/div]]
-@@@@
-[[/div]]
-[[/module]]
-
-[!-- Others Block: Auto disabled if none --]
-[[module Listpages created_by="=" category="-fragment -component" tag="-scp -tale -goi-format -co-authored" limit="1"]]
-[[div style="text-align: center;"]]
------
-++ Others
------
-[[/div]]
-[[/module]]
-
-[[module Listpages created_by="=" order="@URL|{$order}" category="-fragment -component" tag="-scp -tale -goi-format -co-authored" perPage="250"]]
-[[div class="preview yes"]]
-**%%title_linked%%**
- +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
-//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
-//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
-[[div class="bold"]]
-[[collapsible show="+ Translations" hide="- Translations"]]
-[[iframe http://interwiki.scpdb.org/?wiki=scp-wiki&lang=en&page=%%category%%:%%name%%]] 
-[[/collapsible]]
-[[/div]]
-@@@@
-[[/div]]
-[[/module]]
-
-[[module Listpages created_by="=" category="-fragment -component" tag="+co-authored" limit="1"]]
-[[div style="text-align: center;"]]
------
-++ Co-Authored
------
-[[/div]]
-[[/module]]
-
-[[module Listpages fullname="scp-194" category="*"]]
-[[div class="preview yes"]]
-**%%title_linked%%**
- +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
-[[span class="written_by **Calibri Bold and CityToast**"]]//Feat.// **CityToast** [[/span]][[span class="collabnote {$note}"]]{$note}[[/span]]
-//Latest comment:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%D %H:%M%%}}**
-//Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
-[[div class="bold"]]
-[[collapsible show="+ Translations" hide="- Translations"]]
-**Note: Due to various circumstances, these translations are likely inaccurate, and represent the previous SCP-194 designation, rather than the current one.**
-[[iframe http://interwiki.scpdb.org/?wiki=scp-wiki&lang=en&page=%%category%%:%%name%%]] 
-[[/collapsible]]
-[[/div]]
-@@@@
-[[/div]]
-[[/module]]
-
-[[div style="text-align: center;"]]
------
-++ Foreign
------
-[[/div]]
-
-[[div class="preview yes"]]
-**[http://scp-int.wikidot.com/calibri-bold-s-mega-cool-translator-page Calibri Bold's Mega Cool Translator Page]**
-//Language:// **English (Hosted on INT Branch)**
-//English Translation:// **N/A**
-[[/div]]
-
-[[div class="preview yes"]]
-**[http://scp-sga.wikidot.com/scp-sga-009 ᓭᓵ!¡-ᓭ⊣ᔑ-009]**
-//Language:// **Standard Galactic Alphabet**
-//English Translation:// **N/A**
-[[/div]]
-
-[[div class="preview yes"]]
-**[http://scp-la.wikidot.com/scp-la-002 SCP-LA-II]**
-//Language:// **Latin**
-//English Translation:// **[http://scp-int.wikidot.com/scp-la-002 SCP-LA-002]**
-[[/div]]
+[[include :scp-sandbox-3:component:calibri-author-module |inc-foreign= --]
+|name=scp-la-002
+|title=SCP-LA-II
+|branch=la
+|translation=http://scp-int.wikidot.com/scp-la-002
+|language=Latin
+|author-language=en
+]]
 
 [[/tab]]
 [[tab Author Commentary]]
