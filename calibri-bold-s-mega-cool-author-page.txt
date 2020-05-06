@@ -810,6 +810,166 @@ This tab is just for testing code or whatever that I can't test on a sandbox.
 
 [!--[[include :scp-la:scp-la-002]]--]
 
+------
+
+[[module Listpages created_by="=" category="-fragment -component" tag="+scp -tale -goi-format -co-authored" limit="1" order="random"]]
+[[div style="text-align: center;"]]
++ SCPs
+[[size 75%]]([[[*%%link%%|Random]]])[[/size]]
+-----
+[[/div]]
+[[/module]]
+
+[[module Listpages created_by="=" order="{$order}" category="-fragment -component" tag="+scp -tale -goi-format -co-authored" perPage="{$perpage}"]]
+[[div class="preview {$shadow}"]]
+++ **%%title_linked%%**
+[[div style="float:left; width: 45%; padding: 0 2%"]]
+[[size large]]**Rating:** +%%rating%%[[/size]]
+@@@@
+[[size large]]**Comments:** %%comments%%[[/size]]
+@@@@
+[[size large]]**+/- :** +[[#expr ((%%rating%%+%%rating_votes%%)/2)]]/-[[#expr ((%%rating_votes%%-%%rating%%)/2)]][[/size]]
+@@@@
+[[/div]]
+[[div style="float:left; width: 45%; padding: 0 2%"]]
+[[size large]]**Last Comment:** %%commented_by%%[[/size]]
+[[div class="translations"]]
+[[collapsible show="+ Tags" hide="- Tags"]]
+[[div class="unbold"]]
+%%tags_linked%%
+[[/div]]
+[[/collapsible]]
+@@@@
+[[collapsible show="+ Translations" hide="- Translations"]]
+[[iframe http://interwiki.scpdb.org/?wiki=%%site_name%%&lang={$language}&page=%%category%%:%%name%%]] 
+[[/collapsible]]
+@@ @@
+[[/div]]
+[[/div]]
+[[/div]]
+[[/module]]
+
+[[module Listpages created_by="=" category="-fragment -component" tag="-scp +tale -goi-format -co-authored" limit="1" order="random"]]
+@@ @@
+[[div class="top-border"]]
+[[/div]]
+[[div style="text-align: center;"]]
++ Tales
+[[size 75%]]([[[*%%link%%|Random]]])[[/size]]
+-----
+[[/div]]
+[[/module]]
+
+[[module Listpages created_by="=" order="@URL|{$order}" category="-fragment -component" tag="-scp +tale -goi-format -co-authored" perPage="{$perpage}"]]
+[[div class="preview {$shadow}"]]
+++ **%%title_linked%%**
+[[div style="float:left; width: 45%; padding: 0 2%"]]
+[[size large]]**Rating:** +%%rating%%[[/size]]
+@@@@
+[[size large]]**Comments:** %%comments%%[[/size]]
+@@@@
+[[size large]]**+/- :** +[[#expr ((%%rating%%+%%rating_votes%%)/2)]]/-[[#expr ((%%rating_votes%%-%%rating%%)/2)]][[/size]]
+@@@@
+[[/div]]
+[[div style="float:left; width: 45%; padding: 0 2%"]]
+[[size large]]**Last Comment:** %%commented_by%%[[/size]]
+[[div class="translations"]]
+[[collapsible show="+ Tags" hide="- Tags"]]
+[[div class="unbold"]]
+%%tags_linked%%
+[[/div]]
+[[/collapsible]]
+@@@@
+[[collapsible show="+ Translations" hide="- Translations"]]
+[[iframe http://interwiki.scpdb.org/?wiki=%%site_name%%&lang={$language}&page=%%category%%:%%name%%]] 
+[[/collapsible]]
+@@ @@
+[[/div]]
+[[/div]]
+[[/div]]
+[[/module]]
+
+[[module Listpages created_by="=" category="-fragment -component" tag="-scp -tale +goi-format -co-authored" limit="1" order="random"]]
+@@ @@
+[[div class="top-border"]]
+[[/div]]
+[[div style="text-align: center;"]]
++ GoI Formats
+[[size 75%]]([[[*%%link%%|Random]]])[[/size]]
+-----
+[[/div]]
+[[/module]]
+
+[[module Listpages created_by="=" order="{$order}" category="-fragment -component" tag="-scp -tale +goi-format -co-authored" perPage="{$perpage}"]]
+[[div class="preview {$shadow}"]]
+++ **%%title_linked%%**
+[[div style="float:left; width: 45%; padding: 0 2%"]]
+[[size large]]**Rating:** +%%rating%%[[/size]]
+@@@@
+[[size large]]**Comments:** %%comments%%[[/size]]
+@@@@
+[[size large]]**+/- :** +[[#expr ((%%rating%%+%%rating_votes%%)/2)]]/-[[#expr ((%%rating_votes%%-%%rating%%)/2)]][[/size]]
+@@@@
+[[/div]]
+[[div style="float:left; width: 45%; padding: 0 2%"]]
+[[size large]]**Last Comment:** %%commented_by%%[[/size]]
+[[div class="translations"]]
+[[collapsible show="+ Tags" hide="- Tags"]]
+[[div class="unbold"]]
+%%tags_linked%%
+[[/div]]
+[[/collapsible]]
+@@@@
+[[collapsible show="+ Translations" hide="- Translations"]]
+[[iframe http://interwiki.scpdb.org/?wiki=%%site_name%%&lang={$language}&page=%%category%%:%%name%%]] 
+[[/collapsible]]
+@@ @@
+[[/div]]
+[[/div]]
+[[/div]]
+[[/module]]
+
+[[module Listpages created_by="=" category="-fragment -component" tag="-scp -tale -goi-format -co-authored" limit="1" order="random"]]
+@@ @@
+[[div class="top-border"]]
+[[/div]]
+[[div style="text-align: center;"]]
++ Others
+[[size 75%]]([[[*%%link%%|Random]]])[[/size]]
+-----
+[[/div]]
+[[/module]]
+
+[[module Listpages created_by="=" order="{$order}" category="-fragment -component" tag="-scp -tale -goi-format -co-authored" perPage="{$perpage}"]]
+[[div class="preview {$shadow}"]]
+++ **%%title_linked%%**
+[[div style="float:left; width: 45%; padding: 0 2%"]]
+[[size large]]**Rating:** +%%rating%%[[/size]]
+@@@@
+[[size large]]**Comments:** %%comments%%[[/size]]
+@@@@
+[[size large]]**+/- :** +[[#expr ((%%rating%%+%%rating_votes%%)/2)]]/-[[#expr ((%%rating_votes%%-%%rating%%)/2)]][[/size]]
+@@@@
+[[/div]]
+[[div style="float:left; width: 45%; padding: 0 2%"]]
+[[size large]]**Last Comment:** %%commented_by%%[[/size]]
+[[div class="translations"]]
+[[collapsible show="+ Tags" hide="- Tags"]]
+[[div class="unbold"]]
+%%tags_linked%%
+[[/div]]
+[[/collapsible]]
+@@@@
+[[collapsible show="+ Translations" hide="- Translations"]]
+[[iframe http://interwiki.scpdb.org/?wiki=%%site_name%%&lang={$language}&page=%%category%%:%%name%%]] 
+[[/collapsible]]
+@@ @@
+[[/div]]
+[[/div]]
+[[/div]]
+[[/module]]
+@@ @@
+
 [[/tab]]
 [[/tabview]]
 
