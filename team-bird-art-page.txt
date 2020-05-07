@@ -9,148 +9,131 @@ An **Art Page** By [[*user Karakatt]].
 
 Team Bird is a **Series** by [[*user not_a_seagull]], [[*user Lt Flops]], [[*user Ayers]], and [[*user Quantum Physician]], created for the **2018 Doomsday Contest**. 
 
-[http://www.scp-wiki.net/bird Read Team Bird here!]
-]]
+[http://www.scp-wiki.net/bird Read Team Bird here!]]]
 
 [[module CSS]]
-/* INFO BOX */
-sup{
-    vertical-align: top;
-    position: relative;
-    top: -0.5em;
+ body{
+     --barColour: #b98f0e;
+     color: rgb(12, 12, 12);
+     word-break: unset;
 }
-body{
-    --cutColour: #050505;
-    --barColour: #e6ac00;
-    color: rgb(12, 12, 12);
-}
-.translation_block, .u-faq, #u-author_block{ display:none; }
+ .info-container .collapsible-block-unfolded{ background: #fff; }
+ .translation_block, .u-faq, #u-author_block{ display:none; }
 
 /* HEADER */
-#header h1 a {
-    display: block;
-    margin: 0;
-    padding: 80px 0 25px;
-    line-height: 0;
-    max-height: 0;
-    color: transparent;
-    background: transparent;
-    font-family: 'Verdana', Arial, sans-serif;
-    text-decoration: none;
-    text-shadow: none;
-    letter-spacing: 0.9px;
+ #header h1 a{
+     color: transparent;
+     font-family: 'Verdana', Arial, sans-serif;
+     text-shadow: none;
 }
-#header h1 a::before {
-    content: "The Avian Division";
-    color: white;
-    letter-spacing: -0.02em;
-    text-shadow: 3px 3px 5px black;
+ #header h1 a::before{
+     content: "The Avian Division";
+     color: #eee;
+     text-shadow: 3px 3px 5px rgb(12, 12, 12);
+     letter-spacing: -0.02em;
 }
-#header h2 span {
-    display: block;
-    margin: 0;
-    padding: 19px 0;
-    line-height: 0;
-    max-height: 0;
-    font-weight: bold;
-    color: transparent;
-    text-shadow: none;
+ #header h2 span{
+     color: transparent;
+     text-shadow: none;
 }
-#header h2 span::before {
-    content: 'Until we return to The Nest';
-    color: white;
-    text-shadow: 1px 1px 1px black;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+ #header h2 span::before{
+     content: 'Until we return to The Nest';
+     color: #eee;
+     text-shadow: 1px 1px 1px rgba(12, 12, 12, .8);
 }
 
 /* RATE MODULE */
-.page-rate-widget-box .rate-points {
-    background-color: #c90 !important;
-    border: solid 1px #c90;
+ .page-rate-widget-box .rate-points{
+     background-color: #b98f0e !important;
+     border: solid 1px #b98f0e;
 }
-.page-rate-widget-box .rateup,
-.page-rate-widget-box .ratedown {
-    background-color: #fffbf0;
-    border-top: solid 1px #c90;
-    border-bottom: solid 1px #c90;
+ .page-rate-widget-box .rateup,
+ .page-rate-widget-box .ratedown{
+     background-color: #fffff0;
+     border-top: solid 1px #b98f0e;
+     border-bottom: solid 1px #b98f0e;
 }
-.page-rate-widget-box .rateup a,
-.page-rate-widget-box .ratedown a {
-    color: #c90;
+ .page-rate-widget-box .rateup a,
+ .page-rate-widget-box .ratedown a{
+     color: #b98f0e;
 }
-.page-rate-widget-box .rateup a:hover,
-.page-rate-widget-box .ratedown a:hover {
-    background: #c90;
-    color: #fffbf0;
+ .page-rate-widget-box .rateup a:hover,
+ .page-rate-widget-box .ratedown a:hover{
+     background: #b98f0e;
 }
-.page-rate-widget-box .cancel {
-    background-color: #c90;
-    border: solid 1px #c90;
+ .page-rate-widget-box .cancel{
+     background-color: #b98f0e;
+     border: solid 1px #b98f0e;
 }
-.page-rate-widget-box .cancel a {
-    color: #664d00;
+ .page-rate-widget-box .cancel a{
+     color: #664d00;
 }
-.page-rate-widget-box .cancel a:hover {
-    background: #c90;
-    color: #fffbf0;
-}
-
-/* FORMATTING */
-.bg-gradiant{
-    background-color: #fff; 
-    background: linear-gradient(to bottom, #f7f7f7,#ffc81c,#ffc81c,#fff);
-    padding-left: 2%; 
-    padding-right: 2%; 
-}
-hr{
-    display: block;
-    border: 0;
-    padding: 0;
-    margin: 1em 0;
-    height: 1px;
+ .page-rate-widget-box .cancel a:hover{
+     background: #b98f0e;
+     color: #fffff0;
 }
 
 /* DIV BLOCKS */
-.header-image{
-    border: 3px solid rgb(12, 12, 12); 
-    background: #eee; 
-    padding: 0;
-    margin: .5em 0;
+ .header-image{
+     border: 3px solid rgb(12, 12, 12); 
+     background: #fff;
 }
-.showcase{
-    border: 3px solid rgb(12, 12, 12); 
-    background: #fff; 
-    padding: .5em;
-    margin: .5em;
+ .showcase{
+     border: 3px solid rgb(12, 12, 12); 
+     background: #fff; 
+     padding: 0 .5em;
 }
-.showcase hr{ background: #ffc818; height: 2px; }
+ .showcase hr{ background: #ffc818; height: 2px; }
+
+/* FORMATTING */
+ .bg-gradiant{
+     background-color: #fff; 
+     background: linear-gradient(to bottom, #f7f7f7, #ffc818, #ffc818, #fff);
+     padding: 0 2%; 
+}
+ hr{
+     display: block;
+     height: 1px;
+     margin: 1em 0;
+}
+ h1,h2,h3,h4{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+
+     color: rgb(12, 12, 12);
+     word-break: unset;
+}
+ #page-content span, 
+ #page-content a{ font-weight: bold; word-break: unset; }
 
 /* TABLES */
-blockquote,
-.article blockquote,
-.continued blockquote{
-    border: solid 1px #ffc818;
-    background: #fff;
-    padding: 0;
+ blockquote,
+ .article blockquote,
+ .continued blockquote{
+     padding: 0;
+     background: #fff;
+     border: solid 1px #ffc818;
 }
-.article table.wiki-content-table,
-.continued table.wiki-content-table{
-    margin: 0 0 -1px;
-    width: 100%;
+ .article table.wiki-content-table,
+ .continued table.wiki-content-table{
+     width: 100%;
+     margin: 0 0 -1px;
 }
-.article table.wiki-content-table th,
-.continued table.wiki-content-table th{
-    border: solid 1px #ffc818;
-    font-weight: normal;
-    padding: 0;
+ .article table.wiki-content-table th,
+ .continued table.wiki-content-table th{
+     padding: 0;
+     border: solid 1px #ffc818;
+     font-weight: normal;
 }
-.article table.wiki-content-table td,
-.continued table.wiki-content-table td{
-    border: solid 1px #ffc818;
-    border-right: 0;
+ .article table.wiki-content-table td,
+ .continued table.wiki-content-table td{
+     border: solid 1px #ffc818;
+     border-right: 0;
 }
-.continued table.wiki-content-table td{
-    border-top: 0;
+ .continued table.wiki-content-table td{
+     border-top: 0;
 }
 [[/module]]
 
@@ -161,8 +144,6 @@ blockquote,
 [[module rate]]
 [[/>]]
 @@ @@
-
-
 
 [[tabview]]
 [[tab Part One: Doomsday]]
@@ -176,7 +157,6 @@ width=800px ]]
 [[/tab]]
 
 [[tab Part Two: Migration]]
-
 
 [[include component:image-block
 name=https://i.imgur.com/1H5YkQA.png|
@@ -206,8 +186,6 @@ width=800px ]]
 
 [[tab Season Two: Shock and Terror]]
 
-
-
 [[/tab]]
 
 [[tab The Birds]]
@@ -217,7 +195,6 @@ name=https://i.imgur.com/zimkOG3.png|
 align=center|
 caption= Dr. Hoygull by [[*user Karakatt]]|
 width=800px ]]
-
 
 [[/tab]]
 
@@ -230,7 +207,6 @@ name=https://i.imgur.com/ZjLBdbn.png|
 align=center|
 caption= Hoygulls Death by [[*user Karakatt]]|
 width=800px ]]
-
 
 [[/tab]]
 
@@ -256,10 +232,8 @@ You must have all of the above for your art to be submitted to the page.
 
 [[tab Current Artists]]
 
-
 ||~ User ||~ Artwork found in||~ Art page / DA||~ Author page||
 || [[*user Karakatt]] ||Part One: Doomsday, Part Two: Migration, Intermission, The Birds, and The Extras ||[http://www.scp-wiki.net/kara-s-page-of-art Art Page,] [https://www.deviantart.com/karalinekatt My DA]  ||[http://www.scp-wiki.net/karas-corner-of-doom My Author Page] ||
-
 
 [[/tab]]
 [[/tabview]]
