@@ -193,9 +193,13 @@ text-align: center!important;
 @@@@
 
 
-[[module ListPages created_by="Cerastes" order="rating desc" separate="no" tags="-tale -goi-format -author -template" perPage="20" prependLine="||~ Articles ||~ Rating ||~ Comments ||~ Created ||"]]
-|| %%title_linked%% || ##green|+ %%rating%%## || %%comments%% || %%created_at%% ||
-[[/module]]
+[[include :scp-wiki:component:mega-cool-author-page-tool |inc-list= --]
+|language=en
+|order=rating
+|perpage=
+|background-image=
+|shadow=
+]]
 
 @@ @@
 
