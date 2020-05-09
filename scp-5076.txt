@@ -1,1 +1,612 @@
 title:SCP-5076
+[[include :scp-wiki:component:black-highlighter-theme-dev]]
+[[include :scp-wiki:component:wide-image-sizer]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+[[module CSS]]
+.blinkbar {color: red;font-size:125%; animation: blink 1.5s infinite; letter-spacing: -0.13em;}@keyframes blink{to{opacity: .0;}}@keyframes flicker {0% {opacity: 0.9890; }5% {opacity: 0.5842; }10% {opacity: 0.9865; }20% {opacity: 0.0412; }20% {opacity: 0.6255; }25% {opacity: 0.3157; }30% {opacity: 0.7328; }35% {opacity: 0.4654; }40% {opacity: 0.9128; }45% {opacity: 0.2449; }50% {opacity: 0.5485; }55% {opacity: 0.6438; }60% {opacity: 0.1180; }65% {opacity: 0.9085; }70% {opacity: 0.0266; }75% {opacity: 0.6795; }80% {opacity: 0.7812; }85% {opacity: 0.0117; }90% {opacity: 0.2239; }95% {opacity: 0.8897; }100% {opacity: 0.2260; }}@keyframes overlay-anim {0% {visibility: hidden; }10% {visibility: hidden; }11% {visibility: visible; }50% {visibility: hidden; }100% {visibility: hidden; }}
+.blinkmessage .collapsible-block-folded a.collapsible-block-link {
+    animation: blink 0.8s ease-in-out infinite alternate;
+}
+@keyframes blink {
+    0% { color: transparent; }
+    50%, 100% { color: #b01; }
+}
+.email {float: center; border: solid 2px #000000; width: 88%; padding: 1px 15px; margin: 10px 10px 10px 10px; box-shadow: 0 1px 3px rgba(0,0,0,.5)}
+.blinkmessage a.collapsible-block-link { font-weight: bold; }
+.tofrom {margin-left: 10px; margin-top: 5px; padding: 1px 15px; border-left: solid 3px maroon}
+[[/module]]
+
+[[include :scp-wiki:component:anomaly-class-bar-source
+|item-number= 5076
+|clearance= 2
+|container-class= keter
+|secondary-class= none
+|secondary-icon= http://acsurlexample.com/image.svg
+|disruption-class= ekhi
+|risk-class= critical
+]]
+
+[[size 0%]]@[[/size]]
+[[size 0%]]@[[/size]]
+
+[[include component:image-block name=https://farm1.staticflickr.com/484/18388472240_fd1f7743b1_b.jpg|align=center|width=100%|caption=An SCP-5076-A instance clinging to a telephone pole located at Site-5076-1.]]
+----------
+
+[[table style="width: 100%;"]]
+[[row]]
+[[cell style="border-bottom: 1px solid #AAA; border-right: 1px solid #AAA; text-align: center; width: 25%;"]]
+[[size 90%]]**Assigned Site**[[/size]]
+[[/cell]]
+[[cell style="border-bottom: 1px solid #AAA; border-right: 1px solid #AAA; text-align: center; width: 25%;"]]
+[[size 90%]]**Site Director**[[/size]]
+[[/cell]]
+[[cell style="border-bottom: 1px solid #AAA; border-right: 1px solid #AAA; text-align: center; width: 25%;"]]
+[[size 90%]]**Research Head**[[/size]]
+[[/cell]]
+[[cell style="border-bottom: 1px solid #AAA; text-align: center; width: 25%;"]]
+[[size 90%]]**Assigned Task Force**[[/size]]
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="border-right: 1px solid #AAA; text-align: center; width: 25%;"]]
+[[size 80%]]USINBL Area-179[[/size]]
+[[/cell]]
+[[cell style="border-right: 1px solid #AAA; text-align: center; width: 25%;"]]
+[[size 80%]]R. Joseph Barrow[[/size]]
+[[/cell]]
+[[cell style="border-right: 1px solid #AAA; text-align: center; width: 25%;"]]
+[[size 80%]]A. Ann Starse [[/size]]
+[[/cell]]
+[[cell style="text-align: center; width: 25%;"]]
+[[size 80%]]L-8 "Ape Mode"[[/size]]
+[[/cell]]
+[[/row]]
+[[/table]]
+
+-----
+
+[[include component:image-block name=https://i.imgur.com/GcdlP5H.png|align=right|width=30%|caption=Cressona, PA, USA: now designated Site-5076-1.]]
+
+**Special Containment Procedures:** Law enforcement channels worldwide are to be monitored for clusters of missing persons reports consistent with SCP-5076 activity.
+
+Foundation web crawler Beta-12 ("BANANAPEELER") is to monitor the web for any mention of the phrase '//OBOBAN NATION//', as well as any related SCP-5076-related keywords.
+
+Upon confirmation of an SCP-5076 event, personnel are to be dispatched immediately according to procedure 'WELCOME TO THE JUNGLE', detailed in Document-5076-O.
+
+All roads leading to Site-5076-1 have been redirected. A cover story detailing a nuclear meltdown having occurred on 1/18/20 has been disseminated, and all former inhabitants of Site-5076-1 legally declared dead. For a complete operational purview of Veil-keeping regarding Site-5076-1, see Document-5076-V-1.
+
+MTF Lambda-8 "Ape Mode" is to be stationed along the perimeter surrounding Site-5076-1. All online activity originating from Site-5076-1 is to be monitored. If Site-5076-1's Veil is at risk due to the online activities of an SCP-5076-A instance, all internet connection to Site-5076-1 is to be cut off for a duration of 5 hours, and the offending SCP-5076-A instance reprimanded.
+
+Entrance to Site-5076-1 outside of a Veil-restoring operation or as a member of the 5076 Cultural Exchange Liaison is forbidden without the express permission of Area-179's director, and a unanimous vote by the Ethics Committee.
+
+Entities entering or exiting Site-5076-1 without authorization are to be neutralized.
+
+**Description:** SCP-5076 refers to an anomalous event in which the inhabitants of a moderately sized human population center spontaneously disappear, followed by the appearance of sapient members of the //Pongo// genus.
+
+As of ██/██/████, SCP-5076 has only occurred once- in Cressona, Pennsylvania- a northeastern borough formerly holding a human population of around 1500. Cressona has since been designated Site-5076-1.
+
+The orangutan specimens inhabiting Site-5076-1- labeled SCP-5076-A, demonstrate intelligence and vocal capabilities comparable to humans as well as a ██-class technological proficiency. Human art, religion, and culture seem to be major topics of interest to SCP-5076-A.
+
+Due to the nature of their appearance at Site-5076-1, SCP-5076-A claims regarding the history and culture of their species cannot be verified. Notable claims include:
+
+* SCP-5076-A vocalize using a 'universal communication field', and are capable of speech with any biological life
+* SCP-5076-A have no connection to non-anomalous members of the //Pongo// genus existing on earth- referring to them as 'crude effigies'
+* SCP-5076-A are a race of inter-dimensional nomads known as the //Obobans//
+* SCP-5076-A have existed long before humanity
+
+SCP-5076-A have constructed what appears to be a religious shrine at the center of Site-5076-1; a random assortment of machinery- including wires, cables, automobile and computing components- arranged and modified in a way that serves no apparent purpose or function. All SCP-5076-A instances have been observed to gather around this structure at 20:00 daily, appearing to meditate as a group for hours on end. SCP-5076-A have refused to disclose the meaning of this ritual.
+
+A number of religious artifacts written in an unknown language have been recovered from Site-5076-1-         seemingly having materialized alongside SCP-5076-A- partly validating claims regarding a history. A translation of these texts- made possible through the assistance of orangutan priests- is pending.
+
+In order to gain a more holistic understanding of //Oboban// society and beliefs, the 5076 Cultural Liaison was established. For documentation of information gained through this program, see files under 5076-CL-EP. As this exchange is still underway, 5076-CL-EP files will be updated routinely.
+
+**Addendum 5076.1:** Discovery
+[[size 0%]]@[[/size]]
+On 1/18/2020, a staggering amount of emergency calls- mostly regarding missing persons from Cressona, Pennsylvania- came to the Foundation's attention. A large-scale amnestics program was enacted, and the perimeter surrounding Site-5076-1 was secured. A misinformation campaign regarding a nuclear meltdown was disseminated into media and law enforcement channels.
+ 
+Hours later, a website operating under the name '//OBOBAN NATION//' was discovered, hosted from servers in Cressona. The entire website, sans the title, was written in an unknown text. The page depicted images and videos of SCP-5076-A instances engaging in routine activities at Site-5076-1. Scenes depicted //Oboban// families caring for their offspring, a recording depicting a ritual revolving around the site's makeshift shrine, and a recorded message from SCP-5076-A-402- the apparent leader of //Oboban// society, addressing the viewer in what is assumed to be the same language the website was written in. Notably, SCP-5076-A-402 does not resemble an adult orangutan.
+ 
+'//OBOBAN NATION//' was put under immediate digital quarantine.
+
+**Addendum 5076.2:** Engagement Log Transcripts
+
+Engagement of SCP-5076-A occurred on 7/19/2020. Because of his experience with dangerous anomalies, as well as his [DATA EXPUNGED], Area-179 senior researcher Dr. Edward Dune was chosen to initiate contact with SCP-5076-A. Researcher Angela Starse kept in contact with Dune via radio.
+
+A body camera was attached to Dr. Dune's person for documentation purposes. Transcripts of the engagement mission are listed below.
+
+[[collapsible show="► Access File: Engagement Mission-5076.1-1, Codename: First Contact " hide="▼ Close Log"]]
+[[div class="blockquote" style="border-radius: 10px; margin: 10px"]]
+**<Begin Recording>**
+ 
+**Researcher Starse:** You on?
+
+**Dr. Dune:** Check.
+
+**Researcher Starse:** Be nice.
+
+ //<A makeshift barricade of automobiles surrounds the immediate perimeter of Site-5076-1. Several SCP-5076-A instances- possessing firearms seized from a local gun shop- stand guard. Dr. Dune stops before the barricade. Foundation defenses- including ground vehicles and multiple MTF teams- are stationed behind Dune.>//
+
+//<Dune performs a variety of nonverbal interspecies contact signals>//
+
+**SCP-5076-A-328:** There is no need for gesturing. You are understood.
+
+**Dr. Dune:** //<shouting>//  You can communicate with us?
+
+**SCP-5076-A-328:** The communication field binds us to your language.
+
+**Dr. Dune:** //<shouting>// Good, good. Monkeys- monkeys from the sky. //Obobans//, was it? My name is Doctor Edward Dune, and I'm with th-
+
+**SCP-5076-A-328:** The Foundation. We know who you are.
+
+**Dr. Dune:** //<shouting>// Well, shit- we're off to a great start. You know why we're here, then.
+
+**SCP-5076-A-328:** To catalogue us? To assess our threat level? Doctor, we mean you no harm. Our appearance here will not be permanent. It is best that you leave.
+
+ **Dr. Dune:** //<shouting>// Can't. Sentient monkeys appear out of the sky and now fifteen-hundred people are missing? Oh, ape-man, you don't know the Foundation.
+
+**Researcher Starse:** Sapient.
+
+**SCP-5076-A-328:** You will be of no assistance to us. Guards, hold position. You are denied entrance to //Sao'tab//.
+
+ **Dr. Dune:** Are you serious right now? Do you see what you're up against? Look behind me. You're armed with shotguns and slingshots!
+
+//<pause>//
+
+ **Dr. Dune:** //<shouting>// I'm requesting an audience with your leader.
+
+**SCP-5076-A-328:** There will be no audie-
+
+//<Dune activates both of the Audio Protection Pods in his ear, and turns to the team operating a AM-SB-1V-3 Hertz-Breaker cannon.//
+ 
+**Dr. Dune:** Fire.
+
+**Researcher Starse:** Edward, don't you dare-
+
+//<The cannon emits a large burst of sound at a frequency of 200 DB. SCP-5076-A instances are in clear distress, some falling to the ground.>//
+
+**Dr. Dune:** Goddamn, that thing's hot! //<shouting>// Do I make myself clear?
+
+**Researcher Starse:** That was cruel.
+
+//<SCP-5076-A-328 struggles to prop itself back up to the barricade>//
+
+**SCP-5076-A-328:**  Your use of brute force against a defenseless people leaves us no choice. For the protection of Oboban society, your request is granted. We shall escort you, doctor.
+
+//<SCP-5076-A instances guarding Site-5076-1 leave their posts and approach Dune>//
+
+**Researcher Starse:** Edward, that was terrible-
+
+**Dr. Dune:** We don't know what we're dealing with.
+
+**Researcher Starse:** You know damn well they're not a threat!
+
+**Dr. Dune:** Fifteen hundred people died, Ang. They're not a threat?
+
+**Researcher Starse:** This is a first contact engagement mission!
+
+**Dr. Dune:** This is also an DK-Class Reality Invasion scenario, with potential to lead into an SK-Class Dominance Shift. We are doing what we've always done.
+
+**Researcher Starse:** They have no-
+
+//<SCP-5076-A instances surround Dune>//
+
+**SCP-5076-A-328:** Come with us. You will soon understand the plight of the //Oboban//, as you have before.
+
+**Dr. Dune:** The Foundation appreciates your compliance.
+
+//<Dune and the SCP-5076-A instances surrounding him walk towards Site-5076-1>//
+
+**<End Recording>**
+[[/div]]
+[[/collapsible]]
+[[collapsible show="► Access File: Engagement Mission-5076.1-2, Codename: Diplomatic Relations " hide="▼ Close Log"]]
+[[div class="blockquote" style="border-radius: 10px; margin: 10px"]]
+**<Begin Recording>**
+
+//<Dr. Dune is led through Site-5076-1. Various SCP-5076-A instances can be seen. The party passes the technological construct. Dune asks about the purpose of the structure and receives no answer. The group enters the borough hall. An SCP-5076-A instance slouches at a desk, drinking a can of █████.>//
+
+**SCP-5076-A-328:** Your excellency?
+
+**SCP-5076-A-402:** //Bab//? Oh, great.
+
+//<SCP-5076-A-328 kneels upon entering SCP-5076-A-402's office>//
+
+**SCP-5076-A-328:** Doctor, I advise you do the same.
+
+**Dr. Dune:** Mm, I don't do that.
+
+**Researcher Starse:** Get over yourself!
+
+**SCP-5076-A-328:** This is our leader- //Architon// //Gabo'an// XVI, the first of his gene-pod.
+
+**Dr. Dune:** The head monkey, huh? I have-
+
+**SCP-5076-A-402:** We can skip the formalities. //Tobe//, leave.
+
+**SCP-5076-A-328:** As you wish, sir.
+
+//<**SCP-5076-A-328:** leaves the office>//
+
+**SCP-5076-A-402:** //<laughing>// More Foundation?
+
+**Dr. Dune:** Right, that's a good place to start. What do you mean by that? You're aware of us, and-
+
+**SCP-5076-A-402:** We've met your kind before. Well, versions of your kind.
+
+**Dr. Dune:** Other realities?
+
+**SCP-5076-A-402:** Mhm, and you're all useless.
+
+**Dr. Dune:** Interdimensional, I presume?
+
+**SCP-5076-A-402:** You bet.
+
+**Dr. Dune:** Why here?
+
+**SCP-5076-A-402:** Not sure. Didn't pick it.
+
+**Dr. Dune:** You expect me to believe that?
+
+**SCP-5076-A-402:** Our Canvas guides us.
+
+**Dr. Dune:** Where's the people?
+
+**SCP-5076-A-402:** The people?
+
+**Dr. Dune:** Oh, only the fifteen hundred plus people that disappeared when you showed up. Where are they?
+
+**SCP-5076-A-402:** Collateral damage. Not a conscious choice.
+
+**Dr. Dune:** Shitty answer.
+
+**SCP-5076-A-402:** It's the only one you're going to get.
+
+//<pause>//
+
+**Dr. Dune:** What do you want?
+
+**SCP-5076-A-402:** Six months.
+
+**Dr. Dune:** And then?
+
+**SCP-5076-A-402:** We'll be gone.
+
+**Dr. Dune:** Why? Why here?
+
+**SCP-5076-A-402:** We're nomads, doctor. It's how we live.
+
+**Dr. Dune:** No home planet? You just wander aimlessly, taking land that doesn't belong to you?
+
+**SCP-5076-A-402:** Do you know what a nomad is?
+
+**Dr. Dune:** You're quite young.
+
+**SCP-5076-A-402:** And I'm still older than you.
+
+**Dr. Dune:** Yeah, I doubt that.
+
+**SCP-5076-A-402:** We're staying.
+
+**Dr. Dune:** Not my decision.
+
+**SCP-5076-A-402:** The other Foundations let us stay.
+
+**Dr. Dune:** Again, not my decision.
+
+//<A visibly aged SCP-5076-A instance- wearing a cloth stole- enters the room>//
+
+**SCP-5076-A-299:** That's enough. If I may interject, doctor, you may find our case to be more compelling than our young ruler may let on.
+
+**SCP-5076-A-402:** //Bo'naub//? Don't-
+
+**SCP-5076-A-299:** Diplomacy is not your strong suit, child.
+
+**Dr. Dune:** And you are?
+
+**SCP-5076-A-299:** //Bo'naub Oree//. High Generator of our sect.
+
+**Dr. Dune:** Religious leader?
+
+**SCP-5076-A-299:** Yes, and one more suited to talk to you on this manner.
+
+**Dr. Dune:** Look, I just need to understand what the hell happened here-
+
+**SCP-5076-A-299:** Unfortunately, the boy is right. Even I cannot explain the specifics behind our means of travel. It is, what you call-
+
+**Dr. Dune:** An anomaly, right.
+
+**SCP-5076-A-299:** I am deeply sorry for the tragedy our appearance here has brought upon you, but we are a hurting people, doctor. We have done a great deal for this universe, and many-
+
+**Dr. Dune:** I don't care. Like I said, it isn't my choice, and I doubt you'll be able to stay.
+
+**SCP-5076-A-299:** We are recovering from war! We carry no weapons of our own, no ill will against your people, and are willing to follow your procedures. Please, do not be like the Foundations before you! The atrocities we have suffered in the past are forgiven! We beg for your permission to exist.
+
+//<pause>//
+
+**Dr. Dune:** I-
+
+**Researcher Starse:** They can stay.
+
+**Dr. Dune:** Ang, we-
+
+**Researcher Starse:** Tell them they can stay.
+
+**Dr. Dune:** Uh, just a second.
+
+//<Dr. Dune walks outside of the office doors>//
+
+**Dr. Dune:** Who the fuck do you think you are?
+
+**Researcher Starse:**  Edward, I can't believe I'm hearing this from you. The man who would curse out an O5 if they spilled his coffee is suddenly worried about the chain of command?
+
+**Dr. Dune:** We can't just let them stay! We don't even-
+
+**Researcher Starse:** Why not? Why the hell not, Edward?
+
+**Dr. Dune:** We don't understand them-
+
+**Researcher Starse:** Were you even paying attention in there? I will not allow genocide, doctor. I don't care where on the hierarchy I fall. Tell them that they're safe.
+
+ **Dr. Dune:** Ang, I just don't know if I can promise that. God, I don't want to have to tell them that they need to leave, but-
+
+**Researcher Starse:** Cold, not cruel, Edward. Isn't that what you used to tell me? Can't we do something good for once?
+
+//<pause>//
+
+ **Dr. Dune:** //<exhaling>// You're right. Okay.
+
+**Researcher Starse:** Thank you.
+
+ **Dr. Dune:** Besides, when was the last time I got reprimanded for anything, eh?
+
+//<Dune reenters the office>//
+
+**Dr. Dune:** We'll help you guys out-
+
+**SCP-5076-A-299:** Thank you!
+
+//<SCP-5076-A-299 embraces Dune, who stumbles backward>//
+
+**Dr. Dune:** Okay, okay! Get off!
+
+//<Dune pushes SCP-5076-A-299 off>//
+
+**Dr. Dune:** Alright, listen. I don't know how, or in what way- but we're not going to chase you guys away. I'll tell you this though, if you're staying- you're going to be seeing quite a bit of us.
+
+ **SCP-5076-A-299:** That's understandable, doctor. Our people thank you.
+
+**SCP-5076-A-402:** Hold it right there.
+
+ **SCP-5076-A-299:** //Gabo'an//!
+
+**SCP-5076-A-402:** Quiet. I'm not going to deal with all of //<gesturing>// this!
+
+**Dr. Dune:** Excuse me?
+
+ **SCP-5076-A-299:** Please, doctor- he-
+
+**SCP-5076-A-402:** This whole lock down, containment thing. How do I put it? Uh- we like your stuff.
+
+**Dr. Dune:** What are you talking about?
+
+**SCP-5076-A-402:** If we're staying, we get the internet back.
+
+**Dr. Dune:** You're fucking with me.
+
+**SCP-5076-A-402:** Oh, I'm very serious, doctor. I'm not spending six months doing nothing.
+
+**Dr. Dune:** Now this is beyond my jurisdiction. Angela, you see what happens when you give an inch?
+
+**Researcher Starse:** Uh, it'd certainly be a security issue without precautions-
+
+ **SCP-5076-A-299:** //Gabo'an//, this is ridiculous.
+
+**SCP-5076-A-402:** I'm not just going to sit here!
+
+ **Dr. Dune:** Yeah, I'm leaving. You can deal with this one, Ang.
+
+//<Dune exits the borough hall. Dozens of SCP-5076-A soldiers stand outside the building- pointing their weapons at him>//
+
+ **Dr. Dune:** Christ.
+
+ //<Dune traces a circle onto his palm, preparing to [DATA EXPUNGED]>//
+
+**Researcher Starse:** Edward.
+
+ **Dr. Dune:** Fine.
+
+//<Dune raises both of his hands above his head>//
+
+**<End Recording>**
+[[/div]]
+[[/collapsible]]
+
+[[collapsible show="► Access File: Engagement Mission-5076.1-3, Codename: Negotiations" hide="▼ Close Log"]]
+[[div class="blockquote" style="border-radius: 10px; margin: 10px"]]
+**Preliminary Notes:**  Per request, Senior Researcher Angelina Starse was tasked with entering Site-5076-1 and negotiating with the SCP-5076-A instances, as well as retrieving Dr. Dune after his moderately hostile encounter with the //Oboban// leadership. As the threat to Dr. Dune's life was perceived as low, Starse entered Site-5076-1 without any accompaniment.
+ 
+**<Begin Recording>**
+
+//Extraneous dialogue removed. Starse makes her way to the borough hall, which is guarded by various SCP-5076-A instances. After conversing with the duo of guards at the door, she makes her way into the main office, where SCP-5076-A-402 sits at his desk, fixated on a hand-held video game device. SCP-XXX-A-299 is present. Starse kneels.//
+
+ **Researcher Starse:** Sir.
+
+**SCP-5076-A-299:** Your formality is appreciated.
+
+ **Researcher Starse:** Thank you. //Bo'naub//, right?
+
+**SCP-5076-A-299:** Yes.
+
+ **Researcher Starse:** Okay, my name is Angelina, and I'm with the Foundation. I apologize for the, uh, boldness of my colleague- but we're willing to help your people, as long as you can comply with a few regulations we have in place.
+
+**SCP-5076-A-402:** That's fine and dandy, Ang- as long as those regulations don't cut off our internet access.
+
+**Researcher Starse:** For recreational purposes?
+
+**SCP-5076-A-402:** Yes.
+
+**Researcher Starse:** //Bo'naub//?
+
+**SCP-5076-A-299:** I cannot go against the wishes of his excellency, as much as I may disagree with them.
+
+**SCP-5076-A-402:** Look, if we're going to stay here, we need something to do. We just want to play a couple games here and there, nothing major.
+
+**Researcher Starse:** Sir, I can't guarantee anything at the moment- but I'm sure we can find a compromise. An isolated network might be a possibility, but as it stands- nothing will get done without compliance on your part as well. Do you see what I'm getting at?
+
+**SCP-5076-A-402:** You want your friend back.
+
+**Researcher Starse:** That would be a start.
+
+**SCP-5076-A-402:** He's in there. //<gesturing towards a closet>//
+
+//<Starse appears to hold back laughter>//
+
+**Researcher Starse:** May I retrieve him?
+
+**SCP-5076-A-402:** It doesn't matter to me, he's an asshole.
+
+**Researcher Starse:** That may be true.
+
+//<Starse opens the closet. Dune sits on a box, arms crossed and visibly agitated.>//
+
+**Researcher Starse:** Edward.
+
+**Dr. Dune:** Shut up.
+
+//<Dune leaves the closet. Starse pulls a chair in front of the desk where SCP-XXX-A-402 sits.//
+
+**Researcher Starse:** We're willing to help your people, your excellency. You have a clear interest in our culture, and we'd be happy to oblige. Of course, we'd have to make things official, but a cultural liaison, internet access, and protection are definitely in the cards. Does that sound about right?
+
+**SCP-5076-A-299:** And what would your Foundation expect from us?
+
+**Researcher Starse:** Only information. We'd like to study your culture, with your assistance, of course.  
+
+//<SCP-5076-A-299 is visibly uncomfortable>//
+
+**Researcher Starse:** I would oversee the committee. You would be safe, I can assure that.
+
+**SCP-5076-A-402:** It's fine by me. //Bo'naub//, you said the other Foundations barely communicated.
+
+**Dr. Dune:** I want nothing to do with this, Ang.
+
+**SCP-5076-A-299:** We accept your concessions.
+
+**Researcher Starse:**  Thank you.
+
+//<Starse discusses the logistics and planning of a cultural liaison, as well as various other topics with the SCP-5076-A leadership. Over the duration of the 3 hour conversation, Dune paces himself throughout the room. For a complete transcript of this recording, as well as any other cultural exchange related documents, see 5076-CL-EP-001.>//
+
+**<End Recording>**
+[[/div]]
+[[/collapsible]]
+[[=]]
+------
+{{.}}
+
+{{.}}
+
+{{.}}
+
+{{.}}
+
+{{.}}
+[[div class="blinkmessage"]]
+[[collapsible show="Access SCiPNET Email? One (1) new message!" hide="Re:SUBJECT"]]
+[[<]]
+[[div class="email"]]
+[[div class="tofrom"]]
+**To:** Researcher Angelina Starse (//a.starse@rsrch.scp.net//)
+**From:** Dr. Edward Dune (//e.dune@rsrch.scp.net//)
+**Subject:** SCP-5076 File Draft Peer Review
+[[/div]]
+------
+Hey Ang, just read over the file- everything seems to be in order. I corrected a few SPaG errors. Nothing major, really- except, oh- it seems that you've misspelled orangutan in every goddamn instance of the word.
+
+36! 36 fucking times you used the word 'orangutang'. 36 times I had to correct a middle-school level mistake in what's going to be an official Foundation document. What the hell, Ang? Just because you're hanging around a bunch of primates doesn't give you the excuse to start spelling like one. Get your shit together.
+
+Anyways, I had another question: why are you writing as if this wasn't just a one-time thing? SCP-5076 should be designated Cressona, not the event of monkeys appearing out of thin air, yeah? It's ultimately your call, but it's something to consider. I doubt Roman's going to approve of those conprocs just because there's a //slight// chance it'll happen again. Maybe I'm missing something, though. It's late. Get back to me soon.
+
+Regards,
+Dr. Edward T. Dune, Senior Researcher, Area-179
+[[/div]]
+@@ @@
+[[=]]
+[[span class="blinkbar"]]NEW MESSAGE![[/span]]
+[[/=]]
+@@ @@
+[[div class="email"]]
+[[div class="tofrom"]]
+**To:** Dr. Edward Dune (//e.dune@rsrch.scp.net//)
+**From:** Researcher Angelina Starse (//a.starse@rsrch.scp.net//)
+**Subject:** Re:SCP-5076 File Draft Peer Review
+[[/div]]
+------
+Edward, it was a spelling error. This is why you're a frequent topic of discussion for Site Administration.
+
+Onto business- yes, you have every right to question my judgement on the SCP-5076 denotation. In fact, I was midway through the first draft when I got news from the Liaison team. Those translations they were working on with //Bo'naub// are done. He was reluctant to translate this particular book, but felt he was 'doing the right thing'- apparently against the wishes of //Gabo'an//.
+
+I took a look at them, and- well, I think it's best for you to see for yourself.
+
+Pet theory: that thing they're building in the center of town? It's not a shrine. It's a communications tower, and every night they're sending a distress signal to whatever is left of their race.
+ 
+I've attached the addendum below. You'll see what I mean. We should be cautious, Edward.
+
+I'm not sure what we've gotten ourselves into.
+
+Best Wishes,
+Angelina Starse, Senior Researcher, Area-179
+[[/div]]
+[[/<]]
+
+> **Addendum 5076.3:** Recovered and Translated Artifact from Site-5076-1
+>
+> The following is a translated portion from the SCP-5076-A religious text- //On Creation, and its End//- supposedly written by a great Oboban prophet-king, foretelling the 'death of life', and the last days of SCP-5076-A society:
+ 
+
+> //We, great Progenitors of Life,//
+> //Universe, sing to us//
+> //Our Creations bear Creations,//
+> //Images of us//
+> //Eons, this will be so//
+> //I say, this will be so//
+> //All 13 Houses of Bo-Too'a//
+> //United, creating, traveling//
+> //We, nomad Gods of Life//
+> //Creations, vast and without end//
+> //Will one day fall//
+> //In the Millennia of the Damned//
+> //He will come//
+> //The Tribes Shall Be Split//
+> //on the Black Night of His arrival//
+> //Our Canvas shall cry out and soon be silenced//
+> //By the Jaws of His Presence//
+> //We shall run, endlessly throughout our Creation//
+> //He will pursue//
+> //We will scatter, to the depths and cracks of Our Canvas//
+> //Each time, He will find us//
+> //Brothers and Sisters lost, awaiting contact//
+> //He has already found them//
+> //Wherever our House be built//
+> //He will dismantle it//
+> //I say to you, listen//
+> //His coming is swift- His pursuit endless//
+> //Devourer of Stars, He is inescapable//
+> //Wherever we roam//
+> //The Death of Life follows//
+[[/collapsible]]
+[[/=]]
+[[/div]]
+
+[[=]]
+{{.}}
+
+{{.}}
+
+{{.}}
+
+{{.}}
+
+{{.}}
+[[/=]]
