@@ -44,7 +44,7 @@ html {
 }
 
 .hubbox a {
-  background: rgb(38, 38, 38);
+  background: #dedede;
   border: 4px solid #aaa;
   margin: 125px 0 0 0;
   transition: 0.75s;
@@ -54,8 +54,8 @@ html {
   display: inline-block;
 }
 .hubbox a:hover {
-  background: #141414;
-  border: 4px solid #141414;
+  background: rgb(0,0,0,0);
+  border: 4px solid rgb(0,0,0,0);
   cursor: crosshair;
 }
 [[/module]]
