@@ -3,6 +3,10 @@ parent:white-space-hub
 [[module CSS]]
 @import url("/nagiros/code/1");
 
+#breadcrumbs {
+  display: none;
+}
+
 #page-content a {
   font-weight: bold;
 }
@@ -54,7 +58,7 @@ sup.footnoteref > a.footnoteref:after {
 .hubbox a:hover {
   background: #141414;
   border: 4px solid #141414;
-  cursor: none;
+  cursor: crosshair;
 }
  
 /*
@@ -955,13 +959,11 @@ SiteCommand is eventually turned back. The reasons are unclear and irrelevant; t
 @@ @@
 [[/div]]
 
-[!--
 [[=]]
 [[div class="hubbox"]]
 + [[[white space hub | (HUB)]]]
 [[/div]]
 [[/=]]
---]
 
 [[/collapsible]]
 
