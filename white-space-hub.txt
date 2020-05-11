@@ -1,0 +1,143 @@
+title:White Space Hub
+[[module CSS]]
+@import url("/nagiros/code/1");
+
+#breadcrumbs {
+  display: none;
+}
+/* INCREASING WHITE SPACE */
+.main-text > p {
+  font-size: 105%;
+  margin: 40px auto;
+}
+
+/* LINK ANIMATION */
+.main-text a:hover {
+  animation: glitch1 5s infinite;
+  animation-delay: 2.5s;
+  cursor: crosshair;
+}
+@keyframes glitch1 {
+  0% {transform: skewX(75deg); opacity: 0.85;}
+  5% {transform: none; opacity: 1}
+  10% {transform: none; opacity: 0.92;}
+  11% {transform: none}
+  15% {transform: none; opacity: 1;}
+  20% {transform: skewX(1deg); opacity: 0.85;}
+  21% {transform: none}
+  25% {transform: none; opacity: 1;}
+  30% {transform: none; opacity: 0.92;}
+  31% {transform: none}
+  35% {transform: none; opacity: 1;}
+  40% {transform: skewX(1deg); opacity: 0.85;}
+  41% {transform: none}
+  45% {transform: none; opacity: 1;}
+  49% {transform: none;}
+  50% {transform: skewX(-15deg); opacity: 0.85;}
+  55% {transform: none; opacity: 1;}
+  60% {transform: skewX(1deg); opacity: 0.92;}
+  61% {transform: none}
+  65% {transform: none; opacity: 1;}
+  70% {transform: none; opacity: 0.85;}
+  71% {transform: none}
+  75% {transform: none; opacity: 1;}
+  80% {transform: skewX(1deg); opacity: 0.92;}
+  81% {transform: none}
+  85% {transform: none; opacity: 1;}
+  90% {transform: none; opacity: 0.85;}
+  91% {transform: none}
+  95% {transform: none; opacity: 1;}
+  100% {transform: none; opacity: 0.92;}
+}
+
+/* TEXT ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(0,30px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+@keyframes dot-float {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* LINKS */
+.main-text a {
+  background: #dedede;
+  border: 4px solid #aaa;
+  margin: 60px 0;
+  transition: 0.75s;
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+.main-text a:hover {
+  background: rgb(0,0,0,0);
+  border: 4px solid rgb(0,0,0,0);
+}
+[[/module]]
+
+[[div class="fakeline"]]
+[[/div]]
+
+[[=]]
+[[module Rate]]
+[[/=]]
+
+[[div class="blockquote" style="padding-top: 10px; animation-name: fadeIn; animation-duration: 1s; animation-iteration-count: 1; animation-timing-function: ease-out; animation-fill-mode: both;"]]
+[[=]]
++++ "Growth for the sake of growth is the ideology of a cancer cell."
+[[/=]]
+[[>]]
+//**— Edward Abbey**//, anarchist and environmentalist, **1977**.
+[[/>]]
+[[/div]]
+
+[[div style="text-align: center; margin: 100px 0; font-size: 125%; font-weight: bold;"]]
+[[span style="animation-name: dot-float; animation-duration: 5s; animation-iteration-count: 1;"]].[[/span]]
+[[span style="animation-name: dot-float; animation-duration: 5.5s; animation-iteration-count: 1;"]].[[/span]]
+[[span style="animation-name: dot-float; animation-duration: 6s; animation-iteration-count: 1;"]].[[/span]]
+[[/div]]
+
+[[div class="main-text" style="animation-name: fadeIn; animation-duration: 1s; animation-delay: 6.5s; animation-iteration-count: 1; animation-timing-function: ease-out; animation-fill-mode: both;"]]
+
+The necessity for human involvement in Foundation affairs was phased out a long time ago. Quite honestly, we only employ a few flesh-and-blood humans anymore as a formality. It wasn't always like that — people used to //mean// something, once upon a time — but that's the world we live in nowadays.
+
+A post-human world. One ruled and consumed by the white space between stanzas in a poem.
+
+After the Automation Initiative, we kept locking things in boxes because that's what we were good at, and we liked the quiet rush of world domination, but everything else felt //numb//. There were no more medals of honor awarded, no more laughter in the canteen, no more sense that what we were doing truly mattered.
+
+There was only the static drip of the sky — dead channels in our heads that made us think in null-speak.
+
+The Automatons who ran our sites told us there were metaphysical clay pots buried in the static, but the pots made our heads leak because they spoke in another tongue, so we phased out language, too. We dug deep to find more, amending our understanding of normalcy along the way until we became everything but human.
+
+It was a brave, tortured world of steel and concrete, run by men turned alien turned god-head. Amidst our divine self-cannibalization we looked to the dead sky and begged for realization, actualization, solidity, form, truth, //being//.
+
+[[div style="margin: 80px auto; text-align: center"]]
+**And then the static-screamers gave us Astaroth.**
+[[/div]]
+
+It was once said that the Foundation has no endgame. But if we did — if we had an answer to each and every one of the world's problems — would you trust us then?
+
+@@ @@
+@@ @@
+@@ @@
+
++ [[[Slipping Away | AFTERLIFE OPHIDIAN /// The Foundation Over Heaven]]]
+
++ [[[The Eschaton | Serpent Bound \\\ BEAR WITNESS]]]
+
++ [[[SCP-4736 | DEAD WEIGHT ≡ DON'T KILL THE VIBE]]]
+
++ [# to be ||| announced]
+[[/div]]
