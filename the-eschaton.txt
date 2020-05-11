@@ -18,11 +18,6 @@ parent:white-space-hub
   display: none;
 }
  
-/* Bold breadcrumbs */
-#breadcrumbs a {
-  font-weight: bold;
-}
- 
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
@@ -46,6 +41,22 @@ html {
  
 .rateBox {
   margin-bottom: 15px;
+}
+
+.hubbox a {
+  background: rgb(38, 38, 38);
+  border: 4px solid #aaa;
+  margin: 125px 0 0 0;
+  transition: 0.75s;
+  display: block;
+  padding: 15px;
+  font-size: 105%;
+  display: inline-block;
+}
+.hubbox a:hover {
+  background: #141414;
+  border: 4px solid #141414;
+  cursor: crosshair;
 }
 [[/module]]
 
@@ -213,6 +224,12 @@ Until it is proven otherwise, the Eschaton is assumed to be a hostile action aga
 [[/div]]
 
 [[/div]]
+
+[[=]]
+[[div class="hubbox"]]
++ [[[white space hub | (HUB)]]]
+[[/div]]
+[[/=]]
 
 ------
 [[footnoteblock title=""]]
