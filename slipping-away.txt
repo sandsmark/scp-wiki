@@ -1,9 +1,29 @@
 title:AFTERLIFE OPHIDIAN /// The Foundation Over Heaven
 parent:white-space-hub
 [[module CSS]]
+@import url("http://www.scp-wiki.net/nagiros/code/1");
+
 .prayer {
   text-align: center;
   font-weight: bold;
+}
+#breadcrumbs {
+  display: none;
+}
+.hubbox a {
+  background: #dedede;
+  border: 4px solid #aaa;
+  margin: 0 0 125px 0;
+  transition: 0.75s;
+  display: block;
+  padding: 15px;
+  font-size: 105%;
+  display: inline-block;
+}
+.hubbox a:hover {
+  background: rgb(0,0,0,0);
+  border: 4px solid rgb(0,0,0,0);
+  cursor: crosshair;
 }
 [[/module]]
 
@@ -120,6 +140,8 @@ Beneath a silent moon, an operative from a recovery team walks past my broken ho
 
 Inside the serpent, my eyes close, and I join the [[[The Eschaton | peaceful]]] dead.
 
-[[module CSS]]
-@import url("http://www.scp-wiki.net/nagiros/code/1");
-[[/module]]
+[[=]]
+[[div class="hubbox"]]
++ [[[white space hub | (HUB)]]]
+[[/div]]
+[[/=]]
