@@ -10,20 +10,14 @@ parent:white-space-hub
 #breadcrumbs {
   display: none;
 }
-.hubbox a {
+.hubbox {
   background: #dedede;
   border: 4px solid #aaa;
   margin: 125px 0 0 0;
-  transition: 0.75s;
-  display: block;
   padding: 15px;
   font-size: 105%;
   display: inline-block;
-}
-.hubbox a:hover {
-  background: rgb(0,0,0,0);
-  border: 4px solid rgb(0,0,0,0);
-  cursor: crosshair;
+  font-weight: bold;
 }
 [[/module]]
 
@@ -142,6 +136,7 @@ Inside the serpent, my eyes close, and I join the [[[The Eschaton | peaceful]]] 
 
 [[=]]
 [[div class="hubbox"]]
+| 1 | [[[The Eschaton | 2]]] >>
 + [[[white space hub | (HUB)]]]
 [[/div]]
 [[/=]]
