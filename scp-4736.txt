@@ -34,9 +34,6 @@ parent:white-space-hub
   padding-left: 2%;
   border-left: 3px solid white;
 }
-table.wiki-content-table td:nth-child(1) {
-  text-align: center;
-}
 span:not([class]):not([style]) > sup.footnoteref:first-child > a.footnoteref:before,
 sup.footnoteref > a.footnoteref:before {
   content: "[";
@@ -45,20 +42,11 @@ span:not([class]):not([style]) > sup.footnoteref:first-child > a.footnoteref:aft
 sup.footnoteref > a.footnoteref:after {
   content: "]";
 }
-.hubbox a {
-  background: rgb(38, 38, 38);
-  border: 4px solid #aaa;
+.linkbox {
   margin: 125px 0 0 0;
-  transition: 0.75s;
-  display: block;
-  padding: 15px;
-  font-size: 105%;
+  font-size: 115%;
   display: inline-block;
-}
-.hubbox a:hover {
-  background: #141414;
-  border: 4px solid #141414;
-  cursor: crosshair;
+  font-weight: bold;
 }
  
 /*
@@ -400,6 +388,10 @@ blockquote, div.blockquote {
   border: 1px solid #c7c7c7;
 }
 [[/module]]
+
+[[div style="margin: auto; margin-bottom: 20px; text-align: center; padding-bottom: 4px;"]]
+**[[[white space (HUB)]]]** » DEAD WEIGHT ≡ DON'T KILL THE VIBE
+[[/div]]
 
 [[=]]
 [[module Rate]]
@@ -964,8 +956,8 @@ SiteCommand is eventually turned back. The reasons are unclear and irrelevant; t
 [[/div]]
 
 [[=]]
-[[div class="hubbox"]]
-+ [[[white space hub | (HUB)]]]
+[[div class="linkbox"]]
+<< [[[The Eschaton | 2]]] | 3 | ? >>
 [[/div]]
 [[/=]]
 
