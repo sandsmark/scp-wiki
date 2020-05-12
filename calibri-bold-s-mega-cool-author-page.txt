@@ -93,7 +93,21 @@ This tooltip hover effect is adapted from LurkD's code on http://www.scp-wiki.ne
     border-width: thick;
 }
 
+.breaking-news {
+ text-align: center;
+ border-style: double;
+ border-color: black;
+ border-width: thick;
+ width: 100%;
+}
+
 [[/module]]
+
+[[div class="breaking-news"]]
+
++ Breaking News
+
+[[/div]]
 
 [[div class="rate"]]
 [[>]]
