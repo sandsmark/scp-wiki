@@ -103,25 +103,29 @@ This tooltip hover effect is adapted from LurkD's code on http://www.scp-wiki.ne
 
 [[/module]]
 
-[[div class="breaking-news"]]
-
-+ Breaking News
-
-[[/div]]
-
-@@ @@
-
 [[div class="rate"]]
 [[>]]
 [[module Rate]]
 [[/>]]
 [[/div]]
 
+[[div class="breaking-news"]]
+
++ Breaking News
+
+[[module Listpages created_by="=" tag="-author -workbench -contest -splash -supplement -translation" category="-fragment" limit="1"]]
+**New Article: [[[*%%link%%]]] \
+[[/module]] \
+
+[[/div]]
+
+@@ @@
+
 [[div class="infobox"]]
 [[=]]
 [[module Rate]]
 [[size large]]__**Random**__[[/size]]
-[[module Listpages created_by="=" tag="-author -workbench -contest -splash -supplement -translation" category="-fragment -component" limit="1" order="random"]]
+[[module Listpages created_by="=" tag="-author -workbench -contest -splash -supplement -translation" category="-fragment" limit="1" order="random"]]
 [[[*%%link%%|[[#expr (%%total%%+1)]] Articles]]] \
 [[/module]] \
 [[module Listpages created_by="=" tag="+scp -author -workbench -contest -splash -supplement -translation" category="-fragment -component" limit="1" order="random"]]
