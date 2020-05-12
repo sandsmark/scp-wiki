@@ -133,13 +133,6 @@ This tooltip hover effect is adapted from LurkD's code on http://www.scp-wiki.ne
  width: 100%;
 }
 
-.preview{
-    iframe.scpnet-interwiki-frame {
-        -webkit-filter: invert(0.8) hue-rotate(180deg) saturate(0.5);
-                filter: invert(0.8) hue-rotate(180deg) saturate(0.5);
-    }
-}
-
 [[/module]]
 
 [[div class="rate"]]
@@ -943,6 +936,11 @@ This tab is just for testing code or whatever that I can't test on a sandbox.
 |perpage=250
 |shadow=
 ]]
+
+iframe.scpnet-interwiki-frame {
+    -webkit-filter: invert(0.8) hue-rotate(180deg) saturate(0.5);
+            filter: invert(0.8) hue-rotate(180deg) saturate(0.5);
+}
 
 [[/tab]]
 [[tab Ownership and Emergency Information]]
