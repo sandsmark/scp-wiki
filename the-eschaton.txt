@@ -30,7 +30,6 @@ html {
  
 /* Centered title */
 #page-title {
-  display: block !important;
   text-align: center;
 }
  
@@ -43,25 +42,16 @@ html {
   margin-bottom: 15px;
 }
 
-.hubbox a {
-  background: #dedede;
-  border: 4px solid #aaa;
+.linkbox {
   margin: 0 0 125px 0;
-  transition: 0.75s;
-  display: block;
-  padding: 15px;
-  font-size: 105%;
+  font-size: 115%;
   display: inline-block;
-}
-.hubbox a:hover {
-  background: rgb(0,0,0,0);
-  border: 4px solid rgb(0,0,0,0);
-  cursor: crosshair;
+  font-weight: bold;
 }
 [[/module]]
 
 [[div style="margin: auto; margin-bottom: 20px; text-align: center; padding-bottom: 4px;"]]
-**[[[Serpent's Hand Hub]]]** » Serpent Bound \\\ BEAR WITNESS
+**[[[white space (HUB)]]]** » Serpent Bound \\\ BEAR WITNESS
 [[/div]]
 
 [[include info:start]]
@@ -226,8 +216,8 @@ Until it is proven otherwise, the Eschaton is assumed to be a hostile action aga
 [[/div]]
 
 [[=]]
-[[div class="hubbox"]]
-+ [[[white space hub | (HUB)]]]
+[[div class="linkbox"]]
+<< [[[Slipping Away | 1]]] | 2 | [[[SCP-4736 | 3]]] >>
 [[/div]]
 [[/=]]
 
