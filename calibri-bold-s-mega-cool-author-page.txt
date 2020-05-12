@@ -1,36 +1,11 @@
 title:Calibri Bold's Mega Cool Author Page
 [[include :scp-wiki:component:black-highlighter-theme-dev]]
-[[include :scp-wiki:component:bhl-dark-sidebar]]
 
 [[module css]]
 
 :root {
     --header-title: "Historical Thickness";
     --header-subtitle: "Crowned the code of SCP-194";
-}
-
-:root {
-    /* Rating Module Colors */
-    --rating-module-button-color: var(--light-gray-monochrome);
-    --rating-module-button-plus-color: 0, 200, 0;
-    --rating-module-button-negative-color: 200, 0, 0;
-    --rating-module-button-cancel-color: 200, 200, 200;
-    --rating-module-button-credit-color: 50, 50, 50;
-    --rating-module-text-color: var(--swatch-menutxt-light-color);
-    --rating-module-text-hover-color: var(--swatch-menutxt-light-color);
-    
-    --background-gradient-distance: 0rem;
-
-    /* Primary Theme Colors */
-    --swatch-background: 39, 39, 39;
-    --swatch-primary: var(--medium-accent);
-    --swatch-primary-darker: var(--bright-accent);
-    --swatch-primary-darkest: var(--medium-accent);
-    /* Primary Text Colors */
-    --swatch-text-dark: var(--white-monochrome);
-    --swatch-text-light: var(--black-monochrome);
-    --swatch-important-text: var(--bright-accent);
-    --rounder-red: #ED1B24;
 }
 
 .rate {
