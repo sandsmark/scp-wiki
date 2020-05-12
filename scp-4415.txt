@@ -2,36 +2,28 @@ title:SCP-4415
 [[module CSS]]
 /* LOGO */
 div#header {
-background-image: url(http://scp-wiki.wdfiles.com/local--files/site-17-hub/header17);
+  background-image: url(http://scp-wiki.wdfiles.com/local--files/site-17-hub/header17);
 }
 
 /* HEADER TEXT */
 div#header h1 a span {
-font-size: 0px;
+  font-size: 0px;
 }
 div#header h1 a:before {
-content: "Site-17 Database";
-color: #eee;
-
+  content: "Site-17 Database";
+  color: #eee;
 }
 div#header h2 span {
-font-size:0px;
-padding: 4px;
+  font-size:0px;
+  padding: 4px;
 }
 div#header h2:after {
-content: "Living Past Our End";
-font-weight: bold;
-color: #f0f0c0;
-padding: 19px 0;
-text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
-white-space: pre;
-}
-#page-content .collapsible-block-folded a.collapsible-block-link {
-    animation: blink 0.8s ease-in-out infinite alternate;
-}
-@keyframes blink {
-    0% { color: transparent; }
-    50%, 100% { color: #b01; }
+  content: "Living Past Our End";
+  font-weight: bold;
+  color: #f0f0c0;
+  padding: 19px 0;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+  white-space: pre;
 }
 .email {float: center; border: solid 2px #000000; width: 88%; padding: 1px 15px; margin: 10px 10px 10px 10px; box-shadow: 0 1px 3px rgba(0,0,0,.5)}
 a.collapsible-block-link { font-weight: bold; }
@@ -217,25 +209,12 @@ Dr. Thomas Graham, Director of Site-17
 
 [[/=]]
 
-@@ @@
-@@ @@
-@@ @@
-
-[[=]]
-[[size 90%]]**Site-17 Catalog Navigation:**[[/size]]
-[[/=]]
-[[div class="footer-wikiwalk-nav"]]
-[[=]]
-<< [[[SCP-4175]]] | SCP-4415 | [[[Systems Patch]]] >>
-[[/=]]
-[[/div]]
-
 [[module CSS]]
-@import url("http://www.scp-wiki.net/nagiros/code/1");
+@import url("/nagiros/code/1");
 [[/module]]
 
 [[footnoteblock]]
-[[div class="footer-wikiwalk-nav"]]
+[[div class="footer-wikiwalk-nav" style="margin-top: 50px"]]
 [[=]]
 << [[[SCP-4414]]] | SCP-4415 | [[[SCP-4416]]] >>
 [[/=]]
