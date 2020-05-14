@@ -1,63 +1,37 @@
 title:Lt. Flops' Author Page
 [[include :scp-wiki:component:scp-trans-pride |trans-pride-logo= --] |trans-pride-footer= --]]]
+[[include :topia:theme:flopstyle]]
+
+[!-- NOTE: This page currently uses an included component ("flopstyle") from a sandbox site. Said component will be published to the Wiki after it goes through the necessary changes and receives Tech permission. --]
 
 [[module CSS]]
 /* LISTPAGES EXCEPTION */
  .preview .span, .infobox{ display: none !important; }
 
-/* GLOBAL EDITS */
- body{ color: rgb(12, 12, 12); }
- #header h1 a {
-     display: block;
-     margin: 0;
-     padding: 80px 0 25px;
-
+/* HEADER */
+ #header h1 a{
      color: transparent;
-     background: transparent;
-
-     line-height: 0;
-     max-height: 0;
      font-family: 'Carrois Gothic', sans-serif, Arial;
-     text-decoration: none;
      text-shadow: none;
-     letter-spacing: .9px;
 }
- #header h1 a::before {
+ #header h1 a::before{
      content: "Lt. Flops’ Author Page";
-
      color: #f8f8f8;
-
-     font-size: 90%;
      text-shadow: 3px 3px 5px black;
      letter-spacing: -.02em;
 }
- #header h1 a span{
-     content: "";
-     visibility: hidden;
-}
- #header h2 span {
-     display: block;
-     margin: 0;
-     padding: 19px 0;
-
+ #header h2 span{
      color: transparent;
-
-     line-height: 0;
-     max-height: 0;
-     font-weight: bold;
      text-shadow: none;
 }
- #header h2 span::before {
+ #header h2 span::before{
      content: "Archiving Apotheosis";
-
      color: #f8f8f8;
      text-shadow: 1px 1px 1px rgba(0,0,0,.8);
 }
  #page-title{ display: none; }
 
 /* DIV BLOCKS */
- div.blockquote,
- blockquote{ border: 3px double #999; }
  .header{
      margin: 1em 0;
      padding: 0 1em;
@@ -86,59 +60,6 @@ title:Lt. Flops' Author Page
      font-size: 125%;
      font-weight: bold;
 }
-
-/* FORMATTING */
-.collapsible-block-link{ font-weight: bold; }
-hr{
-    display: block;
-    height: 1px;
-    margin: 1em 0;
-    padding: 0;
-
-    border: 0;
-}
- .h3, .h5{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 1px;
-    word-break: unset;
-}
- .h3{
-    margin: .5em 0 .4em;
-    padding: 0;
-
-    color: rgb(12, 12, 12);
-    font-size: 130%;
-}
- .h5{
-    font-size: 100%;
-}
-
-/* TABS — from Magnus Web Format */
- .yui-navset .yui-nav .selected a em,  .yui-navset .yui-nav a em{
-     top: 0;
-     margin-bottom: 0;
-     padding: .25em .75em; 
-}
- .yui-navset .yui-nav .selected a{ background: gray; }
- .yui-navset .yui-nav .selected{ margin: 0; }
- .yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a:focus, .yui-navset .yui-nav .selected a:hover, .yui-navset .yui-nav .selected a{ background: gray; }
- .yui-navset .yui-nav a:hover,
- .yui-navset .yui-nav a:focus{
-     background: gainsboro;
-     text-decoration: none;
-}
- .yui-navset .yui-nav a, .yui-navset .yui-navset-top .yui-nav a{
-     background-color: none;
-     background-image: none;
-}
- .yui-navset .yui-nav a{ background: none; }
- .yui-navset .yui-nav li{ margin: 0; }
 [[/module]]
 
 [[=]]
@@ -151,7 +72,7 @@ hr{
 
 [[module ListUsers users="."]]
 [[div class="blockquote"]]
-[[span class="h3"]]INTERVIEW LOG[[/span]]
++++ INTERVIEW LOG
 ----
 = **[BEGIN LOG]**
 ----
@@ -184,7 +105,7 @@ hr{
 > **[[span style="font-family: Courier, monospace; font-size: 110%;"]]OPENING FILE[[/span]]. . .**
 
 [[div class="header"]]
-[[span class="h3"]]--coolpage funpage--[[/span]]
++++ --coolpage funpage--
 
 The following file contains an activated **GAY FROGS**-Class **DANK ANTIMEME**. You are instructed to run. In the event that you're lazy, you are directed to proceed at a velocity directly proportional to your daily cholesterol intake. 
 
@@ -210,7 +131,7 @@ If you like my works, consider donating!
   [[/span]]
 [[/a]]
 ----
-[[span class="h3"]]Select Production Commentaries[[/span]]
++++ Select Production Commentaries
 ----
 [[include component:image-block
 |name=http://scp-wiki.wdfiles.com/local--files/floppyphoenix/lt-flops.jpg
@@ -231,11 +152,11 @@ The following are quote excerpts from individuals affected by LIMP FIREBIRD, a D
 
 +++++ --Westrin, Captain of the SCPF //Spooky Boat//
 ----
-[[span class="h3"]]Project Summary[[/span]]
++++ Project Summary
 ----
-Hi there, {{[non-//Homo ignotus// non-Daevite non-malfunctioning Lazarus-01 Procedure humanoid]}}. It appears you've stumbled upon my personnel file. 
+Hi there, {{[non-//Homo ignotus// non-Daevite non-malfunctioning Lazarus-01 Procedure humanoid]}}. It appears you've stumbled upon my personnel file. I–
 
-I– Wait, //please// don't leave. 
+Wait, //please// don't leave. 
 
 No, come back!
 
@@ -245,10 +166,10 @@ I'll go get you a juice box. Or some bourbon.
 
 Don't like it? Well, that's too darn bad, hun, isn't it?
 ----
-[[span class="h3"]]Deployment Record[[/span]]
++++ Deployment Record
 -----
 [[div class="blockquote"]]
-[[span class="h3"]]My Newest Articles![[/span]]
++++ My Newest Articles!
 ----
 **1. [ENTRY]** 🌊 **[[[http://wanderers-library.wikidot.com/cave-story|Cave Story]]]** (//for the Wanderers' Depths Contest//)
 **2. [GOI FORMAT]** 👤 **[[[scattersomnia| "Scattersomnia": A Disease of the Wise and Drowsy Wanderers ]]]** (//for Jam Contest Two//)
@@ -259,9 +180,9 @@ Don't like it? Well, that's too darn bad, hun, isn't it?
 
 [[tabview]]
 [[tab SCP-Wiki Works]]
-[[span class="h3"]]FLOPPY'S ARTICLES[[/span]]
++++ FLOPPY'S ARTICLES
 
-[[span class="h5"]]I write things, depending on how you define "write" and "things".[[/span]]
++++++ I write things, depending on how you define "write" and "things".
 ----
 **Floppy Says:** In the spirit of collaboration: I grant any writer, artist, or otherwise, full permission to use or depict the SCPs, concepts, characters, task forces, locations, or events created by me in your own SCP Wiki work. Drop a link my way; maybe I'll like it or give you some pointers on how to execute it best!
 -----
@@ -390,19 +311,19 @@ Don't like it? Well, that's too darn bad, hun, isn't it?
 [[/tab]]
 
 [[tab Wanderers' Library Works]]
-[[span class="h3"]]FLOPPY'S ARTICLES x2[[/span]]
++++ FLOPPY'S ARTICLES x2
 
-[[span class="h5"]]I write for The Wanderers' Library too![[/span]]
++++++ I write for The Wanderers' Library too!
 ----
 @@ @@
-[[span class="h3"]] ~ [[[*http://wanderers-library.wikidot.com/cave-story|Cave Story]]] ~ [[/span]]
++++  ~ [[[*http://wanderers-library.wikidot.com/cave-story|Cave Story]]] ~ 
 @@ @@
 [[/tab]]
 
 [[tab Other]]
-[[span class="h3"]]CSS THEMES[[/span]]
++++ CSS THEMES
 
-[[span class="h5"]]My CSS Themes![[/span]]
++++++ My CSS Themes!
 ----
 [[div style="font-weight: bold; text-align: center;"]]
 
@@ -411,9 +332,9 @@ Don't like it? Well, that's too darn bad, hun, isn't it?
 
 [[/div]]
 ----
-[[span class="h3"]]TAGS[[/span]]
++++ TAGS
 
-[[span class="h5"]]Tags I've requested, created, or contributed to![[/span]]
++++++ Tags I've requested, created, or contributed to!
 ----
 [[div style="font-weight: bold; text-align: center;"]]
 
@@ -429,9 +350,9 @@ Don't like it? Well, that's too darn bad, hun, isn't it?
 
 [[/div]]
 ----
-[[span class="h3"]]DECLASSIFICATIONS[[/span]]
++++ DECLASSIFICATIONS
 
-[[span class="h5"]]See:@@ @@[[[scpdeclassified|r/SCPDeclassified]]].[[/span]]
++++++ See:@@ @@[[[scpdeclassified|r/SCPDeclassified]]].
 ----
 [[div style="font-weight: bold; text-align: center;"]]
 
@@ -441,9 +362,9 @@ Don't like it? Well, that's too darn bad, hun, isn't it?
 [[/tab]]
 
 [[tab Commentary]]
-[[span class="h3"]]COMMENTARY[[/span]]
++++ COMMENTARY
 
-[[span class="h5"]]Last updated: June 2018.[[/span]]
++++++ Last updated: June 2018.
 ----
 [[span class="scp-showcase"]]--SCP-2641: Before the Fire-- **[DELETED]**[[/span]]
 
@@ -585,13 +506,13 @@ Additional Documents:
 [[/tab]]
 
 [[tab Translations]]
-[[span class="h3"]]PAGE TRANSLATIONS[[/span]]
++++ PAGE TRANSLATIONS
 
-[[span class="h5"]]Cool people doing cool translations.[[/span]]
++++++ Cool people doing cool translations.
 ----
 The following are articles of mine that have been translated by other SCP Wiki branches. I'm //super// thankful to anyone that's shared my articles to the international community by taking the time to translate them.
 ----
-[[span class="h3"]]SCPs[[/span]]
++++ SCPs
 ----
 * **[[[scp-3787|SCP-3787]]]** | **[[https://youtu.be/5hQaGJw-pmw Audio version]]**
  * **[*http://lafundacionscp.wikidot.com/scp-3787 Spanish Translation]** by **[[*user Riyer A]]**
@@ -654,7 +575,7 @@ CTapbIu_XyJIuraH]]**
  * **[*http://scp-wiki-cn.wikidot.com/scp-5990 Chinese Translation]** by **[[*user ashausesall]]**
  * **[*http://scp-pt-br.wikidot.com/scp-5990 Portuguese Translation]** by **[[*user L200]]**
 ----
-[[span class="h3"]]TALES[[/span]]
++++ TALES
 ----
 * **[[[the-abyss-gazes-back|The Abyss Gazes Back (And It's ASCII On A CRT Screen)]]]**
  * **[*http://scp-wiki-cn.wikidot.com/the-abyss-gazes-back Chinese Translation]** by **[[*user Patrick Liu]]**
@@ -680,7 +601,7 @@ CTapbIu_XyJIuraH]]**
 * **[[[no-sense-crying|Spilled Milk]]]**
  * **[*http://scp-pt-br.wikidot.com/no-sense-crying Portuguese Translation]** by **[[*user L200]]**
 ----
-[[span class="h3"]]GOI FORMATS[[/span]]
++++ GOI FORMATS
 ----
 * **[[[critter-profile-bartholomew|Critter Profile: Bartholomew!]]]**
  * **[*http://scp-es.com/critter-profile-bartholomew Spanish Translation]** by **[[*user Riyer A]]**
@@ -688,7 +609,7 @@ CTapbIu_XyJIuraH]]**
 * **[[[scattersomnia|"Scattersomnia": A Disease of the Wise and Drowsy Wanderers]]]**
  * **[*http://scp-pt-br.wikidot.com/scattersomnia Portuguese Translation]** by **[[*user L200]]**
 ----
-[[span class="h3"]]SERIES -- Team Bird[[/span]]
++++ SERIES -- Team Bird
 ----
 * **[[[bird|Team Bird Hub]]]**
  * **[*http://lafundacionscp.wikidot.com/bird Spanish Translation]** by **[[*user morhadow]]**
@@ -712,7 +633,7 @@ CTapbIu_XyJIuraH]]**
 * **[[[Avian Anthology II]]]**
  * **[*http://scp-wiki-cn.wikidot.com/avian-anthology-ii Chinese Translation]** by **[[*user vxeov]]**
 ----
-[[span class="h3"]]SERIES -- A Non-Prophet Organization[[/span]]
++++ SERIES -- A Non-Prophet Organization
 ----
 * **[[[non-prophet-organization-hub|A Non-Prophet Organization Hub]]]**
  * **[*http://scp-int.wikidot.com/non-prophet-organization-hub International Version]**
@@ -730,35 +651,35 @@ CTapbIu_XyJIuraH]]**
 [[/tab]]
 
 [[tab Fan Art]]
-[[span class="h3"]]FAN ART[[/span]]
++++ FAN ART
 
-[[span class="h5"]]Beautiful fan renditions![[/span]]
++++++ Beautiful fan renditions!
 ----
-[[span class="h3"]] [[[SCP-3787]]] [[/span]]
++++  [[[SCP-3787]]] 
 
 * **[*https://imgur.com/2McPrdG Glue Factory]** by **[[*user pastarasta1]]** (**[[[*http://www.scp-wiki.net/pastarasta1-s-simply-epic-artpage|Art Page]]]**)
 * **[*https://www.deviantart.com/sunnyclockwork/art/SCP-3787-793333675 Horse Meme]** by **[[*user SunnyClockwork]]** (**[[[*http://www.scp-wiki.net/sunny-s-black-and-white-art|Art Page]]]**)
 ----
-[[span class="h3"]] [[[SCP-3309]]] [[/span]]
++++  [[[SCP-3309]]] 
 
 * **[*https://www.deviantart.com/sunnyclockwork/art/SCP-3309-788150972 Where We Go When We Fade, Fade Away]** by **[[*user SunnyClockwork]]** (**[[[*http://www.scp-wiki.net/sunny-s-black-and-white-art|Art Page]]]**)
 * **[*http://scp-wiki.wdfiles.com/local--files/dianas-spectacular-not-really-art-hub/3309-1 SCP-3309]** by **[[*user DianaBerry]]** (**[[[*http://www.scp-wiki.net/dianas-spectacular-not-really-art-hub|Art Page]]]**)
 * //**[*https://imgur.com/ecGAKqv are you worth remembering?]**// by **[[*user crushed bananas]]**
 ----
-[[span class="h3"]] [[[SCP-3739]]] [[/span]]
++++  [[[SCP-3739]]] 
 
 * **[*https://i.imgur.com/aTZQBRz.jpg Moosphere Medley]** by **[[*user Dramps]]**
 * **[*https://i.imgur.com/7ih0Wov.png D-1711, Experimentation Log]** by **[[*user pastarasta1]]** (**[[[*http://www.scp-wiki.net/pastarasta1-s-simply-epic-artpage|Art Page]]]**)
 ----
-[[span class="h3"]] [[[SCP-2]]] [[/span]]
++++  [[[SCP-2]]] 
 
 * **[*https://old.reddit.com/r/DankMemesFromSite19/comments/a3vb63/so_scp2_is_now_an_scp_so_to_celebrate_i_made_a/ TL;DR]** by **Unknown**
 ----
-[[span class="h3"]] [[[SPC-993]]] [[/span]]
++++  [[[SPC-993]]] 
 
 * **[*http://scp-wiki.wdfiles.com/local--files/caimanchameleon/SPC-993 Low-Poly Bobble the Clown Shark]** by **[[*user CaimanChameleon]]** (**[[[*http://www.scp-wiki.net/caimanchameleon|Art Page]]]**)
 ----
-[[span class="h3"]] Avatar Art [[/span]]
++++  Avatar Art 
 
 [[collapsible]]
 Drawn by [[*user Phoenixfire003]] (@phoefire003) and used with her permission.
@@ -768,7 +689,7 @@ Drawn by [[*user Phoenixfire003]] (@phoefire003) and used with her permission.
 [[/tab]]
 
 [[tab Writing]]
-[[span class="h3"]]WRITING/INSPIRATION/COMMUNITY[[/span]]
++++ WRITING/INSPIRATION/COMMUNITY
 ----
 I'm a big science fiction fan, and a diehard fan of the //Halo// series, which is where a lot of my inspiration comes from. Truth be told, I'm a nerd. I would say my articles are typically science fiction-oriented (specifically featuring paratechnology), and I always like to explore some wacky concept to its logical extreme. I'm not always the most successful, but I do try.
 
@@ -807,46 +728,9 @@ And more to come!
 = **--**
 
 [[div class="header"]]
-[[span class="h3"]]--Inebriation--@@ @@Inoculation complete. Thanks for reading![[/span]]
++++ --Inebriation--@@ @@Inoculation complete. Thanks for reading!
 
 [[module Rate]]
 
 Wait, what the heck? Where did that come from?
 [[/div]]
-
-[[collapsible]]
-[[tabview]]
-[[tab Serpent's Hand (SCP Wiki)]]
-[[module ListPages order="created_at desc desc" tags="+serpents-hand" separate="no" perPage="200" prependLine="||~ Title||~ Author||~ Created||"]]
-|| **%%title_linked%%** || %%created_by_linked%% || %%created_at%% ||
-[[/module]]
-[[/tab]]
-[[tab Serpent's Hand (WL Wiki)]]
-||~ Title||~ Author||~ Created||
-|| **[[[http://wanderers-library.wikidot.com/genii-loci|Genii Loci]]]** || [[*user DrEverettMann]] || 18 Apr 2010, 03:09 ||
-|| **[[[http://wanderers-library.wikidot.com/compilation-of-documentsrelating-to-foedus-ore|Compilation of Documents Relating to Foedissimum Os]]]** || [[*user Dick Sheldon]] || 24 Oct 2011, 13:37 ||
-|| **[[[http://wanderers-library.wikidot.com/nigerian-lava-cat|Nigerian Lava Cat Husbandry Manual and Description]]]** || [[*user Plilt]] || 6 Nov 2011, 12:11 ||
-|| **[[[http://wanderers-library.wikidot.com/a-caution-to-the-wise|A Caution to the Wise]]]** || [[*user Midtime]] || 13 Nov 2011, 01:35 ||
-|| **[[[http://wanderers-library.wikidot.com/and-i-was-present-at-the-death-of-a-god|And I Was Present At The Death Of A God]]]** || [[*user Plilt]] || 9 Dec 2011, 16:35 ||
-|| **[[[http://wanderers-library.wikidot.com/voyage|Voyage to the Deep]]]** || [[*user Plilt]] || 13 Apr 2012, 18:18 ||
-|| **[[[http://wanderers-library.wikidot.com/a-girl-in-the-rain|A Girl in the Rain]]]** || [[*user Bunton]] || 19 Jun 2012, 14:37 ||
-|| **[[[http://wanderers-library.wikidot.com/your-father-s-son|Your Father's Son]]]** || [[*user Bouncl]] || 27 Jul 2012, 12:48 ||
-|| **[[[http://wanderers-library.wikidot.com/partial-visual-record-of-the-rediscovery|Partial Visual Record of the Rediscovery]]]** || [[*user Bunton]] || 8 Aug 2012, 17:42 ||
-|| **[[[http://wanderers-library.wikidot.com/ropen|Ropen Overview]]]** || [[*user Plilt]] || 8 Oct 2012, 19:34 ||
-|| **[[[http://wanderers-library.wikidot.com/communion|Communion]]]** || [[*user rumetzen]] || 6 Nov 2012, 15:19 ||
-|| **[[[http://wanderers-library.wikidot.com/wanderers|Wanderers]]]** || [[*user rumetzen]] || 25 Feb 2013, 11:34 ||
-|| **[[[http://wanderers-library.wikidot.com/vultures|Vultures]]]** || [[*user Plilt]] || 18 Mar 2013, 17:31 ||
-|| **[[[http://wanderers-library.wikidot.com/kiryu|Kiryu]]]** || [[*user Zyn]] || 21 Sep 2013, 01:21 ||
-|| **[[[http://wanderers-library.wikidot.com/overdue|Overdue]]]** || [[*user Silberescher]] || 19 Jan 2015, 23:28 ||
-|| **[[[http://wanderers-library.wikidot.com/pass-over-the-sea|Pass Over The Sea]]]** || Gaffney || 8 Sep 2016, 19:51 ||
-|| **[[[http://wanderers-library.wikidot.com/magpies-in-the-archive|Magpies in the Archives]]]** || [[*user Fraizwrite]] || 10 Aug 2018, 18:39 ||
-|| **[[[http://wanderers-library.wikidot.com/the-body-sleeping-next-to-me|the body sleeping next to me]]]** || [[*user everhue]] || 28 Oct 2019, 19:48 ||
-|| **[[[http://wanderers-library.wikidot.com/the-wordsmiths-induction|The Wordsmiths Induction]]]** || [[*user Nathan Erickson]] || 4 Nov 2019, 20:00 ||
-[[/tab]]
-[[tab Wanderers' Library]]
-[[module ListPages order="created_at desc desc" tags="+wanderers-library -serpents-hand" separate="no" perPage="200" prependLine="||~ Title||~ Created||~ Author||"]]
-|| **%%title_linked%%** || %%created_by_linked%% || %%created_at%% ||
-[[/module]]
-[[/tab]]
-[[/tabview]]
-[[/collapsible]]
