@@ -16,9 +16,13 @@ Rating module was made by [[*user 7happy7]]
 [[=image Flametext.gif]]
 
 [[module ListPages created_by="TheCassowary" order="rating desc" separate="no" tags="-tale -goi-format -author -template" perPage="20" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Created ||"]]
-|| %%title_linked%% || ##green|+ %%rating%%## || %%comments%% || %%created_at%% ||
+|| %%title_linked%% || ##cc3300|+ %%rating%%## || %%comments%% || %%created_at%% ||
 [[/module]]
 
-[[module ListPages created_by="TheCassowary" order="rating desc" separate="no" tags="-co-authored tale goi-format" perPage="20" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Created ||"]]
-|| %%title_linked%% || ##green|+ %%rating%%## || %%comments%% || %%created_at%% ||
+[[module ListPages created_by="TheCassowary" order="rating desc" separate="no" tags="-co-authored tale" perPage="20" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Created ||"]]
+|| %%title_linked%% || ##0000cc|+ %%rating%%## || %%comments%% || %%created_at%% ||
+[[/module]]
+
+[[module ListPages created_by="TheCassowary" order="rating desc" separate="no" tags="-co-authored goi-format" perPage="20" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Created ||"]]
+|| %%title_linked%% || ##cc00cc|+ %%rating%%## || %%comments%% || %%created_at%% ||
 [[/module]]
