@@ -1,9 +1,6 @@
 title:SCP-3719
 [[include :scp-wiki:component:scp-trans-pride |trans-pride-logo= --] |trans-pride-footer= --]]]
-
-[[>]]
-[[module Rate]]
-[[/>]]
+[[include :scp-wiki:theme:flopstyle]]
 
 [[include :scp-wiki:component:info-ayers
 |lang=en
@@ -12,83 +9,26 @@ title:SCP-3719
 |comments=**SCP-3719:** Your Friendly Neighbourhood Lawnmower 
 **Author:** [[*user Lt Flops]] 
 ----
-[[include :scpdsandbox:floppyphoenix-info]]
+[[include :scp-sandbox-3:flops-info]]
 [[/div]]
 
-[[module CSS]]
-/* INFO BOX */
-sup{
-    vertical-align: top;
-    position: relative;
-    top: -0.5em;
-}
-body{
-    --cutColour: #fafafa;
-    --barColour: #590505;
-    color: rgb(12, 12, 12);
-}
-.translation_block{ display: none; }
-.u-faq{ display: none; }
+[[>]]
+[[module Rate]]
+[[/>]]
 
-/* DIV BLOCK */
-.quote-block{
-    border: 3px double #999;
-    background-color: #f4f4f4;
-    padding: .25em 1em;
-    margin-bottom: 1em;
-}
-
-/* FORMATTING */
-.collapsible-block-link{
-    font-weight: bold;
-}
-hr{
-    margin: 1em 0;
-    padding: 0;
-    border: 0;
-}
-.lite-header hr{
-    width: 45%;
-    margin: auto;
-    background-color: #e6e6e6;
-    border: none;
-    height: 2px;
-}
-.h2{
-    margin: 0.5em 0 0.4em;
-    padding: 0;
-    letter-spacing: 1px;
-    font-size: 150%;
-    font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
-}
-[[/module]]
-
-[[table style="border: none; width: 100%;"]]
-[[row]]
-[[cell]]
-[[span style="font-size: 125%;"]][[span style="font-weight: 900;"]]ITEM NUMBER:[[/span]] SCP-3719[[/span]]
-[[/cell]]
-[[cell style="text-align: right;"]]
-[[span style="font-weight: 900; font-size: 125%;"]]LEVEL 1/3719[[/span]]
-[[/cell]]
-[[/row]]
-[[row]]
-[[cell]]
-[[span style="font-size: 125%;"]][[span style="font-weight: 900;"]]CONTAINMENT CLASS:[[/span]] SAFE[[/span]]
-[[/cell]]
-[[cell style="text-align: right;"]]
-[[span style="font-weight: 900; font-size: 125%;"]]UNRESTRICTED[[/span]]
-[[/cell]]
-[[/row]]
-[[/table]]
-
-[[include component:floppy-disruption-bar
-|disruption-class=vlam
-|disruption-bg-color=rgb(0, 117, 78)
-|disruption-text-color=rgb(252, 252, 252)
+[[include :scp-wiki:component:flops-header
+|item=3719
+|containment=safe
+|level=1
+|security=unrestricted
+|disruption=vlam
+|disruption-bg-color=hsl(160, 100%, 27%)
 ]]
 ----
-[[include :scp-sandbox-3:image-zoom name=ecto-lawn-mower.jpg|caption=SCP-3719 upon recovery (hover to enlarge).|width=325px|align=right]]
+[[include :scp-sandbox-3:image-zoom
+|width=310px
+|name=ecto-lawn-mower.jpg
+|caption=SCP-3719 upon recovery (hover to enlarge).]]
 
 **Special Containment Procedures:** SCP-3719 is kept in a standard object containment stall in the Anomalous Objects Wing of Site-82. 
 
@@ -104,15 +44,11 @@ SCP-3719-A-1 through -61 (collectively designated SCP-3719-B) are contained in s
 
 Upon use, SCP-3719-A continues to operate until every square meter within the desired lawn is mowed, experiencing a sense of personal responsibility from its completion. SCP-3719-A is not hindered by this mind-affecting property, and instead, considers the use of SCP-3719 to be a pleasurable and cathartic experience. This effect is shared by any person with a similar headspace to SCP-3719-A[[footnote]]This includes close familial relatives within one to two generations of SCP-3719-A.[[/footnote]] within the general vicinity of its effects.[[footnote]]This area of effects expands directly proportional to the number of SCP-3719-A operating SCP-3719 at a time.[[/footnote]]
 
-@@ @@
-[[div class="lite-header"]]
+[[div class="lite-heading"]]
+----
+++ Addenda Materials
 ----
 [[/div]]
-= [[span class="h2"]]Addenda Materials[[/span]]
-[[div class="lite-header"]]
-----
-[[/div]]
-@@ @@
 
 **I. Discovery**
 
@@ -124,10 +60,8 @@ The formation of masses similar to SCP-3719-B, as well as the widespread manifes
 
 The following is a transcript of an interview with Grace Farley, the mother of Kevin Farley. Kevin Farley was determined to be an individual within SCP-3719-B at the time of discovery. 
 
-[[div class="quote-block"]]
-[[=]]
+[[div class="blockquote"]]
 +++ VIDEO LOG
-[[/=]]
 ----
 **INTERVIEWER:** Agent Francis Digby
 
@@ -196,9 +130,7 @@ The interview began after Foundation personnel searched for persons directly aff
 
 [[footnoteblock]]
 
-[[div style="border-bottom: 2px solid #777; margin-bottom: 1px;"]]
-[[/div]]
-[[div style="border-bottom: 1px solid #777;"]]
+[[div class="footing"]]
 [[/div]]
 
 [[=]]
