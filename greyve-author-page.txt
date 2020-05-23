@@ -1,5 +1,23 @@
 title:Greyve’s Personnel File
 [[include :scp-wiki:component:black-highlighter-theme-dev]]
+[[module CSS]]
+:root {
+    --header-title: "Greyve's Pages";
+    --header-subtitle: "Is it, like, a play on words for gravy, or like the word grey, or what?";
+    --logo-image: url("http://www.scp-wiki.net/local--files/greyve-author-page/prismlogo.png");
+
+    --pale-accent: 40, 230, 60;
+    /* light red, for visited links */
+    --bright-accent: 0, 133, 5;
+    /* bright red */
+    --medium-accent: 46, 100, 44;
+    /* medium red - the "default" accent color */
+    --dark-accent: 3, 100, 15;
+    /* dark red */
+    --alt-accent: 102, 221, 17;
+    /* pale orange, for newpage links */
+}
+[[/module]]
 
 [[>]]
 [[module Rate]]
