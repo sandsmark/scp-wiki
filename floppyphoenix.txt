@@ -1,68 +1,30 @@
 title:Lt Flops' Author Page
 [[include :scp-wiki:component:scp-trans-pride |trans-pride-logo= --] |trans-pride-footer= --]]]
-[[include :topia:theme:flopstyle]]
-
-[!-- NOTE: This page currently uses an included component ("flopstyle") from a sandbox site. Said component will be published to the Wiki after it goes through the necessary changes and receives Tech permission. --]
+[[include :scp-wiki:theme:flopstyle]]
 
 [[module CSS]]
 /* LISTPAGES EXCEPTION */
  .preview .span, .infobox{ display: none !important; }
 
 /* HEADER */
- #header h1 a{
+ #header h1 a, #header h2 span{
      color: transparent;
      text-shadow: none;
 }
  #header h1 a::before{
      content: "Lt Flops’ Author Page";
 }
- #header h2 span{
-     color: transparent;
-     text-shadow: none;
-}
  #header h2 span::before{
      content: "Archiving Apotheosis";
 }
  #page-title{ display: none; }
-
-/* DIV BLOCKS */
- .header{
-     margin: 1em 0;
-     padding: 0 1em;
-
-     background-color: #FFC0CB;
-     border: 1px solid #605858;
-
-     text-align: center;
-}
- .header hr{ background: #605858; }
- .ko-fi-link{
-     display: inline-block;
-     width: 100%;
-     margin: 0;
-     padding: .5em 0;
-
-     font-size: 140%;
-     font-weight: 700;
-     text-align: center;
-     text-shadow: 1px 3px 1px rgba(0, 0, 0, .3);
-}
- .ko-fi-link a:hover{ text-decoration: none; }
- .scp-showcase{
-     color: darkred;
-
-     font-size: 125%;
-     font-weight: bold;
-}
 [[/module]]
 
-[[=]]
-+ Lt Flops’ Author Page
-[[/=]]
++ Lt. Flops’ Author Page
 ----
-> **[[span style="font-family: Courier, monospace; font-size: 110%;"]]OPENING ENTITY OF INTEREST FILE #9731[[/span]]. . .**
+> [[span class="terminal-span"]]OPENING ENTITY OF INTEREST FILE #9731[[/span]]. . .
 
-> **[[span style="font-family: Courier, monospace; font-size: 110%;"]]AN ADDITION WAS ADDED. READ IT?[[/span]]**
+> [[span class="terminal-span"]]AN ADDITION WAS ADDED. READ IT?[[/span]]
 
 [[module ListUsers users="."]]
 [[div class="blockquote"]]
@@ -74,7 +36,7 @@ title:Lt Flops' Author Page
 
 **Interrogator:** You clearly have never seen a flock of sky-demons rain faeces Armageddon like the Battle of Agincourt.
 
-**%%title%%:** That's an oddly specific comparison.
+**%%title%%:** That's... An oddly specific comparison.
 
 **Interrogator:** Look, %%title%%, this isn't the type of bird you protect your Doritos from at the beach. This is a merciless enemy with a penchant to absolutely Godzillafy our shit up.
 
@@ -96,9 +58,9 @@ title:Lt Flops' Author Page
 [[/div]]
 [[/module]]
 
-> **[[span style="font-family: Courier, monospace; font-size: 110%;"]]OPENING FILE[[/span]]. . .**
+> [[span class="terminal-span"]]OPENING FILE[[/span]]. . .
 
-[[div class="header"]]
+[[div class="pink-header"]]
 +++ --coolpage funpage--
 
 The following file contains an activated **GAY FROGS**-Class **DANK ANTIMEME**. You are instructed to run. In the event that you're lazy, you are directed to proceed at a velocity directly proportional to your daily cholesterol intake. 
@@ -108,13 +70,13 @@ The following file contains an activated **GAY FROGS**-Class **DANK ANTIMEME**. 
 --Uhm, probably someone with, like, a //super// high clearance level. Or someone's Mary Sue OC.
 [[/div]]
 
-[[table style="width: 100%;"]]
+[[table style="font-size: 120%;"]]
 [[row]]
-[[cell style="font-size: 120%;"]]
+[[cell]]
 [[span style="font-weight: 900;"]]ENTITY:[[/span]] [[*user Lt Flops]]
 [[/cell]]
-[[cell style="font-size: 125%; text-align: right;"]]
-[[span style="font-weight: 900;"]]STATUS:[[/span]] [[span style="font-family: Courier New, Courier, monospace; font-weight: 900; color: green;"]]ACTIVE[[/span]]
+[[cell style="text-align: right;"]]
+[[span style="font-weight: 900;"]]STATUS:[[/span]] [[span class="terminal-span rev-green"]]ACTIVE[[/span]]
 [[/cell]]
 [[/row]]
 [[/table]]
@@ -136,7 +98,7 @@ The following are quote excerpts from individuals affected by LIMP FIREBIRD, a D
 
 //If the phrase "dank antimeme" makes it into an SCP, I am leaving this site forever. I am 100% serious.//
 
-+++++ —qntm, --Director of the Antimemetics Division-- Civilian #84250, {{#site19}}
++++++ —qntm, Civilian #84250, {{#site19}}
 ----
 //thats a weird way to spell sexy cyborg priests :///
 
@@ -180,9 +142,7 @@ Don't like it? Well, that's too darn bad, hun, isn't it?
 ----
 **Floppy Says:** In the spirit of collaboration: I grant any writer, artist, or otherwise, full permission to use or depict the SCPs, concepts, characters, task forces, locations, or events created by me in your own SCP Wiki work. Drop a link my way; maybe I'll like it or give you some pointers on how to execute it best!
 -----
-[[=]]
 ++ SCPs
-[[/=]]
 -----
 [[module Listpages created_by="=" order="created_at" tag="-translation +scp -international" category="-fragment -component" perPage="{$perPage}"]]
 
@@ -193,9 +153,7 @@ Don't like it? Well, that's too darn bad, hun, isn't it?
 
 [[/module]]
 -----
-[[=]]
 ++ Tales
-[[/=]]
 -----
 [[module Listpages created_by="=" order="created_at" tag="-translation +tale" category="-fragment -component" perPage="{$perPage}"]]
 
@@ -206,9 +164,7 @@ Don't like it? Well, that's too darn bad, hun, isn't it?
 
 [[/module]]
 -----
-[[=]]
 ++ GOI Formats
-[[/=]]
 -----
 [[module Listpages created_by="=" order="created_at" category="-fragment -component" tag="-translation +goi-format" perPage="{$perPage}"]]
 
@@ -219,9 +175,7 @@ Don't like it? Well, that's too darn bad, hun, isn't it?
 
 [[/module]]
 -----
-[[=]]
 ++ Hubs
-[[/=]]
 -----
 [[module Listpages created_by="=" order="created_at" category="-fragment -component" tag="-scp -tale -goi-format -author" perPage="{$perPage}"]]
 
@@ -232,9 +186,7 @@ Don't like it? Well, that's too darn bad, hun, isn't it?
 
 [[/module]]
 -----
-[[=]]
 ++ Collaborations
-[[/=]]
 -----
 [[include component:author-page-collab
   name=SCP-3309 |
@@ -346,7 +298,7 @@ Don't like it? Well, that's too darn bad, hun, isn't it?
 ----
 +++ DECLASSIFICATIONS
 
-+++++ See:@@ @@[[[scpdeclassified|r/SCPDeclassified]]].
++++++ See: [[[scpdeclassified|r/SCPDeclassified]]].
 ----
 [[div style="font-weight: bold; text-align: center;"]]
 
@@ -360,7 +312,7 @@ Don't like it? Well, that's too darn bad, hun, isn't it?
 
 +++++ Last updated: June 2018.
 ----
-[[span class="scp-showcase"]]--SCP-2641: Before the Fire-- **[DELETED]**[[/span]]
++++ --SCP-2641: Before the Fire-- **[DELETED]**
 
 [[collapsible show="     + Learn more?" hide="- Close excerpt" hideLocation="bottom"]]
 **Summary:** SCP-2641 is an ancient sapient concept that prefers to live inside literary media.
@@ -385,7 +337,7 @@ Additional Documents:
 [[/div]]
 [[/collapsible]]
 ----
-[[span class="scp-showcase"]][[[scp-3787|SCP-3787: The Horse Meme]]][[/span]]
++++ [[[scp-3787|SCP-3787: The Horse Meme]]]
 
 [[collapsible show="     + Learn more?" hide="- Close excerpt" hideLocation="bottom"]]
 **Summary:** A mysterious group of antimemetic equine entities is trying to give themselves some power on Earth. To counteract this, in what is perhaps the failed Deus Ex Machina of a drowsy god, horses have begun to breed 10 times more quickly, increasing the size of equine concepts in collective human headspace and making humans very afraid. This increase in "conceptual horseness" is effective in scaring away the Nighters, who fear the more powerful common Horse. 
@@ -401,7 +353,7 @@ It took me an awfully long time to come up with a second article. 3787 was far m
 If you find that this article reads like I threw a bunch of horse anomalies into a blender, then I assure you: Mary Shelley's Horsenstein is //precisely// what I was looking for. Totally. I promise.
 [[/collapsible]]
 ----
-[[span class="scp-showcase"]][[[scp-3719|SCP-3719: Your Friendly Neighbourhood Lawnmower]]][[/span]]
++++ [[[scp-3719|SCP-3719: Your Friendly Neighbourhood Lawnmower]]]
 
 [[collapsible show="     + Learn more?" hide="- Close excerpt" hideLocation="bottom"]]
 **Summary:** It's a lawnmower. Somehow, it ended up in a Baltimore suburb, quickly making the neighbourhood closer than it's ever been -- //quite literally// fusing a bunch of residents into a 5,000 kg flesh ball, perpetually mowing lawns. And they enjoy it.
@@ -411,7 +363,7 @@ If you find that this article reads like I threw a bunch of horse anomalies into
 I'd say it has a very Series I tone. This speaks not to the quality of the SCP (I think it's interesting enough), but to how simple it is. I haven't much to talk about in terms of how I wrote it because, to be honest, it took me a few days to go from the beginning to the critique stage. I had wanted to write something like this for about a year now but could never figure out how until recently.
 [[/collapsible]]
 ----
-[[span class="scp-showcase"]][[[scp-3309|SCP-3309: Where We Go When We Fade, Fade Away]]][[/span]]
++++ [[[scp-3309|SCP-3309: Where We Go When We Fade, Fade Away]]]
 
 [[collapsible show="     + Learn more?" hide="- Close excerpt" hideLocation="bottom"]]
 **Summary:** The Foundation classifies coldposts as a legitimate in-universe concept. When they learn that they can //delete// these coldposts -- as staff must do to their out-of-universe counterparts -- they do so with extreme prejudice and imprecision. This causes everything to go wrong.
@@ -432,7 +384,7 @@ Additional Documents:
 [[/div]]
 [[/collapsible]]
 ----
-[[span class="scp-showcase"]][[[scp-3464|SCP-3464: Olive Garden regularly communes with DEMONIC ENTITIES to summon their SATANIC sempiternal garlic bread]]][[/span]]
++++ [[[scp-3464|SCP-3464: Olive Garden regularly communes with DEMONIC ENTITIES to summon their SATANIC sempiternal garlic bread]]]
 
 [[collapsible show="     + Learn more?" hide="- Close excerpt" hideLocation="bottom"]]
 **Summary:** Some wizardy assholes steal Mr. Krab's secret garlic bread formula and start summoning demons with it.
@@ -444,7 +396,7 @@ This was fun to write. It was roughly 5 years ago that I had the idea for extrem
 What other aspects are in this? There's the ghostly voice of Don LaFontaine, a Foundation thaumaturge (because they have those too), demonic shenanigans inspired heavily by Third Law ("demonic edibles" for instance), and an actual demon possessing a hunk of garlic bread. A fun read all together, I promise!
 [[/collapsible]]
 ----
-[[span class="scp-showcase"]][[[spc-507|SPC-507: The Bigger Boat]]][[/span]]
++++ [[[spc-507|SPC-507: The Bigger Boat]]]
 
 [[collapsible show="     + Learn more?" hide="- Close excerpt" hideLocation="bottom"]]
 **Summary:** The Centre finds out about Extra-Universal Selachian threats and form a Marine Fighting Team with the know-how to punch it. My first GOI format, and Doomsday Contest 2019 entry.
@@ -482,7 +434,7 @@ Additional Documents:
 [[/div]]
 [[/collapsible]]
 ----
-[[span class="scp-showcase"]][[[scp-3570|EE-3570: Umbral Ultimatum]]][[/span]]
++++ [[[scp-3570|EE-3570: Umbral Ultimatum]]]
 
 [[collapsible show="     + Learn more?" hide="- Close excerpt" hideLocation="bottom"]]
 **Summary:** The moon turns everyone into birds.
@@ -719,10 +671,10 @@ And more to come!
 [[/tab]]
 [[/tabview]]
 
-= **--**
+= --
 
-[[div class="header"]]
-+++ --Inebriation--@@ @@Inoculation complete. Thanks for reading!
+[[div class="pink-header"]]
++++ --Inebriation-- Inoculation complete. Thanks for reading!
 
 [[module Rate]]
 
