@@ -26,3 +26,161 @@ Rating module was made by [[*user 7happy7]]
 [[module ListPages created_by="TheCassowary" order="rating desc" separate="no" tags="-co-authored goi-format" perPage="20" prependLine="||~ Title ||~ Rating ||~ Comments ||~ Created ||"]]
 || %%title_linked%% || ##cc00cc|+ %%rating%%## || %%comments%% || %%created_at%% ||
 [[/module]]
+
++ MOTD:
+
+------
+
+[[html]]
+<style>
+a {
+    color: #b01;
+    text-decoration: none;
+    background: transparent;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: transparent;
+}
+p {
+color: rgb(153, 0, 17);
+font-family: verdana, arial, helvetica, sans-serif;
+font-size: 2.0em;
+line-height: 141%;
+text-align: center;
+}
+</style>
+<p id="demo"></p>
+<script>
+var randomStrings = [
+
+     "<b>Light up the night!</b>",
+     "<b>Free Hong Kong!</b>",
+     "<b>His dad is one of the admins on the wiki.</b>",
+     "<b>His dad works at Microsoft.</b>",
+     "<b>His dad works at Nintendo.</b>",
+     "<b>He freaking loves SCP!!</b>",
+     "<b>Do you fear death?</b>",
+     "<b>Do you have fear in your life?</b>",
+     "<b>Are you afraid?</b>",
+     "<b>Frittata!</b>",
+     "<b>Do you ever scream when you wake up in the morning?</b>",
+     "<b>Дай мне как можно больше голосов</b>",
+     "<b>Hãy cho tôi càng nhiều upvote càng tốt</b>",
+     "<b>Eat your greens.</b>",
+     "<b>What doth life?</b>",
+     "<b>Refresh this page to get a cool new message.</b>",
+     "<b>This author page has been compromised.</b>",
+     "<b>To kill the Cyberdemon, shoot at it until it dies.</b>",
+     "<b>Upvote any of his articles to die immediately.</b>",
+     "<b>Iloji boricha ko'proq ovoz bering</b>",
+     "<b>He hates normies.</b>",
+     "<b>Hey Reddit check out my hecking chonker doggo.</b>",
+     "<b>This is the most meh day of your life.</b>",
+     "<b>This is the worst day of your life.</b>",
+     "<b>This is the best day of your life.</b>",
+     "<b>The SCP Foundation is 100% real. Watch your back.</b>",
+     "<b>Gene is unstopable.</b>",
+     "<b>Gene is valid.</b>",
+     "<b>Gene is based.</b>",
+     "<b>Upvote any of his articles to be put on a federal watchlist.</b>",
+     "<b>The SCP Wiki's only monarchist</b>",
+     "<b>Fifthists control the government.</b>",
+     "<b>Believers of Spirit Science control the government.</b>",
+     "<b>Just Girly Things controls the government.</b>",
+     "<b>Incels control the government.</b>",
+     "<b>Gamers control the government.</b>",
+     "<b>His name is Donald Biden.</b>",
+     "<b>His name is Hillary Trump.</b>",
+     "<b>Supporter of the 2nd Amendment</b>",
+     "<b>He is cringe.</b>",
+     "<b>He is based.</b>",
+     "<b>Too cringe to live. Too based to die.</b>",
+     "<b>Proud Croatian nationalist.</b>",
+     "<b>Bernard 'Bernie' Sanders wants most what he has in abundance.</b>",
+     "<b>Proud Egyptian nationalist.</b>",
+     "<b>So basically, he is monky.</b>",
+     "<b>Bush Cheney 2000</b>",
+     "<b>No payments until 2006!</b>",
+     "<b>0% APR!</b>",
+     "<b>No money down!</b>",
+     "<b>No Probalo!</b>",
+     "<b>Bazinga</b>",
+     "<b>Le epic bacon</b>",
+     "<b>Me gusta</b>",
+     "<b>Hail Mary, full of grace. The Lord is with thee!</b>",
+     "<b>Glory be to the Father, the Son, and the Holy Spirit!</b>",
+     "<b>Vote 'Yes' on Prop. 87</b>",
+     "<b>He is unable to say a certain word.</b>",
+     "<b>It's over 9,000!!!</b>",
+     "<b>The Virgin [POPULAR SCP WIKI AUTHOR]. The Chad TheCassowary.</b>",
+     "<b>Bush Cheney 2004</b>",
+     "<b>He is Pewdiepie aka. Felix Kjellberg IRL. This is not a joke or a meme.</b>",
+     "<b>Etherium</b>",
+     "<b>Blockchain</b>",
+     "<b>Dogecoin</b>",
+     "<b>Bitcoin</b>",
+     "<b>The SCP Wiki's only Hoppean.</b>",
+     "<b>The SCP Wiki's only Posadist.</b>",
+     "<b>The SCP Wiki's only Marxist-Leninist.</b>",
+     "<b>The SCP Wiki's only anarcho-capitalist.</b>",
+     "<b>The SCP Wiki's only centrist.</b>",
+     "<b>The SCP Wiki's only left-winger.</b>",
+     "<b>가능한 많은 표를 줘</b>",
+     "<b>የሚቻለውን ያህል ብዙ ድምvች ስጠኝ</b>",
+     "<b>Надад аль болох олон upotot өг</b>",
+     "<b>कृपया मुझे अधिक से अधिक वोट दें</b>",
+     "<b>Mangyaring bigyan ako ng maraming mga upvotes hangga't maaari</b>",
+     "<b>できるだけ多くの賛成票をください</b>",
+     "<b>給我盡可能多的選票</b>", 
+     "<b>أعطني أكبر عدد ممكن من الأصوات المؤيدة</b>",
+     "<b>Elon Musk wants most what he has in abundance.</b>",
+     "<b>Poland is the 4th greatest country in the world!</b>",
+     "<b>Australia is the 3rd greatest country in the world!</b>",
+     "<b>Japan is the 2nd greatest country in the world!</b>",
+     "<b>America is the greatest country in the world!</b>",
+     "<b>Too based to live. Too cringe to die.</b>",
+     "<b>The SCP Wiki's only right-winger.</b>",
+     "<b>The Clintons fear him. The Trumps worship him.</b>",
+     "<b>Upvote any of his articles to get banned on Twitter.</b>",
+     "<b>Upvote any of his articles to get banned on Facebook.</b>",
+     "<b>Upvote any of his articles to get banned on Wikipedia.</b>",
+     "<b>Upvote any of his articles to get banned on Twitch.</b>",
+     "<b>Upvote any of his articles to get banned on Youtube.</b>",
+     "<b>Upvote any of his articles to get banned from the SCP Foundation wiki.</b>",
+     "<b>Upvote any of his articles to get banned from the RPC Authority wiki.</b>",
+     "<b>He is Q-Anon.</b>",
+     "<b>Proud Sudanese nationalist.</b>",
+     "<b>Proud Korean nationalist.</b>",
+     "<b>Proud Romanian nationalist.</b>",
+     "<b>Proud Bolivian nationalist.</b>",
+     "<b>Proud Greenlandic nationalist.</b>",
+     "<b>Proud Uzbekistani nationalist.</b>",
+     "<b>Proud Ghanan nationalist.</b>",
+     "<b>Proud Eritrean nationalist.</b>",
+     "<b>Proud Malaysian nationalist.</b>",
+     "<b>Proud Mongolian nationalist.</b>",
+     "<b>Proud Romanian nationalist.</b>",
+     "<b>RPC Authority's creation was an inside job.</b>",
+     "<b>Jeff Bezos wants most what he has in abundance.</b>",
+     "<b>Elon Musk wants most what he has in abundance.</b>",
+     "<b>Elon's Musk wants most what he has in abundance.</b>",
+     "<b>Mark Zuckerberg wants most what he has in abundance.</b>",
+     "<b>Barack Obama wants most what he has in abundance.</b>",
+     "<b>Bill Gates wants most what he has in abundance.</b>",
+     "<b>Gabe Newell wants most what he has in abundance.</b>",
+     "<b>George Lucas wants most what he has in abundance.</b>",
+     "<b>DJKaktus wants most what he has in abundance.</b>",
+     "<b>The SCP wiki mod team wants most what he has in abundance.</b>",
+     "<b>The SCP wiki admins wants most what he has in abundance.</b>",
+
+];
+window.onload = function() {
+
+var text = randomStrings[Math.floor(Math.random() * randomStrings.length)]
+document.getElementById("demo").innerHTML = "" + text + "";
+}
+
+</script>
+[[/html]]
