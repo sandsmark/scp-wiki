@@ -48,8 +48,12 @@ title:cone
 .yui-content h1, .yui-content h3 {
     margin-left: 5%;
 }
+
+.column-container { display: flex; justify-content: space-around; align-items: center; }
 [[/module]]
 
+[[div class="column-container"]]
+[[div class="column"]]
 [[module Listpages created_by="=" tag="-author -workbench -contest -splash -supplement -translation" category="-fragment -component -info" limit="1" order="random"]]
 [[div class="random"]]
 **[[[*%%link%%|Visit a random article by me]]]**
@@ -57,6 +61,11 @@ title:cone
 //It's a choice of %%total%%... which one will it be?//
 [[/div]]
 [[/module]]
+[[/div]]
+[[div class="column"]]
+[[image https://cdn.ko-fi.com/cdn/kofi2.png?v=2 alt="Buy Me a Coffee at ko-fi.com" height="36" style="border: none;" link="https://ko-fi.com/I3I41R5OU"]]
+[[/div]]
+[[/div]]
 
 -----
 
