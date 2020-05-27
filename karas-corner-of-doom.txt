@@ -1,8 +1,4 @@
 title:Karas Corner of Doom, Aka The Author Page of Doom!
-[[=]]
-[[module Rate]]
-[[/=]]
-
 [[include :scp-wiki:component:scp-trans-pride |trans-pride-logo= --] |trans-pride-footer= --]]]
 
 [[module CSS]]
@@ -27,7 +23,7 @@ title:Karas Corner of Doom, Aka The Author Page of Doom!
      letter-spacing: .9px;
 }
  #header h1 a::before {
-     content: "Karas’ Author Page";
+     content: "Kara’s Author Page";
 
      color: #f8f8f8;
 
@@ -186,7 +182,6 @@ I’m Kara!
 
 No, no. Sit down, and shut up. Leaving is illegal, and there will be --appropriate-- lethal force taken to ensure you stay in this room.
 
-
 So, about me…
 
 I somehow managed to get an author page, so uh, yay!!! I have a [http://www.scp-wiki.net/kara-s-page-of-art cool art page] I guess? Gonna try and break it soon! I write mostly tales here on this wiki. So, I guess if you want those you could scroll down. Maybe? 
@@ -202,6 +197,9 @@ As you could probably tell I really like doing art. Did I mention my art page ye
 
 Well, fuck you too then!
 
+
+[[tabview]]
+[[tab Tales]]
 ----
 [[size 1.5em]]Tales, or Whatever[[/size]]
 ----
@@ -214,10 +212,15 @@ Well, fuck you too then!
 
 [[/module]]
 
+
+[[/tab]]
+
+[[tab SCPs]]
+
 ----
 [[size 1.5em]]You Mean I Wrote an SCP?[[/size]]
 ----
-[[module Listpages created_by="=" order="created_at" tag="-translation +scp" category="-fragment -component" perPage="{$perPage}"]]
+[[module Listpages created_by="=" order="created_at" tag="-translation +co_authored" category="-fragment -component" perPage="{$perPage}"]]
 
 **%%title_linked%%**
  +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
@@ -225,6 +228,11 @@ Well, fuck you too then!
 //Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
 
 [[/module]]
+
+
+[[/tab]]
+
+[[tab Art]]
 
 ----
 [[size 1.5em]]Some art pages..?[[/size]]
@@ -237,6 +245,19 @@ Well, fuck you too then!
 //Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
 
 [[/module]]
+
+
+[[/tab]]
+[[tab SSRTOD]]
+
+[[=]]
+[[module Rate]]
+[[/=]]
+
+[[size .5em]](Bonus points if you guess what SSRTOD means.)[[/size]]
+
+[[/tab]]
+[[/tabview]]
 
 ----
 [[size 1.5em]]Social Media[[/size]]
