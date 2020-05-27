@@ -412,12 +412,21 @@ Dr. Buchanan has a severe allergy to most amnestics as well as SCP-148. Further 
 || Create a new GoI || ✔️ ||
 [[/collapsible]]
 [[collapsible show="> APPENDIX D" hide="> HIDE APPENDIX D"]]
-**I am not sure why I am doing this**
-[[module ListPages created_by="CityToast" created_at="2020.04" order="rating desc" separate="yes" perPage="250"]] 
-* %%title_linked%% (+%%rating%%, %%comments%% comments, created %%created_at%%
+
+[[module ListPages tags="+licensebox" category="_default" wrapper="no" separate="no"]]
+  [[head]]
+[[table class="wiki-content-table" style="width:100%"]]
+[[row]] [[hcell]] Page Name [[/hcell]] [[hcell]] License Info [[/hcell]] [[/row]]
+  [[/head]]
+
+  [[body]]
+[[row]] [[cell class="wiki-content-table"]] %%title_linked%% [[/cell]] [[cell]] %%content{2}%% [[/cell]] [[/row]]
+  [[/body]]A
+
+  [[foot]]
+    [[/table]]
+  [[/foot]]
 [[/module]]
-[[module ListPages name="SCP-194" separate="no" perPage="250"]] 
-* %%title_linked%% (+%%rating%%, %%comments%% comments, created %%created_at%%
-[[/module]]
+
 [[/collapsible]]
 [[/=]]
