@@ -1,0 +1,59 @@
+title:Licensing Master List
+Below is the master list for content, including images and audio, which are used on the SCP Wiki. This list is a living document and is in the process of being updated.
+
+In the event that the table below is broken or you have questions about implementation, please contact [[*user CityToast]] or another member of the Licensing team.
+
+++ How to add licensing information to a page
+
+If you would like to add licensing information to your own page, follow these steps:
+
+**Step 1:**
+
+Add this to the bottom of the page:
+
+> @@[[include :scp-wiki:component:license-box]]@@
+> @@=====@@
+> @@(Suggested template)@@
+> @@**Images**:**@@ (or Audio, if applicable)
+> @@* "[@@##Blue|LINK-TO-SOURCE## ##green|Name-of-image##@@]@@" by ##brown|AUTHOR-NAME##, Licensed under ##purple|Type-of-License##
+> @@=====@@
+> @@[[include :scp-wiki:component:license-box-end]]@@
+
+* You cannot use some modules, including CSS, HTML, and listpages, inside the license section. You also cannot use collapsibles or tables.
+* If your footnotes are appearing after the license section, add [[span style="background-color: beige; font-family:'courier new';"]]@@[[footnoteblock]]@@[[/span]] above the license template.
+
+**Step 2**
+Add the [http://www.scp-wiki.net/system:page-tags/tag/_licensebox _licensebox tag] to the page.
+
+++ Master License Table
+
+[[module ListPages tags="+_licensebox" category="_default" wrapper="no" separate="no" order="name desc desc"]]
+
+[[head]]
+[[table class="wiki-content-table" style="width:100%"]]
+[[row]]
+[[hcell]]
+Page Name
+[[/hcell]]
+[[hcell]]
+License Info
+[[/hcell]]
+[[/row]]
+[[/head]]
+
+[[body]]
+[[row]]
+[[cell class="wiki-content-table"]]
+%%title_linked%%
+[[/cell]]
+[[cell]]
+%%content{2}%%
+[[/cell]]
+[[/row]]
+[[/body]]
+
+[[foot]]
+[[/table]]
+[[/foot]]
+
+[[/module]]
