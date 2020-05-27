@@ -1,153 +1,28 @@
 title:Karas Corner of Doom, Aka The Author Page of Doom!
 parent:authors-pages
 [[include :scp-wiki:component:scp-trans-pride |trans-pride-logo= --] |trans-pride-footer= --]]]
-
 [[include :scp-wiki:theme:flopstyle]]
-
 
 [[module CSS]]
 /* LISTPAGES EXCEPTION */
  .preview .span, .infobox{ display: none !important; }
 
-/* GLOBAL EDITS */
- body{ color: rgb(12, 12, 12); }
- #header h1 a {
-     display: block;
-     margin: 0;
-     padding: 80px 0 25px;
-
+/* HEADER */
+ #header h1 a, #header h2 span{
      color: transparent;
-     background: transparent;
-
-     line-height: 0;
-     max-height: 0;
-     font-family: 'Carrois Gothic', sans-serif, Arial;
-     text-decoration: none;
      text-shadow: none;
-     letter-spacing: .9px;
 }
  #header h1 a::before {
      content: "Kara’s Author Page";
-
-     color: #f8f8f8;
-
-     font-size: 90%;
-     text-shadow: 3px 3px 5px black;
-     letter-spacing: -.02em;
-}
- #header h1 a span{
-     content: "";
-     visibility: hidden;
-}
- #header h2 span {
-     display: block;
-     margin: 0;
-     padding: 19px 0;
-
-     color: transparent;
-
-     line-height: 0;
-     max-height: 0;
-     font-weight: bold;
-     text-shadow: none;
 }
  #header h2 span::before {
      content: "So this is the reason we can’t have nice things...";
-
-     color: #f8f8f8;
-     text-shadow: 1px 1px 1px rgba(0,0,0,.8);
 }
  #page-title{ display: none; }
-
-/* DIV BLOCKS */
- div.blockquote,
- blockquote{ border: 3px double #999; }
- .header{
-     margin: 1em 0;
-     padding: 0 1em;
-
-     background-color: #FFC0CB;
-     border: 1px solid #605858;
-
-     text-align: center;
-}
- .header hr{ background: #605858; }
- .ko-fi-link{
-     display: inline-block;
-     width: 100%;
-     margin: 0;
-     padding: .5em 0;
-
-     font-size: 140%;
-     font-weight: 700;
-     text-align: center;
-     text-shadow: 1px 3px 1px rgba(0, 0, 0, .3);
-}
- .ko-fi-link a:hover{ text-decoration: none; }
- .scp-showcase{
-     color: darkred;
-
-     font-size: 125%;
-     font-weight: bold;
-}
-
-/* FORMATTING */
-.collapsible-block-link{ font-weight: bold; }
-hr{
-    display: block;
-    height: 1px;
-    margin: 1em 0;
-    padding: 0;
-
-    border: 0;
-}
- .h3, .h5{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 1px;
-    word-break: unset;
-}
- .h3{
-    margin: .5em 0 .4em;
-    padding: 0;
-
-    color: rgb(12, 12, 12);
-    font-size: 130%;
-}
- .h5{
-    font-size: 100%;
-}
-
-/* TABS — from Magnus Web Format */
- .yui-navset .yui-nav .selected a em,  .yui-navset .yui-nav a em{
-     top: 0;
-     margin-bottom: 0;
-     padding: .25em .75em; 
-}
- .yui-navset .yui-nav .selected a{ background: gray; }
- .yui-navset .yui-nav .selected{ margin: 0; }
- .yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a:focus, .yui-navset .yui-nav .selected a:hover, .yui-navset .yui-nav .selected a{ background: gray; }
- .yui-navset .yui-nav a:hover,
- .yui-navset .yui-nav a:focus{
-     background: gainsboro;
-     text-decoration: none;
-}
- .yui-navset .yui-nav a, .yui-navset .yui-navset-top .yui-nav a{
-     background-color: none;
-     background-image: none;
-}
- .yui-navset .yui-nav a{ background: none; }
- .yui-navset .yui-nav li{ margin: 0; }
 [[/module]]
 
-
 ----
-[[size 1.5em]]On the Subject Of the Kara[[/size]] 
+[[size 150%]]On the Subject Of the Kara[[/size]] 
 ----
 [[include component:image-block
 |name=https://i.imgur.com/oeEPsUo.png
@@ -165,7 +40,7 @@ He had an odd quote he keeps carving into everything. We understand nothing abou
 
 He has ruined 40 desks.
 ----
-[[size 1.5em]]The Personnel File[[/size]]
+[[size 150%]]The Personnel File[[/size]]
 ----
 Hello Hello!
 
@@ -189,14 +64,14 @@ As you could probably tell I really like doing art. Did I mention my art page ye
 Well, fuck you too then!
 
 ----
-[[size 1.5em]]My Shitty Works[[/size]]
+[[size 150%]]My Shitty Works[[/size]]
 ----
 
 
 [[tabview]]
 [[tab Tales]]
 ----
-[[size 1.5em]]Tales, or Whatever[[/size]]
+[[size 150%]]Tales, or Whatever[[/size]]
 ----
 [[module Listpages created_by="=" order="created_at" tag="-translation +tale" category="-fragment -component" perPage="{$perPage}"]]
 
@@ -213,7 +88,7 @@ Well, fuck you too then!
 [[tab SCPs]]
 
 ----
-[[size 1.5em]]You Mean I Wrote an SCP?[[/size]]
+[[size 150%]]You Mean I Wrote an SCP?[[/size]]
 ----
 [[module Listpages created_by="=" order="created_at" tag="-translation +co_authored" category="-fragment -component" perPage="{$perPage}"]]
 
@@ -230,7 +105,7 @@ Well, fuck you too then!
 [[tab Art]]
 
 ----
-[[size 1.5em]]Some art pages..?[[/size]]
+[[size 150%]]Some art pages..?[[/size]]
 ----
 [[module Listpages created_by="=" order="created_at" tag="-translation +artwork" category="-fragment -component" perPage="{$perPage}"]]
 
@@ -249,23 +124,23 @@ Well, fuck you too then!
 [[module Rate]]
 [[/=]]
 
-[[size .5em]](Bonus points if you guess what SSRTOD means.)[[/size]]
+[[size 50%]](Bonus points if you guess what SSRTOD means.)[[/size]]
 
 [[/tab]]
 [[/tabview]]
 
 ----
-[[size 1.5em]]Social Media[[/size]]
+[[size 150%]]Social Media[[/size]]
 ----
 Honestly, that's it. I have nothing else to my name.
 @@ @@
-[[size 1.5em]][https://www.deviantart.com/karalinekatt My DeviantArt]
+[[size 150%]][https://www.deviantart.com/karalinekatt My DeviantArt]
 [https://twitter.com/katt_kara My Twitter]
 [https://www.instagram.com/Karakatt1325/ My Instagram]
 [https://www.youtube.com/channel/UC9kKXVXQNbJgnvKDELhLqIw?view_as=subscriber My Youtube]
 [[/size]]
 ----
-[[size 1.5em]]The Two People I Stan Too Hard[[/size]]
+[[size 150%]]The Two People I Stan Too Hard[[/size]]
 ----
 
 
