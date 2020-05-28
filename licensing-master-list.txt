@@ -61,3 +61,38 @@ License Info
 [[/foot]]
 
 [[/module]]
+
+[[collapsible show="+ Pages tagged _cc but not _licensebox" hide="show="- Pages tagged _cc but not _licensebox"]]
+
+[[module ListPages tags="+_cc -_licensebox" category="_default" wrapper="no" separate="no" order="create_date desc"]]
+
+[[head]]
+[[table class="wiki-content-table" style="width:100%"]]
+[[row]]
+[[hcell]]
+Page Name
+[[/hcell]]
+[[hcell]]
+License Info
+[[/hcell]]
+[[/row]]
+[[/head]]
+
+[[body]]
+[[row]]
+[[cell class="wiki-content-table"]]
+%%title_linked%%
+[[/cell]]
+[[cell]]
+%%content{2}%%
+[[/cell]]
+[[/row]]
+[[/body]]
+
+[[foot]]
+[[/table]]
+[[/foot]]
+
+[[/module]]
+
+[[/collapsible]]
