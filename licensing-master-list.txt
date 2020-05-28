@@ -23,6 +23,40 @@ Add this to the bottom of the page:
 @@[[include :scp-wiki:component:license-box-end]]@@
 [[/div]]
 
+[[collapsible show="+ Box-ify-er" hide="- Box-ify-er"]]
+[[html]]
+<head>
+<style>
+@charset "utf-8";
+@import url('www.scp-wiki.net/component:theme/code/1');
+</style>
+<script type = "text/javascript">
+  function resetBox(){
+  var txtName = document.getElementById("inputLicenseInfo");
+  var name = txtName.value;
+  inputLicenseInfo.value = "**Images:** (or audio, if applicable)\r\n* \"[LINK-TO-SOURCE Name-of-image]\" by AUTHOR-NAME, Licensed under Type-of-License"
+  } // end clear
+  function boxify(){
+  var txtName = document.getElementById("inputLicenseInfo");
+  var name = txtName.value;
+  inputLicenseInfo.value = "[[include :scp-wiki:component:license-box]]\r\n=====\r\n" + name + "\r\n=====\r\n[[include :scp-wiki:component:license-box-end]]"
+  } // end boxify
+ </script>
+ <link rel = "stylesheet"
+   type = "text/css"
+   href = "textBoxes.css" />
+ </head>
+ <body>
+ <form action = "">
+ <textarea id="inputLicenseInfo" rows="10" cols="90">**Images:** (or audio, if applicable)
+* "[LINK-TO-SOURCE Name-of-image]" by AUTHOR-NAME, Licensed under Type-of-License </textarea><br>
+<input type = "button" value = "License-box-ify!" onclick = "boxify()"/>
+<input type = "button" value = "Reset" onclick = "resetBox()"/>
+ </form>
+ </body>
+[[/html]]
+[[/collapsible]]
+
 * You cannot use some modules, including CSS, HTML, and listpages, inside the license section. You also cannot use collapsibles or tables.
 * If your footnotes are appearing after the license section, add [[span style="background-color: beige; font-family:'courier new';"]]@@[[footnoteblock]]@@[[/span]] above the license template.
 
