@@ -13,13 +13,15 @@ If you would like to add licensing information to your own page, follow these st
 
 Add this to the bottom of the page:
 
-> @@[[include :scp-wiki:component:license-box]]@@
-> @@=====@@
-> @@(Suggested template)@@
-> @@**Images**:**@@ (or Audio, if applicable)
-> @@* "[@@##Blue|LINK-TO-SOURCE## ##green|Name-of-image##@@]@@" by ##brown|AUTHOR-NAME##, Licensed under ##purple|Type-of-License##
-> @@=====@@
-> @@[[include :scp-wiki:component:license-box-end]]@@
+[[div class="blockquote"]]
+@@[[include :scp-wiki:component:license-box]]@@
+@@=====@@
+@@(Suggested template)@@
+@@**Images**:**@@ (or Audio, if applicable)
+@@* "[@@##Blue|LINK-TO-SOURCE## ##green|Name-of-image##@@]@@" by ##brown|AUTHOR-NAME##, Licensed under ##purple|Type-of-License##
+@@=====@@
+@@[[include :scp-wiki:component:license-box-end]]@@
+[[/div]]
 
 * You cannot use some modules, including CSS, HTML, and listpages, inside the license section. You also cannot use collapsibles or tables.
 * If your footnotes are appearing after the license section, add [[span style="background-color: beige; font-family:'courier new';"]]@@[[footnoteblock]]@@[[/span]] above the license template.
