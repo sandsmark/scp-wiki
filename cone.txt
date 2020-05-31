@@ -1,11 +1,12 @@
 title:cone
-[[module ListPages category="log-of-unexplained-locations" perPage="250" rating=">0"]]
+[[module ListPages category="log-of-unexplained-locations" perPage="250" rating=">-3"]]
 %%title_linked%% on %%created_at%% by [[*user %%created_by%%]] with rating %%rating%%
-%%form_data{desc}%%
-%%form_data{date}%%
-%%form_data{loc}%%
-%%form_data{sec}%%
-%%form_data{note}%%
+
+**Description:** %%form_data{desc}%%
+**Date of Containment:** %%form_data{date}%%
+**Location:** %%form_data{loc}%%
+**Security Protocol:** %%form_data{sec}%%
+**Note:** %%form_data{note}%%
 
 -----
 [[/module]]
