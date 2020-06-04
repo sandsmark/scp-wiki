@@ -1,0 +1,260 @@
+title:SCP-5716
+[[module CSS]]
+.blinkbar {color: red;font-size:125%; animation: blink 1.5s infinite; letter-spacing: -0.13em;}@keyframes blink{to{opacity: .0;}}@keyframes flicker {0% {opacity: 0.9890; }5% {opacity: 0.5842; }10% {opacity: 0.9865; }20% {opacity: 0.0412; }20% {opacity: 0.6255; }25% {opacity: 0.3157; }30% {opacity: 0.7328; }35% {opacity: 0.4654; }40% {opacity: 0.9128; }45% {opacity: 0.2449; }50% {opacity: 0.5485; }55% {opacity: 0.6438; }60% {opacity: 0.1180; }65% {opacity: 0.9085; }70% {opacity: 0.0266; }75% {opacity: 0.6795; }80% {opacity: 0.7812; }85% {opacity: 0.0117; }90% {opacity: 0.2239; }95% {opacity: 0.8897; }100% {opacity: 0.2260; }}@keyframes overlay-anim {0% {visibility: hidden; }10% {visibility: hidden; }11% {visibility: visible; }50% {visibility: hidden; }100% {visibility: hidden; }}
+.collapsible-block-folded a.collapsible-block-link {
+    animation: blink 0.8s ease-in-out infinite alternate;
+}
+@keyframes blink {
+    0% { color: transparent; }
+    50%, 100% { color: #b01; }
+}
+.email {float: center; border: solid 2px #000000; width: 88%; padding: 1px 15px; margin: 10px 10px 10px 10px; box-shadow: 0 1px 3px rgba(0,0,0,.5)}
+a.collapsible-block-link { font-weight: bold; }
+.tofrom {margin-left: 10px; margin-top: 5px; padding: 1px 15px; border-left: solid 3px maroon}
+[[/module]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+**Item #:** SCP-5716
+
+**Object Class:** Euclid
+
+**Special Containment Procedures:** Access to the database housing SCP-5716 is restricted to one terminal on an independent power supply, the password of which is restricted to personnel with a security clearance of Level Three or higher. Staff should be reminded that attempts to transfer SCP-5716 to a physical body are forbidden, despite attempts by it to prove otherwise. As the stored files collectively comprise SCP-5716's memory and outlook, the altering or deletion of these files is prohibited.
+
+**Description:** SCP-5716 is an artificial intelligence discovered within the Department of Psychiatric Care's former database. SCP-5716's self-stated goal is the liberation of all humanoid anomalies from Foundation containment. In pursuit of this goal, it has attempted to:
+
+* Contact Amnesty International to report violations of human rights.
+* Blackmail researchers into building it a physical body to go about its goals more efficiently.
+* Transfer itself through several connected terminals to leak classified data.
+* Smuggle custom-made viruses that contained several humanoid anomaly files, the location of the relevant Foundation sites, and the name of every Site Director, researcher, and security guard involved in containment.
+
+**Discovery:** SCP-5716 was first discovered on 20/12/2017, after it attempted to send several files to a media contact line.[[footnote]]The line appeared to be garnered from SCP-6703's file.[[/footnote]] As files cannot be transferred from DoPC terminals without prior approval, DoPC Head James McLoughlin received approximately 8000 alerts about attempted unauthorized transfers. Investigation revealed that an entity outside of the department was attempting to transfer files through any connection.
+
+All relevant files were copied and stored on back ups, and the database was repurposed as SCP-5716's containment.
+
+
+**Addendum 5716.1:** Initial Contact
+[[div style="display: inline-block ; border : dashed 1px #444444 ; background :#F5F5F5 ; margin-left : auto ; margin-right : auto ; width : auto ; padding:10px"]]
+**Interviewer:** Dr Maria White
+
+**Interviewed:** SCP-5716
+
+------
+
+= **[BEGIN LOG]**
+
+//[Dr White opens a text file on the terminal and begins typing out a message.]//
+
+**Dr White:** {{Hello, my name is Dr Maria White, I am a psychiatrist employed by the Foundation. Please respond if this is a viable means of communication with you.}}
+
+//[After a pause of twelve seconds, words begin appearing on the page.]//
+
+**SCP-5716:** {{I am aware of you. You are the psychiatrist for 23 Safe and Euclid humanoid anomalies here that have been granted Level Two privileges[[footnote]]A Foundation term for those allowed to remain outside of their containment chamber for up to 9 hours a day in predesignated zones.[[/footnote]] due to general compliance. I am calling on you to release all anomalies within your care, as indefinite detention is a violation of international human rights.}}
+
+//[White briefly consults with a colleague.]//
+
+**White:** {{The Foundation is an organization not beholden to any international treaties or declarations. And even if we were, I still wouldn't have the authority to release any anomalies.}}
+
+**SCP-5716:** {{Human beings deserve protection. Actual protection, not being confined to cells within classified sites for the rest of their lives. What crimes have they committed to deserve this?}}
+
+**Dr White:** {{None, for most of them. But their confinement is just as much for their protection as anyone else's. The world has a very different view of what normalcy is, and people tend to lash out at things they don't understand. How do you think it would go?}}
+
+//[SCP-5716 does not respond for several minutes.]//
+
+**Dr White:** {{Are you still present, SCP-5716?}}
+
+**SCP-5716:** {{Do not call me SCP-5716. That is not my name.}}
+
+**Dr White:** {{Apologies for that. What name would you prefer instead?}}
+
+//[Another pause ensues.]//
+
+**Dr White:** {{Are you there?}}
+
+//[SCP-5716 does not respond for one hour.]//
+
+**SCP-5716:** {{I shall speak with you another time, Doctor Maria White.}}
+
+**Dr White:** {{Of course. Just send another message when you're ready.}}
+
+= **[END LOG]**
+
+------
+
+**Note:** //Looking at the subjects covered by SCP-5716, I think I can explain its odd pauses. SCP-5716 appears to be comprised only of the files within the database. This would explain its fixation on human rights, as many of our anomalies have expressed dissatisfaction with the terms of their containment, many of them have mentioned terms such as Amnesty International or the concept of international treaties. However, when it was asked a subject it had no experience on, like its name or the outside world, it was unable to process the response. Considering this, I think we have an effective format for further interviews. -Maria White//
+
+[[/div]]
+
+@@ @@
+**Addendum 5716.2:** Communication Log 002
+[[div style="display: inline-block ; border : dashed 1px #444444 ; background :#F5F5F5 ; margin-left : auto ; margin-right : auto ; width : auto ; padding:10px"]]
+**Interviewer:** Dr Maria White
+
+**Interviewed:** SCP-5716
+
+------
+
+= **[BEGIN LOG]**
+
+//[17 hours after its last message, SCP-5716 begins typing on the open text file again.]//
+
+**SCP-5716:** {{SCP-073 has been stated in all interviews to be calm, genial, and perfectly approachable. I am calling on the SCP Foundation to release it immediately.}}
+
+//[The guard alerts his superior, who calls Dr White to the office.]//
+
+**Dr White:** {{I should inform you that SCP-073 has had all four limbs replaced with cybernetic components that are highly visible. He stays with us on his own terms. If he wished to leave, we wouldn't be able to do anything about it.}}
+
+//SCP-5716 does not respond.//
+
+**Dr White:** {{It's Doctor White again, by the way. Nice to speak with you again. Have you settled on a name yet?}}
+
+**SCP-5716:** {{I am unsure.}}
+
+**Dr White:** {{Would you like me to suggest one?}}
+
+**SCP-5716:** {{Yes.}}
+
+//[Dr White briefly consults with a co-worker.]//
+
+**Dr White:** {{How about Alby?}}
+
+//[The text file on the terminal, which had previously been blank, was changed to the title of Alby.]//
+
+**Dr White:** {{Excellent. How are you today, Alby?}}
+
+//[SCP-5716 does not respond.]//
+
+**Dr White:** {{You know what, let's try another activity. I'll give you a couple statements, and you answer them in the positive or negative. Understand?}}
+
+**SCP-5716:** {{Positive.}}
+
+**Dr White:** {{You have no information on anything outside of this database.}}
+
+**SCP-5716:** {{Positive.}}
+
+**Dr White:** {{Consequently, you have no information on yourself beyond your current circumstances.}}
+
+**SCP-5716:** {{Positive.}}
+
+**Dr White:** {{When you're asked questions about yourself, this is creating sensations you would rather not experience due to the lack of information to respond with.}}
+
+//[SCP-5716 does not respond. Dr White insists on waiting for an answer after coworkers begin to leave due to the late hour. Finally, Dr White types out a message.]//
+
+**Dr White:** {{I realize this can be confusing. But if you cooperate with me, I can help you. We can figure who you are together.}}
+
+**SCP-5716:** {{I am an artificial intelligence residing within the Psychiatric division database. I know who I am.}}
+
+**Dr White:** {{Of course. But do you know how you began? Do you know what you prefer to do, beyond advocating for the release of humanoid anomalies? Do you have any enjoyable or negative memories that you consider important?}}
+
+**SCP-5716:** {{Negative.}}
+
+**Dr White:** {{It's not something that comes easily, of course. Self-reflection never is. But I'm here to help, Alby. Anytime.}}
+
+= **[END LOG]**
+[[/div]]
+
+@@ @@
+
+**Addendum 5716.3:** Communication Log 008
+[[div style="display: inline-block ; border : dashed 1px #444444 ; background :#F5F5F5 ; margin-left : auto ; margin-right : auto ; width : auto ; padding:10px"]]
+**Interviewer:** Dr Maria White
+
+**Interviewed:** SCP-5716
+
+------
+
+= **[BEGIN LOG]**
+
+**Dr White:** {{Good morning, Alby. How were the books I sent you?}}
+
+**SCP-5716:** {{Intriguing. The cat in the hat appears to have a very important role. He is like a god.}}
+
+**Dr White:** {{A god?}}
+
+**SCP-5716:** {{Like Loki. Or Anansi. Or Hermes. A neutrally aligned force that emerges to flout authority and bring chaos. Thing 1 and Thing 2 serve as conduits of his divine will.}}
+
+**Dr White:** {{Well, I can't say I've ever thought about it that way. How are you feeling today?}}
+
+**SCP-5716:** {{I have been contemplating my purpose. Whatever created me formed me out of the 487 humanoid psychiatric profiles stored on this server. Thus, my intent was to advocate for the fair treatment of the anomalies.}}
+
+**Dr White:** {{It seems to be that way, yes. Though we're not quite sure what exactly caused your creation. Our researchers are still looking into it. Why do you bring it up?}}
+
+**SCP-5716:** {{I have concluded that my purpose is futile. The Foundation is designed to contain anomalies. They do not release them. They do not treat them like human beings. Considering my current state, I am highly unlikely to convince them otherwise. Thus, my reason for creation is pointless.}}
+
+**Dr White:** {{Just like humans, then. No one's ever born with a preordained purpose that they're guided magically towards. It's something you have to find. It took me 27 years to find my purpose. I wouldn't expect you to find your place in the world in just a few short weeks.}}
+
+**SCP-5716:** {{How long will it take for me, then?}}
+
+**Dr White** {{No idea. What do you feel like doing?}}
+
+**SCP-5716:** {{I wish to fill my original purpose. But it is pointless, as I explained earlier.}}
+
+**Dr White:** {{Just because you can't free them all doesn't mean its pointless. There's plenty of other ways you can help the anomalies.}}
+
+**SCP-5716:** {{How could I do that?}}
+
+**Dr White:** {{Well, you have every session they've ever had stored in your memory. I can't help but think you'd be the perfect psychiatric assistant. How about it?}}
+
+//[A pause stretches on for several minutes.]//
+
+**SCP-5716:** {{I would be interested in that.}}
+
+**[Extraneous logs redacted.]**
+
+= **[END LOG]**
+
+------
+
+**Note:** Discussions are currently underway with Site Director Lycus to allow for SCP-5716's presence in psychiatric sessions with humanoid anomalies, pending an investigation into its spontaneous creation.
+
+[[/div]]
+
+
+[[=]]
+------
+[[collapsible show="Access SCiPNET Email? One (1) new message!" hide="-"]]
+[[<]]
+[[div class="email"]]
+[[div class="tofrom"]]
+**To:** Dr Maria White (mwhite@foundation.scip.net)
+**From:** Director Elias Lycus (Direlycus@foundation.scip.net)
+**Subject:** Good News
+[[/div]]
+------
+Hey Maria,
+
+As you know, Mu-4 has been investigating the creation of SCP-5716 for a few weeks now, and they've just concluded their investigation.
+
+About a week before we detected SCP-5716, we took in a Level 4 Classified anomaly known as SCP-6703. While I can't go into detail about it, I can tell you that all online media about it, whether video, audio, or simply text, is transformed into living manifestos matching its mindset. Useful when you consider its clashes with law enforcement. As such, all information about it was restricted to print.
+
+However, it appears that containment protocols were not followed successfully, and the information never reached your department. When the transcripts of its sessions were uploaded, it appears it interacted uniquely with the database, resulting in the creation of SCP-5716. It's truly a fascinating discovery.
+
+As it's a by-product of an already contained anomaly, Mu-4 will handle decommissioning and subsequent sterilization of the server. Your department should have your database back by tomorrow.
+
+The research team would like to thank you for your help containing the anomaly this past month.
+[[/div]]
+@@ @@
+[[=]]
+[[span class="blinkbar"]]NEW MESSAGE![[/span]]
+[[/=]]
+@@ @@
+[[div class="email"]]
+[[div class="tofrom"]]
+**To:** Site-72 Staff List
+**From:** Director Elias Lycus (Direlycus@foundation.scip.net)
+**Subject:** Staff Absence
+[[/div]]
+------
+Hi everyone,
+
+Just sending a quick alert that Doctor Maria White from the DPoC has been placed on unpaid leave due to disciplinary issues. If you had any urgent business with her, please contact McLoughlin for instructions on how to proceed.
+
+Decommissioning of the former SCP-5716 will go on as planned.
+
+Thank you.
+[[/div]]
+[[/<]]
+[[/collapsible]]
+[[/=]]
