@@ -1,22 +1,6 @@
 title:SCP-5325
 [[include :scp-wiki:component:black-highlighter-theme-dev]]
 
-
-[[module CSS]]
-.blinkbar {color: red;font-size:125%; animation: blink 1.5s infinite; letter-spacing: -0.13em;}@keyframes blink{to{opacity: .0;}}@keyframes flicker {0% {opacity: 0.9890; }5% {opacity: 0.5842; }10% {opacity: 0.9865; }20% {opacity: 0.0412; }20% {opacity: 0.6255; }25% {opacity: 0.3157; }30% {opacity: 0.7328; }35% {opacity: 0.4654; }40% {opacity: 0.9128; }45% {opacity: 0.2449; }50% {opacity: 0.5485; }55% {opacity: 0.6438; }60% {opacity: 0.1180; }65% {opacity: 0.9085; }70% {opacity: 0.0266; }75% {opacity: 0.6795; }80% {opacity: 0.7812; }85% {opacity: 0.0117; }90% {opacity: 0.2239; }95% {opacity: 0.8897; }100% {opacity: 0.2260; }}@keyframes overlay-anim {0% {visibility: hidden; }10% {visibility: hidden; }11% {visibility: visible; }50% {visibility: hidden; }100% {visibility: hidden; }}
-.collapsible-block-folded a.collapsible-block-link {
-    animation: blink 0.8s ease-in-out infinite alternate;
-}
-@keyframes blink {
-    0% { color: transparent; }
-    50%, 100% { color: #b01; }
-}
-.email {float: center; border: solid 2px #000000; width: 88%; padding: 1px 15px; margin: 10px 10px 10px 10px; box-shadow: 0 1px 3px rgba(0,0,0,.5)}
-a.collapsible-block-link { font-weight: bold; }
-.tofrom {margin-left: 10px; margin-top: 5px; padding: 1px 15px; border-left: solid 3px maroon}
-[[/module]]
-
-
 [[>]]
 [[module Rate]]
 [[/>]]
@@ -91,7 +75,7 @@ Location of recovery.
 D-73821 (From Site 06-3)
 [[/cell]]
 [[cell style="border: 1px solid black; padding: .3em .7em;"]]
-D-73821 ended up in the 9pm train passing through the [DATA REDACTED] station near Site 06-3. He was picked up by Facility guards who had been dispatched to the station following GPS locating the D-classes device.
+D-73821 ended up in the 9pm train passing through the [DATA REDACTED] station near Site 06-3. He was picked up by Facility guards who had been dispatched to the station following GPS locating the D-class' device.
 [[/cell]]
 [[/row]]
 [[row]]
@@ -127,11 +111,7 @@ Permission for recorded expeditions through SCP-5325 is under review. Furthermor
 
 @@ @@
 
-[[=]]
-[[collapsible show="Updated Information" hide="You are up to date"]]
-[[div style="display: inline-block; border-radius: 10px; border:dashed 1px #444444; background:#F5F5F5; float:top; width:96.5%; padding:10px"]]
-
-[[<]]
+Addenda 1:
 Rho-12 Bravo reported being able to read the walls of the carriage before he fell asleep. He described scribbling of thoughts and what seemed to be dreams of users on the walls. Most notable were seemingly newly written paragraphs talking about: 
 * The fun and games of childhood, before money was a problem. 
 * A hardworking scientist playing with his son by the fire.
@@ -156,8 +136,3 @@ Final test to attempt to send the MTF Rho-12 Bravo to a different location:
 > 
 
 Due to this newfound evidence, the MTF Rho-12 Bravo exited the carriage before it left; no ill effects have been found. Analysis of the photo film is ongoing.
-
-[[/<]]
-[[/div]]
-[[/collapsible]]
-[[/=]]
