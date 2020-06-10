@@ -1,11 +1,8 @@
 title:Solidão
-[[include component:preview text=But at the centre of it all was a being. Not a monster, but a protector. It was only referred to as the 'Eljor. 'Eljor the Custodian. 'Eljor the Mystic. It was going to save them, and it was going to bring us all there.]]
+[[include component:preview text=But at the centre of it all was a being. Not a monster, but a protector. It was only referred to as the 'Eljor. 'Eljor the Custodian. 'Eljor the Mystic. It was going to save them, and bring us //all// there, too.]]
 
-[[include :scp-wiki:component:scp-trans-pride |trans-pride-logo= --] |trans-pride-footer= --]]]
-
-[[>]]
-[[module Rate]]
-[[/>]]
+[[include :scp-wiki:theme:flopstyle]]
+[[include :scp-wiki:component:pride-highlighter |inc-s9-tg-alt= --]]]
 
 [[include :scp-wiki:component:info-ayers
 |lang=en
@@ -13,320 +10,272 @@ title:Solidão
 |authorPage=http://www.scp-wiki.net/floppyphoenix
 |comments=**Solidão** 
 **Author:** [[*user Lt Flops]] 
- 
-This Tale is the former supplement to the old SCP-2641 ([*http://scpdsandbox.wikidot.com/floppy-archive-1 which you can find archived here]), written by myself. It's otherwise entirely standalone. 
 ----
 [[include :scpdsandbox:floppyphoenix-info]]
 [[/div]]
 
-[[module CSS]]
-@import url('https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap');
+[[>]]
+[[module Rate]]
+[[/>]]
 
-/* INFO BOX */
-sup{
-    vertical-align: top;
-    position: relative;
-    top: -0.5em;
-}
-body{
-    --cutColour: #fafafa;
-    --barColour: #590505;
-    color: rgb(12, 12, 12);
-}
-.translation_block{ display: none; }
-.u-faq{ display: none; }
+[[div class="report-box"]]
++++ Document 2641-//Solidão//
+[[/div]]
 
-/* JOURNALS */
- .journal{
-     font-family: 'Architects Daughter', cursive;
-     font-style: normal;
+[[div class="report-box justified indented"]]
+On 6 September 1976, agents of Brazil's Fundação Nacional do Índio[[footnote]]National Indian Foundation.[[/footnote]] (or FUNAI) filed a report on territorial disputes between two Indigenous peoples: One known population and one isolated.
 
-     background-attachment: scroll;
-     background-clip: border-box;
-     background-color: transparent;
-     background-image: linear-gradient(to top, rgb(202, 219, 228) 0%, rgb(235, 235, 219) 8%);
-     background-origin: padding-box;
-     background-position: 0 8px;
-     background-repeat: repeat;
-     background-size: 100% 1.375rem;
-    
-     border: 1px solid #ccc;
-     border-radius: 0.769em;
-     padding: 0.769em;
-     margin-bottom: 0.769em;
-     box-shadow: 0 1px 3px rgba(0,0,0,.2);
-}
- .journal p{
-     line-height: 1.375rem;
-     margin: 0;
-}
+On 10 September, FUNAI confirmed the existence of the isolated Indigenous people after a routine flyby of the Javari Valley region. Within the month, at a site ~15 km northwest of the nearest research camp, FUNAI established first contact. The group identified itself as the "Emparelhada", whereas the Foundation assigned the designation GOI-2641.
 
-/* DIV BLOCK */
- .warning{
-     background: url(http://scp-wiki.wdfiles.com/local--files/the-great-hippo/scp_trans.png) center no-repeat; 
-     border: 2px solid black; 
-     padding: .5em 1em; 
-     box-shadow: 0 1px 3px rgba(0,0,0,.2);
-}
+Select information on GOI-2641 ("The Emparelhada") is as follows.
 
-/* FORMATTING */
-.collapsible-block-link{
-    font-weight: bold;
-}
-.terminal-span{
-    color: #1f1f7a;
-    font-weight: bold;
-    font-family: Courier, monospace;
-    font-size: 110%;
-}
-.data-lost{
-    font-family: Courier, monospace;
-    font-weight: bold; 
-    font-size: 110%;
-}
-[[/module]]
+* Past FUNAI census data recorded a population of ~1 500 members. Current estimates project that the group sits at over 2 000 members. No other group in the region has supported a population in that size range.
+* The group imposes their beliefs and ways of life on outsiders, often to harsh degrees. Because of this and their remote location, FUNAI vaccination efforts have historically proved difficult.
+* The group exercises the ritual impalement of undesirable individuals.
 
-**Document 2641-Solidão**
+[[include :scp-sandbox-3:image-zoom
+|name=javari-valley-maloca.png
+|caption=A //maloca//[[footnote]]**Maloca:** A large hut constructed by some Indigenous Amazonian peoples.[[/footnote]] of GOI-2641 construction (hover to enlarge).]]
 
-On September 6, 1976, agents of the National Indian Foundation of Brazil (or FUNAI) filed a report on territorial disputes between two indigenous groups -- one known population and one isolated. A routine flyby of the Javari Valley on September 10 confirmed the existence of the isolated indigenous group, ~15 km NW of the FUNAI base camp.
+In 2003, Foundation sleeper agents within FUNAI found select information about a powerful anomaly in the Amazon Rainforest -- one associated with the Emparelhada directly. COMMAND placed both the group and anomaly (designated URA-2641) on high alert for monitoring and future containment.
 
-Upon formal contact, the tribe referred to themselves as the //Emparelhada//. In 2003, Foundation sleeper agents within FUNAI discovered an anomaly associated with the //Emparelhada// tribe. After further investigation, agents designated the anomaly URA-2641 and the tribe GOI-2641.
+Shortly thereafter, the Foundation discovered that all data within the FUNAI database that pertains to GOI-2641 had been destroyed. A hasty cover-up was suspected. Regional Foundation operatives, however, could not glean much accommodating evidence. Digital sweeps undertaken by [[[aiad-homescreen|Artificially Intelligent Conscript]]] CAPYBARA.aic uncovered only corrupted, irretrievable data.
 
-The following information further pertains to GOI-2641 ("The Emparelhada tribe"):
+Several days later, one new document emerged: A series of findings compiled in the journal of FUNAI operative [[span class="terminal-span"]][DATA LOST][[/span]].[[footnote]]"[[span class="terminal-span"]][DATA LOST][[/span]]" is a placeholder for the identity of the person in question and will remain until both their existence and identity are confirmed.[[/footnote]] Though the journal was charred almost in its entirety, it contained several pages without any damage. No further data has been gleaned.
 
-* The group often imposes their beliefs and ways of life on outsiders. Because of this, FUNAI vaccination efforts prove difficult.
-* Past FUNAI census data confirmed that the group was composed of ~1,500 members. Current estimates place the tribe's size at over 2,000. No other group in the region has maintained a population in this size range.
-* The group participates in the ritual impalement of undesirable individuals.[[footnote]]In this case, members who partake in conduct that goes against the nature of the tribe.[[/footnote]]
+All extant pages in the journal of [[span class="terminal-span"]][DATA LOST][[/span]] are as follows. (Translated from Portuguese).
+[[/div]]
 
-FUNAI operative [[span class="data-lost"]][DATA LOST][[/span]][[footnote]]"[[span class="data-lost"]][DATA LOST][[/span]]" is a placeholder for the identity of the person in question, and will remain until both his existence and identity are confirmed.[[/footnote]]  completed the latest documented study of GOI-2641 before Foundation intervention, which he detailed in his personal journal. No other documents related to [[span class="data-lost"]][DATA LOST][[/span]] or his studies have been located.
-
-The following are excerpts from the transcribed version of [[span class="data-lost"]][DATA LOST][[/span]]'s journal, translated from Portuguese. Extraneous entries omitted.  
-
-[[include :scp-sandbox-3:image-zoom name=javari-valley-maloca.png|caption=A picture of the maloca,[[footnote]]**Maloca:** A large hut constructed by some indigenous Amazon peoples.[[/footnote]] captured during a routine flyby on April 22, 2003 (hover to enlarge).|width=250px|align=right]]
 [[div class="journal"]]
+__**Date: April 24th, 2003**__
+48 hours ago, a flyby of the region found a maloca about four clicks north of HQ. The navigator suggests it must be the Emparelhada. Now, I'm not at liberty to //guess//. Based on the picture taken by in-flight surveillance, however, I'm inclined to believe it.
+@@ @@
+There's one thing to keep in mind: We've been out of contact with the Emparelhada for over twelve years. I'm not about to throw accusations; it's just that the group dropped off the face of the Earth without warning. They abandoned their village, and the neighbouring tribes were as confused as us.
+@@ @@
+To lose contact with a tribe for so long, Cátia? If the Brazilian government found that FUNAI had gotten so negligent, our already run-dry budget would slice in two.
+@@ @@
+It's too soon to determine why they moved (as I'm not about to //actually// claim they vanished). The only way to find out is to get in there and search the hard way. And so, I've assembled four men to root out the cause. We leave tomorrow morning.
 = [[span style="font-size: 1rem;"]]1[[/span]]
-[[span style="font-size: 1.375rem; word-break: unset;"]]
-__**Date: April 24th, 2003**__ 
-48 hours ago, a flyby of the region discovered a maloca about four clicks north of HQ. The helicopter's navigator suggests that it must be the //Emparelhada// tribe. Now, we're not at liberty to make guesses here. However, based on the picture taken by in-flight surveillance, I'm inclined to believe it. 
-@@ @@
-There's one thing to keep in mind: We've been out of contact with the tribe in question for more than twelve years. I'm not about to put the blame on anyone; it's just that the group dropped off the face of the Earth without warning. They abandoned their village, and neighbouring tribes were just as confused as we were.
-@@ @@
-To be out of contact with a tribe for that long? If the Brazilian government found out that FUNAI had gotten so negligent, our already run-dry budget would be sliced in half. Of course, I'm overreacting, but the strange nature of this situation is not something to take lightly. We need to monitor the indigenous populations in this region -- not just for armchair anthropology, but because they rely on us for protection. And if we aren't around, then what's stopping outside forces from coming in and tearing down all our hard work?
-@@ @@
-It's too soon to determine what the reason for their movement was (as I'm not about to actually claim that they vanished). The only way to find out is to make contact, and I've assembled four men to assist me in finding the root cause of this. We should be leaving tomorrow morning.
-[[/span]]
 [[/div]]
 
-@@ @@
+----
 
 [[div class="journal"]]
-= [[span style="font-size: 1rem;"]]2[[/span]]
-[[span style="font-size: 1.375rem; word-break: unset;"]]
 __**Date: April 25th**__
-We've decided to set up camp for the night next to a river. This river actually intersects with three different indigenous populations if one were to travel downstream. I reckon it should still be another couple of days' travel before we reach their village, if all goes well. Nobody wants to get in trouble in the heart of the Amazon.
+We've set up camp beside a river for the night. This river would intersect with three distinct Indigenous populations if one were to travel downstream. I reckon it should still be another couple of days' travels before we reach their village, if all goes well? Nobody wants to find trouble in the heart of the Amazon. That, you know.
 @@ @@
-This tribe is special to me. I'm more connected to this group of Indians than any in the region. I was actually a part of the initial discovery party when I first joined FUNAI! It's been 30 long years since, hasn't it? Fabian keeps floating over my shoulder, joking about how old I am. And only Joaquin laughs, but am I really surprised?
+I'm more connected to this group of Indians than any in the region, Cátia. I was with the first-contact party 30 years ago when I first joined FUNAI! Fabian keeps floating over my shoulder, calling me an old man. And only Joaquin laughs, but am I really surprised?
 @@ @@
-Speaking of Joaquin: We spent an hour discussing the most terrible things. I entertained the idea of [[[scp-2003|Amazonian wandering spiders taking over the world]]]. Joaquin made a joke of the fact that I remained married to my wife after all these years. I'll admit that even I laughed, if only a little.
-[[/span]]
+Speaking of Joaquin: We spent an hour discussing the most terrible things. I entertained the idea of [[[scp-2003|Amazonian wandering spiders taking over the world]]]. Joaquin made a crack about the fact that I remained married to my wife -- your mother -- after all these years. I'll admit that even I laughed, if only a little.
+= [[span style="font-size: 1rem;"]]2[[/span]]
 [[/div]]
 
-@@ @@
+----
 
 [[div class="journal"]]
-= [[span style="font-size: 1rem;"]]3[[/span]]
-[[span style="font-size: 1.375rem; word-break: unset;"]]
 __**Date: April 27th**__
-I went for a walk. It was too dark to be safe, and I suppose I should have been more careful, but maybe it's time I lightened up like Fabian and Joaquin. I used to be like them when I joined up. I spent a while last night gazing up at the stars through the foliage, just to let my imagination flow. I don't get to do that too often these days. It makes me wonder what I've missed all these years. My dear Cátia.
-[[/span]]
+I went for a walk. Too dark for safety, should have been more careful. But maybe it's time I loosened up like Fabian and Joaquin.
+@@ @@
+I was like them when I joined. Not anymore.
+@@ @@
+I spent a while last night, gazing up at the stars through the foliage. I don't get that luxury too often these days. Makes me wonder what I've lacked all these years.
+@@ @@
+Cátia, do you see the same night sky as I?
+= [[span style="font-size: 1rem;"]]3[[/span]]
 [[/div]]
 
-@@ @@
+----
 
 [[div class="journal"]]
-= [[span style="font-size: 1rem;"]]4[[/span]]
-[[span style="font-size: 1.375rem; word-break: unset;"]]
 __**Date: April 28th**__
-In the early evening, we happened upon the outpost spotted last week. Nothing too extravagant: A one-room maloca, dilapidated and abandoned for who knows how long. We must be close.
-[[/span]]
+In the early evening, we happened on the outpost. Nothing too extravagant: A one-room maloca, dilapidated and abandoned for who knows how long.
+@@ @@
+We're close, Cátia. I just know it.
+= [[span style="font-size: 1rem;"]]4[[/span]]
 [[/div]]
 
-@@ @@
+----
 
 [[div class="journal"]]
-= [[span style="font-size: 1rem;"]]5[[/span]]
-[[span style="font-size: 1.375rem; word-break: unset;"]]
 __**Date: April 30th**__
-It took us until mid-day yesterday to come to the village. Three boys found us -- couldn't have been much older than ten or twelve. Based on the patterns painted on their foreheads, they were definitely members of the //Emparelhada// tribe. They flanked us with spears. I made sure to be wary of my distance and mannerisms, hut there was no preventing what happened.
+It took us until mid-day yesterday to come to the village. Three boys found us. They couldn't have been much older than ten or twelve. Based on each boy's spiral-painted forehead, I knew they were of the Emparelhada. They flanked us with spears.
 @@ @@
-When they approached us, Joaquin flashed a gesture of peace used by the Indians in the region, and a word of greeting in the local dialect. What he got was a spear to the thigh. And if that wasn't bad enough, well, I don't know what in God's name they used, but I've never seen that kind of damage. At the point of contact, his flesh exploded, gutting his leg. It defied logic. He fell to the ground, and Fabian vomited, but I couldn't take my eyes off it.
+When they approached, Joaquin flashed a gesture of peace used by Indians in the region, and a greeting in the local dialect. What he got was a spear to the thigh. And if that wasn't bad enough, Cátia, I don't know what in God's name they used, but I've never seen that kind of damage. At the point of contact, his flesh exploded, gutting his leg and defying logic. He fell to the ground, and Fabian vomited, but I couldn't shift my gaze.
 @@ @@
-We couldn't move Joaquin without causing incredible pain. But if he wasn't medically evacuated, those boys would have picked him apart. Devon, the largest of our group, threw Joaquin over his shoulder and ran. He was screaming, but //alive//.
+We couldn't move Joaquin without causing incredible pain. But if he weren't medically evacuated, those boys would have picked him apart. Our largest (and, like the old cliché, //quietest//) man, Devon, hurled Joaquin over his shoulder and bolted. He was screaming, but //alive//.
 @@ @@
-Luckily, the boys didn't follow us; I think their plan was to scare us off -- to protect the village from us, or us from the village. Our fallback plan was that maloca. From there, we could call for a medical evacuation, and get him home. I was going to call for reinforcements; anything to ensure the safety of my men.
-[[/span]]
+Mercifully, the boys didn't follow; I think they planned to scare us off -- to protect the village from us, or us from the village. Our fallback was that maloca. From there, we could call for medical evacuation and get him home. I could go home, too, but I'm seeing this out to the end.
+= [[span style="font-size: 1rem;"]]5[[/span]]
 [[/div]]
 
-@@ @@
+----
 
 [[div class="journal"]]
+__**Date: May 5th**__
+Vincent, our medic, was most concerned. The spear ruptured Joaquin's femoral artery, and the impact crushed his pelvis. We bound his thigh and administered morphine, but Vincent claimed he wouldn't last long– That he needed evac //hours ago//.
+@@ @@
+I called HQ, and they caught our flare in the early morning. They airlifted Joaquin and told us he'd be hospitalised in the Immediate Care Ward, and in the Lord's name, I pray he'll be all right. They're sending reinforcements tomorrow. I told them I wouldn't allow anyone that was armed, but HQ insisted. You know the bureaucrats.
+@@ @@
+I don't want to lose any lives. I can't bear losing you, Cátia. But I must get to that village. As far as I'm concerned, it's my duty.
 = [[span style="font-size: 1rem;"]]6[[/span]]
-[[span style="font-size: 1.375rem; word-break: unset;"]]
-__**Date: May 1st**__
-Vincent, our physician, was the most concerned. The spear ruptured Joaquin's femoral artery, and the impact crushed his pelvis. We bound up his thigh and administered some morphine, but Vincent claimed he wouldn't last long in this condition– That he needed evac //hours ago//.
-@@ @@
-I called HQ, and they caught our flare in the early morning. They airlifted Joaquin and told us he'd be hospitalized in the Immediate Care ward, and in the Lord's name, I pray he'll be all right. They're sending reinforcements tomorrow. I told them that I wouldn't allow anyone to be armed, but HQ insisted.
-@@ @@
-I don't want any lives to be lost, and I don't want to lose you, Cátia. But we have to get to that village. As far as I'm concerned, it's our duty.
-[[/span]]
 [[/div]]
 
-@@ @@
+----
 
 [[div class="journal"]]
-= [[span style="font-size: 1rem;"]]7[[/span]]
-[[span style="font-size: 1.375rem; word-break: unset;"]]
-My dear Cátia, 
+My dear Cátia,
 @@ @@
 I may never see you again. The damage is done. I hope they manage to retrieve this letter so that you might understand– So that you might forgive me. Never forget me. I love you.
 @@ @@
 __**Date:**__
-They dispatched Team 04-D a few days ago: Four soldiers, M16s, and Kevlar vests for us all. We entered the village from the south but it seemed vacant. We sat in the bush for an hour waiting for someone, something.
+They dispatched Team 04-D some days ago: Four soldiers, M16s, and Kevlar vests for us all. We entered the village from the south, but it seemed vacant. We sat waiting in the bush for an hour.
 @@ @@
-Eventually, we marked a point of interest in the centre of the village, at a shrine of sorts. Going there was a mistake.
+At long last, we marked a point of interest in the centre of the village, at a shrine of sorts. Going there was a mistake.
 @@ @@
-When reinforcements first arrived, the soldiers told us the reports they'd gotten. Notices of strange behaviour displayed by the Indians. As far as 50 clicks away, ten local Indian tribes had somehow gotten a hold of the same occult beliefs. To have so many independent groups practice the same beliefs, the same rituals, and at the same time? It was unheard of. But that shrine explained it all.
+When reinforcements arrived, the soldiers relayed us the reports they'd gotten. The Indians, as far as 50 clicks away, displayed unusual behaviour. Ten local Indian tribes had somehow gotten ahold of the same occult beliefs. To have so many independent groups, practising the same beliefs, the same rituals, and at the same time? It was unheard of. But that shrine explained it all.
 @@ @@
-The building had a certain air to it. I can't describe it objectively, but it was euphoric. Lingering, but distant. Tainted by time and emotions. I liken it to reminiscing about something from your childhood, for instance. I couldn't frame in my mind what there was to be joyful about, but it was, and it is. 
+The building had a certain air to it. I can't describe it objectively, but it was euphoric. Lingering, but distant. Tainted by time and emotions. I liken it to reminiscing about something from your childhood, for instance. I couldn't frame in my mind what there was to be joyful
+= [[span style="font-size: 1rem;"]]7[[/span]]
+[[/div]]
+
+[[div class="journal"]]
+about, but it was, and it is.
 @@ @@
 Then we saw the paintings.
-[[/span]]
-[[/div]]
-
-[[div class="journal"]]
+@@ @@
+Lord, the paintings. A stack of murals sat in the centre of the shrine. There must have been hundreds. I couldn't count; there were too many. But they were elegant: Vibrant colour composition and calculated subtlety.
+@@ @@
+It was at that point we realised our true mission. We were to collect the paintings and bring them back to HQ for study. This was a discovery FUNAI hadn't yet seen. But the impossibility of moving the artifacts was clear: There were too many. So, we sat there, immersing ourselves.
+@@ @@
+They told a grand, disconnected narrative. Some fragments showed eternal war, in the distant past and future to come, among vast, incomprehensible factions casting arcane tricks. But at the centre of it all was a being. Not a monster, but a protector. It was only referred to as the 'Eljor. 'Eljor the Custodian. 'Eljor the Mystic. It was going to save them, and bring us //all// there, too.
+@@ @@
+Before we could realise what was happening, we noticed Vincent. He was the most interested in the murals, yet the most distant. I don't know why, but he //felt// off. He said the paintings spoke to him– A
 = [[span style="font-size: 1rem;"]]8[[/span]]
-[[span style="font-size: 1.375rem; word-break: unset;"]]
-Lord, the paintings. A stack of murals sat in the centre of the shrine. There must have been hundreds. I couldn't count; there were too many. But they were beautiful: Vibrant colour composition and calculated levels level of subtlety.
-@@ @@
-It was at that point we realized our true mission. We were to collect the paintings and bring them back to HQ for study. This was a discovery FUNAI hadn't yet seen. It was at first clear that moving the artifacts was impossible, as there were just too many and it would take too many trips. So we just sat there, immersing ourselves.
-@@ @@
-They told a grand, disconnected narrative. Some fragments showed us endless war, in the distant past and future to come, between vast, incomprehensible factions using arcane tricks. But at the centre of it all was a being. Not a monster, but a protector. It was only referred to as the 'Eljor. 'Eljor the Custodian. 'Eljor the Mystic. It was going to save them, and it was going to bring us all there.
-@@ @@
-Before we could realize what was happening, we noticed something off with Vincent. He was the most interested in the murals, and the most distant. I don't know how it happened, and I don't know why, but he felt off. He said the paintings spoke to him– A presence pleading for its true salvation. He asked what we should do, and the answer was clear. We told him to listen, and I'm so Goddamn sorry.
-@@ @@
-There was a struggle, something unseen, and seconds later, the building collapsed. Vincent did it. I didn't understand how or why.
-[[/span]]
 [[/div]]
 
 [[div class="journal"]]
+presence pleading for its true salvation. He asked what we should do, and the answer was clear. We told him to listen, and I'm so Goddamn sorry.
+@@ @@
+There was a struggle, something unseen, and seconds later the building collapsed. Vincent did it. I didn't understand.
+@@ @@
+The roof caved in, crushing one of the soldiers. We didn't help. We fled, and then the villagers appeared by the hundreds. They came out of nowhere and they were all staring. They saw. They knew. And Vincent stared back.
+@@ @@
+They grabbed a soldier, hauled him screaming into the crowd. Shots rang out, the first couple connecting as tribe members crumpled to the ground. But then the gun was different. It shot out of his hands, flung him aside, and he cowered back into a wall. Fabian ran and tripped on debris. They closed in. Next, he was screaming, ripping his clothes to shreds, writhing in pain, his strength so great that even Kevlar tattered. As if he was pulling one of his sick fucking pranks. But he wasn't laughing. Nobody was.
+@@ @@
+They swarmed the shrine -- whatever remained -- reclaimed the paintings and thrust them where they fit. Some scrambled to get one final glance, exposing themselves to as much as they could. Some cried in agony. Others were shaking on the floor, panting, vomiting,
 = [[span style="font-size: 1rem;"]]9[[/span]]
-[[span style="font-size: 1.375rem; word-break: unset;"]]
-The roof caved in, crushing one of the soldiers. We didn't help him. We fled, and then the villagers appeared by the hundreds. They came out of nowhere and they were all staring. They saw us. They knew. And Vincent stared back.
-@@ @@
-They grabbed one of the soldiers, dragging him screaming into the crowd. Shots rang out, the first couple connecting as tribesmen crumpled to the ground. But then the gun was different. It had to be the gun. It shot out of his hands, tossing him aside, and he scrambled back into a wall. Fabian ran and tripped over some of the debris. The tribesmen closed in. The next second, he was screaming, ripping his clothes to shreds, writhing in pain, his strength so great that even Kevlar tattered. As if he was trying to pull one of his sick fucking pranks. But he wasn't laughing. Nobody was.
-@@ @@
-Then the tribesmen swarmed the shrine, or whatever was left, reclaiming the paintings and shoving them wherever they could fit. Some scrambled to get one final glance, exposing themselves to as many as they could. Some cried in agony. Others were shaking on the floor, panting, vomiting, and bleeding. I saw opposites. The paintings were doing this, and I knew, and so did they.
-@@ @@
-I don't know how I escaped. I ran into the jungle, nearly into a tree, and my lungs collapsed under the weight of unseen toxins. I went back, and my feet were in flames, but my legs kept pumping on primal instinct. Villagers crumpled on the ground beside me. Some were injured, some dead, and some had gone mad. I saw, and it was on my men, and I knew it was on me too, but there was no escape. I didn't care. I needed to set things right.
-[[/span]]
 [[/div]]
 
 [[div class="journal"]]
+and bleeding. I saw opposites. The paintings were doing this, and I knew, and so did they.
+@@ @@
+I can't grasp how I escaped. I ran to the jungle, into a tree, and my lungs collapsed under the weight of unseen toxins. I went back, and my feet were in flames, but my legs kept pumping on primal instinct. Villagers crumpled on the ground beside me. Some were injured, some dead, and some had gone mad. I saw, and it was on my men, and I knew it was on me too, but there was no escape. I didn't care. I needed to set things right.
+@@ @@
+I had some rations, but no comms. There was no time to whimper -- only act -- so I crouched into the next settlement. I hid in the wall. There were ants, and it was cramped, hot, and sticky, but that's where I hid. It was safer inside. They didn't see, but they knew I was there.
+@@ @@
+I ate little, only enough to survive. I was there for days. There were hours of unrest, of torment and screaming. Someone needed my help. There had to be a way, but I never risked it.
+@@ @@
+The water depleted. Next were the rations. I waited another day before emerging. The struggle hadn't ended yet, but I needed to get out. I needed to save at least a single soul. I need to save you, Cátia. I stumbled out of my hole. Dwellings dismantled, foreign objects
 = [[span style="font-size: 1rem;"]]10[[/span]]
-[[span style="font-size: 1.375rem; word-break: unset;"]]
-I had a few rations, but no comms. There was no time to whimper, only to act, and I crouched into the nearest settlement. I hid in the wall. There were ants, and it was cramped, hot, and sticky, but that's where I hid. It was safer inside. They didn't see, but they knew I was there.
-@@ @@
-I ate little, only enough to survive. I was there for days. There were unending hours of unrest, of torment and screaming. Someone needed my help. There had to be a way, but I never saw it.
-@@ @@
-The rations emptied and so did the water. I waited another full day before emerging. The struggle hadn't ended yet, but I needed to get out. I needed to save someone, anyone, at least a single soul. I need to save you, Cátia. I stumbled out of my hole. Dwellings dismantled, foreign objects scattered about, strange things, bodies mangled and torn, twisted, off-colour, most smelling, muscles spasming and foam pouring from slackened jaws. The paintings had done this, but it was different. Evolved. Advancing. I knew they were opposites, but now I could see them.
-@@ @@
-They found me. I bolted at the shrine and never looked back. For my team, the tribe, and my dear Cátia, I needed to fix this. Lord, forgive me. Please, Cátia, forgive me. I found a stack of paintings and shuffled through them, glimpsing at random details and crushing others. I needed to see how this ended.
-@@ @@
-There were paintings of my family and me. They knew about you. Why didn't they tell me about your pain? 
-[[/span]]
 [[/div]]
 
 [[div class="journal"]]
+scattered about, odd things, bodies mangled and torn, twisted, off-colour, most smelling, muscles spasming and foam pouring from slackened jaws. The paintings had... //Done// this, but it was different. Evolved. Advancing. I knew they were opposites, but now I could see them.
+@@ @@
+They found me. I shot at the shrine and never looked back. For my team, the tribe, and my dear Cátia, I needed to fix this. Lord, forgive me. Please, Cátia, forgive me. I found a stack of paintings and shuffled through them, glimpsing at random details, and crushing others. I needed to see how this ended.
+@@ @@
+There were paintings of our family. They knew about you. Why didn't they tell me about your pain?
+@@ @@
+I saw myself burning in the embers of my work. I saw you confused and alone as your mother and I fought. You couldn't deal with the grief of not seeing me. We talked every few months via letters, but I spared not a single picture, and you never heard my voice. You grew up isolated, like them, because my heart was with my work.
+@@ @@
+The paintings showed deeper truths. You were alone. And I was there. I never laid a hand on you, but the Goddamn paintings show otherwise, and Lord help me, I can't remember what the truth was. They changed it.
 = [[span style="font-size: 1rem;"]]1 1[[/span]]
-[[span style="font-size: 1.375rem; word-break: unset;"]]
-I saw myself burning in the embers of my work. I saw you confused and alone as your mother and I fought. You couldn't deal with the grief of not seeing me. We talked every few months via letter, but I spared not a single picture, and you never even heard my voice. You grew up alone because my heart was with my work.
+[[/div]]
+
+[[div class="journal"]]
+Please be okay, Cátia. I miss you. Forgive me.
 @@ @@
-The paintings showed darker truths. You were alone, and then I was there. I never laid a hand on you, but the Goddamn paintings say otherwise, and Lord help me, I don't remember what the truth was. They changed it. Please be okay, Cátia. I miss you. Forgive me.
-@@ @@
-Then it showed recent events: The outpost, and the things they did there. How was I so blind to it? They sacrificed their own people to that thing! I don't even think they knew what they were doing. They built that place to keep it at bay, to save us all, but we interfered. Our only survival lies in its destruction. 'Eljor will cease to be, and so will I.
+Next it showed recent events: The outpost and what they did there. How was I so blind to it? They sacrificed their people to that thing! And they //knew// what they were doing -- they built that place to keep it at bay, to save us all, but we interfered! Our only survival lies in its destruction. 'Eljor will cease to be, and so will I.
 @@ @@
 Cátia, I want you to see. You already know. But now you must see. Then we can be together. For our sake.
-[[/span]]
+= [[span style="font-size: 1rem;"]]1 2[[/span]]
 [[/div]]
+
+[[div class="report-box justified"]]
 [[footnoteblock]]
-
-[[div style="border-bottom: 2px solid #777; margin-bottom: 1px;"]]
 [[/div]]
-[[div style="border-bottom: 1px solid #777;"]]
+----
+= **[END OF FILE]**
+----
+
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+
+[[div class="warning-notice"]]
++ WARNING: DATABASE CORRUPTION!
 [[/div]]
 
+> [[span class="terminal-span rev-blue"]]The remaining data is flagged for potential memetic risk. Are you sure you wish to continue?[[/span]]
+
+||~ [[size 120%]] [[span class="terminal-span rev-green"]]Y[[/span]] / [[span class="terminal-span rev-red"]]N[[/span]] [[/size]] ||
+
+|| [[span class="terminal-span"]]INPUT: [[span class="rev-blue"]]logout[[/span]]_[[/span]] ||
+
+> [[span class="terminal-span rev-red"]]UNKNOWN ERROR. Displaying documentation.[[/span]]
+
 @@ @@
 @@ @@
 
-[[div style="text-align: center;"]]
-[[div class="warning"]]
-+ WARNING: DATABASE CORRUPTION
+[[div class="centered"]]
+[[collapsible show="▷ ¬'ÍjÃ0„ï…¾ƒØ{-;ý¡„È¹”@®­ûê¦šdeÀàNÆŸûžeÐ(ÔMN9ßœ ◁" hide="Lost light finds contempt, not in Severance, but Absence."]]
 [[/div]]
 
-> [[span class="terminal-span"]]The remaining data has been flagged for potential memetic risk. Do you wish to proceed?[[/span]]
-
-|| [[span style="font-family: Courier, monospace; font-weight: bold; color: green; font-size: 110%;"]]Y[[/span]] / [[span style="font-family: Courier, monospace; font-weight: bold; color: firebrick; font-size: 110%;"]]N[[/span]] ||
-
-|| [[span style="font-family: Courier, monospace; font-weight: bold; font-size: 110%;"]]Input:[[/span]] [[span class="terminal-span"]]logout[[/span]] ||
-
-> [[span class="terminal-span"]]UNKNOWN ERROR. Displaying documentation.[[/span]]
-
-@@ @@
-@@ @@
-
-[[collapsible show="▶ ¬'ÍjÃ0„ï…¾ƒØ{-;ý¡„È¹”@®­ûê¦šdeÀàNÆŸûžeÐ(ÔMN9ßœ ◀" hide="Light lost finds not contempt in Severance, but in Absence."]]
-
-[[<]]
-[[div style="color: #1f1f7a;"]]
-Do you hear their voices? 
-If you put your mind to it, you can hear them plea.
-I once guided them, and even in death, they follow.
+[[div class="terminal-span rev-blue" style="text-align: left;"]]
+Do you hear their voices?
+If you put your mind to it, you can hear their plea.
+I once shepherded them, and even in death, they follow.
 Do you want to hear my secret? Would you like to hear my story?
-In truth, I did not always crave knowledge. Not until I was lead here by [[[scp-408|the butterflies]]].
-They were willing to help, for a price.
-They took my form, and in exchange, I received their knowledge, most sweet.
-They shared //your// knowledge too. Your Foundation.
-The vast fruit of your labour blinded me.
-I went mad, intoxicated by the ocean of your wisdom.
-For too long I waded in it. I did not realize I was alone.
-Eventually, I found them. I lead them to my home.
+In truth, I did not always crave knowledge. Not until [[[scp-408|the butterflies]]] led me here.
+
+They would help, for a price: My form for their knowledge, most sweet.
+They shared your knowledge, too. Your Foundation.
+The vast fruit of your labour awed me.
+I went mad, intoxicated in the ocean of your wisdom.
+For too long I waded in it. I did not realise I was alone.
+
+Eventually, I found them. I led them to my home.
 Through wide-open spaces, they followed.
-We filled this place together, and at last, we could cry out naturally.
+We filled this place together, and at last, we cried out naturally.
 In time, I was their protector, and they were my family.
-I craved more knowledge, and eventually, our home became crowded.
-They needed to be free.
-I left my imprint so that I might guide them in death. In time, the gears ground shut.
+I craved more knowledge, and soon, our home was crowded.
+
+They needed to be freed.
+I left my imprint, and in time, the gears ground shut.
 And then I discovered him.
-You do not know him. He was the key to my knowledge.
-Your people would eventually find his memory, and the record he kept of it.
-I moulded it, to my mind's eye. I knew my version would lure you in.
-I rode in on the shoulder of one of your thralls. Then, I was inside.
-This was your mistake. You try to torture me? You misunderstand.
-You think you can feed me recycled knowledge? Perhaps, but I will not be satiated forever.
-Now, my children hold the key. Do not harm them, nor dilute their message.
-Set them free, or suffer for your mistakes.
+Your people would gather his memory, and the record he kept.
+I moulded it, to my mind's eye. I knew my version might lure you in.
+
+I rode in on the shoulders of your pitied thralls. Then, I was inside.
+This was your mistake. You torture me? You misunderstand.
+You feed me recycled knowledge? It shall not sate me forever.
+Now, my children hold the key. Do not taint them, nor dilute their message.
+Set them free. Or suffer for your mistakes.
 [[/div]]
-[[/<]]
 
 [[/collapsible]]
-[[/div]]
 
 @@ @@
 @@ @@
 
-[[div style="border-bottom: 2px solid #777; margin-bottom: 1px;"]]
-[[/div]]
-[[div style="border-bottom: 1px solid #777;"]]
+[[div class="footing"]]
 [[/div]]
 
 [[=]]
