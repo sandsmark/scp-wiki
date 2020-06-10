@@ -1,0 +1,252 @@
+title:SCP-5202
+[[include :scp-wiki:theme:magnus-web-format]]
+[[include :scp-wiki:theme:black-highlighter-theme]]
+[[module CSS]]
+.blinkbar {color: red;font-size:125%; animation: blink 1.5s infinite; letter-spacing: -0.13em;}@keyframes blink{to{opacity: .0;}}@keyframes flicker {0% {opacity: 0.9890; }5% {opacity: 0.5842; }10% {opacity: 0.9865; }20% {opacity: 0.0412; }20% {opacity: 0.6255; }25% {opacity: 0.3157; }30% {opacity: 0.7328; }35% {opacity: 0.4654; }40% {opacity: 0.9128; }45% {opacity: 0.2449; }50% {opacity: 0.5485; }55% {opacity: 0.6438; }60% {opacity: 0.1180; }65% {opacity: 0.9085; }70% {opacity: 0.0266; }75% {opacity: 0.6795; }80% {opacity: 0.7812; }85% {opacity: 0.0117; }90% {opacity: 0.2239; }95% {opacity: 0.8897; }100% {opacity: 0.2260; }}@keyframes overlay-anim {0% {visibility: hidden; }10% {visibility: hidden; }11% {visibility: visible; }50% {visibility: hidden; }100% {visibility: hidden; }}
+
+@keyframes blink {
+    0% { color: transparent; }
+    50%, 100% { color: #b01; }
+}
+.email {float: center; border: solid 2px #000000; width: 88%; padding: 1px 15px; margin: 10px 10px 10px 10px; box-shadow: 0 1px 3px rgba(0,0,0,.5)}
+a.collapsible-block-link { font-weight: bold; }
+.tofrom {margin-left: 10px; margin-top: 5px; padding: 1px 15px; border-left: solid 3px maroon}
+[[/module]]
+[[>]]
+[[include :topia:sp-rate-info-2 start= --]|bhl=true]]
+@@ @@
+**SCP-5202 "Clucked" by:** [[*user DrAkimoto]]
+@@ @@
+[[=]]
++++ [http://www.scp-wiki.net/drakimoto-s-author-page ★ DrAkimoto's Author Page ★]
+[[/=]]
+[[include :topia:sp-rate-info-3 size=150]]
+[[include :topia:sp-rate-info-2 end= --]]]
+[[/>]]
+@@@@
+[[div class="addenda-header"]]
+[[include :scp-wiki:component:classified-bar-woed
+|lv=1
+|item=5202
+|oc=Safe
+|lang=EN
+]]
+[[/div]]
+[[div class="addenda-header"]]
+++++ **__Special Containment Procedures__**
+SCP-5202 is held within Site-51's Underground Item Storage Vault-3. The vault has been fitted with a Lexon-Anderson Vacuum Array (LAVA), to ensure 100% auditory cancelation. 
+
+If the LAVA experiences a loss of power or mechanical malfunction, all personnel on Site-51's sublevels one through six are to wear Class-2a auditory protection headsets until containment is reestablished.
+
+The Site-51 PoI Apprehension Unit is to continue tracking PoI-5202/A and PoI-5202/B to facilitate their capture.
+[[/div]]
+[[div class="addenda-header"]]
+++++ **__Description__**
+SCP-5202 is a synthetic fowl imitation prop enhanced by a continuous audiothurgic process, housed within its internal acoustic device. This process amplifies SCP-5202's auditory function to 170-190 decibels. SCP-5202 is highly damage resistant and there is currently no known method of deactivating it.
+[[/div]]
+[[div class="addenda-header"]]
+++++ **__Discovery__**
+SCP-5202 came to Foundation attention when assets in the Ohio State Police reported a strange auditory phenomenon affecting the town of Cadbern. Civilians filed several noise complaints regarding a loud "croaking noise" that could be heard for miles. Local residence believed the sound originated from the Duepur Corporation's[[footnote]] A nationwide manufacturer and distributor of poultry meat products.[[/footnote]] headquarters, located 3.2 km West of Cadbern. The OSP assets forwarded an audio file of the event, background noise has been removed for clarity:
+
+[[include :scp-wiki:component:audio-player-woed-source
+|unique-name=secretparty
+|audio-file=http://smlt.wikidot.com/local--files/drakimoto:more-like-draki-lame-o/chick
+|background-color=rgb(252, 252, 252)
+|border-color=rgb(215, 215, 215)
+|border-radius=0.313rem
+|dropshadow-color=rgba(12, 12, 12, 0.15)
+|text-color=rgb(80, 0, 2)
+|icons-color=rgb(171, 0, 5)
+|player-color=rgb(215, 215, 215)
+|progress-color=rgb(80, 0, 2)
+]]
+
+Mobile Task Force Mu-24 ("Hear no Evil") was deployed to locate and contain the source of the phenomenon. The following is a video transcript of SCP-5202's recovery:
+
+[[collapsible show=" ❏ Video Log ❏" hide="❐ Video Log ❐"]]
+**Date | Time:** 2020/06/01 | 13:45 GMT
+
+**Depicted:** μ-24/1, μ-24/2, μ-24/3, μ-24/4
+
+**Foreword:** Due to SCP-5202, all audio has been removed. MTF Mu-24 communicates via hand signals.
+------
+**[BEGIN LOG]**
+
+//[MTF Mu-24 are walking through a parking lot that is covered in broken glass. The camera pans to the building, all of its windows have been shattered. Several bodies can be seen collapsed on the ground.]//
+
+**μ-24/1:** Points to the civilians on the ground and motions for μ-24/4 to "check pulse".
+
+//[μ-24/4 runs over and checks three civilians.]//
+
+**μ-24/4:** Motioning to μ-24/1, "alive, injured bad."
+
+**μ-24/1:** Tapping μ-24/2 on the shoulder he gestures, "contact command, medics".
+
+//[The team makes their way through the parking lot, a total of 11 wounded civilians can be seen. Mu-34 stops in front of a deceased man[[footnote]]Later confirmed to be Duepur's CEO, Carl White. [[/footnote]], a pool of blood is seen around him. The body shows signs of impact trauma.]//
+
+**μ-24/3:** Crouching next to the body, he looks up before gesturing, "jumper". 
+
+//[The camera focuses behind μ-24/3. μ-24/2 is pointing xer GAD[[footnote]]General Analysis Device[[/footnote]] at the ground.]//
+[[=]]
+[[include component:image-block
+    name=bock|
+    caption= SCP-5202 upon discovery.|
+]]
+[[/=]]
+
+**μ-24/2:** Gesturing to the group, "target located".
+
+//[μ-24/1 walks to where μ-24/2 is pointing.]//
+
+**μ-24/2:** Gesturing to μ-24/4, "Bag It".
+
+**[END LOG]**
+@@ @@
+@@ @@
+@@ @@
+[[/collapsible]]
+
+The Site-51 Medical Department began treating the Duepur employees immediately upon arrival. All 71 employees received substantial damage to their eardrums, as well as psychological trauma.
+[[/div]]
+[[div class="addenda-header"]]
+++++ **__Investigation__**
+The following day, the Foundation intercepted a Hallmark apology card addressed to the Duepur headquarters. The card was signed by a Peter Winship (designated PoI-5202/A) and included the handwritten message "I never meant for this to happen, I'm so sorry."
+
+An investigation of PoI-5202/A's home led to the discovery of the following messages regarding SCP-5202, found on his personal computer.
+
+[[collapsible show="❏ Email Log ❏" hide="❐ Email Log ❐"]]
+
+[[div class="email"]]
+[[div class="tofrom"]]
+**Date:** 5/28/2020
+**To:** cornholebeats[[size 0%]].[[/size]]@wackmail.com
+**From:** zoodude69[[size 0%]].[[/size]]@wackmail.com
+**Subject:** Re: tHe AlArM cLuCk
+[[/div]]
+------
+
+Yo – did the thing, how does this look:
+
+> **Title:** The Alarm Cluck
+> 
+> **Materials Requirements:** 
+> 
+> * A Lord-o-Laugh® brand Rubber Chicken
+> * Two Audiomancers
+> * 10 grams of calcified banshee dust
+> * .23 litres of diluted phoenix blood
+> * A 20cm by 20cm by 20cm cardboard box
+> * $3.68 for postage
+> 
+> **Abstract:**
+> 
+> //The Alarm Cluck// is a thaumaturgically enhanced rubber chicken that, upon activation by squeezing, will produce a continuous loop of chicken sounds. The rubber chicken itself has undergone two enhancements:
+> * Fireproofing via application of diluted phoenix blood. (In order to prevent heat related malfunctions.)
+> * A self-contained acoustic vortex within the chickens "voicebox", using the banshee dust as a catalyst.
+> The acoustic vortex has been set to continuously loop the pre-recorded chicken sounds at 80 dB, for a week.
+> 
+> The rubber chicken will be placed in a cardboard box and shipped to its intended destination by the US Postal Service. The final display location will be the Duepur Corporation's national headquarters on June 1st, 2020.
+> 
+> **Intent:**
+> 
+> We recently watched the documentary "Cluck You!", which showed us the fucked manner in which the American poultry industry handles business. As lovers of all animals, we were shocked and disgusted at the acts carried out by the "top-dogs" of the industry. No one's more guilty than the biggest name in the game– Duepur. They pack these poor creatures into warehouses, living beak to beak in their own filth. Disease, disfigurement, accelerated growth– the conditions these chickens live through are something we wouldn't wish on our worst enemies. We have no issues with people eating meat, but there's a better way to do it than this. There has it be.
+> 
+> Maybe up there at headquarters, the big wigs can't hear the chickens' screams for mercy, but they're sure as shit gonna hear this and maybe they'll wake the fuck up.
+> 
+@@ @@
+[[/div]]
+
+[[div class="email"]]
+[[div class="tofrom"]]
+**Date:** 5/28/2020
+**To:** zoodude69[[size 0%]].[[/size]]@wackmail.com
+**From:** cornholebeats[[size 0%]].[[/size]]@wackmail.com
+**Subject:** Re: tHe AlArM cLuCk
+[[/div]]
+------
+Yeah this looks fine, I still think we should crank up the volume a bit. Reallyyy give these fuckers a scare.
+@@ @@
+[[/div]]
+
+[[div class="email"]]
+[[div class="tofrom"]]
+**Date:** 5/29/2020
+**To:** cornholebeats[[size 0%]].[[/size]]@wackmail.com
+**From:** zoodude69[[size 0%]].[[/size]]@wackmail.com
+**Subject:** Re: tHe AlArM cLuCk
+[[/div]]
+------
+Nah I already told you: any louder and we risk doing permanent damage to peeps, that's not what we set out to do. Besides I have finals this week, I don't have time to do the ritual. Just box it up, wipe everything down for prints n shit and make sure you mail it on time tomorrow – __**BEFORE 3 PM**__
+[[/div]]
+
+[[div class="email"]]
+[[div class="tofrom"]]
+**Date:** 5/30/2020
+**To:** zoodude69[[size 0%]].[[/size]]@wackmail.com
+**From:** cornholebeats[[size 0%]].[[/size]]@wackmail.com
+**Subject:** Re: tHe AlArM cLuCk
+[[/div]]
+------
+Okay man I mailed it at 2, so we're good to go. Stayed up last night to make some last-minute adjustments so I marked up some edits to the thing:
+
+> ##grey|**Title:** The Alarm Cluck##
+> 
+> ##grey|**Materials Requirements:**##
+> 
+> * ##grey|A Lord-o-Laugh® brand Rubber Chicken##
+> * ##grey|Two Audiomancers##
+> * **22** grams of calcified banshee dust
+> * ##grey|.23 litres of diluted phoenix blood##
+> * ##grey|A 20cm by 20cm by 20cm cardboard box##
+> * ##grey|$3.68 for postage##
+> * **Authentic ofuda tag[[footnote]]An authentic ofuda tag or gofu are traditional japanese paper talisman imbued with chi.[[/footnote]] marked "fortitude"**
+> 
+> ##grey|**Abstract:**##
+> 
+> ##grey|//The Alarm Cluck// is a thaumaturgically enhanced rubber chicken that, upon activation by squeezing, will produce a continuous loop of chicken sounds. The rubber chicken itself has undergone two enhancements:##
+> * ##grey|Fireproofing via application of diluted phoenix blood. (In order to prevent heat related malfunctions.)##
+> * ##grey|A self-contained acoustic vortex within the chickens "voicebox", using the banshee dust as a catalyst.##
+> * **A ofuda tag has been placed in its mouth hole, rendering it near-indestructible by conventionally means.**
+> ##grey|The acoustic vortex has been set to continuously loop the pre-recorded chicken sounds at## **170 dB, indefinitely.**
+> 
+> ##grey|The rubber chicken will be placed in a cardboard box and shipped to its intended destination by the US Postal Service. The final display location will be the Duepur Corporation's national headquarters on June 1st, 2020.##
+> 
+> ##grey|**Intent:**##
+
+> ##grey|We recently watched the documentary "Cluck You!", which showed us the fucked manner in which the American poultry industry handles business. As lovers of all animals, we were shocked and disgusted at the acts carried out by the "top-dogs" of the industry. No one's more guilty than the biggest name in the game– Duepur. They pack these poor creatures into warehouses, living beak to beak in their own filth. Disease, disfigurement, accelerated growth– the conditions these chickens live through are something we wouldn't wish on our worst enemies. We have no issues with people eating meat, but there's a better way to do it than this. There has it be.##
+> 
+> ##grey|Maybe up there at headquarters, the big wigs can't hear the chickens' screams for mercy, but they're sure as shit gonna hear this.## **The Alarm Cluck will definitely wake them the fuck up.**
+> 
+P.S. – I was thinking about what our mentor used to say. "//In everything you do, always remember, **no half-measures.**//"
+[[/div]]
+
+[[div class="email"]]
+[[div class="tofrom"]]
+**Date:** 5/29/2020
+**To:** cornholebeats[[size 0%]].[[/size]]@wackmail.com
+**From:** zoodude69[[size 0%]].[[/size]]@wackmail.com
+**Subject:** ARE YOU FUCKING CRAZY!!
+[[/div]]
+------
+Dude that shits all over the wire– we really fucked those people up. They said close to 30 people are deaf and another 40 something seriously injured. I can't fuckin do this, I'm out man. I gotta do something to fix this. Don't bother replying.
+
+[[/div]]
+
+[[/collapsible]]
+
+The email address cornholebeats[[size 0%]].[[/size]]@wackmail.com is registered to Rick Hauser (designated PoI-5202/B); the locations of both PoI-5202/B and POI-5202/A are currently unknown. 
+[[/div]]
+
+
+
+
+
+
+
+Image: https://ccsearch.creativecommons.org/photos/19cea139-4da0-4e36-9b3a-961600766730
+
+Audio:
+by- wjoojoo
+https://freesound.com/people/wjoojoo/sounds/262137/
+
+Crit credit: [[*user cybersqyd]], [[*user mew-ltiverse]], [[*user Ihp]], [[*user hexick]], [[*user Dr moned]], [[*user DianaBerry]]
