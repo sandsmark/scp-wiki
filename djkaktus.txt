@@ -12,7 +12,7 @@ title:The Based God
 /* Author page specific */
 :root {
     --header-title: "DJKAKTUS";
-    --header-subtitle: "Your Actual 100% Dad";
+    --header-subtitle: "The Based God";
 }
 
 sup {
@@ -21,50 +21,6 @@ sup {
     top: -0.5em;
 }
 
-.nav {
-    height: 35.625rem;
-    width: 8.125rem;
-    overflow: hidden auto;
-    background: url(http://www.scp-wiki.net/local--files/djkaktus/background.png);
-    position: fixed;
-    left: 78%;
-    top: 11.875rem;
-    display: inline-block;
-    border-radius: 0;
-    border: solid 0.0625rem rgba(var(--swatch-primary));
-    padding: 0.625rem;
-    box-shadow: 0 0.0625rem 0.1875rem rgba(var(--black-monochrome), 0.12), 0 0.0625rem 0.125rem rgba(var(--black-monochrome), 0.24);
-}
-
-.nav > div {
-    width: 8.125rem;
-    display: flex;
-    flex-direction: column;
-    padding: 0.625rem;
-    position: absolute;
-    left: 0;
-    top: 0;
-    overflow: hidden auto;
-}
-
-.desktop-only.nav a,
-.desktop-only.nav a:hover,
-.desktop-only.nav a:active,
-.desktop-only.nav a:visited {
-    color: rgba(var(--swatch-menutxt-light-color));
-}
-
-@media (max-width: 1600px) {
-    .desktop-only {
-    	display: none;
-    	visibility: hidden;
-    }
-
-    a img {
-    	position: relative;
-    	z-index: 1;
-    }
-}
 .scp-container {
     display: flex;
     flex-wrap: wrap;
@@ -115,159 +71,19 @@ div.scp-hover-box div.blerb {
 [[# Articles]]
 -----
 
-[[div_ class="scp-container"]]
-[[include component:scp-hover-box-structure
-|container-number=echoes
-|corner-cutout=0em
-|container-bgcolor=rgba(70, 56, 33)
-|container-txtcolor=rgba(244, 244, 244)
-|container-hover-bgcolor=rgba(185, 150, 80)
-|container-hover-txtcolor=rgba(70, 56, 33)
-|container-stroke-color=rgba(252, 236, 135)
-|container-hover-stroke-color=rgba(207, 159, 45)
-|background-url=http://www.scp-wiki.net/local--files/djkaktus/background.png
-|background-vertical-position=50%
-|link-fill-color=rgb(215, 215, 215)
-|link-stroke-width=0.125rem
-|link-stroke-color=rgba(0, 0, 0)
-|anchor=2812
-|link=http://www.scp-wiki.net/scp-2812
-|title=SCP-2812
-|sub-title=Echoes of Yesterday
-|blerb=**An article about a cursed town.**
-]]
-@@@@
+[[[SCP-2812]]]...........................................Echoes of Yesterday
 
-[[include component:scp-hover-box-structure
-|container-number=destroyer
-|corner-cutout=0em
-|container-bgcolor=rgba(70, 56, 33)
-|container-txtcolor=rgba(244, 244, 244)
-|container-hover-bgcolor=rgba(185, 150, 80)
-|container-hover-txtcolor=rgba(70, 56, 33)
-|container-stroke-color=rgba(252, 236, 135)
-|container-hover-stroke-color=rgba(207, 159, 45)
-|background-url=http://www.scp-wiki.net/local--files/djkaktus/background.png
-|link-fill-color=rgb(215, 215, 215)
-|link-stroke-width=0.125rem
-|link-stroke-color=rgba(0, 0, 0)
-|anchor=2399
-|link=http://www.scp-wiki.net/scp-2399
-|title=SCP-2399
-|sub-title=A Malfunctioning Destroyer
-|blerb=**Jupiter has offered us that chance. I suggest we take it.**
-]]
-@@@@
+[[[SCP-2399]]]............................A Malfunctioning Destroyer
 
-[[include component:scp-hover-box-structure
-|container-number=nightlight
-|corner-cutout=0em
-|container-bgcolor=rgba(70, 56, 33)
-|container-txtcolor=rgba(244, 244, 244)
-|container-hover-bgcolor=rgba(185, 150, 80)
-|container-hover-txtcolor=rgba(70, 56, 33)
-|container-stroke-color=rgba(252, 236, 135)
-|container-hover-stroke-color=rgba(207, 159, 45)
-|background-url=http://www.scp-wiki.net/local--files/djkaktus/background.png
-|background-vertical-position=50%
-|link-fill-color=rgb(215, 215, 215)
-|link-stroke-width=0.125rem
-|link-stroke-color=rgba(0, 0, 0)
-|anchor=2980
-|link=http://www.scp-wiki.net/scp-2980
-|title=SCP-2980
-|sub-title=Devil's Nightlight
-|blerb=**Proceeds all go to the Xlan'gthmr R'llnmerg Foundation for Underprivileged Youth. Really great cause.**
-]]
-@@@@
+[[[SCP-2980]]]..............................................Devil's Nightlight
 
-[[include component:scp-hover-box-structure
-|container-number=moth
-|corner-cutout=0em
-|container-bgcolor=rgba(70, 56, 33)
-|container-txtcolor=rgba(244, 244, 244)
-|container-hover-bgcolor=rgba(185, 150, 80)
-|container-hover-txtcolor=rgba(70, 56, 33)
-|container-stroke-color=rgba(252, 236, 135)
-|container-hover-stroke-color=rgba(207, 159, 45)
-|background-url=http://www.scp-wiki.net/local--files/djkaktus/background.png
-|background-vertical-position: center
-|link-fill-color=rgb(215, 215, 215)
-|link-stroke-width=0.125rem
-|link-stroke-color=rgba(0, 0, 0)
-|anchor=2598
-|link=http://www.scp-wiki.net/scp-2598
-|title=SCP-2598
-|sub-title=Traveling Moth Salesman
-|blerb=**NO CHANCE OF GETTING STUCK IN THROATS**
-]]
-@@@@
+[[[SCP-2598]]]................................Traveling Moth Salesman
 
-[[include component:scp-hover-box-structure
-|container-number=rot
-|corner-cutout=0em
-|container-bgcolor=rgba(70, 56, 33)
-|container-txtcolor=rgba(244, 244, 244)
-|container-hover-bgcolor=rgba(185, 150, 80)
-|container-hover-txtcolor=rgba(70, 56, 33)
-|container-stroke-color=rgba(252, 236, 135)
-|container-hover-stroke-color=rgba(207, 159, 45)
-|background-url=http://www.scp-wiki.net/local--files/djkaktus/background.png
-|background-vertical-position: center
-|link-fill-color=rgb(215, 215, 215)
-|link-stroke-width=0.125rem
-|link-stroke-color=rgba(0, 0, 0)
-|anchor=1994
-|link=http://www.scp-wiki.net/scp-1994
-|title=SCP-1994
-|sub-title=Rot
-|blerb=**I need teeth, Yelkov. I pray you will be able to deliver them to me.**
-]]
-@@@@
+[[[SCP-1994]]]......................................................................Rot
 
-[[include component:scp-hover-box-structure
-|container-number=hugo
-|corner-cutout=0em
-|container-bgcolor=rgba(70, 56, 33)
-|container-txtcolor=rgba(244, 244, 244)
-|container-hover-bgcolor=rgba(185, 150, 80)
-|container-hover-txtcolor=rgba(70, 56, 33)
-|container-stroke-color=rgba(252, 236, 135)
-|container-hover-stroke-color=rgba(207, 159, 45)
-|background-url=http://www.scp-wiki.net/local--files/djkaktus/background.png
-|background-vertical-position=50%
-|link-fill-color=rgb(215, 215, 215)
-|link-stroke-width=0.125rem
-|link-stroke-color=rgba(0, 0, 0)
-|anchor=1781
-|link=http://www.scp-wiki.net/scp-1781
-|title=SCP-1781
-|sub-title=Moonlight Theater Presents: Hugo Weaving
-|blerb=**Can't wait to get started. You'll know when we're done.**
-]]
-@@@@
+[[[SCP-1781]]]..Moonlight Theater Presents: Hugo Weaving
 
-[[include component:scp-hover-box-structure
-|container-number=suspension
-|corner-cutout=0em
-|container-bgcolor=rgba(70, 56, 33)
-|container-txtcolor=rgba(244, 244, 244)
-|container-hover-bgcolor=rgba(185, 150, 80)
-|container-hover-txtcolor=rgba(70, 56, 33)
-|container-stroke-color=rgba(252, 236, 135)
-|container-hover-stroke-color=rgba(207, 159, 45)
-|background-url=http://www.scp-wiki.net/local--files/djkaktus/background.png
-|background-vertical-position=50%
-|link-fill-color=rgb(215, 215, 215)
-|link-stroke-width=0.125rem
-|link-stroke-color=rgba(0, 0, 0)
-|anchor=2464
-|link=http://www.scp-wiki.net/scp-2464
-|title=SCP-2464
-|sub-title=Suspension
-|blerb=**The team leader reported that SCP-2464-3 would follow members of his team with its eyes...**
-]]
-@@@@
+[[[SCP-2464]]] - Suspension
 
 [[include component:scp-hover-box-structure
 |container-number=error
