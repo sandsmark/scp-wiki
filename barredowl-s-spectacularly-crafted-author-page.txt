@@ -232,14 +232,6 @@ Yeah, I only drew the picture for this, but it certainly was nice to be working 
 
 [[/tab]]
 
-[[tab Test Table]]
-
-[[module ListPages tags="hub" perPage="100" order="size desc"]]
-
-[[/module]]
-
-[[/tab]]
-
 [[/tabview]]
 
 [[collapsible show="   " hide="- You have now entered the crit zone"]]
@@ -248,3 +240,8 @@ Yeah, I only drew the picture for this, but it certainly was nice to be working 
 ||%%title_linked%%||%%created_by%%||%%rating%%||%%comments%%||
 [[/module]]
 [[/collapsible]]
+
+[[module ListPages order="size desc" separate="no" tags="hub" prependLine="||~ Hub ||~ Votes ||~ Length||"]]
+|| %%title_linked%% || %%rating%% || %%size%% ||
+
+[[/module]]
