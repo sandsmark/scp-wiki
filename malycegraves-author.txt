@@ -209,7 +209,7 @@ In the event that somebody on the wiki needs me and I am not responding to Wikid
 [[/tab]]
 
 [[Tab A Module About Lies]]
-[[module ListPages created_by="DrAkimoto" order="created_at" separate="no" perPage="250" prependLine="||~ Article Name ||~ Rating ||~ Votes||~ Comments ||~ Last Comment ||"]] 
+[[module ListPages created_by="MalyceGraves" order="created_at" separate="no" perPage="250" prependLine="||~ Article Name ||~ Rating ||~ Votes||~ Comments ||~ Last Comment ||"]] 
 || %%title_linked%% || %%rating%% || +[[#expr (%%rating%%+((%%rating_votes%%-%%rating%%)/2))]], -[[#expr ((%%rating_votes%%-%%rating%%)/2)]] || %%comments%% || %%commented_at%% ||
 [[/module]]
 [[/tab]]
