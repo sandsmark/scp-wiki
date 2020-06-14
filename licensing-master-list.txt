@@ -5,7 +5,7 @@ Below is the master list for content, including images and audio, which are used
 
 In the event that the table below is broken or you have questions about implementation, please contact [[*user CityToast]] or another member of the Licensing team.
 
-++ How to add licensing information to a page
+[[collapsible show="How to add licensing information to a page" hide="-How to add licensing information to a page"]]
 
 If you would like to add licensing information to your own page, follow these steps:
 
@@ -26,7 +26,7 @@ Add this to the bottom of the page:
 @@[[include :scp-wiki:component:license-box-end]]@@
 [[/div]]
 
-[[collapsible show="+ Box-ify-er" hide="- Box-ify-er"]]
+You can also use this handy box-ify-er:
 [[html]]
 <head>
 <style>
@@ -52,7 +52,7 @@ Add this to the bottom of the page:
  <body>
  <form action = "">
  <textarea id="inputLicenseInfo" rows="10" cols="80">
-&gt;> **Title:**
+&gt; **Title:**
 &gt; **Author:**
 &gt; **License:**
 &gt; **Source Link:**
@@ -64,15 +64,15 @@ Add this to the bottom of the page:
  </form>
  </body>
 [[/html]]
-[[/collapsible]]
+
+//Notes//:
 
 * You cannot use some modules, including CSS, HTML, and listpages, inside the license section. You also cannot use collapsibles or tables.
 * If your footnotes are appearing after the license section, add [[span style="background-color: beige; font-family:'courier new';"]]@@[[footnoteblock]]@@[[/span]] above the license template.
 
 **Step 2**
 Add the [http://www.scp-wiki.net/system:page-tags/tag/_licensebox _licensebox tag] to the page.
-
-++ Master License Table
+[[/collapsible]]
 
 [[module ListPages tags="+_licensebox" category="_default" wrapper="no" separate="no" order="name desc desc"]]
 
