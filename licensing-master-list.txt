@@ -16,9 +16,12 @@ Add this to the bottom of the page:
 [[div class="blockquote"]]
 @@[[include :scp-wiki:component:license-box]]@@
 @@=====@@
-@@(Suggested template)@@
-@@**Images:**@@ (or Audio, if applicable)
-@@* "[@@##Blue|LINK-TO-SOURCE## ##green|Name-of-image##@@]@@" by ##brown|AUTHOR-NAME##, Licensed under ##purple|Type-of-License##
+@@> **Title:**@@
+@@> **Author:**@@
+@@> **License:**@@
+@@> **Source Link:**@@
+@@> **Derivative of:** (If applicable)@@
+@@> **Additional Notes:** (Optional)@@
 @@=====@@
 @@[[include :scp-wiki:component:license-box-end]]@@
 [[/div]]
@@ -48,8 +51,14 @@ Add this to the bottom of the page:
  </head>
  <body>
  <form action = "">
- <textarea id="inputLicenseInfo" rows="10" cols="80">**Images:** (or audio, if applicable)
-* "[LINK-TO-SOURCE Name-of-image]" by AUTHOR-NAME, Licensed under Type-of-License </textarea><br>
+ <textarea id="inputLicenseInfo" rows="10" cols="80">
+&gt;> **Title:**
+&gt; **Author:**
+&gt; **License:**
+&gt; **Source Link:**
+&gt; **Derivative of:** (If applicable)
+&gt; **Additional Notes:** (Optional)
+</textarea><br>
 <input type = "button" value = "License-box-ify!" onclick = "boxify()"/>
 <input type = "button" value = "Reset" onclick = "resetBox()"/>
  </form>
