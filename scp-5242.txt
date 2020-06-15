@@ -26,24 +26,83 @@ Read on, knowing that you must accept what the universe says is true, even if it
 [[/div]]
 [[/div]]
 ------
-[[include component:acs-peppo-lite
-
-|item-number= integer
-|clearance=: security
-|container-class= esoteric
+[[include :scp-wiki:component:anomaly-class-bar-source
+|item-number= XXXX
+|clearance= :access
+|container-class= challenge
 |secondary-class= specification
-|secondary-icon= http://scp-wiki.wdfiles.com/local--files/component%3Aacs-peppo-lite/truculent-icon3.svg
+|secondary-icon= 
 |disruption-class= influence
 |risk-class= volatility
-
 ]]
 
-[[include component:acs-peppo-split
-|object= challenge
-|object-image= http://scp-wiki.wikidot.com/local--files/component:anomaly-class-bar/keter-icon.svg
-|object-color= esoteric
-|esoteric-color= esoteric
-]]
+[[module CSS]]
+.anom-bar-container.challenge .text-part .main-class::before {
+    background-image: url("http://scp-wiki.wdfiles.com/local--files/calibri-s-mega-cool-art-page-it-s-mostly-just-icons-but-what/Challenge");
+}
+
+.anom-bar-container.challenge .text-part .main-class{
+    border-left: 0.5rem solid black;
+    background-color: white;
+}
+
+.anom-bar-container.challenge .danger-diamond > .top-icon::before {
+    background-image: url("http://scp-wiki.wdfiles.com/local--files/calibri-s-mega-cool-art-page-it-s-mostly-just-icons-but-what/Challenge");
+    background-size: contain;
+}
+
+.anom-bar-container.challenge .danger-diamond > .quadrants > .top-quad  {
+    background-color:white;
+}
+
+
+
+.anom-bar-container.influence .text-part .disrupt-class::after {
+    background-image: url("http://scp-wiki.wdfiles.com/local--files/calibri-s-mega-cool-art-page-it-s-mostly-just-icons-but-what/Influence");
+}
+
+.anom-bar-container.influence .text-part .disrupt-class{
+    border-left: 0.5rem solid black;
+    background-color: white;
+}
+
+.anom-bar-container.influence .danger-diamond > .left-icon::before {
+    background-image: url("http://scp-wiki.wdfiles.com/local--files/calibri-s-mega-cool-art-page-it-s-mostly-just-icons-but-what/Influence");
+    background-size: contain;
+}
+
+.anom-bar-container.influence .danger-diamond > .quadrants > .left-quad  {
+    background-color:white;
+}
+
+.anom-bar-container.influence .text-part .disrupt-class::before{
+    content: " ";
+}
+
+
+
+.anom-bar-container.volatility .text-part .risk-class::after {
+    background-image: url("http://scp-wiki.wdfiles.com/local--files/calibri-s-mega-cool-art-page-it-s-mostly-just-icons-but-what/Volatility");
+}
+
+.anom-bar-container.volatility .text-part .risk-class{
+    border-left: 0.5rem solid black;
+    background-color: white;
+}
+
+.anom-bar-container.volatility .danger-diamond > .right-icon::before {
+    background-image: url("http://scp-wiki.wdfiles.com/local--files/calibri-s-mega-cool-art-page-it-s-mostly-just-icons-but-what/Volatility");
+    background-size: contain;
+}
+
+.anom-bar-container.volatility .danger-diamond > .quadrants > .right-quad  {
+    background-color:white;
+}
+
+.anom-bar-container.volatility .text-part .risk-class::before{
+    content: " ";
+}
+[[/module]]
 
 [[a href="*http://scp-int.wikidot.com/niveaux-de-menace-des-objets-scp" style="font-size: 18px; color: black; text-shadow: 1px 3px 1px rgba(0,0,0,0.3); text-decoration: none;"]]
 [[span_ style="display: inline-block; width: 100%; background-color: orange; text-align: center; border: 1px none #000; margin: 1px; padding-top: 8px; padding-bottom: 8px;"]]
