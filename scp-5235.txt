@@ -1,2 +1,42 @@
 title:Scp 5235
-Won't be a second, listpages faffing!
+[[include :scp-wiki:theme:black-highlighter-theme]]
+[[include :scp-wiki:component:the-way-out-theme]]
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[module CSS]]
+/* TABS */
+
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    background-color:#d8d8d8;
+    background-image: url(http://lastlook.pl/~quake/wikidot/images/yuitabs.png);
+}
+
+.yui-navset .yui-nav a em,
+.yui-navset .yui-navset-top .yui-nav a em {
+    border-color: #F7F7F7;
+}
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus, /* no focus effect for selected */
+.yui-navset .yui-nav .selected a:hover { /* no hover effect for selected */
+    background:#314A5B url(http://lastlook.pl/~quake/wikidot/images/yuitabs.png) repeat-x left -1400px; /* selected tab background */
+    color:#E2E2E2;
+}
+
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    background:#C9C9C9 url(http://lastlook.pl/~quake/wikidot/images/yuitabs.png) repeat-x left -1300px;
+}
+
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    border-color: #424242;
+}
+[[/module]]
+
+[[module ListPages category="fragment" parent="." order="created_at" limit="1" offset="@URL|0"]]
+%%content%%
+[[/module]]
