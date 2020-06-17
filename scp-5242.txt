@@ -6,36 +6,49 @@ title:SCP-INTEGER
     --header-title: "DoMC";
     --header-subtitle: "Solving Communications Problems";
 }
+
+ div.domc-header{
+     margin: 1em 3em;
+     padding: 0 1em;
+     background-color: #fff;
+     border: solid 2px #a52a2a;
+     box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+}
+ @media (max-width: 479px){
+     div.domc-header{
+         margin: 1em 0;
+    }
+}
+ @media (min-width: 480px) and (max-width: 580px){
+     div.domc-header{
+         margin: 0.5em;
+    }
+}
 [[/module]]
 
 [[>]]
 [[module Rate]]
 [[/>]]
 
-[[=]]
-
-[[div style="background: url(http://scp-wiki.wdfiles.com/local--files/the-great-hippo/scp_trans.png) center no-repeat; float: center; border: solid 2px #000; padding: 1px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]]
-+ WARNING: THE FOLLOWING FILE CONTAINS BUREAUCRATOHAZARDOUS INFORMATION
+[[div style="padding: 0 1em; background: url(http://scp-wiki.wdfiles.com/local--files/scp-style-resource/scp_trans.png) center no-repeat; border: solid 2px #000; box-shadow: 0 1px 3px rgba(0, 0, 0, .2); text-align: center;"]]
++ [[span style="color: #901;"]]WARNING: THE FOLLOWING FILE CONTAINS HAZARDOUS INFORMATION[[/span]]
 ----
-+++ **DO NOT PROCEED UNTIL YOU HAVE READ AND UNDERSTAND THE CONTENTS OF THE FOLLOWING DISCLAIMER.** If you are confused by the disclaimer, contact the nearest available Miscommunications personnel and do not discuss this FILE's contents unless you are answering a direct question.
++++ **DO NOT PROCEED UNTIL YOU HAVE READ AND UNDERSTAND THE CONTENTS OF THE FOLLOWING DISCLAIMER.** If you are confused by the disclaimer, contact the nearest available Miscommunications personnel and do not discuss this ##green|FILE##'s contents unless you are answering a direct question.
+[[/div]]
 
-[[/=]]
-
-[[div style="float: center; border: solid 2px #a52a2a; width: 570px; padding: 1px 15px; margin: 10px 10px 10px 40px; background-color: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.2);"]] 
+[[div class="domc-header"]] 
 ------
-[[<]]
 **Disclaimer:** __The following ##green|FILE## discusses bureaucratohazards and their properties.__ 
 
 * "//A bureaucratohazard, informally, is a fact of the universe that just shouldn't be true, but is. They are inherently semantic, and affect the way that we think about, and are able to use, language.//"[[footnote]]'//**Introduction to Anomalous Law:** Bureaucratohazards//' by S. M. KATZ, ESQ.[[/footnote]] 
 
-A particularly costly example of one such fact is, "The operations of 'YWTGTSYT' are [*http://www.scp-wiki.net/scp-4703 perfectly legal]," which is currently requiring the Foundation Legal Department to entirely redraft Texas corporate law, among other things. Such things are facts of baseline reality; they always have been, and always will be, true. But they //shouldn't//, and we //know// they shouldn't. They aren't part of reality because reality says so, but because reality has been pulled inside-out by the conceptual nature of semantic equivalence itself. Alas, there is nothing we can do but reframe our definition of baseline and move on. To purposely poke at the bugs in the simulation is to invite a crash.
+A particularly costly example of one such fact is, "The operations of 'YWTGTSYT' are [[[*http://www.scp-wiki.net/scp-4703|perfectly legal]]]," which is currently requiring the Foundation Legal Department to entirely redraft Texas corporate law, among other things. Such things are facts of baseline reality; they always have been, and always will be, true. But they //shouldn't//, and we //know// they shouldn't. They aren't part of reality because reality says so, but because reality has been pulled inside-out by the conceptual nature of semantic equivalence itself. Alas, there is nothing we can do but reframe our definition of baseline and move on. To purposely poke at the bugs in the simulation is to invite a crash.
 
 Read on, knowing that you must accept what the universe says is true, even if it doesn't make sense. One plus one doesn't always equal two. 
-[[/<]]
+
 [[>]]
 //- Director Eli Forkley, Dept. of Miscommunications//
 [[/>]]
-[[/div]]
 [[/div]]
 ------
 [[include :scp-wiki:component:anomaly-class-bar-source
