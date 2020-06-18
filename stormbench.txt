@@ -12,3 +12,16 @@ This is a workbench I am using for some Tech Team related List Page modules.
 * [[[%%link%%/norender/true|%%title%%]]] by %%author%% (%%rating%%)
 [[/module]]
 [[/collapsible]]
+
+[[collapsible show="+ Log Scraper"]]
+[[module ListPages category="scp-2673-containment-maintenance-log-entry" perPage="250" order="rating desc"]]
+
+[[[%%link%%/noredirect/true|%%title%%]]] on %%created_at%% by [[*user %%created_by%%]] with rating %%rating%%
+
+@@**Date:**@@ %%form_data{date}%%
+@@**Comment:**@@ %%form_data{comment}%%
+
+%%form_data{desc}%%
+@@----@@
+[[/module]]
+[[/collapsible]]
