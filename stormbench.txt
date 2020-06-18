@@ -14,6 +14,9 @@ This is a workbench I am using for some Tech Team related List Page modules.
 [[/collapsible]]
 
 [[module ListPages category="log-of-unexplained-locations" perPage="250" rating="<-2" order="created_at"]]
+
+[[[%%link%%/noredirect/true|%%title%%]]] on %%created_at%% by [[*user %%created_by%%]] with rating %%rating%%
+
 @@**Description:**@@ %%form_data{desc}%%
 @@**Date of Containment:**@@ %%form_data{date}%%
 @@**Location:**@@ %%form_data{loc}%%
