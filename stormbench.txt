@@ -1,14 +1,14 @@
 title:Stormbench
 This is a workbench I am using for some Tech Team related List Page modules.
 
-[[collapsible show="+ Unexplained Locations Above Threshold"]]
+[[collapsible show="+ 2673 Logs Above Threshold"]]
 [[module ListPages perPage="250" separate="no" category="scp-2673-containment-maintenance-log-entry" order="created_at" rating=">=-2"]]
-* [[[%%link%%/noredirect/false|%%title%%]]] by %%author%% (%%rating%%)
+* [[[%%link%%/norender/true|%%title%%]]] by %%author%% (%%rating%%)
 [[/module]]
 [[/collapsible]]
 
-[[collapsible show="+ Unexplained Locations Below Threshold"]]
+[[collapsible show="+ 2673 Logs Below Threshold"]]
 [[module ListPages perPage="250" separate="no" category="scp-2673-containment-maintenance-log-entry" order="created_at" rating="<-2"]]
-* [[[%%link%%/noredirect/false|%%title%%]]] by %%author%% (%%rating%%)
+* [[[%%link%%/norender/true|%%title%%]]] by %%author%% (%%rating%%)
 [[/module]]
 [[/collapsible]]
