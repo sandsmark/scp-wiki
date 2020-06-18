@@ -18,7 +18,7 @@ This is a workbench I am using for some Tech Team related List Page modules.
 
 [[[%%link%%/noredirect/true|%%title%%]]] on %%created_at%% by [[*user %%created_by%%]] with rating %%rating%%
 
-@@**Date:**@@ %%form_data{date}%%
+@@**Date:**@@ [[date %%form_data{date}%% format="%Y-%m-%d"]]
 @@**Comment:**@@ %%form_data{comment}%%
 
 %%form_data{desc}%%
