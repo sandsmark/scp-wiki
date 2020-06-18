@@ -24,3 +24,43 @@ This is a workbench I am using for some Tech Team related List Page modules.
 @@----@@
 [[/module]]
 [[/collapsible]]
+
+[[collapsible show="+ Template"]]
+http://www.scp-wiki.net/scp-2673-containment-maintenance-log-entry:_template/norender/true
+
+[[code]]
+[[module CSS]]
+.page-title, #page-title, #breadcrumbs, #page-options-container, .page-header, .page-info-break, .page-options-container, .action-area, header, #header, footer, #footer, #navi-bar, #navi-bar-shadow, #page-option-bottom-tips, #page-option-bottom-2-tips, #odialog-hovertips, #wd-ed-dialogs, #odialog-container, #license-area, #side-bar, .error-block { display:none; }
+#page-content { min-height:0px;}
+.page-rate-widget-box { position: fixed; top: 2px; right:0px; }
+#container {background: #FFF;}
+[[/module]]
+
+[[module Rate]]
+%%form_raw{redirect-b}%%%%name%%%%form_raw{redirect-e}%%
+====
+[[form]]
+fields:
+  date:
+    label: "Date:"
+    type: date
+    dateFormat: "YYYY-MM-DD"
+  comment:
+    label: "Comments:"
+    type: text
+    hint: "Optional"
+  desc:
+    label: Description
+    type: wiki
+    width: 40
+    height: 10
+    hint: "The verse you write,\nMust have some form,\nAbout this skip,\nHow's it contained,\n\nThis log maintained,\nDon't let it slip,\nFrom standards norm,\nAnd do it right."
+  redirect-b:
+    type: hidden
+    value: '[[module Redirect destination="http://www.scp-wiki.net/scp-2673-containment-maintenance-log/p/999#'
+  redirect-e:
+    type: hidden
+    value: '"]]'
+[[/form]]
+[[/code]]
+[[/collapsible]]
