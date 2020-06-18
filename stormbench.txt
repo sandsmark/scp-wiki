@@ -15,8 +15,7 @@ This is a workbench I am using for some Tech Team related List Page modules.
 
 [[collapsible show="+ Log Scraper"]]
 [[module ListPages category="scp-2673-containment-maintenance-log-entry" perPage="250" order="rating desc"]]
-
-[[[%%link%%/noredirect/true|%%title%%]]] on %%created_at%% by [[*user %%created_by%%]] with rating %%rating%%
+[[[%%link%%/norender/true|%%title%%]]] on %%created_at%% by [[*user %%created_by%%]] with rating %%rating%%
 
 @@**Date:**@@ [[date %%form_data{date}%% format="%Y-%m-%d"]]
 @@**Comment:**@@ %%form_data{comment}%%
