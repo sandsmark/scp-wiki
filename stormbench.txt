@@ -1,0 +1,14 @@
+title:Stormbench
+This is a workbench I am using for some Tech Team related List Page modules.
+
+[[collapsible show="+ Unexplained Locations Above Threshold"]]
+[[module ListPages perPage="250" separate="no" category="log-of-unexplained-locations" order="created_at" rating=">=-2"]]
+* [[[%%link%%/noredirect/false|%%title%%]]] by %%author%% (%%rating%%)
+[[/module]]
+[[/collapsible]]
+
+[[collapsible show="+ Unexplained Locations Below Threshold"]]
+[[module ListPages perPage="250" separate="no" category="log-of-unexplained-locations" order="created_at" rating="<-2"]]
+* [[[%%link%%/noredirect/false|%%title%%]]] by %%author%% (%%rating%%)
+[[/module]]
+[[/collapsible]]
