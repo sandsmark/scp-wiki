@@ -16,9 +16,7 @@ http://www.scp-wiki.net/scp-2673-containment-maintenance-log
 [[/collapsible]]
 
 [[collapsible show="+ Log Scraper"]]
-[[module ListPages category="scp-2673-containment-maintenance-log-entry" perPage="250" order="rating desc"]]
-[[[%%link%%/norender/true|%%title%%]]] on %%created_at%% by [[*user %%created_by%%]] with rating %%rating%%
-
+[[module ListPages category="scp-2673-containment-maintenance-log-entry" perPage="250" order="rating desc" rating=">=-2"]]
 @@**Date:**@@ [[date %%form_data{date}%% format="%Y-%m-%d"]]
 @@**Comment:**@@ %%form_data{comment}%%
 
