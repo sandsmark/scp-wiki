@@ -1,24 +1,74 @@
 title:Malyce Graves is a Liar.
+[[include :scp-wiki:theme:magnus-web-format]]
 [[include :scp-wiki:theme:black-highlighter-theme]]
-[[include :scp-wiki:theme:laruetheme]]
-
-[[module CSS]]
+[[include :scp-wiki:component:collapsible-sidebar]]
 
 
-    .rmposttitle {
-        width: auto;
-        height: auto;
-        padding: 0px 20px 0px 50px;
+
+[[module css]]
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
+#page-title{display:none}
+
+#header {
+    background-image: url(http://firedawnfolder.wikidot.com/local--files/memoria-adytum/TitleLogo.png)
+}
+
+
+
+@supports(--css:variables) {
+
+    :root {
+     --header-title: "In Memoria, Adytum";
+     --header-subtitle: "Echoes of Kalmaktama.";
+     --header-font: 'Nanum Brush Script', cursive;
+     --page-title: "In Memoria, Adytum";
+     --background-gradient-distance:75rem; !important
+
+    }
+}
+
+
+    @supports (background-blend-mode: screen) {
+    
+     #extrac-div-1 {
+     width: 100%;
+     height: var(--header-height-on-desktop);
+     position: absolute;
+     top: 0;
+     left: 0;
+     background-image: var(--gradient-header), url(http://firedawnfolder.wikidot.com/local--files/memoria-adytum/background.jpg);
+     background-size: var(--header-background-image-size) 80%, 80%, 80%;
+     background-blend-mode: normal;
+     pointer-events: none; 
+     }
+
+     div#extra-div-1 {
+     width: 100%;
+     height: calc(100% - var(--final-header-height-on-desktop));
+     position: absolute;
+     top: calc(var(--final-header-height-on-desktop));
+     left: 0;
+     z-index: -1;
+     background-color: rgba(222, 222, 222, 1);
+     background-color: rgba(var(--swatch-background), 1);
+     mask: var(--gradient-background);
+     -webkit-mask: var(--gradient-background);
+     background-image: url(http://firedawnfolder.wikidot.com/local--files/memoria-adytum/background.jpg), var(--gradient-background);
+     background-size: 100%, 80% var(--background-gradient-distance);
+     background-blend-mode: difference;
+     background-repeat: repeat, repeat-x;
+     pointer-events: none;
+     }
+
     }
 
-
-
 [[/module]]
+
 [[>]]
 [[module rate]]
 [[/>]]
-[[div class="material-box" style="margin-bottom: 5px;"]]
-
+[[div style="background:#dedede;"]]
 [[include :scp-wiki:component:classified-bar-woed
 |lv=0
 |item=malyce
@@ -58,11 +108,12 @@ title:Malyce Graves is a Liar.
 [[/table]]
 >
 [[/div]]
+
 -----
 
-[[div class="material-box"]]
-[[div class="title-style"]]
-++++++ __**Special Containment Procedures**__
+
+[[div class="addenda-header"]]
++++ [[span style="font-family: 'Nanum Brush Script', cursive; color: #390000; font-size: 150%"]]**Special Containment Procedures**[[/span]]
 [[/div]]
 
 SCP-Malyce Graves should be kept in an extravagant penthouse estate over looking Central Park. Everything they need should be delivered by remotely-operated drone in order to prevent contamination by the obscenity that is Malyce's overactive imagination.
@@ -70,8 +121,8 @@ SCP-Malyce Graves should be kept in an extravagant penthouse estate over looking
 Or not.
 
 -----
-[[div class="title-style"]]
-++++++ __**Description**__
+[[div class="addenda-header"]]
++++ [[span style="font-family: 'Nanum Brush Script', cursive; color: #390000; font-size: 150%"]]**Description**[[/span]]
 [[/div]]
 [[include component:image-block name=typewriter|caption=Sometimes, it works on this|width=300px]]
 
@@ -87,10 +138,9 @@ SCP-Malyce Graves is a liar and a cheat and no one should believe anything they 
 
 Even so, [http://www.scp-wiki.net/uebench you should read this].
 
-[[/div]]
 
 [[div class="addenda-header"]]
-+++ **Attached Addenda**
++++ [[span style="font-family: 'Nanum Brush Script', cursive; color: #390000; font-size: 150%"]]**Attached Addenda**[[/span]]
 [[/div]]
 [[tabview]]
 
@@ -214,6 +264,5 @@ In the event that somebody on the wiki needs me and I am not responding to Wikid
 || %%title_linked%% || %%rating%% || +[[#expr (%%rating%%+((%%rating_votes%%-%%rating%%)/2))]], -[[#expr ((%%rating_votes%%-%%rating%%)/2)]] || %%comments%% || %%commented_at%% ||
 [[/module]]
 [[/tab]]
-
 
 [[/tabview]]
