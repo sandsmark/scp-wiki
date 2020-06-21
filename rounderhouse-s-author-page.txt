@@ -468,9 +468,12 @@ techbox
 
 #header h1 a::before {
     content: "the rounderpage™";
-    color: #fff;
     text-shadow: none;
     font-family: 'Bungee', cursive;
+   color: white;
+   -webkit-text-fill-color: white; 
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
 }
 
 #header h2 span {
