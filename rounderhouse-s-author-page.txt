@@ -470,9 +470,9 @@ techbox
     content: "the rounderpage™";
     text-shadow: none;
     font-family: 'Bungee', cursive;
-   color: white;
+    color: white;
    -webkit-text-fill-color: white; 
-   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-width: 2px;
    -webkit-text-stroke-color: black;
 }
 
@@ -484,7 +484,10 @@ techbox
 
 #header h2 span::before {
     content: "its rounder all the way downder";
-    color: #fff;
+    color: white;
+   -webkit-text-fill-color: white; 
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
     text-shadow: none;
     font-family: 'Bungee', cursive;
 }
