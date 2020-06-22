@@ -1005,6 +1005,12 @@ This tab is just for testing code or whatever that I can't test on a sandbox.
 //Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
 [[/module]]
 
+------
+
+[[module ListPages order="rating desc" category="." tags="+001-proposal" perPage="25" separate="no" prependLine="||~ Place ||~ Title ||~ Poster ||~ Rating ||~ Upvotes/Downvotes ||~ Comments ||"]]
+|| #%%index%% || %%title_linked%% || %%created_by_linked%% || %%rating%% || +[[#expr (%%rating%%+((%%rating_votes%%-%%rating%%)/2))]], -[[#expr ((%%rating_votes%%-%%rating%%)/2)]] || %%comments%% ||
+[[/module]]
+
 [[/tab]]
 [[/tabview]]
 
