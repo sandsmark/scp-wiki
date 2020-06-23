@@ -188,37 +188,18 @@ text-align: center!important;
 [[=image http://kaktuskontainer.wdfiles.com/local--files/testpage/tree]]
 
 
-------
-
-@@@@
-
-
+[[tabview]]
+[[tab Skippos]]
 [[module ListPages created_by="Cerastes" order="rating desc" separate="no" tags="-tale -goi-format -author -template" perPage="20" prependLine="||~ Articles ||~ Rating ||~ Comments ||~ Created ||"]]
 || %%title_linked%% || ##green|+ %%rating%%## || %%comments%% || %%created_at%% ||
 [[/module]]
-
-@@ @@
-
+[[/tab]]
+[[tab Tales]]
 [[module ListPages created_by="Cerastes" order="rating desc" separate="no" tags="-co-authored tale -goi-format" perPage="20" prependLine="||~ Tales ||~ Rating ||~ Comments ||~ Created ||"]]
 || %%title_linked%% || ##green|+ %%rating%%## || %%comments%% || %%created_at%% ||
 [[/module]]
-
-@@ @@
-
-[[module ListPages created_by="Cerastes" order="rating desc" separate="no" tags="-co-authored -tale goi-format" perPage="20" prependLine="||~ GOI Formats ||~ Rating ||~ Comments ||~ Created ||"]]
-|| %%title_linked%% || ##green|+ %%rating%%## || %%comments%% || %%created_at%% ||
-[[/module]]
-
-
-@@@@
-@@@@
-
-------
-[[=]]
-Fanart
-[[/=]]
-------
-
+[[/tab]]
+[[tab Fanart]]
 + EpsilonScott
 [[collapsible show="SCP-2510 - Got A Secret, Can You Keep It? (gore warning)" hide="People didn't want to rock the boat. Even if it meant covering something awful up?"]]
 [[image 2510]]
@@ -233,11 +214,9 @@ Fanart
 [[collapsible show="SCP-5239 - My Parents Don't Understand Why I Raise The Dead" hide="Scared? Uncomfortable? It's magic. May be necromancy, but it's still fucking magic. Who'd throw that away?"]]
 [[image 5239.png]]
 [[/collapsible]]
-------
-[[=]]
-Metacommentary
-[[/=]]
-------
+[[/tab]]
+[[tab Metacommentary]]
+
 
 [[collapsible show="SCP-1322 "A Whole New World" (Cliche Contest Runner Up!) " hide="-"]]
 My first SCP, and a joke to boot at that. I've tried writing for the wiki before at this point, but they mostly crashed and burned.
@@ -303,3 +282,5 @@ My fastest growing tale yet, as of October 2019. To be honest, I wasn't expectin
 
 Like 1512-EX, the Foundation and the world at large has gotten to a level of technology where 079 is basically a cheap kid's toy. Even if it did get out, it'd be the equivalent of the Nigerian Prince scam- something overused and almost laughable.
 [[/collapsible]]
+[[/tab]]
+[[/tabview]]
