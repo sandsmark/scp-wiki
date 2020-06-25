@@ -71,3 +71,9 @@ fields:
 || #%%index%% || %%title_linked%% || %%created_by_linked%% || %%rating%% || +[[#expr (%%rating%%+((%%rating_votes%%-%%rating%%)/2))]], -[[#expr ((%%rating_votes%%-%%rating%%)/2)]] || %%comments%% ||
 [[/module]]
 [[/collapsible]]
+
+[[collapsible show="+ Orphan Fragments"]]
+[[module ListPages category="fragment" separate="no" parent="-" perPage="100" order="name"]]
+* # [[[%%link%%/norender/true|%%title%%]]] by %%author%%
+[[/module]]
+[[/collapsible]]
