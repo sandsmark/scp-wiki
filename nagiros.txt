@@ -1,4 +1,11 @@
 title:The Crab Den
++ Fragments Project
+++++++ Currently tagging all {{fragment:}} pages with the {{fragment}} tag; pay this no mind.
+
+[[module ListPages categories="fragment" tags="-fragment" separate="no" perPage="250" prependLine="||~ Name ||~ Vis. Tags ||~ Hid. Tags||~ Created ||" order="created_at"]]
+||[%%link%%/noredirect/true %%title%%]||%%tags_linked%%||%%_tags_linked%%||%%created_at%%||
+[[/module]]
+
 [[module CSS]]
 @import url("/nagiros/code/1");
 
