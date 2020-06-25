@@ -30,6 +30,10 @@ color: #FFF;}
 [[/module]]
 [[include theme:black-highlighter-theme]]
 
+[[module ListPages separate="no" order="length desc" tags="scp, joke" perPage="250" prependLine="||~ SCP ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||~ Length ||"]] 
+|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% || %%size%% ||
+[[/module]]
+
 + SCPs
 
 [[module ListPages created_by="djkaktus" order="rating desc" separate="no" tags="scp, joke" perPage="250" prependLine="||~ SCP ||~ Votes ||~ Comments ||~ Last Comment ||~ Length||"]] 
