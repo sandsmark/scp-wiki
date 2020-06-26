@@ -1,0 +1,134 @@
+title:SCP-5395
+[[module CSS]]
+.blinkbar {color: red;font-size:125%; animation: blink 1.5s infinite; letter-spacing: -0.13em;}@keyframes blink{to{opacity: .0;}}@keyframes flicker {0% {opacity: 0.9890; }5% {opacity: 0.5842; }10% {opacity: 0.9865; }20% {opacity: 0.0412; }20% {opacity: 0.6255; }25% {opacity: 0.3157; }30% {opacity: 0.7328; }35% {opacity: 0.4654; }40% {opacity: 0.9128; }45% {opacity: 0.2449; }50% {opacity: 0.5485; }55% {opacity: 0.6438; }60% {opacity: 0.1180; }65% {opacity: 0.9085; }70% {opacity: 0.0266; }75% {opacity: 0.6795; }80% {opacity: 0.7812; }85% {opacity: 0.0117; }90% {opacity: 0.2239; }95% {opacity: 0.8897; }100% {opacity: 0.2260; }}@keyframes overlay-anim {0% {visibility: hidden; }10% {visibility: hidden; }11% {visibility: visible; }50% {visibility: hidden; }100% {visibility: hidden; }}
+.collapsible-block-folded a.collapsible-block-link {
+    animation: blink 0.8s ease-in-out infinite alternate;
+}
+@keyframes blink {
+    0% { color: transparent; }
+    50%, 100% { color: #b01; }
+}
+.email {float: center; border: solid 2px #000000; width: 88%; padding: 1px 15px; margin: 10px 10px 10px 10px; box-shadow: 0 1px 3px rgba(0,0,0,.5)}
+a.collapsible-block-link { font-weight: bold; }
+.tofrom {margin-left: 10px; margin-top: 5px; padding: 1px 15px; border-left: solid 3px maroon}
+[[/module]]
+
+[[include info:start]]
+[[=]]
+++++ SCP-5395 -- Spheres of Interest
+**Author:** [[*user AlanDaris]]
++++ [[[http://www.scp-wiki.net/alandaris|~~ More Alan Stuff ~~]]]
+[[/=]]
+[[include info:end]]
+
+[[*user anorrack]]
+[[*user MaliceAforethought]]
+
+**Object #:** SCP-5395
+
+**Object Class:** Safe
+
+[[include :scp-sandbox-3:image-zoom name=Death.jpg|caption=SCP-5395-C (Artist's Rendering).|width=300px|align=right]]
+
+**Special Containment Procedures:** The server room SCP-5395 is located in was repurposed as a containment chamber. The entrance is only allowed for project staff.
+
+--Tests with SCP-5395 are to be pre-agreed with current research curator.-- **Update:** By the direct order of O5-2, testing with SCP-5395 is prohibited.
+
+**Description:** SCP-5395 is a spatial rift localized within the server room of the RAISA central department, located in Milford.[[footnote]] A town in Milford, USA. [[/footnote]] Individuals approaching within one meter of SCP-5395 begin to experience vivid visual hallucinations with no apparent pattern or meaning until they are removed from the object's vicinity. When a person touches SCP-5395, their life signs cease. After several hours, the biological processes in the subject's body are spontaneously restored, and the subject regains consciousness.
+
+Affected individuals report that following contact with SCP-5395, they are transferred to a location labeled SCP-5395-A, where they remain until regaining consciousness. The subjects describe SCP-5395-A as a deserted location of enormous size with white terrain; the sky is reportedly covered with brightly colored cloud-like clusters composed of certain types of objects.[[footnote]] Observed examples mostly include works from different fields of arts such as installations, paintings, sculptures, and media products. Other objects like mechanisms, appliances, and plants were also seen on several occasions.  [[/footnote]]
+
+Across the whole area of SCP-5395-A, there are multicolored spherical objects with a varying diameter[[footnote]] From one to five meters. [[/footnote]] (SCP-5395-B), made of unknown material. The spheres levitate at a height of several meters and are interconnected via a system of narrow, elastic tubes visually reminiscent of human neuron connections. On certain occasions, individual tubes rapidly constrict for short periods of time, transferring an unidentified substance between SCP-5395-B.
+
+SCP-5395-A also houses a large[[footnote]] ~20-25 meters in length [[/footnote]] creature (hereby SCP-5395-C) with an indeterminate number of limbs, capable of moving akin to quadrupedal animals. The entity is hostile towards human subjects and possesses considerable speed //(see testing log)//. No further information regarding SCP-5395-C was thus far documented due to its aggressive behavior impeding the observation. 
+
+SCP-5395 manifested on 2020/02/23, following a failure of defensive memetic constructs implanted in the Foundation intranet, which resulted in partial leakage of several infohazardous anomalies into the RAISA server system.
+
+[[div style="border:solid 2px #000000; background:#FFFFFF; padding:5px; margin-bottom: 10px;"]]
+++ Addendum: Testing Log
+------
++++ Test #1
+
+**Subject(s):** D-1325
+
+**Time in SCP-5395-A:** Two hours
+
+**Summary:** Shortly after appearing, D-1325 began inspecting SCP-5395-B as instructed. The subject pulled one of SCP-5395-B down by the tubes and saw different colors, objects, and shapes moving within its solid surface. After touching the sphere, D-1325 started to visualize images of unknown persons and events with no apparent context. The inspection of other SCP-5395-B gave similar results.
+
+Shortly before his return, the subject noticed SCP-5395-C roaming at a large distance and occasionally striking the spherical objects. The entity did not notice the subject and roamed away soon after the encounter. Notably, D-1325 used the adjective "grim" several times while describing SCP-5395-C in the initial interview.
+
+After the test, it was established that the subject became well-versed in trends of surrealism in pictorial art and could remember many theses of French philosopher Édouard Le Roy despite not being familiar with his works in the past.
+
+------
++++ Test #3
+
+**Subject(s):** D-1325, D-4942
+
+**Time in SCP-5395-A:** Three hours
+
+**Summary:** Upon emerging, subjects began exploration. D-4942 observed multiple objects and items falling down from the clusters in the sky. The objects were then absorbed by SCP-5395-B before hitting the ground. On several occasions, SCP-5395-B ejected items or shapes that then rose to the sky instead. While exploring the area, the subjects could hear musical compositions of different genres and composers, which were played several at a time with varying volumes. It was later established that the music was coming from one of the clusters that consisted of musical instruments, tape-players, gramophones and vinyl records.
+
+The individuals then came across SCP-5395-C. D-4942 hid under the spherical objects and was able to stay undetected. The subject reported being overwhelmed by feelings of dread, fear of death, and hopelessness when the entity was passing nearby. SCP-5395-C noticed D-1325 shortly after and began moving towards the subject. D-1325 attempted to escape by jumping on one of the SCP-5395-B but failed as the sphere fell down and shattered. D-4942 reported that a clot composed of various items, folders with texts, images, and lights emerged from the sphere as D-1325 fell to the ground unconscious. The entity lost interest in the subject and wandered away shortly after.
+
+After the subjects returned, D-1325 did not regain consciousness and entered a comatose state. Several employees stationed at the RAISA department demonstrated awareness of facts and persons related to D-1325's life despite not having contacted with the subject or having read the related documentation previously. D-1325 resides in the Site's medical department under supervision.
+
+------
++++ Test #6
+
+**Subject(s):** D-4942, D-4830, D-3739
+
+**Time in SCP-5395-A:** One hour
+
+**Summary:** Following a brief exploration, the subjects arrived at a slope that contained an unusually large number of SCP-5395-B. Reportedly, the spheres in this area were arranged in a circle split by three lines leading to its center. The subjects began inspecting SCP-5395-B; D-4830 noted that SCP-5395-C could be seen nearby. D-4942 panicked and urged the subjects to leave the area. D-3739 protested due to his desire to finish the mission, and a conflict ensued.
+
+As the entity started approaching the subjects, D-4830 became agitated as well, and an argument escalated to a physical confrontation. At this moment, the individuals hit several tubes holding SCP-5395-B, which resulted in them striking against each other and shattering upon impact. More than a hundred spheres were destroyed during the following chain reaction. Clots that emerged from SCP-5395-B upon their destruction formed a large cluster, which consisted of files, folders, laboratory equipment, weapons, boxes, chains, and cages of various sizes. The cluster then rose into the sky near the other ones.
+
+A minute later, a large number of items, mainly documents, started pouring down from the newly formed cluster. Surviving local SCP-5395-B subsequently absorbed all documentation; their elastic tubes began to constrict immediately after the fact.
+
+Following the subjects' return, an SCP-5395-related incident occurred. For additional detail, refer to the respective addendum.
+[[/div]]
+
+[[collapsible show="► OPEN ADDENDUM: INCIDENT 5395.Ω (Clearance level 5 credentials required)" hide="▼ CREDENTIALS ACCEPTED"]]
+
+
+[[div style="border:solid 2px #000000; background:#FFFFFF; padding:5px; margin-bottom: 10px;"]]
+++ Addendum: Incident 5395.Ω
+------
+
+[[include component:image-block name=Spray.jpg|caption=Milford during the aerial dispersion of amnestics.|width=100%|align=center]]
+
+Following the subjects' return, fifteen Foundation employees stationed at the RAISA central department simultaneously collapsed and entered a comatose state. Over the next hour, it was reported that the same occurred to other Foundation employees, mainly research staff, operating in the region. In total, 55 personnel within 8 Foundation Sites stationed in Connecticut were affected by the phenomenon. It was also discovered that the information regarding the Foundation and majority of SCP objects spontaneously became known to the entire civilian population of Milford, calculated to be approximately fifty-five thousand persons.
+
+The spontaneity of the event along with the extraordinary nature of knowledge acquired by the general public led to mass hysteria within the town's territory. Many individuals and establishments became vocal about the incident on various media, transferring the information online. Additionally, the vast majority of affected persons obtained an understanding of the Foundation's protocols regarding secrecy, which rendered disinformation campaigns ineffective.
+
+The spread of data was temporarily disrupted by disabling internet connection and other means of communication within the town's territory. Milford was temporarily placed on lockdown with the assistance of loyal government forces. Foundation airborne task forces were mobilized in order to conduct a massive aerial dispersion of amnestics within Milford's borders. At the same time, all available web-crawlers and specially devised memetic agents were utilized to erase classified information from communication devices and the media. Several hours following the event, the success of the operation was confirmed. The potential partial Broken Masquerade Scenario was averted.
+
+In the light of the incident, all testing with SCP-5395 was indefinitely halted.
+[[/div]]
+
+[[/collapsible]]
+
+[[=]]
+------
+[[collapsible show="You've got (1) new message!" hide="Re:SCP-5395's potential"]]
+[[<]]
+[[div class="email"]]
+[[div class="tofrom"]]
+**To:** O5-11
+**From:** O5-2
+**Subject:** SCP-5395's potential
+[[/div]]
+------
+Hello. I see you have already read through the file I sent you. As you can see, the evidence is pretty much unbreakable, our theory was right all along. I hope now you'll suspend your skepticism and will be able to see how much potential it grants us. With this, we'll no longer need outside methods to reach our goals, we'll just work directly.
+
+Answering to your possible first question: yes, SCP-5395 is dangerous, but only when you treat it incorrectly. The whole Connecticut situation happened simply because the assigned personnel treated this place like a regular portal to another dimension. Trust me, if we put our minds to it, we can not only avoid such situations, but also use 5395-A for pretty much all our problems in the future. Sure, there will be complications such as 5395-C to deal with (the human mind can take many terrible forms, as we all know), but it is worth it. 
+
+I am in talks with the rest of the council in terms of allowing further research. Some are, as usual, stubborn due to the possible dangers. Still, I am trying to convince them that when life is giving you lemons, you don't just throw them away. If you could weight into the discussion sharing my view, it'd be very appreciated. Contact me as soon as you can to talk out the details.
+
+Meanwhile, I will go ahead and move the file into the eternal database under level 5 clearance. This rift is not something we can risk losing.
+
+
+[[/div]]
+[[/<]]
+[[/collapsible]]
+[[/=]]
