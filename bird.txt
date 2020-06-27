@@ -2,119 +2,101 @@ title:Team Bird Hub
 [[include component:preview
 |text=Yes, your new colleague is a seagull. The world is a weird place. Welcome to the Foundation. --//Researcher Calvin//]]
 
-[[div class="bg-gradiant"]]
-
-[[include :scp-wiki:component:info-ayers
-|lang=en
-|page=bird
-|authorPage=http://www.scp-wiki.net/bird
-|comments=**Team Bird Hub** 
-A **Series** by [[*user not_a_seagull]], [[*user Lt Flops]], [[*user Ayers]], and [[*user Quantum Physician]], created for the **Doomsday Contest**.]]
+[[include :scp-wiki:theme:flopstyle]]
 
 [[module CSS]]
- body{
-     --barColour: #b98f0e;
-     color: rgb(12, 12, 12);
-     word-break: unset;
+/* ---- SITE HEADER ---- */
+ #page-content span,
+ #page-content a{
+     font-weight: bold;
 }
- .info-container .collapsible-block-unfolded{ background: #fff; }
- .translation_block, .u-faq, #u-author_block{ display:none; }
-
-/* HEADER */
- #header h1 a{
-     color: transparent;
-     font-family: 'Verdana', Arial, sans-serif;
-     text-shadow: none;
-}
- #header h1 a::before{
-     content: "The Avian Division";
-     color: #eee;
-     text-shadow: 3px 3px 5px rgb(12, 12, 12);
-     letter-spacing: -0.02em;
-}
+ #header h1 a,
  #header h2 span{
      color: transparent;
      text-shadow: none;
 }
+ #header h1 a::before{
+     content: "The Avian Division";
+     font-family: "Verdana", sans-serif;
+}
  #header h2 span::before{
-     content: 'Until we return to The Nest';
-     color: #eee;
-     text-shadow: 1px 1px 1px rgba(12, 12, 12, .8);
+     content: "Until we return to The Nest";
 }
 
-/* RATE MODULE */
+/* ---- INFO BAR ---- */
+ body{ --barColour: hsl(45, 89%, 40%); }
+ .info-container .collapsible-block-unfolded{ background: hsl(0, 0%, 100%); }
+ #u-author_block{ display: none; }
+
+/* ---- PAGE RATING ---- */
  .page-rate-widget-box .rate-points{
-     background-color: #b98f0e !important;
-     border: solid 1px #b98f0e;
+     background-color: hsl(45, 89%, 40%) !important;
+     border: 1px solid hsl(45, 89%, 40%);
 }
  .page-rate-widget-box .rateup,
  .page-rate-widget-box .ratedown{
-     background-color: #fffff0;
-     border-top: solid 1px #b98f0e;
-     border-bottom: solid 1px #b98f0e;
+     background-color: hsl(45, 100%, 97%);
+     border-top: 1px solid hsl(45, 89%, 40%);
+     border-bottom: 1px solid hsl(45, 89%, 40%);
 }
  .page-rate-widget-box .rateup a,
  .page-rate-widget-box .ratedown a{
-     color: #b98f0e;
+     color: hsl(45, 89%, 40%);
+}
+ .page-rate-widget-box .cancel{
+     background-color: hsl(45, 89%, 40%);
+     border: 1px solid hsl(45, 89%, 40%);
+}
+ .page-rate-widget-box .cancel a{
+     color: hsl(45, 76%, 67%);
 }
  .page-rate-widget-box .rateup a:hover,
  .page-rate-widget-box .ratedown a:hover{
-     background: #b98f0e;
-}
- .page-rate-widget-box .cancel{
-     background-color: #b98f0e;
-     border: solid 1px #b98f0e;
-}
- .page-rate-widget-box .cancel a{
-     color: #664d00;
+     background: hsl(45, 89%, 40%);
 }
  .page-rate-widget-box .cancel a:hover{
-     background: #b98f0e;
-     color: #fffff0;
+     color: hsl(45, 100%, 97%);
+     background: hsl(45, 89%, 40%);
 }
 
 /* DIV BLOCKS */
  .header-image{
-     border: 3px solid rgb(12, 12, 12); 
-     background: #fff;
+     background: hsl(0, 0%, 100%);
+     border: 3px solid hsl(0, 0%, 5%);
+     font-size: 80%;
+     font-weight: bold;
+     text-align: center;
 }
  .showcase{
-     border: 3px solid rgb(12, 12, 12); 
-     background: #fff; 
      padding: 0 .5em;
+     background: hsl(0, 0%, 100%);
+     border: 3px solid hsl(0, 0%, 5%);
 }
- .showcase hr{ background: #ffc818; height: 2px; }
+ .showcase hr{
+     border-top: 2px solid hsl(45, 100%, 55%);
+}
+ .scm{
+    margin-bottom: 4%;
+}
 
 /* FORMATTING */
  .bg-gradiant{
-     background-color: #fff; 
-     background: linear-gradient(to bottom, #f7f7f7, #ffc818, #ffc818, #fff);
-     padding: 0 2%; 
+     padding: 0 2%;
+     background:
+       linear-gradient(to bottom,
+               hsl(0, 0%, 97%),
+            hsl(45, 100%, 55%),
+            hsl(45, 100%, 55%),
+             hsl(0, 0%, 100%));
 }
- hr{
-     display: block;
-     height: 1px;
-     margin: 1em 0;
-}
- h1,h2,h3,h4{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-
-     color: rgb(12, 12, 12);
-     word-break: unset;
-}
- #page-content span, 
- #page-content a{ font-weight: bold; word-break: unset; }
 
 /* TABLES */
  blockquote,
  .article blockquote,
  .continued blockquote{
      padding: 0;
-     background: #fff;
-     border: solid 1px #ffc818;
+     background: hsl(0, 0%, 100%);
+     border: 1px solid hsl(45, 100%, 55%);
 }
  .article table.wiki-content-table,
  .continued table.wiki-content-table{
@@ -124,18 +106,27 @@ A **Series** by [[*user not_a_seagull]], [[*user Lt Flops]], [[*user Ayers]], an
  .article table.wiki-content-table th,
  .continued table.wiki-content-table th{
      padding: 0;
-     border: solid 1px #ffc818;
+     border: 1px solid hsl(45, 100%, 55%);
      font-weight: normal;
 }
  .article table.wiki-content-table td,
  .continued table.wiki-content-table td{
-     border: solid 1px #ffc818;
+     border: 1px solid hsl(45, 100%, 55%);
      border-right: 0;
 }
  .continued table.wiki-content-table td{
      border-top: 0;
 }
 [[/module]]
+
+[[div class="bg-gradiant"]]
+
+[[include :scp-wiki:component:info-ayers
+|lang=en
+|page=bird
+|authorPage=http://www.scp-wiki.net/bird
+|comments=**Team Bird Hub** 
+A **Series** by [[*user not_a_seagull]], [[*user Lt Flops]], [[*user Ayers]], and [[*user Quantum Physician]], created for the **Doomsday Contest**.]]
 
 @@ @@
 [[>]]
@@ -146,53 +137,54 @@ A **Series** by [[*user not_a_seagull]], [[*user Lt Flops]], [[*user Ayers]], an
 [[div class="header-image"]]
 [[image http://scp-wiki.wdfiles.com/local--files/bird/teambird2.jpg]]
 
-[[div style="border-bottom: 3px solid rgb(12, 12, 12);"]]
+[[div style="border-bottom: 3px solid hsl(0, 0%, 5%);"]]
 [[/div]]
 
-= [[span style="font-size: 85%; font-weight: bold;"]]Banner courtesy of the amazing [[*user Mendelssohn]]! Check out more of their art [[[pendleton-miller-s-cognitoseward-collection|here]]]![[/span]]
+Banner courtesy of the amazing [[*user Mendelssohn]]!
+[[[pendleton-miller-s-cognitoseward-collection|Check out more of their art]]]!
 [[/div]]
 
-+ --
+++ --
 
 [[div class="showcase"]]
 Because somehow, Egyptian gods, the SPC universe, mysterious soul-vacuum devices, bad puns, and seagull scientists can all happily coexist in the same storyline. No wonder they called themselves Team Bird, the plot brainstorming must have been done while everyone was hella high.
 ----
 [[>]]
-—[[*user Modulum]]
-Head honcho of [[[SCPDeclassified]]]
+--[[*user Modulum]]
+//Head honcho of// [[[SCPDeclassified]]]
 [[/>]]
 [[/div]]
 
-+ --
+++ --
 
 [[div class="showcase"]]
-+++ BE-Class "Migration" End-of-Consciousness Scenario
++++ BE-Class “Migration” End-of-Consciousness Scenario
 ----
 [[include :scp-sandbox-3:image-zoom
+|width=150px
 |name=http://scp-wiki.wdfiles.com/local--files/task-forces/Eta4.png
-|caption=Eta-4 "Begone Thoth"
-|width=150px]]
+|caption=Eta-4 “Begone Thoth”]]
 
-Did you know that birds have their own gods? Well, "gods" is kind of a term we're not meant to use. We're supposed to use "Apex-tier Pluripotent Entity", but nobody around's going to enforce that, so why bother?
+Did you know that birds have their own gods? Well, “gods” is a term we're not meant to use. We're supposed to use “Apex-tier Pluripotent Entity”, but nobody around is going to enforce that, so why bother?
 
 Anyway, one day, we did something to piss off one of the gods. He got so angry that he came down from his high-and-mighty throne in who-knows-where and tried to wipe the human population off the face of the Earth by giving them bird minds. It worked, and now I think we're all screwed.
 
-Who are we? We're Mobile Task Force Eta-4, otherwise known as "Begone Thoth". I swear to Medila, I'm going to track down and peck whoever decided on that name. I digress. It's our job to uphold the mission of the Old Foundation. Seventy-five birds against seven billion humans, a god, and Medila-knows how many anomalies (some of them from Thoth himself). The odds are bleak, I know. But we've got brains, determination, and a whole lotta bird-power. If we pull this off right, we can stop this apocalypse.
+Who are we? We're Mobile Task Force Eta-4, otherwise known as “Begone Thoth”. I swear to Medila, I'm going to track down and peck whoever decided on that name... But, I digress. It's our job to uphold the mission of the Old Foundation. Seventy-five birds against seven billion humans, a god, and Medila-knows how many anomalies (some of them from Thoth himself). The odds are bleak, I know. But we've got brains, determination, and a whole lot of bird-power. If we pull this off right, we can stop this apocalypse.
 
 [[>]]
 Medila help us all.
 ----
-—Dr. Frederick Hoygull, PhD
+--Dr. Frederick Hoygull, PhD
 //Avian Division Head//
 [[/>]]
 [[/div]]
 
-+ --
+++ --
 
-[[div class="showcase" style="margin-bottom: 4%;"]]
+[[div class="showcase scm"]]
 ----
 ++ SEASON ONE
-++ "THE BIRDEMIC"
+++ “THE BIRDEMIC”
 +++ The Main Storyline
 ----
 ++++ __REQUIRED READING__
@@ -207,7 +199,7 @@ Medila help us all.
 > ||**1.**|| [[[scp-3662|SCP-3662 (The Doomsday Clock)]]] || by [[*user Ayers]] ||
 > ||**2.**|| [[[scp-3296|SCP-3296 (The Drifter)]]] || by [[*user not_a_seagull]] ||
 > ||**3.**|| **Tale:** [[[join-the-flock|Join the Flock]]] || by [[*user not_a_seagull]] ||
-> |||||| **Recommended:** [[[scp-2785|SCP-2785]]]  by [[*user not_a_seagull]] ||
+> |||||| **Recommended:** [[[scp-2785|SCP-2785]]] by [[*user not_a_seagull]] ||
 > ||**4.**|| **Tale:** [[[tales-of-the-automaton-the-big-birdocalypse|Tales of the Automaton: The Big Birdocalypse]]] || by [[*user not_a_seagull]] ||
 > ||**5.**|| [[[scp-3362|SCP-3362 (A Forced Self-Insert)]]] || by [[*user not_a_seagull]] ||
 [[/div]]
@@ -232,10 +224,10 @@ Medila help us all.
 [[size 80%]]Team Bird = The whole gosh dang team[[/size]]
 [[/div]]
 
-[[div class="showcase" style="margin-bottom: 4%;"]]
+[[div class="showcase scm"]]
 ----
 ++ INTERMISSION
-++++ Stories from the Team Bird Multiverse
+++++ Stories From the Team Bird Multiverse
 ----
 [[div class="continued"]]
 > |||| **GOI Format:** [[[corncrake-of-destiny|The Corncrake Of Destiny]]] || by [[*user Uncle Nicolini]] ||
@@ -248,7 +240,7 @@ Medila help us all.
 [[div class="showcase"]]
 ----
 ++ SEASON TWO
-++ "BIRDEMIC 2: SHOCK AND TERROR"
+++ “BIRDEMIC 2: SHOCK AND TERROR”
 ++++ A Team Bird Anthology
 ----
 [[div class="article"]]
@@ -263,9 +255,9 @@ Medila help us all.
 [[/div]]
 [[/div]]
 
-+ --
+++ --
 
-[[div class="showcase" style="margin-bottom: 4%;"]]
+[[div class="showcase scm"]]
 ----
 ++ TEAM BIRD
 ++ ART PAGE
@@ -274,27 +266,26 @@ Medila help us all.
 +++ [[[team-bird-art-page|Check it out!]]]
 
 [[include component:image-block
-    name=https://i.imgur.com/1H5YkQA.png |
-    caption=EE-3570 by [[*user Karakatt]] |
-    align=center |
-    width=500px
-]]
+|align=center
+|width=500px
+|name=https://i.imgur.com/1H5YkQA.png |
+|caption=EE-3570 by [[*user Karakatt]]]]
 
 +++ [[[team-bird-art-page|Check it out!]]]
 [[/div]]
 
-+ --
+++ --
 
 [[div class="showcase"]]
 ++++ __What if I can't/don't want to read all these pages?__
 ----
 The official Team Bird Machete Order is as follows:
 
-[[[scp-3570|EE-3570]]] ▷ [[[avian-anthology-i|Avian Anthology I]]] ▷ [[[umbral-migratory-sequence|UMBRAL MIGRATORY SEQUENCE]]] ▷ [[[avian-anthology-ii|Avian Anthology II]]] 
+[[[SCP-3095]]] ▷ [[[scp-3570|EE-3570]]] ▷ [[[Avian Anthology I]]] ▷ [[[UMBRAL MIGRATORY SEQUENCE]]] ▷ [[[Avian Anthology II]]]
 
-EE-3570 will summarize the scenario for you, and the Avian Anthologies + Umbral Migratory is where all the action is. If you want, or if you're //really// starved for time, you can also skip SCP-3095, as it can be summarized as "birds that are scientists that work for the Foundation." 
+EE-3570 will summarize the scenario for you, and the Avian Anthologies + Umbral Migratory are where all the action is. If you want, or if you're //really// starved for time, you may also skip SCP-3095, as it can be summarized as “birds that are scientists who work for the Foundation”.
 
-However, if you do have the time, we heavily recommend reading the rest of the material. It will give more context to this universe, and it's all //really// good stuff!
+If you do have the time, however, we heavily recommend reading the rest of the material. It will give more context to this universe, and it's all //really// good stuff!
 [[/div]]
 
 ,,Hub created by [[*user Lt Flops]] and [[*user not_a_seagull]].,,
