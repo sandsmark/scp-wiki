@@ -873,6 +873,12 @@ div.pages_container {
         -ms-transform: translateX(400%);
          -o-transform: translateX(400%);
             transform: translateX(400%);
+  box-shadow: 20px 20px rgba(0,0,0,.15);
+  transition: all .4s ease;
+}
+
+.desktop-only:hover {
+  box-shadow: 10px 10px rgba(0,0,0,.25);
 }
 
 .desktop-only a, a:visited {
