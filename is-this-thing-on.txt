@@ -1,0 +1,201 @@
+title:etoisle's Authorpage
+[[=]]
+[[module Rate]]
+[[/=]]
+[[include :scp-wiki:component:anomaly-class-bar-source
+|item-number=ETOILE
+|clearance=0
+|container-class=esoteric
+|secondary-class=WHAT
+|secondary-icon=http://scp-sandbox-3.wikidot.com/local--files/etoisle-authorpage/3D_TV_static%20%281%29.gif
+|disruption-class=dark
+|risk-class=notice
+]]
+
+------
+= [[image http://scpdsandbox.wikidot.com/local--files/etoisle-authorpage/avi1small1.gif]]
+[[=]]
+> ++ do my gay little computers make you mad? do they make you want to hurt me?
+[[/=]]
+= if i weren't bound by the laws of CC i would put a million geocities welcome page gifs right here. be grateful for that
+
+------
+
+[[=]]
++ ʚSCPSɞ
+[[/=]]
+> ++ [http://www.scp-wiki.net/scp-5094 SCP-5094 ～ Miss J's Whiz Kidz Schoolhouse]
+> //You seemed so lonely, Xenia.//
+
+> ++ [http://www.scp-wiki.net/scp-5304 SCP-5304 ～ 😳SCP REEL😳]
+> //Guys this is where Area 51 actually is 😳//
+
+> ++ [http://www.scp-wiki.net/scp-5403 SCP-5403 ～ A/N: dis is my first post so NO FLAMERZ PLOX!!!1]
+> //After review by the Ethics Committee, members of STF Chi-11 are permitted to request voluntary transfer after a minimum of two weeks.//
+
+------
+
+[[=]]
++ ʚCONTACTɞ
+[[/=]]
+= find me on twitter [https://twitter.com/biarcolossus here] and on discord at anaïs#0004 :]
+
+------
+
+[[collapsible show="+ license stuff" hide="- close"]]
+header image made with http://www.3dtextmaker.com/cgi-bin/3dtext.pl
+esoteric class TV icon: https://commons.wikimedia.org/wiki/File:3D_TV_static.gif
+bg: https://www.publicdomainpictures.net/en/view-image.php?image=80028&picture=metallic-white-glitter-texture
+pc gif includes footage from https://www.youtube.com/watch?v=qwz88S1P0os, edited to be pink
+i made everything else
+[[/collapsible]]
+
+[[module CSS]]
+/*
+    Powered on 2020/06/29 15:46:58
+    [2020 Wikidot Theme]
+    Created by etoisle
+    CC BY-SA 3.0
+*/
+
+
+
+:root {
+    --themeColor: #008484;
+    --accentColor: #008484;
+}
+
+body {
+background-image:url("http://scpdsandbox.wikidot.com/local--files/etoisle-authorpage/bg.gif");
+    background-attachment: fixed;
+    font-family: "Microsoft Sans Serif";
+-webkit-font-smoothing: none;
+    text-rendering: optimizeLegibility;
+    image-rendering: pixelated;
+}
+a{
+    color: rgb(0, 0, 255);
+}
+a:visited{
+color: #800080;
+}
+h1,h2,h3,h4,h5,h6 {
+    color: #008484;
+    font-family: "Microsoft Sans Serif";
+}
+div#main-content h1 {
+width: 25%;
+    margin: auto;
+padding: 5px;
+    border: #DFDFDF outset 2px;
+    background-color: #C0C0C0;
+}
+blockquote {
+    border: #DFDFDF outset 2px;
+    background-color: #C0C0C0;
+        color: black;
+        color: #000;
+}
+div#header {
+    background: url(http://scp-sandbox-3.wikidot.com/local--files/etoisle-authorpage/tl.png) 10px 35px no-repeat;
+}
+
+div#container-wrap {
+    background: url(http://scpdsandbox.wikidot.com/local--files/etoisle-authorpage/glitter%20%281%29.gif) top left repeat-x;
+}
+
+div#header h1 {
+    background: url(http://scp-sandbox-3.wdfiles.com/local--files/etoisle-authorpage/etoile__25743.gif) 10px 50px no-repeat;
+}
+
+div#header h1 a span {
+    visibility: hidden;
+}
+div#header h1 a:before {
+    content: " ";
+    color: #eee;
+    text-shadow: 0;
+}
+
+div#header h2 span {
+    display: none;
+}
+div#header h2:after {
+    display: none;
+}
+div#side-bar div.side-block {
+    background: #C0C0C0;
+    border: #DFDFDF outset 2px;;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px;
+}
+div#side-bar div.side-block div.heading,
+div#side-bar div.collapsible-block-unfolded-link,
+div#side-bar div.collapsible-block-unfolded-link div.collapsible-block-link {
+    color: black;
+    border-color: black;
+}
+div.yui-navset div.yui-content {
+    background: #C0C0C0;
+}
+div.yui-navset ul.yui-nav a,
+div.yui-navset div.yui-navset-top ul.yui-nav a {
+    background: #C0C0C0;
+    color: black;
+    border: #DFDFDF outset 2px;
+}
+div.yui-navset ul.yui-nav a:hover,
+div.yui-navset ul.yui-nav a:focus {
+    background: #C0C0C0;
+    color: black;
+}
+div.yui-navset ul.yui-nav .selected a,
+div.yui-navset ul.yui-nav .selected a:focus,
+div.yui-navset ul.yui-nav .selected a:hover {
+    background: #C0C0C0;
+    color: black;
+    border: #DFDFDF inset 2px;
+}
+div.open-menu a {
+    color: black!important;
+    border-color: black!important;
+}
+div.page-rate-widget-box,
+div.page-rate-widget-box span.rate-points,
+div.page-rate-widget-box span.cancel {
+    background-color: #C0C0C0!important;
+border: #DFDFDF outset 2px;!important;
+border-radius: 0px;
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0);
+}
+div.page-rate-widget-box span.rateup,
+div.page-rate-widget-box span.ratedown {
+    border: #DFDFDF outset 2px;!important;
+}
+div.page-rate-widget-box span.rate-points,
+div.page-rate-widget-box span.cancel a,
+div.page-rate-widget-box span.cancel a:hover {
+    color: #000000;
+}
+div.page-rate-widget-box span.rateup,
+div.page-rate-widget-box span.ratedown {
+    background-color: #C0C0C0!important;
+}
+div.page-rate-widget-box span.rateup a,
+div.page-rate-widget-box span.ratedown a {
+    color: #000000!important;
+}
+div.page-rate-widget-box span.cancel a:hover,
+div.page-rate-widget-box span.rateup a:hover,
+div.page-rate-widget-box span.ratedown a:hover {
+    background: transparent!important;
+    color: transparent!important;
+}
+#main-content{
+    background: #C0C0C0;
+    color: black;
+    border: #DFDFDF outset 2px;
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+font-size: 14px;
+}
+[[/module]]
