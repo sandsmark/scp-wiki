@@ -29,6 +29,7 @@ title:etoisle's Authorpage
 ------
 
 [[collapsible show="+ license stuff" hide="- close"]]
+ty stormbreath for helping me with some css :]
 header image made with http://www.3dtextmaker.com/cgi-bin/3dtext.pl
 pc gif includes footage from https://www.youtube.com/watch?v=qwz88S1P0os, edited to be pink
 i made everything else
@@ -182,4 +183,49 @@ div.page-rate-widget-box span.ratedown a:hover {
 box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 font-size: 14px;
 }
+#side-bar a:visited,
+#top-bar a,
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a,
+#login-status ul a,
+#login-status ul a:hover {
+     color: rgb(0, 0, 255);
+}
+
+#page-title {
+   color: #008484;
+}
+
+#login-status,
+#login-status a {
+    color: white;
+}
+
+@media (max-width: 767px) {
+     #side-bar {
+          background-color: #C0C0C0;
+     }
+}
+
+.side-block .menu-item > .image {
+    filter: hue-rotate(250deg);
+}
+
+#footer {
+    background: transparent;
+}
+
+#search-top-box-input,
+#search-top-box-input:hover,
+#search-top-box-input:focus,
+#search-top-box-form input[type=submit],
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    border: #DFDFDF outset 2px;
+    background: #C0C0C0;
+    box-shadow: none;
+    border-radius: 0px;
+    color: 000000#
+}
+
 [[/module]]
