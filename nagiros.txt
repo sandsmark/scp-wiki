@@ -949,17 +949,20 @@ html {
 }
 
 /* Content warning box */
-.warning .collapsible-block {
+.warning {
   border: double 3px black;
   padding: 10px;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 100px;
-  text-align: center;
   width: 75%;
+  display: inline-block;
 }
 .warning a.collapsible-block-link {
   font-weight: bold;
+}
+.warning .collapsible-block {  
+  text-align: center;
 }
 
 /* Hidden footnotes */
