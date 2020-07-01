@@ -955,11 +955,13 @@ html {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 100px;
-  display: inline-block;
   text-align: center;
 }
 .warning a.collapsible-block-link {
   font-weight: bold;
+}
+.collapsible-block-folded {
+  display: inline-block;
 }
 .warning .collapsible-block-unfolded {
   width: 75%;
