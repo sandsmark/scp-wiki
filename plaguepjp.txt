@@ -29,13 +29,10 @@ Enjoy your time around here. Thanks for visiting!
 [[/=]]
 ------
 
-[[module ListPages limit="1" category="*" order="created_at"]]
-[[/module]]
-
 [[include :scp-wiki:component:mega-cool-author-page-tool |inc-list= --]
 |language=en
-|order=title
-|perpage=250
+|order=created_at
+|perpage=50
 |background-image=http://scpsandboxcn.wikidot.com/local--files/asriel3/logo.png
 |shadow=
 ]]
