@@ -8,9 +8,12 @@ title:spikebrennan's Personnel File
 **Note:** [*http://scpper.com/user/908688 I] created:
 [[/div]]
 [[/=]]
-[[module ListPages created_by="Spikebrennan" perPage="250" separate="no" tags="scp, joke, tale, scp-fuel, project" order="created_at" prependLine="||~ SCP ||~ Rating ||~ Comments ||~ Created ||~ Last Comment ||~ Length ||"]] 
-|| %%title_linked%% || %%rating%% || %%comments%% || %%created_at%% || %%commented_at%% || %%size%% ||
+[[module ListPages created_by="Spikebrennan" perPage="250" separate="no" tags="scp, joke, tale, scp-fuel, project" order="created_at" prependLine="||~ SCP ||~ Rating ||~ Rating||~ Comments ||~ Created ||~ Last Comment ||~ Length ||"]] 
+|| %%title_linked%% || %%rating%% || +[[#expr (%%rating%%+((%%rating_votes%%-%%rating%%)/2))]], -[[#expr ((%%rating_votes%%-%%rating%%)/2)]] ||%%comments%% || %%created_at%% || %%commented_at%% || %%size%% ||
 [[/module]]
+
+
+
 
 [[include component:image-block name=http://www.therebreathersite.nl/12_Atmospheric%20Diving%20Suits/1911%20Macduffee/Picture3.jpg|align=left|caption=**spikebrennan, with his Apparatus**]]
 
@@ -220,12 +223,6 @@ I hate SCP-682.  Hate, hate, hate.  Sorry, but it's true.
 But I had always wanted to do a Bible-speak style writeup of an SCP article or tale, kind of like [[[Page 285 of the Guild Ledger]]] but specifically in Biblical prose.  I opened up the Book of Daniel and the piece basically wrote itself.  I figured that Dead Sea Scrolls-type physical damage to the document could be used in place of traditional redaction.  Unfortunately, the formatting means that the piece looks ugly on certain browsers.
 [[/collapsible]]
 
-
-[[collapsible show="CorpseCon leaderboard (with apologies to Rounderhouse for borrowing his code)"]]
-[[module ListPages order="rating desc" category="." tags="+exquisite-corpse2020 -contest" perPage="40" separate="no" prependLine="||~ Place ||~ Title ||~ Poster ||~ Rating ||~ Upvotes/Downvotes ||~ Comments ||"]]
-|| #%%index%% || %%title_linked%% || %%created_by_linked%% || %%rating%% || +[[#expr (%%rating%%+((%%rating_votes%%-%%rating%%)/2))]], -[[#expr ((%%rating_votes%%-%%rating%%)/2)]] || %%comments%% ||
-[[/module]]
-[[/collapsible]]
 ------
 
 I added some stuff to a few other articles, including [[[observation-log-709|Observation Log 709]]] (the Dr. Garcia bit), [[[SCP-294]]] (//"Hic est enim Calix Sánguinis mei"//), [[[SCP-738]]] (specifically, the Sheldon Katz bit), [[[log-of-anomalous-items|Log of Anomalous Items]]], [[[experiment-log-261-ad-de|Experiment Log 261-AD-DE]]] (the Dr. Garcia bit) and [[[SCP-887 Log ]]] (the Dr. Garcia bit).
