@@ -1,4 +1,12 @@
 title:SCP-5054
+[[module CSS]]
+.standalone h2 {
+   font-family: verdana, arial, helvetica, sans-serif;
+   letter-spacing: unset;
+   font-weight: bold;
+}
+[[/module]]
+
 [[>]]
 [[module Rate]]
 [[/>]]
@@ -111,28 +119,11 @@ Due to the lack of close observation of //Octopoda// specimens outside of certai
 
 [[div style="border: 2px solid black; margin: 12px; padding: 12px; padding-bottom: 0"]]
 [[=]]
-[[div class="content-panel standalone series"]]
-[[html]]
-<body>
-<style>
-body
-{
-   font-family:verdana,arial,helvetica,sans-serif;
-   font-size:12.8px;
-   color:#333;
-   line-height:141%
-}
-</style>
-<center>
-<div class="container">
-<h2>Project CRITICAL CURTAIN Progress</h2>
-<div style="background-color: #24ff00; color: black">
-<p>ONGOING — OVERALL SUCCESS</p>
-</div>
-</div>
-</center>
-</body>
-[[/html]]
+[[div class="content-panel standalone series" style="padding: 1em 20px"]]
+++ Project CRITICAL CURTAIN Progress
+[[div style="background-color: #24ff00; color: black"]]
+ONGOING -- OVERALL SUCCESS
+[[/div]]
 [[/div]]
 
 [[div style="margin: 0 30px; text-align: justify; text-align-last: center"]]
