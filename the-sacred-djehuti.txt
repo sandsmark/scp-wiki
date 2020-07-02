@@ -1,9 +1,56 @@
 title:The Sacred Djehuti
+[[include component:preview
+|text=Then, amidst hushed tones, the crooked beak of a particularly mirthful Ancient One arose. He was Djehuti, the Scribe of the Underworld.]]
+
 [[include theme:black-highlighter-theme]]
 [[include :scp-wiki:component:dustjacket-theme]]
 [[include :scp-wiki:component:collapsible-sidebar]]
 
-[[include component:preview text=Then, amidst hushed tones, the crooked beak of a particularly mirthful Ancient One descended. He was Djehuti, the Scribe of the Underworld.]]
+[[module CSS]]
+/* INFO BOX */
+ .info-container{
+     --barColour: hsl(117, 100%, 15%);
+     --linkColour: hsl(47, 100%, 68%);
+}
+ .u-faq{ display: none; }
+
+/* DIV BLOCKS */
+ .entry{
+     border: 2px solid hsl(120, 33%, 10%);
+     background: hsl(120, 33%, 90%);
+     padding: 1.7em;
+}
+ .section{
+     border: 1px solid hsl(120, 33%, 10%);
+     background: hsl(120, 31%, 95%);
+     padding: 1.3em;
+     margin-bottom: .2em;
+}
+ .series-nav{
+     margin: .5em 0;
+     background:
+       linear-gradient(to bottom right,
+                hsla(0, 0%, 100%, 1),
+           hsla(135, 57%, 31%, .5));
+     border: outset 1.75px hsl(0, 0%, 5%);
+     border-radius: 2em;
+     font-size: 85%;
+     font-weight: bold;
+     text-align: center;
+}
+ .series-nav a{ color: hsl(135, 64%, 23%); }
+
+/* FORMATTING */
+ .footnoteref{ font-variant: unset; }
+ .indented{
+     text-indent: 2em;
+}
+ .indented .footnoteref,
+ .indented ul,
+ .indented .scp-image-block.block-right{
+     text-indent: 0;
+}
+[[/module]]
 
 [[include :scp-wiki:component:info-ayers
 |lang=en
@@ -21,37 +68,7 @@ More by these authors:
 [[/div]] @@ @@
 ]]
 
-[[module CSS]]
-/* INFO BOX */
-sup{
-    vertical-align: top;
-    position: relative;
-    top: -0.5em;
-}
-body{
-    --cutColour: #fafafa;
-    --barColour: #044d00;
-    color: rgb(12, 12, 12);
-}
-.translation_block, .u-faq, #u-author_block{ display: none; }
-
-/* NAV BLOCK */
-.team-bird-nav-sh{
-    background-color: rgb(12, 12, 12);
-    border: outset 2px rgb(12, 12, 12);
-    border-radius: 1.829em;
-    color: rgb(12, 12, 12);
-    background: linear-gradient(to bottom right, rgba(0,0,0,0), rgba(34,123,56,.7));
-    font-weight: bold;
-    font-size: 85%;
-}
-.team-bird-nav-sh a{ color: #156128; }
-
-/* FORMATTING */
-.footnoteref{ font-variant: unset; }
-[[/module]]
-
-[[div style="border: solid 2px #112211; background: #DDEEDD; padding: 1.524em; margin-bottom: 1.524em;"]]
+[[div class="entry"]]
 
 [[>]]
 [[module Rate]]
@@ -60,137 +77,179 @@ body{
 [[size 150%]]**The Sacred Djehuti**[[/size]]
 
 [[>]]
-**Scribe of the Underworld, Lord of Khemennu, Conciliator of the Crescent Moon, Θωθ[[footnote]]WHAT'S THIS? –MOONSTONE BRAVEHEART OF HELHEIM[[/footnote]][[footnote]]I know you're excited, but there's no need to scream. It means "He Who is Like the Ibis" and is read as "Thoth". — J. V.[[/footnote]]**
+**Scribe of the Underworld,
+Lord of Khemennu,
+Conciliator of the Crescent Moon,
+Θωθ**[[footnote]]WHAT'S THIS? –MOONSTONE BRAVEHEART OF HELHEIM[[/footnote]]^^,@< >@^^[[footnote]]I know you're excited, but there's no need to scream. It means "He Who Is Like the Ibis" and is read as "Thoth". — J. V.[[/footnote]]
 [[/>]]
 
-[[div style="overflow: auto"]]
+[[div style="overflow: auto;"]]
 
-[[div style="border: solid 1px #112211; background: #EEF6EE; padding: 1.22em; margin-bottom: .183em;"]]
-[[=]]
-**Conspectus**
-[[/=]]
+[[div class="section"]]
+= **Conspectus**
 
-After many ages spent pondering the great expanse, the inhabitants of the Land of Black and Red carefully wove together minute fragments of the cosmos. They pursued knowledge presented by the Ancient Ones. Fathers and sons constructed the foundations of their holy land to mimic the architecture of the cosmos as seen and felt — in the mind's eye and on the skin of their backs. Then, amidst hushed tones, the crooked beak of a particularly mirthful Ancient One descended. He was Djehuti, the Scribe of the Underworld.
+After many ages spent pondering the great expanse, the inhabitants of the Land of Black and Red carefully wove together infinitesimal fragments of the Cosmos. They pursued knowledge presented by the Ancient Ones. Fathers and sons constructed the foundations of their holy land to mimic the architecture of the Cosmos, as seen and felt -- in the mind's eye and on the skin of their backs. Then, amidst hushed tones, the crooked beak of a particularly mirthful Ancient One arose. He was Djehuti, the Scribe of the Underworld.
 
-Djehuti was birthed by the god of the Sun at the precipice between order and chaos: The Underworld.[[footnote]]There are many conflicting accounts of his creation. One states that he hatched himself into existence after carving his essence from the cosmos. One other states that he was conceived after the god of the Night consumed the god of the Sun's seed during combat, which sounds more like esoteric erotica than ancient mythology. And I believe I found reference to Thoth being birthed by, and I quote, "phallic lettuce" in various places across ancient Egyptian culture... Anyway. The story I relay is //much// less ridiculous. — J. V.[[/footnote]] He emerged into the overworld conjuring fires of wisdom. The Egyptians presented their inherited knowledge to Djehuti, for which he afforded them the gift of writing. Throughout his tour of the cosmos, Djehuti permitted all beings the equal opportunity of paradise. All that was required in exchange was to swear fealty to Djehuti. His mythical paradise is a very real place known as the Brot Kruma.[[footnote]]Known by various peoples as the Breadcrumb Planet, Nibiru, and the 12th Far Planet. — J.V.[[/footnote]]
+[[div class="indented"]]
+Djehuti was birthed by the god of the Sun at the precipice between order and chaos: The Underworld.[[footnote]]There are many conflicting accounts on his creation. One states he hatched himself into existence after carving his essence from the Cosmos. Another states that he was conceived after the god of the Night consumed the god of the Sun's seed during combat, which sounds more like esoteric erotica than ancient mythology. And I believe I found reference to Thoth being birthed by -- and I quote -- "phallic lettuce" in various places across ancient Egyptian culture...? Anyway. The story I relay is //much// less ridiculous. — J. V.[[/footnote]] He emerged into the overworld conjuring fires of wisdom. The Egyptians presented their inherited knowledge to Djehuti, for which he afforded the gift of writing. Throughout his tour of the Cosmos, Djehuti permitted all beings the equal opportunity of paradise. The requirement, in exchange, was to swear fealty to Djehuti. His mythical paradise is a real place, known as the Brot Kruma.[[footnote]]Known by various peoples as the Breadcrumb Planet, the 12th Far Planet, and Nibiru. — J.V.[[/footnote]]
 
-Before the golden age of Holy Science, two like-minded peoples dedicated to worshipping Djehuti joined hands in fellowship. These groups[[footnote]]The first, Sumerian intellectuals fleeing Mesopotamia; the second, an exiled society of diligent debtors responsible for various Middle Egypt structures. — J.V.[[/footnote]] erected the city of Khemennu in the image of their divine leader. Khemennu was highly advanced for its time; its citizens harnessed scores of knowledge rarely found outside the Wanderers' Library. Djehuti commanded the admiration of his followers and transported the city's best and brightest to Brot Kruma, to be forever by his side. 
+Before the golden age of Holy Science, two like-minded peoples[[footnote]]The first, Sumerian intellectuals fleeing Mesopotamia; the second, an exiled society of diligent debtors responsible for various Middle Egypt structures. — J.V.[[/footnote]] dedicated to worshipping Djehuti joined hands in fellowship. Together, these groups erected the city of Khemennu in the image of their divine leader. Khemennu was highly advanced for its time; its citizens harnessed scores of knowledge rarely found outside The Wanderers' Library. Djehuti commanded the admiration of his followers and transported the city's best and brightest to Brot Kruma, to forever be by his side.
 
-Brothers and sisters from far and wide are welcome to taste the sweetness of The Sacred One's wisdom!
+Siblings from far and wide are welcome to taste the sweetness of The Sacred One's wisdom!
+[[/div]]
 [[/div]]
 
-[[div style="border: solid 1px #112211; background: #EEF6EE; padding: 1.22em; margin-bottom: .183em;"]]
-[[=]]
-**Illustration**
-[[/=]]
+[[div class="section"]]
+= **Illustration**
 
 [[=image thoth.jpg width="640px"]]
-[[=]]
-//A stone carving depicting the Sacred Djehuti performing an arcane ritual on a philosopher-king. Retrieved from the ruins of Philae.//
-[[/=]]
+
+= //A stone carving depicting the Sacred Djehuti performing an arcane ritual on a philosopher-king. Retrieved from the ruins of Philae.//
 [[/div]]
 
-[[div style="border: solid 1px #112211; background: #EEF6EE; padding: 1.22em; margin-bottom: .183em;"]]
-[[=]]
-**Knowledge**
-[[/=]]
+[[div class="section"]]
+= **Knowledge**
 
-**Traits:** Djehuti spins the fibres of dream into day, manifesting as one part sacred ibis and one part man. Djehuti is a divine being that lacks a definitive connection to the mortal realm.[[footnote]]It is thought that Djehuti must expend continuous magickal energies to remain in the material plane. — J.V. [[/footnote]] He seeks to influence the waking world and the dreaming dead without the limits imposed by the mortal realm.
+**Traits**
 
-Djehuti once exhausted much of his magicks to physically form paradise in the shape of the Brot Kruma. Even today, the greatest sorcerer-researchers are enamoured by this feat of occult excellence! And Djehuti continues to disperse his power with each passing cycle. Regrettably, expending his vast power has estranged him from the light of the Communion of Gods.
+[[div class="indented"]]
+Djehuti spins the fibres of dream into day, manifesting as one part Sacred Ibis and one part Man. Djehuti is a divine being that lacks a definitive connection to the mortal realm.[[footnote]]It is believed that Djehuti must expend continuous magickal energy to remain in the material plane. — J.V. [[/footnote]] He seeks to influence the waking world and the dreaming dead without the limits imposed by mortals.
 
-**Nature:** Djehuti imparts gifts of power to his worshippers, but believing that these gifts are acts of generosity is naïve: Djehuti is opportunistic, and his gifts are seldom presented without ulterior motives. He possesses more knowledge than a human could acquire in a lifetime tenfold, and to him, humans are a means to achieve even greater knowledge. This is the reason why he imparts his power: Not as a gift, but as a transaction.
+Djehuti once exhausted much of his magicks to physically form paradise in the shape of the Brot Kruma. Even today, the greatest sorcerer-researchers are enamoured by this feat of occult excellence! And Djehuti continues dispersing his power with each passing cycle. Though, expending his vast power has, regrettably, estranged him from the light of the Communion of Gods.
+[[/div]]
+----
+**Nature**
 
-**History & Associated Parties:** As a member of the Communion of Gods, Djehuti is associated with the ancient Egyptian pantheon. No one god in the Communion holds absolute power; the gods each share the Boundless Wellspring.[[footnote]]Deities often share abilities, too. For instance, the goddess Seshat, Mistress of the House of Books, passively holds the gift of writing while Djehuti actively disperses it. — J.V.[[/footnote]] Some gods possess either a Shadow or a Mirror. Djehuti, for instance, possesses a Shadow in the form of the deity Akheilos. Akheilos, son of the Mistaken Beast,[[footnote]]//The Chronicle of the Sharkic War// contains conflicting accounts as to whether Akheilos is his son or is merely a monster created by the Beast. -G.W.[[/footnote]] uses the powers of the Id to pursue chaotic conduct. Djehuti and Akheilos have been locked in eternal tumult at the division between sagacity and savagery.[[footnote]]This is the sacred missal of Thoth, not the adventures of sharkboy and lavagirl! - Occultess Arabella Kovalanskaya[[/footnote]][[footnote]]These are the sacred texts of Birds vs Sharks. -G.W.[[/footnote]]
+[[div class="indented"]]
+Djehuti imparts gifts of power to his worshippers, but believing these gifts are acts of generosity is naïve: Djehuti is opportunistic, and he seldom presents gifts without an ulterior motive. He possesses more knowledge than a human could acquire in a lifetime tenfold, and to him, humans are a means to achieve even greater knowledge. This is the reason he imparts his power: As a transaction.
+[[/div]]
+----
+**History & Associated Parties**
 
-It is hypothesized that the Boxers recently unleashed The Sacred One to do away with Akheilos.[[footnote]]The Boxers are set on the correct path but travel in the wrong ways. -G.W.[[/footnote]][[footnote]]We don't know for sure that the Boxers unleashed Djehuti! — J.V.[[/footnote]] Djehuti and Akheilos clash through endless assaults and claims on knowledge throughout the cosmos. Djehuti wishes to further knowledge, while Akheilos consumes it. Djehuti's goal -- aside from regaining power -- is to cast Akheilos down into the depths of the Underworldly Nether once and for all.
+[[div class="indented"]]
+As a member of the Communion of Gods, Djehuti is associated with the ancient Egyptian pantheon. Each god in the Communion shares the Boundless Wellspring.[[footnote]]Deities often share abilities, too. For instance, the goddess Seshat, Mistress of the House of Books, passively holds the gift of writing, whereas Djehuti actively disperses it. — J.V.[[/footnote]] Some gods possess either a Shadow or a Mirror. Djehuti, for instance, possesses a Shadow in the form of the deity Akheilos. Akheilos, son of the Mistaken Beast,[[footnote]]//The Chronicle of the Sharkic War// contains conflicting accounts as to whether Akheilos is his son or merely a monster created by the Beast. -G.W.[[/footnote]] exhausts the powers of the Id to pursue chaotic conduct. Djehuti and Akheilos have been locked in eternal tumult at the division between sagacity and savagery.[[footnote]]This is the sacred missal of Thoth, not the adventures of sharkboy and lavagirl! - Occultess Arabella Kovalanskaya[[/footnote]]^^,@< >@^^[[footnote]]These are the sacred texts of Birds vs. Sharks. -G.W.[[/footnote]]
 
-For his conduct, Akheilos is barred from the Library. Djehuti and his followers, however, are not, and some of our loyalists even seek to join //Djehuti//'s own repository of wisdom! Our Doors lay open, welcoming all of Djehuti's loyal vassals into our Library. The exchange of knowledge is natural in all places, and this level of knowledge is unprecedented during the [[[SCP-3570|Rise of the Blue Moon]]]. And yet the Jailors kept their own knowledge sealed during his rise, believing Djehuti was the harbinger of the end. They continue to be misguided in perverse ways![[footnote]]The Bookburners seek to destroy Thoth. With Thoth gone, who will slow the tide of Akheilos? -G.W.[[/footnote]]
+It is hypothesized that the Boxers recently unleashed The Sacred One to dispense with Akheilos.[[footnote]]The Boxers are set on the correct path but travel in the wrong ways. -G.W.[[/footnote]]^^,@< >@^^[[footnote]]We don't know for certain that the Boxers unleashed Djehuti! — J.V.[[/footnote]] Djehuti and Akheilos clash through endless assaults and claims on knowledge throughout the Cosmos. Djehuti wishes to further knowledge, whereas Akheilos consumes it. Djehuti's goal -- aside from regaining power -- is to cast Akheilos down into the depths of the Underworldly Nether for the final time.
 
-**Approach:** Djehuti rarely entertains the trivialities of mortals. To gain his favour, you must open your mind to him, allowing him to grasp and manipulate your will. Of course, countless men have gone mad after extending their hand to grasp for the inky void, only to be met with the predatory talons of the Sacred Djehuti instead. To safely bargain one's mind with Djehuti, one must show excellence, lest you be subjugated into becoming yet another useless thrall, destined for either the Underworld or madness.
+For his conduct, Akheilos is barred from the Library. Djehuti and his followers, however, are allowed in. Some of our loyalists even seek to join //Djehuti//'s own repository of wisdom! Our Doors lay open, accepting all of Djehuti's loyal vassals into our Library. The exchange of knowledge is natural in all places, and this level of knowledge is unprecedented during the [[[SCP-3570|Rise of the Blue Moon]]]. And yet the Jailors kept their own knowledge sealed during his rise, believing Djehuti was the harbinger of the end. They are continually misguided in perverse ways![[footnote]]The Bookburners seek to destroy Thoth. With Thoth gone, who will slow the tide of Akheilos? -G.W.[[/footnote]]
+[[/div]]
+----
+**Approach**
 
-**Other:** Olden day wearers of the glorious Pschent affirmed Djehuti was the Moon-god but discarded this belief over time as they delved into philosophy. Latter-day Egyptologists state he was always Moon-god, but separated from Luna when he began his transit of the cosmos. Both accounts are strikingly Earth-centric and thus hold little water. — J.V.
+[[div class="indented"]]
+Djehuti rarely entertains the trivialities of mortals. To gain his favour, you must open your mind to him, allowing him to grasp and manipulate your will. As one would expect, countless men have gone mad after extending their hand to grasp for the inky void, only to meet the predatory talons of the Sacred Djehuti instead. To safely bargain one's mind with Djehuti, one must demonstrate excellence, lest you be subjugated into becoming yet another useless thrall, destined for either the Underworld or madness.
+[[/div]]
+----
+**Other**
 
-Thoth battles the monstrous Akheilos, spawn of the Mistaken Beast. One day, Akheilos shall descend and devour all that Thoth has built with the mortals, as it has done countless times in the past. Once this is complete, its master may finally awaken and rebuild reality in his image. Though, if I may point out: To consume Thoth's work is to eventually consume Thoth himself. An arduous task indeed. -G.W.
+[[div class="indented"]]
+Olden day wearers of the glorious Pschent affirmed Djehuti was the Moon-god, but they discarded this belief over time as they delved into philosophy. Latter-day Egyptologists state he was always Moon-god but separated from Luna when he began his transit of the Cosmos. Both accounts are strikingly Earth-centric and hold little water. — J.V.
+
+Thoth battles the monstrous Akheilos, spawn of the Mistaken Beast. One day, Akheilos shall descend and devour all that Thoth has built with the mortals, as it has achieved countless times in the past. When this is completed, its master may finally awaken and rebuild reality in his image. Though, if I may point out: To consume Thoth's work is to consume Thoth himself. An arduous task indeed. -G.W.
+[[/div]]
 [[/div]]
 
-[[div style="border: solid 1px #112211; background: #EEF6EE; padding: 1.22em; margin-bottom: .183em;"]]
-[[=]]
-**Observations & Stories**
-[[/=]]
+[[div class="section"]]
+= **Observations & Stories**
 
-I do not worship Djehuti, I instead lay in awe of the sprawling whole of his creation. And so, I have travelled vast distances over many years to compile the observations you see below. It took more time than I expected, and I received correspondence from the most unlikely of allies, from the past and present, but all information will be presented for posterity. This is the most important affair I have brought to the Hand. 
+[[div class="indented"]]
+I do not worship Djehuti; I instead lay in awe of the sprawling whole of his creation. And so, I have wandered vast distances over many cycles to compile these observations. It required more time than I expected. I received correspondence from the most unlikely of allies, from both past and present. But all information will be presented for posterity. This affair will impact the Hand more than any I have brought before.
+[[/div]]
 ----
-//Hekuhirkopshef, my brother not in blood but in spirit, what have you wrought? [[[SCP-1644|Thoth knows the extent of your sacrilege]]] and has cast down his wrath to punish you. It is a blessing that you leave behind no lineage, lest your punishment results in the spilling of more innocent blood. You have gambled with Thoth above us and tainted his wisdom. Why? Why have you disrespected the Communion?//
+[[div class="indented" style="font-style: italic;"]]
+Hekuhirkopshef, my brother not in blood but in spirit, what have you wrought? [[[SCP-1644|Thoth knows the extent of your sacrilege]]] and has cast down his wrath to punish you. It is a blessing that you leave behind no lineage, lest your punishment results in the spilling of more innocent blood. You have gambled with Thoth above us and tainted his wisdom. Why? Why have you disrespected the Communion?
 
-//You have jeopardized our stake in the dynasty by allowing Menkaure to reign as true leader. I have taken your book. I am the new Keeper. And I command one thousand hard-working men and their families under my wing. I am travelling to the north, where we shall build a vast monument to the Communion of the Gods. I do not care how many generations of sons it will take to achieve this feat.[[footnote]]It took 400 years for them to complete their kingdom, though I suspect the eventual unification with the Sumerians sped the process up considerably. — J.V.[[/footnote]] We will not be fools as you are, brother. We will bask in Thoth's wisdom. Our very lifeblood will be gold when we are done.//
+You have jeopardized our stake in the dynasty by allowing Menkaure to reign as true leader. I have taken your book. I am the new Keeper. And I command one thousand hard-working men and their families under my wing. I am travelling to the north, where we shall build a vast monument to the Communion of the Gods. I do not care how many generations of sons it will take to achieve this feat.[[footnote]]It took 400 solar cycles for them to complete their kingdom, though I suspect the eventual unification with the Sumerians accelerated the process considerably. — J.V.[[/footnote]] We shall not be fools as you are, brother. We shall bask in Thoth's wisdom. Our very lifeblood shall be gold when we are done.
 
-//Know this: The Conciliator will bring us greatness when he sees what we have built in his name. Khemennu will be for the worthy, and we will bear Thoth's wisdom upon our shoulders. Where you have failed.//
-[[>]]
-— Zaid, He Who Shines like the Crescent Moon, and Keeper of the Book[[footnote]]Despite his utmost loyalty to the Conciliator of the Crescent Moon, he is not the rightful owner of the so-called Book. — J.V.[[/footnote]]
-[[/>]]
-----
-//The peoples of Khemennu were granted entry to paradise when the Lord of Khemennu bestowed it upon them, a gift to his loyal subjects. He lifted them from this world, granting them the wings on which they could fly into the dark night, soaring between the stars.//
-
-//The Great Daemon from below swims in the depths of the inky void between the stars and looks upon humanity with an insatiable hunger and at the Lord with incomprehensible rage. The Daemon has hungered for the Lord's blood for many years now. The Lord helps us mortals, rather than allowing us to stay in the savage blood-lusting pit where Akheilos — may he remain in the depths — ruled.//
-
-//With the gifted and loyal men elevated from Khemennu, Akheilos and his savage maw descend upon the many remaining. Brawls in the streets emerged between the unworthy, eventually growing into vicious feuds. Men screamed into the night "Why hast the Lord forsaken us? Are we not worthy?" while bathed in the crimson of their family. It was truly a sight to behold: The nemesis reaping from the actions of the Lord.//
-
-//Khemennu is no more. With Zaid ascended, I am now the Keeper of the Book. Perhaps I was not talented enough to join them in paradise. I read the scripts, and I fear for what is to come. Akheilos grows ever stronger, yet the Lord has weakened himself. If Khemennu took many generations of Thoth's guidance to build but was lost in days without it, I fear for all of life itself. I pray to Thoth that he saves us from Akheilos before it is too late.//
+Know this: The Conciliator will bring us greatness when He sees what we have built in his name. Khemennu will be for the worthy, and we shall bear Thoth's wisdom upon our shoulders. Where you have failed.
+[[/div]]
 
 [[>]]
-— Amennekht, The Pale Reflection of the Midnight Moon, and Keeper of the Book
+— Zaid,
+He Who Shines Like the Crescent Moon,
+Keeper of the Book[[footnote]]Despite his utmost loyalty to the Conciliator of the Crescent Moon, he is not the rightful owner of the so-called Book. — J.V.[[/footnote]]
 [[/>]]
 ----
-First contact with this pluripotent entity[[footnote]]Sacred Djehuti* — J.V.[[/footnote]] was dated back to 2018/05/11, when Project Millard (an observation satellite dedicated to protecting Earth from manipulators of the Hume field) began to transmit the presence of a vast Avian anomaly. Immediately after, the klaxons rang loud and clear, but we didn't know what was happening. When the news hit, half of America was infected.
+[[div class="indented" style="font-style: italic;"]]
+The peoples of Khemennu were granted entry to paradise when the Lord of Khemennu bestowed it upon them -- a gift to his loyal subjects. He lifted them from this world, granting them the wings on which they could fly into the night, soaring among the stars.
 
-We traced the meme back to [[[SCP-3632|a Foundation-launched probe]]] that discovered this "Brot Kruma". The records regarding the loss of this resource are vague at best. Though, there is one thing I know for certain: The Avian meme complex was released right after we discovered that planet, and Thoth used one of our own contained anomalies to disseminate it.
+The Great Daemon from below swims in the depths of the inky void between stars. He looks upon humanity with an insatiable hunger, and at the Lord with incomprehensible rage. The Daemon has hungered for the Lord's blood for many years now. The Lord serves us mortals, rather than allowing us to stay in the savage blood-lusting pit where Akheilos -- may he remain in the depths -- ruled.
 
-I don't know how Thoth stays one step ahead of us (quite frankly it's giving the Avian Division a headache). We believe he continues to spread his abnormalities across our realm of influence. I don't know what mankind did to anger Thoth, but to turn their entire species into bird-brained freaks is truly an injustice.[[footnote]]Says the bird. -G.W.[[/footnote]] The truth is that we can no longer save humanity. We will expend our resources to destroy Thoth. Everything else is secondary.
+With the gifted and loyal men elevated from Khemennu, Akheilos and his savage maw descend upon the many remaining. Brawls in the streets emerge among the unworthy, eventually growing into vicious feuds. Men scream into the night, "Why hast the Lord forsaken us? Are we not worthy?" while bathed in the crimson of their family. It is a truly remarkable sight: The nemesis reaping from the actions of the Lord.
+
+Khemennu is no more. With Zaid ascended, I am now the Keeper of the Book. Perhaps I was not talented enough to join them in paradise. I read the scripts now, and I fear what is to come. Akheilos grows ever stronger, yet the Lord has weakened himself. If Khemennu took many generations of Thoth's guidance to build, but days without it to lose, I fear for all life itself.
+
+I pray that Thoth saves us from Akheilos before it is too late.
+[[/div]]
+
 [[>]]
-— Keshrayuth, Mobile Task Force Eta-4 ("Begone Thoth") lead, Avian Division[[footnote]]I never thought I'd see the day the Serpent's Hand would request our help. Well, the Avian Division needs all the support it can get, so I suppose we'll take you up on your offer. I imagine the Library remains off-limits? ~Keshrayuth[[/footnote]][[footnote]]To the Jailors? Always. More so now that the Ways have closed. How about we discuss your access to the Library once we've been rid of Djehuti's shackles? I have much to tell and so little time to tell it. — J.V.[[/footnote]]
+— Amennekht,
+The Pale Reflection of the Midnight Moon,
+Keeper of the Book
 [[/>]]
 ----
-Thoth's only enemy is Akheilos, son of the Mistaken Beast.[[footnote]]Are you being serious? ~Keshrayuth[[/footnote]] Yes, a god is not truly powerful if it can only reckon with mortals. Now, I do not claim to be allied with this Sacred Thoth, nor am I fascinated by his alleged ploys, but there is nothing more satisfying to me than seeing him destroy Akheilos, the brute that consumed my mighty people.
+[[div class="indented"]]
+First contact with this pluripotent entity[[footnote]]Sacred Djehuti* — J.V.[[/footnote]] dates back to May 11th, 2018, when Project Milliard (an observation satellite dedicated to protecting Earth from manipulators of the Hume field) transmitted the presence of a vast Avian anomaly. Immediately after, the klaxons rang loud and clear, but we couldn't grasp what was happening. When the news hit, half of America was infected.
 
-[[[SPC-507|Akheilos, the Herald of The Beast]]], seeks to end all of humanity. He is an apex predator, sitting at the very top of the tree of life: It is said that his vast maw may even consume lesser gods. He gnaws away at the fabric of reality, tending to the grounds for his master's arrival (of course, the so-called "Boxers" are working at the opposite end, trying to prevent his arrival at all costs). Akheilos seeks to end human life for this purpose: To allow his father back into the world. He is the one that confronts reality in the most voracious manner as he swims through the Void.
+We traced the meme back to [[[SCP-3632|the Foundation-launched probe]]] that discovered this "Brot Kruma". The records on the loss of this resource are vague at best. Though, there is one thing I know for certain: The Avian meme complex was released right after we discovered that planet, and Thoth exploited one of our own contained anomalies to disseminate it.
 
-The Boxers you have made allegiance with? They are the ones that created this "Avian meme complex" in the first place.[[footnote]]//What?!// ~Keshrayuth[[/footnote]][[footnote]]Ever since this revelation, our newest ally -- Keshrayuth -- has been squawking like a bird of prey. It appears she wears some sort of translation device that came dislodged? I'll see if I can contact her associates to get this device working again so that we can continue our planning against Djehuti. — J.V.[[/footnote]] A funny reflection of the aeons-old Avian-Selachian war, that!
+I don't know how Thoth stays one step ahead of us (frankly it's giving the Avian Division a headache). We believe he continues to spread his abnormalities across our realm of influence. I don't know what humankind did to anger Thoth, but to turn their entire species into bird-brained freaks is truly an injustice.[[footnote]]Says the bird. -G.W.[[/footnote]] The truth is, we can no longer save humanity. We must expend our resources to destroy Thoth. Everything else is secondary.
+[[/div]]
+
+[[>]]
+— Keshrayuth,
+Mobile Task Force η-4 ("Begone Thoth") Leader,
+Foundation Avian Division[[footnote]]I never thought I'd see the day the Serpent's Hand would request our help. Well, the Avian Division needs all the support it can get, so I suppose we'll take you up on your offer. I imagine the Library remains off-limits? ~Keshrayuth[[/footnote]]^^,@< >@^^[[footnote]]To the Jailors? Always. More so now that our Ways have closed. How about we discuss your access to the Library when we've been rid of Djehuti's shackles? I have much to tell and so little time to tell it. — J.V.[[/footnote]]
+[[/>]]
+----
+[[div class="indented"]]
+Thoth's only enemy is Akheilos, son of the Mistaken Beast.[[footnote]]Are you being serious? ~Keshrayuth[[/footnote]] Indeed, a god is not truly supreme if it can only reckon with mortals. Now, I do not claim allegiance to this Sacred Thoth, nor am I fascinated by his alleged ploys. But there is nothing more gratifying to me than seeing him destroy Akheilos, the brute that consumed my mighty people.
+
+[[[SPC-507|Akheilos, Herald of The Beast]]], wishes to end all of humanity. He is an apex predator, sitting atop the tree of life. It is said that his vast maw may even consume lesser gods. He gnaws away at the fabric of reality, tending to the grounds for his master's arrival. (Of course, the so-called "Boxers" are working at the opposite end, trying to prevent his arrival at all costs). Akheilos seeks to extinguish human life for this purpose: To allow his father back into the world. He is the one that confronts reality in the most voracious manner as he swims through the Void.
+
+The Boxers you have allied with? //They// are the fools who created this "Avian meme complex" in the first place.[[footnote]]//What?!// ~Keshrayuth[[/footnote]]^^,@< >@^^[[footnote]]Since this revelation, our newest ally -- Keshrayuth -- has been squawking like a bird of prey. It appears she wears some kind of translation device that came dislodged? I'll see if I can contact her associates to get this device working again, so that we can continue our planning against Djehuti. — J.V.[[/footnote]] A funny reflection of the aeons-old Avian–Selachian war, that!
+[[/div]]
+
 [[>]]
 — G.W.
 [[/>]]
 ----
-Am d'éclair that Thothy-kins, Big Scraw of Lettuce-Phallus, make-make excellenté excelsior thousandfold. He pour ring happy juice in loose beaks, it true. Cack, as wing flops make clap! On this day-sky, we is all connected for the //Big// Big Migration, so it goes. Absquatulations!
+[[div class="indented"]]
+Am d'éclair Thothy-kins, Big Scraw of Lettuce-Phallus, to Makemake excellenté excelsior thousandfolds! Señor Chewtee secretes happy juice into loosey-goose beaks, it true. Cack! A swingflop makes claps! On this day-sky, we all concatenate for the //Big// Big Migration, so it goes. Absquatulations!
+[[/div]]
+
 [[>]]
-— [[[SCP-2337|Herr Doktor Spankoflex]]][[footnote]]I think Herr Doktor Spanko should always feel welcome in the Library. —Tilda Moose[[/footnote]]
+— [[[SCP-2337|Herr Doktor Spankoflex]]][[footnote]]I think Herr Doktor Spanko should always feel welcome in the Library. Provided, of course, that we can find a Librarian willing to tame that voice of his. —Tilda Moose[[/footnote]]
 [[/>]]
 ----
-Who is "Moon God"? I know one named "Moon". I call her "Moon Moon", she is very silly. [[[*http://scp-wiki.wdfiles.com/local--files/the-sacred-djehuti/moon-moon.jpg|Look at her go!]]]
+[[div class="indented"]]
+Who is "Moon God"? I know one named "Moon". I call her "Moon Moon". She is very silly. [[[*http://scp-wiki.wdfiles.com/local--files/the-sacred-djehuti/moon-moon.jpg|Look at her go!]]]
+[[/div]]
+
 [[>]]
 ~ [[[SCP-2547|Coyote]]]
 [[/>]]
 [[/div]]
 
-[[div style="border: solid 1px #112211; background: #EEF6EE; padding: 1.22em; margin-bottom: .183em;"]]
-[[=]]
-**Doubt**
-[[/=]]
+[[div class="section"]]
+= **Doubt**
 
-The Ancient Ones, themselves, have seldom seen Djehuti in the many centuries that have passed since he disappeared into the ethereal plane. He no longer gathers with the Communion of Gods, meaning I cannot contact him directly. All the detail on Djehuti has been relayed to me from the other members of the Communion. While I trust the Ancient Ones to be truthful, I assume others will not. — J.V. 
+[[div class="indented"]]
+The Ancient Ones, themselves, have seldom seen Djehuti in the many centuries that have passed since he disappeared into the ethereal plane. He no longer gathers with the Communion of Gods, meaning I cannot contact him directly. All detail on Djehuti has been relayed to me from the other members of the Communion. Though I trust the Ancient Ones to be truthful, I assume others will not. — J.V.
 
-So, not only is most of the information gathered from one unreliable source, but he also says that his own sources are also unreliable? Can you prove that you have contact with these 'Ancient Ones', that you call them? Else, all this information could just as well be the musings on the divine by a raving lunatic. -G.W.
+So, not only is most of the information gathered from one unreliable source, but he also says his own sources are unreliable? Can you even prove you have contact with these 'Ancient Ones', that you call them? Else, all this information could just as well be musings on the divine by a raving lunatic. -G.W.
 
-This thing working again? Oh, wonderful. Okay. "Grey Wanderer" — as the "Boxers" call you — the Foundation has come to the conclusion that this entity does exist beyond a reasonable doubt. While we doubt J.V.'s description of the entity's motivation, his threat is unmistakable. You make a grave mistake ignoring this fact, and the Avian Division will try our hardest to rectify this, mark my words. ~Keshrayuth
-
-Empty threats by the clumsy, flopping wings of a bird brain. -G.W.
+This thing working again? Oh, wonderful. Okay. "Grey Wanderer" -- as the "Boxers" call you -- the Foundation has concluded that this entity //does exist// beyond a reasonable doubt. Though we are skeptical of J.V.'s description of his motivation, his threat is unmistakable. You make a grave mistake rejecting this fact. And the Avian Division will try our hardest to rectify it. ~Keshrayuth
 [[/div]]
 
+Empty threats by the clumsy, flopping wings of a birdbrain. -G.W.
+[[/div]]
 [[/div]]
 
 [[footnoteblock title=""]]
 ~~~~
 [[/div]]
 ----
-[[div class="team-bird-nav-sh"]]
-= << [[[SCP-3570|EE-3570]]] | [[size 120%]][[[bird|TEAM BIRD]]][[/size]] | [[[SCP-3632]]] >>
+[[div class="series-nav"]]
+<< [[[SCP-3570|EE-3570]]] | [[size 120%]][[[bird|TEAM BIRD]]][[/size]] | [[[SCP-3632]]] >>
 [[/div]]
