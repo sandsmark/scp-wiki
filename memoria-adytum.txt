@@ -1,0 +1,165 @@
+title:In Memoria, Adytum
+[[include :scp-wiki:theme:magnus-web-format]]
+[[include :scp-wiki:theme:black-highlighter-theme]]
+[[include :scp-wiki:component:collapsible-sidebar]]
+
+
+
+[[module css]]
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
+#page-title{display:none}
+
+#header {
+    background-image: url(http://firedawnfolder.wikidot.com/local--files/memoria-adytum/TitleLogo.png)
+}
+
+
+
+@supports(--css:variables) {
+
+    :root {
+     --header-title: "In Memoria, Adytum";
+     --header-subtitle: "Echoes of Kalmaktama.";
+     --header-font: 'Nanum Brush Script', cursive;
+     --page-title: "In Memoria, Adytum";
+     --background-gradient-distance:65rem; !important
+
+    }
+}
+
+
+    @supports (background-blend-mode: screen) {
+    
+     #extrac-div-1 {
+     width: 100%;
+     height: var(--header-height-on-desktop);
+     position: absolute;
+     top: 0;
+     left: 0;
+     background-image: var(--gradient-header), url(http://firedawnfolder.wikidot.com/local--files/memoria-adytum/background.jpg);
+     background-size: var(--header-background-image-size) 80%, 80%, 80%;
+     background-blend-mode: normal;
+     pointer-events: none; 
+     }
+
+     div#extra-div-1 {
+     width: 100%;
+     height: calc(100% - var(--final-header-height-on-desktop));
+     position: absolute;
+     top: calc(var(--final-header-height-on-desktop));
+     left: 0;
+     z-index: -1;
+     background-color: rgba(222, 222, 222, 1);
+     background-color: rgba(var(--swatch-background), 1);
+     mask: var(--gradient-background);
+     -webkit-mask: var(--gradient-background);
+     background-image: url(http://firedawnfolder.wikidot.com/local--files/memoria-adytum/background.jpg), var(--gradient-background);
+     background-size: 100%, 80% var(--background-gradient-distance);
+     background-blend-mode: difference;
+     background-repeat: repeat, repeat-x;
+     pointer-events: none;
+     }
+
+    }
+
+[[/module]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[=]]
+[[image http://firedawnfolder.wikidot.com/local--files/memoria-adytum/memoriabanner.jpg]]
+[[span style="font-family: 'Nanum Brush Script', cursive; color: #390000;font-size: 450%;"]]**In Memoria, Adytum**[[/span]]
+[[/=]]
+
+[[div style="border:solid 1px #000000; color:#000000; border-radius: 10px; background:#c9c9c9; padding:5px; margin-bottom: 10px; padding:10px"]]
+//...and Ion stood amidst the smouldering ruin that was the gateway to the city of Kythera. Once more in the guise of a man, humbled before the ravages wrought in His name. He looked about Him and saw the suffering of those He once wished freed and realized that it was by His hand that their great works had been laid low.//
+
+//He looked upon them and wept.//
+[[>]]
+- The Book of the Fall, 13:5; The Solomonari //Valkzaron//
+[[/>]]
+[[/div]]
+
++++ Prologue: [[span style="font-family: 'Nanum Brush Script', cursive; color: #390000; font-size: 120%"]]//In Principio Erat Verbum//[[/span]]
+[[size 80%]]Foundation Threat Awareness: @@[ | | | | ]@@[[/size]] 
+* [http://scp-wiki.wikidot.com/scp-2095 SCP-2095: The Seige of Gyaros] //by Metaphysician//
+* [http://www.scp-wiki.net/scp-2480 SCP-2480: An Unfinished Ritual] //by Metaphysician//
+* [http://scp-wiki.wikidot.com/mother-who-demands-ones-toes Karcist Halyna Ieva, or The Mother Who Demands One's Toes] //by naepicfael & TheMightyMcB//
+* [http://scp-wiki.wikidot.com/lovataar-throne Of Lovataar and the Throne] //by MalyceGraves//
+
+-----
++++ Act One: [[span style="font-family: 'Nanum Brush Script', cursive; color: #390000; font-size: 120%"]]//Et Ecce Equus Pallidus//[[/span]]
+[[size 80%]]Foundation Threat Awareness: @@[@@##390000|█## | | | @@]@@[[/size]] 
+
++++++ //Principalius// - [[size 75%]]The Main Arc[[/size]]
+* Morbus - [http://scp-wiki.wikidot.com/scp-3862 SCP-3862: The Gentleman Karcist] //by MalyceGraves//
+* Bellum - [http://www.scp-wiki.net/another-soul-joins-the-halkost Another Soul Joins the Halkost] //by TheMightyMcB// 
+* Famis - [http://scp-wiki.wikidot.com/scp-4786 SCP-4786: The Mouth that Hungers] //by MalyceGraves//
+* Morte - [http://www.scp-wiki.net/anthropological-report-darkwater Case Study 03: The Darkwater Lodge] //by MalyceGraves//
+
+* [http://www.scp-wiki.net/et-ecce Et Ecce Equus Pallidus] //by MalyceGraves// 
+
++++++ //Assistentes// - [[size 75%]]Supplemental Stories[[/size]]
+* [http://www.scp-wiki.net/scp-4476 SCP-4476: Le Famille Natau] //by MalyceGraves//
+* [http://www.scp-wiki.net/scp-2408 SCP-2408: Orok's Fall] //by Metaphysician//
+* [http://scp-wiki.wikidot.com/scp-4197 SCP-4197: Hollow] //by Dyslexion//
+* [http://scp-wiki.wikidot.com/lance-and-bernard-s-culinary-capers Lance and Bernard's Culinary Capers] //by Dyslexion//
+
++++++ //Finis// - [[size 75%]]The Final Scene[[/size]]
+* Imperator Mundi - [http://scp-wiki.wikidot.com/scp-3911 SCP-3911: The Thorn of God] //by MalyceGraves//
+
+-----
++++ Act Two: [[span style="font-family: 'Nanum Brush Script', cursive; color: #390000; font-size: 120%;"]]//Exierunt ut Vinceret//[[/span]]
+[[size 80%]]Foundation Threat Awareness: @@[@@##390000|██## | | @@]@@[[/size]] 
+
++++++ //Principalius// - [[size 75%]]The Main Arc[[/size]]
+* Morbus - [http://scp-wiki.wikidot.com/scp-5862 SCP-5862: Faulkner's Wake] //by MalyceGraves & cybersqyd//
+
++++++ //Assistentes// - [[size 75%]]Supplemental Stories[[/size]]
+* [http://www.scp-wiki.net/scp-5207 SCP-5207: Fit for the King] //by MalyceGraves & DrAkimoto//
+* [http://www.scp-wiki.net/scp-5407 SCP-5407: "нектар"] //by DrAkimoto//
+* [http://scp-wiki.wikidot.com/regarding-scp-5862 Re: 5862 (Supplemental)] //by MalyceGraves & cybersqyd//
+
++++++ //Finis// - [[size 75%]]The Final Scene[[/size]]
+
+
+
+-----
++++ Act Three: [[span style="font-family: 'Nanum Brush Script', cursive; color: #390000; font-size: 120%;"]]//In Conquestum Mundi//[[/span]]
+[[size 80%]]Foundation Threat Awareness: @@[@@##390000|███## | @@]@@[[/size]] 
+
++++++ //Principalius// - [[size 75%]]The Main Arc[[/size]]
+
+@@@@
+
++++++ //Assistentes// - [[size 75%]]Supplemental Stories[[/size]]
+
+@@@@
+
++++++ //Finis// - [[size 75%]]The Final Scene[[/size]]
+
+@@@@
+-----
++++ Act Four: [[span style="font-family: 'Nanum Brush Script', cursive; color: #390000; font-size: 120%;"]]//Et Mundum Incendio//[[/span]]
+[[size 80%]]Foundation Threat Awareness: @@[@@##390000|█████##@@]@@[[/size]] 
+
+
+
+[[collapsible show="+ Author Attributions"]]
+
+Current Authors:
+# [[*user MalyceGraves]] - {[http://www.scp-wiki.wikidot.com/malycegraves-author Author Page]}
+# [[*user DrAkimoto]] - {[http://www.scp-wiki.wikidot.com/drakimoto-s-author-page Author Page]}
+# [[*user TheMightyMcB]] - {[http://www.scp-wiki.wikidot.com/themightymcb-s-author-page Author Page]}
+# [[*user n_aepic_fael]] - {[http://www.scp-wiki.wikidot.com/he-who-cannot-stop-stealing Author Page]}
+# [[*user dyslexion]] - {[http://www.scp-wiki.wikidot.com/dyslexion-author-page Author Page]}
+# [[*user cybersqyd]] - {[http://www.scp-wiki.wikidot.com/cybersqyd Author Page]}
+
+
+None of this would be possible without the incredible work done by [[*user metaphysician]] - {[http://www.scp-wiki.wikidot.com/metaphysician Author Page]}
+
+
+[[/collapsible]]
