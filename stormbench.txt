@@ -66,9 +66,9 @@ fields:
 
 ----
 
-[[collapsible show="+ Exquisite Corpse"]]
-[[module ListPages order="rating desc" category="." tags="+exquisite-corpse2020 -contest" perPage="60" separate="no" prependLine="||~ Place ||~ Title ||~ Poster ||~ Rating ||~ Upvotes/Downvotes ||~ Comments ||"]]
-|| #%%index%% || %%title_linked%% || %%created_by_linked%% || %%rating%% || +[[#expr (%%rating%%+((%%rating_votes%%-%%rating%%)/2))]], -[[#expr ((%%rating_votes%%-%%rating%%)/2)]] || %%comments%% ||
+[[collapsible show="+ Orphan Supplements"]]
+[[module ListPages tags="supplement" separate="no" parent="-" perPage="100" order="name"]]
+* [[[%%link%%/noredirect/true|%%title%%]]] by %%author%%
 [[/module]]
 [[/collapsible]]
 
