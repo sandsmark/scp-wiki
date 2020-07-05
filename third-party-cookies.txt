@@ -7,7 +7,7 @@ If you are unable to log on when using custom domains (e.g. {{scp-wiki.net}} or 
 
 If you have any questions, you can ask in {{[[[chat-guide|#site11]]]}}, our IRC channel for technical matters.
 
-[[collapsible show="+ show technical details" hide="- hide technical details"]]
+[[collapsible show="+ technical details" hide="- technical details"]]
 On February 10th, 2020, the Chromium project[[footnote]]The open source core of the popular proprietary browser Google Chrome.[[/footnote]] [https://www.chromium.org/updates/same-site announced that they would be enforcing the SameSite cookie change]. Instead of simply adding the flag "{{SameSite}}" to the cookie, it needs to be set as "{{SameSite=None}}" to allow the permissive cross-domain behavior Wikidot relies on.
 
 However, as the SCP Wiki is merely a tenant of Wikidot, and has no ability to modify its code, we are unable to adjust the way these cookies are issued to prevent this issue. Wikidot itself is not maintained and a fix for this is therefore extremely unlikely.
