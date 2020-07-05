@@ -11,6 +11,18 @@ title:The Crab Den
 [[module CountPages tags="mobile" prependLine="||~ mobile ||"]]
 || %%total%% ||
 [[/module]]
+[[module CountPages tags="+automaton +autonomous" prependLine="||~ automaton + autonomous ||"]]
+|| %%total%% ||
+[[/module]]
+[[module CountPages tags="+autonomous +mobile" prependLine="||~ autonomous + mobile ||"]]
+|| %%total%% ||
+[[/module]]
+[[module CountPages tags="+automaton +autonomous +mobile" prependLine="||~ automaton + autonomous + mobile ||"]]
+|| %%total%% ||
+[[/module]]
+
+------
+------
 
 [[module CSS]]
 @import url("/nagiros/code/1");
