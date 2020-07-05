@@ -1,116 +1,20 @@
 title:Fixing logins on Chrome
-parent:guide-hub
 [[>]]
 [[module rate]]
 [[/>]]
 
-[[module css]]
-.collapsible-block {
-    max-width: 100%;
-    text-align: center;
-    border-color: black;
-    border: solid 1px black;
-    background: #f5f5f5;
-    margin-bottom: 1em;
-}
-
-.collapsible-block-content p {
-    text-align: left;
-    margin: 0.75em 0.5em auto 0.5em;
-    padding: auto 0.75em auto 0.75em;
-}
-
-.mobile img,
-.desktop img {
-    border: solid 1px #ccc;
-}
-
-.mobile img {
-    max-height: 50vh;
-}
-[[/module]]
-
-Google recently added a change for Chrome/Chromium which blocks all third-party cookies by default. The aim is to minimize user tracking across different sites, which is good. Unfortunately because Wikidot only reports cookies (used to determine if a user is signed in) for sites ending in "{{wikidot.com}}" this means wikis with custom domains (e.g. {{scp-wiki.net}} and {{kontainer.djkakt.us}}) don't recognize that you're logged in.
-
-**The easiest workaround is to use http://scp-wiki.wikidot.com/** instead of http://www.scp-wiki.net/.
-
-However it is possible in some cases to adjust Chrome settings so we can use the custom URLs and be logged in on Wikidot. If this does not work, the only workaround is to use the {{*.wikidot.com}} addresses as mentioned above.
-
-[[collapsible show="Desktop Instructions" hide="Desktop Instructions" hideLocation="both"]]
-[[div class="desktop"]]
-
-Sign-in like you normally do. If the cookies are being blocked you won't appear as signed in.
-
-Go to your brower's settings.
-
-[[=image desktop-1-menu.png]]
-
-Then click on "Privacy and security".
-
-[[=image desktop-2-settings.png]]
-
-Then "Site Settings".
-
-[[=image desktop-3-sitesettings.png]]
-
-Finally, "Cookies and site data".
-
-[[=image desktop-4-cookies.png]]
-
-Now that we're in the cookies settings page, we can add exceptions. We need to allow both {{wikidot.com}} and {{www.wikidot.com}} to issue cookies.
-
-[[=image desktop-5-addcookies.png]]
-[[=image desktop-6-wikidot.png]]
-[[=image desktop-6-www.png]]
-
-Hit "Done" and refresh the page. You should now be recognized as logged in! If not, use the http://scp-wiki.wikidot.com/ workaround:
-
-[[=image wikidot-com-workaround.png]]
-[[/div]]
-[[/collapsible]]
-
-[[collapsible show="Mobile Instructions" hide="Mobile Instructions" hideLocation="both"]]
-[[div class="mobile"]]
-
-Sign-in like you normally do. If the cookies are being blocked you won't appear as signed in.
-
-Open up the settings from the sidebar menu.
-
-[[=image mobile-1.png]]
-
-From there scroll down and open "Site settings".
-
-[[=image mobile-2.png]]
-
-Then tap on "Cookies".
-
-[[=image mobile-3.png]]
-
-First, ensure that cookies are enabled.
-
-Then tap to add site exceptions for Wikidot. We need to allow both {{wikidot.com}} and {{www.wikidot.com}} to issue cookies.
-
-[[=image mobile-4.png]]
-
-Once they are both present, tap each one to enter its site-specific settings.
-
-[[=image mobile-5.png]]
-
-Set cookies to "Allow", then go back once to return to the menu.
-
-[[=image mobile-6.png]]
-
-When properly set, the settings page should appear as below.
-
-Note: the presence or absence of other sites is irrelevant.
-
-[[=image mobile-7.png]]
-
-Exit from the settings menu and refresh the page. You should now be recognized as logged in! If not, use the http://scp-wiki.wikidot.com/ workaround.
-
-@@@@
-@@@@
-[[/div]]
-[[/collapsible]]
+If you are unable to log on when using custom domains (e.g. {{scp-wiki.net}} or {{kontainer.djkakt.us}}), you need to use the equivalent {{*.wikidot.com}} link. **In short, use http://scp-wiki.wikidot.com/ to access the SCP Wiki.**
 
 If you have any questions, you can ask in {{[[[chat-guide|#site11]]]}}, our IRC channel for technical matters.
+
+[[collapsible show="+ show technical details" hide="- hide technical details]]
+On February 10th, 2020, the Chromium project[[footnote]]The open source core of the popular proprietary browser Google Chrome.[[/footnote]] [https://www.chromium.org/updates/same-site announced that they would be enforcing the SameSite cookie flag]. Instead of simply adding the flag "{{SameSite}}" to the cookie, it needs to be set as "{{SameSite=None}}" to allow the permissive cross-domain behavior Wikidot relies on.
+
+However, as the SCP Wiki is merely a tenant of Wikidot, and has no ability to modify its code, we are unable to adjust the way these cookies are issued to prevent this issue. Wikidot itself is not maintained and a fix for this is therefore extremely unlikely.
+
+The only workaround is to either not use a browser version that enforces this change, or stay on the same domain (e.g. use the {{*.wikidot.com}} link).
+
+See also {{[https://scuttle.atlassian.net/browse/WDBUGS-9 WDBUGS-9]}}.
+
+[[footnoteblock]]
+[[/collapsible]]
