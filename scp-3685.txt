@@ -1,0 +1,386 @@
+title:SCP-3685
+[[include :scp-wiki:component:black-highlighter-theme-dev]]
+[[include :scp-wiki:component:info-ayers
+|lang=en
+|page=component:info-ayers
+|authorPage=http://scpdsandbox.wikidot.com/monkatraz-hub
+|comments= **Wacky Reactor Fun Times.** 
+@@ @@
+I feel that the most interesting places are those with //legacy//. Hanford, Chernobyl - they have lasting legacies coming from their disastrous effects, significant costs, long history, etc.  And, I love getting deep down and technical, something that the SCP Wiki could do but doesn't very often. So, I wrote this! 
+@@ @@
+Well, I rewrote it. The original was a tad sparse, the exploration log was boring, and was really screwy with some of sentence structure and the like. I'm surprised that it got ~30 upvotes. I've deleted it (rather than replacing it) because this version is just so significantly different (and better). I hope you enjoy it. 
+----
+**Image Credits:** 
+[https://commons.wikimedia.org/wiki/File:HD.30.529_(10444575983).jpg s50wide.jpg] 
+[https://commons.wikimedia.org/wiki/File:Graphite_Reactor_Loading_Face_1943_(43444054565).jpg reactorsmall.jpg] 
+[https://commons.wikimedia.org/wiki/File:U.S._Department_of_Energy_-_Science_-_167_015_001_(14167452868).jpg pin.jpg] 
+[https://commons.wikimedia.org/wiki/File:Detector_arrays_of_a_Pegasus_satellite.jpg panels.jpg] 
+[https://commons.wikimedia.org/wiki/File:U.S._Department_of_Energy_-_Science_-_271_012_005_(9789000694).jpg newarray.jpg] 
+----
+**Critters:** [[*user MagnumMacKivler]], [[*user Almarduk]], [[*user JackalRelated]], Opalide (Dr. Cimmerian Discord), Ophilia Volpe (Dr. Cimmerian Discord)
+**Writing Help:** [[*user MagnumMacKivler]] (Helped with fact-checking, some of the names for the technical containment stuff, along with other minor technical details)
+**Obvious Inspiration, Presentation Ideas, etc:** [[*user djkaktus]] (Did not directly help, but his form of presentation is exactly what I have always shot for) 
+@@ @@
+]]
+[[>]]
+[[module Rate]]
+[[/>]]
+[[module CSS]]
+/* Hide translation block in info-box. */
+.translation_block{
+display:none;}
+
+/* Taken from Peppo's image block edit, I made slight changes only. */
+
+/* Fix footnote superscript flying away: */
+.footnoteref, #page-content > sup {
+    top: -0.25em;
+}
+
+/* Visually centers image block */
+.scp-image-block.block-right {
+    margin: 0em 0em 1em 2em;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .scp-image-block.block-right{
+        float: none;
+        /* Makes the image full width on mobile, hopefully. */
+        min-width: 100%;
+        margin: 10px auto;
+    }
+}
+[[/module]]
+[[include :scp-wiki:component:anomaly-class-bar-source
+|item-number= 3685
+|clearance= 3
+|container-class= euclid
+|secondary-class= 
+|disruption-class= ekhi
+|risk-class= danger
+]]
+----
+[[include component:image-block name=s50wide.jpg|align=center|width=700px|caption=UMZ-1 reactor complex prior to its meltdown. SCP-3685 is the largest building on the right of the photograph.]]
+----
+[[include component:image-block name=reactorsmall.jpg|align=right|width=300px|caption=UMZ-1 reactor housing prior to meltdown.]]
+
+**Special Containment Procedures:** 
+The 2 kilometer exclusion zone surrounding SCP-3685 has been acquired and is now being maintained by Foundation security personnel. The entirety of this zone's perimeter has been fenced, and the only official entrance is located on the western edge of the zone. Persons without proper Foundation credentials are not to be allowed within the exclusion zone under any circumstances.
+
+Disinformation is to be proliferated claiming that the complex containing SCP-3685 is an extremely hazardous chemical and nuclear weapons development site. Further disinformation is to be implanted into historical institutions about the factual personnel and outcomes of the //Uranprojekt//. Any historical evidence for the //Uranprojekt// constructing anything beyond simple reactor piles is to be suppressed.
+
+The area surrounding SCP-3685 is affected by significant radioactive contamination. Personnel and equipment present within the zone are to be subjected to regular screening. If equipment cannot be decontaminated, it is to be buried within the nuclear waste repository present on-site. Personnel are to be cycled out if they exceed radioactivity exposure limits.
+
+Primary and secondary containment of the SCP-3685 spacetime anomaly is currently being maintained by equipment not produced by the Foundation. Primary and secondary containment is being managed by an //Uranprojekt// containment devices. The location of the primary containment device is unknown. Secondary containment is being managed by a series of stabilization panels installed in the perimeter of the SCP-3685 structure. It is unknown if or when any of the containment equipment will fail.
+
+**Update - 1962:** [[size 95%]]Foundation personnel are now strictly prohibited from entering SCP-3685. Personnel that unexpectedly emerge from SCP-3685 are to be quarantined and treated for psychological trauma and acute radiation syndrome.[[/size]]
+
+**Update - 1987:** [[size 95%]]The Foundation is preparing to augment SCP-3685 containment through additional containment equipment. See //Addendum 3685.2//.[[/size]]
+
+**Description:**
+SCP-3685 refers to a structure within the //Uranmaschinezüchter-1//[[footnote]]Translation: //Uranium-Machine-Breeder/Synthesizer//[[/footnote]] reactor complex, located in the German province of Saxony. SCP-3685 is the largest facility belonging to the UMZ-1 complex. Its interior suffers from a severe entangled spacetime anomaly. The outside facilities belonging to the UMZ-1 complex are non-anomalous, but are nevertheless hazardous due to the unsafe levels of radioactivity present. Foundation clean-up crews have temporarily decontaminated and cleared sections of the complex for human usage.[[footnote]]In order to obscure the level of Foundation personnel that may be present within the complex, the complex's dormitories have been remediated and converted without affecting their outward appearance. They are suitably radiation shielded and have full amenities. A marked path has been made leading to the dorms from the main gate. Additionally, several multiple floor lab-spaces have been constructed into the large white silos previously used to contain cooling water. Underground paths from the dorms leading into these spaces have been constructed, so that the lab-spaces can be used covertly.[[/footnote]]
+
+The interior of SCP-3685 is a radioactive, spatially entangled, discontinuous non-euclidean space.  Consequently, a precise description of the internal architecture of SCP-3685 is not possible, as the internal space is being continuously transformed by spatial reorganization. However, the space can be vaguely described: The outer areas of SCP-3685 usually contain an interlocked series of miscellaneous control rooms, offices, and maintenance areas, and the inner area consistently contains the UMZ-1 reactor and its housing. All attempts to explore areas near the reactor have failed.
+
+Various hazards are present within SCP-3685 that complicate exploration. These hazards include:
+* Ionizing radiation. Lowest measured was 15 mSv/hr, highest was 30 Sv/hr[[footnote]]Without protection, this dose reaches the median lethal dose within only a few seconds.[[/footnote]]. Average is approximately 500 mSv/hr[[footnote]]Without protection, this dose reaches the median lethal dose within ~30 seconds.[[/footnote]].
+* Constant spatial restructuring, which may make the facility impossible to reasonably navigate.
+* The poor and unstable condition of the facility, which makes exploration precarious and difficult.
+* Abnormal and extreme gravitational effects. Within some regions, the gravitational field might: rapidly oscillate in intensity, reverse, increase in magnitude, use a differing gravitational constant (//G//)[[footnote]]Estimates show that during some gravitational events, the extreme gravitational constant would cause most objects of ordinary mass and density to become black holes. Any object compressed in this fashion would violently explode within a few seconds of it being returned to normal gravity due to Hawking radiation.[[/footnote]], or other anomalous effects. Objects introduced within these regions frequently become shredded or explosively atomized, while the SCP-3685 structure remains unaffected.
+* Spatial, temporal, or spatial-temporal loops.
+* Sudden dematerializations of non-temporally-linked entities (such as any introduced Foundation personnel or robotic units).
+
+The apparent magnitude of these hazards increases with proximity to the reactor. To demonstrate, during //Exploration 3685-12//, an autonomous drone, which was approximately 2-3 rooms away from the reactor, simultaneously experienced: a 0.54x gravitational field region,  3 discrete temporal loops, 12 interlocked spatial loops, and 1 spatial-temporal loop. Additionally, the drone had entirely disappeared and reappeared - twice. Contact with the unit was lost permanently when the drone gravitationally  imploded. The final transmitted gravimeter measurement showed a value for //G// approximately 10^^20^^ times stronger than would be normally expected.
+
+Scranton Reality Anchors have proven incapable of stabilizing the anomaly present within SCP-3685, having no apparent effects. Further,  [[[and-this-one-explains-humes|Kant Counters]]] frequently fail to output Hume level measurements within SCP-3685, seemingly caused by the Kant Counters failing to detect local reality. Some success with stabilization has been seen with the //PL362 Deployable Spatial Rectifier//[[footnote]]//Prometheus Labs Model 362 Deployable Spatial Rectifier (PL362-DSR)//[[/footnote]],  but the enormous magnitude of the spacetime anomaly prevents the small device from being practical enough for containment or exploration.
+
+**Origin:**
+The UMZ-1 complex was built by the covert Nazi German nuclear weapons program (//Uranprojekt//) under the administration of the //Reichsforschungsrat//[[footnote]]Translation: //Reich Research Council//[[/footnote]] during the spring of 1944, with direct authorization for its construction given from Hermann Göring. 
+
+Nazi Germany was attempting to construct a logistics and manufacturing chain capable of producing nuclear weapons, and after numerous setbacks resorted to alternative proposals submitted by various small research groups. UMZ-1 was the outcome of one of these proposals. Its primary purpose was inexpensive Plutonium-239 synthesis. Recovered //Uranprojekt// documentation states that UMZ-1 was capable of 'n-local folds allowing for synthesis of currently infeasible to manufacture elements and materials using only minuscule amounts of dense radioactive elements for catalytic reaction.' It is unknown if the UMZ-1 reactor was functionally capable of element synthesis prior to its meltdown, and it is currently not possible to validate this due to a lack of documentation and the present condition of the complex.
+
+During early 1945, the UMZ-1 reactor suffered a catastrophic meltdown. According to recovered //Uranprojekt// documentation, this caused an 'interlocked local space compression fracture', which is the //Uranprojekt's// explanation for SCP-3685's spacetime anomaly. Following the meltdown, the Nazi German authorities condemned the complex and formed a 2 kilometer exclusion zone around the complex, which is maintained to the present day by Foundation security.
+
+**Discovery and Acquisition:**
+UMZ-1's existence first became known to the Foundation after several //Uranprojekt// scientists defected in late 1944. Through contacts in the United States government, the Foundation was informed of UMZ-1's anomalous reactor. Accordingly, the Foundation aggressively pursued acquisition and containment.  Enforced seizure agreements were made with all of the Allied nations, except for the USSR. The USSR repeatedly refused to any agreements, stating that it would handle containment itself[[footnote]]It is commonly accepted among Foundation historians that the Soviets were seeking the complex and its personnel as a way of augmenting its nuclear weapons program.[[/footnote]]. Due to the progression of the war during 1945 and the location of the UMZ-1 complex, the Foundation was initially unsuccessful in acquiring SCP-3685, as it was captured by Soviet forces.
+
+During 1951 as part of //Operation FAIRBANKS//, Foundation acquisition teams successfully seized, acquired, terminated, or integrated all remaining personnel[[footnote]]Several //Uranprojekt// scientists were never found. Likely captured by the USSR as a consequence of //Operation Osoaviakhim//.[[/footnote]], equipment, documentation related to the //Uranprojekt//, and SCP-3685 itself from Soviet forces. During this time, Foundation tensions with the USSR increased to near complete hostility.
+
+[[collapsible show="+ Addendum 3685.1 Early Exploration Debrief" hide="- [CLOSE]"]]
+
+> [BEGIN LOG]
+> 
+> **Researcher Alger:** Recording started, Dr. Lorentz Alger is speaking, the date is: 1/6/1960. Debrief of Agent, uh, "Gamma". For the purposes of consistency and security he will continued to be called Gamma[[footnote]]The identity of personnel operating within the UMZ-1 complex was obfuscated as a precautionary measure against Eastern Bloc intelligence. At this point in history, the Foundation had a nigh-hostile relationship with both the GDR and the USSR, partially due to the seizure of the UMZ-1 complex.[[/footnote]]. //(Pauses)// Operation: Exploration SCP-3685-1, Agent Gamma only 1 of 3 who returned from this expedition. Let's start.
+> 
+> **Gamma:** Alright, uh, what do I start with?
+> 
+> //Researchers Note: It was clear that Gamma was anxious, even in our comfortable environment. He was noticeably fidgeting, glancing between his hands, me, and various points within the room.//
+> 
+> **Researcher Alger:** How about just start from the beginning?
+> 
+> **Gamma:** Um, okay. We were to go in and observe what the anomaly was, and then come back out. Maybe 10-20 minutes at most of study, that's it. We geared up in the closed-cycle radiation suits, got our Geiger counters, Kant counter, and went in. Oh - yeah. //(Pauses)// I was with █- I mean, Alpha and Beta. They are - were, both good and experienced agents.
+> 
+> **Researcher Alger:** Yes. It has been a major loss for all of us.
+> 
+> **Gamma:** Yeah, it has. //(Pauses)// Right, the first thing we noticed when we went in was that were on the completely wrong side of the facility. We came in on the north entrance, and we appeared in the room for the south entrance.
+> 
+> **Researcher Alger:** Pretty vicious spatial anomaly, already.
+> 
+> **Gamma:** Yeah, you're one to tell me - sorry. Uh, anyways, yes, immediately we could see the effects of the spatial anomaly. We also immediately heard our Geiger counters buzzing like chainsaws.
+> 
+> **Researcher Alger:** What was the reading?
+> 
+> **Gamma:** Couldn't tell, oscillated wildly. It was averaging pretty high. It //did not// fill us with confidence. I immediately hated this place. We discussed turning around, but it seemed just low enough for the suits lining to handle, so we hesitantly pressed on. We decided to stick to the edge of facility - more exits in case the spatial anomaly flared up. Which it did, because of course it did.
+> 
+> **Researcher Alger:** Hume reading?
+> 
+> **Gamma:** Oh yeah. We couldn't get one. Local reality detection failure. Alpha had the spare counter, and his did it too.
+> 
+> **Researcher Alger:** What did the facility look like? Condition, construction...?
+> 
+> **Gamma:** Right, observe and report. The facility was //obliterated.// Everything was covered in a layer of debris and dust. It was like you shook a building as hard as you possibly could without breaking it. We were in one room - dozens upon dozens of steel pipes were splayed downwards from the ceiling, looked almost organic. They were still dripping, you could hear metal popping sounds from inside of them. Pipes carried water, cooling water maybe. A pool of disgusting looking sludge formed in a pit filling most of the room. We decided to go around.
+> 
+> **Gamma:** Power was still running, I think? It was bizarre though, the power cabling was clearly destroyed, but the walls were humming audibly. We didn't notice it at first through the suits. //(Pauses)// Let's see, what else... ah, okay. The place wasn't... still. Occasionally, we could feel shaking and rumbling, like a distant explosion. The debris would shake and bits of broken glass and metal would fall from the ceiling, and we would hear the metallic groaning of the structure. I'm not sure what was causing the, - uh, quakes? It felt like it was coming from within deep inside.
+> 
+> **Researcher Alger:** Noted... back to the anomaly, did you get looped?
+> 
+> **Gamma:** Worse. Almost immediately, we got spatial-temporal looped. Anomaly is nasty in there, not just spatial. Technically, I - I should still be there, right now. You don't leave those easily - I got dragged out by sheer -
+> 
+> **Researcher Alger:** We'll get to that when we get to it. What happened in the loop?
+> 
+> **Gamma:** Right, sorry - okay, so we first noticed the loop when we came to a room we had already been in before. That wasn't too surprising, but what was immediately a sign was when we noticed the room wasn't absolutely demolished. Place looked a bit used, maybe - little unclean. We could hear 60 hertz humming, lights were on. Beta apparently heard voices coming from another room. We got kinda spooked at that point. Radiation was still surprisingly high - I think the eggheads in there didn't get the risks yet. Maybe it was the anomaly though, I don't know.
+> 
+> **Researcher Alger:** Any idea of the time period?
+> 
+> **Gamma:** I - do I look like I have any clue? I - damn, sorry. I wasn't sure of the time. Educated guess, maybe... late 1944? Facility obviously wasn't, you know, //absolutely obliterated// inside. But it wasn't new either - bit dirty. Time period would shift from room to room, so I can only really give an estimate. //(Pauses)// I remember going to a desk and trying to look at the stack of papers on it. I paused though - as soon as I got close, I noticed I couldn't... //perceive// it? It was blurry - like I was seeing every day that desk ever existed. I never interacted with a temporal this close, so it was new to me. I was too spooked to try to pick up any of the papers, I didn't want to interact with something so blatantly anomalous.
+> 
+> **Researcher Alger:** Probably a good call. Temporal anomalies always get confusing. What happened next?
+> 
+> **Gamma:** Well, honestly, at this point we weren't sure what to do. Backtracking clearly doesn't work in a place like this, and we were already suspicious that we just got looped. We decided we could only wander, looking for exits. Doesn't help we showed up on maintenance catwalks half the time - the elevation between areas was changing somehow, and the exits were only on the ground floor.
+> 
+> **Gamma:** We tried to avoid rooms with... people in them. They didn't notice us, and they uh... not sure how to describe them, really. //(Pauses)// Maybe like this - It's kinda like the picture of your dad when he was 20, but made manifest. Clearly, he is much older now... and yet here he is in front of you, young. //(Pauses)// Cognition in that place was totally screwed.
+> 
+> **Gamma:** We kept looping between the same dozen or so areas, noticed some patterns in the timeline. We knew we were in a loop. Whole group was real tense. It's pure luck to get out of those loops. //(Pause)// We went walked across a catwalk, we had passed it once before, but going the other direction. This time though, the room violently shifted around us - we fell from the catwalk as it collapsed, slammed onto the ground. We were fine, if a bit bruised, but by the time we recovered and stood up, made sure none of us were punctured, we noticed... the whole room had disintegrated. The //whole building// had disintegrated.
+> 
+> **Gamma:** We could feel strong wind buffeting against us. The sky was dusty, hazy, and I couldn't see vegetation for miles around. Everything was dead, quiet. Behind the brown haze, in the sky, there was a diffuse, dark, and giant sun[[footnote]]It was likely that this was the sun as a subgiant, a transitional stage of solar evolution just before red giants.[[/footnote]]. I could see how hot everything was, everything burned so long ago. I remember Alpha saying: "It's so horrifically beautiful." We were still, for a moment at least.
+> 
+> **Gamma:** I could see some sort of nebulous border between the "building" we were in and the outside. Like it was still there, but not. A real structure still stood though - we turned around and saw... something. It was... impossible to see. It was a vague collection of shapes, distorted beyond what is reasonable. It looked, stressed? Ready to explode, pop. It vibrated against whatever it was that held it together. Alpha thought it was the reactor. I don't know what it was.
+> 
+> **Researcher Alger:** ...Noted. It must've been a sight.
+> 
+> **Gamma:** It was. Then I blinked. And it was gone. Seemed we were back in about... nowish? Obliterated room. I looked over to where the team was, saw Beta was fine. Couldn't see Alpha, and me and Beta panicked, we starting calling his name and - then, I saw - //(Pauses)// I saw blood, pouring down. I looked up to its source - and, fuck me, it's coming back.
+> 
+> **Gamma:** //(Deep breath)// Alpha was smashed into wall - I saw his mask, it was cracked, I knew without hesitation he was dead, I think - he must've been too close to a wall, there was so much blood. There was rebar jutting from the walls, the place was rough. Viscera and blood was pouring from the holes in Alpha. //(Pauses)// Not to say I wasn't... processing what I was looking at. I - I... I took a moment, I think. I went up to Alpha, to grab his tag, I was shutting down, just doing what I was supposed to be doing automatically. Me and Beta were saying //nothing//, all you could hear was us breathing. //(Pauses)// until I didn't hear Beta's breathing, only my own. I turned around - I was just about to grab Alpha's tag. //(Pauses)// Something //got// me. Got me to my core.
+> 
+> **Researcher Alger:** Gamma, do we need to stop?
+> 
+> **Gamma:** No, I - I have to report. Beta wasn't there. All I could see was a... slithering crack. I looked down into the hole - I knew Beta was in there. It was beyond our perceptions - I didn't understand what I was witness to, it wasn't for me. That isn't where I go. You //need to stop this thing//, doctor - you have to - I heard rebar snapping and wet noises from behind me and -
+> 
+> //Researchers Note: Gamma was clearly distressed - I was debating stopping the debrief at this moment, but my curiosity and his determination made me hesitant.//
+> 
+> **Gamma:** I stumbled, I missed the crack - and I felt sick - something changed. I looked around, and I saw //spinning rings//, spinning faster than I could imagine, the cacophony of sound - //(Several deep breathes, a pause)// ...I saw two huge rings through holes in the wall, meshing and spinning. I still felt sick - but it was only stress. Otherwise, I felt //real// again, which is not sure is something I can even explain, like something you only discover when you no longer have it. I knew this wasn't where Alpha was, and this place was utterly antithetical to where I knew Beta was.
+> 
+> **Gamma:** I collected myself, trying to bring my senses into focus. I saw a huge hole in a barely intact wall, light shining brightly through it. I felt called to it, I thought I was about to escape. The moment that I began to move, the instant I had the thought, I heard alarms, followed by powerful and increasing electrical humming. It all seemed very familiar to me. I saw the rings glowing, and they were somehow spinning faster. I felt suddenly so alone and targeted by the people I thought were on my side, I felt rage. I closed my eyes, I tried to calm myself.
+> 
+> **Gamma:** ...and then I heard a klaxon, a very loud one. German - "Thirty seconds." I think I fell onto the ground finally, lost my bearings after so many of these events. I felt a rumble - electrical humming, massive relays clicking on. It only felt like five seconds to me, but then I heard it - a massive bang. Everything shook, shook apart as violently as it could ever shake. Screaming, "reactor failure, the pin, fire the damn pin", more alarms. I barely avoided chunks of steel falling from every which way. My insecurity and rage vanished, I thought I was about to die - then I...
+> 
+> **Gamma:** //(Pauses)// I heard a colossal, cold and sharp //snap//, and then the power relays kicked off. Everything stopped, it was quiet. I heard only distant voices and groaning metal. The room was dimly lit from amber emergency lighting. I sat still on the floor for a second, just trying to figure out what just happened - where I was, what to do.
+> 
+> **Gamma:** Then, I felt drips splattering against the suit, I heard something wet - I heard groaning. I looked around - I looked up, and... I could barely see Alpha's corpse embedded into a wall above me, hanging from his waist. His head was moving - and he was looking at me, blood dripping down from his mask. I was suddenly so confused and scared - I screamed when he - I //(Pauses)// and then it stopped again, because I - I //(Pauses)//
+> 
+> **Gamma:** I fell into the hole, like Beta did.
+> 
+> **Researcher Alger:** Jesus Christ.
+> 
+> //Researchers Note: We didn't speak for some time here. It looked like Gamma was trying to wind down and I wanted to give him a moment.//
+> 
+> **Gamma:** Then I came out. And that's, uh, the full report - what happened in there.
+> 
+> **Researcher Alger:** Wait, what happened in-between "the hole" and you reappearing outside?
+> 
+> **Gamma:** I - look, do I have to report that? I can't -
+> 
+> **Researcher Alger:** Gamma, I don't mean to push you, but it would be helpful if you tried your best to.
+> 
+> **Gamma:** Well, fine. It's //like// a hole, I guess. It's like if I was walking somewhere, and suddenly I just walked somewhere I didn't expect. It's like you fell in a hole, but it wasn't an accident. It's like you walked into a room and found it wasn't what you expected. Does that make any sense?
+> 
+> **Researcher Alger:** Okay, I suppose I get it, but -
+> 
+> **Gamma:** There was something about that place, doctor. I close my eyes and I see - no, feel it. It's like if you know something fucked is in the darkness, but you just can't see it. I can't tell you, show, I - I was a mute and deaf man in a world of only voices and waves, I wasn't supposed to be there, that place isn't for any of us. Whatever is in that hole, it's not meant to have... things inside of it, it's an oversight, an oversight God missed.
+> 
+> **Researcher Alger:** That's... - Wait, what are you looking at?
+> 
+> //Researchers Note: I noticed that Gamma appeared to be staring at a corner of the room that was behind me. I shifted over to take a look at it.//
+> 
+> **Researcher Alger:** There isn't anything there.
+> 
+> **Gamma:** //(Barely audible in the recording)// //You need to -// [unintelligible] //- creation can't handle more of these fractures -// [unintelligible] 
+> 
+> //Researchers Note: When I had turned back to look at Gamma again, I realized he wasn't just.. staring. He was scanning up and down at the corner,  eyes imperceptibly squinting, examining. There was something in the corner that I couldn't see.//
+> 
+> **Gamma:** I tried looking for Beta. I couldn't find him... how could I? I think I need rest, doctor. I'm not feeling right.
+> 
+> **Researcher Alger:** ██- I mean, Gamma, are you okay? I'll have someone look at you.
+> 
+> //Researchers Note: Gamma finally stopped looking at the corner and looked back at me.//
+> 
+> **Gamma:** I'll be fine, I think. Just need some rest.
+> 
+> [END LOG]
+
+[[/collapsible]]
+
+[[collapsible show="+ Addendum 3685.2 Containment and Clean-up" hide="- [CLOSE]"]]
+[[include component:image-block name=pin.jpg|width=100px|caption=Supposed assembly photograph of the UMZ-1 //decompression pin// device. This machine has never been observed within the facility. ]]
+[[include component:image-block name=panels.jpg|align=right|width=100px|caption= Supposed recovered photograph of "//spatial stabilization embedded panels//" undergoing testing.]]
+**Current Containment Equipment:**
+Primary containment of the SCP-3685 anomaly is currently being managed by an //Uranprojekt// device technically described as the "//decompression pin//". It is unknown where it is or how it operates, and whether or not it needs to be maintained. A priority for the Foundation is to find this device and ascertain its condition. If its condition is critical and it cannot be repaired, drastic response will have to be immediately taken in order to secure containment.
+
+The //decompression pin// is not the only //Uranprojekt// containment device present. The walls of the facility are covered with, or have embedded,  panels that help isolate the spacetime anomaly to within the interior of the building. It is not known how these panels function, nor is it feasible to attain one without potentially compromising the original containment.
+
+**Current Clean-up Efforts:**
+Much of the outlying facility of the UMZ-1 complex is hazardous due to radiation. In order to make the complex safer, topsoil removal, installation of showers and of an incinerator, washing of structures and vehicles, and other radiation decontamination methods have been implemented. Additionally, the //SCP-3685 Confinement Structure// covering the primary building is near completion, which should assist with mitigating the radioactivity emanating directly from SCP-3685.
+[[div style="display: flex; width: 700px;"]]
+[[/div]]
+----
+**Future Containment Equipment:**
+[[include component:image-block name=newarray.jpg|align=center|width=700px|caption= Sub-component assembly of the //"FARADAY" Containment Ring//. This specific section is a component of the  //Maxwell-Vance Spatial Stabilization Array//.]]
+The future of SCP-3685 containment is inherently uncertain due to a lack of information on how it is presently being contained. Determining the present or potential future condition of the //Uranprojekt// fail-safe equipment is currently impossible. Containment failure will likely have catastrophic consequences. To mitigate risk, the Foundation has started a containment program that will eventually manufacture and install new containment equipment that will supplant the //decompression pin//, with the intention of preventing a catastrophic containment failure.
+
+The scope of this effort is enormous due to the immense magnitude of the spacetime anomaly, bringing forth numerous specific engineering and design challenges. The most recently approved containment proposal, //SCP-3685 Containment Proposal Revision 13//[[footnote]]This proposal was drafted by a research group formed and headed up by Dr. Lorentz Alger. During its peak, the group was composed of 36 engineers and scientists.[[/footnote]], involves over 3000 tonnes of material and equipment that will have to be moved on-site and installed for full implementation. The containment equipment itself focuses on stabilization and magnitude reduction of the SCP-3685 spacetime anomaly, with the hope that it will eventually be possible to safely decommission SCP-3685.
+
+The containment equipment includes:
+* //"FARADAY" Containment Ring// - which will serve as the primary containment device. Containment is achieved through the mitigation of fold decompression, utilizing spacetime stabilization arrays. Specifically, this device is an assembly of two interleaved counter-rotating arrays: the //Maxwell-Vance Spatial Stabilization Array//, and the //Lebedev-Glenn Temporal Stabilization Array//. These arrays use superconducting niobium-titanium electromagnets, and thus require cryogenic cooling.
+* //Prometheus Labs "Splint" Spacetime Fracture Welder// - which will serve to reduce stabilization requirements. It may even entirely weld the spacetime compression fracture present within SCP-3685, which would be required to completely neutralize it. This machine is custom-ordered, and is the first of its kind ever designed.
+* //Rutherford Fold-Diffusion Apparatus// - an experimental device which is intended to reduce spacetime compressed wave magnitude. If successful, this will reduce stabilization requirements and potentially allow for a safe fold decompression of the SCP-3685 spacetime anomaly.
+* //"BECQUEREL" Radiation Mitigation Cluster// - a series of panels intended to surround the SCP-3685 structure. The panels will serve to mitigate the enormous quantity of radiation that would be released from within SCP-3685 if the spacetime anomaly was fully stabilized. 
+
+The operation of this equipment will require various components of supporting infrastructure, the majority of which must be on-site. This introduces more engineering challenges. The estimated continuous power consumption of the containment equipment is in excess of 130 megawatts. Supplying that much power is challenging, as the containment equipment takes up the significant majority of the floor-space present within the confinement structure. Thus, the power modules, and the supporting infrastructure in general, has been designed to be as small as possible.
+
+The supporting infrastructure includes:
+*  //SCP-3685 Confinement Structure//[[footnote]]Under the proposal, this would be publicly described as the "confinement sarcophagus."[[/footnote]] - a large structure that encapsulates SCP-3685 and provides the space necessary for the planned containment equipment. This structure will also serves to obscure SCP-3685 and any planned containment equipment from public view. To assist in this role, the structure will have thick sound-proofing to deaden the sound of the //"FARADAY" Ring//, along with a HVAC system.
+* 4x //"Project Polaris" 40 Megawatt Plutonium Fission Modules (CPM-40)// - In total, these reactor modules will generate 160 megawatts of power, which is required to reach a 20% safety margin. These reactors are of a plutonium based, graphite moderated, liquid sodium cooled design. Plutonium-239 fuel rods are planned to be sourced from the Foundation //"Cottontail" LMFBR// facility located in {{[REDACTED]}}.
+* A cooling water reservoir - located next to the west-end of the UMZ-1 complex. This reservoir was historically used for the UMZ-1 reactor, however it has been refilled and repurposed for this proposal. It will be used as a water-source and heat sink for the containment equipment located on-site.
+* 6x //Westinghouse Model 370F Nuclear-Rated Water Pump (WH370F)// - located in the aforementioned cooling reservoir. These pumps will provide cooling water circulation for large convective heat sinks located within the //SCP-3685 Confinement Structure//.
+* //"LANDAU" 25kW Miniaturized Liquid Helium Cryoplant// - This cryogenics plant will provide 25kW of cooling capacity at −269 °C. The cryogenics plant will be used for the superconducting magnets used in the //"FARADAY" Containment Ring//.
+
+**Containment Evaluation & Oversight Committee Report:**
+[[div style="background :#F5F5F5; border: dashed 1px #444444; width: 700px; padding: 1px 10px; margin: 10px 10px 10px 0px; box-shadow: 1px 1px 5px rgba(0,0,0,.3);"]]
+[[size 130%]]**Containment Evaluation & Oversight Commitee (CEOC) Official Report**[[/size]]
+[[size 120%]]Evaluation of Efficacy[[/size]]
+[[size 110%]]SCP-3685 Containment Proposal, Revision 13[[/size]]
+----
+
+**Parameters:**
+* Containment projections for SCP-3685 are to result either in successful neutralization or long-term (>20 years) reliable containment.
+* The //decompression pin// device will fail either during, or after the implementation of this containment proposal.
+
+**Summary of Evaluation:**
+The CEOC has evaluated that //SCP-3685 Containment Proposal, Revision 13// is **not sufficient** for long-term containment of the SCP-3685 anomaly. Catastrophic breach of containment is likely within only a few years of //decompression pin// failure. Additionally, the proposal is extremely complex and expensive, and full implementation may take more than a decade of effort.
+
+Regardless, this proposal is the most effective and long-lasting the CEOC has seen so far. Implementation of this proposal would be better than nothing, and it would likely serve as an excellent stepping stone to better containment measures utilizing similar technology.
+
+**Recommendations:**
+The CEOC is recommending an additional increase in resources allocated to SCP-3685 primary containment research. Current proposals are still infeasible or incredibly risky in the context of long-term containment.
+
++++++ Additional Documentation:
+
+**Containment Equipment Failure Modes:**
+{{[DATA EXPUNGED]}}
+
+**Overall Likelihood of a VK-Class Scenario:**
+{{[DATA EXPUNGED]}}
+
+**Overall Likelihood of a ZK-Class Scenario:**
+{{[DATA EXPUNGED]}}
+
+[[/div]]
+
+[[/collapsible]]
+
+[[collapsible show="+ Addendum 3685.3 Recovered Documentation" hide="- [CLOSE]"]]
+
+The following is a compilation of documentation found from the home of Dr. ██████ ████████. This individual served as Director of the //Uranprojekt// during the period of SCP-3685's creation.
+
+[[div style="float: center; background-color: #f2f2f2; border: solid 1px #444444; width: 605px; padding: 1px 10px; margin: 10px 10px 10px 40px; box-shadow: 1px 1px 4px rgba(0,0,0,.2);"]]
+
+Dear ██████
+
+If you've found this, it means I'm already gone. I've gone West, and I'll be in their hands shortly. I have many explanations and reasons for this, but none of them are of particular use, save for one. The Uranium Society. This endless drain of finite resources. This horrendous folding pile, fold, fold, compress, fold. When will you, and the rest of this miserable society, learn that nature is not to be played with?
+
+What we're doing here is the greatest, most treacherous form of crime, it's a crime against God. He calls for us to stop, and yet we persist because we have to win an ultimately petty conflict! When will you stop being oblivious to His warning? What if it fractures? What if He comes down from the heavens to do what He did of Gomorrah? Circles, Möbius, loops! We talk about these dangers like they're insignificant and out of sight and I can't accept this anymore. You've seen these "insignificant" threats occur in our experiments! This negligence and insanity will be the end of you, the end of this Earth, and the end of this godforsaken Reich. When you compress the folds beyond God's limits, we'll walk off the edge of the fracture, and we will become a part of the paradox that it leads to.
+
+I'm not going to be part of this insanity any longer. When the World ends, and the folds crease, fracture, tear, rip themselves apart because of our damning hubris, I won't be at it's source. Others will follow. They will come West with me. They feel the same. I won't name them, and you won't be able to stop them. Plans have already been prepared and executed.
+
+If for once you ever listen to reason, listen just this once. I need you to destroy the blasted contraption. I don't really have any notion of how you should do it, but you need to. If you can't destroy it and send it into the depths, use the pin. The pin will hold the folds together. You know it will. I know you don't like the concept of pins, you like the clips better, but if the folds crease and fracture, you'll have wanted the pin.
+
+Goodbye.
+
+[[/div]]
+
+[[div style="float: center; background-color: #f2f2f2; border: solid 1px #444444; width: 605px; padding: 1px 10px; margin: 10px 10px 10px 40px; box-shadow: 1px 1px 4px rgba(0,0,0,.2);"]]
+
+= [[size 80%]]15/1/1945[[/size]]
+
+If that treasonous bastard and his bunch of cowards didn't leave, this might not have happened! We would be outputting Neptunium[[footnote]]//Uranprojekt// name for Plutonium-239.[[/footnote]] by now. London would be in ashes! Instead of that, I have to depend on this poorly constructed contingency. Why did I listen to him? A foul traitor - suddenly God and good-will is important to a nuclear weapons researcher!? I should've used a clip. We might've been able to recover from this. I wouldn't have lost so many damn people.
+
+Does he think the Anglo-Saxons are just going to let him go!? They're going to use them. Who knows what sort of deals they've made with Stalin, imagine if they exchanged them! The thought of it makes me sick. They'll be used, and they'll make another pile. They'll make another one and they're going to use it for wicked things.
+
+They've taken my pile too, blasted generals. Relieved me of my duties for "utter failure." Failure? I wasn't the one who was proven incapable!  They couldn't prevent a bunch of obtuse scientists from defecting! They've given the facility to some captain. These military men guard one of the greatest scientific creations in history and yet they understand nothing of its importance, it's infuriating! They refuse to let me near my damn reactor now, because they're making this "exclusion zone."
+ 
+I still don't know who died, or who has been found. I've asked for them to recover the bodies, but no one will enter the building, the cowards. They're just going to let the bodies rot in there. Those were good men, they gave their lives to Germany, and this is how they repay them!?
+
+I think stress is getting to me. I keep seeing things. I need some rest. I'm not feeling right.
+
+[[/div]]
+
+[[div style="float: center; background-color: #f2f2f2; border: solid 1px #444444; width: 605px; padding: 1px 10px; margin: 10px 10px 10px 40px; box-shadow: 1px 1px 4px rgba(0,0,0,.2);"]]
+
+Dear ██████
+
+I'm afraid to say that it will most likely be impossible to recover the deceased within the facility. I know that is probably not what you wanted to hear, but I have orders not to go in. Besides, even if I didn't have orders, I'm not going to send in my men to die needlessly. That place is a deathtrap. Initially, I had orders to survey the structure, so I did that. I had some men go in, and they never came out. I then had some others go in as recovery, and that group returned as desiccated corpses. I did have a single man come out alive, but now he mutters nonsense about "a lack of God", his eyes, colors - nothing decipherable. Only God knows what is in that building now.
+
+That isn't to say that I'm not sympathetic, and I do apologize for not being able to do more. As you read, I wished to recover the men I sent as well. I just don't think its possible. We're currently establishing an exclusion zone, and we hope that once the Americans reach us, they'll heed our warnings and maintain the zone. I do not believe for a moment the communists will reach the area first.
+
+Sincerely,
+
+Captain ██████████
+
+[[/div]]
+
+[[div style="background-color: #f2f2f2; border: solid 1px #444444; width: 605px; padding: 1px 10px; margin: 10px 10px 10px 40px; box-shadow: 1px 1px 4px rgba(0,0,0,.2);"]]
+
+= [[size 80%]]5/10/1986[[/size]]
+
+The Soviets should not have toyed with things no one can ever understand. This Chernobyl business. It must be another fold compression. It can't be anything else. They must've had a pin, a clip, something to contain it. I bet it was a clip, the fallout is too much for a pin. If they're going to copy us why can't they copy the one thing that saved us? The Earth - no, creation cannot handle more of these fractures.
+
+They claim it was some sort of fission accident. I refuse to believe that. Do the they not have the pile? They've seen what it can do. It was much more than just breeding - synthesis, it was capable of producing things beyond God's creation, things we should've never seen, the hole we should not fall into from the edge, no, it should not exist. ██████ fell out of creation, he should be dead, but he isn't. He can't be, the fracture, that path falling away from the Lord's boundaries, it is a place beyond death and salvation.
+
+I see him still.
+
+This is not from my old body, I am as lucid as ever - no, more lucid. I can see things people can't. I can see what people should see but never do. Its from the pile, that ungodly sight into the pit it formed is what gave me this. It is alike Adam and Eve, when they first saw they weren't clothed.
+
+It's the pile, that's it.
+
+He's stuck somewhere in that pile. He appears and disappears - no, he exists and then unexists. He is inside that contraption and it's because of me, the society. I can be laying in bed, thousands of kilometers from that forsaken pile, and I see him staring at me. No, not at me, but at my sins, he knows what pit I found and cracked open. He has gained unnatural knowledge of it, the same of the type I posses. It's punishment. It's punishment for my sins against God's topology - His nature.
+
+----
+
+Earth's hope rests upon a man I once mocked. That pin, the child of a brilliant man gifted by God, that pin must hold and the folds must not unwind, or else we will become a part of the fractured pile.
+
+There they are. They're all looking at me now.
+
+[[/div]]
+
+//Note: Dr. ██████ ████████ avoided capture in Yugoslavia until 1987. He was located when he attempted to return to SCP-3685 for an unknown reason. He died from an untreated cancer before being identified.//
+
+[[/collapsible]]
+
+[[footnoteblock]]
+
+[[div class="footer-wikiwalk-nav"]]
+[[=]]
+<< [[[SCP-3684]]] | SCP-3685 | [[[SCP-3686]]] >>
+[[/=]]
+[[/div]]
