@@ -1,348 +1,432 @@
 title:Avian Anthology I
-[[include component:preview text=One hundred billion memories tainted by 200,000 years of vengeance, dread, euphoria, grief, avarice…]]
+[[include component:preview
+|text=One hundred billion memories tainted by 200,000 years of vengeance, dread, euphoria, grief, avarice…]]
+
+[[include :scp-wiki:theme:flopstyle]]
 
 [[module css]]
-/* HEADER */
-#header h1 a {
-    display: block;
-    margin: 0;
-    padding: 80px 0 25px;
-    line-height: 0;
-    max-height: 0;
-    color: transparent;
-    background: transparent;
-    font-family: 'Verdana', Arial, sans-serif;
-    text-decoration: none;
-    text-shadow: none;
-    letter-spacing: 0.9px;
+/* SITE HEADER */
+ #page-content span,
+ #page-content a{
+     font-weight: bold;
+}
+ #header h1 a,
+ #header h2 span{
+     color: transparent;
+     text-shadow: none;
+}
+ #header h1 a::before{
+     content: "The Avian Division";
+     font-family: "Verdana", sans-serif;
+}
+ #header h2 span::before{
+     content: "Until we return to The Nest";
 }
 
-#header h1 a::before {
-    content: "The Avian Division";
-    color: white;
-    letter-spacing: -0.02em;
-    text-shadow: 3px 3px 5px black;
+/* OTHER */
+ .bg-gradiant{
+   margin: 0 -1.7em;
+   padding: 0 1.7em;
+
+     background:
+       linear-gradient(to bottom,
+               hsl(0, 0%, 100%),
+            hsla(45, 100%, 55%, .5),
+            hsl(45, 100%, 55%, .5),
+             hsl(0, 0%, 100%));
+}
+ .bg-gradiant hr{
+     border-top: medium solid hsl(0, 0%, 100%);
 }
 
-#header h2 span {
-    display: block;
-    margin: 0;
-    padding: 19px 0;
-    line-height: 0;
-    max-height: 0;
-    font-weight: bold;
-    color: transparent;
-    text-shadow: none;
-}
-
-#header h2 span::before {
-    content: 'Until we return to The Nest';
-    color: white;
-    text-shadow: 1px 1px 1px black;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
-}
-.team-bird-nav{
-    background-color: black;
-    border: outset 1.5px black;
-    border-radius: 30px;
-    color: black;
-    background: linear-gradient(to bottom right, rgba(0,0,0,0), rgba(255,200,28,1));
-    font-weight: bold;
-    font-size: 85%;
-}
-hr{
-     margin: 1em 0;
-     padding: 0;
-     border: 0;
-}
+/* SERIES NAV */
+ .series-nav{ background: linear-gradient(to bottom right, hsla(0, 0%, 100%, 1), hsla(45, 100%, 55%, .5)); }
 [[/module]]
 
 [[>]]
 [[module Rate]]
 [[/>]]
-[[==]]
-= **Timeless Substrate | The Noosphere**
 
-[[div style="padding-left: 0.5%; padding-right: 0.5%; background-color: #fff; background: linear-gradient(to bottom, #fff,#ffc81c,#ffc81c,#fff);"]]
-[[div style="color: rgb(12, 12, 12);"]]
-Thoth peered into the **[[[SCP-3662|Noosphere]]]** with an astute curiosity. He glanced down at the ocean of minds: a whirlpool of purple, pink, green, and blue specks lay out across an absurd distance. He looked up and he saw **[[[SPC-507|Akheilos, the Great Selachian]]]**, scouring the void. The Great Starfish continued to dangle from an infinitesimal tendril, ominously inching onward from extradimensional space. Even now, Thoth feared the Great Starfish: the only thing that could interfere with his plans.
-
-YHWH encompassed what seemed like the entirety of the mind-filled expanse. If Thoth executed his plans at the wrong time, YHWH would strike him down instantly and bar him from prosperity until the end of time. Luckily, YHWH would soon find Himself **[[[SCP-3362|busy with something]]]**.
-
-As Thoth sat in his perch, a wave of memories conjured up by the Noosphere washed over him. One hundred billion memories tainted by 200,000 years of vengeance, dread, euphoria, grief, avarice… They vibrated him to his core. If he were a mere mortal, Thoth's perch would be shambles. His own mind would be a confluence of rogue personalities, thoughts, and concepts, ripping him away piece by piece.
-
-Thoth counted down the ages like seconds.
-
-//4... 3... 2... 1...//
-
-At once, the sweet radiance of the Noosphere dimmed. Thoth felt a great weight evaporating into the darkness, like removing a bowling ball from a trampoline. He still had Akheilos to worry about, but while Akheilos excelled in strength, Thoth was all speed. He peered across the Noosphere at his target: a full human that had newly manifested itself within, susceptible to an attack.
-
-As Thoth extended a singular talon towards him, Akheilos clued in and took pursuit. Thoth soared as fast as he could over in a certain direction. Akheilos followed closely. 
-
-Finally, Thoth came to the pale, bald man in an orange jumpsuit. Unlike the other minds, he wasn't merely a speck; the Noosphere immersed him as he doused in with the unyielding current.  Thoth directed his weapon into the man's mind before flying away. In one fell swoop, the weapon cocked and then fired into the head of humankind.
-[[div style="border-bottom: 2px solid #fff;"]]
+[[div class="justified"]]
+[[div class="bg-gradiant"]]
+[[div style="font-size: 120%; font-weight: bold; text-align: center;"]]
+The Noosphere
+Time Immemorial
 [[/div]]
-Thoth cackled to himself as he watched the tsunami of orange spread across the planet of minds. As it spread, he shuddered, energy flowing into him. The personalities of the billions of people below supplied his damaged form with power. He looked into the void and saw the **[[[scp-3632|blue planetoid]]]** that he called home, glittering across the sky with its tired, old minds. Thoth had made the risky journey into meatspace, across the Noosphere to Earth, and had almost winked out of existence in the process.
 
-He'd be back there soon.
+Thoth peered into the **[[[scp-3662|Noosphere]]]** with astute curiosity. He glanced down at the ocean of minds: A whirlpool of purple, pink, green, and blue specks spread across an absurd distance. He looked up and saw **[[[spc-507|Akheilos, the Great Selachian]]]**, scouring the void. The Cosmic Starfish continued dangling from an infinitesimal tendril, ominously inching onward from extradimensional space. Even now, Thoth feared the Starfish: The only thing that could interfere with his plans.
 
-Akheilos was troublesome. Soon, Thoth might be able to overpower Akheilos and extinguish him permanently. For now, he had to stay wary of a surprise attack from the shark. Thoth kept a glance at the beast from the border of the Noosphere. He was avoiding Thoth like a wild animal avoiding a flame.
+YHWH encompassed what seemed like the entirety of the mind-filled expanse. If Thoth executed his plans at the wrong time, YHWH would strike him down instantly and bar him from prosperity 'til the end of time. Luckily, YHWH would soon find Himself **[[[scp-3362|busy with something]]]**.
 
-The planet was now more orange than not. Thoth decided that it was time to initiate the next part of his plan. The scientists at the Foundation had just now started studying a videotape from his home planet. In a certain spot, two minds turned red.
+As Thoth sat in his perch, a wave of memories conjured by the Noosphere washed over him. One hundred billion memories tainted by 200,000 years of vengeance, dread, euphoria, grief, avarice… They vibrated him to his core. If he were a mere mortal, Thoth's perch would be shambles. His mind would be a confluence of rogue personalities, thoughts, and concepts, ripping him piece by piece.
 
-Like turning the key in a car to start the ignition, he ignited the crimson fire with a swoop of his wing. It radiated in every direction, and Thoth basked in the warmth of the newly brainwashed human populace. 
+Thoth counted the ages like seconds.
+
+= //4...//
+
+= //3...//
+
+= //2...//
+
+= 1.
+
+At once, the sweet radiance of the Noosphere dimmed. Thoth felt a great mass dissipating into the dark, like removing a bowling ball from a trampoline. He still had Akheilos to worry about, but although Akheilos excelled in strength, Thoth was all speed.
+
+Thoth peered across the Noosphere at his target: A full human that had manifested itself newly within, susceptible to attack. As Thoth extended a single talon toward him, Akheilos clued in and took pursuit.
+@@ @@
+= Thoth soared as fast as he could.
+@@ @@
+= Akheilos followed closely.
+@@ @@
+Finally, Thoth came to the pale, bald man in an orange jumpsuit. Unlike the other minds, he was not a mere speck; the Noosphere immersed him as he doused in with the unyielding current. Thoth directed his weapon into the man's mind before flying away.
+
+At once, the weapon cocked–
+@@ @@
+@@ @@
+@@ @@
+= And fired into the head of humankind.
+@@ @@
+----
+@@ @@
+Thoth cackled as he watched the tsunami of orange spread across the planet of minds. He shuddered, as energy flowed into him. The personalities of the billions of humans supplied his damaged form with power. He looked into the void and saw the **[[[scp-3632|blue planetoid]]]** that he called home, glittering across the sky with its tired, old minds. Thoth ventured into meatspace, across the Noosphere to Earth, and had almost winked out of existence in the process.
+
+He would soon be back there.
+
+Akheilos was troublesome. Thoth might soon be able to overpower Akheilos and extinguish him permanently. For now, he had to remain wary of a surprise attack from the Selachian. Thoth kept a glance at the beast from the border of the Noosphere. It was avoiding Thoth like a wild animal avoiding a flame.
+
+The planet was now more orange than not. Thoth decided it was time to initiate the next part of his plan. The scientists at the Foundation had just now started studying a videotape from his home planet. In a certain spot, two minds turned red.
+
+Like turning a car key to start the ignition, he ignited the crimson fire with a swoop of his wing. It radiated in every direction, and Thoth basked in the warmth of the newly brainwashed human populace.
 
 He anticipated the cawing in his name.
-[[div style="border-bottom: 2px solid #fff;"]]
-[[/div]]
-What had made it so //easy// to achieve? The answer was much more mundane than would be expected for such a complex problem: there's a vulnerability in the human mind; a deeply ingrained need, woven into society. The need to share, communicate, and be heard. Humans have no defense for this. 
+@@ @@
+----
+@@ @@
+What had made it so //easy// to achieve? The answer was simple: There is a vulnerability in the human mind — a deeply ingrained need, woven into society. The need to share, communicate, and be heard. Humans have no defense for this.
 
-Why would they? Never before had //acceptance// been weaponized.
+Why would they? Never had //acceptance// been weaponized.
 
-With birds as the vector and minds as the medium, that singular idea spread so rapidly that nobody could even think to retaliate. More virulent than the common cold, most difficult to cure. Like a virus, once it had latched itself deep within, its only directive was to spread -- anywhere there was camaraderie, there was the bird.
+With birds as the vector and minds as the medium, that singular idea spread so rapidly that nobody could even think to retaliate. More virulent than the common cold, most difficult to cure. Like a virus, when it latched itself deep within, its only directive was to spread — anywhere there was camaraderie, there was the bird.
 
-To not be infected with the bird meme was to be ostracised. Everyone, at some basal, guttural level, //wanted// to be a part of this phenomenon. They //wanted// to fit in. When a single, simple, succinct word triggered all humans to join hands as one, what hope did they have? 
+To remain uninfected by the bird meme was to be ostracized. Everyone at some basal, guttural level //wanted// to partake in the phenomenon. They //wanted// to fit in. When a single, simple, succinct word triggered all humans to join hands as one, what hope did they have?
 
-Birds had become the only thing on the brain. And when humanity realized what it was doomed to become, it convulsed, grasping its collective head, one by one. Millions of individuals fell to their knees, screaming to the heavens, tearing out their hair as their eyes bulged. Slowly, but surely, all were affected. All had become equal.
+Birds had become the only thing on the brain. And when humanity realized what it was doomed to become, it convulsed, grasping its collective head. Millions of individuals fell to their knees, screaming to the heavens, tearing out their hair as their eyes bulged. Slowly, but surely, all were infected. All had become equal.
 
 The cawing came.
 
-Some people were more naturally resistant to the meme, but fully ignoring something so ridiculous was impossible. The more they gazed into this abyss, the more it gazed back. Once inside, the idea stuck. Everyone was forced to follow the current eventually. 
+Some humans were more naturally resistant to the meme, but ignoring something so ridiculous was impossible. The longer they gazed into this abyss, the longer it leered back. Once inside, the idea stuck. Everyone followed eventually.
 
-The singularity was not technology. It was birds. And in the end, the black hole consumes all...
+The singularity was not technology; it was birds.
+
+And in the end, the black hole consumes all.
+
+[[=image http://scp-wiki.wdfiles.com/local--files/component%3Atheme/logo.png class="scene-break"]]
+
+[[div style="font-size: 120%; font-weight: bold; text-align: center;"]]
+New York City
+August 2, 2018
+Morning
 [[/div]]
-----
-= **August 2nd, 2018 | New York City**
 
 Or does it?
 [[/div]]
-As the sun descended, two silhouettes stood like ants in front of the nearly lifeless husk of a massive whale. The silhouette on the right: an armored human, towering a lofty two meters tall. The silhouette on the left: a pelican bird, barely a meter in height, yet somehow seeming more composed than the human.
 
-Two seagulls and one pelican stood nearby, taking glimpses from behind the pelican-in-command, waiting for the cue to attack.
-
-"If you're willing to supply some muscle for our war, we will help you fight yours. That means full co-operation on both sides. Deal?" the human said. His name was Captain Quinn Griffith, leader of an elite unit of shark-punchers.
-
-The pelican paused for an uncomfortable amount of time, shrugged its wings back, and eyed the human. Then it spoke. "Deal." A clearly modulated, yet unmistakably avian voice, streamed through the high-fidelity speaker of a para-tech translation device. Her name was Keshrayuth, head of an equally elite team of birds fighting to uphold the Veil of Normalcy that now hung in tatters.
-
-"Keshrayuth, what are you doing?" Quibba -- a second pelican -- interjected. "We have no clue who this one and his team are, aside from the fact that they're dangerous, and screwed with our efforts to keep the world ordered in the first hour they've been here."
-
-Keshrayuth shook her head. Her bill flopped about. "How, exactly, have we gone about fixing things as of late, Quibba? I understand this one is violent -- perhaps ridiculously so -- but this is the first glimmer of hope we have had in months. It won't be cast aside, and I certainly won't stand for that. Neither would Hoygull. In fact..." She turned around. "The language of violence these ones communicate with could be the perfect key to finally gaining the upper hand on Thoth."
-
-Quinn toyed with his helmet, which he'd removed minutes ago. His forehead glistened with sweat. "Listen, ma'am, I'm sorry, but you keep on mentioning this 'thot' character. Like, am I missing something here? //Who is that?//"
-
-Keshrayuth sighed. Her bill floundered from side to side.
-
-"I'm not joking around here! Come on, my team's had a long journey. We've been away from home for months, fighting a war against a Deviant enemy we know next to nothing about. It would help if //someone//, anyone, explained what in the depths was going on. Just once," Quinn said, infuriated. "I mean, if we're going to be a team, we ought to gain some common ground here."
-
-"Alright, alright. What is your name, human?"
-
-"I'm Quinn. The rest of my team's in our, uh…" Quinn cleared his throat. "Inside this giant whale. That's where my team is."
-
-Quibba shot a terrified look at the leviathan towering over him. //"They're inside a whale? Did they get eaten? Oh my god."//
-
-Quinn chuckled. "No, no, they're alive. The whale's on our side too. Here, I'll show you." Quinn placed a hand on the whale's damaged fin. The ground shook as a whale song coursed through it. The birds jumped back with a squeak.
-
-"Wakey wakey, Gægr. I have some new friends I need to show you."
-
+= ...
 @@ @@
+Two figures stood minuscule before the near-lifeless husk of a massive whale. The one on the right: An armored human towering two meters tall. The one on the left: A pelican bird barely a meter in height, yet somehow more composed.
 
-----
+Two seagulls and a pelican stood nearby, peeking from behind the pelican-in-command, waiting for the cue to attack.
 
+“If you're willing to supply some muscle for our war, we're gonna help you fight yours. Full co-operation on both sides. Deal?” the human said. His name was Captain Quinn Griffith, leader of an elite team of shark-punchers.
+
+The pelican paused for an uncomfortable stretch, shrugged its wings back, and eyed the human. A modulated, yet unmistakably avian voice streamed through the high-fidelity speaker of its paratech translation collar. “Deal,” it replied. Her name was Keshrayuth, head of an equally elite team of birds fighting to uphold the Veil of Normalcy that now hung in tatters.
+
+“... Keshrayuth, what are you doing?” Quibba — the second pelican — interjected. “We have no clue who this one and his team are. They screwed with our efforts to keep the world ordered in the first hour they've been here! And they are in //dire need// of preening.”
+
+Keshrayuth sighed. “How, exactly, have we gone about fixing things as of late, Quibba? I understand this one is violent — perhaps ridiculously so — but this is the first glimmer of hope we have had in months. It won't be cast aside, and I certainly won't stand for that. Neither will Hoygull. In fact” — she turned around — “the language of violence they communicate could be instrumental in gaining the upper hand against Thoth.”
+
+Quinn pulled off his helmet. His forehead glistened. “Listen, I'm sorry, but you keep on mentioning this 'thot' character. Like, am I missing something here? //Who is that//?”
+
+Keshrayuth shook her head. Her bill floundered from side to side.
+
+“I'm not having a laugh! Come on, my team's had a long journey. We've been away from home for months, battling a Deviant enemy we know next to nothing about. It would help if //someone//, anyone, explained what in the depths was going on!” Quinn said, almost shouting. “I mean, if we're gonna be a team, we oughta gain some common ground.”
+
+“And what is your name, human?” She scanned him head to toe. “You //are// human, yes?”
+
+“That's right, ma'am; I'm no Deviant. The name's Quinn. And the rest of my team's in our…” Quinn cleared his throat. “Inside this giant whale.”
+
+Quibba shot a terrified look at the colossal leviathan. //“They're inside the whale? Did they get eaten? Oh, Medila!”//
+
+“No! No, they're alive in there, all right. They're napping on the damn job,” Quinn chuckled. “And the whale's on our side too. I'll show you.” Quinn placed a hand on the whale's damaged fin.
+
+The ground shook as a whalesong coursed through it.
+
+The birds jumped back with a squeak.
+
+“Rise 'n shine, Gægr,” Quinn whispered, “I've got some new friends to show you.”
+
+[[=image http://scp-wiki.wdfiles.com/local--files/component%3Atheme/logo.png class="scene-break"]]
+
+[[div style="font-size: 120%; font-weight: bold; text-align: center;"]]
+Site-18, Somewhere in Southern California
+August 12, 2018
+Daytime
+[[/div]]
+
+Ever since a supernova of blue exploded into the skies, the Avian Division busied itself with plans of evacuation — now that the world had //officially// ended. Unfortunately, they had only been able to devote a few scant personnel to each plan.
+
+Amidst the hustle and bustle, one central thought plagued Dr. Frederick Hoygull's overworked mind:
 @@ @@
+= //Migration.//
+@@ @@
+He flew down specially designed vents at the base of Site-18. The vents led to an airlock, where Mobile Task Force Eta-4 (“Begone Thoth”) perched, all calm before the storm.
 
-= **August 12th, 2018 | Day | Site-18, somewhere in Southern California**
+Quibba pecked himself clean. Keshrayuth looked on in disgust. After months of constant vigilance to matters of Foundation rigidity, she'd steeled herself, and now found the simple action — of grooming oneself in public — revolting. Linda Duck and James Crowl — two birds specialized in covert operations, who had their names changed to conform to Foundation standards — faced straight ahead.
 
-Ever since a supernova of blue exploded into the skies, the Avian Division busied itself with plans of evacuation -- now that the world had //officially// ended. Unfortunately, they had only been able to devote a few scant personnel to each plan.
+Hoygull caught Crowl side-eyeing the shark-punchers.
 
-Amidst the hustle and bustle, Dr. Frederick Hoygull was haunted by a single thought: //Migration.//
+[[[spc-507|Marine Fighting Team CHARYBDIS]]] argued with one another on the opposite side of the room.
 
-He flew down through specially designed vents at the base of Site-18. The vents entered into an airlock, where Mobile Task Force Eta-4 ("Begone Thoth") perched. Quibba pecked himself clean. Keshrayuth looked on in disgust. After months of constant vigilance to matters of Foundation rigidity, she'd steeled herself and now found the simple action -- of grooming oneself in public -- revolting. Linda Duck and James Crowl -- two birds specialized in covert operations, who had their names changed to better conform to Foundation standards -- looked straight ahead. Hoygull caught Crowl eyeing the shark punchers with suspicion.
+The shark-punchers were an anomaly in and of themselves. Hoygull found himself stopping to admire their muscular biceps. He shook his head and wedged himself into whatever this hour's petty squabble concerned. “While the Avian Division manages our contingency plans, I trust you'll be busy with DIVINE RUSE?”
 
-[[[SPC-507|Marine Fighting Team CHARYBDIS]]] argued with one another on the other side of the room.
+Quinn looked at Hoygull then waved his hand in the space between him and his three subordinates as if swatting gnats.
 
-The shark punchers were an anomaly in and of themselves. Hoygull found himself stopping to admire their muscular biceps. He shook his head. "While the Avian Division manages our contingency plans, I trust you'll be busy with Operation: DIVINE RUSE?" 
+Jaedan, Leah, and Haruki shared confused glares but shut up all the same.
 
-"Jaedan and Haruki got something up their sleeves. They'll be the ones handling that operation. Leah and I are gonna escort you to the ship. Don't even get your feathers in a bunch." Quinn laughed, and then choked. He realized this figure of speech didn't exactly //work// on a bird. Leah shuffled away, grimacing.
+“Jaedan and Haruki have something up their sleeves,” Quinn explained. “They'll be the ones handling that front. Leah and I, well, we're going to escort you off-world — maybe rendezvous with some long-lost Foundation buds of yours. I'm sure any number of 'em could've answered your call, so don't even get your feathers in a bunch.” Quinn laughed, then froze, then awkwardly rubbed the back of his neck.
 
-Hoygull stared at Quinn for a moment that lasted an eternity. Suddenly, a klaxon wailed from the other side of the room. Hoygull nodded and waddled away. He swiped a clearance card across a nearby door lock, opening the room to a small chamber beyond. The room fell silent.
+That figure of speech wasn't //quite// the most culturally sensitive for a bird. Leah shuffled away, grimacing.
 
-[[[SCP-2785]]], the source of the alarm, sat inside. He'd undergone a recent upgrade, courtesy of Haruki: MFT CHARYBDIS' tech expert. He now had several antennae sticking out of him, and a casing made of beryllium-bronze. This was all done, of course, so SCP-2785 would be more receptive to not only radio signals but significant Noospheric events. Hoygull counted on him as an advantage Thoth couldn't possibly know about.
+Hoygull met Quinn with a piercing stare, and then–
 
-"I'm... I'm getting air-information!" SCP-2785 said, using his made-up term for radio waves. "There's a voice in it this time!"
+A klaxon wailed from someplace nearby.
 
-"So...? We haven't got all day. Let's hear it," Quinn said, impatient.
+Hoygull nodded, then waddled away. He swiped a clearance card across a nearby door lock, opening the room to a small chamber beyond.
 
-SCP-2785 closed his eyes. Static crackled from an internal speaker Haruki had installed. The speaker erupted, blasting like a tuba. The sound reminded Hoygull of when he used to sit down with Researcher Calvin and watch those odd orchestras on the TV.
+[[[SCP-2785]]], the source of the alarm, sat inside. He'd undergone a recent upgrade, courtesy of Haruki: CHARYBDIS' tech expert. He now had several antennae sticking out of him, and sported a casing forged from beryllium-bronze. This was done, of course, so SCP-2785 would be more receptive to not only radio signals but significant Noospheric events. Hoygull counted on him as an advantage Thoth couldn't possibly know.
 
-"Greetings, to whom this concerns," a voice said. The man in the speaker sounded no-nonsense; his voice gruff and deep. "This is General Tarland of the Global Occult Coalition."
+“I'm getting air-information!” SCP-2785 said, using his made-up term for radio waves. “There's a voice in it this time!”
 
-Hoygull fumbled with his clearance card, dropped it, and then with shaking wingtips, brushed against his translation device -- and dropped that too. He flapped his wings, motioned to Quibba, paused, and then covered his face. //Isolate that signal, dammit//.
+“So...? We haven't got all day! Let's hear it,” Quinn said.
 
-"My men and I are currently stationed inside of Bunker Alpha-5," Tarland continued. "We're five miles south of the Mojave Desert. It seems that the statues have forced their way through an unsealed access shaft, and are currently commencing a full-scale assault on our bunker."
+SCP-2785 closed his eyes. Static crackled from an internal speaker Haruki had installed. The speaker blasted like a tuba. The sound reminded Hoygull of when he used to sit down with Researcher Calvin and watch those odd orchestras on the TV.
 
-"Wait, statues?" Haruki said. "Is he talking about [[[SPC-173-J|that god-ugly Deviant sculpture]]]?"
+“Greetings, to whom this concerns,” a male voice said. The man in the speaker sounded no-nonsense, his voice gruff and deep. “This is General Tarland of the Global Occult Coalition.”
 
-Duck replied, stumbling through phrases on her translation device. "No. It's like -- the bird-men outside aren't heavy enough when it comes to fighting armed dressings of Thoth." Her own device was clearly glitching out. "Thoth told his followers to make them."
+Hoygull fumbled with his card, dropped it, and with shaking wingtips, brushed against his translation device — and dropped that too. He flapped his wings, motioned to Quibba, paused, then covered his face. //Isolate that signal, dammit!//
 
-Haruki nodded. SCP-2785 continued to broadcast.
+“My troops and I are currently stationed inside Southwest Coalition Bunker Alpha-5,” Tarland continued. “We're five miles south of the Mojave Desert. It seems the statues have forced their way through an unsealed access shaft and are commencing a full-scale assault on our bunker.”
 
-"Fortunately, we have an ace up our sleeves: Project HYPERION. A missile to be fired into one of the Ways, equipped with enough hostile memes to obliterate KTE-4581 and all affected subjects. Unfortunately, it's in a base underneath the city of Las Vegas, and the bastards ate the strike team we sent to get it. It looks like we're not going to get an opportunity to launch.
+“Wait, statues?” Haruki asked. “Is he talking about [[[spc-173-J|that god-ugly Deviant sculpture]]]?”
 
-"Hopefully, somebody gets this message. Maybe it's the Foundation. Maybe it's the Insurgency. Maybe it's one of the isolated groups of survivors. There's a shed on the outskirts of Las Vegas marked with a seven-pronged star. It's an entrance to the HYPERION facility."
+“No. It's like — the bird-men outside aren't heavy enough when it comes to fighting armed dressings of Thoth,” Duck replied. Her translation device was glitching out. “So, he told his followers to build statues.”
 
-Tarland paused; over the static of the radio, Hoygull could hear a commotion behind him and a long sigh. "The statues have entered the facility. We're out of men to fight them with. If you're hearing this, get to HYPERION. It's humanity's last hope. This is General Tarland, signing off."
+SCP-2785 continued broadcasting.
 
-"Medila, bless him," Crowl muttered.
+“Fortunately, we have an ace up our sleeves — Project: HYPERION. A missile to fire into one of the Ways, equipped with enough hostile memes to obliterate KTE-4581 and all affected subjects. Unfortunately, it's in a base beneath the city of Las Vegas, and the bastards ate the strike team we sent to snatch it. It looks like we're not getting an opportunity to launch.
 
-"That's the end of the message," SCP-2785 said. "But I'm getting more air-information! This time, it's dots, and lots of them!"
+“Hopefully, someone receives this message. Maybe the Foundation. Maybe the Insurgency. Maybe one of the isolated survivor groups. There's a shed on the outskirts of Las Vegas marked with a seven-pronged star. It's an entrance to the HYPERION facility.”
 
-"How many dots?" Keshrayuth asked.
+Tarland paused; over the radio static, Hoygull could hear a commotion behind him and a long sigh. “Dammit, they've forced their way in! We're out of men! If you're hearing this, get to HYPERION. It's humanity's last hope. This is General Tarland, signing off.”
 
-"Well... There's one, two, three..." SCP-2785 replied, eventually fading into a murmur. "Uh, what number's higher than eighty-six?"
+“Medila, bless him,” Crowl muttered.
 
-Hoygull squawked with considerable distress.
+“That's the end of the message,” SCP-2785 said. “But... I'm getting more air-information! This time, it's dots! Lots and lots of dots!”
 
-"Dots? Make yourself more clear, you hunk of junk," Quinn snapped.
+“How many dots?” Keshrayuth asked.
 
-"Robot is connected to the AEDS -- Advance Enemy Detection System. There are statues outside of base," Duck said.
+“Well... There's one, two, three...” He faded into a buzz that lasted a minute. “Uh, what number comes after eighty-six?”
 
-"AEDS... Oh, you mean the AESD!" Quinn said. "The Advance Enemy //Selachian// Detector!"
+Hoygull squawked in distress.
 
-"We cannot fight all of them," Keshrayuth said. "It's nine against eighty-seven."
+“Dots? Make yourself more clear, you hunk of junk,” Quinn snapped.
 
-"Oh, I know! Why don't we take the site's emergency submarine?" Jaedan asked.
+“Robot is connected to the AEDS — Advance Enemy Detection System. There are statues outside of base,” Duck said.
 
-"That's... What? We don't have that." Crowl avoided the massive amount of effort that would be required to get the damned translator to understand the concept of a submarine. "We do have a train rail going from here to Site-17, though. It's right next to Vegas."
+“AEDS... Oh, you mean the A.E.S.D.!” Quinn said. “The Advance Enemy //Selachian// Detector!”
 
-"But it's lacking an energy source," Quibba chimed in. "Bird-brains took it down. I'm surprised they didn't nuke themselves to hell. If we get the power working, we can leave. Can anybody fix it?"
+“We cannot fight them all alone,” Keshrayuth warned. “It is nine against eighty-seven.”
 
-"I'll... Be a bit preoccupied," Haruki said. She failed to mention Operation: DIVINE RUSE; if Hoygull told Eta-4 what he had planned, they'd have protested. "Sorry."
+“Oh, I know! Why don't we take the Site's emergency submarine?” Jaedan chimed in.
 
-"Oh, me! Me, me, me, me!" SCP-2785 replied.
+“That's... What? We don't have that!” Crowl avoided the effort required to get the damned translator to understand the concept of a submarine. “We do have a train rail going from here to Site-17, though. It's near Vegas.”
 
-"Okay," Quibba said. "There's a mounted grenade launcher on the next floor. I'll use that. Hoygull, can you help him?" He really wanted Hoygull to make sure 2785 didn't mess anything up; the soda fountain incident still burned fresh into Quibba's mind. He jumped down from his perch. "The rest of us'll battle the statues. Here, the armory's this way." He led the others towards a second door on the right, which opened to a stairwell.
+“But it lacks an energy source,” Quibba blurted out. “Bird-brains took it down. I'm surprised they didn't nuke themselves to Hell. If we get the power working, we can leave. Can anyone fix it?”
 
-Hoygull turned to Haruki and Jaedan, who were staying behind to enact Operation: DIVINE RUSE. "You sure you know what you're doing?"
+Haruki had the know-how but didn't say it. She couldn't mention Operation: DIVINE RUSE, either; if Hoygull told Eta-4 what he had planned, they'd have protested. She simply pursed her lips.
 
-Jaedan jumped into his powered armor. "Come on, bird-man. You can trust us." Hoygull left before another word could be said.
-----
-Hoygull let himself taste the dry, dusty air of the battlefield. In front of him, the remaining fifty birds left in the Avian Division held their ground with various types of tripod-mounted grenade launchers, modified to make them easier to use with wings instead of hands. Up at the top of the spire that marked the location of Site-18, he saw Quibba piloting a larger, more powerful grenade launcher to clear out large crowds of statues. Hoygull himself had a modified combat shotgun loaded with slugs for protection, although he suspected that they'd be useless against the onslaught of the statues.
+“Oh, me!” SCP-2785 hopped in a circle. “Me, me, me, me!”
 
-The statues continued on, their onslaught slow, but unyielding. Judging from the reports he'd gotten back of the scout patrols that'd gotten ambushed by the statues, they relied on brute force and not much else. Hoygull didn't want to find out anything more.
+“Okay then,” Quibba said. “There's a mounted grenade launcher on the next floor. I'll provide covering fire. Hoygull, can you help him?” Quibba wanted Hoygull to ensure SCP-2785 didn't mess anything up; the soda fountain incident still burned freshly in his mind. 
 
-After the statues marched into the range of the grenade launcher, Quibba fired a grenade. The explosion left a crater in the ground and ten or so statues dead. As if on cue, the remainder of the Avian Division fired their grenades into the crowd. The explosions of the shells sounded like a jet engine screaming. Hoygull was glad that he had given his troops earmuffs.
+“The rest of us'll battle the statues,” Captain Quinn said. “I'll be your motivation!” He was grinning.
 
-After witnessing the initial barrage, Hoygull turned and went back into the site. He needed to make sure he had a ride out of here.
------
-"You see, if you want the generator to work," Hoygull repeated himself. "You have to make sure all the wires are connected."
+Quibba jumped down from his perch. “Come. Armory's this way.” He led two shark-punchers and the other birds toward a door on the right, which opened to a stairwell.
 
-SCP-2785 looked at him with eyes that seemed to convey the opposite of understanding. "Why?"
+Hoygull turned to Haruki and Jaedan — the only two to stay behind. “You sure you know what you're doing?”
 
-"You know how I told you about electricity? Well, you need the wires to carry it, like how pipes carry water around. You know how pipes work, right?"
+Jaedan grabbed his powered armor's pauldron. “Come on, bird-man. You can trust us.”
 
-SCP-2785 nodded. "But then, how does air-information work?"
+Hoygull left without another word.
 
-Hoygull sighed. "You know how mist is like water, but in the air? That's air-information, but with electricity."
+[[=image http://scp-wiki.wdfiles.com/local--files/component%3Atheme/logo.png class="scene-break"]]
 
-"Oh," SCP-2785 said. He didn't sound convinced. He continued to use one of the tools in his hands to weld wires together. After a minute or two, he chimed and pressed the button on the generator. It sputtered a little before coming to life, lighting up the monorail tunnel.
+Hoygull let himself taste the dry, dusty battlefield air. In front of him, his remaining fifty birds held their ground with various tripod-mounted grenade launchers, modified to operate easily with wings. Atop the Site's conspicuous spire, he saw Quibba piloting a much larger, much more powerful grenade launcher to clear out large crowds of statues. Hoygull himself held a modified combat shotgun loaded with slugs — though, he suspected they'd be useless if he found himself cornered.
 
-"Let's tell everybody to get down here, ASAP," Hoygull called, turning to fly up the stairs. He ran into Quinn and Leah in the hallway. "What are you doing here? You're supposed to be–"
+The statues continued; their onslaught slow but unyielding. Each was a tall, stout ibis, and there were countless. Judging by the reports he received from ambushed scout patrols, they relied on brute force and not much else.
 
-"There's too much noise out there, sir," Quinn said. "We can't work our magic in those conditions."
+If each carried unseemly anomalous threats like the countless idols in Foundation deep storage — Hoygull perished the thought.
 
-"Well, we've got–" Hoygull was interrupted by the beeping of his radio, which he picked up and squawked into.
+When the statues marched into range, Quibba fired a barrage of high-explosive shells. The blast tore a rift in the ground and ten or so statues into dust. As if on cue, the rest of the Avian Division fired a volley into the oncoming crowd. The shells screamed like a jet engine. Hoygull was glad he had given his troops earmuffs.
 
-"This is Sergeant Gullivan," the voice on the radio said. "We're being overrun. For Medila's sake, get out of here before–" 
+After the initial barrage, Hoygull turned back and fled into Site-18. He was anything but a fighter. No, he needed to ensure they still had a ride out of there.
 
-Gullivan was cut short by a crunching noise.
+[[=image http://scp-wiki.wdfiles.com/local--files/component%3Atheme/logo.png class="scene-break"]]
 
-"Medila help us," Hoygull whispered before turning back to the shark punchers. "Listen, Quibba's still at the top of the spire. We need to get him down from there. Please, come with me."
+“You see, if you want the generator to work,” Hoygull repeated, “you have to make sure all the wires are connected.”
 
-The shark punchers nodded. Hoygull flew up the stairs of Site-18. On his way, he passed by the armory and swapped out his combat shotgun for a more effective handheld grenade launcher.
------
-Hoygull, Quinn, and Leah eventually arrived at the top of the spire. Quibba sat at the grenade launcher. He wasn't firing.
+SCP-2785 looked at him with eyes that conveyed the opposite of understanding. “Why?”
 
-"Sorry, boss," he said. "But I cannot fire the bomb launcher. Explosion will hurt our friends."
+“You know how I told you about electricity? Well, you need the wires to carry it, like how pipes carry water around. You know how pipes work, right?”
 
-Hoygull looked over the railing. The front line of the Avian Division was clearly compromised, and the remaining lines were struggling to prevent the onslaught of statues from pouring into the site.
+SCP-2785 nodded. “But then, how does air-information work?”
 
-"Kesh, Crowl, and Duck are already retreating," Quibba continued. "If the train rail is ready, we need to retreat, too."
+Hoygull sighed. “You know how mist is like water, but in the air? That's air-information, but with electricity.”
 
-Hoygull nodded. Quibba nodded back, dismounted from the grenade launcher, and followed Hoygull back down the stairs.
------
-Once Hoygull arrived at the bottom, he saw Kesh, Crowl, and Duck -- along with the few remaining members of the Avian Division -- spamming grenades at Site-18's entrance to dam the relentless flood of statues. Hoygull fired a grenade to help, but then he realized that, in his rush, he had forgotten to pick up an extra magazine -- meaning that he would be forced to ration the grenades that were already loaded.
+“Oh.” He didn't sound convinced. SCP-2785 continued operating one of the tools in his hand, welding wires together. After a minute or two, he chimed and pressed a button on the generator. It sputtered a little before coming to life, lighting up the monorail tunnel.
 
-Not bothering to use the translator, he squawked to his team. The remainder of MTF-Eta-4 seemed to understand and shouted orders for the Avian Division to fall back.
+“Let's tell everybody to get down here, ASAP,” Hoygull called, turning to fly up the stairs. He ran into Quinn and Leah in the hallway. “What are you doing? You're supposed to–”
 
-Hoygull, Quibba, and the pair of shark punchers ran and flew down the maze-like hallway to prepare the monorail, but encountered a statue.
+“There's too much noise out there, sir,” Quinn said. “We can't work our magic in those conditions.”
 
-A towering, ibis-headed behemoth stood before the entrance to the monorail. The shadow of the beast paralyzed all. Hoygull instinctively raised the grenade launcher, eyes wide and panicked.
+“Well, we've got–”
 
-"Don't shoot! It's too close, you'll kill us all!" Quinn yelled, grabbing Hoygull by the wing. He maneuvered for a retreat back into the tunnel system. "We're going to have to find another way to Vegas."
+Hoygull was interrupted by the beeping of his radio, which he picked up and squawked into instinctively.
 
-The birdsong emanating from the bird statue drowned Quinn out. The melody it sang was easy on the ears. It was beautiful. Quinn felt his troubles melt away as they soared like a --Selachian-- hawk into the --sea-- sky. Hoygull watched in despair as the Centre operatives melted before the advancing statue humming its perverse birdsong. 
+“— is Sergeant Gullivan,” a voice on the radio said. “We're being overrun. For Medila's sake, get out of–”
 
-Leah heard it, too, and her thought processes felt like wading through knee-high soup. Keeping herself grounded was difficult, but it would be oh so easy to let her thoughts be pulled up into the clouds. Leah remembered clouds. She remembered floating around the skies of other Earths, goofing around with her friends. She remembered the journeys they took on their way to track down WHITE NETHER. All the funny, bizarre moments that they shared.
+Gullivan got cut short by a loud crunch.
 
-//Wait,// said a quiet voice from the back of Leah's mind. //I don't want to forget this. I don't want to be a bird-person. I don't want to go.// She conjured up the thought of Jaedan, of how goofy yet stoic he would look during this situation. //The birds are going to take him from me!//
+“Medila help us,” Hoygull whispered before turning back to the shark-punchers. “Listen, Quibba's still at the top of the spire. We need to get him down from there. Please, come with me.”
 
-Leah's blood ran hot. An intense rush of energy pulsed through her body. She could barely hear her own thoughts, but right now, she didn't need to. Her hazy vision tinted red. She jumped and swung her arm square at the mass of concrete, transferring her amassed rage and energy into its core.
+The shark-punchers nodded.
 
-At first, she felt pain. The horrendous melody of the statue stopped for a brief moment before the statue let out a piercing shriek. It swung at Leah, knocking her against the wall; all for naught, the statue was mortally wounded. It thrashed and screamed at the world as the small cracks from Leah's impact spread, the fractures snaking their way around the beast, the fissures deepening.
+Hoygull flew up the stairwell. On his way, he passed by the armory and swapped his combat shotgun for a more effective handheld grenade launcher.
 
-All at once, the statue collapsed into rubble.
+[[=image http://scp-wiki.wdfiles.com/local--files/component%3Atheme/logo.png class="scene-break"]]
 
-With the birdsong gone, her thoughts were once again her own. While Quinn regained his grasp on reality, Leah pulled him onto the monorail with whatever strength remained in her left arm.
+Hoygull, Quinn, and Leah eventually arrived atop the spire. 
 
-"Leah. Please, get some rest in the monorail," said Hoygull. "You have done more than enough." 
+Quibba sat at the grenade launcher, merely looking back with a pained expression. “Sorry, boss,” he said. “I cannot continue firing. Our friends have been pushed too close. The explosions will hurt them.”
 
-Leah's peripherals were shutting down. Her eyelids were getting heavy. Her body shivered. She knew this feeling well: shock. She'd probably broken her arm and the adrenaline was wearing off. She couldn't rest just now... That was one statue, and there were over eighty more...
+Hoygull watched over the railing. The Avian Division's front line was compromised, and the remaining lines struggled to prevent the onslaught of statues from pouring into Site-18.
 
-"Hey, Hoygull?"
+“Kesh, Crowl, and Duck are already retreating,” Quibba continued. “If the train rail is ready, we need to retreat too.”
 
-"Yes, Řezník?"
+Hoygull and Quibba shared a quick nod. Quibba dismounted from the grenade launcher, and together, the four rushed back downstairs.
 
-"If any of those statues lay a claw on Jae-... The team, I'm gonna have Avian Division brand chicken wings, y'hear?" Leah half-smiled.
+[[=image http://scp-wiki.wdfiles.com/local--files/component%3Atheme/logo.png class="scene-break"]]
 
-As the rest of the Centre's eyes opened, Leah's closed.
+When Hoygull returned to the bottom, he spotted Keshrayuth, Crowl, and Duck — along with the few remaining members of the Avian Division — spamming grenades at Site-18's entrance to dam the torrent of statues.
 
-There was no time to contemplate the shark puncher's idle threat; the explosions in the hallways beyond informed the team that the Avian Division was being pushed back to the monorail room. Looking down the hallway, Hoygull saw eight Avian Division fighters -- perhaps the last eight -- fleeing toward him. Among those eight were Kesh, Crowl, and Duck; Crowl and Duck had already discarded their grenade launchers, while Kesh emptied what was left of her clip into the statues before dropping her gun and following suit.
+Hoygull fired a grenade to help but realized that, in his rush, he had forgotten to pick up an extra magazine. He would be forced to ration the grenades already loaded. Not bothering to use the translator, he squawked at his team.
 
-"Get in!" Hoygull yelled. MTF-Eta-4 flew into the monorail, while Quinn carried Leah over his shoulder. SCP-2785 had already stumbled onto the monorail. The remaining five birds tried to escape, but the ceiling collapsed, allowing a flood of statues to rush into the room, trapping them.
+Eta-4 shouted orders for the Avian Division to fall back.
 
-"Start the monorail!" Hoygull yelled at SCP-2785.
+The pair of shark-punchers, Quibba, and Hoygull ran and flew down the maze-like hall to prepare the train for final departure, but hit a snag.
 
-The monorail crawled to a start, slowly, then glided along the tracks with ease. A few statues noticed the movement and dived towards the monorail. Some managed to grab onto the last cart as it began to leave the station.
+A towering, ibis-headed behemoth filled the entrance to the monorail station. Its shadow paralyzed all.
 
-Hoygull opened the window and fired a grenade at the last cart. The explosion detached it from the monorail, leaving the monorail free to continue to glide away.
+Hoygull instinctively raised the grenade launcher, eyes wide and panicked.
 
-In order to secure safe passage, Hoygull fired his remaining two grenades at the room holding the statues, causing the building above to crash down, blocking off the tunnel. This blocked off the tunnel. The statues were unable to follow any further.
+“Don't shoot! It's too close; you'll kill us all!” Quinn yelled, grabbing Hoygull by the wing. He maneuvered for a retreat into the tunnel system. “We'll need to find another way to Vegas!”
 
-They'd lost the battle, and with it, a good portion of their force. However, they were safe, and they soon might find something that would help them win the war.
+The statue inched forward, but not to attack. It was singing. Birdsong filled the hall and drowned Quinn out. The melody it sang was enthralling — pure bliss. He felt his troubles melt away and soar like a --Selachian-- hawk to the --sea-- skies.
 
-For the first time ever, Hoygull was going to Vegas.
-----
-Hoygull sat next to Quinn and Crowl on the monorail. It was designed to hold the entire Site; now it felt empty. A cold silence hung in the air between the three.
+Hoygull watched in despair as the Centre operatives melted before the advancing statue and its perverse calling.
 
-Quinn let out a sigh. "You know, I haven't gone this long without pummeling a Deviant before," he admitted in idle conversation. "You should try it sometime. The feeling of your hand shattering the scaly skin... That's my kind of high."
+Leah heard it, too, and her thought processes felt like wading through knee-high soup. Keeping grounded was difficult. It would be oh-so-easy to let her thoughts be pulled up, up, up to the clouds.
 
-Hoygull showcased non-existent hands as he raised his wings.
+Leah remembered clouds. She remembered floating across the skies of other Earths, goofing around with her friends. She remembered the journeys they took on their way to track down WHITE NETHER. All the funny, bizarre moments they shared.
 
-"Oh, that's bull shark," Quinn whispered, blushing. "Well, I hope clobbering that damn bird takes care of this feelin'."
+//Wait...// A tiny, quiet voice murmured from the back of Leah's mind. //I don't want to forget this! I don't want to be a bird-person. I don't want to go!// She conjured up the thought of Jaedan, of how goofy yet stoic he would look in her place.
 
-Another awkward silence followed. After some time, Hoygull spoke up. "Thanks again for the help," he said, his translator stumbling over his words. "Without you all, we would've died a long time ago."
+//The birds — they'll take him from me!//
 
-"It's, uh, it's nothing." Quinn stared into a point on the wall of the compartment. "Us Foundations need to look out for each other, right?"
+Leah's blood ran hot. A pulsating rush of energy cascaded through her body. She could barely hear her own thoughts, but right now, she didn't need to. Her hazy vision tinted red. She lunged several feet and swung her arm square at the hunk of concrete, transferring her amassed rage and energy into its core.
+
+At first, she felt pain. The statue's horrendous melody stopped for a moment before it let out a piercing shriek. It swung at Leah, knocking her across the tunnel and against the wall; though, all for naught. The statue was mortally wounded. It thrashed and screamed at the world as the small cracks from Leah's impact spread. The fractures snaked around it. The fissures deepened.
+
+All at once, the statue collapsed into ineffectual rubble.
+
+With the birdsong gone, her thoughts were again her own. While Quinn regained his grasp on reality, Leah dragged him into the front-most railcar with whatever strength remained in her left arm.
+
+“Please, Leah, get some rest,” Hoygull pleaded. “You have done more than enough.”
+
+Leah's peripherals were shutting down, narrowing into points of light. Her eyelids got heavy, and her body shivered. She knew this feeling well: //Shock.// She'd probably broken her arm, and the adrenaline was wearing off. She couldn't rest just now; that was one mere statue, and there were dozens more.
+
+“Hoygull?”
+
+“Yes, Řezník?”
+
+“If even one of those statues lays a claw on Jae– The team, I'm gonna have Avian Division-brand chicken wings — you hear?” Leah half-smiled.
+
+Quinn's eyes shot wide open. Leah's closed. She collapsed onto the seats inside.
+
+There was no time to contemplate her idle, feverish remark; deafening booms informed the team that they were now cornered inside the station. Looking down the hall, Hoygull saw eight Avian Division fighters — perhaps the last eight — fleeing toward him. Among those eight were Keshrayuth, Crowl, and Duck, leading the charge.
+
+Crowl and Duck had already discarded their grenade launchers. Kesh emptied what remained of her clip, dropped her gun, and trailed behind.
+
+“Get in!” Hoygull yelled. He and Quibba pressed inside the cockpit.
+
+Eta-4 screamed into the railcar. SCP-2785 yanked his right arm, decoupled it from an adjacent socket, and tumbled backward through the doors. The remaining five birds drifted down the hall with battered wings but found the ceiling had collapsed ahead. Statues swept through and surged the station, trapping them on all sides.
+
+Hoygull called to SCP-2785, desperate. “Start the train!”
+
+The car crawled to a start, then glided along its rail with ease. Some statues noticed the movement and dived onto the monorail track. A few managed to grab onto the rear-most railcar as it left the station.
+
+Hoygull opened the side window and fired a grenade, which streaked across the side of the train, inches from metal. It erupted against a railcar somewhere in the middle and detached it, allowing several to glide away freely.
+
+To secure safe passage, Hoygull fired his remaining two grenades at the roof. Like cauterizing a wound, the tunnel collapsed inward, blocking itself off.
+
+The statues were, luckily, unable to follow any further.
+
+They lost the battle, and with it, a good portion of their force. But for now, they were safe. And they might soon find something to help win the war.
+
+For the first time, Hoygull was going to Vegas.
+
+[[=image http://scp-wiki.wdfiles.com/local--files/component%3Atheme/logo.png class="scene-break"]]
+
+[[div style="font-size: 120%; font-weight: bold; text-align: center;"]]
+Inter-Site Monorail System
+Sundown
+[[/div]]
+
+Hoygull sat next to Quinn and Crowl inside the railcar. SCP-2785 and Quibba sat in the enclosed cockpit. The rest were in a side-compartment watching over Leah, but above all, resting. The train was designed to hold the entire Site; now, it felt empty.
+
+A cold silence hung in the air among the three. Crowl absently preened his wing feathers.
+
+Quinn let out a sigh. “You know, I haven't gone this long without pummeling a Deviant before,” he admitted in idle conversation. “You should try it sometime. The feeling of your //hand// shattering the scaly skin? That's my kind of high.”
+
+Hoygull raised his wings, displaying non-existent hands.
+
+“Oh, that's bull shark,” Quinn whispered. “Well, I hope that clobbering that damn bird takes care of this feeling.”
+
+Another awkward silence followed. Crowl hardly noticed.
+
+After some time, Hoygull spoke up. “Thanks again for the help,” he said. “Without you all, we would've died a long time ago.”
+
+“It's, uh, nothing.” Quinn stared into a point on the compartment wall. “Us Foundations need to look out for each other. Right?”
 
 Hoygull made the closest thing to a smile he could.
 
-"So, are we sure this missile will work?" Quinn squinted. "I mean, a Deviant Selachian's tougher than it looks. If a Deviant Bird is any tougher than that..."
+“So, are we sure this missile will work?” Quinn squinted. “I mean, a Deviant Selachian is tougher than it looks. If a Deviant Bird is any tougher than that–”
 
-Hoygull was speechless for a moment. Then, he spoke. "Just, trust your men out there. We'll worry about the rest."
+“Just trust your men out there. We'll worry about the rest.”
 
-Quinn stared out the window, exhaled, and then set down his head.
-[[/==]]
+Quinn looked vacantly out the window, exhaled, and set down his head.
+[[/div]]
 ----
-[[div class="team-bird-nav"]]
-= << [[[SCP-3632]]] | [[size 120%]][[[bird|TEAM BIRD]]][[/size]] | [[[umbral-migratory-sequence|UMBRAL_MIGRATORY_SEQUENCE.txt]]] >>
+[[div class="series-nav"]]
+<< [[[SCP-3632]]] | [[size 120%]][[[bird|TEAM BIRD]]][[/size]] | [[[umbral-migratory-sequence|UMBRAL_MIGRATORY_SEQUENCE.txt]]] >>
 [[/div]]
