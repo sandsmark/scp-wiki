@@ -29,16 +29,18 @@ a.collapsible-block-link { font-weight: bold; }
 
 }
 
- .itemInfoBackground{
+  .itemInfoBackground{
      position: relative;
      top: .5em;
      width: 100%;
+     max-width: 100% ;
+     height: auto ;
 
      font-size: .9604rem;
      text-transform: uppercase;
      letter-spacing: -.01em;
 
-     background: url(http://timebox.wikidot.com/local--files/the-jonbar-machine/ThonkBar3.png) center no-repeat; float: center;
+     background: url(http://timebox.wikidot.com/local--files/the-jonbar-machine/ThonkBar3.png) center no-repeat; float: center; width: 100%; max-width: 100%; height: auto;
 }
  .alignL{
     position: relative;
