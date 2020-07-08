@@ -1,0 +1,349 @@
+title:SCP-3326
+[[include :scp-wiki:theme:magnus-web-format]]
+[[include :scp-wiki:theme:black-highlighter-theme]]
+
+[[module CSS]]
+.blinkbar {color: red;font-size:125%; animation: blink 1.5s infinite; letter-spacing: -0.13em;}@keyframes blink{to{opacity: .0;}}@keyframes flicker {0% {opacity: 0.9890; }5% {opacity: 0.5842; }10% {opacity: 0.9865; }20% {opacity: 0.0412; }20% {opacity: 0.6255; }25% {opacity: 0.3157; }30% {opacity: 0.7328; }35% {opacity: 0.4654; }40% {opacity: 0.9128; }45% {opacity: 0.2449; }50% {opacity: 0.5485; }55% {opacity: 0.6438; }60% {opacity: 0.1180; }65% {opacity: 0.9085; }70% {opacity: 0.0266; }75% {opacity: 0.6795; }80% {opacity: 0.7812; }85% {opacity: 0.0117; }90% {opacity: 0.2239; }95% {opacity: 0.8897; }100% {opacity: 0.2260; }}@keyframes overlay-anim {0% {visibility: hidden; }10% {visibility: hidden; }11% {visibility: visible; }50% {visibility: hidden; }100% {visibility: hidden; }}
+.collapsible-block-folded a.collapsible-block-link {
+    animation: blink 0.8s ease-in-out infinite alternate;
+}
+@keyframes blink {
+    0% { color: transparent; }
+    50%, 100% { color: #b01; }
+}
+.email {float: center; border: solid 2px #000000; width: 88%; padding: 1px 15px; margin: 10px 10px 10px 10px; box-shadow: 0 1px 3px rgba(0,0,0,.5)}
+a.collapsible-block-link { font-weight: bold; }
+.tofrom {margin-left: 10px; margin-top: 5px; padding: 1px 15px; border-left: solid 3px maroon}
+[[/module]]
+
+[[module CSS]]
+
+ .itemInfo{
+     position: relative;
+     top: .5em;
+     width: 100%;
+
+     font-size: .9604rem;
+     text-transform: uppercase;
+     letter-spacing: -.01em;
+
+}
+
+ .itemInfoBackground{
+     position: relative;
+     top: .5em;
+     width: 100%;
+
+     font-size: .9604rem;
+     text-transform: uppercase;
+     letter-spacing: -.01em;
+
+     background: url(http://timebox.wikidot.com/local--files/the-jonbar-machine/ThonkBar3.png) center no-repeat; float: center;
+}
+ .alignL{
+    position: relative;
+    right: .195em;
+}
+ .alignR{
+    position: relative;
+    left: .195em;
+
+    text-align: right;
+}
+[[/module]]
+
+[[div style="border:solid 1px #999999; background:#f2f2c2; padding:5px; margin-bottom: 10px;"]]
+[[=]]
+++++ NOTICE FROM THE FOUNDATION RECORDS AND INFORMATION SECURITY ADMINISTRATION
+
+The following document was discovered following an unrelated investigation into the HM Prison Berwyn, Wales. An instance bearing the same name and credentials as D-394235 (Silver Ascott) was discovered currently serving 18 months for a group of burglaries. The document was discovered after a search of D-394235's old flat, it is assumed that the record is considered "3rd person documentation" thus surviving the transfer. SCP-3326 is currently contained in line with the procedures set out in the discovered document.
+
+-- Maria Jones, Director, RAISA
+[[/=]]
+[[/div]]
+
+
+[[div class="material-box" style="margin-bottom: 5px;"]]
+[[table class="itemInfoBackground"]]
+  [[row]]
+    [[cell class="alignL"]]
+      [[span style="font-weight: 900;"]]ITEM NUMBER:[[/span]]@@ @@SCP-3326
+    [[/cell]]
+    [[cell class="alignR"]]
+      [[span style="font-weight: 900;"]]LEVEL-03/CONFIDENTIAL[[/span]]
+    [[/cell]]
+  [[/row]]
+  [[row]]
+    [[cell class="alignL"]]
+      [[span style="font-weight: 900;"]]CONTAINMENT CLASS:[[/span]]@@ @@SAFE
+    [[/cell]]
+    [[cell class="alignR"]]
+      [[span style="font-weight: 900;"]]DISRUPTION CLASS:[[/span]]@@ @@VLAM
+    [[/cell]]
+  [[/row]]
+[[/table]]
+----
+[[table style="width: 100%; padding-top: 0px;"]]
+[[row]]
+[[cell style="border-bottom: 1px solid #AAA; border-right: 1px solid #AAA; text-align: center; width: 25%;"]]
+[[size 90%]]**Assigned Site**[[/size]]
+[[/cell]]
+[[cell style="border-bottom: 1px solid #AAA; border-right: 1px solid #AAA; text-align: center; width: 25%;"]]
+[[size 90%]]**Site Director**[[/size]]
+[[/cell]]
+[[cell style="border-bottom: 1px solid #AAA; border-right: 1px solid #AAA; text-align: center; width: 25%;"]]
+[[size 90%]]**Research Head**[[/size]]
+[[/cell]]
+[[cell style="border-bottom: 1px solid #AAA; text-align: center; width: 25%;"]]
+[[size 90%]]**Assigned MTF**[[/size]]
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="border-right: 1px solid #AAA; text-align: center; width: 25%;"]]
+[[size 80%]]Provisional Research Station 364 [[/size]]
+[[/cell]]
+[[cell style="border-right: 1px solid #AAA; text-align: center; width: 25%;"]]
+[[size 80%]]Dr. Xavier[[/size]]
+[[/cell]]
+[[cell style="border-right: 1px solid #AAA; text-align: center; width: 25%;"]]
+[[size 80%]]Dr. Vane[[/size]]
+[[/cell]]
+[[cell style="text-align: center; width: 25%;"]]
+[[size 80%]] MTF-Zeta-10 (Time Travelers) [[/size]]
+[[/cell]]
+[[/row]]
+[[/table]]
+[[/div]]
+
+[[div class="title-style"]]
+++++++ __**Special Containment Procedures**__
+[[/div]]
+SCP-3326 is to be contained at the location of its discovery. Provisional Research Station 364, disguised as a storage shed, has been constructed beside the entrance to the factory building housing SCP-3326. A chain fence has been constructed around the property along with visible mounted surveillance.
+
+One digital clock must be hung within the room housing SCP-3326, near the entrance (Designated T-3326-1), another must be hung outside the room (Designated T-3326-2). An activated XACTS device to be placed below T-3326-1. Any change in deviations between the times shown on said clocks must be reported to the current research head of SCP-3326, Dr Vane. If the deviations between clocks are to cease, Dr Vane must be immediately alerted and Protocol Realignment is to be carried out.
+
+All personnel working within the room must have at least level 3 clearance, alongside having undergone briefing with a qualified member of the RCT-Δt at Temporal Research Site 01.
+
+After successful activation of SCP-3326, MTF-Zeta-10 (Time Travelers) are to organise the cleanup of any remaining third-person documents relating to the subject's previous causal timeline. These documents are to be stored at Provisional Research Station 364 in a deep storage unit.
+
+Protocol Realignment details the reset of SCP-3326's strings. To perform Protocol Realignment a member of MTF-Zeta-10 is to deactivate the XACTS device within the room and exit within a 5 minute period. At this point, SCP-3326 will be seen to anomalously act in reverse of a normal loom. Once SCP-3326's strings separate from one each other the XACTS is to be reactivated. SCP-3326's chamber is then able to be reentered.
+
+[[div class="title-style"]]
+++++++ __**Description:**__
+[[/div]]
+
+[[include :scp-wiki:component:image-block-peppo
+|name=http://timebox.wikidot.com/local--files/the-jonbar-machine/5398688441_8a7f5e66e5_b.jpg
+|caption= SCP-3326 at time of discovery
+|width=200px
+]]
+
+SCP-3326 is a steel and wood structure resembling a 1794 Power Loom. No manufacturing details on SCP-3326 can be found aside from the word "Norns" etched into the side. SCP-3326 has the ability to rewrite a person's causal timeline by transporting them back to a specific Jonbar Hinge[[footnote]]A point at which two threads of history diverge.[[/footnote]]. This causal rewrite excludes previous third-person documentation.
+
+SCP-3326 was discovered after two teens were briefly reported missing after exploring the Derby Silk Mill. Said teens were later discovered 27 miles away in the Peak Shopping Village, claiming they had told their parents where they were going. [This was despite images posted on their social media account showing them in an old mill]. These images were removed and all parties were given Class-A amnestics.
+
+Due to this, an investigation into the Derby mill was launched. After one of the MTF Rho-45 (Rapid Response) GAD's[[footnote]]"GAD, or General Analysis Device, is a compact display apparatus with multiple visual filters and the capability to measure various environmental factors." - Basic Agent Field Manual.[[/footnote]] showed a spike in hume levels, SCP-3326 was found to be the source. It was quickly contained in situ, with Provisional Research Station 364 constructed nearby.
+
+Following this, two D-class subjects were transferred over from a nearby site. Tests performed are listed below.
+
+||~ Subject [age] ||~ Summary ||
+|| D-43728 [32] || Subject turned the wheel on the side of SCP-3326 and proceeded to unravel on the floor. no remains were discovered. It is unknown where D-43728 is currently. ||
+|| D-132843 [29] || Subject was given a microphone. They once again turned the wheel and unravelled, no change from the first instance was noticed. No contact with the D-Class was able to be established. ||
+
+[[div class="title-style"]]
+++++++ __**Addendum 1:**__
+[[/div]]
+
+2 days after activation of SCP-3326 a Foundation webcrawler (GAMMA-02-URÐR) located on facebooks servers, picked up mentions and posts from "Samuel Miles", the previous name for D-132843. However, no leaking of Foundation documents or information was detected. Furthermore, 2 minutes later, the name John Cawler (D-43728) was found on a 1993 death certificate with the cause of death listed as a fatal gunshot wound during a robbery.
+
+A short interview was set up by doctors posing as student researchers to ascertain how SCP-3326 affected Mr Miles. Mr Miles was found to possess no knowledge of the anomalous or his time at the Foundation; however, he had served a brief stint in prison for theft and was almost picked up by Foundation D-Class recruiters. Due to its extraneous nature, the interview is not logged here; although, the full log can be found in the RAISA archives upon request.
+
+[[div class="title-style"]]
+++++++ __**Addendum 2:**__
+[[/div]]
+
+Further tests were proposed to figure out the limitations of SCP-3326. Details are listed below.
+
+||~ Subject [age] ||~ Summary ||~ Observation notes ||
+|| D-57248 [27] || Subject twisted the wheel as normal. No deviations from the previous tests were noted. || Subject was discovered after holiday photos were posted to an online forum from Paris, France under their previous name. ||
+|| D-47321 [21] || Subject turned the wheel, unravelling as usual; however, the strings of SCP-3326 had become entangled. The subject appears to pause for a second before rapidly vanishing. ||Subject has not been found. ||
+
+During the activation phase of SCP-3326, two threads currently used by SCP-3326 became entangled. Despite D-47321 (Silver Ascott) disappearing, their new counterpart could not be located. Foundation web crawler is to search all social media sites for any individual named Silver Ascott and isolate any recorded instances.
+
+Following this Protocol Realignment was devised by Dr Vale to reverse the strings of SCP-3326 back to their previous states. Further tests are pending in order to locate the lost D-class personnel.
+
+[[div style="border:solid 1px #999999; background:#f2f2c2; padding:5px; margin-bottom: 10px;"]]
+[[=]]
+++++ NOTICE FROM THE FOUNDATION RECORDS AND INFORMATION SECURITY ADMINISTRATION
+
+As of 27/8/2020 three further duplicated instances of D-Class personnel have been noted. Permission to utilise SCP-3326 for encoded 2-way communication is underway; however, it has been hampered by concerns of compromising security in other causal timelines.
+
+-- Maria Jones, Director, RAISA
+
+----
+
+"It appears proximity of the strings on the loom are dependant on our deviations from the other causal timelines. This suggests that there would be a higher likelihood of any D-Class transferred across parallel timelines to once again become a D-class, same with doctors. However, as found from their test with Mr Miles, it appears some may make it through the net. It is currently deemed too high of a risk to attempt said transfer until more information is known." - Dr Vane
+
+-- Dr Vane, SCP-3326 Research Head.
+[[/=]]
+[[/div]]
+
+@@ @@
+
+[[div class="title-style"]]
+++++++ __**Addendum 4:**__
+[[/div]]
+[[div style="border:solid 1px #999999; background:#f2f2c2; padding:5px; margin-bottom: 10px;"]]
+[[=]]
+++++ NOTICE FROM THE FOUNDATION RECORDS AND INFORMATION SECURITY ADMINISTRATION
+
+Following RAISA Protocol, Dr Vane has proposed the following edits to the description and second addendum of this object. Please see below for details:
+----
+
+++++++ Proposed edits are marked in ##blue|**blue**##:
+[[/=]]
+[[div style="border:solid 1px #999999; background:#ffffff; padding:5px; margin-bottom: 10px; margin-left: 5px; margin-right: 5px; margin-top: 5px;"]]
+SCP-3326 is a steel and wood structure resembling a 1794 Power Loom. No manufacturing details on SCP-3326 can be found aside from the word "Norns" etched into the side. ##blue|SCP-3326's strings have been theorized to represent different, closely related, timelines.## SCP-3326##blue|'s primary anomalous effect is its ability to## rewrite a person's causal timeline by transporting them back to a specific Jonbar Hinge¹. This causal rewrite excludes previous third-person documentation.
+
+##blue|SCP-3326's secondary anomalous effect occurs when the strings of the power loom become intertwined. This has no detrimental effects to SCP-3326 when running normally, and can be easily fixed via Project Realignment. However, upon activation, it has shown that SCP-3326 struggles to differ the two timelines, thus forcing the subject into the secondary timeline. Due to evidence collected from D-394235's counterpart, it has been discovered that the subject is still influenced by SCP-3326's primary effect.##
+[[/div]]
+
+@@@@
+
+[[div style="border:solid 1px #999999; background:#ffffff; padding:5px; margin-bottom: 10px; margin-left: 5px; margin-right: 5px; margin-top: 5px;"]]
+|| D-47321 [21] || Subject turned the wheel, unravelling as usual; however, the strings of SCP-3326 had become entangled. The subject appears to pause for a second before rapidly vanishing. ||##blue| Subject was discovered in the HM Prison Berwyn, Wales by an alternate Foundation.## ||
+[[/div]]
+
+@@@@
+
+[[div style="border:solid 1px #999999; background:#f2f2c2; padding:5px; margin-bottom: 10px;"]]
+[[table style="width: 100%; padding-top: 0px;"]]
+[[row]]
+[[cell style="text-align: center; width: 25%;"]]
+[[size 120%]]**STATUS: ##green|APPROVED##**[[/size]]
+[[/cell]]
+[[/row]]
+[[/table]]
+[[/div]]
+[[/div]]
+
+
+[[=]]
+------
+[[collapsible show="Access SCiPNET Email?" hideLocation="bottom" hide="Are you sure you want to clear email history?"]]
+[[<]]
+[[=]]
+[[span class="blinkbar"]]NEW MESSAGE![[/span]]
+[[/=]]
+[[div class="email"]]
+[[div class="tofrom"]]
+**To:** 05-10
+**From:** O5-8
+**Subject:** Help
+**Status:** Received //(12/06/2019: 6:05pm)//
+[[/div]]
+------
+I wish to withdraw from the ranks of 05. I fully expect this to be a tough battle and I accept any repercussions and/or anmestics. I just... can't deal with this anymore. You look at me like a lesser being, I do everything to the best of my ability and it never feels like it is enough.
+[[/div]]
+
+@@ @@
+
+[[div class="email"]]
+[[div class="tofrom"]]
+**To:** 05-8
+**From:** 05-10
+**Subject:** Re:Help
+**Status:** Sent //(12/06/2019: 6:21pm)//
+[[/div]]
+------
+Sorry Eight, I just can't see this happening. We need you too much. You can try to petition the council but I highly doubt it will change anything.
+[[/div]]
+
+@@@@
+
+[[div class="email"]]
+[[div class="tofrom"]]
+**To:** 05-8
+**From:** 05-10
+**Subject:** Re:Help
+**Status:** Sent //(12/06/2019: 7:29pm)//
+[[/div]]
+------
+Hang on, I do have one chance. One, very slim, chance. It might be just what you need. But it comes with a risk. No one must know this has happened, least of all link me back to this mess.
+[[/div]]
+@@ @@
+[[=]]
+[[span class="blinkbar"]]NEW MESSAGE![[/span]]
+[[/=]]
+
+[[div class="email"]]
+[[div class="tofrom"]]
+**To:** 05-10
+**From:** 05-8
+**Subject:** Re:Help
+**Status:** Received //(12/06/2019: 7:34pm)//
+[[/div]]
+------
+As long as it has a chance of fixing me. I am all for it. I trust you Ten... don't let me down.
+[[/div]]
+[[/<]]
+[[/collapsible]]
+[[/=]]
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+
+[[div class="title-style"]]
+++++++ __**Addendum 5:**__
+[[/div]]
+On the 19th of June, 2019, SCP-3326 was activated by an unknown intruder in the containment area. Unfortunately, due to a site-wide power shortage, no videos of the intruders were captured before backup generators came online. All site staff are currently accounted for, with no discrepancies in their documentation. Three of the loom strings were found to be tangled. Further investigations are pending.
+@@ @@
+[[=]]
+[[collapsible show="⏣ 05 Clearance needed ⏣" hideLocation="bottom" hide="⎔ Accepted ⎔"]]
+[[<]]
+[[=]]
+[[span class="blinkbar"]]NEW MESSAGE![[/span]]
+[[/=]]
+[[div class="email"]]
+[[div class="tofrom"]]
+**To:** All_05
+**From:** O5-1
+**Subject:** 05-8
+**Status:** Received //(20/06/2019: 2:00pm)//
+[[/div]]
+------
+05-8 has been reported missing since 8 pm, 19th of June when their quarters were discovered empty by security. Due to an electrical malfunction at approximately 6 pm, all cameras were found to be looping, no evidence of physical tampering could be found. 05-8's body has been recovered yet; thus, his [[[http://www.scp-wiki.net/o5-command-dossier|official personnel document]]] has been appended to include "Possibly assassinated."
+
+We may need to start the selection process for a new 05-8 soon. Stay safe Ladies and Gentlemen.
+[[/div]]
+[[/<]]
+[[/collapsible]]
+[[/=]]
+
+[[footnoteblock]]
+
+[[div class="footer-wikiwalk-nav"]]
+[[=]]
+<< [[[SCP-WWWW]]] | Dr Moned | [[[SCP-YYYY]]] >>
+[[/=]]
+[[/div]]
