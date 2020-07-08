@@ -1,0 +1,747 @@
+title:Last Train Home
+[[module css]]
+/* Fonts */
+ 
+@import url("https://use.typekit.net/hey2uso.css");
+ 
+/* All Vars Used */
+@supports(display:grid) {
+:root {
+    /* S-CSS-P Integration */
+    /* If you're making a new CSS theme, please include the following three variables at minimum. */
+    --theme-base: "nuscp";
+    /* must be either "nuscp" or "sigma9" */
+    --theme-id: "iss theme";
+    /* set this to the URL of your theme's page - eg for "component:ar-theme", set it to "ar-theme" */
+    --theme-name: "nu-SCP ISS theme";
+    /* set this to your theme's full name */
+ 
+    /* Header */
+    --logo-image: url("http://kaktuskontainer.wdfiles.com/local--files/iss-part1/logo");
+    --header-title: "The Foundation";
+    --header-subtitle: "  ";
+ 
+    /* Typefaces */
+    --body-font: interstate, 'Lato', sans-serif;
+    --header-font: maecenas, 'Poppins', sans-serif;
+    --title-font: maecenas-heavies, 'Poppins', sans-serif;
+    --mono-font: "PT Mono", "Andale Mono", "Courier New", Courier, monospace;
+ 
+    /* Standard Colors */
+    --white-monochrome: 252, 252, 252;
+    /* white */
+    --pale-gray-monochrome: 234, 224, 224;
+    /* v light gray for blockquotes and stuff */
+    --light-gray-monochrome: 160, 150, 150;
+    /* light accent gray for login status */
+    --gray-monochrome: 72, 66, 66;
+    /* gray */
+    --dark-gray-monochrome: 0, 0, 0;
+    /* dark accent gray for sidebar background */
+    --black-monochrome: 0, 0, 0;
+    /* black */
+    --bright-accent: 88, 24, 69;
+    /* bright red */
+    --medium-accent: 199, 0, 57 ;
+    /* medium red */
+    --dark-accent: 216, 1, 63;
+    /* dark red */
+    --newpage-color: 210, 74, 32;
+    /* pale orange */
+ 
+    /* Primary Theme Colors */
+    --swatch-background: var(--white-monochrome);
+    --swatch-primary: var(--bright-accent);
+    --swatch-primary-darker: var(--medium-accent);
+    --swatch-primary-darkest: var(--dark-accent);
+    /* Primary Text Colors */
+    --swatch-text-dark: var(--black-monochrome);
+    --swatch-text-light: var(--white-monochrome);
+    --swatch-important-text: var(--bright-accent);
+ 
+    /* Primary Menu Colors */
+    --swatch-menubg-color: var(--white-monochrome);
+    --swatch-menubg-light-color: var(--pale-gray-monochrome);
+    --swatch-menubg-medium-color: var(--light-gray-monochrome);
+    --swatch-menubg-medium-dark-color: var(--gray-monochrome);
+    --swatch-menubg-dark-color: var(--dark-gray-monochrome);
+    --swatch-menubg-black-color: var(--black-monochrome);
+    --swatch-menubg-hover-color: var(--black-monochrome);
+    --swatch-menutxt-dark-color: var(--black-monochrome);
+    --swatch-menutxt-light-color: var(--white-monochrome);
+    --swatch-border-color: var(--black-monochrome);
+    /* Primary Header Colors */
+    --swatch-headerh1-color: var(--white-monochrome);
+    --swatch-headerh2-color: var(--white-monochrome);
+    --swatch-topmenu-border-color: var(--black-monochrome);
+    --swatch-topmenu-bg-color: var(--gray-monochrome);
+ 
+    --rating-module-button-color: var(--black-monochrome);
+    --rating-module-text-color: var(--swatch-menutxt-dark-color);
+ 
+    /* Header Gradients */
+ 
+    --gradient-header: linear-gradient(to top,
+        rgba(var(--bright-accent), 0.97) 0%,
+        rgb(var(--medium-accent)) 70%,
+        rgb(var(--medium-accent)) 100%);
+    --gradient-topmenu: linear-gradient(to bottom,
+        white 0%,
+        white 7.5rem,
+        rgba(var(--swatch-topmenu-border-color), 0.05) 7.5rem,
+        rgba(var(--swatch-topmenu-bg-color), 0.05) 7.625rem,
+        rgba(var(--swatch-topmenu-bg-color), 0.05) calc(100% - 0.125rem),
+        rgba(var(--swatch-topmenu-bg-color), 0.05) calc(100% - 0.125rem),
+        rgba(var(--swatch-topmenu-border-color), 0.05) 100%);
+    --gradient-topmenu-mobile: linear-gradient(to bottom,
+        rgba(208, 208, 208, 1) 0,
+        rgba(217, 217, 217, 1) 0.125rem,
+        rgba(217, 217, 217, 1) calc(3rem - 0.125rem),
+        rgba(217, 217, 217, 1) calc(3rem - 0.125rem),
+        rgba(208, 208, 208, 1) 3rem);
+    --diagonal-stripes: repeating-linear-gradient(45deg,
+        hsla(0, 0%, 100%, 0),
+        hsla(0, 0%, 100%, 0) 0.25vh,
+        rgba(88, 88, 88, 0.1) 0.35vh,
+        rgba(88, 88, 88, 0.2) 0.5vh);
+    --gradient-sidemenu-header: linear-gradient(10deg,
+        rgba(var(--dark-accent), 0.85) 0%,
+        rgba(var(--bright-accent), 0.95) 100%);
+    --gradient-background: linear-gradient(to bottom,
+        rgba(var(--background-gradient-color), 1) calc(calc(0 / 100) * var(--background-gradient-distance)),
+        rgba(var(--background-gradient-color), 0.987) calc(calc(0.8 / 100) * var(--background-gradient-distance)),
+        rgba(var(--background-gradient-color), 0.951) calc(calc(2.9 / 100) * var(--background-gradient-distance)),
+        rgba(var(--background-gradient-color), 0.896) calc(calc(6.4 / 100) * var(--background-gradient-distance)),
+        rgba(var(--background-gradient-color), 0.825) calc(calc(11 / 100) * var(--background-gradient-distance)),
+        rgba(var(--background-gradient-color), 0.741) calc(calc(16.6 / 100) * var(--background-gradient-distance)),
+        rgba(var(--background-gradient-color), 0.648) calc(calc(23.1 / 100) * var(--background-gradient-distance)),
+        rgba(var(--background-gradient-color), 0.55) calc(calc(30.4 / 100) * var(--background-gradient-distance)),
+        rgba(var(--background-gradient-color), 0.45) calc(calc(38.3 / 100) * var(--background-gradient-distance)),
+        rgba(var(--background-gradient-color), 0.352) calc(calc(46.7 / 100) * var(--background-gradient-distance)),
+        rgba(var(--background-gradient-color), 0.259) calc(calc(55.4 / 100) * var(--background-gradient-distance)),
+        rgba(var(--background-gradient-color), 0.175) calc(calc(64.4 / 100) * var(--background-gradient-distance)),
+        rgba(var(--background-gradient-color), 0.104) calc(calc(73.5 / 100) * var(--background-gradient-distance)),
+        rgba(var(--background-gradient-color), 0.049) calc(calc(82.5 / 100) * var(--background-gradient-distance)),
+        rgba(var(--background-gradient-color), 0.013) calc(calc(91.4 / 100) * var(--background-gradient-distance)),
+        rgba(var(--background-gradient-color), 0) calc(calc(100 / 100) * var(--background-gradient-distance)));
+    --header-background-image-size: 100% 7.5rem;
+ 
+    /* Spacing Measurements */
+    --offset-from-page-top: 0.75rem;
+    /* space between the top of the page and the start of the header */
+    --body-width-on-desktop: 44.25rem;
+    --sidebar-width-on-desktop: calc(var(--base-font-size)*16);
+    --sidebar-width-on-mobile: 14rem;
+    --scrollbar-width: 0.5625rem;
+    --border-styling: solid 0.0625rem rgb(var(--swatch-border-color));
+    --border-radius-width: 0.0625rem;
+ 
+    /* Box-Shadow 1px Borders */
+    --box-border-bottom: 0 0.0625rem 0 0 rgb(var(--swatch-border-color));
+    --box-border-top: 0 -0.0625rem 0 0 rgb(var(--swatch-border-color));
+    --box-border-left: -0.0625rem 0 0 0 rgb(var(--swatch-border-color));
+    --box-border-right: 0.0625rem 0 0 0 rgb(var(--swatch-border-color));
+    --box-border-all: 0 0 0 0.0625rem rgb(var(--swatch-border-color));
+ 
+    /* Sidebar */
+    --sidebar-transition-timing: 0.5s ease-in-out 0.1s;
+    --sidebar-internal-border-thickness: 0.125rem;
+ 
+    --background-gradient-color: 215, 215, 215;
+    --background-gradient-distance: 40rem;
+}
+ 
+body {
+    font-weight: 300;
+}
+ 
+a,
+a:active,
+a:visited {
+    color: rgb(var(--swatch-primary-darker));
+}
+ 
+strong, b {
+    font-weight: 500;
+}
+ 
+input, textarea, select, button {
+    font-weight: 200;
+}
+ 
+#header {
+    background-position: left .75rem top .65rem;
+    background-size: auto 6.375rem;
+    -webkit-filter: unset;
+            filter: unset;
+}
+ 
+#header h1 a {
+    margin-left: 7.75rem;
+}
+ 
+#header h1 a::before {
+    text-shadow: unset;
+}
+ 
+#header h2 {
+    background: url(http://kaktuskontainer.wdfiles.com/local--files/iss-part1/hindi);
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: contain;
+    top: 4.5rem;
+    left: 8rem;
+    height: 2rem;
+}
+ 
+#top-bar {
+    margin: 7.5rem 0 1.75rem 0;
+    height: 1.875rem;
+    font-size: calc(var(--base-font-size) * .75);
+}
+ 
+#top-bar div.top-bar > ul > li > a,
+#top-bar div.mobile-top-bar > ul > li > a {
+    color: rgb(var(--swatch-menutxt-dark-color)) !important;
+    font-family: var(--header-font);
+    text-transform: uppercase;
+}
+ 
+#top-bar div.top-bar > ul > li:hover > a,
+#top-bar div.top-bar > ul > li:focus-within > a,
+#top-bar div.mobile-top-bar > ul > li:hover > a,
+#top-bar div.mobile-top-bar > ul > li:focus-within > a {
+    color: rgb(var(--swatch-menutxt-light-color)) !important;
+}
+ 
+#top-bar div.top-bar > ul > li:hover,
+#top-bar div.top-bar > ul > li:focus-within,
+#top-bar div.mobile-top-bar > ul > li:hover,
+#top-bar div.mobile-top-bar > ul > li:focus-within {
+    background-color: rgba(var(--swatch-primary-darker), 0.93);
+    background-image: url(http://scp-wiki.wdfiles.com/local--files/theme%3Ach-scp-theme/subtle_white_mini_waves.png);
+    background-blend-mode: overlay;
+    background-size: auto 5.625rem;
+}
+ 
+#top-bar div.top-bar > ul > li > ul,
+#top-bar div.mobile-top-bar > ul > li > ul {
+    margin-top: 1.875rem;
+    background: rgba(var(--swatch-primary-darker), 0.93);
+    background-image: url(http://scp-wiki.wdfiles.com/local--files/theme%3Ach-scp-theme/subtle_white_mini_waves.png);
+    background-blend-mode: overlay;
+    background-size: auto 5.625rem;
+}
+ 
+#top-bar div.top-bar > ul > li > a::before {
+    height: calc(0.0625rem * 3);
+}
+ 
+#top-bar div.top-bar > ul > li > a::after {
+    height: calc(0.0625rem * 2);
+}
+ 
+#top-bar div.top-bar > ul > li > a::before,
+#top-bar div.top-bar > ul > li > a::after {
+    background-color: rgba(var(--swatch-border-color), 1);
+}
+ 
+#top-bar div.top-bar > ul > li > ul > li > a,
+#top-bar div.mobile-top-bar > ul > li > ul > li > a {
+    font-weight: 600;
+    font-size: calc(var(--base-font-size) * 0.9);
+}
+ 
+#skrollr-body::before {
+    background-image:
+        -webkit-gradient(linear,
+        left top, left bottom,
+        color-stop(0, rgba(var(--bright-accent), 0.5)),
+        color-stop(10rem, rgba(var(--bright-accent), 0.25)),
+        color-stop(22rem, rgba(var(--white-monochrome), 1)),
+        to(rgba(var(--white-monochrome), 1)));
+    background-image:
+        -webkit-linear-gradient(top,
+        rgba(var(--bright-accent), 0.5) 0,
+        rgba(var(--bright-accent), 0.25) 10rem,
+        rgba(var(--white-monochrome), 1) 22rem,
+        rgba(var(--white-monochrome), 1) 100%);
+    background-image:
+        -o-linear-gradient(top,
+        rgba(var(--bright-accent), 0.5) 0,
+        rgba(var(--bright-accent), 0.25) 10rem,
+        rgba(var(--white-monochrome), 1) 22rem,
+        rgba(var(--white-monochrome), 1) 100%);
+    background-image:
+        linear-gradient(to bottom,
+        rgba(var(--bright-accent), 0.5) 0,
+        rgba(var(--bright-accent), 0.25) 10rem,
+        rgba(var(--white-monochrome), 1) 22rem,
+        rgba(var(--white-monochrome), 1) 100%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center top 9.375rem;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+    z-index: -2;
+}
+ 
+#container-wrap-wrap::before {
+    content: " ";
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    top: 9.375rem;
+    background: url(http://scp-wiki.wdfiles.com/local--files/theme%3Ach-scp-theme/subtle_white_mini_waves.png);
+    background-blend-mode: overlay;
+    background-size: 5.625rem;
+    background-repeat: repeat;
+    background-position: 0 0;
+    pointer-events: none;
+    z-index: -1;
+}
+ 
+div#container-wrap {
+    background-image: unset;
+}
+ 
+div#container-wrap::before {
+    background-image: url(http://scp-wiki.wdfiles.com/local--files/theme%3Ach-scp-theme/subtle_white_mini_waves.png);
+    background-size: auto;
+    background-repeat: repeat;
+    background-position: 0 0;
+    background-blend-mode: soft-light;
+    content: " ";
+    height: 9.375rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+ 
+#side-bar {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+ 
+#side-bar .heading,
+#side-bar .side-block > .collapsible-block:nth-child(1) .collapsible-block-folded {
+    background:
+        url(http://scp-wiki.wdfiles.com/local--files/theme%3Ach-scp-theme/subtle_white_mini_waves.png),
+        var(--gradient-sidemenu-header);
+    background-size: auto;
+    background-repeat: repeat;
+    background-blend-mode: overlay, normal;
+    letter-spacing: .15em;
+}
+ 
+#side-bar .heading p,
+#side-bar .side-block > .collapsible-block .collapsible-block-link {
+    font-family: var(--header-font);
+    text-shadow: unset;
+}
+ 
+.code {
+    font-size: calc(var(--base-font-size) * 0.8);
+}
+ 
+textarea,
+input {
+    font-family: var(--body-font);
+}
+ 
+#search-top-box-form input[type="submit"] {
+    font-size: calc(var(--base-font-size) * 0.9);
+}
+ 
+#page-title,
+.meta-title,
+.meta-title span {
+    font-family: var(--header-font);
+    color: rgb(120, 40, 31);
+}
+ 
+/* Sky Sermon Nav CSS */
+ 
+.skysermon-nav {
+    --text-shadow: rgba(var(--black-monochrome), 0.35);
+    --box-shadow: rgb(var(--gray-monochrome));
+    --border-color: rgb(var(--newpage-color));
+    color: rgb(var(--white-monochrome));
+    text-shadow: 0.0625rem 0.0625rem 0.125rem var(--text-shadow);
+    border-radius: 0.0625rem;
+    border: double 0.188rem var(--border-color);
+    background-color: rgb(var(--bright-accent));
+    -webkit-box-shadow: 0.09375rem 0.09375rem 0.188rem var(--box-shadow);
+            box-shadow: 0.09375rem 0.09375rem 0.188rem var(--box-shadow);
+    padding: 0 0.125rem;
+    margin: 0.625rem 0 0.938rem;
+    margin-bottom: 1.250rem;
+}
+ 
+.skysermon-nav a {
+    color: rgb(255,237,6);
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 0.45em;
+    padding-bottom: 0.35em;
+}
+ 
+.skysermon-nav a::before {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    font-size: calc(var(--base-font-size) * 1.1);
+    line-height: calc(var(--base-font-size) * 0.7);
+    font-weight: 800;
+    top: 0;
+}
+ 
+.skysermon-nav .footer-wikiwalk-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    font-size: 75%;
+}
+ 
+.skysermon-nav .footer-wikiwalk-nav * {
+    line-height: 1em;
+}
+ 
+.skysermon-nav .footer-wikiwalk-nav .center {
+    -ms-flex-preferred-size: 8em;
+        flex-basis: 8em;
+    text-align: center;
+}
+ 
+.skysermon-nav .footer-wikiwalk-nav .left,
+.skysermon-nav .footer-wikiwalk-nav .right {
+    -ms-flex-preferred-size: calc(50% - 5em);
+        flex-basis: calc(50% - 5em);
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: calc(var(--base-font-size) * 0.8);
+    position: relative;
+}
+ 
+.skysermon-nav .footer-wikiwalk-nav .left {
+    text-align: right;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    border-right: 0.0625rem solid rgb(var(--black-monochrome));
+    padding-left: 1em;
+    padding-right: 0.5em;
+    margin: 0.35em 0 0.35em 0.35em;
+}
+ 
+.skysermon-nav .left > a::before {
+    content: "«";
+    left: -0.75em;
+    -webkit-transition: left 1s ease-in-out;
+    -o-transition: left 1s ease-in-out;
+    transition: left 1s ease-in-out;
+    -webkit-animation: bounce-left 1.7s infinite;
+            animation: bounce-left 1.7s infinite;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+}
+ 
+.skysermon-nav .left > a:hover::before {
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+}
+ 
+.skysermon-nav .footer-wikiwalk-nav .right {
+    text-align: left;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    border-left: 0.0625rem solid rgb(var(--black-monochrome));
+    padding-left: 0.5em;
+    padding-right: 1em;
+    margin: 0.35em 0.35em 0.35em 0;
+}
+ 
+.skysermon-nav .right > a::before {
+    content: "»";
+    right: -0.75em;
+    -webkit-transition: left 1s ease-in-out;
+    -o-transition: left 1s ease-in-out;
+    transition: left 1s ease-in-out;
+    -webkit-animation: bounce-right 1.7s infinite;
+            animation: bounce-right 1.7s infinite;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+}
+ 
+.skysermon-nav .right > a:hover::before {
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+}
+ 
+/* Rating Box */
+ 
+.page-rate-widget-box .rate-points, 
+.page-rate-widget-box .rateup, 
+.page-rate-widget-box .ratedown, 
+.page-rate-widget-box .cancel, 
+.page-rate-widget-box .rateup a, 
+.page-rate-widget-box .ratedown a, 
+.page-rate-widget-box .cancel a {
+    font-weight: 400;
+}
+ 
+@media only screen and (max-width: 768px) {
+    #header h1 {
+        font-size: calc(var(--base-font-size) * 1.25);
+    }
+ 
+    #header h1 a {
+        margin-top: calc(0.8rem + var(--offset-from-page-top));
+    }
+ 
+    #header h2 {
+        height: 1.15rem;
+    }
+ 
+    #side-bar {
+        left: calc(-17rem - var(--scrollbar-width));
+    }
+ 
+    #side-bar:target {
+        overflow-x: hidden;
+    }
+ 
+    #top-bar > div.mobile-top-bar > div.open-menu > p > a {
+        color: rgb(var(--swatch-menutxt-dark-color)) !important;
+    }
+ 
+    #skrollr-body:target #side-bar {
+        left: 0;
+    }
+ 
+    #side-bar:target .close-menu {
+        margin-left: calc(15.5rem + 2 * var(--scrollbar-width) + 0.125rem);
+    }
+ 
+    #skrollr-body:target #container {
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
+    }
+ 
+    #skrollr-body:target #container-wrap-wrap {
+        overflow: hidden;
+    }
+ 
+    #top-bar div.top-bar > ul > li > ul,
+    #top-bar div.mobile-top-bar > ul > li > ul {
+        -webkit-transform: translate(-50%, 0);
+            -ms-transform: translate(-50%, 0);
+                transform: translate(-50%, 0);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+ 
+    #top-bar div.mobile-top-bar > ul > li > ul > li {
+        max-height: calc(99vh / 15);
+        max-width: calc(98vw + 1px);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: calc(98vw + 1px);
+        -webkit-box-flex: 2;
+            -ms-flex-positive: 2;
+                flex-grow: 2;
+        -ms-flex-preferred-size: calc(98vw / 2);
+            flex-basis: calc(98vw / 2);
+    }
+ 
+    #top-bar div.top-bar > ul > li > ul > li > a,
+    #top-bar div.mobile-top-bar > ul > li > ul > li > a {
+        height: 100%;
+        width: 100%;
+        line-height: 1em;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        font-size: calc(var(--base-font-size) * 0.8);
+    }
+ 
+    #top-bar > div.mobile-top-bar > ul > li:nth-child(1) > ul > li:nth-child(1) > a::before,
+    #top-bar > div.mobile-top-bar > ul > li:nth-child(1) > ul > li:nth-child(11) > a::before,
+    #top-bar > div.mobile-top-bar > ul > li:nth-child(1) > ul > li:nth-child(21) > a::before,
+    #top-bar > div.mobile-top-bar > ul > li:nth-child(1) > ul > li:nth-child(31) > a::before,
+    #top-bar > div.mobile-top-bar > ul > li:nth-child(1) > ul > li:nth-child(41) > a::before,
+    #top-bar > div.mobile-top-bar > ul > li:nth-child(1) > ul > li:nth-child(51) > a::before {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+}
+@-webkit-keyframes bounce-left {
+  0% {
+    left: -0.75em;
+  }
+  50% {
+    left: -0.50rem;
+  }
+  100% {
+    left: -0.75em;
+  }
+}
+@keyframes bounce-left {
+  0% {
+    left: -0.75em;
+  }
+  50% {
+    left: -0.50rem;
+  }
+  100% {
+    left: -0.75em;
+  }
+}
+ 
+@-webkit-keyframes bounce-right {
+  0% {
+    right: -0.75em;
+  }
+  50% {
+    right: -0.50rem;
+  }
+  100% {
+    right: -0.75em;
+  }
+}
+ 
+@keyframes bounce-right {
+  0% {
+    right: -0.75em;
+  }
+  50% {
+    right: -0.50rem;
+  }
+  100% {
+    right: -0.75em;
+  }
+}
+}
+[[/module]]
+
+[[=]]
+[[module Rate]]
+[[/=]]
+
+There was calm in the skies, which was quickly broken by a number of children crying out in pain for a variety of reasons (mainly to do with their ears). Others were, er, let us say, expelling waste through their mouths into small bags.
+
+A large, white bird boomed across the horizon. Its tail emblazoned in bright colors, its wings painted the same, it was just one of many which had flown the same path that day. 
+
+For the passengers inside, it was quite the turbulent route. There was not much fun to be had on such a track; babies cried, cubicle workers slaved away on their laptops pissing out a connection via inflight wifi, and the hectic mishmash of everyone else attempting to fill out cards signifying why they had crossed country lines made it no easier to relax.
+
+One in particular didn't appear to fulfill any of the above descriptors. Though he carried the slouch of a cubicle worker and the clothing style of an average young adult, (which was, to say, a hoodie and jeans) he appeared to give off an aura of relative calm. Even halfway decent yogis and swamis, including the tourists who'd opened up an 'ashram' for the money, however, would disagree with that assessment. Inside, Jaideep Kumar was an infant wave in one very, very savage ocean.
+
+This would be the first time he had come //home.// Home to India, the motherland, apparently a land where dances erupted on every corner, music blared spontaneously, and people fell in love at first sight. The pretty little painting handcrafted in his mind by 22 years of Bollywood and Pollywood movies were //very// specific in how they made India look. Certainly, he wasn't expecting an exact one to one copy, but something //similar// where people were actually happy. He and the snake know he needs such a thing, what with home lately.
+
+> [[>]]
+> **I understand your reasons for coming back. But //here//? Why did you have to come back to //here//? We never came for a reason, Jaideep.**
+> [[/>]]
+> **Shut up.**
+> [[>]]
+> **Telling me such a thing never works, Jaideep. I'll be here forever.**
+> [[/>]]
+> **I know. But I'm trying to fill out this card. Just give me five seconds, and then we can have a conversation.**
+> [[>]]
+> **Five. Four. Thr-**
+> [[/>]]
+> **You know I know that you know what I mean.**
+> [[>]]
+> **I do.**
+> [[/>]]
+
+As always, the unnamed snake in his head tended to chime in with not-so-helpful messages from time to time. He'd learned to live with it -- it had gotten him out of a tough spot or two, at times. But dear //gods// above, was it annoying. At least it had learned to shut up when Jaideep told it to. The reins of his mind had learned to control the hissing, slithering thing much, much better.
+
+Jaideep began to feel a strange, sinking feeling. Pushing past the sleeping, drooling man in the window seat, he looked through it to the atmosphere outside. Ah. They were sinking. The pilots were likely drunk, Jaideep thought, with how turbulent the flight had been, but at least it was over. The plane made its final descent, bumping onto the runway, and the first thing Jaideep could sense was an overt feeling of //wrongness.// An otherwise indescribable feeling, but one he quickly chalked up to the heat, as it was sweltering.
+
+Collecting his carry-on and backpack, Jaideep politely waited for the //bebeji// in front of him to exit first. She was slow with her cane, but he could wait. It's what he was always told that he did best. With a final wave to the crew, he strolled out the walkway, into the main terminal itself. Met with the warmth of a decently sized building, and the hawking of vendors, and the smell of warm coffee and food, Jaideep thought that it wouldn't be 
+
+When he gingerly stepped forward, the snake hissed. It hissed, no, it //sizzled// like he'd never heard it before, as if it had touched its nonexistent feet to the most vile acid known to mankind, and its cries joined the chemical's as well. The cacophony was absolutely distressing, with the hornet's nest quickly made in his mind buzzing, buzzing, buzzing away. 
+
+As quickly as it came, it left. And the snake spat its words out with a venom and hatred he'd never heard it speak with before, somewhat ironically. Perhaps it was a cobra.
+
+> [[>]]
+> **Oh. It's //them.**//
+> [[/>]]
+> **Who?**
+> [[>]]
+> **No matter. Continue with the croissant buying.**
+> [[/>]]
+> **You have no stomach.**
+> [[>]]
+> **I know.**
+> 
+> **It's the principle of the thing.**
+> [[/>]]
+
+Rolling his eyes, Jaideep purchased the aforementioned baked goods with a small nod and smile to the cashier, and quickly collected his goods. Hushed whispers were exchanged for the rest of his walk to the baggage claim. Waiting amongst the slightly odorous masses bothered him, but not too much. Slapping at mosquitoes here and there, however, was the bane of him. Damn his sweet, American blood.
+
+Jaideep was just one of many, many passengers that day. But the hissing of the snake brought on a number of eyes. Those on the ground, and those above. For whatever reason, something about him felt //off.// Most could tell he was a foreigner. Most could perhaps tell the reason he'd left, from how he'd carried himself. Or from the photos in the wallet he dropped, then quickly picked up. Clumsiness never quite left him.
+
+And the gods watched.
+
+What remained of them watched. Some seats, some //thrones//, were empty. Most were, as a matter of fact. But the snake brought a possibility.
+
+And the people watched.
+
+Those which lurked in the shadows, leaping from darkness to darkness much like an alley cat. The snake brought worries.
+
+And the magicians watched.
+
+Moving barriers in their mind, opening themselves up from their current pitiful existence, thinking that perhaps the snake was a hope. The hiss //resounded.//
+
+So at the drop of a hat, the three parties quickly made their move, like a three-way poker game. Methodical, making sure not to reveal their hand to the others. Though they couldn't quite //see// each other, they could feel each other, like a fly caught in a spider's web feeling the final tugs before its life is finished. Mired in doubt, all of them thought the same thing in a twisted sort of unison, for different reasons and desires; that this, //this// was a game they could not afford to lose, and he was a pawn they could afford to promote some. Perhaps not to a queen immediately, you needed work experience for that, experience Jaideep wouldn't be able to quite earn yet, but still.
+
+In the erstwhile, while all circled above him like vultures, Jaideep sighed as he drove to his new place. It was a long drive, one that would take him past wheat fields, past crowded cities, past bouncing nightclubs, past thick forests, all the way down to a number of buildings that had stood there for years. Some were falling apart. Most were not. Kites proudly displayed their markings above the roofs of the buildings, and the soft hum of tractors in the distance could be heard. A small sign trumpeted the place's name in Hindi and Punjabi (though not Urdu, Jaideep noted). Mandawala Village. Perhaps this would be a new beginning -- he'd received a transfer already, and stayed in contact with them, the very one who he did this for, and he'd had a place lined up to stay in with his relatives already, who were absolutely overjoyed to receive him, and he'd have food like his, er, parents made, and--
+
+And throughout the clouded mist of Jaideep's brain, there was no further hissing. Both him and the snake thought one thing, and one thing in unison.
+
+He was home.
+[[=]]
+**<< [[[SCP-5903]]] | [[[saffronsands-hub| IN SAFFRON SANDS]]] | [[[god-i-hate-this | You Can't Live There Forever]]] >>**
+[[/=]]
