@@ -1,5 +1,11 @@
 title:SCP-5413
+[[include theme:black-highlighter-theme]]
 [[include :scp-wiki:component:pride-highlighter |inc-ally-alt= --]]]
+[[module CSS]]
+.email {float: center; border: solid 2px #000000; width: 88%; padding: 1px 15px; margin: 10px 10px 10px 10px; box-shadow: 0 1px 3px rgba[0,0,0,.5]}
+a.collapsible-block-link { font-weight: bold; }
+.tofrom {margin-left: 10px; margin-top: 5px; padding: 1px 15px; border-left: solid 3px maroon}
+[[/module]]
 [[module css]]
 /* Fonts */
  
@@ -665,9 +671,11 @@ input {
 }
 }
 [[/module]]
-[[=]]
-[[module Rate]]
-[[/=]]
+
+
+[[>]]
+[[module rate]]
+[[/>]]
 [[include :scp-wiki:component:info-ayers
 |lang=en[!-- EN/RU/KO/CN/FR/PL/ES/TH/JP/DE/IT/UA/PTBR --]
 |page=scp-5413[!-- url of your page on the scp wiki --]
