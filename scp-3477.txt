@@ -1,5 +1,16 @@
 title:SCP-3477
 [[include :scp-wiki:component:bhl-style-collapse-source]]
+[[module css]]
+/* bhl-style-collapse Sigma-9 Compatiblity Patch */
+#page-content .collapsible-block-folded, #page-content .collapsible-block-unfolded, #page-content .unfolded-collapse{
+    line-height: 1.4;
+}
+#page-content .collapsible-block-folded .collapsible-block-link::before, #page-content .collapsible-block-unfolded .collapsible-block-link::before, #page-content .unfolded-collapse::before {
+    font-family: monospace;
+    font-size: 130%;
+    margin-left: -0.4em
+}
+[[/module]]
 
 [[include info:start]]
 **SCP-3477:** Will the Real Harold Holt Please Stand Up?
