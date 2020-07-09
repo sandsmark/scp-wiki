@@ -12,6 +12,13 @@ title:spikebrennan's Personnel File
 || %%title_linked%% || %%rating%% || +[[#expr (%%rating%%+((%%rating_votes%%-%%rating%%)/2))]], -[[#expr ((%%rating_votes%%-%%rating%%)/2)]] ||%%comments%% || %%created_at%% || %%commented_at%% || %%size%% ||
 [[/module]]
 
+    [[include component:author-page
+      order=created_at |
+      perpage=100 |
+      background=yes |
+      image=yes |
+      sortbar=yes |
+    ]]
 
 
 
