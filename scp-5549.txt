@@ -1,0 +1,1377 @@
+title:SCP-5549
+[[=]]
+[[module Rate]]
+[[/=]]
+[[include :scp-wiki:component:info-ayers
+|lang=en[!-- EN/RU/KO/CN/FR/PL/ES/TH/JP/DE/IT/UA/PTBR --]
+|page=scp-5549
+|authorPage=http://www.scp-wiki.net/rounderhouse-s-author-page
+|comments=**SCP-5549:** SECOND SIN
+]]
+
+[[module CSS]]
+
+:root {
+    --barColour: #0c0c0c;
+}
+.hover {
+    color: rgb(var(--bright-accent));
+}
+.hover:hover {
+     text-decoration: none;
+    border-bottom: none;
+}
+
+.hover span {    display: none;}
+.hover:hover span {
+    position: absolute;
+    display: inline;
+    margin: 0px 0px;
+    height: auto;
+    width: auto;
+    background: #000;
+    border: 2px double rgb(var(--dark-accent));
+    color: #fff;
+    padding: 1em;
+}
+.hover:hover span span {
+    position: relative;
+    margin: auto;
+    height: auto;
+    width: auto;
+    border: none;
+    padding: 0;
+}
+.orderwrapper {
+    position: relative;
+    width: auto;
+    text-align: center;
+}
+
+.council1 {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 295px;
+    height: 295px;
+    margin: auto;
+    background-image: url("http://kaktuskontainer.wdfiles.com/local--files/format-hell/scp_trans.png");
+    background-size: 295px 295px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ordertitle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 38px;
+}
+
+.ordertitle h1 {
+    font-size: 220%;
+    color: #555;
+}
+
+.orderdescription {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 85px;
+    width: 100%;
+}
+
+.orderdescription p {
+    font-size: 90%;
+    color: #555;
+}
+
+.orderdescription h1 {
+    font-size: 120%;
+    color: #555;
+}
+
+.itemno {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 27px;
+}
+
+.itemno h1 {
+    font-size: 170%;
+    color: #555;
+}
+
+div.terminal{
+    border: 1px solid black;
+    border: solid 3px #BBBBBB;
+    border-radius: 5px;
+    background-color: #131;
+/* black shadow at the top of the terminal */
+    background-image: 
+        radial-gradient(ellipse 1000% 100% at 50% 90%, transparent, #121);
+    background-position: center;
+    display: block;
+/* shadow around the terminal */
+    box-shadow: inset 0 0 10em 1em rgba(0,0,0,0.5);
+/* prevents scanline from forming a scrollwheel */
+    overflow:hidden;
+}
+div.terminal blockquote {
+    background-color: black;
+    border: double 3px #80FF80
+}
+div.scanline{
+    margin-top: -40%;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    pointer-events: none;
+/* Safari 4.0 - 8.0 */
+    -webkit-animation: scan 12s linear 0s infinite; /* You may need to change this. If the bar goes by too quickly, increase 5s. */
+    animation: scan 12s linear 0s infinite; /* Same as above */
+    background: linear-gradient(to bottom, rgba(56, 112, 82,0), rgba(56, 112, 82,0.1)) !important;
+}
+
+div.text{
+    color: rgba(128,255,128,0.8);
+    padding: 1.5em;
+    padding-top: 40%;
+    font-family: monospace;
+    font-size: 1.2em;
+    }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes scan{
+    from{ transform: translateY(-10%);}
+    to{  transform: translateY(5000%);} /* You may need to change this depending on the length of your terminal. If the scanline stops halfway, increase the second number.*/
+}
+
+@keyframes scan{
+    from{ transform: translateY(-10%);}
+    to{  transform: translateY(5000%);} /* Same as above.*/
+}
+
+div.text a {
+    color: #90EE90;
+    text-decoration: none;
+    background: transparent;
+}
+div.text a.newpage {
+    color: #90EE90;
+    text-decoration: none;
+    background: transparent;
+}
+div.text a:hover {
+    color: #131;
+    text-decoration: underline;
+    background-color: #80FF80;
+    padding: 1px;
+}
+div.text a:hover::before{
+content: "> ";
+}
+div[style^="background: url(http://kaktuskontainer.wdfiles.com"] {
+    filter: invert(1);
+}
+
+div.quote {
+    --box-shadow: rgba(var(--swatch-menubg-black-color),0.1);
+    border: double 3px #80ff80;
+    background-color: #000;
+    -webkit-box-shadow: 0 0.063em 0.125em rgba(0,0,0,0.1);
+    box-shadow: 0 0.063em 0.125em rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 .063em .125em var(--box-shadow);
+    box-shadow: 0 .063em .125em var(--box-shadow);
+    padding: 0 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 2.500rem;
+}
+
+div.quote > div {
+    flex-basis: 50%;
+    padding: 0;
+    margin: 1em !important;
+}
+
+div.quote .scp-image-block {
+    border: solid 1px #80ff80;
+    position: relative;
+}
+
+div.quote div.scp-image-block::before {
+    background-color: rgba(128, 255, 128, 0.9);
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    mix-blend-mode: soft-light;
+}
+
+#page-title {
+    align: center;
+}
+[[/module]]
+[[include :scp-wiki:component:black-highlighter-theme-dev]]
+[[include :scp-wiki:theme:scp-offices-theme]]
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+= **RETINAL SCAN IN PROGRESS...**
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+= **IDENTITY CONFIRMED. WELCOME, RAISA DIRECTOR JONES.**
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+**Item #:** SCP-5549
+
+**Object Class:** Safe
+
+**Special Containment Procedures:** SCP-5549 is contained at Site-05, located in Western Siberia. 
+
+**Description:** SCP-5549 is a sapient entity with ontokinetic abilities. Any further information requests are to be forwarded to Director Sharp.
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+[[=]]
+[[collapsible show="ACCESS SCIPNET VIRTUAL TERMINAL" hide="WARNING: ACCESS IS NOW BEING LOGGED"]]
+[[<]]
+@@ @@
+@@ @@
+@@ @@
+[[div class="terminal"]]
+[[div class="scanline"]]
+[[/div]]
+[[div class="text"]]
+[[=]]
+[[size 150%]] __Terminal #013__[[/size]]
+[[/=]]
+@@ @@
+@@ @@
+@@ @@
+> AWAITING INPUT...
+| !access file="scp-5549"
+> ERROR: FILE LOCKED TO WHITELIST
+| !access whitelist-"scp-5549"
+> DISPLAYING WHITELIST FOR FILE "SCP-5549"
+> O5-1, O5-2, O5-3, O5-4, O5-5, O5-6, O5-7, O5-8, O5-9, O5-10, O5-11, O5-12, O5-13, O5-14
+| !access user="raisadmariajones"
+> DISPLAYING USER INFORMATION FOR USER "RAISA DIRECTOR MARIA JONES"
+[[div_ class="quote"]]
+[[div_ class="quotetext"]]
+**__RAISA DIRECTOR MARIA JONES__**
+**POSITION:** RAISA DIRECTOR 
+**CLEARANCE:** LEVEL 5
+**NAME:** JONES, MARIA
+**DOB:** 03-02-1960
+**EMPLOYEE SINCE:** 07-19-1963
+**PROJECTS:** N/A
+[[/div]]
+[[div_ class="scp-image-block block-right" style="width:300px;"]]
+[[image https://upload.wikimedia.org/wikipedia/commons/1/10/Shirley_Chisholm.jpg width="300px" style="width:300px;"]]
+[[/div]]
+[[/div]]
+| !access user="o5-14"
+> DISPLAYING USER INFORMATION FOR USER "O5-14"
+[[div_ class="quote"]]
+[[div_ class="quotetext"]]
+**__O5-14__**
+**POSITION:** OVERSEER 
+**CLEARANCE:** LEVEL 6
+**NAME:** N/A
+**DOB:** N/A
+**EMPLOYEE SINCE:** N/A
+**PROJECTS:** N/A
+[[/div]]
+[[div_ class="scp-image-block block-right" style="width:300px;"]]
+[[image https://i.imgur.com/vhpK61o.png width="300px" style="width:300px;"]]
+[[/div]]
+[[/div]]
+| !login user="o5-14" password="adropofsuninaglassofmoon"
+> VERIFYING...
+[[=]]
+@@------@@
+Welcome, O5-14
+@@------@@
+[[/=]]
+| !access file="scp-5549"
+> ACCESS GRANTED
+@@ @@
+@@ @@
+[[/div]]
+[[/div]]
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+[[image warn2.png]]
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+
+[[include component:image-block name=https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Vincent_Wigglesworth.jpg/800px-Vincent_Wigglesworth.jpg|caption=Director Sharp, Project LONDON BRIDGE lead researcher.]]
+
+**Item #:** SCP-5549
+
+**Object Class:** N/A
+
+**Special Containment Procedures:** Site-05 is a compound located in Western Siberia, dedicated solely to the containment of SCP-5549. The primary vector of containment is a 1,398 meter borehole drilled directly into the Earth, at the bottom of which is a square 5m cell containing SCP-5549. Motion sensors are set to alert Site-05 if any abnormal activity is detected from the cell.
+
+**Description:** SCP-5549, formerly D-293 & Doctor Jacques Boucher, is a hostile sapient entity with Class V ontokinetic abilities. Additionally, SCP-5549 is highly resistant to all forms of damage tested against it. The extent of SCP-5549's abilities is currently unknown.
+
+SCP-5549 was created by the Foundation Department of Inter-Anomaly Experimentation as part of Project LONDON BRIDGE.
+----
+[[=]]
+++ ADDENDUM 5549.1
++++ {{Project Proposal LONDON BRIDGE Committee Hearing, November 30th, 1975}}
+[[/=]]
+----
+[[div style="display: block; border:solid 1px #999999; background: #d7d7c7;  width:84%; padding:1px 15px; margin: 10px auto; auto"]]
+= **[BEGIN LOG]**
+
+----
+**SHARP:** Good evening, Liaison Je-
+
+**O5-7:** I'm not Doc Jefferson, son.
+
+**SHARP:** Pardon? I was told I had a meeting with Liaison Jefferson in C109, I migh- 
+
+**O5-7:** Sit back down.
+
+**SHARP:** Excuse me?
+
+**O5-7:** If you want to know what happened to your Project Proposal, then I suggest you take a seat.
+
+//Sharp sits in the wooden chair in front of the desk.//
+
+**O5-7:** You probably don't know me, do you?
+
+**SHARP:** I'm afraid I don't, sir.
+
+**O5-7:** Heh. Used to be a time that our faces were everywhere in the Foundation. Not anymore, it seems. My name hasn't been used since before you were born, but you know me as oh-five-seven.
+
+**SHARP:** .. Oh.
+
+**O5-7:** Five-seven, yes. Surprised?
+
+**SHARP:** I... wasn't aware you were going to be handling my case.
+
+**O5-7:** I'm not. Normally your proposal would've sat at the bottom of some yellow-bellied paper-pushing secretary's desk for six months and then rejected because he had a bad day. But I've taken an interest in your little experiment.
+
+**SHARP:** You have? Why?
+
+**O5-7:** Yes. Tell me, how long you been working here?
+
+**SHARP:** At Site-19? Abo-
+
+**O5-7:** No - for the Foundation.
+
+**SHARP:** Um, I think it's going to be 8 years this June, sir.
+
+**O5-7:** Mmm. Not long enough.
+
+**SHARP:** Sorry?
+
+**O5-7:** No fault of your own. Just a consequence of your age. I was hoping you'd remember the good days. Before... this.
+
+//O5-7 gestures around the conference room.//
+
+**O5-7:** It wasn't always like this, y'know.
+
+**SHARP:** Like what?
+
+**O5-7:** Like a fucking office. The place //reeks// of bureaucracy. It wasn't like this fifteen, twenty years ago. 
+
+**SHARP:** What //was// it like? 
+
+**O5-7:** We were pioneers! We changed the whole goddamn world. The Atreus Array, the SRAs, we even managed to exploit the fucking eel. Nowadays you have to fill out seventeen forms and take a piss test to borrow a pen. It's ridiculous.
+
+**SHARP:** I- Why are you telling me this?
+
+**O5-7:** I'm hoping you can help me change that. You and your project.
+
+**SHARP:** How?
+
+**O5-7:** You seem to have a good head on your shoulders. Did you know that they were considering dissolving the department before your proposal?
+
+**SHARP:** "They"?
+
+**O5-7:** The other members of the council. They think that the state of the Foundation right now is good. They're wrong, of course -- but that's not important right now. What //is// important is that I pushed your proposal through. It's been greenlit.
+
+**SHARP:** Oh - er, wow. Thank you, sir.
+
+**O5-7:** And I pulled a few strings, got you some nice little gifts. Access to some of our more... unique anomalies, and a whole Site to work out of. You're now the Head Researcher of Site-05. The paperwork will all come through shortly.
+
+**SHARP:** I... God, I can't believe this is happening.
+
+**O5-7:** Just remember that I'm gambling a lot on this little project. Disappoint me, and both of us will suffer. I have the strength to weather the shitstorm that would fall on us. But I don't think you do.
+
+**SHARP:** I won't disappoint you, sir. You have my word.
+
+**O5-7:** Good man. Godspeed.
+
+-----
+
+= **[END LOG]**
+[[/div]]
+
+----
+[[=]]
+++ ADDENDUM 5549.2
++++ {{Foundation Department of Inter-Anomaly Experimentation: Project LONDON BRIDGE Mission Statement}}
+[[/=]]
+----
+[[div style="background: url("http://scptestwiki.wdfiles.com/local--files/yurt/science.png") top 5px right 5px no-repeat; background-size: 75px 75px;  border: solid 1px rgba(var(--dark-accent),0.5); padding: 5px 15px 15px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); width: 84%; margin: 4%; background-color: #d7d7c7; color: rgb(var(--black-monochrome));"]]
+[[=]]
+++ PROJECT LONDON BRIDGE
++++ Department of Inter-Anomaly Experimentation
+[[/=]]
+**__Purpose:__** To create an artificial anomaly designed to assist Foundation containment efforts and advance scientific knowledge of major contained anomalies.
+
+**__Subject(s):__** A D-class personnel, chosen after project approval and subject to intense psychological and physical vetting.
+
+**__Procedure:__** Subject to be repeatedly exposed to several anomalies as chosen by Project Lead Sharp, and brought close to expiration. Subject is then to be exposed to [[[SCP-427]]] and treated with non-anomalous medical technologies.
+[[/div]]
+
+
+----
+[[=]]
+++ ADDENDUM 5549.3
++++ {{D-293 Initial Recruitment Interview, December 15th, 1975}}
+[[/=]]
+----
+[[div style="display: block; border:solid 1px #999999; background: #d7d7c7;  width:84%; padding:1px 15px; margin: 10px auto;"]]
+= **[BEGIN LOG]**
+
+----
+**SHARP:** Good evening.
+
+**D-293:** W-who are you?
+
+**SHARP:** Put simply, we represent an independent research group that has a vested interest in making sure humanity is protected from threats. 
+
+**D-293:** Like, diseases? Nuclear war? 
+
+**SHARP:** Not quite. We leave that to others -- I'm talking about unexplainable things. Ideas that hide themselves in your memory, species that have evolved specifically to hunt humans -- the kinds of things we used to call demons and monsters.
+
+**D-293:** Monsters aren't real. 
+
+**SHARP:** We make sure people keep believing that.
+
+**D-293:** Is this some sort of joke? 
+
+**SHARP:** Far from it. Protecting the world is bloody work. And we need your help.
+
+**D-293:** What could you possibly want from me?
+
+**SHARP:** We need people. We need individuals willing to work with us to protect the rest of the world from those threats. We need people with nothing left to lose.
+
+**D-293:** I-I don't have any special skills or anything. I'm a college dropout. I don't know how I can help you.
+
+**SHARP:** Everyone can help in their own ways. 
+
+**D-293:** What's mine?
+
+**SHARP:** Testing. It's ugly work, but someone has to do it. There's a lot of people counting on you. 
+
+**D-293:** Why should I care? There's a thousand inmates in here, get someone else.
+
+**SHARP:** There are benefits. We have influence. We can commute your sentence, make sure that your family doesn't have to suffer from your absence. They'll be provided restitution, and you can greet them in person after a few years of working for us, instead of occasionally through a glass panel and telephone.
+
+//Silence.//
+
+**D-293:** Alright. Okay, I'll do it. 
+
+-----
+
+= **[END LOG]**
+[[/div]]
+
+----
+[[=]]
+++ ADDENDUM 5549.4
++++ {{D-293 Medical Report, December 29th 1975}}
+[[/=]]
+----
+[[div style="display: block ; border : dashed 1px #444444 ; background :#d7d7c7; margin-left : auto ; margin-right : auto ; padding:4%;"]]
+[[=]]
+PROJECT LONDON BRIDGE
+[[size 80%]]Dr. Jacques Boucher[[/size]]
+[[/=]]
+-----
+||= Age || 29 ||
+||= Sex || F ||
+||= Ethnicity || Asian-American ||
+||= Height || 162cm ||
+||= Weight || 54.2kg ||
+||= Localized Hume Rating || 99/103 ||
+
+Height and weight are about average. Hume rating is well in the range of nonanomalous. I have to say, we picked a quality test subject, about as normal as it gets. Well, I say that, and then I remember she killed a person. On that note, I'd like to make an addition to the testing schedule: Semi-regular psychological check-ups. I can't imagine this kind of testing to be good for one's mental health, and keeping the subject complacent is rather important in this venture. I'd be more than happy to handle those myself, if you'd like.
+> Much appreciated, Boucher. Forward me a prospective schedule at your leisure.
+> [[>]]
+> - Sharp
+> [[/>]]
+[[/div]]
+
+----
+[[=]]
+++ ADDENDUM 5549.5
++++ {{Site-05 Testing Log Excerpt, Jan-May}}
+**Fileserv Notice:** Hover over the ellipses icon to display a short summary of the anomaly.
+[[/=]]
+----
+||~ Item ||~ Result ||~ Recovery Notes ||
+|| [[[http://www.scp-wiki.net/scp-494|SCP-494]]][[span class="hover"]][[span]]SCP-494 is a pair of fingerless gloves. When both are worn and an object held in each hand, two objects’ makeup will be suddenly traded.[[/span]]...[[/span]]|| Dr. Franz fitted SCP-494 onto his hands. He was ordered to hold the subject's right shoulder in his right hand and a rod of titanium alloy in his left. || Two seconds after the test began, subject tore themselves from Dr. Franz's grip at the sight of titanium spreading across their shoulder. Subject was forcibly sedated and returned to containment cell. ||
+|| N/A || N/A || Subject reacted extremely negatively to Test 494.01, demanding to be released immediately. Violent reactions to any personnel entering the containment cell only subsided after prolonged solitary confinement. In order to prevent similar incidents in the future, Dr. Boucher's proposal of regular psychological evaluations has been approved. ||
+----
+[[=]]
+++ ADDENDUM 5549.6
++++ {{D-293 Medical Report, May 16 1976}}
+[[/=]]
+----
+[[div style="display: block ; border : dashed 1px #444444 ; background : #d7d7c7; margin: 10px auto; padding:4%;;"]]
+[[=]]
+PROJECT LONDON BRIDGE
+[[size 80%]]Dr. Jacques Boucher[[/size]]
+[[/=]]
+-----
+||= Height || 184cm ||
+||= Weight || 48.7kg ||
+||= Localized Hume Rating || 95/102 ||
+
+Slight drop-off in weight, accompanied by a sharp increase in height. Most of that is in the neck, which is slightly concerning based on how fragile her collarbone looks. Like it might snap with a touch. Actually, that's in regards to all her bones; she might be suffering from calcium deficiency. Regardless, she's not dead, so that's already a big plus. I'm going to recommend a higher calorie diet to make up for that weight loss. Since we haven't exposed her to any ontokinetics yet, I don't think Hume Rating will be a problem. Any fluctuations will probably just be caused by us keeping so many anomalous things in one place.
+[[/div]]
+
+----
+[[=]]
+++ ADDENDUM 5549.7
++++ {{D-293 Psychological Screening Interview #1, June 2nd 1976}}
+[[/=]]
+----
+[[div style="display: block; border:solid 1px #999999; background: #d7d7c7;  width:84%; padding:1px 15px; margin: 10px auto;"]]
+= **[BEGIN LOG]**
+
+----
+//[Elevator opens. BOUCHER steps out.]//
+
+**BOUCHER:** Hello.
+
+**D-293:** Hu - oh! Hello.
+
+**BOUCHER:** Remember those psych sessions I was been talking about? They finally got authorized.
+
+**D-293:** Oh, uh, wow. That's good, I guess.
+
+**BOUCHER:** Yeah. How've you been feeling lately?
+
+**D-293:** Bored... lethargic. Not much to do down here.
+
+**BOUCHER:** Alright, I'll see what I can do. And beyond that? 
+
+**D-293:** Not good, honestly.
+
+**BOUCHER:** And Why's that?
+
+**D-293:** The test. I freaked out, didn't I?
+
+**BOUCHER:** I- well, I suppose. But you handled it better than you could have.
+
+**D-293:** It was pretty bad. I.. didn't know it would be that bad.
+
+**BOUCHER:** It's not your fault. These kinds of.. anomalies are hard to predict, even for us. 
+
+**D-293:** Do you guys really understand these things?
+
+**BOUCHER:** Better than anyone else in the world.
+
+**D-293:** The world doesn't even know about them.
+
+**BOUCHER:** Exactly.
+
+//[Both laugh for a moment.]//
+
+**D-293:** Really though. I saw the look in the Sharp's eyes when he started the test.
+
+//[BOUCHER fidgets in his seat.]//
+
+**BOUCHER:** Well, that's what you're here for. To help us truly understand these things, the way they affect people. We're not there yet, but we're getting there.
+
+**D-293:** I'm not really sure how changing my arm to metal would help anyone. 
+
+**BOUCHER:** Well, we need to know how different anomalies interact with humans. When a soldier somewhere gets attacked with out of those anomalies, we're gonna be able to thank you for teaching us how it worked.
+
+**D-293:** Hm. I... guess that makes sense.
+
+**BOUCHER:** Every single test furthers our understanding of these things. You're an invaluable asset to this project.
+
+**D-293:** Mhm. Thanks, doctor.
+
+**BOUCHER:** It's what I'm here for.
+-----
+= **[END LOG]**
+[[/div]]
+----
+[[=]]
+++ ADDENDUM 5549.8
++++ {{Site-05 Testing Log Excerpt, June-Oct}}
+[[/=]]
+----
+||~ Item ||~ Result ||~ Recovery Notes ||
+|| [[[http://www.scp-wiki.net/scp-217|SCP-217]]][[span class="hover"]][[span]]SCP-217 is a virus that alters the biochemistry of organic tissue, causing organic matter to re-arrange into a form of “organic metal”.[[/span]]•••[[/span]] || Subject intravenously exposed to anomaly through the brachial artery. Within 9 hours, infection spread through left arm and into torso. Subject repeatedly voiced extreme discomfort and requested the test be ended. Request declined. After infection had spread to collarbone, subject was exposed to SCP-427. || Subject made full recovery in 24 hours. Physical noted significantly denser muscle tissue, layered with deposits of an unknown metal. ||
+|| [[[http://www.scp-wiki.net/scp-212|SCP-212]]][[span class="hover"]][[span]]SCP-217 is a surgical robot that attempts to "improve" any organic matter presented to it. Improvements that have been observed include: lining of joints with graphite, replacement of biological organs with artificial ones, addition of metal plates to bones, addition of new or duplicate organs, and replacement of teeth with small serrated steel bands, among many others.[[/span]]•••[[/span]] || Subject sedated and SCP-212 activated. Anomaly initially displayed confusion at subject's body but quickly began operating. Operation duration was 9 hours. All incisions were sealed correctly, with no signs of infection. || Significant alterations to subject's body structure were made, including removal of large amounts of body fat, hollowing of bones, placement of a metal structure around the heart, and placement of two unknown organic masses within the torso. The purposes of these masses is unknown. ||
+|| [[[http://www.scp-wiki.net/scp-008|SCP-008]]][[span class="hover"]][[span]]SCP-008 is a complex prion disease. Infected organisms rapidly die before returning in a state of limited brain and body functionality. [[/span]]•••[[/span]] || Subject intravenously exposed to anomaly through the brachial artery. Standard escalation of symptoms proceeds, and subject is unconcious within two hours. || Subject exposed to SCP-427 approximately two hours and thirteen minutes following initial infection. All external symptoms rapidly reversed. Examination revealed that certain internal symptoms remained -- notably, increased muscle endurance and strength and high blood viscosity resulting in negligible blood flow from wounds. ||
+
+----
+[[=]]
+++ ADDENDUM 5549.9
++++ {{D-293 Medical Report, October 9th 1976}}
+[[/=]]
+----
+[[div style="display: block ; border : dashed 1px #444444 ; background : #d7d7c7; margin-left : auto ; margin-right : auto ; width : auto ; padding:4%;"]]
+[[=]]
+PROJECT LONDON BRIDGE
+[[size 80%]]Dr. Jacques Boucher[[/size]]
+[[/=]]
+-----
+||= Height || 204cm ||
+||= Weight || 51.5kg ||
+||= Localized Hume Rating || 98/101 ||
+
+Another increase in height, though this time a weight gain came along with it. Skin has also become noticeably tougher, and feels almost reinforced. I'd like to schedule an x-ray, but I'm unsure if we can get that out here. 
+Of note, I noticed bruises on her sternum during the check-up. I won't ask where they came from, but I strongly advise you to be more careful around her. Damaging your test subject is inadvisable.
+> Your concern is appreciated, but unrequested. We're handling the subject as necessary. And please refrain from referring to them with gendered pronouns.
+> [[>]]
+> - Sharp
+> [[/>]]
+[[/div]]
+----
+[[=]]
+++ ADDENDUM 5549.10
++++ {{D-293 Psychological Screening Interview Excerpts, June-Oct, 1976}}
+[[/=]]
+----
+[[div style="display: block; border:solid 1px #999999; background: #d7d7c7;  width:84%; padding:1px 15px; margin: 10px auto;"]]
+= **[INTERVIEW #4]**
+----
+//[Elevator door opens, BOUCHER steps out.]//
+
+**D-293:** Welcome back.
+
+**BOUCHER:** Yeah, hey. How're you feeling? You said you were bored last time, I had them bring down a new set of books. 
+
+**D-293:** I saw.
+
+**BOUCHER:** Do you... like them?
+
+**D-293:** They're fine.
+
+**BOUCHER:** Is something wrong?
+
+**D-293:** What do you think?
+
+**BOUCHER:** Okay, something is wrong. Talk to me. It's what I'm here for.
+
+**D-293:** I'm trapped in a cell for most of the day, and when I get out it's to have those insane tests run on me, and then right back in. I'm never getting out of here.
+
+**BOUCHER:** That's not true. We've already gotten through the first round of testing, that's great progress! And you're fine, right? 
+
+**D-293:** I don't feel fine. I feel horrible. I want to throw up and cry at the same time after I get out of the testing chamber. I don't think I've seen the sun in weeks.
+
+//[D-293 chokes down a sob. BOUCHER moves to comfort her.]//
+
+**BOUCHER:** Hey, hey, woah. It's okay.
+
+**D-293:** I'm so-
+
+**BOUCHER:** You've got nothing to be sorry about. But you do have to tell me about these things, you know. I'm here to help you.
+
+**D-293:** Yeah. Yeah, I know.
+
+**BOUCHER:** I'm going to see what I can do about those issues as soon as I get back to my office, alright?
+
+**D-293:** Alright. //[Wipes tears.]// Thank you.
+
+-----
+= **[INTERVIEW #6]**
+----
+
+**BOUCHER:** Oh, I haven't used those things in years.
+
+**D-293:** Why not?
+
+**BOUCHER:** They're nonsense. Inkblots aren't exactly a good clinical tool, to say the least.
+
+**D-293:** Mhm. Hey, Doctor?
+
+**BOUCHER:** Yes?
+
+**D-293:** I've been... noticing -- Can you answer this honestly? Please?
+
+**BOUCHER:** Er, I'll try. What is it?
+
+**D-293:** Do you guys know what you're doing?
+
+**BOUCHER:** I- What do you mean?
+
+**D-293:** The testing. I - I don't see any pattern. I can't figure out what you want from me.
+
+**BOUCHER:** I'm... not following.
+
+**D-293:** It seems like you're just throwing things at the wall to see what sticks. At my expense.
+
+**BOUCHER:** Oh, no. God no. We're not animals, we have a plan.
+
+**D-293:** What is it?
+
+**BOUCHER:** I- You know I can't tell you.
+
+**D-293:** I don't think you know either. 
+
+**BOUCHER:** Look, these things aren't supposed to exist. The rest of the world doesn't even //know// about them! And we're figuring out how to safely handle them. Trust me, nobody understands these things like we do. 
+
+**D-293:** I get that, it's just... God, I hate feeling like this.
+
+**BOUCHER:** Like what?
+
+**D-293:** I'm just sick and scared. All the damn time.
+
+**BOUCHER:** Scared of what?
+
+**D-293:** I don't know. My next test. Sharp.  
+
+**BOUCHER:** It's okay to be scared. But just- we're on your side. //I'm// on your side. You know that, right?
+
+**D-293:** Yeah. Yeah, I know.
+----
+= **[INTERVIEW #7]**
+----
+
+**BOUCHER:** Since you asked me a while ago... I managed to get you a set of these.
+
+**D-293:** Are those the... inkblot things?
+
+**BOUCHER:** Rorschach cards, yes. Pseudoscience, but entertaining pseudoscience. Up for it?
+
+**D-293:** Not like I've got much better to do. I finished my copy of Proust.
+
+**BOUCHER:** Alright then. What do you see?
+
+**D-293:** Hm. A stain. No, a bruise.
+
+**BOUCHER:** And now?
+
+**D-293:** A bone. Yeah.
+
+**BOUCHER:** And this one?
+
+**D-293:** Huh. Reminds me of... Captain Hayes' tattoo.
+
+**BOUCHER:** What?
+
+**D-293:** Er-
+
+**BOUCHER:** Do you... need to talk about something?
+
+**D-293:** No! No. I'm fine. It's fine.
+
+[[/div]]
+
+----
+[[=]]
+++ ADDENDUM 5549.11
++++ {{Site-05 Testing Log Excerpt, Nov-Jan}}
+[[/=]]
+----
+||~ Material ||~ Test Summary ||~ Recovery Notes ||
+|| [[[http://www.scp-wiki.net/scp-222|SCP-222]]][[span class="hover"]][[span]]SCP-222 is a cave in Italy containing several stone coffins. If an organism sleeps in one of the coffins, within 24 hours, a clone of the organism will manifest in the cave. [[/span]]•••[[/span]] || Subject was placed into coffin, test proceeded without incident. Clone, temporarily designated D-293-b, was recovered from caves. || Notably, D-293-b was identical to D-293 prior to testing, suggesting that their DNA has not been altered. ||
+|| [[[http://www.scp-wiki.net/scp-610|SCP-610]]][[span class="hover"]][[span]]SCP-610 is a contagious skin disease that results in the death of the infected, followed by a return of life functions. Scar tissue formed during infection will begin to mutate and move toward other vectors of infection.[[/span]]•••[[/span]] || Subject and D-293 were placed in a testing chamber, and D-293-b was exposed to a sample of SCP-610.  The temperature of the chamber was increased and within seven minutes, D-293-b had been completely covered. Subject panicked and attempted to exit testing chamber, slamming against the door several times. When deterrent electrical shocks were applied, it attempted to break through the observation glass. Despite this, they were quickly absorbed into the rapidly-increasing mass of SCP-610. Testing was stopped and SCP-427 was applied. || The mass quickly shrank in size, disappearing entirely within four minutes. Subject was recovered from the center of the mass, unconscious. D-293-b was not recovered. Subject was noted to have significantly altered body proportions, growing by several centimeters and having more clearly visible blood vessels. ||
+|| [[[http://www.scp-wiki.net/scp-682|SCP-682]]][[span class="hover"]][[span]]SCP-682 is a reptilian creature with massive regeneration and adaptive capabilities. It has been observed moving and speaking with its body 87% destroyed or rotted.[[/span]]•••[[/span]] || 10g of flesh were cut from SCP-682 using SCP-2207. This flesh was dried and placed into cold storage, effectively freezing it. Subject was forcibly sedated and prepared for surgery. Incision was made in lower left forearm and sample was placed within after being slightly heated. Incision was sealed and subject placed into recovery. || Sample began immediate growth and spread through subject's body, causing significant distress to subject. After Sample has spread to upper calf when Dr. Boucher, the operating surgeon, amputated D-293's left leg at the knee. After decontamination, the leg was observed slowly regrowing. Growth did not halt after the limb had reformed.||
+
+----
+[[=]]
+++ ADDENDUM 5549.12
++++ {{D-293 Medical Report, January 12th 1976}}
+[[/=]]
+----
+[[div style="display: block ; border : dashed 1px #444444 ; background : #d7d7c7; margin-left : auto ; margin-right : auto ; width : auto ; padding:4%;"]]
+[[=]]
+PROJECT LONDON BRIDGE
+[[size 80%]]Dr. Jacques Boucher[[/size]]
+[[/=]]
+-----
+||= Height || 238cm ||
+||= Weight || 50.9kg ||
+||= Localized Hume Rating || 70/123 ||
+
+This testing cycle has been our most intensive yet and it's resulted in some unforeseen changes. Subject is absurdly thin and lanky, with a layer of toughened skin wrapped around a skeleton that's incredibly strong and light. They barely even look humanoid. I'm growing apprehensive about their anomalous capabilities as well -- the Localized Hume Rating can't just be a result of the other anomalies anymore, and I've put in a recommendation to turn up the SRAs in the cell. I think we need to start thinking about backup plans.
+[[/div]]
+----
+[[=]]
+++ ADDENDUM 5549.13
++++ {{D-293 Psychological Screening Interview Excerpts, Nov-Jan, 1976}}
+[[/=]]
+----
+[[div style="display: block; border:solid 1px #999999; background: #d7d7c7;  width:84%; padding:1px 15px; margin: 10px auto;"]]
+= **[INTERVIEW #9]**
+-----
+
+**BOUCHER:** ... Hello?
+
+//[Coughing.]//
+
+**D-293:** Over here.
+
+//[D-293 squats in the far corner of the cell.]//
+
+**BOUCHER:** Jesus, you scared me. Are you o-
+
+**D-293:** I scare you?
+
+**BOUCHER:** What? No, that's not what-
+
+**D-293:** It's okay. I don't blame you. I look like a monster.
+
+**BOUCHER:** No, you don't. I-I'm sorry. We still intend to keep our promise, if that's worth anything.
+
+**D-293:** No you don't. Maybe you do, but Sharp doesn't. It's written all over his face.
+
+**BOUCHER:** I- There's workarounds. I don't outrank him but I can try-
+
+**D-293:** Please just leave.
+
+----
+= **[INTERVIEW #10]**
+----
+
+**BOUCHER:** Hello?
+
+**D-293:** What do you want?
+
+**BOUCHER:** Hi.
+
+**D-293:** Hi.
+
+**BOUCHER:** I just wanted... to see if you felt like talking.
+
+**D-293:** Why would I want to talk to any of you?
+
+**BOUCHER:** Because I have some news.
+
+**D-293:** Yeah?
+
+**BOUCHER:** Your family -- we've arranged for their restitution. They won't have to worry about finances for a long, long time. 
+
+**D-293:** Why?
+
+**BOUCHER:** I keep my promises. Sharp thinks it'll encourage you to be more amenable to testing.
+
+**D-293:** What do you think?
+
+**BOUCHER:** It's an apology. I- I can't tell you how sorry I am, I didn't know it was going to turn out like this. And I know I can't make it right, but I'm going to try. I've convinced Sharp to delay the next battery of test-
+
+**D-293:** A stay of execution. 
+
+**BOUCHER:** And I'm going to go talk to him.
+
+**D-293:** Do you think you could get through to him?
+
+**BOUCHER:** I have to try. I'm sorry.
+[[/div]]
+
+----
+[[=]]
+++ ADDENDUM 5549.14
++++ {{Audio Recording of Site-05 Director's Office, Feb 2nd 1976}}
+[[/=]]
+----
+[[div style="display: block; border:solid 1px #999999; background: #d7d7c7;  width:84%; padding:1px 15px; margin: 10px auto;"]]
+= **[BEGIN LOG]**
+-----
+
+**SHARP:** Dr. Boucher. Please, sit down. Can I get you anything.
+
+**BOUCHER:** I'm fine, thank you. 
+
+**SHARP:** What can I do for you today?
+
+**BOUCHER:** I have some... concerns, regarding D-293.
+
+**SHARP:** I expected as much. Your medical updates have been telling.
+
+**BOUCHER:** They've been disturbing. She's barely human anymore. She might as well be an anomaly.
+
+**SHARP:** It.
+
+**BOUCHER:** Pardon?
+
+**SHARP:** //It// is a test subject, and you're wasting your time trying to sympathize. 
+
+**BOUCHER:** It's human testing, Sharp. It's already terrible by nature -- you don't have to go out of your way to make it worse.
+
+**SHARP:** Maybe it's terrible. But it's necessary.
+
+**BOUCHER:** How on Earth is any of this necessary? What do you hope to learn? And don't give me the generic 'advancing our understanding' crap, you know I'm beyond that.
+
+**SHARP:** This is what the Foundation has always been about. Getting our hands dirty doing the work that no one else will. Doing it so that everyone else can sleep at night. 
+
+**BOUCHER:** You didn't answer my question.
+
+//[SHARP sighs.]//
+
+**SHARP:** Look. Every test had a purpose. 
+
+**BOUCHER:** What fucking purpose? 
+
+//[Silence.]//
+
+**SHARP:** This isn't the 19th century anymore, Jack. We have to deal with the Insurgency, the Gocks, and two dozen world governments. We have the world's biggest treasure trove of anomalies and we don't have the balls to use them to our advantage. 
+
+**BOUCHER:** Our job isn't to use them, it's to lock them up! You're trying to weaponize things we barely understand!
+
+**SHARP:** If one D-class has to suffer for us to understand these things, I'm willing to take that deal. And don't even think about telling the subject or anyone else. You know exactly how they'll react.
+
+**BOUCHER:** You bastard.
+
+//[BOUCHER storms out.]//
+-----
+
+= **[END LOG]**
+[[/div]]
+----
+[[=]]
+++ ADDENDUM 5549.17
++++ {{Site-05 Report, Incident 18 Timeline}} 
+[[/=]]
+----
+[[div style="border: solid 1px rgba(var(--dark-accent),0.5); padding: 5px 15px 15px 15px; width: 84%; margin: 4%; background-color: #d7d7c7; color: rgb(var(--black-monochrome));"]]
+[[=]]
+++ FEB 8TH, 1976
+----
+[[/=]]
+= **[CELL SENSOR 03]**
+
+**07:34:** Active motion detected in cell. Dismissed as standard subject activity. Active motion continues. 
+
+**07:50:** Sensors detect a sudden drop in light level of cell. Light level continues to drop in stages as subject moves around cell, until cell is in complete darkness.
+----
+= **[SITE-05 EXT CAM 07]**
+
+**08:02:** Three armed members of containment detail enter elevator.
+
+**08:03:** Exterior scaffolding of elevator shaft shudders.
+
+**08:03:** Exterior scaffolding of elevator shaft shears and collapses, crashing to the ground.
+
+**08:04:** Large bipedal entity exits elevator shaft at high speed, screaming. Several explosions ring out.
+
+**08:04:** Camera fails.
+----
+= **[SITE-05 INTERNAL LOG]**
+
+**08:05:** Level 2 Breach Alert activated from Site-05 director's office. 
+
+**08:06:** MTF squads engage hostile entity at egress point. Lethal force restricted, nonlethal ammunition and equipment authorized.
+
+**08:09:** MTF squads eliminated.
+
+**08:09:** Hostile entity advances towards interior of Site-05.
+
+**08:10:** Level 3 Breach Alert activated from Site-05 director's office.
+
+**08:11:** MTF squads engage hostile entity at Site-05 research compound. Lethal force restricted, nonlethal ammunition and equipment authorized.
+
+**08:11:** Air support request sent from Site-05 director's office. 
+
+**08:12:** MTF squads eliminated.
+
+**08:12:** Hostile entity advances into main Site-05 testing labs.
+
+**08:13:** Air support request authorized by Overwatch Command.
+
+**08:14:** Support Installation 11 of Atreus Array moves into position over Site-05. Attached Scranton Reality Anchors activate.
+
+**08:14:** Hostile entity exits testing labs with unidentified researcher in hand.
+
+**08:14:** MTF squads engage. Lethal force authorized.
+
+**08:16:** Hostile entity is visibly wounded by gunfire coupled with SRA support. It retreats to elevator shaft entrance.
+
+**08:16:** Hostile entity jumps down elevator shaft with researcher.
+
+**08:17:** MTF squads collapse entrance to elevator shaft behind entity.
+
+**08:20:** Breach Alert rescinded. 
+[[/div]]
+
+----
+[[=]]
+++ ADDENDUM 5549.18
++++ {{Transcript of a Call Recorded from the Site-05 Director's Office, March 1st 1976}}
+[[/=]]
+----
+[[div style="display: block; border:solid 1px #999999; background: #d7d7c7;  width:84%; padding:1px 15px; margin: 10px auto;"]]
+= **[BEGIN LOG]**
+
+----
+**SHARP:** I'm here.
+
+**O5-7:** You dumb fucking cretin. 
+
+**SHARP:** Liste-
+
+**O5-7:** Absolute fucking buffoon. One fucking job, Sharp. A single duty. And your pea-sized brain couldn't even manage to not fuck that up. And now we're sitting on a pile of dead grunts.
+
+**SHARP:** It wasn't my fault, goddammit. Boucher decided to get moral.
+
+**O5-7:** Bullshit. You know damn well that you caused this.
+
+**SHARP:** You're the one who fed me the bullshit about bringing us back to our "glory days"!
+
+**O5-7:** I thought that you could handle testing of a single anomaly. But you couldn't, could you?
+
+**SHARP:** I'm the one who's going to get hit for it. Not you. You'll get off scot-free.
+
+**O5-7:** I've got the other twelve breathing down my neck, watching my next move. You don't know what it's like dealing with them. They'd sell your soul to the devil for a goddamn penny. Black-suited fucks.
+
+//SHARP sighs.//
+
+**SHARP:** What's gonna happen now?
+
+**O5-7:** What's gonna happen is that you're gonna keep your mouth shut during the hearing. You listen to whatever my secretary says and nod along. If they ask you for any information, keep mum. If they have you trapped, say you "don't recall". We're on damage control now. I have to fly out to Site-01 to deal with the Council. We won't be meeting again.
+
+**SHARP:** What about the Site? D-293?
+
+**O5-7:** I intend to bury this goddamn mess so far below the ground that by the time anyone finds out they exist, the Ruskies will have nuked us.
+
+-----
+
+= **[END LOG]**
+[[/div]]
+
+----
+[[=]]
+++ ADDENDUM 5549.19
++++ {{Audio Recording of Site-01 Auxiliary Office, March 15th 1976}}
+[[/=]]
+----
+[[div style="display: block; border:solid 1px #999999; background: #d7d7c7;  width:84%; padding:1px 15px; margin: 10px auto;"]]
+= **[BEGIN LOG]**
+
+----
+
+//Sound of an individual entering and closing the door.//
+
+**SHARP:** Hello?
+
+**[REDACTED]:** Ah! Welcome, Mr. Sharp. Please, take a seat. Can I offer you anything? Tea? Coffee? 
+
+**SHARP:** Just water, thank you.
+
+**[REDACTED]:** Splendid. 
+
+**SHARP:** I'm sorry, the memo declined to provide a name -- who are you, exactly?
+
+**[REDACTED]:** If you'll excuse the cliche, I'm afraid that's above your clearance. So, Mr. Sharp, you've been busy these last few months, haven't you?
+
+**SHARP:** I suppose I have, yes.
+
+**[REDACTED]:** Let's start from the beginning. Did you or did you not propose the first iteration of the proposal that would become Project London Bridge?
+
+**SHARP:** I did. Bu-
+
+**[REDACTED]:** And you were aware that this would result in significant harm to a Foundation employee?
+
+**SHARP:** They're D-Class.
+
+**[REDACTED]:** They're still our employees, for better or for worse.
+
+**SHARP:** Then yes.
+
+**[REDACTED]:** You requisitioned enormous resources for this little project, Mr. Sharp. Was there any advantage to be gleaned from this project?
+
+//SHARP sighs.//
+
+**SHARP:** Valuable scientific knowledge about the interaction of anomalies using the hum-
+
+**[REDACTED]:** I've read the report - We both know that isn't true, and even if it was, it wouldn't matter. SCP -- Secure, Contain, Protect. Research is not in our motto, and for good reason.
+
+**SHARP:** Cross-testing has always been allowed, encouraged!
+
+**[REDACTED]:** We were well on our way to phasing out the cross-testing programs when your proposal was pushed through. It's not only of no benefit - it actively poses a danger to all those involved. Throwing anomalies at each other to see what happens was a hallmark of a darker age for this organization, Mr. Sharp. One that people like Seven would no doubt return to.
+
+//(Pause.)//
+
+**SHARP:** How did you...?
+
+**[REDACTED]:** I've worked here for longer than you've been alive, Mr. Sharp. Seven is a military man to the bone. He remembers when we were smaller, less organized. When we could get away with things like these. I suppose he fondly recalls our forays into Project Olympia and Omega-7.
+
+**SHARP:** Is he wrong? We could make the world a better place if we use these things, but we just sit on them! We could easily enforce order on the world, end these petty conflicts!
+
+**[REDACTED]:** This organization is committed to making the world a safer place -- but never like that. Let's not pretend your little adventure was anything but a short-sighted attempt to weaponize those anomalies.
+
+//[Pause.]//
+
+**[REDACTED]:** Thank you, Mr. Sharp. You've given me a lot to think about. Expect big changes in the coming weeks.
+-----
+
+= **[END LOG]**
+[[/div]]
+
+----
+[[=]]
+++ ADDENDUM 5549.20
++++ {{Administrator Order: "Project LONDON BRIDGE", March 30th 1976}}
+[[/=]]
+----
+[[div style="background: url("http://scptestwiki.wdfiles.com/local--files/yurt/seal.png") top 5px right 5px no-repeat; background-size: 75px 75px;  border: solid 1px rgba(var(--dark-accent),0.5); padding: 5px 15px 15px 15px; box-shadow: 0 1px 3px rgba(0,0,0,.2); width: 84%; margin: 2% 4% 4% 4%; background-color: #d7d7c7; color: rgb(var(--black-monochrome));"]]
+[[=]]
+++ OVERWATCH COMMAND MEMO
++++ Office of the Administrator
+[[/=]]
+
+The Department of Inter-Anomaly Experimentation is to be dissolved effective immediately. All employees are to report to their assigned Human Resources Officer for reassignment or release.
+
+In addition, a committee is to be formed of individuals selected by the Office of the Administrator for outstanding moral resolve and adherence to the Prime Directive. Members of this Ethics Committee are to hold executive authority regarding all Foundation containment protocols, projects, and database entries, as well as the ability to nullify or overturn an Overwatch Command decision. This committee is backed by the full authority of the Office of the Administrator. The first action of this Ethics Committee will be a judgement on the events of Project LONDON BRIDGE.
+
+[[>]]
+[[>image https://upload.wikimedia.org/wikipedia/commons/8/8c/Signature_of_BTS%27_Jungkook.png width="200px"]]
+//Administrator, SCP Foundation//
+[[/>]]
+[[/div]]
+
+----
+[[=]]
+++ ADDENDUM 5549.21
++++ {{Audio Excerpt, Ethics Committee Special Session 01, April 20th, 1976}}
+[[/=]]
+----
+[[div style="display: block; border:solid 1px #999999; background: #d7d7c7;  width:84%; padding:1px 15px; margin: 10px auto;"]]
+= **[BEGIN EXCERPT]**
+
+----
+
+//[Murmurs.]//
+
+**ODONGO TEJANI:** Order, order. 
+
+//[Murmurs cease.]//
+
+**TEJANI:** After... significant deliberation, this committee is prepared to present its judgements on the events discussed. Doctor Sharp.
+
+**SHARP:** Present.
+
+**TEJANI:** Your reckless behaviour endangered and killed Foundation employees. As of speaking, the product of your project is in an underground vault with an innocent researcher. This fruitless venture was of no value, took tremendous resources, and was only made possible by the meddling of your co-conspirator -- Overseer Seven.
+
+**O5-7:** In the flesh.
+
+**TEJANI:** Your manipulation outside of your sphere of interest led to the deaths of multiple Foundation employees and depletion of significant resources. Your attempts to devolve this organization to a more primitive form have no place in today's Foundation. The Committee is prepared to render judgement. Effective immediately, Overseer Seven placed on administrative leave without pay-
+
+**O5-7:** You motherfucker.
+
+**TEJANI:** - while the continued terms of his employment are subject to an internal vote of the Overseer Council. Doctor Sharp is to be stripped of his Foundation credentials-
+
+**SHARP:** //[Whispering]// No.
+
+**TEJANI:** - with his research employment terminated - 
+
+**SHARP:** //[Whispering]// No, no, no.
+
+**TEJANI:** - and demoted to D-class personnel with all associated duties and status. This committee hopes these penalties will help display that the old ways have been left behind for good reason.
+
+**SHARP:** No, n-
+
+**O5-7:** And what about 5549? How do you plan to get rid of the time bomb you're sitting on?
+
+**TEJANI:** We're not.
+
+**O5-7:** You're insane. Or stupid.
+
+**TEJANI:** D-293 only lashed out after constant mistreatment and exploitation by personnel. We'll establish containment and a security outpost to maintain it. But we're not going to poke a sleeping bear. Especially not one we've spent a year throwing rocks at. We owe it that much.
+
+**O5-7:** It's a bit too late for that. You might not want to admit it, but this has proved me right.
+
+**TEJANI:** Excuse me?
+
+**O5-7:** We just used militarized troops and weapons to contain an anomaly. We're not burying our heads in the sand and shying away from it anymore. And that's all I ever wanted. The infrastructure is there now; it's only a matter of time before you decide to use it.
+ 
+**TEJANI:** I advise you watch your words. You don't have Overseer protections anymore. If neither of you have any further qualms, this concludes this session.
+----
+
+= **[END EXCERPT]**
+[[/div]]
+----
+[[size 90%]]File sealed for //6 months and 7 days.//[[/size]]
+----
+@@ @@
+@@ @@
+@@ @@
+[[div class="terminal"]]
+[[div class="scanline"]]
+[[/div]]
+[[div class="text"]]
+| !close file="scp-5549"
+> FILE CLOSED
+| !logout user="o5-14" password="adropofsuninaglassofmoon"
+> VERIFYING...
+| !cancel
+> OPERATION CANCELED
+| !access archive="CouncilVotes" date="05.01.1976"
+> OPENING...
+[[div style="display: block; border: double 3px #80ff80; background-color: #000; margin: .5em 40px; padding: 0 1em;"]]
+= COUNCIL VOTE SUMMARY:
+||~ YEA  ||~ NAY  ||~ ABSTAIN ||
+|| O5-01 ||   ||       ||
+|| O5-02 ||   ||       ||
+|| O5-03 ||   ||       ||
+||  ||   || O5-04  ||
+||  ||   || O5-05  ||
+|| O5-06 ||   ||          ||
+|| X || X ||     X     ||
+||  ||   || O5-08  ||
+|| O5-09 ||       ||          ||
+|| O5-10 ||       ||          ||
+|| O5-11 || O5-11 ||       ||
+|| O5-12 ||   ||       ||
+|| O5-13 ||   ||       ||
+
+= Proposal accepted. O5-7 is to be removed from his Overseer position, amnesticized, and retired. His successor will be chosen by a Council referendum, and required to surrender all their special interest positions prior to instatement.
+[[/div]]
+| !delete sessionhistory
+> SESSION HISTORY WIPED
+| !logout
+> VERIFYING...
+[[=]]
+@@------@@
+Goodbye, O5-14
+@@------@@
+[[/=]]
+| !login user="raisadmariajones" password="purgatoryisaplaceonearth"
+> VERIFYING...
+[[=]]
+@@------@@
+Welcome, RAISA Director Maria Jones
+@@------@@
+[[/=]]
+| !message 05-1@scp.overseer.net "I deeply appreciate the offer; being an Overseer makes you one of the most powerful people in the world... and one of the most dangerous. But my place as RAISA Head and Ethics Committee member means that my job is making sure the Council remains true to its' principles - no offense. I can't do that as a member of it. Things are changing around here, and someone has to be there to make sure we don't lose ourselves during the fight. Thank you, but I'm going to have to decline."
+> MESSAGE SENT
+| !logout
+> VERIFYING...
+[[=]]
+@@------@@
+Goodbye, RAISA Director Maria Jones
+@@------@@
+[[/=]]
+[[/div]]
+[[/div]]
+[[/<]]
+[[/collapsible]]
+[[/=]]
+@@ @@
+@@ @@
+@@ @@
+[[=]]
+##transparent|London Bridge is falling down, falling down, falling down...##
+##transparent|London Bridge is falling down, falling down, falling down...##
+[[/=]]
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+[[collapsible show="(1) Unread Message"]]
+[[div class="terminal"]]
+[[div class="scanline"]]
+[[/div]]
+[[div class="text"]]
+| !inbox
+> OUTGOING COMMUNICATION FROM SITE-05 CONTAINMENT HEAD NOVAK
+> 
+> Sorry, this is the only recorded audio we've had from the cell in the past few months. I'd say it's quieted down... but the contents aren't exactly reassuring.
+> 
+>> SENSOR 15 - OCT 2
+>> 
+>> **[22:25:13]:** //<Gurgling.>//
+>> 
+>> **[22:25:24]:** //<Female voice>// We'll get out. Sooner or later.
+>> 
+>> **[22:25:30]:** //<Gurgling.>//
+>> 
+>> **[22:25:36]:** //<Male voice>// I know.
+>> 
+>> **[22:25:40]:** //<Female voice>// I'm not talking to you.
+[[/div]]
+[[/div]]
+[[/collapsible]]
+@@ @@
