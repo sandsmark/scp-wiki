@@ -1,29 +1,4 @@
 title:The Crab Den
-+* Tagging Project
-++++* Currently analyzing the implementation of {{automaton}}, {{autonomous}}, and {{mobile}}; pay this no mind.
-
-[[module CountPages tags="automaton" prependLine="||~ automaton ||"]]
-|| %%total%% ||
-[[/module]]
-[[module CountPages tags="autonomous" prependLine="||~ autonomous ||"]]
-|| %%total%% ||
-[[/module]]
-[[module CountPages tags="mobile" prependLine="||~ mobile ||"]]
-|| %%total%% ||
-[[/module]]
-[[module CountPages tags="+automaton +autonomous" prependLine="||~ automaton + autonomous ||"]]
-|| %%total%% ||
-[[/module]]
-[[module CountPages tags="+autonomous +mobile" prependLine="||~ autonomous + mobile ||"]]
-|| %%total%% ||
-[[/module]]
-[[module CountPages tags="+automaton +autonomous +mobile" prependLine="||~ automaton + autonomous + mobile ||"]]
-|| %%total%% ||
-[[/module]]
-
-------
-------
-
 [[module CSS]]
 @import url("/nagiros/code/1");
 
@@ -939,8 +914,18 @@ Expect great things in the future.
 ||Write fifty tales.||
 [[/tab]]
 [[tab Control Panel]]
-[[module ListPages perPage="30" created_by="Nagiros" separate="no" categories="*" order="rating desc" prependLine="||~ Title ||~ Rating ||~ Last Edit ||~ Last Comment ||"]]
+[[=]]
+++ All page I've created.
+[[/=]]
+[[module ListPages perPage="250" created_by="Nagiros" separate="no" categories="*" order="rating desc" prependLine="||~ Title ||~ Rating ||~ Last Edit ||~ Last Comment ||"]]
 || **%%title_linked%%** || %%rating%% || %%updated_by_linked%% || %%commented_by_linked%% ||
+[[/module]]
+
+[[=]]
+++ All fragment pages outside fragment: category.
+[[/=]]
+[[module ListPages tags="fragment" categories="-fragment" separate="no" perPage="250" order="created_at desc" prependLine="||~ Title ||~ Vis. Tags ||~ Hid. Tags ||~ Category ||"]]
+|| **[[[%%link%%/noredirect/true | %%title%%]]]** || %%tags_linked%% || %%_tags_linked%% || %%category%% ||
 [[/module]]
 
 [[code type="css"]]
