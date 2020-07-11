@@ -1,52 +1,49 @@
 title:SCP-3632
 [[module CSS]]
-/* HEADER */
-#header h1 a {
-    display: block;
-    margin: 0;
-    padding: 80px 0 25px;
-    line-height: 0;
-    max-height: 0;
-    color: transparent;
-    background: transparent;
-    font-family: 'Verdana', Arial, sans-serif;
-    text-decoration: none;
-    text-shadow: none;
-    letter-spacing: 0.9px;
+/* SITE HEADER */
+ #header h1 a,
+ #header h1 a::before{
+     position: relative;
+     left: -1.5px;
+ 
+     color: hsl(0, 0%, 90%);
+     text-shadow:
+        .7px    .7px  0 hsla(0, 0%, 0%, .8),
+       1.4px   1.4px  0 hsla(0, 0%, 0%, .8);
+     letter-spacing: -.02em;
+}
+ #header h2 span,
+ #header h2 span::before{
+     color: hsl(0, 0%, 90%);
+     text-shadow: 1px 1px 0 hsla(0, 0%, 0%, .8);
+}
+ #header h1 a,
+ #header h2 span{
+     color: transparent;
+     text-shadow: none;
+}
+ #header h1 a::before{
+     content: "The Avian Division";
+     font-family: "Verdana", sans-serif;
+}
+ #header h2 span::before{
+     content: "Until we return to The Nest";
 }
 
-#header h1 a::before {
-    content: "The Avian Division";
-    color: white;
-    letter-spacing: -0.02em;
-    text-shadow: 3px 3px 5px black;
-}
-
-#header h2 span {
-    display: block;
-    margin: 0;
-    padding: 19px 0;
-    line-height: 0;
-    max-height: 0;
-    font-weight: bold;
-    color: transparent;
-    text-shadow: none;
-}
-
-#header h2 span::before {
-    content: 'Until we return to The Nest';
-    color: white;
-    text-shadow: 1px 1px 1px black;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
-}
-.team-bird-nav{
-    background-color: black;
-    border: outset 1.5px black;
-    border-radius: 30px;
-    color: black;
-    background: linear-gradient(to bottom right, rgba(0,0,0,0), rgba(255,200,28,1));
-    font-weight: bold;
-    font-size: 85%;
+/* SERIES NAV */
+ .series-nav{
+     margin: .5em 0;
+ 
+     background:
+       linear-gradient(to bottom right,
+                hsla(0, 0%, 100%, 1),
+                 hsla(45, 100%, 55%, .5));
+     border: outset 1.5px hsl(0, 0%, 5%);
+     border-radius: 2em;
+ 
+     font-size: 85%;
+     font-weight: bold;
+     text-align: center;
 }
 [[/module]]
 
@@ -292,10 +289,9 @@ Unknown cause. Values returned to normal after 3 minutes.
 
 [[footnoteblock]]
 ----
-[[div class="team-bird-nav"]]
-= << [[[The Sacred Djehuti]]] | [[size 120%]][[[bird|TEAM BIRD]]][[/size]] | [[[Avian Anthology I]]] >>
+[[div class="series-nav"]]
+<< [[[The Sacred Djehuti]]] | [[size 120%]][[[bird|TEAM BIRD]]][[/size]] | [[[Avian Anthology I]]] >>
 [[/div]]
-
 
 [[div class="footer-wikiwalk-nav"]]
 [[=]]
