@@ -1,9 +1,41 @@
 title:UMBRAL_MIGRATORY_SEQUENCE.txt
-[[include component:preview text=As soon as Gægr turned, the hulking titan slammed into his underbelly at astounding speeds. The great Cetacean listed to one side, expelling mist from his wake. The whale plummeted, aching with pain.]]
+[[include component:preview
+|text=Gægr twisted around. The titan slammed into his underbelly at astounding speeds. The great whale listed to one side, expelling mist from his wake. He plummeted in agony.]]
 
-[[>]]
-[[module Rate]]
-[[/>]]
+[[include :scp-wiki:theme:flopstyle]]
+[[include :scp-wiki:component:pride-highlighter |inc-s9-tg-alt= --]]]
+
+[[module CSS]]
+/* SITE HEADER */
+ #header h1 a,
+ #header h2 span{
+     color: transparent;
+     text-shadow: none;
+}
+ #header h1 a::before{
+     content: "The Avian Division";
+     font-family: "Verdana", sans-serif;
+}
+ #header h2 span::before{
+     content: "Until we return to The Nest";
+}
+
+/* DIV BLOCKS */
+ .card-block{ border-left: .8em solid hsl(45, 100%, 45%); }
+ .whalish{
+     color: hsl(198, 94%, 36%);
+
+     font-family: "Times New Roman", serif;
+     font-size: 200%;
+     font-style: italic;
+     font-weight: bold;
+     text-align: center;
+     letter-spacing: 1px;
+}
+
+/* SERIES NAV */
+ .series-nav{ background: linear-gradient(to bottom right, hsla(0, 0%, 100%, 1), hsla(45, 100%, 55%, .5)); }
+[[/module]]
 
 [[include :scp-wiki:component:info-ayers
 |lang=en
@@ -14,232 +46,126 @@ title:UMBRAL_MIGRATORY_SEQUENCE.txt
  
 This article is **Part 11** of the **Team Bird** storyline, and **Part 2** of its Season 1 finale. 
 ----
-[[include :scpdsandbox:floppyphoenix-info]]
+[[include :scp-sandbox-3:flops-info]]
 [[/div]]
 
-[[module CSS]]
-/* INFO BOX */
-sup{
-    vertical-align: top;
-    position: relative;
-    top: -0.5em;
-}
-body{
-    --cutColour: #fafafa;
-    --barColour: #590505;
-    color: rgb(12, 12, 12);
-}
-.translation_block{ display: none; }
-.u-faq{ display: none; }
+> **NOTE:** This is **Part 11** of a **12**-Part storyline: **[[[*http://www.scp-wiki.net/bird|Team Bird, Season One]]]**.
+> It is recommended that you first read **[[[SCP-3095]]]**, and then start from the beginning with **[[[SCP-3662]]]**.
+----
+[[>]]
+[[module Rate]]
+[[/>]]
 
-/* HEADER */
-#header h1 a{
-    display: block;
-    margin: 0;
-    padding: 80px 0 25px;
-    line-height: 0;
-    max-height: 0;
-    color: transparent;
-    background: transparent;
-    font-family: 'Verdana', Arial, sans-serif;
-    text-decoration: none;
-    text-shadow: none;
-    letter-spacing: 0.9px;
-}
-#header h1 a::before{
-    content: "The Avian Division";
-    color: white;
-    letter-spacing: -0.02em;
-    text-shadow: 3px 3px 5px black;
-}
-#header h2 span{
-    display: block;
-    margin: 0;
-    padding: 19px 0;
-    line-height: 0;
-    max-height: 0;
-    font-weight: bold;
-    color: transparent;
-    text-shadow: none;
-}
+[[div class="card-block"]]
+[[span class="terminal-span"]]▷ SITE-18 INTRANET SYSTEMS INITIALIZED[[/span]].
 
-#header h2 span::before{
-    content: 'Until we return to The Nest';
-    color: white;
-    text-shadow: 1px 1px 1px black;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
-}
+[[span class="terminal-span"]]▷ ACCESSING IntSCPFN:/files/EE-3570/UMBRAL_MIGRATORY_SEQUENCE.txt[[/span]]...
 
-/* DIV BLOCKS */
-.intranet{
-    border-left: 6px solid #ffc81c; 
-    background-color: rgba(255,200,28,0.1); 
-    padding: .25em; 
-    background: linear-gradient(to left, rgba(0,0,0,0), rgba(255,200,28,0.5));
-
-    font-family: Courier, monospace;
-    font-weight: bold;
-    font-size: 110%;
-}
-.dossier-box{
-    border: 4px solid rgb(12, 12, 12);
-    background-color: white;
-    padding: .25em 1em;
-    margin-bottom: 1em;
-    box-shadow: 0 1px 3px rgba(0,0,0,.2);
-}
-.report-box{
-    border: 2px solid rgb(12, 12, 12);
-    background-color: white;
-    padding: .25em 1em;
-    margin-bottom: 1em;
-}
-.quote-block{
-    border: 3px double #999;
-    background-color: #f4f4f4;
-    padding: .25em 1em;
-    margin-bottom: 1em;
-}
-.whalish{
-    font-family: 'Times New Roman', serif; 
-    font-weight: bold; 
-    font-style: italic;
-    font-size: 215%;
-    color: #0d92bf;
-    text-align: center;
-    margin: 0.5em 0 0.4em;
-    padding: 0;
-    letter-spacing: 1px;
-}
-.team-bird-nav{
-    background-color: black;
-    border: outset 1.5px black;
-    border-radius: 2.308em;
-    color: black;
-    background: linear-gradient(to bottom right, rgba(0,0,0,0), rgba(255,200,28,1));
-    font-weight: bold;
-    font-size: 85%;
-}
-
-/* FORMATTING */
-hr{
-     margin: 1em 0;
-     padding: 0;
-     border: 0;
-}
-.break{
-    width: 25px; 
-    margin: 12px 0;
-}
-[[/module]]
-
-[[div class="intranet"]]
-Site-18 intranet systems initialized.
-
-Accessing intSCPFN:/files/EE-3570/UMBRAL_MIGRATORY_SEQUENCE.txt
-
-Opening.@@@@.@@@@.
+[[span class="terminal-span"]]▷ OPENING FILE[[/span]]...
 [[/div]]
 
-[[div class="dossier-box" style="margin-top: 1em;"]]
-[[=]]
-+++ "UMBRAL MIGRATORY SEQUENCE"
-[[/=]]
+[[div class="report-box justified realistic-shadow" style="border-width: thick;"]]
++++ UMBRAL MIGRATORY SEQUENCE
+----
+During an End-of-the-World Scenario leading to the significant loss of Foundation assets, the Pluto Protocol exists to set up a reliable, alternative means of control for the rest of the Foundation.
 
-[[div style="border-bottom: 1px solid black;"]]
+[[div class="indented"]]
+The protocol dictates a set of actions that must occur in a specific order — according to the severity of the scenario. These actions are as follows.
+
+# At the onset of a significantly disruptive worldwide event, each Foundation-operated Area, Site, and Outpost must declare independent status.
+# If the scenario escalates to an EKHI-Level disruption,[[footnote]]Such as in the loss of ≥50% of all assets and administration.[[/footnote]] Site-01 and Site-19 must assume joint control over any unallocated resources and act as a form of administration where necessary.
+# If the scenario escalates to an AMIDA-Level disruption,[[footnote]]Such as in the loss of ≥80% of all assets and administration, or, in the loss of Site-01 and Site-19.[[/footnote]] the Division with the highest number of available resources is granted executive control over the rest of the Foundation.
+
+On 1 June 2018, the Foundation Avian Division gained full authority to fulfill the Foundation Prime Directive. In response, we drafted multiple projects to ensure a suitable backup plan in the face of a Broken Veil. We determined which backup plans would serve necessary during a total-loss event, while attempting to maintain acceptable levels of normalcy.
+
+When almost all non-Avian Division personnel had been lost, all projects were placed under indefinite hiatus. The Avian Division lacked the --man-- bird power to enact the bulk of them. After [[[scp-3570|Extranormal Event 3570]]], however, efforts were renewed — we had no other choice.
+
+A chronicle of the selection philosophy for current backup plans is as follows.
 [[/div]]
 
-During an end-of-the-world scenario leading to the significant loss of Foundation assets, the Pluto Protocol exists to establish an alternative and reliable means of control for the rest of the Foundation. Typically, the protocol dictates that each Site would declare independent status, and depending on the severity of the scenario, Site-01 and Site-19 would take joint control over any unallocated resources and act as a form of administration where necessary. In extreme cases,[[footnote]]Such as in the event of the loss of both Site-01 and Site-19, or the loss of >70% of all assets and administration.[[/footnote]] the Division with the highest number of available resources is granted executive control over the rest of the Foundation.
-
-On June 1, 2018, the Foundation Avian Division gained full authority to carry out the Foundation's Prime Directive. In response, the Avian Division drafted numerous projects in an attempt to ensure a suitable backup plan in the face of a Broken Veil. They determined which backup protocols would serve necessary in the event of a total loss, and generally attempted to maintain normalcy.
-
-When nearly all non-Avian Division personnel had been lost, all projects were placed under indefinite hiatus, as the Avian Division lacked the --man-- bird power to enact the bulk of them. However, after the events of [[[scp-3570|EE-3570]]], efforts were renewed -- they had no other choice. The following is a chronicle of the selection philosophy.
-
-[[div class="quote-block"]]
-[[=]]
+[[div class="blockquote"]]
 +++ [[[scp-2000|PROCEDURE LAZARUS-01]]]
-[[/=]]
 ----
-**PROPOSAL:** Initiate Procedure Lazarus-01 at Site-2000 in an attempt to repopulate Earth with a non-anomalous group of humans devoid of EoI-121. The BE-Class "Migration" Scenario has yielded only minimal damage worldwide, except in major population centres. The low number of extant Type-BE humanoids ensures clean-up efforts would be relatively unhindered. As such, the procedure is projected to take at least 15 years to fully initialize and complete.
+**PROPOSAL:** Initiate Procedure Lazarus-01 at Site-2000 to repopulate Earth with a non-anomalous group of humans devoid of EOI-121.[[footnote]]**EOI-121:** The designation for a dense Avian meme complex affecting 99.9% of all living humans.[[/footnote]]
 
-**SUITABILITY: [[span style="color: #8b0000;"]]LOW[[/span]]**
+The BE-Class “Migration” Scenario has yielded only minimal damage worldwide, except in major population centres. The dwindling number of extant Type-BE humanoids ensures clean-up efforts would remain relatively unhindered. As such, the procedure is projected to require at least 15 years to fully initialize and complete.
 
-**NOTES:** EoI-121 does not affect humans on a biological level, but instead, on an esoteric level involving higher dimensional phenomena that is at this time not understood. Procedure determined to operate negatively, as all created SCP-2000 humanoids would simply begin to carry the Avian meme complex upon repopulation.
+**SUITABILITY:** [[span class="rev-yellow"]]LOW[[/span]]
+
+**NOTES:** EOI-121 affects humans on an esoteric level involving higher-dimensional phenomena that is as-yet-misunderstood. The procedure is determined to operate inadequately; the Avian meme complex would simply reinfect all created SCP-2000 humanoids after repopulation.
 [[/div]]
 
-[[div class="quote-block"]]
-[[=]]
-+++ [[[scp-8900-EX|ENNUI PROTOCOL]]]
-[[/=]]
+[[div class="blockquote"]]
++++ [[[scp-8900-EX|THE ENNUI PROTOCOL]]]
 ----
-**PROPOSAL:** Disseminate ENUI-5 in high volumes globally in an attempt to wipe the Avian meme complex or at least reduce its effects in anomalous humanoids. Activation of ENUI-5 can be delayed until an estimated 99% of the human populace is exposed to the agent. The full amounts of ENUI-5 required would take 6 months to produce, and between 2 to 4 months to disperse fully, after which it can be activated instantly.
+**PROPOSAL:** Disseminate ENUI-5 in large volumes globally to wipe out the Avian meme complex, or at least, reduce its effects in anomalous humans.
 
-**SUITABILITY: [[span style="color: #8b0000;"]]LOW[[/span]]**
+Activation of ENUI-5 can be delayed until an estimated 99% of the human populace is exposed to the agent. Sufficient ENUI-5 compounds would require 6 months to produce, between 2 and 4 months to disperse fully, and an instant to activate.
 
-**NOTES:** Humanoids affected by EoI-121 display atypical neural maps capable of hosting the esoteric memetic construct. ENUI-5 can be dispersed in large controlled quantities but is not of a high enough quality to target only the meme complex. Either the entire human populace undergoes immediate brain death, or ENUI-5 does not target the meme complex and is useless.
+**SUITABILITY:** [[span class="rev-yellow"]]LOW[[/span]]
+
+**NOTES:** Humans affected by EOI-121 display atypical psychogenic plans capable of hosting the Avian meme complex. ENUI-5 can be dispersed in large, controlled quantities, but is of a rudimentary quality and cannot target the meme complex alone. Either the entire human populace experiences total memory erasure, or ENUI-5 does not target the meme complex and is useless.
 [[/div]]
 
-[[div class="quote-block"]]
-[[=]]
+[[div class="blockquote"]]
 +++ [[[scp-3002|PROJECT LETHE]]]
-[[/=]]
 ----
-**PROPOSAL:** Trigger the Lethe agent within every human mind. Lethe will access and wipe all data and memory related to the Avian meme complex. Once each individual mind is wiped, the meme complex associated with each person's "self" will re-enter their mind via the Noosphere, as is expected. Memetic triggering via Lethe has a high chance of failure due to the fact that there have been no recorded uses of Lethe in Foundation history. However, as it is memetic, it can be dispersed far more effectively than ENUI-5. Lethe would take at least 1 week to disseminate.
+**PROPOSAL:** Trigger the Lethe agent within every human mind. Lethe will access and wipe all data and memory related to the Avian meme complex.
 
-**SUITABILITY: [[span style="color: #8b0000;"]]VERY LOW[[/span]]**
+After wiping each individual mind, the meme complex associated with each human Self will re-enter their mind via a pre-existing Noospheric connection. Memetic triggering via Lethe has a significant chance of failure because Lethe has no recorded uses in Foundation history. Because it is memetic, however, it can be dispersed far more effectively than ENUI-5. Lethe would require at least 1 week to disseminate.
 
-**NOTES:** //This is ridiculously beyond the Avian Division's capability, and relies on too many what-ifs.//
+**SUITABILITY:** [[span class="rev-red"]]VERY LOW[[/span]]
+
+**NOTES:** //This is ridiculously beyond the Avian Division's capability and relies on too many what-ifs.//
 [[>]]
 --Dr. Frederick Hoygull, PhD
 //Avian Division Head//
 [[/>]]
 [[/div]]
 
-[[div class="quote-block"]]
-[[=]]
+[[div class="blockquote"]]
 +++ [[[scp-2117|SCPS SOLIDARITY]]]
-[[/=]]
 ----
-**PROPOSAL:** Anomalous reclamation of Earth is projected to take between 1 and 3 years based on an ADK-Class "Complete Anomalous Destabilization" model. As the Avian Division is both poorly equipped and inexperienced to counter this, our efforts are better suited toward evacuation and later recolonization. Per Project Heimdall, move all vital assets to the SCPS //Solidarity//, which is situated at the L,,4,, Lagrangian point. Once all vital personnel, equipment, anomalous objects, AICs, informational constructs, and suitable amounts of natural resources have been loaded, the [[[scp-2669|Khetvuul 1 Exoplanetary Survey]]] will be analyzed, at which point a suitable near-Earth exoplanet will be selected based on majority consensus.
+**PROPOSAL:** Based on an ADK-Class “Complete Anomalous Destabilization” model, projections indicate the anomalous will reclaim Earth within 1 to 3 years.
 
-**SUITABILITY: [[span style="color: green;"]]HIGH[[/span]]**
+Because the Avian Division is both ill-equipped and inexperienced to counter this, our efforts are better suited toward evacuation and later resettlement. Per Project Heimdall, transfer all vital assets to the SCPS //Solidarity//, situated at the L,,4,, Lagrangian point. When all vital personnel, equipment, anomalous objects, AICs, informational constructs, and suitable amounts of natural resources have been loaded, the [[[scp-2669|Khevtuul 1 Exoplanetary Survey]]] will be analyzed. A suitable near-Earth exoplanet will then be selected — according to Avian Division consensus.
+
+**SUITABILITY:** [[span class="rev-green"]]HIGH[[/span]]
 
 **NOTES:** WE WILL REBUILD
 [[/div]]
+----
 [[footnoteblock]]
 [[/div]]
 
-[[=image http://scp-wiki.wdfiles.com/local--files/component%3Atheme/logo.png class="break"]]
+[[=image http://scp-wiki.wdfiles.com/local--files/component%3Atheme/logo.png class="scene-break"]]
 
 [[div class="report-box"]]
-[[=]]
 +++ OPERATION: DIVINE RUSE
-[[/=]]
-
-[[div style="border-bottom: 1px solid black;"]]
-[[/div]]
-
-1. [[span style="font-weight: bold; text-decoration: underline;"]]DEPLOYMENT DATE[[/span]] August 12, 2018, 7:43 PM PST
-
-2. [[span style="font-weight: bold; text-decoration: underline;"]]DEPLOYMENT LOCATION[[/span]] Site-18, Mojave National Preserve, Southern California
-
-3. [[span style="font-weight: bold; text-decoration: underline;"]]TEAM[[/span]] Marine Fighting Team CHARYBDIS
-
-4. [[span style="font-weight: bold; text-decoration: underline;"]]TEAM MEMBERS[[/span]]
-# [[span style="font-weight: bold;"]]__C-0__ Gægr Kemdulnim the Deep One[[/span]] -- Transportation Agent
-# [[span style="font-weight: bold;"]]__C-2__ Jaedan Traviss[[/span]] -- Stealth Pugilist
-# [[span style="font-weight: bold;"]]__C-4__ Haruki Nakahara[[/span]] -- Tech Specialist
-
-5. [[span style="font-weight: bold; text-decoration: underline;"]]MISSION DESCRIPTION[[/span]] Secure and contain the anomalous Selachian entity designated WHITE NETHER via pugilistic force and coerce it to consume the Apex-Tier Pluripotent Entity known as Thoth.
-
-6. [[span style="font-weight: bold; text-decoration: underline;"]]EXECUTION[[/span]] {{TBD}}
-
-[[div class="quote-block"]]
-//UMBRAL MIGRATORY SEQUENCE is not the primary means of achieving the Foundation's Prime Directive. Did you think we would retreat with our tails between our legs? No! Further efforts have been developed, and by my executive order, Operation: DIVINE RUSE has begun. Thoth will regret ever glancing down at us from his perch in Hell. We'll do what it takes to knock him from his throne into the real world.//
-
-//We no longer merely wish Thoth gone. We'll destroy him where he stands with a sharpened talon and reclaim our mantle, or die trying. May Medila have mercy on our souls.//
 ----
+1. **__DEPLOYMENT DATE__:** 12 August 2018, 07:45 p.m. PDT
+
+2. **__DEPLOYMENT LOCATION__:** Site-18, Mojave National Preserve, Southern California
+
+3. **__TEAM__:** Marine Fighting Team CHARYBDIS
+
+4. **__TEAM MEMBERS__:**
+# **__C-0__ Gægr Kemdulnim The Deep One** — Transportation Agent
+# **__C-2__ Jaedan Traviss** — Stealth Pugilist
+# **__C-4__ Haruki Nakahara** — Technical Specialist
+
+5. **__MISSION DESCRIPTION__:** Secure and contain the anomalous Selachian entity, designated WHITE NETHER, via pugilistic force. Coerce it to consume the Apex-Tier Pluripotent Entity known as Thoth.
+
+6. **__EXECUTION__:** [[span class="terminal-span"]]TBD[[/span]]
+
+[[div class="blockquote"]]
+//UMBRAL MIGRATORY SEQUENCE is not our primary means of achieving the Foundation Prime Directive. Did you think we would retreat with our tails between our legs? No! Further efforts have been developed, and by my executive order, Operation: DIVINE RUSE has begun. Thoth will regret ever glancing down at us from his perch in Hell. We'll do what it takes to knock him from his throne into the real world.//
+
+//We no longer merely wish Thoth gone. We'll destroy him with a sharpened talon, wherever he perches, and reclaim our mantle — or die trying.//
+
 [[>]]
+//May Medila have mercy on our souls.//
+----
 --Dr. Frederick Hoygull, PhD
 //Avian Division Head//
 [[/>]]
@@ -247,130 +173,162 @@ When nearly all non-Avian Division personnel had been lost, all projects were pl
 
 [[/div]]
 
-[[=image http://scp-wiki.wdfiles.com/local--files/component%3Atheme/logo.png class="break"]]
+[[=image http://scp-wiki.wdfiles.com/local--files/spc-001/SPCLogo50.png class="scene-break"]]
 
-[[==]]
-The girl in metallic blue boots stretched her arms outwards. She shuffled back into the Clark-Class NEUROKNOCK armour situated by the wall, opened for the room to see. Mechanical sections of a tungsten carbide exoskeleton unfolded from within themselves and climbed from her legs upwards. Thick, metallic segments wrapped themselves around her torso, and smaller segments snapped onto her arms. 
+[[div class="justified"]]
+A girl wearing metallic blue boots stretched out her arms. She shuffled back into the Clark-Class NEUROKNOCK armour standing upright at the wall, unfolded for the room to see. Mechanical sections of a tungsten carbide exoskeleton activated and unravelled from within themselves, climbing up her legs. Thick, alloyed segments wrapped around her torso, and with percussive //clunk//s, narrower segments snapped onto her arms and forearms.
 
-"Hey, you know something?" she said.
+Across from her, a boy wearing similarly powered armour stood with a stone-faced glare and crossed arms. The suits took 30 seconds flat to power up and do their magic, but for all the world, he seemed like a slouching teenaged attitude problem who'd waited hours for his mom to finish her errands.
 
-A boy in powered armour slouched before her. "I know a few things. I'm not as stupid as I look."
+“Hey, you know something?” the girl asked him.
 
-The girl laughed while her own powered armour -- now encompassing her body, sans the neck -- sealed and pressurized. "Okay, hold on. We're wearing the same armour. You're not saying //I// look stupid too, are you?" 
+“I know a few things. I'm not as stupid as I look.”
 
-The boy stretched. "I take that back. I look stupid, but not //nearly// as stupid as you."
+The girl laughed while her own powered armour — now encompassing her body (sans neck) — sealed up and pressurized. “Hold up. We're both wearing the same thing! You're not saying //I// look stupid //too// — are you?”
 
-The girl fidgeted, rotating her wrists and bending her arms back, testing their dexterity. "Finally he admits defeat!" she announced to the empty room.
+The boy stretched. “I take that back. I look stupid, but not //nearly// as stupid as you.”
 
-"Listen, the sooner we get out there, the sooner we blow that gawking bird gullet and stupid Selachian mug to smithereens. Alright, Haruki?"
+The girl fidgeted, rotated her wrists, and bent back her arms — analyzing their dexterity. “Finally, he admits defeat!” she announced to the empty room.
 
-"'Kay, Jae Jae." She giggled. "That's what Leah calls you, isn't it?"
+“Listen, Haruki. The sooner we get out there, the sooner we blow that gawking bird gullet and stupid Selachian mug to smithereens. All right?”
 
-"Yeah... It doesn't have the same ring to it when you say it. I think you ruined it, honestly." Jaedan slipped on his helmet. The glass remained open for conversation's sake.
+“'Kay, Jae Jae.” Haruki giggled. “That's what Leah calls you, isn't it?”
 
-"You're just saying that because you //like// her. Admit it!" Haruki slipped on her helmet, too.
+“You know... It doesn't have the same ring when //you// say it. I think you've ruined it.” Jaedan slipped on his helmet but kept the faceplate open.
 
-"Teach one of your robots to read minds and you can find out." Jaedan winked, pressing a button on the back of his helmet. The glass shot down and the rest of his suit repressurized.
+“You're just saying that because you //like// her.” Haruki slipped hers on, too. “Admit it!”
 
-"Anyway, as I was trying to say before. I'm glad Quinn trusts us to go on a mission like this! I can't wait to see the smile on his face when he sees what we've done with that Selachian menace," Haruki mused.
+“Teach one of your robots to read minds, and you can find out.” He winked, pressing a button behind his helmet. The glass shot down and the rest of his suit pressurized.
 
-The pair walked into the next chamber. The door closed automatically and sealed behind them. In front of them, another door opened, and the room filled with water.
+“Anyway, as I was //trying// to say before. I'm glad Quinn trusts us to go on a mission like this! I can't //wait// to catch his look when he sees that Selachian's ugly face plowed in,” she mused.
 
-"Yeah, whatever. Race you to the whale!" Jaedan jetted off into the large pool beyond.
+The pair walked through the next chamber. A door closed automatically and sealed them in. Another door opened ahead, and the vestibule filled with water.
 
-[[=image http://scp-wiki.wdfiles.com/local--files/spc-001/SPCLogo50.png class="break" style="width: 35px !important;"]]
+“Yeah, whatever. Race you to the whale!” Jaedan jetted off into the pool beyond.
 
-The bulky 45-meter-long blue-grey body of Gægr Kemdulnim the Deep One displaced enormous amounts of water as he shot through the surface and into the atmosphere. He maintained breathtaking spins as he screamed through the clouds. Haruki and Jaedan sat, quadruple-strapped, and flanked by a roll-cage somewhere within his massive blubber. Haruki hadn't gotten used to Cetacean flight yet.
+[[=image http://scp-wiki.wdfiles.com/local--files/spc-001/SPCLogo50.png class="scene-break"]]
 
-Haruki paled. "Calm down, Gægr, you can show off later. We have a job to do!" Within her suit, she looked like she was going to vomit.
+The bulky, 45-metre-long blue-grey body of Gægr Kemdulnim The Deep One displaced enormous amounts of water as he breached the ocean and shot into the sky. He maintained breathtaking spins while screaming through the clouds.
 
-"Do a flip, GÆGR COUNTER!" That was Jaedan's affectionate name for Gægr. On cue, Gægr flipped head-over-heels -- err, head-over-tail -- whilst chanting an old Whalish folk song.
+Haruki and Jaedan sat inside him, quadruple-strapped and flanked by a roll-cage somewhere within the blubber.
 
-After a moment or so, he paused in the clouds. His ramjet sphincters kept him hovering in place, while the unobtanium engine implanted in his back purred. "No Selachians in sight. You can let go of my handlebars, Haruki." Gægr hummed in a beautiful baritone.
+Haruki had never grown accustomed to Cetacean flight. She paled. “Calm down, Gægr, you can show off later! We have a job to do.” Within her suit, she appeared ready to vomit.
 
-"Wow, Haruki, you're squeezing the life out of those bars." Jaedan laughed. "And Gægr hasn't even tried out that new engine you fixed for him yet." 
+Jaedan turned to face her, smirking. “GÆGR COUNTER, do a flip!”
 
-Haruki snapped. "Oh my god, don't even mention that!"
+On cue, Gægr pinwheeled head-over-heels — er, head-over-tail — whilst chanting a traditional Whalish folk song.
 
-"So what's the game plan, huh? Hoygull's going to contact us after we punt the Deviant into a deep sleep?" Jaedan was referring to WHITE NETHER, otherwise known as the Selachian daemon 'Akheilos'. Their plan was to tame the beast they had been chasing for months and turn it against Thoth, once and for all. First, they had to find it.
+After a moment, he paused in the clouds. His ramjet sphincters kept him hovering in place. The unobtanium engine implanted in his back purred. //“No Selachians in sight,”// Gægr purred in elegant baritone. //“You may release my handlebars, Haruki.”//
 
-"No, //before// we pummel it. He's going to give us the thumbs up. The... Uh, the wings up."
+“Jeez, Haruki, you're squeezing the life out of those things,” Jaedan sneered. “And Gægr hasn't even tried out that new engine you fixed for him!”
 
-"What are we calling this thing, anyway? Operation: DIVINE RUSE?" Jaedan cleared his throat. "First off, I ain't calling //any// Deviant beast 'divine', no matter what happens. What do you think, Haruki, should we skip the mission and check out some Selachian burgers in the next galaxy over?"
+“Oh my god, don't even //mention// that!”
 
-"Gross! You'd eat that?" Haruki shook her head. "Say, Gægr, do you sense the beast nearby? I suppose we can get a head start and figure out where this thing is before Hoygull contacts us." While MFT CHARYBDIS retained the capacity to detect Selachian threats beyond the dimensional barrier, Gægr had natural long-distance Selachian finding abilities. He powered these by his fins, Deviant magic, or some strange combination of both.
+“So, what's the game plan, huh? Hoygull's going to contact us after we punt the Deviant into a deep sleep?” Jaedan was referring to WHITE NETHER, known otherwise as the Selachian daemon 'Akheilos'. Their plan was to tame the beast they had been chasing for months and turn it against Thoth. But first, they had to find it.
 
-Gægr sang. "Selachian's gone away, and there's no need for us to stay. Come, my dear brother and sister, let's traverse the skies and play!"
+“No, //before// we pummel it. He'll be giving the thumbs up. Uh... The wings up.”
 
-"That's a no, then. Right, Haruki, power up the mouthful-of-a-title device. Let's find this freak."
+“What are we calling this thing, anyway? //Operation: DIVINE RUSE//?” Jaedan cleared his throat. “First off, I ain't calling //any// beast 'divine', no matter what happens. What do you think, Haruki, should we skip the mission and check out some Selachian burgers in the next galaxy over?”
 
-Haruki pulled the 'FASH' device from an overhead compartment and turned it on. Using the FASH, she could find Deviant threats within an almost infinite range of the source. 
+“Gross! You'd //eat// that?” She shook her head. “I suppose we could get a head start and figure out where this thing is, before Hoygull contacts us. Say, Gægr, are you sensing the beast anywhere?”
 
-"Aside from silvery readings down there -- I think that's from Selachians in the ocean below us -- there's... Aha! There it is!" On cue, the device's display screen showed a small planet illuminated by orange indicative of Deviant interference. The readings listed it as a few light-years away. A small red annotative text noted that WHITE NETHER/Akheilos was nearby, either in or around the planet's atmosphere.
+Although MFT CHARYBDIS retained the ability to detect Selachian threats beyond the dimensional barrier with Deviant tech, Gægr had natural long-distance Selachian-finding capabilities. He powered these by his fins, Deviant magic, or some strange combination of both.
 
-"What's it doing all the way over there?" Jaedan asked.
+Gægr sang. [[size 150%]]**♪**[[/size]] //“Selachian's gone away, and there's no need for us to stay. Come on, dear brother and sister, let's traverse the skies and play!”// [[size 150%]]**♫**[[/size]]
 
-"How should I know?" Haruki replied.
+“So, that's a no. Right, Haruki, power up that gadget that's a mouthful to name. Let's find this freak.”
 
-"Shit, you think it's still mad at us for messing with it last week?"
+Haruki pulled down the 'FASH' device from an overhead compartment and switched it on. With the FASH, she could detect Deviant threats within a virtually infinite range.
 
-"Most definitely." As the team's tech specialist, Haruki had the privilege of understanding all the various systems outfitted within Gægr's interior component. She also had the privilege of trying to explain what was going on with the devices when they failed -- which they often did. "Okay, can you grab the Tyson Ontic Pugnātor? You //do// know how to use that thing, don't you?"
+“Aside from silvery readings down here — I think that's from Selachians in the ocean — there's... Aha! There it is!” On cue, a display screen showed a minor planet illuminated by orange indicative of Deviant interference. The readings indexed it as a couple of light-years away. Red annotative text noted that WHITE NETHER/Akheilos was nearby, either in or around its atmosphere.
 
-"Of course. It's not rocket science." Jaedan pulled at the storage cupboard to his right. The Tyson Ontic Pugnātor sprawled out on a telescopic handle. "Co-ordinates?" He pretended he knew what in the depths he was doing.
+“What's it doing all the way out there?” Jaedan asked.
 
-Haruki transmitted co-ordinates from the FASH into the TOP. Jaedan flicked a few switches, then eyed a big blue button on top. "You ready to blast off, GÆGR COUNTER?" Jaedan yelled. Gægr moaned into the deep.
+“How should I know?!”
 
-Jaedan slammed his armoured palm against the button. In an instant, blue energies encircled Gægr. He propelled himself forward, then his entire body disappeared with a //pop//. To any spectators, it looked like the great whale fizzled into thin air. Which it had.
+“Shit, you think it's still mad at us for messing with it last week?”
 
-[[=image http://scp-wiki.wdfiles.com/local--files/spc-001/SPCLogo50.png class="break" style="width: 35px !important;"]]
+“Most definitely.” As the team's tech specialist, Haruki enjoyed the privilege of understanding all the various systems outfitted within Gægr's interior. She also suffered from having to explain whatever was going on when the devices failed — which they often did. “Okay, could you grab the Tyson Ontic Pugnātor? You //do// know how to handle that thing, don't you?”
 
-Gægr reappeared in deep space. It was dark, with nary a light source except for the distant stars of the Milky Way illuminating him. When he manifested fully, the spectral tendrils of gravitation yanked him away.
+“Pfft.  Obviously. It's not rocket science.” Jaedan pulled at the storage cupboard to his right. The Tyson Ontic Pugnātor sprawled out on a telescopic handle. “Gimme the co-ordinates,” he said, pretending he knew what in the depths he was doing.
 
-Jaedan and Haruki jolted back in their seats. From a display screen, Jaedan noted the twinkling azure glow of the exotic planet that Gægr was now orbiting. "That's... Oh, wow, it's so pretty. What is it?"
+Haruki transmitted coordinates from the FASH into the Pugnātor herself, knowing full well Jaedan was without a clue.
 
-"If I have it right..." She hesitated. "[[[scp-3632|That's Nibirdu]]]"
+Jaedan flicked a half-dozen switches and eyed a big blue button on top. “You ready to blast off, GÆGR COUNTER?”
 
-"GÆGR COUNTER! How you feeling, buddy?" Jaedan exclaimed. The mass of Cetacean muscle drifted in the pull of the planetoid's gravity, which was exceptionally strong for a celestial object of its size.
+Gægr moaned into the deep.
 
-Gægr's only reply was a long moaning sound as he breached the planetoid's exosphere.
+Jaedan struck his armoured palm against the button. In an instant, blue particles encircled Gægr. He propelled forward, then his entire body winked out with a //pop//.
+
+To any onlookers, it looked as if a great whale fizzled into thin air.
+
+Which it had.
+
+[[=image http://scp-wiki.wdfiles.com/local--files/spc-001/SPCLogo50.png class="scene-break"]]
+
+Gægr reappeared in deep space. It was pitch-dark, with nary a light source but the far-off stars of Orion's Arm. When he had manifested fully, the spectral tendrils of gravitation plucked him away.
+
+Jaedan and Haruki jolted back in their seats.
+
+From a display screen, Jaedan noted the twinkling azure glow of the exotic planetoid that Gægr now orbited. “Oh, wow, it's so pretty. That's... What is that?”
+
+“If I have it right...” Haruki seemed hesitant. “[[[scp-3632|That's Nibirdu]]].”
+
+“GÆGR COUNTER! How you feeling, buddy?” Jaedan exclaimed.
+
+The mass of Cetacean muscle drifted in the gravitational pull — exceptionally strong for a celestial object of its meagre size. Gægr's only reply was a low, rumbling moan as he entered the planetoid's exosphere.
 
 Then...
 
-"Haruki, are you hearing that? What in the depths is that?" Jaedan whispered. Though there was no way any outside sounds could breach Gægr's blubber -- especially considering his distance from the planet himself -- Jaedan experienced a crooning birdsong wash over him on the periphery of his senses. He //felt// it more than he could hear it.
+“Haruki, are you hearing that? What in the depths //is// that?” Jaedan hissed. Though outside sounds could not breach Gægr's blubber — especially considering his distance from the planet — Jaedan experienced crooning birdsong wash over him on the periphery of his senses. It was more //feeling// than //hearing//.
 
-Haruki didn't respond. Jaedan glanced over at her and felt a burning bittersweet orange aura emanating from her person. "Haruki? Shit, Gægr, get us out of here!"
+Haruki didn't respond.
 
-Haruki murmured. "We... We were meant to join the flock."
+“Haruki?” Jaedan glanced over and felt a bittersweet orange aura emanating from her person. He couldn't catch her expression. “Haruki! Shit! Gægr, get us out of here!”
 
-Jaedan could hardly croak a reply as the avian symphony washed over, consuming his senses.
+Haruki murmured. “We... We were meant to join the flock.”
 
-"If... If the flock left without us..." Haruki warbled. "Then what's our purpose?"
+Jaedan could hardly croak a reply as the Avian symphony washed over and consumed his senses.
 
-"Thoth... He will lead us on a vast migration." Jaedan had fallen under the spell. "He will give us our purpose."
+“If... If the flock left without us...” Haruki warbled. “Then what's our purpose?”
 
-"He'll carry us under his wing?"
+Now Jaedan was spellbound, too. “Thoth... He will lead us on a vast migration. He will grant our purpose.”
 
-Jaedan shook his head. "He'll carry us in his giant beak."
+“He'll carry us under his wing?” Saliva dripped from her mouth.
 
-[[=image http://scp-wiki.wdfiles.com/local--files/spc-001/SPCLogo50.png class="break" style="width: 35px !important;"]]
+Jaedan bobbed his head. “He'll carry us in his giant beak.”
 
-Gægr swam through swirling mists of lighter-than-air feathered masses. Shimmering distortions in the sky above showered him with blue light; beneath him, countless winged forms group in flocks of many varieties took formation in the skies. They were singing.
+[[=image http://scp-wiki.wdfiles.com/local--files/spc-001/SPCLogo50.png class="scene-break"]]
 
-He felt a sense of dread: The Selachian daemon was nearby. But, where?
+Gægr swam through swirling mists of lighter-than-air feathered masses. Shimmering distortions above showered him with blue light; beneath him, innumerable winged humans flocked in geometrically perfect formation.
 
-From the corner of his eye, a massive form in the shape of a fighter jet exited from the clouds;  the planet's winds buffeted its fins. It was moving, and fast. As soon as Gægr turned, the hulking titan slammed into his underbelly at astounding speeds. The great Cetacean listed to one side, expelling mist from his wake. The whale plummeted, aching with pain.
+They were singing.
 
-Whatever the case was, the birdsong affected neither the Selachian nor the Cetacean. Akheilos, a large snow-white form with pointed fins and a devilish grin, blitzed downwards as Gægr continued to fall, deeper into the planetoid's atmosphere. When Akheilos caught up, Gægr activated his unobtanium engine and escaped.
+He sensed an impending doom: The Selachian daemon was nearby.
 
-As the two beasts descended through kilometres of bright sapphire skies, a shroud of thousands of bird-humans converged on the pair. Both beings were quicker than the humanoid entities in pursuit of their new prize, but the humanoids had the advantage of numbers. An otherworldly plane covered in breadcrumb, feathered masses, and picturesque monuments lay below them.
+But where?
 
-While hundreds of humanoids covered Gægr and the birdsong continued to course through his being, he channelled esoteric conduits of energy cascading through the cosmos by singing the only song he knew would help. 
+From the corner of his eye, a massive form in the shape of a fighter jet exited the clouds; gale-force wind buffeted its fins. Gægr twisted around. The titan slammed into his underbelly at astounding speeds.
 
-It was an olden Cetacean hymn in [[[critter-profile-bartholomew|the song-language of Balooga]]], passed down through generations. His father, his father's father before him, and the rest of his ancestry had kept the hymn in the family since the beginning of time, and now Gægr was moved by the theatrics the hymn required of him.
+The great whale listed to one side, expelling mist from his wake. He plummeted in agony.
 
-Even the thousands of bird-people in their midst paused, hanging at attention as Gægr glided through. Akheilos paused too, though not to listen to the song: He glared at Gægr through the mist and vibrated, tinged with a fiery red. His pectoral fins swelled up, ready to launch an attack.
+Whatever the case, the birdsong affected neither the Cetacean nor the Selachian. Akheilos, a large snow-white form with pointed fins and a ghastly grin, blitzed downward as Gægr corkscrewed into the atmosphere.
 
-As the song elapsed, it dawned on Akheilos what its meaning was, and a wave of unfamiliar thaumic blue mesmerized him over the sounds of thousands of excited chirps and trills. He tried to fight it, displacing and even outright destroying the winged forms in his midst. Then the song changed, rising in volume, as Gægr put all his might into singing it.
+When Akheilos caught up, Gægr activated his unobtanium engine and made panicked escape.
+
+As the beasts descended kilometres of sapphire skies, a shroud of thousands of bird-humans converged on the pair. Both beings were quicker than the bird-humans in pursuit of their newfound prize. But the humans had the advantage of numbers.
+
+An otherworldly plane covered in breadcrumb, feathered masses, and picturesque monuments lay below them. Hundreds of bird-humans swarmed Gægr, and birdsong continued coursing through his being.
+
+He channelled Cosmic conduits of energy by singing the only song he knew would help.
+
+It was an olden Cetacean hymn in [[[critter-profile-bartholomew|the song-language “Balooga”]]] that had been passed along generations. His father, his father's father, and the rest of his ancestry had kept the hymn in the family since the beginning of time. And now, Gægr was moved by the theatrics the hymn required.
+
+Thousands of bird-people in the pair's midst paused, hanging at attention as Gægr glided through. Akheilos paused too, though not to listen: He glared at Gægr and vibrated, tinged with fiery red. His pectoral fins swelled up — ready to launch an attack.
+
+As Gægr's hymn elapsed, its meaning dawned on The Great Daemon. A wave of unfamiliar, thaumaturgic blue mesmerized Akheilos over the sounds of thousands of excited chirps and trills. He tried suppressing it — displacing and even outright destroying the winged forms hanging in the mist.
+
+But the hymn changed, rising in volume, and Gægr put all his might into singing it.
 
 @@ @@
 
@@ -386,15 +344,17 @@ Descend, sky-maiden, and give us peace.
 
 @@ @@
 
-A massive crimson portal tore up the skies above, and through it, a multitude of dimensions could be seen. A presence patiently waited within. It took a primal winged form, vast and alien, bearing a superficial resemblance to the sacred ibis. [[[the-sacred-djehuti|It was Thoth in his true form]]], watching over his paradise from within the Noosphere. The squeals of the hundreds of thousands of bird-humans around the two beasts rose to a crescendo as their master appeared.
+A massive crimson portal tore up the skies above, and through it, a multitude of dimensions could be seen. A presence patiently waited within. It took a primal, winged form, vast and alien, bearing superficial resemblance to the sacred ibis. [[[the-sacred-djehuti|It was Thoth in his true form]]], watching over his paradise from within the Noosphere.
 
-Akheilos, christened with an electric blue glow, turned his gaze from Gægr and propelled himself toward Thoth, made anew with majestic power. Whether this was otherworldly force or Deviant magicks was unknown, but there was nobody left to ponder this thought.
+As their master appeared, the squeals of hundreds of thousands of bird-humans rose to a crescendo.
 
-Gægr drifted, exhausted, toward the feathered grounds below. His world blacked out; clamouring birdsong was the last thing he could feel.
+Akheilos, christened with an electric blue glow, strained its gaze from Gægr and propelled toward Thoth, anew with majestic power. Whether this was otherworldly force, or a Deviant magic trick was unknown, but there was nobody left to ponder this thought.
+
+Gægr drifted, exhausted, toward the feathered grounds below. His world blacked out; clamouring birdsong was the last thing he sensed.
 
 Then a dull thud echoed across the planet.
-[[/==]]
+[[/div]]
 ----
-[[div class="team-bird-nav"]]
-= << [[[Avian Anthology I]]] | [[size 120%]][[[bird|TEAM BIRD]]][[/size]] | [[[Avian Anthology II]]] >>
+[[div class="series-nav"]]
+<< [[[Avian Anthology I]]] | [[size 120%]][[[bird|TEAM BIRD]]][[/size]] | [[[Avian Anthology II]]] >>
 [[/div]]
