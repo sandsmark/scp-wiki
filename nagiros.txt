@@ -935,6 +935,13 @@ Expect great things in the future.
 || **[[[%%link%%/noredirect/true | %%title%%]]]** || %%tags_linked%% || %%_tags_linked%% || %%category%% ||
 [[/module]]
 
+[[=]]
+++ All GOI formats.
+[[/=]]
+[[module ListPages tags="goi-format" categories="*" separate="no" perPage="250" order="created_at desc" prependLine="||~ Title ||~ Hid. Tags ||~ Category ||"]]
+|| **[[[%%link%%/noredirect/true | %%title%%]]]** || %%_tags_linked%% || %%category%% ||
+[[/module]]
+
 [[code type="css"]]
 /* Centered breadcrumbs */
 #breadcrumbs{
