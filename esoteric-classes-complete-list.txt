@@ -320,7 +320,14 @@ Thank you to [[*user Ziakial]] for originally creating this list.
 [[/collapsible]]
 [[/div]]
 
+[[div style="margin-top: 100px"]]
+[[/div]]
+
 [[module CSS]]
+/* Minor style edits */
+@import url("/nagiros/code/1");
+
+/* Collapsibles */
 .list {
   padding: 7px;
   margin: 20px 3px;
@@ -331,14 +338,20 @@ Thank you to [[*user Ziakial]] for originally creating this list.
 .collapsible-block-link, .collapsible-block-unfolded-link, .collapsible-block-folded {
     text-align: center;
 }
+
+/* Table of contents */
 #toc {
     padding-right: 25px;
 }
+
+/* Mobile resizing */
 @media (max-width: 1250px) {
   .resources {
     margin: 50px 0 !important;
 }
 }
+
+/* Resources */
 .resources {
   border: 2px solid black;
   padding: 5px 10px;
@@ -347,17 +360,17 @@ Thank you to [[*user Ziakial]] for originally creating this list.
 .resources a.collapsible-block-link {
   font-weight: bold;
 }
+
+/* Headers */
 h2 {
   margin-top: 50px;
 }
 .list h3 {
   margin-top: 20px;
 }
+
+/* Centering names */
 table.wiki-content-table td:nth-child(1) {
   text-align: center;
 }
-[[/module]]
-
-[[module CSS]]
-@import url("http://www.scp-wiki.net/nagiros/code/1");
 [[/module]]
