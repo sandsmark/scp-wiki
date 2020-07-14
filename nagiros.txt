@@ -831,6 +831,27 @@ We'll see.
 [[/table]]
 [[/module]]
 
+[[module ListPages name="SCP-4936"]]
+[[table style="background: black; width: 100%; border-spacing: 4px; margin: 50px 0 75px 0"]]
+[[row]]
+[[cell rowspan="2" style="text-align: center; vertical-align: middle; font-size: 150%; width: 25%; background: #2e2e2e; text-shadow: 0px 0px 4px black;"]]
++* [[[SCP-4936 | 4936]]]
+[[/cell]]
+[[cell colspan="2" style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black; padding: 0 10px;"]]
++* Summer Vacation 🦀
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black; width: 37.5%; padding: 0 10px;"]]
++* +%%rating%% 👍
+[[/cell]]
+[[cell style="text-align: center; veritcal-align: middle; background: #383838; text-shadow: 0px 0px 4px black; padding: 0 10px;"]]
++* %%comments%% 💬
+[[/cell]]
+[[/row]]
+[[/table]]
+[[/module]]
+
 [[div class="heading"]]
 +* Reflection
 [[/div]]
@@ -933,13 +954,6 @@ Expect great things in the future.
 [[/=]]
 [[module ListPages tags="fragment" categories="-fragment" separate="no" perPage="250" order="created_at desc" prependLine="||~ Title ||~ Vis. Tags ||~ Hid. Tags ||~ Category ||"]]
 || **[[[%%link%%/noredirect/true | %%title%%]]]** || %%tags_linked%% || %%_tags_linked%% || %%category%% ||
-[[/module]]
-
-[[=]]
-++ All GOI formats.
-[[/=]]
-[[module ListPages tags="goi-format" categories="*" separate="no" perPage="250" order="created_at desc" prependLine="||~ Title ||~ Hid. Tags ||~ Category ||"]]
-|| **[[[%%link%%/noredirect/true | %%title%%]]]** || %%_tags_linked%% || %%category%% ||
 [[/module]]
 
 [[code type="css"]]
