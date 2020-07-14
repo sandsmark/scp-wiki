@@ -1,8 +1,9 @@
 title:Serpent Bound \\\ BEAR WITNESS
-parent:white-space-hub
 [[include :scp-wiki:component:sh-theme]]
 
 [[module CSS]]
+@import url("/nagiros/code/1");
+
 .section {
   border:solid 1px #112211;
   background:#EEF6EE;
@@ -16,30 +17,6 @@ parent:white-space-hub
 /* Removed breadcrumbs */
 #breadcrumbs{
   display: none;
-}
- 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
- 
-/* Extended page bottom */
-#page-content {
-  margin-bottom: 100px;
-}
- 
-/* Centered title */
-#page-title {
-  text-align: center;
-}
- 
-/* Extended bottom rating module */
-.page-rate-widget-box {
-  margin-bottom: 25px;
-}
- 
-.rateBox {
-  margin-bottom: 15px;
 }
 
 .linkbox {
@@ -224,3 +201,6 @@ Until it is proven otherwise, the Eschaton is assumed to be a hostile action aga
 ------
 [[footnoteblock title=""]]
 ------
+
+[[div style="margin-top: 100px"]]
+[[/div]]
