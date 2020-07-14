@@ -291,7 +291,7 @@ If all these conditions are met, the Foundation will satisfy the Σ-level priori
  _
 
 __AFTERWORD__
-[[div style="border-left: dashed 1px black; border-right: dashed 1px black; margin-left: 20px; margin-right: 20px; padding-left: 10px; padding-right: 10px"]]
+[[div class="afterword" style="border-left: dashed 1px black; border-right: dashed 1px black; margin: 0 20px; padding: 0 10px;"]]
 The Department of Hypothetical Scenarios was established many decades ago to prepare for the end of humanity. However, the variety of life in our universe has caused our departmental objectives to be re-evaluated. There may come a time when humanity is stamped out — either by our own doing or that of an invading force — but it is not necessarily the case that all other forms of life will follow suit. It is therefore our duty to protect all other forms of life, if our own is to perish.
 
 We will soon begin constructing SCP-4936's containment chamber in an isolated extradimensional space, filled with as much beach as it can desire. If its containment becomes necessary, it will be safe, happy, and above all else: //alive//. And so long as that remains the case, we can expect that crabs as a taxological group will be much the same.
@@ -400,5 +400,19 @@ SCP-4936 returned to Cancer immediately following its transmission.
 }
 .u-faq p:nth-child(1) {
   line-height: 0;
+}
+
+/* Mobile resizing */
+
+/* Mobile resizing */
+@media (max-width: 767px) {
+  .council {
+    margin-left: 0;
+    margin-right: 0;
+}
+  .afterword {
+    margin-left: 10px;
+    margin-right: 10px;
+}
 }
 [[/module]]
