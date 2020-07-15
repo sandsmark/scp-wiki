@@ -3,68 +3,7 @@ parent:canon-hub
 [[include :scp-wiki:theme:magnus-web-format]]
 [[include :scp-wiki:theme:black-highlighter-theme]]
 [[include :scp-wiki:component:collapsible-sidebar]]
-
-
-
-[[module css]]
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
-
-#page-title{display:none}
-
-#header {
-    background-image: url(http://www.scp-wiki.net/local--files/memoria-adytum/TitleLogo.png)
-}
-
-
-
-@supports(--css:variables) {
-
-    :root {
-     --header-title: "In Memoria, Adytum";
-     --header-subtitle: "Echoes of Kalmaktama.";
-     --header-font: 'Nanum Brush Script', cursive;
-     --page-title: "In Memoria, Adytum";
-     --background-gradient-distance:65rem; !important
-
-    }
-}
-
-
-    @supports (background-blend-mode: screen) {
-    
-     #extrac-div-1 {
-     width: 100%;
-     height: var(--header-height-on-desktop);
-     position: absolute;
-     top: 0;
-     left: 0;
-     background-image: var(--gradient-header), url(http://www.scp-wiki.net/local--files/memoria-adytum/background.jpg);
-     background-size: var(--header-background-image-size) 80%, 80%, 80%;
-     background-blend-mode: normal;
-     pointer-events: none; 
-     }
-
-     div#extra-div-1 {
-     width: 100%;
-     height: calc(100% - var(--final-header-height-on-desktop));
-     position: absolute;
-     top: calc(var(--final-header-height-on-desktop));
-     left: 0;
-     z-index: -1;
-     background-color: rgba(222, 222, 222, 1);
-     background-color: rgba(var(--swatch-background), 1);
-     mask: var(--gradient-background);
-     -webkit-mask: var(--gradient-background);
-     background-image: url(http://www.scp-wiki.net/local--files/memoria-adytum/background.jpg), var(--gradient-background);
-     background-size: 100%, 80% var(--background-gradient-distance);
-     background-blend-mode: difference;
-     background-repeat: repeat, repeat-x;
-     pointer-events: none;
-     }
-
-    }
-
-[[/module]]
+[[include :firedawnfolder:theme:memoria]]
 
 [[>]]
 [[module Rate]]
