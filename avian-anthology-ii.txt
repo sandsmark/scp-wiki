@@ -1,226 +1,328 @@
 title:Avian Anthology II
-[[include component:preview text=Thoth commanded his fleet of peons to come to his aid, but the daemon's appetite was too voracious. He tore chunk after chunk of Thoth's form, leaving neither bone nor gristle behind.]]
+[[include component:preview
+|text=Thoth reigned supreme. His freshly formed vassals flooded into their new home by the millions. They would make excellent workhorses for the nobles. Their people would till the land, move the stones, erect monuments for the Pharaoh (and, of course, for him).]]
+
+[[include :scp-wiki:theme:flopstyle]]
 
 [[module CSS]]
-/* HEADER */
-#header h1 a {
-    display: block;
-    margin: 0;
-    padding: 80px 0 25px;
-    line-height: 0;
-    max-height: 0;
-    color: transparent;
-    background: transparent;
-    font-family: 'Verdana', Arial, sans-serif;
-    text-decoration: none;
-    text-shadow: none;
-    letter-spacing: 0.9px;
+/* SITE HEADER */
+ #header h1 a,
+ #header h2 span{
+     color: transparent;
+     text-shadow: none;
+}
+ #header h1 a::before{
+     content: "The Avian Division";
+     font-family: "Verdana", sans-serif;
+}
+ #header h2 span::before{
+     content: "Until we return to The Nest";
 }
 
-#header h1 a::before {
-    content: "The Avian Division";
-    color: white;
-    letter-spacing: -0.02em;
-    text-shadow: 3px 3px 5px black;
+/* OTHER */
+ .thoth-gradiant{
+     margin: 1em -1.7em 0;
+     padding: .5em 1.7em;
+
+     background:
+       linear-gradient(to left,
+                hsl(0, 0%, 100%),
+            hsla(45, 100%, 55%, .5));
+}
+ .akheilos-gradiant{
+     margin: 0 -1.7em 1em;
+     padding: .5em 1.7em;
+
+     background:
+       linear-gradient(to right,
+                hsl(0, 0%, 100%),
+             hsla(205, 100%, 55%, 0.5));
 }
 
-#header h2 span {
-    display: block;
-    margin: 0;
-    padding: 19px 0;
-    line-height: 0;
-    max-height: 0;
-    font-weight: bold;
-    color: transparent;
-    text-shadow: none;
-}
-
-#header h2 span::before {
-    content: 'Until we return to The Nest';
-    color: white;
-    text-shadow: 1px 1px 1px black;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
-}
-.team-bird-nav{
-    background-color: black;
-    border: outset 1.5px black;
-    border-radius: 30px;
-    color: black;
-    background: linear-gradient(to bottom right, rgba(0,0,0,0), rgba(255,200,28,1));
-    font-weight: bold;
-    font-size: 85%;
-}
-hr{
-     margin: 1em 0;
-     padding: 0;
-     border: 0;
-}
+/* SERIES NAV */
+ .series-nav{ background: linear-gradient(to bottom right, hsla(0, 0%, 100%, 1), hsla(45, 100%, 55%, .5)); }
 [[/module]]
 
+> **NOTE:** This is the **Finale** of a **12**-Part storyline: **[[[*http://www.scp-wiki.net/bird|Team Bird, Season One]]]**.
+> It is recommended that you first read **[[[SCP-3095]]]**, and then start from the beginning with **[[[SCP-3662]]]**.
+----
 [[>]]
 [[module Rate]]
 [[/>]]
-[[==]]
-= **August 12th, 2018 | Night | Outskirts of Las Vegas**
 
-The group of birds and shark-punchers emerged from the monorail tunnel to see the blue-tinted night sky of Las Vegas. The bird-people that had once filled the sky were now thinning out. Looking down, Hoygull saw the now-familiar sight of damaged buildings and dead humans in various stages of the avian-ification process.
-
-"Whoa," SCP-2785 squeaked. "Everything's so big, but so broken. It's as broken as... As a broken car!" They still hadn't worked out similes.
-
-"I don't think we have much time," Hoygull said. "The humans are going through the portals and disappearing. If we don't get HYPERION off the ground in time, the human race will be lost."
-
-"We've got to double-time this search, then," Duck said.
-
-Luckily, flight made it much easier to search. The five seagulls took to the skies, looking for the shed General Tarland described.
-----
-It took an hour of searching to find the shed. It wasn't quite on the outskirts of Vegas; in fact, it was closer to the Las Vegas strip than not. It had the seven-pronged star and a ladder going down for what seemed like forever. As Hoygull casually coasted down the shaft, he did not envy SCP-2785, who had to go down the ladder manually.
-
-The bunker reminded Hoygull of an airplane hangar, but instead of aircraft, the bunker contained a massive missile, the base of which took up a good amount of floor space and the tip of which almost touched the top of the hangar. Thick, insulated wires attached computer equipment to the base. The entire place smelled of gunpowder and gasoline.
-
-Crowl flew up to one of the computers. He pushed some buttons, before turning back to the group. "This thing needs some fuel loaded into it. It'll take all night," he said.
-
-"Good. Then we can get some sleep," Hoygull said. "I could use a bit of shuteye."
-
-It seemed that the bunker was meant to hold soldiers, for a time being. Hoygull found a spot in the bunkroom and curled up to sleep on top of one of the pillows.
-----
-= **August 13th, 2018 | Below Las Vegas**
-
-Hoygull awoke after a good six hours of sleep and took a handful of sugar cubes from the missile site's break room to shake off the sleepiness. Crowl woke up soon after and logged into the computer terminal. "Alright, do you all want the good news or the bad news first?"
-
-"Give us the good news first," Kesh replied, who had stayed up all night doing who-knows-what
-
-"The Missile is fueled up and ready to be launched when we are ready."
-
-"Bad news?"
-
-"It looks like the army of statues from earlier finally caught up to us. Luckily, they are a long distance away, and I do not think they will be able to bother us before we can launch the missile. If we start now, we will have plenty of time to launch before they get here."
-
-"Let's launch now," Kesh said. "We don't want to cut it closer than we already are."
-
-Crowl hit a few buttons. A computerized androgynous voice sounded over the bunker: "[[span style="font-weight: bold; font-family: monospace; font-size: 150%;"]]Initiating Project HYPERION launch sequence. Opening primary missile exit shaft.[[/span]]"
-
-The ceiling of the bunker parted, accompanied by the mechanical sound of gears turning. Eventually, the bunker opened to the bright blue night sky. The moon was still in view.
-
-"[[span style="font-weight: bold; font-family: monospace; font-size: 150%;"]]Initiating launch sequence.[[/span]]" The voice continued. "[[span style="font-weight: bold; font-family: monospace; font-size: 150%;"]]T-minus one hundred seconds[[/span]]... [[span style="font-weight: bold; font-family: monospace; font-size: 150%;"]]Ninety-nine[[/span]]..."
-
-Hoygull could hear the engine of the missile warming up. Suddenly, he heard a visceral, ear-splitting sound, not of the rocket, and looked up towards the moon. A large portal had just opened up in front of it, and the head of a flaming red bird poked through.
-
-"What's that?" Crowl yelled.
-
-"I..." Hoygull stumbled. "I think we might be dealing with Thoth here."
-
-"I'm getting a lot of air-information here!" SCP-2785 yelled. "But I don't think it means anything. It's just bird calls!"
-
-At the sound of screeching, several of the [[[scp-3570|bird people]]] swarmed the sky. The sound of metal-on-metal overwhelmed even the cacophony of voices as //something// tumbled down the access shaft. Louder than everything else, Thoth shook the world with his mere presence. This woke up Quibba, who had still been asleep.
-
-"I think... I think this is the end of the line," Kesh yelled. "I can barricade the access shaft with some of the equipment here. You guys go to the armory and find something to use."
-
-"[[span style="font-weight: bold; font-family: monospace; font-size: 150%;"]]Seventy seconds[[/span]]..."
-
-Kesh flew into a forklift and used it to push a table into the way of the access shaft. Hoygull motioned to the rest of his team to enter the armory.
-
-Hoygull turned on the light. At a glance, he could see that there weren't too many explosives in the armory. Maybe they would interfere with the missiles function. All they could find were a few grenades. Unsurprisingly, there weren't any weapons adapted for use by birds, so they had to improvise. Hoygull found a double-barrel shotgun that he could lift somewhat easily.
-
-Just as he was loading two grenades into his shotgun, Hoygull heard the sickening sound of metal against metal. //The barricade won't hold// he thought. Signaling to the Avian Division, he stepped out of the armory.
-
-"[[span style="font-weight: bold; font-family: monospace; font-size: 150%;"]]Forty-four seconds[[/span]]..."
-
-Kesh had formed a passable barricade out of a few tables, a dysfunctional terminal, and the forklift parked in front of them. A statue managed to slip through the barricade. In his naïveté, SCP-2785 ran up to the statue to say hello and offer its pleasantries. A haymaker knocked SCP-2785's head clean off, and an uppercut launched him across the room and crushed him against the wall.
-
-"[[span style="font-weight: bold; font-family: monospace; font-size: 150%;"]]Twenty-nine seconds[[/span]]..."
-
-The statues burst through the barricade with their raw numbers. They organized themselves into a line and began to charge. Hoygull held up the shotgun and fired two grenades into the group of statues. The explosion destroyed three statues, and knocked a few more into other statues, causing collateral damage. The remainder of the Avian Division launched grenades and used various forms of firepower, including a mounted minigun, to push back the hordes.
-
-As he was loading two more grenades into the shotgun, one of the statues charged forwards and punched Hoygull square in the stomach, knocking him across the room into the wall. After recovering from the blow, Hoygull picked his shotgun back up. He was losing vision, but he saw a group of statues rushing towards the missile, and he fired two more grenades at them. It worked; he destroyed them, but one of them flew into Crowl's minigun, knocking it over. He was quickly overwhelmed without a weapon.
-
-"[[span style="font-weight: bold; font-family: monospace; font-size: 150%;"]]T-minus ten seconds[[/span]]..."
-
-Hoygull realized he was out of grenades, so he loaded a couple of slugs into his shotgun and fired. They bounced harmlessly off the statues, hardly making a crack. Hoygull saw another group approaching the missile. //No!// he thought to himself, not wanting all of his hard work up to this point to be for naught.
-
-Through his dizziness and deliriousness, he saw Quibbs flying towards the group. //What is he doing?// Hoygull thought. Then he saw the grenades attached to his shirt. Then he saw the cold, hard look of determination on his face. Then he saw him dive into the group of statues.
-
-The explosion knocked them all away. The counting of the automated voice continued.
-
-"[[span style="font-weight: bold; font-family: monospace; font-size: 150%;"]]Three[[/span]]... [[span style="font-weight: bold; font-family: monospace; font-size: 150%;"]]Two[[/span]]... [[span style="font-weight: bold; font-family: monospace; font-size: 150%;"]]One[[/span]]... [[span style="font-weight: bold; font-family: monospace; font-size: 150%;"]]Liftoff[[/span]]."
-
-The engine of the missile ignited, lifting the rocket off the ground and into the air. It threw Hoygull's already damaged body against the wall again, breaking a few bones. statues jumped into the air to try to hinder the missile's launch, but it was too late. However, it wasn't too late for the human-birds flying up into the air to slam themselves into the rocket, messing with its trajectory.
-
-//No...// Hoygull's thoughts sunk. //It won't make it!//
-
-A bird-man slammed into the nose of the missile, nudging its head away from the trajectory. The rest of the birds saw this and followed suit. The missile now pointed in the wrong direction.
-
-//After all that's happened?// Hoygull felt the disappointment wash over him like a wave.
-
-"Uh, Mister Quinn? That AESD you mentioned earlier? I'm getting a one //really big// lump of air-information from it!" SCP-2785's voice climbed to a screech.
-
-"What, you mean to say the AEDS is detecting one large threat?"
-
-Quinn shook his head. "No, Hoygull. Look!" He pointed to the skies. While the rest of the Avian-Centre alliance was looking at the dimensional rift in space housing the avian deity, Quinn's instincts were kicking in. He saw a small red dot in the sky slowly expand. "2785 didn't misspeak. They meant what they said."
-----
-[[div style="color: rgb(12, 12, 12);"]]
-[[div style="background-color: rgba(255,200,28,0.75); padding: 1px; padding-left: 0.5%; padding-right: 0.5%; background: linear-gradient(to left, rgba(0,0,0,0), rgba(255,200,28,0.75));"]]
-Thoth looked down at the Earth he had shaped in his image. After millennia of waiting, the blue marble was finally his. Finding the right people across all manner of dimensions wasn't an easy task. The tools needed to have precise motivation and skills required to enact his will. It was easy to start with, coercing the Shark-brained idiots to make the Avian meme and tempting the engineer with the promise of saving his daughter, but leaving a breadcrumb trail for the Foundation was significantly more difficult.
-
-He was so powerful, his newly made vassals flooded to their new home. They would make excellent workhorses for the nobles: the people will till the land, move the stones, make monuments for the pharaoh (and, of course, to him). 
-
-Not a moment too late, either. Akheilos had found this Earth only moments after his plan had come to fruition, with the shark-brains in tow. The shark-brains had weakened the only force left to reckon with him. The humans shouldn't complain, at any rate. He had saved them from an even worse fate. Who knows the savagery that Akheilos would have performed on them?
-
-From the blue marble, Thoth saw a small trinket. He scoffed at the pitiful final act of humankind. This was the best they could do? Some feeble explosive? It might've worked in his weakened state, but it was too little, too late. He watched humanity's last firework head towards him. If he was going to crush their final hope, he was going to do it properly.
+[[div class="justified"]]
+[[div style="font-size: 130%; font-weight: bold; text-align: center;"]]
+Outskirts of Las Vegas
+August 12, 2018
+Night
 [[/div]]
-[[div style="background-color: rgba(33,187,239,0.75); padding: 1px; padding-left: 0.5%; padding-right: 0.5%; background: linear-gradient(to right, rgba(0,0,0,0), rgba(33,187,239,0.75));"]]
-Akheilos swam through the Noosphere as quickly as he could. He had been granted a once-in-a-lifetime opportunity: to kill his nemesis. Medila, the //other// Avian deity, had infused herself with him to serve this goal. 
 
-The whale, Gægr, had given this gift to him. He called upon Medila, and Medila had sung a birdsong so grand, it spoke directly to Akheilos' heart. It spoke to him so deeply it awoke a rage within him that had been burning for eternity. It reminded him of his people, the loved ones that Thoth took away from him.
+The birds and shark-punchers emerged from the monorail tunnel in broad view of the indigo-tinged sky above Las Vegas. Extant bird-humans, who flocked the air just days ago, now hovered in solitary scatters.
 
-The blood of the bird was all he'd ever wanted. He'd just lost sight of that goal.
+Looking down, Hoygull spotted a familiar sight of damaged buildings and dead humans in various stages of the Avian-ification process.
 
-Akheilos struggled through the fabric of reality. It ripped at his skin until it turned vibrant red from the friction. Thoth wasn't paying attention to him. In fact, only three people were the bird, the robot, and the human. 
+“Whoa,” SCP-2785 squeaked, “everything's so big, but so broken! It's as broken as... As a broken car!” He still hadn't worked out similes.
 
-He tumbled into the skies above the squawking Earth.
+“I don't think we have much time,” Hoygull said. “The last humans are entering the portals and disappearing. If we don't get HYPERION off the ground soon, humanity will be lost.”
+
+“We've got to double-time this search, then,” Duck replied.
+
+Luckily, it was //much// easier searching with wings. The five seabirds set off to the skies, looking for the shed General Tarland described.
+
+[[=image http://scp-wiki.wdfiles.com/local--files/task-forces/Eta4.png class="scene-break"]]
+
+It took an hour of searching to find the shed. It wasn't quite on the outskirts of Vegas; in fact, it was closer to the Las Vegas Strip than not. It had the seven-pronged star and a ladder going down for what seemed like forever.
+
+While Hoygull casually coasted down the access shaft, he did not envy SCP-2785, who had to go down manually. Quinn, carrying Leah, searched for alternative means of descent — a secret passage never fell from style.
+
+The bunker reminded Hoygull of an airplane hangar. Instead of aircraft, however, it held a massive missile — the base of which filled an abundance of floor space, and the tip of which scarcely grazed the ceiling vault. Thick, insulated wiring linked its base to computer equipment, and silver piping fed through the walls. The entire place smelled of gunpowder and gasoline.
+
+Crowl flew up to a computer terminal. He pressed some buttons, found the terminal logged in and diagnostics screen loaded, and turned back. “This thing needs some fuel,” he said. “It'll take all night to fill.”
+
+“Good. We can rest,” Hoygull said. “I know I could use some shut-eye.”
+
+It seemed the bunker was designed to hold soldiers — for a time. Hoygull found a spot in a nearby bunkroom and curled up to sleep atop a pillow.
+
+[[=image http://scp-wiki.wdfiles.com/local--files/task-forces/Eta4.png class="scene-break"]]
+
+[[div style="font-size: 130%; font-weight: bold; text-align: center;"]]
+Beneath Las Vegas
+August 13, 2018
+Morning
 [[/div]]
+
+Hoygull awoke after a decent six-hour snooze and traveled in search of the canteen. Quinn and Leah, propped up at the bunkroom entrance and appearing to have slept in their suits that night, nodded when he passed.
+
+When he reached the canteen, he found Keshrayuth sitting alone, seemingly meditating. She'd stayed up all night doing who-knows-what. Hoygull grabbed a handful of sugar cubes to shake the drowsiness.
+
+[[=image http://scp-wiki.wdfiles.com/local--files/task-forces/Eta4.png class="scene-break"]]
+
+Crowl stirred from his bunk soon after and went back to the same computer. What he saw jolted him wide awake. “Alright, do you all want the good news or the bad news first?”
+
+“The good news, please,” Kesh replied.
+
+“The missile is fueled up and primed to launch when we are ready.”
+
+“And the bad news?” Hoygull asked, not missing a beat.
+
+“It looks like the army of statues from earlier caught up to us. Fortunately, they are still a fair distance away, and I do not think they will be able to bother us before we launch. If we start the process now, we //should// have plenty of time before they find out.”
+
+“So, let's launch now,” Duck said, standing far behind the three. Hoygull jumped — not expecting her there. “We don't want to cut it any closer than we already are.”
+
+Crowl pecked a few buttons. An androgynous, computerized voice sounded over the bunker.
+
+@@ @@
+
+= [[span class="terminal-span"]]INITIATING PROJECT: HYPERION LAUNCH SEQUENCE.[[/span]]
+
+@@ @@
+
+= [[span class="terminal-span"]]OPENING PRIMARY MISSILE EXIT SHAFT.[[/span]]
+
+@@ @@
+
+The ceiling parted, accompanied with the mechanical sound of gears churning. Eventually, the bunker opened to an already-sweltering mid-morning sky. The moon still hung in view, the same as it looked for days.
+
+Hoygull and Kesh scrambled for safety near Duck, well beyond a stripe of warning tape.
+
+@@ @@
+
+= [[span class="terminal-span"]]INITIATING LAUNCH COUNTDOWN TIMER.[[/span]]
+
+@@ @@
+
+= [[span class="terminal-span"]]T-MINUS ONE-HUNDRED SECONDS.[[/span]]
+
+@@ @@
+
+Hoygull felt the missile's solitary thruster heat up, and–
+
+He suddenly heard a visceral, ear-splitting sound — but not of the thruster. He looked up toward the moon.
+
+A massive portal had just opened in front of it, and the head of a flaming scarlet bird poked through.
+
+“What's that?” Crowl yelled.
+
+“I...” Hoygull stumbled. “I think we might be dealing with Thoth here!”
+
+SCP-2785 squealed. “I'm getting lots of air-information! But I don't think it means anything. It's just bird calls!”
+
+With all manner of screeching sounds, throngs of [[[scp-3570|bird-humans]]] swarmed the sky. Metal-on-metal clamor overwhelmed even the cacophony of voices — then, //something// tumbled into the access shaft. Louder than everything else, Thoth shook the world with his presence alone. Quibba jolted awake — he had //somehow// still been asleep.
+
+“I think this is the end of the line,” Kesh yelled. “I'll barricade the access shaft. Go to the armory and find something to shoot. Quick!”
+
+@@ @@
+
+= [[span class="terminal-span"]]SEVENTY SECONDS[[/span]]...
+
+@@ @@
+
+Kesh flew into a forklift and steered it toward a table near the access shaft.
+
+Hoygull motioned the rest of his team into the armory. He flicked on the light. With a glance, he could see there weren't many explosives inside. Maybe they interfered with the missile's function?
+
+Unsurprisingly, there were no weapons adapted for use by birds. So, they improvised. Hoygull found a double-barrel shotgun he could lift without much effort. Others found scant few grenades.
+
+Just as he loaded two grenades into his shotgun, Hoygull heard that sickening sound of metal against metal. This time, on top of them.
+
+He scampered around. //The barricade won't hold!//
+
+@@ @@
+
+= [[span class="terminal-span"]]FORTY-FOUR SECONDS[[/span]]...
+
+@@ @@
+
+Kesh had formed a hodgepodge barricade with a few tables, a dysfunctional terminal, and the forklift itself.
+
+A statue managed to slip through regardless. SCP-2785, in his naiveté, ran up to say hello and offer pleasantries. A haymaker knocked his head clean off, and an uppercut crushed his body halfway through the drop ceiling.
+
+@@ @@
+
+= [[span class="terminal-span"]]TWENTY-NINE SECONDS[[/span]]...
+
+@@ @@
+
+Statues burst through the barricade with their raw numbers. They organized a clumsy array and charged. Hoygull aimed the shotgun and, with a kick of recoil, fired two grenades at the mass. A harsh flare-up destroyed three statues and knocked debris into some others, producing a minefield of collateral damage. The remainder of the Avian Division launched grenades and employed various forms of firepower — including a mounted Minigun — to push back the hordes. Quinn and Leah jumped in and battled the tide of statues like they were fending off the raging sea.
+
+As Hoygull loaded the shotgun with two more grenades, a statue loomed and knocked him in the gut, hurtling him across the room and onto the floor. Unable to fully recover, Hoygull pried his gun from the floor, shaking. His vision was narrowing but he saw a group of statues rush toward the missile — and fired.
+
+Five indistinct forms detonated.
+
+One flew from the smoke, decrepit, at Crowl's Minigun and rammed it to splinters. Without a weapon, Crowl was suddenly overwhelmed.
+
+@@ @@
+
+= [[span class="terminal-span"]]T-MINUS TEN SECONDS.[[/span]]
+
+@@ @@
+
+Hoygull realized he was out of grenades and lay there, feeling useless — though, harmless enough to remain ignored.
+
+Another group approached the missile; he cried a choked call. //No! It can't end like this!//
+
+Through his dizziness and delirium, he saw Quibba fly toward the group. //What is he doing?!//
+
+[[span style="margin: .5em;"]]Then he saw the grenades affixed to his vest.[[/span]]
+
+[[span style="margin: 1.3em;"]]Then he saw the keen look of determination on his face.[[/span]]
+
+[[span style="margin: 3.4em;"]]Then he saw the uncontrolled nosedive he took into their midst.[[/span]]
+
+Explosions knocked them all away. The automated voice continued, unfazed.
+
+@@ @@
+
+= [[span class="terminal-span"]]THREE[[/span]]...
+
+@@ @@
+
+= [[span class="terminal-span"]]TWO[[/span]]...
+
+@@ @@
+
+= [[span class="terminal-span"]]ONE[[/span]]...
+
+@@ @@
+
+= [[span class="terminal-span"]]LIFTOFF.[[/span]]
+
+@@ @@
+
+Finally, the propellant ignited, thrusting the missile off the ground. Hoygull's already damaged body slid against the wall. Statues jumped into the air, trying to hinder the missile's launch, but it was too late.
+
+It was not too late, however, for skyward bird-humans to slam their bodies into the missile and ruin its trajectory.
+
+Hoygull's stomach sunk. //No... It won't make it!//
+
+A bird-human slammed into the missile's nose, nudging it away from the portal. The rest recognized this and barreled toward it in large numbers. The missile now pointed in the wrong direction.
+
+Hoygull felt the disappointment wash over like a wave. //After all that's happened!//
+
+“Uh, Mister Captain Quinn? That AESD you mentioned earlier?” SCP-2785's voice came in a climbing, staticky screech from his disembodied head. “It's giving me one //real big// lump of air-information!”
+
+“The AEDS is detecting another threat?” Hoygull asked weakly.
+
+Quinn shook his head. “No, Hoygull. Look!” He pointed to the skies. While the rest of the Avian–Centre alliance gawked at the dimensional rift housing the Avian deity, Quinn's instincts kicked in. He saw a small, red dot rapidly expand. “Robot-boy didn't blunder. He meant what he said.”
+
+[[=image http://scp-wiki.wdfiles.com/local--files/task-forces/Eta4.png class="scene-break"]]
+
+[[div class="thoth-gradiant"]]
+Thoth scrutinized the Earth he had shaped in his image. After millennia of waiting, the blue marble was finally his. Finding competent beings to control — across all manner of dimensions — was no trivial task. Each tool needed the precise motivation and skills required to enact his will. It was straightforward to start with: Coercing the shark-brained //Boxers// to construct the Avian meme, and tempting the engineer with the promise of saving his daughter. But leaving a breadcrumb trail for the Foundation was significantly more difficult.
+
+Thoth reigned supreme. His freshly formed vassals flooded their new home by the millions. They would make excellent workhorses for the nobles. Their people would till the land, move the stones, erect monuments for the Pharaoh (and, of course, for him).
+
+Not a moment too late, either. Akheilos had found this Earth only moments after Thoth's plan came to fruition, with the mad Boxers in tow. Those fools had weakened the only force left to reckon with! The humans shouldn't complain, at any rate; Thoth had liberated them from an even worse fate. Who //knows// what savagery Akheilos might have performed on them?
+
+From the blue marble, Thoth saw a mere trinket. He scoffed at the pitiful final act of humankind. This was the best they could do? Some feeble explosive? It might have worked in his weakened state — but this was too little, too late. He watched humanity's last firecracker inch toward him. If he was going to crush their final hope, he was going to indulge in it.
 [[/div]]
-----
-The great shark spilled out from the growing red chasm in the sky. Akheilos was nothing compared to Thoth's size, but the speed and the hot-blooded passion from the beast far surpassed Thoth's own. It darted straight towards the Ibis-headed monstrosity; his maw opened wide, and countless teeth shimmered a brilliant white, speckled with crimson.
+[[div class="akheilos-gradiant"]]
+Akheilos swam through the Noosphere as quickly as he could. He had been granted a once-in-a-lifetime opportunity: A chance to kill his nemesis. The bird goddess, Medila, infused herself with him to serve this goal.
 
-Quinn stood there, watching the sky, his jaw agape. "No way..."
+A gift.
 
-"Is WHITE NETHER going to...?" Hoygull started.
+The whale, Gægr, helped present it. Gægr called upon Medila, and Medila sang a birdsong so grand, it spoke directly to Akheilos' heart. It spoke to him so deeply; it roused a rage within that had been burning for eternity. It reminded him of his people — the loved ones Thoth snatched away.
 
-In a monumental clash of deities, Akheilos tore into Thoth's eye socket. Thoth screamed and coiled backward, clutching at his eye. But Akheilos' grasp was too great. Thoth commanded his fleet of peons to come to his aid, but the daemon's appetite was too voracious. He tore chunk after chunk of Thoth's form, leaving neither bone nor gristle behind.
+The blood of the Sacred Ibis was all he'd ever desired. He'd just lost sight of that goal.
 
-Bird-people began to drop from the heavens like flies. With the puppet master busy, the puppets fell limp. Thoth screamed something awful, like he was like a savage animal gurgling out its last cry for help. But Thoth was alone. All of Creation despised him; trickster gods have no place in paradise. The once noble and wise Thoth reduced to nothing more than an undignified slaver, consumed by the one he cheated. 
+Akheilos struggled through the fabric of multiple shifting realities. Worlds ripped at his skin until it burned vibrant white. Thoth, of course, paid no mind. In fact, only three beings noticed him:
+
+The bird, the robot, and the human.
+
+He tumbled into the skies above a squawking Earth.
+[[/div]]
+
+[[=image http://scp-wiki.wdfiles.com/local--files/task-forces/Eta4.png class="scene-break"]]
+
+The Great Daemon spilled out from the gaping red chasm in the sky. Akheilos was nothing compared to Thoth's size, but the speed and hot-blooded passion from the beast far surpassed Thoth's own. It darted straight toward the Ibis-headed monstrosity; wide-open maw, countless teeth shimmering a brilliant white, speckled with crimson.
+
+Quinn stood there, watching the sky, his jaw agape. “No way...”
+
+“Is WHITE NETHER going to...?” Hoygull started.
+
+In a monumental clash of deities, Akheilos tore into Thoth's eye socket. Thoth screamed and coiled backward, clutching the hole. But Akheilos' grasp was too great. Thoth commanded his fleet of peons to come to his aid, but the daemon's appetite was too voracious. It tore chunk after chunk of Thoth's form, leaving neither bone nor gristle behind.
+
+Bird-humans dropped from the heavens like flies. With the puppet-master busy, the puppets fell limp. Thoth screamed something awful, like a savage animal gurgling out its last cry for help. But Thoth was alone. All of Creation despised him; trickster gods have no place in paradise. The once noble and wise Thoth reduced to nothing more than an undignified slaver, consumed by the one he cheated.
 
 Just as suddenly as the cawing began, the Earth fell silent.
 
-His revenge completed and his belly full, Akheilos laid in the skies content. An eternity of blood debt had been paid in full, and his purpose had been fulfilled. Akheilos looked at his oncoming doom not with fearful eyes, but with a satisfied, toothy grin.
+Its revenge completed, and its belly full, Akheilos lay in the skies — in contentment. An eternity of blood debt had been paid in full, and its purpose had been fulfilled. Akheilos looked at its oncoming doom, not with fearful eyes, but with a satisfied, toothy grin.
 
-The missile flew away again at full speed, the dent on its carapace made by the impact compensating for its ill trajectory. The missile made a magnificent arc before colliding with the giant shark, blossoming into a giant green-and-purple explosion that lit up the midday sky.
+The missile flew away again at top speed, the dent on its carapace compensating for its ill trajectory. It made a magnificent arc before colliding with the Selachian, blossoming into a tremendous green-and-violet explosion that lit up the midday sky.
 
-Hoygull's last thought before passing out was //we did it//...
-
+And before Hoygull passed out, three words cycled through his mind:
+@@ @@
+= //We did it//...
+@@ @@
 = ...
-
+@@ @@
 = ...
-
+@@ @@
 = ...
+@@ @@
+Hoygull woke up sometime later in the infirmary of a Site he didn't recognize. He could see the Foundation Shield on one side of an immaculate room and realized he was lying in a hospital bed. He looked up and saw humans monitoring him on screens and charts and miscellaneous devices...
 
-Hoygull woke up sometime later in the infirmary of a Site he didn't recognize. He could see the Foundation Shield on one side of the white, clean room, and he could recognize that he was lying in a hospital bed. He looked up and saw humans operating on him... But they still had their bird wings? Hoygull cleared his eyes and saw that, yes, they were still part-bird.
+But they still had their wings? Hoygull cleared his eyes and saw that, yes, they were still part-bird.
 
-The door to the infirmary opened, and Researcher Calvin — the supervisor of the Avian Division — walked in. He had undergone the avian-ification process himself, yet he seemed... Sane?
+The door to the infirmary opened, and Researcher Calvin — liaison to the Avian Division — strode in with purpose. He had undergone the Avian-ification process, yet he seemed... //Himself//?
 
-Calvin approached Hoygull, leaning over the bed. "You know, I'd like to personally thank you, Hoygull," he said. "Without your valiant efforts, the entire human population would be lost on SCP-3632. It seems that EoI-121 was completely eradicated. Given that, plus the–" Calvin paused to feel his new wings. "New modifications to humanity, I think we really came out better from this. We're still cleaning up the mess, but it'd be a lot worse if it wasn't for you."
+Calvin approached Hoygull, leaning over the bed. “You know, I'd like to personally thank you, Frederick,” he said. “Without your valiant efforts, the entire human population would still be lost on SCP-3632. It seems that EOI-121 was completely eradicated. Given that, plus–” Calvin paused to feel his new wings. “The recent modifications to the human condition, I think we really came out better from this. We're still cleaning up the mess, but it would be a //lot// worse if it weren't for your sacrifices.”
 
-Hoygull began to speak, but then he realized he did not have a translation device, so he stayed silent.
+Hoygull began speaking, but then he realized he did not have a translation device, so he remained silent.
 
-"Unfortunately," Calvin continued. "A sizeable portion of humanity perished during the incident, and another portion is believed to be trapped on SCP-3632. I'm talking close to a billion. We’re working on means of getting them back here. Given our new abilities, this should be easier to do than normal.
+“Unfortunately,” Calvin continued, “a sizable portion of humanity perished during the incident, and another is believed trapped on SCP-3632. I'm talking close to a billion. We're... Working on means of getting them back here. Given our new abilities, this should be easier to do than normal.
 
-"Anyways, I wouldn’t be standing here, alive, if it wasn’t for you. I have been authorized by O5 Command to award you with the Foundation star." Calvin reached into his coat pocket and retrieved a golden star-shaped medallion with a red gem implanted at the center. He attached it to Hoygull’s lab coat. Then he stepped back, cleared his throat, and began to speak again.
+“At any rate, I wouldn't be standing here — alive — if it weren't for you. I have been authorized by the O5 Command to award you with the Foundation Star.” Calvin reached into his coat pocket and retrieved a golden, star-shaped medallion with a red gem implanted at the center. He attached it to Hoygull's white coat.
 
-"The agents from the Shark Punching Centre left this morning, by the way. I don't know if they've gone home or not, but they have their own matters to deal with. They send their farewells to you." Calvin turned around and left the room.
+Calvin stepped back, cleared his throat, and spoke once more. “Oh, and the agents from the Shark Punching Centre left this morning. I don't know if they've gone home or not, but they have their own matters to deal with. They send their farewells to you.”
 
-Hoygull sat back in his hospital bed and leaned into the pillow. Everything was back to normal. Well, as normal as things could be.
-[[/==]]
+Calvin turned and left the room.
+
+Hoygull reclined in his hospital bed and leaned into the pillow. Everything was back to normal.
+
+Well, as normal as things could be.
+[[/div]]
 ----
-[[div class="team-bird-nav"]]
-= << [[[umbral-migratory-sequence|UMBRAL_MIGRATORY_SEQUENCE.txt]]] | [[size 120%]][[[bird|TEAM BIRD]]][[/size]] >>
+[[div class="series-nav"]]
+<< [[[umbral-migratory-sequence|UMBRAL_MIGRATORY_SEQUENCE.txt]]] | [[size 120%]][[[bird|TEAM BIRD]]][[/size]] >>
 [[/div]]
