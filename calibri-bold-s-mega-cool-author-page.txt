@@ -1,66 +1,10 @@
 title:Calibri Bold's Mega Cool Author Page
 [[include :scp-wiki:theme:black-highlighter-theme]]
-[!--[[include :scp-wiki:component:bhl-dark-sidebar]]--]
 
 [[module css]]
 
-[!--
-:root {
-    --header-title: "Historical Thickness";
-    --header-subtitle: "Crowned the code of SCP-194";
-
-    /* Rating Module Colors */
-    --rating-module-button-color: var(--white-monochrome);
-    --rating-module-button-plus-color: 0, 200, 0;
-    --rating-module-button-negative-color: 200, 0, 0;
-    --rating-module-button-cancel-color: 200, 200, 200;
-    --rating-module-button-credit-color: 50, 50, 50;
-    --rating-module-text-color: var(--swatch-menutxt-light-color);
-    --rating-module-text-hover-color: var(--swatch-menutxt-light-color);
-    
-    --background-gradient-distance: 0rem;
-
-    /* Primary Theme Colors */
-    --swatch-background: 39, 39, 39;
-    --swatch-primary: var(--medium-accent);
-    --swatch-primary-darker: var(--bright-accent);
-    --swatch-primary-darkest: var(--medium-accent);
-    /* Primary Text Colors */
-    --swatch-text-dark: var(--white-monochrome);
-    --swatch-text-light: var(--white-monochrome);
-    --swatch-important-text: var(--bright-accent);
-
-    --bright-accent: 133, 0, 5;
-    --pale-gray-monochrome: 0, 0, 0;
-    --light-gray-monochrome: 133, 0, 5;
-
-    --link-color: var(--bright-accent);
-    --visited-link-color: var(--bright-accent);
-    --hover-link-color: var(--bright-accent);
-}
---]
-
 h1 {
      color: rgb(252,252,252) !important;
-}
-
-@media screen and (max-width:1100px) {
-    .preview .span{
-     display: none;
-    }
-    .infobox {
-        display: none;
-     position: relative;
-     margin: 1em auto;
-     right: 0;
-     bottom: 0;
-    }
-}
-
-@media screen and (min-width:1100px) {
-    .rate {
-        display: none;
-    }
 }
 
 /*
@@ -96,16 +40,6 @@ This tooltip hover effect is adapted from LurkD's code on http://www.scp-wiki.ne
     width: auto;
     border: none;
     padding: 0;
-}
-
-.video-info {
-    content: " ";
-    width: 75%;
-    text-align: center;
-    margin: 0 auto;
-    border-style: solid;
-    border-color: gray;
-    border-width: thick;
 }
 
 [[/module]]
@@ -893,8 +827,6 @@ Cal looks at the bowl and a frown appears on his face. "Oh. The candy corn's all
 
 This tab is just for testing code or whatever that I can't test on a sandbox.
 
-[!--[[include :scp-la:scp-la-002]]--]
-
 ------
 
 [[module Listpages fullname="experiment-log-826" category="*"]]
@@ -902,16 +834,6 @@ This tab is just for testing code or whatever that I can't test on a sandbox.
 
 //Last edited:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%D %H:%M%%}}**
 [[/module]]
-
-[[include :scp-sandbox-3:component:calibri-author-module |inc-list-author= --]
-|background-image=
-|language=en
-|author=
-|order=
-|perpage=250
-|shadow=
-|collapsibles=no
-]]
 
 [[/tab]]
 [[/tabview]]
