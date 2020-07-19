@@ -16,16 +16,6 @@ title:The Rounderpage
 Latest Work: %%title_linked%% @ +%%rating%%, on %%created_at%%
 [[/module]]
 [[/div]]
-[[=]]
-----
-[[span class="bungee"]]**CORPSECON 2020**[[/span]]
-
-[[collapsible]]
-[[module ListPages order="rating desc" category="." tags="+exquisite-corpse2020 -contest" perPage="40" separate="no" prependLine="||~ Place ||~ Title ||~ Poster ||~ Rating ||~ Upvotes/Downvotes ||~ Comments ||"]]
-|| #%%index%% || %%title_linked%% || %%created_by_linked%% || %%rating%% || +[[#expr (%%rating%%+((%%rating_votes%%-%%rating%%)/2))]], -[[#expr ((%%rating_votes%%-%%rating%%)/2)]] || %%comments%% ||
-[[/module]]
-[[/collapsible]]
-[[/=]]
 ----
 
 
