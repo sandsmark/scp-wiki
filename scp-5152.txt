@@ -1,58 +1,80 @@
 title:SCP-5152
-[[>]]
-[[module Rate]]
-[[/>]]
-
-[[include :scp-wiki:component:info-ayers
-|page=SCP-5152
-|authorPage=http://www.scp-wiki.net
-|comments=
-= SCP-5152
-= **I Remember This Dread, Oh So Far From Dead**
-= ^^//By Azamo//^^
-@@ @@
-
-= **Images Used**
-
-------
-
-https://commons.wikimedia.org/wiki/File:Beder_Bypark1.JPG
-
-https://commons.wikimedia.org/wiki/File:St._Andrews,_Manitoba_-_panoramio_(91).jpg
-
-------
-
-= //All other images were created by me. All edits made to these images were made by me.//
-]]
-
-[[module css]]
-}
-a.collapsible-block-link { font-weight: bold; }
-[[/module]]
-
 [[include theme:black-highlighter-theme]]
 [[include :scp-wiki:component:bhl-dark-sidebar]]
-[[include :scptestwiki:component:rounderformat]]
+
+[[module CSS]]
+:root {
+    --cutColour: #fafafa;
+    --barColour: #590505;
+    --gray-monochrome: 38, 38, 38;
+    --swatch-menubg-light-color: var(--gray-monochrome);
+}
+
+.scp-image-caption {
+color: #ffffff;
+}
+
+.blockquote {
+background-color: #F4F4F4;
+}
+
+#page-title {
+    text-align: center;
+    display: none;
+}
+
+.translation_block {
+    display: none;
+}
+
+a.collapsible-block-link {
+font-weight: bold; color: #333333;
+}
+
+.scp-image-block {
+    -webkit-box-shadow: initial;
+       -moz-box-shadow: initial;
+            box-shadow: initial;
+}
+}
+[[/module]]
+
+[[>]]
+[[include :topia:sp-rate-info-2 start= --]|bhl=true]]
+@@ @@
+**SCP-5152 - I Remember This Dread, Oh So Far From Dead**
+By Azamo
 
 ------
 
-[[include :scp-wiki:component:acs-peppo-lite
+@@ @@
+[[div class="blockquote"]]
+[[=]]
+**- Attributions -**
 
-|item-number= 5152
-|clearance= 2
-|container-class= euclid
-|secondary-class= none
-|secondary-icon= 
-|disruption-class= vlam
-|risk-class= danger
+= https://commons.wikimedia.org/wiki/File:Beder_Bypark1.JPG
 
-]]
+= https://commons.wikimedia.org/wiki/File:St._Andrews,_Manitoba_-_panoramio_(91).jpg
 
-[[include component:acs-peppo-split
-|object= euclid
-|object-image= http://scp-wiki.wdfiles.com/local--files/component%3Aanomaly-class-bar/euclid-icon.svg
-|object-color= pending
-|esoteric-color= pending
+
+All other images were created by me. All edits made to these images were made by me.
+
+[[/=]]
+[[/div]]
+[[include :topia:sp-rate-info-3 size=150]]
+[[include :topia:sp-rate-info-2 end= --]]]
+[[/>]]
+
+------
+
+[[include :scp-wiki:component:anomaly-class-bar-source
+|item-number=XXXX
+|clearance=2
+|container-class=euclid
+|secondary-class=
+|secondary-icon=
+|disruption-class=dark
+|risk-class=caution
 ]]
 
 ------
@@ -64,14 +86,15 @@ SCP-5152.
 [[/div]]
 [[/div]]
 
+**Special Containment Procedures:** SCP-5152 itself is currently uncontainable; however, this is not an immediate issue as visitors to the region it inhabits are rare. An exclusion zone has been established approximately 4km in excess of SCP-5152-1 for increased security and is to be increased in size accordingly if SCP-5152 moves elsewhere. Post-10229 has been constructed near the exclusion zone and serves as an observation center, keeping track of SCP-5152's movements and researching its nature. Several propositions for containment have been devised but all have either failed, been deemed a waste of resources or are awaiting enactment. Development of a means to contain SCP-5152 is considered low-priority.
 
-**CONTAINMENT PROCEDURES:** SCP-5152 itself is currently uncontainable; however, this is not an immediate issue as visitors to the region it inhabits are rare. An exclusion zone has been established approximately 4km in excess of SCP-5152-1 for increased security and is to be increased in size accordingly if SCP-5152 moves elsewhere. Post-10229 has been constructed near the exclusion zone and serves as an observation center, keeping track of SCP-5152's movements and researching its nature. Several propositions for containment have been devised but all have either failed, been deemed a waste of resources or are awaiting enactment. Development of a means to contain SCP-5152 is considered low-priority.
-
-**DESCRIPTION:** SCP-5152 is a spectral entity inhabiting a northern, heavily forested region of Yukon, Canada designated SCP-5152-1. The exact perimeter of SCP-5152-1 has not been determined due to the nature of SCP-5152's movement, and it is not known if SCP-5152 is capable of leaving it. As of the present, recorded sightings elsewhere have not occurred.
+**Description:** SCP-5152 is a spectral entity inhabiting a northern, heavily forested region of Yukon, Canada designated SCP-5152-1. The exact perimeter of SCP-5152-1 has not been determined due to the nature of SCP-5152's movement, and it is not known if SCP-5152 is capable of leaving it. As of the present, recorded sightings elsewhere have not occurred.
 
 SCP-5152 takes the form of a semi-corporeal humanoid wearing a black veil that obscures its face and body. SCP-5152 also possesses two sets of twig-like appendages in place of hands that extend down the full length of its body, sometimes visible protruding from under the veil. SCP-5152 is generally only visible to a maximum of one individual at any time[[footnote]]Simply put, SCP-5152 will be completely invisible from the perspective of those it chooses to hide from. [[/footnote]], although it occasionally makes itself known to small groups.
 
-If SCP-5152 is near a group of individuals it will typically remain ~100 meters away and silently observe the group for a long period, eventually disappearing out of view. However, if SCP-5152 is near a single individual it may begin following them; walking at a slow pace towards them. This will change if the target individual attempts to observe SCP-5152, resulting in it's temporary dissapearance. SCP-5152 will continue following the target individual until they leave SCP-5152-1 or join with a group. SCP-5152 first came to the Foundation's attention after sightings of a "hooded figure" were reported to police in Hedder Creek, a small settlement near the perimeter of SCP-5152-1. This figure was seen sparsely over the course of 8 months, lingering at the edges of the forest surrounding the town. A small search for this figure was conducted, but was unsuccessful.
+If SCP-5152 is near a group of individuals it will typically remain ~100 meters away and silently observe the group for a long period, eventually disappearing out of view. However, if SCP-5152 is near a single individual it may begin following them; walking at a slow pace towards them. This will change if the target individual attempts to observe SCP-5152, resulting in it's temporary disappearance. SCP-5152 will continue following the target individual until they leave SCP-5152-1 or join with a group. 
+
+SCP-5152 first came to the Foundation's attention after sightings of a "hooded figure" were reported to police in Hedder Creek, a small settlement near the perimeter of SCP-5152-1. This figure was seen sparsely over the course of 8 months, lingering at the edges of the forest surrounding the town. A small search for the figure was conducted, but was unsuccessful.
 
 @@ @@
 
@@ -98,10 +121,6 @@ As part of an early research effort attempting to discern SCP-5152's area of eff
 
 **D-511904:** Just... snow and trees. Creepy though. Did you really have to send me in here at sunset?
 
-**Control:** You started the exploration at 4:15 PM. The sun has not set at the post.
-
-**D-511904:** Nah... you guys are just playin' with me. It's later than that for sure.
-
 **Control:** It's currently 4:38 PM.
 
 **D-511904:** Yeah right.
@@ -110,7 +129,7 @@ As part of an early research effort attempting to discern SCP-5152's area of eff
 
 **D-511904:** Uh... guys... you didn't send any others in here, did you?
 
-**Control:** Negative. Why?
+**Control:** Negative.
 
 **D-511904:** I can hear... footsteps. In the snow.
 
@@ -123,6 +142,8 @@ As part of an early research effort attempting to discern SCP-5152's area of eff
 **D-511904:** Okay. I don't have a problem with that.
 
 <<2 minutes of extraneous footage removed>>
+
+@@ @@
 
 //The sound of a tree branch snapping is heard.//
 
@@ -143,6 +164,8 @@ As part of an early research effort attempting to discern SCP-5152's area of eff
 **Control:** Noted. Please continue.
 
 <<15 minutes of extraneous footage removed>>
+
+@@ @@
 
 //D-511904 reaches a clearing; a wooden cabin at the center.//
 
@@ -211,9 +234,13 @@ The cabin in the clearing, lifted from D-511904's headcam footage.
 
 //D-511904 turns around to leave the room but is intercepted by SCP-5152 standing in front of the door.//
 
-//D-511904 stands still for 10 seconds, staring at SCP-5152 with confusion and fear. SCP-5152 begins to approach D-511904 but is unsuccessful as D-511904 kicks through a nearby window and runs out of the clearing, back into the forest.//
+**D-511904:** What the... G-get away from me!
+
+//SCP-5152 begins to approach D-511904 but is unsuccessful as D-511904 kicks through a nearby window and runs out of the clearing, back into the forest.//
 
 <<1.3 hours of extraneous footage removed>>
+
+@@ @@
 
 **D-511904:** It's like this place goes on forever.
 
@@ -227,11 +254,13 @@ The cabin in the clearing, lifted from D-511904's headcam footage.
 
 **D-511904:** After school me and my friends would walk back home together. I would always be the last one left, of course. But sometimes when we were there, we heard... we heard these- weird noises. Far off in the deeper forest. We'd- see stuff move too. We thought they were elk, deer. Now I'm not so sure. Maybe if this is the place... maybe //it// wants me back. Your entity. Maybe that's what I saw.
 
-**Control:** This information has been helpful, D-511904.
+**Control:** Acknowledged.
 
 **D-511904:** Yeah.
 
 <<14 minutes of extraneous footage removed>>
+
+@@ @@
 
 //D-511904 looks to his right and begins running, breathing heavily.//
 
@@ -258,6 +287,8 @@ The cabin in the clearing, lifted from D-511904's headcam footage.
 **D-511904:** Yeah, of course.
 
 <<16 minutes of extraneous footage removed>>
+
+@@ @@
 
 **Control:** Still no sound?
 
