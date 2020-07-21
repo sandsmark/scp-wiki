@@ -70,6 +70,29 @@ Page 7, (DRO-0001): http://www.scp-wiki.net/fragment:apas-6
   content: none;
 }
 
+/* What is APAS? */
+.fake-blockquote a {
+  color: #b01;
+}
+.fake-blockquote a.visited {
+  color: #824;
+}
+.fake-blockquote a:hover {
+  color: #b01;
+  text-decoration: underline;
+  background-color: transparent;
+  padding: initial;
+}
+.fake-blockquote a.visited:hover {
+  color: #824;
+}
+.fake-blockquote a:hover::before {
+  content: none;
+}
+.fake-blockquote a:hover {
+  word-break: initial;
+}
+
 /* Secret text stuff */
 .hover {
   color: black;
