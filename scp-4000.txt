@@ -1,5 +1,4 @@
 title:SCP-4000
-parent:taboo
 ##firebrick|**REQUEST=**"4000_Additional_Documentation"##
 ##firebrick|**...**##
 ##firebrick|**...**##
@@ -17,7 +16,7 @@ parent:taboo
 [[size 125%]]##firebrick|**[ACCESS: GRANTED]**##[[/size]]
 [[size 110%]]##firebrick|**[Clever, clever.]**##[[/size]]
 
-[[module ListPages category="scp-4000" order="random"]]
+[[module ListPages category="fragment" parent="." order="random" limit="1"]]
 [[div class="taleBlock"]]
 %%content%%
 [[/div]]
