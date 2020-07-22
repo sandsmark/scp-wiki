@@ -2,6 +2,20 @@ title:Dread & Circuses Hub
 [[module CSS]]
 @import url(http://topia.wikidot.com/component:hf-theme);
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+
+ .circus-welcome{
+     margin-bottom: 10px;
+     padding: 25px;
+
+     color: #F7D667;
+     background-color: #BD0C3C;
+     border: solid 10px #600000;
+
+     font-family: "Great Vibes", cursive;
+     text-align: center;
+     word-break: unset;
+     line-height: 160%;
+}
 [[/module]]
 
 [[>]]
@@ -14,7 +28,7 @@ title:Dread & Circuses Hub
 
 [[=image D%26CTent1.png]]
 
-[[div style="border:solid 10px #600000; background-color: #BD0C3C; padding:25px; margin-bottom: 10px;font-family:Great Vibes; color: #F7D667; text-align: center; word-break: unset; line-height: 160%;"]]
+[[div class="circus-welcome"]]
 [[size 250%]]
 ~ __Herman Fuller's Circus of the Disquieting__ ~
 [[/size]]
