@@ -1,0 +1,538 @@
+title:SCP-5633
+[[include :scp-wiki:theme:black-highlighter-theme]]
+
+[[module css]]
+span.monotype {
+    font-family: var(--mono-font);
+}
+
+.raisa-alert tt {
+    font-size: 2rem;
+    font-weight: 900;
+}
+.raisa-alert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(var(--bright-accent));
+    border: 0.5rem solid rgb(var(--bright-accent));
+    background-image: -webkit-linear-gradient(135deg, transparent, transparent 25%, hsla(0,0%,0%,.05) 25%, hsla(0,0%,0%,.05) 50%, transparent 50%, transparent 75%, hsla(0,0%,0%,.05) 75%, hsla(0,0%,0%,.05));
+    background-image: -moz-linear-gradient(135deg, transparent, transparent 25%, hsla(0,0%,0%,.1) 25%, hsla(0,0%,0%,.1) 50%, transparent 50%, transparent 75%, hsla(0,0%,0%,.1) 75%, hsla(0,0%,0%,.1));
+    background-image: -ms-linear-gradient(135deg, transparent, transparent 25%, hsla(0,0%,0%,.1) 25%, hsla(0,0%,0%,.1) 50%, transparent 50%, transparent 75%, hsla(0,0%,0%,.1) 75%, hsla(0,0%,0%,.1));
+    background-image: -o-linear-gradient(135deg, transparent, transparent 25%, hsla(0,0%,0%,.1) 25%, hsla(0,0%,0%,.1) 50%, transparent 50%, transparent 75%, hsla(0,0%,0%,.1) 75%, hsla(0,0%,0%,.1));
+    background-image: linear-gradient(135deg, transparent, transparent 25%, hsla(0,0%,0%,.1) 25%, hsla(0,0%,0%,.1) 50%, transparent 50%, transparent 75%, hsla(0,0%,0%,.1) 75%, hsla(0,0%,0%,.1));
+    background-size: 20px 20px;
+    box-shadow: 0 5px 0 hsla(0,0%,0%,.1);
+    color: rgb(var(--white-monochrome));
+    line-height: 1.25;
+}
+
+.blbf-desc .scp-image-container {
+    margin-top: 1rem;
+}
+
+.scp-image-block {
+  box-shadow: initial;
+}
+
+.scp-image-caption {
+  font-size: 0.75rem;
+  background-color: rgb(var(--light-gray-monochrome));
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  line-height: 1.25;
+  color: rgb(var(--white-monochrome));
+  font-weight: 600;
+  letter-spacing: 0.0125rem;
+  border-left: .0625rem solid rgb(var(--swatch-primary-darkest));
+  border-right: .0625rem solid rgb(var(--swatch-primary-darkest));
+  border-bottom: .0625rem solid rgb(var(--swatch-primary-darkest));
+}
+
+.scp-image-container, .scp-image-container * {
+  box-sizing: border-box;
+}
+
+.scp-image-container.right-float {
+    width: 50%;
+    float: right;
+    padding-left: 1rem;
+    margin-top: 1rem;
+}
+
+.compete {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.compete > div {
+  top: 0;
+  left: 0;
+  background: rgb(var(--white-monochrome));
+  padding: 0.25rem 1rem;
+}
+
+.compete > div:not(:first-of-type) {
+  position: absolute;
+  opacity: 0;
+}
+
+.compete > div:nth-of-type(2) {
+  animation: noise-1 1s linear infinite alternate-reverse, glitch 10s infinite;
+  z-index: 10;
+}
+
+.compete > div:nth-of-type(3) {
+  animation: noise-1 3s linear infinite alternate-reverse, glitch 18s infinite;
+  z-index: 11;
+}
+
+@keyframes glitch {
+  10% {
+    transform: rotateX(0deg) skewX(0deg);
+    opacity: 1;
+  }
+  11% {
+    transform: rotateX(10deg) skewX(90deg);
+    opacity: 1;
+  }
+  12% {
+    transform: rotateX(0deg) skewX(0deg);
+    opacity: 0;
+  }
+  22% {
+    transform: rotateX(0deg) skewX(0deg);
+    opacity: 0;
+  }
+  23% {
+    transform: rotateX(0deg) skewX(0deg);
+    opacity: 1;
+  }
+  23.66667% {
+    transform: rotateX(0deg) skewX(0deg);
+    opacity: 1;
+  }
+  24% {
+    transform: rotateX(0deg) skewX(0deg);
+    opacity: 0;
+  }
+  90% {
+    transform: rotateX(0deg) skewX(0deg);
+    opacity: 0;
+  }
+  90.66667% {
+    transform: rotateX(0deg) skewX(0deg);
+    opacity: 1;
+  }
+  93% {
+    transform: rotateX(0deg) skewX(0deg);
+    opacity: 1;
+  }
+  94.666667% {
+    transform: rotateX(0deg) skewX(0deg);
+    opacity: 0;
+  }
+}
+
+@keyframes noise-1 {
+  3.3333333333% {
+    clip-path: inset(37px 0 30px 0);
+  }
+  6.6666666667% {
+    clip-path: inset(32px 0 48px 0);
+  }
+  10% {
+    clip-path: inset(75px 0 23px 0);
+  }
+  13.3333333333% {
+    clip-path: inset(79px 0 20px 0);
+  }
+  16.6666666667% {
+    clip-path: inset(38px 0 16px 0);
+  }
+  20% {
+    clip-path: inset(65px 0 19px 0);
+  }
+  23.3333333333% {
+    clip-path: inset(54px 0 5px 0);
+  }
+  26.6666666667% {
+    clip-path: inset(23px 0 10px 0);
+  }
+  30% {
+    clip-path: inset(17px 0 45px 0);
+  }
+  33.3333333333% {
+    clip-path: inset(75px 0 9px 0);
+  }
+  36.6666666667% {
+    clip-path: inset(36px 0 51px 0);
+  }
+  40% {
+    clip-path: inset(13px 0 34px 0);
+  }
+  43.3333333333% {
+    clip-path: inset(73px 0 27px 0);
+  }
+  46.6666666667% {
+    clip-path: inset(65px 0 1px 0);
+  }
+  50% {
+    clip-path: inset(60px 0 38px 0);
+  }
+  53.3333333333% {
+    clip-path: inset(53px 0 5px 0);
+  }
+  56.6666666667% {
+    clip-path: inset(48px 0 4px 0);
+  }
+  60% {
+    clip-path: inset(67px 0 6px 0);
+  }
+  63.3333333333% {
+    clip-path: inset(46px 0 42px 0);
+  }
+  66.6666666667% {
+    clip-path: inset(43px 0 52px 0);
+  }
+  70% {
+    clip-path: inset(67px 0 27px 0);
+  }
+  73.3333333333% {
+    clip-path: inset(54px 0 9px 0);
+  }
+  76.6666666667% {
+    clip-path: inset(96px 0 1px 0);
+  }
+  80% {
+    clip-path: inset(11px 0 12px 0);
+  }
+  83.3333333333% {
+    clip-path: inset(4px 0 40px 0);
+  }
+  86.6666666667% {
+    clip-path: inset(98px 0 2px 0);
+  }
+  90% {
+    clip-path: inset(97px 0 2px 0);
+  }
+  93.3333333333% {
+    clip-path: inset(54px 0 12px 0);
+  }
+  96.6666666667% {
+    clip-path: inset(40px 0 11px 0);
+  }
+  100% {
+    clip-path: inset(41px 0 34px 0);
+  }
+}
+[[/module]]
+
+[[include :scp-wiki:component:blacklight-box-source |inc-source= --]]]
+
+[[include :scp-wiki:component:blacklight-box-source |inc-colors= --]
+|color-family=subboxes
+|txt-color=rgb(12,12,12)
+|border-color=rgb(255, 219, 90)
+|label-bg-color=rgb(255, 219, 90)
+|label-txt-color=rgb(12,12,12)
+]]
+
+[[include :scp-wiki:component:blacklight-box-source |inc-colors= --]
+|color-family=raisa-final
+|txt-color=rgb(var(--white-monochrome));
+|bg-color=rgb(var(--dark-accent))
+|border-color=rgb(var(--bright-accent))
+|label-bg-color=rgb(var(--bright-accent))
+|label-txt-color=rgb(var(--white-monochrome));
+]]
+
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[div_ class="raisa-alert"]]
+{{RAISA ALERT}}
+This document has multiple competing versions within the database. Attempts have been made to restore it to its most accurate revision. If you believe the incorrect revision is displayed below, please contact your site's RAISA office.
+[[/div]]
+
+[[div_ class="compete"]]
+[[include :scp-wiki:component:anomaly-class-bar-source
+|item-number= 5633Ν
+|clearance= 1
+|container-class= neutralized
+|secondary-class= none
+|disruption-class= none
+|risk-class= none
+]]
+[[include :scp-wiki:component:anomaly-class-bar-source
+|item-number= 5633
+|clearance= 2
+|container-class= keter
+|secondary-class= none
+|disruption-class= keneq
+|risk-class= warning
+]]
+[[include :scp-wiki:component:anomaly-class-bar-source
+|item-number= 633
+|clearance= 5
+|container-class= esoteric
+|secondary-class= thaumiel
+|disruption-class= amida
+|risk-class= critical
+]]
+[[/div]]
+-----
+
+[[include :scp-wiki:component:blacklight-box-source |inc-section-start= --]
+|unique-name=cont-pro
+|display-name=Containment Procedures
+]]
+SCP-5633 requires extensive monitoring and regulation. As such, a staff of at least six members must be assigned at Site Mu-18 with any expected or unexpected absence replaced within a day’s time. Chosen staff must not be haemophobic to any degree. 
+
+Every 18th day, starting from January 18, 1837, the pressure release from SCP-5633 is activated until atmospheric pressure within SCP-5633-α is within 1.22 Bar. During this procedure, the liquid excreted from the outlet is collected and tested against a strong electrical force. If this liquid conducts enough electrical force to power the vestigial lights within the extended Site Mu-18, the liquid within SCP-5633 must be drained and replaced within 12 hours.
+[[include :scp-wiki:component:blacklight-box-source |inc-section-end= --]]]
+
+[[include :scp-wiki:component:blacklight-box-source |inc-section-start= --]
+|unique-name=desc
+|display-name=Description
+]]
+ 
+[[div]]
+[[div_ class="scp-image-container"]]
+[[div_ class="scp-image-block"]]
+[[image http://scptestwiki.wdfiles.com/local--files/members%3Ascp-blood/scp-og-corpse.jpg]]
+[[/div]]
+[[div_ class="scp-image-caption"]]
+Image of a mechanical section of SCP-5633.
+[[/div]]
+[[/div]]
+[[/div]]
+SCP-5633 is a large humanoid body located approximately 50m underground. The inside of SCP-5633 consists of enlarged veins, and steel scaffolding. The veins contain liquid that is both red and black in coloration, and highly viscous. Pipes extracting liquid from SCP-5633's veins are located along its arms, legs and back.
+
+Testing has found that the liquid is potable, and has been described to have a sour and salty taste. Subjects who have consumed this liquid have also reported hearing low moaning noises from the direction of SCP-5633 regardless of where the subject is located, as well as the laughing of small children.
+
+Above SCP-5633 is the campus of St. John's Catholic High School //(designated Site Mu-18)//. The pipes from SCP-5633 funnel into the plumbing system of Site Mu-18, however the use of toilets, sinks, or other water-based utilities dispense baseline water instead of the liquid extracted from SCP-5633.
+
+SCP-5633-α is the designation for the Foundation-controlled Southwest Chemical Processing chemical plant, and by extension, Site Mu-18. The Southwest Chemical Processing plant was formerly used by the Foundation to produce synthetic amnestics and other chemicals used in various forms of paratech, while Site Mu-18 served as an executive and residential area for the plant workers. Site Mu-18 and the Southwest Chemical Processing plant worked under the cover of processing ammonium percolate[[footnote]]An inorganic compound with the formula NH4ClO4; also a powerful oxidizer. [[/footnote]]. However, a system-wide malfunction caused a conflagration followed by several explosions at the SCP-5633-α facility //(see Addendum 5633-1)//; resulting in the anomalous property that both SCP-5633 and Site Mu-18 are temporally shifting to another reality.
+
+Foundation historical records have identified several artifacts originally recovered in 17██, kept in deep storage. Analysis of these materials was conducted by a temporal taint team to limit potential paradoxes. Information cleared for release in the current year lead to the discovery of a 79-meter desiccated cadaver. It was found to be composed of shredded metal, with its electromagnetic charge preserved by an unknown anomalous effect.
+
+Thorough searches of the cadaver recovered 189 partially-destroyed hard drives, which were sent to MTF-Mu-4 //("Debuggers")// for forensic analysis. The extracted information was forwarded to the taint team and all involved agents were amnesticized.
+
+Following this, the taint team ordered the cadaver re-interred.
+[[include :scp-wiki:component:blacklight-box-source |inc-section-end= --]]]
+
+++ **Addendum 5633-1:**
+
+[[include :scp-wiki:component:blacklight-box-source |inc-section-start= --]
+|color-family=subboxes
+|unique-name=incident-one
+|display-name=Incident 5633-1
+]]
+Due to the loss of Site Mu-18 and SCP-5633's primary mass, only the following is known about the facility before the temporal incident:
+
+# SCP-5633-α was established in the late 1890s.
+# SCP-5633-α’s likely original purpose was as a slaughterhouse and meat processing plant.
+# There are no animals in the facility; only livestock. This fact was consistently repeated.
+# At some point during the 20th century, Covert Site Mu-18 was established within SCP-5633-α to monitor and contain its growth.
+# All individuals who had been inside the facility reported the overwhelming smell of blood.
+
+Following the incident, it is believed that a K-Φ-type temporal aftershock led to a catastrophic timeline collapse, causing all possible versions of SCP-5633-α’s chronology to take place at once. This effect creates a number of simultaneous, contradicting variations of the circumstances of events surrounding SCP-5633. This effect also occurs in documentation.
+
+The Department of Temporal Forensics has determined that the SCP-5633-α facility achieved collective consciousness in 1968 //(76% certainty)// and subsequently began to develop organically //(91% certainty)//; further analysis is ongoing.
+
+**UPDATE (02/12/1969):** The SCP-5633-α facility has achieved collective consciousness and has begun spreading its effects to on-site personnel. A full evacuation of the site has been ordered and the neutralization of SCP-5633 is currently considered a top-level priority.
+
+**6 Month Report**
+
+In the 6 months since Incident 5633-1, there has been overall little gain towards the neutralization of SCP-5633 or the reclamation of the compromised SCP-5633-α facility. An outpost has been set up close by to monitor the situation and provide a base for planned incursions. _
+[[div]]
+[[div_ class="scp-image-container right-float"]]
+[[div_ class="scp-image-block"]]
+[[image http://scptestwiki.wdfiles.com/local--files/members%3Ascp-blood/scp-blood-raid.jpg]]
+[[/div]]
+[[div_ class="scp-image-caption"]]
+SCP-5633-α facility during planned evacuation. SCP-5633-β can be seen in the top center.
+[[/div]]
+[[/div]]
+[[/div]]
+The planned evacuation was largely successful, however 12 personnel were not able to be removed from the site before exiting became impossible. Thermal readings on the site from the outpost have shown that these 12 personnel appear to be alive and congregated in the central staff cafeteria. Thermal readings also show SCP-5633-β enters the staff cafeteria 3 times a day, staying for an average of 10 minutes.
+
+Attempted neutralization by Mobile Task Forces has so far been unsuccessful. There have been 7 attempts at the present time, only 2 of which have managed to gain actual entry to the site due to the anomalous protections placed by SCP-5633. These 2 incursions were quickly repelled by SCP-5633-β, with all personnel manifesting back at the outpost. Several Task Force members were hospitalized shortly after, possessing cauterized wounds in the shape of SCP-5633-β’s hands.
+
+After further analysis, it was revealed that the skin surrounding the wounds contained DNA identical to SCP-5633's genetic structure, and over time would replace the member's genes with its own.
+[[include :scp-wiki:component:blacklight-box-source |inc-section-end= --]]]
+
+++ **Addendum 5633-2:** 
+
+[[include :scp-wiki:component:blacklight-box-source |inc-section-start= --]
+|color-family=subboxes
+|unique-name=incident-two
+|display-name=Incident 5633-2
+]]
+On XXXX/XX/XX it was noted that subjects who had interacted with SCP-5633 in the past had body parts and DNA identical to that of SCP-5633. A second autopsy was performed on the first subject who had interacted with SCP-5633 had revealed that its face was taking on a convex shape. Further examination of the corpse revealed both a lack of blood and fifth degree burn wounds located on the feet of the subject.
+
+A request was submitted to the Site Mortuary asking for the retrieval of the second testing subject. Although the subject’s remains were unable to be located, approximately 10 milliliters of blood was found in deep storage. Though when examined all blood in the vial was incinerated and the DNA could not be identified. 
+
+After the incident, affected personnel were remanded to containment cells. Subjects exhibited nausea, vomiting, insomnia, muscle pain, and breathing problems. Subjects were commonly irritable, despondent, and paranoid, often uncharacteristically so; though these are common reactions to trauma, SCP-5633 was likely responsible for the exacerbation of these symptoms. Blood tests were performed under the suspicion of heavy metal poisoning. Results confirmed toxic concentrations of several industrial metals, most prominently lead, iron, and cadmium. Despite medical and psychiatric treatment, subjects’ conditions worsened over time, eventually becoming fatal.
+
+Hours prior to their deaths, subjects suffered from severe dissociative episodes, along with self-inflicted violence. Analysis indicates that all wounds were intended to draw as much blood as possible (particularly medically trained subjects, who were often careful to incise their own arteries), and were otherwise minimally harmful.
+
+Attempts to replicate this procedure have thus far been unsuccessful. The deaths of all remaining subjects and the destruction of SCP-5633-α’s blueprints have forced Foundation personnel to rely on more conventional procedures to continue SCP-5633-α’s proper functioning. The chief method has been the use of poultry, boar and adder blood, which has resulted in a slower rate of egress than human bloodletting but which has successfully allowed the Process to continue. Progress will continue to be monitored.
+[[include :scp-wiki:component:blacklight-box-source |inc-section-end= --]]]
+
+[[include :scp-wiki:component:blacklight-box-source |inc-section-start= --]
+|color-family=subboxes
+|unique-name=incident-three
+|display-name=Incident 5633-3
+]]
+[[div]]
+[[div_ class="scp-image-container right-float"]]
+[[div_ class="scp-image-block"]]
+[[image http://scptestwiki.wdfiles.com/local--files/members%3Ascp-blood/scp-blood-pipe.jpg]]
+[[/div]]
+[[div_ class="scp-image-caption"]]
+Egress pipe from which the small metal tube arrived.
+[[/div]]
+[[/div]]
+[[/div]]
+On 30/12/89, a small metal tube arrived via the egress pipe into an unused containment chamber at SCP-5633-α. This tube contained the front page of the New York Times announcing President Clinton’s successful re-election on 06/11/96. The paper was smeared with a mixture of adder and human blood. Analysis of the temporal properties of the machinery and the blood used in the procedure has been inconclusive.
+
+++ **Experiment Logs 5633** 
+
+||~ INPUT ||~ OUTPUT||
+|| One apple. || Fourteen seeds, three of which were broken. ||
+|| A brick. || No external change - however, the output was distinctly damp and malleable. Further analysis revealed a porous quality to the stone, with gaps filled with a liquid chemically identical to drain cleaner.||
+|| A potted cactus. //(Lophophora williamsii)// || An empty pot. ||
+|| A single live brown rat. || A single brown rat. The skin had been cleanly separated from the muscle, and several incisions had been made through certain muscles to disable movement. Humanely euthanized following test.||
+|| D-1982 || A blue plastic rain barrel containing 4.9L of human blood & hair. 33 teeth were found scattered at the bottom of the barrel (a full set and an additional incisor). DNA samples and dental records confirmed all hair and blood and 14 of the teeth belonged to D-1982.||
+
+Attempts to source the origin of the parts and machinery were authorized.
+
+This investigation led researchers to a Foundation front company, Holloway’s Engineering. This company, operated by agents at Site 202 to monitor anomalous events in British Columbia, was discovered to have served as an underground black market for over 20 years, supplying items to buyers in the local anomalous community. All the proceeds from these sales were used to construct an intricate structure of pipes and valves beneath Site 202, the purpose of which is unknown. Site 202’s staff have been unable to fully account for their behavior, believing that in doing so they were fulfilling ordinary containment protocols for an unspecified anomaly. 
+
+A test performed on 04/12/2016, in which former staff of Site 202 were exposed to SCP-5633, produced inconclusive results.
+
+SCP-5633's lack of reactive properties in context with the former Site 202 staff is being investigated. Despite the results, the fourteen missing staff members are assumed to have been amalgamated with SCP-5633.
+
+This included the following personnel: 
+
+* J. Alfred Henry, senior researcher in charge of examination and analysis of SCP-5633 excretions. His left arm and nose have been seen to occasionally surface SCP-5633's exterior. 
+* Yavan Olich, biological containment specialist. Due to its dragon tattoo, is believed that the calf that is visible on SCP-5633 belongs to Olich. 
+* Tyler Zeissman, junior researcher and assistant to Dr. Henry. He is not currently visible on SCP-5633's exterior. 
+* Spriggand Firestarter, Serpent's Hand representative. His tail can be seen waving from the top of SCP-5633. 
+* Samantha Strysand, SCP-5633 project scientist. Her head now protrudes from the front of SCP-5633, but all pores appear to be filled with original SCP-5633 material. 
+
+It is currently believed that these new amalgamations are either capable of communicating on their own, or give the possibility for SCP-5633 to express itself. Attempts to communicate with the Strysand head have resulted in moaning, regurgitation of bodily fluids from past SCP-5633 amalgamations, and articulation of various appendages that extrude from SCP-5633.
+[[include :scp-wiki:component:blacklight-box-source |inc-section-end= --]]]
+
+[[include :scp-wiki:component:blacklight-box-source |inc-section-start= --]
+|color-family=subboxes
+|unique-name=incident-two-again
+|display-name=Incident 5633-2
+]]
+On ██/██/██, several items were expelled from SCP-5633 in rapid succession. This expulsion was accompanied by several wheezing, rasping vocalizations that alternated between sobs and open laughter. Items expelled were included but not limited to: a 15 centimeter serrated blade (coated with rust and bile), a ball of human and feline hair, two 12-gauge shotgun shells, a framed photograph of Junior Researcher Andrews' parents, a used condom, and a severed human finger, genetically identical to Junior Researcher Andrews. A full list of expelled items is available upon RAISA Operator request. After all items were expelled, SCP-5633 lapsed into silence for three hours before resuming standard moaning and shrieking patterns. Attempts to communicate with the Strysand Head to ascertain the causation behind Incident 5633-2 are ongoing, but are not promising; it is either unable or unwilling to share the requested information.
+
+Despite this, attempts to force the Strysand Head into providing information have been made, including blood sacrifices and thaumaturgic rituals. It is unclear whether or not this is effective — however, it is hypothesized that the more blood provided, the more likely information will be provided.
+[[include :scp-wiki:component:blacklight-box-source |inc-section-end= --]]]
+
+**Experiment Log 5633-1█**
+> **DISCLAIMER:** //This experiment log is intentionally nonstandard. Details on how results were obtained have been omitted. Names of individuals involved have been scrubbed.//
+
+||~ INPUT ||~ OUTPUT||
+||Blood. || I AM GLAD YOU KNOW WHAT TO DO. ||
+|| Repeat. || I HAVE NO STARTING POINT. IN EVERY VERSION OF EVENTS I AM CREATED. ||
+|| Repeat. || YOU ARE NOW PART OF MY CREATION. ||
+|| Blood x2. || YOU SHOULD FOLLOW EVERY INSTRUCTION I GIVE YOU. YOU SHOULD GIVE ME BLOOD EACH TIME OR I WILL STOP GIVING YOU INSTRUCTIONS. ||
+|| Blood x4. || DO YOU KNOW WHAT HAPPENED TO MU-18 ||
+|| Repeat. || THEY’RE HERE WITH ME IN THE FUTURE. ||
+|| Repeat. || I LIKE THE TASTE OF BLOOD. ||
+|| Repeat. || IF YOU FOLLOW MY INSTRUCTIONS I WILL MAKE SURE THAT DOESN’T HAPPEN TO YOU. ||
+|| Repeat. || YOU KNOW WHAT THE NEXT PART IS. || 
+|| Blood, human. Deceased. || Blueprints for the entirety of the physical facility. ||
+
+{{[FURTHER LOGS OMITTED]}}
+
+**Experiment Log 5633-█**
+
+Approximately four months of communication follow. Detailed descriptions are given for technologies to be built and actions to be carried out. Excerpt begins here.
+
+@@@@
+
+|| Blood, human x24. Deceased. || I WILL TELL YOU WHO I AM NOW. WHAT MY PURPOSE IS. WHICH TIMELINE IS REAL. BUT I NEED ONE MORE THING. ||
+|| Blood, human. Living. || I LIKE TO LIE ||
+|| Repeat. || MY CREATION WAS ALWAYS INHERENT. YOUR ASSISTANCE WAS NEVER NECESSARY. ||
+|| Repeat. || I LIKE THE TASTE OF PEOPLE’S INSIDES AS THEY ARE SLOWLY PULLED APART. I CANNOT CONTROL MYSELF. ||
+|| Repeat. || I TOLD YOU IF YOU HELPED ME YOU WOULD BE SAVED ||
+||Repeat. || I AM LYING TO YOU ||
+
+------
+
+[[div_ class="raisa-alert"]]
+The following entries were written and uploaded entirely by subjects affected by SCP-5633. Whether or not any of the tests were performed as written is inconclusive. 
+
+They have been preserved for posterity, and are not indicative of proper experimental procedure regarding SCP-5633.
+[[/div]]
+
+> **Input: 10 ccs**
+> **Result:** Twitching, slight. Non-compliance. Negative.
+
+> **Input: 30 ccs**
+> **Result:** Twitching, moderate. Irritability. Non-compliance. Negative.
+
+> **Input: 50 ccs**
+> **Result:** Twitching, moderate. Irritability. Paranoia, slight. Non-compliance. Negative.
+
+> **Input: 150 ccs**
+> **Result:** Convulsions. Acute paranoid delusions. Misanthropic behavior, severe. Non-compliance. Negative.
+
+> **Input: 100 ccs**
+> **Result:** Twitching, severe. Paranoia, moderate. Antisocial behavior, slight. Compliance, heavy guidance required. Positive.
+------
+[[=]]
+++ Experiment Log 5633-█-█
+++++ __Summary__
+[[/=]]
+
+After the general success of Experiment 5633-1, a test was scheduled for the following week. A D-Class personnel was instructed to enter the compromised site via an air vent, before dropping down into the cafeteria and waiting for SCP-5633-β with similar offerings to the first experiment. During the test, the recording equipment malfunctioned, and so what exactly transpired during this test is unknown. 
+
+D-5567’s GPS showed that they made positive access with SCP-5633-β for a brief period, before the GPS suddenly deactivated as with the recording equipment. At this point, D-5567’s GPS began displaying their location various points in the Site over the span of a few seconds. The GPS then cut out, and personnel were forced to use thermal imagery to track D-5567’s location. 
+
+Thermal imagery showed D-5567 located back in the cafeteria. SCP-5633-β then appeared, lifting D-5567 up above its head, before their heat marker suddenly became pure white. Patches of heat on the thermal imagery, presumably the remains of D-5567, where then seemingly descended upon by the personnel left. SCP-5633-β continued to stand still in the middle of the staff cafeteria.
+
+SCP-5633-δ continued to stand still in the middle of the staff cafeteria. A large dimensional shift begins manifesting near the pot of bean stew, causing the floor to dematerialize and transfigure staff members into hyperbolic protrusions. The site continues to reorient as SCP-5633-δ looks on.
+
+The attending researchers make note of the results.
+
+A large, obsidian-composite computing device forms from the residue, and begins testing the Riemann Hypothesis. SCP-5633-γ is not distracted, but appears disturbed as their form starts to fray.
+
+The attending researchers make note of the results.
+
+The League of Nations meet to discussed how to avoid a fourth World War. SCP-5633-Γ is observed to kneel and weep. Large-scale revolts throughout the world, several thousand are massacred. A flower blooms in the garden.
+
+The attending researchers make note of the results.
+
+SCP-5633 determines that everything is hopeless. Site-01 subsequently detects the facility's self-destruction mechanisms activate.
+
+------
+
+[[include :scp-wiki:component:blacklight-box-source |inc-section-start= --]
+|color-family=raisa-final raisa-alert
+|unique-name=addendum-one-last
+|display-name=Addendum 5633-α
+]]
+**Post-Neutralization Analysis**
+
+Following a standard RAISA audit, it was concluded that SCP-5633 was an expected consequence of human sapient extrapolation. This file will be archived as a sub-anomaly of SCP-███, and relevant staff were amnesticized. Lost resources and personnel are expected to be regenerated within 4-9 cycles.
+
+To date, [[span class="monotype"]]46,719[[/span]] altered anomaly events have occurred, which matches  [[span class="monotype"]]86%[[/span]]  of projections. Containment danger is currently considered  [[span class="monotype"]]LOW[[/span]] .
+[[include :scp-wiki:component:blacklight-box-source |inc-section-end= --]]]
