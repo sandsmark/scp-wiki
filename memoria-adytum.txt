@@ -3,6 +3,24 @@ parent:canon-hub
 [[include :scp-wiki:theme:black-highlighter-theme]]
 [[include :firedawnfolder:theme:memoria]]
 [[include :scp-wiki:component:collapsible-sidebar]]
+[[module CSS]]
+.authors .collapsible-block-link {
+margin-left:.25em;
+padding: .25em;
+font-weight: bold;
+opacity: .5;
+color: inherit;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+.authors .collapsible-block-link:hover {
+opacity:1;
+}
+.authors .collapsible-block-link:active {
+opacity:1;
+}
+[[/module]]
 
 [[>]]
 [[module Rate]]
@@ -91,8 +109,8 @@ He looked upon them and wept.
 [[size 80%]]Foundation Threat Awareness: @@[@@##390000|█████##@@]@@[[/size]] 
 
 
-
-[[collapsible show="+ Author Attributions"]]
+[[div class="authors"]]
+[[collapsible show="+ Author Attributions" hide="+ Hide Author Attributions"]]
 
 Current Authors:
 # [[*user MalyceGraves]] - {[http://www.scp-wiki.wikidot.com/malycegraves-author Author Page]}
@@ -104,8 +122,8 @@ Current Authors:
 
 
 None of this would be possible without the incredible work done by [[*user metaphysician]] - {[http://www.scp-wiki.wikidot.com/metaphysician Author Page]}
-
 [[/collapsible]]
+[[/div]]
 
 [[include :scp-wiki:component:license-box]]
 =====
