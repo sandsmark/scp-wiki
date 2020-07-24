@@ -1,0 +1,433 @@
+title:Hurt
+[[include :scp-wiki:component:pride-highlighter |inc-s9-pan-alt= --]]]
+
+[[module CSS]]
+@import url("/nagiros/code/1");
+
+#page-content blockquote {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.signatureline:before {
+  content: "X";
+  color: #F5F5DC;
+  font-size: 200%;
+}
+ 
+/*
+    Night Rush Theme
+    [2020 Wikidot Theme]
+    Created for The Crab Den by Nagiros
+    Obviously based on the Sigma-9 Theme for the SCP Foundation by Aelanna
+*/
+ 
+/* COMMON */
+ 
+h1, h2, h3, #page-title {
+    color: #f2f2f2;
+}
+#page-title {
+    border-color: #f2f2f2;
+}
+ins, del {
+    color: black;
+}
+a, a:visited, #side-bar a:visited {
+    color: #8870DF;
+}
+a.newpage {
+    color: #cc9cff;
+}
+ 
+body {
+    background: #141414;
+    color: #c7c7c7;
+}
+div#container-wrap {
+    background-image: url(http://nagiros.wdfiles.com/local--files/component%3Atheme/nightrush-header.png);
+}
+ 
+/* HEADER */
+#header {
+    background-image: url(http://scp-wiki.wdfiles.com/local--files/component%3Ascp-trans-pride/TransSCPlogo.png);
+}
+#login-status ul a {
+    color: #f2f2f2;
+    background: #1a1a1a;
+    border-color: #f2f2f2;
+}
+#login-status ul a:hover {
+    color: #e6e6e6;
+}
+ 
+/* Makes the code readable */
+.hl-identifier, .hl-code, .hl-brackets {
+    color: #f2f2f2;
+}
+ 
+/* TOP MENU */
+#top-bar a {
+    color: #e6e6e6;
+}
+ 
+#top-bar ul li ul {
+    border-color: #ffffff;
+}
+ 
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    background: #262626;
+    color: #e6e6e6;
+}
+ 
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+    border-top-color: #ffffff;
+}
+ 
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: #000000;
+    color: #e6e6e6;
+}
+#top-bar ul li ul a, #top-bar a:hover {
+    color: #8870DF;
+}
+ 
+/* SIDE MENU */
+div#side-bar div.side-block {
+    background: rgb(24, 24, 24) !important;
+    box-shadow: 0 2px 6px #404040;
+    border-radius: 0px;
+    border-width: 2px;
+    border-color: white;
+}
+ 
+div#side-bar div.side-block div.heading {
+    color: #f2f2f2;
+    border-color: #f2f2f2;
+}
+ 
+/* Recolors the image bullet points in the side-bar */
+.side-block .menu-item > .image {
+    filter: hue-rotate(335deg) grayscale(0.1);
+}
+#side-bar {
+    background: transparent;
+}
+#side-bar a, #side-bar a:visited{
+    color: #f2f2f2;
+}
+#side-bar div.menu-item.inactive a {
+    color: #8870DF;
+}
+#side-bar div.menu-item .sub-text {
+    color: #666;
+}
+ 
+/*FOOTNOTES */
+.hovertip {
+    width: 20em;
+    padding: 0.5em;
+    border: 1px solid #8870DF !important;
+    border-radius: 0.5em;
+    background-color: #000000ee !important;
+    box-shadow: 0 0 6px 1px #000000aa;
+    z-index: 100;
+}
+ 
+.hovertip .f-heading {
+    color: #8870DF;
+}
+ 
+/* Page Rating Module Customizations */
+.page-rate-widget-box .rate-points,
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a,
+.page-rate-widget-box .cancel a {
+    background-color: #000000 !important;
+    border: 0;
+    color: white;
+}
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    background-color: #000000;
+    color: white;
+}
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background-color: #000000;
+    border: 0;
+    border-left: 1px solid #8870DF;
+    font-weight: bold;
+}
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background: #000000;
+    color: white;
+}
+.page-rate-widget-box .cancel {
+    background-color: #000000;
+    border: 0;
+    border-left: 1px solid #8870DF;
+}
+.page-rate-widget-box .cancel a:hover {
+    background: #000000;
+    color: white;
+}
+
+/* INFO BOX */
+
+#page-content .rate-box-with-credit-button {
+    background-color: #000000;
+    border: 1px solid #000000;
+}
+ 
+#page-content .rate-box-with-credit-button .creditButton p a {
+    border-left-color: #8870DF;
+}
+ 
+#page-content .rate-box-with-credit-button .page-rate-widget-box .cancel {
+    border-radius: 0;
+}
+#page-content .rate-box-with-credit-button .page-rate-widget-box .rate-points {
+    border-left: 0;
+}
+ 
+#page-content .modalbox {
+    background: linear-gradient(#141414 51px,#262626 51px,#262626) !important;
+    color: #c7c7c7;
+    box-shadow: 0 2px 6px #404040;
+}
+ 
+.close-credits, .credit-back {
+  filter: hue-rotate(335deg) grayscale(0.1);
+}
+ 
+/* MISC */
+ 
+hr {
+    background-color: #f2f2f2;
+}
+ 
+.license-area a, .page-watch-options a, .page-options-bottom a, .edit-help-34 a {
+  color: white;
+}
+ 
+#edit-page-title {
+  border: 1px solid #CCC;
+  background: #262626;
+  text-align: center;
+}
+ 
+#edit-page-textarea {
+  background-color: #242424;
+  border-color: #CCC;
+  color: #f2f2f2;
+}
+ 
+#edit-page-comments {
+  background-color: #2e2e2e;
+  border-color: #CCC;
+  color: #c7c7c7;
+}
+
+#page-tags-input, #parent-page-name, #move-new-page-name {
+  border-color: #CCC;
+}
+ 
+/* inputs */
+ 
+input.text, input.button,
+#search-top-box-input,
+#search-top-box-form input[type=submit],
+div.buttons input, input.button, button, file, a.button {
+    background: transparent;
+    color: #f2f2f2;
+    border: 1px solid #ffffff;
+    border-radius: 0;
+    font-size: 1em;
+    outline: 0;
+}
+ 
+div.buttons input:hover, div.buttons input:focus,
+input.button:hover, input.button:focus,
+button:hover, button:focus,
+file:hover, file:focus,
+a.button:hover, a.button:focus {
+    border-color: #ffffff;
+    background: transparent;
+    color: #f2f2f2;
+}
+ 
+input.text:hover, input.button:hover,
+input.text:focus, input.button:focus,
+#search-top-box-input:hover,
+#search-top-box-input:focus,
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    color: #f2f2f2;
+    background: transparent;
+    border: 1px solid #ffffff;
+    outline: 0;
+}
+ 
+/* EDITING WINDOWS */
+.owindow {
+    color: #000;
+}
+ 
+.owindow h1, .owindow h2, .owindow h3, .owindow h4, .owindow h5, .owindow h6 {
+    color: #000;
+}
+ 
+.owindow a {
+    color: #272727;
+}
+ 
+table.page-files .highlight {
+    background-color: #272727;
+}
+ 
+input.text {
+    border: 1px dashed #000;
+    color: #fff;
+}
+ 
+input.text:focus {
+    border: 1px dashed #000;
+    color: #fff;
+}
+ 
+input.text:hover {
+    border: 1px dashed #000;
+    color: #fff;
+}
+ 
+div#lock-info {
+    background-color: #262626;
+}
+ 
+/* tag style */
+ 
+.page-tags span {
+  border-top: 0;
+}
+.page-tags span a {
+    display: inline-block;
+    margin: 0 .25rem .5rem .75rem;
+    padding: 0.1875rem 0.3125rem 0.1875rem 0;
+    height: 0.8125rem;
+    line-height: 13px;
+    font-size: 11px;
+    background: #c451c4;
+    color: #fff;
+    text-decoration: none;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 0.25rem;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius: 0.25rem;
+}
+.page-tags span a:before, .page-tags span a:after {
+    content: "";
+    float: left;
+    position: relative;
+}
+.page-tags span a:before {
+    padding:0 0.0625rem 0.1875rem;
+    top: -0.1875rem;
+    left: -0.625rem;
+    width: 0;
+    height: 0;
+    border-color: transparent #c451c4 transparent transparent;
+    border-style: solid;
+    border-width: 0.5rem 0.5rem 0.5rem 0;
+}
+ 
+.page-tags span a:after {
+    top: 0.28125rem;
+    left: -0.5rem;
+    width: 0.25rem;
+    height: 0.25rem;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 0.125rem;
+    background: rgb(252, 252, 252);
+}
+
+#main-content .page-tags span {
+    max-width: 100%;
+}
+ 
+/* Blockquote Mimic Dic */
+blockquote, div.blockquote {
+    border-color: #f2f2f2;
+    background-color: #000000;
+}
+ 
+/* webkit scrollbar */
+ 
+::-webkit-scrollbar-thumb {
+  background: #420042;
+  border-radius: 5px;
+  border: 1px solid #c7c7c7;
+}
+[[/module]]
+
+[[>]]
+[[Module Rate]]
+[[/>]]
+
+> “Despite it all, I’m not strong.”
+
+They continued to toil over the sentence on the paper. [http://www.scp-wiki.net/scp-5097 Kassidy] looked over to their wife, Rosa, who was asleep in the bed just to their left. They put their head in their hands as they continued to look over the notebook. 
+
+They had always been troubled with //something// since they were a kid, and they couldn’t help but feel as though they had become a burden on the people who actually cared about them. Invites left on the table or in the mailbox. Everyone left on read, no matter what they needed. Close friends, family, Rosa... Nothing more than cut ties and burnt bridges now. Everything just seemed to fall through for them. Slipped through the cracks to never return. It wasn’t like they tried to isolate themself, it just gradually happened.
+
+> “I’m sorry Rosa…”
+
+Everything they were told they could be, would be, should be was a lie. Sweet, kind, talented, hard worker, risk taker, they were none of those things. All a lie they had put on for everyone. Something they knew they never could live up to. They had always struggled with these “letters” even before this. They started thinking again. They wanted to make this meaningful for Rosa.
+
+Tears started to run down their face as they sobbed quietly. They really didn’t want to wake up their wife. She absolutely couldn't know what was going on. She had always been so understanding. Always there for Kassidy. Staying awake with them during times of insomnia, or holding them when they sobbed uncontrollably for no reason. She would feel betrayed, as though they didn’t love her anymore, like it was her fault.
+
+This wasn’t true. Kassidy would do anything for Rosa and they genuinely hoped she knew that. Though, they weren’t sure she would after this.
+
+> “Rosamary, you know that I would run through fire for you. I would carry you through hell and walk the Seven Seas. After everything we’ve been through, I never wanted to spend another day without you.” 
+
+No. Kassidy tore out the piece of notebook paper and tossed it into the trash. Nothing would make what they were going to do any easier. Rosa would never forgive them, even if they failed. Kassidy shook their head. Would it just be better to disappear without a trace? Rosa might be able to move on faster if they did. 
+
+Nothing would make this better for Rosa, and Kassidy knew that. They knew that Rosa loved them more than anything else in the world. To be fair, Rosa was the light of Kassidy’s life. The entire nine years they had spent with this woman were some of the best in their life. Even if that wasn’t enough to stop them, they knew that Rosa’s PTSD would come back with a vengeance after they did it. This should have talked them out of it by now, and that thought terrified them. 
+
+Tear drops littered the page, seeping through the layers of paper. Kassidy looked at the time. 4:32 AM. They looked back over at their sleeping wife. Her auburn hair glistened in the moonlight. She was always so beautiful, even in her sleep. Despite it all, Kassidy really did love their wife. 
+
+No, no. Kassidy was stalling. 
+
+> “Rosa, I love you. You are the light of my--”
+
+The things that Kassidy could write would always sound either cheezy and stupid, or too deep into wedding vow territory for them. They sighed and tapped the pencil on their chin. Every breath they took strained their body. It was a sickening feeling in their stomach and a heavy ache in their chest. This wasn’t an uncommon occurrence for Kassidy. 
+
+Small thoughts slipped into their mind. Rosa didn’t love them, she just felt obligated to stay with them. That their relationship was just based off of obligation rather than love. A sharp, bitter ping rang in their chest. It wasn’t true, nothing they had started to tell themself was true. They had to believe it wasn’t. 
+
+Unless it was...
+
+> “I’ll be back soon, my love.”
+
+That would have to do. Short, sweet, and a possible light for her to hold onto. Maybe they had just gone for a midnight jog and got lost, or went to the store and hadn’t come back yet.
+
+Everything in their life had been amazing. Their relationship was perfect, their job was steady, and even a promotion was on the table. So why were they being like this? Kassidy hadn’t wanted to hurt anyone, and yet, they continued to push everyone away. It all just melted into apathy, as though nothing they ever did mattered to anyone. Their body felt like it was going to give out under them, almost as though it wasn’t even theirs, a bystander, watching as someone else did everything as them. 
+
+They sighed and started sobbing a little more. They had stopped taking their medication, if it wasn’t going to work, then why even bother? 
+
+They sealed the note with a kiss and slipped out of their bedroom. Their body was shaking under the mental stress of their choice to finally go through with it. 
+
+Rosa was better off without them. They knew how much it worried her when they slept for hours on end, or took a nap and wouldn’t wake up until the morning, or all those sleepless nights. Even if Rosa did love them, it wasn’t fair to be a burden on her. Besides, Rosa needed her sleep now that she wasn't plagued by constant nightmares of days past, and Kassidy couldn’t wake her up.
+
+Kassidy slipped into the living room and opened a drawer, inside was a pair of scissors they had hid. They stared at them for a second,glancing between their bare, scarred arms and the pair of scissors It wasn’t worth it if they were going to die anyways. They tossed the silver blades across the room. They felt sick to their stomach like something was pulling them back. They just ignored the feeling and opened the door to the apartment. 
+
+A cold wind hit them as they walked down the stairs, and into the parking garage. It was dark, but they could still see well enough to find their car. The concrete felt like needles on their shoeless feet, but they only relished in the pain of it. They drew a breath before unlocking the car and sitting down. Tears still dripped off of their face, and they let out an anguished scream. One that hurt their throat and reverberated around the garage. The only return was the echo of their faded scream.
+
+Tired eyes rested on the garage door as their heart thumped loud in their ears and chest. This adrenaline scared them, but they experienced it before and shoved it off. To them, it didn’t matter anymore. Kassidy had tunnel vision. It didn’t matter that tears clouded their vision, or that Rosa would miss them, or if they got hurt. It only mattered that Kassidy succeeded. 
+
+They knew they could have caught themself before their fall, they knew everything could have turned out alright, and they knew all of this could have been avoided. All of this, because Kassidy had let self destruction thrive. After all, it was all they were good for.
