@@ -959,8 +959,8 @@ Expect great things in the future.
 [[=]]
 ++ All supplement pages.
 [[/=]]
-[[module ListPages tags="supplement" categories="*" separate="no" perPage="250" order="created_at desc" prependLine="||~ Title ||~ Vis. Tags ||~ Hid. Tags ||"]]
-|| **%%title_linked%%** || %%tags_linked%% || %%_tags_linked%% ||
+[[module ListPages tags="supplement" categories="*" separate="no" perPage="250" order="created_at desc" prependLine="||~ Title ||~ Parent ||~ Vis. Tags ||~ Hid. Tags ||"]]
+|| **%%title_linked%%** || %%parent_title_linked%% || %%tags_linked%% || %%_tags_linked%% ||
 [[/module]]
 
 [[code type="css"]]
