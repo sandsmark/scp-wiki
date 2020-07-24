@@ -953,14 +953,7 @@ Expect great things in the future.
 ++ All fragment pages outside fragment: category.
 [[/=]]
 [[module ListPages tags="fragment" categories="-fragment" separate="no" perPage="250" order="created_at desc" prependLine="||~ Title ||~ Vis. Tags ||~ Hid. Tags ||~ Category ||"]]
-|| **[[[%%link%%/noredirect/true | %%title%%]]]** || %%tags_linked%% || %%category%% ||%%_tags_linked%% ||
-[[/module]]
-
-[[=]]
-++ All supplement pages.
-[[/=]]
-[[module ListPages tags="supplement" categories="*" separate="no" perPage="250" order="created_at desc" prependLine="||~ Title ||~ Parent ||~ Vis. Tags ||~ Hid. Tags ||"]]
-|| **%%title_linked%%** || %%parent_title_linked%% || %%tags_linked%% || %%_tags_linked%% ||
+|| **[[[%%link%%/noredirect/true | %%title%%]]]** || %%tags_linked%% || %%_tags_linked%% || %%category%% ||
 [[/module]]
 
 [[code type="css"]]
