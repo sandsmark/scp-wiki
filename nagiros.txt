@@ -952,15 +952,15 @@ Expect great things in the future.
 [[=]]
 ++ All fragment pages outside fragment: category.
 [[/=]]
-[[module ListPages tags="fragment" categories="-fragment" separate="no" perPage="250" order="created_at desc" prependLine="||~ Title ||~ Vis. Tags ||~ Hid. Tags ||"]]
-|| **[[[%%link%%/noredirect/true | %%title%%]]]** || %%tags_linked%% || %%_tags_linked%% ||
+[[module ListPages tags="fragment" categories="-fragment" separate="no" perPage="250" order="created_at desc" prependLine="||~ Title ||~ Vis. Tags ||~ Hid. Tags ||~ Category ||"]]
+|| **[[[%%link%%/noredirect/true | %%title%%]]]** || %%tags_linked%% || %%category%% ||%%_tags_linked%% ||
 [[/module]]
 
 [[=]]
 ++ All supplement pages.
 [[/=]]
-[[module ListPages tags="supplement" categories="*" separate="no" perPage="250" order="created_at desc" prependLine="||~ Title ||~ Vis. Tags ||~ Hid. Tags ||~ Category ||"]]
-|| **%%title_linked%%** || %%tags_linked%% || %%_tags_linked%% || %%category%% ||
+[[module ListPages tags="supplement" categories="*" separate="no" perPage="250" order="created_at desc" prependLine="||~ Title ||~ Vis. Tags ||~ Hid. Tags ||"]]
+|| **%%title_linked%%** || %%tags_linked%% || %%_tags_linked%% ||
 [[/module]]
 
 [[code type="css"]]
