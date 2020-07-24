@@ -956,6 +956,13 @@ Expect great things in the future.
 || **[[[%%link%%/noredirect/true | %%title%%]]]** || %%tags_linked%% || %%_tags_linked%% || %%category%% ||
 [[/module]]
 
+[[=]]
+++ All supplement pages.
+[[/=]]
+[[module ListPages tags="supplement" categories="*" separate="no" perPage="250" order="created_at desc" prependLine="||~ Title ||~ Vis. Tags ||~ Hid. Tags ||~ Category ||"]]
+|| **%%title_linked%%** || %%tags_linked%% || %%_tags_linked%% || %%category%% ||
+[[/module]]
+
 [[code type="css"]]
 /* Centered breadcrumbs */
 #breadcrumbs{
