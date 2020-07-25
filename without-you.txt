@@ -1,0 +1,433 @@
+title:Without You
+[[include :scp-wiki:component:pride-highlighter |inc-s9-pan-alt= --]]]
+
+[[module CSS]]
+@import url("/nagiros/code/1");
+
+#page-content blockquote {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.signatureline:before {
+  content: "X";
+  color: #F5F5DC;
+  font-size: 200%;
+}
+ 
+/*
+    Night Rush Theme
+    [2020 Wikidot Theme]
+    Created for The Crab Den by Nagiros
+    Obviously based on the Sigma-9 Theme for the SCP Foundation by Aelanna
+*/
+ 
+/* COMMON */
+ 
+h1, h2, h3, #page-title {
+    color: #f2f2f2;
+}
+#page-title {
+    border-color: #f2f2f2;
+}
+ins, del {
+    color: black;
+}
+a, a:visited, #side-bar a:visited {
+    color: #8870DF;
+}
+a.newpage {
+    color: #cc9cff;
+}
+ 
+body {
+    background: #141414;
+    color: #c7c7c7;
+}
+div#container-wrap {
+    background-image: url(http://nagiros.wdfiles.com/local--files/component%3Atheme/nightrush-header.png);
+}
+ 
+/* HEADER */
+#header {
+    background-image: url(http://scp-wiki.wdfiles.com/local--files/component%3Ascp-trans-pride/TransSCPlogo.png);
+}
+#login-status ul a {
+    color: #f2f2f2;
+    background: #1a1a1a;
+    border-color: #f2f2f2;
+}
+#login-status ul a:hover {
+    color: #e6e6e6;
+}
+ 
+/* Makes the code readable */
+.hl-identifier, .hl-code, .hl-brackets {
+    color: #f2f2f2;
+}
+ 
+/* TOP MENU */
+#top-bar a {
+    color: #e6e6e6;
+}
+ 
+#top-bar ul li ul {
+    border-color: #ffffff;
+}
+ 
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    background: #262626;
+    color: #e6e6e6;
+}
+ 
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+    border-top-color: #ffffff;
+}
+ 
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: #000000;
+    color: #e6e6e6;
+}
+#top-bar ul li ul a, #top-bar a:hover {
+    color: #8870DF;
+}
+ 
+/* SIDE MENU */
+div#side-bar div.side-block {
+    background: rgb(24, 24, 24) !important;
+    box-shadow: 0 2px 6px #404040;
+    border-radius: 0px;
+    border-width: 2px;
+    border-color: white;
+}
+ 
+div#side-bar div.side-block div.heading {
+    color: #f2f2f2;
+    border-color: #f2f2f2;
+}
+ 
+/* Recolors the image bullet points in the side-bar */
+.side-block .menu-item > .image {
+    filter: hue-rotate(335deg) grayscale(0.1);
+}
+#side-bar {
+    background: transparent;
+}
+#side-bar a, #side-bar a:visited{
+    color: #f2f2f2;
+}
+#side-bar div.menu-item.inactive a {
+    color: #8870DF;
+}
+#side-bar div.menu-item .sub-text {
+    color: #666;
+}
+ 
+/*FOOTNOTES */
+.hovertip {
+    width: 20em;
+    padding: 0.5em;
+    border: 1px solid #8870DF !important;
+    border-radius: 0.5em;
+    background-color: #000000ee !important;
+    box-shadow: 0 0 6px 1px #000000aa;
+    z-index: 100;
+}
+ 
+.hovertip .f-heading {
+    color: #8870DF;
+}
+ 
+/* Page Rating Module Customizations */
+.page-rate-widget-box .rate-points,
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a,
+.page-rate-widget-box .cancel a {
+    background-color: #000000 !important;
+    border: 0;
+    color: white;
+}
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    background-color: #000000;
+    color: white;
+}
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background-color: #000000;
+    border: 0;
+    border-left: 1px solid #8870DF;
+    font-weight: bold;
+}
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background: #000000;
+    color: white;
+}
+.page-rate-widget-box .cancel {
+    background-color: #000000;
+    border: 0;
+    border-left: 1px solid #8870DF;
+}
+.page-rate-widget-box .cancel a:hover {
+    background: #000000;
+    color: white;
+}
+
+/* INFO BOX */
+
+#page-content .rate-box-with-credit-button {
+    background-color: #000000;
+    border: 1px solid #000000;
+}
+ 
+#page-content .rate-box-with-credit-button .creditButton p a {
+    border-left-color: #8870DF;
+}
+ 
+#page-content .rate-box-with-credit-button .page-rate-widget-box .cancel {
+    border-radius: 0;
+}
+#page-content .rate-box-with-credit-button .page-rate-widget-box .rate-points {
+    border-left: 0;
+}
+ 
+#page-content .modalbox {
+    background: linear-gradient(#141414 51px,#262626 51px,#262626) !important;
+    color: #c7c7c7;
+    box-shadow: 0 2px 6px #404040;
+}
+ 
+.close-credits, .credit-back {
+  filter: hue-rotate(335deg) grayscale(0.1);
+}
+ 
+/* MISC */
+ 
+hr {
+    background-color: #f2f2f2;
+}
+ 
+.license-area a, .page-watch-options a, .page-options-bottom a, .edit-help-34 a {
+  color: white;
+}
+ 
+#edit-page-title {
+  border: 1px solid #CCC;
+  background: #262626;
+  text-align: center;
+}
+ 
+#edit-page-textarea {
+  background-color: #242424;
+  border-color: #CCC;
+  color: #f2f2f2;
+}
+ 
+#edit-page-comments {
+  background-color: #2e2e2e;
+  border-color: #CCC;
+  color: #c7c7c7;
+}
+
+#page-tags-input, #parent-page-name, #move-new-page-name {
+  border-color: #CCC;
+}
+ 
+/* inputs */
+ 
+input.text, input.button,
+#search-top-box-input,
+#search-top-box-form input[type=submit],
+div.buttons input, input.button, button, file, a.button {
+    background: transparent;
+    color: #f2f2f2;
+    border: 1px solid #ffffff;
+    border-radius: 0;
+    font-size: 1em;
+    outline: 0;
+}
+ 
+div.buttons input:hover, div.buttons input:focus,
+input.button:hover, input.button:focus,
+button:hover, button:focus,
+file:hover, file:focus,
+a.button:hover, a.button:focus {
+    border-color: #ffffff;
+    background: transparent;
+    color: #f2f2f2;
+}
+ 
+input.text:hover, input.button:hover,
+input.text:focus, input.button:focus,
+#search-top-box-input:hover,
+#search-top-box-input:focus,
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    color: #f2f2f2;
+    background: transparent;
+    border: 1px solid #ffffff;
+    outline: 0;
+}
+ 
+/* EDITING WINDOWS */
+.owindow {
+    color: #000;
+}
+ 
+.owindow h1, .owindow h2, .owindow h3, .owindow h4, .owindow h5, .owindow h6 {
+    color: #000;
+}
+ 
+.owindow a {
+    color: #272727;
+}
+ 
+table.page-files .highlight {
+    background-color: #272727;
+}
+ 
+input.text {
+    border: 1px dashed #000;
+    color: #fff;
+}
+ 
+input.text:focus {
+    border: 1px dashed #000;
+    color: #fff;
+}
+ 
+input.text:hover {
+    border: 1px dashed #000;
+    color: #fff;
+}
+ 
+div#lock-info {
+    background-color: #262626;
+}
+ 
+/* tag style */
+ 
+.page-tags span {
+  border-top: 0;
+}
+.page-tags span a {
+    display: inline-block;
+    margin: 0 .25rem .5rem .75rem;
+    padding: 0.1875rem 0.3125rem 0.1875rem 0;
+    height: 0.8125rem;
+    line-height: 13px;
+    font-size: 11px;
+    background: #c451c4;
+    color: #fff;
+    text-decoration: none;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 0.25rem;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius: 0.25rem;
+}
+.page-tags span a:before, .page-tags span a:after {
+    content: "";
+    float: left;
+    position: relative;
+}
+.page-tags span a:before {
+    padding:0 0.0625rem 0.1875rem;
+    top: -0.1875rem;
+    left: -0.625rem;
+    width: 0;
+    height: 0;
+    border-color: transparent #c451c4 transparent transparent;
+    border-style: solid;
+    border-width: 0.5rem 0.5rem 0.5rem 0;
+}
+ 
+.page-tags span a:after {
+    top: 0.28125rem;
+    left: -0.5rem;
+    width: 0.25rem;
+    height: 0.25rem;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 0.125rem;
+    background: rgb(252, 252, 252);
+}
+
+#main-content .page-tags span {
+    max-width: 100%;
+}
+ 
+/* Blockquote Mimic Dic */
+blockquote, div.blockquote {
+    border-color: #f2f2f2;
+    background-color: #000000;
+}
+ 
+/* webkit scrollbar */
+ 
+::-webkit-scrollbar-thumb {
+  background: #420042;
+  border-radius: 5px;
+  border: 1px solid #c7c7c7;
+}
+[[/module]]
+
+[[>]]
+[[Module Rate]]
+[[/>]]
+
+> [http://scp-wiki.wikidot.com/hurt “I’ll be back soon, my love.”]
+
+Rosa woke from her sleep in a cold sweat. Her breath hitched and her eyes widened as she struggled to find her phone. Tears welled in her eyes as she curled into a ball, clutching her knees. Her heart pounded in her aching chest, leaving her feeling weak. The spot next to her was cold and messy. Untouched since Kassidy had disappeared two days ago. Shivers ran down Rosa’s spine as she pulled one of Kassidy’s pillows to her. It still smelled like them. 
+
+Time was slow for Rosa, ever since she had found the note that now haunted her dreams. Rosa wasn’t an idiot, she knew there was little hope of her spouse coming back. But every time her mind had run into that topic it sent a heavy ache through her body. One she couldn’t shake off anymore. 
+
+Pins and needles pricked her hands and feet, fingers and toes felt like curling into themselves. Rosa sobbed, continuing to clutch the pillow to her body. Everything had seemed so perfect, like nothing could go wrong. Yet, the unthinkable happened, and Rosa would give anything to go back and just hold Kassidy a little bit longer. Memories of giggling after dark and cuddling filled Rosa’s mind. 
+
+This was different, a sickening worry. Not like when Kassidy had been gone for a few days. No, this was a frozen hole. She likened it to the Greek myth of soulmates, how humans were destined to search for their other half in vain. Rosa had found her other half, hadn't she?
+
+Where did they go? 
+
+She sighed, calm slowly drifting over her body. Rosa slowly let go of the pillow, tears still streaming down her face. She flopped onto her back, taking in a heavy breath. She closed her eyes for a second. When they opened, they rested on a framed picture of their wedding day. They traced Kassidy’s face. 
+
+A silence drifted through the room. Rosa wiped her cheeks and stopped crying. She was so calm. Her body felt limp, and her head felt empty. Her eyes kept tracing Kassidy’s face as she stared at the photo. She held her breath; the lack of oxygen stung her lungs. The breath broke the stale air, and her lips curled into a wide smile.
+
+Giggles pierced the silence. Rosa stood up and grabbed the photo, smashing it against the wall with a crunch of glass. Tears once again spilled out of her eyes.
+
+“Fuck you! Fuck you!” she screamed, continuing to slam the frame into the wall. 
+
+“This was **my** happy ending! This was mine!” She let out an anguished howl as she tossed the dark wooden picture frame to the ground. 
+
+Her throat stung as she kept screaming into the apartment. The shattered glass stuck to her feet as she walked over it. She caught her reflection in the standing mirror. Her skin pale, eyes dull with no light.
+
+Rosa’s face twisted into an angry grimace as she pulled back her arm, launching it into the pristine surface. The shards of the broken mirror impaled themselves into her hand. Her eyes contrasted with her face, soft and sad against malice and contempt. 
+
+She screamed incoherent words, as she ripped open the door to the bathroom. She tore into the drawers and cabinets. She wiped the counter clean of any objects. The crashing and shattering sounds only served to fuel the rage Rosa felt. 
+
+“Fuck you! Fuck all of you! All you ever do is take from me! **All** you do is lure me in with false happiness!” 
+
+Rosa walked over the mess of things on the floor. She didn’t have regard for her own existence. If the world was going to screw her around like this, why bother with life in the first place? 
+
+She ran her head into a wall, producing a loud crack  sound and blurring her vision for a second. She didn’t know if the sound came from her skull or the wall, but she didn’t care. Her breath ran over her vocal cords as she grunted. 
+
+Rosa blinked, looking for anything else to destroy. She felt so guilty, angry, and tired. Nothing mattered anymore. Her love was gone, and nothing could fix that. She looked at the stuff on the dresser. None of it mattered. Rage bubbled up inside of her again. 
+
+It was so perfect. It didn’t deserve to look like that. It couldn’t be happy if she wasn’t happy. She slammed her body into it. Tearing into the drawers as she threw shirts and pants across the room. When nothing was in them, she broke the wooden drawers and tossed the parts over her shoulder. 
+
+She couldn’t keep up like this. Her body was giving out. It all hurt so badly, and she couldn’t stand to feel this emptiness. The world was empty and she didn’t matter to anyone.
+
+The phone buzzed on the bed, and Rosa went to grab it. The message only read “no dice” and she knew it was true. There wasn’t a body, no documents in SCiPnet, and almost nothing left of Kassidy. They weren't just missing, they were gone. Their presence had left the universe and wouldn’t return.  
+
+She slid against the bed, glass shards making way for her body as she sobbed. All of the anger and rage had subsided only to be replaced with grief. Her head pounded in time with her heart, and her throat felt shot. She leaned her head against the bed frame, tears sliding down her face, hands aimlessly wandering the carpet.
+
+Her fingertips brushed the corner of the picture frame. She picked it up, looking at the damage she had done to it. Larger glass shards hung off of the dark ebony wood. Rosa sighed and put her focus on the picture. 
+
+That was the happiest day of their lives. Meant to be the happily ever after she deserved. The one final chapter on her life, to live out the rest of her days in bliss. Yet, it was all ripped away in a second. Rosa knew no one was to blame for Kassidy’s disappearance, not a kidnapper or a murderer anyway.
+
+“I’m so sorry.” 
+
+Rosa’s tears dripped onto the exposed picture as she held it close to her, hugging it like it was the only thing that was left in the world.
