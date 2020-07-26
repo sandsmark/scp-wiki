@@ -1,5 +1,11 @@
 title:SCP-4420
-[[include :scp-wiki:component:scp-trans-pride |trans-pride-logo= --] |trans-pride-footer= --]]]
+[[include :scp-wiki:theme:flopstyle]]
+[[include :scp-wiki:component:pride-highlighter |inc-s9-tg-alt= --]]]
+
+[[module CSS]]
+ .disruptionHeader{display:none!important}
+ ul li{margin:unset}
+[[/module]]
 
 [[include :scp-wiki:component:info-ayers
 |lang=en
@@ -7,263 +13,141 @@ title:SCP-4420
 |authorPage=http://www.scp-wiki.net/floppyphoenix
 |comments=**SCP-4420:** A Potato Thirst **[[https://youtu.be/zaW6ApXbHq4 Audio version]]** 
 **Author:** [[*user Lt Flops]] 
+**Published on 20 Aug 2018** 
  
 This article is set in the **[*http://www.scp-wiki.net/apotheosis-hub Apotheosis]** canon. 
 ----
-[[include :scpdsandbox:floppyphoenix-info]]
+[[include :scp-sandbox-3:flops-info]]
 [[/div]]
-
-[[module CSS]]
-/* INFO BOX */
-sup{
-    vertical-align: top;
-    position: relative;
-    top: -0.5em;
-}
-body{
-    --cutColour: #fafafa;
-    --barColour: #590505;
-    color: rgb(12, 12, 12);
-}
-.translation_block, .u-faq{ display: none; }
-
-/* DIV BLOCKS */
-.message-location{
-    float: left; 
-    text-align: left;
-}
-.message-size{
-    background: #c0c0c0; 
-    width: 18.4em; 
-    border-radius: 3.05em; 
-    padding: .06em 1.22em;
-    font-size: 112.5%; 
-    text-align: center; 
-}
-
-/* FORMATTING */
-hr{
-    display: block;
-    border: 0;
-    padding: 0;
-    margin: 1em 0;
-    height: 1px;
-}
-.lite-header hr{
-    display: block;
-    border: none;
-    background-color: #e6e6e6;
-    margin: auto;
-    height: 2px;
-    width: 45%;
-}
-.h2{
-    margin: 0.5em 0 0.4em;
-    padding: 0;
-    letter-spacing: 1px;
-    font-size: 150%;
-    font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
-}
-[[/module]]
 
 [[>]]
 [[module Rate]]
 [[/>]]
 
-[[include :scp-wiki:component:anomaly-class-bar-source
-|item-number= 4420
-|clearance= 2
-|container-class= neutralized
-|secondary-class= none
-|disruption-class= none
-|risk-class= none
+@@ @@
+
+[[div class="card-block terminal-span"]]
+▷ //DISPLAYING ARCHIVED DOCUMENTATION//...
+[[/div]]
+
+@@ @@
+
+[[include :scp-wiki:component:flops-header
+|item=4420
+|containment=euclid
+|level=2
+|security=restricted
 ]]
 ----
-= //[[span style="font-family: Courier, monospace; font-size: 110%;"]]Displaying archived documentation...[[/span]]//
+[[include component:image-block
+|align=center
+|width=100%
+|name=tater-tot.png
+|caption=SCP-4420. Image captured from a 50-metre safe distance.]]
 ----
-[[include component:image-block name=tater-tot.png|align=center|width=100%|caption=[[span style="font-size: 120%;"]]SCP-4420 in its current state. Photo taken from a safe distance of 50 meters.[[/span]]]]
+ **Special Containment Procedures:** SCP-4420 is situated in a secure position in the Site-82 Arboretum. Tentative Containment Module #819 regulates the entrance to an artificial pocket dimension large enough to confine SCP-4420. Containment technicians have installed four synchronized Scranton–Marlowe Topology Stabilizers, which maintain dimensional stability inside the module.
 ----
- **Special Containment Procedures:** SCP-4420 is currently contained 150 meters from Site-82 in a localized artificial pocket dimension, housed in Tentative Containment Module #819. Paratechnicians have installed a Scranton-Marlowe Topology Stabilizer (or SMTS) to maintain dimensional stability in the chamber.
+**Description:** SCP-4420 is a red Idaho potato with a current mass of 400 million kg and external dimensions of 150 metres by 65 metres by 55 metres. SCP-4420 displays the following ectoentropic properties:
+
+# SCP-4420 responds to moisture shrinkage (~5% every two weeks) by generating a new amount of moist potato matter. During this event, a random Idaho citizen's drinking water transforms into starch-rich potato-flavoured water, which grants the ability to commune with potatoes for 3 to 10 hr after consumption.
+# Exposure to electromagnetic radiation in the human visual spectrum (λ = 400 nm to 700 nm) produces potato matter of a randomized form. This matter relates to potatoes at various conceptual levels, be that immediate or vague. The new matter grows alongside SCP-4420 and attaches itself via esoteric means beyond current agricultural understanding. Observed forms include:
+ * Any variation of the 5 000 potato varieties grown globally.
+ * Types of cooked potatoes such as mashed potatoes, French fries, and potato chips.
+ * 1996 Idaho County Junior League Potato Sack Race champion Michelle Brown, age 6.
+ * A species of Jerusalem cricket (colloquially known as the potato bug) composed of sweet potato. These insects have infested ~8% of SCP-4420 to date.
+ * Memetic ennui affecting 10% of persons within a 5-km radius.
+# SCP-4420 displays evident immunity to decay. SCP-4420 consumes most organic irregularities almost immediately after their growth, and produces healthy potato matter in their place.
+# [[span style="margin: 0;"]]SCP-4420 consumes food and organic waste within 20 metres of its surface. Any nearby organic material transforms into a potato tuber of equal mass and teleports into SCP-4420. This includes small animals up to 5 kg in mass.[[/span]]
+
+As of current documentation, SCP-4420 has been growing for 22 years.
+
+[[div class="lite-heading"]]
 ----
-**Description:** SCP-4420 is a red Idaho potato with a current mass of 400,000,000 kg and external dimensions of 150 meters by 65 meters by 55 meters. SCP-4420 displays the following ectoentropic properties:
-
-1. SCP-4420 recuperates moisture shrinkage (~5% every two weeks) by generating a random amount of solid potato matter. During this event, a random Idaho citizen's drinking water transforms into starch-rich potato-flavoured water, granting the ability to commune with potatoes for 3 to 10 hours upon consumption.
-
-2. Exposure to visible EM radiation produces potato matter of a randomized form. The new matter relates to potatoes at various conceptual levels, be that immediate or vague. The new matter grows alongside SCP-4420, attaching themselves via esoteric means beyond current agricultural understanding. Observed forms include:
-* Any variation of the 5,000 potato varieties grown globally.
-* Forms of cooked potato such as mashed potatoes, French cut fries, potato chips, and hash browns.
-* 1996 Idaho County Junior League Potato Sack Race champion Michelle Brown, age 6.
-* A species of Jerusalem cricket (colloquially known as a potato bug) composed of sweet potato. The entities have colonized ~8% of SCP-4420 to date.
-* Memetic ennui affecting 25% of individuals within a 5 km radius.
-
-3. SCP-4420 displays an innate immunity to decay. SCP-4420 consumes organic irregularities almost immediately after they develop and produces healthy potato matter in their place.
-
-4. SCP-4420 consumes food and organic waste within a 20-meter-wide area. Any organic matter entering this area transforms into a potato tuber of equal mass, which teleports into SCP-4420. Organic matter includes small animals up to 10 kg in mass.
-
-At the time of documentation, SCP-4420 has been growing for ~22 years.
-
-@@ @@
-[[div class="lite-header"]]
-----
-[[/div]]
-= [[span class="h2"]]Updates[[/span]]
-[[div class="lite-header"]]
+++ UPDATES
 ----
 [[/div]]
-@@ @@
 
-**I. May 10, 2019**
+**I. 10 May 2019**
 
-Field researchers discovered foreign fluid with trace amounts of thaumic contaminant in the local groundwater. Site-82's Command Office initiated [[[scp-3731|Mandate 3731-Ov91]]], which calls for immediate lockdown and destruction of foreign substances. The area-wide lockdown was successful -- not accounting for SCP-4420, due to its containment location.
+Field researchers discovered foreign fluid with trace amounts of thaumic contaminants in the local groundwater. The Site-82 Operations Command Office initiated [[[scp-3731|Mandate 3731-Ov91]]], which calls for immediate lockdown and destruction of foreign substances. Security staff considered the lockdown successful within the hour.
 
-At 2151 CDT, SCP-4420 absorbed thaumic emission and developed sapience that lasted for a period of 32 hours. During this time, SCP-4420 displayed the ability to manipulate informational constructs. This led to the dissemination of 362 separate SMS messages to researchers on-site. A series of received messages are as follows.
+Because of its containment location, however, SCP-4420 remained unaccounted for.
 
-[[div class="message-location"]]
-[[div class="message-size"]]
+At 21:51 CDT, SCP-4420 absorbed thaumic fluids and developed sapience lasting for 32 hours. During this time, it displayed the ability to manipulate informational constructs. SCP-4420 then disseminated 362 SMS messages to on-site staff.
+
+A series of received messages is as follows.
+
+[[div class="sms-message"]]
 can you see me
 [[/div]]
-@@@@
-[[/div]]
-[[div style="clear: left;"]]
-[[/div]]
 
-[[div class="message-location"]]
-[[div class="message-size"]]
+[[div class="sms-message"]]
 pls look at me
 [[/div]]
-@@@@
-[[/div]]
-[[div style="clear: left;"]]
-[[/div]]
 
-[[div class="message-location"]]
-[[div class="message-size"]]
+[[div class="sms-message"]]
 im big
 [[/div]]
-@@@@
-[[/div]]
-[[div style="clear: left;"]]
-[[/div]]
 
-[[div class="message-location"]]
-[[div class="message-size"]]
+[[div class="sms-message"]]
 look at me
 [[/div]]
-@@@@
-[[/div]]
-[[div style="clear: left;"]]
-[[/div]]
 
-[[div class="message-location"]]
-[[div class="message-size"]]
+[[div class="sms-message"]]
 do you think im pretty
 [[/div]]
-@@@@
-[[/div]]
-[[div style="clear: left;"]]
-[[/div]]
 
-[[div class="message-location"]]
-[[div class="message-size"]]
+[[div class="sms-message"]]
 is that what i rly look like
 [[/div]]
-@@@@
-[[/div]]
-[[div style="clear: left;"]]
-[[/div]]
 
-[[div class="message-location"]]
-[[div class="message-size"]]
+[[div class="sms-message"]]
 no way
 [[/div]]
-@@@@
-[[/div]]
-[[div style="clear: left;"]]
-[[/div]]
 
-[[div class="message-location"]]
-[[div class="message-size"]]
+[[div class="sms-message"]]
 is that how you see me ☹️
 [[/div]]
-@@@@
-[[/div]]
-[[div style="clear: left;"]]
-[[/div]]
 
-[[div class="message-location"]]
-[[div class="message-size"]]
+[[div class="sms-message"]]
 you cant see me like this
 [[/div]]
-@@@@
-[[/div]]
-[[div style="clear: left;"]]
-[[/div]]
 
-[[div class="message-location"]]
-[[div class="message-size"]]
+[[div class="sms-message"]]
 im not good enough am i
 [[/div]]
-@@@@
-[[/div]]
-[[div style="clear: left;"]]
-[[/div]]
 
-[[div class="message-location"]]
-[[div class="message-size"]]
+[[div class="sms-message"]]
 not for you
 [[/div]]
-@@@@
-[[/div]]
-[[div style="clear: left;"]]
-[[/div]]
 
-[[div class="message-location"]]
-[[div class="message-size"]]
+[[div class="sms-message"]]
 how could i be
 [[/div]]
-@@@@
-[[/div]]
-[[div style="clear: left;"]]
-[[/div]]
 
-[[div class="message-location"]]
-[[div class="message-size"]]
+[[div class="sms-message"]]
 leave me alone
 [[/div]]
-@@@@
-[[/div]]
-[[div style="clear: left;"]]
-[[/div]]
 
-[[div class="message-location"]]
-[[div class="message-size"]]
+[[div class="sms-message"]]
 im a monster
 [[/div]]
-@@@@
-[[/div]]
-[[div style="clear: left;"]]
-[[/div]]
 
-[[div class="message-location"]]
-[[div class="message-size"]]
+[[div class="sms-message" style="margin: unset;"]]
 im sorry i look this way
-[[/div]]
-
 [[/div]]
 [[div style="clear: left;"]]
 [[/div]]
 ----
-**II. May 12, 2019**
+**II. 12 May 2019**
 
-At 0551 CDT, SCP-4420 ceased all anomalous growth and began to show signs of accelerated decomposition. 
+At 05:51 CDT, SCP-4420 ceased all anomalous growth and displayed signs of accelerated decomposition. 
 
-SCP-4420 is currently classified as Neutralized.
+SCP-4420 has been reclassified as NEUTRALIZED.
 
 [[footnoteblock]]
 
-[[div style="border-bottom: 2px solid #777; margin-bottom: 1px;"]]
-[[/div]]
-[[div style="border-bottom: 1px solid #777;"]]
+[[div class="footing"]]
 [[/div]]
 
 [[=]]
