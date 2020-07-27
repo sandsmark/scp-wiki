@@ -15,7 +15,7 @@ title:Karas Corner of Doom (Def Not an Author Page)
      text-shadow: none;
 }
  #header h1 a::before {
-     content: "Kara’s Author Page";
+     content: "Kara’s Corner of Doom";
 }
  #header h2 span::before {
      content: "So this is the reason we can’t have nice things...";
@@ -71,18 +71,46 @@ Well, fuck you too then!
 
 
 [[tabview]]
-[[tab Actual Work]]
+[[tab Tales]]
 
-[[include :scp-wiki:component:mega-cool-author-page-tool |inc-list= --]
-|language=en
-|order=
-|perpage=
+
+[[include :scp-wiki:component:mega-cool-author-page-tool |inc-manual-header= --]
+|category= Tales
+|tags=
+]]
+
+
+[[size 150%]]SCP-5097 Tales[[/size]]
+
+[[include :scp-wiki:component:mega-cool-author-page-tool |inc-manual-list= --]
+|name=Hurt
 |background-image=
+|language=
 |shadow=
 ]]
 
+[[include :scp-wiki:component:mega-cool-author-page-tool |inc-manual-list= --]
+|name=Without You
+|background-image=
+|language=
+|shadow=
+]]
+----
+
+[[size 150%]]Team Bird Tales[[/size]]
+
+[[include :scp-wiki:component:mega-cool-author-page-tool |inc-manual-list= --]
+|name=A Given Purpose
+|background-image=
+|language=
+|shadow=
+]]
+
+
+
+
 [[/tab]]
-[[tab Co-Authored]]
+[[tab SCPs]]
 
 [[include :scp-wiki:component:mega-cool-author-page-tool |inc-coauthored= --]
 |name=scp-5827
@@ -97,8 +125,27 @@ Well, fuck you too then!
 ]]
 
 [[/tab]]
-[[tab FAN. ART.]]
-Some fanart of things I wrote!
+[[tab Art Pages]]
+
+[[include :scp-wiki:component:mega-cool-author-page-tool |inc-manual-list= --]
+|name=Kara's Art Page of Doom!
+|background-image=
+|language=
+|shadow=
+]]
+
+[[include :scp-wiki:component:mega-cool-author-page-tool |inc-manual-list= --]
+|name=Team Bird Art Page
+|background-image=
+|language=
+|shadow=
+]]
+
+[[/tab]]
+[[tab Fan art]]
+
+
+[[size 150%]]Fan art of things I wrote![[/size]]
 
 [[collapsible show="+ SCP-5963" hide="- Yoink"]]
 [[include component:image-block
@@ -107,8 +154,6 @@ align=center|
 caption=Made by the wonderful [[*user Epsilon Scott]]|
 width=800px ]]
 [[/collapsible]]
-
-
 
 [[/tab]]
 [[tab SSRTOD]]
