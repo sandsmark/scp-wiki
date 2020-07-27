@@ -74,6 +74,16 @@ You can also use this handy box-ify-er:
 
 **Step 2**
 Add the [http://www.scp-wiki.net/system:page-tags/tag/_licensebox _licensebox tag] to the page.
+
+**Step 3 (optional)**
+
+You can change the name of the author in the pre-generated attribution by specifying the author variable **|author=**. This is particularly useful for co-authored works, works in which you wish to be credited under another alias, or works which are attributed via metadata. Add the variable like this:
+
+[[div class="blockquote"]]
+@@[[include :scp-wiki:component:license-box@@
+|author=YourAliasHere]]
+[[/div]]
+
 [[/collapsible]]
 @@ @@
 [[module ListPages tags="+_licensebox" category="_default" wrapper="no" separate="no" order="name desc desc"]]
