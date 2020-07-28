@@ -1,0 +1,44 @@
+title:SCP-5451
+[[include :scp-wiki:theme:black-highlighter-theme]]
+
+[[module css]]
+.one {
+  width: 15%;
+  float: left;
+}
+
+.two {
+  margin-left: 15%;
+}
+.post{
+  padding: 5%;
+}
+.eno {
+  width: 15%;
+  float: right;
+}
+
+.owt {
+  margin-right: 15%;
+}
+[[/module]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[module ListPages  category="fragment" parent="." limit="1" order="created_at" offset="@URL|0"]]
+%%content%%
+[[/module]]
+
+[!-- http://www.scp-wiki.net/fragment:scp-9000-1 --]
+[!-- http://www.scp-wiki.net/fragment:scp-9000-2 --]
+[!-- http://www.scp-wiki.net/fragment:scp-9000-3 --]
+  
+[[footnoteblock]]
+
+[[div class="footer-wikiwalk-nav"]]
+[[=]]
+<< [[[SCP-5450]]] | SCP-XXXX | [[[SCP-5452]]] >>
+[[/=]]
+[[/div]]
