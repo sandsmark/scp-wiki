@@ -1,9 +1,46 @@
 title:SCP-5195
-[[>]]
-[[module Rate]]
-[[/>]]
+[[include theme:black-highlighter-theme]]
+[[include :scp-wiki:component:bhl-dark-sidebar]]
+[[include :scptestwiki:component:rounderformat]]
 
 [[module css]]
+
+:root {
+    --cutColour: #fafafa;
+    --barColour: #590505;
+    --gray-monochrome: 38, 38, 38;
+    --swatch-menubg-light-color: var(--gray-monochrome);
+}
+
+.scp-image-caption {
+color: #ffffff;
+}
+
+#page-title {
+    display: none;
+}
+
+a.collapsible-block-link {
+font-weight: bold; color: #333333;
+}
+
+.blockquote {
+background-color: #F4F4F4;
+}
+
+#page-content > .collapsible-block {
+    display: block;
+    text-align: center;
+    padding: 0.40em;
+    background-color: #f2f2f2;
+    border-top: 0.150rem dotted slategrey;
+    border-bottom: 0.150rem dotted slategrey;
+}
+
+#page-content > .collapsible-block .collapsible-block-content {
+    text-align: left;
+}
+
 .page {
     display: block;
     overflow: hidden;
@@ -26,16 +63,36 @@ title:SCP-5195
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2)
     }
-.page p,
-.page ul {
+
+.page p, .page ul {
     line-height: 20px;
     margin: 0;
 }
+
 [[/module]]
 
-[[include theme:black-highlighter-theme]]
-[[include :scp-wiki:component:bhl-dark-sidebar]]
-[[include :scptestwiki:component:rounderformat]]
+[[>]]
+[[include :topia:sp-rate-info-2 start= --]|bhl=true]]
+@@ @@
+**SCP-5195 - Remembering All We Had**
+By [[user Azamo]]
+
+------
+
+@@ @@
+[[div class="blockquote"]]
+[[=]]
+**- Attributions -**
+
+All image sources are linked in the discuss page :)
+
+[[/=]]
+[[/div]]
+[[include :topia:sp-rate-info-3 size=150]]
+[[include :topia:sp-rate-info-2 end= --]]]
+[[/>]]
+
+------
 
 [[include :scp-wiki:component:anomaly-class-bar-source
 |item-number=5195
@@ -365,13 +422,18 @@ This entry in the [[[http://www.scp-wiki.net/log-of-anomalous-items-vol-ii | Log
 
 **Item Description:** A black rose. When directly touched by a subject, a large portion of the subject's memories will be replaced with other intrusive memories of unknown origin over a period of roughly 5 days. Subjects affected will always display confusion when asked to describe the memories. See below for notable accounts of these memories, taken from interviews with affected subjects.
 
-> * "Oh... oh no... she... she died. She's gone."
-
-> * "I... am... is so lost. I feel... he.... feels so lost. So far away."
-
-> * "When will I see you again? He thinks... this... a lot."
-
-> * "I remember... I remember losing her. So... I...yeah."
+[[div class="blockquote"]]
+"Oh... oh no... she... she died. She's gone."
+[[/div]]
+[[div class="blockquote"]]
+"I... am... is so lost. I feel... he.... so far away."
+[[/div]]
+[[div class="blockquote"]]
+"When will I see you again?"
+[[/div]]
+[[div class="blockquote"]]
+"Why did she have to be thrown from me?"
+[[/div]]]
 
 **Date of Recovery:** 2/15/2020
 **Location of Recovery:** Madison, Wisconsin, USA
@@ -449,8 +511,10 @@ After this, the plane reanimated. It is unknown if the passengers were aware of 
 
 SCP-5195's file was altered anomalously, and for a period of 20 minutes the file consisted only of the text below. Until returned to the original iteration, it was unable to be edited by the Foundation in any way.
 
-> I love you Desiree,
-> And now I go forward towards you.
+[[div class="blockquote"]]
+I love you Desiree,
+And now I go forward towards you.
+[[/div]]
 
 **Note:** //Following this event, SCP-5195 is pending reclassification to Euclid.//
 
