@@ -533,6 +533,13 @@ Expect great things in the future.
 || **[[[%%link%%/noredirect/true | %%title%%]]]** || %%tags_linked%% || %%_tags_linked%% || %%category%% ||
 [[/module]]
 
+[[=]]
+++ All pages without _image or _cc
+[[/=]]
+[[module ListPages tags="-_image -_cc" categories="*" separate="no" perPage="250" order="created_at desc" prependLine="||~ Title ||~ Category ||"]]
+|| **%%title_linked%%** || %%category%% ||
+[[/module]]
+
 [[code type="css"]]
 /* Centered breadcrumbs */
 #breadcrumbs{
